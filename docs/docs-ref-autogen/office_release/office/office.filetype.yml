@@ -84,6 +84,32 @@ remarks: >-
 
   ```
 
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-file-as-pdf.yaml
+
+
+  Office.context.document.getFileAsync(Office.FileType.Pdf, (result) => {
+    if (result.status === Office.AsyncResultStatus.Failed) {
+      console.error("getFileAsync failed:", result.error);
+    } else {
+      const myFile = result.value;
+      const sliceCount = myFile.sliceCount;
+      console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+      // Get the file slices.
+      const docDataSlices = [];
+      let slicesReceived = 0,
+        gotAllSlices = true;
+      getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+
+      myFile.closeAsync();
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

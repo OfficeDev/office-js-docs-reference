@@ -1333,7 +1333,7 @@ excel,Excel.ChartLineFormat,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.ChartLineFormat,"set(properties, options)",Method,Good,false
 excel,Excel.ChartLineFormat,"set(properties)",Method,Fine,false
 excel,Excel.ChartLineFormat,"toJSON()",Method,Excellent,false
-excel,Excel.ChartLineStyle,N/A,Enum,Missing,false
+excel,Excel.ChartLineStyle,N/A,Enum,Missing,true
 excel,Excel.ChartLineStyle,"automatic",EnumField,Great,false
 excel,Excel.ChartLineStyle,"continuous",EnumField,Great,false
 excel,Excel.ChartLineStyle,"dash",EnumField,Great,false
@@ -5006,7 +5006,7 @@ excel,Excel.PivotItemCollection,"load(options)",Method,Great,false
 excel,Excel.PivotItemCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.PivotItemCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.PivotItemCollection,"toJSON()",Method,Excellent,false
-excel,Excel.PivotLabelFilter,N/A,Interface,Great,false
+excel,Excel.PivotLabelFilter,N/A,Interface,Great,true
 excel,Excel.PivotLabelFilter,"comparator",Property,Excellent,false
 excel,Excel.PivotLabelFilter,"condition",Property,Excellent,false
 excel,Excel.PivotLabelFilter,"exclusive",Property,Excellent,false
@@ -5138,7 +5138,7 @@ excel,Excel.PivotTableStyleCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.PivotTableStyleCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.PivotTableStyleCollection,"setDefault(newDefaultStyle)",Method,Fine,false
 excel,Excel.PivotTableStyleCollection,"toJSON()",Method,Excellent,false
-excel,Excel.PivotValueFilter,N/A,Interface,Great,false
+excel,Excel.PivotValueFilter,N/A,Interface,Great,true
 excel,Excel.PivotValueFilter,"comparator",Property,Excellent,false
 excel,Excel.PivotValueFilter,"condition",Property,Excellent,false
 excel,Excel.PivotValueFilter,"exclusive",Property,Excellent,false
@@ -8135,7 +8135,7 @@ office,Office.SetBindingDataOptions,"rows",Property,Deprecated,false
 office,Office.SetBindingDataOptions,"startColumn",Property,Excellent,false
 office,Office.SetBindingDataOptions,"startRow",Property,Excellent,false
 office,Office.SetBindingDataOptions,"tableOptions",Property,Great,false
-office,Office.SetSelectedDataOptions,N/A,Interface,Fine,false
+office,Office.SetSelectedDataOptions,N/A,Interface,Fine,true
 office,Office.SetSelectedDataOptions,"asyncContext",Property,Excellent,false
 office,Office.SetSelectedDataOptions,"cellFormat",Property,Great,false
 office,Office.SetSelectedDataOptions,"coercionType",Property,Excellent,false
@@ -10064,7 +10064,7 @@ outlook,Office.SensitivityLabelsCatalog,"getAsync(options, callback)",Method,Fin
 outlook,Office.SensitivityLabelsCatalog,"getAsync(callback)",Method,Fine,true
 outlook,Office.SensitivityLabelsCatalog,"getIsEnabledAsync(options, callback)",Method,Fine,false
 outlook,Office.SensitivityLabelsCatalog,"getIsEnabledAsync(callback)",Method,Fine,true
-outlook,Office.SeriesTime,N/A,Interface,Good,false
+outlook,Office.SeriesTime,N/A,Interface,Good,true
 outlook,Office.SeriesTime,"getDuration()",Method,Fine,true
 outlook,Office.SeriesTime,"getEndDate()",Method,Good,true
 outlook,Office.SeriesTime,"getEndTime()",Method,Great,true
