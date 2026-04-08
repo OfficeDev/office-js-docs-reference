@@ -8,6 +8,31 @@ remarks: >-
   \[ [API set: ExcelApi
   1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerEventHandler() {
+      await Excel.run(async (context) => {
+          // Register the workbook activated event handler.
+          const workbook = context.workbook;
+          workbook.onActivated.add(workbookActivated);
+          await context.sync();
+      });
+  }
+
+
+  async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
+      await Excel.run(async (context) => {
+          // Callback function for when the workbook is activated.
+          console.log("The workbook was activated.");
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

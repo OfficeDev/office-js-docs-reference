@@ -4,7 +4,63 @@ uid: office!Office.SetSelectedDataOptions:interface
 package: office!
 fullName: Office.SetSelectedDataOptions
 summary: Provides options for how to insert data to the selection.
-remarks: ''
+remarks: >-
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
+
+
+  async function addImageToCurrentSlide(
+    imageBase64: string,
+    options?: PowerPoint.ShapeAddOptions
+  ): Promise<PowerPoint.Shape> {
+    // Adds an image to the current slide.
+    const setSelectedDataOptions: Office.SetSelectedDataOptions = {
+      coercionType: Office.CoercionType.Image
+    };
+    if (options) {
+      if (options.height) {
+        setSelectedDataOptions.imageHeight = options.height;
+      }
+      if (options.left) {
+        setSelectedDataOptions.imageLeft = options.left;
+      }
+      if (options.top) {
+        setSelectedDataOptions.imageTop = options.top;
+      }
+      if (options.width) {
+        setSelectedDataOptions.imageWidth = options.width;
+      }
+    }
+
+    return new Promise((resolve, reject) => {
+      Office.context.document.setSelectedDataAsync(
+        imageBase64,
+        setSelectedDataOptions,
+        async (result: Office.AsyncResult<void>) => {
+          if (result.error) {
+            console.error(`ERROR in setSelectedDataAsync(): ${result.error}`);
+            reject(result.error);
+          } else {
+            const shape = await PowerPoint.run(async (context) => {
+              const slide = context.presentation.getSelectedSlides().getItemAt(0);
+              slide.shapes.load();
+              await context.sync();
+
+              return slide.shapes.items[slide.shapes.items.length - 1];
+            });
+            resolve(shape);
+          }
+        }
+      );
+    });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false

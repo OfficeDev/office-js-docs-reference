@@ -13172,7 +13172,11 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: The error message must be 500 characters or less.
+         * **Important**:
+         *
+         * - The error message must be 500 characters or less.
+         *
+         * - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "\<Add-in name\> is preventing this email from being sent."
          */
         errorMessage?: string;
         

@@ -10,6 +10,41 @@ remarks: >-
   \[ [API set: ExcelApi
   1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerFormulaChangeHandler() {
+      await Excel.run(async (context) => {
+          // Register the formula changed event handler for the Sample worksheet.
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.onFormulaChanged.add(formulaChangeHandler);
+          await context.sync();
+      });
+  }
+
+
+  async function formulaChangeHandler(event:
+  Excel.WorksheetFormulaChangedEventArgs) {
+      await Excel.run(async (context) => {
+          // Retrieve details about the formula change event.
+          const cellAddress = event.formulaDetails[0].cellAddress;
+          const previousFormula = event.formulaDetails[0].previousFormula;
+          const source = event.source;
+          
+          // Print out the change event details.
+          console.log(
+              `The formula in cell ${cellAddress} changed. 
+              The previous formula was: ${previousFormula}. 
+              The source of the change was: ${source}.`
+          );
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

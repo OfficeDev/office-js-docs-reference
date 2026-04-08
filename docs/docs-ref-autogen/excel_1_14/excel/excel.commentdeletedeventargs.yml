@@ -8,6 +8,33 @@ remarks: >-
   \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerEventHandlers() {
+      await Excel.run(async (context) => {
+          // Register the onDeleted comment event handler.
+          const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+          comments.onDeleted.add(commentDeleted);
+          await context.sync();
+      });
+  }
+
+
+  async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
+      // Print out the deleted comment's ID.
+      // Note: This function assumes only a single comment is deleted at a time.
+      await Excel.run(async (context) => {
+          console.log(`A comment was deleted:`);
+          console.log(`    ID: ${event.commentDetails[0].commentId}`);
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
