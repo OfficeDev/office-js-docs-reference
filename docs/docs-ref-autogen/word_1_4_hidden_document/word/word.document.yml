@@ -503,37 +503,6 @@ methods:
 
       ```TypeScript
 
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-          
-          // Create a proxy object for the document.
-          const thisDocument = context.document;
-
-          // Queue a command to load the document save state (on the saved property).
-          thisDocument.load('saved');    
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-              
-          if (thisDocument.saved === false) {
-              // Queue a command to save this document.
-              thisDocument.save();
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-              console.log('Saved the document');
-          } else {
-              console.log('The document has not changed since the last save.');
-          }
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
 

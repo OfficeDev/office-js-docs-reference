@@ -3144,18 +3144,6 @@ methods:
 
       ```TypeScript
 
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:C3";
-          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          range.merge(true);
-          await context.sync(); 
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
 

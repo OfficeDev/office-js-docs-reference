@@ -558,23 +558,6 @@ Excel.CustomConditionalFormat#rule:member:
 
         console.log("Added new custom conditional format highlighting all blank cells.");
     });
-Excel.FilterOn:enum:
-  - |-
-    // This function adds a custom AutoFilter to the active worksheet 
-    // and applies the filter to a column of the used range.
-    await Excel.run(async (context) => {
-        // Retrieve the active worksheet and the used range on that worksheet.
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-        const farmData = sheet.getUsedRange();
-
-        // Add a filter that will only show the rows with values that end with the letter "e" in column 1.
-        sheet.autoFilter.apply(farmData, 1, {
-            criterion1: "=*e",
-            filterOn: Excel.FilterOn.custom
-        });
-
-        await context.sync();
-    });
 Excel.NamedItem#getRange:member(1):
   - |-
     // Returns the Range object that is associated with the name.
@@ -869,15 +852,6 @@ Excel.Range#load:member(2):
         await context.sync();
         
         console.log(range.cellCount);
-    });
-Excel.Range#merge:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "A1:C3";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.merge(true);
-        await context.sync(); 
     });
 Excel.Range#numberFormat:member:
   - |-
@@ -1175,16 +1149,6 @@ Excel.TableCollection#add:member(1):
         
         console.log(table.name);
     });
-Excel.TableCollection#getItem:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const table = context.workbook.tables.getItem(tableName);
-        table.load('name');
-        await context.sync();
-        
-        console.log(table.name);
-    });
 Excel.TableCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1211,17 +1175,6 @@ Excel.TableColumn#delete:member(1):
         const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
         column.delete();
         await context.sync(); 
-    });
-Excel.TableColumn#getDataBodyRange:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        const dataBodyRange = column.getDataBodyRange();
-        dataBodyRange.load('address');
-        await context.sync();
-        
-        console.log(dataBodyRange.address);
     });
 Excel.TableColumn#getHeaderRowRange:member(1):
   - |-
@@ -1276,14 +1229,6 @@ Excel.TableColumnCollection#add:member(1):
         await context.sync();
         
         console.log(column.name);
-    });
-Excel.TableColumnCollection#getItem:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
-        tableColumn.load('name');
-        await context.sync();
-        console.log(tableColumn.name);
     });
 Excel.TableColumnCollection#getItemAt:member(1):
   - |-
