@@ -150,7 +150,7 @@ Office.Addin#beforeDocumentCloseNotification:member:
 Office.Addin#onVisibilityModeChanged:member(1):
   - |-
     Office.onReady(() => {
-        Office.addin.onVisibilityModeChanged((args) => {
+        Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
             if (args.visibilityMode === Office.VisibilityMode.taskpane) {
                 // Do something when the task pane is visible.
             }
@@ -2091,6 +2091,19 @@ Office.DialogOptions#width:member:
             });
         }
     );
+Office.DialogParentMessageReceivedEventArgs:interface:
+  - |-
+    // The following example provides information about the message from the parent page.
+    Office.onReady(() => {
+        Office.context.ui.addHandlerAsync(Office.EventType.DialogMessageReceived, onMessageFromParent);
+    });
+
+    function onMessageFromParent(args: Office.DialogParentMessageReceivedEventArgs) {
+        const eventType = args.type;
+        const origin = args.origin;
+        const messageFromParent = args.message;
+        console.log(`${eventType} event occurred. Message received from ${origin}: ${messageFromParent}`);
+    }
 Office.Document:interface:
   - |-
     // Get the Document object with the Common APIs.
@@ -4814,7 +4827,18 @@ Office.ValueFormat:enum:
 Office.VisibilityMode:enum:
   - |-
     Office.onReady(() => {
-        Office.addin.onVisibilityModeChanged((args) => {
+        Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
+            if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                // Do something when the task pane is visible.
+            }
+        });
+
+        // Other startup tasks.
+    });
+Office.VisibilityModeChangedMessage:interface:
+  - |-
+    Office.onReady(() => {
+        Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
             if (args.visibilityMode === Office.VisibilityMode.taskpane) {
                 // Do something when the task pane is visible.
             }

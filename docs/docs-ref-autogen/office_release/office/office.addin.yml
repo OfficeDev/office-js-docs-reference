@@ -109,7 +109,7 @@ methods:
       ```TypeScript
 
       Office.onReady(() => {
-          Office.addin.onVisibilityModeChanged((args) => {
+          Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
               if (args.visibilityMode === Office.VisibilityMode.taskpane) {
                   // Do something when the task pane is visible.
               }
