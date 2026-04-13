@@ -6,7 +6,19 @@ fullName: Excel.Interfaces.ChartPointData
 summary: >-
   An interface describing the data returned by calling `chartPoint.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ChartPointsCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#points:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

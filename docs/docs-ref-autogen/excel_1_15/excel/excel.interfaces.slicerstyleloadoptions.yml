@@ -10,6 +10,17 @@ remarks: >-
   \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

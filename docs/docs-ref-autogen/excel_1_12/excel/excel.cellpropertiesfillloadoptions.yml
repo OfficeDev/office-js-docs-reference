@@ -8,6 +8,13 @@ remarks: >-
   \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CellPropertiesFormatLoadOptions#fill:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

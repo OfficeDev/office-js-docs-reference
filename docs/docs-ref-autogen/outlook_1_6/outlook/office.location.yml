@@ -29,6 +29,13 @@ remarks: >-
   Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
   -->.
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#location:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

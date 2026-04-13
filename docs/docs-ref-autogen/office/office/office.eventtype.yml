@@ -15,11 +15,99 @@ summary: >-
 
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
-remarks: |-
+remarks: >-
+
+
+  #### Used by
+
+
+
+  **Office**
+
+
+  - <xref uid="office!Office.Binding#addHandlerAsync:member" /> (parameter type)
+
+  - <xref uid="office!Office.Binding#removeHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.BindingDataChangedEventArgs#type:member" />
+  (property type)
+
+  - <xref uid="office!Office.BindingSelectionChangedEventArgs#type:member" />
+  (property type)
+
+  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="office!Office.Dialog#addEventHandler:member" /> (parameter type)
+
+  - <xref uid="office!Office.DialogParentMessageReceivedEventArgs#type:member"
+  /> (property type)
+
+  - <xref uid="office!Office.Document#addHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.Document#removeHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.DocumentSelectionChangedEventArgs#type:member" />
+  (property type)
+
+  - <xref uid="office!Office.Settings#addHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.Settings#removeHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.SettingsChangedEventArgs#type:member" /> (property
+  type)
+
+  - <xref uid="office!Office.UI#addHandlerAsync:member" /> (parameter type)
+
+
+  **Outlook**
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#addHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.AppointmentCompose#removeHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.AppointmentRead#addHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.AppointmentRead#removeHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.Mailbox#addHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.Mailbox#removeHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.MessageCompose#addHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.MessageCompose#removeHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.MessageRead#addHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.MessageRead#removeHandlerAsync:member" />
+  (parameter type)
+
   #### Examples
 
+
   ```TypeScript
+
   // This sample shows how to register an event handler in Outlook.
+
   Office.onReady(() => {
       // Registers an event handler to identify when messages are selected.
       Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, getMessageProperties, (asyncResult) => {
@@ -31,6 +119,7 @@ remarks: |-
           console.log("Event handler added for the SelectedItemsChanged event.");
       });
   });
+
 
   function getMessageProperties() {
       // Retrieves the selected messages' properties and logs them to the console.
@@ -48,6 +137,7 @@ remarks: |-
           });
       });
   }
+
   ```
 
 isPreview: false

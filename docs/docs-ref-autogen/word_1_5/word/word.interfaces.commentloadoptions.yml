@@ -8,6 +8,18 @@ remarks: >-
   \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

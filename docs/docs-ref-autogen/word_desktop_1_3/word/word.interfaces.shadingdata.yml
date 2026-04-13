@@ -6,7 +6,10 @@ fullName: Word.Interfaces.ShadingData
 summary: >-
   An interface describing the data returned by calling `shading.toJSON()`<!--
   -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - <xref uid="word!Word.Interfaces.StyleData#shading:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

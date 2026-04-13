@@ -10,6 +10,11 @@ summary: >-
   **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 remarks: |-
+
+
+  #### Used by
+
+  - <xref uid="office!Office.Tab#groups:member" /> (property type)
   #### Examples
 
   ```TypeScript

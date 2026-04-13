@@ -8,6 +8,22 @@ remarks: >-
   \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorTickMark:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorTickMark:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

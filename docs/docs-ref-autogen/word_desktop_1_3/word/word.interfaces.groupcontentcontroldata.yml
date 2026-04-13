@@ -6,7 +6,13 @@ fullName: Word.Interfaces.GroupContentControlData
 summary: >-
   An interface describing the data returned by calling
   `groupContentControl.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlData#groupContentControl:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

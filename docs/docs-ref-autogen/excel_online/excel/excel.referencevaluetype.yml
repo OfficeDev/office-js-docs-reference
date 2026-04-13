@@ -22,6 +22,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Array"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.ArrayCellValue#type:member" /> (property type)
   - name: boolean
     uid: excel!Excel.ReferenceValueType.boolean:member
     package: excel!
@@ -33,6 +37,10 @@ fields:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Boolean"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.BooleanCellValue#type:member" /> (property type)
   - name: double
     uid: excel!Excel.ReferenceValueType.double:member
     package: excel!
@@ -44,6 +52,10 @@ fields:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Double"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.DoubleCellValue#type:member" /> (property type)
   - name: entity
     uid: excel!Excel.ReferenceValueType.entity:member
     package: excel!
@@ -55,6 +67,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Entity"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.EntityCellValue#type:member" /> (property type)
   - name: root
     uid: excel!Excel.ReferenceValueType.root:member
     package: excel!
@@ -66,6 +82,12 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Root"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.RootReferenceCellValue#type:member" /> (property
+      type)
   - name: string
     uid: excel!Excel.ReferenceValueType.string:member
     package: excel!
@@ -77,3 +99,7 @@ fields:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"String"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.StringCellValue#type:member" /> (property type)

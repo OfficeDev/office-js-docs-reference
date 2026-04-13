@@ -9,6 +9,14 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.DocumentCompareOptions#compareTarget:member" />
+  (property type)
+
   #### Examples
 
 

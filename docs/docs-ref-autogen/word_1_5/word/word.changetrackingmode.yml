@@ -9,6 +9,18 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.DocumentData#changeTrackingMode:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member" />
+  (property type)
+
   #### Examples
 
 

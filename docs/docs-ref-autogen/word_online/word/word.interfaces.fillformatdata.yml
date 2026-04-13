@@ -6,7 +6,10 @@ fullName: Word.Interfaces.FillFormatData
 summary: >-
   An interface describing the data returned by calling `fillFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - <xref uid="word!Word.Interfaces.FontData#fill:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

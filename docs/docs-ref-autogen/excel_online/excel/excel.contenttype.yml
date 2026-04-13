@@ -9,6 +9,17 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.CommentData#contentType:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.CommentReplyData#contentType:member" />
+  (property type)
+
   #### Examples
 
 

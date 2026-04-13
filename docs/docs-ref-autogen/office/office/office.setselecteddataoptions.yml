@@ -5,6 +5,14 @@ package: office!
 fullName: Office.SetSelectedDataOptions
 summary: Provides options for how to insert data to the selection.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Document#setSelectedDataAsync:member" /> (parameter
+  type)
+
   #### Examples
 
 

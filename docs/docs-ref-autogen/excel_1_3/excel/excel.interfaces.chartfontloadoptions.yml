@@ -10,6 +10,41 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions#font:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartFormatStringLoadOptions#font:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#font:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions#font:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

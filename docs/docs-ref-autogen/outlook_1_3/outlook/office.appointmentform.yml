@@ -19,6 +19,17 @@ remarks: >-
   -->**: Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#displayNewAppointmentForm:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.Mailbox#displayNewAppointmentFormAsync:member" />
+  (parameter type)
+
   #### Examples
 
 

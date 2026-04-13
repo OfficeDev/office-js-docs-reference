@@ -8,6 +8,17 @@ remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentSection:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

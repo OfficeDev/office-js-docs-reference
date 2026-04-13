@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.DataValidationRule#date:member" /> (property type)
+
+  - <xref uid="excel!Excel.DataValidationRule#time:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

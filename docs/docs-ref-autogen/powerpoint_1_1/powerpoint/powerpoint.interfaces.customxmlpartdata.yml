@@ -6,7 +6,25 @@ fullName: PowerPoint.Interfaces.CustomXmlPartData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPart.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

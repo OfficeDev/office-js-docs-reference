@@ -6,7 +6,15 @@ fullName: Word.Interfaces.ListItemData
 summary: >-
   An interface describing the data returned by calling `listItem.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ParagraphData#listItem:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.ParagraphData#listItemOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

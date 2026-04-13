@@ -11,6 +11,17 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ShapeData#geometricShapeType:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ShapeUpdateData#geometricShapeType:member"
+  /> (property type)
+
   #### Examples
 
 

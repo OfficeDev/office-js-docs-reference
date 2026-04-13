@@ -19,6 +19,16 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member" />
+  (parameter type)
+
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: >-

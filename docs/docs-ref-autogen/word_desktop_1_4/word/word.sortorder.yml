@@ -8,6 +8,16 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.TableSortOptions#sortOrder:member" /> (property type)
+
+  - <xref uid="word!Word.TableSortOptions#sortOrder2:member" /> (property type)
+
+  - <xref uid="word!Word.TableSortOptions#sortOrder3:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

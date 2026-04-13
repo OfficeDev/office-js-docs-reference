@@ -6,7 +6,12 @@ fullName: Excel.Interfaces.PivotFieldUpdateData
 summary: >-
   An interface for updating data on the `PivotField` object, for use in
   `pivotField.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#field:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

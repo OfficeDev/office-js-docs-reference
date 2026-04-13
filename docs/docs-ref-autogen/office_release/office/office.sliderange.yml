@@ -9,6 +9,14 @@ summary: >-
   [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)
   in PowerPoint.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Document#getSelectedDataAsync:member" /> (parameter
+  type)
+
   #### Examples
 
 

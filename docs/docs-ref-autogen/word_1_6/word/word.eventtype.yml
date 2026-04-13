@@ -9,6 +9,40 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.CommentEventArgs#type:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControlAddedEventArgs#eventType:member" />
+  (property type)
+
+  - <xref uid="word!Word.ContentControlDataChangedEventArgs#eventType:member" />
+  (property type)
+
+  - <xref uid="word!Word.ContentControlDeletedEventArgs#eventType:member" />
+  (property type)
+
+  - <xref uid="word!Word.ContentControlEnteredEventArgs#eventType:member" />
+  (property type)
+
+  - <xref uid="word!Word.ContentControlExitedEventArgs#eventType:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.ContentControlSelectionChangedEventArgs#eventType:member" />
+  (property type)
+
+  - <xref uid="word!Word.ParagraphAddedEventArgs#type:member" /> (property type)
+
+  - <xref uid="word!Word.ParagraphChangedEventArgs#type:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ParagraphDeletedEventArgs#type:member" /> (property
+  type)
+
   #### Examples
 
 

@@ -13,6 +13,30 @@ remarks: >-
 
   This enum isn't supported in Excel on the web.
 
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedEntityDataDomainData#refreshMode:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedEntityDataDomainData#supportedRefreshModes:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedEntityDataDomainUpdateData#refreshMode:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.LinkedEntityDataDomainCreateOptions#supportedRefreshModes:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs#refreshMode:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

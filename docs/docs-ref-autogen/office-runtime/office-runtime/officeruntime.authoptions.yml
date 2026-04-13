@@ -13,6 +13,13 @@ remarks: >-
   simplicity, the code examples throughout the documentation use
   `Office.AuthOptions`<!-- -->.
 
+
+  #### Used by
+
+
+  - <xref uid="office-runtime!OfficeRuntime.Auth#getAccessToken:member" />
+  (parameter type)
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -9,6 +9,13 @@ remarks: >-
   function passed to the Document.getFileAsync method.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Document#getFileAsync:member" /> (parameter type)
+
   #### Examples
 
 

@@ -6,7 +6,12 @@ fullName: Excel.Interfaces.TableStyleUpdateData
 summary: >-
   An interface for updating data on the `TableStyle` object, for use in
   `tableStyle.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.TableUpdateData#tableStyle:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

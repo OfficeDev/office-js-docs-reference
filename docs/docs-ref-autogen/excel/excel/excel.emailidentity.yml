@@ -8,6 +8,25 @@ remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#assignees:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#completedBy:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#createdBy:member" />
+  (property type)
+
 isPreview: true
 isDeprecated: false
 type: interface

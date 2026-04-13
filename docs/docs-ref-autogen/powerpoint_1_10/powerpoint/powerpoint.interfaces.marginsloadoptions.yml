@@ -9,6 +9,18 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#margins:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#margins:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

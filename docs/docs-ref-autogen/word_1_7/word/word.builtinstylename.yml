@@ -13,6 +13,42 @@ remarks: >-
   1.5.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.BodyData#styleBuiltIn:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.BodyUpdateData#styleBuiltIn:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ContentControlData#styleBuiltIn:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlUpdateData#styleBuiltIn:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ParagraphData#styleBuiltIn:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#styleBuiltIn:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeData#styleBuiltIn:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableData#styleBuiltIn:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.TableUpdateData#styleBuiltIn:member" />
+  (property type)
+
   #### Examples
 
 

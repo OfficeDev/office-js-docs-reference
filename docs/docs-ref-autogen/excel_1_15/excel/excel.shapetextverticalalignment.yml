@@ -8,6 +8,17 @@ remarks: >-
   \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.TextFrameData#verticalAlignment:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

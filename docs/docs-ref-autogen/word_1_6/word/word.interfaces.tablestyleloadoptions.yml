@@ -8,6 +8,17 @@ remarks: >-
   \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#tableStyle:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

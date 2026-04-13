@@ -11,6 +11,12 @@ remarks: >-
   the function passed as the callback argument of an asynchronous data
   operation, such as the `setSelectedDataAsync` method of the Document object.
 
+
+  #### Used by
+
+
+  - <xref uid="office!Office.AsyncResult#error:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

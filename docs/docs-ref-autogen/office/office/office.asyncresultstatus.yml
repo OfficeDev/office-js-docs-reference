@@ -9,6 +9,13 @@ remarks: >-
   [AsyncResult](xref:office!Office.AsyncResult:interface) object.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.AsyncResult#status:member" /> (property type)
+
   #### Examples
 
 

@@ -9,6 +9,17 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.TextFrameData#autoSizeSetting:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TextFrameUpdateData#autoSizeSetting:member"
+  /> (property type)
+
   #### Examples
 
 

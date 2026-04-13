@@ -9,6 +9,15 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member"
+  /> (property type)
+
   #### Examples
 
 

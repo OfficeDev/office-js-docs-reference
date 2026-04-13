@@ -13,6 +13,31 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member" />
+  (property type)
+
   #### Examples
 
 

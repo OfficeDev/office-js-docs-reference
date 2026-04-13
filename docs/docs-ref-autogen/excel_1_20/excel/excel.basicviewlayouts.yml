@@ -10,6 +10,16 @@ remarks: >-
   \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.BooleanCellValue#layouts:member" /> (property type)
+
+  - <xref uid="excel!Excel.DoubleCellValue#layouts:member" /> (property type)
+
+  - <xref uid="excel!Excel.StringCellValue#layouts:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -9,6 +9,30 @@ remarks: >-
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.TableCellData#verticalAlignment:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableData#verticalAlignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableRowData#verticalAlignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableUpdateData#verticalAlignment:member" />
+  (property type)
+
   #### Examples
 
 

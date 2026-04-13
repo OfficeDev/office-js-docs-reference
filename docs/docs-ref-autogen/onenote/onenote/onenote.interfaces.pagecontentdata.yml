@@ -6,7 +6,20 @@ fullName: OneNote.Interfaces.PageContentData
 summary: >-
   An interface describing the data returned by calling
   `pageContent.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.PageContentCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.PageData#contents:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

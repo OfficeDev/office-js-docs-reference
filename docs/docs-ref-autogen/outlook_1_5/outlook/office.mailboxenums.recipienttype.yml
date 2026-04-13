@@ -22,6 +22,14 @@ remarks: >-
   email address is on the Exchange server.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.EmailAddressDetails#recipientType:member" />
+  (property type)
+
   #### Examples
 
 

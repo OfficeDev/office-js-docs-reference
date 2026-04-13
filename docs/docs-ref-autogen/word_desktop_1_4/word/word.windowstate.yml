@@ -8,6 +8,15 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.WindowData#state:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.WindowUpdateData#state:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -9,6 +9,20 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CellPropertiesFont#underline:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFontData#underline:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFontUpdateData#underline:member" />
+  (property type)
+
   #### Examples
 
 

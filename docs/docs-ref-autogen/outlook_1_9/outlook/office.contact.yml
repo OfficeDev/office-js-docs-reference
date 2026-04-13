@@ -69,6 +69,25 @@ remarks: >-
   -->.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member" />
+  (return type)
+
+  - <xref uid="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member"
+  /> (return type)
+
+  - <xref uid="outlook!Office.Entities#contacts:member" /> (property type)
+
+  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member" /> (return
+  type)
+
+  - <xref uid="outlook!Office.MessageRead#getFilteredEntitiesByName:member" />
+  (return type)
+
   #### Examples
 
 

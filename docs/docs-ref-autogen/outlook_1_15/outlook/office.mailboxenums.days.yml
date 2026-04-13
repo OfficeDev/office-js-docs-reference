@@ -14,6 +14,20 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.RecurrenceProperties#dayOfWeek:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.RecurrenceProperties#days:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.RecurrenceProperties#firstDayOfWeek:member" />
+  (property type)
+
   #### Examples
 
 

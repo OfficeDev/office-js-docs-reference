@@ -7,6 +7,13 @@ summary: >-
   Represents a slice of a document file. The Slice object is accessed with the
   `File.getSliceAsync` method.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.File#getSliceAsync:member" /> (parameter type)
+
   #### Examples
 
 

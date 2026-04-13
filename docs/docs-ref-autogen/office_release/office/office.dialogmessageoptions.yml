@@ -10,6 +10,14 @@ remarks: >-
   **Requirement set**: [DialogOrigin
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)
 
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Dialog#messageChild:member" /> (parameter type)
+
+  - <xref uid="office!Office.UI#messageParent:member" /> (parameter type)
+
 isPreview: false
 isDeprecated: false
 type: interface

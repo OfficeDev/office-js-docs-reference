@@ -4,7 +4,16 @@ uid: powerpoint!PowerPoint.Interfaces.TagData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagData
 summary: An interface describing the data returned by calling `tag.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Interfaces.TagCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

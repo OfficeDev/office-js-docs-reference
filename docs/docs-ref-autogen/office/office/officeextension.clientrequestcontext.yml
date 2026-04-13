@@ -6,7 +6,12 @@ fullName: OfficeExtension.ClientRequestContext
 summary: >-
   An abstract RequestContext object that facilitates requests to the Office
   application. The `Excel.run` and `Word.run` methods provide a request context.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="office!OfficeExtension.RunOptions#previousObjects:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

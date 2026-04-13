@@ -15,6 +15,14 @@ remarks: >-
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.ContextMenuUpdaterData#controls:member" />
+  (property type)
+
   #### Examples
 
 

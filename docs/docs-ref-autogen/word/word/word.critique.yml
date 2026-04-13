@@ -11,6 +11,16 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.AnnotationSet#critiques:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.CritiqueAnnotationData#critique:member" />
+  (property type)
+
   #### Examples
 
 

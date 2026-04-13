@@ -8,16 +8,46 @@ summary: >-
   the Office add-in and the Excel application run in two different processes,
   the request context is required to get access to the Excel object model from
   the add-in.
-remarks: |-
+remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member" /> (parameter
+  type)
+
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member" />
+  (parameter type)
+
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member" />
+  (parameter type)
+
+  - <xref
+  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member" />
+  (parameter type)
+
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member" />
+  (parameter type)
+
+  - <xref
+  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member"
+  /> (parameter type)
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Excel.run(async (context: Excel.RequestContext) => {
     const workbook = context.workbook;
     // Interact with the Excel workbook...
   });
+
   ```
 
 isPreview: false

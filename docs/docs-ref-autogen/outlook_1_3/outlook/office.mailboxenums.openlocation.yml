@@ -18,6 +18,14 @@ remarks: >-
   -->.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#getIsOpenFromLocationAllowed:member" />
+  (parameter type)
+
   #### Examples
 
 

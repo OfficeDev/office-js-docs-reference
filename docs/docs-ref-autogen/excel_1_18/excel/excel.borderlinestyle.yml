@@ -9,6 +9,19 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CellBorder#style:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeBorderData#style:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeBorderUpdateData#style:member" />
+  (property type)
+
   #### Examples
 
 

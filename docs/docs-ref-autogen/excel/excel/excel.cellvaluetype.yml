@@ -52,6 +52,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Array"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.ArrayCellValue#type:member" /> (property type)
   - name: boolean
     uid: excel!Excel.CellValueType.boolean:member
     package: excel!
@@ -63,6 +67,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Boolean"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.BooleanCellValue#type:member" /> (property type)
   - name: double
     uid: excel!Excel.CellValueType.double:member
     package: excel!
@@ -74,6 +82,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Double"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.DoubleCellValue#type:member" /> (property type)
   - name: empty
     uid: excel!Excel.CellValueType.empty:member
     package: excel!
@@ -85,6 +97,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Empty"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.EmptyCellValue#type:member" /> (property type)
   - name: entity
     uid: excel!Excel.CellValueType.entity:member
     package: excel!
@@ -96,6 +112,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Entity"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.EntityCellValue#type:member" /> (property type)
   - name: error
     uid: excel!Excel.CellValueType.error:member
     package: excel!
@@ -107,6 +127,61 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Error"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.BlockedErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.BusyErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.CalcErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.ConnectErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.Div0ErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.ExternalErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.FieldErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.GettingDataErrorCellValue#type:member" />
+      (property type)
+
+      - <xref uid="excel!Excel.NameErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.NotAvailableErrorCellValue#type:member" />
+      (property type)
+
+      - <xref uid="excel!Excel.NullErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.NumErrorCellValue#type:member" /> (property type)
+
+      - <xref uid="excel!Excel.PlaceholderErrorCellValue#type:member" />
+      (property type)
+
+      - <xref uid="excel!Excel.PythonErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.RefErrorCellValue#type:member" /> (property type)
+
+      - <xref uid="excel!Excel.SpillErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.TimeoutErrorCellValue#type:member" /> (property
+      type)
+
+      - <xref uid="excel!Excel.ValueErrorCellValue#type:member" /> (property
+      type)
   - name: externalCodeServiceObject
     uid: excel!Excel.CellValueType.externalCodeServiceObject:member
     package: excel!
@@ -118,6 +193,12 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"ExternalCodeServiceObject"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#type:member"
+      /> (property type)
   - name: formattedNumber
     uid: excel!Excel.CellValueType.formattedNumber:member
     package: excel!
@@ -129,6 +210,12 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"FormattedNumber"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.FormattedNumberCellValue#type:member" />
+      (property type)
   - name: function
     uid: excel!Excel.CellValueType.function:member
     package: excel!
@@ -140,6 +227,13 @@ fields:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Function"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref
+      uid="excel!Excel.JavaScriptCustomFunctionReferenceCellValue#type:member"
+      /> (property type)
   - name: linkedEntity
     uid: excel!Excel.CellValueType.linkedEntity:member
     package: excel!
@@ -151,6 +245,12 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"LinkedEntity"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.LinkedEntityCellValue#type:member" /> (property
+      type)
   - name: localImage
     uid: excel!Excel.CellValueType.localImage:member
     package: excel!
@@ -162,6 +262,12 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"LocalImage"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.LocalImageCellValue#type:member" /> (property
+      type)
   - name: notAvailable
     uid: excel!Excel.CellValueType.notAvailable:member
     package: excel!
@@ -173,6 +279,12 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"NotAvailable"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.ValueTypeNotAvailableCellValue#type:member" />
+      (property type)
   - name: reference
     uid: excel!Excel.CellValueType.reference:member
     package: excel!
@@ -184,6 +296,12 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Reference"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="excel!Excel.ReferenceCellValue#type:member" /> (property
+      type)
   - name: string
     uid: excel!Excel.CellValueType.string:member
     package: excel!
@@ -195,6 +313,10 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"String"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.StringCellValue#type:member" /> (property type)
   - name: webImage
     uid: excel!Excel.CellValueType.webImage:member
     package: excel!
@@ -206,3 +328,7 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"WebImage"'
+    remarks: |-
+      #### Used by
+
+      - <xref uid="excel!Excel.WebImageCellValue#type:member" /> (property type)

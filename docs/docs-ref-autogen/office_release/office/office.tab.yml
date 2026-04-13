@@ -15,6 +15,13 @@ remarks: >-
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.RibbonUpdaterData#tabs:member" /> (property type)
+
   #### Examples
 
 

@@ -10,6 +10,16 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#canvas:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#canvas:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

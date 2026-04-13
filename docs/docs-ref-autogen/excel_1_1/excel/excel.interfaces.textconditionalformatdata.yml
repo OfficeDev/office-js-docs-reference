@@ -6,7 +6,17 @@ fullName: Excel.Interfaces.TextConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `textConditionalFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatData#textComparison:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatData#textComparisonOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

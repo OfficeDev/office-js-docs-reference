@@ -10,6 +10,29 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#bottom:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#diagonalDown:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#diagonalUp:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#left:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#right:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#top:member" /> (property
+  type)
+
   #### Examples
 
 

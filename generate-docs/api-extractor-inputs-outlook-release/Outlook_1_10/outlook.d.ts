@@ -1819,7 +1819,7 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -1866,7 +1866,7 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -7916,7 +7916,7 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7972,7 +7972,7 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.
          *                 On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.

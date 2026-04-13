@@ -11,6 +11,23 @@ remarks: >-
 
 
 
+  #### Used by
+
+
+  - <xref uid="excel!Excel.BooleanCellValue#properties:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.DoubleCellValue#properties:member" /> (property type)
+
+  - <xref uid="excel!Excel.EntityCellValue#properties:member" /> (property type)
+
+  - <xref uid="excel!Excel.LinkedEntityCellValue#properties:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.StringCellValue#properties:member" /> (property type)
+
+
+
   Learn more about the types in this type alias through the following links. 
 
 

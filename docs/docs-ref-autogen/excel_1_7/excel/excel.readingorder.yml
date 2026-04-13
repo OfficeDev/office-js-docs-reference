@@ -9,6 +9,26 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CellPropertiesFormat#readingOrder:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatData#readingOrder:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#readingOrder:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.StyleData#readingOrder:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member" />
+  (property type)
+
   #### Examples
 
 

@@ -9,6 +9,27 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.CommentContentRangeData#underline:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.FontData#underline:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeData#underline:member" /> (property
+  type)
+
   #### Examples
 
 

@@ -34,6 +34,13 @@ summary: >-
 
   - [Message](xref:outlook!Office.Message:interface)
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#item:member" /> (property type)
+
   #### Examples
 
 
@@ -1500,7 +1507,8 @@ methods:
           description: >-
             The Base64-encoded content of an image or file to be added to an
             email or event. The maximum length of the encoded string is
-            27,892,122 characters (about 25 MB).
+            34,865,152 characters. This corresponds to a maximum attachment size
+            of 25 MB before Base64 encoding.
           type: string
         - id: attachmentName
           description: >-
@@ -1645,7 +1653,8 @@ methods:
           description: >-
             The Base64-encoded content of an image or file to be added to an
             email or event. The maximum length of the encoded string is
-            27,892,122 characters (about 25 MB).
+            34,865,152 characters. This corresponds to a maximum attachment size
+            of 25 MB before Base64 encoding.
           type: string
         - id: attachmentName
           description: >-

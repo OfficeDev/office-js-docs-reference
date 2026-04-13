@@ -26,6 +26,15 @@ remarks: >-
   -->.
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="outlook!Office.MessageDecryptEventCompletedOptions#attachments:member" />
+  (property type)
+
   #### Examples
 
 

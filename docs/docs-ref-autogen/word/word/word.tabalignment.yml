@@ -8,6 +8,15 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.TabStopData#alignment:member" /> (property
+  type)
+
+  - <xref uid="word!Word.TabStopAddOptions#alignment:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

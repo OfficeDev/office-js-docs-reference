@@ -4,7 +4,12 @@ uid: office!Office.BindingDataChangedEventArgs:interface
 package: office!
 fullName: Office.BindingDataChangedEventArgs
 summary: Provides information about the binding that raised the DataChanged event.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="office!Office.RemoveHandlerOptions#handler:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

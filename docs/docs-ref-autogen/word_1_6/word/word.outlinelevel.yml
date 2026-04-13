@@ -9,6 +9,18 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ParagraphFormatData#outlineLevel:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphFormatUpdateData#outlineLevel:member" />
+  (property type)
+
   #### Examples
 
 

@@ -25,6 +25,15 @@ remarks: >-
   add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!--
   -->.
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#from:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.MessageCompose#from:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

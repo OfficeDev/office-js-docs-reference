@@ -9,6 +9,20 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Icon#set:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.IconSetConditionalFormatData#style:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member"
+  /> (property type)
+
   #### Examples
 
 

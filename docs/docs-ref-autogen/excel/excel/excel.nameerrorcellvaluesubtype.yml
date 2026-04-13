@@ -8,6 +8,13 @@ remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.NameErrorCellValue#errorSubType:member" /> (property
+  type)
+
 isPreview: true
 isDeprecated: false
 fields:

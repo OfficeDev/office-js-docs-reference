@@ -13,6 +13,25 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.FrameData#relativeVerticalPosition:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FrameUpdateData#relativeVerticalPosition:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalPosition:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member" />
+  (property type)
+
   #### Examples
 
 

@@ -6,7 +6,12 @@ fullName: Word.Interfaces.TextFrameData
 summary: >-
   An interface describing the data returned by calling `textFrame.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ShapeData#textFrame:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

@@ -10,6 +10,42 @@ remarks: >-
   \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroup:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroupOrNull:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroup:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroupOrNull:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroup:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroupOrNull:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroup:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroupOrNull:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

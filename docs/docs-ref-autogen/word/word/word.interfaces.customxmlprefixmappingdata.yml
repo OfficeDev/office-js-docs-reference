@@ -6,7 +6,20 @@ fullName: Word.Interfaces.CustomXmlPrefixMappingData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPrefixMapping.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.CustomXmlPartData#namespaceManager:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

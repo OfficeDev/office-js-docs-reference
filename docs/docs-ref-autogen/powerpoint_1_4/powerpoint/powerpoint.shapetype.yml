@@ -10,6 +10,18 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#containedType:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeData#type:member" />
+  (property type)
+
   #### Examples
 
 

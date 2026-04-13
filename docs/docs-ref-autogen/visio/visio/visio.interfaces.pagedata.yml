@@ -4,7 +4,18 @@ uid: visio!Visio.Interfaces.PageData:interface
 package: visio!
 fullName: Visio.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="visio!Visio.Interfaces.DocumentData#pages:member" /> (property
+  type)
+
+  - <xref uid="visio!Visio.Interfaces.PageCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="visio!Visio.Interfaces.PageCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

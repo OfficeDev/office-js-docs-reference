@@ -26,6 +26,28 @@ remarks: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
   -->.
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#notificationMessages:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.AppointmentRead#notificationMessages:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#notificationMessages:member"
+  /> (property type)
+
+  - <xref uid="outlook!Office.LoadedMessageRead#notificationMessages:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#notificationMessages:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.MessageRead#notificationMessages:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

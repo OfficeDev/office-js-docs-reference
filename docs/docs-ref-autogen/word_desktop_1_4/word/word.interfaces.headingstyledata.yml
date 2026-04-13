@@ -6,7 +6,16 @@ fullName: Word.Interfaces.HeadingStyleData
 summary: >-
   An interface describing the data returned by calling
   `headingStyle.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.HeadingStyleCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.HeadingStyleCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

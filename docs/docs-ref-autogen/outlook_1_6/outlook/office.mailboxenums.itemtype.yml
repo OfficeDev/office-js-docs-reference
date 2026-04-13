@@ -10,6 +10,30 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#itemType:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.AppointmentRead#itemType:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#itemType:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.LoadedMessageRead#itemType:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.MessageCompose#itemType:member" /> (property type)
+
+  - <xref uid="outlook!Office.MessageRead#itemType:member" /> (property type)
+
+  - <xref uid="outlook!Office.SelectedItemDetails#itemType:member" /> (property
+  type)
+
   #### Examples
 
 

@@ -5,6 +5,13 @@ package: office!
 fullName: Office.FileType
 summary: Specifies the format in which to return the document.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Document#getFileAsync:member" /> (parameter type)
+
   #### Examples
 
 

@@ -10,6 +10,21 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData#textRuns:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellProperties#textRuns:member" />
+  (property type)
+
   #### Examples
 
 

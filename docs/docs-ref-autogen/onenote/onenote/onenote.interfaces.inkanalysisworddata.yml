@@ -6,7 +6,20 @@ fullName: OneNote.Interfaces.InkAnalysisWordData
 summary: >-
   An interface describing the data returned by calling
   `inkAnalysisWord.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData#words:member" />
+  (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

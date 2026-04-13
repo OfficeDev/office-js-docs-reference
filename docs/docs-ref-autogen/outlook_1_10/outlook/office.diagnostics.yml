@@ -24,6 +24,13 @@ remarks: >-
   property to get similar information.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#diagnostics:member" /> (property type)
+
   #### Examples
 
 

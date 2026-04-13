@@ -13,6 +13,13 @@ summary: >-
   Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
   -->.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Context#ui:member" /> (property type)
+
   #### Examples
 
 

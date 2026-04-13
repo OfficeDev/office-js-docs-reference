@@ -6,7 +6,20 @@ fullName: Word.Interfaces.CustomXmlValidationErrorData
 summary: >-
   An interface describing the data returned by calling
   `customXmlValidationError.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.CustomXmlPartData#errors:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -10,6 +10,19 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member" />
+  (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member"
+  /> (property type)
+
   #### Examples
 
 

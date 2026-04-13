@@ -10,6 +10,21 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.FontProperties#underline:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontData#underline:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member" />
+  (property type)
+
   #### Examples
 
 

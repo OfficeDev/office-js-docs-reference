@@ -8,6 +8,20 @@ remarks: >-
   \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#ownerPart:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#ownerPart:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.XmlMappingLoadOptions#customXmlPart:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

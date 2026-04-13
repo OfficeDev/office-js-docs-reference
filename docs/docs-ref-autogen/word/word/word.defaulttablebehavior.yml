@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.SelectionConvertToTableOptions#defaultTableBehavior:member" />
+  (property type)
+
 isPreview: true
 isDeprecated: false
 fields:

@@ -20,6 +20,31 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellData#verticalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#verticalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TextFrameData#verticalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#verticalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.TableCellProperties#verticalAlignment:member" />
+  (property type)
+
   #### Examples
 
 

@@ -9,6 +9,21 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsData#style:member" />
+  (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#style:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableAddOptions#style:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 fields:

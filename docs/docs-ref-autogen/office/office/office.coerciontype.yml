@@ -48,6 +48,47 @@ remarks: >-
   (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 
+
+
+  #### Used by
+
+
+
+  **Office**
+
+
+  - <xref uid="office!Office.Document#getSelectedDataAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.GetBindingDataOptions#coercionType:member" />
+  (property type)
+
+  - <xref uid="office!Office.SetBindingDataOptions#coercionType:member" />
+  (property type)
+
+  - <xref uid="office!Office.SetSelectedDataOptions#coercionType:member" />
+  (property type)
+
+
+  **Outlook**
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#getSelectedDataAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.Body#getAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Body#getTypeAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.CoercionTypeOptions#coercionType:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.DecryptedMessageBody#coercionType:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#getSelectedDataAsync:member" />
+  (parameter type)
+
   #### Examples
 
 
@@ -101,6 +142,12 @@ fields:
 
       **Note**: Only applies to data in Excel and Word.
     value: '"matrix"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="office!Office.Document#getSelectedDataAsync:member" />
+      (parameter type)
   - name: Ooxml
     uid: office!Office.CoercionType.Ooxml:member
     package: office!
@@ -125,6 +172,12 @@ fields:
       -->.getSelectedDataAsync method to get the current slide or selected range
       of slides.
     value: '"slideRange"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="office!Office.Document#getSelectedDataAsync:member" />
+      (parameter type)
   - name: Table
     uid: office!Office.CoercionType.Table:member
     package: office!
@@ -135,6 +188,12 @@ fields:
 
       **Note**: Only applies to data in Excel and Word.
     value: '"table"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="office!Office.Document#getSelectedDataAsync:member" />
+      (parameter type)
   - name: Text
     uid: office!Office.CoercionType.Text:member
     package: office!
@@ -142,6 +201,12 @@ fields:
       Return or set data as text (string). Data is returned or set as a
       one-dimensional run of characters.
     value: '"text"'
+    remarks: >-
+      #### Used by
+
+
+      - <xref uid="office!Office.Document#getSelectedDataAsync:member" />
+      (parameter type)
   - name: XmlSvg
     uid: office!Office.CoercionType.XmlSvg:member
     package: office!

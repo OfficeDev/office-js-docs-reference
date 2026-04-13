@@ -19,6 +19,19 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Categories#getAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.MasterCategories#addAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.MasterCategories#getAsync:member" /> (parameter
+  type)
+
   #### Examples
 
 

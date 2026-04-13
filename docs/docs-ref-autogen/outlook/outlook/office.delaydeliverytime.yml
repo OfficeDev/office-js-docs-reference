@@ -21,6 +21,16 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#delayDeliveryTime:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#delayDeliveryTime:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

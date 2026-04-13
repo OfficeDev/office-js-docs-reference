@@ -6,7 +6,21 @@ fullName: Visio.Interfaces.CommentData
 summary: >-
   An interface describing the data returned by calling `comment.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="visio!Visio.Interfaces.CommentCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="visio!Visio.Interfaces.CommentCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref uid="visio!Visio.Interfaces.PageData#comments:member" /> (property
+  type)
+
+  - <xref uid="visio!Visio.Interfaces.ShapeData#comments:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

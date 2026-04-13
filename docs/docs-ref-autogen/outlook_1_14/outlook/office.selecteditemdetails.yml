@@ -20,6 +20,14 @@ remarks: >-
   -->**: Message Compose, Message Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#getSelectedItemsAsync:member" />
+  (parameter type)
+
   #### Examples
 
 

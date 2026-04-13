@@ -28,6 +28,16 @@ remarks: >-
   endpoints](https://learn.microsoft.com/outlook/rest/compare-graph)<!-- -->.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#convertToEwsId:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Mailbox#convertToRestId:member" /> (parameter
+  type)
+
   #### Examples
 
 

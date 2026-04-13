@@ -10,6 +10,19 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#font:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.StyleLoadOptions#font:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

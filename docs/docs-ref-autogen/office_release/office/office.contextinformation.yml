@@ -10,6 +10,12 @@ remarks: >-
   [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
   property to get similar information.
 
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Context#diagnostics:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

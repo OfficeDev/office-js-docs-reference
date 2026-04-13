@@ -4,7 +4,12 @@ uid: office!Office.GetBindingDataOptions:interface
 package: office!
 fullName: Office.GetBindingDataOptions
 summary: Provides options for how to get the data in a binding.
-remarks: If the rows option is used, the value must be "thisRow".
+remarks: |-
+  If the rows option is used, the value must be "thisRow".
+
+  #### Used by
+
+  - <xref uid="office!Office.Binding#getDataAsync:member" /> (parameter type)
 
 isPreview: false
 isDeprecated: false

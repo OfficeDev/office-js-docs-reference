@@ -46,6 +46,13 @@ remarks: >-
   [Office.MailboxEvent](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent)<!--
   -->.
 
+
+  #### Used by
+
+
+  - <xref uid="office!Office.AddinCommands.Event#completed:member" /> (parameter
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -9,6 +9,18 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ApplicationData#calculationMode:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member" />
+  (property type)
+
   #### Examples
 
 

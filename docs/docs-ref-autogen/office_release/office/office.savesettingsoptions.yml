@@ -5,6 +5,11 @@ package: office!
 fullName: Office.SaveSettingsOptions
 summary: Provides options for saving settings.
 remarks: |-
+
+
+  #### Used by
+
+  - <xref uid="office!Office.Settings#saveAsync:member" /> (parameter type)
   #### Examples
 
   ```TypeScript

@@ -6,7 +6,19 @@ fullName: Excel.Interfaces.ChartSeriesData
 summary: >-
   An interface describing the data returned by calling
   `chartSeries.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ChartData#series:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

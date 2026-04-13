@@ -41,6 +41,24 @@ remarks: >-
   -->.
 
 
+
+
+  #### Used by
+
+
+
+  **Office**
+
+
+  - <xref uid="office!Office.Context#officeTheme:member" /> (property type)
+
+
+  **Outlook**
+
+
+  - <xref uid="outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member" />
+  (property type)
+
   #### Examples
 
 

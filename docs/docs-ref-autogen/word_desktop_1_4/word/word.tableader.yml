@@ -8,6 +8,40 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.IndexData#tabLeader:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.IndexUpdateData#tabLeader:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfAuthoritiesData#tabLeader:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableOfAuthoritiesUpdateData#tabLeader:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfContentsData#tabLeader:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfContentsUpdateData#tabLeader:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfFiguresData#tabLeader:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfFiguresUpdateData#tabLeader:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TabStopData#leader:member" /> (property
+  type)
+
+  - <xref uid="word!Word.TabStopAddOptions#leader:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -9,6 +9,23 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ChartData#chartType:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#chartType:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#chartType:member" />
+  (property type)
+
   #### Examples
 
 

@@ -19,6 +19,32 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.AppointmentRead#getAttachmentContentAsync:member"
+  /> (parameter type)
+
+  - <xref
+  uid="outlook!Office.LoadedMessageCompose#getAttachmentContentAsync:member" />
+  (parameter type)
+
+  - <xref
+  uid="outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.MessageCompose#getAttachmentContentAsync:member"
+  /> (parameter type)
+
+  - <xref uid="outlook!Office.MessageRead#getAttachmentContentAsync:member" />
+  (parameter type)
+
   #### Examples
 
 

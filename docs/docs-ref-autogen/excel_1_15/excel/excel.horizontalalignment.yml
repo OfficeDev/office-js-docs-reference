@@ -9,6 +9,29 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CellPropertiesFormat#horizontalAlignment:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.StyleData#horizontalAlignment:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.StyleUpdateData#horizontalAlignment:member" />
+  (property type)
+
   #### Examples
 
 

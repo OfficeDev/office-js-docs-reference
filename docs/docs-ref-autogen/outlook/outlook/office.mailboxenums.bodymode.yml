@@ -40,6 +40,15 @@ remarks: >-
   -->.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Body#getAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Body#setAsync:member" /> (parameter type)
+
   #### Examples
 
 

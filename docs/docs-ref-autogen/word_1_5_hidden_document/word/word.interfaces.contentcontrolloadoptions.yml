@@ -13,6 +13,121 @@ remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FieldLoadOptions#parentContentControl:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FieldLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentContentControl:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableLoadOptions#parentContentControl:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

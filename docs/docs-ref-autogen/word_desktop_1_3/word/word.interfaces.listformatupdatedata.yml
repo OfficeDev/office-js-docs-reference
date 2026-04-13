@@ -6,7 +6,12 @@ fullName: Word.Interfaces.ListFormatUpdateData
 summary: >-
   An interface for updating data on the `ListFormat` object, for use in
   `listFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#listFormat:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -21,6 +21,13 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#isAllDayEvent:member" />
+  (property type)
+
 isPreview: true
 isDeprecated: false
 type: interface

@@ -11,6 +11,17 @@ remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

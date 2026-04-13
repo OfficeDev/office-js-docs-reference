@@ -6,7 +6,22 @@ fullName: Excel.Interfaces.TableStyleData
 summary: >-
   An interface describing the data returned by calling `tableStyle.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.TableData#tableStyle:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.TableStyleCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#tableStyles:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

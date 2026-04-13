@@ -6,7 +6,12 @@ fullName: Word.Interfaces.LineNumberingData
 summary: >-
   An interface describing the data returned by calling
   `lineNumbering.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.PageSetupData#lineNumbering:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

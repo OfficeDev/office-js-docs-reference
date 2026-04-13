@@ -14,6 +14,45 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.BasicDataValidation#formula1:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.BasicDataValidation#formula2:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.DateTimeDataValidation#formula1:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.DateTimeDataValidation#formula2:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ListDataValidation#source:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member" /> (return
+  type)
+
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member" />
+  (return type)
+
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member" /> (return
+  type)
+
+  - <xref
+  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member" />
+  (return type)
+
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member" />
+  (return type)
+
+  - <xref
+  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member"
+  /> (return type)
+
   #### Examples
 
 

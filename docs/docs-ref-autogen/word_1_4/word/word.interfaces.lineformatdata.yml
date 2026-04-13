@@ -6,7 +6,10 @@ fullName: Word.Interfaces.LineFormatData
 summary: >-
   An interface describing the data returned by calling `lineFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - <xref uid="word!Word.Interfaces.FontData#line:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

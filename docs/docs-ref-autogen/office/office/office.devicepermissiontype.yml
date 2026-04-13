@@ -31,6 +31,17 @@ remarks: >-
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.DevicePermission#requestPermissions:member" />
+  (parameter type)
+
+  - <xref uid="office!Office.DevicePermission#requestPermissionsAsync:member" />
+  (parameter type)
+
   #### Examples
 
 

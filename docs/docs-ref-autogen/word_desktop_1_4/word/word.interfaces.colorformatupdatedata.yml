@@ -6,7 +6,39 @@ fullName: Word.Interfaces.ColorFormatUpdateData
 summary: >-
   An interface for updating data on the `ColorFormat` object, for use in
   `colorFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#backgroundColor:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#foregroundColor:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#textColor:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.GlowFormatUpdateData#color:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#backgroundColor:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#foregroundColor:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShadowFormatUpdateData#foregroundColor:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#contourColor:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColor:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

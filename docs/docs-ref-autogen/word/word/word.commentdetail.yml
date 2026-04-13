@@ -9,6 +9,14 @@ remarks: >-
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.CommentEventArgs#commentDetails:member" /> (property
+  type)
+
   #### Examples
 
 

@@ -8,6 +8,31 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.DocumentData#openEncoding:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentData#saveEncoding:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentData#textEncoding:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#saveEncoding:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#textEncoding:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.WebSettingsData#encoding:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#encoding:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

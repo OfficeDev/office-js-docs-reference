@@ -9,6 +9,29 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.SelectionDeleteOptions#unit:member" /> (property type)
+
+  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member" /> (property
+  type)
+
+  - <xref uid="word!Word.SelectionMoveOptions#unit:member" /> (property type)
+
+  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member" /> (property
+  type)
+
+  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member" /> (property
+  type)
+
+  - <xref uid="word!Word.SelectionNextOptions#unit:member" /> (property type)
+
+  - <xref uid="word!Word.SelectionPreviousOptions#unit:member" /> (property
+  type)
+
   #### Examples
 
 

@@ -23,6 +23,13 @@ remarks: >-
   -->**: Compose
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.MailboxEvent#completed:member" /> (parameter type)
+
   #### Examples
 
 

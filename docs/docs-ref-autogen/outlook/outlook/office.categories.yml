@@ -31,6 +31,27 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#categories:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.AppointmentRead#categories:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#categories:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.LoadedMessageRead#categories:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.MessageCompose#categories:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.MessageRead#categories:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

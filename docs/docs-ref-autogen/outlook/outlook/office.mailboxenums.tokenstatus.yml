@@ -27,6 +27,14 @@ remarks: >-
   -->.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Ews#getTokenStatusAsync:member" /> (parameter
+  type)
+
   #### Examples
 
 

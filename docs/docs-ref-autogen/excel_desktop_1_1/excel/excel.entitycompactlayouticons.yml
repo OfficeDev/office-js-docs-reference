@@ -13,6 +13,15 @@ remarks: >-
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.BasicCompactLayout#icon:member" /> (property type)
+
+  - <xref uid="excel!Excel.EntityCompactLayout#icon:member" /> (property type)
+
   #### Examples
 
 

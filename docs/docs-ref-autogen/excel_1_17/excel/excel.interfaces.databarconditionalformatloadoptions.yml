@@ -8,6 +8,26 @@ remarks: >-
   \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBarOrNullObject:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -11,6 +11,29 @@ remarks: >-
   \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.BooleanCellValue#provider:member" /> (property type)
+
+  - <xref uid="excel!Excel.DoubleCellValue#provider:member" /> (property type)
+
+  - <xref uid="excel!Excel.EntityCellValue#provider:member" /> (property type)
+
+  - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#provider:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.LocalImageCellValue#provider:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.StringCellValue#provider:member" /> (property type)
+
+  - <xref uid="excel!Excel.WebImageCellValue#provider:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

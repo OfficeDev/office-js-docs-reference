@@ -18,6 +18,16 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Read
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#displayNewMessageForm:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.Mailbox#displayNewMessageFormAsync:member" />
+  (parameter type)
+
 isPreview: false
 isDeprecated: false
 type: interface

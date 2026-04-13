@@ -68,6 +68,16 @@ remarks: >-
   avoid naming headers in a variable manner (for example, based on user input or
   a timestamp).
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#internetHeaders:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#internetHeaders:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

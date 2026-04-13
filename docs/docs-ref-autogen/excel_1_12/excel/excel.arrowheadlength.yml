@@ -9,6 +9,24 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadLength:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadLength:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadLength:member"
+  /> (property type)
+
   #### Examples
 
 

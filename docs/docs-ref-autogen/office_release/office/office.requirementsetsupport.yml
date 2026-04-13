@@ -7,6 +7,13 @@ summary: >-
   Provides information about which Requirement Sets are supported in the current
   environment.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Context#requirements:member" /> (property type)
+
   #### Examples
 
 

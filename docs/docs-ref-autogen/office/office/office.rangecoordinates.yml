@@ -8,6 +8,14 @@ summary: >-
   number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
   (zero-based) row in the 4th (zero-based) column.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.RangeFormatConfiguration#cells:member" /> (property
+  type)
+
   #### Examples
 
 

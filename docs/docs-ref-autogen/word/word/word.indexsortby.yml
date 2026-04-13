@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.IndexAddOptions#sortBy:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.IndexData#sortBy:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

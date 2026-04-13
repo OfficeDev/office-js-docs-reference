@@ -6,7 +6,12 @@ fullName: Word.Interfaces.ReflectionFormatData
 summary: >-
   An interface describing the data returned by calling
   `reflectionFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.FontData#reflection:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

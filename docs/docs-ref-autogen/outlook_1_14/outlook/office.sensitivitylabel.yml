@@ -34,6 +34,19 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
   -->.
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#sensitivityLabel:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#sensitivityLabel:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#sensitivityLabel:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

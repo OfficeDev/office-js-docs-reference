@@ -4,7 +4,33 @@ uid: office!Office.CustomXmlNode:interface
 package: office!
 fullName: Office.CustomXmlNode
 summary: Represents an XML node in a tree in a document.
-remarks: '**Applications**: Word'
+remarks: >-
+  **Applications**: Word
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.NodeDeletedEventArgs#oldNextSibling:member" />
+  (property type)
+
+  - <xref uid="office!Office.NodeDeletedEventArgs#oldNode:member" /> (property
+  type)
+
+  - <xref uid="office!Office.NodeInsertedEventArgs#newNode:member" /> (property
+  type)
+
+  - <xref uid="office!Office.NodeReplacedEventArgs#newNode:member" /> (property
+  type)
+
+  - <xref uid="office!Office.NodeReplacedEventArgs#oldNode:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

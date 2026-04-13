@@ -6,7 +6,10 @@ fullName: Word.Interfaces.CanvasData
 summary: >-
   An interface describing the data returned by calling `canvas.toJSON()`<!--
   -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - <xref uid="word!Word.Interfaces.ShapeData#canvas:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -9,6 +9,17 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.CoauthoringLockAddOptions#range:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ContentControlPlaceholderOptions#range:member" />
+  (property type)
+
   #### Examples
 
 

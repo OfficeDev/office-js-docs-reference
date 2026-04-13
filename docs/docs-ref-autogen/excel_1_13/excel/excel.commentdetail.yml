@@ -8,6 +8,19 @@ remarks: >-
   \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CommentAddedEventArgs#commentDetails:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.CommentChangedEventArgs#commentDetails:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.CommentDeletedEventArgs#commentDetails:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

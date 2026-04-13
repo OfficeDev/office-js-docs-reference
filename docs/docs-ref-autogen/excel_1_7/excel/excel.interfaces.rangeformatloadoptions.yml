@@ -10,6 +10,23 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#format:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeAreasLoadOptions#format:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeCollectionLoadOptions#format:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#format:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

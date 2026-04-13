@@ -8,6 +8,17 @@ remarks: >-
   \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ConditionalRangeFontData#underline:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

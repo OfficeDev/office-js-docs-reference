@@ -9,6 +9,18 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member" />
+  (property type)
+
   #### Examples
 
 

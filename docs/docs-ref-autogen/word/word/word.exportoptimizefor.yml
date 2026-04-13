@@ -9,6 +9,20 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#optimizeFor:member"
+  /> (property type)
+
+  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#optimizeFor:member"
+  /> (property type)
+
+  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#optimizeFor:member"
+  /> (property type)
+
   #### Examples
 
 

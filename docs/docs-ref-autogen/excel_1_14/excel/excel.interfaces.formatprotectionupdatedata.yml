@@ -6,7 +6,12 @@ fullName: Excel.Interfaces.FormatProtectionUpdateData
 summary: >-
   An interface for updating data on the `FormatProtection` object, for use in
   `formatProtection.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#protection:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

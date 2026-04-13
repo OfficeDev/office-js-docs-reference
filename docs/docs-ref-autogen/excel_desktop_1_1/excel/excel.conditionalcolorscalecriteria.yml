@@ -9,6 +9,19 @@ remarks: >-
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member"
+  /> (property type)
+
   #### Examples
 
 

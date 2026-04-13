@@ -14,6 +14,14 @@ remarks: >-
   1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Addin#beforeDocumentCloseNotification:member" />
+  (property type)
+
   #### Examples
 
 

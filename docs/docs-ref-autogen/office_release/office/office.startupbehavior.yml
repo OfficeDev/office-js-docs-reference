@@ -7,6 +7,16 @@ summary: >-
   Provides options to determine the startup behavior of the add-in upon next
   start-up.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Addin#getStartupBehavior:member" /> (return type)
+
+  - <xref uid="office!Office.Addin#setStartupBehavior:member" /> (parameter
+  type)
+
   #### Examples
 
 

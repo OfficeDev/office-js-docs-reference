@@ -25,6 +25,14 @@ remarks: >-
   -->, the `NotificationMessageAction` object is available in Compose mode only.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.NotificationMessageDetails#actions:member" />
+  (property type)
+
   #### Examples
 
 

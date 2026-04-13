@@ -17,6 +17,18 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentRead#sensitivity:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.Sensitivity#getAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Sensitivity#setAsync:member" /> (parameter type)
+
   #### Examples
 
 

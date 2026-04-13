@@ -31,6 +31,27 @@ remarks: >-
   -->**: Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member" />
+  (return type)
+
+  - <xref uid="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member"
+  /> (return type)
+
+  - <xref uid="outlook!Office.Contact#phoneNumbers:member" /> (property type)
+
+  - <xref uid="outlook!Office.Entities#phoneNumbers:member" /> (property type)
+
+  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member" /> (return
+  type)
+
+  - <xref uid="outlook!Office.MessageRead#getFilteredEntitiesByName:member" />
+  (return type)
+
   #### Examples
 
 

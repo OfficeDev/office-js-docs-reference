@@ -5,6 +5,13 @@ package: outlook!
 fullName: Office.MailboxEnums.OWAView
 summary: Represents the current view of Outlook on the web.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Diagnostics#OWAView:member" /> (property type)
+
   #### Examples
 
 

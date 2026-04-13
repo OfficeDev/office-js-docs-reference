@@ -5,6 +5,33 @@ package: outlook!
 fullName: Office.CoercionTypeOptions
 summary: Provides an option for the data format.
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#setSelectedDataAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.Body#appendOnSendAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Body#prependAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Body#prependOnSendAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.Body#setAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.Body#setSignatureAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.DisplayedBody#setAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member" />
+  (parameter type)
+
   #### Examples
 
 

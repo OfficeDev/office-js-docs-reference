@@ -19,6 +19,20 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.EnhancedLocation#addAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.EnhancedLocation#removeAsync:member" /> (parameter
+  type)
+
+  - <xref uid="outlook!Office.LocationDetails#locationIdentifier:member" />
+  (property type)
+
   #### Examples
 
 

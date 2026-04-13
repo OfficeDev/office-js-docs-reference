@@ -9,6 +9,17 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.BasicDataValidation#operator:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.DateTimeDataValidation#operator:member" /> (property
+  type)
+
   #### Examples
 
 

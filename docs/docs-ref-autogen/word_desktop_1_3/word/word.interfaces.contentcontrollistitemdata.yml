@@ -6,7 +6,17 @@ fullName: Word.Interfaces.ContentControlListItemData
 summary: >-
   An interface describing the data returned by calling
   `contentControlListItem.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlListItemCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlListItemCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

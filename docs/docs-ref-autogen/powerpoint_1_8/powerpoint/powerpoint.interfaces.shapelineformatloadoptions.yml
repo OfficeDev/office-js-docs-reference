@@ -11,6 +11,22 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member" />
+  (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#lineFormat:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

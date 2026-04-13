@@ -9,6 +9,24 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.ChartBorderData#lineStyle:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartBorderUpdateData#lineStyle:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member" />
+  (property type)
+
   #### Examples
 
 

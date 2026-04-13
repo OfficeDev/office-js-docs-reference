@@ -8,6 +8,21 @@ remarks: >-
   \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="word!Word.Interfaces.ConditionalStyleLoadOptions#paragraphFormat:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#paragraphFormat:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

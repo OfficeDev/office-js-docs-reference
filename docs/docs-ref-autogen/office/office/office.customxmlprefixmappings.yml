@@ -4,7 +4,15 @@ uid: office!Office.CustomXmlPrefixMappings:interface
 package: office!
 fullName: Office.CustomXmlPrefixMappings
 summary: Represents a collection of CustomXmlPart objects.
-remarks: '**Applications**: Word'
+remarks: >-
+  **Applications**: Word
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.CustomXmlPart#namespaceManager:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

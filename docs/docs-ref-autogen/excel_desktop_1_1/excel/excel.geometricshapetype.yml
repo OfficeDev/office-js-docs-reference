@@ -9,6 +9,33 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelData#geometricShapeType:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelsData#geometricShapeType:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#geometricShapeType:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ShapeData#geometricShapeType:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member"
+  /> (property type)
+
   #### Examples
 
 

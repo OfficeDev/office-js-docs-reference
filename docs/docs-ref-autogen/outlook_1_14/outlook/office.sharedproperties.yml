@@ -29,6 +29,31 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref
+  uid="outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.AppointmentRead#getSharedPropertiesAsync:member"
+  /> (parameter type)
+
+  - <xref
+  uid="outlook!Office.LoadedMessageCompose#getSharedPropertiesAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.LoadedMessageRead#getSharedPropertiesAsync:member"
+  /> (parameter type)
+
+  - <xref uid="outlook!Office.MessageCompose#getSharedPropertiesAsync:member" />
+  (parameter type)
+
+  - <xref uid="outlook!Office.MessageRead#getSharedPropertiesAsync:member" />
+  (parameter type)
+
   #### Examples
 
 

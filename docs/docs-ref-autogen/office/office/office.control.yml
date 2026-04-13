@@ -17,6 +17,15 @@ remarks: >-
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Group#controls:member" /> (property type)
+
+  - <xref uid="office!Office.Tab#controls:member" /> (property type)
+
   #### Examples
 
 

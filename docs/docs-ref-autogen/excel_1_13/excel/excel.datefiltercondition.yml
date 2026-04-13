@@ -12,6 +12,13 @@ remarks: >-
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.PivotDateFilter#condition:member" /> (property type)
+
   #### Examples
 
 

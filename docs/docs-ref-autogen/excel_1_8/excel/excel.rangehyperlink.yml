@@ -8,6 +8,19 @@ remarks: >-
   \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.RangeData#hyperlink:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#hyperlink:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.SettableCellProperties#hyperlink:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

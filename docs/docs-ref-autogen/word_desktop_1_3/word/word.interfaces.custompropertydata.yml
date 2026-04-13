@@ -6,7 +6,20 @@ fullName: Word.Interfaces.CustomPropertyData
 summary: >-
   An interface describing the data returned by calling
   `customProperty.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.CustomPropertyCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.DocumentPropertiesData#customProperties:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

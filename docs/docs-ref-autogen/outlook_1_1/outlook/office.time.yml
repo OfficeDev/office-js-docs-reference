@@ -20,6 +20,15 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#end:member" /> (property type)
+
+  - <xref uid="outlook!Office.AppointmentCompose#start:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

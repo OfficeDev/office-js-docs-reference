@@ -30,6 +30,13 @@ remarks: >-
   -->**: Compose or Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Context#mailbox:member" /> (property type)
+
   #### Examples
 
 

@@ -21,6 +21,12 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Message Read
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Display#body:member" /> (property type)
+
 isPreview: true
 isDeprecated: false
 type: interface

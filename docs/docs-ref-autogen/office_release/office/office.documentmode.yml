@@ -11,6 +11,13 @@ remarks: >-
   [Document](xref:office!Office.Document:interface) object.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Document#mode:member" /> (property type)
+
   #### Examples
 
 

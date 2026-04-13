@@ -6,10 +6,20 @@ fullName: Office.GetSelectedDataOptions
 summary: >-
   Provides options for customizing what data is returned and how it is
   formatted.
-remarks: |-
+remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Document#getSelectedDataAsync:member" /> (parameter
+  type)
+
   #### Examples
 
+
   ```TypeScript
+
   /* Set the selection options. These will:
    - Pass the string "myContext" to the callback.
    - Include both visible and hidden data.
@@ -22,7 +32,9 @@ remarks: |-
       valueFormat: Office.ValueFormat.Formatted
   }
 
+
   // Get the selected data in the Office document as text.
+
   Office.context.document.getSelectedDataAsync(
       Office.CoercionType.Text,
       options,
@@ -33,6 +45,7 @@ remarks: |-
               console.log(`The selected data is "${asyncResult.value}".`);
           }
   });
+
   ```
 
 isPreview: false

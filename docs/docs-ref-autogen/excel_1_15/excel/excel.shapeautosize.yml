@@ -9,6 +9,18 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member" />
+  (property type)
+
   #### Examples
 
 

@@ -9,6 +9,19 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CellPropertiesFill#pattern:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFillData#pattern:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFillUpdateData#pattern:member" />
+  (property type)
+
   #### Examples
 
 

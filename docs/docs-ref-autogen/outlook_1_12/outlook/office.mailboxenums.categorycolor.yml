@@ -27,6 +27,13 @@ remarks: >-
   add-in to match the updated preset values.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.CategoryDetails#color:member" /> (property type)
+
   #### Examples
 
 

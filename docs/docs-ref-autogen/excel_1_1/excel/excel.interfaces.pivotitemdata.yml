@@ -6,7 +6,19 @@ fullName: Excel.Interfaces.PivotItemData
 summary: >-
   An interface describing the data returned by calling `pivotItem.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.PivotFieldData#items:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.PivotItemCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.PivotItemCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

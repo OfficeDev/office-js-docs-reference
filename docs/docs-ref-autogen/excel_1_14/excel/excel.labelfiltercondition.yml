@@ -13,6 +13,13 @@ remarks: >-
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.PivotLabelFilter#condition:member" /> (property type)
+
   #### Examples
 
 

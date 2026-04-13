@@ -6,7 +6,16 @@ fullName: Excel.Interfaces.NamedSheetViewData
 summary: >-
   An interface describing the data returned by calling
   `namedSheetView.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

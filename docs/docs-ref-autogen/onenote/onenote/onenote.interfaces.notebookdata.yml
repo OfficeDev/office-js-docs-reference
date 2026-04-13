@@ -6,7 +6,19 @@ fullName: OneNote.Interfaces.NotebookData
 summary: >-
   An interface describing the data returned by calling `notebook.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="onenote!OneNote.Interfaces.ApplicationData#notebooks:member" />
+  (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.NotebookCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

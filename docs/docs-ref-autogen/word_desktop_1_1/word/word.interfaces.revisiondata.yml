@@ -6,7 +6,15 @@ fullName: Word.Interfaces.RevisionData
 summary: >-
   An interface describing the data returned by calling `revision.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.RevisionCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RevisionCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,17 @@ fullName: Excel.Interfaces.DocumentTaskChangeData
 summary: >-
   An interface describing the data returned by calling
   `documentTaskChange.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.DocumentTaskChangeCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

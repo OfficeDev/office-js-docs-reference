@@ -8,6 +8,20 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#columns:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#columns:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

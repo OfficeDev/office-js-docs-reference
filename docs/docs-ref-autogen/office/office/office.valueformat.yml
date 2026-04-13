@@ -14,6 +14,17 @@ remarks: >-
   sequential serial number form.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.GetBindingDataOptions#valueFormat:member" />
+  (property type)
+
+  - <xref uid="office!Office.GetSelectedDataOptions#valueFormat:member" />
+  (property type)
+
   #### Examples
 
 

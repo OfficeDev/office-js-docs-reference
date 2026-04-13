@@ -9,6 +9,17 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.TextFrameData#orientation:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TextFrameUpdateData#orientation:member" />
+  (property type)
+
   #### Examples
 
 

@@ -9,6 +9,22 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#placeholderFormat:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#placeholderFormat:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#placeholderFormat:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

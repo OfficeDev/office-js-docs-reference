@@ -4,7 +4,15 @@ uid: word!Word.Interfaces.PaneData:interface
 package: word!
 fullName: Word.Interfaces.PaneData
 summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.PaneCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.PaneCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

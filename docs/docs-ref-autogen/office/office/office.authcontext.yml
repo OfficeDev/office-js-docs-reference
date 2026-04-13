@@ -10,6 +10,12 @@ remarks: >-
   **Requirement set**: [NestedAppAuth
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets)
 
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Auth#getAuthContext:member" /> (return type)
+
 isPreview: false
 isDeprecated: false
 type: interface

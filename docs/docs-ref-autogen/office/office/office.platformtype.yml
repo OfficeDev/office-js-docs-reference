@@ -9,6 +9,16 @@ remarks: >-
   requirement set 1.5.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="office!Office.Context#platform:member" /> (property type)
+
+  - <xref uid="office!Office.ContextInformation#platform:member" /> (property
+  type)
+
   #### Examples
 
 

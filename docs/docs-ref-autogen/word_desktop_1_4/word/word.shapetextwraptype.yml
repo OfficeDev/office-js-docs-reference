@@ -13,6 +13,17 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ShapeTextWrapData#type:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.ShapeTextWrapUpdateData#type:member" />
+  (property type)
+
   #### Examples
 
 

@@ -34,6 +34,13 @@ summary: >-
 
   - [Message](xref:outlook!Office.Message:interface)
 remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#item:member" /> (property type)
+
   #### Examples
 
 

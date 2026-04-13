@@ -10,6 +10,18 @@ remarks: >-
   \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#quartileCalculation:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 fields:

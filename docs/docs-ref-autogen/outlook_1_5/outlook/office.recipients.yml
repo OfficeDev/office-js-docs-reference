@@ -18,6 +18,29 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#optionalAttendees:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.AppointmentCompose#requiredAttendees:member" />
+  (property type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#bcc:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#cc:member" /> (property type)
+
+  - <xref uid="outlook!Office.LoadedMessageCompose#to:member" /> (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#bcc:member" /> (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#cc:member" /> (property type)
+
+  - <xref uid="outlook!Office.MessageCompose#to:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

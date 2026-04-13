@@ -9,6 +9,18 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member"
+  /> (property type)
+
   #### Examples
 
 

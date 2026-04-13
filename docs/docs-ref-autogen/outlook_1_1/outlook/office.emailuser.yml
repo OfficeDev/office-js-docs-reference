@@ -15,6 +15,21 @@ remarks: >-
   -->**: Read
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.MeetingSuggestion#attendees:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.Recipients#addAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Recipients#setAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.TaskSuggestion#assignees:member" /> (property
+  type)
+
   #### Examples
 
 

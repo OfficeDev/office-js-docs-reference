@@ -6,7 +6,12 @@ fullName: Excel.ThreeTrafficLights2Set
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="excel!Excel.IconCollections#threeTrafficLights2:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

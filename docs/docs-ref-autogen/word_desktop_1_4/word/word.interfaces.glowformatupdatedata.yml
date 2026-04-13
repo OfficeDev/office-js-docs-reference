@@ -6,7 +6,12 @@ fullName: Word.Interfaces.GlowFormatUpdateData
 summary: >-
   An interface for updating data on the `GlowFormat` object, for use in
   `glowFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#glow:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

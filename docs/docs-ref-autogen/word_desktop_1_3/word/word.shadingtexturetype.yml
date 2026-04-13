@@ -13,6 +13,23 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Interfaces.ShadingData#texture:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.ShadingUniversalData#texture:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData#texture:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.ShadingUpdateData#texture:member" />
+  (property type)
+
   #### Examples
 
 

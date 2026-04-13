@@ -39,6 +39,14 @@ remarks: >-
   item. This must be done before calling `loadItemByIdAsync` on another item.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#loadItemByIdAsync:member" /> (parameter
+  type)
+
   #### Examples
 
 

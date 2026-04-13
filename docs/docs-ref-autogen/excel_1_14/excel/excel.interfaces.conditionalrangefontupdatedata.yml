@@ -6,7 +6,13 @@ fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeFont` object, for use
   in `conditionalRangeFont.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#font:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

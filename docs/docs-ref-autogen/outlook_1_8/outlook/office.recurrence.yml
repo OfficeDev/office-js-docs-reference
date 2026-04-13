@@ -39,6 +39,28 @@ remarks: >-
   <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td>
   <td>Yes (item.recurrence)</td> </tr> </table>
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.AppointmentCompose#recurrence:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.AppointmentRead#recurrence:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.LoadedMessageRead#recurrence:member" /> (property
+  type)
+
+  - <xref uid="outlook!Office.MessageRead#recurrence:member" /> (property type)
+
+  - <xref uid="outlook!Office.Recurrence#getAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.Recurrence#setAsync:member" /> (parameter type)
+
+  - <xref uid="outlook!Office.RecurrenceChangedEventArgs#recurrence:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

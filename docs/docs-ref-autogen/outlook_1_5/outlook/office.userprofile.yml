@@ -16,6 +16,12 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
+  #### Used by
+
+
+  - <xref uid="outlook!Office.Mailbox#userProfile:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface
