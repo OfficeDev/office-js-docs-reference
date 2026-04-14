@@ -3,30 +3,15 @@ name: Word.Interfaces.WindowData
 uid: word!Word.Interfaces.WindowData:interface
 package: word!
 fullName: Word.Interfaces.WindowData
-summary: >-
-  An interface describing the data returned by calling `window.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `window.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.DocumentData#activeWindow:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#windows:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.WindowCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.WindowCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.WindowData#next:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.WindowData#previous:member" /> (property
-  type)
-
+  - Word.Interfaces.DocumentData.activeWindow (property type)
+  - Word.Interfaces.DocumentData.windows (property type)
+  - Word.Interfaces.WindowCollectionData.items (property type)
+  - Word.Interfaces.WindowCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

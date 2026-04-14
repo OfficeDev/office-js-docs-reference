@@ -4,37 +4,29 @@ uid: word!Word.RevisionsBalloonMargin:enum
 package: word!
 fullName: Word.RevisionsBalloonMargin
 summary: Specifies the margin for revision balloons in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonSide:member" />
-  (property type)
-
+  - Word.Interfaces.ViewData.revisionsBalloonSide (property type)
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: left
     uid: word!Word.RevisionsBalloonMargin.left:member
     package: word!
-    summary: >-
+    summary: |-
       Left margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: right
     uid: word!Word.RevisionsBalloonMargin.right:member
     package: word!
-    summary: >-
+    summary: |-
       Right margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'

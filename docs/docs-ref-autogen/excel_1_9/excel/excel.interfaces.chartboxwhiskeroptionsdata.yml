@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartBoxwhiskerOptions.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#boxwhiskerOptions:member"
-  /> (property type)
+  - Excel.Interfaces.ChartSeriesData.boxwhiskerOptions (property type)
 
 isPreview: false
 isDeprecated: false

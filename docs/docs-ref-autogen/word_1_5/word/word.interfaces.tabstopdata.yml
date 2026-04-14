@@ -3,19 +3,13 @@ name: Word.Interfaces.TabStopData
 uid: word!Word.Interfaces.TabStopData:interface
 package: word!
 fullName: Word.Interfaces.TabStopData
-summary: >-
-  An interface describing the data returned by calling `tabStop.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `tabStop.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.TabStopCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TabStopCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.TabStopCollectionData.items (property type)
+  - Word.Interfaces.TabStopCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

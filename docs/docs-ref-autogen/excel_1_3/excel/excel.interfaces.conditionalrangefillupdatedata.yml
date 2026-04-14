@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeFillUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeFill` object, for use
   in `conditionalRangeFill.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#fill:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

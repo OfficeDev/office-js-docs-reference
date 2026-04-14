@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartDataLabelUpdateData
 summary: >-
   An interface for updating data on the `ChartDataLabel` object, for use in
   `chartDataLabel.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartPointUpdateData#dataLabel:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

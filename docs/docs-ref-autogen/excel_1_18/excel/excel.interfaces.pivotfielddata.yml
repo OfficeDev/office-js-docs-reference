@@ -6,28 +6,15 @@ fullName: Excel.Interfaces.PivotFieldData
 summary: >-
   An interface describing the data returned by calling `pivotField.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#field:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.PivotFieldCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.PivotHierarchyData#fields:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member"
-  /> (property type)
+  - Excel.Interfaces.DataPivotHierarchyData.field (property type)
+  - Excel.Interfaces.FilterPivotHierarchyData.fields (property type)
+  - Excel.Interfaces.PivotFieldCollectionData.items (property type)
+  - Excel.Interfaces.PivotFieldCollectionUpdateData.items (property type)
+  - Excel.Interfaces.PivotHierarchyData.fields (property type)
+  - Excel.Interfaces.RowColumnPivotHierarchyData.fields (property type)
 
 isPreview: false
 isDeprecated: false

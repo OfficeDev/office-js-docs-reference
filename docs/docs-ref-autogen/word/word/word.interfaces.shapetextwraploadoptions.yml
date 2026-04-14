@@ -14,11 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#textWrap:member"
-  /> (property type)
+  - Word.Interfaces.ShapeCollectionLoadOptions.textWrap (property type)
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#textWrap:member" />
-  (property type)
+  - Word.Interfaces.ShapeLoadOptions.textWrap (property type)
 
 isPreview: false
 isDeprecated: false

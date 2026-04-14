@@ -14,15 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#line:member" />
-  (property type)
+  - Excel.Interfaces.GroupShapeCollectionLoadOptions.line (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#line:member" />
-  (property type)
+  - Excel.Interfaces.ShapeCollectionLoadOptions.line (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#line:member" /> (property
-  type)
+  - Excel.Interfaces.ShapeLoadOptions.line (property type)
 
 isPreview: false
 isDeprecated: false

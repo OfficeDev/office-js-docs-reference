@@ -3,26 +3,13 @@ name: Word.Interfaces.CoauthoringLockData
 uid: word!Word.Interfaces.CoauthoringLockData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoringLock.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `coauthoringLock.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CoauthorData#locks:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringData#locks:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringLockCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.CoauthoringLockCollectionData.items (property type)
+  - Word.Interfaces.CoauthoringLockCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

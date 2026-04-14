@@ -6,15 +6,11 @@ fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartDataLabelFormat` object, for use
   in `chartDataLabelFormat.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#format:member" />
-  (property type)
+  - Excel.Interfaces.ChartDataLabelsUpdateData.format (property type)
+  - Excel.Interfaces.ChartDataLabelUpdateData.format (property type)
 
 isPreview: false
 isDeprecated: false

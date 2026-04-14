@@ -4,26 +4,15 @@ uid: visio!Visio.Interfaces.ShapeData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="visio!Visio.Interfaces.PageData#allShapes:member" /> (property
-  type)
-
-  - <xref uid="visio!Visio.Interfaces.PageData#shapes:member" /> (property type)
-
-  - <xref uid="visio!Visio.Interfaces.SelectionData#shapes:member" /> (property
-  type)
-
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="visio!Visio.Interfaces.ShapeData#subShapes:member" /> (property
-  type)
+  - Visio.Interfaces.PageData.allShapes (property type)
+  - Visio.Interfaces.PageData.shapes (property type)
+  - Visio.Interfaces.SelectionData.shapes (property type)
+  - Visio.Interfaces.ShapeCollectionData.items (property type)
+  - Visio.Interfaces.ShapeCollectionUpdateData.items (property type)
+  - Visio.Interfaces.ShapeData.subShapes (property type)
 
 isPreview: false
 isDeprecated: false

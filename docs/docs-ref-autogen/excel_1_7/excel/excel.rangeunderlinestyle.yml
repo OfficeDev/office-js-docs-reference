@@ -10,18 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFont#underline:member" /> (property
-  type)
+  - Excel.Interfaces.RangeFontData.underline (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeFontData#underline:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeFontUpdateData#underline:member" />
-  (property type)
+  - Excel.Interfaces.RangeFontUpdateData.underline (property type)
 
   #### Examples
 

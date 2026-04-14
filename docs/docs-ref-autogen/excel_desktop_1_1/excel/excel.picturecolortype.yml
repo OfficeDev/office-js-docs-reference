@@ -14,18 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterPictureData#colorType:member"
-  /> (property type)
+  - Excel.Interfaces.HeaderFooterPictureData.colorType (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData#colorType:member" />
-  (property type)
+  - Excel.Interfaces.HeaderFooterPictureUpdateData.colorType (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ImageData#colorType:member" /> (property
-  type)
+  - Excel.Interfaces.ImageData.colorType (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ImageUpdateData#colorType:member" />
-  (property type)
+  - Excel.Interfaces.ImageUpdateData.colorType (property type)
 
 isPreview: false
 isDeprecated: false

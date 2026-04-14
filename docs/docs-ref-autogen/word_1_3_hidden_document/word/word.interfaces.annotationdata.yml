@@ -3,19 +3,13 @@ name: Word.Interfaces.AnnotationData
 uid: word!Word.Interfaces.AnnotationData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationData
-summary: >-
-  An interface describing the data returned by calling `annotation.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `annotation.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.AnnotationCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.AnnotationCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.AnnotationCollectionData.items (property type)
+  - Word.Interfaces.AnnotationCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

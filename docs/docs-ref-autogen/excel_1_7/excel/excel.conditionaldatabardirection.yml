@@ -10,17 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member"
-  /> (property type)
+  - Excel.Interfaces.DataBarConditionalFormatData.barDirection (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection:member"
-  /> (property type)
+  - Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection (property
+  type)
 
   #### Examples
 

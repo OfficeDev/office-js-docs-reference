@@ -15,12 +15,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SelectionChangedEventArgs#workbook:member" />
-  (property type)
+  - Excel.SelectionChangedEventArgs.workbook (property type)
 
   #### Examples
 

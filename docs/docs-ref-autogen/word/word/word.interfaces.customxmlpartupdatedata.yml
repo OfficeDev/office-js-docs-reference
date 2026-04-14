@@ -6,15 +6,11 @@ fullName: Word.Interfaces.CustomXmlPartUpdateData
 summary: >-
   An interface for updating data on the `CustomXmlPart` object, for use in
   `customXmlPart.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#ownerPart:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.XmlMappingUpdateData#customXmlPart:member"
-  /> (property type)
+  - Word.Interfaces.CustomXmlNodeUpdateData.ownerPart (property type)
+  - Word.Interfaces.XmlMappingUpdateData.customXmlPart (property type)
 
 isPreview: false
 isDeprecated: false

@@ -4,23 +4,15 @@ uid: word!Word.Application:class
 package: word!
 fullName: Word.Application
 summary: Represents the `Application` object.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-
-  // Updates the text of the current document with the text from another
-  document passed in as a Base64-encoded string.
-
+  // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
   await Word.run(async (context) => {
     // Use the Base64-encoded string representation of the selected .docx file.
     const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
@@ -41,9 +33,8 @@ remarks: >-
     currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -52,11 +43,9 @@ properties:
     uid: word!Word.Application#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,23 +58,15 @@ methods:
     package: word!
     fullName: createDocument(base64File)
     summary: Creates a new document by using an optional Base64-encoded .docx file.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-
-      // Updates the text of the current document with the text from another
-      document passed in as a Base64-encoded string.
-
+      // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
       await Word.run(async (context) => {
         // Use the Base64-encoded string representation of the selected .docx file.
         const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
@@ -106,18 +87,15 @@ methods:
         currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'createDocument(base64File?: string): Word.DocumentCreated;'
       parameters:
         - id: base64File
-          description: >-
-            Optional. The Base64-encoded .docx file. The default value is
-            `null`<!-- -->.
+          description: Optional. The Base64-encoded .docx file. The default value is `null`<!-- -->.
           type: string
       return:
         type: <xref uid="word!Word.DocumentCreated:class" />
@@ -126,17 +104,13 @@ methods:
     uid: word!Word.Application#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.ApplicationLoadOptions):
-        Word.Application;
+      content: 'load(options?: Word.Interfaces.ApplicationLoadOptions): Word.Application;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
@@ -148,20 +122,16 @@ methods:
     uid: word!Word.Application#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Application;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Application:class" />
@@ -170,11 +140,9 @@ methods:
     uid: word!Word.Application#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,11 +153,7 @@ methods:
                 }): Word.Application;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -204,13 +168,11 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of the `Word.Application` object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        static newObject(context: OfficeExtension.ClientRequestContext):
-        Word.Application;
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;'
       parameters:
         - id: context
           description: ''
@@ -222,41 +184,28 @@ methods:
     uid: word!Word.Application#retrieveStylesFromBase64:member(1)
     package: word!
     fullName: retrieveStylesFromBase64(base64File)
-    summary: >-
-      Parse styles from template Base64 file and return JSON format of retrieved
-      styles as a string.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
+    remarks: |-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
-
-
-      // Gets style info from another document passed in as a Base64-encoded
-      string.
-
+      // Gets style info from another document passed in as a Base64-encoded string.
       await Word.run(async (context) => {
         const retrievedStyles = context.application.retrieveStylesFromBase64(externalDocument);
         await context.sync();
 
         console.log("Styles from the other document:", retrievedStyles.value);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        retrieveStylesFromBase64(base64File: string):
-        OfficeExtension.ClientResult<string>;
+      content: 'retrieveStylesFromBase64(base64File: string): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: base64File
           description: The template file.
@@ -268,29 +217,19 @@ methods:
     uid: word!Word.Application#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ApplicationUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.ApplicationUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -299,11 +238,9 @@ methods:
     uid: word!Word.Application#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -319,16 +256,9 @@ methods:
     uid: word!Word.Application#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Application`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

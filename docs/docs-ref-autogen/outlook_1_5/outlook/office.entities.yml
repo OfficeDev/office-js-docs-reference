@@ -66,11 +66,7 @@ remarks: >-
 
   - Office.AppointmentRead.getEntities (return type)
 
-  - Office.AppointmentRead.getSelectedEntities (return type)
-
   - Office.MessageRead.getEntities (return type)
-
-  - Office.MessageRead.getSelectedEntities (return type)
 
 isPreview: false
 isDeprecated: true

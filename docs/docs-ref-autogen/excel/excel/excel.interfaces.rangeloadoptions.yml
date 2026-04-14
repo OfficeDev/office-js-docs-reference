@@ -17,19 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeCell:member" />
-  (property type)
+  - Excel.Interfaces.WindowCollectionLoadOptions.activeCell (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#visibleRange:member"
-  /> (property type)
+  - Excel.Interfaces.WindowCollectionLoadOptions.visibleRange (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#activeCell:member" />
-  (property type)
+  - Excel.Interfaces.WindowLoadOptions.activeCell (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#visibleRange:member" />
-  (property type)
+  - Excel.Interfaces.WindowLoadOptions.visibleRange (property type)
 
 isPreview: false
 isDeprecated: false

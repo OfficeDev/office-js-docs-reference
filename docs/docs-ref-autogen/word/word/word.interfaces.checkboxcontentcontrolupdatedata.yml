@@ -10,9 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#checkboxContentControl:member"
-  /> (property type)
+  - Word.Interfaces.ContentControlUpdateData.checkboxContentControl (property
+  type)
 
 isPreview: false
 isDeprecated: false

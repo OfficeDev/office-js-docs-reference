@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#borders:member"
-  /> (property type)
+  - Word.Interfaces.StyleCollectionLoadOptions.borders (property type)
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#borders:member" />
-  (property type)
+  - Word.Interfaces.StyleLoadOptions.borders (property type)
 
 isPreview: false
 isDeprecated: false

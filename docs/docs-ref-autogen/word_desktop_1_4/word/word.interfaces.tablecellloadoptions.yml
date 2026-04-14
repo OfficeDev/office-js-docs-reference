@@ -4,114 +4,38 @@ uid: word!Word.Interfaces.TableCellLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableCellLoadOptions
 summary: Represents a table cell in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#parentTableCell:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.FieldLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCell:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentTableCell:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCell:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentTableCell:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member"
-  /> (property type)
-
+  - Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.ContentControlLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.FieldCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.FieldCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.FieldLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.FieldLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.InlinePictureLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.ParagraphLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.RangeCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.RangeLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.TableCollectionLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject (property type)
+  - Word.Interfaces.TableLoadOptions.parentTableCell (property type)
+  - Word.Interfaces.TableLoadOptions.parentTableCellOrNullObject (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -120,12 +44,9 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,10 +58,8 @@ properties:
     package: word!
     fullName: body
     summary: Gets the `Body` object of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,10 +71,8 @@ properties:
     package: word!
     fullName: cellIndex
     summary: Gets the index of the cell in its row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,13 +83,9 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#column:member
     package: word!
     fullName: column
-    summary: >-
-      Returns the `TableColumn` object that represents the table column that
-      contains this cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the `TableColumn` object that represents the table column that contains this cell.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,13 +96,9 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#columnWidth:member
     package: word!
     fullName: columnWidth
-    summary: >-
-      Specifies the width of the cell's column in points. This is applicable to
-      uniform tables.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the width of the cell's column in points. This is applicable to uniform tables.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,14 +109,9 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#horizontalAlignment:member
     package: word!
     fullName: horizontalAlignment
-    summary: >-
-      Specifies the horizontal alignment of the cell. The value can be
-      `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal alignment of the cell. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,10 +123,8 @@ properties:
     package: word!
     fullName: parentRow
     summary: Gets the parent row of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,10 +136,8 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the parent table of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,10 +149,8 @@ properties:
     package: word!
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,32 +161,22 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns the `ShadingUniversal` object that represents the shading of the
-      table cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the `ShadingUniversal` object that represents the shading of the table cell.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface" />
   - name: shadingColor
     uid: word!Word.Interfaces.TableCellLoadOptions#shadingColor:member
     package: word!
     fullName: shadingColor
-    summary: >-
-      Specifies the shading color of the cell. Color is specified in "\#RRGGBB"
-      format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -300,10 +188,8 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the text of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -314,13 +200,9 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of the cell. The value can be `top`<!--
-      -->, `center`<!-- -->, or `bottom`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical alignment of the cell. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -332,10 +214,8 @@ properties:
     package: word!
     fullName: width
     summary: Gets the width of the cell in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

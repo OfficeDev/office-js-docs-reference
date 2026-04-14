@@ -3,23 +3,13 @@ name: Word.Interfaces.TableColumnData
 uid: word!Word.Interfaces.TableColumnData:interface
 package: word!
 fullName: Word.Interfaces.TableColumnData
-summary: >-
-  An interface describing the data returned by calling
-  `tableColumn.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `tableColumn.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.RangeData#tableColumns:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.TableColumnCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableColumnCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.TableColumnCollectionData.items (property type)
+  - Word.Interfaces.TableColumnCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

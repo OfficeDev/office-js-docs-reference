@@ -6,28 +6,15 @@ fullName: Word.Interfaces.InlinePictureData
 summary: >-
   An interface describing the data returned by calling
   `inlinePicture.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyData#inlinePictures:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#inlinePictures:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.InlinePictureCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphData#inlinePictures:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#inlinePictures:member" />
-  (property type)
+  - Word.Interfaces.BodyData.inlinePictures (property type)
+  - Word.Interfaces.ContentControlData.inlinePictures (property type)
+  - Word.Interfaces.InlinePictureCollectionData.items (property type)
+  - Word.Interfaces.InlinePictureCollectionUpdateData.items (property type)
+  - Word.Interfaces.ParagraphData.inlinePictures (property type)
+  - Word.Interfaces.RangeData.inlinePictures (property type)
 
 isPreview: false
 isDeprecated: false

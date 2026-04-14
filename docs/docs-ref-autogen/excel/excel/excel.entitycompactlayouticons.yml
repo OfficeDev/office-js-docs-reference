@@ -14,13 +14,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicCompactLayout#icon:member" /> (property type)
+  - Excel.BasicCompactLayout.icon (property type)
 
-  - <xref uid="excel!Excel.EntityCompactLayout#icon:member" /> (property type)
+  - Excel.EntityCompactLayout.icon (property type)
 
   #### Examples
 

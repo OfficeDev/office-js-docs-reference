@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatData
 summary: >-
   An interface describing the data returned by calling
   `conditionalDataBarNegativeFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatData#negativeFormat:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

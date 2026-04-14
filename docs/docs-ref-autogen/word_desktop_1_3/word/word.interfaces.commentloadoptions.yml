@@ -4,22 +4,14 @@ uid: word!Word.Interfaces.CommentLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CommentLoadOptions
 summary: Represents a comment in the document.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member" />
-  (property type)
-
+  - Word.Interfaces.CommentReplyCollectionLoadOptions.parentComment (property type)
+  - Word.Interfaces.CommentReplyLoadOptions.parentComment (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,12 +20,9 @@ properties:
     uid: word!Word.Interfaces.CommentLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,10 +34,8 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,10 +47,8 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,10 +60,8 @@ properties:
     package: word!
     fullName: content
     summary: Specifies the comment's content as plain text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,27 +73,21 @@ properties:
     package: word!
     fullName: contentRange
     summary: Specifies the comment's content range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />
   - name: creationDate
     uid: word!Word.Interfaces.CommentLoadOptions#creationDate:member
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,10 +99,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,14 +111,9 @@ properties:
     uid: word!Word.Interfaces.CommentLoadOptions#resolved:member
     package: word!
     fullName: resolved
-    summary: >-
-      Specifies the comment thread's status. Setting to `true` resolves the
-      comment thread. Getting a value of `true` means that the comment thread is
-      resolved.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the comment thread's status. Setting to `true` resolves the comment thread. Getting a value of `true` means that the comment thread is resolved.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

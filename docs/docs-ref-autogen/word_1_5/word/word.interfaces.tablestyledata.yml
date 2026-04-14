@@ -3,16 +3,9 @@ name: Word.Interfaces.TableStyleData
 uid: word!Word.Interfaces.TableStyleData:interface
 package: word!
 fullName: Word.Interfaces.TableStyleData
-summary: >-
-  An interface describing the data returned by calling `tableStyle.toJSON()`<!--
-  -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.StyleData#tableStyle:member" /> (property
-  type)
-
+summary: An interface describing the data returned by calling `tableStyle.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

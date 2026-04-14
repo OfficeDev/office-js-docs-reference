@@ -13,9 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableLoadOptions#styleSettings:member"
-  /> (property type)
+  - PowerPoint.Interfaces.TableLoadOptions.styleSettings (property type)
 
 isPreview: false
 isDeprecated: false

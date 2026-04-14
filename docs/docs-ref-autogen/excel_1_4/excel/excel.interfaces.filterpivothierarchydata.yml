@@ -10,16 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member"
-  /> (property type)
+  - Excel.Interfaces.FilterPivotHierarchyCollectionData.items (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.PivotTableData#filterHierarchies:member"
-  /> (property type)
+  - Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items (property
+  type)
 
 isPreview: false
 isDeprecated: false

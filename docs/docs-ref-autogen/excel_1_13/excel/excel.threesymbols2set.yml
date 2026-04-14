@@ -6,12 +6,10 @@ fullName: Excel.ThreeSymbols2Set
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.IconCollections#threeSymbols2:member" /> (property
-  type)
+  - Excel.IconCollections.threeSymbols2 (property type)
 
 isPreview: false
 isDeprecated: false

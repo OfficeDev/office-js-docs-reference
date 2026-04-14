@@ -10,22 +10,17 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderWidth:member"
-  /> (property type)
+  - Word.Interfaces.BorderCollectionUpdateData.insideBorderWidth (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderWidth:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.BorderData#width:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.BorderUpdateData#width:member" /> (property
+  - Word.Interfaces.BorderCollectionUpdateData.outsideBorderWidth (property
   type)
+
+  - Word.Interfaces.BorderData.width (property type)
+
+  - Word.Interfaces.BorderUpdateData.width (property type)
 
   #### Examples
 

@@ -10,15 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LineData#connectorType:member" />
-  (property type)
+  - Excel.Interfaces.LineData.connectorType (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#connectorType:member" />
-  (property type)
+  - Excel.Interfaces.LineUpdateData.connectorType (property type)
 
   #### Examples
 

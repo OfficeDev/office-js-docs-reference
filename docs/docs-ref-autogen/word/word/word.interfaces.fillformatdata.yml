@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.FontData#fill:member" /> (property type)
+  - Word.Interfaces.FontData.fill (property type)
 
 isPreview: false
 isDeprecated: false

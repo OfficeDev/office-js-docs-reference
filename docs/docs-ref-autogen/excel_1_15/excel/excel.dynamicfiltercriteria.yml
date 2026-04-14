@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterCriteria#dynamicCriteria:member" /> (property
-  type)
+  - Excel.FilterCriteria.dynamicCriteria (property type)
 
   #### Examples
 

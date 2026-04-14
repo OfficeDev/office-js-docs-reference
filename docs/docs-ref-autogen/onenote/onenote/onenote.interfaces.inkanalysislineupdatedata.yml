@@ -6,12 +6,10 @@ fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
 summary: >-
   An interface for updating data on the `InkAnalysisLine` object, for use in
   `inkAnalysisLine.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordUpdateData#line:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisWordUpdateData.line (property type)
 
 isPreview: false
 isDeprecated: false

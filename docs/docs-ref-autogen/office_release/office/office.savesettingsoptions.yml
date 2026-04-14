@@ -7,6 +7,7 @@ summary: Provides options for saving settings.
 remarks: |-
 
 
+
   #### Used by
 
   - Office.Settings.saveAsync (parameter type)

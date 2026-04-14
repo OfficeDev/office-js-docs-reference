@@ -4,31 +4,12 @@ uid: word!Word.Interfaces.FieldData:interface
 package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyData#fields:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#fields:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphData#fields:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#fields:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableData#fields:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableRowData#fields:member" /> (property
-  type)
-
+  - Word.Interfaces.FieldCollectionData.items (property type)
+  - Word.Interfaces.FieldCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

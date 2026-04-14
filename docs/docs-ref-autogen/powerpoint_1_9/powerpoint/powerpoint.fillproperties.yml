@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCellProperties#fill:member" />
-  (property type)
+  - PowerPoint.TableCellProperties.fill (property type)
 
   #### Examples
 

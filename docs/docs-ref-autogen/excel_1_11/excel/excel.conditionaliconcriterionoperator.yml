@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalIconCriterion#operator:member" />
-  (property type)
+  - Excel.ConditionalIconCriterion.operator (property type)
 
   #### Examples
 

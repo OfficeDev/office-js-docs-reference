@@ -13,13 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#background:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions.background (property
+  type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#background:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideLayoutLoadOptions.background (property type)
 
 isPreview: false
 isDeprecated: false

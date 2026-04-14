@@ -10,13 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionData#items:member"
-  /> (property type)
+  - Word.Interfaces.TableOfAuthoritiesCategoryCollectionData.items (property
+  type)
 
-  - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData#items:member"
-  /> (property type)
+  - Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData.items
+  (property type)
 
 isPreview: false
 isDeprecated: false

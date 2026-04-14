@@ -10,35 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#backgroundColor:member"
-  /> (property type)
+  - Word.Interfaces.FillFormatUpdateData.backgroundColor (property type)
 
-  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#foregroundColor:member"
-  /> (property type)
+  - Word.Interfaces.FillFormatUpdateData.foregroundColor (property type)
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#textColor:member" />
-  (property type)
+  - Word.Interfaces.FontUpdateData.textColor (property type)
 
-  - <xref uid="word!Word.Interfaces.GlowFormatUpdateData#color:member" />
-  (property type)
+  - Word.Interfaces.GlowFormatUpdateData.color (property type)
 
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#backgroundColor:member"
-  /> (property type)
+  - Word.Interfaces.LineFormatUpdateData.backgroundColor (property type)
 
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#foregroundColor:member"
-  /> (property type)
+  - Word.Interfaces.LineFormatUpdateData.foregroundColor (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.ShadowFormatUpdateData#foregroundColor:member" />
-  (property type)
+  - Word.Interfaces.ShadowFormatUpdateData.foregroundColor (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#contourColor:member"
-  /> (property type)
+  - Word.Interfaces.ThreeDimensionalFormatUpdateData.contourColor (property
+  type)
 
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColor:member"
-  /> (property type)
+  - Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColor (property
+  type)
 
 isPreview: false
 isDeprecated: false

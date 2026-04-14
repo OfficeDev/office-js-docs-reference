@@ -3,19 +3,9 @@ name: Word.Interfaces.DocumentPropertiesUpdateData
 uid: word!Word.Interfaces.DocumentPropertiesUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DocumentPropertiesUpdateData
-summary: >-
-  An interface for updating data on the `DocumentProperties` object, for use in
-  `documentProperties.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.DocumentCreatedUpdateData#properties:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#properties:member" />
-  (property type)
-
+summary: An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

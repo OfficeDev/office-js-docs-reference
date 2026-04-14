@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.TaskPaneStateChangedEventArgs#paneType:member" />
-  (property type)
+  - Visio.TaskPaneStateChangedEventArgs.paneType (property type)
 
 isPreview: false
 isDeprecated: false

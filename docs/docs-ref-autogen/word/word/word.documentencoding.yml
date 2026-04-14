@@ -12,26 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#openEncoding:member" />
-  (property type)
+  - Word.Interfaces.DocumentData.openEncoding (property type)
 
-  - <xref uid="word!Word.Interfaces.DocumentData#saveEncoding:member" />
-  (property type)
+  - Word.Interfaces.DocumentData.saveEncoding (property type)
 
-  - <xref uid="word!Word.Interfaces.DocumentData#textEncoding:member" />
-  (property type)
+  - Word.Interfaces.DocumentData.textEncoding (property type)
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#saveEncoding:member" />
-  (property type)
+  - Word.Interfaces.DocumentUpdateData.saveEncoding (property type)
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#textEncoding:member" />
-  (property type)
+  - Word.Interfaces.DocumentUpdateData.textEncoding (property type)
 
-  - <xref uid="word!Word.Interfaces.WebSettingsData#encoding:member" />
-  (property type)
+  - Word.Interfaces.WebSettingsData.encoding (property type)
 
-  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#encoding:member" />
-  (property type)
+  - Word.Interfaces.WebSettingsUpdateData.encoding (property type)
 
 isPreview: false
 isDeprecated: false

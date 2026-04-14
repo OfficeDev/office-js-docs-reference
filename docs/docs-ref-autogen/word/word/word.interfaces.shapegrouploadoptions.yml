@@ -15,12 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.ShapeCollectionLoadOptions#shapeGroup:member" />
-  (property type)
+  - Word.Interfaces.ShapeCollectionLoadOptions.shapeGroup (property type)
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#shapeGroup:member" />
-  (property type)
+  - Word.Interfaces.ShapeLoadOptions.shapeGroup (property type)
 
 isPreview: false
 isDeprecated: false

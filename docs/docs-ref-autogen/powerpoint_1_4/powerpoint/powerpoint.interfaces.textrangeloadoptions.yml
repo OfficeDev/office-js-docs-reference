@@ -15,9 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextFrameLoadOptions#textRange:member"
-  /> (property type)
+  - PowerPoint.Interfaces.TextFrameLoadOptions.textRange (property type)
 
 isPreview: false
 isDeprecated: false

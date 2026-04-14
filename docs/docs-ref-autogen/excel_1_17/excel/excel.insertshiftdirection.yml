@@ -12,12 +12,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChangeDirectionState#insertShiftDirection:member" />
-  (property type)
+  - Excel.ChangeDirectionState.insertShiftDirection (property type)
 
   #### Examples
 

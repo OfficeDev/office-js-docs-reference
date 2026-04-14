@@ -3,40 +3,17 @@ name: Word.Interfaces.CustomXmlPartData
 uid: word!Word.Interfaces.CustomXmlPartData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPart.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#ownerPart:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentCreatedData#customXmlParts:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#customXmlParts:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.XmlMappingData#customXmlPart:member" />
-  (property type)
-
+  - Word.Interfaces.CustomXmlPartCollectionData.items (property type)
+  - Word.Interfaces.CustomXmlPartCollectionUpdateData.items (property type)
+  - Word.Interfaces.CustomXmlPartScopedCollectionData.items (property type)
+  - Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items (property type)
+  - Word.Interfaces.DocumentCreatedData.customXmlParts (property type)
+  - Word.Interfaces.DocumentData.customXmlParts (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -46,10 +23,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,10 +36,8 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

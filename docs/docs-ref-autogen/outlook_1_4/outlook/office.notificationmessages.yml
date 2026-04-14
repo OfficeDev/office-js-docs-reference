@@ -34,10 +34,6 @@ remarks: >-
 
   - Office.AppointmentRead.notificationMessages (property type)
 
-  - Office.LoadedMessageCompose.notificationMessages (property type)
-
-  - Office.LoadedMessageRead.notificationMessages (property type)
-
   - Office.MessageCompose.notificationMessages (property type)
 
   - Office.MessageRead.notificationMessages (property type)

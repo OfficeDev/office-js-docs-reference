@@ -15,17 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#font:member"
-  /> (property type)
+  - PowerPoint.Interfaces.TableCellCollectionLoadOptions.font (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member" />
-  (property type)
+  - PowerPoint.Interfaces.TableCellLoadOptions.font (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member" />
-  (property type)
+  - PowerPoint.Interfaces.TextRangeLoadOptions.font (property type)
 
 isPreview: false
 isDeprecated: false

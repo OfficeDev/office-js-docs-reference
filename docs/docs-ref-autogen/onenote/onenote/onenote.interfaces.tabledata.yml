@@ -4,12 +4,10 @@ uid: onenote!OneNote.Interfaces.TableData:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#table:member" />
-  (property type)
+  - OneNote.Interfaces.ParagraphData.table (property type)
 
 isPreview: false
 isDeprecated: false

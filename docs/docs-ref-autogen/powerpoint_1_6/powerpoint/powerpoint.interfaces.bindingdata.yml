@@ -6,17 +6,11 @@ fullName: PowerPoint.Interfaces.BindingData
 summary: >-
   An interface describing the data returned by calling `binding.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BindingCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData#items:member"
-  /> (property type)
+  - PowerPoint.Interfaces.BindingCollectionData.items (property type)
+  - PowerPoint.Interfaces.BindingCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

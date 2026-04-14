@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#alignment:member" />
-  (property type)
+  - Excel.Interfaces.ChartAxisData.alignment (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#alignment:member" />
-  (property type)
+  - Excel.Interfaces.ChartAxisUpdateData.alignment (property type)
 
 isPreview: false
 isDeprecated: false

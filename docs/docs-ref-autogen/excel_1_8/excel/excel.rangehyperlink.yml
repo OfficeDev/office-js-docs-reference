@@ -12,14 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#hyperlink:member" /> (property
-  type)
+  - Excel.Interfaces.RangeData.hyperlink (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#hyperlink:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.SettableCellProperties#hyperlink:member" /> (property
-  type)
+  - Excel.Interfaces.RangeUpdateData.hyperlink (property type)
 
 isPreview: false
 isDeprecated: false

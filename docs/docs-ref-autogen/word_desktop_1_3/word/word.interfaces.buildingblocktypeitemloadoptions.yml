@@ -4,21 +4,14 @@ uid: word!Word.Interfaces.BuildingBlockTypeItemLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockTypeItemLoadOptions
 summary: Represents a type of building block in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockCategoryLoadOptions#type:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#type:member" />
-  (property type)
-
+  - Word.Interfaces.BuildingBlockCategoryLoadOptions.type (property type)
+  - Word.Interfaces.BuildingBlockLoadOptions.type (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,12 +20,9 @@ properties:
     uid: word!Word.Interfaces.BuildingBlockTypeItemLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,10 +34,8 @@ properties:
     package: word!
     fullName: index
     summary: Returns the position of an item in a collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,10 +47,8 @@ properties:
     package: word!
     fullName: name
     summary: Returns the localized name of a building block type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

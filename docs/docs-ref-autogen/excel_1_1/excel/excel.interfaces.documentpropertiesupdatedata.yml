@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.DocumentPropertiesUpdateData
 summary: >-
   An interface for updating data on the `DocumentProperties` object, for use in
   `documentProperties.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookUpdateData#properties:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

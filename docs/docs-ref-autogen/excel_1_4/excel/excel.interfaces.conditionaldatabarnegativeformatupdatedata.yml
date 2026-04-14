@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
 summary: >-
   An interface for updating data on the `ConditionalDataBarNegativeFormat`
   object, for use in `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#negativeFormat:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

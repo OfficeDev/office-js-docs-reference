@@ -6,19 +6,11 @@ fullName: Excel.Interfaces.RangeViewData
 summary: >-
   An interface describing the data returned by calling `rangeView.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.RangeViewCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#rows:member" /> (property
-  type)
+  - Excel.Interfaces.RangeViewCollectionData.items (property type)
+  - Excel.Interfaces.RangeViewCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

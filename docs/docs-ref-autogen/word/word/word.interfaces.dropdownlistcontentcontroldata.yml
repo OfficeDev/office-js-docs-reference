@@ -10,9 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.ContentControlData#dropDownListContentControl:member"
-  /> (property type)
+  - Word.Interfaces.ContentControlData.dropDownListContentControl (property
+  type)
 
 isPreview: false
 isDeprecated: false

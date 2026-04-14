@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.PivotTableStyleUpdateData
 summary: >-
   An interface for updating data on the `PivotTableStyle` object, for use in
   `pivotTableStyle.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData#pivotStyle:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

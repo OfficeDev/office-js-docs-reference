@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControlPlaceholderOptions#buildingBlock:member"
-  /> (property type)
+  - Word.ContentControlPlaceholderOptions.buildingBlock (property type)
 
 isPreview: false
 isDeprecated: false

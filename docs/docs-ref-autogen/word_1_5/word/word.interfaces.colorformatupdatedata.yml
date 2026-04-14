@@ -3,43 +3,9 @@ name: Word.Interfaces.ColorFormatUpdateData
 uid: word!Word.Interfaces.ColorFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ColorFormatUpdateData
-summary: >-
-  An interface for updating data on the `ColorFormat` object, for use in
-  `colorFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#backgroundColor:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#foregroundColor:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.FontUpdateData#textColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.GlowFormatUpdateData#color:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#backgroundColor:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#foregroundColor:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ShadowFormatUpdateData#foregroundColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#contourColor:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColor:member"
-  /> (property type)
-
+summary: An interface for updating data on the `ColorFormat` object, for use in `colorFormat.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -6,15 +6,11 @@ fullName: Word.Interfaces.ListTemplateUpdateData
 summary: >-
   An interface for updating data on the `ListTemplate` object, for use in
   `listTemplate.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ListFormatUpdateData#listTemplate:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#listTemplate:member" />
-  (property type)
+  - Word.Interfaces.ListFormatUpdateData.listTemplate (property type)
+  - Word.Interfaces.StyleUpdateData.listTemplate (property type)
 
 isPreview: false
 isDeprecated: false

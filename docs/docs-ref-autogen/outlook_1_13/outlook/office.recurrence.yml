@@ -47,8 +47,6 @@ remarks: >-
 
   - Office.AppointmentRead.recurrence (property type)
 
-  - Office.LoadedMessageRead.recurrence (property type)
-
   - Office.MessageRead.recurrence (property type)
 
   - Office.Recurrence.getAsync (parameter type)

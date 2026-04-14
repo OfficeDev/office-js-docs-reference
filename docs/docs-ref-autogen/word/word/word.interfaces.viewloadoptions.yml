@@ -3,23 +3,15 @@ name: Word.Interfaces.ViewLoadOptions
 uid: word!Word.Interfaces.ViewLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ViewLoadOptions
-summary: >-
-  Contains the view attributes (such as show all, field shading, and table
-  gridlines) for a window or pane.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains the view attributes (such as show all, field shading, and table gridlines) for a window or pane.
+remarks: |-
+  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#view:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.WindowLoadOptions#view:member" /> (property
-  type)
-
+  - Word.Interfaces.WindowCollectionLoadOptions.view (property type)
+  - Word.Interfaces.WindowLoadOptions.view (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,12 +20,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,15 +30,12 @@ properties:
       return:
         type: boolean
   - name: areAllNonprintingCharactersDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areAllNonprintingCharactersDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areAllNonprintingCharactersDisplayed:member
     package: word!
     fullName: areAllNonprintingCharactersDisplayed
     summary: Specifies whether all nonprinting characters are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,13 +46,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areBackgroundsDisplayed:member
     package: word!
     fullName: areBackgroundsDisplayed
-    summary: >-
-      Gets whether background colors and images are shown when the document is
-      displayed in print layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether background colors and images are shown when the document is displayed in print layout view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,13 +59,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areBookmarksIndicated:member
     package: word!
     fullName: areBookmarksIndicated
-    summary: >-
-      Gets whether square brackets are displayed at the beginning and end of
-      each bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether square brackets are displayed at the beginning and end of each bookmark.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,10 +73,8 @@ properties:
     package: word!
     fullName: areCommentsDisplayed
     summary: Specifies whether Microsoft Word displays the comments in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,17 +82,12 @@ properties:
       return:
         type: boolean
   - name: areConnectingLinesToRevisionsBalloonDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areConnectingLinesToRevisionsBalloonDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areConnectingLinesToRevisionsBalloonDisplayed:member
     package: word!
     fullName: areConnectingLinesToRevisionsBalloonDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays connecting lines from the text
-      to the revision and comment balloons.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,13 +98,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areCropMarksDisplayed:member
     package: word!
     fullName: areCropMarksDisplayed
-    summary: >-
-      Gets whether crop marks are shown in the corners of pages to indicate
-      where margins are located.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether crop marks are shown in the corners of pages to indicate where margins are located.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,13 +111,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areDrawingsDisplayed:member
     package: word!
     fullName: areDrawingsDisplayed
-    summary: >-
-      Gets whether objects created with the drawing tools are displayed in print
-      layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether objects created with the drawing tools are displayed in print layout view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,13 +124,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areEditableRangesShaded:member
     package: word!
     fullName: areEditableRangesShaded
-    summary: >-
-      Specifies whether shading is applied to the ranges in the document that
-      users have permission to modify.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether shading is applied to the ranges in the document that users have permission to modify.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,10 +138,8 @@ properties:
     package: word!
     fullName: areFieldCodesDisplayed
     summary: Specifies whether field codes are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,13 +150,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areFormatChangesDisplayed:member
     package: word!
     fullName: areFormatChangesDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays formatting changes made to the
-      document with Track Changes enabled.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,10 +164,8 @@ properties:
     package: word!
     fullName: areInkAnnotationsDisplayed
     summary: Specifies whether handwritten ink annotations are shown or hidden.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,17 +173,12 @@ properties:
       return:
         type: boolean
   - name: areInsertionsAndDeletionsDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areInsertionsAndDeletionsDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areInsertionsAndDeletionsDisplayed:member
     package: word!
     fullName: areInsertionsAndDeletionsDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays insertions and deletions made to
-      the document with Track Changes enabled.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,13 +189,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areLinesWrappedToWindow:member
     package: word!
     fullName: areLinesWrappedToWindow
-    summary: >-
-      Gets whether lines wrap at the right edge of the document window rather
-      than at the right margin or the right column boundary.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether lines wrap at the right edge of the document window rather than at the right margin or the right column boundary.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,13 +202,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areObjectAnchorsDisplayed:member
     package: word!
     fullName: areObjectAnchorsDisplayed
-    summary: >-
-      Gets whether object anchors are displayed next to items that can be
-      positioned in print layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether object anchors are displayed next to items that can be positioned in print layout view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,10 +216,8 @@ properties:
     package: word!
     fullName: areOptionalBreaksDisplayed
     summary: Gets whether Microsoft Word displays optional line breaks.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -293,10 +229,8 @@ properties:
     package: word!
     fullName: areOptionalHyphensDisplayed
     summary: Gets whether optional hyphens are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,10 +242,8 @@ properties:
     package: word!
     fullName: areOtherAuthorsVisible
     summary: Gets whether other authors' presence should be visible in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,13 +254,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#arePageBoundariesDisplayed:member
     package: word!
     fullName: arePageBoundariesDisplayed
-    summary: >-
-      Gets whether the top and bottom margins and the gray area between pages in
-      the document are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether the top and bottom margins and the gray area between pages in the document are displayed.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,10 +268,8 @@ properties:
     package: word!
     fullName: areParagraphsMarksDisplayed
     summary: Gets whether paragraph marks are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,15 +277,12 @@ properties:
       return:
         type: boolean
   - name: arePicturePlaceholdersDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#arePicturePlaceholdersDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#arePicturePlaceholdersDisplayed:member
     package: word!
     fullName: arePicturePlaceholdersDisplayed
     summary: Gets whether blank boxes are displayed as placeholders for pictures.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,17 +290,12 @@ properties:
       return:
         type: boolean
   - name: areRevisionsAndCommentsDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areRevisionsAndCommentsDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areRevisionsAndCommentsDisplayed:member
     package: word!
     fullName: areRevisionsAndCommentsDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays revisions and comments made to
-      the document with Track Changes enabled.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -389,10 +307,8 @@ properties:
     package: word!
     fullName: areSpacesIndicated
     summary: Gets whether space characters are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -404,10 +320,8 @@ properties:
     package: word!
     fullName: areTableGridlinesDisplayed
     summary: Specifies whether table gridlines are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -419,10 +333,8 @@ properties:
     package: word!
     fullName: areTabsDisplayed
     summary: Gets whether tab characters are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -433,13 +345,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areTextBoundariesDisplayed:member
     package: word!
     fullName: areTextBoundariesDisplayed
-    summary: >-
-      Gets whether dotted lines are displayed around page margins, text columns,
-      objects, and frames in print layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether dotted lines are displayed around page margins, text columns, objects, and frames in print layout view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -451,10 +359,8 @@ properties:
     package: word!
     fullName: columnWidth
     summary: Specifies the column width in Reading mode.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -466,10 +372,8 @@ properties:
     package: word!
     fullName: fieldShading
     summary: Gets on-screen shading for fields.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -480,13 +384,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isDraft:member
     package: word!
     fullName: isDraft
-    summary: >-
-      Specifies whether all the text in a window is displayed in the same
-      sans-serif font with minimal formatting to speed up display.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -497,13 +397,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isFirstLineOnlyDisplayed:member
     package: word!
     fullName: isFirstLineOnlyDisplayed
-    summary: >-
-      Specifies whether only the first line of body text is shown in outline
-      view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether only the first line of body text is shown in outline view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -515,10 +411,8 @@ properties:
     package: word!
     fullName: isFormatDisplayed
     summary: Specifies whether character formatting is visible in outline view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -530,10 +424,8 @@ properties:
     package: word!
     fullName: isFullScreen
     summary: Specifies whether the window is in full-screen view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -545,10 +437,8 @@ properties:
     package: word!
     fullName: isHiddenTextDisplayed
     summary: Gets whether text formatted as hidden text is displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -559,13 +449,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isHighlightingDisplayed:member
     package: word!
     fullName: isHighlightingDisplayed
-    summary: >-
-      Gets whether highlight formatting is displayed and printed with the
-      document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether highlight formatting is displayed and printed with the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -577,10 +463,8 @@ properties:
     package: word!
     fullName: isInConflictMode
     summary: Specifies whether the document is in conflict mode view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -592,10 +476,8 @@ properties:
     package: word!
     fullName: isInPanning
     summary: Specifies whether Microsoft Word is in Panning mode.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -607,10 +489,8 @@ properties:
     package: word!
     fullName: isInReadingLayout
     summary: Specifies whether the document is being viewed in reading layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -621,13 +501,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isMailMergeDataView:member
     package: word!
     fullName: isMailMergeDataView
-    summary: >-
-      Specifies whether mail merge data is displayed instead of mail merge
-      fields.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether mail merge data is displayed instead of mail merge fields.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -638,13 +514,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isMainTextLayerVisible:member
     package: word!
     fullName: isMainTextLayerVisible
-    summary: >-
-      Specifies whether the text in the document is visible when the header and
-      footer areas are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the text in the document is visible when the header and footer areas are displayed.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -655,13 +527,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isPointerShownAsMagnifier:member
     package: word!
     fullName: isPointerShownAsMagnifier
-    summary: >-
-      Specifies whether the pointer is displayed as a magnifying glass in print
-      preview.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the pointer is displayed as a magnifying glass in print preview.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -672,13 +540,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isReadingLayoutActualView:member
     package: word!
     fullName: isReadingLayoutActualView
-    summary: >-
-      Specifies whether pages displayed in reading layout view are displayed
-      using the same layout as printed pages.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -690,10 +554,8 @@ properties:
     package: word!
     fullName: isXmlMarkupVisible
     summary: Specifies whether XML tags are visible in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -705,10 +567,8 @@ properties:
     package: word!
     fullName: markupMode
     summary: Specifies the display mode for tracked changes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -720,10 +580,8 @@ properties:
     package: word!
     fullName: pageColor
     summary: Specifies the page color in Reading mode.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -735,10 +593,8 @@ properties:
     package: word!
     fullName: pageMovementType
     summary: Specifies the page movement type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -749,13 +605,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#readingLayoutTruncateMargins:member
     package: word!
     fullName: readingLayoutTruncateMargins
-    summary: >-
-      Specifies whether margins are visible or hidden when the document is
-      viewed in Full Screen Reading view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -766,13 +618,9 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#revisionsBalloonSide:member
     package: word!
     fullName: revisionsBalloonSide
-    summary: >-
-      Gets whether Word displays revision balloons in the left or right margin
-      in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets whether Word displays revision balloons in the left or right margin in the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -784,10 +632,8 @@ properties:
     package: word!
     fullName: revisionsBalloonWidth
     summary: Specifies the width of the revision balloons.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -799,10 +645,8 @@ properties:
     package: word!
     fullName: revisionsBalloonWidthType
     summary: Specifies how Microsoft Word measures the width of revision balloons.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -814,27 +658,21 @@ properties:
     package: word!
     fullName: revisionsFilter
     summary: Gets the instance of a `RevisionsFilter` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'revisionsFilter?: Word.Interfaces.RevisionsFilterLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.RevisionsFilterLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.RevisionsFilterLoadOptions:interface" />
   - name: seekView
     uid: word!Word.Interfaces.ViewLoadOptions#seekView:member
     package: word!
     fullName: seekView
     summary: Specifies the document element displayed in print layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -846,10 +684,8 @@ properties:
     package: word!
     fullName: splitSpecial
     summary: Specifies the active window pane.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -861,10 +697,8 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the view type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

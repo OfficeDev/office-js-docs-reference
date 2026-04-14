@@ -3,50 +3,13 @@ name: Word.Interfaces.CustomXmlNodeData
 uid: word!Word.Interfaces.CustomXmlNodeData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlNode.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `customXmlNode.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlNodeCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#attributes:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#childNodes:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#firstChild:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#lastChild:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#nextSibling:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#parentNode:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#previousSibling:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#documentElement:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlValidationErrorData#node:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.XmlMappingData#customXmlNode:member" />
-  (property type)
-
+  - Word.Interfaces.CustomXmlNodeCollectionData.items (property type)
+  - Word.Interfaces.CustomXmlNodeCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

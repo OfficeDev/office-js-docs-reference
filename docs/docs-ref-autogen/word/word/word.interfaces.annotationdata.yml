@@ -6,15 +6,11 @@ fullName: Word.Interfaces.AnnotationData
 summary: >-
   An interface describing the data returned by calling `annotation.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.AnnotationCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.AnnotationCollectionUpdateData#items:member"
-  /> (property type)
+  - Word.Interfaces.AnnotationCollectionData.items (property type)
+  - Word.Interfaces.AnnotationCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

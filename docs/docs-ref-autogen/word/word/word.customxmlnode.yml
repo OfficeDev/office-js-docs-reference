@@ -16,14 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlAddNodeOptions#nextSibling:member" />
-  (property type)
+  - Word.CustomXmlAddNodeOptions.nextSibling (property type)
 
-  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nextSibling:member" />
-  (property type)
+  - Word.CustomXmlInsertNodeBeforeOptions.nextSibling (property type)
 
-  - <xref uid="word!Word.CustomXmlInsertSubtreeBeforeOptions#nextSibling:member"
-  /> (property type)
+  - Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling (property type)
 
 isPreview: false
 isDeprecated: false

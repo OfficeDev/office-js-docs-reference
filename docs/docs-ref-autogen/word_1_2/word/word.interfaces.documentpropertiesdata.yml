@@ -3,19 +3,9 @@ name: Word.Interfaces.DocumentPropertiesData
 uid: word!Word.Interfaces.DocumentPropertiesData:interface
 package: word!
 fullName: Word.Interfaces.DocumentPropertiesData
-summary: >-
-  An interface describing the data returned by calling
-  `documentProperties.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.DocumentCreatedData#properties:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#properties:member" /> (property
-  type)
-
+summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PivotFieldData#subtotals:member" />
-  (property type)
+  - Excel.Interfaces.PivotFieldData.subtotals (property type)
 
-  - <xref uid="excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member" />
-  (property type)
+  - Excel.Interfaces.PivotFieldUpdateData.subtotals (property type)
 
 isPreview: false
 isDeprecated: false

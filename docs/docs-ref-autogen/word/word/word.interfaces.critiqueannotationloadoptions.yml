@@ -12,13 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member"
-  /> (property type)
+  - Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation (property
+  type)
 
-  - <xref
-  uid="word!Word.Interfaces.AnnotationLoadOptions#critiqueAnnotation:member" />
-  (property type)
+  - Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation (property type)
 
 isPreview: false
 isDeprecated: false

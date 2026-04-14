@@ -13,17 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#placeholderFormat:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeCollectionLoadOptions.placeholderFormat (property
+  type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#placeholderFormat:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeLoadOptions.placeholderFormat (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#placeholderFormat:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.placeholderFormat
+  (property type)
 
 isPreview: false
 isDeprecated: false

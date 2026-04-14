@@ -10,17 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFill#pattern:member" /> (property type)
+  - Excel.CellPropertiesFill.pattern (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeFillData#pattern:member" /> (property
-  type)
+  - Excel.Interfaces.RangeFillData.pattern (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeFillUpdateData#pattern:member" />
-  (property type)
+  - Excel.Interfaces.RangeFillUpdateData.pattern (property type)
 
   #### Examples
 

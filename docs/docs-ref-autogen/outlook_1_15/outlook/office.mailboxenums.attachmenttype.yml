@@ -15,15 +15,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AttachmentDetails.attachmentType (property type)
 
   - Office.AttachmentDetailsCompose.attachmentType (property type)
-
-  - Office.DecryptedMessageAttachment.attachmentType (property type)
 
   - Office.MessageFormAttachment.type (property type)
 

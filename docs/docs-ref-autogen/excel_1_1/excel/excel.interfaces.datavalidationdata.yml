@@ -6,15 +6,7 @@ fullName: Excel.Interfaces.DataValidationData
 summary: >-
   An interface describing the data returned by calling
   `dataValidation.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#dataValidation:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeData#dataValidation:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

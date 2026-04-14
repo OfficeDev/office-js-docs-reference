@@ -3,16 +3,9 @@ name: Word.Interfaces.LineNumberingData
 uid: word!Word.Interfaces.LineNumberingData:interface
 package: word!
 fullName: Word.Interfaces.LineNumberingData
-summary: >-
-  An interface describing the data returned by calling
-  `lineNumbering.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.PageSetupData#lineNumbering:member" />
-  (property type)
-
+summary: An interface describing the data returned by calling `lineNumbering.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

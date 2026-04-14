@@ -18,10 +18,8 @@ summary: >-
 remarks: |-
 
 
+
   #### Used by
-
-
-  **Office**
 
   - Office.Binding.addHandlerAsync (parameter type)
   - Office.Binding.removeHandlerAsync (parameter type)
@@ -38,19 +36,6 @@ remarks: |-
   - Office.Settings.removeHandlerAsync (parameter type)
   - Office.SettingsChangedEventArgs.type (property type)
   - Office.UI.addHandlerAsync (parameter type)
-
-  **Outlook**
-
-  - Office.AppointmentCompose.addHandlerAsync (parameter type)
-  - Office.AppointmentCompose.removeHandlerAsync (parameter type)
-  - Office.AppointmentRead.addHandlerAsync (parameter type)
-  - Office.AppointmentRead.removeHandlerAsync (parameter type)
-  - Office.Mailbox.addHandlerAsync (parameter type)
-  - Office.Mailbox.removeHandlerAsync (parameter type)
-  - Office.MessageCompose.addHandlerAsync (parameter type)
-  - Office.MessageCompose.removeHandlerAsync (parameter type)
-  - Office.MessageRead.addHandlerAsync (parameter type)
-  - Office.MessageRead.removeHandlerAsync (parameter type)
   #### Examples
 
   ```TypeScript

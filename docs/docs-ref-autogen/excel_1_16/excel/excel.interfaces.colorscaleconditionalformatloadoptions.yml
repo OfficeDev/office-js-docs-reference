@@ -12,21 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale (property
+  type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member" />
+  -
+  Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScaleOrNullObject
   (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScaleOrNullObject:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalFormatLoadOptions.colorScale (property type)
+
+  - Excel.Interfaces.ConditionalFormatLoadOptions.colorScaleOrNullObject
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#properties:member"
-  /> (property type)
+  - PowerPoint.Interfaces.PresentationLoadOptions.properties (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#glow:member" /> (property
-  type)
+  - Word.Interfaces.FontLoadOptions.glow (property type)
 
 isPreview: false
 isDeprecated: false

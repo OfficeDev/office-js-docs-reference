@@ -13,24 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill (property type)
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member" />
-  (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#fill:member"
-  /> (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#fill:member"
-  /> (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#fill:member" />
-  (property type)
+  - PowerPoint.Interfaces.ShapeLoadOptions.fill (property type)
 
 isPreview: false
 isDeprecated: false

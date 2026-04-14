@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.DataRefreshCompleteEventArgs#document:member" />
-  (property type)
+  - Visio.DataRefreshCompleteEventArgs.document (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,15 +6,11 @@ fullName: Excel.Interfaces.RangeFillUpdateData
 summary: >-
   An interface for updating data on the `RangeFill` object, for use in
   `rangeFill.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#fill:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#fill:member" /> (property
-  type)
+  - Excel.Interfaces.RangeFormatUpdateData.fill (property type)
+  - Excel.Interfaces.StyleUpdateData.fill (property type)
 
 isPreview: false
 isDeprecated: false

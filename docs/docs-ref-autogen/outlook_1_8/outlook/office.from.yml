@@ -29,8 +29,6 @@ remarks: >-
   #### Used by
 
 
-  - Office.LoadedMessageCompose.from (property type)
-
   - Office.MessageCompose.from (property type)
 
 isPreview: false

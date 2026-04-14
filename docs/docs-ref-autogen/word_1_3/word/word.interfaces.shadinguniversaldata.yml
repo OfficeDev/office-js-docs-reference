@@ -3,23 +3,9 @@ name: Word.Interfaces.ShadingUniversalData
 uid: word!Word.Interfaces.ShadingUniversalData:interface
 package: word!
 fullName: Word.Interfaces.ShadingUniversalData
-summary: >-
-  An interface describing the data returned by calling
-  `shadingUniversal.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.FrameData#shading:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphData#shading:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#shading:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableColumnData#shading:member" /> (property
-  type)
-
+summary: An interface describing the data returned by calling `shadingUniversal.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

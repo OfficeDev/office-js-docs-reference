@@ -3,33 +3,9 @@ name: Word.Interfaces.BuildingBlockUpdateData
 uid: word!Word.Interfaces.BuildingBlockUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockUpdateData
-summary: >-
-  An interface for updating data on the `BuildingBlock` object, for use in
-  `buildingBlock.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#placeholderText:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#placeholderText:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.GroupContentControlUpdateData#placeholderText:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#placeholderText:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#placeholderText:member"
-  /> (property type)
-
+summary: An interface for updating data on the `BuildingBlock` object, for use in `buildingBlock.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

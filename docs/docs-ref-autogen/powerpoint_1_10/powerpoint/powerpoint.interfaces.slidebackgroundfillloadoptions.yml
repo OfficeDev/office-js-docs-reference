@@ -13,17 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundLoadOptions#fill:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideBackgroundLoadOptions.fill (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#fill:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions.fill (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions#fill:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions.fill (property type)
 
 isPreview: false
 isDeprecated: false

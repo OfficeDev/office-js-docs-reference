@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsData#include:member" />
-  (property type)
+  - Excel.Interfaces.ChartErrorBarsData.include (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsUpdateData#include:member"
-  /> (property type)
+  - Excel.Interfaces.ChartErrorBarsUpdateData.include (property type)
 
 isPreview: false
 isDeprecated: false

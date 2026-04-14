@@ -12,9 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.SelectionConvertToTableOptions#defaultTableBehavior:member" />
-  (property type)
+  - Word.SelectionConvertToTableOptions.defaultTableBehavior (property type)
 
 isPreview: true
 isDeprecated: false

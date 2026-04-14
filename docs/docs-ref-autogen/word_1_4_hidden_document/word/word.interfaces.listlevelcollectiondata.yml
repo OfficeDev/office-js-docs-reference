@@ -3,11 +3,9 @@ name: Word.Interfaces.ListLevelCollectionData
 uid: word!Word.Interfaces.ListLevelCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ListLevelCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `listLevelCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `listLevelCollection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

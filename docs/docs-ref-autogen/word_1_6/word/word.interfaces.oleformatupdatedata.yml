@@ -3,11 +3,9 @@ name: Word.Interfaces.OleFormatUpdateData
 uid: word!Word.Interfaces.OleFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.OleFormatUpdateData
-summary: >-
-  An interface for updating data on the `OleFormat` object, for use in
-  `oleFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `OleFormat` object, for use in `oleFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -10,16 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#namespaceManager:member"
-  /> (property type)
+  - Word.Interfaces.CustomXmlPartData.namespaceManager (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionData#items:member"
-  /> (property type)
+  - Word.Interfaces.CustomXmlPrefixMappingCollectionData.items (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member"
-  /> (property type)
+  - Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData.items (property
+  type)
 
 isPreview: false
 isDeprecated: false

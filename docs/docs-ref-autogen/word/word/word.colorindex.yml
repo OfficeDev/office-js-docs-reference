@@ -12,43 +12,31 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BorderUniversalData#colorIndex:member" />
-  (property type)
+  - Word.Interfaces.BorderUniversalData.colorIndex (property type)
 
-  - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#colorIndex:member"
-  /> (property type)
+  - Word.Interfaces.BorderUniversalUpdateData.colorIndex (property type)
 
-  - <xref uid="word!Word.Interfaces.FontData#colorIndex:member" /> (property
+  - Word.Interfaces.FontData.colorIndex (property type)
+
+  - Word.Interfaces.FontData.colorIndexBidirectional (property type)
+
+  - Word.Interfaces.FontUpdateData.colorIndex (property type)
+
+  - Word.Interfaces.FontUpdateData.colorIndexBidirectional (property type)
+
+  - Word.Interfaces.RangeData.highlightColorIndex (property type)
+
+  - Word.Interfaces.ShadingUniversalData.backgroundPatternColorIndex (property
   type)
 
-  - <xref uid="word!Word.Interfaces.FontData#colorIndexBidirectional:member" />
+  - Word.Interfaces.ShadingUniversalData.foregroundPatternColorIndex (property
+  type)
+
+  - Word.Interfaces.ShadingUniversalUpdateData.backgroundPatternColorIndex
   (property type)
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#colorIndex:member" />
+  - Word.Interfaces.ShadingUniversalUpdateData.foregroundPatternColorIndex
   (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#highlightColorIndex:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ShadingUniversalData#backgroundPatternColorIndex:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ShadingUniversalData#foregroundPatternColorIndex:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ShadingUniversalUpdateData#backgroundPatternColorIndex:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ShadingUniversalUpdateData#foregroundPatternColorIndex:member"
-  /> (property type)
 
 isPreview: false
 isDeprecated: false

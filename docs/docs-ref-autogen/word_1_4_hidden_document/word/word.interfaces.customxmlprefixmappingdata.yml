@@ -3,24 +3,13 @@ name: Word.Interfaces.CustomXmlPrefixMappingData
 uid: word!Word.Interfaces.CustomXmlPrefixMappingData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPrefixMapping.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `customXmlPrefixMapping.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#namespaceManager:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.CustomXmlPrefixMappingCollectionData.items (property type)
+  - Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

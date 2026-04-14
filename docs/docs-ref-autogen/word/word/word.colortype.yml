@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ColorFormatData#type:member" /> (property
-  type)
+  - Word.Interfaces.ColorFormatData.type (property type)
 
 isPreview: false
 isDeprecated: false

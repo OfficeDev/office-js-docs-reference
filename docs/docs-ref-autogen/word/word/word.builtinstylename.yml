@@ -14,40 +14,28 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#styleBuiltIn:member" /> (property
-  type)
+  - Word.Interfaces.BodyData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.BodyUpdateData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.BodyUpdateData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.ContentControlData.styleBuiltIn (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.ContentControlUpdateData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.ParagraphData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.ParagraphUpdateData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.RangeData#styleBuiltIn:member" /> (property
-  type)
+  - Word.Interfaces.RangeData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.RangeUpdateData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.TableData#styleBuiltIn:member" /> (property
-  type)
+  - Word.Interfaces.TableData.styleBuiltIn (property type)
 
-  - <xref uid="word!Word.Interfaces.TableUpdateData#styleBuiltIn:member" />
-  (property type)
+  - Word.Interfaces.TableUpdateData.styleBuiltIn (property type)
 
   #### Examples
 

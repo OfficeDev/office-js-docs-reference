@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#pictureContentControl:member"
-  /> (property type)
+  - Word.Interfaces.ContentControlCollectionLoadOptions.pictureContentControl
+  (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#pictureContentControl:member"
-  /> (property type)
+  - Word.Interfaces.ContentControlLoadOptions.pictureContentControl (property
+  type)
 
 isPreview: false
 isDeprecated: false

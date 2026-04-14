@@ -10,23 +10,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#visibility:member" />
-  (property type)
+  - Excel.Interfaces.WorksheetData.visibility (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member" />
-  (property type)
+  - Excel.Interfaces.WorksheetUpdateData.visibility (property type)
 
-  - <xref
-  uid="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityAfter:member"
-  /> (property type)
+  - Excel.WorksheetVisibilityChangedEventArgs.visibilityAfter (property type)
 
-  - <xref
-  uid="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityBefore:member"
-  /> (property type)
+  - Excel.WorksheetVisibilityChangedEventArgs.visibilityBefore (property type)
 
   #### Examples
 

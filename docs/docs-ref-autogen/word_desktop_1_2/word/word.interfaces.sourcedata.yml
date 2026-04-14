@@ -3,22 +3,13 @@ name: Word.Interfaces.SourceData
 uid: word!Word.Interfaces.SourceData:interface
 package: word!
 fullName: Word.Interfaces.SourceData
-summary: >-
-  An interface describing the data returned by calling `source.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `source.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BibliographyData#sources:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SourceCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SourceCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.SourceCollectionData.items (property type)
+  - Word.Interfaces.SourceCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

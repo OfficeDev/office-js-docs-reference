@@ -24,8 +24,6 @@ remarks: >-
 
   - Office.Mailbox.displayNewMessageForm (parameter type)
 
-  - Office.Mailbox.displayNewMessageFormAsync (parameter type)
-
 isPreview: false
 isDeprecated: false
 type: interface

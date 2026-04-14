@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ShapeLineFormatUpdateData
 summary: >-
   An interface for updating data on the `ShapeLineFormat` object, for use in
   `shapeLineFormat.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#lineFormat:member" />
-  (property type)
+  - Excel.Interfaces.ShapeUpdateData.lineFormat (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotFilters#valueFilter:member" /> (property type)
+  - Excel.PivotFilters.valueFilter (property type)
 
   #### Examples
 

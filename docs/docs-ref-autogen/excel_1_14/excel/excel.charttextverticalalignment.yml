@@ -12,36 +12,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelData#verticalAlignment:member" />
-  (property type)
+  - Excel.Interfaces.ChartDataLabelData.verticalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsData#verticalAlignment:member" />
-  (property type)
+  - Excel.Interfaces.ChartDataLabelsData.verticalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#verticalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.ChartDataLabelUpdateData.verticalAlignment (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartTitleData#verticalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.ChartTitleData.verticalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member" />
-  (property type)
+  - Excel.Interfaces.ChartTitleUpdateData.verticalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelData#verticalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#verticalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment (property
+  type)
 
 isPreview: false
 isDeprecated: false

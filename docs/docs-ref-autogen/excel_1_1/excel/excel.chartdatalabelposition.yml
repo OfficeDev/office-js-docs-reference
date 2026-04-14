@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelData#position:member" />
-  (property type)
+  - Excel.Interfaces.ChartDataLabelsData.position (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsData#position:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#position:member"
-  /> (property type)
+  - Excel.Interfaces.ChartDataLabelsUpdateData.position (property type)
 
 isPreview: false
 isDeprecated: false

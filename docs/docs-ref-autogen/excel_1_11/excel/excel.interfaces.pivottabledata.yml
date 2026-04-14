@@ -6,30 +6,15 @@ fullName: Excel.Interfaces.PivotTableData
 summary: >-
   An interface describing the data returned by calling `pivotTable.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.PivotTableCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.PivotTableCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#pivotTables:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#pivotTables:member" />
-  (property type)
+  - Excel.Interfaces.PivotTableCollectionData.items (property type)
+  - Excel.Interfaces.PivotTableCollectionUpdateData.items (property type)
+  - Excel.Interfaces.PivotTableScopedCollectionData.items (property type)
+  - Excel.Interfaces.PivotTableScopedCollectionUpdateData.items (property type)
+  - Excel.Interfaces.WorkbookData.pivotTables (property type)
+  - Excel.Interfaces.WorksheetData.pivotTables (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers:member" />
-  (property type)
+  - OneNote.Interfaces.InkAnalysisWordData.strokePointers (property type)
 
 isPreview: false
 isDeprecated: false

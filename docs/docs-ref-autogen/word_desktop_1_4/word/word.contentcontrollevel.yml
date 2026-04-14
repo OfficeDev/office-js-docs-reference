@@ -4,71 +4,49 @@ uid: word!Word.ContentControlLevel:enum
 package: word!
 fullName: Word.ContentControlLevel
 summary: Represents the content control level type.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#level:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.DatePickerContentControlData#level:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#level:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#level:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#level:member" />
-  (property type)
-
+  - Word.Interfaces.BuildingBlockGalleryContentControlData.level (property type)
+  - Word.Interfaces.DatePickerContentControlData.level (property type)
+  - Word.Interfaces.GroupContentControlData.level (property type)
+  - Word.Interfaces.PictureContentControlData.level (property type)
+  - Word.Interfaces.RepeatingSectionContentControlData.level (property type)
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: cell
     uid: word!Word.ContentControlLevel.cell:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a cell-level content control.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Cell"'
   - name: inline
     uid: word!Word.ContentControlLevel.inline:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an inline content control.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.ContentControlLevel.paragraph:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a paragraph-level content control.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'
   - name: row
     uid: word!Word.ContentControlLevel.row:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a row-level content control.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Row"'

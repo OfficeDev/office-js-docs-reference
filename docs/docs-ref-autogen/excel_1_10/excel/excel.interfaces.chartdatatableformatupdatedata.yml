@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartDataTableFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartDataTableFormat` object, for use
   in `chartDataTableFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataTableUpdateData#format:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

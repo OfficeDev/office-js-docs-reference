@@ -4,48 +4,21 @@ uid: word!Word.Interfaces.ColorFormatLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ColorFormatLoadOptions
 summary: Represents the color formatting of a shape or text in Word.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#textColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.GlowFormatLoadOptions#color:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member"
-  /> (property type)
-
+  - Word.Interfaces.FillFormatLoadOptions.backgroundColor (property type)
+  - Word.Interfaces.FillFormatLoadOptions.foregroundColor (property type)
+  - Word.Interfaces.FontLoadOptions.textColor (property type)
+  - Word.Interfaces.GlowFormatLoadOptions.color (property type)
+  - Word.Interfaces.LineFormatLoadOptions.backgroundColor (property type)
+  - Word.Interfaces.LineFormatLoadOptions.foregroundColor (property type)
+  - Word.Interfaces.ShadowFormatLoadOptions.foregroundColor (property type)
+  - Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor (property type)
+  - Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -54,12 +27,9 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#brightness:member
     package: word!
     fullName: brightness
-    summary: >-
-      Specifies the brightness of a specified shape color. Valid values are from
-      `-1` (darkest) to `1` (lightest), `0` represents neutral.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,10 +54,8 @@ properties:
     package: word!
     fullName: objectThemeColor
     summary: Specifies the theme color for a color format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#rgb:member
     package: word!
     fullName: rgb
-    summary: >-
-      Specifies the red-green-blue (RGB) value of the specified color. You can
-      provide the value in the '\#RRGGBB' format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '\#RRGGBB' format.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#tintAndShade:member
     package: word!
     fullName: tintAndShade
-    summary: >-
-      Specifies the lightening or darkening of a specified shape's color. Valid
-      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,10 +93,8 @@ properties:
     package: word!
     fullName: type
     summary: Returns the shape color type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

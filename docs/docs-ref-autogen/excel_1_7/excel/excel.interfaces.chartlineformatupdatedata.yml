@@ -6,31 +6,13 @@ fullName: Excel.Interfaces.ChartLineFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartLineFormat` object, for use in
   `chartLineFormat.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#line:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData#line:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartLeaderLinesFormatUpdateData#line:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData#line:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineFormatUpdateData#line:member" />
-  (property type)
+  - Excel.Interfaces.ChartAxisFormatUpdateData.line (property type)
+  - Excel.Interfaces.ChartGridlinesFormatUpdateData.line (property type)
+  - Excel.Interfaces.ChartSeriesFormatUpdateData.line (property type)
+  - Excel.Interfaces.ChartTrendlineFormatUpdateData.line (property type)
 
 isPreview: false
 isDeprecated: false

@@ -3,16 +3,9 @@ name: Word.Interfaces.CoauthoringData
 uid: word!Word.Interfaces.CoauthoringData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoring.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.DocumentData#coauthoring:member" />
-  (property type)
-
+summary: An interface describing the data returned by calling `coauthoring.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

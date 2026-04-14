@@ -3,77 +3,9 @@ name: Word.Interfaces.RangeUpdateData
 uid: word!Word.Interfaces.RangeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RangeUpdateData
-summary: >-
-  An interface for updating data on the `Range` object, for use in `range.set({
-  ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.BookmarkUpdateData#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.BreakUpdateData#range:member" /> (property
-  type)
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockUpdateData#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringUpdateUpdateData#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ConflictUpdateData#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.EditorUpdateData#nextRange:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.EditorUpdateData#range:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.FrameUpdateData#range:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlUpdateData#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.HyperlinkUpdateData#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.IndexUpdateData#range:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.NoteItemUpdateData#reference:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.RepeatingSectionItemUpdateData#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.RevisionUpdateData#movedRange:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RevisionUpdateData#range:member" />
-  (property type)
-
+summary: An interface for updating data on the `Range` object, for use in `range.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -82,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.RangeUpdateData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,14 +27,9 @@ properties:
     uid: word!Word.Interfaces.RangeUpdateData#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -6,23 +6,13 @@ fullName: Excel.Interfaces.ConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `conditionalFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#conditionalFormats:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeData#conditionalFormats:member" />
-  (property type)
+  - Excel.Interfaces.ConditionalFormatCollectionData.items (property type)
+  - Excel.Interfaces.ConditionalFormatCollectionUpdateData.items (property type)
+  - Excel.Interfaces.RangeAreasData.conditionalFormats (property type)
+  - Excel.Interfaces.RangeData.conditionalFormats (property type)
 
 isPreview: false
 isDeprecated: false

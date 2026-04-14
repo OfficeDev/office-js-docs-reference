@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#linkedDataTypeState:member" />
-  (property type)
+  - Excel.Interfaces.RangeData.linkedDataTypeState (property type)
 
 isPreview: false
 isDeprecated: false

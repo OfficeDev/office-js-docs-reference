@@ -10,21 +10,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadStyle:member" />
-  (property type)
+  - Excel.Interfaces.LineData.beginArrowheadStyle (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadStyle:member" />
-  (property type)
+  - Excel.Interfaces.LineData.endArrowheadStyle (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member"
-  /> (property type)
+  - Excel.Interfaces.LineUpdateData.beginArrowheadStyle (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member"
-  /> (property type)
+  - Excel.Interfaces.LineUpdateData.endArrowheadStyle (property type)
 
   #### Examples
 

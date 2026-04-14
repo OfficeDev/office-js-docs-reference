@@ -25,13 +25,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AppointmentRead.attachments (property type)
-
-  - Office.LoadedMessageRead.attachments (property type)
 
   - Office.MessageRead.attachments (property type)
 

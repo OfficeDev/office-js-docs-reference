@@ -10,9 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#pictureContentControl:member"
-  /> (property type)
+  - Word.Interfaces.ContentControlUpdateData.pictureContentControl (property
+  type)
 
 isPreview: false
 isDeprecated: false

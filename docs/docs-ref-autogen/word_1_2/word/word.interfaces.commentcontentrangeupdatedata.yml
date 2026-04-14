@@ -3,19 +3,9 @@ name: Word.Interfaces.CommentContentRangeUpdateData
 uid: word!Word.Interfaces.CommentContentRangeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CommentContentRangeUpdateData
-summary: >-
-  An interface for updating data on the `CommentContentRange` object, for use in
-  `commentContentRange.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.CommentReplyUpdateData#contentRange:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CommentUpdateData#contentRange:member" />
-  (property type)
-
+summary: An interface for updating data on the `CommentContentRange` object, for use in `commentContentRange.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

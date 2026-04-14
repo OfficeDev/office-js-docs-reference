@@ -39,10 +39,6 @@ remarks: >-
 
   - Office.AppointmentRead.categories (property type)
 
-  - Office.LoadedMessageCompose.categories (property type)
-
-  - Office.LoadedMessageRead.categories (property type)
-
   - Office.MessageCompose.categories (property type)
 
   - Office.MessageRead.categories (property type)

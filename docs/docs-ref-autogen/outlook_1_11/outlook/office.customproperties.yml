@@ -57,10 +57,6 @@ remarks: >-
 
   - Office.AppointmentRead.loadCustomPropertiesAsync (parameter type)
 
-  - Office.LoadedMessageCompose.loadCustomPropertiesAsync (parameter type)
-
-  - Office.LoadedMessageRead.loadCustomPropertiesAsync (parameter type)
-
   - Office.MessageCompose.loadCustomPropertiesAsync (parameter type)
 
   - Office.MessageRead.loadCustomPropertiesAsync (parameter type)

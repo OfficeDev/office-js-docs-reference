@@ -10,16 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisLineData.paragraph (property type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisParagraphCollectionData.items (property type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items (property
+  type)
 
 isPreview: false
 isDeprecated: false

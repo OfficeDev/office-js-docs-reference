@@ -4,24 +4,15 @@ uid: word!Word.Interfaces.CoauthorLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CoauthorLoadOptions
 summary: Represents a coauthor in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLoadOptions#me:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#owner:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#owner:member" />
-  (property type)
-
+  - Word.Interfaces.CoauthoringLoadOptions.me (property type)
+  - Word.Interfaces.CoauthoringLockCollectionLoadOptions.owner (property type)
+  - Word.Interfaces.CoauthoringLockLoadOptions.owner (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,12 +21,9 @@ properties:
     uid: word!Word.Interfaces.CoauthorLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +35,8 @@ properties:
     package: word!
     fullName: emailAddress
     summary: Gets the email address of the coauthor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,10 +48,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the unique identifier for the `Coauthor` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,10 +61,8 @@ properties:
     package: word!
     fullName: isMe
     summary: Gets whether this author represents the current user.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,10 +74,8 @@ properties:
     package: word!
     fullName: name
     summary: Gets the display name of the coauthor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

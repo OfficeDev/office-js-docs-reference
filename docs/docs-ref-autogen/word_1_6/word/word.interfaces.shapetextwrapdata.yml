@@ -3,16 +3,9 @@ name: Word.Interfaces.ShapeTextWrapData
 uid: word!Word.Interfaces.ShapeTextWrapData:interface
 package: word!
 fullName: Word.Interfaces.ShapeTextWrapData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeTextWrap.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.ShapeData#textWrap:member" /> (property
-  type)
-
+summary: An interface describing the data returned by calling `shapeTextWrap.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

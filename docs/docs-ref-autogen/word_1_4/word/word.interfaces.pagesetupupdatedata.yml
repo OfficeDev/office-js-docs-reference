@@ -3,19 +3,9 @@ name: Word.Interfaces.PageSetupUpdateData
 uid: word!Word.Interfaces.PageSetupUpdateData:interface
 package: word!
 fullName: Word.Interfaces.PageSetupUpdateData
-summary: >-
-  An interface for updating data on the `PageSetup` object, for use in
-  `pageSetup.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#pageSetup:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SectionUpdateData#pageSetup:member" />
-  (property type)
-
+summary: An interface for updating data on the `PageSetup` object, for use in `pageSetup.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

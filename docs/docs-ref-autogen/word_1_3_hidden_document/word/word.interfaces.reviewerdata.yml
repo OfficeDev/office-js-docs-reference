@@ -3,19 +3,13 @@ name: Word.Interfaces.ReviewerData
 uid: word!Word.Interfaces.ReviewerData:interface
 package: word!
 fullName: Word.Interfaces.ReviewerData
-summary: >-
-  An interface describing the data returned by calling `reviewer.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `reviewer.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ReviewerCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ReviewerCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.ReviewerCollectionData.items (property type)
+  - Word.Interfaces.ReviewerCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

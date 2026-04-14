@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableData#source:member" /> (property
-  type)
+  - Excel.Interfaces.TableData.source (property type)
 
 isPreview: true
 isDeprecated: false

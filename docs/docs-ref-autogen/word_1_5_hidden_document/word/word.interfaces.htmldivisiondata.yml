@@ -3,20 +3,13 @@ name: Word.Interfaces.HtmlDivisionData
 uid: word!Word.Interfaces.HtmlDivisionData:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionData
-summary: >-
-  An interface describing the data returned by calling
-  `htmlDivision.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `htmlDivision.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.HtmlDivisionCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.HtmlDivisionCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.HtmlDivisionCollectionData.items (property type)
+  - Word.Interfaces.HtmlDivisionCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

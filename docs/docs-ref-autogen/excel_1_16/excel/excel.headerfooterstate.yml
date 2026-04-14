@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterGroupData#state:member" />
-  (property type)
+  - Excel.Interfaces.HeaderFooterGroupData.state (property type)
 
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member"
-  /> (property type)
+  - Excel.Interfaces.HeaderFooterGroupUpdateData.state (property type)
 
 isPreview: false
 isDeprecated: false

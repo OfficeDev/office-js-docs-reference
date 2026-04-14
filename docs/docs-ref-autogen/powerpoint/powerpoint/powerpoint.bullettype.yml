@@ -13,12 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.BulletFormatData#type:member" />
-  (property type)
+  - PowerPoint.Interfaces.BulletFormatData.type (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#type:member" />
-  (property type)
+  - PowerPoint.Interfaces.BulletFormatUpdateData.type (property type)
 
 isPreview: false
 isDeprecated: false

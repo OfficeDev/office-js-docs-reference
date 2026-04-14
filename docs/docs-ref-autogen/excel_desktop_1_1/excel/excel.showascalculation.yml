@@ -10,11 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ShowAsRule#calculation:member" /> (property type)
+  - Excel.ShowAsRule.calculation (property type)
 
   #### Examples
 

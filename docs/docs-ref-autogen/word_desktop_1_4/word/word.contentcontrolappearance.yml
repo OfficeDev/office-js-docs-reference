@@ -4,72 +4,30 @@ uid: word!Word.ContentControlAppearance:enum
 package: word!
 fullName: Word.ContentControlAppearance
 summary: Represents the content control appearance.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#appearance:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#appearance:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#appearance:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#appearance:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#appearance:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#appearance:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#appearance:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#appearance:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#appearance:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#appearance:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#appearance:member"
-  /> (property type)
-
+  - Word.Interfaces.BuildingBlockGalleryContentControlData.appearance (property type)
+  - Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance (property type)
+  - Word.Interfaces.ContentControlData.appearance (property type)
+  - Word.Interfaces.ContentControlUpdateData.appearance (property type)
+  - Word.Interfaces.DatePickerContentControlData.appearance (property type)
+  - Word.Interfaces.DatePickerContentControlUpdateData.appearance (property type)
+  - Word.Interfaces.GroupContentControlData.appearance (property type)
+  - Word.Interfaces.GroupContentControlUpdateData.appearance (property type)
+  - Word.Interfaces.PictureContentControlData.appearance (property type)
+  - Word.Interfaces.PictureContentControlUpdateData.appearance (property type)
+  - Word.Interfaces.RepeatingSectionContentControlData.appearance (property type)
+  - Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance (property type)
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
-
-
-  // Adds title and colors to odd and even content controls and changes their
-  appearance.
-
+  // Adds title and colors to odd and even content controls and changes their appearance.
   await Word.run(async (context) => {
     // Get the complete sentence (as range) associated with the insertion point.
     let evenContentControls = context.document.contentControls.getByTag("even");
@@ -101,40 +59,32 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: boundingBox
     uid: word!Word.ContentControlAppearance.boundingBox:member
     package: word!
-    summary: >-
-      Represents a content control shown as a shaded rectangle or bounding box
-      (with optional title).
+    summary: |-
+      Represents a content control shown as a shaded rectangle or bounding box (with optional title).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a content control that isn't shown.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a content control shown as start and end markers.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tags"'

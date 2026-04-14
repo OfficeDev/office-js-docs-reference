@@ -10,18 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Icon#set:member" /> (property type)
+  - Excel.Icon.set (property type)
 
-  - <xref uid="excel!Excel.Interfaces.IconSetConditionalFormatData#style:member"
-  /> (property type)
+  - Excel.Interfaces.IconSetConditionalFormatData.style (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member"
-  /> (property type)
+  - Excel.Interfaces.IconSetConditionalFormatUpdateData.style (property type)
 
   #### Examples
 

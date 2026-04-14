@@ -49,12 +49,7 @@ remarks: >-
 
 
 
-
   #### Used by
-
-
-
-  **Office**
 
 
   - Office.Document.getSelectedDataAsync (parameter type)
@@ -64,22 +59,6 @@ remarks: >-
   - Office.SetBindingDataOptions.coercionType (property type)
 
   - Office.SetSelectedDataOptions.coercionType (property type)
-
-
-  **Outlook**
-
-
-  - Office.AppointmentCompose.getSelectedDataAsync (parameter type)
-
-  - Office.Body.getAsync (parameter type)
-
-  - Office.Body.getTypeAsync (parameter type)
-
-  - Office.CoercionTypeOptions.coercionType (property type)
-
-  - Office.DecryptedMessageBody.coercionType (property type)
-
-  - Office.MessageCompose.getSelectedDataAsync (parameter type)
 
   #### Examples
 

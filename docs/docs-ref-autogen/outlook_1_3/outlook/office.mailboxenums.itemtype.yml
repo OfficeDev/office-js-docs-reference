@@ -11,7 +11,6 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
@@ -19,15 +18,9 @@ remarks: >-
 
   - Office.AppointmentRead.itemType (property type)
 
-  - Office.LoadedMessageCompose.itemType (property type)
-
-  - Office.LoadedMessageRead.itemType (property type)
-
   - Office.MessageCompose.itemType (property type)
 
   - Office.MessageRead.itemType (property type)
-
-  - Office.SelectedItemDetails.itemType (property type)
 
   #### Examples
 

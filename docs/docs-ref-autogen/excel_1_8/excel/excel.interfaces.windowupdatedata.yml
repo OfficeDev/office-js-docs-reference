@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.WindowUpdateData
 summary: >-
   An interface for updating data on the `Window` object, for use in
   `window.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ApplicationUpdateData#activeWindow:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.ShapeGetImageOptions#format:member" />
-  (property type)
+  - PowerPoint.ShapeGetImageOptions.format (property type)
 
   #### Examples
 

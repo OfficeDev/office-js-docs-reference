@@ -12,20 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member" />
-  (property type)
+  - Excel.Interfaces.DocumentTaskChangeData.assignee (property type)
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member"
-  /> (property type)
+  - Excel.Interfaces.DocumentTaskChangeData.changedBy (property type)
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#assignees:member" />
-  (property type)
+  - Excel.Interfaces.DocumentTaskData.assignees (property type)
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#completedBy:member" />
-  (property type)
+  - Excel.Interfaces.DocumentTaskData.completedBy (property type)
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#createdBy:member" />
-  (property type)
+  - Excel.Interfaces.DocumentTaskData.createdBy (property type)
 
 isPreview: true
 isDeprecated: false

@@ -12,12 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockCategoryLoadOptions#type:member" />
-  (property type)
+  - Word.Interfaces.BuildingBlockCategoryLoadOptions.type (property type)
 
-  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#type:member" />
-  (property type)
+  - Word.Interfaces.BuildingBlockLoadOptions.type (property type)
 
 isPreview: false
 isDeprecated: false

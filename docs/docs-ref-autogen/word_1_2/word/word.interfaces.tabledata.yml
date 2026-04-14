@@ -4,23 +4,12 @@ uid: word!Word.Interfaces.TableData:interface
 package: word!
 fullName: Word.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyData#tables:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#tables:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableData#tables:member" /> (property type)
-
+  - Word.Interfaces.TableCollectionData.items (property type)
+  - Word.Interfaces.TableCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

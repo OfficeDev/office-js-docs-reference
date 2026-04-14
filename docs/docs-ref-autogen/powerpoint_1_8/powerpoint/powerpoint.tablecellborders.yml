@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCellProperties#borders:member" />
-  (property type)
+  - PowerPoint.TableCellProperties.borders (property type)
 
   #### Examples
 

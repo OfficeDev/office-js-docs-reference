@@ -4,18 +4,12 @@ uid: excel!Excel.Interfaces.StyleData:interface
 package: excel!
 fullName: Excel.Interfaces.StyleData
 summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#styles:member" /> (property
-  type)
+  - Excel.Interfaces.StyleCollectionData.items (property type)
+  - Excel.Interfaces.StyleCollectionUpdateData.items (property type)
+  - Excel.Interfaces.WorkbookData.styles (property type)
 
 isPreview: false
 isDeprecated: false

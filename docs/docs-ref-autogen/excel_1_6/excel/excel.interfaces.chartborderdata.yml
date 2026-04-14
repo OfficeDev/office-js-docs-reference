@@ -6,37 +6,7 @@ fullName: Excel.Interfaces.ChartBorderData
 summary: >-
   An interface describing the data returned by calling
   `chartBorder.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataTableFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartPointFormatData#border:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatData#border:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

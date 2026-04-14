@@ -6,18 +6,12 @@ fullName: Excel.Interfaces.SettingData
 summary: >-
   An interface describing the data returned by calling `setting.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.SettingCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.SettingCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#settings:member" /> (property
-  type)
+  - Excel.Interfaces.SettingCollectionData.items (property type)
+  - Excel.Interfaces.SettingCollectionUpdateData.items (property type)
+  - Excel.Interfaces.WorkbookData.settings (property type)
 
 isPreview: false
 isDeprecated: false

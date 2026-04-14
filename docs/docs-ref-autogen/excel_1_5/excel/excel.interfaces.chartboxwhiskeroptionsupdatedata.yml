@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
 summary: >-
   An interface for updating data on the `ChartBoxwhiskerOptions` object, for use
   in `chartBoxwhiskerOptions.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#boxwhiskerOptions:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -10,25 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#verticalAlignment:member" />
-  (property type)
+  - Excel.Interfaces.RangeFormatData.verticalAlignment (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.StyleData#verticalAlignment:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#verticalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.RangeFormatUpdateData.verticalAlignment (property type)
 
   #### Examples
 

@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartPivotOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartPivotOptions.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartData#pivotOptions:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

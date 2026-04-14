@@ -12,20 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member"
-  /> (property type)
+  - OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk (property
+  type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member" />
-  (property type)
+  - OneNote.Interfaces.InkStrokeLoadOptions.floatingInk (property type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member"
-  /> (property type)
+  - OneNote.Interfaces.PageContentCollectionLoadOptions.ink (property type)
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentLoadOptions#ink:member" />
-  (property type)
+  - OneNote.Interfaces.PageContentLoadOptions.ink (property type)
 
 isPreview: false
 isDeprecated: false

@@ -3,16 +3,9 @@ name: Word.Interfaces.ParagraphFormatUpdateData
 uid: word!Word.Interfaces.ParagraphFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ParagraphFormatUpdateData
-summary: >-
-  An interface for updating data on the `ParagraphFormat` object, for use in
-  `paragraphFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#paragraphFormat:member" />
-  (property type)
-
+summary: An interface for updating data on the `ParagraphFormat` object, for use in `paragraphFormat.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

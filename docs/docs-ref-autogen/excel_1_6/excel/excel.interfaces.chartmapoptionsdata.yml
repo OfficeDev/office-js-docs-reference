@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartMapOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartMapOptions.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#mapOptions:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

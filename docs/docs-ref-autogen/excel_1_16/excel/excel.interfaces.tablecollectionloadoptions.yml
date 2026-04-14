@@ -14,15 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#tables:member" />
-  (property type)
+  - Excel.Interfaces.WorkbookLoadOptions.tables (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member" />
-  (property type)
+  - Excel.Interfaces.WorksheetCollectionLoadOptions.tables (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#tables:member" />
-  (property type)
+  - Excel.Interfaces.WorksheetLoadOptions.tables (property type)
 
 isPreview: false
 isDeprecated: false

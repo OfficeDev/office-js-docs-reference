@@ -11,14 +11,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCellProperties#font:member" />
-  (property type)
+  - PowerPoint.TableCellProperties.font (property type)
 
-  - <xref uid="powerpoint!PowerPoint.TextRun#font:member" /> (property type)
+  - PowerPoint.TextRun.font (property type)
 
   #### Examples
 

@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.AnnotationData#state:member" /> (property
-  type)
+  - Word.Interfaces.AnnotationData.state (property type)
 
   #### Examples
 

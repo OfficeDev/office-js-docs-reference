@@ -10,85 +10,56 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ArrayCellValue#elements:member" /> (property type)
+  - Excel.ArrayCellValue.elements (property type)
 
-  - <xref uid="excel!Excel.ChangedEventDetail#valueAsJsonAfter:member" />
-  (property type)
+  - Excel.ChangedEventDetail.valueAsJsonAfter (property type)
 
-  - <xref uid="excel!Excel.ChangedEventDetail#valueAsJsonBefore:member" />
-  (property type)
+  - Excel.ChangedEventDetail.valueAsJsonBefore (property type)
 
-  - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#preview:member" />
-  (property type)
+  - Excel.ExternalCodeServiceObjectCellValue.preview (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.NamedItemArrayValuesData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.NamedItemArrayValuesData.valuesAsJson (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.NamedItemArrayValuesData#valuesAsJsonLocal:member"
-  /> (property type)
+  - Excel.Interfaces.NamedItemArrayValuesData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#valueAsJson:member" />
-  (property type)
+  - Excel.Interfaces.NamedItemData.valueAsJson (property type)
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#valueAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.NamedItemData.valueAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.RangeData.valuesAsJson (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#valuesAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.RangeData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.RangeUpdateData.valuesAsJson (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#valuesAsJsonLocal:member"
-  /> (property type)
+  - Excel.Interfaces.RangeUpdateData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.RangeViewData.valuesAsJson (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#valuesAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.RangeViewData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewUpdateData#valuesAsJson:member"
-  /> (property type)
+  - Excel.Interfaces.RangeViewUpdateData.valuesAsJson (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.RangeViewUpdateData#valuesAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.RangeViewUpdateData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableColumnData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.TableColumnData.valuesAsJson (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableColumnData#valuesAsJsonLocal:member"
-  /> (property type)
+  - Excel.Interfaces.TableColumnData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableColumnUpdateData#valuesAsJson:member"
-  /> (property type)
+  - Excel.Interfaces.TableColumnUpdateData.valuesAsJson (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.TableColumnUpdateData#valuesAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.TableColumnUpdateData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableRowData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.TableRowData.valuesAsJson (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableRowData#valuesAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.TableRowData.valuesAsJsonLocal (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableRowUpdateData#valuesAsJson:member" />
-  (property type)
+  - Excel.Interfaces.TableRowUpdateData.valuesAsJson (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.TableRowUpdateData#valuesAsJsonLocal:member" />
-  (property type)
+  - Excel.Interfaces.TableRowUpdateData.valuesAsJsonLocal (property type)
 
 
 

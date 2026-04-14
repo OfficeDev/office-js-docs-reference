@@ -6,10 +6,7 @@ fullName: Excel.Interfaces.ShapeFillData
 summary: >-
   An interface describing the data returned by calling `shapeFill.toJSON()`<!--
   -->.
-remarks: |-
-  #### Used by
-
-  - <xref uid="excel!Excel.Interfaces.ShapeData#fill:member" /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

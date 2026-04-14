@@ -14,13 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#paragraph:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.paragraph (property
+  type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#paragraph:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisLineLoadOptions.paragraph (property type)
 
 isPreview: false
 isDeprecated: false

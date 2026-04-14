@@ -10,23 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member"
-  /> (property type)
+  - Excel.Interfaces.CustomXmlPartCollectionData.items (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
-  (property type)
+  - Excel.Interfaces.CustomXmlPartCollectionUpdateData.items (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
-  (property type)
+  - Excel.Interfaces.CustomXmlPartScopedCollectionData.items (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#customXmlParts:member" />
-  (property type)
+  - Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items (property
+  type)
 
 isPreview: false
 isDeprecated: false

@@ -3,19 +3,13 @@ name: Word.Interfaces.CommentContentRangeData
 uid: word!Word.Interfaces.CommentContentRangeData:interface
 package: word!
 fullName: Word.Interfaces.CommentContentRangeData
-summary: >-
-  An interface describing the data returned by calling
-  `commentContentRange.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `commentContentRange.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CommentData#contentRange:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CommentReplyData#contentRange:member" />
-  (property type)
-
+  - Word.Interfaces.CommentData.contentRange (property type)
+  - Word.Interfaces.CommentReplyData.contentRange (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,10 +19,8 @@ properties:
     package: word!
     fullName: bold
     summary: Specifies whether the comment text is bold.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,14 +31,9 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeData#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range.
-      All hyperlinks in the range are deleted when you set a new hyperlink on
-      the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,10 +45,8 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,10 +58,8 @@ properties:
     package: word!
     fullName: italic
     summary: Specifies whether the comment text is italicized.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,10 +71,8 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: Specifies whether the comment text has a strikethrough.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,10 +84,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the comment range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,27 +96,12 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeData#underline:member
     package: word!
     fullName: underline
-    summary: >-
-      Specifies the comment text's underline type. `none` if the comment text
-      isn't underlined.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the comment text's underline type. `none` if the comment text isn't underlined.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
-        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
-        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
-        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+      content: 'underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";'
       return:
-        type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
-          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
-          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
-          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
-          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
-          | "WaveHeavy" | "WaveDouble"
+        type: <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"

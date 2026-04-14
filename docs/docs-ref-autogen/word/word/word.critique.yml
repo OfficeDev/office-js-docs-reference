@@ -12,14 +12,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.AnnotationSet#critiques:member" /> (property type)
+  - Word.AnnotationSet.critiques (property type)
 
-  - <xref uid="word!Word.Interfaces.CritiqueAnnotationData#critique:member" />
-  (property type)
+  - Word.Interfaces.CritiqueAnnotationData.critique (property type)
 
   #### Examples
 

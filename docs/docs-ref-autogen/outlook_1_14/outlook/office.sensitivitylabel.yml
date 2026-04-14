@@ -40,8 +40,6 @@ remarks: >-
 
   - Office.AppointmentCompose.sensitivityLabel (property type)
 
-  - Office.LoadedMessageCompose.sensitivityLabel (property type)
-
   - Office.MessageCompose.sensitivityLabel (property type)
 
 isPreview: false

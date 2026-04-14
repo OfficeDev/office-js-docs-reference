@@ -38,17 +38,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AppointmentCompose.body (property type)
 
   - Office.AppointmentRead.body (property type)
-
-  - Office.LoadedMessageCompose.body (property type)
-
-  - Office.LoadedMessageRead.body (property type)
 
   - Office.MessageCompose.body (property type)
 

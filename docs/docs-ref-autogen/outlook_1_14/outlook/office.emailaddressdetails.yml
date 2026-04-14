@@ -32,14 +32,6 @@ remarks: >-
 
   - Office.From.getAsync (parameter type)
 
-  - Office.LoadedMessageRead.cc (property type)
-
-  - Office.LoadedMessageRead.from (property type)
-
-  - Office.LoadedMessageRead.sender (property type)
-
-  - Office.LoadedMessageRead.to (property type)
-
   - Office.MessageForm.bccRecipients (property type)
 
   - Office.MessageForm.ccRecipients (property type)

@@ -10,18 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#maximum:member" />
-  (property type)
+  - Excel.ConditionalColorScaleCriteria.maximum (property type)
 
-  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#midpoint:member" />
-  (property type)
+  - Excel.ConditionalColorScaleCriteria.midpoint (property type)
 
-  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#minimum:member" />
-  (property type)
+  - Excel.ConditionalColorScaleCriteria.minimum (property type)
 
   #### Examples
 

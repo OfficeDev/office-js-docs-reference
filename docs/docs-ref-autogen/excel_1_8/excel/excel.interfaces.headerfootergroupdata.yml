@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.HeaderFooterGroupData
 summary: >-
   An interface describing the data returned by calling
   `headerFooterGroup.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#headersFooters:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentCompareOptions#compareTarget:member" />
-  (property type)
+  - Word.DocumentCompareOptions.compareTarget (property type)
 
   #### Examples
 

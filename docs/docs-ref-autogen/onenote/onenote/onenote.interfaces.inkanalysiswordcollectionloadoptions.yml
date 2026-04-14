@@ -12,13 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#words:member"
-  /> (property type)
+  - OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words (property
+  type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#words:member" />
-  (property type)
+  - OneNote.Interfaces.InkAnalysisLineLoadOptions.words (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartFontData#underline:member" />
-  (property type)
+  - Excel.Interfaces.ChartFontData.underline (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartFontUpdateData#underline:member" />
-  (property type)
+  - Excel.Interfaces.ChartFontUpdateData.underline (property type)
 
 isPreview: false
 isDeprecated: false

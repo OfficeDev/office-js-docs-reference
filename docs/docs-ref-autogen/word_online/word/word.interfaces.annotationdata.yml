@@ -3,19 +3,13 @@ name: Word.Interfaces.AnnotationData
 uid: word!Word.Interfaces.AnnotationData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationData
-summary: >-
-  An interface describing the data returned by calling `annotation.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `annotation.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.AnnotationCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.AnnotationCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.AnnotationCollectionData.items (property type)
+  - Word.Interfaces.AnnotationCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -24,13 +18,9 @@ properties:
     uid: word!Word.Interfaces.AnnotationData#id:member
     package: word!
     fullName: id
-    summary: >-
-      Gets the unique identifier, which is meant to be used for easier tracking
-      of `Annotation` objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,15 +32,11 @@ properties:
     package: word!
     fullName: state
     summary: Gets the state of the annotation.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'state?: Word.AnnotationState | "Created" | "Accepted" | "Rejected";'
       return:
-        type: >-
-          <xref uid="word!Word.AnnotationState:enum" /> | "Created" | "Accepted"
-          | "Rejected"
+        type: <xref uid="word!Word.AnnotationState:enum" /> | "Created" | "Accepted" | "Rejected"

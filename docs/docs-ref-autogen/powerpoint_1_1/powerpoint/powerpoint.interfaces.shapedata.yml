@@ -4,25 +4,13 @@ uid: powerpoint!PowerPoint.Interfaces.ShapeData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData#items:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeCollectionData.items (property type)
+  - PowerPoint.Interfaces.ShapeCollectionUpdateData.items (property type)
+  - PowerPoint.Interfaces.ShapeScopedCollectionData.items (property type)
+  - PowerPoint.Interfaces.ShapeScopedCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

@@ -3,24 +3,13 @@ name: Word.Interfaces.CoauthoringUpdateData
 uid: word!Word.Interfaces.CoauthoringUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoringUpdate.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `coauthoringUpdate.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CoauthoringData#updates:member" /> (property
-  type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.CoauthoringUpdateCollectionData.items (property type)
+  - Word.Interfaces.CoauthoringUpdateCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

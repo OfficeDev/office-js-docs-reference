@@ -12,9 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.ApplicationLoadOptions#notebooks:member" />
-  (property type)
+  - OneNote.Interfaces.ApplicationLoadOptions.notebooks (property type)
 
 isPreview: false
 isDeprecated: false

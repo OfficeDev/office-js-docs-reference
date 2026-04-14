@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlValidationErrorData#type:member" />
-  (property type)
+  - Word.Interfaces.CustomXmlValidationErrorData.type (property type)
 
 isPreview: true
 isDeprecated: false

@@ -9,6 +9,7 @@ summary: >-
 remarks: |-
 
 
+
   #### Used by
 
   - Office.Document.getSelectedDataAsync (parameter type)

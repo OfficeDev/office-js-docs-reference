@@ -10,21 +10,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadWidth:member" />
-  (property type)
+  - Excel.Interfaces.LineData.beginArrowheadWidth (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadWidth:member" />
-  (property type)
+  - Excel.Interfaces.LineData.endArrowheadWidth (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadWidth:member"
-  /> (property type)
+  - Excel.Interfaces.LineUpdateData.beginArrowheadWidth (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadWidth:member"
-  /> (property type)
+  - Excel.Interfaces.LineUpdateData.endArrowheadWidth (property type)
 
   #### Examples
 

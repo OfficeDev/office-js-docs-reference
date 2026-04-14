@@ -3,21 +3,13 @@ name: Word.Interfaces.ContentControlListItemData
 uid: word!Word.Interfaces.ContentControlListItemData:interface
 package: word!
 fullName: Word.Interfaces.ContentControlListItemData
-summary: >-
-  An interface describing the data returned by calling
-  `contentControlListItem.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `contentControlListItem.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlListItemCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlListItemCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.ContentControlListItemCollectionData.items (property type)
+  - Word.Interfaces.ContentControlListItemCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

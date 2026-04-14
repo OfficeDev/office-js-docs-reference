@@ -10,16 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member" />
-  (property type)
+  - Excel.Interfaces.TextFrameData.autoSizeSetting (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member" />
-  (property type)
+  - Excel.Interfaces.TextFrameUpdateData.autoSizeSetting (property type)
 
   #### Examples
 

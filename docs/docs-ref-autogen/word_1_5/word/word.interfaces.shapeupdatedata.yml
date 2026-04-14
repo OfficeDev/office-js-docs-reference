@@ -3,25 +3,9 @@ name: Word.Interfaces.ShapeUpdateData
 uid: word!Word.Interfaces.ShapeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeUpdateData
-summary: >-
-  An interface for updating data on the `Shape` object, for use in `shape.set({
-  ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.CanvasUpdateData#shape:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ShapeGroupUpdateData#shape:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#parentCanvas:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#parentGroup:member" />
-  (property type)
-
+summary: An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

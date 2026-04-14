@@ -3,20 +3,13 @@ name: Word.Interfaces.TableOfContentsData
 uid: word!Word.Interfaces.TableOfContentsData:interface
 package: word!
 fullName: Word.Interfaces.TableOfContentsData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfContents.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `tableOfContents.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.TableOfContentsCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableOfContentsCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.TableOfContentsCollectionData.items (property type)
+  - Word.Interfaces.TableOfContentsCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

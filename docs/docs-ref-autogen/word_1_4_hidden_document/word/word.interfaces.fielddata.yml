@@ -4,31 +4,18 @@ uid: word!Word.Interfaces.FieldData:interface
 package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyData#fields:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#fields:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphData#fields:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#fields:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableData#fields:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableRowData#fields:member" /> (property
-  type)
-
+  - Word.Interfaces.BodyData.fields (property type)
+  - Word.Interfaces.ContentControlData.fields (property type)
+  - Word.Interfaces.FieldCollectionData.items (property type)
+  - Word.Interfaces.FieldCollectionUpdateData.items (property type)
+  - Word.Interfaces.ParagraphData.fields (property type)
+  - Word.Interfaces.RangeData.fields (property type)
+  - Word.Interfaces.TableData.fields (property type)
+  - Word.Interfaces.TableRowData.fields (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -38,13 +25,11 @@ properties:
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,10 +41,8 @@ properties:
     package: word!
     fullName: result
     summary: Gets the field's result data.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

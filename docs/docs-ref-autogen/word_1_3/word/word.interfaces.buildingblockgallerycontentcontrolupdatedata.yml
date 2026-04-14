@@ -3,17 +3,9 @@ name: Word.Interfaces.BuildingBlockGalleryContentControlUpdateData
 uid: word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockGalleryContentControlUpdateData
-summary: >-
-  An interface for updating data on the `BuildingBlockGalleryContentControl`
-  object, for use in `buildingBlockGalleryContentControl.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#buildingBlockGalleryContentControl:member"
-  /> (property type)
-
+summary: An interface for updating data on the `BuildingBlockGalleryContentControl` object, for use in `buildingBlockGalleryContentControl.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

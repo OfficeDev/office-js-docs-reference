@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#position:member" />
-  (property type)
+  - Excel.Interfaces.ChartAxisData.position (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#position:member" />
-  (property type)
+  - Excel.Interfaces.ChartAxisUpdateData.position (property type)
 
 isPreview: false
 isDeprecated: false

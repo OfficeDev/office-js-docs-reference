@@ -6,16 +6,7 @@ fullName: Excel.Interfaces.DataValidationUpdateData
 summary: >-
   An interface for updating data on the `DataValidation` object, for use in
   `dataValidation.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#dataValidation:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -6,13 +6,10 @@ fullName: Excel.Interfaces.IterativeCalculationData
 summary: >-
   An interface describing the data returned by calling
   `iterativeCalculation.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="excel!Excel.Interfaces.ApplicationData#iterativeCalculation:member" />
-  (property type)
+  - Excel.Interfaces.ApplicationData.iterativeCalculation (property type)
 
 isPreview: false
 isDeprecated: false

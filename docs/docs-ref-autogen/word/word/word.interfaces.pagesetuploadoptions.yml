@@ -12,15 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#pageSetup:member" />
-  (property type)
+  - Word.Interfaces.DocumentLoadOptions.pageSetup (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.SectionCollectionLoadOptions#pageSetup:member" />
-  (property type)
+  - Word.Interfaces.SectionCollectionLoadOptions.pageSetup (property type)
 
-  - <xref uid="word!Word.Interfaces.SectionLoadOptions#pageSetup:member" />
-  (property type)
+  - Word.Interfaces.SectionLoadOptions.pageSetup (property type)
 
 isPreview: false
 isDeprecated: false

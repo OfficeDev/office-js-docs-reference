@@ -10,11 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#type:member" /> (property type)
+  - Word.Interfaces.BodyData.type (property type)
 
   #### Examples
 

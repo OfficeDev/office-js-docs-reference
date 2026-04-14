@@ -26,8 +26,6 @@ remarks: >-
 
   - Office.AppointmentCompose.subject (property type)
 
-  - Office.LoadedMessageCompose.subject (property type)
-
   - Office.MessageCompose.subject (property type)
 
 isPreview: false

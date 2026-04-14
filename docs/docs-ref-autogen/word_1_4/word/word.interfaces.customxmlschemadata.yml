@@ -3,23 +3,13 @@ name: Word.Interfaces.CustomXmlSchemaData
 uid: word!Word.Interfaces.CustomXmlSchemaData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlSchemaData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlSchema.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `customXmlSchema.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#schemaCollection:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlSchemaCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.CustomXmlSchemaCollectionData.items (property type)
+  - Word.Interfaces.CustomXmlSchemaCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

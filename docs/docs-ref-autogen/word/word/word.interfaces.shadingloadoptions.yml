@@ -12,14 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#shading:member"
-  /> (property type)
+  - Word.Interfaces.StyleCollectionLoadOptions.shading (property type)
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#shading:member" />
-  (property type)
+  - Word.Interfaces.StyleLoadOptions.shading (property type)
 
-  - <xref uid="word!Word.Interfaces.TableStyleLoadOptions#shading:member" />
-  (property type)
+  - Word.Interfaces.TableStyleLoadOptions.shading (property type)
 
 isPreview: false
 isDeprecated: false

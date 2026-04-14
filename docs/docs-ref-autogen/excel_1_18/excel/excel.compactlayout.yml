@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.EntityViewLayouts#compact:member" /> (property type)
+  - Excel.EntityViewLayouts.compact (property type)
 
 
   Learn more about the types in this type alias through the following links. 

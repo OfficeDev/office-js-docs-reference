@@ -4,171 +4,60 @@ uid: word!Word.Interfaces.RangeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RangeLoadOptions
 summary: Represents a contiguous area in a document.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.BookmarkLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" /> (property
-  type)
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ConflictLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#content:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#nextRange:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.IndexCollectionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member" /> (property
-  type)
-
-  - <xref
-  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#movedRange:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#formattedText:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableOfContentsLoadOptions#range:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#range:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#range:member" />
-  (property type)
-
+  - Word.Interfaces.BookmarkCollectionLoadOptions.range (property type)
+  - Word.Interfaces.BookmarkLoadOptions.range (property type)
+  - Word.Interfaces.BreakCollectionLoadOptions.range (property type)
+  - Word.Interfaces.BreakLoadOptions.range (property type)
+  - Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range (property type)
+  - Word.Interfaces.CoauthoringLockCollectionLoadOptions.range (property type)
+  - Word.Interfaces.CoauthoringLockLoadOptions.range (property type)
+  - Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range (property type)
+  - Word.Interfaces.CoauthoringUpdateLoadOptions.range (property type)
+  - Word.Interfaces.ConflictCollectionLoadOptions.range (property type)
+  - Word.Interfaces.ConflictLoadOptions.range (property type)
+  - Word.Interfaces.CritiqueAnnotationLoadOptions.range (property type)
+  - Word.Interfaces.DatePickerContentControlLoadOptions.range (property type)
+  - Word.Interfaces.DocumentLoadOptions.content (property type)
+  - Word.Interfaces.EditorLoadOptions.nextRange (property type)
+  - Word.Interfaces.EditorLoadOptions.range (property type)
+  - Word.Interfaces.FieldCollectionLoadOptions.result (property type)
+  - Word.Interfaces.FieldLoadOptions.result (property type)
+  - Word.Interfaces.FrameCollectionLoadOptions.range (property type)
+  - Word.Interfaces.FrameLoadOptions.range (property type)
+  - Word.Interfaces.GroupContentControlLoadOptions.range (property type)
+  - Word.Interfaces.HtmlDivisionCollectionLoadOptions.range (property type)
+  - Word.Interfaces.HtmlDivisionLoadOptions.range (property type)
+  - Word.Interfaces.HyperlinkCollectionLoadOptions.range (property type)
+  - Word.Interfaces.HyperlinkLoadOptions.range (property type)
+  - Word.Interfaces.IndexCollectionLoadOptions.range (property type)
+  - Word.Interfaces.IndexLoadOptions.range (property type)
+  - Word.Interfaces.NoteItemCollectionLoadOptions.reference (property type)
+  - Word.Interfaces.NoteItemLoadOptions.reference (property type)
+  - Word.Interfaces.PictureContentControlLoadOptions.range (property type)
+  - Word.Interfaces.RepeatingSectionContentControlLoadOptions.range (property type)
+  - Word.Interfaces.RepeatingSectionItemLoadOptions.range (property type)
+  - Word.Interfaces.RevisionCollectionLoadOptions.movedRange (property type)
+  - Word.Interfaces.RevisionCollectionLoadOptions.range (property type)
+  - Word.Interfaces.RevisionLoadOptions.movedRange (property type)
+  - Word.Interfaces.RevisionLoadOptions.range (property type)
+  - Word.Interfaces.SelectionLoadOptions.formattedText (property type)
+  - Word.Interfaces.SelectionLoadOptions.range (property type)
+  - Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range (property type)
+  - Word.Interfaces.TableOfAuthoritiesLoadOptions.range (property type)
+  - Word.Interfaces.TableOfContentsCollectionLoadOptions.range (property type)
+  - Word.Interfaces.TableOfContentsLoadOptions.range (property type)
+  - Word.Interfaces.TableOfFiguresCollectionLoadOptions.range (property type)
+  - Word.Interfaces.TableOfFiguresLoadOptions.range (property type)
+  - Word.Interfaces.TableRowCollectionLoadOptions.range (property type)
+  - Word.Interfaces.TableRowLoadOptions.range (property type)
+  - Word.Interfaces.XmlNodeCollectionLoadOptions.range (property type)
+  - Word.Interfaces.XmlNodeLoadOptions.range (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -177,12 +66,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,10 +80,8 @@ properties:
     package: word!
     fullName: bold
     summary: Specifies whether the range is formatted as bold.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#boldBidirectional:member
     package: word!
     fullName: boldBidirectional
-    summary: >-
-      Specifies whether the range is formatted as bold in a right-to-left
-      language document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the range is formatted as bold in a right-to-left language document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,13 +105,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#case:member
     package: word!
     fullName: case
-    summary: >-
-      Specifies a `CharacterCase` value that represents the case of the text in
-      the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a `CharacterCase` value that represents the case of the text in the range.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,10 +119,8 @@ properties:
     package: word!
     fullName: characterWidth
     summary: Specifies the character width of the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,10 +132,8 @@ properties:
     package: word!
     fullName: combineCharacters
     summary: Specifies if the range contains combined characters.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,13 +144,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#disableCharacterSpaceGrid:member
     package: word!
     fullName: disableCharacterSpaceGrid
-    summary: >-
-      Specifies if Microsoft Word ignores the number of characters per line for
-      the corresponding `Range` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies if Microsoft Word ignores the number of characters per line for the corresponding `Range` object.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,13 +157,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#emphasisMark:member
     package: word!
     fullName: emphasisMark
-    summary: >-
-      Specifies the emphasis mark for a character or designated character
-      string.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the emphasis mark for a character or designated character string.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -307,10 +171,8 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,13 +183,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#fitTextWidth:member
     package: word!
     fullName: fitTextWidth
-    summary: >-
-      Specifies the width (in the current measurement units) in which Microsoft
-      Word fits the text in the current selection or range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the width (in the current measurement units) in which Microsoft Word fits the text in the current selection or range.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -338,13 +196,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -356,10 +210,8 @@ properties:
     package: word!
     fullName: grammarChecked
     summary: Specifies if a grammar check has been run on the range or document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,13 +222,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#hasNoProofing:member
     package: word!
     fullName: hasNoProofing
-    summary: >-
-      Specifies the proofing status (spelling and grammar checking) of the
-      range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the proofing status (spelling and grammar checking) of the range.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,10 +236,8 @@ properties:
     package: word!
     fullName: highlightColorIndex
     summary: Specifies the highlight color for the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -403,10 +249,8 @@ properties:
     package: word!
     fullName: horizontalInVertical
     summary: Specifies the formatting for horizontal text set within vertical text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -417,15 +261,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range.
-      All hyperlinks in the range are deleted when you set a new hyperlink on
-      the range. Use a '\#' to separate the address part from the optional
-      location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location part.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -437,10 +275,8 @@ properties:
     package: word!
     fullName: id
     summary: Specifies the ID for the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -452,10 +288,8 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -466,13 +300,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#isEndOfRowMark:member
     package: word!
     fullName: isEndOfRowMark
-    summary: >-
-      Gets if the range is collapsed and is located at the end-of-row mark in a
-      table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets if the range is collapsed and is located at the end-of-row mark in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -484,10 +314,8 @@ properties:
     package: word!
     fullName: isTextVisibleOnScreen
     summary: Gets whether the text in the range is visible on the screen.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -499,10 +327,8 @@ properties:
     package: word!
     fullName: italic
     summary: Specifies if the font or range is formatted as italic.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -513,13 +339,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#italicBidirectional:member
     package: word!
     fullName: italicBidirectional
-    summary: >-
-      Specifies if the font or range is formatted as italic (right-to-left
-      languages).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies if the font or range is formatted as italic (right-to-left languages).
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -530,13 +352,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#kana:member
     package: word!
     fullName: kana
-    summary: >-
-      Specifies whether the range of Japanese language text is hiragana or
-      katakana.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the range of Japanese language text is hiragana or katakana.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -547,13 +365,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#languageDetected:member
     package: word!
     fullName: languageDetected
-    summary: >-
-      Specifies whether Microsoft Word has detected the language of the text in
-      the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word has detected the language of the text in the range.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -565,10 +379,8 @@ properties:
     package: word!
     fullName: languageId
     summary: Specifies a `LanguageId` value that represents the language for the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -580,10 +392,8 @@ properties:
     package: word!
     fullName: languageIdFarEast
     summary: Specifies an East Asian language for the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -594,13 +404,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#languageIdOther:member
     package: word!
     fullName: languageIdOther
-    summary: >-
-      Specifies a language for the range that isn't classified as an East Asian
-      language.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a language for the range that isn't classified as an East Asian language.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -611,13 +417,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#listFormat:member
     package: word!
     fullName: listFormat
-    summary: >-
-      Returns a `ListFormat` object that represents all the list formatting
-      characteristics of the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ListFormat` object that represents all the list formatting characteristics of the range.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -629,10 +431,8 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -643,58 +443,35 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      Gets the currently supported content control that contains the range.
-      Throws an `ItemNotFound` error if there isn't a parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member
+    uid: word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      Gets the currently supported content control that contains the range. If
-      there isn't a parent content control, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the currently supported content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentTable
     uid: word!Word.Interfaces.RangeLoadOptions#parentTable:member
     package: word!
     fullName: parentTable
-    summary: >-
-      Gets the table that contains the range. Throws an `ItemNotFound` error if
-      it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -705,13 +482,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains the range. Throws an `ItemNotFound`
-      error if it isn't contained in a table cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -722,17 +495,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: >-
-      Gets the table cell that contains the range. If it isn't contained in a
-      table cell, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -743,17 +508,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member
     package: word!
     fullName: parentTableOrNullObject
-    summary: >-
-      Gets the table that contains the range. If it isn't contained in a table,
-      then this method will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -764,32 +521,22 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns a `ShadingUniversal` object that refers to the shading formatting
-      for the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ShadingUniversal` object that refers to the shading formatting for the range.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface" />
   - name: showAll
     uid: word!Word.Interfaces.RangeLoadOptions#showAll:member
     package: word!
     fullName: showAll
-    summary: >-
-      Specifies if all nonprinting characters (such as hidden text, tab marks,
-      space marks, and paragraph marks) are displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -801,10 +548,8 @@ properties:
     package: word!
     fullName: spellingChecked
     summary: Specifies if spelling has been checked throughout the range or document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -816,10 +561,8 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -831,10 +574,8 @@ properties:
     package: word!
     fullName: storyLength
     summary: Gets the number of characters in the story that contains the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -846,10 +587,8 @@ properties:
     package: word!
     fullName: storyType
     summary: Gets the story type for the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -860,14 +599,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -878,14 +612,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#styleBuiltIn:member
     package: word!
     fullName: styleBuiltIn
-    summary: >-
-      Specifies the built-in style name for the range. Use this property for
-      built-in styles that are portable between locales. To use custom styles or
-      localized style names, see the "style" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -897,10 +626,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -911,13 +638,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#twoLinesInOne:member
     package: word!
     fullName: twoLinesInOne
-    summary: >-
-      Specifies whether Microsoft Word sets two lines of text in one and
-      specifies the characters that enclose the text, if any.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word sets two lines of text in one and specifies the characters that enclose the text, if any.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

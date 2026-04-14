@@ -12,12 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member" />
-  (property type)
+  - Word.Interfaces.StyleCollectionLoadOptions.tableStyle (property type)
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#tableStyle:member" />
-  (property type)
+  - Word.Interfaces.StyleLoadOptions.tableStyle (property type)
 
 isPreview: false
 isDeprecated: false

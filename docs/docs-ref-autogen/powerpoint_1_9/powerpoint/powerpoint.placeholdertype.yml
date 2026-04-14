@@ -11,13 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#type:member" />
-  (property type)
+  - PowerPoint.Interfaces.PlaceholderFormatData.type (property type)
 
   #### Examples
 

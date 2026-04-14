@@ -3,40 +3,9 @@ name: Word.Interfaces.CustomXmlNodeUpdateData
 uid: word!Word.Interfaces.CustomXmlNodeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlNode` object, for use in
-  `customXmlNode.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#firstChild:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#lastChild:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#nextSibling:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#parentNode:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlNodeUpdateData#previousSibling:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPartUpdateData#documentElement:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member"
-  /> (property type)
-
+summary: An interface for updating data on the `CustomXmlNode` object, for use in `customXmlNode.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

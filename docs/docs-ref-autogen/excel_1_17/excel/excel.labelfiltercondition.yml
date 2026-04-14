@@ -14,11 +14,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotLabelFilter#condition:member" /> (property type)
+  - Excel.PivotLabelFilter.condition (property type)
 
   #### Examples
 

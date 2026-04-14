@@ -30,17 +30,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AppointmentCompose.getSharedPropertiesAsync (parameter type)
 
   - Office.AppointmentRead.getSharedPropertiesAsync (parameter type)
-
-  - Office.LoadedMessageCompose.getSharedPropertiesAsync (parameter type)
-
-  - Office.LoadedMessageRead.getSharedPropertiesAsync (parameter type)
 
   - Office.MessageCompose.getSharedPropertiesAsync (parameter type)
 

@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.IndexAddOptions#type:member" /> (property type)
+  - Word.IndexAddOptions.type (property type)
 
-  - <xref uid="word!Word.Interfaces.IndexData#type:member" /> (property type)
+  - Word.Interfaces.IndexData.type (property type)
 
 isPreview: false
 isDeprecated: false

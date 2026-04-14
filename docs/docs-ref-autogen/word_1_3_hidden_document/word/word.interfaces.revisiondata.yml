@@ -3,19 +3,13 @@ name: Word.Interfaces.RevisionData
 uid: word!Word.Interfaces.RevisionData:interface
 package: word!
 fullName: Word.Interfaces.RevisionData
-summary: >-
-  An interface describing the data returned by calling `revision.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `revision.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.RevisionCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RevisionCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.RevisionCollectionData.items (property type)
+  - Word.Interfaces.RevisionCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

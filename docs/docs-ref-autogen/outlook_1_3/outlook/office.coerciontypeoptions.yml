@@ -7,24 +7,17 @@ summary: Provides an option for the data format.
 remarks: >-
 
 
+
   #### Used by
 
 
   - Office.AppointmentCompose.setSelectedDataAsync (parameter type)
 
-  - Office.Body.appendOnSendAsync (parameter type)
-
   - Office.Body.prependAsync (parameter type)
-
-  - Office.Body.prependOnSendAsync (parameter type)
 
   - Office.Body.setAsync (parameter type)
 
   - Office.Body.setSelectedDataAsync (parameter type)
-
-  - Office.Body.setSignatureAsync (parameter type)
-
-  - Office.DisplayedBody.setAsync (parameter type)
 
   - Office.MessageCompose.setSelectedDataAsync (parameter type)
 

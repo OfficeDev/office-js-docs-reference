@@ -6,16 +6,7 @@ fullName: Excel.Interfaces.DataBarConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `dataBarConditionalFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#dataBar:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatData#dataBarOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

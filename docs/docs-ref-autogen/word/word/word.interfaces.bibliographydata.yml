@@ -6,15 +6,11 @@ fullName: Word.Interfaces.BibliographyData
 summary: >-
   An interface describing the data returned by calling
   `bibliography.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ApplicationData#bibliography:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#bibliography:member" />
-  (property type)
+  - Word.Interfaces.ApplicationData.bibliography (property type)
+  - Word.Interfaces.DocumentData.bibliography (property type)
 
 isPreview: false
 isDeprecated: false

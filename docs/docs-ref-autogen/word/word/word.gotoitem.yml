@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.GoToOptions#item:member" /> (property type)
+  - Word.GoToOptions.item (property type)
 
 isPreview: false
 isDeprecated: false

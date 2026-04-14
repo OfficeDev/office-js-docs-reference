@@ -3,17 +3,9 @@ name: Word.Interfaces.ThreeDimensionalFormatUpdateData
 uid: word!Word.Interfaces.ThreeDimensionalFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ThreeDimensionalFormatUpdateData
-summary: >-
-  An interface for updating data on the `ThreeDimensionalFormat` object, for use
-  in `threeDimensionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.FontUpdateData#threeDimensionalFormat:member" />
-  (property type)
-
+summary: An interface for updating data on the `ThreeDimensionalFormat` object, for use in `threeDimensionalFormat.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

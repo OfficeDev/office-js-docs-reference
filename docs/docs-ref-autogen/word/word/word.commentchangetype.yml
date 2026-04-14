@@ -10,11 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentEventArgs#changeType:member" /> (property type)
+  - Word.CommentEventArgs.changeType (property type)
 
   #### Examples
 

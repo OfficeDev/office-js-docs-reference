@@ -6,16 +6,7 @@ fullName: Excel.Interfaces.ColorScaleConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `colorScaleConditionalFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#colorScale:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatData#colorScaleOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

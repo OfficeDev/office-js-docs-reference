@@ -6,21 +6,13 @@ fullName: Excel.Interfaces.WindowData
 summary: >-
   An interface describing the data returned by calling `window.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#activeWindow:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#windows:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WindowCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WindowCollectionUpdateData#items:member"
-  /> (property type)
+  - Excel.Interfaces.ApplicationData.activeWindow (property type)
+  - Excel.Interfaces.ApplicationData.windows (property type)
+  - Excel.Interfaces.WindowCollectionData.items (property type)
+  - Excel.Interfaces.WindowCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

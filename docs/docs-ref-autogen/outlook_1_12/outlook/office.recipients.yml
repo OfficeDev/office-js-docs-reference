@@ -26,12 +26,6 @@ remarks: >-
 
   - Office.AppointmentCompose.requiredAttendees (property type)
 
-  - Office.LoadedMessageCompose.bcc (property type)
-
-  - Office.LoadedMessageCompose.cc (property type)
-
-  - Office.LoadedMessageCompose.to (property type)
-
   - Office.MessageCompose.bcc (property type)
 
   - Office.MessageCompose.cc (property type)

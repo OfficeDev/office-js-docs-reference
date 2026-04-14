@@ -3,11 +3,9 @@ name: Word.Interfaces.WebSettingsData
 uid: word!Word.Interfaces.WebSettingsData:interface
 package: word!
 fullName: Word.Interfaces.WebSettingsData
-summary: >-
-  An interface describing the data returned by calling
-  `webSettings.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `webSettings.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#allowPng:member
     package: word!
     fullName: allowPng
-    summary: >-
-      Specifies whether PNG is allowed as an image format when saving a document
-      as a webpage. Default is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,119 +27,22 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#encoding:member
     package: word!
     fullName: encoding
-    summary: >-
-      Specifies the document encoding (code page or character set) to be used by
-      the web browser when viewing the saved document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        encoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
-        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
-        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
-        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
-        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
-        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
-        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
-        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
-        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
-        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
-        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
-        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
-        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
-        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
-        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
-        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      content: 'encoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
-          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
-          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-          "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
-          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
-          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
-          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-          "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
-          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
-          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: folderSuffix
     uid: word!Word.Interfaces.WebSettingsData#folderSuffix:member
     package: word!
     fullName: folderSuffix
-    summary: >-
-      Gets the folder suffix used when saving a document as a webpage with long
-      file names and supporting files in a separate folder.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#organizeInFolder:member
     package: word!
     fullName: organizeInFolder
-    summary: >-
-      Specifies whether supporting files are organized in a separate folder when
-      saving the document as a webpage. Default is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#pixelsPerInch:member
     package: word!
     fullName: pixelsPerInch
-    summary: >-
-      Specifies the density (pixels per inch) of graphics images and table cells
-      on a webpage.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,14 +79,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#relyOnCSS:member
     package: word!
     fullName: relyOnCSS
-    summary: >-
-      Specifies whether cascading style sheets (CSS) are used for font
-      formatting when viewing a saved document in a web browser. Default is
-      `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#relyOnVectorMarkupLanguage:member
     package: word!
     fullName: relyOnVectorMarkupLanguage
-    summary: >-
-      Specifies whether image files are not generated from drawing objects when
-      saving a document as a webpage. Default is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,57 +105,35 @@ properties:
     uid: word!Word.Interfaces.WebSettingsData#screenSize:member
     package: word!
     fullName: screenSize
-    summary: >-
-      Specifies the ideal minimum screen size (width by height, in pixels) for
-      viewing the saved document in a web browser.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        screenSize?: Word.ScreenSize | "Size544x376" | "Size640x480" |
-        "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" |
-        "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" |
-        "Size1920x1200";
+      content: 'screenSize?: Word.ScreenSize | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200";'
       return:
-        type: >-
-          <xref uid="word!Word.ScreenSize:enum" /> | "Size544x376" |
-          "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" |
-          "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" |
-          "Size1800x1440" | "Size1920x1200"
+        type: <xref uid="word!Word.ScreenSize:enum" /> | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200"
   - name: targetBrowser
     uid: word!Word.Interfaces.WebSettingsData#targetBrowser:member
     package: word!
     fullName: targetBrowser
     summary: Specifies the target browser for documents viewed in a web browser.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        targetBrowser?: Word.TargetBrowser | "V3" | "V4" | "Ie4" | "Ie5" |
-        "Ie6";
+      content: 'targetBrowser?: Word.TargetBrowser | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6";'
       return:
-        type: >-
-          <xref uid="word!Word.TargetBrowser:enum" /> | "V3" | "V4" | "Ie4" |
-          "Ie5" | "Ie6"
+        type: <xref uid="word!Word.TargetBrowser:enum" /> | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6"
   - name: useLongFileNames
     uid: word!Word.Interfaces.WebSettingsData#useLongFileNames:member
     package: word!
     fullName: useLongFileNames
-    summary: >-
-      Specifies whether long file names are used when saving the document as a
-      webpage. Default is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether long file names are used when saving the document as a webpage. Default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -12,16 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#listFormat:member" />
-  (property type)
+  - Word.Interfaces.RangeCollectionLoadOptions.listFormat (property type)
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#listFormat:member" />
-  (property type)
+  - Word.Interfaces.RangeLoadOptions.listFormat (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#listFormat:member"
-  /> (property type)
+  - Word.Interfaces.RangeScopedCollectionLoadOptions.listFormat (property type)
 
 isPreview: false
 isDeprecated: false

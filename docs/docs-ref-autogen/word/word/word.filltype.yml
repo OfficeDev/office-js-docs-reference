@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#type:member" /> (property
-  type)
+  - Word.Interfaces.FillFormatData.type (property type)
 
 isPreview: false
 isDeprecated: false

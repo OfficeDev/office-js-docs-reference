@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalTextComparisonRule#operator:member" />
-  (property type)
+  - Excel.ConditionalTextComparisonRule.operator (property type)
 
   #### Examples
 

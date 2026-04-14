@@ -10,15 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicDataValidation#operator:member" /> (property
-  type)
+  - Excel.BasicDataValidation.operator (property type)
 
-  - <xref uid="excel!Excel.DateTimeDataValidation#operator:member" /> (property
-  type)
+  - Excel.DateTimeDataValidation.operator (property type)
 
   #### Examples
 

@@ -12,21 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member"
-  /> (property type)
+  - Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages (property
+  type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member" />
-  (property type)
+  - Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member" />
-  (property type)
+  - Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member" />
-  (property type)
+  - Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages (property type)
 
 isPreview: false
 isDeprecated: false

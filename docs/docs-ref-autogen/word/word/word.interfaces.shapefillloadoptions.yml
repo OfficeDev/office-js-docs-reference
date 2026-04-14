@@ -14,11 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#fill:member" />
-  (property type)
+  - Word.Interfaces.ShapeCollectionLoadOptions.fill (property type)
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#fill:member" /> (property
-  type)
+  - Word.Interfaces.ShapeLoadOptions.fill (property type)
 
 isPreview: false
 isDeprecated: false

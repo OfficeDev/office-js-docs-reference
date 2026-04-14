@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `ColorScaleConditionalFormat` object,
   for use in `colorScaleConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#colorScale:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#colorScaleOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

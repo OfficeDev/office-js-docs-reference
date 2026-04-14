@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableAddOptions#columns:member" />
-  (property type)
+  - PowerPoint.TableAddOptions.columns (property type)
 
   #### Examples
 

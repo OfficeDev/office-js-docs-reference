@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartLeaderLinesUpdateData
 summary: >-
   An interface for updating data on the `ChartLeaderLines` object, for use in
   `chartLeaderLines.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#leaderLines:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

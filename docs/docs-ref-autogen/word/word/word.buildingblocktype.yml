@@ -12,13 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#buildingBlockType:member"
-  /> (property type)
+  - Word.Interfaces.BuildingBlockGalleryContentControlData.buildingBlockType
+  (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#buildingBlockType:member"
-  /> (property type)
+  -
+  Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.buildingBlockType
+  (property type)
 
 isPreview: false
 isDeprecated: false

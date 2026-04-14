@@ -4,39 +4,12 @@ uid: word!Word.Interfaces.ShapeData:interface
 package: word!
 fullName: Word.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyData#shapes:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CanvasData#shape:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.CanvasData#shapes:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphData#shapes:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#shapes:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ShapeCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ShapeCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ShapeData#parentCanvas:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ShapeData#parentGroup:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ShapeGroupData#shape:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ShapeGroupData#shapes:member" /> (property
-  type)
-
+  - Word.Interfaces.ShapeCollectionData.items (property type)
+  - Word.Interfaces.ShapeCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

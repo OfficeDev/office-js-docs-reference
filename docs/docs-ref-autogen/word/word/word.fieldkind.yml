@@ -12,11 +12,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FieldData#kind:member" /> (property type)
+  - Word.Interfaces.FieldData.kind (property type)
 
   #### Examples
 

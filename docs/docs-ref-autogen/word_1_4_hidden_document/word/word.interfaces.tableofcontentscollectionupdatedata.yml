@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.TableOfContentsCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfContentsCollectionUpdateData
 summary: >-
-  An interface for updating data on the `TableOfContentsCollection` object, for
-  use in `tableOfContentsCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the `TableOfContentsCollection` object, for use in `tableOfContentsCollection.set({
+  ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.NumberFormatInfoData
 summary: >-
   An interface describing the data returned by calling
   `numberFormatInfo.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.CultureInfoData#numberFormat:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

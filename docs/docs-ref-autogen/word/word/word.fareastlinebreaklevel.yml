@@ -14,19 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#farEastLineBreakLevel:member"
-  /> (property type)
+  - Word.Interfaces.DocumentData.farEastLineBreakLevel (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.DocumentUpdateData#farEastLineBreakLevel:member" />
-  (property type)
+  - Word.Interfaces.DocumentUpdateData.farEastLineBreakLevel (property type)
 
-  - <xref uid="word!Word.Interfaces.TemplateData#farEastLineBreakLevel:member"
-  /> (property type)
+  - Word.Interfaces.TemplateData.farEastLineBreakLevel (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLevel:member" />
-  (property type)
+  - Word.Interfaces.TemplateUpdateData.farEastLineBreakLevel (property type)
 
 isPreview: false
 isDeprecated: false

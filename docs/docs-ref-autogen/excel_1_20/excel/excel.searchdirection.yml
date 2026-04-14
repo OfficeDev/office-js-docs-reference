@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SearchCriteria#searchDirection:member" /> (property
-  type)
+  - Excel.SearchCriteria.searchDirection (property type)
 
   #### Examples
 

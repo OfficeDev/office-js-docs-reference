@@ -3,59 +3,25 @@ name: Word.EventSource
 uid: word!Word.EventSource:enum
 package: word!
 fullName: Word.EventSource
-summary: >-
-  An enum that specifies an event's source. It can be local or remote (through
-  coauthoring).
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
+summary: An enum that specifies an event's source. It can be local or remote (through coauthoring).
+remarks: |-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Used by
 
-
-  - <xref uid="word!Word.CommentEventArgs#source:member" /> (property type)
-
-  - <xref uid="word!Word.ContentControlAddedEventArgs#source:member" />
-  (property type)
-
-  - <xref uid="word!Word.ContentControlDataChangedEventArgs#source:member" />
-  (property type)
-
-  - <xref uid="word!Word.ContentControlDeletedEventArgs#source:member" />
-  (property type)
-
-  - <xref uid="word!Word.ContentControlEnteredEventArgs#source:member" />
-  (property type)
-
-  - <xref uid="word!Word.ContentControlExitedEventArgs#source:member" />
-  (property type)
-
-  - <xref uid="word!Word.ContentControlSelectionChangedEventArgs#source:member"
-  /> (property type)
-
-  - <xref uid="word!Word.ParagraphAddedEventArgs#source:member" /> (property
-  type)
-
-  - <xref uid="word!Word.ParagraphChangedEventArgs#source:member" /> (property
-  type)
-
-  - <xref uid="word!Word.ParagraphDeletedEventArgs#source:member" /> (property
-  type)
-
+  - Word.ContentControlAddedEventArgs.source (property type)
+  - Word.ContentControlDataChangedEventArgs.source (property type)
+  - Word.ContentControlDeletedEventArgs.source (property type)
+  - Word.ContentControlEnteredEventArgs.source (property type)
+  - Word.ContentControlExitedEventArgs.source (property type)
+  - Word.ContentControlSelectionChangedEventArgs.source (property type)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
 
   // Registers event handlers.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.track();
@@ -71,9 +37,7 @@ remarks: >-
     console.log("Event handlers registered.");
   });
 
-
   ...
-
 
   async function onEventHandler(event: Word.CommentEventArgs) {
     // Handler for all events except onCommentChanged.
@@ -81,29 +45,24 @@ remarks: >-
       console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
     });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: local
     uid: word!Word.EventSource.local:member
     package: word!
-    summary: >-
+    summary: |-
       Local source.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
     package: word!
-    summary: >-
+    summary: |-
       Remote source.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Remote"'

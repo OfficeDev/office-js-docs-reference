@@ -3,17 +3,9 @@ name: Word.Interfaces.DatePickerContentControlUpdateData
 uid: word!Word.Interfaces.DatePickerContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DatePickerContentControlUpdateData
-summary: >-
-  An interface for updating data on the `DatePickerContentControl` object, for
-  use in `datePickerContentControl.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#datePickerContentControl:member"
-  /> (property type)
-
+summary: An interface for updating data on the `DatePickerContentControl` object, for use in `datePickerContentControl.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

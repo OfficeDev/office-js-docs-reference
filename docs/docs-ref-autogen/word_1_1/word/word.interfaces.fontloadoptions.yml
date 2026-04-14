@@ -4,70 +4,19 @@ uid: word!Word.Interfaces.FontLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.FontLoadOptions
 summary: Represents a font.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ConditionalStyleLoadOptions#font:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ListLevelCollectionLoadOptions#font:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ListLevelLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member" /> (property
-  type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.TableCollectionLoadOptions#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#font:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#font:member" />
-  (property type)
-
+  - Word.Interfaces.BodyLoadOptions.font (property type)
+  - Word.Interfaces.ContentControlCollectionLoadOptions.font (property type)
+  - Word.Interfaces.ContentControlLoadOptions.font (property type)
+  - Word.Interfaces.ParagraphCollectionLoadOptions.font (property type)
+  - Word.Interfaces.ParagraphLoadOptions.font (property type)
+  - Word.Interfaces.RangeCollectionLoadOptions.font (property type)
+  - Word.Interfaces.RangeLoadOptions.font (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -76,12 +25,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,13 +38,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#bold:member
     package: word!
     fullName: bold
-    summary: >-
-      Specifies whether the font is bold. `true` if the font is formatted as
-      bold, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the font is bold. `true` if the font is formatted as bold, otherwise, `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,13 +51,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#color:member
     package: word!
     fullName: color
-    summary: >-
-      Specifies the color for the font. You can provide the value in the
-      '\#RRGGBB' format or the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the color for the font. You can provide the value in the '\#RRGGBB' format or the color name.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,13 +64,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#doubleStrikeThrough:member
     package: word!
     fullName: doubleStrikeThrough
-    summary: >-
-      Specifies whether the font has a double strikethrough. `true` if the font
-      is formatted as double strikethrough text, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the font has a double strikethrough. `true` if the font is formatted as double strikethrough text, otherwise, `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,21 +77,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#highlightColor:member
     package: word!
     fullName: highlightColor
-    summary: >-
-      Specifies the highlight color. To set it, use a value either in the
-      '\#RRGGBB' format or the color name. To remove highlight color, set it to
-      `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB'
-      format, an empty string for mixed highlight colors, or `null` for no
-      highlight color. Note: Only the default highlight colors are available in
-      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise",
-      "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed",
-      "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
-      for Windows Desktop, any other color is converted to the closest color
-      when applied to the font.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'Specifies the highlight color. To set it, use a value either in the ''\#RRGGBB'' format or the color name. To remove highlight color, set it to `null`<!-- -->. The returned highlight color can be in the ''\#RRGGBB'' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,13 +90,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#italic:member
     package: word!
     fullName: italic
-    summary: >-
-      Specifies whether the font is italicized. `true` if the font is
-      italicized, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the font is italicized. `true` if the font is italicized, otherwise, `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,10 +104,8 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the font.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -201,10 +117,8 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the font size in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,13 +129,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#strikeThrough:member
     package: word!
     fullName: strikeThrough
-    summary: >-
-      Specifies whether the font has a strikethrough. `true` if the font is
-      formatted as strikethrough text, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the font has a strikethrough. `true` if the font is formatted as strikethrough text, otherwise, `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,13 +142,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#subscript:member
     package: word!
     fullName: subscript
-    summary: >-
-      Specifies whether the font is a subscript. `true` if the font is formatted
-      as subscript, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the font is a subscript. `true` if the font is formatted as subscript, otherwise, `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,13 +155,9 @@ properties:
     uid: word!Word.Interfaces.FontLoadOptions#superscript:member
     package: word!
     fullName: superscript
-    summary: >-
-      Specifies whether the font is a superscript. `true` if the font is
-      formatted as superscript, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the font is a superscript. `true` if the font is formatted as superscript, otherwise, `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,10 +169,8 @@ properties:
     package: word!
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

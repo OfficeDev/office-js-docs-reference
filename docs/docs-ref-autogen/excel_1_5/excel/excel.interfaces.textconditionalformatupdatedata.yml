@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.TextConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `TextConditionalFormat` object, for use
   in `textConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#textComparison:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#textComparisonOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

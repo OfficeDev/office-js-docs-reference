@@ -3,24 +3,14 @@ name: Word.Interfaces.CoauthoringUpdateData
 uid: word!Word.Interfaces.CoauthoringUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoringUpdate.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `coauthoringUpdate.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CoauthoringData#updates:member" /> (property
-  type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.CoauthoringData.updates (property type)
+  - Word.Interfaces.CoauthoringUpdateCollectionData.items (property type)
+  - Word.Interfaces.CoauthoringUpdateCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,13 +19,9 @@ properties:
     uid: word!Word.Interfaces.CoauthoringUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `CoauthoringUpdate` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringUpdate` object.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

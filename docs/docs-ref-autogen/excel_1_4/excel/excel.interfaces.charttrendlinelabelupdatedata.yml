@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
 summary: >-
   An interface for updating data on the `ChartTrendlineLabel` object, for use in
   `chartTrendlineLabel.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineUpdateData#label:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

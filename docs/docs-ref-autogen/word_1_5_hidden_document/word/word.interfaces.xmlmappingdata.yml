@@ -3,34 +3,9 @@ name: Word.Interfaces.XmlMappingData
 uid: word!Word.Interfaces.XmlMappingData:interface
 package: word!
 fullName: Word.Interfaces.XmlMappingData
-summary: >-
-  An interface describing the data returned by calling `xmlMapping.toJSON()`<!--
-  -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#xmlMapping:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#xmlMapping:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#xmlMapping:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#xmlMapping:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#xmlMapping:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#xmlMapping:member"
-  /> (property type)
-
+summary: An interface describing the data returned by calling `xmlMapping.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

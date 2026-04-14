@@ -6,15 +6,10 @@ fullName: Excel.Interfaces.ChartDataLabelFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartDataLabelFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelData#format:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsData#format:member" />
-  (property type)
+  - Excel.Interfaces.ChartDataLabelsData.format (property type)
 
 isPreview: false
 isDeprecated: false

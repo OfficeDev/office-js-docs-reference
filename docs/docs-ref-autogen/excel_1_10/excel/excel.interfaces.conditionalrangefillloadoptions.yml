@@ -12,9 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#fill:member" />
-  (property type)
+  - Excel.Interfaces.ConditionalRangeFormatLoadOptions.fill (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,22 +6,11 @@ fullName: Excel.Interfaces.PageBreakData
 summary: >-
   An interface describing the data returned by calling `pageBreak.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.PageBreakCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member"
-  /> (property type)
+  - Excel.Interfaces.PageBreakCollectionData.items (property type)
+  - Excel.Interfaces.PageBreakCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

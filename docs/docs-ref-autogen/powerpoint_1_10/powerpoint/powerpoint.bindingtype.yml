@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.BindingData#type:member" />
-  (property type)
+  - PowerPoint.Interfaces.BindingData.type (property type)
 
   #### Examples
 

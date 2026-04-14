@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.DocumentLoadOptions#application:member" />
-  (property type)
+  - Visio.Interfaces.DocumentLoadOptions.application (property type)
 
 isPreview: false
 isDeprecated: false

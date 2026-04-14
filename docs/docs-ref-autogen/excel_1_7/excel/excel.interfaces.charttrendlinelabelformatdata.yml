@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartTrendlineLabelFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartTrendlineLabelFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineLabelData#format:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

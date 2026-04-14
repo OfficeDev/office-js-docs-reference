@@ -10,11 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.XmlSetMappingOptions#source:member" /> (property type)
+  - Word.XmlSetMappingOptions.source (property type)
 
   #### Examples
 

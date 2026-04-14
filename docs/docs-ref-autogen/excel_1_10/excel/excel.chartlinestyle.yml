@@ -10,22 +10,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartBorderData#lineStyle:member" />
-  (property type)
+  - Excel.Interfaces.ChartBorderData.lineStyle (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartBorderUpdateData#lineStyle:member" />
-  (property type)
+  - Excel.Interfaces.ChartBorderUpdateData.lineStyle (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member" />
-  (property type)
+  - Excel.Interfaces.ChartLineFormatData.lineStyle (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member" />
-  (property type)
+  - Excel.Interfaces.ChartLineFormatUpdateData.lineStyle (property type)
 
   #### Examples
 

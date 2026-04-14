@@ -10,16 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member"
-  /> (property type)
+  - Excel.Interfaces.DataPivotHierarchyData.summarizeBy (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member"
-  /> (property type)
+  - Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy (property type)
 
   #### Examples
 

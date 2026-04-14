@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.ShapeViewData#highlight:member" />
-  (property type)
+  - Visio.Interfaces.ShapeViewData.highlight (property type)
 
-  - <xref uid="visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member" />
-  (property type)
+  - Visio.Interfaces.ShapeViewUpdateData.highlight (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutData#type:member" />
-  (property type)
+  - PowerPoint.Interfaces.SlideLayoutData.type (property type)
 
 isPreview: false
 isDeprecated: false

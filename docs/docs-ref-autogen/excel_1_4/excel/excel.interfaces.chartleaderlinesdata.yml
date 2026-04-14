@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartLeaderLinesData
 summary: >-
   An interface describing the data returned by calling
   `chartLeaderLines.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsData#leaderLines:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

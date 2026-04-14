@@ -14,37 +14,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member" />
+  - OneNote.Interfaces.ImageLoadOptions.paragraph (property type)
+
+  - OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph (property type)
+
+  - OneNote.Interfaces.InkWordLoadOptions.paragraph (property type)
+
+  - OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraph (property
+  type)
+
+  - OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraphOrNull
   (property type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#paragraph:member"
-  /> (property type)
+  - OneNote.Interfaces.ParagraphLoadOptions.parentParagraph (property type)
 
-  - <xref uid="onenote!OneNote.Interfaces.InkWordLoadOptions#paragraph:member"
-  /> (property type)
+  - OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull (property
+  type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member"
-  /> (property type)
+  - OneNote.Interfaces.RichTextLoadOptions.paragraph (property type)
 
-  - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraphOrNull:member"
-  /> (property type)
-
-  - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraph:member"
-  /> (property type)
-
-  - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraphOrNull:member"
-  /> (property type)
-
-  - <xref uid="onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member"
-  /> (property type)
-
-  - <xref uid="onenote!OneNote.Interfaces.TableLoadOptions#paragraph:member" />
-  (property type)
+  - OneNote.Interfaces.TableLoadOptions.paragraph (property type)
 
 isPreview: false
 isDeprecated: false

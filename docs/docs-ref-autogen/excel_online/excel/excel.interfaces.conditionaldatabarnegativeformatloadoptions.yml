@@ -12,9 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member"
-  /> (property type)
+  - Excel.Interfaces.DataBarConditionalFormatLoadOptions.negativeFormat
+  (property type)
 
 isPreview: false
 isDeprecated: false

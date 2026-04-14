@@ -6,15 +6,11 @@ fullName: Word.Interfaces.BookmarkData
 summary: >-
   An interface describing the data returned by calling `bookmark.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BookmarkCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.BookmarkCollectionUpdateData#items:member"
-  /> (property type)
+  - Word.Interfaces.BookmarkCollectionData.items (property type)
+  - Word.Interfaces.BookmarkCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

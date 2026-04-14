@@ -4,40 +4,30 @@ uid: word!Word.PageMovementType:enum
 package: word!
 fullName: Word.PageMovementType
 summary: Specifies the page movement type in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ViewData#pageMovementType:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ViewUpdateData#pageMovementType:member" />
-  (property type)
-
+  - Word.Interfaces.ViewData.pageMovementType (property type)
+  - Word.Interfaces.ViewUpdateData.pageMovementType (property type)
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: sideToSide
     uid: word!Word.PageMovementType.sideToSide:member
     package: word!
-    summary: >-
+    summary: |-
       Side to side.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SideToSide"'
   - name: vertical
     uid: word!Word.PageMovementType.vertical:member
     package: word!
-    summary: >-
+    summary: |-
       Vertical.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Vertical"'

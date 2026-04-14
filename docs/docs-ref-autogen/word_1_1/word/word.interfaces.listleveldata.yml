@@ -3,22 +3,13 @@ name: Word.Interfaces.ListLevelData
 uid: word!Word.Interfaces.ListLevelData:interface
 package: word!
 fullName: Word.Interfaces.ListLevelData
-summary: >-
-  An interface describing the data returned by calling `listLevel.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `listLevel.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ListLevelCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ListLevelCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ListTemplateData#listLevels:member" />
-  (property type)
-
+  - Word.Interfaces.ListLevelCollectionData.items (property type)
+  - Word.Interfaces.ListLevelCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

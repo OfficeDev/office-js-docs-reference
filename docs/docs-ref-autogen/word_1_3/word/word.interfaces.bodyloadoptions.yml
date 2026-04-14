@@ -4,90 +4,27 @@ uid: word!Word.Interfaces.BodyLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BodyLoadOptions
 summary: Represents the body of a document or a section.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#parentBody:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentCreatedLoadOptions#body:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#body:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#body:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#body:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentBody:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.SectionCollectionLoadOptions#body:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SectionLoadOptions#body:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#body:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#body:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.TableCellCollectionLoadOptions#body:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#body:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentBody:member" />
-  (property type)
-
+  - Word.Interfaces.BodyLoadOptions.parentBody (property type)
+  - Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject (property type)
+  - Word.Interfaces.ContentControlCollectionLoadOptions.parentBody (property type)
+  - Word.Interfaces.ContentControlLoadOptions.parentBody (property type)
+  - Word.Interfaces.DocumentLoadOptions.body (property type)
+  - Word.Interfaces.ParagraphCollectionLoadOptions.parentBody (property type)
+  - Word.Interfaces.ParagraphLoadOptions.parentBody (property type)
+  - Word.Interfaces.RangeCollectionLoadOptions.parentBody (property type)
+  - Word.Interfaces.RangeLoadOptions.parentBody (property type)
+  - Word.Interfaces.SectionCollectionLoadOptions.body (property type)
+  - Word.Interfaces.SectionLoadOptions.body (property type)
+  - Word.Interfaces.TableCellCollectionLoadOptions.body (property type)
+  - Word.Interfaces.TableCellLoadOptions.body (property type)
+  - Word.Interfaces.TableCollectionLoadOptions.parentBody (property type)
+  - Word.Interfaces.TableLoadOptions.parentBody (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -96,12 +33,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,13 +46,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the body. Use this to get and set font name, size,
-      color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text format of the body. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,14 +59,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#parentBody:member
     package: word!
     fullName: parentBody
-    summary: >-
-      Gets the parent body of the body. For example, a table cell body's parent
-      body could be a header. Throws an `ItemNotFound` error if there isn't a
-      parent body.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an `ItemNotFound` error if there isn't a parent body.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,17 +72,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member
     package: word!
     fullName: parentBodyOrNullObject
-    summary: >-
-      Gets the parent body of the body. For example, a table cell body's parent
-      body could be a header. If there isn't a parent body, then this method
-      will return an object with its `isNullObject` property set to `true`<!--
-      -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a parent body, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,58 +85,35 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      Gets the content control that contains the body. Throws an `ItemNotFound`
-      error if there isn't a parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member
+    uid: word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      Gets the content control that contains the body. If there isn't a parent
-      content control, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information,
-      see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the content control that contains the body. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentSection
     uid: word!Word.Interfaces.BodyLoadOptions#parentSection:member
     package: word!
     fullName: parentSection
-    summary: >-
-      Gets the parent section of the body. Throws an `ItemNotFound` error if
-      there isn't a parent section.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the parent section of the body. Throws an `ItemNotFound` error if there isn't a parent section.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,16 +124,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member
     package: word!
     fullName: parentSectionOrNullObject
-    summary: >-
-      Gets the parent section of the body. If there isn't a parent section, then
-      this method will return an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the parent section of the body. If there isn't a parent section, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,14 +137,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the body. Use this property for custom styles
-      and localized style names. To use the built-in styles that are portable
-      between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,14 +150,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#styleBuiltIn:member
     package: word!
     fullName: styleBuiltIn
-    summary: >-
-      Specifies the built-in style name for the body. Use this property for
-      built-in styles that are portable between locales. To use custom styles or
-      localized style names, see the "style" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,10 +164,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,15 +176,9 @@ properties:
     uid: word!Word.Interfaces.BodyLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      Gets the type of the body. The type can be `mainDoc`<!-- -->,
-      `section`<!-- -->, `header`<!-- -->, `footer`<!-- -->, or `tableCell`<!--
-      -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
-      `noteItem` are supported in WordApi 1.5 and later.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the type of the body. The type can be `mainDoc`<!-- -->, `section`<!-- -->, `header`<!-- -->, `footer`<!-- -->, or `tableCell`<!-- -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and `noteItem` are supported in WordApi 1.5 and later.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

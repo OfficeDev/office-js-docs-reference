@@ -3,16 +3,9 @@ name: Word.Interfaces.ReflectionFormatData
 uid: word!Word.Interfaces.ReflectionFormatData:interface
 package: word!
 fullName: Word.Interfaces.ReflectionFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `reflectionFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.FontData#reflection:member" /> (property
-  type)
-
+summary: An interface describing the data returned by calling `reflectionFormat.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

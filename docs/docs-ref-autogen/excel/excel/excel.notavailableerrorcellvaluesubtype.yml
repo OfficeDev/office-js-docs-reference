@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.NotAvailableErrorCellValue#errorSubType:member" />
-  (property type)
+  - Excel.NotAvailableErrorCellValue.errorSubType (property type)
 
 isPreview: true
 isDeprecated: false

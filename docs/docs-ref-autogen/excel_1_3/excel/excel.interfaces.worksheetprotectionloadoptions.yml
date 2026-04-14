@@ -12,12 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member"
-  /> (property type)
+  - Excel.Interfaces.WorksheetCollectionLoadOptions.protection (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#protection:member" />
-  (property type)
+  - Excel.Interfaces.WorksheetLoadOptions.protection (property type)
 
 isPreview: false
 isDeprecated: false

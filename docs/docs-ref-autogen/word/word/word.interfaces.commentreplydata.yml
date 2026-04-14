@@ -6,19 +6,12 @@ fullName: Word.Interfaces.CommentReplyData
 summary: >-
   An interface describing the data returned by calling
   `commentReply.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CommentData#replies:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.CommentReplyCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CommentReplyCollectionUpdateData#items:member" />
-  (property type)
+  - Word.Interfaces.CommentData.replies (property type)
+  - Word.Interfaces.CommentReplyCollectionData.items (property type)
+  - Word.Interfaces.CommentReplyCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

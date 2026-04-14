@@ -3,17 +3,9 @@ name: Word.Interfaces.PictureContentControlUpdateData
 uid: word!Word.Interfaces.PictureContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.PictureContentControlUpdateData
-summary: >-
-  An interface for updating data on the `PictureContentControl` object, for use
-  in `pictureContentControl.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#pictureContentControl:member"
-  /> (property type)
-
+summary: An interface for updating data on the `PictureContentControl` object, for use in `pictureContentControl.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

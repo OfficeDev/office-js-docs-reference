@@ -10,21 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData#items:member" />
-  (property type)
+  - PowerPoint.Interfaces.HyperlinkCollectionData.items (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData#items:member"
-  /> (property type)
+  - PowerPoint.Interfaces.HyperlinkCollectionUpdateData.items (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData#items:member"
-  /> (property type)
+  - PowerPoint.Interfaces.HyperlinkScopedCollectionData.items (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData#items:member"
-  /> (property type)
+  - PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData.items (property
+  type)
 
 isPreview: false
 isDeprecated: false

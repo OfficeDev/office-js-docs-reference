@@ -6,38 +6,18 @@ fullName: Word.Interfaces.ColorFormatData
 summary: >-
   An interface describing the data returned by calling
   `colorFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.FillFormatData#backgroundColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FillFormatData#foregroundColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.FontData#textColor:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.GlowFormatData#color:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.LineFormatData#backgroundColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.LineFormatData#foregroundColor:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ShadowFormatData#foregroundColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#contourColor:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColor:member" />
-  (property type)
+  - Word.Interfaces.FillFormatData.backgroundColor (property type)
+  - Word.Interfaces.FillFormatData.foregroundColor (property type)
+  - Word.Interfaces.FontData.textColor (property type)
+  - Word.Interfaces.GlowFormatData.color (property type)
+  - Word.Interfaces.LineFormatData.backgroundColor (property type)
+  - Word.Interfaces.LineFormatData.foregroundColor (property type)
+  - Word.Interfaces.ShadowFormatData.foregroundColor (property type)
+  - Word.Interfaces.ThreeDimensionalFormatData.contourColor (property type)
+  - Word.Interfaces.ThreeDimensionalFormatData.extrusionColor (property type)
 
 isPreview: false
 isDeprecated: false

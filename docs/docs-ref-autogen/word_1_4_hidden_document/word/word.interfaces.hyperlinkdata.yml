@@ -3,25 +3,13 @@ name: Word.Interfaces.HyperlinkData
 uid: word!Word.Interfaces.HyperlinkData:interface
 package: word!
 fullName: Word.Interfaces.HyperlinkData
-summary: >-
-  An interface describing the data returned by calling `hyperlink.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `hyperlink.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.DocumentData#hyperlinks:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.HyperlinkCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.HyperlinkCollectionUpdateData#items:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#hyperlinks:member" /> (property
-  type)
-
+  - Word.Interfaces.HyperlinkCollectionData.items (property type)
+  - Word.Interfaces.HyperlinkCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

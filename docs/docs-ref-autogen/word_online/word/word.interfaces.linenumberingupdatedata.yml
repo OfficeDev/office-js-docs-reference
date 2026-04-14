@@ -3,16 +3,9 @@ name: Word.Interfaces.LineNumberingUpdateData
 uid: word!Word.Interfaces.LineNumberingUpdateData:interface
 package: word!
 fullName: Word.Interfaces.LineNumberingUpdateData
-summary: >-
-  An interface for updating data on the `LineNumbering` object, for use in
-  `lineNumbering.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#lineNumbering:member" />
-  (property type)
-
+summary: An interface for updating data on the `LineNumbering` object, for use in `lineNumbering.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

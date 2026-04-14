@@ -42,21 +42,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-
-  **Office**
-
-
   - Office.Context.officeTheme (property type)
-
-
-  **Outlook**
-
-
-  - Office.OfficeThemeChangedEventArgs.officeTheme (property type)
 
   #### Examples
 

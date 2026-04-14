@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.DatetimeFormatInfoData
 summary: >-
   An interface describing the data returned by calling
   `datetimeFormatInfo.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.CultureInfoData#datetimeFormat:member" />
-  (property type)
+  - Excel.Interfaces.CultureInfoData.datetimeFormat (property type)
 
 isPreview: false
 isDeprecated: false

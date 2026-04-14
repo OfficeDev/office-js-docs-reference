@@ -17,12 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#rangeSelection:member"
-  /> (property type)
+  - Excel.Interfaces.WindowCollectionLoadOptions.rangeSelection (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#rangeSelection:member"
-  /> (property type)
+  - Excel.Interfaces.WindowLoadOptions.rangeSelection (property type)
 
 isPreview: false
 isDeprecated: false

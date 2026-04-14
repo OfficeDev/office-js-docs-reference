@@ -3,17 +3,9 @@ name: Word.Interfaces.DatePickerContentControlData
 uid: word!Word.Interfaces.DatePickerContentControlData:interface
 package: word!
 fullName: Word.Interfaces.DatePickerContentControlData
-summary: >-
-  An interface describing the data returned by calling
-  `datePickerContentControl.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="word!Word.Interfaces.ContentControlData#datePickerContentControl:member"
-  /> (property type)
-
+summary: An interface describing the data returned by calling `datePickerContentControl.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

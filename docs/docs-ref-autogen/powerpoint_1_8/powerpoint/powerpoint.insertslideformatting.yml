@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.InsertSlideOptions#formatting:member" />
-  (property type)
+  - PowerPoint.InsertSlideOptions.formatting (property type)
 
   #### Examples
 

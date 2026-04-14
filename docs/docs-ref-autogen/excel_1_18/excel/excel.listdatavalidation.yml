@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationRule#list:member" /> (property type)
+  - Excel.DataValidationRule.list (property type)
 
 isPreview: false
 isDeprecated: false

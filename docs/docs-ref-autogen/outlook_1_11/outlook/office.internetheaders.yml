@@ -72,8 +72,6 @@ remarks: >-
   #### Used by
 
 
-  - Office.LoadedMessageCompose.internetHeaders (property type)
-
   - Office.MessageCompose.internetHeaders (property type)
 
 isPreview: false

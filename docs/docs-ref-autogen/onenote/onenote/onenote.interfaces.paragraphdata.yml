@@ -6,25 +6,14 @@ fullName: OneNote.Interfaces.ParagraphData
 summary: >-
   An interface describing the data returned by calling `paragraph.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="onenote!OneNote.Interfaces.OutlineData#paragraphs:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#paragraphs:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.Interfaces.TableCellData#paragraphs:member" />
-  (property type)
+  - OneNote.Interfaces.OutlineData.paragraphs (property type)
+  - OneNote.Interfaces.ParagraphCollectionData.items (property type)
+  - OneNote.Interfaces.ParagraphCollectionUpdateData.items (property type)
+  - OneNote.Interfaces.ParagraphData.paragraphs (property type)
+  - OneNote.Interfaces.TableCellData.paragraphs (property type)
 
 isPreview: false
 isDeprecated: false

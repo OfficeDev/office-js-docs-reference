@@ -6,16 +6,11 @@ fullName: Excel.Interfaces.DocumentTaskData
 summary: >-
   An interface describing the data returned by calling
   `documentTask.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.DocumentTaskCollectionUpdateData#items:member" />
-  (property type)
+  - Excel.Interfaces.DocumentTaskCollectionData.items (property type)
+  - Excel.Interfaces.DocumentTaskCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

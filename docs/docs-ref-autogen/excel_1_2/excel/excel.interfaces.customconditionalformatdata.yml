@@ -6,16 +6,7 @@ fullName: Excel.Interfaces.CustomConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `customConditionalFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#custom:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatData#customOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

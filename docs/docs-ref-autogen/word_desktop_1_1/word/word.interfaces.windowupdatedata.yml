@@ -3,22 +3,9 @@ name: Word.Interfaces.WindowUpdateData
 uid: word!Word.Interfaces.WindowUpdateData:interface
 package: word!
 fullName: Word.Interfaces.WindowUpdateData
-summary: >-
-  An interface for updating data on the `Window` object, for use in
-  `window.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#activeWindow:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.WindowUpdateData#next:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.WindowUpdateData#previous:member" />
-  (property type)
-
+summary: An interface for updating data on the `Window` object, for use in `window.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

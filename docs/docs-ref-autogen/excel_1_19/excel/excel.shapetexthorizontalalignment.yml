@@ -10,16 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member"
-  /> (property type)
+  - Excel.Interfaces.TextFrameData.horizontalAlignment (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member" />
-  (property type)
+  - Excel.Interfaces.TextFrameUpdateData.horizontalAlignment (property type)
 
   #### Examples
 

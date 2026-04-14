@@ -6,16 +6,11 @@ fullName: Excel.Interfaces.CellValueConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `cellValueConditionalFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#cellValue:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatData#cellValueOrNullObject:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalFormatData.cellValue (property type)
+  - Excel.Interfaces.ConditionalFormatData.cellValueOrNullObject (property type)
 
 isPreview: false
 isDeprecated: false

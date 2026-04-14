@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `DataBarConditionalFormat` object, for
   use in `dataBarConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBar:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBarOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

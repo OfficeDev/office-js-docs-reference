@@ -4,27 +4,11 @@ uid: excel!Excel.Interfaces.RangeData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeData
 summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#areas:member" /> (property
-  type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WindowData#activeCell:member" /> (property
-  type)
-
-  - <xref uid="excel!Excel.Interfaces.WindowData#visibleRange:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member" />
-  (property type)
+  - Excel.Interfaces.RangeCollectionData.items (property type)
+  - Excel.Interfaces.RangeCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

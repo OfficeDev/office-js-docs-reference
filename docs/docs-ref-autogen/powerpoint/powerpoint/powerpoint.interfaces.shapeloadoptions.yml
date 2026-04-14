@@ -13,24 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.GraphicLoadOptions#shape:member"
-  /> (property type)
+  - PowerPoint.Interfaces.GraphicLoadOptions.shape (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#parentGroup:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeCollectionLoadOptions.parentGroup (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#shape:member" />
-  (property type)
+  - PowerPoint.Interfaces.ShapeGroupLoadOptions.shape (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#parentGroup:member" />
-  (property type)
+  - PowerPoint.Interfaces.ShapeLoadOptions.parentGroup (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#parentGroup:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.parentGroup (property
+  type)
 
 isPreview: false
 isDeprecated: false

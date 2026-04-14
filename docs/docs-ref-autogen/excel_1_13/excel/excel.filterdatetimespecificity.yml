@@ -10,11 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterDatetime#specificity:member" /> (property type)
+  - Excel.FilterDatetime.specificity (property type)
 
   #### Examples
 

@@ -3,25 +3,15 @@ name: Word.Interfaces.SettingData
 uid: word!Word.Interfaces.SettingData:interface
 package: word!
 fullName: Word.Interfaces.SettingData
-summary: >-
-  An interface describing the data returned by calling `setting.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `setting.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.DocumentCreatedData#settings:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#settings:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.SettingCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.SettingCollectionUpdateData#items:member" />
-  (property type)
-
+  - Word.Interfaces.DocumentCreatedData.settings (property type)
+  - Word.Interfaces.DocumentData.settings (property type)
+  - Word.Interfaces.SettingCollectionData.items (property type)
+  - Word.Interfaces.SettingCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -31,10 +21,8 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,10 +34,8 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the value of the setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

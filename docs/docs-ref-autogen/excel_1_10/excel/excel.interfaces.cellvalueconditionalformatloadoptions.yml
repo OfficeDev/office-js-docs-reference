@@ -12,21 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue (property
+  type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValue:member" />
+  -
+  Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject
   (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValueOrNullObject:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalFormatLoadOptions.cellValue (property type)
+
+  - Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject
+  (property type)
 
 isPreview: false
 isDeprecated: false

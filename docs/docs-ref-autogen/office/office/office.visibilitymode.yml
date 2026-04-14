@@ -7,6 +7,7 @@ summary: Visibility mode of the add-in.
 remarks: |-
 
 
+
   #### Used by
 
   - Office.VisibilityModeChangedMessage.visibilityMode (property type)

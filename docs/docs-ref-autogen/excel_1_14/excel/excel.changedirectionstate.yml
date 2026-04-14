@@ -14,9 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.WorksheetChangedEventArgs#changeDirectionState:member" />
-  (property type)
+  - Excel.WorksheetChangedEventArgs.changeDirectionState (property type)
 
 isPreview: false
 isDeprecated: false

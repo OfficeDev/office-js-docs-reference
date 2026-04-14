@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.TableLoadOptions#rows:member" />
-  (property type)
+  - OneNote.Interfaces.TableLoadOptions.rows (property type)
 
 isPreview: false
 isDeprecated: false

@@ -10,18 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#item:member" />
-  (property type)
+  - Word.DocumentExportAsFixedFormat2Options.item (property type)
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#item:member" />
-  (property type)
+  - Word.DocumentExportAsFixedFormat3Options.item (property type)
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#item:member" />
-  (property type)
+  - Word.DocumentExportAsFixedFormatOptions.item (property type)
 
   #### Examples
 

@@ -20,17 +20,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AppointmentCompose.getAttachmentContentAsync (parameter type)
 
   - Office.AppointmentRead.getAttachmentContentAsync (parameter type)
-
-  - Office.LoadedMessageCompose.getAttachmentContentAsync (parameter type)
-
-  - Office.LoadedMessageRead.getAttachmentContentAsync (parameter type)
 
   - Office.MessageCompose.getAttachmentContentAsync (parameter type)
 

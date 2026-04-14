@@ -12,9 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.WorksheetFormulaChangedEventArgs#formulaDetails:member" />
-  (property type)
+  - Excel.WorksheetFormulaChangedEventArgs.formulaDetails (property type)
 
 isPreview: false
 isDeprecated: false

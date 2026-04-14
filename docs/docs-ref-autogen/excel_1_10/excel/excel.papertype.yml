@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#paperSize:member" />
-  (property type)
+  - Excel.Interfaces.PageLayoutData.paperSize (property type)
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member" />
-  (property type)
+  - Excel.Interfaces.PageLayoutUpdateData.paperSize (property type)
 
 isPreview: false
 isDeprecated: false

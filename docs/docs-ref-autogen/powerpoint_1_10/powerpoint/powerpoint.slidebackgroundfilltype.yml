@@ -14,13 +14,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData#type:member" />
-  (property type)
+  - PowerPoint.Interfaces.SlideBackgroundFillData.type (property type)
 
   #### Examples
 

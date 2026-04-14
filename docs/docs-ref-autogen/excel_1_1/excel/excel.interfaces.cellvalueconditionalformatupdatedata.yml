@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `CellValueConditionalFormat` object, for
   use in `cellValueConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#cellValue:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#cellValueOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

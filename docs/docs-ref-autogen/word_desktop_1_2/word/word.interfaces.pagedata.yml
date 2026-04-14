@@ -4,23 +4,15 @@ uid: word!Word.Interfaces.PageData:interface
 package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.PageCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.PageCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.PaneData#pages:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.PaneData#pagesEnclosingViewport:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#pages:member" /> (property type)
-
+  - Word.Interfaces.PageCollectionData.items (property type)
+  - Word.Interfaces.PageCollectionUpdateData.items (property type)
+  - Word.Interfaces.PaneData.pages (property type)
+  - Word.Interfaces.PaneData.pagesEnclosingViewport (property type)
+  - Word.Interfaces.RangeData.pages (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,13 +21,9 @@ properties:
     uid: word!Word.Interfaces.PageData#height:member
     package: word!
     fullName: height
-    summary: >-
-      Gets the height, in points, of the paper defined in the Page Setup dialog
-      box.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the height, in points, of the paper defined in the Page Setup dialog box.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,13 +34,9 @@ properties:
     uid: word!Word.Interfaces.PageData#index:member
     package: word!
     fullName: index
-    summary: >-
-      Gets the index of the page. The page index is 1-based and independent of
-      the user's custom page numbering.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,13 +47,9 @@ properties:
     uid: word!Word.Interfaces.PageData#width:member
     package: word!
     fullName: width
-    summary: >-
-      Gets the width, in points, of the paper defined in the Page Setup dialog
-      box.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the width, in points, of the paper defined in the Page Setup dialog box.
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

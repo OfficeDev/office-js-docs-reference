@@ -6,17 +6,11 @@ fullName: PowerPoint.Interfaces.TableRowData
 summary: >-
   An interface describing the data returned by calling `tableRow.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableRowCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableRowCollectionUpdateData#items:member"
-  /> (property type)
+  - PowerPoint.Interfaces.TableRowCollectionData.items (property type)
+  - PowerPoint.Interfaces.TableRowCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

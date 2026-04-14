@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomPropertyData#type:member" /> (property
-  type)
+  - Word.Interfaces.CustomPropertyData.type (property type)
 
   #### Examples
 

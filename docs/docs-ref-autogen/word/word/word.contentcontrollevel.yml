@@ -12,22 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#level:member"
-  /> (property type)
+  - Word.Interfaces.BuildingBlockGalleryContentControlData.level (property type)
 
-  - <xref uid="word!Word.Interfaces.DatePickerContentControlData#level:member"
-  /> (property type)
+  - Word.Interfaces.DatePickerContentControlData.level (property type)
 
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#level:member" />
-  (property type)
+  - Word.Interfaces.GroupContentControlData.level (property type)
 
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#level:member" />
-  (property type)
+  - Word.Interfaces.PictureContentControlData.level (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#level:member" />
-  (property type)
+  - Word.Interfaces.RepeatingSectionContentControlData.level (property type)
 
 isPreview: false
 isDeprecated: false

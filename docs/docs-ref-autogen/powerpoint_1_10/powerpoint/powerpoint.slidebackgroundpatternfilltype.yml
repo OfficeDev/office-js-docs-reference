@@ -14,21 +14,15 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillData#pattern:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideBackgroundPatternFillData.pattern (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#pattern:member"
-  /> (property type)
+  - PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData.pattern (property
+  type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.SlideBackgroundPatternFillOptions#pattern:member"
-  /> (property type)
+  - PowerPoint.SlideBackgroundPatternFillOptions.pattern (property type)
 
   #### Examples
 

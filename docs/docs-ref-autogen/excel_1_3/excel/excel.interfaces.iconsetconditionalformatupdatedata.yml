@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `IconSetConditionalFormat` object, for
   use in `iconSetConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSet:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSetOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

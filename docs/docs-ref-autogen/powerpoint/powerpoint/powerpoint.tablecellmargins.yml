@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCellProperties#margins:member" />
-  (property type)
+  - PowerPoint.TableCellProperties.margins (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,15 +6,11 @@ fullName: Word.Interfaces.NoteItemData
 summary: >-
   An interface describing the data returned by calling `noteItem.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.NoteItemCollectionData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.NoteItemCollectionUpdateData#items:member"
-  /> (property type)
+  - Word.Interfaces.NoteItemCollectionData.items (property type)
+  - Word.Interfaces.NoteItemCollectionUpdateData.items (property type)
 
 isPreview: false
 isDeprecated: false

@@ -3,11 +3,9 @@ name: Word.Interfaces.ConditionalStyleUpdateData
 uid: word!Word.Interfaces.ConditionalStyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ConditionalStyleUpdateData
-summary: >-
-  An interface for updating data on the `ConditionalStyle` object, for use in
-  `conditionalStyle.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ConditionalStyle` object, for use in `conditionalStyle.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleUpdateData#bottomPadding:member
     package: word!
     fullName: bottomPadding
-    summary: >-
-      Specifies the amount of space (in points) to add below the contents of a
-      single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add below the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleUpdateData#leftPadding:member
     package: word!
     fullName: leftPadding
-    summary: >-
-      Specifies the amount of space (in points) to add to the left of the
-      contents of a single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add to the left of the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleUpdateData#rightPadding:member
     package: word!
     fullName: rightPadding
-    summary: >-
-      Specifies the amount of space (in points) to add to the right of the
-      contents of a single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add to the right of the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleUpdateData#topPadding:member
     package: word!
     fullName: topPadding
-    summary: >-
-      Specifies the amount of space (in points) to add above the contents of a
-      single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add above the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

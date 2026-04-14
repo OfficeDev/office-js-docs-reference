@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member"
-  /> (property type)
+  - Excel.Interfaces.RangeFormatLoadOptions.protection (property type)
 
 isPreview: false
 isDeprecated: false

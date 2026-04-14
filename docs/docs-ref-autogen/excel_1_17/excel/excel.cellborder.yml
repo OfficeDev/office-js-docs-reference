@@ -15,30 +15,24 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellBorderCollection#bottom:member" /> (property
-  type)
+  - Excel.CellBorderCollection.bottom (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#diagonalDown:member" />
-  (property type)
+  - Excel.CellBorderCollection.diagonalDown (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#diagonalUp:member" /> (property
-  type)
+  - Excel.CellBorderCollection.diagonalUp (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#horizontal:member" /> (property
-  type)
+  - Excel.CellBorderCollection.horizontal (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#left:member" /> (property type)
+  - Excel.CellBorderCollection.left (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#right:member" /> (property type)
+  - Excel.CellBorderCollection.right (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#top:member" /> (property type)
+  - Excel.CellBorderCollection.top (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#vertical:member" /> (property
-  type)
+  - Excel.CellBorderCollection.vertical (property type)
 
   #### Examples
 

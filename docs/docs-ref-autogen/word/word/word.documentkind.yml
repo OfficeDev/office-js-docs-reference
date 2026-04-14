@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#kind:member" /> (property type)
+  - Word.Interfaces.DocumentData.kind (property type)
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#kind:member" /> (property
-  type)
+  - Word.Interfaces.DocumentUpdateData.kind (property type)
 
 isPreview: false
 isDeprecated: false

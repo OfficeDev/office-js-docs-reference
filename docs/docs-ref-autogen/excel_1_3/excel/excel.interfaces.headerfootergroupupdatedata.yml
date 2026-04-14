@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
 summary: >-
   An interface for updating data on the `HeaderFooterGroup` object, for use in
   `headerFooterGroup.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

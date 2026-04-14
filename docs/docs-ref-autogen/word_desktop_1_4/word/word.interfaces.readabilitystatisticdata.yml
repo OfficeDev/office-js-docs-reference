@@ -3,21 +3,13 @@ name: Word.Interfaces.ReadabilityStatisticData
 uid: word!Word.Interfaces.ReadabilityStatisticData:interface
 package: word!
 fullName: Word.Interfaces.ReadabilityStatisticData
-summary: >-
-  An interface describing the data returned by calling
-  `readabilityStatistic.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `readabilityStatistic.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.ReadabilityStatisticCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ReadabilityStatisticCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.ReadabilityStatisticCollectionData.items (property type)
+  - Word.Interfaces.ReadabilityStatisticCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,10 +19,8 @@ properties:
     package: word!
     fullName: name
     summary: Returns the name of the readability statistic.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,10 +32,8 @@ properties:
     package: word!
     fullName: value
     summary: Returns the value of the grammar statistic.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

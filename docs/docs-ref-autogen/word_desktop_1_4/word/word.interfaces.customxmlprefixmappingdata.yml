@@ -3,24 +3,14 @@ name: Word.Interfaces.CustomXmlPrefixMappingData
 uid: word!Word.Interfaces.CustomXmlPrefixMappingData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPrefixMapping.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `customXmlPrefixMapping.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#namespaceManager:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionData#items:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.CustomXmlPartData.namespaceManager (property type)
+  - Word.Interfaces.CustomXmlPrefixMappingCollectionData.items (property type)
+  - Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,13 +19,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlPrefixMappingData#namespaceUri:member
     package: word!
     fullName: namespaceUri
-    summary: >-
-      Gets the unique address identifier for the namespace of the
-      `CustomXmlPrefixMapping` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +33,8 @@ properties:
     package: word!
     fullName: prefix
     summary: Gets the prefix for the `CustomXmlPrefixMapping` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

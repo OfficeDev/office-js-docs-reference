@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeBorderCollection`
   object, for use in `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#borders:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

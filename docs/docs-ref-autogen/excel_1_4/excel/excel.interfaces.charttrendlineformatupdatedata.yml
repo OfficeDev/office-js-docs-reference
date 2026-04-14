@@ -6,12 +6,7 @@ fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartTrendlineFormat` object, for use
   in `chartTrendlineFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.DocumentExportAsFixedFormat2Options#createBookmarks:member" />
-  (property type)
+  - Word.DocumentExportAsFixedFormat2Options.createBookmarks (property type)
 
-  - <xref
-  uid="word!Word.DocumentExportAsFixedFormat3Options#createBookmarks:member" />
-  (property type)
+  - Word.DocumentExportAsFixedFormat3Options.createBookmarks (property type)
 
-  - <xref
-  uid="word!Word.DocumentExportAsFixedFormatOptions#createBookmarks:member" />
-  (property type)
+  - Word.DocumentExportAsFixedFormatOptions.createBookmarks (property type)
 
 isPreview: false
 isDeprecated: false

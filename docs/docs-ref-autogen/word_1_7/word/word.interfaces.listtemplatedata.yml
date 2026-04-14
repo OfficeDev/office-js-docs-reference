@@ -3,29 +3,13 @@ name: Word.Interfaces.ListTemplateData
 uid: word!Word.Interfaces.ListTemplateData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateData
-summary: >-
-  An interface describing the data returned by calling
-  `listTemplate.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `listTemplate.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.DocumentData#listTemplates:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ListFormatData#listTemplate:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.ListTemplateCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.StyleData#listTemplate:member" /> (property
-  type)
-
+  - Word.Interfaces.ListTemplateCollectionData.items (property type)
+  - Word.Interfaces.ListTemplateCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

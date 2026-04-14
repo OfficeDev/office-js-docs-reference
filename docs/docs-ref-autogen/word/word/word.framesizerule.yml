@@ -14,17 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FrameData#heightRule:member" /> (property
-  type)
+  - Word.Interfaces.FrameData.heightRule (property type)
 
-  - <xref uid="word!Word.Interfaces.FrameData#widthRule:member" /> (property
-  type)
+  - Word.Interfaces.FrameData.widthRule (property type)
 
-  - <xref uid="word!Word.Interfaces.FrameUpdateData#heightRule:member" />
-  (property type)
+  - Word.Interfaces.FrameUpdateData.heightRule (property type)
 
-  - <xref uid="word!Word.Interfaces.FrameUpdateData#widthRule:member" />
-  (property type)
+  - Word.Interfaces.FrameUpdateData.widthRule (property type)
 
 isPreview: false
 isDeprecated: false

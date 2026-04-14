@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionInsertSymbolOptions#bias:member" /> (property
-  type)
+  - Word.SelectionInsertSymbolOptions.bias (property type)
 
   #### Examples
 

@@ -3,19 +3,9 @@ name: Word.Interfaces.BibliographyData
 uid: word!Word.Interfaces.BibliographyData:interface
 package: word!
 fullName: Word.Interfaces.BibliographyData
-summary: >-
-  An interface describing the data returned by calling
-  `bibliography.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.ApplicationData#bibliography:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#bibliography:member" />
-  (property type)
-
+summary: An interface describing the data returned by calling `bibliography.toJSON()`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

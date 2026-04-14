@@ -3,21 +3,13 @@ name: Word.Interfaces.TableOfAuthoritiesData
 uid: word!Word.Interfaces.TableOfAuthoritiesData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfAuthorities.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `tableOfAuthorities.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesCollectionData#items:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesCollectionUpdateData#items:member"
-  /> (property type)
-
+  - Word.Interfaces.TableOfAuthoritiesCollectionData.items (property type)
+  - Word.Interfaces.TableOfAuthoritiesCollectionUpdateData.items (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

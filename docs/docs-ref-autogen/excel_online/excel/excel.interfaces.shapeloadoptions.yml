@@ -17,35 +17,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member" />
-  (property type)
+  - Excel.Interfaces.GeometricShapeLoadOptions.shape (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member"
-  /> (property type)
+  - Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ImageLoadOptions#shape:member" />
-  (property type)
+  - Excel.Interfaces.ImageLoadOptions.shape (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member" />
-  (property type)
+  - Excel.Interfaces.LineLoadOptions.beginConnectedShape (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member"
-  /> (property type)
+  - Excel.Interfaces.LineLoadOptions.endConnectedShape (property type)
 
-  - <xref uid="excel!Excel.Interfaces.LineLoadOptions#shape:member" /> (property
-  type)
+  - Excel.Interfaces.LineLoadOptions.shape (property type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#parentGroup:member" />
-  (property type)
+  - Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member" />
-  (property type)
+  - Excel.Interfaces.ShapeGroupLoadOptions.shape (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member" />
-  (property type)
+  - Excel.Interfaces.ShapeLoadOptions.parentGroup (property type)
 
 isPreview: false
 isDeprecated: false

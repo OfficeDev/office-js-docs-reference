@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.IndexAddOptions#headingSeparator:member" /> (property
-  type)
+  - Word.IndexAddOptions.headingSeparator (property type)
 
-  - <xref uid="word!Word.Interfaces.IndexData#headingSeparator:member" />
-  (property type)
+  - Word.Interfaces.IndexData.headingSeparator (property type)
 
 isPreview: false
 isDeprecated: false

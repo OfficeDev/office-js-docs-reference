@@ -6,15 +6,7 @@ fullName: Excel.Interfaces.AutoFilterData
 summary: >-
   An interface describing the data returned by calling `autoFilter.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="excel!Excel.Interfaces.TableData#autoFilter:member" /> (property
-  type)
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#autoFilter:member" />
-  (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

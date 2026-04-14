@@ -3,36 +3,16 @@ name: Word.Interfaces.XmlMappingUpdateData
 uid: word!Word.Interfaces.XmlMappingUpdateData:interface
 package: word!
 fullName: Word.Interfaces.XmlMappingUpdateData
-summary: >-
-  An interface for updating data on the `XmlMapping` object, for use in
-  `xmlMapping.set({ ... })`<!-- -->.
-remarks: >-
+summary: An interface for updating data on the `XmlMapping` object, for use in `xmlMapping.set({ ... })`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#xmlMapping:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#xmlMapping:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#xmlMapping:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.GroupContentControlUpdateData#xmlMapping:member" />
-  (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#xmlMapping:member"
-  /> (property type)
-
-  - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#xmlMapping:member"
-  /> (property type)
-
+  - Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.xmlMapping (property type)
+  - Word.Interfaces.ContentControlUpdateData.xmlMapping (property type)
+  - Word.Interfaces.DatePickerContentControlUpdateData.xmlMapping (property type)
+  - Word.Interfaces.GroupContentControlUpdateData.xmlMapping (property type)
+  - Word.Interfaces.PictureContentControlUpdateData.xmlMapping (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -41,13 +21,9 @@ properties:
     uid: word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member
     package: word!
     fullName: customXmlNode
-    summary: >-
-      Returns a `CustomXmlNode` object that represents the custom XML node in
-      the data store that the content control in the document maps to.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,13 +34,9 @@ properties:
     uid: word!Word.Interfaces.XmlMappingUpdateData#customXmlPart:member
     package: word!
     fullName: customXmlPart
-    summary: >-
-      Returns a `CustomXmlPart` object that represents the custom XML part to
-      which the content control in the document maps.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

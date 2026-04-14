@@ -20,13 +20,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.Mailbox.displayNewAppointmentForm (parameter type)
-
-  - Office.Mailbox.displayNewAppointmentFormAsync (parameter type)
 
   #### Examples
 

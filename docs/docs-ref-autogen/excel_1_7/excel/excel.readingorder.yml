@@ -10,24 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#readingOrder:member" />
-  (property type)
+  - Excel.Interfaces.StyleData.readingOrder (property type)
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#readingOrder:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#readingOrder:member"
-  /> (property type)
-
-  - <xref uid="excel!Excel.Interfaces.StyleData#readingOrder:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member" />
-  (property type)
+  - Excel.Interfaces.StyleUpdateData.readingOrder (property type)
 
   #### Examples
 

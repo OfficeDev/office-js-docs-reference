@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartErrorBarsFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartErrorBarsFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsData#format:member" />
-  (property type)
+  - Excel.Interfaces.ChartErrorBarsData.format (property type)
 
 isPreview: false
 isDeprecated: false

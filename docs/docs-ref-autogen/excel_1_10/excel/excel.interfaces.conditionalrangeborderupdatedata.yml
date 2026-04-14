@@ -10,21 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom (property
+  type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left (property
+  type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right (property
+  type)
 
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member"
-  /> (property type)
+  - Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top (property
+  type)
 
 isPreview: false
 isDeprecated: false

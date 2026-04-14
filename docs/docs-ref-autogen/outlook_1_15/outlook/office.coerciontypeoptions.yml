@@ -7,6 +7,7 @@ summary: Provides an option for the data format.
 remarks: >-
 
 
+
   #### Used by
 
 
@@ -23,8 +24,6 @@ remarks: >-
   - Office.Body.setSelectedDataAsync (parameter type)
 
   - Office.Body.setSignatureAsync (parameter type)
-
-  - Office.DisplayedBody.setAsync (parameter type)
 
   - Office.MessageCompose.setSelectedDataAsync (parameter type)
 

@@ -22,29 +22,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AppointmentRead.displayReplyAllForm (parameter type)
 
-  - Office.AppointmentRead.displayReplyAllFormAsync (parameter type)
-
   - Office.AppointmentRead.displayReplyForm (parameter type)
-
-  - Office.AppointmentRead.displayReplyFormAsync (parameter type)
-
-  - Office.LoadedMessageRead.displayReplyAllFormAsync (parameter type)
-
-  - Office.LoadedMessageRead.displayReplyFormAsync (parameter type)
 
   - Office.MessageRead.displayReplyAllForm (parameter type)
 
-  - Office.MessageRead.displayReplyAllFormAsync (parameter type)
-
   - Office.MessageRead.displayReplyForm (parameter type)
-
-  - Office.MessageRead.displayReplyFormAsync (parameter type)
 
   #### Examples
 

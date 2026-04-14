@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `TopBottomConditionalFormat` object, for
   use in `topBottomConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#topBottom:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#topBottomOrNullObject:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

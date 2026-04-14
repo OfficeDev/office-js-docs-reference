@@ -12,19 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#beginArrowheadLength:member"
-  /> (property type)
+  - Word.Interfaces.LineFormatData.beginArrowheadLength (property type)
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#endArrowheadLength:member" />
-  (property type)
+  - Word.Interfaces.LineFormatData.endArrowheadLength (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadLength:member" />
-  (property type)
+  - Word.Interfaces.LineFormatUpdateData.beginArrowheadLength (property type)
 
-  - <xref
-  uid="word!Word.Interfaces.LineFormatUpdateData#endArrowheadLength:member" />
-  (property type)
+  - Word.Interfaces.LineFormatUpdateData.endArrowheadLength (property type)
 
 isPreview: false
 isDeprecated: false

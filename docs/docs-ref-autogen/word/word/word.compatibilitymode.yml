@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#compatibilityMode:member" />
-  (property type)
+  - Word.Interfaces.DocumentData.compatibilityMode (property type)
 
 isPreview: false
 isDeprecated: false

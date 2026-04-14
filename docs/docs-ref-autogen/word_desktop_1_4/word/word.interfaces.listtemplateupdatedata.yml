@@ -3,19 +3,13 @@ name: Word.Interfaces.ListTemplateUpdateData
 uid: word!Word.Interfaces.ListTemplateUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateUpdateData
-summary: >-
-  An interface for updating data on the `ListTemplate` object, for use in
-  `listTemplate.set({ ... })`<!-- -->.
-remarks: >-
+summary: An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`<!-- -->.
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ListFormatUpdateData#listTemplate:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#listTemplate:member" />
-  (property type)
-
+  - Word.Interfaces.ListFormatUpdateData.listTemplate (property type)
+  - Word.Interfaces.StyleUpdateData.listTemplate (property type)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,10 +19,8 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the list template.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,10 +32,8 @@ properties:
     package: word!
     fullName: outlineNumbered
     summary: Specifies whether the list template is outline numbered.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

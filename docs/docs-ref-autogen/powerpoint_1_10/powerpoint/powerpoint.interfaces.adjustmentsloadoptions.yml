@@ -13,17 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#adjustments:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeCollectionLoadOptions.adjustments (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#adjustments:member" />
-  (property type)
+  - PowerPoint.Interfaces.ShapeLoadOptions.adjustments (property type)
 
-  - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#adjustments:member"
-  /> (property type)
+  - PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.adjustments (property
+  type)
 
 isPreview: false
 isDeprecated: false

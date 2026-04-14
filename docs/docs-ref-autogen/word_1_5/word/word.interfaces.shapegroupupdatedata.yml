@@ -3,16 +3,9 @@ name: Word.Interfaces.ShapeGroupUpdateData
 uid: word!Word.Interfaces.ShapeGroupUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeGroupUpdateData
-summary: >-
-  An interface for updating data on the `ShapeGroup` object, for use in
-  `shapeGroup.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#shapeGroup:member" />
-  (property type)
-
+summary: An interface for updating data on the `ShapeGroup` object, for use in `shapeGroup.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

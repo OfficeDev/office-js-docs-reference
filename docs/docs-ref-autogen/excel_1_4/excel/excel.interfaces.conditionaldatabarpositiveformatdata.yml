@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatData
 summary: >-
   An interface describing the data returned by calling
   `conditionalDataBarPositiveFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatData#positiveFormat:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

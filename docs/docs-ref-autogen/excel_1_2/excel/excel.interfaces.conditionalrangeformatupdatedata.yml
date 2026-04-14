@@ -6,29 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeFormat` object, for use
   in `conditionalRangeFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref
-  uid="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#format:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#format:member"
-  /> (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member" />
-  (property type)
-
-  - <xref
-  uid="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#format:member"
-  /> (property type)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

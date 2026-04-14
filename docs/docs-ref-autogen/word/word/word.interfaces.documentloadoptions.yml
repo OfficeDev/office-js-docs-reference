@@ -15,12 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member"
-  /> (property type)
+  - Word.Interfaces.XmlNodeCollectionLoadOptions.ownerDocument (property type)
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member" />
-  (property type)
+  - Word.Interfaces.XmlNodeLoadOptions.ownerDocument (property type)
 
 isPreview: false
 isDeprecated: false

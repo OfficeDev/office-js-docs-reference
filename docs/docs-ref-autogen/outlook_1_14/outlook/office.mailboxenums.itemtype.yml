@@ -11,17 +11,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - Office.AppointmentCompose.itemType (property type)
 
   - Office.AppointmentRead.itemType (property type)
-
-  - Office.LoadedMessageCompose.itemType (property type)
-
-  - Office.LoadedMessageRead.itemType (property type)
 
   - Office.MessageCompose.itemType (property type)
 

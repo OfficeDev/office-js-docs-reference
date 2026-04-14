@@ -3,19 +3,9 @@ name: Word.Interfaces.BibliographyUpdateData
 uid: word!Word.Interfaces.BibliographyUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BibliographyUpdateData
-summary: >-
-  An interface for updating data on the `Bibliography` object, for use in
-  `bibliography.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - <xref uid="word!Word.Interfaces.ApplicationUpdateData#bibliography:member"
-  /> (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#bibliography:member" />
-  (property type)
-
+summary: An interface for updating data on the `Bibliography` object, for use in `bibliography.set({ ... })`<!-- -->.
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
