@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartGridlinesFormat` object, for use
   in `chartGridlinesFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartGridlinesUpdateData.format (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartGridlinesUpdateData#format:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

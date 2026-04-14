@@ -7,14 +7,20 @@ summary: >-
   Represents a single CustomXMLPart in an
   [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
   collection.
-remarks: |-
+remarks: >-
   **Applications**: Word
+
 
   #### Used by
 
-  - Office.CustomXmlParts.addAsync (parameter type)
-  - Office.CustomXmlParts.getByIdAsync (parameter type)
-  - Office.CustomXmlParts.getByNamespaceAsync (parameter type)
+
+  - <xref uid="office!Office.CustomXmlParts#addAsync:member" /> (parameter type)
+
+  - <xref uid="office!Office.CustomXmlParts#getByIdAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.CustomXmlParts#getByNamespaceAsync:member" />
+  (parameter type)
 
 isPreview: false
 isDeprecated: false

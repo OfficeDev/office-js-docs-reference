@@ -19,13 +19,15 @@ remarks: >-
   #### Used by
 
 
-  - Office.MeetingSuggestion.attendees (property type)
+  - <xref uid="outlook!Office.MeetingSuggestion#attendees:member" /> (property
+  type)
 
-  - Office.Recipients.addAsync (parameter type)
+  - <xref uid="outlook!Office.Recipients#addAsync:member" /> (parameter type)
 
-  - Office.Recipients.setAsync (parameter type)
+  - <xref uid="outlook!Office.Recipients#setAsync:member" /> (parameter type)
 
-  - Office.TaskSuggestion.assignees (property type)
+  - <xref uid="outlook!Office.TaskSuggestion#assignees:member" /> (property
+  type)
 
   #### Examples
 

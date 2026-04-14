@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.SelectionData.orientation (property type)
+  - <xref uid="word!Word.Interfaces.SelectionData#orientation:member" />
+  (property type)
 
-  - Word.Interfaces.SelectionUpdateData.orientation (property type)
+  - <xref uid="word!Word.Interfaces.SelectionUpdateData#orientation:member" />
+  (property type)
+
+  - <xref uid="word!Word.Selection#orientation:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

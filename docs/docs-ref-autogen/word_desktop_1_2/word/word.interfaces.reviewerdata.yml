@@ -6,11 +6,15 @@ fullName: Word.Interfaces.ReviewerData
 summary: >-
   An interface describing the data returned by calling `reviewer.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.ReviewerCollectionData.items (property type)
-  - Word.Interfaces.ReviewerCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.ReviewerCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ReviewerCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ThreeDimensionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `threeDimensionalFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.FontData.threeDimensionalFormat (property type)
+
+  - <xref uid="word!Word.Interfaces.FontData#threeDimensionalFormat:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

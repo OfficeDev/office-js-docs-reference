@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="onenote!OneNote.Notebook#sections:member" /> (property type)
+
+  - <xref uid="onenote!OneNote.SectionGroup#sections:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

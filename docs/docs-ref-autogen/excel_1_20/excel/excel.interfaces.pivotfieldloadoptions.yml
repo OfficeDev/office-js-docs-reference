@@ -12,10 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#field:member"
+  /> (property type)
 
-  - Excel.Interfaces.DataPivotHierarchyLoadOptions.field (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

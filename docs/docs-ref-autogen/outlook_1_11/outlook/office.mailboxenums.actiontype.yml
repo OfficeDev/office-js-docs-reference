@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.NotificationMessageAction.actionType (property type)
+  - <xref uid="outlook!Office.NotificationMessageAction#actionType:member" />
+  (property type)
 
   #### Examples
 

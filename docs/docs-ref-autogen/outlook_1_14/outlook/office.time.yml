@@ -24,9 +24,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.end (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#end:member" /> (property type)
 
-  - Office.AppointmentCompose.start (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#start:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

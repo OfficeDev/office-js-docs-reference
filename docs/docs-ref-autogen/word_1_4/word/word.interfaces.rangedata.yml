@@ -4,14 +4,24 @@ uid: word!Word.Interfaces.RangeData:interface
 package: word!
 fullName: Word.Interfaces.RangeData
 summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.FieldData.result (property type)
-  - Word.Interfaces.RangeCollectionData.items (property type)
-  - Word.Interfaces.RangeCollectionUpdateData.items (property type)
-  - Word.Interfaces.RangeScopedCollectionData.items (property type)
-  - Word.Interfaces.RangeScopedCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.FieldData#result:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

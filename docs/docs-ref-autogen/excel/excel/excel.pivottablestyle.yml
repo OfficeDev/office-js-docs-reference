@@ -10,6 +10,15 @@ remarks: >-
   \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.PivotLayout#pivotStyle:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotTableStyleCollection#items:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: class

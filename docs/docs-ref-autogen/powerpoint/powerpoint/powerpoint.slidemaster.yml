@@ -10,6 +10,17 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Slide#slideMaster:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideMasterCollection#items:member" />
+  (property type)
+
   #### Examples
 
 

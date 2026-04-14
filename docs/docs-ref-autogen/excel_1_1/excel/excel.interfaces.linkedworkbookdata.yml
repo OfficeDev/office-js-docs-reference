@@ -6,11 +6,16 @@ fullName: Excel.Interfaces.LinkedWorkbookData
 summary: >-
   An interface describing the data returned by calling
   `linkedWorkbook.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.LinkedWorkbookCollectionData.items (property type)
-  - Excel.Interfaces.LinkedWorkbookCollectionUpdateData.items (property type)
+
+  - <xref uid="excel!Excel.Interfaces.LinkedWorkbookCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

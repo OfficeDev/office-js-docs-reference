@@ -14,9 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartSeriesData.gradientStyle (property type)
+  - <xref uid="excel!Excel.ChartSeries#gradientStyle:member" /> (property type)
 
-  - Excel.Interfaces.ChartSeriesUpdateData.gradientStyle (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#gradientStyle:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientStyle:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

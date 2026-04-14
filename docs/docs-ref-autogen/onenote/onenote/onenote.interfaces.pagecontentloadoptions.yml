@@ -14,11 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Interfaces.FloatingInkLoadOptions.pageContent (property type)
+  - <xref
+  uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member" />
+  (property type)
 
-  - OneNote.Interfaces.ImageLoadOptions.pageContent (property type)
+  - <xref uid="onenote!OneNote.Interfaces.ImageLoadOptions#pageContent:member"
+  /> (property type)
 
-  - OneNote.Interfaces.OutlineLoadOptions.pageContent (property type)
+  - <xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

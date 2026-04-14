@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartPlotAreaData.position (property type)
+  - <xref uid="excel!Excel.ChartPlotArea#position:member" /> (property type)
 
-  - Excel.Interfaces.ChartPlotAreaUpdateData.position (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaData#position:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData#position:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

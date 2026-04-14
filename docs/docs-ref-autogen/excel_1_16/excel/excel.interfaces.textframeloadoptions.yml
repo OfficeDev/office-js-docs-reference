@@ -12,11 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#textFrame:member"
+  /> (property type)
 
-  - Excel.Interfaces.ShapeCollectionLoadOptions.textFrame (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#textFrame:member" />
+  (property type)
 
-  - Excel.Interfaces.ShapeLoadOptions.textFrame (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

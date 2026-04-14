@@ -6,10 +6,12 @@ fullName: Visio.Interfaces.ApplicationUpdateData
 summary: >-
   An interface for updating data on the Application object, for use in
   `application.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Visio.Interfaces.DocumentUpdateData.application (property type)
+
+  - <xref uid="visio!Visio.Interfaces.DocumentUpdateData#application:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

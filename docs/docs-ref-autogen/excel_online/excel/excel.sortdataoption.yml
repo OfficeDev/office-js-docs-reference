@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SortField.dataOption (property type)
+  - <xref uid="excel!Excel.SortField#dataOption:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,18 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.FontProperties.underline (property type)
+  - <xref uid="powerpoint!PowerPoint.FontProperties#underline:member" />
+  (property type)
 
-  - PowerPoint.Interfaces.ShapeFontData.underline (property type)
+  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontData#underline:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.ShapeFontUpdateData.underline (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeFont#underline:member" /> (property
+  type)
 
   #### Examples
 

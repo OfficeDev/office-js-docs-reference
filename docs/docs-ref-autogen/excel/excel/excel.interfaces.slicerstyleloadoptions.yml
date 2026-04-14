@@ -14,9 +14,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.SlicerCollectionLoadOptions.slicerStyle (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member" />
+  (property type)
 
-  - Excel.Interfaces.SlicerLoadOptions.slicerStyle (property type)
+  - <xref uid="excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

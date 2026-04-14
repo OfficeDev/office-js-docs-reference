@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ImageData.format (property type)
+  - <xref uid="excel!Excel.Image#format:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ImageData#format:member" /> (property
+  type)
 
   #### Examples
 

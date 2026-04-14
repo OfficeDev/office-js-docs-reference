@@ -23,11 +23,14 @@ remarks: >-
   #### Used by
 
 
-  - Office.EnhancedLocation.addAsync (parameter type)
+  - <xref uid="outlook!Office.EnhancedLocation#addAsync:member" /> (parameter
+  type)
 
-  - Office.EnhancedLocation.removeAsync (parameter type)
+  - <xref uid="outlook!Office.EnhancedLocation#removeAsync:member" /> (parameter
+  type)
 
-  - Office.LocationDetails.locationIdentifier (property type)
+  - <xref uid="outlook!Office.LocationDetails#locationIdentifier:member" />
+  (property type)
 
   #### Examples
 

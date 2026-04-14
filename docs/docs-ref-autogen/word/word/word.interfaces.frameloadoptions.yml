@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.StyleCollectionLoadOptions.frame (property type)
+  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#frame:member" />
+  (property type)
 
-  - Word.Interfaces.StyleLoadOptions.frame (property type)
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#frame:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

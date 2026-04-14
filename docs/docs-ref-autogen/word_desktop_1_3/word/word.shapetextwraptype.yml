@@ -17,9 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ShapeTextWrapData.type (property type)
+  - <xref uid="word!Word.Interfaces.ShapeTextWrapData#type:member" /> (property
+  type)
 
-  - Word.Interfaces.ShapeTextWrapUpdateData.type (property type)
+  - <xref uid="word!Word.Interfaces.ShapeTextWrapUpdateData#type:member" />
+  (property type)
+
+  - <xref uid="word!Word.ShapeTextWrap#type:member" /> (property type)
 
   #### Examples
 

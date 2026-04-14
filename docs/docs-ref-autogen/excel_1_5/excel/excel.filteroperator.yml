@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.FilterCriteria.operator (property type)
+  - <xref uid="excel!Excel.FilterCriteria#operator:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -8,6 +8,15 @@ remarks: >-
   \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.ConditionalFormat#custom:member" /> (property type)
+
+  - <xref uid="excel!Excel.ConditionalFormat#customOrNullObject:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

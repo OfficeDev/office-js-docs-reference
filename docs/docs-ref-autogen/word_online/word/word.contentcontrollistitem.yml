@@ -9,6 +9,14 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.ContentControlListItemCollection#items:member" />
+  (property type)
+
   #### Examples
 
 

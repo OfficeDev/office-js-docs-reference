@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BindingDataChangedEventArgs.binding (property type)
+  - <xref uid="excel!Excel.BindingCollection#items:member" /> (property type)
 
-  - Excel.BindingSelectionChangedEventArgs.binding (property type)
+  - <xref uid="excel!Excel.BindingDataChangedEventArgs#binding:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.BindingSelectionChangedEventArgs#binding:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

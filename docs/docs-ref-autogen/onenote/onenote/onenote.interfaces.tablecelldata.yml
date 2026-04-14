@@ -6,12 +6,19 @@ fullName: OneNote.Interfaces.TableCellData
 summary: >-
   An interface describing the data returned by calling `tableCell.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - OneNote.Interfaces.TableCellCollectionData.items (property type)
-  - OneNote.Interfaces.TableCellCollectionUpdateData.items (property type)
-  - OneNote.Interfaces.TableRowData.cells (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.TableCellCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.TableRowData#cells:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

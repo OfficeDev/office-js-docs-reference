@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupData.sectionStart (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#sectionStart:member" />
+  (property type)
 
-  - Word.Interfaces.PageSetupUpdateData.sectionStart (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#sectionStart:member" />
+  (property type)
+
+  - <xref uid="word!Word.PageSetup#sectionStart:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

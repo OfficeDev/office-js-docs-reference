@@ -13,7 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Office.RecipientsChangedEventArgs.changedRecipientFields (property type)
+  - <xref
+  uid="outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member"
+  /> (property type)
 
   #### Examples
 

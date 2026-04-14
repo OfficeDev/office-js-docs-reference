@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PivotTableCollectionLoadOptions.layout (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member" />
+  (property type)
 
-  - Excel.Interfaces.PivotTableLoadOptions.layout (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

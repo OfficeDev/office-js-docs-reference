@@ -12,6 +12,21 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Canvas#shape:member" /> (property type)
+
+  - <xref uid="word!Word.Shape#parentCanvas:member" /> (property type)
+
+  - <xref uid="word!Word.Shape#parentGroup:member" /> (property type)
+
+  - <xref uid="word!Word.ShapeCollection#items:member" /> (property type)
+
+  - <xref uid="word!Word.ShapeGroup#shape:member" /> (property type)
+
   #### Examples
 
 

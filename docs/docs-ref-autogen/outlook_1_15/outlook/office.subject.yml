@@ -24,11 +24,13 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.subject (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#subject:member" /> (property
+  type)
 
-  - Office.LoadedMessageCompose.subject (property type)
+  - <xref uid="outlook!Office.LoadedMessageCompose#subject:member" /> (property
+  type)
 
-  - Office.MessageCompose.subject (property type)
+  - <xref uid="outlook!Office.MessageCompose#subject:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,12 +6,18 @@ fullName: Excel.Interfaces.BindingData
 summary: >-
   An interface describing the data returned by calling `binding.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.BindingCollectionData.items (property type)
-  - Excel.Interfaces.BindingCollectionUpdateData.items (property type)
-  - Excel.Interfaces.WorkbookData.bindings (property type)
+
+  - <xref uid="excel!Excel.Interfaces.BindingCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.BindingCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#bindings:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

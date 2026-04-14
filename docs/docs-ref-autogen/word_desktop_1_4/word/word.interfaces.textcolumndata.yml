@@ -6,12 +6,18 @@ fullName: Word.Interfaces.TextColumnData
 summary: >-
   An interface describing the data returned by calling `textColumn.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.PageSetupData.textColumns (property type)
-  - Word.Interfaces.TextColumnCollectionData.items (property type)
-  - Word.Interfaces.TextColumnCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.PageSetupData#textColumns:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TextColumnCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TextColumnCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

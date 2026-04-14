@@ -10,17 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BuildingBlockGalleryContentControlData.placeholderText
+  - <xref
+  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#placeholderText:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.DatePickerContentControlData#placeholderText:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.GroupContentControlData#placeholderText:member" />
   (property type)
 
-  - Word.Interfaces.DatePickerContentControlData.placeholderText (property type)
+  - <xref
+  uid="word!Word.Interfaces.PictureContentControlData#placeholderText:member" />
+  (property type)
 
-  - Word.Interfaces.GroupContentControlData.placeholderText (property type)
-
-  - Word.Interfaces.PictureContentControlData.placeholderText (property type)
-
-  - Word.Interfaces.RepeatingSectionContentControlData.placeholderText (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.RepeatingSectionContentControlData#placeholderText:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -9,6 +9,13 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.TextRange#hyperlinks:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: class

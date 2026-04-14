@@ -23,9 +23,11 @@ remarks: >-
   #### Used by
 
 
-  - Office.Mailbox.displayNewAppointmentForm (parameter type)
+  - <xref uid="outlook!Office.Mailbox#displayNewAppointmentForm:member" />
+  (parameter type)
 
-  - Office.Mailbox.displayNewAppointmentFormAsync (parameter type)
+  - <xref uid="outlook!Office.Mailbox#displayNewAppointmentFormAsync:member" />
+  (parameter type)
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableConvertToTextOptions.separator (property type)
+  - <xref uid="word!Word.TableConvertToTextOptions#separator:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

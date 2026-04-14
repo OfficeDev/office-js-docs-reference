@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartCollectionLoadOptions.dataLabels (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartLoadOptions.dataLabels (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

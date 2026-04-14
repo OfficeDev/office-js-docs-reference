@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FontData.stylisticSet (property type)
+  - <xref uid="word!Word.Font#stylisticSet:member" /> (property type)
 
-  - Word.Interfaces.FontUpdateData.stylisticSet (property type)
+  - <xref uid="word!Word.Interfaces.FontData#stylisticSet:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#stylisticSet:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

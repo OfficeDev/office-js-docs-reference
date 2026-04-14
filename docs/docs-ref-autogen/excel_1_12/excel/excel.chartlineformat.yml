@@ -8,6 +8,20 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.ChartAxisFormat#line:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartErrorBarsFormat#line:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartGridlinesFormat#line:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartSeriesFormat#line:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTrendlineFormat#line:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

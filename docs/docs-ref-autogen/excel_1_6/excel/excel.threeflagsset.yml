@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - Excel.IconCollections.threeFlags (property type)
+  - <xref uid="excel!Excel.IconCollections#threeFlags:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

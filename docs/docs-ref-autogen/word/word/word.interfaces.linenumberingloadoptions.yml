@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupLoadOptions.lineNumbering (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupLoadOptions#lineNumbering:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

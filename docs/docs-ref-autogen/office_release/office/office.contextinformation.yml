@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Context.diagnostics (property type)
+  - <xref uid="office!Office.Context#diagnostics:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

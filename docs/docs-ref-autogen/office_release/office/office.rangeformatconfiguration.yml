@@ -11,9 +11,11 @@ remarks: >-
   #### Used by
 
 
-  - Office.SetBindingDataOptions.cellFormat (property type)
+  - <xref uid="office!Office.SetBindingDataOptions#cellFormat:member" />
+  (property type)
 
-  - Office.SetSelectedDataOptions.cellFormat (property type)
+  - <xref uid="office!Office.SetSelectedDataOptions#cellFormat:member" />
+  (property type)
 
   #### Examples
 

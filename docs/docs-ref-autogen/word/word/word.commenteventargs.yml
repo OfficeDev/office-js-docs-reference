@@ -9,6 +9,52 @@ remarks: >-
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Body#onCommentAdded:member" /> (property type)
+
+  - <xref uid="word!Word.Body#onCommentChanged:member" /> (property type)
+
+  - <xref uid="word!Word.Body#onCommentDeleted:member" /> (property type)
+
+  - <xref uid="word!Word.Body#onCommentDeselected:member" /> (property type)
+
+  - <xref uid="word!Word.Body#onCommentSelected:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControl#onCommentAdded:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ContentControl#onCommentChanged:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ContentControl#onCommentDeselected:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ContentControl#onCommentSelected:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Paragraph#onCommentAdded:member" /> (property type)
+
+  - <xref uid="word!Word.Paragraph#onCommentChanged:member" /> (property type)
+
+  - <xref uid="word!Word.Paragraph#onCommentDeleted:member" /> (property type)
+
+  - <xref uid="word!Word.Paragraph#onCommentDeselected:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Paragraph#onCommentSelected:member" /> (property type)
+
+  - <xref uid="word!Word.Range#onCommentAdded:member" /> (property type)
+
+  - <xref uid="word!Word.Range#onCommentChanged:member" /> (property type)
+
+  - <xref uid="word!Word.Range#onCommentDeselected:member" /> (property type)
+
+  - <xref uid="word!Word.Range#onCommentSelected:member" /> (property type)
+
   #### Examples
 
 

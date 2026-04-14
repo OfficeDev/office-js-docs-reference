@@ -23,13 +23,18 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.getAttachmentContentAsync (parameter type)
+  - <xref
+  uid="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member" />
+  (parameter type)
 
-  - Office.AppointmentRead.getAttachmentContentAsync (parameter type)
+  - <xref uid="outlook!Office.AppointmentRead#getAttachmentContentAsync:member"
+  /> (parameter type)
 
-  - Office.MessageCompose.getAttachmentContentAsync (parameter type)
+  - <xref uid="outlook!Office.MessageCompose#getAttachmentContentAsync:member"
+  /> (parameter type)
 
-  - Office.MessageRead.getAttachmentContentAsync (parameter type)
+  - <xref uid="outlook!Office.MessageRead#getAttachmentContentAsync:member" />
+  (parameter type)
 
   #### Examples
 

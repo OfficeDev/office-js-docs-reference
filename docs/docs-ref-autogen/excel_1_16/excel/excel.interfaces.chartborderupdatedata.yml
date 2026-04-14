@@ -6,18 +6,41 @@ fullName: Excel.Interfaces.ChartBorderUpdateData
 summary: >-
   An interface for updating data on the `ChartBorder` object, for use in
   `chartBorder.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartAreaFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartAxisTitleFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartDataLabelFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartDataTableFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartLegendFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartPlotAreaFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartPointFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartTitleFormatUpdateData.border (property type)
-  - Excel.Interfaces.ChartTrendlineLabelFormatUpdateData.border (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#border:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#border:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#border:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataTableFormatUpdateData#border:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData#border:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData#border:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

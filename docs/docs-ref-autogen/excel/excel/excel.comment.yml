@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.CommentCollection#items:member" /> (property type)
+
+  - <xref uid="excel!Excel.DocumentTask#comment:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -15,9 +15,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.AnnotationSet.critiques (property type)
+  - <xref uid="word!Word.AnnotationSet#critiques:member" /> (property type)
 
-  - Word.Interfaces.CritiqueAnnotationData.critique (property type)
+  - <xref uid="word!Word.CritiqueAnnotation#critique:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.CritiqueAnnotationData#critique:member" />
+  (property type)
 
   #### Examples
 

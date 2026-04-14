@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartData.displayBlanksAs (property type)
+  - <xref uid="excel!Excel.Chart#displayBlanksAs:member" /> (property type)
 
-  - Excel.Interfaces.ChartUpdateData.displayBlanksAs (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartData#displayBlanksAs:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ShapeData.geometricShapeType (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeData#geometricShapeType:member" />
+  (property type)
 
-  - Excel.Interfaces.ShapeUpdateData.geometricShapeType (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Shape#geometricShapeType:member" /> (property type)
 
   #### Examples
 

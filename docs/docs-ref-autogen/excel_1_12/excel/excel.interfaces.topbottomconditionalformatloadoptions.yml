@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottom (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member"
+  /> (property type)
 
-  -
-  Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottomOrNullObject
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottom:member" />
   (property type)
 
-  - Excel.Interfaces.ConditionalFormatLoadOptions.topBottom (property type)
-
-  - Excel.Interfaces.ConditionalFormatLoadOptions.topBottomOrNullObject
-  (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottomOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

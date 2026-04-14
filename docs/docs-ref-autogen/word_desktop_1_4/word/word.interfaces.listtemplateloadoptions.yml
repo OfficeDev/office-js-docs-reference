@@ -12,11 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ListFormatLoadOptions.listTemplate (property type)
+  - <xref uid="word!Word.Interfaces.ListFormatLoadOptions#listTemplate:member"
+  /> (property type)
 
-  - Word.Interfaces.StyleCollectionLoadOptions.listTemplate (property type)
+  - <xref
+  uid="word!Word.Interfaces.StyleCollectionLoadOptions#listTemplate:member" />
+  (property type)
 
-  - Word.Interfaces.StyleLoadOptions.listTemplate (property type)
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#listTemplate:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

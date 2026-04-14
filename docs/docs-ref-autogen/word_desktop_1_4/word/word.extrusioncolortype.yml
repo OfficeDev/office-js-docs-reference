@@ -16,10 +16,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ThreeDimensionalFormatData.extrusionColorType (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColorType:member"
+  /> (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColorType
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColorType:member"
+  /> (property type)
+
+  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColorType:member" />
   (property type)
 
 isPreview: false

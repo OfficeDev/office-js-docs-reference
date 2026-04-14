@@ -6,14 +6,24 @@ fullName: Word.Interfaces.BodyUpdateData
 summary: >-
   An interface for updating data on the `Body` object, for use in `body.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.DocumentUpdateData.body (property type)
-  - Word.Interfaces.NoteItemUpdateData.body (property type)
-  - Word.Interfaces.SectionUpdateData.body (property type)
-  - Word.Interfaces.ShapeUpdateData.body (property type)
-  - Word.Interfaces.TableCellUpdateData.body (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#body:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.NoteItemUpdateData#body:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.SectionUpdateData#body:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.ShapeUpdateData#body:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.TableCellUpdateData#body:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

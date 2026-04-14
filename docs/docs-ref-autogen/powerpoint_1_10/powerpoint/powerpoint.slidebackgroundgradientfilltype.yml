@@ -17,12 +17,20 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.SlideBackgroundGradientFillData.type (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData#type:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData.type (property
-  type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData#type:member"
+  /> (property type)
 
-  - PowerPoint.SlideBackgroundGradientFillOptions.type (property type)
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill#type:member" />
+  (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.SlideBackgroundGradientFillOptions#type:member" />
+  (property type)
 
   #### Examples
 

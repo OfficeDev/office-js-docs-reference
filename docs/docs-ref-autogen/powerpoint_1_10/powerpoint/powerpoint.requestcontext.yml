@@ -8,16 +8,187 @@ summary: >-
   Since the Office add-in and the PowerPoint application run in two different
   processes, the request context is required to get access to the PowerPoint
   object model from the add-in.
-remarks: |-
+remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Adjustments#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Application#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Binding#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.BindingCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Border#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Borders#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.BulletFormat#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.CustomProperty#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.CustomPropertyCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.CustomXmlPart#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.CustomXmlPartCollection#context:member" />
+  (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.DocumentProperties#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Hyperlink#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.HyperlinkCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.HyperlinkScopedCollection#context:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Margins#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.PageSetup#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.ParagraphFormat#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.PlaceholderFormat#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Presentation#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Shape#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeFill#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeFont#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeGroup#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Slide#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackground#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundFill#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill#context:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundPatternFill#context:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFill#context:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundSolidFill#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideLayout#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideLayoutBackground#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideLayoutCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideMaster#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideMasterBackground#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideMasterCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideScopedCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Table#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCell#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableColumn#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TableColumnCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableRow#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableRowCollection#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableStyleSettings#context:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Tag#context:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TagCollection#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TextFrame#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TextRange#context:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.ThemeColorScheme#context:member" />
+  (property type)
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await PowerPoint.run(async (context) => {
     const presentation = context.presentation;
     // Interact with the PowerPoint presentation...
   });
+
   ```
 
 isPreview: false

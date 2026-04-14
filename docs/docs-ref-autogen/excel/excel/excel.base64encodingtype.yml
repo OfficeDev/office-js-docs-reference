@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Base64EncodedImage.type (property type)
+  - <xref uid="excel!Excel.Base64EncodedImage#type:member" /> (property type)
 
 isPreview: true
 isDeprecated: false

@@ -8,6 +8,28 @@ remarks: >-
   \[ [API set: ExcelApiDesktop
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.HeaderFooter#centerFooterPicture:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.HeaderFooter#centerHeaderPicture:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.HeaderFooter#leftFooterPicture:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.HeaderFooter#leftHeaderPicture:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.HeaderFooter#rightFooterPicture:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.HeaderFooter#rightHeaderPicture:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: class

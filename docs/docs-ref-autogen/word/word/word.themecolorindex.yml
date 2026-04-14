@@ -12,9 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ColorFormatData.objectThemeColor (property type)
+  - <xref uid="word!Word.ColorFormat#objectThemeColor:member" /> (property type)
 
-  - Word.Interfaces.ColorFormatUpdateData.objectThemeColor (property type)
+  - <xref uid="word!Word.Interfaces.ColorFormatData#objectThemeColor:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ColorFormatUpdateData#objectThemeColor:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -10,6 +10,15 @@ remarks: >-
   \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Worksheet#onSingleClicked:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#onSingleClicked:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

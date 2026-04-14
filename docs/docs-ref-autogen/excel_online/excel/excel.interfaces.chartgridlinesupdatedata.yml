@@ -6,11 +6,15 @@ fullName: Excel.Interfaces.ChartGridlinesUpdateData
 summary: >-
   An interface for updating data on the `ChartGridlines` object, for use in
   `chartGridlines.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartAxisUpdateData.majorGridlines (property type)
-  - Excel.Interfaces.ChartAxisUpdateData.minorGridlines (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

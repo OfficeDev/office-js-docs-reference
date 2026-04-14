@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ShowAsRule.baseItem (property type)
+  - <xref uid="excel!Excel.PivotItemCollection#items:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShowAsRule#baseItem:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

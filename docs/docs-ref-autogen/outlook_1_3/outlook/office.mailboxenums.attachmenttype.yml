@@ -18,9 +18,11 @@ remarks: >-
   #### Used by
 
 
-  - Office.AttachmentDetails.attachmentType (property type)
+  - <xref uid="outlook!Office.AttachmentDetails#attachmentType:member" />
+  (property type)
 
-  - Office.ReplyFormAttachment.type (property type)
+  - <xref uid="outlook!Office.ReplyFormAttachment#type:member" /> (property
+  type)
 
   #### Examples
 

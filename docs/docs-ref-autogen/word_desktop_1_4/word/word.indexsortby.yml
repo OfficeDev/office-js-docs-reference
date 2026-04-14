@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.IndexAddOptions.sortBy (property type)
+  - <xref uid="word!Word.Index#sortBy:member" /> (property type)
 
-  - Word.Interfaces.IndexData.sortBy (property type)
+  - <xref uid="word!Word.IndexAddOptions#sortBy:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.IndexData#sortBy:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

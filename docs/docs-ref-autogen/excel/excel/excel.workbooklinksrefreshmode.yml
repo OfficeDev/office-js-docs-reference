@@ -12,7 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.LinkedWorkbookCollectionUpdateData.workbookLinksRefreshMode
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#workbookLinksRefreshMode:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.LinkedWorkbookCollection#workbookLinksRefreshMode:member" />
   (property type)
 
 isPreview: false

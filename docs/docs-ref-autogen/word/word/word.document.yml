@@ -12,6 +12,15 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.RequestContext#document:member" /> (property type)
+
+  - <xref uid="word!Word.XmlNode#ownerDocument:member" /> (property type)
+
   #### Examples
 
 

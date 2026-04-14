@@ -6,11 +6,16 @@ fullName: Word.Interfaces.CustomXmlSchemaData
 summary: >-
   An interface describing the data returned by calling
   `customXmlSchema.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.CustomXmlSchemaCollectionData.items (property type)
-  - Word.Interfaces.CustomXmlSchemaCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.CustomXmlSchemaCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.FilterData
 summary: >-
   An interface describing the data returned by calling `filter.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.TableColumnData.filter (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableColumnData#filter:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

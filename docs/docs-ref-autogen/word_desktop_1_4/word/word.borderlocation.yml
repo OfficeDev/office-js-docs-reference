@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BorderData.location (property type)
+  - <xref uid="word!Word.Border#location:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.BorderData#location:member" /> (property
+  type)
 
   #### Examples
 

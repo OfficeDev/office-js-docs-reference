@@ -6,16 +6,32 @@ fullName: Excel.Interfaces.ChartFontUpdateData
 summary: >-
   An interface for updating data on the `ChartFont` object, for use in
   `chartFont.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartAreaFormatUpdateData.font (property type)
-  - Excel.Interfaces.ChartAxisFormatUpdateData.font (property type)
-  - Excel.Interfaces.ChartAxisTitleFormatUpdateData.font (property type)
-  - Excel.Interfaces.ChartDataLabelFormatUpdateData.font (property type)
-  - Excel.Interfaces.ChartFormatStringUpdateData.font (property type)
-  - Excel.Interfaces.ChartLegendFormatUpdateData.font (property type)
-  - Excel.Interfaces.ChartTitleFormatUpdateData.font (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#font:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#font:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#font:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartFormatStringUpdateData#font:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData#font:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

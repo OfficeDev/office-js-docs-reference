@@ -14,14 +14,19 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ParagraphCollectionLoadOptions.list (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member"
+  /> (property type)
 
-  - Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member"
+  /> (property type)
 
-  - Word.Interfaces.ParagraphLoadOptions.list (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#list:member" />
+  (property type)
 
-  - Word.Interfaces.ParagraphLoadOptions.listOrNullObject (property type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

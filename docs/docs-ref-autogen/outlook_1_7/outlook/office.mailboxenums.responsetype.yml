@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.EmailAddressDetails.appointmentResponse (property type)
+  - <xref uid="outlook!Office.EmailAddressDetails#appointmentResponse:member" />
+  (property type)
 
   #### Examples
 

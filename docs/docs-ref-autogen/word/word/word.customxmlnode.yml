@@ -16,11 +16,36 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlAddNodeOptions.nextSibling (property type)
+  - <xref uid="word!Word.CustomXmlAddNodeOptions#nextSibling:member" />
+  (property type)
 
-  - Word.CustomXmlInsertNodeBeforeOptions.nextSibling (property type)
+  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nextSibling:member" />
+  (property type)
 
-  - Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling (property type)
+  - <xref uid="word!Word.CustomXmlInsertSubtreeBeforeOptions#nextSibling:member"
+  /> (property type)
+
+  - <xref uid="word!Word.CustomXmlNode#firstChild:member" /> (property type)
+
+  - <xref uid="word!Word.CustomXmlNode#lastChild:member" /> (property type)
+
+  - <xref uid="word!Word.CustomXmlNode#nextSibling:member" /> (property type)
+
+  - <xref uid="word!Word.CustomXmlNode#parentNode:member" /> (property type)
+
+  - <xref uid="word!Word.CustomXmlNode#previousSibling:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomXmlNodeCollection#items:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomXmlPart#documentElement:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomXmlValidationError#node:member" /> (property
+  type)
+
+  - <xref uid="word!Word.XmlMapping#customXmlNode:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

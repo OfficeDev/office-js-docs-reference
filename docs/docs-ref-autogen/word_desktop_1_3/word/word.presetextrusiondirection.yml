@@ -14,8 +14,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ThreeDimensionalFormatData.presetExtrusionDirection
-  (property type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetExtrusionDirection:member"
+  /> (property type)
+
+  - <xref uid="word!Word.ThreeDimensionalFormat#presetExtrusionDirection:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

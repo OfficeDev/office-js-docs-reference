@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.LinkedEntityDataDomainCollectionData.items (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData#items:member"
+  /> (property type)
 
-  - Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

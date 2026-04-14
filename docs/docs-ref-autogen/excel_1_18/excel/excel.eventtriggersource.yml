@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetChangedEventArgs.triggerSource (property type)
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#triggerSource:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

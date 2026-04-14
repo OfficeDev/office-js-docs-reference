@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalRangeBorderCollectionData.items (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member"
+  /> (property type)
 
-  - Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

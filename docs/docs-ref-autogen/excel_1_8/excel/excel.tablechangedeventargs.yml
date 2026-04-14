@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Table#onChanged:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableCollection#onChanged:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

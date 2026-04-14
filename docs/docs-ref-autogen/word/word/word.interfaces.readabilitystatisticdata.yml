@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ReadabilityStatisticCollectionData.items (property type)
+  - <xref
+  uid="word!Word.Interfaces.ReadabilityStatisticCollectionData#items:member" />
+  (property type)
 
-  - Word.Interfaces.ReadabilityStatisticCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ReadabilityStatisticCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

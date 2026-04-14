@@ -17,9 +17,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ShapeData.relativeHorizontalPosition (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member"
+  /> (property type)
 
-  - Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition (property type)
+  - <xref
+  uid="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Shape#relativeHorizontalPosition:member" /> (property
+  type)
 
   #### Examples
 

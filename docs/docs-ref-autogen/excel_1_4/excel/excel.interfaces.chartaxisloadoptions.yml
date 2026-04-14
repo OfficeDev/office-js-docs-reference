@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartAxesLoadOptions.categoryAxis (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#categoryAxis:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartAxesLoadOptions.seriesAxis (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartAxesLoadOptions.valueAxis (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

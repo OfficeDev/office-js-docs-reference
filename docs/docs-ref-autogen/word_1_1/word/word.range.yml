@@ -8,6 +8,13 @@ remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.RangeCollection#items:member" /> (property type)
+
   #### Examples
 
 

@@ -9,6 +9,16 @@ remarks: >-
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Worksheet#onCalculated:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#onCalculated:member" /> (property
+  type)
+
   #### Examples
 
 

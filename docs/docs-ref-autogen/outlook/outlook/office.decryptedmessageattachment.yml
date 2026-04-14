@@ -30,7 +30,9 @@ remarks: >-
   #### Used by
 
 
-  - Office.MessageDecryptEventCompletedOptions.attachments (property type)
+  - <xref
+  uid="outlook!Office.MessageDecryptEventCompletedOptions#attachments:member" />
+  (property type)
 
   #### Examples
 

@@ -6,11 +6,15 @@ fullName: Word.Interfaces.CommentContentRangeUpdateData
 summary: >-
   An interface for updating data on the `CommentContentRange` object, for use in
   `commentContentRange.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.CommentReplyUpdateData.contentRange (property type)
-  - Word.Interfaces.CommentUpdateData.contentRange (property type)
+
+  - <xref uid="word!Word.Interfaces.CommentReplyUpdateData#contentRange:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.CommentUpdateData#contentRange:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

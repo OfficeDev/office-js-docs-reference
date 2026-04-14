@@ -14,9 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.TextFrameData.autoSizeSetting (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TextFrameData#autoSizeSetting:member" />
+  (property type)
 
-  - PowerPoint.Interfaces.TextFrameUpdateData.autoSizeSetting (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#autoSizeSetting:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TextFrame#autoSizeSetting:member" />
+  (property type)
 
   #### Examples
 

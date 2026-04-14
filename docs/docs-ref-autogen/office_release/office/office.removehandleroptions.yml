@@ -4,13 +4,21 @@ uid: office!Office.RemoveHandlerOptions:interface
 package: office!
 fullName: Office.RemoveHandlerOptions
 summary: Provides options to determine which event handler or handlers are removed.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Office.Binding.removeHandlerAsync (parameter type)
-  - Office.CustomXmlPart.removeHandlerAsync (parameter type)
-  - Office.Document.removeHandlerAsync (parameter type)
-  - Office.Settings.removeHandlerAsync (parameter type)
+
+  - <xref uid="office!Office.Binding#removeHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member" />
+  (parameter type)
+
+  - <xref uid="office!Office.Document#removeHandlerAsync:member" /> (parameter
+  type)
+
+  - <xref uid="office!Office.Settings#removeHandlerAsync:member" /> (parameter
+  type)
 
 isPreview: false
 isDeprecated: false

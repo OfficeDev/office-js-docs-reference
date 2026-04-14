@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AutorunEventCompletedOptions.autorunEventType (property type)
+  - <xref uid="excel!Excel.AutorunEventCompletedOptions#autorunEventType:member"
+  /> (property type)
 
 isPreview: true
 isDeprecated: false

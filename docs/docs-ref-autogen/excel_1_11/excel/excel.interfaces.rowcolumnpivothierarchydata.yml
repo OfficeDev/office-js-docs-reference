@@ -10,14 +10,19 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PivotTableData.columnHierarchies (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotTableData#columnHierarchies:member"
+  /> (property type)
 
-  - Excel.Interfaces.PivotTableData.rowHierarchies (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotTableData#rowHierarchies:member" />
+  (property type)
 
-  - Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member"
+  /> (property type)
 
-  - Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

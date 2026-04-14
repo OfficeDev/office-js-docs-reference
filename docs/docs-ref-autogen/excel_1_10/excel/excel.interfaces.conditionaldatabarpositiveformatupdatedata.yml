@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DataBarConditionalFormatUpdateData.positiveFormat (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#positiveFormat:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

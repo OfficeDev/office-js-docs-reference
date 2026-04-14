@@ -9,6 +9,13 @@ remarks: >-
   1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Workbook#onActivated:member" /> (property type)
+
   #### Examples
 
 

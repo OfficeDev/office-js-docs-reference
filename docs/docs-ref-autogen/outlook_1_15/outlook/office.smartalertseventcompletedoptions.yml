@@ -27,7 +27,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.MailboxEvent.completed (parameter type)
+  - <xref uid="outlook!Office.MailboxEvent#completed:member" /> (parameter type)
 
   #### Examples
 

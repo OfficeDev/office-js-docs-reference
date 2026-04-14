@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TemplateData.justificationMode (property type)
+  - <xref uid="word!Word.Interfaces.TemplateData#justificationMode:member" />
+  (property type)
 
-  - Word.Interfaces.TemplateUpdateData.justificationMode (property type)
+  - <xref uid="word!Word.Interfaces.TemplateUpdateData#justificationMode:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Template#justificationMode:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

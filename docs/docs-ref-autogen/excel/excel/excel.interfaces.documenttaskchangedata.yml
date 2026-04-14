@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DocumentTaskChangeCollectionData.items (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.DocumentTaskChangeCollectionData#items:member" />
+  (property type)
 
-  - Excel.Interfaces.DocumentTaskChangeCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

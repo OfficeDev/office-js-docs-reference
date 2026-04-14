@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FillFormatData.presetTexture (property type)
+  - <xref uid="word!Word.FillFormat#presetTexture:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.FillFormatData#presetTexture:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

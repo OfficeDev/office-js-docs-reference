@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentMergeOptions.mergeTarget (property type)
+  - <xref uid="word!Word.DocumentMergeOptions#mergeTarget:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

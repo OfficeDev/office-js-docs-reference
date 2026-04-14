@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PageLayoutData.orientation (property type)
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#orientation:member" />
+  (property type)
 
-  - Excel.Interfaces.PageLayoutUpdateData.orientation (property type)
+  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.PageLayout#orientation:member" /> (property type)
 
   #### Examples
 

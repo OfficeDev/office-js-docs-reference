@@ -9,6 +9,14 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.ChartPointsCollection#items:member" /> (property
+  type)
+
   #### Examples
 
 

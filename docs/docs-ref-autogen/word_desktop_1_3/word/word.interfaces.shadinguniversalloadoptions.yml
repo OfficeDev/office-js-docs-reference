@@ -14,21 +14,31 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FrameCollectionLoadOptions.shading (property type)
+  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#shading:member"
+  /> (property type)
 
-  - Word.Interfaces.FrameLoadOptions.shading (property type)
+  - <xref uid="word!Word.Interfaces.FrameLoadOptions#shading:member" />
+  (property type)
 
-  - Word.Interfaces.ParagraphCollectionLoadOptions.shading (property type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#shading:member" />
+  (property type)
 
-  - Word.Interfaces.ParagraphLoadOptions.shading (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#shading:member" />
+  (property type)
 
-  - Word.Interfaces.RangeCollectionLoadOptions.shading (property type)
+  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#shading:member"
+  /> (property type)
 
-  - Word.Interfaces.RangeLoadOptions.shading (property type)
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#shading:member" />
+  (property type)
 
-  - Word.Interfaces.TableColumnCollectionLoadOptions.shading (property type)
+  - <xref
+  uid="word!Word.Interfaces.TableColumnCollectionLoadOptions#shading:member" />
+  (property type)
 
-  - Word.Interfaces.TableColumnLoadOptions.shading (property type)
+  - <xref uid="word!Word.Interfaces.TableColumnLoadOptions#shading:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

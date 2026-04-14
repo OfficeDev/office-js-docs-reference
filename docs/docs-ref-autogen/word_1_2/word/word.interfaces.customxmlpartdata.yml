@@ -10,14 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.CustomXmlPartCollectionData.items (property type)
+  - <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData#items:member" />
+  (property type)
 
-  - Word.Interfaces.CustomXmlPartCollectionUpdateData.items (property type)
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
+  (property type)
 
-  - Word.Interfaces.CustomXmlPartScopedCollectionData.items (property type)
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
+  (property type)
 
-  - Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

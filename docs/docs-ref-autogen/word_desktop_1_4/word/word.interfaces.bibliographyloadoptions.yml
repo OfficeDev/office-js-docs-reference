@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ApplicationLoadOptions.bibliography (property type)
+  - <xref uid="word!Word.Interfaces.ApplicationLoadOptions#bibliography:member"
+  /> (property type)
 
-  - Word.Interfaces.DocumentLoadOptions.bibliography (property type)
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#bibliography:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

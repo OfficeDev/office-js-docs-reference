@@ -6,12 +6,19 @@ fullName: OneNote.Interfaces.InkWordData
 summary: >-
   An interface describing the data returned by calling `inkWord.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - OneNote.Interfaces.InkWordCollectionData.items (property type)
-  - OneNote.Interfaces.InkWordCollectionUpdateData.items (property type)
-  - OneNote.Interfaces.ParagraphData.inkWords (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.InkWordCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#inkWords:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

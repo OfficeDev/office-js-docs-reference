@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - Excel.Interfaces.ChartData.axes (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartData#axes:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

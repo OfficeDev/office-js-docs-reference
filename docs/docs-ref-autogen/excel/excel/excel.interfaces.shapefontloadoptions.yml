@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TextRangeLoadOptions.font (property type)
+  - <xref uid="excel!Excel.Interfaces.TextRangeLoadOptions#font:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

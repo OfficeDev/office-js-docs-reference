@@ -13,7 +13,37 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlPlaceholderOptions.range (property type)
+  - <xref uid="word!Word.Break#range:member" /> (property type)
+
+  - <xref uid="word!Word.BuildingBlockGalleryContentControl#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.ContentControlPlaceholderOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.CritiqueAnnotation#range:member" /> (property type)
+
+  - <xref uid="word!Word.DatePickerContentControl#range:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Field#result:member" /> (property type)
+
+  - <xref uid="word!Word.Frame#range:member" /> (property type)
+
+  - <xref uid="word!Word.GroupContentControl#range:member" /> (property type)
+
+  - <xref uid="word!Word.Hyperlink#range:member" /> (property type)
+
+  - <xref uid="word!Word.NoteItem#reference:member" /> (property type)
+
+  - <xref uid="word!Word.PictureContentControl#range:member" /> (property type)
+
+  - <xref uid="word!Word.RangeCollection#items:member" /> (property type)
+
+  - <xref uid="word!Word.RepeatingSectionContentControl#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.RepeatingSectionItem#range:member" /> (property type)
 
   #### Examples
 

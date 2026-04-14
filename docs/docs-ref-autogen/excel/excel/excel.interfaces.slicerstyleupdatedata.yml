@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.SlicerStyleUpdateData
 summary: >-
   An interface for updating data on the `SlicerStyle` object, for use in
   `slicerStyle.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.SlicerUpdateData.slicerStyle (property type)
+
+  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

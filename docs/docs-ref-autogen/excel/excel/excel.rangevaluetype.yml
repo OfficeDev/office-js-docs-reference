@@ -12,23 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChangedEventDetail.valueTypeAfter (property type)
+  - <xref uid="excel!Excel.ChangedEventDetail#valueTypeAfter:member" />
+  (property type)
 
-  - Excel.ChangedEventDetail.valueTypeBefore (property type)
+  - <xref uid="excel!Excel.ChangedEventDetail#valueTypeBefore:member" />
+  (property type)
 
-  - Excel.ExternalCodeServiceObjectCellValue.basicType (property type)
+  - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#basicType:member"
+  /> (property type)
 
-  - Excel.Interfaces.NamedItemArrayValuesData.types (property type)
+  - <xref uid="excel!Excel.Interfaces.NamedItemArrayValuesData#types:member" />
+  (property type)
 
-  - Excel.Interfaces.RangeData.valueTypes (property type)
+  - <xref uid="excel!Excel.Interfaces.RangeData#valueTypes:member" /> (property
+  type)
 
-  - Excel.Interfaces.RangeViewData.valueTypes (property type)
+  - <xref uid="excel!Excel.Interfaces.RangeViewData#valueTypes:member" />
+  (property type)
 
-  - Excel.ReferenceCellValue.basicType (property type)
+  - <xref uid="excel!Excel.NamedItemArrayValues#types:member" /> (property type)
 
-  - Excel.RootReferenceCellValue.basicType (property type)
+  - <xref uid="excel!Excel.Range#valueTypes:member" /> (property type)
 
-  - Excel.ValueTypeNotAvailableCellValue.basicType (property type)
+  - <xref uid="excel!Excel.RangeView#valueTypes:member" /> (property type)
+
+  - <xref uid="excel!Excel.ReferenceCellValue#basicType:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RootReferenceCellValue#basicType:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ValueTypeNotAvailableCellValue#basicType:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

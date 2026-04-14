@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.StyleData.readingOrder (property type)
+  - <xref uid="excel!Excel.Interfaces.StyleData#readingOrder:member" />
+  (property type)
 
-  - Excel.Interfaces.StyleUpdateData.readingOrder (property type)
+  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Style#readingOrder:member" /> (property type)
 
   #### Examples
 

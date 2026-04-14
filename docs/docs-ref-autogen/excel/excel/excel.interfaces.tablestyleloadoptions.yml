@@ -14,11 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TableCollectionLoadOptions.tableStyle (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member" />
+  (property type)
 
-  - Excel.Interfaces.TableLoadOptions.tableStyle (property type)
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#tableStyle:member" />
+  (property type)
 
-  - Excel.Interfaces.TableScopedCollectionLoadOptions.tableStyle (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

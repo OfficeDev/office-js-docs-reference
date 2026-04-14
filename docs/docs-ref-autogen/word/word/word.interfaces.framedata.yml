@@ -4,14 +4,22 @@ uid: word!Word.Interfaces.FrameData:interface
 package: word!
 fullName: Word.Interfaces.FrameData
 summary: An interface describing the data returned by calling `frame.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.DocumentData.frames (property type)
-  - Word.Interfaces.FrameCollectionData.items (property type)
-  - Word.Interfaces.FrameCollectionUpdateData.items (property type)
-  - Word.Interfaces.RangeData.frames (property type)
-  - Word.Interfaces.StyleData.frame (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentData#frames:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.FrameCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.FrameCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeData#frames:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.StyleData#frame:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

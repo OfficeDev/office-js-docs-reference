@@ -22,15 +22,17 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.optionalAttendees (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#optionalAttendees:member" />
+  (property type)
 
-  - Office.AppointmentCompose.requiredAttendees (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#requiredAttendees:member" />
+  (property type)
 
-  - Office.MessageCompose.bcc (property type)
+  - <xref uid="outlook!Office.MessageCompose#bcc:member" /> (property type)
 
-  - Office.MessageCompose.cc (property type)
+  - <xref uid="outlook!Office.MessageCompose#cc:member" /> (property type)
 
-  - Office.MessageCompose.to (property type)
+  - <xref uid="outlook!Office.MessageCompose#to:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

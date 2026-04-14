@@ -22,7 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.MessageForm.attachments (property type)
+  - <xref uid="outlook!Office.MessageForm#attachments:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

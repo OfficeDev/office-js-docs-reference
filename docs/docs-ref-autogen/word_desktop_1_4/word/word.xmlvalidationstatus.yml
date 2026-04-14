@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.XmlNodeData.validationStatus (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeData#validationStatus:member" />
+  (property type)
+
+  - <xref uid="word!Word.XmlNode#validationStatus:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

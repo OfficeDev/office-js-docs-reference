@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataValidationRule.decimal (property type)
+  - <xref uid="excel!Excel.DataValidationRule#decimal:member" /> (property type)
 
-  - Excel.DataValidationRule.textLength (property type)
+  - <xref uid="excel!Excel.DataValidationRule#textLength:member" /> (property
+  type)
 
-  - Excel.DataValidationRule.wholeNumber (property type)
+  - <xref uid="excel!Excel.DataValidationRule#wholeNumber:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - Word.Interfaces.ShapeData.canvas (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#canvas:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

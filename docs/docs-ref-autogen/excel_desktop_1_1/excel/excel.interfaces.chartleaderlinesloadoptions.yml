@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartDataLabelsLoadOptions.leaderLines (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions#leaderLines:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

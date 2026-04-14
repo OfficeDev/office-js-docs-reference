@@ -13,6 +13,21 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Chart#worksheet:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotTable#worksheet:member" /> (property type)
+
+  - <xref uid="excel!Excel.Range#worksheet:member" /> (property type)
+
+  - <xref uid="excel!Excel.Table#worksheet:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#items:member" /> (property type)
+
   #### Examples
 
 

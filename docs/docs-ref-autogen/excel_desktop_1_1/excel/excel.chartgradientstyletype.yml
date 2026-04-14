@@ -14,17 +14,38 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartSeriesData.gradientMaximumType (property type)
+  - <xref uid="excel!Excel.ChartSeries#gradientMaximumType:member" /> (property
+  type)
 
-  - Excel.Interfaces.ChartSeriesData.gradientMidpointType (property type)
+  - <xref uid="excel!Excel.ChartSeries#gradientMidpointType:member" /> (property
+  type)
 
-  - Excel.Interfaces.ChartSeriesData.gradientMinimumType (property type)
+  - <xref uid="excel!Excel.ChartSeries#gradientMinimumType:member" /> (property
+  type)
 
-  - Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumType (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesData#gradientMaximumType:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointType (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesData#gradientMidpointType:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumType (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesData#gradientMinimumType:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMaximumType:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMidpointType:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMinimumType:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

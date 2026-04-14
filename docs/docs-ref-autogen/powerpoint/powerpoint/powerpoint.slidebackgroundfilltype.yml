@@ -17,7 +17,12 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.SlideBackgroundFillData.type (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData#type:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundFill#type:member" />
+  (property type)
 
   #### Examples
 

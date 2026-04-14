@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LocalImageCellValue.image (property type)
+  - <xref uid="excel!Excel.LocalImageCellValue#image:member" /> (property type)
 
 isPreview: true
 isDeprecated: false

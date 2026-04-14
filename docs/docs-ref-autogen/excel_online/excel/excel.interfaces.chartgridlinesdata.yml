@@ -6,11 +6,15 @@ fullName: Excel.Interfaces.ChartGridlinesData
 summary: >-
   An interface describing the data returned by calling
   `chartGridlines.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartAxisData.majorGridlines (property type)
-  - Excel.Interfaces.ChartAxisData.minorGridlines (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorGridlines:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorGridlines:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

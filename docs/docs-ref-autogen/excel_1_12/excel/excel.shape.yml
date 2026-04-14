@@ -13,6 +13,28 @@ remarks: >-
   \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.GeometricShape#shape:member" /> (property type)
+
+  - <xref uid="excel!Excel.GroupShapeCollection#items:member" /> (property type)
+
+  - <xref uid="excel!Excel.Image#shape:member" /> (property type)
+
+  - <xref uid="excel!Excel.Line#beginConnectedShape:member" /> (property type)
+
+  - <xref uid="excel!Excel.Line#endConnectedShape:member" /> (property type)
+
+  - <xref uid="excel!Excel.Line#shape:member" /> (property type)
+
+  - <xref uid="excel!Excel.Shape#parentGroup:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeCollection#items:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeGroup#shape:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -11,6 +11,17 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Worksheet#onSelectionChanged:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#onSelectionChanged:member" />
+  (property type)
+
   #### Examples
 
 

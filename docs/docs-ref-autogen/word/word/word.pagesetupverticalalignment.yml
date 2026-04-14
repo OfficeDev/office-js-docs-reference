@@ -12,9 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#verticalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.PageSetupUpdateData.verticalAlignment (property type)
+  - <xref
+  uid="word!Word.Interfaces.PageSetupUpdateData#verticalAlignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.PageSetup#verticalAlignment:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

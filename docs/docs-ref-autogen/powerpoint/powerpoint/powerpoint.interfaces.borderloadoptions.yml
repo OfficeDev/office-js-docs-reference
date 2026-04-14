@@ -13,17 +13,26 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.BordersLoadOptions.bottom (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#bottom:member" />
+  (property type)
 
-  - PowerPoint.Interfaces.BordersLoadOptions.diagonalDown (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalDown:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.BordersLoadOptions.diagonalUp (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member" />
+  (property type)
 
-  - PowerPoint.Interfaces.BordersLoadOptions.left (property type)
+  - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#left:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.BordersLoadOptions.right (property type)
+  - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#right:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.BordersLoadOptions.top (property type)
+  - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#top:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

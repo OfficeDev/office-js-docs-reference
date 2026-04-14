@@ -14,18 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.CellValueConditionalFormatLoadOptions.format (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member"
+  /> (property type)
 
-  - Excel.Interfaces.CustomConditionalFormatLoadOptions.format (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#format:member"
+  /> (property type)
 
-  - Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member"
+  /> (property type)
 
-  - Excel.Interfaces.TextConditionalFormatLoadOptions.format (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TextConditionalFormatLoadOptions#format:member" />
+  (property type)
 
-  - Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions#format:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

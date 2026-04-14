@@ -28,7 +28,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.sensitivity (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#sensitivity:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

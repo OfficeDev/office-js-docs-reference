@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupData.orientation (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#orientation:member" />
+  (property type)
 
-  - Word.Interfaces.PageSetupUpdateData.orientation (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#orientation:member" />
+  (property type)
+
+  - <xref uid="word!Word.PageSetup#orientation:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

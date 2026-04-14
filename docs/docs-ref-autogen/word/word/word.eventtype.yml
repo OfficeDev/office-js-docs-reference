@@ -13,25 +13,34 @@ remarks: >-
   #### Used by
 
 
-  - Word.CommentEventArgs.type (property type)
+  - <xref uid="word!Word.CommentEventArgs#type:member" /> (property type)
 
-  - Word.ContentControlAddedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlAddedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlDataChangedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlDataChangedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlDeletedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlDeletedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlEnteredEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlEnteredEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlExitedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlExitedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlSelectionChangedEventArgs.eventType (property type)
+  - <xref
+  uid="word!Word.ContentControlSelectionChangedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ParagraphAddedEventArgs.type (property type)
+  - <xref uid="word!Word.ParagraphAddedEventArgs#type:member" /> (property type)
 
-  - Word.ParagraphChangedEventArgs.type (property type)
+  - <xref uid="word!Word.ParagraphChangedEventArgs#type:member" /> (property
+  type)
 
-  - Word.ParagraphDeletedEventArgs.type (property type)
+  - <xref uid="word!Word.ParagraphDeletedEventArgs#type:member" /> (property
+  type)
 
   #### Examples
 

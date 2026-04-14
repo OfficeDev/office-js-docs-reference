@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewLoadOptions.revisionsFilter (property type)
+  - <xref uid="word!Word.Interfaces.ViewLoadOptions#revisionsFilter:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

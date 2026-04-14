@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartPointLoadOptions.format (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartPointLoadOptions#format:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartPointsCollectionLoadOptions.format (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#format:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

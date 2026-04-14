@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.QueryData.error (property type)
+  - <xref uid="excel!Excel.Interfaces.QueryData#error:member" /> (property type)
+
+  - <xref uid="excel!Excel.Query#error:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

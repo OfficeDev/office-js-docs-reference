@@ -17,13 +17,25 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FrameData.relativeVerticalPosition (property type)
+  - <xref uid="word!Word.Frame#relativeVerticalPosition:member" /> (property
+  type)
 
-  - Word.Interfaces.FrameUpdateData.relativeVerticalPosition (property type)
+  - <xref uid="word!Word.Interfaces.FrameData#relativeVerticalPosition:member"
+  /> (property type)
 
-  - Word.Interfaces.ShapeData.relativeVerticalPosition (property type)
+  - <xref
+  uid="word!Word.Interfaces.FrameUpdateData#relativeVerticalPosition:member" />
+  (property type)
 
-  - Word.Interfaces.ShapeUpdateData.relativeVerticalPosition (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalPosition:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member" />
+  (property type)
+
+  - <xref uid="word!Word.Shape#relativeVerticalPosition:member" /> (property
+  type)
 
   #### Examples
 

@@ -12,16 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCell (property
-  type)
+  - <xref
+  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member"
+  /> (property type)
 
-  - OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNull
-  (property type)
+  - <xref
+  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNull:member"
+  /> (property type)
 
-  - OneNote.Interfaces.ParagraphLoadOptions.parentTableCell (property type)
+  - <xref
+  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member"
+  /> (property type)
 
-  - OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull (property
-  type)
+  - <xref
+  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

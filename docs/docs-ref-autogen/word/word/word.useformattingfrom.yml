@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentMergeOptions.useFormattingFrom (property type)
+  - <xref uid="word!Word.DocumentMergeOptions#useFormattingFrom:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

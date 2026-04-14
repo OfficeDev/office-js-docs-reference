@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ListTemplateGalleryCollectionData.items (property type)
+  - <xref
+  uid="word!Word.Interfaces.ListTemplateGalleryCollectionData#items:member" />
+  (property type)
 
-  - Word.Interfaces.ListTemplateGalleryCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ListTemplateGalleryCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

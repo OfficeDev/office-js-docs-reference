@@ -8,6 +8,14 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.ChartAxis#majorGridlines:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxis#minorGridlines:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

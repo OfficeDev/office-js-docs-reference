@@ -11,6 +11,25 @@ remarks: >-
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Body#tables:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControl#tables:member" /> (property type)
+
+  - <xref uid="word!Word.Document#tables:member" /> (property type)
+
+  - <xref uid="word!Word.Range#tables:member" /> (property type)
+
+  - <xref uid="word!Word.Selection#tables:member" /> (property type)
+
+  - <xref uid="word!Word.Selection#topLevelTables:member" /> (property type)
+
+  - <xref uid="word!Word.Table#tables:member" /> (property type)
+
   #### Examples
 
 

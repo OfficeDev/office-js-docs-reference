@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ListData.levelTypes (property type)
+  - <xref uid="word!Word.Interfaces.ListData#levelTypes:member" /> (property
+  type)
+
+  - <xref uid="word!Word.List#levelTypes:member" /> (property type)
 
   #### Examples
 

@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.TableCellCollectionLoadOptions.margins (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#margins:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.TableCellLoadOptions.margins (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#margins:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

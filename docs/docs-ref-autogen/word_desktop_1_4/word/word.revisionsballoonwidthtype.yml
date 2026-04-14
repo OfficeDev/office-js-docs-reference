@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewData.revisionsBalloonWidthType (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonWidthType:member"
+  /> (property type)
 
-  - Word.Interfaces.ViewUpdateData.revisionsBalloonWidthType (property type)
+  - <xref
+  uid="word!Word.Interfaces.ViewUpdateData#revisionsBalloonWidthType:member" />
+  (property type)
+
+  - <xref uid="word!Word.View#revisionsBalloonWidthType:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

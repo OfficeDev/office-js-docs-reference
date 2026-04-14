@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.LineFormatData.dashStyle (property type)
+  - <xref uid="word!Word.Interfaces.LineFormatData#dashStyle:member" />
+  (property type)
 
-  - Word.Interfaces.LineFormatUpdateData.dashStyle (property type)
+  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#dashStyle:member" />
+  (property type)
+
+  - <xref uid="word!Word.LineFormat#dashStyle:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

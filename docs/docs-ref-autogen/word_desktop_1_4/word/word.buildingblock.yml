@@ -14,7 +14,24 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlPlaceholderOptions.buildingBlock (property type)
+  - <xref
+  uid="word!Word.BuildingBlockGalleryContentControl#placeholderText:member" />
+  (property type)
+
+  - <xref uid="word!Word.ContentControlPlaceholderOptions#buildingBlock:member"
+  /> (property type)
+
+  - <xref uid="word!Word.DatePickerContentControl#placeholderText:member" />
+  (property type)
+
+  - <xref uid="word!Word.GroupContentControl#placeholderText:member" />
+  (property type)
+
+  - <xref uid="word!Word.PictureContentControl#placeholderText:member" />
+  (property type)
+
+  - <xref uid="word!Word.RepeatingSectionContentControl#placeholderText:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

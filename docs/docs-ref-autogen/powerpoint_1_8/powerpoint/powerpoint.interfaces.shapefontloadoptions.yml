@@ -15,7 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.TextRangeLoadOptions.font (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

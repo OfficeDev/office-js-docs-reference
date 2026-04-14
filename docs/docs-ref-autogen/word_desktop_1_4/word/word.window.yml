@@ -11,6 +11,19 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Document#activeWindow:member" /> (property type)
+
+  - <xref uid="word!Word.Window#next:member" /> (property type)
+
+  - <xref uid="word!Word.Window#previous:member" /> (property type)
+
+  - <xref uid="word!Word.WindowCollection#items:member" /> (property type)
+
   #### Examples
 
 

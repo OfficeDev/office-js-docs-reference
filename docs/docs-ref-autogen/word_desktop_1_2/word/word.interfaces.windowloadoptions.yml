@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentLoadOptions.activeWindow (property type)
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

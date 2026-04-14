@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartTitleData.horizontalAlignment (property type)
+  - <xref uid="excel!Excel.ChartTitle#horizontalAlignment:member" /> (property
+  type)
 
-  - Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartTitleData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

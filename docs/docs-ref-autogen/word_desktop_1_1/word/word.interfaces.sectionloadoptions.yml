@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BodyLoadOptions.parentSection (property type)
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentSection:member" />
+  (property type)
 
-  - Word.Interfaces.BodyLoadOptions.parentSectionOrNullObject (property type)
+  - <xref
+  uid="word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Auth.getAuthContext (return type)
+  - <xref uid="office!Office.Auth#getAuthContext:member" /> (return type)
 
 isPreview: false
 isDeprecated: false

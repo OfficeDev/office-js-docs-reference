@@ -7,7 +7,7 @@ summary: Represents the bindings the add-in has within the document.
 remarks: |-
   #### Used by
 
-  - Office.Document.bindings (property type)
+  - <xref uid="office!Office.Document#bindings:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

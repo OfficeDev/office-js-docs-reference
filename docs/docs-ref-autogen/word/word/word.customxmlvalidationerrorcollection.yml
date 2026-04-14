@@ -11,6 +11,12 @@ remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.CustomXmlPart#errors:member" /> (property type)
+
 isPreview: true
 isDeprecated: false
 type: class

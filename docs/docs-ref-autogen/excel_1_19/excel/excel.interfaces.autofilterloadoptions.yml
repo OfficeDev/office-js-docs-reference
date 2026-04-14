@@ -14,15 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TableCollectionLoadOptions.autoFilter (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#autoFilter:member" />
+  (property type)
 
-  - Excel.Interfaces.TableLoadOptions.autoFilter (property type)
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#autoFilter:member" />
+  (property type)
 
-  - Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member"
+  /> (property type)
 
-  - Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#autoFilter:member"
+  /> (property type)
 
-  - Excel.Interfaces.WorksheetLoadOptions.autoFilter (property type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

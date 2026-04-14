@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SelectionChangedEventArgs.workbook (property type)
+  - <xref uid="excel!Excel.RequestContext#workbook:member" /> (property type)
+
+  - <xref uid="excel!Excel.SelectionChangedEventArgs#workbook:member" />
+  (property type)
 
   #### Examples
 

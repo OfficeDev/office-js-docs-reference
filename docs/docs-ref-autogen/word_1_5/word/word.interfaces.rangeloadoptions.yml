@@ -12,13 +12,18 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FieldCollectionLoadOptions.result (property type)
+  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
+  (property type)
 
-  - Word.Interfaces.FieldLoadOptions.result (property type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
+  type)
 
-  - Word.Interfaces.NoteItemCollectionLoadOptions.reference (property type)
+  - <xref
+  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
+  (property type)
 
-  - Word.Interfaces.NoteItemLoadOptions.reference (property type)
+  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

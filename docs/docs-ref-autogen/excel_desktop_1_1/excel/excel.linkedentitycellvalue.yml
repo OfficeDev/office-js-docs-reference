@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedEntityLoadServiceResult.entities (property type)
+  - <xref uid="excel!Excel.LinkedEntityLoadServiceResult#entities:member" />
+  (property type)
 
-  - Excel.PlaceholderErrorCellValue.target (property type)
+  - <xref uid="excel!Excel.PlaceholderErrorCellValue#target:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

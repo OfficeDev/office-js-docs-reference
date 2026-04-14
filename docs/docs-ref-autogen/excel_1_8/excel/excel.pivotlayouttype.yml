@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PivotLayoutData.layoutType (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotLayoutData#layoutType:member" />
+  (property type)
 
-  - Excel.Interfaces.PivotLayoutUpdateData.layoutType (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData#layoutType:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.PivotLayout#layoutType:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

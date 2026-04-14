@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.NotificationMessageDetails.type (property type)
+  - <xref uid="outlook!Office.NotificationMessageDetails#type:member" />
+  (property type)
 
   #### Examples
 

@@ -6,13 +6,21 @@ fullName: Word.Interfaces.ShadingUniversalUpdateData
 summary: >-
   An interface for updating data on the `ShadingUniversal` object, for use in
   `shadingUniversal.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.FrameUpdateData.shading (property type)
-  - Word.Interfaces.ParagraphUpdateData.shading (property type)
-  - Word.Interfaces.RangeUpdateData.shading (property type)
-  - Word.Interfaces.TableColumnUpdateData.shading (property type)
+
+  - <xref uid="word!Word.Interfaces.FrameUpdateData#shading:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#shading:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#shading:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.TableColumnUpdateData#shading:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

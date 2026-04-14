@@ -6,12 +6,19 @@ fullName: Excel.Interfaces.CommentReplyData
 summary: >-
   An interface describing the data returned by calling
   `commentReply.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.CommentData.replies (property type)
-  - Excel.Interfaces.CommentReplyCollectionData.items (property type)
-  - Excel.Interfaces.CommentReplyCollectionUpdateData.items (property type)
+
+  - <xref uid="excel!Excel.Interfaces.CommentData#replies:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.CommentReplyCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

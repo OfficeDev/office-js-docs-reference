@@ -23,7 +23,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.Recurrence.recurrenceTimeZone (property type)
+  - <xref uid="outlook!Office.Recurrence#recurrenceTimeZone:member" /> (property
+  type)
 
   #### Examples
 

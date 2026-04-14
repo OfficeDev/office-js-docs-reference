@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.RangeFormatUpdateData
 summary: >-
   An interface for updating data on the `RangeFormat` object, for use in
   `rangeFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.RangeUpdateData.format (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#format:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

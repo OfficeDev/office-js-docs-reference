@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentPrintOutOptions.item (property type)
+  - <xref uid="word!Word.DocumentPrintOutOptions#item:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

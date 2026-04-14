@@ -18,27 +18,41 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BasicDataValidation.formula1 (property type)
+  - <xref uid="excel!Excel.BasicDataValidation#formula1:member" /> (property
+  type)
 
-  - Excel.BasicDataValidation.formula2 (property type)
+  - <xref uid="excel!Excel.BasicDataValidation#formula2:member" /> (property
+  type)
 
-  - Excel.DateTimeDataValidation.formula1 (property type)
+  - <xref uid="excel!Excel.DateTimeDataValidation#formula1:member" /> (property
+  type)
 
-  - Excel.DateTimeDataValidation.formula2 (property type)
+  - <xref uid="excel!Excel.DateTimeDataValidation#formula2:member" /> (property
+  type)
 
-  - Excel.ListDataValidation.source (property type)
+  - <xref uid="excel!Excel.ListDataValidation#source:member" /> (property type)
 
-  - Excel.TableChangedEventArgs.getRange (return type)
+  - <xref uid="excel!Excel.RangeCollection#items:member" /> (property type)
 
-  - Excel.TableChangedEventArgs.getRangeOrNullObject (return type)
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member" /> (return
+  type)
 
-  - Excel.WorksheetChangedEventArgs.getRange (return type)
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member" />
+  (return type)
 
-  - Excel.WorksheetChangedEventArgs.getRangeOrNullObject (return type)
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member" /> (return
+  type)
 
-  - Excel.WorksheetFormatChangedEventArgs.getRange (return type)
+  - <xref
+  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member" />
+  (return type)
 
-  - Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject (return type)
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member" />
+  (return type)
+
+  - <xref
+  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member"
+  /> (return type)
 
   #### Examples
 

@@ -32,9 +32,11 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.sessionData (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#sessionData:member" />
+  (property type)
 
-  - Office.MessageCompose.sessionData (property type)
+  - <xref uid="outlook!Office.MessageCompose#sessionData:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

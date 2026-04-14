@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.NamedItemCollectionLoadOptions.arrayValues (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#arrayValues:member"
+  /> (property type)
 
-  - Excel.Interfaces.NamedItemLoadOptions.arrayValues (property type)
+  - <xref uid="excel!Excel.Interfaces.NamedItemLoadOptions#arrayValues:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

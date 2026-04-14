@@ -14,9 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.PlaceholderFormatData.containedType (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#containedType:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.ShapeData.type (property type)
+  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeData#type:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.PlaceholderFormat#containedType:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Shape#type:member" /> (property type)
 
   #### Examples
 

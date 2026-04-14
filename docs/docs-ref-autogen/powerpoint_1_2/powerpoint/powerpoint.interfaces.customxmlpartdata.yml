@@ -10,16 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.CustomXmlPartCollectionData.items (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items (property
-  type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
-  (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

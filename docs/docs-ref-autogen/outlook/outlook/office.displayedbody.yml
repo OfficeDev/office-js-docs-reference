@@ -25,7 +25,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Display.body (property type)
+  - <xref uid="outlook!Office.Display#body:member" /> (property type)
 
 isPreview: true
 isDeprecated: false

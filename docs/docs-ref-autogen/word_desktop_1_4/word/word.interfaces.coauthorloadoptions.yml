@@ -12,11 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.CoauthoringLoadOptions.me (property type)
+  - <xref uid="word!Word.Interfaces.CoauthoringLoadOptions#me:member" />
+  (property type)
 
-  - Word.Interfaces.CoauthoringLockCollectionLoadOptions.owner (property type)
+  - <xref
+  uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#owner:member"
+  /> (property type)
 
-  - Word.Interfaces.CoauthoringLockLoadOptions.owner (property type)
+  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#owner:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

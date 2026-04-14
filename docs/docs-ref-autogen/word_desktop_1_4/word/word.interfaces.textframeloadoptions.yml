@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ShapeCollectionLoadOptions.textFrame (property type)
+  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#textFrame:member"
+  /> (property type)
 
-  - Word.Interfaces.ShapeLoadOptions.textFrame (property type)
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#textFrame:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

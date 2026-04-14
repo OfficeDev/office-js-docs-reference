@@ -8,6 +8,17 @@ remarks: >-
   \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.CustomXmlPartCollection#items:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomXmlPartScopedCollection#items:member" />
+  (property type)
+
   #### Examples
 
 

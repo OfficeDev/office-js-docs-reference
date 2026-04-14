@@ -11,6 +11,17 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Document#sections:member" /> (property type)
+
+  - <xref uid="word!Word.Range#sections:member" /> (property type)
+
+  - <xref uid="word!Word.Selection#sections:member" /> (property type)
+
   #### Examples
 
 

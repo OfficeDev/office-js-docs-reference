@@ -9,6 +9,14 @@ remarks: >-
   ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref
+  uid="powerpoint!PowerPoint.Presentation#onSlideSelectionChanged:member" />
+  (property type)
+
 isPreview: true
 isDeprecated: false
 type: interface

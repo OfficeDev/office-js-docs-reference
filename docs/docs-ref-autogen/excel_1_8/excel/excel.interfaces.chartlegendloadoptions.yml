@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartCollectionLoadOptions.legend (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#legend:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartLoadOptions.legend (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#legend:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

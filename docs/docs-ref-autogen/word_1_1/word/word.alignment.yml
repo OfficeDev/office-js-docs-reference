@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ParagraphData.alignment (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphData#alignment:member" /> (property
+  type)
 
-  - Word.Interfaces.ParagraphUpdateData.alignment (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#alignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.Paragraph#alignment:member" /> (property type)
 
   #### Examples
 

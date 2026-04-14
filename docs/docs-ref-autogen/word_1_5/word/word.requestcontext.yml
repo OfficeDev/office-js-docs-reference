@@ -8,16 +8,124 @@ summary: >-
   the Office add-in and the Word application run in two different processes, the
   request context is required to get access to the Word object model from the
   add-in.
-remarks: |-
+remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Application#context:member" /> (property type)
+
+  - <xref uid="word!Word.Body#context:member" /> (property type)
+
+  - <xref uid="word!Word.Comment#context:member" /> (property type)
+
+  - <xref uid="word!Word.CommentCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.CommentContentRange#context:member" /> (property type)
+
+  - <xref uid="word!Word.CommentReply#context:member" /> (property type)
+
+  - <xref uid="word!Word.CommentReplyCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ContentControl#context:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControlCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomProperty#context:member" /> (property type)
+
+  - <xref uid="word!Word.CustomPropertyCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomXmlPart#context:member" /> (property type)
+
+  - <xref uid="word!Word.CustomXmlPartCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.CustomXmlPartScopedCollection#context:member" />
+  (property type)
+
+  - <xref uid="word!Word.Document#context:member" /> (property type)
+
+  - <xref uid="word!Word.DocumentCreated#context:member" /> (property type)
+
+  - <xref uid="word!Word.DocumentProperties#context:member" /> (property type)
+
+  - <xref uid="word!Word.Field#context:member" /> (property type)
+
+  - <xref uid="word!Word.FieldCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.Font#context:member" /> (property type)
+
+  - <xref uid="word!Word.InlinePicture#context:member" /> (property type)
+
+  - <xref uid="word!Word.InlinePictureCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.List#context:member" /> (property type)
+
+  - <xref uid="word!Word.ListCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.ListItem#context:member" /> (property type)
+
+  - <xref uid="word!Word.NoteItem#context:member" /> (property type)
+
+  - <xref uid="word!Word.NoteItemCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.Paragraph#context:member" /> (property type)
+
+  - <xref uid="word!Word.ParagraphCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.ParagraphFormat#context:member" /> (property type)
+
+  - <xref uid="word!Word.Range#context:member" /> (property type)
+
+  - <xref uid="word!Word.RangeCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.SearchOptions#context:member" /> (property type)
+
+  - <xref uid="word!Word.Section#context:member" /> (property type)
+
+  - <xref uid="word!Word.SectionCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.Setting#context:member" /> (property type)
+
+  - <xref uid="word!Word.SettingCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.Style#context:member" /> (property type)
+
+  - <xref uid="word!Word.StyleCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.Table#context:member" /> (property type)
+
+  - <xref uid="word!Word.TableBorder#context:member" /> (property type)
+
+  - <xref uid="word!Word.TableCell#context:member" /> (property type)
+
+  - <xref uid="word!Word.TableCellCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.TableCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.TableRow#context:member" /> (property type)
+
+  - <xref uid="word!Word.TableRowCollection#context:member" /> (property type)
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Word.run(async (context: Word.RequestContext) => {
     const document = context.document;
     // Interact with the Word document...
   });
+
   ```
 
 isPreview: false

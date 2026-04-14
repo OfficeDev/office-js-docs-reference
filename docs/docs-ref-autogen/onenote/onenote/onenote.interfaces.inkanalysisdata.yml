@@ -6,11 +6,16 @@ fullName: OneNote.Interfaces.InkAnalysisData
 summary: >-
   An interface describing the data returned by calling
   `inkAnalysis.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - OneNote.Interfaces.InkAnalysisParagraphData.inkAnalysis (property type)
-  - OneNote.Interfaces.PageData.inkAnalysisOrNull (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData#inkAnalysis:member"
+  /> (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.PageData#inkAnalysisOrNull:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

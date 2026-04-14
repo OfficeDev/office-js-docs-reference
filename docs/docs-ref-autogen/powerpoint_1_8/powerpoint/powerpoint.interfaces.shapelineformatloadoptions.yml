@@ -15,12 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.ShapeCollectionLoadOptions.lineFormat (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.ShapeLoadOptions.lineFormat (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member" />
+  (property type)
 
-  - PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.lineFormat (property
-  type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#lineFormat:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

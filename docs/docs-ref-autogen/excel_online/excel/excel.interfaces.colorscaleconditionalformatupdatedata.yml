@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatUpdateData.colorScale (property type)
-
-  - Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#colorScale:member" />
   (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#colorScaleOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

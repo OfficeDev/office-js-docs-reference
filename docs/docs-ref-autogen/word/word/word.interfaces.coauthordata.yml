@@ -6,14 +6,24 @@ fullName: Word.Interfaces.CoauthorData
 summary: >-
   An interface describing the data returned by calling `coauthor.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.CoauthorCollectionData.items (property type)
-  - Word.Interfaces.CoauthorCollectionUpdateData.items (property type)
-  - Word.Interfaces.CoauthoringData.authors (property type)
-  - Word.Interfaces.CoauthoringData.me (property type)
-  - Word.Interfaces.CoauthoringLockData.owner (property type)
+
+  - <xref uid="word!Word.Interfaces.CoauthorCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.CoauthorCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.CoauthoringData#authors:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.CoauthoringData#me:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.CoauthoringLockData#owner:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

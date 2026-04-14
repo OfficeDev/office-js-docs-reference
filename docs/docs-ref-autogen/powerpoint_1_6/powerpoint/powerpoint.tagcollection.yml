@@ -10,6 +10,18 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Presentation#tags:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Shape#tags:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Slide#tags:member" /> (property type)
+
   #### Examples
 
 

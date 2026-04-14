@@ -10,6 +10,13 @@ remarks: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Workbook#onSelectionChanged:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface

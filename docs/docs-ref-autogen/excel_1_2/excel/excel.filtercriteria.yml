@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.FilterData.criteria (property type)
+  - <xref uid="excel!Excel.Filter#criteria:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.FilterData#criteria:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

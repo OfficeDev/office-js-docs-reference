@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.WindowData.view (property type)
+  - <xref uid="excel!Excel.Interfaces.WindowData#view:member" /> (property type)
 
-  - Excel.Interfaces.WindowUpdateData.view (property type)
+  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#view:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Window#view:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

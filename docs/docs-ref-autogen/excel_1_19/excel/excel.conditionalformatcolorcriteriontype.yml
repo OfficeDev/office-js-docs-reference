@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalColorScaleCriterion.type (property type)
+  - <xref uid="excel!Excel.ConditionalColorScaleCriterion#type:member" />
+  (property type)
 
   #### Examples
 

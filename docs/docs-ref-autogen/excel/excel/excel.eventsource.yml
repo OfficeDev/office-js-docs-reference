@@ -12,54 +12,77 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAddedEventArgs.source (property type)
+  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member" /> (property type)
 
-  - Excel.ChartDeletedEventArgs.source (property type)
-
-  - Excel.CommentAddedEventArgs.source (property type)
-
-  - Excel.CommentChangedEventArgs.source (property type)
-
-  - Excel.CommentDeletedEventArgs.source (property type)
-
-  - Excel.LinkedEntityDataDomainAddedEventArgs.source (property type)
-
-  - Excel.LinkedEntityDataDomainRefreshCompletedEventArgs.source (property type)
-
-  - Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.source (property
+  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member" /> (property
   type)
 
-  - Excel.TableAddedEventArgs.source (property type)
+  - <xref uid="excel!Excel.CommentAddedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.TableChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.CommentChangedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.TableDeletedEventArgs.source (property type)
+  - <xref uid="excel!Excel.CommentDeletedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.WorksheetAddedEventArgs.source (property type)
+  - <xref uid="excel!Excel.LinkedEntityDataDomainAddedEventArgs#source:member"
+  /> (property type)
 
-  - Excel.WorksheetCalculationBusyEventArgs.source (property type)
+  - <xref
+  uid="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#source:member"
+  /> (property type)
 
-  - Excel.WorksheetChangedEventArgs.source (property type)
+  - <xref
+  uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs#source:member"
+  /> (property type)
 
-  - Excel.WorksheetColumnSortedEventArgs.source (property type)
+  - <xref uid="excel!Excel.TableAddedEventArgs#source:member" /> (property type)
 
-  - Excel.WorksheetDeletedEventArgs.source (property type)
+  - <xref uid="excel!Excel.TableChangedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.WorksheetFormatChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.WorksheetFormulaChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.WorksheetMovedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetCalculationBusyEventArgs#source:member" />
+  (property type)
 
-  - Excel.WorksheetNameChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.WorksheetProtectionChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetColumnSortedEventArgs#source:member" />
+  (property type)
 
-  - Excel.WorksheetRowHiddenChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member" /> (property
+  type)
 
-  - Excel.WorksheetRowSortedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member" />
+  (property type)
 
-  - Excel.WorksheetVisibilityChangedEventArgs.source (property type)
+  - <xref uid="excel!Excel.WorksheetFormulaChangedEventArgs#source:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.WorksheetMovedEventArgs#source:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetNameChangedEventArgs#source:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.WorksheetProtectionChangedEventArgs#source:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.WorksheetRowSortedEventArgs#source:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.WorksheetVisibilityChangedEventArgs#source:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

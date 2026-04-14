@@ -9,6 +9,15 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.ListFormat#listTemplate:member" /> (property type)
+
+  - <xref uid="word!Word.Style#listTemplate:member" /> (property type)
+
   #### Examples
 
 

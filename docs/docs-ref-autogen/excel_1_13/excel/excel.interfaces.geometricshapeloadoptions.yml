@@ -15,12 +15,16 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member"
+  /> (property type)
 
-  - Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#geometricShape:member"
+  /> (property type)
 
-  - Excel.Interfaces.ShapeLoadOptions.geometricShape (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

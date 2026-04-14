@@ -8,10 +8,12 @@ summary: >-
   create proxy objects from the context (or from other proxy objects), add
   commands to a queue to act on the object, and then synchronize the proxy
   object state with the document by calling `context.sync()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - OfficeExtension.RunOptions.previousObjects (property type)
+
+  - <xref uid="office!OfficeExtension.RunOptions#previousObjects:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

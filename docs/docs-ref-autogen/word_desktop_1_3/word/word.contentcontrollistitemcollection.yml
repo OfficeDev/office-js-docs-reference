@@ -13,6 +13,17 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.ComboBoxContentControl#listItems:member" /> (property
+  type)
+
+  - <xref uid="word!Word.DropDownListContentControl#listItems:member" />
+  (property type)
+
   #### Examples
 
 

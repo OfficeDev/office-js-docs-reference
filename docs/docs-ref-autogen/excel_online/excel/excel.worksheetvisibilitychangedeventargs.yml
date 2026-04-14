@@ -8,6 +8,16 @@ remarks: >-
   \[ [API set: ExcelApi
   1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Worksheet#onVisibilityChanged:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#onVisibilityChanged:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

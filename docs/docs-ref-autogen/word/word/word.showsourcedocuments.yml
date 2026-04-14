@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.WindowData.showSourceDocuments (property type)
+  - <xref uid="word!Word.Interfaces.WindowData#showSourceDocuments:member" />
+  (property type)
 
-  - Word.Interfaces.WindowUpdateData.showSourceDocuments (property type)
+  - <xref uid="word!Word.Interfaces.WindowUpdateData#showSourceDocuments:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Window#showSourceDocuments:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartMapOptionsData.labelStrategy (property type)
+  - <xref uid="excel!Excel.ChartMapOptions#labelStrategy:member" /> (property
+  type)
 
-  - Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

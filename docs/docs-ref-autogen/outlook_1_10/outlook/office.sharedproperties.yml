@@ -33,13 +33,18 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.getSharedPropertiesAsync (parameter type)
+  - <xref
+  uid="outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member" />
+  (parameter type)
 
-  - Office.AppointmentRead.getSharedPropertiesAsync (parameter type)
+  - <xref uid="outlook!Office.AppointmentRead#getSharedPropertiesAsync:member"
+  /> (parameter type)
 
-  - Office.MessageCompose.getSharedPropertiesAsync (parameter type)
+  - <xref uid="outlook!Office.MessageCompose#getSharedPropertiesAsync:member" />
+  (parameter type)
 
-  - Office.MessageRead.getSharedPropertiesAsync (parameter type)
+  - <xref uid="outlook!Office.MessageRead#getSharedPropertiesAsync:member" />
+  (parameter type)
 
   #### Examples
 

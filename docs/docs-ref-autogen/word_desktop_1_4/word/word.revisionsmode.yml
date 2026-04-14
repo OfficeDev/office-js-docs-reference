@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewData.markupMode (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#markupMode:member" /> (property
+  type)
 
-  - Word.Interfaces.ViewUpdateData.markupMode (property type)
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#markupMode:member" />
+  (property type)
+
+  - <xref uid="word!Word.View#markupMode:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

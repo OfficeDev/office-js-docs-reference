@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FontData.numberSpacing (property type)
+  - <xref uid="word!Word.Font#numberSpacing:member" /> (property type)
 
-  - Word.Interfaces.FontUpdateData.numberSpacing (property type)
+  - <xref uid="word!Word.Interfaces.FontData#numberSpacing:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#numberSpacing:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

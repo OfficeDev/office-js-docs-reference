@@ -15,9 +15,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.WindowCollectionLoadOptions.activePane (property type)
+  - <xref
+  uid="word!Word.Interfaces.WindowCollectionLoadOptions#activePane:member" />
+  (property type)
 
-  - Word.Interfaces.WindowLoadOptions.activePane (property type)
+  - <xref uid="word!Word.Interfaces.WindowLoadOptions#activePane:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

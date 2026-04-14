@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.WebSettingsData.screenSize (property type)
+  - <xref uid="word!Word.Interfaces.WebSettingsData#screenSize:member" />
+  (property type)
 
-  - Word.Interfaces.WebSettingsUpdateData.screenSize (property type)
+  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#screenSize:member" />
+  (property type)
+
+  - <xref uid="word!Word.WebSettings#screenSize:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

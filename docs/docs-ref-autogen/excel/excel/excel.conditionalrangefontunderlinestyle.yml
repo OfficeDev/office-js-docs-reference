@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalRangeFontData.underline (property type)
+  - <xref uid="excel!Excel.ConditionalRangeFont#underline:member" /> (property
+  type)
 
-  - Excel.Interfaces.ConditionalRangeFontUpdateData.underline (property type)
+  - <xref uid="excel!Excel.Interfaces.ConditionalRangeFontData#underline:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SettableCellProperties.textRuns (property type)
+  - <xref uid="excel!Excel.SettableCellProperties#textRuns:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

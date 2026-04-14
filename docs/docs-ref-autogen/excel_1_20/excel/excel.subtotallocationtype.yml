@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PivotLayoutData.subtotalLocation (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotLayoutData#subtotalLocation:member"
+  /> (property type)
 
-  - Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.PivotLayout#subtotalLocation:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

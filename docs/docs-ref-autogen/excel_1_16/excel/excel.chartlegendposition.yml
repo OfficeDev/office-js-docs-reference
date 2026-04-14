@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartLegendData.position (property type)
+  - <xref uid="excel!Excel.ChartLegend#position:member" /> (property type)
 
-  - Excel.Interfaces.ChartLegendUpdateData.position (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartLegendData#position:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartLegendUpdateData#position:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

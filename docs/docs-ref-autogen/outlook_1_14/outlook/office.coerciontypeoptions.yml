@@ -11,21 +11,25 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.setSelectedDataAsync (parameter type)
+  - <xref uid="outlook!Office.AppointmentCompose#setSelectedDataAsync:member" />
+  (parameter type)
 
-  - Office.Body.appendOnSendAsync (parameter type)
+  - <xref uid="outlook!Office.Body#appendOnSendAsync:member" /> (parameter type)
 
-  - Office.Body.prependAsync (parameter type)
+  - <xref uid="outlook!Office.Body#prependAsync:member" /> (parameter type)
 
-  - Office.Body.prependOnSendAsync (parameter type)
+  - <xref uid="outlook!Office.Body#prependOnSendAsync:member" /> (parameter
+  type)
 
-  - Office.Body.setAsync (parameter type)
+  - <xref uid="outlook!Office.Body#setAsync:member" /> (parameter type)
 
-  - Office.Body.setSelectedDataAsync (parameter type)
+  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member" /> (parameter
+  type)
 
-  - Office.Body.setSignatureAsync (parameter type)
+  - <xref uid="outlook!Office.Body#setSignatureAsync:member" /> (parameter type)
 
-  - Office.MessageCompose.setSelectedDataAsync (parameter type)
+  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member" />
+  (parameter type)
 
   #### Examples
 

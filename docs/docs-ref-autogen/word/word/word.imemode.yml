@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.WindowData.imeMode (property type)
+  - <xref uid="word!Word.Interfaces.WindowData#imeMode:member" /> (property
+  type)
 
-  - Word.Interfaces.WindowUpdateData.imeMode (property type)
+  - <xref uid="word!Word.Interfaces.WindowUpdateData#imeMode:member" />
+  (property type)
+
+  - <xref uid="word!Word.Window#imeMode:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

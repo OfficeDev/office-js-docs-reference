@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.SlideCollectionLoadOptions.slideMaster (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#slideMaster:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.SlideLoadOptions.slideMaster (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#slideMaster:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

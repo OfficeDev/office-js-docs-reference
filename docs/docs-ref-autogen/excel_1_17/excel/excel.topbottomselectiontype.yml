@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotValueFilter.selectionType (property type)
+  - <xref uid="excel!Excel.PivotValueFilter#selectionType:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

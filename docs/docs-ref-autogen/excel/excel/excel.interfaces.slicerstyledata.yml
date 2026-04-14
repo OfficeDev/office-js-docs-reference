@@ -6,13 +6,22 @@ fullName: Excel.Interfaces.SlicerStyleData
 summary: >-
   An interface describing the data returned by calling
   `slicerStyle.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.SlicerData.slicerStyle (property type)
-  - Excel.Interfaces.SlicerStyleCollectionData.items (property type)
-  - Excel.Interfaces.SlicerStyleCollectionUpdateData.items (property type)
-  - Excel.Interfaces.WorkbookData.slicerStyles (property type)
+
+  - <xref uid="excel!Excel.Interfaces.SlicerData#slicerStyle:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.SlicerStyleCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#slicerStyles:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableSortOptions.sortFieldType (property type)
+  - <xref uid="word!Word.TableSortOptions#sortFieldType:member" /> (property
+  type)
 
-  - Word.TableSortOptions.sortFieldType2 (property type)
+  - <xref uid="word!Word.TableSortOptions#sortFieldType2:member" /> (property
+  type)
 
-  - Word.TableSortOptions.sortFieldType3 (property type)
+  - <xref uid="word!Word.TableSortOptions#sortFieldType3:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

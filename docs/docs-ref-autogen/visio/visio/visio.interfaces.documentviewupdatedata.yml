@@ -6,10 +6,12 @@ fullName: Visio.Interfaces.DocumentViewUpdateData
 summary: >-
   An interface for updating data on the DocumentView object, for use in
   `documentView.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Visio.Interfaces.DocumentUpdateData.view (property type)
+
+  - <xref uid="visio!Visio.Interfaces.DocumentUpdateData#view:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

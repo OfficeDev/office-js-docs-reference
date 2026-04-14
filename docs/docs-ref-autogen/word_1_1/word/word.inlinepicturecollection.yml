@@ -11,6 +11,18 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Body#inlinePictures:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControl#inlinePictures:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Paragraph#inlinePictures:member" /> (property type)
+
   #### Examples
 
 

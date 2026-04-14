@@ -250,7 +250,8 @@ function analyzeMemberTypeReferences(member: ApiJsonMember, index: UsedByIndex, 
   }
 
   // For properties: analyze the property type
-  if (member.kind === 'PropertySignature') {
+  // Handle both interface properties (PropertySignature) and class properties (Property)
+  if (member.kind === 'PropertySignature' || member.kind === 'Property') {
     analyzeExcerptTokens(member.excerptTokens, member.canonicalReference, 'property type', index, packageName);
   }
 
@@ -457,9 +458,9 @@ function generateUsedBySection(references: UsedByReference[]): string {
     // Sort references alphabetically by display name
     refs.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Add each reference as a bullet point with full qualified name and xref link
+    // Add each reference as a bullet point with xref link
     for (const ref of refs) {
-      lines.push(`- ${ref.name} (${ref.contextText})`);
+      lines.push(`- <xref uid="${ref.uid}" /> (${ref.contextText})`);
     }
   }
 

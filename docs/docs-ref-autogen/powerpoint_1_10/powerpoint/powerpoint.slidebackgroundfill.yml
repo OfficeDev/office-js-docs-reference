@@ -10,6 +10,20 @@ remarks: >-
   \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.SlideBackground#fill:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideLayoutBackground#fill:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideMasterBackground#fill:member" />
+  (property type)
+
   #### Examples
 
 

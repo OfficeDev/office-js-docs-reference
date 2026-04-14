@@ -8,6 +8,12 @@ remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Workbook#localImage:member" /> (property type)
+
 isPreview: true
 isDeprecated: false
 type: class

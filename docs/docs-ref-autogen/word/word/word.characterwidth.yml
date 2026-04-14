@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.RangeData.characterWidth (property type)
+  - <xref uid="word!Word.Interfaces.RangeData#characterWidth:member" />
+  (property type)
 
-  - Word.Interfaces.RangeUpdateData.characterWidth (property type)
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#characterWidth:member" />
+  (property type)
+
+  - <xref uid="word!Word.Range#characterWidth:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

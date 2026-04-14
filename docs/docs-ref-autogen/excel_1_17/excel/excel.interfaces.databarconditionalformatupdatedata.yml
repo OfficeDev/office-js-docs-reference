@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatUpdateData.dataBar (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBar:member" />
+  (property type)
 
-  - Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBarOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

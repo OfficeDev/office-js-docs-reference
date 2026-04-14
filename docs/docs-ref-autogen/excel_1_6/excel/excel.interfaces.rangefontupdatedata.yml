@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.RangeFontUpdateData
 summary: >-
   An interface for updating data on the `RangeFont` object, for use in
   `rangeFont.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.RangeFormatUpdateData.font (property type)
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#font:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

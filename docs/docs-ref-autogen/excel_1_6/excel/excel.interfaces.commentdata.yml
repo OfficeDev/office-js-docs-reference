@@ -6,11 +6,15 @@ fullName: Excel.Interfaces.CommentData
 summary: >-
   An interface describing the data returned by calling `comment.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.CommentCollectionData.items (property type)
-  - Excel.Interfaces.CommentCollectionUpdateData.items (property type)
+
+  - <xref uid="excel!Excel.Interfaces.CommentCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.CommentCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

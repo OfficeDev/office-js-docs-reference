@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupData.gutterPosition (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#gutterPosition:member" />
+  (property type)
 
-  - Word.Interfaces.PageSetupUpdateData.gutterPosition (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#gutterPosition:member"
+  /> (property type)
+
+  - <xref uid="word!Word.PageSetup#gutterPosition:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TrackedChangeData.type (property type)
+  - <xref uid="word!Word.Interfaces.TrackedChangeData#type:member" /> (property
+  type)
+
+  - <xref uid="word!Word.TrackedChange#type:member" /> (property type)
 
   #### Examples
 

@@ -6,13 +6,21 @@ fullName: Excel.Interfaces.SlicerData
 summary: >-
   An interface describing the data returned by calling `slicer.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.SlicerCollectionData.items (property type)
-  - Excel.Interfaces.SlicerCollectionUpdateData.items (property type)
-  - Excel.Interfaces.WorkbookData.slicers (property type)
-  - Excel.Interfaces.WorksheetData.slicers (property type)
+
+  - <xref uid="excel!Excel.Interfaces.SlicerCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.SlicerCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#slicers:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#slicers:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

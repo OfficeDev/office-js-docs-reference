@@ -13,17 +13,24 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlAddedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlAddedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlDataChangedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlDataChangedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlDeletedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlDeletedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlEnteredEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlEnteredEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlExitedEventArgs.eventType (property type)
+  - <xref uid="word!Word.ContentControlExitedEventArgs#eventType:member" />
+  (property type)
 
-  - Word.ContentControlSelectionChangedEventArgs.eventType (property type)
+  - <xref
+  uid="word!Word.ContentControlSelectionChangedEventArgs#eventType:member" />
+  (property type)
 
   #### Examples
 

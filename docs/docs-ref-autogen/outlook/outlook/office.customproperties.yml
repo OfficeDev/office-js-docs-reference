@@ -52,17 +52,26 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.loadCustomPropertiesAsync (parameter type)
+  - <xref
+  uid="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member" />
+  (parameter type)
 
-  - Office.AppointmentRead.loadCustomPropertiesAsync (parameter type)
+  - <xref uid="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member"
+  /> (parameter type)
 
-  - Office.LoadedMessageCompose.loadCustomPropertiesAsync (parameter type)
+  - <xref
+  uid="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member" />
+  (parameter type)
 
-  - Office.LoadedMessageRead.loadCustomPropertiesAsync (parameter type)
+  - <xref
+  uid="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member" />
+  (parameter type)
 
-  - Office.MessageCompose.loadCustomPropertiesAsync (parameter type)
+  - <xref uid="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member"
+  /> (parameter type)
 
-  - Office.MessageRead.loadCustomPropertiesAsync (parameter type)
+  - <xref uid="outlook!Office.MessageRead#loadCustomPropertiesAsync:member" />
+  (parameter type)
 
 isPreview: false
 isDeprecated: false

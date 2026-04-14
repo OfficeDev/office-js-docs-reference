@@ -13,7 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.NoteItemData.type (property type)
+  - <xref uid="word!Word.Interfaces.NoteItemData#type:member" /> (property type)
+
+  - <xref uid="word!Word.NoteItem#type:member" /> (property type)
 
   #### Examples
 

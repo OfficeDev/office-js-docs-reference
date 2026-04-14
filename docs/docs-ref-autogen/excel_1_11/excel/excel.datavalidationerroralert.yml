@@ -13,9 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DataValidationData.errorAlert (property type)
+  - <xref uid="excel!Excel.DataValidation#errorAlert:member" /> (property type)
 
-  - Excel.Interfaces.DataValidationUpdateData.errorAlert (property type)
+  - <xref uid="excel!Excel.Interfaces.DataValidationData#errorAlert:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.DataValidationUpdateData#errorAlert:member" />
+  (property type)
 
   #### Examples
 

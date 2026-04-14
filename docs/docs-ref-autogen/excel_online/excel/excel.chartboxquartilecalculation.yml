@@ -14,11 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartBoxwhiskerOptionsData.quartileCalculation (property
-  type)
-
-  - Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData.quartileCalculation
+  - <xref uid="excel!Excel.ChartBoxwhiskerOptions#quartileCalculation:member" />
   (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#quartileCalculation:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

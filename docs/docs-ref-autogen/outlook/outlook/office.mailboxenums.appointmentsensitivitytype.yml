@@ -21,11 +21,12 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentRead.sensitivity (property type)
+  - <xref uid="outlook!Office.AppointmentRead#sensitivity:member" /> (property
+  type)
 
-  - Office.Sensitivity.getAsync (parameter type)
+  - <xref uid="outlook!Office.Sensitivity#getAsync:member" /> (parameter type)
 
-  - Office.Sensitivity.setAsync (parameter type)
+  - <xref uid="outlook!Office.Sensitivity#setAsync:member" /> (parameter type)
 
   #### Examples
 

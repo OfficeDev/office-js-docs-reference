@@ -6,11 +6,16 @@ fullName: Word.Interfaces.BorderUniversalData
 summary: >-
   An interface describing the data returned by calling
   `borderUniversal.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.BorderUniversalCollectionData.items (property type)
-  - Word.Interfaces.BorderUniversalCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.BorderUniversalCollectionData#items:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

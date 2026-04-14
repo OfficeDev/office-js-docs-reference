@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.IndexData.filter (property type)
+  - <xref uid="word!Word.Index#filter:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.IndexData#filter:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,11 +6,16 @@ fullName: Word.Interfaces.CustomXmlNodeData
 summary: >-
   An interface describing the data returned by calling
   `customXmlNode.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.CustomXmlNodeCollectionData.items (property type)
-  - Word.Interfaces.CustomXmlNodeCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlNodeCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

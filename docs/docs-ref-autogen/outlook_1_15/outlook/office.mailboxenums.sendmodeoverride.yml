@@ -28,7 +28,9 @@ remarks: >-
   #### Used by
 
 
-  - Office.SmartAlertsEventCompletedOptions.sendModeOverride (property type)
+  - <xref
+  uid="outlook!Office.SmartAlertsEventCompletedOptions#sendModeOverride:member"
+  /> (property type)
 
   #### Examples
 

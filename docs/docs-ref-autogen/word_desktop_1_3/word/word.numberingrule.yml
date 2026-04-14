@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.LineNumberingData.restartMode (property type)
+  - <xref uid="word!Word.Interfaces.LineNumberingData#restartMode:member" />
+  (property type)
 
-  - Word.Interfaces.LineNumberingUpdateData.restartMode (property type)
+  - <xref uid="word!Word.Interfaces.LineNumberingUpdateData#restartMode:member"
+  /> (property type)
+
+  - <xref uid="word!Word.LineNumbering#restartMode:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

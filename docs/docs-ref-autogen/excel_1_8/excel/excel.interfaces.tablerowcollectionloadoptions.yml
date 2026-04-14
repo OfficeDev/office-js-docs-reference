@@ -20,9 +20,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TableCollectionLoadOptions.rows (property type)
+  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member" />
+  (property type)
 
-  - Excel.Interfaces.TableLoadOptions.rows (property type)
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#rows:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

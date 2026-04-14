@@ -6,12 +6,19 @@ fullName: Excel.Interfaces.TableColumnData
 summary: >-
   An interface describing the data returned by calling
   `tableColumn.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.TableColumnCollectionData.items (property type)
-  - Excel.Interfaces.TableColumnCollectionUpdateData.items (property type)
-  - Excel.Interfaces.TableData.columns (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableColumnCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableData#columns:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

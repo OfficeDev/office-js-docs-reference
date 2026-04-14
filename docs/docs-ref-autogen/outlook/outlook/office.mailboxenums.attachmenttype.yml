@@ -18,15 +18,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AttachmentDetails.attachmentType (property type)
+  - <xref uid="outlook!Office.AttachmentDetails#attachmentType:member" />
+  (property type)
 
-  - Office.AttachmentDetailsCompose.attachmentType (property type)
+  - <xref uid="outlook!Office.AttachmentDetailsCompose#attachmentType:member" />
+  (property type)
 
-  - Office.DecryptedMessageAttachment.attachmentType (property type)
+  - <xref uid="outlook!Office.DecryptedMessageAttachment#attachmentType:member"
+  /> (property type)
 
-  - Office.MessageFormAttachment.type (property type)
+  - <xref uid="outlook!Office.MessageFormAttachment#type:member" /> (property
+  type)
 
-  - Office.ReplyFormAttachment.type (property type)
+  - <xref uid="outlook!Office.ReplyFormAttachment#type:member" /> (property
+  type)
 
   #### Examples
 

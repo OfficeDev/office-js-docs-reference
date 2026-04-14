@@ -14,9 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TableStyleData.tableDirection (property type)
+  - <xref uid="word!Word.Interfaces.TableStyleData#tableDirection:member" />
+  (property type)
 
-  - Word.Interfaces.TableStyleUpdateData.tableDirection (property type)
+  - <xref uid="word!Word.Interfaces.TableStyleUpdateData#tableDirection:member"
+  /> (property type)
+
+  - <xref uid="word!Word.TableStyle#tableDirection:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

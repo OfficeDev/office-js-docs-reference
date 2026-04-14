@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentLoadOptions.coauthoring (property type)
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#coauthoring:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

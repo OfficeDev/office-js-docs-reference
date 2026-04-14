@@ -8,16 +8,56 @@ summary: >-
   the Office add-in and the Word application run in two different processes, the
   request context is required to get access to the Word object model from the
   add-in.
-remarks: |-
+remarks: >-
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Body#context:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControl#context:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControlCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Document#context:member" /> (property type)
+
+  - <xref uid="word!Word.Font#context:member" /> (property type)
+
+  - <xref uid="word!Word.InlinePicture#context:member" /> (property type)
+
+  - <xref uid="word!Word.InlinePictureCollection#context:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Paragraph#context:member" /> (property type)
+
+  - <xref uid="word!Word.ParagraphCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.Range#context:member" /> (property type)
+
+  - <xref uid="word!Word.RangeCollection#context:member" /> (property type)
+
+  - <xref uid="word!Word.SearchOptions#context:member" /> (property type)
+
+  - <xref uid="word!Word.Section#context:member" /> (property type)
+
+  - <xref uid="word!Word.SectionCollection#context:member" /> (property type)
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Word.run(async (context: Word.RequestContext) => {
     const document = context.document;
     // Interact with the Word document...
   });
+
   ```
 
 isPreview: false

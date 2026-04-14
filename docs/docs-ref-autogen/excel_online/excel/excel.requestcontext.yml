@@ -8,27 +8,496 @@ summary: >-
   the Office add-in and the Excel application run in two different processes,
   the request context is required to get access to the Excel object model from
   the add-in.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - Excel.TableChangedEventArgs.getRange (parameter type)
-  - Excel.TableChangedEventArgs.getRangeOrNullObject (parameter type)
-  - Excel.WorksheetChangedEventArgs.getRange (parameter type)
-  - Excel.WorksheetChangedEventArgs.getRangeOrNullObject (parameter type)
-  - Excel.WorksheetFormatChangedEventArgs.getRange (parameter type)
-  - Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject (parameter type)
+
+  - <xref uid="excel!Excel.AllowEditRange#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.AllowEditRangeCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Application#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.AutoFilter#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Binding#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.BindingCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CellValueConditionalFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Chart#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAreaFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxes#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxis#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxisFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxisTitle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxisTitleFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartBinOptions#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartBorder#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartBoxwhiskerOptions#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartDataLabel#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartDataLabelAnchor#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartDataLabelFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartDataLabels#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartDataTable#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartDataTableFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartErrorBars#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartErrorBarsFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartFill#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartFont#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartFormatString#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartGridlines#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartGridlinesFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartLeaderLines#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartLeaderLinesFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartLegend#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartLegendEntry#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartLegendEntryCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ChartLegendFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartLineFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartMapOptions#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPivotOptions#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPlotArea#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPlotAreaFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartPoint#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPointFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPointsCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartSeries#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartSeriesCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartSeriesFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTitle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTitleFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTrendline#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTrendlineCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartTrendlineFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartTrendlineLabel#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartTrendlineLabelFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ColorScaleConditionalFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Comment#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CommentCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CommentReply#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CommentReplyCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ConditionalDataBarNegativeFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ConditionalDataBarPositiveFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ConditionalFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ConditionalFormatCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ConditionalFormatRule#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ConditionalRangeBorder#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ConditionalRangeBorderCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ConditionalRangeFill#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ConditionalRangeFont#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ConditionalRangeFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.CultureInfo#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CustomConditionalFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.CustomFunctionManager#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.CustomProperty#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CustomPropertyCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.CustomXmlPart#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.CustomXmlPartCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.CustomXmlPartScopedCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.DataBarConditionalFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.DataConnectionCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.DataPivotHierarchy#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.DataPivotHierarchyCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.DataValidation#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.DatetimeFormatInfo#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.DocumentProperties#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Filter#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.FilterPivotHierarchy#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.FilterPivotHierarchyCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.FormatProtection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.FunctionResult#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Functions#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.GeometricShape#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.GroupShapeCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.HeaderFooter#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.HeaderFooterGroup#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.IconSetConditionalFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Image#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.IterativeCalculation#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Line#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.LinkedEntityDataDomain#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.LinkedEntityDataDomainCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.LinkedWorkbook#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.LinkedWorkbookCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.NamedItem#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.NamedItemArrayValues#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.NamedItemCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.NamedSheetView#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.NamedSheetViewCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Note#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.NoteCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.NumberFormatInfo#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PageBreak#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PageBreakCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.PageLayout#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotField#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotFieldCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.PivotHierarchy#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotHierarchyCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.PivotItem#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotItemCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.PivotLayout#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotTable#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotTableCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.PivotTableScopedCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.PivotTableStyle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotTableStyleCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.PresetCriteriaConditionalFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Query#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.QueryCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Range#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeAreas#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeAreasCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RangeBorder#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeBorderCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RangeCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeFill#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeFont#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeSort#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeView#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeViewCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RemoveDuplicatesResult#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RowColumnPivotHierarchy#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RowColumnPivotHierarchyCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Runtime#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Setting#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.SettingCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Shape#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeFill#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeFont#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeGroup#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ShapeLineFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Slicer#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.SlicerCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.SlicerItem#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.SlicerItemCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.SlicerStyle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.SlicerStyleCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Style#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.StyleCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Table#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member" /> (parameter
+  type)
+
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member" />
+  (parameter type)
+
+  - <xref uid="excel!Excel.TableCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableColumn#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableColumnCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.TableRow#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableRowCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableScopedCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.TableSort#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableStyle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableStyleCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.TextConditionalFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.TextFrame#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TextRange#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TimelineStyle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TimelineStyleCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.TopBottomConditionalFormat#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Workbook#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorkbookCreated#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorkbookProtection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorkbookRangeAreas#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Worksheet#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member" />
+  (parameter type)
+
+  - <xref
+  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member" />
+  (parameter type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetCustomProperty#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetCustomPropertyCollection#context:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member" />
+  (parameter type)
+
+  - <xref
+  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member"
+  /> (parameter type)
+
+  - <xref uid="excel!Excel.WorksheetFreezePanes#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetProtection#context:member" /> (property
+  type)
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Excel.run(async (context: Excel.RequestContext) => {
     const workbook = context.workbook;
     // Interact with the Excel workbook...
   });
+
   ```
 
 isPreview: false

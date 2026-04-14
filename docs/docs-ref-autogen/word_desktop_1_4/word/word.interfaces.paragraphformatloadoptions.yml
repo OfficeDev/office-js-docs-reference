@@ -12,11 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ConditionalStyleLoadOptions.paragraphFormat (property type)
+  - <xref
+  uid="word!Word.Interfaces.ConditionalStyleLoadOptions#paragraphFormat:member"
+  /> (property type)
 
-  - Word.Interfaces.StyleCollectionLoadOptions.paragraphFormat (property type)
+  - <xref
+  uid="word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member"
+  /> (property type)
 
-  - Word.Interfaces.StyleLoadOptions.paragraphFormat (property type)
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#paragraphFormat:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

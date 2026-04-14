@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RefErrorCellValue.errorSubType (property type)
+  - <xref uid="excel!Excel.RefErrorCellValue#errorSubType:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

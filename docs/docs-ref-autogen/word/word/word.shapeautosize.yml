@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TextFrameData.autoSizeSetting (property type)
+  - <xref uid="word!Word.Interfaces.TextFrameData#autoSizeSetting:member" />
+  (property type)
 
-  - Word.Interfaces.TextFrameUpdateData.autoSizeSetting (property type)
+  - <xref uid="word!Word.Interfaces.TextFrameUpdateData#autoSizeSetting:member"
+  /> (property type)
+
+  - <xref uid="word!Word.TextFrame#autoSizeSetting:member" /> (property type)
 
   #### Examples
 

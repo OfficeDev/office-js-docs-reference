@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Office.Dialog.messageChild (parameter type)
+  - <xref uid="office!Office.Dialog#messageChild:member" /> (parameter type)
 
-  - Office.UI.messageParent (parameter type)
+  - <xref uid="office!Office.UI#messageParent:member" /> (parameter type)
 
 isPreview: false
 isDeprecated: false

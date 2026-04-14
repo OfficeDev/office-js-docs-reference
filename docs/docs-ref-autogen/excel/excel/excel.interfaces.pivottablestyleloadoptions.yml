@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PivotLayoutLoadOptions.pivotStyle (property type)
+  - <xref uid="excel!Excel.Interfaces.PivotLayoutLoadOptions#pivotStyle:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

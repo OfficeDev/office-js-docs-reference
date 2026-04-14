@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentCountNumberedItemsOptions.numberType (property type)
+  - <xref uid="word!Word.DocumentCountNumberedItemsOptions#numberType:member" />
+  (property type)
 
-  - Word.ListFormatCountNumberedItemsOptions.numberType (property type)
+  - <xref uid="word!Word.ListFormatCountNumberedItemsOptions#numberType:member"
+  /> (property type)
 
   #### Examples
 

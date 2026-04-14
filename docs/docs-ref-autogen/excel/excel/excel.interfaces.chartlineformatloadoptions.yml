@@ -12,17 +12,27 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartAxisFormatLoadOptions.line (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartGridlinesFormatLoadOptions.line (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartLeaderLinesFormatLoadOptions.line (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartLeaderLinesFormatLoadOptions#line:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartSeriesFormatLoadOptions.line (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartTrendlineFormatLoadOptions.line (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#line:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,25 +13,48 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ParagraphData.alignment (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphData#alignment:member" /> (property
+  type)
 
-  - Word.Interfaces.ParagraphUpdateData.alignment (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#alignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableCellData.horizontalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableCellData#horizontalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableCellUpdateData.horizontalAlignment (property type)
+  - <xref
+  uid="word!Word.Interfaces.TableCellUpdateData#horizontalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableData.alignment (property type)
+  - <xref uid="word!Word.Interfaces.TableData#alignment:member" /> (property
+  type)
 
-  - Word.Interfaces.TableData.horizontalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableData#horizontalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableRowData.horizontalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableRowData#horizontalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableRowUpdateData.horizontalAlignment (property type)
+  - <xref
+  uid="word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableUpdateData.alignment (property type)
+  - <xref uid="word!Word.Interfaces.TableUpdateData#alignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableUpdateData.horizontalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableUpdateData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Paragraph#alignment:member" /> (property type)
+
+  - <xref uid="word!Word.Table#alignment:member" /> (property type)
+
+  - <xref uid="word!Word.Table#horizontalAlignment:member" /> (property type)
+
+  - <xref uid="word!Word.TableCell#horizontalAlignment:member" /> (property
+  type)
+
+  - <xref uid="word!Word.TableRow#horizontalAlignment:member" /> (property type)
 
   #### Examples
 

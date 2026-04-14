@@ -12,7 +12,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - Office.SlideRange.slides (property type)
+  - <xref uid="office!Office.SlideRange#slides:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

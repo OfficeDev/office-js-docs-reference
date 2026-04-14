@@ -14,21 +14,25 @@ remarks: >-
   #### Used by
 
 
-  -
-  Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.placeholderText
-  (property type)
+  - <xref
+  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#placeholderText:member"
+  /> (property type)
 
-  - Word.Interfaces.DatePickerContentControlLoadOptions.placeholderText
-  (property type)
+  - <xref
+  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#placeholderText:member"
+  /> (property type)
 
-  - Word.Interfaces.GroupContentControlLoadOptions.placeholderText (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.GroupContentControlLoadOptions#placeholderText:member"
+  /> (property type)
 
-  - Word.Interfaces.PictureContentControlLoadOptions.placeholderText (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.PictureContentControlLoadOptions#placeholderText:member"
+  /> (property type)
 
-  - Word.Interfaces.RepeatingSectionContentControlLoadOptions.placeholderText
-  (property type)
+  - <xref
+  uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#placeholderText:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

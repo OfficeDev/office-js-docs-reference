@@ -12,25 +12,39 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FillFormatLoadOptions.backgroundColor (property type)
+  - <xref
+  uid="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member" />
+  (property type)
 
-  - Word.Interfaces.FillFormatLoadOptions.foregroundColor (property type)
+  - <xref
+  uid="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member" />
+  (property type)
 
-  - Word.Interfaces.FontLoadOptions.textColor (property type)
+  - <xref uid="word!Word.Interfaces.FontLoadOptions#textColor:member" />
+  (property type)
 
-  - Word.Interfaces.GlowFormatLoadOptions.color (property type)
+  - <xref uid="word!Word.Interfaces.GlowFormatLoadOptions#color:member" />
+  (property type)
 
-  - Word.Interfaces.LineFormatLoadOptions.backgroundColor (property type)
+  - <xref
+  uid="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member" />
+  (property type)
 
-  - Word.Interfaces.LineFormatLoadOptions.foregroundColor (property type)
+  - <xref
+  uid="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member" />
+  (property type)
 
-  - Word.Interfaces.ShadowFormatLoadOptions.foregroundColor (property type)
+  - <xref
+  uid="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member" />
+  (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member"
+  /> (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

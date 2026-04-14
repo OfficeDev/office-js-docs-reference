@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.SelectionConvertToTableOptions.format (property type)
+  - <xref uid="word!Word.SelectionConvertToTableOptions#format:member" />
+  (property type)
 
-  - Word.TableAutoFormatOptions.format (property type)
+  - <xref uid="word!Word.TableAutoFormatOptions#format:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

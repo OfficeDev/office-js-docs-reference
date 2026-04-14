@@ -12,16 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member"
+  /> (property type)
 
-  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member" />
   (property type)
 
-  - Excel.Interfaces.ConditionalFormatLoadOptions.dataBar (property type)
-
-  - Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBarOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

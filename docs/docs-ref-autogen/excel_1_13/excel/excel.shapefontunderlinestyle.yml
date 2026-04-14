@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ShapeFontData.underline (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeFontData#underline:member" />
+  (property type)
 
-  - Excel.Interfaces.ShapeFontUpdateData.underline (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeFontUpdateData#underline:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ShapeFont#underline:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

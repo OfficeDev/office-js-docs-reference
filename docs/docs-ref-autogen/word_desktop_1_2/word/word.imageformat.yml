@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.InlinePictureData.imageFormat (property type)
+  - <xref uid="word!Word.InlinePicture#imageFormat:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.InlinePictureData#imageFormat:member" />
+  (property type)
 
   #### Examples
 

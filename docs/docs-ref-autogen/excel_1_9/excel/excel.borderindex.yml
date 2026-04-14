@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.RangeBorderData.sideIndex (property type)
+  - <xref uid="excel!Excel.Interfaces.RangeBorderData#sideIndex:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.RangeBorder#sideIndex:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

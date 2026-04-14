@@ -13,19 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - Word.SelectionDeleteOptions.unit (property type)
+  - <xref uid="word!Word.SelectionDeleteOptions#unit:member" /> (property type)
 
-  - Word.SelectionMoveLeftRightOptions.unit (property type)
+  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member" /> (property
+  type)
 
-  - Word.SelectionMoveOptions.unit (property type)
+  - <xref uid="word!Word.SelectionMoveOptions#unit:member" /> (property type)
 
-  - Word.SelectionMoveStartEndOptions.unit (property type)
+  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member" /> (property
+  type)
 
-  - Word.SelectionMoveUpDownOptions.unit (property type)
+  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member" /> (property
+  type)
 
-  - Word.SelectionNextOptions.unit (property type)
+  - <xref uid="word!Word.SelectionNextOptions#unit:member" /> (property type)
 
-  - Word.SelectionPreviousOptions.unit (property type)
+  - <xref uid="word!Word.SelectionPreviousOptions#unit:member" /> (property
+  type)
 
   #### Examples
 

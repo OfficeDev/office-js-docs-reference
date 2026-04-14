@@ -8,6 +8,12 @@ remarks: >-
   \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.ChartSeries#trendlines:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

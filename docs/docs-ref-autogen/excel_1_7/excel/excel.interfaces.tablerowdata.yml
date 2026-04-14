@@ -6,12 +6,17 @@ fullName: Excel.Interfaces.TableRowData
 summary: >-
   An interface describing the data returned by calling `tableRow.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.TableData.rows (property type)
-  - Excel.Interfaces.TableRowCollectionData.items (property type)
-  - Excel.Interfaces.TableRowCollectionUpdateData.items (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableData#rows:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableRowCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.TableRowCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

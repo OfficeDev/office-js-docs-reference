@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewData.revisionsBalloonSide (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonSide:member" />
+  (property type)
+
+  - <xref uid="word!Word.View#revisionsBalloonSide:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

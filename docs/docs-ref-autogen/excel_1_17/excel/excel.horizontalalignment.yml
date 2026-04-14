@@ -13,15 +13,28 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellPropertiesFormat.horizontalAlignment (property type)
+  - <xref uid="excel!Excel.CellPropertiesFormat#horizontalAlignment:member" />
+  (property type)
 
-  - Excel.Interfaces.RangeFormatData.horizontalAlignment (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member" />
+  (property type)
 
-  - Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member"
+  /> (property type)
 
-  - Excel.Interfaces.StyleData.horizontalAlignment (property type)
+  - <xref uid="excel!Excel.Interfaces.StyleData#horizontalAlignment:member" />
+  (property type)
 
-  - Excel.Interfaces.StyleUpdateData.horizontalAlignment (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.StyleUpdateData#horizontalAlignment:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.RangeFormat#horizontalAlignment:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Style#horizontalAlignment:member" /> (property type)
 
   #### Examples
 

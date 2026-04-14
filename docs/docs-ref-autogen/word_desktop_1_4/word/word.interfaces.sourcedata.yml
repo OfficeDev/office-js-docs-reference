@@ -6,12 +6,18 @@ fullName: Word.Interfaces.SourceData
 summary: >-
   An interface describing the data returned by calling `source.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.BibliographyData.sources (property type)
-  - Word.Interfaces.SourceCollectionData.items (property type)
-  - Word.Interfaces.SourceCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.BibliographyData#sources:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.SourceCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.SourceCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

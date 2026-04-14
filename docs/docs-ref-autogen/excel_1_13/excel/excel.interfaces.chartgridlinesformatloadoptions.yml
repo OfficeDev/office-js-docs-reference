@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartGridlinesLoadOptions.format (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions#format:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ThreeDimensionalFormatData.presetThreeDimensionalFormat
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetThreeDimensionalFormat:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.ThreeDimensionalFormat#presetThreeDimensionalFormat:member" />
   (property type)
 
 isPreview: false

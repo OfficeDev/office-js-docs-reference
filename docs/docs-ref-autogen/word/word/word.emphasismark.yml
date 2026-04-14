@@ -14,11 +14,18 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FontData.emphasisMark (property type)
+  - <xref uid="word!Word.Font#emphasisMark:member" /> (property type)
 
-  - Word.Interfaces.FontUpdateData.emphasisMark (property type)
+  - <xref uid="word!Word.Interfaces.FontData#emphasisMark:member" /> (property
+  type)
 
-  - Word.Interfaces.RangeData.emphasisMark (property type)
+  - <xref uid="word!Word.Interfaces.FontUpdateData#emphasisMark:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeData#emphasisMark:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Range#emphasisMark:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

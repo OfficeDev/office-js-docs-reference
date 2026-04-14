@@ -23,9 +23,12 @@ remarks: >-
   #### Used by
 
 
-  - Office.EnhancedLocation.getAsync (parameter type)
+  - <xref uid="outlook!Office.EnhancedLocation#getAsync:member" /> (parameter
+  type)
 
-  - Office.EnhancedLocationsChangedEventArgs.enhancedLocations (property type)
+  - <xref
+  uid="outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member"
+  /> (property type)
 
   #### Examples
 

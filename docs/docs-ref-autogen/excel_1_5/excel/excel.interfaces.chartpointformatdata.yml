@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartPointFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartPointFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartPointData.format (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartPointData#format:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

@@ -22,7 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Context.urls (property type)
+  - <xref uid="office!Office.Context#urls:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

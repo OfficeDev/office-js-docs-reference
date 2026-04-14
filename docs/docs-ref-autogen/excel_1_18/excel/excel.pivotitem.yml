@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotManualFilter.selectedItems (property type)
+  - <xref uid="excel!Excel.PivotItemCollection#items:member" /> (property type)
 
-  - Excel.ShowAsRule.baseItem (property type)
+  - <xref uid="excel!Excel.PivotManualFilter#selectedItems:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ShowAsRule#baseItem:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

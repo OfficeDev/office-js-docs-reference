@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartPlotAreaUpdateData
 summary: >-
   An interface for updating data on the `ChartPlotArea` object, for use in
   `chartPlotArea.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartUpdateData.plotArea (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#plotArea:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

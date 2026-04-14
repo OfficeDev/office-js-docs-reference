@@ -9,6 +9,16 @@ remarks: >-
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Paragraph#listItem:member" /> (property type)
+
+  - <xref uid="word!Word.Paragraph#listItemOrNullObject:member" /> (property
+  type)
+
   #### Examples
 
 

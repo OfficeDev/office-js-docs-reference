@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TableCellCollectionLoadOptions.parentRow (property type)
+  - <xref
+  uid="word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member" />
+  (property type)
 
-  - Word.Interfaces.TableCellLoadOptions.parentRow (property type)
+  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#parentRow:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

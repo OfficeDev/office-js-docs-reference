@@ -13,7 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FieldData.type (property type)
+  - <xref uid="word!Word.Field#type:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.FieldData#type:member" /> (property type)
 
   #### Examples
 

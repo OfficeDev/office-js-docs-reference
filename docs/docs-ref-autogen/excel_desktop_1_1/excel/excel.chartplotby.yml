@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartData.plotBy (property type)
+  - <xref uid="excel!Excel.Chart#plotBy:member" /> (property type)
 
-  - Excel.Interfaces.ChartUpdateData.plotBy (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartData#plotBy:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#plotBy:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartMapOptionsData.level (property type)
+  - <xref uid="excel!Excel.ChartMapOptions#level:member" /> (property type)
 
-  - Excel.Interfaces.ChartMapOptionsUpdateData.level (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsData#level:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

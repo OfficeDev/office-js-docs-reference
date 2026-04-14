@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.SelectionMoveLeftRightOptions.extend (property type)
+  - <xref uid="word!Word.SelectionMoveLeftRightOptions#extend:member" />
+  (property type)
 
-  - Word.SelectionMoveUpDownOptions.extend (property type)
+  - <xref uid="word!Word.SelectionMoveUpDownOptions#extend:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

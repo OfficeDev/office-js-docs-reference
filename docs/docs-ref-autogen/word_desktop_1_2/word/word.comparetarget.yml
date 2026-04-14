@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentCompareOptions.compareTarget (property type)
+  - <xref uid="word!Word.DocumentCompareOptions#compareTarget:member" />
+  (property type)
 
   #### Examples
 

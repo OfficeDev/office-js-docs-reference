@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CardLayoutStandardProperties.mainImage (property type)
+  - <xref uid="excel!Excel.CardLayoutStandardProperties#mainImage:member" />
+  (property type)
 
-  - Excel.CardLayoutStandardProperties.subTitle (property type)
+  - <xref uid="excel!Excel.CardLayoutStandardProperties#subTitle:member" />
+  (property type)
 
-  - Excel.CardLayoutStandardProperties.title (property type)
+  - <xref uid="excel!Excel.CardLayoutStandardProperties#title:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

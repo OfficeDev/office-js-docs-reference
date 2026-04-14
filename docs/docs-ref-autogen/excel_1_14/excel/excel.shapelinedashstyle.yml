@@ -12,9 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ShapeLineFormatData.dashStyle (property type)
+  - <xref uid="excel!Excel.Interfaces.ShapeLineFormatData#dashStyle:member" />
+  (property type)
 
-  - Excel.Interfaces.ShapeLineFormatUpdateData.dashStyle (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ShapeLineFormatUpdateData#dashStyle:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.ShapeLineFormat#dashStyle:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

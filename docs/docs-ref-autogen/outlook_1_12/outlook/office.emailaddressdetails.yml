@@ -20,39 +20,47 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentForm.optionalAttendees (property type)
+  - <xref uid="outlook!Office.AppointmentForm#optionalAttendees:member" />
+  (property type)
 
-  - Office.AppointmentForm.requiredAttendees (property type)
+  - <xref uid="outlook!Office.AppointmentForm#requiredAttendees:member" />
+  (property type)
 
-  - Office.AppointmentRead.optionalAttendees (property type)
+  - <xref uid="outlook!Office.AppointmentRead#optionalAttendees:member" />
+  (property type)
 
-  - Office.AppointmentRead.organizer (property type)
+  - <xref uid="outlook!Office.AppointmentRead#organizer:member" /> (property
+  type)
 
-  - Office.AppointmentRead.requiredAttendees (property type)
+  - <xref uid="outlook!Office.AppointmentRead#requiredAttendees:member" />
+  (property type)
 
-  - Office.From.getAsync (parameter type)
+  - <xref uid="outlook!Office.From#getAsync:member" /> (parameter type)
 
-  - Office.MessageForm.bccRecipients (property type)
+  - <xref uid="outlook!Office.MessageForm#bccRecipients:member" /> (property
+  type)
 
-  - Office.MessageForm.ccRecipients (property type)
+  - <xref uid="outlook!Office.MessageForm#ccRecipients:member" /> (property
+  type)
 
-  - Office.MessageForm.toRecipients (property type)
+  - <xref uid="outlook!Office.MessageForm#toRecipients:member" /> (property
+  type)
 
-  - Office.MessageRead.cc (property type)
+  - <xref uid="outlook!Office.MessageRead#cc:member" /> (property type)
 
-  - Office.MessageRead.from (property type)
+  - <xref uid="outlook!Office.MessageRead#from:member" /> (property type)
 
-  - Office.MessageRead.sender (property type)
+  - <xref uid="outlook!Office.MessageRead#sender:member" /> (property type)
 
-  - Office.MessageRead.to (property type)
+  - <xref uid="outlook!Office.MessageRead#to:member" /> (property type)
 
-  - Office.Organizer.getAsync (parameter type)
+  - <xref uid="outlook!Office.Organizer#getAsync:member" /> (parameter type)
 
-  - Office.Recipients.addAsync (parameter type)
+  - <xref uid="outlook!Office.Recipients#addAsync:member" /> (parameter type)
 
-  - Office.Recipients.getAsync (parameter type)
+  - <xref uid="outlook!Office.Recipients#getAsync:member" /> (parameter type)
 
-  - Office.Recipients.setAsync (parameter type)
+  - <xref uid="outlook!Office.Recipients#setAsync:member" /> (parameter type)
 
 isPreview: false
 isDeprecated: false

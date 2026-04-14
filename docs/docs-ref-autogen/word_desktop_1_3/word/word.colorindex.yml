@@ -12,28 +12,51 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BorderUniversalData.colorIndex (property type)
+  - <xref uid="word!Word.BorderUniversal#colorIndex:member" /> (property type)
 
-  - Word.Interfaces.BorderUniversalUpdateData.colorIndex (property type)
+  - <xref uid="word!Word.Font#colorIndex:member" /> (property type)
 
-  - Word.Interfaces.FontData.colorIndex (property type)
+  - <xref uid="word!Word.Font#colorIndexBidirectional:member" /> (property type)
 
-  - Word.Interfaces.FontData.colorIndexBidirectional (property type)
-
-  - Word.Interfaces.FontUpdateData.colorIndex (property type)
-
-  - Word.Interfaces.FontUpdateData.colorIndexBidirectional (property type)
-
-  - Word.Interfaces.ShadingUniversalData.backgroundPatternColorIndex (property
-  type)
-
-  - Word.Interfaces.ShadingUniversalData.foregroundPatternColorIndex (property
-  type)
-
-  - Word.Interfaces.ShadingUniversalUpdateData.backgroundPatternColorIndex
+  - <xref uid="word!Word.Interfaces.BorderUniversalData#colorIndex:member" />
   (property type)
 
-  - Word.Interfaces.ShadingUniversalUpdateData.foregroundPatternColorIndex
+  - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#colorIndex:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.FontData#colorIndex:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.FontData#colorIndexBidirectional:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#colorIndex:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShadingUniversalData#backgroundPatternColorIndex:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShadingUniversalData#foregroundPatternColorIndex:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShadingUniversalUpdateData#backgroundPatternColorIndex:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ShadingUniversalUpdateData#foregroundPatternColorIndex:member"
+  /> (property type)
+
+  - <xref uid="word!Word.ShadingUniversal#backgroundPatternColorIndex:member" />
+  (property type)
+
+  - <xref uid="word!Word.ShadingUniversal#foregroundPatternColorIndex:member" />
   (property type)
 
 isPreview: false

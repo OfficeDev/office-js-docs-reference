@@ -14,11 +14,18 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.TableCellData.textRuns (property type)
+  - <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData#textRuns:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.TableCellUpdateData.textRuns (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member" />
+  (property type)
 
-  - PowerPoint.TableCellProperties.textRuns (property type)
+  - <xref uid="powerpoint!PowerPoint.TableCell#textRuns:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCellProperties#textRuns:member" />
+  (property type)
 
   #### Examples
 

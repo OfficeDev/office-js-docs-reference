@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartErrorBarsFormat` object, for use
   in `chartErrorBarsFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartErrorBarsUpdateData.format (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsUpdateData#format:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

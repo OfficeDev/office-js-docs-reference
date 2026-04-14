@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.WindowCollectionLoadOptions.view (property type)
+  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#view:member" />
+  (property type)
 
-  - Word.Interfaces.WindowLoadOptions.view (property type)
+  - <xref uid="word!Word.Interfaces.WindowLoadOptions#view:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableAddOptions.specificCellProperties (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.TableAddOptions#specificCellProperties:member" />
+  (property type)
 
-  - PowerPoint.TableAddOptions.uniformCellProperties (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.TableAddOptions#uniformCellProperties:member" />
+  (property type)
 
   #### Examples
 

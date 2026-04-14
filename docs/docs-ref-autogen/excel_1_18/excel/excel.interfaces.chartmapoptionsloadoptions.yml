@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartSeriesLoadOptions.mapOptions (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#mapOptions:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,6 +13,14 @@ remarks: >-
 
   This interface isn't supported in Excel on the web.
 
+
+  #### Used by
+
+
+  - <xref
+  uid="excel!Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member"
+  /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface

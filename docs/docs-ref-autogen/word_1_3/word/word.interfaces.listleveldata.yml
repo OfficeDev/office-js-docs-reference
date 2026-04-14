@@ -6,11 +6,15 @@ fullName: Word.Interfaces.ListLevelData
 summary: >-
   An interface describing the data returned by calling `listLevel.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.ListLevelCollectionData.items (property type)
-  - Word.Interfaces.ListLevelCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.ListLevelCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ListLevelCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

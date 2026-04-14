@@ -13,9 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentData.changeTrackingMode (property type)
+  - <xref uid="word!Word.Document#changeTrackingMode:member" /> (property type)
 
-  - Word.Interfaces.DocumentUpdateData.changeTrackingMode (property type)
+  - <xref uid="word!Word.Interfaces.DocumentData#changeTrackingMode:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member" />
+  (property type)
 
   #### Examples
 

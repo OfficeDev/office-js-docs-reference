@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartAxisLoadOptions.majorGridlines (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartAxisLoadOptions.minorGridlines (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -9,6 +9,12 @@ remarks: >-
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
+
+  #### Used by
+
+
+  - <xref uid="visio!Visio.Shape#view:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

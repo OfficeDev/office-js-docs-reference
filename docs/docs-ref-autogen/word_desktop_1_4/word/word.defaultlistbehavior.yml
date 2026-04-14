@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListTemplateApplyOptions.defaultListBehavior (property type)
+  - <xref uid="word!Word.ListTemplateApplyOptions#defaultListBehavior:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

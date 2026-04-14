@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.WorkbookLoadOptions.protection (property type)
+  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#protection:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

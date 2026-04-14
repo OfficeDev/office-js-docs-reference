@@ -12,159 +12,210 @@ remarks: >-
   #### Used by
 
 
-  - Excel.FilterCriteria.icon (property type)
+  - <xref uid="excel!Excel.FilterCriteria#icon:member" /> (property type)
 
-  - Excel.FiveArrowsGraySet.grayDownArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayDownArrow:member" /> (property
+  type)
 
-  - Excel.FiveArrowsGraySet.grayDownInclineArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member" />
+  (property type)
 
-  - Excel.FiveArrowsGraySet.graySideArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsGraySet#graySideArrow:member" /> (property
+  type)
 
-  - Excel.FiveArrowsGraySet.grayUpArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayUpArrow:member" /> (property
+  type)
 
-  - Excel.FiveArrowsGraySet.grayUpInclineArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member" />
+  (property type)
 
-  - Excel.FiveArrowsSet.greenUpArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsSet#greenUpArrow:member" /> (property type)
 
-  - Excel.FiveArrowsSet.redDownArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsSet#redDownArrow:member" /> (property type)
 
-  - Excel.FiveArrowsSet.yellowDownInclineArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member" />
+  (property type)
 
-  - Excel.FiveArrowsSet.yellowSideArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsSet#yellowSideArrow:member" /> (property
+  type)
 
-  - Excel.FiveArrowsSet.yellowUpInclineArrow (property type)
+  - <xref uid="excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member" />
+  (property type)
 
-  - Excel.FiveBoxesSet.fourFilledBoxes (property type)
+  - <xref uid="excel!Excel.FiveBoxesSet#fourFilledBoxes:member" /> (property
+  type)
 
-  - Excel.FiveBoxesSet.noFilledBoxes (property type)
+  - <xref uid="excel!Excel.FiveBoxesSet#noFilledBoxes:member" /> (property type)
 
-  - Excel.FiveBoxesSet.oneFilledBox (property type)
+  - <xref uid="excel!Excel.FiveBoxesSet#oneFilledBox:member" /> (property type)
 
-  - Excel.FiveBoxesSet.threeFilledBoxes (property type)
+  - <xref uid="excel!Excel.FiveBoxesSet#threeFilledBoxes:member" /> (property
+  type)
 
-  - Excel.FiveBoxesSet.twoFilledBoxes (property type)
+  - <xref uid="excel!Excel.FiveBoxesSet#twoFilledBoxes:member" /> (property
+  type)
 
-  - Excel.FiveQuartersSet.blackCircle (property type)
+  - <xref uid="excel!Excel.FiveQuartersSet#blackCircle:member" /> (property
+  type)
 
-  - Excel.FiveQuartersSet.circleWithOneWhiteQuarter (property type)
+  - <xref uid="excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member" />
+  (property type)
 
-  - Excel.FiveQuartersSet.circleWithThreeWhiteQuarters (property type)
+  - <xref uid="excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member"
+  /> (property type)
 
-  - Excel.FiveQuartersSet.circleWithTwoWhiteQuarters (property type)
+  - <xref uid="excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member" />
+  (property type)
 
-  - Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters (property type)
+  - <xref uid="excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member"
+  /> (property type)
 
-  - Excel.FiveRatingSet.fourBars (property type)
+  - <xref uid="excel!Excel.FiveRatingSet#fourBars:member" /> (property type)
 
-  - Excel.FiveRatingSet.noBars (property type)
+  - <xref uid="excel!Excel.FiveRatingSet#noBars:member" /> (property type)
 
-  - Excel.FiveRatingSet.oneBar (property type)
+  - <xref uid="excel!Excel.FiveRatingSet#oneBar:member" /> (property type)
 
-  - Excel.FiveRatingSet.threeBars (property type)
+  - <xref uid="excel!Excel.FiveRatingSet#threeBars:member" /> (property type)
 
-  - Excel.FiveRatingSet.twoBars (property type)
+  - <xref uid="excel!Excel.FiveRatingSet#twoBars:member" /> (property type)
 
-  - Excel.FourArrowsGraySet.grayDownArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayDownArrow:member" /> (property
+  type)
 
-  - Excel.FourArrowsGraySet.grayDownInclineArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member" />
+  (property type)
 
-  - Excel.FourArrowsGraySet.grayUpArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayUpArrow:member" /> (property
+  type)
 
-  - Excel.FourArrowsGraySet.grayUpInclineArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member" />
+  (property type)
 
-  - Excel.FourArrowsSet.greenUpArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsSet#greenUpArrow:member" /> (property type)
 
-  - Excel.FourArrowsSet.redDownArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsSet#redDownArrow:member" /> (property type)
 
-  - Excel.FourArrowsSet.yellowDownInclineArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsSet#yellowDownInclineArrow:member" />
+  (property type)
 
-  - Excel.FourArrowsSet.yellowUpInclineArrow (property type)
+  - <xref uid="excel!Excel.FourArrowsSet#yellowUpInclineArrow:member" />
+  (property type)
 
-  - Excel.FourRatingSet.fourBars (property type)
+  - <xref uid="excel!Excel.FourRatingSet#fourBars:member" /> (property type)
 
-  - Excel.FourRatingSet.oneBar (property type)
+  - <xref uid="excel!Excel.FourRatingSet#oneBar:member" /> (property type)
 
-  - Excel.FourRatingSet.threeBars (property type)
+  - <xref uid="excel!Excel.FourRatingSet#threeBars:member" /> (property type)
 
-  - Excel.FourRatingSet.twoBars (property type)
+  - <xref uid="excel!Excel.FourRatingSet#twoBars:member" /> (property type)
 
-  - Excel.FourRedToBlackSet.blackCircle (property type)
+  - <xref uid="excel!Excel.FourRedToBlackSet#blackCircle:member" /> (property
+  type)
 
-  - Excel.FourRedToBlackSet.grayCircle (property type)
+  - <xref uid="excel!Excel.FourRedToBlackSet#grayCircle:member" /> (property
+  type)
 
-  - Excel.FourRedToBlackSet.pinkCircle (property type)
+  - <xref uid="excel!Excel.FourRedToBlackSet#pinkCircle:member" /> (property
+  type)
 
-  - Excel.FourRedToBlackSet.redCircle (property type)
+  - <xref uid="excel!Excel.FourRedToBlackSet#redCircle:member" /> (property
+  type)
 
-  - Excel.FourTrafficLightsSet.blackCircleWithBorder (property type)
+  - <xref uid="excel!Excel.FourTrafficLightsSet#blackCircleWithBorder:member" />
+  (property type)
 
-  - Excel.FourTrafficLightsSet.greenCircle (property type)
+  - <xref uid="excel!Excel.FourTrafficLightsSet#greenCircle:member" /> (property
+  type)
 
-  - Excel.FourTrafficLightsSet.redCircleWithBorder (property type)
+  - <xref uid="excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member" />
+  (property type)
 
-  - Excel.FourTrafficLightsSet.yellowCircle (property type)
+  - <xref uid="excel!Excel.FourTrafficLightsSet#yellowCircle:member" />
+  (property type)
 
-  - Excel.SortField.icon (property type)
+  - <xref uid="excel!Excel.SortField#icon:member" /> (property type)
 
-  - Excel.ThreeArrowsGraySet.grayDownArrow (property type)
+  - <xref uid="excel!Excel.ThreeArrowsGraySet#grayDownArrow:member" /> (property
+  type)
 
-  - Excel.ThreeArrowsGraySet.graySideArrow (property type)
+  - <xref uid="excel!Excel.ThreeArrowsGraySet#graySideArrow:member" /> (property
+  type)
 
-  - Excel.ThreeArrowsGraySet.grayUpArrow (property type)
+  - <xref uid="excel!Excel.ThreeArrowsGraySet#grayUpArrow:member" /> (property
+  type)
 
-  - Excel.ThreeArrowsSet.greenUpArrow (property type)
+  - <xref uid="excel!Excel.ThreeArrowsSet#greenUpArrow:member" /> (property
+  type)
 
-  - Excel.ThreeArrowsSet.redDownArrow (property type)
+  - <xref uid="excel!Excel.ThreeArrowsSet#redDownArrow:member" /> (property
+  type)
 
-  - Excel.ThreeArrowsSet.yellowSideArrow (property type)
+  - <xref uid="excel!Excel.ThreeArrowsSet#yellowSideArrow:member" /> (property
+  type)
 
-  - Excel.ThreeFlagsSet.greenFlag (property type)
+  - <xref uid="excel!Excel.ThreeFlagsSet#greenFlag:member" /> (property type)
 
-  - Excel.ThreeFlagsSet.redFlag (property type)
+  - <xref uid="excel!Excel.ThreeFlagsSet#redFlag:member" /> (property type)
 
-  - Excel.ThreeFlagsSet.yellowFlag (property type)
+  - <xref uid="excel!Excel.ThreeFlagsSet#yellowFlag:member" /> (property type)
 
-  - Excel.ThreeSignsSet.greenCircle (property type)
+  - <xref uid="excel!Excel.ThreeSignsSet#greenCircle:member" /> (property type)
 
-  - Excel.ThreeSignsSet.redDiamond (property type)
+  - <xref uid="excel!Excel.ThreeSignsSet#redDiamond:member" /> (property type)
 
-  - Excel.ThreeSignsSet.yellowTriangle (property type)
+  - <xref uid="excel!Excel.ThreeSignsSet#yellowTriangle:member" /> (property
+  type)
 
-  - Excel.ThreeStarsSet.goldStar (property type)
+  - <xref uid="excel!Excel.ThreeStarsSet#goldStar:member" /> (property type)
 
-  - Excel.ThreeStarsSet.halfGoldStar (property type)
+  - <xref uid="excel!Excel.ThreeStarsSet#halfGoldStar:member" /> (property type)
 
-  - Excel.ThreeStarsSet.silverStar (property type)
+  - <xref uid="excel!Excel.ThreeStarsSet#silverStar:member" /> (property type)
 
-  - Excel.ThreeSymbols2Set.greenCheck (property type)
+  - <xref uid="excel!Excel.ThreeSymbols2Set#greenCheck:member" /> (property
+  type)
 
-  - Excel.ThreeSymbols2Set.redCross (property type)
+  - <xref uid="excel!Excel.ThreeSymbols2Set#redCross:member" /> (property type)
 
-  - Excel.ThreeSymbols2Set.yellowExclamation (property type)
+  - <xref uid="excel!Excel.ThreeSymbols2Set#yellowExclamation:member" />
+  (property type)
 
-  - Excel.ThreeSymbolsSet.greenCheckSymbol (property type)
+  - <xref uid="excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member" /> (property
+  type)
 
-  - Excel.ThreeSymbolsSet.redCrossSymbol (property type)
+  - <xref uid="excel!Excel.ThreeSymbolsSet#redCrossSymbol:member" /> (property
+  type)
 
-  - Excel.ThreeSymbolsSet.yellowExclamationSymbol (property type)
+  - <xref uid="excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member" />
+  (property type)
 
-  - Excel.ThreeTrafficLights1Set.greenCircle (property type)
+  - <xref uid="excel!Excel.ThreeTrafficLights1Set#greenCircle:member" />
+  (property type)
 
-  - Excel.ThreeTrafficLights1Set.redCircleWithBorder (property type)
+  - <xref uid="excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member" />
+  (property type)
 
-  - Excel.ThreeTrafficLights1Set.yellowCircle (property type)
+  - <xref uid="excel!Excel.ThreeTrafficLights1Set#yellowCircle:member" />
+  (property type)
 
-  - Excel.ThreeTrafficLights2Set.greenTrafficLight (property type)
+  - <xref uid="excel!Excel.ThreeTrafficLights2Set#greenTrafficLight:member" />
+  (property type)
 
-  - Excel.ThreeTrafficLights2Set.redTrafficLight (property type)
+  - <xref uid="excel!Excel.ThreeTrafficLights2Set#redTrafficLight:member" />
+  (property type)
 
-  - Excel.ThreeTrafficLights2Set.yellowTrafficLight (property type)
+  - <xref uid="excel!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member" />
+  (property type)
 
-  - Excel.ThreeTrianglesSet.greenUpTriangle (property type)
+  - <xref uid="excel!Excel.ThreeTrianglesSet#greenUpTriangle:member" />
+  (property type)
 
-  - Excel.ThreeTrianglesSet.redDownTriangle (property type)
+  - <xref uid="excel!Excel.ThreeTrianglesSet#redDownTriangle:member" />
+  (property type)
 
-  - Excel.ThreeTrianglesSet.yellowDash (property type)
+  - <xref uid="excel!Excel.ThreeTrianglesSet#yellowDash:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

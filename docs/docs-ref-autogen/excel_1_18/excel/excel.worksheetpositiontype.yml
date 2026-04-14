@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.InsertWorksheetOptions.positionType (property type)
+  - <xref uid="excel!Excel.InsertWorksheetOptions#positionType:member" />
+  (property type)
 
   #### Examples
 

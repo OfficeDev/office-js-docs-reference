@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TextFrameData.orientation (property type)
+  - <xref uid="word!Word.Interfaces.TextFrameData#orientation:member" />
+  (property type)
 
-  - Word.Interfaces.TextFrameUpdateData.orientation (property type)
+  - <xref uid="word!Word.Interfaces.TextFrameUpdateData#orientation:member" />
+  (property type)
+
+  - <xref uid="word!Word.TextFrame#orientation:member" /> (property type)
 
   #### Examples
 

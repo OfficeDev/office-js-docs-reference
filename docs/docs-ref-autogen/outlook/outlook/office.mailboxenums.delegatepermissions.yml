@@ -20,7 +20,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.SharedProperties.delegatePermissions (property type)
+  - <xref uid="outlook!Office.SharedProperties#delegatePermissions:member" />
+  (property type)
 
   #### Examples
 

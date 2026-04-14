@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentLibraryVersionCollectionData.items (property type)
+  - <xref
+  uid="word!Word.Interfaces.DocumentLibraryVersionCollectionData#items:member"
+  /> (property type)
 
-  - Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

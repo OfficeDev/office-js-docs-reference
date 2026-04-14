@@ -29,7 +29,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.MessageCompose.from (property type)
+  - <xref uid="outlook!Office.MessageCompose#from:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

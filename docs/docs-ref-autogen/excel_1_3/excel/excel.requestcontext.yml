@@ -8,17 +8,151 @@ summary: >-
   the Office add-in and the Excel application run in two different processes,
   the request context is required to get access to the Excel object model from
   the add-in.
-remarks: |-
+remarks: >-
+
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Application#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Binding#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.BindingCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Chart#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAreaFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxes#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxis#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxisFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxisTitle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartAxisTitleFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartDataLabelFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartDataLabels#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartFill#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartFont#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartGridlines#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartGridlinesFormat#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartLegend#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartLegendFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartLineFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPoint#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPointFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartPointsCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartSeries#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartSeriesCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.ChartSeriesFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTitle#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.ChartTitleFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Filter#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.FormatProtection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.FunctionResult#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Functions#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.NamedItem#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.NamedItemCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.PivotTable#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.PivotTableCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Range#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeBorder#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeBorderCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.RangeFill#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeFont#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeFormat#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeSort#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeView#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.RangeViewCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Table#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableColumn#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableColumnCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.TableRow#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableRowCollection#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.TableSort#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Workbook#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.Worksheet#context:member" /> (property type)
+
+  - <xref uid="excel!Excel.WorksheetCollection#context:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.WorksheetProtection#context:member" /> (property
+  type)
 
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Excel.run(async (context: Excel.RequestContext) => {
     const workbook = context.workbook;
     // Interact with the Excel workbook...
   });
+
   ```
 
 isPreview: false

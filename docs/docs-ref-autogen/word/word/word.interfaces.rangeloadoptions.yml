@@ -12,104 +12,162 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BookmarkCollectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.BookmarkLoadOptions.range (property type)
-
-  - Word.Interfaces.BreakCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.BreakLoadOptions.range (property type)
-
-  - Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range
+  - <xref uid="word!Word.Interfaces.BookmarkLoadOptions#range:member" />
   (property type)
 
-  - Word.Interfaces.CoauthoringLockCollectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member" />
+  (property type)
 
-  - Word.Interfaces.CoauthoringLockLoadOptions.range (property type)
-
-  - Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.CoauthoringUpdateLoadOptions.range (property type)
-
-  - Word.Interfaces.ConflictCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.ConflictLoadOptions.range (property type)
-
-  - Word.Interfaces.CritiqueAnnotationLoadOptions.range (property type)
-
-  - Word.Interfaces.DatePickerContentControlLoadOptions.range (property type)
-
-  - Word.Interfaces.DocumentLoadOptions.content (property type)
-
-  - Word.Interfaces.EditorLoadOptions.nextRange (property type)
-
-  - Word.Interfaces.EditorLoadOptions.range (property type)
-
-  - Word.Interfaces.FieldCollectionLoadOptions.result (property type)
-
-  - Word.Interfaces.FieldLoadOptions.result (property type)
-
-  - Word.Interfaces.FrameCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.FrameLoadOptions.range (property type)
-
-  - Word.Interfaces.GroupContentControlLoadOptions.range (property type)
-
-  - Word.Interfaces.HtmlDivisionCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.HtmlDivisionLoadOptions.range (property type)
-
-  - Word.Interfaces.HyperlinkCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.HyperlinkLoadOptions.range (property type)
-
-  - Word.Interfaces.IndexCollectionLoadOptions.range (property type)
-
-  - Word.Interfaces.IndexLoadOptions.range (property type)
-
-  - Word.Interfaces.NoteItemCollectionLoadOptions.reference (property type)
-
-  - Word.Interfaces.NoteItemLoadOptions.reference (property type)
-
-  - Word.Interfaces.PictureContentControlLoadOptions.range (property type)
-
-  - Word.Interfaces.RepeatingSectionContentControlLoadOptions.range (property
+  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" /> (property
   type)
 
-  - Word.Interfaces.RepeatingSectionItemLoadOptions.range (property type)
+  - <xref
+  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.RevisionCollectionLoadOptions.movedRange (property type)
+  - <xref
+  uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.RevisionCollectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member" />
+  (property type)
 
-  - Word.Interfaces.RevisionLoadOptions.movedRange (property type)
+  - <xref
+  uid="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.RevisionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.SelectionLoadOptions.formattedText (property type)
+  - <xref uid="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.SelectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.ConflictLoadOptions#range:member" />
+  (property type)
 
-  - Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range (property
+  - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#content:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.EditorLoadOptions#nextRange:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member" /> (property
   type)
 
-  - Word.Interfaces.TableOfAuthoritiesLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
+  (property type)
 
-  - Word.Interfaces.TableOfContentsCollectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
+  type)
 
-  - Word.Interfaces.TableOfContentsLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member" />
+  (property type)
 
-  - Word.Interfaces.TableOfFiguresCollectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" /> (property
+  type)
 
-  - Word.Interfaces.TableOfFiguresLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.TableRowCollectionLoadOptions.range (property type)
+  - <xref
+  uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member" />
+  (property type)
 
-  - Word.Interfaces.TableRowLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeCollectionLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
+  /> (property type)
 
-  - Word.Interfaces.XmlNodeLoadOptions.range (property type)
+  - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.IndexCollectionLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member" /> (property
+  type)
+
+  - <xref
+  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#movedRange:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#formattedText:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#range:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfContentsLoadOptions#range:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#range:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#range:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartMapOptionsUpdateData
 summary: >-
   An interface for updating data on the `ChartMapOptions` object, for use in
   `chartMapOptions.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ChartSeriesUpdateData.mapOptions (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#mapOptions:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

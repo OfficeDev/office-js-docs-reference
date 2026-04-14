@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ContentControlData.subtype (property type)
+  - <xref uid="word!Word.ContentControl#subtype:member" /> (property type)
 
-  - Word.Interfaces.ContentControlData.type (property type)
+  - <xref uid="word!Word.ContentControl#type:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.ContentControlData#subtype:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ContentControlData#type:member" /> (property
+  type)
 
   #### Examples
 

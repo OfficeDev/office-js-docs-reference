@@ -13,17 +13,30 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TableCellData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableCellData#verticalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableCellUpdateData.verticalAlignment (property type)
+  - <xref
+  uid="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableData#verticalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableRowData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableRowData#verticalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TableRowUpdateData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member"
+  /> (property type)
 
-  - Word.Interfaces.TableUpdateData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TableUpdateData#verticalAlignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.Table#verticalAlignment:member" /> (property type)
+
+  - <xref uid="word!Word.TableCell#verticalAlignment:member" /> (property type)
+
+  - <xref uid="word!Word.TableRow#verticalAlignment:member" /> (property type)
 
   #### Examples
 

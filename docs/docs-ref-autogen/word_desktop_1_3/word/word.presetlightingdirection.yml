@@ -14,11 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ThreeDimensionalFormatData.presetLightingDirection (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetLightingDirection:member"
+  /> (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLightingDirection
-  (property type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetLightingDirection:member"
+  /> (property type)
+
+  - <xref uid="word!Word.ThreeDimensionalFormat#presetLightingDirection:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

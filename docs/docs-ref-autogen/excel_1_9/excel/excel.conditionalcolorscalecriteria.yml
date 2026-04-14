@@ -13,10 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ColorScaleConditionalFormatData.criteria (property type)
+  - <xref uid="excel!Excel.ColorScaleConditionalFormat#criteria:member" />
+  (property type)
 
-  - Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member"
+  /> (property type)
 
   #### Examples
 

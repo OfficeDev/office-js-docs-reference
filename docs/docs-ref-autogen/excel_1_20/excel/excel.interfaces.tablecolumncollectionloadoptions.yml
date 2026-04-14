@@ -12,11 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TableCollectionLoadOptions.columns (property type)
+  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member"
+  /> (property type)
 
-  - Excel.Interfaces.TableLoadOptions.columns (property type)
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#columns:member" />
+  (property type)
 
-  - Excel.Interfaces.TableScopedCollectionLoadOptions.columns (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#columns:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

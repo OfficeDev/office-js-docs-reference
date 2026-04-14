@@ -17,9 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BasicCompactLayout.icon (property type)
+  - <xref uid="excel!Excel.BasicCompactLayout#icon:member" /> (property type)
 
-  - Excel.EntityCompactLayout.icon (property type)
+  - <xref uid="excel!Excel.EntityCompactLayout#icon:member" /> (property type)
 
   #### Examples
 

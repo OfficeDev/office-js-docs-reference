@@ -6,11 +6,16 @@ fullName: Excel.Interfaces.IconSetConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `iconSetConditionalFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ConditionalFormatData.iconSet (property type)
-  - Excel.Interfaces.ConditionalFormatData.iconSetOrNullObject (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#iconSet:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatData#iconSetOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

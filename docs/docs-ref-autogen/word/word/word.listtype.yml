@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ListFormatData.listType (property type)
+  - <xref uid="word!Word.Interfaces.ListFormatData#listType:member" /> (property
+  type)
+
+  - <xref uid="word!Word.ListFormat#listType:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

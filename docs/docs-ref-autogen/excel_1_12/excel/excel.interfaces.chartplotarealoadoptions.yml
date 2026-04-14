@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartCollectionLoadOptions.plotArea (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#plotArea:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartLoadOptions.plotArea (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#plotArea:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

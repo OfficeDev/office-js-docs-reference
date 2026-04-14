@@ -38,11 +38,14 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.sensitivityLabel (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#sensitivityLabel:member" />
+  (property type)
 
-  - Office.LoadedMessageCompose.sensitivityLabel (property type)
+  - <xref uid="outlook!Office.LoadedMessageCompose#sensitivityLabel:member" />
+  (property type)
 
-  - Office.MessageCompose.sensitivityLabel (property type)
+  - <xref uid="outlook!Office.MessageCompose#sensitivityLabel:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

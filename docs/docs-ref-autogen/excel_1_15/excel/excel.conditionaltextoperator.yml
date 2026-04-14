@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalTextComparisonRule.operator (property type)
+  - <xref uid="excel!Excel.ConditionalTextComparisonRule#operator:member" />
+  (property type)
 
   #### Examples
 

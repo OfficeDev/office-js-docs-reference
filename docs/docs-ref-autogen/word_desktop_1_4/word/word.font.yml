@@ -9,6 +9,31 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Body#font:member" /> (property type)
+
+  - <xref uid="word!Word.ConditionalStyle#font:member" /> (property type)
+
+  - <xref uid="word!Word.ContentControl#font:member" /> (property type)
+
+  - <xref uid="word!Word.ListLevel#font:member" /> (property type)
+
+  - <xref uid="word!Word.Paragraph#font:member" /> (property type)
+
+  - <xref uid="word!Word.Range#font:member" /> (property type)
+
+  - <xref uid="word!Word.Selection#font:member" /> (property type)
+
+  - <xref uid="word!Word.Style#font:member" /> (property type)
+
+  - <xref uid="word!Word.Table#font:member" /> (property type)
+
+  - <xref uid="word!Word.TableRow#font:member" /> (property type)
+
   #### Examples
 
 

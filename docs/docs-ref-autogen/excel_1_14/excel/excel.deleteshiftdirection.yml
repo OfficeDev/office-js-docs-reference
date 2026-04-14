@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChangeDirectionState.deleteShiftDirection (property type)
+  - <xref uid="excel!Excel.ChangeDirectionState#deleteShiftDirection:member" />
+  (property type)
 
   #### Examples
 

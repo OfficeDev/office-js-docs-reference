@@ -18,11 +18,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentLoadOptions.selection (property type)
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#selection:member" />
+  (property type)
 
-  - Word.Interfaces.PaneCollectionLoadOptions.selection (property type)
+  - <xref uid="word!Word.Interfaces.PaneCollectionLoadOptions#selection:member"
+  /> (property type)
 
-  - Word.Interfaces.PaneLoadOptions.selection (property type)
+  - <xref uid="word!Word.Interfaces.PaneLoadOptions#selection:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

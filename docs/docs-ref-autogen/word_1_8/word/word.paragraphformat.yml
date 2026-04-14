@@ -9,6 +9,13 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Style#paragraphFormat:member" /> (property type)
+
   #### Examples
 
 

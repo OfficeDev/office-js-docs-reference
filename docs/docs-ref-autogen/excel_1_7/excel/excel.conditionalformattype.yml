@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatData.type (property type)
+  - <xref uid="excel!Excel.ConditionalFormat#type:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#type:member" />
+  (property type)
 
   #### Examples
 

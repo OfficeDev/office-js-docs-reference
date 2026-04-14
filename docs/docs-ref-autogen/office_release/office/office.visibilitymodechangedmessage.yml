@@ -4,16 +4,21 @@ uid: office!Office.VisibilityModeChangedMessage:interface
 package: office!
 fullName: Office.VisibilityModeChangedMessage
 summary: Message used in the `onVisibilityModeChanged` invocation.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - Office.Addin.onVisibilityModeChanged (parameter type)
+
+  - <xref uid="office!Office.Addin#onVisibilityModeChanged:member" /> (parameter
+  type)
+
   #### Examples
 
+
   ```TypeScript
+
   Office.onReady(() => {
       Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
           if (args.visibilityMode === Office.VisibilityMode.taskpane) {
@@ -23,6 +28,7 @@ remarks: |-
 
       // Other startup tasks.
   });
+
   ```
 
 isPreview: false

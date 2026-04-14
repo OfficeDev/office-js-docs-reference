@@ -8,6 +8,16 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.CoauthorCollection#items:member" /> (property type)
+
+  - <xref uid="word!Word.Coauthoring#me:member" /> (property type)
+
+  - <xref uid="word!Word.CoauthoringLock#owner:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

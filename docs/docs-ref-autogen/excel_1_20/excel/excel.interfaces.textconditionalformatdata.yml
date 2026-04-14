@@ -10,10 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatData.textComparison (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatData#textComparison:member" />
+  (property type)
 
-  - Excel.Interfaces.ConditionalFormatData.textComparisonOrNullObject (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatData#textComparisonOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

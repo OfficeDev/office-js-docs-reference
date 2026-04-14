@@ -15,15 +15,27 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ThreeDimensionalFormatData.bevelBottomType (property type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelBottomType:member"
+  /> (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatData.bevelTopType (property type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelTopType:member" />
+  (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelBottomType (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelBottomType:member"
+  /> (property type)
 
-  - Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelTopType (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelTopType:member"
+  /> (property type)
+
+  - <xref uid="word!Word.ThreeDimensionalFormat#bevelBottomType:member" />
+  (property type)
+
+  - <xref uid="word!Word.ThreeDimensionalFormat#bevelTopType:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

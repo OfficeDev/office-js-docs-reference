@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupData.layoutMode (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#layoutMode:member" />
+  (property type)
 
-  - Word.Interfaces.PageSetupUpdateData.layoutMode (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#layoutMode:member" />
+  (property type)
+
+  - <xref uid="word!Word.PageSetup#layoutMode:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

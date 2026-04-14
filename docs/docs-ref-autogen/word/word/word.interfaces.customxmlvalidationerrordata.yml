@@ -10,12 +10,16 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.CustomXmlPartData.errors (property type)
+  - <xref uid="word!Word.Interfaces.CustomXmlPartData#errors:member" />
+  (property type)
 
-  - Word.Interfaces.CustomXmlValidationErrorCollectionData.items (property type)
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionData#items:member"
+  /> (property type)
 
-  - Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData.items (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.CultureInfoLoadOptions.datetimeFormat (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.CultureInfoLoadOptions#datetimeFormat:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

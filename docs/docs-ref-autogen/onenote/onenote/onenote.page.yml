@@ -8,6 +8,16 @@ remarks: >-
   \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="onenote!OneNote.InkAnalysis#page:member" /> (property type)
+
+  - <xref uid="onenote!OneNote.PageCollection#items:member" /> (property type)
+
+  - <xref uid="onenote!OneNote.PageContent#parentPage:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

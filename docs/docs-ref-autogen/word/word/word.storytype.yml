@@ -12,11 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BookmarkData.storyType (property type)
+  - <xref uid="word!Word.Bookmark#storyType:member" /> (property type)
 
-  - Word.Interfaces.RangeData.storyType (property type)
+  - <xref uid="word!Word.Interfaces.BookmarkData#storyType:member" /> (property
+  type)
 
-  - Word.Interfaces.SelectionData.storyType (property type)
+  - <xref uid="word!Word.Interfaces.RangeData#storyType:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.SelectionData#storyType:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Range#storyType:member" /> (property type)
+
+  - <xref uid="word!Word.Selection#storyType:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

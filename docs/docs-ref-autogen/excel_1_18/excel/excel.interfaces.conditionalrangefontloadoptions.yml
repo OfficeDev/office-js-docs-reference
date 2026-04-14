@@ -14,7 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalRangeFormatLoadOptions.font (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#font:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

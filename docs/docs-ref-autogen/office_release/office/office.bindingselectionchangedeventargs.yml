@@ -4,10 +4,12 @@ uid: office!Office.BindingSelectionChangedEventArgs:interface
 package: office!
 fullName: Office.BindingSelectionChangedEventArgs
 summary: Provides information about the binding that raised the SelectionChanged event.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Office.RemoveHandlerOptions.handler (property type)
+
+  - <xref uid="office!Office.RemoveHandlerOptions#handler:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ShapeData.type (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#type:member" /> (property type)
+
+  - <xref uid="word!Word.Shape#type:member" /> (property type)
 
   #### Examples
 

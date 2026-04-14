@@ -14,9 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.ShapeLineFormatData.style (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member" />
+  (property type)
 
-  - PowerPoint.Interfaces.ShapeLineFormatUpdateData.style (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#style:member" /> (property
+  type)
 
   #### Examples
 

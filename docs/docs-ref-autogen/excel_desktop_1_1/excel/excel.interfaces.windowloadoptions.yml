@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ApplicationLoadOptions.activeWindow (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ApplicationLoadOptions#activeWindow:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

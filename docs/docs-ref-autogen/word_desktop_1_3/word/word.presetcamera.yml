@@ -12,7 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ThreeDimensionalFormatData.presetCamera (property type)
+  - <xref
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetCamera:member" />
+  (property type)
+
+  - <xref uid="word!Word.ThreeDimensionalFormat#presetCamera:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -43,7 +43,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.Mailbox.loadItemByIdAsync (parameter type)
+  - <xref uid="outlook!Office.Mailbox#loadItemByIdAsync:member" /> (parameter
+  type)
 
   #### Examples
 

@@ -11,6 +11,15 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="excel!Excel.Workbook#tables:member" /> (property type)
+
+  - <xref uid="excel!Excel.Worksheet#tables:member" /> (property type)
+
   #### Examples
 
 

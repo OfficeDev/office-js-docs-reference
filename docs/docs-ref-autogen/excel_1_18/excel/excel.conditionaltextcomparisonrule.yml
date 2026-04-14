@@ -12,9 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TextConditionalFormatData.rule (property type)
+  - <xref uid="excel!Excel.Interfaces.TextConditionalFormatData#rule:member" />
+  (property type)
 
-  - Excel.Interfaces.TextConditionalFormatUpdateData.rule (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.TextConditionalFormat#rule:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

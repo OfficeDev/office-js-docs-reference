@@ -39,15 +39,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentRead.getEntitiesByType (return type)
+  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member" />
+  (return type)
 
-  - Office.AppointmentRead.getFilteredEntitiesByName (return type)
+  - <xref uid="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member"
+  /> (return type)
 
-  - Office.Entities.meetingSuggestions (property type)
+  - <xref uid="outlook!Office.Entities#meetingSuggestions:member" /> (property
+  type)
 
-  - Office.MessageRead.getEntitiesByType (return type)
+  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member" /> (return
+  type)
 
-  - Office.MessageRead.getFilteredEntitiesByName (return type)
+  - <xref uid="outlook!Office.MessageRead#getFilteredEntitiesByName:member" />
+  (return type)
 
   #### Examples
 

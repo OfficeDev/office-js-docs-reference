@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.WindowCollectionLoadOptions.activePane (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#activePane:member" />
+  (property type)
 
-  - Excel.Interfaces.WindowLoadOptions.activePane (property type)
+  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#activePane:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

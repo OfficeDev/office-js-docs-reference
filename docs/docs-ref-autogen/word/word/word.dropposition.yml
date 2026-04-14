@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DropCapData.position (property type)
+  - <xref uid="word!Word.DropCap#position:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.DropCapData#position:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

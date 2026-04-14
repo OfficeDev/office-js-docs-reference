@@ -12,25 +12,40 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.XmlNodeCollectionLoadOptions.firstChild (property type)
+  - <xref
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeCollectionLoadOptions.lastChild (property type)
+  - <xref
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeCollectionLoadOptions.nextSibling (property type)
+  - <xref
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeCollectionLoadOptions.parentNode (property type)
+  - <xref
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeCollectionLoadOptions.previousSibling (property type)
+  - <xref
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#previousSibling:member"
+  /> (property type)
 
-  - Word.Interfaces.XmlNodeLoadOptions.firstChild (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeLoadOptions.lastChild (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeLoadOptions.nextSibling (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#nextSibling:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeLoadOptions.parentNode (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#parentNode:member" />
+  (property type)
 
-  - Word.Interfaces.XmlNodeLoadOptions.previousSibling (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#previousSibling:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

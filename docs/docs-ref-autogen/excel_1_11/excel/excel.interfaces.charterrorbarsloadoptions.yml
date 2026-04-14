@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#xErrorBars:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#yErrorBars:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

@@ -17,13 +17,22 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ShapeData.relativeHorizontalSize (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeHorizontalSize:member" />
+  (property type)
 
-  - Word.Interfaces.ShapeData.relativeVerticalSize (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalSize:member" />
+  (property type)
 
-  - Word.Interfaces.ShapeUpdateData.relativeHorizontalSize (property type)
+  - <xref
+  uid="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member" />
+  (property type)
 
-  - Word.Interfaces.ShapeUpdateData.relativeVerticalSize (property type)
+  - <xref uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Shape#relativeHorizontalSize:member" /> (property type)
+
+  - <xref uid="word!Word.Shape#relativeVerticalSize:member" /> (property type)
 
   #### Examples
 

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DocumentTaskChangeData.type (property type)
+  - <xref uid="excel!Excel.DocumentTaskChange#type:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#type:member" />
+  (property type)
 
 isPreview: true
 isDeprecated: false

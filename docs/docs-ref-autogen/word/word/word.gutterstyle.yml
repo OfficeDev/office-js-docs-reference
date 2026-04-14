@@ -14,9 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.PageSetupData.gutterStyle (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#gutterStyle:member" />
+  (property type)
 
-  - Word.Interfaces.PageSetupUpdateData.gutterStyle (property type)
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#gutterStyle:member" />
+  (property type)
+
+  - <xref uid="word!Word.PageSetup#gutterStyle:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

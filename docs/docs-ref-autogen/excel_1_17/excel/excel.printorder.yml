@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.PageLayoutData.printOrder (property type)
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printOrder:member" />
+  (property type)
 
-  - Excel.Interfaces.PageLayoutUpdateData.printOrder (property type)
+  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.PageLayout#printOrder:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

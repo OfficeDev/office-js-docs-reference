@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentExportAsFixedFormat2Options.optimizeFor (property type)
+  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#optimizeFor:member"
+  /> (property type)
 
-  - Word.DocumentExportAsFixedFormat3Options.optimizeFor (property type)
+  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#optimizeFor:member"
+  /> (property type)
 
-  - Word.DocumentExportAsFixedFormatOptions.optimizeFor (property type)
+  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#optimizeFor:member"
+  /> (property type)
 
   #### Examples
 

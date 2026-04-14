@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ApplicationLoadOptions.cultureInfo (property type)
+  - <xref uid="excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

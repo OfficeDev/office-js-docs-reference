@@ -9,6 +9,24 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Borders#bottom:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Borders#diagonalDown:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Borders#diagonalUp:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Borders#left:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Borders#right:member" /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Borders#top:member" /> (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

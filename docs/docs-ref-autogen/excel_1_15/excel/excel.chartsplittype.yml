@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartSeriesData.splitType (property type)
+  - <xref uid="excel!Excel.ChartSeries#splitType:member" /> (property type)
 
-  - Excel.Interfaces.ChartSeriesUpdateData.splitType (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#splitType:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.TextFrameData.verticalAlignment (property type)
+  - <xref uid="word!Word.Interfaces.TextFrameData#verticalAlignment:member" />
+  (property type)
 
-  - Word.Interfaces.TextFrameUpdateData.verticalAlignment (property type)
+  - <xref
+  uid="word!Word.Interfaces.TextFrameUpdateData#verticalAlignment:member" />
+  (property type)
+
+  - <xref uid="word!Word.TextFrame#verticalAlignment:member" /> (property type)
 
   #### Examples
 

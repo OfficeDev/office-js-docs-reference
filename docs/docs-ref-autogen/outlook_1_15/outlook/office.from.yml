@@ -29,9 +29,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.LoadedMessageCompose.from (property type)
+  - <xref uid="outlook!Office.LoadedMessageCompose#from:member" /> (property
+  type)
 
-  - Office.MessageCompose.from (property type)
+  - <xref uid="outlook!Office.MessageCompose#from:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

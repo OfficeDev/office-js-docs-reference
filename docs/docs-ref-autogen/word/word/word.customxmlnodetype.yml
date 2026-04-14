@@ -14,15 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlAddNodeOptions.nodeType (property type)
+  - <xref uid="word!Word.CustomXmlAddNodeOptions#nodeType:member" /> (property
+  type)
 
-  - Word.CustomXmlAppendChildNodeOptions.nodeType (property type)
+  - <xref uid="word!Word.CustomXmlAppendChildNodeOptions#nodeType:member" />
+  (property type)
 
-  - Word.CustomXmlInsertNodeBeforeOptions.nodeType (property type)
+  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nodeType:member" />
+  (property type)
 
-  - Word.CustomXmlReplaceChildNodeOptions.nodeType (property type)
+  - <xref uid="word!Word.CustomXmlNode#nodeType:member" /> (property type)
 
-  - Word.Interfaces.CustomXmlNodeData.nodeType (property type)
+  - <xref uid="word!Word.CustomXmlReplaceChildNodeOptions#nodeType:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#nodeType:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

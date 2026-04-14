@@ -13,15 +13,28 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.CommentContentRangeData.underline (property type)
+  - <xref uid="word!Word.CommentContentRange#underline:member" /> (property
+  type)
 
-  - Word.Interfaces.CommentContentRangeUpdateData.underline (property type)
+  - <xref uid="word!Word.Font#underline:member" /> (property type)
 
-  - Word.Interfaces.FontData.underline (property type)
+  - <xref uid="word!Word.Interfaces.CommentContentRangeData#underline:member" />
+  (property type)
 
-  - Word.Interfaces.FontUpdateData.underline (property type)
+  - <xref
+  uid="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member" />
+  (property type)
 
-  - Word.Interfaces.RangeData.underline (property type)
+  - <xref uid="word!Word.Interfaces.FontData#underline:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeData#underline:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Range#underline:member" /> (property type)
 
   #### Examples
 

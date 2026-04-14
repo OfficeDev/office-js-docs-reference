@@ -10,14 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.HeaderFooterGroupUpdateData.defaultForAllPages (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member"
+  /> (property type)
 
-  - Excel.Interfaces.HeaderFooterGroupUpdateData.evenPages (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member" />
+  (property type)
 
-  - Excel.Interfaces.HeaderFooterGroupUpdateData.firstPage (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member" />
+  (property type)
 
-  - Excel.Interfaces.HeaderFooterGroupUpdateData.oddPages (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.WindowCloseOptions.saveChanges (property type)
+  - <xref uid="word!Word.WindowCloseOptions#saveChanges:member" /> (property
+  type)
 
   #### Examples
 

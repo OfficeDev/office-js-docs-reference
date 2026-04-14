@@ -17,18 +17,31 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment (property
-  type)
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member"
+  /> (property type)
 
-  - PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref
+  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member"
+  /> (property type)
+
+  - <xref uid="powerpoint!PowerPoint.TableCell#horizontalAlignment:member" />
   (property type)
 
-  - PowerPoint.Interfaces.TableCellData.horizontalAlignment (property type)
-
-  - PowerPoint.Interfaces.TableCellUpdateData.horizontalAlignment (property
-  type)
-
-  - PowerPoint.TableCellProperties.horizontalAlignment (property type)
+  - <xref
+  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member" />
+  (property type)
 
   #### Examples
 

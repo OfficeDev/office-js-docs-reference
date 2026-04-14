@@ -25,13 +25,17 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentRead.displayReplyAllForm (parameter type)
+  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllForm:member" />
+  (parameter type)
 
-  - Office.AppointmentRead.displayReplyForm (parameter type)
+  - <xref uid="outlook!Office.AppointmentRead#displayReplyForm:member" />
+  (parameter type)
 
-  - Office.MessageRead.displayReplyAllForm (parameter type)
+  - <xref uid="outlook!Office.MessageRead#displayReplyAllForm:member" />
+  (parameter type)
 
-  - Office.MessageRead.displayReplyForm (parameter type)
+  - <xref uid="outlook!Office.MessageRead#displayReplyForm:member" /> (parameter
+  type)
 
   #### Examples
 

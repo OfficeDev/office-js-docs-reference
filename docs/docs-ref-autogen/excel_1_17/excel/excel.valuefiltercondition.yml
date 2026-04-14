@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotValueFilter.condition (property type)
+  - <xref uid="excel!Excel.PivotValueFilter#condition:member" /> (property type)
 
   #### Examples
 

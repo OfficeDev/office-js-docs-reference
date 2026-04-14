@@ -12,7 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ApplicationData.calculationState (property type)
+  - <xref uid="excel!Excel.Application#calculationState:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Interfaces.ApplicationData#calculationState:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

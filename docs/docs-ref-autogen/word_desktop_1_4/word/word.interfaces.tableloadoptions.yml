@@ -12,76 +12,118 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ContentControlCollectionLoadOptions.parentTable (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTable:member"
+  /> (property type)
 
-  - Word.Interfaces.ContentControlCollectionLoadOptions.parentTableOrNullObject
+  - <xref
+  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ContentControlLoadOptions#parentTable:member" />
   (property type)
 
-  - Word.Interfaces.ContentControlLoadOptions.parentTable (property type)
+  - <xref
+  uid="word!Word.Interfaces.ContentControlLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
 
-  - Word.Interfaces.ContentControlLoadOptions.parentTableOrNullObject (property
-  type)
-
-  - Word.Interfaces.FieldCollectionLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.FieldCollectionLoadOptions.parentTableOrNullObject (property
-  type)
-
-  - Word.Interfaces.FieldLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.FieldLoadOptions.parentTableOrNullObject (property type)
-
-  - Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable (property
-  type)
-
-  - Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
+  - <xref
+  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentTable:member" />
   (property type)
 
-  - Word.Interfaces.InlinePictureLoadOptions.parentTable (property type)
+  - <xref
+  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
 
-  - Word.Interfaces.InlinePictureLoadOptions.parentTableOrNullObject (property
-  type)
-
-  - Word.Interfaces.ParagraphCollectionLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.ParagraphCollectionLoadOptions.parentTableOrNullObject
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#parentTable:member" />
   (property type)
 
-  - Word.Interfaces.ParagraphLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.ParagraphLoadOptions.parentTableOrNullObject (property type)
-
-  - Word.Interfaces.RangeCollectionLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.RangeCollectionLoadOptions.parentTableOrNullObject (property
-  type)
-
-  - Word.Interfaces.RangeLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.RangeLoadOptions.parentTableOrNullObject (property type)
-
-  - Word.Interfaces.RangeScopedCollectionLoadOptions.parentTable (property type)
-
-  - Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableOrNullObject
+  - <xref
+  uid="word!Word.Interfaces.FieldLoadOptions#parentTableOrNullObject:member" />
   (property type)
 
-  - Word.Interfaces.TableCellCollectionLoadOptions.parentTable (property type)
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTable:member"
+  /> (property type)
 
-  - Word.Interfaces.TableCellLoadOptions.parentTable (property type)
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
 
-  - Word.Interfaces.TableCollectionLoadOptions.parentTable (property type)
+  - <xref uid="word!Word.Interfaces.InlinePictureLoadOptions#parentTable:member"
+  /> (property type)
 
-  - Word.Interfaces.TableCollectionLoadOptions.parentTableOrNullObject (property
-  type)
+  - <xref
+  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
 
-  - Word.Interfaces.TableLoadOptions.parentTable (property type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTable:member"
+  /> (property type)
 
-  - Word.Interfaces.TableLoadOptions.parentTableOrNullObject (property type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
 
-  - Word.Interfaces.TableRowCollectionLoadOptions.parentTable (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentTable:member" />
+  (property type)
 
-  - Word.Interfaces.TableRowLoadOptions.parentTable (property type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentTable:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentTable:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentTable:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#parentTable:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentTable:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentTableOrNullObject:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentTable:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableLoadOptions#parentTableOrNullObject:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TableRowCollectionLoadOptions#parentTable:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#parentTable:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

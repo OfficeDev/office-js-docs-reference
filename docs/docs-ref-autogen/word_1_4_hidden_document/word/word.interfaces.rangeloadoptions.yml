@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FieldCollectionLoadOptions.result (property type)
+  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
+  (property type)
 
-  - Word.Interfaces.FieldLoadOptions.result (property type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

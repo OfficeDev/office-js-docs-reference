@@ -6,13 +6,23 @@ fullName: OneNote.Interfaces.InkAnalysisLineData
 summary: >-
   An interface describing the data returned by calling
   `inkAnalysisLine.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - OneNote.Interfaces.InkAnalysisLineCollectionData.items (property type)
-  - OneNote.Interfaces.InkAnalysisLineCollectionUpdateData.items (property type)
-  - OneNote.Interfaces.InkAnalysisParagraphData.lines (property type)
-  - OneNote.Interfaces.InkAnalysisWordData.line (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items:member"
+  /> (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines:member"
+  /> (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData#line:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

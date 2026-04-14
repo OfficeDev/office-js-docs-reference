@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewData.pageMovementType (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#pageMovementType:member" />
+  (property type)
 
-  - Word.Interfaces.ViewUpdateData.pageMovementType (property type)
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#pageMovementType:member" />
+  (property type)
+
+  - <xref uid="word!Word.View#pageMovementType:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

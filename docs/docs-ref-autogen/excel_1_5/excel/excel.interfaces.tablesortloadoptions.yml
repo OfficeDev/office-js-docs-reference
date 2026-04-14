@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.TableCollectionLoadOptions.sort (property type)
+  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member" />
+  (property type)
 
-  - Excel.Interfaces.TableLoadOptions.sort (property type)
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#sort:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

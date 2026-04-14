@@ -11,6 +11,13 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Document#readabilityStatistics:member" /> (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: class

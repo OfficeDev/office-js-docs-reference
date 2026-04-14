@@ -6,13 +6,22 @@ fullName: OneNote.Interfaces.SectionData
 summary: >-
   An interface describing the data returned by calling `section.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - OneNote.Interfaces.NotebookData.sections (property type)
-  - OneNote.Interfaces.SectionCollectionData.items (property type)
-  - OneNote.Interfaces.SectionCollectionUpdateData.items (property type)
-  - OneNote.Interfaces.SectionGroupData.sections (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.NotebookData#sections:member" />
+  (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.SectionCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member" />
+  (property type)
+
+  - <xref uid="onenote!OneNote.Interfaces.SectionGroupData#sections:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

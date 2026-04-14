@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.BindingData.type (property type)
+  - <xref uid="excel!Excel.Binding#type:member" /> (property type)
+
+  - <xref uid="excel!Excel.Interfaces.BindingData#type:member" /> (property
+  type)
 
   #### Examples
 

@@ -13,11 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellBorder.style (property type)
+  - <xref uid="excel!Excel.CellBorder#style:member" /> (property type)
 
-  - Excel.Interfaces.RangeBorderData.style (property type)
+  - <xref uid="excel!Excel.Interfaces.RangeBorderData#style:member" /> (property
+  type)
 
-  - Excel.Interfaces.RangeBorderUpdateData.style (property type)
+  - <xref uid="excel!Excel.Interfaces.RangeBorderUpdateData#style:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.RangeBorder#style:member" /> (property type)
 
   #### Examples
 

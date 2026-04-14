@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ApplicationLoadOptions.iterativeCalculation (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

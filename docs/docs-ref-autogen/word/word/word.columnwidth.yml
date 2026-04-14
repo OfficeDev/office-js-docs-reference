@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewData.columnWidth (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#columnWidth:member" /> (property
+  type)
 
-  - Word.Interfaces.ViewUpdateData.columnWidth (property type)
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#columnWidth:member" />
+  (property type)
+
+  - <xref uid="word!Word.View#columnWidth:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

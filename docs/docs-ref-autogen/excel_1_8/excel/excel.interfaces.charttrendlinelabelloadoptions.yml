@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartTrendlineCollectionLoadOptions.label (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions#label:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartTrendlineLoadOptions.label (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartTrendlineLoadOptions#label:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

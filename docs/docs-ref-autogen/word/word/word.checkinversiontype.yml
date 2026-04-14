@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentCheckInWithVersionOptions.versionType (property type)
+  - <xref uid="word!Word.DocumentCheckInWithVersionOptions#versionType:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

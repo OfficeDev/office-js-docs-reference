@@ -12,52 +12,81 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BodyLoadOptions.parentBody (property type)
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentBody:member" />
+  (property type)
 
-  - Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject (property type)
+  - <xref
+  uid="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member" />
+  (property type)
 
-  - Word.Interfaces.ContentControlCollectionLoadOptions.parentBody (property
+  - <xref
+  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#parentBody:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentCreatedLoadOptions#body:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#body:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#parentBody:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#body:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#body:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentBody:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentBody:member"
+  /> (property type)
+
+  - <xref uid="word!Word.Interfaces.SectionCollectionLoadOptions#body:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.SectionLoadOptions#body:member" /> (property
   type)
 
-  - Word.Interfaces.ContentControlLoadOptions.parentBody (property type)
+  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#body:member" />
+  (property type)
 
-  - Word.Interfaces.DocumentCreatedLoadOptions.body (property type)
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#body:member" /> (property
+  type)
 
-  - Word.Interfaces.DocumentLoadOptions.body (property type)
+  - <xref uid="word!Word.Interfaces.TableCellCollectionLoadOptions#body:member"
+  /> (property type)
 
-  - Word.Interfaces.FieldCollectionLoadOptions.parentBody (property type)
+  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#body:member" />
+  (property type)
 
-  - Word.Interfaces.FieldLoadOptions.parentBody (property type)
+  - <xref
+  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member" />
+  (property type)
 
-  - Word.Interfaces.NoteItemCollectionLoadOptions.body (property type)
-
-  - Word.Interfaces.NoteItemLoadOptions.body (property type)
-
-  - Word.Interfaces.ParagraphCollectionLoadOptions.parentBody (property type)
-
-  - Word.Interfaces.ParagraphLoadOptions.parentBody (property type)
-
-  - Word.Interfaces.RangeCollectionLoadOptions.parentBody (property type)
-
-  - Word.Interfaces.RangeLoadOptions.parentBody (property type)
-
-  - Word.Interfaces.RangeScopedCollectionLoadOptions.parentBody (property type)
-
-  - Word.Interfaces.SectionCollectionLoadOptions.body (property type)
-
-  - Word.Interfaces.SectionLoadOptions.body (property type)
-
-  - Word.Interfaces.ShapeCollectionLoadOptions.body (property type)
-
-  - Word.Interfaces.ShapeLoadOptions.body (property type)
-
-  - Word.Interfaces.TableCellCollectionLoadOptions.body (property type)
-
-  - Word.Interfaces.TableCellLoadOptions.body (property type)
-
-  - Word.Interfaces.TableCollectionLoadOptions.parentBody (property type)
-
-  - Word.Interfaces.TableLoadOptions.parentBody (property type)
+  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentBody:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

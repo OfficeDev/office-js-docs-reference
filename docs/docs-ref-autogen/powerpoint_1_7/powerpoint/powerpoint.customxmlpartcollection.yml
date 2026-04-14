@@ -9,6 +9,25 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Used by
+
+
+  - <xref uid="powerpoint!PowerPoint.Presentation#customXmlParts:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.Shape#customXmlParts:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.Slide#customXmlParts:member" /> (property
+  type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideLayout#customXmlParts:member" />
+  (property type)
+
+  - <xref uid="powerpoint!PowerPoint.SlideMaster#customXmlParts:member" />
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: class

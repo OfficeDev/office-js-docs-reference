@@ -15,6 +15,15 @@ remarks: >-
   change the current selection.
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Document#selection:member" /> (property type)
+
+  - <xref uid="word!Word.Pane#selection:member" /> (property type)
+
   #### Examples
 
 

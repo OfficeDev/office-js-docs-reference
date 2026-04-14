@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalPresetCriteriaRule.criterion (property type)
+  - <xref uid="excel!Excel.ConditionalPresetCriteriaRule#criterion:member" />
+  (property type)
 
   #### Examples
 

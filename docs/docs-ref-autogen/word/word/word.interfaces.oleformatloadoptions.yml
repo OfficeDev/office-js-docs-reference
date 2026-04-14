@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.FieldCollectionLoadOptions.oleFormat (property type)
+  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#oleFormat:member"
+  /> (property type)
 
-  - Word.Interfaces.FieldLoadOptions.oleFormat (property type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#oleFormat:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

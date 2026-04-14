@@ -14,16 +14,21 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.preset (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member"
+  /> (property type)
 
-  - Excel.Interfaces.ConditionalFormatCollectionLoadOptions.presetOrNullObject
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member"
+  /> (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#preset:member" />
   (property type)
 
-  - Excel.Interfaces.ConditionalFormatLoadOptions.preset (property type)
-
-  - Excel.Interfaces.ConditionalFormatLoadOptions.presetOrNullObject (property
-  type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#presetOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

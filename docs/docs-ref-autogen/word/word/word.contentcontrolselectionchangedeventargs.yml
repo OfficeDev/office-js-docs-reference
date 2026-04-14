@@ -11,6 +11,14 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.ContentControl#onSelectionChanged:member" /> (property
+  type)
+
   #### Examples
 
 

@@ -7,7 +7,13 @@ summary: >-
   Collection of tracked objects, contained within a request context. See
   [context.trackedObjects](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)
   for more information.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - <xref
+  uid="office!OfficeExtension.ClientRequestContext#trackedObjects:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

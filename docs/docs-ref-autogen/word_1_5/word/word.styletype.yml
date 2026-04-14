@@ -13,7 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.StyleData.type (property type)
+  - <xref uid="word!Word.Interfaces.StyleData#type:member" /> (property type)
+
+  - <xref uid="word!Word.Style#type:member" /> (property type)
 
   #### Examples
 

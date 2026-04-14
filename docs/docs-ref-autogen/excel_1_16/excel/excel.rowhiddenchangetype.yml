@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetRowHiddenChangedEventArgs.changeType (property type)
+  - <xref uid="excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

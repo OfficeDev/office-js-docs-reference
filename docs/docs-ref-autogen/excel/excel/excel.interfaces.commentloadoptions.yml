@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DocumentTaskCollectionLoadOptions.comment (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#comment:member"
+  /> (property type)
 
-  - Excel.Interfaces.DocumentTaskLoadOptions.comment (property type)
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions#comment:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

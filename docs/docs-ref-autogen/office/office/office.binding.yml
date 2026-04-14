@@ -46,19 +46,24 @@ remarks: >-
   #### Used by
 
 
-  - Office.BindingDataChangedEventArgs.binding (property type)
+  - <xref uid="office!Office.BindingDataChangedEventArgs#binding:member" />
+  (property type)
 
-  - Office.Bindings.addFromNamedItemAsync (parameter type)
+  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member" />
+  (parameter type)
 
-  - Office.Bindings.addFromPromptAsync (parameter type)
+  - <xref uid="office!Office.Bindings#addFromPromptAsync:member" /> (parameter
+  type)
 
-  - Office.Bindings.addFromSelectionAsync (parameter type)
+  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member" />
+  (parameter type)
 
-  - Office.Bindings.getAllAsync (parameter type)
+  - <xref uid="office!Office.Bindings#getAllAsync:member" /> (parameter type)
 
-  - Office.Bindings.getByIdAsync (parameter type)
+  - <xref uid="office!Office.Bindings#getByIdAsync:member" /> (parameter type)
 
-  - Office.BindingSelectionChangedEventArgs.binding (property type)
+  - <xref uid="office!Office.BindingSelectionChangedEventArgs#binding:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

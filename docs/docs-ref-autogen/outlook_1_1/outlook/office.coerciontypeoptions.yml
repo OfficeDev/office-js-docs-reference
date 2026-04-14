@@ -11,9 +11,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.Body.prependAsync (parameter type)
+  - <xref uid="outlook!Office.Body#prependAsync:member" /> (parameter type)
 
-  - Office.Body.setSelectedDataAsync (parameter type)
+  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member" /> (parameter
+  type)
 
   #### Examples
 

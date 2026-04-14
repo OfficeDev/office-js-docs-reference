@@ -6,11 +6,16 @@ fullName: Word.Interfaces.ListItemUpdateData
 summary: >-
   An interface for updating data on the `ListItem` object, for use in
   `listItem.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.ParagraphUpdateData.listItem (property type)
-  - Word.Interfaces.ParagraphUpdateData.listItemOrNullObject (property type)
+
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#listItem:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.ParagraphUpdateData#listItemOrNullObject:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

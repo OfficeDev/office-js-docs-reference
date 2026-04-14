@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CommentAddedEventArgs.commentDetails (property type)
+  - <xref uid="excel!Excel.CommentAddedEventArgs#commentDetails:member" />
+  (property type)
 
-  - Excel.CommentChangedEventArgs.commentDetails (property type)
+  - <xref uid="excel!Excel.CommentChangedEventArgs#commentDetails:member" />
+  (property type)
 
-  - Excel.CommentDeletedEventArgs.commentDetails (property type)
+  - <xref uid="excel!Excel.CommentDeletedEventArgs#commentDetails:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

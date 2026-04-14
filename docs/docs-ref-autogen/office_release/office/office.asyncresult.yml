@@ -18,139 +18,190 @@ remarks: >-
   #### Used by
 
 
-  - Office.Auth.getAccessTokenAsync (parameter type)
+  - <xref uid="office!Office.Auth#getAccessTokenAsync:member" /> (parameter
+  type)
 
-  - Office.Binding.addHandlerAsync (parameter type)
+  - <xref uid="office!Office.Binding#addHandlerAsync:member" /> (parameter type)
 
-  - Office.Binding.getDataAsync (parameter type)
+  - <xref uid="office!Office.Binding#getDataAsync:member" /> (parameter type)
 
-  - Office.Binding.removeHandlerAsync (parameter type)
+  - <xref uid="office!Office.Binding#removeHandlerAsync:member" /> (parameter
+  type)
 
-  - Office.Binding.setDataAsync (parameter type)
+  - <xref uid="office!Office.Binding#setDataAsync:member" /> (parameter type)
 
-  - Office.Bindings.addFromNamedItemAsync (parameter type)
+  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member" />
+  (parameter type)
 
-  - Office.Bindings.addFromPromptAsync (parameter type)
+  - <xref uid="office!Office.Bindings#addFromPromptAsync:member" /> (parameter
+  type)
 
-  - Office.Bindings.addFromSelectionAsync (parameter type)
+  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member" />
+  (parameter type)
 
-  - Office.Bindings.getAllAsync (parameter type)
+  - <xref uid="office!Office.Bindings#getAllAsync:member" /> (parameter type)
 
-  - Office.Bindings.getByIdAsync (parameter type)
+  - <xref uid="office!Office.Bindings#getByIdAsync:member" /> (parameter type)
 
-  - Office.Bindings.releaseByIdAsync (parameter type)
+  - <xref uid="office!Office.Bindings#releaseByIdAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlNode.getNodesAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlNode.getNodeValueAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#getNodeValueAsync:member" />
+  (parameter type)
 
-  - Office.CustomXmlNode.getTextAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#getTextAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlNode.getXmlAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#getXmlAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlNode.setNodeValueAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#setNodeValueAsync:member" />
+  (parameter type)
 
-  - Office.CustomXmlNode.setTextAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#setTextAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlNode.setXmlAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlNode#setXmlAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlPart.addHandlerAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlPart.deleteAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPart#deleteAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlPart.getNodesAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlPart.getXmlAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPart#getXmlAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlPart.removeHandlerAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member" />
+  (parameter type)
 
-  - Office.CustomXmlParts.addAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlParts#addAsync:member" /> (parameter type)
 
-  - Office.CustomXmlParts.getByIdAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlParts#getByIdAsync:member" /> (parameter
+  type)
 
-  - Office.CustomXmlParts.getByNamespaceAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlParts#getByNamespaceAsync:member" />
+  (parameter type)
 
-  - Office.CustomXmlPrefixMappings.addNamespaceAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPrefixMappings#addNamespaceAsync:member"
+  /> (parameter type)
 
-  - Office.CustomXmlPrefixMappings.getNamespaceAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPrefixMappings#getNamespaceAsync:member"
+  /> (parameter type)
 
-  - Office.CustomXmlPrefixMappings.getPrefixAsync (parameter type)
+  - <xref uid="office!Office.CustomXmlPrefixMappings#getPrefixAsync:member" />
+  (parameter type)
 
-  - Office.DevicePermission.requestPermissionsAsync (parameter type)
+  - <xref uid="office!Office.DevicePermission#requestPermissionsAsync:member" />
+  (parameter type)
 
-  - Office.Document.addHandlerAsync (parameter type)
+  - <xref uid="office!Office.Document#addHandlerAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getActiveViewAsync (parameter type)
+  - <xref uid="office!Office.Document#getActiveViewAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getFileAsync (parameter type)
+  - <xref uid="office!Office.Document#getFileAsync:member" /> (parameter type)
 
-  - Office.Document.getFilePropertiesAsync (parameter type)
+  - <xref uid="office!Office.Document#getFilePropertiesAsync:member" />
+  (parameter type)
 
-  - Office.Document.getMaxResourceIndexAsync (parameter type)
+  - <xref uid="office!Office.Document#getMaxResourceIndexAsync:member" />
+  (parameter type)
 
-  - Office.Document.getMaxTaskIndexAsync (parameter type)
+  - <xref uid="office!Office.Document#getMaxTaskIndexAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getProjectFieldAsync (parameter type)
+  - <xref uid="office!Office.Document#getProjectFieldAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getResourceByIndexAsync (parameter type)
+  - <xref uid="office!Office.Document#getResourceByIndexAsync:member" />
+  (parameter type)
 
-  - Office.Document.getResourceFieldAsync (parameter type)
+  - <xref uid="office!Office.Document#getResourceFieldAsync:member" />
+  (parameter type)
 
-  - Office.Document.getSelectedDataAsync (parameter type)
+  - <xref uid="office!Office.Document#getSelectedDataAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getSelectedResourceAsync (parameter type)
+  - <xref uid="office!Office.Document#getSelectedResourceAsync:member" />
+  (parameter type)
 
-  - Office.Document.getSelectedTaskAsync (parameter type)
+  - <xref uid="office!Office.Document#getSelectedTaskAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getSelectedViewAsync (parameter type)
+  - <xref uid="office!Office.Document#getSelectedViewAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getTaskAsync (parameter type)
+  - <xref uid="office!Office.Document#getTaskAsync:member" /> (parameter type)
 
-  - Office.Document.getTaskByIndexAsync (parameter type)
+  - <xref uid="office!Office.Document#getTaskByIndexAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getTaskFieldAsync (parameter type)
+  - <xref uid="office!Office.Document#getTaskFieldAsync:member" /> (parameter
+  type)
 
-  - Office.Document.getWSSUrlAsync (parameter type)
+  - <xref uid="office!Office.Document#getWSSUrlAsync:member" /> (parameter type)
 
-  - Office.Document.goToByIdAsync (parameter type)
+  - <xref uid="office!Office.Document#goToByIdAsync:member" /> (parameter type)
 
-  - Office.Document.removeHandlerAsync (parameter type)
+  - <xref uid="office!Office.Document#removeHandlerAsync:member" /> (parameter
+  type)
 
-  - Office.Document.setResourceFieldAsync (parameter type)
+  - <xref uid="office!Office.Document#setResourceFieldAsync:member" />
+  (parameter type)
 
-  - Office.Document.setSelectedDataAsync (parameter type)
+  - <xref uid="office!Office.Document#setSelectedDataAsync:member" /> (parameter
+  type)
 
-  - Office.Document.setTaskFieldAsync (parameter type)
+  - <xref uid="office!Office.Document#setTaskFieldAsync:member" /> (parameter
+  type)
 
-  - Office.File.closeAsync (parameter type)
+  - <xref uid="office!Office.File#closeAsync:member" /> (parameter type)
 
-  - Office.File.getSliceAsync (parameter type)
+  - <xref uid="office!Office.File#getSliceAsync:member" /> (parameter type)
 
-  - Office.Settings.addHandlerAsync (parameter type)
+  - <xref uid="office!Office.Settings#addHandlerAsync:member" /> (parameter
+  type)
 
-  - Office.Settings.refreshAsync (parameter type)
+  - <xref uid="office!Office.Settings#refreshAsync:member" /> (parameter type)
 
-  - Office.Settings.removeHandlerAsync (parameter type)
+  - <xref uid="office!Office.Settings#removeHandlerAsync:member" /> (parameter
+  type)
 
-  - Office.Settings.saveAsync (parameter type)
+  - <xref uid="office!Office.Settings#saveAsync:member" /> (parameter type)
 
-  - Office.TableBinding.addColumnsAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#addColumnsAsync:member" /> (parameter
+  type)
 
-  - Office.TableBinding.addRowsAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#addRowsAsync:member" /> (parameter
+  type)
 
-  - Office.TableBinding.clearFormatsAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#clearFormatsAsync:member" />
+  (parameter type)
 
-  - Office.TableBinding.deleteAllDataValuesAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#deleteAllDataValuesAsync:member" />
+  (parameter type)
 
-  - Office.TableBinding.getFormatsAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#getFormatsAsync:member" /> (parameter
+  type)
 
-  - Office.TableBinding.setFormatsAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#setFormatsAsync:member" /> (parameter
+  type)
 
-  - Office.TableBinding.setTableOptionsAsync (parameter type)
+  - <xref uid="office!Office.TableBinding#setTableOptionsAsync:member" />
+  (parameter type)
 
-  - Office.UI.addHandlerAsync (parameter type)
+  - <xref uid="office!Office.UI#addHandlerAsync:member" /> (parameter type)
 
-  - Office.UI.displayDialogAsync (parameter type)
+  - <xref uid="office!Office.UI#displayDialogAsync:member" /> (parameter type)
 
   #### Examples
 

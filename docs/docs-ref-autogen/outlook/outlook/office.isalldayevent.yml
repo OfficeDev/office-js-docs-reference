@@ -25,7 +25,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose.isAllDayEvent (property type)
+  - <xref uid="outlook!Office.AppointmentCompose#isAllDayEvent:member" />
+  (property type)
 
 isPreview: true
 isDeprecated: false

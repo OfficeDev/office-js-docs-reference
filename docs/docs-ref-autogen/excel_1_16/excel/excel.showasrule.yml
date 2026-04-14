@@ -12,9 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.DataPivotHierarchyData.showAs (property type)
+  - <xref uid="excel!Excel.DataPivotHierarchy#showAs:member" /> (property type)
 
-  - Excel.Interfaces.DataPivotHierarchyUpdateData.showAs (property type)
+  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#showAs:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#showAs:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

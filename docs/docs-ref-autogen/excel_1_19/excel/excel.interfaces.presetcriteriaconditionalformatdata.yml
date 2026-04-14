@@ -6,11 +6,16 @@ fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `presetCriteriaConditionalFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Excel.Interfaces.ConditionalFormatData.preset (property type)
-  - Excel.Interfaces.ConditionalFormatData.presetOrNullObject (property type)
+
+  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#preset:member" />
+  (property type)
+
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalFormatData#presetOrNullObject:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

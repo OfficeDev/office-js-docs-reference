@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.WorksheetCollectionLoadOptions.charts (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member" />
+  (property type)
 
-  - Excel.Interfaces.WorksheetLoadOptions.charts (property type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#charts:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.WebSettingsData.targetBrowser (property type)
+  - <xref uid="word!Word.Interfaces.WebSettingsData#targetBrowser:member" />
+  (property type)
 
-  - Word.Interfaces.WebSettingsUpdateData.targetBrowser (property type)
+  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#targetBrowser:member"
+  /> (property type)
+
+  - <xref uid="word!Word.WebSettings#targetBrowser:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

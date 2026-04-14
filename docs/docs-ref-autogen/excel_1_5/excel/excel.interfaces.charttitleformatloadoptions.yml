@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartTitleLoadOptions.format (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartTitleLoadOptions#format:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

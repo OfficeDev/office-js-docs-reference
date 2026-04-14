@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedEntityCellValue.id (property type)
+  - <xref uid="excel!Excel.LinkedEntityCellValue#id:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

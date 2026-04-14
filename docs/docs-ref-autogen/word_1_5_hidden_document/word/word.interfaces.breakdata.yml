@@ -4,11 +4,15 @@ uid: word!Word.Interfaces.BreakData:interface
 package: word!
 fullName: Word.Interfaces.BreakData
 summary: An interface describing the data returned by calling `break.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.BreakCollectionData.items (property type)
-  - Word.Interfaces.BreakCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.BreakCollectionData#items:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.BreakCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

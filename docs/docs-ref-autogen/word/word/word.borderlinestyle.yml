@@ -14,9 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BorderUniversalData.lineStyle (property type)
+  - <xref uid="word!Word.BorderUniversal#lineStyle:member" /> (property type)
 
-  - Word.Interfaces.BorderUniversalUpdateData.lineStyle (property type)
+  - <xref uid="word!Word.Interfaces.BorderUniversalData#lineStyle:member" />
+  (property type)
+
+  - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#lineStyle:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

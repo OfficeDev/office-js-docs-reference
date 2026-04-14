@@ -13,17 +13,34 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.BorderCollectionUpdateData.insideBorderType (property type)
+  - <xref uid="word!Word.Border#type:member" /> (property type)
 
-  - Word.Interfaces.BorderCollectionUpdateData.outsideBorderType (property type)
+  - <xref uid="word!Word.BorderCollection#insideBorderType:member" /> (property
+  type)
 
-  - Word.Interfaces.BorderData.type (property type)
+  - <xref uid="word!Word.BorderCollection#outsideBorderType:member" /> (property
+  type)
 
-  - Word.Interfaces.BorderUpdateData.type (property type)
+  - <xref
+  uid="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderType:member"
+  /> (property type)
 
-  - Word.Interfaces.TableBorderData.type (property type)
+  - <xref
+  uid="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderType:member"
+  /> (property type)
 
-  - Word.Interfaces.TableBorderUpdateData.type (property type)
+  - <xref uid="word!Word.Interfaces.BorderData#type:member" /> (property type)
+
+  - <xref uid="word!Word.Interfaces.BorderUpdateData#type:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.TableBorderData#type:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Interfaces.TableBorderUpdateData#type:member" />
+  (property type)
+
+  - <xref uid="word!Word.TableBorder#type:member" /> (property type)
 
   #### Examples
 

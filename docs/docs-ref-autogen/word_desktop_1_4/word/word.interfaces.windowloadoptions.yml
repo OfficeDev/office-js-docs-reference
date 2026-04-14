@@ -14,15 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentLoadOptions.activeWindow (property type)
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member" />
+  (property type)
 
-  - Word.Interfaces.WindowCollectionLoadOptions.next (property type)
+  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#next:member" />
+  (property type)
 
-  - Word.Interfaces.WindowCollectionLoadOptions.previous (property type)
+  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#previous:member"
+  /> (property type)
 
-  - Word.Interfaces.WindowLoadOptions.next (property type)
+  - <xref uid="word!Word.Interfaces.WindowLoadOptions#next:member" /> (property
+  type)
 
-  - Word.Interfaces.WindowLoadOptions.previous (property type)
+  - <xref uid="word!Word.Interfaces.WindowLoadOptions#previous:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

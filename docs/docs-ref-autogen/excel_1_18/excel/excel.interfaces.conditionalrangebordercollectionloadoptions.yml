@@ -12,7 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#borders:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

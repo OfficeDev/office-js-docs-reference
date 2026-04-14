@@ -12,9 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ViewData.pageColor (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#pageColor:member" /> (property
+  type)
 
-  - Word.Interfaces.ViewUpdateData.pageColor (property type)
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#pageColor:member" />
+  (property type)
+
+  - <xref uid="word!Word.View#pageColor:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

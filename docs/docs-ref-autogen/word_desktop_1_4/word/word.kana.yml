@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.RangeData.kana (property type)
+  - <xref uid="word!Word.Interfaces.RangeData#kana:member" /> (property type)
 
-  - Word.Interfaces.RangeUpdateData.kana (property type)
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#kana:member" /> (property
+  type)
+
+  - <xref uid="word!Word.Range#kana:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

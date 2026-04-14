@@ -15,11 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellValuePropertyMetadata.attribution (property type)
+  - <xref uid="excel!Excel.CellValuePropertyMetadata#attribution:member" />
+  (property type)
 
-  - Excel.LocalImageCellValue.attribution (property type)
+  - <xref uid="excel!Excel.LocalImageCellValue#attribution:member" /> (property
+  type)
 
-  - Excel.WebImageCellValue.attribution (property type)
+  - <xref uid="excel!Excel.WebImageCellValue#attribution:member" /> (property
+  type)
 
 isPreview: false
 isDeprecated: false

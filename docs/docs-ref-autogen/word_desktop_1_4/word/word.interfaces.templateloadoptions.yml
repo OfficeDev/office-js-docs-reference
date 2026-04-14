@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.DocumentLoadOptions.attachedTemplate (property type)
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

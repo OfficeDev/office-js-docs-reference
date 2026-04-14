@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.RangeData.valueTypes (property type)
+  - <xref uid="excel!Excel.Interfaces.RangeData#valueTypes:member" /> (property
+  type)
+
+  - <xref uid="excel!Excel.Range#valueTypes:member" /> (property type)
 
 isPreview: false
 isDeprecated: false

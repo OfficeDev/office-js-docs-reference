@@ -12,23 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.ChartAreaFormatLoadOptions.border (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#border:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#border:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartDataLabelFormatLoadOptions.border (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#border:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartDataTableFormatLoadOptions.border (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions#border:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartLegendFormatLoadOptions.border (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#border:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#border:member" />
+  (property type)
 
-  - Excel.Interfaces.ChartPointFormatLoadOptions.border (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartTitleFormatLoadOptions.border (property type)
+  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member"
+  /> (property type)
 
-  - Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.border (property type)
+  - <xref
+  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions#border:member"
+  /> (property type)
 
 isPreview: false
 isDeprecated: false

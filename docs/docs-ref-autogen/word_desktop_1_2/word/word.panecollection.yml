@@ -9,6 +9,13 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+
+
+  #### Used by
+
+
+  - <xref uid="word!Word.Window#panes:member" /> (property type)
+
   #### Examples
 
 

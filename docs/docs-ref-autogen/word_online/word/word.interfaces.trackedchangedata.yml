@@ -6,11 +6,16 @@ fullName: Word.Interfaces.TrackedChangeData
 summary: >-
   An interface describing the data returned by calling
   `trackedChange.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - Word.Interfaces.TrackedChangeCollectionData.items (property type)
-  - Word.Interfaces.TrackedChangeCollectionUpdateData.items (property type)
+
+  - <xref uid="word!Word.Interfaces.TrackedChangeCollectionData#items:member" />
+  (property type)
+
+  - <xref
+  uid="word!Word.Interfaces.TrackedChangeCollectionUpdateData#items:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

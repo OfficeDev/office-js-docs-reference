@@ -72,7 +72,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.MessageCompose.internetHeaders (property type)
+  - <xref uid="outlook!Office.MessageCompose#internetHeaders:member" />
+  (property type)
 
 isPreview: false
 isDeprecated: false

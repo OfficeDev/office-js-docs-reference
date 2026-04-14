@@ -13,9 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Interfaces.WorksheetData.visibility (property type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#visibility:member" />
+  (property type)
 
-  - Excel.Interfaces.WorksheetUpdateData.visibility (property type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member" />
+  (property type)
+
+  - <xref uid="excel!Excel.Worksheet#visibility:member" /> (property type)
 
   #### Examples
 

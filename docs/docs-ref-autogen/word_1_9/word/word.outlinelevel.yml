@@ -13,9 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Interfaces.ParagraphFormatData.outlineLevel (property type)
+  - <xref uid="word!Word.Interfaces.ParagraphFormatData#outlineLevel:member" />
+  (property type)
 
-  - Word.Interfaces.ParagraphFormatUpdateData.outlineLevel (property type)
+  - <xref
+  uid="word!Word.Interfaces.ParagraphFormatUpdateData#outlineLevel:member" />
+  (property type)
+
+  - <xref uid="word!Word.ParagraphFormat#outlineLevel:member" /> (property type)
 
   #### Examples
 
