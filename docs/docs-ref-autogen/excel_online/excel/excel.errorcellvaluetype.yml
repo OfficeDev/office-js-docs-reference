@@ -52,12 +52,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Blocked"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.BlockedErrorCellValue#errorType:member" />
-      (property type)
   - name: busy
     uid: excel!Excel.ErrorCellValueType.busy:member
     package: excel!
@@ -69,12 +63,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Busy"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.BusyErrorCellValue#errorType:member" /> (property
-      type)
   - name: calc
     uid: excel!Excel.ErrorCellValueType.calc:member
     package: excel!
@@ -86,12 +74,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Calc"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.CalcErrorCellValue#errorType:member" /> (property
-      type)
   - name: connect
     uid: excel!Excel.ErrorCellValueType.connect:member
     package: excel!
@@ -103,12 +85,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Connect"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.ConnectErrorCellValue#errorType:member" />
-      (property type)
   - name: div0
     uid: excel!Excel.ErrorCellValueType.div0:member
     package: excel!
@@ -120,12 +96,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Div0"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.Div0ErrorCellValue#errorType:member" /> (property
-      type)
   - name: external
     uid: excel!Excel.ErrorCellValueType.external:member
     package: excel!
@@ -137,12 +107,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"External"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.ExternalErrorCellValue#errorType:member" />
-      (property type)
   - name: field
     uid: excel!Excel.ErrorCellValueType.field:member
     package: excel!
@@ -154,12 +118,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Field"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.FieldErrorCellValue#errorType:member" />
-      (property type)
   - name: gettingData
     uid: excel!Excel.ErrorCellValueType.gettingData:member
     package: excel!
@@ -171,12 +129,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"GettingData"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.GettingDataErrorCellValue#errorType:member" />
-      (property type)
   - name: name
     uid: excel!Excel.ErrorCellValueType.name:member
     package: excel!
@@ -188,12 +140,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Name"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.NameErrorCellValue#errorType:member" /> (property
-      type)
   - name: notAvailable
     uid: excel!Excel.ErrorCellValueType.notAvailable:member
     package: excel!
@@ -205,12 +151,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"NotAvailable"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.NotAvailableErrorCellValue#errorType:member" />
-      (property type)
   - name: 'null'
     uid: excel!Excel.ErrorCellValueType.null:member
     package: excel!
@@ -222,12 +162,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Null"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.NullErrorCellValue#errorType:member" /> (property
-      type)
   - name: num
     uid: excel!Excel.ErrorCellValueType.num:member
     package: excel!
@@ -239,12 +173,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Num"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.NumErrorCellValue#errorType:member" /> (property
-      type)
   - name: placeholder
     uid: excel!Excel.ErrorCellValueType.placeholder:member
     package: excel!
@@ -256,12 +184,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Placeholder"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.PlaceholderErrorCellValue#errorType:member" />
-      (property type)
   - name: ref
     uid: excel!Excel.ErrorCellValueType.ref:member
     package: excel!
@@ -273,12 +195,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Ref"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.RefErrorCellValue#errorType:member" /> (property
-      type)
   - name: spill
     uid: excel!Excel.ErrorCellValueType.spill:member
     package: excel!
@@ -290,12 +206,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Spill"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.SpillErrorCellValue#errorType:member" />
-      (property type)
   - name: value
     uid: excel!Excel.ErrorCellValueType.value:member
     package: excel!
@@ -307,9 +217,3 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Value"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.ValueErrorCellValue#errorType:member" />
-      (property type)

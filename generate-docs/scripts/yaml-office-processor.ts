@@ -622,6 +622,7 @@ async function processYamlFile(
   }
 
   // Process nested items in arrays
+  // Note: 'fields' (enum members) are excluded from Used By injection because OPS doesn't support remarks on enum fields
   const arrayNames = ['properties', 'methods', 'events', 'functions', 'fields', 'typeParameters'];
   for (const arrayName of arrayNames) {
     if (Array.isArray(doc[arrayName])) {
@@ -629,7 +630,10 @@ async function processYamlFile(
         if (item && item.uid) {
           modified = injectExamples(item, snippets, usedSnippets) || modified;
           modified = hyperlinkApiSets(item) || modified;
-          modified = injectUsedBySection(item, usedByIndex) || modified;
+          // Skip Used By injection for enum fields - OPS doesn't support remarks on enum fields
+          if (arrayName !== 'fields') {
+            modified = injectUsedBySection(item, usedByIndex) || modified;
+          }
         }
       }
     }

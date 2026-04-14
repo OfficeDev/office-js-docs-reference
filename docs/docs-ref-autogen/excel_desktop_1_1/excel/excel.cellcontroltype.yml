@@ -49,12 +49,6 @@ fields:
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Checkbox"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.CheckboxCellControl#type:member" /> (property
-      type)
   - name: empty
     uid: excel!Excel.CellControlType.empty:member
     package: excel!
@@ -66,10 +60,6 @@ fields:
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Empty"'
-    remarks: |-
-      #### Used by
-
-      - <xref uid="excel!Excel.EmptyCellControl#type:member" /> (property type)
   - name: mixed
     uid: excel!Excel.CellControlType.mixed:member
     package: excel!
@@ -81,10 +71,6 @@ fields:
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Mixed"'
-    remarks: |-
-      #### Used by
-
-      - <xref uid="excel!Excel.MixedCellControl#type:member" /> (property type)
   - name: unknown
     uid: excel!Excel.CellControlType.unknown:member
     package: excel!
@@ -98,9 +84,3 @@ fields:
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Unknown"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.UnknownCellControl#type:member" /> (property
-      type)

@@ -22,10 +22,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Array"'
-    remarks: |-
-      #### Used by
-
-      - <xref uid="excel!Excel.ArrayCellValue#type:member" /> (property type)
   - name: entity
     uid: excel!Excel.ReferenceValueType.entity:member
     package: excel!
@@ -37,10 +33,6 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Entity"'
-    remarks: |-
-      #### Used by
-
-      - <xref uid="excel!Excel.EntityCellValue#type:member" /> (property type)
   - name: root
     uid: excel!Excel.ReferenceValueType.root:member
     package: excel!
@@ -52,9 +44,3 @@ fields:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Root"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.RootReferenceCellValue#type:member" /> (property
-      type)

@@ -22,12 +22,6 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Array"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.EntityArrayCardLayout#layout:member" /> (property
-      type)
   - name: entity
     uid: excel!Excel.EntityCardLayoutType.entity:member
     package: excel!
@@ -39,11 +33,3 @@ fields:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Entity"'
-    remarks: >-
-      #### Used by
-
-
-      - <xref uid="excel!Excel.BasicCardLayout#layout:member" /> (property type)
-
-      - <xref uid="excel!Excel.EntityCardLayout#layout:member" /> (property
-      type)
