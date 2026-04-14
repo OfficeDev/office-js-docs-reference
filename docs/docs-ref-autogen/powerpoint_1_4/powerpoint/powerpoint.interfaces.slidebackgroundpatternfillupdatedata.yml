@@ -1,0 +1,14 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData
+uid: >-
+  powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData
+summary: >-
+  An interface for updating data on the `SlideBackgroundPatternFill` object, for
+  use in `slideBackgroundPatternFill.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

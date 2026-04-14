@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTrendlineData
+uid: excel!Excel.Interfaces.ChartTrendlineData:interface
+package: excel!
+fullName: Excel.Interfaces.ChartTrendlineData
+summary: >-
+  An interface describing the data returned by calling
+  `chartTrendline.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Excel.Interfaces.ChartTrendlineCollectionData.items (property type)
+  - Excel.Interfaces.ChartTrendlineCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -1,0 +1,268 @@
+### YamlMime:TSType
+name: Word.DropCap
+uid: word!Word.DropCap:class
+package: word!
+fullName: Word.DropCap
+summary: Represents a dropped capital letter in a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.DropCap#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: distanceFromText
+    uid: word!Word.DropCap#distanceFromText:member
+    package: word!
+    fullName: distanceFromText
+    summary: >-
+      Gets the distance (in points) between the dropped capital letter and the
+      paragraph text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly distanceFromText: number;'
+      return:
+        type: number
+  - name: fontName
+    uid: word!Word.DropCap#fontName:member
+    package: word!
+    fullName: fontName
+    summary: Gets the name of the font for the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fontName: string;'
+      return:
+        type: string
+  - name: linesToDrop
+    uid: word!Word.DropCap#linesToDrop:member
+    package: word!
+    fullName: linesToDrop
+    summary: Gets the height (in lines) of the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly linesToDrop: number;'
+      return:
+        type: number
+  - name: position
+    uid: word!Word.DropCap#position:member
+    package: word!
+    fullName: position
+    summary: Gets the position of the dropped capital letter.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly position: Word.DropPosition | "None" | "Normal" | "Margin";'
+      return:
+        type: >-
+          <xref uid="word!Word.DropPosition:enum" /> | "None" | "Normal" |
+          "Margin"
+methods:
+  - name: clear()
+    uid: word!Word.DropCap#clear:member(1)
+    package: word!
+    fullName: clear()
+    summary: Removes the dropped capital letter formatting.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: enable()
+    uid: word!Word.DropCap#enable:member(1)
+    package: word!
+    fullName: enable()
+    summary: >-
+      Formats the first character in the specified paragraph as a dropped
+      capital letter.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enable(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.DropCap#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.DropCapLoadOptions): Word.DropCap;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.DropCapLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.DropCap:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.DropCap#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.DropCap;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.DropCap:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.DropCap#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.DropCap;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.DropCap:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.DropCap#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.DropCap` object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.DropCapData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.DropCapData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.DropCapData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.DropCap#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.DropCap;'
+      return:
+        type: <xref uid="word!Word.DropCap:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.DropCap#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.DropCap;'
+      return:
+        type: <xref uid="word!Word.DropCap:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

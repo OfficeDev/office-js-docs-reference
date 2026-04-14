@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.HeadingStyleData
+uid: word!Word.Interfaces.HeadingStyleData:interface
+package: word!
+fullName: Word.Interfaces.HeadingStyleData
+summary: >-
+  An interface describing the data returned by calling
+  `headingStyle.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.HeadingStyleCollectionData.items (property type)
+  - Word.Interfaces.HeadingStyleCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -4,16 +4,24 @@ uid: excel!Excel.ConditionalDataBarRule:interface
 package: excel!
 fullName: Excel.ConditionalDataBarRule
 summary: Represents a rule-type for a data bar.
-remarks: |-
-  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Used by
 
+
   - Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule (property type)
+
   - Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule (property type)
-  - Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule (property type)
-  - Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule (property type)
-example: []
+
+  - Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule (property
+  type)
+
+  - Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule (property
+  type)
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,8 +31,10 @@ properties:
     package: excel!
     fullName: formula
     summary: The formula, if required, on which to evaluate the data bar rule.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,11 +46,19 @@ properties:
     package: excel!
     fullName: type
     summary: The type of rule for the data bar.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile";'
+      content: >-
+        type: Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" |
+        "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" |
+        "Percentile";
       return:
-        type: <xref uid="excel!Excel.ConditionalFormatRuleType:enum" /> | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"
+        type: >-
+          <xref uid="excel!Excel.ConditionalFormatRuleType:enum" /> | "Invalid"
+          | "Automatic" | "LowestValue" | "HighestValue" | "Number" | "Percent"
+          | "Formula" | "Percentile"

@@ -1,0 +1,14 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData
+uid: >-
+  powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData
+summary: >-
+  An interface for updating data on the `SlideBackgroundGradientFill` object,
+  for use in `slideBackgroundGradientFill.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

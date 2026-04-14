@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: Word.TextColumnAddOptions
+uid: word!Word.TextColumnAddOptions:interface
+package: word!
+fullName: Word.TextColumnAddOptions
+summary: >-
+  Represents options for a new text column in a document or section of a
+  document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isEvenlySpaced
+    uid: word!Word.TextColumnAddOptions#isEvenlySpaced:member
+    package: word!
+    fullName: isEvenlySpaced
+    summary: >-
+      If provided, specifies whether to evenly space all the text columns in the
+      document. The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEvenlySpaced?: boolean;'
+      return:
+        type: boolean
+  - name: spacing
+    uid: word!Word.TextColumnAddOptions#spacing:member
+    package: word!
+    fullName: spacing
+    summary: >-
+      If provided, specifies the spacing between the text columns in the
+      document, in points. The default value is -1, which means Word will
+      automatically determine the width based on the number of columns and page
+      size.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spacing?: number;'
+      return:
+        type: number
+  - name: width
+    uid: word!Word.TextColumnAddOptions#width:member
+    package: word!
+    fullName: width
+    summary: >-
+      If provided, specifies the width of the new text column in the document,
+      in points. The default value is -1, which means Word will automatically
+      determine the width based on the number of columns and page size.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

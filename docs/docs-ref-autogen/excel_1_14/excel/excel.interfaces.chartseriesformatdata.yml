@@ -3,12 +3,14 @@ name: Excel.Interfaces.ChartSeriesFormatData
 uid: excel!Excel.Interfaces.ChartSeriesFormatData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesFormatData
-summary: An interface describing the data returned by calling `chartSeriesFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `chartSeriesFormat.toJSON()`<!-- -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.ChartSeriesData.format (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,8 +20,10 @@ properties:
     package: excel!
     fullName: line
     summary: Represents line formatting.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

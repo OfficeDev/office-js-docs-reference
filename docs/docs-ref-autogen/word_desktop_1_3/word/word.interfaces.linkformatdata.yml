@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.LinkFormatData
+uid: word!Word.Interfaces.LinkFormatData:interface
+package: word!
+fullName: Word.Interfaces.LinkFormatData
+summary: >-
+  An interface describing the data returned by calling `linkFormat.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

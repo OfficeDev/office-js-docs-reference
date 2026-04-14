@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: Word.Interfaces.PaneCollectionLoadOptions
+uid: word!Word.Interfaces.PaneCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.PaneCollectionLoadOptions
+summary: Represents the collection of [Word.Pane](xref:word!Word.Pane:class) objects.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.PaneCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean

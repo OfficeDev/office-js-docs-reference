@@ -1,0 +1,575 @@
+### YamlMime:TSType
+name: Word.Application
+uid: word!Word.Application:class
+package: word!
+fullName: Word.Application
+summary: Represents the `Application` object.
+remarks: >-
+  \[ [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+  // Updates the text of the current document with the text from another
+  document passed in as a Base64-encoded string.
+
+  await Word.run(async (context) => {
+    // Use the Base64-encoded string representation of the selected .docx file.
+    const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
+    await context.sync();
+
+    if (!Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
+      console.warn("The WordApiHiddenDocument 1.3 requirement set isn't supported on this client so can't proceed. Try this action on a platform that supports this requirement set.");
+      return;
+    }
+
+    const externalDocBody: Word.Body = externalDoc.body;
+    externalDocBody.load("text");
+    await context.sync();
+
+    // Insert the external document's text at the beginning of the current document's body.
+    const externalDocBodyText = externalDocBody.text;
+    const currentDocBody: Word.Body = context.document.body;
+    currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: bibliography
+    uid: word!Word.Application#bibliography:member
+    package: word!
+    fullName: bibliography
+    summary: >-
+      Returns a `Bibliography` object that represents the bibliography reference
+      sources stored in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly bibliography: Word.Bibliography;'
+      return:
+        type: <xref uid="word!Word.Bibliography:class" />
+  - name: checkLanguage
+    uid: word!Word.Application#checkLanguage:member
+    package: word!
+    fullName: checkLanguage
+    summary: >-
+      Specifies if Microsoft Word automatically detects the language you are
+      using as you type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checkLanguage: boolean;'
+      return:
+        type: boolean
+  - name: context
+    uid: word!Word.Application#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: fontNames
+    uid: word!Word.Application#fontNames:member
+    package: word!
+    fullName: fontNames
+    summary: >-
+      Returns a `FontNameCollection` object that represents all the available
+      font names in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fontNames: Word.FontNameCollection;'
+      return:
+        type: <xref uid="word!Word.FontNameCollection:class" />
+  - name: language
+    uid: word!Word.Application#language:member
+    package: word!
+    fullName: language
+    summary: >-
+      Gets a `LanguageId` value that represents the language selected for the
+      Microsoft Word user interface.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly language: Word.LanguageId | "Afrikaans" | "Albanian" |
+        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
+        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
+        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
+        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
+        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
+        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
+        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
+        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
+        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
+        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
+        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
+        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
+        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
+        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
+        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
+        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
+        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
+        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+        | "Galician" | "Georgian" | "German" | "GermanAustria" |
+        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
+        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
+        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
+        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
+        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
+        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
+        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
+        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
+        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
+        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
+        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
+        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
+        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
+        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
+        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
+        "Yiddish" | "Yoruba" | "Zulu";
+      return:
+        type: >-
+          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
+          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
+          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
+          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
+          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
+          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
+          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
+          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
+          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
+          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
+          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
+          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
+          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
+          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
+          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
+          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
+          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
+          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
+          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
+          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+          | "Galician" | "Georgian" | "German" | "GermanAustria" |
+          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
+          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
+          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
+          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
+          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
+          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
+          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
+          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
+          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
+          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
+          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
+          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
+          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
+          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
+          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
+          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
+          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
+          "Zulu"
+  - name: listTemplateGalleries
+    uid: word!Word.Application#listTemplateGalleries:member
+    package: word!
+    fullName: listTemplateGalleries
+    summary: >-
+      Returns a `ListTemplateGalleryCollection` object that represents all the
+      list template galleries in Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly listTemplateGalleries: Word.ListTemplateGalleryCollection;'
+      return:
+        type: <xref uid="word!Word.ListTemplateGalleryCollection:class" />
+  - name: templates
+    uid: word!Word.Application#templates:member
+    package: word!
+    fullName: templates
+    summary: >-
+      Returns a `TemplateCollection` object that represents all the available
+      templates: global templates and those attached to open documents.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly templates: Word.TemplateCollection;'
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+methods:
+  - name: createDocument(base64File)
+    uid: word!Word.Application#createDocument:member(1)
+    package: word!
+    fullName: createDocument(base64File)
+    summary: Creates a new document by using an optional Base64-encoded .docx file.
+    remarks: >-
+      \[ [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+      // Updates the text of the current document with the text from another
+      document passed in as a Base64-encoded string.
+
+      await Word.run(async (context) => {
+        // Use the Base64-encoded string representation of the selected .docx file.
+        const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
+        await context.sync();
+
+        if (!Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
+          console.warn("The WordApiHiddenDocument 1.3 requirement set isn't supported on this client so can't proceed. Try this action on a platform that supports this requirement set.");
+          return;
+        }
+
+        const externalDocBody: Word.Body = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        // Insert the external document's text at the beginning of the current document's body.
+        const externalDocBodyText = externalDocBody.text;
+        const currentDocBody: Word.Body = context.document.body;
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
+        await context.sync();
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createDocument(base64File?: string): Word.DocumentCreated;'
+      parameters:
+        - id: base64File
+          description: >-
+            Optional. The Base64-encoded .docx file. The default value is
+            `null`<!-- -->.
+          type: string
+      return:
+        type: <xref uid="word!Word.DocumentCreated:class" />
+        description: ''
+  - name: load(options)
+    uid: word!Word.Application#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ApplicationLoadOptions):
+        Word.Application;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.ApplicationLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Application:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.Application#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Application;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.Application:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.Application#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Application;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.Application:class" />
+        description: ''
+  - name: newObject(context)
+    uid: word!Word.Application.newObject:member(1)
+    package: word!
+    fullName: newObject(context)
+    summary: Create a new instance of the `Word.Application` object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static newObject(context: OfficeExtension.ClientRequestContext):
+        Word.Application;
+      parameters:
+        - id: context
+          description: ''
+          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+      return:
+        type: <xref uid="word!Word.Application:class" />
+        description: ''
+  - name: openDocument(filePath)
+    uid: word!Word.Application#openDocument:member(1)
+    package: word!
+    fullName: openDocument(filePath)
+    summary: >-
+      Opens a document and displays it in a new tab or window. The following are
+      examples for the various supported clients and platforms.
+
+
+      - Remote or cloud location example:
+      `https://microsoft.sharepoint.com/some/path/Document.docx`
+
+
+      - Local location examples for Windows:
+      `C:\\Users\\Someone\\Documents\\Document.docx` (includes required escaped
+      backslashes), `file://mycomputer/myfolder/Document.docx`
+
+
+      - Local location example for Mac and iOS: `/User/someone/document.docx`
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'openDocument(filePath: string): void;'
+      parameters:
+        - id: filePath
+          description: >-
+            The absolute path of the .docx file. Word on the web only supports
+            remote (cloud) locations, while Word on Windows, on Mac, and on iOS
+            support local and remote locations.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: retrieveStylesFromBase64(base64File)
+    uid: word!Word.Application#retrieveStylesFromBase64:member(1)
+    package: word!
+    fullName: retrieveStylesFromBase64(base64File)
+    summary: >-
+      Parse styles from template Base64 file and return JSON format of retrieved
+      styles as a string.
+    remarks: >-
+      \[ [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
+
+
+      // Gets style info from another document passed in as a Base64-encoded
+      string.
+
+      await Word.run(async (context) => {
+        const retrievedStyles = context.application.retrieveStylesFromBase64(externalDocument);
+        await context.sync();
+
+        console.log("Styles from the other document:", retrievedStyles.value);
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        retrieveStylesFromBase64(base64File: string):
+        OfficeExtension.ClientResult<string>;
+      parameters:
+        - id: base64File
+          description: The template file.
+          type: string
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.Application#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ApplicationUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.ApplicationUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.Application#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Application): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.Application:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.Application#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Application`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ApplicationData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ApplicationData:interface" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

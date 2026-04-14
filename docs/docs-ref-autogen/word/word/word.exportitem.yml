@@ -1,0 +1,73 @@
+### YamlMime:TSEnum
+name: Word.ExportItem
+uid: word!Word.ExportItem:enum
+package: word!
+fullName: Word.ExportItem
+summary: Specifies the export item type for a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+
+  #### Used by
+
+
+  - Word.DocumentExportAsFixedFormat2Options.item (property type)
+
+  - Word.DocumentExportAsFixedFormat3Options.item (property type)
+
+  - Word.DocumentExportAsFixedFormatOptions.item (property type)
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+
+  await Word.run(async (context) => {
+    const document: Word.Document = context.document;
+
+    // Export the current document as a PDF saved in your default location, usually Documents.
+    const filename = `exported-doc-${getCurrentDate()}.pdf`;
+    console.log(`File name: ${filename}`);
+    const options: Word.DocumentExportAsFixedFormatOptions = {
+      item: Word.ExportItem.documentContent,
+      openAfterExport: true,
+      optimizeFor: Word.ExportOptimizeFor.onScreen,
+    };
+
+    // If a file with the same name already exists at the default location, it's silently overwritten.
+    document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
+
+    await context.sync();
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: documentContent
+    uid: word!Word.ExportItem.documentContent:member
+    package: word!
+    summary: >-
+      Exports document content only.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DocumentContent"'
+  - name: documentWithMarkup
+    uid: word!Word.ExportItem.documentWithMarkup:member
+    package: word!
+    summary: >-
+      Exports document with markup (annotations).
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DocumentWithMarkup"'

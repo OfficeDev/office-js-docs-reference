@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.RepeatingSectionContentControlUpdateData
+uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData:interface
+package: word!
+fullName: Word.Interfaces.RepeatingSectionContentControlUpdateData
+summary: >-
+  An interface for updating data on the `RepeatingSectionContentControl` object,
+  for use in `repeatingSectionContentControl.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

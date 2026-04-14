@@ -3,14 +3,16 @@ name: Excel.Interfaces.PivotItemData
 uid: excel!Excel.Interfaces.PivotItemData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotItemData
-summary: An interface describing the data returned by calling `pivotItem.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `pivotItem.toJSON()`<!--
+  -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.PivotFieldData.items (property type)
   - Excel.Interfaces.PivotItemCollectionData.items (property type)
   - Excel.Interfaces.PivotItemCollectionUpdateData.items (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,8 +22,10 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the PivotItem.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,9 +36,13 @@ properties:
     uid: excel!Excel.Interfaces.PivotItemData#isExpanded:member
     package: excel!
     fullName: isExpanded
-    summary: Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Determines whether the item is expanded to show child items or if it's
+      collapsed and child items are hidden.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,8 +54,10 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotItem.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,8 +69,10 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the PivotItem is visible.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

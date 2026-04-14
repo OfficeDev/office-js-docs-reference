@@ -1,0 +1,188 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TableStyleSettingsUpdateData
+uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TableStyleSettingsUpdateData
+summary: >-
+  An interface for updating data on the `TableStyleSettings` object, for use in
+  `tableStyleSettings.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: areColumnsBanded
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#areColumnsBanded:member
+    package: powerpoint!
+    fullName: areColumnsBanded
+    summary: >-
+      Specifies if the columns show banded formatting in which odd columns are
+      highlighted differently from even ones, to make reading the table easier.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'areColumnsBanded?: boolean;'
+      return:
+        type: boolean
+  - name: areRowsBanded
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#areRowsBanded:member
+    package: powerpoint!
+    fullName: areRowsBanded
+    summary: >-
+      Specifies if the rows show banded formatting in which odd rows are
+      highlighted differently from even ones, to make reading the table easier.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'areRowsBanded?: boolean;'
+      return:
+        type: boolean
+  - name: isFirstColumnHighlighted
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isFirstColumnHighlighted:member
+    package: powerpoint!
+    fullName: isFirstColumnHighlighted
+    summary: Specifies if the first column contains special formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFirstColumnHighlighted?: boolean;'
+      return:
+        type: boolean
+  - name: isFirstRowHighlighted
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isFirstRowHighlighted:member
+    package: powerpoint!
+    fullName: isFirstRowHighlighted
+    summary: Specifies if the first row contains special formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFirstRowHighlighted?: boolean;'
+      return:
+        type: boolean
+  - name: isLastColumnHighlighted
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isLastColumnHighlighted:member
+    package: powerpoint!
+    fullName: isLastColumnHighlighted
+    summary: Specifies if the last column contains special formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLastColumnHighlighted?: boolean;'
+      return:
+        type: boolean
+  - name: isLastRowHighlighted
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#isLastRowHighlighted:member
+    package: powerpoint!
+    fullName: isLastRowHighlighted
+    summary: Specifies if the last row contains special formatting.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLastRowHighlighted?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#style:member
+    package: powerpoint!
+    fullName: style
+    summary: Specifies the table style.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        style?: PowerPoint.TableStyle | "NoStyleNoGrid" | "ThemedStyle1Accent1"
+        | "ThemedStyle1Accent2" | "ThemedStyle1Accent3" | "ThemedStyle1Accent4"
+        | "ThemedStyle1Accent5" | "ThemedStyle1Accent6" | "NoStyleTableGrid" |
+        "ThemedStyle2Accent1" | "ThemedStyle2Accent2" | "ThemedStyle2Accent3" |
+        "ThemedStyle2Accent4" | "ThemedStyle2Accent5" | "ThemedStyle2Accent6" |
+        "LightStyle1" | "LightStyle1Accent1" | "LightStyle1Accent2" |
+        "LightStyle1Accent3" | "LightStyle1Accent4" | "LightStyle1Accent5" |
+        "LightStyle1Accent6" | "LightStyle2" | "LightStyle2Accent1" |
+        "LightStyle2Accent2" | "LightStyle2Accent3" | "LightStyle2Accent4" |
+        "LightStyle2Accent5" | "LightStyle2Accent6" | "LightStyle3" |
+        "LightStyle3Accent1" | "LightStyle3Accent2" | "LightStyle3Accent3" |
+        "LightStyle3Accent4" | "LightStyle3Accent5" | "LightStyle3Accent6" |
+        "MediumStyle1" | "MediumStyle1Accent1" | "MediumStyle1Accent2" |
+        "MediumStyle1Accent3" | "MediumStyle1Accent4" | "MediumStyle1Accent5" |
+        "MediumStyle1Accent6" | "MediumStyle2" | "MediumStyle2Accent1" |
+        "MediumStyle2Accent2" | "MediumStyle2Accent3" | "MediumStyle2Accent4" |
+        "MediumStyle2Accent5" | "MediumStyle2Accent6" | "MediumStyle3" |
+        "MediumStyle3Accent1" | "MediumStyle3Accent2" | "MediumStyle3Accent3" |
+        "MediumStyle3Accent4" | "MediumStyle3Accent5" | "MediumStyle3Accent6" |
+        "MediumStyle4" | "MediumStyle4Accent1" | "MediumStyle4Accent2" |
+        "MediumStyle4Accent3" | "MediumStyle4Accent4" | "MediumStyle4Accent5" |
+        "MediumStyle4Accent6" | "DarkStyle1" | "DarkStyle1Accent1" |
+        "DarkStyle1Accent2" | "DarkStyle1Accent3" | "DarkStyle1Accent4" |
+        "DarkStyle1Accent5" | "DarkStyle1Accent6" | "DarkStyle2" |
+        "DarkStyle2Accent1" | "DarkStyle2Accent2" | "DarkStyle2Accent3";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.TableStyle:enum" /> | "NoStyleNoGrid"
+          | "ThemedStyle1Accent1" | "ThemedStyle1Accent2" |
+          "ThemedStyle1Accent3" | "ThemedStyle1Accent4" | "ThemedStyle1Accent5"
+          | "ThemedStyle1Accent6" | "NoStyleTableGrid" | "ThemedStyle2Accent1" |
+          "ThemedStyle2Accent2" | "ThemedStyle2Accent3" | "ThemedStyle2Accent4"
+          | "ThemedStyle2Accent5" | "ThemedStyle2Accent6" | "LightStyle1" |
+          "LightStyle1Accent1" | "LightStyle1Accent2" | "LightStyle1Accent3" |
+          "LightStyle1Accent4" | "LightStyle1Accent5" | "LightStyle1Accent6" |
+          "LightStyle2" | "LightStyle2Accent1" | "LightStyle2Accent2" |
+          "LightStyle2Accent3" | "LightStyle2Accent4" | "LightStyle2Accent5" |
+          "LightStyle2Accent6" | "LightStyle3" | "LightStyle3Accent1" |
+          "LightStyle3Accent2" | "LightStyle3Accent3" | "LightStyle3Accent4" |
+          "LightStyle3Accent5" | "LightStyle3Accent6" | "MediumStyle1" |
+          "MediumStyle1Accent1" | "MediumStyle1Accent2" | "MediumStyle1Accent3"
+          | "MediumStyle1Accent4" | "MediumStyle1Accent5" |
+          "MediumStyle1Accent6" | "MediumStyle2" | "MediumStyle2Accent1" |
+          "MediumStyle2Accent2" | "MediumStyle2Accent3" | "MediumStyle2Accent4"
+          | "MediumStyle2Accent5" | "MediumStyle2Accent6" | "MediumStyle3" |
+          "MediumStyle3Accent1" | "MediumStyle3Accent2" | "MediumStyle3Accent3"
+          | "MediumStyle3Accent4" | "MediumStyle3Accent5" |
+          "MediumStyle3Accent6" | "MediumStyle4" | "MediumStyle4Accent1" |
+          "MediumStyle4Accent2" | "MediumStyle4Accent3" | "MediumStyle4Accent4"
+          | "MediumStyle4Accent5" | "MediumStyle4Accent6" | "DarkStyle1" |
+          "DarkStyle1Accent1" | "DarkStyle1Accent2" | "DarkStyle1Accent3" |
+          "DarkStyle1Accent4" | "DarkStyle1Accent5" | "DarkStyle1Accent6" |
+          "DarkStyle2" | "DarkStyle2Accent1" | "DarkStyle2Accent2" |
+          "DarkStyle2Accent3"

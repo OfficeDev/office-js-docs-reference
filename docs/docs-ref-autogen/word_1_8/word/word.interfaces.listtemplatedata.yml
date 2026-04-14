@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListTemplateData
+uid: word!Word.Interfaces.ListTemplateData:interface
+package: word!
+fullName: Word.Interfaces.ListTemplateData
+summary: >-
+  An interface describing the data returned by calling
+  `listTemplate.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.ListTemplateCollectionData.items (property type)
+  - Word.Interfaces.ListTemplateCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

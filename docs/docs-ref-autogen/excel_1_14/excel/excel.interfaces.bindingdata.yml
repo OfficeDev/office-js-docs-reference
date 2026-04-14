@@ -3,14 +3,16 @@ name: Excel.Interfaces.BindingData
 uid: excel!Excel.Interfaces.BindingData:interface
 package: excel!
 fullName: Excel.Interfaces.BindingData
-summary: An interface describing the data returned by calling `binding.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `binding.toJSON()`<!--
+  -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.BindingCollectionData.items (property type)
   - Excel.Interfaces.BindingCollectionUpdateData.items (property type)
   - Excel.Interfaces.WorkbookData.bindings (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,8 +22,10 @@ properties:
     package: excel!
     fullName: id
     summary: Represents the binding identifier.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +37,15 @@ properties:
     package: excel!
     fullName: type
     summary: Returns the type of the binding. See `Excel.BindingType` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: Excel.BindingType | "Range" | "Table" | "Text";'
       return:
-        type: <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"
+        type: >-
+          <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" |
+          "Text"

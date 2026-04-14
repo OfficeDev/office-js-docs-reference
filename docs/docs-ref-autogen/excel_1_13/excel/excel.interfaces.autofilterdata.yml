@@ -3,13 +3,15 @@ name: Excel.Interfaces.AutoFilterData
 uid: excel!Excel.Interfaces.AutoFilterData:interface
 package: excel!
 fullName: Excel.Interfaces.AutoFilterData
-summary: An interface describing the data returned by calling `autoFilter.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `autoFilter.toJSON()`<!--
+  -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.TableData.autoFilter (property type)
   - Excel.Interfaces.WorksheetData.autoFilter (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,8 +21,10 @@ properties:
     package: excel!
     fullName: criteria
     summary: An array that holds all the filter criteria in the autofiltered range.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,8 +36,10 @@ properties:
     package: excel!
     fullName: enabled
     summary: Specifies if the AutoFilter is enabled.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,8 +51,10 @@ properties:
     package: excel!
     fullName: isDataFiltered
     summary: Specifies if the AutoFilter has filter criteria.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

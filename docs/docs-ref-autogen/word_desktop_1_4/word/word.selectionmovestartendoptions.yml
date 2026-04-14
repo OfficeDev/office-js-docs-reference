@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: Word.SelectionMoveStartEndOptions
+uid: word!Word.SelectionMoveStartEndOptions:interface
+package: word!
+fullName: Word.SelectionMoveStartEndOptions
+summary: >-
+  Represents the options for the [Selection.moveEnd and
+  Selection.moveStart](xref:word!Word.Selection:class) methods.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: word!Word.SelectionMoveStartEndOptions#count:member
+    package: word!
+    fullName: count
+    summary: >-
+      If provided, specifies the number of units to move. The affected character
+      position (start or end) is according to the calling method. If this number
+      is positive, the position is moved forward in the document. If this number
+      is negative, the position is moved backward. If the affected position
+      encounters the other position, the selection is collapsed and both the
+      start and end positions move together. The default value is 1.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: number;'
+      return:
+        type: number
+  - name: unit
+    uid: word!Word.SelectionMoveStartEndOptions#unit:member
+    package: word!
+    fullName: unit
+    summary: >-
+      If provided, specifies the unit by which the selection's start or end
+      position (per the calling method) is to be moved. The default value is
+      `character`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
+        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
+        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
+        "Item";
+      return:
+        type: >-
+          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
+          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
+          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
+          "ParagraphFormat" | "Table" | "Item"

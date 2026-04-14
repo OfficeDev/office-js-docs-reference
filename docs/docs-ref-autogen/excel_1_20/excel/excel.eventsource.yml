@@ -1,0 +1,84 @@
+### YamlMime:TSEnum
+name: Excel.EventSource
+uid: excel!Excel.EventSource:enum
+package: excel!
+fullName: Excel.EventSource
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Used by
+
+
+  - Excel.ChartAddedEventArgs.source (property type)
+
+  - Excel.ChartDeletedEventArgs.source (property type)
+
+  - Excel.CommentAddedEventArgs.source (property type)
+
+  - Excel.CommentChangedEventArgs.source (property type)
+
+  - Excel.CommentDeletedEventArgs.source (property type)
+
+  - Excel.LinkedEntityDataDomainAddedEventArgs.source (property type)
+
+  - Excel.LinkedEntityDataDomainRefreshCompletedEventArgs.source (property type)
+
+  - Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.source (property
+  type)
+
+  - Excel.TableAddedEventArgs.source (property type)
+
+  - Excel.TableChangedEventArgs.source (property type)
+
+  - Excel.TableDeletedEventArgs.source (property type)
+
+  - Excel.WorksheetAddedEventArgs.source (property type)
+
+  - Excel.WorksheetChangedEventArgs.source (property type)
+
+  - Excel.WorksheetColumnSortedEventArgs.source (property type)
+
+  - Excel.WorksheetDeletedEventArgs.source (property type)
+
+  - Excel.WorksheetFormatChangedEventArgs.source (property type)
+
+  - Excel.WorksheetFormulaChangedEventArgs.source (property type)
+
+  - Excel.WorksheetMovedEventArgs.source (property type)
+
+  - Excel.WorksheetNameChangedEventArgs.source (property type)
+
+  - Excel.WorksheetProtectionChangedEventArgs.source (property type)
+
+  - Excel.WorksheetRowHiddenChangedEventArgs.source (property type)
+
+  - Excel.WorksheetRowSortedEventArgs.source (property type)
+
+  - Excel.WorksheetVisibilityChangedEventArgs.source (property type)
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: local
+    uid: excel!Excel.EventSource.local:member
+    package: excel!
+    summary: >-
+      Local means the event comes from a local user session.
+
+
+      * \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Local"'
+  - name: remote
+    uid: excel!Excel.EventSource.remote:member
+    package: excel!
+    summary: >-
+      Remote means the event comes from a remote user session.
+
+
+      * \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Remote"'

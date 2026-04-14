@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData
+uid: >-
+  powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackgroundPictureOrTextureFill.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: transparency
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData#transparency:member
+    package: powerpoint!
+    fullName: transparency
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency?: number;'
+      return:
+        type: number

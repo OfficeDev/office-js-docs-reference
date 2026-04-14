@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Word.RevisionsBalloonWidthType
+uid: word!Word.RevisionsBalloonWidthType:enum
+package: word!
+fullName: Word.RevisionsBalloonWidthType
+summary: Specifies the width type for revision balloons in a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Used by
+
+
+  - Word.Interfaces.ViewData.revisionsBalloonWidthType (property type)
+
+  - Word.Interfaces.ViewUpdateData.revisionsBalloonWidthType (property type)
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: percent
+    uid: word!Word.RevisionsBalloonWidthType.percent:member
+    package: word!
+    summary: >-
+      Balloon width as a percentage.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Percent"'
+  - name: points
+    uid: word!Word.RevisionsBalloonWidthType.points:member
+    package: word!
+    summary: >-
+      Balloon width in points.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Points"'

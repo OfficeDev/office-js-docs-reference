@@ -1,0 +1,20 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomPropertyData
+uid: powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomPropertyData
+summary: >-
+  An interface describing the data returned by calling
+  `customProperty.toJSON()`<!-- -->.
+remarks: >-
+  #### Used by
+
+
+  - PowerPoint.Interfaces.CustomPropertyCollectionData.items (property type)
+
+  - PowerPoint.Interfaces.CustomPropertyCollectionUpdateData.items (property
+  type)
+
+isPreview: false
+isDeprecated: false
+type: interface

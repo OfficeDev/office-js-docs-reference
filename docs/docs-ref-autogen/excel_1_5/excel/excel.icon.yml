@@ -1,0 +1,215 @@
+### YamlMime:TSType
+name: Excel.Icon
+uid: excel!Excel.Icon:interface
+package: excel!
+fullName: Excel.Icon
+summary: Represents a cell icon.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Used by
+
+
+  - Excel.FilterCriteria.icon (property type)
+
+  - Excel.FiveArrowsGraySet.grayDownArrow (property type)
+
+  - Excel.FiveArrowsGraySet.grayDownInclineArrow (property type)
+
+  - Excel.FiveArrowsGraySet.graySideArrow (property type)
+
+  - Excel.FiveArrowsGraySet.grayUpArrow (property type)
+
+  - Excel.FiveArrowsGraySet.grayUpInclineArrow (property type)
+
+  - Excel.FiveArrowsSet.greenUpArrow (property type)
+
+  - Excel.FiveArrowsSet.redDownArrow (property type)
+
+  - Excel.FiveArrowsSet.yellowDownInclineArrow (property type)
+
+  - Excel.FiveArrowsSet.yellowSideArrow (property type)
+
+  - Excel.FiveArrowsSet.yellowUpInclineArrow (property type)
+
+  - Excel.FiveBoxesSet.fourFilledBoxes (property type)
+
+  - Excel.FiveBoxesSet.noFilledBoxes (property type)
+
+  - Excel.FiveBoxesSet.oneFilledBox (property type)
+
+  - Excel.FiveBoxesSet.threeFilledBoxes (property type)
+
+  - Excel.FiveBoxesSet.twoFilledBoxes (property type)
+
+  - Excel.FiveQuartersSet.blackCircle (property type)
+
+  - Excel.FiveQuartersSet.circleWithOneWhiteQuarter (property type)
+
+  - Excel.FiveQuartersSet.circleWithThreeWhiteQuarters (property type)
+
+  - Excel.FiveQuartersSet.circleWithTwoWhiteQuarters (property type)
+
+  - Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters (property type)
+
+  - Excel.FiveRatingSet.fourBars (property type)
+
+  - Excel.FiveRatingSet.noBars (property type)
+
+  - Excel.FiveRatingSet.oneBar (property type)
+
+  - Excel.FiveRatingSet.threeBars (property type)
+
+  - Excel.FiveRatingSet.twoBars (property type)
+
+  - Excel.FourArrowsGraySet.grayDownArrow (property type)
+
+  - Excel.FourArrowsGraySet.grayDownInclineArrow (property type)
+
+  - Excel.FourArrowsGraySet.grayUpArrow (property type)
+
+  - Excel.FourArrowsGraySet.grayUpInclineArrow (property type)
+
+  - Excel.FourArrowsSet.greenUpArrow (property type)
+
+  - Excel.FourArrowsSet.redDownArrow (property type)
+
+  - Excel.FourArrowsSet.yellowDownInclineArrow (property type)
+
+  - Excel.FourArrowsSet.yellowUpInclineArrow (property type)
+
+  - Excel.FourRatingSet.fourBars (property type)
+
+  - Excel.FourRatingSet.oneBar (property type)
+
+  - Excel.FourRatingSet.threeBars (property type)
+
+  - Excel.FourRatingSet.twoBars (property type)
+
+  - Excel.FourRedToBlackSet.blackCircle (property type)
+
+  - Excel.FourRedToBlackSet.grayCircle (property type)
+
+  - Excel.FourRedToBlackSet.pinkCircle (property type)
+
+  - Excel.FourRedToBlackSet.redCircle (property type)
+
+  - Excel.FourTrafficLightsSet.blackCircleWithBorder (property type)
+
+  - Excel.FourTrafficLightsSet.greenCircle (property type)
+
+  - Excel.FourTrafficLightsSet.redCircleWithBorder (property type)
+
+  - Excel.FourTrafficLightsSet.yellowCircle (property type)
+
+  - Excel.SortField.icon (property type)
+
+  - Excel.ThreeArrowsGraySet.grayDownArrow (property type)
+
+  - Excel.ThreeArrowsGraySet.graySideArrow (property type)
+
+  - Excel.ThreeArrowsGraySet.grayUpArrow (property type)
+
+  - Excel.ThreeArrowsSet.greenUpArrow (property type)
+
+  - Excel.ThreeArrowsSet.redDownArrow (property type)
+
+  - Excel.ThreeArrowsSet.yellowSideArrow (property type)
+
+  - Excel.ThreeFlagsSet.greenFlag (property type)
+
+  - Excel.ThreeFlagsSet.redFlag (property type)
+
+  - Excel.ThreeFlagsSet.yellowFlag (property type)
+
+  - Excel.ThreeSignsSet.greenCircle (property type)
+
+  - Excel.ThreeSignsSet.redDiamond (property type)
+
+  - Excel.ThreeSignsSet.yellowTriangle (property type)
+
+  - Excel.ThreeStarsSet.goldStar (property type)
+
+  - Excel.ThreeStarsSet.halfGoldStar (property type)
+
+  - Excel.ThreeStarsSet.silverStar (property type)
+
+  - Excel.ThreeSymbols2Set.greenCheck (property type)
+
+  - Excel.ThreeSymbols2Set.redCross (property type)
+
+  - Excel.ThreeSymbols2Set.yellowExclamation (property type)
+
+  - Excel.ThreeSymbolsSet.greenCheckSymbol (property type)
+
+  - Excel.ThreeSymbolsSet.redCrossSymbol (property type)
+
+  - Excel.ThreeSymbolsSet.yellowExclamationSymbol (property type)
+
+  - Excel.ThreeTrafficLights1Set.greenCircle (property type)
+
+  - Excel.ThreeTrafficLights1Set.redCircleWithBorder (property type)
+
+  - Excel.ThreeTrafficLights1Set.yellowCircle (property type)
+
+  - Excel.ThreeTrafficLights2Set.greenTrafficLight (property type)
+
+  - Excel.ThreeTrafficLights2Set.redTrafficLight (property type)
+
+  - Excel.ThreeTrafficLights2Set.yellowTrafficLight (property type)
+
+  - Excel.ThreeTrianglesSet.greenUpTriangle (property type)
+
+  - Excel.ThreeTrianglesSet.redDownTriangle (property type)
+
+  - Excel.ThreeTrianglesSet.yellowDash (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: index
+    uid: excel!Excel.Icon#index:member
+    package: excel!
+    fullName: index
+    summary: Specifies the index of the icon in the given set.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index: number;'
+      return:
+        type: number
+  - name: set
+    uid: excel!Excel.Icon#set:member
+    package: excel!
+    fullName: set
+    summary: Specifies the set that the icon is part of.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" |
+        "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" |
+        "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" |
+        "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights"
+        | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" |
+        "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
+      return:
+        type: >-
+          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" |
+          "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+          "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" |
+          "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" |
+          "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" |
+          "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" |
+          "FiveBoxes"

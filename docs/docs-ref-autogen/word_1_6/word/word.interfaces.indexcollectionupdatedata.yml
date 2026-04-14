@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.IndexCollectionUpdateData
+uid: word!Word.Interfaces.IndexCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.IndexCollectionUpdateData
+summary: >-
+  An interface for updating data on the `IndexCollection` object, for use in
+  `indexCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.IndexCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.IndexData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.IndexData:interface" />[]

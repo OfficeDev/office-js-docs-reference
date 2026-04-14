@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.ConflictCollectionData
+uid: word!Word.Interfaces.ConflictCollectionData:interface
+package: word!
+fullName: Word.Interfaces.ConflictCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `conflictCollection.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.ConflictCollectionData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.ConflictData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.ConflictData:interface" />[]

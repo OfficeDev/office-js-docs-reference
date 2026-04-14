@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.NoteItemData
+uid: word!Word.Interfaces.NoteItemData:interface
+package: word!
+fullName: Word.Interfaces.NoteItemData
+summary: >-
+  An interface describing the data returned by calling `noteItem.toJSON()`<!--
+  -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.NoteItemCollectionData.items (property type)
+  - Word.Interfaces.NoteItemCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

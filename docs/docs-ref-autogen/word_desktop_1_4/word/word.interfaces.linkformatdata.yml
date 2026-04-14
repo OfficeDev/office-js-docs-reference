@@ -1,0 +1,133 @@
+### YamlMime:TSType
+name: Word.Interfaces.LinkFormatData
+uid: word!Word.Interfaces.LinkFormatData:interface
+package: word!
+fullName: Word.Interfaces.LinkFormatData
+summary: >-
+  An interface describing the data returned by calling `linkFormat.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isAutoUpdated
+    uid: word!Word.Interfaces.LinkFormatData#isAutoUpdated:member
+    package: word!
+    fullName: isAutoUpdated
+    summary: >-
+      Specifies if the link is updated automatically when the container file is
+      opened or when the source file is changed.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isAutoUpdated?: boolean;'
+      return:
+        type: boolean
+  - name: isLocked
+    uid: word!Word.Interfaces.LinkFormatData#isLocked:member
+    package: word!
+    fullName: isLocked
+    summary: >-
+      Specifies if a `Field`<!-- -->, `InlineShape`<!-- -->, or `Shape` object
+      is locked to prevent automatic updating.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLocked?: boolean;'
+      return:
+        type: boolean
+  - name: isPictureSavedWithDocument
+    uid: word!Word.Interfaces.LinkFormatData#isPictureSavedWithDocument:member
+    package: word!
+    fullName: isPictureSavedWithDocument
+    summary: Specifies if the linked picture is saved with the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isPictureSavedWithDocument?: boolean;'
+      return:
+        type: boolean
+  - name: sourceFullName
+    uid: word!Word.Interfaces.LinkFormatData#sourceFullName:member
+    package: word!
+    fullName: sourceFullName
+    summary: >-
+      Specifies the path and name of the source file for the linked OLE object,
+      picture, or field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceFullName?: string;'
+      return:
+        type: string
+  - name: sourceName
+    uid: word!Word.Interfaces.LinkFormatData#sourceName:member
+    package: word!
+    fullName: sourceName
+    summary: >-
+      Gets the name of the source file for the linked OLE object, picture, or
+      field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceName?: string;'
+      return:
+        type: string
+  - name: sourcePath
+    uid: word!Word.Interfaces.LinkFormatData#sourcePath:member
+    package: word!
+    fullName: sourcePath
+    summary: >-
+      Gets the path of the source file for the linked OLE object, picture, or
+      field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourcePath?: string;'
+      return:
+        type: string
+  - name: type
+    uid: word!Word.Interfaces.LinkFormatData#type:member
+    package: word!
+    fullName: type
+    summary: Gets the link type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: Word.LinkType | "Ole" | "Picture" | "Text" | "Reference" |
+        "Include" | "Import" | "Dde" | "DdeAuto" | "Chart";
+      return:
+        type: >-
+          <xref uid="word!Word.LinkType:enum" /> | "Ole" | "Picture" | "Text" |
+          "Reference" | "Include" | "Import" | "Dde" | "DdeAuto" | "Chart"

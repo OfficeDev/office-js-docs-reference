@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: Word.Interfaces.HeadingStyleLoadOptions
+uid: word!Word.Interfaces.HeadingStyleLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.HeadingStyleLoadOptions
+summary: Represents a heading style used in a table of contents or table of figures.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.HeadingStyleLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: level
+    uid: word!Word.Interfaces.HeadingStyleLoadOptions#level:member
+    package: word!
+    fullName: level
+    summary: >-
+      Specifies the level for the heading style in a table of contents or table
+      of figures. Must be a value from 1 to 9.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.HeadingStyleLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of style for a heading.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean

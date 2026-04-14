@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.AnnotationData
+uid: word!Word.Interfaces.AnnotationData:interface
+package: word!
+fullName: Word.Interfaces.AnnotationData
+summary: >-
+  An interface describing the data returned by calling `annotation.toJSON()`<!--
+  -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.AnnotationCollectionData.items (property type)
+  - Word.Interfaces.AnnotationCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

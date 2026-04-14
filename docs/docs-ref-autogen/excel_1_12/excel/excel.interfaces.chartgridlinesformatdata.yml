@@ -3,12 +3,14 @@ name: Excel.Interfaces.ChartGridlinesFormatData
 uid: excel!Excel.Interfaces.ChartGridlinesFormatData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartGridlinesFormatData
-summary: An interface describing the data returned by calling `chartGridlinesFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `chartGridlinesFormat.toJSON()`<!-- -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.ChartGridlinesData.format (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,8 +20,10 @@ properties:
     package: excel!
     fullName: line
     summary: Represents chart line formatting.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

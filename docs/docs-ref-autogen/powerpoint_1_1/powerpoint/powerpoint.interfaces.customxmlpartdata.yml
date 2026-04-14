@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.CustomXmlPartData
+uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.CustomXmlPartData
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlPart.toJSON()`<!-- -->.
+remarks: >-
+  #### Used by
+
+
+  - PowerPoint.Interfaces.CustomXmlPartCollectionData.items (property type)
+
+  - PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items (property
+  type)
+
+  - PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items (property
+  type)
+
+  - PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
+  (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlValidationErrorLoadOptions
+uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.CustomXmlValidationErrorLoadOptions
+summary: >-
+  Represents a single validation error in a
+  [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class)
+  object.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: errorCode
+    uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#errorCode:member
+    package: word!
+    fullName: errorCode
+    summary: >-
+      Gets an integer representing the validation error in the
+      `CustomXmlValidationError` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'errorCode?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: >-
+      Gets the name of the error in the `CustomXmlValidationError` object. If no
+      errors exist, the property returns `"Nothing"`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: node
+    uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#node:member
+    package: word!
+    fullName: node
+    summary: >-
+      Gets the node associated with this `CustomXmlValidationError` object, if
+      any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'node?: Word.Interfaces.CustomXmlNodeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions:interface" />
+  - name: text
+    uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#text:member
+    package: word!
+    fullName: text
+    summary: Gets the text in the `CustomXmlValidationError` object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: >-
+      Gets the type of error generated from the `CustomXmlValidationError`
+      object.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

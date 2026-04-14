@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.SettingData
+uid: word!Word.Interfaces.SettingData:interface
+package: word!
+fullName: Word.Interfaces.SettingData
+summary: >-
+  An interface describing the data returned by calling `setting.toJSON()`<!--
+  -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.SettingCollectionData.items (property type)
+  - Word.Interfaces.SettingCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

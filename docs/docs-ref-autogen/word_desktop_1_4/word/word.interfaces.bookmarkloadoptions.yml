@@ -1,0 +1,142 @@
+### YamlMime:TSType
+name: Word.Interfaces.BookmarkLoadOptions
+uid: word!Word.Interfaces.BookmarkLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.BookmarkLoadOptions
+summary: >-
+  Represents a single bookmark in a document, selection, or range. The
+  `Bookmark` object is a member of the `Bookmark` collection. The
+  [Word.BookmarkCollection](xref:word!Word.BookmarkCollection:class) includes
+  all the bookmarks listed in the **Bookmark** dialog box (**Insert**
+  menu).
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.BookmarkLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: end
+    uid: word!Word.Interfaces.BookmarkLoadOptions#end:member
+    package: word!
+    fullName: end
+    summary: Specifies the ending character position of the bookmark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'end?: boolean;'
+      return:
+        type: boolean
+  - name: isColumn
+    uid: word!Word.Interfaces.BookmarkLoadOptions#isColumn:member
+    package: word!
+    fullName: isColumn
+    summary: Returns `true` if the bookmark is a table column.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isColumn?: boolean;'
+      return:
+        type: boolean
+  - name: isEmpty
+    uid: word!Word.Interfaces.BookmarkLoadOptions#isEmpty:member
+    package: word!
+    fullName: isEmpty
+    summary: Returns `true` if the bookmark is empty.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEmpty?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.BookmarkLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Returns the name of the `Bookmark` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.BookmarkLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained in the `Bookmark` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: start
+    uid: word!Word.Interfaces.BookmarkLoadOptions#start:member
+    package: word!
+    fullName: start
+    summary: Specifies the starting character position of the bookmark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'start?: boolean;'
+      return:
+        type: boolean
+  - name: storyType
+    uid: word!Word.Interfaces.BookmarkLoadOptions#storyType:member
+    package: word!
+    fullName: storyType
+    summary: Returns the story type for the bookmark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storyType?: boolean;'
+      return:
+        type: boolean

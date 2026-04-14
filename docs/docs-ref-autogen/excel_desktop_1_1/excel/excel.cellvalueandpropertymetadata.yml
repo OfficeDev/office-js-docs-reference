@@ -1,0 +1,24 @@
+### YamlMime:TSTypeAlias
+name: Excel.CellValueAndPropertyMetadata
+uid: excel!Excel.CellValueAndPropertyMetadata:type
+package: excel!
+fullName: Excel.CellValueAndPropertyMetadata
+summary: >-
+  Represents the value and metadata of a property. The metadata applies to the
+  property (and not the value), but it is combined with the value in this type.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  Learn more about the types in this type alias through the following links. 
+
+
+  [Excel.CellValue](/javascript/api/excel/excel.cellvalue),
+  [Excel.EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties)
+
+isPreview: false
+isDeprecated: false
+syntax: >-
+  export type CellValueAndPropertyMetadata = (CellValue) &
+  EntityPropertyExtraProperties;

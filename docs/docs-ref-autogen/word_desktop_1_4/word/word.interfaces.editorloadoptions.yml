@@ -1,0 +1,101 @@
+### YamlMime:TSType
+name: Word.Interfaces.EditorLoadOptions
+uid: word!Word.Interfaces.EditorLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.EditorLoadOptions
+summary: >-
+  Represents a user with permissions to edit authorized portions of a protected
+  (read-only) Word document. To learn more, see [Allow changes to parts of a
+  protected Word
+  document](https://support.microsoft.com/office/187ed01c-8795-43e1-9fd0-c9fca419dadf)<!--
+  -->.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.EditorLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: word!Word.Interfaces.EditorLoadOptions#id:member
+    package: word!
+    fullName: id
+    summary: >-
+      Gets the identifier for the `Editor` object when the parent document is
+      saved as a webpage.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.EditorLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Gets the name of the editor.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: nextRange
+    uid: word!Word.Interfaces.EditorLoadOptions#nextRange:member
+    package: word!
+    fullName: nextRange
+    summary: >-
+      Gets a `Range` object that represents the next range that the editor has
+      permissions to modify.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextRange?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: range
+    uid: word!Word.Interfaces.EditorLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `Editor` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />

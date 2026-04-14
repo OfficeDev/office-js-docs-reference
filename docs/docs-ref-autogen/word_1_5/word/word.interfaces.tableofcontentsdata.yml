@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableOfContentsData
+uid: word!Word.Interfaces.TableOfContentsData:interface
+package: word!
+fullName: Word.Interfaces.TableOfContentsData
+summary: >-
+  An interface describing the data returned by calling
+  `tableOfContents.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.TableOfContentsCollectionData.items (property type)
+  - Word.Interfaces.TableOfContentsCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

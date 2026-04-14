@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TableCellCollectionUpdateData
+uid: powerpoint!PowerPoint.Interfaces.TableCellCollectionUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TableCellCollectionUpdateData
+summary: >-
+  An interface for updating data on the `TableCellCollection` object, for use in
+  `tableCellCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellCollectionUpdateData#items:member
+    package: powerpoint!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.TableCellData[];'
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData:interface"
+          />[]

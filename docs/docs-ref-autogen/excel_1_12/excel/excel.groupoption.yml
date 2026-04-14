@@ -4,13 +4,19 @@ uid: excel!Excel.GroupOption:enum
 package: excel!
 fullName: Excel.GroupOption
 summary: ''
-remarks: |-
-  \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
+
 
   Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -25,24 +31,31 @@ remarks: |-
       sheet.getRange("7:8").group(Excel.GroupOption.byRows);
       await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: byColumns
     uid: excel!Excel.GroupOption.byColumns:member
     package: excel!
-    summary: |-
+    summary: >-
       Group by columns.
 
-      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ByColumns"'
   - name: byRows
     uid: excel!Excel.GroupOption.byRows:member
     package: excel!
-    summary: |-
+    summary: >-
       Group by rows.
 
-      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ByRows"'

@@ -1,0 +1,155 @@
+### YamlMime:TSType
+name: Word.Interfaces.ConditionalStyleLoadOptions
+uid: word!Word.Interfaces.ConditionalStyleLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.ConditionalStyleLoadOptions
+summary: >-
+  Represents special formatting applied to specified areas of a table when the
+  selected table is formatted with a specified table style.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: bottomPadding
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#bottomPadding:member
+    package: word!
+    fullName: bottomPadding
+    summary: >-
+      Specifies the amount of space (in points) to add below the contents of a
+      single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomPadding?: boolean;'
+      return:
+        type: boolean
+  - name: font
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#font:member
+    package: word!
+    fullName: font
+    summary: >-
+      Returns a `Font` object that represents the font formatting for the
+      conditional style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.FontLoadOptions:interface" />
+  - name: leftPadding
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#leftPadding:member
+    package: word!
+    fullName: leftPadding
+    summary: >-
+      Specifies the amount of space (in points) to add to the left of the
+      contents of a single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftPadding?: boolean;'
+      return:
+        type: boolean
+  - name: paragraphFormat
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#paragraphFormat:member
+    package: word!
+    fullName: paragraphFormat
+    summary: >-
+      Returns a `ParagraphFormat` object that represents the paragraph
+      formatting for the conditional style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ParagraphFormatLoadOptions:interface"
+          />
+  - name: rightPadding
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#rightPadding:member
+    package: word!
+    fullName: rightPadding
+    summary: >-
+      Specifies the amount of space (in points) to add to the right of the
+      contents of a single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightPadding?: boolean;'
+      return:
+        type: boolean
+  - name: shading
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#shading:member
+    package: word!
+    fullName: shading
+    summary: >-
+      Returns a `ShadingUniversal` object that represents the shading of the
+      conditional style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
+          />
+  - name: topPadding
+    uid: word!Word.Interfaces.ConditionalStyleLoadOptions#topPadding:member
+    package: word!
+    fullName: topPadding
+    summary: >-
+      Specifies the amount of space (in points) to add above the contents of a
+      single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topPadding?: boolean;'
+      return:
+        type: boolean

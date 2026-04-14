@@ -1,0 +1,15 @@
+### YamlMime:TSType
+name: Word.Interfaces.StyleData
+uid: word!Word.Interfaces.StyleData:interface
+package: word!
+fullName: Word.Interfaces.StyleData
+summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.StyleCollectionData.items (property type)
+  - Word.Interfaces.StyleCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

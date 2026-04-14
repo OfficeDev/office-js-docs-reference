@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.HeadingStyleUpdateData
+uid: word!Word.Interfaces.HeadingStyleUpdateData:interface
+package: word!
+fullName: Word.Interfaces.HeadingStyleUpdateData
+summary: >-
+  An interface for updating data on the `HeadingStyle` object, for use in
+  `headingStyle.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

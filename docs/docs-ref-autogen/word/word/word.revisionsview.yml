@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.RevisionsView
+uid: word!Word.RevisionsView:enum
+package: word!
+fullName: Word.RevisionsView
+summary: >-
+  Specifies whether Word displays the original version of a document or a
+  version with revisions and formatting changes applied.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Used by
+
+
+  - Word.Interfaces.RevisionsFilterData.view (property type)
+
+  - Word.Interfaces.RevisionsFilterUpdateData.view (property type)
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: final
+    uid: word!Word.RevisionsView.final:member
+    package: word!
+    summary: >-
+      Final view.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Final"'
+  - name: original
+    uid: word!Word.RevisionsView.original:member
+    package: word!
+    summary: >-
+      Original view.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Original"'

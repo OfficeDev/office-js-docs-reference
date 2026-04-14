@@ -1,0 +1,205 @@
+### YamlMime:TSType
+name: Word.TableAutoFormatOptions
+uid: word!Word.TableAutoFormatOptions:interface
+package: word!
+fullName: Word.TableAutoFormatOptions
+summary: >-
+  Represents the options for the [Table.autoFormat](xref:word!Word.Table:class)
+  method.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: applyBorders
+    uid: word!Word.TableAutoFormatOptions#applyBorders:member
+    package: word!
+    fullName: applyBorders
+    summary: >-
+      If provided, specifies whether to apply borders of the specified format.
+      The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyBorders?: boolean;'
+      return:
+        type: boolean
+  - name: applyColor
+    uid: word!Word.TableAutoFormatOptions#applyColor:member
+    package: word!
+    fullName: applyColor
+    summary: >-
+      If provided, specifies whether to apply color of the specified format. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyColor?: boolean;'
+      return:
+        type: boolean
+  - name: applyFirstColumn
+    uid: word!Word.TableAutoFormatOptions#applyFirstColumn:member
+    package: word!
+    fullName: applyFirstColumn
+    summary: >-
+      If provided, specifies whether to apply first column formatting of the
+      specified format. The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyFirstColumn?: boolean;'
+      return:
+        type: boolean
+  - name: applyFont
+    uid: word!Word.TableAutoFormatOptions#applyFont:member
+    package: word!
+    fullName: applyFont
+    summary: >-
+      If provided, specifies whether to apply font of the specified format. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyFont?: boolean;'
+      return:
+        type: boolean
+  - name: applyHeadingRows
+    uid: word!Word.TableAutoFormatOptions#applyHeadingRows:member
+    package: word!
+    fullName: applyHeadingRows
+    summary: >-
+      If provided, specifies whether to apply heading row formatting of the
+      specified format. The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyHeadingRows?: boolean;'
+      return:
+        type: boolean
+  - name: applyLastColumn
+    uid: word!Word.TableAutoFormatOptions#applyLastColumn:member
+    package: word!
+    fullName: applyLastColumn
+    summary: >-
+      If provided, specifies whether to apply last column formatting of the
+      specified format. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyLastColumn?: boolean;'
+      return:
+        type: boolean
+  - name: applyLastRow
+    uid: word!Word.TableAutoFormatOptions#applyLastRow:member
+    package: word!
+    fullName: applyLastRow
+    summary: >-
+      If provided, specifies whether to apply last row formatting of the
+      specified format. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyLastRow?: boolean;'
+      return:
+        type: boolean
+  - name: applyShading
+    uid: word!Word.TableAutoFormatOptions#applyShading:member
+    package: word!
+    fullName: applyShading
+    summary: >-
+      If provided, specifies whether to apply shading of the specified format.
+      The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyShading?: boolean;'
+      return:
+        type: boolean
+  - name: autoFit
+    uid: word!Word.TableAutoFormatOptions#autoFit:member
+    package: word!
+    fullName: autoFit
+    summary: >-
+      If provided, specifies whether to decrease the width of the table columns
+      as much as possible without changing the way text wraps in the cells. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoFit?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: word!Word.TableAutoFormatOptions#format:member
+    package: word!
+    fullName: format
+    summary: >-
+      If provided, specifies the format to apply. The default value is
+      `simple1`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        format?: Word.TableFormatType | "None" | "Simple1" | "Simple2" |
+        "Simple3" | "Classic1" | "Classic2" | "Classic3" | "Classic4" |
+        "Colorful1" | "Colorful2" | "Colorful3" | "Columns1" | "Columns2" |
+        "Columns3" | "Columns4" | "Columns5" | "Grid1" | "Grid2" | "Grid3" |
+        "Grid4" | "Grid5" | "Grid6" | "Grid7" | "Grid8" | "List1" | "List2" |
+        "List3" | "List4" | "List5" | "List6" | "List7" | "List8" |
+        "ThreeDEffects1" | "ThreeDEffects2" | "ThreeDEffects3" | "Contemporary"
+        | "Elegant" | "Professional" | "Subtle1" | "Subtle2" | "Web1" | "Web2" |
+        "Web3";
+      return:
+        type: >-
+          <xref uid="word!Word.TableFormatType:enum" /> | "None" | "Simple1" |
+          "Simple2" | "Simple3" | "Classic1" | "Classic2" | "Classic3" |
+          "Classic4" | "Colorful1" | "Colorful2" | "Colorful3" | "Columns1" |
+          "Columns2" | "Columns3" | "Columns4" | "Columns5" | "Grid1" | "Grid2"
+          | "Grid3" | "Grid4" | "Grid5" | "Grid6" | "Grid7" | "Grid8" | "List1"
+          | "List2" | "List3" | "List4" | "List5" | "List6" | "List7" | "List8"
+          | "ThreeDEffects1" | "ThreeDEffects2" | "ThreeDEffects3" |
+          "Contemporary" | "Elegant" | "Professional" | "Subtle1" | "Subtle2" |
+          "Web1" | "Web2" | "Web3"

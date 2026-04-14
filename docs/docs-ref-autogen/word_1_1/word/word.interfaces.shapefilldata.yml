@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeFillData
+uid: word!Word.Interfaces.ShapeFillData:interface
+package: word!
+fullName: Word.Interfaces.ShapeFillData
+summary: >-
+  An interface describing the data returned by calling `shapeFill.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

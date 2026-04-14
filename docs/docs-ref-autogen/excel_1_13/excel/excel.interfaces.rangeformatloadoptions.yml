@@ -3,17 +3,25 @@ name: Excel.Interfaces.RangeFormatLoadOptions
 uid: excel!Excel.Interfaces.RangeFormatLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.RangeFormatLoadOptions
-summary: A format object encapsulating the range's font, fill, borders, alignment, and other properties.
-remarks: |-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: >-
+  A format object encapsulating the range's font, fill, borders, alignment, and
+  other properties.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Used by
 
+
   - Excel.Interfaces.RangeAreasCollectionLoadOptions.format (property type)
+
   - Excel.Interfaces.RangeAreasLoadOptions.format (property type)
+
   - Excel.Interfaces.RangeCollectionLoadOptions.format (property type)
+
   - Excel.Interfaces.RangeLoadOptions.format (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,9 +30,12 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,9 +46,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#autoIndent:member
     package: excel!
     fullName: autoIndent
-    summary: Specifies if text is automatically indented when text alignment is set to equal distribution.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if text is automatically indented when text alignment is set to
+      equal distribution.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,21 +64,30 @@ properties:
     package: excel!
     fullName: borders
     summary: Collection of border objects that apply to the overall range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
+          />
   - name: columnWidth
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#columnWidth:member
     package: excel!
     fullName: columnWidth
-    summary: Specifies the width of all columns within the range. If the column widths are not uniform, `null` will be returned.
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the width of all columns within the range. If the column widths
+      are not uniform, `null` will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,8 +99,10 @@ properties:
     package: excel!
     fullName: fill
     summary: Returns the fill object defined on the overall range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,8 +114,10 @@ properties:
     package: excel!
     fullName: font
     summary: Returns the font object defined on the overall range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,9 +128,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
-    summary: Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the horizontal alignment for the specified object. See
+      `Excel.HorizontalAlignment` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,8 +146,10 @@ properties:
     package: excel!
     fullName: indentLevel
     summary: An integer from 0 to 250 that indicates the indent level.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,21 +161,27 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the format protection object for a range.
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'protection?: Excel.Interfaces.FormatProtectionLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.FormatProtectionLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.FormatProtectionLoadOptions:interface" />
   - name: readingOrder
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#readingOrder:member
     package: excel!
     fullName: readingOrder
     summary: The reading order for the range.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,9 +192,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#rowHeight:member
     package: excel!
     fullName: rowHeight
-    summary: The height of all rows in the range. If the row heights are not uniform, `null` will be returned.
-    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The height of all rows in the range. If the row heights are not uniform,
+      `null` will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,9 +209,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#shrinkToFit:member
     package: excel!
     fullName: shrinkToFit
-    summary: Specifies if text automatically shrinks to fit in the available column width.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if text automatically shrinks to fit in the available column
+      width.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,9 +226,15 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#textOrientation:member
     package: excel!
     fullName: textOrientation
-    summary: The text orientation of all the cells within the range. The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then `null` will be returned.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The text orientation of all the cells within the range. The text
+      orientation should be an integer either from -90 to 90, or 180 for
+      vertically-oriented text. If the orientation within a range are not
+      uniform, then `null` will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,9 +245,17 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#useStandardHeight:member
     package: excel!
     fullName: useStandardHeight
-    summary: 'Determines if the row height of the `Range` object equals the standard height of the sheet. Returns `true` if the row height of the `Range` object equals the standard height of the sheet. Returns `null` if the range contains more than one row and the rows aren''t all the same height. Returns `false` otherwise. Note: This property is only intended to be set to `true`<!-- -->. Setting it to `false` has no effect.'
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Determines if the row height of the `Range` object equals the standard
+      height of the sheet. Returns `true` if the row height of the `Range`
+      object equals the standard height of the sheet. Returns `null` if the
+      range contains more than one row and the rows aren't all the same height.
+      Returns `false` otherwise. Note: This property is only intended to be set
+      to `true`<!-- -->. Setting it to `false` has no effect.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,9 +266,17 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#useStandardWidth:member
     package: excel!
     fullName: useStandardWidth
-    summary: 'Specifies if the column width of the `Range` object equals the standard width of the sheet. Returns `true` if the column width of the `Range` object equals the standard width of the sheet. Returns `null` if the range contains more than one column and the columns aren''t all the same height. Returns `false` otherwise. Note: This property is only intended to be set to `true`<!-- -->. Setting it to `false` has no effect.'
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the column width of the `Range` object equals the standard
+      width of the sheet. Returns `true` if the column width of the `Range`
+      object equals the standard width of the sheet. Returns `null` if the range
+      contains more than one column and the columns aren't all the same height.
+      Returns `false` otherwise. Note: This property is only intended to be set
+      to `true`<!-- -->. Setting it to `false` has no effect.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,9 +287,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
-    summary: Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the vertical alignment for the specified object. See
+      `Excel.VerticalAlignment` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,9 +304,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member
     package: excel!
     fullName: wrapText
-    summary: Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if Excel wraps the text in the object. A `null` value indicates
+      that the entire range doesn't have a uniform wrap setting
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

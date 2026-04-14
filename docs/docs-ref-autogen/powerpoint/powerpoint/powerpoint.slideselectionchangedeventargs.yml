@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: PowerPoint.SlideSelectionChangedEventArgs
+uid: powerpoint!PowerPoint.SlideSelectionChangedEventArgs:interface
+package: powerpoint!
+fullName: PowerPoint.SlideSelectionChangedEventArgs
+summary: Provides information about the slide selection changed event.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: slideIds
+    uid: powerpoint!PowerPoint.SlideSelectionChangedEventArgs#slideIds:member
+    package: powerpoint!
+    fullName: slideIds
+    summary: Gets the array of IDs of the currently selected slides.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'slideIds: string[];'
+      return:
+        type: string[]

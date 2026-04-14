@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.BindingData
+uid: powerpoint!PowerPoint.Interfaces.BindingData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.BindingData
+summary: >-
+  An interface describing the data returned by calling `binding.toJSON()`<!--
+  -->.
+remarks: |-
+  #### Used by
+
+  - PowerPoint.Interfaces.BindingCollectionData.items (property type)
+  - PowerPoint.Interfaces.BindingCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

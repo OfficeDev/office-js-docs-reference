@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentData
+uid: word!Word.Interfaces.CommentData:interface
+package: word!
+fullName: Word.Interfaces.CommentData
+summary: >-
+  An interface describing the data returned by calling `comment.toJSON()`<!--
+  -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.CommentCollectionData.items (property type)
+  - Word.Interfaces.CommentCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

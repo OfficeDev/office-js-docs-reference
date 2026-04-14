@@ -3,13 +3,15 @@ name: Excel.Interfaces.ChartDataLabelsUpdateData
 uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelsUpdateData
-summary: An interface for updating data on the `ChartDataLabels` object, for use in `chartDataLabels.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `ChartDataLabels` object, for use in
+  `chartDataLabels.set({ ... })`<!-- -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.ChartSeriesUpdateData.dataLabels (property type)
   - Excel.Interfaces.ChartUpdateData.dataLabels (property type)
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,9 +20,13 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#autoText:member
     package: excel!
     fullName: autoText
-    summary: Specifies if data labels automatically generate appropriate text based on context.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if data labels automatically generate appropriate text based on
+      context.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,35 +37,56 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member
     package: excel!
     fullName: format
-    summary: Specifies the format of chart data labels, which includes fill and font formatting.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the format of chart data labels, which includes fill and font
+      formatting.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface"
+          />
   - name: horizontalAlignment
-    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member
+    uid: >-
+      excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
-    summary: Specifies the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details. This property is valid only when the `TextOrientation` of data label is 0.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the horizontal alignment for chart data label. See
+      `Excel.ChartTextHorizontalAlignment` for details. This property is valid
+      only when the `TextOrientation` of data label is 0.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";'
+      content: >-
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" |
+        "Left" | "Right" | "Justify" | "Distributed";
       return:
-        type: <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
+          "Center" | "Left" | "Right" | "Justify" | "Distributed"
   - name: linkNumberFormat
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#linkNumberFormat:member
     package: excel!
     fullName: linkNumberFormat
-    summary: Specifies if the number format is linked to the cells. If `true`<!-- -->, the number format will change in the labels when it changes in the cells.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the number format is linked to the cells. If `true`<!-- -->,
+      the number format will change in the labels when it changes in the cells.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,8 +98,10 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: Specifies the format code for data labels.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,22 +112,34 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member
     package: excel!
     fullName: position
-    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Value that represents the position of the data label. See
+      `Excel.ChartDataLabelPosition` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";'
+      content: >-
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center"
+        | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" |
+        "Bottom" | "BestFit" | "Callout";
       return:
-        type: <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+        type: >-
+          <xref uid="excel!Excel.ChartDataLabelPosition:enum" /> | "Invalid" |
+          "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+          | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - name: separator
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#separator:member
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data labels on a chart.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,8 +151,10 @@ properties:
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,8 +166,10 @@ properties:
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,8 +181,10 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,8 +196,10 @@ properties:
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,8 +211,10 @@ properties:
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,8 +226,10 @@ properties:
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,9 +240,14 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#textOrientation:member
     package: excel!
     fullName: textOrientation
-    summary: Represents the angle to which the text is oriented for data labels. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the angle to which the text is oriented for data labels. The
+      value should either be an integer from -90 to 90 or the integer 180 for
+      vertically-oriented text.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,12 +258,21 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
-    summary: Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details. This property is valid only when `TextOrientation` of the data label is -90, 90, or 180.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the vertical alignment of chart data label. See
+      `Excel.ChartTextVerticalAlignment` for details. This property is valid
+      only when `TextOrientation` of the data label is -90, 90, or 180.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      content: >-
+        verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" |
+        "Bottom" | "Top" | "Justify" | "Distributed";
       return:
-        type: <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+        type: >-
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
+          | "Bottom" | "Top" | "Justify" | "Distributed"

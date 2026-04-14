@@ -1,0 +1,17 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableOfFiguresData
+uid: word!Word.Interfaces.TableOfFiguresData:interface
+package: word!
+fullName: Word.Interfaces.TableOfFiguresData
+summary: >-
+  An interface describing the data returned by calling
+  `tableOfFigures.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.TableOfFiguresCollectionData.items (property type)
+  - Word.Interfaces.TableOfFiguresCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: Office.EnhancedLocationsChangedEventArgs
+uid: outlook!Office.EnhancedLocationsChangedEventArgs:interface
+package: outlook!
+fullName: Office.EnhancedLocationsChangedEventArgs
+summary: >-
+  Provides the current enhanced locations when the
+  `Office.EventType.EnhancedLocationsChanged` event is raised.
+remarks: >-
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Adds an event handler for the EnhancedLocationsChanged event.
+
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.item.addHandlerAsync(Office.EventType.EnhancedLocationsChanged, enhancedLocationsChangedHandler, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error(`Failed to add event handler: ${result.error.message}`);
+                  return;
+              }
+
+              console.log("Event handler added successfully.");
+          });
+      });
+  });
+
+
+  // Handles the EnhancedLocationsChanged event.
+
+  function enhancedLocationsChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+      const enhancedLocations = event.enhancedLocations;
+      enhancedLocations.forEach((location) => {
+          console.log(`Display name: ${location.displayName}`);
+          const locationType = location.locationIdentifier.type;
+          console.log(`Type: ${locationType}`);
+          if (locationType === Office.MailboxEnums.LocationType.Room) {
+              console.log(`Email address: ${location.emailAddress}`);
+          }
+      });
+  }
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: enhancedLocations
+    uid: outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member
+    package: outlook!
+    fullName: enhancedLocations
+    summary: Gets the set of enhanced locations.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enhancedLocations: LocationDetails[];'
+      return:
+        type: <xref uid="outlook!Office.LocationDetails:interface" />[]
+  - name: type
+    uid: outlook!Office.EnhancedLocationsChangedEventArgs#type:member
+    package: outlook!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkEnhancedLocationsChanged";'
+      return:
+        type: '"olkEnhancedLocationsChanged"'

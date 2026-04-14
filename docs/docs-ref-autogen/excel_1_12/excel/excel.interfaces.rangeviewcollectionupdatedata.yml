@@ -4,10 +4,10 @@ uid: excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeViewCollectionUpdateData
 summary: >-
-  An interface for updating data on the `RangeViewCollection` object, for use in `rangeViewCollection.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `RangeViewCollection` object, for use in
+  `rangeViewCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

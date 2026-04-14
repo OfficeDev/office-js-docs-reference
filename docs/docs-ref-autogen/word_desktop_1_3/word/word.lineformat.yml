@@ -1,0 +1,521 @@
+### YamlMime:TSType
+name: Word.LineFormat
+uid: word!Word.LineFormat:class
+package: word!
+fullName: Word.LineFormat
+summary: >-
+  Represents line and arrowhead formatting. For a line, the `LineFormat` object
+  contains formatting information for the line itself; for a shape with a
+  border, this object contains formatting information for the shape's border.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: backgroundColor
+    uid: word!Word.LineFormat#backgroundColor:member
+    package: word!
+    fullName: backgroundColor
+    summary: >-
+      Gets a `ColorFormat` object that represents the background color for a
+      patterned line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly backgroundColor: Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+  - name: beginArrowheadLength
+    uid: word!Word.LineFormat#beginArrowheadLength:member
+    package: word!
+    fullName: beginArrowheadLength
+    summary: Specifies the length of the arrowhead at the beginning of the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        beginArrowheadLength: Word.ArrowheadLength | "Mixed" | "Short" |
+        "Medium" | "Long";
+      return:
+        type: >-
+          <xref uid="word!Word.ArrowheadLength:enum" /> | "Mixed" | "Short" |
+          "Medium" | "Long"
+  - name: beginArrowheadStyle
+    uid: word!Word.LineFormat#beginArrowheadStyle:member
+    package: word!
+    fullName: beginArrowheadStyle
+    summary: Specifies the style of the arrowhead at the beginning of the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        beginArrowheadStyle: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle"
+        | "Open" | "Stealth" | "Diamond" | "Oval";
+      return:
+        type: >-
+          <xref uid="word!Word.ArrowheadStyle:enum" /> | "Mixed" | "None" |
+          "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval"
+  - name: beginArrowheadWidth
+    uid: word!Word.LineFormat#beginArrowheadWidth:member
+    package: word!
+    fullName: beginArrowheadWidth
+    summary: Specifies the width of the arrowhead at the beginning of the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        beginArrowheadWidth: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium"
+        | "Wide";
+      return:
+        type: >-
+          <xref uid="word!Word.ArrowheadWidth:enum" /> | "Mixed" | "Narrow" |
+          "Medium" | "Wide"
+  - name: context
+    uid: word!Word.LineFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: dashStyle
+    uid: word!Word.LineFormat#dashStyle:member
+    package: word!
+    fullName: dashStyle
+    summary: Specifies the dash style for the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        dashStyle: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" |
+        "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" |
+        "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
+      return:
+        type: >-
+          <xref uid="word!Word.LineDashStyle:enum" /> | "Mixed" | "Solid" |
+          "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" |
+          "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" |
+          "SysDashDot"
+  - name: endArrowheadLength
+    uid: word!Word.LineFormat#endArrowheadLength:member
+    package: word!
+    fullName: endArrowheadLength
+    summary: Specifies the length of the arrowhead at the end of the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        endArrowheadLength: Word.ArrowheadLength | "Mixed" | "Short" | "Medium"
+        | "Long";
+      return:
+        type: >-
+          <xref uid="word!Word.ArrowheadLength:enum" /> | "Mixed" | "Short" |
+          "Medium" | "Long"
+  - name: endArrowheadStyle
+    uid: word!Word.LineFormat#endArrowheadStyle:member
+    package: word!
+    fullName: endArrowheadStyle
+    summary: Specifies the style of the arrowhead at the end of the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        endArrowheadStyle: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" |
+        "Open" | "Stealth" | "Diamond" | "Oval";
+      return:
+        type: >-
+          <xref uid="word!Word.ArrowheadStyle:enum" /> | "Mixed" | "None" |
+          "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval"
+  - name: endArrowheadWidth
+    uid: word!Word.LineFormat#endArrowheadWidth:member
+    package: word!
+    fullName: endArrowheadWidth
+    summary: Specifies the width of the arrowhead at the end of the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        endArrowheadWidth: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" |
+        "Wide";
+      return:
+        type: >-
+          <xref uid="word!Word.ArrowheadWidth:enum" /> | "Mixed" | "Narrow" |
+          "Medium" | "Wide"
+  - name: foregroundColor
+    uid: word!Word.LineFormat#foregroundColor:member
+    package: word!
+    fullName: foregroundColor
+    summary: >-
+      Gets a `ColorFormat` object that represents the foreground color for the
+      line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly foregroundColor: Word.ColorFormat;'
+      return:
+        type: <xref uid="word!Word.ColorFormat:class" />
+  - name: insetPen
+    uid: word!Word.LineFormat#insetPen:member
+    package: word!
+    fullName: insetPen
+    summary: Specifies if to draw lines inside a shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insetPen: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.LineFormat#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies if the object, or the formatting applied to it, is visible.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isVisible: boolean;'
+      return:
+        type: boolean
+  - name: pattern
+    uid: word!Word.LineFormat#pattern:member
+    package: word!
+    fullName: pattern
+    summary: Specifies the pattern applied to the line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        pattern: Word.PatternType | "Mixed" | "Percent5" | "Percent10" |
+        "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" |
+        "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" |
+        "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" |
+        "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" |
+        "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" |
+        "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" |
+        "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" |
+        "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" |
+        "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" |
+        "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" |
+        "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" |
+        "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" |
+        "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" |
+        "UpwardDiagonal" | "DiagonalCross";
+      return:
+        type: >-
+          <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" |
+          "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" |
+          "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" |
+          "Percent90" | "DarkHorizontal" | "DarkVertical" |
+          "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" |
+          "Trellis" | "LightHorizontal" | "LightVertical" |
+          "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" |
+          "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
+          "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" |
+          "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" |
+          "LargeConfetti" | "LargeGrid" | "HorizontalBrick" |
+          "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" |
+          "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" |
+          "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" |
+          "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" |
+          "DiagonalCross"
+  - name: style
+    uid: word!Word.LineFormat#style:member
+    package: word!
+    fullName: style
+    summary: Specifies the line format style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        style: Word.LineFormatStyle | "Mixed" | "Single" | "ThinThin" |
+        "ThinThick" | "ThickThin" | "ThickBetweenThin";
+      return:
+        type: >-
+          <xref uid="word!Word.LineFormatStyle:enum" /> | "Mixed" | "Single" |
+          "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin"
+  - name: transparency
+    uid: word!Word.LineFormat#transparency:member
+    package: word!
+    fullName: transparency
+    summary: >-
+      Specifies the degree of transparency of the line as a value between 0.0
+      (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type: number
+  - name: weight
+    uid: word!Word.LineFormat#weight:member
+    package: word!
+    fullName: weight
+    summary: Specifies the thickness of the line in points.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight: number;'
+      return:
+        type: number
+methods:
+  - name: load(options)
+    uid: word!Word.LineFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.LineFormatLoadOptions): Word.LineFormat;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.LineFormatLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.LineFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.LineFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.LineFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.LineFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.LineFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.LineFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.LineFormat:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.LineFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.LineFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.LineFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.LineFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.LineFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.LineFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.LineFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.LineFormat` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.LineFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.LineFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.LineFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.LineFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.LineFormat;'
+      return:
+        type: <xref uid="word!Word.LineFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.LineFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.LineFormat;'
+      return:
+        type: <xref uid="word!Word.LineFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

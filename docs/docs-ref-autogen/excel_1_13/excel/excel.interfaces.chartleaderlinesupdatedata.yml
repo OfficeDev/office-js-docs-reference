@@ -3,9 +3,11 @@ name: Excel.Interfaces.ChartLeaderLinesUpdateData
 uid: excel!Excel.Interfaces.ChartLeaderLinesUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLeaderLinesUpdateData
-summary: An interface for updating data on the `ChartLeaderLines` object, for use in `chartLeaderLines.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `ChartLeaderLines` object, for use in
+  `chartLeaderLines.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

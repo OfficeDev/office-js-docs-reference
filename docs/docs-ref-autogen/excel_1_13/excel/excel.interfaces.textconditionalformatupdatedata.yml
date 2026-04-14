@@ -3,13 +3,18 @@ name: Excel.Interfaces.TextConditionalFormatUpdateData
 uid: excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.TextConditionalFormatUpdateData
-summary: An interface for updating data on the `TextConditionalFormat` object, for use in `textConditionalFormat.set({ ... })`<!-- -->.
-remarks: |-
+summary: >-
+  An interface for updating data on the `TextConditionalFormat` object, for use
+  in `textConditionalFormat.set({ ... })`<!-- -->.
+remarks: >-
   #### Used by
 
+
   - Excel.Interfaces.ConditionalFormatUpdateData.textComparison (property type)
-  - Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject (property type)
-example: []
+
+  - Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject
+  (property type)
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,22 +23,31 @@ properties:
     uid: excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member
     package: excel!
     fullName: format
-    summary: Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a format object, encapsulating the conditional format's font,
+      fill, borders, and other properties.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface"
+          />
   - name: rule
     uid: excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member
     package: excel!
     fullName: rule
     summary: The rule of the conditional format.
-    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

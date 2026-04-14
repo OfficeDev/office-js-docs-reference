@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundSolidFillData
+uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundSolidFillData
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackgroundSolidFill.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

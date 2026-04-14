@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: Word.SelectionMoveUpDownOptions
+uid: word!Word.SelectionMoveUpDownOptions:interface
+package: word!
+fullName: Word.SelectionMoveUpDownOptions
+summary: >-
+  Represents the options for the [Selection.moveUp and
+  Selection.moveDown](xref:word!Word.Selection:class) methods.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: word!Word.SelectionMoveUpDownOptions#count:member
+    package: word!
+    fullName: count
+    summary: >-
+      If provided, specifies the number of units the selection is to be moved.
+      The default value is 1.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: number;'
+      return:
+        type: number
+  - name: extend
+    uid: word!Word.SelectionMoveUpDownOptions#extend:member
+    package: word!
+    fullName: extend
+    summary: >-
+      If provided, specifies the type of movement. The movement direction (up or
+      down) is according to the calling method. If set to `move`<!-- -->, the
+      selection is collapsed to the endpoint and moved in the appropriate
+      direction. If set to `extend`<!-- -->, the selection is extended in the
+      appropriate direction. The default value is `move`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'extend?: Word.MovementType | "Move" | "Extend";'
+      return:
+        type: <xref uid="word!Word.MovementType:enum" /> | "Move" | "Extend"
+  - name: unit
+    uid: word!Word.SelectionMoveUpDownOptions#unit:member
+    package: word!
+    fullName: unit
+    summary: >-
+      If provided, specifies the unit by which to move the selection. The
+      default value is `line`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
+        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
+        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
+        "Item";
+      return:
+        type: >-
+          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
+          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
+          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
+          "ParagraphFormat" | "Table" | "Item"

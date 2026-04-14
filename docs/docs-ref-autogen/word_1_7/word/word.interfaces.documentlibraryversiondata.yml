@@ -1,0 +1,20 @@
+### YamlMime:TSType
+name: Word.Interfaces.DocumentLibraryVersionData
+uid: word!Word.Interfaces.DocumentLibraryVersionData:interface
+package: word!
+fullName: Word.Interfaces.DocumentLibraryVersionData
+summary: >-
+  An interface describing the data returned by calling
+  `documentLibraryVersion.toJSON()`<!-- -->.
+remarks: >-
+  #### Used by
+
+
+  - Word.Interfaces.DocumentLibraryVersionCollectionData.items (property type)
+
+  - Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items (property
+  type)
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -1,0 +1,15 @@
+### YamlMime:TSType
+name: Word.Interfaces.ShapeData
+uid: word!Word.Interfaces.ShapeData:interface
+package: word!
+fullName: Word.Interfaces.ShapeData
+summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - Word.Interfaces.ShapeCollectionData.items (property type)
+  - Word.Interfaces.ShapeCollectionUpdateData.items (property type)
+
+isPreview: false
+isDeprecated: false
+type: interface
