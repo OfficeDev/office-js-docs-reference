@@ -17,8 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.InfobarClickedEventArgs#infobarDetails:member" />
-  (property type)
+  - Office.InfobarClickedEventArgs.infobarDetails (property type)
 
   #### Examples
 

@@ -24,8 +24,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.ReplyFormData#attachments:member" /> (property
-  type)
+  - Office.ReplyFormData.attachments (property type)
 
   #### Examples
 

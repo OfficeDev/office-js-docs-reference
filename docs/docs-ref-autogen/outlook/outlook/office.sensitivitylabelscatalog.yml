@@ -37,8 +37,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#sensitivityLabelsCatalog:member" />
-  (property type)
+  - Office.Context.sensitivityLabelsCatalog (property type)
 
 isPreview: false
 isDeprecated: false

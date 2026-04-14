@@ -26,35 +26,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllForm:member" />
-  (parameter type)
+  - Office.AppointmentRead.displayReplyAllForm (parameter type)
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member"
-  /> (parameter type)
+  - Office.AppointmentRead.displayReplyAllFormAsync (parameter type)
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyForm:member" />
-  (parameter type)
+  - Office.AppointmentRead.displayReplyForm (parameter type)
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyFormAsync:member" />
-  (parameter type)
+  - Office.AppointmentRead.displayReplyFormAsync (parameter type)
 
-  - <xref uid="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member"
-  /> (parameter type)
+  - Office.LoadedMessageRead.displayReplyAllFormAsync (parameter type)
 
-  - <xref uid="outlook!Office.LoadedMessageRead#displayReplyFormAsync:member" />
-  (parameter type)
+  - Office.LoadedMessageRead.displayReplyFormAsync (parameter type)
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllForm:member" />
-  (parameter type)
+  - Office.MessageRead.displayReplyAllForm (parameter type)
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllFormAsync:member" />
-  (parameter type)
+  - Office.MessageRead.displayReplyAllFormAsync (parameter type)
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyForm:member" /> (parameter
-  type)
+  - Office.MessageRead.displayReplyForm (parameter type)
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyFormAsync:member" />
-  (parameter type)
+  - Office.MessageRead.displayReplyFormAsync (parameter type)
 
   #### Examples
 

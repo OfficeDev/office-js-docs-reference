@@ -50,14 +50,13 @@ remarks: >-
   **Office**
 
 
-  - <xref uid="office!Office.Context#officeTheme:member" /> (property type)
+  - Office.Context.officeTheme (property type)
 
 
   **Outlook**
 
 
-  - <xref uid="outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member" />
-  (property type)
+  - Office.OfficeThemeChangedEventArgs.officeTheme (property type)
 
   #### Examples
 

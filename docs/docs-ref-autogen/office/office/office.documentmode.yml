@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#mode:member" /> (property type)
+  - Office.Document.mode (property type)
 
   #### Examples
 

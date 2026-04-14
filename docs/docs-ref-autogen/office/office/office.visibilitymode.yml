@@ -4,20 +4,15 @@ uid: office!Office.VisibilityMode:enum
 package: office!
 fullName: Office.VisibilityMode
 summary: Visibility mode of the add-in.
-remarks: >-
+remarks: |-
 
 
   #### Used by
 
-
-  - <xref uid="office!Office.VisibilityModeChangedMessage#visibilityMode:member"
-  /> (property type)
-
+  - Office.VisibilityModeChangedMessage.visibilityMode (property type)
   #### Examples
 
-
   ```TypeScript
-
   Office.onReady(() => {
       Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
           if (args.visibilityMode === Office.VisibilityMode.taskpane) {
@@ -27,7 +22,6 @@ remarks: >-
 
       // Other startup tasks.
   });
-
   ```
 
 isPreview: false

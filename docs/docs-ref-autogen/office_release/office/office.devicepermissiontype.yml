@@ -36,11 +36,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.DevicePermission#requestPermissions:member" />
-  (parameter type)
+  - Office.DevicePermission.requestPermissions (parameter type)
 
-  - <xref uid="office!Office.DevicePermission#requestPermissionsAsync:member" />
-  (parameter type)
+  - Office.DevicePermission.requestPermissionsAsync (parameter type)
 
   #### Examples
 

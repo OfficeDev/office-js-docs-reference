@@ -32,7 +32,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.CategoryDetails#color:member" /> (property type)
+  - Office.CategoryDetails.color (property type)
 
   #### Examples
 

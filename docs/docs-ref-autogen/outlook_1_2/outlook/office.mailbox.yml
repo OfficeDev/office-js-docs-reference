@@ -35,7 +35,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#mailbox:member" /> (property type)
+  - Office.Context.mailbox (property type)
 
   #### Examples
 

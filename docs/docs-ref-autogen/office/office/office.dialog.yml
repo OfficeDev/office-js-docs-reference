@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.UI#displayDialogAsync:member" /> (parameter type)
+  - Office.UI.displayDialogAsync (parameter type)
 
   #### Examples
 

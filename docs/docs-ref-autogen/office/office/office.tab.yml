@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.RibbonUpdaterData#tabs:member" /> (property type)
+  - Office.RibbonUpdaterData.tabs (property type)
 
   #### Examples
 

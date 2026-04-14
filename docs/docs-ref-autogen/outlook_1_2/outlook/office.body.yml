@@ -42,18 +42,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#body:member" /> (property type)
+  - Office.AppointmentCompose.body (property type)
 
-  - <xref uid="outlook!Office.AppointmentRead#body:member" /> (property type)
+  - Office.AppointmentRead.body (property type)
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#body:member" /> (property
-  type)
+  - Office.LoadedMessageCompose.body (property type)
 
-  - <xref uid="outlook!Office.LoadedMessageRead#body:member" /> (property type)
+  - Office.LoadedMessageRead.body (property type)
 
-  - <xref uid="outlook!Office.MessageCompose#body:member" /> (property type)
+  - Office.MessageCompose.body (property type)
 
-  - <xref uid="outlook!Office.MessageRead#body:member" /> (property type)
+  - Office.MessageRead.body (property type)
 
   #### Examples
 

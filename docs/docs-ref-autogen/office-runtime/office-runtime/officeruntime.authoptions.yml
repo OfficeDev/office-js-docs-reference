@@ -17,8 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office-runtime!OfficeRuntime.Auth#getAccessToken:member" />
-  (parameter type)
+  - OfficeRuntime.Auth.getAccessToken (parameter type)
 
 isPreview: false
 isDeprecated: false

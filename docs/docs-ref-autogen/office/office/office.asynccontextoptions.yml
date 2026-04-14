@@ -6,562 +6,206 @@ fullName: Office.AsyncContextOptions
 summary: >-
   Provides an option for preserving context data of any type, unchanged, for use
   in a callback.
-remarks: >-
+remarks: |-
 
 
   #### Used by
 
 
-
   **Office**
 
-
-  - <xref uid="office!Office.Binding#addHandlerAsync:member" /> (parameter type)
-
-  - <xref uid="office!Office.Bindings#getAllAsync:member" /> (parameter type)
-
-  - <xref uid="office!Office.Bindings#getByIdAsync:member" /> (parameter type)
-
-  - <xref uid="office!Office.Bindings#releaseByIdAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlNode#getNodeValueAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.CustomXmlNode#getTextAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlNode#getXmlAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlNode#setNodeValueAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.CustomXmlNode#setTextAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlNode#setXmlAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlPart#deleteAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlPart#getXmlAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlParts#addAsync:member" /> (parameter type)
-
-  - <xref uid="office!Office.CustomXmlParts#getByIdAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.CustomXmlParts#getByNamespaceAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.CustomXmlPrefixMappings#addNamespaceAsync:member"
-  /> (parameter type)
-
-  - <xref uid="office!Office.CustomXmlPrefixMappings#getNamespaceAsync:member"
-  /> (parameter type)
-
-  - <xref uid="office!Office.CustomXmlPrefixMappings#getPrefixAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.DevicePermission#requestPermissionsAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#addHandlerAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getActiveViewAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getFilePropertiesAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#getMaxResourceIndexAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#getMaxTaskIndexAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getProjectFieldAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getResourceByIndexAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#getResourceFieldAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#getSelectedResourceAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#getSelectedTaskAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getSelectedViewAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getTaskAsync:member" /> (parameter type)
-
-  - <xref uid="office!Office.Document#getTaskByIndexAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getTaskFieldAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Document#getWSSUrlAsync:member" /> (parameter type)
-
-  - <xref uid="office!Office.Document#setResourceFieldAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Document#setTaskFieldAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Settings#addHandlerAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.TableBinding#addColumnsAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.TableBinding#addRowsAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.TableBinding#clearFormatsAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.TableBinding#deleteAllDataValuesAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.TableBinding#getFormatsAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.TableBinding#setFormatsAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.TableBinding#setTableOptionsAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.UI#addHandlerAsync:member" /> (parameter type)
-
+  - Office.Binding.addHandlerAsync (parameter type)
+  - Office.Bindings.getAllAsync (parameter type)
+  - Office.Bindings.getByIdAsync (parameter type)
+  - Office.Bindings.releaseByIdAsync (parameter type)
+  - Office.CustomXmlNode.getNodesAsync (parameter type)
+  - Office.CustomXmlNode.getNodeValueAsync (parameter type)
+  - Office.CustomXmlNode.getTextAsync (parameter type)
+  - Office.CustomXmlNode.getXmlAsync (parameter type)
+  - Office.CustomXmlNode.setNodeValueAsync (parameter type)
+  - Office.CustomXmlNode.setTextAsync (parameter type)
+  - Office.CustomXmlNode.setXmlAsync (parameter type)
+  - Office.CustomXmlPart.addHandlerAsync (parameter type)
+  - Office.CustomXmlPart.deleteAsync (parameter type)
+  - Office.CustomXmlPart.getNodesAsync (parameter type)
+  - Office.CustomXmlPart.getXmlAsync (parameter type)
+  - Office.CustomXmlParts.addAsync (parameter type)
+  - Office.CustomXmlParts.getByIdAsync (parameter type)
+  - Office.CustomXmlParts.getByNamespaceAsync (parameter type)
+  - Office.CustomXmlPrefixMappings.addNamespaceAsync (parameter type)
+  - Office.CustomXmlPrefixMappings.getNamespaceAsync (parameter type)
+  - Office.CustomXmlPrefixMappings.getPrefixAsync (parameter type)
+  - Office.DevicePermission.requestPermissionsAsync (parameter type)
+  - Office.Document.addHandlerAsync (parameter type)
+  - Office.Document.getActiveViewAsync (parameter type)
+  - Office.Document.getFilePropertiesAsync (parameter type)
+  - Office.Document.getMaxResourceIndexAsync (parameter type)
+  - Office.Document.getMaxTaskIndexAsync (parameter type)
+  - Office.Document.getProjectFieldAsync (parameter type)
+  - Office.Document.getResourceByIndexAsync (parameter type)
+  - Office.Document.getResourceFieldAsync (parameter type)
+  - Office.Document.getSelectedResourceAsync (parameter type)
+  - Office.Document.getSelectedTaskAsync (parameter type)
+  - Office.Document.getSelectedViewAsync (parameter type)
+  - Office.Document.getTaskAsync (parameter type)
+  - Office.Document.getTaskByIndexAsync (parameter type)
+  - Office.Document.getTaskFieldAsync (parameter type)
+  - Office.Document.getWSSUrlAsync (parameter type)
+  - Office.Document.setResourceFieldAsync (parameter type)
+  - Office.Document.setTaskFieldAsync (parameter type)
+  - Office.Settings.addHandlerAsync (parameter type)
+  - Office.TableBinding.addColumnsAsync (parameter type)
+  - Office.TableBinding.addRowsAsync (parameter type)
+  - Office.TableBinding.clearFormatsAsync (parameter type)
+  - Office.TableBinding.deleteAllDataValuesAsync (parameter type)
+  - Office.TableBinding.getFormatsAsync (parameter type)
+  - Office.TableBinding.setFormatsAsync (parameter type)
+  - Office.TableBinding.setTableOptionsAsync (parameter type)
+  - Office.UI.addHandlerAsync (parameter type)
 
   **Outlook**
 
-
-  - <xref uid="outlook!Office.AppointmentCompose#addFileAttachmentAsync:member"
-  /> (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#addHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#addItemAttachmentAsync:member"
-  /> (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentCompose#disableClientSignatureAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#getAttachmentsAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentCompose#getInitializationContextAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#getItemIdAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#getSelectedDataAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentCompose#isClientSignatureEnabledAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#removeAttachmentAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#removeHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#saveAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#sendAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.AppointmentCompose#setSelectedDataAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#addHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#getAttachmentContentAsync:member"
-  /> (parameter type)
-
-  - <xref
-  uid="outlook!Office.AppointmentRead#getInitializationContextAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#getSharedPropertiesAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#removeHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Body#appendOnSendAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Body#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Body#getTypeAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Body#prependAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Body#prependOnSendAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.Body#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.Body#setSignatureAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Categories#addAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Categories#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Categories#removeAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.DelayDeliveryTime#getAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.DelayDeliveryTime#setAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.DisplayedBody#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.DisplayedSubject#setAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.EnhancedLocation#addAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.EnhancedLocation#getAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.EnhancedLocation#removeAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.Ews#getTokenStatusAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.From#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.InternetHeaders#getAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.InternetHeaders#removeAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.InternetHeaders#setAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.IsAllDayEvent#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.IsAllDayEvent#setAsync:member" /> (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageCompose#getAttachmentContentAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageCompose#getAttachmentsAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageCompose#getComposeTypeAsync:member"
-  /> (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageCompose#getConversationIndexAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageCompose#getInitializationContextAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageCompose#getItemClassAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageCompose#getItemIdAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageCompose#getSharedPropertiesAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageCompose#isClientSignatureEnabledAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageCompose#saveAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageCompose#unloadAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageRead#displayReplyFormAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageRead#getAllInternetHeadersAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageRead#getAsFileAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.LoadedMessageRead#getInitializationContextAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageRead#getSharedPropertiesAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.LoadedMessageRead#unloadAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Location#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Location#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#addHandlerAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.Mailbox#displayAppointmentFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#displayMessageFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#displayNewAppointmentFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#displayNewMessageFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#getCallbackTokenAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#getSelectedItemsAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Mailbox#loadItemByIdAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.Mailbox#removeHandlerAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MasterCategories#addAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MasterCategories#getAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MasterCategories#removeAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MessageCompose#addFileAttachmentAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.MessageCompose#addFileAttachmentFromBase64Async:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#addHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#addItemAttachmentAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#closeAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MessageCompose#disableClientSignatureAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getAttachmentContentAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getAttachmentsAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getComposeTypeAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getConversationIndexAsync:member"
-  /> (parameter type)
-
-  - <xref
-  uid="outlook!Office.MessageCompose#getInitializationContextAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getItemClassAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getItemIdAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getSelectedDataAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#getSharedPropertiesAsync:member" />
-  (parameter type)
-
-  - <xref
-  uid="outlook!Office.MessageCompose#isClientSignatureEnabledAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#removeAttachmentAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#removeHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageCompose#saveAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MessageCompose#sendAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#addHandlerAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#displayReplyFormAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#getAllInternetHeadersAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#getAsFileAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.MessageRead#getAttachmentContentAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#getInitializationContextAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#getSharedPropertiesAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.MessageRead#removeHandlerAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.NotificationMessages#addAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.NotificationMessages#getAllAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.NotificationMessages#removeAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.NotificationMessages#replaceAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.Organizer#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Recipients#addAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Recipients#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Recipients#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Recurrence#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Recurrence#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.ReplyFormData#options:member" /> (property type)
-
-  - <xref uid="outlook!Office.Sensitivity#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Sensitivity#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.SensitivityLabel#getAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.SensitivityLabel#setAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.SensitivityLabelsCatalog#getAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.SensitivityLabelsCatalog#getIsEnabledAsync:member"
-  /> (parameter type)
-
-  - <xref uid="outlook!Office.SessionData#clearAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.SessionData#removeAsync:member" /> (parameter
-  type)
-
-  - <xref uid="outlook!Office.SessionData#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Subject#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Subject#setAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Time#getAsync:member" /> (parameter type)
-
-  - <xref uid="outlook!Office.Time#setAsync:member" /> (parameter type)
-
+  - Office.AppointmentCompose.addFileAttachmentAsync (parameter type)
+  - Office.AppointmentCompose.addFileAttachmentFromBase64Async (parameter type)
+  - Office.AppointmentCompose.addHandlerAsync (parameter type)
+  - Office.AppointmentCompose.addItemAttachmentAsync (parameter type)
+  - Office.AppointmentCompose.disableClientSignatureAsync (parameter type)
+  - Office.AppointmentCompose.getAttachmentContentAsync (parameter type)
+  - Office.AppointmentCompose.getAttachmentsAsync (parameter type)
+  - Office.AppointmentCompose.getInitializationContextAsync (parameter type)
+  - Office.AppointmentCompose.getItemIdAsync (parameter type)
+  - Office.AppointmentCompose.getSelectedDataAsync (parameter type)
+  - Office.AppointmentCompose.getSharedPropertiesAsync (parameter type)
+  - Office.AppointmentCompose.isClientSignatureEnabledAsync (parameter type)
+  - Office.AppointmentCompose.removeAttachmentAsync (parameter type)
+  - Office.AppointmentCompose.removeHandlerAsync (parameter type)
+  - Office.AppointmentCompose.saveAsync (parameter type)
+  - Office.AppointmentCompose.sendAsync (parameter type)
+  - Office.AppointmentCompose.setSelectedDataAsync (parameter type)
+  - Office.AppointmentRead.addHandlerAsync (parameter type)
+  - Office.AppointmentRead.displayReplyAllFormAsync (parameter type)
+  - Office.AppointmentRead.displayReplyFormAsync (parameter type)
+  - Office.AppointmentRead.getAttachmentContentAsync (parameter type)
+  - Office.AppointmentRead.getInitializationContextAsync (parameter type)
+  - Office.AppointmentRead.getSharedPropertiesAsync (parameter type)
+  - Office.AppointmentRead.removeHandlerAsync (parameter type)
+  - Office.Body.appendOnSendAsync (parameter type)
+  - Office.Body.getAsync (parameter type)
+  - Office.Body.getTypeAsync (parameter type)
+  - Office.Body.prependAsync (parameter type)
+  - Office.Body.prependOnSendAsync (parameter type)
+  - Office.Body.setAsync (parameter type)
+  - Office.Body.setSelectedDataAsync (parameter type)
+  - Office.Body.setSignatureAsync (parameter type)
+  - Office.Categories.addAsync (parameter type)
+  - Office.Categories.getAsync (parameter type)
+  - Office.Categories.removeAsync (parameter type)
+  - Office.DelayDeliveryTime.getAsync (parameter type)
+  - Office.DelayDeliveryTime.setAsync (parameter type)
+  - Office.DisplayedBody.setAsync (parameter type)
+  - Office.DisplayedSubject.setAsync (parameter type)
+  - Office.EnhancedLocation.addAsync (parameter type)
+  - Office.EnhancedLocation.getAsync (parameter type)
+  - Office.EnhancedLocation.removeAsync (parameter type)
+  - Office.Ews.getTokenStatusAsync (parameter type)
+  - Office.From.getAsync (parameter type)
+  - Office.InternetHeaders.getAsync (parameter type)
+  - Office.InternetHeaders.removeAsync (parameter type)
+  - Office.InternetHeaders.setAsync (parameter type)
+  - Office.IsAllDayEvent.getAsync (parameter type)
+  - Office.IsAllDayEvent.setAsync (parameter type)
+  - Office.LoadedMessageCompose.getAttachmentContentAsync (parameter type)
+  - Office.LoadedMessageCompose.getAttachmentsAsync (parameter type)
+  - Office.LoadedMessageCompose.getComposeTypeAsync (parameter type)
+  - Office.LoadedMessageCompose.getConversationIndexAsync (parameter type)
+  - Office.LoadedMessageCompose.getInitializationContextAsync (parameter type)
+  - Office.LoadedMessageCompose.getItemClassAsync (parameter type)
+  - Office.LoadedMessageCompose.getItemIdAsync (parameter type)
+  - Office.LoadedMessageCompose.getSharedPropertiesAsync (parameter type)
+  - Office.LoadedMessageCompose.isClientSignatureEnabledAsync (parameter type)
+  - Office.LoadedMessageCompose.saveAsync (parameter type)
+  - Office.LoadedMessageCompose.unloadAsync (parameter type)
+  - Office.LoadedMessageRead.displayReplyAllFormAsync (parameter type)
+  - Office.LoadedMessageRead.displayReplyFormAsync (parameter type)
+  - Office.LoadedMessageRead.getAllInternetHeadersAsync (parameter type)
+  - Office.LoadedMessageRead.getAsFileAsync (parameter type)
+  - Office.LoadedMessageRead.getAttachmentContentAsync (parameter type)
+  - Office.LoadedMessageRead.getInitializationContextAsync (parameter type)
+  - Office.LoadedMessageRead.getSharedPropertiesAsync (parameter type)
+  - Office.LoadedMessageRead.unloadAsync (parameter type)
+  - Office.Location.getAsync (parameter type)
+  - Office.Location.setAsync (parameter type)
+  - Office.Mailbox.addHandlerAsync (parameter type)
+  - Office.Mailbox.displayAppointmentFormAsync (parameter type)
+  - Office.Mailbox.displayMessageFormAsync (parameter type)
+  - Office.Mailbox.displayNewAppointmentFormAsync (parameter type)
+  - Office.Mailbox.displayNewMessageFormAsync (parameter type)
+  - Office.Mailbox.getCallbackTokenAsync (parameter type)
+  - Office.Mailbox.getSelectedItemsAsync (parameter type)
+  - Office.Mailbox.loadItemByIdAsync (parameter type)
+  - Office.Mailbox.removeHandlerAsync (parameter type)
+  - Office.MasterCategories.addAsync (parameter type)
+  - Office.MasterCategories.getAsync (parameter type)
+  - Office.MasterCategories.removeAsync (parameter type)
+  - Office.MessageCompose.addFileAttachmentAsync (parameter type)
+  - Office.MessageCompose.addFileAttachmentFromBase64Async (parameter type)
+  - Office.MessageCompose.addHandlerAsync (parameter type)
+  - Office.MessageCompose.addItemAttachmentAsync (parameter type)
+  - Office.MessageCompose.closeAsync (parameter type)
+  - Office.MessageCompose.disableClientSignatureAsync (parameter type)
+  - Office.MessageCompose.getAttachmentContentAsync (parameter type)
+  - Office.MessageCompose.getAttachmentsAsync (parameter type)
+  - Office.MessageCompose.getComposeTypeAsync (parameter type)
+  - Office.MessageCompose.getConversationIndexAsync (parameter type)
+  - Office.MessageCompose.getInitializationContextAsync (parameter type)
+  - Office.MessageCompose.getItemClassAsync (parameter type)
+  - Office.MessageCompose.getItemIdAsync (parameter type)
+  - Office.MessageCompose.getSelectedDataAsync (parameter type)
+  - Office.MessageCompose.getSharedPropertiesAsync (parameter type)
+  - Office.MessageCompose.isClientSignatureEnabledAsync (parameter type)
+  - Office.MessageCompose.removeAttachmentAsync (parameter type)
+  - Office.MessageCompose.removeHandlerAsync (parameter type)
+  - Office.MessageCompose.saveAsync (parameter type)
+  - Office.MessageCompose.sendAsync (parameter type)
+  - Office.MessageCompose.setSelectedDataAsync (parameter type)
+  - Office.MessageRead.addHandlerAsync (parameter type)
+  - Office.MessageRead.displayReplyAllFormAsync (parameter type)
+  - Office.MessageRead.displayReplyFormAsync (parameter type)
+  - Office.MessageRead.getAllInternetHeadersAsync (parameter type)
+  - Office.MessageRead.getAsFileAsync (parameter type)
+  - Office.MessageRead.getAttachmentContentAsync (parameter type)
+  - Office.MessageRead.getInitializationContextAsync (parameter type)
+  - Office.MessageRead.getSharedPropertiesAsync (parameter type)
+  - Office.MessageRead.removeHandlerAsync (parameter type)
+  - Office.NotificationMessages.addAsync (parameter type)
+  - Office.NotificationMessages.getAllAsync (parameter type)
+  - Office.NotificationMessages.removeAsync (parameter type)
+  - Office.NotificationMessages.replaceAsync (parameter type)
+  - Office.Organizer.getAsync (parameter type)
+  - Office.Recipients.addAsync (parameter type)
+  - Office.Recipients.getAsync (parameter type)
+  - Office.Recipients.setAsync (parameter type)
+  - Office.Recurrence.getAsync (parameter type)
+  - Office.Recurrence.setAsync (parameter type)
+  - Office.ReplyFormData.options (property type)
+  - Office.Sensitivity.getAsync (parameter type)
+  - Office.Sensitivity.setAsync (parameter type)
+  - Office.SensitivityLabel.getAsync (parameter type)
+  - Office.SensitivityLabel.setAsync (parameter type)
+  - Office.SensitivityLabelsCatalog.getAsync (parameter type)
+  - Office.SensitivityLabelsCatalog.getIsEnabledAsync (parameter type)
+  - Office.SessionData.clearAsync (parameter type)
+  - Office.SessionData.removeAsync (parameter type)
+  - Office.SessionData.setAsync (parameter type)
+  - Office.Subject.getAsync (parameter type)
+  - Office.Subject.setAsync (parameter type)
+  - Office.Time.getAsync (parameter type)
+  - Office.Time.setAsync (parameter type)
   #### Examples
 
-
   ```TypeScript
-
   // The following example gets the attachment contents of the
-
   // current mail item being composed in Outlook.
-
   function getAttachmentContentCompose() {
       const item = Office.context.mailbox.item;
       const options: Office.AsyncContextOptions = { asyncContext: { currentItem: item } };
@@ -591,7 +235,6 @@ remarks: >-
           }
       }
   }
-
   ```
 
 isPreview: false

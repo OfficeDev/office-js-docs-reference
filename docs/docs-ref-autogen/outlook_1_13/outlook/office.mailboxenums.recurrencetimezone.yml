@@ -19,7 +19,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.RecurrenceTimeZone#name:member" /> (property type)
+  - Office.RecurrenceTimeZone.name (property type)
 
   #### Examples
 

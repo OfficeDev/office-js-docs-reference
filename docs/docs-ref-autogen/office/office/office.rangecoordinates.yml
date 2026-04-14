@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.RangeFormatConfiguration#cells:member" /> (property
-  type)
+  - Office.RangeFormatConfiguration.cells (property type)
 
   #### Examples
 

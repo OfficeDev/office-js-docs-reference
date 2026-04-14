@@ -39,9 +39,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="outlook!Office.SpamReportingEventCompletedOptions#moveItemTo:member" />
-  (property type)
+  - Office.SpamReportingEventCompletedOptions.moveItemTo (property type)
 
   #### Examples
 

@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.OfficeTheme#themeId:member" /> (property type)
+  - Office.OfficeTheme.themeId (property type)
 
   #### Examples
 

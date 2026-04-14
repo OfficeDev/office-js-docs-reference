@@ -19,7 +19,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.LocationIdentifier#type:member" /> (property type)
+  - Office.LocationIdentifier.type (property type)
 
   #### Examples
 

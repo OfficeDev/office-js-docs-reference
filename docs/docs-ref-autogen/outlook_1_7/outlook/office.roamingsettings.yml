@@ -66,7 +66,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#roamingSettings:member" /> (property type)
+  - Office.Context.roamingSettings (property type)
 
 isPreview: false
 isDeprecated: false

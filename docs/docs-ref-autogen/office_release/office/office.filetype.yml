@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#getFileAsync:member" /> (parameter type)
+  - Office.Document.getFileAsync (parameter type)
 
   #### Examples
 

@@ -447,9 +447,9 @@ function generateUsedBySection(references: UsedByReference[]): string {
     // Sort references alphabetically by display name
     refs.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Add each reference as a bullet point with xref link
+    // Add each reference as a bullet point with full qualified name and xref link
     for (const ref of refs) {
-      lines.push(`- <xref uid="${ref.uid}" /> (${ref.contextText})`);
+      lines.push(`- ${ref.name} (${ref.contextText})`);
     }
   }
 

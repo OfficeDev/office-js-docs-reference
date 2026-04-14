@@ -27,7 +27,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Recurrence#seriesTime:member" /> (property type)
+  - Office.Recurrence.seriesTime (property type)
 
   #### Examples
 

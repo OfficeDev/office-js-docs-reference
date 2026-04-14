@@ -29,7 +29,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#diagnostics:member" /> (property type)
+  - Office.Mailbox.diagnostics (property type)
 
   #### Examples
 

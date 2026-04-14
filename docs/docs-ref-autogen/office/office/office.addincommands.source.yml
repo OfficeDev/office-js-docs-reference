@@ -36,8 +36,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AddinCommands.Event#source:member" /> (property
-  type)
+  - Office.AddinCommands.Event.source (property type)
 
 isPreview: false
 isDeprecated: false

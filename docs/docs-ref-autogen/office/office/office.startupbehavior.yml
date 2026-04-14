@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Addin#getStartupBehavior:member" /> (return type)
+  - Office.Addin.getStartupBehavior (return type)
 
-  - <xref uid="office!Office.Addin#setStartupBehavior:member" /> (parameter
-  type)
+  - Office.Addin.setStartupBehavior (parameter type)
 
   #### Examples
 

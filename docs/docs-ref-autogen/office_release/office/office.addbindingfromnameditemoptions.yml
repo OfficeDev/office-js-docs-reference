@@ -4,12 +4,10 @@ uid: office!Office.AddBindingFromNamedItemOptions:interface
 package: office!
 fullName: Office.AddBindingFromNamedItemOptions
 summary: Provides options for configuring the binding that is created.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member" />
-  (parameter type)
+  - Office.Bindings.addFromNamedItemAsync (parameter type)
 
 isPreview: false
 isDeprecated: false

@@ -23,8 +23,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.DragAndDropEventArgs#dragAndDropEventData:member"
-  /> (property type)
+  - Office.DragAndDropEventArgs.dragAndDropEventData (property type)
 
   #### Examples
 

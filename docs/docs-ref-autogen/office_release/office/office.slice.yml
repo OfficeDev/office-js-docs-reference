@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.File#getSliceAsync:member" /> (parameter type)
+  - Office.File.getSliceAsync (parameter type)
 
   #### Examples
 

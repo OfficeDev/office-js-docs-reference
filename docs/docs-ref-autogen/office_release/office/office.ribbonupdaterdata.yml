@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Ribbon#requestUpdate:member" /> (parameter type)
+  - Office.Ribbon.requestUpdate (parameter type)
 
 isPreview: false
 isDeprecated: false

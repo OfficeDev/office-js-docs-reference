@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AsyncResult#status:member" /> (property type)
+  - Office.AsyncResult.status (property type)
 
   #### Examples
 

@@ -19,14 +19,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.RecurrenceProperties#dayOfWeek:member" />
-  (property type)
+  - Office.RecurrenceProperties.dayOfWeek (property type)
 
-  - <xref uid="outlook!Office.RecurrenceProperties#days:member" /> (property
-  type)
+  - Office.RecurrenceProperties.days (property type)
 
-  - <xref uid="outlook!Office.RecurrenceProperties#firstDayOfWeek:member" />
-  (property type)
+  - Office.RecurrenceProperties.firstDayOfWeek (property type)
 
   #### Examples
 

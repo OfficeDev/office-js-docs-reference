@@ -37,7 +37,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Diagnostics#ews:member" /> (property type)
+  - Office.Diagnostics.ews (property type)
 
   #### Examples
 

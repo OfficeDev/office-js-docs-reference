@@ -32,8 +32,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#masterCategories:member" /> (property
-  type)
+  - Office.Mailbox.masterCategories (property type)
 
 isPreview: false
 isDeprecated: false

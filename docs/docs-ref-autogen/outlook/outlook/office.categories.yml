@@ -35,22 +35,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#categories:member" /> (property
-  type)
+  - Office.AppointmentCompose.categories (property type)
 
-  - <xref uid="outlook!Office.AppointmentRead#categories:member" /> (property
-  type)
+  - Office.AppointmentRead.categories (property type)
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#categories:member" />
-  (property type)
+  - Office.LoadedMessageCompose.categories (property type)
 
-  - <xref uid="outlook!Office.LoadedMessageRead#categories:member" /> (property
-  type)
+  - Office.LoadedMessageRead.categories (property type)
 
-  - <xref uid="outlook!Office.MessageCompose#categories:member" /> (property
-  type)
+  - Office.MessageCompose.categories (property type)
 
-  - <xref uid="outlook!Office.MessageRead#categories:member" /> (property type)
+  - Office.MessageRead.categories (property type)
 
 isPreview: false
 isDeprecated: false

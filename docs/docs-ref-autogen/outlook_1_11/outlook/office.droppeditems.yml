@@ -23,8 +23,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.DropEventData#dataTransfer:member" /> (property
-  type)
+  - Office.DropEventData.dataTransfer (property type)
 
   #### Examples
 

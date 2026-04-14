@@ -45,9 +45,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Body#getAsync:member" /> (parameter type)
+  - Office.Body.getAsync (parameter type)
 
-  - <xref uid="outlook!Office.Body#setAsync:member" /> (parameter type)
+  - Office.Body.setAsync (parameter type)
 
   #### Examples
 

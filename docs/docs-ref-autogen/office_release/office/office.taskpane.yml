@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.ExtensionLifeCycle#taskpane:member" /> (property
-  type)
+  - Office.ExtensionLifeCycle.taskpane (property type)
 
   #### Examples
 

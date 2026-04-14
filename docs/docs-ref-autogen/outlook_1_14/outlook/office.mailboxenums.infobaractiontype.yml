@@ -18,8 +18,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.InfobarDetails#actionType:member" /> (property
-  type)
+  - Office.InfobarDetails.actionType (property type)
 
   #### Examples
 

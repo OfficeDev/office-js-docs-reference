@@ -30,8 +30,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.NotificationMessageDetails#actions:member" />
-  (property type)
+  - Office.NotificationMessageDetails.actions (property type)
 
   #### Examples
 

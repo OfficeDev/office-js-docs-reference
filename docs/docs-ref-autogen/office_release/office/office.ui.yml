@@ -18,7 +18,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#ui:member" /> (property type)
+  - Office.Context.ui (property type)
 
   #### Examples
 

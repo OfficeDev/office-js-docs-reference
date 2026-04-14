@@ -31,9 +31,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="outlook!Office.MessageDecryptEventCompletedOptions#emailBody:member" />
-  (property type)
+  - Office.MessageDecryptEventCompletedOptions.emailBody (property type)
 
   #### Examples
 

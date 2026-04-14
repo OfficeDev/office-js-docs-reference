@@ -26,7 +26,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - <xref uid="outlook!Office.Mailbox#item:member" /> (property type)
+  - Office.Mailbox.item (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#requirements:member" /> (property type)
+  - Office.Context.requirements (property type)
 
   #### Examples
 

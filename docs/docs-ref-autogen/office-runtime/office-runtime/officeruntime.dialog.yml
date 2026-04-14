@@ -12,13 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member" />
-  (property type)
+  - OfficeRuntime.DisplayWebDialogOptions.onMessage (property type)
 
-  - <xref
-  uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member"
-  /> (property type)
+  - OfficeRuntime.DisplayWebDialogOptions.onRuntimeError (property type)
 
 isPreview: false
 isDeprecated: false

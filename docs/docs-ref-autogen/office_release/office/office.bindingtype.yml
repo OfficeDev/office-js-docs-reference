@@ -4,20 +4,13 @@ uid: office!Office.BindingType:enum
 package: office!
 fullName: Office.BindingType
 summary: Specifies the type of the binding object that should be returned.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="office!Office.Binding#type:member" /> (property type)
-
-  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member" />
-  (parameter type)
-
-  - <xref uid="office!Office.Bindings#addFromPromptAsync:member" /> (parameter
-  type)
-
-  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member" />
-  (parameter type)
+  - Office.Binding.type (property type)
+  - Office.Bindings.addFromNamedItemAsync (parameter type)
+  - Office.Bindings.addFromPromptAsync (parameter type)
+  - Office.Bindings.addFromSelectionAsync (parameter type)
 
 isPreview: false
 isDeprecated: false

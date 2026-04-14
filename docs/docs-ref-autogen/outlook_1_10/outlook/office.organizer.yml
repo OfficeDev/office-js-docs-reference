@@ -25,8 +25,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#organizer:member" /> (property
-  type)
+  - Office.AppointmentCompose.organizer (property type)
 
 isPreview: false
 isDeprecated: false

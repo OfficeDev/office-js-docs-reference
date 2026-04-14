@@ -57,37 +57,29 @@ remarks: >-
   **Office**
 
 
-  - <xref uid="office!Office.Document#getSelectedDataAsync:member" /> (parameter
-  type)
+  - Office.Document.getSelectedDataAsync (parameter type)
 
-  - <xref uid="office!Office.GetBindingDataOptions#coercionType:member" />
-  (property type)
+  - Office.GetBindingDataOptions.coercionType (property type)
 
-  - <xref uid="office!Office.SetBindingDataOptions#coercionType:member" />
-  (property type)
+  - Office.SetBindingDataOptions.coercionType (property type)
 
-  - <xref uid="office!Office.SetSelectedDataOptions#coercionType:member" />
-  (property type)
+  - Office.SetSelectedDataOptions.coercionType (property type)
 
 
   **Outlook**
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#getSelectedDataAsync:member" />
-  (parameter type)
+  - Office.AppointmentCompose.getSelectedDataAsync (parameter type)
 
-  - <xref uid="outlook!Office.Body#getAsync:member" /> (parameter type)
+  - Office.Body.getAsync (parameter type)
 
-  - <xref uid="outlook!Office.Body#getTypeAsync:member" /> (parameter type)
+  - Office.Body.getTypeAsync (parameter type)
 
-  - <xref uid="outlook!Office.CoercionTypeOptions#coercionType:member" />
-  (property type)
+  - Office.CoercionTypeOptions.coercionType (property type)
 
-  - <xref uid="outlook!Office.DecryptedMessageBody#coercionType:member" />
-  (property type)
+  - Office.DecryptedMessageBody.coercionType (property type)
 
-  - <xref uid="outlook!Office.MessageCompose#getSelectedDataAsync:member" />
-  (parameter type)
+  - Office.MessageCompose.getSelectedDataAsync (parameter type)
 
   #### Examples
 

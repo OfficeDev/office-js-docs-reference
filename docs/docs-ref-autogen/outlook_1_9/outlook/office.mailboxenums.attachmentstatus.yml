@@ -19,9 +19,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  uid="outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member" />
-  (property type)
+  - Office.AttachmentsChangedEventArgs.attachmentStatus (property type)
 
   #### Examples
 

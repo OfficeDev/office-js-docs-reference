@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#getSelectedDataAsync:member" /> (parameter
-  type)
+  - Office.Document.getSelectedDataAsync (parameter type)
 
   #### Examples
 

@@ -27,8 +27,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.EmailAddressDetails#recipientType:member" />
-  (property type)
+  - Office.EmailAddressDetails.recipientType (property type)
 
   #### Examples
 

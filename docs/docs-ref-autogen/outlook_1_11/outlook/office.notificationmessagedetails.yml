@@ -32,14 +32,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.NotificationMessages#addAsync:member" />
-  (parameter type)
+  - Office.NotificationMessages.addAsync (parameter type)
 
-  - <xref uid="outlook!Office.NotificationMessages#getAllAsync:member" />
-  (parameter type)
+  - Office.NotificationMessages.getAllAsync (parameter type)
 
-  - <xref uid="outlook!Office.NotificationMessages#replaceAsync:member" />
-  (parameter type)
+  - Office.NotificationMessages.replaceAsync (parameter type)
 
   #### Examples
 

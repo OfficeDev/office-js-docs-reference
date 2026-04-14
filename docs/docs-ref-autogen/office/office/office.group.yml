@@ -14,7 +14,7 @@ remarks: |-
 
   #### Used by
 
-  - <xref uid="office!Office.Tab#groups:member" /> (property type)
+  - Office.Tab.groups (property type)
   #### Examples
 
   ```TypeScript

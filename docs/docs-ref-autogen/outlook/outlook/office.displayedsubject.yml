@@ -25,7 +25,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Display#subject:member" /> (property type)
+  - Office.Display.subject (property type)
 
 isPreview: true
 isDeprecated: false
