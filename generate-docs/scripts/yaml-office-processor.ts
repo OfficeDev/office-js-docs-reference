@@ -356,8 +356,9 @@ function formatDisplayName(uid: string): string {
 
 /**
  * Injects a "Used By" section into a YAML item if there are references to it.
+ * Only includes references to APIs that exist in the current package/version.
  */
-function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex): boolean {
+function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex, availableUIDs: Set<string>): boolean {
   if (!item.uid) {
     return false;
   }
@@ -368,21 +369,30 @@ function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex): boolean
     return false;
   }
 
-  // Deduplicate method overloads
-  const deduplicated = deduplicateMethodOverloads(references);
-
-  // Generate the "Used By" markdown section
-  const usedBySection = generateUsedBySection(deduplicated);
-
-  // Inject into remarks field
+  // Inject into remarks field (initialize if needed)
   if (!item.remarks) {
     item.remarks = '';
   }
 
-  // Check if "Used By" already exists
+  // Remove existing "Used By" section if it exists (do this BEFORE checking if we have new references)
   if (item.remarks.includes('#### Used by')) {
-    return false;
+    // Remove the entire "Used By" section (from "#### Used by" to the next "####" or end)
+    item.remarks = item.remarks.replace(/\n*#### Used by\n[\s\S]*?(?=\n####|\n*$)/g, '');
   }
+
+  // Filter to only include references that exist in the current package/version
+  const filteredReferences = references.filter(ref => availableUIDs.has(ref.uid));
+
+  // If no valid references remain after filtering, we're done (old section already removed)
+  if (filteredReferences.length === 0) {
+    return true; // Return true because we removed the old section
+  }
+
+  // Deduplicate method overloads
+  const deduplicated = deduplicateMethodOverloads(filteredReferences);
+
+  // Generate the "Used By" markdown section
+  const usedBySection = generateUsedBySection(deduplicated);
 
   // Insert before "#### Examples" if it exists, otherwise append
   if (item.remarks.includes('#### Examples')) {
@@ -521,6 +531,45 @@ function shouldReportUnusedSnippets(folderName: string): boolean {
   return true;
 }
 
+/**
+ * Builds a set of all UIDs that exist in the given folder.
+ * This is used to filter "Used By" references to only include APIs that exist in the current version.
+ */
+function buildAvailableUIDs(folderPath: string): Set<string> {
+  const uids = new Set<string>();
+  const yamlFiles = findYamlFiles(folderPath);
+
+  for (const filePath of yamlFiles) {
+    try {
+      const content = fsx.readFileSync(filePath, 'utf-8');
+      const doc: any = yaml.load(content);
+
+      if (doc && typeof doc === 'object') {
+        // Add main item UID
+        if (doc.uid) {
+          uids.add(doc.uid);
+        }
+
+        // Add nested item UIDs from arrays
+        const arrayNames = ['properties', 'methods', 'events', 'functions', 'fields', 'typeParameters'];
+        for (const arrayName of arrayNames) {
+          if (Array.isArray(doc[arrayName])) {
+            for (const item of doc[arrayName]) {
+              if (item && item.uid) {
+                uids.add(item.uid);
+              }
+            }
+          }
+        }
+      }
+    } catch (error) {
+      // Skip files that can't be parsed
+    }
+  }
+
+  return uids;
+}
+
 async function processFolderIfExists(folderName: string, usedByIndex: UsedByIndex): Promise<{ filesProcessed: number } | null> {
   const folderPath = path.join(YAML_BASE_PATH, folderName);
 
@@ -534,10 +583,13 @@ async function processFolderIfExists(folderName: string, usedByIndex: UsedByInde
   const snippetsAll = new Map(snippets);
   const usedSnippets = new Set<string>();
 
+  // Build set of UIDs available in this folder to filter "Used By" references
+  const availableUIDs = buildAvailableUIDs(folderPath);
+
   const yamlFiles = findYamlFiles(folderPath);
 
   for (const filePath of yamlFiles) {
-    await processYamlFile(filePath, snippetsAll, usedSnippets, usedByIndex);
+    await processYamlFile(filePath, snippetsAll, usedSnippets, usedByIndex, availableUIDs);
   }
 
   // Only report unused snippets for preview/main versions, not versioned subsets
@@ -591,7 +643,8 @@ async function processYamlFile(
   filePath: string,
   snippets: Map<string, string[]>,
   usedSnippets: Set<string>,
-  usedByIndex: UsedByIndex
+  usedByIndex: UsedByIndex,
+  availableUIDs: Set<string>
 ): Promise<void> {
   const content = fsx.readFileSync(filePath, 'utf-8');
 
@@ -618,7 +671,7 @@ async function processYamlFile(
   if (doc.uid) {
     modified = injectExamples(doc, snippets, usedSnippets) || modified;
     modified = hyperlinkApiSets(doc) || modified;
-    modified = injectUsedBySection(doc, usedByIndex) || modified;
+    modified = injectUsedBySection(doc, usedByIndex, availableUIDs) || modified;
   }
 
   // Process nested items in arrays
@@ -632,7 +685,7 @@ async function processYamlFile(
           modified = hyperlinkApiSets(item) || modified;
           // Skip Used By injection for enum fields - OPS doesn't support remarks on enum fields
           if (arrayName !== 'fields') {
-            modified = injectUsedBySection(item, usedByIndex) || modified;
+            modified = injectUsedBySection(item, usedByIndex, availableUIDs) || modified;
           }
         }
       }
