@@ -4,10 +4,8 @@ uid: excel!Excel.Interfaces.SlicerItemLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.SlicerItemLoadOptions
 summary: Represents a slicer item in a slicer.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.SlicerItemLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: excel!
     fullName: hasData
     summary: Value is `true` if the slicer item has data.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,16 +40,9 @@ properties:
     uid: excel!Excel.Interfaces.SlicerItemLoadOptions#isSelected:member
     package: excel!
     fullName: isSelected
-    summary: >-
-      Value is `true` if the slicer item is selected. Setting this value will
-      not clear the selected state of other slicer items. By default, if the
-      slicer item is the only one selected, when it is deselected, all items
-      will be selected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Value is `true` if the slicer item is selected. Setting this value will not clear the selected state of other slicer items. By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,11 +54,8 @@ properties:
     package: excel!
     fullName: key
     summary: Represents the unique value representing the slicer item.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,11 +67,8 @@ properties:
     package: excel!
     fullName: name
     summary: Represents the title displayed in the Excel UI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,14 +3,12 @@ name: Excel.SettableColumnProperties
 uid: excel!Excel.SettableColumnProperties:interface
 package: excel!
 fullName: Excel.SettableColumnProperties
-summary: >-
+summary: |-
   Represents the input parameter of setColumnProperties.
 
-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,14 +17,12 @@ properties:
     uid: excel!Excel.SettableColumnProperties#columnHidden:member
     package: excel!
     fullName: columnHidden
-    summary: >-
+    summary: |-
       Represents the `columnHidden` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,14 +33,12 @@ properties:
     uid: excel!Excel.SettableColumnProperties#format:member
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Represents the `format` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

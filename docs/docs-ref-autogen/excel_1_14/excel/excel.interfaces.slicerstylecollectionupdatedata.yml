@@ -4,10 +4,10 @@ uid: excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.SlicerStyleCollectionUpdateData
 summary: >-
-  An interface for updating data on the `SlicerStyleCollection` object, for use
-  in `slicerStyleCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the `SlicerStyleCollection` object, for use in `slicerStyleCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

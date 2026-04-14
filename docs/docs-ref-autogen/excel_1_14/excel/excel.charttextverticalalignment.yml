@@ -4,66 +4,45 @@ uid: excel!Excel.ChartTextVerticalAlignment:enum
 package: excel!
 fullName: Excel.ChartTextVerticalAlignment
 summary: Represents the vertical alignment for the specified object.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Used by
 
-
   - Excel.Interfaces.ChartDataLabelData.verticalAlignment (property type)
-
   - Excel.Interfaces.ChartDataLabelsData.verticalAlignment (property type)
-
   - Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment (property type)
-
   - Excel.Interfaces.ChartDataLabelUpdateData.verticalAlignment (property type)
-
   - Excel.Interfaces.ChartTitleData.verticalAlignment (property type)
-
   - Excel.Interfaces.ChartTitleUpdateData.verticalAlignment (property type)
-
   - Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment (property type)
-
-  - Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment (property
-  type)
-
+  - Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment (property type)
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bottom
     uid: excel!Excel.ChartTextVerticalAlignment.bottom:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Bottom"'
   - name: center
     uid: excel!Excel.ChartTextVerticalAlignment.center:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Center"'
   - name: distributed
     uid: excel!Excel.ChartTextVerticalAlignment.distributed:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Distributed"'
   - name: justify
     uid: excel!Excel.ChartTextVerticalAlignment.justify:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Justify"'
   - name: top
     uid: excel!Excel.ChartTextVerticalAlignment.top:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Top"'

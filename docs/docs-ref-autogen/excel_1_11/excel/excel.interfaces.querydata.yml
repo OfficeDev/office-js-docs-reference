@@ -9,7 +9,7 @@ remarks: |-
 
   - Excel.Interfaces.QueryCollectionData.items (property type)
   - Excel.Interfaces.QueryCollectionUpdateData.items (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

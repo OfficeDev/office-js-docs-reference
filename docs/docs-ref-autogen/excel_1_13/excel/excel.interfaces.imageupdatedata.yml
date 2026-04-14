@@ -3,11 +3,9 @@ name: Excel.Interfaces.ImageUpdateData
 uid: excel!Excel.Interfaces.ImageUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ImageUpdateData
-summary: >-
-  An interface for updating data on the `Image` object, for use in `image.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Image` object, for use in `image.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

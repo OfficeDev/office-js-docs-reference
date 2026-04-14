@@ -3,13 +3,9 @@ name: Excel.AutoFilter
 uid: excel!Excel.AutoFilter:class
 package: excel!
 fullName: Excel.AutoFilter
-summary: >-
-  Represents the `AutoFilter` object. AutoFilter turns the values in Excel
-  column into specific filters based on the cell contents.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents the `AutoFilter` object. AutoFilter turns the values in Excel column into specific filters based on the cell contents.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,11 +14,9 @@ properties:
     uid: excel!Excel.AutoFilter#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,8 @@ properties:
     package: excel!
     fullName: criteria
     summary: An array that holds all the filter criteria in the autofiltered range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,10 +41,8 @@ properties:
     package: excel!
     fullName: enabled
     summary: Specifies if the AutoFilter is enabled.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,10 +54,8 @@ properties:
     package: excel!
     fullName: isDataFiltered
     summary: Specifies if the AutoFilter has filter criteria.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,27 +67,17 @@ methods:
     uid: excel!Excel.AutoFilter#apply:member(1)
     package: excel!
     fullName: apply(range, columnIndex, criteria)
-    summary: >-
-      Applies the AutoFilter to a range. This filters the column if column index
-      and filter criteria are specified.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
       // This function adds a percentage AutoFilter to the active worksheet 
-
       // and applies the filter to a column of the used range.
-
       await Excel.run(async (context) => {
           // Retrieve the active worksheet and the used range on that worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -113,15 +91,12 @@ methods:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        apply(range: Range | string, columnIndex?: number, criteria?:
-        Excel.FilterCriteria): void;
+      content: 'apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;'
       parameters:
         - id: range
           description: The range on which the AutoFilter will apply.
@@ -140,10 +115,8 @@ methods:
     package: excel!
     fullName: clearCriteria()
     summary: Clears the filter criteria and sort state of the AutoFilter.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,13 +128,9 @@ methods:
     uid: excel!Excel.AutoFilter#getRange:member(1)
     package: excel!
     fullName: getRange()
-    summary: >-
-      Returns the `Range` object that represents the range to which the
-      AutoFilter applies.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Returns the `Range` object that represents the range to which the AutoFilter applies.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,18 +142,9 @@ methods:
     uid: excel!Excel.AutoFilter#getRangeOrNullObject:member(1)
     package: excel!
     fullName: getRangeOrNullObject()
-    summary: >-
-      Returns the `Range` object that represents the range to which the
-      AutoFilter applies. If there is no `Range` object associated with the
-      AutoFilter, then this method returns an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Returns the `Range` object that represents the range to which the AutoFilter applies. If there is no `Range` object associated with the AutoFilter, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,23 +156,17 @@ methods:
     uid: excel!Excel.AutoFilter#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.AutoFilterLoadOptions):
-        Excel.AutoFilter;
+      content: 'load(options?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface"
-            />
+          type: <xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.AutoFilter:class" />
         description: ''
@@ -220,20 +174,16 @@ methods:
     uid: excel!Excel.AutoFilter#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.AutoFilter;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.AutoFilter:class" />
@@ -242,11 +192,9 @@ methods:
     uid: excel!Excel.AutoFilter#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,11 +205,7 @@ methods:
                 }): Excel.AutoFilter;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -275,23 +219,15 @@ methods:
     package: excel!
     fullName: reapply()
     summary: Applies the specified AutoFilter object currently on the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
-
-
-      // This function refreshes the AutoFilter to ensure that changes are
-      captured.
-
+      // This function refreshes the AutoFilter to ensure that changes are captured.
       await Excel.run(async (context) => {
           // Retrieve the active worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -300,9 +236,8 @@ methods:
           sheet.autoFilter.reapply();
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -315,22 +250,15 @@ methods:
     package: excel!
     fullName: remove()
     summary: Removes the AutoFilter for the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
       // This function removes all AutoFilters from the active worksheet.
-
       await Excel.run(async (context) => {
           // Retrieve the active worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -339,9 +267,8 @@ methods:
           sheet.autoFilter.remove();
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -353,16 +280,9 @@ methods:
     uid: excel!Excel.AutoFilter#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.AutoFilter`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.AutoFilterData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.AutoFilter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AutoFilterData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

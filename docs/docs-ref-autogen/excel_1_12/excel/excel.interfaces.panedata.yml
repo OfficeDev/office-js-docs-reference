@@ -9,7 +9,7 @@ remarks: |-
 
   - Excel.Interfaces.PaneCollectionData.items (property type)
   - Excel.Interfaces.PaneCollectionUpdateData.items (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

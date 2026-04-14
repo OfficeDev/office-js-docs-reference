@@ -4,10 +4,8 @@ uid: excel!Excel.Interfaces.CommentCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.CommentCollectionLoadOptions
 summary: Represents a collection of comment objects that are part of the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: excel!
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,11 +41,8 @@ properties:
     package: excel!
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,14 +53,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentCollectionLoadOptions#content:member
     package: excel!
     fullName: content
-    summary: >-
-      For EACH ITEM in the collection: The comment's content. The string is
-      plain text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: The comment''s content. The string is plain text.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,15 +66,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentCollectionLoadOptions#creationDate:member
     package: excel!
     fullName: creationDate
-    summary: >-
-      For EACH ITEM in the collection: Gets the creation time of the comment.
-      Returns `null` if the comment was converted from a note, since the comment
-      does not have a creation date.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: Gets the creation time of the comment. Returns `null` if the comment was converted from a note, since the comment does not have a creation date.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,11 +80,8 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the comment identifier.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,14 +92,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentCollectionLoadOptions#mentions:member
     package: excel!
     fullName: mentions
-    summary: >-
-      For EACH ITEM in the collection: Gets the entities (e.g., people) that are
-      mentioned in comments.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: Gets the entities (e.g., people) that are mentioned in comments.'
+    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,14 +105,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentCollectionLoadOptions#resolved:member
     package: excel!
     fullName: resolved
-    summary: >-
-      For EACH ITEM in the collection: The comment thread status. A value of
-      `true` means that the comment thread is resolved.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: The comment thread status. A value of `true` means that the comment thread is resolved.'
+    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,15 +118,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentCollectionLoadOptions#richContent:member
     package: excel!
     fullName: richContent
-    summary: >-
-      For EACH ITEM in the collection: Gets the rich comment content (e.g.,
-      mentions in comments). This string is not meant to be displayed to
-      end-users. Your add-in should only use this to parse rich comment content.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.'
+    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

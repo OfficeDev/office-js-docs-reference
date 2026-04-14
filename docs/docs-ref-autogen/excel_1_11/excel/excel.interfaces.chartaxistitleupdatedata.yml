@@ -3,14 +3,12 @@ name: Excel.Interfaces.ChartAxisTitleUpdateData
 uid: excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartAxisTitleUpdateData
-summary: >-
-  An interface for updating data on the `ChartAxisTitle` object, for use in
-  `chartAxisTitle.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ChartAxisTitle` object, for use in `chartAxisTitle.set({ ... })`<!-- -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.ChartAxisUpdateData.title (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,28 +18,21 @@ properties:
     package: excel!
     fullName: format
     summary: Specifies the formatting of the chart axis title.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface" />
   - name: text
     uid: excel!Excel.Interfaces.ChartAxisTitleUpdateData#text:member
     package: excel!
     fullName: text
     summary: Specifies the axis title.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,10 +44,8 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the axis title is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

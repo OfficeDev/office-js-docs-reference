@@ -3,11 +3,9 @@ name: Excel.Interfaces.NoteCollectionUpdateData
 uid: excel!Excel.Interfaces.NoteCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.NoteCollectionUpdateData
-summary: >-
-  An interface for updating data on the `NoteCollection` object, for use in
-  `noteCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `NoteCollection` object, for use in `noteCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

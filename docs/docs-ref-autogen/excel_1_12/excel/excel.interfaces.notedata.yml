@@ -9,7 +9,7 @@ remarks: |-
 
   - Excel.Interfaces.NoteCollectionData.items (property type)
   - Excel.Interfaces.NoteCollectionUpdateData.items (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

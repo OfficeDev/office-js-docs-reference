@@ -3,15 +3,13 @@ name: Excel.Interfaces.LinkedWorkbookData
 uid: excel!Excel.Interfaces.LinkedWorkbookData:interface
 package: excel!
 fullName: Excel.Interfaces.LinkedWorkbookData
-summary: >-
-  An interface describing the data returned by calling
-  `linkedWorkbook.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `linkedWorkbook.toJSON()`<!-- -->.
 remarks: |-
   #### Used by
 
   - Excel.Interfaces.LinkedWorkbookCollectionData.items (property type)
   - Excel.Interfaces.LinkedWorkbookCollectionUpdateData.items (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

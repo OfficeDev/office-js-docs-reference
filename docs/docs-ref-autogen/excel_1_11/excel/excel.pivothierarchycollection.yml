@@ -3,13 +3,9 @@ name: Excel.PivotHierarchyCollection
 uid: excel!Excel.PivotHierarchyCollection:class
 package: excel!
 fullName: Excel.PivotHierarchyCollection
-summary: >-
-  Represents a collection of all the PivotHierarchies that are part of the
-  PivotTable.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents a collection of all the PivotHierarchies that are part of the PivotTable.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,11 +14,9 @@ properties:
     uid: excel!Excel.PivotHierarchyCollection#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +29,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,10 +42,8 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of pivot hierarchies in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,10 +56,8 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a PivotHierarchy by its name or ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,16 +73,9 @@ methods:
     uid: excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: >-
-      Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, then
-      this method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,25 +91,17 @@ methods:
     uid: excel!Excel.PivotHierarchyCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PivotHierarchyCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.PivotHierarchyCollection;
+      content: 'load(options?: Excel.Interfaces.PivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotHierarchyCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: <xref uid="excel!Excel.Interfaces.PivotHierarchyCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.PivotHierarchyCollection:class" />
         description: ''
@@ -134,20 +109,16 @@ methods:
     uid: excel!Excel.PivotHierarchyCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotHierarchyCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.PivotHierarchyCollection:class" />
@@ -156,24 +127,16 @@ methods:
     uid: excel!Excel.PivotHierarchyCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.PivotHierarchyCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotHierarchyCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.PivotHierarchyCollection:class" />
@@ -182,25 +145,14 @@ methods:
     uid: excel!Excel.PivotHierarchyCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Excel.PivotHierarchyCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.PivotHierarchyCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.PivotHierarchyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotHierarchyCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.PivotHierarchyCollectionData:interface" />
+        type: <xref uid="excel!Excel.Interfaces.PivotHierarchyCollectionData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

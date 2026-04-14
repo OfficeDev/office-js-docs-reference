@@ -4,16 +4,12 @@ uid: excel!Excel.CommentChangedEventArgs:interface
 package: excel!
 fullName: Excel.CommentChangedEventArgs
 summary: Occurs when existing comments are changed.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
   async function registerEventHandler() {
       await Excel.run(async (context) => {
           // Register the onChanged comment event handler.
@@ -22,7 +18,6 @@ remarks: >-
           await context.sync();
       });
   }
-
 
   async function commentChanged(event: Excel.CommentChangedEventArgs) {
       // Retrieve the changed comment using the comment ID.
@@ -42,9 +37,8 @@ remarks: >-
           console.log(`    Creation date: ${changedComment.creationDate}`);
       });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -54,35 +48,21 @@ properties:
     package: excel!
     fullName: changeType
     summary: Gets the change type that represents how the changed event is triggered.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        changeType: Excel.CommentChangeType | "CommentEdited" |
-        "CommentResolved" | "CommentReopened" | "ReplyAdded" | "ReplyDeleted" |
-        "ReplyEdited";
+      content: 'changeType: Excel.CommentChangeType | "CommentEdited" | "CommentResolved" | "CommentReopened" | "ReplyAdded" | "ReplyDeleted" | "ReplyEdited";'
       return:
-        type: >-
-          <xref uid="excel!Excel.CommentChangeType:enum" /> | "CommentEdited" |
-          "CommentResolved" | "CommentReopened" | "ReplyAdded" | "ReplyDeleted"
-          | "ReplyEdited"
+        type: <xref uid="excel!Excel.CommentChangeType:enum" /> | "CommentEdited" | "CommentResolved" | "CommentReopened" | "ReplyAdded" | "ReplyDeleted" | "ReplyEdited"
   - name: commentDetails
     uid: excel!Excel.CommentChangedEventArgs#commentDetails:member
     package: excel!
     fullName: commentDetails
-    summary: >-
-      Get the `CommentDetail` array which contains the comment ID and IDs of its
-      related replies.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Get the `CommentDetail` array which contains the comment ID and IDs of its related replies.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +74,8 @@ properties:
     package: excel!
     fullName: source
     summary: Specifies the source of the event. See `Excel.EventSource` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,11 +87,8 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,11 +100,8 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the event happened.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

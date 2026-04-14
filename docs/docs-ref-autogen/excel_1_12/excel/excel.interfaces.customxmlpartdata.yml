@@ -3,24 +3,16 @@ name: Excel.Interfaces.CustomXmlPartData
 uid: excel!Excel.Interfaces.CustomXmlPartData:interface
 package: excel!
 fullName: Excel.Interfaces.CustomXmlPartData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPart.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
 
-
   - Excel.Interfaces.CustomXmlPartCollectionData.items (property type)
-
   - Excel.Interfaces.CustomXmlPartCollectionUpdateData.items (property type)
-
   - Excel.Interfaces.CustomXmlPartScopedCollectionData.items (property type)
-
-  - Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items (property
-  type)
-
+  - Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items (property type)
   - Excel.Interfaces.WorkbookData.customXmlParts (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,10 +22,8 @@ properties:
     package: excel!
     fullName: id
     summary: The custom XML part's ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,10 +35,8 @@ properties:
     package: excel!
     fullName: namespaceUri
     summary: The custom XML part's namespace URI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

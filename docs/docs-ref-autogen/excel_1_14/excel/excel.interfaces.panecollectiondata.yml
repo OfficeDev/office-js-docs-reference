@@ -3,11 +3,9 @@ name: Excel.Interfaces.PaneCollectionData
 uid: excel!Excel.Interfaces.PaneCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.PaneCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `paneCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `paneCollection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

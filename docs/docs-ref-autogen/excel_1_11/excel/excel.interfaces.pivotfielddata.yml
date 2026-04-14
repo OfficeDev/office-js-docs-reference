@@ -3,9 +3,7 @@ name: Excel.Interfaces.PivotFieldData
 uid: excel!Excel.Interfaces.PivotFieldData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotFieldData
-summary: >-
-  An interface describing the data returned by calling `pivotField.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `pivotField.toJSON()`<!-- -->.
 remarks: |-
   #### Used by
 
@@ -15,7 +13,7 @@ remarks: |-
   - Excel.Interfaces.PivotFieldCollectionUpdateData.items (property type)
   - Excel.Interfaces.PivotHierarchyData.fields (property type)
   - Excel.Interfaces.RowColumnPivotHierarchyData.fields (property type)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,10 +23,8 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the PivotField.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,10 +36,8 @@ properties:
     package: excel!
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,10 +49,8 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotField.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,10 +62,8 @@ properties:
     package: excel!
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,10 +75,8 @@ properties:
     package: excel!
     fullName: subtotals
     summary: Subtotals of the PivotField.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
