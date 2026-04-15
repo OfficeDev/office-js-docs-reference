@@ -13,13 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#checkboxContentControl:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.checkboxContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#checkboxContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.checkboxContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#checkboxContentControl:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.checkboxContentControl" />
+  href="word!Word.Interfaces.ContentControlLoadOptions#checkboxContentControl:member">Word.Interfaces.ContentControlLoadOptions.checkboxContentControl</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,32 +12,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member"
-  alttext="Excel.ChartAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.ChartAddedEventArgs#source:member">Excel.ChartAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member"
-  alttext="Excel.ChartDeletedEventArgs.source" />
+  - <xref
+  href="excel!Excel.ChartDeletedEventArgs#source:member">Excel.ChartDeletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.TableAddedEventArgs#source:member"
-  alttext="Excel.TableAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableAddedEventArgs#source:member">Excel.TableAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#source:member"
-  alttext="Excel.TableChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableChangedEventArgs#source:member">Excel.TableChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member"
-  alttext="Excel.TableDeletedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableDeletedEventArgs#source:member">Excel.TableDeletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member"
-  alttext="Excel.WorksheetAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetAddedEventArgs#source:member">Excel.WorksheetAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member"
-  alttext="Excel.WorksheetChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetChangedEventArgs#source:member">Excel.WorksheetChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member"
-  alttext="Excel.WorksheetDeletedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetDeletedEventArgs#source:member">Excel.WorksheetDeletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member"
-  alttext="Excel.WorksheetFormatChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetFormatChangedEventArgs#source:member">Excel.WorksheetFormatChangedEventArgs.source</xref>
 
 isPreview: false
 isDeprecated: false

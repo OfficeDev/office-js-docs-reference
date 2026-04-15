@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#position:member"
-  alttext="Excel.ChartAxis.position" />
+  - <xref
+  href="excel!Excel.ChartAxis#position:member">Excel.ChartAxis.position</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#position:member"
-  alttext="Excel.Interfaces.ChartAxisData.position" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisData#position:member">Excel.Interfaces.ChartAxisData.position</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#position:member"
-  alttext="Excel.Interfaces.ChartAxisUpdateData.position" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisUpdateData#position:member">Excel.Interfaces.ChartAxisUpdateData.position</xref>
 
 isPreview: false
 isDeprecated: false

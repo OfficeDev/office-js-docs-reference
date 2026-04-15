@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#pivotOptions:member"
-  alttext="Excel.Interfaces.ChartData.pivotOptions" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartData#pivotOptions:member">Excel.Interfaces.ChartData.pivotOptions</xref>
 
 isPreview: false
 isDeprecated: false

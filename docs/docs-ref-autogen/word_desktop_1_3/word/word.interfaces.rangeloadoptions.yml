@@ -12,63 +12,56 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.BreakCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member"
-  alttext="Word.Interfaces.BreakLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.BreakCollectionLoadOptions#range:member">Word.Interfaces.BreakCollectionLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range"
-  />
-
-  - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
-  alttext="Word.Interfaces.CritiqueAnnotationLoadOptions.range" />
+  href="word!Word.Interfaces.BreakLoadOptions#range:member">Word.Interfaces.BreakLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.DatePickerContentControlLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldCollectionLoadOptions.result" />
-
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldLoadOptions.result" />
-
-  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.FrameCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member"
-  alttext="Word.Interfaces.FrameLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.GroupContentControlLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.HyperlinkCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member"
-  alttext="Word.Interfaces.HyperlinkLoadOptions.range" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member">Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member"
-  alttext="Word.Interfaces.NoteItemCollectionLoadOptions.reference" />
-
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member"
-  alttext="Word.Interfaces.NoteItemLoadOptions.reference" />
+  href="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member">Word.Interfaces.CritiqueAnnotationLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.PictureContentControlLoadOptions.range" />
+  href="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member">Word.Interfaces.DatePickerContentControlLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlLoadOptions.range" />
+  href="word!Word.Interfaces.FieldCollectionLoadOptions#result:member">Word.Interfaces.FieldCollectionLoadOptions.result</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member"
-  alttext="Word.Interfaces.RepeatingSectionItemLoadOptions.range" />
+  href="word!Word.Interfaces.FieldLoadOptions#result:member">Word.Interfaces.FieldLoadOptions.result</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FrameCollectionLoadOptions#range:member">Word.Interfaces.FrameCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FrameLoadOptions#range:member">Word.Interfaces.FrameLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlLoadOptions#range:member">Word.Interfaces.GroupContentControlLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member">Word.Interfaces.HyperlinkCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HyperlinkLoadOptions#range:member">Word.Interfaces.HyperlinkLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member">Word.Interfaces.NoteItemCollectionLoadOptions.reference</xref>
+
+  - <xref
+  href="word!Word.Interfaces.NoteItemLoadOptions#reference:member">Word.Interfaces.NoteItemLoadOptions.reference</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlLoadOptions#range:member">Word.Interfaces.PictureContentControlLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member">Word.Interfaces.RepeatingSectionContentControlLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member">Word.Interfaces.RepeatingSectionItemLoadOptions.range</xref>
 
 isPreview: false
 isDeprecated: false

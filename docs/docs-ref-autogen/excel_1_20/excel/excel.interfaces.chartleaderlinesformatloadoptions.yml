@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartLeaderLinesLoadOptions#format:member"
-  alttext="Excel.Interfaces.ChartLeaderLinesLoadOptions.format" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartLeaderLinesLoadOptions#format:member">Excel.Interfaces.ChartLeaderLinesLoadOptions.format</xref>
 
 isPreview: false
 isDeprecated: false

@@ -8,17 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#lists:member"
-  alttext="Word.Interfaces.BodyData.lists" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#lists:member">Word.Interfaces.BodyData.lists</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#lists:member"
-  alttext="Word.Interfaces.ContentControlData.lists" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#lists:member">Word.Interfaces.ContentControlData.lists</xref>
 
-  - <xref uid="word!Word.Interfaces.ListCollectionData#items:member"
-  alttext="Word.Interfaces.ListCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.ListCollectionData#items:member">Word.Interfaces.ListCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.ListCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ListCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.ListCollectionUpdateData#items:member">Word.Interfaces.ListCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

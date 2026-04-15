@@ -13,24 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member"
-  alttext="Excel.Interfaces.RangeFormatData.verticalAlignment" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member">Excel.Interfaces.RangeFormatData.verticalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member"
-  alttext="Excel.Interfaces.RangeFormatUpdateData.verticalAlignment" />
+  href="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member">Excel.Interfaces.RangeFormatUpdateData.verticalAlignment</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleData#verticalAlignment:member"
-  alttext="Excel.Interfaces.StyleData.verticalAlignment" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleData#verticalAlignment:member">Excel.Interfaces.StyleData.verticalAlignment</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#verticalAlignment:member"
-  alttext="Excel.Interfaces.StyleUpdateData.verticalAlignment" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleUpdateData#verticalAlignment:member">Excel.Interfaces.StyleUpdateData.verticalAlignment</xref>
 
-  - <xref uid="excel!Excel.RangeFormat#verticalAlignment:member"
-  alttext="Excel.RangeFormat.verticalAlignment" />
+  - <xref
+  href="excel!Excel.RangeFormat#verticalAlignment:member">Excel.RangeFormat.verticalAlignment</xref>
 
-  - <xref uid="excel!Excel.Style#verticalAlignment:member"
-  alttext="Excel.Style.verticalAlignment" />
+  - <xref
+  href="excel!Excel.Style#verticalAlignment:member">Excel.Style.verticalAlignment</xref>
 
   #### Examples
 

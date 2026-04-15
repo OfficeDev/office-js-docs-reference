@@ -13,14 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesLoadOptions#format:member"
-  alttext="Excel.CellPropertiesLoadOptions.format" />
+  - <xref
+  href="excel!Excel.CellPropertiesLoadOptions#format:member">Excel.CellPropertiesLoadOptions.format</xref>
 
-  - <xref uid="excel!Excel.ColumnPropertiesLoadOptions#format:member"
-  alttext="Excel.ColumnPropertiesLoadOptions.format" />
+  - <xref
+  href="excel!Excel.ColumnPropertiesLoadOptions#format:member">Excel.ColumnPropertiesLoadOptions.format</xref>
 
-  - <xref uid="excel!Excel.RowPropertiesLoadOptions#format:member"
-  alttext="Excel.RowPropertiesLoadOptions.format" />
+  - <xref
+  href="excel!Excel.RowPropertiesLoadOptions#format:member">Excel.RowPropertiesLoadOptions.format</xref>
 
 isPreview: false
 isDeprecated: false

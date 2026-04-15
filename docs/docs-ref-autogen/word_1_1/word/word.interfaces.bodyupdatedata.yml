@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#body:member"
-  alttext="Word.Interfaces.DocumentUpdateData.body" />
+  - <xref
+  href="word!Word.Interfaces.DocumentUpdateData#body:member">Word.Interfaces.DocumentUpdateData.body</xref>
 
-  - <xref uid="word!Word.Interfaces.SectionUpdateData#body:member"
-  alttext="Word.Interfaces.SectionUpdateData.body" />
+  - <xref
+  href="word!Word.Interfaces.SectionUpdateData#body:member">Word.Interfaces.SectionUpdateData.body</xref>
 
 isPreview: false
 isDeprecated: false

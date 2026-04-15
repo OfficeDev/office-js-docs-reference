@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#documentLibraryVersions:member"
-  alttext="Word.Document.documentLibraryVersions" />
+  - <xref
+  href="word!Word.Document#documentLibraryVersions:member">Word.Document.documentLibraryVersions</xref>
 
 isPreview: false
 isDeprecated: false

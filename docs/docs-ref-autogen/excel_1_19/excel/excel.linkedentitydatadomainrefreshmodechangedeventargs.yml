@@ -18,8 +18,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member"
-  alttext="Excel.LinkedEntityDataDomainCollection.onRefreshModeChanged" />
+  href="excel!Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member">Excel.LinkedEntityDataDomainCollection.onRefreshModeChanged</xref>
 
 isPreview: false
 isDeprecated: false

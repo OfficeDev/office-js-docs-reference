@@ -13,18 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member"
-  alttext="OneNote.Interfaces.PageContentCollectionLoadOptions.outline" />
-
-  - <xref uid="onenote!OneNote.Interfaces.PageContentLoadOptions#outline:member"
-  alttext="OneNote.Interfaces.PageContentLoadOptions.outline" />
+  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member">OneNote.Interfaces.PageContentCollectionLoadOptions.outline</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#outline:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.outline" />
+  href="onenote!OneNote.Interfaces.PageContentLoadOptions#outline:member">OneNote.Interfaces.PageContentLoadOptions.outline</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#outline:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.outline" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#outline:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.outline</xref>
+
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#outline:member">OneNote.Interfaces.ParagraphLoadOptions.outline</xref>
 
 isPreview: false
 isDeprecated: false

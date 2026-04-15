@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#pageMovementType:member"
-  alttext="Word.Interfaces.ViewData.pageMovementType" />
+  - <xref
+  href="word!Word.Interfaces.ViewData#pageMovementType:member">Word.Interfaces.ViewData.pageMovementType</xref>
 
-  - <xref uid="word!Word.Interfaces.ViewUpdateData#pageMovementType:member"
-  alttext="Word.Interfaces.ViewUpdateData.pageMovementType" />
+  - <xref
+  href="word!Word.Interfaces.ViewUpdateData#pageMovementType:member">Word.Interfaces.ViewUpdateData.pageMovementType</xref>
 
-  - <xref uid="word!Word.View#pageMovementType:member"
-  alttext="Word.View.pageMovementType" />
+  - <xref
+  href="word!Word.View#pageMovementType:member">Word.View.pageMovementType</xref>
 
 isPreview: false
 isDeprecated: false

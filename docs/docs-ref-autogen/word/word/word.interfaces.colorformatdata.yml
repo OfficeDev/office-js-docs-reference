@@ -10,34 +10,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#backgroundColor:member"
-  alttext="Word.Interfaces.FillFormatData.backgroundColor" />
-
-  - <xref uid="word!Word.Interfaces.FillFormatData#foregroundColor:member"
-  alttext="Word.Interfaces.FillFormatData.foregroundColor" />
-
-  - <xref uid="word!Word.Interfaces.FontData#textColor:member"
-  alttext="Word.Interfaces.FontData.textColor" />
-
-  - <xref uid="word!Word.Interfaces.GlowFormatData#color:member"
-  alttext="Word.Interfaces.GlowFormatData.color" />
-
-  - <xref uid="word!Word.Interfaces.LineFormatData#backgroundColor:member"
-  alttext="Word.Interfaces.LineFormatData.backgroundColor" />
-
-  - <xref uid="word!Word.Interfaces.LineFormatData#foregroundColor:member"
-  alttext="Word.Interfaces.LineFormatData.foregroundColor" />
-
-  - <xref uid="word!Word.Interfaces.ShadowFormatData#foregroundColor:member"
-  alttext="Word.Interfaces.ShadowFormatData.foregroundColor" />
+  - <xref
+  href="word!Word.Interfaces.FillFormatData#backgroundColor:member">Word.Interfaces.FillFormatData.backgroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#contourColor:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.contourColor" />
+  href="word!Word.Interfaces.FillFormatData#foregroundColor:member">Word.Interfaces.FillFormatData.foregroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColor:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.extrusionColor" />
+  href="word!Word.Interfaces.FontData#textColor:member">Word.Interfaces.FontData.textColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.GlowFormatData#color:member">Word.Interfaces.GlowFormatData.color</xref>
+
+  - <xref
+  href="word!Word.Interfaces.LineFormatData#backgroundColor:member">Word.Interfaces.LineFormatData.backgroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.LineFormatData#foregroundColor:member">Word.Interfaces.LineFormatData.foregroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ShadowFormatData#foregroundColor:member">Word.Interfaces.ShadowFormatData.foregroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#contourColor:member">Word.Interfaces.ThreeDimensionalFormatData.contourColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColor:member">Word.Interfaces.ThreeDimensionalFormatData.extrusionColor</xref>
 
 isPreview: false
 isDeprecated: false

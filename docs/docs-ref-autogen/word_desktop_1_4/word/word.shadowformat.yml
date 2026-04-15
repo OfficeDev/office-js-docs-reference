@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#textShadow:member" alttext="Word.Font.textShadow"
-  />
+  - <xref href="word!Word.Font#textShadow:member">Word.Font.textShadow</xref>
 
 isPreview: false
 isDeprecated: false

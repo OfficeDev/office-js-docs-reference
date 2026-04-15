@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.EntityViewLayouts#card:member"
-  alttext="Excel.EntityViewLayouts.card" />
+  - <xref
+  href="excel!Excel.EntityViewLayouts#card:member">Excel.EntityViewLayouts.card</xref>
 
 
   Learn more about the types in this type alias through the following links. 

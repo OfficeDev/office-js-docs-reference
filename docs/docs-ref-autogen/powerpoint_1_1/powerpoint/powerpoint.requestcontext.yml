@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Application#context:member"
-  alttext="PowerPoint.Application.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Application#context:member">PowerPoint.Application.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Presentation#context:member"
-  alttext="PowerPoint.Presentation.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Presentation#context:member">PowerPoint.Presentation.context</xref>
 
   #### Examples
 

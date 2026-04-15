@@ -13,21 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#inkAnalysis:member"
-  alttext="OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.inkAnalysis"
-  />
+  href="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#inkAnalysis:member">OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.inkAnalysis</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#inkAnalysis:member"
-  alttext="OneNote.Interfaces.InkAnalysisParagraphLoadOptions.inkAnalysis" />
+  href="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#inkAnalysis:member">OneNote.Interfaces.InkAnalysisParagraphLoadOptions.inkAnalysis</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageCollectionLoadOptions#inkAnalysisOrNull:member"
-  alttext="OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull" />
+  href="onenote!OneNote.Interfaces.PageCollectionLoadOptions#inkAnalysisOrNull:member">OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member"
-  alttext="OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull" />
+  href="onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member">OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull</xref>
 
 isPreview: false
 isDeprecated: false

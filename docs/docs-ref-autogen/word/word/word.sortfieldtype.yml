@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableSortOptions#sortFieldType:member"
-  alttext="Word.TableSortOptions.sortFieldType" />
+  - <xref
+  href="word!Word.TableSortOptions#sortFieldType:member">Word.TableSortOptions.sortFieldType</xref>
 
-  - <xref uid="word!Word.TableSortOptions#sortFieldType2:member"
-  alttext="Word.TableSortOptions.sortFieldType2" />
+  - <xref
+  href="word!Word.TableSortOptions#sortFieldType2:member">Word.TableSortOptions.sortFieldType2</xref>
 
-  - <xref uid="word!Word.TableSortOptions#sortFieldType3:member"
-  alttext="Word.TableSortOptions.sortFieldType3" />
+  - <xref
+  href="word!Word.TableSortOptions#sortFieldType3:member">Word.TableSortOptions.sortFieldType3</xref>
 
 isPreview: false
 isDeprecated: false

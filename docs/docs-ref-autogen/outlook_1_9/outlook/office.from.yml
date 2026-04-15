@@ -29,8 +29,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MessageCompose#from:member"
-  alttext="Office.MessageCompose.from" />
+  - <xref
+  href="outlook!Office.MessageCompose#from:member">Office.MessageCompose.from</xref>
 
 isPreview: false
 isDeprecated: false

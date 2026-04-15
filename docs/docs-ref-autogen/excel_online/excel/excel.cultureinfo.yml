@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#cultureInfo:member"
-  alttext="Excel.Application.cultureInfo" />
+  - <xref
+  href="excel!Excel.Application#cultureInfo:member">Excel.Application.cultureInfo</xref>
 
 isPreview: false
 isDeprecated: false

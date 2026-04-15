@@ -23,14 +23,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Categories#getAsync:member(1)"
-  alttext="Office.Categories.getAsync" />
+  - <xref
+  href="outlook!Office.Categories#getAsync:member(1)">Office.Categories.getAsync</xref>
 
-  - <xref uid="outlook!Office.MasterCategories#addAsync:member(1)"
-  alttext="Office.MasterCategories.addAsync" />
+  - <xref
+  href="outlook!Office.MasterCategories#addAsync:member(1)">Office.MasterCategories.addAsync</xref>
 
-  - <xref uid="outlook!Office.MasterCategories#getAsync:member(1)"
-  alttext="Office.MasterCategories.getAsync" />
+  - <xref
+  href="outlook!Office.MasterCategories#getAsync:member(1)">Office.MasterCategories.getAsync</xref>
 
   #### Examples
 

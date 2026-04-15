@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CultureInfo#numberFormat:member"
-  alttext="Excel.CultureInfo.numberFormat" />
+  - <xref
+  href="excel!Excel.CultureInfo#numberFormat:member">Excel.CultureInfo.numberFormat</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,31 +12,30 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#backgroundColor:member"
-  alttext="Word.FillFormat.backgroundColor" />
+  - <xref
+  href="word!Word.FillFormat#backgroundColor:member">Word.FillFormat.backgroundColor</xref>
 
-  - <xref uid="word!Word.FillFormat#foregroundColor:member"
-  alttext="Word.FillFormat.foregroundColor" />
+  - <xref
+  href="word!Word.FillFormat#foregroundColor:member">Word.FillFormat.foregroundColor</xref>
 
-  - <xref uid="word!Word.Font#textColor:member" alttext="Word.Font.textColor" />
+  - <xref href="word!Word.Font#textColor:member">Word.Font.textColor</xref>
 
-  - <xref uid="word!Word.GlowFormat#color:member"
-  alttext="Word.GlowFormat.color" />
+  - <xref href="word!Word.GlowFormat#color:member">Word.GlowFormat.color</xref>
 
-  - <xref uid="word!Word.LineFormat#backgroundColor:member"
-  alttext="Word.LineFormat.backgroundColor" />
+  - <xref
+  href="word!Word.LineFormat#backgroundColor:member">Word.LineFormat.backgroundColor</xref>
 
-  - <xref uid="word!Word.LineFormat#foregroundColor:member"
-  alttext="Word.LineFormat.foregroundColor" />
+  - <xref
+  href="word!Word.LineFormat#foregroundColor:member">Word.LineFormat.foregroundColor</xref>
 
-  - <xref uid="word!Word.ShadowFormat#foregroundColor:member"
-  alttext="Word.ShadowFormat.foregroundColor" />
+  - <xref
+  href="word!Word.ShadowFormat#foregroundColor:member">Word.ShadowFormat.foregroundColor</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#contourColor:member"
-  alttext="Word.ThreeDimensionalFormat.contourColor" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#contourColor:member">Word.ThreeDimensionalFormat.contourColor</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColor:member"
-  alttext="Word.ThreeDimensionalFormat.extrusionColor" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#extrusionColor:member">Word.ThreeDimensionalFormat.extrusionColor</xref>
 
 isPreview: false
 isDeprecated: false

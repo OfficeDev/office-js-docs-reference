@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartLegendEntryCollectionData#items:member"
-  alttext="Excel.Interfaces.ChartLegendEntryCollectionData.items" />
+  href="excel!Excel.Interfaces.ChartLegendEntryCollectionData#items:member">Excel.Interfaces.ChartLegendEntryCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member">Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

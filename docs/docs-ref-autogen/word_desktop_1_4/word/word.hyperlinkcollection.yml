@@ -14,11 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#hyperlinks:member"
-  alttext="Word.Document.hyperlinks" />
+  - <xref
+  href="word!Word.Document#hyperlinks:member">Word.Document.hyperlinks</xref>
 
-  - <xref uid="word!Word.Range#hyperlinks:member"
-  alttext="Word.Range.hyperlinks" />
+  - <xref href="word!Word.Range#hyperlinks:member">Word.Range.hyperlinks</xref>
 
 isPreview: false
 isDeprecated: false

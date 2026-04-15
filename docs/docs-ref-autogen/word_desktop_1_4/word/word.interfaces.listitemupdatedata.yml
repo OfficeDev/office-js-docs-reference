@@ -10,12 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#listItem:member"
-  alttext="Word.Interfaces.ParagraphUpdateData.listItem" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphUpdateData#listItem:member">Word.Interfaces.ParagraphUpdateData.listItem</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphUpdateData#listItemOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphUpdateData.listItemOrNullObject" />
+  href="word!Word.Interfaces.ParagraphUpdateData#listItemOrNullObject:member">Word.Interfaces.ParagraphUpdateData.listItemOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

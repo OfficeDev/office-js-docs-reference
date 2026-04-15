@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#reflection:member" alttext="Word.Font.reflection"
-  />
+  - <xref href="word!Word.Font#reflection:member">Word.Font.reflection</xref>
 
 isPreview: false
 isDeprecated: false

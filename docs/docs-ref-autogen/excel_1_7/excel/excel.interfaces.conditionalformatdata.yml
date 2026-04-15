@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionData#items:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionData.items" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionData#items:member">Excel.Interfaces.ConditionalFormatCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member">Excel.Interfaces.ConditionalFormatCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#conditionalFormats:member"
-  alttext="Excel.Interfaces.RangeData.conditionalFormats" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeData#conditionalFormats:member">Excel.Interfaces.RangeData.conditionalFormats</xref>
 
 isPreview: false
 isDeprecated: false

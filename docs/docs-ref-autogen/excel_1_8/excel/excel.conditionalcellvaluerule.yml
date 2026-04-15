@@ -12,16 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellValueConditionalFormat#rule:member"
-  alttext="Excel.CellValueConditionalFormat.rule" />
+  - <xref
+  href="excel!Excel.CellValueConditionalFormat#rule:member">Excel.CellValueConditionalFormat.rule</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CellValueConditionalFormatData#rule:member"
-  alttext="Excel.Interfaces.CellValueConditionalFormatData.rule" />
+  href="excel!Excel.Interfaces.CellValueConditionalFormatData#rule:member">Excel.Interfaces.CellValueConditionalFormatData.rule</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#rule:member"
-  alttext="Excel.Interfaces.CellValueConditionalFormatUpdateData.rule" />
+  href="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#rule:member">Excel.Interfaces.CellValueConditionalFormatUpdateData.rule</xref>
 
 isPreview: false
 isDeprecated: false

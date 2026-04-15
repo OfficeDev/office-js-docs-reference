@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Table#columns:member" alttext="Excel.Table.columns"
-  />
+  - <xref href="excel!Excel.Table#columns:member">Excel.Table.columns</xref>
 
   #### Examples
 

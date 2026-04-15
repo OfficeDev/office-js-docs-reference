@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.LocalImageCellValue#image:member"
-  alttext="Excel.LocalImageCellValue.image" />
+  - <xref
+  href="excel!Excel.LocalImageCellValue#image:member">Excel.LocalImageCellValue.image</xref>
 
 isPreview: true
 isDeprecated: false

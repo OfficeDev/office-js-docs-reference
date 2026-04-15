@@ -15,15 +15,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextFrameData#autoSizeSetting:member"
-  alttext="PowerPoint.Interfaces.TextFrameData.autoSizeSetting" />
+  href="powerpoint!PowerPoint.Interfaces.TextFrameData#autoSizeSetting:member">PowerPoint.Interfaces.TextFrameData.autoSizeSetting</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#autoSizeSetting:member"
-  alttext="PowerPoint.Interfaces.TextFrameUpdateData.autoSizeSetting" />
+  href="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#autoSizeSetting:member">PowerPoint.Interfaces.TextFrameUpdateData.autoSizeSetting</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TextFrame#autoSizeSetting:member"
-  alttext="PowerPoint.TextFrame.autoSizeSetting" />
+  - <xref
+  href="powerpoint!PowerPoint.TextFrame#autoSizeSetting:member">PowerPoint.TextFrame.autoSizeSetting</xref>
 
   #### Examples
 

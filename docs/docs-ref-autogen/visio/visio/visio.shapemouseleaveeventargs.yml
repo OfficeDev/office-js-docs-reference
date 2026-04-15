@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onShapeMouseLeave:member"
-  alttext="Visio.Document.onShapeMouseLeave" />
+  - <xref
+  href="visio!Visio.Document#onShapeMouseLeave:member">Visio.Document.onShapeMouseLeave</xref>
 
   #### Examples
 

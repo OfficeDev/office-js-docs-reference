@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#properties:member"
-  alttext="Excel.Workbook.properties" />
+  - <xref
+  href="excel!Excel.Workbook#properties:member">Excel.Workbook.properties</xref>
 
 isPreview: false
 isDeprecated: false

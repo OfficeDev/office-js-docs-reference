@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BindingCollectionData#items:member"
-  alttext="PowerPoint.Interfaces.BindingCollectionData.items" />
+  href="powerpoint!PowerPoint.Interfaces.BindingCollectionData#items:member">PowerPoint.Interfaces.BindingCollectionData.items</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData#items:member"
-  alttext="PowerPoint.Interfaces.BindingCollectionUpdateData.items" />
+  href="powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData#items:member">PowerPoint.Interfaces.BindingCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -17,8 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.NamedItemCollection#items:member"
-  alttext="Excel.NamedItemCollection.items" />
+  - <xref
+  href="excel!Excel.NamedItemCollection#items:member">Excel.NamedItemCollection.items</xref>
 
   #### Examples
 

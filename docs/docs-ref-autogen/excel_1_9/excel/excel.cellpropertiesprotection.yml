@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#protection:member"
-  alttext="Excel.CellPropertiesFormat.protection" />
+  - <xref
+  href="excel!Excel.CellPropertiesFormat#protection:member">Excel.CellPropertiesFormat.protection</xref>
 
 isPreview: false
 isDeprecated: false

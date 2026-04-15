@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.FieldCollectionLoadOptions#linkFormat:member"
-  alttext="Word.Interfaces.FieldCollectionLoadOptions.linkFormat" />
+  href="word!Word.Interfaces.FieldCollectionLoadOptions#linkFormat:member">Word.Interfaces.FieldCollectionLoadOptions.linkFormat</xref>
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#linkFormat:member"
-  alttext="Word.Interfaces.FieldLoadOptions.linkFormat" />
+  - <xref
+  href="word!Word.Interfaces.FieldLoadOptions#linkFormat:member">Word.Interfaces.FieldLoadOptions.linkFormat</xref>
 
 isPreview: false
 isDeprecated: false

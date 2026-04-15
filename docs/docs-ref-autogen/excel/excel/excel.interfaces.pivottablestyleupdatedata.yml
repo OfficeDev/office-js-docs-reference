@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData#pivotStyle:member"
-  alttext="Excel.Interfaces.PivotLayoutUpdateData.pivotStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotLayoutUpdateData#pivotStyle:member">Excel.Interfaces.PivotLayoutUpdateData.pivotStyle</xref>
 
 isPreview: false
 isDeprecated: false

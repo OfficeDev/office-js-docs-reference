@@ -8,17 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.NoteCollectionData#items:member"
-  alttext="Excel.Interfaces.NoteCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.NoteCollectionData#items:member">Excel.Interfaces.NoteCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.NoteCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.NoteCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.NoteCollectionUpdateData#items:member">Excel.Interfaces.NoteCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#notes:member"
-  alttext="Excel.Interfaces.WorkbookData.notes" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#notes:member">Excel.Interfaces.WorkbookData.notes</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#notes:member"
-  alttext="Excel.Interfaces.WorksheetData.notes" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#notes:member">Excel.Interfaces.WorksheetData.notes</xref>
 
 isPreview: false
 isDeprecated: false

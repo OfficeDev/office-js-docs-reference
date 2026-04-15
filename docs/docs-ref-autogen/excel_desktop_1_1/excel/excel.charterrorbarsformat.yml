@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartErrorBars#format:member"
-  alttext="Excel.ChartErrorBars.format" />
+  - <xref
+  href="excel!Excel.ChartErrorBars#format:member">Excel.ChartErrorBars.format</xref>
 
 isPreview: false
 isDeprecated: false

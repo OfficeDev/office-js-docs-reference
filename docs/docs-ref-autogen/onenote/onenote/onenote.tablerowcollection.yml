@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Table#rows:member" alttext="OneNote.Table.rows"
-  />
+  - <xref href="onenote!OneNote.Table#rows:member">OneNote.Table.rows</xref>
 
 isPreview: false
 isDeprecated: false

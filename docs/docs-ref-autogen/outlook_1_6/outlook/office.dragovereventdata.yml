@@ -22,8 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.DragAndDropEventArgs#dragAndDropEventData:member"
-  alttext="Office.DragAndDropEventArgs.dragAndDropEventData" />
+  - <xref
+  href="outlook!Office.DragAndDropEventArgs#dragAndDropEventData:member">Office.DragAndDropEventArgs.dragAndDropEventData</xref>
 
   #### Examples
 

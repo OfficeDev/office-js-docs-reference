@@ -17,30 +17,30 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.GeometricShape#shape:member"
-  alttext="Excel.GeometricShape.shape" />
+  - <xref
+  href="excel!Excel.GeometricShape#shape:member">Excel.GeometricShape.shape</xref>
 
-  - <xref uid="excel!Excel.GroupShapeCollection#items:member"
-  alttext="Excel.GroupShapeCollection.items" />
+  - <xref
+  href="excel!Excel.GroupShapeCollection#items:member">Excel.GroupShapeCollection.items</xref>
 
-  - <xref uid="excel!Excel.Image#shape:member" alttext="Excel.Image.shape" />
+  - <xref href="excel!Excel.Image#shape:member">Excel.Image.shape</xref>
 
-  - <xref uid="excel!Excel.Line#beginConnectedShape:member"
-  alttext="Excel.Line.beginConnectedShape" />
+  - <xref
+  href="excel!Excel.Line#beginConnectedShape:member">Excel.Line.beginConnectedShape</xref>
 
-  - <xref uid="excel!Excel.Line#endConnectedShape:member"
-  alttext="Excel.Line.endConnectedShape" />
+  - <xref
+  href="excel!Excel.Line#endConnectedShape:member">Excel.Line.endConnectedShape</xref>
 
-  - <xref uid="excel!Excel.Line#shape:member" alttext="Excel.Line.shape" />
+  - <xref href="excel!Excel.Line#shape:member">Excel.Line.shape</xref>
 
-  - <xref uid="excel!Excel.Shape#parentGroup:member"
-  alttext="Excel.Shape.parentGroup" />
+  - <xref
+  href="excel!Excel.Shape#parentGroup:member">Excel.Shape.parentGroup</xref>
 
-  - <xref uid="excel!Excel.ShapeCollection#items:member"
-  alttext="Excel.ShapeCollection.items" />
+  - <xref
+  href="excel!Excel.ShapeCollection#items:member">Excel.ShapeCollection.items</xref>
 
-  - <xref uid="excel!Excel.ShapeGroup#shape:member"
-  alttext="Excel.ShapeGroup.shape" />
+  - <xref
+  href="excel!Excel.ShapeGroup#shape:member">Excel.ShapeGroup.shape</xref>
 
 isPreview: false
 isDeprecated: false

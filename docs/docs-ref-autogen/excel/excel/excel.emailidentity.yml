@@ -12,35 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTask#assignees:member"
-  alttext="Excel.DocumentTask.assignees" />
+  - <xref
+  href="excel!Excel.DocumentTask#assignees:member">Excel.DocumentTask.assignees</xref>
 
-  - <xref uid="excel!Excel.DocumentTask#completedBy:member"
-  alttext="Excel.DocumentTask.completedBy" />
+  - <xref
+  href="excel!Excel.DocumentTask#completedBy:member">Excel.DocumentTask.completedBy</xref>
 
-  - <xref uid="excel!Excel.DocumentTask#createdBy:member"
-  alttext="Excel.DocumentTask.createdBy" />
+  - <xref
+  href="excel!Excel.DocumentTask#createdBy:member">Excel.DocumentTask.createdBy</xref>
 
-  - <xref uid="excel!Excel.DocumentTaskChange#assignee:member"
-  alttext="Excel.DocumentTaskChange.assignee" />
+  - <xref
+  href="excel!Excel.DocumentTaskChange#assignee:member">Excel.DocumentTaskChange.assignee</xref>
 
-  - <xref uid="excel!Excel.DocumentTaskChange#changedBy:member"
-  alttext="Excel.DocumentTaskChange.changedBy" />
+  - <xref
+  href="excel!Excel.DocumentTaskChange#changedBy:member">Excel.DocumentTaskChange.changedBy</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member"
-  alttext="Excel.Interfaces.DocumentTaskChangeData.assignee" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member">Excel.Interfaces.DocumentTaskChangeData.assignee</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member"
-  alttext="Excel.Interfaces.DocumentTaskChangeData.changedBy" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member">Excel.Interfaces.DocumentTaskChangeData.changedBy</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#assignees:member"
-  alttext="Excel.Interfaces.DocumentTaskData.assignees" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskData#assignees:member">Excel.Interfaces.DocumentTaskData.assignees</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#completedBy:member"
-  alttext="Excel.Interfaces.DocumentTaskData.completedBy" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskData#completedBy:member">Excel.Interfaces.DocumentTaskData.completedBy</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#createdBy:member"
-  alttext="Excel.Interfaces.DocumentTaskData.createdBy" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskData#createdBy:member">Excel.Interfaces.DocumentTaskData.createdBy</xref>
 
 isPreview: true
 isDeprecated: false

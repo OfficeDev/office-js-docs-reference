@@ -13,8 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#borders:member"
-  alttext="Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders" />
+  href="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#borders:member">Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders</xref>
 
 isPreview: false
 isDeprecated: false

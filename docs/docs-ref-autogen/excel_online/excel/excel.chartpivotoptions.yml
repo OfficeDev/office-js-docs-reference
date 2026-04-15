@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#pivotOptions:member"
-  alttext="Excel.Chart.pivotOptions" />
+  - <xref
+  href="excel!Excel.Chart#pivotOptions:member">Excel.Chart.pivotOptions</xref>
 
 isPreview: false
 isDeprecated: false

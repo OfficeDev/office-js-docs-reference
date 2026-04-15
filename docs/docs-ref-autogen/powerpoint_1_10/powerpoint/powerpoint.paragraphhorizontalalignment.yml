@@ -18,31 +18,25 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member"
-  alttext="PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member"
-  alttext="PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment"
-  />
+  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellData#horizontalAlignment:member"
-  alttext="PowerPoint.Interfaces.TableCellData.horizontalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellData#horizontalAlignment:member">PowerPoint.Interfaces.TableCellData.horizontalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member"
-  alttext="PowerPoint.Interfaces.TableCellUpdateData.horizontalAlignment" />
-
-  - <xref uid="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member"
-  alttext="PowerPoint.ParagraphFormat.horizontalAlignment" />
-
-  - <xref uid="powerpoint!PowerPoint.TableCell#horizontalAlignment:member"
-  alttext="PowerPoint.TableCell.horizontalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member">PowerPoint.Interfaces.TableCellUpdateData.horizontalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member"
-  alttext="PowerPoint.TableCellProperties.horizontalAlignment" />
+  href="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member">PowerPoint.ParagraphFormat.horizontalAlignment</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableCell#horizontalAlignment:member">PowerPoint.TableCell.horizontalAlignment</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member">PowerPoint.TableCellProperties.horizontalAlignment</xref>
 
   #### Examples
 

@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#tableStyle:member"
-  alttext="Word.Interfaces.StyleUpdateData.tableStyle" />
+  - <xref
+  href="word!Word.Interfaces.StyleUpdateData#tableStyle:member">Word.Interfaces.StyleUpdateData.tableStyle</xref>
 
 isPreview: false
 isDeprecated: false

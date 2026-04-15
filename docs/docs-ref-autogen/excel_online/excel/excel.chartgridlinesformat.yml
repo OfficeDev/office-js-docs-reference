@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartGridlines#format:member"
-  alttext="Excel.ChartGridlines.format" />
+  - <xref
+  href="excel!Excel.ChartGridlines#format:member">Excel.ChartGridlines.format</xref>
 
 isPreview: false
 isDeprecated: false

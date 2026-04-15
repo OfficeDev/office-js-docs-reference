@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#customXmlParts:member"
-  alttext="Excel.Workbook.customXmlParts" />
+  - <xref
+  href="excel!Excel.Workbook#customXmlParts:member">Excel.Workbook.customXmlParts</xref>
 
 isPreview: false
 isDeprecated: false

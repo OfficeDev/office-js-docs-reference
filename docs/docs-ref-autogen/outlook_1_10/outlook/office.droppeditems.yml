@@ -22,8 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.DropEventData#dataTransfer:member"
-  alttext="Office.DropEventData.dataTransfer" />
+  - <xref
+  href="outlook!Office.DropEventData#dataTransfer:member">Office.DropEventData.dataTransfer</xref>
 
   #### Examples
 

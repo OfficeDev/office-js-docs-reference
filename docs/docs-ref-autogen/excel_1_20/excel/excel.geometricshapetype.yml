@@ -13,36 +13,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartDataLabel#geometricShapeType:member"
-  alttext="Excel.ChartDataLabel.geometricShapeType" />
-
-  - <xref uid="excel!Excel.ChartDataLabels#geometricShapeType:member"
-  alttext="Excel.ChartDataLabels.geometricShapeType" />
+  - <xref
+  href="excel!Excel.ChartDataLabel#geometricShapeType:member">Excel.ChartDataLabel.geometricShapeType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelData#geometricShapeType:member"
-  alttext="Excel.Interfaces.ChartDataLabelData.geometricShapeType" />
+  href="excel!Excel.ChartDataLabels#geometricShapeType:member">Excel.ChartDataLabels.geometricShapeType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsData#geometricShapeType:member"
-  alttext="Excel.Interfaces.ChartDataLabelsData.geometricShapeType" />
+  href="excel!Excel.Interfaces.ChartDataLabelData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelData.geometricShapeType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member"
-  alttext="Excel.Interfaces.ChartDataLabelsUpdateData.geometricShapeType" />
+  href="excel!Excel.Interfaces.ChartDataLabelsData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelsData.geometricShapeType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#geometricShapeType:member"
-  alttext="Excel.Interfaces.ChartDataLabelUpdateData.geometricShapeType" />
+  href="excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelsUpdateData.geometricShapeType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeData#geometricShapeType:member"
-  alttext="Excel.Interfaces.ShapeData.geometricShapeType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartDataLabelUpdateData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelUpdateData.geometricShapeType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member"
-  alttext="Excel.Interfaces.ShapeUpdateData.geometricShapeType" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeData#geometricShapeType:member">Excel.Interfaces.ShapeData.geometricShapeType</xref>
 
-  - <xref uid="excel!Excel.Shape#geometricShapeType:member"
-  alttext="Excel.Shape.geometricShapeType" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member">Excel.Interfaces.ShapeUpdateData.geometricShapeType</xref>
+
+  - <xref
+  href="excel!Excel.Shape#geometricShapeType:member">Excel.Shape.geometricShapeType</xref>
 
   #### Examples
 

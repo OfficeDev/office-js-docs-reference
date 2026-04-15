@@ -8,18 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.GroupShapeCollectionData#items:member"
-  alttext="Excel.Interfaces.GroupShapeCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.GroupShapeCollectionData#items:member">Excel.Interfaces.GroupShapeCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.GroupShapeCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member">Excel.Interfaces.GroupShapeCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeCollectionData#items:member"
-  alttext="Excel.Interfaces.ShapeCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeCollectionData#items:member">Excel.Interfaces.ShapeCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.ShapeCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeCollectionUpdateData#items:member">Excel.Interfaces.ShapeCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

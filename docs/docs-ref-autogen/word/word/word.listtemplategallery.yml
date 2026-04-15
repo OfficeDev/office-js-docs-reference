@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ListTemplateGalleryCollection#items:member"
-  alttext="Word.ListTemplateGalleryCollection.items" />
+  - <xref
+  href="word!Word.ListTemplateGalleryCollection#items:member">Word.ListTemplateGalleryCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

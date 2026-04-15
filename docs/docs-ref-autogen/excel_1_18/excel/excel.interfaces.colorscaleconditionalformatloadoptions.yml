@@ -13,23 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScaleOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScaleOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.colorScale" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member">Excel.Interfaces.ConditionalFormatLoadOptions.colorScale</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScaleOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.colorScaleOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScaleOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.colorScaleOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

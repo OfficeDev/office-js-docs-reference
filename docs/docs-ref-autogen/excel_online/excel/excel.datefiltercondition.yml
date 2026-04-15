@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotDateFilter#condition:member"
-  alttext="Excel.PivotDateFilter.condition" />
+  - <xref
+  href="excel!Excel.PivotDateFilter#condition:member">Excel.PivotDateFilter.condition</xref>
 
   #### Examples
 

@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BorderCollectionData#items:member"
-  alttext="Word.Interfaces.BorderCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.BorderCollectionData#items:member">Word.Interfaces.BorderCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.BorderCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.BorderCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.BorderCollectionUpdateData#items:member">Word.Interfaces.BorderCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

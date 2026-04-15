@@ -16,11 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#dataValidation:member"
-  alttext="Excel.Range.dataValidation" />
+  - <xref
+  href="excel!Excel.Range#dataValidation:member">Excel.Range.dataValidation</xref>
 
-  - <xref uid="excel!Excel.RangeAreas#dataValidation:member"
-  alttext="Excel.RangeAreas.dataValidation" />
+  - <xref
+  href="excel!Excel.RangeAreas#dataValidation:member">Excel.RangeAreas.dataValidation</xref>
 
 isPreview: false
 isDeprecated: false

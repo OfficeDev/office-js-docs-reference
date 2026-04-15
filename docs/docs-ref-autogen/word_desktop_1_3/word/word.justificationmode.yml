@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TemplateData#justificationMode:member"
-  alttext="Word.Interfaces.TemplateData.justificationMode" />
+  - <xref
+  href="word!Word.Interfaces.TemplateData#justificationMode:member">Word.Interfaces.TemplateData.justificationMode</xref>
 
-  - <xref uid="word!Word.Interfaces.TemplateUpdateData#justificationMode:member"
-  alttext="Word.Interfaces.TemplateUpdateData.justificationMode" />
+  - <xref
+  href="word!Word.Interfaces.TemplateUpdateData#justificationMode:member">Word.Interfaces.TemplateUpdateData.justificationMode</xref>
 
-  - <xref uid="word!Word.Template#justificationMode:member"
-  alttext="Word.Template.justificationMode" />
+  - <xref
+  href="word!Word.Template#justificationMode:member">Word.Template.justificationMode</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#dashStyle:member"
-  alttext="Word.Interfaces.LineFormatData.dashStyle" />
+  - <xref
+  href="word!Word.Interfaces.LineFormatData#dashStyle:member">Word.Interfaces.LineFormatData.dashStyle</xref>
 
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#dashStyle:member"
-  alttext="Word.Interfaces.LineFormatUpdateData.dashStyle" />
+  - <xref
+  href="word!Word.Interfaces.LineFormatUpdateData#dashStyle:member">Word.Interfaces.LineFormatUpdateData.dashStyle</xref>
 
-  - <xref uid="word!Word.LineFormat#dashStyle:member"
-  alttext="Word.LineFormat.dashStyle" />
+  - <xref
+  href="word!Word.LineFormat#dashStyle:member">Word.LineFormat.dashStyle</xref>
 
 isPreview: false
 isDeprecated: false

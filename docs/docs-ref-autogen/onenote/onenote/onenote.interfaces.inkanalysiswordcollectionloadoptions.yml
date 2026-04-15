@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#words:member"
-  alttext="OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words" />
+  href="onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#words:member">OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#words:member"
-  alttext="OneNote.Interfaces.InkAnalysisLineLoadOptions.words" />
+  href="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#words:member">OneNote.Interfaces.InkAnalysisLineLoadOptions.words</xref>
 
 isPreview: false
 isDeprecated: false

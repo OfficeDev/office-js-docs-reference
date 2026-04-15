@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member"
-  alttext="Excel.Interfaces.ChartCollectionLoadOptions.dataLabels" />
+  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member">Excel.Interfaces.ChartCollectionLoadOptions.dataLabels</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member"
-  alttext="Excel.Interfaces.ChartLoadOptions.dataLabels" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member">Excel.Interfaces.ChartLoadOptions.dataLabels</xref>
 
 isPreview: false
 isDeprecated: false

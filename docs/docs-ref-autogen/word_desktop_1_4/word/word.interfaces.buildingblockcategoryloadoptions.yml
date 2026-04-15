@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#category:member"
-  alttext="Word.Interfaces.BuildingBlockLoadOptions.category" />
+  - <xref
+  href="word!Word.Interfaces.BuildingBlockLoadOptions#category:member">Word.Interfaces.BuildingBlockLoadOptions.category</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.GoToOptions#item:member"
-  alttext="Word.GoToOptions.item" />
+  - <xref href="word!Word.GoToOptions#item:member">Word.GoToOptions.item</xref>
 
 isPreview: false
 isDeprecated: false

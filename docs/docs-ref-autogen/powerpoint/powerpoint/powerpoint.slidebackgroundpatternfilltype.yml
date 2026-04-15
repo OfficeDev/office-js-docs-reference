@@ -18,20 +18,16 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillData#pattern:member"
-  alttext="PowerPoint.Interfaces.SlideBackgroundPatternFillData.pattern" />
+  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillData#pattern:member">PowerPoint.Interfaces.SlideBackgroundPatternFillData.pattern</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#pattern:member"
-  alttext="PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData.pattern"
-  />
-
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundPatternFill#pattern:member"
-  alttext="PowerPoint.SlideBackgroundPatternFill.pattern" />
+  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#pattern:member">PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData.pattern</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.SlideBackgroundPatternFillOptions#pattern:member"
-  alttext="PowerPoint.SlideBackgroundPatternFillOptions.pattern" />
+  href="powerpoint!PowerPoint.SlideBackgroundPatternFill#pattern:member">PowerPoint.SlideBackgroundPatternFill.pattern</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackgroundPatternFillOptions#pattern:member">PowerPoint.SlideBackgroundPatternFillOptions.pattern</xref>
 
   #### Examples
 

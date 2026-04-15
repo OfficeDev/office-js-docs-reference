@@ -36,8 +36,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AddinCommands.Event#source:member"
-  alttext="Office.AddinCommands.Event.source" />
+  - <xref
+  href="office!Office.AddinCommands.Event#source:member">Office.AddinCommands.Event.source</xref>
 
 isPreview: false
 isDeprecated: false

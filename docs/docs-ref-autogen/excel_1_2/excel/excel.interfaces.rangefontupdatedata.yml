@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.RangeFormatUpdateData.font" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatUpdateData#font:member">Excel.Interfaces.RangeFormatUpdateData.font</xref>
 
 isPreview: false
 isDeprecated: false

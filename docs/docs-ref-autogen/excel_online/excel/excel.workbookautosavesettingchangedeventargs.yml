@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#onAutoSaveSettingChanged:member"
-  alttext="Excel.Workbook.onAutoSaveSettingChanged" />
+  - <xref
+  href="excel!Excel.Workbook#onAutoSaveSettingChanged:member">Excel.Workbook.onAutoSaveSettingChanged</xref>
 
 isPreview: false
 isDeprecated: false

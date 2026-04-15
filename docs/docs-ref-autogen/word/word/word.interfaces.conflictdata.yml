@@ -10,17 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CoauthoringData#conflicts:member"
-  alttext="Word.Interfaces.CoauthoringData.conflicts" />
+  - <xref
+  href="word!Word.Interfaces.CoauthoringData#conflicts:member">Word.Interfaces.CoauthoringData.conflicts</xref>
 
-  - <xref uid="word!Word.Interfaces.ConflictCollectionData#items:member"
-  alttext="Word.Interfaces.ConflictCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.ConflictCollectionData#items:member">Word.Interfaces.ConflictCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.ConflictCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ConflictCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.ConflictCollectionUpdateData#items:member">Word.Interfaces.ConflictCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#conflicts:member"
-  alttext="Word.Interfaces.RangeData.conflicts" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#conflicts:member">Word.Interfaces.RangeData.conflicts</xref>
 
 isPreview: false
 isDeprecated: false

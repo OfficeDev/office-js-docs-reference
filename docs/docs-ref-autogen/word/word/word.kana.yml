@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeData#kana:member"
-  alttext="Word.Interfaces.RangeData.kana" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#kana:member">Word.Interfaces.RangeData.kana</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#kana:member"
-  alttext="Word.Interfaces.RangeUpdateData.kana" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#kana:member">Word.Interfaces.RangeUpdateData.kana</xref>
 
-  - <xref uid="word!Word.Range#kana:member" alttext="Word.Range.kana" />
+  - <xref href="word!Word.Range#kana:member">Word.Range.kana</xref>
 
 isPreview: false
 isDeprecated: false

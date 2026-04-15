@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ApplicationUpdateData#bibliography:member"
-  alttext="Word.Interfaces.ApplicationUpdateData.bibliography" />
+  - <xref
+  href="word!Word.Interfaces.ApplicationUpdateData#bibliography:member">Word.Interfaces.ApplicationUpdateData.bibliography</xref>
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#bibliography:member"
-  alttext="Word.Interfaces.DocumentUpdateData.bibliography" />
+  - <xref
+  href="word!Word.Interfaces.DocumentUpdateData#bibliography:member">Word.Interfaces.DocumentUpdateData.bibliography</xref>
 
 isPreview: false
 isDeprecated: false

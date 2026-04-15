@@ -8,17 +8,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#type:member" alttext="Office.Binding.type"
-  />
+  - <xref href="office!Office.Binding#type:member">Office.Binding.type</xref>
 
-  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member(1)"
-  alttext="Office.Bindings.addFromNamedItemAsync" />
+  - <xref
+  href="office!Office.Bindings#addFromNamedItemAsync:member(1)">Office.Bindings.addFromNamedItemAsync</xref>
 
-  - <xref uid="office!Office.Bindings#addFromPromptAsync:member(1)"
-  alttext="Office.Bindings.addFromPromptAsync" />
+  - <xref
+  href="office!Office.Bindings#addFromPromptAsync:member(1)">Office.Bindings.addFromPromptAsync</xref>
 
-  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member(1)"
-  alttext="Office.Bindings.addFromSelectionAsync" />
+  - <xref
+  href="office!Office.Bindings#addFromSelectionAsync:member(1)">Office.Bindings.addFromSelectionAsync</xref>
 
 isPreview: false
 isDeprecated: false

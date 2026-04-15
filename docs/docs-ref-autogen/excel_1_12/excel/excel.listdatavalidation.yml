@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationRule#list:member"
-  alttext="Excel.DataValidationRule.list" />
+  - <xref
+  href="excel!Excel.DataValidationRule#list:member">Excel.DataValidationRule.list</xref>
 
 isPreview: false
 isDeprecated: false

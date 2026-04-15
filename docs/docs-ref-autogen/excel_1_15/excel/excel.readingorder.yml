@@ -13,26 +13,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#readingOrder:member"
-  alttext="Excel.CellPropertiesFormat.readingOrder" />
+  - <xref
+  href="excel!Excel.CellPropertiesFormat#readingOrder:member">Excel.CellPropertiesFormat.readingOrder</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#readingOrder:member"
-  alttext="Excel.Interfaces.RangeFormatData.readingOrder" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatData#readingOrder:member">Excel.Interfaces.RangeFormatData.readingOrder</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#readingOrder:member"
-  alttext="Excel.Interfaces.RangeFormatUpdateData.readingOrder" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatUpdateData#readingOrder:member">Excel.Interfaces.RangeFormatUpdateData.readingOrder</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleData#readingOrder:member"
-  alttext="Excel.Interfaces.StyleData.readingOrder" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleData#readingOrder:member">Excel.Interfaces.StyleData.readingOrder</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member"
-  alttext="Excel.Interfaces.StyleUpdateData.readingOrder" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member">Excel.Interfaces.StyleUpdateData.readingOrder</xref>
 
-  - <xref uid="excel!Excel.RangeFormat#readingOrder:member"
-  alttext="Excel.RangeFormat.readingOrder" />
+  - <xref
+  href="excel!Excel.RangeFormat#readingOrder:member">Excel.RangeFormat.readingOrder</xref>
 
-  - <xref uid="excel!Excel.Style#readingOrder:member"
-  alttext="Excel.Style.readingOrder" />
+  - <xref
+  href="excel!Excel.Style#readingOrder:member">Excel.Style.readingOrder</xref>
 
   #### Examples
 

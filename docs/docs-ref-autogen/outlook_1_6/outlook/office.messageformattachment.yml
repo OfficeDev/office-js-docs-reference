@@ -22,8 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MessageForm#attachments:member"
-  alttext="Office.MessageForm.attachments" />
+  - <xref
+  href="outlook!Office.MessageForm#attachments:member">Office.MessageForm.attachments</xref>
 
 isPreview: false
 isDeprecated: false

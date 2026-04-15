@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member"
-  alttext="Word.Interfaces.DocumentLoadOptions.attachedTemplate" />
+  - <xref
+  href="word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member">Word.Interfaces.DocumentLoadOptions.attachedTemplate</xref>
 
 isPreview: false
 isDeprecated: false

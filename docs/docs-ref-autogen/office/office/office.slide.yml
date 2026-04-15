@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.SlideRange#slides:member"
-  alttext="Office.SlideRange.slides" />
+  - <xref
+  href="office!Office.SlideRange#slides:member">Office.SlideRange.slides</xref>
 
 isPreview: false
 isDeprecated: false

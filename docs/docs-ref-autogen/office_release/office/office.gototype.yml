@@ -8,8 +8,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#goToByIdAsync:member(1)"
-  alttext="Office.Document.goToByIdAsync" />
+  - <xref
+  href="office!Office.Document#goToByIdAsync:member(1)">Office.Document.goToByIdAsync</xref>
 
 isPreview: false
 isDeprecated: false

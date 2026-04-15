@@ -16,14 +16,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeTextWrapData#side:member"
-  alttext="Word.Interfaces.ShapeTextWrapData.side" />
+  - <xref
+  href="word!Word.Interfaces.ShapeTextWrapData#side:member">Word.Interfaces.ShapeTextWrapData.side</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeTextWrapUpdateData#side:member"
-  alttext="Word.Interfaces.ShapeTextWrapUpdateData.side" />
+  - <xref
+  href="word!Word.Interfaces.ShapeTextWrapUpdateData#side:member">Word.Interfaces.ShapeTextWrapUpdateData.side</xref>
 
-  - <xref uid="word!Word.ShapeTextWrap#side:member"
-  alttext="Word.ShapeTextWrap.side" />
+  - <xref
+  href="word!Word.ShapeTextWrap#side:member">Word.ShapeTextWrap.side</xref>
 
   #### Examples
 

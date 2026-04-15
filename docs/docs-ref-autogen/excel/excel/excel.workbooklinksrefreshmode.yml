@@ -13,13 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#workbookLinksRefreshMode:member"
-  alttext="Excel.Interfaces.LinkedWorkbookCollectionUpdateData.workbookLinksRefreshMode"
-  />
+  href="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#workbookLinksRefreshMode:member">Excel.Interfaces.LinkedWorkbookCollectionUpdateData.workbookLinksRefreshMode</xref>
 
   - <xref
-  uid="excel!Excel.LinkedWorkbookCollection#workbookLinksRefreshMode:member"
-  alttext="Excel.LinkedWorkbookCollection.workbookLinksRefreshMode" />
+  href="excel!Excel.LinkedWorkbookCollection#workbookLinksRefreshMode:member">Excel.LinkedWorkbookCollection.workbookLinksRefreshMode</xref>
 
 isPreview: false
 isDeprecated: false

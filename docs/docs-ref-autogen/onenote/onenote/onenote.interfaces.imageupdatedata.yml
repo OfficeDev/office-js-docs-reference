@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentUpdateData#image:member"
-  alttext="OneNote.Interfaces.PageContentUpdateData.image" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageContentUpdateData#image:member">OneNote.Interfaces.PageContentUpdateData.image</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData#image:member"
-  alttext="OneNote.Interfaces.ParagraphUpdateData.image" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphUpdateData#image:member">OneNote.Interfaces.ParagraphUpdateData.image</xref>
 
 isPreview: false
 isDeprecated: false

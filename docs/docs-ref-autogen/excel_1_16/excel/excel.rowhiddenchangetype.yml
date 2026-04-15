@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member"
-  alttext="Excel.WorksheetRowHiddenChangedEventArgs.changeType" />
+  - <xref
+  href="excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member">Excel.WorksheetRowHiddenChangedEventArgs.changeType</xref>
 
 isPreview: false
 isDeprecated: false

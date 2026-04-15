@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartPoint#format:member"
-  alttext="Excel.ChartPoint.format" />
+  - <xref
+  href="excel!Excel.ChartPoint#format:member">Excel.ChartPoint.format</xref>
 
 isPreview: false
 isDeprecated: false

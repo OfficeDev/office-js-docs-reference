@@ -52,17 +52,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#getSelectedDataAsync:member(10)"
-  alttext="Office.Document.getSelectedDataAsync" />
+  - <xref
+  href="office!Office.Document#getSelectedDataAsync:member(10)">Office.Document.getSelectedDataAsync</xref>
 
-  - <xref uid="office!Office.GetBindingDataOptions#coercionType:member"
-  alttext="Office.GetBindingDataOptions.coercionType" />
+  - <xref
+  href="office!Office.GetBindingDataOptions#coercionType:member">Office.GetBindingDataOptions.coercionType</xref>
 
-  - <xref uid="office!Office.SetBindingDataOptions#coercionType:member"
-  alttext="Office.SetBindingDataOptions.coercionType" />
+  - <xref
+  href="office!Office.SetBindingDataOptions#coercionType:member">Office.SetBindingDataOptions.coercionType</xref>
 
-  - <xref uid="office!Office.SetSelectedDataOptions#coercionType:member"
-  alttext="Office.SetSelectedDataOptions.coercionType" />
+  - <xref
+  href="office!Office.SetSelectedDataOptions#coercionType:member">Office.SetSelectedDataOptions.coercionType</xref>
 
   #### Examples
 

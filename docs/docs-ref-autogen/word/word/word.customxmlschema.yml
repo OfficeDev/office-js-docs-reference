@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlSchemaCollection#items:member"
-  alttext="Word.CustomXmlSchemaCollection.items" />
+  - <xref
+  href="word!Word.CustomXmlSchemaCollection#items:member">Word.CustomXmlSchemaCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

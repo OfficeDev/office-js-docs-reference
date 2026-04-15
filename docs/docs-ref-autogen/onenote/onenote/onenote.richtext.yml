@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Paragraph#richText:member"
-  alttext="OneNote.Paragraph.richText" />
+  - <xref
+  href="onenote!OneNote.Paragraph#richText:member">OneNote.Paragraph.richText</xref>
 
 isPreview: false
 isDeprecated: false

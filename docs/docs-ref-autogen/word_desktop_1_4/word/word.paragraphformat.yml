@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ConditionalStyle#paragraphFormat:member"
-  alttext="Word.ConditionalStyle.paragraphFormat" />
+  - <xref
+  href="word!Word.ConditionalStyle#paragraphFormat:member">Word.ConditionalStyle.paragraphFormat</xref>
 
-  - <xref uid="word!Word.Style#paragraphFormat:member"
-  alttext="Word.Style.paragraphFormat" />
+  - <xref
+  href="word!Word.Style#paragraphFormat:member">Word.Style.paragraphFormat</xref>
 
   #### Examples
 

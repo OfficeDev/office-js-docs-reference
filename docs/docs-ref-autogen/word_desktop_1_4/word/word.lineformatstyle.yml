@@ -12,14 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#style:member"
-  alttext="Word.Interfaces.LineFormatData.style" />
+  - <xref
+  href="word!Word.Interfaces.LineFormatData#style:member">Word.Interfaces.LineFormatData.style</xref>
 
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#style:member"
-  alttext="Word.Interfaces.LineFormatUpdateData.style" />
+  - <xref
+  href="word!Word.Interfaces.LineFormatUpdateData#style:member">Word.Interfaces.LineFormatUpdateData.style</xref>
 
-  - <xref uid="word!Word.LineFormat#style:member"
-  alttext="Word.LineFormat.style" />
+  - <xref href="word!Word.LineFormat#style:member">Word.LineFormat.style</xref>
 
 isPreview: false
 isDeprecated: false

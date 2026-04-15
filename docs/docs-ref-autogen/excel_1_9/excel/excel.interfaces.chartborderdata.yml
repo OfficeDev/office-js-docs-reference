@@ -10,30 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatData#border:member"
-  alttext="Excel.Interfaces.ChartAreaFormatData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData#border:member"
-  alttext="Excel.Interfaces.ChartAxisTitleFormatData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData#border:member"
-  alttext="Excel.Interfaces.ChartDataLabelFormatData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatData#border:member"
-  alttext="Excel.Interfaces.ChartLegendFormatData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaFormatData#border:member"
-  alttext="Excel.Interfaces.ChartPlotAreaFormatData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartPointFormatData#border:member"
-  alttext="Excel.Interfaces.ChartPointFormatData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatData#border:member"
-  alttext="Excel.Interfaces.ChartTitleFormatData.border" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatData#border:member">Excel.Interfaces.ChartAreaFormatData.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member"
-  alttext="Excel.Interfaces.ChartTrendlineLabelFormatData.border" />
+  href="excel!Excel.Interfaces.ChartAxisTitleFormatData#border:member">Excel.Interfaces.ChartAxisTitleFormatData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartDataLabelFormatData#border:member">Excel.Interfaces.ChartDataLabelFormatData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartLegendFormatData#border:member">Excel.Interfaces.ChartLegendFormatData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartPlotAreaFormatData#border:member">Excel.Interfaces.ChartPlotAreaFormatData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartPointFormatData#border:member">Excel.Interfaces.ChartPointFormatData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleFormatData#border:member">Excel.Interfaces.ChartTitleFormatData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member">Excel.Interfaces.ChartTrendlineLabelFormatData.border</xref>
 
 isPreview: false
 isDeprecated: false

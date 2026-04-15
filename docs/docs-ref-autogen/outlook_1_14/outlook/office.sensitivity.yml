@@ -28,8 +28,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#sensitivity:member"
-  alttext="Office.AppointmentCompose.sensitivity" />
+  - <xref
+  href="outlook!Office.AppointmentCompose#sensitivity:member">Office.AppointmentCompose.sensitivity</xref>
 
 isPreview: false
 isDeprecated: false

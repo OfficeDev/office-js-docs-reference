@@ -10,23 +10,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AddBindingFromPromptOptions#sampleData:member"
-  alttext="Office.AddBindingFromPromptOptions.sampleData" />
+  - <xref
+  href="office!Office.AddBindingFromPromptOptions#sampleData:member">Office.AddBindingFromPromptOptions.sampleData</xref>
 
-  - <xref uid="office!Office.Binding#setDataAsync:member(1)"
-  alttext="Office.Binding.setDataAsync" />
+  - <xref
+  href="office!Office.Binding#setDataAsync:member(1)">Office.Binding.setDataAsync</xref>
 
-  - <xref uid="office!Office.Document#getSelectedDataAsync:member(2)"
-  alttext="Office.Document.getSelectedDataAsync" />
+  - <xref
+  href="office!Office.Document#getSelectedDataAsync:member(2)">Office.Document.getSelectedDataAsync</xref>
 
-  - <xref uid="office!Office.Document#setSelectedDataAsync:member(1)"
-  alttext="Office.Document.setSelectedDataAsync" />
+  - <xref
+  href="office!Office.Document#setSelectedDataAsync:member(1)">Office.Document.setSelectedDataAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#addColumnsAsync:member(1)"
-  alttext="Office.TableBinding.addColumnsAsync" />
+  - <xref
+  href="office!Office.TableBinding#addColumnsAsync:member(1)">Office.TableBinding.addColumnsAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#addRowsAsync:member(1)"
-  alttext="Office.TableBinding.addRowsAsync" />
+  - <xref
+  href="office!Office.TableBinding#addRowsAsync:member(1)">Office.TableBinding.addRowsAsync</xref>
 
 isPreview: false
 isDeprecated: false

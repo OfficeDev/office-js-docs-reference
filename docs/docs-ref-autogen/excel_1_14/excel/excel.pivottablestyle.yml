@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotTableStyleCollection#items:member"
-  alttext="Excel.PivotTableStyleCollection.items" />
+  - <xref
+  href="excel!Excel.PivotTableStyleCollection#items:member">Excel.PivotTableStyleCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

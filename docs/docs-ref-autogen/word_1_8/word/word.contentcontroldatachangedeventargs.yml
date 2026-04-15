@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#onDataChanged:member"
-  alttext="Word.ContentControl.onDataChanged" />
+  - <xref
+  href="word!Word.ContentControl#onDataChanged:member">Word.ContentControl.onDataChanged</xref>
 
   #### Examples
 

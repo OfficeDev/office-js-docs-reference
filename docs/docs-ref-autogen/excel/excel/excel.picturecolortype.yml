@@ -14,24 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.HeaderFooterPicture#colorType:member"
-  alttext="Excel.HeaderFooterPicture.colorType" />
+  - <xref
+  href="excel!Excel.HeaderFooterPicture#colorType:member">Excel.HeaderFooterPicture.colorType</xref>
 
-  - <xref uid="excel!Excel.Image#colorType:member"
-  alttext="Excel.Image.colorType" />
-
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterPictureData#colorType:member"
-  alttext="Excel.Interfaces.HeaderFooterPictureData.colorType" />
+  - <xref href="excel!Excel.Image#colorType:member">Excel.Image.colorType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterPictureUpdateData#colorType:member"
-  alttext="Excel.Interfaces.HeaderFooterPictureUpdateData.colorType" />
+  href="excel!Excel.Interfaces.HeaderFooterPictureData#colorType:member">Excel.Interfaces.HeaderFooterPictureData.colorType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ImageData#colorType:member"
-  alttext="Excel.Interfaces.ImageData.colorType" />
+  - <xref
+  href="excel!Excel.Interfaces.HeaderFooterPictureUpdateData#colorType:member">Excel.Interfaces.HeaderFooterPictureUpdateData.colorType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ImageUpdateData#colorType:member"
-  alttext="Excel.Interfaces.ImageUpdateData.colorType" />
+  - <xref
+  href="excel!Excel.Interfaces.ImageData#colorType:member">Excel.Interfaces.ImageData.colorType</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ImageUpdateData#colorType:member">Excel.Interfaces.ImageUpdateData.colorType</xref>
 
 isPreview: false
 isDeprecated: false

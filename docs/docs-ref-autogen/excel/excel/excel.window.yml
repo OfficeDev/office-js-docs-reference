@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#activeWindow:member"
-  alttext="Excel.Application.activeWindow" />
+  - <xref
+  href="excel!Excel.Application#activeWindow:member">Excel.Application.activeWindow</xref>
 
-  - <xref uid="excel!Excel.WindowCollection#items:member"
-  alttext="Excel.WindowCollection.items" />
+  - <xref
+  href="excel!Excel.WindowCollection#items:member">Excel.WindowCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

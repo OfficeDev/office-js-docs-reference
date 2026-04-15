@@ -11,9 +11,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#positiveFormat:member"
-  alttext="Excel.Interfaces.DataBarConditionalFormatUpdateData.positiveFormat"
-  />
+  href="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#positiveFormat:member">Excel.Interfaces.DataBarConditionalFormatUpdateData.positiveFormat</xref>
 
 isPreview: false
 isDeprecated: false

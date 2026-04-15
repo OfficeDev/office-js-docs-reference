@@ -12,17 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.AutoFilter#criteria:member"
-  alttext="Excel.AutoFilter.criteria" />
+  - <xref
+  href="excel!Excel.AutoFilter#criteria:member">Excel.AutoFilter.criteria</xref>
 
-  - <xref uid="excel!Excel.Filter#criteria:member"
-  alttext="Excel.Filter.criteria" />
+  - <xref href="excel!Excel.Filter#criteria:member">Excel.Filter.criteria</xref>
 
-  - <xref uid="excel!Excel.Interfaces.AutoFilterData#criteria:member"
-  alttext="Excel.Interfaces.AutoFilterData.criteria" />
+  - <xref
+  href="excel!Excel.Interfaces.AutoFilterData#criteria:member">Excel.Interfaces.AutoFilterData.criteria</xref>
 
-  - <xref uid="excel!Excel.Interfaces.FilterData#criteria:member"
-  alttext="Excel.Interfaces.FilterData.criteria" />
+  - <xref
+  href="excel!Excel.Interfaces.FilterData#criteria:member">Excel.Interfaces.FilterData.criteria</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotField#items:member"
-  alttext="Excel.PivotField.items" />
+  - <xref
+  href="excel!Excel.PivotField#items:member">Excel.PivotField.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,23 +13,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#chartType:member"
-  alttext="Excel.Chart.chartType" />
+  - <xref href="excel!Excel.Chart#chartType:member">Excel.Chart.chartType</xref>
 
-  - <xref uid="excel!Excel.ChartSeries#chartType:member"
-  alttext="Excel.ChartSeries.chartType" />
+  - <xref
+  href="excel!Excel.ChartSeries#chartType:member">Excel.ChartSeries.chartType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#chartType:member"
-  alttext="Excel.Interfaces.ChartData.chartType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartData#chartType:member">Excel.Interfaces.ChartData.chartType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#chartType:member"
-  alttext="Excel.Interfaces.ChartSeriesData.chartType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesData#chartType:member">Excel.Interfaces.ChartSeriesData.chartType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.chartType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member">Excel.Interfaces.ChartSeriesUpdateData.chartType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#chartType:member"
-  alttext="Excel.Interfaces.ChartUpdateData.chartType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartUpdateData#chartType:member">Excel.Interfaces.ChartUpdateData.chartType</xref>
 
   #### Examples
 

@@ -13,33 +13,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControlAddedEventArgs#eventType:member"
-  alttext="Word.ContentControlAddedEventArgs.eventType" />
-
-  - <xref uid="word!Word.ContentControlDataChangedEventArgs#eventType:member"
-  alttext="Word.ContentControlDataChangedEventArgs.eventType" />
-
-  - <xref uid="word!Word.ContentControlDeletedEventArgs#eventType:member"
-  alttext="Word.ContentControlDeletedEventArgs.eventType" />
-
-  - <xref uid="word!Word.ContentControlEnteredEventArgs#eventType:member"
-  alttext="Word.ContentControlEnteredEventArgs.eventType" />
-
-  - <xref uid="word!Word.ContentControlExitedEventArgs#eventType:member"
-  alttext="Word.ContentControlExitedEventArgs.eventType" />
+  - <xref
+  href="word!Word.ContentControlAddedEventArgs#eventType:member">Word.ContentControlAddedEventArgs.eventType</xref>
 
   - <xref
-  uid="word!Word.ContentControlSelectionChangedEventArgs#eventType:member"
-  alttext="Word.ContentControlSelectionChangedEventArgs.eventType" />
+  href="word!Word.ContentControlDataChangedEventArgs#eventType:member">Word.ContentControlDataChangedEventArgs.eventType</xref>
 
-  - <xref uid="word!Word.ParagraphAddedEventArgs#type:member"
-  alttext="Word.ParagraphAddedEventArgs.type" />
+  - <xref
+  href="word!Word.ContentControlDeletedEventArgs#eventType:member">Word.ContentControlDeletedEventArgs.eventType</xref>
 
-  - <xref uid="word!Word.ParagraphChangedEventArgs#type:member"
-  alttext="Word.ParagraphChangedEventArgs.type" />
+  - <xref
+  href="word!Word.ContentControlEnteredEventArgs#eventType:member">Word.ContentControlEnteredEventArgs.eventType</xref>
 
-  - <xref uid="word!Word.ParagraphDeletedEventArgs#type:member"
-  alttext="Word.ParagraphDeletedEventArgs.type" />
+  - <xref
+  href="word!Word.ContentControlExitedEventArgs#eventType:member">Word.ContentControlExitedEventArgs.eventType</xref>
+
+  - <xref
+  href="word!Word.ContentControlSelectionChangedEventArgs#eventType:member">Word.ContentControlSelectionChangedEventArgs.eventType</xref>
+
+  - <xref
+  href="word!Word.ParagraphAddedEventArgs#type:member">Word.ParagraphAddedEventArgs.type</xref>
+
+  - <xref
+  href="word!Word.ParagraphChangedEventArgs#type:member">Word.ParagraphChangedEventArgs.type</xref>
+
+  - <xref
+  href="word!Word.ParagraphDeletedEventArgs#type:member">Word.ParagraphDeletedEventArgs.type</xref>
 
   #### Examples
 

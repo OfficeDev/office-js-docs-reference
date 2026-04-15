@@ -19,11 +19,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#convertToLocalClientTime:member(1)"
-  alttext="Office.Mailbox.convertToLocalClientTime" />
+  - <xref
+  href="outlook!Office.Mailbox#convertToLocalClientTime:member(1)">Office.Mailbox.convertToLocalClientTime</xref>
 
-  - <xref uid="outlook!Office.Mailbox#convertToUtcClientTime:member(1)"
-  alttext="Office.Mailbox.convertToUtcClientTime" />
+  - <xref
+  href="outlook!Office.Mailbox#convertToUtcClientTime:member(1)">Office.Mailbox.convertToUtcClientTime</xref>
 
   #### Examples
 

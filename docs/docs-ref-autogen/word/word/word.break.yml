@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BreakCollection#items:member"
-  alttext="Word.BreakCollection.items" />
+  - <xref
+  href="word!Word.BreakCollection#items:member">Word.BreakCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

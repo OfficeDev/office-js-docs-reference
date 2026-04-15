@@ -13,8 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.WorkbookLoadOptions#linkedWorkbooks:member"
-  alttext="Excel.Interfaces.WorkbookLoadOptions.linkedWorkbooks" />
+  href="excel!Excel.Interfaces.WorkbookLoadOptions#linkedWorkbooks:member">Excel.Interfaces.WorkbookLoadOptions.linkedWorkbooks</xref>
 
 isPreview: false
 isDeprecated: false

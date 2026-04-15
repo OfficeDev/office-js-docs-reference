@@ -13,15 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#calculationMode:member"
-  alttext="Excel.Application.calculationMode" />
-
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#calculationMode:member"
-  alttext="Excel.Interfaces.ApplicationData.calculationMode" />
+  - <xref
+  href="excel!Excel.Application#calculationMode:member">Excel.Application.calculationMode</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member"
-  alttext="Excel.Interfaces.ApplicationUpdateData.calculationMode" />
+  href="excel!Excel.Interfaces.ApplicationData#calculationMode:member">Excel.Interfaces.ApplicationData.calculationMode</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member">Excel.Interfaces.ApplicationUpdateData.calculationMode</xref>
 
   #### Examples
 

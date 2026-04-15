@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData#table:member"
-  alttext="OneNote.Interfaces.ParagraphUpdateData.table" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphUpdateData#table:member">OneNote.Interfaces.ParagraphUpdateData.table</xref>
 
 isPreview: false
 isDeprecated: false

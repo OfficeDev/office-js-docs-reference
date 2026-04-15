@@ -13,33 +13,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TableCellData#verticalAlignment:member"
-  alttext="Word.Interfaces.TableCellData.verticalAlignment" />
+  - <xref
+  href="word!Word.Interfaces.TableCellData#verticalAlignment:member">Word.Interfaces.TableCellData.verticalAlignment</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member"
-  alttext="Word.Interfaces.TableCellUpdateData.verticalAlignment" />
+  href="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member">Word.Interfaces.TableCellUpdateData.verticalAlignment</xref>
 
-  - <xref uid="word!Word.Interfaces.TableData#verticalAlignment:member"
-  alttext="Word.Interfaces.TableData.verticalAlignment" />
+  - <xref
+  href="word!Word.Interfaces.TableData#verticalAlignment:member">Word.Interfaces.TableData.verticalAlignment</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowData#verticalAlignment:member"
-  alttext="Word.Interfaces.TableRowData.verticalAlignment" />
+  - <xref
+  href="word!Word.Interfaces.TableRowData#verticalAlignment:member">Word.Interfaces.TableRowData.verticalAlignment</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member"
-  alttext="Word.Interfaces.TableRowUpdateData.verticalAlignment" />
+  - <xref
+  href="word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member">Word.Interfaces.TableRowUpdateData.verticalAlignment</xref>
 
-  - <xref uid="word!Word.Interfaces.TableUpdateData#verticalAlignment:member"
-  alttext="Word.Interfaces.TableUpdateData.verticalAlignment" />
+  - <xref
+  href="word!Word.Interfaces.TableUpdateData#verticalAlignment:member">Word.Interfaces.TableUpdateData.verticalAlignment</xref>
 
-  - <xref uid="word!Word.Table#verticalAlignment:member"
-  alttext="Word.Table.verticalAlignment" />
+  - <xref
+  href="word!Word.Table#verticalAlignment:member">Word.Table.verticalAlignment</xref>
 
-  - <xref uid="word!Word.TableCell#verticalAlignment:member"
-  alttext="Word.TableCell.verticalAlignment" />
+  - <xref
+  href="word!Word.TableCell#verticalAlignment:member">Word.TableCell.verticalAlignment</xref>
 
-  - <xref uid="word!Word.TableRow#verticalAlignment:member"
-  alttext="Word.TableRow.verticalAlignment" />
+  - <xref
+  href="word!Word.TableRow#verticalAlignment:member">Word.TableRow.verticalAlignment</xref>
 
   #### Examples
 

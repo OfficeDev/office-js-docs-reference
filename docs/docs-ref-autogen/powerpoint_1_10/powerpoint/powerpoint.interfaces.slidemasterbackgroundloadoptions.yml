@@ -14,12 +14,10 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#background:member"
-  alttext="PowerPoint.Interfaces.SlideMasterCollectionLoadOptions.background" />
+  href="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#background:member">PowerPoint.Interfaces.SlideMasterCollectionLoadOptions.background</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#background:member"
-  alttext="PowerPoint.Interfaces.SlideMasterLoadOptions.background" />
+  href="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#background:member">PowerPoint.Interfaces.SlideMasterLoadOptions.background</xref>
 
 isPreview: false
 isDeprecated: false

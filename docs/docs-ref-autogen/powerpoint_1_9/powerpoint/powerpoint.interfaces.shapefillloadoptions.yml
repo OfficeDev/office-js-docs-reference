@@ -14,23 +14,19 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill" />
-
-  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.ShapeLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member">PowerPoint.Interfaces.ShapeLoadOptions.fill</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.TableCellCollectionLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#fill:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.fill</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.TableCellLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#fill:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.fill</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#fill:member">PowerPoint.Interfaces.TableCellLoadOptions.fill</xref>
 
 isPreview: false
 isDeprecated: false

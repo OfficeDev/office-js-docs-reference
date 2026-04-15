@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#glow:member" alttext="Word.Font.glow" />
+  - <xref href="word!Word.Font#glow:member">Word.Font.glow</xref>
 
 isPreview: false
 isDeprecated: false

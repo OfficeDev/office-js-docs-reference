@@ -13,59 +13,59 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#onCommentAdded:member"
-  alttext="Word.Body.onCommentAdded" />
+  - <xref
+  href="word!Word.Body#onCommentAdded:member">Word.Body.onCommentAdded</xref>
 
-  - <xref uid="word!Word.Body#onCommentChanged:member"
-  alttext="Word.Body.onCommentChanged" />
+  - <xref
+  href="word!Word.Body#onCommentChanged:member">Word.Body.onCommentChanged</xref>
 
-  - <xref uid="word!Word.Body#onCommentDeleted:member"
-  alttext="Word.Body.onCommentDeleted" />
+  - <xref
+  href="word!Word.Body#onCommentDeleted:member">Word.Body.onCommentDeleted</xref>
 
-  - <xref uid="word!Word.Body#onCommentDeselected:member"
-  alttext="Word.Body.onCommentDeselected" />
+  - <xref
+  href="word!Word.Body#onCommentDeselected:member">Word.Body.onCommentDeselected</xref>
 
-  - <xref uid="word!Word.Body#onCommentSelected:member"
-  alttext="Word.Body.onCommentSelected" />
+  - <xref
+  href="word!Word.Body#onCommentSelected:member">Word.Body.onCommentSelected</xref>
 
-  - <xref uid="word!Word.ContentControl#onCommentAdded:member"
-  alttext="Word.ContentControl.onCommentAdded" />
+  - <xref
+  href="word!Word.ContentControl#onCommentAdded:member">Word.ContentControl.onCommentAdded</xref>
 
-  - <xref uid="word!Word.ContentControl#onCommentChanged:member"
-  alttext="Word.ContentControl.onCommentChanged" />
+  - <xref
+  href="word!Word.ContentControl#onCommentChanged:member">Word.ContentControl.onCommentChanged</xref>
 
-  - <xref uid="word!Word.ContentControl#onCommentDeselected:member"
-  alttext="Word.ContentControl.onCommentDeselected" />
+  - <xref
+  href="word!Word.ContentControl#onCommentDeselected:member">Word.ContentControl.onCommentDeselected</xref>
 
-  - <xref uid="word!Word.ContentControl#onCommentSelected:member"
-  alttext="Word.ContentControl.onCommentSelected" />
+  - <xref
+  href="word!Word.ContentControl#onCommentSelected:member">Word.ContentControl.onCommentSelected</xref>
 
-  - <xref uid="word!Word.Paragraph#onCommentAdded:member"
-  alttext="Word.Paragraph.onCommentAdded" />
+  - <xref
+  href="word!Word.Paragraph#onCommentAdded:member">Word.Paragraph.onCommentAdded</xref>
 
-  - <xref uid="word!Word.Paragraph#onCommentChanged:member"
-  alttext="Word.Paragraph.onCommentChanged" />
+  - <xref
+  href="word!Word.Paragraph#onCommentChanged:member">Word.Paragraph.onCommentChanged</xref>
 
-  - <xref uid="word!Word.Paragraph#onCommentDeleted:member"
-  alttext="Word.Paragraph.onCommentDeleted" />
+  - <xref
+  href="word!Word.Paragraph#onCommentDeleted:member">Word.Paragraph.onCommentDeleted</xref>
 
-  - <xref uid="word!Word.Paragraph#onCommentDeselected:member"
-  alttext="Word.Paragraph.onCommentDeselected" />
+  - <xref
+  href="word!Word.Paragraph#onCommentDeselected:member">Word.Paragraph.onCommentDeselected</xref>
 
-  - <xref uid="word!Word.Paragraph#onCommentSelected:member"
-  alttext="Word.Paragraph.onCommentSelected" />
+  - <xref
+  href="word!Word.Paragraph#onCommentSelected:member">Word.Paragraph.onCommentSelected</xref>
 
-  - <xref uid="word!Word.Range#onCommentAdded:member"
-  alttext="Word.Range.onCommentAdded" />
+  - <xref
+  href="word!Word.Range#onCommentAdded:member">Word.Range.onCommentAdded</xref>
 
-  - <xref uid="word!Word.Range#onCommentChanged:member"
-  alttext="Word.Range.onCommentChanged" />
+  - <xref
+  href="word!Word.Range#onCommentChanged:member">Word.Range.onCommentChanged</xref>
 
-  - <xref uid="word!Word.Range#onCommentDeselected:member"
-  alttext="Word.Range.onCommentDeselected" />
+  - <xref
+  href="word!Word.Range#onCommentDeselected:member">Word.Range.onCommentDeselected</xref>
 
-  - <xref uid="word!Word.Range#onCommentSelected:member"
-  alttext="Word.Range.onCommentSelected" />
+  - <xref
+  href="word!Word.Range#onCommentSelected:member">Word.Range.onCommentSelected</xref>
 
   #### Examples
 

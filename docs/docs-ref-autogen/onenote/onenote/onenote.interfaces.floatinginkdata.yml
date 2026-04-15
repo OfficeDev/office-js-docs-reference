@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member"
-  alttext="OneNote.Interfaces.InkStrokeData.floatingInk" />
+  - <xref
+  href="onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member">OneNote.Interfaces.InkStrokeData.floatingInk</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentData#ink:member"
-  alttext="OneNote.Interfaces.PageContentData.ink" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageContentData#ink:member">OneNote.Interfaces.PageContentData.ink</xref>
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsData#format:member"
-  alttext="Excel.Interfaces.ChartErrorBarsData.format" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartErrorBarsData#format:member">Excel.Interfaces.ChartErrorBarsData.format</xref>
 
 isPreview: false
 isDeprecated: false

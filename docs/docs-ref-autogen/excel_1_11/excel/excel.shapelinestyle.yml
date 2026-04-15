@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLineFormatData#style:member"
-  alttext="Excel.Interfaces.ShapeLineFormatData.style" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeLineFormatData#style:member">Excel.Interfaces.ShapeLineFormatData.style</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLineFormatUpdateData#style:member"
-  alttext="Excel.Interfaces.ShapeLineFormatUpdateData.style" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeLineFormatUpdateData#style:member">Excel.Interfaces.ShapeLineFormatUpdateData.style</xref>
 
-  - <xref uid="excel!Excel.ShapeLineFormat#style:member"
-  alttext="Excel.ShapeLineFormat.style" />
+  - <xref
+  href="excel!Excel.ShapeLineFormat#style:member">Excel.ShapeLineFormat.style</xref>
 
 isPreview: false
 isDeprecated: false

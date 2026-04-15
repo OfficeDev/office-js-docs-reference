@@ -17,51 +17,50 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#styleBuiltIn:member"
-  alttext="Word.Body.styleBuiltIn" />
-
-  - <xref uid="word!Word.ContentControl#styleBuiltIn:member"
-  alttext="Word.ContentControl.styleBuiltIn" />
-
-  - <xref uid="word!Word.Interfaces.BodyData#styleBuiltIn:member"
-  alttext="Word.Interfaces.BodyData.styleBuiltIn" />
-
-  - <xref uid="word!Word.Interfaces.BodyUpdateData#styleBuiltIn:member"
-  alttext="Word.Interfaces.BodyUpdateData.styleBuiltIn" />
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#styleBuiltIn:member"
-  alttext="Word.Interfaces.ContentControlData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Body#styleBuiltIn:member">Word.Body.styleBuiltIn</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#styleBuiltIn:member"
-  alttext="Word.Interfaces.ContentControlUpdateData.styleBuiltIn" />
+  href="word!Word.ContentControl#styleBuiltIn:member">Word.ContentControl.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#styleBuiltIn:member"
-  alttext="Word.Interfaces.ParagraphData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#styleBuiltIn:member">Word.Interfaces.BodyData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#styleBuiltIn:member"
-  alttext="Word.Interfaces.ParagraphUpdateData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.BodyUpdateData#styleBuiltIn:member">Word.Interfaces.BodyUpdateData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#styleBuiltIn:member"
-  alttext="Word.Interfaces.RangeData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#styleBuiltIn:member">Word.Interfaces.ContentControlData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member"
-  alttext="Word.Interfaces.RangeUpdateData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlUpdateData#styleBuiltIn:member">Word.Interfaces.ContentControlUpdateData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Interfaces.TableData#styleBuiltIn:member"
-  alttext="Word.Interfaces.TableData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphData#styleBuiltIn:member">Word.Interfaces.ParagraphData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Interfaces.TableUpdateData#styleBuiltIn:member"
-  alttext="Word.Interfaces.TableUpdateData.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphUpdateData#styleBuiltIn:member">Word.Interfaces.ParagraphUpdateData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Paragraph#styleBuiltIn:member"
-  alttext="Word.Paragraph.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#styleBuiltIn:member">Word.Interfaces.RangeData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Range#styleBuiltIn:member"
-  alttext="Word.Range.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member">Word.Interfaces.RangeUpdateData.styleBuiltIn</xref>
 
-  - <xref uid="word!Word.Table#styleBuiltIn:member"
-  alttext="Word.Table.styleBuiltIn" />
+  - <xref
+  href="word!Word.Interfaces.TableData#styleBuiltIn:member">Word.Interfaces.TableData.styleBuiltIn</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableUpdateData#styleBuiltIn:member">Word.Interfaces.TableUpdateData.styleBuiltIn</xref>
+
+  - <xref
+  href="word!Word.Paragraph#styleBuiltIn:member">Word.Paragraph.styleBuiltIn</xref>
+
+  - <xref
+  href="word!Word.Range#styleBuiltIn:member">Word.Range.styleBuiltIn</xref>
+
+  - <xref
+  href="word!Word.Table#styleBuiltIn:member">Word.Table.styleBuiltIn</xref>
 
   #### Examples
 

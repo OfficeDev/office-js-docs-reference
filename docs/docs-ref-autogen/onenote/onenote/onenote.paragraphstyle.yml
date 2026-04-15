@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.RichTextData#style:member"
-  alttext="OneNote.Interfaces.RichTextData.style" />
+  - <xref
+  href="onenote!OneNote.Interfaces.RichTextData#style:member">OneNote.Interfaces.RichTextData.style</xref>
 
-  - <xref uid="onenote!OneNote.RichText#style:member"
-  alttext="OneNote.RichText.style" />
+  - <xref
+  href="onenote!OneNote.RichText#style:member">OneNote.RichText.style</xref>
 
 isPreview: false
 isDeprecated: false

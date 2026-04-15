@@ -10,24 +10,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#inlinePictures:member"
-  alttext="Word.Interfaces.BodyData.inlinePictures" />
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#inlinePictures:member"
-  alttext="Word.Interfaces.ContentControlData.inlinePictures" />
-
-  - <xref uid="word!Word.Interfaces.InlinePictureCollectionData#items:member"
-  alttext="Word.Interfaces.InlinePictureCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#inlinePictures:member">Word.Interfaces.BodyData.inlinePictures</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.InlinePictureCollectionUpdateData.items" />
+  href="word!Word.Interfaces.ContentControlData#inlinePictures:member">Word.Interfaces.ContentControlData.inlinePictures</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#inlinePictures:member"
-  alttext="Word.Interfaces.ParagraphData.inlinePictures" />
+  - <xref
+  href="word!Word.Interfaces.InlinePictureCollectionData#items:member">Word.Interfaces.InlinePictureCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#inlinePictures:member"
-  alttext="Word.Interfaces.RangeData.inlinePictures" />
+  - <xref
+  href="word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member">Word.Interfaces.InlinePictureCollectionUpdateData.items</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ParagraphData#inlinePictures:member">Word.Interfaces.ParagraphData.inlinePictures</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeData#inlinePictures:member">Word.Interfaces.RangeData.inlinePictures</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,16 +14,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.SlideBackgroundLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundLoadOptions#fill:member">PowerPoint.Interfaces.SlideBackgroundLoadOptions.fill</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#fill:member">PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions.fill</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions#fill:member">PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions.fill</xref>
 
 isPreview: false
 isDeprecated: false

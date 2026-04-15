@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTaskChange#type:member"
-  alttext="Excel.DocumentTaskChange.type" />
+  - <xref
+  href="excel!Excel.DocumentTaskChange#type:member">Excel.DocumentTaskChange.type</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#type:member"
-  alttext="Excel.Interfaces.DocumentTaskChangeData.type" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskChangeData#type:member">Excel.Interfaces.DocumentTaskChangeData.type</xref>
 
 isPreview: true
 isDeprecated: false

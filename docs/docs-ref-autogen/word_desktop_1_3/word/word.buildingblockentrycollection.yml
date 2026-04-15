@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Template#buildingBlockEntries:member"
-  alttext="Word.Template.buildingBlockEntries" />
+  - <xref
+  href="word!Word.Template#buildingBlockEntries:member">Word.Template.buildingBlockEntries</xref>
 
 isPreview: false
 isDeprecated: false

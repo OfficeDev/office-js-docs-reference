@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyCollectionData#items:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyCollectionData.items" />
+  href="excel!Excel.Interfaces.DataPivotHierarchyCollectionData#items:member">Excel.Interfaces.DataPivotHierarchyCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData#items:member">Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PivotTableData#dataHierarchies:member"
-  alttext="Excel.Interfaces.PivotTableData.dataHierarchies" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotTableData#dataHierarchies:member">Excel.Interfaces.PivotTableData.dataHierarchies</xref>
 
 isPreview: false
 isDeprecated: false

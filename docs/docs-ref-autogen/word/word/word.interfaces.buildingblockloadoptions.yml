@@ -15,27 +15,19 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#placeholderText:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.placeholderText"
-  />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#placeholderText:member">Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.placeholderText</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#placeholderText:member"
-  alttext="Word.Interfaces.DatePickerContentControlLoadOptions.placeholderText"
-  />
+  href="word!Word.Interfaces.DatePickerContentControlLoadOptions#placeholderText:member">Word.Interfaces.DatePickerContentControlLoadOptions.placeholderText</xref>
 
   - <xref
-  uid="word!Word.Interfaces.GroupContentControlLoadOptions#placeholderText:member"
-  alttext="Word.Interfaces.GroupContentControlLoadOptions.placeholderText" />
+  href="word!Word.Interfaces.GroupContentControlLoadOptions#placeholderText:member">Word.Interfaces.GroupContentControlLoadOptions.placeholderText</xref>
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlLoadOptions#placeholderText:member"
-  alttext="Word.Interfaces.PictureContentControlLoadOptions.placeholderText" />
+  href="word!Word.Interfaces.PictureContentControlLoadOptions#placeholderText:member">Word.Interfaces.PictureContentControlLoadOptions.placeholderText</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#placeholderText:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlLoadOptions.placeholderText"
-  />
+  href="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#placeholderText:member">Word.Interfaces.RepeatingSectionContentControlLoadOptions.placeholderText</xref>
 
 isPreview: false
 isDeprecated: false

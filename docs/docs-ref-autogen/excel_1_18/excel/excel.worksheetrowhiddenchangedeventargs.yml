@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onRowHiddenChanged:member"
-  alttext="Excel.Worksheet.onRowHiddenChanged" />
+  - <xref
+  href="excel!Excel.Worksheet#onRowHiddenChanged:member">Excel.Worksheet.onRowHiddenChanged</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onRowHiddenChanged:member"
-  alttext="Excel.WorksheetCollection.onRowHiddenChanged" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onRowHiddenChanged:member">Excel.WorksheetCollection.onRowHiddenChanged</xref>
 
 isPreview: false
 isDeprecated: false

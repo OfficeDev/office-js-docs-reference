@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#valueTypes:member"
-  alttext="Excel.Interfaces.RangeData.valueTypes" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeData#valueTypes:member">Excel.Interfaces.RangeData.valueTypes</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#valueTypes:member"
-  alttext="Excel.Interfaces.RangeViewData.valueTypes" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeViewData#valueTypes:member">Excel.Interfaces.RangeViewData.valueTypes</xref>
 
-  - <xref uid="excel!Excel.Range#valueTypes:member"
-  alttext="Excel.Range.valueTypes" />
+  - <xref
+  href="excel!Excel.Range#valueTypes:member">Excel.Range.valueTypes</xref>
 
-  - <xref uid="excel!Excel.RangeView#valueTypes:member"
-  alttext="Excel.RangeView.valueTypes" />
+  - <xref
+  href="excel!Excel.RangeView#valueTypes:member">Excel.RangeView.valueTypes</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewLoadOptions#revisionsFilter:member"
-  alttext="Word.Interfaces.ViewLoadOptions.revisionsFilter" />
+  - <xref
+  href="word!Word.Interfaces.ViewLoadOptions#revisionsFilter:member">Word.Interfaces.ViewLoadOptions.revisionsFilter</xref>
 
 isPreview: false
 isDeprecated: false

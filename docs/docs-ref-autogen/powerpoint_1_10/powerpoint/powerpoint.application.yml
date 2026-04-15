@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.RequestContext#application:member"
-  alttext="PowerPoint.RequestContext.application" />
+  - <xref
+  href="powerpoint!PowerPoint.RequestContext#application:member">PowerPoint.RequestContext.application</xref>
 
 isPreview: false
 isDeprecated: false

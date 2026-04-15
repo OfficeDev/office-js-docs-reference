@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#getDataAsync:member(1)"
-  alttext="Office.Binding.getDataAsync" />
+  - <xref
+  href="office!Office.Binding#getDataAsync:member(1)">Office.Binding.getDataAsync</xref>
 
 isPreview: false
 isDeprecated: false

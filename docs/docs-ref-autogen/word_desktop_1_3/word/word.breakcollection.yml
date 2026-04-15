@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Page#breaks:member" alttext="Word.Page.breaks" />
+  - <xref href="word!Word.Page#breaks:member">Word.Page.breaks</xref>
 
 isPreview: false
 isDeprecated: false

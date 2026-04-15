@@ -10,12 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PivotItemCollectionData#items:member"
-  alttext="Excel.Interfaces.PivotItemCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotItemCollectionData#items:member">Excel.Interfaces.PivotItemCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotItemCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.PivotItemCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.PivotItemCollectionUpdateData#items:member">Excel.Interfaces.PivotItemCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockCategoryLoadOptions#type:member"
-  alttext="Word.Interfaces.BuildingBlockCategoryLoadOptions.type" />
+  href="word!Word.Interfaces.BuildingBlockCategoryLoadOptions#type:member">Word.Interfaces.BuildingBlockCategoryLoadOptions.type</xref>
 
-  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#type:member"
-  alttext="Word.Interfaces.BuildingBlockLoadOptions.type" />
+  - <xref
+  href="word!Word.Interfaces.BuildingBlockLoadOptions#type:member">Word.Interfaces.BuildingBlockLoadOptions.type</xref>
 
 isPreview: false
 isDeprecated: false

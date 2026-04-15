@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#dataValidation:member"
-  alttext="Excel.Interfaces.RangeAreasData.dataValidation" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeAreasData#dataValidation:member">Excel.Interfaces.RangeAreasData.dataValidation</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#dataValidation:member"
-  alttext="Excel.Interfaces.RangeData.dataValidation" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeData#dataValidation:member">Excel.Interfaces.RangeData.dataValidation</xref>
 
 isPreview: false
 isDeprecated: false

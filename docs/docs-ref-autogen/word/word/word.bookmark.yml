@@ -17,8 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BookmarkCollection#items:member"
-  alttext="Word.BookmarkCollection.items" />
+  - <xref
+  href="word!Word.BookmarkCollection#items:member">Word.BookmarkCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

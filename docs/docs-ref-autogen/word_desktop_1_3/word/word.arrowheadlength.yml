@@ -12,25 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#beginArrowheadLength:member"
-  alttext="Word.Interfaces.LineFormatData.beginArrowheadLength" />
-
-  - <xref uid="word!Word.Interfaces.LineFormatData#endArrowheadLength:member"
-  alttext="Word.Interfaces.LineFormatData.endArrowheadLength" />
+  - <xref
+  href="word!Word.Interfaces.LineFormatData#beginArrowheadLength:member">Word.Interfaces.LineFormatData.beginArrowheadLength</xref>
 
   - <xref
-  uid="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadLength:member"
-  alttext="Word.Interfaces.LineFormatUpdateData.beginArrowheadLength" />
+  href="word!Word.Interfaces.LineFormatData#endArrowheadLength:member">Word.Interfaces.LineFormatData.endArrowheadLength</xref>
 
   - <xref
-  uid="word!Word.Interfaces.LineFormatUpdateData#endArrowheadLength:member"
-  alttext="Word.Interfaces.LineFormatUpdateData.endArrowheadLength" />
+  href="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadLength:member">Word.Interfaces.LineFormatUpdateData.beginArrowheadLength</xref>
 
-  - <xref uid="word!Word.LineFormat#beginArrowheadLength:member"
-  alttext="Word.LineFormat.beginArrowheadLength" />
+  - <xref
+  href="word!Word.Interfaces.LineFormatUpdateData#endArrowheadLength:member">Word.Interfaces.LineFormatUpdateData.endArrowheadLength</xref>
 
-  - <xref uid="word!Word.LineFormat#endArrowheadLength:member"
-  alttext="Word.LineFormat.endArrowheadLength" />
+  - <xref
+  href="word!Word.LineFormat#beginArrowheadLength:member">Word.LineFormat.beginArrowheadLength</xref>
+
+  - <xref
+  href="word!Word.LineFormat#endArrowheadLength:member">Word.LineFormat.endArrowheadLength</xref>
 
 isPreview: false
 isDeprecated: false

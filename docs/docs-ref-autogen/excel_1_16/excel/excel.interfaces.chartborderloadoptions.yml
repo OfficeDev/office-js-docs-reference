@@ -12,38 +12,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartAreaFormatLoadOptions.border" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#border:member">Excel.Interfaces.ChartAreaFormatLoadOptions.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border" />
+  href="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#border:member">Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartDataLabelFormatLoadOptions.border" />
+  href="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#border:member">Excel.Interfaces.ChartDataLabelFormatLoadOptions.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartDataTableFormatLoadOptions.border" />
+  href="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions#border:member">Excel.Interfaces.ChartDataTableFormatLoadOptions.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartLegendFormatLoadOptions.border" />
+  href="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#border:member">Excel.Interfaces.ChartLegendFormatLoadOptions.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartPointFormatLoadOptions.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartTitleFormatLoadOptions.border" />
+  href="excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#border:member">Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.border" />
+  href="excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member">Excel.Interfaces.ChartPointFormatLoadOptions.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member">Excel.Interfaces.ChartTitleFormatLoadOptions.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions#border:member">Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.border</xref>
 
 isPreview: false
 isDeprecated: false

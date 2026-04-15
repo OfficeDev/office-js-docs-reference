@@ -13,20 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member"
-  alttext="Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages" />
+  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member"
-  alttext="Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages" />
+  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member"
-  alttext="Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage" />
+  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member"
-  alttext="Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages" />
+  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages</xref>
 
 isPreview: false
 isDeprecated: false

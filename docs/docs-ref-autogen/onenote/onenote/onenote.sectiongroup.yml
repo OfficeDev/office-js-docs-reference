@@ -14,20 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Section#parentSectionGroup:member"
-  alttext="OneNote.Section.parentSectionGroup" />
+  - <xref
+  href="onenote!OneNote.Section#parentSectionGroup:member">OneNote.Section.parentSectionGroup</xref>
 
-  - <xref uid="onenote!OneNote.Section#parentSectionGroupOrNull:member"
-  alttext="OneNote.Section.parentSectionGroupOrNull" />
+  - <xref
+  href="onenote!OneNote.Section#parentSectionGroupOrNull:member">OneNote.Section.parentSectionGroupOrNull</xref>
 
-  - <xref uid="onenote!OneNote.SectionGroup#parentSectionGroup:member"
-  alttext="OneNote.SectionGroup.parentSectionGroup" />
+  - <xref
+  href="onenote!OneNote.SectionGroup#parentSectionGroup:member">OneNote.SectionGroup.parentSectionGroup</xref>
 
-  - <xref uid="onenote!OneNote.SectionGroup#parentSectionGroupOrNull:member"
-  alttext="OneNote.SectionGroup.parentSectionGroupOrNull" />
+  - <xref
+  href="onenote!OneNote.SectionGroup#parentSectionGroupOrNull:member">OneNote.SectionGroup.parentSectionGroupOrNull</xref>
 
-  - <xref uid="onenote!OneNote.SectionGroupCollection#items:member"
-  alttext="OneNote.SectionGroupCollection.items" />
+  - <xref
+  href="onenote!OneNote.SectionGroupCollection#items:member">OneNote.SectionGroupCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -10,12 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LinkedWorkbookCollectionData#items:member"
-  alttext="Excel.Interfaces.LinkedWorkbookCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.LinkedWorkbookCollectionData#items:member">Excel.Interfaces.LinkedWorkbookCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.LinkedWorkbookCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member">Excel.Interfaces.LinkedWorkbookCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

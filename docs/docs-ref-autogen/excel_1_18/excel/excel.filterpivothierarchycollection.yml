@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotTable#filterHierarchies:member"
-  alttext="Excel.PivotTable.filterHierarchies" />
+  - <xref
+  href="excel!Excel.PivotTable#filterHierarchies:member">Excel.PivotTable.filterHierarchies</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TimelineStyleCollection#items:member"
-  alttext="Excel.TimelineStyleCollection.items" />
+  - <xref
+  href="excel!Excel.TimelineStyleCollection#items:member">Excel.TimelineStyleCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

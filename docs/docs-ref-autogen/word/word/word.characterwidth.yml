@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeData#characterWidth:member"
-  alttext="Word.Interfaces.RangeData.characterWidth" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#characterWidth:member">Word.Interfaces.RangeData.characterWidth</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#characterWidth:member"
-  alttext="Word.Interfaces.RangeUpdateData.characterWidth" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#characterWidth:member">Word.Interfaces.RangeUpdateData.characterWidth</xref>
 
-  - <xref uid="word!Word.Range#characterWidth:member"
-  alttext="Word.Range.characterWidth" />
+  - <xref
+  href="word!Word.Range#characterWidth:member">Word.Range.characterWidth</xref>
 
 isPreview: false
 isDeprecated: false

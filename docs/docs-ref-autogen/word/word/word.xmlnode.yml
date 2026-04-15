@@ -12,23 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.XmlNode#firstChild:member"
-  alttext="Word.XmlNode.firstChild" />
+  - <xref
+  href="word!Word.XmlNode#firstChild:member">Word.XmlNode.firstChild</xref>
 
-  - <xref uid="word!Word.XmlNode#lastChild:member"
-  alttext="Word.XmlNode.lastChild" />
+  - <xref
+  href="word!Word.XmlNode#lastChild:member">Word.XmlNode.lastChild</xref>
 
-  - <xref uid="word!Word.XmlNode#nextSibling:member"
-  alttext="Word.XmlNode.nextSibling" />
+  - <xref
+  href="word!Word.XmlNode#nextSibling:member">Word.XmlNode.nextSibling</xref>
 
-  - <xref uid="word!Word.XmlNode#parentNode:member"
-  alttext="Word.XmlNode.parentNode" />
+  - <xref
+  href="word!Word.XmlNode#parentNode:member">Word.XmlNode.parentNode</xref>
 
-  - <xref uid="word!Word.XmlNode#previousSibling:member"
-  alttext="Word.XmlNode.previousSibling" />
+  - <xref
+  href="word!Word.XmlNode#previousSibling:member">Word.XmlNode.previousSibling</xref>
 
-  - <xref uid="word!Word.XmlNodeCollection#items:member"
-  alttext="Word.XmlNodeCollection.items" />
+  - <xref
+  href="word!Word.XmlNodeCollection#items:member">Word.XmlNodeCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

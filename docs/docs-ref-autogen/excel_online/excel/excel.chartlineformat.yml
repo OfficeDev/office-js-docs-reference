@@ -12,23 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxisFormat#line:member"
-  alttext="Excel.ChartAxisFormat.line" />
+  - <xref
+  href="excel!Excel.ChartAxisFormat#line:member">Excel.ChartAxisFormat.line</xref>
 
-  - <xref uid="excel!Excel.ChartErrorBarsFormat#line:member"
-  alttext="Excel.ChartErrorBarsFormat.line" />
+  - <xref
+  href="excel!Excel.ChartErrorBarsFormat#line:member">Excel.ChartErrorBarsFormat.line</xref>
 
-  - <xref uid="excel!Excel.ChartGridlinesFormat#line:member"
-  alttext="Excel.ChartGridlinesFormat.line" />
+  - <xref
+  href="excel!Excel.ChartGridlinesFormat#line:member">Excel.ChartGridlinesFormat.line</xref>
 
-  - <xref uid="excel!Excel.ChartLeaderLinesFormat#line:member"
-  alttext="Excel.ChartLeaderLinesFormat.line" />
+  - <xref
+  href="excel!Excel.ChartLeaderLinesFormat#line:member">Excel.ChartLeaderLinesFormat.line</xref>
 
-  - <xref uid="excel!Excel.ChartSeriesFormat#line:member"
-  alttext="Excel.ChartSeriesFormat.line" />
+  - <xref
+  href="excel!Excel.ChartSeriesFormat#line:member">Excel.ChartSeriesFormat.line</xref>
 
-  - <xref uid="excel!Excel.ChartTrendlineFormat#line:member"
-  alttext="Excel.ChartTrendlineFormat.line" />
+  - <xref
+  href="excel!Excel.ChartTrendlineFormat#line:member">Excel.ChartTrendlineFormat.line</xref>
 
 isPreview: false
 isDeprecated: false

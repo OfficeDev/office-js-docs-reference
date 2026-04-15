@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#xErrorBars:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.xErrorBars" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#xErrorBars:member">Excel.Interfaces.ChartSeriesUpdateData.xErrorBars</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#yErrorBars:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.yErrorBars" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#yErrorBars:member">Excel.Interfaces.ChartSeriesUpdateData.yErrorBars</xref>
 
 isPreview: false
 isDeprecated: false

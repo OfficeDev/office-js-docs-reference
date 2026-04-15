@@ -457,9 +457,9 @@ function generateUsedBySection(references: UsedByReference[]): string {
     refs.sort((a, b) => a.name.localeCompare(b.name));
 
     // Add each reference as a bullet point with xref link
-    // Use alttext to display the full qualified name (e.g., "Excel.DataPivotHierarchy.summarizeBy")
+    // Use inner content to display the full qualified name (e.g., "Excel.DataPivotHierarchy.summarizeBy")
     for (const ref of refs) {
-      lines.push(`- <xref uid="${ref.uid}" alttext="${ref.name}" />`);
+      lines.push(`- <xref href="${ref.uid}">${ref.name}</xref>`);
     }
   }
 

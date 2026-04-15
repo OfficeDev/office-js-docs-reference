@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#fill:member"
-  alttext="Word.Interfaces.ShapeCollectionLoadOptions.fill" />
+  - <xref
+  href="word!Word.Interfaces.ShapeCollectionLoadOptions#fill:member">Word.Interfaces.ShapeCollectionLoadOptions.fill</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#fill:member"
-  alttext="Word.Interfaces.ShapeLoadOptions.fill" />
+  - <xref
+  href="word!Word.Interfaces.ShapeLoadOptions#fill:member">Word.Interfaces.ShapeLoadOptions.fill</xref>
 
 isPreview: false
 isDeprecated: false

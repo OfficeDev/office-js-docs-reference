@@ -15,21 +15,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.preset" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.preset</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.presetOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.presetOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#preset:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.preset" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#preset:member">Excel.Interfaces.ConditionalFormatLoadOptions.preset</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#presetOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.presetOrNullObject" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#presetOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.presetOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

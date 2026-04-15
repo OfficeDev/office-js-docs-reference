@@ -11,21 +11,19 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#xmlMapping:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.xmlMapping" />
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#xmlMapping:member"
-  alttext="Word.Interfaces.ContentControlData.xmlMapping" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#xmlMapping:member">Word.Interfaces.BuildingBlockGalleryContentControlData.xmlMapping</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#xmlMapping:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.xmlMapping" />
+  href="word!Word.Interfaces.ContentControlData#xmlMapping:member">Word.Interfaces.ContentControlData.xmlMapping</xref>
 
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#xmlMapping:member"
-  alttext="Word.Interfaces.GroupContentControlData.xmlMapping" />
+  - <xref
+  href="word!Word.Interfaces.DatePickerContentControlData#xmlMapping:member">Word.Interfaces.DatePickerContentControlData.xmlMapping</xref>
 
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#xmlMapping:member"
-  alttext="Word.Interfaces.PictureContentControlData.xmlMapping" />
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlData#xmlMapping:member">Word.Interfaces.GroupContentControlData.xmlMapping</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlData#xmlMapping:member">Word.Interfaces.PictureContentControlData.xmlMapping</xref>
 
 isPreview: false
 isDeprecated: false

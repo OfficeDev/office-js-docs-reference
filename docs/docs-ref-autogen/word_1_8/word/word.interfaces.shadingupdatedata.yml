@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#shading:member"
-  alttext="Word.Interfaces.StyleUpdateData.shading" />
+  - <xref
+  href="word!Word.Interfaces.StyleUpdateData#shading:member">Word.Interfaces.StyleUpdateData.shading</xref>
 
 isPreview: false
 isDeprecated: false

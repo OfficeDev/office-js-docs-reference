@@ -15,68 +15,68 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Application#context:member"
-  alttext="PowerPoint.Application.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Application#context:member">PowerPoint.Application.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.BulletFormat#context:member"
-  alttext="PowerPoint.BulletFormat.context" />
+  - <xref
+  href="powerpoint!PowerPoint.BulletFormat#context:member">PowerPoint.BulletFormat.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ParagraphFormat#context:member"
-  alttext="PowerPoint.ParagraphFormat.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ParagraphFormat#context:member">PowerPoint.ParagraphFormat.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Presentation#context:member"
-  alttext="PowerPoint.Presentation.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Presentation#context:member">PowerPoint.Presentation.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Shape#context:member"
-  alttext="PowerPoint.Shape.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Shape#context:member">PowerPoint.Shape.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeCollection#context:member"
-  alttext="PowerPoint.ShapeCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeCollection#context:member">PowerPoint.ShapeCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeFill#context:member"
-  alttext="PowerPoint.ShapeFill.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeFill#context:member">PowerPoint.ShapeFill.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeFont#context:member"
-  alttext="PowerPoint.ShapeFont.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeFont#context:member">PowerPoint.ShapeFont.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#context:member"
-  alttext="PowerPoint.ShapeLineFormat.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeLineFormat#context:member">PowerPoint.ShapeLineFormat.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#context:member"
-  alttext="PowerPoint.ShapeScopedCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeScopedCollection#context:member">PowerPoint.ShapeScopedCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Slide#context:member"
-  alttext="PowerPoint.Slide.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Slide#context:member">PowerPoint.Slide.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideCollection#context:member"
-  alttext="PowerPoint.SlideCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideCollection#context:member">PowerPoint.SlideCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayout#context:member"
-  alttext="PowerPoint.SlideLayout.context" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayout#context:member">PowerPoint.SlideLayout.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayoutCollection#context:member"
-  alttext="PowerPoint.SlideLayoutCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayoutCollection#context:member">PowerPoint.SlideLayoutCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMaster#context:member"
-  alttext="PowerPoint.SlideMaster.context" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMaster#context:member">PowerPoint.SlideMaster.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMasterCollection#context:member"
-  alttext="PowerPoint.SlideMasterCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMasterCollection#context:member">PowerPoint.SlideMasterCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideScopedCollection#context:member"
-  alttext="PowerPoint.SlideScopedCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideScopedCollection#context:member">PowerPoint.SlideScopedCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Tag#context:member"
-  alttext="PowerPoint.Tag.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Tag#context:member">PowerPoint.Tag.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TagCollection#context:member"
-  alttext="PowerPoint.TagCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.TagCollection#context:member">PowerPoint.TagCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TextFrame#context:member"
-  alttext="PowerPoint.TextFrame.context" />
+  - <xref
+  href="powerpoint!PowerPoint.TextFrame#context:member">PowerPoint.TextFrame.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TextRange#context:member"
-  alttext="PowerPoint.TextRange.context" />
+  - <xref
+  href="powerpoint!PowerPoint.TextRange#context:member">PowerPoint.TextRange.context</xref>
 
   #### Examples
 

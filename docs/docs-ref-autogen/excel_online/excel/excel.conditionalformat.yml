@@ -17,8 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormatCollection#items:member"
-  alttext="Excel.ConditionalFormatCollection.items" />
+  - <xref
+  href="excel!Excel.ConditionalFormatCollection#items:member">Excel.ConditionalFormatCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -16,11 +16,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#pageLayout:member"
-  alttext="Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout" />
+  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#pageLayout:member">Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member"
-  alttext="Excel.Interfaces.WorksheetLoadOptions.pageLayout" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member">Excel.Interfaces.WorksheetLoadOptions.pageLayout</xref>
 
 isPreview: false
 isDeprecated: false

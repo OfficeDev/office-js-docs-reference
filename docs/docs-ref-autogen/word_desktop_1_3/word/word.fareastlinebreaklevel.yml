@@ -14,15 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TemplateData#farEastLineBreakLevel:member"
-  alttext="Word.Interfaces.TemplateData.farEastLineBreakLevel" />
+  - <xref
+  href="word!Word.Interfaces.TemplateData#farEastLineBreakLevel:member">Word.Interfaces.TemplateData.farEastLineBreakLevel</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLevel:member"
-  alttext="Word.Interfaces.TemplateUpdateData.farEastLineBreakLevel" />
+  href="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLevel:member">Word.Interfaces.TemplateUpdateData.farEastLineBreakLevel</xref>
 
-  - <xref uid="word!Word.Template#farEastLineBreakLevel:member"
-  alttext="Word.Template.farEastLineBreakLevel" />
+  - <xref
+  href="word!Word.Template#farEastLineBreakLevel:member">Word.Template.farEastLineBreakLevel</xref>
 
 isPreview: false
 isDeprecated: false

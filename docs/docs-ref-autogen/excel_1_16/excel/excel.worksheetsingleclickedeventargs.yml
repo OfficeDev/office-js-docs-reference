@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onSingleClicked:member"
-  alttext="Excel.Worksheet.onSingleClicked" />
+  - <xref
+  href="excel!Excel.Worksheet#onSingleClicked:member">Excel.Worksheet.onSingleClicked</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onSingleClicked:member"
-  alttext="Excel.WorksheetCollection.onSingleClicked" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onSingleClicked:member">Excel.WorksheetCollection.onSingleClicked</xref>
 
 isPreview: false
 isDeprecated: false

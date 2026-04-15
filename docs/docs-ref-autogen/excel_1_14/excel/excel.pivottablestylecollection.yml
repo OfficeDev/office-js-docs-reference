@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#pivotTableStyles:member"
-  alttext="Excel.Workbook.pivotTableStyles" />
+  - <xref
+  href="excel!Excel.Workbook#pivotTableStyles:member">Excel.Workbook.pivotTableStyles</xref>
 
 isPreview: false
 isDeprecated: false

@@ -16,11 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.RequestContext#document:member"
-  alttext="Word.RequestContext.document" />
+  - <xref
+  href="word!Word.RequestContext#document:member">Word.RequestContext.document</xref>
 
-  - <xref uid="word!Word.XmlNode#ownerDocument:member"
-  alttext="Word.XmlNode.ownerDocument" />
+  - <xref
+  href="word!Word.XmlNode#ownerDocument:member">Word.XmlNode.ownerDocument</xref>
 
   #### Examples
 

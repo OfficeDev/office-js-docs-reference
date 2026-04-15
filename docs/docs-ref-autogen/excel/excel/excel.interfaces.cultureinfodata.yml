@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#cultureInfo:member"
-  alttext="Excel.Interfaces.ApplicationData.cultureInfo" />
+  - <xref
+  href="excel!Excel.Interfaces.ApplicationData#cultureInfo:member">Excel.Interfaces.ApplicationData.cultureInfo</xref>
 
 isPreview: false
 isDeprecated: false

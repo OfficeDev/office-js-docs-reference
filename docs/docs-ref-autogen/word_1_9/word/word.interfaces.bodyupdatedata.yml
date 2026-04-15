@@ -10,17 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#body:member"
-  alttext="Word.Interfaces.DocumentUpdateData.body" />
+  - <xref
+  href="word!Word.Interfaces.DocumentUpdateData#body:member">Word.Interfaces.DocumentUpdateData.body</xref>
 
-  - <xref uid="word!Word.Interfaces.NoteItemUpdateData#body:member"
-  alttext="Word.Interfaces.NoteItemUpdateData.body" />
+  - <xref
+  href="word!Word.Interfaces.NoteItemUpdateData#body:member">Word.Interfaces.NoteItemUpdateData.body</xref>
 
-  - <xref uid="word!Word.Interfaces.SectionUpdateData#body:member"
-  alttext="Word.Interfaces.SectionUpdateData.body" />
+  - <xref
+  href="word!Word.Interfaces.SectionUpdateData#body:member">Word.Interfaces.SectionUpdateData.body</xref>
 
-  - <xref uid="word!Word.Interfaces.TableCellUpdateData#body:member"
-  alttext="Word.Interfaces.TableCellUpdateData.body" />
+  - <xref
+  href="word!Word.Interfaces.TableCellUpdateData#body:member">Word.Interfaces.TableCellUpdateData.body</xref>
 
 isPreview: false
 isDeprecated: false

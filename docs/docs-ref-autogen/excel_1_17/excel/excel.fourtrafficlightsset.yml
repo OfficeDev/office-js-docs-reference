@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.IconCollections#fourTrafficLights:member"
-  alttext="Excel.IconCollections.fourTrafficLights" />
+  - <xref
+  href="excel!Excel.IconCollections#fourTrafficLights:member">Excel.IconCollections.fourTrafficLights</xref>
 
 isPreview: false
 isDeprecated: false

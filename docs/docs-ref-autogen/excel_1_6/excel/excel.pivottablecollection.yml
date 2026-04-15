@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#pivotTables:member"
-  alttext="Excel.Workbook.pivotTables" />
+  - <xref
+  href="excel!Excel.Workbook#pivotTables:member">Excel.Workbook.pivotTables</xref>
 
-  - <xref uid="excel!Excel.Worksheet#pivotTables:member"
-  alttext="Excel.Worksheet.pivotTables" />
+  - <xref
+  href="excel!Excel.Worksheet#pivotTables:member">Excel.Worksheet.pivotTables</xref>
 
 isPreview: false
 isDeprecated: false

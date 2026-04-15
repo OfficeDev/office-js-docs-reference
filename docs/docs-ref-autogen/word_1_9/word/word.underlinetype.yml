@@ -13,23 +13,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentContentRange#underline:member"
-  alttext="Word.CommentContentRange.underline" />
+  - <xref
+  href="word!Word.CommentContentRange#underline:member">Word.CommentContentRange.underline</xref>
 
-  - <xref uid="word!Word.Font#underline:member" alttext="Word.Font.underline" />
-
-  - <xref uid="word!Word.Interfaces.CommentContentRangeData#underline:member"
-  alttext="Word.Interfaces.CommentContentRangeData.underline" />
+  - <xref href="word!Word.Font#underline:member">Word.Font.underline</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member"
-  alttext="Word.Interfaces.CommentContentRangeUpdateData.underline" />
+  href="word!Word.Interfaces.CommentContentRangeData#underline:member">Word.Interfaces.CommentContentRangeData.underline</xref>
 
-  - <xref uid="word!Word.Interfaces.FontData#underline:member"
-  alttext="Word.Interfaces.FontData.underline" />
+  - <xref
+  href="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member">Word.Interfaces.CommentContentRangeUpdateData.underline</xref>
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member"
-  alttext="Word.Interfaces.FontUpdateData.underline" />
+  - <xref
+  href="word!Word.Interfaces.FontData#underline:member">Word.Interfaces.FontData.underline</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FontUpdateData#underline:member">Word.Interfaces.FontUpdateData.underline</xref>
 
   #### Examples
 

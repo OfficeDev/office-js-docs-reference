@@ -14,22 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListFormatLoadOptions#list:member"
-  alttext="Word.Interfaces.ListFormatLoadOptions.list" />
-
-  - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.list" />
+  - <xref
+  href="word!Word.Interfaces.ListFormatLoadOptions#list:member">Word.Interfaces.ListFormatLoadOptions.list</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject" />
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#list:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.list" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member">Word.Interfaces.ParagraphCollectionLoadOptions.list</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.listOrNullObject" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ParagraphLoadOptions#list:member">Word.Interfaces.ParagraphLoadOptions.list</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.listOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

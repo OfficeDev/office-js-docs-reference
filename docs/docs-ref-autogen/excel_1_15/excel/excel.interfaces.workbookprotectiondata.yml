@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#protection:member"
-  alttext="Excel.Interfaces.WorkbookData.protection" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#protection:member">Excel.Interfaces.WorkbookData.protection</xref>
 
 isPreview: false
 isDeprecated: false

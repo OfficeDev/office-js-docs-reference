@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onCalculated:member"
-  alttext="Excel.Worksheet.onCalculated" />
+  - <xref
+  href="excel!Excel.Worksheet#onCalculated:member">Excel.Worksheet.onCalculated</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onCalculated:member"
-  alttext="Excel.WorksheetCollection.onCalculated" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onCalculated:member">Excel.WorksheetCollection.onCalculated</xref>
 
   #### Examples
 

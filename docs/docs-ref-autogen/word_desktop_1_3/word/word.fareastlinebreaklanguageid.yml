@@ -15,15 +15,13 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.TemplateData#farEastLineBreakLanguage:member"
-  alttext="Word.Interfaces.TemplateData.farEastLineBreakLanguage" />
+  href="word!Word.Interfaces.TemplateData#farEastLineBreakLanguage:member">Word.Interfaces.TemplateData.farEastLineBreakLanguage</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLanguage:member"
-  alttext="Word.Interfaces.TemplateUpdateData.farEastLineBreakLanguage" />
+  href="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLanguage:member">Word.Interfaces.TemplateUpdateData.farEastLineBreakLanguage</xref>
 
-  - <xref uid="word!Word.Template#farEastLineBreakLanguage:member"
-  alttext="Word.Template.farEastLineBreakLanguage" />
+  - <xref
+  href="word!Word.Template#farEastLineBreakLanguage:member">Word.Template.farEastLineBreakLanguage</xref>
 
 isPreview: false
 isDeprecated: false

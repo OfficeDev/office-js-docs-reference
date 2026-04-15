@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BuildingBlock#type:member"
-  alttext="Word.BuildingBlock.type" />
+  - <xref
+  href="word!Word.BuildingBlock#type:member">Word.BuildingBlock.type</xref>
 
-  - <xref uid="word!Word.BuildingBlockCategory#type:member"
-  alttext="Word.BuildingBlockCategory.type" />
+  - <xref
+  href="word!Word.BuildingBlockCategory#type:member">Word.BuildingBlockCategory.type</xref>
 
 isPreview: false
 isDeprecated: false

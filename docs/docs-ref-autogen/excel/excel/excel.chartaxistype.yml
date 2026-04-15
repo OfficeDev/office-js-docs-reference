@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#type:member" alttext="Excel.ChartAxis.type"
-  />
+  - <xref href="excel!Excel.ChartAxis#type:member">Excel.ChartAxis.type</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#type:member"
-  alttext="Excel.Interfaces.ChartAxisData.type" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisData#type:member">Excel.Interfaces.ChartAxisData.type</xref>
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontData#threeDimensionalFormat:member"
-  alttext="Word.Interfaces.FontData.threeDimensionalFormat" />
+  - <xref
+  href="word!Word.Interfaces.FontData#threeDimensionalFormat:member">Word.Interfaces.FontData.threeDimensionalFormat</xref>
 
 isPreview: false
 isDeprecated: false

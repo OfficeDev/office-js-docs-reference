@@ -12,8 +12,7 @@ remarks: >-
 
 
   - <xref
-  uid="office!OfficeExtension.ClientRequestContext#trackedObjects:member"
-  alttext="OfficeExtension.ClientRequestContext.trackedObjects" />
+  href="office!OfficeExtension.ClientRequestContext#trackedObjects:member">OfficeExtension.ClientRequestContext.trackedObjects</xref>
 
 isPreview: false
 isDeprecated: false

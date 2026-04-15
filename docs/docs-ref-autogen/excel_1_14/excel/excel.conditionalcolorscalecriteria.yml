@@ -13,16 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ColorScaleConditionalFormat#criteria:member"
-  alttext="Excel.ColorScaleConditionalFormat.criteria" />
+  - <xref
+  href="excel!Excel.ColorScaleConditionalFormat#criteria:member">Excel.ColorScaleConditionalFormat.criteria</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member"
-  alttext="Excel.Interfaces.ColorScaleConditionalFormatData.criteria" />
+  href="excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member">Excel.Interfaces.ColorScaleConditionalFormatData.criteria</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member"
-  alttext="Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria" />
+  href="excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member">Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria</xref>
 
   #### Examples
 

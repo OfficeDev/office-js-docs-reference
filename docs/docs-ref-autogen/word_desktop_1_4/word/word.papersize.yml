@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#paperSize:member"
-  alttext="Word.Interfaces.PageSetupData.paperSize" />
+  - <xref
+  href="word!Word.Interfaces.PageSetupData#paperSize:member">Word.Interfaces.PageSetupData.paperSize</xref>
 
-  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#paperSize:member"
-  alttext="Word.Interfaces.PageSetupUpdateData.paperSize" />
+  - <xref
+  href="word!Word.Interfaces.PageSetupUpdateData#paperSize:member">Word.Interfaces.PageSetupUpdateData.paperSize</xref>
 
-  - <xref uid="word!Word.PageSetup#paperSize:member"
-  alttext="Word.PageSetup.paperSize" />
+  - <xref
+  href="word!Word.PageSetup#paperSize:member">Word.PageSetup.paperSize</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ShapeGroup#shapes:member"
-  alttext="Excel.ShapeGroup.shapes" />
+  - <xref
+  href="excel!Excel.ShapeGroup#shapes:member">Excel.ShapeGroup.shapes</xref>
 
 isPreview: false
 isDeprecated: false

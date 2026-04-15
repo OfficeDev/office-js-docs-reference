@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartAreaFormatLoadOptions.border" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#border:member">Excel.Interfaces.ChartAreaFormatLoadOptions.border</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartPointFormatLoadOptions.border" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member">Excel.Interfaces.ChartPointFormatLoadOptions.border</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member"
-  alttext="Excel.Interfaces.ChartTitleFormatLoadOptions.border" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member">Excel.Interfaces.ChartTitleFormatLoadOptions.border</xref>
 
 isPreview: false
 isDeprecated: false

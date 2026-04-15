@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotTable#columnHierarchies:member"
-  alttext="Excel.PivotTable.columnHierarchies" />
+  - <xref
+  href="excel!Excel.PivotTable#columnHierarchies:member">Excel.PivotTable.columnHierarchies</xref>
 
-  - <xref uid="excel!Excel.PivotTable#rowHierarchies:member"
-  alttext="Excel.PivotTable.rowHierarchies" />
+  - <xref
+  href="excel!Excel.PivotTable#rowHierarchies:member">Excel.PivotTable.rowHierarchies</xref>
 
 isPreview: false
 isDeprecated: false

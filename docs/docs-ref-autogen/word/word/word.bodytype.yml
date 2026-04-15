@@ -13,10 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#type:member" alttext="Word.Body.type" />
+  - <xref href="word!Word.Body#type:member">Word.Body.type</xref>
 
-  - <xref uid="word!Word.Interfaces.BodyData#type:member"
-  alttext="Word.Interfaces.BodyData.type" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#type:member">Word.Interfaces.BodyData.type</xref>
 
   #### Examples
 

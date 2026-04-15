@@ -13,20 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.listItem" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member">Word.Interfaces.ParagraphCollectionLoadOptions.listItem</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject"
-  />
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#listItem:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.listItem" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#listItemOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.listItemOrNullObject" />
+  href="word!Word.Interfaces.ParagraphLoadOptions#listItem:member">Word.Interfaces.ParagraphLoadOptions.listItem</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ParagraphLoadOptions#listItemOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.listItemOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

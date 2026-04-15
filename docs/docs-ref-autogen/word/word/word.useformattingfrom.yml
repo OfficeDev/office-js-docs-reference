@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentMergeOptions#useFormattingFrom:member"
-  alttext="Word.DocumentMergeOptions.useFormattingFrom" />
+  - <xref
+  href="word!Word.DocumentMergeOptions#useFormattingFrom:member">Word.DocumentMergeOptions.useFormattingFrom</xref>
 
 isPreview: false
 isDeprecated: false

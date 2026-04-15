@@ -13,44 +13,43 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Break#range:member" alttext="Word.Break.range" />
+  - <xref href="word!Word.Break#range:member">Word.Break.range</xref>
 
-  - <xref uid="word!Word.BuildingBlockGalleryContentControl#range:member"
-  alttext="Word.BuildingBlockGalleryContentControl.range" />
+  - <xref
+  href="word!Word.BuildingBlockGalleryContentControl#range:member">Word.BuildingBlockGalleryContentControl.range</xref>
 
-  - <xref uid="word!Word.ContentControlPlaceholderOptions#range:member"
-  alttext="Word.ContentControlPlaceholderOptions.range" />
+  - <xref
+  href="word!Word.ContentControlPlaceholderOptions#range:member">Word.ContentControlPlaceholderOptions.range</xref>
 
-  - <xref uid="word!Word.CritiqueAnnotation#range:member"
-  alttext="Word.CritiqueAnnotation.range" />
+  - <xref
+  href="word!Word.CritiqueAnnotation#range:member">Word.CritiqueAnnotation.range</xref>
 
-  - <xref uid="word!Word.DatePickerContentControl#range:member"
-  alttext="Word.DatePickerContentControl.range" />
+  - <xref
+  href="word!Word.DatePickerContentControl#range:member">Word.DatePickerContentControl.range</xref>
 
-  - <xref uid="word!Word.Field#result:member" alttext="Word.Field.result" />
+  - <xref href="word!Word.Field#result:member">Word.Field.result</xref>
 
-  - <xref uid="word!Word.Frame#range:member" alttext="Word.Frame.range" />
+  - <xref href="word!Word.Frame#range:member">Word.Frame.range</xref>
 
-  - <xref uid="word!Word.GroupContentControl#range:member"
-  alttext="Word.GroupContentControl.range" />
+  - <xref
+  href="word!Word.GroupContentControl#range:member">Word.GroupContentControl.range</xref>
 
-  - <xref uid="word!Word.Hyperlink#range:member" alttext="Word.Hyperlink.range"
-  />
+  - <xref href="word!Word.Hyperlink#range:member">Word.Hyperlink.range</xref>
 
-  - <xref uid="word!Word.NoteItem#reference:member"
-  alttext="Word.NoteItem.reference" />
+  - <xref
+  href="word!Word.NoteItem#reference:member">Word.NoteItem.reference</xref>
 
-  - <xref uid="word!Word.PictureContentControl#range:member"
-  alttext="Word.PictureContentControl.range" />
+  - <xref
+  href="word!Word.PictureContentControl#range:member">Word.PictureContentControl.range</xref>
 
-  - <xref uid="word!Word.RangeCollection#items:member"
-  alttext="Word.RangeCollection.items" />
+  - <xref
+  href="word!Word.RangeCollection#items:member">Word.RangeCollection.items</xref>
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#range:member"
-  alttext="Word.RepeatingSectionContentControl.range" />
+  - <xref
+  href="word!Word.RepeatingSectionContentControl#range:member">Word.RepeatingSectionContentControl.range</xref>
 
-  - <xref uid="word!Word.RepeatingSectionItem#range:member"
-  alttext="Word.RepeatingSectionItem.range" />
+  - <xref
+  href="word!Word.RepeatingSectionItem#range:member">Word.RepeatingSectionItem.range</xref>
 
   #### Examples
 

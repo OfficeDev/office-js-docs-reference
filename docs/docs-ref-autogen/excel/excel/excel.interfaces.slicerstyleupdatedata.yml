@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member"
-  alttext="Excel.Interfaces.SlicerUpdateData.slicerStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member">Excel.Interfaces.SlicerUpdateData.slicerStyle</xref>
 
 isPreview: false
 isDeprecated: false

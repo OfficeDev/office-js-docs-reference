@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.DocumentTaskChangeCollectionData#items:member"
-  alttext="Excel.Interfaces.DocumentTaskChangeCollectionData.items" />
+  href="excel!Excel.Interfaces.DocumentTaskChangeCollectionData#items:member">Excel.Interfaces.DocumentTaskChangeCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.DocumentTaskChangeCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData#items:member">Excel.Interfaces.DocumentTaskChangeCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

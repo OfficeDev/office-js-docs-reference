@@ -20,11 +20,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member"
-  alttext="Excel.Interfaces.TableCollectionLoadOptions.rows" />
+  - <xref
+  href="excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member">Excel.Interfaces.TableCollectionLoadOptions.rows</xref>
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#rows:member"
-  alttext="Excel.Interfaces.TableLoadOptions.rows" />
+  - <xref
+  href="excel!Excel.Interfaces.TableLoadOptions#rows:member">Excel.Interfaces.TableLoadOptions.rows</xref>
 
 isPreview: false
 isDeprecated: false

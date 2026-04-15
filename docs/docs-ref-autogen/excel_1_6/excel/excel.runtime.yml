@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RequestContext#runtime:member"
-  alttext="Excel.RequestContext.runtime" />
+  - <xref
+  href="excel!Excel.RequestContext#runtime:member">Excel.RequestContext.runtime</xref>
 
 isPreview: false
 isDeprecated: false

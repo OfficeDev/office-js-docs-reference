@@ -14,15 +14,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.RangeFormatData.horizontalAlignment" />
+  href="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member">Excel.Interfaces.RangeFormatData.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment" />
+  href="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member">Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment</xref>
 
-  - <xref uid="excel!Excel.RangeFormat#horizontalAlignment:member"
-  alttext="Excel.RangeFormat.horizontalAlignment" />
+  - <xref
+  href="excel!Excel.RangeFormat#horizontalAlignment:member">Excel.RangeFormat.horizontalAlignment</xref>
 
   #### Examples
 

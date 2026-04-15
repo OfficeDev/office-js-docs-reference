@@ -10,17 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FrameUpdateData#shading:member"
-  alttext="Word.Interfaces.FrameUpdateData.shading" />
+  - <xref
+  href="word!Word.Interfaces.FrameUpdateData#shading:member">Word.Interfaces.FrameUpdateData.shading</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#shading:member"
-  alttext="Word.Interfaces.ParagraphUpdateData.shading" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphUpdateData#shading:member">Word.Interfaces.ParagraphUpdateData.shading</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#shading:member"
-  alttext="Word.Interfaces.RangeUpdateData.shading" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#shading:member">Word.Interfaces.RangeUpdateData.shading</xref>
 
-  - <xref uid="word!Word.Interfaces.TableColumnUpdateData#shading:member"
-  alttext="Word.Interfaces.TableColumnUpdateData.shading" />
+  - <xref
+  href="word!Word.Interfaces.TableColumnUpdateData#shading:member">Word.Interfaces.TableColumnUpdateData.shading</xref>
 
 isPreview: false
 isDeprecated: false

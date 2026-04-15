@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#dataBar:member"
-  alttext="Excel.ConditionalFormat.dataBar" />
+  - <xref
+  href="excel!Excel.ConditionalFormat#dataBar:member">Excel.ConditionalFormat.dataBar</xref>
 
-  - <xref uid="excel!Excel.ConditionalFormat#dataBarOrNullObject:member"
-  alttext="Excel.ConditionalFormat.dataBarOrNullObject" />
+  - <xref
+  href="excel!Excel.ConditionalFormat#dataBarOrNullObject:member">Excel.ConditionalFormat.dataBarOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

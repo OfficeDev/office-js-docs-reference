@@ -41,17 +41,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#body:member"
-  alttext="Office.AppointmentCompose.body" />
+  - <xref
+  href="outlook!Office.AppointmentCompose#body:member">Office.AppointmentCompose.body</xref>
 
-  - <xref uid="outlook!Office.AppointmentRead#body:member"
-  alttext="Office.AppointmentRead.body" />
+  - <xref
+  href="outlook!Office.AppointmentRead#body:member">Office.AppointmentRead.body</xref>
 
-  - <xref uid="outlook!Office.MessageCompose#body:member"
-  alttext="Office.MessageCompose.body" />
+  - <xref
+  href="outlook!Office.MessageCompose#body:member">Office.MessageCompose.body</xref>
 
-  - <xref uid="outlook!Office.MessageRead#body:member"
-  alttext="Office.MessageRead.body" />
+  - <xref
+  href="outlook!Office.MessageRead#body:member">Office.MessageRead.body</xref>
 
   #### Examples
 

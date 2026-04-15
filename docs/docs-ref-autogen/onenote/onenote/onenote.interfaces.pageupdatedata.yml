@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member"
-  alttext="OneNote.Interfaces.InkAnalysisUpdateData.page" />
+  - <xref
+  href="onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member">OneNote.Interfaces.InkAnalysisUpdateData.page</xref>
 
 isPreview: false
 isDeprecated: false

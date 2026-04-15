@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Presentation#pageSetup:member"
-  alttext="PowerPoint.Presentation.pageSetup" />
+  - <xref
+  href="powerpoint!PowerPoint.Presentation#pageSetup:member">PowerPoint.Presentation.pageSetup</xref>
 
 isPreview: false
 isDeprecated: false

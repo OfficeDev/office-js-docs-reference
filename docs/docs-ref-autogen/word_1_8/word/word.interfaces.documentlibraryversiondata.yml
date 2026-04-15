@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.DocumentLibraryVersionCollectionData#items:member"
-  alttext="Word.Interfaces.DocumentLibraryVersionCollectionData.items" />
+  href="word!Word.Interfaces.DocumentLibraryVersionCollectionData#items:member">Word.Interfaces.DocumentLibraryVersionCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items" />
+  href="word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member">Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

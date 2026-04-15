@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ShapeFillData#type:member"
-  alttext="Excel.Interfaces.ShapeFillData.type" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeFillData#type:member">Excel.Interfaces.ShapeFillData.type</xref>
 
-  - <xref uid="excel!Excel.ShapeFill#type:member" alttext="Excel.ShapeFill.type"
-  />
+  - <xref href="excel!Excel.ShapeFill#type:member">Excel.ShapeFill.type</xref>
 
 isPreview: false
 isDeprecated: false

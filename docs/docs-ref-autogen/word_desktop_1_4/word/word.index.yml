@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.IndexCollection#items:member"
-  alttext="Word.IndexCollection.items" />
+  - <xref
+  href="word!Word.IndexCollection#items:member">Word.IndexCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

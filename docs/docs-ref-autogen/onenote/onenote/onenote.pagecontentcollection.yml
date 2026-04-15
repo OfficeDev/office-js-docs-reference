@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Page#contents:member"
-  alttext="OneNote.Page.contents" />
+  - <xref
+  href="onenote!OneNote.Page#contents:member">OneNote.Page.contents</xref>
 
 isPreview: false
 isDeprecated: false

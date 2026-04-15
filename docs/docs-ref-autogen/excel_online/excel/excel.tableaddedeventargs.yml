@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableCollection#onAdded:member"
-  alttext="Excel.TableCollection.onAdded" />
+  - <xref
+  href="excel!Excel.TableCollection#onAdded:member">Excel.TableCollection.onAdded</xref>
 
 isPreview: false
 isDeprecated: false

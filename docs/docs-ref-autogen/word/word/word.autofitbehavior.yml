@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionConvertToTableOptions#autoFitBehavior:member"
-  alttext="Word.SelectionConvertToTableOptions.autoFitBehavior" />
+  - <xref
+  href="word!Word.SelectionConvertToTableOptions#autoFitBehavior:member">Word.SelectionConvertToTableOptions.autoFitBehavior</xref>
 
 isPreview: false
 isDeprecated: false

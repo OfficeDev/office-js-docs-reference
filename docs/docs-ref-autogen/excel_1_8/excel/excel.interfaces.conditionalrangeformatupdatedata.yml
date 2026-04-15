@@ -11,24 +11,19 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#format:member"
-  alttext="Excel.Interfaces.CellValueConditionalFormatUpdateData.format" />
+  href="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#format:member">Excel.Interfaces.CellValueConditionalFormatUpdateData.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member"
-  alttext="Excel.Interfaces.CustomConditionalFormatUpdateData.format" />
+  href="excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member">Excel.Interfaces.CustomConditionalFormatUpdateData.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#format:member"
-  alttext="Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format" />
+  href="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#format:member">Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member"
-  alttext="Excel.Interfaces.TextConditionalFormatUpdateData.format" />
+  href="excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member">Excel.Interfaces.TextConditionalFormatUpdateData.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#format:member"
-  alttext="Excel.Interfaces.TopBottomConditionalFormatUpdateData.format" />
+  href="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#format:member">Excel.Interfaces.TopBottomConditionalFormatUpdateData.format</xref>
 
 isPreview: false
 isDeprecated: false

@@ -24,27 +24,22 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(1)"
-  alttext="Office.AppointmentCompose.getAttachmentContentAsync" />
+  href="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(1)">Office.AppointmentCompose.getAttachmentContentAsync</xref>
 
   - <xref
-  uid="outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)"
-  alttext="Office.AppointmentRead.getAttachmentContentAsync" />
+  href="outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)">Office.AppointmentRead.getAttachmentContentAsync</xref>
 
   - <xref
-  uid="outlook!Office.LoadedMessageCompose#getAttachmentContentAsync:member(1)"
-  alttext="Office.LoadedMessageCompose.getAttachmentContentAsync" />
+  href="outlook!Office.LoadedMessageCompose#getAttachmentContentAsync:member(1)">Office.LoadedMessageCompose.getAttachmentContentAsync</xref>
 
   - <xref
-  uid="outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member(1)"
-  alttext="Office.LoadedMessageRead.getAttachmentContentAsync" />
+  href="outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member(1)">Office.LoadedMessageRead.getAttachmentContentAsync</xref>
 
   - <xref
-  uid="outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)"
-  alttext="Office.MessageCompose.getAttachmentContentAsync" />
+  href="outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)">Office.MessageCompose.getAttachmentContentAsync</xref>
 
-  - <xref uid="outlook!Office.MessageRead#getAttachmentContentAsync:member(1)"
-  alttext="Office.MessageRead.getAttachmentContentAsync" />
+  - <xref
+  href="outlook!Office.MessageRead#getAttachmentContentAsync:member(1)">Office.MessageRead.getAttachmentContentAsync</xref>
 
   #### Examples
 

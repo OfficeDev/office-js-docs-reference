@@ -12,12 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentSection:member"
-  alttext="Word.Interfaces.BodyLoadOptions.parentSection" />
+  - <xref
+  href="word!Word.Interfaces.BodyLoadOptions#parentSection:member">Word.Interfaces.BodyLoadOptions.parentSection</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member"
-  alttext="Word.Interfaces.BodyLoadOptions.parentSectionOrNullObject" />
+  href="word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member">Word.Interfaces.BodyLoadOptions.parentSectionOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

@@ -18,17 +18,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#worksheet:member"
-  alttext="Excel.Chart.worksheet" />
+  - <xref href="excel!Excel.Chart#worksheet:member">Excel.Chart.worksheet</xref>
 
-  - <xref uid="excel!Excel.Range#worksheet:member"
-  alttext="Excel.Range.worksheet" />
+  - <xref href="excel!Excel.Range#worksheet:member">Excel.Range.worksheet</xref>
 
-  - <xref uid="excel!Excel.Table#worksheet:member"
-  alttext="Excel.Table.worksheet" />
+  - <xref href="excel!Excel.Table#worksheet:member">Excel.Table.worksheet</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#items:member"
-  alttext="Excel.WorksheetCollection.items" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#items:member">Excel.WorksheetCollection.items</xref>
 
   #### Examples
 

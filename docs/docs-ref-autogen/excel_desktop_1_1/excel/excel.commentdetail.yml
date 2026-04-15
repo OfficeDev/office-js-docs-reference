@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CommentAddedEventArgs#commentDetails:member"
-  alttext="Excel.CommentAddedEventArgs.commentDetails" />
+  - <xref
+  href="excel!Excel.CommentAddedEventArgs#commentDetails:member">Excel.CommentAddedEventArgs.commentDetails</xref>
 
-  - <xref uid="excel!Excel.CommentChangedEventArgs#commentDetails:member"
-  alttext="Excel.CommentChangedEventArgs.commentDetails" />
+  - <xref
+  href="excel!Excel.CommentChangedEventArgs#commentDetails:member">Excel.CommentChangedEventArgs.commentDetails</xref>
 
-  - <xref uid="excel!Excel.CommentDeletedEventArgs#commentDetails:member"
-  alttext="Excel.CommentDeletedEventArgs.commentDetails" />
+  - <xref
+  href="excel!Excel.CommentDeletedEventArgs#commentDetails:member">Excel.CommentDeletedEventArgs.commentDetails</xref>
 
 isPreview: false
 isDeprecated: false

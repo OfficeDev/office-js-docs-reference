@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#readingOrder:member"
-  alttext="Excel.Interfaces.TextFrameData.readingOrder" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameData#readingOrder:member">Excel.Interfaces.TextFrameData.readingOrder</xref>
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member"
-  alttext="Excel.Interfaces.TextFrameUpdateData.readingOrder" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member">Excel.Interfaces.TextFrameUpdateData.readingOrder</xref>
 
-  - <xref uid="excel!Excel.TextFrame#readingOrder:member"
-  alttext="Excel.TextFrame.readingOrder" />
+  - <xref
+  href="excel!Excel.TextFrame#readingOrder:member">Excel.TextFrame.readingOrder</xref>
 
 isPreview: false
 isDeprecated: false

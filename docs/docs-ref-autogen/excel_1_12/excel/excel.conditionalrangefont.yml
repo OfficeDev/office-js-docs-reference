@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalRangeFormat#font:member"
-  alttext="Excel.ConditionalRangeFormat.font" />
+  - <xref
+  href="excel!Excel.ConditionalRangeFormat#font:member">Excel.ConditionalRangeFormat.font</xref>
 
 isPreview: false
 isDeprecated: false

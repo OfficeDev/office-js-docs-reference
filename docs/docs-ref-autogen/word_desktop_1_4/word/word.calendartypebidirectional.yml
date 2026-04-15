@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionInsertDateTimeOptions#calendarType:member"
-  alttext="Word.SelectionInsertDateTimeOptions.calendarType" />
+  - <xref
+  href="word!Word.SelectionInsertDateTimeOptions#calendarType:member">Word.SelectionInsertDateTimeOptions.calendarType</xref>
 
 isPreview: false
 isDeprecated: false

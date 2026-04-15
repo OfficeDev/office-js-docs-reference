@@ -12,51 +12,50 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member"
-  alttext="Word.Interfaces.BodyLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.BodyLoadOptions#font:member">Word.Interfaces.BodyLoadOptions.font</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.font" />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member">Word.Interfaces.ContentControlCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#font:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlLoadOptions#font:member">Word.Interfaces.ContentControlLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ListLevelCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.ListLevelCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ListLevelCollectionLoadOptions#font:member">Word.Interfaces.ListLevelCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ListLevelLoadOptions#font:member"
-  alttext="Word.Interfaces.ListLevelLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ListLevelLoadOptions#font:member">Word.Interfaces.ListLevelLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member">Word.Interfaces.ParagraphCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#font:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphLoadOptions#font:member">Word.Interfaces.ParagraphLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#font:member">Word.Interfaces.RangeCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member"
-  alttext="Word.Interfaces.RangeLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.RangeLoadOptions#font:member">Word.Interfaces.RangeLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.StyleCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.StyleCollectionLoadOptions#font:member">Word.Interfaces.StyleCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#font:member"
-  alttext="Word.Interfaces.StyleLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.StyleLoadOptions#font:member">Word.Interfaces.StyleLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.TableCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.TableCollectionLoadOptions#font:member">Word.Interfaces.TableCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#font:member"
-  alttext="Word.Interfaces.TableLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.TableLoadOptions#font:member">Word.Interfaces.TableLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.TableRowCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.TableRowCollectionLoadOptions#font:member">Word.Interfaces.TableRowCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#font:member"
-  alttext="Word.Interfaces.TableRowLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.TableRowLoadOptions#font:member">Word.Interfaces.TableRowLoadOptions.font</xref>
 
 isPreview: false
 isDeprecated: false

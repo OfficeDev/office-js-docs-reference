@@ -8,11 +8,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PaneCollectionData#items:member"
-  alttext="Excel.Interfaces.PaneCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.PaneCollectionData#items:member">Excel.Interfaces.PaneCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.PaneCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member">Excel.Interfaces.PaneCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

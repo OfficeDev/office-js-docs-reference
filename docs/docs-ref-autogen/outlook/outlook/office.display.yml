@@ -25,8 +25,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MessageRead#display:member"
-  alttext="Office.MessageRead.display" />
+  - <xref
+  href="outlook!Office.MessageRead#display:member">Office.MessageRead.display</xref>
 
 isPreview: true
 isDeprecated: false

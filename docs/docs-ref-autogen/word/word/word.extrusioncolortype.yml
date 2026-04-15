@@ -17,16 +17,13 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColorType:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.extrusionColorType" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColorType:member">Word.Interfaces.ThreeDimensionalFormatData.extrusionColorType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColorType:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColorType"
-  />
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColorType:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColorType</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColorType:member"
-  alttext="Word.ThreeDimensionalFormat.extrusionColorType" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#extrusionColorType:member">Word.ThreeDimensionalFormat.extrusionColorType</xref>
 
 isPreview: false
 isDeprecated: false

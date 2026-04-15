@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.RangeFormatLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatLoadOptions#font:member">Excel.Interfaces.RangeFormatLoadOptions.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member"
-  alttext="Excel.Interfaces.StyleCollectionLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member">Excel.Interfaces.StyleCollectionLoadOptions.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleLoadOptions#font:member"
-  alttext="Excel.Interfaces.StyleLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleLoadOptions#font:member">Excel.Interfaces.StyleLoadOptions.font</xref>
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#properties:member"
-  alttext="Excel.Interfaces.WorkbookData.properties" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#properties:member">Excel.Interfaces.WorkbookData.properties</xref>
 
 isPreview: false
 isDeprecated: false

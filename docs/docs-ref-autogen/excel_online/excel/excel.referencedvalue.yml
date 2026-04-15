@@ -12,20 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ArrayCellValue#referencedValues:member"
-  alttext="Excel.ArrayCellValue.referencedValues" />
+  - <xref
+  href="excel!Excel.ArrayCellValue#referencedValues:member">Excel.ArrayCellValue.referencedValues</xref>
 
-  - <xref uid="excel!Excel.BooleanCellValue#referencedValues:member"
-  alttext="Excel.BooleanCellValue.referencedValues" />
+  - <xref
+  href="excel!Excel.BooleanCellValue#referencedValues:member">Excel.BooleanCellValue.referencedValues</xref>
 
-  - <xref uid="excel!Excel.DoubleCellValue#referencedValues:member"
-  alttext="Excel.DoubleCellValue.referencedValues" />
+  - <xref
+  href="excel!Excel.DoubleCellValue#referencedValues:member">Excel.DoubleCellValue.referencedValues</xref>
 
-  - <xref uid="excel!Excel.EntityCellValue#referencedValues:member"
-  alttext="Excel.EntityCellValue.referencedValues" />
+  - <xref
+  href="excel!Excel.EntityCellValue#referencedValues:member">Excel.EntityCellValue.referencedValues</xref>
 
-  - <xref uid="excel!Excel.StringCellValue#referencedValues:member"
-  alttext="Excel.StringCellValue.referencedValues" />
+  - <xref
+  href="excel!Excel.StringCellValue#referencedValues:member">Excel.StringCellValue.referencedValues</xref>
 
 
   Learn more about the types in this type alias through the following links. 

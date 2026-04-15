@@ -13,21 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#sectionGroups:member"
-  alttext="OneNote.Interfaces.NotebookCollectionLoadOptions.sectionGroups" />
+  href="onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#sectionGroups:member">OneNote.Interfaces.NotebookCollectionLoadOptions.sectionGroups</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.NotebookLoadOptions#sectionGroups:member"
-  alttext="OneNote.Interfaces.NotebookLoadOptions.sectionGroups" />
+  href="onenote!OneNote.Interfaces.NotebookLoadOptions#sectionGroups:member">OneNote.Interfaces.NotebookLoadOptions.sectionGroups</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sectionGroups:member"
-  alttext="OneNote.Interfaces.SectionGroupCollectionLoadOptions.sectionGroups"
-  />
+  href="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#sectionGroups:member">OneNote.Interfaces.SectionGroupCollectionLoadOptions.sectionGroups</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions#sectionGroups:member"
-  alttext="OneNote.Interfaces.SectionGroupLoadOptions.sectionGroups" />
+  href="onenote!OneNote.Interfaces.SectionGroupLoadOptions#sectionGroups:member">OneNote.Interfaces.SectionGroupLoadOptions.sectionGroups</xref>
 
 isPreview: false
 isDeprecated: false

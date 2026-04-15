@@ -15,8 +15,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.WorksheetChangedEventArgs#changeDirectionState:member"
-  alttext="Excel.WorksheetChangedEventArgs.changeDirectionState" />
+  href="excel!Excel.WorksheetChangedEventArgs#changeDirectionState:member">Excel.WorksheetChangedEventArgs.changeDirectionState</xref>
 
 isPreview: false
 isDeprecated: false

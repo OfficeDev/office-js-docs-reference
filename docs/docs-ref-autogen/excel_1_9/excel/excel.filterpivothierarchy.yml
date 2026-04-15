@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterPivotHierarchyCollection#items:member"
-  alttext="Excel.FilterPivotHierarchyCollection.items" />
+  - <xref
+  href="excel!Excel.FilterPivotHierarchyCollection#items:member">Excel.FilterPivotHierarchyCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

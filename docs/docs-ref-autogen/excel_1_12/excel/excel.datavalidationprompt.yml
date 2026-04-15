@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidation#prompt:member"
-  alttext="Excel.DataValidation.prompt" />
+  - <xref
+  href="excel!Excel.DataValidation#prompt:member">Excel.DataValidation.prompt</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DataValidationData#prompt:member"
-  alttext="Excel.Interfaces.DataValidationData.prompt" />
+  - <xref
+  href="excel!Excel.Interfaces.DataValidationData#prompt:member">Excel.Interfaces.DataValidationData.prompt</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DataValidationUpdateData#prompt:member"
-  alttext="Excel.Interfaces.DataValidationUpdateData.prompt" />
+  - <xref
+  href="excel!Excel.Interfaces.DataValidationUpdateData#prompt:member">Excel.Interfaces.DataValidationUpdateData.prompt</xref>
 
 isPreview: false
 isDeprecated: false

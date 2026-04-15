@@ -15,8 +15,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member"
-  alttext="Excel.Interfaces.CultureInfoLoadOptions.numberFormat" />
+  href="excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member">Excel.Interfaces.CultureInfoLoadOptions.numberFormat</xref>
 
 isPreview: false
 isDeprecated: false

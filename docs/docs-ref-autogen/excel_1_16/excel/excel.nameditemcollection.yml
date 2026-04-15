@@ -14,11 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#names:member" alttext="Excel.Workbook.names"
-  />
+  - <xref href="excel!Excel.Workbook#names:member">Excel.Workbook.names</xref>
 
-  - <xref uid="excel!Excel.Worksheet#names:member"
-  alttext="Excel.Worksheet.names" />
+  - <xref href="excel!Excel.Worksheet#names:member">Excel.Worksheet.names</xref>
 
 isPreview: false
 isDeprecated: false

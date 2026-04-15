@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Window#panes:member" alttext="Excel.Window.panes" />
+  - <xref href="excel!Excel.Window#panes:member">Excel.Window.panes</xref>
 
 isPreview: false
 isDeprecated: false

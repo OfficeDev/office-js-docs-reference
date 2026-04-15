@@ -13,11 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#host:member" alttext="Office.Context.host"
-  />
+  - <xref href="office!Office.Context#host:member">Office.Context.host</xref>
 
-  - <xref uid="office!Office.ContextInformation#host:member"
-  alttext="Office.ContextInformation.host" />
+  - <xref
+  href="office!Office.ContextInformation#host:member">Office.ContextInformation.host</xref>
 
   #### Examples
 

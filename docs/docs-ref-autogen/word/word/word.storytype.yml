@@ -12,23 +12,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Bookmark#storyType:member"
-  alttext="Word.Bookmark.storyType" />
+  - <xref
+  href="word!Word.Bookmark#storyType:member">Word.Bookmark.storyType</xref>
 
-  - <xref uid="word!Word.Interfaces.BookmarkData#storyType:member"
-  alttext="Word.Interfaces.BookmarkData.storyType" />
+  - <xref
+  href="word!Word.Interfaces.BookmarkData#storyType:member">Word.Interfaces.BookmarkData.storyType</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#storyType:member"
-  alttext="Word.Interfaces.RangeData.storyType" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#storyType:member">Word.Interfaces.RangeData.storyType</xref>
 
-  - <xref uid="word!Word.Interfaces.SelectionData#storyType:member"
-  alttext="Word.Interfaces.SelectionData.storyType" />
+  - <xref
+  href="word!Word.Interfaces.SelectionData#storyType:member">Word.Interfaces.SelectionData.storyType</xref>
 
-  - <xref uid="word!Word.Range#storyType:member" alttext="Word.Range.storyType"
-  />
+  - <xref href="word!Word.Range#storyType:member">Word.Range.storyType</xref>
 
-  - <xref uid="word!Word.Selection#storyType:member"
-  alttext="Word.Selection.storyType" />
+  - <xref
+  href="word!Word.Selection#storyType:member">Word.Selection.storyType</xref>
 
 isPreview: false
 isDeprecated: false

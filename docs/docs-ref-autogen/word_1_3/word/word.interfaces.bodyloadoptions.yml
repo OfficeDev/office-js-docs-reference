@@ -12,55 +12,50 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.BodyLoadOptions.parentBody" />
+  - <xref
+  href="word!Word.Interfaces.BodyLoadOptions#parentBody:member">Word.Interfaces.BodyLoadOptions.parentBody</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member"
-  alttext="Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject" />
+  href="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member">Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentBody" />
-
-  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.parentBody" />
-
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#body:member"
-  alttext="Word.Interfaces.DocumentLoadOptions.body" />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentBody</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentBody" />
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.parentBody" />
+  href="word!Word.Interfaces.ContentControlLoadOptions#parentBody:member">Word.Interfaces.ContentControlLoadOptions.parentBody</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentBody" />
-
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.RangeLoadOptions.parentBody" />
-
-  - <xref uid="word!Word.Interfaces.SectionCollectionLoadOptions#body:member"
-  alttext="Word.Interfaces.SectionCollectionLoadOptions.body" />
-
-  - <xref uid="word!Word.Interfaces.SectionLoadOptions#body:member"
-  alttext="Word.Interfaces.SectionLoadOptions.body" />
-
-  - <xref uid="word!Word.Interfaces.TableCellCollectionLoadOptions#body:member"
-  alttext="Word.Interfaces.TableCellCollectionLoadOptions.body" />
-
-  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#body:member"
-  alttext="Word.Interfaces.TableCellLoadOptions.body" />
+  href="word!Word.Interfaces.DocumentLoadOptions#body:member">Word.Interfaces.DocumentLoadOptions.body</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.TableCollectionLoadOptions.parentBody" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentBody</xref>
 
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentBody:member"
-  alttext="Word.Interfaces.TableLoadOptions.parentBody" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member">Word.Interfaces.ParagraphLoadOptions.parentBody</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member">Word.Interfaces.RangeCollectionLoadOptions.parentBody</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeLoadOptions#parentBody:member">Word.Interfaces.RangeLoadOptions.parentBody</xref>
+
+  - <xref
+  href="word!Word.Interfaces.SectionCollectionLoadOptions#body:member">Word.Interfaces.SectionCollectionLoadOptions.body</xref>
+
+  - <xref
+  href="word!Word.Interfaces.SectionLoadOptions#body:member">Word.Interfaces.SectionLoadOptions.body</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCellCollectionLoadOptions#body:member">Word.Interfaces.TableCellCollectionLoadOptions.body</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCellLoadOptions#body:member">Word.Interfaces.TableCellLoadOptions.body</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member">Word.Interfaces.TableCollectionLoadOptions.parentBody</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableLoadOptions#parentBody:member">Word.Interfaces.TableLoadOptions.parentBody</xref>
 
 isPreview: false
 isDeprecated: false

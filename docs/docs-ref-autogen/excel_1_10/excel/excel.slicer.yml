@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SlicerCollection#items:member"
-  alttext="Excel.SlicerCollection.items" />
+  - <xref
+  href="excel!Excel.SlicerCollection#items:member">Excel.SlicerCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

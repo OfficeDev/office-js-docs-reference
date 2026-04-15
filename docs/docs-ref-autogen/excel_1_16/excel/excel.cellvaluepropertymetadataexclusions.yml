@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellValuePropertyMetadata#excludeFrom:member"
-  alttext="Excel.CellValuePropertyMetadata.excludeFrom" />
+  - <xref
+  href="excel!Excel.CellValuePropertyMetadata#excludeFrom:member">Excel.CellValuePropertyMetadata.excludeFrom</xref>
 
 isPreview: false
 isDeprecated: false

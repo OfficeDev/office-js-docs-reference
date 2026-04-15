@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Coauthoring#authors:member"
-  alttext="Word.Coauthoring.authors" />
+  - <xref
+  href="word!Word.Coauthoring#authors:member">Word.Coauthoring.authors</xref>
 
 isPreview: false
 isDeprecated: false

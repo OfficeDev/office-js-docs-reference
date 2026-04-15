@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.TableCellCollectionData#items:member"
-  alttext="OneNote.Interfaces.TableCellCollectionData.items" />
+  - <xref
+  href="onenote!OneNote.Interfaces.TableCellCollectionData#items:member">OneNote.Interfaces.TableCellCollectionData.items</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.TableCellCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member">OneNote.Interfaces.TableCellCollectionUpdateData.items</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.TableRowData#cells:member"
-  alttext="OneNote.Interfaces.TableRowData.cells" />
+  - <xref
+  href="onenote!OneNote.Interfaces.TableRowData#cells:member">OneNote.Interfaces.TableRowData.cells</xref>
 
 isPreview: false
 isDeprecated: false

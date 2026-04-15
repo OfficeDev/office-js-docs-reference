@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DropCap#position:member"
-  alttext="Word.DropCap.position" />
+  - <xref href="word!Word.DropCap#position:member">Word.DropCap.position</xref>
 
-  - <xref uid="word!Word.Interfaces.DropCapData#position:member"
-  alttext="Word.Interfaces.DropCapData.position" />
+  - <xref
+  href="word!Word.Interfaces.DropCapData#position:member">Word.Interfaces.DropCapData.position</xref>
 
 isPreview: false
 isDeprecated: false

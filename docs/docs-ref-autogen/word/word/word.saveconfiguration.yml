@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.WindowCloseOptions#saveChanges:member"
-  alttext="Word.WindowCloseOptions.saveChanges" />
+  - <xref
+  href="word!Word.WindowCloseOptions#saveChanges:member">Word.WindowCloseOptions.saveChanges</xref>
 
   #### Examples
 

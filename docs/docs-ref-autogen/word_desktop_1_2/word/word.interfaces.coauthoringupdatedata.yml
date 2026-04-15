@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionData#items:member"
-  alttext="Word.Interfaces.CoauthoringUpdateCollectionData.items" />
+  href="word!Word.Interfaces.CoauthoringUpdateCollectionData#items:member">Word.Interfaces.CoauthoringUpdateCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CoauthoringUpdateCollectionUpdateData.items" />
+  href="word!Word.Interfaces.CoauthoringUpdateCollectionUpdateData#items:member">Word.Interfaces.CoauthoringUpdateCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

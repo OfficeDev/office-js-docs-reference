@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onChanged:member"
-  alttext="Excel.Worksheet.onChanged" />
+  - <xref
+  href="excel!Excel.Worksheet#onChanged:member">Excel.Worksheet.onChanged</xref>
 
 isPreview: false
 isDeprecated: false

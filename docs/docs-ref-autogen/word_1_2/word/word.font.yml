@@ -13,14 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#font:member" alttext="Word.Body.font" />
+  - <xref href="word!Word.Body#font:member">Word.Body.font</xref>
 
-  - <xref uid="word!Word.ContentControl#font:member"
-  alttext="Word.ContentControl.font" />
+  - <xref
+  href="word!Word.ContentControl#font:member">Word.ContentControl.font</xref>
 
-  - <xref uid="word!Word.Paragraph#font:member" alttext="Word.Paragraph.font" />
+  - <xref href="word!Word.Paragraph#font:member">Word.Paragraph.font</xref>
 
-  - <xref uid="word!Word.Range#font:member" alttext="Word.Range.font" />
+  - <xref href="word!Word.Range#font:member">Word.Range.font</xref>
 
   #### Examples
 

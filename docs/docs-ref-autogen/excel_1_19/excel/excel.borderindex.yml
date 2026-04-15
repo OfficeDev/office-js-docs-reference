@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeBorderData#sideIndex:member"
-  alttext="Excel.Interfaces.RangeBorderData.sideIndex" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeBorderData#sideIndex:member">Excel.Interfaces.RangeBorderData.sideIndex</xref>
 
-  - <xref uid="excel!Excel.RangeBorder#sideIndex:member"
-  alttext="Excel.RangeBorder.sideIndex" />
+  - <xref
+  href="excel!Excel.RangeBorder#sideIndex:member">Excel.RangeBorder.sideIndex</xref>
 
 isPreview: false
 isDeprecated: false

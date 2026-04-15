@@ -13,15 +13,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member"
-  alttext="Excel.Interfaces.PivotTableCollectionLoadOptions.layout" />
-
-  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member"
-  alttext="Excel.Interfaces.PivotTableLoadOptions.layout" />
+  href="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member">Excel.Interfaces.PivotTableCollectionLoadOptions.layout</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#layout:member"
-  alttext="Excel.Interfaces.PivotTableScopedCollectionLoadOptions.layout" />
+  href="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member">Excel.Interfaces.PivotTableLoadOptions.layout</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#layout:member">Excel.Interfaces.PivotTableScopedCollectionLoadOptions.layout</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.CustomXmlParts#addAsync:member(1)"
-  alttext="Office.CustomXmlParts.addAsync" />
+  - <xref
+  href="office!Office.CustomXmlParts#addAsync:member(1)">Office.CustomXmlParts.addAsync</xref>
 
-  - <xref uid="office!Office.CustomXmlParts#getByIdAsync:member(1)"
-  alttext="Office.CustomXmlParts.getByIdAsync" />
+  - <xref
+  href="office!Office.CustomXmlParts#getByIdAsync:member(1)">Office.CustomXmlParts.getByIdAsync</xref>
 
-  - <xref uid="office!Office.CustomXmlParts#getByNamespaceAsync:member(1)"
-  alttext="Office.CustomXmlParts.getByNamespaceAsync" />
+  - <xref
+  href="office!Office.CustomXmlParts#getByNamespaceAsync:member(1)">Office.CustomXmlParts.getByNamespaceAsync</xref>
 
 isPreview: false
 isDeprecated: false

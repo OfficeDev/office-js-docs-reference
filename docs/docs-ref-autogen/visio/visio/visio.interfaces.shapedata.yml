@@ -8,23 +8,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.PageData#allShapes:member"
-  alttext="Visio.Interfaces.PageData.allShapes" />
+  - <xref
+  href="visio!Visio.Interfaces.PageData#allShapes:member">Visio.Interfaces.PageData.allShapes</xref>
 
-  - <xref uid="visio!Visio.Interfaces.PageData#shapes:member"
-  alttext="Visio.Interfaces.PageData.shapes" />
+  - <xref
+  href="visio!Visio.Interfaces.PageData#shapes:member">Visio.Interfaces.PageData.shapes</xref>
 
-  - <xref uid="visio!Visio.Interfaces.SelectionData#shapes:member"
-  alttext="Visio.Interfaces.SelectionData.shapes" />
+  - <xref
+  href="visio!Visio.Interfaces.SelectionData#shapes:member">Visio.Interfaces.SelectionData.shapes</xref>
 
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionData#items:member"
-  alttext="Visio.Interfaces.ShapeCollectionData.items" />
+  - <xref
+  href="visio!Visio.Interfaces.ShapeCollectionData#items:member">Visio.Interfaces.ShapeCollectionData.items</xref>
 
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member"
-  alttext="Visio.Interfaces.ShapeCollectionUpdateData.items" />
+  - <xref
+  href="visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member">Visio.Interfaces.ShapeCollectionUpdateData.items</xref>
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#subShapes:member"
-  alttext="Visio.Interfaces.ShapeData.subShapes" />
+  - <xref
+  href="visio!Visio.Interfaces.ShapeData#subShapes:member">Visio.Interfaces.ShapeData.subShapes</xref>
 
 isPreview: false
 isDeprecated: false

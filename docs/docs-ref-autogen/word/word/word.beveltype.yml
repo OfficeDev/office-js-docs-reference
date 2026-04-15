@@ -16,26 +16,22 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelBottomType:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.bevelBottomType" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#bevelBottomType:member">Word.Interfaces.ThreeDimensionalFormatData.bevelBottomType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelTopType:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.bevelTopType" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#bevelTopType:member">Word.Interfaces.ThreeDimensionalFormatData.bevelTopType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelBottomType:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelBottomType" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelBottomType:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelBottomType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelTopType:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelTopType" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelTopType:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelTopType</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#bevelBottomType:member"
-  alttext="Word.ThreeDimensionalFormat.bevelBottomType" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#bevelBottomType:member">Word.ThreeDimensionalFormat.bevelBottomType</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#bevelTopType:member"
-  alttext="Word.ThreeDimensionalFormat.bevelTopType" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#bevelTopType:member">Word.ThreeDimensionalFormat.bevelTopType</xref>
 
 isPreview: false
 isDeprecated: false

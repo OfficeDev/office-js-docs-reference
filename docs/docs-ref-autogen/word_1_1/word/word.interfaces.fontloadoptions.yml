@@ -12,27 +12,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member"
-  alttext="Word.Interfaces.BodyLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.BodyLoadOptions#font:member">Word.Interfaces.BodyLoadOptions.font</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.font" />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member">Word.Interfaces.ContentControlCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#font:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlLoadOptions#font:member">Word.Interfaces.ContentControlLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member">Word.Interfaces.ParagraphCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#font:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphLoadOptions#font:member">Word.Interfaces.ParagraphLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#font:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#font:member">Word.Interfaces.RangeCollectionLoadOptions.font</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member"
-  alttext="Word.Interfaces.RangeLoadOptions.font" />
+  - <xref
+  href="word!Word.Interfaces.RangeLoadOptions#font:member">Word.Interfaces.RangeLoadOptions.font</xref>
 
 isPreview: false
 isDeprecated: false

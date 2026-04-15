@@ -14,29 +14,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ConditionalStyle#shading:member"
-  alttext="Word.ConditionalStyle.shading" />
+  - <xref
+  href="word!Word.ConditionalStyle#shading:member">Word.ConditionalStyle.shading</xref>
 
-  - <xref uid="word!Word.Frame#shading:member" alttext="Word.Frame.shading" />
+  - <xref href="word!Word.Frame#shading:member">Word.Frame.shading</xref>
 
-  - <xref uid="word!Word.Paragraph#shading:member"
-  alttext="Word.Paragraph.shading" />
+  - <xref
+  href="word!Word.Paragraph#shading:member">Word.Paragraph.shading</xref>
 
-  - <xref uid="word!Word.Range#shading:member" alttext="Word.Range.shading" />
+  - <xref href="word!Word.Range#shading:member">Word.Range.shading</xref>
 
-  - <xref uid="word!Word.Selection#shading:member"
-  alttext="Word.Selection.shading" />
+  - <xref
+  href="word!Word.Selection#shading:member">Word.Selection.shading</xref>
 
-  - <xref uid="word!Word.Table#shading:member" alttext="Word.Table.shading" />
+  - <xref href="word!Word.Table#shading:member">Word.Table.shading</xref>
 
-  - <xref uid="word!Word.TableCell#shading:member"
-  alttext="Word.TableCell.shading" />
+  - <xref
+  href="word!Word.TableCell#shading:member">Word.TableCell.shading</xref>
 
-  - <xref uid="word!Word.TableColumn#shading:member"
-  alttext="Word.TableColumn.shading" />
+  - <xref
+  href="word!Word.TableColumn#shading:member">Word.TableColumn.shading</xref>
 
-  - <xref uid="word!Word.TableRow#shading:member"
-  alttext="Word.TableRow.shading" />
+  - <xref href="word!Word.TableRow#shading:member">Word.TableRow.shading</xref>
 
 isPreview: false
 isDeprecated: false

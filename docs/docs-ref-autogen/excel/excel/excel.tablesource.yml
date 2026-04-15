@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableData#source:member"
-  alttext="Excel.Interfaces.TableData.source" />
+  - <xref
+  href="excel!Excel.Interfaces.TableData#source:member">Excel.Interfaces.TableData.source</xref>
 
-  - <xref uid="excel!Excel.Table#source:member" alttext="Excel.Table.source" />
+  - <xref href="excel!Excel.Table#source:member">Excel.Table.source</xref>
 
 isPreview: true
 isDeprecated: false

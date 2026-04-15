@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#freezePanes:member"
-  alttext="Excel.Worksheet.freezePanes" />
+  - <xref
+  href="excel!Excel.Worksheet#freezePanes:member">Excel.Worksheet.freezePanes</xref>
 
 isPreview: false
 isDeprecated: false

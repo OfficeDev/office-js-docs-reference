@@ -17,23 +17,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShadingData#texture:member"
-  alttext="Word.Interfaces.ShadingData.texture" />
+  - <xref
+  href="word!Word.Interfaces.ShadingData#texture:member">Word.Interfaces.ShadingData.texture</xref>
 
-  - <xref uid="word!Word.Interfaces.ShadingUniversalData#texture:member"
-  alttext="Word.Interfaces.ShadingUniversalData.texture" />
+  - <xref
+  href="word!Word.Interfaces.ShadingUniversalData#texture:member">Word.Interfaces.ShadingUniversalData.texture</xref>
 
-  - <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData#texture:member"
-  alttext="Word.Interfaces.ShadingUniversalUpdateData.texture" />
+  - <xref
+  href="word!Word.Interfaces.ShadingUniversalUpdateData#texture:member">Word.Interfaces.ShadingUniversalUpdateData.texture</xref>
 
-  - <xref uid="word!Word.Interfaces.ShadingUpdateData#texture:member"
-  alttext="Word.Interfaces.ShadingUpdateData.texture" />
+  - <xref
+  href="word!Word.Interfaces.ShadingUpdateData#texture:member">Word.Interfaces.ShadingUpdateData.texture</xref>
 
-  - <xref uid="word!Word.Shading#texture:member" alttext="Word.Shading.texture"
-  />
+  - <xref href="word!Word.Shading#texture:member">Word.Shading.texture</xref>
 
-  - <xref uid="word!Word.ShadingUniversal#texture:member"
-  alttext="Word.ShadingUniversal.texture" />
+  - <xref
+  href="word!Word.ShadingUniversal#texture:member">Word.ShadingUniversal.texture</xref>
 
   #### Examples
 

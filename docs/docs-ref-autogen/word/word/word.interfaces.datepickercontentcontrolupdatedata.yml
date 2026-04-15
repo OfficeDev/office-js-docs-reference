@@ -11,8 +11,7 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlUpdateData#datePickerContentControl:member"
-  alttext="Word.Interfaces.ContentControlUpdateData.datePickerContentControl" />
+  href="word!Word.Interfaces.ContentControlUpdateData#datePickerContentControl:member">Word.Interfaces.ContentControlUpdateData.datePickerContentControl</xref>
 
 isPreview: false
 isDeprecated: false

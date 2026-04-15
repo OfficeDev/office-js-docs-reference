@@ -15,26 +15,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#paragraphs:member" alttext="Word.Body.paragraphs"
-  />
+  - <xref href="word!Word.Body#paragraphs:member">Word.Body.paragraphs</xref>
 
-  - <xref uid="word!Word.ContentControl#paragraphs:member"
-  alttext="Word.ContentControl.paragraphs" />
+  - <xref
+  href="word!Word.ContentControl#paragraphs:member">Word.ContentControl.paragraphs</xref>
 
-  - <xref uid="word!Word.Document#listParagraphs:member"
-  alttext="Word.Document.listParagraphs" />
+  - <xref
+  href="word!Word.Document#listParagraphs:member">Word.Document.listParagraphs</xref>
 
-  - <xref uid="word!Word.Document#paragraphs:member"
-  alttext="Word.Document.paragraphs" />
+  - <xref
+  href="word!Word.Document#paragraphs:member">Word.Document.paragraphs</xref>
 
-  - <xref uid="word!Word.List#paragraphs:member" alttext="Word.List.paragraphs"
-  />
+  - <xref href="word!Word.List#paragraphs:member">Word.List.paragraphs</xref>
 
-  - <xref uid="word!Word.Range#paragraphs:member"
-  alttext="Word.Range.paragraphs" />
+  - <xref href="word!Word.Range#paragraphs:member">Word.Range.paragraphs</xref>
 
-  - <xref uid="word!Word.Selection#paragraphs:member"
-  alttext="Word.Selection.paragraphs" />
+  - <xref
+  href="word!Word.Selection#paragraphs:member">Word.Selection.paragraphs</xref>
 
   #### Examples
 

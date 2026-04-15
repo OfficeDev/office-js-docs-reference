@@ -13,8 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.FontLoadOptions#threeDimensionalFormat:member"
-  alttext="Word.Interfaces.FontLoadOptions.threeDimensionalFormat" />
+  href="word!Word.Interfaces.FontLoadOptions#threeDimensionalFormat:member">Word.Interfaces.FontLoadOptions.threeDimensionalFormat</xref>
 
 isPreview: false
 isDeprecated: false

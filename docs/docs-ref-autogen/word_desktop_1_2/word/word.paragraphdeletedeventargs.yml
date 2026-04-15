@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#onParagraphDeleted:member"
-  alttext="Word.Document.onParagraphDeleted" />
+  - <xref
+  href="word!Word.Document#onParagraphDeleted:member">Word.Document.onParagraphDeleted</xref>
 
   #### Examples
 

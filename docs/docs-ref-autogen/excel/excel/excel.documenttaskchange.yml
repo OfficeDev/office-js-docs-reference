@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTaskChangeCollection#items:member"
-  alttext="Excel.DocumentTaskChangeCollection.items" />
+  - <xref
+  href="excel!Excel.DocumentTaskChangeCollection#items:member">Excel.DocumentTaskChangeCollection.items</xref>
 
 isPreview: true
 isDeprecated: false

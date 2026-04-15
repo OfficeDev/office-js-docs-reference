@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#body:member" alttext="Word.Document.body" />
+  - <xref href="word!Word.Document#body:member">Word.Document.body</xref>
 
-  - <xref uid="word!Word.Section#body:member" alttext="Word.Section.body" />
+  - <xref href="word!Word.Section#body:member">Word.Section.body</xref>
 
   #### Examples
 

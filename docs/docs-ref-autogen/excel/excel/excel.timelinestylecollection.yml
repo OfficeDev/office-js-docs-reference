@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#timelineStyles:member"
-  alttext="Excel.Workbook.timelineStyles" />
+  - <xref
+  href="excel!Excel.Workbook#timelineStyles:member">Excel.Workbook.timelineStyles</xref>
 
 isPreview: false
 isDeprecated: false

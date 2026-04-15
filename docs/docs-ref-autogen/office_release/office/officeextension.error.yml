@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!OfficeExtension.Error#innerError:member"
-  alttext="OfficeExtension.Error.innerError" />
+  - <xref
+  href="office!OfficeExtension.Error#innerError:member">OfficeExtension.Error.innerError</xref>
 
 isPreview: false
 isDeprecated: false

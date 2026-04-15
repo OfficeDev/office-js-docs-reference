@@ -19,10 +19,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#selection:member"
-  alttext="Word.Document.selection" />
+  - <xref
+  href="word!Word.Document#selection:member">Word.Document.selection</xref>
 
-  - <xref uid="word!Word.Pane#selection:member" alttext="Word.Pane.selection" />
+  - <xref href="word!Word.Pane#selection:member">Word.Pane.selection</xref>
 
   #### Examples
 

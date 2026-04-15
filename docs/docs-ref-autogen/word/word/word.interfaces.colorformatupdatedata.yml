@@ -10,35 +10,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#backgroundColor:member"
-  alttext="Word.Interfaces.FillFormatUpdateData.backgroundColor" />
-
-  - <xref uid="word!Word.Interfaces.FillFormatUpdateData#foregroundColor:member"
-  alttext="Word.Interfaces.FillFormatUpdateData.foregroundColor" />
-
-  - <xref uid="word!Word.Interfaces.FontUpdateData#textColor:member"
-  alttext="Word.Interfaces.FontUpdateData.textColor" />
-
-  - <xref uid="word!Word.Interfaces.GlowFormatUpdateData#color:member"
-  alttext="Word.Interfaces.GlowFormatUpdateData.color" />
-
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#backgroundColor:member"
-  alttext="Word.Interfaces.LineFormatUpdateData.backgroundColor" />
-
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#foregroundColor:member"
-  alttext="Word.Interfaces.LineFormatUpdateData.foregroundColor" />
+  - <xref
+  href="word!Word.Interfaces.FillFormatUpdateData#backgroundColor:member">Word.Interfaces.FillFormatUpdateData.backgroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ShadowFormatUpdateData#foregroundColor:member"
-  alttext="Word.Interfaces.ShadowFormatUpdateData.foregroundColor" />
+  href="word!Word.Interfaces.FillFormatUpdateData#foregroundColor:member">Word.Interfaces.FillFormatUpdateData.foregroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#contourColor:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.contourColor" />
+  href="word!Word.Interfaces.FontUpdateData#textColor:member">Word.Interfaces.FontUpdateData.textColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColor:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColor" />
+  href="word!Word.Interfaces.GlowFormatUpdateData#color:member">Word.Interfaces.GlowFormatUpdateData.color</xref>
+
+  - <xref
+  href="word!Word.Interfaces.LineFormatUpdateData#backgroundColor:member">Word.Interfaces.LineFormatUpdateData.backgroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.LineFormatUpdateData#foregroundColor:member">Word.Interfaces.LineFormatUpdateData.foregroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ShadowFormatUpdateData#foregroundColor:member">Word.Interfaces.ShadowFormatUpdateData.foregroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#contourColor:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.contourColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColor:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColor</xref>
 
 isPreview: false
 isDeprecated: false

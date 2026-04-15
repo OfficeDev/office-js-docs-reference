@@ -20,20 +20,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#contentControls:member"
-  alttext="Word.Body.contentControls" />
+  - <xref
+  href="word!Word.Body#contentControls:member">Word.Body.contentControls</xref>
 
-  - <xref uid="word!Word.ContentControl#contentControls:member"
-  alttext="Word.ContentControl.contentControls" />
+  - <xref
+  href="word!Word.ContentControl#contentControls:member">Word.ContentControl.contentControls</xref>
 
-  - <xref uid="word!Word.Document#contentControls:member"
-  alttext="Word.Document.contentControls" />
+  - <xref
+  href="word!Word.Document#contentControls:member">Word.Document.contentControls</xref>
 
-  - <xref uid="word!Word.Paragraph#contentControls:member"
-  alttext="Word.Paragraph.contentControls" />
+  - <xref
+  href="word!Word.Paragraph#contentControls:member">Word.Paragraph.contentControls</xref>
 
-  - <xref uid="word!Word.Range#contentControls:member"
-  alttext="Word.Range.contentControls" />
+  - <xref
+  href="word!Word.Range#contentControls:member">Word.Range.contentControls</xref>
 
   #### Examples
 

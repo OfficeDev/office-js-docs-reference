@@ -13,20 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#subtype:member"
-  alttext="Word.ContentControl.subtype" />
+  - <xref
+  href="word!Word.ContentControl#subtype:member">Word.ContentControl.subtype</xref>
 
-  - <xref uid="word!Word.ContentControl#type:member"
-  alttext="Word.ContentControl.type" />
+  - <xref
+  href="word!Word.ContentControl#type:member">Word.ContentControl.type</xref>
 
-  - <xref uid="word!Word.ContentControlOptions#types:member"
-  alttext="Word.ContentControlOptions.types" />
+  - <xref
+  href="word!Word.ContentControlOptions#types:member">Word.ContentControlOptions.types</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#subtype:member"
-  alttext="Word.Interfaces.ContentControlData.subtype" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#subtype:member">Word.Interfaces.ContentControlData.subtype</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#type:member"
-  alttext="Word.Interfaces.ContentControlData.type" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#type:member">Word.Interfaces.ContentControlData.type</xref>
 
   #### Examples
 

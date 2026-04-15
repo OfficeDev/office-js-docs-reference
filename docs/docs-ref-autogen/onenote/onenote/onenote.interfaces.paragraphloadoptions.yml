@@ -14,38 +14,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member"
-  alttext="OneNote.Interfaces.ImageLoadOptions.paragraph" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member">OneNote.Interfaces.ImageLoadOptions.paragraph</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#paragraph:member"
-  alttext="OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph" />
-
-  - <xref uid="onenote!OneNote.Interfaces.InkWordLoadOptions#paragraph:member"
-  alttext="OneNote.Interfaces.InkWordLoadOptions.paragraph" />
+  href="onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#paragraph:member">OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraph" />
+  href="onenote!OneNote.Interfaces.InkWordLoadOptions#paragraph:member">OneNote.Interfaces.InkWordLoadOptions.paragraph</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraphOrNull:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraphOrNull"
-  />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraph:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraph</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraph:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.parentParagraph" />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentParagraphOrNull:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraphOrNull</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraphOrNull:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull" />
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraph:member">OneNote.Interfaces.ParagraphLoadOptions.parentParagraph</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member"
-  alttext="OneNote.Interfaces.RichTextLoadOptions.paragraph" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraphOrNull:member">OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.TableLoadOptions#paragraph:member"
-  alttext="OneNote.Interfaces.TableLoadOptions.paragraph" />
+  - <xref
+  href="onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member">OneNote.Interfaces.RichTextLoadOptions.paragraph</xref>
+
+  - <xref
+  href="onenote!OneNote.Interfaces.TableLoadOptions#paragraph:member">OneNote.Interfaces.TableLoadOptions.paragraph</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,18 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TabStopCollectionLoadOptions#next:member"
-  alttext="Word.Interfaces.TabStopCollectionLoadOptions.next" />
+  - <xref
+  href="word!Word.Interfaces.TabStopCollectionLoadOptions#next:member">Word.Interfaces.TabStopCollectionLoadOptions.next</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TabStopCollectionLoadOptions#previous:member"
-  alttext="Word.Interfaces.TabStopCollectionLoadOptions.previous" />
+  href="word!Word.Interfaces.TabStopCollectionLoadOptions#previous:member">Word.Interfaces.TabStopCollectionLoadOptions.previous</xref>
 
-  - <xref uid="word!Word.Interfaces.TabStopLoadOptions#next:member"
-  alttext="Word.Interfaces.TabStopLoadOptions.next" />
+  - <xref
+  href="word!Word.Interfaces.TabStopLoadOptions#next:member">Word.Interfaces.TabStopLoadOptions.next</xref>
 
-  - <xref uid="word!Word.Interfaces.TabStopLoadOptions#previous:member"
-  alttext="Word.Interfaces.TabStopLoadOptions.previous" />
+  - <xref
+  href="word!Word.Interfaces.TabStopLoadOptions#previous:member">Word.Interfaces.TabStopLoadOptions.previous</xref>
 
 isPreview: false
 isDeprecated: false

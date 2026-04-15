@@ -13,8 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ApplicationLoadOptions#activeWindow:member"
-  alttext="Excel.Interfaces.ApplicationLoadOptions.activeWindow" />
+  href="excel!Excel.Interfaces.ApplicationLoadOptions#activeWindow:member">Excel.Interfaces.ApplicationLoadOptions.activeWindow</xref>
 
 isPreview: false
 isDeprecated: false

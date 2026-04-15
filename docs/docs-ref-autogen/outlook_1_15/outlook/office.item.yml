@@ -39,8 +39,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#item:member" alttext="Office.Mailbox.item"
-  />
+  - <xref href="outlook!Office.Mailbox#item:member">Office.Mailbox.item</xref>
 
   #### Examples
 

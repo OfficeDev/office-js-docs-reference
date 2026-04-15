@@ -13,14 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#repeatingSectionContentControl:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.repeatingSectionContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#repeatingSectionContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.repeatingSectionContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#repeatingSectionContentControl:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.repeatingSectionContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlLoadOptions#repeatingSectionContentControl:member">Word.Interfaces.ContentControlLoadOptions.repeatingSectionContentControl</xref>
 
 isPreview: false
 isDeprecated: false

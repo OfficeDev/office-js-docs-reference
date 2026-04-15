@@ -10,28 +10,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartAreaFormatUpdateData.font" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartAxisFormatUpdateData.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatUpdateData#font:member">Excel.Interfaces.ChartAreaFormatUpdateData.font</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartAxisTitleFormatUpdateData.font" />
+  href="excel!Excel.Interfaces.ChartAxisFormatUpdateData#font:member">Excel.Interfaces.ChartAxisFormatUpdateData.font</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartDataLabelFormatUpdateData.font" />
+  href="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#font:member">Excel.Interfaces.ChartAxisTitleFormatUpdateData.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartFormatStringUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartFormatStringUpdateData.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member">Excel.Interfaces.ChartDataLabelFormatUpdateData.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartLegendFormatUpdateData.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartFormatStringUpdateData#font:member">Excel.Interfaces.ChartFormatStringUpdateData.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member"
-  alttext="Excel.Interfaces.ChartTitleFormatUpdateData.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartLegendFormatUpdateData#font:member">Excel.Interfaces.ChartLegendFormatUpdateData.font</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member">Excel.Interfaces.ChartTitleFormatUpdateData.font</xref>
 
 isPreview: false
 isDeprecated: false

@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Addin#onVisibilityModeChanged:member(1)"
-  alttext="Office.Addin.onVisibilityModeChanged" />
+  - <xref
+  href="office!Office.Addin#onVisibilityModeChanged:member(1)">Office.Addin.onVisibilityModeChanged</xref>
 
   #### Examples
 

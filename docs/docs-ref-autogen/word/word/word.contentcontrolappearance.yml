@@ -13,69 +13,59 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BuildingBlockGalleryContentControl#appearance:member"
-  alttext="Word.BuildingBlockGalleryContentControl.appearance" />
-
-  - <xref uid="word!Word.ContentControl#appearance:member"
-  alttext="Word.ContentControl.appearance" />
-
-  - <xref uid="word!Word.DatePickerContentControl#appearance:member"
-  alttext="Word.DatePickerContentControl.appearance" />
-
-  - <xref uid="word!Word.GroupContentControl#appearance:member"
-  alttext="Word.GroupContentControl.appearance" />
+  - <xref
+  href="word!Word.BuildingBlockGalleryContentControl#appearance:member">Word.BuildingBlockGalleryContentControl.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#appearance:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.appearance" />
+  href="word!Word.ContentControl#appearance:member">Word.ContentControl.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance"
-  />
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#appearance:member"
-  alttext="Word.Interfaces.ContentControlData.appearance" />
-
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.ContentControlUpdateData.appearance" />
+  href="word!Word.DatePickerContentControl#appearance:member">Word.DatePickerContentControl.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#appearance:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.appearance" />
+  href="word!Word.GroupContentControl#appearance:member">Word.GroupContentControl.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.DatePickerContentControlUpdateData.appearance" />
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#appearance:member"
-  alttext="Word.Interfaces.GroupContentControlData.appearance" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#appearance:member">Word.Interfaces.BuildingBlockGalleryContentControlData.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.GroupContentControlUpdateData.appearance" />
-
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#appearance:member"
-  alttext="Word.Interfaces.PictureContentControlData.appearance" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#appearance:member">Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.PictureContentControlUpdateData.appearance" />
+  href="word!Word.Interfaces.ContentControlData#appearance:member">Word.Interfaces.ContentControlData.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#appearance:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlData.appearance" />
+  href="word!Word.Interfaces.ContentControlUpdateData#appearance:member">Word.Interfaces.ContentControlUpdateData.appearance</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance"
-  />
+  href="word!Word.Interfaces.DatePickerContentControlData#appearance:member">Word.Interfaces.DatePickerContentControlData.appearance</xref>
 
-  - <xref uid="word!Word.PictureContentControl#appearance:member"
-  alttext="Word.PictureContentControl.appearance" />
+  - <xref
+  href="word!Word.Interfaces.DatePickerContentControlUpdateData#appearance:member">Word.Interfaces.DatePickerContentControlUpdateData.appearance</xref>
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#appearance:member"
-  alttext="Word.RepeatingSectionContentControl.appearance" />
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlData#appearance:member">Word.Interfaces.GroupContentControlData.appearance</xref>
+
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member">Word.Interfaces.GroupContentControlUpdateData.appearance</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlData#appearance:member">Word.Interfaces.PictureContentControlData.appearance</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlUpdateData#appearance:member">Word.Interfaces.PictureContentControlUpdateData.appearance</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlData#appearance:member">Word.Interfaces.RepeatingSectionContentControlData.appearance</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#appearance:member">Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance</xref>
+
+  - <xref
+  href="word!Word.PictureContentControl#appearance:member">Word.PictureContentControl.appearance</xref>
+
+  - <xref
+  href="word!Word.RepeatingSectionContentControl#appearance:member">Word.RepeatingSectionContentControl.appearance</xref>
 
   #### Examples
 

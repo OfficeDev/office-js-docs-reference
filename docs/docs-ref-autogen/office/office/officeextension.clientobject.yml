@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!OfficeExtension.RunOptions#previousObjects:member"
-  alttext="OfficeExtension.RunOptions.previousObjects" />
+  - <xref
+  href="office!OfficeExtension.RunOptions#previousObjects:member">OfficeExtension.RunOptions.previousObjects</xref>
 
 isPreview: false
 isDeprecated: false

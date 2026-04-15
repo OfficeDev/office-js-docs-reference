@@ -10,17 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#activeWindow:member"
-  alttext="Excel.Interfaces.ApplicationData.activeWindow" />
+  - <xref
+  href="excel!Excel.Interfaces.ApplicationData#activeWindow:member">Excel.Interfaces.ApplicationData.activeWindow</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#windows:member"
-  alttext="Excel.Interfaces.ApplicationData.windows" />
+  - <xref
+  href="excel!Excel.Interfaces.ApplicationData#windows:member">Excel.Interfaces.ApplicationData.windows</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowCollectionData#items:member"
-  alttext="Excel.Interfaces.WindowCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowCollectionData#items:member">Excel.Interfaces.WindowCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.WindowCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowCollectionUpdateData#items:member">Excel.Interfaces.WindowCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

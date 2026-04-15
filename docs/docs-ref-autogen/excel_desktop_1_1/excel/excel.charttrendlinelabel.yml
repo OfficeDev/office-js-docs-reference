@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartTrendline#label:member"
-  alttext="Excel.ChartTrendline.label" />
+  - <xref
+  href="excel!Excel.ChartTrendline#label:member">Excel.ChartTrendline.label</xref>
 
 isPreview: false
 isDeprecated: false

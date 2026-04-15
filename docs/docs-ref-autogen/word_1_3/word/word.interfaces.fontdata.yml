@@ -8,23 +8,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#font:member"
-  alttext="Word.Interfaces.BodyData.font" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#font:member">Word.Interfaces.BodyData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#font:member"
-  alttext="Word.Interfaces.ContentControlData.font" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#font:member">Word.Interfaces.ContentControlData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#font:member"
-  alttext="Word.Interfaces.ParagraphData.font" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphData#font:member">Word.Interfaces.ParagraphData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#font:member"
-  alttext="Word.Interfaces.RangeData.font" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#font:member">Word.Interfaces.RangeData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableData#font:member"
-  alttext="Word.Interfaces.TableData.font" />
+  - <xref
+  href="word!Word.Interfaces.TableData#font:member">Word.Interfaces.TableData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowData#font:member"
-  alttext="Word.Interfaces.TableRowData.font" />
+  - <xref
+  href="word!Word.Interfaces.TableRowData#font:member">Word.Interfaces.TableRowData.font</xref>
 
 isPreview: false
 isDeprecated: false

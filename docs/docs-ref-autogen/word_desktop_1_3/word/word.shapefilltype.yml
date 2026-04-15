@@ -13,10 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeFillData#type:member"
-  alttext="Word.Interfaces.ShapeFillData.type" />
+  - <xref
+  href="word!Word.Interfaces.ShapeFillData#type:member">Word.Interfaces.ShapeFillData.type</xref>
 
-  - <xref uid="word!Word.ShapeFill#type:member" alttext="Word.ShapeFill.type" />
+  - <xref href="word!Word.ShapeFill#type:member">Word.ShapeFill.type</xref>
 
   #### Examples
 

@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#settings:member"
-  alttext="Word.Document.settings" />
+  - <xref
+  href="word!Word.Document#settings:member">Word.Document.settings</xref>
 
-  - <xref uid="word!Word.DocumentCreated#settings:member"
-  alttext="Word.DocumentCreated.settings" />
+  - <xref
+  href="word!Word.DocumentCreated#settings:member">Word.DocumentCreated.settings</xref>
 
   #### Examples
 

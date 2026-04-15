@@ -15,22 +15,19 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#autoFilter:member"
-  alttext="Excel.Interfaces.TableCollectionLoadOptions.autoFilter" />
-
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#autoFilter:member"
-  alttext="Excel.Interfaces.TableLoadOptions.autoFilter" />
+  href="excel!Excel.Interfaces.TableCollectionLoadOptions#autoFilter:member">Excel.Interfaces.TableCollectionLoadOptions.autoFilter</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member"
-  alttext="Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter" />
+  href="excel!Excel.Interfaces.TableLoadOptions#autoFilter:member">Excel.Interfaces.TableLoadOptions.autoFilter</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#autoFilter:member"
-  alttext="Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter" />
+  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member">Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member"
-  alttext="Excel.Interfaces.WorksheetLoadOptions.autoFilter" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#autoFilter:member">Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member">Excel.Interfaces.WorksheetLoadOptions.autoFilter</xref>
 
 isPreview: false
 isDeprecated: false

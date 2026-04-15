@@ -15,15 +15,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member"
-  alttext="Excel.Interfaces.TableCollectionLoadOptions.tableStyle" />
-
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#tableStyle:member"
-  alttext="Excel.Interfaces.TableLoadOptions.tableStyle" />
+  href="excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member">Excel.Interfaces.TableCollectionLoadOptions.tableStyle</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member"
-  alttext="Excel.Interfaces.TableScopedCollectionLoadOptions.tableStyle" />
+  href="excel!Excel.Interfaces.TableLoadOptions#tableStyle:member">Excel.Interfaces.TableLoadOptions.tableStyle</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member">Excel.Interfaces.TableScopedCollectionLoadOptions.tableStyle</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#onDeactivated:member"
-  alttext="Excel.Chart.onDeactivated" />
+  - <xref
+  href="excel!Excel.Chart#onDeactivated:member">Excel.Chart.onDeactivated</xref>
 
-  - <xref uid="excel!Excel.ChartCollection#onDeactivated:member"
-  alttext="Excel.ChartCollection.onDeactivated" />
+  - <xref
+  href="excel!Excel.ChartCollection#onDeactivated:member">Excel.ChartCollection.onDeactivated</xref>
 
 isPreview: false
 isDeprecated: false

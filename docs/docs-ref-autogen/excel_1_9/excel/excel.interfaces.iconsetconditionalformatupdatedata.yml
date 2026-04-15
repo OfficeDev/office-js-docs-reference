@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSet:member"
-  alttext="Excel.Interfaces.ConditionalFormatUpdateData.iconSet" />
+  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSet:member">Excel.Interfaces.ConditionalFormatUpdateData.iconSet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSetOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject" />
+  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSetOrNullObject:member">Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

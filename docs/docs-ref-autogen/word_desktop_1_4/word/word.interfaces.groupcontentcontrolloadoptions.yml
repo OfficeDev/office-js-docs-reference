@@ -13,13 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#groupContentControl:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.groupContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#groupContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.groupContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#groupContentControl:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.groupContentControl" />
+  href="word!Word.Interfaces.ContentControlLoadOptions#groupContentControl:member">Word.Interfaces.ContentControlLoadOptions.groupContentControl</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#fill:member"
-  alttext="Word.Interfaces.FontLoadOptions.fill" />
+  - <xref
+  href="word!Word.Interfaces.FontLoadOptions#fill:member">Word.Interfaces.FontLoadOptions.fill</xref>
 
 isPreview: false
 isDeprecated: false

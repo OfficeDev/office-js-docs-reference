@@ -17,8 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SettingCollection#items:member"
-  alttext="Excel.SettingCollection.items" />
+  - <xref
+  href="excel!Excel.SettingCollection#items:member">Excel.SettingCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

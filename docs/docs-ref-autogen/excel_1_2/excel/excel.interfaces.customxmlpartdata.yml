@@ -10,20 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member"
-  alttext="Excel.Interfaces.CustomXmlPartCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member">Excel.Interfaces.CustomXmlPartCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.CustomXmlPartCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member">Excel.Interfaces.CustomXmlPartCollectionUpdateData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member"
-  alttext="Excel.Interfaces.CustomXmlPartScopedCollectionData.items" />
+  href="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member">Excel.Interfaces.CustomXmlPartScopedCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member">Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

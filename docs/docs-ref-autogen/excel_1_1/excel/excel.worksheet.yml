@@ -18,11 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#worksheet:member"
-  alttext="Excel.Range.worksheet" />
+  - <xref href="excel!Excel.Range#worksheet:member">Excel.Range.worksheet</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#items:member"
-  alttext="Excel.WorksheetCollection.items" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#items:member">Excel.WorksheetCollection.items</xref>
 
   #### Examples
 

@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#tableOfAuthoritiesCategories:member"
-  alttext="Word.Document.tableOfAuthoritiesCategories" />
+  - <xref
+  href="word!Word.Document#tableOfAuthoritiesCategories:member">Word.Document.tableOfAuthoritiesCategories</xref>
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.DocumentData#application:member"
-  alttext="Visio.Interfaces.DocumentData.application" />
+  - <xref
+  href="visio!Visio.Interfaces.DocumentData#application:member">Visio.Interfaces.DocumentData.application</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#field:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field" />
+  href="excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#field:member">Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyLoadOptions.field" />
+  href="excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member">Excel.Interfaces.DataPivotHierarchyLoadOptions.field</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#id:member"
-  alttext="Excel.LinkedEntityCellValue.id" />
+  - <xref
+  href="excel!Excel.LinkedEntityCellValue#id:member">Excel.LinkedEntityCellValue.id</xref>
 
 isPreview: false
 isDeprecated: false

@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlValidationErrorCollection#items:member"
-  alttext="Word.CustomXmlValidationErrorCollection.items" />
+  - <xref
+  href="word!Word.CustomXmlValidationErrorCollection#items:member">Word.CustomXmlValidationErrorCollection.items</xref>
 
 isPreview: true
 isDeprecated: false

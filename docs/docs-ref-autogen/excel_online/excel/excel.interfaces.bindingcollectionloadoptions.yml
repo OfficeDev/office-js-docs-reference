@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member"
-  alttext="Excel.Interfaces.WorkbookLoadOptions.bindings" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member">Excel.Interfaces.WorkbookLoadOptions.bindings</xref>
 
 isPreview: false
 isDeprecated: false

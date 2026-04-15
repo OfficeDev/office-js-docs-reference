@@ -12,14 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerData#sortBy:member"
-  alttext="Excel.Interfaces.SlicerData.sortBy" />
+  - <xref
+  href="excel!Excel.Interfaces.SlicerData#sortBy:member">Excel.Interfaces.SlicerData.sortBy</xref>
 
-  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#sortBy:member"
-  alttext="Excel.Interfaces.SlicerUpdateData.sortBy" />
+  - <xref
+  href="excel!Excel.Interfaces.SlicerUpdateData#sortBy:member">Excel.Interfaces.SlicerUpdateData.sortBy</xref>
 
-  - <xref uid="excel!Excel.Slicer#sortBy:member" alttext="Excel.Slicer.sortBy"
-  />
+  - <xref href="excel!Excel.Slicer#sortBy:member">Excel.Slicer.sortBy</xref>
 
 isPreview: false
 isDeprecated: false

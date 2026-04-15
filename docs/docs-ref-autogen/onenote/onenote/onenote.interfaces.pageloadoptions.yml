@@ -12,16 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member"
-  alttext="OneNote.Interfaces.InkAnalysisLoadOptions.page" />
+  - <xref
+  href="onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member">OneNote.Interfaces.InkAnalysisLoadOptions.page</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member"
-  alttext="OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage" />
+  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member">OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentLoadOptions#parentPage:member"
-  alttext="OneNote.Interfaces.PageContentLoadOptions.parentPage" />
+  href="onenote!OneNote.Interfaces.PageContentLoadOptions#parentPage:member">OneNote.Interfaces.PageContentLoadOptions.parentPage</xref>
 
 isPreview: false
 isDeprecated: false

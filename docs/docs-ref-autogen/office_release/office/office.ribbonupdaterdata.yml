@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Ribbon#requestUpdate:member(1)"
-  alttext="Office.Ribbon.requestUpdate" />
+  - <xref
+  href="office!Office.Ribbon#requestUpdate:member(1)">Office.Ribbon.requestUpdate</xref>
 
 isPreview: false
 isDeprecated: false

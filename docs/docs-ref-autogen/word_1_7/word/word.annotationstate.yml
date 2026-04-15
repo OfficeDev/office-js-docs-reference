@@ -13,11 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Annotation#state:member"
-  alttext="Word.Annotation.state" />
+  - <xref href="word!Word.Annotation#state:member">Word.Annotation.state</xref>
 
-  - <xref uid="word!Word.Interfaces.AnnotationData#state:member"
-  alttext="Word.Interfaces.AnnotationData.state" />
+  - <xref
+  href="word!Word.Interfaces.AnnotationData#state:member">Word.Interfaces.AnnotationData.state</xref>
 
   #### Examples
 

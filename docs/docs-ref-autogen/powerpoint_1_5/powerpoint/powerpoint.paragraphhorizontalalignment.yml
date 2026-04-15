@@ -18,16 +18,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member"
-  alttext="PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member"
-  alttext="PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment"
-  />
+  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member"
-  alttext="PowerPoint.ParagraphFormat.horizontalAlignment" />
+  - <xref
+  href="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member">PowerPoint.ParagraphFormat.horizontalAlignment</xref>
 
   #### Examples
 

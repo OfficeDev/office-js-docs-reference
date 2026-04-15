@@ -20,8 +20,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.SharedProperties#delegatePermissions:member"
-  alttext="Office.SharedProperties.delegatePermissions" />
+  - <xref
+  href="outlook!Office.SharedProperties#delegatePermissions:member">Office.SharedProperties.delegatePermissions</xref>
 
   #### Examples
 

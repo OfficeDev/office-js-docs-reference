@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData#format:member"
-  alttext="Excel.Interfaces.ChartPlotAreaUpdateData.format" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartPlotAreaUpdateData#format:member">Excel.Interfaces.ChartPlotAreaUpdateData.format</xref>
 
 isPreview: false
 isDeprecated: false

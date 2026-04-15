@@ -8,20 +8,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#tables:member"
-  alttext="Word.Interfaces.BodyData.tables" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#tables:member">Word.Interfaces.BodyData.tables</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#tables:member"
-  alttext="Word.Interfaces.ContentControlData.tables" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#tables:member">Word.Interfaces.ContentControlData.tables</xref>
 
-  - <xref uid="word!Word.Interfaces.TableCollectionData#items:member"
-  alttext="Word.Interfaces.TableCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.TableCollectionData#items:member">Word.Interfaces.TableCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.TableCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.TableCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.TableCollectionUpdateData#items:member">Word.Interfaces.TableCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.TableData#tables:member"
-  alttext="Word.Interfaces.TableData.tables" />
+  - <xref
+  href="word!Word.Interfaces.TableData#tables:member">Word.Interfaces.TableData.tables</xref>
 
 isPreview: false
 isDeprecated: false

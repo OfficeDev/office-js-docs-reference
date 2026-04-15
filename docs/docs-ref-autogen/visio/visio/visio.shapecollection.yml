@@ -13,16 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Page#allShapes:member" alttext="Visio.Page.allShapes"
-  />
+  - <xref href="visio!Visio.Page#allShapes:member">Visio.Page.allShapes</xref>
 
-  - <xref uid="visio!Visio.Page#shapes:member" alttext="Visio.Page.shapes" />
+  - <xref href="visio!Visio.Page#shapes:member">Visio.Page.shapes</xref>
 
-  - <xref uid="visio!Visio.Selection#shapes:member"
-  alttext="Visio.Selection.shapes" />
+  - <xref
+  href="visio!Visio.Selection#shapes:member">Visio.Selection.shapes</xref>
 
-  - <xref uid="visio!Visio.Shape#subShapes:member"
-  alttext="Visio.Shape.subShapes" />
+  - <xref href="visio!Visio.Shape#subShapes:member">Visio.Shape.subShapes</xref>
 
 isPreview: false
 isDeprecated: false

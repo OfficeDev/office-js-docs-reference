@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Slide#shapes:member"
-  alttext="PowerPoint.Slide.shapes" />
+  - <xref
+  href="powerpoint!PowerPoint.Slide#shapes:member">PowerPoint.Slide.shapes</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayout#shapes:member"
-  alttext="PowerPoint.SlideLayout.shapes" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayout#shapes:member">PowerPoint.SlideLayout.shapes</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMaster#shapes:member"
-  alttext="PowerPoint.SlideMaster.shapes" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMaster#shapes:member">PowerPoint.SlideMaster.shapes</xref>
 
   #### Examples
 

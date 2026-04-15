@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#rangeSelection:member"
-  alttext="Excel.Interfaces.WindowUpdateData.rangeSelection" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowUpdateData#rangeSelection:member">Excel.Interfaces.WindowUpdateData.rangeSelection</xref>
 
 isPreview: false
 isDeprecated: false

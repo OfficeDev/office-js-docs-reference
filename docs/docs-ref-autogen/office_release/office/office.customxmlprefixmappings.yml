@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.CustomXmlPart#namespaceManager:member"
-  alttext="Office.CustomXmlPart.namespaceManager" />
+  - <xref
+  href="office!Office.CustomXmlPart#namespaceManager:member">Office.CustomXmlPart.namespaceManager</xref>
 
 isPreview: false
 isDeprecated: false

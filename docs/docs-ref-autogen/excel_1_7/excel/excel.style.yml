@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.StyleCollection#items:member"
-  alttext="Excel.StyleCollection.items" />
+  - <xref
+  href="excel!Excel.StyleCollection#items:member">Excel.StyleCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

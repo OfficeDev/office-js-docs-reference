@@ -13,14 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#datePickerContentControl:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.datePickerContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#datePickerContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.datePickerContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#datePickerContentControl:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.datePickerContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlLoadOptions#datePickerContentControl:member">Word.Interfaces.ContentControlLoadOptions.datePickerContentControl</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,86 +12,81 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#language:member"
-  alttext="Word.Application.language" />
-
-  - <xref uid="word!Word.DatePickerContentControl#dateDisplayLocale:member"
-  alttext="Word.DatePickerContentControl.dateDisplayLocale" />
-
-  - <xref uid="word!Word.Interfaces.ApplicationData#language:member"
-  alttext="Word.Interfaces.ApplicationData.language" />
+  - <xref
+  href="word!Word.Application#language:member">Word.Application.language</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#dateDisplayLocale:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.dateDisplayLocale" />
+  href="word!Word.DatePickerContentControl#dateDisplayLocale:member">Word.DatePickerContentControl.dateDisplayLocale</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member"
-  alttext="Word.Interfaces.DatePickerContentControlUpdateData.dateDisplayLocale"
-  />
+  href="word!Word.Interfaces.ApplicationData#language:member">Word.Interfaces.ApplicationData.language</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageId:member"
-  alttext="Word.Interfaces.RangeData.languageId" />
+  - <xref
+  href="word!Word.Interfaces.DatePickerContentControlData#dateDisplayLocale:member">Word.Interfaces.DatePickerContentControlData.dateDisplayLocale</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageIdFarEast:member"
-  alttext="Word.Interfaces.RangeData.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member">Word.Interfaces.DatePickerContentControlUpdateData.dateDisplayLocale</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageIdOther:member"
-  alttext="Word.Interfaces.RangeData.languageIdOther" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#languageId:member">Word.Interfaces.RangeData.languageId</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageId:member"
-  alttext="Word.Interfaces.RangeUpdateData.languageId" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#languageIdFarEast:member">Word.Interfaces.RangeData.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdFarEast:member"
-  alttext="Word.Interfaces.RangeUpdateData.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#languageIdOther:member">Word.Interfaces.RangeData.languageIdOther</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdOther:member"
-  alttext="Word.Interfaces.RangeUpdateData.languageIdOther" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#languageId:member">Word.Interfaces.RangeUpdateData.languageId</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleData#languageId:member"
-  alttext="Word.Interfaces.StyleData.languageId" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#languageIdFarEast:member">Word.Interfaces.RangeUpdateData.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleData#languageIdFarEast:member"
-  alttext="Word.Interfaces.StyleData.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#languageIdOther:member">Word.Interfaces.RangeUpdateData.languageIdOther</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#languageId:member"
-  alttext="Word.Interfaces.StyleUpdateData.languageId" />
+  - <xref
+  href="word!Word.Interfaces.StyleData#languageId:member">Word.Interfaces.StyleData.languageId</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member"
-  alttext="Word.Interfaces.StyleUpdateData.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.StyleData#languageIdFarEast:member">Word.Interfaces.StyleData.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Interfaces.TemplateData#languageId:member"
-  alttext="Word.Interfaces.TemplateData.languageId" />
+  - <xref
+  href="word!Word.Interfaces.StyleUpdateData#languageId:member">Word.Interfaces.StyleUpdateData.languageId</xref>
 
-  - <xref uid="word!Word.Interfaces.TemplateData#languageIdFarEast:member"
-  alttext="Word.Interfaces.TemplateData.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member">Word.Interfaces.StyleUpdateData.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageId:member"
-  alttext="Word.Interfaces.TemplateUpdateData.languageId" />
+  - <xref
+  href="word!Word.Interfaces.TemplateData#languageId:member">Word.Interfaces.TemplateData.languageId</xref>
 
-  - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageIdFarEast:member"
-  alttext="Word.Interfaces.TemplateUpdateData.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.TemplateData#languageIdFarEast:member">Word.Interfaces.TemplateData.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Range#languageId:member"
-  alttext="Word.Range.languageId" />
+  - <xref
+  href="word!Word.Interfaces.TemplateUpdateData#languageId:member">Word.Interfaces.TemplateUpdateData.languageId</xref>
 
-  - <xref uid="word!Word.Range#languageIdFarEast:member"
-  alttext="Word.Range.languageIdFarEast" />
+  - <xref
+  href="word!Word.Interfaces.TemplateUpdateData#languageIdFarEast:member">Word.Interfaces.TemplateUpdateData.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Range#languageIdOther:member"
-  alttext="Word.Range.languageIdOther" />
+  - <xref href="word!Word.Range#languageId:member">Word.Range.languageId</xref>
 
-  - <xref uid="word!Word.Style#languageId:member"
-  alttext="Word.Style.languageId" />
+  - <xref
+  href="word!Word.Range#languageIdFarEast:member">Word.Range.languageIdFarEast</xref>
 
-  - <xref uid="word!Word.Style#languageIdFarEast:member"
-  alttext="Word.Style.languageIdFarEast" />
+  - <xref
+  href="word!Word.Range#languageIdOther:member">Word.Range.languageIdOther</xref>
 
-  - <xref uid="word!Word.Template#languageId:member"
-  alttext="Word.Template.languageId" />
+  - <xref href="word!Word.Style#languageId:member">Word.Style.languageId</xref>
 
-  - <xref uid="word!Word.Template#languageIdFarEast:member"
-  alttext="Word.Template.languageIdFarEast" />
+  - <xref
+  href="word!Word.Style#languageIdFarEast:member">Word.Style.languageIdFarEast</xref>
+
+  - <xref
+  href="word!Word.Template#languageId:member">Word.Template.languageId</xref>
+
+  - <xref
+  href="word!Word.Template#languageIdFarEast:member">Word.Template.languageIdFarEast</xref>
 
 isPreview: false
 isDeprecated: false

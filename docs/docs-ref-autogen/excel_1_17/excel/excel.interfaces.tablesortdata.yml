@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableData#sort:member"
-  alttext="Excel.Interfaces.TableData.sort" />
+  - <xref
+  href="excel!Excel.Interfaces.TableData#sort:member">Excel.Interfaces.TableData.sort</xref>
 
 isPreview: false
 isDeprecated: false

@@ -72,8 +72,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MessageCompose#internetHeaders:member"
-  alttext="Office.MessageCompose.internetHeaders" />
+  - <xref
+  href="outlook!Office.MessageCompose#internetHeaders:member">Office.MessageCompose.internetHeaders</xref>
 
 isPreview: false
 isDeprecated: false

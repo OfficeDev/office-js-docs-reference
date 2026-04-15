@@ -10,20 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CoauthorCollectionData#items:member"
-  alttext="Word.Interfaces.CoauthorCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.CoauthorCollectionData#items:member">Word.Interfaces.CoauthorCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.CoauthorCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CoauthorCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.CoauthorCollectionUpdateData#items:member">Word.Interfaces.CoauthorCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.CoauthoringData#authors:member"
-  alttext="Word.Interfaces.CoauthoringData.authors" />
+  - <xref
+  href="word!Word.Interfaces.CoauthoringData#authors:member">Word.Interfaces.CoauthoringData.authors</xref>
 
-  - <xref uid="word!Word.Interfaces.CoauthoringData#me:member"
-  alttext="Word.Interfaces.CoauthoringData.me" />
+  - <xref
+  href="word!Word.Interfaces.CoauthoringData#me:member">Word.Interfaces.CoauthoringData.me</xref>
 
-  - <xref uid="word!Word.Interfaces.CoauthoringLockData#owner:member"
-  alttext="Word.Interfaces.CoauthoringLockData.owner" />
+  - <xref
+  href="word!Word.Interfaces.CoauthoringLockData#owner:member">Word.Interfaces.CoauthoringLockData.owner</xref>
 
 isPreview: false
 isDeprecated: false

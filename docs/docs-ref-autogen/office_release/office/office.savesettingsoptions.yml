@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Settings#saveAsync:member(1)"
-  alttext="Office.Settings.saveAsync" />
+  - <xref
+  href="office!Office.Settings#saveAsync:member(1)">Office.Settings.saveAsync</xref>
 
   #### Examples
 

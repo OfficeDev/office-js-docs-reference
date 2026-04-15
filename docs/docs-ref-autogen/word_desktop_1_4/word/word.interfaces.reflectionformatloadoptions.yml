@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#reflection:member"
-  alttext="Word.Interfaces.FontLoadOptions.reflection" />
+  - <xref
+  href="word!Word.Interfaces.FontLoadOptions#reflection:member">Word.Interfaces.FontLoadOptions.reflection</xref>
 
 isPreview: false
 isDeprecated: false

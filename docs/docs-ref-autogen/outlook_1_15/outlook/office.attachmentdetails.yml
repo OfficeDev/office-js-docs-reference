@@ -28,14 +28,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#attachments:member"
-  alttext="Office.AppointmentRead.attachments" />
+  - <xref
+  href="outlook!Office.AppointmentRead#attachments:member">Office.AppointmentRead.attachments</xref>
 
-  - <xref uid="outlook!Office.LoadedMessageRead#attachments:member"
-  alttext="Office.LoadedMessageRead.attachments" />
+  - <xref
+  href="outlook!Office.LoadedMessageRead#attachments:member">Office.LoadedMessageRead.attachments</xref>
 
-  - <xref uid="outlook!Office.MessageRead#attachments:member"
-  alttext="Office.MessageRead.attachments" />
+  - <xref
+  href="outlook!Office.MessageRead#attachments:member">Office.MessageRead.attachments</xref>
 
   #### Examples
 

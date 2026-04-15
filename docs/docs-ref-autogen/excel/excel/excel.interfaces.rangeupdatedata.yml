@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#activeCell:member"
-  alttext="Excel.Interfaces.WindowUpdateData.activeCell" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowUpdateData#activeCell:member">Excel.Interfaces.WindowUpdateData.activeCell</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#visibleRange:member"
-  alttext="Excel.Interfaces.WindowUpdateData.visibleRange" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowUpdateData#visibleRange:member">Excel.Interfaces.WindowUpdateData.visibleRange</xref>
 
 isPreview: false
 isDeprecated: false

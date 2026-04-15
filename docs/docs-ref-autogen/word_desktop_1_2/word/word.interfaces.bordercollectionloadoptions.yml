@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#borders:member"
-  alttext="Word.Interfaces.StyleCollectionLoadOptions.borders" />
+  - <xref
+  href="word!Word.Interfaces.StyleCollectionLoadOptions#borders:member">Word.Interfaces.StyleCollectionLoadOptions.borders</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#borders:member"
-  alttext="Word.Interfaces.StyleLoadOptions.borders" />
+  - <xref
+  href="word!Word.Interfaces.StyleLoadOptions#borders:member">Word.Interfaces.StyleLoadOptions.borders</xref>
 
 isPreview: false
 isDeprecated: false

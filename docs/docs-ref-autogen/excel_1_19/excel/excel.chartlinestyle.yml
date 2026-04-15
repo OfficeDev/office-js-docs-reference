@@ -13,24 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartBorder#lineStyle:member"
-  alttext="Excel.ChartBorder.lineStyle" />
-
-  - <xref uid="excel!Excel.ChartLineFormat#lineStyle:member"
-  alttext="Excel.ChartLineFormat.lineStyle" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartBorderData#lineStyle:member"
-  alttext="Excel.Interfaces.ChartBorderData.lineStyle" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartBorderUpdateData#lineStyle:member"
-  alttext="Excel.Interfaces.ChartBorderUpdateData.lineStyle" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member"
-  alttext="Excel.Interfaces.ChartLineFormatData.lineStyle" />
+  - <xref
+  href="excel!Excel.ChartBorder#lineStyle:member">Excel.ChartBorder.lineStyle</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member"
-  alttext="Excel.Interfaces.ChartLineFormatUpdateData.lineStyle" />
+  href="excel!Excel.ChartLineFormat#lineStyle:member">Excel.ChartLineFormat.lineStyle</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartBorderData#lineStyle:member">Excel.Interfaces.ChartBorderData.lineStyle</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartBorderUpdateData#lineStyle:member">Excel.Interfaces.ChartBorderUpdateData.lineStyle</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member">Excel.Interfaces.ChartLineFormatData.lineStyle</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member">Excel.Interfaces.ChartLineFormatUpdateData.lineStyle</xref>
 
   #### Examples
 

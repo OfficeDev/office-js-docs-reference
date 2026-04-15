@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#linkedDataTypeState:member"
-  alttext="Excel.Interfaces.RangeData.linkedDataTypeState" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeData#linkedDataTypeState:member">Excel.Interfaces.RangeData.linkedDataTypeState</xref>
 
-  - <xref uid="excel!Excel.Range#linkedDataTypeState:member"
-  alttext="Excel.Range.linkedDataTypeState" />
+  - <xref
+  href="excel!Excel.Range#linkedDataTypeState:member">Excel.Range.linkedDataTypeState</xref>
 
 isPreview: false
 isDeprecated: false

@@ -11,29 +11,22 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#xmlMapping:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.xmlMapping"
-  />
-
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#xmlMapping:member"
-  alttext="Word.Interfaces.ContentControlUpdateData.xmlMapping" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#xmlMapping:member">Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.xmlMapping</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#xmlMapping:member"
-  alttext="Word.Interfaces.DatePickerContentControlUpdateData.xmlMapping" />
+  href="word!Word.Interfaces.ContentControlUpdateData#xmlMapping:member">Word.Interfaces.ContentControlUpdateData.xmlMapping</xref>
 
   - <xref
-  uid="word!Word.Interfaces.GroupContentControlUpdateData#xmlMapping:member"
-  alttext="Word.Interfaces.GroupContentControlUpdateData.xmlMapping" />
+  href="word!Word.Interfaces.DatePickerContentControlUpdateData#xmlMapping:member">Word.Interfaces.DatePickerContentControlUpdateData.xmlMapping</xref>
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#xmlMapping:member"
-  alttext="Word.Interfaces.PictureContentControlUpdateData.xmlMapping" />
+  href="word!Word.Interfaces.GroupContentControlUpdateData#xmlMapping:member">Word.Interfaces.GroupContentControlUpdateData.xmlMapping</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#xmlMapping:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlUpdateData.xmlMapping"
-  />
+  href="word!Word.Interfaces.PictureContentControlUpdateData#xmlMapping:member">Word.Interfaces.PictureContentControlUpdateData.xmlMapping</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#xmlMapping:member">Word.Interfaces.RepeatingSectionContentControlUpdateData.xmlMapping</xref>
 
 isPreview: false
 isDeprecated: false

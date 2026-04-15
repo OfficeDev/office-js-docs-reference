@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeFormat#borders:member"
-  alttext="Excel.RangeFormat.borders" />
+  - <xref
+  href="excel!Excel.RangeFormat#borders:member">Excel.RangeFormat.borders</xref>
 
 isPreview: false
 isDeprecated: false

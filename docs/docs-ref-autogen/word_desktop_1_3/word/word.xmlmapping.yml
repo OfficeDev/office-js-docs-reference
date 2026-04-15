@@ -17,20 +17,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BuildingBlockGalleryContentControl#xmlMapping:member"
-  alttext="Word.BuildingBlockGalleryContentControl.xmlMapping" />
+  - <xref
+  href="word!Word.BuildingBlockGalleryContentControl#xmlMapping:member">Word.BuildingBlockGalleryContentControl.xmlMapping</xref>
 
-  - <xref uid="word!Word.ContentControl#xmlMapping:member"
-  alttext="Word.ContentControl.xmlMapping" />
+  - <xref
+  href="word!Word.ContentControl#xmlMapping:member">Word.ContentControl.xmlMapping</xref>
 
-  - <xref uid="word!Word.DatePickerContentControl#xmlMapping:member"
-  alttext="Word.DatePickerContentControl.xmlMapping" />
+  - <xref
+  href="word!Word.DatePickerContentControl#xmlMapping:member">Word.DatePickerContentControl.xmlMapping</xref>
 
-  - <xref uid="word!Word.GroupContentControl#xmlMapping:member"
-  alttext="Word.GroupContentControl.xmlMapping" />
+  - <xref
+  href="word!Word.GroupContentControl#xmlMapping:member">Word.GroupContentControl.xmlMapping</xref>
 
-  - <xref uid="word!Word.PictureContentControl#xmlMapping:member"
-  alttext="Word.PictureContentControl.xmlMapping" />
+  - <xref
+  href="word!Word.PictureContentControl#xmlMapping:member">Word.PictureContentControl.xmlMapping</xref>
 
 isPreview: false
 isDeprecated: false

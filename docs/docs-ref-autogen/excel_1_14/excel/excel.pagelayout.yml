@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#pageLayout:member"
-  alttext="Excel.Worksheet.pageLayout" />
+  - <xref
+  href="excel!Excel.Worksheet#pageLayout:member">Excel.Worksheet.pageLayout</xref>
 
 isPreview: false
 isDeprecated: false

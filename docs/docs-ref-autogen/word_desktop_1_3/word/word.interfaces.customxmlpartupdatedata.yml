@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#ownerPart:member"
-  alttext="Word.Interfaces.CustomXmlNodeUpdateData.ownerPart" />
+  - <xref
+  href="word!Word.Interfaces.CustomXmlNodeUpdateData#ownerPart:member">Word.Interfaces.CustomXmlNodeUpdateData.ownerPart</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlMappingUpdateData#customXmlPart:member"
-  alttext="Word.Interfaces.XmlMappingUpdateData.customXmlPart" />
+  - <xref
+  href="word!Word.Interfaces.XmlMappingUpdateData#customXmlPart:member">Word.Interfaces.XmlMappingUpdateData.customXmlPart</xref>
 
 isPreview: false
 isDeprecated: false

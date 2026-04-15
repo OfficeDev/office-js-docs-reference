@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.HeadingStyleCollection#items:member"
-  alttext="Word.HeadingStyleCollection.items" />
+  - <xref
+  href="word!Word.HeadingStyleCollection#items:member">Word.HeadingStyleCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onNameChanged:member"
-  alttext="Excel.Worksheet.onNameChanged" />
+  - <xref
+  href="excel!Excel.Worksheet#onNameChanged:member">Excel.Worksheet.onNameChanged</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onNameChanged:member"
-  alttext="Excel.WorksheetCollection.onNameChanged" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onNameChanged:member">Excel.WorksheetCollection.onNameChanged</xref>
 
   #### Examples
 

@@ -32,8 +32,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#masterCategories:member"
-  alttext="Office.Mailbox.masterCategories" />
+  - <xref
+  href="outlook!Office.Mailbox#masterCategories:member">Office.Mailbox.masterCategories</xref>
 
 isPreview: false
 isDeprecated: false

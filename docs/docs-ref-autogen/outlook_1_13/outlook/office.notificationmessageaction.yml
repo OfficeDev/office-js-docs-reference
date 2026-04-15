@@ -29,8 +29,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.NotificationMessageDetails#actions:member"
-  alttext="Office.NotificationMessageDetails.actions" />
+  - <xref
+  href="outlook!Office.NotificationMessageDetails#actions:member">Office.NotificationMessageDetails.actions</xref>
 
   #### Examples
 

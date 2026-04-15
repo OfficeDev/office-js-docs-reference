@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member"
-  alttext="Word.Interfaces.StyleCollectionLoadOptions.tableStyle" />
+  href="word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member">Word.Interfaces.StyleCollectionLoadOptions.tableStyle</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#tableStyle:member"
-  alttext="Word.Interfaces.StyleLoadOptions.tableStyle" />
+  - <xref
+  href="word!Word.Interfaces.StyleLoadOptions#tableStyle:member">Word.Interfaces.StyleLoadOptions.tableStyle</xref>
 
 isPreview: false
 isDeprecated: false

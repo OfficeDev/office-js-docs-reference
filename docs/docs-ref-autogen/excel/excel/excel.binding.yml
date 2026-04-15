@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BindingCollection#items:member"
-  alttext="Excel.BindingCollection.items" />
+  - <xref
+  href="excel!Excel.BindingCollection#items:member">Excel.BindingCollection.items</xref>
 
-  - <xref uid="excel!Excel.BindingDataChangedEventArgs#binding:member"
-  alttext="Excel.BindingDataChangedEventArgs.binding" />
+  - <xref
+  href="excel!Excel.BindingDataChangedEventArgs#binding:member">Excel.BindingDataChangedEventArgs.binding</xref>
 
-  - <xref uid="excel!Excel.BindingSelectionChangedEventArgs#binding:member"
-  alttext="Excel.BindingSelectionChangedEventArgs.binding" />
+  - <xref
+  href="excel!Excel.BindingSelectionChangedEventArgs#binding:member">Excel.BindingSelectionChangedEventArgs.binding</xref>
 
 isPreview: false
 isDeprecated: false

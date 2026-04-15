@@ -13,26 +13,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionDeleteOptions#unit:member"
-  alttext="Word.SelectionDeleteOptions.unit" />
+  - <xref
+  href="word!Word.SelectionDeleteOptions#unit:member">Word.SelectionDeleteOptions.unit</xref>
 
-  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member"
-  alttext="Word.SelectionMoveLeftRightOptions.unit" />
+  - <xref
+  href="word!Word.SelectionMoveLeftRightOptions#unit:member">Word.SelectionMoveLeftRightOptions.unit</xref>
 
-  - <xref uid="word!Word.SelectionMoveOptions#unit:member"
-  alttext="Word.SelectionMoveOptions.unit" />
+  - <xref
+  href="word!Word.SelectionMoveOptions#unit:member">Word.SelectionMoveOptions.unit</xref>
 
-  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member"
-  alttext="Word.SelectionMoveStartEndOptions.unit" />
+  - <xref
+  href="word!Word.SelectionMoveStartEndOptions#unit:member">Word.SelectionMoveStartEndOptions.unit</xref>
 
-  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member"
-  alttext="Word.SelectionMoveUpDownOptions.unit" />
+  - <xref
+  href="word!Word.SelectionMoveUpDownOptions#unit:member">Word.SelectionMoveUpDownOptions.unit</xref>
 
-  - <xref uid="word!Word.SelectionNextOptions#unit:member"
-  alttext="Word.SelectionNextOptions.unit" />
+  - <xref
+  href="word!Word.SelectionNextOptions#unit:member">Word.SelectionNextOptions.unit</xref>
 
-  - <xref uid="word!Word.SelectionPreviousOptions#unit:member"
-  alttext="Word.SelectionPreviousOptions.unit" />
+  - <xref
+  href="word!Word.SelectionPreviousOptions#unit:member">Word.SelectionPreviousOptions.unit</xref>
 
   #### Examples
 

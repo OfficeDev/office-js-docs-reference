@@ -13,22 +13,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#font:member" alttext="Word.Body.font" />
+  - <xref href="word!Word.Body#font:member">Word.Body.font</xref>
 
-  - <xref uid="word!Word.ContentControl#font:member"
-  alttext="Word.ContentControl.font" />
+  - <xref
+  href="word!Word.ContentControl#font:member">Word.ContentControl.font</xref>
 
-  - <xref uid="word!Word.ListLevel#font:member" alttext="Word.ListLevel.font" />
+  - <xref href="word!Word.ListLevel#font:member">Word.ListLevel.font</xref>
 
-  - <xref uid="word!Word.Paragraph#font:member" alttext="Word.Paragraph.font" />
+  - <xref href="word!Word.Paragraph#font:member">Word.Paragraph.font</xref>
 
-  - <xref uid="word!Word.Range#font:member" alttext="Word.Range.font" />
+  - <xref href="word!Word.Range#font:member">Word.Range.font</xref>
 
-  - <xref uid="word!Word.Style#font:member" alttext="Word.Style.font" />
+  - <xref href="word!Word.Style#font:member">Word.Style.font</xref>
 
-  - <xref uid="word!Word.Table#font:member" alttext="Word.Table.font" />
+  - <xref href="word!Word.Table#font:member">Word.Table.font</xref>
 
-  - <xref uid="word!Word.TableRow#font:member" alttext="Word.TableRow.font" />
+  - <xref href="word!Word.TableRow#font:member">Word.TableRow.font</xref>
 
   #### Examples
 

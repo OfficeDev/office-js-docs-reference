@@ -13,15 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.TextFrameData.horizontalAlignment" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member">Excel.Interfaces.TextFrameData.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.TextFrameUpdateData.horizontalAlignment" />
+  href="excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member">Excel.Interfaces.TextFrameUpdateData.horizontalAlignment</xref>
 
-  - <xref uid="excel!Excel.TextFrame#horizontalAlignment:member"
-  alttext="Excel.TextFrame.horizontalAlignment" />
+  - <xref
+  href="excel!Excel.TextFrame#horizontalAlignment:member">Excel.TextFrame.horizontalAlignment</xref>
 
   #### Examples
 

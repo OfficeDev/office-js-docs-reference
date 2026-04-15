@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#mapOptions:member"
-  alttext="Excel.Interfaces.ChartSeriesData.mapOptions" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesData#mapOptions:member">Excel.Interfaces.ChartSeriesData.mapOptions</xref>
 
 isPreview: false
 isDeprecated: false

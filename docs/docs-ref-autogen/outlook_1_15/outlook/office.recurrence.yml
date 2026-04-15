@@ -43,26 +43,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#recurrence:member"
-  alttext="Office.AppointmentCompose.recurrence" />
+  - <xref
+  href="outlook!Office.AppointmentCompose#recurrence:member">Office.AppointmentCompose.recurrence</xref>
 
-  - <xref uid="outlook!Office.AppointmentRead#recurrence:member"
-  alttext="Office.AppointmentRead.recurrence" />
+  - <xref
+  href="outlook!Office.AppointmentRead#recurrence:member">Office.AppointmentRead.recurrence</xref>
 
-  - <xref uid="outlook!Office.LoadedMessageRead#recurrence:member"
-  alttext="Office.LoadedMessageRead.recurrence" />
+  - <xref
+  href="outlook!Office.LoadedMessageRead#recurrence:member">Office.LoadedMessageRead.recurrence</xref>
 
-  - <xref uid="outlook!Office.MessageRead#recurrence:member"
-  alttext="Office.MessageRead.recurrence" />
+  - <xref
+  href="outlook!Office.MessageRead#recurrence:member">Office.MessageRead.recurrence</xref>
 
-  - <xref uid="outlook!Office.Recurrence#getAsync:member(1)"
-  alttext="Office.Recurrence.getAsync" />
+  - <xref
+  href="outlook!Office.Recurrence#getAsync:member(1)">Office.Recurrence.getAsync</xref>
 
-  - <xref uid="outlook!Office.Recurrence#setAsync:member(1)"
-  alttext="Office.Recurrence.setAsync" />
+  - <xref
+  href="outlook!Office.Recurrence#setAsync:member(1)">Office.Recurrence.setAsync</xref>
 
-  - <xref uid="outlook!Office.RecurrenceChangedEventArgs#recurrence:member"
-  alttext="Office.RecurrenceChangedEventArgs.recurrence" />
+  - <xref
+  href="outlook!Office.RecurrenceChangedEventArgs#recurrence:member">Office.RecurrenceChangedEventArgs.recurrence</xref>
 
 isPreview: false
 isDeprecated: false

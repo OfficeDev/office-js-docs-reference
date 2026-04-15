@@ -18,49 +18,47 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicDataValidation#formula1:member"
-  alttext="Excel.BasicDataValidation.formula1" />
-
-  - <xref uid="excel!Excel.BasicDataValidation#formula2:member"
-  alttext="Excel.BasicDataValidation.formula2" />
-
-  - <xref uid="excel!Excel.DateTimeDataValidation#formula1:member"
-  alttext="Excel.DateTimeDataValidation.formula1" />
-
-  - <xref uid="excel!Excel.DateTimeDataValidation#formula2:member"
-  alttext="Excel.DateTimeDataValidation.formula2" />
-
-  - <xref uid="excel!Excel.ListDataValidation#source:member"
-  alttext="Excel.ListDataValidation.source" />
-
-  - <xref uid="excel!Excel.RangeCollection#items:member"
-  alttext="Excel.RangeCollection.items" />
-
-  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member(1)"
-  alttext="Excel.TableChangedEventArgs.getRange" />
-
-  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)"
-  alttext="Excel.TableChangedEventArgs.getRangeOrNullObject" />
-
-  - <xref uid="excel!Excel.Window#activeCell:member"
-  alttext="Excel.Window.activeCell" />
-
-  - <xref uid="excel!Excel.Window#visibleRange:member"
-  alttext="Excel.Window.visibleRange" />
-
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member(1)"
-  alttext="Excel.WorksheetChangedEventArgs.getRange" />
+  - <xref
+  href="excel!Excel.BasicDataValidation#formula1:member">Excel.BasicDataValidation.formula1</xref>
 
   - <xref
-  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member(1)"
-  alttext="Excel.WorksheetChangedEventArgs.getRangeOrNullObject" />
-
-  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)"
-  alttext="Excel.WorksheetFormatChangedEventArgs.getRange" />
+  href="excel!Excel.BasicDataValidation#formula2:member">Excel.BasicDataValidation.formula2</xref>
 
   - <xref
-  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)"
-  alttext="Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject" />
+  href="excel!Excel.DateTimeDataValidation#formula1:member">Excel.DateTimeDataValidation.formula1</xref>
+
+  - <xref
+  href="excel!Excel.DateTimeDataValidation#formula2:member">Excel.DateTimeDataValidation.formula2</xref>
+
+  - <xref
+  href="excel!Excel.ListDataValidation#source:member">Excel.ListDataValidation.source</xref>
+
+  - <xref
+  href="excel!Excel.RangeCollection#items:member">Excel.RangeCollection.items</xref>
+
+  - <xref
+  href="excel!Excel.TableChangedEventArgs#getRange:member(1)">Excel.TableChangedEventArgs.getRange</xref>
+
+  - <xref
+  href="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)">Excel.TableChangedEventArgs.getRangeOrNullObject</xref>
+
+  - <xref
+  href="excel!Excel.Window#activeCell:member">Excel.Window.activeCell</xref>
+
+  - <xref
+  href="excel!Excel.Window#visibleRange:member">Excel.Window.visibleRange</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetChangedEventArgs#getRange:member(1)">Excel.WorksheetChangedEventArgs.getRange</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member(1)">Excel.WorksheetChangedEventArgs.getRangeOrNullObject</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)">Excel.WorksheetFormatChangedEventArgs.getRange</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)">Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject</xref>
 
   #### Examples
 

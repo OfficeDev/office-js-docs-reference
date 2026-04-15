@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicViewLayouts#card:member"
-  alttext="Excel.BasicViewLayouts.card" />
+  - <xref
+  href="excel!Excel.BasicViewLayouts#card:member">Excel.BasicViewLayouts.card</xref>
 
 isPreview: false
 isDeprecated: false

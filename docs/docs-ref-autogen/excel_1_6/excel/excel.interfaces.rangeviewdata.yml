@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewCollectionData#items:member"
-  alttext="Excel.Interfaces.RangeViewCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeViewCollectionData#items:member">Excel.Interfaces.RangeViewCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.RangeViewCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member">Excel.Interfaces.RangeViewCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#rows:member"
-  alttext="Excel.Interfaces.RangeViewData.rows" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeViewData#rows:member">Excel.Interfaces.RangeViewData.rows</xref>
 
 isPreview: false
 isDeprecated: false

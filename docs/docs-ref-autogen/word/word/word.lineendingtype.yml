@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#textLineEnding:member"
-  alttext="Word.Document.textLineEnding" />
+  - <xref
+  href="word!Word.Document#textLineEnding:member">Word.Document.textLineEnding</xref>
 
-  - <xref uid="word!Word.Interfaces.DocumentData#textLineEnding:member"
-  alttext="Word.Interfaces.DocumentData.textLineEnding" />
+  - <xref
+  href="word!Word.Interfaces.DocumentData#textLineEnding:member">Word.Interfaces.DocumentData.textLineEnding</xref>
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#textLineEnding:member"
-  alttext="Word.Interfaces.DocumentUpdateData.textLineEnding" />
+  - <xref
+  href="word!Word.Interfaces.DocumentUpdateData#textLineEnding:member">Word.Interfaces.DocumentUpdateData.textLineEnding</xref>
 
 isPreview: false
 isDeprecated: false

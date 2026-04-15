@@ -10,19 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.NotebookData#sectionGroups:member"
-  alttext="OneNote.Interfaces.NotebookData.sectionGroups" />
+  - <xref
+  href="onenote!OneNote.Interfaces.NotebookData#sectionGroups:member">OneNote.Interfaces.NotebookData.sectionGroups</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.SectionGroupCollectionData#items:member"
-  alttext="OneNote.Interfaces.SectionGroupCollectionData.items" />
+  href="onenote!OneNote.Interfaces.SectionGroupCollectionData#items:member">OneNote.Interfaces.SectionGroupCollectionData.items</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.SectionGroupCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData#items:member">OneNote.Interfaces.SectionGroupCollectionUpdateData.items</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member"
-  alttext="OneNote.Interfaces.SectionGroupData.sectionGroups" />
+  - <xref
+  href="onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member">OneNote.Interfaces.SectionGroupData.sectionGroups</xref>
 
 isPreview: false
 isDeprecated: false

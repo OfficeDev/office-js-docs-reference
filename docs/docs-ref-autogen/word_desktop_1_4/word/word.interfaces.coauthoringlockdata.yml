@@ -10,18 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CoauthorData#locks:member"
-  alttext="Word.Interfaces.CoauthorData.locks" />
-
-  - <xref uid="word!Word.Interfaces.CoauthoringData#locks:member"
-  alttext="Word.Interfaces.CoauthoringData.locks" />
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockCollectionData#items:member"
-  alttext="Word.Interfaces.CoauthoringLockCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.CoauthorData#locks:member">Word.Interfaces.CoauthorData.locks</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CoauthoringLockCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CoauthoringLockCollectionUpdateData.items" />
+  href="word!Word.Interfaces.CoauthoringData#locks:member">Word.Interfaces.CoauthoringData.locks</xref>
+
+  - <xref
+  href="word!Word.Interfaces.CoauthoringLockCollectionData#items:member">Word.Interfaces.CoauthoringLockCollectionData.items</xref>
+
+  - <xref
+  href="word!Word.Interfaces.CoauthoringLockCollectionUpdateData#items:member">Word.Interfaces.CoauthoringLockCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

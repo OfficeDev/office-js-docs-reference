@@ -15,17 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DatePickerContentControl#dateStorageFormat:member"
-  alttext="Word.DatePickerContentControl.dateStorageFormat" />
+  - <xref
+  href="word!Word.DatePickerContentControl#dateStorageFormat:member">Word.DatePickerContentControl.dateStorageFormat</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#dateStorageFormat:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.dateStorageFormat" />
+  href="word!Word.Interfaces.DatePickerContentControlData#dateStorageFormat:member">Word.Interfaces.DatePickerContentControlData.dateStorageFormat</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#dateStorageFormat:member"
-  alttext="Word.Interfaces.DatePickerContentControlUpdateData.dateStorageFormat"
-  />
+  href="word!Word.Interfaces.DatePickerContentControlUpdateData#dateStorageFormat:member">Word.Interfaces.DatePickerContentControlUpdateData.dateStorageFormat</xref>
 
 isPreview: false
 isDeprecated: false

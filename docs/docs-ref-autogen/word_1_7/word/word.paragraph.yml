@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.InlinePicture#paragraph:member"
-  alttext="Word.InlinePicture.paragraph" />
+  - <xref
+  href="word!Word.InlinePicture#paragraph:member">Word.InlinePicture.paragraph</xref>
 
-  - <xref uid="word!Word.ParagraphCollection#items:member"
-  alttext="Word.ParagraphCollection.items" />
+  - <xref
+  href="word!Word.ParagraphCollection#items:member">Word.ParagraphCollection.items</xref>
 
   #### Examples
 

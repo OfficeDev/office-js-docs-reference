@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#glow:member"
-  alttext="Word.Interfaces.FontLoadOptions.glow" />
+  - <xref
+  href="word!Word.Interfaces.FontLoadOptions#glow:member">Word.Interfaces.FontLoadOptions.glow</xref>
 
 isPreview: false
 isDeprecated: false

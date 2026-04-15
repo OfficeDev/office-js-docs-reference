@@ -10,14 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#sections:member"
-  alttext="Word.Interfaces.DocumentData.sections" />
+  - <xref
+  href="word!Word.Interfaces.DocumentData#sections:member">Word.Interfaces.DocumentData.sections</xref>
 
-  - <xref uid="word!Word.Interfaces.SectionCollectionData#items:member"
-  alttext="Word.Interfaces.SectionCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.SectionCollectionData#items:member">Word.Interfaces.SectionCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.SectionCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.SectionCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.SectionCollectionUpdateData#items:member">Word.Interfaces.SectionCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

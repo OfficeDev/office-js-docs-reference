@@ -13,15 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidation#errorAlert:member"
-  alttext="Excel.DataValidation.errorAlert" />
-
-  - <xref uid="excel!Excel.Interfaces.DataValidationData#errorAlert:member"
-  alttext="Excel.Interfaces.DataValidationData.errorAlert" />
+  - <xref
+  href="excel!Excel.DataValidation#errorAlert:member">Excel.DataValidation.errorAlert</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.DataValidationUpdateData#errorAlert:member"
-  alttext="Excel.Interfaces.DataValidationUpdateData.errorAlert" />
+  href="excel!Excel.Interfaces.DataValidationData#errorAlert:member">Excel.Interfaces.DataValidationData.errorAlert</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.DataValidationUpdateData#errorAlert:member">Excel.Interfaces.DataValidationUpdateData.errorAlert</xref>
 
   #### Examples
 

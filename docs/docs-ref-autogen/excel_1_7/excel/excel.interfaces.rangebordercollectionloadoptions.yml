@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#borders:member"
-  alttext="Excel.Interfaces.RangeFormatLoadOptions.borders" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatLoadOptions#borders:member">Excel.Interfaces.RangeFormatLoadOptions.borders</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionLoadOptions#borders:member"
-  alttext="Excel.Interfaces.StyleCollectionLoadOptions.borders" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleCollectionLoadOptions#borders:member">Excel.Interfaces.StyleCollectionLoadOptions.borders</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleLoadOptions#borders:member"
-  alttext="Excel.Interfaces.StyleLoadOptions.borders" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleLoadOptions#borders:member">Excel.Interfaces.StyleLoadOptions.borders</xref>
 
 isPreview: false
 isDeprecated: false

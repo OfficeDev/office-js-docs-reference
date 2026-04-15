@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member"
-  alttext="Excel.Interfaces.TableCollectionLoadOptions.columns" />
+  - <xref
+  href="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member">Excel.Interfaces.TableCollectionLoadOptions.columns</xref>
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#columns:member"
-  alttext="Excel.Interfaces.TableLoadOptions.columns" />
+  - <xref
+  href="excel!Excel.Interfaces.TableLoadOptions#columns:member">Excel.Interfaces.TableLoadOptions.columns</xref>
 
 isPreview: false
 isDeprecated: false

@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#urls:member" alttext="Office.Context.urls"
-  />
+  - <xref href="office!Office.Context#urls:member">Office.Context.urls</xref>
 
 isPreview: false
 isDeprecated: false

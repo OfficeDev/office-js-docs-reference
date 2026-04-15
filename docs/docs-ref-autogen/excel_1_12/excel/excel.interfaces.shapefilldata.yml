@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ShapeData#fill:member"
-  alttext="Excel.Interfaces.ShapeData.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeData#fill:member">Excel.Interfaces.ShapeData.fill</xref>
 
 isPreview: false
 isDeprecated: false

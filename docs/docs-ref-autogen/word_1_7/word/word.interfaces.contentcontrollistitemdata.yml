@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlListItemCollectionData#items:member"
-  alttext="Word.Interfaces.ContentControlListItemCollectionData.items" />
+  href="word!Word.Interfaces.ContentControlListItemCollectionData#items:member">Word.Interfaces.ContentControlListItemCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlListItemCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ContentControlListItemCollectionUpdateData.items" />
+  href="word!Word.Interfaces.ContentControlListItemCollectionUpdateData#items:member">Word.Interfaces.ContentControlListItemCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

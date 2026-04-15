@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member"
-  alttext="Excel.Interfaces.PivotTableStyleCollectionData.items" />
+  href="excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member">Excel.Interfaces.PivotTableStyleCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.PivotTableStyleCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member">Excel.Interfaces.PivotTableStyleCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member"
-  alttext="Excel.Interfaces.WorkbookData.pivotTableStyles" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member">Excel.Interfaces.WorkbookData.pivotTableStyles</xref>
 
 isPreview: false
 isDeprecated: false

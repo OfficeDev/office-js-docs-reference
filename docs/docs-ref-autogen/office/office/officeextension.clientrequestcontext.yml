@@ -10,14 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!OfficeExtension.ClientObject#context:member"
-  alttext="OfficeExtension.ClientObject.context" />
+  - <xref
+  href="office!OfficeExtension.ClientObject#context:member">OfficeExtension.ClientObject.context</xref>
 
-  - <xref uid="office!OfficeExtension.EventHandlerResult#context:member"
-  alttext="OfficeExtension.EventHandlerResult.context" />
+  - <xref
+  href="office!OfficeExtension.EventHandlerResult#context:member">OfficeExtension.EventHandlerResult.context</xref>
 
-  - <xref uid="office!OfficeExtension.RunOptions#previousObjects:member"
-  alttext="OfficeExtension.RunOptions.previousObjects" />
+  - <xref
+  href="office!OfficeExtension.RunOptions#previousObjects:member">OfficeExtension.RunOptions.previousObjects</xref>
 
 isPreview: false
 isDeprecated: false

@@ -15,175 +15,173 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Adjustments#context:member"
-  alttext="PowerPoint.Adjustments.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Application#context:member"
-  alttext="PowerPoint.Application.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Binding#context:member"
-  alttext="PowerPoint.Binding.context" />
-
-  - <xref uid="powerpoint!PowerPoint.BindingCollection#context:member"
-  alttext="PowerPoint.BindingCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Border#context:member"
-  alttext="PowerPoint.Border.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Borders#context:member"
-  alttext="PowerPoint.Borders.context" />
-
-  - <xref uid="powerpoint!PowerPoint.BulletFormat#context:member"
-  alttext="PowerPoint.BulletFormat.context" />
-
-  - <xref uid="powerpoint!PowerPoint.CustomProperty#context:member"
-  alttext="PowerPoint.CustomProperty.context" />
-
-  - <xref uid="powerpoint!PowerPoint.CustomPropertyCollection#context:member"
-  alttext="PowerPoint.CustomPropertyCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.CustomXmlPart#context:member"
-  alttext="PowerPoint.CustomXmlPart.context" />
-
-  - <xref uid="powerpoint!PowerPoint.CustomXmlPartCollection#context:member"
-  alttext="PowerPoint.CustomXmlPartCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Adjustments#context:member">PowerPoint.Adjustments.context</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection#context:member"
-  alttext="PowerPoint.CustomXmlPartScopedCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.DocumentProperties#context:member"
-  alttext="PowerPoint.DocumentProperties.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Hyperlink#context:member"
-  alttext="PowerPoint.Hyperlink.context" />
-
-  - <xref uid="powerpoint!PowerPoint.HyperlinkCollection#context:member"
-  alttext="PowerPoint.HyperlinkCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.HyperlinkScopedCollection#context:member"
-  alttext="PowerPoint.HyperlinkScopedCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Margins#context:member"
-  alttext="PowerPoint.Margins.context" />
-
-  - <xref uid="powerpoint!PowerPoint.PageSetup#context:member"
-  alttext="PowerPoint.PageSetup.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ParagraphFormat#context:member"
-  alttext="PowerPoint.ParagraphFormat.context" />
-
-  - <xref uid="powerpoint!PowerPoint.PlaceholderFormat#context:member"
-  alttext="PowerPoint.PlaceholderFormat.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Presentation#context:member"
-  alttext="PowerPoint.Presentation.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Shape#context:member"
-  alttext="PowerPoint.Shape.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ShapeCollection#context:member"
-  alttext="PowerPoint.ShapeCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ShapeFill#context:member"
-  alttext="PowerPoint.ShapeFill.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ShapeFont#context:member"
-  alttext="PowerPoint.ShapeFont.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ShapeGroup#context:member"
-  alttext="PowerPoint.ShapeGroup.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#context:member"
-  alttext="PowerPoint.ShapeLineFormat.context" />
-
-  - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#context:member"
-  alttext="PowerPoint.ShapeScopedCollection.context" />
-
-  - <xref uid="powerpoint!PowerPoint.Slide#context:member"
-  alttext="PowerPoint.Slide.context" />
-
-  - <xref uid="powerpoint!PowerPoint.SlideBackground#context:member"
-  alttext="PowerPoint.SlideBackground.context" />
-
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundFill#context:member"
-  alttext="PowerPoint.SlideBackgroundFill.context" />
-
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill#context:member"
-  alttext="PowerPoint.SlideBackgroundGradientFill.context" />
-
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundPatternFill#context:member"
-  alttext="PowerPoint.SlideBackgroundPatternFill.context" />
+  href="powerpoint!PowerPoint.Application#context:member">PowerPoint.Application.context</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFill#context:member"
-  alttext="PowerPoint.SlideBackgroundPictureOrTextureFill.context" />
+  href="powerpoint!PowerPoint.Binding#context:member">PowerPoint.Binding.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundSolidFill#context:member"
-  alttext="PowerPoint.SlideBackgroundSolidFill.context" />
+  - <xref
+  href="powerpoint!PowerPoint.BindingCollection#context:member">PowerPoint.BindingCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideCollection#context:member"
-  alttext="PowerPoint.SlideCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Border#context:member">PowerPoint.Border.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayout#context:member"
-  alttext="PowerPoint.SlideLayout.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Borders#context:member">PowerPoint.Borders.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayoutBackground#context:member"
-  alttext="PowerPoint.SlideLayoutBackground.context" />
+  - <xref
+  href="powerpoint!PowerPoint.BulletFormat#context:member">PowerPoint.BulletFormat.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayoutCollection#context:member"
-  alttext="PowerPoint.SlideLayoutCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.CustomProperty#context:member">PowerPoint.CustomProperty.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMaster#context:member"
-  alttext="PowerPoint.SlideMaster.context" />
+  - <xref
+  href="powerpoint!PowerPoint.CustomPropertyCollection#context:member">PowerPoint.CustomPropertyCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMasterBackground#context:member"
-  alttext="PowerPoint.SlideMasterBackground.context" />
+  - <xref
+  href="powerpoint!PowerPoint.CustomXmlPart#context:member">PowerPoint.CustomXmlPart.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMasterCollection#context:member"
-  alttext="PowerPoint.SlideMasterCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.CustomXmlPartCollection#context:member">PowerPoint.CustomXmlPartCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideScopedCollection#context:member"
-  alttext="PowerPoint.SlideScopedCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.CustomXmlPartScopedCollection#context:member">PowerPoint.CustomXmlPartScopedCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Table#context:member"
-  alttext="PowerPoint.Table.context" />
+  - <xref
+  href="powerpoint!PowerPoint.DocumentProperties#context:member">PowerPoint.DocumentProperties.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#context:member"
-  alttext="PowerPoint.TableCell.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Hyperlink#context:member">PowerPoint.Hyperlink.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableCellCollection#context:member"
-  alttext="PowerPoint.TableCellCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.HyperlinkCollection#context:member">PowerPoint.HyperlinkCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableColumn#context:member"
-  alttext="PowerPoint.TableColumn.context" />
+  - <xref
+  href="powerpoint!PowerPoint.HyperlinkScopedCollection#context:member">PowerPoint.HyperlinkScopedCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableColumnCollection#context:member"
-  alttext="PowerPoint.TableColumnCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Margins#context:member">PowerPoint.Margins.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableRow#context:member"
-  alttext="PowerPoint.TableRow.context" />
+  - <xref
+  href="powerpoint!PowerPoint.PageSetup#context:member">PowerPoint.PageSetup.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableRowCollection#context:member"
-  alttext="PowerPoint.TableRowCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ParagraphFormat#context:member">PowerPoint.ParagraphFormat.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableStyleSettings#context:member"
-  alttext="PowerPoint.TableStyleSettings.context" />
+  - <xref
+  href="powerpoint!PowerPoint.PlaceholderFormat#context:member">PowerPoint.PlaceholderFormat.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Tag#context:member"
-  alttext="PowerPoint.Tag.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Presentation#context:member">PowerPoint.Presentation.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TagCollection#context:member"
-  alttext="PowerPoint.TagCollection.context" />
+  - <xref
+  href="powerpoint!PowerPoint.Shape#context:member">PowerPoint.Shape.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TextFrame#context:member"
-  alttext="PowerPoint.TextFrame.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeCollection#context:member">PowerPoint.ShapeCollection.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TextRange#context:member"
-  alttext="PowerPoint.TextRange.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeFill#context:member">PowerPoint.ShapeFill.context</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ThemeColorScheme#context:member"
-  alttext="PowerPoint.ThemeColorScheme.context" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeFont#context:member">PowerPoint.ShapeFont.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.ShapeGroup#context:member">PowerPoint.ShapeGroup.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.ShapeLineFormat#context:member">PowerPoint.ShapeLineFormat.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.ShapeScopedCollection#context:member">PowerPoint.ShapeScopedCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.Slide#context:member">PowerPoint.Slide.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackground#context:member">PowerPoint.SlideBackground.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackgroundFill#context:member">PowerPoint.SlideBackgroundFill.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackgroundGradientFill#context:member">PowerPoint.SlideBackgroundGradientFill.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackgroundPatternFill#context:member">PowerPoint.SlideBackgroundPatternFill.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFill#context:member">PowerPoint.SlideBackgroundPictureOrTextureFill.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackgroundSolidFill#context:member">PowerPoint.SlideBackgroundSolidFill.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideCollection#context:member">PowerPoint.SlideCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayout#context:member">PowerPoint.SlideLayout.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayoutBackground#context:member">PowerPoint.SlideLayoutBackground.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayoutCollection#context:member">PowerPoint.SlideLayoutCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideMaster#context:member">PowerPoint.SlideMaster.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideMasterBackground#context:member">PowerPoint.SlideMasterBackground.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideMasterCollection#context:member">PowerPoint.SlideMasterCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.SlideScopedCollection#context:member">PowerPoint.SlideScopedCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.Table#context:member">PowerPoint.Table.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableCell#context:member">PowerPoint.TableCell.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableCellCollection#context:member">PowerPoint.TableCellCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableColumn#context:member">PowerPoint.TableColumn.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableColumnCollection#context:member">PowerPoint.TableColumnCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableRow#context:member">PowerPoint.TableRow.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableRowCollection#context:member">PowerPoint.TableRowCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TableStyleSettings#context:member">PowerPoint.TableStyleSettings.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.Tag#context:member">PowerPoint.Tag.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TagCollection#context:member">PowerPoint.TagCollection.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TextFrame#context:member">PowerPoint.TextFrame.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TextRange#context:member">PowerPoint.TextRange.context</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.ThemeColorScheme#context:member">PowerPoint.ThemeColorScheme.context</xref>
 
   #### Examples
 

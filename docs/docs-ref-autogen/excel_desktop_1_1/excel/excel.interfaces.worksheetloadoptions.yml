@@ -18,77 +18,64 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.ChartCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.ChartLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member">Excel.Interfaces.ChartCollectionLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member">Excel.Interfaces.ChartLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheetOrNullObject:member"
-  alttext="Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject"
-  />
-
-  - <xref uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.NamedItemLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheet:member">Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheetOrNullObject:member"
-  alttext="Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject" />
+  href="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheetOrNullObject:member">Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.PivotTableLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.NamedItemLoadOptions#worksheet:member">Excel.Interfaces.NamedItemLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.PivotTableScopedCollectionLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.NamedItemLoadOptions#worksheetOrNullObject:member">Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.RangeAreasCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.RangeAreasLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member">Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.RangeCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.RangeLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member">Excel.Interfaces.PivotTableLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.SlicerCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.SlicerLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#worksheet:member">Excel.Interfaces.PivotTableScopedCollectionLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.TableCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.TableLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#worksheet:member">Excel.Interfaces.RangeAreasCollectionLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.TableScopedCollectionLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member">Excel.Interfaces.RangeAreasLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeWorksheet:member"
-  alttext="Excel.Interfaces.WindowCollectionLoadOptions.activeWorksheet" />
+  href="excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member">Excel.Interfaces.RangeCollectionLoadOptions.worksheet</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#activeWorksheet:member"
-  alttext="Excel.Interfaces.WindowLoadOptions.activeWorksheet" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member">Excel.Interfaces.RangeLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member">Excel.Interfaces.SlicerCollectionLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member">Excel.Interfaces.SlicerLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member">Excel.Interfaces.TableCollectionLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.TableLoadOptions#worksheet:member">Excel.Interfaces.TableLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member">Excel.Interfaces.TableScopedCollectionLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeWorksheet:member">Excel.Interfaces.WindowCollectionLoadOptions.activeWorksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WindowLoadOptions#activeWorksheet:member">Excel.Interfaces.WindowLoadOptions.activeWorksheet</xref>
 
 isPreview: false
 isDeprecated: false

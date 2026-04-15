@@ -13,14 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#buildingBlockGalleryContentControl:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.buildingBlockGalleryContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#buildingBlockGalleryContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.buildingBlockGalleryContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#buildingBlockGalleryContentControl:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.buildingBlockGalleryContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlLoadOptions#buildingBlockGalleryContentControl:member">Word.Interfaces.ContentControlLoadOptions.buildingBlockGalleryContentControl</xref>
 
 isPreview: false
 isDeprecated: false

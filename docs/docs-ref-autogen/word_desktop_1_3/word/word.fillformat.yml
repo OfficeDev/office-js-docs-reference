@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#fill:member" alttext="Word.Font.fill" />
+  - <xref href="word!Word.Font#fill:member">Word.Font.fill</xref>
 
 isPreview: false
 isDeprecated: false

@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#setSelectedDataAsync:member(1)"
-  alttext="Office.Document.setSelectedDataAsync" />
+  - <xref
+  href="office!Office.Document#setSelectedDataAsync:member(1)">Office.Document.setSelectedDataAsync</xref>
 
   #### Examples
 

@@ -13,10 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.NoteItemData#type:member"
-  alttext="Word.Interfaces.NoteItemData.type" />
+  - <xref
+  href="word!Word.Interfaces.NoteItemData#type:member">Word.Interfaces.NoteItemData.type</xref>
 
-  - <xref uid="word!Word.NoteItem#type:member" alttext="Word.NoteItem.type" />
+  - <xref href="word!Word.NoteItem#type:member">Word.NoteItem.type</xref>
 
   #### Examples
 

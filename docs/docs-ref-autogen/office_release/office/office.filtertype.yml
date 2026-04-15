@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.GetBindingDataOptions#filterType:member"
-  alttext="Office.GetBindingDataOptions.filterType" />
+  - <xref
+  href="office!Office.GetBindingDataOptions#filterType:member">Office.GetBindingDataOptions.filterType</xref>
 
-  - <xref uid="office!Office.GetSelectedDataOptions#filterType:member"
-  alttext="Office.GetSelectedDataOptions.filterType" />
+  - <xref
+  href="office!Office.GetSelectedDataOptions#filterType:member">Office.GetSelectedDataOptions.filterType</xref>
 
   #### Examples
 

@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AsyncResult#status:member"
-  alttext="Office.AsyncResult.status" />
+  - <xref
+  href="office!Office.AsyncResult#status:member">Office.AsyncResult.status</xref>
 
   #### Examples
 

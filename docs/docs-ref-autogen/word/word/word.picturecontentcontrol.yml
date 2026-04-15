@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#pictureContentControl:member"
-  alttext="Word.ContentControl.pictureContentControl" />
+  - <xref
+  href="word!Word.ContentControl#pictureContentControl:member">Word.ContentControl.pictureContentControl</xref>
 
 isPreview: false
 isDeprecated: false

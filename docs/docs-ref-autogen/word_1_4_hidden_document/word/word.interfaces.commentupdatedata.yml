@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CommentReplyUpdateData#parentComment:member"
-  alttext="Word.Interfaces.CommentReplyUpdateData.parentComment" />
+  - <xref
+  href="word!Word.Interfaces.CommentReplyUpdateData#parentComment:member">Word.Interfaces.CommentReplyUpdateData.parentComment</xref>
 
 isPreview: false
 isDeprecated: false

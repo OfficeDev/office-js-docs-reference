@@ -13,36 +13,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentBody:member" alttext="Word.Body.parentBody"
-  />
+  - <xref href="word!Word.Body#parentBody:member">Word.Body.parentBody</xref>
 
-  - <xref uid="word!Word.Body#parentBodyOrNullObject:member"
-  alttext="Word.Body.parentBodyOrNullObject" />
+  - <xref
+  href="word!Word.Body#parentBodyOrNullObject:member">Word.Body.parentBodyOrNullObject</xref>
 
-  - <xref uid="word!Word.ContentControl#parentBody:member"
-  alttext="Word.ContentControl.parentBody" />
+  - <xref
+  href="word!Word.ContentControl#parentBody:member">Word.ContentControl.parentBody</xref>
 
-  - <xref uid="word!Word.Document#body:member" alttext="Word.Document.body" />
+  - <xref href="word!Word.Document#body:member">Word.Document.body</xref>
 
-  - <xref uid="word!Word.Field#parentBody:member"
-  alttext="Word.Field.parentBody" />
+  - <xref href="word!Word.Field#parentBody:member">Word.Field.parentBody</xref>
 
-  - <xref uid="word!Word.NoteItem#body:member" alttext="Word.NoteItem.body" />
+  - <xref href="word!Word.NoteItem#body:member">Word.NoteItem.body</xref>
 
-  - <xref uid="word!Word.Paragraph#parentBody:member"
-  alttext="Word.Paragraph.parentBody" />
+  - <xref
+  href="word!Word.Paragraph#parentBody:member">Word.Paragraph.parentBody</xref>
 
-  - <xref uid="word!Word.Range#parentBody:member"
-  alttext="Word.Range.parentBody" />
+  - <xref href="word!Word.Range#parentBody:member">Word.Range.parentBody</xref>
 
-  - <xref uid="word!Word.Section#body:member" alttext="Word.Section.body" />
+  - <xref href="word!Word.Section#body:member">Word.Section.body</xref>
 
-  - <xref uid="word!Word.Shape#body:member" alttext="Word.Shape.body" />
+  - <xref href="word!Word.Shape#body:member">Word.Shape.body</xref>
 
-  - <xref uid="word!Word.Table#parentBody:member"
-  alttext="Word.Table.parentBody" />
+  - <xref href="word!Word.Table#parentBody:member">Word.Table.parentBody</xref>
 
-  - <xref uid="word!Word.TableCell#body:member" alttext="Word.TableCell.body" />
+  - <xref href="word!Word.TableCell#body:member">Word.TableCell.body</xref>
 
   #### Examples
 

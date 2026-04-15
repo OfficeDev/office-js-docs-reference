@@ -10,20 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#line:member"
-  alttext="Excel.Interfaces.ChartAxisFormatData.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisFormatData#line:member">Excel.Interfaces.ChartAxisFormatData.line</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsFormatData#line:member"
-  alttext="Excel.Interfaces.ChartErrorBarsFormatData.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartErrorBarsFormatData#line:member">Excel.Interfaces.ChartErrorBarsFormatData.line</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartGridlinesFormatData#line:member"
-  alttext="Excel.Interfaces.ChartGridlinesFormatData.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartGridlinesFormatData#line:member">Excel.Interfaces.ChartGridlinesFormatData.line</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatData#line:member"
-  alttext="Excel.Interfaces.ChartSeriesFormatData.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesFormatData#line:member">Excel.Interfaces.ChartSeriesFormatData.line</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData#line:member"
-  alttext="Excel.Interfaces.ChartTrendlineFormatData.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineFormatData#line:member">Excel.Interfaces.ChartTrendlineFormatData.line</xref>
 
 isPreview: false
 isDeprecated: false

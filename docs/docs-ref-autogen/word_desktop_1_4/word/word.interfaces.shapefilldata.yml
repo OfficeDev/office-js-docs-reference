@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeData#fill:member"
-  alttext="Word.Interfaces.ShapeData.fill" />
+  - <xref
+  href="word!Word.Interfaces.ShapeData#fill:member">Word.Interfaces.ShapeData.fill</xref>
 
 isPreview: false
 isDeprecated: false

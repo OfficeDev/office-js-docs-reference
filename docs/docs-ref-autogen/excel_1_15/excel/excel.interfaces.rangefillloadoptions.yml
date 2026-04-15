@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member"
-  alttext="Excel.Interfaces.RangeFormatLoadOptions.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member">Excel.Interfaces.RangeFormatLoadOptions.fill</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionLoadOptions#fill:member"
-  alttext="Excel.Interfaces.StyleCollectionLoadOptions.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleCollectionLoadOptions#fill:member">Excel.Interfaces.StyleCollectionLoadOptions.fill</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleLoadOptions#fill:member"
-  alttext="Excel.Interfaces.StyleLoadOptions.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleLoadOptions#fill:member">Excel.Interfaces.StyleLoadOptions.fill</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#displayBlanksAs:member"
-  alttext="Excel.Chart.displayBlanksAs" />
+  - <xref
+  href="excel!Excel.Chart#displayBlanksAs:member">Excel.Chart.displayBlanksAs</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#displayBlanksAs:member"
-  alttext="Excel.Interfaces.ChartData.displayBlanksAs" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartData#displayBlanksAs:member">Excel.Interfaces.ChartData.displayBlanksAs</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member"
-  alttext="Excel.Interfaces.ChartUpdateData.displayBlanksAs" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member">Excel.Interfaces.ChartUpdateData.displayBlanksAs</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member"
-  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions" />
+  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#binOptions:member"
-  alttext="Excel.Interfaces.ChartSeriesLoadOptions.binOptions" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#binOptions:member">Excel.Interfaces.ChartSeriesLoadOptions.binOptions</xref>
 
 isPreview: false
 isDeprecated: false

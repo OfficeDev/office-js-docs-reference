@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member"
-  alttext="Excel.Interfaces.RangeFormatLoadOptions.protection" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member">Excel.Interfaces.RangeFormatLoadOptions.protection</xref>
 
 isPreview: false
 isDeprecated: false

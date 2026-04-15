@@ -10,14 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxesData#categoryAxis:member"
-  alttext="Excel.Interfaces.ChartAxesData.categoryAxis" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxesData#categoryAxis:member">Excel.Interfaces.ChartAxesData.categoryAxis</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxesData#seriesAxis:member"
-  alttext="Excel.Interfaces.ChartAxesData.seriesAxis" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxesData#seriesAxis:member">Excel.Interfaces.ChartAxesData.seriesAxis</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxesData#valueAxis:member"
-  alttext="Excel.Interfaces.ChartAxesData.valueAxis" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxesData#valueAxis:member">Excel.Interfaces.ChartAxesData.valueAxis</xref>
 
 isPreview: false
 isDeprecated: false

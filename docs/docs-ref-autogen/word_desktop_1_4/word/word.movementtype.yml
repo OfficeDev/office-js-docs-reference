@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionMoveLeftRightOptions#extend:member"
-  alttext="Word.SelectionMoveLeftRightOptions.extend" />
+  - <xref
+  href="word!Word.SelectionMoveLeftRightOptions#extend:member">Word.SelectionMoveLeftRightOptions.extend</xref>
 
-  - <xref uid="word!Word.SelectionMoveUpDownOptions#extend:member"
-  alttext="Word.SelectionMoveUpDownOptions.extend" />
+  - <xref
+  href="word!Word.SelectionMoveUpDownOptions#extend:member">Word.SelectionMoveUpDownOptions.extend</xref>
 
 isPreview: false
 isDeprecated: false

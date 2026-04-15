@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CardLayoutStandardProperties#mainImage:member"
-  alttext="Excel.CardLayoutStandardProperties.mainImage" />
+  - <xref
+  href="excel!Excel.CardLayoutStandardProperties#mainImage:member">Excel.CardLayoutStandardProperties.mainImage</xref>
 
-  - <xref uid="excel!Excel.CardLayoutStandardProperties#subTitle:member"
-  alttext="Excel.CardLayoutStandardProperties.subTitle" />
+  - <xref
+  href="excel!Excel.CardLayoutStandardProperties#subTitle:member">Excel.CardLayoutStandardProperties.subTitle</xref>
 
-  - <xref uid="excel!Excel.CardLayoutStandardProperties#title:member"
-  alttext="Excel.CardLayoutStandardProperties.title" />
+  - <xref
+  href="excel!Excel.CardLayoutStandardProperties#title:member">Excel.CardLayoutStandardProperties.title</xref>
 
 isPreview: false
 isDeprecated: false

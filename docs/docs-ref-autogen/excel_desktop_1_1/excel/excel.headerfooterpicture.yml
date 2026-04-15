@@ -12,23 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.HeaderFooter#centerFooterPicture:member"
-  alttext="Excel.HeaderFooter.centerFooterPicture" />
+  - <xref
+  href="excel!Excel.HeaderFooter#centerFooterPicture:member">Excel.HeaderFooter.centerFooterPicture</xref>
 
-  - <xref uid="excel!Excel.HeaderFooter#centerHeaderPicture:member"
-  alttext="Excel.HeaderFooter.centerHeaderPicture" />
+  - <xref
+  href="excel!Excel.HeaderFooter#centerHeaderPicture:member">Excel.HeaderFooter.centerHeaderPicture</xref>
 
-  - <xref uid="excel!Excel.HeaderFooter#leftFooterPicture:member"
-  alttext="Excel.HeaderFooter.leftFooterPicture" />
+  - <xref
+  href="excel!Excel.HeaderFooter#leftFooterPicture:member">Excel.HeaderFooter.leftFooterPicture</xref>
 
-  - <xref uid="excel!Excel.HeaderFooter#leftHeaderPicture:member"
-  alttext="Excel.HeaderFooter.leftHeaderPicture" />
+  - <xref
+  href="excel!Excel.HeaderFooter#leftHeaderPicture:member">Excel.HeaderFooter.leftHeaderPicture</xref>
 
-  - <xref uid="excel!Excel.HeaderFooter#rightFooterPicture:member"
-  alttext="Excel.HeaderFooter.rightFooterPicture" />
+  - <xref
+  href="excel!Excel.HeaderFooter#rightFooterPicture:member">Excel.HeaderFooter.rightFooterPicture</xref>
 
-  - <xref uid="excel!Excel.HeaderFooter#rightHeaderPicture:member"
-  alttext="Excel.HeaderFooter.rightHeaderPicture" />
+  - <xref
+  href="excel!Excel.HeaderFooter#rightHeaderPicture:member">Excel.HeaderFooter.rightHeaderPicture</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Application#notebooks:member"
-  alttext="OneNote.Application.notebooks" />
+  - <xref
+  href="onenote!OneNote.Application#notebooks:member">OneNote.Application.notebooks</xref>
 
 isPreview: false
 isDeprecated: false

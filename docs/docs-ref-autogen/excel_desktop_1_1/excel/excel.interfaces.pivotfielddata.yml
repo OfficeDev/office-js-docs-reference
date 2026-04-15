@@ -10,24 +10,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#field:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyData.field" />
-
-  - <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member"
-  alttext="Excel.Interfaces.FilterPivotHierarchyData.fields" />
-
-  - <xref uid="excel!Excel.Interfaces.PivotFieldCollectionData#items:member"
-  alttext="Excel.Interfaces.PivotFieldCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.DataPivotHierarchyData#field:member">Excel.Interfaces.DataPivotHierarchyData.field</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.PivotFieldCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member">Excel.Interfaces.FilterPivotHierarchyData.fields</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PivotHierarchyData#fields:member"
-  alttext="Excel.Interfaces.PivotHierarchyData.fields" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotFieldCollectionData#items:member">Excel.Interfaces.PivotFieldCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member"
-  alttext="Excel.Interfaces.RowColumnPivotHierarchyData.fields" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member">Excel.Interfaces.PivotFieldCollectionUpdateData.items</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.PivotHierarchyData#fields:member">Excel.Interfaces.PivotHierarchyData.fields</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member">Excel.Interfaces.RowColumnPivotHierarchyData.fields</xref>
 
 isPreview: false
 isDeprecated: false

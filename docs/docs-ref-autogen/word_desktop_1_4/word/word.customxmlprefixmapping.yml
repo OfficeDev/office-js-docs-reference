@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlPrefixMappingCollection#items:member"
-  alttext="Word.CustomXmlPrefixMappingCollection.items" />
+  - <xref
+  href="word!Word.CustomXmlPrefixMappingCollection#items:member">Word.CustomXmlPrefixMappingCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

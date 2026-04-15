@@ -13,23 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadStyle:member"
-  alttext="Excel.Interfaces.LineData.beginArrowheadStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.LineData#beginArrowheadStyle:member">Excel.Interfaces.LineData.beginArrowheadStyle</xref>
 
-  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadStyle:member"
-  alttext="Excel.Interfaces.LineData.endArrowheadStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.LineData#endArrowheadStyle:member">Excel.Interfaces.LineData.endArrowheadStyle</xref>
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member"
-  alttext="Excel.Interfaces.LineUpdateData.beginArrowheadStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member">Excel.Interfaces.LineUpdateData.beginArrowheadStyle</xref>
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member"
-  alttext="Excel.Interfaces.LineUpdateData.endArrowheadStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member">Excel.Interfaces.LineUpdateData.endArrowheadStyle</xref>
 
-  - <xref uid="excel!Excel.Line#beginArrowheadStyle:member"
-  alttext="Excel.Line.beginArrowheadStyle" />
+  - <xref
+  href="excel!Excel.Line#beginArrowheadStyle:member">Excel.Line.beginArrowheadStyle</xref>
 
-  - <xref uid="excel!Excel.Line#endArrowheadStyle:member"
-  alttext="Excel.Line.endArrowheadStyle" />
+  - <xref
+  href="excel!Excel.Line#endArrowheadStyle:member">Excel.Line.endArrowheadStyle</xref>
 
   #### Examples
 

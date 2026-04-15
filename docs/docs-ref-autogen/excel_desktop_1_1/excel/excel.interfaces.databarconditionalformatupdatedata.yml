@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBar:member"
-  alttext="Excel.Interfaces.ConditionalFormatUpdateData.dataBar" />
+  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBar:member">Excel.Interfaces.ConditionalFormatUpdateData.dataBar</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBarOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject" />
+  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBarOrNullObject:member">Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

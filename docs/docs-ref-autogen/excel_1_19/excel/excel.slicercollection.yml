@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#slicers:member"
-  alttext="Excel.Workbook.slicers" />
+  - <xref
+  href="excel!Excel.Workbook#slicers:member">Excel.Workbook.slicers</xref>
 
-  - <xref uid="excel!Excel.Worksheet#slicers:member"
-  alttext="Excel.Worksheet.slicers" />
+  - <xref
+  href="excel!Excel.Worksheet#slicers:member">Excel.Worksheet.slicers</xref>
 
 isPreview: false
 isDeprecated: false

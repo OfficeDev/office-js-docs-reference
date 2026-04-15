@@ -14,15 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Frame#shading:member" alttext="Word.Frame.shading" />
+  - <xref href="word!Word.Frame#shading:member">Word.Frame.shading</xref>
 
-  - <xref uid="word!Word.Paragraph#shading:member"
-  alttext="Word.Paragraph.shading" />
+  - <xref
+  href="word!Word.Paragraph#shading:member">Word.Paragraph.shading</xref>
 
-  - <xref uid="word!Word.Range#shading:member" alttext="Word.Range.shading" />
+  - <xref href="word!Word.Range#shading:member">Word.Range.shading</xref>
 
-  - <xref uid="word!Word.TableColumn#shading:member"
-  alttext="Word.TableColumn.shading" />
+  - <xref
+  href="word!Word.TableColumn#shading:member">Word.TableColumn.shading</xref>
 
 isPreview: false
 isDeprecated: false

@@ -16,11 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.PaneCollection#items:member"
-  alttext="Word.PaneCollection.items" />
+  - <xref
+  href="word!Word.PaneCollection#items:member">Word.PaneCollection.items</xref>
 
-  - <xref uid="word!Word.Window#activePane:member"
-  alttext="Word.Window.activePane" />
+  - <xref
+  href="word!Word.Window#activePane:member">Word.Window.activePane</xref>
 
   #### Examples
 

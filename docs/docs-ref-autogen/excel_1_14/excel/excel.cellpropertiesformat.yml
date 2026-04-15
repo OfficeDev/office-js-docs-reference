@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SettableCellProperties#format:member"
-  alttext="Excel.SettableCellProperties.format" />
+  - <xref
+  href="excel!Excel.SettableCellProperties#format:member">Excel.SettableCellProperties.format</xref>
 
-  - <xref uid="excel!Excel.SettableColumnProperties#format:member"
-  alttext="Excel.SettableColumnProperties.format" />
+  - <xref
+  href="excel!Excel.SettableColumnProperties#format:member">Excel.SettableColumnProperties.format</xref>
 
-  - <xref uid="excel!Excel.SettableRowProperties#format:member"
-  alttext="Excel.SettableRowProperties.format" />
+  - <xref
+  href="excel!Excel.SettableRowProperties#format:member">Excel.SettableRowProperties.format</xref>
 
 isPreview: false
 isDeprecated: false

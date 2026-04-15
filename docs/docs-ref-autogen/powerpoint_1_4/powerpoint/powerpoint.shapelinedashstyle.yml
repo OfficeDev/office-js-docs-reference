@@ -15,15 +15,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#dashStyle:member"
-  alttext="PowerPoint.Interfaces.ShapeLineFormatData.dashStyle" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#dashStyle:member">PowerPoint.Interfaces.ShapeLineFormatData.dashStyle</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#dashStyle:member"
-  alttext="PowerPoint.Interfaces.ShapeLineFormatUpdateData.dashStyle" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#dashStyle:member">PowerPoint.Interfaces.ShapeLineFormatUpdateData.dashStyle</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#dashStyle:member"
-  alttext="PowerPoint.ShapeLineFormat.dashStyle" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeLineFormat#dashStyle:member">PowerPoint.ShapeLineFormat.dashStyle</xref>
 
   #### Examples
 

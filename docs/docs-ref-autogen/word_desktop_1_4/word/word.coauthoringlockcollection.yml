@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Coauthor#locks:member" alttext="Word.Coauthor.locks" />
+  - <xref href="word!Word.Coauthor#locks:member">Word.Coauthor.locks</xref>
 
-  - <xref uid="word!Word.Coauthoring#locks:member"
-  alttext="Word.Coauthoring.locks" />
+  - <xref
+  href="word!Word.Coauthoring#locks:member">Word.Coauthoring.locks</xref>
 
 isPreview: false
 isDeprecated: false

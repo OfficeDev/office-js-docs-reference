@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.SlideMaster#background:member"
-  alttext="PowerPoint.SlideMaster.background" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMaster#background:member">PowerPoint.SlideMaster.background</xref>
 
 isPreview: false
 isDeprecated: false

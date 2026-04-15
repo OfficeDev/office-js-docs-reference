@@ -31,14 +31,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#settings:member"
-  alttext="Office.Document.settings" />
+  - <xref
+  href="office!Office.Document#settings:member">Office.Document.settings</xref>
 
-  - <xref uid="office!Office.Settings#refreshAsync:member(1)"
-  alttext="Office.Settings.refreshAsync" />
+  - <xref
+  href="office!Office.Settings#refreshAsync:member(1)">Office.Settings.refreshAsync</xref>
 
-  - <xref uid="office!Office.SettingsChangedEventArgs#settings:member"
-  alttext="Office.SettingsChangedEventArgs.settings" />
+  - <xref
+  href="office!Office.SettingsChangedEventArgs#settings:member">Office.SettingsChangedEventArgs.settings</xref>
 
 isPreview: false
 isDeprecated: false

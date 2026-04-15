@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#attachedTemplate:member"
-  alttext="Word.Document.attachedTemplate" />
+  - <xref
+  href="word!Word.Document#attachedTemplate:member">Word.Document.attachedTemplate</xref>
 
-  - <xref uid="word!Word.TemplateCollection#items:member"
-  alttext="Word.TemplateCollection.items" />
+  - <xref
+  href="word!Word.TemplateCollection#items:member">Word.TemplateCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

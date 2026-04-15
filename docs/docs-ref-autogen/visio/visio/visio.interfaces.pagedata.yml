@@ -8,14 +8,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.DocumentData#pages:member"
-  alttext="Visio.Interfaces.DocumentData.pages" />
+  - <xref
+  href="visio!Visio.Interfaces.DocumentData#pages:member">Visio.Interfaces.DocumentData.pages</xref>
 
-  - <xref uid="visio!Visio.Interfaces.PageCollectionData#items:member"
-  alttext="Visio.Interfaces.PageCollectionData.items" />
+  - <xref
+  href="visio!Visio.Interfaces.PageCollectionData#items:member">Visio.Interfaces.PageCollectionData.items</xref>
 
-  - <xref uid="visio!Visio.Interfaces.PageCollectionUpdateData#items:member"
-  alttext="Visio.Interfaces.PageCollectionUpdateData.items" />
+  - <xref
+  href="visio!Visio.Interfaces.PageCollectionUpdateData#items:member">Visio.Interfaces.PageCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

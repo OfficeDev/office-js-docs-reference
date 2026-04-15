@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.InfobarClickedEventArgs#infobarDetails:member"
-  alttext="Office.InfobarClickedEventArgs.infobarDetails" />
+  - <xref
+  href="outlook!Office.InfobarClickedEventArgs#infobarDetails:member">Office.InfobarClickedEventArgs.infobarDetails</xref>
 
   #### Examples
 

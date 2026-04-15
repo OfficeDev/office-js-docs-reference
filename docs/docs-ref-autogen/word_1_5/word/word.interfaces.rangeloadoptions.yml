@@ -12,18 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldCollectionLoadOptions.result" />
-
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldLoadOptions.result" />
+  - <xref
+  href="word!Word.Interfaces.FieldCollectionLoadOptions#result:member">Word.Interfaces.FieldCollectionLoadOptions.result</xref>
 
   - <xref
-  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member"
-  alttext="Word.Interfaces.NoteItemCollectionLoadOptions.reference" />
+  href="word!Word.Interfaces.FieldLoadOptions#result:member">Word.Interfaces.FieldLoadOptions.result</xref>
 
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member"
-  alttext="Word.Interfaces.NoteItemLoadOptions.reference" />
+  - <xref
+  href="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member">Word.Interfaces.NoteItemCollectionLoadOptions.reference</xref>
+
+  - <xref
+  href="word!Word.Interfaces.NoteItemLoadOptions#reference:member">Word.Interfaces.NoteItemLoadOptions.reference</xref>
 
 isPreview: false
 isDeprecated: false

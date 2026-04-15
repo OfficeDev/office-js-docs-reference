@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#worksheets:member"
-  alttext="Excel.Workbook.worksheets" />
+  - <xref
+  href="excel!Excel.Workbook#worksheets:member">Excel.Workbook.worksheets</xref>
 
 isPreview: false
 isDeprecated: false

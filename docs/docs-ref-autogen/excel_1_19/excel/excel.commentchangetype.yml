@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CommentChangedEventArgs#changeType:member"
-  alttext="Excel.CommentChangedEventArgs.changeType" />
+  - <xref
+  href="excel!Excel.CommentChangedEventArgs#changeType:member">Excel.CommentChangedEventArgs.changeType</xref>
 
 isPreview: false
 isDeprecated: false

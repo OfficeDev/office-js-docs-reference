@@ -14,20 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member"
-  alttext="Word.Interfaces.DocumentLoadOptions.activeWindow" />
+  - <xref
+  href="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member">Word.Interfaces.DocumentLoadOptions.activeWindow</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#next:member"
-  alttext="Word.Interfaces.WindowCollectionLoadOptions.next" />
+  - <xref
+  href="word!Word.Interfaces.WindowCollectionLoadOptions#next:member">Word.Interfaces.WindowCollectionLoadOptions.next</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#previous:member"
-  alttext="Word.Interfaces.WindowCollectionLoadOptions.previous" />
+  - <xref
+  href="word!Word.Interfaces.WindowCollectionLoadOptions#previous:member">Word.Interfaces.WindowCollectionLoadOptions.previous</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowLoadOptions#next:member"
-  alttext="Word.Interfaces.WindowLoadOptions.next" />
+  - <xref
+  href="word!Word.Interfaces.WindowLoadOptions#next:member">Word.Interfaces.WindowLoadOptions.next</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowLoadOptions#previous:member"
-  alttext="Word.Interfaces.WindowLoadOptions.previous" />
+  - <xref
+  href="word!Word.Interfaces.WindowLoadOptions#previous:member">Word.Interfaces.WindowLoadOptions.previous</xref>
 
 isPreview: false
 isDeprecated: false

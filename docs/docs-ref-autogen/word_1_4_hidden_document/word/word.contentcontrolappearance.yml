@@ -13,14 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#appearance:member"
-  alttext="Word.ContentControl.appearance" />
+  - <xref
+  href="word!Word.ContentControl#appearance:member">Word.ContentControl.appearance</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#appearance:member"
-  alttext="Word.Interfaces.ContentControlData.appearance" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#appearance:member">Word.Interfaces.ContentControlData.appearance</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#appearance:member"
-  alttext="Word.Interfaces.ContentControlUpdateData.appearance" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlUpdateData#appearance:member">Word.Interfaces.ContentControlUpdateData.appearance</xref>
 
   #### Examples
 

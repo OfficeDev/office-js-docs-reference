@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentEventArgs#changeType:member"
-  alttext="Word.CommentEventArgs.changeType" />
+  - <xref
+  href="word!Word.CommentEventArgs#changeType:member">Word.CommentEventArgs.changeType</xref>
 
   #### Examples
 

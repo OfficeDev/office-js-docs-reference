@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member"
-  alttext="Excel.Interfaces.FilterPivotHierarchyCollectionData.items" />
+  href="excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member">Excel.Interfaces.FilterPivotHierarchyCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData#items:member">Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PivotTableData#filterHierarchies:member"
-  alttext="Excel.Interfaces.PivotTableData.filterHierarchies" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotTableData#filterHierarchies:member">Excel.Interfaces.PivotTableData.filterHierarchies</xref>
 
 isPreview: false
 isDeprecated: false

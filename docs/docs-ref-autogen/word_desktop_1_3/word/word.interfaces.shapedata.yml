@@ -8,38 +8,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#shapes:member"
-  alttext="Word.Interfaces.BodyData.shapes" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#shapes:member">Word.Interfaces.BodyData.shapes</xref>
 
-  - <xref uid="word!Word.Interfaces.CanvasData#shape:member"
-  alttext="Word.Interfaces.CanvasData.shape" />
+  - <xref
+  href="word!Word.Interfaces.CanvasData#shape:member">Word.Interfaces.CanvasData.shape</xref>
 
-  - <xref uid="word!Word.Interfaces.CanvasData#shapes:member"
-  alttext="Word.Interfaces.CanvasData.shapes" />
+  - <xref
+  href="word!Word.Interfaces.CanvasData#shapes:member">Word.Interfaces.CanvasData.shapes</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#shapes:member"
-  alttext="Word.Interfaces.ParagraphData.shapes" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphData#shapes:member">Word.Interfaces.ParagraphData.shapes</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeData#shapes:member"
-  alttext="Word.Interfaces.RangeData.shapes" />
+  - <xref
+  href="word!Word.Interfaces.RangeData#shapes:member">Word.Interfaces.RangeData.shapes</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeCollectionData#items:member"
-  alttext="Word.Interfaces.ShapeCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.ShapeCollectionData#items:member">Word.Interfaces.ShapeCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ShapeCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.ShapeCollectionUpdateData#items:member">Word.Interfaces.ShapeCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeData#parentCanvas:member"
-  alttext="Word.Interfaces.ShapeData.parentCanvas" />
+  - <xref
+  href="word!Word.Interfaces.ShapeData#parentCanvas:member">Word.Interfaces.ShapeData.parentCanvas</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeData#parentGroup:member"
-  alttext="Word.Interfaces.ShapeData.parentGroup" />
+  - <xref
+  href="word!Word.Interfaces.ShapeData#parentGroup:member">Word.Interfaces.ShapeData.parentGroup</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeGroupData#shape:member"
-  alttext="Word.Interfaces.ShapeGroupData.shape" />
+  - <xref
+  href="word!Word.Interfaces.ShapeGroupData#shape:member">Word.Interfaces.ShapeGroupData.shape</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeGroupData#shapes:member"
-  alttext="Word.Interfaces.ShapeGroupData.shapes" />
+  - <xref
+  href="word!Word.Interfaces.ShapeGroupData#shapes:member">Word.Interfaces.ShapeGroupData.shapes</xref>
 
 isPreview: false
 isDeprecated: false

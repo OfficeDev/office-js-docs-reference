@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member"
-  alttext="Word.Interfaces.FieldUpdateData.result" />
+  - <xref
+  href="word!Word.Interfaces.FieldUpdateData#result:member">Word.Interfaces.FieldUpdateData.result</xref>
 
 isPreview: false
 isDeprecated: false

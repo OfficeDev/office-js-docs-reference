@@ -13,22 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottom" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottom</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottomOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottomOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottom:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.topBottom" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottom:member">Excel.Interfaces.ConditionalFormatLoadOptions.topBottom</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottomOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.topBottomOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottomOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.topBottomOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

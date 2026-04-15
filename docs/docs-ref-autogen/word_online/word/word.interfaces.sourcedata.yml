@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.SourceCollectionData#items:member"
-  alttext="Word.Interfaces.SourceCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.SourceCollectionData#items:member">Word.Interfaces.SourceCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.SourceCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.SourceCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.SourceCollectionUpdateData#items:member">Word.Interfaces.SourceCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

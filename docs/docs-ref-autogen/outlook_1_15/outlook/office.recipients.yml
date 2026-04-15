@@ -22,29 +22,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#optionalAttendees:member"
-  alttext="Office.AppointmentCompose.optionalAttendees" />
+  - <xref
+  href="outlook!Office.AppointmentCompose#optionalAttendees:member">Office.AppointmentCompose.optionalAttendees</xref>
 
-  - <xref uid="outlook!Office.AppointmentCompose#requiredAttendees:member"
-  alttext="Office.AppointmentCompose.requiredAttendees" />
+  - <xref
+  href="outlook!Office.AppointmentCompose#requiredAttendees:member">Office.AppointmentCompose.requiredAttendees</xref>
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#bcc:member"
-  alttext="Office.LoadedMessageCompose.bcc" />
+  - <xref
+  href="outlook!Office.LoadedMessageCompose#bcc:member">Office.LoadedMessageCompose.bcc</xref>
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#cc:member"
-  alttext="Office.LoadedMessageCompose.cc" />
+  - <xref
+  href="outlook!Office.LoadedMessageCompose#cc:member">Office.LoadedMessageCompose.cc</xref>
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#to:member"
-  alttext="Office.LoadedMessageCompose.to" />
+  - <xref
+  href="outlook!Office.LoadedMessageCompose#to:member">Office.LoadedMessageCompose.to</xref>
 
-  - <xref uid="outlook!Office.MessageCompose#bcc:member"
-  alttext="Office.MessageCompose.bcc" />
+  - <xref
+  href="outlook!Office.MessageCompose#bcc:member">Office.MessageCompose.bcc</xref>
 
-  - <xref uid="outlook!Office.MessageCompose#cc:member"
-  alttext="Office.MessageCompose.cc" />
+  - <xref
+  href="outlook!Office.MessageCompose#cc:member">Office.MessageCompose.cc</xref>
 
-  - <xref uid="outlook!Office.MessageCompose#to:member"
-  alttext="Office.MessageCompose.to" />
+  - <xref
+  href="outlook!Office.MessageCompose#to:member">Office.MessageCompose.to</xref>
 
 isPreview: false
 isDeprecated: false

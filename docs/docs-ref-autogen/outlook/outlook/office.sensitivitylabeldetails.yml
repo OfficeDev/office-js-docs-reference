@@ -34,14 +34,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.SensitivityLabel#setAsync:member(1)"
-  alttext="Office.SensitivityLabel.setAsync" />
+  - <xref
+  href="outlook!Office.SensitivityLabel#setAsync:member(1)">Office.SensitivityLabel.setAsync</xref>
 
-  - <xref uid="outlook!Office.SensitivityLabelDetails#children:member"
-  alttext="Office.SensitivityLabelDetails.children" />
+  - <xref
+  href="outlook!Office.SensitivityLabelDetails#children:member">Office.SensitivityLabelDetails.children</xref>
 
-  - <xref uid="outlook!Office.SensitivityLabelsCatalog#getAsync:member(1)"
-  alttext="Office.SensitivityLabelsCatalog.getAsync" />
+  - <xref
+  href="outlook!Office.SensitivityLabelsCatalog#getAsync:member(1)">Office.SensitivityLabelsCatalog.getAsync</xref>
 
   #### Examples
 

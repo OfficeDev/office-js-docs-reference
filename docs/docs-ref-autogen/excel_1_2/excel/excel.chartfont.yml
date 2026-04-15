@@ -15,23 +15,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAreaFormat#font:member"
-  alttext="Excel.ChartAreaFormat.font" />
+  - <xref
+  href="excel!Excel.ChartAreaFormat#font:member">Excel.ChartAreaFormat.font</xref>
 
-  - <xref uid="excel!Excel.ChartAxisFormat#font:member"
-  alttext="Excel.ChartAxisFormat.font" />
+  - <xref
+  href="excel!Excel.ChartAxisFormat#font:member">Excel.ChartAxisFormat.font</xref>
 
-  - <xref uid="excel!Excel.ChartAxisTitleFormat#font:member"
-  alttext="Excel.ChartAxisTitleFormat.font" />
+  - <xref
+  href="excel!Excel.ChartAxisTitleFormat#font:member">Excel.ChartAxisTitleFormat.font</xref>
 
-  - <xref uid="excel!Excel.ChartDataLabelFormat#font:member"
-  alttext="Excel.ChartDataLabelFormat.font" />
+  - <xref
+  href="excel!Excel.ChartDataLabelFormat#font:member">Excel.ChartDataLabelFormat.font</xref>
 
-  - <xref uid="excel!Excel.ChartLegendFormat#font:member"
-  alttext="Excel.ChartLegendFormat.font" />
+  - <xref
+  href="excel!Excel.ChartLegendFormat#font:member">Excel.ChartLegendFormat.font</xref>
 
-  - <xref uid="excel!Excel.ChartTitleFormat#font:member"
-  alttext="Excel.ChartTitleFormat.font" />
+  - <xref
+  href="excel!Excel.ChartTitleFormat#font:member">Excel.ChartTitleFormat.font</xref>
 
   #### Examples
 

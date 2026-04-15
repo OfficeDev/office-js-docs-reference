@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineData#label:member"
-  alttext="Excel.Interfaces.ChartTrendlineData.label" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineData#label:member">Excel.Interfaces.ChartTrendlineData.label</xref>
 
 isPreview: false
 isDeprecated: false

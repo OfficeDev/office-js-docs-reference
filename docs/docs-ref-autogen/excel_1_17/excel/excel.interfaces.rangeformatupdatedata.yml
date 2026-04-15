@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeAreasUpdateData#format:member"
-  alttext="Excel.Interfaces.RangeAreasUpdateData.format" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeAreasUpdateData#format:member">Excel.Interfaces.RangeAreasUpdateData.format</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#format:member"
-  alttext="Excel.Interfaces.RangeUpdateData.format" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeUpdateData#format:member">Excel.Interfaces.RangeUpdateData.format</xref>
 
 isPreview: false
 isDeprecated: false

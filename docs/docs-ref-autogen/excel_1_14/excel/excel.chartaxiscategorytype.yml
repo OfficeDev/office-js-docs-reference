@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#categoryType:member"
-  alttext="Excel.ChartAxis.categoryType" />
+  - <xref
+  href="excel!Excel.ChartAxis#categoryType:member">Excel.ChartAxis.categoryType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#categoryType:member"
-  alttext="Excel.Interfaces.ChartAxisData.categoryType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisData#categoryType:member">Excel.Interfaces.ChartAxisData.categoryType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#categoryType:member"
-  alttext="Excel.Interfaces.ChartAxisUpdateData.categoryType" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisUpdateData#categoryType:member">Excel.Interfaces.ChartAxisUpdateData.categoryType</xref>
 
 isPreview: false
 isDeprecated: false

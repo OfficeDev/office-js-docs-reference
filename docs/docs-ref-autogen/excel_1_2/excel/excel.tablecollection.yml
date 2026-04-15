@@ -15,11 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#tables:member"
-  alttext="Excel.Workbook.tables" />
+  - <xref href="excel!Excel.Workbook#tables:member">Excel.Workbook.tables</xref>
 
-  - <xref uid="excel!Excel.Worksheet#tables:member"
-  alttext="Excel.Worksheet.tables" />
+  - <xref
+  href="excel!Excel.Worksheet#tables:member">Excel.Worksheet.tables</xref>
 
   #### Examples
 

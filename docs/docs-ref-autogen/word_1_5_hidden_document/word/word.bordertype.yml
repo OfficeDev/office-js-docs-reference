@@ -13,14 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TableBorderData#type:member"
-  alttext="Word.Interfaces.TableBorderData.type" />
+  - <xref
+  href="word!Word.Interfaces.TableBorderData#type:member">Word.Interfaces.TableBorderData.type</xref>
 
-  - <xref uid="word!Word.Interfaces.TableBorderUpdateData#type:member"
-  alttext="Word.Interfaces.TableBorderUpdateData.type" />
+  - <xref
+  href="word!Word.Interfaces.TableBorderUpdateData#type:member">Word.Interfaces.TableBorderUpdateData.type</xref>
 
-  - <xref uid="word!Word.TableBorder#type:member"
-  alttext="Word.TableBorder.type" />
+  - <xref href="word!Word.TableBorder#type:member">Word.TableBorder.type</xref>
 
   #### Examples
 

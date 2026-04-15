@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SettingCollectionData#items:member"
-  alttext="Excel.Interfaces.SettingCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.SettingCollectionData#items:member">Excel.Interfaces.SettingCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.SettingCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.SettingCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.SettingCollectionUpdateData#items:member">Excel.Interfaces.SettingCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

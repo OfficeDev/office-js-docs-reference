@@ -10,12 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskCollectionData#items:member"
-  alttext="Excel.Interfaces.DocumentTaskCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskCollectionData#items:member">Excel.Interfaces.DocumentTaskCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.DocumentTaskCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.DocumentTaskCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.DocumentTaskCollectionUpdateData#items:member">Excel.Interfaces.DocumentTaskCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

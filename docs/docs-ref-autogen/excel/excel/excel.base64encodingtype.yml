@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Base64EncodedImage#type:member"
-  alttext="Excel.Base64EncodedImage.type" />
+  - <xref
+  href="excel!Excel.Base64EncodedImage#type:member">Excel.Base64EncodedImage.type</xref>
 
 isPreview: true
 isDeprecated: false

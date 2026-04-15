@@ -8,17 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PaneCollectionData#items:member"
-  alttext="Excel.Interfaces.PaneCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.PaneCollectionData#items:member">Excel.Interfaces.PaneCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.PaneCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member">Excel.Interfaces.PaneCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#activePane:member"
-  alttext="Excel.Interfaces.WindowData.activePane" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowData#activePane:member">Excel.Interfaces.WindowData.activePane</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#panes:member"
-  alttext="Excel.Interfaces.WindowData.panes" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowData#panes:member">Excel.Interfaces.WindowData.panes</xref>
 
 isPreview: false
 isDeprecated: false

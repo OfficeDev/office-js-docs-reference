@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#fontNames:member"
-  alttext="Word.Application.fontNames" />
+  - <xref
+  href="word!Word.Application#fontNames:member">Word.Application.fontNames</xref>
 
 isPreview: false
 isDeprecated: false

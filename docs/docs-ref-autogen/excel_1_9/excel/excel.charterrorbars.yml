@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#xErrorBars:member"
-  alttext="Excel.ChartSeries.xErrorBars" />
+  - <xref
+  href="excel!Excel.ChartSeries#xErrorBars:member">Excel.ChartSeries.xErrorBars</xref>
 
-  - <xref uid="excel!Excel.ChartSeries#yErrorBars:member"
-  alttext="Excel.ChartSeries.yErrorBars" />
+  - <xref
+  href="excel!Excel.ChartSeries#yErrorBars:member">Excel.ChartSeries.yErrorBars</xref>
 
 isPreview: false
 isDeprecated: false

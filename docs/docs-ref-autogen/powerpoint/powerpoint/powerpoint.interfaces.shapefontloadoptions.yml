@@ -16,16 +16,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#font:member"
-  alttext="PowerPoint.Interfaces.TableCellCollectionLoadOptions.font" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#font:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.font</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member"
-  alttext="PowerPoint.Interfaces.TableCellLoadOptions.font" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member">PowerPoint.Interfaces.TableCellLoadOptions.font</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member"
-  alttext="PowerPoint.Interfaces.TextRangeLoadOptions.font" />
+  href="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member">PowerPoint.Interfaces.TextRangeLoadOptions.font</xref>
 
 isPreview: false
 isDeprecated: false

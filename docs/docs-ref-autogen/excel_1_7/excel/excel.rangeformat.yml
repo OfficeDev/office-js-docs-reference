@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#format:member" alttext="Excel.Range.format" />
+  - <xref href="excel!Excel.Range#format:member">Excel.Range.format</xref>
 
 isPreview: false
 isDeprecated: false

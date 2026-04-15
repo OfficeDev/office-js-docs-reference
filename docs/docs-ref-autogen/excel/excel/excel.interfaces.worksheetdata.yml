@@ -10,21 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerData#worksheet:member"
-  alttext="Excel.Interfaces.SlicerData.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.WindowData#activeWorksheet:member"
-  alttext="Excel.Interfaces.WindowData.activeWorksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#worksheets:member"
-  alttext="Excel.Interfaces.WorkbookData.worksheets" />
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetCollectionData#items:member"
-  alttext="Excel.Interfaces.WorksheetCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.SlicerData#worksheet:member">Excel.Interfaces.SlicerData.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.WorksheetCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.WindowData#activeWorksheet:member">Excel.Interfaces.WindowData.activeWorksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#worksheets:member">Excel.Interfaces.WorkbookData.worksheets</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetCollectionData#items:member">Excel.Interfaces.WorksheetCollectionData.items</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member">Excel.Interfaces.WorksheetCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

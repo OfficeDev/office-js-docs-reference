@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChangeDirectionState#deleteShiftDirection:member"
-  alttext="Excel.ChangeDirectionState.deleteShiftDirection" />
+  - <xref
+  href="excel!Excel.ChangeDirectionState#deleteShiftDirection:member">Excel.ChangeDirectionState.deleteShiftDirection</xref>
 
   #### Examples
 

@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataPivotHierarchy#field:member"
-  alttext="Excel.DataPivotHierarchy.field" />
+  - <xref
+  href="excel!Excel.DataPivotHierarchy#field:member">Excel.DataPivotHierarchy.field</xref>
 
-  - <xref uid="excel!Excel.PivotFieldCollection#items:member"
-  alttext="Excel.PivotFieldCollection.items" />
+  - <xref
+  href="excel!Excel.PivotFieldCollection#items:member">Excel.PivotFieldCollection.items</xref>
 
-  - <xref uid="excel!Excel.ShowAsRule#baseField:member"
-  alttext="Excel.ShowAsRule.baseField" />
+  - <xref
+  href="excel!Excel.ShowAsRule#baseField:member">Excel.ShowAsRule.baseField</xref>
 
 isPreview: false
 isDeprecated: false

@@ -16,11 +16,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ShapeCollectionLoadOptions#shapeGroup:member"
-  alttext="Word.Interfaces.ShapeCollectionLoadOptions.shapeGroup" />
+  href="word!Word.Interfaces.ShapeCollectionLoadOptions#shapeGroup:member">Word.Interfaces.ShapeCollectionLoadOptions.shapeGroup</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#shapeGroup:member"
-  alttext="Word.Interfaces.ShapeLoadOptions.shapeGroup" />
+  - <xref
+  href="word!Word.Interfaces.ShapeLoadOptions#shapeGroup:member">Word.Interfaces.ShapeLoadOptions.shapeGroup</xref>
 
 isPreview: false
 isDeprecated: false

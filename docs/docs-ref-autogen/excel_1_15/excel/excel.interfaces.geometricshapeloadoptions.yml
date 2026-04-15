@@ -16,15 +16,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member"
-  alttext="Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape" />
+  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#geometricShape:member"
-  alttext="Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape" />
+  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#geometricShape:member">Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member"
-  alttext="Excel.Interfaces.ShapeLoadOptions.geometricShape" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member">Excel.Interfaces.ShapeLoadOptions.geometricShape</xref>
 
 isPreview: false
 isDeprecated: false

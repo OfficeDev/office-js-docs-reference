@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#sections:member"
-  alttext="Word.Document.sections" />
+  - <xref
+  href="word!Word.Document#sections:member">Word.Document.sections</xref>
 
-  - <xref uid="word!Word.DocumentCreated#sections:member"
-  alttext="Word.DocumentCreated.sections" />
+  - <xref
+  href="word!Word.DocumentCreated#sections:member">Word.DocumentCreated.sections</xref>
 
   #### Examples
 

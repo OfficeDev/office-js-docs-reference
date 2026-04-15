@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#reflection:member"
-  alttext="Word.Interfaces.FontUpdateData.reflection" />
+  - <xref
+  href="word!Word.Interfaces.FontUpdateData#reflection:member">Word.Interfaces.FontUpdateData.reflection</xref>
 
 isPreview: false
 isDeprecated: false

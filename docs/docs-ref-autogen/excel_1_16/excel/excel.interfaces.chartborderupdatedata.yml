@@ -10,37 +10,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartAreaFormatUpdateData.border" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatUpdateData#border:member">Excel.Interfaces.ChartAreaFormatUpdateData.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartAxisTitleFormatUpdateData.border" />
+  href="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#border:member">Excel.Interfaces.ChartAxisTitleFormatUpdateData.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartDataLabelFormatUpdateData.border" />
+  href="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#border:member">Excel.Interfaces.ChartDataLabelFormatUpdateData.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataTableFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartDataTableFormatUpdateData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartLegendFormatUpdateData.border" />
+  href="excel!Excel.Interfaces.ChartDataTableFormatUpdateData#border:member">Excel.Interfaces.ChartDataTableFormatUpdateData.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartPlotAreaFormatUpdateData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartPointFormatUpdateData.border" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartTitleFormatUpdateData.border" />
+  href="excel!Excel.Interfaces.ChartLegendFormatUpdateData#border:member">Excel.Interfaces.ChartLegendFormatUpdateData.border</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData#border:member"
-  alttext="Excel.Interfaces.ChartTrendlineLabelFormatUpdateData.border" />
+  href="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member">Excel.Interfaces.ChartPlotAreaFormatUpdateData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member">Excel.Interfaces.ChartPointFormatUpdateData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member">Excel.Interfaces.ChartTitleFormatUpdateData.border</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData#border:member">Excel.Interfaces.ChartTrendlineLabelFormatUpdateData.border</xref>
 
 isPreview: false
 isDeprecated: false

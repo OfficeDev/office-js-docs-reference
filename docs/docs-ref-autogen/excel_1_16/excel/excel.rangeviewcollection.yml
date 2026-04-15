@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeView#rows:member" alttext="Excel.RangeView.rows"
-  />
+  - <xref href="excel!Excel.RangeView#rows:member">Excel.RangeView.rows</xref>
 
 isPreview: false
 isDeprecated: false

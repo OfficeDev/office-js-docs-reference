@@ -16,11 +16,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.WindowCollectionLoadOptions#activePane:member"
-  alttext="Word.Interfaces.WindowCollectionLoadOptions.activePane" />
+  href="word!Word.Interfaces.WindowCollectionLoadOptions#activePane:member">Word.Interfaces.WindowCollectionLoadOptions.activePane</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowLoadOptions#activePane:member"
-  alttext="Word.Interfaces.WindowLoadOptions.activePane" />
+  - <xref
+  href="word!Word.Interfaces.WindowLoadOptions#activePane:member">Word.Interfaces.WindowLoadOptions.activePane</xref>
 
 isPreview: false
 isDeprecated: false

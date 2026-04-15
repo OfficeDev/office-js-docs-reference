@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicDataValidation#operator:member"
-  alttext="Excel.BasicDataValidation.operator" />
+  - <xref
+  href="excel!Excel.BasicDataValidation#operator:member">Excel.BasicDataValidation.operator</xref>
 
-  - <xref uid="excel!Excel.DateTimeDataValidation#operator:member"
-  alttext="Excel.DateTimeDataValidation.operator" />
+  - <xref
+  href="excel!Excel.DateTimeDataValidation#operator:member">Excel.DateTimeDataValidation.operator</xref>
 
   #### Examples
 

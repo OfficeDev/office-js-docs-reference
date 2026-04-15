@@ -8,8 +8,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!OfficeExtension.ClientRequestContext#debugInfo:member"
-  alttext="OfficeExtension.ClientRequestContext.debugInfo" />
+  - <xref
+  href="office!OfficeExtension.ClientRequestContext#debugInfo:member">OfficeExtension.ClientRequestContext.debugInfo</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartLegendEntryCollection#items:member"
-  alttext="Excel.ChartLegendEntryCollection.items" />
+  - <xref
+  href="excel!Excel.ChartLegendEntryCollection#items:member">Excel.ChartLegendEntryCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

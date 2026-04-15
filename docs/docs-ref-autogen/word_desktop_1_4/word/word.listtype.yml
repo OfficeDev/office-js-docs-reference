@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListFormatData#listType:member"
-  alttext="Word.Interfaces.ListFormatData.listType" />
+  - <xref
+  href="word!Word.Interfaces.ListFormatData#listType:member">Word.Interfaces.ListFormatData.listType</xref>
 
-  - <xref uid="word!Word.ListFormat#listType:member"
-  alttext="Word.ListFormat.listType" />
+  - <xref
+  href="word!Word.ListFormat#listType:member">Word.ListFormat.listType</xref>
 
 isPreview: false
 isDeprecated: false

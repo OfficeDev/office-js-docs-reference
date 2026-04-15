@@ -8,11 +8,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.IndexCollectionData#items:member"
-  alttext="Word.Interfaces.IndexCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.IndexCollectionData#items:member">Word.Interfaces.IndexCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.IndexCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.IndexCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.IndexCollectionUpdateData#items:member">Word.Interfaces.IndexCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

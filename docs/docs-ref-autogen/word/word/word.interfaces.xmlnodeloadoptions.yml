@@ -13,39 +13,34 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.firstChild" />
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member">Word.Interfaces.XmlNodeCollectionLoadOptions.firstChild</xref>
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.lastChild" />
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member">Word.Interfaces.XmlNodeCollectionLoadOptions.lastChild</xref>
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.nextSibling" />
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member">Word.Interfaces.XmlNodeCollectionLoadOptions.nextSibling</xref>
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.parentNode" />
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member">Word.Interfaces.XmlNodeCollectionLoadOptions.parentNode</xref>
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#previousSibling:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.previousSibling" />
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#previousSibling:member">Word.Interfaces.XmlNodeCollectionLoadOptions.previousSibling</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.firstChild" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member">Word.Interfaces.XmlNodeLoadOptions.firstChild</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.lastChild" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member">Word.Interfaces.XmlNodeLoadOptions.lastChild</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#nextSibling:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.nextSibling" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#nextSibling:member">Word.Interfaces.XmlNodeLoadOptions.nextSibling</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#parentNode:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.parentNode" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#parentNode:member">Word.Interfaces.XmlNodeLoadOptions.parentNode</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#previousSibling:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.previousSibling" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#previousSibling:member">Word.Interfaces.XmlNodeLoadOptions.previousSibling</xref>
 
 isPreview: false
 isDeprecated: false

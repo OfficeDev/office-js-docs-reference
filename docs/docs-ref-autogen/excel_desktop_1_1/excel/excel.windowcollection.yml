@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#windows:member"
-  alttext="Excel.Application.windows" />
+  - <xref
+  href="excel!Excel.Application#windows:member">Excel.Application.windows</xref>
 
 isPreview: false
 isDeprecated: false

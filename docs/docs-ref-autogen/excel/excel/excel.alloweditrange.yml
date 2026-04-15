@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.AllowEditRangeCollection#items:member"
-  alttext="Excel.AllowEditRangeCollection.items" />
+  - <xref
+  href="excel!Excel.AllowEditRangeCollection#items:member">Excel.AllowEditRangeCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

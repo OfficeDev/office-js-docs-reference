@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationErrorAlert#style:member"
-  alttext="Excel.DataValidationErrorAlert.style" />
+  - <xref
+  href="excel!Excel.DataValidationErrorAlert#style:member">Excel.DataValidationErrorAlert.style</xref>
 
 isPreview: false
 isDeprecated: false

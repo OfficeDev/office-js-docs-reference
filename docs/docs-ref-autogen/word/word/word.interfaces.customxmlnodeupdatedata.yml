@@ -10,32 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#firstChild:member"
-  alttext="Word.Interfaces.CustomXmlNodeUpdateData.firstChild" />
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#lastChild:member"
-  alttext="Word.Interfaces.CustomXmlNodeUpdateData.lastChild" />
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#nextSibling:member"
-  alttext="Word.Interfaces.CustomXmlNodeUpdateData.nextSibling" />
-
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#parentNode:member"
-  alttext="Word.Interfaces.CustomXmlNodeUpdateData.parentNode" />
+  - <xref
+  href="word!Word.Interfaces.CustomXmlNodeUpdateData#firstChild:member">Word.Interfaces.CustomXmlNodeUpdateData.firstChild</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlNodeUpdateData#previousSibling:member"
-  alttext="Word.Interfaces.CustomXmlNodeUpdateData.previousSibling" />
+  href="word!Word.Interfaces.CustomXmlNodeUpdateData#lastChild:member">Word.Interfaces.CustomXmlNodeUpdateData.lastChild</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartUpdateData#documentElement:member"
-  alttext="Word.Interfaces.CustomXmlPartUpdateData.documentElement" />
+  href="word!Word.Interfaces.CustomXmlNodeUpdateData#nextSibling:member">Word.Interfaces.CustomXmlNodeUpdateData.nextSibling</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member"
-  alttext="Word.Interfaces.CustomXmlValidationErrorUpdateData.node" />
+  href="word!Word.Interfaces.CustomXmlNodeUpdateData#parentNode:member">Word.Interfaces.CustomXmlNodeUpdateData.parentNode</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member"
-  alttext="Word.Interfaces.XmlMappingUpdateData.customXmlNode" />
+  - <xref
+  href="word!Word.Interfaces.CustomXmlNodeUpdateData#previousSibling:member">Word.Interfaces.CustomXmlNodeUpdateData.previousSibling</xref>
+
+  - <xref
+  href="word!Word.Interfaces.CustomXmlPartUpdateData#documentElement:member">Word.Interfaces.CustomXmlPartUpdateData.documentElement</xref>
+
+  - <xref
+  href="word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member">Word.Interfaces.CustomXmlValidationErrorUpdateData.node</xref>
+
+  - <xref
+  href="word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member">Word.Interfaces.XmlMappingUpdateData.customXmlNode</xref>
 
 isPreview: false
 isDeprecated: false

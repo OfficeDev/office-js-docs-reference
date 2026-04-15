@@ -22,8 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.DroppedItems#files:member"
-  alttext="Office.DroppedItems.files" />
+  - <xref
+  href="outlook!Office.DroppedItems#files:member">Office.DroppedItems.files</xref>
 
   #### Examples
 

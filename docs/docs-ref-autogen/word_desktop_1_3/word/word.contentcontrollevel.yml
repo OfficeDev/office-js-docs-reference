@@ -12,37 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BuildingBlockGalleryContentControl#level:member"
-  alttext="Word.BuildingBlockGalleryContentControl.level" />
-
-  - <xref uid="word!Word.DatePickerContentControl#level:member"
-  alttext="Word.DatePickerContentControl.level" />
-
-  - <xref uid="word!Word.GroupContentControl#level:member"
-  alttext="Word.GroupContentControl.level" />
+  - <xref
+  href="word!Word.BuildingBlockGalleryContentControl#level:member">Word.BuildingBlockGalleryContentControl.level</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#level:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.level" />
-
-  - <xref uid="word!Word.Interfaces.DatePickerContentControlData#level:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.level" />
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#level:member"
-  alttext="Word.Interfaces.GroupContentControlData.level" />
-
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#level:member"
-  alttext="Word.Interfaces.PictureContentControlData.level" />
+  href="word!Word.DatePickerContentControl#level:member">Word.DatePickerContentControl.level</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#level:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlData.level" />
+  href="word!Word.GroupContentControl#level:member">Word.GroupContentControl.level</xref>
 
-  - <xref uid="word!Word.PictureContentControl#level:member"
-  alttext="Word.PictureContentControl.level" />
+  - <xref
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#level:member">Word.Interfaces.BuildingBlockGalleryContentControlData.level</xref>
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#level:member"
-  alttext="Word.RepeatingSectionContentControl.level" />
+  - <xref
+  href="word!Word.Interfaces.DatePickerContentControlData#level:member">Word.Interfaces.DatePickerContentControlData.level</xref>
+
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlData#level:member">Word.Interfaces.GroupContentControlData.level</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlData#level:member">Word.Interfaces.PictureContentControlData.level</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlData#level:member">Word.Interfaces.RepeatingSectionContentControlData.level</xref>
+
+  - <xref
+  href="word!Word.PictureContentControl#level:member">Word.PictureContentControl.level</xref>
+
+  - <xref
+  href="word!Word.RepeatingSectionContentControl#level:member">Word.RepeatingSectionContentControl.level</xref>
 
 isPreview: false
 isDeprecated: false

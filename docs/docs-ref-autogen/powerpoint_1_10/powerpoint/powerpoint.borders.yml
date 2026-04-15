@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#borders:member"
-  alttext="PowerPoint.TableCell.borders" />
+  - <xref
+  href="powerpoint!PowerPoint.TableCell#borders:member">PowerPoint.TableCell.borders</xref>
 
 isPreview: false
 isDeprecated: false

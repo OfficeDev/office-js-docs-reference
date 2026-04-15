@@ -21,11 +21,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Group#controls:member"
-  alttext="Office.Group.controls" />
+  - <xref
+  href="office!Office.Group#controls:member">Office.Group.controls</xref>
 
-  - <xref uid="office!Office.Tab#controls:member" alttext="Office.Tab.controls"
-  />
+  - <xref href="office!Office.Tab#controls:member">Office.Tab.controls</xref>
 
   #### Examples
 

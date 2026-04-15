@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentCompareOptions#compareTarget:member"
-  alttext="Word.DocumentCompareOptions.compareTarget" />
+  - <xref
+  href="word!Word.DocumentCompareOptions#compareTarget:member">Word.DocumentCompareOptions.compareTarget</xref>
 
   #### Examples
 

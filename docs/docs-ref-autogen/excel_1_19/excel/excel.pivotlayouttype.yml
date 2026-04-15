@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PivotLayoutData#layoutType:member"
-  alttext="Excel.Interfaces.PivotLayoutData.layoutType" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotLayoutData#layoutType:member">Excel.Interfaces.PivotLayoutData.layoutType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData#layoutType:member"
-  alttext="Excel.Interfaces.PivotLayoutUpdateData.layoutType" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotLayoutUpdateData#layoutType:member">Excel.Interfaces.PivotLayoutUpdateData.layoutType</xref>
 
-  - <xref uid="excel!Excel.PivotLayout#layoutType:member"
-  alttext="Excel.PivotLayout.layoutType" />
+  - <xref
+  href="excel!Excel.PivotLayout#layoutType:member">Excel.PivotLayout.layoutType</xref>
 
 isPreview: false
 isDeprecated: false

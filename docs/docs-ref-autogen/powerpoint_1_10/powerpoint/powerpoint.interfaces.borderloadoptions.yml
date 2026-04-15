@@ -14,25 +14,22 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#bottom:member"
-  alttext="PowerPoint.Interfaces.BordersLoadOptions.bottom" />
+  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#bottom:member">PowerPoint.Interfaces.BordersLoadOptions.bottom</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalDown:member"
-  alttext="PowerPoint.Interfaces.BordersLoadOptions.diagonalDown" />
+  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalDown:member">PowerPoint.Interfaces.BordersLoadOptions.diagonalDown</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member"
-  alttext="PowerPoint.Interfaces.BordersLoadOptions.diagonalUp" />
+  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member">PowerPoint.Interfaces.BordersLoadOptions.diagonalUp</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#left:member"
-  alttext="PowerPoint.Interfaces.BordersLoadOptions.left" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#left:member">PowerPoint.Interfaces.BordersLoadOptions.left</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#right:member"
-  alttext="PowerPoint.Interfaces.BordersLoadOptions.right" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#right:member">PowerPoint.Interfaces.BordersLoadOptions.right</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#top:member"
-  alttext="PowerPoint.Interfaces.BordersLoadOptions.top" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#top:member">PowerPoint.Interfaces.BordersLoadOptions.top</xref>
 
 isPreview: false
 isDeprecated: false

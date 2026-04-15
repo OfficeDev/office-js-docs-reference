@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#textComparison:member"
-  alttext="Excel.ConditionalFormat.textComparison" />
+  - <xref
+  href="excel!Excel.ConditionalFormat#textComparison:member">Excel.ConditionalFormat.textComparison</xref>
 
-  - <xref uid="excel!Excel.ConditionalFormat#textComparisonOrNullObject:member"
-  alttext="Excel.ConditionalFormat.textComparisonOrNullObject" />
+  - <xref
+  href="excel!Excel.ConditionalFormat#textComparisonOrNullObject:member">Excel.ConditionalFormat.textComparisonOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

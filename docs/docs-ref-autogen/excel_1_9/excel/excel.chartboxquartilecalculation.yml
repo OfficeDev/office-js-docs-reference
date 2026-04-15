@@ -14,17 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartBoxwhiskerOptions#quartileCalculation:member"
-  alttext="Excel.ChartBoxwhiskerOptions.quartileCalculation" />
+  - <xref
+  href="excel!Excel.ChartBoxwhiskerOptions#quartileCalculation:member">Excel.ChartBoxwhiskerOptions.quartileCalculation</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member"
-  alttext="Excel.Interfaces.ChartBoxwhiskerOptionsData.quartileCalculation" />
+  href="excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member">Excel.Interfaces.ChartBoxwhiskerOptionsData.quartileCalculation</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#quartileCalculation:member"
-  alttext="Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData.quartileCalculation"
-  />
+  href="excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData#quartileCalculation:member">Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData.quartileCalculation</xref>
 
 isPreview: false
 isDeprecated: false

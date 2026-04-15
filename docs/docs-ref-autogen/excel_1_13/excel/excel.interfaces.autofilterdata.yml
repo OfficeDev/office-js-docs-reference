@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableData#autoFilter:member"
-  alttext="Excel.Interfaces.TableData.autoFilter" />
+  - <xref
+  href="excel!Excel.Interfaces.TableData#autoFilter:member">Excel.Interfaces.TableData.autoFilter</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#autoFilter:member"
-  alttext="Excel.Interfaces.WorksheetData.autoFilter" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#autoFilter:member">Excel.Interfaces.WorksheetData.autoFilter</xref>
 
 isPreview: false
 isDeprecated: false

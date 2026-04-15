@@ -13,22 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#visibility:member"
-  alttext="Excel.Interfaces.WorksheetData.visibility" />
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member"
-  alttext="Excel.Interfaces.WorksheetUpdateData.visibility" />
-
-  - <xref uid="excel!Excel.Worksheet#visibility:member"
-  alttext="Excel.Worksheet.visibility" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#visibility:member">Excel.Interfaces.WorksheetData.visibility</xref>
 
   - <xref
-  uid="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityAfter:member"
-  alttext="Excel.WorksheetVisibilityChangedEventArgs.visibilityAfter" />
+  href="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member">Excel.Interfaces.WorksheetUpdateData.visibility</xref>
 
   - <xref
-  uid="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityBefore:member"
-  alttext="Excel.WorksheetVisibilityChangedEventArgs.visibilityBefore" />
+  href="excel!Excel.Worksheet#visibility:member">Excel.Worksheet.visibility</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityAfter:member">Excel.WorksheetVisibilityChangedEventArgs.visibilityAfter</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityBefore:member">Excel.WorksheetVisibilityChangedEventArgs.visibilityBefore</xref>
 
   #### Examples
 

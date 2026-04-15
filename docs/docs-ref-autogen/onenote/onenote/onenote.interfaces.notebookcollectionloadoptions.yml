@@ -13,8 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ApplicationLoadOptions#notebooks:member"
-  alttext="OneNote.Interfaces.ApplicationLoadOptions.notebooks" />
+  href="onenote!OneNote.Interfaces.ApplicationLoadOptions#notebooks:member">OneNote.Interfaces.ApplicationLoadOptions.notebooks</xref>
 
 isPreview: false
 isDeprecated: false

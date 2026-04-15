@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#onSelectionChanged:member"
-  alttext="Excel.Workbook.onSelectionChanged" />
+  - <xref
+  href="excel!Excel.Workbook#onSelectionChanged:member">Excel.Workbook.onSelectionChanged</xref>
 
 isPreview: false
 isDeprecated: false

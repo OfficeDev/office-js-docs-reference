@@ -10,12 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TableOfContentsCollectionData#items:member"
-  alttext="Word.Interfaces.TableOfContentsCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.TableOfContentsCollectionData#items:member">Word.Interfaces.TableOfContentsCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableOfContentsCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.TableOfContentsCollectionUpdateData.items" />
+  href="word!Word.Interfaces.TableOfContentsCollectionUpdateData#items:member">Word.Interfaces.TableOfContentsCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

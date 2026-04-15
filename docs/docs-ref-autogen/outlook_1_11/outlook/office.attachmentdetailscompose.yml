@@ -28,11 +28,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)"
-  alttext="Office.AppointmentCompose.getAttachmentsAsync" />
+  - <xref
+  href="outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)">Office.AppointmentCompose.getAttachmentsAsync</xref>
 
-  - <xref uid="outlook!Office.MessageCompose#getAttachmentsAsync:member(1)"
-  alttext="Office.MessageCompose.getAttachmentsAsync" />
+  - <xref
+  href="outlook!Office.MessageCompose#getAttachmentsAsync:member(1)">Office.MessageCompose.getAttachmentsAsync</xref>
 
   #### Examples
 

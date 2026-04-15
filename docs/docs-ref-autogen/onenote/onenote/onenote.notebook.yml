@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.NotebookCollection#items:member"
-  alttext="OneNote.NotebookCollection.items" />
+  - <xref
+  href="onenote!OneNote.NotebookCollection#items:member">OneNote.NotebookCollection.items</xref>
 
-  - <xref uid="onenote!OneNote.Section#notebook:member"
-  alttext="OneNote.Section.notebook" />
+  - <xref
+  href="onenote!OneNote.Section#notebook:member">OneNote.Section.notebook</xref>
 
-  - <xref uid="onenote!OneNote.SectionGroup#notebook:member"
-  alttext="OneNote.SectionGroup.notebook" />
+  - <xref
+  href="onenote!OneNote.SectionGroup#notebook:member">OneNote.SectionGroup.notebook</xref>
 
 isPreview: false
 isDeprecated: false

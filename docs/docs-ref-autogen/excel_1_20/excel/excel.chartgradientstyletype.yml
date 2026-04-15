@@ -14,38 +14,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#gradientMaximumType:member"
-  alttext="Excel.ChartSeries.gradientMaximumType" />
-
-  - <xref uid="excel!Excel.ChartSeries#gradientMidpointType:member"
-  alttext="Excel.ChartSeries.gradientMidpointType" />
-
-  - <xref uid="excel!Excel.ChartSeries#gradientMinimumType:member"
-  alttext="Excel.ChartSeries.gradientMinimumType" />
+  - <xref
+  href="excel!Excel.ChartSeries#gradientMaximumType:member">Excel.ChartSeries.gradientMaximumType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesData#gradientMaximumType:member"
-  alttext="Excel.Interfaces.ChartSeriesData.gradientMaximumType" />
+  href="excel!Excel.ChartSeries#gradientMidpointType:member">Excel.ChartSeries.gradientMidpointType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesData#gradientMidpointType:member"
-  alttext="Excel.Interfaces.ChartSeriesData.gradientMidpointType" />
+  href="excel!Excel.ChartSeries#gradientMinimumType:member">Excel.ChartSeries.gradientMinimumType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesData#gradientMinimumType:member"
-  alttext="Excel.Interfaces.ChartSeriesData.gradientMinimumType" />
+  href="excel!Excel.Interfaces.ChartSeriesData#gradientMaximumType:member">Excel.Interfaces.ChartSeriesData.gradientMaximumType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMaximumType:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumType" />
+  href="excel!Excel.Interfaces.ChartSeriesData#gradientMidpointType:member">Excel.Interfaces.ChartSeriesData.gradientMidpointType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMidpointType:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointType" />
+  href="excel!Excel.Interfaces.ChartSeriesData#gradientMinimumType:member">Excel.Interfaces.ChartSeriesData.gradientMinimumType</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMinimumType:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumType" />
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMaximumType:member">Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumType</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMidpointType:member">Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointType</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMinimumType:member">Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumType</xref>
 
 isPreview: false
 isDeprecated: false

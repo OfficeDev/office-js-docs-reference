@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeFormat#protection:member"
-  alttext="Excel.RangeFormat.protection" />
+  - <xref
+  href="excel!Excel.RangeFormat#protection:member">Excel.RangeFormat.protection</xref>
 
 isPreview: false
 isDeprecated: false

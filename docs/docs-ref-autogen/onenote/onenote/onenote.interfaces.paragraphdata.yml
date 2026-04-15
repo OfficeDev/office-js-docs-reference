@@ -10,21 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.OutlineData#paragraphs:member"
-  alttext="OneNote.Interfaces.OutlineData.paragraphs" />
-
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphCollectionData#items:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionData.items" />
+  - <xref
+  href="onenote!OneNote.Interfaces.OutlineData#paragraphs:member">OneNote.Interfaces.OutlineData.paragraphs</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionData#items:member">OneNote.Interfaces.ParagraphCollectionData.items</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#paragraphs:member"
-  alttext="OneNote.Interfaces.ParagraphData.paragraphs" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member">OneNote.Interfaces.ParagraphCollectionUpdateData.items</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.TableCellData#paragraphs:member"
-  alttext="OneNote.Interfaces.TableCellData.paragraphs" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphData#paragraphs:member">OneNote.Interfaces.ParagraphData.paragraphs</xref>
+
+  - <xref
+  href="onenote!OneNote.Interfaces.TableCellData#paragraphs:member">OneNote.Interfaces.TableCellData.paragraphs</xref>
 
 isPreview: false
 isDeprecated: false

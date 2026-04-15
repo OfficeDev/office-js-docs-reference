@@ -15,17 +15,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#format:member"
-  alttext="Excel.Interfaces.RangeAreasCollectionLoadOptions.format" />
+  href="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#format:member">Excel.Interfaces.RangeAreasCollectionLoadOptions.format</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeAreasLoadOptions#format:member"
-  alttext="Excel.Interfaces.RangeAreasLoadOptions.format" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeAreasLoadOptions#format:member">Excel.Interfaces.RangeAreasLoadOptions.format</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionLoadOptions#format:member"
-  alttext="Excel.Interfaces.RangeCollectionLoadOptions.format" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeCollectionLoadOptions#format:member">Excel.Interfaces.RangeCollectionLoadOptions.format</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#format:member"
-  alttext="Excel.Interfaces.RangeLoadOptions.format" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeLoadOptions#format:member">Excel.Interfaces.RangeLoadOptions.format</xref>
 
 isPreview: false
 isDeprecated: false

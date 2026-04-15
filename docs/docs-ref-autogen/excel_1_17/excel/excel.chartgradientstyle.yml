@@ -14,15 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#gradientStyle:member"
-  alttext="Excel.ChartSeries.gradientStyle" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#gradientStyle:member"
-  alttext="Excel.Interfaces.ChartSeriesData.gradientStyle" />
+  - <xref
+  href="excel!Excel.ChartSeries#gradientStyle:member">Excel.ChartSeries.gradientStyle</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientStyle:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.gradientStyle" />
+  href="excel!Excel.Interfaces.ChartSeriesData#gradientStyle:member">Excel.Interfaces.ChartSeriesData.gradientStyle</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientStyle:member">Excel.Interfaces.ChartSeriesUpdateData.gradientStyle</xref>
 
 isPreview: false
 isDeprecated: false

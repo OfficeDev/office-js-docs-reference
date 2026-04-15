@@ -11,8 +11,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#format:member"
-  alttext="Excel.Interfaces.ChartTrendlineLabelUpdateData.format" />
+  href="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#format:member">Excel.Interfaces.ChartTrendlineLabelUpdateData.format</xref>
 
 isPreview: false
 isDeprecated: false

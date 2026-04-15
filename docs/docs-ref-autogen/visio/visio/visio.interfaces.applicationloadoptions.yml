@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.DocumentLoadOptions#application:member"
-  alttext="Visio.Interfaces.DocumentLoadOptions.application" />
+  - <xref
+  href="visio!Visio.Interfaces.DocumentLoadOptions#application:member">Visio.Interfaces.DocumentLoadOptions.application</xref>
 
 isPreview: false
 isDeprecated: false

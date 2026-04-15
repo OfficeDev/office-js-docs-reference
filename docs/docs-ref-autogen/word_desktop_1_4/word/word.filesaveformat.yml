@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#saveFormat:member"
-  alttext="Word.Document.saveFormat" />
+  - <xref
+  href="word!Word.Document#saveFormat:member">Word.Document.saveFormat</xref>
 
-  - <xref uid="word!Word.Interfaces.DocumentData#saveFormat:member"
-  alttext="Word.Interfaces.DocumentData.saveFormat" />
+  - <xref
+  href="word!Word.Interfaces.DocumentData#saveFormat:member">Word.Interfaces.DocumentData.saveFormat</xref>
 
 isPreview: false
 isDeprecated: false

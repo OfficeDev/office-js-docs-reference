@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlPartCollection#items:member"
-  alttext="Word.CustomXmlPartCollection.items" />
+  - <xref
+  href="word!Word.CustomXmlPartCollection#items:member">Word.CustomXmlPartCollection.items</xref>
 
-  - <xref uid="word!Word.CustomXmlPartScopedCollection#items:member"
-  alttext="Word.CustomXmlPartScopedCollection.items" />
+  - <xref
+  href="word!Word.CustomXmlPartScopedCollection#items:member">Word.CustomXmlPartScopedCollection.items</xref>
 
   #### Examples
 

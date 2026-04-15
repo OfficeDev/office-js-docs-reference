@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Page#comments:member" alttext="Visio.Page.comments"
-  />
+  - <xref href="visio!Visio.Page#comments:member">Visio.Page.comments</xref>
 
-  - <xref uid="visio!Visio.Shape#comments:member" alttext="Visio.Shape.comments"
-  />
+  - <xref href="visio!Visio.Shape#comments:member">Visio.Shape.comments</xref>
 
 isPreview: false
 isDeprecated: false

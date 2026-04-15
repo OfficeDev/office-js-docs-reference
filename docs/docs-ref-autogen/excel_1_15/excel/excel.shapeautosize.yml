@@ -13,15 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member"
-  alttext="Excel.Interfaces.TextFrameData.autoSizeSetting" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member">Excel.Interfaces.TextFrameData.autoSizeSetting</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member"
-  alttext="Excel.Interfaces.TextFrameUpdateData.autoSizeSetting" />
+  href="excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member">Excel.Interfaces.TextFrameUpdateData.autoSizeSetting</xref>
 
-  - <xref uid="excel!Excel.TextFrame#autoSizeSetting:member"
-  alttext="Excel.TextFrame.autoSizeSetting" />
+  - <xref
+  href="excel!Excel.TextFrame#autoSizeSetting:member">Excel.TextFrame.autoSizeSetting</xref>
 
   #### Examples
 

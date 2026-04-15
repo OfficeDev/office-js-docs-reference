@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageCollectionLoadOptions#contents:member"
-  alttext="OneNote.Interfaces.PageCollectionLoadOptions.contents" />
+  href="onenote!OneNote.Interfaces.PageCollectionLoadOptions#contents:member">OneNote.Interfaces.PageCollectionLoadOptions.contents</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.PageLoadOptions#contents:member"
-  alttext="OneNote.Interfaces.PageLoadOptions.contents" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageLoadOptions#contents:member">OneNote.Interfaces.PageLoadOptions.contents</xref>
 
 isPreview: false
 isDeprecated: false

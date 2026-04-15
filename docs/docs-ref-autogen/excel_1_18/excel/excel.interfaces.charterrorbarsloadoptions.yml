@@ -13,18 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member"
-  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars" />
+  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member"
-  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars" />
+  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#xErrorBars:member"
-  alttext="Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#xErrorBars:member">Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#yErrorBars:member"
-  alttext="Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#yErrorBars:member">Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,12 +14,10 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#borders:member"
-  alttext="PowerPoint.Interfaces.TableCellCollectionLoadOptions.borders" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#borders:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.borders</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#borders:member"
-  alttext="PowerPoint.Interfaces.TableCellLoadOptions.borders" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#borders:member">PowerPoint.Interfaces.TableCellLoadOptions.borders</xref>
 
 isPreview: false
 isDeprecated: false

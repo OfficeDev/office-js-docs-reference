@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.ParagraphInfo#listType:member"
-  alttext="OneNote.ParagraphInfo.listType" />
+  - <xref
+  href="onenote!OneNote.ParagraphInfo#listType:member">OneNote.ParagraphInfo.listType</xref>
 
 isPreview: false
 isDeprecated: false

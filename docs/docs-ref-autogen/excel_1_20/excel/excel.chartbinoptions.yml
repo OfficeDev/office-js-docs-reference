@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#binOptions:member"
-  alttext="Excel.ChartSeries.binOptions" />
+  - <xref
+  href="excel!Excel.ChartSeries#binOptions:member">Excel.ChartSeries.binOptions</xref>
 
 isPreview: false
 isDeprecated: false

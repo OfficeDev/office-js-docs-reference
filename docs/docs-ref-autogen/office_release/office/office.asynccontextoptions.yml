@@ -13,151 +13,149 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#addHandlerAsync:member(1)"
-  alttext="Office.Binding.addHandlerAsync" />
-
-  - <xref uid="office!Office.Bindings#getAllAsync:member(1)"
-  alttext="Office.Bindings.getAllAsync" />
-
-  - <xref uid="office!Office.Bindings#getByIdAsync:member(1)"
-  alttext="Office.Bindings.getByIdAsync" />
-
-  - <xref uid="office!Office.Bindings#releaseByIdAsync:member(1)"
-  alttext="Office.Bindings.releaseByIdAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member(1)"
-  alttext="Office.CustomXmlNode.getNodesAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#getNodeValueAsync:member(1)"
-  alttext="Office.CustomXmlNode.getNodeValueAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#getTextAsync:member(1)"
-  alttext="Office.CustomXmlNode.getTextAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#getXmlAsync:member(1)"
-  alttext="Office.CustomXmlNode.getXmlAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#setNodeValueAsync:member(1)"
-  alttext="Office.CustomXmlNode.setNodeValueAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#setTextAsync:member(1)"
-  alttext="Office.CustomXmlNode.setTextAsync" />
-
-  - <xref uid="office!Office.CustomXmlNode#setXmlAsync:member(1)"
-  alttext="Office.CustomXmlNode.setXmlAsync" />
-
-  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member(1)"
-  alttext="Office.CustomXmlPart.addHandlerAsync" />
-
-  - <xref uid="office!Office.CustomXmlPart#deleteAsync:member(1)"
-  alttext="Office.CustomXmlPart.deleteAsync" />
-
-  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member(1)"
-  alttext="Office.CustomXmlPart.getNodesAsync" />
-
-  - <xref uid="office!Office.CustomXmlPart#getXmlAsync:member(1)"
-  alttext="Office.CustomXmlPart.getXmlAsync" />
-
-  - <xref uid="office!Office.CustomXmlParts#addAsync:member(1)"
-  alttext="Office.CustomXmlParts.addAsync" />
-
-  - <xref uid="office!Office.CustomXmlParts#getByIdAsync:member(1)"
-  alttext="Office.CustomXmlParts.getByIdAsync" />
-
-  - <xref uid="office!Office.CustomXmlParts#getByNamespaceAsync:member(1)"
-  alttext="Office.CustomXmlParts.getByNamespaceAsync" />
+  - <xref
+  href="office!Office.Binding#addHandlerAsync:member(1)">Office.Binding.addHandlerAsync</xref>
 
   - <xref
-  uid="office!Office.CustomXmlPrefixMappings#addNamespaceAsync:member(1)"
-  alttext="Office.CustomXmlPrefixMappings.addNamespaceAsync" />
+  href="office!Office.Bindings#getAllAsync:member(1)">Office.Bindings.getAllAsync</xref>
 
   - <xref
-  uid="office!Office.CustomXmlPrefixMappings#getNamespaceAsync:member(1)"
-  alttext="Office.CustomXmlPrefixMappings.getNamespaceAsync" />
+  href="office!Office.Bindings#getByIdAsync:member(1)">Office.Bindings.getByIdAsync</xref>
 
-  - <xref uid="office!Office.CustomXmlPrefixMappings#getPrefixAsync:member(1)"
-  alttext="Office.CustomXmlPrefixMappings.getPrefixAsync" />
+  - <xref
+  href="office!Office.Bindings#releaseByIdAsync:member(1)">Office.Bindings.releaseByIdAsync</xref>
 
-  - <xref uid="office!Office.DevicePermission#requestPermissionsAsync:member(1)"
-  alttext="Office.DevicePermission.requestPermissionsAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#getNodesAsync:member(1)">Office.CustomXmlNode.getNodesAsync</xref>
 
-  - <xref uid="office!Office.Document#addHandlerAsync:member(1)"
-  alttext="Office.Document.addHandlerAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#getNodeValueAsync:member(1)">Office.CustomXmlNode.getNodeValueAsync</xref>
 
-  - <xref uid="office!Office.Document#getActiveViewAsync:member(1)"
-  alttext="Office.Document.getActiveViewAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#getTextAsync:member(1)">Office.CustomXmlNode.getTextAsync</xref>
 
-  - <xref uid="office!Office.Document#getFilePropertiesAsync:member(1)"
-  alttext="Office.Document.getFilePropertiesAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#getXmlAsync:member(1)">Office.CustomXmlNode.getXmlAsync</xref>
 
-  - <xref uid="office!Office.Document#getMaxResourceIndexAsync:member(1)"
-  alttext="Office.Document.getMaxResourceIndexAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#setNodeValueAsync:member(1)">Office.CustomXmlNode.setNodeValueAsync</xref>
 
-  - <xref uid="office!Office.Document#getMaxTaskIndexAsync:member(1)"
-  alttext="Office.Document.getMaxTaskIndexAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#setTextAsync:member(1)">Office.CustomXmlNode.setTextAsync</xref>
 
-  - <xref uid="office!Office.Document#getProjectFieldAsync:member(1)"
-  alttext="Office.Document.getProjectFieldAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#setXmlAsync:member(1)">Office.CustomXmlNode.setXmlAsync</xref>
 
-  - <xref uid="office!Office.Document#getResourceByIndexAsync:member(1)"
-  alttext="Office.Document.getResourceByIndexAsync" />
+  - <xref
+  href="office!Office.CustomXmlPart#addHandlerAsync:member(1)">Office.CustomXmlPart.addHandlerAsync</xref>
 
-  - <xref uid="office!Office.Document#getResourceFieldAsync:member(1)"
-  alttext="Office.Document.getResourceFieldAsync" />
+  - <xref
+  href="office!Office.CustomXmlPart#deleteAsync:member(1)">Office.CustomXmlPart.deleteAsync</xref>
 
-  - <xref uid="office!Office.Document#getSelectedResourceAsync:member(1)"
-  alttext="Office.Document.getSelectedResourceAsync" />
+  - <xref
+  href="office!Office.CustomXmlPart#getNodesAsync:member(1)">Office.CustomXmlPart.getNodesAsync</xref>
 
-  - <xref uid="office!Office.Document#getSelectedTaskAsync:member(1)"
-  alttext="Office.Document.getSelectedTaskAsync" />
+  - <xref
+  href="office!Office.CustomXmlPart#getXmlAsync:member(1)">Office.CustomXmlPart.getXmlAsync</xref>
 
-  - <xref uid="office!Office.Document#getSelectedViewAsync:member(1)"
-  alttext="Office.Document.getSelectedViewAsync" />
+  - <xref
+  href="office!Office.CustomXmlParts#addAsync:member(1)">Office.CustomXmlParts.addAsync</xref>
 
-  - <xref uid="office!Office.Document#getTaskAsync:member(1)"
-  alttext="Office.Document.getTaskAsync" />
+  - <xref
+  href="office!Office.CustomXmlParts#getByIdAsync:member(1)">Office.CustomXmlParts.getByIdAsync</xref>
 
-  - <xref uid="office!Office.Document#getTaskByIndexAsync:member(1)"
-  alttext="Office.Document.getTaskByIndexAsync" />
+  - <xref
+  href="office!Office.CustomXmlParts#getByNamespaceAsync:member(1)">Office.CustomXmlParts.getByNamespaceAsync</xref>
 
-  - <xref uid="office!Office.Document#getTaskFieldAsync:member(1)"
-  alttext="Office.Document.getTaskFieldAsync" />
+  - <xref
+  href="office!Office.CustomXmlPrefixMappings#addNamespaceAsync:member(1)">Office.CustomXmlPrefixMappings.addNamespaceAsync</xref>
 
-  - <xref uid="office!Office.Document#getWSSUrlAsync:member(1)"
-  alttext="Office.Document.getWSSUrlAsync" />
+  - <xref
+  href="office!Office.CustomXmlPrefixMappings#getNamespaceAsync:member(1)">Office.CustomXmlPrefixMappings.getNamespaceAsync</xref>
 
-  - <xref uid="office!Office.Document#setResourceFieldAsync:member(1)"
-  alttext="Office.Document.setResourceFieldAsync" />
+  - <xref
+  href="office!Office.CustomXmlPrefixMappings#getPrefixAsync:member(1)">Office.CustomXmlPrefixMappings.getPrefixAsync</xref>
 
-  - <xref uid="office!Office.Document#setTaskFieldAsync:member(1)"
-  alttext="Office.Document.setTaskFieldAsync" />
+  - <xref
+  href="office!Office.DevicePermission#requestPermissionsAsync:member(1)">Office.DevicePermission.requestPermissionsAsync</xref>
 
-  - <xref uid="office!Office.Settings#addHandlerAsync:member(1)"
-  alttext="Office.Settings.addHandlerAsync" />
+  - <xref
+  href="office!Office.Document#addHandlerAsync:member(1)">Office.Document.addHandlerAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#addColumnsAsync:member(1)"
-  alttext="Office.TableBinding.addColumnsAsync" />
+  - <xref
+  href="office!Office.Document#getActiveViewAsync:member(1)">Office.Document.getActiveViewAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#addRowsAsync:member(1)"
-  alttext="Office.TableBinding.addRowsAsync" />
+  - <xref
+  href="office!Office.Document#getFilePropertiesAsync:member(1)">Office.Document.getFilePropertiesAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#clearFormatsAsync:member(1)"
-  alttext="Office.TableBinding.clearFormatsAsync" />
+  - <xref
+  href="office!Office.Document#getMaxResourceIndexAsync:member(1)">Office.Document.getMaxResourceIndexAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#deleteAllDataValuesAsync:member(1)"
-  alttext="Office.TableBinding.deleteAllDataValuesAsync" />
+  - <xref
+  href="office!Office.Document#getMaxTaskIndexAsync:member(1)">Office.Document.getMaxTaskIndexAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#getFormatsAsync:member(1)"
-  alttext="Office.TableBinding.getFormatsAsync" />
+  - <xref
+  href="office!Office.Document#getProjectFieldAsync:member(1)">Office.Document.getProjectFieldAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#setFormatsAsync:member(1)"
-  alttext="Office.TableBinding.setFormatsAsync" />
+  - <xref
+  href="office!Office.Document#getResourceByIndexAsync:member(1)">Office.Document.getResourceByIndexAsync</xref>
 
-  - <xref uid="office!Office.TableBinding#setTableOptionsAsync:member(1)"
-  alttext="Office.TableBinding.setTableOptionsAsync" />
+  - <xref
+  href="office!Office.Document#getResourceFieldAsync:member(1)">Office.Document.getResourceFieldAsync</xref>
 
-  - <xref uid="office!Office.UI#addHandlerAsync:member(1)"
-  alttext="Office.UI.addHandlerAsync" />
+  - <xref
+  href="office!Office.Document#getSelectedResourceAsync:member(1)">Office.Document.getSelectedResourceAsync</xref>
+
+  - <xref
+  href="office!Office.Document#getSelectedTaskAsync:member(1)">Office.Document.getSelectedTaskAsync</xref>
+
+  - <xref
+  href="office!Office.Document#getSelectedViewAsync:member(1)">Office.Document.getSelectedViewAsync</xref>
+
+  - <xref
+  href="office!Office.Document#getTaskAsync:member(1)">Office.Document.getTaskAsync</xref>
+
+  - <xref
+  href="office!Office.Document#getTaskByIndexAsync:member(1)">Office.Document.getTaskByIndexAsync</xref>
+
+  - <xref
+  href="office!Office.Document#getTaskFieldAsync:member(1)">Office.Document.getTaskFieldAsync</xref>
+
+  - <xref
+  href="office!Office.Document#getWSSUrlAsync:member(1)">Office.Document.getWSSUrlAsync</xref>
+
+  - <xref
+  href="office!Office.Document#setResourceFieldAsync:member(1)">Office.Document.setResourceFieldAsync</xref>
+
+  - <xref
+  href="office!Office.Document#setTaskFieldAsync:member(1)">Office.Document.setTaskFieldAsync</xref>
+
+  - <xref
+  href="office!Office.Settings#addHandlerAsync:member(1)">Office.Settings.addHandlerAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#addColumnsAsync:member(1)">Office.TableBinding.addColumnsAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#addRowsAsync:member(1)">Office.TableBinding.addRowsAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#clearFormatsAsync:member(1)">Office.TableBinding.clearFormatsAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#deleteAllDataValuesAsync:member(1)">Office.TableBinding.deleteAllDataValuesAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#getFormatsAsync:member(1)">Office.TableBinding.getFormatsAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#setFormatsAsync:member(1)">Office.TableBinding.setFormatsAsync</xref>
+
+  - <xref
+  href="office!Office.TableBinding#setTableOptionsAsync:member(1)">Office.TableBinding.setTableOptionsAsync</xref>
+
+  - <xref
+  href="office!Office.UI#addHandlerAsync:member(1)">Office.UI.addHandlerAsync</xref>
 
   #### Examples
 

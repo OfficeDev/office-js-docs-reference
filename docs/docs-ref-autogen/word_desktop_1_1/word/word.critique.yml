@@ -15,14 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.AnnotationSet#critiques:member"
-  alttext="Word.AnnotationSet.critiques" />
+  - <xref
+  href="word!Word.AnnotationSet#critiques:member">Word.AnnotationSet.critiques</xref>
 
-  - <xref uid="word!Word.CritiqueAnnotation#critique:member"
-  alttext="Word.CritiqueAnnotation.critique" />
+  - <xref
+  href="word!Word.CritiqueAnnotation#critique:member">Word.CritiqueAnnotation.critique</xref>
 
-  - <xref uid="word!Word.Interfaces.CritiqueAnnotationData#critique:member"
-  alttext="Word.Interfaces.CritiqueAnnotationData.critique" />
+  - <xref
+  href="word!Word.Interfaces.CritiqueAnnotationData#critique:member">Word.Interfaces.CritiqueAnnotationData.critique</xref>
 
   #### Examples
 

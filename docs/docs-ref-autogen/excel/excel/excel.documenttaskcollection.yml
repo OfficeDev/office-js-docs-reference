@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#tasks:member" alttext="Excel.Workbook.tasks"
-  />
+  - <xref href="excel!Excel.Workbook#tasks:member">Excel.Workbook.tasks</xref>
 
-  - <xref uid="excel!Excel.Worksheet#tasks:member"
-  alttext="Excel.Worksheet.tasks" />
+  - <xref href="excel!Excel.Worksheet#tasks:member">Excel.Worksheet.tasks</xref>
 
 isPreview: true
 isDeprecated: false

@@ -11,21 +11,16 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member"
-  alttext="PowerPoint.Interfaces.CustomXmlPartCollectionData.items" />
+  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member">PowerPoint.Interfaces.CustomXmlPartCollectionData.items</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
-  alttext="PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items" />
+  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData#items:member">PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member"
-  alttext="PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items" />
+  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member">PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  alttext="PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items"
-  />
+  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member">PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

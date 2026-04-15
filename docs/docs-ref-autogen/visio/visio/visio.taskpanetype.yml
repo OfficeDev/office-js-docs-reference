@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.TaskPaneStateChangedEventArgs#paneType:member"
-  alttext="Visio.TaskPaneStateChangedEventArgs.paneType" />
+  - <xref
+  href="visio!Visio.TaskPaneStateChangedEventArgs#paneType:member">Visio.TaskPaneStateChangedEventArgs.paneType</xref>
 
 isPreview: false
 isDeprecated: false

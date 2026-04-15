@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#iconSet:member"
-  alttext="Excel.ConditionalFormat.iconSet" />
+  - <xref
+  href="excel!Excel.ConditionalFormat#iconSet:member">Excel.ConditionalFormat.iconSet</xref>
 
-  - <xref uid="excel!Excel.ConditionalFormat#iconSetOrNullObject:member"
-  alttext="Excel.ConditionalFormat.iconSetOrNullObject" />
+  - <xref
+  href="excel!Excel.ConditionalFormat#iconSetOrNullObject:member">Excel.ConditionalFormat.iconSetOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

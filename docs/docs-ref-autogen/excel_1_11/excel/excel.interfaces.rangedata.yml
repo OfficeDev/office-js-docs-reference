@@ -8,14 +8,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#areas:member"
-  alttext="Excel.Interfaces.RangeAreasData.areas" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeAreasData#areas:member">Excel.Interfaces.RangeAreasData.areas</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionData#items:member"
-  alttext="Excel.Interfaces.RangeCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeCollectionData#items:member">Excel.Interfaces.RangeCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.RangeCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member">Excel.Interfaces.RangeCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

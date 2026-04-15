@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationRule#date:member"
-  alttext="Excel.DataValidationRule.date" />
+  - <xref
+  href="excel!Excel.DataValidationRule#date:member">Excel.DataValidationRule.date</xref>
 
-  - <xref uid="excel!Excel.DataValidationRule#time:member"
-  alttext="Excel.DataValidationRule.time" />
+  - <xref
+  href="excel!Excel.DataValidationRule#time:member">Excel.DataValidationRule.time</xref>
 
 isPreview: false
 isDeprecated: false

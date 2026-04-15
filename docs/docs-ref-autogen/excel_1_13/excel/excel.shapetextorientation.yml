@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#orientation:member"
-  alttext="Excel.Interfaces.TextFrameData.orientation" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameData#orientation:member">Excel.Interfaces.TextFrameData.orientation</xref>
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameUpdateData#orientation:member"
-  alttext="Excel.Interfaces.TextFrameUpdateData.orientation" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameUpdateData#orientation:member">Excel.Interfaces.TextFrameUpdateData.orientation</xref>
 
-  - <xref uid="excel!Excel.TextFrame#orientation:member"
-  alttext="Excel.TextFrame.orientation" />
+  - <xref
+  href="excel!Excel.TextFrame#orientation:member">Excel.TextFrame.orientation</xref>
 
 isPreview: false
 isDeprecated: false

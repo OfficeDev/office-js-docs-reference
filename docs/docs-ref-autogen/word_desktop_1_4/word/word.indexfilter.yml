@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Index#filter:member" alttext="Word.Index.filter" />
+  - <xref href="word!Word.Index#filter:member">Word.Index.filter</xref>
 
-  - <xref uid="word!Word.Interfaces.IndexData#filter:member"
-  alttext="Word.Interfaces.IndexData.filter" />
+  - <xref
+  href="word!Word.Interfaces.IndexData#filter:member">Word.Interfaces.IndexData.filter</xref>
 
 isPreview: false
 isDeprecated: false

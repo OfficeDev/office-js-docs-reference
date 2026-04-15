@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.XmlNodeData#level:member"
-  alttext="Word.Interfaces.XmlNodeData.level" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeData#level:member">Word.Interfaces.XmlNodeData.level</xref>
 
-  - <xref uid="word!Word.XmlNode#level:member" alttext="Word.XmlNode.level" />
+  - <xref href="word!Word.XmlNode#level:member">Word.XmlNode.level</xref>
 
 isPreview: false
 isDeprecated: false

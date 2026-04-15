@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onRowSorted:member"
-  alttext="Excel.Worksheet.onRowSorted" />
+  - <xref
+  href="excel!Excel.Worksheet#onRowSorted:member">Excel.Worksheet.onRowSorted</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onRowSorted:member"
-  alttext="Excel.WorksheetCollection.onRowSorted" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onRowSorted:member">Excel.WorksheetCollection.onRowSorted</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#repeatingSectionContentControl:member"
-  alttext="Word.ContentControl.repeatingSectionContentControl" />
+  - <xref
+  href="word!Word.ContentControl#repeatingSectionContentControl:member">Word.ContentControl.repeatingSectionContentControl</xref>
 
 isPreview: false
 isDeprecated: false

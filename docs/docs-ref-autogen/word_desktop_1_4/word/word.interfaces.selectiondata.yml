@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#selection:member"
-  alttext="Word.Interfaces.DocumentData.selection" />
+  - <xref
+  href="word!Word.Interfaces.DocumentData#selection:member">Word.Interfaces.DocumentData.selection</xref>
 
 isPreview: false
 isDeprecated: false

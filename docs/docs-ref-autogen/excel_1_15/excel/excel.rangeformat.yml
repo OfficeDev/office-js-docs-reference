@@ -14,10 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#format:member" alttext="Excel.Range.format" />
+  - <xref href="excel!Excel.Range#format:member">Excel.Range.format</xref>
 
-  - <xref uid="excel!Excel.RangeAreas#format:member"
-  alttext="Excel.RangeAreas.format" />
+  - <xref
+  href="excel!Excel.RangeAreas#format:member">Excel.RangeAreas.format</xref>
 
 isPreview: false
 isDeprecated: false

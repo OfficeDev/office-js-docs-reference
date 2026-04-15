@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Dialog#messageChild:member(1)"
-  alttext="Office.Dialog.messageChild" />
+  - <xref
+  href="office!Office.Dialog#messageChild:member(1)">Office.Dialog.messageChild</xref>
 
-  - <xref uid="office!Office.UI#messageParent:member(1)"
-  alttext="Office.UI.messageParent" />
+  - <xref
+  href="office!Office.UI#messageParent:member(1)">Office.UI.messageParent</xref>
 
 isPreview: false
 isDeprecated: false

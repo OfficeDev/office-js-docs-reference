@@ -12,17 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DatePickerContentControl#dateCalendarType:member"
-  alttext="Word.DatePickerContentControl.dateCalendarType" />
+  - <xref
+  href="word!Word.DatePickerContentControl#dateCalendarType:member">Word.DatePickerContentControl.dateCalendarType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#dateCalendarType:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.dateCalendarType" />
+  href="word!Word.Interfaces.DatePickerContentControlData#dateCalendarType:member">Word.Interfaces.DatePickerContentControlData.dateCalendarType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#dateCalendarType:member"
-  alttext="Word.Interfaces.DatePickerContentControlUpdateData.dateCalendarType"
-  />
+  href="word!Word.Interfaces.DatePickerContentControlUpdateData#dateCalendarType:member">Word.Interfaces.DatePickerContentControlUpdateData.dateCalendarType</xref>
 
 isPreview: false
 isDeprecated: false

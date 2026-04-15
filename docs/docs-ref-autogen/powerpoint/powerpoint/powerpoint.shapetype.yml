@@ -15,17 +15,16 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#containedType:member"
-  alttext="PowerPoint.Interfaces.PlaceholderFormatData.containedType" />
+  href="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#containedType:member">PowerPoint.Interfaces.PlaceholderFormatData.containedType</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeData#type:member"
-  alttext="PowerPoint.Interfaces.ShapeData.type" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.ShapeData#type:member">PowerPoint.Interfaces.ShapeData.type</xref>
 
-  - <xref uid="powerpoint!PowerPoint.PlaceholderFormat#containedType:member"
-  alttext="PowerPoint.PlaceholderFormat.containedType" />
+  - <xref
+  href="powerpoint!PowerPoint.PlaceholderFormat#containedType:member">PowerPoint.PlaceholderFormat.containedType</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Shape#type:member"
-  alttext="PowerPoint.Shape.type" />
+  - <xref
+  href="powerpoint!PowerPoint.Shape#type:member">PowerPoint.Shape.type</xref>
 
   #### Examples
 

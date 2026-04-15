@@ -14,15 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#textureAlignment:member"
-  alttext="Word.FillFormat.textureAlignment" />
-
-  - <xref uid="word!Word.Interfaces.FillFormatData#textureAlignment:member"
-  alttext="Word.Interfaces.FillFormatData.textureAlignment" />
+  - <xref
+  href="word!Word.FillFormat#textureAlignment:member">Word.FillFormat.textureAlignment</xref>
 
   - <xref
-  uid="word!Word.Interfaces.FillFormatUpdateData#textureAlignment:member"
-  alttext="Word.Interfaces.FillFormatUpdateData.textureAlignment" />
+  href="word!Word.Interfaces.FillFormatData#textureAlignment:member">Word.Interfaces.FillFormatData.textureAlignment</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FillFormatUpdateData#textureAlignment:member">Word.Interfaces.FillFormatUpdateData.textureAlignment</xref>
 
 isPreview: false
 isDeprecated: false

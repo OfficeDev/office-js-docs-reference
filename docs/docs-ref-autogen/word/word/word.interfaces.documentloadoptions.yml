@@ -16,11 +16,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.ownerDocument" />
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member">Word.Interfaces.XmlNodeCollectionLoadOptions.ownerDocument</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.ownerDocument" />
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member">Word.Interfaces.XmlNodeLoadOptions.ownerDocument</xref>
 
 isPreview: false
 isDeprecated: false

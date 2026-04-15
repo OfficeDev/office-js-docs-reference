@@ -15,14 +15,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#line:member"
-  alttext="Excel.Interfaces.GroupShapeCollectionLoadOptions.line" />
+  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#line:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.line</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#line:member"
-  alttext="Excel.Interfaces.ShapeCollectionLoadOptions.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#line:member">Excel.Interfaces.ShapeCollectionLoadOptions.line</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#line:member"
-  alttext="Excel.Interfaces.ShapeLoadOptions.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ShapeLoadOptions#line:member">Excel.Interfaces.ShapeLoadOptions.line</xref>
 
 isPreview: false
 isDeprecated: false

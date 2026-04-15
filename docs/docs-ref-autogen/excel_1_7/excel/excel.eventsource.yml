@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#source:member"
-  alttext="Excel.TableChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableChangedEventArgs#source:member">Excel.TableChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member"
-  alttext="Excel.WorksheetAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetAddedEventArgs#source:member">Excel.WorksheetAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member"
-  alttext="Excel.WorksheetChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetChangedEventArgs#source:member">Excel.WorksheetChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member"
-  alttext="Excel.WorksheetDeletedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetDeletedEventArgs#source:member">Excel.WorksheetDeletedEventArgs.source</xref>
 
 isPreview: false
 isDeprecated: false

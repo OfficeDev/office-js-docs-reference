@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PaneCollection#items:member"
-  alttext="Excel.PaneCollection.items" />
+  - <xref
+  href="excel!Excel.PaneCollection#items:member">Excel.PaneCollection.items</xref>
 
-  - <xref uid="excel!Excel.Window#activePane:member"
-  alttext="Excel.Window.activePane" />
+  - <xref
+  href="excel!Excel.Window#activePane:member">Excel.Window.activePane</xref>
 
 isPreview: false
 isDeprecated: false

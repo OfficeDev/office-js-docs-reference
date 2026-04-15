@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Shape#line:member" alttext="Excel.Shape.line" />
+  - <xref href="excel!Excel.Shape#line:member">Excel.Shape.line</xref>
 
 isPreview: false
 isDeprecated: false

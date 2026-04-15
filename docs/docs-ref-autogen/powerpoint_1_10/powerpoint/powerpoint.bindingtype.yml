@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Binding#type:member"
-  alttext="PowerPoint.Binding.type" />
+  - <xref
+  href="powerpoint!PowerPoint.Binding#type:member">PowerPoint.Binding.type</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.BindingData#type:member"
-  alttext="PowerPoint.Interfaces.BindingData.type" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.BindingData#type:member">PowerPoint.Interfaces.BindingData.type</xref>
 
   #### Examples
 

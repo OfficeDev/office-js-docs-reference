@@ -13,23 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparison"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparison</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparisonOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparisonOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparison:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.textComparison" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparison:member">Excel.Interfaces.ConditionalFormatLoadOptions.textComparison</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparisonOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.textComparisonOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparisonOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.textComparisonOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,15 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataPivotHierarchy#summarizeBy:member"
-  alttext="Excel.DataPivotHierarchy.summarizeBy" />
-
-  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyData.summarizeBy" />
+  - <xref
+  href="excel!Excel.DataPivotHierarchy#summarizeBy:member">Excel.DataPivotHierarchy.summarizeBy</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy" />
+  href="excel!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member">Excel.Interfaces.DataPivotHierarchyData.summarizeBy</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member">Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy</xref>
 
   #### Examples
 

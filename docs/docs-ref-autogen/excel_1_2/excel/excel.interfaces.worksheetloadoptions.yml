@@ -18,21 +18,19 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.ChartCollectionLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.ChartLoadOptions.worksheet" />
-
-  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.RangeLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member">Excel.Interfaces.ChartCollectionLoadOptions.worksheet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.TableCollectionLoadOptions.worksheet" />
+  href="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member">Excel.Interfaces.ChartLoadOptions.worksheet</xref>
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#worksheet:member"
-  alttext="Excel.Interfaces.TableLoadOptions.worksheet" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member">Excel.Interfaces.RangeLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member">Excel.Interfaces.TableCollectionLoadOptions.worksheet</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.TableLoadOptions#worksheet:member">Excel.Interfaces.TableLoadOptions.worksheet</xref>
 
 isPreview: false
 isDeprecated: false

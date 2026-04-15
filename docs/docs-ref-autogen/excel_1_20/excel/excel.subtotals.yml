@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PivotFieldData#subtotals:member"
-  alttext="Excel.Interfaces.PivotFieldData.subtotals" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotFieldData#subtotals:member">Excel.Interfaces.PivotFieldData.subtotals</xref>
 
-  - <xref uid="excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member"
-  alttext="Excel.Interfaces.PivotFieldUpdateData.subtotals" />
+  - <xref
+  href="excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member">Excel.Interfaces.PivotFieldUpdateData.subtotals</xref>
 
-  - <xref uid="excel!Excel.PivotField#subtotals:member"
-  alttext="Excel.PivotField.subtotals" />
+  - <xref
+  href="excel!Excel.PivotField#subtotals:member">Excel.PivotField.subtotals</xref>
 
 isPreview: false
 isDeprecated: false

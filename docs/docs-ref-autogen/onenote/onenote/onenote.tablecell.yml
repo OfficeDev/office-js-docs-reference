@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Paragraph#parentTableCell:member"
-  alttext="OneNote.Paragraph.parentTableCell" />
+  - <xref
+  href="onenote!OneNote.Paragraph#parentTableCell:member">OneNote.Paragraph.parentTableCell</xref>
 
-  - <xref uid="onenote!OneNote.Paragraph#parentTableCellOrNull:member"
-  alttext="OneNote.Paragraph.parentTableCellOrNull" />
+  - <xref
+  href="onenote!OneNote.Paragraph#parentTableCellOrNull:member">OneNote.Paragraph.parentTableCellOrNull</xref>
 
-  - <xref uid="onenote!OneNote.TableCellCollection#items:member"
-  alttext="OneNote.TableCellCollection.items" />
+  - <xref
+  href="onenote!OneNote.TableCellCollection#items:member">OneNote.TableCellCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

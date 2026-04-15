@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Slide#themeColorScheme:member"
-  alttext="PowerPoint.Slide.themeColorScheme" />
+  - <xref
+  href="powerpoint!PowerPoint.Slide#themeColorScheme:member">PowerPoint.Slide.themeColorScheme</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayout#themeColorScheme:member"
-  alttext="PowerPoint.SlideLayout.themeColorScheme" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayout#themeColorScheme:member">PowerPoint.SlideLayout.themeColorScheme</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMaster#themeColorScheme:member"
-  alttext="PowerPoint.SlideMaster.themeColorScheme" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMaster#themeColorScheme:member">PowerPoint.SlideMaster.themeColorScheme</xref>
 
   #### Examples
 

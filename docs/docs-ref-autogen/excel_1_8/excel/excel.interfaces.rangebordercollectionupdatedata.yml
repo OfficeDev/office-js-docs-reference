@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#borders:member"
-  alttext="Excel.Interfaces.RangeFormatUpdateData.borders" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatUpdateData#borders:member">Excel.Interfaces.RangeFormatUpdateData.borders</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#borders:member"
-  alttext="Excel.Interfaces.StyleUpdateData.borders" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleUpdateData#borders:member">Excel.Interfaces.StyleUpdateData.borders</xref>
 
 isPreview: false
 isDeprecated: false

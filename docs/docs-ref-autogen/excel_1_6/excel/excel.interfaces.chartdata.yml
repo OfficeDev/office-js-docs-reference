@@ -8,14 +8,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartCollectionData#items:member"
-  alttext="Excel.Interfaces.ChartCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartCollectionData#items:member">Excel.Interfaces.ChartCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.ChartCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartCollectionUpdateData#items:member">Excel.Interfaces.ChartCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#charts:member"
-  alttext="Excel.Interfaces.WorksheetData.charts" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#charts:member">Excel.Interfaces.WorksheetData.charts</xref>
 
 isPreview: false
 isDeprecated: false

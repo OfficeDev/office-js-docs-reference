@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableUpdateData#tableStyle:member"
-  alttext="Excel.Interfaces.TableUpdateData.tableStyle" />
+  - <xref
+  href="excel!Excel.Interfaces.TableUpdateData#tableStyle:member">Excel.Interfaces.TableUpdateData.tableStyle</xref>
 
 isPreview: false
 isDeprecated: false

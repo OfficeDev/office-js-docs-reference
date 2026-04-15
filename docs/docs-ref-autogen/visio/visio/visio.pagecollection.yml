@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#pages:member" alttext="Visio.Document.pages"
-  />
+  - <xref href="visio!Visio.Document#pages:member">Visio.Document.pages</xref>
 
 isPreview: false
 isDeprecated: false

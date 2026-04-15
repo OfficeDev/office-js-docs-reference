@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#canvas:member"
-  alttext="Word.Interfaces.ShapeUpdateData.canvas" />
+  - <xref
+  href="word!Word.Interfaces.ShapeUpdateData#canvas:member">Word.Interfaces.ShapeUpdateData.canvas</xref>
 
 isPreview: false
 isDeprecated: false

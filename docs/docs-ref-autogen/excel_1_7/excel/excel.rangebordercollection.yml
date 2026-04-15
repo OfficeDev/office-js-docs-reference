@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeFormat#borders:member"
-  alttext="Excel.RangeFormat.borders" />
+  - <xref
+  href="excel!Excel.RangeFormat#borders:member">Excel.RangeFormat.borders</xref>
 
-  - <xref uid="excel!Excel.Style#borders:member" alttext="Excel.Style.borders"
-  />
+  - <xref href="excel!Excel.Style#borders:member">Excel.Style.borders</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BlockedErrorCellValue#errorSubType:member"
-  alttext="Excel.BlockedErrorCellValue.errorSubType" />
+  - <xref
+  href="excel!Excel.BlockedErrorCellValue#errorSubType:member">Excel.BlockedErrorCellValue.errorSubType</xref>
 
 isPreview: false
 isDeprecated: false

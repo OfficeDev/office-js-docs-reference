@@ -28,8 +28,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#diagnostics:member"
-  alttext="Office.Mailbox.diagnostics" />
+  - <xref
+  href="outlook!Office.Mailbox#diagnostics:member">Office.Mailbox.diagnostics</xref>
 
   #### Examples
 

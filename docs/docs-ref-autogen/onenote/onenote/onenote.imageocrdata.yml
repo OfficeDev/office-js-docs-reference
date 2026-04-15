@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Image#ocrData:member"
-  alttext="OneNote.Image.ocrData" />
+  - <xref
+  href="onenote!OneNote.Image#ocrData:member">OneNote.Image.ocrData</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ImageData#ocrData:member"
-  alttext="OneNote.Interfaces.ImageData.ocrData" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ImageData#ocrData:member">OneNote.Interfaces.ImageData.ocrData</xref>
 
 isPreview: false
 isDeprecated: false

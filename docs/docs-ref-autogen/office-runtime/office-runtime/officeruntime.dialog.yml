@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member"
-  alttext="OfficeRuntime.DisplayWebDialogOptions.onMessage" />
+  href="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member">OfficeRuntime.DisplayWebDialogOptions.onMessage</xref>
 
   - <xref
-  uid="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member"
-  alttext="OfficeRuntime.DisplayWebDialogOptions.onRuntimeError" />
+  href="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member">OfficeRuntime.DisplayWebDialogOptions.onRuntimeError</xref>
 
 isPreview: false
 isDeprecated: false

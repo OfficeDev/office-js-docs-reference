@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.AutorunEventCompletedOptions#autorunEventType:member"
-  alttext="Excel.AutorunEventCompletedOptions.autorunEventType" />
+  - <xref
+  href="excel!Excel.AutorunEventCompletedOptions#autorunEventType:member">Excel.AutorunEventCompletedOptions.autorunEventType</xref>
 
 isPreview: true
 isDeprecated: false

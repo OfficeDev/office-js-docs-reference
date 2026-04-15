@@ -13,19 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#table:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.table" />
-
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#table:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.table" />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#table:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.table</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#parentTable:member"
-  alttext="OneNote.Interfaces.TableRowCollectionLoadOptions.parentTable" />
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#table:member">OneNote.Interfaces.ParagraphLoadOptions.table</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member"
-  alttext="OneNote.Interfaces.TableRowLoadOptions.parentTable" />
+  href="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#parentTable:member">OneNote.Interfaces.TableRowCollectionLoadOptions.parentTable</xref>
+
+  - <xref
+  href="onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member">OneNote.Interfaces.TableRowLoadOptions.parentTable</xref>
 
 isPreview: false
 isDeprecated: false

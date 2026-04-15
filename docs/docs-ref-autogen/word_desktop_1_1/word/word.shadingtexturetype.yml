@@ -17,14 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShadingData#texture:member"
-  alttext="Word.Interfaces.ShadingData.texture" />
+  - <xref
+  href="word!Word.Interfaces.ShadingData#texture:member">Word.Interfaces.ShadingData.texture</xref>
 
-  - <xref uid="word!Word.Interfaces.ShadingUpdateData#texture:member"
-  alttext="Word.Interfaces.ShadingUpdateData.texture" />
+  - <xref
+  href="word!Word.Interfaces.ShadingUpdateData#texture:member">Word.Interfaces.ShadingUpdateData.texture</xref>
 
-  - <xref uid="word!Word.Shading#texture:member" alttext="Word.Shading.texture"
-  />
+  - <xref href="word!Word.Shading#texture:member">Word.Shading.texture</xref>
 
   #### Examples
 

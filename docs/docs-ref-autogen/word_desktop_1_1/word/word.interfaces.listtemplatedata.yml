@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListTemplateCollectionData#items:member"
-  alttext="Word.Interfaces.ListTemplateCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.ListTemplateCollectionData#items:member">Word.Interfaces.ListTemplateCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ListTemplateCollectionUpdateData.items" />
+  href="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member">Word.Interfaces.ListTemplateCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleData#listTemplate:member"
-  alttext="Word.Interfaces.StyleData.listTemplate" />
+  - <xref
+  href="word!Word.Interfaces.StyleData#listTemplate:member">Word.Interfaces.StyleData.listTemplate</xref>
 
 isPreview: false
 isDeprecated: false

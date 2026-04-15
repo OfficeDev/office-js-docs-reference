@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartPointsCollectionData#items:member"
-  alttext="Excel.Interfaces.ChartPointsCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartPointsCollectionData#items:member">Excel.Interfaces.ChartPointsCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.ChartPointsCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member">Excel.Interfaces.ChartPointsCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#points:member"
-  alttext="Excel.Interfaces.ChartSeriesData.points" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesData#points:member">Excel.Interfaces.ChartSeriesData.points</xref>
 
 isPreview: false
 isDeprecated: false

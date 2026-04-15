@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#slicerStyles:member"
-  alttext="Excel.Workbook.slicerStyles" />
+  - <xref
+  href="excel!Excel.Workbook#slicerStyles:member">Excel.Workbook.slicerStyles</xref>
 
 isPreview: false
 isDeprecated: false

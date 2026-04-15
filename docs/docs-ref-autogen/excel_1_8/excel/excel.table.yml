@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableCollection#items:member"
-  alttext="Excel.TableCollection.items" />
+  - <xref
+  href="excel!Excel.TableCollection#items:member">Excel.TableCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onDocumentError:member"
-  alttext="Visio.Document.onDocumentError" />
+  - <xref
+  href="visio!Visio.Document#onDocumentError:member">Visio.Document.onDocumentError</xref>
 
 isPreview: false
 isDeprecated: false

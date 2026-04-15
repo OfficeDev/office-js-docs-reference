@@ -13,22 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValue:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.cellValue" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValue:member">Excel.Interfaces.ConditionalFormatLoadOptions.cellValue</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValueOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValueOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

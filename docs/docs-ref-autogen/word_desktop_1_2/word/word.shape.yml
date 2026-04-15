@@ -16,19 +16,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Canvas#shape:member" alttext="Word.Canvas.shape" />
+  - <xref href="word!Word.Canvas#shape:member">Word.Canvas.shape</xref>
 
-  - <xref uid="word!Word.Shape#parentCanvas:member"
-  alttext="Word.Shape.parentCanvas" />
+  - <xref
+  href="word!Word.Shape#parentCanvas:member">Word.Shape.parentCanvas</xref>
 
-  - <xref uid="word!Word.Shape#parentGroup:member"
-  alttext="Word.Shape.parentGroup" />
+  - <xref
+  href="word!Word.Shape#parentGroup:member">Word.Shape.parentGroup</xref>
 
-  - <xref uid="word!Word.ShapeCollection#items:member"
-  alttext="Word.ShapeCollection.items" />
+  - <xref
+  href="word!Word.ShapeCollection#items:member">Word.ShapeCollection.items</xref>
 
-  - <xref uid="word!Word.ShapeGroup#shape:member"
-  alttext="Word.ShapeGroup.shape" />
+  - <xref href="word!Word.ShapeGroup#shape:member">Word.ShapeGroup.shape</xref>
 
   #### Examples
 

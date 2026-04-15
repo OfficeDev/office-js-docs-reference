@@ -11,26 +11,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member(1)"
-  alttext="Office.CustomXmlNode.getNodesAsync" />
+  - <xref
+  href="office!Office.CustomXmlNode#getNodesAsync:member(1)">Office.CustomXmlNode.getNodesAsync</xref>
 
-  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member(1)"
-  alttext="Office.CustomXmlPart.getNodesAsync" />
+  - <xref
+  href="office!Office.CustomXmlPart#getNodesAsync:member(1)">Office.CustomXmlPart.getNodesAsync</xref>
 
-  - <xref uid="office!Office.NodeDeletedEventArgs#oldNextSibling:member"
-  alttext="Office.NodeDeletedEventArgs.oldNextSibling" />
+  - <xref
+  href="office!Office.NodeDeletedEventArgs#oldNextSibling:member">Office.NodeDeletedEventArgs.oldNextSibling</xref>
 
-  - <xref uid="office!Office.NodeDeletedEventArgs#oldNode:member"
-  alttext="Office.NodeDeletedEventArgs.oldNode" />
+  - <xref
+  href="office!Office.NodeDeletedEventArgs#oldNode:member">Office.NodeDeletedEventArgs.oldNode</xref>
 
-  - <xref uid="office!Office.NodeInsertedEventArgs#newNode:member"
-  alttext="Office.NodeInsertedEventArgs.newNode" />
+  - <xref
+  href="office!Office.NodeInsertedEventArgs#newNode:member">Office.NodeInsertedEventArgs.newNode</xref>
 
-  - <xref uid="office!Office.NodeReplacedEventArgs#newNode:member"
-  alttext="Office.NodeReplacedEventArgs.newNode" />
+  - <xref
+  href="office!Office.NodeReplacedEventArgs#newNode:member">Office.NodeReplacedEventArgs.newNode</xref>
 
-  - <xref uid="office!Office.NodeReplacedEventArgs#oldNode:member"
-  alttext="Office.NodeReplacedEventArgs.oldNode" />
+  - <xref
+  href="office!Office.NodeReplacedEventArgs#oldNode:member">Office.NodeReplacedEventArgs.oldNode</xref>
 
 isPreview: false
 isDeprecated: false

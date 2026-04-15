@@ -17,11 +17,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeAreasCollection#items:member"
-  alttext="Excel.RangeAreasCollection.items" />
+  - <xref
+  href="excel!Excel.RangeAreasCollection#items:member">Excel.RangeAreasCollection.items</xref>
 
-  - <xref uid="excel!Excel.Window#rangeSelection:member"
-  alttext="Excel.Window.rangeSelection" />
+  - <xref
+  href="excel!Excel.Window#rangeSelection:member">Excel.Window.rangeSelection</xref>
 
 isPreview: false
 isDeprecated: false

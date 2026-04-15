@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationRule#decimal:member"
-  alttext="Excel.DataValidationRule.decimal" />
+  - <xref
+  href="excel!Excel.DataValidationRule#decimal:member">Excel.DataValidationRule.decimal</xref>
 
-  - <xref uid="excel!Excel.DataValidationRule#textLength:member"
-  alttext="Excel.DataValidationRule.textLength" />
+  - <xref
+  href="excel!Excel.DataValidationRule#textLength:member">Excel.DataValidationRule.textLength</xref>
 
-  - <xref uid="excel!Excel.DataValidationRule#wholeNumber:member"
-  alttext="Excel.DataValidationRule.wholeNumber" />
+  - <xref
+  href="excel!Excel.DataValidationRule#wholeNumber:member">Excel.DataValidationRule.wholeNumber</xref>
 
 isPreview: false
 isDeprecated: false

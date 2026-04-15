@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#pageLayout:member"
-  alttext="Excel.Interfaces.WorksheetData.pageLayout" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#pageLayout:member">Excel.Interfaces.WorksheetData.pageLayout</xref>
 
 isPreview: false
 isDeprecated: false

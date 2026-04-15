@@ -15,16 +15,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#sections:member"
-  alttext="Word.Document.sections" />
+  - <xref
+  href="word!Word.Document#sections:member">Word.Document.sections</xref>
 
-  - <xref uid="word!Word.DocumentCreated#sections:member"
-  alttext="Word.DocumentCreated.sections" />
+  - <xref
+  href="word!Word.DocumentCreated#sections:member">Word.DocumentCreated.sections</xref>
 
-  - <xref uid="word!Word.Range#sections:member" alttext="Word.Range.sections" />
+  - <xref href="word!Word.Range#sections:member">Word.Range.sections</xref>
 
-  - <xref uid="word!Word.Selection#sections:member"
-  alttext="Word.Selection.sections" />
+  - <xref
+  href="word!Word.Selection#sections:member">Word.Selection.sections</xref>
 
   #### Examples
 

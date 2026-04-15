@@ -14,18 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData#textRuns:member"
-  alttext="PowerPoint.Interfaces.TableCellData.textRuns" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.TableCellData#textRuns:member">PowerPoint.Interfaces.TableCellData.textRuns</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member"
-  alttext="PowerPoint.Interfaces.TableCellUpdateData.textRuns" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member">PowerPoint.Interfaces.TableCellUpdateData.textRuns</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#textRuns:member"
-  alttext="PowerPoint.TableCell.textRuns" />
+  - <xref
+  href="powerpoint!PowerPoint.TableCell#textRuns:member">PowerPoint.TableCell.textRuns</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TableCellProperties#textRuns:member"
-  alttext="PowerPoint.TableCellProperties.textRuns" />
+  - <xref
+  href="powerpoint!PowerPoint.TableCellProperties#textRuns:member">PowerPoint.TableCellProperties.textRuns</xref>
 
   #### Examples
 

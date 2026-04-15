@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ListTemplateApplyOptions#applyTo:member"
-  alttext="Word.ListTemplateApplyOptions.applyTo" />
+  - <xref
+  href="word!Word.ListTemplateApplyOptions#applyTo:member">Word.ListTemplateApplyOptions.applyTo</xref>
 
 isPreview: false
 isDeprecated: false

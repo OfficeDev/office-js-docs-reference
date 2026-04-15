@@ -10,16 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member"
-  alttext="OneNote.Interfaces.InkAnalysisLineData.paragraph" />
+  - <xref
+  href="onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member">OneNote.Interfaces.InkAnalysisLineData.paragraph</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member"
-  alttext="OneNote.Interfaces.InkAnalysisParagraphCollectionData.items" />
+  href="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member">OneNote.Interfaces.InkAnalysisParagraphCollectionData.items</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member">OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

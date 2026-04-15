@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TemplateData#type:member"
-  alttext="Word.Interfaces.TemplateData.type" />
+  - <xref
+  href="word!Word.Interfaces.TemplateData#type:member">Word.Interfaces.TemplateData.type</xref>
 
-  - <xref uid="word!Word.Template#type:member" alttext="Word.Template.type" />
+  - <xref href="word!Word.Template#type:member">Word.Template.type</xref>
 
 isPreview: false
 isDeprecated: false

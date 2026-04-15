@@ -14,28 +14,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartAreaFormatLoadOptions.font" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartAxisFormatLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member">Excel.Interfaces.ChartAreaFormatLoadOptions.font</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartAxisTitleFormatLoadOptions.font" />
+  href="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member">Excel.Interfaces.ChartAxisFormatLoadOptions.font</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartDataLabelFormatLoadOptions.font" />
+  href="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member">Excel.Interfaces.ChartAxisTitleFormatLoadOptions.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartFormatStringLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartFormatStringLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member">Excel.Interfaces.ChartDataLabelFormatLoadOptions.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartLegendFormatLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartFormatStringLoadOptions#font:member">Excel.Interfaces.ChartFormatStringLoadOptions.font</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member"
-  alttext="Excel.Interfaces.ChartTitleFormatLoadOptions.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#font:member">Excel.Interfaces.ChartLegendFormatLoadOptions.font</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member">Excel.Interfaces.ChartTitleFormatLoadOptions.font</xref>
 
 isPreview: false
 isDeprecated: false

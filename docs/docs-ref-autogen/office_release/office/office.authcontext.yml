@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Auth#getAuthContext:member(1)"
-  alttext="Office.Auth.getAuthContext" />
+  - <xref
+  href="office!Office.Auth#getAuthContext:member(1)">Office.Auth.getAuthContext</xref>
 
 isPreview: false
 isDeprecated: false

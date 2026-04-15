@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeData#shapeGroup:member"
-  alttext="Word.Interfaces.ShapeData.shapeGroup" />
+  - <xref
+  href="word!Word.Interfaces.ShapeData#shapeGroup:member">Word.Interfaces.ShapeData.shapeGroup</xref>
 
 isPreview: false
 isDeprecated: false

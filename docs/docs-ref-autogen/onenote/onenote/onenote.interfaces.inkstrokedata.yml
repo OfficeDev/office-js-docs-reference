@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.FloatingInkData#inkStrokes:member"
-  alttext="OneNote.Interfaces.FloatingInkData.inkStrokes" />
-
-  - <xref uid="onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member"
-  alttext="OneNote.Interfaces.InkStrokeCollectionData.items" />
+  - <xref
+  href="onenote!OneNote.Interfaces.FloatingInkData#inkStrokes:member">OneNote.Interfaces.FloatingInkData.inkStrokes</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.InkStrokeCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member">OneNote.Interfaces.InkStrokeCollectionData.items</xref>
+
+  - <xref
+  href="onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData#items:member">OneNote.Interfaces.InkStrokeCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

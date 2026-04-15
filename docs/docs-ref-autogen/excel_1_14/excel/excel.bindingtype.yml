@@ -13,10 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Binding#type:member" alttext="Excel.Binding.type" />
+  - <xref href="excel!Excel.Binding#type:member">Excel.Binding.type</xref>
 
-  - <xref uid="excel!Excel.Interfaces.BindingData#type:member"
-  alttext="Excel.Interfaces.BindingData.type" />
+  - <xref
+  href="excel!Excel.Interfaces.BindingData#type:member">Excel.Interfaces.BindingData.type</xref>
 
   #### Examples
 

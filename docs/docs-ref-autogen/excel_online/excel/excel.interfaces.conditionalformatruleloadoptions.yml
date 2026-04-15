@@ -13,8 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#rule:member"
-  alttext="Excel.Interfaces.CustomConditionalFormatLoadOptions.rule" />
+  href="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#rule:member">Excel.Interfaces.CustomConditionalFormatLoadOptions.rule</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeAreas#areas:member"
-  alttext="Excel.RangeAreas.areas" />
+  - <xref
+  href="excel!Excel.RangeAreas#areas:member">Excel.RangeAreas.areas</xref>
 
-  - <xref uid="excel!Excel.WorkbookRangeAreas#ranges:member"
-  alttext="Excel.WorkbookRangeAreas.ranges" />
+  - <xref
+  href="excel!Excel.WorkbookRangeAreas#ranges:member">Excel.WorkbookRangeAreas.ranges</xref>
 
 isPreview: false
 isDeprecated: false

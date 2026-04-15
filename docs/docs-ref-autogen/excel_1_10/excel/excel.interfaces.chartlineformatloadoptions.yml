@@ -12,23 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member"
-  alttext="Excel.Interfaces.ChartAxisFormatLoadOptions.line" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member">Excel.Interfaces.ChartAxisFormatLoadOptions.line</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member"
-  alttext="Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line" />
+  href="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member">Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member"
-  alttext="Excel.Interfaces.ChartGridlinesFormatLoadOptions.line" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member"
-  alttext="Excel.Interfaces.ChartSeriesFormatLoadOptions.line" />
+  href="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member">Excel.Interfaces.ChartGridlinesFormatLoadOptions.line</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#line:member"
-  alttext="Excel.Interfaces.ChartTrendlineFormatLoadOptions.line" />
+  href="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member">Excel.Interfaces.ChartSeriesFormatLoadOptions.line</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#line:member">Excel.Interfaces.ChartTrendlineFormatLoadOptions.line</xref>
 
 isPreview: false
 isDeprecated: false

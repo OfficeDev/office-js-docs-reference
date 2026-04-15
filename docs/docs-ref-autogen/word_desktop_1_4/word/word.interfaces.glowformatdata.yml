@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontData#glow:member"
-  alttext="Word.Interfaces.FontData.glow" />
+  - <xref
+  href="word!Word.Interfaces.FontData#glow:member">Word.Interfaces.FontData.glow</xref>
 
 isPreview: false
 isDeprecated: false

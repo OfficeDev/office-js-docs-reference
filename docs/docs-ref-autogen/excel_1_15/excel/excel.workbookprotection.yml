@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#protection:member"
-  alttext="Excel.Workbook.protection" />
+  - <xref
+  href="excel!Excel.Workbook#protection:member">Excel.Workbook.protection</xref>
 
 isPreview: false
 isDeprecated: false

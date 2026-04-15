@@ -18,38 +18,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#worksheet:member"
-  alttext="Excel.Chart.worksheet" />
+  - <xref href="excel!Excel.Chart#worksheet:member">Excel.Chart.worksheet</xref>
 
-  - <xref uid="excel!Excel.InsertWorksheetOptions#relativeTo:member"
-  alttext="Excel.InsertWorksheetOptions.relativeTo" />
+  - <xref
+  href="excel!Excel.InsertWorksheetOptions#relativeTo:member">Excel.InsertWorksheetOptions.relativeTo</xref>
 
-  - <xref uid="excel!Excel.NamedItem#worksheet:member"
-  alttext="Excel.NamedItem.worksheet" />
+  - <xref
+  href="excel!Excel.NamedItem#worksheet:member">Excel.NamedItem.worksheet</xref>
 
-  - <xref uid="excel!Excel.NamedItem#worksheetOrNullObject:member"
-  alttext="Excel.NamedItem.worksheetOrNullObject" />
+  - <xref
+  href="excel!Excel.NamedItem#worksheetOrNullObject:member">Excel.NamedItem.worksheetOrNullObject</xref>
 
-  - <xref uid="excel!Excel.PivotTable#worksheet:member"
-  alttext="Excel.PivotTable.worksheet" />
+  - <xref
+  href="excel!Excel.PivotTable#worksheet:member">Excel.PivotTable.worksheet</xref>
 
-  - <xref uid="excel!Excel.Range#worksheet:member"
-  alttext="Excel.Range.worksheet" />
+  - <xref href="excel!Excel.Range#worksheet:member">Excel.Range.worksheet</xref>
 
-  - <xref uid="excel!Excel.RangeAreas#worksheet:member"
-  alttext="Excel.RangeAreas.worksheet" />
+  - <xref
+  href="excel!Excel.RangeAreas#worksheet:member">Excel.RangeAreas.worksheet</xref>
 
-  - <xref uid="excel!Excel.Slicer#worksheet:member"
-  alttext="Excel.Slicer.worksheet" />
+  - <xref
+  href="excel!Excel.Slicer#worksheet:member">Excel.Slicer.worksheet</xref>
 
-  - <xref uid="excel!Excel.Table#worksheet:member"
-  alttext="Excel.Table.worksheet" />
+  - <xref href="excel!Excel.Table#worksheet:member">Excel.Table.worksheet</xref>
 
-  - <xref uid="excel!Excel.Window#activeWorksheet:member"
-  alttext="Excel.Window.activeWorksheet" />
+  - <xref
+  href="excel!Excel.Window#activeWorksheet:member">Excel.Window.activeWorksheet</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#items:member"
-  alttext="Excel.WorksheetCollection.items" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#items:member">Excel.WorksheetCollection.items</xref>
 
   #### Examples
 

@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#onDeleted:member"
-  alttext="Word.ContentControl.onDeleted" />
+  - <xref
+  href="word!Word.ContentControl#onDeleted:member">Word.ContentControl.onDeleted</xref>
 
   #### Examples
 

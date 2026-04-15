@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#fill:member"
-  alttext="Excel.Interfaces.RangeFormatData.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatData#fill:member">Excel.Interfaces.RangeFormatData.fill</xref>
 
 isPreview: false
 isDeprecated: false

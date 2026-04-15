@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionInsertDateTimeOptions#dateLanguage:member"
-  alttext="Word.SelectionInsertDateTimeOptions.dateLanguage" />
+  - <xref
+  href="word!Word.SelectionInsertDateTimeOptions#dateLanguage:member">Word.SelectionInsertDateTimeOptions.dateLanguage</xref>
 
 isPreview: false
 isDeprecated: false

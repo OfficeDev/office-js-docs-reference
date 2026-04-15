@@ -10,23 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData#items:member"
-  alttext="Word.Interfaces.CustomXmlPartCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.CustomXmlPartCollectionData#items:member">Word.Interfaces.CustomXmlPartCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CustomXmlPartCollectionUpdateData.items" />
+  href="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member">Word.Interfaces.CustomXmlPartCollectionUpdateData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member"
-  alttext="Word.Interfaces.CustomXmlPartScopedCollectionData.items" />
+  href="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member">Word.Interfaces.CustomXmlPartScopedCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items" />
+  href="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member">Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.DocumentData#customXmlParts:member"
-  alttext="Word.Interfaces.DocumentData.customXmlParts" />
+  - <xref
+  href="word!Word.Interfaces.DocumentData#customXmlParts:member">Word.Interfaces.DocumentData.customXmlParts</xref>
 
 isPreview: false
 isDeprecated: false

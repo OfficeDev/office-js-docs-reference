@@ -27,8 +27,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MailboxEvent#completed:member(1)"
-  alttext="Office.MailboxEvent.completed" />
+  - <xref
+  href="outlook!Office.MailboxEvent#completed:member(1)">Office.MailboxEvent.completed</xref>
 
   #### Examples
 

@@ -13,15 +13,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member"
-  alttext="Excel.Interfaces.TopBottomConditionalFormatData.rule" />
+  href="excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member">Excel.Interfaces.TopBottomConditionalFormatData.rule</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#rule:member"
-  alttext="Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule" />
+  href="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#rule:member">Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule</xref>
 
-  - <xref uid="excel!Excel.TopBottomConditionalFormat#rule:member"
-  alttext="Excel.TopBottomConditionalFormat.rule" />
+  - <xref
+  href="excel!Excel.TopBottomConditionalFormat#rule:member">Excel.TopBottomConditionalFormat.rule</xref>
 
 isPreview: false
 isDeprecated: false

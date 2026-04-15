@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartPointData#dataLabel:member"
-  alttext="Excel.Interfaces.ChartPointData.dataLabel" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartPointData#dataLabel:member">Excel.Interfaces.ChartPointData.dataLabel</xref>
 
 isPreview: false
 isDeprecated: false

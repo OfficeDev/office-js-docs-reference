@@ -14,18 +14,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#placeholderFormat:member"
-  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.placeholderFormat"
-  />
+  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#placeholderFormat:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.placeholderFormat</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#placeholderFormat:member"
-  alttext="PowerPoint.Interfaces.ShapeLoadOptions.placeholderFormat" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#placeholderFormat:member">PowerPoint.Interfaces.ShapeLoadOptions.placeholderFormat</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#placeholderFormat:member"
-  alttext="PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.placeholderFormat"
-  />
+  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#placeholderFormat:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.placeholderFormat</xref>
 
 isPreview: false
 isDeprecated: false

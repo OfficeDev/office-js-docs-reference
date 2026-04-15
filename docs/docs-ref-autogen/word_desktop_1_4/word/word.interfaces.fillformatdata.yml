@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontData#fill:member"
-  alttext="Word.Interfaces.FontData.fill" />
+  - <xref
+  href="word!Word.Interfaces.FontData#fill:member">Word.Interfaces.FontData.fill</xref>
 
 isPreview: false
 isDeprecated: false

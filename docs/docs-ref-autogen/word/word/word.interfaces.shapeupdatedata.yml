@@ -10,17 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CanvasUpdateData#shape:member"
-  alttext="Word.Interfaces.CanvasUpdateData.shape" />
+  - <xref
+  href="word!Word.Interfaces.CanvasUpdateData#shape:member">Word.Interfaces.CanvasUpdateData.shape</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeGroupUpdateData#shape:member"
-  alttext="Word.Interfaces.ShapeGroupUpdateData.shape" />
+  - <xref
+  href="word!Word.Interfaces.ShapeGroupUpdateData#shape:member">Word.Interfaces.ShapeGroupUpdateData.shape</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#parentCanvas:member"
-  alttext="Word.Interfaces.ShapeUpdateData.parentCanvas" />
+  - <xref
+  href="word!Word.Interfaces.ShapeUpdateData#parentCanvas:member">Word.Interfaces.ShapeUpdateData.parentCanvas</xref>
 
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#parentGroup:member"
-  alttext="Word.Interfaces.ShapeUpdateData.parentGroup" />
+  - <xref
+  href="word!Word.Interfaces.ShapeUpdateData#parentGroup:member">Word.Interfaces.ShapeUpdateData.parentGroup</xref>
 
 isPreview: false
 isDeprecated: false

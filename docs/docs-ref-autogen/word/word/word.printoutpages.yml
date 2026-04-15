@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentPrintOutOptions#pageType:member"
-  alttext="Word.DocumentPrintOutOptions.pageType" />
+  - <xref
+  href="word!Word.DocumentPrintOutOptions#pageType:member">Word.DocumentPrintOutOptions.pageType</xref>
 
 isPreview: false
 isDeprecated: false

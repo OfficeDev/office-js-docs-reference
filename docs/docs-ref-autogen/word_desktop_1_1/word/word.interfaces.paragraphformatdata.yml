@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleData#paragraphFormat:member"
-  alttext="Word.Interfaces.StyleData.paragraphFormat" />
+  - <xref
+  href="word!Word.Interfaces.StyleData#paragraphFormat:member">Word.Interfaces.StyleData.paragraphFormat</xref>
 
 isPreview: false
 isDeprecated: false

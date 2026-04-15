@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionConvertToTableOptions#format:member"
-  alttext="Word.SelectionConvertToTableOptions.format" />
+  - <xref
+  href="word!Word.SelectionConvertToTableOptions#format:member">Word.SelectionConvertToTableOptions.format</xref>
 
-  - <xref uid="word!Word.TableAutoFormatOptions#format:member"
-  alttext="Word.TableAutoFormatOptions.format" />
+  - <xref
+  href="word!Word.TableAutoFormatOptions#format:member">Word.TableAutoFormatOptions.format</xref>
 
 isPreview: false
 isDeprecated: false

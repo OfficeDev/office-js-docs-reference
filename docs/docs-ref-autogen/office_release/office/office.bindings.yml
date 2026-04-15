@@ -8,8 +8,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#bindings:member"
-  alttext="Office.Document.bindings" />
+  - <xref
+  href="office!Office.Document#bindings:member">Office.Document.bindings</xref>
 
 isPreview: false
 isDeprecated: false

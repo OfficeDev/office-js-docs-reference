@@ -25,26 +25,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#fields:member" alttext="Word.Body.fields" />
+  - <xref href="word!Word.Body#fields:member">Word.Body.fields</xref>
 
-  - <xref uid="word!Word.ContentControl#fields:member"
-  alttext="Word.ContentControl.fields" />
+  - <xref
+  href="word!Word.ContentControl#fields:member">Word.ContentControl.fields</xref>
 
-  - <xref uid="word!Word.Document#fields:member" alttext="Word.Document.fields"
-  />
+  - <xref href="word!Word.Document#fields:member">Word.Document.fields</xref>
 
-  - <xref uid="word!Word.Paragraph#fields:member"
-  alttext="Word.Paragraph.fields" />
+  - <xref href="word!Word.Paragraph#fields:member">Word.Paragraph.fields</xref>
 
-  - <xref uid="word!Word.Range#fields:member" alttext="Word.Range.fields" />
+  - <xref href="word!Word.Range#fields:member">Word.Range.fields</xref>
 
-  - <xref uid="word!Word.Selection#fields:member"
-  alttext="Word.Selection.fields" />
+  - <xref href="word!Word.Selection#fields:member">Word.Selection.fields</xref>
 
-  - <xref uid="word!Word.Table#fields:member" alttext="Word.Table.fields" />
+  - <xref href="word!Word.Table#fields:member">Word.Table.fields</xref>
 
-  - <xref uid="word!Word.TableRow#fields:member" alttext="Word.TableRow.fields"
-  />
+  - <xref href="word!Word.TableRow#fields:member">Word.TableRow.fields</xref>
 
   #### Examples
 

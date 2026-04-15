@@ -12,15 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#verticalAlignment:member"
-  alttext="Excel.Interfaces.TextFrameData.verticalAlignment" />
+  - <xref
+  href="excel!Excel.Interfaces.TextFrameData#verticalAlignment:member">Excel.Interfaces.TextFrameData.verticalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member"
-  alttext="Excel.Interfaces.TextFrameUpdateData.verticalAlignment" />
+  href="excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member">Excel.Interfaces.TextFrameUpdateData.verticalAlignment</xref>
 
-  - <xref uid="excel!Excel.TextFrame#verticalAlignment:member"
-  alttext="Excel.TextFrame.verticalAlignment" />
+  - <xref
+  href="excel!Excel.TextFrame#verticalAlignment:member">Excel.TextFrame.verticalAlignment</xref>
 
 isPreview: false
 isDeprecated: false

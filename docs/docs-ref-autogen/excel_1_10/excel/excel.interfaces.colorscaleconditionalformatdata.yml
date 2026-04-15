@@ -10,12 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#colorScale:member"
-  alttext="Excel.Interfaces.ConditionalFormatData.colorScale" />
+  - <xref
+  href="excel!Excel.Interfaces.ConditionalFormatData#colorScale:member">Excel.Interfaces.ConditionalFormatData.colorScale</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatData#colorScaleOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatData.colorScaleOrNullObject" />
+  href="excel!Excel.Interfaces.ConditionalFormatData#colorScaleOrNullObject:member">Excel.Interfaces.ConditionalFormatData.colorScaleOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

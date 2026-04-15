@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableConvertToTextOptions#separator:member"
-  alttext="Word.TableConvertToTextOptions.separator" />
+  - <xref
+  href="word!Word.TableConvertToTextOptions#separator:member">Word.TableConvertToTextOptions.separator</xref>
 
 isPreview: false
 isDeprecated: false

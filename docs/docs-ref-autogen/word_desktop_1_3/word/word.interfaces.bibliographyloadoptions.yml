@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ApplicationLoadOptions#bibliography:member"
-  alttext="Word.Interfaces.ApplicationLoadOptions.bibliography" />
+  - <xref
+  href="word!Word.Interfaces.ApplicationLoadOptions#bibliography:member">Word.Interfaces.ApplicationLoadOptions.bibliography</xref>
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#bibliography:member"
-  alttext="Word.Interfaces.DocumentLoadOptions.bibliography" />
+  - <xref
+  href="word!Word.Interfaces.DocumentLoadOptions#bibliography:member">Word.Interfaces.DocumentLoadOptions.bibliography</xref>
 
 isPreview: false
 isDeprecated: false

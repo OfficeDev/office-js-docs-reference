@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member"
-  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionData.items" />
+  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member">Excel.Interfaces.ConditionalRangeBorderCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member">Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ConditionalRangeFormatData#borders:member"
-  alttext="Excel.Interfaces.ConditionalRangeFormatData.borders" />
+  - <xref
+  href="excel!Excel.Interfaces.ConditionalRangeFormatData#borders:member">Excel.Interfaces.ConditionalRangeFormatData.borders</xref>
 
 isPreview: false
 isDeprecated: false

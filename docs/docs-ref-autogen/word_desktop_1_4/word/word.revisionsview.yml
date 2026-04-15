@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RevisionsFilterData#view:member"
-  alttext="Word.Interfaces.RevisionsFilterData.view" />
+  - <xref
+  href="word!Word.Interfaces.RevisionsFilterData#view:member">Word.Interfaces.RevisionsFilterData.view</xref>
 
-  - <xref uid="word!Word.Interfaces.RevisionsFilterUpdateData#view:member"
-  alttext="Word.Interfaces.RevisionsFilterUpdateData.view" />
+  - <xref
+  href="word!Word.Interfaces.RevisionsFilterUpdateData#view:member">Word.Interfaces.RevisionsFilterUpdateData.view</xref>
 
-  - <xref uid="word!Word.RevisionsFilter#view:member"
-  alttext="Word.RevisionsFilter.view" />
+  - <xref
+  href="word!Word.RevisionsFilter#view:member">Word.RevisionsFilter.view</xref>
 
 isPreview: false
 isDeprecated: false

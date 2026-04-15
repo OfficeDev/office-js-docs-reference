@@ -8,8 +8,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!OfficeExtension.RunOptions#session:member"
-  alttext="OfficeExtension.RunOptions.session" />
+  - <xref
+  href="office!OfficeExtension.RunOptions#session:member">OfficeExtension.RunOptions.session</xref>
 
 isPreview: false
 isDeprecated: false

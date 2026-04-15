@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#shapes:member"
-  alttext="Excel.Worksheet.shapes" />
+  - <xref
+  href="excel!Excel.Worksheet#shapes:member">Excel.Worksheet.shapes</xref>
 
 isPreview: false
 isDeprecated: false

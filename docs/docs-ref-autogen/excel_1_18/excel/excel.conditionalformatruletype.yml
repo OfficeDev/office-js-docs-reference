@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalDataBarRule#type:member"
-  alttext="Excel.ConditionalDataBarRule.type" />
+  - <xref
+  href="excel!Excel.ConditionalDataBarRule#type:member">Excel.ConditionalDataBarRule.type</xref>
 
 isPreview: false
 isDeprecated: false

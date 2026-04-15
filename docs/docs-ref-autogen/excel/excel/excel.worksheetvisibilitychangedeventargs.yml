@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onVisibilityChanged:member"
-  alttext="Excel.Worksheet.onVisibilityChanged" />
+  - <xref
+  href="excel!Excel.Worksheet#onVisibilityChanged:member">Excel.Worksheet.onVisibilityChanged</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onVisibilityChanged:member"
-  alttext="Excel.WorksheetCollection.onVisibilityChanged" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onVisibilityChanged:member">Excel.WorksheetCollection.onVisibilityChanged</xref>
 
 isPreview: false
 isDeprecated: false

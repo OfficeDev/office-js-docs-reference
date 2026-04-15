@@ -15,15 +15,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member"
-  alttext="PowerPoint.Interfaces.ShapeLineFormatData.style" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member">PowerPoint.Interfaces.ShapeLineFormatData.style</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member"
-  alttext="PowerPoint.Interfaces.ShapeLineFormatUpdateData.style" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member">PowerPoint.Interfaces.ShapeLineFormatUpdateData.style</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#style:member"
-  alttext="PowerPoint.ShapeLineFormat.style" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeLineFormat#style:member">PowerPoint.ShapeLineFormat.style</xref>
 
   #### Examples
 

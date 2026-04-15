@@ -13,14 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentSection:member"
-  alttext="Word.Body.parentSection" />
+  - <xref
+  href="word!Word.Body#parentSection:member">Word.Body.parentSection</xref>
 
-  - <xref uid="word!Word.Body#parentSectionOrNullObject:member"
-  alttext="Word.Body.parentSectionOrNullObject" />
+  - <xref
+  href="word!Word.Body#parentSectionOrNullObject:member">Word.Body.parentSectionOrNullObject</xref>
 
-  - <xref uid="word!Word.SectionCollection#items:member"
-  alttext="Word.SectionCollection.items" />
+  - <xref
+  href="word!Word.SectionCollection#items:member">Word.SectionCollection.items</xref>
 
   #### Examples
 

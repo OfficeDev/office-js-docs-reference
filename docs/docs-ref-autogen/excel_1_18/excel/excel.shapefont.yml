@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TextRange#font:member" alttext="Excel.TextRange.font"
-  />
+  - <xref href="excel!Excel.TextRange#font:member">Excel.TextRange.font</xref>
 
 isPreview: false
 isDeprecated: false

@@ -18,8 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RequestContext#workbook:member"
-  alttext="Excel.RequestContext.workbook" />
+  - <xref
+  href="excel!Excel.RequestContext#workbook:member">Excel.RequestContext.workbook</xref>
 
   #### Examples
 

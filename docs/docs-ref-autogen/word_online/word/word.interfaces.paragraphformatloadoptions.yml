@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member"
-  alttext="Word.Interfaces.StyleCollectionLoadOptions.paragraphFormat" />
+  href="word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member">Word.Interfaces.StyleCollectionLoadOptions.paragraphFormat</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#paragraphFormat:member"
-  alttext="Word.Interfaces.StyleLoadOptions.paragraphFormat" />
+  - <xref
+  href="word!Word.Interfaces.StyleLoadOptions#paragraphFormat:member">Word.Interfaces.StyleLoadOptions.paragraphFormat</xref>
 
 isPreview: false
 isDeprecated: false

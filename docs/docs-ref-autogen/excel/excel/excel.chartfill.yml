@@ -12,38 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAreaFormat#fill:member"
-  alttext="Excel.ChartAreaFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartAreaFormat#fill:member">Excel.ChartAreaFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartAxisFormat#fill:member"
-  alttext="Excel.ChartAxisFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartAxisFormat#fill:member">Excel.ChartAxisFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartAxisTitleFormat#fill:member"
-  alttext="Excel.ChartAxisTitleFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartAxisTitleFormat#fill:member">Excel.ChartAxisTitleFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartDataLabelFormat#fill:member"
-  alttext="Excel.ChartDataLabelFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartDataLabelFormat#fill:member">Excel.ChartDataLabelFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartDataTableFormat#fill:member"
-  alttext="Excel.ChartDataTableFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartDataTableFormat#fill:member">Excel.ChartDataTableFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartLegendFormat#fill:member"
-  alttext="Excel.ChartLegendFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartLegendFormat#fill:member">Excel.ChartLegendFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartPlotAreaFormat#fill:member"
-  alttext="Excel.ChartPlotAreaFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartPlotAreaFormat#fill:member">Excel.ChartPlotAreaFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartPointFormat#fill:member"
-  alttext="Excel.ChartPointFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartPointFormat#fill:member">Excel.ChartPointFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartSeriesFormat#fill:member"
-  alttext="Excel.ChartSeriesFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartSeriesFormat#fill:member">Excel.ChartSeriesFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartTitleFormat#fill:member"
-  alttext="Excel.ChartTitleFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartTitleFormat#fill:member">Excel.ChartTitleFormat.fill</xref>
 
-  - <xref uid="excel!Excel.ChartTrendlineLabelFormat#fill:member"
-  alttext="Excel.ChartTrendlineLabelFormat.fill" />
+  - <xref
+  href="excel!Excel.ChartTrendlineLabelFormat#fill:member">Excel.ChartTrendlineLabelFormat.fill</xref>
 
 isPreview: false
 isDeprecated: false

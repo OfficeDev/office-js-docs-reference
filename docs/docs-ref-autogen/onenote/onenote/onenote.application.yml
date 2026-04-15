@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.RequestContext#application:member"
-  alttext="OneNote.RequestContext.application" />
+  - <xref
+  href="onenote!OneNote.RequestContext#application:member">OneNote.RequestContext.application</xref>
 
 isPreview: false
 isDeprecated: false

@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onSelectionChanged:member"
-  alttext="Visio.Document.onSelectionChanged" />
+  - <xref
+  href="visio!Visio.Document#onSelectionChanged:member">Visio.Document.onSelectionChanged</xref>
 
   #### Examples
 

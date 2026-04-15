@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotValueFilter#selectionType:member"
-  alttext="Excel.PivotValueFilter.selectionType" />
+  - <xref
+  href="excel!Excel.PivotValueFilter#selectionType:member">Excel.PivotValueFilter.selectionType</xref>
 
 isPreview: false
 isDeprecated: false

@@ -15,18 +15,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member"
-  alttext="OneNote.Interfaces.PageContentCollectionLoadOptions.image" />
-
-  - <xref uid="onenote!OneNote.Interfaces.PageContentLoadOptions#image:member"
-  alttext="OneNote.Interfaces.PageContentLoadOptions.image" />
+  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member">OneNote.Interfaces.PageContentCollectionLoadOptions.image</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#image:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.image" />
+  href="onenote!OneNote.Interfaces.PageContentLoadOptions#image:member">OneNote.Interfaces.PageContentLoadOptions.image</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#image:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.image" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#image:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.image</xref>
+
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#image:member">OneNote.Interfaces.ParagraphLoadOptions.image</xref>
 
 isPreview: false
 isDeprecated: false

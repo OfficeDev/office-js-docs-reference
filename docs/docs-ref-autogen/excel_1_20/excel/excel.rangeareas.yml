@@ -17,8 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeAreasCollection#items:member"
-  alttext="Excel.RangeAreasCollection.items" />
+  - <xref
+  href="excel!Excel.RangeAreasCollection#items:member">Excel.RangeAreasCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

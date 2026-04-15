@@ -14,11 +14,10 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member"
-  alttext="PowerPoint.Interfaces.ShapeLoadOptions.fill" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member">PowerPoint.Interfaces.ShapeLoadOptions.fill</xref>
 
 isPreview: false
 isDeprecated: false

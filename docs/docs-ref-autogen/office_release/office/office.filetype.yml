@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#getFileAsync:member(1)"
-  alttext="Office.Document.getFileAsync" />
+  - <xref
+  href="office!Office.Document#getFileAsync:member(1)">Office.Document.getFileAsync</xref>
 
   #### Examples
 

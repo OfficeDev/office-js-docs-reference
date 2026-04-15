@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#linkStyle:member"
-  alttext="Word.Interfaces.StyleCollectionLoadOptions.linkStyle" />
+  - <xref
+  href="word!Word.Interfaces.StyleCollectionLoadOptions#linkStyle:member">Word.Interfaces.StyleCollectionLoadOptions.linkStyle</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#linkStyle:member"
-  alttext="Word.Interfaces.StyleLoadOptions.linkStyle" />
+  - <xref
+  href="word!Word.Interfaces.StyleLoadOptions#linkStyle:member">Word.Interfaces.StyleLoadOptions.linkStyle</xref>
 
 isPreview: false
 isDeprecated: false

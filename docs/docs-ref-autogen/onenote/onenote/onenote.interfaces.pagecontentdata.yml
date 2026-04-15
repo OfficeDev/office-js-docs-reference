@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionData#items:member"
-  alttext="OneNote.Interfaces.PageContentCollectionData.items" />
+  href="onenote!OneNote.Interfaces.PageContentCollectionData#items:member">OneNote.Interfaces.PageContentCollectionData.items</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.PageContentCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member">OneNote.Interfaces.PageContentCollectionUpdateData.items</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.PageData#contents:member"
-  alttext="OneNote.Interfaces.PageData.contents" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageData#contents:member">OneNote.Interfaces.PageData.contents</xref>
 
 isPreview: false
 isDeprecated: false

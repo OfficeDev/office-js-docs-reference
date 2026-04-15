@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onDeactivated:member"
-  alttext="Excel.Worksheet.onDeactivated" />
+  - <xref
+  href="excel!Excel.Worksheet#onDeactivated:member">Excel.Worksheet.onDeactivated</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onDeactivated:member"
-  alttext="Excel.WorksheetCollection.onDeactivated" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onDeactivated:member">Excel.WorksheetCollection.onDeactivated</xref>
 
 isPreview: false
 isDeprecated: false

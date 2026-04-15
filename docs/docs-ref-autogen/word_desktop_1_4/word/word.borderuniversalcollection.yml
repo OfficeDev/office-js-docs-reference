@@ -14,29 +14,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ConditionalStyle#borders:member"
-  alttext="Word.ConditionalStyle.borders" />
+  - <xref
+  href="word!Word.ConditionalStyle#borders:member">Word.ConditionalStyle.borders</xref>
 
-  - <xref uid="word!Word.Font#borders:member" alttext="Word.Font.borders" />
+  - <xref href="word!Word.Font#borders:member">Word.Font.borders</xref>
 
-  - <xref uid="word!Word.Frame#borders:member" alttext="Word.Frame.borders" />
+  - <xref href="word!Word.Frame#borders:member">Word.Frame.borders</xref>
 
-  - <xref uid="word!Word.Paragraph#borders:member"
-  alttext="Word.Paragraph.borders" />
+  - <xref
+  href="word!Word.Paragraph#borders:member">Word.Paragraph.borders</xref>
 
-  - <xref uid="word!Word.Range#borders:member" alttext="Word.Range.borders" />
+  - <xref href="word!Word.Range#borders:member">Word.Range.borders</xref>
 
-  - <xref uid="word!Word.Section#borders:member" alttext="Word.Section.borders"
-  />
+  - <xref href="word!Word.Section#borders:member">Word.Section.borders</xref>
 
-  - <xref uid="word!Word.Selection#borders:member"
-  alttext="Word.Selection.borders" />
+  - <xref
+  href="word!Word.Selection#borders:member">Word.Selection.borders</xref>
 
-  - <xref uid="word!Word.TableColumn#borders:member"
-  alttext="Word.TableColumn.borders" />
+  - <xref
+  href="word!Word.TableColumn#borders:member">Word.TableColumn.borders</xref>
 
-  - <xref uid="word!Word.TableStyle#borders:member"
-  alttext="Word.TableStyle.borders" />
+  - <xref
+  href="word!Word.TableStyle#borders:member">Word.TableStyle.borders</xref>
 
 isPreview: false
 isDeprecated: false

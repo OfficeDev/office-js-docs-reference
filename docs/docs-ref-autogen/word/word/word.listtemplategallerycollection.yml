@@ -18,8 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#listTemplateGalleries:member"
-  alttext="Word.Application.listTemplateGalleries" />
+  - <xref
+  href="word!Word.Application#listTemplateGalleries:member">Word.Application.listTemplateGalleries</xref>
 
 isPreview: false
 isDeprecated: false

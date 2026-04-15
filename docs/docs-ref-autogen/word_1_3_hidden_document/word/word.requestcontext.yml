@@ -15,89 +15,85 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#context:member"
-  alttext="Word.Application.context" />
+  - <xref
+  href="word!Word.Application#context:member">Word.Application.context</xref>
 
-  - <xref uid="word!Word.Body#context:member" alttext="Word.Body.context" />
+  - <xref href="word!Word.Body#context:member">Word.Body.context</xref>
 
-  - <xref uid="word!Word.ContentControl#context:member"
-  alttext="Word.ContentControl.context" />
+  - <xref
+  href="word!Word.ContentControl#context:member">Word.ContentControl.context</xref>
 
-  - <xref uid="word!Word.ContentControlCollection#context:member"
-  alttext="Word.ContentControlCollection.context" />
+  - <xref
+  href="word!Word.ContentControlCollection#context:member">Word.ContentControlCollection.context</xref>
 
-  - <xref uid="word!Word.CustomProperty#context:member"
-  alttext="Word.CustomProperty.context" />
+  - <xref
+  href="word!Word.CustomProperty#context:member">Word.CustomProperty.context</xref>
 
-  - <xref uid="word!Word.CustomPropertyCollection#context:member"
-  alttext="Word.CustomPropertyCollection.context" />
+  - <xref
+  href="word!Word.CustomPropertyCollection#context:member">Word.CustomPropertyCollection.context</xref>
 
-  - <xref uid="word!Word.Document#context:member"
-  alttext="Word.Document.context" />
+  - <xref href="word!Word.Document#context:member">Word.Document.context</xref>
 
-  - <xref uid="word!Word.DocumentCreated#context:member"
-  alttext="Word.DocumentCreated.context" />
+  - <xref
+  href="word!Word.DocumentCreated#context:member">Word.DocumentCreated.context</xref>
 
-  - <xref uid="word!Word.DocumentProperties#context:member"
-  alttext="Word.DocumentProperties.context" />
+  - <xref
+  href="word!Word.DocumentProperties#context:member">Word.DocumentProperties.context</xref>
 
-  - <xref uid="word!Word.Font#context:member" alttext="Word.Font.context" />
+  - <xref href="word!Word.Font#context:member">Word.Font.context</xref>
 
-  - <xref uid="word!Word.InlinePicture#context:member"
-  alttext="Word.InlinePicture.context" />
+  - <xref
+  href="word!Word.InlinePicture#context:member">Word.InlinePicture.context</xref>
 
-  - <xref uid="word!Word.InlinePictureCollection#context:member"
-  alttext="Word.InlinePictureCollection.context" />
+  - <xref
+  href="word!Word.InlinePictureCollection#context:member">Word.InlinePictureCollection.context</xref>
 
-  - <xref uid="word!Word.List#context:member" alttext="Word.List.context" />
+  - <xref href="word!Word.List#context:member">Word.List.context</xref>
 
-  - <xref uid="word!Word.ListCollection#context:member"
-  alttext="Word.ListCollection.context" />
+  - <xref
+  href="word!Word.ListCollection#context:member">Word.ListCollection.context</xref>
 
-  - <xref uid="word!Word.ListItem#context:member"
-  alttext="Word.ListItem.context" />
+  - <xref href="word!Word.ListItem#context:member">Word.ListItem.context</xref>
 
-  - <xref uid="word!Word.Paragraph#context:member"
-  alttext="Word.Paragraph.context" />
+  - <xref
+  href="word!Word.Paragraph#context:member">Word.Paragraph.context</xref>
 
-  - <xref uid="word!Word.ParagraphCollection#context:member"
-  alttext="Word.ParagraphCollection.context" />
+  - <xref
+  href="word!Word.ParagraphCollection#context:member">Word.ParagraphCollection.context</xref>
 
-  - <xref uid="word!Word.Range#context:member" alttext="Word.Range.context" />
+  - <xref href="word!Word.Range#context:member">Word.Range.context</xref>
 
-  - <xref uid="word!Word.RangeCollection#context:member"
-  alttext="Word.RangeCollection.context" />
+  - <xref
+  href="word!Word.RangeCollection#context:member">Word.RangeCollection.context</xref>
 
-  - <xref uid="word!Word.SearchOptions#context:member"
-  alttext="Word.SearchOptions.context" />
+  - <xref
+  href="word!Word.SearchOptions#context:member">Word.SearchOptions.context</xref>
 
-  - <xref uid="word!Word.Section#context:member" alttext="Word.Section.context"
-  />
+  - <xref href="word!Word.Section#context:member">Word.Section.context</xref>
 
-  - <xref uid="word!Word.SectionCollection#context:member"
-  alttext="Word.SectionCollection.context" />
+  - <xref
+  href="word!Word.SectionCollection#context:member">Word.SectionCollection.context</xref>
 
-  - <xref uid="word!Word.Style#context:member" alttext="Word.Style.context" />
+  - <xref href="word!Word.Style#context:member">Word.Style.context</xref>
 
-  - <xref uid="word!Word.Table#context:member" alttext="Word.Table.context" />
+  - <xref href="word!Word.Table#context:member">Word.Table.context</xref>
 
-  - <xref uid="word!Word.TableBorder#context:member"
-  alttext="Word.TableBorder.context" />
+  - <xref
+  href="word!Word.TableBorder#context:member">Word.TableBorder.context</xref>
 
-  - <xref uid="word!Word.TableCell#context:member"
-  alttext="Word.TableCell.context" />
+  - <xref
+  href="word!Word.TableCell#context:member">Word.TableCell.context</xref>
 
-  - <xref uid="word!Word.TableCellCollection#context:member"
-  alttext="Word.TableCellCollection.context" />
+  - <xref
+  href="word!Word.TableCellCollection#context:member">Word.TableCellCollection.context</xref>
 
-  - <xref uid="word!Word.TableCollection#context:member"
-  alttext="Word.TableCollection.context" />
+  - <xref
+  href="word!Word.TableCollection#context:member">Word.TableCollection.context</xref>
 
-  - <xref uid="word!Word.TableRow#context:member"
-  alttext="Word.TableRow.context" />
+  - <xref href="word!Word.TableRow#context:member">Word.TableRow.context</xref>
 
-  - <xref uid="word!Word.TableRowCollection#context:member"
-  alttext="Word.TableRowCollection.context" />
+  - <xref
+  href="word!Word.TableRowCollection#context:member">Word.TableRowCollection.context</xref>
 
   #### Examples
 

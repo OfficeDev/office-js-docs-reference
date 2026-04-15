@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BorderUniversal#lineStyle:member"
-  alttext="Word.BorderUniversal.lineStyle" />
+  - <xref
+  href="word!Word.BorderUniversal#lineStyle:member">Word.BorderUniversal.lineStyle</xref>
 
-  - <xref uid="word!Word.Interfaces.BorderUniversalData#lineStyle:member"
-  alttext="Word.Interfaces.BorderUniversalData.lineStyle" />
+  - <xref
+  href="word!Word.Interfaces.BorderUniversalData#lineStyle:member">Word.Interfaces.BorderUniversalData.lineStyle</xref>
 
-  - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#lineStyle:member"
-  alttext="Word.Interfaces.BorderUniversalUpdateData.lineStyle" />
+  - <xref
+  href="word!Word.Interfaces.BorderUniversalUpdateData#lineStyle:member">Word.Interfaces.BorderUniversalUpdateData.lineStyle</xref>
 
 isPreview: false
 isDeprecated: false

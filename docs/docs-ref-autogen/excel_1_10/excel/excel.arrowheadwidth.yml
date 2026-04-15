@@ -13,23 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadWidth:member"
-  alttext="Excel.Interfaces.LineData.beginArrowheadWidth" />
+  - <xref
+  href="excel!Excel.Interfaces.LineData#beginArrowheadWidth:member">Excel.Interfaces.LineData.beginArrowheadWidth</xref>
 
-  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadWidth:member"
-  alttext="Excel.Interfaces.LineData.endArrowheadWidth" />
+  - <xref
+  href="excel!Excel.Interfaces.LineData#endArrowheadWidth:member">Excel.Interfaces.LineData.endArrowheadWidth</xref>
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadWidth:member"
-  alttext="Excel.Interfaces.LineUpdateData.beginArrowheadWidth" />
+  - <xref
+  href="excel!Excel.Interfaces.LineUpdateData#beginArrowheadWidth:member">Excel.Interfaces.LineUpdateData.beginArrowheadWidth</xref>
 
-  - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadWidth:member"
-  alttext="Excel.Interfaces.LineUpdateData.endArrowheadWidth" />
+  - <xref
+  href="excel!Excel.Interfaces.LineUpdateData#endArrowheadWidth:member">Excel.Interfaces.LineUpdateData.endArrowheadWidth</xref>
 
-  - <xref uid="excel!Excel.Line#beginArrowheadWidth:member"
-  alttext="Excel.Line.beginArrowheadWidth" />
+  - <xref
+  href="excel!Excel.Line#beginArrowheadWidth:member">Excel.Line.beginArrowheadWidth</xref>
 
-  - <xref uid="excel!Excel.Line#endArrowheadWidth:member"
-  alttext="Excel.Line.endArrowheadWidth" />
+  - <xref
+  href="excel!Excel.Line#endArrowheadWidth:member">Excel.Line.endArrowheadWidth</xref>
 
   #### Examples
 

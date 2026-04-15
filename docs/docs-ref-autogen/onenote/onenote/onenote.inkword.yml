@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkWordCollection#items:member"
-  alttext="OneNote.InkWordCollection.items" />
+  - <xref
+  href="onenote!OneNote.InkWordCollection#items:member">OneNote.InkWordCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

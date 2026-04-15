@@ -54,27 +54,22 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)"
-  alttext="Office.AppointmentCompose.loadCustomPropertiesAsync" />
+  href="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)">Office.AppointmentCompose.loadCustomPropertiesAsync</xref>
 
   - <xref
-  uid="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)"
-  alttext="Office.AppointmentRead.loadCustomPropertiesAsync" />
+  href="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)">Office.AppointmentRead.loadCustomPropertiesAsync</xref>
 
   - <xref
-  uid="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member(1)"
-  alttext="Office.LoadedMessageCompose.loadCustomPropertiesAsync" />
+  href="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member(1)">Office.LoadedMessageCompose.loadCustomPropertiesAsync</xref>
 
   - <xref
-  uid="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)"
-  alttext="Office.LoadedMessageRead.loadCustomPropertiesAsync" />
+  href="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)">Office.LoadedMessageRead.loadCustomPropertiesAsync</xref>
 
   - <xref
-  uid="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)"
-  alttext="Office.MessageCompose.loadCustomPropertiesAsync" />
+  href="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)">Office.MessageCompose.loadCustomPropertiesAsync</xref>
 
-  - <xref uid="outlook!Office.MessageRead#loadCustomPropertiesAsync:member(1)"
-  alttext="Office.MessageRead.loadCustomPropertiesAsync" />
+  - <xref
+  href="outlook!Office.MessageRead#loadCustomPropertiesAsync:member(1)">Office.MessageRead.loadCustomPropertiesAsync</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#gutterStyle:member"
-  alttext="Word.Interfaces.PageSetupData.gutterStyle" />
+  - <xref
+  href="word!Word.Interfaces.PageSetupData#gutterStyle:member">Word.Interfaces.PageSetupData.gutterStyle</xref>
 
-  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#gutterStyle:member"
-  alttext="Word.Interfaces.PageSetupUpdateData.gutterStyle" />
+  - <xref
+  href="word!Word.Interfaces.PageSetupUpdateData#gutterStyle:member">Word.Interfaces.PageSetupUpdateData.gutterStyle</xref>
 
-  - <xref uid="word!Word.PageSetup#gutterStyle:member"
-  alttext="Word.PageSetup.gutterStyle" />
+  - <xref
+  href="word!Word.PageSetup#gutterStyle:member">Word.PageSetup.gutterStyle</xref>
 
 isPreview: false
 isDeprecated: false

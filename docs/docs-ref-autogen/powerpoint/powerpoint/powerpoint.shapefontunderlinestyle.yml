@@ -14,18 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.FontProperties#underline:member"
-  alttext="PowerPoint.FontProperties.underline" />
-
-  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontData#underline:member"
-  alttext="PowerPoint.Interfaces.ShapeFontData.underline" />
+  - <xref
+  href="powerpoint!PowerPoint.FontProperties#underline:member">PowerPoint.FontProperties.underline</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member"
-  alttext="PowerPoint.Interfaces.ShapeFontUpdateData.underline" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeFontData#underline:member">PowerPoint.Interfaces.ShapeFontData.underline</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeFont#underline:member"
-  alttext="PowerPoint.ShapeFont.underline" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member">PowerPoint.Interfaces.ShapeFontUpdateData.underline</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.ShapeFont#underline:member">PowerPoint.ShapeFont.underline</xref>
 
   #### Examples
 

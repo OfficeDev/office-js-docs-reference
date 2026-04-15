@@ -17,25 +17,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Frame#relativeHorizontalPosition:member"
-  alttext="Word.Frame.relativeHorizontalPosition" />
-
-  - <xref uid="word!Word.Interfaces.FrameData#relativeHorizontalPosition:member"
-  alttext="Word.Interfaces.FrameData.relativeHorizontalPosition" />
+  - <xref
+  href="word!Word.Frame#relativeHorizontalPosition:member">Word.Frame.relativeHorizontalPosition</xref>
 
   - <xref
-  uid="word!Word.Interfaces.FrameUpdateData#relativeHorizontalPosition:member"
-  alttext="Word.Interfaces.FrameUpdateData.relativeHorizontalPosition" />
-
-  - <xref uid="word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member"
-  alttext="Word.Interfaces.ShapeData.relativeHorizontalPosition" />
+  href="word!Word.Interfaces.FrameData#relativeHorizontalPosition:member">Word.Interfaces.FrameData.relativeHorizontalPosition</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member"
-  alttext="Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition" />
+  href="word!Word.Interfaces.FrameUpdateData#relativeHorizontalPosition:member">Word.Interfaces.FrameUpdateData.relativeHorizontalPosition</xref>
 
-  - <xref uid="word!Word.Shape#relativeHorizontalPosition:member"
-  alttext="Word.Shape.relativeHorizontalPosition" />
+  - <xref
+  href="word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member">Word.Interfaces.ShapeData.relativeHorizontalPosition</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member">Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition</xref>
+
+  - <xref
+  href="word!Word.Shape#relativeHorizontalPosition:member">Word.Shape.relativeHorizontalPosition</xref>
 
   #### Examples
 

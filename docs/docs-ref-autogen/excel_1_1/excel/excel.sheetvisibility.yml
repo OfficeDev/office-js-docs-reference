@@ -13,14 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#visibility:member"
-  alttext="Excel.Interfaces.WorksheetData.visibility" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#visibility:member">Excel.Interfaces.WorksheetData.visibility</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member"
-  alttext="Excel.Interfaces.WorksheetUpdateData.visibility" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member">Excel.Interfaces.WorksheetUpdateData.visibility</xref>
 
-  - <xref uid="excel!Excel.Worksheet#visibility:member"
-  alttext="Excel.Worksheet.visibility" />
+  - <xref
+  href="excel!Excel.Worksheet#visibility:member">Excel.Worksheet.visibility</xref>
 
   #### Examples
 

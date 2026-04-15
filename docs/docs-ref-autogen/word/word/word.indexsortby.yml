@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Index#sortBy:member" alttext="Word.Index.sortBy" />
+  - <xref href="word!Word.Index#sortBy:member">Word.Index.sortBy</xref>
 
-  - <xref uid="word!Word.IndexAddOptions#sortBy:member"
-  alttext="Word.IndexAddOptions.sortBy" />
+  - <xref
+  href="word!Word.IndexAddOptions#sortBy:member">Word.IndexAddOptions.sortBy</xref>
 
-  - <xref uid="word!Word.Interfaces.IndexData#sortBy:member"
-  alttext="Word.Interfaces.IndexData.sortBy" />
+  - <xref
+  href="word!Word.Interfaces.IndexData#sortBy:member">Word.Interfaces.IndexData.sortBy</xref>
 
 isPreview: false
 isDeprecated: false

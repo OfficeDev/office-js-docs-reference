@@ -15,25 +15,19 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member"
-  alttext="Excel.Interfaces.CellValueConditionalFormatLoadOptions.format" />
+  href="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member">Excel.Interfaces.CellValueConditionalFormatLoadOptions.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#format:member"
-  alttext="Excel.Interfaces.CustomConditionalFormatLoadOptions.format" />
+  href="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#format:member">Excel.Interfaces.CustomConditionalFormatLoadOptions.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member"
-  alttext="Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format"
-  />
+  href="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member">Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TextConditionalFormatLoadOptions#format:member"
-  alttext="Excel.Interfaces.TextConditionalFormatLoadOptions.format" />
+  href="excel!Excel.Interfaces.TextConditionalFormatLoadOptions#format:member">Excel.Interfaces.TextConditionalFormatLoadOptions.format</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions#format:member"
-  alttext="Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format" />
+  href="excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions#format:member">Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format</xref>
 
 isPreview: false
 isDeprecated: false

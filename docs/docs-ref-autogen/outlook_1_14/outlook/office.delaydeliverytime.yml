@@ -25,8 +25,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MessageCompose#delayDeliveryTime:member"
-  alttext="Office.MessageCompose.delayDeliveryTime" />
+  - <xref
+  href="outlook!Office.MessageCompose#delayDeliveryTime:member">Office.MessageCompose.delayDeliveryTime</xref>
 
 isPreview: false
 isDeprecated: false

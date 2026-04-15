@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#namedSheetViews:member"
-  alttext="Excel.Worksheet.namedSheetViews" />
+  - <xref
+  href="excel!Excel.Worksheet#namedSheetViews:member">Excel.Worksheet.namedSheetViews</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CustomConditionalFormat#rule:member"
-  alttext="Excel.CustomConditionalFormat.rule" />
+  - <xref
+  href="excel!Excel.CustomConditionalFormat#rule:member">Excel.CustomConditionalFormat.rule</xref>
 
 isPreview: false
 isDeprecated: false

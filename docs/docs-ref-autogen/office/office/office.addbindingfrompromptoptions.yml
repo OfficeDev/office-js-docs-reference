@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Bindings#addFromPromptAsync:member(1)"
-  alttext="Office.Bindings.addFromPromptAsync" />
+  - <xref
+  href="office!Office.Bindings#addFromPromptAsync:member(1)">Office.Bindings.addFromPromptAsync</xref>
 
 isPreview: false
 isDeprecated: false

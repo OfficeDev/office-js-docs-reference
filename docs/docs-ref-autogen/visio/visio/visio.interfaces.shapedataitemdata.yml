@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#shapeDataItems:member"
-  alttext="Visio.Interfaces.ShapeData.shapeDataItems" />
-
-  - <xref uid="visio!Visio.Interfaces.ShapeDataItemCollectionData#items:member"
-  alttext="Visio.Interfaces.ShapeDataItemCollectionData.items" />
+  - <xref
+  href="visio!Visio.Interfaces.ShapeData#shapeDataItems:member">Visio.Interfaces.ShapeData.shapeDataItems</xref>
 
   - <xref
-  uid="visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData#items:member"
-  alttext="Visio.Interfaces.ShapeDataItemCollectionUpdateData.items" />
+  href="visio!Visio.Interfaces.ShapeDataItemCollectionData#items:member">Visio.Interfaces.ShapeDataItemCollectionData.items</xref>
+
+  - <xref
+  href="visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData#items:member">Visio.Interfaces.ShapeDataItemCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Binding#onDataChanged:member"
-  alttext="Excel.Binding.onDataChanged" />
+  - <xref
+  href="excel!Excel.Binding#onDataChanged:member">Excel.Binding.onDataChanged</xref>
 
 isPreview: false
 isDeprecated: false

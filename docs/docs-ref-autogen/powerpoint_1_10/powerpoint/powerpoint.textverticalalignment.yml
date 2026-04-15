@@ -25,30 +25,25 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellData#verticalAlignment:member"
-  alttext="PowerPoint.Interfaces.TableCellData.verticalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellData#verticalAlignment:member">PowerPoint.Interfaces.TableCellData.verticalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#verticalAlignment:member"
-  alttext="PowerPoint.Interfaces.TableCellUpdateData.verticalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#verticalAlignment:member">PowerPoint.Interfaces.TableCellUpdateData.verticalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextFrameData#verticalAlignment:member"
-  alttext="PowerPoint.Interfaces.TextFrameData.verticalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.TextFrameData#verticalAlignment:member">PowerPoint.Interfaces.TextFrameData.verticalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#verticalAlignment:member"
-  alttext="PowerPoint.Interfaces.TextFrameUpdateData.verticalAlignment" />
-
-  - <xref uid="powerpoint!PowerPoint.TableCell#verticalAlignment:member"
-  alttext="PowerPoint.TableCell.verticalAlignment" />
+  href="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#verticalAlignment:member">PowerPoint.Interfaces.TextFrameUpdateData.verticalAlignment</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.TableCellProperties#verticalAlignment:member"
-  alttext="PowerPoint.TableCellProperties.verticalAlignment" />
+  href="powerpoint!PowerPoint.TableCell#verticalAlignment:member">PowerPoint.TableCell.verticalAlignment</xref>
 
-  - <xref uid="powerpoint!PowerPoint.TextFrame#verticalAlignment:member"
-  alttext="PowerPoint.TextFrame.verticalAlignment" />
+  - <xref
+  href="powerpoint!PowerPoint.TableCellProperties#verticalAlignment:member">PowerPoint.TableCellProperties.verticalAlignment</xref>
+
+  - <xref
+  href="powerpoint!PowerPoint.TextFrame#verticalAlignment:member">PowerPoint.TextFrame.verticalAlignment</xref>
 
   #### Examples
 

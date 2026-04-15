@@ -11,8 +11,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ApplicationData#iterativeCalculation:member"
-  alttext="Excel.Interfaces.ApplicationData.iterativeCalculation" />
+  href="excel!Excel.Interfaces.ApplicationData#iterativeCalculation:member">Excel.Interfaces.ApplicationData.iterativeCalculation</xref>
 
 isPreview: false
 isDeprecated: false

@@ -8,12 +8,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.PointCollectionData#items:member"
-  alttext="OneNote.Interfaces.PointCollectionData.items" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PointCollectionData#items:member">OneNote.Interfaces.PointCollectionData.items</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PointCollectionUpdateData#items:member"
-  alttext="OneNote.Interfaces.PointCollectionUpdateData.items" />
+  href="onenote!OneNote.Interfaces.PointCollectionUpdateData#items:member">OneNote.Interfaces.PointCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -15,10 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Range#tableColumns:member"
-  alttext="Word.Range.tableColumns" />
+  - <xref
+  href="word!Word.Range#tableColumns:member">Word.Range.tableColumns</xref>
 
-  - <xref uid="word!Word.Table#columns:member" alttext="Word.Table.columns" />
+  - <xref href="word!Word.Table#columns:member">Word.Table.columns</xref>
 
 isPreview: false
 isDeprecated: false

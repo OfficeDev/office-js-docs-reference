@@ -13,21 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSet" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSetOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSetOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSet:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.iconSet" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSet:member">Excel.Interfaces.ConditionalFormatLoadOptions.iconSet</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSetOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.iconSetOrNullObject" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSetOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.iconSetOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

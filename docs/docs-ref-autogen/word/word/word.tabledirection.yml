@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TableStyleData#tableDirection:member"
-  alttext="Word.Interfaces.TableStyleData.tableDirection" />
+  - <xref
+  href="word!Word.Interfaces.TableStyleData#tableDirection:member">Word.Interfaces.TableStyleData.tableDirection</xref>
 
-  - <xref uid="word!Word.Interfaces.TableStyleUpdateData#tableDirection:member"
-  alttext="Word.Interfaces.TableStyleUpdateData.tableDirection" />
+  - <xref
+  href="word!Word.Interfaces.TableStyleUpdateData#tableDirection:member">Word.Interfaces.TableStyleUpdateData.tableDirection</xref>
 
-  - <xref uid="word!Word.TableStyle#tableDirection:member"
-  alttext="Word.TableStyle.tableDirection" />
+  - <xref
+  href="word!Word.TableStyle#tableDirection:member">Word.TableStyle.tableDirection</xref>
 
 isPreview: false
 isDeprecated: false

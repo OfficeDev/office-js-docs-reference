@@ -12,79 +12,77 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member"
-  alttext="Excel.ChartAddedEventArgs.source" />
-
-  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member"
-  alttext="Excel.ChartDeletedEventArgs.source" />
-
-  - <xref uid="excel!Excel.CommentAddedEventArgs#source:member"
-  alttext="Excel.CommentAddedEventArgs.source" />
-
-  - <xref uid="excel!Excel.CommentChangedEventArgs#source:member"
-  alttext="Excel.CommentChangedEventArgs.source" />
-
-  - <xref uid="excel!Excel.CommentDeletedEventArgs#source:member"
-  alttext="Excel.CommentDeletedEventArgs.source" />
-
-  - <xref uid="excel!Excel.LinkedEntityDataDomainAddedEventArgs#source:member"
-  alttext="Excel.LinkedEntityDataDomainAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.ChartAddedEventArgs#source:member">Excel.ChartAddedEventArgs.source</xref>
 
   - <xref
-  uid="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#source:member"
-  alttext="Excel.LinkedEntityDataDomainRefreshCompletedEventArgs.source" />
+  href="excel!Excel.ChartDeletedEventArgs#source:member">Excel.ChartDeletedEventArgs.source</xref>
 
   - <xref
-  uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs#source:member"
-  alttext="Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.source" />
+  href="excel!Excel.CommentAddedEventArgs#source:member">Excel.CommentAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.TableAddedEventArgs#source:member"
-  alttext="Excel.TableAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.CommentChangedEventArgs#source:member">Excel.CommentChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#source:member"
-  alttext="Excel.TableChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.CommentDeletedEventArgs#source:member">Excel.CommentDeletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member"
-  alttext="Excel.TableDeletedEventArgs.source" />
+  - <xref
+  href="excel!Excel.LinkedEntityDataDomainAddedEventArgs#source:member">Excel.LinkedEntityDataDomainAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member"
-  alttext="Excel.WorksheetAddedEventArgs.source" />
+  - <xref
+  href="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#source:member">Excel.LinkedEntityDataDomainRefreshCompletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetCalculationBusyEventArgs#source:member"
-  alttext="Excel.WorksheetCalculationBusyEventArgs.source" />
+  - <xref
+  href="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs#source:member">Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member"
-  alttext="Excel.WorksheetChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableAddedEventArgs#source:member">Excel.TableAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetColumnSortedEventArgs#source:member"
-  alttext="Excel.WorksheetColumnSortedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableChangedEventArgs#source:member">Excel.TableChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member"
-  alttext="Excel.WorksheetDeletedEventArgs.source" />
+  - <xref
+  href="excel!Excel.TableDeletedEventArgs#source:member">Excel.TableDeletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member"
-  alttext="Excel.WorksheetFormatChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetAddedEventArgs#source:member">Excel.WorksheetAddedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetFormulaChangedEventArgs#source:member"
-  alttext="Excel.WorksheetFormulaChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetCalculationBusyEventArgs#source:member">Excel.WorksheetCalculationBusyEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetMovedEventArgs#source:member"
-  alttext="Excel.WorksheetMovedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetChangedEventArgs#source:member">Excel.WorksheetChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetNameChangedEventArgs#source:member"
-  alttext="Excel.WorksheetNameChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetColumnSortedEventArgs#source:member">Excel.WorksheetColumnSortedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetProtectionChangedEventArgs#source:member"
-  alttext="Excel.WorksheetProtectionChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetDeletedEventArgs#source:member">Excel.WorksheetDeletedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member"
-  alttext="Excel.WorksheetRowHiddenChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetFormatChangedEventArgs#source:member">Excel.WorksheetFormatChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetRowSortedEventArgs#source:member"
-  alttext="Excel.WorksheetRowSortedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetFormulaChangedEventArgs#source:member">Excel.WorksheetFormulaChangedEventArgs.source</xref>
 
-  - <xref uid="excel!Excel.WorksheetVisibilityChangedEventArgs#source:member"
-  alttext="Excel.WorksheetVisibilityChangedEventArgs.source" />
+  - <xref
+  href="excel!Excel.WorksheetMovedEventArgs#source:member">Excel.WorksheetMovedEventArgs.source</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetNameChangedEventArgs#source:member">Excel.WorksheetNameChangedEventArgs.source</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetProtectionChangedEventArgs#source:member">Excel.WorksheetProtectionChangedEventArgs.source</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member">Excel.WorksheetRowHiddenChangedEventArgs.source</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetRowSortedEventArgs#source:member">Excel.WorksheetRowSortedEventArgs.source</xref>
+
+  - <xref
+  href="excel!Excel.WorksheetVisibilityChangedEventArgs#source:member">Excel.WorksheetVisibilityChangedEventArgs.source</xref>
 
 isPreview: false
 isDeprecated: false

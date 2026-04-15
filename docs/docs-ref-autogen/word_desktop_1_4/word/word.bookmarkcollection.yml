@@ -14,11 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#bookmarks:member"
-  alttext="Word.Document.bookmarks" />
+  - <xref
+  href="word!Word.Document#bookmarks:member">Word.Document.bookmarks</xref>
 
-  - <xref uid="word!Word.Range#bookmarks:member" alttext="Word.Range.bookmarks"
-  />
+  - <xref href="word!Word.Range#bookmarks:member">Word.Range.bookmarks</xref>
 
 isPreview: false
 isDeprecated: false

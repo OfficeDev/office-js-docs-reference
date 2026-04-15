@@ -11,113 +11,112 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Application#context:member"
-  alttext="OneNote.Application.context" />
+  - <xref
+  href="onenote!OneNote.Application#context:member">OneNote.Application.context</xref>
 
-  - <xref uid="onenote!OneNote.FloatingInk#context:member"
-  alttext="OneNote.FloatingInk.context" />
+  - <xref
+  href="onenote!OneNote.FloatingInk#context:member">OneNote.FloatingInk.context</xref>
 
-  - <xref uid="onenote!OneNote.Image#context:member"
-  alttext="OneNote.Image.context" />
+  - <xref
+  href="onenote!OneNote.Image#context:member">OneNote.Image.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysis#context:member"
-  alttext="OneNote.InkAnalysis.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysis#context:member">OneNote.InkAnalysis.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysisLine#context:member"
-  alttext="OneNote.InkAnalysisLine.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysisLine#context:member">OneNote.InkAnalysisLine.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysisLineCollection#context:member"
-  alttext="OneNote.InkAnalysisLineCollection.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysisLineCollection#context:member">OneNote.InkAnalysisLineCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysisParagraph#context:member"
-  alttext="OneNote.InkAnalysisParagraph.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysisParagraph#context:member">OneNote.InkAnalysisParagraph.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysisParagraphCollection#context:member"
-  alttext="OneNote.InkAnalysisParagraphCollection.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysisParagraphCollection#context:member">OneNote.InkAnalysisParagraphCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysisWord#context:member"
-  alttext="OneNote.InkAnalysisWord.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysisWord#context:member">OneNote.InkAnalysisWord.context</xref>
 
-  - <xref uid="onenote!OneNote.InkAnalysisWordCollection#context:member"
-  alttext="OneNote.InkAnalysisWordCollection.context" />
+  - <xref
+  href="onenote!OneNote.InkAnalysisWordCollection#context:member">OneNote.InkAnalysisWordCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.InkStroke#context:member"
-  alttext="OneNote.InkStroke.context" />
+  - <xref
+  href="onenote!OneNote.InkStroke#context:member">OneNote.InkStroke.context</xref>
 
-  - <xref uid="onenote!OneNote.InkStrokeCollection#context:member"
-  alttext="OneNote.InkStrokeCollection.context" />
+  - <xref
+  href="onenote!OneNote.InkStrokeCollection#context:member">OneNote.InkStrokeCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.InkWord#context:member"
-  alttext="OneNote.InkWord.context" />
+  - <xref
+  href="onenote!OneNote.InkWord#context:member">OneNote.InkWord.context</xref>
 
-  - <xref uid="onenote!OneNote.InkWordCollection#context:member"
-  alttext="OneNote.InkWordCollection.context" />
+  - <xref
+  href="onenote!OneNote.InkWordCollection#context:member">OneNote.InkWordCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.Notebook#context:member"
-  alttext="OneNote.Notebook.context" />
+  - <xref
+  href="onenote!OneNote.Notebook#context:member">OneNote.Notebook.context</xref>
 
-  - <xref uid="onenote!OneNote.NotebookCollection#context:member"
-  alttext="OneNote.NotebookCollection.context" />
+  - <xref
+  href="onenote!OneNote.NotebookCollection#context:member">OneNote.NotebookCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.NoteTag#context:member"
-  alttext="OneNote.NoteTag.context" />
+  - <xref
+  href="onenote!OneNote.NoteTag#context:member">OneNote.NoteTag.context</xref>
 
-  - <xref uid="onenote!OneNote.Outline#context:member"
-  alttext="OneNote.Outline.context" />
+  - <xref
+  href="onenote!OneNote.Outline#context:member">OneNote.Outline.context</xref>
 
-  - <xref uid="onenote!OneNote.Page#context:member"
-  alttext="OneNote.Page.context" />
+  - <xref href="onenote!OneNote.Page#context:member">OneNote.Page.context</xref>
 
-  - <xref uid="onenote!OneNote.PageCollection#context:member"
-  alttext="OneNote.PageCollection.context" />
+  - <xref
+  href="onenote!OneNote.PageCollection#context:member">OneNote.PageCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.PageContent#context:member"
-  alttext="OneNote.PageContent.context" />
+  - <xref
+  href="onenote!OneNote.PageContent#context:member">OneNote.PageContent.context</xref>
 
-  - <xref uid="onenote!OneNote.PageContentCollection#context:member"
-  alttext="OneNote.PageContentCollection.context" />
+  - <xref
+  href="onenote!OneNote.PageContentCollection#context:member">OneNote.PageContentCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.Paragraph#context:member"
-  alttext="OneNote.Paragraph.context" />
+  - <xref
+  href="onenote!OneNote.Paragraph#context:member">OneNote.Paragraph.context</xref>
 
-  - <xref uid="onenote!OneNote.ParagraphCollection#context:member"
-  alttext="OneNote.ParagraphCollection.context" />
+  - <xref
+  href="onenote!OneNote.ParagraphCollection#context:member">OneNote.ParagraphCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.Point#context:member"
-  alttext="OneNote.Point.context" />
+  - <xref
+  href="onenote!OneNote.Point#context:member">OneNote.Point.context</xref>
 
-  - <xref uid="onenote!OneNote.PointCollection#context:member"
-  alttext="OneNote.PointCollection.context" />
+  - <xref
+  href="onenote!OneNote.PointCollection#context:member">OneNote.PointCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.RichText#context:member"
-  alttext="OneNote.RichText.context" />
+  - <xref
+  href="onenote!OneNote.RichText#context:member">OneNote.RichText.context</xref>
 
-  - <xref uid="onenote!OneNote.Section#context:member"
-  alttext="OneNote.Section.context" />
+  - <xref
+  href="onenote!OneNote.Section#context:member">OneNote.Section.context</xref>
 
-  - <xref uid="onenote!OneNote.SectionCollection#context:member"
-  alttext="OneNote.SectionCollection.context" />
+  - <xref
+  href="onenote!OneNote.SectionCollection#context:member">OneNote.SectionCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.SectionGroup#context:member"
-  alttext="OneNote.SectionGroup.context" />
+  - <xref
+  href="onenote!OneNote.SectionGroup#context:member">OneNote.SectionGroup.context</xref>
 
-  - <xref uid="onenote!OneNote.SectionGroupCollection#context:member"
-  alttext="OneNote.SectionGroupCollection.context" />
+  - <xref
+  href="onenote!OneNote.SectionGroupCollection#context:member">OneNote.SectionGroupCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.Table#context:member"
-  alttext="OneNote.Table.context" />
+  - <xref
+  href="onenote!OneNote.Table#context:member">OneNote.Table.context</xref>
 
-  - <xref uid="onenote!OneNote.TableCell#context:member"
-  alttext="OneNote.TableCell.context" />
+  - <xref
+  href="onenote!OneNote.TableCell#context:member">OneNote.TableCell.context</xref>
 
-  - <xref uid="onenote!OneNote.TableCellCollection#context:member"
-  alttext="OneNote.TableCellCollection.context" />
+  - <xref
+  href="onenote!OneNote.TableCellCollection#context:member">OneNote.TableCellCollection.context</xref>
 
-  - <xref uid="onenote!OneNote.TableRow#context:member"
-  alttext="OneNote.TableRow.context" />
+  - <xref
+  href="onenote!OneNote.TableRow#context:member">OneNote.TableRow.context</xref>
 
-  - <xref uid="onenote!OneNote.TableRowCollection#context:member"
-  alttext="OneNote.TableRowCollection.context" />
+  - <xref
+  href="onenote!OneNote.TableRowCollection#context:member">OneNote.TableRowCollection.context</xref>
 
   #### Examples
 

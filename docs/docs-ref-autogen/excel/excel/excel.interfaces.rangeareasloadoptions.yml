@@ -18,11 +18,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#rangeSelection:member"
-  alttext="Excel.Interfaces.WindowCollectionLoadOptions.rangeSelection" />
+  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#rangeSelection:member">Excel.Interfaces.WindowCollectionLoadOptions.rangeSelection</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#rangeSelection:member"
-  alttext="Excel.Interfaces.WindowLoadOptions.rangeSelection" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowLoadOptions#rangeSelection:member">Excel.Interfaces.WindowLoadOptions.rangeSelection</xref>
 
 isPreview: false
 isDeprecated: false

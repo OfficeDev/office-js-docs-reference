@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CustomPropertyCollection#items:member"
-  alttext="Excel.CustomPropertyCollection.items" />
+  - <xref
+  href="excel!Excel.CustomPropertyCollection#items:member">Excel.CustomPropertyCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

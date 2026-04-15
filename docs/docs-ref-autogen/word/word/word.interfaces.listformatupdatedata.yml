@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#listFormat:member"
-  alttext="Word.Interfaces.RangeUpdateData.listFormat" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#listFormat:member">Word.Interfaces.RangeUpdateData.listFormat</xref>
 
 isPreview: false
 isDeprecated: false

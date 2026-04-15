@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#calculationState:member"
-  alttext="Excel.Application.calculationState" />
+  - <xref
+  href="excel!Excel.Application#calculationState:member">Excel.Application.calculationState</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#calculationState:member"
-  alttext="Excel.Interfaces.ApplicationData.calculationState" />
+  - <xref
+  href="excel!Excel.Interfaces.ApplicationData#calculationState:member">Excel.Interfaces.ApplicationData.calculationState</xref>
 
 isPreview: false
 isDeprecated: false

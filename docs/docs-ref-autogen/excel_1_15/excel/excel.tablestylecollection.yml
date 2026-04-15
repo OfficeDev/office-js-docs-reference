@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#tableStyles:member"
-  alttext="Excel.Workbook.tableStyles" />
+  - <xref
+  href="excel!Excel.Workbook#tableStyles:member">Excel.Workbook.tableStyles</xref>
 
 isPreview: false
 isDeprecated: false

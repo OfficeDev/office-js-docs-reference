@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Table#onChanged:member"
-  alttext="Excel.Table.onChanged" />
+  - <xref href="excel!Excel.Table#onChanged:member">Excel.Table.onChanged</xref>
 
-  - <xref uid="excel!Excel.TableCollection#onChanged:member"
-  alttext="Excel.TableCollection.onChanged" />
+  - <xref
+  href="excel!Excel.TableCollection#onChanged:member">Excel.TableCollection.onChanged</xref>
 
 isPreview: false
 isDeprecated: false

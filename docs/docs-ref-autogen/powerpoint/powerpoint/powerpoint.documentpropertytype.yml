@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.CustomProperty#type:member"
-  alttext="PowerPoint.CustomProperty.type" />
+  - <xref
+  href="powerpoint!PowerPoint.CustomProperty#type:member">PowerPoint.CustomProperty.type</xref>
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyData#type:member"
-  alttext="PowerPoint.Interfaces.CustomPropertyData.type" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.CustomPropertyData#type:member">PowerPoint.Interfaces.CustomPropertyData.type</xref>
 
 isPreview: false
 isDeprecated: false

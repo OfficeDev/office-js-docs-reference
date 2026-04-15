@@ -22,8 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#getIsSaveToLocationAllowed:member(1)"
-  alttext="Office.Mailbox.getIsSaveToLocationAllowed" />
+  - <xref
+  href="outlook!Office.Mailbox#getIsSaveToLocationAllowed:member(1)">Office.Mailbox.getIsSaveToLocationAllowed</xref>
 
   #### Examples
 

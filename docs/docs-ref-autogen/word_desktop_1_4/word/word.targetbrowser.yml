@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.WebSettingsData#targetBrowser:member"
-  alttext="Word.Interfaces.WebSettingsData.targetBrowser" />
+  - <xref
+  href="word!Word.Interfaces.WebSettingsData#targetBrowser:member">Word.Interfaces.WebSettingsData.targetBrowser</xref>
 
-  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#targetBrowser:member"
-  alttext="Word.Interfaces.WebSettingsUpdateData.targetBrowser" />
+  - <xref
+  href="word!Word.Interfaces.WebSettingsUpdateData#targetBrowser:member">Word.Interfaces.WebSettingsUpdateData.targetBrowser</xref>
 
-  - <xref uid="word!Word.WebSettings#targetBrowser:member"
-  alttext="Word.WebSettings.targetBrowser" />
+  - <xref
+  href="word!Word.WebSettings#targetBrowser:member">Word.WebSettings.targetBrowser</xref>
 
 isPreview: false
 isDeprecated: false

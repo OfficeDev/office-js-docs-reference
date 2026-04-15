@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.RequestContext#application:member"
-  alttext="Word.RequestContext.application" />
+  - <xref
+  href="word!Word.RequestContext#application:member">Word.RequestContext.application</xref>
 
   #### Examples
 

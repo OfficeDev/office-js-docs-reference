@@ -13,16 +13,13 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetLightingSoftness:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetLightingSoftness" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetLightingSoftness:member">Word.Interfaces.ThreeDimensionalFormatData.presetLightingSoftness</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetLightingSoftness:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLightingSoftness"
-  />
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetLightingSoftness:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLightingSoftness</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#presetLightingSoftness:member"
-  alttext="Word.ThreeDimensionalFormat.presetLightingSoftness" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#presetLightingSoftness:member">Word.ThreeDimensionalFormat.presetLightingSoftness</xref>
 
 isPreview: false
 isDeprecated: false

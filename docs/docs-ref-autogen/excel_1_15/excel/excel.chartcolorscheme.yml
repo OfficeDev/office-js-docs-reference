@@ -12,15 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAreaFormat#colorScheme:member"
-  alttext="Excel.ChartAreaFormat.colorScheme" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member"
-  alttext="Excel.Interfaces.ChartAreaFormatData.colorScheme" />
+  - <xref
+  href="excel!Excel.ChartAreaFormat#colorScheme:member">Excel.ChartAreaFormat.colorScheme</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#colorScheme:member"
-  alttext="Excel.Interfaces.ChartAreaFormatUpdateData.colorScheme" />
+  href="excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member">Excel.Interfaces.ChartAreaFormatData.colorScheme</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartAreaFormatUpdateData#colorScheme:member">Excel.Interfaces.ChartAreaFormatUpdateData.colorScheme</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,15 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TextFrameData#verticalAlignment:member"
-  alttext="Word.Interfaces.TextFrameData.verticalAlignment" />
+  - <xref
+  href="word!Word.Interfaces.TextFrameData#verticalAlignment:member">Word.Interfaces.TextFrameData.verticalAlignment</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TextFrameUpdateData#verticalAlignment:member"
-  alttext="Word.Interfaces.TextFrameUpdateData.verticalAlignment" />
+  href="word!Word.Interfaces.TextFrameUpdateData#verticalAlignment:member">Word.Interfaces.TextFrameUpdateData.verticalAlignment</xref>
 
-  - <xref uid="word!Word.TextFrame#verticalAlignment:member"
-  alttext="Word.TextFrame.verticalAlignment" />
+  - <xref
+  href="word!Word.TextFrame#verticalAlignment:member">Word.TextFrame.verticalAlignment</xref>
 
   #### Examples
 

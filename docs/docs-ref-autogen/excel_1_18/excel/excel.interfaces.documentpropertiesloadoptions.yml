@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#properties:member"
-  alttext="Excel.Interfaces.WorkbookLoadOptions.properties" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookLoadOptions#properties:member">Excel.Interfaces.WorkbookLoadOptions.properties</xref>
 
 isPreview: false
 isDeprecated: false

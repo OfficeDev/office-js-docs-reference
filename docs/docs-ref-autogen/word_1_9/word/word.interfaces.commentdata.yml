@@ -10,14 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CommentCollectionData#items:member"
-  alttext="Word.Interfaces.CommentCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.CommentCollectionData#items:member">Word.Interfaces.CommentCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.CommentCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CommentCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.CommentCollectionUpdateData#items:member">Word.Interfaces.CommentCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.CommentReplyData#parentComment:member"
-  alttext="Word.Interfaces.CommentReplyData.parentComment" />
+  - <xref
+  href="word!Word.Interfaces.CommentReplyData#parentComment:member">Word.Interfaces.CommentReplyData.parentComment</xref>
 
 isPreview: false
 isDeprecated: false

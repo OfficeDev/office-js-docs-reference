@@ -10,27 +10,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BorderUniversalCollectionData#items:member"
-  alttext="Word.Interfaces.BorderUniversalCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.BorderUniversalCollectionData#items:member">Word.Interfaces.BorderUniversalCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.BorderUniversalCollectionUpdateData.items" />
+  href="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member">Word.Interfaces.BorderUniversalCollectionUpdateData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.FontData#borders:member"
-  alttext="Word.Interfaces.FontData.borders" />
+  - <xref
+  href="word!Word.Interfaces.FontData#borders:member">Word.Interfaces.FontData.borders</xref>
 
-  - <xref uid="word!Word.Interfaces.FrameData#borders:member"
-  alttext="Word.Interfaces.FrameData.borders" />
+  - <xref
+  href="word!Word.Interfaces.FrameData#borders:member">Word.Interfaces.FrameData.borders</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#borders:member"
-  alttext="Word.Interfaces.ParagraphData.borders" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphData#borders:member">Word.Interfaces.ParagraphData.borders</xref>
 
-  - <xref uid="word!Word.Interfaces.SectionData#borders:member"
-  alttext="Word.Interfaces.SectionData.borders" />
+  - <xref
+  href="word!Word.Interfaces.SectionData#borders:member">Word.Interfaces.SectionData.borders</xref>
 
-  - <xref uid="word!Word.Interfaces.TableColumnData#borders:member"
-  alttext="Word.Interfaces.TableColumnData.borders" />
+  - <xref
+  href="word!Word.Interfaces.TableColumnData#borders:member">Word.Interfaces.TableColumnData.borders</xref>
 
 isPreview: false
 isDeprecated: false

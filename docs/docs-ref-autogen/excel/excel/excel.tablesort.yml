@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Table#sort:member" alttext="Excel.Table.sort" />
+  - <xref href="excel!Excel.Table#sort:member">Excel.Table.sort</xref>
 
 isPreview: false
 isDeprecated: false

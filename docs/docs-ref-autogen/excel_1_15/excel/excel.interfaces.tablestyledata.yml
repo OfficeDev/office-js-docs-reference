@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableStyleCollectionData#items:member"
-  alttext="Excel.Interfaces.TableStyleCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.TableStyleCollectionData#items:member">Excel.Interfaces.TableStyleCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.TableStyleCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member">Excel.Interfaces.TableStyleCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#tableStyles:member"
-  alttext="Excel.Interfaces.WorkbookData.tableStyles" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#tableStyles:member">Excel.Interfaces.WorkbookData.tableStyles</xref>
 
 isPreview: false
 isDeprecated: false

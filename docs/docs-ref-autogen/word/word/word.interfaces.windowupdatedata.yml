@@ -10,14 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#activeWindow:member"
-  alttext="Word.Interfaces.DocumentUpdateData.activeWindow" />
+  - <xref
+  href="word!Word.Interfaces.DocumentUpdateData#activeWindow:member">Word.Interfaces.DocumentUpdateData.activeWindow</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowUpdateData#next:member"
-  alttext="Word.Interfaces.WindowUpdateData.next" />
+  - <xref
+  href="word!Word.Interfaces.WindowUpdateData#next:member">Word.Interfaces.WindowUpdateData.next</xref>
 
-  - <xref uid="word!Word.Interfaces.WindowUpdateData#previous:member"
-  alttext="Word.Interfaces.WindowUpdateData.previous" />
+  - <xref
+  href="word!Word.Interfaces.WindowUpdateData#previous:member">Word.Interfaces.WindowUpdateData.previous</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageCollectionLoadOptions#parentSection:member"
-  alttext="OneNote.Interfaces.PageCollectionLoadOptions.parentSection" />
+  href="onenote!OneNote.Interfaces.PageCollectionLoadOptions#parentSection:member">OneNote.Interfaces.PageCollectionLoadOptions.parentSection</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.PageLoadOptions#parentSection:member"
-  alttext="OneNote.Interfaces.PageLoadOptions.parentSection" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageLoadOptions#parentSection:member">OneNote.Interfaces.PageLoadOptions.parentSection</xref>
 
 isPreview: false
 isDeprecated: false

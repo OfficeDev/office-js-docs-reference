@@ -10,15 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TimelineStyleCollectionData#items:member"
-  alttext="Excel.Interfaces.TimelineStyleCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.TimelineStyleCollectionData#items:member">Excel.Interfaces.TimelineStyleCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.TimelineStyleCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member">Excel.Interfaces.TimelineStyleCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#timelineStyles:member"
-  alttext="Excel.Interfaces.WorkbookData.timelineStyles" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#timelineStyles:member">Excel.Interfaces.WorkbookData.timelineStyles</xref>
 
 isPreview: false
 isDeprecated: false

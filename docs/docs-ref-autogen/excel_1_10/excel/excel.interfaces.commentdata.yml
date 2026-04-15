@@ -10,17 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.CommentCollectionData#items:member"
-  alttext="Excel.Interfaces.CommentCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.CommentCollectionData#items:member">Excel.Interfaces.CommentCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.CommentCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.CommentCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.CommentCollectionUpdateData#items:member">Excel.Interfaces.CommentCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#comments:member"
-  alttext="Excel.Interfaces.WorkbookData.comments" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#comments:member">Excel.Interfaces.WorkbookData.comments</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#comments:member"
-  alttext="Excel.Interfaces.WorksheetData.comments" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#comments:member">Excel.Interfaces.WorksheetData.comments</xref>
 
 isPreview: false
 isDeprecated: false

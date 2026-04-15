@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member"
-  alttext="Excel.Interfaces.TableColumnCollectionLoadOptions.filter" />
+  href="excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member">Excel.Interfaces.TableColumnCollectionLoadOptions.filter</xref>
 
-  - <xref uid="excel!Excel.Interfaces.TableColumnLoadOptions#filter:member"
-  alttext="Excel.Interfaces.TableColumnLoadOptions.filter" />
+  - <xref
+  href="excel!Excel.Interfaces.TableColumnLoadOptions#filter:member">Excel.Interfaces.TableColumnLoadOptions.filter</xref>
 
 isPreview: false
 isDeprecated: false

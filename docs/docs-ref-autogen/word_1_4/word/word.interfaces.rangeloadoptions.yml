@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldCollectionLoadOptions.result" />
+  - <xref
+  href="word!Word.Interfaces.FieldCollectionLoadOptions#result:member">Word.Interfaces.FieldCollectionLoadOptions.result</xref>
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldLoadOptions.result" />
+  - <xref
+  href="word!Word.Interfaces.FieldLoadOptions#result:member">Word.Interfaces.FieldLoadOptions.result</xref>
 
 isPreview: false
 isDeprecated: false

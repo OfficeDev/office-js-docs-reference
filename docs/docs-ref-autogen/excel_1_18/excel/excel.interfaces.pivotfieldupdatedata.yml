@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#field:member"
-  alttext="Excel.Interfaces.DataPivotHierarchyUpdateData.field" />
+  - <xref
+  href="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#field:member">Excel.Interfaces.DataPivotHierarchyUpdateData.field</xref>
 
 isPreview: false
 isDeprecated: false

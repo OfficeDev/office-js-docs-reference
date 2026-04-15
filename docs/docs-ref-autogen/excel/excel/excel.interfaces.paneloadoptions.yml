@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#activePane:member"
-  alttext="Excel.Interfaces.WindowCollectionLoadOptions.activePane" />
+  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#activePane:member">Excel.Interfaces.WindowCollectionLoadOptions.activePane</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#activePane:member"
-  alttext="Excel.Interfaces.WindowLoadOptions.activePane" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowLoadOptions#activePane:member">Excel.Interfaces.WindowLoadOptions.activePane</xref>
 
 isPreview: false
 isDeprecated: false

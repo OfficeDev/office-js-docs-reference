@@ -13,21 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCell" />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNull:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNull"
-  />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNull:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNull</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.parentTableCell" />
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member">OneNote.Interfaces.ParagraphLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull" />
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member">OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull</xref>
 
 isPreview: false
 isDeprecated: false

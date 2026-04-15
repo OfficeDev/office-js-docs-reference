@@ -15,37 +15,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#endnotes:member" alttext="Word.Body.endnotes" />
+  - <xref href="word!Word.Body#endnotes:member">Word.Body.endnotes</xref>
 
-  - <xref uid="word!Word.Body#footnotes:member" alttext="Word.Body.footnotes" />
+  - <xref href="word!Word.Body#footnotes:member">Word.Body.footnotes</xref>
 
-  - <xref uid="word!Word.ContentControl#endnotes:member"
-  alttext="Word.ContentControl.endnotes" />
+  - <xref
+  href="word!Word.ContentControl#endnotes:member">Word.ContentControl.endnotes</xref>
 
-  - <xref uid="word!Word.ContentControl#footnotes:member"
-  alttext="Word.ContentControl.footnotes" />
+  - <xref
+  href="word!Word.ContentControl#footnotes:member">Word.ContentControl.footnotes</xref>
 
-  - <xref uid="word!Word.Paragraph#endnotes:member"
-  alttext="Word.Paragraph.endnotes" />
+  - <xref
+  href="word!Word.Paragraph#endnotes:member">Word.Paragraph.endnotes</xref>
 
-  - <xref uid="word!Word.Paragraph#footnotes:member"
-  alttext="Word.Paragraph.footnotes" />
+  - <xref
+  href="word!Word.Paragraph#footnotes:member">Word.Paragraph.footnotes</xref>
 
-  - <xref uid="word!Word.Range#endnotes:member" alttext="Word.Range.endnotes" />
+  - <xref href="word!Word.Range#endnotes:member">Word.Range.endnotes</xref>
 
-  - <xref uid="word!Word.Range#footnotes:member" alttext="Word.Range.footnotes"
-  />
+  - <xref href="word!Word.Range#footnotes:member">Word.Range.footnotes</xref>
 
-  - <xref uid="word!Word.Table#endnotes:member" alttext="Word.Table.endnotes" />
+  - <xref href="word!Word.Table#endnotes:member">Word.Table.endnotes</xref>
 
-  - <xref uid="word!Word.Table#footnotes:member" alttext="Word.Table.footnotes"
-  />
+  - <xref href="word!Word.Table#footnotes:member">Word.Table.footnotes</xref>
 
-  - <xref uid="word!Word.TableRow#endnotes:member"
-  alttext="Word.TableRow.endnotes" />
+  - <xref
+  href="word!Word.TableRow#endnotes:member">Word.TableRow.endnotes</xref>
 
-  - <xref uid="word!Word.TableRow#footnotes:member"
-  alttext="Word.TableRow.footnotes" />
+  - <xref
+  href="word!Word.TableRow#footnotes:member">Word.TableRow.footnotes</xref>
 
   #### Examples
 

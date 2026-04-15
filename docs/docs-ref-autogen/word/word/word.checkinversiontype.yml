@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentCheckInWithVersionOptions#versionType:member"
-  alttext="Word.DocumentCheckInWithVersionOptions.versionType" />
+  - <xref
+  href="word!Word.DocumentCheckInWithVersionOptions#versionType:member">Word.DocumentCheckInWithVersionOptions.versionType</xref>
 
 isPreview: false
 isDeprecated: false

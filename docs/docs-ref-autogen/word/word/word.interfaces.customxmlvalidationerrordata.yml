@@ -10,17 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#errors:member"
-  alttext="Word.Interfaces.CustomXmlPartData.errors" />
+  - <xref
+  href="word!Word.Interfaces.CustomXmlPartData#errors:member">Word.Interfaces.CustomXmlPartData.errors</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionData#items:member"
-  alttext="Word.Interfaces.CustomXmlValidationErrorCollectionData.items" />
+  href="word!Word.Interfaces.CustomXmlValidationErrorCollectionData#items:member">Word.Interfaces.CustomXmlValidationErrorCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData.items"
-  />
+  href="word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member">Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

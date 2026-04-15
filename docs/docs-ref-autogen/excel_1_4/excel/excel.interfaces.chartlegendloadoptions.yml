@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#legend:member"
-  alttext="Excel.Interfaces.ChartCollectionLoadOptions.legend" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#legend:member">Excel.Interfaces.ChartCollectionLoadOptions.legend</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#legend:member"
-  alttext="Excel.Interfaces.ChartLoadOptions.legend" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartLoadOptions#legend:member">Excel.Interfaces.ChartLoadOptions.legend</xref>
 
 isPreview: false
 isDeprecated: false

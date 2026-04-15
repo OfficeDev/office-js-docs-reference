@@ -15,14 +15,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#paragraphs:member" alttext="Word.Body.paragraphs"
-  />
+  - <xref href="word!Word.Body#paragraphs:member">Word.Body.paragraphs</xref>
 
-  - <xref uid="word!Word.ContentControl#paragraphs:member"
-  alttext="Word.ContentControl.paragraphs" />
+  - <xref
+  href="word!Word.ContentControl#paragraphs:member">Word.ContentControl.paragraphs</xref>
 
-  - <xref uid="word!Word.Range#paragraphs:member"
-  alttext="Word.Range.paragraphs" />
+  - <xref href="word!Word.Range#paragraphs:member">Word.Range.paragraphs</xref>
 
   #### Examples
 

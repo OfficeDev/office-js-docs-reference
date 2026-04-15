@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.PageContent#image:member"
-  alttext="OneNote.PageContent.image" />
+  - <xref
+  href="onenote!OneNote.PageContent#image:member">OneNote.PageContent.image</xref>
 
-  - <xref uid="onenote!OneNote.Paragraph#image:member"
-  alttext="OneNote.Paragraph.image" />
+  - <xref
+  href="onenote!OneNote.Paragraph#image:member">OneNote.Paragraph.image</xref>
 
 isPreview: false
 isDeprecated: false

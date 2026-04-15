@@ -13,13 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member"
-  alttext="Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation"
-  />
+  href="word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member">Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation</xref>
 
   - <xref
-  uid="word!Word.Interfaces.AnnotationLoadOptions#critiqueAnnotation:member"
-  alttext="Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation" />
+  href="word!Word.Interfaces.AnnotationLoadOptions#critiqueAnnotation:member">Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation</xref>
 
 isPreview: false
 isDeprecated: false

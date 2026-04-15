@@ -14,10 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeFormat#font:member"
-  alttext="Excel.RangeFormat.font" />
+  - <xref
+  href="excel!Excel.RangeFormat#font:member">Excel.RangeFormat.font</xref>
 
-  - <xref uid="excel!Excel.Style#font:member" alttext="Excel.Style.font" />
+  - <xref href="excel!Excel.Style#font:member">Excel.Style.font</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#revisions:member"
-  alttext="Word.Document.revisions" />
+  - <xref
+  href="word!Word.Document#revisions:member">Word.Document.revisions</xref>
 
-  - <xref uid="word!Word.Range#revisions:member" alttext="Word.Range.revisions"
-  />
+  - <xref href="word!Word.Range#revisions:member">Word.Range.revisions</xref>
 
 isPreview: false
 isDeprecated: false

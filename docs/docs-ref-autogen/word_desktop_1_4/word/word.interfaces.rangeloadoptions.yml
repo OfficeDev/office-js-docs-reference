@@ -12,163 +12,149 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.BookmarkCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.BookmarkLoadOptions#range:member"
-  alttext="Word.Interfaces.BookmarkLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.BreakCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member"
-  alttext="Word.Interfaces.BreakLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member">Word.Interfaces.BookmarkCollectionLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range"
-  />
+  href="word!Word.Interfaces.BookmarkLoadOptions#range:member">Word.Interfaces.BookmarkLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.CoauthoringLockCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member"
-  alttext="Word.Interfaces.CoauthoringLockLoadOptions.range" />
+  href="word!Word.Interfaces.BreakCollectionLoadOptions#range:member">Word.Interfaces.BreakCollectionLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member"
-  alttext="Word.Interfaces.CoauthoringUpdateLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.ConflictCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.ConflictLoadOptions#range:member"
-  alttext="Word.Interfaces.ConflictLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
-  alttext="Word.Interfaces.CritiqueAnnotationLoadOptions.range" />
+  href="word!Word.Interfaces.BreakLoadOptions#range:member">Word.Interfaces.BreakLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.DatePickerContentControlLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#content:member"
-  alttext="Word.Interfaces.DocumentLoadOptions.content" />
-
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#nextRange:member"
-  alttext="Word.Interfaces.EditorLoadOptions.nextRange" />
-
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member"
-  alttext="Word.Interfaces.EditorLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldCollectionLoadOptions.result" />
-
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member"
-  alttext="Word.Interfaces.FieldLoadOptions.result" />
-
-  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.FrameCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member"
-  alttext="Word.Interfaces.FrameLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.GroupContentControlLoadOptions.range" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member">Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.HtmlDivisionCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member"
-  alttext="Word.Interfaces.HtmlDivisionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.HyperlinkCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member"
-  alttext="Word.Interfaces.HyperlinkLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.IndexCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.IndexCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member"
-  alttext="Word.Interfaces.IndexLoadOptions.range" />
+  href="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member">Word.Interfaces.CoauthoringLockCollectionLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member"
-  alttext="Word.Interfaces.NoteItemCollectionLoadOptions.reference" />
-
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member"
-  alttext="Word.Interfaces.NoteItemLoadOptions.reference" />
+  href="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member">Word.Interfaces.CoauthoringLockLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.PictureContentControlLoadOptions.range" />
+  href="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member">Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlLoadOptions.range" />
+  href="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member">Word.Interfaces.CoauthoringUpdateLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member"
-  alttext="Word.Interfaces.RepeatingSectionItemLoadOptions.range" />
+  href="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member">Word.Interfaces.ConflictCollectionLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member"
-  alttext="Word.Interfaces.RevisionCollectionLoadOptions.movedRange" />
-
-  - <xref uid="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.RevisionCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#movedRange:member"
-  alttext="Word.Interfaces.RevisionLoadOptions.movedRange" />
-
-  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#range:member"
-  alttext="Word.Interfaces.RevisionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#formattedText:member"
-  alttext="Word.Interfaces.SelectionLoadOptions.formattedText" />
-
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#range:member"
-  alttext="Word.Interfaces.SelectionLoadOptions.range" />
+  href="word!Word.Interfaces.ConflictLoadOptions#range:member">Word.Interfaces.ConflictLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member"
-  alttext="Word.Interfaces.TableOfAuthoritiesLoadOptions.range" />
+  href="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member">Word.Interfaces.CritiqueAnnotationLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.TableOfContentsCollectionLoadOptions.range" />
-
-  - <xref uid="word!Word.Interfaces.TableOfContentsLoadOptions#range:member"
-  alttext="Word.Interfaces.TableOfContentsLoadOptions.range" />
+  href="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member">Word.Interfaces.DatePickerContentControlLoadOptions.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.TableOfFiguresCollectionLoadOptions.range" />
+  href="word!Word.Interfaces.DocumentLoadOptions#content:member">Word.Interfaces.DocumentLoadOptions.content</xref>
 
-  - <xref uid="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member"
-  alttext="Word.Interfaces.TableOfFiguresLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.EditorLoadOptions#nextRange:member">Word.Interfaces.EditorLoadOptions.nextRange</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.TableRowCollectionLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.EditorLoadOptions#range:member">Word.Interfaces.EditorLoadOptions.range</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#range:member"
-  alttext="Word.Interfaces.TableRowLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.FieldCollectionLoadOptions#result:member">Word.Interfaces.FieldCollectionLoadOptions.result</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member"
-  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.FieldLoadOptions#result:member">Word.Interfaces.FieldLoadOptions.result</xref>
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#range:member"
-  alttext="Word.Interfaces.XmlNodeLoadOptions.range" />
+  - <xref
+  href="word!Word.Interfaces.FrameCollectionLoadOptions#range:member">Word.Interfaces.FrameCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FrameLoadOptions#range:member">Word.Interfaces.FrameLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlLoadOptions#range:member">Word.Interfaces.GroupContentControlLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member">Word.Interfaces.HtmlDivisionCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member">Word.Interfaces.HtmlDivisionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member">Word.Interfaces.HyperlinkCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HyperlinkLoadOptions#range:member">Word.Interfaces.HyperlinkLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.IndexCollectionLoadOptions#range:member">Word.Interfaces.IndexCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.IndexLoadOptions#range:member">Word.Interfaces.IndexLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member">Word.Interfaces.NoteItemCollectionLoadOptions.reference</xref>
+
+  - <xref
+  href="word!Word.Interfaces.NoteItemLoadOptions#reference:member">Word.Interfaces.NoteItemLoadOptions.reference</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlLoadOptions#range:member">Word.Interfaces.PictureContentControlLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member">Word.Interfaces.RepeatingSectionContentControlLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member">Word.Interfaces.RepeatingSectionItemLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member">Word.Interfaces.RevisionCollectionLoadOptions.movedRange</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member">Word.Interfaces.RevisionCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RevisionLoadOptions#movedRange:member">Word.Interfaces.RevisionLoadOptions.movedRange</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RevisionLoadOptions#range:member">Word.Interfaces.RevisionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.SelectionLoadOptions#formattedText:member">Word.Interfaces.SelectionLoadOptions.formattedText</xref>
+
+  - <xref
+  href="word!Word.Interfaces.SelectionLoadOptions#range:member">Word.Interfaces.SelectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member">Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member">Word.Interfaces.TableOfAuthoritiesLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member">Word.Interfaces.TableOfContentsCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableOfContentsLoadOptions#range:member">Word.Interfaces.TableOfContentsLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member">Word.Interfaces.TableOfFiguresCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member">Word.Interfaces.TableOfFiguresLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member">Word.Interfaces.TableRowCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableRowLoadOptions#range:member">Word.Interfaces.TableRowLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member">Word.Interfaces.XmlNodeCollectionLoadOptions.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.XmlNodeLoadOptions#range:member">Word.Interfaces.XmlNodeLoadOptions.range</xref>
 
 isPreview: false
 isDeprecated: false

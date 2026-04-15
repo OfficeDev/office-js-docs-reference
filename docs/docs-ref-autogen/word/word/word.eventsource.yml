@@ -15,35 +15,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentEventArgs#source:member"
-  alttext="Word.CommentEventArgs.source" />
+  - <xref
+  href="word!Word.CommentEventArgs#source:member">Word.CommentEventArgs.source</xref>
 
-  - <xref uid="word!Word.ContentControlAddedEventArgs#source:member"
-  alttext="Word.ContentControlAddedEventArgs.source" />
+  - <xref
+  href="word!Word.ContentControlAddedEventArgs#source:member">Word.ContentControlAddedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ContentControlDataChangedEventArgs#source:member"
-  alttext="Word.ContentControlDataChangedEventArgs.source" />
+  - <xref
+  href="word!Word.ContentControlDataChangedEventArgs#source:member">Word.ContentControlDataChangedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ContentControlDeletedEventArgs#source:member"
-  alttext="Word.ContentControlDeletedEventArgs.source" />
+  - <xref
+  href="word!Word.ContentControlDeletedEventArgs#source:member">Word.ContentControlDeletedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ContentControlEnteredEventArgs#source:member"
-  alttext="Word.ContentControlEnteredEventArgs.source" />
+  - <xref
+  href="word!Word.ContentControlEnteredEventArgs#source:member">Word.ContentControlEnteredEventArgs.source</xref>
 
-  - <xref uid="word!Word.ContentControlExitedEventArgs#source:member"
-  alttext="Word.ContentControlExitedEventArgs.source" />
+  - <xref
+  href="word!Word.ContentControlExitedEventArgs#source:member">Word.ContentControlExitedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ContentControlSelectionChangedEventArgs#source:member"
-  alttext="Word.ContentControlSelectionChangedEventArgs.source" />
+  - <xref
+  href="word!Word.ContentControlSelectionChangedEventArgs#source:member">Word.ContentControlSelectionChangedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ParagraphAddedEventArgs#source:member"
-  alttext="Word.ParagraphAddedEventArgs.source" />
+  - <xref
+  href="word!Word.ParagraphAddedEventArgs#source:member">Word.ParagraphAddedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ParagraphChangedEventArgs#source:member"
-  alttext="Word.ParagraphChangedEventArgs.source" />
+  - <xref
+  href="word!Word.ParagraphChangedEventArgs#source:member">Word.ParagraphChangedEventArgs.source</xref>
 
-  - <xref uid="word!Word.ParagraphDeletedEventArgs#source:member"
-  alttext="Word.ParagraphDeletedEventArgs.source" />
+  - <xref
+  href="word!Word.ParagraphDeletedEventArgs#source:member">Word.ParagraphDeletedEventArgs.source</xref>
 
   #### Examples
 

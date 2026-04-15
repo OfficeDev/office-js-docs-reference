@@ -16,11 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableCollection#items:member"
-  alttext="Excel.TableCollection.items" />
+  - <xref
+  href="excel!Excel.TableCollection#items:member">Excel.TableCollection.items</xref>
 
-  - <xref uid="excel!Excel.TableScopedCollection#items:member"
-  alttext="Excel.TableScopedCollection.items" />
+  - <xref
+  href="excel!Excel.TableScopedCollection#items:member">Excel.TableScopedCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

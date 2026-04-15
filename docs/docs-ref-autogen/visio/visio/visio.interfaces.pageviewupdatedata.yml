@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.PageUpdateData#view:member"
-  alttext="Visio.Interfaces.PageUpdateData.view" />
+  - <xref
+  href="visio!Visio.Interfaces.PageUpdateData#view:member">Visio.Interfaces.PageUpdateData.view</xref>
 
 isPreview: false
 isDeprecated: false

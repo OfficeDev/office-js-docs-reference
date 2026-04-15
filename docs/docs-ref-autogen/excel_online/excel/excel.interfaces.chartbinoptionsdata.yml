@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#binOptions:member"
-  alttext="Excel.Interfaces.ChartSeriesData.binOptions" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesData#binOptions:member">Excel.Interfaces.ChartSeriesData.binOptions</xref>
 
 isPreview: false
 isDeprecated: false

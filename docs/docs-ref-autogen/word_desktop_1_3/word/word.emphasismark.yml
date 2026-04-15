@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#emphasisMark:member"
-  alttext="Word.Font.emphasisMark" />
+  - <xref
+  href="word!Word.Font#emphasisMark:member">Word.Font.emphasisMark</xref>
 
-  - <xref uid="word!Word.Interfaces.FontData#emphasisMark:member"
-  alttext="Word.Interfaces.FontData.emphasisMark" />
+  - <xref
+  href="word!Word.Interfaces.FontData#emphasisMark:member">Word.Interfaces.FontData.emphasisMark</xref>
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#emphasisMark:member"
-  alttext="Word.Interfaces.FontUpdateData.emphasisMark" />
+  - <xref
+  href="word!Word.Interfaces.FontUpdateData#emphasisMark:member">Word.Interfaces.FontUpdateData.emphasisMark</xref>
 
 isPreview: false
 isDeprecated: false

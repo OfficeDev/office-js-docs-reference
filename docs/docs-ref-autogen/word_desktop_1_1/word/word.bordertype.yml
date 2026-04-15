@@ -13,36 +13,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Border#type:member" alttext="Word.Border.type" />
-
-  - <xref uid="word!Word.BorderCollection#insideBorderType:member"
-  alttext="Word.BorderCollection.insideBorderType" />
-
-  - <xref uid="word!Word.BorderCollection#outsideBorderType:member"
-  alttext="Word.BorderCollection.outsideBorderType" />
+  - <xref href="word!Word.Border#type:member">Word.Border.type</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderType:member"
-  alttext="Word.Interfaces.BorderCollectionUpdateData.insideBorderType" />
+  href="word!Word.BorderCollection#insideBorderType:member">Word.BorderCollection.insideBorderType</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderType:member"
-  alttext="Word.Interfaces.BorderCollectionUpdateData.outsideBorderType" />
+  href="word!Word.BorderCollection#outsideBorderType:member">Word.BorderCollection.outsideBorderType</xref>
 
-  - <xref uid="word!Word.Interfaces.BorderData#type:member"
-  alttext="Word.Interfaces.BorderData.type" />
+  - <xref
+  href="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderType:member">Word.Interfaces.BorderCollectionUpdateData.insideBorderType</xref>
 
-  - <xref uid="word!Word.Interfaces.BorderUpdateData#type:member"
-  alttext="Word.Interfaces.BorderUpdateData.type" />
+  - <xref
+  href="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderType:member">Word.Interfaces.BorderCollectionUpdateData.outsideBorderType</xref>
 
-  - <xref uid="word!Word.Interfaces.TableBorderData#type:member"
-  alttext="Word.Interfaces.TableBorderData.type" />
+  - <xref
+  href="word!Word.Interfaces.BorderData#type:member">Word.Interfaces.BorderData.type</xref>
 
-  - <xref uid="word!Word.Interfaces.TableBorderUpdateData#type:member"
-  alttext="Word.Interfaces.TableBorderUpdateData.type" />
+  - <xref
+  href="word!Word.Interfaces.BorderUpdateData#type:member">Word.Interfaces.BorderUpdateData.type</xref>
 
-  - <xref uid="word!Word.TableBorder#type:member"
-  alttext="Word.TableBorder.type" />
+  - <xref
+  href="word!Word.Interfaces.TableBorderData#type:member">Word.Interfaces.TableBorderData.type</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableBorderUpdateData#type:member">Word.Interfaces.TableBorderUpdateData.type</xref>
+
+  - <xref href="word!Word.TableBorder#type:member">Word.TableBorder.type</xref>
 
   #### Examples
 

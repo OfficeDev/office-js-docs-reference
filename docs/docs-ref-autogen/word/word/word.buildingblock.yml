@@ -15,23 +15,22 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.BuildingBlockGalleryContentControl#placeholderText:member"
-  alttext="Word.BuildingBlockGalleryContentControl.placeholderText" />
+  href="word!Word.BuildingBlockGalleryContentControl#placeholderText:member">Word.BuildingBlockGalleryContentControl.placeholderText</xref>
 
-  - <xref uid="word!Word.ContentControlPlaceholderOptions#buildingBlock:member"
-  alttext="Word.ContentControlPlaceholderOptions.buildingBlock" />
+  - <xref
+  href="word!Word.ContentControlPlaceholderOptions#buildingBlock:member">Word.ContentControlPlaceholderOptions.buildingBlock</xref>
 
-  - <xref uid="word!Word.DatePickerContentControl#placeholderText:member"
-  alttext="Word.DatePickerContentControl.placeholderText" />
+  - <xref
+  href="word!Word.DatePickerContentControl#placeholderText:member">Word.DatePickerContentControl.placeholderText</xref>
 
-  - <xref uid="word!Word.GroupContentControl#placeholderText:member"
-  alttext="Word.GroupContentControl.placeholderText" />
+  - <xref
+  href="word!Word.GroupContentControl#placeholderText:member">Word.GroupContentControl.placeholderText</xref>
 
-  - <xref uid="word!Word.PictureContentControl#placeholderText:member"
-  alttext="Word.PictureContentControl.placeholderText" />
+  - <xref
+  href="word!Word.PictureContentControl#placeholderText:member">Word.PictureContentControl.placeholderText</xref>
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#placeholderText:member"
-  alttext="Word.RepeatingSectionContentControl.placeholderText" />
+  - <xref
+  href="word!Word.RepeatingSectionContentControl#placeholderText:member">Word.RepeatingSectionContentControl.placeholderText</xref>
 
 isPreview: false
 isDeprecated: false

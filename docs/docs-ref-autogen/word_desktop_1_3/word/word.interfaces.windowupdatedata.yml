@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#activeWindow:member"
-  alttext="Word.Interfaces.DocumentUpdateData.activeWindow" />
+  - <xref
+  href="word!Word.Interfaces.DocumentUpdateData#activeWindow:member">Word.Interfaces.DocumentUpdateData.activeWindow</xref>
 
 isPreview: false
 isDeprecated: false

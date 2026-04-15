@@ -19,8 +19,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.RequestContext#presentation:member"
-  alttext="PowerPoint.RequestContext.presentation" />
+  - <xref
+  href="powerpoint!PowerPoint.RequestContext#presentation:member">PowerPoint.RequestContext.presentation</xref>
 
   #### Examples
 

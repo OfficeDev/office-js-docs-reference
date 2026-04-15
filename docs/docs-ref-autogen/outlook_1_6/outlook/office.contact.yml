@@ -73,21 +73,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member(1)"
-  alttext="Office.AppointmentRead.getEntitiesByType" />
+  - <xref
+  href="outlook!Office.AppointmentRead#getEntitiesByType:member(1)">Office.AppointmentRead.getEntitiesByType</xref>
 
   - <xref
-  uid="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)"
-  alttext="Office.AppointmentRead.getFilteredEntitiesByName" />
+  href="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)">Office.AppointmentRead.getFilteredEntitiesByName</xref>
 
-  - <xref uid="outlook!Office.Entities#contacts:member"
-  alttext="Office.Entities.contacts" />
+  - <xref
+  href="outlook!Office.Entities#contacts:member">Office.Entities.contacts</xref>
 
-  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member(1)"
-  alttext="Office.MessageRead.getEntitiesByType" />
+  - <xref
+  href="outlook!Office.MessageRead#getEntitiesByType:member(1)">Office.MessageRead.getEntitiesByType</xref>
 
-  - <xref uid="outlook!Office.MessageRead#getFilteredEntitiesByName:member(1)"
-  alttext="Office.MessageRead.getFilteredEntitiesByName" />
+  - <xref
+  href="outlook!Office.MessageRead#getFilteredEntitiesByName:member(1)">Office.MessageRead.getFilteredEntitiesByName</xref>
 
   #### Examples
 

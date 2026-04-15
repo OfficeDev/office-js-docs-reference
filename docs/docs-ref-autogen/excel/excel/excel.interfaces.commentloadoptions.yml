@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#comment:member"
-  alttext="Excel.Interfaces.DocumentTaskCollectionLoadOptions.comment" />
+  href="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#comment:member">Excel.Interfaces.DocumentTaskCollectionLoadOptions.comment</xref>
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions#comment:member"
-  alttext="Excel.Interfaces.DocumentTaskLoadOptions.comment" />
+  - <xref
+  href="excel!Excel.Interfaces.DocumentTaskLoadOptions#comment:member">Excel.Interfaces.DocumentTaskLoadOptions.comment</xref>
 
 isPreview: false
 isDeprecated: false

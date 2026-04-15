@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#protection:member"
-  alttext="Excel.Interfaces.WorkbookLoadOptions.protection" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookLoadOptions#protection:member">Excel.Interfaces.WorkbookLoadOptions.protection</xref>
 
 isPreview: false
 isDeprecated: false

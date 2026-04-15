@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#dataLabels:member"
-  alttext="Excel.Interfaces.ChartSeriesUpdateData.dataLabels" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesUpdateData#dataLabels:member">Excel.Interfaces.ChartSeriesUpdateData.dataLabels</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#dataLabels:member"
-  alttext="Excel.Interfaces.ChartUpdateData.dataLabels" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartUpdateData#dataLabels:member">Excel.Interfaces.ChartUpdateData.dataLabels</xref>
 
 isPreview: false
 isDeprecated: false

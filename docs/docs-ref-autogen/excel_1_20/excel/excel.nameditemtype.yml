@@ -13,11 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#type:member"
-  alttext="Excel.Interfaces.NamedItemData.type" />
+  - <xref
+  href="excel!Excel.Interfaces.NamedItemData#type:member">Excel.Interfaces.NamedItemData.type</xref>
 
-  - <xref uid="excel!Excel.NamedItem#type:member" alttext="Excel.NamedItem.type"
-  />
+  - <xref href="excel!Excel.NamedItem#type:member">Excel.NamedItem.type</xref>
 
 isPreview: false
 isDeprecated: false

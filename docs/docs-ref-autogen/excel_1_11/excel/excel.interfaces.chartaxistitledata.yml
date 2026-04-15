@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#title:member"
-  alttext="Excel.Interfaces.ChartAxisData.title" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisData#title:member">Excel.Interfaces.ChartAxisData.title</xref>
 
 isPreview: false
 isDeprecated: false

@@ -8,80 +8,77 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BookmarkData#range:member"
-  alttext="Word.Interfaces.BookmarkData.range" />
-
-  - <xref uid="word!Word.Interfaces.BreakData#range:member"
-  alttext="Word.Interfaces.BreakData.range" />
+  - <xref
+  href="word!Word.Interfaces.BookmarkData#range:member">Word.Interfaces.BookmarkData.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#range:member"
-  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.range" />
-
-  - <xref uid="word!Word.Interfaces.CoauthoringLockData#range:member"
-  alttext="Word.Interfaces.CoauthoringLockData.range" />
-
-  - <xref uid="word!Word.Interfaces.CoauthoringUpdateData#range:member"
-  alttext="Word.Interfaces.CoauthoringUpdateData.range" />
-
-  - <xref uid="word!Word.Interfaces.ConflictData#range:member"
-  alttext="Word.Interfaces.ConflictData.range" />
-
-  - <xref uid="word!Word.Interfaces.DatePickerContentControlData#range:member"
-  alttext="Word.Interfaces.DatePickerContentControlData.range" />
-
-  - <xref uid="word!Word.Interfaces.EditorData#nextRange:member"
-  alttext="Word.Interfaces.EditorData.nextRange" />
-
-  - <xref uid="word!Word.Interfaces.EditorData#range:member"
-  alttext="Word.Interfaces.EditorData.range" />
-
-  - <xref uid="word!Word.Interfaces.FieldData#result:member"
-  alttext="Word.Interfaces.FieldData.result" />
-
-  - <xref uid="word!Word.Interfaces.FrameData#range:member"
-  alttext="Word.Interfaces.FrameData.range" />
-
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#range:member"
-  alttext="Word.Interfaces.GroupContentControlData.range" />
-
-  - <xref uid="word!Word.Interfaces.HyperlinkData#range:member"
-  alttext="Word.Interfaces.HyperlinkData.range" />
-
-  - <xref uid="word!Word.Interfaces.IndexData#range:member"
-  alttext="Word.Interfaces.IndexData.range" />
-
-  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member"
-  alttext="Word.Interfaces.NoteItemData.reference" />
-
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#range:member"
-  alttext="Word.Interfaces.PictureContentControlData.range" />
-
-  - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member"
-  alttext="Word.Interfaces.RangeCollectionData.items" />
-
-  - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.RangeCollectionUpdateData.items" />
-
-  - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member"
-  alttext="Word.Interfaces.RangeScopedCollectionData.items" />
+  href="word!Word.Interfaces.BreakData#range:member">Word.Interfaces.BreakData.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.RangeScopedCollectionUpdateData.items" />
+  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#range:member">Word.Interfaces.BuildingBlockGalleryContentControlData.range</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#range:member"
-  alttext="Word.Interfaces.RepeatingSectionContentControlData.range" />
+  href="word!Word.Interfaces.CoauthoringLockData#range:member">Word.Interfaces.CoauthoringLockData.range</xref>
 
-  - <xref uid="word!Word.Interfaces.RepeatingSectionItemData#range:member"
-  alttext="Word.Interfaces.RepeatingSectionItemData.range" />
+  - <xref
+  href="word!Word.Interfaces.CoauthoringUpdateData#range:member">Word.Interfaces.CoauthoringUpdateData.range</xref>
 
-  - <xref uid="word!Word.Interfaces.RevisionData#movedRange:member"
-  alttext="Word.Interfaces.RevisionData.movedRange" />
+  - <xref
+  href="word!Word.Interfaces.ConflictData#range:member">Word.Interfaces.ConflictData.range</xref>
 
-  - <xref uid="word!Word.Interfaces.RevisionData#range:member"
-  alttext="Word.Interfaces.RevisionData.range" />
+  - <xref
+  href="word!Word.Interfaces.DatePickerContentControlData#range:member">Word.Interfaces.DatePickerContentControlData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.EditorData#nextRange:member">Word.Interfaces.EditorData.nextRange</xref>
+
+  - <xref
+  href="word!Word.Interfaces.EditorData#range:member">Word.Interfaces.EditorData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FieldData#result:member">Word.Interfaces.FieldData.result</xref>
+
+  - <xref
+  href="word!Word.Interfaces.FrameData#range:member">Word.Interfaces.FrameData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.GroupContentControlData#range:member">Word.Interfaces.GroupContentControlData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.HyperlinkData#range:member">Word.Interfaces.HyperlinkData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.IndexData#range:member">Word.Interfaces.IndexData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.NoteItemData#reference:member">Word.Interfaces.NoteItemData.reference</xref>
+
+  - <xref
+  href="word!Word.Interfaces.PictureContentControlData#range:member">Word.Interfaces.PictureContentControlData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeCollectionData#items:member">Word.Interfaces.RangeCollectionData.items</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeCollectionUpdateData#items:member">Word.Interfaces.RangeCollectionUpdateData.items</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeScopedCollectionData#items:member">Word.Interfaces.RangeScopedCollectionData.items</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member">Word.Interfaces.RangeScopedCollectionUpdateData.items</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionContentControlData#range:member">Word.Interfaces.RepeatingSectionContentControlData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RepeatingSectionItemData#range:member">Word.Interfaces.RepeatingSectionItemData.range</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RevisionData#movedRange:member">Word.Interfaces.RevisionData.movedRange</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RevisionData#range:member">Word.Interfaces.RevisionData.range</xref>
 
 isPreview: false
 isDeprecated: false

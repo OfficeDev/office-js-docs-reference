@@ -18,14 +18,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#selection:member"
-  alttext="Word.Interfaces.DocumentLoadOptions.selection" />
+  - <xref
+  href="word!Word.Interfaces.DocumentLoadOptions#selection:member">Word.Interfaces.DocumentLoadOptions.selection</xref>
 
-  - <xref uid="word!Word.Interfaces.PaneCollectionLoadOptions#selection:member"
-  alttext="Word.Interfaces.PaneCollectionLoadOptions.selection" />
+  - <xref
+  href="word!Word.Interfaces.PaneCollectionLoadOptions#selection:member">Word.Interfaces.PaneCollectionLoadOptions.selection</xref>
 
-  - <xref uid="word!Word.Interfaces.PaneLoadOptions#selection:member"
-  alttext="Word.Interfaces.PaneLoadOptions.selection" />
+  - <xref
+  href="word!Word.Interfaces.PaneLoadOptions#selection:member">Word.Interfaces.PaneLoadOptions.selection</xref>
 
 isPreview: false
 isDeprecated: false

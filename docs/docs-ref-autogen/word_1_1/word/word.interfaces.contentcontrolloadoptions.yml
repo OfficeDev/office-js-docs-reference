@@ -17,43 +17,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.BodyLoadOptions.parentContentControl" />
+  - <xref
+  href="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member">Word.Interfaces.BodyLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.parentContentControl" />
+  href="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member">Word.Interfaces.ContentControlLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl"
-  />
+  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.InlinePictureLoadOptions.parentContentControl" />
+  href="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member">Word.Interfaces.InlinePictureLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl"
-  />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.parentContentControl" />
+  href="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member">Word.Interfaces.ParagraphLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentContentControl" />
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member">Word.Interfaces.RangeCollectionLoadOptions.parentContentControl</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member"
-  alttext="Word.Interfaces.RangeLoadOptions.parentContentControl" />
+  href="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member">Word.Interfaces.RangeLoadOptions.parentContentControl</xref>
 
 isPreview: false
 isDeprecated: false

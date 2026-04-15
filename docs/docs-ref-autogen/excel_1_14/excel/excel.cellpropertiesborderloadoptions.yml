@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormatLoadOptions#borders:member"
-  alttext="Excel.CellPropertiesFormatLoadOptions.borders" />
+  - <xref
+  href="excel!Excel.CellPropertiesFormatLoadOptions#borders:member">Excel.CellPropertiesFormatLoadOptions.borders</xref>
 
 isPreview: false
 isDeprecated: false

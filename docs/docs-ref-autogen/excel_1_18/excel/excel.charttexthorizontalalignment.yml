@@ -12,49 +12,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartDataLabel#horizontalAlignment:member"
-  alttext="Excel.ChartDataLabel.horizontalAlignment" />
-
-  - <xref uid="excel!Excel.ChartDataLabels#horizontalAlignment:member"
-  alttext="Excel.ChartDataLabels.horizontalAlignment" />
-
-  - <xref uid="excel!Excel.ChartTitle#horizontalAlignment:member"
-  alttext="Excel.ChartTitle.horizontalAlignment" />
-
-  - <xref uid="excel!Excel.ChartTrendlineLabel#horizontalAlignment:member"
-  alttext="Excel.ChartTrendlineLabel.horizontalAlignment" />
+  - <xref
+  href="excel!Excel.ChartDataLabel#horizontalAlignment:member">Excel.ChartDataLabel.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartDataLabelData.horizontalAlignment" />
+  href="excel!Excel.ChartDataLabels#horizontalAlignment:member">Excel.ChartDataLabels.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartDataLabelsData.horizontalAlignment" />
+  href="excel!Excel.ChartTitle#horizontalAlignment:member">Excel.ChartTitle.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment" />
+  href="excel!Excel.ChartTrendlineLabel#horizontalAlignment:member">Excel.ChartTrendlineLabel.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartDataLabelUpdateData.horizontalAlignment" />
-
-  - <xref uid="excel!Excel.Interfaces.ChartTitleData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartTitleData.horizontalAlignment" />
+  href="excel!Excel.Interfaces.ChartDataLabelData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelData.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment" />
+  href="excel!Excel.Interfaces.ChartDataLabelsData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelsData.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment" />
+  href="excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#horizontalAlignment:member"
-  alttext="Excel.Interfaces.ChartTrendlineLabelUpdateData.horizontalAlignment"
-  />
+  href="excel!Excel.Interfaces.ChartDataLabelUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelUpdateData.horizontalAlignment</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleData#horizontalAlignment:member">Excel.Interfaces.ChartTitleData.horizontalAlignment</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment:member">Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartTrendlineLabelUpdateData.horizontalAlignment</xref>
 
 isPreview: false
 isDeprecated: false

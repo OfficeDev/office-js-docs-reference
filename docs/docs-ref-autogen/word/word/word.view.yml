@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Window#view:member" alttext="Word.Window.view" />
+  - <xref href="word!Word.Window#view:member">Word.Window.view</xref>
 
 isPreview: false
 isDeprecated: false

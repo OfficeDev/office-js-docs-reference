@@ -8,24 +8,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableCollectionData#items:member"
-  alttext="Excel.Interfaces.TableCollectionData.items" />
-
-  - <xref uid="excel!Excel.Interfaces.TableCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.TableCollectionUpdateData.items" />
-
-  - <xref uid="excel!Excel.Interfaces.TableScopedCollectionData#items:member"
-  alttext="Excel.Interfaces.TableScopedCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.TableCollectionData#items:member">Excel.Interfaces.TableCollectionData.items</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.TableScopedCollectionUpdateData.items" />
+  href="excel!Excel.Interfaces.TableCollectionUpdateData#items:member">Excel.Interfaces.TableCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#tables:member"
-  alttext="Excel.Interfaces.WorkbookData.tables" />
+  - <xref
+  href="excel!Excel.Interfaces.TableScopedCollectionData#items:member">Excel.Interfaces.TableScopedCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#tables:member"
-  alttext="Excel.Interfaces.WorksheetData.tables" />
+  - <xref
+  href="excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member">Excel.Interfaces.TableScopedCollectionUpdateData.items</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#tables:member">Excel.Interfaces.WorkbookData.tables</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetData#tables:member">Excel.Interfaces.WorksheetData.tables</xref>
 
 isPreview: false
 isDeprecated: false

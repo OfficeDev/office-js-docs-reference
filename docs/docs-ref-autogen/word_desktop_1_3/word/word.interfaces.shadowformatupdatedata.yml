@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#textShadow:member"
-  alttext="Word.Interfaces.FontUpdateData.textShadow" />
+  - <xref
+  href="word!Word.Interfaces.FontUpdateData#textShadow:member">Word.Interfaces.FontUpdateData.textShadow</xref>
 
 isPreview: false
 isDeprecated: false

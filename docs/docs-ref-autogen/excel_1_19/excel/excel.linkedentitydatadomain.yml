@@ -21,8 +21,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.LinkedEntityDataDomainCollection#items:member"
-  alttext="Excel.LinkedEntityDataDomainCollection.items" />
+  - <xref
+  href="excel!Excel.LinkedEntityDataDomainCollection#items:member">Excel.LinkedEntityDataDomainCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

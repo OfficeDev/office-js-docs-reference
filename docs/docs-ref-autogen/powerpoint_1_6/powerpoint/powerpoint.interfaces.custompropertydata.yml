@@ -11,12 +11,10 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData#items:member"
-  alttext="PowerPoint.Interfaces.CustomPropertyCollectionData.items" />
+  href="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData#items:member">PowerPoint.Interfaces.CustomPropertyCollectionData.items</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData#items:member"
-  alttext="PowerPoint.Interfaces.CustomPropertyCollectionUpdateData.items" />
+  href="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData#items:member">PowerPoint.Interfaces.CustomPropertyCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -8,23 +8,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#areas:member"
-  alttext="Excel.Interfaces.RangeAreasData.areas" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeAreasData#areas:member">Excel.Interfaces.RangeAreasData.areas</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionData#items:member"
-  alttext="Excel.Interfaces.RangeCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeCollectionData#items:member">Excel.Interfaces.RangeCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.RangeCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member">Excel.Interfaces.RangeCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#activeCell:member"
-  alttext="Excel.Interfaces.WindowData.activeCell" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowData#activeCell:member">Excel.Interfaces.WindowData.activeCell</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#visibleRange:member"
-  alttext="Excel.Interfaces.WindowData.visibleRange" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowData#visibleRange:member">Excel.Interfaces.WindowData.visibleRange</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member"
-  alttext="Excel.Interfaces.WorkbookRangeAreasData.ranges" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member">Excel.Interfaces.WorkbookRangeAreasData.ranges</xref>
 
 isPreview: false
 isDeprecated: false

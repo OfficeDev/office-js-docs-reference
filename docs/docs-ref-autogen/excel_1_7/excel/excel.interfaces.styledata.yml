@@ -8,14 +8,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionData#items:member"
-  alttext="Excel.Interfaces.StyleCollectionData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleCollectionData#items:member">Excel.Interfaces.StyleCollectionData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleCollectionUpdateData#items:member"
-  alttext="Excel.Interfaces.StyleCollectionUpdateData.items" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleCollectionUpdateData#items:member">Excel.Interfaces.StyleCollectionUpdateData.items</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#styles:member"
-  alttext="Excel.Interfaces.WorkbookData.styles" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookData#styles:member">Excel.Interfaces.WorkbookData.styles</xref>
 
 isPreview: false
 isDeprecated: false

@@ -18,18 +18,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeCell:member"
-  alttext="Excel.Interfaces.WindowCollectionLoadOptions.activeCell" />
+  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeCell:member">Excel.Interfaces.WindowCollectionLoadOptions.activeCell</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#visibleRange:member"
-  alttext="Excel.Interfaces.WindowCollectionLoadOptions.visibleRange" />
+  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#visibleRange:member">Excel.Interfaces.WindowCollectionLoadOptions.visibleRange</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#activeCell:member"
-  alttext="Excel.Interfaces.WindowLoadOptions.activeCell" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowLoadOptions#activeCell:member">Excel.Interfaces.WindowLoadOptions.activeCell</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#visibleRange:member"
-  alttext="Excel.Interfaces.WindowLoadOptions.visibleRange" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowLoadOptions#visibleRange:member">Excel.Interfaces.WindowLoadOptions.visibleRange</xref>
 
 isPreview: false
 isDeprecated: false

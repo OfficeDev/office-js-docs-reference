@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotLayout#pivotStyle:member"
-  alttext="Excel.PivotLayout.pivotStyle" />
+  - <xref
+  href="excel!Excel.PivotLayout#pivotStyle:member">Excel.PivotLayout.pivotStyle</xref>
 
-  - <xref uid="excel!Excel.PivotTableStyleCollection#items:member"
-  alttext="Excel.PivotTableStyleCollection.items" />
+  - <xref
+  href="excel!Excel.PivotTableStyleCollection#items:member">Excel.PivotTableStyleCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

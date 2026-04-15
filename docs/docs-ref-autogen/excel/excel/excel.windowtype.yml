@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#type:member"
-  alttext="Excel.Interfaces.WindowData.type" />
+  - <xref
+  href="excel!Excel.Interfaces.WindowData#type:member">Excel.Interfaces.WindowData.type</xref>
 
-  - <xref uid="excel!Excel.Window#type:member" alttext="Excel.Window.type" />
+  - <xref href="excel!Excel.Window#type:member">Excel.Window.type</xref>
 
 isPreview: false
 isDeprecated: false

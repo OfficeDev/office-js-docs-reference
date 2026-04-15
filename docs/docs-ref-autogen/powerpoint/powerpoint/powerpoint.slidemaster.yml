@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Slide#slideMaster:member"
-  alttext="PowerPoint.Slide.slideMaster" />
+  - <xref
+  href="powerpoint!PowerPoint.Slide#slideMaster:member">PowerPoint.Slide.slideMaster</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMasterCollection#items:member"
-  alttext="PowerPoint.SlideMasterCollection.items" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMasterCollection#items:member">PowerPoint.SlideMasterCollection.items</xref>
 
   #### Examples
 

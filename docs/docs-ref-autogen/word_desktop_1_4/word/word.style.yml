@@ -13,11 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Style#linkStyle:member" alttext="Word.Style.linkStyle"
-  />
+  - <xref href="word!Word.Style#linkStyle:member">Word.Style.linkStyle</xref>
 
-  - <xref uid="word!Word.StyleCollection#items:member"
-  alttext="Word.StyleCollection.items" />
+  - <xref
+  href="word!Word.StyleCollection#items:member">Word.StyleCollection.items</xref>
 
   #### Examples
 

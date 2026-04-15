@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.XmlNode#attributes:member"
-  alttext="Word.XmlNode.attributes" />
+  - <xref
+  href="word!Word.XmlNode#attributes:member">Word.XmlNode.attributes</xref>
 
-  - <xref uid="word!Word.XmlNode#childNodes:member"
-  alttext="Word.XmlNode.childNodes" />
+  - <xref
+  href="word!Word.XmlNode#childNodes:member">Word.XmlNode.childNodes</xref>
 
 isPreview: false
 isDeprecated: false

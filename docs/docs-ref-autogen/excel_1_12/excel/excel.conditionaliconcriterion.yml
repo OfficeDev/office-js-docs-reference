@@ -14,16 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.IconSetConditionalFormat#criteria:member"
-  alttext="Excel.IconSetConditionalFormat.criteria" />
+  - <xref
+  href="excel!Excel.IconSetConditionalFormat#criteria:member">Excel.IconSetConditionalFormat.criteria</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.IconSetConditionalFormatData#criteria:member"
-  alttext="Excel.Interfaces.IconSetConditionalFormatData.criteria" />
+  href="excel!Excel.Interfaces.IconSetConditionalFormatData#criteria:member">Excel.Interfaces.IconSetConditionalFormatData.criteria</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member"
-  alttext="Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria" />
+  href="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member">Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria</xref>
 
 isPreview: false
 isDeprecated: false

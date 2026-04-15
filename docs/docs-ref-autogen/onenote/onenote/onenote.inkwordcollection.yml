@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Paragraph#inkWords:member"
-  alttext="OneNote.Paragraph.inkWords" />
+  - <xref
+  href="onenote!OneNote.Paragraph#inkWords:member">OneNote.Paragraph.inkWords</xref>
 
 isPreview: false
 isDeprecated: false

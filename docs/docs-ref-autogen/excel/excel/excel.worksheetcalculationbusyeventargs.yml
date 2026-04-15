@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onCalculationBusy:member"
-  alttext="Excel.Worksheet.onCalculationBusy" />
+  - <xref
+  href="excel!Excel.Worksheet#onCalculationBusy:member">Excel.Worksheet.onCalculationBusy</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onCalculationBusy:member"
-  alttext="Excel.WorksheetCollection.onCalculationBusy" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onCalculationBusy:member">Excel.WorksheetCollection.onCalculationBusy</xref>
 
 isPreview: true
 isDeprecated: false

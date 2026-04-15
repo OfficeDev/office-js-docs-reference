@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.VisibilityModeChangedMessage#visibilityMode:member"
-  alttext="Office.VisibilityModeChangedMessage.visibilityMode" />
+  - <xref
+  href="office!Office.VisibilityModeChangedMessage#visibilityMode:member">Office.VisibilityModeChangedMessage.visibilityMode</xref>
 
   #### Examples
 

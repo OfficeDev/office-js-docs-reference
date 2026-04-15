@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#localImage:member"
-  alttext="Excel.Workbook.localImage" />
+  - <xref
+  href="excel!Excel.Workbook#localImage:member">Excel.Workbook.localImage</xref>
 
 isPreview: true
 isDeprecated: false

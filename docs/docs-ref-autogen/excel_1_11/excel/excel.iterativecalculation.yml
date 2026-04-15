@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#iterativeCalculation:member"
-  alttext="Excel.Application.iterativeCalculation" />
+  - <xref
+  href="excel!Excel.Application#iterativeCalculation:member">Excel.Application.iterativeCalculation</xref>
 
 isPreview: false
 isDeprecated: false

@@ -13,17 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Comment#contentType:member"
-  alttext="Excel.Comment.contentType" />
+  - <xref
+  href="excel!Excel.Comment#contentType:member">Excel.Comment.contentType</xref>
 
-  - <xref uid="excel!Excel.CommentReply#contentType:member"
-  alttext="Excel.CommentReply.contentType" />
+  - <xref
+  href="excel!Excel.CommentReply#contentType:member">Excel.CommentReply.contentType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.CommentData#contentType:member"
-  alttext="Excel.Interfaces.CommentData.contentType" />
+  - <xref
+  href="excel!Excel.Interfaces.CommentData#contentType:member">Excel.Interfaces.CommentData.contentType</xref>
 
-  - <xref uid="excel!Excel.Interfaces.CommentReplyData#contentType:member"
-  alttext="Excel.Interfaces.CommentReplyData.contentType" />
+  - <xref
+  href="excel!Excel.Interfaces.CommentReplyData#contentType:member">Excel.Interfaces.CommentReplyData.contentType</xref>
 
   #### Examples
 

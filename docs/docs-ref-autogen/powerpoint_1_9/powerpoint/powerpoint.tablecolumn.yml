@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableColumnCollection#items:member"
-  alttext="PowerPoint.TableColumnCollection.items" />
+  - <xref
+  href="powerpoint!PowerPoint.TableColumnCollection#items:member">PowerPoint.TableColumnCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,7 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Presentation#onSlideSelectionChanged:member"
-  alttext="PowerPoint.Presentation.onSlideSelectionChanged" />
+  href="powerpoint!PowerPoint.Presentation#onSlideSelectionChanged:member">PowerPoint.Presentation.onSlideSelectionChanged</xref>
 
 isPreview: true
 isDeprecated: false

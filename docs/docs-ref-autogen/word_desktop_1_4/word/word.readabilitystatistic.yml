@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ReadabilityStatisticCollection#items:member"
-  alttext="Word.ReadabilityStatisticCollection.items" />
+  - <xref
+  href="word!Word.ReadabilityStatisticCollection#items:member">Word.ReadabilityStatisticCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

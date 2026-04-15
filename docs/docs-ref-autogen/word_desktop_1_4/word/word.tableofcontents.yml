@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableOfContentsCollection#items:member"
-  alttext="Word.TableOfContentsCollection.items" />
+  - <xref
+  href="word!Word.TableOfContentsCollection#items:member">Word.TableOfContentsCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

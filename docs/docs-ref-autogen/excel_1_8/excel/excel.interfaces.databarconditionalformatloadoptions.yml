@@ -13,21 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar" />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject"
-  />
+  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.dataBar" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member">Excel.Interfaces.ConditionalFormatLoadOptions.dataBar</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBarOrNullObject:member"
-  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject" />
+  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBarOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

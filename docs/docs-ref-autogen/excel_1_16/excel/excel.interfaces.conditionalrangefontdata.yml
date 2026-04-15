@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ConditionalRangeFormatData#font:member"
-  alttext="Excel.Interfaces.ConditionalRangeFormatData.font" />
+  - <xref
+  href="excel!Excel.Interfaces.ConditionalRangeFormatData#font:member">Excel.Interfaces.ConditionalRangeFormatData.font</xref>
 
 isPreview: false
 isDeprecated: false

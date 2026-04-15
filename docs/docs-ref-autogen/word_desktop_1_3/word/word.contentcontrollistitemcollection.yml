@@ -17,11 +17,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ComboBoxContentControl#listItems:member"
-  alttext="Word.ComboBoxContentControl.listItems" />
+  - <xref
+  href="word!Word.ComboBoxContentControl#listItems:member">Word.ComboBoxContentControl.listItems</xref>
 
-  - <xref uid="word!Word.DropDownListContentControl#listItems:member"
-  alttext="Word.DropDownListContentControl.listItems" />
+  - <xref
+  href="word!Word.DropDownListContentControl#listItems:member">Word.DropDownListContentControl.listItems</xref>
 
   #### Examples
 

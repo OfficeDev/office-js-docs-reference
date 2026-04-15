@@ -17,35 +17,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member"
-  alttext="Excel.Interfaces.GeometricShapeLoadOptions.shape" />
+  - <xref
+  href="excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member">Excel.Interfaces.GeometricShapeLoadOptions.shape</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member"
-  alttext="Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup" />
-
-  - <xref uid="excel!Excel.Interfaces.ImageLoadOptions#shape:member"
-  alttext="Excel.Interfaces.ImageLoadOptions.shape" />
+  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member"
-  alttext="Excel.Interfaces.LineLoadOptions.beginConnectedShape" />
-
-  - <xref uid="excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member"
-  alttext="Excel.Interfaces.LineLoadOptions.endConnectedShape" />
-
-  - <xref uid="excel!Excel.Interfaces.LineLoadOptions#shape:member"
-  alttext="Excel.Interfaces.LineLoadOptions.shape" />
+  href="excel!Excel.Interfaces.ImageLoadOptions#shape:member">Excel.Interfaces.ImageLoadOptions.shape</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#parentGroup:member"
-  alttext="Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup" />
+  href="excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member">Excel.Interfaces.LineLoadOptions.beginConnectedShape</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member"
-  alttext="Excel.Interfaces.ShapeGroupLoadOptions.shape" />
+  - <xref
+  href="excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member">Excel.Interfaces.LineLoadOptions.endConnectedShape</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member"
-  alttext="Excel.Interfaces.ShapeLoadOptions.parentGroup" />
+  - <xref
+  href="excel!Excel.Interfaces.LineLoadOptions#shape:member">Excel.Interfaces.LineLoadOptions.shape</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#parentGroup:member">Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member">Excel.Interfaces.ShapeGroupLoadOptions.shape</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member">Excel.Interfaces.ShapeLoadOptions.parentGroup</xref>
 
 isPreview: false
 isDeprecated: false

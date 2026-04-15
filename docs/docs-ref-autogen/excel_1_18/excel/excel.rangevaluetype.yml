@@ -12,38 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChangedEventDetail#valueTypeAfter:member"
-  alttext="Excel.ChangedEventDetail.valueTypeAfter" />
+  - <xref
+  href="excel!Excel.ChangedEventDetail#valueTypeAfter:member">Excel.ChangedEventDetail.valueTypeAfter</xref>
 
-  - <xref uid="excel!Excel.ChangedEventDetail#valueTypeBefore:member"
-  alttext="Excel.ChangedEventDetail.valueTypeBefore" />
+  - <xref
+  href="excel!Excel.ChangedEventDetail#valueTypeBefore:member">Excel.ChangedEventDetail.valueTypeBefore</xref>
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemArrayValuesData#types:member"
-  alttext="Excel.Interfaces.NamedItemArrayValuesData.types" />
+  - <xref
+  href="excel!Excel.Interfaces.NamedItemArrayValuesData#types:member">Excel.Interfaces.NamedItemArrayValuesData.types</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#valueTypes:member"
-  alttext="Excel.Interfaces.RangeData.valueTypes" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeData#valueTypes:member">Excel.Interfaces.RangeData.valueTypes</xref>
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#valueTypes:member"
-  alttext="Excel.Interfaces.RangeViewData.valueTypes" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeViewData#valueTypes:member">Excel.Interfaces.RangeViewData.valueTypes</xref>
 
-  - <xref uid="excel!Excel.NamedItemArrayValues#types:member"
-  alttext="Excel.NamedItemArrayValues.types" />
+  - <xref
+  href="excel!Excel.NamedItemArrayValues#types:member">Excel.NamedItemArrayValues.types</xref>
 
-  - <xref uid="excel!Excel.Range#valueTypes:member"
-  alttext="Excel.Range.valueTypes" />
+  - <xref
+  href="excel!Excel.Range#valueTypes:member">Excel.Range.valueTypes</xref>
 
-  - <xref uid="excel!Excel.RangeView#valueTypes:member"
-  alttext="Excel.RangeView.valueTypes" />
+  - <xref
+  href="excel!Excel.RangeView#valueTypes:member">Excel.RangeView.valueTypes</xref>
 
-  - <xref uid="excel!Excel.ReferenceCellValue#basicType:member"
-  alttext="Excel.ReferenceCellValue.basicType" />
+  - <xref
+  href="excel!Excel.ReferenceCellValue#basicType:member">Excel.ReferenceCellValue.basicType</xref>
 
-  - <xref uid="excel!Excel.RootReferenceCellValue#basicType:member"
-  alttext="Excel.RootReferenceCellValue.basicType" />
+  - <xref
+  href="excel!Excel.RootReferenceCellValue#basicType:member">Excel.RootReferenceCellValue.basicType</xref>
 
-  - <xref uid="excel!Excel.ValueTypeNotAvailableCellValue#basicType:member"
-  alttext="Excel.ValueTypeNotAvailableCellValue.basicType" />
+  - <xref
+  href="excel!Excel.ValueTypeNotAvailableCellValue#basicType:member">Excel.ValueTypeNotAvailableCellValue.basicType</xref>
 
 isPreview: false
 isDeprecated: false

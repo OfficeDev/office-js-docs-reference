@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#queries:member"
-  alttext="Excel.Workbook.queries" />
+  - <xref
+  href="excel!Excel.Workbook#queries:member">Excel.Workbook.queries</xref>
 
 isPreview: false
 isDeprecated: false

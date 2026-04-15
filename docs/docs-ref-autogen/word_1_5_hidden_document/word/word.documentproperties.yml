@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#properties:member"
-  alttext="Word.Document.properties" />
+  - <xref
+  href="word!Word.Document#properties:member">Word.Document.properties</xref>
 
-  - <xref uid="word!Word.DocumentCreated#properties:member"
-  alttext="Word.DocumentCreated.properties" />
+  - <xref
+  href="word!Word.DocumentCreated#properties:member">Word.DocumentCreated.properties</xref>
 
   #### Examples
 

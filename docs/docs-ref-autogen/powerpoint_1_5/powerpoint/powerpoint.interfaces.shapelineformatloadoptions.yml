@@ -16,16 +16,13 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member"
-  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.lineFormat" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.lineFormat</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member"
-  alttext="PowerPoint.Interfaces.ShapeLoadOptions.lineFormat" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member">PowerPoint.Interfaces.ShapeLoadOptions.lineFormat</xref>
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#lineFormat:member"
-  alttext="PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.lineFormat" />
+  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#lineFormat:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.lineFormat</xref>
 
 isPreview: false
 isDeprecated: false

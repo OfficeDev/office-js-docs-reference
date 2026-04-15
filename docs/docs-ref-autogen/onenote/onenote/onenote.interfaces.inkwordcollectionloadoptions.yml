@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#inkWords:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.inkWords" />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#inkWords:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.inkWords</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#inkWords:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.inkWords" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#inkWords:member">OneNote.Interfaces.ParagraphLoadOptions.inkWords</xref>
 
 isPreview: false
 isDeprecated: false

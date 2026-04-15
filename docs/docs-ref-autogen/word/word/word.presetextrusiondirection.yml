@@ -15,12 +15,10 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetExtrusionDirection:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetExtrusionDirection"
-  />
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetExtrusionDirection:member">Word.Interfaces.ThreeDimensionalFormatData.presetExtrusionDirection</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#presetExtrusionDirection:member"
-  alttext="Word.ThreeDimensionalFormat.presetExtrusionDirection" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#presetExtrusionDirection:member">Word.ThreeDimensionalFormat.presetExtrusionDirection</xref>
 
 isPreview: false
 isDeprecated: false

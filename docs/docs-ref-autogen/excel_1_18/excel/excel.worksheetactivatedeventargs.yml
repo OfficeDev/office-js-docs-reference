@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onActivated:member"
-  alttext="Excel.Worksheet.onActivated" />
+  - <xref
+  href="excel!Excel.Worksheet#onActivated:member">Excel.Worksheet.onActivated</xref>
 
-  - <xref uid="excel!Excel.WorksheetCollection#onActivated:member"
-  alttext="Excel.WorksheetCollection.onActivated" />
+  - <xref
+  href="excel!Excel.WorksheetCollection#onActivated:member">Excel.WorksheetCollection.onActivated</xref>
 
 isPreview: false
 isDeprecated: false

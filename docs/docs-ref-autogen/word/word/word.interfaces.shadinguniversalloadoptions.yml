@@ -14,61 +14,56 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ConditionalStyleLoadOptions#shading:member"
-  alttext="Word.Interfaces.ConditionalStyleLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.FrameCollectionLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#shading:member"
-  alttext="Word.Interfaces.FrameLoadOptions.shading" />
+  - <xref
+  href="word!Word.Interfaces.ConditionalStyleLoadOptions#shading:member">Word.Interfaces.ConditionalStyleLoadOptions.shading</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#shading:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#shading:member"
-  alttext="Word.Interfaces.RangeLoadOptions.shading" />
+  href="word!Word.Interfaces.FrameCollectionLoadOptions#shading:member">Word.Interfaces.FrameCollectionLoadOptions.shading</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.RangeScopedCollectionLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.SelectionLoadOptions.shading" />
+  href="word!Word.Interfaces.FrameLoadOptions#shading:member">Word.Interfaces.FrameLoadOptions.shading</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableCellCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableCellCollectionLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableCellLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.TableCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableCollectionLoadOptions.shading" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#shading:member">Word.Interfaces.ParagraphCollectionLoadOptions.shading</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableColumnCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableColumnCollectionLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.TableColumnLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableColumnLoadOptions.shading" />
-
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableLoadOptions.shading" />
+  href="word!Word.Interfaces.ParagraphLoadOptions#shading:member">Word.Interfaces.ParagraphLoadOptions.shading</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableRowCollectionLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableRowCollectionLoadOptions.shading" />
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#shading:member">Word.Interfaces.RangeCollectionLoadOptions.shading</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#shading:member"
-  alttext="Word.Interfaces.TableRowLoadOptions.shading" />
+  - <xref
+  href="word!Word.Interfaces.RangeLoadOptions#shading:member">Word.Interfaces.RangeLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.RangeScopedCollectionLoadOptions#shading:member">Word.Interfaces.RangeScopedCollectionLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.SelectionLoadOptions#shading:member">Word.Interfaces.SelectionLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCellCollectionLoadOptions#shading:member">Word.Interfaces.TableCellCollectionLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCellLoadOptions#shading:member">Word.Interfaces.TableCellLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCollectionLoadOptions#shading:member">Word.Interfaces.TableCollectionLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableColumnCollectionLoadOptions#shading:member">Word.Interfaces.TableColumnCollectionLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableColumnLoadOptions#shading:member">Word.Interfaces.TableColumnLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableLoadOptions#shading:member">Word.Interfaces.TableLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableRowCollectionLoadOptions#shading:member">Word.Interfaces.TableRowCollectionLoadOptions.shading</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableRowLoadOptions#shading:member">Word.Interfaces.TableRowLoadOptions.shading</xref>
 
 isPreview: false
 isDeprecated: false

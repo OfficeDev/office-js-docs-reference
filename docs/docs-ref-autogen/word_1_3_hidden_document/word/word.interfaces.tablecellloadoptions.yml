@@ -13,90 +13,64 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject"
-  />
+  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member">Word.Interfaces.ContentControlLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject"
-  />
+  href="word!Word.Interfaces.ContentControlLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell"
-  />
+  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject"
-  />
+  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.InlinePictureLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCell:member">Word.Interfaces.InlinePictureLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject"
-  />
+  href="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject"
-  />
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject" />
+  href="word!Word.Interfaces.ParagraphLoadOptions#parentTableCell:member">Word.Interfaces.ParagraphLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.ParagraphLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject"
-  />
-
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.RangeLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member">Word.Interfaces.RangeCollectionLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject" />
+  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.TableCollectionLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.RangeLoadOptions#parentTableCell:member">Word.Interfaces.RangeLoadOptions.parentTableCell</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject"
-  />
-
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentTableCell:member"
-  alttext="Word.Interfaces.TableLoadOptions.parentTableCell" />
+  href="word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject</xref>
 
   - <xref
-  uid="word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member"
-  alttext="Word.Interfaces.TableLoadOptions.parentTableCellOrNullObject" />
+  href="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCell:member">Word.Interfaces.TableCollectionLoadOptions.parentTableCell</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableLoadOptions#parentTableCell:member">Word.Interfaces.TableLoadOptions.parentTableCell</xref>
+
+  - <xref
+  href="word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.TableLoadOptions.parentTableCellOrNullObject</xref>
 
 isPreview: false
 isDeprecated: false

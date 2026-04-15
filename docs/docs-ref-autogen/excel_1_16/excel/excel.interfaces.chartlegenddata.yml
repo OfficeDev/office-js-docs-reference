@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#legend:member"
-  alttext="Excel.Interfaces.ChartData.legend" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartData#legend:member">Excel.Interfaces.ChartData.legend</xref>
 
 isPreview: false
 isDeprecated: false

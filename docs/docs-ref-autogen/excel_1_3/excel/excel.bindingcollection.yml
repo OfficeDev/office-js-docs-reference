@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#bindings:member"
-  alttext="Excel.Workbook.bindings" />
+  - <xref
+  href="excel!Excel.Workbook#bindings:member">Excel.Workbook.bindings</xref>
 
 isPreview: false
 isDeprecated: false

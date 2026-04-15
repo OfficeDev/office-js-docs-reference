@@ -25,37 +25,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllForm:member(1)"
-  alttext="Office.AppointmentRead.displayReplyAllForm" />
+  - <xref
+  href="outlook!Office.AppointmentRead#displayReplyAllForm:member(1)">Office.AppointmentRead.displayReplyAllForm</xref>
 
   - <xref
-  uid="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(1)"
-  alttext="Office.AppointmentRead.displayReplyAllFormAsync" />
-
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyForm:member(1)"
-  alttext="Office.AppointmentRead.displayReplyForm" />
-
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyFormAsync:member(1)"
-  alttext="Office.AppointmentRead.displayReplyFormAsync" />
+  href="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(1)">Office.AppointmentRead.displayReplyAllFormAsync</xref>
 
   - <xref
-  uid="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(1)"
-  alttext="Office.LoadedMessageRead.displayReplyAllFormAsync" />
+  href="outlook!Office.AppointmentRead#displayReplyForm:member(1)">Office.AppointmentRead.displayReplyForm</xref>
 
-  - <xref uid="outlook!Office.LoadedMessageRead#displayReplyFormAsync:member(1)"
-  alttext="Office.LoadedMessageRead.displayReplyFormAsync" />
+  - <xref
+  href="outlook!Office.AppointmentRead#displayReplyFormAsync:member(1)">Office.AppointmentRead.displayReplyFormAsync</xref>
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllForm:member(1)"
-  alttext="Office.MessageRead.displayReplyAllForm" />
+  - <xref
+  href="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(1)">Office.LoadedMessageRead.displayReplyAllFormAsync</xref>
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllFormAsync:member(1)"
-  alttext="Office.MessageRead.displayReplyAllFormAsync" />
+  - <xref
+  href="outlook!Office.LoadedMessageRead#displayReplyFormAsync:member(1)">Office.LoadedMessageRead.displayReplyFormAsync</xref>
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyForm:member(1)"
-  alttext="Office.MessageRead.displayReplyForm" />
+  - <xref
+  href="outlook!Office.MessageRead#displayReplyAllForm:member(1)">Office.MessageRead.displayReplyAllForm</xref>
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyFormAsync:member(1)"
-  alttext="Office.MessageRead.displayReplyFormAsync" />
+  - <xref
+  href="outlook!Office.MessageRead#displayReplyAllFormAsync:member(1)">Office.MessageRead.displayReplyAllFormAsync</xref>
+
+  - <xref
+  href="outlook!Office.MessageRead#displayReplyForm:member(1)">Office.MessageRead.displayReplyForm</xref>
+
+  - <xref
+  href="outlook!Office.MessageRead#displayReplyFormAsync:member(1)">Office.MessageRead.displayReplyFormAsync</xref>
 
   #### Examples
 

@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions#format:member"
-  alttext="Excel.Interfaces.ChartTrendlineCollectionLoadOptions.format" />
+  href="excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions#format:member">Excel.Interfaces.ChartTrendlineCollectionLoadOptions.format</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineLoadOptions#format:member"
-  alttext="Excel.Interfaces.ChartTrendlineLoadOptions.format" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartTrendlineLoadOptions#format:member">Excel.Interfaces.ChartTrendlineLoadOptions.format</xref>
 
 isPreview: false
 isDeprecated: false

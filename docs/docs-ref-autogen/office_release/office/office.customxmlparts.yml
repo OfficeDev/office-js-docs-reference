@@ -11,8 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#customXmlParts:member"
-  alttext="Office.Document.customXmlParts" />
+  - <xref
+  href="office!Office.Document#customXmlParts:member">Office.Document.customXmlParts</xref>
 
 isPreview: false
 isDeprecated: false

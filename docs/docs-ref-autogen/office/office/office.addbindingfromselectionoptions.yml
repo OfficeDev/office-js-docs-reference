@@ -8,8 +8,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member(1)"
-  alttext="Office.Bindings.addFromSelectionAsync" />
+  - <xref
+  href="office!Office.Bindings#addFromSelectionAsync:member(1)">Office.Bindings.addFromSelectionAsync</xref>
 
 isPreview: false
 isDeprecated: false

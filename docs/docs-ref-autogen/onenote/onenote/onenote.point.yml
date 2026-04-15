@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.PointCollection#items:member"
-  alttext="OneNote.PointCollection.items" />
+  - <xref
+  href="onenote!OneNote.PointCollection#items:member">OneNote.PointCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

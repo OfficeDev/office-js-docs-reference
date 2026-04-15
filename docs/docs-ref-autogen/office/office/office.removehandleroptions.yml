@@ -8,17 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#removeHandlerAsync:member(1)"
-  alttext="Office.Binding.removeHandlerAsync" />
+  - <xref
+  href="office!Office.Binding#removeHandlerAsync:member(1)">Office.Binding.removeHandlerAsync</xref>
 
-  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member(1)"
-  alttext="Office.CustomXmlPart.removeHandlerAsync" />
+  - <xref
+  href="office!Office.CustomXmlPart#removeHandlerAsync:member(1)">Office.CustomXmlPart.removeHandlerAsync</xref>
 
-  - <xref uid="office!Office.Document#removeHandlerAsync:member(1)"
-  alttext="Office.Document.removeHandlerAsync" />
+  - <xref
+  href="office!Office.Document#removeHandlerAsync:member(1)">Office.Document.removeHandlerAsync</xref>
 
-  - <xref uid="office!Office.Settings#removeHandlerAsync:member(1)"
-  alttext="Office.Settings.removeHandlerAsync" />
+  - <xref
+  href="office!Office.Settings#removeHandlerAsync:member(1)">Office.Settings.removeHandlerAsync</xref>
 
 isPreview: false
 isDeprecated: false

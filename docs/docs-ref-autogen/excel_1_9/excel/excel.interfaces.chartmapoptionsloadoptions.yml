@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member"
-  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions" />
+  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#mapOptions:member"
-  alttext="Excel.Interfaces.ChartSeriesLoadOptions.mapOptions" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#mapOptions:member">Excel.Interfaces.ChartSeriesLoadOptions.mapOptions</xref>
 
 isPreview: false
 isDeprecated: false

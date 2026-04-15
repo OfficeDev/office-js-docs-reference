@@ -8,8 +8,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.RemoveHandlerOptions#handler:member"
-  alttext="Office.RemoveHandlerOptions.handler" />
+  - <xref
+  href="office!Office.RemoveHandlerOptions#handler:member">Office.RemoveHandlerOptions.handler</xref>
 
 isPreview: false
 isDeprecated: false

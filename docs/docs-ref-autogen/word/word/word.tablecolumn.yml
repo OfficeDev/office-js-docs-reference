@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableCell#column:member"
-  alttext="Word.TableCell.column" />
+  - <xref href="word!Word.TableCell#column:member">Word.TableCell.column</xref>
 
-  - <xref uid="word!Word.TableColumnCollection#items:member"
-  alttext="Word.TableColumnCollection.items" />
+  - <xref
+  href="word!Word.TableColumnCollection#items:member">Word.TableColumnCollection.items</xref>
 
 isPreview: false
 isDeprecated: false

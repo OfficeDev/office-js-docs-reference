@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#title:member"
-  alttext="Excel.ChartAxis.title" />
+  - <xref href="excel!Excel.ChartAxis#title:member">Excel.ChartAxis.title</xref>
 
 isPreview: false
 isDeprecated: false

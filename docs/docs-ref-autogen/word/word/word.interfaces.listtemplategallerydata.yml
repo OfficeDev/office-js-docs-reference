@@ -11,16 +11,13 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ApplicationData#listTemplateGalleries:member"
-  alttext="Word.Interfaces.ApplicationData.listTemplateGalleries" />
+  href="word!Word.Interfaces.ApplicationData#listTemplateGalleries:member">Word.Interfaces.ApplicationData.listTemplateGalleries</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ListTemplateGalleryCollectionData#items:member"
-  alttext="Word.Interfaces.ListTemplateGalleryCollectionData.items" />
+  href="word!Word.Interfaces.ListTemplateGalleryCollectionData#items:member">Word.Interfaces.ListTemplateGalleryCollectionData.items</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ListTemplateGalleryCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ListTemplateGalleryCollectionUpdateData.items" />
+  href="word!Word.Interfaces.ListTemplateGalleryCollectionUpdateData#items:member">Word.Interfaces.ListTemplateGalleryCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

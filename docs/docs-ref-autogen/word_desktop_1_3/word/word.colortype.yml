@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ColorFormat#type:member"
-  alttext="Word.ColorFormat.type" />
+  - <xref href="word!Word.ColorFormat#type:member">Word.ColorFormat.type</xref>
 
-  - <xref uid="word!Word.Interfaces.ColorFormatData#type:member"
-  alttext="Word.Interfaces.ColorFormatData.type" />
+  - <xref
+  href="word!Word.Interfaces.ColorFormatData#type:member">Word.Interfaces.ColorFormatData.type</xref>
 
 isPreview: false
 isDeprecated: false

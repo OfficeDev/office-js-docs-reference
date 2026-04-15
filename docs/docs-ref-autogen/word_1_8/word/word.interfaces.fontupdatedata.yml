@@ -10,26 +10,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyUpdateData#font:member"
-  alttext="Word.Interfaces.BodyUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.BodyUpdateData#font:member">Word.Interfaces.BodyUpdateData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#font:member"
-  alttext="Word.Interfaces.ContentControlUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlUpdateData#font:member">Word.Interfaces.ContentControlUpdateData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#font:member"
-  alttext="Word.Interfaces.ParagraphUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphUpdateData#font:member">Word.Interfaces.ParagraphUpdateData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#font:member"
-  alttext="Word.Interfaces.RangeUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.RangeUpdateData#font:member">Word.Interfaces.RangeUpdateData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#font:member"
-  alttext="Word.Interfaces.StyleUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.StyleUpdateData#font:member">Word.Interfaces.StyleUpdateData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableRowUpdateData#font:member"
-  alttext="Word.Interfaces.TableRowUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.TableRowUpdateData#font:member">Word.Interfaces.TableRowUpdateData.font</xref>
 
-  - <xref uid="word!Word.Interfaces.TableUpdateData#font:member"
-  alttext="Word.Interfaces.TableUpdateData.font" />
+  - <xref
+  href="word!Word.Interfaces.TableUpdateData#font:member">Word.Interfaces.TableUpdateData.font</xref>
 
 isPreview: false
 isDeprecated: false

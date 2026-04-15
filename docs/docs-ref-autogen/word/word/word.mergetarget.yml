@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentMergeOptions#mergeTarget:member"
-  alttext="Word.DocumentMergeOptions.mergeTarget" />
+  - <xref
+  href="word!Word.DocumentMergeOptions#mergeTarget:member">Word.DocumentMergeOptions.mergeTarget</xref>
 
 isPreview: false
 isDeprecated: false

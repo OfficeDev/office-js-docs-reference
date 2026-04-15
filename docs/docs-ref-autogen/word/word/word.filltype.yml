@@ -12,11 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#type:member" alttext="Word.FillFormat.type"
-  />
+  - <xref href="word!Word.FillFormat#type:member">Word.FillFormat.type</xref>
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#type:member"
-  alttext="Word.Interfaces.FillFormatData.type" />
+  - <xref
+  href="word!Word.Interfaces.FillFormatData#type:member">Word.Interfaces.FillFormatData.type</xref>
 
 isPreview: false
 isDeprecated: false

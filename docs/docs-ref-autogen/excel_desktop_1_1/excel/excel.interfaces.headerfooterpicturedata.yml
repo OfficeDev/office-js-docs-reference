@@ -11,26 +11,22 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterData#centerFooterPicture:member"
-  alttext="Excel.Interfaces.HeaderFooterData.centerFooterPicture" />
+  href="excel!Excel.Interfaces.HeaderFooterData#centerFooterPicture:member">Excel.Interfaces.HeaderFooterData.centerFooterPicture</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterData#centerHeaderPicture:member"
-  alttext="Excel.Interfaces.HeaderFooterData.centerHeaderPicture" />
-
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterData#leftFooterPicture:member"
-  alttext="Excel.Interfaces.HeaderFooterData.leftFooterPicture" />
-
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterData#leftHeaderPicture:member"
-  alttext="Excel.Interfaces.HeaderFooterData.leftHeaderPicture" />
+  href="excel!Excel.Interfaces.HeaderFooterData#centerHeaderPicture:member">Excel.Interfaces.HeaderFooterData.centerHeaderPicture</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterData#rightFooterPicture:member"
-  alttext="Excel.Interfaces.HeaderFooterData.rightFooterPicture" />
+  href="excel!Excel.Interfaces.HeaderFooterData#leftFooterPicture:member">Excel.Interfaces.HeaderFooterData.leftFooterPicture</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.HeaderFooterData#rightHeaderPicture:member"
-  alttext="Excel.Interfaces.HeaderFooterData.rightHeaderPicture" />
+  href="excel!Excel.Interfaces.HeaderFooterData#leftHeaderPicture:member">Excel.Interfaces.HeaderFooterData.leftHeaderPicture</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.HeaderFooterData#rightFooterPicture:member">Excel.Interfaces.HeaderFooterData.rightFooterPicture</xref>
+
+  - <xref
+  href="excel!Excel.Interfaces.HeaderFooterData#rightHeaderPicture:member">Excel.Interfaces.HeaderFooterData.rightHeaderPicture</xref>
 
 isPreview: false
 isDeprecated: false

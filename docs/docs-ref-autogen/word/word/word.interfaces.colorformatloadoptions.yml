@@ -13,38 +13,31 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member"
-  alttext="Word.Interfaces.FillFormatLoadOptions.backgroundColor" />
+  href="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member">Word.Interfaces.FillFormatLoadOptions.backgroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member"
-  alttext="Word.Interfaces.FillFormatLoadOptions.foregroundColor" />
-
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#textColor:member"
-  alttext="Word.Interfaces.FontLoadOptions.textColor" />
-
-  - <xref uid="word!Word.Interfaces.GlowFormatLoadOptions#color:member"
-  alttext="Word.Interfaces.GlowFormatLoadOptions.color" />
+  href="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member">Word.Interfaces.FillFormatLoadOptions.foregroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member"
-  alttext="Word.Interfaces.LineFormatLoadOptions.backgroundColor" />
+  href="word!Word.Interfaces.FontLoadOptions#textColor:member">Word.Interfaces.FontLoadOptions.textColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member"
-  alttext="Word.Interfaces.LineFormatLoadOptions.foregroundColor" />
+  href="word!Word.Interfaces.GlowFormatLoadOptions#color:member">Word.Interfaces.GlowFormatLoadOptions.color</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member"
-  alttext="Word.Interfaces.ShadowFormatLoadOptions.foregroundColor" />
+  href="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member">Word.Interfaces.LineFormatLoadOptions.backgroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor" />
+  href="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member">Word.Interfaces.LineFormatLoadOptions.foregroundColor</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor" />
+  href="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member">Word.Interfaces.ShadowFormatLoadOptions.foregroundColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member">Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor</xref>
+
+  - <xref
+  href="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member">Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor</xref>
 
 isPreview: false
 isDeprecated: false

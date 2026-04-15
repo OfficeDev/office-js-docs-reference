@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentData#type:member"
-  alttext="OneNote.Interfaces.PageContentData.type" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageContentData#type:member">OneNote.Interfaces.PageContentData.type</xref>
 
-  - <xref uid="onenote!OneNote.PageContent#type:member"
-  alttext="OneNote.PageContent.type" />
+  - <xref
+  href="onenote!OneNote.PageContent#type:member">OneNote.PageContent.type</xref>
 
 isPreview: false
 isDeprecated: false

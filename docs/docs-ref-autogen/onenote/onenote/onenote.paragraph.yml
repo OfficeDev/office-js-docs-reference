@@ -14,26 +14,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Image#paragraph:member"
-  alttext="OneNote.Image.paragraph" />
+  - <xref
+  href="onenote!OneNote.Image#paragraph:member">OneNote.Image.paragraph</xref>
 
-  - <xref uid="onenote!OneNote.InkWord#paragraph:member"
-  alttext="OneNote.InkWord.paragraph" />
+  - <xref
+  href="onenote!OneNote.InkWord#paragraph:member">OneNote.InkWord.paragraph</xref>
 
-  - <xref uid="onenote!OneNote.Paragraph#parentParagraph:member"
-  alttext="OneNote.Paragraph.parentParagraph" />
+  - <xref
+  href="onenote!OneNote.Paragraph#parentParagraph:member">OneNote.Paragraph.parentParagraph</xref>
 
-  - <xref uid="onenote!OneNote.Paragraph#parentParagraphOrNull:member"
-  alttext="OneNote.Paragraph.parentParagraphOrNull" />
+  - <xref
+  href="onenote!OneNote.Paragraph#parentParagraphOrNull:member">OneNote.Paragraph.parentParagraphOrNull</xref>
 
-  - <xref uid="onenote!OneNote.ParagraphCollection#items:member"
-  alttext="OneNote.ParagraphCollection.items" />
+  - <xref
+  href="onenote!OneNote.ParagraphCollection#items:member">OneNote.ParagraphCollection.items</xref>
 
-  - <xref uid="onenote!OneNote.RichText#paragraph:member"
-  alttext="OneNote.RichText.paragraph" />
+  - <xref
+  href="onenote!OneNote.RichText#paragraph:member">OneNote.RichText.paragraph</xref>
 
-  - <xref uid="onenote!OneNote.Table#paragraph:member"
-  alttext="OneNote.Table.paragraph" />
+  - <xref
+  href="onenote!OneNote.Table#paragraph:member">OneNote.Table.paragraph</xref>
 
 isPreview: false
 isDeprecated: false

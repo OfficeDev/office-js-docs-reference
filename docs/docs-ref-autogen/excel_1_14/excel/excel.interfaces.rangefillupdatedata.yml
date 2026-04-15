@@ -10,11 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#fill:member"
-  alttext="Excel.Interfaces.RangeFormatUpdateData.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.RangeFormatUpdateData#fill:member">Excel.Interfaces.RangeFormatUpdateData.fill</xref>
 
-  - <xref uid="excel!Excel.Interfaces.StyleUpdateData#fill:member"
-  alttext="Excel.Interfaces.StyleUpdateData.fill" />
+  - <xref
+  href="excel!Excel.Interfaces.StyleUpdateData#fill:member">Excel.Interfaces.StyleUpdateData.fill</xref>
 
 isPreview: false
 isDeprecated: false

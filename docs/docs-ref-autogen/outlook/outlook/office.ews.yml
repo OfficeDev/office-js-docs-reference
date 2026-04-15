@@ -36,8 +36,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Diagnostics#ews:member"
-  alttext="Office.Diagnostics.ews" />
+  - <xref
+  href="outlook!Office.Diagnostics#ews:member">Office.Diagnostics.ews</xref>
 
   #### Examples
 

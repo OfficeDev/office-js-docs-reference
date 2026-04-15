@@ -10,20 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#paragraphs:member"
-  alttext="Word.Interfaces.BodyData.paragraphs" />
+  - <xref
+  href="word!Word.Interfaces.BodyData#paragraphs:member">Word.Interfaces.BodyData.paragraphs</xref>
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#paragraphs:member"
-  alttext="Word.Interfaces.ContentControlData.paragraphs" />
+  - <xref
+  href="word!Word.Interfaces.ContentControlData#paragraphs:member">Word.Interfaces.ContentControlData.paragraphs</xref>
 
-  - <xref uid="word!Word.Interfaces.ListData#paragraphs:member"
-  alttext="Word.Interfaces.ListData.paragraphs" />
+  - <xref
+  href="word!Word.Interfaces.ListData#paragraphs:member">Word.Interfaces.ListData.paragraphs</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphCollectionData#items:member"
-  alttext="Word.Interfaces.ParagraphCollectionData.items" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphCollectionData#items:member">Word.Interfaces.ParagraphCollectionData.items</xref>
 
-  - <xref uid="word!Word.Interfaces.ParagraphCollectionUpdateData#items:member"
-  alttext="Word.Interfaces.ParagraphCollectionUpdateData.items" />
+  - <xref
+  href="word!Word.Interfaces.ParagraphCollectionUpdateData#items:member">Word.Interfaces.ParagraphCollectionUpdateData.items</xref>
 
 isPreview: false
 isDeprecated: false

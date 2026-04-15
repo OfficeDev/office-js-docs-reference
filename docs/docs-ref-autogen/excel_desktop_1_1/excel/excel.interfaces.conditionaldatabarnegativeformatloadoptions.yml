@@ -13,9 +13,7 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member"
-  alttext="Excel.Interfaces.DataBarConditionalFormatLoadOptions.negativeFormat"
-  />
+  href="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member">Excel.Interfaces.DataBarConditionalFormatLoadOptions.negativeFormat</xref>
 
 isPreview: false
 isDeprecated: false

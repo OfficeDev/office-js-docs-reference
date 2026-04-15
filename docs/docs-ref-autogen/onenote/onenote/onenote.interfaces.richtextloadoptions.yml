@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#richText:member"
-  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.richText" />
+  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#richText:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.richText</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#richText:member"
-  alttext="OneNote.Interfaces.ParagraphLoadOptions.richText" />
+  - <xref
+  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#richText:member">OneNote.Interfaces.ParagraphLoadOptions.richText</xref>
 
 isPreview: false
 isDeprecated: false

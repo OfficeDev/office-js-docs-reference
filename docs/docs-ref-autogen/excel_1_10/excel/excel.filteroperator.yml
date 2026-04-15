@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterCriteria#operator:member"
-  alttext="Excel.FilterCriteria.operator" />
+  - <xref
+  href="excel!Excel.FilterCriteria#operator:member">Excel.FilterCriteria.operator</xref>
 
 isPreview: false
 isDeprecated: false

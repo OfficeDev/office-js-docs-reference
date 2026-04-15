@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFillData#type:member"
-  alttext="PowerPoint.Interfaces.ShapeFillData.type" />
+  - <xref
+  href="powerpoint!PowerPoint.Interfaces.ShapeFillData#type:member">PowerPoint.Interfaces.ShapeFillData.type</xref>
 
-  - <xref uid="powerpoint!PowerPoint.ShapeFill#type:member"
-  alttext="PowerPoint.ShapeFill.type" />
+  - <xref
+  href="powerpoint!PowerPoint.ShapeFill#type:member">PowerPoint.ShapeFill.type</xref>
 
   #### Examples
 

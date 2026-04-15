@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationRule#custom:member"
-  alttext="Excel.DataValidationRule.custom" />
+  - <xref
+  href="excel!Excel.DataValidationRule#custom:member">Excel.DataValidationRule.custom</xref>
 
 isPreview: false
 isDeprecated: false

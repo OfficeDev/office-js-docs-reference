@@ -10,8 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.CultureInfoData#numberFormat:member"
-  alttext="Excel.Interfaces.CultureInfoData.numberFormat" />
+  - <xref
+  href="excel!Excel.Interfaces.CultureInfoData#numberFormat:member">Excel.Interfaces.CultureInfoData.numberFormat</xref>
 
 isPreview: false
 isDeprecated: false

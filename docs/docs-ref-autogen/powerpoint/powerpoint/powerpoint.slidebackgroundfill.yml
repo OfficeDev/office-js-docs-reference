@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.SlideBackground#fill:member"
-  alttext="PowerPoint.SlideBackground.fill" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideBackground#fill:member">PowerPoint.SlideBackground.fill</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayoutBackground#fill:member"
-  alttext="PowerPoint.SlideLayoutBackground.fill" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideLayoutBackground#fill:member">PowerPoint.SlideLayoutBackground.fill</xref>
 
-  - <xref uid="powerpoint!PowerPoint.SlideMasterBackground#fill:member"
-  alttext="PowerPoint.SlideMasterBackground.fill" />
+  - <xref
+  href="powerpoint!PowerPoint.SlideMasterBackground#fill:member">PowerPoint.SlideMasterBackground.fill</xref>
 
   #### Examples
 

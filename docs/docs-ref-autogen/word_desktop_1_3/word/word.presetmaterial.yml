@@ -13,15 +13,13 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetMaterial:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetMaterial" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetMaterial:member">Word.Interfaces.ThreeDimensionalFormatData.presetMaterial</xref>
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetMaterial:member"
-  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.presetMaterial" />
+  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetMaterial:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.presetMaterial</xref>
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#presetMaterial:member"
-  alttext="Word.ThreeDimensionalFormat.presetMaterial" />
+  - <xref
+  href="word!Word.ThreeDimensionalFormat#presetMaterial:member">Word.ThreeDimensionalFormat.presetMaterial</xref>
 
 isPreview: false
 isDeprecated: false

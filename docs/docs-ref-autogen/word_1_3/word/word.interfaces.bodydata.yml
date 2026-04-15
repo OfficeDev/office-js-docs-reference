@@ -8,14 +8,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentData#body:member"
-  alttext="Word.Interfaces.DocumentData.body" />
+  - <xref
+  href="word!Word.Interfaces.DocumentData#body:member">Word.Interfaces.DocumentData.body</xref>
 
-  - <xref uid="word!Word.Interfaces.SectionData#body:member"
-  alttext="Word.Interfaces.SectionData.body" />
+  - <xref
+  href="word!Word.Interfaces.SectionData#body:member">Word.Interfaces.SectionData.body</xref>
 
-  - <xref uid="word!Word.Interfaces.TableCellData#body:member"
-  alttext="Word.Interfaces.TableCellData.body" />
+  - <xref
+  href="word!Word.Interfaces.TableCellData#body:member">Word.Interfaces.TableCellData.body</xref>
 
 isPreview: false
 isDeprecated: false

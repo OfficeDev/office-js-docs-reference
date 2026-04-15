@@ -13,19 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member"
-  alttext="OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk" />
+  href="onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member">OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member"
-  alttext="OneNote.Interfaces.InkStrokeLoadOptions.floatingInk" />
+  href="onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member">OneNote.Interfaces.InkStrokeLoadOptions.floatingInk</xref>
 
   - <xref
-  uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member"
-  alttext="OneNote.Interfaces.PageContentCollectionLoadOptions.ink" />
+  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member">OneNote.Interfaces.PageContentCollectionLoadOptions.ink</xref>
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentLoadOptions#ink:member"
-  alttext="OneNote.Interfaces.PageContentLoadOptions.ink" />
+  - <xref
+  href="onenote!OneNote.Interfaces.PageContentLoadOptions#ink:member">OneNote.Interfaces.PageContentLoadOptions.ink</xref>
 
 isPreview: false
 isDeprecated: false

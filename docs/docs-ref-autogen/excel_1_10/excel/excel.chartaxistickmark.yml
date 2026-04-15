@@ -12,23 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#majorTickMark:member"
-  alttext="Excel.ChartAxis.majorTickMark" />
+  - <xref
+  href="excel!Excel.ChartAxis#majorTickMark:member">Excel.ChartAxis.majorTickMark</xref>
 
-  - <xref uid="excel!Excel.ChartAxis#minorTickMark:member"
-  alttext="Excel.ChartAxis.minorTickMark" />
+  - <xref
+  href="excel!Excel.ChartAxis#minorTickMark:member">Excel.ChartAxis.minorTickMark</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorTickMark:member"
-  alttext="Excel.Interfaces.ChartAxisData.majorTickMark" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisData#majorTickMark:member">Excel.Interfaces.ChartAxisData.majorTickMark</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorTickMark:member"
-  alttext="Excel.Interfaces.ChartAxisData.minorTickMark" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisData#minorTickMark:member">Excel.Interfaces.ChartAxisData.minorTickMark</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member"
-  alttext="Excel.Interfaces.ChartAxisUpdateData.majorTickMark" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member">Excel.Interfaces.ChartAxisUpdateData.majorTickMark</xref>
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member"
-  alttext="Excel.Interfaces.ChartAxisUpdateData.minorTickMark" />
+  - <xref
+  href="excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member">Excel.Interfaces.ChartAxisUpdateData.minorTickMark</xref>
 
 isPreview: false
 isDeprecated: false

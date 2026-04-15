@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeFormat#font:member"
-  alttext="Excel.RangeFormat.font" />
+  - <xref
+  href="excel!Excel.RangeFormat#font:member">Excel.RangeFormat.font</xref>
 
 isPreview: false
 isDeprecated: false

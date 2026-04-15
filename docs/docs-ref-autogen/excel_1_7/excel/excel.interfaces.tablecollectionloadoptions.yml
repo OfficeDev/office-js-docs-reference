@@ -14,15 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#tables:member"
-  alttext="Excel.Interfaces.WorkbookLoadOptions.tables" />
+  - <xref
+  href="excel!Excel.Interfaces.WorkbookLoadOptions#tables:member">Excel.Interfaces.WorkbookLoadOptions.tables</xref>
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member"
-  alttext="Excel.Interfaces.WorksheetCollectionLoadOptions.tables" />
+  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member">Excel.Interfaces.WorksheetCollectionLoadOptions.tables</xref>
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#tables:member"
-  alttext="Excel.Interfaces.WorksheetLoadOptions.tables" />
+  - <xref
+  href="excel!Excel.Interfaces.WorksheetLoadOptions#tables:member">Excel.Interfaces.WorksheetLoadOptions.tables</xref>
 
 isPreview: false
 isDeprecated: false

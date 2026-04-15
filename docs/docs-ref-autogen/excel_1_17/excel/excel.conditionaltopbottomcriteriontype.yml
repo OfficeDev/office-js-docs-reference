@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalTopBottomRule#type:member"
-  alttext="Excel.ConditionalTopBottomRule.type" />
+  - <xref
+  href="excel!Excel.ConditionalTopBottomRule#type:member">Excel.ConditionalTopBottomRule.type</xref>
 
 isPreview: false
 isDeprecated: false
