@@ -7371,7 +7371,7 @@ office,Office.DialogOptions,"displayInIframe",Property,Excellent,false
 office,Office.DialogOptions,"height",Property,Excellent,true
 office,Office.DialogOptions,"promptBeforeOpen",Property,Excellent,false
 office,Office.DialogOptions,"width",Property,Excellent,true
-office,Office.DialogParentMessageReceivedEventArgs,N/A,Interface,Great,false
+office,Office.DialogParentMessageReceivedEventArgs,N/A,Interface,Great,true
 office,Office.DialogParentMessageReceivedEventArgs,"message",Property,Excellent,false
 office,Office.DialogParentMessageReceivedEventArgs,"origin",Property,Great,false
 office,Office.DialogParentMessageReceivedEventArgs,"type",Property,Excellent,false
@@ -8225,7 +8225,7 @@ office,Office.ValueFormat,"Unformatted",EnumField,Good,false
 office,Office.VisibilityMode,N/A,Enum,Good,true
 office,Office.VisibilityMode,"hidden",EnumField,Fine,false
 office,Office.VisibilityMode,"taskpane",EnumField,Good,false
-office,Office.VisibilityModeChangedMessage,N/A,Interface,Fine,false
+office,Office.VisibilityModeChangedMessage,N/A,Interface,Fine,true
 office,Office.VisibilityModeChangedMessage,"visibilityMode",Property,Good,false
 office,OfficeExtension.ClientObject,N/A,Class,Great,false
 office,OfficeExtension.ClientObject,"context",Property,Good,true
