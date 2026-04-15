@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member">Word.Interfaces.ParagraphCollectionLoadOptions.listItem</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.listItem](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#listitem-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#listitemornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#listItem:member">Word.Interfaces.ParagraphLoadOptions.listItem</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.listItem](/javascript/api/word/word.interfaces.paragraphloadoptions#listitem-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#listItemOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.listItemOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.listItemOrNullObject](/javascript/api/word/word.interfaces.paragraphloadoptions#listitemornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

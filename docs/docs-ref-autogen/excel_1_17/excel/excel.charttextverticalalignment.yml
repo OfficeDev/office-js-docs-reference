@@ -12,41 +12,53 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartDataLabel#verticalAlignment:member">Excel.ChartDataLabel.verticalAlignment</xref>
+  - \[
+  [Excel.ChartDataLabel.verticalAlignment](/javascript/api/excel/excel.chartdatalabel#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#verticalAlignment:member">Excel.ChartDataLabels.verticalAlignment</xref>
+  - \[
+  [Excel.ChartDataLabels.verticalAlignment](/javascript/api/excel/excel.chartdatalabels#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitle#verticalAlignment:member">Excel.ChartTitle.verticalAlignment</xref>
+  - \[
+  [Excel.ChartTitle.verticalAlignment](/javascript/api/excel/excel.charttitle#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineLabel#verticalAlignment:member">Excel.ChartTrendlineLabel.verticalAlignment</xref>
+  - \[
+  [Excel.ChartTrendlineLabel.verticalAlignment](/javascript/api/excel/excel.charttrendlinelabel#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelData#verticalAlignment:member">Excel.Interfaces.ChartDataLabelData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabeldata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsData#verticalAlignment:member">Excel.Interfaces.ChartDataLabelsData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment:member">Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelUpdateData#verticalAlignment:member">Excel.Interfaces.ChartDataLabelUpdateData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleData#verticalAlignment:member">Excel.Interfaces.ChartTitleData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttitledata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member">Excel.Interfaces.ChartTitleUpdateData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttitleupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLabelData#verticalAlignment:member">Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabeldata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#verticalAlignment:member">Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabelupdatedata#verticalalignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

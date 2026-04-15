@@ -22,11 +22,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#displayNewMessageForm:member(1)">Office.Mailbox.displayNewMessageForm</xref>
+  - \[
+  [Office.Mailbox.displayNewMessageForm](/javascript/api/outlook/office.mailbox#displaynewmessageform-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Mailbox#displayNewMessageFormAsync:member(1)">Office.Mailbox.displayNewMessageFormAsync</xref>
+  - \[
+  [Office.Mailbox.displayNewMessageFormAsync](/javascript/api/outlook/office.mailbox#displaynewmessageformasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

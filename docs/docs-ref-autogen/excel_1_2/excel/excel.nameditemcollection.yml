@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Workbook#names:member">Excel.Workbook.names</xref>
+  - \[ [Excel.Workbook.names](/javascript/api/excel/excel.workbook#names-member)
+  \]
 
 isPreview: false
 isDeprecated: false

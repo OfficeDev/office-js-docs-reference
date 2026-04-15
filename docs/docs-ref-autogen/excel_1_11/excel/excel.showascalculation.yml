@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ShowAsRule#calculation:member">Excel.ShowAsRule.calculation</xref>
+  - \[
+  [Excel.ShowAsRule.calculation](/javascript/api/excel/excel.showasrule#calculation-member)
+  \]
 
   #### Examples
 

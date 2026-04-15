@@ -17,14 +17,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member">Word.Interfaces.ShapeData.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeData.relativeHorizontalPosition](/javascript/api/word/word.interfaces.shapedata#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member">Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition](/javascript/api/word/word.interfaces.shapeupdatedata#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#relativeHorizontalPosition:member">Word.Shape.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Shape.relativeHorizontalPosition](/javascript/api/word/word.shape#relativehorizontalposition-member)
+  \]
 
   #### Examples
 

@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#xmlMapping:member">Word.Interfaces.BuildingBlockGalleryContentControlData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlData.xmlMapping](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#xmlMapping:member">Word.Interfaces.ContentControlData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.xmlMapping](/javascript/api/word/word.interfaces.contentcontroldata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#xmlMapping:member">Word.Interfaces.DatePickerContentControlData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.xmlMapping](/javascript/api/word/word.interfaces.datepickercontentcontroldata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlData#xmlMapping:member">Word.Interfaces.GroupContentControlData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlData.xmlMapping](/javascript/api/word/word.interfaces.groupcontentcontroldata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlData#xmlMapping:member">Word.Interfaces.PictureContentControlData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlData.xmlMapping](/javascript/api/word/word.interfaces.picturecontentcontroldata#xmlmapping-member)
+  \]
 
 isPreview: false
 isDeprecated: false

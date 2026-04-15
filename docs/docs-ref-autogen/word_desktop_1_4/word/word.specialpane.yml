@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#splitSpecial:member">Word.Interfaces.ViewData.splitSpecial</xref>
+  - \[
+  [Word.Interfaces.ViewData.splitSpecial](/javascript/api/word/word.interfaces.viewdata#splitspecial-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#splitSpecial:member">Word.Interfaces.ViewUpdateData.splitSpecial</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.splitSpecial](/javascript/api/word/word.interfaces.viewupdatedata#splitspecial-member)
+  \]
 
-  - <xref
-  href="word!Word.View#splitSpecial:member">Word.View.splitSpecial</xref>
+  - \[
+  [Word.View.splitSpecial](/javascript/api/word/word.view#splitspecial-member)
+  \]
 
 isPreview: false
 isDeprecated: false

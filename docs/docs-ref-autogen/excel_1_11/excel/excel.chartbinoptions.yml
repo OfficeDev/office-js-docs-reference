@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#binOptions:member">Excel.ChartSeries.binOptions</xref>
+  - \[
+  [Excel.ChartSeries.binOptions](/javascript/api/excel/excel.chartseries#binoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

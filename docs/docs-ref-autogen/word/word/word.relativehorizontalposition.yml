@@ -17,23 +17,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Frame#relativeHorizontalPosition:member">Word.Frame.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Frame.relativeHorizontalPosition](/javascript/api/word/word.frame#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#relativeHorizontalPosition:member">Word.Interfaces.FrameData.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Interfaces.FrameData.relativeHorizontalPosition](/javascript/api/word/word.interfaces.framedata#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameUpdateData#relativeHorizontalPosition:member">Word.Interfaces.FrameUpdateData.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Interfaces.FrameUpdateData.relativeHorizontalPosition](/javascript/api/word/word.interfaces.frameupdatedata#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member">Word.Interfaces.ShapeData.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeData.relativeHorizontalPosition](/javascript/api/word/word.interfaces.shapedata#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member">Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.relativeHorizontalPosition](/javascript/api/word/word.interfaces.shapeupdatedata#relativehorizontalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#relativeHorizontalPosition:member">Word.Shape.relativeHorizontalPosition</xref>
+  - \[
+  [Word.Shape.relativeHorizontalPosition](/javascript/api/word/word.shape#relativehorizontalposition-member)
+  \]
 
   #### Examples
 

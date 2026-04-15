@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member">Excel.Interfaces.SlicerUpdateData.worksheet</xref>
+  - \[
+  [Excel.Interfaces.SlicerUpdateData.worksheet](/javascript/api/excel/excel.interfaces.slicerupdatedata#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowUpdateData#activeWorksheet:member">Excel.Interfaces.WindowUpdateData.activeWorksheet</xref>
+  - \[
+  [Excel.Interfaces.WindowUpdateData.activeWorksheet](/javascript/api/excel/excel.interfaces.windowupdatedata#activeworksheet-member)
+  \]
 
 isPreview: false
 isDeprecated: false

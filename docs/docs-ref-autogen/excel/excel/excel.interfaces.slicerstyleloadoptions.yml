@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member">Excel.Interfaces.SlicerCollectionLoadOptions.slicerStyle</xref>
+  - \[
+  [Excel.Interfaces.SlicerCollectionLoadOptions.slicerStyle](/javascript/api/excel/excel.interfaces.slicercollectionloadoptions#slicerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member">Excel.Interfaces.SlicerLoadOptions.slicerStyle</xref>
+  - \[
+  [Excel.Interfaces.SlicerLoadOptions.slicerStyle](/javascript/api/excel/excel.interfaces.slicerloadoptions#slicerstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

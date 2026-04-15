@@ -15,35 +15,43 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#endnotes:member">Word.Body.endnotes</xref>
+  - \[ [Word.Body.endnotes](/javascript/api/word/word.body#endnotes-member) \]
 
-  - <xref href="word!Word.Body#footnotes:member">Word.Body.footnotes</xref>
+  - \[ [Word.Body.footnotes](/javascript/api/word/word.body#footnotes-member) \]
 
-  - <xref
-  href="word!Word.ContentControl#endnotes:member">Word.ContentControl.endnotes</xref>
+  - \[
+  [Word.ContentControl.endnotes](/javascript/api/word/word.contentcontrol#endnotes-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#footnotes:member">Word.ContentControl.footnotes</xref>
+  - \[
+  [Word.ContentControl.footnotes](/javascript/api/word/word.contentcontrol#footnotes-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#endnotes:member">Word.Paragraph.endnotes</xref>
+  - \[
+  [Word.Paragraph.endnotes](/javascript/api/word/word.paragraph#endnotes-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#footnotes:member">Word.Paragraph.footnotes</xref>
+  - \[
+  [Word.Paragraph.footnotes](/javascript/api/word/word.paragraph#footnotes-member)
+  \]
 
-  - <xref href="word!Word.Range#endnotes:member">Word.Range.endnotes</xref>
+  - \[ [Word.Range.endnotes](/javascript/api/word/word.range#endnotes-member) \]
 
-  - <xref href="word!Word.Range#footnotes:member">Word.Range.footnotes</xref>
+  - \[ [Word.Range.footnotes](/javascript/api/word/word.range#footnotes-member)
+  \]
 
-  - <xref href="word!Word.Table#endnotes:member">Word.Table.endnotes</xref>
+  - \[ [Word.Table.endnotes](/javascript/api/word/word.table#endnotes-member) \]
 
-  - <xref href="word!Word.Table#footnotes:member">Word.Table.footnotes</xref>
+  - \[ [Word.Table.footnotes](/javascript/api/word/word.table#footnotes-member)
+  \]
 
-  - <xref
-  href="word!Word.TableRow#endnotes:member">Word.TableRow.endnotes</xref>
+  - \[
+  [Word.TableRow.endnotes](/javascript/api/word/word.tablerow#endnotes-member)
+  \]
 
-  - <xref
-  href="word!Word.TableRow#footnotes:member">Word.TableRow.footnotes</xref>
+  - \[
+  [Word.TableRow.footnotes](/javascript/api/word/word.tablerow#footnotes-member)
+  \]
 
   #### Examples
 

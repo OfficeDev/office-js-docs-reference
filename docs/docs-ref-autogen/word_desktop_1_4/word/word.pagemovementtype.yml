@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#pageMovementType:member">Word.Interfaces.ViewData.pageMovementType</xref>
+  - \[
+  [Word.Interfaces.ViewData.pageMovementType](/javascript/api/word/word.interfaces.viewdata#pagemovementtype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#pageMovementType:member">Word.Interfaces.ViewUpdateData.pageMovementType</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.pageMovementType](/javascript/api/word/word.interfaces.viewupdatedata#pagemovementtype-member)
+  \]
 
-  - <xref
-  href="word!Word.View#pageMovementType:member">Word.View.pageMovementType</xref>
+  - \[
+  [Word.View.pageMovementType](/javascript/api/word/word.view#pagemovementtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

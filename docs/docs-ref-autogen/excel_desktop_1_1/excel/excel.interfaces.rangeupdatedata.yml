@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowUpdateData#activeCell:member">Excel.Interfaces.WindowUpdateData.activeCell</xref>
+  - \[
+  [Excel.Interfaces.WindowUpdateData.activeCell](/javascript/api/excel/excel.interfaces.windowupdatedata#activecell-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowUpdateData#visibleRange:member">Excel.Interfaces.WindowUpdateData.visibleRange</xref>
+  - \[
+  [Excel.Interfaces.WindowUpdateData.visibleRange](/javascript/api/excel/excel.interfaces.windowupdatedata#visiblerange-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotLayoutUpdateData#pivotStyle:member">Excel.Interfaces.PivotLayoutUpdateData.pivotStyle</xref>
+  - \[
+  [Excel.Interfaces.PivotLayoutUpdateData.pivotStyle](/javascript/api/excel/excel.interfaces.pivotlayoutupdatedata#pivotstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

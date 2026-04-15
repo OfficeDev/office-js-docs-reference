@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentMergeOptions#mergeTarget:member">Word.DocumentMergeOptions.mergeTarget</xref>
+  - \[
+  [Word.DocumentMergeOptions.mergeTarget](/javascript/api/word/word.documentmergeoptions#mergetarget-member)
+  \]
 
 isPreview: false
 isDeprecated: false

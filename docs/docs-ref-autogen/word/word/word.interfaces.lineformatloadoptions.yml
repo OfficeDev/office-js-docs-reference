@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontLoadOptions#line:member">Word.Interfaces.FontLoadOptions.line</xref>
+  - \[
+  [Word.Interfaces.FontLoadOptions.line](/javascript/api/word/word.interfaces.fontloadoptions#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeLineFormatData#style:member">Excel.Interfaces.ShapeLineFormatData.style</xref>
+  - \[
+  [Excel.Interfaces.ShapeLineFormatData.style](/javascript/api/excel/excel.interfaces.shapelineformatdata#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeLineFormatUpdateData#style:member">Excel.Interfaces.ShapeLineFormatUpdateData.style</xref>
+  - \[
+  [Excel.Interfaces.ShapeLineFormatUpdateData.style](/javascript/api/excel/excel.interfaces.shapelineformatupdatedata#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeLineFormat#style:member">Excel.ShapeLineFormat.style</xref>
+  - \[
+  [Excel.ShapeLineFormat.style](/javascript/api/excel/excel.shapelineformat#style-member)
+  \]
 
 isPreview: false
 isDeprecated: false

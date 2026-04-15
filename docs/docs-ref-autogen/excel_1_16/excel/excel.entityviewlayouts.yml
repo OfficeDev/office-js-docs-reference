@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.EntityCellValue#layouts:member">Excel.EntityCellValue.layouts</xref>
+  - \[
+  [Excel.EntityCellValue.layouts](/javascript/api/excel/excel.entitycellvalue#layouts-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityCellValue#layouts:member">Excel.LinkedEntityCellValue.layouts</xref>
+  - \[
+  [Excel.LinkedEntityCellValue.layouts](/javascript/api/excel/excel.linkedentitycellvalue#layouts-member)
+  \]
 
   #### Examples
 

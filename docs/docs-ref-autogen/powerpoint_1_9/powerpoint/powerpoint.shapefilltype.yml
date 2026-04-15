@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeFillData#type:member">PowerPoint.Interfaces.ShapeFillData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeFillData.type](/javascript/api/powerpoint/powerpoint.interfaces.shapefilldata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeFill#type:member">PowerPoint.ShapeFill.type</xref>
+  - \[
+  [PowerPoint.ShapeFill.type](/javascript/api/powerpoint/powerpoint.shapefill#type-member)
+  \]
 
   #### Examples
 

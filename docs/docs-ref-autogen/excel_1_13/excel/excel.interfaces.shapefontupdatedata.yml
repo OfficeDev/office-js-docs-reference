@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextRangeUpdateData#font:member">Excel.Interfaces.TextRangeUpdateData.font</xref>
+  - \[
+  [Excel.Interfaces.TextRangeUpdateData.font](/javascript/api/excel/excel.interfaces.textrangeupdatedata#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

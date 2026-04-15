@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#textFrame:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.textFrame</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.textFrame](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#textframe-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#textFrame:member">PowerPoint.Interfaces.ShapeLoadOptions.textFrame</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLoadOptions.textFrame](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#textframe-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#textFrame:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.textFrame</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.textFrame](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#textframe-member)
+  \]
 
 isPreview: false
 isDeprecated: false

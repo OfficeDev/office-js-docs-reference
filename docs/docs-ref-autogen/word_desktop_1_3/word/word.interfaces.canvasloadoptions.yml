@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionLoadOptions#canvas:member">Word.Interfaces.ShapeCollectionLoadOptions.canvas</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionLoadOptions.canvas](/javascript/api/word/word.interfaces.shapecollectionloadoptions#canvas-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeLoadOptions#canvas:member">Word.Interfaces.ShapeLoadOptions.canvas</xref>
+  - \[
+  [Word.Interfaces.ShapeLoadOptions.canvas](/javascript/api/word/word.interfaces.shapeloadoptions#canvas-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#defaultforallpages-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#evenpages-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#firstpage-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member">Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#oddpages-member)
+  \]
 
 isPreview: false
 isDeprecated: false

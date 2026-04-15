@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!OfficeExtension.RunOptions#previousObjects:member">OfficeExtension.RunOptions.previousObjects</xref>
+  - \[
+  [OfficeExtension.RunOptions.previousObjects](/javascript/api/office/officeextension.runoptions#previousobjects-member)
+  \]
 
 isPreview: false
 isDeprecated: false

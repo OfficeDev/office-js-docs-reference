@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.AddBindingFromPromptOptions#sampleData:member">Office.AddBindingFromPromptOptions.sampleData</xref>
+  - \[
+  [Office.AddBindingFromPromptOptions.sampleData](/javascript/api/office/office.addbindingfrompromptoptions#sampledata-member)
+  \]
 
-  - <xref
-  href="office!Office.Binding#setDataAsync:member(1)">Office.Binding.setDataAsync</xref>
+  - \[
+  [Office.Binding.setDataAsync](/javascript/api/office/office.binding#setdataasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Document#getSelectedDataAsync:member(2)">Office.Document.getSelectedDataAsync</xref>
+  - \[
+  [Office.Document.getSelectedDataAsync](/javascript/api/office/office.document#getselecteddataasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Document#setSelectedDataAsync:member(1)">Office.Document.setSelectedDataAsync</xref>
+  - \[
+  [Office.Document.setSelectedDataAsync](/javascript/api/office/office.document#setselecteddataasync-member)
+  \]
 
-  - <xref
-  href="office!Office.TableBinding#addColumnsAsync:member(1)">Office.TableBinding.addColumnsAsync</xref>
+  - \[
+  [Office.TableBinding.addColumnsAsync](/javascript/api/office/office.tablebinding#addcolumnsasync-member)
+  \]
 
-  - <xref
-  href="office!Office.TableBinding#addRowsAsync:member(1)">Office.TableBinding.addRowsAsync</xref>
+  - \[
+  [Office.TableBinding.addRowsAsync](/javascript/api/office/office.tablebinding#addrowsasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

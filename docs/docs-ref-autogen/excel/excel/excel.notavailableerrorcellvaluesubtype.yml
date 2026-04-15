@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.NotAvailableErrorCellValue#errorSubType:member">Excel.NotAvailableErrorCellValue.errorSubType</xref>
+  - \[
+  [Excel.NotAvailableErrorCellValue.errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#errorsubtype-member)
+  \]
 
 isPreview: true
 isDeprecated: false

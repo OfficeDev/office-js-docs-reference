@@ -14,23 +14,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlAddNodeOptions#nodeType:member">Word.CustomXmlAddNodeOptions.nodeType</xref>
+  - \[
+  [Word.CustomXmlAddNodeOptions.nodeType](/javascript/api/word/word.customxmladdnodeoptions#nodetype-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlAppendChildNodeOptions#nodeType:member">Word.CustomXmlAppendChildNodeOptions.nodeType</xref>
+  - \[
+  [Word.CustomXmlAppendChildNodeOptions.nodeType](/javascript/api/word/word.customxmlappendchildnodeoptions#nodetype-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlInsertNodeBeforeOptions#nodeType:member">Word.CustomXmlInsertNodeBeforeOptions.nodeType</xref>
+  - \[
+  [Word.CustomXmlInsertNodeBeforeOptions.nodeType](/javascript/api/word/word.customxmlinsertnodebeforeoptions#nodetype-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#nodeType:member">Word.CustomXmlNode.nodeType</xref>
+  - \[
+  [Word.CustomXmlNode.nodeType](/javascript/api/word/word.customxmlnode#nodetype-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlReplaceChildNodeOptions#nodeType:member">Word.CustomXmlReplaceChildNodeOptions.nodeType</xref>
+  - \[
+  [Word.CustomXmlReplaceChildNodeOptions.nodeType](/javascript/api/word/word.customxmlreplacechildnodeoptions#nodetype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#nodeType:member">Word.Interfaces.CustomXmlNodeData.nodeType</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.nodeType](/javascript/api/word/word.interfaces.customxmlnodedata#nodetype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

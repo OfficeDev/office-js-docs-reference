@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundLoadOptions#fill:member">PowerPoint.Interfaces.SlideBackgroundLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideBackgroundLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions#fill:member">PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutbackgroundloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions#fill:member">PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.slidemasterbackgroundloadoptions#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

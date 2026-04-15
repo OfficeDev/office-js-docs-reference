@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookLoadOptions#properties:member">Excel.Interfaces.WorkbookLoadOptions.properties</xref>
+  - \[
+  [Excel.Interfaces.WorkbookLoadOptions.properties](/javascript/api/excel/excel.interfaces.workbookloadoptions#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

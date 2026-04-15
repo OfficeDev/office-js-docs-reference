@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.DataRefreshCompleteEventArgs#document:member">Visio.DataRefreshCompleteEventArgs.document</xref>
+  - \[
+  [Visio.DataRefreshCompleteEventArgs.document](/javascript/api/visio/visio.datarefreshcompleteeventargs#document-member)
+  \]
 
-  - <xref
-  href="visio!Visio.RequestContext#document:member">Visio.RequestContext.document</xref>
+  - \[
+  [Visio.RequestContext.document](/javascript/api/visio/visio.requestcontext#document-member)
+  \]
 
 isPreview: false
 isDeprecated: false

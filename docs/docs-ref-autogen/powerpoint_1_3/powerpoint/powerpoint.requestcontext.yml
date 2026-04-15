@@ -15,41 +15,53 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Application#context:member">PowerPoint.Application.context</xref>
+  - \[
+  [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#context:member">PowerPoint.Presentation.context</xref>
+  - \[
+  [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#context:member">PowerPoint.Shape.context</xref>
+  - \[
+  [PowerPoint.Shape.context](/javascript/api/powerpoint/powerpoint.shape#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeCollection#context:member">PowerPoint.ShapeCollection.context</xref>
+  - \[
+  [PowerPoint.ShapeCollection.context](/javascript/api/powerpoint/powerpoint.shapecollection#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#context:member">PowerPoint.Slide.context</xref>
+  - \[
+  [PowerPoint.Slide.context](/javascript/api/powerpoint/powerpoint.slide#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideCollection#context:member">PowerPoint.SlideCollection.context</xref>
+  - \[
+  [PowerPoint.SlideCollection.context](/javascript/api/powerpoint/powerpoint.slidecollection#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayout#context:member">PowerPoint.SlideLayout.context</xref>
+  - \[
+  [PowerPoint.SlideLayout.context](/javascript/api/powerpoint/powerpoint.slidelayout#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayoutCollection#context:member">PowerPoint.SlideLayoutCollection.context</xref>
+  - \[
+  [PowerPoint.SlideLayoutCollection.context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMaster#context:member">PowerPoint.SlideMaster.context</xref>
+  - \[
+  [PowerPoint.SlideMaster.context](/javascript/api/powerpoint/powerpoint.slidemaster#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMasterCollection#context:member">PowerPoint.SlideMasterCollection.context</xref>
+  - \[
+  [PowerPoint.SlideMasterCollection.context](/javascript/api/powerpoint/powerpoint.slidemastercollection#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Tag#context:member">PowerPoint.Tag.context</xref>
+  - \[
+  [PowerPoint.Tag.context](/javascript/api/powerpoint/powerpoint.tag#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TagCollection#context:member">PowerPoint.TagCollection.context</xref>
+  - \[
+  [PowerPoint.TagCollection.context](/javascript/api/powerpoint/powerpoint.tagcollection#context-member)
+  \]
 
   #### Examples
 

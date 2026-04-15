@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Document#frames:member">Word.Document.frames</xref>
+  - \[ [Word.Document.frames](/javascript/api/word/word.document#frames-member)
+  \]
 
-  - <xref href="word!Word.Range#frames:member">Word.Range.frames</xref>
+  - \[ [Word.Range.frames](/javascript/api/word/word.range#frames-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.RequestContext#application:member">PowerPoint.RequestContext.application</xref>
+  - \[
+  [PowerPoint.RequestContext.application](/javascript/api/powerpoint/powerpoint.requestcontext#application-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -21,10 +21,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Group#controls:member">Office.Group.controls</xref>
+  - \[
+  [Office.Group.controls](/javascript/api/office/office.group#controls-member)
+  \]
 
-  - <xref href="office!Office.Tab#controls:member">Office.Tab.controls</xref>
+  - \[ [Office.Tab.controls](/javascript/api/office/office.tab#controls-member)
+  \]
 
   #### Examples
 

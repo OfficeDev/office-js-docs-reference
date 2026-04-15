@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphData#richText:member">OneNote.Interfaces.ParagraphData.richText</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphData.richText](/javascript/api/onenote/onenote.interfaces.paragraphdata#richtext-member)
+  \]
 
 isPreview: false
 isDeprecated: false

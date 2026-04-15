@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CommentReplyUpdateData#contentRange:member">Word.Interfaces.CommentReplyUpdateData.contentRange</xref>
+  - \[
+  [Word.Interfaces.CommentReplyUpdateData.contentRange](/javascript/api/word/word.interfaces.commentreplyupdatedata#contentrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentUpdateData#contentRange:member">Word.Interfaces.CommentUpdateData.contentRange</xref>
+  - \[
+  [Word.Interfaces.CommentUpdateData.contentRange](/javascript/api/word/word.interfaces.commentupdatedata#contentrange-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member">Excel.Interfaces.RangeLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.RangeLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.rangeloadoptions#worksheet-member)
+  \]
 
 isPreview: false
 isDeprecated: false

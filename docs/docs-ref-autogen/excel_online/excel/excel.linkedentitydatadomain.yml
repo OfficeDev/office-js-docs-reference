@@ -21,8 +21,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomainCollection#items:member">Excel.LinkedEntityDataDomainCollection.items</xref>
+  - \[
+  [Excel.LinkedEntityDataDomainCollection.items](/javascript/api/excel/excel.linkedentitydatadomaincollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,23 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#bottom:member">PowerPoint.Interfaces.BordersLoadOptions.bottom</xref>
+  - \[
+  [PowerPoint.Interfaces.BordersLoadOptions.bottom](/javascript/api/powerpoint/powerpoint.interfaces.bordersloadoptions#bottom-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalDown:member">PowerPoint.Interfaces.BordersLoadOptions.diagonalDown</xref>
+  - \[
+  [PowerPoint.Interfaces.BordersLoadOptions.diagonalDown](/javascript/api/powerpoint/powerpoint.interfaces.bordersloadoptions#diagonaldown-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member">PowerPoint.Interfaces.BordersLoadOptions.diagonalUp</xref>
+  - \[
+  [PowerPoint.Interfaces.BordersLoadOptions.diagonalUp](/javascript/api/powerpoint/powerpoint.interfaces.bordersloadoptions#diagonalup-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#left:member">PowerPoint.Interfaces.BordersLoadOptions.left</xref>
+  - \[
+  [PowerPoint.Interfaces.BordersLoadOptions.left](/javascript/api/powerpoint/powerpoint.interfaces.bordersloadoptions#left-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#right:member">PowerPoint.Interfaces.BordersLoadOptions.right</xref>
+  - \[
+  [PowerPoint.Interfaces.BordersLoadOptions.right](/javascript/api/powerpoint/powerpoint.interfaces.bordersloadoptions#right-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#top:member">PowerPoint.Interfaces.BordersLoadOptions.top</xref>
+  - \[
+  [PowerPoint.Interfaces.BordersLoadOptions.top](/javascript/api/powerpoint/powerpoint.interfaces.bordersloadoptions#top-member)
+  \]
 
 isPreview: false
 isDeprecated: false

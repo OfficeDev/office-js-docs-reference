@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Interfaces.DocumentLoadOptions#application:member">Visio.Interfaces.DocumentLoadOptions.application</xref>
+  - \[
+  [Visio.Interfaces.DocumentLoadOptions.application](/javascript/api/visio/visio.interfaces.documentloadoptions#application-member)
+  \]
 
 isPreview: false
 isDeprecated: false

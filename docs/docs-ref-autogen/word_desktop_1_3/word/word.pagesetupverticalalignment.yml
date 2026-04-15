@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupData#verticalAlignment:member">Word.Interfaces.PageSetupData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.PageSetupData.verticalAlignment](/javascript/api/word/word.interfaces.pagesetupdata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#verticalAlignment:member">Word.Interfaces.PageSetupUpdateData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.pagesetupupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.PageSetup#verticalAlignment:member">Word.PageSetup.verticalAlignment</xref>
+  - \[
+  [Word.PageSetup.verticalAlignment](/javascript/api/word/word.pagesetup#verticalalignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

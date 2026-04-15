@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WindowData#state:member">Word.Interfaces.WindowData.state</xref>
+  - \[
+  [Word.Interfaces.WindowData.state](/javascript/api/word/word.interfaces.windowdata#state-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowUpdateData#state:member">Word.Interfaces.WindowUpdateData.state</xref>
+  - \[
+  [Word.Interfaces.WindowUpdateData.state](/javascript/api/word/word.interfaces.windowupdatedata#state-member)
+  \]
 
-  - <xref href="word!Word.Window#state:member">Word.Window.state</xref>
+  - \[ [Word.Window.state](/javascript/api/word/word.window#state-member) \]
 
 isPreview: false
 isDeprecated: false

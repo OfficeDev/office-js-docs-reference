@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#tablesOfFigures:member">Word.Document.tablesOfFigures</xref>
+  - \[
+  [Word.Document.tablesOfFigures](/javascript/api/word/word.document#tablesoffigures-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSet:member">Excel.Interfaces.ConditionalFormatUpdateData.iconSet</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatUpdateData.iconSet](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#iconset-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#iconSetOrNullObject:member">Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#iconsetornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

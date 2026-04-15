@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LinkedWorkbookCollection#items:member">Excel.LinkedWorkbookCollection.items</xref>
+  - \[
+  [Excel.LinkedWorkbookCollection.items](/javascript/api/excel/excel.linkedworkbookcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

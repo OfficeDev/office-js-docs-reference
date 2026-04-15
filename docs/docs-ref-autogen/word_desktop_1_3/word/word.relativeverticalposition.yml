@@ -17,23 +17,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Frame#relativeVerticalPosition:member">Word.Frame.relativeVerticalPosition</xref>
+  - \[
+  [Word.Frame.relativeVerticalPosition](/javascript/api/word/word.frame#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#relativeVerticalPosition:member">Word.Interfaces.FrameData.relativeVerticalPosition</xref>
+  - \[
+  [Word.Interfaces.FrameData.relativeVerticalPosition](/javascript/api/word/word.interfaces.framedata#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameUpdateData#relativeVerticalPosition:member">Word.Interfaces.FrameUpdateData.relativeVerticalPosition</xref>
+  - \[
+  [Word.Interfaces.FrameUpdateData.relativeVerticalPosition](/javascript/api/word/word.interfaces.frameupdatedata#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#relativeVerticalPosition:member">Word.Interfaces.ShapeData.relativeVerticalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeData.relativeVerticalPosition](/javascript/api/word/word.interfaces.shapedata#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member">Word.Interfaces.ShapeUpdateData.relativeVerticalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.relativeVerticalPosition](/javascript/api/word/word.interfaces.shapeupdatedata#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#relativeVerticalPosition:member">Word.Shape.relativeVerticalPosition</xref>
+  - \[
+  [Word.Shape.relativeVerticalPosition](/javascript/api/word/word.shape#relativeverticalposition-member)
+  \]
 
   #### Examples
 

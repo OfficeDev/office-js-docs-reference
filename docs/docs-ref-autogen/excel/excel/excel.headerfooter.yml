@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.HeaderFooterGroup#defaultForAllPages:member">Excel.HeaderFooterGroup.defaultForAllPages</xref>
+  - \[
+  [Excel.HeaderFooterGroup.defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#defaultforallpages-member)
+  \]
 
-  - <xref
-  href="excel!Excel.HeaderFooterGroup#evenPages:member">Excel.HeaderFooterGroup.evenPages</xref>
+  - \[
+  [Excel.HeaderFooterGroup.evenPages](/javascript/api/excel/excel.headerfootergroup#evenpages-member)
+  \]
 
-  - <xref
-  href="excel!Excel.HeaderFooterGroup#firstPage:member">Excel.HeaderFooterGroup.firstPage</xref>
+  - \[
+  [Excel.HeaderFooterGroup.firstPage](/javascript/api/excel/excel.headerfootergroup#firstpage-member)
+  \]
 
-  - <xref
-  href="excel!Excel.HeaderFooterGroup#oddPages:member">Excel.HeaderFooterGroup.oddPages</xref>
+  - \[
+  [Excel.HeaderFooterGroup.oddPages](/javascript/api/excel/excel.headerfootergroup#oddpages-member)
+  \]
 
 isPreview: false
 isDeprecated: false

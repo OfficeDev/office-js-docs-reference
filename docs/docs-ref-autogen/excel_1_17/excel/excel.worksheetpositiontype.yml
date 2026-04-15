@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.InsertWorksheetOptions#positionType:member">Excel.InsertWorksheetOptions.positionType</xref>
+  - \[
+  [Excel.InsertWorksheetOptions.positionType](/javascript/api/excel/excel.insertworksheetoptions#positiontype-member)
+  \]
 
   #### Examples
 

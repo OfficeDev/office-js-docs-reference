@@ -31,14 +31,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#settings:member">Office.Document.settings</xref>
+  - \[
+  [Office.Document.settings](/javascript/api/office/office.document#settings-member)
+  \]
 
-  - <xref
-  href="office!Office.Settings#refreshAsync:member(1)">Office.Settings.refreshAsync</xref>
+  - \[
+  [Office.Settings.refreshAsync](/javascript/api/office/office.settings#refreshasync-member)
+  \]
 
-  - <xref
-  href="office!Office.SettingsChangedEventArgs#settings:member">Office.SettingsChangedEventArgs.settings</xref>
+  - \[
+  [Office.SettingsChangedEventArgs.settings](/javascript/api/office/office.settingschangedeventargs#settings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

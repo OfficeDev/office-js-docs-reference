@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeData#valueTypes:member">Excel.Interfaces.RangeData.valueTypes</xref>
+  - \[
+  [Excel.Interfaces.RangeData.valueTypes](/javascript/api/excel/excel.interfaces.rangedata#valuetypes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Range#valueTypes:member">Excel.Range.valueTypes</xref>
+  - \[
+  [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

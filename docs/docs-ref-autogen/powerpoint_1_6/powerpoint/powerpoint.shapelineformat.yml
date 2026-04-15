@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#lineFormat:member">PowerPoint.Shape.lineFormat</xref>
+  - \[
+  [PowerPoint.Shape.lineFormat](/javascript/api/powerpoint/powerpoint.shape#lineformat-member)
+  \]
 
   #### Examples
 

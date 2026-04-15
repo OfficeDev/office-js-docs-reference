@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataPivotHierarchy#showAs:member">Excel.DataPivotHierarchy.showAs</xref>
+  - \[
+  [Excel.DataPivotHierarchy.showAs](/javascript/api/excel/excel.datapivothierarchy#showas-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyData#showAs:member">Excel.Interfaces.DataPivotHierarchyData.showAs</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyData.showAs](/javascript/api/excel/excel.interfaces.datapivothierarchydata#showas-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#showAs:member">Excel.Interfaces.DataPivotHierarchyUpdateData.showAs</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyUpdateData.showAs](/javascript/api/excel/excel.interfaces.datapivothierarchyupdatedata#showas-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeViewCollectionData#items:member">Excel.Interfaces.RangeViewCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeViewCollectionData.items](/javascript/api/excel/excel.interfaces.rangeviewcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member">Excel.Interfaces.RangeViewCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeViewCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rangeviewcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

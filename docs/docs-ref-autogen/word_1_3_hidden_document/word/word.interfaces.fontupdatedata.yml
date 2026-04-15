@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyUpdateData#font:member">Word.Interfaces.BodyUpdateData.font</xref>
+  - \[
+  [Word.Interfaces.BodyUpdateData.font](/javascript/api/word/word.interfaces.bodyupdatedata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#font:member">Word.Interfaces.ContentControlUpdateData.font</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.font](/javascript/api/word/word.interfaces.contentcontrolupdatedata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphUpdateData#font:member">Word.Interfaces.ParagraphUpdateData.font</xref>
+  - \[
+  [Word.Interfaces.ParagraphUpdateData.font](/javascript/api/word/word.interfaces.paragraphupdatedata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#font:member">Word.Interfaces.RangeUpdateData.font</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.font](/javascript/api/word/word.interfaces.rangeupdatedata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowUpdateData#font:member">Word.Interfaces.TableRowUpdateData.font</xref>
+  - \[
+  [Word.Interfaces.TableRowUpdateData.font](/javascript/api/word/word.interfaces.tablerowupdatedata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableUpdateData#font:member">Word.Interfaces.TableUpdateData.font</xref>
+  - \[
+  [Word.Interfaces.TableUpdateData.font](/javascript/api/word/word.interfaces.tableupdatedata#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

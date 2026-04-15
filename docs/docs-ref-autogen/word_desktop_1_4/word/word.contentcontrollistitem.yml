@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControlListItemCollection#items:member">Word.ContentControlListItemCollection.items</xref>
+  - \[
+  [Word.ContentControlListItemCollection.items](/javascript/api/word/word.contentcontrollistitemcollection#items-member)
+  \]
 
   #### Examples
 

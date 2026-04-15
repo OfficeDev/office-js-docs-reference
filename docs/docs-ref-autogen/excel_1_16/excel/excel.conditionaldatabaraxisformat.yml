@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataBarConditionalFormat#axisFormat:member">Excel.DataBarConditionalFormat.axisFormat</xref>
+  - \[
+  [Excel.DataBarConditionalFormat.axisFormat](/javascript/api/excel/excel.databarconditionalformat#axisformat-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member">Excel.Interfaces.DataBarConditionalFormatData.axisFormat</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatData.axisFormat](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#axisformat-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat:member">Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#axisformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

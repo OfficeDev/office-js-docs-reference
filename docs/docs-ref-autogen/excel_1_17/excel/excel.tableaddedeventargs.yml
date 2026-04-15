@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TableCollection#onAdded:member">Excel.TableCollection.onAdded</xref>
+  - \[
+  [Excel.TableCollection.onAdded](/javascript/api/excel/excel.tablecollection#onadded-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#builtInDocumentProperties:member">Word.Interfaces.DocumentLoadOptions.builtInDocumentProperties</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.builtInDocumentProperties](/javascript/api/word/word.interfaces.documentloadoptions#builtindocumentproperties-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#customDocumentProperties:member">Word.Interfaces.DocumentLoadOptions.customDocumentProperties</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.customDocumentProperties](/javascript/api/word/word.interfaces.documentloadoptions#customdocumentproperties-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#properties:member">Word.Interfaces.DocumentLoadOptions.properties</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.properties](/javascript/api/word/word.interfaces.documentloadoptions#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

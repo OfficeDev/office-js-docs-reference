@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData#inkAnalysis:member">OneNote.Interfaces.InkAnalysisParagraphUpdateData.inkAnalysis</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisParagraphUpdateData.inkAnalysis](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphupdatedata#inkanalysis-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageUpdateData#inkAnalysisOrNull:member">OneNote.Interfaces.PageUpdateData.inkAnalysisOrNull</xref>
+  - \[
+  [OneNote.Interfaces.PageUpdateData.inkAnalysisOrNull](/javascript/api/onenote/onenote.interfaces.pageupdatedata#inkanalysisornull-member)
+  \]
 
 isPreview: false
 isDeprecated: false

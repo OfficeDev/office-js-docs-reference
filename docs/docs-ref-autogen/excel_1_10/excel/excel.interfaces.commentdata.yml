@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentCollectionData#items:member">Excel.Interfaces.CommentCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.CommentCollectionData.items](/javascript/api/excel/excel.interfaces.commentcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentCollectionUpdateData#items:member">Excel.Interfaces.CommentCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.CommentCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.commentcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#comments:member">Excel.Interfaces.WorkbookData.comments</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.comments](/javascript/api/excel/excel.interfaces.workbookdata#comments-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#comments:member">Excel.Interfaces.WorksheetData.comments</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.comments](/javascript/api/excel/excel.interfaces.worksheetdata#comments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

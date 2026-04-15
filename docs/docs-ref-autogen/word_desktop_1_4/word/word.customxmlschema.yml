@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlSchemaCollection#items:member">Word.CustomXmlSchemaCollection.items</xref>
+  - \[
+  [Word.CustomXmlSchemaCollection.items](/javascript/api/word/word.customxmlschemacollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameData#orientation:member">Excel.Interfaces.TextFrameData.orientation</xref>
+  - \[
+  [Excel.Interfaces.TextFrameData.orientation](/javascript/api/excel/excel.interfaces.textframedata#orientation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameUpdateData#orientation:member">Excel.Interfaces.TextFrameUpdateData.orientation</xref>
+  - \[
+  [Excel.Interfaces.TextFrameUpdateData.orientation](/javascript/api/excel/excel.interfaces.textframeupdatedata#orientation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TextFrame#orientation:member">Excel.TextFrame.orientation</xref>
+  - \[
+  [Excel.TextFrame.orientation](/javascript/api/excel/excel.textframe#orientation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.InfobarDetails#infobarType:member">Office.InfobarDetails.infobarType</xref>
+  - \[
+  [Office.InfobarDetails.infobarType](/javascript/api/outlook/office.infobardetails#infobartype-member)
+  \]
 
   #### Examples
 

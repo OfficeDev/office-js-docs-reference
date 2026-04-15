@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#groupContentControl:member">Word.ContentControl.groupContentControl</xref>
+  - \[
+  [Word.ContentControl.groupContentControl](/javascript/api/word/word.contentcontrol#groupcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

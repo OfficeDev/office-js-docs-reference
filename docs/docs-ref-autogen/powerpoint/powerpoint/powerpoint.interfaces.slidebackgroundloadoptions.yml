@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#background:member">PowerPoint.Interfaces.SlideCollectionLoadOptions.background</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideCollectionLoadOptions.background](/javascript/api/powerpoint/powerpoint.interfaces.slidecollectionloadoptions#background-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#background:member">PowerPoint.Interfaces.SlideLoadOptions.background</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLoadOptions.background](/javascript/api/powerpoint/powerpoint.interfaces.slideloadoptions#background-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#background:member">PowerPoint.Interfaces.SlideScopedCollectionLoadOptions.background</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideScopedCollectionLoadOptions.background](/javascript/api/powerpoint/powerpoint.interfaces.slidescopedcollectionloadoptions#background-member)
+  \]
 
 isPreview: false
 isDeprecated: false

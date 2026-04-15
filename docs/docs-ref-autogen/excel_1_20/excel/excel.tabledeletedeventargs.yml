@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TableCollection#onDeleted:member">Excel.TableCollection.onDeleted</xref>
+  - \[
+  [Excel.TableCollection.onDeleted](/javascript/api/excel/excel.tablecollection#ondeleted-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#windowState:member">Excel.Interfaces.WindowData.windowState</xref>
+  - \[
+  [Excel.Interfaces.WindowData.windowState](/javascript/api/excel/excel.interfaces.windowdata#windowstate-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowUpdateData#windowState:member">Excel.Interfaces.WindowUpdateData.windowState</xref>
+  - \[
+  [Excel.Interfaces.WindowUpdateData.windowState](/javascript/api/excel/excel.interfaces.windowupdatedata#windowstate-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Window#windowState:member">Excel.Window.windowState</xref>
+  - \[
+  [Excel.Window.windowState](/javascript/api/excel/excel.window#windowstate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

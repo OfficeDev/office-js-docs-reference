@@ -17,30 +17,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.GeometricShape#shape:member">Excel.GeometricShape.shape</xref>
+  - \[
+  [Excel.GeometricShape.shape](/javascript/api/excel/excel.geometricshape#shape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.GroupShapeCollection#items:member">Excel.GroupShapeCollection.items</xref>
+  - \[
+  [Excel.GroupShapeCollection.items](/javascript/api/excel/excel.groupshapecollection#items-member)
+  \]
 
-  - <xref href="excel!Excel.Image#shape:member">Excel.Image.shape</xref>
+  - \[ [Excel.Image.shape](/javascript/api/excel/excel.image#shape-member) \]
 
-  - <xref
-  href="excel!Excel.Line#beginConnectedShape:member">Excel.Line.beginConnectedShape</xref>
+  - \[
+  [Excel.Line.beginConnectedShape](/javascript/api/excel/excel.line#beginconnectedshape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Line#endConnectedShape:member">Excel.Line.endConnectedShape</xref>
+  - \[
+  [Excel.Line.endConnectedShape](/javascript/api/excel/excel.line#endconnectedshape-member)
+  \]
 
-  - <xref href="excel!Excel.Line#shape:member">Excel.Line.shape</xref>
+  - \[ [Excel.Line.shape](/javascript/api/excel/excel.line#shape-member) \]
 
-  - <xref
-  href="excel!Excel.Shape#parentGroup:member">Excel.Shape.parentGroup</xref>
+  - \[
+  [Excel.Shape.parentGroup](/javascript/api/excel/excel.shape#parentgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeCollection#items:member">Excel.ShapeCollection.items</xref>
+  - \[
+  [Excel.ShapeCollection.items](/javascript/api/excel/excel.shapecollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeGroup#shape:member">Excel.ShapeGroup.shape</xref>
+  - \[
+  [Excel.ShapeGroup.shape](/javascript/api/excel/excel.shapegroup#shape-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#textLineEnding:member">Word.Document.textLineEnding</xref>
+  - \[
+  [Word.Document.textLineEnding](/javascript/api/word/word.document#textlineending-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#textLineEnding:member">Word.Interfaces.DocumentData.textLineEnding</xref>
+  - \[
+  [Word.Interfaces.DocumentData.textLineEnding](/javascript/api/word/word.interfaces.documentdata#textlineending-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#textLineEnding:member">Word.Interfaces.DocumentUpdateData.textLineEnding</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.textLineEnding](/javascript/api/word/word.interfaces.documentupdatedata#textlineending-member)
+  \]
 
 isPreview: false
 isDeprecated: false

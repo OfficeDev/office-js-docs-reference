@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TableColumn#filter:member">Excel.TableColumn.filter</xref>
+  - \[
+  [Excel.TableColumn.filter](/javascript/api/excel/excel.tablecolumn#filter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

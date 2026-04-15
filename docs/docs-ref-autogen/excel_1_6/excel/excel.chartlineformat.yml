@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxisFormat#line:member">Excel.ChartAxisFormat.line</xref>
+  - \[
+  [Excel.ChartAxisFormat.line](/javascript/api/excel/excel.chartaxisformat#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartGridlinesFormat#line:member">Excel.ChartGridlinesFormat.line</xref>
+  - \[
+  [Excel.ChartGridlinesFormat.line](/javascript/api/excel/excel.chartgridlinesformat#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeriesFormat#line:member">Excel.ChartSeriesFormat.line</xref>
+  - \[
+  [Excel.ChartSeriesFormat.line](/javascript/api/excel/excel.chartseriesformat#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

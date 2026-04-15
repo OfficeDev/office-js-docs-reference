@@ -18,29 +18,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Chart#worksheet:member">Excel.Chart.worksheet</xref>
+  - \[
+  [Excel.Chart.worksheet](/javascript/api/excel/excel.chart#worksheet-member) \]
 
-  - <xref
-  href="excel!Excel.NamedItem#worksheet:member">Excel.NamedItem.worksheet</xref>
+  - \[
+  [Excel.NamedItem.worksheet](/javascript/api/excel/excel.nameditem#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.NamedItem#worksheetOrNullObject:member">Excel.NamedItem.worksheetOrNullObject</xref>
+  - \[
+  [Excel.NamedItem.worksheetOrNullObject](/javascript/api/excel/excel.nameditem#worksheetornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotTable#worksheet:member">Excel.PivotTable.worksheet</xref>
+  - \[
+  [Excel.PivotTable.worksheet](/javascript/api/excel/excel.pivottable#worksheet-member)
+  \]
 
-  - <xref href="excel!Excel.Range#worksheet:member">Excel.Range.worksheet</xref>
+  - \[
+  [Excel.Range.worksheet](/javascript/api/excel/excel.range#worksheet-member) \]
 
-  - <xref
-  href="excel!Excel.RangeAreas#worksheet:member">Excel.RangeAreas.worksheet</xref>
+  - \[
+  [Excel.RangeAreas.worksheet](/javascript/api/excel/excel.rangeareas#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Slicer#worksheet:member">Excel.Slicer.worksheet</xref>
+  - \[
+  [Excel.Slicer.worksheet](/javascript/api/excel/excel.slicer#worksheet-member)
+  \]
 
-  - <xref href="excel!Excel.Table#worksheet:member">Excel.Table.worksheet</xref>
+  - \[
+  [Excel.Table.worksheet](/javascript/api/excel/excel.table#worksheet-member) \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#items:member">Excel.WorksheetCollection.items</xref>
+  - \[
+  [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#items-member)
+  \]
 
   #### Examples
 

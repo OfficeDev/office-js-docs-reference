@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#majorTickMark:member">Excel.ChartAxis.majorTickMark</xref>
+  - \[
+  [Excel.ChartAxis.majorTickMark](/javascript/api/excel/excel.chartaxis#majortickmark-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxis#minorTickMark:member">Excel.ChartAxis.minorTickMark</xref>
+  - \[
+  [Excel.ChartAxis.minorTickMark](/javascript/api/excel/excel.chartaxis#minortickmark-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#majorTickMark:member">Excel.Interfaces.ChartAxisData.majorTickMark</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.majorTickMark](/javascript/api/excel/excel.interfaces.chartaxisdata#majortickmark-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#minorTickMark:member">Excel.Interfaces.ChartAxisData.minorTickMark</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.minorTickMark](/javascript/api/excel/excel.interfaces.chartaxisdata#minortickmark-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member">Excel.Interfaces.ChartAxisUpdateData.majorTickMark</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.majorTickMark](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#majortickmark-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member">Excel.Interfaces.ChartAxisUpdateData.minorTickMark</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.minorTickMark](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#minortickmark-member)
+  \]
 
 isPreview: false
 isDeprecated: false

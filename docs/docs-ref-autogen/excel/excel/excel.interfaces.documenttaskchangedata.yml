@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskChangeCollectionData#items:member">Excel.Interfaces.DocumentTaskChangeCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskChangeCollectionData.items](/javascript/api/excel/excel.interfaces.documenttaskchangecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData#items:member">Excel.Interfaces.DocumentTaskChangeCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskChangeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.documenttaskchangecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

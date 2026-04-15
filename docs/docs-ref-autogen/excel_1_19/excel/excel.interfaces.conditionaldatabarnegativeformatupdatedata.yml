@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#negativeFormat:member">Excel.Interfaces.DataBarConditionalFormatUpdateData.negativeFormat</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatUpdateData.negativeFormat](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#negativeformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

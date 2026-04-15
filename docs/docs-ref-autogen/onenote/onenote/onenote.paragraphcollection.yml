@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Outline#paragraphs:member">OneNote.Outline.paragraphs</xref>
+  - \[
+  [OneNote.Outline.paragraphs](/javascript/api/onenote/onenote.outline#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Paragraph#paragraphs:member">OneNote.Paragraph.paragraphs</xref>
+  - \[
+  [OneNote.Paragraph.paragraphs](/javascript/api/onenote/onenote.paragraph#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableCell#paragraphs:member">OneNote.TableCell.paragraphs</xref>
+  - \[
+  [OneNote.TableCell.paragraphs](/javascript/api/onenote/onenote.tablecell#paragraphs-member)
+  \]
 
 isPreview: false
 isDeprecated: false

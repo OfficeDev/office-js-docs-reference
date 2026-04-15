@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.InkWordCollection#items:member">OneNote.InkWordCollection.items</xref>
+  - \[
+  [OneNote.InkWordCollection.items](/javascript/api/onenote/onenote.inkwordcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

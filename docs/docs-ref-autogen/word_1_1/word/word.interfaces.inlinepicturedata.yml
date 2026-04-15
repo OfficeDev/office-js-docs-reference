@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#inlinePictures:member">Word.Interfaces.BodyData.inlinePictures</xref>
+  - \[
+  [Word.Interfaces.BodyData.inlinePictures](/javascript/api/word/word.interfaces.bodydata#inlinepictures-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#inlinePictures:member">Word.Interfaces.ContentControlData.inlinePictures</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.inlinePictures](/javascript/api/word/word.interfaces.contentcontroldata#inlinepictures-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionData#items:member">Word.Interfaces.InlinePictureCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionData.items](/javascript/api/word/word.interfaces.inlinepicturecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member">Word.Interfaces.InlinePictureCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionUpdateData.items](/javascript/api/word/word.interfaces.inlinepicturecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#inlinePictures:member">Word.Interfaces.ParagraphData.inlinePictures</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.inlinePictures](/javascript/api/word/word.interfaces.paragraphdata#inlinepictures-member)
+  \]
 
 isPreview: false
 isDeprecated: false

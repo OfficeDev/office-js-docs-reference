@@ -8,8 +8,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphData#table:member">OneNote.Interfaces.ParagraphData.table</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphData.table](/javascript/api/onenote/onenote.interfaces.paragraphdata#table-member)
+  \]
 
 isPreview: false
 isDeprecated: false

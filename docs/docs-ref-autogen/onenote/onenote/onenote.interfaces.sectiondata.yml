@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.NotebookData#sections:member">OneNote.Interfaces.NotebookData.sections</xref>
+  - \[
+  [OneNote.Interfaces.NotebookData.sections](/javascript/api/onenote/onenote.interfaces.notebookdata#sections-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionCollectionData#items:member">OneNote.Interfaces.SectionCollectionData.items</xref>
+  - \[
+  [OneNote.Interfaces.SectionCollectionData.items](/javascript/api/onenote/onenote.interfaces.sectioncollectiondata#items-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member">OneNote.Interfaces.SectionCollectionUpdateData.items</xref>
+  - \[
+  [OneNote.Interfaces.SectionCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.sectioncollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionGroupData#sections:member">OneNote.Interfaces.SectionGroupData.sections</xref>
+  - \[
+  [OneNote.Interfaces.SectionGroupData.sections](/javascript/api/onenote/onenote.interfaces.sectiongroupdata#sections-member)
+  \]
 
 isPreview: false
 isDeprecated: false

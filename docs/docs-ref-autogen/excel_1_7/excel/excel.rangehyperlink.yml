@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeData#hyperlink:member">Excel.Interfaces.RangeData.hyperlink</xref>
+  - \[
+  [Excel.Interfaces.RangeData.hyperlink](/javascript/api/excel/excel.interfaces.rangedata#hyperlink-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeUpdateData#hyperlink:member">Excel.Interfaces.RangeUpdateData.hyperlink</xref>
+  - \[
+  [Excel.Interfaces.RangeUpdateData.hyperlink](/javascript/api/excel/excel.interfaces.rangeupdatedata#hyperlink-member)
+  \]
 
-  - <xref href="excel!Excel.Range#hyperlink:member">Excel.Range.hyperlink</xref>
+  - \[
+  [Excel.Range.hyperlink](/javascript/api/excel/excel.range#hyperlink-member) \]
 
 isPreview: false
 isDeprecated: false

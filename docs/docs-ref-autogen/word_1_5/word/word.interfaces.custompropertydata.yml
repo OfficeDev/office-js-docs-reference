@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomPropertyCollectionData#items:member">Word.Interfaces.CustomPropertyCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CustomPropertyCollectionData.items](/javascript/api/word/word.interfaces.custompropertycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member">Word.Interfaces.CustomPropertyCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CustomPropertyCollectionUpdateData.items](/javascript/api/word/word.interfaces.custompropertycollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentPropertiesData#customProperties:member">Word.Interfaces.DocumentPropertiesData.customProperties</xref>
+  - \[
+  [Word.Interfaces.DocumentPropertiesData.customProperties](/javascript/api/word/word.interfaces.documentpropertiesdata#customproperties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -16,11 +16,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.PaneCollection#items:member">Word.PaneCollection.items</xref>
+  - \[
+  [Word.PaneCollection.items](/javascript/api/word/word.panecollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Window#activePane:member">Word.Window.activePane</xref>
+  - \[
+  [Word.Window.activePane](/javascript/api/word/word.window#activepane-member)
+  \]
 
   #### Examples
 

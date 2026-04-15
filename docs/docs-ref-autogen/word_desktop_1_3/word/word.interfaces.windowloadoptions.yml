@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member">Word.Interfaces.DocumentLoadOptions.activeWindow</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.activeWindow](/javascript/api/word/word.interfaces.documentloadoptions#activewindow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

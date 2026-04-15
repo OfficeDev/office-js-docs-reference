@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentData#outline:member">OneNote.Interfaces.PageContentData.outline</xref>
+  - \[
+  [OneNote.Interfaces.PageContentData.outline](/javascript/api/onenote/onenote.interfaces.pagecontentdata#outline-member)
+  \]
 
 isPreview: false
 isDeprecated: false

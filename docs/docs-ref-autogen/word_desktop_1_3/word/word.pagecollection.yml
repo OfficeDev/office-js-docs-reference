@@ -13,12 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Pane#pages:member">Word.Pane.pages</xref>
+  - \[ [Word.Pane.pages](/javascript/api/word/word.pane#pages-member) \]
 
-  - <xref
-  href="word!Word.Pane#pagesEnclosingViewport:member">Word.Pane.pagesEnclosingViewport</xref>
+  - \[
+  [Word.Pane.pagesEnclosingViewport](/javascript/api/word/word.pane#pagesenclosingviewport-member)
+  \]
 
-  - <xref href="word!Word.Range#pages:member">Word.Range.pages</xref>
+  - \[ [Word.Range.pages](/javascript/api/word/word.range#pages-member) \]
 
   #### Examples
 

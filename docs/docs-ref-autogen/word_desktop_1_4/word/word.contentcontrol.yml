@@ -18,50 +18,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#parentContentControl:member">Word.Body.parentContentControl</xref>
+  - \[
+  [Word.Body.parentContentControl](/javascript/api/word/word.body#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#parentContentControlOrNullObject:member">Word.Body.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Body.parentContentControlOrNullObject](/javascript/api/word/word.body#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#parentContentControl:member">Word.ContentControl.parentContentControl</xref>
+  - \[
+  [Word.ContentControl.parentContentControl](/javascript/api/word/word.contentcontrol#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#parentContentControlOrNullObject:member">Word.ContentControl.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.ContentControl.parentContentControlOrNullObject](/javascript/api/word/word.contentcontrol#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlCollection#items:member">Word.ContentControlCollection.items</xref>
+  - \[
+  [Word.ContentControlCollection.items](/javascript/api/word/word.contentcontrolcollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Field#parentContentControl:member">Word.Field.parentContentControl</xref>
+  - \[
+  [Word.Field.parentContentControl](/javascript/api/word/word.field#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Field#parentContentControlOrNullObject:member">Word.Field.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Field.parentContentControlOrNullObject](/javascript/api/word/word.field#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.InlinePicture#parentContentControl:member">Word.InlinePicture.parentContentControl</xref>
+  - \[
+  [Word.InlinePicture.parentContentControl](/javascript/api/word/word.inlinepicture#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.InlinePicture#parentContentControlOrNullObject:member">Word.InlinePicture.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.InlinePicture.parentContentControlOrNullObject](/javascript/api/word/word.inlinepicture#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#parentContentControl:member">Word.Paragraph.parentContentControl</xref>
+  - \[
+  [Word.Paragraph.parentContentControl](/javascript/api/word/word.paragraph#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#parentContentControlOrNullObject:member">Word.Paragraph.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Paragraph.parentContentControlOrNullObject](/javascript/api/word/word.paragraph#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#parentContentControl:member">Word.Range.parentContentControl</xref>
+  - \[
+  [Word.Range.parentContentControl](/javascript/api/word/word.range#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#parentContentControlOrNullObject:member">Word.Range.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Range.parentContentControlOrNullObject](/javascript/api/word/word.range#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#parentContentControl:member">Word.Table.parentContentControl</xref>
+  - \[
+  [Word.Table.parentContentControl](/javascript/api/word/word.table#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#parentContentControlOrNullObject:member">Word.Table.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Table.parentContentControlOrNullObject](/javascript/api/word/word.table#parentcontentcontrolornullobject-member)
+  \]
 
   #### Examples
 

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#attachedTemplate:member">Word.Document.attachedTemplate</xref>
+  - \[
+  [Word.Document.attachedTemplate](/javascript/api/word/word.document#attachedtemplate-member)
+  \]
 
-  - <xref
-  href="word!Word.TemplateCollection#items:member">Word.TemplateCollection.items</xref>
+  - \[
+  [Word.TemplateCollection.items](/javascript/api/word/word.templatecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

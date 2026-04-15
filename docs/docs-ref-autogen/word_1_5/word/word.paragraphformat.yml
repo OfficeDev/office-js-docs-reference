@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Style#paragraphFormat:member">Word.Style.paragraphFormat</xref>
+  - \[
+  [Word.Style.paragraphFormat](/javascript/api/word/word.style#paragraphformat-member)
+  \]
 
   #### Examples
 

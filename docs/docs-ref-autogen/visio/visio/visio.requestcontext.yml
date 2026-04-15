@@ -15,50 +15,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Application#context:member">Visio.Application.context</xref>
+  - \[
+  [Visio.Application.context](/javascript/api/visio/visio.application#context-member)
+  \]
 
-  - <xref href="visio!Visio.Comment#context:member">Visio.Comment.context</xref>
+  - \[
+  [Visio.Comment.context](/javascript/api/visio/visio.comment#context-member) \]
 
-  - <xref
-  href="visio!Visio.CommentCollection#context:member">Visio.CommentCollection.context</xref>
+  - \[
+  [Visio.CommentCollection.context](/javascript/api/visio/visio.commentcollection#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Document#context:member">Visio.Document.context</xref>
+  - \[
+  [Visio.Document.context](/javascript/api/visio/visio.document#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.DocumentView#context:member">Visio.DocumentView.context</xref>
+  - \[
+  [Visio.DocumentView.context](/javascript/api/visio/visio.documentview#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Hyperlink#context:member">Visio.Hyperlink.context</xref>
+  - \[
+  [Visio.Hyperlink.context](/javascript/api/visio/visio.hyperlink#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.HyperlinkCollection#context:member">Visio.HyperlinkCollection.context</xref>
+  - \[
+  [Visio.HyperlinkCollection.context](/javascript/api/visio/visio.hyperlinkcollection#context-member)
+  \]
 
-  - <xref href="visio!Visio.Page#context:member">Visio.Page.context</xref>
+  - \[ [Visio.Page.context](/javascript/api/visio/visio.page#context-member) \]
 
-  - <xref
-  href="visio!Visio.PageCollection#context:member">Visio.PageCollection.context</xref>
+  - \[
+  [Visio.PageCollection.context](/javascript/api/visio/visio.pagecollection#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.PageView#context:member">Visio.PageView.context</xref>
+  - \[
+  [Visio.PageView.context](/javascript/api/visio/visio.pageview#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Selection#context:member">Visio.Selection.context</xref>
+  - \[
+  [Visio.Selection.context](/javascript/api/visio/visio.selection#context-member)
+  \]
 
-  - <xref href="visio!Visio.Shape#context:member">Visio.Shape.context</xref>
+  - \[ [Visio.Shape.context](/javascript/api/visio/visio.shape#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.ShapeCollection#context:member">Visio.ShapeCollection.context</xref>
+  - \[
+  [Visio.ShapeCollection.context](/javascript/api/visio/visio.shapecollection#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.ShapeDataItem#context:member">Visio.ShapeDataItem.context</xref>
+  - \[
+  [Visio.ShapeDataItem.context](/javascript/api/visio/visio.shapedataitem#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.ShapeDataItemCollection#context:member">Visio.ShapeDataItemCollection.context</xref>
+  - \[
+  [Visio.ShapeDataItemCollection.context](/javascript/api/visio/visio.shapedataitemcollection#context-member)
+  \]
 
-  - <xref
-  href="visio!Visio.ShapeView#context:member">Visio.ShapeView.context</xref>
+  - \[
+  [Visio.ShapeView.context](/javascript/api/visio/visio.shapeview#context-member)
+  \]
 
   #### Examples
 

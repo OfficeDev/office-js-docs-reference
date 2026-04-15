@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.GoToOptions#direction:member">Word.GoToOptions.direction</xref>
+  - \[
+  [Word.GoToOptions.direction](/javascript/api/word/word.gotooptions#direction-member)
+  \]
 
 isPreview: false
 isDeprecated: false

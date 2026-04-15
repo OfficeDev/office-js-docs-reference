@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#builtInDocumentProperties:member">Word.Document.builtInDocumentProperties</xref>
+  - \[
+  [Word.Document.builtInDocumentProperties](/javascript/api/word/word.document#builtindocumentproperties-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#customDocumentProperties:member">Word.Document.customDocumentProperties</xref>
+  - \[
+  [Word.Document.customDocumentProperties](/javascript/api/word/word.document#customdocumentproperties-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#properties:member">Word.Document.properties</xref>
+  - \[
+  [Word.Document.properties](/javascript/api/word/word.document#properties-member)
+  \]
 
   #### Examples
 

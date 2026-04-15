@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.WorksheetProtectionOptions#selectionMode:member">Excel.WorksheetProtectionOptions.selectionMode</xref>
+  - \[
+  [Excel.WorksheetProtectionOptions.selectionMode](/javascript/api/excel/excel.worksheetprotectionoptions#selectionmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

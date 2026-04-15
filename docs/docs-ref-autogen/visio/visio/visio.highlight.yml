@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Interfaces.ShapeViewData#highlight:member">Visio.Interfaces.ShapeViewData.highlight</xref>
+  - \[
+  [Visio.Interfaces.ShapeViewData.highlight](/javascript/api/visio/visio.interfaces.shapeviewdata#highlight-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member">Visio.Interfaces.ShapeViewUpdateData.highlight</xref>
+  - \[
+  [Visio.Interfaces.ShapeViewUpdateData.highlight](/javascript/api/visio/visio.interfaces.shapeviewupdatedata#highlight-member)
+  \]
 
-  - <xref
-  href="visio!Visio.ShapeView#highlight:member">Visio.ShapeView.highlight</xref>
+  - \[
+  [Visio.ShapeView.highlight](/javascript/api/visio/visio.shapeview#highlight-member)
+  \]
 
 isPreview: false
 isDeprecated: false

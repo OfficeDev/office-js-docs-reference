@@ -13,13 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Field#result:member">Word.Field.result</xref>
+  - \[ [Word.Field.result](/javascript/api/word/word.field#result-member) \]
 
-  - <xref
-  href="word!Word.NoteItem#reference:member">Word.NoteItem.reference</xref>
+  - \[
+  [Word.NoteItem.reference](/javascript/api/word/word.noteitem#reference-member)
+  \]
 
-  - <xref
-  href="word!Word.RangeCollection#items:member">Word.RangeCollection.items</xref>
+  - \[
+  [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
+  \]
 
   #### Examples
 

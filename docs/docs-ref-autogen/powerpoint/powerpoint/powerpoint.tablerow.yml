@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableRowCollection#items:member">PowerPoint.TableRowCollection.items</xref>
+  - \[
+  [PowerPoint.TableRowCollection.items](/javascript/api/powerpoint/powerpoint.tablerowcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

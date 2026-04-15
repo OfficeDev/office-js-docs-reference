@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#linkedEntityDataDomains:member">Excel.Workbook.linkedEntityDataDomains</xref>
+  - \[
+  [Excel.Workbook.linkedEntityDataDomains](/javascript/api/excel/excel.workbook#linkedentitydatadomains-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Table#autoFilter:member">Excel.Table.autoFilter</xref>
+  - \[
+  [Excel.Table.autoFilter](/javascript/api/excel/excel.table#autofilter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Worksheet#autoFilter:member">Excel.Worksheet.autoFilter</xref>
+  - \[
+  [Excel.Worksheet.autoFilter](/javascript/api/excel/excel.worksheet#autofilter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

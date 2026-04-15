@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Document#onTaskPaneStateChanged:member">Visio.Document.onTaskPaneStateChanged</xref>
+  - \[
+  [Visio.Document.onTaskPaneStateChanged](/javascript/api/visio/visio.document#ontaskpanestatechanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

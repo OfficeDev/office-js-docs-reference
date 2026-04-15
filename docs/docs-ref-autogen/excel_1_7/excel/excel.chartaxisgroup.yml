@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#axisGroup:member">Excel.ChartAxis.axisGroup</xref>
+  - \[
+  [Excel.ChartAxis.axisGroup](/javascript/api/excel/excel.chartaxis#axisgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#axisGroup:member">Excel.Interfaces.ChartAxisData.axisGroup</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.axisGroup](/javascript/api/excel/excel.interfaces.chartaxisdata#axisgroup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

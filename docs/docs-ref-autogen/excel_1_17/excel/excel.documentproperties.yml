@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#properties:member">Excel.Workbook.properties</xref>
+  - \[
+  [Excel.Workbook.properties](/javascript/api/excel/excel.workbook#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

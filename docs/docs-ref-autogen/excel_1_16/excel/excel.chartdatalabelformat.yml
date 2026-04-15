@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartDataLabel#format:member">Excel.ChartDataLabel.format</xref>
+  - \[
+  [Excel.ChartDataLabel.format](/javascript/api/excel/excel.chartdatalabel#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#format:member">Excel.ChartDataLabels.format</xref>
+  - \[
+  [Excel.ChartDataLabels.format](/javascript/api/excel/excel.chartdatalabels#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

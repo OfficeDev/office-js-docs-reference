@@ -14,10 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeFormat#font:member">Excel.RangeFormat.font</xref>
+  - \[
+  [Excel.RangeFormat.font](/javascript/api/excel/excel.rangeformat#font-member)
+  \]
 
-  - <xref href="excel!Excel.Style#font:member">Excel.Style.font</xref>
+  - \[ [Excel.Style.font](/javascript/api/excel/excel.style#font-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TrackedChangeData#type:member">Word.Interfaces.TrackedChangeData.type</xref>
+  - \[
+  [Word.Interfaces.TrackedChangeData.type](/javascript/api/word/word.interfaces.trackedchangedata#type-member)
+  \]
 
-  - <xref
-  href="word!Word.TrackedChange#type:member">Word.TrackedChange.type</xref>
+  - \[
+  [Word.TrackedChange.type](/javascript/api/word/word.trackedchange#type-member)
+  \]
 
   #### Examples
 

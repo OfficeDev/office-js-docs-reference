@@ -17,20 +17,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlockGalleryContentControl#xmlMapping:member">Word.BuildingBlockGalleryContentControl.xmlMapping</xref>
+  - \[
+  [Word.BuildingBlockGalleryContentControl.xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#xmlMapping:member">Word.ContentControl.xmlMapping</xref>
+  - \[
+  [Word.ContentControl.xmlMapping](/javascript/api/word/word.contentcontrol#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.DatePickerContentControl#xmlMapping:member">Word.DatePickerContentControl.xmlMapping</xref>
+  - \[
+  [Word.DatePickerContentControl.xmlMapping](/javascript/api/word/word.datepickercontentcontrol#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.GroupContentControl#xmlMapping:member">Word.GroupContentControl.xmlMapping</xref>
+  - \[
+  [Word.GroupContentControl.xmlMapping](/javascript/api/word/word.groupcontentcontrol#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.PictureContentControl#xmlMapping:member">Word.PictureContentControl.xmlMapping</xref>
+  - \[
+  [Word.PictureContentControl.xmlMapping](/javascript/api/word/word.picturecontentcontrol#xmlmapping-member)
+  \]
 
 isPreview: false
 isDeprecated: false

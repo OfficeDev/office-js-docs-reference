@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.XmlNode#firstChild:member">Word.XmlNode.firstChild</xref>
+  - \[
+  [Word.XmlNode.firstChild](/javascript/api/word/word.xmlnode#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#lastChild:member">Word.XmlNode.lastChild</xref>
+  - \[
+  [Word.XmlNode.lastChild](/javascript/api/word/word.xmlnode#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#nextSibling:member">Word.XmlNode.nextSibling</xref>
+  - \[
+  [Word.XmlNode.nextSibling](/javascript/api/word/word.xmlnode#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#parentNode:member">Word.XmlNode.parentNode</xref>
+  - \[
+  [Word.XmlNode.parentNode](/javascript/api/word/word.xmlnode#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#previousSibling:member">Word.XmlNode.previousSibling</xref>
+  - \[
+  [Word.XmlNode.previousSibling](/javascript/api/word/word.xmlnode#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNodeCollection#items:member">Word.XmlNodeCollection.items</xref>
+  - \[
+  [Word.XmlNodeCollection.items](/javascript/api/word/word.xmlnodecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Chart#onDeactivated:member">Excel.Chart.onDeactivated</xref>
+  - \[
+  [Excel.Chart.onDeactivated](/javascript/api/excel/excel.chart#ondeactivated-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartCollection#onDeactivated:member">Excel.ChartCollection.onDeactivated</xref>
+  - \[
+  [Excel.ChartCollection.onDeactivated](/javascript/api/excel/excel.chartcollection#ondeactivated-member)
+  \]
 
 isPreview: false
 isDeprecated: false

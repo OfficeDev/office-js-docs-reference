@@ -12,30 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.FillFormat#backgroundColor:member">Word.FillFormat.backgroundColor</xref>
+  - \[
+  [Word.FillFormat.backgroundColor](/javascript/api/word/word.fillformat#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.FillFormat#foregroundColor:member">Word.FillFormat.foregroundColor</xref>
+  - \[
+  [Word.FillFormat.foregroundColor](/javascript/api/word/word.fillformat#foregroundcolor-member)
+  \]
 
-  - <xref href="word!Word.Font#textColor:member">Word.Font.textColor</xref>
+  - \[ [Word.Font.textColor](/javascript/api/word/word.font#textcolor-member) \]
 
-  - <xref href="word!Word.GlowFormat#color:member">Word.GlowFormat.color</xref>
+  - \[
+  [Word.GlowFormat.color](/javascript/api/word/word.glowformat#color-member) \]
 
-  - <xref
-  href="word!Word.LineFormat#backgroundColor:member">Word.LineFormat.backgroundColor</xref>
+  - \[
+  [Word.LineFormat.backgroundColor](/javascript/api/word/word.lineformat#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.LineFormat#foregroundColor:member">Word.LineFormat.foregroundColor</xref>
+  - \[
+  [Word.LineFormat.foregroundColor](/javascript/api/word/word.lineformat#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.ShadowFormat#foregroundColor:member">Word.ShadowFormat.foregroundColor</xref>
+  - \[
+  [Word.ShadowFormat.foregroundColor](/javascript/api/word/word.shadowformat#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#contourColor:member">Word.ThreeDimensionalFormat.contourColor</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.contourColor](/javascript/api/word/word.threedimensionalformat#contourcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#extrusionColor:member">Word.ThreeDimensionalFormat.extrusionColor</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.extrusionColor](/javascript/api/word/word.threedimensionalformat#extrusioncolor-member)
+  \]
 
 isPreview: false
 isDeprecated: false

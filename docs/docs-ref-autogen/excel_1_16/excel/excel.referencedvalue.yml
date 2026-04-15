@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ArrayCellValue#referencedValues:member">Excel.ArrayCellValue.referencedValues</xref>
+  - \[
+  [Excel.ArrayCellValue.referencedValues](/javascript/api/excel/excel.arraycellvalue#referencedvalues-member)
+  \]
 
-  - <xref
-  href="excel!Excel.EntityCellValue#referencedValues:member">Excel.EntityCellValue.referencedValues</xref>
+  - \[
+  [Excel.EntityCellValue.referencedValues](/javascript/api/excel/excel.entitycellvalue#referencedvalues-member)
+  \]
 
 
   Learn more about the types in this type alias through the following links. 

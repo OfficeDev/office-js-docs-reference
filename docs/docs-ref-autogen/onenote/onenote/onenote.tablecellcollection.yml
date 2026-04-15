@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.TableRow#cells:member">OneNote.TableRow.cells</xref>
+  - \[
+  [OneNote.TableRow.cells](/javascript/api/onenote/onenote.tablerow#cells-member)
+  \]
 
 isPreview: false
 isDeprecated: false

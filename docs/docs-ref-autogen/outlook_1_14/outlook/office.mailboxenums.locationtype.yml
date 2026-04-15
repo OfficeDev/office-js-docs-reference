@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.LocationIdentifier#type:member">Office.LocationIdentifier.type</xref>
+  - \[
+  [Office.LocationIdentifier.type](/javascript/api/outlook/office.locationidentifier#type-member)
+  \]
 
   #### Examples
 

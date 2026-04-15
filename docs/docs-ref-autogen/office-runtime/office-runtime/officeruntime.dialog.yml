@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member">OfficeRuntime.DisplayWebDialogOptions.onMessage</xref>
+  - \[
+  [OfficeRuntime.DisplayWebDialogOptions.onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#onmessage-member)
+  \]
 
-  - <xref
-  href="office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member">OfficeRuntime.DisplayWebDialogOptions.onRuntimeError</xref>
+  - \[
+  [OfficeRuntime.DisplayWebDialogOptions.onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#onruntimeerror-member)
+  \]
 
 isPreview: false
 isDeprecated: false

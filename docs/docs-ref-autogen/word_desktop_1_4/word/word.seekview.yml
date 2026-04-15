@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#seekView:member">Word.Interfaces.ViewData.seekView</xref>
+  - \[
+  [Word.Interfaces.ViewData.seekView](/javascript/api/word/word.interfaces.viewdata#seekview-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#seekView:member">Word.Interfaces.ViewUpdateData.seekView</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.seekView](/javascript/api/word/word.interfaces.viewupdatedata#seekview-member)
+  \]
 
-  - <xref href="word!Word.View#seekView:member">Word.View.seekView</xref>
+  - \[ [Word.View.seekView](/javascript/api/word/word.view#seekview-member) \]
 
 isPreview: false
 isDeprecated: false

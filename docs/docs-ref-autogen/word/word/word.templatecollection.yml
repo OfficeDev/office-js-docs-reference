@@ -20,8 +20,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Application#templates:member">Word.Application.templates</xref>
+  - \[
+  [Word.Application.templates](/javascript/api/word/word.application#templates-member)
+  \]
 
 isPreview: false
 isDeprecated: false

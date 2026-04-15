@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member">PowerPoint.Interfaces.SlideLayoutCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLayoutCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData#items:member">PowerPoint.Interfaces.SlideLayoutCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLayoutCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

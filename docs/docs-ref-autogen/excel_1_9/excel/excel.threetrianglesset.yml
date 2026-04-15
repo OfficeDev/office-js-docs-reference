@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconCollections#threeTriangles:member">Excel.IconCollections.threeTriangles</xref>
+  - \[
+  [Excel.IconCollections.threeTriangles](/javascript/api/excel/excel.iconcollections#threetriangles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

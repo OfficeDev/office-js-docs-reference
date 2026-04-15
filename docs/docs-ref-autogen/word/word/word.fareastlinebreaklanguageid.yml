@@ -14,23 +14,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#farEastLineBreakLanguage:member">Word.Document.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Document.farEastLineBreakLanguage](/javascript/api/word/word.document#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#farEastLineBreakLanguage:member">Word.Interfaces.DocumentData.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Interfaces.DocumentData.farEastLineBreakLanguage](/javascript/api/word/word.interfaces.documentdata#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#farEastLineBreakLanguage:member">Word.Interfaces.DocumentUpdateData.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.farEastLineBreakLanguage](/javascript/api/word/word.interfaces.documentupdatedata#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateData#farEastLineBreakLanguage:member">Word.Interfaces.TemplateData.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Interfaces.TemplateData.farEastLineBreakLanguage](/javascript/api/word/word.interfaces.templatedata#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLanguage:member">Word.Interfaces.TemplateUpdateData.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Interfaces.TemplateUpdateData.farEastLineBreakLanguage](/javascript/api/word/word.interfaces.templateupdatedata#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#farEastLineBreakLanguage:member">Word.Template.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Template.farEastLineBreakLanguage](/javascript/api/word/word.template#fareastlinebreaklanguage-member)
+  \]
 
 isPreview: false
 isDeprecated: false

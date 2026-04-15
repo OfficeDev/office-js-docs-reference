@@ -12,35 +12,45 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DocumentTask#assignees:member">Excel.DocumentTask.assignees</xref>
+  - \[
+  [Excel.DocumentTask.assignees](/javascript/api/excel/excel.documenttask#assignees-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DocumentTask#completedBy:member">Excel.DocumentTask.completedBy</xref>
+  - \[
+  [Excel.DocumentTask.completedBy](/javascript/api/excel/excel.documenttask#completedby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DocumentTask#createdBy:member">Excel.DocumentTask.createdBy</xref>
+  - \[
+  [Excel.DocumentTask.createdBy](/javascript/api/excel/excel.documenttask#createdby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DocumentTaskChange#assignee:member">Excel.DocumentTaskChange.assignee</xref>
+  - \[
+  [Excel.DocumentTaskChange.assignee](/javascript/api/excel/excel.documenttaskchange#assignee-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DocumentTaskChange#changedBy:member">Excel.DocumentTaskChange.changedBy</xref>
+  - \[
+  [Excel.DocumentTaskChange.changedBy](/javascript/api/excel/excel.documenttaskchange#changedby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member">Excel.Interfaces.DocumentTaskChangeData.assignee</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskChangeData.assignee](/javascript/api/excel/excel.interfaces.documenttaskchangedata#assignee-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member">Excel.Interfaces.DocumentTaskChangeData.changedBy</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskChangeData.changedBy](/javascript/api/excel/excel.interfaces.documenttaskchangedata#changedby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskData#assignees:member">Excel.Interfaces.DocumentTaskData.assignees</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskData.assignees](/javascript/api/excel/excel.interfaces.documenttaskdata#assignees-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskData#completedBy:member">Excel.Interfaces.DocumentTaskData.completedBy</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskData.completedBy](/javascript/api/excel/excel.interfaces.documenttaskdata#completedby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskData#createdBy:member">Excel.Interfaces.DocumentTaskData.createdBy</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskData.createdBy](/javascript/api/excel/excel.interfaces.documenttaskdata#createdby-member)
+  \]
 
 isPreview: true
 isDeprecated: false

@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member">Excel.Interfaces.PivotTableStyleCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotTableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablestylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member">Excel.Interfaces.PivotTableStyleCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotTableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablestylecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

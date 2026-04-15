@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member">Excel.Interfaces.ChartAxisFormatLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.chartaxisformatloadoptions#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member">Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.charterrorbarsformatloadoptions#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member">Excel.Interfaces.ChartGridlinesFormatLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ChartGridlinesFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.chartgridlinesformatloadoptions#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member">Excel.Interfaces.ChartSeriesFormatLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.chartseriesformatloadoptions#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#line:member">Excel.Interfaces.ChartTrendlineFormatLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.charttrendlineformatloadoptions#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartUpdateData#legend:member">Excel.Interfaces.ChartUpdateData.legend</xref>
+  - \[
+  [Excel.Interfaces.ChartUpdateData.legend](/javascript/api/excel/excel.interfaces.chartupdatedata#legend-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CoauthorCollectionData#items:member">Word.Interfaces.CoauthorCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CoauthorCollectionData.items](/javascript/api/word/word.interfaces.coauthorcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthorCollectionUpdateData#items:member">Word.Interfaces.CoauthorCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CoauthorCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthorcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringData#authors:member">Word.Interfaces.CoauthoringData.authors</xref>
+  - \[
+  [Word.Interfaces.CoauthoringData.authors](/javascript/api/word/word.interfaces.coauthoringdata#authors-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringData#me:member">Word.Interfaces.CoauthoringData.me</xref>
+  - \[
+  [Word.Interfaces.CoauthoringData.me](/javascript/api/word/word.interfaces.coauthoringdata#me-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockData#owner:member">Word.Interfaces.CoauthoringLockData.owner</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockData.owner](/javascript/api/word/word.interfaces.coauthoringlockdata#owner-member)
+  \]
 
 isPreview: false
 isDeprecated: false

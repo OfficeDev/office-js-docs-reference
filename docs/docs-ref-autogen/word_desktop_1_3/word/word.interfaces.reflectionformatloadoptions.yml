@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontLoadOptions#reflection:member">Word.Interfaces.FontLoadOptions.reflection</xref>
+  - \[
+  [Word.Interfaces.FontLoadOptions.reflection](/javascript/api/word/word.interfaces.fontloadoptions#reflection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

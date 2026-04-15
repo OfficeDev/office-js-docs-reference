@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.HyperlinkCollection#items:member">Visio.HyperlinkCollection.items</xref>
+  - \[
+  [Visio.HyperlinkCollection.items](/javascript/api/visio/visio.hyperlinkcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

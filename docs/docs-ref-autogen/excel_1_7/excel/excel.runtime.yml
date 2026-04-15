@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RequestContext#runtime:member">Excel.RequestContext.runtime</xref>
+  - \[
+  [Excel.RequestContext.runtime](/javascript/api/excel/excel.requestcontext#runtime-member)
+  \]
 
 isPreview: false
 isDeprecated: false

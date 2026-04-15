@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPrefixMappingCollectionData#items:member">Word.Interfaces.CustomXmlPrefixMappingCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPrefixMappingCollectionData.items](/javascript/api/word/word.interfaces.customxmlprefixmappingcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member">Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlprefixmappingcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

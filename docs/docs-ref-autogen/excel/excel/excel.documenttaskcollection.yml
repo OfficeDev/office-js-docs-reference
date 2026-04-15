@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Workbook#tasks:member">Excel.Workbook.tasks</xref>
+  - \[ [Excel.Workbook.tasks](/javascript/api/excel/excel.workbook#tasks-member)
+  \]
 
-  - <xref href="excel!Excel.Worksheet#tasks:member">Excel.Worksheet.tasks</xref>
+  - \[
+  [Excel.Worksheet.tasks](/javascript/api/excel/excel.worksheet#tasks-member) \]
 
 isPreview: true
 isDeprecated: false

@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringData#conflicts:member">Word.Interfaces.CoauthoringData.conflicts</xref>
+  - \[
+  [Word.Interfaces.CoauthoringData.conflicts](/javascript/api/word/word.interfaces.coauthoringdata#conflicts-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ConflictCollectionData#items:member">Word.Interfaces.ConflictCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.ConflictCollectionData.items](/javascript/api/word/word.interfaces.conflictcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ConflictCollectionUpdateData#items:member">Word.Interfaces.ConflictCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.ConflictCollectionUpdateData.items](/javascript/api/word/word.interfaces.conflictcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#conflicts:member">Word.Interfaces.RangeData.conflicts</xref>
+  - \[
+  [Word.Interfaces.RangeData.conflicts](/javascript/api/word/word.interfaces.rangedata#conflicts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

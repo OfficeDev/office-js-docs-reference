@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookLoadOptions#linkedWorkbooks:member">Excel.Interfaces.WorkbookLoadOptions.linkedWorkbooks</xref>
+  - \[
+  [Excel.Interfaces.WorkbookLoadOptions.linkedWorkbooks](/javascript/api/excel/excel.interfaces.workbookloadoptions#linkedworkbooks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

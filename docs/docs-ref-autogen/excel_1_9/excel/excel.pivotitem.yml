@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotItemCollection#items:member">Excel.PivotItemCollection.items</xref>
+  - \[
+  [Excel.PivotItemCollection.items](/javascript/api/excel/excel.pivotitemcollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShowAsRule#baseItem:member">Excel.ShowAsRule.baseItem</xref>
+  - \[
+  [Excel.ShowAsRule.baseItem](/javascript/api/excel/excel.showasrule#baseitem-member)
+  \]
 
 isPreview: false
 isDeprecated: false

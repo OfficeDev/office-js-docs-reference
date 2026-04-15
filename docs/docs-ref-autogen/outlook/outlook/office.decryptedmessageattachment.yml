@@ -30,8 +30,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.MessageDecryptEventCompletedOptions#attachments:member">Office.MessageDecryptEventCompletedOptions.attachments</xref>
+  - \[
+  [Office.MessageDecryptEventCompletedOptions.attachments](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#attachments-member)
+  \]
 
   #### Examples
 

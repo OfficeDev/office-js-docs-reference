@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#charts:member">Excel.Worksheet.charts</xref>
+  - \[
+  [Excel.Worksheet.charts](/javascript/api/excel/excel.worksheet#charts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

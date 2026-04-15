@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Font#emphasisMark:member">Word.Font.emphasisMark</xref>
+  - \[
+  [Word.Font.emphasisMark](/javascript/api/word/word.font#emphasismark-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#emphasisMark:member">Word.Interfaces.FontData.emphasisMark</xref>
+  - \[
+  [Word.Interfaces.FontData.emphasisMark](/javascript/api/word/word.interfaces.fontdata#emphasismark-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#emphasisMark:member">Word.Interfaces.FontUpdateData.emphasisMark</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.emphasisMark](/javascript/api/word/word.interfaces.fontupdatedata#emphasismark-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#emphasisMark:member">Word.Interfaces.RangeData.emphasisMark</xref>
+  - \[
+  [Word.Interfaces.RangeData.emphasisMark](/javascript/api/word/word.interfaces.rangedata#emphasismark-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#emphasisMark:member">Word.Range.emphasisMark</xref>
+  - \[
+  [Word.Range.emphasisMark](/javascript/api/word/word.range#emphasismark-member)
+  \]
 
 isPreview: false
 isDeprecated: false

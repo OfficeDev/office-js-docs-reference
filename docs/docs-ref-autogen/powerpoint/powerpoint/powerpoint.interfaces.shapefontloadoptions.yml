@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#font:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.font</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellCollectionLoadOptions.font](/javascript/api/powerpoint/powerpoint.interfaces.tablecellcollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member">PowerPoint.Interfaces.TableCellLoadOptions.font</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellLoadOptions.font](/javascript/api/powerpoint/powerpoint.interfaces.tablecellloadoptions#font-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member">PowerPoint.Interfaces.TextRangeLoadOptions.font</xref>
+  - \[
+  [PowerPoint.Interfaces.TextRangeLoadOptions.font](/javascript/api/powerpoint/powerpoint.interfaces.textrangeloadoptions#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

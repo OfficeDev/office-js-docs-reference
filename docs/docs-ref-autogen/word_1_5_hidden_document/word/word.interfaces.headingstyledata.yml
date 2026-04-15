@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.HeadingStyleCollectionData#items:member">Word.Interfaces.HeadingStyleCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.HeadingStyleCollectionData.items](/javascript/api/word/word.interfaces.headingstylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HeadingStyleCollectionUpdateData#items:member">Word.Interfaces.HeadingStyleCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.HeadingStyleCollectionUpdateData.items](/javascript/api/word/word.interfaces.headingstylecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

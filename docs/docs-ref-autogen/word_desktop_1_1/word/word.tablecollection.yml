@@ -15,14 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#tables:member">Word.Body.tables</xref>
+  - \[ [Word.Body.tables](/javascript/api/word/word.body#tables-member) \]
 
-  - <xref
-  href="word!Word.ContentControl#tables:member">Word.ContentControl.tables</xref>
+  - \[
+  [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#tables-member)
+  \]
 
-  - <xref href="word!Word.Range#tables:member">Word.Range.tables</xref>
+  - \[ [Word.Range.tables](/javascript/api/word/word.range#tables-member) \]
 
-  - <xref href="word!Word.Table#tables:member">Word.Table.tables</xref>
+  - \[ [Word.Table.tables](/javascript/api/word/word.table#tables-member) \]
 
   #### Examples
 

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#points:member">Excel.ChartSeries.points</xref>
+  - \[
+  [Excel.ChartSeries.points](/javascript/api/excel/excel.chartseries#points-member)
+  \]
 
   #### Examples
 

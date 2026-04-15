@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#shading:member">Word.Interfaces.FrameData.shading</xref>
+  - \[
+  [Word.Interfaces.FrameData.shading](/javascript/api/word/word.interfaces.framedata#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#shading:member">Word.Interfaces.ParagraphData.shading</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.shading](/javascript/api/word/word.interfaces.paragraphdata#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#shading:member">Word.Interfaces.RangeData.shading</xref>
+  - \[
+  [Word.Interfaces.RangeData.shading](/javascript/api/word/word.interfaces.rangedata#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableColumnData#shading:member">Word.Interfaces.TableColumnData.shading</xref>
+  - \[
+  [Word.Interfaces.TableColumnData.shading](/javascript/api/word/word.interfaces.tablecolumndata#shading-member)
+  \]
 
 isPreview: false
 isDeprecated: false

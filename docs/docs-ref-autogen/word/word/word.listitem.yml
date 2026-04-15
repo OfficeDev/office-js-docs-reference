@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Paragraph#listItem:member">Word.Paragraph.listItem</xref>
+  - \[
+  [Word.Paragraph.listItem](/javascript/api/word/word.paragraph#listitem-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#listItemOrNullObject:member">Word.Paragraph.listItemOrNullObject</xref>
+  - \[
+  [Word.Paragraph.listItemOrNullObject](/javascript/api/word/word.paragraph#listitemornullobject-member)
+  \]
 
   #### Examples
 

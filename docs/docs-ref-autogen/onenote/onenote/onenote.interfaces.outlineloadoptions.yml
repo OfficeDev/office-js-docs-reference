@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member">OneNote.Interfaces.PageContentCollectionLoadOptions.outline</xref>
+  - \[
+  [OneNote.Interfaces.PageContentCollectionLoadOptions.outline](/javascript/api/onenote/onenote.interfaces.pagecontentcollectionloadoptions#outline-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentLoadOptions#outline:member">OneNote.Interfaces.PageContentLoadOptions.outline</xref>
+  - \[
+  [OneNote.Interfaces.PageContentLoadOptions.outline](/javascript/api/onenote/onenote.interfaces.pagecontentloadoptions#outline-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#outline:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.outline</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.outline](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#outline-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#outline:member">OneNote.Interfaces.ParagraphLoadOptions.outline</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.outline](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#outline-member)
+  \]
 
 isPreview: false
 isDeprecated: false

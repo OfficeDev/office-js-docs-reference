@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#activePane:member">Excel.Interfaces.WindowCollectionLoadOptions.activePane</xref>
+  - \[
+  [Excel.Interfaces.WindowCollectionLoadOptions.activePane](/javascript/api/excel/excel.interfaces.windowcollectionloadoptions#activepane-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowLoadOptions#activePane:member">Excel.Interfaces.WindowLoadOptions.activePane</xref>
+  - \[
+  [Excel.Interfaces.WindowLoadOptions.activePane](/javascript/api/excel/excel.interfaces.windowloadoptions#activepane-member)
+  \]
 
 isPreview: false
 isDeprecated: false

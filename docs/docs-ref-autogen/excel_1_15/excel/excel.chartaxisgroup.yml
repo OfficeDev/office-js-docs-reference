@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#axisGroup:member">Excel.ChartAxis.axisGroup</xref>
+  - \[
+  [Excel.ChartAxis.axisGroup](/javascript/api/excel/excel.chartaxis#axisgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#axisGroup:member">Excel.ChartSeries.axisGroup</xref>
+  - \[
+  [Excel.ChartSeries.axisGroup](/javascript/api/excel/excel.chartseries#axisgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#axisGroup:member">Excel.Interfaces.ChartAxisData.axisGroup</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.axisGroup](/javascript/api/excel/excel.interfaces.chartaxisdata#axisgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#axisGroup:member">Excel.Interfaces.ChartSeriesData.axisGroup</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.axisGroup](/javascript/api/excel/excel.interfaces.chartseriesdata#axisgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#axisGroup:member">Excel.Interfaces.ChartSeriesUpdateData.axisGroup</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.axisGroup](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#axisgroup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

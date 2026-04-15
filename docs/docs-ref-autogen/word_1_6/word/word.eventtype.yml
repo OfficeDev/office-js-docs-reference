@@ -13,32 +13,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControlAddedEventArgs#eventType:member">Word.ContentControlAddedEventArgs.eventType</xref>
+  - \[
+  [Word.ContentControlAddedEventArgs.eventType](/javascript/api/word/word.contentcontroladdedeventargs#eventtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlDataChangedEventArgs#eventType:member">Word.ContentControlDataChangedEventArgs.eventType</xref>
+  - \[
+  [Word.ContentControlDataChangedEventArgs.eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#eventtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlDeletedEventArgs#eventType:member">Word.ContentControlDeletedEventArgs.eventType</xref>
+  - \[
+  [Word.ContentControlDeletedEventArgs.eventType](/javascript/api/word/word.contentcontroldeletedeventargs#eventtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlEnteredEventArgs#eventType:member">Word.ContentControlEnteredEventArgs.eventType</xref>
+  - \[
+  [Word.ContentControlEnteredEventArgs.eventType](/javascript/api/word/word.contentcontrolenteredeventargs#eventtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlExitedEventArgs#eventType:member">Word.ContentControlExitedEventArgs.eventType</xref>
+  - \[
+  [Word.ContentControlExitedEventArgs.eventType](/javascript/api/word/word.contentcontrolexitedeventargs#eventtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlSelectionChangedEventArgs#eventType:member">Word.ContentControlSelectionChangedEventArgs.eventType</xref>
+  - \[
+  [Word.ContentControlSelectionChangedEventArgs.eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#eventtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphAddedEventArgs#type:member">Word.ParagraphAddedEventArgs.type</xref>
+  - \[
+  [Word.ParagraphAddedEventArgs.type](/javascript/api/word/word.paragraphaddedeventargs#type-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphChangedEventArgs#type:member">Word.ParagraphChangedEventArgs.type</xref>
+  - \[
+  [Word.ParagraphChangedEventArgs.type](/javascript/api/word/word.paragraphchangedeventargs#type-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphDeletedEventArgs#type:member">Word.ParagraphDeletedEventArgs.type</xref>
+  - \[
+  [Word.ParagraphDeletedEventArgs.type](/javascript/api/word/word.paragraphdeletedeventargs#type-member)
+  \]
 
   #### Examples
 

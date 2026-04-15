@@ -13,23 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LineData#beginArrowheadLength:member">Excel.Interfaces.LineData.beginArrowheadLength</xref>
+  - \[
+  [Excel.Interfaces.LineData.beginArrowheadLength](/javascript/api/excel/excel.interfaces.linedata#beginarrowheadlength-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineData#endArrowheadLength:member">Excel.Interfaces.LineData.endArrowheadLength</xref>
+  - \[
+  [Excel.Interfaces.LineData.endArrowheadLength](/javascript/api/excel/excel.interfaces.linedata#endarrowheadlength-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member">Excel.Interfaces.LineUpdateData.beginArrowheadLength</xref>
+  - \[
+  [Excel.Interfaces.LineUpdateData.beginArrowheadLength](/javascript/api/excel/excel.interfaces.lineupdatedata#beginarrowheadlength-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineUpdateData#endArrowheadLength:member">Excel.Interfaces.LineUpdateData.endArrowheadLength</xref>
+  - \[
+  [Excel.Interfaces.LineUpdateData.endArrowheadLength](/javascript/api/excel/excel.interfaces.lineupdatedata#endarrowheadlength-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Line#beginArrowheadLength:member">Excel.Line.beginArrowheadLength</xref>
+  - \[
+  [Excel.Line.beginArrowheadLength](/javascript/api/excel/excel.line#beginarrowheadlength-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Line#endArrowheadLength:member">Excel.Line.endArrowheadLength</xref>
+  - \[
+  [Excel.Line.endArrowheadLength](/javascript/api/excel/excel.line#endarrowheadlength-member)
+  \]
 
   #### Examples
 

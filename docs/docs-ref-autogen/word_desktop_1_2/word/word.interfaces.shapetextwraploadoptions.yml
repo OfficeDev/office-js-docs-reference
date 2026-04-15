@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionLoadOptions#textWrap:member">Word.Interfaces.ShapeCollectionLoadOptions.textWrap</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionLoadOptions.textWrap](/javascript/api/word/word.interfaces.shapecollectionloadoptions#textwrap-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeLoadOptions#textWrap:member">Word.Interfaces.ShapeLoadOptions.textWrap</xref>
+  - \[
+  [Word.Interfaces.ShapeLoadOptions.textWrap](/javascript/api/word/word.interfaces.shapeloadoptions#textwrap-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#slideMasters:member">PowerPoint.Presentation.slideMasters</xref>
+  - \[
+  [PowerPoint.Presentation.slideMasters](/javascript/api/powerpoint/powerpoint.presentation#slidemasters-member)
+  \]
 
   #### Examples
 

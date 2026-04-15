@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#alignment:member">Word.Interfaces.ParagraphData.alignment</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.alignment](/javascript/api/word/word.interfaces.paragraphdata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphUpdateData#alignment:member">Word.Interfaces.ParagraphUpdateData.alignment</xref>
+  - \[
+  [Word.Interfaces.ParagraphUpdateData.alignment](/javascript/api/word/word.interfaces.paragraphupdatedata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#alignment:member">Word.Paragraph.alignment</xref>
+  - \[
+  [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#alignment-member)
+  \]
 
   #### Examples
 

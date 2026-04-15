@@ -13,76 +13,100 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ListLevelData#alignment:member">Word.Interfaces.ListLevelData.alignment</xref>
+  - \[
+  [Word.Interfaces.ListLevelData.alignment](/javascript/api/word/word.interfaces.listleveldata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListLevelUpdateData#alignment:member">Word.Interfaces.ListLevelUpdateData.alignment</xref>
+  - \[
+  [Word.Interfaces.ListLevelUpdateData.alignment](/javascript/api/word/word.interfaces.listlevelupdatedata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#alignment:member">Word.Interfaces.ParagraphData.alignment</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.alignment](/javascript/api/word/word.interfaces.paragraphdata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphFormatData#alignment:member">Word.Interfaces.ParagraphFormatData.alignment</xref>
+  - \[
+  [Word.Interfaces.ParagraphFormatData.alignment](/javascript/api/word/word.interfaces.paragraphformatdata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphFormatUpdateData#alignment:member">Word.Interfaces.ParagraphFormatUpdateData.alignment</xref>
+  - \[
+  [Word.Interfaces.ParagraphFormatUpdateData.alignment](/javascript/api/word/word.interfaces.paragraphformatupdatedata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphUpdateData#alignment:member">Word.Interfaces.ParagraphUpdateData.alignment</xref>
+  - \[
+  [Word.Interfaces.ParagraphUpdateData.alignment](/javascript/api/word/word.interfaces.paragraphupdatedata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellData#horizontalAlignment:member">Word.Interfaces.TableCellData.horizontalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableCellData.horizontalAlignment](/javascript/api/word/word.interfaces.tablecelldata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellUpdateData#horizontalAlignment:member">Word.Interfaces.TableCellUpdateData.horizontalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableCellUpdateData.horizontalAlignment](/javascript/api/word/word.interfaces.tablecellupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableData#alignment:member">Word.Interfaces.TableData.alignment</xref>
+  - \[
+  [Word.Interfaces.TableData.alignment](/javascript/api/word/word.interfaces.tabledata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableData#horizontalAlignment:member">Word.Interfaces.TableData.horizontalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableData.horizontalAlignment](/javascript/api/word/word.interfaces.tabledata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowData#horizontalAlignment:member">Word.Interfaces.TableRowData.horizontalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableRowData.horizontalAlignment](/javascript/api/word/word.interfaces.tablerowdata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member">Word.Interfaces.TableRowUpdateData.horizontalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableRowUpdateData.horizontalAlignment](/javascript/api/word/word.interfaces.tablerowupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableStyleData#alignment:member">Word.Interfaces.TableStyleData.alignment</xref>
+  - \[
+  [Word.Interfaces.TableStyleData.alignment](/javascript/api/word/word.interfaces.tablestyledata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableStyleUpdateData#alignment:member">Word.Interfaces.TableStyleUpdateData.alignment</xref>
+  - \[
+  [Word.Interfaces.TableStyleUpdateData.alignment](/javascript/api/word/word.interfaces.tablestyleupdatedata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableUpdateData#alignment:member">Word.Interfaces.TableUpdateData.alignment</xref>
+  - \[
+  [Word.Interfaces.TableUpdateData.alignment](/javascript/api/word/word.interfaces.tableupdatedata#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableUpdateData#horizontalAlignment:member">Word.Interfaces.TableUpdateData.horizontalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableUpdateData.horizontalAlignment](/javascript/api/word/word.interfaces.tableupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.ListLevel#alignment:member">Word.ListLevel.alignment</xref>
+  - \[
+  [Word.ListLevel.alignment](/javascript/api/word/word.listlevel#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#alignment:member">Word.Paragraph.alignment</xref>
+  - \[
+  [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphFormat#alignment:member">Word.ParagraphFormat.alignment</xref>
+  - \[
+  [Word.ParagraphFormat.alignment](/javascript/api/word/word.paragraphformat#alignment-member)
+  \]
 
-  - <xref href="word!Word.Table#alignment:member">Word.Table.alignment</xref>
+  - \[ [Word.Table.alignment](/javascript/api/word/word.table#alignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#horizontalAlignment:member">Word.Table.horizontalAlignment</xref>
+  - \[
+  [Word.Table.horizontalAlignment](/javascript/api/word/word.table#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.TableCell#horizontalAlignment:member">Word.TableCell.horizontalAlignment</xref>
+  - \[
+  [Word.TableCell.horizontalAlignment](/javascript/api/word/word.tablecell#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.TableRow#horizontalAlignment:member">Word.TableRow.horizontalAlignment</xref>
+  - \[
+  [Word.TableRow.horizontalAlignment](/javascript/api/word/word.tablerow#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.TableStyle#alignment:member">Word.TableStyle.alignment</xref>
+  - \[
+  [Word.TableStyle.alignment](/javascript/api/word/word.tablestyle#alignment-member)
+  \]
 
   #### Examples
 

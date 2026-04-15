@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ExternalErrorCellValue#errorSubType:member">Excel.ExternalErrorCellValue.errorSubType</xref>
+  - \[
+  [Excel.ExternalErrorCellValue.errorSubType](/javascript/api/excel/excel.externalerrorcellvalue#errorsubtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

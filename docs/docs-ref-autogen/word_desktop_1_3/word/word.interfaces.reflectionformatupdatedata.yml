@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#reflection:member">Word.Interfaces.FontUpdateData.reflection</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.reflection](/javascript/api/word/word.interfaces.fontupdatedata#reflection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

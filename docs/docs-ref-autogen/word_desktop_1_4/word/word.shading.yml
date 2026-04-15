@@ -13,10 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Style#shading:member">Word.Style.shading</xref>
+  - \[ [Word.Style.shading](/javascript/api/word/word.style#shading-member) \]
 
-  - <xref
-  href="word!Word.TableStyle#shading:member">Word.TableStyle.shading</xref>
+  - \[
+  [Word.TableStyle.shading](/javascript/api/word/word.tablestyle#shading-member)
+  \]
 
   #### Examples
 

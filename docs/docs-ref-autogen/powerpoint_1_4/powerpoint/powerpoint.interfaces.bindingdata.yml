@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BindingCollectionData#items:member">PowerPoint.Interfaces.BindingCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.BindingCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.bindingcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData#items:member">PowerPoint.Interfaces.BindingCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.BindingCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.bindingcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

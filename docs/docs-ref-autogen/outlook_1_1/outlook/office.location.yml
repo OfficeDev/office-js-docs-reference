@@ -33,8 +33,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#location:member">Office.AppointmentCompose.location</xref>
+  - \[
+  [Office.AppointmentCompose.location](/javascript/api/outlook/office.appointmentcompose#location-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CommentCollection#onDeleted:member">Excel.CommentCollection.onDeleted</xref>
+  - \[
+  [Excel.CommentCollection.onDeleted](/javascript/api/excel/excel.commentcollection#ondeleted-member)
+  \]
 
   #### Examples
 

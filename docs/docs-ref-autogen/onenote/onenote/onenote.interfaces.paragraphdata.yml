@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.OutlineData#paragraphs:member">OneNote.Interfaces.OutlineData.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.OutlineData.paragraphs](/javascript/api/onenote/onenote.interfaces.outlinedata#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionData#items:member">OneNote.Interfaces.ParagraphCollectionData.items</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionData.items](/javascript/api/onenote/onenote.interfaces.paragraphcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member">OneNote.Interfaces.ParagraphCollectionUpdateData.items</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.paragraphcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphData#paragraphs:member">OneNote.Interfaces.ParagraphData.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphData.paragraphs](/javascript/api/onenote/onenote.interfaces.paragraphdata#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableCellData#paragraphs:member">OneNote.Interfaces.TableCellData.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.TableCellData.paragraphs](/javascript/api/onenote/onenote.interfaces.tablecelldata#paragraphs-member)
+  \]
 
 isPreview: false
 isDeprecated: false

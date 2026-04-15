@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onCalculationBusy:member">Excel.Worksheet.onCalculationBusy</xref>
+  - \[
+  [Excel.Worksheet.onCalculationBusy](/javascript/api/excel/excel.worksheet#oncalculationbusy-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onCalculationBusy:member">Excel.WorksheetCollection.onCalculationBusy</xref>
+  - \[
+  [Excel.WorksheetCollection.onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#oncalculationbusy-member)
+  \]
 
 isPreview: true
 isDeprecated: false

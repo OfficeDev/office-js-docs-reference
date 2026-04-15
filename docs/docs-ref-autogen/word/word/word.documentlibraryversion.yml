@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentLibraryVersionCollection#items:member">Word.DocumentLibraryVersionCollection.items</xref>
+  - \[
+  [Word.DocumentLibraryVersionCollection.items](/javascript/api/word/word.documentlibraryversioncollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

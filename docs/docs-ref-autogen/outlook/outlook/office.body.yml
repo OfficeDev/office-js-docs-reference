@@ -41,23 +41,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#body:member">Office.AppointmentCompose.body</xref>
+  - \[
+  [Office.AppointmentCompose.body](/javascript/api/outlook/office.appointmentcompose#body-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#body:member">Office.AppointmentRead.body</xref>
+  - \[
+  [Office.AppointmentRead.body](/javascript/api/outlook/office.appointmentread#body-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#body:member">Office.LoadedMessageCompose.body</xref>
+  - \[
+  [Office.LoadedMessageCompose.body](/javascript/api/outlook/office.loadedmessagecompose#body-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#body:member">Office.LoadedMessageRead.body</xref>
+  - \[
+  [Office.LoadedMessageRead.body](/javascript/api/outlook/office.loadedmessageread#body-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#body:member">Office.MessageCompose.body</xref>
+  - \[
+  [Office.MessageCompose.body](/javascript/api/outlook/office.messagecompose#body-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#body:member">Office.MessageRead.body</xref>
+  - \[
+  [Office.MessageRead.body](/javascript/api/outlook/office.messageread#body-member)
+  \]
 
   #### Examples
 

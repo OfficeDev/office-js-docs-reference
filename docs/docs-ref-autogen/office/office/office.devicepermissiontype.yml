@@ -35,11 +35,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.DevicePermission#requestPermissions:member(1)">Office.DevicePermission.requestPermissions</xref>
+  - \[
+  [Office.DevicePermission.requestPermissions](/javascript/api/office/office.devicepermission#requestpermissions-member)
+  \]
 
-  - <xref
-  href="office!Office.DevicePermission#requestPermissionsAsync:member(1)">Office.DevicePermission.requestPermissionsAsync</xref>
+  - \[
+  [Office.DevicePermission.requestPermissionsAsync](/javascript/api/office/office.devicepermission#requestpermissionsasync-member)
+  \]
 
   #### Examples
 

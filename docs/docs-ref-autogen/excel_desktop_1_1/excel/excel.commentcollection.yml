@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#comments:member">Excel.Workbook.comments</xref>
+  - \[
+  [Excel.Workbook.comments](/javascript/api/excel/excel.workbook#comments-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Worksheet#comments:member">Excel.Worksheet.comments</xref>
+  - \[
+  [Excel.Worksheet.comments](/javascript/api/excel/excel.worksheet#comments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

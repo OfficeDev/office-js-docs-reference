@@ -13,20 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member">PowerPoint.Interfaces.ShapeLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#fill:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#fill:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellCollectionLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.tablecellcollectionloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#fill:member">PowerPoint.Interfaces.TableCellLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.tablecellloadoptions#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

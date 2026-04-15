@@ -14,10 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Range#format:member">Excel.Range.format</xref>
+  - \[ [Excel.Range.format](/javascript/api/excel/excel.range#format-member) \]
 
-  - <xref
-  href="excel!Excel.RangeAreas#format:member">Excel.RangeAreas.format</xref>
+  - \[
+  [Excel.RangeAreas.format](/javascript/api/excel/excel.rangeareas#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

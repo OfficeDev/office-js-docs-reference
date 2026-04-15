@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.PageSetup#lineNumbering:member">Word.PageSetup.lineNumbering</xref>
+  - \[
+  [Word.PageSetup.lineNumbering](/javascript/api/word/word.pagesetup#linenumbering-member)
+  \]
 
 isPreview: false
 isDeprecated: false

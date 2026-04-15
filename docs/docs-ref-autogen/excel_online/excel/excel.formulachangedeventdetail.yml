@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.WorksheetFormulaChangedEventArgs#formulaDetails:member">Excel.WorksheetFormulaChangedEventArgs.formulaDetails</xref>
+  - \[
+  [Excel.WorksheetFormulaChangedEventArgs.formulaDetails](/javascript/api/excel/excel.worksheetformulachangedeventargs#formuladetails-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -8,50 +8,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BreakData#range:member">Word.Interfaces.BreakData.range</xref>
+  - \[
+  [Word.Interfaces.BreakData.range](/javascript/api/word/word.interfaces.breakdata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#range:member">Word.Interfaces.BuildingBlockGalleryContentControlData.range</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlData.range](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#range:member">Word.Interfaces.DatePickerContentControlData.range</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.range](/javascript/api/word/word.interfaces.datepickercontentcontroldata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldData#result:member">Word.Interfaces.FieldData.result</xref>
+  - \[
+  [Word.Interfaces.FieldData.result](/javascript/api/word/word.interfaces.fielddata#result-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#range:member">Word.Interfaces.FrameData.range</xref>
+  - \[
+  [Word.Interfaces.FrameData.range](/javascript/api/word/word.interfaces.framedata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlData#range:member">Word.Interfaces.GroupContentControlData.range</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlData.range](/javascript/api/word/word.interfaces.groupcontentcontroldata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HyperlinkData#range:member">Word.Interfaces.HyperlinkData.range</xref>
+  - \[
+  [Word.Interfaces.HyperlinkData.range](/javascript/api/word/word.interfaces.hyperlinkdata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemData#reference:member">Word.Interfaces.NoteItemData.reference</xref>
+  - \[
+  [Word.Interfaces.NoteItemData.reference](/javascript/api/word/word.interfaces.noteitemdata#reference-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlData#range:member">Word.Interfaces.PictureContentControlData.range</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlData.range](/javascript/api/word/word.interfaces.picturecontentcontroldata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionData#items:member">Word.Interfaces.RangeCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionData.items](/javascript/api/word/word.interfaces.rangecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionUpdateData#items:member">Word.Interfaces.RangeCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionUpdateData.items](/javascript/api/word/word.interfaces.rangecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionData#items:member">Word.Interfaces.RangeScopedCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionData.items](/javascript/api/word/word.interfaces.rangescopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member">Word.Interfaces.RangeScopedCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionUpdateData.items](/javascript/api/word/word.interfaces.rangescopedcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlData#range:member">Word.Interfaces.RepeatingSectionContentControlData.range</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlData.range](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionItemData#range:member">Word.Interfaces.RepeatingSectionItemData.range</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionItemData.range](/javascript/api/word/word.interfaces.repeatingsectionitemdata#range-member)
+  \]
 
 isPreview: false
 isDeprecated: false

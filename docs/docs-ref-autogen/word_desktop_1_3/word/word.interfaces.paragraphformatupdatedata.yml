@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleUpdateData#paragraphFormat:member">Word.Interfaces.StyleUpdateData.paragraphFormat</xref>
+  - \[
+  [Word.Interfaces.StyleUpdateData.paragraphFormat](/javascript/api/word/word.interfaces.styleupdatedata#paragraphformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

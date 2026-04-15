@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.EntityCellValue#provider:member">Excel.EntityCellValue.provider</xref>
+  - \[
+  [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityCellValue#provider:member">Excel.LinkedEntityCellValue.provider</xref>
+  - \[
+  [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WebImageCellValue#provider:member">Excel.WebImageCellValue.provider</xref>
+  - \[
+  [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#provider-member)
+  \]
 
 isPreview: false
 isDeprecated: false

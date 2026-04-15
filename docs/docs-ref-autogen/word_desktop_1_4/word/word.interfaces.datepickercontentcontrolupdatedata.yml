@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#datePickerContentControl:member">Word.Interfaces.ContentControlUpdateData.datePickerContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.datePickerContentControl](/javascript/api/word/word.interfaces.contentcontrolupdatedata#datepickercontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

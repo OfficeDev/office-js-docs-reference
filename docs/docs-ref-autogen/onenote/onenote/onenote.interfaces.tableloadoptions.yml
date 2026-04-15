@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#table:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.table</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.table](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#table-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#table:member">OneNote.Interfaces.ParagraphLoadOptions.table</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.table](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#table-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#parentTable:member">OneNote.Interfaces.TableRowCollectionLoadOptions.parentTable</xref>
+  - \[
+  [OneNote.Interfaces.TableRowCollectionLoadOptions.parentTable](/javascript/api/onenote/onenote.interfaces.tablerowcollectionloadoptions#parenttable-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member">OneNote.Interfaces.TableRowLoadOptions.parentTable</xref>
+  - \[
+  [OneNote.Interfaces.TableRowLoadOptions.parentTable](/javascript/api/onenote/onenote.interfaces.tablerowloadoptions#parenttable-member)
+  \]
 
 isPreview: false
 isDeprecated: false

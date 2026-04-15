@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TemplateData#farEastLineBreakLanguage:member">Word.Interfaces.TemplateData.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Interfaces.TemplateData.farEastLineBreakLanguage](/javascript/api/word/word.interfaces.templatedata#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLanguage:member">Word.Interfaces.TemplateUpdateData.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Interfaces.TemplateUpdateData.farEastLineBreakLanguage](/javascript/api/word/word.interfaces.templateupdatedata#fareastlinebreaklanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#farEastLineBreakLanguage:member">Word.Template.farEastLineBreakLanguage</xref>
+  - \[
+  [Word.Template.farEastLineBreakLanguage](/javascript/api/word/word.template#fareastlinebreaklanguage-member)
+  \]
 
 isPreview: false
 isDeprecated: false

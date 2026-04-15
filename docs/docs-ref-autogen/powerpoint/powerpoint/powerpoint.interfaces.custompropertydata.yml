@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData#items:member">PowerPoint.Interfaces.CustomPropertyCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomPropertyCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.custompropertycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData#items:member">PowerPoint.Interfaces.CustomPropertyCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomPropertyCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.custompropertycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

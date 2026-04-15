@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ListTemplateApplyOptions#defaultListBehavior:member">Word.ListTemplateApplyOptions.defaultListBehavior</xref>
+  - \[
+  [Word.ListTemplateApplyOptions.defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#defaultlistbehavior-member)
+  \]
 
 isPreview: false
 isDeprecated: false

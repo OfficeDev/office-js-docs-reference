@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.QueryData#loadedTo:member">Excel.Interfaces.QueryData.loadedTo</xref>
+  - \[
+  [Excel.Interfaces.QueryData.loadedTo](/javascript/api/excel/excel.interfaces.querydata#loadedto-member)
+  \]
 
-  - <xref href="excel!Excel.Query#loadedTo:member">Excel.Query.loadedTo</xref>
+  - \[ [Excel.Query.loadedTo](/javascript/api/excel/excel.query#loadedto-member)
+  \]
 
 isPreview: false
 isDeprecated: false

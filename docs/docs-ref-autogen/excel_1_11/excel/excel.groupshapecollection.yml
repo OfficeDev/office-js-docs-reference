@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ShapeGroup#shapes:member">Excel.ShapeGroup.shapes</xref>
+  - \[
+  [Excel.ShapeGroup.shapes](/javascript/api/excel/excel.shapegroup#shapes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

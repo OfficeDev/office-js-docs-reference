@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutData#printComments:member">Excel.Interfaces.PageLayoutData.printComments</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutData.printComments](/javascript/api/excel/excel.interfaces.pagelayoutdata#printcomments-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutUpdateData#printComments:member">Excel.Interfaces.PageLayoutUpdateData.printComments</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutUpdateData.printComments](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#printcomments-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageLayout#printComments:member">Excel.PageLayout.printComments</xref>
+  - \[
+  [Excel.PageLayout.printComments](/javascript/api/excel/excel.pagelayout#printcomments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

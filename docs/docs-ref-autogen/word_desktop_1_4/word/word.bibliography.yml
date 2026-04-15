@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Application#bibliography:member">Word.Application.bibliography</xref>
+  - \[
+  [Word.Application.bibliography](/javascript/api/word/word.application#bibliography-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#bibliography:member">Word.Document.bibliography</xref>
+  - \[
+  [Word.Document.bibliography](/javascript/api/word/word.document#bibliography-member)
+  \]
 
 isPreview: false
 isDeprecated: false

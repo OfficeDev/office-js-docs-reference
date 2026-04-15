@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.FloatingInk#inkStrokes:member">OneNote.FloatingInk.inkStrokes</xref>
+  - \[
+  [OneNote.FloatingInk.inkStrokes](/javascript/api/onenote/onenote.floatingink#inkstrokes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

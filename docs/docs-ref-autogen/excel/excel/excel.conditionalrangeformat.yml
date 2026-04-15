@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellValueConditionalFormat#format:member">Excel.CellValueConditionalFormat.format</xref>
+  - \[
+  [Excel.CellValueConditionalFormat.format](/javascript/api/excel/excel.cellvalueconditionalformat#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomConditionalFormat#format:member">Excel.CustomConditionalFormat.format</xref>
+  - \[
+  [Excel.CustomConditionalFormat.format](/javascript/api/excel/excel.customconditionalformat#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PresetCriteriaConditionalFormat#format:member">Excel.PresetCriteriaConditionalFormat.format</xref>
+  - \[
+  [Excel.PresetCriteriaConditionalFormat.format](/javascript/api/excel/excel.presetcriteriaconditionalformat#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TextConditionalFormat#format:member">Excel.TextConditionalFormat.format</xref>
+  - \[
+  [Excel.TextConditionalFormat.format](/javascript/api/excel/excel.textconditionalformat#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TopBottomConditionalFormat#format:member">Excel.TopBottomConditionalFormat.format</xref>
+  - \[
+  [Excel.TopBottomConditionalFormat.format](/javascript/api/excel/excel.topbottomconditionalformat#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

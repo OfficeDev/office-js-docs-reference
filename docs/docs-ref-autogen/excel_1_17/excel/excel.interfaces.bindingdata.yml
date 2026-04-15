@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.BindingCollectionData#items:member">Excel.Interfaces.BindingCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.BindingCollectionData.items](/javascript/api/excel/excel.interfaces.bindingcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.BindingCollectionUpdateData#items:member">Excel.Interfaces.BindingCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.BindingCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.bindingcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#bindings:member">Excel.Interfaces.WorkbookData.bindings</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.bindings](/javascript/api/excel/excel.interfaces.workbookdata#bindings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

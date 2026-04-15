@@ -20,14 +20,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member">Excel.Interfaces.TableCollectionLoadOptions.rows</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionLoadOptions.rows](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#rows-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableLoadOptions#rows:member">Excel.Interfaces.TableLoadOptions.rows</xref>
+  - \[
+  [Excel.Interfaces.TableLoadOptions.rows](/javascript/api/excel/excel.interfaces.tableloadoptions#rows-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#rows:member">Excel.Interfaces.TableScopedCollectionLoadOptions.rows</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionLoadOptions.rows](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#rows-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#shapeGroup:member">Word.Interfaces.ShapeUpdateData.shapeGroup</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.shapeGroup](/javascript/api/word/word.interfaces.shapeupdatedata#shapegroup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

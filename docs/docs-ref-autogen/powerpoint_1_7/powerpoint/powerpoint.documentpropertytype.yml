@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.CustomProperty#type:member">PowerPoint.CustomProperty.type</xref>
+  - \[
+  [PowerPoint.CustomProperty.type](/javascript/api/powerpoint/powerpoint.customproperty#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomPropertyData#type:member">PowerPoint.Interfaces.CustomPropertyData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomPropertyData.type](/javascript/api/powerpoint/powerpoint.interfaces.custompropertydata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

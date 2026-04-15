@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#cells:member">OneNote.Interfaces.TableRowCollectionLoadOptions.cells</xref>
+  - \[
+  [OneNote.Interfaces.TableRowCollectionLoadOptions.cells](/javascript/api/onenote/onenote.interfaces.tablerowcollectionloadoptions#cells-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member">OneNote.Interfaces.TableRowLoadOptions.cells</xref>
+  - \[
+  [OneNote.Interfaces.TableRowLoadOptions.cells](/javascript/api/onenote/onenote.interfaces.tablerowloadoptions#cells-member)
+  \]
 
 isPreview: false
 isDeprecated: false

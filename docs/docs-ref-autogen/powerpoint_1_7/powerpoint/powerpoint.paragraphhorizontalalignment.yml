@@ -17,14 +17,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.paragraphformatdata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.paragraphformatupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member">PowerPoint.ParagraphFormat.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.ParagraphFormat.horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#horizontalalignment-member)
+  \]
 
   #### Examples
 

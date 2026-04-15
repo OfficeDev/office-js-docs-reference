@@ -15,14 +15,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#paragraphs:member">Word.Body.paragraphs</xref>
+  - \[ [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#paragraphs:member">Word.ContentControl.paragraphs</xref>
+  - \[
+  [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
+  \]
 
-  - <xref href="word!Word.List#paragraphs:member">Word.List.paragraphs</xref>
+  - \[ [Word.List.paragraphs](/javascript/api/word/word.list#paragraphs-member)
+  \]
 
-  - <xref href="word!Word.Range#paragraphs:member">Word.Range.paragraphs</xref>
+  - \[
+  [Word.Range.paragraphs](/javascript/api/word/word.range#paragraphs-member) \]
 
   #### Examples
 

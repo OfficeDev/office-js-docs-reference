@@ -16,21 +16,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Canvas#shape:member">Word.Canvas.shape</xref>
+  - \[ [Word.Canvas.shape](/javascript/api/word/word.canvas#shape-member) \]
 
-  - <xref
-  href="word!Word.Document#background:member">Word.Document.background</xref>
+  - \[
+  [Word.Document.background](/javascript/api/word/word.document#background-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#parentCanvas:member">Word.Shape.parentCanvas</xref>
+  - \[
+  [Word.Shape.parentCanvas](/javascript/api/word/word.shape#parentcanvas-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#parentGroup:member">Word.Shape.parentGroup</xref>
+  - \[
+  [Word.Shape.parentGroup](/javascript/api/word/word.shape#parentgroup-member)
+  \]
 
-  - <xref
-  href="word!Word.ShapeCollection#items:member">Word.ShapeCollection.items</xref>
+  - \[
+  [Word.ShapeCollection.items](/javascript/api/word/word.shapecollection#items-member)
+  \]
 
-  - <xref href="word!Word.ShapeGroup#shape:member">Word.ShapeGroup.shape</xref>
+  - \[
+  [Word.ShapeGroup.shape](/javascript/api/word/word.shapegroup#shape-member) \]
 
   #### Examples
 

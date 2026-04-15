@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Notebook#sectionGroups:member">OneNote.Notebook.sectionGroups</xref>
+  - \[
+  [OneNote.Notebook.sectionGroups](/javascript/api/onenote/onenote.notebook#sectiongroups-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.SectionGroup#sectionGroups:member">OneNote.SectionGroup.sectionGroups</xref>
+  - \[
+  [OneNote.SectionGroup.sectionGroups](/javascript/api/onenote/onenote.sectiongroup#sectiongroups-member)
+  \]
 
 isPreview: false
 isDeprecated: false

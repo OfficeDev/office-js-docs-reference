@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member">Excel.LinkedEntityDataDomainCollection.onLinkedEntityDataDomainAdded</xref>
+  - \[
+  [Excel.LinkedEntityDataDomainCollection.onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#onlinkedentitydatadomainadded-member)
+  \]
 
 isPreview: false
 isDeprecated: false

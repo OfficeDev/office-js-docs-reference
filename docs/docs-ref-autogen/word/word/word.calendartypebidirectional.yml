@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SelectionInsertDateTimeOptions#calendarType:member">Word.SelectionInsertDateTimeOptions.calendarType</xref>
+  - \[
+  [Word.SelectionInsertDateTimeOptions.calendarType](/javascript/api/word/word.selectioninsertdatetimeoptions#calendartype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

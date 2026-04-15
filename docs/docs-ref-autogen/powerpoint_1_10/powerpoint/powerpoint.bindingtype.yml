@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Binding#type:member">PowerPoint.Binding.type</xref>
+  - \[
+  [PowerPoint.Binding.type](/javascript/api/powerpoint/powerpoint.binding#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BindingData#type:member">PowerPoint.Interfaces.BindingData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.BindingData.type](/javascript/api/powerpoint/powerpoint.interfaces.bindingdata#type-member)
+  \]
 
   #### Examples
 

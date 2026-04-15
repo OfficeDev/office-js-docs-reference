@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CommentEventArgs#commentDetails:member">Word.CommentEventArgs.commentDetails</xref>
+  - \[
+  [Word.CommentEventArgs.commentDetails](/javascript/api/word/word.commenteventargs#commentdetails-member)
+  \]
 
   #### Examples
 

@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageBreakCollectionData#items:member">Excel.Interfaces.PageBreakCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.PageBreakCollectionData.items](/javascript/api/excel/excel.interfaces.pagebreakcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member">Excel.Interfaces.PageBreakCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.PageBreakCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pagebreakcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member">Excel.Interfaces.WorksheetData.horizontalPageBreaks</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.horizontalPageBreaks](/javascript/api/excel/excel.interfaces.worksheetdata#horizontalpagebreaks-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member">Excel.Interfaces.WorksheetData.verticalPageBreaks</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.verticalPageBreaks](/javascript/api/excel/excel.interfaces.worksheetdata#verticalpagebreaks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

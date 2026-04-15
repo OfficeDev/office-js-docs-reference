@@ -16,53 +16,69 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#firstChild:member">Word.Interfaces.CustomXmlNodeCollectionLoadOptions.firstChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionLoadOptions.firstChild](/javascript/api/word/word.interfaces.customxmlnodecollectionloadoptions#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#lastChild:member">Word.Interfaces.CustomXmlNodeCollectionLoadOptions.lastChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionLoadOptions.lastChild](/javascript/api/word/word.interfaces.customxmlnodecollectionloadoptions#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#nextSibling:member">Word.Interfaces.CustomXmlNodeCollectionLoadOptions.nextSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionLoadOptions.nextSibling](/javascript/api/word/word.interfaces.customxmlnodecollectionloadoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#parentNode:member">Word.Interfaces.CustomXmlNodeCollectionLoadOptions.parentNode</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionLoadOptions.parentNode](/javascript/api/word/word.interfaces.customxmlnodecollectionloadoptions#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#previousSibling:member">Word.Interfaces.CustomXmlNodeCollectionLoadOptions.previousSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionLoadOptions.previousSibling](/javascript/api/word/word.interfaces.customxmlnodecollectionloadoptions#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeLoadOptions#firstChild:member">Word.Interfaces.CustomXmlNodeLoadOptions.firstChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeLoadOptions.firstChild](/javascript/api/word/word.interfaces.customxmlnodeloadoptions#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeLoadOptions#lastChild:member">Word.Interfaces.CustomXmlNodeLoadOptions.lastChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeLoadOptions.lastChild](/javascript/api/word/word.interfaces.customxmlnodeloadoptions#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeLoadOptions#nextSibling:member">Word.Interfaces.CustomXmlNodeLoadOptions.nextSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeLoadOptions.nextSibling](/javascript/api/word/word.interfaces.customxmlnodeloadoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeLoadOptions#parentNode:member">Word.Interfaces.CustomXmlNodeLoadOptions.parentNode</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeLoadOptions.parentNode](/javascript/api/word/word.interfaces.customxmlnodeloadoptions#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeLoadOptions#previousSibling:member">Word.Interfaces.CustomXmlNodeLoadOptions.previousSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeLoadOptions.previousSibling](/javascript/api/word/word.interfaces.customxmlnodeloadoptions#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#documentElement:member">Word.Interfaces.CustomXmlPartCollectionLoadOptions.documentElement</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartCollectionLoadOptions.documentElement](/javascript/api/word/word.interfaces.customxmlpartcollectionloadoptions#documentelement-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartLoadOptions#documentElement:member">Word.Interfaces.CustomXmlPartLoadOptions.documentElement</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartLoadOptions.documentElement](/javascript/api/word/word.interfaces.customxmlpartloadoptions#documentelement-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#documentElement:member">Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.documentElement</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.documentElement](/javascript/api/word/word.interfaces.customxmlpartscopedcollectionloadoptions#documentelement-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#node:member">Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions.node</xref>
+  - \[
+  [Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions.node](/javascript/api/word/word.interfaces.customxmlvalidationerrorcollectionloadoptions#node-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#node:member">Word.Interfaces.CustomXmlValidationErrorLoadOptions.node</xref>
+  - \[
+  [Word.Interfaces.CustomXmlValidationErrorLoadOptions.node](/javascript/api/word/word.interfaces.customxmlvalidationerrorloadoptions#node-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlMappingLoadOptions#customXmlNode:member">Word.Interfaces.XmlMappingLoadOptions.customXmlNode</xref>
+  - \[
+  [Word.Interfaces.XmlMappingLoadOptions.customXmlNode](/javascript/api/word/word.interfaces.xmlmappingloadoptions#customxmlnode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

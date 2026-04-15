@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorder#sideIndex:member">Excel.ConditionalRangeBorder.sideIndex</xref>
+  - \[
+  [Excel.ConditionalRangeBorder.sideIndex](/javascript/api/excel/excel.conditionalrangeborder#sideindex-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderData#sideIndex:member">Excel.Interfaces.ConditionalRangeBorderData.sideIndex</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderData.sideIndex](/javascript/api/excel/excel.interfaces.conditionalrangeborderdata#sideindex-member)
+  \]
 
 isPreview: false
 isDeprecated: false

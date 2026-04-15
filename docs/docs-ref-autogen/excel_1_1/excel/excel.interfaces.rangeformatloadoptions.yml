@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeLoadOptions#format:member">Excel.Interfaces.RangeLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.RangeLoadOptions.format](/javascript/api/excel/excel.interfaces.rangeloadoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,17 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Comment#contentType:member">Excel.Comment.contentType</xref>
+  - \[
+  [Excel.Comment.contentType](/javascript/api/excel/excel.comment#contenttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentReply#contentType:member">Excel.CommentReply.contentType</xref>
+  - \[
+  [Excel.CommentReply.contentType](/javascript/api/excel/excel.commentreply#contenttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentData#contentType:member">Excel.Interfaces.CommentData.contentType</xref>
+  - \[
+  [Excel.Interfaces.CommentData.contentType](/javascript/api/excel/excel.interfaces.commentdata#contenttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentReplyData#contentType:member">Excel.Interfaces.CommentReplyData.contentType</xref>
+  - \[
+  [Excel.Interfaces.CommentReplyData.contentType](/javascript/api/excel/excel.interfaces.commentreplydata#contenttype-member)
+  \]
 
   #### Examples
 

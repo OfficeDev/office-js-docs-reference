@@ -29,11 +29,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#from:member">Office.LoadedMessageCompose.from</xref>
+  - \[
+  [Office.LoadedMessageCompose.from](/javascript/api/outlook/office.loadedmessagecompose#from-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#from:member">Office.MessageCompose.from</xref>
+  - \[
+  [Office.MessageCompose.from](/javascript/api/outlook/office.messagecompose#from-member)
+  \]
 
 isPreview: false
 isDeprecated: false

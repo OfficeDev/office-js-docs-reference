@@ -35,17 +35,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#categories:member">Office.AppointmentCompose.categories</xref>
+  - \[
+  [Office.AppointmentCompose.categories](/javascript/api/outlook/office.appointmentcompose#categories-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#categories:member">Office.AppointmentRead.categories</xref>
+  - \[
+  [Office.AppointmentRead.categories](/javascript/api/outlook/office.appointmentread#categories-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#categories:member">Office.MessageCompose.categories</xref>
+  - \[
+  [Office.MessageCompose.categories](/javascript/api/outlook/office.messagecompose#categories-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#categories:member">Office.MessageRead.categories</xref>
+  - \[
+  [Office.MessageRead.categories](/javascript/api/outlook/office.messageread#categories-member)
+  \]
 
 isPreview: false
 isDeprecated: false

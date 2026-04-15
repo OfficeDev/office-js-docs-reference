@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.HeaderFooterGroup#state:member">Excel.HeaderFooterGroup.state</xref>
+  - \[
+  [Excel.HeaderFooterGroup.state](/javascript/api/excel/excel.headerfootergroup#state-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupData#state:member">Excel.Interfaces.HeaderFooterGroupData.state</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupData.state](/javascript/api/excel/excel.interfaces.headerfootergroupdata#state-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member">Excel.Interfaces.HeaderFooterGroupUpdateData.state</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupUpdateData.state](/javascript/api/excel/excel.interfaces.headerfootergroupupdatedata#state-member)
+  \]
 
 isPreview: false
 isDeprecated: false

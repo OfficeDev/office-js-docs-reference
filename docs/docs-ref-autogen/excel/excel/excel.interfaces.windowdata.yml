@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationData#activeWindow:member">Excel.Interfaces.ApplicationData.activeWindow</xref>
+  - \[
+  [Excel.Interfaces.ApplicationData.activeWindow](/javascript/api/excel/excel.interfaces.applicationdata#activewindow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationData#windows:member">Excel.Interfaces.ApplicationData.windows</xref>
+  - \[
+  [Excel.Interfaces.ApplicationData.windows](/javascript/api/excel/excel.interfaces.applicationdata#windows-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowCollectionData#items:member">Excel.Interfaces.WindowCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.WindowCollectionData.items](/javascript/api/excel/excel.interfaces.windowcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowCollectionUpdateData#items:member">Excel.Interfaces.WindowCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.WindowCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.windowcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

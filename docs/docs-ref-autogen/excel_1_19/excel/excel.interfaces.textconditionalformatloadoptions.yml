@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparison</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparison](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#textcomparison-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparisonOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparisonOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#textcomparisonornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparison:member">Excel.Interfaces.ConditionalFormatLoadOptions.textComparison</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.textComparison](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#textcomparison-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparisonOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.textComparisonOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.textComparisonOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#textcomparisonornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

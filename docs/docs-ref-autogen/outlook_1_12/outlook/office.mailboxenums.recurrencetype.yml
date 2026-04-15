@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Recurrence#recurrenceType:member">Office.Recurrence.recurrenceType</xref>
+  - \[
+  [Office.Recurrence.recurrenceType](/javascript/api/outlook/office.recurrence#recurrencetype-member)
+  \]
 
   #### Examples
 

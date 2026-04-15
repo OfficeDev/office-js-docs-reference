@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.OfficeTheme#themeId:member">Office.OfficeTheme.themeId</xref>
+  - \[
+  [Office.OfficeTheme.themeId](/javascript/api/office/office.officetheme#themeid-member)
+  \]
 
   #### Examples
 

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#tablesOfContents:member">Word.Document.tablesOfContents</xref>
+  - \[
+  [Word.Document.tablesOfContents](/javascript/api/word/word.document#tablesofcontents-member)
+  \]
 
 isPreview: false
 isDeprecated: false

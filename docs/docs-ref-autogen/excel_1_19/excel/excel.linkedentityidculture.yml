@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LinkedEntityLoadServiceRequest#entities:member">Excel.LinkedEntityLoadServiceRequest.entities</xref>
+  - \[
+  [Excel.LinkedEntityLoadServiceRequest.entities](/javascript/api/excel/excel.linkedentityloadservicerequest#entities-member)
+  \]
 
 isPreview: false
 isDeprecated: false

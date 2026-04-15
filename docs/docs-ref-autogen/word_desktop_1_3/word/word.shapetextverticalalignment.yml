@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TextFrameData#verticalAlignment:member">Word.Interfaces.TextFrameData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TextFrameData.verticalAlignment](/javascript/api/word/word.interfaces.textframedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TextFrameUpdateData#verticalAlignment:member">Word.Interfaces.TextFrameUpdateData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TextFrameUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.textframeupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.TextFrame#verticalAlignment:member">Word.TextFrame.verticalAlignment</xref>
+  - \[
+  [Word.TextFrame.verticalAlignment](/javascript/api/word/word.textframe#verticalalignment-member)
+  \]
 
   #### Examples
 

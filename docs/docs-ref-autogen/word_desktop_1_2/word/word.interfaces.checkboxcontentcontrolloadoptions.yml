@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#checkboxContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.checkboxContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.checkboxContentControl](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#checkboxcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#checkboxContentControl:member">Word.Interfaces.ContentControlLoadOptions.checkboxContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.checkboxContentControl](/javascript/api/word/word.interfaces.contentcontrolloadoptions#checkboxcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

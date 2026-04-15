@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#onAnnotationInserted:member">Word.Document.onAnnotationInserted</xref>
+  - \[
+  [Word.Document.onAnnotationInserted](/javascript/api/word/word.document#onannotationinserted-member)
+  \]
 
   #### Examples
 

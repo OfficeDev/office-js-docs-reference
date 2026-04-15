@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#characterWidth:member">Word.Interfaces.RangeData.characterWidth</xref>
+  - \[
+  [Word.Interfaces.RangeData.characterWidth](/javascript/api/word/word.interfaces.rangedata#characterwidth-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#characterWidth:member">Word.Interfaces.RangeUpdateData.characterWidth</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.characterWidth](/javascript/api/word/word.interfaces.rangeupdatedata#characterwidth-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#characterWidth:member">Word.Range.characterWidth</xref>
+  - \[
+  [Word.Range.characterWidth](/javascript/api/word/word.range#characterwidth-member)
+  \]
 
 isPreview: false
 isDeprecated: false

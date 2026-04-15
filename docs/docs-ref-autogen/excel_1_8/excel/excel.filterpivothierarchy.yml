@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.FilterPivotHierarchyCollection#items:member">Excel.FilterPivotHierarchyCollection.items</xref>
+  - \[
+  [Excel.FilterPivotHierarchyCollection.items](/javascript/api/excel/excel.filterpivothierarchycollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

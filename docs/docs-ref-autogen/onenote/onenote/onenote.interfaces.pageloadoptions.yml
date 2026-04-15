@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member">OneNote.Interfaces.InkAnalysisLoadOptions.page</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisLoadOptions.page](/javascript/api/onenote/onenote.interfaces.inkanalysisloadoptions#page-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member">OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage</xref>
+  - \[
+  [OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage](/javascript/api/onenote/onenote.interfaces.pagecontentcollectionloadoptions#parentpage-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentLoadOptions#parentPage:member">OneNote.Interfaces.PageContentLoadOptions.parentPage</xref>
+  - \[
+  [OneNote.Interfaces.PageContentLoadOptions.parentPage](/javascript/api/onenote/onenote.interfaces.pagecontentloadoptions#parentpage-member)
+  \]
 
 isPreview: false
 isDeprecated: false

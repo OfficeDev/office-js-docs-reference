@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.ExtensionLifeCycle#taskpane:member">Office.ExtensionLifeCycle.taskpane</xref>
+  - \[
+  [Office.ExtensionLifeCycle.taskpane](/javascript/api/office/office.extensionlifecycle#taskpane-member)
+  \]
 
   #### Examples
 

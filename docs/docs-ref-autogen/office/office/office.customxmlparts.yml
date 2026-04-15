@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#customXmlParts:member">Office.Document.customXmlParts</xref>
+  - \[
+  [Office.Document.customXmlParts](/javascript/api/office/office.document#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

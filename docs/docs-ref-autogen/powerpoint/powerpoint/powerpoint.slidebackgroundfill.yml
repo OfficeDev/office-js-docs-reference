@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideBackground#fill:member">PowerPoint.SlideBackground.fill</xref>
+  - \[
+  [PowerPoint.SlideBackground.fill](/javascript/api/powerpoint/powerpoint.slidebackground#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayoutBackground#fill:member">PowerPoint.SlideLayoutBackground.fill</xref>
+  - \[
+  [PowerPoint.SlideLayoutBackground.fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMasterBackground#fill:member">PowerPoint.SlideMasterBackground.fill</xref>
+  - \[
+  [PowerPoint.SlideMasterBackground.fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#fill-member)
+  \]
 
   #### Examples
 

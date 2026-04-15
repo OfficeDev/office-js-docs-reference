@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartPoint#markerStyle:member">Excel.ChartPoint.markerStyle</xref>
+  - \[
+  [Excel.ChartPoint.markerStyle](/javascript/api/excel/excel.chartpoint#markerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#markerStyle:member">Excel.ChartSeries.markerStyle</xref>
+  - \[
+  [Excel.ChartSeries.markerStyle](/javascript/api/excel/excel.chartseries#markerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPointData#markerStyle:member">Excel.Interfaces.ChartPointData.markerStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartPointData.markerStyle](/javascript/api/excel/excel.interfaces.chartpointdata#markerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPointUpdateData#markerStyle:member">Excel.Interfaces.ChartPointUpdateData.markerStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartPointUpdateData.markerStyle](/javascript/api/excel/excel.interfaces.chartpointupdatedata#markerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#markerStyle:member">Excel.Interfaces.ChartSeriesData.markerStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.markerStyle](/javascript/api/excel/excel.interfaces.chartseriesdata#markerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member">Excel.Interfaces.ChartSeriesUpdateData.markerStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.markerStyle](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#markerstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

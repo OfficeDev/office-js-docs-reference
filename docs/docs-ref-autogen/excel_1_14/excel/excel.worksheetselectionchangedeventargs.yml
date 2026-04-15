@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onSelectionChanged:member">Excel.Worksheet.onSelectionChanged</xref>
+  - \[
+  [Excel.Worksheet.onSelectionChanged](/javascript/api/excel/excel.worksheet#onselectionchanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onSelectionChanged:member">Excel.WorksheetCollection.onSelectionChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onSelectionChanged](/javascript/api/excel/excel.worksheetcollection#onselectionchanged-member)
+  \]
 
   #### Examples
 

@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#font:member">PowerPoint.TableCellProperties.font</xref>
+  - \[
+  [PowerPoint.TableCellProperties.font](/javascript/api/powerpoint/powerpoint.tablecellproperties#font-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TextRun#font:member">PowerPoint.TextRun.font</xref>
+  - \[
+  [PowerPoint.TextRun.font](/javascript/api/powerpoint/powerpoint.textrun#font-member)
+  \]
 
   #### Examples
 

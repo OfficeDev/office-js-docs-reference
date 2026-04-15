@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ListFormatLoadOptions#list:member">Word.Interfaces.ListFormatLoadOptions.list</xref>
+  - \[
+  [Word.Interfaces.ListFormatLoadOptions.list](/javascript/api/word/word.interfaces.listformatloadoptions#list-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member">Word.Interfaces.ParagraphCollectionLoadOptions.list</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.list](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#list-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#listornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#list:member">Word.Interfaces.ParagraphLoadOptions.list</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.list](/javascript/api/word/word.interfaces.paragraphloadoptions#list-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.listOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.listOrNullObject](/javascript/api/word/word.interfaces.paragraphloadoptions#listornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

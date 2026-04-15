@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellValueConditionalFormat#rule:member">Excel.CellValueConditionalFormat.rule</xref>
+  - \[
+  [Excel.CellValueConditionalFormat.rule](/javascript/api/excel/excel.cellvalueconditionalformat#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CellValueConditionalFormatData#rule:member">Excel.Interfaces.CellValueConditionalFormatData.rule</xref>
+  - \[
+  [Excel.Interfaces.CellValueConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatdata#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#rule:member">Excel.Interfaces.CellValueConditionalFormatUpdateData.rule</xref>
+  - \[
+  [Excel.Interfaces.CellValueConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatupdatedata#rule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

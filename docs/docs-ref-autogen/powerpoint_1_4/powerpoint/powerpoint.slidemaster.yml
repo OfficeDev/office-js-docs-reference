@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#slideMaster:member">PowerPoint.Slide.slideMaster</xref>
+  - \[
+  [PowerPoint.Slide.slideMaster](/javascript/api/powerpoint/powerpoint.slide#slidemaster-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMasterCollection#items:member">PowerPoint.SlideMasterCollection.items</xref>
+  - \[
+  [PowerPoint.SlideMasterCollection.items](/javascript/api/powerpoint/powerpoint.slidemastercollection#items-member)
+  \]
 
   #### Examples
 

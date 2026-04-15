@@ -17,32 +17,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member">Word.Interfaces.BodyLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.BodyLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.bodyloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member">Word.Interfaces.ContentControlLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member">Word.Interfaces.InlinePictureLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.InlinePictureLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member">Word.Interfaces.ParagraphLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.paragraphloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member">Word.Interfaces.RangeCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member">Word.Interfaces.RangeLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.rangeloadoptions#parentcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

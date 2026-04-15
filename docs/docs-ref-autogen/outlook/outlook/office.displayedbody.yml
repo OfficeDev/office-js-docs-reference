@@ -25,7 +25,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="outlook!Office.Display#body:member">Office.Display.body</xref>
+  - \[ [Office.Display.body](/javascript/api/outlook/office.display#body-member)
+  \]
 
 isPreview: true
 isDeprecated: false

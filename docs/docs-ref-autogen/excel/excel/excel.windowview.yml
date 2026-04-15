@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#view:member">Excel.Interfaces.WindowData.view</xref>
+  - \[
+  [Excel.Interfaces.WindowData.view](/javascript/api/excel/excel.interfaces.windowdata#view-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowUpdateData#view:member">Excel.Interfaces.WindowUpdateData.view</xref>
+  - \[
+  [Excel.Interfaces.WindowUpdateData.view](/javascript/api/excel/excel.interfaces.windowupdatedata#view-member)
+  \]
 
-  - <xref href="excel!Excel.Window#view:member">Excel.Window.view</xref>
+  - \[ [Excel.Window.view](/javascript/api/excel/excel.window#view-member) \]
 
 isPreview: false
 isDeprecated: false

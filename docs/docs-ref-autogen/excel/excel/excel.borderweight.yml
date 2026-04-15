@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellBorder#weight:member">Excel.CellBorder.weight</xref>
+  - \[
+  [Excel.CellBorder.weight](/javascript/api/excel/excel.cellborder#weight-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeBorderData#weight:member">Excel.Interfaces.RangeBorderData.weight</xref>
+  - \[
+  [Excel.Interfaces.RangeBorderData.weight](/javascript/api/excel/excel.interfaces.rangeborderdata#weight-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeBorderUpdateData#weight:member">Excel.Interfaces.RangeBorderUpdateData.weight</xref>
+  - \[
+  [Excel.Interfaces.RangeBorderUpdateData.weight](/javascript/api/excel/excel.interfaces.rangeborderupdatedata#weight-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeBorder#weight:member">Excel.RangeBorder.weight</xref>
+  - \[
+  [Excel.RangeBorder.weight](/javascript/api/excel/excel.rangeborder#weight-member)
+  \]
 
 isPreview: false
 isDeprecated: false

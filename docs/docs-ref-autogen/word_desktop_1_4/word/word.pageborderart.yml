@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BorderUniversal#artStyle:member">Word.BorderUniversal.artStyle</xref>
+  - \[
+  [Word.BorderUniversal.artStyle](/javascript/api/word/word.borderuniversal#artstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalData#artStyle:member">Word.Interfaces.BorderUniversalData.artStyle</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalData.artStyle](/javascript/api/word/word.interfaces.borderuniversaldata#artstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalUpdateData#artStyle:member">Word.Interfaces.BorderUniversalUpdateData.artStyle</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalUpdateData.artStyle](/javascript/api/word/word.interfaces.borderuniversalupdatedata#artstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

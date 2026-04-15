@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeGroup#shapes:member">PowerPoint.ShapeGroup.shapes</xref>
+  - \[
+  [PowerPoint.ShapeGroup.shapes](/javascript/api/powerpoint/powerpoint.shapegroup#shapes-member)
+  \]
 
   #### Examples
 

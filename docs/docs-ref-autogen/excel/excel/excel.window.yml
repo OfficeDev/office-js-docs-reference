@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Application#activeWindow:member">Excel.Application.activeWindow</xref>
+  - \[
+  [Excel.Application.activeWindow](/javascript/api/excel/excel.application#activewindow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WindowCollection#items:member">Excel.WindowCollection.items</xref>
+  - \[
+  [Excel.WindowCollection.items](/javascript/api/excel/excel.windowcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

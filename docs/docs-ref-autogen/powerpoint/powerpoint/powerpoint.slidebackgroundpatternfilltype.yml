@@ -17,17 +17,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillData#pattern:member">PowerPoint.Interfaces.SlideBackgroundPatternFillData.pattern</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideBackgroundPatternFillData.pattern](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundpatternfilldata#pattern-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#pattern:member">PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData.pattern</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData.pattern](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundpatternfillupdatedata#pattern-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideBackgroundPatternFill#pattern:member">PowerPoint.SlideBackgroundPatternFill.pattern</xref>
+  - \[
+  [PowerPoint.SlideBackgroundPatternFill.pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#pattern-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideBackgroundPatternFillOptions#pattern:member">PowerPoint.SlideBackgroundPatternFillOptions.pattern</xref>
+  - \[
+  [PowerPoint.SlideBackgroundPatternFillOptions.pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions#pattern-member)
+  \]
 
   #### Examples
 

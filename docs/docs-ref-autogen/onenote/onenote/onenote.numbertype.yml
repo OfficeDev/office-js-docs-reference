@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.ParagraphInfo#numberType:member">OneNote.ParagraphInfo.numberType</xref>
+  - \[
+  [OneNote.ParagraphInfo.numberType](/javascript/api/onenote/onenote.paragraphinfo#numbertype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

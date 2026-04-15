@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Table#onFiltered:member">Excel.Table.onFiltered</xref>
+  - \[
+  [Excel.Table.onFiltered](/javascript/api/excel/excel.table#onfiltered-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableCollection#onFiltered:member">Excel.TableCollection.onFiltered</xref>
+  - \[
+  [Excel.TableCollection.onFiltered](/javascript/api/excel/excel.tablecollection#onfiltered-member)
+  \]
 
 isPreview: true
 isDeprecated: false

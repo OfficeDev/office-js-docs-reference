@@ -14,32 +14,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#gradientMaximumType:member">Excel.ChartSeries.gradientMaximumType</xref>
+  - \[
+  [Excel.ChartSeries.gradientMaximumType](/javascript/api/excel/excel.chartseries#gradientmaximumtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#gradientMidpointType:member">Excel.ChartSeries.gradientMidpointType</xref>
+  - \[
+  [Excel.ChartSeries.gradientMidpointType](/javascript/api/excel/excel.chartseries#gradientmidpointtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#gradientMinimumType:member">Excel.ChartSeries.gradientMinimumType</xref>
+  - \[
+  [Excel.ChartSeries.gradientMinimumType](/javascript/api/excel/excel.chartseries#gradientminimumtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#gradientMaximumType:member">Excel.Interfaces.ChartSeriesData.gradientMaximumType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.gradientMaximumType](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientmaximumtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#gradientMidpointType:member">Excel.Interfaces.ChartSeriesData.gradientMidpointType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.gradientMidpointType](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientmidpointtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#gradientMinimumType:member">Excel.Interfaces.ChartSeriesData.gradientMinimumType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.gradientMinimumType](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientminimumtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMaximumType:member">Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientmaximumtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMidpointType:member">Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientmidpointtype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#gradientMinimumType:member">Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientminimumtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

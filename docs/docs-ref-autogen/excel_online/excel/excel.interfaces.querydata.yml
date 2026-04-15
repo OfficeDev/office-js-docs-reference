@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.QueryCollectionData#items:member">Excel.Interfaces.QueryCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.QueryCollectionData.items](/javascript/api/excel/excel.interfaces.querycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.QueryCollectionUpdateData#items:member">Excel.Interfaces.QueryCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.QueryCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.querycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

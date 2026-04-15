@@ -13,10 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Annotation#state:member">Word.Annotation.state</xref>
+  - \[
+  [Word.Annotation.state](/javascript/api/word/word.annotation#state-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.AnnotationData#state:member">Word.Interfaces.AnnotationData.state</xref>
+  - \[
+  [Word.Interfaces.AnnotationData.state](/javascript/api/word/word.interfaces.annotationdata#state-member)
+  \]
 
   #### Examples
 

@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAddedEventArgs#source:member">Excel.ChartAddedEventArgs.source</xref>
+  - \[
+  [Excel.ChartAddedEventArgs.source](/javascript/api/excel/excel.chartaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDeletedEventArgs#source:member">Excel.ChartDeletedEventArgs.source</xref>
+  - \[
+  [Excel.ChartDeletedEventArgs.source](/javascript/api/excel/excel.chartdeletedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#source:member">Excel.TableChangedEventArgs.source</xref>
+  - \[
+  [Excel.TableChangedEventArgs.source](/javascript/api/excel/excel.tablechangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetAddedEventArgs#source:member">Excel.WorksheetAddedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetAddedEventArgs.source](/javascript/api/excel/excel.worksheetaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#source:member">Excel.WorksheetChangedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.source](/javascript/api/excel/excel.worksheetchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetDeletedEventArgs#source:member">Excel.WorksheetDeletedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetDeletedEventArgs.source](/javascript/api/excel/excel.worksheetdeletedeventargs#source-member)
+  \]
 
 isPreview: false
 isDeprecated: false

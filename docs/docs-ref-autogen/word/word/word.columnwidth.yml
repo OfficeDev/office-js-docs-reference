@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#columnWidth:member">Word.Interfaces.ViewData.columnWidth</xref>
+  - \[
+  [Word.Interfaces.ViewData.columnWidth](/javascript/api/word/word.interfaces.viewdata#columnwidth-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#columnWidth:member">Word.Interfaces.ViewUpdateData.columnWidth</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.columnWidth](/javascript/api/word/word.interfaces.viewupdatedata#columnwidth-member)
+  \]
 
-  - <xref href="word!Word.View#columnWidth:member">Word.View.columnWidth</xref>
+  - \[
+  [Word.View.columnWidth](/javascript/api/word/word.view#columnwidth-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member">Office.AttachmentsChangedEventArgs.attachmentStatus</xref>
+  - \[
+  [Office.AttachmentsChangedEventArgs.attachmentStatus](/javascript/api/outlook/office.attachmentschangedeventargs#attachmentstatus-member)
+  \]
 
   #### Examples
 

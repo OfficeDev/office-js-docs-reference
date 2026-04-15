@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#coauthoring:member">Word.Interfaces.DocumentData.coauthoring</xref>
+  - \[
+  [Word.Interfaces.DocumentData.coauthoring](/javascript/api/word/word.interfaces.documentdata#coauthoring-member)
+  \]
 
 isPreview: false
 isDeprecated: false

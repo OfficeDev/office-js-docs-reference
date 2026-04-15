@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#worksheets:member">Excel.Interfaces.WorkbookData.worksheets</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.worksheets](/javascript/api/excel/excel.interfaces.workbookdata#worksheets-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetCollectionData#items:member">Excel.Interfaces.WorksheetCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.WorksheetCollectionData.items](/javascript/api/excel/excel.interfaces.worksheetcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member">Excel.Interfaces.WorksheetCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.WorksheetCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.worksheetcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#documentLibraryVersions:member">Word.Document.documentLibraryVersions</xref>
+  - \[
+  [Word.Document.documentLibraryVersions](/javascript/api/word/word.document#documentlibraryversions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

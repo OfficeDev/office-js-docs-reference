@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SourceCollection#items:member">Word.SourceCollection.items</xref>
+  - \[
+  [Word.SourceCollection.items](/javascript/api/word/word.sourcecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

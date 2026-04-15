@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member">PowerPoint.Interfaces.TextRangeLoadOptions.font</xref>
+  - \[
+  [PowerPoint.Interfaces.TextRangeLoadOptions.font](/javascript/api/powerpoint/powerpoint.interfaces.textrangeloadoptions#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

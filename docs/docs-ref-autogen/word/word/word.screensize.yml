@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WebSettingsData#screenSize:member">Word.Interfaces.WebSettingsData.screenSize</xref>
+  - \[
+  [Word.Interfaces.WebSettingsData.screenSize](/javascript/api/word/word.interfaces.websettingsdata#screensize-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WebSettingsUpdateData#screenSize:member">Word.Interfaces.WebSettingsUpdateData.screenSize</xref>
+  - \[
+  [Word.Interfaces.WebSettingsUpdateData.screenSize](/javascript/api/word/word.interfaces.websettingsupdatedata#screensize-member)
+  \]
 
-  - <xref
-  href="word!Word.WebSettings#screenSize:member">Word.WebSettings.screenSize</xref>
+  - \[
+  [Word.WebSettings.screenSize](/javascript/api/word/word.websettings#screensize-member)
+  \]
 
 isPreview: false
 isDeprecated: false

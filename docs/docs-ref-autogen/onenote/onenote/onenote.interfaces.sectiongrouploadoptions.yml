@@ -14,29 +14,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroup:member">OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup</xref>
+  - \[
+  [OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup](/javascript/api/onenote/onenote.interfaces.sectioncollectionloadoptions#parentsectiongroup-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroupOrNull:member">OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull</xref>
+  - \[
+  [OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull](/javascript/api/onenote/onenote.interfaces.sectioncollectionloadoptions#parentsectiongroupornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroup:member">OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroup</xref>
+  - \[
+  [OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroup](/javascript/api/onenote/onenote.interfaces.sectiongroupcollectionloadoptions#parentsectiongroup-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroupOrNull:member">OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroupOrNull</xref>
+  - \[
+  [OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroupOrNull](/javascript/api/onenote/onenote.interfaces.sectiongroupcollectionloadoptions#parentsectiongroupornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroup:member">OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroup</xref>
+  - \[
+  [OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroup](/javascript/api/onenote/onenote.interfaces.sectiongrouploadoptions#parentsectiongroup-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroupOrNull:member">OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroupOrNull</xref>
+  - \[
+  [OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroupOrNull](/javascript/api/onenote/onenote.interfaces.sectiongrouploadoptions#parentsectiongroupornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroup:member">OneNote.Interfaces.SectionLoadOptions.parentSectionGroup</xref>
+  - \[
+  [OneNote.Interfaces.SectionLoadOptions.parentSectionGroup](/javascript/api/onenote/onenote.interfaces.sectionloadoptions#parentsectiongroup-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroupOrNull:member">OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull</xref>
+  - \[
+  [OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull](/javascript/api/onenote/onenote.interfaces.sectionloadoptions#parentsectiongroupornull-member)
+  \]
 
 isPreview: false
 isDeprecated: false

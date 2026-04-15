@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSet</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSet](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#iconset-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#iconsetornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSet:member">Excel.Interfaces.ConditionalFormatLoadOptions.iconSet</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.iconSet](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#iconset-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSetOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.iconSetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.iconSetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#iconsetornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

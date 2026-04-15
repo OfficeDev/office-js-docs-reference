@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BreakCollectionData#items:member">Word.Interfaces.BreakCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.BreakCollectionData.items](/javascript/api/word/word.interfaces.breakcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BreakCollectionUpdateData#items:member">Word.Interfaces.BreakCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.BreakCollectionUpdateData.items](/javascript/api/word/word.interfaces.breakcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationData#iterativeCalculation:member">Excel.Interfaces.ApplicationData.iterativeCalculation</xref>
+  - \[
+  [Excel.Interfaces.ApplicationData.iterativeCalculation](/javascript/api/excel/excel.interfaces.applicationdata#iterativecalculation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

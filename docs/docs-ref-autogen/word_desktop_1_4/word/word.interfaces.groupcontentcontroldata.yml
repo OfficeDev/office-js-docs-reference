@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#groupContentControl:member">Word.Interfaces.ContentControlData.groupContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.groupContentControl](/javascript/api/word/word.interfaces.contentcontroldata#groupcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

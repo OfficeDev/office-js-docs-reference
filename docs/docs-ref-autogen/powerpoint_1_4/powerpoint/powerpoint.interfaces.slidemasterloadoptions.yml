@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#slideMaster:member">PowerPoint.Interfaces.SlideCollectionLoadOptions.slideMaster</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideCollectionLoadOptions.slideMaster](/javascript/api/powerpoint/powerpoint.interfaces.slidecollectionloadoptions#slidemaster-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#slideMaster:member">PowerPoint.Interfaces.SlideLoadOptions.slideMaster</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLoadOptions.slideMaster](/javascript/api/powerpoint/powerpoint.interfaces.slideloadoptions#slidemaster-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#format:member">Excel.ChartSeries.format</xref>
+  - \[
+  [Excel.ChartSeries.format](/javascript/api/excel/excel.chartseries#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RowColumnPivotHierarchyCollection#items:member">Excel.RowColumnPivotHierarchyCollection.items</xref>
+  - \[
+  [Excel.RowColumnPivotHierarchyCollection.items](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

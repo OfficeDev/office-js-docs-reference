@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableAddOptions#columns:member">PowerPoint.TableAddOptions.columns</xref>
+  - \[
+  [PowerPoint.TableAddOptions.columns](/javascript/api/powerpoint/powerpoint.tableaddoptions#columns-member)
+  \]
 
   #### Examples
 

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#settings:member">Word.Document.settings</xref>
+  - \[
+  [Word.Document.settings](/javascript/api/word/word.document#settings-member)
+  \]
 
   #### Examples
 

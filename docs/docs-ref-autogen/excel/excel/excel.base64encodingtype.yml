@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Base64EncodedImage#type:member">Excel.Base64EncodedImage.type</xref>
+  - \[
+  [Excel.Base64EncodedImage.type](/javascript/api/excel/excel.base64encodedimage#type-member)
+  \]
 
 isPreview: true
 isDeprecated: false

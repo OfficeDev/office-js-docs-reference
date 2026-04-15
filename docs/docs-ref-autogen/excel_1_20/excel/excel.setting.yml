@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SettingCollection#items:member">Excel.SettingCollection.items</xref>
+  - \[
+  [Excel.SettingCollection.items](/javascript/api/excel/excel.settingcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

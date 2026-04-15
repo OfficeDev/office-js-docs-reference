@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableUpdateData#tableStyle:member">Excel.Interfaces.TableUpdateData.tableStyle</xref>
+  - \[
+  [Excel.Interfaces.TableUpdateData.tableStyle](/javascript/api/excel/excel.interfaces.tableupdatedata#tablestyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

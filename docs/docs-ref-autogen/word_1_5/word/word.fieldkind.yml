@@ -15,10 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Field#kind:member">Word.Field.kind</xref>
+  - \[ [Word.Field.kind](/javascript/api/word/word.field#kind-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldData#kind:member">Word.Interfaces.FieldData.kind</xref>
+  - \[
+  [Word.Interfaces.FieldData.kind](/javascript/api/word/word.interfaces.fielddata#kind-member)
+  \]
 
   #### Examples
 

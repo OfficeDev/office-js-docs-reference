@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BasicViewLayouts#compact:member">Excel.BasicViewLayouts.compact</xref>
+  - \[
+  [Excel.BasicViewLayouts.compact](/javascript/api/excel/excel.basicviewlayouts#compact-member)
+  \]
 
 isPreview: false
 isDeprecated: false

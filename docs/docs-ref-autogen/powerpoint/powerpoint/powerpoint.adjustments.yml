@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#adjustments:member">PowerPoint.Shape.adjustments</xref>
+  - \[
+  [PowerPoint.Shape.adjustments](/javascript/api/powerpoint/powerpoint.shape#adjustments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

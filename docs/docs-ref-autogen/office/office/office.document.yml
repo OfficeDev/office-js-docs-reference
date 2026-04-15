@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Binding#document:member">Office.Binding.document</xref>
+  - \[
+  [Office.Binding.document](/javascript/api/office/office.binding#document-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#document:member">Office.Bindings.document</xref>
+  - \[
+  [Office.Bindings.document](/javascript/api/office/office.bindings#document-member)
+  \]
 
-  - <xref
-  href="office!Office.Context#document:member">Office.Context.document</xref>
+  - \[
+  [Office.Context.document](/javascript/api/office/office.context#document-member)
+  \]
 
-  - <xref
-  href="office!Office.DocumentSelectionChangedEventArgs#document:member">Office.DocumentSelectionChangedEventArgs.document</xref>
+  - \[
+  [Office.DocumentSelectionChangedEventArgs.document](/javascript/api/office/office.documentselectionchangedeventargs#document-member)
+  \]
 
   #### Examples
 

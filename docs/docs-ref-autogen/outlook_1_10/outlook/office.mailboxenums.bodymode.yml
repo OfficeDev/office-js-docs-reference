@@ -44,11 +44,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Body#getAsync:member(1)">Office.Body.getAsync</xref>
+  - \[
+  [Office.Body.getAsync](/javascript/api/outlook/office.body#getasync-member) \]
 
-  - <xref
-  href="outlook!Office.Body#setAsync:member(1)">Office.Body.setAsync</xref>
+  - \[
+  [Office.Body.setAsync](/javascript/api/outlook/office.body#setasync-member) \]
 
   #### Examples
 

@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TabStopCollectionLoadOptions#next:member">Word.Interfaces.TabStopCollectionLoadOptions.next</xref>
+  - \[
+  [Word.Interfaces.TabStopCollectionLoadOptions.next](/javascript/api/word/word.interfaces.tabstopcollectionloadoptions#next-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TabStopCollectionLoadOptions#previous:member">Word.Interfaces.TabStopCollectionLoadOptions.previous</xref>
+  - \[
+  [Word.Interfaces.TabStopCollectionLoadOptions.previous](/javascript/api/word/word.interfaces.tabstopcollectionloadoptions#previous-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TabStopLoadOptions#next:member">Word.Interfaces.TabStopLoadOptions.next</xref>
+  - \[
+  [Word.Interfaces.TabStopLoadOptions.next](/javascript/api/word/word.interfaces.tabstoploadoptions#next-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TabStopLoadOptions#previous:member">Word.Interfaces.TabStopLoadOptions.previous</xref>
+  - \[
+  [Word.Interfaces.TabStopLoadOptions.previous](/javascript/api/word/word.interfaces.tabstoploadoptions#previous-member)
+  \]
 
 isPreview: false
 isDeprecated: false

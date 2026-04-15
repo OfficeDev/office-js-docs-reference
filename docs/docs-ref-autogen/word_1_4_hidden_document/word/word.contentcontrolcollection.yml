@@ -20,23 +20,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#contentControls:member">Word.Body.contentControls</xref>
+  - \[
+  [Word.Body.contentControls](/javascript/api/word/word.body#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#contentControls:member">Word.ContentControl.contentControls</xref>
+  - \[
+  [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#contentControls:member">Word.Document.contentControls</xref>
+  - \[
+  [Word.Document.contentControls](/javascript/api/word/word.document#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentCreated#contentControls:member">Word.DocumentCreated.contentControls</xref>
+  - \[
+  [Word.DocumentCreated.contentControls](/javascript/api/word/word.documentcreated#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#contentControls:member">Word.Paragraph.contentControls</xref>
+  - \[
+  [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#contentControls:member">Word.Range.contentControls</xref>
+  - \[
+  [Word.Range.contentControls](/javascript/api/word/word.range#contentcontrols-member)
+  \]
 
   #### Examples
 

@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Document#onDocumentLoadComplete:member">Visio.Document.onDocumentLoadComplete</xref>
+  - \[
+  [Visio.Document.onDocumentLoadComplete](/javascript/api/visio/visio.document#ondocumentloadcomplete-member)
+  \]
 
   #### Examples
 

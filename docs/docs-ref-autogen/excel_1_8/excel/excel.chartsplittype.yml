@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#splitType:member">Excel.ChartSeries.splitType</xref>
+  - \[
+  [Excel.ChartSeries.splitType](/javascript/api/excel/excel.chartseries#splittype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#splitType:member">Excel.Interfaces.ChartSeriesData.splitType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.splitType](/javascript/api/excel/excel.interfaces.chartseriesdata#splittype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member">Excel.Interfaces.ChartSeriesUpdateData.splitType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.splitType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#splittype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

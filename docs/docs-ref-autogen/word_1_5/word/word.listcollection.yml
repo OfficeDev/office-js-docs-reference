@@ -13,12 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#lists:member">Word.Body.lists</xref>
+  - \[ [Word.Body.lists](/javascript/api/word/word.body#lists-member) \]
 
-  - <xref
-  href="word!Word.ContentControl#lists:member">Word.ContentControl.lists</xref>
+  - \[
+  [Word.ContentControl.lists](/javascript/api/word/word.contentcontrol#lists-member)
+  \]
 
-  - <xref href="word!Word.Range#lists:member">Word.Range.lists</xref>
+  - \[ [Word.Range.lists](/javascript/api/word/word.range#lists-member) \]
 
   #### Examples
 

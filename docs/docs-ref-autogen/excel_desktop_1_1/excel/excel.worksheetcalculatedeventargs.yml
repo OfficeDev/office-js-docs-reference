@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onCalculated:member">Excel.Worksheet.onCalculated</xref>
+  - \[
+  [Excel.Worksheet.onCalculated](/javascript/api/excel/excel.worksheet#oncalculated-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onCalculated:member">Excel.WorksheetCollection.onCalculated</xref>
+  - \[
+  [Excel.WorksheetCollection.onCalculated](/javascript/api/excel/excel.worksheetcollection#oncalculated-member)
+  \]
 
   #### Examples
 

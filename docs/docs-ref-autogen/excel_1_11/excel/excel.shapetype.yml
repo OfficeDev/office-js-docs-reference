@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeData#type:member">Excel.Interfaces.ShapeData.type</xref>
+  - \[
+  [Excel.Interfaces.ShapeData.type](/javascript/api/excel/excel.interfaces.shapedata#type-member)
+  \]
 
-  - <xref href="excel!Excel.Shape#type:member">Excel.Shape.type</xref>
+  - \[ [Excel.Shape.type](/javascript/api/excel/excel.shape#type-member) \]
 
 isPreview: false
 isDeprecated: false

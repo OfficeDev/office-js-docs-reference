@@ -30,8 +30,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#goToByIdAsync:member(1)">Office.Document.goToByIdAsync</xref>
+  - \[
+  [Office.Document.goToByIdAsync](/javascript/api/office/office.document#gotobyidasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

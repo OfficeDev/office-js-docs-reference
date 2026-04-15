@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#localImage:member">Excel.Workbook.localImage</xref>
+  - \[
+  [Excel.Workbook.localImage](/javascript/api/excel/excel.workbook#localimage-member)
+  \]
 
 isPreview: true
 isDeprecated: false

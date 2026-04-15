@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartBinOptions#type:member">Excel.ChartBinOptions.type</xref>
+  - \[
+  [Excel.ChartBinOptions.type](/javascript/api/excel/excel.chartbinoptions#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartBinOptionsData#type:member">Excel.Interfaces.ChartBinOptionsData.type</xref>
+  - \[
+  [Excel.Interfaces.ChartBinOptionsData.type](/javascript/api/excel/excel.interfaces.chartbinoptionsdata#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartBinOptionsUpdateData#type:member">Excel.Interfaces.ChartBinOptionsUpdateData.type</xref>
+  - \[
+  [Excel.Interfaces.ChartBinOptionsUpdateData.type](/javascript/api/excel/excel.interfaces.chartbinoptionsupdatedata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

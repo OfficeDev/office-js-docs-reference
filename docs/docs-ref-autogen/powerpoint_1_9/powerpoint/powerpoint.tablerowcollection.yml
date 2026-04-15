@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Table#rows:member">PowerPoint.Table.rows</xref>
+  - \[
+  [PowerPoint.Table.rows](/javascript/api/powerpoint/powerpoint.table#rows-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -8,38 +8,49 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#shapes:member">Word.Interfaces.BodyData.shapes</xref>
+  - \[
+  [Word.Interfaces.BodyData.shapes](/javascript/api/word/word.interfaces.bodydata#shapes-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CanvasData#shape:member">Word.Interfaces.CanvasData.shape</xref>
+  - \[
+  [Word.Interfaces.CanvasData.shape](/javascript/api/word/word.interfaces.canvasdata#shape-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CanvasData#shapes:member">Word.Interfaces.CanvasData.shapes</xref>
+  - \[
+  [Word.Interfaces.CanvasData.shapes](/javascript/api/word/word.interfaces.canvasdata#shapes-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#shapes:member">Word.Interfaces.ParagraphData.shapes</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.shapes](/javascript/api/word/word.interfaces.paragraphdata#shapes-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#shapes:member">Word.Interfaces.RangeData.shapes</xref>
+  - \[
+  [Word.Interfaces.RangeData.shapes](/javascript/api/word/word.interfaces.rangedata#shapes-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionData#items:member">Word.Interfaces.ShapeCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionData.items](/javascript/api/word/word.interfaces.shapecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionUpdateData#items:member">Word.Interfaces.ShapeCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/word/word.interfaces.shapecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#parentCanvas:member">Word.Interfaces.ShapeData.parentCanvas</xref>
+  - \[
+  [Word.Interfaces.ShapeData.parentCanvas](/javascript/api/word/word.interfaces.shapedata#parentcanvas-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#parentGroup:member">Word.Interfaces.ShapeData.parentGroup</xref>
+  - \[
+  [Word.Interfaces.ShapeData.parentGroup](/javascript/api/word/word.interfaces.shapedata#parentgroup-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeGroupData#shape:member">Word.Interfaces.ShapeGroupData.shape</xref>
+  - \[
+  [Word.Interfaces.ShapeGroupData.shape](/javascript/api/word/word.interfaces.shapegroupdata#shape-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeGroupData#shapes:member">Word.Interfaces.ShapeGroupData.shapes</xref>
+  - \[
+  [Word.Interfaces.ShapeGroupData.shapes](/javascript/api/word/word.interfaces.shapegroupdata#shapes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

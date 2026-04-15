@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Workbook#notes:member">Excel.Workbook.notes</xref>
+  - \[ [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#notes-member)
+  \]
 
-  - <xref href="excel!Excel.Worksheet#notes:member">Excel.Worksheet.notes</xref>
+  - \[
+  [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#notes-member) \]
 
   #### Examples
 

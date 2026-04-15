@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphUpdateData#listItem:member">Word.Interfaces.ParagraphUpdateData.listItem</xref>
+  - \[
+  [Word.Interfaces.ParagraphUpdateData.listItem](/javascript/api/word/word.interfaces.paragraphupdatedata#listitem-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphUpdateData#listItemOrNullObject:member">Word.Interfaces.ParagraphUpdateData.listItemOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphUpdateData.listItemOrNullObject](/javascript/api/word/word.interfaces.paragraphupdatedata#listitemornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

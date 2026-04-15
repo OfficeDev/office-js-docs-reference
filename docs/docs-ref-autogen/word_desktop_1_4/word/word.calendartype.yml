@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DatePickerContentControl#dateCalendarType:member">Word.DatePickerContentControl.dateCalendarType</xref>
+  - \[
+  [Word.DatePickerContentControl.dateCalendarType](/javascript/api/word/word.datepickercontentcontrol#datecalendartype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#dateCalendarType:member">Word.Interfaces.DatePickerContentControlData.dateCalendarType</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.dateCalendarType](/javascript/api/word/word.interfaces.datepickercontentcontroldata#datecalendartype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlUpdateData#dateCalendarType:member">Word.Interfaces.DatePickerContentControlUpdateData.dateCalendarType</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlUpdateData.dateCalendarType](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#datecalendartype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#shapes:member">PowerPoint.Slide.shapes</xref>
+  - \[
+  [PowerPoint.Slide.shapes](/javascript/api/powerpoint/powerpoint.slide#shapes-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayout#shapes:member">PowerPoint.SlideLayout.shapes</xref>
+  - \[
+  [PowerPoint.SlideLayout.shapes](/javascript/api/powerpoint/powerpoint.slidelayout#shapes-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMaster#shapes:member">PowerPoint.SlideMaster.shapes</xref>
+  - \[
+  [PowerPoint.SlideMaster.shapes](/javascript/api/powerpoint/powerpoint.slidemaster#shapes-member)
+  \]
 
   #### Examples
 

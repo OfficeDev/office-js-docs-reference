@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CommentReplyCollection#items:member">Excel.CommentReplyCollection.items</xref>
+  - \[
+  [Excel.CommentReplyCollection.items](/javascript/api/excel/excel.commentreplycollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

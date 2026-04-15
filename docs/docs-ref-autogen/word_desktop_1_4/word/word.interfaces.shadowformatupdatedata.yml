@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#textShadow:member">Word.Interfaces.FontUpdateData.textShadow</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.textShadow](/javascript/api/word/word.interfaces.fontupdatedata#textshadow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

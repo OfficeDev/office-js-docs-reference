@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconCollections#fourRating:member">Excel.IconCollections.fourRating</xref>
+  - \[
+  [Excel.IconCollections.fourRating](/javascript/api/excel/excel.iconcollections#fourrating-member)
+  \]
 
 isPreview: false
 isDeprecated: false

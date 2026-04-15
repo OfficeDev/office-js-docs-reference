@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PaneCollection#items:member">Excel.PaneCollection.items</xref>
+  - \[
+  [Excel.PaneCollection.items](/javascript/api/excel/excel.panecollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Window#activePane:member">Excel.Window.activePane</xref>
+  - \[
+  [Excel.Window.activePane](/javascript/api/excel/excel.window#activepane-member)
+  \]
 
 isPreview: false
 isDeprecated: false

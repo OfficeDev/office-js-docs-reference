@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#lineNumbering:member">Word.Interfaces.PageSetupUpdateData.lineNumbering</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.lineNumbering](/javascript/api/word/word.interfaces.pagesetupupdatedata#linenumbering-member)
+  \]
 
 isPreview: false
 isDeprecated: false

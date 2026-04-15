@@ -14,21 +14,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#characters:member">Word.Document.characters</xref>
+  - \[
+  [Word.Document.characters](/javascript/api/word/word.document#characters-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#sentences:member">Word.Document.sentences</xref>
+  - \[
+  [Word.Document.sentences](/javascript/api/word/word.document#sentences-member)
+  \]
 
-  - <xref href="word!Word.Document#words:member">Word.Document.words</xref>
+  - \[ [Word.Document.words](/javascript/api/word/word.document#words-member) \]
 
-  - <xref
-  href="word!Word.Selection#characters:member">Word.Selection.characters</xref>
+  - \[
+  [Word.Selection.characters](/javascript/api/word/word.selection#characters-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#sentences:member">Word.Selection.sentences</xref>
+  - \[
+  [Word.Selection.sentences](/javascript/api/word/word.selection#sentences-member)
+  \]
 
-  - <xref href="word!Word.Selection#words:member">Word.Selection.words</xref>
+  - \[ [Word.Selection.words](/javascript/api/word/word.selection#words-member)
+  \]
 
 isPreview: false
 isDeprecated: false

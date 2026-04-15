@@ -17,17 +17,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData#type:member">PowerPoint.Interfaces.SlideBackgroundGradientFillData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideBackgroundGradientFillData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundgradientfilldata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData#type:member">PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundgradientfillupdatedata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideBackgroundGradientFill#type:member">PowerPoint.SlideBackgroundGradientFill.type</xref>
+  - \[
+  [PowerPoint.SlideBackgroundGradientFill.type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideBackgroundGradientFillOptions#type:member">PowerPoint.SlideBackgroundGradientFillOptions.type</xref>
+  - \[
+  [PowerPoint.SlideBackgroundGradientFillOptions.type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfilloptions#type-member)
+  \]
 
   #### Examples
 

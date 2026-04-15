@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="office!Office.Document#mode:member">Office.Document.mode</xref>
+  - \[
+  [Office.Document.mode](/javascript/api/office/office.document#mode-member) \]
 
   #### Examples
 

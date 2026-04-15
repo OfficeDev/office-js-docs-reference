@@ -14,17 +14,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#containedType:member">PowerPoint.Interfaces.PlaceholderFormatData.containedType</xref>
+  - \[
+  [PowerPoint.Interfaces.PlaceholderFormatData.containedType](/javascript/api/powerpoint/powerpoint.interfaces.placeholderformatdata#containedtype-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeData#type:member">PowerPoint.Interfaces.ShapeData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeData.type](/javascript/api/powerpoint/powerpoint.interfaces.shapedata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.PlaceholderFormat#containedType:member">PowerPoint.PlaceholderFormat.containedType</xref>
+  - \[
+  [PowerPoint.PlaceholderFormat.containedType](/javascript/api/powerpoint/powerpoint.placeholderformat#containedtype-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#type:member">PowerPoint.Shape.type</xref>
+  - \[
+  [PowerPoint.Shape.type](/javascript/api/powerpoint/powerpoint.shape#type-member)
+  \]
 
   #### Examples
 

@@ -17,89 +17,117 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member">Word.Interfaces.BodyLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.BodyLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.bodyloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.BodyLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.BodyLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.bodyloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member">Word.Interfaces.ContentControlLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.ContentControlLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControl:member">Word.Interfaces.FieldCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.FieldCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#parentContentControl:member">Word.Interfaces.FieldLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.fieldloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.FieldLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.fieldloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member">Word.Interfaces.InlinePictureLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.InlinePictureLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.InlinePictureLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.InlinePictureLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member">Word.Interfaces.ParagraphLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.paragraphloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.paragraphloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member">Word.Interfaces.RangeCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.RangeCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member">Word.Interfaces.RangeLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.rangeloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.RangeLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.rangeloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentContentControl:member">Word.Interfaces.RangeScopedCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.RangeScopedCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionLoadOptions#parentContentControl:member">Word.Interfaces.TableCollectionLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.TableCollectionLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.TableCollectionLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.TableCollectionLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableLoadOptions#parentContentControl:member">Word.Interfaces.TableLoadOptions.parentContentControl</xref>
+  - \[
+  [Word.Interfaces.TableLoadOptions.parentContentControl](/javascript/api/word/word.interfaces.tableloadoptions#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member">Word.Interfaces.TableLoadOptions.parentContentControlOrNullObject</xref>
+  - \[
+  [Word.Interfaces.TableLoadOptions.parentContentControlOrNullObject](/javascript/api/word/word.interfaces.tableloadoptions#parentcontentcontrolornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#setSelectedDataAsync:member(1)">Office.Document.setSelectedDataAsync</xref>
+  - \[
+  [Office.Document.setSelectedDataAsync](/javascript/api/office/office.document#setselecteddataasync-member)
+  \]
 
   #### Examples
 

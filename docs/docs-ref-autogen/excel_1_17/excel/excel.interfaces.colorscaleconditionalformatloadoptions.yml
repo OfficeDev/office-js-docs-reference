@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#colorscale-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScaleOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScaleOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#colorscaleornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member">Excel.Interfaces.ConditionalFormatLoadOptions.colorScale</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.colorScale](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#colorscale-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScaleOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.colorScaleOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.colorScaleOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#colorscaleornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

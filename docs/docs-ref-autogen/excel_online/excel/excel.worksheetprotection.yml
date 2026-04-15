@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#protection:member">Excel.Worksheet.protection</xref>
+  - \[
+  [Excel.Worksheet.protection](/javascript/api/excel/excel.worksheet#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

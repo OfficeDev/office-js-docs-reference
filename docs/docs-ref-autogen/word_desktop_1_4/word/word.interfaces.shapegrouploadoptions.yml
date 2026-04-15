@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionLoadOptions#shapeGroup:member">Word.Interfaces.ShapeCollectionLoadOptions.shapeGroup</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionLoadOptions.shapeGroup](/javascript/api/word/word.interfaces.shapecollectionloadoptions#shapegroup-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeLoadOptions#shapeGroup:member">Word.Interfaces.ShapeLoadOptions.shapeGroup</xref>
+  - \[
+  [Word.Interfaces.ShapeLoadOptions.shapeGroup](/javascript/api/word/word.interfaces.shapeloadoptions#shapegroup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

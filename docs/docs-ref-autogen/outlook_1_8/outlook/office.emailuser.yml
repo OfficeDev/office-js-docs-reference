@@ -19,17 +19,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.MeetingSuggestion#attendees:member">Office.MeetingSuggestion.attendees</xref>
+  - \[
+  [Office.MeetingSuggestion.attendees](/javascript/api/outlook/office.meetingsuggestion#attendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recipients#addAsync:member(1)">Office.Recipients.addAsync</xref>
+  - \[
+  [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#addasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recipients#setAsync:member(1)">Office.Recipients.setAsync</xref>
+  - \[
+  [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#setasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.TaskSuggestion#assignees:member">Office.TaskSuggestion.assignees</xref>
+  - \[
+  [Office.TaskSuggestion.assignees](/javascript/api/outlook/office.tasksuggestion#assignees-member)
+  \]
 
   #### Examples
 

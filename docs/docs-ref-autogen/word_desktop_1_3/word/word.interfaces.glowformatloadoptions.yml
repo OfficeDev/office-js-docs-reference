@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontLoadOptions#glow:member">Word.Interfaces.FontLoadOptions.glow</xref>
+  - \[
+  [Word.Interfaces.FontLoadOptions.glow](/javascript/api/word/word.interfaces.fontloadoptions#glow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

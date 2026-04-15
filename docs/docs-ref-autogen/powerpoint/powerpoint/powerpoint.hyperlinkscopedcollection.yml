@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TextRange#hyperlinks:member">PowerPoint.TextRange.hyperlinks</xref>
+  - \[
+  [PowerPoint.TextRange.hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#hyperlinks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

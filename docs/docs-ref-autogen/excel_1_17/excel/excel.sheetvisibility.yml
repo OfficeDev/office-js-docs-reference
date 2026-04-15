@@ -13,20 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#visibility:member">Excel.Interfaces.WorksheetData.visibility</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.visibility](/javascript/api/excel/excel.interfaces.worksheetdata#visibility-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetUpdateData#visibility:member">Excel.Interfaces.WorksheetUpdateData.visibility</xref>
+  - \[
+  [Excel.Interfaces.WorksheetUpdateData.visibility](/javascript/api/excel/excel.interfaces.worksheetupdatedata#visibility-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Worksheet#visibility:member">Excel.Worksheet.visibility</xref>
+  - \[
+  [Excel.Worksheet.visibility](/javascript/api/excel/excel.worksheet#visibility-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityAfter:member">Excel.WorksheetVisibilityChangedEventArgs.visibilityAfter</xref>
+  - \[
+  [Excel.WorksheetVisibilityChangedEventArgs.visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#visibilityafter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetVisibilityChangedEventArgs#visibilityBefore:member">Excel.WorksheetVisibilityChangedEventArgs.visibilityBefore</xref>
+  - \[
+  [Excel.WorksheetVisibilityChangedEventArgs.visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#visibilitybefore-member)
+  \]
 
   #### Examples
 

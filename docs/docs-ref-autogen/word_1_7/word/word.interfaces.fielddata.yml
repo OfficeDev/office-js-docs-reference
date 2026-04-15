@@ -8,29 +8,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#fields:member">Word.Interfaces.BodyData.fields</xref>
+  - \[
+  [Word.Interfaces.BodyData.fields](/javascript/api/word/word.interfaces.bodydata#fields-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#fields:member">Word.Interfaces.ContentControlData.fields</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.fields](/javascript/api/word/word.interfaces.contentcontroldata#fields-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionData#items:member">Word.Interfaces.FieldCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionData.items](/javascript/api/word/word.interfaces.fieldcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionUpdateData#items:member">Word.Interfaces.FieldCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionUpdateData.items](/javascript/api/word/word.interfaces.fieldcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#fields:member">Word.Interfaces.ParagraphData.fields</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.fields](/javascript/api/word/word.interfaces.paragraphdata#fields-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#fields:member">Word.Interfaces.RangeData.fields</xref>
+  - \[
+  [Word.Interfaces.RangeData.fields](/javascript/api/word/word.interfaces.rangedata#fields-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableData#fields:member">Word.Interfaces.TableData.fields</xref>
+  - \[
+  [Word.Interfaces.TableData.fields](/javascript/api/word/word.interfaces.tabledata#fields-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowData#fields:member">Word.Interfaces.TableRowData.fields</xref>
+  - \[
+  [Word.Interfaces.TableRowData.fields](/javascript/api/word/word.interfaces.tablerowdata#fields-member)
+  \]
 
 isPreview: false
 isDeprecated: false

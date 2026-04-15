@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Chart#dataLabels:member">Excel.Chart.dataLabels</xref>
+  - \[
+  [Excel.Chart.dataLabels](/javascript/api/excel/excel.chart#datalabels-member)
+  \]
 
 isPreview: false
 isDeprecated: false

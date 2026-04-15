@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#dropDownListContentControl:member">Word.Interfaces.ContentControlData.dropDownListContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.dropDownListContentControl](/javascript/api/word/word.interfaces.contentcontroldata#dropdownlistcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

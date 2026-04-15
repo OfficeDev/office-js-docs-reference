@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Paragraph#table:member">OneNote.Paragraph.table</xref>
+  - \[
+  [OneNote.Paragraph.table](/javascript/api/onenote/onenote.paragraph#table-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableRow#parentTable:member">OneNote.TableRow.parentTable</xref>
+  - \[
+  [OneNote.TableRow.parentTable](/javascript/api/onenote/onenote.tablerow#parenttable-member)
+  \]
 
 isPreview: false
 isDeprecated: false

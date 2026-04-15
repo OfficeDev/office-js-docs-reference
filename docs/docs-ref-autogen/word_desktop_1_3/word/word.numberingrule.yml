@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.LineNumberingData#restartMode:member">Word.Interfaces.LineNumberingData.restartMode</xref>
+  - \[
+  [Word.Interfaces.LineNumberingData.restartMode](/javascript/api/word/word.interfaces.linenumberingdata#restartmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineNumberingUpdateData#restartMode:member">Word.Interfaces.LineNumberingUpdateData.restartMode</xref>
+  - \[
+  [Word.Interfaces.LineNumberingUpdateData.restartMode](/javascript/api/word/word.interfaces.linenumberingupdatedata#restartmode-member)
+  \]
 
-  - <xref
-  href="word!Word.LineNumbering#restartMode:member">Word.LineNumbering.restartMode</xref>
+  - \[
+  [Word.LineNumbering.restartMode](/javascript/api/word/word.linenumbering#restartmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

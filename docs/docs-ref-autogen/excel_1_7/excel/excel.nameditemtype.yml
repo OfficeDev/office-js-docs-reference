@@ -13,10 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemData#type:member">Excel.Interfaces.NamedItemData.type</xref>
+  - \[
+  [Excel.Interfaces.NamedItemData.type](/javascript/api/excel/excel.interfaces.nameditemdata#type-member)
+  \]
 
-  - <xref href="excel!Excel.NamedItem#type:member">Excel.NamedItem.type</xref>
+  - \[ [Excel.NamedItem.type](/javascript/api/excel/excel.nameditem#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

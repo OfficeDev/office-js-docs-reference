@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.TableOfContents#additionalHeadingStyles:member">Word.TableOfContents.additionalHeadingStyles</xref>
+  - \[
+  [Word.TableOfContents.additionalHeadingStyles](/javascript/api/word/word.tableofcontents#additionalheadingstyles-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfFigures#additionalHeadingStyles:member">Word.TableOfFigures.additionalHeadingStyles</xref>
+  - \[
+  [Word.TableOfFigures.additionalHeadingStyles](/javascript/api/word/word.tableoffigures#additionalheadingstyles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

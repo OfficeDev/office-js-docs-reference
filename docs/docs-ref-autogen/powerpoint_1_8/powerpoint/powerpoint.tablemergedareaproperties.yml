@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableAddOptions#mergedAreas:member">PowerPoint.TableAddOptions.mergedAreas</xref>
+  - \[
+  [PowerPoint.TableAddOptions.mergedAreas](/javascript/api/powerpoint/powerpoint.tableaddoptions#mergedareas-member)
+  \]
 
   #### Examples
 

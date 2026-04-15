@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.AsyncResult#error:member">Office.AsyncResult.error</xref>
+  - \[
+  [Office.AsyncResult.error](/javascript/api/office/office.asyncresult#error-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#borders:member">Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders](/javascript/api/excel/excel.interfaces.conditionalrangeformatloadoptions#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,23 +14,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellBorders#bottom:member">PowerPoint.TableCellBorders.bottom</xref>
+  - \[
+  [PowerPoint.TableCellBorders.bottom](/javascript/api/powerpoint/powerpoint.tablecellborders#bottom-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellBorders#diagonalDown:member">PowerPoint.TableCellBorders.diagonalDown</xref>
+  - \[
+  [PowerPoint.TableCellBorders.diagonalDown](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonaldown-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellBorders#diagonalUp:member">PowerPoint.TableCellBorders.diagonalUp</xref>
+  - \[
+  [PowerPoint.TableCellBorders.diagonalUp](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonalup-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellBorders#left:member">PowerPoint.TableCellBorders.left</xref>
+  - \[
+  [PowerPoint.TableCellBorders.left](/javascript/api/powerpoint/powerpoint.tablecellborders#left-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellBorders#right:member">PowerPoint.TableCellBorders.right</xref>
+  - \[
+  [PowerPoint.TableCellBorders.right](/javascript/api/powerpoint/powerpoint.tablecellborders#right-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellBorders#top:member">PowerPoint.TableCellBorders.top</xref>
+  - \[
+  [PowerPoint.TableCellBorders.top](/javascript/api/powerpoint/powerpoint.tablecellborders#top-member)
+  \]
 
   #### Examples
 

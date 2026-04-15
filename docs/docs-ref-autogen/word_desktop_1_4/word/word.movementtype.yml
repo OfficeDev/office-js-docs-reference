@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SelectionMoveLeftRightOptions#extend:member">Word.SelectionMoveLeftRightOptions.extend</xref>
+  - \[
+  [Word.SelectionMoveLeftRightOptions.extend](/javascript/api/word/word.selectionmoveleftrightoptions#extend-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionMoveUpDownOptions#extend:member">Word.SelectionMoveUpDownOptions.extend</xref>
+  - \[
+  [Word.SelectionMoveUpDownOptions.extend](/javascript/api/word/word.selectionmoveupdownoptions#extend-member)
+  \]
 
 isPreview: false
 isDeprecated: false

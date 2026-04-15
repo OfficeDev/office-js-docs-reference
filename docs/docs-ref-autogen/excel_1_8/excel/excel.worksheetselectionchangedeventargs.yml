@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onSelectionChanged:member">Excel.Worksheet.onSelectionChanged</xref>
+  - \[
+  [Excel.Worksheet.onSelectionChanged](/javascript/api/excel/excel.worksheet#onselectionchanged-member)
+  \]
 
   #### Examples
 

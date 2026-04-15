@@ -43,8 +43,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#loadItemByIdAsync:member(1)">Office.Mailbox.loadItemByIdAsync</xref>
+  - \[
+  [Office.Mailbox.loadItemByIdAsync](/javascript/api/outlook/office.mailbox#loaditembyidasync-member)
+  \]
 
   #### Examples
 

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Range#listFormat:member">Word.Range.listFormat</xref>
+  - \[
+  [Word.Range.listFormat](/javascript/api/word/word.range#listformat-member) \]
 
   #### Examples
 

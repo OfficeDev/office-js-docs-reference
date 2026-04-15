@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#line:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.GroupShapeCollectionLoadOptions.line](/javascript/api/excel/excel.interfaces.groupshapecollectionloadoptions#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#line:member">Excel.Interfaces.ShapeCollectionLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ShapeCollectionLoadOptions.line](/javascript/api/excel/excel.interfaces.shapecollectionloadoptions#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeLoadOptions#line:member">Excel.Interfaces.ShapeLoadOptions.line</xref>
+  - \[
+  [Excel.Interfaces.ShapeLoadOptions.line](/javascript/api/excel/excel.interfaces.shapeloadoptions#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

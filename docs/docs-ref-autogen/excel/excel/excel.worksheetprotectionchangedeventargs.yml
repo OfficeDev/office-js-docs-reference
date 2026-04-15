@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onProtectionChanged:member">Excel.Worksheet.onProtectionChanged</xref>
+  - \[
+  [Excel.Worksheet.onProtectionChanged](/javascript/api/excel/excel.worksheet#onprotectionchanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onProtectionChanged:member">Excel.WorksheetCollection.onProtectionChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onprotectionchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

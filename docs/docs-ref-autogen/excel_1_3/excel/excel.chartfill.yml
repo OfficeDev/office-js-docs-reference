@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAreaFormat#fill:member">Excel.ChartAreaFormat.fill</xref>
+  - \[
+  [Excel.ChartAreaFormat.fill](/javascript/api/excel/excel.chartareaformat#fill-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabelFormat#fill:member">Excel.ChartDataLabelFormat.fill</xref>
+  - \[
+  [Excel.ChartDataLabelFormat.fill](/javascript/api/excel/excel.chartdatalabelformat#fill-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegendFormat#fill:member">Excel.ChartLegendFormat.fill</xref>
+  - \[
+  [Excel.ChartLegendFormat.fill](/javascript/api/excel/excel.chartlegendformat#fill-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPointFormat#fill:member">Excel.ChartPointFormat.fill</xref>
+  - \[
+  [Excel.ChartPointFormat.fill](/javascript/api/excel/excel.chartpointformat#fill-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeriesFormat#fill:member">Excel.ChartSeriesFormat.fill</xref>
+  - \[
+  [Excel.ChartSeriesFormat.fill](/javascript/api/excel/excel.chartseriesformat#fill-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitleFormat#fill:member">Excel.ChartTitleFormat.fill</xref>
+  - \[
+  [Excel.ChartTitleFormat.fill](/javascript/api/excel/excel.charttitleformat#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

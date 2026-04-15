@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.HtmlDivision#htmlDivisions:member">Word.HtmlDivision.htmlDivisions</xref>
+  - \[
+  [Word.HtmlDivision.htmlDivisions](/javascript/api/word/word.htmldivision#htmldivisions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

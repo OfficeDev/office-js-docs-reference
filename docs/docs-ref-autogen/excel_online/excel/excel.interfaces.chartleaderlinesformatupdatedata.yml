@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLeaderLinesUpdateData#format:member">Excel.Interfaces.ChartLeaderLinesUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.ChartLeaderLinesUpdateData.format](/javascript/api/excel/excel.interfaces.chartleaderlinesupdatedata#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

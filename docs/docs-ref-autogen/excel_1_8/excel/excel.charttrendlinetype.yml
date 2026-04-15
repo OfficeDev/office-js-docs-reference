@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartTrendline#type:member">Excel.ChartTrendline.type</xref>
+  - \[
+  [Excel.ChartTrendline.type](/javascript/api/excel/excel.charttrendline#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineData#type:member">Excel.Interfaces.ChartTrendlineData.type</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineData.type](/javascript/api/excel/excel.interfaces.charttrendlinedata#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member">Excel.Interfaces.ChartTrendlineUpdateData.type</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineUpdateData.type](/javascript/api/excel/excel.interfaces.charttrendlineupdatedata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

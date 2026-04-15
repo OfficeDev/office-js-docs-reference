@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.RevisionsFilter#reviewers:member">Word.RevisionsFilter.reviewers</xref>
+  - \[
+  [Word.RevisionsFilter.reviewers](/javascript/api/word/word.revisionsfilter#reviewers-member)
+  \]
 
 isPreview: false
 isDeprecated: false

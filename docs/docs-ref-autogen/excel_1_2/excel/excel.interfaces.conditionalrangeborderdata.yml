@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member">Excel.Interfaces.ConditionalRangeBorderCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderCollectionData.items](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member">Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

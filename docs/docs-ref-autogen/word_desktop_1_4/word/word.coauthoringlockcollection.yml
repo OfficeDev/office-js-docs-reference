@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Coauthor#locks:member">Word.Coauthor.locks</xref>
+  - \[ [Word.Coauthor.locks](/javascript/api/word/word.coauthor#locks-member) \]
 
-  - <xref
-  href="word!Word.Coauthoring#locks:member">Word.Coauthoring.locks</xref>
+  - \[
+  [Word.Coauthoring.locks](/javascript/api/word/word.coauthoring#locks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

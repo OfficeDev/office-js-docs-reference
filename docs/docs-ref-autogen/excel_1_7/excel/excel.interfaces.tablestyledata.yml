@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableStyleCollectionData#items:member">Excel.Interfaces.TableStyleCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.TableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.tablestylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member">Excel.Interfaces.TableStyleCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.TableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablestylecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

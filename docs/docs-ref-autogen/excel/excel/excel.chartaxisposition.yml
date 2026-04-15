@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#position:member">Excel.ChartAxis.position</xref>
+  - \[
+  [Excel.ChartAxis.position](/javascript/api/excel/excel.chartaxis#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#position:member">Excel.Interfaces.ChartAxisData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.position](/javascript/api/excel/excel.interfaces.chartaxisdata#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#position:member">Excel.Interfaces.ChartAxisUpdateData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.position](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#position-member)
+  \]
 
 isPreview: false
 isDeprecated: false

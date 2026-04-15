@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Page#parentSection:member">OneNote.Page.parentSection</xref>
+  - \[
+  [OneNote.Page.parentSection](/javascript/api/onenote/onenote.page#parentsection-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.SectionCollection#items:member">OneNote.SectionCollection.items</xref>
+  - \[
+  [OneNote.SectionCollection.items](/javascript/api/onenote/onenote.sectioncollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

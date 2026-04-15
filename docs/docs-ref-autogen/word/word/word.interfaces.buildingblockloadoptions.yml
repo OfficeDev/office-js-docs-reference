@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#placeholderText:member">Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.placeholderText</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.placeholderText](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolloadoptions#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlLoadOptions#placeholderText:member">Word.Interfaces.DatePickerContentControlLoadOptions.placeholderText</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlLoadOptions.placeholderText](/javascript/api/word/word.interfaces.datepickercontentcontrolloadoptions#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlLoadOptions#placeholderText:member">Word.Interfaces.GroupContentControlLoadOptions.placeholderText</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlLoadOptions.placeholderText](/javascript/api/word/word.interfaces.groupcontentcontrolloadoptions#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlLoadOptions#placeholderText:member">Word.Interfaces.PictureContentControlLoadOptions.placeholderText</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlLoadOptions.placeholderText](/javascript/api/word/word.interfaces.picturecontentcontrolloadoptions#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#placeholderText:member">Word.Interfaces.RepeatingSectionContentControlLoadOptions.placeholderText</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlLoadOptions.placeholderText](/javascript/api/word/word.interfaces.repeatingsectioncontentcontrolloadoptions#placeholdertext-member)
+  \]
 
 isPreview: false
 isDeprecated: false

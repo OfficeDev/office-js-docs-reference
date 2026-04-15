@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CommentReplyUpdateData#parentComment:member">Word.Interfaces.CommentReplyUpdateData.parentComment</xref>
+  - \[
+  [Word.Interfaces.CommentReplyUpdateData.parentComment](/javascript/api/word/word.interfaces.commentreplyupdatedata#parentcomment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

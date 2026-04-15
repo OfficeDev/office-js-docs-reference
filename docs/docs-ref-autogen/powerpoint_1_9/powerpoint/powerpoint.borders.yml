@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCell#borders:member">PowerPoint.TableCell.borders</xref>
+  - \[
+  [PowerPoint.TableCell.borders](/javascript/api/powerpoint/powerpoint.tablecell#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

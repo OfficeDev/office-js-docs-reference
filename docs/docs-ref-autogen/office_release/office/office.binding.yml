@@ -46,26 +46,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.BindingDataChangedEventArgs#binding:member">Office.BindingDataChangedEventArgs.binding</xref>
+  - \[
+  [Office.BindingDataChangedEventArgs.binding](/javascript/api/office/office.bindingdatachangedeventargs#binding-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#addFromNamedItemAsync:member(1)">Office.Bindings.addFromNamedItemAsync</xref>
+  - \[
+  [Office.Bindings.addFromNamedItemAsync](/javascript/api/office/office.bindings#addfromnameditemasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#addFromPromptAsync:member(1)">Office.Bindings.addFromPromptAsync</xref>
+  - \[
+  [Office.Bindings.addFromPromptAsync](/javascript/api/office/office.bindings#addfrompromptasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#addFromSelectionAsync:member(1)">Office.Bindings.addFromSelectionAsync</xref>
+  - \[
+  [Office.Bindings.addFromSelectionAsync](/javascript/api/office/office.bindings#addfromselectionasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#getAllAsync:member(1)">Office.Bindings.getAllAsync</xref>
+  - \[
+  [Office.Bindings.getAllAsync](/javascript/api/office/office.bindings#getallasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#getByIdAsync:member(1)">Office.Bindings.getByIdAsync</xref>
+  - \[
+  [Office.Bindings.getByIdAsync](/javascript/api/office/office.bindings#getbyidasync-member)
+  \]
 
-  - <xref
-  href="office!Office.BindingSelectionChangedEventArgs#binding:member">Office.BindingSelectionChangedEventArgs.binding</xref>
+  - \[
+  [Office.BindingSelectionChangedEventArgs.binding](/javascript/api/office/office.bindingselectionchangedeventargs#binding-member)
+  \]
 
 isPreview: false
 isDeprecated: false

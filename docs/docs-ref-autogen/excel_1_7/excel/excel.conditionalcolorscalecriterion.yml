@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalColorScaleCriteria#maximum:member">Excel.ConditionalColorScaleCriteria.maximum</xref>
+  - \[
+  [Excel.ConditionalColorScaleCriteria.maximum](/javascript/api/excel/excel.conditionalcolorscalecriteria#maximum-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalColorScaleCriteria#midpoint:member">Excel.ConditionalColorScaleCriteria.midpoint</xref>
+  - \[
+  [Excel.ConditionalColorScaleCriteria.midpoint](/javascript/api/excel/excel.conditionalcolorscalecriteria#midpoint-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalColorScaleCriteria#minimum:member">Excel.ConditionalColorScaleCriteria.minimum</xref>
+  - \[
+  [Excel.ConditionalColorScaleCriteria.minimum](/javascript/api/excel/excel.conditionalcolorscalecriteria#minimum-member)
+  \]
 
   #### Examples
 

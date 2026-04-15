@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFormatLoadOptions#font:member">Excel.CellPropertiesFormatLoadOptions.font</xref>
+  - \[
+  [Excel.CellPropertiesFormatLoadOptions.font](/javascript/api/excel/excel.cellpropertiesformatloadoptions#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

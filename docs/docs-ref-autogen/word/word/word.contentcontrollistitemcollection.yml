@@ -17,11 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ComboBoxContentControl#listItems:member">Word.ComboBoxContentControl.listItems</xref>
+  - \[
+  [Word.ComboBoxContentControl.listItems](/javascript/api/word/word.comboboxcontentcontrol#listitems-member)
+  \]
 
-  - <xref
-  href="word!Word.DropDownListContentControl#listItems:member">Word.DropDownListContentControl.listItems</xref>
+  - \[
+  [Word.DropDownListContentControl.listItems](/javascript/api/word/word.dropdownlistcontentcontrol#listitems-member)
+  \]
 
   #### Examples
 

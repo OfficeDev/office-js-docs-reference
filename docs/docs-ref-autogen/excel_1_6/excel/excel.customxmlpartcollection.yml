@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#customXmlParts:member">Excel.Workbook.customXmlParts</xref>
+  - \[
+  [Excel.Workbook.customXmlParts](/javascript/api/excel/excel.workbook#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

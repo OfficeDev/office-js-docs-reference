@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#margins:member">PowerPoint.TableCellProperties.margins</xref>
+  - \[
+  [PowerPoint.TableCellProperties.margins](/javascript/api/powerpoint/powerpoint.tablecellproperties#margins-member)
+  \]
 
 isPreview: false
 isDeprecated: false

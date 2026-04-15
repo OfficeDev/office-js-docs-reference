@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#onActivated:member">Excel.Workbook.onActivated</xref>
+  - \[
+  [Excel.Workbook.onActivated](/javascript/api/excel/excel.workbook#onactivated-member)
+  \]
 
   #### Examples
 

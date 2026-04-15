@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.SlideRange#slides:member">Office.SlideRange.slides</xref>
+  - \[
+  [Office.SlideRange.slides](/javascript/api/office/office.sliderange#slides-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#pageSetup:member">PowerPoint.Presentation.pageSetup</xref>
+  - \[
+  [PowerPoint.Presentation.pageSetup](/javascript/api/powerpoint/powerpoint.presentation#pagesetup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

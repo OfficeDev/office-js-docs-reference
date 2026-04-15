@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotFieldData#subtotals:member">Excel.Interfaces.PivotFieldData.subtotals</xref>
+  - \[
+  [Excel.Interfaces.PivotFieldData.subtotals](/javascript/api/excel/excel.interfaces.pivotfielddata#subtotals-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member">Excel.Interfaces.PivotFieldUpdateData.subtotals</xref>
+  - \[
+  [Excel.Interfaces.PivotFieldUpdateData.subtotals](/javascript/api/excel/excel.interfaces.pivotfieldupdatedata#subtotals-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotField#subtotals:member">Excel.PivotField.subtotals</xref>
+  - \[
+  [Excel.PivotField.subtotals](/javascript/api/excel/excel.pivotfield#subtotals-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookLoadOptions#tables:member">Excel.Interfaces.WorkbookLoadOptions.tables</xref>
+  - \[
+  [Excel.Interfaces.WorkbookLoadOptions.tables](/javascript/api/excel/excel.interfaces.workbookloadoptions#tables-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member">Excel.Interfaces.WorksheetCollectionLoadOptions.tables</xref>
+  - \[
+  [Excel.Interfaces.WorksheetCollectionLoadOptions.tables](/javascript/api/excel/excel.interfaces.worksheetcollectionloadoptions#tables-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetLoadOptions#tables:member">Excel.Interfaces.WorksheetLoadOptions.tables</xref>
+  - \[
+  [Excel.Interfaces.WorksheetLoadOptions.tables](/javascript/api/excel/excel.interfaces.worksheetloadoptions#tables-member)
+  \]
 
 isPreview: false
 isDeprecated: false

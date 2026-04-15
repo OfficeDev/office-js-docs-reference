@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BorderCollectionData#items:member">Word.Interfaces.BorderCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.BorderCollectionData.items](/javascript/api/word/word.interfaces.bordercollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderCollectionUpdateData#items:member">Word.Interfaces.BorderCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.BorderCollectionUpdateData.items](/javascript/api/word/word.interfaces.bordercollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleData#borders:member">Word.Interfaces.StyleData.borders</xref>
+  - \[
+  [Word.Interfaces.StyleData.borders](/javascript/api/word/word.interfaces.styledata#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

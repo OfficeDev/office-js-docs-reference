@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataBarConditionalFormat#lowerBoundRule:member">Excel.DataBarConditionalFormat.lowerBoundRule</xref>
+  - \[
+  [Excel.DataBarConditionalFormat.lowerBoundRule](/javascript/api/excel/excel.databarconditionalformat#lowerboundrule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DataBarConditionalFormat#upperBoundRule:member">Excel.DataBarConditionalFormat.upperBoundRule</xref>
+  - \[
+  [Excel.DataBarConditionalFormat.upperBoundRule](/javascript/api/excel/excel.databarconditionalformat#upperboundrule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatData#lowerBoundRule:member">Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#lowerboundrule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatData#upperBoundRule:member">Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#upperboundrule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#lowerBoundRule:member">Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#lowerboundrule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#upperBoundRule:member">Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#upperboundrule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

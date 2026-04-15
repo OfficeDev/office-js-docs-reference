@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.TableOfAuthoritiesCollection#items:member">Word.TableOfAuthoritiesCollection.items</xref>
+  - \[
+  [Word.TableOfAuthoritiesCollection.items](/javascript/api/word/word.tableofauthoritiescollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

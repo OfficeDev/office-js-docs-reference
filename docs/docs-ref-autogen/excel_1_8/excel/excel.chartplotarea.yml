@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Chart#plotArea:member">Excel.Chart.plotArea</xref>
+  - \[ [Excel.Chart.plotArea](/javascript/api/excel/excel.chart#plotarea-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData#items:member">Excel.Interfaces.LinkedEntityDataDomainCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.LinkedEntityDataDomainCollectionData.items](/javascript/api/excel/excel.interfaces.linkedentitydatadomaincollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData#items:member">Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.linkedentitydatadomaincollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

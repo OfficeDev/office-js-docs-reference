@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetCamera:member">Word.Interfaces.ThreeDimensionalFormatData.presetCamera</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.presetCamera](/javascript/api/word/word.interfaces.threedimensionalformatdata#presetcamera-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#presetCamera:member">Word.ThreeDimensionalFormat.presetCamera</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.presetCamera](/javascript/api/word/word.threedimensionalformat#presetcamera-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataValidationRule#date:member">Excel.DataValidationRule.date</xref>
+  - \[
+  [Excel.DataValidationRule.date](/javascript/api/excel/excel.datavalidationrule#date-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DataValidationRule#time:member">Excel.DataValidationRule.time</xref>
+  - \[
+  [Excel.DataValidationRule.time](/javascript/api/excel/excel.datavalidationrule#time-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetExtrusionDirection:member">Word.Interfaces.ThreeDimensionalFormatData.presetExtrusionDirection</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.presetExtrusionDirection](/javascript/api/word/word.interfaces.threedimensionalformatdata#presetextrusiondirection-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#presetExtrusionDirection:member">Word.ThreeDimensionalFormat.presetExtrusionDirection</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.presetExtrusionDirection](/javascript/api/word/word.threedimensionalformat#presetextrusiondirection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

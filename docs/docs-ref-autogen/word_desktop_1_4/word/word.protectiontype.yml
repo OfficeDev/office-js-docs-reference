@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#protectionType:member">Word.Document.protectionType</xref>
+  - \[
+  [Word.Document.protectionType](/javascript/api/word/word.document#protectiontype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#protectionType:member">Word.Interfaces.DocumentData.protectionType</xref>
+  - \[
+  [Word.Interfaces.DocumentData.protectionType](/javascript/api/word/word.interfaces.documentdata#protectiontype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

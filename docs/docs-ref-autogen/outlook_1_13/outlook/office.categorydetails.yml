@@ -23,14 +23,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Categories#getAsync:member(1)">Office.Categories.getAsync</xref>
+  - \[
+  [Office.Categories.getAsync](/javascript/api/outlook/office.categories#getasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MasterCategories#addAsync:member(1)">Office.MasterCategories.addAsync</xref>
+  - \[
+  [Office.MasterCategories.addAsync](/javascript/api/outlook/office.mastercategories#addasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MasterCategories#getAsync:member(1)">Office.MasterCategories.getAsync</xref>
+  - \[
+  [Office.MasterCategories.getAsync](/javascript/api/outlook/office.mastercategories#getasync-member)
+  \]
 
   #### Examples
 

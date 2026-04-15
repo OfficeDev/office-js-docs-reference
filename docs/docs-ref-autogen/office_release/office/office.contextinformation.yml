@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Context#diagnostics:member">Office.Context.diagnostics</xref>
+  - \[
+  [Office.Context.diagnostics](/javascript/api/office/office.context#diagnostics-member)
+  \]
 
 isPreview: false
 isDeprecated: false

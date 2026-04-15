@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.ContextMenu#requestUpdate:member(1)">Office.ContextMenu.requestUpdate</xref>
+  - \[
+  [Office.ContextMenu.requestUpdate](/javascript/api/office/office.contextmenu#requestupdate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

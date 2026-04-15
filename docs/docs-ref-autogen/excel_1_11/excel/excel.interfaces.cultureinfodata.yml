@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationData#cultureInfo:member">Excel.Interfaces.ApplicationData.cultureInfo</xref>
+  - \[
+  [Excel.Interfaces.ApplicationData.cultureInfo](/javascript/api/excel/excel.interfaces.applicationdata#cultureinfo-member)
+  \]
 
 isPreview: false
 isDeprecated: false

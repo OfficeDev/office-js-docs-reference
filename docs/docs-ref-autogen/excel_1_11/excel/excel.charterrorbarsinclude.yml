@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartErrorBars#include:member">Excel.ChartErrorBars.include</xref>
+  - \[
+  [Excel.ChartErrorBars.include](/javascript/api/excel/excel.charterrorbars#include-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartErrorBarsData#include:member">Excel.Interfaces.ChartErrorBarsData.include</xref>
+  - \[
+  [Excel.Interfaces.ChartErrorBarsData.include](/javascript/api/excel/excel.interfaces.charterrorbarsdata#include-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartErrorBarsUpdateData#include:member">Excel.Interfaces.ChartErrorBarsUpdateData.include</xref>
+  - \[
+  [Excel.Interfaces.ChartErrorBarsUpdateData.include](/javascript/api/excel/excel.interfaces.charterrorbarsupdatedata#include-member)
+  \]
 
 isPreview: false
 isDeprecated: false

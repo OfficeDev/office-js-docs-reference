@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotTable#hierarchies:member">Excel.PivotTable.hierarchies</xref>
+  - \[
+  [Excel.PivotTable.hierarchies](/javascript/api/excel/excel.pivottable#hierarchies-member)
+  \]
 
 isPreview: false
 isDeprecated: false

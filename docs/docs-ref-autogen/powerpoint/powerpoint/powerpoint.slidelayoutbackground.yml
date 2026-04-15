@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayout#background:member">PowerPoint.SlideLayout.background</xref>
+  - \[
+  [PowerPoint.SlideLayout.background](/javascript/api/powerpoint/powerpoint.slidelayout#background-member)
+  \]
 
 isPreview: false
 isDeprecated: false

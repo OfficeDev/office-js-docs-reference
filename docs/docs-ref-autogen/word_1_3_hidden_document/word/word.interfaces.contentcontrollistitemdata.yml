@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlListItemCollectionData#items:member">Word.Interfaces.ContentControlListItemCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.ContentControlListItemCollectionData.items](/javascript/api/word/word.interfaces.contentcontrollistitemcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlListItemCollectionUpdateData#items:member">Word.Interfaces.ContentControlListItemCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.ContentControlListItemCollectionUpdateData.items](/javascript/api/word/word.interfaces.contentcontrollistitemcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

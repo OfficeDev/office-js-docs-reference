@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member">OneNote.Interfaces.InkAnalysisLineUpdateData.paragraph</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisLineUpdateData.paragraph](/javascript/api/onenote/onenote.interfaces.inkanalysislineupdatedata#paragraph-member)
+  \]
 
 isPreview: false
 isDeprecated: false

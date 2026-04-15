@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockLoadOptions#category:member">Word.Interfaces.BuildingBlockLoadOptions.category</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockLoadOptions.category](/javascript/api/word/word.interfaces.buildingblockloadoptions#category-member)
+  \]
 
 isPreview: false
 isDeprecated: false

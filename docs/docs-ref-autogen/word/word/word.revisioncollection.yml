@@ -14,10 +14,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#revisions:member">Word.Document.revisions</xref>
+  - \[
+  [Word.Document.revisions](/javascript/api/word/word.document#revisions-member)
+  \]
 
-  - <xref href="word!Word.Range#revisions:member">Word.Range.revisions</xref>
+  - \[ [Word.Range.revisions](/javascript/api/word/word.range#revisions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

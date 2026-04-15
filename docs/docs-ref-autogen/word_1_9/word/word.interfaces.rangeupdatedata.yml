@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FieldUpdateData#result:member">Word.Interfaces.FieldUpdateData.result</xref>
+  - \[
+  [Word.Interfaces.FieldUpdateData.result](/javascript/api/word/word.interfaces.fieldupdatedata#result-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemUpdateData#reference:member">Word.Interfaces.NoteItemUpdateData.reference</xref>
+  - \[
+  [Word.Interfaces.NoteItemUpdateData.reference](/javascript/api/word/word.interfaces.noteitemupdatedata#reference-member)
+  \]
 
 isPreview: false
 isDeprecated: false

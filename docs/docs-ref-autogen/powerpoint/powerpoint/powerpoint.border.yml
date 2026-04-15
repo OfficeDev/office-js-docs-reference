@@ -13,23 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Borders#bottom:member">PowerPoint.Borders.bottom</xref>
+  - \[
+  [PowerPoint.Borders.bottom](/javascript/api/powerpoint/powerpoint.borders#bottom-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Borders#diagonalDown:member">PowerPoint.Borders.diagonalDown</xref>
+  - \[
+  [PowerPoint.Borders.diagonalDown](/javascript/api/powerpoint/powerpoint.borders#diagonaldown-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Borders#diagonalUp:member">PowerPoint.Borders.diagonalUp</xref>
+  - \[
+  [PowerPoint.Borders.diagonalUp](/javascript/api/powerpoint/powerpoint.borders#diagonalup-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Borders#left:member">PowerPoint.Borders.left</xref>
+  - \[
+  [PowerPoint.Borders.left](/javascript/api/powerpoint/powerpoint.borders#left-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Borders#right:member">PowerPoint.Borders.right</xref>
+  - \[
+  [PowerPoint.Borders.right](/javascript/api/powerpoint/powerpoint.borders#right-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Borders#top:member">PowerPoint.Borders.top</xref>
+  - \[
+  [PowerPoint.Borders.top](/javascript/api/powerpoint/powerpoint.borders#top-member)
+  \]
 
 isPreview: false
 isDeprecated: false

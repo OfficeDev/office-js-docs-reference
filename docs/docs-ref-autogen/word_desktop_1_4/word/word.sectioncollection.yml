@@ -15,13 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#sections:member">Word.Document.sections</xref>
+  - \[
+  [Word.Document.sections](/javascript/api/word/word.document#sections-member)
+  \]
 
-  - <xref href="word!Word.Range#sections:member">Word.Range.sections</xref>
+  - \[ [Word.Range.sections](/javascript/api/word/word.range#sections-member) \]
 
-  - <xref
-  href="word!Word.Selection#sections:member">Word.Selection.sections</xref>
+  - \[
+  [Word.Selection.sections](/javascript/api/word/word.selection#sections-member)
+  \]
 
   #### Examples
 

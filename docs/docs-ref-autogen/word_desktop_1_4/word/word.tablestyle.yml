@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Style#tableStyle:member">Word.Style.tableStyle</xref>
+  - \[
+  [Word.Style.tableStyle](/javascript/api/word/word.style#tablestyle-member) \]
 
   #### Examples
 

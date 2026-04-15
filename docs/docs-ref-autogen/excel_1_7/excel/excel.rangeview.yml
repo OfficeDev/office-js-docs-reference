@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeViewCollection#items:member">Excel.RangeViewCollection.items</xref>
+  - \[
+  [Excel.RangeViewCollection.items](/javascript/api/excel/excel.rangeviewcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

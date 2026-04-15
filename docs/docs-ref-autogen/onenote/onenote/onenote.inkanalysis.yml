@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member">OneNote.InkAnalysisParagraph.inkAnalysis</xref>
+  - \[
+  [OneNote.InkAnalysisParagraph.inkAnalysis](/javascript/api/onenote/onenote.inkanalysisparagraph#inkanalysis-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Page#inkAnalysisOrNull:member">OneNote.Page.inkAnalysisOrNull</xref>
+  - \[
+  [OneNote.Page.inkAnalysisOrNull](/javascript/api/onenote/onenote.page#inkanalysisornull-member)
+  \]
 
 isPreview: false
 isDeprecated: false

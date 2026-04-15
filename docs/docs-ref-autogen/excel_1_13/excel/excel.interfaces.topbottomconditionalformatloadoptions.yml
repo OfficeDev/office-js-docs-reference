@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottom</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottom](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#topbottom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottomOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottomOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#topbottomornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottom:member">Excel.Interfaces.ConditionalFormatLoadOptions.topBottom</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.topBottom](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#topbottom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottomOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.topBottomOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.topBottomOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#topbottomornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

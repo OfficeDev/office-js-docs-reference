@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.SelectionData#type:member">Word.Interfaces.SelectionData.type</xref>
+  - \[
+  [Word.Interfaces.SelectionData.type](/javascript/api/word/word.interfaces.selectiondata#type-member)
+  \]
 
-  - <xref href="word!Word.Selection#type:member">Word.Selection.type</xref>
+  - \[ [Word.Selection.type](/javascript/api/word/word.selection#type-member) \]
 
 isPreview: false
 isDeprecated: false

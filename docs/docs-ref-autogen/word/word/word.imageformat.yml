@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.InlinePicture#imageFormat:member">Word.InlinePicture.imageFormat</xref>
+  - \[
+  [Word.InlinePicture.imageFormat](/javascript/api/word/word.inlinepicture#imageformat-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureData#imageFormat:member">Word.Interfaces.InlinePictureData.imageFormat</xref>
+  - \[
+  [Word.Interfaces.InlinePictureData.imageFormat](/javascript/api/word/word.interfaces.inlinepicturedata#imageformat-member)
+  \]
 
   #### Examples
 

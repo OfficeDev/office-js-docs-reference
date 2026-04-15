@@ -15,15 +15,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ListCollection#items:member">Word.ListCollection.items</xref>
+  - \[
+  [Word.ListCollection.items](/javascript/api/word/word.listcollection#items-member)
+  \]
 
-  - <xref href="word!Word.ListFormat#list:member">Word.ListFormat.list</xref>
+  - \[ [Word.ListFormat.list](/javascript/api/word/word.listformat#list-member)
+  \]
 
-  - <xref href="word!Word.Paragraph#list:member">Word.Paragraph.list</xref>
+  - \[ [Word.Paragraph.list](/javascript/api/word/word.paragraph#list-member) \]
 
-  - <xref
-  href="word!Word.Paragraph#listOrNullObject:member">Word.Paragraph.listOrNullObject</xref>
+  - \[
+  [Word.Paragraph.listOrNullObject](/javascript/api/word/word.paragraph#listornullobject-member)
+  \]
 
   #### Examples
 

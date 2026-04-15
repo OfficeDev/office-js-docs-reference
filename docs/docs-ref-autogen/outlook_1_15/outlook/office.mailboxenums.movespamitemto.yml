@@ -38,8 +38,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.SpamReportingEventCompletedOptions#moveItemTo:member">Office.SpamReportingEventCompletedOptions.moveItemTo</xref>
+  - \[
+  [Office.SpamReportingEventCompletedOptions.moveItemTo](/javascript/api/outlook/office.spamreportingeventcompletedoptions#moveitemto-member)
+  \]
 
   #### Examples
 

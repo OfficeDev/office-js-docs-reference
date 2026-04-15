@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentData#image:member">OneNote.Interfaces.PageContentData.image</xref>
+  - \[
+  [OneNote.Interfaces.PageContentData.image](/javascript/api/onenote/onenote.interfaces.pagecontentdata#image-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphData#image:member">OneNote.Interfaces.ParagraphData.image</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphData.image](/javascript/api/onenote/onenote.interfaces.paragraphdata#image-member)
+  \]
 
 isPreview: false
 isDeprecated: false

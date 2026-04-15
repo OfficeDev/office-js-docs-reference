@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#activeWindow:member">Word.Interfaces.DocumentUpdateData.activeWindow</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.activeWindow](/javascript/api/word/word.interfaces.documentupdatedata#activewindow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

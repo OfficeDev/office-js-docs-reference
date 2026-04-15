@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Range#conditionalFormats:member">Excel.Range.conditionalFormats</xref>
+  - \[
+  [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#conditionalformats-member)
+  \]
 
 isPreview: false
 isDeprecated: false

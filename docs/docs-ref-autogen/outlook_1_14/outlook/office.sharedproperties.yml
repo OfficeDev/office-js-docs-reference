@@ -33,17 +33,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member(1)">Office.AppointmentCompose.getSharedPropertiesAsync</xref>
+  - \[
+  [Office.AppointmentCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#getsharedpropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)">Office.AppointmentRead.getSharedPropertiesAsync</xref>
+  - \[
+  [Office.AppointmentRead.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentread#getsharedpropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#getSharedPropertiesAsync:member(1)">Office.MessageCompose.getSharedPropertiesAsync</xref>
+  - \[
+  [Office.MessageCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.messagecompose#getsharedpropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getSharedPropertiesAsync:member(1)">Office.MessageRead.getSharedPropertiesAsync</xref>
+  - \[
+  [Office.MessageRead.getSharedPropertiesAsync](/javascript/api/outlook/office.messageread#getsharedpropertiesasync-member)
+  \]
 
   #### Examples
 

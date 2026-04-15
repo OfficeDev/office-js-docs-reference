@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentReplyCollectionData#items:member">Excel.Interfaces.CommentReplyCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.CommentReplyCollectionData.items](/javascript/api/excel/excel.interfaces.commentreplycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member">Excel.Interfaces.CommentReplyCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.CommentReplyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.commentreplycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

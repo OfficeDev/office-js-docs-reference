@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatData#topBottom:member">Excel.Interfaces.ConditionalFormatData.topBottom</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatData.topBottom](/javascript/api/excel/excel.interfaces.conditionalformatdata#topbottom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatData#topBottomOrNullObject:member">Excel.Interfaces.ConditionalFormatData.topBottomOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatData.topBottomOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatdata#topbottomornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

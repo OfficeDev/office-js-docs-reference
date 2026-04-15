@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartMapOptions#labelStrategy:member">Excel.ChartMapOptions.labelStrategy</xref>
+  - \[
+  [Excel.ChartMapOptions.labelStrategy](/javascript/api/excel/excel.chartmapoptions#labelstrategy-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member">Excel.Interfaces.ChartMapOptionsData.labelStrategy</xref>
+  - \[
+  [Excel.Interfaces.ChartMapOptionsData.labelStrategy](/javascript/api/excel/excel.interfaces.chartmapoptionsdata#labelstrategy-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy:member">Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy</xref>
+  - \[
+  [Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy](/javascript/api/excel/excel.interfaces.chartmapoptionsupdatedata#labelstrategy-member)
+  \]
 
 isPreview: false
 isDeprecated: false

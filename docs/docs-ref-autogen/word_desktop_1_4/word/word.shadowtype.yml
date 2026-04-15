@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShadowFormatData#type:member">Word.Interfaces.ShadowFormatData.type</xref>
+  - \[
+  [Word.Interfaces.ShadowFormatData.type](/javascript/api/word/word.interfaces.shadowformatdata#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadowFormatUpdateData#type:member">Word.Interfaces.ShadowFormatUpdateData.type</xref>
+  - \[
+  [Word.Interfaces.ShadowFormatUpdateData.type](/javascript/api/word/word.interfaces.shadowformatupdatedata#type-member)
+  \]
 
-  - <xref
-  href="word!Word.ShadowFormat#type:member">Word.ShadowFormat.type</xref>
+  - \[
+  [Word.ShadowFormat.type](/javascript/api/word/word.shadowformat#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

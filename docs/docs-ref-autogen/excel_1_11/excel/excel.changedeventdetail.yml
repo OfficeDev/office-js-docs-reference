@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#details:member">Excel.TableChangedEventArgs.details</xref>
+  - \[
+  [Excel.TableChangedEventArgs.details](/javascript/api/excel/excel.tablechangedeventargs#details-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#details:member">Excel.WorksheetChangedEventArgs.details</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.details](/javascript/api/excel/excel.worksheetchangedeventargs#details-member)
+  \]
 
 isPreview: false
 isDeprecated: false

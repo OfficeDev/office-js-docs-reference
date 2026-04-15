@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Shape#textFrame:member">Excel.Shape.textFrame</xref>
+  - \[
+  [Excel.Shape.textFrame](/javascript/api/excel/excel.shape#textframe-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -13,38 +13,49 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#parentTableCell:member">Word.ContentControl.parentTableCell</xref>
+  - \[
+  [Word.ContentControl.parentTableCell](/javascript/api/word/word.contentcontrol#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#parentTableCellOrNullObject:member">Word.ContentControl.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.ContentControl.parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.InlinePicture#parentTableCell:member">Word.InlinePicture.parentTableCell</xref>
+  - \[
+  [Word.InlinePicture.parentTableCell](/javascript/api/word/word.inlinepicture#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.InlinePicture#parentTableCellOrNullObject:member">Word.InlinePicture.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.InlinePicture.parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#parentTableCell:member">Word.Paragraph.parentTableCell</xref>
+  - \[
+  [Word.Paragraph.parentTableCell](/javascript/api/word/word.paragraph#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#parentTableCellOrNullObject:member">Word.Paragraph.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Paragraph.parentTableCellOrNullObject](/javascript/api/word/word.paragraph#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#parentTableCell:member">Word.Range.parentTableCell</xref>
+  - \[
+  [Word.Range.parentTableCell](/javascript/api/word/word.range#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#parentTableCellOrNullObject:member">Word.Range.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#parentTableCell:member">Word.Table.parentTableCell</xref>
+  - \[
+  [Word.Table.parentTableCell](/javascript/api/word/word.table#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#parentTableCellOrNullObject:member">Word.Table.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.TableCellCollection#items:member">Word.TableCellCollection.items</xref>
+  - \[
+  [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#items-member)
+  \]
 
   #### Examples
 

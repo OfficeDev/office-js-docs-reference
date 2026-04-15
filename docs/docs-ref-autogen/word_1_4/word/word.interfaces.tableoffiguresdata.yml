@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TableOfFiguresCollectionData#items:member">Word.Interfaces.TableOfFiguresCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.TableOfFiguresCollectionData.items](/javascript/api/word/word.interfaces.tableoffigurescollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfFiguresCollectionUpdateData#items:member">Word.Interfaces.TableOfFiguresCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.TableOfFiguresCollectionUpdateData.items](/javascript/api/word/word.interfaces.tableoffigurescollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

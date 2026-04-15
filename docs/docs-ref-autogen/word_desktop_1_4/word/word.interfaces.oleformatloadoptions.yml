@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#oleFormat:member">Word.Interfaces.FieldCollectionLoadOptions.oleFormat</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.oleFormat](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#oleformat-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#oleFormat:member">Word.Interfaces.FieldLoadOptions.oleFormat</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.oleFormat](/javascript/api/word/word.interfaces.fieldloadoptions#oleformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

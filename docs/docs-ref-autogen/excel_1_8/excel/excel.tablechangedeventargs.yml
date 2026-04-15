@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Table#onChanged:member">Excel.Table.onChanged</xref>
+  - \[
+  [Excel.Table.onChanged](/javascript/api/excel/excel.table#onchanged-member) \]
 
-  - <xref
-  href="excel!Excel.TableCollection#onChanged:member">Excel.TableCollection.onChanged</xref>
+  - \[
+  [Excel.TableCollection.onChanged](/javascript/api/excel/excel.tablecollection#onchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

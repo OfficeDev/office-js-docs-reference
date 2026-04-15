@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SlicerStyleCollection#items:member">Excel.SlicerStyleCollection.items</xref>
+  - \[
+  [Excel.SlicerStyleCollection.items](/javascript/api/excel/excel.slicerstylecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

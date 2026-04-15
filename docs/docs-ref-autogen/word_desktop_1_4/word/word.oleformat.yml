@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Field#oleFormat:member">Word.Field.oleFormat</xref>
+  - \[ [Word.Field.oleFormat](/javascript/api/word/word.field#oleformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

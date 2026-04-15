@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member">Word.Interfaces.CommentReplyCollectionLoadOptions.parentComment</xref>
+  - \[
+  [Word.Interfaces.CommentReplyCollectionLoadOptions.parentComment](/javascript/api/word/word.interfaces.commentreplycollectionloadoptions#parentcomment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member">Word.Interfaces.CommentReplyLoadOptions.parentComment</xref>
+  - \[
+  [Word.Interfaces.CommentReplyLoadOptions.parentComment](/javascript/api/word/word.interfaces.commentreplyloadoptions#parentcomment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

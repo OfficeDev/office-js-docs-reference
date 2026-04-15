@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TagCollectionData#items:member">PowerPoint.Interfaces.TagCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.TagCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.tagcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData#items:member">PowerPoint.Interfaces.TagCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.TagCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.tagcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -17,14 +17,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#relativeVerticalPosition:member">Word.Interfaces.ShapeData.relativeVerticalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeData.relativeVerticalPosition](/javascript/api/word/word.interfaces.shapedata#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member">Word.Interfaces.ShapeUpdateData.relativeVerticalPosition</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.relativeVerticalPosition](/javascript/api/word/word.interfaces.shapeupdatedata#relativeverticalposition-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#relativeVerticalPosition:member">Word.Shape.relativeVerticalPosition</xref>
+  - \[
+  [Word.Shape.relativeVerticalPosition](/javascript/api/word/word.shape#relativeverticalposition-member)
+  \]
 
   #### Examples
 

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.CustomPropertyCollection#items:member">PowerPoint.CustomPropertyCollection.items</xref>
+  - \[
+  [PowerPoint.CustomPropertyCollection.items](/javascript/api/powerpoint/powerpoint.custompropertycollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

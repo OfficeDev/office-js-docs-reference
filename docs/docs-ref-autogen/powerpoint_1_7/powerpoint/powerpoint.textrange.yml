@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TextFrame#textRange:member">PowerPoint.TextFrame.textRange</xref>
+  - \[
+  [PowerPoint.TextFrame.textRange](/javascript/api/powerpoint/powerpoint.textframe#textrange-member)
+  \]
 
   #### Examples
 

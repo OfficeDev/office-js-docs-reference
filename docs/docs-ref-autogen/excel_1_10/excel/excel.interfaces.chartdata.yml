@@ -8,14 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartCollectionData#items:member">Excel.Interfaces.ChartCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartCollectionData.items](/javascript/api/excel/excel.interfaces.chartcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartCollectionUpdateData#items:member">Excel.Interfaces.ChartCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.chartcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#charts:member">Excel.Interfaces.WorksheetData.charts</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.charts](/javascript/api/excel/excel.interfaces.worksheetdata#charts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

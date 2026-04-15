@@ -17,50 +17,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#styleBuiltIn:member">Word.Body.styleBuiltIn</xref>
+  - \[
+  [Word.Body.styleBuiltIn](/javascript/api/word/word.body#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#styleBuiltIn:member">Word.ContentControl.styleBuiltIn</xref>
+  - \[
+  [Word.ContentControl.styleBuiltIn](/javascript/api/word/word.contentcontrol#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#styleBuiltIn:member">Word.Interfaces.BodyData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.BodyData.styleBuiltIn](/javascript/api/word/word.interfaces.bodydata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BodyUpdateData#styleBuiltIn:member">Word.Interfaces.BodyUpdateData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.BodyUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.bodyupdatedata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#styleBuiltIn:member">Word.Interfaces.ContentControlData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.styleBuiltIn](/javascript/api/word/word.interfaces.contentcontroldata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#styleBuiltIn:member">Word.Interfaces.ContentControlUpdateData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.contentcontrolupdatedata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#styleBuiltIn:member">Word.Interfaces.ParagraphData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.styleBuiltIn](/javascript/api/word/word.interfaces.paragraphdata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphUpdateData#styleBuiltIn:member">Word.Interfaces.ParagraphUpdateData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.ParagraphUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.paragraphupdatedata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#styleBuiltIn:member">Word.Interfaces.RangeData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.RangeData.styleBuiltIn](/javascript/api/word/word.interfaces.rangedata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member">Word.Interfaces.RangeUpdateData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.rangeupdatedata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableData#styleBuiltIn:member">Word.Interfaces.TableData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.TableData.styleBuiltIn](/javascript/api/word/word.interfaces.tabledata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableUpdateData#styleBuiltIn:member">Word.Interfaces.TableUpdateData.styleBuiltIn</xref>
+  - \[
+  [Word.Interfaces.TableUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.tableupdatedata#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#styleBuiltIn:member">Word.Paragraph.styleBuiltIn</xref>
+  - \[
+  [Word.Paragraph.styleBuiltIn](/javascript/api/word/word.paragraph#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#styleBuiltIn:member">Word.Range.styleBuiltIn</xref>
+  - \[
+  [Word.Range.styleBuiltIn](/javascript/api/word/word.range#stylebuiltin-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#styleBuiltIn:member">Word.Table.styleBuiltIn</xref>
+  - \[
+  [Word.Table.styleBuiltIn](/javascript/api/word/word.table#stylebuiltin-member)
+  \]
 
   #### Examples
 

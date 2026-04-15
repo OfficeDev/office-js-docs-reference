@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#listFormat:member">Word.Interfaces.RangeUpdateData.listFormat</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.listFormat](/javascript/api/word/word.interfaces.rangeupdatedata#listformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

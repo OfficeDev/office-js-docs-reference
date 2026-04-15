@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#textFrame:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame</xref>
+  - \[
+  [Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame](/javascript/api/excel/excel.interfaces.groupshapecollectionloadoptions#textframe-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#textFrame:member">Excel.Interfaces.ShapeCollectionLoadOptions.textFrame</xref>
+  - \[
+  [Excel.Interfaces.ShapeCollectionLoadOptions.textFrame](/javascript/api/excel/excel.interfaces.shapecollectionloadoptions#textframe-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member">Excel.Interfaces.ShapeLoadOptions.textFrame</xref>
+  - \[
+  [Excel.Interfaces.ShapeLoadOptions.textFrame](/javascript/api/excel/excel.interfaces.shapeloadoptions#textframe-member)
+  \]
 
 isPreview: false
 isDeprecated: false

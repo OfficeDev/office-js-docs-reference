@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontLoadOptions#fill:member">Word.Interfaces.FontLoadOptions.fill</xref>
+  - \[
+  [Word.Interfaces.FontLoadOptions.fill](/javascript/api/word/word.interfaces.fontloadoptions#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

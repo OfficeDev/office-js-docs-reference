@@ -16,11 +16,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.RequestContext#document:member">Word.RequestContext.document</xref>
+  - \[
+  [Word.RequestContext.document](/javascript/api/word/word.requestcontext#document-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#ownerDocument:member">Word.XmlNode.ownerDocument</xref>
+  - \[
+  [Word.XmlNode.ownerDocument](/javascript/api/word/word.xmlnode#ownerdocument-member)
+  \]
 
   #### Examples
 

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.HtmlDivisionCollection#items:member">Word.HtmlDivisionCollection.items</xref>
+  - \[
+  [Word.HtmlDivisionCollection.items](/javascript/api/word/word.htmldivisioncollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

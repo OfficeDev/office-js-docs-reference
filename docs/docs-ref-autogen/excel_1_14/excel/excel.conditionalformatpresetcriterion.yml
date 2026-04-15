@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalPresetCriteriaRule#criterion:member">Excel.ConditionalPresetCriteriaRule.criterion</xref>
+  - \[
+  [Excel.ConditionalPresetCriteriaRule.criterion](/javascript/api/excel/excel.conditionalpresetcriteriarule#criterion-member)
+  \]
 
   #### Examples
 

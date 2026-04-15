@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#onAnnotationPopupAction:member">Word.Document.onAnnotationPopupAction</xref>
+  - \[
+  [Word.Document.onAnnotationPopupAction](/javascript/api/word/word.document#onannotationpopupaction-member)
+  \]
 
   #### Examples
 

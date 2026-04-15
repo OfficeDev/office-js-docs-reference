@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member">Excel.Interfaces.SlicerUpdateData.slicerStyle</xref>
+  - \[
+  [Excel.Interfaces.SlicerUpdateData.slicerStyle](/javascript/api/excel/excel.interfaces.slicerupdatedata#slicerstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

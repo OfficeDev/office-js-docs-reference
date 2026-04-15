@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#onSlideSelectionChanged:member">PowerPoint.Presentation.onSlideSelectionChanged</xref>
+  - \[
+  [PowerPoint.Presentation.onSlideSelectionChanged](/javascript/api/powerpoint/powerpoint.presentation#onslideselectionchanged-member)
+  \]
 
 isPreview: true
 isDeprecated: false

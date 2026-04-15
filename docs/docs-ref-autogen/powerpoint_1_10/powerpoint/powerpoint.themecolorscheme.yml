@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#themeColorScheme:member">PowerPoint.Slide.themeColorScheme</xref>
+  - \[
+  [PowerPoint.Slide.themeColorScheme](/javascript/api/powerpoint/powerpoint.slide#themecolorscheme-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayout#themeColorScheme:member">PowerPoint.SlideLayout.themeColorScheme</xref>
+  - \[
+  [PowerPoint.SlideLayout.themeColorScheme](/javascript/api/powerpoint/powerpoint.slidelayout#themecolorscheme-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMaster#themeColorScheme:member">PowerPoint.SlideMaster.themeColorScheme</xref>
+  - \[
+  [PowerPoint.SlideMaster.themeColorScheme](/javascript/api/powerpoint/powerpoint.slidemaster#themecolorscheme-member)
+  \]
 
   #### Examples
 

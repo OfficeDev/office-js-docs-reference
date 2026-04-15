@@ -16,17 +16,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#dataValidation:member">Excel.Interfaces.RangeAreasCollectionLoadOptions.dataValidation</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasCollectionLoadOptions.dataValidation](/javascript/api/excel/excel.interfaces.rangeareascollectionloadoptions#datavalidation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasLoadOptions#dataValidation:member">Excel.Interfaces.RangeAreasLoadOptions.dataValidation</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasLoadOptions.dataValidation](/javascript/api/excel/excel.interfaces.rangeareasloadoptions#datavalidation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeCollectionLoadOptions#dataValidation:member">Excel.Interfaces.RangeCollectionLoadOptions.dataValidation</xref>
+  - \[
+  [Excel.Interfaces.RangeCollectionLoadOptions.dataValidation](/javascript/api/excel/excel.interfaces.rangecollectionloadoptions#datavalidation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member">Excel.Interfaces.RangeLoadOptions.dataValidation</xref>
+  - \[
+  [Excel.Interfaces.RangeLoadOptions.dataValidation](/javascript/api/excel/excel.interfaces.rangeloadoptions#datavalidation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

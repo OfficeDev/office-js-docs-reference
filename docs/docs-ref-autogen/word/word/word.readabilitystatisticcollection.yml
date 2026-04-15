@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#readabilityStatistics:member">Word.Document.readabilityStatistics</xref>
+  - \[
+  [Word.Document.readabilityStatistics](/javascript/api/word/word.document#readabilitystatistics-member)
+  \]
 
 isPreview: false
 isDeprecated: false

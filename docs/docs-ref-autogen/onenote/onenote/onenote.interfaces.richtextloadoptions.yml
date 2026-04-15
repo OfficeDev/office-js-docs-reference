@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#richText:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.richText</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.richText](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#richtext-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#richText:member">OneNote.Interfaces.ParagraphLoadOptions.richText</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.richText](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#richtext-member)
+  \]
 
 isPreview: false
 isDeprecated: false

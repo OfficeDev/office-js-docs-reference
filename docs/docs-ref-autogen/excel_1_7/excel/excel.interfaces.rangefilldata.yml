@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatData#fill:member">Excel.Interfaces.RangeFormatData.fill</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatData.fill](/javascript/api/excel/excel.interfaces.rangeformatdata#fill-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleData#fill:member">Excel.Interfaces.StyleData.fill</xref>
+  - \[
+  [Excel.Interfaces.StyleData.fill](/javascript/api/excel/excel.interfaces.styledata#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

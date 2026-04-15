@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#onDeleted:member">Word.ContentControl.onDeleted</xref>
+  - \[
+  [Word.ContentControl.onDeleted](/javascript/api/word/word.contentcontrol#ondeleted-member)
+  \]
 
   #### Examples
 

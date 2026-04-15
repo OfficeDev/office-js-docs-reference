@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorderCollection#bottom:member">Excel.ConditionalRangeBorderCollection.bottom</xref>
+  - \[
+  [Excel.ConditionalRangeBorderCollection.bottom](/javascript/api/excel/excel.conditionalrangebordercollection#bottom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorderCollection#items:member">Excel.ConditionalRangeBorderCollection.items</xref>
+  - \[
+  [Excel.ConditionalRangeBorderCollection.items](/javascript/api/excel/excel.conditionalrangebordercollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorderCollection#left:member">Excel.ConditionalRangeBorderCollection.left</xref>
+  - \[
+  [Excel.ConditionalRangeBorderCollection.left](/javascript/api/excel/excel.conditionalrangebordercollection#left-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorderCollection#right:member">Excel.ConditionalRangeBorderCollection.right</xref>
+  - \[
+  [Excel.ConditionalRangeBorderCollection.right](/javascript/api/excel/excel.conditionalrangebordercollection#right-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorderCollection#top:member">Excel.ConditionalRangeBorderCollection.top</xref>
+  - \[
+  [Excel.ConditionalRangeBorderCollection.top](/javascript/api/excel/excel.conditionalrangebordercollection#top-member)
+  \]
 
 isPreview: false
 isDeprecated: false

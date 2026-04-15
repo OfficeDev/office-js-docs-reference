@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Shape#textFrame:member">Word.Shape.textFrame</xref>
+  - \[ [Word.Shape.textFrame](/javascript/api/word/word.shape#textframe-member)
+  \]
 
   #### Examples
 

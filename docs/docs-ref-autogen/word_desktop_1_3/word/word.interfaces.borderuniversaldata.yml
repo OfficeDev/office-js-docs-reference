@@ -10,26 +10,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalCollectionData#items:member">Word.Interfaces.BorderUniversalCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalCollectionData.items](/javascript/api/word/word.interfaces.borderuniversalcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member">Word.Interfaces.BorderUniversalCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalCollectionUpdateData.items](/javascript/api/word/word.interfaces.borderuniversalcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#borders:member">Word.Interfaces.FontData.borders</xref>
+  - \[
+  [Word.Interfaces.FontData.borders](/javascript/api/word/word.interfaces.fontdata#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#borders:member">Word.Interfaces.FrameData.borders</xref>
+  - \[
+  [Word.Interfaces.FrameData.borders](/javascript/api/word/word.interfaces.framedata#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#borders:member">Word.Interfaces.ParagraphData.borders</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.borders](/javascript/api/word/word.interfaces.paragraphdata#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionData#borders:member">Word.Interfaces.SectionData.borders</xref>
+  - \[
+  [Word.Interfaces.SectionData.borders](/javascript/api/word/word.interfaces.sectiondata#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableColumnData#borders:member">Word.Interfaces.TableColumnData.borders</xref>
+  - \[
+  [Word.Interfaces.TableColumnData.borders](/javascript/api/word/word.interfaces.tablecolumndata#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

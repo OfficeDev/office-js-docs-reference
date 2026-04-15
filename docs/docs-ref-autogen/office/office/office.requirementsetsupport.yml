@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Context#requirements:member">Office.Context.requirements</xref>
+  - \[
+  [Office.Context.requirements](/javascript/api/office/office.context#requirements-member)
+  \]
 
   #### Examples
 

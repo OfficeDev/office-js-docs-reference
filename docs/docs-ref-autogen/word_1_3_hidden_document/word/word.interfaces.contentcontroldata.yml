@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#contentControls:member">Word.Interfaces.BodyData.contentControls</xref>
+  - \[
+  [Word.Interfaces.BodyData.contentControls](/javascript/api/word/word.interfaces.bodydata#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionData#items:member">Word.Interfaces.ContentControlCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionData.items](/javascript/api/word/word.interfaces.contentcontrolcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionUpdateData#items:member">Word.Interfaces.ContentControlCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionUpdateData.items](/javascript/api/word/word.interfaces.contentcontrolcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#contentControls:member">Word.Interfaces.ContentControlData.contentControls</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.contentControls](/javascript/api/word/word.interfaces.contentcontroldata#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentCreatedData#contentControls:member">Word.Interfaces.DocumentCreatedData.contentControls</xref>
+  - \[
+  [Word.Interfaces.DocumentCreatedData.contentControls](/javascript/api/word/word.interfaces.documentcreateddata#contentcontrols-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#contentControls:member">Word.Interfaces.DocumentData.contentControls</xref>
+  - \[
+  [Word.Interfaces.DocumentData.contentControls](/javascript/api/word/word.interfaces.documentdata#contentcontrols-member)
+  \]
 
 isPreview: false
 isDeprecated: false

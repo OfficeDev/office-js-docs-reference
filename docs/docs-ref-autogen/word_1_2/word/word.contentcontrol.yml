@@ -18,23 +18,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#parentContentControl:member">Word.Body.parentContentControl</xref>
+  - \[
+  [Word.Body.parentContentControl](/javascript/api/word/word.body#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#parentContentControl:member">Word.ContentControl.parentContentControl</xref>
+  - \[
+  [Word.ContentControl.parentContentControl](/javascript/api/word/word.contentcontrol#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlCollection#items:member">Word.ContentControlCollection.items</xref>
+  - \[
+  [Word.ContentControlCollection.items](/javascript/api/word/word.contentcontrolcollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.InlinePicture#parentContentControl:member">Word.InlinePicture.parentContentControl</xref>
+  - \[
+  [Word.InlinePicture.parentContentControl](/javascript/api/word/word.inlinepicture#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#parentContentControl:member">Word.Paragraph.parentContentControl</xref>
+  - \[
+  [Word.Paragraph.parentContentControl](/javascript/api/word/word.paragraph#parentcontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#parentContentControl:member">Word.Range.parentContentControl</xref>
+  - \[
+  [Word.Range.parentContentControl](/javascript/api/word/word.range#parentcontentcontrol-member)
+  \]
 
   #### Examples
 

@@ -13,10 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Image#format:member">Excel.Image.format</xref>
+  - \[ [Excel.Image.format](/javascript/api/excel/excel.image#format-member) \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ImageData#format:member">Excel.Interfaces.ImageData.format</xref>
+  - \[
+  [Excel.Interfaces.ImageData.format](/javascript/api/excel/excel.interfaces.imagedata#format-member)
+  \]
 
   #### Examples
 

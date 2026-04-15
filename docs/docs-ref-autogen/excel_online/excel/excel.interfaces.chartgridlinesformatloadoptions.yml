@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartGridlinesLoadOptions#format:member">Excel.Interfaces.ChartGridlinesLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.ChartGridlinesLoadOptions.format](/javascript/api/excel/excel.interfaces.chartgridlinesloadoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

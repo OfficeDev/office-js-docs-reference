@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#format:member">Excel.Interfaces.CellValueConditionalFormatUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.CellValueConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatupdatedata#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member">Excel.Interfaces.CustomConditionalFormatUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.CustomConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.customconditionalformatupdatedata#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#format:member">Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatupdatedata#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member">Excel.Interfaces.TextConditionalFormatUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.TextConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.textconditionalformatupdatedata#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#format:member">Excel.Interfaces.TopBottomConditionalFormatUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.TopBottomConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.topbottomconditionalformatupdatedata#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

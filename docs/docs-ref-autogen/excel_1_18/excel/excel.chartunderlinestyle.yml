@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartFont#underline:member">Excel.ChartFont.underline</xref>
+  - \[
+  [Excel.ChartFont.underline](/javascript/api/excel/excel.chartfont#underline-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartFontData#underline:member">Excel.Interfaces.ChartFontData.underline</xref>
+  - \[
+  [Excel.Interfaces.ChartFontData.underline](/javascript/api/excel/excel.interfaces.chartfontdata#underline-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartFontUpdateData#underline:member">Excel.Interfaces.ChartFontUpdateData.underline</xref>
+  - \[
+  [Excel.Interfaces.ChartFontUpdateData.underline](/javascript/api/excel/excel.interfaces.chartfontupdatedata#underline-member)
+  \]
 
 isPreview: false
 isDeprecated: false

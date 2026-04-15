@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BindingCollection#items:member">Excel.BindingCollection.items</xref>
+  - \[
+  [Excel.BindingCollection.items](/javascript/api/excel/excel.bindingcollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.BindingDataChangedEventArgs#binding:member">Excel.BindingDataChangedEventArgs.binding</xref>
+  - \[
+  [Excel.BindingDataChangedEventArgs.binding](/javascript/api/excel/excel.bindingdatachangedeventargs#binding-member)
+  \]
 
-  - <xref
-  href="excel!Excel.BindingSelectionChangedEventArgs#binding:member">Excel.BindingSelectionChangedEventArgs.binding</xref>
+  - \[
+  [Excel.BindingSelectionChangedEventArgs.binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#binding-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#markupMode:member">Word.Interfaces.ViewData.markupMode</xref>
+  - \[
+  [Word.Interfaces.ViewData.markupMode](/javascript/api/word/word.interfaces.viewdata#markupmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#markupMode:member">Word.Interfaces.ViewUpdateData.markupMode</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.markupMode](/javascript/api/word/word.interfaces.viewupdatedata#markupmode-member)
+  \]
 
-  - <xref href="word!Word.View#markupMode:member">Word.View.markupMode</xref>
+  - \[ [Word.View.markupMode](/javascript/api/word/word.view#markupmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

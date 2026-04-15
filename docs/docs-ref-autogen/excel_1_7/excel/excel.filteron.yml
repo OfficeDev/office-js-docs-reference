@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.FilterCriteria#filterOn:member">Excel.FilterCriteria.filterOn</xref>
+  - \[
+  [Excel.FilterCriteria.filterOn](/javascript/api/excel/excel.filtercriteria#filteron-member)
+  \]
 
   #### Examples
 

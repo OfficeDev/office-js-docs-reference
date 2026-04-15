@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#repeatingSectionContentControl:member">Word.Interfaces.ContentControlUpdateData.repeatingSectionContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.repeatingSectionContentControl](/javascript/api/word/word.interfaces.contentcontrolupdatedata#repeatingsectioncontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

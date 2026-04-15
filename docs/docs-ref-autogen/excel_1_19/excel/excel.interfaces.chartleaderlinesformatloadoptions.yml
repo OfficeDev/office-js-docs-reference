@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLeaderLinesLoadOptions#format:member">Excel.Interfaces.ChartLeaderLinesLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.ChartLeaderLinesLoadOptions.format](/javascript/api/excel/excel.interfaces.chartleaderlinesloadoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

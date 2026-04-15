@@ -11,23 +11,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)">Office.AppointmentCompose.setSelectedDataAsync</xref>
+  - \[
+  [Office.AppointmentCompose.setSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#setselecteddataasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Body#appendOnSendAsync:member(1)">Office.Body.appendOnSendAsync</xref>
+  - \[
+  [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#appendonsendasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Body#prependAsync:member(1)">Office.Body.prependAsync</xref>
+  - \[
+  [Office.Body.prependAsync](/javascript/api/outlook/office.body#prependasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Body#setAsync:member(1)">Office.Body.setAsync</xref>
+  - \[
+  [Office.Body.setAsync](/javascript/api/outlook/office.body#setasync-member) \]
 
-  - <xref
-  href="outlook!Office.Body#setSelectedDataAsync:member(1)">Office.Body.setSelectedDataAsync</xref>
+  - \[
+  [Office.Body.setSelectedDataAsync](/javascript/api/outlook/office.body#setselecteddataasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#setSelectedDataAsync:member(1)">Office.MessageCompose.setSelectedDataAsync</xref>
+  - \[
+  [Office.MessageCompose.setSelectedDataAsync](/javascript/api/outlook/office.messagecompose#setselecteddataasync-member)
+  \]
 
   #### Examples
 

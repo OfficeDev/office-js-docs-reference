@@ -14,21 +14,27 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Frame#heightRule:member">Word.Frame.heightRule</xref>
+  - \[
+  [Word.Frame.heightRule](/javascript/api/word/word.frame#heightrule-member) \]
 
-  - <xref href="word!Word.Frame#widthRule:member">Word.Frame.widthRule</xref>
+  - \[ [Word.Frame.widthRule](/javascript/api/word/word.frame#widthrule-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#heightRule:member">Word.Interfaces.FrameData.heightRule</xref>
+  - \[
+  [Word.Interfaces.FrameData.heightRule](/javascript/api/word/word.interfaces.framedata#heightrule-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameData#widthRule:member">Word.Interfaces.FrameData.widthRule</xref>
+  - \[
+  [Word.Interfaces.FrameData.widthRule](/javascript/api/word/word.interfaces.framedata#widthrule-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameUpdateData#heightRule:member">Word.Interfaces.FrameUpdateData.heightRule</xref>
+  - \[
+  [Word.Interfaces.FrameUpdateData.heightRule](/javascript/api/word/word.interfaces.frameupdatedata#heightrule-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameUpdateData#widthRule:member">Word.Interfaces.FrameUpdateData.widthRule</xref>
+  - \[
+  [Word.Interfaces.FrameUpdateData.widthRule](/javascript/api/word/word.interfaces.frameupdatedata#widthrule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

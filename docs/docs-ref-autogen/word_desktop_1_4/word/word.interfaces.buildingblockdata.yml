@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#placeholderText:member">Word.Interfaces.BuildingBlockGalleryContentControlData.placeholderText</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlData.placeholderText](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#placeholderText:member">Word.Interfaces.DatePickerContentControlData.placeholderText</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.placeholderText](/javascript/api/word/word.interfaces.datepickercontentcontroldata#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlData#placeholderText:member">Word.Interfaces.GroupContentControlData.placeholderText</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlData.placeholderText](/javascript/api/word/word.interfaces.groupcontentcontroldata#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlData#placeholderText:member">Word.Interfaces.PictureContentControlData.placeholderText</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlData.placeholderText](/javascript/api/word/word.interfaces.picturecontentcontroldata#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlData#placeholderText:member">Word.Interfaces.RepeatingSectionContentControlData.placeholderText</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlData.placeholderText](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#placeholdertext-member)
+  \]
 
 isPreview: false
 isDeprecated: false

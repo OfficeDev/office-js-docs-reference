@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member">Excel.Interfaces.CustomXmlPartCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.CustomXmlPartCollectionData.items](/javascript/api/excel/excel.interfaces.customxmlpartcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member">Excel.Interfaces.CustomXmlPartCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.CustomXmlPartCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.customxmlpartcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member">Excel.Interfaces.CustomXmlPartScopedCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.CustomXmlPartScopedCollectionData.items](/javascript/api/excel/excel.interfaces.customxmlpartscopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member">Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.customxmlpartscopedcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#customXmlParts:member">Excel.Interfaces.WorkbookData.customXmlParts</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.customXmlParts](/javascript/api/excel/excel.interfaces.workbookdata#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

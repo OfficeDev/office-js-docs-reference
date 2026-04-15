@@ -12,235 +12,312 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.FilterCriteria#icon:member">Excel.FilterCriteria.icon</xref>
+  - \[
+  [Excel.FilterCriteria.icon](/javascript/api/excel/excel.filtercriteria#icon-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsGraySet.grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#graydownarrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsGraySet.grayDownInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#graydowninclinearrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsGraySet.graySideArrow](/javascript/api/excel/excel.fivearrowsgrayset#graysidearrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsGraySet.grayUpArrow](/javascript/api/excel/excel.fivearrowsgrayset#grayuparrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsGraySet.grayUpInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#grayupinclinearrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsSet.greenUpArrow](/javascript/api/excel/excel.fivearrowsset#greenuparrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsSet.redDownArrow](/javascript/api/excel/excel.fivearrowsset#reddownarrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsSet.yellowDownInclineArrow](/javascript/api/excel/excel.fivearrowsset#yellowdowninclinearrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsSet.yellowSideArrow](/javascript/api/excel/excel.fivearrowsset#yellowsidearrow-member)
+  \]
+
+  - \[
+  [Excel.FiveArrowsSet.yellowUpInclineArrow](/javascript/api/excel/excel.fivearrowsset#yellowupinclinearrow-member)
+  \]
+
+  - \[
+  [Excel.FiveBoxesSet.fourFilledBoxes](/javascript/api/excel/excel.fiveboxesset#fourfilledboxes-member)
+  \]
+
+  - \[
+  [Excel.FiveBoxesSet.noFilledBoxes](/javascript/api/excel/excel.fiveboxesset#nofilledboxes-member)
+  \]
+
+  - \[
+  [Excel.FiveBoxesSet.oneFilledBox](/javascript/api/excel/excel.fiveboxesset#onefilledbox-member)
+  \]
+
+  - \[
+  [Excel.FiveBoxesSet.threeFilledBoxes](/javascript/api/excel/excel.fiveboxesset#threefilledboxes-member)
+  \]
+
+  - \[
+  [Excel.FiveBoxesSet.twoFilledBoxes](/javascript/api/excel/excel.fiveboxesset#twofilledboxes-member)
+  \]
+
+  - \[
+  [Excel.FiveQuartersSet.blackCircle](/javascript/api/excel/excel.fivequartersset#blackcircle-member)
+  \]
+
+  - \[
+  [Excel.FiveQuartersSet.circleWithOneWhiteQuarter](/javascript/api/excel/excel.fivequartersset#circlewithonewhitequarter-member)
+  \]
+
+  - \[
+  [Excel.FiveQuartersSet.circleWithThreeWhiteQuarters](/javascript/api/excel/excel.fivequartersset#circlewiththreewhitequarters-member)
+  \]
+
+  - \[
+  [Excel.FiveQuartersSet.circleWithTwoWhiteQuarters](/javascript/api/excel/excel.fivequartersset#circlewithtwowhitequarters-member)
+  \]
+
+  - \[
+  [Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters](/javascript/api/excel/excel.fivequartersset#whitecircleallwhitequarters-member)
+  \]
+
+  - \[
+  [Excel.FiveRatingSet.fourBars](/javascript/api/excel/excel.fiveratingset#fourbars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsGraySet#grayDownArrow:member">Excel.FiveArrowsGraySet.grayDownArrow</xref>
+  - \[
+  [Excel.FiveRatingSet.noBars](/javascript/api/excel/excel.fiveratingset#nobars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member">Excel.FiveArrowsGraySet.grayDownInclineArrow</xref>
+  - \[
+  [Excel.FiveRatingSet.oneBar](/javascript/api/excel/excel.fiveratingset#onebar-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsGraySet#graySideArrow:member">Excel.FiveArrowsGraySet.graySideArrow</xref>
+  - \[
+  [Excel.FiveRatingSet.threeBars](/javascript/api/excel/excel.fiveratingset#threebars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsGraySet#grayUpArrow:member">Excel.FiveArrowsGraySet.grayUpArrow</xref>
+  - \[
+  [Excel.FiveRatingSet.twoBars](/javascript/api/excel/excel.fiveratingset#twobars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member">Excel.FiveArrowsGraySet.grayUpInclineArrow</xref>
+  - \[
+  [Excel.FourArrowsGraySet.grayDownArrow](/javascript/api/excel/excel.fourarrowsgrayset#graydownarrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsSet#greenUpArrow:member">Excel.FiveArrowsSet.greenUpArrow</xref>
+  - \[
+  [Excel.FourArrowsGraySet.grayDownInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#graydowninclinearrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsSet#redDownArrow:member">Excel.FiveArrowsSet.redDownArrow</xref>
+  - \[
+  [Excel.FourArrowsGraySet.grayUpArrow](/javascript/api/excel/excel.fourarrowsgrayset#grayuparrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member">Excel.FiveArrowsSet.yellowDownInclineArrow</xref>
+  - \[
+  [Excel.FourArrowsGraySet.grayUpInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#grayupinclinearrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsSet#yellowSideArrow:member">Excel.FiveArrowsSet.yellowSideArrow</xref>
+  - \[
+  [Excel.FourArrowsSet.greenUpArrow](/javascript/api/excel/excel.fourarrowsset#greenuparrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member">Excel.FiveArrowsSet.yellowUpInclineArrow</xref>
+  - \[
+  [Excel.FourArrowsSet.redDownArrow](/javascript/api/excel/excel.fourarrowsset#reddownarrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveBoxesSet#fourFilledBoxes:member">Excel.FiveBoxesSet.fourFilledBoxes</xref>
+  - \[
+  [Excel.FourArrowsSet.yellowDownInclineArrow](/javascript/api/excel/excel.fourarrowsset#yellowdowninclinearrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveBoxesSet#noFilledBoxes:member">Excel.FiveBoxesSet.noFilledBoxes</xref>
+  - \[
+  [Excel.FourArrowsSet.yellowUpInclineArrow](/javascript/api/excel/excel.fourarrowsset#yellowupinclinearrow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveBoxesSet#oneFilledBox:member">Excel.FiveBoxesSet.oneFilledBox</xref>
+  - \[
+  [Excel.FourRatingSet.fourBars](/javascript/api/excel/excel.fourratingset#fourbars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveBoxesSet#threeFilledBoxes:member">Excel.FiveBoxesSet.threeFilledBoxes</xref>
+  - \[
+  [Excel.FourRatingSet.oneBar](/javascript/api/excel/excel.fourratingset#onebar-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveBoxesSet#twoFilledBoxes:member">Excel.FiveBoxesSet.twoFilledBoxes</xref>
+  - \[
+  [Excel.FourRatingSet.threeBars](/javascript/api/excel/excel.fourratingset#threebars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveQuartersSet#blackCircle:member">Excel.FiveQuartersSet.blackCircle</xref>
+  - \[
+  [Excel.FourRatingSet.twoBars](/javascript/api/excel/excel.fourratingset#twobars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member">Excel.FiveQuartersSet.circleWithOneWhiteQuarter</xref>
+  - \[
+  [Excel.FourRedToBlackSet.blackCircle](/javascript/api/excel/excel.fourredtoblackset#blackcircle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member">Excel.FiveQuartersSet.circleWithThreeWhiteQuarters</xref>
+  - \[
+  [Excel.FourRedToBlackSet.grayCircle](/javascript/api/excel/excel.fourredtoblackset#graycircle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member">Excel.FiveQuartersSet.circleWithTwoWhiteQuarters</xref>
+  - \[
+  [Excel.FourRedToBlackSet.pinkCircle](/javascript/api/excel/excel.fourredtoblackset#pinkcircle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member">Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters</xref>
+  - \[
+  [Excel.FourRedToBlackSet.redCircle](/javascript/api/excel/excel.fourredtoblackset#redcircle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveRatingSet#fourBars:member">Excel.FiveRatingSet.fourBars</xref>
+  - \[
+  [Excel.FourTrafficLightsSet.blackCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#blackcirclewithborder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveRatingSet#noBars:member">Excel.FiveRatingSet.noBars</xref>
+  - \[
+  [Excel.FourTrafficLightsSet.greenCircle](/javascript/api/excel/excel.fourtrafficlightsset#greencircle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveRatingSet#oneBar:member">Excel.FiveRatingSet.oneBar</xref>
+  - \[
+  [Excel.FourTrafficLightsSet.redCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#redcirclewithborder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveRatingSet#threeBars:member">Excel.FiveRatingSet.threeBars</xref>
+  - \[
+  [Excel.FourTrafficLightsSet.yellowCircle](/javascript/api/excel/excel.fourtrafficlightsset#yellowcircle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FiveRatingSet#twoBars:member">Excel.FiveRatingSet.twoBars</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsGraySet#grayDownArrow:member">Excel.FourArrowsGraySet.grayDownArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member">Excel.FourArrowsGraySet.grayDownInclineArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsGraySet#grayUpArrow:member">Excel.FourArrowsGraySet.grayUpArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member">Excel.FourArrowsGraySet.grayUpInclineArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsSet#greenUpArrow:member">Excel.FourArrowsSet.greenUpArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsSet#redDownArrow:member">Excel.FourArrowsSet.redDownArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsSet#yellowDownInclineArrow:member">Excel.FourArrowsSet.yellowDownInclineArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourArrowsSet#yellowUpInclineArrow:member">Excel.FourArrowsSet.yellowUpInclineArrow</xref>
-
-  - <xref
-  href="excel!Excel.FourRatingSet#fourBars:member">Excel.FourRatingSet.fourBars</xref>
-
-  - <xref
-  href="excel!Excel.FourRatingSet#oneBar:member">Excel.FourRatingSet.oneBar</xref>
-
-  - <xref
-  href="excel!Excel.FourRatingSet#threeBars:member">Excel.FourRatingSet.threeBars</xref>
-
-  - <xref
-  href="excel!Excel.FourRatingSet#twoBars:member">Excel.FourRatingSet.twoBars</xref>
-
-  - <xref
-  href="excel!Excel.FourRedToBlackSet#blackCircle:member">Excel.FourRedToBlackSet.blackCircle</xref>
-
-  - <xref
-  href="excel!Excel.FourRedToBlackSet#grayCircle:member">Excel.FourRedToBlackSet.grayCircle</xref>
-
-  - <xref
-  href="excel!Excel.FourRedToBlackSet#pinkCircle:member">Excel.FourRedToBlackSet.pinkCircle</xref>
-
-  - <xref
-  href="excel!Excel.FourRedToBlackSet#redCircle:member">Excel.FourRedToBlackSet.redCircle</xref>
-
-  - <xref
-  href="excel!Excel.FourTrafficLightsSet#blackCircleWithBorder:member">Excel.FourTrafficLightsSet.blackCircleWithBorder</xref>
-
-  - <xref
-  href="excel!Excel.FourTrafficLightsSet#greenCircle:member">Excel.FourTrafficLightsSet.greenCircle</xref>
-
-  - <xref
-  href="excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member">Excel.FourTrafficLightsSet.redCircleWithBorder</xref>
-
-  - <xref
-  href="excel!Excel.FourTrafficLightsSet#yellowCircle:member">Excel.FourTrafficLightsSet.yellowCircle</xref>
-
-  - <xref href="excel!Excel.SortField#icon:member">Excel.SortField.icon</xref>
-
-  - <xref
-  href="excel!Excel.ThreeArrowsGraySet#grayDownArrow:member">Excel.ThreeArrowsGraySet.grayDownArrow</xref>
-
-  - <xref
-  href="excel!Excel.ThreeArrowsGraySet#graySideArrow:member">Excel.ThreeArrowsGraySet.graySideArrow</xref>
-
-  - <xref
-  href="excel!Excel.ThreeArrowsGraySet#grayUpArrow:member">Excel.ThreeArrowsGraySet.grayUpArrow</xref>
-
-  - <xref
-  href="excel!Excel.ThreeArrowsSet#greenUpArrow:member">Excel.ThreeArrowsSet.greenUpArrow</xref>
-
-  - <xref
-  href="excel!Excel.ThreeArrowsSet#redDownArrow:member">Excel.ThreeArrowsSet.redDownArrow</xref>
-
-  - <xref
-  href="excel!Excel.ThreeArrowsSet#yellowSideArrow:member">Excel.ThreeArrowsSet.yellowSideArrow</xref>
-
-  - <xref
-  href="excel!Excel.ThreeFlagsSet#greenFlag:member">Excel.ThreeFlagsSet.greenFlag</xref>
-
-  - <xref
-  href="excel!Excel.ThreeFlagsSet#redFlag:member">Excel.ThreeFlagsSet.redFlag</xref>
-
-  - <xref
-  href="excel!Excel.ThreeFlagsSet#yellowFlag:member">Excel.ThreeFlagsSet.yellowFlag</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSignsSet#greenCircle:member">Excel.ThreeSignsSet.greenCircle</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSignsSet#redDiamond:member">Excel.ThreeSignsSet.redDiamond</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSignsSet#yellowTriangle:member">Excel.ThreeSignsSet.yellowTriangle</xref>
-
-  - <xref
-  href="excel!Excel.ThreeStarsSet#goldStar:member">Excel.ThreeStarsSet.goldStar</xref>
-
-  - <xref
-  href="excel!Excel.ThreeStarsSet#halfGoldStar:member">Excel.ThreeStarsSet.halfGoldStar</xref>
-
-  - <xref
-  href="excel!Excel.ThreeStarsSet#silverStar:member">Excel.ThreeStarsSet.silverStar</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSymbols2Set#greenCheck:member">Excel.ThreeSymbols2Set.greenCheck</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSymbols2Set#redCross:member">Excel.ThreeSymbols2Set.redCross</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSymbols2Set#yellowExclamation:member">Excel.ThreeSymbols2Set.yellowExclamation</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member">Excel.ThreeSymbolsSet.greenCheckSymbol</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSymbolsSet#redCrossSymbol:member">Excel.ThreeSymbolsSet.redCrossSymbol</xref>
-
-  - <xref
-  href="excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member">Excel.ThreeSymbolsSet.yellowExclamationSymbol</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrafficLights1Set#greenCircle:member">Excel.ThreeTrafficLights1Set.greenCircle</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member">Excel.ThreeTrafficLights1Set.redCircleWithBorder</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrafficLights1Set#yellowCircle:member">Excel.ThreeTrafficLights1Set.yellowCircle</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrafficLights2Set#greenTrafficLight:member">Excel.ThreeTrafficLights2Set.greenTrafficLight</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrafficLights2Set#redTrafficLight:member">Excel.ThreeTrafficLights2Set.redTrafficLight</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member">Excel.ThreeTrafficLights2Set.yellowTrafficLight</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrianglesSet#greenUpTriangle:member">Excel.ThreeTrianglesSet.greenUpTriangle</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrianglesSet#redDownTriangle:member">Excel.ThreeTrianglesSet.redDownTriangle</xref>
-
-  - <xref
-  href="excel!Excel.ThreeTrianglesSet#yellowDash:member">Excel.ThreeTrianglesSet.yellowDash</xref>
+  - \[ [Excel.SortField.icon](/javascript/api/excel/excel.sortfield#icon-member)
+  \]
+
+  - \[
+  [Excel.ThreeArrowsGraySet.grayDownArrow](/javascript/api/excel/excel.threearrowsgrayset#graydownarrow-member)
+  \]
+
+  - \[
+  [Excel.ThreeArrowsGraySet.graySideArrow](/javascript/api/excel/excel.threearrowsgrayset#graysidearrow-member)
+  \]
+
+  - \[
+  [Excel.ThreeArrowsGraySet.grayUpArrow](/javascript/api/excel/excel.threearrowsgrayset#grayuparrow-member)
+  \]
+
+  - \[
+  [Excel.ThreeArrowsSet.greenUpArrow](/javascript/api/excel/excel.threearrowsset#greenuparrow-member)
+  \]
+
+  - \[
+  [Excel.ThreeArrowsSet.redDownArrow](/javascript/api/excel/excel.threearrowsset#reddownarrow-member)
+  \]
+
+  - \[
+  [Excel.ThreeArrowsSet.yellowSideArrow](/javascript/api/excel/excel.threearrowsset#yellowsidearrow-member)
+  \]
+
+  - \[
+  [Excel.ThreeFlagsSet.greenFlag](/javascript/api/excel/excel.threeflagsset#greenflag-member)
+  \]
+
+  - \[
+  [Excel.ThreeFlagsSet.redFlag](/javascript/api/excel/excel.threeflagsset#redflag-member)
+  \]
+
+  - \[
+  [Excel.ThreeFlagsSet.yellowFlag](/javascript/api/excel/excel.threeflagsset#yellowflag-member)
+  \]
+
+  - \[
+  [Excel.ThreeSignsSet.greenCircle](/javascript/api/excel/excel.threesignsset#greencircle-member)
+  \]
+
+  - \[
+  [Excel.ThreeSignsSet.redDiamond](/javascript/api/excel/excel.threesignsset#reddiamond-member)
+  \]
+
+  - \[
+  [Excel.ThreeSignsSet.yellowTriangle](/javascript/api/excel/excel.threesignsset#yellowtriangle-member)
+  \]
+
+  - \[
+  [Excel.ThreeStarsSet.goldStar](/javascript/api/excel/excel.threestarsset#goldstar-member)
+  \]
+
+  - \[
+  [Excel.ThreeStarsSet.halfGoldStar](/javascript/api/excel/excel.threestarsset#halfgoldstar-member)
+  \]
+
+  - \[
+  [Excel.ThreeStarsSet.silverStar](/javascript/api/excel/excel.threestarsset#silverstar-member)
+  \]
+
+  - \[
+  [Excel.ThreeSymbols2Set.greenCheck](/javascript/api/excel/excel.threesymbols2set#greencheck-member)
+  \]
+
+  - \[
+  [Excel.ThreeSymbols2Set.redCross](/javascript/api/excel/excel.threesymbols2set#redcross-member)
+  \]
+
+  - \[
+  [Excel.ThreeSymbols2Set.yellowExclamation](/javascript/api/excel/excel.threesymbols2set#yellowexclamation-member)
+  \]
+
+  - \[
+  [Excel.ThreeSymbolsSet.greenCheckSymbol](/javascript/api/excel/excel.threesymbolsset#greenchecksymbol-member)
+  \]
+
+  - \[
+  [Excel.ThreeSymbolsSet.redCrossSymbol](/javascript/api/excel/excel.threesymbolsset#redcrosssymbol-member)
+  \]
+
+  - \[
+  [Excel.ThreeSymbolsSet.yellowExclamationSymbol](/javascript/api/excel/excel.threesymbolsset#yellowexclamationsymbol-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrafficLights1Set.greenCircle](/javascript/api/excel/excel.threetrafficlights1set#greencircle-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrafficLights1Set.redCircleWithBorder](/javascript/api/excel/excel.threetrafficlights1set#redcirclewithborder-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrafficLights1Set.yellowCircle](/javascript/api/excel/excel.threetrafficlights1set#yellowcircle-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrafficLights2Set.greenTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#greentrafficlight-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrafficLights2Set.redTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#redtrafficlight-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrafficLights2Set.yellowTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#yellowtrafficlight-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrianglesSet.greenUpTriangle](/javascript/api/excel/excel.threetrianglesset#greenuptriangle-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrianglesSet.redDownTriangle](/javascript/api/excel/excel.threetrianglesset#reddowntriangle-member)
+  \]
+
+  - \[
+  [Excel.ThreeTrianglesSet.yellowDash](/javascript/api/excel/excel.threetrianglesset#yellowdash-member)
+  \]
 
 isPreview: false
 isDeprecated: false

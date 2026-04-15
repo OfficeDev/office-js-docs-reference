@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutData#zoom:member">Excel.Interfaces.PageLayoutData.zoom</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutData.zoom](/javascript/api/excel/excel.interfaces.pagelayoutdata#zoom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member">Excel.Interfaces.PageLayoutUpdateData.zoom</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutUpdateData.zoom](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#zoom-member)
+  \]
 
-  - <xref href="excel!Excel.PageLayout#zoom:member">Excel.PageLayout.zoom</xref>
+  - \[
+  [Excel.PageLayout.zoom](/javascript/api/excel/excel.pagelayout#zoom-member) \]
 
 isPreview: false
 isDeprecated: false

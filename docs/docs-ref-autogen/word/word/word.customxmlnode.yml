@@ -16,41 +16,53 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlAddNodeOptions#nextSibling:member">Word.CustomXmlAddNodeOptions.nextSibling</xref>
+  - \[
+  [Word.CustomXmlAddNodeOptions.nextSibling](/javascript/api/word/word.customxmladdnodeoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlInsertNodeBeforeOptions#nextSibling:member">Word.CustomXmlInsertNodeBeforeOptions.nextSibling</xref>
+  - \[
+  [Word.CustomXmlInsertNodeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertnodebeforeoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlInsertSubtreeBeforeOptions#nextSibling:member">Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling</xref>
+  - \[
+  [Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#firstChild:member">Word.CustomXmlNode.firstChild</xref>
+  - \[
+  [Word.CustomXmlNode.firstChild](/javascript/api/word/word.customxmlnode#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#lastChild:member">Word.CustomXmlNode.lastChild</xref>
+  - \[
+  [Word.CustomXmlNode.lastChild](/javascript/api/word/word.customxmlnode#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#nextSibling:member">Word.CustomXmlNode.nextSibling</xref>
+  - \[
+  [Word.CustomXmlNode.nextSibling](/javascript/api/word/word.customxmlnode#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#parentNode:member">Word.CustomXmlNode.parentNode</xref>
+  - \[
+  [Word.CustomXmlNode.parentNode](/javascript/api/word/word.customxmlnode#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#previousSibling:member">Word.CustomXmlNode.previousSibling</xref>
+  - \[
+  [Word.CustomXmlNode.previousSibling](/javascript/api/word/word.customxmlnode#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNodeCollection#items:member">Word.CustomXmlNodeCollection.items</xref>
+  - \[
+  [Word.CustomXmlNodeCollection.items](/javascript/api/word/word.customxmlnodecollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlPart#documentElement:member">Word.CustomXmlPart.documentElement</xref>
+  - \[
+  [Word.CustomXmlPart.documentElement](/javascript/api/word/word.customxmlpart#documentelement-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlValidationError#node:member">Word.CustomXmlValidationError.node</xref>
+  - \[
+  [Word.CustomXmlValidationError.node](/javascript/api/word/word.customxmlvalidationerror#node-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlMapping#customXmlNode:member">Word.XmlMapping.customXmlNode</xref>
+  - \[
+  [Word.XmlMapping.customXmlNode](/javascript/api/word/word.xmlmapping#customxmlnode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

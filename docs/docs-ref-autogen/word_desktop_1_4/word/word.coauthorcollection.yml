@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Coauthoring#authors:member">Word.Coauthoring.authors</xref>
+  - \[
+  [Word.Coauthoring.authors](/javascript/api/word/word.coauthoring#authors-member)
+  \]
 
 isPreview: false
 isDeprecated: false

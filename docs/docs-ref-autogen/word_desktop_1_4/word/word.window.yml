@@ -15,15 +15,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#activeWindow:member">Word.Document.activeWindow</xref>
+  - \[
+  [Word.Document.activeWindow](/javascript/api/word/word.document#activewindow-member)
+  \]
 
-  - <xref href="word!Word.Window#next:member">Word.Window.next</xref>
+  - \[ [Word.Window.next](/javascript/api/word/word.window#next-member) \]
 
-  - <xref href="word!Word.Window#previous:member">Word.Window.previous</xref>
+  - \[ [Word.Window.previous](/javascript/api/word/word.window#previous-member)
+  \]
 
-  - <xref
-  href="word!Word.WindowCollection#items:member">Word.WindowCollection.items</xref>
+  - \[
+  [Word.WindowCollection.items](/javascript/api/word/word.windowcollection#items-member)
+  \]
 
   #### Examples
 

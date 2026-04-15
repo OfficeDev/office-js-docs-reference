@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.LinkFormatData#type:member">Word.Interfaces.LinkFormatData.type</xref>
+  - \[
+  [Word.Interfaces.LinkFormatData.type](/javascript/api/word/word.interfaces.linkformatdata#type-member)
+  \]
 
-  - <xref href="word!Word.LinkFormat#type:member">Word.LinkFormat.type</xref>
+  - \[ [Word.LinkFormat.type](/javascript/api/word/word.linkformat#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Bindings#addFromPromptAsync:member(1)">Office.Bindings.addFromPromptAsync</xref>
+  - \[
+  [Office.Bindings.addFromPromptAsync](/javascript/api/office/office.bindings#addfrompromptasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

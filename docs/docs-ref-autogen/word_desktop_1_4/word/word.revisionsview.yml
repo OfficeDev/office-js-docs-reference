@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RevisionsFilterData#view:member">Word.Interfaces.RevisionsFilterData.view</xref>
+  - \[
+  [Word.Interfaces.RevisionsFilterData.view](/javascript/api/word/word.interfaces.revisionsfilterdata#view-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RevisionsFilterUpdateData#view:member">Word.Interfaces.RevisionsFilterUpdateData.view</xref>
+  - \[
+  [Word.Interfaces.RevisionsFilterUpdateData.view](/javascript/api/word/word.interfaces.revisionsfilterupdatedata#view-member)
+  \]
 
-  - <xref
-  href="word!Word.RevisionsFilter#view:member">Word.RevisionsFilter.view</xref>
+  - \[
+  [Word.RevisionsFilter.view](/javascript/api/word/word.revisionsfilter#view-member)
+  \]
 
 isPreview: false
 isDeprecated: false

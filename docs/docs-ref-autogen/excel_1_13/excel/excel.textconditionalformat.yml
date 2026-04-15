@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#textComparison:member">Excel.ConditionalFormat.textComparison</xref>
+  - \[
+  [Excel.ConditionalFormat.textComparison](/javascript/api/excel/excel.conditionalformat#textcomparison-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#textComparisonOrNullObject:member">Excel.ConditionalFormat.textComparisonOrNullObject</xref>
+  - \[
+  [Excel.ConditionalFormat.textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#textcomparisonornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

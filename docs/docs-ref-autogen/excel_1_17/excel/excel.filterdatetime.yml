@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.FilterCriteria#values:member">Excel.FilterCriteria.values</xref>
+  - \[
+  [Excel.FilterCriteria.values](/javascript/api/excel/excel.filtercriteria#values-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotDateFilter#comparator:member">Excel.PivotDateFilter.comparator</xref>
+  - \[
+  [Excel.PivotDateFilter.comparator](/javascript/api/excel/excel.pivotdatefilter#comparator-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotDateFilter#lowerBound:member">Excel.PivotDateFilter.lowerBound</xref>
+  - \[
+  [Excel.PivotDateFilter.lowerBound](/javascript/api/excel/excel.pivotdatefilter#lowerbound-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotDateFilter#upperBound:member">Excel.PivotDateFilter.upperBound</xref>
+  - \[
+  [Excel.PivotDateFilter.upperBound](/javascript/api/excel/excel.pivotdatefilter#upperbound-member)
+  \]
 
 isPreview: false
 isDeprecated: false

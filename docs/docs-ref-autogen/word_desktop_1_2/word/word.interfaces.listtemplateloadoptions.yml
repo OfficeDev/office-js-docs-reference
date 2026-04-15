@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleCollectionLoadOptions#listTemplate:member">Word.Interfaces.StyleCollectionLoadOptions.listTemplate</xref>
+  - \[
+  [Word.Interfaces.StyleCollectionLoadOptions.listTemplate](/javascript/api/word/word.interfaces.stylecollectionloadoptions#listtemplate-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleLoadOptions#listTemplate:member">Word.Interfaces.StyleLoadOptions.listTemplate</xref>
+  - \[
+  [Word.Interfaces.StyleLoadOptions.listTemplate](/javascript/api/word/word.interfaces.styleloadoptions#listtemplate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

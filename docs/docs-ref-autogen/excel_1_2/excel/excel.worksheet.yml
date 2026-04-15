@@ -18,14 +18,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Chart#worksheet:member">Excel.Chart.worksheet</xref>
+  - \[
+  [Excel.Chart.worksheet](/javascript/api/excel/excel.chart#worksheet-member) \]
 
-  - <xref href="excel!Excel.Range#worksheet:member">Excel.Range.worksheet</xref>
+  - \[
+  [Excel.Range.worksheet](/javascript/api/excel/excel.range#worksheet-member) \]
 
-  - <xref href="excel!Excel.Table#worksheet:member">Excel.Table.worksheet</xref>
+  - \[
+  [Excel.Table.worksheet](/javascript/api/excel/excel.table#worksheet-member) \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#items:member">Excel.WorksheetCollection.items</xref>
+  - \[
+  [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#items-member)
+  \]
 
   #### Examples
 

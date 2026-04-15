@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontData#line:member">Word.Interfaces.FontData.line</xref>
+  - \[
+  [Word.Interfaces.FontData.line](/javascript/api/word/word.interfaces.fontdata#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

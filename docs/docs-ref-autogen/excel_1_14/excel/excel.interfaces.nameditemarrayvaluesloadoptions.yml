@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#arrayValues:member">Excel.Interfaces.NamedItemCollectionLoadOptions.arrayValues</xref>
+  - \[
+  [Excel.Interfaces.NamedItemCollectionLoadOptions.arrayValues](/javascript/api/excel/excel.interfaces.nameditemcollectionloadoptions#arrayvalues-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemLoadOptions#arrayValues:member">Excel.Interfaces.NamedItemLoadOptions.arrayValues</xref>
+  - \[
+  [Excel.Interfaces.NamedItemLoadOptions.arrayValues](/javascript/api/excel/excel.interfaces.nameditemloadoptions#arrayvalues-member)
+  \]
 
 isPreview: false
 isDeprecated: false

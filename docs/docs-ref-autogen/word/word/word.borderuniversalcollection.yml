@@ -14,28 +14,34 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ConditionalStyle#borders:member">Word.ConditionalStyle.borders</xref>
+  - \[
+  [Word.ConditionalStyle.borders](/javascript/api/word/word.conditionalstyle#borders-member)
+  \]
 
-  - <xref href="word!Word.Font#borders:member">Word.Font.borders</xref>
+  - \[ [Word.Font.borders](/javascript/api/word/word.font#borders-member) \]
 
-  - <xref href="word!Word.Frame#borders:member">Word.Frame.borders</xref>
+  - \[ [Word.Frame.borders](/javascript/api/word/word.frame#borders-member) \]
 
-  - <xref
-  href="word!Word.Paragraph#borders:member">Word.Paragraph.borders</xref>
+  - \[
+  [Word.Paragraph.borders](/javascript/api/word/word.paragraph#borders-member)
+  \]
 
-  - <xref href="word!Word.Range#borders:member">Word.Range.borders</xref>
+  - \[ [Word.Range.borders](/javascript/api/word/word.range#borders-member) \]
 
-  - <xref href="word!Word.Section#borders:member">Word.Section.borders</xref>
+  - \[ [Word.Section.borders](/javascript/api/word/word.section#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#borders:member">Word.Selection.borders</xref>
+  - \[
+  [Word.Selection.borders](/javascript/api/word/word.selection#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.TableColumn#borders:member">Word.TableColumn.borders</xref>
+  - \[
+  [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
+  \]
 
-  - <xref
-  href="word!Word.TableStyle#borders:member">Word.TableStyle.borders</xref>
+  - \[
+  [Word.TableStyle.borders](/javascript/api/word/word.tablestyle#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

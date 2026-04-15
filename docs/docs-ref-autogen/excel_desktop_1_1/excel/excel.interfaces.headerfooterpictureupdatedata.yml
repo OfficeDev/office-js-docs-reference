@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooterPicture:member">Excel.Interfaces.HeaderFooterUpdateData.centerFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterUpdateData.centerFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterupdatedata#centerfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeaderPicture:member">Excel.Interfaces.HeaderFooterUpdateData.centerHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterUpdateData.centerHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterupdatedata#centerheaderpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooterPicture:member">Excel.Interfaces.HeaderFooterUpdateData.leftFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterUpdateData.leftFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterupdatedata#leftfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeaderPicture:member">Excel.Interfaces.HeaderFooterUpdateData.leftHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterUpdateData.leftHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterupdatedata#leftheaderpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooterPicture:member">Excel.Interfaces.HeaderFooterUpdateData.rightFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterUpdateData.rightFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterupdatedata#rightfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeaderPicture:member">Excel.Interfaces.HeaderFooterUpdateData.rightHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterUpdateData.rightHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterupdatedata#rightheaderpicture-member)
+  \]
 
 isPreview: false
 isDeprecated: false

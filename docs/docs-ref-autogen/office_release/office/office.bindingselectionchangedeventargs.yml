@@ -8,8 +8,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.RemoveHandlerOptions#handler:member">Office.RemoveHandlerOptions.handler</xref>
+  - \[
+  [Office.RemoveHandlerOptions.handler](/javascript/api/office/office.removehandleroptions#handler-member)
+  \]
 
 isPreview: false
 isDeprecated: false

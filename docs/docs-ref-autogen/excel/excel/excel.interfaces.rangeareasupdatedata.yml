@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowUpdateData#rangeSelection:member">Excel.Interfaces.WindowUpdateData.rangeSelection</xref>
+  - \[
+  [Excel.Interfaces.WindowUpdateData.rangeSelection](/javascript/api/excel/excel.interfaces.windowupdatedata#rangeselection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

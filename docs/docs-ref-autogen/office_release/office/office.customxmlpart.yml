@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.CustomXmlParts#addAsync:member(1)">Office.CustomXmlParts.addAsync</xref>
+  - \[
+  [Office.CustomXmlParts.addAsync](/javascript/api/office/office.customxmlparts#addasync-member)
+  \]
 
-  - <xref
-  href="office!Office.CustomXmlParts#getByIdAsync:member(1)">Office.CustomXmlParts.getByIdAsync</xref>
+  - \[
+  [Office.CustomXmlParts.getByIdAsync](/javascript/api/office/office.customxmlparts#getbyidasync-member)
+  \]
 
-  - <xref
-  href="office!Office.CustomXmlParts#getByNamespaceAsync:member(1)">Office.CustomXmlParts.getByNamespaceAsync</xref>
+  - \[
+  [Office.CustomXmlParts.getByNamespaceAsync](/javascript/api/office/office.customxmlparts#getbynamespaceasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

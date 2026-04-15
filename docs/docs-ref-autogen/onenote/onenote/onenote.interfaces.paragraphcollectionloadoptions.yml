@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member">OneNote.Interfaces.OutlineLoadOptions.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.OutlineLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.outlineloadoptions#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#paragraphs:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#paragraphs:member">OneNote.Interfaces.ParagraphLoadOptions.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#paragraphs:member">OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.tablecellcollectionloadoptions#paragraphs-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableCellLoadOptions#paragraphs:member">OneNote.Interfaces.TableCellLoadOptions.paragraphs</xref>
+  - \[
+  [OneNote.Interfaces.TableCellLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.tablecellloadoptions#paragraphs-member)
+  \]
 
 isPreview: false
 isDeprecated: false

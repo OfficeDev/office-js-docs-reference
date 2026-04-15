@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#customXmlParts:member">Word.Document.customXmlParts</xref>
+  - \[
+  [Word.Document.customXmlParts](/javascript/api/word/word.document#customxmlparts-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentCreated#customXmlParts:member">Word.DocumentCreated.customXmlParts</xref>
+  - \[
+  [Word.DocumentCreated.customXmlParts](/javascript/api/word/word.documentcreated#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

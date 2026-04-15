@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SearchCriteria#searchDirection:member">Excel.SearchCriteria.searchDirection</xref>
+  - \[
+  [Excel.SearchCriteria.searchDirection](/javascript/api/excel/excel.searchcriteria#searchdirection-member)
+  \]
 
   #### Examples
 

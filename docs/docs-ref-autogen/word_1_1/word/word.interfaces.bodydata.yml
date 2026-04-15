@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#body:member">Word.Interfaces.DocumentData.body</xref>
+  - \[
+  [Word.Interfaces.DocumentData.body](/javascript/api/word/word.interfaces.documentdata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionData#body:member">Word.Interfaces.SectionData.body</xref>
+  - \[
+  [Word.Interfaces.SectionData.body](/javascript/api/word/word.interfaces.sectiondata#body-member)
+  \]
 
 isPreview: false
 isDeprecated: false

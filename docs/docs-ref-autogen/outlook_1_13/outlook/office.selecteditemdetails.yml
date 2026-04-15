@@ -24,8 +24,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#getSelectedItemsAsync:member(1)">Office.Mailbox.getSelectedItemsAsync</xref>
+  - \[
+  [Office.Mailbox.getSelectedItemsAsync](/javascript/api/outlook/office.mailbox#getselecteditemsasync-member)
+  \]
 
   #### Examples
 

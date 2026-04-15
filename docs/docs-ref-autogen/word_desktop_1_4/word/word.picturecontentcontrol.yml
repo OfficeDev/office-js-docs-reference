@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#pictureContentControl:member">Word.ContentControl.pictureContentControl</xref>
+  - \[
+  [Word.ContentControl.pictureContentControl](/javascript/api/word/word.contentcontrol#picturecontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

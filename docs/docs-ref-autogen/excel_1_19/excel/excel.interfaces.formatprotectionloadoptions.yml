@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member">Excel.Interfaces.RangeFormatLoadOptions.protection</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatLoadOptions.protection](/javascript/api/excel/excel.interfaces.rangeformatloadoptions#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

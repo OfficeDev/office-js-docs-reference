@@ -38,14 +38,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#sensitivityLabel:member">Office.AppointmentCompose.sensitivityLabel</xref>
+  - \[
+  [Office.AppointmentCompose.sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#sensitivitylabel-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#sensitivityLabel:member">Office.LoadedMessageCompose.sensitivityLabel</xref>
+  - \[
+  [Office.LoadedMessageCompose.sensitivityLabel](/javascript/api/outlook/office.loadedmessagecompose#sensitivitylabel-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#sensitivityLabel:member">Office.MessageCompose.sensitivityLabel</xref>
+  - \[
+  [Office.MessageCompose.sensitivityLabel](/javascript/api/outlook/office.messagecompose#sensitivitylabel-member)
+  \]
 
 isPreview: false
 isDeprecated: false

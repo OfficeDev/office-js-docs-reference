@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BookmarkCollectionData#items:member">Word.Interfaces.BookmarkCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.BookmarkCollectionData.items](/javascript/api/word/word.interfaces.bookmarkcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BookmarkCollectionUpdateData#items:member">Word.Interfaces.BookmarkCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.BookmarkCollectionUpdateData.items](/javascript/api/word/word.interfaces.bookmarkcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,23 +15,30 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#paragraphs:member">Word.Body.paragraphs</xref>
+  - \[ [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#paragraphs:member">Word.ContentControl.paragraphs</xref>
+  - \[
+  [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#listParagraphs:member">Word.Document.listParagraphs</xref>
+  - \[
+  [Word.Document.listParagraphs](/javascript/api/word/word.document#listparagraphs-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#paragraphs:member">Word.Document.paragraphs</xref>
+  - \[
+  [Word.Document.paragraphs](/javascript/api/word/word.document#paragraphs-member)
+  \]
 
-  - <xref href="word!Word.List#paragraphs:member">Word.List.paragraphs</xref>
+  - \[ [Word.List.paragraphs](/javascript/api/word/word.list#paragraphs-member)
+  \]
 
-  - <xref href="word!Word.Range#paragraphs:member">Word.Range.paragraphs</xref>
+  - \[
+  [Word.Range.paragraphs](/javascript/api/word/word.range#paragraphs-member) \]
 
-  - <xref
-  href="word!Word.Selection#paragraphs:member">Word.Selection.paragraphs</xref>
+  - \[
+  [Word.Selection.paragraphs](/javascript/api/word/word.selection#paragraphs-member)
+  \]
 
   #### Examples
 

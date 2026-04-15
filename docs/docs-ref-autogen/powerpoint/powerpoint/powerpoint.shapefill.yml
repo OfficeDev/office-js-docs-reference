@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#fill:member">PowerPoint.Shape.fill</xref>
+  - \[
+  [PowerPoint.Shape.fill](/javascript/api/powerpoint/powerpoint.shape#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCell#fill:member">PowerPoint.TableCell.fill</xref>
+  - \[
+  [PowerPoint.TableCell.fill](/javascript/api/powerpoint/powerpoint.tablecell#fill-member)
+  \]
 
   #### Examples
 

@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeFormat#borders:member">Excel.RangeFormat.borders</xref>
+  - \[
+  [Excel.RangeFormat.borders](/javascript/api/excel/excel.rangeformat#borders-member)
+  \]
 
-  - <xref href="excel!Excel.Style#borders:member">Excel.Style.borders</xref>
+  - \[ [Excel.Style.borders](/javascript/api/excel/excel.style#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

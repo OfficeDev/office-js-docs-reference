@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.EntityViewLayouts#card:member">Excel.EntityViewLayouts.card</xref>
+  - \[
+  [Excel.EntityViewLayouts.card](/javascript/api/excel/excel.entityviewlayouts#card-member)
+  \]
 
 
   Learn more about the types in this type alias through the following links. 

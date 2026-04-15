@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onSingleClicked:member">Excel.Worksheet.onSingleClicked</xref>
+  - \[
+  [Excel.Worksheet.onSingleClicked](/javascript/api/excel/excel.worksheet#onsingleclicked-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onSingleClicked:member">Excel.WorksheetCollection.onSingleClicked</xref>
+  - \[
+  [Excel.WorksheetCollection.onSingleClicked](/javascript/api/excel/excel.worksheetcollection#onsingleclicked-member)
+  \]
 
 isPreview: false
 isDeprecated: false

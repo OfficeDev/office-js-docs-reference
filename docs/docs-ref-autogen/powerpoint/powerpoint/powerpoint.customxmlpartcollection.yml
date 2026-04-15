@@ -13,20 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#customXmlParts:member">PowerPoint.Presentation.customXmlParts</xref>
+  - \[
+  [PowerPoint.Presentation.customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#customxmlparts-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#customXmlParts:member">PowerPoint.Shape.customXmlParts</xref>
+  - \[
+  [PowerPoint.Shape.customXmlParts](/javascript/api/powerpoint/powerpoint.shape#customxmlparts-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#customXmlParts:member">PowerPoint.Slide.customXmlParts</xref>
+  - \[
+  [PowerPoint.Slide.customXmlParts](/javascript/api/powerpoint/powerpoint.slide#customxmlparts-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayout#customXmlParts:member">PowerPoint.SlideLayout.customXmlParts</xref>
+  - \[
+  [PowerPoint.SlideLayout.customXmlParts](/javascript/api/powerpoint/powerpoint.slidelayout#customxmlparts-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideMaster#customXmlParts:member">PowerPoint.SlideMaster.customXmlParts</xref>
+  - \[
+  [PowerPoint.SlideMaster.customXmlParts](/javascript/api/powerpoint/powerpoint.slidemaster#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

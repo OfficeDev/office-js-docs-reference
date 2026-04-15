@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CustomProperty#type:member">Excel.CustomProperty.type</xref>
+  - \[
+  [Excel.CustomProperty.type](/javascript/api/excel/excel.customproperty#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomPropertyData#type:member">Excel.Interfaces.CustomPropertyData.type</xref>
+  - \[
+  [Excel.Interfaces.CustomPropertyData.type](/javascript/api/excel/excel.interfaces.custompropertydata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

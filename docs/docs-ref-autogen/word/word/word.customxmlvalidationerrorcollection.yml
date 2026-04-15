@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlPart#errors:member">Word.CustomXmlPart.errors</xref>
+  - \[
+  [Word.CustomXmlPart.errors](/javascript/api/word/word.customxmlpart#errors-member)
+  \]
 
 isPreview: true
 isDeprecated: false

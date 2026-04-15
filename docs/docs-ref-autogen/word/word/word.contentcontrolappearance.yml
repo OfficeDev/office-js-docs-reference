@@ -13,59 +13,77 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlockGalleryContentControl#appearance:member">Word.BuildingBlockGalleryContentControl.appearance</xref>
+  - \[
+  [Word.BuildingBlockGalleryContentControl.appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#appearance:member">Word.ContentControl.appearance</xref>
+  - \[
+  [Word.ContentControl.appearance](/javascript/api/word/word.contentcontrol#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.DatePickerContentControl#appearance:member">Word.DatePickerContentControl.appearance</xref>
+  - \[
+  [Word.DatePickerContentControl.appearance](/javascript/api/word/word.datepickercontentcontrol#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.GroupContentControl#appearance:member">Word.GroupContentControl.appearance</xref>
+  - \[
+  [Word.GroupContentControl.appearance](/javascript/api/word/word.groupcontentcontrol#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#appearance:member">Word.Interfaces.BuildingBlockGalleryContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlData.appearance](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#appearance:member">Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolupdatedata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#appearance:member">Word.Interfaces.ContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.appearance](/javascript/api/word/word.interfaces.contentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#appearance:member">Word.Interfaces.ContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.contentcontrolupdatedata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#appearance:member">Word.Interfaces.DatePickerContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.appearance](/javascript/api/word/word.interfaces.datepickercontentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlUpdateData#appearance:member">Word.Interfaces.DatePickerContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlData#appearance:member">Word.Interfaces.GroupContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlData.appearance](/javascript/api/word/word.interfaces.groupcontentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member">Word.Interfaces.GroupContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.groupcontentcontrolupdatedata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlData#appearance:member">Word.Interfaces.PictureContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlData.appearance](/javascript/api/word/word.interfaces.picturecontentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlUpdateData#appearance:member">Word.Interfaces.PictureContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.picturecontentcontrolupdatedata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlData#appearance:member">Word.Interfaces.RepeatingSectionContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlData.appearance](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#appearance:member">Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.repeatingsectioncontentcontrolupdatedata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.PictureContentControl#appearance:member">Word.PictureContentControl.appearance</xref>
+  - \[
+  [Word.PictureContentControl.appearance](/javascript/api/word/word.picturecontentcontrol#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.RepeatingSectionContentControl#appearance:member">Word.RepeatingSectionContentControl.appearance</xref>
+  - \[
+  [Word.RepeatingSectionContentControl.appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#appearance-member)
+  \]
 
   #### Examples
 

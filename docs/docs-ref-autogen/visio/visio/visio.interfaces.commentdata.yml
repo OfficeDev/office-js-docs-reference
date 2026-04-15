@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Interfaces.CommentCollectionData#items:member">Visio.Interfaces.CommentCollectionData.items</xref>
+  - \[
+  [Visio.Interfaces.CommentCollectionData.items](/javascript/api/visio/visio.interfaces.commentcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.CommentCollectionUpdateData#items:member">Visio.Interfaces.CommentCollectionUpdateData.items</xref>
+  - \[
+  [Visio.Interfaces.CommentCollectionUpdateData.items](/javascript/api/visio/visio.interfaces.commentcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.PageData#comments:member">Visio.Interfaces.PageData.comments</xref>
+  - \[
+  [Visio.Interfaces.PageData.comments](/javascript/api/visio/visio.interfaces.pagedata#comments-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.ShapeData#comments:member">Visio.Interfaces.ShapeData.comments</xref>
+  - \[
+  [Visio.Interfaces.ShapeData.comments](/javascript/api/visio/visio.interfaces.shapedata#comments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

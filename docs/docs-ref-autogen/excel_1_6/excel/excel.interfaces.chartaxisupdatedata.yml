@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxesUpdateData#categoryAxis:member">Excel.Interfaces.ChartAxesUpdateData.categoryAxis</xref>
+  - \[
+  [Excel.Interfaces.ChartAxesUpdateData.categoryAxis](/javascript/api/excel/excel.interfaces.chartaxesupdatedata#categoryaxis-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxesUpdateData#seriesAxis:member">Excel.Interfaces.ChartAxesUpdateData.seriesAxis</xref>
+  - \[
+  [Excel.Interfaces.ChartAxesUpdateData.seriesAxis](/javascript/api/excel/excel.interfaces.chartaxesupdatedata#seriesaxis-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxesUpdateData#valueAxis:member">Excel.Interfaces.ChartAxesUpdateData.valueAxis</xref>
+  - \[
+  [Excel.Interfaces.ChartAxesUpdateData.valueAxis](/javascript/api/excel/excel.interfaces.chartaxesupdatedata#valueaxis-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -25,18 +25,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#fields:member">Word.Body.fields</xref>
+  - \[ [Word.Body.fields](/javascript/api/word/word.body#fields-member) \]
 
-  - <xref
-  href="word!Word.ContentControl#fields:member">Word.ContentControl.fields</xref>
+  - \[
+  [Word.ContentControl.fields](/javascript/api/word/word.contentcontrol#fields-member)
+  \]
 
-  - <xref href="word!Word.Paragraph#fields:member">Word.Paragraph.fields</xref>
+  - \[
+  [Word.Paragraph.fields](/javascript/api/word/word.paragraph#fields-member) \]
 
-  - <xref href="word!Word.Range#fields:member">Word.Range.fields</xref>
+  - \[ [Word.Range.fields](/javascript/api/word/word.range#fields-member) \]
 
-  - <xref href="word!Word.Table#fields:member">Word.Table.fields</xref>
+  - \[ [Word.Table.fields](/javascript/api/word/word.table#fields-member) \]
 
-  - <xref href="word!Word.TableRow#fields:member">Word.TableRow.fields</xref>
+  - \[ [Word.TableRow.fields](/javascript/api/word/word.tablerow#fields-member)
+  \]
 
   #### Examples
 

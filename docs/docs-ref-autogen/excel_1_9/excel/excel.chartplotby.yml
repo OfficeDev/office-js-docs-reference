@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Chart#plotBy:member">Excel.Chart.plotBy</xref>
+  - \[ [Excel.Chart.plotBy](/javascript/api/excel/excel.chart#plotby-member) \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartData#plotBy:member">Excel.Interfaces.ChartData.plotBy</xref>
+  - \[
+  [Excel.Interfaces.ChartData.plotBy](/javascript/api/excel/excel.interfaces.chartdata#plotby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartUpdateData#plotBy:member">Excel.Interfaces.ChartUpdateData.plotBy</xref>
+  - \[
+  [Excel.Interfaces.ChartUpdateData.plotBy](/javascript/api/excel/excel.interfaces.chartupdatedata#plotby-member)
+  \]
 
 isPreview: false
 isDeprecated: false

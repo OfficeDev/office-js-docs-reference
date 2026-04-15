@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.NamedSheetViewCollection#items:member">Excel.NamedSheetViewCollection.items</xref>
+  - \[
+  [Excel.NamedSheetViewCollection.items](/javascript/api/excel/excel.namedsheetviewcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

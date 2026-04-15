@@ -15,26 +15,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CanvasLoadOptions#shape:member">Word.Interfaces.CanvasLoadOptions.shape</xref>
+  - \[
+  [Word.Interfaces.CanvasLoadOptions.shape](/javascript/api/word/word.interfaces.canvasloadoptions#shape-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#background:member">Word.Interfaces.DocumentLoadOptions.background</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.background](/javascript/api/word/word.interfaces.documentloadoptions#background-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionLoadOptions#parentCanvas:member">Word.Interfaces.ShapeCollectionLoadOptions.parentCanvas</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionLoadOptions.parentCanvas](/javascript/api/word/word.interfaces.shapecollectionloadoptions#parentcanvas-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionLoadOptions#parentGroup:member">Word.Interfaces.ShapeCollectionLoadOptions.parentGroup</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionLoadOptions.parentGroup](/javascript/api/word/word.interfaces.shapecollectionloadoptions#parentgroup-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeGroupLoadOptions#shape:member">Word.Interfaces.ShapeGroupLoadOptions.shape</xref>
+  - \[
+  [Word.Interfaces.ShapeGroupLoadOptions.shape](/javascript/api/word/word.interfaces.shapegrouploadoptions#shape-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeLoadOptions#parentCanvas:member">Word.Interfaces.ShapeLoadOptions.parentCanvas</xref>
+  - \[
+  [Word.Interfaces.ShapeLoadOptions.parentCanvas](/javascript/api/word/word.interfaces.shapeloadoptions#parentcanvas-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeLoadOptions#parentGroup:member">Word.Interfaces.ShapeLoadOptions.parentGroup</xref>
+  - \[
+  [Word.Interfaces.ShapeLoadOptions.parentGroup](/javascript/api/word/word.interfaces.shapeloadoptions#parentgroup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

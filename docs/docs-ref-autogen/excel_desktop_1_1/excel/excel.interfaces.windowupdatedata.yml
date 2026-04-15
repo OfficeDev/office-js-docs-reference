@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationUpdateData#activeWindow:member">Excel.Interfaces.ApplicationUpdateData.activeWindow</xref>
+  - \[
+  [Excel.Interfaces.ApplicationUpdateData.activeWindow](/javascript/api/excel/excel.interfaces.applicationupdatedata#activewindow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member">Excel.Interfaces.CultureInfoLoadOptions.numberFormat</xref>
+  - \[
+  [Excel.Interfaces.CultureInfoLoadOptions.numberFormat](/javascript/api/excel/excel.interfaces.cultureinfoloadoptions#numberformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

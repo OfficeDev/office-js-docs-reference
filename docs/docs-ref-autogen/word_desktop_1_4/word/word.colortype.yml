@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.ColorFormat#type:member">Word.ColorFormat.type</xref>
+  - \[
+  [Word.ColorFormat.type](/javascript/api/word/word.colorformat#type-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.ColorFormatData#type:member">Word.Interfaces.ColorFormatData.type</xref>
+  - \[
+  [Word.Interfaces.ColorFormatData.type](/javascript/api/word/word.interfaces.colorformatdata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -17,11 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BasicCompactLayout#icon:member">Excel.BasicCompactLayout.icon</xref>
+  - \[
+  [Excel.BasicCompactLayout.icon](/javascript/api/excel/excel.basiccompactlayout#icon-member)
+  \]
 
-  - <xref
-  href="excel!Excel.EntityCompactLayout#icon:member">Excel.EntityCompactLayout.icon</xref>
+  - \[
+  [Excel.EntityCompactLayout.icon](/javascript/api/excel/excel.entitycompactlayout#icon-member)
+  \]
 
   #### Examples
 

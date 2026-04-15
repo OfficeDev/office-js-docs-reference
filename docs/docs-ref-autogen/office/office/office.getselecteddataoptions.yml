@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#getSelectedDataAsync:member(1)">Office.Document.getSelectedDataAsync</xref>
+  - \[
+  [Office.Document.getSelectedDataAsync](/javascript/api/office/office.document#getselecteddataasync-member)
+  \]
 
   #### Examples
 

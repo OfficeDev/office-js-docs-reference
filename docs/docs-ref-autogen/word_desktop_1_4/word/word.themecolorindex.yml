@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ColorFormat#objectThemeColor:member">Word.ColorFormat.objectThemeColor</xref>
+  - \[
+  [Word.ColorFormat.objectThemeColor](/javascript/api/word/word.colorformat#objectthemecolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ColorFormatData#objectThemeColor:member">Word.Interfaces.ColorFormatData.objectThemeColor</xref>
+  - \[
+  [Word.Interfaces.ColorFormatData.objectThemeColor](/javascript/api/word/word.interfaces.colorformatdata#objectthemecolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ColorFormatUpdateData#objectThemeColor:member">Word.Interfaces.ColorFormatUpdateData.objectThemeColor</xref>
+  - \[
+  [Word.Interfaces.ColorFormatUpdateData.objectThemeColor](/javascript/api/word/word.interfaces.colorformatupdatedata#objectthemecolor-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconSetConditionalFormat#criteria:member">Excel.IconSetConditionalFormat.criteria</xref>
+  - \[
+  [Excel.IconSetConditionalFormat.criteria](/javascript/api/excel/excel.iconsetconditionalformat#criteria-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.IconSetConditionalFormatData#criteria:member">Excel.Interfaces.IconSetConditionalFormatData.criteria</xref>
+  - \[
+  [Excel.Interfaces.IconSetConditionalFormatData.criteria](/javascript/api/excel/excel.interfaces.iconsetconditionalformatdata#criteria-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member">Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria</xref>
+  - \[
+  [Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria](/javascript/api/excel/excel.interfaces.iconsetconditionalformatupdatedata#criteria-member)
+  \]
 
 isPreview: false
 isDeprecated: false

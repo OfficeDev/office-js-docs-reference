@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#getFileAsync:member(1)">Office.Document.getFileAsync</xref>
+  - \[
+  [Office.Document.getFileAsync](/javascript/api/office/office.document#getfileasync-member)
+  \]
 
   #### Examples
 

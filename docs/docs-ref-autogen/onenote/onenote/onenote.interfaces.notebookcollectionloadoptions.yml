@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ApplicationLoadOptions#notebooks:member">OneNote.Interfaces.ApplicationLoadOptions.notebooks</xref>
+  - \[
+  [OneNote.Interfaces.ApplicationLoadOptions.notebooks](/javascript/api/onenote/onenote.interfaces.applicationloadoptions#notebooks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

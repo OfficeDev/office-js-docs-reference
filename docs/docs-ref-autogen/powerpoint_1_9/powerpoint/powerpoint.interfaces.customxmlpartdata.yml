@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member">PowerPoint.Interfaces.CustomXmlPartCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomXmlPartCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.customxmlpartcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData#items:member">PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.customxmlpartcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member">PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.customxmlpartscopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member">PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.customxmlpartscopedcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

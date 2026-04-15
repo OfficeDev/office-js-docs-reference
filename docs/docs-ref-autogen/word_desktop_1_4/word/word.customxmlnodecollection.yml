@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlNode#attributes:member">Word.CustomXmlNode.attributes</xref>
+  - \[
+  [Word.CustomXmlNode.attributes](/javascript/api/word/word.customxmlnode#attributes-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlNode#childNodes:member">Word.CustomXmlNode.childNodes</xref>
+  - \[
+  [Word.CustomXmlNode.childNodes](/javascript/api/word/word.customxmlnode#childnodes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.CustomXmlPartCollection#items:member">PowerPoint.CustomXmlPartCollection.items</xref>
+  - \[
+  [PowerPoint.CustomXmlPartCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.CustomXmlPartScopedCollection#items:member">PowerPoint.CustomXmlPartScopedCollection.items</xref>
+  - \[
+  [PowerPoint.CustomXmlPartScopedCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

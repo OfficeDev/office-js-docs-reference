@@ -12,68 +12,89 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyLoadOptions#parentBody:member">Word.Interfaces.BodyLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.BodyLoadOptions.parentBody](/javascript/api/word/word.interfaces.bodyloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member">Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject</xref>
+  - \[
+  [Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject](/javascript/api/word/word.interfaces.bodyloadoptions#parentbodyornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#parentBody:member">Word.Interfaces.ContentControlLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.parentBody](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#body:member">Word.Interfaces.DocumentLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.body](/javascript/api/word/word.interfaces.documentloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member">Word.Interfaces.FieldCollectionLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#parentBody:member">Word.Interfaces.FieldLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.parentBody](/javascript/api/word/word.interfaces.fieldloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemCollectionLoadOptions#body:member">Word.Interfaces.NoteItemCollectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.NoteItemCollectionLoadOptions.body](/javascript/api/word/word.interfaces.noteitemcollectionloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemLoadOptions#body:member">Word.Interfaces.NoteItemLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.NoteItemLoadOptions.body](/javascript/api/word/word.interfaces.noteitemloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member">Word.Interfaces.ParagraphLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.parentBody](/javascript/api/word/word.interfaces.paragraphloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member">Word.Interfaces.RangeCollectionLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#parentBody:member">Word.Interfaces.RangeLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.parentBody](/javascript/api/word/word.interfaces.rangeloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionCollectionLoadOptions#body:member">Word.Interfaces.SectionCollectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.SectionCollectionLoadOptions.body](/javascript/api/word/word.interfaces.sectioncollectionloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionLoadOptions#body:member">Word.Interfaces.SectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.SectionLoadOptions.body](/javascript/api/word/word.interfaces.sectionloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeCollectionLoadOptions#body:member">Word.Interfaces.ShapeCollectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.ShapeCollectionLoadOptions.body](/javascript/api/word/word.interfaces.shapecollectionloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeLoadOptions#body:member">Word.Interfaces.ShapeLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.ShapeLoadOptions.body](/javascript/api/word/word.interfaces.shapeloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellCollectionLoadOptions#body:member">Word.Interfaces.TableCellCollectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.TableCellCollectionLoadOptions.body](/javascript/api/word/word.interfaces.tablecellcollectionloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellLoadOptions#body:member">Word.Interfaces.TableCellLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.TableCellLoadOptions.body](/javascript/api/word/word.interfaces.tablecellloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member">Word.Interfaces.TableCollectionLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.TableCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableLoadOptions#parentBody:member">Word.Interfaces.TableLoadOptions.parentBody</xref>
+  - \[
+  [Word.Interfaces.TableLoadOptions.parentBody](/javascript/api/word/word.interfaces.tableloadoptions#parentbody-member)
+  \]
 
 isPreview: false
 isDeprecated: false

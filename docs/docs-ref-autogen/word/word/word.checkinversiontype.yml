@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentCheckInWithVersionOptions#versionType:member">Word.DocumentCheckInWithVersionOptions.versionType</xref>
+  - \[
+  [Word.DocumentCheckInWithVersionOptions.versionType](/javascript/api/word/word.documentcheckinwithversionoptions#versiontype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Interfaces.DocumentUpdateData#view:member">Visio.Interfaces.DocumentUpdateData.view</xref>
+  - \[
+  [Visio.Interfaces.DocumentUpdateData.view](/javascript/api/visio/visio.interfaces.documentupdatedata#view-member)
+  \]
 
 isPreview: false
 isDeprecated: false

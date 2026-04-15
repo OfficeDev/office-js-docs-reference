@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameData#readingOrder:member">Excel.Interfaces.TextFrameData.readingOrder</xref>
+  - \[
+  [Excel.Interfaces.TextFrameData.readingOrder](/javascript/api/excel/excel.interfaces.textframedata#readingorder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member">Excel.Interfaces.TextFrameUpdateData.readingOrder</xref>
+  - \[
+  [Excel.Interfaces.TextFrameUpdateData.readingOrder](/javascript/api/excel/excel.interfaces.textframeupdatedata#readingorder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TextFrame#readingOrder:member">Excel.TextFrame.readingOrder</xref>
+  - \[
+  [Excel.TextFrame.readingOrder](/javascript/api/excel/excel.textframe#readingorder-member)
+  \]
 
 isPreview: false
 isDeprecated: false

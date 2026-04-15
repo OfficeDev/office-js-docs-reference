@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartLegend#position:member">Excel.ChartLegend.position</xref>
+  - \[
+  [Excel.ChartLegend.position](/javascript/api/excel/excel.chartlegend#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendData#position:member">Excel.Interfaces.ChartLegendData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendData.position](/javascript/api/excel/excel.interfaces.chartlegenddata#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendUpdateData#position:member">Excel.Interfaces.ChartLegendUpdateData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendUpdateData.position](/javascript/api/excel/excel.interfaces.chartlegendupdatedata#position-member)
+  \]
 
 isPreview: false
 isDeprecated: false

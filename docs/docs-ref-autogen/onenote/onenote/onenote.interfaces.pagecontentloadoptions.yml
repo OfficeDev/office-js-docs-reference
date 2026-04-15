@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member">OneNote.Interfaces.FloatingInkLoadOptions.pageContent</xref>
+  - \[
+  [OneNote.Interfaces.FloatingInkLoadOptions.pageContent](/javascript/api/onenote/onenote.interfaces.floatinginkloadoptions#pagecontent-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ImageLoadOptions#pageContent:member">OneNote.Interfaces.ImageLoadOptions.pageContent</xref>
+  - \[
+  [OneNote.Interfaces.ImageLoadOptions.pageContent](/javascript/api/onenote/onenote.interfaces.imageloadoptions#pagecontent-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member">OneNote.Interfaces.OutlineLoadOptions.pageContent</xref>
+  - \[
+  [OneNote.Interfaces.OutlineLoadOptions.pageContent](/javascript/api/onenote/onenote.interfaces.outlineloadoptions#pagecontent-member)
+  \]
 
 isPreview: false
 isDeprecated: false

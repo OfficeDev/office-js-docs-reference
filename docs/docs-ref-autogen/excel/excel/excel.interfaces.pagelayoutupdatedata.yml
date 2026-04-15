@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetUpdateData#pageLayout:member">Excel.Interfaces.WorksheetUpdateData.pageLayout</xref>
+  - \[
+  [Excel.Interfaces.WorksheetUpdateData.pageLayout](/javascript/api/excel/excel.interfaces.worksheetupdatedata#pagelayout-member)
+  \]
 
 isPreview: false
 isDeprecated: false

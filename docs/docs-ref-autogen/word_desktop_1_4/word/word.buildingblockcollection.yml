@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlockCategory#buildingBlocks:member">Word.BuildingBlockCategory.buildingBlocks</xref>
+  - \[
+  [Word.BuildingBlockCategory.buildingBlocks](/javascript/api/word/word.buildingblockcategory#buildingblocks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

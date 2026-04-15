@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLayoutData#type:member">PowerPoint.Interfaces.SlideLayoutData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLayoutData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutdata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideLayout#type:member">PowerPoint.SlideLayout.type</xref>
+  - \[
+  [PowerPoint.SlideLayout.type](/javascript/api/powerpoint/powerpoint.slidelayout#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -32,11 +32,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#convertToEwsId:member(1)">Office.Mailbox.convertToEwsId</xref>
+  - \[
+  [Office.Mailbox.convertToEwsId](/javascript/api/outlook/office.mailbox#converttoewsid-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Mailbox#convertToRestId:member(1)">Office.Mailbox.convertToRestId</xref>
+  - \[
+  [Office.Mailbox.convertToRestId](/javascript/api/outlook/office.mailbox#converttorestid-member)
+  \]
 
   #### Examples
 

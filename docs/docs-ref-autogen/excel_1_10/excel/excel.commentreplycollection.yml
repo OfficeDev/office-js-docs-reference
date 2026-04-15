@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Comment#replies:member">Excel.Comment.replies</xref>
+  - \[
+  [Excel.Comment.replies](/javascript/api/excel/excel.comment#replies-member) \]
 
 isPreview: false
 isDeprecated: false

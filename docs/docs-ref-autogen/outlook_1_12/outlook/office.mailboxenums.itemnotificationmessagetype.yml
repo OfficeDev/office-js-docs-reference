@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.NotificationMessageDetails#type:member">Office.NotificationMessageDetails.type</xref>
+  - \[
+  [Office.NotificationMessageDetails.type](/javascript/api/outlook/office.notificationmessagedetails#type-member)
+  \]
 
   #### Examples
 

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Shape#line:member">Excel.Shape.line</xref>
+  - \[ [Excel.Shape.line](/javascript/api/excel/excel.shape#line-member) \]
 
 isPreview: false
 isDeprecated: false

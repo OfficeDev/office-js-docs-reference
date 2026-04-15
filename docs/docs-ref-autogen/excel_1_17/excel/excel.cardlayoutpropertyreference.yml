@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CardLayoutStandardProperties#mainImage:member">Excel.CardLayoutStandardProperties.mainImage</xref>
+  - \[
+  [Excel.CardLayoutStandardProperties.mainImage](/javascript/api/excel/excel.cardlayoutstandardproperties#mainimage-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CardLayoutStandardProperties#subTitle:member">Excel.CardLayoutStandardProperties.subTitle</xref>
+  - \[
+  [Excel.CardLayoutStandardProperties.subTitle](/javascript/api/excel/excel.cardlayoutstandardproperties#subtitle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CardLayoutStandardProperties#title:member">Excel.CardLayoutStandardProperties.title</xref>
+  - \[
+  [Excel.CardLayoutStandardProperties.title](/javascript/api/excel/excel.cardlayoutstandardproperties#title-member)
+  \]
 
 isPreview: false
 isDeprecated: false

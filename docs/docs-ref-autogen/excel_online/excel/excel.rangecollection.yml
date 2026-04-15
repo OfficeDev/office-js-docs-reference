@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeAreas#areas:member">Excel.RangeAreas.areas</xref>
+  - \[
+  [Excel.RangeAreas.areas](/javascript/api/excel/excel.rangeareas#areas-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorkbookRangeAreas#ranges:member">Excel.WorkbookRangeAreas.ranges</xref>
+  - \[
+  [Excel.WorkbookRangeAreas.ranges](/javascript/api/excel/excel.workbookrangeareas#ranges-member)
+  \]
 
 isPreview: false
 isDeprecated: false

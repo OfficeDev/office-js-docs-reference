@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Interfaces.PageCollectionLoadOptions#view:member">Visio.Interfaces.PageCollectionLoadOptions.view</xref>
+  - \[
+  [Visio.Interfaces.PageCollectionLoadOptions.view](/javascript/api/visio/visio.interfaces.pagecollectionloadoptions#view-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.PageLoadOptions#view:member">Visio.Interfaces.PageLoadOptions.view</xref>
+  - \[
+  [Visio.Interfaces.PageLoadOptions.view](/javascript/api/visio/visio.interfaces.pageloadoptions#view-member)
+  \]
 
 isPreview: false
 isDeprecated: false

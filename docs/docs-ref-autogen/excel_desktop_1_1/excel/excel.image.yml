@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Shape#image:member">Excel.Shape.image</xref>
+  - \[ [Excel.Shape.image](/javascript/api/excel/excel.shape#image-member) \]
 
 isPreview: false
 isDeprecated: false

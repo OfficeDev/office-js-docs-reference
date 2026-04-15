@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#paragraph:member">Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#paragraph-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureLoadOptions#paragraph:member">Word.Interfaces.InlinePictureLoadOptions.paragraph</xref>
+  - \[
+  [Word.Interfaces.InlinePictureLoadOptions.paragraph](/javascript/api/word/word.interfaces.inlinepictureloadoptions#paragraph-member)
+  \]
 
 isPreview: false
 isDeprecated: false

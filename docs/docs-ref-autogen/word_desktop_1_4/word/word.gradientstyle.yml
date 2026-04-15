@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.FillFormat#gradientStyle:member">Word.FillFormat.gradientStyle</xref>
+  - \[
+  [Word.FillFormat.gradientStyle](/javascript/api/word/word.fillformat#gradientstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatData#gradientStyle:member">Word.Interfaces.FillFormatData.gradientStyle</xref>
+  - \[
+  [Word.Interfaces.FillFormatData.gradientStyle](/javascript/api/word/word.interfaces.fillformatdata#gradientstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

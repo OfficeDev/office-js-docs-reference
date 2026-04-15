@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotFilters#labelFilter:member">Excel.PivotFilters.labelFilter</xref>
+  - \[
+  [Excel.PivotFilters.labelFilter](/javascript/api/excel/excel.pivotfilters#labelfilter-member)
+  \]
 
   #### Examples
 

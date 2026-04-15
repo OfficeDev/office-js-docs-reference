@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentCountNumberedItemsOptions#numberType:member">Word.DocumentCountNumberedItemsOptions.numberType</xref>
+  - \[
+  [Word.DocumentCountNumberedItemsOptions.numberType](/javascript/api/word/word.documentcountnumbereditemsoptions#numbertype-member)
+  \]
 
-  - <xref
-  href="word!Word.ListFormatCountNumberedItemsOptions#numberType:member">Word.ListFormatCountNumberedItemsOptions.numberType</xref>
+  - \[
+  [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#numbertype-member)
+  \]
 
   #### Examples
 

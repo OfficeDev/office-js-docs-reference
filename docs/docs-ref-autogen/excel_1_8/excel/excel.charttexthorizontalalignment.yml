@@ -12,41 +12,53 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartDataLabel#horizontalAlignment:member">Excel.ChartDataLabel.horizontalAlignment</xref>
+  - \[
+  [Excel.ChartDataLabel.horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#horizontalAlignment:member">Excel.ChartDataLabels.horizontalAlignment</xref>
+  - \[
+  [Excel.ChartDataLabels.horizontalAlignment](/javascript/api/excel/excel.chartdatalabels#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitle#horizontalAlignment:member">Excel.ChartTitle.horizontalAlignment</xref>
+  - \[
+  [Excel.ChartTitle.horizontalAlignment](/javascript/api/excel/excel.charttitle#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineLabel#horizontalAlignment:member">Excel.ChartTrendlineLabel.horizontalAlignment</xref>
+  - \[
+  [Excel.ChartTrendlineLabel.horizontalAlignment](/javascript/api/excel/excel.charttrendlinelabel#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabeldata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelsData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartDataLabelUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleData#horizontalAlignment:member">Excel.Interfaces.ChartTitleData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttitledata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttitleupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment:member">Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabeldata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartTrendlineLabelUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLabelUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabelupdatedata#horizontalalignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

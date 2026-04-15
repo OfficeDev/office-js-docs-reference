@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxes#categoryAxis:member">Excel.ChartAxes.categoryAxis</xref>
+  - \[
+  [Excel.ChartAxes.categoryAxis](/javascript/api/excel/excel.chartaxes#categoryaxis-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxes#seriesAxis:member">Excel.ChartAxes.seriesAxis</xref>
+  - \[
+  [Excel.ChartAxes.seriesAxis](/javascript/api/excel/excel.chartaxes#seriesaxis-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxes#valueAxis:member">Excel.ChartAxes.valueAxis</xref>
+  - \[
+  [Excel.ChartAxes.valueAxis](/javascript/api/excel/excel.chartaxes#valueaxis-member)
+  \]
 
 isPreview: false
 isDeprecated: false

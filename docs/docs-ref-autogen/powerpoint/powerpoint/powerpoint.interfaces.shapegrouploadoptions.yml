@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#group:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.group</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.group](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#group-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#group:member">PowerPoint.Interfaces.ShapeLoadOptions.group</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLoadOptions.group](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#group-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#group:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.group</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.group](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#group-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#lines:member">OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.lines</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.lines](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphcollectionloadoptions#lines-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#lines:member">OneNote.Interfaces.InkAnalysisParagraphLoadOptions.lines</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisParagraphLoadOptions.lines](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphloadoptions#lines-member)
+  \]
 
 isPreview: false
 isDeprecated: false

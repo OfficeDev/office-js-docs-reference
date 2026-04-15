@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFormat#font:member">Excel.CellPropertiesFormat.font</xref>
+  - \[
+  [Excel.CellPropertiesFormat.font](/javascript/api/excel/excel.cellpropertiesformat#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

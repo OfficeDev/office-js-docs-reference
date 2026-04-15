@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAreaFormat#border:member">Excel.ChartAreaFormat.border</xref>
+  - \[
+  [Excel.ChartAreaFormat.border](/javascript/api/excel/excel.chartareaformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPointFormat#border:member">Excel.ChartPointFormat.border</xref>
+  - \[
+  [Excel.ChartPointFormat.border](/javascript/api/excel/excel.chartpointformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitleFormat#border:member">Excel.ChartTitleFormat.border</xref>
+  - \[
+  [Excel.ChartTitleFormat.border](/javascript/api/excel/excel.charttitleformat#border-member)
+  \]
 
 isPreview: false
 isDeprecated: false

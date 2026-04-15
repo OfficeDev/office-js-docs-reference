@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendData#legendEntries:member">Excel.Interfaces.ChartLegendData.legendEntries</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendData.legendEntries](/javascript/api/excel/excel.interfaces.chartlegenddata#legendentries-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendEntryCollectionData#items:member">Excel.Interfaces.ChartLegendEntryCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendEntryCollectionData.items](/javascript/api/excel/excel.interfaces.chartlegendentrycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member">Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.chartlegendentrycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

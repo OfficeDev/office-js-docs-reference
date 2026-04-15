@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.NoteCollection#items:member">Excel.NoteCollection.items</xref>
+  - \[
+  [Excel.NoteCollection.items](/javascript/api/excel/excel.notecollection#items-member)
+  \]
 
   #### Examples
 

@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.CustomXmlPart#namespaceManager:member">Office.CustomXmlPart.namespaceManager</xref>
+  - \[
+  [Office.CustomXmlPart.namespaceManager](/javascript/api/office/office.customxmlpart#namespacemanager-member)
+  \]
 
 isPreview: false
 isDeprecated: false

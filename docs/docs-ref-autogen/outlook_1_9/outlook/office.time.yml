@@ -24,11 +24,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#end:member">Office.AppointmentCompose.end</xref>
+  - \[
+  [Office.AppointmentCompose.end](/javascript/api/outlook/office.appointmentcompose#end-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#start:member">Office.AppointmentCompose.start</xref>
+  - \[
+  [Office.AppointmentCompose.start](/javascript/api/outlook/office.appointmentcompose#start-member)
+  \]
 
 isPreview: false
 isDeprecated: false

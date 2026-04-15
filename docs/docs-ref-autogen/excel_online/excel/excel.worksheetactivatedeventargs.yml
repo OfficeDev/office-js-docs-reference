@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onActivated:member">Excel.Worksheet.onActivated</xref>
+  - \[
+  [Excel.Worksheet.onActivated](/javascript/api/excel/excel.worksheet#onactivated-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onActivated:member">Excel.WorksheetCollection.onActivated</xref>
+  - \[
+  [Excel.WorksheetCollection.onActivated](/javascript/api/excel/excel.worksheetcollection#onactivated-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,38 +10,49 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionData#items:member">Word.Interfaces.CustomXmlNodeCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionData.items](/javascript/api/word/word.interfaces.customxmlnodecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionUpdateData#items:member">Word.Interfaces.CustomXmlNodeCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlnodecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#attributes:member">Word.Interfaces.CustomXmlNodeData.attributes</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.attributes](/javascript/api/word/word.interfaces.customxmlnodedata#attributes-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#childNodes:member">Word.Interfaces.CustomXmlNodeData.childNodes</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.childNodes](/javascript/api/word/word.interfaces.customxmlnodedata#childnodes-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#firstChild:member">Word.Interfaces.CustomXmlNodeData.firstChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.firstChild](/javascript/api/word/word.interfaces.customxmlnodedata#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#lastChild:member">Word.Interfaces.CustomXmlNodeData.lastChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.lastChild](/javascript/api/word/word.interfaces.customxmlnodedata#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#nextSibling:member">Word.Interfaces.CustomXmlNodeData.nextSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.nextSibling](/javascript/api/word/word.interfaces.customxmlnodedata#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#parentNode:member">Word.Interfaces.CustomXmlNodeData.parentNode</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.parentNode](/javascript/api/word/word.interfaces.customxmlnodedata#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeData#previousSibling:member">Word.Interfaces.CustomXmlNodeData.previousSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeData.previousSibling](/javascript/api/word/word.interfaces.customxmlnodedata#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartData#documentElement:member">Word.Interfaces.CustomXmlPartData.documentElement</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartData.documentElement](/javascript/api/word/word.interfaces.customxmlpartdata#documentelement-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlMappingData#customXmlNode:member">Word.Interfaces.XmlMappingData.customXmlNode</xref>
+  - \[
+  [Word.Interfaces.XmlMappingData.customXmlNode](/javascript/api/word/word.interfaces.xmlmappingdata#customxmlnode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

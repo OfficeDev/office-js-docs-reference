@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameData#horizontalOverflow:member">Excel.Interfaces.TextFrameData.horizontalOverflow</xref>
+  - \[
+  [Excel.Interfaces.TextFrameData.horizontalOverflow](/javascript/api/excel/excel.interfaces.textframedata#horizontaloverflow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member">Excel.Interfaces.TextFrameUpdateData.horizontalOverflow</xref>
+  - \[
+  [Excel.Interfaces.TextFrameUpdateData.horizontalOverflow](/javascript/api/excel/excel.interfaces.textframeupdatedata#horizontaloverflow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TextFrame#horizontalOverflow:member">Excel.TextFrame.horizontalOverflow</xref>
+  - \[
+  [Excel.TextFrame.horizontalOverflow](/javascript/api/excel/excel.textframe#horizontaloverflow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

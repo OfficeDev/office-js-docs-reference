@@ -22,29 +22,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#optionalAttendees:member">Office.AppointmentCompose.optionalAttendees</xref>
+  - \[
+  [Office.AppointmentCompose.optionalAttendees](/javascript/api/outlook/office.appointmentcompose#optionalattendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#requiredAttendees:member">Office.AppointmentCompose.requiredAttendees</xref>
+  - \[
+  [Office.AppointmentCompose.requiredAttendees](/javascript/api/outlook/office.appointmentcompose#requiredattendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#bcc:member">Office.LoadedMessageCompose.bcc</xref>
+  - \[
+  [Office.LoadedMessageCompose.bcc](/javascript/api/outlook/office.loadedmessagecompose#bcc-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#cc:member">Office.LoadedMessageCompose.cc</xref>
+  - \[
+  [Office.LoadedMessageCompose.cc](/javascript/api/outlook/office.loadedmessagecompose#cc-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#to:member">Office.LoadedMessageCompose.to</xref>
+  - \[
+  [Office.LoadedMessageCompose.to](/javascript/api/outlook/office.loadedmessagecompose#to-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#bcc:member">Office.MessageCompose.bcc</xref>
+  - \[
+  [Office.MessageCompose.bcc](/javascript/api/outlook/office.messagecompose#bcc-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#cc:member">Office.MessageCompose.cc</xref>
+  - \[
+  [Office.MessageCompose.cc](/javascript/api/outlook/office.messagecompose#cc-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#to:member">Office.MessageCompose.to</xref>
+  - \[
+  [Office.MessageCompose.to](/javascript/api/outlook/office.messagecompose#to-member)
+  \]
 
 isPreview: false
 isDeprecated: false

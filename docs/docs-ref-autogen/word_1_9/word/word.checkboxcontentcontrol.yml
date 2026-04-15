@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#checkboxContentControl:member">Word.ContentControl.checkboxContentControl</xref>
+  - \[
+  [Word.ContentControl.checkboxContentControl](/javascript/api/word/word.contentcontrol#checkboxcontentcontrol-member)
+  \]
 
   #### Examples
 

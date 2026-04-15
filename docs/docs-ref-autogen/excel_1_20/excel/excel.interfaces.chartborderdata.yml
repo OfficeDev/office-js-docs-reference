@@ -10,32 +10,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAreaFormatData#border:member">Excel.Interfaces.ChartAreaFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartAreaFormatData.border](/javascript/api/excel/excel.interfaces.chartareaformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisTitleFormatData#border:member">Excel.Interfaces.ChartAxisTitleFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisTitleFormatData.border](/javascript/api/excel/excel.interfaces.chartaxistitleformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelFormatData#border:member">Excel.Interfaces.ChartDataLabelFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelFormatData.border](/javascript/api/excel/excel.interfaces.chartdatalabelformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataTableFormatData#border:member">Excel.Interfaces.ChartDataTableFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartDataTableFormatData.border](/javascript/api/excel/excel.interfaces.chartdatatableformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendFormatData#border:member">Excel.Interfaces.ChartLegendFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendFormatData.border](/javascript/api/excel/excel.interfaces.chartlegendformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPlotAreaFormatData#border:member">Excel.Interfaces.ChartPlotAreaFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartPlotAreaFormatData.border](/javascript/api/excel/excel.interfaces.chartplotareaformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPointFormatData#border:member">Excel.Interfaces.ChartPointFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartPointFormatData.border](/javascript/api/excel/excel.interfaces.chartpointformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleFormatData#border:member">Excel.Interfaces.ChartTitleFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleFormatData.border](/javascript/api/excel/excel.interfaces.charttitleformatdata#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLabelFormatData#border:member">Excel.Interfaces.ChartTrendlineLabelFormatData.border</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLabelFormatData.border](/javascript/api/excel/excel.interfaces.charttrendlinelabelformatdata#border-member)
+  \]
 
 isPreview: false
 isDeprecated: false

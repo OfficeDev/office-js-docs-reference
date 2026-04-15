@@ -13,20 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BooleanCellValue#properties:member">Excel.BooleanCellValue.properties</xref>
+  - \[
+  [Excel.BooleanCellValue.properties](/javascript/api/excel/excel.booleancellvalue#properties-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DoubleCellValue#properties:member">Excel.DoubleCellValue.properties</xref>
+  - \[
+  [Excel.DoubleCellValue.properties](/javascript/api/excel/excel.doublecellvalue#properties-member)
+  \]
 
-  - <xref
-  href="excel!Excel.EntityCellValue#properties:member">Excel.EntityCellValue.properties</xref>
+  - \[
+  [Excel.EntityCellValue.properties](/javascript/api/excel/excel.entitycellvalue#properties-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityCellValue#properties:member">Excel.LinkedEntityCellValue.properties</xref>
+  - \[
+  [Excel.LinkedEntityCellValue.properties](/javascript/api/excel/excel.linkedentitycellvalue#properties-member)
+  \]
 
-  - <xref
-  href="excel!Excel.StringCellValue#properties:member">Excel.StringCellValue.properties</xref>
+  - \[
+  [Excel.StringCellValue.properties](/javascript/api/excel/excel.stringcellvalue#properties-member)
+  \]
 
 
 

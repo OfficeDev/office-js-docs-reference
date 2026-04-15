@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ConditionalStyleLoadOptions#paragraphFormat:member">Word.Interfaces.ConditionalStyleLoadOptions.paragraphFormat</xref>
+  - \[
+  [Word.Interfaces.ConditionalStyleLoadOptions.paragraphFormat](/javascript/api/word/word.interfaces.conditionalstyleloadoptions#paragraphformat-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member">Word.Interfaces.StyleCollectionLoadOptions.paragraphFormat</xref>
+  - \[
+  [Word.Interfaces.StyleCollectionLoadOptions.paragraphFormat](/javascript/api/word/word.interfaces.stylecollectionloadoptions#paragraphformat-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleLoadOptions#paragraphFormat:member">Word.Interfaces.StyleLoadOptions.paragraphFormat</xref>
+  - \[
+  [Word.Interfaces.StyleLoadOptions.paragraphFormat](/javascript/api/word/word.interfaces.styleloadoptions#paragraphformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

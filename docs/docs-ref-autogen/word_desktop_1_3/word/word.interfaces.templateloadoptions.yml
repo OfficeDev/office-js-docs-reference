@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member">Word.Interfaces.DocumentLoadOptions.attachedTemplate</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.attachedTemplate](/javascript/api/word/word.interfaces.documentloadoptions#attachedtemplate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

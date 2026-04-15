@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member">OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk</xref>
+  - \[
+  [OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk](/javascript/api/onenote/onenote.interfaces.inkstrokecollectionloadoptions#floatingink-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member">OneNote.Interfaces.InkStrokeLoadOptions.floatingInk</xref>
+  - \[
+  [OneNote.Interfaces.InkStrokeLoadOptions.floatingInk](/javascript/api/onenote/onenote.interfaces.inkstrokeloadoptions#floatingink-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member">OneNote.Interfaces.PageContentCollectionLoadOptions.ink</xref>
+  - \[
+  [OneNote.Interfaces.PageContentCollectionLoadOptions.ink](/javascript/api/onenote/onenote.interfaces.pagecontentcollectionloadoptions#ink-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentLoadOptions#ink:member">OneNote.Interfaces.PageContentLoadOptions.ink</xref>
+  - \[
+  [OneNote.Interfaces.PageContentLoadOptions.ink](/javascript/api/onenote/onenote.interfaces.pagecontentloadoptions#ink-member)
+  \]
 
 isPreview: false
 isDeprecated: false

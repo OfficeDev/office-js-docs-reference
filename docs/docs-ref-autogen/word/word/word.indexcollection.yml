@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Document#indexes:member">Word.Document.indexes</xref>
+  - \[
+  [Word.Document.indexes](/javascript/api/word/word.document#indexes-member) \]
 
 isPreview: false
 isDeprecated: false

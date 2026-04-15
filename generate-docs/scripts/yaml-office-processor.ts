@@ -430,6 +430,34 @@ function deduplicateMethodOverloads(references: UsedByReference[]): UsedByRefere
 }
 
 /**
+ * Converts a UID to a URL for use in markdown links.
+ * Example: excel!Excel.DataPivotHierarchy#summarizeBy:member
+ * -> /javascript/api/excel/excel.datapivothierarchy#summarizeby-member
+ */
+function convertUidToUrl(uid: string): string {
+  // Remove overload suffix like (1), (2)
+  const cleanUid = uid.replace(/\(\d+\)$/, '');
+
+  // Split on ! to get package and reference
+  const parts = cleanUid.split('!');
+  if (parts.length !== 2) {
+    return '';
+  }
+
+  const packageName = parts[0];
+  let reference = parts[1];
+
+  // Convert to lowercase
+  reference = reference.toLowerCase();
+
+  // Replace : with -
+  reference = reference.replace(/:/g, '-');
+
+  // Build URL
+  return `/javascript/api/${packageName}/${reference}`;
+}
+
+/**
  * Generates the markdown for the "Used By" section.
  */
 function generateUsedBySection(references: UsedByReference[]): string {
@@ -456,10 +484,11 @@ function generateUsedBySection(references: UsedByReference[]): string {
     // Sort references alphabetically by display name
     refs.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Add each reference as a bullet point with xref link
-    // Use inner content to display the full qualified name (e.g., "Excel.DataPivotHierarchy.summarizeBy")
+    // Add each reference as a bullet point with escaped markdown link
+    // Use the same format as requirement set links: \[ [Text](url) \]
     for (const ref of refs) {
-      lines.push(`- <xref href="${ref.uid}">${ref.name}</xref>`);
+      const url = convertUidToUrl(ref.uid);
+      lines.push(`- \\[ [${ref.name}](${url}) \\]`);
     }
   }
 

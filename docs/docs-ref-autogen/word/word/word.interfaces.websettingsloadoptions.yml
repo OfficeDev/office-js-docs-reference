@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#webSettings:member">Word.Interfaces.DocumentLoadOptions.webSettings</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.webSettings](/javascript/api/word/word.interfaces.documentloadoptions#websettings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

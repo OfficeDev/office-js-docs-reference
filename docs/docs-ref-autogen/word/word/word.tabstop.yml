@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.TabStop#next:member">Word.TabStop.next</xref>
+  - \[ [Word.TabStop.next](/javascript/api/word/word.tabstop#next-member) \]
 
-  - <xref href="word!Word.TabStop#previous:member">Word.TabStop.previous</xref>
+  - \[
+  [Word.TabStop.previous](/javascript/api/word/word.tabstop#previous-member) \]
 
-  - <xref
-  href="word!Word.TabStopCollection#items:member">Word.TabStopCollection.items</xref>
+  - \[
+  [Word.TabStopCollection.items](/javascript/api/word/word.tabstopcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

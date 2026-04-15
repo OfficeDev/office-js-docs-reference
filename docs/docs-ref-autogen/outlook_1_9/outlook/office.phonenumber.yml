@@ -35,23 +35,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getEntitiesByType:member(1)">Office.AppointmentRead.getEntitiesByType</xref>
+  - \[
+  [Office.AppointmentRead.getEntitiesByType](/javascript/api/outlook/office.appointmentread#getentitiesbytype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)">Office.AppointmentRead.getFilteredEntitiesByName</xref>
+  - \[
+  [Office.AppointmentRead.getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#getfilteredentitiesbyname-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Contact#phoneNumbers:member">Office.Contact.phoneNumbers</xref>
+  - \[
+  [Office.Contact.phoneNumbers](/javascript/api/outlook/office.contact#phonenumbers-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Entities#phoneNumbers:member">Office.Entities.phoneNumbers</xref>
+  - \[
+  [Office.Entities.phoneNumbers](/javascript/api/outlook/office.entities#phonenumbers-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getEntitiesByType:member(1)">Office.MessageRead.getEntitiesByType</xref>
+  - \[
+  [Office.MessageRead.getEntitiesByType](/javascript/api/outlook/office.messageread#getentitiesbytype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getFilteredEntitiesByName:member(1)">Office.MessageRead.getFilteredEntitiesByName</xref>
+  - \[
+  [Office.MessageRead.getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#getfilteredentitiesbyname-member)
+  \]
 
   #### Examples
 

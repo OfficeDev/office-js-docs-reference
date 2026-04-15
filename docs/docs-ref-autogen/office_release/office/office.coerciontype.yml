@@ -52,17 +52,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#getSelectedDataAsync:member(10)">Office.Document.getSelectedDataAsync</xref>
+  - \[
+  [Office.Document.getSelectedDataAsync](/javascript/api/office/office.document#getselecteddataasync-member)
+  \]
 
-  - <xref
-  href="office!Office.GetBindingDataOptions#coercionType:member">Office.GetBindingDataOptions.coercionType</xref>
+  - \[
+  [Office.GetBindingDataOptions.coercionType](/javascript/api/office/office.getbindingdataoptions#coerciontype-member)
+  \]
 
-  - <xref
-  href="office!Office.SetBindingDataOptions#coercionType:member">Office.SetBindingDataOptions.coercionType</xref>
+  - \[
+  [Office.SetBindingDataOptions.coercionType](/javascript/api/office/office.setbindingdataoptions#coerciontype-member)
+  \]
 
-  - <xref
-  href="office!Office.SetSelectedDataOptions#coercionType:member">Office.SetSelectedDataOptions.coercionType</xref>
+  - \[
+  [Office.SetSelectedDataOptions.coercionType](/javascript/api/office/office.setselecteddataoptions#coerciontype-member)
+  \]
 
   #### Examples
 

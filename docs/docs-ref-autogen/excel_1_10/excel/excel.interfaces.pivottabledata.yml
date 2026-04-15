@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableCollectionData#items:member">Excel.Interfaces.PivotTableCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotTableCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableCollectionUpdateData#items:member">Excel.Interfaces.PivotTableCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotTableCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member">Excel.Interfaces.PivotTableScopedCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotTableScopedCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablescopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member">Excel.Interfaces.PivotTableScopedCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotTableScopedCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablescopedcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#pivotTables:member">Excel.Interfaces.WorkbookData.pivotTables</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.pivotTables](/javascript/api/excel/excel.interfaces.workbookdata#pivottables-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#pivotTables:member">Excel.Interfaces.WorksheetData.pivotTables</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.pivotTables](/javascript/api/excel/excel.interfaces.worksheetdata#pivottables-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeUpdateData#fill:member">Excel.Interfaces.ShapeUpdateData.fill</xref>
+  - \[
+  [Excel.Interfaces.ShapeUpdateData.fill](/javascript/api/excel/excel.interfaces.shapeupdatedata#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

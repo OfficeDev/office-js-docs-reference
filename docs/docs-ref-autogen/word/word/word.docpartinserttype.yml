@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlock#insertType:member">Word.BuildingBlock.insertType</xref>
+  - \[
+  [Word.BuildingBlock.insertType](/javascript/api/word/word.buildingblock#inserttype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockData#insertType:member">Word.Interfaces.BuildingBlockData.insertType</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockData.insertType](/javascript/api/word/word.interfaces.buildingblockdata#inserttype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockUpdateData#insertType:member">Word.Interfaces.BuildingBlockUpdateData.insertType</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockUpdateData.insertType](/javascript/api/word/word.interfaces.buildingblockupdatedata#inserttype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

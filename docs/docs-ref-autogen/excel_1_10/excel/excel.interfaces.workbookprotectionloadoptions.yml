@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookLoadOptions#protection:member">Excel.Interfaces.WorkbookLoadOptions.protection</xref>
+  - \[
+  [Excel.Interfaces.WorkbookLoadOptions.protection](/javascript/api/excel/excel.interfaces.workbookloadoptions#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

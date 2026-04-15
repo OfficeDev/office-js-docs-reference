@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableSortData#fields:member">Excel.Interfaces.TableSortData.fields</xref>
+  - \[
+  [Excel.Interfaces.TableSortData.fields](/javascript/api/excel/excel.interfaces.tablesortdata#fields-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableSort#fields:member">Excel.TableSort.fields</xref>
+  - \[
+  [Excel.TableSort.fields](/javascript/api/excel/excel.tablesort#fields-member)
+  \]
 
 isPreview: false
 isDeprecated: false

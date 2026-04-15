@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconCollections#fiveQuarters:member">Excel.IconCollections.fiveQuarters</xref>
+  - \[
+  [Excel.IconCollections.fiveQuarters](/javascript/api/excel/excel.iconcollections#fivequarters-member)
+  \]
 
 isPreview: false
 isDeprecated: false

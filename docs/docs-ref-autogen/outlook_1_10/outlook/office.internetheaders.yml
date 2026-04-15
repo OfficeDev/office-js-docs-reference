@@ -72,8 +72,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.MessageCompose#internetHeaders:member">Office.MessageCompose.internetHeaders</xref>
+  - \[
+  [Office.MessageCompose.internetHeaders](/javascript/api/outlook/office.messagecompose#internetheaders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

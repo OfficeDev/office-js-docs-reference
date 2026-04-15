@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeFontData#underline:member">PowerPoint.Interfaces.ShapeFontData.underline</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeFontData.underline](/javascript/api/powerpoint/powerpoint.interfaces.shapefontdata#underline-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member">PowerPoint.Interfaces.ShapeFontUpdateData.underline</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeFontUpdateData.underline](/javascript/api/powerpoint/powerpoint.interfaces.shapefontupdatedata#underline-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeFont#underline:member">PowerPoint.ShapeFont.underline</xref>
+  - \[
+  [PowerPoint.ShapeFont.underline](/javascript/api/powerpoint/powerpoint.shapefont#underline-member)
+  \]
 
   #### Examples
 

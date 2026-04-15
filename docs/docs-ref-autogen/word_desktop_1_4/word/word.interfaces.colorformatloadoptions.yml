@@ -12,32 +12,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member">Word.Interfaces.FillFormatLoadOptions.backgroundColor</xref>
+  - \[
+  [Word.Interfaces.FillFormatLoadOptions.backgroundColor](/javascript/api/word/word.interfaces.fillformatloadoptions#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member">Word.Interfaces.FillFormatLoadOptions.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.FillFormatLoadOptions.foregroundColor](/javascript/api/word/word.interfaces.fillformatloadoptions#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontLoadOptions#textColor:member">Word.Interfaces.FontLoadOptions.textColor</xref>
+  - \[
+  [Word.Interfaces.FontLoadOptions.textColor](/javascript/api/word/word.interfaces.fontloadoptions#textcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GlowFormatLoadOptions#color:member">Word.Interfaces.GlowFormatLoadOptions.color</xref>
+  - \[
+  [Word.Interfaces.GlowFormatLoadOptions.color](/javascript/api/word/word.interfaces.glowformatloadoptions#color-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member">Word.Interfaces.LineFormatLoadOptions.backgroundColor</xref>
+  - \[
+  [Word.Interfaces.LineFormatLoadOptions.backgroundColor](/javascript/api/word/word.interfaces.lineformatloadoptions#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member">Word.Interfaces.LineFormatLoadOptions.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.LineFormatLoadOptions.foregroundColor](/javascript/api/word/word.interfaces.lineformatloadoptions#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member">Word.Interfaces.ShadowFormatLoadOptions.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.ShadowFormatLoadOptions.foregroundColor](/javascript/api/word/word.interfaces.shadowformatloadoptions#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member">Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor](/javascript/api/word/word.interfaces.threedimensionalformatloadoptions#contourcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member">Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor](/javascript/api/word/word.interfaces.threedimensionalformatloadoptions#extrusioncolor-member)
+  \]
 
 isPreview: false
 isDeprecated: false

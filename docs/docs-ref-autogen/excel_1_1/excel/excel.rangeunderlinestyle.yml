@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFontData#underline:member">Excel.Interfaces.RangeFontData.underline</xref>
+  - \[
+  [Excel.Interfaces.RangeFontData.underline](/javascript/api/excel/excel.interfaces.rangefontdata#underline-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFontUpdateData#underline:member">Excel.Interfaces.RangeFontUpdateData.underline</xref>
+  - \[
+  [Excel.Interfaces.RangeFontUpdateData.underline](/javascript/api/excel/excel.interfaces.rangefontupdatedata#underline-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFont#underline:member">Excel.RangeFont.underline</xref>
+  - \[
+  [Excel.RangeFont.underline](/javascript/api/excel/excel.rangefont#underline-member)
+  \]
 
   #### Examples
 

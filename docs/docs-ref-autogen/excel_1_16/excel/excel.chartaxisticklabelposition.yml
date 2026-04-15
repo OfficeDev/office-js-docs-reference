@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#tickLabelPosition:member">Excel.ChartAxis.tickLabelPosition</xref>
+  - \[
+  [Excel.ChartAxis.tickLabelPosition](/javascript/api/excel/excel.chartaxis#ticklabelposition-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#tickLabelPosition:member">Excel.Interfaces.ChartAxisData.tickLabelPosition</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.tickLabelPosition](/javascript/api/excel/excel.interfaces.chartaxisdata#ticklabelposition-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member">Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#ticklabelposition-member)
+  \]
 
 isPreview: false
 isDeprecated: false

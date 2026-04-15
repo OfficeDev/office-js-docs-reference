@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableColumnData#filter:member">Excel.Interfaces.TableColumnData.filter</xref>
+  - \[
+  [Excel.Interfaces.TableColumnData.filter](/javascript/api/excel/excel.interfaces.tablecolumndata#filter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

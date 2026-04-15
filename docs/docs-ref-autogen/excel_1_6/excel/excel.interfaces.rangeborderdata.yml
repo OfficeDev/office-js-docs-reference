@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeBorderCollectionData#items:member">Excel.Interfaces.RangeBorderCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeBorderCollectionData.items](/javascript/api/excel/excel.interfaces.rangebordercollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items:member">Excel.Interfaces.RangeBorderCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeBorderCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rangebordercollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatData#borders:member">Excel.Interfaces.RangeFormatData.borders</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatData.borders](/javascript/api/excel/excel.interfaces.rangeformatdata#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

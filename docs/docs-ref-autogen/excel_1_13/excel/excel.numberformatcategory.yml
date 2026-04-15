@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeData#numberFormatCategories:member">Excel.Interfaces.RangeData.numberFormatCategories</xref>
+  - \[
+  [Excel.Interfaces.RangeData.numberFormatCategories](/javascript/api/excel/excel.interfaces.rangedata#numberformatcategories-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Range#numberFormatCategories:member">Excel.Range.numberFormatCategories</xref>
+  - \[
+  [Excel.Range.numberFormatCategories](/javascript/api/excel/excel.range#numberformatcategories-member)
+  \]
 
 isPreview: false
 isDeprecated: false

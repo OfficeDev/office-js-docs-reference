@@ -8,8 +8,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#bindings:member">Office.Document.bindings</xref>
+  - \[
+  [Office.Document.bindings](/javascript/api/office/office.document#bindings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

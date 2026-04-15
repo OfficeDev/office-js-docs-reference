@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member">Excel.Interfaces.TopBottomConditionalFormatData.rule</xref>
+  - \[
+  [Excel.Interfaces.TopBottomConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.topbottomconditionalformatdata#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#rule:member">Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule</xref>
+  - \[
+  [Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.topbottomconditionalformatupdatedata#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TopBottomConditionalFormat#rule:member">Excel.TopBottomConditionalFormat.rule</xref>
+  - \[
+  [Excel.TopBottomConditionalFormat.rule](/javascript/api/excel/excel.topbottomconditionalformat#rule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

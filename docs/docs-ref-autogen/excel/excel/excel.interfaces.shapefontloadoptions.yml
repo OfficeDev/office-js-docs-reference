@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextRangeLoadOptions#font:member">Excel.Interfaces.TextRangeLoadOptions.font</xref>
+  - \[
+  [Excel.Interfaces.TextRangeLoadOptions.font](/javascript/api/excel/excel.interfaces.textrangeloadoptions#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

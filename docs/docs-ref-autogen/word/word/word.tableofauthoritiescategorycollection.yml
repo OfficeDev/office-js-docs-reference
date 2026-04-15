@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#tableOfAuthoritiesCategories:member">Word.Document.tableOfAuthoritiesCategories</xref>
+  - \[
+  [Word.Document.tableOfAuthoritiesCategories](/javascript/api/word/word.document#tableofauthoritiescategories-member)
+  \]
 
 isPreview: false
 isDeprecated: false

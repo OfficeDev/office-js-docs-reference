@@ -15,10 +15,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Workbook#tables:member">Excel.Workbook.tables</xref>
+  - \[
+  [Excel.Workbook.tables](/javascript/api/excel/excel.workbook#tables-member) \]
 
-  - <xref
-  href="excel!Excel.Worksheet#tables:member">Excel.Worksheet.tables</xref>
+  - \[
+  [Excel.Worksheet.tables](/javascript/api/excel/excel.worksheet#tables-member)
+  \]
 
   #### Examples
 

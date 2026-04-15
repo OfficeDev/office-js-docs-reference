@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#checkboxContentControl:member">Word.Interfaces.ContentControlUpdateData.checkboxContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.checkboxContentControl](/javascript/api/word/word.interfaces.contentcontrolupdatedata#checkboxcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

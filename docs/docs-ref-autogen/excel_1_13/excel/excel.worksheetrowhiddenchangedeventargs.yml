@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onRowHiddenChanged:member">Excel.Worksheet.onRowHiddenChanged</xref>
+  - \[
+  [Excel.Worksheet.onRowHiddenChanged](/javascript/api/excel/excel.worksheet#onrowhiddenchanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onRowHiddenChanged:member">Excel.WorksheetCollection.onRowHiddenChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onRowHiddenChanged](/javascript/api/excel/excel.worksheetcollection#onrowhiddenchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

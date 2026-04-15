@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#leaderLines:member">Excel.ChartDataLabels.leaderLines</xref>
+  - \[
+  [Excel.ChartDataLabels.leaderLines](/javascript/api/excel/excel.chartdatalabels#leaderlines-member)
+  \]
 
   #### Examples
 

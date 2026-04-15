@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#freezePanes:member">Excel.Worksheet.freezePanes</xref>
+  - \[
+  [Excel.Worksheet.freezePanes](/javascript/api/excel/excel.worksheet#freezepanes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

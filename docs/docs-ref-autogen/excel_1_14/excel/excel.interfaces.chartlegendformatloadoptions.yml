@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendLoadOptions#format:member">Excel.Interfaces.ChartLegendLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendLoadOptions.format](/javascript/api/excel/excel.interfaces.chartlegendloadoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

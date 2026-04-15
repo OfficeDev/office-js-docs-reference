@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValue:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#cellvalue-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#cellValueOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#cellvalueornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValue:member">Excel.Interfaces.ConditionalFormatLoadOptions.cellValue</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.cellValue](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#cellvalue-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#cellValueOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#cellvalueornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

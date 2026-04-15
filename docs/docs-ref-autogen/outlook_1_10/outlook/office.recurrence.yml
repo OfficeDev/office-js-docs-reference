@@ -43,23 +43,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#recurrence:member">Office.AppointmentCompose.recurrence</xref>
+  - \[
+  [Office.AppointmentCompose.recurrence](/javascript/api/outlook/office.appointmentcompose#recurrence-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#recurrence:member">Office.AppointmentRead.recurrence</xref>
+  - \[
+  [Office.AppointmentRead.recurrence](/javascript/api/outlook/office.appointmentread#recurrence-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#recurrence:member">Office.MessageRead.recurrence</xref>
+  - \[
+  [Office.MessageRead.recurrence](/javascript/api/outlook/office.messageread#recurrence-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recurrence#getAsync:member(1)">Office.Recurrence.getAsync</xref>
+  - \[
+  [Office.Recurrence.getAsync](/javascript/api/outlook/office.recurrence#getasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recurrence#setAsync:member(1)">Office.Recurrence.setAsync</xref>
+  - \[
+  [Office.Recurrence.setAsync](/javascript/api/outlook/office.recurrence#setasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.RecurrenceChangedEventArgs#recurrence:member">Office.RecurrenceChangedEventArgs.recurrence</xref>
+  - \[
+  [Office.RecurrenceChangedEventArgs.recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#recurrence-member)
+  \]
 
 isPreview: false
 isDeprecated: false

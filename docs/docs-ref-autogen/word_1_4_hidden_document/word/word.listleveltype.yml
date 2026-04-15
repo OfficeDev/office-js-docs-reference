@@ -13,10 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ListData#levelTypes:member">Word.Interfaces.ListData.levelTypes</xref>
+  - \[
+  [Word.Interfaces.ListData.levelTypes](/javascript/api/word/word.interfaces.listdata#leveltypes-member)
+  \]
 
-  - <xref href="word!Word.List#levelTypes:member">Word.List.levelTypes</xref>
+  - \[ [Word.List.levelTypes](/javascript/api/word/word.list#leveltypes-member)
+  \]
 
   #### Examples
 

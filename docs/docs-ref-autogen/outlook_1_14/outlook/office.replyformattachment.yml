@@ -23,8 +23,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.ReplyFormData#attachments:member">Office.ReplyFormData.attachments</xref>
+  - \[
+  [Office.ReplyFormData.attachments](/javascript/api/outlook/office.replyformdata#attachments-member)
+  \]
 
   #### Examples
 

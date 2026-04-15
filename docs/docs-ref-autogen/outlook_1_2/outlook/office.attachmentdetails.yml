@@ -28,11 +28,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentRead#attachments:member">Office.AppointmentRead.attachments</xref>
+  - \[
+  [Office.AppointmentRead.attachments](/javascript/api/outlook/office.appointmentread#attachments-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#attachments:member">Office.MessageRead.attachments</xref>
+  - \[
+  [Office.MessageRead.attachments](/javascript/api/outlook/office.messageread#attachments-member)
+  \]
 
   #### Examples
 

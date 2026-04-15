@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member">Excel.Interfaces.CellValueConditionalFormatLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.CellValueConditionalFormatLoadOptions.format](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatloadoptions#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomConditionalFormatLoadOptions#format:member">Excel.Interfaces.CustomConditionalFormatLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.CustomConditionalFormatLoadOptions.format](/javascript/api/excel/excel.interfaces.customconditionalformatloadoptions#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member">Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatloadoptions#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextConditionalFormatLoadOptions#format:member">Excel.Interfaces.TextConditionalFormatLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.TextConditionalFormatLoadOptions.format](/javascript/api/excel/excel.interfaces.textconditionalformatloadoptions#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions#format:member">Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format](/javascript/api/excel/excel.interfaces.topbottomconditionalformatloadoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

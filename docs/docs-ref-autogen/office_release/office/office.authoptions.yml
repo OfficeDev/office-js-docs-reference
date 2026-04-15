@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Auth#getAccessToken:member(1)">Office.Auth.getAccessToken</xref>
+  - \[
+  [Office.Auth.getAccessToken](/javascript/api/office/office.auth#getaccesstoken-member)
+  \]
 
-  - <xref
-  href="office!Office.Auth#getAccessTokenAsync:member(1)">Office.Auth.getAccessTokenAsync</xref>
+  - \[
+  [Office.Auth.getAccessTokenAsync](/javascript/api/office/office.auth#getaccesstokenasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

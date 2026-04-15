@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DocumentTaskChange#type:member">Excel.DocumentTaskChange.type</xref>
+  - \[
+  [Excel.DocumentTaskChange.type](/javascript/api/excel/excel.documenttaskchange#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskChangeData#type:member">Excel.Interfaces.DocumentTaskChangeData.type</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskChangeData.type](/javascript/api/excel/excel.interfaces.documenttaskchangedata#type-member)
+  \]
 
 isPreview: true
 isDeprecated: false

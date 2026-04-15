@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#changeType:member">Excel.TableChangedEventArgs.changeType</xref>
+  - \[
+  [Excel.TableChangedEventArgs.changeType](/javascript/api/excel/excel.tablechangedeventargs#changetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#changeType:member">Excel.WorksheetChangedEventArgs.changeType</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.changeType](/javascript/api/excel/excel.worksheetchangedeventargs#changetype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

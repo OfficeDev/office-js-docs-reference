@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.HeadingStyleCollection#items:member">Word.HeadingStyleCollection.items</xref>
+  - \[
+  [Word.HeadingStyleCollection.items](/javascript/api/word/word.headingstylecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

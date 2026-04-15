@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#revisionsBalloonWidthType:member">Word.Interfaces.ViewData.revisionsBalloonWidthType</xref>
+  - \[
+  [Word.Interfaces.ViewData.revisionsBalloonWidthType](/javascript/api/word/word.interfaces.viewdata#revisionsballoonwidthtype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#revisionsBalloonWidthType:member">Word.Interfaces.ViewUpdateData.revisionsBalloonWidthType</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.revisionsBalloonWidthType](/javascript/api/word/word.interfaces.viewupdatedata#revisionsballoonwidthtype-member)
+  \]
 
-  - <xref
-  href="word!Word.View#revisionsBalloonWidthType:member">Word.View.revisionsBalloonWidthType</xref>
+  - \[
+  [Word.View.revisionsBalloonWidthType](/javascript/api/word/word.view#revisionsballoonwidthtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

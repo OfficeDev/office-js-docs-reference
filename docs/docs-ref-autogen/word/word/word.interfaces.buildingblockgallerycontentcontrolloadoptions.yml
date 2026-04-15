@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#buildingBlockGalleryContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.buildingBlockGalleryContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.buildingBlockGalleryContentControl](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#buildingblockgallerycontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#buildingBlockGalleryContentControl:member">Word.Interfaces.ContentControlLoadOptions.buildingBlockGalleryContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.buildingBlockGalleryContentControl](/javascript/api/word/word.interfaces.contentcontrolloadoptions#buildingblockgallerycontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

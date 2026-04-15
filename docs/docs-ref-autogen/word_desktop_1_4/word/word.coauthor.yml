@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CoauthorCollection#items:member">Word.CoauthorCollection.items</xref>
+  - \[
+  [Word.CoauthorCollection.items](/javascript/api/word/word.coauthorcollection#items-member)
+  \]
 
-  - <xref href="word!Word.Coauthoring#me:member">Word.Coauthoring.me</xref>
+  - \[ [Word.Coauthoring.me](/javascript/api/word/word.coauthoring#me-member) \]
 
-  - <xref
-  href="word!Word.CoauthoringLock#owner:member">Word.CoauthoringLock.owner</xref>
+  - \[
+  [Word.CoauthoringLock.owner](/javascript/api/word/word.coauthoringlock#owner-member)
+  \]
 
 isPreview: false
 isDeprecated: false

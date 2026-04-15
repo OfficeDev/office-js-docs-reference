@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.NoteTagData#status:member">OneNote.Interfaces.NoteTagData.status</xref>
+  - \[
+  [OneNote.Interfaces.NoteTagData.status](/javascript/api/onenote/onenote.interfaces.notetagdata#status-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.NoteTag#status:member">OneNote.NoteTag.status</xref>
+  - \[
+  [OneNote.NoteTag.status](/javascript/api/onenote/onenote.notetag#status-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,29 +15,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAreaFormat#font:member">Excel.ChartAreaFormat.font</xref>
+  - \[
+  [Excel.ChartAreaFormat.font](/javascript/api/excel/excel.chartareaformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxisFormat#font:member">Excel.ChartAxisFormat.font</xref>
+  - \[
+  [Excel.ChartAxisFormat.font](/javascript/api/excel/excel.chartaxisformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxisTitleFormat#font:member">Excel.ChartAxisTitleFormat.font</xref>
+  - \[
+  [Excel.ChartAxisTitleFormat.font](/javascript/api/excel/excel.chartaxistitleformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabelFormat#font:member">Excel.ChartDataLabelFormat.font</xref>
+  - \[
+  [Excel.ChartDataLabelFormat.font](/javascript/api/excel/excel.chartdatalabelformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartFormatString#font:member">Excel.ChartFormatString.font</xref>
+  - \[
+  [Excel.ChartFormatString.font](/javascript/api/excel/excel.chartformatstring#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegendFormat#font:member">Excel.ChartLegendFormat.font</xref>
+  - \[
+  [Excel.ChartLegendFormat.font](/javascript/api/excel/excel.chartlegendformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitleFormat#font:member">Excel.ChartTitleFormat.font</xref>
+  - \[
+  [Excel.ChartTitleFormat.font](/javascript/api/excel/excel.charttitleformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineLabelFormat#font:member">Excel.ChartTrendlineLabelFormat.font</xref>
+  - \[
+  [Excel.ChartTrendlineLabelFormat.font](/javascript/api/excel/excel.charttrendlinelabelformat#font-member)
+  \]
 
   #### Examples
 

@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Settings#saveAsync:member(1)">Office.Settings.saveAsync</xref>
+  - \[
+  [Office.Settings.saveAsync](/javascript/api/office/office.settings#saveasync-member)
+  \]
 
   #### Examples
 

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleCollectionLoadOptions#shading:member">Word.Interfaces.StyleCollectionLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.StyleCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.stylecollectionloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleLoadOptions#shading:member">Word.Interfaces.StyleLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.StyleLoadOptions.shading](/javascript/api/word/word.interfaces.styleloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableStyleLoadOptions#shading:member">Word.Interfaces.TableStyleLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.TableStyleLoadOptions.shading](/javascript/api/word/word.interfaces.tablestyleloadoptions#shading-member)
+  \]
 
 isPreview: false
 isDeprecated: false

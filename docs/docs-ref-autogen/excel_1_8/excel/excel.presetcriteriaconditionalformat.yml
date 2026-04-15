@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#preset:member">Excel.ConditionalFormat.preset</xref>
+  - \[
+  [Excel.ConditionalFormat.preset](/javascript/api/excel/excel.conditionalformat#preset-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#presetOrNullObject:member">Excel.ConditionalFormat.presetOrNullObject</xref>
+  - \[
+  [Excel.ConditionalFormat.presetOrNullObject](/javascript/api/excel/excel.conditionalformat#presetornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

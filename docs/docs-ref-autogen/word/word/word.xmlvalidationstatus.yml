@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeData#validationStatus:member">Word.Interfaces.XmlNodeData.validationStatus</xref>
+  - \[
+  [Word.Interfaces.XmlNodeData.validationStatus](/javascript/api/word/word.interfaces.xmlnodedata#validationstatus-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#validationStatus:member">Word.XmlNode.validationStatus</xref>
+  - \[
+  [Word.XmlNode.validationStatus](/javascript/api/word/word.xmlnode#validationstatus-member)
+  \]
 
 isPreview: false
 isDeprecated: false

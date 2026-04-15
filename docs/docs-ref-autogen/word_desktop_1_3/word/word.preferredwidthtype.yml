@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TableColumnData#preferredWidthType:member">Word.Interfaces.TableColumnData.preferredWidthType</xref>
+  - \[
+  [Word.Interfaces.TableColumnData.preferredWidthType](/javascript/api/word/word.interfaces.tablecolumndata#preferredwidthtype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableColumnUpdateData#preferredWidthType:member">Word.Interfaces.TableColumnUpdateData.preferredWidthType</xref>
+  - \[
+  [Word.Interfaces.TableColumnUpdateData.preferredWidthType](/javascript/api/word/word.interfaces.tablecolumnupdatedata#preferredwidthtype-member)
+  \]
 
-  - <xref
-  href="word!Word.TableColumn#preferredWidthType:member">Word.TableColumn.preferredWidthType</xref>
+  - \[
+  [Word.TableColumn.preferredWidthType](/javascript/api/word/word.tablecolumn#preferredwidthtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -8,23 +8,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Interfaces.PageData#allShapes:member">Visio.Interfaces.PageData.allShapes</xref>
+  - \[
+  [Visio.Interfaces.PageData.allShapes](/javascript/api/visio/visio.interfaces.pagedata#allshapes-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.PageData#shapes:member">Visio.Interfaces.PageData.shapes</xref>
+  - \[
+  [Visio.Interfaces.PageData.shapes](/javascript/api/visio/visio.interfaces.pagedata#shapes-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.SelectionData#shapes:member">Visio.Interfaces.SelectionData.shapes</xref>
+  - \[
+  [Visio.Interfaces.SelectionData.shapes](/javascript/api/visio/visio.interfaces.selectiondata#shapes-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.ShapeCollectionData#items:member">Visio.Interfaces.ShapeCollectionData.items</xref>
+  - \[
+  [Visio.Interfaces.ShapeCollectionData.items](/javascript/api/visio/visio.interfaces.shapecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member">Visio.Interfaces.ShapeCollectionUpdateData.items</xref>
+  - \[
+  [Visio.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/visio/visio.interfaces.shapecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="visio!Visio.Interfaces.ShapeData#subShapes:member">Visio.Interfaces.ShapeData.subShapes</xref>
+  - \[
+  [Visio.Interfaces.ShapeData.subShapes](/javascript/api/visio/visio.interfaces.shapedata#subshapes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

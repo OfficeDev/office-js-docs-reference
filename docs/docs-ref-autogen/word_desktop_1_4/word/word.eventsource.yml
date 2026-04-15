@@ -15,32 +15,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControlAddedEventArgs#source:member">Word.ContentControlAddedEventArgs.source</xref>
+  - \[
+  [Word.ContentControlAddedEventArgs.source](/javascript/api/word/word.contentcontroladdedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlDataChangedEventArgs#source:member">Word.ContentControlDataChangedEventArgs.source</xref>
+  - \[
+  [Word.ContentControlDataChangedEventArgs.source](/javascript/api/word/word.contentcontroldatachangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlDeletedEventArgs#source:member">Word.ContentControlDeletedEventArgs.source</xref>
+  - \[
+  [Word.ContentControlDeletedEventArgs.source](/javascript/api/word/word.contentcontroldeletedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlEnteredEventArgs#source:member">Word.ContentControlEnteredEventArgs.source</xref>
+  - \[
+  [Word.ContentControlEnteredEventArgs.source](/javascript/api/word/word.contentcontrolenteredeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlExitedEventArgs#source:member">Word.ContentControlExitedEventArgs.source</xref>
+  - \[
+  [Word.ContentControlExitedEventArgs.source](/javascript/api/word/word.contentcontrolexitedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlSelectionChangedEventArgs#source:member">Word.ContentControlSelectionChangedEventArgs.source</xref>
+  - \[
+  [Word.ContentControlSelectionChangedEventArgs.source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphAddedEventArgs#source:member">Word.ParagraphAddedEventArgs.source</xref>
+  - \[
+  [Word.ParagraphAddedEventArgs.source](/javascript/api/word/word.paragraphaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphChangedEventArgs#source:member">Word.ParagraphChangedEventArgs.source</xref>
+  - \[
+  [Word.ParagraphChangedEventArgs.source](/javascript/api/word/word.paragraphchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphDeletedEventArgs#source:member">Word.ParagraphDeletedEventArgs.source</xref>
+  - \[
+  [Word.ParagraphDeletedEventArgs.source](/javascript/api/word/word.paragraphdeletedeventargs#source-member)
+  \]
 
   #### Examples
 

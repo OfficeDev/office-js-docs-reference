@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutData#printErrors:member">Excel.Interfaces.PageLayoutData.printErrors</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutData.printErrors](/javascript/api/excel/excel.interfaces.pagelayoutdata#printerrors-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member">Excel.Interfaces.PageLayoutUpdateData.printErrors</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutUpdateData.printErrors](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#printerrors-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageLayout#printErrors:member">Excel.PageLayout.printErrors</xref>
+  - \[
+  [Excel.PageLayout.printErrors](/javascript/api/excel/excel.pagelayout#printerrors-member)
+  \]
 
 isPreview: false
 isDeprecated: false

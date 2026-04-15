@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutData#headersFooters:member">Excel.Interfaces.PageLayoutData.headersFooters</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutData.headersFooters](/javascript/api/excel/excel.interfaces.pagelayoutdata#headersfooters-member)
+  \]
 
 isPreview: false
 isDeprecated: false

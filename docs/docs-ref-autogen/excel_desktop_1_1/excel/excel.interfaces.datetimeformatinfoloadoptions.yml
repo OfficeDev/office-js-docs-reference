@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CultureInfoLoadOptions#datetimeFormat:member">Excel.Interfaces.CultureInfoLoadOptions.datetimeFormat</xref>
+  - \[
+  [Excel.Interfaces.CultureInfoLoadOptions.datetimeFormat](/javascript/api/excel/excel.interfaces.cultureinfoloadoptions#datetimeformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

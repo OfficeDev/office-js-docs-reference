@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member">Excel.Interfaces.ChartAxisLoadOptions.majorGridlines</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisLoadOptions.majorGridlines](/javascript/api/excel/excel.interfaces.chartaxisloadoptions#majorgridlines-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member">Excel.Interfaces.ChartAxisLoadOptions.minorGridlines</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisLoadOptions.minorGridlines](/javascript/api/excel/excel.interfaces.chartaxisloadoptions#minorgridlines-member)
+  \]
 
 isPreview: false
 isDeprecated: false

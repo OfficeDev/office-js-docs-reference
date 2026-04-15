@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat2Options#optimizeFor:member">Word.DocumentExportAsFixedFormat2Options.optimizeFor</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat2Options.optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#optimizefor-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat3Options#optimizeFor:member">Word.DocumentExportAsFixedFormat3Options.optimizeFor</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat3Options.optimizeFor](/javascript/api/word/word.documentexportasfixedformat3options#optimizefor-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormatOptions#optimizeFor:member">Word.DocumentExportAsFixedFormatOptions.optimizeFor</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormatOptions.optimizeFor](/javascript/api/word/word.documentexportasfixedformatoptions#optimizefor-member)
+  \]
 
   #### Examples
 

@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#borders:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.borders</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellCollectionLoadOptions.borders](/javascript/api/powerpoint/powerpoint.interfaces.tablecellcollectionloadoptions#borders-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#borders:member">PowerPoint.Interfaces.TableCellLoadOptions.borders</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellLoadOptions.borders](/javascript/api/powerpoint/powerpoint.interfaces.tablecellloadoptions#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

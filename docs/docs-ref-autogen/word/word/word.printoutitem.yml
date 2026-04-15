@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentPrintOutOptions#item:member">Word.DocumentPrintOutOptions.item</xref>
+  - \[
+  [Word.DocumentPrintOutOptions.item](/javascript/api/word/word.documentprintoutoptions#item-member)
+  \]
 
 isPreview: false
 isDeprecated: false

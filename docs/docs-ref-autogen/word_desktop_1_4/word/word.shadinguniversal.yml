@@ -14,28 +14,34 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ConditionalStyle#shading:member">Word.ConditionalStyle.shading</xref>
+  - \[
+  [Word.ConditionalStyle.shading](/javascript/api/word/word.conditionalstyle#shading-member)
+  \]
 
-  - <xref href="word!Word.Frame#shading:member">Word.Frame.shading</xref>
+  - \[ [Word.Frame.shading](/javascript/api/word/word.frame#shading-member) \]
 
-  - <xref
-  href="word!Word.Paragraph#shading:member">Word.Paragraph.shading</xref>
+  - \[
+  [Word.Paragraph.shading](/javascript/api/word/word.paragraph#shading-member)
+  \]
 
-  - <xref href="word!Word.Range#shading:member">Word.Range.shading</xref>
+  - \[ [Word.Range.shading](/javascript/api/word/word.range#shading-member) \]
 
-  - <xref
-  href="word!Word.Selection#shading:member">Word.Selection.shading</xref>
+  - \[
+  [Word.Selection.shading](/javascript/api/word/word.selection#shading-member)
+  \]
 
-  - <xref href="word!Word.Table#shading:member">Word.Table.shading</xref>
+  - \[ [Word.Table.shading](/javascript/api/word/word.table#shading-member) \]
 
-  - <xref
-  href="word!Word.TableCell#shading:member">Word.TableCell.shading</xref>
+  - \[
+  [Word.TableCell.shading](/javascript/api/word/word.tablecell#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.TableColumn#shading:member">Word.TableColumn.shading</xref>
+  - \[
+  [Word.TableColumn.shading](/javascript/api/word/word.tablecolumn#shading-member)
+  \]
 
-  - <xref href="word!Word.TableRow#shading:member">Word.TableRow.shading</xref>
+  - \[
+  [Word.TableRow.shading](/javascript/api/word/word.tablerow#shading-member) \]
 
 isPreview: false
 isDeprecated: false

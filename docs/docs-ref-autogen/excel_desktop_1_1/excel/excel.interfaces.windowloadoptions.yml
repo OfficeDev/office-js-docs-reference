@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationLoadOptions#activeWindow:member">Excel.Interfaces.ApplicationLoadOptions.activeWindow</xref>
+  - \[
+  [Excel.Interfaces.ApplicationLoadOptions.activeWindow](/javascript/api/excel/excel.interfaces.applicationloadoptions#activewindow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

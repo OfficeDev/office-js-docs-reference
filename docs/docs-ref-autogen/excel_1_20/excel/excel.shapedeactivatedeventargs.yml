@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Shape#onDeactivated:member">Excel.Shape.onDeactivated</xref>
+  - \[
+  [Excel.Shape.onDeactivated](/javascript/api/excel/excel.shape#ondeactivated-member)
+  \]
 
 isPreview: false
 isDeprecated: false

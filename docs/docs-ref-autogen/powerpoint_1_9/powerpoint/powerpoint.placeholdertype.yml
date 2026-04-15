@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#type:member">PowerPoint.Interfaces.PlaceholderFormatData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.PlaceholderFormatData.type](/javascript/api/powerpoint/powerpoint.interfaces.placeholderformatdata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.PlaceholderFormat#type:member">PowerPoint.PlaceholderFormat.type</xref>
+  - \[
+  [PowerPoint.PlaceholderFormat.type](/javascript/api/powerpoint/powerpoint.placeholderformat#type-member)
+  \]
 
   #### Examples
 

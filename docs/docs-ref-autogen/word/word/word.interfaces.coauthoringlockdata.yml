@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CoauthorData#locks:member">Word.Interfaces.CoauthorData.locks</xref>
+  - \[
+  [Word.Interfaces.CoauthorData.locks](/javascript/api/word/word.interfaces.coauthordata#locks-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringData#locks:member">Word.Interfaces.CoauthoringData.locks</xref>
+  - \[
+  [Word.Interfaces.CoauthoringData.locks](/javascript/api/word/word.interfaces.coauthoringdata#locks-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockCollectionData#items:member">Word.Interfaces.CoauthoringLockCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockCollectionData.items](/javascript/api/word/word.interfaces.coauthoringlockcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockCollectionUpdateData#items:member">Word.Interfaces.CoauthoringLockCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthoringlockcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

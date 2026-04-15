@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#pageSetup:member">Word.Interfaces.DocumentData.pageSetup</xref>
+  - \[
+  [Word.Interfaces.DocumentData.pageSetup](/javascript/api/word/word.interfaces.documentdata#pagesetup-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionData#pageSetup:member">Word.Interfaces.SectionData.pageSetup</xref>
+  - \[
+  [Word.Interfaces.SectionData.pageSetup](/javascript/api/word/word.interfaces.sectiondata#pagesetup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

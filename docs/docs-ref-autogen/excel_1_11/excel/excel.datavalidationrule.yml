@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataValidation#rule:member">Excel.DataValidation.rule</xref>
+  - \[
+  [Excel.DataValidation.rule](/javascript/api/excel/excel.datavalidation#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataValidationData#rule:member">Excel.Interfaces.DataValidationData.rule</xref>
+  - \[
+  [Excel.Interfaces.DataValidationData.rule](/javascript/api/excel/excel.interfaces.datavalidationdata#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataValidationUpdateData#rule:member">Excel.Interfaces.DataValidationUpdateData.rule</xref>
+  - \[
+  [Excel.Interfaces.DataValidationUpdateData.rule](/javascript/api/excel/excel.interfaces.datavalidationupdatedata#rule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

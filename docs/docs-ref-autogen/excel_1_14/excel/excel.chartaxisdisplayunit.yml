@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#displayUnit:member">Excel.ChartAxis.displayUnit</xref>
+  - \[
+  [Excel.ChartAxis.displayUnit](/javascript/api/excel/excel.chartaxis#displayunit-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#displayUnit:member">Excel.Interfaces.ChartAxisData.displayUnit</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.displayUnit](/javascript/api/excel/excel.interfaces.chartaxisdata#displayunit-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#displayUnit:member">Excel.Interfaces.ChartAxisUpdateData.displayUnit</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.displayUnit](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#displayunit-member)
+  \]
 
 isPreview: false
 isDeprecated: false

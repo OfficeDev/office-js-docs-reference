@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onNameChanged:member">Excel.Worksheet.onNameChanged</xref>
+  - \[
+  [Excel.Worksheet.onNameChanged](/javascript/api/excel/excel.worksheet#onnamechanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onNameChanged:member">Excel.WorksheetCollection.onNameChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onNameChanged](/javascript/api/excel/excel.worksheetcollection#onnamechanged-member)
+  \]
 
   #### Examples
 

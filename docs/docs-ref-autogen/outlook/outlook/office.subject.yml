@@ -24,14 +24,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#subject:member">Office.AppointmentCompose.subject</xref>
+  - \[
+  [Office.AppointmentCompose.subject](/javascript/api/outlook/office.appointmentcompose#subject-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#subject:member">Office.LoadedMessageCompose.subject</xref>
+  - \[
+  [Office.LoadedMessageCompose.subject](/javascript/api/outlook/office.loadedmessagecompose#subject-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#subject:member">Office.MessageCompose.subject</xref>
+  - \[
+  [Office.MessageCompose.subject](/javascript/api/outlook/office.messagecompose#subject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

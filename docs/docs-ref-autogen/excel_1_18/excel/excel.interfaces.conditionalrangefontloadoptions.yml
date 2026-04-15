@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#font:member">Excel.Interfaces.ConditionalRangeFormatLoadOptions.font</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeFormatLoadOptions.font](/javascript/api/excel/excel.interfaces.conditionalrangeformatloadoptions#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

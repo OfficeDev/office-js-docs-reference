@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.GoToByIdOptions#selectionMode:member">Office.GoToByIdOptions.selectionMode</xref>
+  - \[
+  [Office.GoToByIdOptions.selectionMode](/javascript/api/office/office.gotobyidoptions#selectionmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

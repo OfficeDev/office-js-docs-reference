@@ -8,8 +8,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!OfficeExtension.ClientRequestContext#debugInfo:member">OfficeExtension.ClientRequestContext.debugInfo</xref>
+  - \[
+  [OfficeExtension.ClientRequestContext.debugInfo](/javascript/api/office/officeextension.clientrequestcontext#debuginfo-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Font#fill:member">Word.Font.fill</xref>
+  - \[ [Word.Font.fill](/javascript/api/word/word.font#fill-member) \]
 
 isPreview: false
 isDeprecated: false

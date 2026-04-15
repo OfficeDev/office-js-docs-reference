@@ -8,20 +8,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#tables:member">Word.Interfaces.BodyData.tables</xref>
+  - \[
+  [Word.Interfaces.BodyData.tables](/javascript/api/word/word.interfaces.bodydata#tables-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#tables:member">Word.Interfaces.ContentControlData.tables</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.tables](/javascript/api/word/word.interfaces.contentcontroldata#tables-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionData#items:member">Word.Interfaces.TableCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.TableCollectionData.items](/javascript/api/word/word.interfaces.tablecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionUpdateData#items:member">Word.Interfaces.TableCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.TableCollectionUpdateData.items](/javascript/api/word/word.interfaces.tablecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableData#tables:member">Word.Interfaces.TableData.tables</xref>
+  - \[
+  [Word.Interfaces.TableData.tables](/javascript/api/word/word.interfaces.tabledata#tables-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -25,11 +25,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#delayDeliveryTime:member">Office.LoadedMessageCompose.delayDeliveryTime</xref>
+  - \[
+  [Office.LoadedMessageCompose.delayDeliveryTime](/javascript/api/outlook/office.loadedmessagecompose#delaydeliverytime-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#delayDeliveryTime:member">Office.MessageCompose.delayDeliveryTime</xref>
+  - \[
+  [Office.MessageCompose.delayDeliveryTime](/javascript/api/outlook/office.messagecompose#delaydeliverytime-member)
+  \]
 
 isPreview: false
 isDeprecated: false

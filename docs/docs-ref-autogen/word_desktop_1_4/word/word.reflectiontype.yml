@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ReflectionFormatData#type:member">Word.Interfaces.ReflectionFormatData.type</xref>
+  - \[
+  [Word.Interfaces.ReflectionFormatData.type](/javascript/api/word/word.interfaces.reflectionformatdata#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ReflectionFormatUpdateData#type:member">Word.Interfaces.ReflectionFormatUpdateData.type</xref>
+  - \[
+  [Word.Interfaces.ReflectionFormatUpdateData.type](/javascript/api/word/word.interfaces.reflectionformatupdatedata#type-member)
+  \]
 
-  - <xref
-  href="word!Word.ReflectionFormat#type:member">Word.ReflectionFormat.type</xref>
+  - \[
+  [Word.ReflectionFormat.type](/javascript/api/word/word.reflectionformat#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

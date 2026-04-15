@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.PointCollection#items:member">OneNote.PointCollection.items</xref>
+  - \[
+  [OneNote.PointCollection.items](/javascript/api/onenote/onenote.pointcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

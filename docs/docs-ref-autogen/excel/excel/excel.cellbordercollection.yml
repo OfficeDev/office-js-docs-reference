@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFormat#borders:member">Excel.CellPropertiesFormat.borders</xref>
+  - \[
+  [Excel.CellPropertiesFormat.borders](/javascript/api/excel/excel.cellpropertiesformat#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

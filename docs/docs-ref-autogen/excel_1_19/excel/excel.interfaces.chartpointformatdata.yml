@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPointData#format:member">Excel.Interfaces.ChartPointData.format</xref>
+  - \[
+  [Excel.Interfaces.ChartPointData.format](/javascript/api/excel/excel.interfaces.chartpointdata#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

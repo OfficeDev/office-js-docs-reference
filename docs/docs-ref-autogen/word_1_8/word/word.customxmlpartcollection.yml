@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#customXmlParts:member">Word.Document.customXmlParts</xref>
+  - \[
+  [Word.Document.customXmlParts](/javascript/api/word/word.document#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

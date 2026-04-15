@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#queries:member">Excel.Workbook.queries</xref>
+  - \[
+  [Excel.Workbook.queries](/javascript/api/excel/excel.workbook#queries-member)
+  \]
 
 isPreview: false
 isDeprecated: false

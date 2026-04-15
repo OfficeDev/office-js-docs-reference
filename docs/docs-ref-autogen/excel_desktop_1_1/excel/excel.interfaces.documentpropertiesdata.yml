@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#properties:member">Excel.Interfaces.WorkbookData.properties</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.properties](/javascript/api/excel/excel.interfaces.workbookdata#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

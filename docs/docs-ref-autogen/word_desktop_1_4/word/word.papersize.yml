@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupData#paperSize:member">Word.Interfaces.PageSetupData.paperSize</xref>
+  - \[
+  [Word.Interfaces.PageSetupData.paperSize](/javascript/api/word/word.interfaces.pagesetupdata#papersize-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#paperSize:member">Word.Interfaces.PageSetupUpdateData.paperSize</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.paperSize](/javascript/api/word/word.interfaces.pagesetupupdatedata#papersize-member)
+  \]
 
-  - <xref
-  href="word!Word.PageSetup#paperSize:member">Word.PageSetup.paperSize</xref>
+  - \[
+  [Word.PageSetup.paperSize](/javascript/api/word/word.pagesetup#papersize-member)
+  \]
 
 isPreview: false
 isDeprecated: false

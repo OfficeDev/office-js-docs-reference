@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#parentSection:member">Word.Body.parentSection</xref>
+  - \[
+  [Word.Body.parentSection](/javascript/api/word/word.body#parentsection-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#parentSectionOrNullObject:member">Word.Body.parentSectionOrNullObject</xref>
+  - \[
+  [Word.Body.parentSectionOrNullObject](/javascript/api/word/word.body#parentsectionornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.SectionCollection#items:member">Word.SectionCollection.items</xref>
+  - \[
+  [Word.SectionCollection.items](/javascript/api/word/word.sectioncollection#items-member)
+  \]
 
   #### Examples
 

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontData#glow:member">Word.Interfaces.FontData.glow</xref>
+  - \[
+  [Word.Interfaces.FontData.glow](/javascript/api/word/word.interfaces.fontdata#glow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.InlinePictureCollection#items:member">Word.InlinePictureCollection.items</xref>
+  - \[
+  [Word.InlinePictureCollection.items](/javascript/api/word/word.inlinepicturecollection#items-member)
+  \]
 
   #### Examples
 

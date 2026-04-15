@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeData#placement:member">Excel.Interfaces.ShapeData.placement</xref>
+  - \[
+  [Excel.Interfaces.ShapeData.placement](/javascript/api/excel/excel.interfaces.shapedata#placement-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeUpdateData#placement:member">Excel.Interfaces.ShapeUpdateData.placement</xref>
+  - \[
+  [Excel.Interfaces.ShapeUpdateData.placement](/javascript/api/excel/excel.interfaces.shapeupdatedata#placement-member)
+  \]
 
-  - <xref href="excel!Excel.Shape#placement:member">Excel.Shape.placement</xref>
+  - \[
+  [Excel.Shape.placement](/javascript/api/excel/excel.shape#placement-member) \]
 
 isPreview: false
 isDeprecated: false

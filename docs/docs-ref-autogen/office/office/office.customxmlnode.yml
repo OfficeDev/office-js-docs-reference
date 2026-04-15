@@ -11,26 +11,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.CustomXmlNode#getNodesAsync:member(1)">Office.CustomXmlNode.getNodesAsync</xref>
+  - \[
+  [Office.CustomXmlNode.getNodesAsync](/javascript/api/office/office.customxmlnode#getnodesasync-member)
+  \]
 
-  - <xref
-  href="office!Office.CustomXmlPart#getNodesAsync:member(1)">Office.CustomXmlPart.getNodesAsync</xref>
+  - \[
+  [Office.CustomXmlPart.getNodesAsync](/javascript/api/office/office.customxmlpart#getnodesasync-member)
+  \]
 
-  - <xref
-  href="office!Office.NodeDeletedEventArgs#oldNextSibling:member">Office.NodeDeletedEventArgs.oldNextSibling</xref>
+  - \[
+  [Office.NodeDeletedEventArgs.oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#oldnextsibling-member)
+  \]
 
-  - <xref
-  href="office!Office.NodeDeletedEventArgs#oldNode:member">Office.NodeDeletedEventArgs.oldNode</xref>
+  - \[
+  [Office.NodeDeletedEventArgs.oldNode](/javascript/api/office/office.nodedeletedeventargs#oldnode-member)
+  \]
 
-  - <xref
-  href="office!Office.NodeInsertedEventArgs#newNode:member">Office.NodeInsertedEventArgs.newNode</xref>
+  - \[
+  [Office.NodeInsertedEventArgs.newNode](/javascript/api/office/office.nodeinsertedeventargs#newnode-member)
+  \]
 
-  - <xref
-  href="office!Office.NodeReplacedEventArgs#newNode:member">Office.NodeReplacedEventArgs.newNode</xref>
+  - \[
+  [Office.NodeReplacedEventArgs.newNode](/javascript/api/office/office.nodereplacedeventargs#newnode-member)
+  \]
 
-  - <xref
-  href="office!Office.NodeReplacedEventArgs#oldNode:member">Office.NodeReplacedEventArgs.oldNode</xref>
+  - \[
+  [Office.NodeReplacedEventArgs.oldNode](/javascript/api/office/office.nodereplacedeventargs#oldnode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

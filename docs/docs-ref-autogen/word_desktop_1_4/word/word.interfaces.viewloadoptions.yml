@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WindowCollectionLoadOptions#view:member">Word.Interfaces.WindowCollectionLoadOptions.view</xref>
+  - \[
+  [Word.Interfaces.WindowCollectionLoadOptions.view](/javascript/api/word/word.interfaces.windowcollectionloadoptions#view-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowLoadOptions#view:member">Word.Interfaces.WindowLoadOptions.view</xref>
+  - \[
+  [Word.Interfaces.WindowLoadOptions.view](/javascript/api/word/word.interfaces.windowloadoptions#view-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.AnnotationSet#critiques:member">Word.AnnotationSet.critiques</xref>
+  - \[
+  [Word.AnnotationSet.critiques](/javascript/api/word/word.annotationset#critiques-member)
+  \]
 
-  - <xref
-  href="word!Word.CritiqueAnnotation#critique:member">Word.CritiqueAnnotation.critique</xref>
+  - \[
+  [Word.CritiqueAnnotation.critique](/javascript/api/word/word.critiqueannotation#critique-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CritiqueAnnotationData#critique:member">Word.Interfaces.CritiqueAnnotationData.critique</xref>
+  - \[
+  [Word.Interfaces.CritiqueAnnotationData.critique](/javascript/api/word/word.interfaces.critiqueannotationdata#critique-member)
+  \]
 
   #### Examples
 

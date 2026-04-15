@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member">Excel.Interfaces.SlicerUpdateData.worksheet</xref>
+  - \[
+  [Excel.Interfaces.SlicerUpdateData.worksheet](/javascript/api/excel/excel.interfaces.slicerupdatedata#worksheet-member)
+  \]
 
 isPreview: false
 isDeprecated: false

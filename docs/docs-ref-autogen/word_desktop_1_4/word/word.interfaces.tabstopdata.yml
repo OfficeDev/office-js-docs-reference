@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TabStopCollectionData#items:member">Word.Interfaces.TabStopCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.TabStopCollectionData.items](/javascript/api/word/word.interfaces.tabstopcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TabStopCollectionUpdateData#items:member">Word.Interfaces.TabStopCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.TabStopCollectionUpdateData.items](/javascript/api/word/word.interfaces.tabstopcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

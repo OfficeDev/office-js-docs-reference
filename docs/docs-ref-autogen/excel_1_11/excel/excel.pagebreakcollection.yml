@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#horizontalPageBreaks:member">Excel.Worksheet.horizontalPageBreaks</xref>
+  - \[
+  [Excel.Worksheet.horizontalPageBreaks](/javascript/api/excel/excel.worksheet#horizontalpagebreaks-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Worksheet#verticalPageBreaks:member">Excel.Worksheet.verticalPageBreaks</xref>
+  - \[
+  [Excel.Worksheet.verticalPageBreaks](/javascript/api/excel/excel.worksheet#verticalpagebreaks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

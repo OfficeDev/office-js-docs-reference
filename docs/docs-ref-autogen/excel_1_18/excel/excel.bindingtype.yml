@@ -13,10 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Binding#type:member">Excel.Binding.type</xref>
+  - \[ [Excel.Binding.type](/javascript/api/excel/excel.binding#type-member) \]
 
-  - <xref
-  href="excel!Excel.Interfaces.BindingData#type:member">Excel.Interfaces.BindingData.type</xref>
+  - \[
+  [Excel.Interfaces.BindingData.type](/javascript/api/excel/excel.interfaces.bindingdata#type-member)
+  \]
 
   #### Examples
 

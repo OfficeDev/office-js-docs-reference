@@ -11,11 +11,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Body#prependAsync:member(1)">Office.Body.prependAsync</xref>
+  - \[
+  [Office.Body.prependAsync](/javascript/api/outlook/office.body#prependasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Body#setSelectedDataAsync:member(1)">Office.Body.setSelectedDataAsync</xref>
+  - \[
+  [Office.Body.setSelectedDataAsync](/javascript/api/outlook/office.body#setselecteddataasync-member)
+  \]
 
   #### Examples
 

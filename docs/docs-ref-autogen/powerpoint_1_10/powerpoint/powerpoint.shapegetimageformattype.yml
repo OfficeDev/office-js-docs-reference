@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeGetImageOptions#format:member">PowerPoint.ShapeGetImageOptions.format</xref>
+  - \[
+  [PowerPoint.ShapeGetImageOptions.format](/javascript/api/powerpoint/powerpoint.shapegetimageoptions#format-member)
+  \]
 
   #### Examples
 

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasLoadOptions#format:member">Excel.Interfaces.RangeAreasLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasLoadOptions.format](/javascript/api/excel/excel.interfaces.rangeareasloadoptions#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeCollectionLoadOptions#format:member">Excel.Interfaces.RangeCollectionLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.RangeCollectionLoadOptions.format](/javascript/api/excel/excel.interfaces.rangecollectionloadoptions#format-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeLoadOptions#format:member">Excel.Interfaces.RangeLoadOptions.format</xref>
+  - \[
+  [Excel.Interfaces.RangeLoadOptions.format](/javascript/api/excel/excel.interfaces.rangeloadoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

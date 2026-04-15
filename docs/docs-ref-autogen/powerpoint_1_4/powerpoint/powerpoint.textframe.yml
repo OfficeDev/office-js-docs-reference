@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#textFrame:member">PowerPoint.Shape.textFrame</xref>
+  - \[
+  [PowerPoint.Shape.textFrame](/javascript/api/powerpoint/powerpoint.shape#textframe-member)
+  \]
 
   #### Examples
 

@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#inlinePictures:member">Word.Body.inlinePictures</xref>
+  - \[
+  [Word.Body.inlinePictures](/javascript/api/word/word.body#inlinepictures-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#inlinePictures:member">Word.ContentControl.inlinePictures</xref>
+  - \[
+  [Word.ContentControl.inlinePictures](/javascript/api/word/word.contentcontrol#inlinepictures-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#inlinePictures:member">Word.Paragraph.inlinePictures</xref>
+  - \[
+  [Word.Paragraph.inlinePictures](/javascript/api/word/word.paragraph#inlinepictures-member)
+  \]
 
   #### Examples
 

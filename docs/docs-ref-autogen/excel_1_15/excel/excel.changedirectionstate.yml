@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#changeDirectionState:member">Excel.WorksheetChangedEventArgs.changeDirectionState</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#changedirectionstate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.AnnotationCollection#items:member">Word.AnnotationCollection.items</xref>
+  - \[
+  [Word.AnnotationCollection.items](/javascript/api/word/word.annotationcollection#items-member)
+  \]
 
   #### Examples
 

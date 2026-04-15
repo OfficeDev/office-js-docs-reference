@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartCollectionData#items:member">Word.Interfaces.CustomXmlPartCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartCollectionData.items](/javascript/api/word/word.interfaces.customxmlpartcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member">Word.Interfaces.CustomXmlPartCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlpartcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member">Word.Interfaces.CustomXmlPartScopedCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartScopedCollectionData.items](/javascript/api/word/word.interfaces.customxmlpartscopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member">Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlpartscopedcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#customXmlParts:member">Word.Interfaces.DocumentData.customXmlParts</xref>
+  - \[
+  [Word.Interfaces.DocumentData.customXmlParts](/javascript/api/word/word.interfaces.documentdata#customxmlparts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

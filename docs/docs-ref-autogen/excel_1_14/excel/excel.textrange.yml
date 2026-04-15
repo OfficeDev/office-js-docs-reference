@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TextFrame#textRange:member">Excel.TextFrame.textRange</xref>
+  - \[
+  [Excel.TextFrame.textRange](/javascript/api/excel/excel.textframe#textrange-member)
+  \]
 
 isPreview: false
 isDeprecated: false

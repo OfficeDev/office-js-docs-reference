@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataValidation#errorAlert:member">Excel.DataValidation.errorAlert</xref>
+  - \[
+  [Excel.DataValidation.errorAlert](/javascript/api/excel/excel.datavalidation#erroralert-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataValidationData#errorAlert:member">Excel.Interfaces.DataValidationData.errorAlert</xref>
+  - \[
+  [Excel.Interfaces.DataValidationData.errorAlert](/javascript/api/excel/excel.interfaces.datavalidationdata#erroralert-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataValidationUpdateData#errorAlert:member">Excel.Interfaces.DataValidationUpdateData.errorAlert</xref>
+  - \[
+  [Excel.Interfaces.DataValidationUpdateData.errorAlert](/javascript/api/excel/excel.interfaces.datavalidationupdatedata#erroralert-member)
+  \]
 
   #### Examples
 

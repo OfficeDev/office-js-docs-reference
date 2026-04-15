@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconCollections#fourTrafficLights:member">Excel.IconCollections.fourTrafficLights</xref>
+  - \[
+  [Excel.IconCollections.fourTrafficLights](/javascript/api/excel/excel.iconcollections#fourtrafficlights-member)
+  \]
 
 isPreview: false
 isDeprecated: false

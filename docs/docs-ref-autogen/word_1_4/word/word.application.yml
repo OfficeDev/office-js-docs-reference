@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.RequestContext#application:member">Word.RequestContext.application</xref>
+  - \[
+  [Word.RequestContext.application](/javascript/api/word/word.requestcontext#application-member)
+  \]
 
   #### Examples
 

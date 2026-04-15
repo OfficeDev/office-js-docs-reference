@@ -64,11 +64,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getEntities:member(1)">Office.AppointmentRead.getEntities</xref>
+  - \[
+  [Office.AppointmentRead.getEntities](/javascript/api/outlook/office.appointmentread#getentities-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getEntities:member(1)">Office.MessageRead.getEntities</xref>
+  - \[
+  [Office.MessageRead.getEntities](/javascript/api/outlook/office.messageread#getentities-member)
+  \]
 
 isPreview: false
 isDeprecated: true

@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFormat#protection:member">Excel.CellPropertiesFormat.protection</xref>
+  - \[
+  [Excel.CellPropertiesFormat.protection](/javascript/api/excel/excel.cellpropertiesformat#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

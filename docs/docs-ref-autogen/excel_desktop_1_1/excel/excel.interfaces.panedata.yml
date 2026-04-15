@@ -8,17 +8,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PaneCollectionData#items:member">Excel.Interfaces.PaneCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.PaneCollectionData.items](/javascript/api/excel/excel.interfaces.panecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member">Excel.Interfaces.PaneCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.PaneCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.panecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#activePane:member">Excel.Interfaces.WindowData.activePane</xref>
+  - \[
+  [Excel.Interfaces.WindowData.activePane](/javascript/api/excel/excel.interfaces.windowdata#activepane-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#panes:member">Excel.Interfaces.WindowData.panes</xref>
+  - \[
+  [Excel.Interfaces.WindowData.panes](/javascript/api/excel/excel.interfaces.windowdata#panes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

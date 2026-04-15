@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Range#sort:member">Excel.Range.sort</xref>
+  - \[ [Excel.Range.sort](/javascript/api/excel/excel.range#sort-member) \]
 
 isPreview: false
 isDeprecated: false

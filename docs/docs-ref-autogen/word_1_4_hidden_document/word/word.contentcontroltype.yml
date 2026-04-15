@@ -13,17 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#subtype:member">Word.ContentControl.subtype</xref>
+  - \[
+  [Word.ContentControl.subtype](/javascript/api/word/word.contentcontrol#subtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#type:member">Word.ContentControl.type</xref>
+  - \[
+  [Word.ContentControl.type](/javascript/api/word/word.contentcontrol#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#subtype:member">Word.Interfaces.ContentControlData.subtype</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.subtype](/javascript/api/word/word.interfaces.contentcontroldata#subtype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#type:member">Word.Interfaces.ContentControlData.type</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.type](/javascript/api/word/word.interfaces.contentcontroldata#type-member)
+  \]
 
   #### Examples
 

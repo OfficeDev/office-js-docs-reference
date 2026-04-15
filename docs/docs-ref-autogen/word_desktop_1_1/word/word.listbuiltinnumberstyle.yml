@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ListLevelData#numberStyle:member">Word.Interfaces.ListLevelData.numberStyle</xref>
+  - \[
+  [Word.Interfaces.ListLevelData.numberStyle](/javascript/api/word/word.interfaces.listleveldata#numberstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListLevelUpdateData#numberStyle:member">Word.Interfaces.ListLevelUpdateData.numberStyle</xref>
+  - \[
+  [Word.Interfaces.ListLevelUpdateData.numberStyle](/javascript/api/word/word.interfaces.listlevelupdatedata#numberstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.ListLevel#numberStyle:member">Word.ListLevel.numberStyle</xref>
+  - \[
+  [Word.ListLevel.numberStyle](/javascript/api/word/word.listlevel#numberstyle-member)
+  \]
 
   #### Examples
 

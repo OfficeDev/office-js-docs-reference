@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutLoadOptions#headersFooters:member">Excel.Interfaces.PageLayoutLoadOptions.headersFooters</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutLoadOptions.headersFooters](/javascript/api/excel/excel.interfaces.pagelayoutloadoptions#headersfooters-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -8,14 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleCollectionData#items:member">Word.Interfaces.StyleCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.StyleCollectionData.items](/javascript/api/word/word.interfaces.stylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleCollectionUpdateData#items:member">Word.Interfaces.StyleCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.StyleCollectionUpdateData.items](/javascript/api/word/word.interfaces.stylecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleData#linkStyle:member">Word.Interfaces.StyleData.linkStyle</xref>
+  - \[
+  [Word.Interfaces.StyleData.linkStyle](/javascript/api/word/word.interfaces.styledata#linkstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

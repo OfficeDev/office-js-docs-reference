@@ -8,16 +8,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="office!Office.Binding#type:member">Office.Binding.type</xref>
+  - \[ [Office.Binding.type](/javascript/api/office/office.binding#type-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#addFromNamedItemAsync:member(1)">Office.Bindings.addFromNamedItemAsync</xref>
+  - \[
+  [Office.Bindings.addFromNamedItemAsync](/javascript/api/office/office.bindings#addfromnameditemasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#addFromPromptAsync:member(1)">Office.Bindings.addFromPromptAsync</xref>
+  - \[
+  [Office.Bindings.addFromPromptAsync](/javascript/api/office/office.bindings#addfrompromptasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Bindings#addFromSelectionAsync:member(1)">Office.Bindings.addFromSelectionAsync</xref>
+  - \[
+  [Office.Bindings.addFromSelectionAsync](/javascript/api/office/office.bindings#addfromselectionasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

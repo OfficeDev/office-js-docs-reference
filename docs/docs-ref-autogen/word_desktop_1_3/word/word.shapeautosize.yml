@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TextFrameData#autoSizeSetting:member">Word.Interfaces.TextFrameData.autoSizeSetting</xref>
+  - \[
+  [Word.Interfaces.TextFrameData.autoSizeSetting](/javascript/api/word/word.interfaces.textframedata#autosizesetting-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TextFrameUpdateData#autoSizeSetting:member">Word.Interfaces.TextFrameUpdateData.autoSizeSetting</xref>
+  - \[
+  [Word.Interfaces.TextFrameUpdateData.autoSizeSetting](/javascript/api/word/word.interfaces.textframeupdatedata#autosizesetting-member)
+  \]
 
-  - <xref
-  href="word!Word.TextFrame#autoSizeSetting:member">Word.TextFrame.autoSizeSetting</xref>
+  - \[
+  [Word.TextFrame.autoSizeSetting](/javascript/api/word/word.textframe#autosizesetting-member)
+  \]
 
   #### Examples
 

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BasicViewLayouts#card:member">Excel.BasicViewLayouts.card</xref>
+  - \[
+  [Excel.BasicViewLayouts.card](/javascript/api/excel/excel.basicviewlayouts#card-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CoauthoringLock#type:member">Word.CoauthoringLock.type</xref>
+  - \[
+  [Word.CoauthoringLock.type](/javascript/api/word/word.coauthoringlock#type-member)
+  \]
 
-  - <xref
-  href="word!Word.CoauthoringLockAddOptions#type:member">Word.CoauthoringLockAddOptions.type</xref>
+  - \[
+  [Word.CoauthoringLockAddOptions.type](/javascript/api/word/word.coauthoringlockaddoptions#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockData#type:member">Word.Interfaces.CoauthoringLockData.type</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockData.type](/javascript/api/word/word.interfaces.coauthoringlockdata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.AllowEditRangeCollection#items:member">Excel.AllowEditRangeCollection.items</xref>
+  - \[
+  [Excel.AllowEditRangeCollection.items](/javascript/api/excel/excel.alloweditrangecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

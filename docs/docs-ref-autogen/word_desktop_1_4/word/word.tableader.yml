@@ -12,48 +12,62 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Index#tabLeader:member">Word.Index.tabLeader</xref>
+  - \[ [Word.Index.tabLeader](/javascript/api/word/word.index#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexData#tabLeader:member">Word.Interfaces.IndexData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.IndexData.tabLeader](/javascript/api/word/word.interfaces.indexdata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexUpdateData#tabLeader:member">Word.Interfaces.IndexUpdateData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.IndexUpdateData.tabLeader](/javascript/api/word/word.interfaces.indexupdatedata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfAuthoritiesData#tabLeader:member">Word.Interfaces.TableOfAuthoritiesData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.TableOfAuthoritiesData.tabLeader](/javascript/api/word/word.interfaces.tableofauthoritiesdata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfAuthoritiesUpdateData#tabLeader:member">Word.Interfaces.TableOfAuthoritiesUpdateData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.TableOfAuthoritiesUpdateData.tabLeader](/javascript/api/word/word.interfaces.tableofauthoritiesupdatedata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfContentsData#tabLeader:member">Word.Interfaces.TableOfContentsData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.TableOfContentsData.tabLeader](/javascript/api/word/word.interfaces.tableofcontentsdata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfContentsUpdateData#tabLeader:member">Word.Interfaces.TableOfContentsUpdateData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.TableOfContentsUpdateData.tabLeader](/javascript/api/word/word.interfaces.tableofcontentsupdatedata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfFiguresData#tabLeader:member">Word.Interfaces.TableOfFiguresData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.TableOfFiguresData.tabLeader](/javascript/api/word/word.interfaces.tableoffiguresdata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfFiguresUpdateData#tabLeader:member">Word.Interfaces.TableOfFiguresUpdateData.tabLeader</xref>
+  - \[
+  [Word.Interfaces.TableOfFiguresUpdateData.tabLeader](/javascript/api/word/word.interfaces.tableoffiguresupdatedata#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TabStopData#leader:member">Word.Interfaces.TabStopData.leader</xref>
+  - \[
+  [Word.Interfaces.TabStopData.leader](/javascript/api/word/word.interfaces.tabstopdata#leader-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfAuthorities#tabLeader:member">Word.TableOfAuthorities.tabLeader</xref>
+  - \[
+  [Word.TableOfAuthorities.tabLeader](/javascript/api/word/word.tableofauthorities#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfContents#tabLeader:member">Word.TableOfContents.tabLeader</xref>
+  - \[
+  [Word.TableOfContents.tabLeader](/javascript/api/word/word.tableofcontents#tableader-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfFigures#tabLeader:member">Word.TableOfFigures.tabLeader</xref>
+  - \[
+  [Word.TableOfFigures.tabLeader](/javascript/api/word/word.tableoffigures#tableader-member)
+  \]
 
-  - <xref href="word!Word.TabStop#leader:member">Word.TabStop.leader</xref>
+  - \[ [Word.TabStop.leader](/javascript/api/word/word.tabstop#leader-member) \]
 
-  - <xref
-  href="word!Word.TabStopAddOptions#leader:member">Word.TabStopAddOptions.leader</xref>
+  - \[
+  [Word.TabStopAddOptions.leader](/javascript/api/word/word.tabstopaddoptions#leader-member)
+  \]
 
 isPreview: false
 isDeprecated: false

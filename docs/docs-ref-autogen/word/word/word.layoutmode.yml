@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupData#layoutMode:member">Word.Interfaces.PageSetupData.layoutMode</xref>
+  - \[
+  [Word.Interfaces.PageSetupData.layoutMode](/javascript/api/word/word.interfaces.pagesetupdata#layoutmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#layoutMode:member">Word.Interfaces.PageSetupUpdateData.layoutMode</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.layoutMode](/javascript/api/word/word.interfaces.pagesetupupdatedata#layoutmode-member)
+  \]
 
-  - <xref
-  href="word!Word.PageSetup#layoutMode:member">Word.PageSetup.layoutMode</xref>
+  - \[
+  [Word.PageSetup.layoutMode](/javascript/api/word/word.pagesetup#layoutmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

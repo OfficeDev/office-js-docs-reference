@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="visio!Visio.Shape#view:member">Visio.Shape.view</xref>
+  - \[ [Visio.Shape.view](/javascript/api/visio/visio.shape#view-member) \]
 
 isPreview: false
 isDeprecated: false

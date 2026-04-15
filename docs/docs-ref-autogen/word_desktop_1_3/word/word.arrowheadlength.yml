@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#beginArrowheadLength:member">Word.Interfaces.LineFormatData.beginArrowheadLength</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.beginArrowheadLength](/javascript/api/word/word.interfaces.lineformatdata#beginarrowheadlength-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#endArrowheadLength:member">Word.Interfaces.LineFormatData.endArrowheadLength</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.endArrowheadLength](/javascript/api/word/word.interfaces.lineformatdata#endarrowheadlength-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadLength:member">Word.Interfaces.LineFormatUpdateData.beginArrowheadLength</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.beginArrowheadLength](/javascript/api/word/word.interfaces.lineformatupdatedata#beginarrowheadlength-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#endArrowheadLength:member">Word.Interfaces.LineFormatUpdateData.endArrowheadLength</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.endArrowheadLength](/javascript/api/word/word.interfaces.lineformatupdatedata#endarrowheadlength-member)
+  \]
 
-  - <xref
-  href="word!Word.LineFormat#beginArrowheadLength:member">Word.LineFormat.beginArrowheadLength</xref>
+  - \[
+  [Word.LineFormat.beginArrowheadLength](/javascript/api/word/word.lineformat#beginarrowheadlength-member)
+  \]
 
-  - <xref
-  href="word!Word.LineFormat#endArrowheadLength:member">Word.LineFormat.endArrowheadLength</xref>
+  - \[
+  [Word.LineFormat.endArrowheadLength](/javascript/api/word/word.lineformat#endarrowheadlength-member)
+  \]
 
 isPreview: false
 isDeprecated: false

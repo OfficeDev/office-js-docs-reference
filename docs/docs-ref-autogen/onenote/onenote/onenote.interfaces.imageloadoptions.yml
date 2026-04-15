@@ -14,17 +14,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member">OneNote.Interfaces.PageContentCollectionLoadOptions.image</xref>
+  - \[
+  [OneNote.Interfaces.PageContentCollectionLoadOptions.image](/javascript/api/onenote/onenote.interfaces.pagecontentcollectionloadoptions#image-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageContentLoadOptions#image:member">OneNote.Interfaces.PageContentLoadOptions.image</xref>
+  - \[
+  [OneNote.Interfaces.PageContentLoadOptions.image](/javascript/api/onenote/onenote.interfaces.pagecontentloadoptions#image-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#image:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.image</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.image](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#image-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#image:member">OneNote.Interfaces.ParagraphLoadOptions.image</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.image](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#image-member)
+  \]
 
 isPreview: false
 isDeprecated: false

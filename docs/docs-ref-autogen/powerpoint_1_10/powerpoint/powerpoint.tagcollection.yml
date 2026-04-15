@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#tags:member">PowerPoint.Presentation.tags</xref>
+  - \[
+  [PowerPoint.Presentation.tags](/javascript/api/powerpoint/powerpoint.presentation#tags-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#tags:member">PowerPoint.Shape.tags</xref>
+  - \[
+  [PowerPoint.Shape.tags](/javascript/api/powerpoint/powerpoint.shape#tags-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#tags:member">PowerPoint.Slide.tags</xref>
+  - \[
+  [PowerPoint.Slide.tags](/javascript/api/powerpoint/powerpoint.slide#tags-member)
+  \]
 
   #### Examples
 

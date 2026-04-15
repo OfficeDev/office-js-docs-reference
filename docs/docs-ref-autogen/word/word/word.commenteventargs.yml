@@ -13,59 +13,77 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Body#onCommentAdded:member">Word.Body.onCommentAdded</xref>
+  - \[
+  [Word.Body.onCommentAdded](/javascript/api/word/word.body#oncommentadded-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#onCommentChanged:member">Word.Body.onCommentChanged</xref>
+  - \[
+  [Word.Body.onCommentChanged](/javascript/api/word/word.body#oncommentchanged-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#onCommentDeleted:member">Word.Body.onCommentDeleted</xref>
+  - \[
+  [Word.Body.onCommentDeleted](/javascript/api/word/word.body#oncommentdeleted-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#onCommentDeselected:member">Word.Body.onCommentDeselected</xref>
+  - \[
+  [Word.Body.onCommentDeselected](/javascript/api/word/word.body#oncommentdeselected-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#onCommentSelected:member">Word.Body.onCommentSelected</xref>
+  - \[
+  [Word.Body.onCommentSelected](/javascript/api/word/word.body#oncommentselected-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#onCommentAdded:member">Word.ContentControl.onCommentAdded</xref>
+  - \[
+  [Word.ContentControl.onCommentAdded](/javascript/api/word/word.contentcontrol#oncommentadded-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#onCommentChanged:member">Word.ContentControl.onCommentChanged</xref>
+  - \[
+  [Word.ContentControl.onCommentChanged](/javascript/api/word/word.contentcontrol#oncommentchanged-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#onCommentDeselected:member">Word.ContentControl.onCommentDeselected</xref>
+  - \[
+  [Word.ContentControl.onCommentDeselected](/javascript/api/word/word.contentcontrol#oncommentdeselected-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#onCommentSelected:member">Word.ContentControl.onCommentSelected</xref>
+  - \[
+  [Word.ContentControl.onCommentSelected](/javascript/api/word/word.contentcontrol#oncommentselected-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#onCommentAdded:member">Word.Paragraph.onCommentAdded</xref>
+  - \[
+  [Word.Paragraph.onCommentAdded](/javascript/api/word/word.paragraph#oncommentadded-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#onCommentChanged:member">Word.Paragraph.onCommentChanged</xref>
+  - \[
+  [Word.Paragraph.onCommentChanged](/javascript/api/word/word.paragraph#oncommentchanged-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#onCommentDeleted:member">Word.Paragraph.onCommentDeleted</xref>
+  - \[
+  [Word.Paragraph.onCommentDeleted](/javascript/api/word/word.paragraph#oncommentdeleted-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#onCommentDeselected:member">Word.Paragraph.onCommentDeselected</xref>
+  - \[
+  [Word.Paragraph.onCommentDeselected](/javascript/api/word/word.paragraph#oncommentdeselected-member)
+  \]
 
-  - <xref
-  href="word!Word.Paragraph#onCommentSelected:member">Word.Paragraph.onCommentSelected</xref>
+  - \[
+  [Word.Paragraph.onCommentSelected](/javascript/api/word/word.paragraph#oncommentselected-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#onCommentAdded:member">Word.Range.onCommentAdded</xref>
+  - \[
+  [Word.Range.onCommentAdded](/javascript/api/word/word.range#oncommentadded-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#onCommentChanged:member">Word.Range.onCommentChanged</xref>
+  - \[
+  [Word.Range.onCommentChanged](/javascript/api/word/word.range#oncommentchanged-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#onCommentDeselected:member">Word.Range.onCommentDeselected</xref>
+  - \[
+  [Word.Range.onCommentDeselected](/javascript/api/word/word.range#oncommentdeselected-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#onCommentSelected:member">Word.Range.onCommentSelected</xref>
+  - \[
+  [Word.Range.onCommentSelected](/javascript/api/word/word.range#oncommentselected-member)
+  \]
 
   #### Examples
 

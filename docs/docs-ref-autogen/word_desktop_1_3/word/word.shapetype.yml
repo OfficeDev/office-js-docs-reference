@@ -13,10 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#type:member">Word.Interfaces.ShapeData.type</xref>
+  - \[
+  [Word.Interfaces.ShapeData.type](/javascript/api/word/word.interfaces.shapedata#type-member)
+  \]
 
-  - <xref href="word!Word.Shape#type:member">Word.Shape.type</xref>
+  - \[ [Word.Shape.type](/javascript/api/word/word.shape#type-member) \]
 
   #### Examples
 

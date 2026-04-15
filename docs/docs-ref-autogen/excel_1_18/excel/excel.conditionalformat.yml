@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalFormatCollection#items:member">Excel.ConditionalFormatCollection.items</xref>
+  - \[
+  [Excel.ConditionalFormatCollection.items](/javascript/api/excel/excel.conditionalformatcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.IndexCollection#items:member">Word.IndexCollection.items</xref>
+  - \[
+  [Word.IndexCollection.items](/javascript/api/word/word.indexcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

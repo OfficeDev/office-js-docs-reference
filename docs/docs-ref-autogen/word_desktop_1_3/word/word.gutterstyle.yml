@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupData#gutterStyle:member">Word.Interfaces.PageSetupData.gutterStyle</xref>
+  - \[
+  [Word.Interfaces.PageSetupData.gutterStyle](/javascript/api/word/word.interfaces.pagesetupdata#gutterstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#gutterStyle:member">Word.Interfaces.PageSetupUpdateData.gutterStyle</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.gutterStyle](/javascript/api/word/word.interfaces.pagesetupupdatedata#gutterstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.PageSetup#gutterStyle:member">Word.PageSetup.gutterStyle</xref>
+  - \[
+  [Word.PageSetup.gutterStyle](/javascript/api/word/word.pagesetup#gutterstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

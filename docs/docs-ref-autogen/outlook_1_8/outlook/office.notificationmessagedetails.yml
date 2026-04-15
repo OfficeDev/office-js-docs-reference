@@ -31,14 +31,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.NotificationMessages#addAsync:member(1)">Office.NotificationMessages.addAsync</xref>
+  - \[
+  [Office.NotificationMessages.addAsync](/javascript/api/outlook/office.notificationmessages#addasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.NotificationMessages#getAllAsync:member(1)">Office.NotificationMessages.getAllAsync</xref>
+  - \[
+  [Office.NotificationMessages.getAllAsync](/javascript/api/outlook/office.notificationmessages#getallasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.NotificationMessages#replaceAsync:member(1)">Office.NotificationMessages.replaceAsync</xref>
+  - \[
+  [Office.NotificationMessages.replaceAsync](/javascript/api/outlook/office.notificationmessages#replaceasync-member)
+  \]
 
   #### Examples
 

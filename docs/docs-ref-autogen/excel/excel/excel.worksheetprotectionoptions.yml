@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetProtectionData#options:member">Excel.Interfaces.WorksheetProtectionData.options</xref>
+  - \[
+  [Excel.Interfaces.WorksheetProtectionData.options](/javascript/api/excel/excel.interfaces.worksheetprotectiondata#options-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetProtectionData#savedOptions:member">Excel.Interfaces.WorksheetProtectionData.savedOptions</xref>
+  - \[
+  [Excel.Interfaces.WorksheetProtectionData.savedOptions](/javascript/api/excel/excel.interfaces.worksheetprotectiondata#savedoptions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetProtection#options:member">Excel.WorksheetProtection.options</xref>
+  - \[
+  [Excel.WorksheetProtection.options](/javascript/api/excel/excel.worksheetprotection#options-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetProtection#savedOptions:member">Excel.WorksheetProtection.savedOptions</xref>
+  - \[
+  [Excel.WorksheetProtection.savedOptions](/javascript/api/excel/excel.worksheetprotection#savedoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

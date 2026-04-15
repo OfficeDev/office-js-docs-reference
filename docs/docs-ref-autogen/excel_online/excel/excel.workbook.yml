@@ -18,11 +18,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RequestContext#workbook:member">Excel.RequestContext.workbook</xref>
+  - \[
+  [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#workbook-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SelectionChangedEventArgs#workbook:member">Excel.SelectionChangedEventArgs.workbook</xref>
+  - \[
+  [Excel.SelectionChangedEventArgs.workbook](/javascript/api/excel/excel.selectionchangedeventargs#workbook-member)
+  \]
 
   #### Examples
 

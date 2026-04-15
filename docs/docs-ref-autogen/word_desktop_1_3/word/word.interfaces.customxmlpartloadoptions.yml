@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#ownerPart:member">Word.Interfaces.CustomXmlNodeCollectionLoadOptions.ownerPart</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionLoadOptions.ownerPart](/javascript/api/word/word.interfaces.customxmlnodecollectionloadoptions#ownerpart-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeLoadOptions#ownerPart:member">Word.Interfaces.CustomXmlNodeLoadOptions.ownerPart</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeLoadOptions.ownerPart](/javascript/api/word/word.interfaces.customxmlnodeloadoptions#ownerpart-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlMappingLoadOptions#customXmlPart:member">Word.Interfaces.XmlMappingLoadOptions.customXmlPart</xref>
+  - \[
+  [Word.Interfaces.XmlMappingLoadOptions.customXmlPart](/javascript/api/word/word.interfaces.xmlmappingloadoptions#customxmlpart-member)
+  \]
 
 isPreview: false
 isDeprecated: false

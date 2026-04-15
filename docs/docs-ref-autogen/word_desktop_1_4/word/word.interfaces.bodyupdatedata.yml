@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#body:member">Word.Interfaces.DocumentUpdateData.body</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.body](/javascript/api/word/word.interfaces.documentupdatedata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemUpdateData#body:member">Word.Interfaces.NoteItemUpdateData.body</xref>
+  - \[
+  [Word.Interfaces.NoteItemUpdateData.body](/javascript/api/word/word.interfaces.noteitemupdatedata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionUpdateData#body:member">Word.Interfaces.SectionUpdateData.body</xref>
+  - \[
+  [Word.Interfaces.SectionUpdateData.body](/javascript/api/word/word.interfaces.sectionupdatedata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#body:member">Word.Interfaces.ShapeUpdateData.body</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.body](/javascript/api/word/word.interfaces.shapeupdatedata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellUpdateData#body:member">Word.Interfaces.TableCellUpdateData.body</xref>
+  - \[
+  [Word.Interfaces.TableCellUpdateData.body](/javascript/api/word/word.interfaces.tablecellupdatedata#body-member)
+  \]
 
 isPreview: false
 isDeprecated: false

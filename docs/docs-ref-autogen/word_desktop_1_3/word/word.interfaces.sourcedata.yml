@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BibliographyData#sources:member">Word.Interfaces.BibliographyData.sources</xref>
+  - \[
+  [Word.Interfaces.BibliographyData.sources](/javascript/api/word/word.interfaces.bibliographydata#sources-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SourceCollectionData#items:member">Word.Interfaces.SourceCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.SourceCollectionData.items](/javascript/api/word/word.interfaces.sourcecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SourceCollectionUpdateData#items:member">Word.Interfaces.SourceCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.SourceCollectionUpdateData.items](/javascript/api/word/word.interfaces.sourcecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

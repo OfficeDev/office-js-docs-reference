@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SelectionConvertToTableOptions#defaultTableBehavior:member">Word.SelectionConvertToTableOptions.defaultTableBehavior</xref>
+  - \[
+  [Word.SelectionConvertToTableOptions.defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#defaulttablebehavior-member)
+  \]
 
 isPreview: true
 isDeprecated: false

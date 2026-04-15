@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlValidationError#type:member">Word.CustomXmlValidationError.type</xref>
+  - \[
+  [Word.CustomXmlValidationError.type](/javascript/api/word/word.customxmlvalidationerror#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlValidationErrorData#type:member">Word.Interfaces.CustomXmlValidationErrorData.type</xref>
+  - \[
+  [Word.Interfaces.CustomXmlValidationErrorData.type](/javascript/api/word/word.interfaces.customxmlvalidationerrordata#type-member)
+  \]
 
 isPreview: true
 isDeprecated: false

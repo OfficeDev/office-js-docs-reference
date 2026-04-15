@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Template#buildingBlockEntries:member">Word.Template.buildingBlockEntries</xref>
+  - \[
+  [Word.Template.buildingBlockEntries](/javascript/api/word/word.template#buildingblockentries-member)
+  \]
 
 isPreview: false
 isDeprecated: false

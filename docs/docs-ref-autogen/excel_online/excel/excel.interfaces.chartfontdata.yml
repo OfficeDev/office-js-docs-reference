@@ -10,32 +10,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAreaFormatData#font:member">Excel.Interfaces.ChartAreaFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartAreaFormatData.font](/javascript/api/excel/excel.interfaces.chartareaformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisFormatData#font:member">Excel.Interfaces.ChartAxisFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisFormatData.font](/javascript/api/excel/excel.interfaces.chartaxisformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member">Excel.Interfaces.ChartAxisTitleFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisTitleFormatData.font](/javascript/api/excel/excel.interfaces.chartaxistitleformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelFormatData#font:member">Excel.Interfaces.ChartDataLabelFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelFormatData.font](/javascript/api/excel/excel.interfaces.chartdatalabelformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataTableFormatData#font:member">Excel.Interfaces.ChartDataTableFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartDataTableFormatData.font](/javascript/api/excel/excel.interfaces.chartdatatableformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartFormatStringData#font:member">Excel.Interfaces.ChartFormatStringData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartFormatStringData.font](/javascript/api/excel/excel.interfaces.chartformatstringdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLegendFormatData#font:member">Excel.Interfaces.ChartLegendFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartLegendFormatData.font](/javascript/api/excel/excel.interfaces.chartlegendformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleFormatData#font:member">Excel.Interfaces.ChartTitleFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleFormatData.font](/javascript/api/excel/excel.interfaces.charttitleformatdata#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLabelFormatData#font:member">Excel.Interfaces.ChartTrendlineLabelFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLabelFormatData.font](/javascript/api/excel/excel.interfaces.charttrendlinelabelformatdata#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

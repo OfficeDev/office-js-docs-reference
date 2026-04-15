@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataValidation#type:member">Excel.DataValidation.type</xref>
+  - \[
+  [Excel.DataValidation.type](/javascript/api/excel/excel.datavalidation#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataValidationData#type:member">Excel.Interfaces.DataValidationData.type</xref>
+  - \[
+  [Excel.Interfaces.DataValidationData.type](/javascript/api/excel/excel.interfaces.datavalidationdata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

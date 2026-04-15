@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.RecurrenceTimeZone#name:member">Office.RecurrenceTimeZone.name</xref>
+  - \[
+  [Office.RecurrenceTimeZone.name](/javascript/api/outlook/office.recurrencetimezone#name-member)
+  \]
 
   #### Examples
 

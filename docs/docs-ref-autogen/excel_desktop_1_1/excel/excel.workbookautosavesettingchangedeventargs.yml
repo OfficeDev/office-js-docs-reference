@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#onAutoSaveSettingChanged:member">Excel.Workbook.onAutoSaveSettingChanged</xref>
+  - \[
+  [Excel.Workbook.onAutoSaveSettingChanged](/javascript/api/excel/excel.workbook#onautosavesettingchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.FillFormat#textureAlignment:member">Word.FillFormat.textureAlignment</xref>
+  - \[
+  [Word.FillFormat.textureAlignment](/javascript/api/word/word.fillformat#texturealignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatData#textureAlignment:member">Word.Interfaces.FillFormatData.textureAlignment</xref>
+  - \[
+  [Word.Interfaces.FillFormatData.textureAlignment](/javascript/api/word/word.interfaces.fillformatdata#texturealignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatUpdateData#textureAlignment:member">Word.Interfaces.FillFormatUpdateData.textureAlignment</xref>
+  - \[
+  [Word.Interfaces.FillFormatUpdateData.textureAlignment](/javascript/api/word/word.interfaces.fillformatupdatedata#texturealignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

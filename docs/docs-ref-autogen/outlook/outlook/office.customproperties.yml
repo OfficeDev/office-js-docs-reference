@@ -52,23 +52,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)">Office.AppointmentCompose.loadCustomPropertiesAsync</xref>
+  - \[
+  [Office.AppointmentCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#loadcustompropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)">Office.AppointmentRead.loadCustomPropertiesAsync</xref>
+  - \[
+  [Office.AppointmentRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#loadcustompropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member(1)">Office.LoadedMessageCompose.loadCustomPropertiesAsync</xref>
+  - \[
+  [Office.LoadedMessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#loadcustompropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)">Office.LoadedMessageRead.loadCustomPropertiesAsync</xref>
+  - \[
+  [Office.LoadedMessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#loadcustompropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)">Office.MessageCompose.loadCustomPropertiesAsync</xref>
+  - \[
+  [Office.MessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#loadcustompropertiesasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#loadCustomPropertiesAsync:member(1)">Office.MessageRead.loadCustomPropertiesAsync</xref>
+  - \[
+  [Office.MessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#loadcustompropertiesasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

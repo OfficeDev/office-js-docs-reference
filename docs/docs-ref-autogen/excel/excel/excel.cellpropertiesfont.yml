@@ -16,11 +16,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFormat#font:member">Excel.CellPropertiesFormat.font</xref>
+  - \[
+  [Excel.CellPropertiesFormat.font](/javascript/api/excel/excel.cellpropertiesformat#font-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeTextRun#font:member">Excel.RangeTextRun.font</xref>
+  - \[
+  [Excel.RangeTextRun.font](/javascript/api/excel/excel.rangetextrun#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

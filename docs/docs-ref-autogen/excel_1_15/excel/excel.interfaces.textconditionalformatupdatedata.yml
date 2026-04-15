@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#textComparison:member">Excel.Interfaces.ConditionalFormatUpdateData.textComparison</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatUpdateData.textComparison](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#textcomparison-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#textComparisonOrNullObject:member">Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#textcomparisonornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

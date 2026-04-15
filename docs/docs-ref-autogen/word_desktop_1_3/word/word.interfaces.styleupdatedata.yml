@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleUpdateData#linkStyle:member">Word.Interfaces.StyleUpdateData.linkStyle</xref>
+  - \[
+  [Word.Interfaces.StyleUpdateData.linkStyle](/javascript/api/word/word.interfaces.styleupdatedata#linkstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#trendlines:member">Excel.ChartSeries.trendlines</xref>
+  - \[
+  [Excel.ChartSeries.trendlines](/javascript/api/excel/excel.chartseries#trendlines-member)
+  \]
 
 isPreview: false
 isDeprecated: false

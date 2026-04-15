@@ -8,17 +8,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.GroupShapeCollectionData#items:member">Excel.Interfaces.GroupShapeCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.GroupShapeCollectionData.items](/javascript/api/excel/excel.interfaces.groupshapecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member">Excel.Interfaces.GroupShapeCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.GroupShapeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.groupshapecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeCollectionData#items:member">Excel.Interfaces.ShapeCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.ShapeCollectionData.items](/javascript/api/excel/excel.interfaces.shapecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeCollectionUpdateData#items:member">Excel.Interfaces.ShapeCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.shapecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotFilters#manualFilter:member">Excel.PivotFilters.manualFilter</xref>
+  - \[
+  [Excel.PivotFilters.manualFilter](/javascript/api/excel/excel.pivotfilters#manualfilter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Filter#criteria:member">Excel.Filter.criteria</xref>
+  - \[
+  [Excel.Filter.criteria](/javascript/api/excel/excel.filter#criteria-member) \]
 
-  - <xref
-  href="excel!Excel.Interfaces.FilterData#criteria:member">Excel.Interfaces.FilterData.criteria</xref>
+  - \[
+  [Excel.Interfaces.FilterData.criteria](/javascript/api/excel/excel.interfaces.filterdata#criteria-member)
+  \]
 
 isPreview: false
 isDeprecated: false

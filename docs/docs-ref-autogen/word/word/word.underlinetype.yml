@@ -13,27 +13,34 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CommentContentRange#underline:member">Word.CommentContentRange.underline</xref>
+  - \[
+  [Word.CommentContentRange.underline](/javascript/api/word/word.commentcontentrange#underline-member)
+  \]
 
-  - <xref href="word!Word.Font#underline:member">Word.Font.underline</xref>
+  - \[ [Word.Font.underline](/javascript/api/word/word.font#underline-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentContentRangeData#underline:member">Word.Interfaces.CommentContentRangeData.underline</xref>
+  - \[
+  [Word.Interfaces.CommentContentRangeData.underline](/javascript/api/word/word.interfaces.commentcontentrangedata#underline-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member">Word.Interfaces.CommentContentRangeUpdateData.underline</xref>
+  - \[
+  [Word.Interfaces.CommentContentRangeUpdateData.underline](/javascript/api/word/word.interfaces.commentcontentrangeupdatedata#underline-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#underline:member">Word.Interfaces.FontData.underline</xref>
+  - \[
+  [Word.Interfaces.FontData.underline](/javascript/api/word/word.interfaces.fontdata#underline-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#underline:member">Word.Interfaces.FontUpdateData.underline</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.underline](/javascript/api/word/word.interfaces.fontupdatedata#underline-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#underline:member">Word.Interfaces.RangeData.underline</xref>
+  - \[
+  [Word.Interfaces.RangeData.underline](/javascript/api/word/word.interfaces.rangedata#underline-member)
+  \]
 
-  - <xref href="word!Word.Range#underline:member">Word.Range.underline</xref>
+  - \[ [Word.Range.underline](/javascript/api/word/word.range#underline-member)
+  \]
 
   #### Examples
 

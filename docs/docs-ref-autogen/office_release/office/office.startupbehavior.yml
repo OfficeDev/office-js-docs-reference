@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Addin#getStartupBehavior:member(1)">Office.Addin.getStartupBehavior</xref>
+  - \[
+  [Office.Addin.getStartupBehavior](/javascript/api/office/office.addin#getstartupbehavior-member)
+  \]
 
-  - <xref
-  href="office!Office.Addin#setStartupBehavior:member(1)">Office.Addin.setStartupBehavior</xref>
+  - \[
+  [Office.Addin.setStartupBehavior](/javascript/api/office/office.addin#setstartupbehavior-member)
+  \]
 
   #### Examples
 

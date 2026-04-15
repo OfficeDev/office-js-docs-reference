@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextFrameData#autoSizeSetting:member">PowerPoint.Interfaces.TextFrameData.autoSizeSetting</xref>
+  - \[
+  [PowerPoint.Interfaces.TextFrameData.autoSizeSetting](/javascript/api/powerpoint/powerpoint.interfaces.textframedata#autosizesetting-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#autoSizeSetting:member">PowerPoint.Interfaces.TextFrameUpdateData.autoSizeSetting</xref>
+  - \[
+  [PowerPoint.Interfaces.TextFrameUpdateData.autoSizeSetting](/javascript/api/powerpoint/powerpoint.interfaces.textframeupdatedata#autosizesetting-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TextFrame#autoSizeSetting:member">PowerPoint.TextFrame.autoSizeSetting</xref>
+  - \[
+  [PowerPoint.TextFrame.autoSizeSetting](/javascript/api/powerpoint/powerpoint.textframe#autosizesetting-member)
+  \]
 
   #### Examples
 

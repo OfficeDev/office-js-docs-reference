@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartData#axes:member">Excel.Interfaces.ChartData.axes</xref>
+  - \[
+  [Excel.Interfaces.ChartData.axes](/javascript/api/excel/excel.interfaces.chartdata#axes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member">Excel.Interfaces.TableCollectionLoadOptions.columns</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionLoadOptions.columns](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#columns-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableLoadOptions#columns:member">Excel.Interfaces.TableLoadOptions.columns</xref>
+  - \[
+  [Excel.Interfaces.TableLoadOptions.columns](/javascript/api/excel/excel.interfaces.tableloadoptions#columns-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#columns:member">Excel.Interfaces.TableScopedCollectionLoadOptions.columns</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionLoadOptions.columns](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#columns-member)
+  \]
 
 isPreview: false
 isDeprecated: false

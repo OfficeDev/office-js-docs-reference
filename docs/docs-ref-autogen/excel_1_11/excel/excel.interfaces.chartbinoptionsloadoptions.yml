@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#binoptions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#binOptions:member">Excel.Interfaces.ChartSeriesLoadOptions.binOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesLoadOptions.binOptions](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#binoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

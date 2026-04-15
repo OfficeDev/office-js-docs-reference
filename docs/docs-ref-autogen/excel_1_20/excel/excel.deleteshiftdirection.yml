@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChangeDirectionState#deleteShiftDirection:member">Excel.ChangeDirectionState.deleteShiftDirection</xref>
+  - \[
+  [Excel.ChangeDirectionState.deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#deleteshiftdirection-member)
+  \]
 
   #### Examples
 

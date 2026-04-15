@@ -19,10 +19,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#selection:member">Word.Document.selection</xref>
+  - \[
+  [Word.Document.selection](/javascript/api/word/word.document#selection-member)
+  \]
 
-  - <xref href="word!Word.Pane#selection:member">Word.Pane.selection</xref>
+  - \[ [Word.Pane.selection](/javascript/api/word/word.pane#selection-member) \]
 
   #### Examples
 

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#protection:member">Excel.Interfaces.WorkbookData.protection</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.protection](/javascript/api/excel/excel.interfaces.workbookdata#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooterPicture:member">Excel.Interfaces.HeaderFooterLoadOptions.centerFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterLoadOptions.centerFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#centerfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeaderPicture:member">Excel.Interfaces.HeaderFooterLoadOptions.centerHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterLoadOptions.centerHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#centerheaderpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooterPicture:member">Excel.Interfaces.HeaderFooterLoadOptions.leftFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterLoadOptions.leftFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#leftfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeaderPicture:member">Excel.Interfaces.HeaderFooterLoadOptions.leftHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterLoadOptions.leftHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#leftheaderpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooterPicture:member">Excel.Interfaces.HeaderFooterLoadOptions.rightFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterLoadOptions.rightFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#rightfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeaderPicture:member">Excel.Interfaces.HeaderFooterLoadOptions.rightHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterLoadOptions.rightHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#rightheaderpicture-member)
+  \]
 
 isPreview: false
 isDeprecated: false

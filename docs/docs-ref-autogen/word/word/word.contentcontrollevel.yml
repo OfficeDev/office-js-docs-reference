@@ -12,35 +12,45 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlockGalleryContentControl#level:member">Word.BuildingBlockGalleryContentControl.level</xref>
+  - \[
+  [Word.BuildingBlockGalleryContentControl.level](/javascript/api/word/word.buildingblockgallerycontentcontrol#level-member)
+  \]
 
-  - <xref
-  href="word!Word.DatePickerContentControl#level:member">Word.DatePickerContentControl.level</xref>
+  - \[
+  [Word.DatePickerContentControl.level](/javascript/api/word/word.datepickercontentcontrol#level-member)
+  \]
 
-  - <xref
-  href="word!Word.GroupContentControl#level:member">Word.GroupContentControl.level</xref>
+  - \[
+  [Word.GroupContentControl.level](/javascript/api/word/word.groupcontentcontrol#level-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlData#level:member">Word.Interfaces.BuildingBlockGalleryContentControlData.level</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlData.level](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#level-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#level:member">Word.Interfaces.DatePickerContentControlData.level</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.level](/javascript/api/word/word.interfaces.datepickercontentcontroldata#level-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlData#level:member">Word.Interfaces.GroupContentControlData.level</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlData.level](/javascript/api/word/word.interfaces.groupcontentcontroldata#level-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlData#level:member">Word.Interfaces.PictureContentControlData.level</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlData.level](/javascript/api/word/word.interfaces.picturecontentcontroldata#level-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlData#level:member">Word.Interfaces.RepeatingSectionContentControlData.level</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlData.level](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#level-member)
+  \]
 
-  - <xref
-  href="word!Word.PictureContentControl#level:member">Word.PictureContentControl.level</xref>
+  - \[
+  [Word.PictureContentControl.level](/javascript/api/word/word.picturecontentcontrol#level-member)
+  \]
 
-  - <xref
-  href="word!Word.RepeatingSectionContentControl#level:member">Word.RepeatingSectionContentControl.level</xref>
+  - \[
+  [Word.RepeatingSectionContentControl.level](/javascript/api/word/word.repeatingsectioncontentcontrol#level-member)
+  \]
 
 isPreview: false
 isDeprecated: false

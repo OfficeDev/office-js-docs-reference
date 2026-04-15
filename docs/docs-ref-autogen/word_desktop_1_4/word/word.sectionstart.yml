@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupData#sectionStart:member">Word.Interfaces.PageSetupData.sectionStart</xref>
+  - \[
+  [Word.Interfaces.PageSetupData.sectionStart](/javascript/api/word/word.interfaces.pagesetupdata#sectionstart-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#sectionStart:member">Word.Interfaces.PageSetupUpdateData.sectionStart</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.sectionStart](/javascript/api/word/word.interfaces.pagesetupupdatedata#sectionstart-member)
+  \]
 
-  - <xref
-  href="word!Word.PageSetup#sectionStart:member">Word.PageSetup.sectionStart</xref>
+  - \[
+  [Word.PageSetup.sectionStart](/javascript/api/word/word.pagesetup#sectionstart-member)
+  \]
 
 isPreview: false
 isDeprecated: false

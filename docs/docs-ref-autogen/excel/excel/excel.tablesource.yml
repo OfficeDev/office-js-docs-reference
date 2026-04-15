@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableData#source:member">Excel.Interfaces.TableData.source</xref>
+  - \[
+  [Excel.Interfaces.TableData.source](/javascript/api/excel/excel.interfaces.tabledata#source-member)
+  \]
 
-  - <xref href="excel!Excel.Table#source:member">Excel.Table.source</xref>
+  - \[ [Excel.Table.source](/javascript/api/excel/excel.table#source-member) \]
 
 isPreview: true
 isDeprecated: false

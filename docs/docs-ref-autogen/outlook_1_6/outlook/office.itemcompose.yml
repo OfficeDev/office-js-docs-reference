@@ -23,10 +23,12 @@ summary: >-
 
 
   - [MessageCompose](xref:outlook!Office.MessageCompose:interface)
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref href="outlook!Office.Mailbox#item:member">Office.Mailbox.item</xref>
+
+  - \[ [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#item-member)
+  \]
 
 isPreview: false
 isDeprecated: false

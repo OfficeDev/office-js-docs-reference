@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#settings:member">Word.Document.settings</xref>
+  - \[
+  [Word.Document.settings](/javascript/api/word/word.document#settings-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentCreated#settings:member">Word.DocumentCreated.settings</xref>
+  - \[
+  [Word.DocumentCreated.settings](/javascript/api/word/word.documentcreated#settings-member)
+  \]
 
   #### Examples
 

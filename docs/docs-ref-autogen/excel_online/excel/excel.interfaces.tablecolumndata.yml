@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableColumnCollectionData#items:member">Excel.Interfaces.TableColumnCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.TableColumnCollectionData.items](/javascript/api/excel/excel.interfaces.tablecolumncollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member">Excel.Interfaces.TableColumnCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.TableColumnCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablecolumncollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableData#columns:member">Excel.Interfaces.TableData.columns</xref>
+  - \[
+  [Excel.Interfaces.TableData.columns](/javascript/api/excel/excel.interfaces.tabledata#columns-member)
+  \]
 
 isPreview: false
 isDeprecated: false

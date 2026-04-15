@@ -32,11 +32,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#sessionData:member">Office.AppointmentCompose.sessionData</xref>
+  - \[
+  [Office.AppointmentCompose.sessionData](/javascript/api/outlook/office.appointmentcompose#sessiondata-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#sessionData:member">Office.MessageCompose.sessionData</xref>
+  - \[
+  [Office.MessageCompose.sessionData](/javascript/api/outlook/office.messagecompose#sessiondata-member)
+  \]
 
 isPreview: false
 isDeprecated: false

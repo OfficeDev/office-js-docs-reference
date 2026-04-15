@@ -13,23 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LineData#beginArrowheadStyle:member">Excel.Interfaces.LineData.beginArrowheadStyle</xref>
+  - \[
+  [Excel.Interfaces.LineData.beginArrowheadStyle](/javascript/api/excel/excel.interfaces.linedata#beginarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineData#endArrowheadStyle:member">Excel.Interfaces.LineData.endArrowheadStyle</xref>
+  - \[
+  [Excel.Interfaces.LineData.endArrowheadStyle](/javascript/api/excel/excel.interfaces.linedata#endarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member">Excel.Interfaces.LineUpdateData.beginArrowheadStyle</xref>
+  - \[
+  [Excel.Interfaces.LineUpdateData.beginArrowheadStyle](/javascript/api/excel/excel.interfaces.lineupdatedata#beginarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member">Excel.Interfaces.LineUpdateData.endArrowheadStyle</xref>
+  - \[
+  [Excel.Interfaces.LineUpdateData.endArrowheadStyle](/javascript/api/excel/excel.interfaces.lineupdatedata#endarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Line#beginArrowheadStyle:member">Excel.Line.beginArrowheadStyle</xref>
+  - \[
+  [Excel.Line.beginArrowheadStyle](/javascript/api/excel/excel.line#beginarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Line#endArrowheadStyle:member">Excel.Line.endArrowheadStyle</xref>
+  - \[
+  [Excel.Line.endArrowheadStyle](/javascript/api/excel/excel.line#endarrowheadstyle-member)
+  \]
 
   #### Examples
 

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Application#calculationState:member">Excel.Application.calculationState</xref>
+  - \[
+  [Excel.Application.calculationState](/javascript/api/excel/excel.application#calculationstate-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationData#calculationState:member">Excel.Interfaces.ApplicationData.calculationState</xref>
+  - \[
+  [Excel.Interfaces.ApplicationData.calculationState](/javascript/api/excel/excel.interfaces.applicationdata#calculationstate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

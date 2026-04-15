@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.RequestContext#application:member">OneNote.RequestContext.application</xref>
+  - \[
+  [OneNote.RequestContext.application](/javascript/api/onenote/onenote.requestcontext#application-member)
+  \]
 
 isPreview: false
 isDeprecated: false

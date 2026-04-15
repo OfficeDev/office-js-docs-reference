@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SelectionConvertToTableOptions#autoFitBehavior:member">Word.SelectionConvertToTableOptions.autoFitBehavior</xref>
+  - \[
+  [Word.SelectionConvertToTableOptions.autoFitBehavior](/javascript/api/word/word.selectionconverttotableoptions#autofitbehavior-member)
+  \]
 
 isPreview: false
 isDeprecated: false

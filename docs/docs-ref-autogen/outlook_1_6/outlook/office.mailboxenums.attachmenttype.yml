@@ -18,14 +18,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AttachmentDetails#attachmentType:member">Office.AttachmentDetails.attachmentType</xref>
+  - \[
+  [Office.AttachmentDetails.attachmentType](/javascript/api/outlook/office.attachmentdetails#attachmenttype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageFormAttachment#type:member">Office.MessageFormAttachment.type</xref>
+  - \[
+  [Office.MessageFormAttachment.type](/javascript/api/outlook/office.messageformattachment#type-member)
+  \]
 
-  - <xref
-  href="outlook!Office.ReplyFormAttachment#type:member">Office.ReplyFormAttachment.type</xref>
+  - \[
+  [Office.ReplyFormAttachment.type](/javascript/api/outlook/office.replyformattachment#type-member)
+  \]
 
   #### Examples
 

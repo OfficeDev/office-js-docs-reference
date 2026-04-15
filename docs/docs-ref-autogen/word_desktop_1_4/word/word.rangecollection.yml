@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#grammaticalErrors:member">Word.Document.grammaticalErrors</xref>
+  - \[
+  [Word.Document.grammaticalErrors](/javascript/api/word/word.document#grammaticalerrors-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#spellingErrors:member">Word.Document.spellingErrors</xref>
+  - \[
+  [Word.Document.spellingErrors](/javascript/api/word/word.document#spellingerrors-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#storyRanges:member">Word.Document.storyRanges</xref>
+  - \[
+  [Word.Document.storyRanges](/javascript/api/word/word.document#storyranges-member)
+  \]
 
   #### Examples
 

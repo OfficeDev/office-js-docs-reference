@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatData#positiveFormat:member">Excel.Interfaces.DataBarConditionalFormatData.positiveFormat</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatData.positiveFormat](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#positiveformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

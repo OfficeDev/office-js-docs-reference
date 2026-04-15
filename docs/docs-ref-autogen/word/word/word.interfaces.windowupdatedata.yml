@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#activeWindow:member">Word.Interfaces.DocumentUpdateData.activeWindow</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.activeWindow](/javascript/api/word/word.interfaces.documentupdatedata#activewindow-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowUpdateData#next:member">Word.Interfaces.WindowUpdateData.next</xref>
+  - \[
+  [Word.Interfaces.WindowUpdateData.next](/javascript/api/word/word.interfaces.windowupdatedata#next-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowUpdateData#previous:member">Word.Interfaces.WindowUpdateData.previous</xref>
+  - \[
+  [Word.Interfaces.WindowUpdateData.previous](/javascript/api/word/word.interfaces.windowupdatedata#previous-member)
+  \]
 
 isPreview: false
 isDeprecated: false

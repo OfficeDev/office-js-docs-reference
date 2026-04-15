@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!OfficeExtension.ClientRequestContext#trackedObjects:member">OfficeExtension.ClientRequestContext.trackedObjects</xref>
+  - \[
+  [OfficeExtension.ClientRequestContext.trackedObjects](/javascript/api/office/officeextension.clientrequestcontext#trackedobjects-member)
+  \]
 
 isPreview: false
 isDeprecated: false

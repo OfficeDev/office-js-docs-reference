@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onFormulaChanged:member">Excel.Worksheet.onFormulaChanged</xref>
+  - \[
+  [Excel.Worksheet.onFormulaChanged](/javascript/api/excel/excel.worksheet#onformulachanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onFormulaChanged:member">Excel.WorksheetCollection.onFormulaChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#onformulachanged-member)
+  \]
 
   #### Examples
 

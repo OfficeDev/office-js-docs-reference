@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.DropCap#position:member">Word.DropCap.position</xref>
+  - \[
+  [Word.DropCap.position](/javascript/api/word/word.dropcap#position-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.DropCapData#position:member">Word.Interfaces.DropCapData.position</xref>
+  - \[
+  [Word.Interfaces.DropCapData.position](/javascript/api/word/word.interfaces.dropcapdata#position-member)
+  \]
 
 isPreview: false
 isDeprecated: false

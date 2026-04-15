@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CommentReplyCollection#items:member">Word.CommentReplyCollection.items</xref>
+  - \[
+  [Word.CommentReplyCollection.items](/javascript/api/word/word.commentreplycollection#items-member)
+  \]
 
   #### Examples
 

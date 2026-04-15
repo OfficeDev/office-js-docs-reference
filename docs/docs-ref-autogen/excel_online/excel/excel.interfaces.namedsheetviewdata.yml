@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member">Excel.Interfaces.NamedSheetViewCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.NamedSheetViewCollectionData.items](/javascript/api/excel/excel.interfaces.namedsheetviewcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items:member">Excel.Interfaces.NamedSheetViewCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.NamedSheetViewCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.namedsheetviewcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

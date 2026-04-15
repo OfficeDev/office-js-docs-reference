@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#cellValue:member">Excel.ConditionalFormat.cellValue</xref>
+  - \[
+  [Excel.ConditionalFormat.cellValue](/javascript/api/excel/excel.conditionalformat#cellvalue-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#cellValueOrNullObject:member">Excel.ConditionalFormat.cellValueOrNullObject</xref>
+  - \[
+  [Excel.ConditionalFormat.cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#cellvalueornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

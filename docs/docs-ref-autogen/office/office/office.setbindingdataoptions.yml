@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Binding#setDataAsync:member(1)">Office.Binding.setDataAsync</xref>
+  - \[
+  [Office.Binding.setDataAsync](/javascript/api/office/office.binding#setdataasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

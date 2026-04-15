@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#onSelectionChanged:member">Word.ContentControl.onSelectionChanged</xref>
+  - \[
+  [Word.ContentControl.onSelectionChanged](/javascript/api/word/word.contentcontrol#onselectionchanged-member)
+  \]
 
   #### Examples
 

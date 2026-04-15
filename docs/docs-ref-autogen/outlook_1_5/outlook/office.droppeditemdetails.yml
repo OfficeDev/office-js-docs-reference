@@ -22,8 +22,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.DroppedItems#files:member">Office.DroppedItems.files</xref>
+  - \[
+  [Office.DroppedItems.files](/javascript/api/outlook/office.droppeditems#files-member)
+  \]
 
   #### Examples
 

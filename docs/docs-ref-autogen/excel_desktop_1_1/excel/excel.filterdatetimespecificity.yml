@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.FilterDatetime#specificity:member">Excel.FilterDatetime.specificity</xref>
+  - \[
+  [Excel.FilterDatetime.specificity](/javascript/api/excel/excel.filterdatetime#specificity-member)
+  \]
 
   #### Examples
 

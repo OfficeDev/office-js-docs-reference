@@ -18,32 +18,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BasicDataValidation#formula1:member">Excel.BasicDataValidation.formula1</xref>
+  - \[
+  [Excel.BasicDataValidation.formula1](/javascript/api/excel/excel.basicdatavalidation#formula1-member)
+  \]
 
-  - <xref
-  href="excel!Excel.BasicDataValidation#formula2:member">Excel.BasicDataValidation.formula2</xref>
+  - \[
+  [Excel.BasicDataValidation.formula2](/javascript/api/excel/excel.basicdatavalidation#formula2-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DateTimeDataValidation#formula1:member">Excel.DateTimeDataValidation.formula1</xref>
+  - \[
+  [Excel.DateTimeDataValidation.formula1](/javascript/api/excel/excel.datetimedatavalidation#formula1-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DateTimeDataValidation#formula2:member">Excel.DateTimeDataValidation.formula2</xref>
+  - \[
+  [Excel.DateTimeDataValidation.formula2](/javascript/api/excel/excel.datetimedatavalidation#formula2-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ListDataValidation#source:member">Excel.ListDataValidation.source</xref>
+  - \[
+  [Excel.ListDataValidation.source](/javascript/api/excel/excel.listdatavalidation#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#getRange:member(1)">Excel.TableChangedEventArgs.getRange</xref>
+  - \[
+  [Excel.TableChangedEventArgs.getRange](/javascript/api/excel/excel.tablechangedeventargs#getrange-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)">Excel.TableChangedEventArgs.getRangeOrNullObject</xref>
+  - \[
+  [Excel.TableChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#getrangeornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#getRange:member(1)">Excel.WorksheetChangedEventArgs.getRange</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.getRange](/javascript/api/excel/excel.worksheetchangedeventargs#getrange-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member(1)">Excel.WorksheetChangedEventArgs.getRangeOrNullObject</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#getrangeornullobject-member)
+  \]
 
   #### Examples
 

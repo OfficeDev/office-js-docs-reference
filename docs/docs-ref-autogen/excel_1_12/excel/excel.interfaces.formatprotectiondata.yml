@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatData#protection:member">Excel.Interfaces.RangeFormatData.protection</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatData.protection](/javascript/api/excel/excel.interfaces.rangeformatdata#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

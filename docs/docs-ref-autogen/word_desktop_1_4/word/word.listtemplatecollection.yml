@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#listTemplates:member">Word.Document.listTemplates</xref>
+  - \[
+  [Word.Document.listTemplates](/javascript/api/word/word.document#listtemplates-member)
+  \]
 
-  - <xref
-  href="word!Word.ListTemplateGallery#listTemplates:member">Word.ListTemplateGallery.listTemplates</xref>
+  - \[
+  [Word.ListTemplateGallery.listTemplates](/javascript/api/word/word.listtemplategallery#listtemplates-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#listTemplates:member">Word.Template.listTemplates</xref>
+  - \[
+  [Word.Template.listTemplates](/javascript/api/word/word.template#listtemplates-member)
+  \]
 
 isPreview: false
 isDeprecated: false

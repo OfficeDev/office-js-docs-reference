@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Graphic#shape:member">PowerPoint.Graphic.shape</xref>
+  - \[
+  [PowerPoint.Graphic.shape](/javascript/api/powerpoint/powerpoint.graphic#shape-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Shape#parentGroup:member">PowerPoint.Shape.parentGroup</xref>
+  - \[
+  [PowerPoint.Shape.parentGroup](/javascript/api/powerpoint/powerpoint.shape#parentgroup-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeCollection#items:member">PowerPoint.ShapeCollection.items</xref>
+  - \[
+  [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeGroup#shape:member">PowerPoint.ShapeGroup.shape</xref>
+  - \[
+  [PowerPoint.ShapeGroup.shape](/javascript/api/powerpoint/powerpoint.shapegroup#shape-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeScopedCollection#items:member">PowerPoint.ShapeScopedCollection.items</xref>
+  - \[
+  [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#items-member)
+  \]
 
   #### Examples
 

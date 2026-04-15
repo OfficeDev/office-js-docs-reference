@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartLegendEntryCollection#items:member">Excel.ChartLegendEntryCollection.items</xref>
+  - \[
+  [Excel.ChartLegendEntryCollection.items](/javascript/api/excel/excel.chartlegendentrycollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

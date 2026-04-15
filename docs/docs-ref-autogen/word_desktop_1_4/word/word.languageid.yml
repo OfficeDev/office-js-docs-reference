@@ -12,111 +12,147 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Application#language:member">Word.Application.language</xref>
+  - \[
+  [Word.Application.language](/javascript/api/word/word.application#language-member)
+  \]
 
-  - <xref
-  href="word!Word.DatePickerContentControl#dateDisplayLocale:member">Word.DatePickerContentControl.dateDisplayLocale</xref>
+  - \[
+  [Word.DatePickerContentControl.dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#datedisplaylocale-member)
+  \]
 
-  - <xref
-  href="word!Word.Index#indexLanguage:member">Word.Index.indexLanguage</xref>
+  - \[
+  [Word.Index.indexLanguage](/javascript/api/word/word.index#indexlanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.IndexAddOptions#indexLanguage:member">Word.IndexAddOptions.indexLanguage</xref>
+  - \[
+  [Word.IndexAddOptions.indexLanguage](/javascript/api/word/word.indexaddoptions#indexlanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ApplicationData#language:member">Word.Interfaces.ApplicationData.language</xref>
+  - \[
+  [Word.Interfaces.ApplicationData.language](/javascript/api/word/word.interfaces.applicationdata#language-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlData#dateDisplayLocale:member">Word.Interfaces.DatePickerContentControlData.dateDisplayLocale</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlData.dateDisplayLocale](/javascript/api/word/word.interfaces.datepickercontentcontroldata#datedisplaylocale-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member">Word.Interfaces.DatePickerContentControlUpdateData.dateDisplayLocale</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlUpdateData.dateDisplayLocale](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#datedisplaylocale-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexData#indexLanguage:member">Word.Interfaces.IndexData.indexLanguage</xref>
+  - \[
+  [Word.Interfaces.IndexData.indexLanguage](/javascript/api/word/word.interfaces.indexdata#indexlanguage-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#languageId:member">Word.Interfaces.RangeData.languageId</xref>
+  - \[
+  [Word.Interfaces.RangeData.languageId](/javascript/api/word/word.interfaces.rangedata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#languageIdFarEast:member">Word.Interfaces.RangeData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.RangeData.languageIdFarEast](/javascript/api/word/word.interfaces.rangedata#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#languageIdOther:member">Word.Interfaces.RangeData.languageIdOther</xref>
+  - \[
+  [Word.Interfaces.RangeData.languageIdOther](/javascript/api/word/word.interfaces.rangedata#languageidother-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#languageId:member">Word.Interfaces.RangeUpdateData.languageId</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.languageId](/javascript/api/word/word.interfaces.rangeupdatedata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#languageIdFarEast:member">Word.Interfaces.RangeUpdateData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.languageIdFarEast](/javascript/api/word/word.interfaces.rangeupdatedata#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#languageIdOther:member">Word.Interfaces.RangeUpdateData.languageIdOther</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.languageIdOther](/javascript/api/word/word.interfaces.rangeupdatedata#languageidother-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionData#languageId:member">Word.Interfaces.SelectionData.languageId</xref>
+  - \[
+  [Word.Interfaces.SelectionData.languageId](/javascript/api/word/word.interfaces.selectiondata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionData#languageIdFarEast:member">Word.Interfaces.SelectionData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.SelectionData.languageIdFarEast](/javascript/api/word/word.interfaces.selectiondata#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionData#languageIdOther:member">Word.Interfaces.SelectionData.languageIdOther</xref>
+  - \[
+  [Word.Interfaces.SelectionData.languageIdOther](/javascript/api/word/word.interfaces.selectiondata#languageidother-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleData#languageId:member">Word.Interfaces.StyleData.languageId</xref>
+  - \[
+  [Word.Interfaces.StyleData.languageId](/javascript/api/word/word.interfaces.styledata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleData#languageIdFarEast:member">Word.Interfaces.StyleData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.StyleData.languageIdFarEast](/javascript/api/word/word.interfaces.styledata#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleUpdateData#languageId:member">Word.Interfaces.StyleUpdateData.languageId</xref>
+  - \[
+  [Word.Interfaces.StyleUpdateData.languageId](/javascript/api/word/word.interfaces.styleupdatedata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member">Word.Interfaces.StyleUpdateData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.StyleUpdateData.languageIdFarEast](/javascript/api/word/word.interfaces.styleupdatedata#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateData#languageId:member">Word.Interfaces.TemplateData.languageId</xref>
+  - \[
+  [Word.Interfaces.TemplateData.languageId](/javascript/api/word/word.interfaces.templatedata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateData#languageIdFarEast:member">Word.Interfaces.TemplateData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.TemplateData.languageIdFarEast](/javascript/api/word/word.interfaces.templatedata#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateUpdateData#languageId:member">Word.Interfaces.TemplateUpdateData.languageId</xref>
+  - \[
+  [Word.Interfaces.TemplateUpdateData.languageId](/javascript/api/word/word.interfaces.templateupdatedata#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateUpdateData#languageIdFarEast:member">Word.Interfaces.TemplateUpdateData.languageIdFarEast</xref>
+  - \[
+  [Word.Interfaces.TemplateUpdateData.languageIdFarEast](/javascript/api/word/word.interfaces.templateupdatedata#languageidfareast-member)
+  \]
 
-  - <xref href="word!Word.Range#languageId:member">Word.Range.languageId</xref>
+  - \[
+  [Word.Range.languageId](/javascript/api/word/word.range#languageid-member) \]
 
-  - <xref
-  href="word!Word.Range#languageIdFarEast:member">Word.Range.languageIdFarEast</xref>
+  - \[
+  [Word.Range.languageIdFarEast](/javascript/api/word/word.range#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#languageIdOther:member">Word.Range.languageIdOther</xref>
+  - \[
+  [Word.Range.languageIdOther](/javascript/api/word/word.range#languageidother-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#languageId:member">Word.Selection.languageId</xref>
+  - \[
+  [Word.Selection.languageId](/javascript/api/word/word.selection#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#languageIdFarEast:member">Word.Selection.languageIdFarEast</xref>
+  - \[
+  [Word.Selection.languageIdFarEast](/javascript/api/word/word.selection#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#languageIdOther:member">Word.Selection.languageIdOther</xref>
+  - \[
+  [Word.Selection.languageIdOther](/javascript/api/word/word.selection#languageidother-member)
+  \]
 
-  - <xref href="word!Word.Style#languageId:member">Word.Style.languageId</xref>
+  - \[
+  [Word.Style.languageId](/javascript/api/word/word.style#languageid-member) \]
 
-  - <xref
-  href="word!Word.Style#languageIdFarEast:member">Word.Style.languageIdFarEast</xref>
+  - \[
+  [Word.Style.languageIdFarEast](/javascript/api/word/word.style#languageidfareast-member)
+  \]
 
-  - <xref
-  href="word!Word.TableSortOptions#languageId:member">Word.TableSortOptions.languageId</xref>
+  - \[
+  [Word.TableSortOptions.languageId](/javascript/api/word/word.tablesortoptions#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#languageId:member">Word.Template.languageId</xref>
+  - \[
+  [Word.Template.languageId](/javascript/api/word/word.template#languageid-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#languageIdFarEast:member">Word.Template.languageIdFarEast</xref>
+  - \[
+  [Word.Template.languageIdFarEast](/javascript/api/word/word.template#languageidfareast-member)
+  \]
 
 isPreview: false
 isDeprecated: false

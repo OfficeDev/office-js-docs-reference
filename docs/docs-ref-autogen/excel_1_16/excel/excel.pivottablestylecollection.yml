@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#pivotTableStyles:member">Excel.Workbook.pivotTableStyles</xref>
+  - \[
+  [Excel.Workbook.pivotTableStyles](/javascript/api/excel/excel.workbook#pivottablestyles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

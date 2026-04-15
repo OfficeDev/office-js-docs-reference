@@ -14,26 +14,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Image#paragraph:member">OneNote.Image.paragraph</xref>
+  - \[
+  [OneNote.Image.paragraph](/javascript/api/onenote/onenote.image#paragraph-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkWord#paragraph:member">OneNote.InkWord.paragraph</xref>
+  - \[
+  [OneNote.InkWord.paragraph](/javascript/api/onenote/onenote.inkword#paragraph-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Paragraph#parentParagraph:member">OneNote.Paragraph.parentParagraph</xref>
+  - \[
+  [OneNote.Paragraph.parentParagraph](/javascript/api/onenote/onenote.paragraph#parentparagraph-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Paragraph#parentParagraphOrNull:member">OneNote.Paragraph.parentParagraphOrNull</xref>
+  - \[
+  [OneNote.Paragraph.parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#parentparagraphornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.ParagraphCollection#items:member">OneNote.ParagraphCollection.items</xref>
+  - \[
+  [OneNote.ParagraphCollection.items](/javascript/api/onenote/onenote.paragraphcollection#items-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.RichText#paragraph:member">OneNote.RichText.paragraph</xref>
+  - \[
+  [OneNote.RichText.paragraph](/javascript/api/onenote/onenote.richtext#paragraph-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Table#paragraph:member">OneNote.Table.paragraph</xref>
+  - \[
+  [OneNote.Table.paragraph](/javascript/api/onenote/onenote.table#paragraph-member)
+  \]
 
 isPreview: false
 isDeprecated: false

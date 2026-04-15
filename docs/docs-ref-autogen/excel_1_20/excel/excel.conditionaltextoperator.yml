@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalTextComparisonRule#operator:member">Excel.ConditionalTextComparisonRule.operator</xref>
+  - \[
+  [Excel.ConditionalTextComparisonRule.operator](/javascript/api/excel/excel.conditionaltextcomparisonrule#operator-member)
+  \]
 
   #### Examples
 

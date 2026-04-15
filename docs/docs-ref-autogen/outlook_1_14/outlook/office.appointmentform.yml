@@ -23,11 +23,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#displayNewAppointmentForm:member(1)">Office.Mailbox.displayNewAppointmentForm</xref>
+  - \[
+  [Office.Mailbox.displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#displaynewappointmentform-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Mailbox#displayNewAppointmentFormAsync:member(1)">Office.Mailbox.displayNewAppointmentFormAsync</xref>
+  - \[
+  [Office.Mailbox.displayNewAppointmentFormAsync](/javascript/api/outlook/office.mailbox#displaynewappointmentformasync-member)
+  \]
 
   #### Examples
 

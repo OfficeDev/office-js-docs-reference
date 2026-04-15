@@ -13,10 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Border#location:member">Word.Border.location</xref>
+  - \[ [Word.Border.location](/javascript/api/word/word.border#location-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderData#location:member">Word.Interfaces.BorderData.location</xref>
+  - \[
+  [Word.Interfaces.BorderData.location](/javascript/api/word/word.interfaces.borderdata#location-member)
+  \]
 
   #### Examples
 

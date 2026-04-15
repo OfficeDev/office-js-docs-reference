@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.EmailAddressDetails#appointmentResponse:member">Office.EmailAddressDetails.appointmentResponse</xref>
+  - \[
+  [Office.EmailAddressDetails.appointmentResponse](/javascript/api/outlook/office.emailaddressdetails#appointmentresponse-member)
+  \]
 
   #### Examples
 

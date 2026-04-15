@@ -17,11 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeAreasCollection#items:member">Excel.RangeAreasCollection.items</xref>
+  - \[
+  [Excel.RangeAreasCollection.items](/javascript/api/excel/excel.rangeareascollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Window#rangeSelection:member">Excel.Window.rangeSelection</xref>
+  - \[
+  [Excel.Window.rangeSelection](/javascript/api/excel/excel.window#rangeselection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

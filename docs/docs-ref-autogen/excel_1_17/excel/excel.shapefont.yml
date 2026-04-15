@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.TextRange#font:member">Excel.TextRange.font</xref>
+  - \[ [Excel.TextRange.font](/javascript/api/excel/excel.textrange#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

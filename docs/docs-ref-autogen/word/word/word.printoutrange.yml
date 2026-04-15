@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentPrintOutOptions#range:member">Word.DocumentPrintOutOptions.range</xref>
+  - \[
+  [Word.DocumentPrintOutOptions.range](/javascript/api/word/word.documentprintoutoptions#range-member)
+  \]
 
 isPreview: false
 isDeprecated: false

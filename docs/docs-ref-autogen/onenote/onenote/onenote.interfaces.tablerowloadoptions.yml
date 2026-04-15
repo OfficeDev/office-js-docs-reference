@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#parentRow:member">OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow</xref>
+  - \[
+  [OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow](/javascript/api/onenote/onenote.interfaces.tablecellcollectionloadoptions#parentrow-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.TableCellLoadOptions#parentRow:member">OneNote.Interfaces.TableCellLoadOptions.parentRow</xref>
+  - \[
+  [OneNote.Interfaces.TableCellLoadOptions.parentRow](/javascript/api/onenote/onenote.interfaces.tablecellloadoptions#parentrow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

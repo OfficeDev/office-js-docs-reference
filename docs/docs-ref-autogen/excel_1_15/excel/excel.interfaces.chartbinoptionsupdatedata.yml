@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#binOptions:member">Excel.Interfaces.ChartSeriesUpdateData.binOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.binOptions](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#binoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

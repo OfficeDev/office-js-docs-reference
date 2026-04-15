@@ -20,68 +20,88 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentForm#optionalAttendees:member">Office.AppointmentForm.optionalAttendees</xref>
+  - \[
+  [Office.AppointmentForm.optionalAttendees](/javascript/api/outlook/office.appointmentform#optionalattendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentForm#requiredAttendees:member">Office.AppointmentForm.requiredAttendees</xref>
+  - \[
+  [Office.AppointmentForm.requiredAttendees](/javascript/api/outlook/office.appointmentform#requiredattendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#optionalAttendees:member">Office.AppointmentRead.optionalAttendees</xref>
+  - \[
+  [Office.AppointmentRead.optionalAttendees](/javascript/api/outlook/office.appointmentread#optionalattendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#organizer:member">Office.AppointmentRead.organizer</xref>
+  - \[
+  [Office.AppointmentRead.organizer](/javascript/api/outlook/office.appointmentread#organizer-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#requiredAttendees:member">Office.AppointmentRead.requiredAttendees</xref>
+  - \[
+  [Office.AppointmentRead.requiredAttendees](/javascript/api/outlook/office.appointmentread#requiredattendees-member)
+  \]
 
-  - <xref
-  href="outlook!Office.From#getAsync:member(1)">Office.From.getAsync</xref>
+  - \[
+  [Office.From.getAsync](/javascript/api/outlook/office.from#getasync-member) \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#cc:member">Office.LoadedMessageRead.cc</xref>
+  - \[
+  [Office.LoadedMessageRead.cc](/javascript/api/outlook/office.loadedmessageread#cc-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#from:member">Office.LoadedMessageRead.from</xref>
+  - \[
+  [Office.LoadedMessageRead.from](/javascript/api/outlook/office.loadedmessageread#from-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#sender:member">Office.LoadedMessageRead.sender</xref>
+  - \[
+  [Office.LoadedMessageRead.sender](/javascript/api/outlook/office.loadedmessageread#sender-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#to:member">Office.LoadedMessageRead.to</xref>
+  - \[
+  [Office.LoadedMessageRead.to](/javascript/api/outlook/office.loadedmessageread#to-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageForm#bccRecipients:member">Office.MessageForm.bccRecipients</xref>
+  - \[
+  [Office.MessageForm.bccRecipients](/javascript/api/outlook/office.messageform#bccrecipients-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageForm#ccRecipients:member">Office.MessageForm.ccRecipients</xref>
+  - \[
+  [Office.MessageForm.ccRecipients](/javascript/api/outlook/office.messageform#ccrecipients-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageForm#toRecipients:member">Office.MessageForm.toRecipients</xref>
+  - \[
+  [Office.MessageForm.toRecipients](/javascript/api/outlook/office.messageform#torecipients-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#cc:member">Office.MessageRead.cc</xref>
+  - \[
+  [Office.MessageRead.cc](/javascript/api/outlook/office.messageread#cc-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#from:member">Office.MessageRead.from</xref>
+  - \[
+  [Office.MessageRead.from](/javascript/api/outlook/office.messageread#from-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#sender:member">Office.MessageRead.sender</xref>
+  - \[
+  [Office.MessageRead.sender](/javascript/api/outlook/office.messageread#sender-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#to:member">Office.MessageRead.to</xref>
+  - \[
+  [Office.MessageRead.to](/javascript/api/outlook/office.messageread#to-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Organizer#getAsync:member(1)">Office.Organizer.getAsync</xref>
+  - \[
+  [Office.Organizer.getAsync](/javascript/api/outlook/office.organizer#getasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recipients#addAsync:member(1)">Office.Recipients.addAsync</xref>
+  - \[
+  [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#addasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recipients#getAsync:member(1)">Office.Recipients.getAsync</xref>
+  - \[
+  [Office.Recipients.getAsync](/javascript/api/outlook/office.recipients#getasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.Recipients#setAsync:member(1)">Office.Recipients.setAsync</xref>
+  - \[
+  [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#setasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

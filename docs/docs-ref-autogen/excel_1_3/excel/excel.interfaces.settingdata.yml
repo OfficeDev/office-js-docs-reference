@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SettingCollectionData#items:member">Excel.Interfaces.SettingCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.SettingCollectionData.items](/javascript/api/excel/excel.interfaces.settingcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SettingCollectionUpdateData#items:member">Excel.Interfaces.SettingCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.SettingCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.settingcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

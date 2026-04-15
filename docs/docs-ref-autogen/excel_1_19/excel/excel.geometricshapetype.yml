@@ -13,32 +13,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartDataLabel#geometricShapeType:member">Excel.ChartDataLabel.geometricShapeType</xref>
+  - \[
+  [Excel.ChartDataLabel.geometricShapeType](/javascript/api/excel/excel.chartdatalabel#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#geometricShapeType:member">Excel.ChartDataLabels.geometricShapeType</xref>
+  - \[
+  [Excel.ChartDataLabels.geometricShapeType](/javascript/api/excel/excel.chartdatalabels#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelData.geometricShapeType</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelData.geometricShapeType](/javascript/api/excel/excel.interfaces.chartdatalabeldata#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelsData.geometricShapeType</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsData.geometricShapeType](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelsUpdateData.geometricShapeType</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsUpdateData.geometricShapeType](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelUpdateData#geometricShapeType:member">Excel.Interfaces.ChartDataLabelUpdateData.geometricShapeType</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelUpdateData.geometricShapeType](/javascript/api/excel/excel.interfaces.chartdatalabelupdatedata#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeData#geometricShapeType:member">Excel.Interfaces.ShapeData.geometricShapeType</xref>
+  - \[
+  [Excel.Interfaces.ShapeData.geometricShapeType](/javascript/api/excel/excel.interfaces.shapedata#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member">Excel.Interfaces.ShapeUpdateData.geometricShapeType</xref>
+  - \[
+  [Excel.Interfaces.ShapeUpdateData.geometricShapeType](/javascript/api/excel/excel.interfaces.shapeupdatedata#geometricshapetype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Shape#geometricShapeType:member">Excel.Shape.geometricShapeType</xref>
+  - \[
+  [Excel.Shape.geometricShapeType](/javascript/api/excel/excel.shape#geometricshapetype-member)
+  \]
 
   #### Examples
 

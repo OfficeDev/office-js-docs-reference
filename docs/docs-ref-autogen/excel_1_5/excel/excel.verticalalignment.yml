@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member">Excel.Interfaces.RangeFormatData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatData.verticalAlignment](/javascript/api/excel/excel.interfaces.rangeformatdata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member">Excel.Interfaces.RangeFormatUpdateData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFormat#verticalAlignment:member">Excel.RangeFormat.verticalAlignment</xref>
+  - \[
+  [Excel.RangeFormat.verticalAlignment](/javascript/api/excel/excel.rangeformat#verticalalignment-member)
+  \]
 
   #### Examples
 

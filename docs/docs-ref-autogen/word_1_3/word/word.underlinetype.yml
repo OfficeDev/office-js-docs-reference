@@ -13,13 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Font#underline:member">Word.Font.underline</xref>
+  - \[ [Word.Font.underline](/javascript/api/word/word.font#underline-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#underline:member">Word.Interfaces.FontData.underline</xref>
+  - \[
+  [Word.Interfaces.FontData.underline](/javascript/api/word/word.interfaces.fontdata#underline-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#underline:member">Word.Interfaces.FontUpdateData.underline</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.underline](/javascript/api/word/word.interfaces.fontupdatedata#underline-member)
+  \]
 
   #### Examples
 

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#horizontalInVertical:member">Word.Interfaces.RangeData.horizontalInVertical</xref>
+  - \[
+  [Word.Interfaces.RangeData.horizontalInVertical](/javascript/api/word/word.interfaces.rangedata#horizontalinvertical-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#horizontalInVertical:member">Word.Interfaces.RangeUpdateData.horizontalInVertical</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.horizontalInVertical](/javascript/api/word/word.interfaces.rangeupdatedata#horizontalinvertical-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#horizontalInVertical:member">Word.Range.horizontalInVertical</xref>
+  - \[
+  [Word.Range.horizontalInVertical](/javascript/api/word/word.range#horizontalinvertical-member)
+  \]
 
 isPreview: false
 isDeprecated: false

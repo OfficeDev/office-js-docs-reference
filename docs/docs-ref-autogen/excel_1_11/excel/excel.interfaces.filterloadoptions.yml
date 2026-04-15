@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member">Excel.Interfaces.TableColumnCollectionLoadOptions.filter</xref>
+  - \[
+  [Excel.Interfaces.TableColumnCollectionLoadOptions.filter](/javascript/api/excel/excel.interfaces.tablecolumncollectionloadoptions#filter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableColumnLoadOptions#filter:member">Excel.Interfaces.TableColumnLoadOptions.filter</xref>
+  - \[
+  [Excel.Interfaces.TableColumnLoadOptions.filter](/javascript/api/excel/excel.interfaces.tablecolumnloadoptions#filter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

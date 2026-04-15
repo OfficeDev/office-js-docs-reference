@@ -13,20 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#font:member">Word.Body.font</xref>
+  - \[ [Word.Body.font](/javascript/api/word/word.body#font-member) \]
 
-  - <xref
-  href="word!Word.ContentControl#font:member">Word.ContentControl.font</xref>
+  - \[
+  [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
+  \]
 
-  - <xref href="word!Word.Paragraph#font:member">Word.Paragraph.font</xref>
+  - \[ [Word.Paragraph.font](/javascript/api/word/word.paragraph#font-member) \]
 
-  - <xref href="word!Word.Range#font:member">Word.Range.font</xref>
+  - \[ [Word.Range.font](/javascript/api/word/word.range#font-member) \]
 
-  - <xref href="word!Word.Style#font:member">Word.Style.font</xref>
+  - \[ [Word.Style.font](/javascript/api/word/word.style#font-member) \]
 
-  - <xref href="word!Word.Table#font:member">Word.Table.font</xref>
+  - \[ [Word.Table.font](/javascript/api/word/word.table#font-member) \]
 
-  - <xref href="word!Word.TableRow#font:member">Word.TableRow.font</xref>
+  - \[ [Word.TableRow.font](/javascript/api/word/word.tablerow#font-member) \]
 
   #### Examples
 

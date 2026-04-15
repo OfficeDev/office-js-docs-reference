@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartTitle#horizontalAlignment:member">Excel.ChartTitle.horizontalAlignment</xref>
+  - \[
+  [Excel.ChartTitle.horizontalAlignment](/javascript/api/excel/excel.charttitle#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleData#horizontalAlignment:member">Excel.Interfaces.ChartTitleData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttitledata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment:member">Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttitleupdatedata#horizontalalignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

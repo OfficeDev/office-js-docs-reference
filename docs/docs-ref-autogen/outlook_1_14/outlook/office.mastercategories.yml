@@ -32,8 +32,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#masterCategories:member">Office.Mailbox.masterCategories</xref>
+  - \[
+  [Office.Mailbox.masterCategories](/javascript/api/outlook/office.mailbox#mastercategories-member)
+  \]
 
 isPreview: false
 isDeprecated: false

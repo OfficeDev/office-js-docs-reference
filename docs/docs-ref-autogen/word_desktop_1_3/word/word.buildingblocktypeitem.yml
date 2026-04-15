@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlock#type:member">Word.BuildingBlock.type</xref>
+  - \[
+  [Word.BuildingBlock.type](/javascript/api/word/word.buildingblock#type-member)
+  \]
 
-  - <xref
-  href="word!Word.BuildingBlockCategory#type:member">Word.BuildingBlockCategory.type</xref>
+  - \[
+  [Word.BuildingBlockCategory.type](/javascript/api/word/word.buildingblockcategory#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

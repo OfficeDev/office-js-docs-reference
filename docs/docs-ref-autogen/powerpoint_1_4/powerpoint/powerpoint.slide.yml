@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideCollection#items:member">PowerPoint.SlideCollection.items</xref>
+  - \[
+  [PowerPoint.SlideCollection.items](/javascript/api/powerpoint/powerpoint.slidecollection#items-member)
+  \]
 
   #### Examples
 

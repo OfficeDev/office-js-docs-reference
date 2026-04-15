@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasCollectionData#items:member">Excel.Interfaces.RangeAreasCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasCollectionData.items](/javascript/api/excel/excel.interfaces.rangeareascollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasCollectionUpdateData#items:member">Excel.Interfaces.RangeAreasCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rangeareascollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookRangeAreasData#areas:member">Excel.Interfaces.WorkbookRangeAreasData.areas</xref>
+  - \[
+  [Excel.Interfaces.WorkbookRangeAreasData.areas](/javascript/api/excel/excel.interfaces.workbookrangeareasdata#areas-member)
+  \]
 
 isPreview: false
 isDeprecated: false

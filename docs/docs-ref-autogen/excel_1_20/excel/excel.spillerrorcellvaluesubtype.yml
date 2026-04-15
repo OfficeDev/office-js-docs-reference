@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SpillErrorCellValue#errorSubType:member">Excel.SpillErrorCellValue.errorSubType</xref>
+  - \[
+  [Excel.SpillErrorCellValue.errorSubType](/javascript/api/excel/excel.spillerrorcellvalue#errorsubtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

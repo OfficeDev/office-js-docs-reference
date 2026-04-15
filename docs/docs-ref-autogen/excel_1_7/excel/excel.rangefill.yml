@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeFormat#fill:member">Excel.RangeFormat.fill</xref>
+  - \[
+  [Excel.RangeFormat.fill](/javascript/api/excel/excel.rangeformat#fill-member)
+  \]
 
-  - <xref href="excel!Excel.Style#fill:member">Excel.Style.fill</xref>
+  - \[ [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCell](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNull:member">OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNull</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNull](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#parenttablecellornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member">OneNote.Interfaces.ParagraphLoadOptions.parentTableCell</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.parentTableCell](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member">OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull</xref>
+  - \[
+  [OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#parenttablecellornull-member)
+  \]
 
 isPreview: false
 isDeprecated: false

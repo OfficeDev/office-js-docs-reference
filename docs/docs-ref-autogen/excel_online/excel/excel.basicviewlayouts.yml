@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BooleanCellValue#layouts:member">Excel.BooleanCellValue.layouts</xref>
+  - \[
+  [Excel.BooleanCellValue.layouts](/javascript/api/excel/excel.booleancellvalue#layouts-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DoubleCellValue#layouts:member">Excel.DoubleCellValue.layouts</xref>
+  - \[
+  [Excel.DoubleCellValue.layouts](/javascript/api/excel/excel.doublecellvalue#layouts-member)
+  \]
 
-  - <xref
-  href="excel!Excel.StringCellValue#layouts:member">Excel.StringCellValue.layouts</xref>
+  - \[
+  [Excel.StringCellValue.layouts](/javascript/api/excel/excel.stringcellvalue#layouts-member)
+  \]
 
 isPreview: false
 isDeprecated: false

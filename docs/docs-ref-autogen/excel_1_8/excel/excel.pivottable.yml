@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotTableCollection#items:member">Excel.PivotTableCollection.items</xref>
+  - \[
+  [Excel.PivotTableCollection.items](/javascript/api/excel/excel.pivottablecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

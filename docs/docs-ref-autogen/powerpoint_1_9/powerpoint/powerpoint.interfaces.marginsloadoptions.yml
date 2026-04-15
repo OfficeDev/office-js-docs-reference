@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#margins:member">PowerPoint.Interfaces.TableCellCollectionLoadOptions.margins</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellCollectionLoadOptions.margins](/javascript/api/powerpoint/powerpoint.interfaces.tablecellcollectionloadoptions#margins-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#margins:member">PowerPoint.Interfaces.TableCellLoadOptions.margins</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellLoadOptions.margins](/javascript/api/powerpoint/powerpoint.interfaces.tablecellloadoptions#margins-member)
+  \]
 
 isPreview: false
 isDeprecated: false

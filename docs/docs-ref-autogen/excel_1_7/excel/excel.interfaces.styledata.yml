@@ -8,14 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleCollectionData#items:member">Excel.Interfaces.StyleCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.StyleCollectionData.items](/javascript/api/excel/excel.interfaces.stylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleCollectionUpdateData#items:member">Excel.Interfaces.StyleCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.StyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.stylecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#styles:member">Excel.Interfaces.WorkbookData.styles</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.styles](/javascript/api/excel/excel.interfaces.workbookdata#styles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

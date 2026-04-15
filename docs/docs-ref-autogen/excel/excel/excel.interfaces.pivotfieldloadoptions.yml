@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#field:member">Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field](/javascript/api/excel/excel.interfaces.datapivothierarchycollectionloadoptions#field-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member">Excel.Interfaces.DataPivotHierarchyLoadOptions.field</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyLoadOptions.field](/javascript/api/excel/excel.interfaces.datapivothierarchyloadoptions#field-member)
+  \]
 
 isPreview: false
 isDeprecated: false

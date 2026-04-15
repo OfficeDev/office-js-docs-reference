@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BusyErrorCellValue#errorSubType:member">Excel.BusyErrorCellValue.errorSubType</xref>
+  - \[
+  [Excel.BusyErrorCellValue.errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#errorsubtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

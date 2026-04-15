@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerCollectionData#items:member">Excel.Interfaces.SlicerCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.SlicerCollectionData.items](/javascript/api/excel/excel.interfaces.slicercollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerCollectionUpdateData#items:member">Excel.Interfaces.SlicerCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.SlicerCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.slicercollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

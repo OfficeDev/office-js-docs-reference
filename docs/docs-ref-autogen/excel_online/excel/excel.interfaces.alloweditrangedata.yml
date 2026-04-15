@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.AllowEditRangeCollectionData#items:member">Excel.Interfaces.AllowEditRangeCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.AllowEditRangeCollectionData.items](/javascript/api/excel/excel.interfaces.alloweditrangecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.AllowEditRangeCollectionUpdateData#items:member">Excel.Interfaces.AllowEditRangeCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.AllowEditRangeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.alloweditrangecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetProtectionData#allowEditRanges:member">Excel.Interfaces.WorksheetProtectionData.allowEditRanges</xref>
+  - \[
+  [Excel.Interfaces.WorksheetProtectionData.allowEditRanges](/javascript/api/excel/excel.interfaces.worksheetprotectiondata#alloweditranges-member)
+  \]
 
 isPreview: false
 isDeprecated: false

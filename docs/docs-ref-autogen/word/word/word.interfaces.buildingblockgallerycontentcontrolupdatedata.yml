@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#buildingBlockGalleryContentControl:member">Word.Interfaces.ContentControlUpdateData.buildingBlockGalleryContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.buildingBlockGalleryContentControl](/javascript/api/word/word.interfaces.contentcontrolupdatedata#buildingblockgallerycontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

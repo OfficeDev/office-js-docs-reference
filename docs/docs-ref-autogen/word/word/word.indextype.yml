@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Index#type:member">Word.Index.type</xref>
+  - \[ [Word.Index.type](/javascript/api/word/word.index#type-member) \]
 
-  - <xref
-  href="word!Word.IndexAddOptions#type:member">Word.IndexAddOptions.type</xref>
+  - \[
+  [Word.IndexAddOptions.type](/javascript/api/word/word.indexaddoptions#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexData#type:member">Word.Interfaces.IndexData.type</xref>
+  - \[
+  [Word.Interfaces.IndexData.type](/javascript/api/word/word.interfaces.indexdata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

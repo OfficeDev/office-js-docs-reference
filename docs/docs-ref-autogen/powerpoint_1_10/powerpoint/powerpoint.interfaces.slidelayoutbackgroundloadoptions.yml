@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions#background:member">PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions.background</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions.background](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutcollectionloadoptions#background-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#background:member">PowerPoint.Interfaces.SlideLayoutLoadOptions.background</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLayoutLoadOptions.background](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutloadoptions#background-member)
+  \]
 
 isPreview: false
 isDeprecated: false

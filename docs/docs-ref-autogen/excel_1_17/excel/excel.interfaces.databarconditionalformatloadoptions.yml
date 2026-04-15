@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#databar-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#databarornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member">Excel.Interfaces.ConditionalFormatLoadOptions.dataBar</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.dataBar](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#databar-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBarOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#databarornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

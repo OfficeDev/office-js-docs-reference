@@ -8,8 +8,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Bindings#addFromSelectionAsync:member(1)">Office.Bindings.addFromSelectionAsync</xref>
+  - \[
+  [Office.Bindings.addFromSelectionAsync](/javascript/api/office/office.bindings#addfromselectionasync-member)
+  \]
 
 isPreview: false
 isDeprecated: false

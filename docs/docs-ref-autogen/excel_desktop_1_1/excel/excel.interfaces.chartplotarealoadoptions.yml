@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#plotArea:member">Excel.Interfaces.ChartCollectionLoadOptions.plotArea</xref>
+  - \[
+  [Excel.Interfaces.ChartCollectionLoadOptions.plotArea](/javascript/api/excel/excel.interfaces.chartcollectionloadoptions#plotarea-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLoadOptions#plotArea:member">Excel.Interfaces.ChartLoadOptions.plotArea</xref>
+  - \[
+  [Excel.Interfaces.ChartLoadOptions.plotArea](/javascript/api/excel/excel.interfaces.chartloadoptions#plotarea-member)
+  \]
 
 isPreview: false
 isDeprecated: false

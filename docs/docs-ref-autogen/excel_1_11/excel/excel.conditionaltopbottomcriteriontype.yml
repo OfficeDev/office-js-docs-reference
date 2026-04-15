@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalTopBottomRule#type:member">Excel.ConditionalTopBottomRule.type</xref>
+  - \[
+  [Excel.ConditionalTopBottomRule.type](/javascript/api/excel/excel.conditionaltopbottomrule#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

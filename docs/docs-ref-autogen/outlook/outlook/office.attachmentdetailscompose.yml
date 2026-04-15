@@ -28,14 +28,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)">Office.AppointmentCompose.getAttachmentsAsync</xref>
+  - \[
+  [Office.AppointmentCompose.getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentsasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#getAttachmentsAsync:member(1)">Office.LoadedMessageCompose.getAttachmentsAsync</xref>
+  - \[
+  [Office.LoadedMessageCompose.getAttachmentsAsync](/javascript/api/outlook/office.loadedmessagecompose#getattachmentsasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#getAttachmentsAsync:member(1)">Office.MessageCompose.getAttachmentsAsync</xref>
+  - \[
+  [Office.MessageCompose.getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#getattachmentsasync-member)
+  \]
 
   #### Examples
 

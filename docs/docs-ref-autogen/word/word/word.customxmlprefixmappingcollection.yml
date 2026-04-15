@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlPart#namespaceManager:member">Word.CustomXmlPart.namespaceManager</xref>
+  - \[
+  [Word.CustomXmlPart.namespaceManager](/javascript/api/word/word.customxmlpart#namespacemanager-member)
+  \]
 
 isPreview: false
 isDeprecated: false

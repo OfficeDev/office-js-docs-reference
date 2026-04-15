@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Field#linkFormat:member">Word.Field.linkFormat</xref>
+  - \[
+  [Word.Field.linkFormat](/javascript/api/word/word.field#linkformat-member) \]
 
 isPreview: false
 isDeprecated: false

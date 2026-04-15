@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.InsertSlideOptions#formatting:member">PowerPoint.InsertSlideOptions.formatting</xref>
+  - \[
+  [PowerPoint.InsertSlideOptions.formatting](/javascript/api/powerpoint/powerpoint.insertslideoptions#formatting-member)
+  \]
 
   #### Examples
 

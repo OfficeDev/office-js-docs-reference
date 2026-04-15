@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisLine#words:member">OneNote.InkAnalysisLine.words</xref>
+  - \[
+  [OneNote.InkAnalysisLine.words](/javascript/api/onenote/onenote.inkanalysisline#words-member)
+  \]
 
 isPreview: false
 isDeprecated: false

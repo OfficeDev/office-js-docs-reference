@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CommentCollection#items:member">Word.CommentCollection.items</xref>
+  - \[
+  [Word.CommentCollection.items](/javascript/api/word/word.commentcollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.CommentReply#parentComment:member">Word.CommentReply.parentComment</xref>
+  - \[
+  [Word.CommentReply.parentComment](/javascript/api/word/word.commentreply#parentcomment-member)
+  \]
 
   #### Examples
 

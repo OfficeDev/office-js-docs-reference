@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ListFormatCountNumberedItemsOptions#numberType:member">Word.ListFormatCountNumberedItemsOptions.numberType</xref>
+  - \[
+  [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#numbertype-member)
+  \]
 
   #### Examples
 

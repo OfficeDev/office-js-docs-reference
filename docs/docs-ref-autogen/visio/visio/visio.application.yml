@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Document#application:member">Visio.Document.application</xref>
+  - \[
+  [Visio.Document.application](/javascript/api/visio/visio.document#application-member)
+  \]
 
 isPreview: false
 isDeprecated: false

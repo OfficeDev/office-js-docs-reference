@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#linkFormat:member">Word.Interfaces.FieldCollectionLoadOptions.linkFormat</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.linkFormat](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#linkformat-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#linkFormat:member">Word.Interfaces.FieldLoadOptions.linkFormat</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.linkFormat](/javascript/api/word/word.interfaces.fieldloadoptions#linkformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

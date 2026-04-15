@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.PageCollection#items:member">Word.PageCollection.items</xref>
+  - \[
+  [Word.PageCollection.items](/javascript/api/word/word.pagecollection#items-member)
+  \]
 
   #### Examples
 

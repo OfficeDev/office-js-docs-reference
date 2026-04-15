@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionLoadOptions#autoFilter:member">Excel.Interfaces.TableCollectionLoadOptions.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#autofilter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableLoadOptions#autoFilter:member">Excel.Interfaces.TableLoadOptions.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.TableLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.tableloadoptions#autofilter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member">Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#autofilter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#autoFilter:member">Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.worksheetcollectionloadoptions#autofilter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member">Excel.Interfaces.WorksheetLoadOptions.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.WorksheetLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.worksheetloadoptions#autofilter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

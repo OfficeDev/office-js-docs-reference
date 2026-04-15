@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotValueFilter#selectionType:member">Excel.PivotValueFilter.selectionType</xref>
+  - \[
+  [Excel.PivotValueFilter.selectionType](/javascript/api/excel/excel.pivotvaluefilter#selectiontype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

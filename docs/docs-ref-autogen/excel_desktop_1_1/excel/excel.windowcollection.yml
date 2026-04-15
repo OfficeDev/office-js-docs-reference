@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Application#windows:member">Excel.Application.windows</xref>
+  - \[
+  [Excel.Application.windows](/javascript/api/excel/excel.application#windows-member)
+  \]
 
 isPreview: false
 isDeprecated: false

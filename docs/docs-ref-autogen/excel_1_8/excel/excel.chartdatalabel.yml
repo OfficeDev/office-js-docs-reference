@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartPoint#dataLabel:member">Excel.ChartPoint.dataLabel</xref>
+  - \[
+  [Excel.ChartPoint.dataLabel](/javascript/api/excel/excel.chartpoint#datalabel-member)
+  \]
 
   #### Examples
 

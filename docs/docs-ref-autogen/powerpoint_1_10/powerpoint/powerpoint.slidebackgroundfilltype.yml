@@ -17,11 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData#type:member">PowerPoint.Interfaces.SlideBackgroundFillData.type</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideBackgroundFillData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundfilldata#type-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideBackgroundFill#type:member">PowerPoint.SlideBackgroundFill.type</xref>
+  - \[
+  [PowerPoint.SlideBackgroundFill.type](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#type-member)
+  \]
 
   #### Examples
 

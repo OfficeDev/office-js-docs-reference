@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Font#textShadow:member">Word.Font.textShadow</xref>
+  - \[ [Word.Font.textShadow](/javascript/api/word/word.font#textshadow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

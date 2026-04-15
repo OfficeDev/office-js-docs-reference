@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TemplateData#justificationMode:member">Word.Interfaces.TemplateData.justificationMode</xref>
+  - \[
+  [Word.Interfaces.TemplateData.justificationMode](/javascript/api/word/word.interfaces.templatedata#justificationmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateUpdateData#justificationMode:member">Word.Interfaces.TemplateUpdateData.justificationMode</xref>
+  - \[
+  [Word.Interfaces.TemplateUpdateData.justificationMode](/javascript/api/word/word.interfaces.templateupdatedata#justificationmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#justificationMode:member">Word.Template.justificationMode</xref>
+  - \[
+  [Word.Template.justificationMode](/javascript/api/word/word.template#justificationmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

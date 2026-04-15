@@ -8,20 +8,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FieldData#result:member">Word.Interfaces.FieldData.result</xref>
+  - \[
+  [Word.Interfaces.FieldData.result](/javascript/api/word/word.interfaces.fielddata#result-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionData#items:member">Word.Interfaces.RangeCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionData.items](/javascript/api/word/word.interfaces.rangecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionUpdateData#items:member">Word.Interfaces.RangeCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionUpdateData.items](/javascript/api/word/word.interfaces.rangecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionData#items:member">Word.Interfaces.RangeScopedCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionData.items](/javascript/api/word/word.interfaces.rangescopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member">Word.Interfaces.RangeScopedCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionUpdateData.items](/javascript/api/word/word.interfaces.rangescopedcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

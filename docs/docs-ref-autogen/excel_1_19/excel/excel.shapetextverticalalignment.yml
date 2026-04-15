@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameData#verticalAlignment:member">Excel.Interfaces.TextFrameData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.TextFrameData.verticalAlignment](/javascript/api/excel/excel.interfaces.textframedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member">Excel.Interfaces.TextFrameUpdateData.verticalAlignment</xref>
+  - \[
+  [Excel.Interfaces.TextFrameUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.textframeupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TextFrame#verticalAlignment:member">Excel.TextFrame.verticalAlignment</xref>
+  - \[
+  [Excel.TextFrame.verticalAlignment](/javascript/api/excel/excel.textframe#verticalalignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

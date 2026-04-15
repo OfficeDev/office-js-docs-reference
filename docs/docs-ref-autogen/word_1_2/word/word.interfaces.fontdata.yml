@@ -8,17 +8,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#font:member">Word.Interfaces.BodyData.font</xref>
+  - \[
+  [Word.Interfaces.BodyData.font](/javascript/api/word/word.interfaces.bodydata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#font:member">Word.Interfaces.ContentControlData.font</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.font](/javascript/api/word/word.interfaces.contentcontroldata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphData#font:member">Word.Interfaces.ParagraphData.font</xref>
+  - \[
+  [Word.Interfaces.ParagraphData.font](/javascript/api/word/word.interfaces.paragraphdata#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#font:member">Word.Interfaces.RangeData.font</xref>
+  - \[
+  [Word.Interfaces.RangeData.font](/javascript/api/word/word.interfaces.rangedata#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

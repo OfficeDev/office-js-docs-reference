@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.NoteCollectionData#items:member">Excel.Interfaces.NoteCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.NoteCollectionData.items](/javascript/api/excel/excel.interfaces.notecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NoteCollectionUpdateData#items:member">Excel.Interfaces.NoteCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.NoteCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.notecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotDateFilter#condition:member">Excel.PivotDateFilter.condition</xref>
+  - \[
+  [Excel.PivotDateFilter.condition](/javascript/api/excel/excel.pivotdatefilter#condition-member)
+  \]
 
   #### Examples
 

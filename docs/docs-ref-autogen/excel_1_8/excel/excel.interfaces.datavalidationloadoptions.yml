@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member">Excel.Interfaces.RangeLoadOptions.dataValidation</xref>
+  - \[
+  [Excel.Interfaces.RangeLoadOptions.dataValidation](/javascript/api/excel/excel.interfaces.rangeloadoptions#datavalidation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

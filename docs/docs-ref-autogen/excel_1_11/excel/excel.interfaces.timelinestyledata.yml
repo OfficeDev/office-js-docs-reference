@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TimelineStyleCollectionData#items:member">Excel.Interfaces.TimelineStyleCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.TimelineStyleCollectionData.items](/javascript/api/excel/excel.interfaces.timelinestylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member">Excel.Interfaces.TimelineStyleCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.TimelineStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.timelinestylecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#timelineStyles:member">Excel.Interfaces.WorkbookData.timelineStyles</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.timelineStyles](/javascript/api/excel/excel.interfaces.workbookdata#timelinestyles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

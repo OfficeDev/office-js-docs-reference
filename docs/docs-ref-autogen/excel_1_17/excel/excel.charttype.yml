@@ -13,22 +13,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Chart#chartType:member">Excel.Chart.chartType</xref>
+  - \[
+  [Excel.Chart.chartType](/javascript/api/excel/excel.chart#charttype-member) \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#chartType:member">Excel.ChartSeries.chartType</xref>
+  - \[
+  [Excel.ChartSeries.chartType](/javascript/api/excel/excel.chartseries#charttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartData#chartType:member">Excel.Interfaces.ChartData.chartType</xref>
+  - \[
+  [Excel.Interfaces.ChartData.chartType](/javascript/api/excel/excel.interfaces.chartdata#charttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#chartType:member">Excel.Interfaces.ChartSeriesData.chartType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.chartType](/javascript/api/excel/excel.interfaces.chartseriesdata#charttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member">Excel.Interfaces.ChartSeriesUpdateData.chartType</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.chartType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#charttype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartUpdateData#chartType:member">Excel.Interfaces.ChartUpdateData.chartType</xref>
+  - \[
+  [Excel.Interfaces.ChartUpdateData.chartType](/javascript/api/excel/excel.interfaces.chartupdatedata#charttype-member)
+  \]
 
   #### Examples
 

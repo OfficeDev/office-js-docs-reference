@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TextRange#paragraphFormat:member">PowerPoint.TextRange.paragraphFormat</xref>
+  - \[
+  [PowerPoint.TextRange.paragraphFormat](/javascript/api/powerpoint/powerpoint.textrange#paragraphformat-member)
+  \]
 
   #### Examples
 

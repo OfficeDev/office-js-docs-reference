@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#fill:member">Word.Interfaces.ShapeUpdateData.fill</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.fill](/javascript/api/word/word.interfaces.shapeupdatedata#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

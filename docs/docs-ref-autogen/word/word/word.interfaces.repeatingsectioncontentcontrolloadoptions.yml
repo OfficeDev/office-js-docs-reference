@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#repeatingSectionContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.repeatingSectionContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.repeatingSectionContentControl](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#repeatingsectioncontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#repeatingSectionContentControl:member">Word.Interfaces.ContentControlLoadOptions.repeatingSectionContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.repeatingSectionContentControl](/javascript/api/word/word.interfaces.contentcontrolloadoptions#repeatingsectioncontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

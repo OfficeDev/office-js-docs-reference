@@ -13,26 +13,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SelectionDeleteOptions#unit:member">Word.SelectionDeleteOptions.unit</xref>
+  - \[
+  [Word.SelectionDeleteOptions.unit](/javascript/api/word/word.selectiondeleteoptions#unit-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionMoveLeftRightOptions#unit:member">Word.SelectionMoveLeftRightOptions.unit</xref>
+  - \[
+  [Word.SelectionMoveLeftRightOptions.unit](/javascript/api/word/word.selectionmoveleftrightoptions#unit-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionMoveOptions#unit:member">Word.SelectionMoveOptions.unit</xref>
+  - \[
+  [Word.SelectionMoveOptions.unit](/javascript/api/word/word.selectionmoveoptions#unit-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionMoveStartEndOptions#unit:member">Word.SelectionMoveStartEndOptions.unit</xref>
+  - \[
+  [Word.SelectionMoveStartEndOptions.unit](/javascript/api/word/word.selectionmovestartendoptions#unit-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionMoveUpDownOptions#unit:member">Word.SelectionMoveUpDownOptions.unit</xref>
+  - \[
+  [Word.SelectionMoveUpDownOptions.unit](/javascript/api/word/word.selectionmoveupdownoptions#unit-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionNextOptions#unit:member">Word.SelectionNextOptions.unit</xref>
+  - \[
+  [Word.SelectionNextOptions.unit](/javascript/api/word/word.selectionnextoptions#unit-member)
+  \]
 
-  - <xref
-  href="word!Word.SelectionPreviousOptions#unit:member">Word.SelectionPreviousOptions.unit</xref>
+  - \[
+  [Word.SelectionPreviousOptions.unit](/javascript/api/word/word.selectionpreviousoptions#unit-member)
+  \]
 
   #### Examples
 

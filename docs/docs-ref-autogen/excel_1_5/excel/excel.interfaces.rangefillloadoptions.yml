@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member">Excel.Interfaces.RangeFormatLoadOptions.fill</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatLoadOptions.fill](/javascript/api/excel/excel.interfaces.rangeformatloadoptions#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

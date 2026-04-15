@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SortField#dataOption:member">Excel.SortField.dataOption</xref>
+  - \[
+  [Excel.SortField.dataOption](/javascript/api/excel/excel.sortfield#dataoption-member)
+  \]
 
 isPreview: false
 isDeprecated: false

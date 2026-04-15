@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotLayout#pivotStyle:member">Excel.PivotLayout.pivotStyle</xref>
+  - \[
+  [Excel.PivotLayout.pivotStyle](/javascript/api/excel/excel.pivotlayout#pivotstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotTableStyleCollection#items:member">Excel.PivotTableStyleCollection.items</xref>
+  - \[
+  [Excel.PivotTableStyleCollection.items](/javascript/api/excel/excel.pivottablestylecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

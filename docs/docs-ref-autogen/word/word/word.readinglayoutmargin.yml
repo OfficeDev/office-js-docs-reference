@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#readingLayoutTruncateMargins:member">Word.Interfaces.ViewData.readingLayoutTruncateMargins</xref>
+  - \[
+  [Word.Interfaces.ViewData.readingLayoutTruncateMargins](/javascript/api/word/word.interfaces.viewdata#readinglayouttruncatemargins-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ViewUpdateData#readingLayoutTruncateMargins:member">Word.Interfaces.ViewUpdateData.readingLayoutTruncateMargins</xref>
+  - \[
+  [Word.Interfaces.ViewUpdateData.readingLayoutTruncateMargins](/javascript/api/word/word.interfaces.viewupdatedata#readinglayouttruncatemargins-member)
+  \]
 
-  - <xref
-  href="word!Word.View#readingLayoutTruncateMargins:member">Word.View.readingLayoutTruncateMargins</xref>
+  - \[
+  [Word.View.readingLayoutTruncateMargins](/javascript/api/word/word.view#readinglayouttruncatemargins-member)
+  \]
 
 isPreview: false
 isDeprecated: false

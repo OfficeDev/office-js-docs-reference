@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#xerrorbars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member">Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#yerrorbars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#xErrorBars:member">Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#xerrorbars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesLoadOptions#yErrorBars:member">Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#yerrorbars-member)
+  \]
 
 isPreview: false
 isDeprecated: false

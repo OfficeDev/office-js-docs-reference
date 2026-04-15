@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableData#autoFilter:member">Excel.Interfaces.TableData.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.TableData.autoFilter](/javascript/api/excel/excel.interfaces.tabledata#autofilter-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#autoFilter:member">Excel.Interfaces.WorksheetData.autoFilter</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.autoFilter](/javascript/api/excel/excel.interfaces.worksheetdata#autofilter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

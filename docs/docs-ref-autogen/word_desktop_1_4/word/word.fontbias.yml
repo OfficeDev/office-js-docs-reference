@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.SelectionInsertSymbolOptions#bias:member">Word.SelectionInsertSymbolOptions.bias</xref>
+  - \[
+  [Word.SelectionInsertSymbolOptions.bias](/javascript/api/word/word.selectioninsertsymboloptions#bias-member)
+  \]
 
   #### Examples
 

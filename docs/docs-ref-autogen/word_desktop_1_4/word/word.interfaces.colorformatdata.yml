@@ -10,32 +10,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatData#backgroundColor:member">Word.Interfaces.FillFormatData.backgroundColor</xref>
+  - \[
+  [Word.Interfaces.FillFormatData.backgroundColor](/javascript/api/word/word.interfaces.fillformatdata#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatData#foregroundColor:member">Word.Interfaces.FillFormatData.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.FillFormatData.foregroundColor](/javascript/api/word/word.interfaces.fillformatdata#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#textColor:member">Word.Interfaces.FontData.textColor</xref>
+  - \[
+  [Word.Interfaces.FontData.textColor](/javascript/api/word/word.interfaces.fontdata#textcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GlowFormatData#color:member">Word.Interfaces.GlowFormatData.color</xref>
+  - \[
+  [Word.Interfaces.GlowFormatData.color](/javascript/api/word/word.interfaces.glowformatdata#color-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#backgroundColor:member">Word.Interfaces.LineFormatData.backgroundColor</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.backgroundColor](/javascript/api/word/word.interfaces.lineformatdata#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#foregroundColor:member">Word.Interfaces.LineFormatData.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.foregroundColor](/javascript/api/word/word.interfaces.lineformatdata#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadowFormatData#foregroundColor:member">Word.Interfaces.ShadowFormatData.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.ShadowFormatData.foregroundColor](/javascript/api/word/word.interfaces.shadowformatdata#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#contourColor:member">Word.Interfaces.ThreeDimensionalFormatData.contourColor</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.contourColor](/javascript/api/word/word.interfaces.threedimensionalformatdata#contourcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColor:member">Word.Interfaces.ThreeDimensionalFormatData.extrusionColor</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.extrusionColor](/javascript/api/word/word.interfaces.threedimensionalformatdata#extrusioncolor-member)
+  \]
 
 isPreview: false
 isDeprecated: false

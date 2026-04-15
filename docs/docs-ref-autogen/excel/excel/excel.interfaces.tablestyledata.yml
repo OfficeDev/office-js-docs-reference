@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableData#tableStyle:member">Excel.Interfaces.TableData.tableStyle</xref>
+  - \[
+  [Excel.Interfaces.TableData.tableStyle](/javascript/api/excel/excel.interfaces.tabledata#tablestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableStyleCollectionData#items:member">Excel.Interfaces.TableStyleCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.TableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.tablestylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member">Excel.Interfaces.TableStyleCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.TableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablestylecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#tableStyles:member">Excel.Interfaces.WorkbookData.tableStyles</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.tableStyles](/javascript/api/excel/excel.interfaces.workbookdata#tablestyles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

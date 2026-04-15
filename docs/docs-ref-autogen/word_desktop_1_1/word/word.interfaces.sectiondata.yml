@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#sections:member">Word.Interfaces.DocumentData.sections</xref>
+  - \[
+  [Word.Interfaces.DocumentData.sections](/javascript/api/word/word.interfaces.documentdata#sections-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionCollectionData#items:member">Word.Interfaces.SectionCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.SectionCollectionData.items](/javascript/api/word/word.interfaces.sectioncollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionCollectionUpdateData#items:member">Word.Interfaces.SectionCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.SectionCollectionUpdateData.items](/javascript/api/word/word.interfaces.sectioncollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -23,23 +23,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(1)">Office.AppointmentCompose.getAttachmentContentAsync</xref>
+  - \[
+  [Office.AppointmentCompose.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentcontentasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)">Office.AppointmentRead.getAttachmentContentAsync</xref>
+  - \[
+  [Office.AppointmentRead.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#getattachmentcontentasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#getAttachmentContentAsync:member(1)">Office.LoadedMessageCompose.getAttachmentContentAsync</xref>
+  - \[
+  [Office.LoadedMessageCompose.getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessagecompose#getattachmentcontentasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member(1)">Office.LoadedMessageRead.getAttachmentContentAsync</xref>
+  - \[
+  [Office.LoadedMessageRead.getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#getattachmentcontentasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)">Office.MessageCompose.getAttachmentContentAsync</xref>
+  - \[
+  [Office.MessageCompose.getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#getattachmentcontentasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getAttachmentContentAsync:member(1)">Office.MessageRead.getAttachmentContentAsync</xref>
+  - \[
+  [Office.MessageRead.getAttachmentContentAsync](/javascript/api/outlook/office.messageread#getattachmentcontentasync-member)
+  \]
 
   #### Examples
 

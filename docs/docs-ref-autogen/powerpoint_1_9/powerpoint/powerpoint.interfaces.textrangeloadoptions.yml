@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextFrameLoadOptions#textRange:member">PowerPoint.Interfaces.TextFrameLoadOptions.textRange</xref>
+  - \[
+  [PowerPoint.Interfaces.TextFrameLoadOptions.textRange](/javascript/api/powerpoint/powerpoint.interfaces.textframeloadoptions#textrange-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -16,14 +16,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeTextWrapData#side:member">Word.Interfaces.ShapeTextWrapData.side</xref>
+  - \[
+  [Word.Interfaces.ShapeTextWrapData.side](/javascript/api/word/word.interfaces.shapetextwrapdata#side-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeTextWrapUpdateData#side:member">Word.Interfaces.ShapeTextWrapUpdateData.side</xref>
+  - \[
+  [Word.Interfaces.ShapeTextWrapUpdateData.side](/javascript/api/word/word.interfaces.shapetextwrapupdatedata#side-member)
+  \]
 
-  - <xref
-  href="word!Word.ShapeTextWrap#side:member">Word.ShapeTextWrap.side</xref>
+  - \[
+  [Word.ShapeTextWrap.side](/javascript/api/word/word.shapetextwrap#side-member)
+  \]
 
   #### Examples
 

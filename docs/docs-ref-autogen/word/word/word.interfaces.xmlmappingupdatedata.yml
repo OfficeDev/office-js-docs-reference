@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#xmlMapping:member">Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolupdatedata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#xmlMapping:member">Word.Interfaces.ContentControlUpdateData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.contentcontrolupdatedata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlUpdateData#xmlMapping:member">Word.Interfaces.DatePickerContentControlUpdateData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlUpdateData#xmlMapping:member">Word.Interfaces.GroupContentControlUpdateData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.groupcontentcontrolupdatedata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlUpdateData#xmlMapping:member">Word.Interfaces.PictureContentControlUpdateData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.picturecontentcontrolupdatedata#xmlmapping-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#xmlMapping:member">Word.Interfaces.RepeatingSectionContentControlUpdateData.xmlMapping</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.repeatingsectioncontentcontrolupdatedata#xmlmapping-member)
+  \]
 
 isPreview: false
 isDeprecated: false

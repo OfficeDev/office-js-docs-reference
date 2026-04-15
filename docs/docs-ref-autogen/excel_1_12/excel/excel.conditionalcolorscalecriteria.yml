@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ColorScaleConditionalFormat#criteria:member">Excel.ColorScaleConditionalFormat.criteria</xref>
+  - \[
+  [Excel.ColorScaleConditionalFormat.criteria](/javascript/api/excel/excel.colorscaleconditionalformat#criteria-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member">Excel.Interfaces.ColorScaleConditionalFormatData.criteria</xref>
+  - \[
+  [Excel.Interfaces.ColorScaleConditionalFormatData.criteria](/javascript/api/excel/excel.interfaces.colorscaleconditionalformatdata#criteria-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData#criteria:member">Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria</xref>
+  - \[
+  [Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria](/javascript/api/excel/excel.interfaces.colorscaleconditionalformatupdatedata#criteria-member)
+  \]
 
   #### Examples
 

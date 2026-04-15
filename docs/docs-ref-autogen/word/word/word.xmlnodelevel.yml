@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeData#level:member">Word.Interfaces.XmlNodeData.level</xref>
+  - \[
+  [Word.Interfaces.XmlNodeData.level](/javascript/api/word/word.interfaces.xmlnodedata#level-member)
+  \]
 
-  - <xref href="word!Word.XmlNode#level:member">Word.XmlNode.level</xref>
+  - \[ [Word.XmlNode.level](/javascript/api/word/word.xmlnode#level-member) \]
 
 isPreview: false
 isDeprecated: false

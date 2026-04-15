@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.RangeFormatConfiguration#cells:member">Office.RangeFormatConfiguration.cells</xref>
+  - \[
+  [Office.RangeFormatConfiguration.cells](/javascript/api/office/office.rangeformatconfiguration#cells-member)
+  \]
 
   #### Examples
 

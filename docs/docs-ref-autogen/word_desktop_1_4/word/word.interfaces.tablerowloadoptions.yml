@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member">Word.Interfaces.TableCellCollectionLoadOptions.parentRow</xref>
+  - \[
+  [Word.Interfaces.TableCellCollectionLoadOptions.parentRow](/javascript/api/word/word.interfaces.tablecellcollectionloadoptions#parentrow-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellLoadOptions#parentRow:member">Word.Interfaces.TableCellLoadOptions.parentRow</xref>
+  - \[
+  [Word.Interfaces.TableCellLoadOptions.parentRow](/javascript/api/word/word.interfaces.tablecellloadoptions#parentrow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

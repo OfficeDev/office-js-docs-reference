@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameData#verticalOverflow:member">Excel.Interfaces.TextFrameData.verticalOverflow</xref>
+  - \[
+  [Excel.Interfaces.TextFrameData.verticalOverflow](/javascript/api/excel/excel.interfaces.textframedata#verticaloverflow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member">Excel.Interfaces.TextFrameUpdateData.verticalOverflow</xref>
+  - \[
+  [Excel.Interfaces.TextFrameUpdateData.verticalOverflow](/javascript/api/excel/excel.interfaces.textframeupdatedata#verticaloverflow-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TextFrame#verticalOverflow:member">Excel.TextFrame.verticalOverflow</xref>
+  - \[
+  [Excel.TextFrame.verticalOverflow](/javascript/api/excel/excel.textframe#verticaloverflow-member)
+  \]
 
 isPreview: false
 isDeprecated: false

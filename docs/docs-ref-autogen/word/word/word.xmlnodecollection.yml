@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.XmlNode#attributes:member">Word.XmlNode.attributes</xref>
+  - \[
+  [Word.XmlNode.attributes](/javascript/api/word/word.xmlnode#attributes-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlNode#childNodes:member">Word.XmlNode.childNodes</xref>
+  - \[
+  [Word.XmlNode.childNodes](/javascript/api/word/word.xmlnode#childnodes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

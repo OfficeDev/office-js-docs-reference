@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotField#items:member">Excel.PivotField.items</xref>
+  - \[
+  [Excel.PivotField.items](/javascript/api/excel/excel.pivotfield#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,13 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TableBorderData#type:member">Word.Interfaces.TableBorderData.type</xref>
+  - \[
+  [Word.Interfaces.TableBorderData.type](/javascript/api/word/word.interfaces.tableborderdata#type-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableBorderUpdateData#type:member">Word.Interfaces.TableBorderUpdateData.type</xref>
+  - \[
+  [Word.Interfaces.TableBorderUpdateData.type](/javascript/api/word/word.interfaces.tableborderupdatedata#type-member)
+  \]
 
-  - <xref href="word!Word.TableBorder#type:member">Word.TableBorder.type</xref>
+  - \[
+  [Word.TableBorder.type](/javascript/api/word/word.tableborder#type-member) \]
 
   #### Examples
 

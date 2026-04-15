@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Font#numberForm:member">Word.Font.numberForm</xref>
+  - \[ [Word.Font.numberForm](/javascript/api/word/word.font#numberform-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#numberForm:member">Word.Interfaces.FontData.numberForm</xref>
+  - \[
+  [Word.Interfaces.FontData.numberForm](/javascript/api/word/word.interfaces.fontdata#numberform-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#numberForm:member">Word.Interfaces.FontUpdateData.numberForm</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.numberForm](/javascript/api/word/word.interfaces.fontupdatedata#numberform-member)
+  \]
 
 isPreview: false
 isDeprecated: false

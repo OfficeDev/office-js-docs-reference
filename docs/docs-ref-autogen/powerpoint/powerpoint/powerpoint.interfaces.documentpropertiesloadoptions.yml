@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#properties:member">PowerPoint.Interfaces.PresentationLoadOptions.properties</xref>
+  - \[
+  [PowerPoint.Interfaces.PresentationLoadOptions.properties](/javascript/api/powerpoint/powerpoint.interfaces.presentationloadoptions#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

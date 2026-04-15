@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#listTemplates:member">Word.Interfaces.DocumentData.listTemplates</xref>
+  - \[
+  [Word.Interfaces.DocumentData.listTemplates](/javascript/api/word/word.interfaces.documentdata#listtemplates-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListFormatData#listTemplate:member">Word.Interfaces.ListFormatData.listTemplate</xref>
+  - \[
+  [Word.Interfaces.ListFormatData.listTemplate](/javascript/api/word/word.interfaces.listformatdata#listtemplate-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListTemplateCollectionData#items:member">Word.Interfaces.ListTemplateCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.ListTemplateCollectionData.items](/javascript/api/word/word.interfaces.listtemplatecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member">Word.Interfaces.ListTemplateCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.ListTemplateCollectionUpdateData.items](/javascript/api/word/word.interfaces.listtemplatecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleData#listTemplate:member">Word.Interfaces.StyleData.listTemplate</xref>
+  - \[
+  [Word.Interfaces.StyleData.listTemplate](/javascript/api/word/word.interfaces.styledata#listtemplate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

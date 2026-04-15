@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataValidationRule#custom:member">Excel.DataValidationRule.custom</xref>
+  - \[
+  [Excel.DataValidationRule.custom](/javascript/api/excel/excel.datavalidationrule#custom-member)
+  \]
 
 isPreview: false
 isDeprecated: false

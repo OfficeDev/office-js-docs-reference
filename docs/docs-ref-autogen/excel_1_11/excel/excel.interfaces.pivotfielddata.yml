@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyData#field:member">Excel.Interfaces.DataPivotHierarchyData.field</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyData.field](/javascript/api/excel/excel.interfaces.datapivothierarchydata#field-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member">Excel.Interfaces.FilterPivotHierarchyData.fields</xref>
+  - \[
+  [Excel.Interfaces.FilterPivotHierarchyData.fields](/javascript/api/excel/excel.interfaces.filterpivothierarchydata#fields-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotFieldCollectionData#items:member">Excel.Interfaces.PivotFieldCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotFieldCollectionData.items](/javascript/api/excel/excel.interfaces.pivotfieldcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member">Excel.Interfaces.PivotFieldCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.PivotFieldCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivotfieldcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotHierarchyData#fields:member">Excel.Interfaces.PivotHierarchyData.fields</xref>
+  - \[
+  [Excel.Interfaces.PivotHierarchyData.fields](/javascript/api/excel/excel.interfaces.pivothierarchydata#fields-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member">Excel.Interfaces.RowColumnPivotHierarchyData.fields</xref>
+  - \[
+  [Excel.Interfaces.RowColumnPivotHierarchyData.fields](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchydata#fields-member)
+  \]
 
 isPreview: false
 isDeprecated: false

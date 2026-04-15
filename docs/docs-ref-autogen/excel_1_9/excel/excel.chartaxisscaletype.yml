@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#scaleType:member">Excel.ChartAxis.scaleType</xref>
+  - \[
+  [Excel.ChartAxis.scaleType](/javascript/api/excel/excel.chartaxis#scaletype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#scaleType:member">Excel.Interfaces.ChartAxisData.scaleType</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.scaleType](/javascript/api/excel/excel.interfaces.chartaxisdata#scaletype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#scaleType:member">Excel.Interfaces.ChartAxisUpdateData.scaleType</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.scaleType](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#scaletype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

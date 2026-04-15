@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.TableAutoFormatOptions#format:member">Word.TableAutoFormatOptions.format</xref>
+  - \[
+  [Word.TableAutoFormatOptions.format](/javascript/api/word/word.tableautoformatoptions#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

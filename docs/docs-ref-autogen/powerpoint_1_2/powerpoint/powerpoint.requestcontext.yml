@@ -15,17 +15,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Application#context:member">PowerPoint.Application.context</xref>
+  - \[
+  [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Presentation#context:member">PowerPoint.Presentation.context</xref>
+  - \[
+  [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Slide#context:member">PowerPoint.Slide.context</xref>
+  - \[
+  [PowerPoint.Slide.context](/javascript/api/powerpoint/powerpoint.slide#context-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.SlideCollection#context:member">PowerPoint.SlideCollection.context</xref>
+  - \[
+  [PowerPoint.SlideCollection.context](/javascript/api/powerpoint/powerpoint.slidecollection#context-member)
+  \]
 
   #### Examples
 

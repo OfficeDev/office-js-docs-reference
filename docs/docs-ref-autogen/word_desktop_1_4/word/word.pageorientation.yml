@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupData#orientation:member">Word.Interfaces.PageSetupData.orientation</xref>
+  - \[
+  [Word.Interfaces.PageSetupData.orientation](/javascript/api/word/word.interfaces.pagesetupdata#orientation-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageSetupUpdateData#orientation:member">Word.Interfaces.PageSetupUpdateData.orientation</xref>
+  - \[
+  [Word.Interfaces.PageSetupUpdateData.orientation](/javascript/api/word/word.interfaces.pagesetupupdatedata#orientation-member)
+  \]
 
-  - <xref
-  href="word!Word.PageSetup#orientation:member">Word.PageSetup.orientation</xref>
+  - \[
+  [Word.PageSetup.orientation](/javascript/api/word/word.pagesetup#orientation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

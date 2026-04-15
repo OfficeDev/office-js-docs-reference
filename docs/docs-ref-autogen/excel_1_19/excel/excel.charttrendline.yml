@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartTrendlineCollection#items:member">Excel.ChartTrendlineCollection.items</xref>
+  - \[
+  [Excel.ChartTrendlineCollection.items](/javascript/api/excel/excel.charttrendlinecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

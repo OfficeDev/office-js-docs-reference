@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomConditionalFormatUpdateData#rule:member">Excel.Interfaces.CustomConditionalFormatUpdateData.rule</xref>
+  - \[
+  [Excel.Interfaces.CustomConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.customconditionalformatupdatedata#rule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DocumentTask#changes:member">Excel.DocumentTask.changes</xref>
+  - \[
+  [Excel.DocumentTask.changes](/javascript/api/excel/excel.documenttask#changes-member)
+  \]
 
 isPreview: true
 isDeprecated: false

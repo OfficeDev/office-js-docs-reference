@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#pivotOptions:member">Excel.Interfaces.ChartCollectionLoadOptions.pivotOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartCollectionLoadOptions.pivotOptions](/javascript/api/excel/excel.interfaces.chartcollectionloadoptions#pivotoptions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLoadOptions#pivotOptions:member">Excel.Interfaces.ChartLoadOptions.pivotOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartLoadOptions.pivotOptions](/javascript/api/excel/excel.interfaces.chartloadoptions#pivotoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

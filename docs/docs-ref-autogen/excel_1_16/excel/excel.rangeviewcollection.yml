@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.RangeView#rows:member">Excel.RangeView.rows</xref>
+  - \[ [Excel.RangeView.rows](/javascript/api/excel/excel.rangeview#rows-member)
+  \]
 
 isPreview: false
 isDeprecated: false

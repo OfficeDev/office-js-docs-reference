@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member">Excel.Interfaces.HeaderFooterGroupUpdateData.defaultForAllPages</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupUpdateData.defaultForAllPages](/javascript/api/excel/excel.interfaces.headerfootergroupupdatedata#defaultforallpages-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member">Excel.Interfaces.HeaderFooterGroupUpdateData.evenPages</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupUpdateData.evenPages](/javascript/api/excel/excel.interfaces.headerfootergroupupdatedata#evenpages-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member">Excel.Interfaces.HeaderFooterGroupUpdateData.firstPage</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupUpdateData.firstPage](/javascript/api/excel/excel.interfaces.headerfootergroupupdatedata#firstpage-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member">Excel.Interfaces.HeaderFooterGroupUpdateData.oddPages</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterGroupUpdateData.oddPages](/javascript/api/excel/excel.interfaces.headerfootergroupupdatedata#oddpages-member)
+  \]
 
 isPreview: false
 isDeprecated: false

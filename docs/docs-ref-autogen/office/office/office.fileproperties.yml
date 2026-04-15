@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Document#getFilePropertiesAsync:member(1)">Office.Document.getFilePropertiesAsync</xref>
+  - \[
+  [Office.Document.getFilePropertiesAsync](/javascript/api/office/office.document#getfilepropertiesasync-member)
+  \]
 
   #### Examples
 

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Table#columns:member">Excel.Table.columns</xref>
+  - \[ [Excel.Table.columns](/javascript/api/excel/excel.table#columns-member)
+  \]
 
   #### Examples
 

@@ -25,8 +25,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#isAllDayEvent:member">Office.AppointmentCompose.isAllDayEvent</xref>
+  - \[
+  [Office.AppointmentCompose.isAllDayEvent](/javascript/api/outlook/office.appointmentcompose#isalldayevent-member)
+  \]
 
 isPreview: true
 isDeprecated: false

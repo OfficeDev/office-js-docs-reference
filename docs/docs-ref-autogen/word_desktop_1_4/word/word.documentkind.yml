@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Document#kind:member">Word.Document.kind</xref>
+  - \[ [Word.Document.kind](/javascript/api/word/word.document#kind-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#kind:member">Word.Interfaces.DocumentData.kind</xref>
+  - \[
+  [Word.Interfaces.DocumentData.kind](/javascript/api/word/word.interfaces.documentdata#kind-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#kind:member">Word.Interfaces.DocumentUpdateData.kind</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.kind](/javascript/api/word/word.interfaces.documentupdatedata#kind-member)
+  \]
 
 isPreview: false
 isDeprecated: false

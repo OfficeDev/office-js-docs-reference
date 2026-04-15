@@ -14,22 +14,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.HeaderFooterPicture#colorType:member">Excel.HeaderFooterPicture.colorType</xref>
+  - \[
+  [Excel.HeaderFooterPicture.colorType](/javascript/api/excel/excel.headerfooterpicture#colortype-member)
+  \]
 
-  - <xref href="excel!Excel.Image#colorType:member">Excel.Image.colorType</xref>
+  - \[
+  [Excel.Image.colorType](/javascript/api/excel/excel.image#colortype-member) \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterPictureData#colorType:member">Excel.Interfaces.HeaderFooterPictureData.colorType</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterPictureData.colorType](/javascript/api/excel/excel.interfaces.headerfooterpicturedata#colortype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterPictureUpdateData#colorType:member">Excel.Interfaces.HeaderFooterPictureUpdateData.colorType</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterPictureUpdateData.colorType](/javascript/api/excel/excel.interfaces.headerfooterpictureupdatedata#colortype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ImageData#colorType:member">Excel.Interfaces.ImageData.colorType</xref>
+  - \[
+  [Excel.Interfaces.ImageData.colorType](/javascript/api/excel/excel.interfaces.imagedata#colortype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ImageUpdateData#colorType:member">Excel.Interfaces.ImageUpdateData.colorType</xref>
+  - \[
+  [Excel.Interfaces.ImageUpdateData.colorType](/javascript/api/excel/excel.interfaces.imageupdatedata#colortype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

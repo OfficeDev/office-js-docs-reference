@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeData#linkedDataTypeState:member">Excel.Interfaces.RangeData.linkedDataTypeState</xref>
+  - \[
+  [Excel.Interfaces.RangeData.linkedDataTypeState](/javascript/api/excel/excel.interfaces.rangedata#linkeddatatypestate-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Range#linkedDataTypeState:member">Excel.Range.linkedDataTypeState</xref>
+  - \[
+  [Excel.Range.linkedDataTypeState](/javascript/api/excel/excel.range#linkeddatatypestate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

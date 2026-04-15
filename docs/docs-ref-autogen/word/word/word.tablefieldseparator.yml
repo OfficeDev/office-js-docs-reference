@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.TableConvertToTextOptions#separator:member">Word.TableConvertToTextOptions.separator</xref>
+  - \[
+  [Word.TableConvertToTextOptions.separator](/javascript/api/word/word.tableconverttotextoptions#separator-member)
+  \]
 
 isPreview: false
 isDeprecated: false

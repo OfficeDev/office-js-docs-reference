@@ -16,11 +16,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotTableCollection#items:member">Excel.PivotTableCollection.items</xref>
+  - \[
+  [Excel.PivotTableCollection.items](/javascript/api/excel/excel.pivottablecollection#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotTableScopedCollection#items:member">Excel.PivotTableScopedCollection.items</xref>
+  - \[
+  [Excel.PivotTableScopedCollection.items](/javascript/api/excel/excel.pivottablescopedcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

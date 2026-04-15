@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Ribbon#requestUpdate:member(1)">Office.Ribbon.requestUpdate</xref>
+  - \[
+  [Office.Ribbon.requestUpdate](/javascript/api/office/office.ribbon#requestupdate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.BulletFormat#style:member">PowerPoint.BulletFormat.style</xref>
+  - \[
+  [PowerPoint.BulletFormat.style](/javascript/api/powerpoint/powerpoint.bulletformat#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BulletFormatData#style:member">PowerPoint.Interfaces.BulletFormatData.style</xref>
+  - \[
+  [PowerPoint.Interfaces.BulletFormatData.style](/javascript/api/powerpoint/powerpoint.interfaces.bulletformatdata#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#style:member">PowerPoint.Interfaces.BulletFormatUpdateData.style</xref>
+  - \[
+  [PowerPoint.Interfaces.BulletFormatUpdateData.style](/javascript/api/powerpoint/powerpoint.interfaces.bulletformatupdatedata#style-member)
+  \]
 
 isPreview: false
 isDeprecated: false

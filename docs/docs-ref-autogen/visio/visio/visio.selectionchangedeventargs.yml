@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Document#onSelectionChanged:member">Visio.Document.onSelectionChanged</xref>
+  - \[
+  [Visio.Document.onSelectionChanged](/javascript/api/visio/visio.document#onselectionchanged-member)
+  \]
 
   #### Examples
 

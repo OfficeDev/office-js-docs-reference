@@ -13,17 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFill#pattern:member">Excel.CellPropertiesFill.pattern</xref>
+  - \[
+  [Excel.CellPropertiesFill.pattern](/javascript/api/excel/excel.cellpropertiesfill#pattern-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFillData#pattern:member">Excel.Interfaces.RangeFillData.pattern</xref>
+  - \[
+  [Excel.Interfaces.RangeFillData.pattern](/javascript/api/excel/excel.interfaces.rangefilldata#pattern-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFillUpdateData#pattern:member">Excel.Interfaces.RangeFillUpdateData.pattern</xref>
+  - \[
+  [Excel.Interfaces.RangeFillUpdateData.pattern](/javascript/api/excel/excel.interfaces.rangefillupdatedata#pattern-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFill#pattern:member">Excel.RangeFill.pattern</xref>
+  - \[
+  [Excel.RangeFill.pattern](/javascript/api/excel/excel.rangefill#pattern-member)
+  \]
 
   #### Examples
 

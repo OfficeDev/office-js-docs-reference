@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Addin#beforeDocumentCloseNotification:member">Office.Addin.beforeDocumentCloseNotification</xref>
+  - \[
+  [Office.Addin.beforeDocumentCloseNotification](/javascript/api/office/office.addin#beforedocumentclosenotification-member)
+  \]
 
   #### Examples
 

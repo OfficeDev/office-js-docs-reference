@@ -8,23 +8,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionData#items:member">Excel.Interfaces.TableCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionData.items](/javascript/api/excel/excel.interfaces.tablecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionUpdateData#items:member">Excel.Interfaces.TableCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionData#items:member">Excel.Interfaces.TableScopedCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionData.items](/javascript/api/excel/excel.interfaces.tablescopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member">Excel.Interfaces.TableScopedCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablescopedcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#tables:member">Excel.Interfaces.WorkbookData.tables</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.tables](/javascript/api/excel/excel.interfaces.workbookdata#tables-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetData#tables:member">Excel.Interfaces.WorksheetData.tables</xref>
+  - \[
+  [Excel.Interfaces.WorksheetData.tables](/javascript/api/excel/excel.interfaces.worksheetdata#tables-member)
+  \]
 
 isPreview: false
 isDeprecated: false

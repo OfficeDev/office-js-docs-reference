@@ -13,13 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeData#control:member">Excel.Interfaces.RangeData.control</xref>
+  - \[
+  [Excel.Interfaces.RangeData.control](/javascript/api/excel/excel.interfaces.rangedata#control-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeUpdateData#control:member">Excel.Interfaces.RangeUpdateData.control</xref>
+  - \[
+  [Excel.Interfaces.RangeUpdateData.control](/javascript/api/excel/excel.interfaces.rangeupdatedata#control-member)
+  \]
 
-  - <xref href="excel!Excel.Range#control:member">Excel.Range.control</xref>
+  - \[ [Excel.Range.control](/javascript/api/excel/excel.range#control-member)
+  \]
 
 
 

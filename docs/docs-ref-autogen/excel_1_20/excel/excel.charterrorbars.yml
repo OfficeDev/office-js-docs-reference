@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeries#xErrorBars:member">Excel.ChartSeries.xErrorBars</xref>
+  - \[
+  [Excel.ChartSeries.xErrorBars](/javascript/api/excel/excel.chartseries#xerrorbars-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#yErrorBars:member">Excel.ChartSeries.yErrorBars</xref>
+  - \[
+  [Excel.ChartSeries.yErrorBars](/javascript/api/excel/excel.chartseries#yerrorbars-member)
+  \]
 
 isPreview: false
 isDeprecated: false

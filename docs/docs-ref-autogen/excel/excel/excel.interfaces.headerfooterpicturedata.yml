@@ -10,23 +10,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterData#centerFooterPicture:member">Excel.Interfaces.HeaderFooterData.centerFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterData.centerFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterdata#centerfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterData#centerHeaderPicture:member">Excel.Interfaces.HeaderFooterData.centerHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterData.centerHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterdata#centerheaderpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterData#leftFooterPicture:member">Excel.Interfaces.HeaderFooterData.leftFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterData.leftFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterdata#leftfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterData#leftHeaderPicture:member">Excel.Interfaces.HeaderFooterData.leftHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterData.leftHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterdata#leftheaderpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterData#rightFooterPicture:member">Excel.Interfaces.HeaderFooterData.rightFooterPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterData.rightFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterdata#rightfooterpicture-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.HeaderFooterData#rightHeaderPicture:member">Excel.Interfaces.HeaderFooterData.rightHeaderPicture</xref>
+  - \[
+  [Excel.Interfaces.HeaderFooterData.rightHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterdata#rightheaderpicture-member)
+  \]
 
 isPreview: false
 isDeprecated: false

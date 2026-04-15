@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat2Options#range:member">Word.DocumentExportAsFixedFormat2Options.range</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat2Options.range](/javascript/api/word/word.documentexportasfixedformat2options#range-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat3Options#range:member">Word.DocumentExportAsFixedFormat3Options.range</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat3Options.range](/javascript/api/word/word.documentexportasfixedformat3options#range-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormatOptions#range:member">Word.DocumentExportAsFixedFormatOptions.range</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormatOptions.range](/javascript/api/word/word.documentexportasfixedformatoptions#range-member)
+  \]
 
 isPreview: false
 isDeprecated: false

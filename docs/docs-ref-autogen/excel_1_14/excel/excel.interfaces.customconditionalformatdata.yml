@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatData#custom:member">Excel.Interfaces.ConditionalFormatData.custom</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatData.custom](/javascript/api/excel/excel.interfaces.conditionalformatdata#custom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatData#customOrNullObject:member">Excel.Interfaces.ConditionalFormatData.customOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatData.customOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatdata#customornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

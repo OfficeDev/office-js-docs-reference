@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onVisibilityChanged:member">Excel.Worksheet.onVisibilityChanged</xref>
+  - \[
+  [Excel.Worksheet.onVisibilityChanged](/javascript/api/excel/excel.worksheet#onvisibilitychanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onVisibilityChanged:member">Excel.WorksheetCollection.onVisibilityChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#onvisibilitychanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

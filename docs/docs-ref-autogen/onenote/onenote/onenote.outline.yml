@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.PageContent#outline:member">OneNote.PageContent.outline</xref>
+  - \[
+  [OneNote.PageContent.outline](/javascript/api/onenote/onenote.pagecontent#outline-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Paragraph#outline:member">OneNote.Paragraph.outline</xref>
+  - \[
+  [OneNote.Paragraph.outline](/javascript/api/onenote/onenote.paragraph#outline-member)
+  \]
 
 isPreview: false
 isDeprecated: false

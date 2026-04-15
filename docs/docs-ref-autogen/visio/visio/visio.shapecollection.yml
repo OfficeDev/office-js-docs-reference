@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="visio!Visio.Page#allShapes:member">Visio.Page.allShapes</xref>
+  - \[ [Visio.Page.allShapes](/javascript/api/visio/visio.page#allshapes-member)
+  \]
 
-  - <xref href="visio!Visio.Page#shapes:member">Visio.Page.shapes</xref>
+  - \[ [Visio.Page.shapes](/javascript/api/visio/visio.page#shapes-member) \]
 
-  - <xref
-  href="visio!Visio.Selection#shapes:member">Visio.Selection.shapes</xref>
+  - \[
+  [Visio.Selection.shapes](/javascript/api/visio/visio.selection#shapes-member)
+  \]
 
-  - <xref href="visio!Visio.Shape#subShapes:member">Visio.Shape.subShapes</xref>
+  - \[
+  [Visio.Shape.subShapes](/javascript/api/visio/visio.shape#subshapes-member) \]
 
 isPreview: false
 isDeprecated: false

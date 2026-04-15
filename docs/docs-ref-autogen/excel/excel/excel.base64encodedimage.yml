@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LocalImageCellValue#image:member">Excel.LocalImageCellValue.image</xref>
+  - \[
+  [Excel.LocalImageCellValue.image](/javascript/api/excel/excel.localimagecellvalue#image-member)
+  \]
 
 isPreview: true
 isDeprecated: false

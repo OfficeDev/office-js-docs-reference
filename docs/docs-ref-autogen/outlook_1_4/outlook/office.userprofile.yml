@@ -20,8 +20,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#userProfile:member">Office.Mailbox.userProfile</xref>
+  - \[
+  [Office.Mailbox.userProfile](/javascript/api/outlook/office.mailbox#userprofile-member)
+  \]
 
 isPreview: false
 isDeprecated: false

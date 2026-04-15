@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableData#sort:member">Excel.Interfaces.TableData.sort</xref>
+  - \[
+  [Excel.Interfaces.TableData.sort](/javascript/api/excel/excel.interfaces.tabledata#sort-member)
+  \]
 
 isPreview: false
 isDeprecated: false

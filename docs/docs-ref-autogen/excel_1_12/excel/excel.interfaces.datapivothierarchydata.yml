@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyCollectionData#items:member">Excel.Interfaces.DataPivotHierarchyCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.datapivothierarchycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData#items:member">Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.datapivothierarchycollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableData#dataHierarchies:member">Excel.Interfaces.PivotTableData.dataHierarchies</xref>
+  - \[
+  [Excel.Interfaces.PivotTableData.dataHierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#datahierarchies-member)
+  \]
 
 isPreview: false
 isDeprecated: false

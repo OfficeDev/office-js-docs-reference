@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionData#items:member">Word.Interfaces.CustomXmlNodeCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionData.items](/javascript/api/word/word.interfaces.customxmlnodecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeCollectionUpdateData#items:member">Word.Interfaces.CustomXmlNodeCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlnodecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

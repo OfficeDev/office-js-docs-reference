@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#hyperlinks:member">Word.Interfaces.DocumentData.hyperlinks</xref>
+  - \[
+  [Word.Interfaces.DocumentData.hyperlinks](/javascript/api/word/word.interfaces.documentdata#hyperlinks-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HyperlinkCollectionData#items:member">Word.Interfaces.HyperlinkCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.HyperlinkCollectionData.items](/javascript/api/word/word.interfaces.hyperlinkcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HyperlinkCollectionUpdateData#items:member">Word.Interfaces.HyperlinkCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.HyperlinkCollectionUpdateData.items](/javascript/api/word/word.interfaces.hyperlinkcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#hyperlinks:member">Word.Interfaces.RangeData.hyperlinks</xref>
+  - \[
+  [Word.Interfaces.RangeData.hyperlinks](/javascript/api/word/word.interfaces.rangedata#hyperlinks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

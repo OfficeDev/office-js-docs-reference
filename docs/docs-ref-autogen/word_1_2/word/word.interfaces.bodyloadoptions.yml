@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#body:member">Word.Interfaces.DocumentLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.body](/javascript/api/word/word.interfaces.documentloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionCollectionLoadOptions#body:member">Word.Interfaces.SectionCollectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.SectionCollectionLoadOptions.body](/javascript/api/word/word.interfaces.sectioncollectionloadoptions#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionLoadOptions#body:member">Word.Interfaces.SectionLoadOptions.body</xref>
+  - \[
+  [Word.Interfaces.SectionLoadOptions.body](/javascript/api/word/word.interfaces.sectionloadoptions#body-member)
+  \]
 
 isPreview: false
 isDeprecated: false

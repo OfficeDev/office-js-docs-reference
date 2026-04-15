@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataPivotHierarchy#summarizeBy:member">Excel.DataPivotHierarchy.summarizeBy</xref>
+  - \[
+  [Excel.DataPivotHierarchy.summarizeBy](/javascript/api/excel/excel.datapivothierarchy#summarizeby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member">Excel.Interfaces.DataPivotHierarchyData.summarizeBy</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyData.summarizeBy](/javascript/api/excel/excel.interfaces.datapivothierarchydata#summarizeby-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member">Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy</xref>
+  - \[
+  [Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy](/javascript/api/excel/excel.interfaces.datapivothierarchyupdatedata#summarizeby-member)
+  \]
 
   #### Examples
 

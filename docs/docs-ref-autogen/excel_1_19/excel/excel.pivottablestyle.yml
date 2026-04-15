@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotTableStyleCollection#items:member">Excel.PivotTableStyleCollection.items</xref>
+  - \[
+  [Excel.PivotTableStyleCollection.items](/javascript/api/excel/excel.pivottablestylecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

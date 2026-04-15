@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleData#shading:member">Word.Interfaces.StyleData.shading</xref>
+  - \[
+  [Word.Interfaces.StyleData.shading](/javascript/api/word/word.interfaces.styledata#shading-member)
+  \]
 
 isPreview: false
 isDeprecated: false

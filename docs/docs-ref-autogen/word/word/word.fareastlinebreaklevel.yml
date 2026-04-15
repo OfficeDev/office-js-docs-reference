@@ -14,23 +14,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#farEastLineBreakLevel:member">Word.Document.farEastLineBreakLevel</xref>
+  - \[
+  [Word.Document.farEastLineBreakLevel](/javascript/api/word/word.document#fareastlinebreaklevel-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#farEastLineBreakLevel:member">Word.Interfaces.DocumentData.farEastLineBreakLevel</xref>
+  - \[
+  [Word.Interfaces.DocumentData.farEastLineBreakLevel](/javascript/api/word/word.interfaces.documentdata#fareastlinebreaklevel-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#farEastLineBreakLevel:member">Word.Interfaces.DocumentUpdateData.farEastLineBreakLevel</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.farEastLineBreakLevel](/javascript/api/word/word.interfaces.documentupdatedata#fareastlinebreaklevel-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateData#farEastLineBreakLevel:member">Word.Interfaces.TemplateData.farEastLineBreakLevel</xref>
+  - \[
+  [Word.Interfaces.TemplateData.farEastLineBreakLevel](/javascript/api/word/word.interfaces.templatedata#fareastlinebreaklevel-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLevel:member">Word.Interfaces.TemplateUpdateData.farEastLineBreakLevel</xref>
+  - \[
+  [Word.Interfaces.TemplateUpdateData.farEastLineBreakLevel](/javascript/api/word/word.interfaces.templateupdatedata#fareastlinebreaklevel-member)
+  \]
 
-  - <xref
-  href="word!Word.Template#farEastLineBreakLevel:member">Word.Template.farEastLineBreakLevel</xref>
+  - \[
+  [Word.Template.farEastLineBreakLevel](/javascript/api/word/word.template#fareastlinebreaklevel-member)
+  \]
 
 isPreview: false
 isDeprecated: false

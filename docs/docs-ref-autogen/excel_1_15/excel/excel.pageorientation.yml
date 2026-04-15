@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutData#orientation:member">Excel.Interfaces.PageLayoutData.orientation</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutData.orientation](/javascript/api/excel/excel.interfaces.pagelayoutdata#orientation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member">Excel.Interfaces.PageLayoutUpdateData.orientation</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutUpdateData.orientation](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#orientation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageLayout#orientation:member">Excel.PageLayout.orientation</xref>
+  - \[
+  [Excel.PageLayout.orientation](/javascript/api/excel/excel.pagelayout#orientation-member)
+  \]
 
   #### Examples
 

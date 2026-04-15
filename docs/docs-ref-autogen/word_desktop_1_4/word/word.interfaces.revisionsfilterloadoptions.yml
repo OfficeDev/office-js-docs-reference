@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewLoadOptions#revisionsFilter:member">Word.Interfaces.ViewLoadOptions.revisionsFilter</xref>
+  - \[
+  [Word.Interfaces.ViewLoadOptions.revisionsFilter](/javascript/api/word/word.interfaces.viewloadoptions#revisionsfilter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

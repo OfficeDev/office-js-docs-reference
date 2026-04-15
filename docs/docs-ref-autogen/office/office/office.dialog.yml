@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.UI#displayDialogAsync:member(1)">Office.UI.displayDialogAsync</xref>
+  - \[
+  [Office.UI.displayDialogAsync](/javascript/api/office/office.ui#displaydialogasync-member)
+  \]
 
   #### Examples
 

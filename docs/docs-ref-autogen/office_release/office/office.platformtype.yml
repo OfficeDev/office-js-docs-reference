@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Context#platform:member">Office.Context.platform</xref>
+  - \[
+  [Office.Context.platform](/javascript/api/office/office.context#platform-member)
+  \]
 
-  - <xref
-  href="office!Office.ContextInformation#platform:member">Office.ContextInformation.platform</xref>
+  - \[
+  [Office.ContextInformation.platform](/javascript/api/office/office.contextinformation#platform-member)
+  \]
 
   #### Examples
 

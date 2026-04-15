@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Application#calculationMode:member">Excel.Application.calculationMode</xref>
+  - \[
+  [Excel.Application.calculationMode](/javascript/api/excel/excel.application#calculationmode-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationData#calculationMode:member">Excel.Interfaces.ApplicationData.calculationMode</xref>
+  - \[
+  [Excel.Interfaces.ApplicationData.calculationMode](/javascript/api/excel/excel.interfaces.applicationdata#calculationmode-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member">Excel.Interfaces.ApplicationUpdateData.calculationMode</xref>
+  - \[
+  [Excel.Interfaces.ApplicationUpdateData.calculationMode](/javascript/api/excel/excel.interfaces.applicationupdatedata#calculationmode-member)
+  \]
 
   #### Examples
 

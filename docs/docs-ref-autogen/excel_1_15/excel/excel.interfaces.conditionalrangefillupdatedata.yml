@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#fill:member">Excel.Interfaces.ConditionalRangeFormatUpdateData.fill</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeFormatUpdateData.fill](/javascript/api/excel/excel.interfaces.conditionalrangeformatupdatedata#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

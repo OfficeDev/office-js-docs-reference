@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!OfficeExtension.DebugInfo#innerError:member">OfficeExtension.DebugInfo.innerError</xref>
+  - \[
+  [OfficeExtension.DebugInfo.innerError](/javascript/api/office/officeextension.debuginfo#innererror-member)
+  \]
 
-  - <xref
-  href="office!OfficeExtension.Error#debugInfo:member">OfficeExtension.Error.debugInfo</xref>
+  - \[
+  [OfficeExtension.Error.debugInfo](/javascript/api/office/officeextension.error#debuginfo-member)
+  \]
 
 isPreview: false
 isDeprecated: false

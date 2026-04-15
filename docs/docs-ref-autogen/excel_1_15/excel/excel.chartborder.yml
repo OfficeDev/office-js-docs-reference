@@ -12,32 +12,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAreaFormat#border:member">Excel.ChartAreaFormat.border</xref>
+  - \[
+  [Excel.ChartAreaFormat.border](/javascript/api/excel/excel.chartareaformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxisTitleFormat#border:member">Excel.ChartAxisTitleFormat.border</xref>
+  - \[
+  [Excel.ChartAxisTitleFormat.border](/javascript/api/excel/excel.chartaxistitleformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabelFormat#border:member">Excel.ChartDataLabelFormat.border</xref>
+  - \[
+  [Excel.ChartDataLabelFormat.border](/javascript/api/excel/excel.chartdatalabelformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataTableFormat#border:member">Excel.ChartDataTableFormat.border</xref>
+  - \[
+  [Excel.ChartDataTableFormat.border](/javascript/api/excel/excel.chartdatatableformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegendFormat#border:member">Excel.ChartLegendFormat.border</xref>
+  - \[
+  [Excel.ChartLegendFormat.border](/javascript/api/excel/excel.chartlegendformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPlotAreaFormat#border:member">Excel.ChartPlotAreaFormat.border</xref>
+  - \[
+  [Excel.ChartPlotAreaFormat.border](/javascript/api/excel/excel.chartplotareaformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPointFormat#border:member">Excel.ChartPointFormat.border</xref>
+  - \[
+  [Excel.ChartPointFormat.border](/javascript/api/excel/excel.chartpointformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitleFormat#border:member">Excel.ChartTitleFormat.border</xref>
+  - \[
+  [Excel.ChartTitleFormat.border](/javascript/api/excel/excel.charttitleformat#border-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineLabelFormat#border:member">Excel.ChartTrendlineLabelFormat.border</xref>
+  - \[
+  [Excel.ChartTrendlineLabelFormat.border](/javascript/api/excel/excel.charttrendlinelabelformat#border-member)
+  \]
 
 isPreview: false
 isDeprecated: false

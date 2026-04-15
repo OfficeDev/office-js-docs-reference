@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.WindowCloseOptions#saveChanges:member">Word.WindowCloseOptions.saveChanges</xref>
+  - \[
+  [Word.WindowCloseOptions.saveChanges](/javascript/api/word/word.windowcloseoptions#savechanges-member)
+  \]
 
   #### Examples
 

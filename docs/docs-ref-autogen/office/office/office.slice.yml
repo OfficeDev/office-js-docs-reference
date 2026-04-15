@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.File#getSliceAsync:member(1)">Office.File.getSliceAsync</xref>
+  - \[
+  [Office.File.getSliceAsync](/javascript/api/office/office.file#getsliceasync-member)
+  \]
 
   #### Examples
 

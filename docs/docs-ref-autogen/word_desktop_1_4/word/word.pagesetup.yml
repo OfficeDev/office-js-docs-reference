@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#pageSetup:member">Word.Document.pageSetup</xref>
+  - \[
+  [Word.Document.pageSetup](/javascript/api/word/word.document#pagesetup-member)
+  \]
 
-  - <xref
-  href="word!Word.Section#pageSetup:member">Word.Section.pageSetup</xref>
+  - \[
+  [Word.Section.pageSetup](/javascript/api/word/word.section#pagesetup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

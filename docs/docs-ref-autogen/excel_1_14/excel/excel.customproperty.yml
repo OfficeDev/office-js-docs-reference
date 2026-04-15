@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CustomPropertyCollection#items:member">Excel.CustomPropertyCollection.items</xref>
+  - \[
+  [Excel.CustomPropertyCollection.items](/javascript/api/excel/excel.custompropertycollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

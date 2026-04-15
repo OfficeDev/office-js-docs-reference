@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CultureInfoData#datetimeFormat:member">Excel.Interfaces.CultureInfoData.datetimeFormat</xref>
+  - \[
+  [Excel.Interfaces.CultureInfoData.datetimeFormat](/javascript/api/excel/excel.interfaces.cultureinfodata#datetimeformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

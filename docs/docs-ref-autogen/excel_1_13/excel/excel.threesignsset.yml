@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconCollections#threeSigns:member">Excel.IconCollections.threeSigns</xref>
+  - \[
+  [Excel.IconCollections.threeSigns](/javascript/api/excel/excel.iconcollections#threesigns-member)
+  \]
 
 isPreview: false
 isDeprecated: false

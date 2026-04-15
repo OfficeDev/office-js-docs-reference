@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeBorderData#style:member">Excel.Interfaces.RangeBorderData.style</xref>
+  - \[
+  [Excel.Interfaces.RangeBorderData.style](/javascript/api/excel/excel.interfaces.rangeborderdata#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeBorderUpdateData#style:member">Excel.Interfaces.RangeBorderUpdateData.style</xref>
+  - \[
+  [Excel.Interfaces.RangeBorderUpdateData.style](/javascript/api/excel/excel.interfaces.rangeborderupdatedata#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeBorder#style:member">Excel.RangeBorder.style</xref>
+  - \[
+  [Excel.RangeBorder.style](/javascript/api/excel/excel.rangeborder#style-member)
+  \]
 
   #### Examples
 

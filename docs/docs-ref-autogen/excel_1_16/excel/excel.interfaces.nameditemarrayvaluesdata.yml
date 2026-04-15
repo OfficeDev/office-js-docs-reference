@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemData#arrayValues:member">Excel.Interfaces.NamedItemData.arrayValues</xref>
+  - \[
+  [Excel.Interfaces.NamedItemData.arrayValues](/javascript/api/excel/excel.interfaces.nameditemdata#arrayvalues-member)
+  \]
 
 isPreview: false
 isDeprecated: false

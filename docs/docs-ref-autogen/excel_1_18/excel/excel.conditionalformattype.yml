@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#type:member">Excel.ConditionalFormat.type</xref>
+  - \[
+  [Excel.ConditionalFormat.type](/javascript/api/excel/excel.conditionalformat#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatData#type:member">Excel.Interfaces.ConditionalFormatData.type</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatData.type](/javascript/api/excel/excel.interfaces.conditionalformatdata#type-member)
+  \]
 
   #### Examples
 

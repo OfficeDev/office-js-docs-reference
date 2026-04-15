@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BorderUniversal#lineWidth:member">Word.BorderUniversal.lineWidth</xref>
+  - \[
+  [Word.BorderUniversal.lineWidth](/javascript/api/word/word.borderuniversal#linewidth-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalData#lineWidth:member">Word.Interfaces.BorderUniversalData.lineWidth</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalData.lineWidth](/javascript/api/word/word.interfaces.borderuniversaldata#linewidth-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalUpdateData#lineWidth:member">Word.Interfaces.BorderUniversalUpdateData.lineWidth</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalUpdateData.lineWidth](/javascript/api/word/word.interfaces.borderuniversalupdatedata#linewidth-member)
+  \]
 
 isPreview: false
 isDeprecated: false

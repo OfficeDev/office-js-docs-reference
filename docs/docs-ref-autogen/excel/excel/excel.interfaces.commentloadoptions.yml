@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#comment:member">Excel.Interfaces.DocumentTaskCollectionLoadOptions.comment</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskCollectionLoadOptions.comment](/javascript/api/excel/excel.interfaces.documenttaskcollectionloadoptions#comment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskLoadOptions#comment:member">Excel.Interfaces.DocumentTaskLoadOptions.comment</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskLoadOptions.comment](/javascript/api/excel/excel.interfaces.documenttaskloadoptions#comment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

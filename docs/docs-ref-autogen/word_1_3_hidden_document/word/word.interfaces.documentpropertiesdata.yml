@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentCreatedData#properties:member">Word.Interfaces.DocumentCreatedData.properties</xref>
+  - \[
+  [Word.Interfaces.DocumentCreatedData.properties](/javascript/api/word/word.interfaces.documentcreateddata#properties-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#properties:member">Word.Interfaces.DocumentData.properties</xref>
+  - \[
+  [Word.Interfaces.DocumentData.properties](/javascript/api/word/word.interfaces.documentdata#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

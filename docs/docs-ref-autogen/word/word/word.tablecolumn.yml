@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.TableCell#column:member">Word.TableCell.column</xref>
+  - \[
+  [Word.TableCell.column](/javascript/api/word/word.tablecell#column-member) \]
 
-  - <xref
-  href="word!Word.TableColumnCollection#items:member">Word.TableColumnCollection.items</xref>
+  - \[
+  [Word.TableColumnCollection.items](/javascript/api/word/word.tablecolumncollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

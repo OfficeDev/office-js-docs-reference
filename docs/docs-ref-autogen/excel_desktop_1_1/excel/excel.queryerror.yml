@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.QueryData#error:member">Excel.Interfaces.QueryData.error</xref>
+  - \[
+  [Excel.Interfaces.QueryData.error](/javascript/api/excel/excel.interfaces.querydata#error-member)
+  \]
 
-  - <xref href="excel!Excel.Query#error:member">Excel.Query.error</xref>
+  - \[ [Excel.Query.error](/javascript/api/excel/excel.query#error-member) \]
 
 isPreview: false
 isDeprecated: false

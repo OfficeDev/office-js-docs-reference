@@ -13,10 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Style#linkStyle:member">Word.Style.linkStyle</xref>
+  - \[ [Word.Style.linkStyle](/javascript/api/word/word.style#linkstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.StyleCollection#items:member">Word.StyleCollection.items</xref>
+  - \[
+  [Word.StyleCollection.items](/javascript/api/word/word.stylecollection#items-member)
+  \]
 
   #### Examples
 

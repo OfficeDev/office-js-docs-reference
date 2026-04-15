@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ViewData#revisionsBalloonSide:member">Word.Interfaces.ViewData.revisionsBalloonSide</xref>
+  - \[
+  [Word.Interfaces.ViewData.revisionsBalloonSide](/javascript/api/word/word.interfaces.viewdata#revisionsballoonside-member)
+  \]
 
-  - <xref
-  href="word!Word.View#revisionsBalloonSide:member">Word.View.revisionsBalloonSide</xref>
+  - \[
+  [Word.View.revisionsBalloonSide](/javascript/api/word/word.view#revisionsballoonside-member)
+  \]
 
 isPreview: false
 isDeprecated: false

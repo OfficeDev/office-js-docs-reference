@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.ChartAxis#title:member">Excel.ChartAxis.title</xref>
+  - \[
+  [Excel.ChartAxis.title](/javascript/api/excel/excel.chartaxis#title-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -8,20 +8,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyData#lists:member">Word.Interfaces.BodyData.lists</xref>
+  - \[
+  [Word.Interfaces.BodyData.lists](/javascript/api/word/word.interfaces.bodydata#lists-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#lists:member">Word.Interfaces.ContentControlData.lists</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.lists](/javascript/api/word/word.interfaces.contentcontroldata#lists-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListCollectionData#items:member">Word.Interfaces.ListCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.ListCollectionData.items](/javascript/api/word/word.interfaces.listcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListCollectionUpdateData#items:member">Word.Interfaces.ListCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.ListCollectionUpdateData.items](/javascript/api/word/word.interfaces.listcollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ListFormatData#list:member">Word.Interfaces.ListFormatData.list</xref>
+  - \[
+  [Word.Interfaces.ListFormatData.list](/javascript/api/word/word.interfaces.listformatdata#list-member)
+  \]
 
 isPreview: false
 isDeprecated: false

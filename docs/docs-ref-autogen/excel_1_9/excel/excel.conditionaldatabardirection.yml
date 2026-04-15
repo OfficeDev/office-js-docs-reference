@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DataBarConditionalFormat#barDirection:member">Excel.DataBarConditionalFormat.barDirection</xref>
+  - \[
+  [Excel.DataBarConditionalFormat.barDirection](/javascript/api/excel/excel.databarconditionalformat#bardirection-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member">Excel.Interfaces.DataBarConditionalFormatData.barDirection</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatData.barDirection](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#bardirection-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection:member">Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection</xref>
+  - \[
+  [Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#bardirection-member)
+  \]
 
   #### Examples
 

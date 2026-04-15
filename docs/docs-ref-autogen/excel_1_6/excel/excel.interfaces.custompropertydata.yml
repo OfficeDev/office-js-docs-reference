@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomPropertyCollectionData#items:member">Excel.Interfaces.CustomPropertyCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.CustomPropertyCollectionData.items](/javascript/api/excel/excel.interfaces.custompropertycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CustomPropertyCollectionUpdateData#items:member">Excel.Interfaces.CustomPropertyCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.CustomPropertyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.custompropertycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

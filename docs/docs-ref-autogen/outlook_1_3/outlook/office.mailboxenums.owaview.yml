@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Diagnostics#OWAView:member">Office.Diagnostics.OWAView</xref>
+  - \[
+  [Office.Diagnostics.OWAView](/javascript/api/outlook/office.diagnostics#owaview-member)
+  \]
 
   #### Examples
 

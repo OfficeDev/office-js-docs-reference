@@ -15,23 +15,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#bevelBottomType:member">Word.Interfaces.ThreeDimensionalFormatData.bevelBottomType</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.bevelBottomType](/javascript/api/word/word.interfaces.threedimensionalformatdata#bevelbottomtype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#bevelTopType:member">Word.Interfaces.ThreeDimensionalFormatData.bevelTopType</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.bevelTopType](/javascript/api/word/word.interfaces.threedimensionalformatdata#beveltoptype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelBottomType:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelBottomType</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelBottomType](/javascript/api/word/word.interfaces.threedimensionalformatupdatedata#bevelbottomtype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelTopType:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelTopType</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelTopType](/javascript/api/word/word.interfaces.threedimensionalformatupdatedata#beveltoptype-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#bevelBottomType:member">Word.ThreeDimensionalFormat.bevelBottomType</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.bevelBottomType](/javascript/api/word/word.threedimensionalformat#bevelbottomtype-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#bevelTopType:member">Word.ThreeDimensionalFormat.bevelTopType</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.bevelTopType](/javascript/api/word/word.threedimensionalformat#beveltoptype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

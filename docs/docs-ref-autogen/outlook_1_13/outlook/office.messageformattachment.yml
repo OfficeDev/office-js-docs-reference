@@ -22,8 +22,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.MessageForm#attachments:member">Office.MessageForm.attachments</xref>
+  - \[
+  [Office.MessageForm.attachments](/javascript/api/outlook/office.messageform#attachments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

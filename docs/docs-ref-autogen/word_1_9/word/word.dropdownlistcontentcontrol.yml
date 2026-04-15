@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#dropDownListContentControl:member">Word.ContentControl.dropDownListContentControl</xref>
+  - \[
+  [Word.ContentControl.dropDownListContentControl](/javascript/api/word/word.contentcontrol#dropdownlistcontentcontrol-member)
+  \]
 
   #### Examples
 

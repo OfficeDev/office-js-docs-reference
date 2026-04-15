@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member">Word.Interfaces.XmlNodeCollectionLoadOptions.ownerDocument</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.ownerDocument](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#ownerdocument-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member">Word.Interfaces.XmlNodeLoadOptions.ownerDocument</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.ownerDocument](/javascript/api/word/word.interfaces.xmlnodeloadoptions#ownerdocument-member)
+  \]
 
 isPreview: false
 isDeprecated: false

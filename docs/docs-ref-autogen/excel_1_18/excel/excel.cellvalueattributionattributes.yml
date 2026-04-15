@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellValuePropertyMetadata#attribution:member">Excel.CellValuePropertyMetadata.attribution</xref>
+  - \[
+  [Excel.CellValuePropertyMetadata.attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#attribution-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WebImageCellValue#attribution:member">Excel.WebImageCellValue.attribution</xref>
+  - \[
+  [Excel.WebImageCellValue.attribution](/javascript/api/excel/excel.webimagecellvalue#attribution-member)
+  \]
 
 isPreview: false
 isDeprecated: false

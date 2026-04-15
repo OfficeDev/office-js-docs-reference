@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotLabelFilter#condition:member">Excel.PivotLabelFilter.condition</xref>
+  - \[
+  [Excel.PivotLabelFilter.condition](/javascript/api/excel/excel.pivotlabelfilter#condition-member)
+  \]
 
   #### Examples
 

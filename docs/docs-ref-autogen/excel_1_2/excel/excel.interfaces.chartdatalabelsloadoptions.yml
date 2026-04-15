@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member">Excel.Interfaces.ChartCollectionLoadOptions.dataLabels</xref>
+  - \[
+  [Excel.Interfaces.ChartCollectionLoadOptions.dataLabels](/javascript/api/excel/excel.interfaces.chartcollectionloadoptions#datalabels-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member">Excel.Interfaces.ChartLoadOptions.dataLabels</xref>
+  - \[
+  [Excel.Interfaces.ChartLoadOptions.dataLabels](/javascript/api/excel/excel.interfaces.chartloadoptions#datalabels-member)
+  \]
 
 isPreview: false
 isDeprecated: false

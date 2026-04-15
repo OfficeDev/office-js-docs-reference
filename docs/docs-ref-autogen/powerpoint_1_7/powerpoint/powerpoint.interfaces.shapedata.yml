@@ -8,17 +8,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionData#items:member">PowerPoint.Interfaces.ShapeCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member">PowerPoint.Interfaces.ShapeCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData#items:member">PowerPoint.Interfaces.ShapeScopedCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData#items:member">PowerPoint.Interfaces.ShapeScopedCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

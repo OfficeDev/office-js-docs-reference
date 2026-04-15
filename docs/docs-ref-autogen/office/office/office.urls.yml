@@ -22,7 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="office!Office.Context#urls:member">Office.Context.urls</xref>
+  - \[ [Office.Context.urls](/javascript/api/office/office.context#urls-member)
+  \]
 
 isPreview: false
 isDeprecated: false

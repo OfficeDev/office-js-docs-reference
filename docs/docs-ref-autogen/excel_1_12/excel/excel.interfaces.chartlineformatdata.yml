@@ -10,20 +10,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisFormatData#line:member">Excel.Interfaces.ChartAxisFormatData.line</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisFormatData.line](/javascript/api/excel/excel.interfaces.chartaxisformatdata#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartErrorBarsFormatData#line:member">Excel.Interfaces.ChartErrorBarsFormatData.line</xref>
+  - \[
+  [Excel.Interfaces.ChartErrorBarsFormatData.line](/javascript/api/excel/excel.interfaces.charterrorbarsformatdata#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartGridlinesFormatData#line:member">Excel.Interfaces.ChartGridlinesFormatData.line</xref>
+  - \[
+  [Excel.Interfaces.ChartGridlinesFormatData.line](/javascript/api/excel/excel.interfaces.chartgridlinesformatdata#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesFormatData#line:member">Excel.Interfaces.ChartSeriesFormatData.line</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesFormatData.line](/javascript/api/excel/excel.interfaces.chartseriesformatdata#line-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineFormatData#line:member">Excel.Interfaces.ChartTrendlineFormatData.line</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineFormatData.line](/javascript/api/excel/excel.interfaces.charttrendlineformatdata#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

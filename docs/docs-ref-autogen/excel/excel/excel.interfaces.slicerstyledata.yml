@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerData#slicerStyle:member">Excel.Interfaces.SlicerData.slicerStyle</xref>
+  - \[
+  [Excel.Interfaces.SlicerData.slicerStyle](/javascript/api/excel/excel.interfaces.slicerdata#slicerstyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerStyleCollectionData#items:member">Excel.Interfaces.SlicerStyleCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.SlicerStyleCollectionData.items](/javascript/api/excel/excel.interfaces.slicerstylecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member">Excel.Interfaces.SlicerStyleCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.SlicerStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.slicerstylecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookData#slicerStyles:member">Excel.Interfaces.WorkbookData.slicerStyles</xref>
+  - \[
+  [Excel.Interfaces.WorkbookData.slicerStyles](/javascript/api/excel/excel.interfaces.workbookdata#slicerstyles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

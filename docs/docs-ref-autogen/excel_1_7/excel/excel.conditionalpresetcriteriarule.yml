@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#rule:member">Excel.Interfaces.PresetCriteriaConditionalFormatData.rule</xref>
+  - \[
+  [Excel.Interfaces.PresetCriteriaConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatdata#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#rule:member">Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule</xref>
+  - \[
+  [Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatupdatedata#rule-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PresetCriteriaConditionalFormat#rule:member">Excel.PresetCriteriaConditionalFormat.rule</xref>
+  - \[
+  [Excel.PresetCriteriaConditionalFormat.rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#rule-member)
+  \]
 
 isPreview: false
 isDeprecated: false

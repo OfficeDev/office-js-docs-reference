@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableData#columnHierarchies:member">Excel.Interfaces.PivotTableData.columnHierarchies</xref>
+  - \[
+  [Excel.Interfaces.PivotTableData.columnHierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#columnhierarchies-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableData#rowHierarchies:member">Excel.Interfaces.PivotTableData.rowHierarchies</xref>
+  - \[
+  [Excel.Interfaces.PivotTableData.rowHierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#rowhierarchies-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member">Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member">Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

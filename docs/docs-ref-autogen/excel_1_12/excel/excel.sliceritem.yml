@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SlicerItemCollection#items:member">Excel.SlicerItemCollection.items</xref>
+  - \[
+  [Excel.SlicerItemCollection.items](/javascript/api/excel/excel.sliceritemcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

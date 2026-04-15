@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotFilters#valueFilter:member">Excel.PivotFilters.valueFilter</xref>
+  - \[
+  [Excel.PivotFilters.valueFilter](/javascript/api/excel/excel.pivotfilters#valuefilter-member)
+  \]
 
   #### Examples
 

@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member">Excel.Interfaces.TableCollectionLoadOptions.tableStyle</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionLoadOptions.tableStyle](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#tablestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableLoadOptions#tableStyle:member">Excel.Interfaces.TableLoadOptions.tableStyle</xref>
+  - \[
+  [Excel.Interfaces.TableLoadOptions.tableStyle](/javascript/api/excel/excel.interfaces.tableloadoptions#tablestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member">Excel.Interfaces.TableScopedCollectionLoadOptions.tableStyle</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionLoadOptions.tableStyle](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#tablestyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

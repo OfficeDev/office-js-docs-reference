@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.GoToOptions#item:member">Word.GoToOptions.item</xref>
+  - \[
+  [Word.GoToOptions.item](/javascript/api/word/word.gotooptions#item-member) \]
 
 isPreview: false
 isDeprecated: false

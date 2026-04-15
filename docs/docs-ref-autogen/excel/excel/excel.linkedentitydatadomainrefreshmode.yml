@@ -17,26 +17,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedEntityDataDomainData#refreshMode:member">Excel.Interfaces.LinkedEntityDataDomainData.refreshMode</xref>
+  - \[
+  [Excel.Interfaces.LinkedEntityDataDomainData.refreshMode](/javascript/api/excel/excel.interfaces.linkedentitydatadomaindata#refreshmode-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedEntityDataDomainData#supportedRefreshModes:member">Excel.Interfaces.LinkedEntityDataDomainData.supportedRefreshModes</xref>
+  - \[
+  [Excel.Interfaces.LinkedEntityDataDomainData.supportedRefreshModes](/javascript/api/excel/excel.interfaces.linkedentitydatadomaindata#supportedrefreshmodes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedEntityDataDomainUpdateData#refreshMode:member">Excel.Interfaces.LinkedEntityDataDomainUpdateData.refreshMode</xref>
+  - \[
+  [Excel.Interfaces.LinkedEntityDataDomainUpdateData.refreshMode](/javascript/api/excel/excel.interfaces.linkedentitydatadomainupdatedata#refreshmode-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomain#refreshMode:member">Excel.LinkedEntityDataDomain.refreshMode</xref>
+  - \[
+  [Excel.LinkedEntityDataDomain.refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#refreshmode-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomain#supportedRefreshModes:member">Excel.LinkedEntityDataDomain.supportedRefreshModes</xref>
+  - \[
+  [Excel.LinkedEntityDataDomain.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#supportedrefreshmodes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomainCreateOptions#supportedRefreshModes:member">Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes</xref>
+  - \[
+  [Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#supportedrefreshmodes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs#refreshMode:member">Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode</xref>
+  - \[
+  [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#refreshmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WindowData#showSourceDocuments:member">Word.Interfaces.WindowData.showSourceDocuments</xref>
+  - \[
+  [Word.Interfaces.WindowData.showSourceDocuments](/javascript/api/word/word.interfaces.windowdata#showsourcedocuments-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowUpdateData#showSourceDocuments:member">Word.Interfaces.WindowUpdateData.showSourceDocuments</xref>
+  - \[
+  [Word.Interfaces.WindowUpdateData.showSourceDocuments](/javascript/api/word/word.interfaces.windowupdatedata#showsourcedocuments-member)
+  \]
 
-  - <xref
-  href="word!Word.Window#showSourceDocuments:member">Word.Window.showSourceDocuments</xref>
+  - \[
+  [Word.Window.showSourceDocuments](/javascript/api/word/word.window#showsourcedocuments-member)
+  \]
 
 isPreview: false
 isDeprecated: false

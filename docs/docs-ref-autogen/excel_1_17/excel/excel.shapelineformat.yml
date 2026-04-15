@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Shape#lineFormat:member">Excel.Shape.lineFormat</xref>
+  - \[
+  [Excel.Shape.lineFormat](/javascript/api/excel/excel.shape#lineformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

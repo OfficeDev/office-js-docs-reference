@@ -13,93 +13,117 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Bookmark#range:member">Word.Bookmark.range</xref>
+  - \[ [Word.Bookmark.range](/javascript/api/word/word.bookmark#range-member) \]
 
-  - <xref href="word!Word.Break#range:member">Word.Break.range</xref>
+  - \[ [Word.Break.range](/javascript/api/word/word.break#range-member) \]
 
-  - <xref
-  href="word!Word.BuildingBlockGalleryContentControl#range:member">Word.BuildingBlockGalleryContentControl.range</xref>
+  - \[
+  [Word.BuildingBlockGalleryContentControl.range](/javascript/api/word/word.buildingblockgallerycontentcontrol#range-member)
+  \]
 
-  - <xref
-  href="word!Word.CoauthoringLock#range:member">Word.CoauthoringLock.range</xref>
+  - \[
+  [Word.CoauthoringLock.range](/javascript/api/word/word.coauthoringlock#range-member)
+  \]
 
-  - <xref
-  href="word!Word.CoauthoringLockAddOptions#range:member">Word.CoauthoringLockAddOptions.range</xref>
+  - \[
+  [Word.CoauthoringLockAddOptions.range](/javascript/api/word/word.coauthoringlockaddoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.CoauthoringUpdate#range:member">Word.CoauthoringUpdate.range</xref>
+  - \[
+  [Word.CoauthoringUpdate.range](/javascript/api/word/word.coauthoringupdate#range-member)
+  \]
 
-  - <xref href="word!Word.Conflict#range:member">Word.Conflict.range</xref>
+  - \[ [Word.Conflict.range](/javascript/api/word/word.conflict#range-member) \]
 
-  - <xref
-  href="word!Word.ContentControlPlaceholderOptions#range:member">Word.ContentControlPlaceholderOptions.range</xref>
+  - \[
+  [Word.ContentControlPlaceholderOptions.range](/javascript/api/word/word.contentcontrolplaceholderoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.CritiqueAnnotation#range:member">Word.CritiqueAnnotation.range</xref>
+  - \[
+  [Word.CritiqueAnnotation.range](/javascript/api/word/word.critiqueannotation#range-member)
+  \]
 
-  - <xref
-  href="word!Word.DatePickerContentControl#range:member">Word.DatePickerContentControl.range</xref>
+  - \[
+  [Word.DatePickerContentControl.range](/javascript/api/word/word.datepickercontentcontrol#range-member)
+  \]
 
-  - <xref href="word!Word.Document#content:member">Word.Document.content</xref>
+  - \[
+  [Word.Document.content](/javascript/api/word/word.document#content-member) \]
 
-  - <xref href="word!Word.Editor#nextRange:member">Word.Editor.nextRange</xref>
+  - \[
+  [Word.Editor.nextRange](/javascript/api/word/word.editor#nextrange-member) \]
 
-  - <xref href="word!Word.Editor#range:member">Word.Editor.range</xref>
+  - \[ [Word.Editor.range](/javascript/api/word/word.editor#range-member) \]
 
-  - <xref href="word!Word.Field#result:member">Word.Field.result</xref>
+  - \[ [Word.Field.result](/javascript/api/word/word.field#result-member) \]
 
-  - <xref href="word!Word.Frame#range:member">Word.Frame.range</xref>
+  - \[ [Word.Frame.range](/javascript/api/word/word.frame#range-member) \]
 
-  - <xref
-  href="word!Word.GroupContentControl#range:member">Word.GroupContentControl.range</xref>
+  - \[
+  [Word.GroupContentControl.range](/javascript/api/word/word.groupcontentcontrol#range-member)
+  \]
 
-  - <xref
-  href="word!Word.HtmlDivision#range:member">Word.HtmlDivision.range</xref>
+  - \[
+  [Word.HtmlDivision.range](/javascript/api/word/word.htmldivision#range-member)
+  \]
 
-  - <xref href="word!Word.Hyperlink#range:member">Word.Hyperlink.range</xref>
+  - \[ [Word.Hyperlink.range](/javascript/api/word/word.hyperlink#range-member)
+  \]
 
-  - <xref href="word!Word.Index#range:member">Word.Index.range</xref>
+  - \[ [Word.Index.range](/javascript/api/word/word.index#range-member) \]
 
-  - <xref
-  href="word!Word.NoteItem#reference:member">Word.NoteItem.reference</xref>
+  - \[
+  [Word.NoteItem.reference](/javascript/api/word/word.noteitem#reference-member)
+  \]
 
-  - <xref
-  href="word!Word.PictureContentControl#range:member">Word.PictureContentControl.range</xref>
+  - \[
+  [Word.PictureContentControl.range](/javascript/api/word/word.picturecontentcontrol#range-member)
+  \]
 
-  - <xref
-  href="word!Word.RangeCollection#items:member">Word.RangeCollection.items</xref>
+  - \[
+  [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.RangeScopedCollection#items:member">Word.RangeScopedCollection.items</xref>
+  - \[
+  [Word.RangeScopedCollection.items](/javascript/api/word/word.rangescopedcollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.RepeatingSectionContentControl#range:member">Word.RepeatingSectionContentControl.range</xref>
+  - \[
+  [Word.RepeatingSectionContentControl.range](/javascript/api/word/word.repeatingsectioncontentcontrol#range-member)
+  \]
 
-  - <xref
-  href="word!Word.RepeatingSectionItem#range:member">Word.RepeatingSectionItem.range</xref>
+  - \[
+  [Word.RepeatingSectionItem.range](/javascript/api/word/word.repeatingsectionitem#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Revision#movedRange:member">Word.Revision.movedRange</xref>
+  - \[
+  [Word.Revision.movedRange](/javascript/api/word/word.revision#movedrange-member)
+  \]
 
-  - <xref href="word!Word.Revision#range:member">Word.Revision.range</xref>
+  - \[ [Word.Revision.range](/javascript/api/word/word.revision#range-member) \]
 
-  - <xref
-  href="word!Word.Selection#formattedText:member">Word.Selection.formattedText</xref>
+  - \[
+  [Word.Selection.formattedText](/javascript/api/word/word.selection#formattedtext-member)
+  \]
 
-  - <xref href="word!Word.Selection#range:member">Word.Selection.range</xref>
+  - \[ [Word.Selection.range](/javascript/api/word/word.selection#range-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfAuthorities#range:member">Word.TableOfAuthorities.range</xref>
+  - \[
+  [Word.TableOfAuthorities.range](/javascript/api/word/word.tableofauthorities#range-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfContents#range:member">Word.TableOfContents.range</xref>
+  - \[
+  [Word.TableOfContents.range](/javascript/api/word/word.tableofcontents#range-member)
+  \]
 
-  - <xref
-  href="word!Word.TableOfFigures#range:member">Word.TableOfFigures.range</xref>
+  - \[
+  [Word.TableOfFigures.range](/javascript/api/word/word.tableoffigures#range-member)
+  \]
 
-  - <xref href="word!Word.TableRow#range:member">Word.TableRow.range</xref>
+  - \[ [Word.TableRow.range](/javascript/api/word/word.tablerow#range-member) \]
 
-  - <xref href="word!Word.XmlNode#range:member">Word.XmlNode.range</xref>
+  - \[ [Word.XmlNode.range](/javascript/api/word/word.xmlnode#range-member) \]
 
   #### Examples
 

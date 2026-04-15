@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#canvas:member">Word.Interfaces.ShapeData.canvas</xref>
+  - \[
+  [Word.Interfaces.ShapeData.canvas](/javascript/api/word/word.interfaces.shapedata#canvas-member)
+  \]
 
 isPreview: false
 isDeprecated: false

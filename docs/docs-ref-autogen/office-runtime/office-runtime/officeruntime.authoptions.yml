@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office-runtime!OfficeRuntime.Auth#getAccessToken:member(1)">OfficeRuntime.Auth.getAccessToken</xref>
+  - \[
+  [OfficeRuntime.Auth.getAccessToken](/javascript/api/office-runtime/officeruntime.auth#getaccesstoken-member)
+  \]
 
 isPreview: false
 isDeprecated: false

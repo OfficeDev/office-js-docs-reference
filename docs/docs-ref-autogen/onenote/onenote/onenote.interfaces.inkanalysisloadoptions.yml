@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#inkAnalysis:member">OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.inkAnalysis</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.inkAnalysis](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphcollectionloadoptions#inkanalysis-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions#inkAnalysis:member">OneNote.Interfaces.InkAnalysisParagraphLoadOptions.inkAnalysis</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisParagraphLoadOptions.inkAnalysis](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphloadoptions#inkanalysis-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageCollectionLoadOptions#inkAnalysisOrNull:member">OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull</xref>
+  - \[
+  [OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull](/javascript/api/onenote/onenote.interfaces.pagecollectionloadoptions#inkanalysisornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member">OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull</xref>
+  - \[
+  [OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull](/javascript/api/onenote/onenote.interfaces.pageloadoptions#inkanalysisornull-member)
+  \]
 
 isPreview: false
 isDeprecated: false

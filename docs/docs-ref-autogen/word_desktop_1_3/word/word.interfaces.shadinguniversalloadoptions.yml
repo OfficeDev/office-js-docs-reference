@@ -14,29 +14,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FrameCollectionLoadOptions#shading:member">Word.Interfaces.FrameCollectionLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.FrameCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.framecollectionloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameLoadOptions#shading:member">Word.Interfaces.FrameLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.FrameLoadOptions.shading](/javascript/api/word/word.interfaces.frameloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#shading:member">Word.Interfaces.ParagraphCollectionLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#shading:member">Word.Interfaces.ParagraphLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.shading](/javascript/api/word/word.interfaces.paragraphloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#shading:member">Word.Interfaces.RangeCollectionLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.rangecollectionloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#shading:member">Word.Interfaces.RangeLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.shading](/javascript/api/word/word.interfaces.rangeloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableColumnCollectionLoadOptions#shading:member">Word.Interfaces.TableColumnCollectionLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.TableColumnCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.tablecolumncollectionloadoptions#shading-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableColumnLoadOptions#shading:member">Word.Interfaces.TableColumnLoadOptions.shading</xref>
+  - \[
+  [Word.Interfaces.TableColumnLoadOptions.shading](/javascript/api/word/word.interfaces.tablecolumnloadoptions#shading-member)
+  \]
 
 isPreview: false
 isDeprecated: false

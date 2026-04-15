@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ArrayCellValue#referencedValues:member">Excel.ArrayCellValue.referencedValues</xref>
+  - \[
+  [Excel.ArrayCellValue.referencedValues](/javascript/api/excel/excel.arraycellvalue#referencedvalues-member)
+  \]
 
-  - <xref
-  href="excel!Excel.BooleanCellValue#referencedValues:member">Excel.BooleanCellValue.referencedValues</xref>
+  - \[
+  [Excel.BooleanCellValue.referencedValues](/javascript/api/excel/excel.booleancellvalue#referencedvalues-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DoubleCellValue#referencedValues:member">Excel.DoubleCellValue.referencedValues</xref>
+  - \[
+  [Excel.DoubleCellValue.referencedValues](/javascript/api/excel/excel.doublecellvalue#referencedvalues-member)
+  \]
 
-  - <xref
-  href="excel!Excel.EntityCellValue#referencedValues:member">Excel.EntityCellValue.referencedValues</xref>
+  - \[
+  [Excel.EntityCellValue.referencedValues](/javascript/api/excel/excel.entitycellvalue#referencedvalues-member)
+  \]
 
-  - <xref
-  href="excel!Excel.StringCellValue#referencedValues:member">Excel.StringCellValue.referencedValues</xref>
+  - \[
+  [Excel.StringCellValue.referencedValues](/javascript/api/excel/excel.stringcellvalue#referencedvalues-member)
+  \]
 
 
   Learn more about the types in this type alias through the following links. 

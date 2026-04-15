@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Table#styleSettings:member">PowerPoint.Table.styleSettings</xref>
+  - \[
+  [PowerPoint.Table.styleSettings](/javascript/api/powerpoint/powerpoint.table#stylesettings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

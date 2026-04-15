@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphFormatData#outlineLevel:member">Word.Interfaces.ParagraphFormatData.outlineLevel</xref>
+  - \[
+  [Word.Interfaces.ParagraphFormatData.outlineLevel](/javascript/api/word/word.interfaces.paragraphformatdata#outlinelevel-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphFormatUpdateData#outlineLevel:member">Word.Interfaces.ParagraphFormatUpdateData.outlineLevel</xref>
+  - \[
+  [Word.Interfaces.ParagraphFormatUpdateData.outlineLevel](/javascript/api/word/word.interfaces.paragraphformatupdatedata#outlinelevel-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphFormat#outlineLevel:member">Word.ParagraphFormat.outlineLevel</xref>
+  - \[
+  [Word.ParagraphFormat.outlineLevel](/javascript/api/word/word.paragraphformat#outlinelevel-member)
+  \]
 
   #### Examples
 

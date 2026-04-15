@@ -45,8 +45,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Context#officeTheme:member">Office.Context.officeTheme</xref>
+  - \[
+  [Office.Context.officeTheme](/javascript/api/office/office.context#officetheme-member)
+  \]
 
   #### Examples
 

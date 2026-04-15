@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member">Excel.Interfaces.FilterPivotHierarchyCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.FilterPivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.filterpivothierarchycollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData#items:member">Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.filterpivothierarchycollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -64,17 +64,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getEntities:member(1)">Office.AppointmentRead.getEntities</xref>
+  - \[
+  [Office.AppointmentRead.getEntities](/javascript/api/outlook/office.appointmentread#getentities-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#getSelectedEntities:member(1)">Office.AppointmentRead.getSelectedEntities</xref>
+  - \[
+  [Office.AppointmentRead.getSelectedEntities](/javascript/api/outlook/office.appointmentread#getselectedentities-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getEntities:member(1)">Office.MessageRead.getEntities</xref>
+  - \[
+  [Office.MessageRead.getEntities](/javascript/api/outlook/office.messageread#getentities-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#getSelectedEntities:member(1)">Office.MessageRead.getSelectedEntities</xref>
+  - \[
+  [Office.MessageRead.getSelectedEntities](/javascript/api/outlook/office.messageread#getselectedentities-member)
+  \]
 
 isPreview: false
 isDeprecated: true

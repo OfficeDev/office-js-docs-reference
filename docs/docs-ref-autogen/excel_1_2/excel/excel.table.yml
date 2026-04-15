@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TableCollection#items:member">Excel.TableCollection.items</xref>
+  - \[
+  [Excel.TableCollection.items](/javascript/api/excel/excel.tablecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

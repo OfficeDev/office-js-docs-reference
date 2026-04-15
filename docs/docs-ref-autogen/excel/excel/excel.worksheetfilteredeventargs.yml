@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onFiltered:member">Excel.Worksheet.onFiltered</xref>
+  - \[
+  [Excel.Worksheet.onFiltered](/javascript/api/excel/excel.worksheet#onfiltered-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onFiltered:member">Excel.WorksheetCollection.onFiltered</xref>
+  - \[
+  [Excel.WorksheetCollection.onFiltered](/javascript/api/excel/excel.worksheetcollection#onfiltered-member)
+  \]
 
 isPreview: true
 isDeprecated: false

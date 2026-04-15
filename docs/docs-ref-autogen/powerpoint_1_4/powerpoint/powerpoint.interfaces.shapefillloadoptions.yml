@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#fill-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member">PowerPoint.Interfaces.ShapeLoadOptions.fill</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#fill-member)
+  \]
 
 isPreview: false
 isDeprecated: false

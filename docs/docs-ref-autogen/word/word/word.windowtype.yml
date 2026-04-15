@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WindowData#type:member">Word.Interfaces.WindowData.type</xref>
+  - \[
+  [Word.Interfaces.WindowData.type](/javascript/api/word/word.interfaces.windowdata#type-member)
+  \]
 
-  - <xref href="word!Word.Window#type:member">Word.Window.type</xref>
+  - \[ [Word.Window.type](/javascript/api/word/word.window#type-member) \]
 
 isPreview: false
 isDeprecated: false

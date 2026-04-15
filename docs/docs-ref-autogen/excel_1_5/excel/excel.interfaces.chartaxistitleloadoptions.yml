@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisLoadOptions#title:member">Excel.Interfaces.ChartAxisLoadOptions.title</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisLoadOptions.title](/javascript/api/excel/excel.interfaces.chartaxisloadoptions#title-member)
+  \]
 
 isPreview: false
 isDeprecated: false

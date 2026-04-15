@@ -22,50 +22,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.Binding#addHandlerAsync:member(1)">Office.Binding.addHandlerAsync</xref>
+  - \[
+  [Office.Binding.addHandlerAsync](/javascript/api/office/office.binding#addhandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Binding#removeHandlerAsync:member(1)">Office.Binding.removeHandlerAsync</xref>
+  - \[
+  [Office.Binding.removeHandlerAsync](/javascript/api/office/office.binding#removehandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.BindingDataChangedEventArgs#type:member">Office.BindingDataChangedEventArgs.type</xref>
+  - \[
+  [Office.BindingDataChangedEventArgs.type](/javascript/api/office/office.bindingdatachangedeventargs#type-member)
+  \]
 
-  - <xref
-  href="office!Office.BindingSelectionChangedEventArgs#type:member">Office.BindingSelectionChangedEventArgs.type</xref>
+  - \[
+  [Office.BindingSelectionChangedEventArgs.type](/javascript/api/office/office.bindingselectionchangedeventargs#type-member)
+  \]
 
-  - <xref
-  href="office!Office.CustomXmlPart#addHandlerAsync:member(1)">Office.CustomXmlPart.addHandlerAsync</xref>
+  - \[
+  [Office.CustomXmlPart.addHandlerAsync](/javascript/api/office/office.customxmlpart#addhandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.CustomXmlPart#removeHandlerAsync:member(1)">Office.CustomXmlPart.removeHandlerAsync</xref>
+  - \[
+  [Office.CustomXmlPart.removeHandlerAsync](/javascript/api/office/office.customxmlpart#removehandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Dialog#addEventHandler:member(1)">Office.Dialog.addEventHandler</xref>
+  - \[
+  [Office.Dialog.addEventHandler](/javascript/api/office/office.dialog#addeventhandler-member)
+  \]
 
-  - <xref
-  href="office!Office.DialogParentMessageReceivedEventArgs#type:member">Office.DialogParentMessageReceivedEventArgs.type</xref>
+  - \[
+  [Office.DialogParentMessageReceivedEventArgs.type](/javascript/api/office/office.dialogparentmessagereceivedeventargs#type-member)
+  \]
 
-  - <xref
-  href="office!Office.Document#addHandlerAsync:member(1)">Office.Document.addHandlerAsync</xref>
+  - \[
+  [Office.Document.addHandlerAsync](/javascript/api/office/office.document#addhandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Document#removeHandlerAsync:member(1)">Office.Document.removeHandlerAsync</xref>
+  - \[
+  [Office.Document.removeHandlerAsync](/javascript/api/office/office.document#removehandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.DocumentSelectionChangedEventArgs#type:member">Office.DocumentSelectionChangedEventArgs.type</xref>
+  - \[
+  [Office.DocumentSelectionChangedEventArgs.type](/javascript/api/office/office.documentselectionchangedeventargs#type-member)
+  \]
 
-  - <xref
-  href="office!Office.Settings#addHandlerAsync:member(1)">Office.Settings.addHandlerAsync</xref>
+  - \[
+  [Office.Settings.addHandlerAsync](/javascript/api/office/office.settings#addhandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.Settings#removeHandlerAsync:member(1)">Office.Settings.removeHandlerAsync</xref>
+  - \[
+  [Office.Settings.removeHandlerAsync](/javascript/api/office/office.settings#removehandlerasync-member)
+  \]
 
-  - <xref
-  href="office!Office.SettingsChangedEventArgs#type:member">Office.SettingsChangedEventArgs.type</xref>
+  - \[
+  [Office.SettingsChangedEventArgs.type](/javascript/api/office/office.settingschangedeventargs#type-member)
+  \]
 
-  - <xref
-  href="office!Office.UI#addHandlerAsync:member(1)">Office.UI.addHandlerAsync</xref>
+  - \[
+  [Office.UI.addHandlerAsync](/javascript/api/office/office.ui#addhandlerasync-member)
+  \]
 
   #### Examples
 

@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#layout:member">PowerPoint.Interfaces.SlideCollectionLoadOptions.layout</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideCollectionLoadOptions.layout](/javascript/api/powerpoint/powerpoint.interfaces.slidecollectionloadoptions#layout-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#layout:member">PowerPoint.Interfaces.SlideLoadOptions.layout</xref>
+  - \[
+  [PowerPoint.Interfaces.SlideLoadOptions.layout](/javascript/api/powerpoint/powerpoint.interfaces.slideloadoptions#layout-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member">OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line](/javascript/api/onenote/onenote.interfaces.inkanalysiswordcollectionloadoptions#line-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#line:member">OneNote.Interfaces.InkAnalysisWordLoadOptions.line</xref>
+  - \[
+  [OneNote.Interfaces.InkAnalysisWordLoadOptions.line](/javascript/api/onenote/onenote.interfaces.inkanalysiswordloadoptions#line-member)
+  \]
 
 isPreview: false
 isDeprecated: false

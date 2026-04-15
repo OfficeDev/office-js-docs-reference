@@ -14,10 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.FrameCollection#items:member">Word.FrameCollection.items</xref>
+  - \[
+  [Word.FrameCollection.items](/javascript/api/word/word.framecollection#items-member)
+  \]
 
-  - <xref href="word!Word.Style#frame:member">Word.Style.frame</xref>
+  - \[ [Word.Style.frame](/javascript/api/word/word.style#frame-member) \]
 
 isPreview: false
 isDeprecated: false

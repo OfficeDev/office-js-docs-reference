@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member">Excel.Interfaces.RangeFormatData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatData.horizontalAlignment](/javascript/api/excel/excel.interfaces.rangeformatdata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member">Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFormat#horizontalAlignment:member">Excel.RangeFormat.horizontalAlignment</xref>
+  - \[
+  [Excel.RangeFormat.horizontalAlignment](/javascript/api/excel/excel.rangeformat#horizontalalignment-member)
+  \]
 
   #### Examples
 

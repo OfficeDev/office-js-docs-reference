@@ -19,8 +19,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.RequestContext#presentation:member">PowerPoint.RequestContext.presentation</xref>
+  - \[
+  [PowerPoint.RequestContext.presentation](/javascript/api/powerpoint/powerpoint.requestcontext#presentation-member)
+  \]
 
   #### Examples
 

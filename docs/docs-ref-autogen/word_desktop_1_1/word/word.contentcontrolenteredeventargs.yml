@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#onEntered:member">Word.ContentControl.onEntered</xref>
+  - \[
+  [Word.ContentControl.onEntered](/javascript/api/word/word.contentcontrol#onentered-member)
+  \]
 
   #### Examples
 

@@ -8,20 +8,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PageCollectionData#items:member">Word.Interfaces.PageCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.PageCollectionData.items](/javascript/api/word/word.interfaces.pagecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PageCollectionUpdateData#items:member">Word.Interfaces.PageCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.PageCollectionUpdateData.items](/javascript/api/word/word.interfaces.pagecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PaneData#pages:member">Word.Interfaces.PaneData.pages</xref>
+  - \[
+  [Word.Interfaces.PaneData.pages](/javascript/api/word/word.interfaces.panedata#pages-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PaneData#pagesEnclosingViewport:member">Word.Interfaces.PaneData.pagesEnclosingViewport</xref>
+  - \[
+  [Word.Interfaces.PaneData.pagesEnclosingViewport](/javascript/api/word/word.interfaces.panedata#pagesenclosingviewport-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#pages:member">Word.Interfaces.RangeData.pages</xref>
+  - \[
+  [Word.Interfaces.RangeData.pages](/javascript/api/word/word.interfaces.rangedata#pages-member)
+  \]
 
 isPreview: false
 isDeprecated: false

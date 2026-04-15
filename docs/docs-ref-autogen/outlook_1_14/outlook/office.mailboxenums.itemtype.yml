@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#itemType:member">Office.AppointmentCompose.itemType</xref>
+  - \[
+  [Office.AppointmentCompose.itemType](/javascript/api/outlook/office.appointmentcompose#itemtype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#itemType:member">Office.AppointmentRead.itemType</xref>
+  - \[
+  [Office.AppointmentRead.itemType](/javascript/api/outlook/office.appointmentread#itemtype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#itemType:member">Office.MessageCompose.itemType</xref>
+  - \[
+  [Office.MessageCompose.itemType](/javascript/api/outlook/office.messagecompose#itemtype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#itemType:member">Office.MessageRead.itemType</xref>
+  - \[
+  [Office.MessageRead.itemType](/javascript/api/outlook/office.messageread#itemtype-member)
+  \]
 
-  - <xref
-  href="outlook!Office.SelectedItemDetails#itemType:member">Office.SelectedItemDetails.itemType</xref>
+  - \[
+  [Office.SelectedItemDetails.itemType](/javascript/api/outlook/office.selecteditemdetails#itemtype-member)
+  \]
 
   #### Examples
 

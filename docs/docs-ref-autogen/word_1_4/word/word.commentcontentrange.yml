@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Comment#contentRange:member">Word.Comment.contentRange</xref>
+  - \[
+  [Word.Comment.contentRange](/javascript/api/word/word.comment#contentrange-member)
+  \]
 
-  - <xref
-  href="word!Word.CommentReply#contentRange:member">Word.CommentReply.contentRange</xref>
+  - \[
+  [Word.CommentReply.contentRange](/javascript/api/word/word.commentreply#contentrange-member)
+  \]
 
   #### Examples
 

@@ -13,16 +13,19 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Icon#set:member">Excel.Icon.set</xref>
+  - \[ [Excel.Icon.set](/javascript/api/excel/excel.icon#set-member) \]
 
-  - <xref
-  href="excel!Excel.IconSetConditionalFormat#style:member">Excel.IconSetConditionalFormat.style</xref>
+  - \[
+  [Excel.IconSetConditionalFormat.style](/javascript/api/excel/excel.iconsetconditionalformat#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.IconSetConditionalFormatData#style:member">Excel.Interfaces.IconSetConditionalFormatData.style</xref>
+  - \[
+  [Excel.Interfaces.IconSetConditionalFormatData.style](/javascript/api/excel/excel.interfaces.iconsetconditionalformatdata#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member">Excel.Interfaces.IconSetConditionalFormatUpdateData.style</xref>
+  - \[
+  [Excel.Interfaces.IconSetConditionalFormatUpdateData.style](/javascript/api/excel/excel.interfaces.iconsetconditionalformatupdatedata#style-member)
+  \]
 
   #### Examples
 

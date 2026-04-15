@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Page#contents:member">OneNote.Page.contents</xref>
+  - \[
+  [OneNote.Page.contents](/javascript/api/onenote/onenote.page#contents-member)
+  \]
 
 isPreview: false
 isDeprecated: false

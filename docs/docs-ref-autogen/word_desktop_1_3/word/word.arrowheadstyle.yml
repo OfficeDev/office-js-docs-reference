@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#beginArrowheadStyle:member">Word.Interfaces.LineFormatData.beginArrowheadStyle</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.beginArrowheadStyle](/javascript/api/word/word.interfaces.lineformatdata#beginarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#endArrowheadStyle:member">Word.Interfaces.LineFormatData.endArrowheadStyle</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.endArrowheadStyle](/javascript/api/word/word.interfaces.lineformatdata#endarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadStyle:member">Word.Interfaces.LineFormatUpdateData.beginArrowheadStyle</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.beginArrowheadStyle](/javascript/api/word/word.interfaces.lineformatupdatedata#beginarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#endArrowheadStyle:member">Word.Interfaces.LineFormatUpdateData.endArrowheadStyle</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.endArrowheadStyle](/javascript/api/word/word.interfaces.lineformatupdatedata#endarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.LineFormat#beginArrowheadStyle:member">Word.LineFormat.beginArrowheadStyle</xref>
+  - \[
+  [Word.LineFormat.beginArrowheadStyle](/javascript/api/word/word.lineformat#beginarrowheadstyle-member)
+  \]
 
-  - <xref
-  href="word!Word.LineFormat#endArrowheadStyle:member">Word.LineFormat.endArrowheadStyle</xref>
+  - \[
+  [Word.LineFormat.endArrowheadStyle](/javascript/api/word/word.lineformat#endarrowheadstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

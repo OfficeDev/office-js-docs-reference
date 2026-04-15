@@ -12,17 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member">Word.Interfaces.CommentCollectionLoadOptions.contentRange</xref>
+  - \[
+  [Word.Interfaces.CommentCollectionLoadOptions.contentRange](/javascript/api/word/word.interfaces.commentcollectionloadoptions#contentrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentLoadOptions#contentRange:member">Word.Interfaces.CommentLoadOptions.contentRange</xref>
+  - \[
+  [Word.Interfaces.CommentLoadOptions.contentRange](/javascript/api/word/word.interfaces.commentloadoptions#contentrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentReplyCollectionLoadOptions#contentRange:member">Word.Interfaces.CommentReplyCollectionLoadOptions.contentRange</xref>
+  - \[
+  [Word.Interfaces.CommentReplyCollectionLoadOptions.contentRange](/javascript/api/word/word.interfaces.commentreplycollectionloadoptions#contentrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CommentReplyLoadOptions#contentRange:member">Word.Interfaces.CommentReplyLoadOptions.contentRange</xref>
+  - \[
+  [Word.Interfaces.CommentReplyLoadOptions.contentRange](/javascript/api/word/word.interfaces.commentreplyloadoptions#contentrange-member)
+  \]
 
 isPreview: false
 isDeprecated: false

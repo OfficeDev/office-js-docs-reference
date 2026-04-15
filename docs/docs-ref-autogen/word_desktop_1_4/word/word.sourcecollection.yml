@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Bibliography#sources:member">Word.Bibliography.sources</xref>
+  - \[
+  [Word.Bibliography.sources](/javascript/api/word/word.bibliography#sources-member)
+  \]
 
 isPreview: false
 isDeprecated: false

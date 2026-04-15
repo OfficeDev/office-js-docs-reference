@@ -22,8 +22,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onMoved:member">Excel.WorksheetCollection.onMoved</xref>
+  - \[
+  [Excel.WorksheetCollection.onMoved](/javascript/api/excel/excel.worksheetcollection#onmoved-member)
+  \]
 
   #### Examples
 

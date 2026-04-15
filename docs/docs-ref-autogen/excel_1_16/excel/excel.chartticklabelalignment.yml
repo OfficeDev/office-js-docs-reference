@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#alignment:member">Excel.ChartAxis.alignment</xref>
+  - \[
+  [Excel.ChartAxis.alignment](/javascript/api/excel/excel.chartaxis#alignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#alignment:member">Excel.Interfaces.ChartAxisData.alignment</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.alignment](/javascript/api/excel/excel.interfaces.chartaxisdata#alignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisUpdateData#alignment:member">Excel.Interfaces.ChartAxisUpdateData.alignment</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisUpdateData.alignment](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#alignment-member)
+  \]
 
 isPreview: false
 isDeprecated: false

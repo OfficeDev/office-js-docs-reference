@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ListFormatUpdateData#listTemplate:member">Word.Interfaces.ListFormatUpdateData.listTemplate</xref>
+  - \[
+  [Word.Interfaces.ListFormatUpdateData.listTemplate](/javascript/api/word/word.interfaces.listformatupdatedata#listtemplate-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleUpdateData#listTemplate:member">Word.Interfaces.StyleUpdateData.listTemplate</xref>
+  - \[
+  [Word.Interfaces.StyleUpdateData.listTemplate](/javascript/api/word/word.interfaces.styleupdatedata#listtemplate-member)
+  \]
 
 isPreview: false
 isDeprecated: false

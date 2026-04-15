@@ -17,32 +17,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member">Excel.Interfaces.GeometricShapeLoadOptions.shape</xref>
+  - \[
+  [Excel.Interfaces.GeometricShapeLoadOptions.shape](/javascript/api/excel/excel.interfaces.geometricshapeloadoptions#shape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup</xref>
+  - \[
+  [Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup](/javascript/api/excel/excel.interfaces.groupshapecollectionloadoptions#parentgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ImageLoadOptions#shape:member">Excel.Interfaces.ImageLoadOptions.shape</xref>
+  - \[
+  [Excel.Interfaces.ImageLoadOptions.shape](/javascript/api/excel/excel.interfaces.imageloadoptions#shape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member">Excel.Interfaces.LineLoadOptions.beginConnectedShape</xref>
+  - \[
+  [Excel.Interfaces.LineLoadOptions.beginConnectedShape](/javascript/api/excel/excel.interfaces.lineloadoptions#beginconnectedshape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member">Excel.Interfaces.LineLoadOptions.endConnectedShape</xref>
+  - \[
+  [Excel.Interfaces.LineLoadOptions.endConnectedShape](/javascript/api/excel/excel.interfaces.lineloadoptions#endconnectedshape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineLoadOptions#shape:member">Excel.Interfaces.LineLoadOptions.shape</xref>
+  - \[
+  [Excel.Interfaces.LineLoadOptions.shape](/javascript/api/excel/excel.interfaces.lineloadoptions#shape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#parentGroup:member">Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup</xref>
+  - \[
+  [Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup](/javascript/api/excel/excel.interfaces.shapecollectionloadoptions#parentgroup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member">Excel.Interfaces.ShapeGroupLoadOptions.shape</xref>
+  - \[
+  [Excel.Interfaces.ShapeGroupLoadOptions.shape](/javascript/api/excel/excel.interfaces.shapegrouploadoptions#shape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member">Excel.Interfaces.ShapeLoadOptions.parentGroup</xref>
+  - \[
+  [Excel.Interfaces.ShapeLoadOptions.parentGroup](/javascript/api/excel/excel.interfaces.shapeloadoptions#parentgroup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

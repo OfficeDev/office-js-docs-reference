@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#onExited:member">Word.ContentControl.onExited</xref>
+  - \[
+  [Word.ContentControl.onExited](/javascript/api/word/word.contentcontrol#onexited-member)
+  \]
 
   #### Examples
 

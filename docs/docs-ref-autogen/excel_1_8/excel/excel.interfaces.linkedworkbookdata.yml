@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedWorkbookCollectionData#items:member">Excel.Interfaces.LinkedWorkbookCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.LinkedWorkbookCollectionData.items](/javascript/api/excel/excel.interfaces.linkedworkbookcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member">Excel.Interfaces.LinkedWorkbookCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.LinkedWorkbookCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.linkedworkbookcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Table#onSelectionChanged:member">Excel.Table.onSelectionChanged</xref>
+  - \[
+  [Excel.Table.onSelectionChanged](/javascript/api/excel/excel.table#onselectionchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

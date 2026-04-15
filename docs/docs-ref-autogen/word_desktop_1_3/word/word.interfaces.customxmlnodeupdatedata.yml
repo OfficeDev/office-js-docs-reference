@@ -10,26 +10,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeUpdateData#firstChild:member">Word.Interfaces.CustomXmlNodeUpdateData.firstChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeUpdateData.firstChild](/javascript/api/word/word.interfaces.customxmlnodeupdatedata#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeUpdateData#lastChild:member">Word.Interfaces.CustomXmlNodeUpdateData.lastChild</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeUpdateData.lastChild](/javascript/api/word/word.interfaces.customxmlnodeupdatedata#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeUpdateData#nextSibling:member">Word.Interfaces.CustomXmlNodeUpdateData.nextSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeUpdateData.nextSibling](/javascript/api/word/word.interfaces.customxmlnodeupdatedata#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeUpdateData#parentNode:member">Word.Interfaces.CustomXmlNodeUpdateData.parentNode</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeUpdateData.parentNode](/javascript/api/word/word.interfaces.customxmlnodeupdatedata#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlNodeUpdateData#previousSibling:member">Word.Interfaces.CustomXmlNodeUpdateData.previousSibling</xref>
+  - \[
+  [Word.Interfaces.CustomXmlNodeUpdateData.previousSibling](/javascript/api/word/word.interfaces.customxmlnodeupdatedata#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CustomXmlPartUpdateData#documentElement:member">Word.Interfaces.CustomXmlPartUpdateData.documentElement</xref>
+  - \[
+  [Word.Interfaces.CustomXmlPartUpdateData.documentElement](/javascript/api/word/word.interfaces.customxmlpartupdatedata#documentelement-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member">Word.Interfaces.XmlMappingUpdateData.customXmlNode</xref>
+  - \[
+  [Word.Interfaces.XmlMappingUpdateData.customXmlNode](/javascript/api/word/word.interfaces.xmlmappingupdatedata#customxmlnode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

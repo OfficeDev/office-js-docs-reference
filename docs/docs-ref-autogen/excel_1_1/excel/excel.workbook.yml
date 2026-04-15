@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RequestContext#workbook:member">Excel.RequestContext.workbook</xref>
+  - \[
+  [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#workbook-member)
+  \]
 
   #### Examples
 

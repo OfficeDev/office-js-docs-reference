@@ -10,32 +10,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatUpdateData#backgroundColor:member">Word.Interfaces.FillFormatUpdateData.backgroundColor</xref>
+  - \[
+  [Word.Interfaces.FillFormatUpdateData.backgroundColor](/javascript/api/word/word.interfaces.fillformatupdatedata#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatUpdateData#foregroundColor:member">Word.Interfaces.FillFormatUpdateData.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.FillFormatUpdateData.foregroundColor](/javascript/api/word/word.interfaces.fillformatupdatedata#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#textColor:member">Word.Interfaces.FontUpdateData.textColor</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.textColor](/javascript/api/word/word.interfaces.fontupdatedata#textcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GlowFormatUpdateData#color:member">Word.Interfaces.GlowFormatUpdateData.color</xref>
+  - \[
+  [Word.Interfaces.GlowFormatUpdateData.color](/javascript/api/word/word.interfaces.glowformatupdatedata#color-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#backgroundColor:member">Word.Interfaces.LineFormatUpdateData.backgroundColor</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.backgroundColor](/javascript/api/word/word.interfaces.lineformatupdatedata#backgroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#foregroundColor:member">Word.Interfaces.LineFormatUpdateData.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.foregroundColor](/javascript/api/word/word.interfaces.lineformatupdatedata#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadowFormatUpdateData#foregroundColor:member">Word.Interfaces.ShadowFormatUpdateData.foregroundColor</xref>
+  - \[
+  [Word.Interfaces.ShadowFormatUpdateData.foregroundColor](/javascript/api/word/word.interfaces.shadowformatupdatedata#foregroundcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#contourColor:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.contourColor</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatUpdateData.contourColor](/javascript/api/word/word.interfaces.threedimensionalformatupdatedata#contourcolor-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColor:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColor</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColor](/javascript/api/word/word.interfaces.threedimensionalformatupdatedata#extrusioncolor-member)
+  \]
 
 isPreview: false
 isDeprecated: false

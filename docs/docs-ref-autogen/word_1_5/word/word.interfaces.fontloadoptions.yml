@@ -12,44 +12,57 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BodyLoadOptions#font:member">Word.Interfaces.BodyLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.BodyLoadOptions.font](/javascript/api/word/word.interfaces.bodyloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member">Word.Interfaces.ContentControlCollectionLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.font](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#font:member">Word.Interfaces.ContentControlLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.font](/javascript/api/word/word.interfaces.contentcontrolloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member">Word.Interfaces.ParagraphCollectionLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.font](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#font:member">Word.Interfaces.ParagraphLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.font](/javascript/api/word/word.interfaces.paragraphloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#font:member">Word.Interfaces.RangeCollectionLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.font](/javascript/api/word/word.interfaces.rangecollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#font:member">Word.Interfaces.RangeLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.font](/javascript/api/word/word.interfaces.rangeloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleCollectionLoadOptions#font:member">Word.Interfaces.StyleCollectionLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.StyleCollectionLoadOptions.font](/javascript/api/word/word.interfaces.stylecollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.StyleLoadOptions#font:member">Word.Interfaces.StyleLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.StyleLoadOptions.font](/javascript/api/word/word.interfaces.styleloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionLoadOptions#font:member">Word.Interfaces.TableCollectionLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.TableCollectionLoadOptions.font](/javascript/api/word/word.interfaces.tablecollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableLoadOptions#font:member">Word.Interfaces.TableLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.TableLoadOptions.font](/javascript/api/word/word.interfaces.tableloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowCollectionLoadOptions#font:member">Word.Interfaces.TableRowCollectionLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.TableRowCollectionLoadOptions.font](/javascript/api/word/word.interfaces.tablerowcollectionloadoptions#font-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowLoadOptions#font:member">Word.Interfaces.TableRowLoadOptions.font</xref>
+  - \[
+  [Word.Interfaces.TableRowLoadOptions.font](/javascript/api/word/word.interfaces.tablerowloadoptions#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

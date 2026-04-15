@@ -13,17 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableStyleSettingsData#style:member">PowerPoint.Interfaces.TableStyleSettingsData.style</xref>
+  - \[
+  [PowerPoint.Interfaces.TableStyleSettingsData.style](/javascript/api/powerpoint/powerpoint.interfaces.tablestylesettingsdata#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#style:member">PowerPoint.Interfaces.TableStyleSettingsUpdateData.style</xref>
+  - \[
+  [PowerPoint.Interfaces.TableStyleSettingsUpdateData.style](/javascript/api/powerpoint/powerpoint.interfaces.tablestylesettingsupdatedata#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableAddOptions#style:member">PowerPoint.TableAddOptions.style</xref>
+  - \[
+  [PowerPoint.TableAddOptions.style](/javascript/api/powerpoint/powerpoint.tableaddoptions#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableStyleSettings#style:member">PowerPoint.TableStyleSettings.style</xref>
+  - \[
+  [PowerPoint.TableStyleSettings.style](/javascript/api/powerpoint/powerpoint.tablestylesettings#style-member)
+  \]
 
 isPreview: false
 isDeprecated: false

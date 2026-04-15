@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PivotFilters#dateFilter:member">Excel.PivotFilters.dateFilter</xref>
+  - \[
+  [Excel.PivotFilters.dateFilter](/javascript/api/excel/excel.pivotfilters#datefilter-member)
+  \]
 
 isPreview: false
 isDeprecated: false

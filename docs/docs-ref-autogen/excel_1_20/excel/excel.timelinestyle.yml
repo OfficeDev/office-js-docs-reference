@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TimelineStyleCollection#items:member">Excel.TimelineStyleCollection.items</xref>
+  - \[
+  [Excel.TimelineStyleCollection.items](/javascript/api/excel/excel.timelinestylecollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

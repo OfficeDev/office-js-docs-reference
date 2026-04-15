@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorder#style:member">Excel.ConditionalRangeBorder.style</xref>
+  - \[
+  [Excel.ConditionalRangeBorder.style](/javascript/api/excel/excel.conditionalrangeborder#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderData#style:member">Excel.Interfaces.ConditionalRangeBorderData.style</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderData.style](/javascript/api/excel/excel.interfaces.conditionalrangeborderdata#style-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style:member">Excel.Interfaces.ConditionalRangeBorderUpdateData.style</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderUpdateData.style](/javascript/api/excel/excel.interfaces.conditionalrangeborderupdatedata#style-member)
+  \]
 
 isPreview: false
 isDeprecated: false

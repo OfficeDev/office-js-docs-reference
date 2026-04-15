@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Range#format:member">Excel.Range.format</xref>
+  - \[ [Excel.Range.format](/javascript/api/excel/excel.range#format-member) \]
 
 isPreview: false
 isDeprecated: false

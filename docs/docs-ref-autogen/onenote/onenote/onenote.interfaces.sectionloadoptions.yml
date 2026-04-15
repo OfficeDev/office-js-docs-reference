@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageCollectionLoadOptions#parentSection:member">OneNote.Interfaces.PageCollectionLoadOptions.parentSection</xref>
+  - \[
+  [OneNote.Interfaces.PageCollectionLoadOptions.parentSection](/javascript/api/onenote/onenote.interfaces.pagecollectionloadoptions#parentsection-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Interfaces.PageLoadOptions#parentSection:member">OneNote.Interfaces.PageLoadOptions.parentSection</xref>
+  - \[
+  [OneNote.Interfaces.PageLoadOptions.parentSection](/javascript/api/onenote/onenote.interfaces.pageloadoptions#parentsection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.TableCell#parentRow:member">Word.TableCell.parentRow</xref>
+  - \[
+  [Word.TableCell.parentRow](/javascript/api/word/word.tablecell#parentrow-member)
+  \]
 
-  - <xref
-  href="word!Word.TableRowCollection#items:member">Word.TableRowCollection.items</xref>
+  - \[
+  [Word.TableRowCollection.items](/javascript/api/word/word.tablerowcollection#items-member)
+  \]
 
   #### Examples
 

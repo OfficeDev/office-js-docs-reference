@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleData#readingOrder:member">Excel.Interfaces.StyleData.readingOrder</xref>
+  - \[
+  [Excel.Interfaces.StyleData.readingOrder](/javascript/api/excel/excel.interfaces.styledata#readingorder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member">Excel.Interfaces.StyleUpdateData.readingOrder</xref>
+  - \[
+  [Excel.Interfaces.StyleUpdateData.readingOrder](/javascript/api/excel/excel.interfaces.styleupdatedata#readingorder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Style#readingOrder:member">Excel.Style.readingOrder</xref>
+  - \[
+  [Excel.Style.readingOrder](/javascript/api/excel/excel.style#readingorder-member)
+  \]
 
   #### Examples
 

@@ -30,23 +30,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentCompose#notificationMessages:member">Office.AppointmentCompose.notificationMessages</xref>
+  - \[
+  [Office.AppointmentCompose.notificationMessages](/javascript/api/outlook/office.appointmentcompose#notificationmessages-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#notificationMessages:member">Office.AppointmentRead.notificationMessages</xref>
+  - \[
+  [Office.AppointmentRead.notificationMessages](/javascript/api/outlook/office.appointmentread#notificationmessages-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageCompose#notificationMessages:member">Office.LoadedMessageCompose.notificationMessages</xref>
+  - \[
+  [Office.LoadedMessageCompose.notificationMessages](/javascript/api/outlook/office.loadedmessagecompose#notificationmessages-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#notificationMessages:member">Office.LoadedMessageRead.notificationMessages</xref>
+  - \[
+  [Office.LoadedMessageRead.notificationMessages](/javascript/api/outlook/office.loadedmessageread#notificationmessages-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageCompose#notificationMessages:member">Office.MessageCompose.notificationMessages</xref>
+  - \[
+  [Office.MessageCompose.notificationMessages](/javascript/api/outlook/office.messagecompose#notificationmessages-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#notificationMessages:member">Office.MessageRead.notificationMessages</xref>
+  - \[
+  [Office.MessageRead.notificationMessages](/javascript/api/outlook/office.messageread#notificationmessages-member)
+  \]
 
 isPreview: false
 isDeprecated: false

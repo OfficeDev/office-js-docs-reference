@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Document#windows:member">Word.Document.windows</xref>
+  - \[
+  [Word.Document.windows](/javascript/api/word/word.document#windows-member) \]
 
   #### Examples
 

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member">Excel.Interfaces.PivotTableCollectionLoadOptions.layout</xref>
+  - \[
+  [Excel.Interfaces.PivotTableCollectionLoadOptions.layout](/javascript/api/excel/excel.interfaces.pivottablecollectionloadoptions#layout-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member">Excel.Interfaces.PivotTableLoadOptions.layout</xref>
+  - \[
+  [Excel.Interfaces.PivotTableLoadOptions.layout](/javascript/api/excel/excel.interfaces.pivottableloadoptions#layout-member)
+  \]
 
 isPreview: false
 isDeprecated: false

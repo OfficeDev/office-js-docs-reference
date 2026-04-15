@@ -12,22 +12,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Bookmark#storyType:member">Word.Bookmark.storyType</xref>
+  - \[
+  [Word.Bookmark.storyType](/javascript/api/word/word.bookmark#storytype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BookmarkData#storyType:member">Word.Interfaces.BookmarkData.storyType</xref>
+  - \[
+  [Word.Interfaces.BookmarkData.storyType](/javascript/api/word/word.interfaces.bookmarkdata#storytype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#storyType:member">Word.Interfaces.RangeData.storyType</xref>
+  - \[
+  [Word.Interfaces.RangeData.storyType](/javascript/api/word/word.interfaces.rangedata#storytype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionData#storyType:member">Word.Interfaces.SelectionData.storyType</xref>
+  - \[
+  [Word.Interfaces.SelectionData.storyType](/javascript/api/word/word.interfaces.selectiondata#storytype-member)
+  \]
 
-  - <xref href="word!Word.Range#storyType:member">Word.Range.storyType</xref>
+  - \[ [Word.Range.storyType](/javascript/api/word/word.range#storytype-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#storyType:member">Word.Selection.storyType</xref>
+  - \[
+  [Word.Selection.storyType](/javascript/api/word/word.selection#storytype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

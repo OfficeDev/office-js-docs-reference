@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Range#conditionalFormats:member">Excel.Range.conditionalFormats</xref>
+  - \[
+  [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#conditionalformats-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeAreas#conditionalFormats:member">Excel.RangeAreas.conditionalFormats</xref>
+  - \[
+  [Excel.RangeAreas.conditionalFormats](/javascript/api/excel/excel.rangeareas#conditionalformats-member)
+  \]
 
 isPreview: false
 isDeprecated: false

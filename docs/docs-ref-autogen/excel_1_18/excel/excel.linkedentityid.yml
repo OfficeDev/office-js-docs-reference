@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LinkedEntityCellValue#id:member">Excel.LinkedEntityCellValue.id</xref>
+  - \[
+  [Excel.LinkedEntityCellValue.id](/javascript/api/excel/excel.linkedentitycellvalue#id-member)
+  \]
 
 isPreview: false
 isDeprecated: false

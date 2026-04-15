@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ListLevelCollection#items:member">Word.ListLevelCollection.items</xref>
+  - \[
+  [Word.ListLevelCollection.items](/javascript/api/word/word.listlevelcollection#items-member)
+  \]
 
   #### Examples
 

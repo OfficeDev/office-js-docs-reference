@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.TimeoutErrorCellValue#errorSubType:member">Excel.TimeoutErrorCellValue.errorSubType</xref>
+  - \[
+  [Excel.TimeoutErrorCellValue.errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#errorsubtype-member)
+  \]
 
 isPreview: true
 isDeprecated: false

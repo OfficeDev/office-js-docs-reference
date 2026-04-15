@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Style#listTemplate:member">Word.Style.listTemplate</xref>
+  - \[
+  [Word.Style.listTemplate](/javascript/api/word/word.style#listtemplate-member)
+  \]
 
   #### Examples
 

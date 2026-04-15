@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.SettableCellProperties#textRuns:member">Excel.SettableCellProperties.textRuns</xref>
+  - \[
+  [Excel.SettableCellProperties.textRuns](/javascript/api/excel/excel.settablecellproperties#textruns-member)
+  \]
 
 isPreview: false
 isDeprecated: false

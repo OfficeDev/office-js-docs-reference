@@ -27,8 +27,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.MailboxEvent#completed:member(1)">Office.MailboxEvent.completed</xref>
+  - \[
+  [Office.MailboxEvent.completed](/javascript/api/outlook/office.mailboxevent#completed-member)
+  \]
 
   #### Examples
 

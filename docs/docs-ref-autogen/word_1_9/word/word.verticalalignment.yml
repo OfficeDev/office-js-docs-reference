@@ -13,32 +13,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TableCellData#verticalAlignment:member">Word.Interfaces.TableCellData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableCellData.verticalAlignment](/javascript/api/word/word.interfaces.tablecelldata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member">Word.Interfaces.TableCellUpdateData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableCellUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.tablecellupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableData#verticalAlignment:member">Word.Interfaces.TableData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableData.verticalAlignment](/javascript/api/word/word.interfaces.tabledata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowData#verticalAlignment:member">Word.Interfaces.TableRowData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableRowData.verticalAlignment](/javascript/api/word/word.interfaces.tablerowdata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member">Word.Interfaces.TableRowUpdateData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableRowUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.tablerowupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableUpdateData#verticalAlignment:member">Word.Interfaces.TableUpdateData.verticalAlignment</xref>
+  - \[
+  [Word.Interfaces.TableUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.tableupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.Table#verticalAlignment:member">Word.Table.verticalAlignment</xref>
+  - \[
+  [Word.Table.verticalAlignment](/javascript/api/word/word.table#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.TableCell#verticalAlignment:member">Word.TableCell.verticalAlignment</xref>
+  - \[
+  [Word.TableCell.verticalAlignment](/javascript/api/word/word.tablecell#verticalalignment-member)
+  \]
 
-  - <xref
-  href="word!Word.TableRow#verticalAlignment:member">Word.TableRow.verticalAlignment</xref>
+  - \[
+  [Word.TableRow.verticalAlignment](/javascript/api/word/word.tablerow#verticalalignment-member)
+  \]
 
   #### Examples
 

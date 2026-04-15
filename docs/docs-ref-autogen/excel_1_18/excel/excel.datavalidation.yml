@@ -16,11 +16,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Range#dataValidation:member">Excel.Range.dataValidation</xref>
+  - \[
+  [Excel.Range.dataValidation](/javascript/api/excel/excel.range#datavalidation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeAreas#dataValidation:member">Excel.RangeAreas.dataValidation</xref>
+  - \[
+  [Excel.RangeAreas.dataValidation](/javascript/api/excel/excel.rangeareas#datavalidation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

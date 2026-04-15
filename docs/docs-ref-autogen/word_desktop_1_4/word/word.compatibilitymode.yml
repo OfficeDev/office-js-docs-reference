@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#compatibilityMode:member">Word.Document.compatibilityMode</xref>
+  - \[
+  [Word.Document.compatibilityMode](/javascript/api/word/word.document#compatibilitymode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#compatibilityMode:member">Word.Interfaces.DocumentData.compatibilityMode</xref>
+  - \[
+  [Word.Interfaces.DocumentData.compatibilityMode](/javascript/api/word/word.interfaces.documentdata#compatibilitymode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

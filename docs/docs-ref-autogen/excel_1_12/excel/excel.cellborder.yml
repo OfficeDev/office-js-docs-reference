@@ -18,29 +18,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#bottom:member">Excel.CellBorderCollection.bottom</xref>
+  - \[
+  [Excel.CellBorderCollection.bottom](/javascript/api/excel/excel.cellbordercollection#bottom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#diagonalDown:member">Excel.CellBorderCollection.diagonalDown</xref>
+  - \[
+  [Excel.CellBorderCollection.diagonalDown](/javascript/api/excel/excel.cellbordercollection#diagonaldown-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#diagonalUp:member">Excel.CellBorderCollection.diagonalUp</xref>
+  - \[
+  [Excel.CellBorderCollection.diagonalUp](/javascript/api/excel/excel.cellbordercollection#diagonalup-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#horizontal:member">Excel.CellBorderCollection.horizontal</xref>
+  - \[
+  [Excel.CellBorderCollection.horizontal](/javascript/api/excel/excel.cellbordercollection#horizontal-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#left:member">Excel.CellBorderCollection.left</xref>
+  - \[
+  [Excel.CellBorderCollection.left](/javascript/api/excel/excel.cellbordercollection#left-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#right:member">Excel.CellBorderCollection.right</xref>
+  - \[
+  [Excel.CellBorderCollection.right](/javascript/api/excel/excel.cellbordercollection#right-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#top:member">Excel.CellBorderCollection.top</xref>
+  - \[
+  [Excel.CellBorderCollection.top](/javascript/api/excel/excel.cellbordercollection#top-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellBorderCollection#vertical:member">Excel.CellBorderCollection.vertical</xref>
+  - \[
+  [Excel.CellBorderCollection.vertical](/javascript/api/excel/excel.cellbordercollection#vertical-member)
+  \]
 
   #### Examples
 

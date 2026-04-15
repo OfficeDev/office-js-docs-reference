@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Binding#onDataChanged:member">Excel.Binding.onDataChanged</xref>
+  - \[
+  [Excel.Binding.onDataChanged](/javascript/api/excel/excel.binding#ondatachanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

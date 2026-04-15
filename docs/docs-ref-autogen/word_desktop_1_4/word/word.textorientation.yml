@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.SelectionData#orientation:member">Word.Interfaces.SelectionData.orientation</xref>
+  - \[
+  [Word.Interfaces.SelectionData.orientation](/javascript/api/word/word.interfaces.selectiondata#orientation-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionUpdateData#orientation:member">Word.Interfaces.SelectionUpdateData.orientation</xref>
+  - \[
+  [Word.Interfaces.SelectionUpdateData.orientation](/javascript/api/word/word.interfaces.selectionupdatedata#orientation-member)
+  \]
 
-  - <xref
-  href="word!Word.Selection#orientation:member">Word.Selection.orientation</xref>
+  - \[
+  [Word.Selection.orientation](/javascript/api/word/word.selection#orientation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

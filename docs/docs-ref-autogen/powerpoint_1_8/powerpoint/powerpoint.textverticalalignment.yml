@@ -24,17 +24,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextFrameData#verticalAlignment:member">PowerPoint.Interfaces.TextFrameData.verticalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.TextFrameData.verticalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.textframedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#verticalAlignment:member">PowerPoint.Interfaces.TextFrameUpdateData.verticalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.TextFrameUpdateData.verticalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.textframeupdatedata#verticalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#verticalAlignment:member">PowerPoint.TableCellProperties.verticalAlignment</xref>
+  - \[
+  [PowerPoint.TableCellProperties.verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#verticalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TextFrame#verticalAlignment:member">PowerPoint.TextFrame.verticalAlignment</xref>
+  - \[
+  [PowerPoint.TextFrame.verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#verticalalignment-member)
+  \]
 
   #### Examples
 

@@ -14,20 +14,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member">Word.Interfaces.DocumentLoadOptions.activeWindow</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.activeWindow](/javascript/api/word/word.interfaces.documentloadoptions#activewindow-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowCollectionLoadOptions#next:member">Word.Interfaces.WindowCollectionLoadOptions.next</xref>
+  - \[
+  [Word.Interfaces.WindowCollectionLoadOptions.next](/javascript/api/word/word.interfaces.windowcollectionloadoptions#next-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowCollectionLoadOptions#previous:member">Word.Interfaces.WindowCollectionLoadOptions.previous</xref>
+  - \[
+  [Word.Interfaces.WindowCollectionLoadOptions.previous](/javascript/api/word/word.interfaces.windowcollectionloadoptions#previous-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowLoadOptions#next:member">Word.Interfaces.WindowLoadOptions.next</xref>
+  - \[
+  [Word.Interfaces.WindowLoadOptions.next](/javascript/api/word/word.interfaces.windowloadoptions#next-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowLoadOptions#previous:member">Word.Interfaces.WindowLoadOptions.previous</xref>
+  - \[
+  [Word.Interfaces.WindowLoadOptions.previous](/javascript/api/word/word.interfaces.windowloadoptions#previous-member)
+  \]
 
 isPreview: false
 isDeprecated: false

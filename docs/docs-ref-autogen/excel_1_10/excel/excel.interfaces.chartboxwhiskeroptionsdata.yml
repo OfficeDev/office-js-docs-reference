@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#boxwhiskerOptions:member">Excel.Interfaces.ChartSeriesData.boxwhiskerOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.boxwhiskerOptions](/javascript/api/excel/excel.interfaces.chartseriesdata#boxwhiskeroptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.AsyncResult#status:member">Office.AsyncResult.status</xref>
+  - \[
+  [Office.AsyncResult.status](/javascript/api/office/office.asyncresult#status-member)
+  \]
 
   #### Examples
 

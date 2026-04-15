@@ -13,10 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="office!Office.Context#host:member">Office.Context.host</xref>
+  - \[ [Office.Context.host](/javascript/api/office/office.context#host-member)
+  \]
 
-  - <xref
-  href="office!Office.ContextInformation#host:member">Office.ContextInformation.host</xref>
+  - \[
+  [Office.ContextInformation.host](/javascript/api/office/office.contextinformation#host-member)
+  \]
 
   #### Examples
 

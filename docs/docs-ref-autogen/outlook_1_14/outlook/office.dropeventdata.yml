@@ -22,8 +22,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.DragAndDropEventArgs#dragAndDropEventData:member">Office.DragAndDropEventArgs.dragAndDropEventData</xref>
+  - \[
+  [Office.DragAndDropEventArgs.dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#draganddropeventdata-member)
+  \]
 
   #### Examples
 

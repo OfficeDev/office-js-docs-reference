@@ -16,14 +16,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColorType:member">Word.Interfaces.ThreeDimensionalFormatData.extrusionColorType</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.extrusionColorType](/javascript/api/word/word.interfaces.threedimensionalformatdata#extrusioncolortype-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColorType:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColorType</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColorType](/javascript/api/word/word.interfaces.threedimensionalformatupdatedata#extrusioncolortype-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#extrusionColorType:member">Word.ThreeDimensionalFormat.extrusionColorType</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.extrusionColorType](/javascript/api/word/word.threedimensionalformat#extrusioncolortype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

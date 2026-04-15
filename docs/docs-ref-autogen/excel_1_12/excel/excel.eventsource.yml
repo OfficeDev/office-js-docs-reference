@@ -12,50 +12,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAddedEventArgs#source:member">Excel.ChartAddedEventArgs.source</xref>
+  - \[
+  [Excel.ChartAddedEventArgs.source](/javascript/api/excel/excel.chartaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDeletedEventArgs#source:member">Excel.ChartDeletedEventArgs.source</xref>
+  - \[
+  [Excel.ChartDeletedEventArgs.source](/javascript/api/excel/excel.chartdeletedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentAddedEventArgs#source:member">Excel.CommentAddedEventArgs.source</xref>
+  - \[
+  [Excel.CommentAddedEventArgs.source](/javascript/api/excel/excel.commentaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentChangedEventArgs#source:member">Excel.CommentChangedEventArgs.source</xref>
+  - \[
+  [Excel.CommentChangedEventArgs.source](/javascript/api/excel/excel.commentchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentDeletedEventArgs#source:member">Excel.CommentDeletedEventArgs.source</xref>
+  - \[
+  [Excel.CommentDeletedEventArgs.source](/javascript/api/excel/excel.commentdeletedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableAddedEventArgs#source:member">Excel.TableAddedEventArgs.source</xref>
+  - \[
+  [Excel.TableAddedEventArgs.source](/javascript/api/excel/excel.tableaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#source:member">Excel.TableChangedEventArgs.source</xref>
+  - \[
+  [Excel.TableChangedEventArgs.source](/javascript/api/excel/excel.tablechangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableDeletedEventArgs#source:member">Excel.TableDeletedEventArgs.source</xref>
+  - \[
+  [Excel.TableDeletedEventArgs.source](/javascript/api/excel/excel.tabledeletedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetAddedEventArgs#source:member">Excel.WorksheetAddedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetAddedEventArgs.source](/javascript/api/excel/excel.worksheetaddedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#source:member">Excel.WorksheetChangedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.source](/javascript/api/excel/excel.worksheetchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetColumnSortedEventArgs#source:member">Excel.WorksheetColumnSortedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetColumnSortedEventArgs.source](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetDeletedEventArgs#source:member">Excel.WorksheetDeletedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetDeletedEventArgs.source](/javascript/api/excel/excel.worksheetdeletedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetFormatChangedEventArgs#source:member">Excel.WorksheetFormatChangedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetFormatChangedEventArgs.source](/javascript/api/excel/excel.worksheetformatchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member">Excel.WorksheetRowHiddenChangedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetRowHiddenChangedEventArgs.source](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#source-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetRowSortedEventArgs#source:member">Excel.WorksheetRowSortedEventArgs.source</xref>
+  - \[
+  [Excel.WorksheetRowSortedEventArgs.source](/javascript/api/excel/excel.worksheetrowsortedeventargs#source-member)
+  \]
 
 isPreview: false
 isDeprecated: false

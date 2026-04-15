@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#appearance:member">Word.ContentControl.appearance</xref>
+  - \[
+  [Word.ContentControl.appearance](/javascript/api/word/word.contentcontrol#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#appearance:member">Word.Interfaces.ContentControlData.appearance</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.appearance](/javascript/api/word/word.interfaces.contentcontroldata#appearance-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlUpdateData#appearance:member">Word.Interfaces.ContentControlUpdateData.appearance</xref>
+  - \[
+  [Word.Interfaces.ContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.contentcontrolupdatedata#appearance-member)
+  \]
 
   #### Examples
 

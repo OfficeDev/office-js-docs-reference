@@ -17,11 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#rangeSelection:member">Excel.Interfaces.WindowCollectionLoadOptions.rangeSelection</xref>
+  - \[
+  [Excel.Interfaces.WindowCollectionLoadOptions.rangeSelection](/javascript/api/excel/excel.interfaces.windowcollectionloadoptions#rangeselection-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowLoadOptions#rangeSelection:member">Excel.Interfaces.WindowLoadOptions.rangeSelection</xref>
+  - \[
+  [Excel.Interfaces.WindowLoadOptions.rangeSelection](/javascript/api/excel/excel.interfaces.windowloadoptions#rangeselection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

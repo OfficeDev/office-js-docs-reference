@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemArrayValuesData#types:member">Excel.Interfaces.NamedItemArrayValuesData.types</xref>
+  - \[
+  [Excel.Interfaces.NamedItemArrayValuesData.types](/javascript/api/excel/excel.interfaces.nameditemarrayvaluesdata#types-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeData#valueTypes:member">Excel.Interfaces.RangeData.valueTypes</xref>
+  - \[
+  [Excel.Interfaces.RangeData.valueTypes](/javascript/api/excel/excel.interfaces.rangedata#valuetypes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeViewData#valueTypes:member">Excel.Interfaces.RangeViewData.valueTypes</xref>
+  - \[
+  [Excel.Interfaces.RangeViewData.valueTypes](/javascript/api/excel/excel.interfaces.rangeviewdata#valuetypes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.NamedItemArrayValues#types:member">Excel.NamedItemArrayValues.types</xref>
+  - \[
+  [Excel.NamedItemArrayValues.types](/javascript/api/excel/excel.nameditemarrayvalues#types-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Range#valueTypes:member">Excel.Range.valueTypes</xref>
+  - \[
+  [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeView#valueTypes:member">Excel.RangeView.valueTypes</xref>
+  - \[
+  [Excel.RangeView.valueTypes](/javascript/api/excel/excel.rangeview#valuetypes-member)
+  \]
 
 isPreview: false
 isDeprecated: false

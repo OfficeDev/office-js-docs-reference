@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#trendlines:member">Excel.Interfaces.ChartSeriesData.trendlines</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.trendlines](/javascript/api/excel/excel.interfaces.chartseriesdata#trendlines-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineCollectionData#items:member">Excel.Interfaces.ChartTrendlineCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineCollectionData.items](/javascript/api/excel/excel.interfaces.charttrendlinecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member">Excel.Interfaces.ChartTrendlineCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.charttrendlinecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

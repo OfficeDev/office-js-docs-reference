@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotLayoutData#subtotalLocation:member">Excel.Interfaces.PivotLayoutData.subtotalLocation</xref>
+  - \[
+  [Excel.Interfaces.PivotLayoutData.subtotalLocation](/javascript/api/excel/excel.interfaces.pivotlayoutdata#subtotallocation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member">Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation</xref>
+  - \[
+  [Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation](/javascript/api/excel/excel.interfaces.pivotlayoutupdatedata#subtotallocation-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotLayout#subtotalLocation:member">Excel.PivotLayout.subtotalLocation</xref>
+  - \[
+  [Excel.PivotLayout.subtotalLocation](/javascript/api/excel/excel.pivotlayout#subtotallocation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

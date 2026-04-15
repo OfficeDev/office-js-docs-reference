@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatUpdateData#borders:member">Excel.Interfaces.RangeFormatUpdateData.borders</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatUpdateData.borders](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Field#type:member">Word.Field.type</xref>
+  - \[ [Word.Field.type](/javascript/api/word/word.field#type-member) \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldData#type:member">Word.Interfaces.FieldData.type</xref>
+  - \[
+  [Word.Interfaces.FieldData.type](/javascript/api/word/word.interfaces.fielddata#type-member)
+  \]
 
   #### Examples
 

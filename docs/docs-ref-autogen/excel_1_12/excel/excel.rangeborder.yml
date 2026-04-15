@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RangeBorderCollection#items:member">Excel.RangeBorderCollection.items</xref>
+  - \[
+  [Excel.RangeBorderCollection.items](/javascript/api/excel/excel.rangebordercollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

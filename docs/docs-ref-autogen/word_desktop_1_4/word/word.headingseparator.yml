@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Index#headingSeparator:member">Word.Index.headingSeparator</xref>
+  - \[
+  [Word.Index.headingSeparator](/javascript/api/word/word.index#headingseparator-member)
+  \]
 
-  - <xref
-  href="word!Word.IndexAddOptions#headingSeparator:member">Word.IndexAddOptions.headingSeparator</xref>
+  - \[
+  [Word.IndexAddOptions.headingSeparator](/javascript/api/word/word.indexaddoptions#headingseparator-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexData#headingSeparator:member">Word.Interfaces.IndexData.headingSeparator</xref>
+  - \[
+  [Word.Interfaces.IndexData.headingSeparator](/javascript/api/word/word.interfaces.indexdata#headingseparator-member)
+  \]
 
 isPreview: false
 isDeprecated: false

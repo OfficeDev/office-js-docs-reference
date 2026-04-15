@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.NamedItemCollection#items:member">Excel.NamedItemCollection.items</xref>
+  - \[
+  [Excel.NamedItemCollection.items](/javascript/api/excel/excel.nameditemcollection#items-member)
+  \]
 
   #### Examples
 

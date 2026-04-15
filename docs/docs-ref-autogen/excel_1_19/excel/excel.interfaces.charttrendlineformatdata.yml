@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineData#format:member">Excel.Interfaces.ChartTrendlineData.format</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineData.format](/javascript/api/excel/excel.interfaces.charttrendlinedata#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

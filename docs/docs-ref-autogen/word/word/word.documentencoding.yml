@@ -12,38 +12,49 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#openEncoding:member">Word.Document.openEncoding</xref>
+  - \[
+  [Word.Document.openEncoding](/javascript/api/word/word.document#openencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#saveEncoding:member">Word.Document.saveEncoding</xref>
+  - \[
+  [Word.Document.saveEncoding](/javascript/api/word/word.document#saveencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Document#textEncoding:member">Word.Document.textEncoding</xref>
+  - \[
+  [Word.Document.textEncoding](/javascript/api/word/word.document#textencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#openEncoding:member">Word.Interfaces.DocumentData.openEncoding</xref>
+  - \[
+  [Word.Interfaces.DocumentData.openEncoding](/javascript/api/word/word.interfaces.documentdata#openencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#saveEncoding:member">Word.Interfaces.DocumentData.saveEncoding</xref>
+  - \[
+  [Word.Interfaces.DocumentData.saveEncoding](/javascript/api/word/word.interfaces.documentdata#saveencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#textEncoding:member">Word.Interfaces.DocumentData.textEncoding</xref>
+  - \[
+  [Word.Interfaces.DocumentData.textEncoding](/javascript/api/word/word.interfaces.documentdata#textencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#saveEncoding:member">Word.Interfaces.DocumentUpdateData.saveEncoding</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.saveEncoding](/javascript/api/word/word.interfaces.documentupdatedata#saveencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#textEncoding:member">Word.Interfaces.DocumentUpdateData.textEncoding</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.textEncoding](/javascript/api/word/word.interfaces.documentupdatedata#textencoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WebSettingsData#encoding:member">Word.Interfaces.WebSettingsData.encoding</xref>
+  - \[
+  [Word.Interfaces.WebSettingsData.encoding](/javascript/api/word/word.interfaces.websettingsdata#encoding-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WebSettingsUpdateData#encoding:member">Word.Interfaces.WebSettingsUpdateData.encoding</xref>
+  - \[
+  [Word.Interfaces.WebSettingsUpdateData.encoding](/javascript/api/word/word.interfaces.websettingsupdatedata#encoding-member)
+  \]
 
-  - <xref
-  href="word!Word.WebSettings#encoding:member">Word.WebSettings.encoding</xref>
+  - \[
+  [Word.WebSettings.encoding](/javascript/api/word/word.websettings#encoding-member)
+  \]
 
 isPreview: false
 isDeprecated: false

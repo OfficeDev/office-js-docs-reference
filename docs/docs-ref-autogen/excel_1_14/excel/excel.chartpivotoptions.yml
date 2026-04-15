@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Chart#pivotOptions:member">Excel.Chart.pivotOptions</xref>
+  - \[
+  [Excel.Chart.pivotOptions](/javascript/api/excel/excel.chart#pivotoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

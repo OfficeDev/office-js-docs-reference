@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member">Excel.Interfaces.WorksheetCollectionLoadOptions.protection</xref>
+  - \[
+  [Excel.Interfaces.WorksheetCollectionLoadOptions.protection](/javascript/api/excel/excel.interfaces.worksheetcollectionloadoptions#protection-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetLoadOptions#protection:member">Excel.Interfaces.WorksheetLoadOptions.protection</xref>
+  - \[
+  [Excel.Interfaces.WorksheetLoadOptions.protection](/javascript/api/excel/excel.interfaces.worksheetloadoptions#protection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

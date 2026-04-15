@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Shape#shapeGroup:member">Word.Shape.shapeGroup</xref>
+  - \[
+  [Word.Shape.shapeGroup](/javascript/api/word/word.shape#shapegroup-member) \]
 
   #### Examples
 

@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BasicDataValidation#operator:member">Excel.BasicDataValidation.operator</xref>
+  - \[
+  [Excel.BasicDataValidation.operator](/javascript/api/excel/excel.basicdatavalidation#operator-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DateTimeDataValidation#operator:member">Excel.DateTimeDataValidation.operator</xref>
+  - \[
+  [Excel.DateTimeDataValidation.operator](/javascript/api/excel/excel.datetimedatavalidation#operator-member)
+  \]
 
   #### Examples
 

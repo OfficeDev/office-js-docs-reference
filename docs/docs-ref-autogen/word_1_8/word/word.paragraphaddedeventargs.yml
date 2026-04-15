@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#onParagraphAdded:member">Word.Document.onParagraphAdded</xref>
+  - \[
+  [Word.Document.onParagraphAdded](/javascript/api/word/word.document#onparagraphadded-member)
+  \]
 
   #### Examples
 

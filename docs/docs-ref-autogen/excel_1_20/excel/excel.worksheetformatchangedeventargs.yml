@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onFormatChanged:member">Excel.Worksheet.onFormatChanged</xref>
+  - \[
+  [Excel.Worksheet.onFormatChanged](/javascript/api/excel/excel.worksheet#onformatchanged-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WorksheetCollection#onFormatChanged:member">Excel.WorksheetCollection.onFormatChanged</xref>
+  - \[
+  [Excel.WorksheetCollection.onFormatChanged](/javascript/api/excel/excel.worksheetcollection#onformatchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

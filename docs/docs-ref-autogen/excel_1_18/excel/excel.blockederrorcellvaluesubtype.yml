@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BlockedErrorCellValue#errorSubType:member">Excel.BlockedErrorCellValue.errorSubType</xref>
+  - \[
+  [Excel.BlockedErrorCellValue.errorSubType](/javascript/api/excel/excel.blockederrorcellvalue#errorsubtype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

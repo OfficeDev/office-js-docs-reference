@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetLighting:member">Word.Interfaces.ThreeDimensionalFormatData.presetLighting</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.presetLighting](/javascript/api/word/word.interfaces.threedimensionalformatdata#presetlighting-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetLighting:member">Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLighting</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLighting](/javascript/api/word/word.interfaces.threedimensionalformatupdatedata#presetlighting-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#presetLighting:member">Word.ThreeDimensionalFormat.presetLighting</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.presetLighting](/javascript/api/word/word.threedimensionalformat#presetlighting-member)
+  \]
 
 isPreview: false
 isDeprecated: false

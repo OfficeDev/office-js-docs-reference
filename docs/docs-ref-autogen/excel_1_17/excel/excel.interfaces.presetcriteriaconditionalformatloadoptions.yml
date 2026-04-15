@@ -14,17 +14,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.preset</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.preset](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#preset-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member">Excel.Interfaces.ConditionalFormatCollectionLoadOptions.presetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.presetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#presetornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#preset:member">Excel.Interfaces.ConditionalFormatLoadOptions.preset</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.preset](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#preset-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatLoadOptions#presetOrNullObject:member">Excel.Interfaces.ConditionalFormatLoadOptions.presetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatLoadOptions.presetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#presetornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

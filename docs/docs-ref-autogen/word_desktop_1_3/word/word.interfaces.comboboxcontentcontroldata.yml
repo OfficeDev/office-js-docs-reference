@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlData#comboBoxContentControl:member">Word.Interfaces.ContentControlData.comboBoxContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlData.comboBoxContentControl](/javascript/api/word/word.interfaces.contentcontroldata#comboboxcontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

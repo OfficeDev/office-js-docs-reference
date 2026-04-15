@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartPlotArea#position:member">Excel.ChartPlotArea.position</xref>
+  - \[
+  [Excel.ChartPlotArea.position](/javascript/api/excel/excel.chartplotarea#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPlotAreaData#position:member">Excel.Interfaces.ChartPlotAreaData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartPlotAreaData.position](/javascript/api/excel/excel.interfaces.chartplotareadata#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPlotAreaUpdateData#position:member">Excel.Interfaces.ChartPlotAreaUpdateData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartPlotAreaUpdateData.position](/javascript/api/excel/excel.interfaces.chartplotareaupdatedata#position-member)
+  \]
 
 isPreview: false
 isDeprecated: false

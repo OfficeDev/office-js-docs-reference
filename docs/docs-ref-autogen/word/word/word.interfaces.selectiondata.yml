@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#selection:member">Word.Interfaces.DocumentData.selection</xref>
+  - \[
+  [Word.Interfaces.DocumentData.selection](/javascript/api/word/word.interfaces.documentdata#selection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

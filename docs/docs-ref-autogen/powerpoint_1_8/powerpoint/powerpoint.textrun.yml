@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#textRuns:member">PowerPoint.TableCellProperties.textRuns</xref>
+  - \[
+  [PowerPoint.TableCellProperties.textRuns](/javascript/api/powerpoint/powerpoint.tablecellproperties#textruns-member)
+  \]
 
   #### Examples
 

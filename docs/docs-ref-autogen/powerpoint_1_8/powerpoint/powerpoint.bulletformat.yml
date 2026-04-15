@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.ParagraphFormat#bulletFormat:member">PowerPoint.ParagraphFormat.bulletFormat</xref>
+  - \[
+  [PowerPoint.ParagraphFormat.bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#bulletformat-member)
+  \]
 
   #### Examples
 

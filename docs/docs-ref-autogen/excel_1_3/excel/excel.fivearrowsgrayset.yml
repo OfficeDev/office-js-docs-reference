@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.IconCollections#fiveArrowsGray:member">Excel.IconCollections.fiveArrowsGray</xref>
+  - \[
+  [Excel.IconCollections.fiveArrowsGray](/javascript/api/excel/excel.iconcollections#fivearrowsgray-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Window#panes:member">Excel.Window.panes</xref>
+  - \[ [Excel.Window.panes](/javascript/api/excel/excel.window#panes-member) \]
 
 isPreview: false
 isDeprecated: false

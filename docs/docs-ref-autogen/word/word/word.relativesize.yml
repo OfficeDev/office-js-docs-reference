@@ -17,23 +17,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#relativeHorizontalSize:member">Word.Interfaces.ShapeData.relativeHorizontalSize</xref>
+  - \[
+  [Word.Interfaces.ShapeData.relativeHorizontalSize](/javascript/api/word/word.interfaces.shapedata#relativehorizontalsize-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#relativeVerticalSize:member">Word.Interfaces.ShapeData.relativeVerticalSize</xref>
+  - \[
+  [Word.Interfaces.ShapeData.relativeVerticalSize](/javascript/api/word/word.interfaces.shapedata#relativeverticalsize-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member">Word.Interfaces.ShapeUpdateData.relativeHorizontalSize</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.relativeHorizontalSize](/javascript/api/word/word.interfaces.shapeupdatedata#relativehorizontalsize-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member">Word.Interfaces.ShapeUpdateData.relativeVerticalSize</xref>
+  - \[
+  [Word.Interfaces.ShapeUpdateData.relativeVerticalSize](/javascript/api/word/word.interfaces.shapeupdatedata#relativeverticalsize-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#relativeHorizontalSize:member">Word.Shape.relativeHorizontalSize</xref>
+  - \[
+  [Word.Shape.relativeHorizontalSize](/javascript/api/word/word.shape#relativehorizontalsize-member)
+  \]
 
-  - <xref
-  href="word!Word.Shape#relativeVerticalSize:member">Word.Shape.relativeVerticalSize</xref>
+  - \[
+  [Word.Shape.relativeVerticalSize](/javascript/api/word/word.shape#relativeverticalsize-member)
+  \]
 
   #### Examples
 

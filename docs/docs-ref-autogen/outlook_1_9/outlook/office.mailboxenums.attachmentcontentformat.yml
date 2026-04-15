@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AttachmentContent#format:member">Office.AttachmentContent.format</xref>
+  - \[
+  [Office.AttachmentContent.format](/javascript/api/outlook/office.attachmentcontent#format-member)
+  \]
 
   #### Examples
 

@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!OfficeExtension.ClientObject#context:member">OfficeExtension.ClientObject.context</xref>
+  - \[
+  [OfficeExtension.ClientObject.context](/javascript/api/office/officeextension.clientobject#context-member)
+  \]
 
-  - <xref
-  href="office!OfficeExtension.EventHandlerResult#context:member">OfficeExtension.EventHandlerResult.context</xref>
+  - \[
+  [OfficeExtension.EventHandlerResult.context](/javascript/api/office/officeextension.eventhandlerresult#context-member)
+  \]
 
-  - <xref
-  href="office!OfficeExtension.RunOptions#previousObjects:member">OfficeExtension.RunOptions.previousObjects</xref>
+  - \[
+  [OfficeExtension.RunOptions.previousObjects](/javascript/api/office/officeextension.runoptions#previousobjects-member)
+  \]
 
 isPreview: false
 isDeprecated: false

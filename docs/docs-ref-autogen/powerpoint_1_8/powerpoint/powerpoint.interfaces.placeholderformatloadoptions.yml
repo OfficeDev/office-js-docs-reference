@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#placeholderFormat:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.placeholderFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.placeholderFormat](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#placeholderformat-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#placeholderFormat:member">PowerPoint.Interfaces.ShapeLoadOptions.placeholderFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLoadOptions.placeholderFormat](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#placeholderformat-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#placeholderFormat:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.placeholderFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.placeholderFormat](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#placeholderformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

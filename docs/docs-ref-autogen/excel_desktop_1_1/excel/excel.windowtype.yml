@@ -12,10 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#type:member">Excel.Interfaces.WindowData.type</xref>
+  - \[
+  [Excel.Interfaces.WindowData.type](/javascript/api/excel/excel.interfaces.windowdata#type-member)
+  \]
 
-  - <xref href="excel!Excel.Window#type:member">Excel.Window.type</xref>
+  - \[ [Excel.Window.type](/javascript/api/excel/excel.window#type-member) \]
 
 isPreview: false
 isDeprecated: false

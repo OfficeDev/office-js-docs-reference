@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeFormatData#font:member">Excel.Interfaces.ConditionalRangeFormatData.font</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeFormatData.font](/javascript/api/excel/excel.interfaces.conditionalrangeformatdata#font-member)
+  \]
 
 isPreview: false
 isDeprecated: false

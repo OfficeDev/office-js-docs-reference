@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartSeriesCollection#items:member">Excel.ChartSeriesCollection.items</xref>
+  - \[
+  [Excel.ChartSeriesCollection.items](/javascript/api/excel/excel.chartseriescollection#items-member)
+  \]
 
   #### Examples
 

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlValidationErrorCollection#items:member">Word.CustomXmlValidationErrorCollection.items</xref>
+  - \[
+  [Word.CustomXmlValidationErrorCollection.items](/javascript/api/word/word.customxmlvalidationerrorcollection#items-member)
+  \]
 
 isPreview: true
 isDeprecated: false

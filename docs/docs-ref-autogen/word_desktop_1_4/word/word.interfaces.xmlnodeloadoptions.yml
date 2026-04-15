@@ -12,35 +12,45 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member">Word.Interfaces.XmlNodeCollectionLoadOptions.firstChild</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.firstChild](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member">Word.Interfaces.XmlNodeCollectionLoadOptions.lastChild</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.lastChild](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member">Word.Interfaces.XmlNodeCollectionLoadOptions.nextSibling</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.nextSibling](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member">Word.Interfaces.XmlNodeCollectionLoadOptions.parentNode</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.parentNode](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#previousSibling:member">Word.Interfaces.XmlNodeCollectionLoadOptions.previousSibling</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.previousSibling](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#previoussibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member">Word.Interfaces.XmlNodeLoadOptions.firstChild</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.firstChild](/javascript/api/word/word.interfaces.xmlnodeloadoptions#firstchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member">Word.Interfaces.XmlNodeLoadOptions.lastChild</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.lastChild](/javascript/api/word/word.interfaces.xmlnodeloadoptions#lastchild-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#nextSibling:member">Word.Interfaces.XmlNodeLoadOptions.nextSibling</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.nextSibling](/javascript/api/word/word.interfaces.xmlnodeloadoptions#nextsibling-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#parentNode:member">Word.Interfaces.XmlNodeLoadOptions.parentNode</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.parentNode](/javascript/api/word/word.interfaces.xmlnodeloadoptions#parentnode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#previousSibling:member">Word.Interfaces.XmlNodeLoadOptions.previousSibling</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.previousSibling](/javascript/api/word/word.interfaces.xmlnodeloadoptions#previoussibling-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,23 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartBorder#lineStyle:member">Excel.ChartBorder.lineStyle</xref>
+  - \[
+  [Excel.ChartBorder.lineStyle](/javascript/api/excel/excel.chartborder#linestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLineFormat#lineStyle:member">Excel.ChartLineFormat.lineStyle</xref>
+  - \[
+  [Excel.ChartLineFormat.lineStyle](/javascript/api/excel/excel.chartlineformat#linestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartBorderData#lineStyle:member">Excel.Interfaces.ChartBorderData.lineStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartBorderData.lineStyle](/javascript/api/excel/excel.interfaces.chartborderdata#linestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartBorderUpdateData#lineStyle:member">Excel.Interfaces.ChartBorderUpdateData.lineStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartBorderUpdateData.lineStyle](/javascript/api/excel/excel.interfaces.chartborderupdatedata#linestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member">Excel.Interfaces.ChartLineFormatData.lineStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartLineFormatData.lineStyle](/javascript/api/excel/excel.interfaces.chartlineformatdata#linestyle-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member">Excel.Interfaces.ChartLineFormatUpdateData.lineStyle</xref>
+  - \[
+  [Excel.Interfaces.ChartLineFormatUpdateData.lineStyle](/javascript/api/excel/excel.interfaces.chartlineformatupdatedata#linestyle-member)
+  \]
 
   #### Examples
 

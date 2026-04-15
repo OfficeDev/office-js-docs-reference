@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member">Excel.Interfaces.ApplicationLoadOptions.cultureInfo</xref>
+  - \[
+  [Excel.Interfaces.ApplicationLoadOptions.cultureInfo](/javascript/api/excel/excel.interfaces.applicationloadoptions#cultureinfo-member)
+  \]
 
 isPreview: false
 isDeprecated: false

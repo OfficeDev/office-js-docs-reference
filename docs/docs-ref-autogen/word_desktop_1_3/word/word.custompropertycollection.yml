@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentProperties#customProperties:member">Word.DocumentProperties.customProperties</xref>
+  - \[
+  [Word.DocumentProperties.customProperties](/javascript/api/word/word.documentproperties#customproperties-member)
+  \]
 
   #### Examples
 

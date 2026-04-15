@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#paragraphFormat:member">PowerPoint.Interfaces.TextRangeLoadOptions.paragraphFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.TextRangeLoadOptions.paragraphFormat](/javascript/api/powerpoint/powerpoint.interfaces.textrangeloadoptions#paragraphformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

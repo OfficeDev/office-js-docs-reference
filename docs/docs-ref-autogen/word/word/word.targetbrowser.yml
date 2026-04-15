@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WebSettingsData#targetBrowser:member">Word.Interfaces.WebSettingsData.targetBrowser</xref>
+  - \[
+  [Word.Interfaces.WebSettingsData.targetBrowser](/javascript/api/word/word.interfaces.websettingsdata#targetbrowser-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WebSettingsUpdateData#targetBrowser:member">Word.Interfaces.WebSettingsUpdateData.targetBrowser</xref>
+  - \[
+  [Word.Interfaces.WebSettingsUpdateData.targetBrowser](/javascript/api/word/word.interfaces.websettingsupdatedata#targetbrowser-member)
+  \]
 
-  - <xref
-  href="word!Word.WebSettings#targetBrowser:member">Word.WebSettings.targetBrowser</xref>
+  - \[
+  [Word.WebSettings.targetBrowser](/javascript/api/word/word.websettings#targetbrowser-member)
+  \]
 
 isPreview: false
 isDeprecated: false

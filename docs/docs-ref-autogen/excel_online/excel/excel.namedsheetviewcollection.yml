@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#namedSheetViews:member">Excel.Worksheet.namedSheetViews</xref>
+  - \[
+  [Excel.Worksheet.namedSheetViews](/javascript/api/excel/excel.worksheet#namedsheetviews-member)
+  \]
 
 isPreview: false
 isDeprecated: false

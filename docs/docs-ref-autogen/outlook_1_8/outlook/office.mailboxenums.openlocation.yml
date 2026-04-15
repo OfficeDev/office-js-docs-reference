@@ -22,8 +22,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.Mailbox#getIsOpenFromLocationAllowed:member(1)">Office.Mailbox.getIsOpenFromLocationAllowed</xref>
+  - \[
+  [Office.Mailbox.getIsOpenFromLocationAllowed](/javascript/api/outlook/office.mailbox#getisopenfromlocationallowed-member)
+  \]
 
   #### Examples
 

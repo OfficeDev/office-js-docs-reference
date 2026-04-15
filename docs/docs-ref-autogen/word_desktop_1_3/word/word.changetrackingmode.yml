@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#changeTrackingMode:member">Word.Document.changeTrackingMode</xref>
+  - \[
+  [Word.Document.changeTrackingMode](/javascript/api/word/word.document#changetrackingmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#changeTrackingMode:member">Word.Interfaces.DocumentData.changeTrackingMode</xref>
+  - \[
+  [Word.Interfaces.DocumentData.changeTrackingMode](/javascript/api/word/word.interfaces.documentdata#changetrackingmode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member">Word.Interfaces.DocumentUpdateData.changeTrackingMode</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.changeTrackingMode](/javascript/api/word/word.interfaces.documentupdatedata#changetrackingmode-member)
+  \]
 
   #### Examples
 

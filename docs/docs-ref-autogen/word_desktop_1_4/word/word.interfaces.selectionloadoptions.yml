@@ -18,14 +18,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#selection:member">Word.Interfaces.DocumentLoadOptions.selection</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.selection](/javascript/api/word/word.interfaces.documentloadoptions#selection-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PaneCollectionLoadOptions#selection:member">Word.Interfaces.PaneCollectionLoadOptions.selection</xref>
+  - \[
+  [Word.Interfaces.PaneCollectionLoadOptions.selection](/javascript/api/word/word.interfaces.panecollectionloadoptions#selection-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PaneLoadOptions#selection:member">Word.Interfaces.PaneLoadOptions.selection</xref>
+  - \[
+  [Word.Interfaces.PaneLoadOptions.selection](/javascript/api/word/word.interfaces.paneloadoptions#selection-member)
+  \]
 
 isPreview: false
 isDeprecated: false

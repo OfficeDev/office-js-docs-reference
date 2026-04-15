@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartAxis#format:member">Excel.ChartAxis.format</xref>
+  - \[
+  [Excel.ChartAxis.format](/javascript/api/excel/excel.chartaxis#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

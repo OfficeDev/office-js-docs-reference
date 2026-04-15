@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#bindings:member">Excel.Workbook.bindings</xref>
+  - \[
+  [Excel.Workbook.bindings](/javascript/api/excel/excel.workbook#bindings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

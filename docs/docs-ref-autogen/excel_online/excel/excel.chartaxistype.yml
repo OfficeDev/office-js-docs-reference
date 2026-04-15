@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.ChartAxis#type:member">Excel.ChartAxis.type</xref>
+  - \[ [Excel.ChartAxis.type](/javascript/api/excel/excel.chartaxis#type-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartAxisData#type:member">Excel.Interfaces.ChartAxisData.type</xref>
+  - \[
+  [Excel.Interfaces.ChartAxisData.type](/javascript/api/excel/excel.interfaces.chartaxisdata#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

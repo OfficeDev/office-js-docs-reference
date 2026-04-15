@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member">Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation</xref>
+  - \[
+  [Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation](/javascript/api/word/word.interfaces.annotationcollectionloadoptions#critiqueannotation-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.AnnotationLoadOptions#critiqueAnnotation:member">Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation</xref>
+  - \[
+  [Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation](/javascript/api/word/word.interfaces.annotationloadoptions#critiqueannotation-member)
+  \]
 
 isPreview: false
 isDeprecated: false

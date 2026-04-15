@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FieldUpdateData#result:member">Word.Interfaces.FieldUpdateData.result</xref>
+  - \[
+  [Word.Interfaces.FieldUpdateData.result](/javascript/api/word/word.interfaces.fieldupdatedata#result-member)
+  \]
 
 isPreview: false
 isDeprecated: false

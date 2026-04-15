@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TextFrameData#orientation:member">Word.Interfaces.TextFrameData.orientation</xref>
+  - \[
+  [Word.Interfaces.TextFrameData.orientation](/javascript/api/word/word.interfaces.textframedata#orientation-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TextFrameUpdateData#orientation:member">Word.Interfaces.TextFrameUpdateData.orientation</xref>
+  - \[
+  [Word.Interfaces.TextFrameUpdateData.orientation](/javascript/api/word/word.interfaces.textframeupdatedata#orientation-member)
+  \]
 
-  - <xref
-  href="word!Word.TextFrame#orientation:member">Word.TextFrame.orientation</xref>
+  - \[
+  [Word.TextFrame.orientation](/javascript/api/word/word.textframe#orientation-member)
+  \]
 
   #### Examples
 

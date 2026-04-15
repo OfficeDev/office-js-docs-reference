@@ -17,17 +17,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeCell:member">Excel.Interfaces.WindowCollectionLoadOptions.activeCell</xref>
+  - \[
+  [Excel.Interfaces.WindowCollectionLoadOptions.activeCell](/javascript/api/excel/excel.interfaces.windowcollectionloadoptions#activecell-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowCollectionLoadOptions#visibleRange:member">Excel.Interfaces.WindowCollectionLoadOptions.visibleRange</xref>
+  - \[
+  [Excel.Interfaces.WindowCollectionLoadOptions.visibleRange](/javascript/api/excel/excel.interfaces.windowcollectionloadoptions#visiblerange-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowLoadOptions#activeCell:member">Excel.Interfaces.WindowLoadOptions.activeCell</xref>
+  - \[
+  [Excel.Interfaces.WindowLoadOptions.activeCell](/javascript/api/excel/excel.interfaces.windowloadoptions#activecell-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowLoadOptions#visibleRange:member">Excel.Interfaces.WindowLoadOptions.visibleRange</xref>
+  - \[
+  [Excel.Interfaces.WindowLoadOptions.visibleRange](/javascript/api/excel/excel.interfaces.windowloadoptions#visiblerange-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutData#printOrder:member">Excel.Interfaces.PageLayoutData.printOrder</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutData.printOrder](/javascript/api/excel/excel.interfaces.pagelayoutdata#printorder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member">Excel.Interfaces.PageLayoutUpdateData.printOrder</xref>
+  - \[
+  [Excel.Interfaces.PageLayoutUpdateData.printOrder](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#printorder-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageLayout#printOrder:member">Excel.PageLayout.printOrder</xref>
+  - \[
+  [Excel.PageLayout.printOrder](/javascript/api/excel/excel.pagelayout#printorder-member)
+  \]
 
 isPreview: false
 isDeprecated: false

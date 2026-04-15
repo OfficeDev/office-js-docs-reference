@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.GetBindingDataOptions#filterType:member">Office.GetBindingDataOptions.filterType</xref>
+  - \[
+  [Office.GetBindingDataOptions.filterType](/javascript/api/office/office.getbindingdataoptions#filtertype-member)
+  \]
 
-  - <xref
-  href="office!Office.GetSelectedDataOptions#filterType:member">Office.GetSelectedDataOptions.filterType</xref>
+  - \[
+  [Office.GetSelectedDataOptions.filterType](/javascript/api/office/office.getselecteddataoptions#filtertype-member)
+  \]
 
   #### Examples
 

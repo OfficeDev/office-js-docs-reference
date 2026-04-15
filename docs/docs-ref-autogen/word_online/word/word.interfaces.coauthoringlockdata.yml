@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockCollectionData#items:member">Word.Interfaces.CoauthoringLockCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockCollectionData.items](/javascript/api/word/word.interfaces.coauthoringlockcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockCollectionUpdateData#items:member">Word.Interfaces.CoauthoringLockCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthoringlockcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

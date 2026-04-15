@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartPointsCollection#items:member">Excel.ChartPointsCollection.items</xref>
+  - \[
+  [Excel.ChartPointsCollection.items](/javascript/api/excel/excel.chartpointscollection#items-member)
+  \]
 
   #### Examples
 

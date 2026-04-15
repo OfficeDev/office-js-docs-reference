@@ -12,149 +12,197 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member">Word.Interfaces.BookmarkCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.BookmarkCollectionLoadOptions.range](/javascript/api/word/word.interfaces.bookmarkcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BookmarkLoadOptions#range:member">Word.Interfaces.BookmarkLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.BookmarkLoadOptions.range](/javascript/api/word/word.interfaces.bookmarkloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BreakCollectionLoadOptions#range:member">Word.Interfaces.BreakCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.BreakCollectionLoadOptions.range](/javascript/api/word/word.interfaces.breakcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BreakLoadOptions#range:member">Word.Interfaces.BreakLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.BreakLoadOptions.range](/javascript/api/word/word.interfaces.breakloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member">Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member">Word.Interfaces.CoauthoringLockCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockCollectionLoadOptions.range](/javascript/api/word/word.interfaces.coauthoringlockcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member">Word.Interfaces.CoauthoringLockLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockLoadOptions.range](/javascript/api/word/word.interfaces.coauthoringlockloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member">Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range](/javascript/api/word/word.interfaces.coauthoringupdatecollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member">Word.Interfaces.CoauthoringUpdateLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.CoauthoringUpdateLoadOptions.range](/javascript/api/word/word.interfaces.coauthoringupdateloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member">Word.Interfaces.ConflictCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.ConflictCollectionLoadOptions.range](/javascript/api/word/word.interfaces.conflictcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ConflictLoadOptions#range:member">Word.Interfaces.ConflictLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.ConflictLoadOptions.range](/javascript/api/word/word.interfaces.conflictloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member">Word.Interfaces.CritiqueAnnotationLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.CritiqueAnnotationLoadOptions.range](/javascript/api/word/word.interfaces.critiqueannotationloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member">Word.Interfaces.DatePickerContentControlLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.DatePickerContentControlLoadOptions.range](/javascript/api/word/word.interfaces.datepickercontentcontrolloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#content:member">Word.Interfaces.DocumentLoadOptions.content</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.content](/javascript/api/word/word.interfaces.documentloadoptions#content-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.EditorLoadOptions#nextRange:member">Word.Interfaces.EditorLoadOptions.nextRange</xref>
+  - \[
+  [Word.Interfaces.EditorLoadOptions.nextRange](/javascript/api/word/word.interfaces.editorloadoptions#nextrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.EditorLoadOptions#range:member">Word.Interfaces.EditorLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.EditorLoadOptions.range](/javascript/api/word/word.interfaces.editorloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#result:member">Word.Interfaces.FieldCollectionLoadOptions.result</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.result](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#result-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#result:member">Word.Interfaces.FieldLoadOptions.result</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.result](/javascript/api/word/word.interfaces.fieldloadoptions#result-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameCollectionLoadOptions#range:member">Word.Interfaces.FrameCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.FrameCollectionLoadOptions.range](/javascript/api/word/word.interfaces.framecollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FrameLoadOptions#range:member">Word.Interfaces.FrameLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.FrameLoadOptions.range](/javascript/api/word/word.interfaces.frameloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.GroupContentControlLoadOptions#range:member">Word.Interfaces.GroupContentControlLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.GroupContentControlLoadOptions.range](/javascript/api/word/word.interfaces.groupcontentcontrolloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member">Word.Interfaces.HtmlDivisionCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.HtmlDivisionCollectionLoadOptions.range](/javascript/api/word/word.interfaces.htmldivisioncollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member">Word.Interfaces.HtmlDivisionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.HtmlDivisionLoadOptions.range](/javascript/api/word/word.interfaces.htmldivisionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member">Word.Interfaces.HyperlinkCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.HyperlinkCollectionLoadOptions.range](/javascript/api/word/word.interfaces.hyperlinkcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.HyperlinkLoadOptions#range:member">Word.Interfaces.HyperlinkLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.HyperlinkLoadOptions.range](/javascript/api/word/word.interfaces.hyperlinkloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexCollectionLoadOptions#range:member">Word.Interfaces.IndexCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.IndexCollectionLoadOptions.range](/javascript/api/word/word.interfaces.indexcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.IndexLoadOptions#range:member">Word.Interfaces.IndexLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.IndexLoadOptions.range](/javascript/api/word/word.interfaces.indexloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member">Word.Interfaces.NoteItemCollectionLoadOptions.reference</xref>
+  - \[
+  [Word.Interfaces.NoteItemCollectionLoadOptions.reference](/javascript/api/word/word.interfaces.noteitemcollectionloadoptions#reference-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.NoteItemLoadOptions#reference:member">Word.Interfaces.NoteItemLoadOptions.reference</xref>
+  - \[
+  [Word.Interfaces.NoteItemLoadOptions.reference](/javascript/api/word/word.interfaces.noteitemloadoptions#reference-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PictureContentControlLoadOptions#range:member">Word.Interfaces.PictureContentControlLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.PictureContentControlLoadOptions.range](/javascript/api/word/word.interfaces.picturecontentcontrolloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member">Word.Interfaces.RepeatingSectionContentControlLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionContentControlLoadOptions.range](/javascript/api/word/word.interfaces.repeatingsectioncontentcontrolloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member">Word.Interfaces.RepeatingSectionItemLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.RepeatingSectionItemLoadOptions.range](/javascript/api/word/word.interfaces.repeatingsectionitemloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member">Word.Interfaces.RevisionCollectionLoadOptions.movedRange</xref>
+  - \[
+  [Word.Interfaces.RevisionCollectionLoadOptions.movedRange](/javascript/api/word/word.interfaces.revisioncollectionloadoptions#movedrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member">Word.Interfaces.RevisionCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.RevisionCollectionLoadOptions.range](/javascript/api/word/word.interfaces.revisioncollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RevisionLoadOptions#movedRange:member">Word.Interfaces.RevisionLoadOptions.movedRange</xref>
+  - \[
+  [Word.Interfaces.RevisionLoadOptions.movedRange](/javascript/api/word/word.interfaces.revisionloadoptions#movedrange-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RevisionLoadOptions#range:member">Word.Interfaces.RevisionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.RevisionLoadOptions.range](/javascript/api/word/word.interfaces.revisionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionLoadOptions#formattedText:member">Word.Interfaces.SelectionLoadOptions.formattedText</xref>
+  - \[
+  [Word.Interfaces.SelectionLoadOptions.formattedText](/javascript/api/word/word.interfaces.selectionloadoptions#formattedtext-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SelectionLoadOptions#range:member">Word.Interfaces.SelectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.SelectionLoadOptions.range](/javascript/api/word/word.interfaces.selectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member">Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range](/javascript/api/word/word.interfaces.tableofauthoritiescollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member">Word.Interfaces.TableOfAuthoritiesLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableOfAuthoritiesLoadOptions.range](/javascript/api/word/word.interfaces.tableofauthoritiesloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member">Word.Interfaces.TableOfContentsCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableOfContentsCollectionLoadOptions.range](/javascript/api/word/word.interfaces.tableofcontentscollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfContentsLoadOptions#range:member">Word.Interfaces.TableOfContentsLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableOfContentsLoadOptions.range](/javascript/api/word/word.interfaces.tableofcontentsloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member">Word.Interfaces.TableOfFiguresCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableOfFiguresCollectionLoadOptions.range](/javascript/api/word/word.interfaces.tableoffigurescollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member">Word.Interfaces.TableOfFiguresLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableOfFiguresLoadOptions.range](/javascript/api/word/word.interfaces.tableoffiguresloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member">Word.Interfaces.TableRowCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableRowCollectionLoadOptions.range](/javascript/api/word/word.interfaces.tablerowcollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowLoadOptions#range:member">Word.Interfaces.TableRowLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.TableRowLoadOptions.range](/javascript/api/word/word.interfaces.tablerowloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member">Word.Interfaces.XmlNodeCollectionLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.XmlNodeCollectionLoadOptions.range](/javascript/api/word/word.interfaces.xmlnodecollectionloadoptions#range-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.XmlNodeLoadOptions#range:member">Word.Interfaces.XmlNodeLoadOptions.range</xref>
+  - \[
+  [Word.Interfaces.XmlNodeLoadOptions.range](/javascript/api/word/word.interfaces.xmlnodeloadoptions#range-member)
+  \]
 
 isPreview: false
 isDeprecated: false

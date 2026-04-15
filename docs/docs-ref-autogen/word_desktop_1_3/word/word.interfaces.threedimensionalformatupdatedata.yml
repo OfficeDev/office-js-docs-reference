@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#threeDimensionalFormat:member">Word.Interfaces.FontUpdateData.threeDimensionalFormat</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.threeDimensionalFormat](/javascript/api/word/word.interfaces.fontupdatedata#threedimensionalformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesUpdateData#mapOptions:member">Excel.Interfaces.ChartSeriesUpdateData.mapOptions</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesUpdateData.mapOptions](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#mapoptions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#pageLayout:member">Excel.Worksheet.pageLayout</xref>
+  - \[
+  [Excel.Worksheet.pageLayout](/javascript/api/excel/excel.worksheet#pagelayout-member)
+  \]
 
 isPreview: false
 isDeprecated: false

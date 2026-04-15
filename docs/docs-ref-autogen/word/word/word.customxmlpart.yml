@@ -13,20 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomXmlNode#ownerPart:member">Word.CustomXmlNode.ownerPart</xref>
+  - \[
+  [Word.CustomXmlNode.ownerPart](/javascript/api/word/word.customxmlnode#ownerpart-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlPartCollection#items:member">Word.CustomXmlPartCollection.items</xref>
+  - \[
+  [Word.CustomXmlPartCollection.items](/javascript/api/word/word.customxmlpartcollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomXmlPartScopedCollection#items:member">Word.CustomXmlPartScopedCollection.items</xref>
+  - \[
+  [Word.CustomXmlPartScopedCollection.items](/javascript/api/word/word.customxmlpartscopedcollection#items-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlMapping#customXmlPart:member">Word.XmlMapping.customXmlPart</xref>
+  - \[
+  [Word.XmlMapping.customXmlPart](/javascript/api/word/word.xmlmapping#customxmlpart-member)
+  \]
 
-  - <xref
-  href="word!Word.XmlSetMappingOptions#source:member">Word.XmlSetMappingOptions.source</xref>
+  - \[
+  [Word.XmlSetMappingOptions.source](/javascript/api/word/word.xmlsetmappingoptions#source-member)
+  \]
 
   #### Examples
 

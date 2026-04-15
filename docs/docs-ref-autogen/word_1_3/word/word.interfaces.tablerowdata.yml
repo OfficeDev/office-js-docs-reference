@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.TableData#rows:member">Word.Interfaces.TableData.rows</xref>
+  - \[
+  [Word.Interfaces.TableData.rows](/javascript/api/word/word.interfaces.tabledata#rows-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowCollectionData#items:member">Word.Interfaces.TableRowCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.TableRowCollectionData.items](/javascript/api/word/word.interfaces.tablerowcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableRowCollectionUpdateData#items:member">Word.Interfaces.TableRowCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.TableRowCollectionUpdateData.items](/javascript/api/word/word.interfaces.tablerowcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

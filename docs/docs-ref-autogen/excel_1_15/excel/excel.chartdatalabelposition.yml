@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartDataLabel#position:member">Excel.ChartDataLabel.position</xref>
+  - \[
+  [Excel.ChartDataLabel.position](/javascript/api/excel/excel.chartdatalabel#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#position:member">Excel.ChartDataLabels.position</xref>
+  - \[
+  [Excel.ChartDataLabels.position](/javascript/api/excel/excel.chartdatalabels#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelData#position:member">Excel.Interfaces.ChartDataLabelData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelData.position](/javascript/api/excel/excel.interfaces.chartdatalabeldata#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsData#position:member">Excel.Interfaces.ChartDataLabelsData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsData.position](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member">Excel.Interfaces.ChartDataLabelsUpdateData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelsUpdateData.position](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#position-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartDataLabelUpdateData#position:member">Excel.Interfaces.ChartDataLabelUpdateData.position</xref>
+  - \[
+  [Excel.Interfaces.ChartDataLabelUpdateData.position](/javascript/api/excel/excel.interfaces.chartdatalabelupdatedata#position-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.TrackedChangeCollection#items:member">Word.TrackedChangeCollection.items</xref>
+  - \[
+  [Word.TrackedChangeCollection.items](/javascript/api/word/word.trackedchangecollection#items-member)
+  \]
 
   #### Examples
 

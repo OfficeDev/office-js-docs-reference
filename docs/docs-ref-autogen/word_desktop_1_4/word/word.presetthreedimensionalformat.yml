@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ThreeDimensionalFormatData#presetThreeDimensionalFormat:member">Word.Interfaces.ThreeDimensionalFormatData.presetThreeDimensionalFormat</xref>
+  - \[
+  [Word.Interfaces.ThreeDimensionalFormatData.presetThreeDimensionalFormat](/javascript/api/word/word.interfaces.threedimensionalformatdata#presetthreedimensionalformat-member)
+  \]
 
-  - <xref
-  href="word!Word.ThreeDimensionalFormat#presetThreeDimensionalFormat:member">Word.ThreeDimensionalFormat.presetThreeDimensionalFormat</xref>
+  - \[
+  [Word.ThreeDimensionalFormat.presetThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat#presetthreedimensionalformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

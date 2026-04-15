@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentUpdateData#properties:member">Word.Interfaces.DocumentUpdateData.properties</xref>
+  - \[
+  [Word.Interfaces.DocumentUpdateData.properties](/javascript/api/word/word.interfaces.documentupdatedata#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

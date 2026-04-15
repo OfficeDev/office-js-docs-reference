@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#pageLayout:member">Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout</xref>
+  - \[
+  [Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout](/javascript/api/excel/excel.interfaces.worksheetcollectionloadoptions#pagelayout-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member">Excel.Interfaces.WorksheetLoadOptions.pageLayout</xref>
+  - \[
+  [Excel.Interfaces.WorksheetLoadOptions.pageLayout](/javascript/api/excel/excel.interfaces.worksheetloadoptions#pagelayout-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotLayoutLoadOptions#pivotStyle:member">Excel.Interfaces.PivotLayoutLoadOptions.pivotStyle</xref>
+  - \[
+  [Excel.Interfaces.PivotLayoutLoadOptions.pivotStyle](/javascript/api/excel/excel.interfaces.pivotlayoutloadoptions#pivotstyle-member)
+  \]
 
 isPreview: false
 isDeprecated: false

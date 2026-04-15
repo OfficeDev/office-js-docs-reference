@@ -15,499 +15,667 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Application#context:member">Excel.Application.context</xref>
+  - \[
+  [Excel.Application.context](/javascript/api/excel/excel.application#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.AutoFilter#context:member">Excel.AutoFilter.context</xref>
+  - \[
+  [Excel.AutoFilter.context](/javascript/api/excel/excel.autofilter#context-member)
+  \]
 
-  - <xref href="excel!Excel.Binding#context:member">Excel.Binding.context</xref>
+  - \[
+  [Excel.Binding.context](/javascript/api/excel/excel.binding#context-member) \]
 
-  - <xref
-  href="excel!Excel.BindingCollection#context:member">Excel.BindingCollection.context</xref>
+  - \[
+  [Excel.BindingCollection.context](/javascript/api/excel/excel.bindingcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CellValueConditionalFormat#context:member">Excel.CellValueConditionalFormat.context</xref>
+  - \[
+  [Excel.CellValueConditionalFormat.context](/javascript/api/excel/excel.cellvalueconditionalformat#context-member)
+  \]
 
-  - <xref href="excel!Excel.Chart#context:member">Excel.Chart.context</xref>
+  - \[ [Excel.Chart.context](/javascript/api/excel/excel.chart#context-member)
+  \]
+
+  - \[
+  [Excel.ChartAreaFormat.context](/javascript/api/excel/excel.chartareaformat#context-member)
+  \]
+
+  - \[
+  [Excel.ChartAxes.context](/javascript/api/excel/excel.chartaxes#context-member)
+  \]
+
+  - \[
+  [Excel.ChartAxis.context](/javascript/api/excel/excel.chartaxis#context-member)
+  \]
+
+  - \[
+  [Excel.ChartAxisFormat.context](/javascript/api/excel/excel.chartaxisformat#context-member)
+  \]
+
+  - \[
+  [Excel.ChartAxisTitle.context](/javascript/api/excel/excel.chartaxistitle#context-member)
+  \]
+
+  - \[
+  [Excel.ChartAxisTitleFormat.context](/javascript/api/excel/excel.chartaxistitleformat#context-member)
+  \]
+
+  - \[
+  [Excel.ChartBinOptions.context](/javascript/api/excel/excel.chartbinoptions#context-member)
+  \]
+
+  - \[
+  [Excel.ChartBorder.context](/javascript/api/excel/excel.chartborder#context-member)
+  \]
+
+  - \[
+  [Excel.ChartBoxwhiskerOptions.context](/javascript/api/excel/excel.chartboxwhiskeroptions#context-member)
+  \]
+
+  - \[
+  [Excel.ChartCollection.context](/javascript/api/excel/excel.chartcollection#context-member)
+  \]
+
+  - \[
+  [Excel.ChartDataLabel.context](/javascript/api/excel/excel.chartdatalabel#context-member)
+  \]
+
+  - \[
+  [Excel.ChartDataLabelFormat.context](/javascript/api/excel/excel.chartdatalabelformat#context-member)
+  \]
+
+  - \[
+  [Excel.ChartDataLabels.context](/javascript/api/excel/excel.chartdatalabels#context-member)
+  \]
+
+  - \[
+  [Excel.ChartErrorBars.context](/javascript/api/excel/excel.charterrorbars#context-member)
+  \]
+
+  - \[
+  [Excel.ChartErrorBarsFormat.context](/javascript/api/excel/excel.charterrorbarsformat#context-member)
+  \]
+
+  - \[
+  [Excel.ChartFill.context](/javascript/api/excel/excel.chartfill#context-member)
+  \]
+
+  - \[
+  [Excel.ChartFont.context](/javascript/api/excel/excel.chartfont#context-member)
+  \]
+
+  - \[
+  [Excel.ChartFormatString.context](/javascript/api/excel/excel.chartformatstring#context-member)
+  \]
+
+  - \[
+  [Excel.ChartGridlines.context](/javascript/api/excel/excel.chartgridlines#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAreaFormat#context:member">Excel.ChartAreaFormat.context</xref>
+  - \[
+  [Excel.ChartGridlinesFormat.context](/javascript/api/excel/excel.chartgridlinesformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxes#context:member">Excel.ChartAxes.context</xref>
+  - \[
+  [Excel.ChartLegend.context](/javascript/api/excel/excel.chartlegend#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxis#context:member">Excel.ChartAxis.context</xref>
+  - \[
+  [Excel.ChartLegendEntry.context](/javascript/api/excel/excel.chartlegendentry#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxisFormat#context:member">Excel.ChartAxisFormat.context</xref>
+  - \[
+  [Excel.ChartLegendEntryCollection.context](/javascript/api/excel/excel.chartlegendentrycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxisTitle#context:member">Excel.ChartAxisTitle.context</xref>
+  - \[
+  [Excel.ChartLegendFormat.context](/javascript/api/excel/excel.chartlegendformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartAxisTitleFormat#context:member">Excel.ChartAxisTitleFormat.context</xref>
+  - \[
+  [Excel.ChartLineFormat.context](/javascript/api/excel/excel.chartlineformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartBinOptions#context:member">Excel.ChartBinOptions.context</xref>
+  - \[
+  [Excel.ChartMapOptions.context](/javascript/api/excel/excel.chartmapoptions#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartBorder#context:member">Excel.ChartBorder.context</xref>
+  - \[
+  [Excel.ChartPivotOptions.context](/javascript/api/excel/excel.chartpivotoptions#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartBoxwhiskerOptions#context:member">Excel.ChartBoxwhiskerOptions.context</xref>
+  - \[
+  [Excel.ChartPlotArea.context](/javascript/api/excel/excel.chartplotarea#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartCollection#context:member">Excel.ChartCollection.context</xref>
+  - \[
+  [Excel.ChartPlotAreaFormat.context](/javascript/api/excel/excel.chartplotareaformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabel#context:member">Excel.ChartDataLabel.context</xref>
+  - \[
+  [Excel.ChartPoint.context](/javascript/api/excel/excel.chartpoint#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabelFormat#context:member">Excel.ChartDataLabelFormat.context</xref>
+  - \[
+  [Excel.ChartPointFormat.context](/javascript/api/excel/excel.chartpointformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartDataLabels#context:member">Excel.ChartDataLabels.context</xref>
+  - \[
+  [Excel.ChartPointsCollection.context](/javascript/api/excel/excel.chartpointscollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartErrorBars#context:member">Excel.ChartErrorBars.context</xref>
+  - \[
+  [Excel.ChartSeries.context](/javascript/api/excel/excel.chartseries#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartErrorBarsFormat#context:member">Excel.ChartErrorBarsFormat.context</xref>
+  - \[
+  [Excel.ChartSeriesCollection.context](/javascript/api/excel/excel.chartseriescollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartFill#context:member">Excel.ChartFill.context</xref>
+  - \[
+  [Excel.ChartSeriesFormat.context](/javascript/api/excel/excel.chartseriesformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartFont#context:member">Excel.ChartFont.context</xref>
+  - \[
+  [Excel.ChartTitle.context](/javascript/api/excel/excel.charttitle#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartFormatString#context:member">Excel.ChartFormatString.context</xref>
+  - \[
+  [Excel.ChartTitleFormat.context](/javascript/api/excel/excel.charttitleformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartGridlines#context:member">Excel.ChartGridlines.context</xref>
+  - \[
+  [Excel.ChartTrendline.context](/javascript/api/excel/excel.charttrendline#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartGridlinesFormat#context:member">Excel.ChartGridlinesFormat.context</xref>
+  - \[
+  [Excel.ChartTrendlineCollection.context](/javascript/api/excel/excel.charttrendlinecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegend#context:member">Excel.ChartLegend.context</xref>
+  - \[
+  [Excel.ChartTrendlineFormat.context](/javascript/api/excel/excel.charttrendlineformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegendEntry#context:member">Excel.ChartLegendEntry.context</xref>
+  - \[
+  [Excel.ChartTrendlineLabel.context](/javascript/api/excel/excel.charttrendlinelabel#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegendEntryCollection#context:member">Excel.ChartLegendEntryCollection.context</xref>
+  - \[
+  [Excel.ChartTrendlineLabelFormat.context](/javascript/api/excel/excel.charttrendlinelabelformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLegendFormat#context:member">Excel.ChartLegendFormat.context</xref>
+  - \[
+  [Excel.ColorScaleConditionalFormat.context](/javascript/api/excel/excel.colorscaleconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartLineFormat#context:member">Excel.ChartLineFormat.context</xref>
+  - \[
+  [Excel.Comment.context](/javascript/api/excel/excel.comment#context-member) \]
 
-  - <xref
-  href="excel!Excel.ChartMapOptions#context:member">Excel.ChartMapOptions.context</xref>
+  - \[
+  [Excel.CommentCollection.context](/javascript/api/excel/excel.commentcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPivotOptions#context:member">Excel.ChartPivotOptions.context</xref>
+  - \[
+  [Excel.CommentReply.context](/javascript/api/excel/excel.commentreply#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPlotArea#context:member">Excel.ChartPlotArea.context</xref>
+  - \[
+  [Excel.CommentReplyCollection.context](/javascript/api/excel/excel.commentreplycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPlotAreaFormat#context:member">Excel.ChartPlotAreaFormat.context</xref>
+  - \[
+  [Excel.ConditionalDataBarNegativeFormat.context](/javascript/api/excel/excel.conditionaldatabarnegativeformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPoint#context:member">Excel.ChartPoint.context</xref>
+  - \[
+  [Excel.ConditionalDataBarPositiveFormat.context](/javascript/api/excel/excel.conditionaldatabarpositiveformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPointFormat#context:member">Excel.ChartPointFormat.context</xref>
+  - \[
+  [Excel.ConditionalFormat.context](/javascript/api/excel/excel.conditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartPointsCollection#context:member">Excel.ChartPointsCollection.context</xref>
+  - \[
+  [Excel.ConditionalFormatCollection.context](/javascript/api/excel/excel.conditionalformatcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeries#context:member">Excel.ChartSeries.context</xref>
+  - \[
+  [Excel.ConditionalFormatRule.context](/javascript/api/excel/excel.conditionalformatrule#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeriesCollection#context:member">Excel.ChartSeriesCollection.context</xref>
+  - \[
+  [Excel.ConditionalRangeBorder.context](/javascript/api/excel/excel.conditionalrangeborder#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartSeriesFormat#context:member">Excel.ChartSeriesFormat.context</xref>
+  - \[
+  [Excel.ConditionalRangeBorderCollection.context](/javascript/api/excel/excel.conditionalrangebordercollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitle#context:member">Excel.ChartTitle.context</xref>
+  - \[
+  [Excel.ConditionalRangeFill.context](/javascript/api/excel/excel.conditionalrangefill#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTitleFormat#context:member">Excel.ChartTitleFormat.context</xref>
+  - \[
+  [Excel.ConditionalRangeFont.context](/javascript/api/excel/excel.conditionalrangefont#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendline#context:member">Excel.ChartTrendline.context</xref>
+  - \[
+  [Excel.ConditionalRangeFormat.context](/javascript/api/excel/excel.conditionalrangeformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineCollection#context:member">Excel.ChartTrendlineCollection.context</xref>
+  - \[
+  [Excel.CultureInfo.context](/javascript/api/excel/excel.cultureinfo#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineFormat#context:member">Excel.ChartTrendlineFormat.context</xref>
+  - \[
+  [Excel.CustomConditionalFormat.context](/javascript/api/excel/excel.customconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineLabel#context:member">Excel.ChartTrendlineLabel.context</xref>
+  - \[
+  [Excel.CustomProperty.context](/javascript/api/excel/excel.customproperty#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ChartTrendlineLabelFormat#context:member">Excel.ChartTrendlineLabelFormat.context</xref>
+  - \[
+  [Excel.CustomPropertyCollection.context](/javascript/api/excel/excel.custompropertycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ColorScaleConditionalFormat#context:member">Excel.ColorScaleConditionalFormat.context</xref>
+  - \[
+  [Excel.CustomXmlPart.context](/javascript/api/excel/excel.customxmlpart#context-member)
+  \]
 
-  - <xref href="excel!Excel.Comment#context:member">Excel.Comment.context</xref>
+  - \[
+  [Excel.CustomXmlPartCollection.context](/javascript/api/excel/excel.customxmlpartcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentCollection#context:member">Excel.CommentCollection.context</xref>
+  - \[
+  [Excel.CustomXmlPartScopedCollection.context](/javascript/api/excel/excel.customxmlpartscopedcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentReply#context:member">Excel.CommentReply.context</xref>
+  - \[
+  [Excel.DataBarConditionalFormat.context](/javascript/api/excel/excel.databarconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentReplyCollection#context:member">Excel.CommentReplyCollection.context</xref>
+  - \[
+  [Excel.DataConnectionCollection.context](/javascript/api/excel/excel.dataconnectioncollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalDataBarNegativeFormat#context:member">Excel.ConditionalDataBarNegativeFormat.context</xref>
+  - \[
+  [Excel.DataPivotHierarchy.context](/javascript/api/excel/excel.datapivothierarchy#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalDataBarPositiveFormat#context:member">Excel.ConditionalDataBarPositiveFormat.context</xref>
+  - \[
+  [Excel.DataPivotHierarchyCollection.context](/javascript/api/excel/excel.datapivothierarchycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#context:member">Excel.ConditionalFormat.context</xref>
+  - \[
+  [Excel.DataValidation.context](/javascript/api/excel/excel.datavalidation#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormatCollection#context:member">Excel.ConditionalFormatCollection.context</xref>
+  - \[
+  [Excel.DocumentProperties.context](/javascript/api/excel/excel.documentproperties#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormatRule#context:member">Excel.ConditionalFormatRule.context</xref>
+  - \[ [Excel.Filter.context](/javascript/api/excel/excel.filter#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorder#context:member">Excel.ConditionalRangeBorder.context</xref>
+  - \[
+  [Excel.FilterPivotHierarchy.context](/javascript/api/excel/excel.filterpivothierarchy#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeBorderCollection#context:member">Excel.ConditionalRangeBorderCollection.context</xref>
+  - \[
+  [Excel.FilterPivotHierarchyCollection.context](/javascript/api/excel/excel.filterpivothierarchycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeFill#context:member">Excel.ConditionalRangeFill.context</xref>
+  - \[
+  [Excel.FormatProtection.context](/javascript/api/excel/excel.formatprotection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeFont#context:member">Excel.ConditionalRangeFont.context</xref>
+  - \[
+  [Excel.FunctionResult.context](/javascript/api/excel/excel.functionresult#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalRangeFormat#context:member">Excel.ConditionalRangeFormat.context</xref>
+  - \[
+  [Excel.Functions.context](/javascript/api/excel/excel.functions#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CultureInfo#context:member">Excel.CultureInfo.context</xref>
+  - \[
+  [Excel.GeometricShape.context](/javascript/api/excel/excel.geometricshape#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomConditionalFormat#context:member">Excel.CustomConditionalFormat.context</xref>
+  - \[
+  [Excel.GroupShapeCollection.context](/javascript/api/excel/excel.groupshapecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomProperty#context:member">Excel.CustomProperty.context</xref>
+  - \[
+  [Excel.HeaderFooter.context](/javascript/api/excel/excel.headerfooter#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomPropertyCollection#context:member">Excel.CustomPropertyCollection.context</xref>
+  - \[
+  [Excel.HeaderFooterGroup.context](/javascript/api/excel/excel.headerfootergroup#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomXmlPart#context:member">Excel.CustomXmlPart.context</xref>
+  - \[
+  [Excel.IconSetConditionalFormat.context](/javascript/api/excel/excel.iconsetconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomXmlPartCollection#context:member">Excel.CustomXmlPartCollection.context</xref>
+  - \[ [Excel.Image.context](/javascript/api/excel/excel.image#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CustomXmlPartScopedCollection#context:member">Excel.CustomXmlPartScopedCollection.context</xref>
+  - \[
+  [Excel.IterativeCalculation.context](/javascript/api/excel/excel.iterativecalculation#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DataBarConditionalFormat#context:member">Excel.DataBarConditionalFormat.context</xref>
+  - \[ [Excel.Line.context](/javascript/api/excel/excel.line#context-member) \]
 
-  - <xref
-  href="excel!Excel.DataConnectionCollection#context:member">Excel.DataConnectionCollection.context</xref>
+  - \[
+  [Excel.NamedItem.context](/javascript/api/excel/excel.nameditem#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DataPivotHierarchy#context:member">Excel.DataPivotHierarchy.context</xref>
+  - \[
+  [Excel.NamedItemArrayValues.context](/javascript/api/excel/excel.nameditemarrayvalues#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DataPivotHierarchyCollection#context:member">Excel.DataPivotHierarchyCollection.context</xref>
+  - \[
+  [Excel.NamedItemCollection.context](/javascript/api/excel/excel.nameditemcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DataValidation#context:member">Excel.DataValidation.context</xref>
+  - \[
+  [Excel.NumberFormatInfo.context](/javascript/api/excel/excel.numberformatinfo#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DocumentProperties#context:member">Excel.DocumentProperties.context</xref>
+  - \[
+  [Excel.PageBreak.context](/javascript/api/excel/excel.pagebreak#context-member)
+  \]
 
-  - <xref href="excel!Excel.Filter#context:member">Excel.Filter.context</xref>
+  - \[
+  [Excel.PageBreakCollection.context](/javascript/api/excel/excel.pagebreakcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FilterPivotHierarchy#context:member">Excel.FilterPivotHierarchy.context</xref>
+  - \[
+  [Excel.PageLayout.context](/javascript/api/excel/excel.pagelayout#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FilterPivotHierarchyCollection#context:member">Excel.FilterPivotHierarchyCollection.context</xref>
+  - \[
+  [Excel.PivotField.context](/javascript/api/excel/excel.pivotfield#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FormatProtection#context:member">Excel.FormatProtection.context</xref>
+  - \[
+  [Excel.PivotFieldCollection.context](/javascript/api/excel/excel.pivotfieldcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.FunctionResult#context:member">Excel.FunctionResult.context</xref>
+  - \[
+  [Excel.PivotHierarchy.context](/javascript/api/excel/excel.pivothierarchy#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Functions#context:member">Excel.Functions.context</xref>
+  - \[
+  [Excel.PivotHierarchyCollection.context](/javascript/api/excel/excel.pivothierarchycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.GeometricShape#context:member">Excel.GeometricShape.context</xref>
+  - \[
+  [Excel.PivotItem.context](/javascript/api/excel/excel.pivotitem#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.GroupShapeCollection#context:member">Excel.GroupShapeCollection.context</xref>
+  - \[
+  [Excel.PivotItemCollection.context](/javascript/api/excel/excel.pivotitemcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.HeaderFooter#context:member">Excel.HeaderFooter.context</xref>
+  - \[
+  [Excel.PivotLayout.context](/javascript/api/excel/excel.pivotlayout#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.HeaderFooterGroup#context:member">Excel.HeaderFooterGroup.context</xref>
+  - \[
+  [Excel.PivotTable.context](/javascript/api/excel/excel.pivottable#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.IconSetConditionalFormat#context:member">Excel.IconSetConditionalFormat.context</xref>
+  - \[
+  [Excel.PivotTableCollection.context](/javascript/api/excel/excel.pivottablecollection#context-member)
+  \]
 
-  - <xref href="excel!Excel.Image#context:member">Excel.Image.context</xref>
+  - \[
+  [Excel.PivotTableStyle.context](/javascript/api/excel/excel.pivottablestyle#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.IterativeCalculation#context:member">Excel.IterativeCalculation.context</xref>
+  - \[
+  [Excel.PivotTableStyleCollection.context](/javascript/api/excel/excel.pivottablestylecollection#context-member)
+  \]
 
-  - <xref href="excel!Excel.Line#context:member">Excel.Line.context</xref>
+  - \[
+  [Excel.PresetCriteriaConditionalFormat.context](/javascript/api/excel/excel.presetcriteriaconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.NamedItem#context:member">Excel.NamedItem.context</xref>
+  - \[ [Excel.Range.context](/javascript/api/excel/excel.range#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.NamedItemArrayValues#context:member">Excel.NamedItemArrayValues.context</xref>
+  - \[
+  [Excel.RangeAreas.context](/javascript/api/excel/excel.rangeareas#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.NamedItemCollection#context:member">Excel.NamedItemCollection.context</xref>
+  - \[
+  [Excel.RangeBorder.context](/javascript/api/excel/excel.rangeborder#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.NumberFormatInfo#context:member">Excel.NumberFormatInfo.context</xref>
+  - \[
+  [Excel.RangeBorderCollection.context](/javascript/api/excel/excel.rangebordercollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageBreak#context:member">Excel.PageBreak.context</xref>
+  - \[
+  [Excel.RangeCollection.context](/javascript/api/excel/excel.rangecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageBreakCollection#context:member">Excel.PageBreakCollection.context</xref>
+  - \[
+  [Excel.RangeFill.context](/javascript/api/excel/excel.rangefill#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PageLayout#context:member">Excel.PageLayout.context</xref>
+  - \[
+  [Excel.RangeFont.context](/javascript/api/excel/excel.rangefont#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotField#context:member">Excel.PivotField.context</xref>
+  - \[
+  [Excel.RangeFormat.context](/javascript/api/excel/excel.rangeformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotFieldCollection#context:member">Excel.PivotFieldCollection.context</xref>
+  - \[
+  [Excel.RangeSort.context](/javascript/api/excel/excel.rangesort#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotHierarchy#context:member">Excel.PivotHierarchy.context</xref>
+  - \[
+  [Excel.RangeView.context](/javascript/api/excel/excel.rangeview#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotHierarchyCollection#context:member">Excel.PivotHierarchyCollection.context</xref>
+  - \[
+  [Excel.RangeViewCollection.context](/javascript/api/excel/excel.rangeviewcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotItem#context:member">Excel.PivotItem.context</xref>
+  - \[
+  [Excel.RemoveDuplicatesResult.context](/javascript/api/excel/excel.removeduplicatesresult#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotItemCollection#context:member">Excel.PivotItemCollection.context</xref>
+  - \[
+  [Excel.RowColumnPivotHierarchy.context](/javascript/api/excel/excel.rowcolumnpivothierarchy#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotLayout#context:member">Excel.PivotLayout.context</xref>
+  - \[
+  [Excel.RowColumnPivotHierarchyCollection.context](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotTable#context:member">Excel.PivotTable.context</xref>
+  - \[
+  [Excel.Runtime.context](/javascript/api/excel/excel.runtime#context-member) \]
 
-  - <xref
-  href="excel!Excel.PivotTableCollection#context:member">Excel.PivotTableCollection.context</xref>
+  - \[
+  [Excel.Setting.context](/javascript/api/excel/excel.setting#context-member) \]
 
-  - <xref
-  href="excel!Excel.PivotTableStyle#context:member">Excel.PivotTableStyle.context</xref>
+  - \[
+  [Excel.SettingCollection.context](/javascript/api/excel/excel.settingcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PivotTableStyleCollection#context:member">Excel.PivotTableStyleCollection.context</xref>
+  - \[ [Excel.Shape.context](/javascript/api/excel/excel.shape#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.PresetCriteriaConditionalFormat#context:member">Excel.PresetCriteriaConditionalFormat.context</xref>
+  - \[
+  [Excel.ShapeCollection.context](/javascript/api/excel/excel.shapecollection#context-member)
+  \]
 
-  - <xref href="excel!Excel.Range#context:member">Excel.Range.context</xref>
+  - \[
+  [Excel.ShapeFill.context](/javascript/api/excel/excel.shapefill#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeAreas#context:member">Excel.RangeAreas.context</xref>
+  - \[
+  [Excel.ShapeFont.context](/javascript/api/excel/excel.shapefont#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeBorder#context:member">Excel.RangeBorder.context</xref>
+  - \[
+  [Excel.ShapeGroup.context](/javascript/api/excel/excel.shapegroup#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeBorderCollection#context:member">Excel.RangeBorderCollection.context</xref>
+  - \[
+  [Excel.ShapeLineFormat.context](/javascript/api/excel/excel.shapelineformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeCollection#context:member">Excel.RangeCollection.context</xref>
+  - \[ [Excel.Slicer.context](/javascript/api/excel/excel.slicer#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFill#context:member">Excel.RangeFill.context</xref>
+  - \[
+  [Excel.SlicerCollection.context](/javascript/api/excel/excel.slicercollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFont#context:member">Excel.RangeFont.context</xref>
+  - \[
+  [Excel.SlicerItem.context](/javascript/api/excel/excel.sliceritem#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFormat#context:member">Excel.RangeFormat.context</xref>
+  - \[
+  [Excel.SlicerItemCollection.context](/javascript/api/excel/excel.sliceritemcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeSort#context:member">Excel.RangeSort.context</xref>
+  - \[
+  [Excel.SlicerStyle.context](/javascript/api/excel/excel.slicerstyle#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeView#context:member">Excel.RangeView.context</xref>
+  - \[
+  [Excel.SlicerStyleCollection.context](/javascript/api/excel/excel.slicerstylecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeViewCollection#context:member">Excel.RangeViewCollection.context</xref>
+  - \[ [Excel.Style.context](/javascript/api/excel/excel.style#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RemoveDuplicatesResult#context:member">Excel.RemoveDuplicatesResult.context</xref>
+  - \[
+  [Excel.StyleCollection.context](/javascript/api/excel/excel.stylecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RowColumnPivotHierarchy#context:member">Excel.RowColumnPivotHierarchy.context</xref>
+  - \[ [Excel.Table.context](/javascript/api/excel/excel.table#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RowColumnPivotHierarchyCollection#context:member">Excel.RowColumnPivotHierarchyCollection.context</xref>
+  - \[
+  [Excel.TableChangedEventArgs.getRange](/javascript/api/excel/excel.tablechangedeventargs#getrange-member)
+  \]
 
-  - <xref href="excel!Excel.Runtime#context:member">Excel.Runtime.context</xref>
+  - \[
+  [Excel.TableChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#getrangeornullobject-member)
+  \]
 
-  - <xref href="excel!Excel.Setting#context:member">Excel.Setting.context</xref>
+  - \[
+  [Excel.TableCollection.context](/javascript/api/excel/excel.tablecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SettingCollection#context:member">Excel.SettingCollection.context</xref>
+  - \[
+  [Excel.TableColumn.context](/javascript/api/excel/excel.tablecolumn#context-member)
+  \]
 
-  - <xref href="excel!Excel.Shape#context:member">Excel.Shape.context</xref>
+  - \[
+  [Excel.TableColumnCollection.context](/javascript/api/excel/excel.tablecolumncollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeCollection#context:member">Excel.ShapeCollection.context</xref>
+  - \[
+  [Excel.TableRow.context](/javascript/api/excel/excel.tablerow#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeFill#context:member">Excel.ShapeFill.context</xref>
+  - \[
+  [Excel.TableRowCollection.context](/javascript/api/excel/excel.tablerowcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeFont#context:member">Excel.ShapeFont.context</xref>
+  - \[
+  [Excel.TableScopedCollection.context](/javascript/api/excel/excel.tablescopedcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeGroup#context:member">Excel.ShapeGroup.context</xref>
+  - \[
+  [Excel.TableSort.context](/javascript/api/excel/excel.tablesort#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ShapeLineFormat#context:member">Excel.ShapeLineFormat.context</xref>
+  - \[
+  [Excel.TableStyle.context](/javascript/api/excel/excel.tablestyle#context-member)
+  \]
 
-  - <xref href="excel!Excel.Slicer#context:member">Excel.Slicer.context</xref>
+  - \[
+  [Excel.TableStyleCollection.context](/javascript/api/excel/excel.tablestylecollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SlicerCollection#context:member">Excel.SlicerCollection.context</xref>
+  - \[
+  [Excel.TextConditionalFormat.context](/javascript/api/excel/excel.textconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SlicerItem#context:member">Excel.SlicerItem.context</xref>
+  - \[
+  [Excel.TextFrame.context](/javascript/api/excel/excel.textframe#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SlicerItemCollection#context:member">Excel.SlicerItemCollection.context</xref>
+  - \[
+  [Excel.TextRange.context](/javascript/api/excel/excel.textrange#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SlicerStyle#context:member">Excel.SlicerStyle.context</xref>
+  - \[
+  [Excel.TimelineStyle.context](/javascript/api/excel/excel.timelinestyle#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.SlicerStyleCollection#context:member">Excel.SlicerStyleCollection.context</xref>
+  - \[
+  [Excel.TimelineStyleCollection.context](/javascript/api/excel/excel.timelinestylecollection#context-member)
+  \]
 
-  - <xref href="excel!Excel.Style#context:member">Excel.Style.context</xref>
+  - \[
+  [Excel.TopBottomConditionalFormat.context](/javascript/api/excel/excel.topbottomconditionalformat#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.StyleCollection#context:member">Excel.StyleCollection.context</xref>
+  - \[
+  [Excel.Workbook.context](/javascript/api/excel/excel.workbook#context-member)
+  \]
 
-  - <xref href="excel!Excel.Table#context:member">Excel.Table.context</xref>
+  - \[
+  [Excel.WorkbookCreated.context](/javascript/api/excel/excel.workbookcreated#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#getRange:member(1)">Excel.TableChangedEventArgs.getRange</xref>
+  - \[
+  [Excel.WorkbookProtection.context](/javascript/api/excel/excel.workbookprotection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)">Excel.TableChangedEventArgs.getRangeOrNullObject</xref>
+  - \[
+  [Excel.Worksheet.context](/javascript/api/excel/excel.worksheet#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableCollection#context:member">Excel.TableCollection.context</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.getRange](/javascript/api/excel/excel.worksheetchangedeventargs#getrange-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableColumn#context:member">Excel.TableColumn.context</xref>
+  - \[
+  [Excel.WorksheetChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#getrangeornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableColumnCollection#context:member">Excel.TableColumnCollection.context</xref>
+  - \[
+  [Excel.WorksheetCollection.context](/javascript/api/excel/excel.worksheetcollection#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableRow#context:member">Excel.TableRow.context</xref>
+  - \[
+  [Excel.WorksheetFormatChangedEventArgs.getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#getrange-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableRowCollection#context:member">Excel.TableRowCollection.context</xref>
+  - \[
+  [Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#getrangeornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableScopedCollection#context:member">Excel.TableScopedCollection.context</xref>
+  - \[
+  [Excel.WorksheetFreezePanes.context](/javascript/api/excel/excel.worksheetfreezepanes#context-member)
+  \]
 
-  - <xref
-  href="excel!Excel.TableSort#context:member">Excel.TableSort.context</xref>
-
-  - <xref
-  href="excel!Excel.TableStyle#context:member">Excel.TableStyle.context</xref>
-
-  - <xref
-  href="excel!Excel.TableStyleCollection#context:member">Excel.TableStyleCollection.context</xref>
-
-  - <xref
-  href="excel!Excel.TextConditionalFormat#context:member">Excel.TextConditionalFormat.context</xref>
-
-  - <xref
-  href="excel!Excel.TextFrame#context:member">Excel.TextFrame.context</xref>
-
-  - <xref
-  href="excel!Excel.TextRange#context:member">Excel.TextRange.context</xref>
-
-  - <xref
-  href="excel!Excel.TimelineStyle#context:member">Excel.TimelineStyle.context</xref>
-
-  - <xref
-  href="excel!Excel.TimelineStyleCollection#context:member">Excel.TimelineStyleCollection.context</xref>
-
-  - <xref
-  href="excel!Excel.TopBottomConditionalFormat#context:member">Excel.TopBottomConditionalFormat.context</xref>
-
-  - <xref
-  href="excel!Excel.Workbook#context:member">Excel.Workbook.context</xref>
-
-  - <xref
-  href="excel!Excel.WorkbookCreated#context:member">Excel.WorkbookCreated.context</xref>
-
-  - <xref
-  href="excel!Excel.WorkbookProtection#context:member">Excel.WorkbookProtection.context</xref>
-
-  - <xref
-  href="excel!Excel.Worksheet#context:member">Excel.Worksheet.context</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#getRange:member(1)">Excel.WorksheetChangedEventArgs.getRange</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member(1)">Excel.WorksheetChangedEventArgs.getRangeOrNullObject</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetCollection#context:member">Excel.WorksheetCollection.context</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)">Excel.WorksheetFormatChangedEventArgs.getRange</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)">Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetFreezePanes#context:member">Excel.WorksheetFreezePanes.context</xref>
-
-  - <xref
-  href="excel!Excel.WorksheetProtection#context:member">Excel.WorksheetProtection.context</xref>
+  - \[
+  [Excel.WorksheetProtection.context](/javascript/api/excel/excel.worksheetprotection#context-member)
+  \]
 
   #### Examples
 

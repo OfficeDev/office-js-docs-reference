@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalDataBarRule#type:member">Excel.ConditionalDataBarRule.type</xref>
+  - \[
+  [Excel.ConditionalDataBarRule.type](/javascript/api/excel/excel.conditionaldatabarrule#type-member)
+  \]
 
 isPreview: false
 isDeprecated: false

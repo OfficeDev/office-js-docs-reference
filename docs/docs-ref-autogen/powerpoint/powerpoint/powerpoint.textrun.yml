@@ -14,17 +14,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellData#textRuns:member">PowerPoint.Interfaces.TableCellData.textRuns</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellData.textRuns](/javascript/api/powerpoint/powerpoint.interfaces.tablecelldata#textruns-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member">PowerPoint.Interfaces.TableCellUpdateData.textRuns</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellUpdateData.textRuns](/javascript/api/powerpoint/powerpoint.interfaces.tablecellupdatedata#textruns-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCell#textRuns:member">PowerPoint.TableCell.textRuns</xref>
+  - \[
+  [PowerPoint.TableCell.textRuns](/javascript/api/powerpoint/powerpoint.tablecell#textruns-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#textRuns:member">PowerPoint.TableCellProperties.textRuns</xref>
+  - \[
+  [PowerPoint.TableCellProperties.textRuns](/javascript/api/powerpoint/powerpoint.tablecellproperties#textruns-member)
+  \]
 
   #### Examples
 

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChartCollection#onAdded:member">Excel.ChartCollection.onAdded</xref>
+  - \[
+  [Excel.ChartCollection.onAdded](/javascript/api/excel/excel.chartcollection#onadded-member)
+  \]
 
 isPreview: false
 isDeprecated: false

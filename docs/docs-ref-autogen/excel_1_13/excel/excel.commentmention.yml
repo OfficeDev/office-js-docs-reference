@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Comment#mentions:member">Excel.Comment.mentions</xref>
+  - \[
+  [Excel.Comment.mentions](/javascript/api/excel/excel.comment#mentions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentReply#mentions:member">Excel.CommentReply.mentions</xref>
+  - \[
+  [Excel.CommentReply.mentions](/javascript/api/excel/excel.commentreply#mentions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentRichContent#mentions:member">Excel.CommentRichContent.mentions</xref>
+  - \[
+  [Excel.CommentRichContent.mentions](/javascript/api/excel/excel.commentrichcontent#mentions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentData#mentions:member">Excel.Interfaces.CommentData.mentions</xref>
+  - \[
+  [Excel.Interfaces.CommentData.mentions](/javascript/api/excel/excel.interfaces.commentdata#mentions-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.CommentReplyData#mentions:member">Excel.Interfaces.CommentReplyData.mentions</xref>
+  - \[
+  [Excel.Interfaces.CommentReplyData.mentions](/javascript/api/excel/excel.interfaces.commentreplydata#mentions-member)
+  \]
 
 isPreview: false
 isDeprecated: false

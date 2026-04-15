@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member">Excel.Interfaces.TableCollectionLoadOptions.sort</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionLoadOptions.sort](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#sort-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableLoadOptions#sort:member">Excel.Interfaces.TableLoadOptions.sort</xref>
+  - \[
+  [Excel.Interfaces.TableLoadOptions.sort](/javascript/api/excel/excel.interfaces.tableloadoptions#sort-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#colorScale:member">Excel.Interfaces.ConditionalFormatUpdateData.colorScale</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatUpdateData.colorScale](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#colorscale-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalFormatUpdateData#colorScaleOrNullObject:member">Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#colorscaleornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

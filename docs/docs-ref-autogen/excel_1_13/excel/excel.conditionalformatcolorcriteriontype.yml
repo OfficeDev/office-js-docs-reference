@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalColorScaleCriterion#type:member">Excel.ConditionalColorScaleCriterion.type</xref>
+  - \[
+  [Excel.ConditionalColorScaleCriterion.type](/javascript/api/excel/excel.conditionalcolorscalecriterion#type-member)
+  \]
 
   #### Examples
 

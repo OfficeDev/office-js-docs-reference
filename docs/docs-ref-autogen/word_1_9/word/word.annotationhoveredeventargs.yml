@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#onAnnotationHovered:member">Word.Document.onAnnotationHovered</xref>
+  - \[
+  [Word.Document.onAnnotationHovered](/javascript/api/word/word.document#onannotationhovered-member)
+  \]
 
   #### Examples
 

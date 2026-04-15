@@ -17,8 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.LinkedEntityDataDomainCollection#onRefreshCompleted:member">Excel.LinkedEntityDataDomainCollection.onRefreshCompleted</xref>
+  - \[
+  [Excel.LinkedEntityDataDomainCollection.onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#onrefreshcompleted-member)
+  \]
 
 isPreview: false
 isDeprecated: false

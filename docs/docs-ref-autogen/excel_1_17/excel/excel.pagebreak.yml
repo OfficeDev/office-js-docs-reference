@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.PageBreakCollection#items:member">Excel.PageBreakCollection.items</xref>
+  - \[
+  [Excel.PageBreakCollection.items](/javascript/api/excel/excel.pagebreakcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

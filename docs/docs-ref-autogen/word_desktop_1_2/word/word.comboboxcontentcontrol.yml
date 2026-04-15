@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ContentControl#comboBoxContentControl:member">Word.ContentControl.comboBoxContentControl</xref>
+  - \[
+  [Word.ContentControl.comboBoxContentControl](/javascript/api/word/word.contentcontrol#comboboxcontentcontrol-member)
+  \]
 
   #### Examples
 

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CommentEventArgs#changeType:member">Word.CommentEventArgs.changeType</xref>
+  - \[
+  [Word.CommentEventArgs.changeType](/javascript/api/word/word.commenteventargs#changetype-member)
+  \]
 
   #### Examples
 

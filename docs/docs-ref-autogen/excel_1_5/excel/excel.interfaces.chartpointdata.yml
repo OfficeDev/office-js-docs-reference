@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPointsCollectionData#items:member">Excel.Interfaces.ChartPointsCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartPointsCollectionData.items](/javascript/api/excel/excel.interfaces.chartpointscollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member">Excel.Interfaces.ChartPointsCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.ChartPointsCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.chartpointscollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartSeriesData#points:member">Excel.Interfaces.ChartSeriesData.points</xref>
+  - \[
+  [Excel.Interfaces.ChartSeriesData.points](/javascript/api/excel/excel.interfaces.chartseriesdata#points-member)
+  \]
 
 isPreview: false
 isDeprecated: false

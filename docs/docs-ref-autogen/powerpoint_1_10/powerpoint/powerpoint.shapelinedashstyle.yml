@@ -14,26 +14,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Border#dashStyle:member">PowerPoint.Border.dashStyle</xref>
+  - \[
+  [PowerPoint.Border.dashStyle](/javascript/api/powerpoint/powerpoint.border#dashstyle-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.BorderProperties#dashStyle:member">PowerPoint.BorderProperties.dashStyle</xref>
+  - \[
+  [PowerPoint.BorderProperties.dashStyle](/javascript/api/powerpoint/powerpoint.borderproperties#dashstyle-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BorderData#dashStyle:member">PowerPoint.Interfaces.BorderData.dashStyle</xref>
+  - \[
+  [PowerPoint.Interfaces.BorderData.dashStyle](/javascript/api/powerpoint/powerpoint.interfaces.borderdata#dashstyle-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.BorderUpdateData#dashStyle:member">PowerPoint.Interfaces.BorderUpdateData.dashStyle</xref>
+  - \[
+  [PowerPoint.Interfaces.BorderUpdateData.dashStyle](/javascript/api/powerpoint/powerpoint.interfaces.borderupdatedata#dashstyle-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#dashStyle:member">PowerPoint.Interfaces.ShapeLineFormatData.dashStyle</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLineFormatData.dashStyle](/javascript/api/powerpoint/powerpoint.interfaces.shapelineformatdata#dashstyle-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#dashStyle:member">PowerPoint.Interfaces.ShapeLineFormatUpdateData.dashStyle</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLineFormatUpdateData.dashStyle](/javascript/api/powerpoint/powerpoint.interfaces.shapelineformatupdatedata#dashstyle-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeLineFormat#dashStyle:member">PowerPoint.ShapeLineFormat.dashStyle</xref>
+  - \[
+  [PowerPoint.ShapeLineFormat.dashStyle](/javascript/api/powerpoint/powerpoint.shapelineformat#dashstyle-member)
+  \]
 
   #### Examples
 

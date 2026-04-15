@@ -25,8 +25,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.FieldCollection#items:member">Word.FieldCollection.items</xref>
+  - \[
+  [Word.FieldCollection.items](/javascript/api/word/word.fieldcollection#items-member)
+  \]
 
   #### Examples
 

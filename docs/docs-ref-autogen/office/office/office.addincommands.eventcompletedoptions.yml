@@ -50,8 +50,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.AddinCommands.Event#completed:member(1)">Office.AddinCommands.Event.completed</xref>
+  - \[
+  [Office.AddinCommands.Event.completed](/javascript/api/office/office.addincommands.event#completed-member)
+  \]
 
 isPreview: false
 isDeprecated: false

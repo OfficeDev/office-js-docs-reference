@@ -11,112 +11,148 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Application#context:member">OneNote.Application.context</xref>
+  - \[
+  [OneNote.Application.context](/javascript/api/onenote/onenote.application#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.FloatingInk#context:member">OneNote.FloatingInk.context</xref>
+  - \[
+  [OneNote.FloatingInk.context](/javascript/api/onenote/onenote.floatingink#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Image#context:member">OneNote.Image.context</xref>
+  - \[
+  [OneNote.Image.context](/javascript/api/onenote/onenote.image#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysis#context:member">OneNote.InkAnalysis.context</xref>
+  - \[
+  [OneNote.InkAnalysis.context](/javascript/api/onenote/onenote.inkanalysis#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisLine#context:member">OneNote.InkAnalysisLine.context</xref>
+  - \[
+  [OneNote.InkAnalysisLine.context](/javascript/api/onenote/onenote.inkanalysisline#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisLineCollection#context:member">OneNote.InkAnalysisLineCollection.context</xref>
+  - \[
+  [OneNote.InkAnalysisLineCollection.context](/javascript/api/onenote/onenote.inkanalysislinecollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisParagraph#context:member">OneNote.InkAnalysisParagraph.context</xref>
+  - \[
+  [OneNote.InkAnalysisParagraph.context](/javascript/api/onenote/onenote.inkanalysisparagraph#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisParagraphCollection#context:member">OneNote.InkAnalysisParagraphCollection.context</xref>
+  - \[
+  [OneNote.InkAnalysisParagraphCollection.context](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisWord#context:member">OneNote.InkAnalysisWord.context</xref>
+  - \[
+  [OneNote.InkAnalysisWord.context](/javascript/api/onenote/onenote.inkanalysisword#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkAnalysisWordCollection#context:member">OneNote.InkAnalysisWordCollection.context</xref>
+  - \[
+  [OneNote.InkAnalysisWordCollection.context](/javascript/api/onenote/onenote.inkanalysiswordcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkStroke#context:member">OneNote.InkStroke.context</xref>
+  - \[
+  [OneNote.InkStroke.context](/javascript/api/onenote/onenote.inkstroke#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkStrokeCollection#context:member">OneNote.InkStrokeCollection.context</xref>
+  - \[
+  [OneNote.InkStrokeCollection.context](/javascript/api/onenote/onenote.inkstrokecollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkWord#context:member">OneNote.InkWord.context</xref>
+  - \[
+  [OneNote.InkWord.context](/javascript/api/onenote/onenote.inkword#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.InkWordCollection#context:member">OneNote.InkWordCollection.context</xref>
+  - \[
+  [OneNote.InkWordCollection.context](/javascript/api/onenote/onenote.inkwordcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Notebook#context:member">OneNote.Notebook.context</xref>
+  - \[
+  [OneNote.Notebook.context](/javascript/api/onenote/onenote.notebook#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.NotebookCollection#context:member">OneNote.NotebookCollection.context</xref>
+  - \[
+  [OneNote.NotebookCollection.context](/javascript/api/onenote/onenote.notebookcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.NoteTag#context:member">OneNote.NoteTag.context</xref>
+  - \[
+  [OneNote.NoteTag.context](/javascript/api/onenote/onenote.notetag#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Outline#context:member">OneNote.Outline.context</xref>
+  - \[
+  [OneNote.Outline.context](/javascript/api/onenote/onenote.outline#context-member)
+  \]
 
-  - <xref href="onenote!OneNote.Page#context:member">OneNote.Page.context</xref>
+  - \[
+  [OneNote.Page.context](/javascript/api/onenote/onenote.page#context-member) \]
 
-  - <xref
-  href="onenote!OneNote.PageCollection#context:member">OneNote.PageCollection.context</xref>
+  - \[
+  [OneNote.PageCollection.context](/javascript/api/onenote/onenote.pagecollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.PageContent#context:member">OneNote.PageContent.context</xref>
+  - \[
+  [OneNote.PageContent.context](/javascript/api/onenote/onenote.pagecontent#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.PageContentCollection#context:member">OneNote.PageContentCollection.context</xref>
+  - \[
+  [OneNote.PageContentCollection.context](/javascript/api/onenote/onenote.pagecontentcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Paragraph#context:member">OneNote.Paragraph.context</xref>
+  - \[
+  [OneNote.Paragraph.context](/javascript/api/onenote/onenote.paragraph#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.ParagraphCollection#context:member">OneNote.ParagraphCollection.context</xref>
+  - \[
+  [OneNote.ParagraphCollection.context](/javascript/api/onenote/onenote.paragraphcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Point#context:member">OneNote.Point.context</xref>
+  - \[
+  [OneNote.Point.context](/javascript/api/onenote/onenote.point#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.PointCollection#context:member">OneNote.PointCollection.context</xref>
+  - \[
+  [OneNote.PointCollection.context](/javascript/api/onenote/onenote.pointcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.RichText#context:member">OneNote.RichText.context</xref>
+  - \[
+  [OneNote.RichText.context](/javascript/api/onenote/onenote.richtext#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Section#context:member">OneNote.Section.context</xref>
+  - \[
+  [OneNote.Section.context](/javascript/api/onenote/onenote.section#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.SectionCollection#context:member">OneNote.SectionCollection.context</xref>
+  - \[
+  [OneNote.SectionCollection.context](/javascript/api/onenote/onenote.sectioncollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.SectionGroup#context:member">OneNote.SectionGroup.context</xref>
+  - \[
+  [OneNote.SectionGroup.context](/javascript/api/onenote/onenote.sectiongroup#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.SectionGroupCollection#context:member">OneNote.SectionGroupCollection.context</xref>
+  - \[
+  [OneNote.SectionGroupCollection.context](/javascript/api/onenote/onenote.sectiongroupcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Table#context:member">OneNote.Table.context</xref>
+  - \[
+  [OneNote.Table.context](/javascript/api/onenote/onenote.table#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableCell#context:member">OneNote.TableCell.context</xref>
+  - \[
+  [OneNote.TableCell.context](/javascript/api/onenote/onenote.tablecell#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableCellCollection#context:member">OneNote.TableCellCollection.context</xref>
+  - \[
+  [OneNote.TableCellCollection.context](/javascript/api/onenote/onenote.tablecellcollection#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableRow#context:member">OneNote.TableRow.context</xref>
+  - \[
+  [OneNote.TableRow.context](/javascript/api/onenote/onenote.tablerow#context-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableRowCollection#context:member">OneNote.TableRowCollection.context</xref>
+  - \[
+  [OneNote.TableRowCollection.context](/javascript/api/onenote/onenote.tablerowcollection#context-member)
+  \]
 
   #### Examples
 

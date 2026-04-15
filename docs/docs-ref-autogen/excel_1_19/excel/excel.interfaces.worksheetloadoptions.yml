@@ -17,59 +17,77 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member">Excel.Interfaces.ChartCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.ChartCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.chartcollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member">Excel.Interfaces.ChartLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.ChartLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.chartloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheet:member">Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.nameditemcollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheetOrNullObject:member">Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject](/javascript/api/excel/excel.interfaces.nameditemcollectionloadoptions#worksheetornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemLoadOptions#worksheet:member">Excel.Interfaces.NamedItemLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.NamedItemLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.nameditemloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.NamedItemLoadOptions#worksheetOrNullObject:member">Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject</xref>
+  - \[
+  [Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject](/javascript/api/excel/excel.interfaces.nameditemloadoptions#worksheetornullobject-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member">Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.pivottablecollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member">Excel.Interfaces.PivotTableLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.PivotTableLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.pivottableloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#worksheet:member">Excel.Interfaces.PivotTableScopedCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.PivotTableScopedCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.pivottablescopedcollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasCollectionLoadOptions#worksheet:member">Excel.Interfaces.RangeAreasCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.rangeareascollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member">Excel.Interfaces.RangeAreasLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.rangeareasloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member">Excel.Interfaces.RangeCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.RangeCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.rangecollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member">Excel.Interfaces.RangeLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.RangeLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.rangeloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member">Excel.Interfaces.SlicerCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.SlicerCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.slicercollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member">Excel.Interfaces.SlicerLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.SlicerLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.slicerloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member">Excel.Interfaces.TableCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.TableCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableLoadOptions#worksheet:member">Excel.Interfaces.TableLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.TableLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.tableloadoptions#worksheet-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member">Excel.Interfaces.TableScopedCollectionLoadOptions.worksheet</xref>
+  - \[
+  [Excel.Interfaces.TableScopedCollectionLoadOptions.worksheet](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#worksheet-member)
+  \]
 
 isPreview: false
 isDeprecated: false

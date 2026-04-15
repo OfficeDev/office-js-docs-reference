@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat2Options#createBookmarks:member">Word.DocumentExportAsFixedFormat2Options.createBookmarks</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat2Options.createBookmarks](/javascript/api/word/word.documentexportasfixedformat2options#createbookmarks-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat3Options#createBookmarks:member">Word.DocumentExportAsFixedFormat3Options.createBookmarks</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat3Options.createBookmarks](/javascript/api/word/word.documentexportasfixedformat3options#createbookmarks-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormatOptions#createBookmarks:member">Word.DocumentExportAsFixedFormatOptions.createBookmarks</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormatOptions.createBookmarks](/javascript/api/word/word.documentexportasfixedformatoptions#createbookmarks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

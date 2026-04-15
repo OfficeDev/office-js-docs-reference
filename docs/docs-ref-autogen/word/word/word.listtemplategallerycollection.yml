@@ -18,8 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Application#listTemplateGalleries:member">Word.Application.listTemplateGalleries</xref>
+  - \[
+  [Word.Application.listTemplateGalleries](/javascript/api/word/word.application#listtemplategalleries-member)
+  \]
 
 isPreview: false
 isDeprecated: false

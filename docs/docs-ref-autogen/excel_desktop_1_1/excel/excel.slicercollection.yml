@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#slicers:member">Excel.Workbook.slicers</xref>
+  - \[
+  [Excel.Workbook.slicers](/javascript/api/excel/excel.workbook#slicers-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Worksheet#slicers:member">Excel.Worksheet.slicers</xref>
+  - \[
+  [Excel.Worksheet.slicers](/javascript/api/excel/excel.worksheet#slicers-member)
+  \]
 
 isPreview: false
 isDeprecated: false

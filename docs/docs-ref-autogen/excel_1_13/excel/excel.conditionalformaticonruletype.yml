@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalIconCriterion#type:member">Excel.ConditionalIconCriterion.type</xref>
+  - \[
+  [Excel.ConditionalIconCriterion.type](/javascript/api/excel/excel.conditionaliconcriterion#type-member)
+  \]
 
   #### Examples
 

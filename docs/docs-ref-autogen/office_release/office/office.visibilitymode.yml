@@ -11,8 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="office!Office.VisibilityModeChangedMessage#visibilityMode:member">Office.VisibilityModeChangedMessage.visibilityMode</xref>
+  - \[
+  [Office.VisibilityModeChangedMessage.visibilityMode](/javascript/api/office/office.visibilitymodechangedmessage#visibilitymode-member)
+  \]
 
   #### Examples
 

@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member">Office.RecipientsChangedEventArgs.changedRecipientFields</xref>
+  - \[
+  [Office.RecipientsChangedEventArgs.changedRecipientFields](/javascript/api/outlook/office.recipientschangedeventargs#changedrecipientfields-member)
+  \]
 
   #### Examples
 

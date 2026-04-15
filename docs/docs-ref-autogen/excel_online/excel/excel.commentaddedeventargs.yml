@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CommentCollection#onAdded:member">Excel.CommentCollection.onAdded</xref>
+  - \[
+  [Excel.CommentCollection.onAdded](/javascript/api/excel/excel.commentcollection#onadded-member)
+  \]
 
   #### Examples
 

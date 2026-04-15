@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WindowCollectionLoadOptions#activePane:member">Word.Interfaces.WindowCollectionLoadOptions.activePane</xref>
+  - \[
+  [Word.Interfaces.WindowCollectionLoadOptions.activePane](/javascript/api/word/word.interfaces.windowcollectionloadoptions#activepane-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowLoadOptions#activePane:member">Word.Interfaces.WindowLoadOptions.activePane</xref>
+  - \[
+  [Word.Interfaces.WindowLoadOptions.activePane](/javascript/api/word/word.interfaces.windowloadoptions#activepane-member)
+  \]
 
 isPreview: false
 isDeprecated: false

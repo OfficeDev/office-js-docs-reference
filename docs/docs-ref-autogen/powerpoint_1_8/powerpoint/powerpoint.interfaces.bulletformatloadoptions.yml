@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#bulletFormat:member">PowerPoint.Interfaces.ParagraphFormatLoadOptions.bulletFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ParagraphFormatLoadOptions.bulletFormat](/javascript/api/powerpoint/powerpoint.interfaces.paragraphformatloadoptions#bulletformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

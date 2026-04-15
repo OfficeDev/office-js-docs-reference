@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions#label:member">Excel.Interfaces.ChartTrendlineCollectionLoadOptions.label</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineCollectionLoadOptions.label](/javascript/api/excel/excel.interfaces.charttrendlinecollectionloadoptions#label-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartTrendlineLoadOptions#label:member">Excel.Interfaces.ChartTrendlineLoadOptions.label</xref>
+  - \[
+  [Excel.Interfaces.ChartTrendlineLoadOptions.label](/javascript/api/excel/excel.interfaces.charttrendlineloadoptions#label-member)
+  \]
 
 isPreview: false
 isDeprecated: false

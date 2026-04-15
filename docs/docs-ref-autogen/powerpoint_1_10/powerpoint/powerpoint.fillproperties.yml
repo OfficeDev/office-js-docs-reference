@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#fill:member">PowerPoint.TableCellProperties.fill</xref>
+  - \[
+  [PowerPoint.TableCellProperties.fill](/javascript/api/powerpoint/powerpoint.tablecellproperties#fill-member)
+  \]
 
   #### Examples
 

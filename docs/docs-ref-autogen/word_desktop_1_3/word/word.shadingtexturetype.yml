@@ -17,22 +17,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShadingData#texture:member">Word.Interfaces.ShadingData.texture</xref>
+  - \[
+  [Word.Interfaces.ShadingData.texture](/javascript/api/word/word.interfaces.shadingdata#texture-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUniversalData#texture:member">Word.Interfaces.ShadingUniversalData.texture</xref>
+  - \[
+  [Word.Interfaces.ShadingUniversalData.texture](/javascript/api/word/word.interfaces.shadinguniversaldata#texture-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUniversalUpdateData#texture:member">Word.Interfaces.ShadingUniversalUpdateData.texture</xref>
+  - \[
+  [Word.Interfaces.ShadingUniversalUpdateData.texture](/javascript/api/word/word.interfaces.shadinguniversalupdatedata#texture-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUpdateData#texture:member">Word.Interfaces.ShadingUpdateData.texture</xref>
+  - \[
+  [Word.Interfaces.ShadingUpdateData.texture](/javascript/api/word/word.interfaces.shadingupdatedata#texture-member)
+  \]
 
-  - <xref href="word!Word.Shading#texture:member">Word.Shading.texture</xref>
+  - \[ [Word.Shading.texture](/javascript/api/word/word.shading#texture-member)
+  \]
 
-  - <xref
-  href="word!Word.ShadingUniversal#texture:member">Word.ShadingUniversal.texture</xref>
+  - \[
+  [Word.ShadingUniversal.texture](/javascript/api/word/word.shadinguniversal#texture-member)
+  \]
 
   #### Examples
 

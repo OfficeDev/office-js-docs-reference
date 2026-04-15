@@ -15,85 +15,109 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Application#context:member">Word.Application.context</xref>
+  - \[
+  [Word.Application.context](/javascript/api/word/word.application#context-member)
+  \]
 
-  - <xref href="word!Word.Body#context:member">Word.Body.context</xref>
+  - \[ [Word.Body.context](/javascript/api/word/word.body#context-member) \]
 
-  - <xref
-  href="word!Word.ContentControl#context:member">Word.ContentControl.context</xref>
+  - \[
+  [Word.ContentControl.context](/javascript/api/word/word.contentcontrol#context-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlCollection#context:member">Word.ContentControlCollection.context</xref>
+  - \[
+  [Word.ContentControlCollection.context](/javascript/api/word/word.contentcontrolcollection#context-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomProperty#context:member">Word.CustomProperty.context</xref>
+  - \[
+  [Word.CustomProperty.context](/javascript/api/word/word.customproperty#context-member)
+  \]
 
-  - <xref
-  href="word!Word.CustomPropertyCollection#context:member">Word.CustomPropertyCollection.context</xref>
+  - \[
+  [Word.CustomPropertyCollection.context](/javascript/api/word/word.custompropertycollection#context-member)
+  \]
 
-  - <xref href="word!Word.Document#context:member">Word.Document.context</xref>
+  - \[
+  [Word.Document.context](/javascript/api/word/word.document#context-member) \]
 
-  - <xref
-  href="word!Word.DocumentCreated#context:member">Word.DocumentCreated.context</xref>
+  - \[
+  [Word.DocumentCreated.context](/javascript/api/word/word.documentcreated#context-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentProperties#context:member">Word.DocumentProperties.context</xref>
+  - \[
+  [Word.DocumentProperties.context](/javascript/api/word/word.documentproperties#context-member)
+  \]
 
-  - <xref href="word!Word.Font#context:member">Word.Font.context</xref>
+  - \[ [Word.Font.context](/javascript/api/word/word.font#context-member) \]
 
-  - <xref
-  href="word!Word.InlinePicture#context:member">Word.InlinePicture.context</xref>
+  - \[
+  [Word.InlinePicture.context](/javascript/api/word/word.inlinepicture#context-member)
+  \]
 
-  - <xref
-  href="word!Word.InlinePictureCollection#context:member">Word.InlinePictureCollection.context</xref>
+  - \[
+  [Word.InlinePictureCollection.context](/javascript/api/word/word.inlinepicturecollection#context-member)
+  \]
 
-  - <xref href="word!Word.List#context:member">Word.List.context</xref>
+  - \[ [Word.List.context](/javascript/api/word/word.list#context-member) \]
 
-  - <xref
-  href="word!Word.ListCollection#context:member">Word.ListCollection.context</xref>
+  - \[
+  [Word.ListCollection.context](/javascript/api/word/word.listcollection#context-member)
+  \]
 
-  - <xref href="word!Word.ListItem#context:member">Word.ListItem.context</xref>
+  - \[
+  [Word.ListItem.context](/javascript/api/word/word.listitem#context-member) \]
 
-  - <xref
-  href="word!Word.Paragraph#context:member">Word.Paragraph.context</xref>
+  - \[
+  [Word.Paragraph.context](/javascript/api/word/word.paragraph#context-member)
+  \]
 
-  - <xref
-  href="word!Word.ParagraphCollection#context:member">Word.ParagraphCollection.context</xref>
+  - \[
+  [Word.ParagraphCollection.context](/javascript/api/word/word.paragraphcollection#context-member)
+  \]
 
-  - <xref href="word!Word.Range#context:member">Word.Range.context</xref>
+  - \[ [Word.Range.context](/javascript/api/word/word.range#context-member) \]
 
-  - <xref
-  href="word!Word.RangeCollection#context:member">Word.RangeCollection.context</xref>
+  - \[
+  [Word.RangeCollection.context](/javascript/api/word/word.rangecollection#context-member)
+  \]
 
-  - <xref
-  href="word!Word.SearchOptions#context:member">Word.SearchOptions.context</xref>
+  - \[
+  [Word.SearchOptions.context](/javascript/api/word/word.searchoptions#context-member)
+  \]
 
-  - <xref href="word!Word.Section#context:member">Word.Section.context</xref>
+  - \[ [Word.Section.context](/javascript/api/word/word.section#context-member)
+  \]
 
-  - <xref
-  href="word!Word.SectionCollection#context:member">Word.SectionCollection.context</xref>
+  - \[
+  [Word.SectionCollection.context](/javascript/api/word/word.sectioncollection#context-member)
+  \]
 
-  - <xref href="word!Word.Style#context:member">Word.Style.context</xref>
+  - \[ [Word.Style.context](/javascript/api/word/word.style#context-member) \]
 
-  - <xref href="word!Word.Table#context:member">Word.Table.context</xref>
+  - \[ [Word.Table.context](/javascript/api/word/word.table#context-member) \]
 
-  - <xref
-  href="word!Word.TableBorder#context:member">Word.TableBorder.context</xref>
+  - \[
+  [Word.TableBorder.context](/javascript/api/word/word.tableborder#context-member)
+  \]
 
-  - <xref
-  href="word!Word.TableCell#context:member">Word.TableCell.context</xref>
+  - \[
+  [Word.TableCell.context](/javascript/api/word/word.tablecell#context-member)
+  \]
 
-  - <xref
-  href="word!Word.TableCellCollection#context:member">Word.TableCellCollection.context</xref>
+  - \[
+  [Word.TableCellCollection.context](/javascript/api/word/word.tablecellcollection#context-member)
+  \]
 
-  - <xref
-  href="word!Word.TableCollection#context:member">Word.TableCollection.context</xref>
+  - \[
+  [Word.TableCollection.context](/javascript/api/word/word.tablecollection#context-member)
+  \]
 
-  - <xref href="word!Word.TableRow#context:member">Word.TableRow.context</xref>
+  - \[
+  [Word.TableRow.context](/javascript/api/word/word.tablerow#context-member) \]
 
-  - <xref
-  href="word!Word.TableRowCollection#context:member">Word.TableRowCollection.context</xref>
+  - \[
+  [Word.TableRowCollection.context](/javascript/api/word/word.tablerowcollection#context-member)
+  \]
 
   #### Examples
 

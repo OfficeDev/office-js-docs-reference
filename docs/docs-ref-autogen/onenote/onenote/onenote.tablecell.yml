@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="onenote!OneNote.Paragraph#parentTableCell:member">OneNote.Paragraph.parentTableCell</xref>
+  - \[
+  [OneNote.Paragraph.parentTableCell](/javascript/api/onenote/onenote.paragraph#parenttablecell-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.Paragraph#parentTableCellOrNull:member">OneNote.Paragraph.parentTableCellOrNull</xref>
+  - \[
+  [OneNote.Paragraph.parentTableCellOrNull](/javascript/api/onenote/onenote.paragraph#parenttablecellornull-member)
+  \]
 
-  - <xref
-  href="onenote!OneNote.TableCellCollection#items:member">OneNote.TableCellCollection.items</xref>
+  - \[
+  [OneNote.TableCellCollection.items](/javascript/api/onenote/onenote.tablecellcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

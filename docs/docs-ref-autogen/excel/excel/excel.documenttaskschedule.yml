@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DocumentTask#startAndDueDateTime:member">Excel.DocumentTask.startAndDueDateTime</xref>
+  - \[
+  [Excel.DocumentTask.startAndDueDateTime](/javascript/api/excel/excel.documenttask#startandduedatetime-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskData#startAndDueDateTime:member">Excel.Interfaces.DocumentTaskData.startAndDueDateTime</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskData.startAndDueDateTime](/javascript/api/excel/excel.interfaces.documenttaskdata#startandduedatetime-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.DocumentTaskUpdateData#startAndDueDateTime:member">Excel.Interfaces.DocumentTaskUpdateData.startAndDueDateTime</xref>
+  - \[
+  [Excel.Interfaces.DocumentTaskUpdateData.startAndDueDateTime](/javascript/api/excel/excel.interfaces.documenttaskupdatedata#startandduedatetime-member)
+  \]
 
 isPreview: true
 isDeprecated: false

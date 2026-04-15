@@ -23,14 +23,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.EnhancedLocation#addAsync:member(1)">Office.EnhancedLocation.addAsync</xref>
+  - \[
+  [Office.EnhancedLocation.addAsync](/javascript/api/outlook/office.enhancedlocation#addasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.EnhancedLocation#removeAsync:member(1)">Office.EnhancedLocation.removeAsync</xref>
+  - \[
+  [Office.EnhancedLocation.removeAsync](/javascript/api/outlook/office.enhancedlocation#removeasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LocationDetails#locationIdentifier:member">Office.LocationDetails.locationIdentifier</xref>
+  - \[
+  [Office.LocationDetails.locationIdentifier](/javascript/api/outlook/office.locationdetails#locationidentifier-member)
+  \]
 
   #### Examples
 

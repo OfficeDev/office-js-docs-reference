@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RangeData#twoLinesInOne:member">Word.Interfaces.RangeData.twoLinesInOne</xref>
+  - \[
+  [Word.Interfaces.RangeData.twoLinesInOne](/javascript/api/word/word.interfaces.rangedata#twolinesinone-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeUpdateData#twoLinesInOne:member">Word.Interfaces.RangeUpdateData.twoLinesInOne</xref>
+  - \[
+  [Word.Interfaces.RangeUpdateData.twoLinesInOne](/javascript/api/word/word.interfaces.rangeupdatedata#twolinesinone-member)
+  \]
 
-  - <xref
-  href="word!Word.Range#twoLinesInOne:member">Word.Range.twoLinesInOne</xref>
+  - \[
+  [Word.Range.twoLinesInOne](/javascript/api/word/word.range#twolinesinone-member)
+  \]
 
 isPreview: false
 isDeprecated: false

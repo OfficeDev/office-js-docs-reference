@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="visio!Visio.Document#onShapeMouseLeave:member">Visio.Document.onShapeMouseLeave</xref>
+  - \[
+  [Visio.Document.onShapeMouseLeave](/javascript/api/visio/visio.document#onshapemouseleave-member)
+  \]
 
   #### Examples
 

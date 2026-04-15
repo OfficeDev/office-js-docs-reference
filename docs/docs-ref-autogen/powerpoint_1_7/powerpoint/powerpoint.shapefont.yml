@@ -16,8 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TextRange#font:member">PowerPoint.TextRange.font</xref>
+  - \[
+  [PowerPoint.TextRange.font](/javascript/api/powerpoint/powerpoint.textrange#font-member)
+  \]
 
   #### Examples
 

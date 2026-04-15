@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Chart#format:member">Excel.Chart.format</xref>
+  - \[ [Excel.Chart.format](/javascript/api/excel/excel.chart#format-member) \]
 
 isPreview: false
 isDeprecated: false

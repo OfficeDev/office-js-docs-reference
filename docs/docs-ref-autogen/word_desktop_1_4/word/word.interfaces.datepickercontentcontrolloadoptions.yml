@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#datePickerContentControl:member">Word.Interfaces.ContentControlCollectionLoadOptions.datePickerContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.datePickerContentControl](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#datepickercontentcontrol-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#datePickerContentControl:member">Word.Interfaces.ContentControlLoadOptions.datePickerContentControl</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.datePickerContentControl](/javascript/api/word/word.interfaces.contentcontrolloadoptions#datepickercontentcontrol-member)
+  \]
 
 isPreview: false
 isDeprecated: false

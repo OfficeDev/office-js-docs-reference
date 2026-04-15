@@ -13,33 +13,41 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="word!Word.Body#parentBody:member">Word.Body.parentBody</xref>
+  - \[ [Word.Body.parentBody](/javascript/api/word/word.body#parentbody-member)
+  \]
 
-  - <xref
-  href="word!Word.Body#parentBodyOrNullObject:member">Word.Body.parentBodyOrNullObject</xref>
+  - \[
+  [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#parentbodyornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControl#parentBody:member">Word.ContentControl.parentBody</xref>
+  - \[
+  [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#parentbody-member)
+  \]
 
-  - <xref href="word!Word.Document#body:member">Word.Document.body</xref>
+  - \[ [Word.Document.body](/javascript/api/word/word.document#body-member) \]
 
-  - <xref
-  href="word!Word.DocumentCreated#body:member">Word.DocumentCreated.body</xref>
+  - \[
+  [Word.DocumentCreated.body](/javascript/api/word/word.documentcreated#body-member)
+  \]
 
-  - <xref href="word!Word.Field#parentBody:member">Word.Field.parentBody</xref>
+  - \[
+  [Word.Field.parentBody](/javascript/api/word/word.field#parentbody-member) \]
 
-  - <xref href="word!Word.NoteItem#body:member">Word.NoteItem.body</xref>
+  - \[ [Word.NoteItem.body](/javascript/api/word/word.noteitem#body-member) \]
 
-  - <xref
-  href="word!Word.Paragraph#parentBody:member">Word.Paragraph.parentBody</xref>
+  - \[
+  [Word.Paragraph.parentBody](/javascript/api/word/word.paragraph#parentbody-member)
+  \]
 
-  - <xref href="word!Word.Range#parentBody:member">Word.Range.parentBody</xref>
+  - \[
+  [Word.Range.parentBody](/javascript/api/word/word.range#parentbody-member) \]
 
-  - <xref href="word!Word.Section#body:member">Word.Section.body</xref>
+  - \[ [Word.Section.body](/javascript/api/word/word.section#body-member) \]
 
-  - <xref href="word!Word.Table#parentBody:member">Word.Table.parentBody</xref>
+  - \[
+  [Word.Table.parentBody](/javascript/api/word/word.table#parentbody-member) \]
 
-  - <xref href="word!Word.TableCell#body:member">Word.TableCell.body</xref>
+  - \[ [Word.TableCell.body](/javascript/api/word/word.tablecell#body-member) \]
 
   #### Examples
 

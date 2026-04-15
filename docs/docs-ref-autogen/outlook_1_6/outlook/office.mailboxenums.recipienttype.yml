@@ -26,8 +26,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.EmailAddressDetails#recipientType:member">Office.EmailAddressDetails.recipientType</xref>
+  - \[
+  [Office.EmailAddressDetails.recipientType](/javascript/api/outlook/office.emailaddressdetails#recipienttype-member)
+  \]
 
   #### Examples
 

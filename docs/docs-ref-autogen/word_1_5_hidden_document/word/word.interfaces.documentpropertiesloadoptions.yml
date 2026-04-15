@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member">Word.Interfaces.DocumentCreatedLoadOptions.properties</xref>
+  - \[
+  [Word.Interfaces.DocumentCreatedLoadOptions.properties](/javascript/api/word/word.interfaces.documentcreatedloadoptions#properties-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLoadOptions#properties:member">Word.Interfaces.DocumentLoadOptions.properties</xref>
+  - \[
+  [Word.Interfaces.DocumentLoadOptions.properties](/javascript/api/word/word.interfaces.documentloadoptions#properties-member)
+  \]
 
 isPreview: false
 isDeprecated: false

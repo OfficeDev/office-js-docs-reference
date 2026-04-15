@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ShapeData#textFrame:member">Word.Interfaces.ShapeData.textFrame</xref>
+  - \[
+  [Word.Interfaces.ShapeData.textFrame](/javascript/api/word/word.interfaces.shapedata#textframe-member)
+  \]
 
 isPreview: false
 isDeprecated: false

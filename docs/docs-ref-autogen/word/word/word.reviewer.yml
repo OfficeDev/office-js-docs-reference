@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ReviewerCollection#items:member">Word.ReviewerCollection.items</xref>
+  - \[
+  [Word.ReviewerCollection.items](/javascript/api/word/word.reviewercollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

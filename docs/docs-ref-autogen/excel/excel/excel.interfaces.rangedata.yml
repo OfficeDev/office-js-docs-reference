@@ -8,23 +8,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeAreasData#areas:member">Excel.Interfaces.RangeAreasData.areas</xref>
+  - \[
+  [Excel.Interfaces.RangeAreasData.areas](/javascript/api/excel/excel.interfaces.rangeareasdata#areas-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeCollectionData#items:member">Excel.Interfaces.RangeCollectionData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeCollectionData.items](/javascript/api/excel/excel.interfaces.rangecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member">Excel.Interfaces.RangeCollectionUpdateData.items</xref>
+  - \[
+  [Excel.Interfaces.RangeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rangecollectionupdatedata#items-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#activeCell:member">Excel.Interfaces.WindowData.activeCell</xref>
+  - \[
+  [Excel.Interfaces.WindowData.activeCell](/javascript/api/excel/excel.interfaces.windowdata#activecell-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WindowData#visibleRange:member">Excel.Interfaces.WindowData.visibleRange</xref>
+  - \[
+  [Excel.Interfaces.WindowData.visibleRange](/javascript/api/excel/excel.interfaces.windowdata#visiblerange-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member">Excel.Interfaces.WorkbookRangeAreasData.ranges</xref>
+  - \[
+  [Excel.Interfaces.WorkbookRangeAreasData.ranges](/javascript/api/excel/excel.interfaces.workbookrangeareasdata#ranges-member)
+  \]
 
 isPreview: false
 isDeprecated: false

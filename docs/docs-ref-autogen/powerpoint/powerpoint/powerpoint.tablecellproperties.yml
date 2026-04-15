@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.TableAddOptions#specificCellProperties:member">PowerPoint.TableAddOptions.specificCellProperties</xref>
+  - \[
+  [PowerPoint.TableAddOptions.specificCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#specificcellproperties-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableAddOptions#uniformCellProperties:member">PowerPoint.TableAddOptions.uniformCellProperties</xref>
+  - \[
+  [PowerPoint.TableAddOptions.uniformCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#uniformcellproperties-member)
+  \]
 
   #### Examples
 

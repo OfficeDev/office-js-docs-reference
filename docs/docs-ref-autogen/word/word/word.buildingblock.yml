@@ -14,23 +14,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BuildingBlockGalleryContentControl#placeholderText:member">Word.BuildingBlockGalleryContentControl.placeholderText</xref>
+  - \[
+  [Word.BuildingBlockGalleryContentControl.placeholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.ContentControlPlaceholderOptions#buildingBlock:member">Word.ContentControlPlaceholderOptions.buildingBlock</xref>
+  - \[
+  [Word.ContentControlPlaceholderOptions.buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#buildingblock-member)
+  \]
 
-  - <xref
-  href="word!Word.DatePickerContentControl#placeholderText:member">Word.DatePickerContentControl.placeholderText</xref>
+  - \[
+  [Word.DatePickerContentControl.placeholderText](/javascript/api/word/word.datepickercontentcontrol#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.GroupContentControl#placeholderText:member">Word.GroupContentControl.placeholderText</xref>
+  - \[
+  [Word.GroupContentControl.placeholderText](/javascript/api/word/word.groupcontentcontrol#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.PictureContentControl#placeholderText:member">Word.PictureContentControl.placeholderText</xref>
+  - \[
+  [Word.PictureContentControl.placeholderText](/javascript/api/word/word.picturecontentcontrol#placeholdertext-member)
+  \]
 
-  - <xref
-  href="word!Word.RepeatingSectionContentControl#placeholderText:member">Word.RepeatingSectionContentControl.placeholderText</xref>
+  - \[
+  [Word.RepeatingSectionContentControl.placeholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#placeholdertext-member)
+  \]
 
 isPreview: false
 isDeprecated: false

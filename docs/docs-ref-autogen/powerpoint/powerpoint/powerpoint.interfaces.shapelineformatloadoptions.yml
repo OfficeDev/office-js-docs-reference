@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member">PowerPoint.Interfaces.ShapeCollectionLoadOptions.lineFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.lineFormat](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#lineformat-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member">PowerPoint.Interfaces.ShapeLoadOptions.lineFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLoadOptions.lineFormat](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#lineformat-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#lineFormat:member">PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.lineFormat</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.lineFormat](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#lineformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

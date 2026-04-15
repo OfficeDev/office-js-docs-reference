@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.PageSetup#textColumns:member">Word.PageSetup.textColumns</xref>
+  - \[
+  [Word.PageSetup.textColumns](/javascript/api/word/word.pagesetup#textcolumns-member)
+  \]
 
 isPreview: false
 isDeprecated: false

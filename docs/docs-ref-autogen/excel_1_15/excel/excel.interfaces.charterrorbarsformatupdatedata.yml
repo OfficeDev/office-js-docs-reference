@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartErrorBarsUpdateData#format:member">Excel.Interfaces.ChartErrorBarsUpdateData.format</xref>
+  - \[
+  [Excel.Interfaces.ChartErrorBarsUpdateData.format](/javascript/api/excel/excel.interfaces.charterrorbarsupdatedata#format-member)
+  \]
 
 isPreview: false
 isDeprecated: false

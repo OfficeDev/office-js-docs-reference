@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#documentLibraryVersions:member">Word.Interfaces.DocumentData.documentLibraryVersions</xref>
+  - \[
+  [Word.Interfaces.DocumentData.documentLibraryVersions](/javascript/api/word/word.interfaces.documentdata#documentlibraryversions-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLibraryVersionCollectionData#items:member">Word.Interfaces.DocumentLibraryVersionCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.DocumentLibraryVersionCollectionData.items](/javascript/api/word/word.interfaces.documentlibraryversioncollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member">Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items](/javascript/api/word/word.interfaces.documentlibraryversioncollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

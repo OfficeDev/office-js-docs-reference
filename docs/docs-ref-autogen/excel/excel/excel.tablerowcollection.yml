@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Table#rows:member">Excel.Table.rows</xref>
+  - \[ [Excel.Table.rows](/javascript/api/excel/excel.table#rows-member) \]
 
 isPreview: false
 isDeprecated: false

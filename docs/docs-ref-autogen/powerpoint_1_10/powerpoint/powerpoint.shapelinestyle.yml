@@ -14,14 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member">PowerPoint.Interfaces.ShapeLineFormatData.style</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLineFormatData.style](/javascript/api/powerpoint/powerpoint.interfaces.shapelineformatdata#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member">PowerPoint.Interfaces.ShapeLineFormatUpdateData.style</xref>
+  - \[
+  [PowerPoint.Interfaces.ShapeLineFormatUpdateData.style](/javascript/api/powerpoint/powerpoint.interfaces.shapelineformatupdatedata#style-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ShapeLineFormat#style:member">PowerPoint.ShapeLineFormat.style</xref>
+  - \[
+  [PowerPoint.ShapeLineFormat.style](/javascript/api/powerpoint/powerpoint.shapelineformat#style-member)
+  \]
 
   #### Examples
 

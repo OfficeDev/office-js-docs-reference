@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeData#lineFormat:member">Excel.Interfaces.ShapeData.lineFormat</xref>
+  - \[
+  [Excel.Interfaces.ShapeData.lineFormat](/javascript/api/excel/excel.interfaces.shapedata#lineformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

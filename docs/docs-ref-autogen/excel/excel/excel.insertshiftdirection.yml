@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ChangeDirectionState#insertShiftDirection:member">Excel.ChangeDirectionState.insertShiftDirection</xref>
+  - \[
+  [Excel.ChangeDirectionState.insertShiftDirection](/javascript/api/excel/excel.changedirectionstate#insertshiftdirection-member)
+  \]
 
   #### Examples
 

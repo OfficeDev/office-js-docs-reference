@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Worksheet#onChanged:member">Excel.Worksheet.onChanged</xref>
+  - \[
+  [Excel.Worksheet.onChanged](/javascript/api/excel/excel.worksheet#onchanged-member)
+  \]
 
 isPreview: false
 isDeprecated: false

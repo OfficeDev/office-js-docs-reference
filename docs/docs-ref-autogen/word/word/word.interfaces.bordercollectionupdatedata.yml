@@ -10,8 +10,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.StyleUpdateData#borders:member">Word.Interfaces.StyleUpdateData.borders</xref>
+  - \[
+  [Word.Interfaces.StyleUpdateData.borders](/javascript/api/word/word.interfaces.styleupdatedata#borders-member)
+  \]
 
 isPreview: false
 isDeprecated: false

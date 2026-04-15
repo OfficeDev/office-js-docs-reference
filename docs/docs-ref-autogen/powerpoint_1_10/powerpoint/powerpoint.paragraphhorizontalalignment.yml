@@ -17,26 +17,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.paragraphformatdata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member">PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.paragraphformatupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellData#horizontalAlignment:member">PowerPoint.Interfaces.TableCellData.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellData.horizontalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.tablecelldata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member">PowerPoint.Interfaces.TableCellUpdateData.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellUpdateData.horizontalAlignment](/javascript/api/powerpoint/powerpoint.interfaces.tablecellupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member">PowerPoint.ParagraphFormat.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.ParagraphFormat.horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCell#horizontalAlignment:member">PowerPoint.TableCell.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.TableCell.horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member">PowerPoint.TableCellProperties.horizontalAlignment</xref>
+  - \[
+  [PowerPoint.TableCellProperties.horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#horizontalalignment-member)
+  \]
 
   #### Examples
 

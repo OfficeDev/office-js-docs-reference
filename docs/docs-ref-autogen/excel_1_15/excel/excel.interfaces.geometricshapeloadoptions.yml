@@ -15,14 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member">Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape</xref>
+  - \[
+  [Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape](/javascript/api/excel/excel.interfaces.groupshapecollectionloadoptions#geometricshape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeCollectionLoadOptions#geometricShape:member">Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape</xref>
+  - \[
+  [Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape](/javascript/api/excel/excel.interfaces.shapecollectionloadoptions#geometricshape-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member">Excel.Interfaces.ShapeLoadOptions.geometricShape</xref>
+  - \[
+  [Excel.Interfaces.ShapeLoadOptions.geometricShape](/javascript/api/excel/excel.interfaces.shapeloadoptions#geometricshape-member)
+  \]
 
 isPreview: false
 isDeprecated: false

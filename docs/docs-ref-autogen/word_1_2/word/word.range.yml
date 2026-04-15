@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.RangeCollection#items:member">Word.RangeCollection.items</xref>
+  - \[
+  [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
+  \]
 
   #### Examples
 

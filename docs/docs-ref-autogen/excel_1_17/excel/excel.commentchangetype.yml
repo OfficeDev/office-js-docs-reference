@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CommentChangedEventArgs#changeType:member">Excel.CommentChangedEventArgs.changeType</xref>
+  - \[
+  [Excel.CommentChangedEventArgs.changeType](/javascript/api/excel/excel.commentchangedeventargs#changetype-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.DocumentTaskCollection#items:member">Excel.DocumentTaskCollection.items</xref>
+  - \[
+  [Excel.DocumentTaskCollection.items](/javascript/api/excel/excel.documenttaskcollection#items-member)
+  \]
 
 isPreview: true
 isDeprecated: false

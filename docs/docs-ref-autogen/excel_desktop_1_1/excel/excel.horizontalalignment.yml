@@ -13,26 +13,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CellPropertiesFormat#horizontalAlignment:member">Excel.CellPropertiesFormat.horizontalAlignment</xref>
+  - \[
+  [Excel.CellPropertiesFormat.horizontalAlignment](/javascript/api/excel/excel.cellpropertiesformat#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member">Excel.Interfaces.RangeFormatData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatData.horizontalAlignment](/javascript/api/excel/excel.interfaces.rangeformatdata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member">Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleData#horizontalAlignment:member">Excel.Interfaces.StyleData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.StyleData.horizontalAlignment](/javascript/api/excel/excel.interfaces.styledata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.StyleUpdateData#horizontalAlignment:member">Excel.Interfaces.StyleUpdateData.horizontalAlignment</xref>
+  - \[
+  [Excel.Interfaces.StyleUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.styleupdatedata#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.RangeFormat#horizontalAlignment:member">Excel.RangeFormat.horizontalAlignment</xref>
+  - \[
+  [Excel.RangeFormat.horizontalAlignment](/javascript/api/excel/excel.rangeformat#horizontalalignment-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Style#horizontalAlignment:member">Excel.Style.horizontalAlignment</xref>
+  - \[
+  [Excel.Style.horizontalAlignment](/javascript/api/excel/excel.style#horizontalalignment-member)
+  \]
 
   #### Examples
 

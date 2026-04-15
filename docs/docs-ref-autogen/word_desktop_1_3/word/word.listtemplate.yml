@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ListFormat#listTemplate:member">Word.ListFormat.listTemplate</xref>
+  - \[
+  [Word.ListFormat.listTemplate](/javascript/api/word/word.listformat#listtemplate-member)
+  \]
 
-  - <xref
-  href="word!Word.Style#listTemplate:member">Word.Style.listTemplate</xref>
+  - \[
+  [Word.Style.listTemplate](/javascript/api/word/word.style#listtemplate-member)
+  \]
 
   #### Examples
 

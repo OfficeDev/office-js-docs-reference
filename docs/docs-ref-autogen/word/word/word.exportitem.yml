@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat2Options#item:member">Word.DocumentExportAsFixedFormat2Options.item</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat2Options.item](/javascript/api/word/word.documentexportasfixedformat2options#item-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormat3Options#item:member">Word.DocumentExportAsFixedFormat3Options.item</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormat3Options.item](/javascript/api/word/word.documentexportasfixedformat3options#item-member)
+  \]
 
-  - <xref
-  href="word!Word.DocumentExportAsFixedFormatOptions#item:member">Word.DocumentExportAsFixedFormatOptions.item</xref>
+  - \[
+  [Word.DocumentExportAsFixedFormatOptions.item](/javascript/api/word/word.documentexportasfixedformatoptions#item-member)
+  \]
 
   #### Examples
 

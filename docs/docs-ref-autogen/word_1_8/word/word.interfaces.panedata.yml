@@ -8,11 +8,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.PaneCollectionData#items:member">Word.Interfaces.PaneCollectionData.items</xref>
+  - \[
+  [Word.Interfaces.PaneCollectionData.items](/javascript/api/word/word.interfaces.panecollectiondata#items-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.PaneCollectionUpdateData#items:member">Word.Interfaces.PaneCollectionUpdateData.items</xref>
+  - \[
+  [Word.Interfaces.PaneCollectionUpdateData.items](/javascript/api/word/word.interfaces.panecollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -8,17 +8,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.DocumentCreatedData#body:member">Word.Interfaces.DocumentCreatedData.body</xref>
+  - \[
+  [Word.Interfaces.DocumentCreatedData.body](/javascript/api/word/word.interfaces.documentcreateddata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.DocumentData#body:member">Word.Interfaces.DocumentData.body</xref>
+  - \[
+  [Word.Interfaces.DocumentData.body](/javascript/api/word/word.interfaces.documentdata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.SectionData#body:member">Word.Interfaces.SectionData.body</xref>
+  - \[
+  [Word.Interfaces.SectionData.body](/javascript/api/word/word.interfaces.sectiondata#body-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCellData#body:member">Word.Interfaces.TableCellData.body</xref>
+  - \[
+  [Word.Interfaces.TableCellData.body](/javascript/api/word/word.interfaces.tablecelldata#body-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -25,35 +25,45 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="outlook!Office.AppointmentRead#displayReplyAllForm:member(1)">Office.AppointmentRead.displayReplyAllForm</xref>
+  - \[
+  [Office.AppointmentRead.displayReplyAllForm](/javascript/api/outlook/office.appointmentread#displayreplyallform-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(1)">Office.AppointmentRead.displayReplyAllFormAsync</xref>
+  - \[
+  [Office.AppointmentRead.displayReplyAllFormAsync](/javascript/api/outlook/office.appointmentread#displayreplyallformasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#displayReplyForm:member(1)">Office.AppointmentRead.displayReplyForm</xref>
+  - \[
+  [Office.AppointmentRead.displayReplyForm](/javascript/api/outlook/office.appointmentread#displayreplyform-member)
+  \]
 
-  - <xref
-  href="outlook!Office.AppointmentRead#displayReplyFormAsync:member(1)">Office.AppointmentRead.displayReplyFormAsync</xref>
+  - \[
+  [Office.AppointmentRead.displayReplyFormAsync](/javascript/api/outlook/office.appointmentread#displayreplyformasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(1)">Office.LoadedMessageRead.displayReplyAllFormAsync</xref>
+  - \[
+  [Office.LoadedMessageRead.displayReplyAllFormAsync](/javascript/api/outlook/office.loadedmessageread#displayreplyallformasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.LoadedMessageRead#displayReplyFormAsync:member(1)">Office.LoadedMessageRead.displayReplyFormAsync</xref>
+  - \[
+  [Office.LoadedMessageRead.displayReplyFormAsync](/javascript/api/outlook/office.loadedmessageread#displayreplyformasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#displayReplyAllForm:member(1)">Office.MessageRead.displayReplyAllForm</xref>
+  - \[
+  [Office.MessageRead.displayReplyAllForm](/javascript/api/outlook/office.messageread#displayreplyallform-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#displayReplyAllFormAsync:member(1)">Office.MessageRead.displayReplyAllFormAsync</xref>
+  - \[
+  [Office.MessageRead.displayReplyAllFormAsync](/javascript/api/outlook/office.messageread#displayreplyallformasync-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#displayReplyForm:member(1)">Office.MessageRead.displayReplyForm</xref>
+  - \[
+  [Office.MessageRead.displayReplyForm](/javascript/api/outlook/office.messageread#displayreplyform-member)
+  \]
 
-  - <xref
-  href="outlook!Office.MessageRead#displayReplyFormAsync:member(1)">Office.MessageRead.displayReplyFormAsync</xref>
+  - \[
+  [Office.MessageRead.displayReplyFormAsync](/javascript/api/outlook/office.messageread#displayreplyformasync-member)
+  \]
 
   #### Examples
 

@@ -12,83 +12,109 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member">Word.Interfaces.ContentControlLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ContentControlLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCell:member">Word.Interfaces.FieldCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.FieldCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.FieldCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#parentTableCell:member">Word.Interfaces.FieldLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.fieldloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FieldLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.FieldLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.FieldLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.fieldloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCell:member">Word.Interfaces.InlinePictureLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.InlinePictureLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.InlinePictureLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#parentTableCell:member">Word.Interfaces.ParagraphLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.paragraphloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ParagraphLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.paragraphloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member">Word.Interfaces.RangeCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#parentTableCell:member">Word.Interfaces.RangeLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.rangeloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.rangeloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentTableCell:member">Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCell:member">Word.Interfaces.TableCollectionLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.TableCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parenttablecellornullobject-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableLoadOptions#parentTableCell:member">Word.Interfaces.TableLoadOptions.parentTableCell</xref>
+  - \[
+  [Word.Interfaces.TableLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.tableloadoptions#parenttablecell-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member">Word.Interfaces.TableLoadOptions.parentTableCellOrNullObject</xref>
+  - \[
+  [Word.Interfaces.TableLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.tableloadoptions#parenttablecellornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

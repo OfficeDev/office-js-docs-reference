@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref href="excel!Excel.Workbook#styles:member">Excel.Workbook.styles</xref>
+  - \[
+  [Excel.Workbook.styles](/javascript/api/excel/excel.workbook#styles-member) \]
 
 isPreview: false
 isDeprecated: false

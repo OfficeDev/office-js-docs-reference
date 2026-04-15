@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#dataBar:member">Excel.ConditionalFormat.dataBar</xref>
+  - \[
+  [Excel.ConditionalFormat.dataBar](/javascript/api/excel/excel.conditionalformat#databar-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ConditionalFormat#dataBarOrNullObject:member">Excel.ConditionalFormat.dataBarOrNullObject</xref>
+  - \[
+  [Excel.ConditionalFormat.dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#databarornullobject-member)
+  \]
 
 isPreview: false
 isDeprecated: false

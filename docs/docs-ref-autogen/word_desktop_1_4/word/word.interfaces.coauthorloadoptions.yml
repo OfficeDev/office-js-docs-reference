@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLoadOptions#me:member">Word.Interfaces.CoauthoringLoadOptions.me</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLoadOptions.me](/javascript/api/word/word.interfaces.coauthoringloadoptions#me-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#owner:member">Word.Interfaces.CoauthoringLockCollectionLoadOptions.owner</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockCollectionLoadOptions.owner](/javascript/api/word/word.interfaces.coauthoringlockcollectionloadoptions#owner-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.CoauthoringLockLoadOptions#owner:member">Word.Interfaces.CoauthoringLockLoadOptions.owner</xref>
+  - \[
+  [Word.Interfaces.CoauthoringLockLoadOptions.owner](/javascript/api/word/word.interfaces.coauthoringlockloadoptions#owner-member)
+  \]
 
 isPreview: false
 isDeprecated: false

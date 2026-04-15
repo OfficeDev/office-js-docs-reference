@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.ConflictCollection#items:member">Word.ConflictCollection.items</xref>
+  - \[
+  [Word.ConflictCollection.items](/javascript/api/word/word.conflictcollection#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

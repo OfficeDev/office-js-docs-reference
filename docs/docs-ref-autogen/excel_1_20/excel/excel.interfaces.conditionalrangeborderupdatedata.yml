@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member">Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#bottom-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member">Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#left-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member">Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#right-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member">Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top</xref>
+  - \[
+  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#top-member)
+  \]
 
 isPreview: false
 isDeprecated: false

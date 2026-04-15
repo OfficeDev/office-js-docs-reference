@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#workbookLinksRefreshMode:member">Excel.Interfaces.LinkedWorkbookCollectionUpdateData.workbookLinksRefreshMode</xref>
+  - \[
+  [Excel.Interfaces.LinkedWorkbookCollectionUpdateData.workbookLinksRefreshMode](/javascript/api/excel/excel.interfaces.linkedworkbookcollectionupdatedata#workbooklinksrefreshmode-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedWorkbookCollection#workbookLinksRefreshMode:member">Excel.LinkedWorkbookCollection.workbookLinksRefreshMode</xref>
+  - \[
+  [Excel.LinkedWorkbookCollection.workbookLinksRefreshMode](/javascript/api/excel/excel.linkedworkbookcollection#workbooklinksrefreshmode-member)
+  \]
 
 isPreview: false
 isDeprecated: false

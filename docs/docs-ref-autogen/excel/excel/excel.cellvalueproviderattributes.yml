@@ -15,29 +15,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.BooleanCellValue#provider:member">Excel.BooleanCellValue.provider</xref>
+  - \[
+  [Excel.BooleanCellValue.provider](/javascript/api/excel/excel.booleancellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.DoubleCellValue#provider:member">Excel.DoubleCellValue.provider</xref>
+  - \[
+  [Excel.DoubleCellValue.provider](/javascript/api/excel/excel.doublecellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.EntityCellValue#provider:member">Excel.EntityCellValue.provider</xref>
+  - \[
+  [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.ExternalCodeServiceObjectCellValue#provider:member">Excel.ExternalCodeServiceObjectCellValue.provider</xref>
+  - \[
+  [Excel.ExternalCodeServiceObjectCellValue.provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LinkedEntityCellValue#provider:member">Excel.LinkedEntityCellValue.provider</xref>
+  - \[
+  [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.LocalImageCellValue#provider:member">Excel.LocalImageCellValue.provider</xref>
+  - \[
+  [Excel.LocalImageCellValue.provider](/javascript/api/excel/excel.localimagecellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.StringCellValue#provider:member">Excel.StringCellValue.provider</xref>
+  - \[
+  [Excel.StringCellValue.provider](/javascript/api/excel/excel.stringcellvalue#provider-member)
+  \]
 
-  - <xref
-  href="excel!Excel.WebImageCellValue#provider:member">Excel.WebImageCellValue.provider</xref>
+  - \[
+  [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#provider-member)
+  \]
 
 isPreview: false
 isDeprecated: false

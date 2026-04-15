@@ -14,10 +14,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Document#bookmarks:member">Word.Document.bookmarks</xref>
+  - \[
+  [Word.Document.bookmarks](/javascript/api/word/word.document#bookmarks-member)
+  \]
 
-  - <xref href="word!Word.Range#bookmarks:member">Word.Range.bookmarks</xref>
+  - \[ [Word.Range.bookmarks](/javascript/api/word/word.range#bookmarks-member)
+  \]
 
 isPreview: false
 isDeprecated: false

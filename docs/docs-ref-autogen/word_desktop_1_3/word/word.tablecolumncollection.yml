@@ -15,8 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Range#tableColumns:member">Word.Range.tableColumns</xref>
+  - \[
+  [Word.Range.tableColumns](/javascript/api/word/word.range#tablecolumns-member)
+  \]
 
 isPreview: false
 isDeprecated: false

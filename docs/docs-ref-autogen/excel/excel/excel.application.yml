@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.RequestContext#application:member">Excel.RequestContext.application</xref>
+  - \[
+  [Excel.RequestContext.application](/javascript/api/excel/excel.requestcontext#application-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Workbook#application:member">Excel.Workbook.application</xref>
+  - \[
+  [Excel.Workbook.application](/javascript/api/excel/excel.workbook#application-member)
+  \]
 
 isPreview: false
 isDeprecated: false

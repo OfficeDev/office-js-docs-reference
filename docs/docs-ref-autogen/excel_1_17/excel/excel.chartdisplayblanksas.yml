@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Chart#displayBlanksAs:member">Excel.Chart.displayBlanksAs</xref>
+  - \[
+  [Excel.Chart.displayBlanksAs](/javascript/api/excel/excel.chart#displayblanksas-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartData#displayBlanksAs:member">Excel.Interfaces.ChartData.displayBlanksAs</xref>
+  - \[
+  [Excel.Interfaces.ChartData.displayBlanksAs](/javascript/api/excel/excel.interfaces.chartdata#displayblanksas-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member">Excel.Interfaces.ChartUpdateData.displayBlanksAs</xref>
+  - \[
+  [Excel.Interfaces.ChartUpdateData.displayBlanksAs](/javascript/api/excel/excel.interfaces.chartupdatedata#displayblanksas-member)
+  \]
 
 isPreview: false
 isDeprecated: false

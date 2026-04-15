@@ -10,11 +10,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionData#items:member">PowerPoint.Interfaces.TableCellCollectionData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.tablecellcollectiondata#items-member)
+  \]
 
-  - <xref
-  href="powerpoint!PowerPoint.Interfaces.TableCellCollectionUpdateData#items:member">PowerPoint.Interfaces.TableCellCollectionUpdateData.items</xref>
+  - \[
+  [PowerPoint.Interfaces.TableCellCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.tablecellcollectionupdatedata#items-member)
+  \]
 
 isPreview: false
 isDeprecated: false

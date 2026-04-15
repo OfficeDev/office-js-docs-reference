@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RevisionsFilterData#markup:member">Word.Interfaces.RevisionsFilterData.markup</xref>
+  - \[
+  [Word.Interfaces.RevisionsFilterData.markup](/javascript/api/word/word.interfaces.revisionsfilterdata#markup-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RevisionsFilterUpdateData#markup:member">Word.Interfaces.RevisionsFilterUpdateData.markup</xref>
+  - \[
+  [Word.Interfaces.RevisionsFilterUpdateData.markup](/javascript/api/word/word.interfaces.revisionsfilterupdatedata#markup-member)
+  \]
 
-  - <xref
-  href="word!Word.RevisionsFilter#markup:member">Word.RevisionsFilter.markup</xref>
+  - \[
+  [Word.RevisionsFilter.markup](/javascript/api/word/word.revisionsfilter#markup-member)
+  \]
 
 isPreview: false
 isDeprecated: false

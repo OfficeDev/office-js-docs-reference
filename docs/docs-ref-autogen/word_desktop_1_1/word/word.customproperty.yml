@@ -13,8 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.CustomPropertyCollection#items:member">Word.CustomPropertyCollection.items</xref>
+  - \[
+  [Word.CustomPropertyCollection.items](/javascript/api/word/word.custompropertycollection#items-member)
+  \]
 
   #### Examples
 

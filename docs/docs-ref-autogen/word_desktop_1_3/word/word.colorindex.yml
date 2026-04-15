@@ -12,49 +12,64 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.BorderUniversal#colorIndex:member">Word.BorderUniversal.colorIndex</xref>
+  - \[
+  [Word.BorderUniversal.colorIndex](/javascript/api/word/word.borderuniversal#colorindex-member)
+  \]
 
-  - <xref href="word!Word.Font#colorIndex:member">Word.Font.colorIndex</xref>
+  - \[ [Word.Font.colorIndex](/javascript/api/word/word.font#colorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Font#colorIndexBidirectional:member">Word.Font.colorIndexBidirectional</xref>
+  - \[
+  [Word.Font.colorIndexBidirectional](/javascript/api/word/word.font#colorindexbidirectional-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalData#colorIndex:member">Word.Interfaces.BorderUniversalData.colorIndex</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalData.colorIndex](/javascript/api/word/word.interfaces.borderuniversaldata#colorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.BorderUniversalUpdateData#colorIndex:member">Word.Interfaces.BorderUniversalUpdateData.colorIndex</xref>
+  - \[
+  [Word.Interfaces.BorderUniversalUpdateData.colorIndex](/javascript/api/word/word.interfaces.borderuniversalupdatedata#colorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#colorIndex:member">Word.Interfaces.FontData.colorIndex</xref>
+  - \[
+  [Word.Interfaces.FontData.colorIndex](/javascript/api/word/word.interfaces.fontdata#colorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontData#colorIndexBidirectional:member">Word.Interfaces.FontData.colorIndexBidirectional</xref>
+  - \[
+  [Word.Interfaces.FontData.colorIndexBidirectional](/javascript/api/word/word.interfaces.fontdata#colorindexbidirectional-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#colorIndex:member">Word.Interfaces.FontUpdateData.colorIndex</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.colorIndex](/javascript/api/word/word.interfaces.fontupdatedata#colorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member">Word.Interfaces.FontUpdateData.colorIndexBidirectional</xref>
+  - \[
+  [Word.Interfaces.FontUpdateData.colorIndexBidirectional](/javascript/api/word/word.interfaces.fontupdatedata#colorindexbidirectional-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUniversalData#backgroundPatternColorIndex:member">Word.Interfaces.ShadingUniversalData.backgroundPatternColorIndex</xref>
+  - \[
+  [Word.Interfaces.ShadingUniversalData.backgroundPatternColorIndex](/javascript/api/word/word.interfaces.shadinguniversaldata#backgroundpatterncolorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUniversalData#foregroundPatternColorIndex:member">Word.Interfaces.ShadingUniversalData.foregroundPatternColorIndex</xref>
+  - \[
+  [Word.Interfaces.ShadingUniversalData.foregroundPatternColorIndex](/javascript/api/word/word.interfaces.shadinguniversaldata#foregroundpatterncolorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUniversalUpdateData#backgroundPatternColorIndex:member">Word.Interfaces.ShadingUniversalUpdateData.backgroundPatternColorIndex</xref>
+  - \[
+  [Word.Interfaces.ShadingUniversalUpdateData.backgroundPatternColorIndex](/javascript/api/word/word.interfaces.shadinguniversalupdatedata#backgroundpatterncolorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.ShadingUniversalUpdateData#foregroundPatternColorIndex:member">Word.Interfaces.ShadingUniversalUpdateData.foregroundPatternColorIndex</xref>
+  - \[
+  [Word.Interfaces.ShadingUniversalUpdateData.foregroundPatternColorIndex](/javascript/api/word/word.interfaces.shadinguniversalupdatedata#foregroundpatterncolorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.ShadingUniversal#backgroundPatternColorIndex:member">Word.ShadingUniversal.backgroundPatternColorIndex</xref>
+  - \[
+  [Word.ShadingUniversal.backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#backgroundpatterncolorindex-member)
+  \]
 
-  - <xref
-  href="word!Word.ShadingUniversal#foregroundPatternColorIndex:member">Word.ShadingUniversal.foregroundPatternColorIndex</xref>
+  - \[
+  [Word.ShadingUniversal.foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#foregroundpatterncolorindex-member)
+  \]
 
 isPreview: false
 isDeprecated: false

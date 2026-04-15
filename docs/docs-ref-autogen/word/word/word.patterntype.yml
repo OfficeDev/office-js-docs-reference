@@ -12,20 +12,25 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.FillFormat#pattern:member">Word.FillFormat.pattern</xref>
+  - \[
+  [Word.FillFormat.pattern](/javascript/api/word/word.fillformat#pattern-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.FillFormatData#pattern:member">Word.Interfaces.FillFormatData.pattern</xref>
+  - \[
+  [Word.Interfaces.FillFormatData.pattern](/javascript/api/word/word.interfaces.fillformatdata#pattern-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatData#pattern:member">Word.Interfaces.LineFormatData.pattern</xref>
+  - \[
+  [Word.Interfaces.LineFormatData.pattern](/javascript/api/word/word.interfaces.lineformatdata#pattern-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.LineFormatUpdateData#pattern:member">Word.Interfaces.LineFormatUpdateData.pattern</xref>
+  - \[
+  [Word.Interfaces.LineFormatUpdateData.pattern](/javascript/api/word/word.interfaces.lineformatupdatedata#pattern-member)
+  \]
 
-  - <xref
-  href="word!Word.LineFormat#pattern:member">Word.LineFormat.pattern</xref>
+  - \[
+  [Word.LineFormat.pattern](/javascript/api/word/word.lineformat#pattern-member)
+  \]
 
 isPreview: false
 isDeprecated: false

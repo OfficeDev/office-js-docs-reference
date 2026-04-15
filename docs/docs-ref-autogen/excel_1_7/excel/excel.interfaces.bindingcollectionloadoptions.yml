@@ -14,8 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member">Excel.Interfaces.WorkbookLoadOptions.bindings</xref>
+  - \[
+  [Excel.Interfaces.WorkbookLoadOptions.bindings](/javascript/api/excel/excel.interfaces.workbookloadoptions#bindings-member)
+  \]
 
 isPreview: false
 isDeprecated: false

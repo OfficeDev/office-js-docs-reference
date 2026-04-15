@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.EntityPropertyExtraProperties#propertyMetadata:member">Excel.EntityPropertyExtraProperties.propertyMetadata</xref>
+  - \[
+  [Excel.EntityPropertyExtraProperties.propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#propertymetadata-member)
+  \]
 
 isPreview: false
 isDeprecated: false

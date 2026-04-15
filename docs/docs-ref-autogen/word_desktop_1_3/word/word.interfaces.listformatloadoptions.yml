@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.RangeCollectionLoadOptions#listFormat:member">Word.Interfaces.RangeCollectionLoadOptions.listFormat</xref>
+  - \[
+  [Word.Interfaces.RangeCollectionLoadOptions.listFormat](/javascript/api/word/word.interfaces.rangecollectionloadoptions#listformat-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.RangeLoadOptions#listFormat:member">Word.Interfaces.RangeLoadOptions.listFormat</xref>
+  - \[
+  [Word.Interfaces.RangeLoadOptions.listFormat](/javascript/api/word/word.interfaces.rangeloadoptions#listformat-member)
+  \]
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Workbook#slicerStyles:member">Excel.Workbook.slicerStyles</xref>
+  - \[
+  [Excel.Workbook.slicerStyles](/javascript/api/excel/excel.workbook#slicerstyles-member)
+  \]
 
 isPreview: false
 isDeprecated: false

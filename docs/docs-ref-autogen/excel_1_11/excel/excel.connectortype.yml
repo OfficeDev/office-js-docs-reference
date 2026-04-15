@@ -13,14 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.Interfaces.LineData#connectorType:member">Excel.Interfaces.LineData.connectorType</xref>
+  - \[
+  [Excel.Interfaces.LineData.connectorType](/javascript/api/excel/excel.interfaces.linedata#connectortype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Interfaces.LineUpdateData#connectorType:member">Excel.Interfaces.LineUpdateData.connectorType</xref>
+  - \[
+  [Excel.Interfaces.LineUpdateData.connectorType](/javascript/api/excel/excel.interfaces.lineupdatedata#connectortype-member)
+  \]
 
-  - <xref
-  href="excel!Excel.Line#connectorType:member">Excel.Line.connectorType</xref>
+  - \[
+  [Excel.Line.connectorType](/javascript/api/excel/excel.line#connectortype-member)
+  \]
 
   #### Examples
 

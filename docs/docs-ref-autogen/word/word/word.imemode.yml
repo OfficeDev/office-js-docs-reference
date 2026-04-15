@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="word!Word.Interfaces.WindowData#imeMode:member">Word.Interfaces.WindowData.imeMode</xref>
+  - \[
+  [Word.Interfaces.WindowData.imeMode](/javascript/api/word/word.interfaces.windowdata#imemode-member)
+  \]
 
-  - <xref
-  href="word!Word.Interfaces.WindowUpdateData#imeMode:member">Word.Interfaces.WindowUpdateData.imeMode</xref>
+  - \[
+  [Word.Interfaces.WindowUpdateData.imeMode](/javascript/api/word/word.interfaces.windowupdatedata#imemode-member)
+  \]
 
-  - <xref href="word!Word.Window#imeMode:member">Word.Window.imeMode</xref>
+  - \[ [Word.Window.imeMode](/javascript/api/word/word.window#imemode-member) \]
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref
-  href="excel!Excel.CommentAddedEventArgs#commentDetails:member">Excel.CommentAddedEventArgs.commentDetails</xref>
+  - \[
+  [Excel.CommentAddedEventArgs.commentDetails](/javascript/api/excel/excel.commentaddedeventargs#commentdetails-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentChangedEventArgs#commentDetails:member">Excel.CommentChangedEventArgs.commentDetails</xref>
+  - \[
+  [Excel.CommentChangedEventArgs.commentDetails](/javascript/api/excel/excel.commentchangedeventargs#commentdetails-member)
+  \]
 
-  - <xref
-  href="excel!Excel.CommentDeletedEventArgs#commentDetails:member">Excel.CommentDeletedEventArgs.commentDetails</xref>
+  - \[
+  [Excel.CommentDeletedEventArgs.commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#commentdetails-member)
+  \]
 
 isPreview: false
 isDeprecated: false
