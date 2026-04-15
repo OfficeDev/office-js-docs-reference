@@ -12,15 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Comment#mentions:member" />
+  - <xref uid="excel!Excel.Comment#mentions:member"
+  alttext="Excel.Comment.mentions" />
 
-  - <xref uid="excel!Excel.CommentReply#mentions:member" />
+  - <xref uid="excel!Excel.CommentReply#mentions:member"
+  alttext="Excel.CommentReply.mentions" />
 
-  - <xref uid="excel!Excel.CommentRichContent#mentions:member" />
+  - <xref uid="excel!Excel.CommentRichContent#mentions:member"
+  alttext="Excel.CommentRichContent.mentions" />
 
-  - <xref uid="excel!Excel.Interfaces.CommentData#mentions:member" />
+  - <xref uid="excel!Excel.Interfaces.CommentData#mentions:member"
+  alttext="Excel.Interfaces.CommentData.mentions" />
 
-  - <xref uid="excel!Excel.Interfaces.CommentReplyData#mentions:member" />
+  - <xref uid="excel!Excel.Interfaces.CommentReplyData#mentions:member"
+  alttext="Excel.Interfaces.CommentReplyData.mentions" />
 
 isPreview: false
 isDeprecated: false

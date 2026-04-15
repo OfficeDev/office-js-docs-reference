@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.View#revisionsFilter:member" />
+  - <xref uid="word!Word.View#revisionsFilter:member"
+  alttext="Word.View.revisionsFilter" />
 
 isPreview: false
 isDeprecated: false

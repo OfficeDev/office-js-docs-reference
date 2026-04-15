@@ -20,35 +20,50 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentForm#optionalAttendees:member" />
+  - <xref uid="outlook!Office.AppointmentForm#optionalAttendees:member"
+  alttext="Office.AppointmentForm.optionalAttendees" />
 
-  - <xref uid="outlook!Office.AppointmentForm#requiredAttendees:member" />
+  - <xref uid="outlook!Office.AppointmentForm#requiredAttendees:member"
+  alttext="Office.AppointmentForm.requiredAttendees" />
 
-  - <xref uid="outlook!Office.AppointmentRead#optionalAttendees:member" />
+  - <xref uid="outlook!Office.AppointmentRead#optionalAttendees:member"
+  alttext="Office.AppointmentRead.optionalAttendees" />
 
-  - <xref uid="outlook!Office.AppointmentRead#organizer:member" />
+  - <xref uid="outlook!Office.AppointmentRead#organizer:member"
+  alttext="Office.AppointmentRead.organizer" />
 
-  - <xref uid="outlook!Office.AppointmentRead#requiredAttendees:member" />
+  - <xref uid="outlook!Office.AppointmentRead#requiredAttendees:member"
+  alttext="Office.AppointmentRead.requiredAttendees" />
 
-  - <xref uid="outlook!Office.MessageForm#bccRecipients:member" />
+  - <xref uid="outlook!Office.MessageForm#bccRecipients:member"
+  alttext="Office.MessageForm.bccRecipients" />
 
-  - <xref uid="outlook!Office.MessageForm#ccRecipients:member" />
+  - <xref uid="outlook!Office.MessageForm#ccRecipients:member"
+  alttext="Office.MessageForm.ccRecipients" />
 
-  - <xref uid="outlook!Office.MessageForm#toRecipients:member" />
+  - <xref uid="outlook!Office.MessageForm#toRecipients:member"
+  alttext="Office.MessageForm.toRecipients" />
 
-  - <xref uid="outlook!Office.MessageRead#cc:member" />
+  - <xref uid="outlook!Office.MessageRead#cc:member"
+  alttext="Office.MessageRead.cc" />
 
-  - <xref uid="outlook!Office.MessageRead#from:member" />
+  - <xref uid="outlook!Office.MessageRead#from:member"
+  alttext="Office.MessageRead.from" />
 
-  - <xref uid="outlook!Office.MessageRead#sender:member" />
+  - <xref uid="outlook!Office.MessageRead#sender:member"
+  alttext="Office.MessageRead.sender" />
 
-  - <xref uid="outlook!Office.MessageRead#to:member" />
+  - <xref uid="outlook!Office.MessageRead#to:member"
+  alttext="Office.MessageRead.to" />
 
-  - <xref uid="outlook!Office.Recipients#addAsync:member(1)" />
+  - <xref uid="outlook!Office.Recipients#addAsync:member(1)"
+  alttext="Office.Recipients.addAsync" />
 
-  - <xref uid="outlook!Office.Recipients#getAsync:member(1)" />
+  - <xref uid="outlook!Office.Recipients#getAsync:member(1)"
+  alttext="Office.Recipients.getAsync" />
 
-  - <xref uid="outlook!Office.Recipients#setAsync:member(1)" />
+  - <xref uid="outlook!Office.Recipients#setAsync:member(1)"
+  alttext="Office.Recipients.setAsync" />
 
 isPreview: false
 isDeprecated: false

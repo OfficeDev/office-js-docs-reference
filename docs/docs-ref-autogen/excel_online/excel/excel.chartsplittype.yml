@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#splitType:member" />
+  - <xref uid="excel!Excel.ChartSeries#splitType:member"
+  alttext="Excel.ChartSeries.splitType" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#splitType:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#splitType:member"
+  alttext="Excel.Interfaces.ChartSeriesData.splitType" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member"
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.splitType" />
 
 isPreview: false
 isDeprecated: false

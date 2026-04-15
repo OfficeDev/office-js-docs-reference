@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.WorkbookProtectionData
 summary: >-
   An interface describing the data returned by calling
   `workbookProtection.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#protection:member" />
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#protection:member"
+  alttext="Excel.Interfaces.WorkbookData.protection" />
 
 isPreview: false
 isDeprecated: false

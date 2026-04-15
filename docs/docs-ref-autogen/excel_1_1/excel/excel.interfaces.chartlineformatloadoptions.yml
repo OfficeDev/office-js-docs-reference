@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member"
+  alttext="Excel.Interfaces.ChartAxisFormatLoadOptions.line" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member" />
+  uid="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member"
+  alttext="Excel.Interfaces.ChartGridlinesFormatLoadOptions.line" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesFormatLoadOptions.line" />
 
 isPreview: false
 isDeprecated: false

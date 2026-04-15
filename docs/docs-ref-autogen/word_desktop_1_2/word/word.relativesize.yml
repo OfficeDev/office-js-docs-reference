@@ -17,19 +17,24 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeData#relativeHorizontalSize:member" />
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeHorizontalSize:member"
+  alttext="Word.Interfaces.ShapeData.relativeHorizontalSize" />
 
-  - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalSize:member" />
+  - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalSize:member"
+  alttext="Word.Interfaces.ShapeData.relativeVerticalSize" />
 
   - <xref
-  uid="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member" />
+  uid="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member"
+  alttext="Word.Interfaces.ShapeUpdateData.relativeHorizontalSize" />
 
   - <xref uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member"
-  />
+  alttext="Word.Interfaces.ShapeUpdateData.relativeVerticalSize" />
 
-  - <xref uid="word!Word.Shape#relativeHorizontalSize:member" />
+  - <xref uid="word!Word.Shape#relativeHorizontalSize:member"
+  alttext="Word.Shape.relativeHorizontalSize" />
 
-  - <xref uid="word!Word.Shape#relativeVerticalSize:member" />
+  - <xref uid="word!Word.Shape#relativeVerticalSize:member"
+  alttext="Word.Shape.relativeVerticalSize" />
 
   #### Examples
 

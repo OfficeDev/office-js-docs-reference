@@ -13,31 +13,44 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#parentTableCell:member" />
+  - <xref uid="word!Word.ContentControl#parentTableCell:member"
+  alttext="Word.ContentControl.parentTableCell" />
 
-  - <xref uid="word!Word.ContentControl#parentTableCellOrNullObject:member" />
+  - <xref uid="word!Word.ContentControl#parentTableCellOrNullObject:member"
+  alttext="Word.ContentControl.parentTableCellOrNullObject" />
 
-  - <xref uid="word!Word.Field#parentTableCell:member" />
+  - <xref uid="word!Word.Field#parentTableCell:member"
+  alttext="Word.Field.parentTableCell" />
 
-  - <xref uid="word!Word.Field#parentTableCellOrNullObject:member" />
+  - <xref uid="word!Word.Field#parentTableCellOrNullObject:member"
+  alttext="Word.Field.parentTableCellOrNullObject" />
 
-  - <xref uid="word!Word.InlinePicture#parentTableCell:member" />
+  - <xref uid="word!Word.InlinePicture#parentTableCell:member"
+  alttext="Word.InlinePicture.parentTableCell" />
 
-  - <xref uid="word!Word.InlinePicture#parentTableCellOrNullObject:member" />
+  - <xref uid="word!Word.InlinePicture#parentTableCellOrNullObject:member"
+  alttext="Word.InlinePicture.parentTableCellOrNullObject" />
 
-  - <xref uid="word!Word.Paragraph#parentTableCell:member" />
+  - <xref uid="word!Word.Paragraph#parentTableCell:member"
+  alttext="Word.Paragraph.parentTableCell" />
 
-  - <xref uid="word!Word.Paragraph#parentTableCellOrNullObject:member" />
+  - <xref uid="word!Word.Paragraph#parentTableCellOrNullObject:member"
+  alttext="Word.Paragraph.parentTableCellOrNullObject" />
 
-  - <xref uid="word!Word.Range#parentTableCell:member" />
+  - <xref uid="word!Word.Range#parentTableCell:member"
+  alttext="Word.Range.parentTableCell" />
 
-  - <xref uid="word!Word.Range#parentTableCellOrNullObject:member" />
+  - <xref uid="word!Word.Range#parentTableCellOrNullObject:member"
+  alttext="Word.Range.parentTableCellOrNullObject" />
 
-  - <xref uid="word!Word.Table#parentTableCell:member" />
+  - <xref uid="word!Word.Table#parentTableCell:member"
+  alttext="Word.Table.parentTableCell" />
 
-  - <xref uid="word!Word.Table#parentTableCellOrNullObject:member" />
+  - <xref uid="word!Word.Table#parentTableCellOrNullObject:member"
+  alttext="Word.Table.parentTableCellOrNullObject" />
 
-  - <xref uid="word!Word.TableCellCollection#items:member" />
+  - <xref uid="word!Word.TableCellCollection#items:member"
+  alttext="Word.TableCellCollection.items" />
 
   #### Examples
 

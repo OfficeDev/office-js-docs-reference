@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#notes:member" />
+  - <xref uid="excel!Excel.Workbook#notes:member" alttext="Excel.Workbook.notes"
+  />
 
-  - <xref uid="excel!Excel.Worksheet#notes:member" />
+  - <xref uid="excel!Excel.Worksheet#notes:member"
+  alttext="Excel.Worksheet.notes" />
 
   #### Examples
 

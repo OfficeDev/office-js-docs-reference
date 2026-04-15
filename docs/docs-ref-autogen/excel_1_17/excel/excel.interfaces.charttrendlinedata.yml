@@ -10,14 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#trendlines:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#trendlines:member"
+  alttext="Excel.Interfaces.ChartSeriesData.trendlines" />
 
   - <xref uid="excel!Excel.Interfaces.ChartTrendlineCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

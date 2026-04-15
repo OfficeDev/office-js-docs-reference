@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkAnalysisWord#strokePointers:member" />
+  - <xref uid="onenote!OneNote.InkAnalysisWord#strokePointers:member"
+  alttext="OneNote.InkAnalysisWord.strokePointers" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers:member" />
+  uid="onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers:member"
+  alttext="OneNote.Interfaces.InkAnalysisWordData.strokePointers" />
 
 isPreview: false
 isDeprecated: false

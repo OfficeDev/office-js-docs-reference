@@ -6,11 +6,15 @@ fullName: Word.Interfaces.XmlNodeData
 summary: >-
   An interface describing the data returned by calling `xmlNode.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.XmlNodeCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.XmlNodeCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.XmlNodeCollectionData#items:member"
+  alttext="Word.Interfaces.XmlNodeCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.XmlNodeCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.XmlNodeCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

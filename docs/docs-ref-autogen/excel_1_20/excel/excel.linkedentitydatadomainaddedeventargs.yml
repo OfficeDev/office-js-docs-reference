@@ -19,6 +19,7 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member"
+  alttext="Excel.LinkedEntityDataDomainCollection.onLinkedEntityDataDomainAdded"
   />
 
 isPreview: false

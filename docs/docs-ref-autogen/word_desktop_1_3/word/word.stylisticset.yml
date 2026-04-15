@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#stylisticSet:member" />
+  - <xref uid="word!Word.Font#stylisticSet:member"
+  alttext="Word.Font.stylisticSet" />
 
-  - <xref uid="word!Word.Interfaces.FontData#stylisticSet:member" />
+  - <xref uid="word!Word.Interfaces.FontData#stylisticSet:member"
+  alttext="Word.Interfaces.FontData.stylisticSet" />
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#stylisticSet:member" />
+  - <xref uid="word!Word.Interfaces.FontUpdateData#stylisticSet:member"
+  alttext="Word.Interfaces.FontUpdateData.stylisticSet" />
 
 isPreview: false
 isDeprecated: false

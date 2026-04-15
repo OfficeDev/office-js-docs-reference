@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#alignment:member" />
+  - <xref uid="excel!Excel.ChartAxis#alignment:member"
+  alttext="Excel.ChartAxis.alignment" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#alignment:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#alignment:member"
+  alttext="Excel.Interfaces.ChartAxisData.alignment" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#alignment:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#alignment:member"
+  alttext="Excel.Interfaces.ChartAxisUpdateData.alignment" />
 
 isPreview: false
 isDeprecated: false

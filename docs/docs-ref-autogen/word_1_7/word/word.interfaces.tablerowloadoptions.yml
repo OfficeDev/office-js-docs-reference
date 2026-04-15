@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member" />
+  uid="word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member"
+  alttext="Word.Interfaces.TableCellCollectionLoadOptions.parentRow" />
 
-  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#parentRow:member" />
+  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#parentRow:member"
+  alttext="Word.Interfaces.TableCellLoadOptions.parentRow" />
 
 isPreview: false
 isDeprecated: false

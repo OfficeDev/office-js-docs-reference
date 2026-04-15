@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.ExtensionLifeCycle#taskpane:member" />
+  - <xref uid="office!Office.ExtensionLifeCycle#taskpane:member"
+  alttext="Office.ExtensionLifeCycle.taskpane" />
 
   #### Examples
 

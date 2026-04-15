@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.NamedSheetViewCollection#items:member" />
+  - <xref uid="excel!Excel.NamedSheetViewCollection#items:member"
+  alttext="Excel.NamedSheetViewCollection.items" />
 
 isPreview: false
 isDeprecated: false

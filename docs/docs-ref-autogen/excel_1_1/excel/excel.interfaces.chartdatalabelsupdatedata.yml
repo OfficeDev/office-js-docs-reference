@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartDataLabelsUpdateData
 summary: >-
   An interface for updating data on the `ChartDataLabels` object, for use in
   `chartDataLabels.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#dataLabels:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#dataLabels:member"
+  alttext="Excel.Interfaces.ChartUpdateData.dataLabels" />
 
 isPreview: false
 isDeprecated: false

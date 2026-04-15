@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.NamedItem#arrayValues:member" />
+  - <xref uid="excel!Excel.NamedItem#arrayValues:member"
+  alttext="Excel.NamedItem.arrayValues" />
 
 isPreview: false
 isDeprecated: false

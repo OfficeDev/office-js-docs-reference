@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Paragraph#inkWords:member" />
+  - <xref uid="onenote!OneNote.Paragraph#inkWords:member"
+  alttext="OneNote.Paragraph.inkWords" />
 
 isPreview: false
 isDeprecated: false

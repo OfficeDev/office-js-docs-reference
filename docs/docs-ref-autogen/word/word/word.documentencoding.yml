@@ -12,27 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#openEncoding:member" />
+  - <xref uid="word!Word.Document#openEncoding:member"
+  alttext="Word.Document.openEncoding" />
 
-  - <xref uid="word!Word.Document#saveEncoding:member" />
+  - <xref uid="word!Word.Document#saveEncoding:member"
+  alttext="Word.Document.saveEncoding" />
 
-  - <xref uid="word!Word.Document#textEncoding:member" />
+  - <xref uid="word!Word.Document#textEncoding:member"
+  alttext="Word.Document.textEncoding" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#openEncoding:member" />
+  - <xref uid="word!Word.Interfaces.DocumentData#openEncoding:member"
+  alttext="Word.Interfaces.DocumentData.openEncoding" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#saveEncoding:member" />
+  - <xref uid="word!Word.Interfaces.DocumentData#saveEncoding:member"
+  alttext="Word.Interfaces.DocumentData.saveEncoding" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#textEncoding:member" />
+  - <xref uid="word!Word.Interfaces.DocumentData#textEncoding:member"
+  alttext="Word.Interfaces.DocumentData.textEncoding" />
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#saveEncoding:member" />
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#saveEncoding:member"
+  alttext="Word.Interfaces.DocumentUpdateData.saveEncoding" />
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#textEncoding:member" />
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#textEncoding:member"
+  alttext="Word.Interfaces.DocumentUpdateData.textEncoding" />
 
-  - <xref uid="word!Word.Interfaces.WebSettingsData#encoding:member" />
+  - <xref uid="word!Word.Interfaces.WebSettingsData#encoding:member"
+  alttext="Word.Interfaces.WebSettingsData.encoding" />
 
-  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#encoding:member" />
+  - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#encoding:member"
+  alttext="Word.Interfaces.WebSettingsUpdateData.encoding" />
 
-  - <xref uid="word!Word.WebSettings#encoding:member" />
+  - <xref uid="word!Word.WebSettings#encoding:member"
+  alttext="Word.WebSettings.encoding" />
 
 isPreview: false
 isDeprecated: false

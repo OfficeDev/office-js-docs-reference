@@ -4,12 +4,15 @@ uid: office!Office.CustomXmlParts:interface
 package: office!
 fullName: Office.CustomXmlParts
 summary: Represents a collection of CustomXmlPart objects.
-remarks: |-
+remarks: >-
   **Applications**: Word
+
 
   #### Used by
 
-  - <xref uid="office!Office.Document#customXmlParts:member" />
+
+  - <xref uid="office!Office.Document#customXmlParts:member"
+  alttext="Office.Document.customXmlParts" />
 
 isPreview: false
 isDeprecated: false

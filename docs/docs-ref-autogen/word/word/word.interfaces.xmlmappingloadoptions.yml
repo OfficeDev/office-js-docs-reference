@@ -19,28 +19,31 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#xmlMapping:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.xmlMapping"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#xmlMapping:member"
-  />
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.xmlMapping" />
 
   - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#xmlMapping:member"
-  />
+  alttext="Word.Interfaces.ContentControlLoadOptions.xmlMapping" />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#xmlMapping:member"
-  />
+  alttext="Word.Interfaces.DatePickerContentControlLoadOptions.xmlMapping" />
 
   - <xref
-  uid="word!Word.Interfaces.GroupContentControlLoadOptions#xmlMapping:member" />
+  uid="word!Word.Interfaces.GroupContentControlLoadOptions#xmlMapping:member"
+  alttext="Word.Interfaces.GroupContentControlLoadOptions.xmlMapping" />
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlLoadOptions#xmlMapping:member"
-  />
+  alttext="Word.Interfaces.PictureContentControlLoadOptions.xmlMapping" />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#xmlMapping:member"
+  alttext="Word.Interfaces.RepeatingSectionContentControlLoadOptions.xmlMapping"
   />
 
 isPreview: false

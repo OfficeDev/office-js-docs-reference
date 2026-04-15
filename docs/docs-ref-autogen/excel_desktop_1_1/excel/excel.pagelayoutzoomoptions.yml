@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#zoom:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#zoom:member"
+  alttext="Excel.Interfaces.PageLayoutData.zoom" />
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member"
+  alttext="Excel.Interfaces.PageLayoutUpdateData.zoom" />
 
-  - <xref uid="excel!Excel.PageLayout#zoom:member" />
+  - <xref uid="excel!Excel.PageLayout#zoom:member"
+  alttext="Excel.PageLayout.zoom" />
 
 isPreview: false
 isDeprecated: false

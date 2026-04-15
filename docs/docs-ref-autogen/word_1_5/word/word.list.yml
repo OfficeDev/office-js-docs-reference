@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ListCollection#items:member" />
+  - <xref uid="word!Word.ListCollection#items:member"
+  alttext="Word.ListCollection.items" />
 
-  - <xref uid="word!Word.Paragraph#list:member" />
+  - <xref uid="word!Word.Paragraph#list:member" alttext="Word.Paragraph.list" />
 
-  - <xref uid="word!Word.Paragraph#listOrNullObject:member" />
+  - <xref uid="word!Word.Paragraph#listOrNullObject:member"
+  alttext="Word.Paragraph.listOrNullObject" />
 
   #### Examples
 

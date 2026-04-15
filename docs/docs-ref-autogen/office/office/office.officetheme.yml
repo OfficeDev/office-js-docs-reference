@@ -45,7 +45,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#officeTheme:member" />
+  - <xref uid="office!Office.Context#officeTheme:member"
+  alttext="Office.Context.officeTheme" />
 
   #### Examples
 

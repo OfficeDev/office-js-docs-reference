@@ -12,12 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ColorFormat#objectThemeColor:member" />
+  - <xref uid="word!Word.ColorFormat#objectThemeColor:member"
+  alttext="Word.ColorFormat.objectThemeColor" />
 
-  - <xref uid="word!Word.Interfaces.ColorFormatData#objectThemeColor:member" />
+  - <xref uid="word!Word.Interfaces.ColorFormatData#objectThemeColor:member"
+  alttext="Word.Interfaces.ColorFormatData.objectThemeColor" />
 
   - <xref
-  uid="word!Word.Interfaces.ColorFormatUpdateData#objectThemeColor:member" />
+  uid="word!Word.Interfaces.ColorFormatUpdateData#objectThemeColor:member"
+  alttext="Word.Interfaces.ColorFormatUpdateData.objectThemeColor" />
 
 isPreview: false
 isDeprecated: false

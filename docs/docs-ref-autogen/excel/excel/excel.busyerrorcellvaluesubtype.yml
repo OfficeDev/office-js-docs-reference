@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BusyErrorCellValue#errorSubType:member" />
+  - <xref uid="excel!Excel.BusyErrorCellValue#errorSubType:member"
+  alttext="Excel.BusyErrorCellValue.errorSubType" />
 
 isPreview: false
 isDeprecated: false

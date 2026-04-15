@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.NoteCollection#items:member" />
+  - <xref uid="excel!Excel.NoteCollection#items:member"
+  alttext="Excel.NoteCollection.items" />
 
   #### Examples
 

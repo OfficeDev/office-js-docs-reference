@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableAutoFormatOptions#format:member" />
+  - <xref uid="word!Word.TableAutoFormatOptions#format:member"
+  alttext="Word.TableAutoFormatOptions.format" />
 
 isPreview: false
 isDeprecated: false

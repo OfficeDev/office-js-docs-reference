@@ -15,13 +15,15 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#slideMaster:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideCollectionLoadOptions.slideMaster" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#slideMaster:member" />
+  uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#slideMaster:member"
+  alttext="PowerPoint.Interfaces.SlideLoadOptions.slideMaster" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#slideMaster:member"
+  alttext="PowerPoint.Interfaces.SlideScopedCollectionLoadOptions.slideMaster"
   />
 
 isPreview: false

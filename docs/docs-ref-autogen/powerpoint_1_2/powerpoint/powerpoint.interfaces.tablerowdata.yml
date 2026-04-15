@@ -11,11 +11,12 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableRowCollectionData#items:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TableRowCollectionData#items:member"
+  alttext="PowerPoint.Interfaces.TableRowCollectionData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TableRowCollectionUpdateData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.TableRowCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

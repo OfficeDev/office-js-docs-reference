@@ -18,12 +18,14 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalPosition:member"
-  />
+  alttext="Word.Interfaces.ShapeData.relativeVerticalPosition" />
 
   - <xref
-  uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member" />
+  uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member"
+  alttext="Word.Interfaces.ShapeUpdateData.relativeVerticalPosition" />
 
-  - <xref uid="word!Word.Shape#relativeVerticalPosition:member" />
+  - <xref uid="word!Word.Shape#relativeVerticalPosition:member"
+  alttext="Word.Shape.relativeVerticalPosition" />
 
   #### Examples
 

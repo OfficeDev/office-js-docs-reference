@@ -14,15 +14,18 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsData#style:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsData#style:member"
+  alttext="PowerPoint.Interfaces.TableStyleSettingsData.style" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData#style:member"
-  />
+  alttext="PowerPoint.Interfaces.TableStyleSettingsUpdateData.style" />
 
-  - <xref uid="powerpoint!PowerPoint.TableAddOptions#style:member" />
+  - <xref uid="powerpoint!PowerPoint.TableAddOptions#style:member"
+  alttext="PowerPoint.TableAddOptions.style" />
 
-  - <xref uid="powerpoint!PowerPoint.TableStyleSettings#style:member" />
+  - <xref uid="powerpoint!PowerPoint.TableStyleSettings#style:member"
+  alttext="PowerPoint.TableStyleSettings.style" />
 
 isPreview: false
 isDeprecated: false

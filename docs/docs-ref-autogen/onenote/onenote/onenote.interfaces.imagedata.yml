@@ -4,11 +4,15 @@ uid: onenote!OneNote.Interfaces.ImageData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ImageData
 summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentData#image:member" />
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#image:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.PageContentData#image:member"
+  alttext="OneNote.Interfaces.PageContentData.image" />
+
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#image:member"
+  alttext="OneNote.Interfaces.ParagraphData.image" />
 
 isPreview: false
 isDeprecated: false

@@ -11,7 +11,7 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CommentReplyUpdateData#parentComment:member"
-  />
+  alttext="Word.Interfaces.CommentReplyUpdateData.parentComment" />
 
 isPreview: false
 isDeprecated: false

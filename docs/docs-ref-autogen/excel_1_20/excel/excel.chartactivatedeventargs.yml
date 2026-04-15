@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#onActivated:member" />
+  - <xref uid="excel!Excel.Chart#onActivated:member"
+  alttext="Excel.Chart.onActivated" />
 
-  - <xref uid="excel!Excel.ChartCollection#onActivated:member" />
+  - <xref uid="excel!Excel.ChartCollection#onActivated:member"
+  alttext="Excel.ChartCollection.onActivated" />
 
 isPreview: false
 isDeprecated: false

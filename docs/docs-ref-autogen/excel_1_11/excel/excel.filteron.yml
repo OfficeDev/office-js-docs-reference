@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterCriteria#filterOn:member" />
+  - <xref uid="excel!Excel.FilterCriteria#filterOn:member"
+  alttext="Excel.FilterCriteria.filterOn" />
 
   #### Examples
 

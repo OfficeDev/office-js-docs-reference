@@ -14,10 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#buildingBlockGalleryContentControl:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.buildingBlockGalleryContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#buildingBlockGalleryContentControl:member"
+  alttext="Word.Interfaces.ContentControlLoadOptions.buildingBlockGalleryContentControl"
   />
 
 isPreview: false

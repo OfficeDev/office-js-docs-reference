@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlPart#namespaceManager:member" />
+  - <xref uid="word!Word.CustomXmlPart#namespaceManager:member"
+  alttext="Word.CustomXmlPart.namespaceManager" />
 
 isPreview: false
 isDeprecated: false

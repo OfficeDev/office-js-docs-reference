@@ -11,16 +11,18 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member" />
+  uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member"
+  alttext="OneNote.Interfaces.InkAnalysisLineCollectionData.items" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData#items:member"
-  />
+  alttext="OneNote.Interfaces.InkAnalysisLineCollectionUpdateData.items" />
 
   - <xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines:member"
-  />
+  alttext="OneNote.Interfaces.InkAnalysisParagraphData.lines" />
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData#line:member" />
+  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData#line:member"
+  alttext="OneNote.Interfaces.InkAnalysisWordData.line" />
 
 isPreview: false
 isDeprecated: false

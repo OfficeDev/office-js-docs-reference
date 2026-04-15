@@ -30,7 +30,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#goToByIdAsync:member(1)" />
+  - <xref uid="office!Office.Document#goToByIdAsync:member(1)"
+  alttext="Office.Document.goToByIdAsync" />
 
 isPreview: false
 isDeprecated: false

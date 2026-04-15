@@ -6,10 +6,12 @@ fullName: Office.GetFileOptions
 summary: >-
   Provides options for setting the size of slices that the document will be
   divided into.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.Document#getFileAsync:member(1)" />
+
+  - <xref uid="office!Office.Document#getFileAsync:member(1)"
+  alttext="Office.Document.getFileAsync" />
 
 isPreview: false
 isDeprecated: false

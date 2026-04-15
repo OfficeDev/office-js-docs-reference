@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetProtectionData#options:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetProtectionData#options:member"
+  alttext="Excel.Interfaces.WorksheetProtectionData.options" />
 
-  - <xref uid="excel!Excel.WorksheetProtection#options:member" />
+  - <xref uid="excel!Excel.WorksheetProtection#options:member"
+  alttext="Excel.WorksheetProtection.options" />
 
 isPreview: false
 isDeprecated: false

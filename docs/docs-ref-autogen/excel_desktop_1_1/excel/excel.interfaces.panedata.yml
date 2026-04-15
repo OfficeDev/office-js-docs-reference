@@ -4,13 +4,21 @@ uid: excel!Excel.Interfaces.PaneData:interface
 package: excel!
 fullName: Excel.Interfaces.PaneData
 summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.PaneCollectionData#items:member" />
-  - <xref uid="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member" />
-  - <xref uid="excel!Excel.Interfaces.WindowData#activePane:member" />
-  - <xref uid="excel!Excel.Interfaces.WindowData#panes:member" />
+
+  - <xref uid="excel!Excel.Interfaces.PaneCollectionData#items:member"
+  alttext="Excel.Interfaces.PaneCollectionData.items" />
+
+  - <xref uid="excel!Excel.Interfaces.PaneCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.PaneCollectionUpdateData.items" />
+
+  - <xref uid="excel!Excel.Interfaces.WindowData#activePane:member"
+  alttext="Excel.Interfaces.WindowData.activePane" />
+
+  - <xref uid="excel!Excel.Interfaces.WindowData#panes:member"
+  alttext="Excel.Interfaces.WindowData.panes" />
 
 isPreview: false
 isDeprecated: false

@@ -18,33 +18,44 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentContentControl:member" />
+  - <xref uid="word!Word.Body#parentContentControl:member"
+  alttext="Word.Body.parentContentControl" />
 
-  - <xref uid="word!Word.Body#parentContentControlOrNullObject:member" />
+  - <xref uid="word!Word.Body#parentContentControlOrNullObject:member"
+  alttext="Word.Body.parentContentControlOrNullObject" />
 
-  - <xref uid="word!Word.ContentControl#parentContentControl:member" />
+  - <xref uid="word!Word.ContentControl#parentContentControl:member"
+  alttext="Word.ContentControl.parentContentControl" />
 
   - <xref uid="word!Word.ContentControl#parentContentControlOrNullObject:member"
-  />
+  alttext="Word.ContentControl.parentContentControlOrNullObject" />
 
-  - <xref uid="word!Word.ContentControlCollection#items:member" />
+  - <xref uid="word!Word.ContentControlCollection#items:member"
+  alttext="Word.ContentControlCollection.items" />
 
-  - <xref uid="word!Word.InlinePicture#parentContentControl:member" />
+  - <xref uid="word!Word.InlinePicture#parentContentControl:member"
+  alttext="Word.InlinePicture.parentContentControl" />
 
   - <xref uid="word!Word.InlinePicture#parentContentControlOrNullObject:member"
-  />
+  alttext="Word.InlinePicture.parentContentControlOrNullObject" />
 
-  - <xref uid="word!Word.Paragraph#parentContentControl:member" />
+  - <xref uid="word!Word.Paragraph#parentContentControl:member"
+  alttext="Word.Paragraph.parentContentControl" />
 
-  - <xref uid="word!Word.Paragraph#parentContentControlOrNullObject:member" />
+  - <xref uid="word!Word.Paragraph#parentContentControlOrNullObject:member"
+  alttext="Word.Paragraph.parentContentControlOrNullObject" />
 
-  - <xref uid="word!Word.Range#parentContentControl:member" />
+  - <xref uid="word!Word.Range#parentContentControl:member"
+  alttext="Word.Range.parentContentControl" />
 
-  - <xref uid="word!Word.Range#parentContentControlOrNullObject:member" />
+  - <xref uid="word!Word.Range#parentContentControlOrNullObject:member"
+  alttext="Word.Range.parentContentControlOrNullObject" />
 
-  - <xref uid="word!Word.Table#parentContentControl:member" />
+  - <xref uid="word!Word.Table#parentContentControl:member"
+  alttext="Word.Table.parentContentControl" />
 
-  - <xref uid="word!Word.Table#parentContentControlOrNullObject:member" />
+  - <xref uid="word!Word.Table#parentContentControlOrNullObject:member"
+  alttext="Word.Table.parentContentControlOrNullObject" />
 
   #### Examples
 

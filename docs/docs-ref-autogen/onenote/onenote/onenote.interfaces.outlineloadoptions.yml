@@ -14,17 +14,17 @@ remarks: >-
 
   - <xref
   uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member"
-  />
+  alttext="OneNote.Interfaces.PageContentCollectionLoadOptions.outline" />
 
   - <xref uid="onenote!OneNote.Interfaces.PageContentLoadOptions#outline:member"
-  />
+  alttext="OneNote.Interfaces.PageContentLoadOptions.outline" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#outline:member"
-  />
+  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.outline" />
 
   - <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#outline:member"
-  />
+  alttext="OneNote.Interfaces.ParagraphLoadOptions.outline" />
 
 isPreview: false
 isDeprecated: false

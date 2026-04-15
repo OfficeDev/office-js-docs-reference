@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#gradientStyle:member" />
+  - <xref uid="word!Word.FillFormat#gradientStyle:member"
+  alttext="Word.FillFormat.gradientStyle" />
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#gradientStyle:member" />
+  - <xref uid="word!Word.Interfaces.FillFormatData#gradientStyle:member"
+  alttext="Word.Interfaces.FillFormatData.gradientStyle" />
 
 isPreview: false
 isDeprecated: false

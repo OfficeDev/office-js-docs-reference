@@ -14,11 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CoauthoringLock#type:member" />
+  - <xref uid="word!Word.CoauthoringLock#type:member"
+  alttext="Word.CoauthoringLock.type" />
 
-  - <xref uid="word!Word.CoauthoringLockAddOptions#type:member" />
+  - <xref uid="word!Word.CoauthoringLockAddOptions#type:member"
+  alttext="Word.CoauthoringLockAddOptions.type" />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringLockData#type:member" />
+  - <xref uid="word!Word.Interfaces.CoauthoringLockData#type:member"
+  alttext="Word.Interfaces.CoauthoringLockData.type" />
 
 isPreview: false
 isDeprecated: false

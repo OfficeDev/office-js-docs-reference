@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartTrendline#type:member" />
+  - <xref uid="excel!Excel.ChartTrendline#type:member"
+  alttext="Excel.ChartTrendline.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartTrendlineData#type:member"
+  alttext="Excel.Interfaces.ChartTrendlineData.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member"
+  alttext="Excel.Interfaces.ChartTrendlineUpdateData.type" />
 
 isPreview: false
 isDeprecated: false

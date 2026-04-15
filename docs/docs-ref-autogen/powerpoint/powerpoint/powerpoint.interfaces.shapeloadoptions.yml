@@ -14,20 +14,23 @@ remarks: >-
 
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.GraphicLoadOptions#shape:member"
-  />
+  alttext="PowerPoint.Interfaces.GraphicLoadOptions.shape" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#parentGroup:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.parentGroup" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#shape:member" />
+  uid="powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#shape:member"
+  alttext="PowerPoint.Interfaces.ShapeGroupLoadOptions.shape" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#parentGroup:member" />
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#parentGroup:member"
+  alttext="PowerPoint.Interfaces.ShapeLoadOptions.parentGroup" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#parentGroup:member"
+  alttext="PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.parentGroup"
   />
 
 isPreview: false

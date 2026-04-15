@@ -13,38 +13,52 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#alignment:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphData#alignment:member"
+  alttext="Word.Interfaces.ParagraphData.alignment" />
 
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#alignment:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#alignment:member"
+  alttext="Word.Interfaces.ParagraphUpdateData.alignment" />
 
-  - <xref uid="word!Word.Interfaces.TableCellData#horizontalAlignment:member" />
-
-  - <xref
-  uid="word!Word.Interfaces.TableCellUpdateData#horizontalAlignment:member" />
-
-  - <xref uid="word!Word.Interfaces.TableData#alignment:member" />
-
-  - <xref uid="word!Word.Interfaces.TableData#horizontalAlignment:member" />
-
-  - <xref uid="word!Word.Interfaces.TableRowData#horizontalAlignment:member" />
+  - <xref uid="word!Word.Interfaces.TableCellData#horizontalAlignment:member"
+  alttext="Word.Interfaces.TableCellData.horizontalAlignment" />
 
   - <xref
-  uid="word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member" />
+  uid="word!Word.Interfaces.TableCellUpdateData#horizontalAlignment:member"
+  alttext="Word.Interfaces.TableCellUpdateData.horizontalAlignment" />
 
-  - <xref uid="word!Word.Interfaces.TableUpdateData#alignment:member" />
+  - <xref uid="word!Word.Interfaces.TableData#alignment:member"
+  alttext="Word.Interfaces.TableData.alignment" />
+
+  - <xref uid="word!Word.Interfaces.TableData#horizontalAlignment:member"
+  alttext="Word.Interfaces.TableData.horizontalAlignment" />
+
+  - <xref uid="word!Word.Interfaces.TableRowData#horizontalAlignment:member"
+  alttext="Word.Interfaces.TableRowData.horizontalAlignment" />
+
+  - <xref
+  uid="word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member"
+  alttext="Word.Interfaces.TableRowUpdateData.horizontalAlignment" />
+
+  - <xref uid="word!Word.Interfaces.TableUpdateData#alignment:member"
+  alttext="Word.Interfaces.TableUpdateData.alignment" />
 
   - <xref uid="word!Word.Interfaces.TableUpdateData#horizontalAlignment:member"
+  alttext="Word.Interfaces.TableUpdateData.horizontalAlignment" />
+
+  - <xref uid="word!Word.Paragraph#alignment:member"
+  alttext="Word.Paragraph.alignment" />
+
+  - <xref uid="word!Word.Table#alignment:member" alttext="Word.Table.alignment"
   />
 
-  - <xref uid="word!Word.Paragraph#alignment:member" />
+  - <xref uid="word!Word.Table#horizontalAlignment:member"
+  alttext="Word.Table.horizontalAlignment" />
 
-  - <xref uid="word!Word.Table#alignment:member" />
+  - <xref uid="word!Word.TableCell#horizontalAlignment:member"
+  alttext="Word.TableCell.horizontalAlignment" />
 
-  - <xref uid="word!Word.Table#horizontalAlignment:member" />
-
-  - <xref uid="word!Word.TableCell#horizontalAlignment:member" />
-
-  - <xref uid="word!Word.TableRow#horizontalAlignment:member" />
+  - <xref uid="word!Word.TableRow#horizontalAlignment:member"
+  alttext="Word.TableRow.horizontalAlignment" />
 
   #### Examples
 

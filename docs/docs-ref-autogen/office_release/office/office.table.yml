@@ -8,10 +8,12 @@ summary: >-
   parameter of [table formatting
   methods](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.RangeFormatConfiguration#cells:member" />
+
+  - <xref uid="office!Office.RangeFormatConfiguration#cells:member"
+  alttext="Office.RangeFormatConfiguration.cells" />
 
 isPreview: false
 isDeprecated: false

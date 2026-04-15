@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Page#view:member" />
+  - <xref uid="visio!Visio.Page#view:member" alttext="Visio.Page.view" />
 
 isPreview: false
 isDeprecated: false

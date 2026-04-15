@@ -4,11 +4,15 @@ uid: word!Word.Interfaces.TableData:interface
 package: word!
 fullName: Word.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.TableCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.TableCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.TableCollectionData#items:member"
+  alttext="Word.Interfaces.TableCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.TableCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.TableCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

@@ -18,9 +18,11 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData#type:member" />
+  uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData#type:member"
+  alttext="PowerPoint.Interfaces.SlideBackgroundFillData.type" />
 
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundFill#type:member" />
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundFill#type:member"
+  alttext="PowerPoint.SlideBackgroundFill.type" />
 
   #### Examples
 

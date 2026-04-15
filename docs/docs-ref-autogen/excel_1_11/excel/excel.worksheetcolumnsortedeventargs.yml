@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onColumnSorted:member" />
+  - <xref uid="excel!Excel.Worksheet#onColumnSorted:member"
+  alttext="Excel.Worksheet.onColumnSorted" />
 
-  - <xref uid="excel!Excel.WorksheetCollection#onColumnSorted:member" />
+  - <xref uid="excel!Excel.WorksheetCollection#onColumnSorted:member"
+  alttext="Excel.WorksheetCollection.onColumnSorted" />
 
 isPreview: false
 isDeprecated: false

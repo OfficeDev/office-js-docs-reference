@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#comments:member" />
+  - <xref uid="excel!Excel.Workbook#comments:member"
+  alttext="Excel.Workbook.comments" />
 
-  - <xref uid="excel!Excel.Worksheet#comments:member" />
+  - <xref uid="excel!Excel.Worksheet#comments:member"
+  alttext="Excel.Worksheet.comments" />
 
 isPreview: false
 isDeprecated: false

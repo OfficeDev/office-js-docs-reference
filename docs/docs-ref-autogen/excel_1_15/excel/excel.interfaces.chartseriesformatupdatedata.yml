@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartSeriesFormat` object, for use in
   `chartSeriesFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#format:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#format:member"
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.format" />
 
 isPreview: false
 isDeprecated: false

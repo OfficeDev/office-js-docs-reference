@@ -6,10 +6,12 @@ fullName: OneNote.Interfaces.RichTextData
 summary: >-
   An interface describing the data returned by calling `richText.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#richText:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#richText:member"
+  alttext="OneNote.Interfaces.ParagraphData.richText" />
 
 isPreview: false
 isDeprecated: false

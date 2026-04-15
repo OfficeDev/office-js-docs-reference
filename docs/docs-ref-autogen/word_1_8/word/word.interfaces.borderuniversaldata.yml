@@ -11,10 +11,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BorderUniversalCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.BorderUniversalCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.BorderUniversalCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

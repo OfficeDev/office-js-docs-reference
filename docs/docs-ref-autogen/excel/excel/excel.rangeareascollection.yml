@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorkbookRangeAreas#areas:member" />
+  - <xref uid="excel!Excel.WorkbookRangeAreas#areas:member"
+  alttext="Excel.WorkbookRangeAreas.areas" />
 
 isPreview: false
 isDeprecated: false

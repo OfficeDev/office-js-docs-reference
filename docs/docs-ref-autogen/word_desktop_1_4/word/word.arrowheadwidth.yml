@@ -13,19 +13,24 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.LineFormatData#beginArrowheadWidth:member"
-  />
+  alttext="Word.Interfaces.LineFormatData.beginArrowheadWidth" />
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#endArrowheadWidth:member" />
-
-  - <xref
-  uid="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadWidth:member" />
+  - <xref uid="word!Word.Interfaces.LineFormatData#endArrowheadWidth:member"
+  alttext="Word.Interfaces.LineFormatData.endArrowheadWidth" />
 
   - <xref
-  uid="word!Word.Interfaces.LineFormatUpdateData#endArrowheadWidth:member" />
+  uid="word!Word.Interfaces.LineFormatUpdateData#beginArrowheadWidth:member"
+  alttext="Word.Interfaces.LineFormatUpdateData.beginArrowheadWidth" />
 
-  - <xref uid="word!Word.LineFormat#beginArrowheadWidth:member" />
+  - <xref
+  uid="word!Word.Interfaces.LineFormatUpdateData#endArrowheadWidth:member"
+  alttext="Word.Interfaces.LineFormatUpdateData.endArrowheadWidth" />
 
-  - <xref uid="word!Word.LineFormat#endArrowheadWidth:member" />
+  - <xref uid="word!Word.LineFormat#beginArrowheadWidth:member"
+  alttext="Word.LineFormat.beginArrowheadWidth" />
+
+  - <xref uid="word!Word.LineFormat#endArrowheadWidth:member"
+  alttext="Word.LineFormat.endArrowheadWidth" />
 
 isPreview: false
 isDeprecated: false

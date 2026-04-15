@@ -22,36 +22,50 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#addHandlerAsync:member(1)" />
+  - <xref uid="office!Office.Binding#addHandlerAsync:member(1)"
+  alttext="Office.Binding.addHandlerAsync" />
 
-  - <xref uid="office!Office.Binding#removeHandlerAsync:member(1)" />
+  - <xref uid="office!Office.Binding#removeHandlerAsync:member(1)"
+  alttext="Office.Binding.removeHandlerAsync" />
 
-  - <xref uid="office!Office.BindingDataChangedEventArgs#type:member" />
+  - <xref uid="office!Office.BindingDataChangedEventArgs#type:member"
+  alttext="Office.BindingDataChangedEventArgs.type" />
 
-  - <xref uid="office!Office.BindingSelectionChangedEventArgs#type:member" />
+  - <xref uid="office!Office.BindingSelectionChangedEventArgs#type:member"
+  alttext="Office.BindingSelectionChangedEventArgs.type" />
 
-  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member(1)" />
+  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member(1)"
+  alttext="Office.CustomXmlPart.addHandlerAsync" />
 
-  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member(1)" />
+  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member(1)"
+  alttext="Office.CustomXmlPart.removeHandlerAsync" />
 
-  - <xref uid="office!Office.Dialog#addEventHandler:member(1)" />
+  - <xref uid="office!Office.Dialog#addEventHandler:member(1)"
+  alttext="Office.Dialog.addEventHandler" />
 
   - <xref uid="office!Office.DialogParentMessageReceivedEventArgs#type:member"
-  />
+  alttext="Office.DialogParentMessageReceivedEventArgs.type" />
 
-  - <xref uid="office!Office.Document#addHandlerAsync:member(1)" />
+  - <xref uid="office!Office.Document#addHandlerAsync:member(1)"
+  alttext="Office.Document.addHandlerAsync" />
 
-  - <xref uid="office!Office.Document#removeHandlerAsync:member(1)" />
+  - <xref uid="office!Office.Document#removeHandlerAsync:member(1)"
+  alttext="Office.Document.removeHandlerAsync" />
 
-  - <xref uid="office!Office.DocumentSelectionChangedEventArgs#type:member" />
+  - <xref uid="office!Office.DocumentSelectionChangedEventArgs#type:member"
+  alttext="Office.DocumentSelectionChangedEventArgs.type" />
 
-  - <xref uid="office!Office.Settings#addHandlerAsync:member(1)" />
+  - <xref uid="office!Office.Settings#addHandlerAsync:member(1)"
+  alttext="Office.Settings.addHandlerAsync" />
 
-  - <xref uid="office!Office.Settings#removeHandlerAsync:member(1)" />
+  - <xref uid="office!Office.Settings#removeHandlerAsync:member(1)"
+  alttext="Office.Settings.removeHandlerAsync" />
 
-  - <xref uid="office!Office.SettingsChangedEventArgs#type:member" />
+  - <xref uid="office!Office.SettingsChangedEventArgs#type:member"
+  alttext="Office.SettingsChangedEventArgs.type" />
 
-  - <xref uid="office!Office.UI#addHandlerAsync:member(1)" />
+  - <xref uid="office!Office.UI#addHandlerAsync:member(1)"
+  alttext="Office.UI.addHandlerAsync" />
 
   #### Examples
 

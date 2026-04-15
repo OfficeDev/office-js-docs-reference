@@ -20,7 +20,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#templates:member" />
+  - <xref uid="word!Word.Application#templates:member"
+  alttext="Word.Application.templates" />
 
 isPreview: false
 isDeprecated: false

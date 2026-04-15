@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShadowFormatData#style:member" />
+  - <xref uid="word!Word.Interfaces.ShadowFormatData#style:member"
+  alttext="Word.Interfaces.ShadowFormatData.style" />
 
-  - <xref uid="word!Word.Interfaces.ShadowFormatUpdateData#style:member" />
+  - <xref uid="word!Word.Interfaces.ShadowFormatUpdateData#style:member"
+  alttext="Word.Interfaces.ShadowFormatUpdateData.style" />
 
-  - <xref uid="word!Word.ShadowFormat#style:member" />
+  - <xref uid="word!Word.ShadowFormat#style:member"
+  alttext="Word.ShadowFormat.style" />
 
 isPreview: false
 isDeprecated: false

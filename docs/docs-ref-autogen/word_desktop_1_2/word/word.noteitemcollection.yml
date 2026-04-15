@@ -15,29 +15,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#endnotes:member" />
+  - <xref uid="word!Word.Body#endnotes:member" alttext="Word.Body.endnotes" />
 
-  - <xref uid="word!Word.Body#footnotes:member" />
+  - <xref uid="word!Word.Body#footnotes:member" alttext="Word.Body.footnotes" />
 
-  - <xref uid="word!Word.ContentControl#endnotes:member" />
+  - <xref uid="word!Word.ContentControl#endnotes:member"
+  alttext="Word.ContentControl.endnotes" />
 
-  - <xref uid="word!Word.ContentControl#footnotes:member" />
+  - <xref uid="word!Word.ContentControl#footnotes:member"
+  alttext="Word.ContentControl.footnotes" />
 
-  - <xref uid="word!Word.Paragraph#endnotes:member" />
+  - <xref uid="word!Word.Paragraph#endnotes:member"
+  alttext="Word.Paragraph.endnotes" />
 
-  - <xref uid="word!Word.Paragraph#footnotes:member" />
+  - <xref uid="word!Word.Paragraph#footnotes:member"
+  alttext="Word.Paragraph.footnotes" />
 
-  - <xref uid="word!Word.Range#endnotes:member" />
+  - <xref uid="word!Word.Range#endnotes:member" alttext="Word.Range.endnotes" />
 
-  - <xref uid="word!Word.Range#footnotes:member" />
+  - <xref uid="word!Word.Range#footnotes:member" alttext="Word.Range.footnotes"
+  />
 
-  - <xref uid="word!Word.Table#endnotes:member" />
+  - <xref uid="word!Word.Table#endnotes:member" alttext="Word.Table.endnotes" />
 
-  - <xref uid="word!Word.Table#footnotes:member" />
+  - <xref uid="word!Word.Table#footnotes:member" alttext="Word.Table.footnotes"
+  />
 
-  - <xref uid="word!Word.TableRow#endnotes:member" />
+  - <xref uid="word!Word.TableRow#endnotes:member"
+  alttext="Word.TableRow.endnotes" />
 
-  - <xref uid="word!Word.TableRow#footnotes:member" />
+  - <xref uid="word!Word.TableRow#footnotes:member"
+  alttext="Word.TableRow.footnotes" />
 
   #### Examples
 

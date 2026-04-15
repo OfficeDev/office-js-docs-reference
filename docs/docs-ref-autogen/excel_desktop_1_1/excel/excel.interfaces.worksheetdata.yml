@@ -10,16 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerData#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.SlicerData#worksheet:member"
+  alttext="Excel.Interfaces.SlicerData.worksheet" />
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#activeWorksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.WindowData#activeWorksheet:member"
+  alttext="Excel.Interfaces.WindowData.activeWorksheet" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#worksheets:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#worksheets:member"
+  alttext="Excel.Interfaces.WorkbookData.worksheets" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetCollectionData#items:member"
+  alttext="Excel.Interfaces.WorksheetCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.WorksheetCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

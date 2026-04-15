@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidation#type:member" />
+  - <xref uid="excel!Excel.DataValidation#type:member"
+  alttext="Excel.DataValidation.type" />
 
-  - <xref uid="excel!Excel.Interfaces.DataValidationData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.DataValidationData#type:member"
+  alttext="Excel.Interfaces.DataValidationData.type" />
 
 isPreview: false
 isDeprecated: false

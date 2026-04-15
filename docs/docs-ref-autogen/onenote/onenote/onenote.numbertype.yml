@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.ParagraphInfo#numberType:member" />
+  - <xref uid="onenote!OneNote.ParagraphInfo#numberType:member"
+  alttext="OneNote.ParagraphInfo.numberType" />
 
 isPreview: false
 isDeprecated: false

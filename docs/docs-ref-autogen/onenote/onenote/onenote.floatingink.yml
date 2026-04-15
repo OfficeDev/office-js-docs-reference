@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkStroke#floatingInk:member" />
+  - <xref uid="onenote!OneNote.InkStroke#floatingInk:member"
+  alttext="OneNote.InkStroke.floatingInk" />
 
-  - <xref uid="onenote!OneNote.PageContent#ink:member" />
+  - <xref uid="onenote!OneNote.PageContent#ink:member"
+  alttext="OneNote.PageContent.ink" />
 
 isPreview: false
 isDeprecated: false

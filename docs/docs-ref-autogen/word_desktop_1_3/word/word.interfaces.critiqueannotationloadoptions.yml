@@ -14,10 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member"
+  alttext="Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation"
   />
 
   - <xref
-  uid="word!Word.Interfaces.AnnotationLoadOptions#critiqueAnnotation:member" />
+  uid="word!Word.Interfaces.AnnotationLoadOptions#critiqueAnnotation:member"
+  alttext="Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation" />
 
 isPreview: false
 isDeprecated: false

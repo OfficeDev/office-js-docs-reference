@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BuildingBlockCategory#buildingBlocks:member" />
+  - <xref uid="word!Word.BuildingBlockCategory#buildingBlocks:member"
+  alttext="Word.BuildingBlockCategory.buildingBlocks" />
 
 isPreview: false
 isDeprecated: false

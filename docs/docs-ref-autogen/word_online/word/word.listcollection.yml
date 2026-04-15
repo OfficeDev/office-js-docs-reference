@@ -13,11 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#lists:member" />
+  - <xref uid="word!Word.Body#lists:member" alttext="Word.Body.lists" />
 
-  - <xref uid="word!Word.ContentControl#lists:member" />
+  - <xref uid="word!Word.ContentControl#lists:member"
+  alttext="Word.ContentControl.lists" />
 
-  - <xref uid="word!Word.Range#lists:member" />
+  - <xref uid="word!Word.Range#lists:member" alttext="Word.Range.lists" />
 
   #### Examples
 

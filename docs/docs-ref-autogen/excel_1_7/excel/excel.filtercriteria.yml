@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Filter#criteria:member" />
+  - <xref uid="excel!Excel.Filter#criteria:member"
+  alttext="Excel.Filter.criteria" />
 
-  - <xref uid="excel!Excel.Interfaces.FilterData#criteria:member" />
+  - <xref uid="excel!Excel.Interfaces.FilterData#criteria:member"
+  alttext="Excel.Interfaces.FilterData.criteria" />
 
 isPreview: false
 isDeprecated: false

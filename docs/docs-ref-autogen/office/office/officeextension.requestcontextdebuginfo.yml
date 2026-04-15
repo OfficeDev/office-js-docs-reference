@@ -4,10 +4,12 @@ uid: office!OfficeExtension.RequestContextDebugInfo:interface
 package: office!
 fullName: OfficeExtension.RequestContextDebugInfo
 summary: Contains debug information about the request context.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!OfficeExtension.ClientRequestContext#debugInfo:member" />
+
+  - <xref uid="office!OfficeExtension.ClientRequestContext#debugInfo:member"
+  alttext="OfficeExtension.ClientRequestContext.debugInfo" />
 
 isPreview: false
 isDeprecated: false

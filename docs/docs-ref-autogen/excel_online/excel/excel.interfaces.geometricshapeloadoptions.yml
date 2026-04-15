@@ -17,13 +17,14 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member"
-  />
+  alttext="Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape" />
 
   - <xref
   uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#geometricShape:member"
-  />
+  alttext="Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape" />
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member" />
+  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#geometricShape:member"
+  alttext="Excel.Interfaces.ShapeLoadOptions.geometricShape" />
 
 isPreview: false
 isDeprecated: false

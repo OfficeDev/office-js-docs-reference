@@ -10,23 +10,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#font:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#font:member"
+  alttext="Excel.Interfaces.ChartAreaFormatUpdateData.font" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#font:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#font:member"
+  alttext="Excel.Interfaces.ChartAxisFormatUpdateData.font" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#font:member" />
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#font:member"
+  alttext="Excel.Interfaces.ChartAxisTitleFormatUpdateData.font" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member" />
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member"
+  alttext="Excel.Interfaces.ChartDataLabelFormatUpdateData.font" />
 
   - <xref uid="excel!Excel.Interfaces.ChartFormatStringUpdateData#font:member"
-  />
+  alttext="Excel.Interfaces.ChartFormatStringUpdateData.font" />
 
   - <xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData#font:member"
-  />
+  alttext="Excel.Interfaces.ChartLegendFormatUpdateData.font" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member"
+  alttext="Excel.Interfaces.ChartTitleFormatUpdateData.font" />
 
 isPreview: false
 isDeprecated: false

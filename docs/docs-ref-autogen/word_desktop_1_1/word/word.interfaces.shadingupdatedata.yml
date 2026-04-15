@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ShadingUpdateData
 summary: >-
   An interface for updating data on the `Shading` object, for use in
   `shading.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#shading:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#shading:member"
+  alttext="Word.Interfaces.StyleUpdateData.shading" />
 
 isPreview: false
 isDeprecated: false

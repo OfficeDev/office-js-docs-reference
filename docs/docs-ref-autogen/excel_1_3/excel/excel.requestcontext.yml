@@ -8,77 +8,195 @@ summary: >-
   the Office add-in and the Excel application run in two different processes,
   the request context is required to get access to the Excel object model from
   the add-in.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - <xref uid="excel!Excel.Application#context:member" />
-  - <xref uid="excel!Excel.Binding#context:member" />
-  - <xref uid="excel!Excel.BindingCollection#context:member" />
-  - <xref uid="excel!Excel.Chart#context:member" />
-  - <xref uid="excel!Excel.ChartAreaFormat#context:member" />
-  - <xref uid="excel!Excel.ChartAxes#context:member" />
-  - <xref uid="excel!Excel.ChartAxis#context:member" />
-  - <xref uid="excel!Excel.ChartAxisFormat#context:member" />
-  - <xref uid="excel!Excel.ChartAxisTitle#context:member" />
-  - <xref uid="excel!Excel.ChartAxisTitleFormat#context:member" />
-  - <xref uid="excel!Excel.ChartCollection#context:member" />
-  - <xref uid="excel!Excel.ChartDataLabelFormat#context:member" />
-  - <xref uid="excel!Excel.ChartDataLabels#context:member" />
-  - <xref uid="excel!Excel.ChartFill#context:member" />
-  - <xref uid="excel!Excel.ChartFont#context:member" />
-  - <xref uid="excel!Excel.ChartGridlines#context:member" />
-  - <xref uid="excel!Excel.ChartGridlinesFormat#context:member" />
-  - <xref uid="excel!Excel.ChartLegend#context:member" />
-  - <xref uid="excel!Excel.ChartLegendFormat#context:member" />
-  - <xref uid="excel!Excel.ChartLineFormat#context:member" />
-  - <xref uid="excel!Excel.ChartPoint#context:member" />
-  - <xref uid="excel!Excel.ChartPointFormat#context:member" />
-  - <xref uid="excel!Excel.ChartPointsCollection#context:member" />
-  - <xref uid="excel!Excel.ChartSeries#context:member" />
-  - <xref uid="excel!Excel.ChartSeriesCollection#context:member" />
-  - <xref uid="excel!Excel.ChartSeriesFormat#context:member" />
-  - <xref uid="excel!Excel.ChartTitle#context:member" />
-  - <xref uid="excel!Excel.ChartTitleFormat#context:member" />
-  - <xref uid="excel!Excel.Filter#context:member" />
-  - <xref uid="excel!Excel.FormatProtection#context:member" />
-  - <xref uid="excel!Excel.FunctionResult#context:member" />
-  - <xref uid="excel!Excel.Functions#context:member" />
-  - <xref uid="excel!Excel.NamedItem#context:member" />
-  - <xref uid="excel!Excel.NamedItemCollection#context:member" />
-  - <xref uid="excel!Excel.PivotTable#context:member" />
-  - <xref uid="excel!Excel.PivotTableCollection#context:member" />
-  - <xref uid="excel!Excel.Range#context:member" />
-  - <xref uid="excel!Excel.RangeBorder#context:member" />
-  - <xref uid="excel!Excel.RangeBorderCollection#context:member" />
-  - <xref uid="excel!Excel.RangeFill#context:member" />
-  - <xref uid="excel!Excel.RangeFont#context:member" />
-  - <xref uid="excel!Excel.RangeFormat#context:member" />
-  - <xref uid="excel!Excel.RangeSort#context:member" />
-  - <xref uid="excel!Excel.RangeView#context:member" />
-  - <xref uid="excel!Excel.RangeViewCollection#context:member" />
-  - <xref uid="excel!Excel.Table#context:member" />
-  - <xref uid="excel!Excel.TableCollection#context:member" />
-  - <xref uid="excel!Excel.TableColumn#context:member" />
-  - <xref uid="excel!Excel.TableColumnCollection#context:member" />
-  - <xref uid="excel!Excel.TableRow#context:member" />
-  - <xref uid="excel!Excel.TableRowCollection#context:member" />
-  - <xref uid="excel!Excel.TableSort#context:member" />
-  - <xref uid="excel!Excel.Workbook#context:member" />
-  - <xref uid="excel!Excel.Worksheet#context:member" />
-  - <xref uid="excel!Excel.WorksheetCollection#context:member" />
-  - <xref uid="excel!Excel.WorksheetProtection#context:member" />
+
+  - <xref uid="excel!Excel.Application#context:member"
+  alttext="Excel.Application.context" />
+
+  - <xref uid="excel!Excel.Binding#context:member"
+  alttext="Excel.Binding.context" />
+
+  - <xref uid="excel!Excel.BindingCollection#context:member"
+  alttext="Excel.BindingCollection.context" />
+
+  - <xref uid="excel!Excel.Chart#context:member" alttext="Excel.Chart.context"
+  />
+
+  - <xref uid="excel!Excel.ChartAreaFormat#context:member"
+  alttext="Excel.ChartAreaFormat.context" />
+
+  - <xref uid="excel!Excel.ChartAxes#context:member"
+  alttext="Excel.ChartAxes.context" />
+
+  - <xref uid="excel!Excel.ChartAxis#context:member"
+  alttext="Excel.ChartAxis.context" />
+
+  - <xref uid="excel!Excel.ChartAxisFormat#context:member"
+  alttext="Excel.ChartAxisFormat.context" />
+
+  - <xref uid="excel!Excel.ChartAxisTitle#context:member"
+  alttext="Excel.ChartAxisTitle.context" />
+
+  - <xref uid="excel!Excel.ChartAxisTitleFormat#context:member"
+  alttext="Excel.ChartAxisTitleFormat.context" />
+
+  - <xref uid="excel!Excel.ChartCollection#context:member"
+  alttext="Excel.ChartCollection.context" />
+
+  - <xref uid="excel!Excel.ChartDataLabelFormat#context:member"
+  alttext="Excel.ChartDataLabelFormat.context" />
+
+  - <xref uid="excel!Excel.ChartDataLabels#context:member"
+  alttext="Excel.ChartDataLabels.context" />
+
+  - <xref uid="excel!Excel.ChartFill#context:member"
+  alttext="Excel.ChartFill.context" />
+
+  - <xref uid="excel!Excel.ChartFont#context:member"
+  alttext="Excel.ChartFont.context" />
+
+  - <xref uid="excel!Excel.ChartGridlines#context:member"
+  alttext="Excel.ChartGridlines.context" />
+
+  - <xref uid="excel!Excel.ChartGridlinesFormat#context:member"
+  alttext="Excel.ChartGridlinesFormat.context" />
+
+  - <xref uid="excel!Excel.ChartLegend#context:member"
+  alttext="Excel.ChartLegend.context" />
+
+  - <xref uid="excel!Excel.ChartLegendFormat#context:member"
+  alttext="Excel.ChartLegendFormat.context" />
+
+  - <xref uid="excel!Excel.ChartLineFormat#context:member"
+  alttext="Excel.ChartLineFormat.context" />
+
+  - <xref uid="excel!Excel.ChartPoint#context:member"
+  alttext="Excel.ChartPoint.context" />
+
+  - <xref uid="excel!Excel.ChartPointFormat#context:member"
+  alttext="Excel.ChartPointFormat.context" />
+
+  - <xref uid="excel!Excel.ChartPointsCollection#context:member"
+  alttext="Excel.ChartPointsCollection.context" />
+
+  - <xref uid="excel!Excel.ChartSeries#context:member"
+  alttext="Excel.ChartSeries.context" />
+
+  - <xref uid="excel!Excel.ChartSeriesCollection#context:member"
+  alttext="Excel.ChartSeriesCollection.context" />
+
+  - <xref uid="excel!Excel.ChartSeriesFormat#context:member"
+  alttext="Excel.ChartSeriesFormat.context" />
+
+  - <xref uid="excel!Excel.ChartTitle#context:member"
+  alttext="Excel.ChartTitle.context" />
+
+  - <xref uid="excel!Excel.ChartTitleFormat#context:member"
+  alttext="Excel.ChartTitleFormat.context" />
+
+  - <xref uid="excel!Excel.Filter#context:member" alttext="Excel.Filter.context"
+  />
+
+  - <xref uid="excel!Excel.FormatProtection#context:member"
+  alttext="Excel.FormatProtection.context" />
+
+  - <xref uid="excel!Excel.FunctionResult#context:member"
+  alttext="Excel.FunctionResult.context" />
+
+  - <xref uid="excel!Excel.Functions#context:member"
+  alttext="Excel.Functions.context" />
+
+  - <xref uid="excel!Excel.NamedItem#context:member"
+  alttext="Excel.NamedItem.context" />
+
+  - <xref uid="excel!Excel.NamedItemCollection#context:member"
+  alttext="Excel.NamedItemCollection.context" />
+
+  - <xref uid="excel!Excel.PivotTable#context:member"
+  alttext="Excel.PivotTable.context" />
+
+  - <xref uid="excel!Excel.PivotTableCollection#context:member"
+  alttext="Excel.PivotTableCollection.context" />
+
+  - <xref uid="excel!Excel.Range#context:member" alttext="Excel.Range.context"
+  />
+
+  - <xref uid="excel!Excel.RangeBorder#context:member"
+  alttext="Excel.RangeBorder.context" />
+
+  - <xref uid="excel!Excel.RangeBorderCollection#context:member"
+  alttext="Excel.RangeBorderCollection.context" />
+
+  - <xref uid="excel!Excel.RangeFill#context:member"
+  alttext="Excel.RangeFill.context" />
+
+  - <xref uid="excel!Excel.RangeFont#context:member"
+  alttext="Excel.RangeFont.context" />
+
+  - <xref uid="excel!Excel.RangeFormat#context:member"
+  alttext="Excel.RangeFormat.context" />
+
+  - <xref uid="excel!Excel.RangeSort#context:member"
+  alttext="Excel.RangeSort.context" />
+
+  - <xref uid="excel!Excel.RangeView#context:member"
+  alttext="Excel.RangeView.context" />
+
+  - <xref uid="excel!Excel.RangeViewCollection#context:member"
+  alttext="Excel.RangeViewCollection.context" />
+
+  - <xref uid="excel!Excel.Table#context:member" alttext="Excel.Table.context"
+  />
+
+  - <xref uid="excel!Excel.TableCollection#context:member"
+  alttext="Excel.TableCollection.context" />
+
+  - <xref uid="excel!Excel.TableColumn#context:member"
+  alttext="Excel.TableColumn.context" />
+
+  - <xref uid="excel!Excel.TableColumnCollection#context:member"
+  alttext="Excel.TableColumnCollection.context" />
+
+  - <xref uid="excel!Excel.TableRow#context:member"
+  alttext="Excel.TableRow.context" />
+
+  - <xref uid="excel!Excel.TableRowCollection#context:member"
+  alttext="Excel.TableRowCollection.context" />
+
+  - <xref uid="excel!Excel.TableSort#context:member"
+  alttext="Excel.TableSort.context" />
+
+  - <xref uid="excel!Excel.Workbook#context:member"
+  alttext="Excel.Workbook.context" />
+
+  - <xref uid="excel!Excel.Worksheet#context:member"
+  alttext="Excel.Worksheet.context" />
+
+  - <xref uid="excel!Excel.WorksheetCollection#context:member"
+  alttext="Excel.WorksheetCollection.context" />
+
+  - <xref uid="excel!Excel.WorksheetProtection#context:member"
+  alttext="Excel.WorksheetProtection.context" />
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Excel.run(async (context: Excel.RequestContext) => {
     const workbook = context.workbook;
     // Interact with the Excel workbook...
   });
+
   ```
 
 isPreview: false

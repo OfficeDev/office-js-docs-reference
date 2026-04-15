@@ -10,10 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerItemCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.SlicerItemCollectionData#items:member"
+  alttext="Excel.Interfaces.SlicerItemCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.SlicerItemCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

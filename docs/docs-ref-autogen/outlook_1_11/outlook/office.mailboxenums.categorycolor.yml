@@ -31,7 +31,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.CategoryDetails#color:member" />
+  - <xref uid="outlook!Office.CategoryDetails#color:member"
+  alttext="Office.CategoryDetails.color" />
 
   #### Examples
 

@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartTitleUpdateData
 summary: >-
   An interface for updating data on the `ChartTitle` object, for use in
   `chartTitle.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#title:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#title:member"
+  alttext="Excel.Interfaces.ChartUpdateData.title" />
 
 isPreview: false
 isDeprecated: false

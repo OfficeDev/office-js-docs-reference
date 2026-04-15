@@ -16,18 +16,20 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#preset:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.preset" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#presetOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.presetOrNullObject"
   />
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#preset:member" />
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#preset:member"
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.preset" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#presetOrNullObject:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.presetOrNullObject" />
 
 isPreview: false
 isDeprecated: false

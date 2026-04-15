@@ -11,11 +11,12 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ListTemplateGalleryCollectionData#items:member" />
+  uid="word!Word.Interfaces.ListTemplateGalleryCollectionData#items:member"
+  alttext="Word.Interfaces.ListTemplateGalleryCollectionData.items" />
 
   - <xref
   uid="word!Word.Interfaces.ListTemplateGalleryCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.ListTemplateGalleryCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

@@ -13,15 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataBarConditionalFormat#barDirection:member" />
+  - <xref uid="excel!Excel.DataBarConditionalFormat#barDirection:member"
+  alttext="Excel.DataBarConditionalFormat.barDirection" />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member"
-  />
+  alttext="Excel.Interfaces.DataBarConditionalFormatData.barDirection" />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection:member"
-  />
+  alttext="Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection" />
 
   #### Examples
 

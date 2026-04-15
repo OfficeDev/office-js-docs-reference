@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTaskCollection#items:member" />
+  - <xref uid="excel!Excel.DocumentTaskCollection#items:member"
+  alttext="Excel.DocumentTaskCollection.items" />
 
 isPreview: true
 isDeprecated: false

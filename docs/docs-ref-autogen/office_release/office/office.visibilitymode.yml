@@ -12,7 +12,7 @@ remarks: >-
 
 
   - <xref uid="office!Office.VisibilityModeChangedMessage#visibilityMode:member"
-  />
+  alttext="Office.VisibilityModeChangedMessage.visibilityMode" />
 
   #### Examples
 

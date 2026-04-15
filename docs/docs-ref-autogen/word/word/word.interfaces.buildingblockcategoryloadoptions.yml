@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#category:member" />
+  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#category:member"
+  alttext="Word.Interfaces.BuildingBlockLoadOptions.category" />
 
 isPreview: false
 isDeprecated: false

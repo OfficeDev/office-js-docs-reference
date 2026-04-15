@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onProtectionChanged:member" />
+  - <xref uid="excel!Excel.Worksheet#onProtectionChanged:member"
+  alttext="Excel.Worksheet.onProtectionChanged" />
 
-  - <xref uid="excel!Excel.WorksheetCollection#onProtectionChanged:member" />
+  - <xref uid="excel!Excel.WorksheetCollection#onProtectionChanged:member"
+  alttext="Excel.WorksheetCollection.onProtectionChanged" />
 
 isPreview: false
 isDeprecated: false

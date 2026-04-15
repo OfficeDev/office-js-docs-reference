@@ -11,7 +11,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#field:member"
-  />
+  alttext="Excel.Interfaces.DataPivotHierarchyUpdateData.field" />
 
 isPreview: false
 isDeprecated: false

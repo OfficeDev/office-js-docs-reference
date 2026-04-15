@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Bibliography#sources:member" />
+  - <xref uid="word!Word.Bibliography#sources:member"
+  alttext="Word.Bibliography.sources" />
 
 isPreview: false
 isDeprecated: false

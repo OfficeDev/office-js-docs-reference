@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#onParagraphChanged:member" />
+  - <xref uid="word!Word.Document#onParagraphChanged:member"
+  alttext="Word.Document.onParagraphChanged" />
 
   #### Examples
 

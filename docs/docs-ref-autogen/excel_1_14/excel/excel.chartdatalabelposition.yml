@@ -12,19 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartDataLabel#position:member" />
+  - <xref uid="excel!Excel.ChartDataLabel#position:member"
+  alttext="Excel.ChartDataLabel.position" />
 
-  - <xref uid="excel!Excel.ChartDataLabels#position:member" />
+  - <xref uid="excel!Excel.ChartDataLabels#position:member"
+  alttext="Excel.ChartDataLabels.position" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelData#position:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartDataLabelData#position:member"
+  alttext="Excel.Interfaces.ChartDataLabelData.position" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsData#position:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartDataLabelsData#position:member"
+  alttext="Excel.Interfaces.ChartDataLabelsData.position" />
 
   - <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member"
-  />
+  alttext="Excel.Interfaces.ChartDataLabelsUpdateData.position" />
 
   - <xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#position:member"
-  />
+  alttext="Excel.Interfaces.ChartDataLabelUpdateData.position" />
 
 isPreview: false
 isDeprecated: false

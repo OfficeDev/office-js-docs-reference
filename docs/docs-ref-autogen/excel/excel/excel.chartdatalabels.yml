@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#dataLabels:member" />
+  - <xref uid="excel!Excel.Chart#dataLabels:member"
+  alttext="Excel.Chart.dataLabels" />
 
-  - <xref uid="excel!Excel.ChartSeries#dataLabels:member" />
+  - <xref uid="excel!Excel.ChartSeries#dataLabels:member"
+  alttext="Excel.ChartSeries.dataLabels" />
 
 isPreview: false
 isDeprecated: false

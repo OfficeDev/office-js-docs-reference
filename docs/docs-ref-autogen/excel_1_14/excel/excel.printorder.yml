@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printOrder:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printOrder:member"
+  alttext="Excel.Interfaces.PageLayoutData.printOrder" />
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member"
+  alttext="Excel.Interfaces.PageLayoutUpdateData.printOrder" />
 
-  - <xref uid="excel!Excel.PageLayout#printOrder:member" />
+  - <xref uid="excel!Excel.PageLayout#printOrder:member"
+  alttext="Excel.PageLayout.printOrder" />
 
 isPreview: false
 isDeprecated: false

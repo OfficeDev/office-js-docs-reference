@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PageBreakCollection#items:member" />
+  - <xref uid="excel!Excel.PageBreakCollection#items:member"
+  alttext="Excel.PageBreakCollection.items" />
 
 isPreview: false
 isDeprecated: false

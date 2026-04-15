@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Shape#image:member" />
+  - <xref uid="excel!Excel.Shape#image:member" alttext="Excel.Shape.image" />
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#pivotOptions:member" />
+  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#pivotOptions:member"
+  alttext="Excel.Interfaces.ChartCollectionLoadOptions.pivotOptions" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#pivotOptions:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#pivotOptions:member"
+  alttext="Excel.Interfaces.ChartLoadOptions.pivotOptions" />
 
 isPreview: false
 isDeprecated: false

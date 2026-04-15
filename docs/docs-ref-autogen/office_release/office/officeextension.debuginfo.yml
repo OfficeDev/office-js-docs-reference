@@ -4,11 +4,15 @@ uid: office!OfficeExtension.DebugInfo:interface
 package: office!
 fullName: OfficeExtension.DebugInfo
 summary: Provides information about an error.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!OfficeExtension.DebugInfo#innerError:member" />
-  - <xref uid="office!OfficeExtension.Error#debugInfo:member" />
+
+  - <xref uid="office!OfficeExtension.DebugInfo#innerError:member"
+  alttext="OfficeExtension.DebugInfo.innerError" />
+
+  - <xref uid="office!OfficeExtension.Error#debugInfo:member"
+  alttext="OfficeExtension.Error.debugInfo" />
 
 isPreview: false
 isDeprecated: false

@@ -16,10 +16,11 @@ remarks: >-
 
   - <xref
   uid="onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member"
-  />
+  alttext="OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#line:member" />
+  uid="onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions#line:member"
+  alttext="OneNote.Interfaces.InkAnalysisWordLoadOptions.line" />
 
 isPreview: false
 isDeprecated: false

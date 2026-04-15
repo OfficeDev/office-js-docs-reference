@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ValueErrorCellValue#errorSubType:member" />
+  - <xref uid="excel!Excel.ValueErrorCellValue#errorSubType:member"
+  alttext="Excel.ValueErrorCellValue.errorSubType" />
 
 isPreview: false
 isDeprecated: false

@@ -12,18 +12,19 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.CustomXmlPartCollectionData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.CustomXmlPartScopedCollectionData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
+  alttext="PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData.items"
   />
 
 isPreview: false

@@ -10,13 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.CommentData#replies:member" />
+  - <xref uid="excel!Excel.Interfaces.CommentData#replies:member"
+  alttext="Excel.Interfaces.CommentData.replies" />
 
   - <xref uid="excel!Excel.Interfaces.CommentReplyCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.CommentReplyCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.CommentReplyCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalRangeFormat#fill:member" />
+  - <xref uid="excel!Excel.ConditionalRangeFormat#fill:member"
+  alttext="Excel.ConditionalRangeFormat.fill" />
 
 isPreview: false
 isDeprecated: false

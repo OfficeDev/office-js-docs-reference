@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartDataTable#format:member" />
+  - <xref uid="excel!Excel.ChartDataTable#format:member"
+  alttext="Excel.ChartDataTable.format" />
 
 isPreview: false
 isDeprecated: false

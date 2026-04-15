@@ -14,14 +14,15 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetLightingSoftness:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetLightingSoftness" />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetLightingSoftness:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLightingSoftness"
   />
 
   - <xref uid="word!Word.ThreeDimensionalFormat#presetLightingSoftness:member"
-  />
+  alttext="Word.ThreeDimensionalFormat.presetLightingSoftness" />
 
 isPreview: false
 isDeprecated: false

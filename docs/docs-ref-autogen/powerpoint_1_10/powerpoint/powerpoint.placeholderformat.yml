@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Shape#placeholderFormat:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#placeholderFormat:member"
+  alttext="PowerPoint.Shape.placeholderFormat" />
 
   #### Examples
 

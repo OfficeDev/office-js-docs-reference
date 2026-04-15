@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#dataValidation:member" />
+  - <xref uid="excel!Excel.Range#dataValidation:member"
+  alttext="Excel.Range.dataValidation" />
 
 isPreview: false
 isDeprecated: false

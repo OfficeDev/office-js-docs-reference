@@ -13,11 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#underline:member" />
+  - <xref uid="word!Word.Font#underline:member" alttext="Word.Font.underline" />
 
-  - <xref uid="word!Word.Interfaces.FontData#underline:member" />
+  - <xref uid="word!Word.Interfaces.FontData#underline:member"
+  alttext="Word.Interfaces.FontData.underline" />
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member" />
+  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member"
+  alttext="Word.Interfaces.FontUpdateData.underline" />
 
   #### Examples
 

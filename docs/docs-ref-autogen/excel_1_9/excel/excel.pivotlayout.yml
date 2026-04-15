@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotTable#layout:member" />
+  - <xref uid="excel!Excel.PivotTable#layout:member"
+  alttext="Excel.PivotTable.layout" />
 
 isPreview: false
 isDeprecated: false

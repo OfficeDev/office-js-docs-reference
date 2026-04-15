@@ -19,17 +19,19 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member"
-  />
+  alttext="PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member"
+  alttext="PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment"
   />
 
   - <xref uid="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member"
-  />
+  alttext="PowerPoint.ParagraphFormat.horizontalAlignment" />
 
   - <xref
-  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member" />
+  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member"
+  alttext="PowerPoint.TableCellProperties.horizontalAlignment" />
 
   #### Examples
 

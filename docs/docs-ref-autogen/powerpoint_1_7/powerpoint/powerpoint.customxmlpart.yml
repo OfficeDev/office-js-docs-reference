@@ -13,10 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.CustomXmlPartCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.CustomXmlPartCollection#items:member"
+  alttext="PowerPoint.CustomXmlPartCollection.items" />
 
   - <xref uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection#items:member"
-  />
+  alttext="PowerPoint.CustomXmlPartScopedCollection.items" />
 
 isPreview: false
 isDeprecated: false

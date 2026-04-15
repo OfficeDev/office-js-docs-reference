@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonSide:member" />
+  - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonSide:member"
+  alttext="Word.Interfaces.ViewData.revisionsBalloonSide" />
 
-  - <xref uid="word!Word.View#revisionsBalloonSide:member" />
+  - <xref uid="word!Word.View#revisionsBalloonSide:member"
+  alttext="Word.View.revisionsBalloonSide" />
 
 isPreview: false
 isDeprecated: false

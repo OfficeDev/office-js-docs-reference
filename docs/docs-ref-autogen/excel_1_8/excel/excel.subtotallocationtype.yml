@@ -13,12 +13,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotLayoutData#subtotalLocation:member"
-  />
+  alttext="Excel.Interfaces.PivotLayoutData.subtotalLocation" />
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member" />
+  uid="excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member"
+  alttext="Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation" />
 
-  - <xref uid="excel!Excel.PivotLayout#subtotalLocation:member" />
+  - <xref uid="excel!Excel.PivotLayout#subtotalLocation:member"
+  alttext="Excel.PivotLayout.subtotalLocation" />
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#builtInDocumentProperties:member" />
+  - <xref uid="word!Word.Document#builtInDocumentProperties:member"
+  alttext="Word.Document.builtInDocumentProperties" />
 
-  - <xref uid="word!Word.Document#customDocumentProperties:member" />
+  - <xref uid="word!Word.Document#customDocumentProperties:member"
+  alttext="Word.Document.customDocumentProperties" />
 
-  - <xref uid="word!Word.Document#properties:member" />
+  - <xref uid="word!Word.Document#properties:member"
+  alttext="Word.Document.properties" />
 
   #### Examples
 

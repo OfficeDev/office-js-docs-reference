@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableCell#parentRow:member" />
+  - <xref uid="word!Word.TableCell#parentRow:member"
+  alttext="Word.TableCell.parentRow" />
 
-  - <xref uid="word!Word.TableRowCollection#items:member" />
+  - <xref uid="word!Word.TableRowCollection#items:member"
+  alttext="Word.TableRowCollection.items" />
 
   #### Examples
 

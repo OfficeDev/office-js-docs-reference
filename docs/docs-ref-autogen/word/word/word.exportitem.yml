@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#item:member" />
+  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#item:member"
+  alttext="Word.DocumentExportAsFixedFormat2Options.item" />
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#item:member" />
+  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#item:member"
+  alttext="Word.DocumentExportAsFixedFormat3Options.item" />
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#item:member" />
+  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#item:member"
+  alttext="Word.DocumentExportAsFixedFormatOptions.item" />
 
   #### Examples
 

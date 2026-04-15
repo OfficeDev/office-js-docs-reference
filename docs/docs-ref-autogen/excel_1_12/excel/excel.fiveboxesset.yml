@@ -6,10 +6,12 @@ fullName: Excel.FiveBoxesSet
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.IconCollections#fiveBoxes:member" />
+
+  - <xref uid="excel!Excel.IconCollections#fiveBoxes:member"
+  alttext="Excel.IconCollections.fiveBoxes" />
 
 isPreview: false
 isDeprecated: false

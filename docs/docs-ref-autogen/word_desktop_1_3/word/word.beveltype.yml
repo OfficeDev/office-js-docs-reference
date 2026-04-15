@@ -17,22 +17,25 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelBottomType:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.bevelBottomType" />
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelTopType:member" />
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#bevelTopType:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.bevelTopType" />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelBottomType:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelBottomType" />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#bevelTopType:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.bevelTopType" />
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#bevelBottomType:member" />
+  - <xref uid="word!Word.ThreeDimensionalFormat#bevelBottomType:member"
+  alttext="Word.ThreeDimensionalFormat.bevelBottomType" />
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#bevelTopType:member" />
+  - <xref uid="word!Word.ThreeDimensionalFormat#bevelTopType:member"
+  alttext="Word.ThreeDimensionalFormat.bevelTopType" />
 
 isPreview: false
 isDeprecated: false

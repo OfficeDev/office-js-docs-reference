@@ -50,7 +50,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AddinCommands.Event#completed:member(1)" />
+  - <xref uid="office!Office.AddinCommands.Event#completed:member(1)"
+  alttext="Office.AddinCommands.Event.completed" />
 
 isPreview: false
 isDeprecated: false

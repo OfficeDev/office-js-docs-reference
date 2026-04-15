@@ -12,10 +12,11 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData.items"
   />
 
 isPreview: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.CommentCollection#items:member" />
+  - <xref uid="visio!Visio.CommentCollection#items:member"
+  alttext="Visio.CommentCollection.items" />
 
 isPreview: false
 isDeprecated: false

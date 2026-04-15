@@ -13,10 +13,12 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member" />
+  uid="excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member"
+  alttext="Excel.Interfaces.ChartAxisLoadOptions.majorGridlines" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member" />
+  uid="excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member"
+  alttext="Excel.Interfaces.ChartAxisLoadOptions.minorGridlines" />
 
 isPreview: false
 isDeprecated: false

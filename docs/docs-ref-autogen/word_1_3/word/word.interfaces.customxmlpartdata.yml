@@ -10,17 +10,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData#items:member"
+  alttext="Word.Interfaces.CustomXmlPartCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.CustomXmlPartCollectionUpdateData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
+  uid="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member"
+  alttext="Word.Interfaces.CustomXmlPartScopedCollectionData.items" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

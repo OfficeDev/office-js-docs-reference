@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.RecurrenceProperties#month:member" />
+  - <xref uid="outlook!Office.RecurrenceProperties#month:member"
+  alttext="Office.RecurrenceProperties.month" />
 
   #### Examples
 

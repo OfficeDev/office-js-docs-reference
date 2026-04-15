@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataBarConditionalFormat#negativeFormat:member" />
+  - <xref uid="excel!Excel.DataBarConditionalFormat#negativeFormat:member"
+  alttext="Excel.DataBarConditionalFormat.negativeFormat" />
 
 isPreview: false
 isDeprecated: false

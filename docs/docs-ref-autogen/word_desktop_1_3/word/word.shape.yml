@@ -16,15 +16,19 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Canvas#shape:member" />
+  - <xref uid="word!Word.Canvas#shape:member" alttext="Word.Canvas.shape" />
 
-  - <xref uid="word!Word.Shape#parentCanvas:member" />
+  - <xref uid="word!Word.Shape#parentCanvas:member"
+  alttext="Word.Shape.parentCanvas" />
 
-  - <xref uid="word!Word.Shape#parentGroup:member" />
+  - <xref uid="word!Word.Shape#parentGroup:member"
+  alttext="Word.Shape.parentGroup" />
 
-  - <xref uid="word!Word.ShapeCollection#items:member" />
+  - <xref uid="word!Word.ShapeCollection#items:member"
+  alttext="Word.ShapeCollection.items" />
 
-  - <xref uid="word!Word.ShapeGroup#shape:member" />
+  - <xref uid="word!Word.ShapeGroup#shape:member"
+  alttext="Word.ShapeGroup.shape" />
 
   #### Examples
 

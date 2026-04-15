@@ -8,33 +8,69 @@ summary: >-
   the Office add-in and the Visio application run in two different processes,
   the request context is required to get access to the Visio object model from
   the add-in.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - <xref uid="visio!Visio.Application#context:member" />
-  - <xref uid="visio!Visio.Comment#context:member" />
-  - <xref uid="visio!Visio.CommentCollection#context:member" />
-  - <xref uid="visio!Visio.Document#context:member" />
-  - <xref uid="visio!Visio.DocumentView#context:member" />
-  - <xref uid="visio!Visio.Hyperlink#context:member" />
-  - <xref uid="visio!Visio.HyperlinkCollection#context:member" />
-  - <xref uid="visio!Visio.Page#context:member" />
-  - <xref uid="visio!Visio.PageCollection#context:member" />
-  - <xref uid="visio!Visio.PageView#context:member" />
-  - <xref uid="visio!Visio.Selection#context:member" />
-  - <xref uid="visio!Visio.Shape#context:member" />
-  - <xref uid="visio!Visio.ShapeCollection#context:member" />
-  - <xref uid="visio!Visio.ShapeDataItem#context:member" />
-  - <xref uid="visio!Visio.ShapeDataItemCollection#context:member" />
-  - <xref uid="visio!Visio.ShapeView#context:member" />
+
+  - <xref uid="visio!Visio.Application#context:member"
+  alttext="Visio.Application.context" />
+
+  - <xref uid="visio!Visio.Comment#context:member"
+  alttext="Visio.Comment.context" />
+
+  - <xref uid="visio!Visio.CommentCollection#context:member"
+  alttext="Visio.CommentCollection.context" />
+
+  - <xref uid="visio!Visio.Document#context:member"
+  alttext="Visio.Document.context" />
+
+  - <xref uid="visio!Visio.DocumentView#context:member"
+  alttext="Visio.DocumentView.context" />
+
+  - <xref uid="visio!Visio.Hyperlink#context:member"
+  alttext="Visio.Hyperlink.context" />
+
+  - <xref uid="visio!Visio.HyperlinkCollection#context:member"
+  alttext="Visio.HyperlinkCollection.context" />
+
+  - <xref uid="visio!Visio.Page#context:member" alttext="Visio.Page.context" />
+
+  - <xref uid="visio!Visio.PageCollection#context:member"
+  alttext="Visio.PageCollection.context" />
+
+  - <xref uid="visio!Visio.PageView#context:member"
+  alttext="Visio.PageView.context" />
+
+  - <xref uid="visio!Visio.Selection#context:member"
+  alttext="Visio.Selection.context" />
+
+  - <xref uid="visio!Visio.Shape#context:member" alttext="Visio.Shape.context"
+  />
+
+  - <xref uid="visio!Visio.ShapeCollection#context:member"
+  alttext="Visio.ShapeCollection.context" />
+
+  - <xref uid="visio!Visio.ShapeDataItem#context:member"
+  alttext="Visio.ShapeDataItem.context" />
+
+  - <xref uid="visio!Visio.ShapeDataItemCollection#context:member"
+  alttext="Visio.ShapeDataItemCollection.context" />
+
+  - <xref uid="visio!Visio.ShapeView#context:member"
+  alttext="Visio.ShapeView.context" />
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   Visio.run(session, function (context) {
       const activePage = context.document.getActivePage();
       // Interact with the Visio page... 
@@ -46,6 +82,7 @@ remarks: |-
           console.log("Debug info: " + JSON.stringify(error.debugInfo));
       }
   });
+
   ```
 
 isPreview: false

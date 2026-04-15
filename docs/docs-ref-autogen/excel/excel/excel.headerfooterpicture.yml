@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.HeaderFooter#centerFooterPicture:member" />
+  - <xref uid="excel!Excel.HeaderFooter#centerFooterPicture:member"
+  alttext="Excel.HeaderFooter.centerFooterPicture" />
 
-  - <xref uid="excel!Excel.HeaderFooter#centerHeaderPicture:member" />
+  - <xref uid="excel!Excel.HeaderFooter#centerHeaderPicture:member"
+  alttext="Excel.HeaderFooter.centerHeaderPicture" />
 
-  - <xref uid="excel!Excel.HeaderFooter#leftFooterPicture:member" />
+  - <xref uid="excel!Excel.HeaderFooter#leftFooterPicture:member"
+  alttext="Excel.HeaderFooter.leftFooterPicture" />
 
-  - <xref uid="excel!Excel.HeaderFooter#leftHeaderPicture:member" />
+  - <xref uid="excel!Excel.HeaderFooter#leftHeaderPicture:member"
+  alttext="Excel.HeaderFooter.leftHeaderPicture" />
 
-  - <xref uid="excel!Excel.HeaderFooter#rightFooterPicture:member" />
+  - <xref uid="excel!Excel.HeaderFooter#rightFooterPicture:member"
+  alttext="Excel.HeaderFooter.rightFooterPicture" />
 
-  - <xref uid="excel!Excel.HeaderFooter#rightHeaderPicture:member" />
+  - <xref uid="excel!Excel.HeaderFooter#rightHeaderPicture:member"
+  alttext="Excel.HeaderFooter.rightHeaderPicture" />
 
 isPreview: false
 isDeprecated: false

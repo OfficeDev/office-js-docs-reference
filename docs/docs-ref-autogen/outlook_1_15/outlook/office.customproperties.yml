@@ -54,23 +54,27 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)" />
+  uid="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)"
+  alttext="Office.AppointmentCompose.loadCustomPropertiesAsync" />
 
   - <xref
-  uid="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)" />
+  uid="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)"
+  alttext="Office.AppointmentRead.loadCustomPropertiesAsync" />
 
   - <xref
   uid="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member(1)"
-  />
+  alttext="Office.LoadedMessageCompose.loadCustomPropertiesAsync" />
 
   - <xref
-  uid="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)" />
+  uid="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)"
+  alttext="Office.LoadedMessageRead.loadCustomPropertiesAsync" />
 
   - <xref
-  uid="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)" />
+  uid="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)"
+  alttext="Office.MessageCompose.loadCustomPropertiesAsync" />
 
   - <xref uid="outlook!Office.MessageRead#loadCustomPropertiesAsync:member(1)"
-  />
+  alttext="Office.MessageRead.loadCustomPropertiesAsync" />
 
 isPreview: false
 isDeprecated: false

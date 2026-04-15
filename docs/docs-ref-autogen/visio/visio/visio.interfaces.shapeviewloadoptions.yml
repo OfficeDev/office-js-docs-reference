@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionLoadOptions#view:member" />
+  - <xref uid="visio!Visio.Interfaces.ShapeCollectionLoadOptions#view:member"
+  alttext="Visio.Interfaces.ShapeCollectionLoadOptions.view" />
 
-  - <xref uid="visio!Visio.Interfaces.ShapeLoadOptions#view:member" />
+  - <xref uid="visio!Visio.Interfaces.ShapeLoadOptions#view:member"
+  alttext="Visio.Interfaces.ShapeLoadOptions.view" />
 
 isPreview: false
 isDeprecated: false

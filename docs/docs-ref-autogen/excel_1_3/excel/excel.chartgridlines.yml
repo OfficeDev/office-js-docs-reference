@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#majorGridlines:member" />
+  - <xref uid="excel!Excel.ChartAxis#majorGridlines:member"
+  alttext="Excel.ChartAxis.majorGridlines" />
 
-  - <xref uid="excel!Excel.ChartAxis#minorGridlines:member" />
+  - <xref uid="excel!Excel.ChartAxis#minorGridlines:member"
+  alttext="Excel.ChartAxis.minorGridlines" />
 
 isPreview: false
 isDeprecated: false

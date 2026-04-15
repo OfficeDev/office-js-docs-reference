@@ -14,10 +14,10 @@ remarks: >-
 
   - <xref
   uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#parentRow:member"
-  />
+  alttext="OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow" />
 
   - <xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions#parentRow:member"
-  />
+  alttext="OneNote.Interfaces.TableCellLoadOptions.parentRow" />
 
 isPreview: false
 isDeprecated: false

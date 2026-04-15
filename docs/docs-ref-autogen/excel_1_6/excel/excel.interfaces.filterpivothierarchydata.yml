@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.FilterPivotHierarchyCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

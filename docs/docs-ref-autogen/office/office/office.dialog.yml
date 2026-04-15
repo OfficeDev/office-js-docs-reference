@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.UI#displayDialogAsync:member(1)" />
+  - <xref uid="office!Office.UI#displayDialogAsync:member(1)"
+  alttext="Office.UI.displayDialogAsync" />
 
   #### Examples
 

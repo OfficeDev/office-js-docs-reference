@@ -10,35 +10,43 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BreakUpdateData#range:member" />
+  - <xref uid="word!Word.Interfaces.BreakUpdateData#range:member"
+  alttext="Word.Interfaces.BreakUpdateData.range" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#range:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.range"
   />
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#range:member" />
+  uid="word!Word.Interfaces.DatePickerContentControlUpdateData#range:member"
+  alttext="Word.Interfaces.DatePickerContentControlUpdateData.range" />
 
-  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member" />
+  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member"
+  alttext="Word.Interfaces.FieldUpdateData.result" />
 
-  - <xref uid="word!Word.Interfaces.FrameUpdateData#range:member" />
+  - <xref uid="word!Word.Interfaces.FrameUpdateData#range:member"
+  alttext="Word.Interfaces.FrameUpdateData.range" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlUpdateData#range:member"
-  />
+  alttext="Word.Interfaces.GroupContentControlUpdateData.range" />
 
-  - <xref uid="word!Word.Interfaces.HyperlinkUpdateData#range:member" />
+  - <xref uid="word!Word.Interfaces.HyperlinkUpdateData#range:member"
+  alttext="Word.Interfaces.HyperlinkUpdateData.range" />
 
-  - <xref uid="word!Word.Interfaces.NoteItemUpdateData#reference:member" />
+  - <xref uid="word!Word.Interfaces.NoteItemUpdateData#reference:member"
+  alttext="Word.Interfaces.NoteItemUpdateData.reference" />
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlUpdateData#range:member" />
+  uid="word!Word.Interfaces.PictureContentControlUpdateData#range:member"
+  alttext="Word.Interfaces.PictureContentControlUpdateData.range" />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#range:member"
-  />
+  alttext="Word.Interfaces.RepeatingSectionContentControlUpdateData.range" />
 
   - <xref uid="word!Word.Interfaces.RepeatingSectionItemUpdateData#range:member"
-  />
+  alttext="Word.Interfaces.RepeatingSectionItemUpdateData.range" />
 
 isPreview: false
 isDeprecated: false

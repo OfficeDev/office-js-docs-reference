@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#splitSpecial:member" />
+  - <xref uid="word!Word.Interfaces.ViewData#splitSpecial:member"
+  alttext="Word.Interfaces.ViewData.splitSpecial" />
 
-  - <xref uid="word!Word.Interfaces.ViewUpdateData#splitSpecial:member" />
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#splitSpecial:member"
+  alttext="Word.Interfaces.ViewUpdateData.splitSpecial" />
 
-  - <xref uid="word!Word.View#splitSpecial:member" />
+  - <xref uid="word!Word.View#splitSpecial:member"
+  alttext="Word.View.splitSpecial" />
 
 isPreview: false
 isDeprecated: false

@@ -13,31 +13,38 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member" />
+  uid="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member"
+  alttext="Word.Interfaces.FillFormatLoadOptions.backgroundColor" />
 
   - <xref
-  uid="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member" />
+  uid="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member"
+  alttext="Word.Interfaces.FillFormatLoadOptions.foregroundColor" />
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#textColor:member" />
+  - <xref uid="word!Word.Interfaces.FontLoadOptions#textColor:member"
+  alttext="Word.Interfaces.FontLoadOptions.textColor" />
 
-  - <xref uid="word!Word.Interfaces.GlowFormatLoadOptions#color:member" />
-
-  - <xref
-  uid="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member" />
-
-  - <xref
-  uid="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member" />
+  - <xref uid="word!Word.Interfaces.GlowFormatLoadOptions#color:member"
+  alttext="Word.Interfaces.GlowFormatLoadOptions.color" />
 
   - <xref
-  uid="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member" />
+  uid="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member"
+  alttext="Word.Interfaces.LineFormatLoadOptions.backgroundColor" />
+
+  - <xref
+  uid="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member"
+  alttext="Word.Interfaces.LineFormatLoadOptions.foregroundColor" />
+
+  - <xref
+  uid="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member"
+  alttext="Word.Interfaces.ShadowFormatLoadOptions.foregroundColor" />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatLoadOptions.contourColor" />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatLoadOptions.extrusionColor" />
 
 isPreview: false
 isDeprecated: false

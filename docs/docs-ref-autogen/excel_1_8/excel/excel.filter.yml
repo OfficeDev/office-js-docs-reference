@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableColumn#filter:member" />
+  - <xref uid="excel!Excel.TableColumn#filter:member"
+  alttext="Excel.TableColumn.filter" />
 
 isPreview: false
 isDeprecated: false

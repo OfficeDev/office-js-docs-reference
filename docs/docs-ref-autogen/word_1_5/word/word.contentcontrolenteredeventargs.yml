@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#onEntered:member" />
+  - <xref uid="word!Word.ContentControl#onEntered:member"
+  alttext="Word.ContentControl.onEntered" />
 
   #### Examples
 

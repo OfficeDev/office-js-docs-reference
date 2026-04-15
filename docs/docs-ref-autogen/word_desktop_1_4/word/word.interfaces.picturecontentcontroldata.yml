@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlData#pictureContentControl:member" />
+  uid="word!Word.Interfaces.ContentControlData#pictureContentControl:member"
+  alttext="Word.Interfaces.ContentControlData.pictureContentControl" />
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ListLevelCollection#items:member" />
+  - <xref uid="word!Word.ListLevelCollection#items:member"
+  alttext="Word.ListLevelCollection.items" />
 
   #### Examples
 

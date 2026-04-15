@@ -14,14 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#parentLabelStrategy:member" />
+  - <xref uid="excel!Excel.ChartSeries#parentLabelStrategy:member"
+  alttext="Excel.ChartSeries.parentLabelStrategy" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesData#parentLabelStrategy:member" />
+  uid="excel!Excel.Interfaces.ChartSeriesData#parentLabelStrategy:member"
+  alttext="Excel.Interfaces.ChartSeriesData.parentLabelStrategy" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesUpdateData#parentLabelStrategy:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.parentLabelStrategy" />
 
 isPreview: false
 isDeprecated: false

@@ -14,14 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartMapOptions#projectionType:member" />
+  - <xref uid="excel!Excel.ChartMapOptions#projectionType:member"
+  alttext="Excel.ChartMapOptions.projectionType" />
 
   - <xref uid="excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member"
-  />
+  alttext="Excel.Interfaces.ChartMapOptionsData.projectionType" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType:member"
-  />
+  alttext="Excel.Interfaces.ChartMapOptionsUpdateData.projectionType" />
 
 isPreview: false
 isDeprecated: false

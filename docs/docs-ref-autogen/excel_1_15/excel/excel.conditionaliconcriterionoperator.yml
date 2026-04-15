@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalIconCriterion#operator:member" />
+  - <xref uid="excel!Excel.ConditionalIconCriterion#operator:member"
+  alttext="Excel.ConditionalIconCriterion.operator" />
 
   #### Examples
 

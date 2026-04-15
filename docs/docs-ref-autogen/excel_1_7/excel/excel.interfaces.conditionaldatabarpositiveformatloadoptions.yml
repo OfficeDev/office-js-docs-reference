@@ -14,6 +14,7 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#positiveFormat:member"
+  alttext="Excel.Interfaces.DataBarConditionalFormatLoadOptions.positiveFormat"
   />
 
 isPreview: false

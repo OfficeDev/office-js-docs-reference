@@ -14,17 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#characters:member" />
+  - <xref uid="word!Word.Document#characters:member"
+  alttext="Word.Document.characters" />
 
-  - <xref uid="word!Word.Document#sentences:member" />
+  - <xref uid="word!Word.Document#sentences:member"
+  alttext="Word.Document.sentences" />
 
-  - <xref uid="word!Word.Document#words:member" />
+  - <xref uid="word!Word.Document#words:member" alttext="Word.Document.words" />
 
-  - <xref uid="word!Word.Selection#characters:member" />
+  - <xref uid="word!Word.Selection#characters:member"
+  alttext="Word.Selection.characters" />
 
-  - <xref uid="word!Word.Selection#sentences:member" />
+  - <xref uid="word!Word.Selection#sentences:member"
+  alttext="Word.Selection.sentences" />
 
-  - <xref uid="word!Word.Selection#words:member" />
+  - <xref uid="word!Word.Selection#words:member" alttext="Word.Selection.words"
+  />
 
 isPreview: false
 isDeprecated: false

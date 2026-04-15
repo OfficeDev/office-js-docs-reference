@@ -6,11 +6,15 @@ fullName: Word.Interfaces.CommentData
 summary: >-
   An interface describing the data returned by calling `comment.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.CommentCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.CommentCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.CommentCollectionData#items:member"
+  alttext="Word.Interfaces.CommentCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.CommentCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.CommentCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

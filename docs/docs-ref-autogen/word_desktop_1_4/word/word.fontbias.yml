@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionInsertSymbolOptions#bias:member" />
+  - <xref uid="word!Word.SelectionInsertSymbolOptions#bias:member"
+  alttext="Word.SelectionInsertSymbolOptions.bias" />
 
   #### Examples
 

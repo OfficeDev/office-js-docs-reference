@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member" />
+  uid="excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member"
+  alttext="Excel.Interfaces.PageLayoutUpdateData.headersFooters" />
 
 isPreview: false
 isDeprecated: false

@@ -4,10 +4,12 @@ uid: office!Office.GoToType:enum
 package: office!
 fullName: Office.GoToType
 summary: Specifies the type of place or object to navigate to.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.Document#goToByIdAsync:member(1)" />
+
+  - <xref uid="office!Office.Document#goToByIdAsync:member(1)"
+  alttext="Office.Document.goToByIdAsync" />
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#conditionalFormats:member" />
+  - <xref uid="excel!Excel.Range#conditionalFormats:member"
+  alttext="Excel.Range.conditionalFormats" />
 
-  - <xref uid="excel!Excel.RangeAreas#conditionalFormats:member" />
+  - <xref uid="excel!Excel.RangeAreas#conditionalFormats:member"
+  alttext="Excel.RangeAreas.conditionalFormats" />
 
 isPreview: false
 isDeprecated: false

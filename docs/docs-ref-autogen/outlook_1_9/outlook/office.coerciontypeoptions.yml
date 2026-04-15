@@ -12,17 +12,22 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)"
-  />
+  alttext="Office.AppointmentCompose.setSelectedDataAsync" />
 
-  - <xref uid="outlook!Office.Body#appendOnSendAsync:member(1)" />
+  - <xref uid="outlook!Office.Body#appendOnSendAsync:member(1)"
+  alttext="Office.Body.appendOnSendAsync" />
 
-  - <xref uid="outlook!Office.Body#prependAsync:member(1)" />
+  - <xref uid="outlook!Office.Body#prependAsync:member(1)"
+  alttext="Office.Body.prependAsync" />
 
-  - <xref uid="outlook!Office.Body#setAsync:member(1)" />
+  - <xref uid="outlook!Office.Body#setAsync:member(1)"
+  alttext="Office.Body.setAsync" />
 
-  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member(1)" />
+  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member(1)"
+  alttext="Office.Body.setSelectedDataAsync" />
 
-  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member(1)" />
+  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member(1)"
+  alttext="Office.MessageCompose.setSelectedDataAsync" />
 
   #### Examples
 

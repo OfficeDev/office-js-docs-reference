@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#windows:member" />
+  - <xref uid="word!Word.Document#windows:member"
+  alttext="Word.Document.windows" />
 
   #### Examples
 

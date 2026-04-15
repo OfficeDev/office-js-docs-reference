@@ -16,10 +16,10 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#paragraph:member"
-  />
+  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph" />
 
   - <xref uid="word!Word.Interfaces.InlinePictureLoadOptions#paragraph:member"
-  />
+  alttext="Word.Interfaces.InlinePictureLoadOptions.paragraph" />
 
 isPreview: false
 isDeprecated: false

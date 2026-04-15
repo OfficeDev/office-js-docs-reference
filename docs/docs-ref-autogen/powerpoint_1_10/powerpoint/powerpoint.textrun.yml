@@ -15,14 +15,17 @@ remarks: >-
 
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData#textRuns:member"
-  />
+  alttext="PowerPoint.Interfaces.TableCellData.textRuns" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#textRuns:member"
+  alttext="PowerPoint.Interfaces.TableCellUpdateData.textRuns" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#textRuns:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCell#textRuns:member"
+  alttext="PowerPoint.TableCell.textRuns" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCellProperties#textRuns:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellProperties#textRuns:member"
+  alttext="PowerPoint.TableCellProperties.textRuns" />
 
   #### Examples
 

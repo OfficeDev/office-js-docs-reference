@@ -17,14 +17,14 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#group:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.group" />
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#group:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeLoadOptions.group" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#group:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.group" />
 
 isPreview: false
 isDeprecated: false

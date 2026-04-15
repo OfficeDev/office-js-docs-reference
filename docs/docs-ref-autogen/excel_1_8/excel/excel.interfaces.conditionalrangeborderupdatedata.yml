@@ -12,19 +12,20 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member"
+  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom"
   />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top" />
 
 isPreview: false
 isDeprecated: false

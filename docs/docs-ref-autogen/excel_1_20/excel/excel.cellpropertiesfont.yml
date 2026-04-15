@@ -16,9 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#font:member" />
+  - <xref uid="excel!Excel.CellPropertiesFormat#font:member"
+  alttext="Excel.CellPropertiesFormat.font" />
 
-  - <xref uid="excel!Excel.RangeTextRun#font:member" />
+  - <xref uid="excel!Excel.RangeTextRun#font:member"
+  alttext="Excel.RangeTextRun.font" />
 
 isPreview: false
 isDeprecated: false

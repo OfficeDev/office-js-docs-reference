@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Shape#geometricShape:member" />
+  - <xref uid="excel!Excel.Shape#geometricShape:member"
+  alttext="Excel.Shape.geometricShape" />
 
 isPreview: false
 isDeprecated: false

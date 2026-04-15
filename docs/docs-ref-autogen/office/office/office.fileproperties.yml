@@ -11,7 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Document#getFilePropertiesAsync:member(1)" />
+  - <xref uid="office!Office.Document#getFilePropertiesAsync:member(1)"
+  alttext="Office.Document.getFilePropertiesAsync" />
 
   #### Examples
 

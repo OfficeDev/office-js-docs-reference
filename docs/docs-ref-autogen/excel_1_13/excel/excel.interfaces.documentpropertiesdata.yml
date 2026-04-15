@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.DocumentPropertiesData
 summary: >-
   An interface describing the data returned by calling
   `documentProperties.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#properties:member" />
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#properties:member"
+  alttext="Excel.Interfaces.WorkbookData.properties" />
 
 isPreview: false
 isDeprecated: false

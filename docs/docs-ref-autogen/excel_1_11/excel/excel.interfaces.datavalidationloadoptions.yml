@@ -17,13 +17,15 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeAreasLoadOptions#dataValidation:member" />
+  uid="excel!Excel.Interfaces.RangeAreasLoadOptions#dataValidation:member"
+  alttext="Excel.Interfaces.RangeAreasLoadOptions.dataValidation" />
 
   - <xref
   uid="excel!Excel.Interfaces.RangeCollectionLoadOptions#dataValidation:member"
-  />
+  alttext="Excel.Interfaces.RangeCollectionLoadOptions.dataValidation" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member"
+  alttext="Excel.Interfaces.RangeLoadOptions.dataValidation" />
 
 isPreview: false
 isDeprecated: false

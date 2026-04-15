@@ -14,11 +14,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#boxwhiskerOptions:member"
+  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.boxwhiskerOptions"
   />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#boxwhiskerOptions:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesLoadOptions.boxwhiskerOptions" />
 
 isPreview: false
 isDeprecated: false

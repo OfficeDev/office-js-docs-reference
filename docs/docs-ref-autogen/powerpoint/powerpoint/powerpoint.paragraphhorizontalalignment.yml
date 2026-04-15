@@ -19,27 +19,30 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData#horizontalAlignment:member"
-  />
+  alttext="PowerPoint.Interfaces.ParagraphFormatData.horizontalAlignment" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData#horizontalAlignment:member"
+  alttext="PowerPoint.Interfaces.ParagraphFormatUpdateData.horizontalAlignment"
   />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TableCellData#horizontalAlignment:member"
-  />
+  alttext="PowerPoint.Interfaces.TableCellData.horizontalAlignment" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TableCellUpdateData#horizontalAlignment:member"
-  />
+  alttext="PowerPoint.Interfaces.TableCellUpdateData.horizontalAlignment" />
 
   - <xref uid="powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member"
-  />
+  alttext="PowerPoint.ParagraphFormat.horizontalAlignment" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#horizontalAlignment:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCell#horizontalAlignment:member"
+  alttext="PowerPoint.TableCell.horizontalAlignment" />
 
   - <xref
-  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member" />
+  uid="powerpoint!PowerPoint.TableCellProperties#horizontalAlignment:member"
+  alttext="PowerPoint.TableCellProperties.horizontalAlignment" />
 
   #### Examples
 

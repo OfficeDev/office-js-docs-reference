@@ -14,18 +14,21 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member"
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparison"
   />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.textComparisonOrNullObject"
   />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparison:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.textComparison" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparisonOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.textComparisonOrNullObject"
   />
 
 isPreview: false

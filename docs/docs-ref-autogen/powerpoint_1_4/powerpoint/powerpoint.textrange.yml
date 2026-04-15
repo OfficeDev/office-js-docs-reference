@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TextFrame#textRange:member" />
+  - <xref uid="powerpoint!PowerPoint.TextFrame#textRange:member"
+  alttext="PowerPoint.TextFrame.textRange" />
 
   #### Examples
 

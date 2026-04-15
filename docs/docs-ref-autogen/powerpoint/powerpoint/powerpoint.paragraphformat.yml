@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TextRange#paragraphFormat:member" />
+  - <xref uid="powerpoint!PowerPoint.TextRange#paragraphFormat:member"
+  alttext="PowerPoint.TextRange.paragraphFormat" />
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#customProperties:member" />
+  - <xref uid="excel!Excel.Worksheet#customProperties:member"
+  alttext="Excel.Worksheet.customProperties" />
 
 isPreview: false
 isDeprecated: false

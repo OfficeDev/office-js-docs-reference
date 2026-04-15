@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicViewLayouts#compact:member" />
+  - <xref uid="excel!Excel.BasicViewLayouts#compact:member"
+  alttext="Excel.BasicViewLayouts.compact" />
 
 isPreview: false
 isDeprecated: false

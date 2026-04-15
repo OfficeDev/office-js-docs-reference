@@ -13,13 +13,16 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.DocumentExportAsFixedFormat2Options#createBookmarks:member" />
+  uid="word!Word.DocumentExportAsFixedFormat2Options#createBookmarks:member"
+  alttext="Word.DocumentExportAsFixedFormat2Options.createBookmarks" />
 
   - <xref
-  uid="word!Word.DocumentExportAsFixedFormat3Options#createBookmarks:member" />
+  uid="word!Word.DocumentExportAsFixedFormat3Options#createBookmarks:member"
+  alttext="Word.DocumentExportAsFixedFormat3Options.createBookmarks" />
 
   - <xref
-  uid="word!Word.DocumentExportAsFixedFormatOptions#createBookmarks:member" />
+  uid="word!Word.DocumentExportAsFixedFormatOptions#createBookmarks:member"
+  alttext="Word.DocumentExportAsFixedFormatOptions.createBookmarks" />
 
 isPreview: false
 isDeprecated: false

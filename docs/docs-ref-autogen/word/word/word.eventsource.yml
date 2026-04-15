@@ -15,26 +15,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentEventArgs#source:member" />
+  - <xref uid="word!Word.CommentEventArgs#source:member"
+  alttext="Word.CommentEventArgs.source" />
 
-  - <xref uid="word!Word.ContentControlAddedEventArgs#source:member" />
+  - <xref uid="word!Word.ContentControlAddedEventArgs#source:member"
+  alttext="Word.ContentControlAddedEventArgs.source" />
 
-  - <xref uid="word!Word.ContentControlDataChangedEventArgs#source:member" />
+  - <xref uid="word!Word.ContentControlDataChangedEventArgs#source:member"
+  alttext="Word.ContentControlDataChangedEventArgs.source" />
 
-  - <xref uid="word!Word.ContentControlDeletedEventArgs#source:member" />
+  - <xref uid="word!Word.ContentControlDeletedEventArgs#source:member"
+  alttext="Word.ContentControlDeletedEventArgs.source" />
 
-  - <xref uid="word!Word.ContentControlEnteredEventArgs#source:member" />
+  - <xref uid="word!Word.ContentControlEnteredEventArgs#source:member"
+  alttext="Word.ContentControlEnteredEventArgs.source" />
 
-  - <xref uid="word!Word.ContentControlExitedEventArgs#source:member" />
+  - <xref uid="word!Word.ContentControlExitedEventArgs#source:member"
+  alttext="Word.ContentControlExitedEventArgs.source" />
 
   - <xref uid="word!Word.ContentControlSelectionChangedEventArgs#source:member"
-  />
+  alttext="Word.ContentControlSelectionChangedEventArgs.source" />
 
-  - <xref uid="word!Word.ParagraphAddedEventArgs#source:member" />
+  - <xref uid="word!Word.ParagraphAddedEventArgs#source:member"
+  alttext="Word.ParagraphAddedEventArgs.source" />
 
-  - <xref uid="word!Word.ParagraphChangedEventArgs#source:member" />
+  - <xref uid="word!Word.ParagraphChangedEventArgs#source:member"
+  alttext="Word.ParagraphChangedEventArgs.source" />
 
-  - <xref uid="word!Word.ParagraphDeletedEventArgs#source:member" />
+  - <xref uid="word!Word.ParagraphDeletedEventArgs#source:member"
+  alttext="Word.ParagraphDeletedEventArgs.source" />
 
   #### Examples
 

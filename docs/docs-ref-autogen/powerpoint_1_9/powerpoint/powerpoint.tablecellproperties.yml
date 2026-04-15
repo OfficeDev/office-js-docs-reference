@@ -15,10 +15,12 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.TableAddOptions#specificCellProperties:member" />
+  uid="powerpoint!PowerPoint.TableAddOptions#specificCellProperties:member"
+  alttext="PowerPoint.TableAddOptions.specificCellProperties" />
 
   - <xref
-  uid="powerpoint!PowerPoint.TableAddOptions#uniformCellProperties:member" />
+  uid="powerpoint!PowerPoint.TableAddOptions#uniformCellProperties:member"
+  alttext="PowerPoint.TableAddOptions.uniformCellProperties" />
 
   #### Examples
 

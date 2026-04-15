@@ -8,58 +8,80 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BookmarkData#range:member" />
+  - <xref uid="word!Word.Interfaces.BookmarkData#range:member"
+  alttext="Word.Interfaces.BookmarkData.range" />
 
-  - <xref uid="word!Word.Interfaces.BreakData#range:member" />
+  - <xref uid="word!Word.Interfaces.BreakData#range:member"
+  alttext="Word.Interfaces.BreakData.range" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#range:member"
-  />
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.range" />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringLockData#range:member" />
+  - <xref uid="word!Word.Interfaces.CoauthoringLockData#range:member"
+  alttext="Word.Interfaces.CoauthoringLockData.range" />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringUpdateData#range:member" />
+  - <xref uid="word!Word.Interfaces.CoauthoringUpdateData#range:member"
+  alttext="Word.Interfaces.CoauthoringUpdateData.range" />
 
-  - <xref uid="word!Word.Interfaces.ConflictData#range:member" />
+  - <xref uid="word!Word.Interfaces.ConflictData#range:member"
+  alttext="Word.Interfaces.ConflictData.range" />
 
   - <xref uid="word!Word.Interfaces.DatePickerContentControlData#range:member"
-  />
+  alttext="Word.Interfaces.DatePickerContentControlData.range" />
 
-  - <xref uid="word!Word.Interfaces.EditorData#nextRange:member" />
+  - <xref uid="word!Word.Interfaces.EditorData#nextRange:member"
+  alttext="Word.Interfaces.EditorData.nextRange" />
 
-  - <xref uid="word!Word.Interfaces.EditorData#range:member" />
+  - <xref uid="word!Word.Interfaces.EditorData#range:member"
+  alttext="Word.Interfaces.EditorData.range" />
 
-  - <xref uid="word!Word.Interfaces.FieldData#result:member" />
+  - <xref uid="word!Word.Interfaces.FieldData#result:member"
+  alttext="Word.Interfaces.FieldData.result" />
 
-  - <xref uid="word!Word.Interfaces.FrameData#range:member" />
+  - <xref uid="word!Word.Interfaces.FrameData#range:member"
+  alttext="Word.Interfaces.FrameData.range" />
 
-  - <xref uid="word!Word.Interfaces.GroupContentControlData#range:member" />
+  - <xref uid="word!Word.Interfaces.GroupContentControlData#range:member"
+  alttext="Word.Interfaces.GroupContentControlData.range" />
 
-  - <xref uid="word!Word.Interfaces.HyperlinkData#range:member" />
+  - <xref uid="word!Word.Interfaces.HyperlinkData#range:member"
+  alttext="Word.Interfaces.HyperlinkData.range" />
 
-  - <xref uid="word!Word.Interfaces.IndexData#range:member" />
+  - <xref uid="word!Word.Interfaces.IndexData#range:member"
+  alttext="Word.Interfaces.IndexData.range" />
 
-  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member" />
+  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member"
+  alttext="Word.Interfaces.NoteItemData.reference" />
 
-  - <xref uid="word!Word.Interfaces.PictureContentControlData#range:member" />
+  - <xref uid="word!Word.Interfaces.PictureContentControlData#range:member"
+  alttext="Word.Interfaces.PictureContentControlData.range" />
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member"
+  alttext="Word.Interfaces.RangeCollectionData.items" />
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member" />
+  - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.RangeCollectionUpdateData.items" />
 
-  - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member"
+  alttext="Word.Interfaces.RangeScopedCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.RangeScopedCollectionUpdateData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionContentControlData#range:member" />
+  uid="word!Word.Interfaces.RepeatingSectionContentControlData#range:member"
+  alttext="Word.Interfaces.RepeatingSectionContentControlData.range" />
 
-  - <xref uid="word!Word.Interfaces.RepeatingSectionItemData#range:member" />
+  - <xref uid="word!Word.Interfaces.RepeatingSectionItemData#range:member"
+  alttext="Word.Interfaces.RepeatingSectionItemData.range" />
 
-  - <xref uid="word!Word.Interfaces.RevisionData#movedRange:member" />
+  - <xref uid="word!Word.Interfaces.RevisionData#movedRange:member"
+  alttext="Word.Interfaces.RevisionData.movedRange" />
 
-  - <xref uid="word!Word.Interfaces.RevisionData#range:member" />
+  - <xref uid="word!Word.Interfaces.RevisionData#range:member"
+  alttext="Word.Interfaces.RevisionData.range" />
 
 isPreview: false
 isDeprecated: false

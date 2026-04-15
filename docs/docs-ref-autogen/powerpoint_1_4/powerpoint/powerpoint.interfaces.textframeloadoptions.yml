@@ -15,10 +15,11 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#textFrame:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.textFrame" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#textFrame:member" />
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#textFrame:member"
+  alttext="PowerPoint.Interfaces.ShapeLoadOptions.textFrame" />
 
 isPreview: false
 isDeprecated: false

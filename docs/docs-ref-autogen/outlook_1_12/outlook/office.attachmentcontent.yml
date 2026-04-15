@@ -24,16 +24,19 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(1)" />
+  uid="outlook!Office.AppointmentCompose#getAttachmentContentAsync:member(1)"
+  alttext="Office.AppointmentCompose.getAttachmentContentAsync" />
 
   - <xref
-  uid="outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)" />
+  uid="outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)"
+  alttext="Office.AppointmentRead.getAttachmentContentAsync" />
 
   - <xref
-  uid="outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)" />
+  uid="outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)"
+  alttext="Office.MessageCompose.getAttachmentContentAsync" />
 
   - <xref uid="outlook!Office.MessageRead#getAttachmentContentAsync:member(1)"
-  />
+  alttext="Office.MessageRead.getAttachmentContentAsync" />
 
   #### Examples
 

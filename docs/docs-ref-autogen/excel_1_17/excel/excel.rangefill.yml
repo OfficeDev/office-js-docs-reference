@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeFormat#fill:member" />
+  - <xref uid="excel!Excel.RangeFormat#fill:member"
+  alttext="Excel.RangeFormat.fill" />
 
-  - <xref uid="excel!Excel.Style#fill:member" />
+  - <xref uid="excel!Excel.Style#fill:member" alttext="Excel.Style.fill" />
 
 isPreview: false
 isDeprecated: false

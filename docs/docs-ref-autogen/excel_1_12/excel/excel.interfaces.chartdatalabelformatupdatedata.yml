@@ -11,9 +11,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member"
-  />
+  alttext="Excel.Interfaces.ChartDataLabelsUpdateData.format" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#format:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#format:member"
+  alttext="Excel.Interfaces.ChartDataLabelUpdateData.format" />
 
 isPreview: false
 isDeprecated: false

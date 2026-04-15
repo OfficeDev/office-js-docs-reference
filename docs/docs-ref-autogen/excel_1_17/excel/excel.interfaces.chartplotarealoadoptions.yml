@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#plotArea:member" />
+  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#plotArea:member"
+  alttext="Excel.Interfaces.ChartCollectionLoadOptions.plotArea" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#plotArea:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#plotArea:member"
+  alttext="Excel.Interfaces.ChartLoadOptions.plotArea" />
 
 isPreview: false
 isDeprecated: false

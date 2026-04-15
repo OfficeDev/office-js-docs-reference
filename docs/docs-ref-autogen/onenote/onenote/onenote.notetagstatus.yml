@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.NoteTagData#status:member" />
+  - <xref uid="onenote!OneNote.Interfaces.NoteTagData#status:member"
+  alttext="OneNote.Interfaces.NoteTagData.status" />
 
-  - <xref uid="onenote!OneNote.NoteTag#status:member" />
+  - <xref uid="onenote!OneNote.NoteTag#status:member"
+  alttext="OneNote.NoteTag.status" />
 
 isPreview: false
 isDeprecated: false

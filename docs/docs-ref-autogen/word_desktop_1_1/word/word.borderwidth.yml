@@ -13,23 +13,27 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Border#width:member" />
+  - <xref uid="word!Word.Border#width:member" alttext="Word.Border.width" />
 
-  - <xref uid="word!Word.BorderCollection#insideBorderWidth:member" />
+  - <xref uid="word!Word.BorderCollection#insideBorderWidth:member"
+  alttext="Word.BorderCollection.insideBorderWidth" />
 
-  - <xref uid="word!Word.BorderCollection#outsideBorderWidth:member" />
+  - <xref uid="word!Word.BorderCollection#outsideBorderWidth:member"
+  alttext="Word.BorderCollection.outsideBorderWidth" />
 
   - <xref
   uid="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderWidth:member"
-  />
+  alttext="Word.Interfaces.BorderCollectionUpdateData.insideBorderWidth" />
 
   - <xref
   uid="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderWidth:member"
-  />
+  alttext="Word.Interfaces.BorderCollectionUpdateData.outsideBorderWidth" />
 
-  - <xref uid="word!Word.Interfaces.BorderData#width:member" />
+  - <xref uid="word!Word.Interfaces.BorderData#width:member"
+  alttext="Word.Interfaces.BorderData.width" />
 
-  - <xref uid="word!Word.Interfaces.BorderUpdateData#width:member" />
+  - <xref uid="word!Word.Interfaces.BorderUpdateData#width:member"
+  alttext="Word.Interfaces.BorderUpdateData.width" />
 
   #### Examples
 

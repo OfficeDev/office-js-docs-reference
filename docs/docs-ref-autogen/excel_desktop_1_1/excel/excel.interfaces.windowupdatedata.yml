@@ -11,7 +11,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ApplicationUpdateData#activeWindow:member"
-  />
+  alttext="Excel.Interfaces.ApplicationUpdateData.activeWindow" />
 
 isPreview: false
 isDeprecated: false

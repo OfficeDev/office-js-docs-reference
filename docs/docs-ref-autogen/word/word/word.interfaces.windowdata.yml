@@ -6,15 +6,27 @@ fullName: Word.Interfaces.WindowData
 summary: >-
   An interface describing the data returned by calling `window.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentData#activeWindow:member" />
-  - <xref uid="word!Word.Interfaces.DocumentData#windows:member" />
-  - <xref uid="word!Word.Interfaces.WindowCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.WindowCollectionUpdateData#items:member" />
-  - <xref uid="word!Word.Interfaces.WindowData#next:member" />
-  - <xref uid="word!Word.Interfaces.WindowData#previous:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#activeWindow:member"
+  alttext="Word.Interfaces.DocumentData.activeWindow" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#windows:member"
+  alttext="Word.Interfaces.DocumentData.windows" />
+
+  - <xref uid="word!Word.Interfaces.WindowCollectionData#items:member"
+  alttext="Word.Interfaces.WindowCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.WindowCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.WindowCollectionUpdateData.items" />
+
+  - <xref uid="word!Word.Interfaces.WindowData#next:member"
+  alttext="Word.Interfaces.WindowData.next" />
+
+  - <xref uid="word!Word.Interfaces.WindowData#previous:member"
+  alttext="Word.Interfaces.WindowData.previous" />
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.ShapeGetImageOptions#format:member" />
+  - <xref uid="powerpoint!PowerPoint.ShapeGetImageOptions#format:member"
+  alttext="PowerPoint.ShapeGetImageOptions.format" />
 
   #### Examples
 

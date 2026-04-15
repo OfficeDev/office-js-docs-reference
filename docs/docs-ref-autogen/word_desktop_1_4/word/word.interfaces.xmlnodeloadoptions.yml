@@ -13,31 +13,39 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member" />
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#firstChild:member"
+  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.firstChild" />
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member" />
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#lastChild:member"
+  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.lastChild" />
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member" />
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#nextSibling:member"
+  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.nextSibling" />
 
   - <xref
-  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member" />
+  uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#parentNode:member"
+  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.parentNode" />
 
   - <xref
   uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#previousSibling:member"
-  />
+  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.previousSibling" />
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member" />
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member"
+  alttext="Word.Interfaces.XmlNodeLoadOptions.firstChild" />
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member" />
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member"
+  alttext="Word.Interfaces.XmlNodeLoadOptions.lastChild" />
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#nextSibling:member" />
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#nextSibling:member"
+  alttext="Word.Interfaces.XmlNodeLoadOptions.nextSibling" />
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#parentNode:member" />
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#parentNode:member"
+  alttext="Word.Interfaces.XmlNodeLoadOptions.parentNode" />
 
   - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#previousSibling:member"
-  />
+  alttext="Word.Interfaces.XmlNodeLoadOptions.previousSibling" />
 
 isPreview: false
 isDeprecated: false

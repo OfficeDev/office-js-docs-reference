@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.NamedSheetViewCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.NamedSheetViewCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

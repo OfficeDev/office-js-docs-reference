@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlData#comboBoxContentControl:member" />
+  uid="word!Word.Interfaces.ContentControlData#comboBoxContentControl:member"
+  alttext="Word.Interfaces.ContentControlData.comboBoxContentControl" />
 
 isPreview: false
 isDeprecated: false

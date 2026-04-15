@@ -15,9 +15,11 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#type:member" />
+  uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#type:member"
+  alttext="PowerPoint.Interfaces.PlaceholderFormatData.type" />
 
-  - <xref uid="powerpoint!PowerPoint.PlaceholderFormat#type:member" />
+  - <xref uid="powerpoint!PowerPoint.PlaceholderFormat#type:member"
+  alttext="PowerPoint.PlaceholderFormat.type" />
 
   #### Examples
 

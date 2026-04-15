@@ -10,13 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#line:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#line:member"
+  alttext="Excel.Interfaces.ChartAxisFormatUpdateData.line" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member" />
+  uid="excel!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member"
+  alttext="Excel.Interfaces.ChartGridlinesFormatUpdateData.line" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData#line:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesFormatUpdateData.line" />
 
 isPreview: false
 isDeprecated: false

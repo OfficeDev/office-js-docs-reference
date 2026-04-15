@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.DataRefreshCompleteEventArgs#document:member" />
+  - <xref uid="visio!Visio.DataRefreshCompleteEventArgs#document:member"
+  alttext="Visio.DataRefreshCompleteEventArgs.document" />
 
-  - <xref uid="visio!Visio.RequestContext#document:member" />
+  - <xref uid="visio!Visio.RequestContext#document:member"
+  alttext="Visio.RequestContext.document" />
 
 isPreview: false
 isDeprecated: false

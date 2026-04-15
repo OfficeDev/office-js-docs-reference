@@ -14,7 +14,7 @@ remarks: >-
 
 
   - <xref uid="powerpoint!PowerPoint.DocumentProperties#customProperties:member"
-  />
+  alttext="PowerPoint.DocumentProperties.customProperties" />
 
 isPreview: false
 isDeprecated: false

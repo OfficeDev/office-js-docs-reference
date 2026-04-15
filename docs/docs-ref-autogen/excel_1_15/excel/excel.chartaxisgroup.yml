@@ -12,15 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#axisGroup:member" />
+  - <xref uid="excel!Excel.ChartAxis#axisGroup:member"
+  alttext="Excel.ChartAxis.axisGroup" />
 
-  - <xref uid="excel!Excel.ChartSeries#axisGroup:member" />
+  - <xref uid="excel!Excel.ChartSeries#axisGroup:member"
+  alttext="Excel.ChartSeries.axisGroup" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#axisGroup:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#axisGroup:member"
+  alttext="Excel.Interfaces.ChartAxisData.axisGroup" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#axisGroup:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#axisGroup:member"
+  alttext="Excel.Interfaces.ChartSeriesData.axisGroup" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#axisGroup:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#axisGroup:member"
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.axisGroup" />
 
 isPreview: false
 isDeprecated: false

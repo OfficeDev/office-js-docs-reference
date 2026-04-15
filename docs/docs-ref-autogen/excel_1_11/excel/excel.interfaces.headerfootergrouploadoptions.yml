@@ -13,7 +13,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.PageLayoutLoadOptions#headersFooters:member" />
+  uid="excel!Excel.Interfaces.PageLayoutLoadOptions#headersFooters:member"
+  alttext="Excel.Interfaces.PageLayoutLoadOptions.headersFooters" />
 
 isPreview: false
 isDeprecated: false

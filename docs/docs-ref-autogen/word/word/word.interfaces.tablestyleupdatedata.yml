@@ -6,10 +6,12 @@ fullName: Word.Interfaces.TableStyleUpdateData
 summary: >-
   An interface for updating data on the `TableStyle` object, for use in
   `tableStyle.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#tableStyle:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#tableStyle:member"
+  alttext="Word.Interfaces.StyleUpdateData.tableStyle" />
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,8 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member"
+  alttext="PowerPoint.Interfaces.TextRangeLoadOptions.font" />
 
 isPreview: false
 isDeprecated: false

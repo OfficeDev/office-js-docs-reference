@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BindingCollection#items:member" />
+  - <xref uid="excel!Excel.BindingCollection#items:member"
+  alttext="Excel.BindingCollection.items" />
 
 isPreview: false
 isDeprecated: false

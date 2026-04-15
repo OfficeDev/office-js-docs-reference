@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.LineNumberingData#restartMode:member" />
+  - <xref uid="word!Word.Interfaces.LineNumberingData#restartMode:member"
+  alttext="Word.Interfaces.LineNumberingData.restartMode" />
 
   - <xref uid="word!Word.Interfaces.LineNumberingUpdateData#restartMode:member"
-  />
+  alttext="Word.Interfaces.LineNumberingUpdateData.restartMode" />
 
-  - <xref uid="word!Word.LineNumbering#restartMode:member" />
+  - <xref uid="word!Word.LineNumbering#restartMode:member"
+  alttext="Word.LineNumbering.restartMode" />
 
 isPreview: false
 isDeprecated: false

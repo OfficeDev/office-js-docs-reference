@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#frames:member" />
+  - <xref uid="word!Word.Document#frames:member" alttext="Word.Document.frames"
+  />
 
-  - <xref uid="word!Word.Range#frames:member" />
+  - <xref uid="word!Word.Range#frames:member" alttext="Word.Range.frames" />
 
 isPreview: false
 isDeprecated: false

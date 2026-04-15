@@ -12,10 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalRangeBorder#sideIndex:member" />
+  - <xref uid="excel!Excel.ConditionalRangeBorder#sideIndex:member"
+  alttext="Excel.ConditionalRangeBorder.sideIndex" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderData#sideIndex:member" />
+  uid="excel!Excel.Interfaces.ConditionalRangeBorderData#sideIndex:member"
+  alttext="Excel.Interfaces.ConditionalRangeBorderData.sideIndex" />
 
 isPreview: false
 isDeprecated: false

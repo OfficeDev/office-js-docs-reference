@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlPart#errors:member" />
+  - <xref uid="word!Word.CustomXmlPart#errors:member"
+  alttext="Word.CustomXmlPart.errors" />
 
 isPreview: true
 isDeprecated: false

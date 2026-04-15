@@ -10,12 +10,18 @@ summary: >-
 
   \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.SettableCellProperties#format:member" />
-  - <xref uid="excel!Excel.SettableColumnProperties#format:member" />
-  - <xref uid="excel!Excel.SettableRowProperties#format:member" />
+
+  - <xref uid="excel!Excel.SettableCellProperties#format:member"
+  alttext="Excel.SettableCellProperties.format" />
+
+  - <xref uid="excel!Excel.SettableColumnProperties#format:member"
+  alttext="Excel.SettableColumnProperties.format" />
+
+  - <xref uid="excel!Excel.SettableRowProperties#format:member"
+  alttext="Excel.SettableRowProperties.format" />
 
 isPreview: false
 isDeprecated: false

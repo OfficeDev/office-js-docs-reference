@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TrackedChangeCollection#items:member" />
+  - <xref uid="word!Word.TrackedChangeCollection#items:member"
+  alttext="Word.TrackedChangeCollection.items" />
 
   #### Examples
 

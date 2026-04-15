@@ -6,10 +6,12 @@ fullName: Word.Interfaces.LineNumberingUpdateData
 summary: >-
   An interface for updating data on the `LineNumbering` object, for use in
   `lineNumbering.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#lineNumbering:member" />
+
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#lineNumbering:member"
+  alttext="Word.Interfaces.PageSetupUpdateData.lineNumbering" />
 
 isPreview: false
 isDeprecated: false

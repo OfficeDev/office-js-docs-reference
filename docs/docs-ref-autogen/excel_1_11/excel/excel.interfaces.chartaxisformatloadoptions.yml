@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions#format:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisLoadOptions#format:member"
+  alttext="Excel.Interfaces.ChartAxisLoadOptions.format" />
 
 isPreview: false
 isDeprecated: false

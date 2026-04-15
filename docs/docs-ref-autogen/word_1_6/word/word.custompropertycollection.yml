@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentProperties#customProperties:member" />
+  - <xref uid="word!Word.DocumentProperties#customProperties:member"
+  alttext="Word.DocumentProperties.customProperties" />
 
   #### Examples
 

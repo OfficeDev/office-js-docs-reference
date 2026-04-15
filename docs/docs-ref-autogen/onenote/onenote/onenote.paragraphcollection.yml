@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Outline#paragraphs:member" />
+  - <xref uid="onenote!OneNote.Outline#paragraphs:member"
+  alttext="OneNote.Outline.paragraphs" />
 
-  - <xref uid="onenote!OneNote.Paragraph#paragraphs:member" />
+  - <xref uid="onenote!OneNote.Paragraph#paragraphs:member"
+  alttext="OneNote.Paragraph.paragraphs" />
 
-  - <xref uid="onenote!OneNote.TableCell#paragraphs:member" />
+  - <xref uid="onenote!OneNote.TableCell#paragraphs:member"
+  alttext="OneNote.TableCell.paragraphs" />
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListLevelData#numberStyle:member" />
+  - <xref uid="word!Word.Interfaces.ListLevelData#numberStyle:member"
+  alttext="Word.Interfaces.ListLevelData.numberStyle" />
 
-  - <xref uid="word!Word.Interfaces.ListLevelUpdateData#numberStyle:member" />
+  - <xref uid="word!Word.Interfaces.ListLevelUpdateData#numberStyle:member"
+  alttext="Word.Interfaces.ListLevelUpdateData.numberStyle" />
 
-  - <xref uid="word!Word.ListLevel#numberStyle:member" />
+  - <xref uid="word!Word.ListLevel#numberStyle:member"
+  alttext="Word.ListLevel.numberStyle" />
 
   #### Examples
 

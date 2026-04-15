@@ -29,12 +29,14 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)"
-  />
+  alttext="Office.AppointmentCompose.getAttachmentsAsync" />
 
   - <xref
-  uid="outlook!Office.LoadedMessageCompose#getAttachmentsAsync:member(1)" />
+  uid="outlook!Office.LoadedMessageCompose#getAttachmentsAsync:member(1)"
+  alttext="Office.LoadedMessageCompose.getAttachmentsAsync" />
 
-  - <xref uid="outlook!Office.MessageCompose#getAttachmentsAsync:member(1)" />
+  - <xref uid="outlook!Office.MessageCompose#getAttachmentsAsync:member(1)"
+  alttext="Office.MessageCompose.getAttachmentsAsync" />
 
   #### Examples
 

@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlListItemCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.ContentControlListItemCollectionData.items" />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlListItemCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.ContentControlListItemCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

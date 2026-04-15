@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#onActivated:member" />
+  - <xref uid="excel!Excel.Workbook#onActivated:member"
+  alttext="Excel.Workbook.onActivated" />
 
   #### Examples
 

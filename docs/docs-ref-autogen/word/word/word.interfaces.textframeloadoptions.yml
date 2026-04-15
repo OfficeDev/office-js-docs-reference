@@ -15,9 +15,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#textFrame:member"
-  />
+  alttext="Word.Interfaces.ShapeCollectionLoadOptions.textFrame" />
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#textFrame:member" />
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#textFrame:member"
+  alttext="Word.Interfaces.ShapeLoadOptions.textFrame" />
 
 isPreview: false
 isDeprecated: false

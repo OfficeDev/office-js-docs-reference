@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlData#checkboxContentControl:member" />
+  uid="word!Word.Interfaces.ContentControlData#checkboxContentControl:member"
+  alttext="Word.Interfaces.ContentControlData.checkboxContentControl" />
 
 isPreview: false
 isDeprecated: false

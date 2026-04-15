@@ -4,15 +4,27 @@ uid: excel!Excel.Interfaces.RangeData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeData
 summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#areas:member" />
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionData#items:member" />
-  - <xref uid="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member" />
-  - <xref uid="excel!Excel.Interfaces.WindowData#activeCell:member" />
-  - <xref uid="excel!Excel.Interfaces.WindowData#visibleRange:member" />
-  - <xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member" />
+
+  - <xref uid="excel!Excel.Interfaces.RangeAreasData#areas:member"
+  alttext="Excel.Interfaces.RangeAreasData.areas" />
+
+  - <xref uid="excel!Excel.Interfaces.RangeCollectionData#items:member"
+  alttext="Excel.Interfaces.RangeCollectionData.items" />
+
+  - <xref uid="excel!Excel.Interfaces.RangeCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.RangeCollectionUpdateData.items" />
+
+  - <xref uid="excel!Excel.Interfaces.WindowData#activeCell:member"
+  alttext="Excel.Interfaces.WindowData.activeCell" />
+
+  - <xref uid="excel!Excel.Interfaces.WindowData#visibleRange:member"
+  alttext="Excel.Interfaces.WindowData.visibleRange" />
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData#ranges:member"
+  alttext="Excel.Interfaces.WorkbookRangeAreasData.ranges" />
 
 isPreview: false
 isDeprecated: false

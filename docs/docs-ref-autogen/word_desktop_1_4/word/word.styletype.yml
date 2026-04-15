@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.StyleData#type:member" />
+  - <xref uid="word!Word.Interfaces.StyleData#type:member"
+  alttext="Word.Interfaces.StyleData.type" />
 
-  - <xref uid="word!Word.Style#type:member" />
+  - <xref uid="word!Word.Style#type:member" alttext="Word.Style.type" />
 
   #### Examples
 

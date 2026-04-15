@@ -14,23 +14,25 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#bottom:member" />
+  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#bottom:member"
+  alttext="PowerPoint.Interfaces.BordersLoadOptions.bottom" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalDown:member"
-  />
+  alttext="PowerPoint.Interfaces.BordersLoadOptions.diagonalDown" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member" />
+  uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member"
+  alttext="PowerPoint.Interfaces.BordersLoadOptions.diagonalUp" />
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#left:member"
-  />
+  alttext="PowerPoint.Interfaces.BordersLoadOptions.left" />
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#right:member"
-  />
+  alttext="PowerPoint.Interfaces.BordersLoadOptions.right" />
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions#top:member"
-  />
+  alttext="PowerPoint.Interfaces.BordersLoadOptions.top" />
 
 isPreview: false
 isDeprecated: false

@@ -10,14 +10,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListFormatData#listTemplate:member" />
+  - <xref uid="word!Word.Interfaces.ListFormatData#listTemplate:member"
+  alttext="Word.Interfaces.ListFormatData.listTemplate" />
 
-  - <xref uid="word!Word.Interfaces.ListTemplateCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.ListTemplateCollectionData#items:member"
+  alttext="Word.Interfaces.ListTemplateCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.ListTemplateCollectionUpdateData.items" />
 
-  - <xref uid="word!Word.Interfaces.StyleData#listTemplate:member" />
+  - <xref uid="word!Word.Interfaces.StyleData#listTemplate:member"
+  alttext="Word.Interfaces.StyleData.listTemplate" />
 
 isPreview: false
 isDeprecated: false

@@ -13,17 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#chartType:member" />
+  - <xref uid="excel!Excel.Chart#chartType:member"
+  alttext="Excel.Chart.chartType" />
 
-  - <xref uid="excel!Excel.ChartSeries#chartType:member" />
+  - <xref uid="excel!Excel.ChartSeries#chartType:member"
+  alttext="Excel.ChartSeries.chartType" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#chartType:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartData#chartType:member"
+  alttext="Excel.Interfaces.ChartData.chartType" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#chartType:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#chartType:member"
+  alttext="Excel.Interfaces.ChartSeriesData.chartType" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member"
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.chartType" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#chartType:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#chartType:member"
+  alttext="Excel.Interfaces.ChartUpdateData.chartType" />
 
   #### Examples
 

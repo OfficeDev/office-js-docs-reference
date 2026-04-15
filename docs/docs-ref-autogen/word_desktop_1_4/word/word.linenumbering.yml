@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.PageSetup#lineNumbering:member" />
+  - <xref uid="word!Word.PageSetup#lineNumbering:member"
+  alttext="Word.PageSetup.lineNumbering" />
 
 isPreview: false
 isDeprecated: false

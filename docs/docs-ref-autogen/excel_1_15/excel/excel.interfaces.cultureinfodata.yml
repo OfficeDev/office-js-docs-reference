@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.CultureInfoData
 summary: >-
   An interface describing the data returned by calling
   `cultureInfo.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ApplicationData#cultureInfo:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ApplicationData#cultureInfo:member"
+  alttext="Excel.Interfaces.ApplicationData.cultureInfo" />
 
 isPreview: false
 isDeprecated: false

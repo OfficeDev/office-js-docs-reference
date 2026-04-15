@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.WorksheetUpdateData
 summary: >-
   An interface for updating data on the `Worksheet` object, for use in
   `worksheet.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member" />
+
+  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member"
+  alttext="Excel.Interfaces.SlicerUpdateData.worksheet" />
 
 isPreview: false
 isDeprecated: false

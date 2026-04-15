@@ -18,37 +18,42 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.BodyLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.ContentControlLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.InlinePictureLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl"
   />
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member" />
+  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentContentControl" />
 
   - <xref
-  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member" />
+  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.RangeLoadOptions.parentContentControl" />
 
 isPreview: false
 isDeprecated: false

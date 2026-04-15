@@ -20,7 +20,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#userProfile:member" />
+  - <xref uid="outlook!Office.Mailbox#userProfile:member"
+  alttext="Office.Mailbox.userProfile" />
 
 isPreview: false
 isDeprecated: false

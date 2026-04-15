@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Comment#replies:member" />
+  - <xref uid="word!Word.Comment#replies:member" alttext="Word.Comment.replies"
+  />
 
   #### Examples
 

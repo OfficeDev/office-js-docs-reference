@@ -6,15 +6,27 @@ fullName: Excel.Interfaces.ChartFontData
 summary: >-
   An interface describing the data returned by calling `chartFont.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatData#font:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#font:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData#font:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatData#font:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatData#font:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatData#font:member"
+  alttext="Excel.Interfaces.ChartAreaFormatData.font" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#font:member"
+  alttext="Excel.Interfaces.ChartAxisFormatData.font" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member"
+  alttext="Excel.Interfaces.ChartAxisTitleFormatData.font" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData#font:member"
+  alttext="Excel.Interfaces.ChartDataLabelFormatData.font" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartLegendFormatData#font:member"
+  alttext="Excel.Interfaces.ChartLegendFormatData.font" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartTitleFormatData#font:member"
+  alttext="Excel.Interfaces.ChartTitleFormatData.font" />
 
 isPreview: false
 isDeprecated: false

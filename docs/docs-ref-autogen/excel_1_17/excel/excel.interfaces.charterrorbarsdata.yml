@@ -6,11 +6,15 @@ fullName: Excel.Interfaces.ChartErrorBarsData
 summary: >-
   An interface describing the data returned by calling
   `chartErrorBars.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#xErrorBars:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#yErrorBars:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#xErrorBars:member"
+  alttext="Excel.Interfaces.ChartSeriesData.xErrorBars" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#yErrorBars:member"
+  alttext="Excel.Interfaces.ChartSeriesData.yErrorBars" />
 
 isPreview: false
 isDeprecated: false

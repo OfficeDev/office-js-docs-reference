@@ -6,11 +6,15 @@ fullName: Excel.Interfaces.RangeFontData
 summary: >-
   An interface describing the data returned by calling `rangeFont.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#font:member" />
-  - <xref uid="excel!Excel.Interfaces.StyleData#font:member" />
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatData#font:member"
+  alttext="Excel.Interfaces.RangeFormatData.font" />
+
+  - <xref uid="excel!Excel.Interfaces.StyleData#font:member"
+  alttext="Excel.Interfaces.StyleData.font" />
 
 isPreview: false
 isDeprecated: false

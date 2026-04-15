@@ -19,16 +19,18 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData#type:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideBackgroundGradientFillData.type" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData#type:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData.type" />
 
-  - <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill#type:member" />
+  - <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill#type:member"
+  alttext="PowerPoint.SlideBackgroundGradientFill.type" />
 
   - <xref
-  uid="powerpoint!PowerPoint.SlideBackgroundGradientFillOptions#type:member" />
+  uid="powerpoint!PowerPoint.SlideBackgroundGradientFillOptions#type:member"
+  alttext="PowerPoint.SlideBackgroundGradientFillOptions.type" />
 
   #### Examples
 

@@ -14,17 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlAddNodeOptions#nodeType:member" />
+  - <xref uid="word!Word.CustomXmlAddNodeOptions#nodeType:member"
+  alttext="Word.CustomXmlAddNodeOptions.nodeType" />
 
-  - <xref uid="word!Word.CustomXmlAppendChildNodeOptions#nodeType:member" />
+  - <xref uid="word!Word.CustomXmlAppendChildNodeOptions#nodeType:member"
+  alttext="Word.CustomXmlAppendChildNodeOptions.nodeType" />
 
-  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nodeType:member" />
+  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nodeType:member"
+  alttext="Word.CustomXmlInsertNodeBeforeOptions.nodeType" />
 
-  - <xref uid="word!Word.CustomXmlNode#nodeType:member" />
+  - <xref uid="word!Word.CustomXmlNode#nodeType:member"
+  alttext="Word.CustomXmlNode.nodeType" />
 
-  - <xref uid="word!Word.CustomXmlReplaceChildNodeOptions#nodeType:member" />
+  - <xref uid="word!Word.CustomXmlReplaceChildNodeOptions#nodeType:member"
+  alttext="Word.CustomXmlReplaceChildNodeOptions.nodeType" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#nodeType:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#nodeType:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.nodeType" />
 
 isPreview: false
 isDeprecated: false

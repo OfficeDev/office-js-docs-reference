@@ -6,11 +6,15 @@ fullName: Word.Interfaces.CommentContentRangeData
 summary: >-
   An interface describing the data returned by calling
   `commentContentRange.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.CommentData#contentRange:member" />
-  - <xref uid="word!Word.Interfaces.CommentReplyData#contentRange:member" />
+
+  - <xref uid="word!Word.Interfaces.CommentData#contentRange:member"
+  alttext="Word.Interfaces.CommentData.contentRange" />
+
+  - <xref uid="word!Word.Interfaces.CommentReplyData#contentRange:member"
+  alttext="Word.Interfaces.CommentReplyData.contentRange" />
 
 isPreview: false
 isDeprecated: false

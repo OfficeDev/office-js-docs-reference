@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onChanged:member" />
+  - <xref uid="excel!Excel.Worksheet#onChanged:member"
+  alttext="Excel.Worksheet.onChanged" />
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member" />
+  - <xref uid="onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member"
+  alttext="OneNote.InkAnalysisParagraph.inkAnalysis" />
 
-  - <xref uid="onenote!OneNote.Page#inkAnalysisOrNull:member" />
+  - <xref uid="onenote!OneNote.Page#inkAnalysisOrNull:member"
+  alttext="OneNote.Page.inkAnalysisOrNull" />
 
 isPreview: false
 isDeprecated: false

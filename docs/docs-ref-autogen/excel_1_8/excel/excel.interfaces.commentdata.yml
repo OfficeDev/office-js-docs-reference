@@ -10,10 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.CommentCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.CommentCollectionData#items:member"
+  alttext="Excel.Interfaces.CommentCollectionData.items" />
 
   - <xref uid="excel!Excel.Interfaces.CommentCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.CommentCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

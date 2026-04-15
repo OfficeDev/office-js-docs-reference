@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterCriteria#dynamicCriteria:member" />
+  - <xref uid="excel!Excel.FilterCriteria#dynamicCriteria:member"
+  alttext="Excel.FilterCriteria.dynamicCriteria" />
 
   #### Examples
 

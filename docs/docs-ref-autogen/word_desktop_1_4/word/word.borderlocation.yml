@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Border#location:member" />
+  - <xref uid="word!Word.Border#location:member" alttext="Word.Border.location"
+  />
 
-  - <xref uid="word!Word.Interfaces.BorderData#location:member" />
+  - <xref uid="word!Word.Interfaces.BorderData#location:member"
+  alttext="Word.Interfaces.BorderData.location" />
 
   #### Examples
 

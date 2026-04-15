@@ -17,13 +17,15 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#font:member"
-  />
+  alttext="PowerPoint.Interfaces.TableCellCollectionLoadOptions.font" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member"
+  alttext="PowerPoint.Interfaces.TableCellLoadOptions.font" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions#font:member"
+  alttext="PowerPoint.Interfaces.TextRangeLoadOptions.font" />
 
 isPreview: false
 isDeprecated: false

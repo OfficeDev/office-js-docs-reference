@@ -9,12 +9,18 @@ summary: >-
 
   \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.CellPropertiesLoadOptions#format:member" />
-  - <xref uid="excel!Excel.ColumnPropertiesLoadOptions#format:member" />
-  - <xref uid="excel!Excel.RowPropertiesLoadOptions#format:member" />
+
+  - <xref uid="excel!Excel.CellPropertiesLoadOptions#format:member"
+  alttext="Excel.CellPropertiesLoadOptions.format" />
+
+  - <xref uid="excel!Excel.ColumnPropertiesLoadOptions#format:member"
+  alttext="Excel.ColumnPropertiesLoadOptions.format" />
+
+  - <xref uid="excel!Excel.RowPropertiesLoadOptions#format:member"
+  alttext="Excel.RowPropertiesLoadOptions.format" />
 
 isPreview: false
 isDeprecated: false

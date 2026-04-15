@@ -10,12 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.HyperlinkCollectionData#items:member" />
+  - <xref uid="visio!Visio.Interfaces.HyperlinkCollectionData#items:member"
+  alttext="Visio.Interfaces.HyperlinkCollectionData.items" />
 
   - <xref
-  uid="visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member" />
+  uid="visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member"
+  alttext="Visio.Interfaces.HyperlinkCollectionUpdateData.items" />
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#hyperlinks:member" />
+  - <xref uid="visio!Visio.Interfaces.ShapeData#hyperlinks:member"
+  alttext="Visio.Interfaces.ShapeData.hyperlinks" />
 
 isPreview: false
 isDeprecated: false

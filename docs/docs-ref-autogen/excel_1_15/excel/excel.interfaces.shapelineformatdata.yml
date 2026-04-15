@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ShapeLineFormatData
 summary: >-
   An interface describing the data returned by calling
   `shapeLineFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ShapeData#lineFormat:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ShapeData#lineFormat:member"
+  alttext="Excel.Interfaces.ShapeData.lineFormat" />
 
 isPreview: false
 isDeprecated: false

@@ -18,36 +18,44 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member" />
+  uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.ChartCollectionLoadOptions.worksheet" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.ChartLoadOptions.worksheet" />
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheet:member"
-  />
+  alttext="Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet" />
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheetOrNullObject:member"
+  alttext="Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject"
   />
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.NamedItemLoadOptions.worksheet" />
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheetOrNullObject:member"
-  />
+  alttext="Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject" />
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member"
-  />
+  alttext="Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet" />
 
-  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.PivotTableLoadOptions.worksheet" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.RangeLoadOptions.worksheet" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member" />
+  uid="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.TableCollectionLoadOptions.worksheet" />
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.TableLoadOptions.worksheet" />
 
 isPreview: false
 isDeprecated: false

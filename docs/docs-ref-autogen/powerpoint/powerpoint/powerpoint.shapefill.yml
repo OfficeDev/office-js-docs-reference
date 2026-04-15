@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Shape#fill:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#fill:member"
+  alttext="PowerPoint.Shape.fill" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#fill:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCell#fill:member"
+  alttext="PowerPoint.TableCell.fill" />
 
   #### Examples
 

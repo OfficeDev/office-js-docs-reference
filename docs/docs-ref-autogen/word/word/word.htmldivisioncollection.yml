@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.HtmlDivision#htmlDivisions:member" />
+  - <xref uid="word!Word.HtmlDivision#htmlDivisions:member"
+  alttext="Word.HtmlDivision.htmlDivisions" />
 
 isPreview: false
 isDeprecated: false

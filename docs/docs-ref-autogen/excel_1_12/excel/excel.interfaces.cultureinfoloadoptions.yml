@@ -15,7 +15,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member"
-  />
+  alttext="Excel.Interfaces.ApplicationLoadOptions.cultureInfo" />
 
 isPreview: false
 isDeprecated: false

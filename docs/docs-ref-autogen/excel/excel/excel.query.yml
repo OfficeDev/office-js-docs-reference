@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.QueryCollection#items:member" />
+  - <xref uid="excel!Excel.QueryCollection#items:member"
+  alttext="Excel.QueryCollection.items" />
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Pane#pages:member" />
+  - <xref uid="word!Word.Pane#pages:member" alttext="Word.Pane.pages" />
 
-  - <xref uid="word!Word.Pane#pagesEnclosingViewport:member" />
+  - <xref uid="word!Word.Pane#pagesEnclosingViewport:member"
+  alttext="Word.Pane.pagesEnclosingViewport" />
 
-  - <xref uid="word!Word.Range#pages:member" />
+  - <xref uid="word!Word.Range#pages:member" alttext="Word.Range.pages" />
 
   #### Examples
 

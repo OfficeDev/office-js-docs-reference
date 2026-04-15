@@ -11,15 +11,15 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member"
-  />
+  alttext="OneNote.Interfaces.InkAnalysisLineData.paragraph" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member"
-  />
+  alttext="OneNote.Interfaces.InkAnalysisParagraphCollectionData.items" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member"
-  />
+  alttext="OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

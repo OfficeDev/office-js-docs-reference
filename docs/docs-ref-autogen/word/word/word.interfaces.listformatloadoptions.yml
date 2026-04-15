@@ -13,13 +13,15 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#listFormat:member" />
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#listFormat:member"
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.listFormat" />
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#listFormat:member" />
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#listFormat:member"
+  alttext="Word.Interfaces.RangeLoadOptions.listFormat" />
 
   - <xref
   uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#listFormat:member"
-  />
+  alttext="Word.Interfaces.RangeScopedCollectionLoadOptions.listFormat" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#threeDimensionalFormat:member" />
+  - <xref uid="word!Word.Font#threeDimensionalFormat:member"
+  alttext="Word.Font.threeDimensionalFormat" />
 
 isPreview: false
 isDeprecated: false

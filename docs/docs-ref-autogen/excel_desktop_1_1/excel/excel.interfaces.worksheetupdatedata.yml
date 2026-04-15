@@ -10,10 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member"
+  alttext="Excel.Interfaces.SlicerUpdateData.worksheet" />
 
   - <xref uid="excel!Excel.Interfaces.WindowUpdateData#activeWorksheet:member"
-  />
+  alttext="Excel.Interfaces.WindowUpdateData.activeWorksheet" />
 
 isPreview: false
 isDeprecated: false

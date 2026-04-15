@@ -13,13 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CritiqueAnnotation#range:member" />
+  - <xref uid="word!Word.CritiqueAnnotation#range:member"
+  alttext="Word.CritiqueAnnotation.range" />
 
-  - <xref uid="word!Word.Field#result:member" />
+  - <xref uid="word!Word.Field#result:member" alttext="Word.Field.result" />
 
-  - <xref uid="word!Word.NoteItem#reference:member" />
+  - <xref uid="word!Word.NoteItem#reference:member"
+  alttext="Word.NoteItem.reference" />
 
-  - <xref uid="word!Word.RangeCollection#items:member" />
+  - <xref uid="word!Word.RangeCollection#items:member"
+  alttext="Word.RangeCollection.items" />
 
   #### Examples
 

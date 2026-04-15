@@ -10,12 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableColumnCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.TableColumnCollectionData#items:member"
+  alttext="Excel.Interfaces.TableColumnCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.TableColumnCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.TableData#columns:member" />
+  - <xref uid="excel!Excel.Interfaces.TableData#columns:member"
+  alttext="Excel.Interfaces.TableData.columns" />
 
 isPreview: false
 isDeprecated: false

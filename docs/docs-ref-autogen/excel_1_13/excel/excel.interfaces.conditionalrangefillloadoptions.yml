@@ -13,7 +13,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#fill:member" />
+  uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions#fill:member"
+  alttext="Excel.Interfaces.ConditionalRangeFormatLoadOptions.fill" />
 
 isPreview: false
 isDeprecated: false

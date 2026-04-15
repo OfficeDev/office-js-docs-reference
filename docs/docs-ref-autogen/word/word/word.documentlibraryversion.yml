@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentLibraryVersionCollection#items:member" />
+  - <xref uid="word!Word.DocumentLibraryVersionCollection#items:member"
+  alttext="Word.DocumentLibraryVersionCollection.items" />
 
 isPreview: false
 isDeprecated: false

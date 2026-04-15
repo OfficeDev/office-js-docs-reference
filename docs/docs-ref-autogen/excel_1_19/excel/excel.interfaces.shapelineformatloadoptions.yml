@@ -16,12 +16,14 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#lineFormat:member"
-  />
+  alttext="Excel.Interfaces.GroupShapeCollectionLoadOptions.lineFormat" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#lineFormat:member" />
+  uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#lineFormat:member"
+  alttext="Excel.Interfaces.ShapeCollectionLoadOptions.lineFormat" />
 
-  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member" />
+  - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member"
+  alttext="Excel.Interfaces.ShapeLoadOptions.lineFormat" />
 
 isPreview: false
 isDeprecated: false

@@ -4,12 +4,18 @@ uid: word!Word.Interfaces.StyleData:interface
 package: word!
 fullName: Word.Interfaces.StyleData
 summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.StyleCollectionUpdateData#items:member" />
-  - <xref uid="word!Word.Interfaces.StyleData#linkStyle:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleCollectionData#items:member"
+  alttext="Word.Interfaces.StyleCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.StyleCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.StyleCollectionUpdateData.items" />
+
+  - <xref uid="word!Word.Interfaces.StyleData#linkStyle:member"
+  alttext="Word.Interfaces.StyleData.linkStyle" />
 
 isPreview: false
 isDeprecated: false

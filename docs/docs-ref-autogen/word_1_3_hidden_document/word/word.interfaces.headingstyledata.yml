@@ -10,10 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.HeadingStyleCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.HeadingStyleCollectionData#items:member"
+  alttext="Word.Interfaces.HeadingStyleCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.HeadingStyleCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.HeadingStyleCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.HeadingStyleCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

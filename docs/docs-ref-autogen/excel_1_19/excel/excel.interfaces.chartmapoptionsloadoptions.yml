@@ -14,10 +14,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#mapOptions:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesLoadOptions.mapOptions" />
 
 isPreview: false
 isDeprecated: false

@@ -16,35 +16,40 @@ remarks: >-
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroup:member"
+  alttext="OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup"
   />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroupOrNull:member"
+  alttext="OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull"
   />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroup:member"
+  alttext="OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroup"
   />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions#parentSectionGroupOrNull:member"
+  alttext="OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroupOrNull"
   />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroup:member"
-  />
+  alttext="OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroup" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionGroupLoadOptions#parentSectionGroupOrNull:member"
+  alttext="OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroupOrNull"
   />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroup:member"
-  />
+  alttext="OneNote.Interfaces.SectionLoadOptions.parentSectionGroup" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.SectionLoadOptions#parentSectionGroupOrNull:member"
-  />
+  alttext="OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull" />
 
 isPreview: false
 isDeprecated: false

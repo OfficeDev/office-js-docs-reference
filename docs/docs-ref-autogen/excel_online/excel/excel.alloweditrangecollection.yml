@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetProtection#allowEditRanges:member" />
+  - <xref uid="excel!Excel.WorksheetProtection#allowEditRanges:member"
+  alttext="Excel.WorksheetProtection.allowEditRanges" />
 
 isPreview: false
 isDeprecated: false

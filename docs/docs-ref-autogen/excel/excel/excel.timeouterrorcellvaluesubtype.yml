@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TimeoutErrorCellValue#errorSubType:member" />
+  - <xref uid="excel!Excel.TimeoutErrorCellValue#errorSubType:member"
+  alttext="Excel.TimeoutErrorCellValue.errorSubType" />
 
 isPreview: true
 isDeprecated: false

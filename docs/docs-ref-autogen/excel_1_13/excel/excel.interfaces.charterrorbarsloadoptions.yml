@@ -14,17 +14,17 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#xErrorBars:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#yErrorBars:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars" />
 
 isPreview: false
 isDeprecated: false

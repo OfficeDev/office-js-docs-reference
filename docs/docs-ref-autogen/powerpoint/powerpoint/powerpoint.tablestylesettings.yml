@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Table#styleSettings:member" />
+  - <xref uid="powerpoint!PowerPoint.Table#styleSettings:member"
+  alttext="PowerPoint.Table.styleSettings" />
 
 isPreview: false
 isDeprecated: false

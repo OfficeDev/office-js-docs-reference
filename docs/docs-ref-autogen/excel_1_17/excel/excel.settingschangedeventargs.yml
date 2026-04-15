@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SettingCollection#onSettingsChanged:member" />
+  - <xref uid="excel!Excel.SettingCollection#onSettingsChanged:member"
+  alttext="Excel.SettingCollection.onSettingsChanged" />
 
   #### Examples
 

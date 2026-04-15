@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Shape#lineFormat:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#lineFormat:member"
+  alttext="PowerPoint.Shape.lineFormat" />
 
   #### Examples
 

@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#activeWindow:member" />
+  - <xref uid="word!Word.Document#activeWindow:member"
+  alttext="Word.Document.activeWindow" />
 
-  - <xref uid="word!Word.WindowCollection#items:member" />
+  - <xref uid="word!Word.WindowCollection#items:member"
+  alttext="Word.WindowCollection.items" />
 
   #### Examples
 

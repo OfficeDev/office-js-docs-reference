@@ -35,17 +35,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#categories:member" />
+  - <xref uid="outlook!Office.AppointmentCompose#categories:member"
+  alttext="Office.AppointmentCompose.categories" />
 
-  - <xref uid="outlook!Office.AppointmentRead#categories:member" />
+  - <xref uid="outlook!Office.AppointmentRead#categories:member"
+  alttext="Office.AppointmentRead.categories" />
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#categories:member" />
+  - <xref uid="outlook!Office.LoadedMessageCompose#categories:member"
+  alttext="Office.LoadedMessageCompose.categories" />
 
-  - <xref uid="outlook!Office.LoadedMessageRead#categories:member" />
+  - <xref uid="outlook!Office.LoadedMessageRead#categories:member"
+  alttext="Office.LoadedMessageRead.categories" />
 
-  - <xref uid="outlook!Office.MessageCompose#categories:member" />
+  - <xref uid="outlook!Office.MessageCompose#categories:member"
+  alttext="Office.MessageCompose.categories" />
 
-  - <xref uid="outlook!Office.MessageRead#categories:member" />
+  - <xref uid="outlook!Office.MessageRead#categories:member"
+  alttext="Office.MessageRead.categories" />
 
 isPreview: false
 isDeprecated: false

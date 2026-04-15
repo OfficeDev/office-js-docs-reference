@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ShapeFillData
 summary: >-
   An interface describing the data returned by calling `shapeFill.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.ShapeData#fill:member" />
+
+  - <xref uid="word!Word.Interfaces.ShapeData#fill:member"
+  alttext="Word.Interfaces.ShapeData.fill" />
 
 isPreview: false
 isDeprecated: false

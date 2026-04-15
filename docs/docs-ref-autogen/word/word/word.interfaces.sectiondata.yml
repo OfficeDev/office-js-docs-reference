@@ -6,14 +6,24 @@ fullName: Word.Interfaces.SectionData
 summary: >-
   An interface describing the data returned by calling `section.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentCreatedData#sections:member" />
-  - <xref uid="word!Word.Interfaces.DocumentData#sections:member" />
-  - <xref uid="word!Word.Interfaces.RangeData#sections:member" />
-  - <xref uid="word!Word.Interfaces.SectionCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.SectionCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentCreatedData#sections:member"
+  alttext="Word.Interfaces.DocumentCreatedData.sections" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#sections:member"
+  alttext="Word.Interfaces.DocumentData.sections" />
+
+  - <xref uid="word!Word.Interfaces.RangeData#sections:member"
+  alttext="Word.Interfaces.RangeData.sections" />
+
+  - <xref uid="word!Word.Interfaces.SectionCollectionData#items:member"
+  alttext="Word.Interfaces.SectionCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.SectionCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.SectionCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

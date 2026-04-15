@@ -24,7 +24,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#getSelectedItemsAsync:member(1)" />
+  - <xref uid="outlook!Office.Mailbox#getSelectedItemsAsync:member(1)"
+  alttext="Office.Mailbox.getSelectedItemsAsync" />
 
   #### Examples
 

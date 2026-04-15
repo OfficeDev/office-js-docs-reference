@@ -12,12 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#pageSetup:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#pageSetup:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.pageSetup" />
 
   - <xref
-  uid="word!Word.Interfaces.SectionCollectionLoadOptions#pageSetup:member" />
+  uid="word!Word.Interfaces.SectionCollectionLoadOptions#pageSetup:member"
+  alttext="Word.Interfaces.SectionCollectionLoadOptions.pageSetup" />
 
-  - <xref uid="word!Word.Interfaces.SectionLoadOptions#pageSetup:member" />
+  - <xref uid="word!Word.Interfaces.SectionLoadOptions#pageSetup:member"
+  alttext="Word.Interfaces.SectionLoadOptions.pageSetup" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#linkedWorkbooks:member" />
+  - <xref uid="excel!Excel.Workbook#linkedWorkbooks:member"
+  alttext="Excel.Workbook.linkedWorkbooks" />
 
 isPreview: false
 isDeprecated: false

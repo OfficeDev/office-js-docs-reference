@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#tables:member" />
+  - <xref uid="excel!Excel.Workbook#tables:member"
+  alttext="Excel.Workbook.tables" />
 
-  - <xref uid="excel!Excel.Worksheet#tables:member" />
+  - <xref uid="excel!Excel.Worksheet#tables:member"
+  alttext="Excel.Worksheet.tables" />
 
   #### Examples
 

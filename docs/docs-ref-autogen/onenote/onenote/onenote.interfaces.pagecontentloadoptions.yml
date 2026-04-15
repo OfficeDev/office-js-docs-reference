@@ -15,13 +15,14 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member" />
+  uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member"
+  alttext="OneNote.Interfaces.FloatingInkLoadOptions.pageContent" />
 
   - <xref uid="onenote!OneNote.Interfaces.ImageLoadOptions#pageContent:member"
-  />
+  alttext="OneNote.Interfaces.ImageLoadOptions.pageContent" />
 
   - <xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member"
-  />
+  alttext="OneNote.Interfaces.OutlineLoadOptions.pageContent" />
 
 isPreview: false
 isDeprecated: false

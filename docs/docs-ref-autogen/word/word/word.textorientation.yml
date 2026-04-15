@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.SelectionData#orientation:member" />
+  - <xref uid="word!Word.Interfaces.SelectionData#orientation:member"
+  alttext="Word.Interfaces.SelectionData.orientation" />
 
-  - <xref uid="word!Word.Interfaces.SelectionUpdateData#orientation:member" />
+  - <xref uid="word!Word.Interfaces.SelectionUpdateData#orientation:member"
+  alttext="Word.Interfaces.SelectionUpdateData.orientation" />
 
-  - <xref uid="word!Word.Selection#orientation:member" />
+  - <xref uid="word!Word.Selection#orientation:member"
+  alttext="Word.Selection.orientation" />
 
 isPreview: false
 isDeprecated: false

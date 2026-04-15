@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onFormulaChanged:member" />
+  - <xref uid="excel!Excel.Worksheet#onFormulaChanged:member"
+  alttext="Excel.Worksheet.onFormulaChanged" />
 
-  - <xref uid="excel!Excel.WorksheetCollection#onFormulaChanged:member" />
+  - <xref uid="excel!Excel.WorksheetCollection#onFormulaChanged:member"
+  alttext="Excel.WorksheetCollection.onFormulaChanged" />
 
   #### Examples
 

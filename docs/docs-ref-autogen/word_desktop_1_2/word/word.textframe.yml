@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Shape#textFrame:member" />
+  - <xref uid="word!Word.Shape#textFrame:member" alttext="Word.Shape.textFrame"
+  />
 
   #### Examples
 

@@ -13,13 +13,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member"
-  />
+  alttext="Excel.Interfaces.TableCollectionLoadOptions.columns" />
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#columns:member" />
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#columns:member"
+  alttext="Excel.Interfaces.TableLoadOptions.columns" />
 
   - <xref
   uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#columns:member"
-  />
+  alttext="Excel.Interfaces.TableScopedCollectionLoadOptions.columns" />
 
 isPreview: false
 isDeprecated: false

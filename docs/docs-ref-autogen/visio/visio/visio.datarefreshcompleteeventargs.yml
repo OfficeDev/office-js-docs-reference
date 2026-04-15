@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onDataRefreshComplete:member" />
+  - <xref uid="visio!Visio.Document#onDataRefreshComplete:member"
+  alttext="Visio.Document.onDataRefreshComplete" />
 
   #### Examples
 

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Table#onFiltered:member" />
+  - <xref uid="excel!Excel.Table#onFiltered:member"
+  alttext="Excel.Table.onFiltered" />
 
-  - <xref uid="excel!Excel.TableCollection#onFiltered:member" />
+  - <xref uid="excel!Excel.TableCollection#onFiltered:member"
+  alttext="Excel.TableCollection.onFiltered" />
 
 isPreview: true
 isDeprecated: false

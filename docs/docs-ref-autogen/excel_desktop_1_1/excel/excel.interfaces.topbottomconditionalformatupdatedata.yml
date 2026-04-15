@@ -11,10 +11,12 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#topBottom:member" />
+  uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#topBottom:member"
+  alttext="Excel.Interfaces.ConditionalFormatUpdateData.topBottom" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#topBottomOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatUpdateData.topBottomOrNullObject"
   />
 
 isPreview: false

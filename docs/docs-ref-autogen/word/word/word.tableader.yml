@@ -12,38 +12,50 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Index#tabLeader:member" />
+  - <xref uid="word!Word.Index#tabLeader:member" alttext="Word.Index.tabLeader"
+  />
 
-  - <xref uid="word!Word.Interfaces.IndexData#tabLeader:member" />
+  - <xref uid="word!Word.Interfaces.IndexData#tabLeader:member"
+  alttext="Word.Interfaces.IndexData.tabLeader" />
 
-  - <xref uid="word!Word.Interfaces.IndexUpdateData#tabLeader:member" />
+  - <xref uid="word!Word.Interfaces.IndexUpdateData#tabLeader:member"
+  alttext="Word.Interfaces.IndexUpdateData.tabLeader" />
 
-  - <xref uid="word!Word.Interfaces.TableOfAuthoritiesData#tabLeader:member" />
+  - <xref uid="word!Word.Interfaces.TableOfAuthoritiesData#tabLeader:member"
+  alttext="Word.Interfaces.TableOfAuthoritiesData.tabLeader" />
 
   - <xref
-  uid="word!Word.Interfaces.TableOfAuthoritiesUpdateData#tabLeader:member" />
+  uid="word!Word.Interfaces.TableOfAuthoritiesUpdateData#tabLeader:member"
+  alttext="Word.Interfaces.TableOfAuthoritiesUpdateData.tabLeader" />
 
-  - <xref uid="word!Word.Interfaces.TableOfContentsData#tabLeader:member" />
+  - <xref uid="word!Word.Interfaces.TableOfContentsData#tabLeader:member"
+  alttext="Word.Interfaces.TableOfContentsData.tabLeader" />
 
   - <xref uid="word!Word.Interfaces.TableOfContentsUpdateData#tabLeader:member"
-  />
+  alttext="Word.Interfaces.TableOfContentsUpdateData.tabLeader" />
 
-  - <xref uid="word!Word.Interfaces.TableOfFiguresData#tabLeader:member" />
+  - <xref uid="word!Word.Interfaces.TableOfFiguresData#tabLeader:member"
+  alttext="Word.Interfaces.TableOfFiguresData.tabLeader" />
 
   - <xref uid="word!Word.Interfaces.TableOfFiguresUpdateData#tabLeader:member"
-  />
+  alttext="Word.Interfaces.TableOfFiguresUpdateData.tabLeader" />
 
-  - <xref uid="word!Word.Interfaces.TabStopData#leader:member" />
+  - <xref uid="word!Word.Interfaces.TabStopData#leader:member"
+  alttext="Word.Interfaces.TabStopData.leader" />
 
-  - <xref uid="word!Word.TableOfAuthorities#tabLeader:member" />
+  - <xref uid="word!Word.TableOfAuthorities#tabLeader:member"
+  alttext="Word.TableOfAuthorities.tabLeader" />
 
-  - <xref uid="word!Word.TableOfContents#tabLeader:member" />
+  - <xref uid="word!Word.TableOfContents#tabLeader:member"
+  alttext="Word.TableOfContents.tabLeader" />
 
-  - <xref uid="word!Word.TableOfFigures#tabLeader:member" />
+  - <xref uid="word!Word.TableOfFigures#tabLeader:member"
+  alttext="Word.TableOfFigures.tabLeader" />
 
-  - <xref uid="word!Word.TabStop#leader:member" />
+  - <xref uid="word!Word.TabStop#leader:member" alttext="Word.TabStop.leader" />
 
-  - <xref uid="word!Word.TabStopAddOptions#leader:member" />
+  - <xref uid="word!Word.TabStopAddOptions#leader:member"
+  alttext="Word.TabStopAddOptions.leader" />
 
 isPreview: false
 isDeprecated: false

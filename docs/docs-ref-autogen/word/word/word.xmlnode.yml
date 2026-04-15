@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.XmlNode#firstChild:member" />
+  - <xref uid="word!Word.XmlNode#firstChild:member"
+  alttext="Word.XmlNode.firstChild" />
 
-  - <xref uid="word!Word.XmlNode#lastChild:member" />
+  - <xref uid="word!Word.XmlNode#lastChild:member"
+  alttext="Word.XmlNode.lastChild" />
 
-  - <xref uid="word!Word.XmlNode#nextSibling:member" />
+  - <xref uid="word!Word.XmlNode#nextSibling:member"
+  alttext="Word.XmlNode.nextSibling" />
 
-  - <xref uid="word!Word.XmlNode#parentNode:member" />
+  - <xref uid="word!Word.XmlNode#parentNode:member"
+  alttext="Word.XmlNode.parentNode" />
 
-  - <xref uid="word!Word.XmlNode#previousSibling:member" />
+  - <xref uid="word!Word.XmlNode#previousSibling:member"
+  alttext="Word.XmlNode.previousSibling" />
 
-  - <xref uid="word!Word.XmlNodeCollection#items:member" />
+  - <xref uid="word!Word.XmlNodeCollection#items:member"
+  alttext="Word.XmlNodeCollection.items" />
 
 isPreview: false
 isDeprecated: false

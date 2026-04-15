@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CommentCollection#onAdded:member" />
+  - <xref uid="excel!Excel.CommentCollection#onAdded:member"
+  alttext="Excel.CommentCollection.onAdded" />
 
   #### Examples
 

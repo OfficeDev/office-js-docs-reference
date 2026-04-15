@@ -15,12 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeData#geometricShapeType:member" />
+  - <xref uid="word!Word.Interfaces.ShapeData#geometricShapeType:member"
+  alttext="Word.Interfaces.ShapeData.geometricShapeType" />
 
   - <xref uid="word!Word.Interfaces.ShapeUpdateData#geometricShapeType:member"
-  />
+  alttext="Word.Interfaces.ShapeUpdateData.geometricShapeType" />
 
-  - <xref uid="word!Word.Shape#geometricShapeType:member" />
+  - <xref uid="word!Word.Shape#geometricShapeType:member"
+  alttext="Word.Shape.geometricShapeType" />
 
   #### Examples
 

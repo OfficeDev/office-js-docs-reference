@@ -13,13 +13,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#border:member"
-  />
+  alttext="Excel.Interfaces.ChartAreaFormatLoadOptions.border" />
 
   - <xref uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member"
-  />
+  alttext="Excel.Interfaces.ChartPointFormatLoadOptions.border" />
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member"
-  />
+  alttext="Excel.Interfaces.ChartTitleFormatLoadOptions.border" />
 
 isPreview: false
 isDeprecated: false

@@ -14,19 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListFormatLoadOptions#list:member" />
+  - <xref uid="word!Word.Interfaces.ListFormatLoadOptions#list:member"
+  alttext="Word.Interfaces.ListFormatLoadOptions.list" />
 
   - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member"
-  />
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.list" />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member"
-  />
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject" />
 
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#list:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#list:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.list" />
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member" />
+  uid="word!Word.Interfaces.ParagraphLoadOptions#listOrNullObject:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.listOrNullObject" />
 
 isPreview: false
 isDeprecated: false

@@ -11,12 +11,14 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.TableCellCollectionData#items:member"
-  />
+  alttext="OneNote.Interfaces.TableCellCollectionData.items" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member" />
+  uid="onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member"
+  alttext="OneNote.Interfaces.TableCellCollectionUpdateData.items" />
 
-  - <xref uid="onenote!OneNote.Interfaces.TableRowData#cells:member" />
+  - <xref uid="onenote!OneNote.Interfaces.TableRowData#cells:member"
+  alttext="OneNote.Interfaces.TableRowData.cells" />
 
 isPreview: false
 isDeprecated: false

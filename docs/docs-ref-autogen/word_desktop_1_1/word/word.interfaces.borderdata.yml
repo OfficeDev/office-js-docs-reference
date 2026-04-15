@@ -6,12 +6,18 @@ fullName: Word.Interfaces.BorderData
 summary: >-
   An interface describing the data returned by calling `border.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.BorderCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.BorderCollectionUpdateData#items:member" />
-  - <xref uid="word!Word.Interfaces.StyleData#borders:member" />
+
+  - <xref uid="word!Word.Interfaces.BorderCollectionData#items:member"
+  alttext="Word.Interfaces.BorderCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.BorderCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.BorderCollectionUpdateData.items" />
+
+  - <xref uid="word!Word.Interfaces.StyleData#borders:member"
+  alttext="Word.Interfaces.StyleData.borders" />
 
 isPreview: false
 isDeprecated: false

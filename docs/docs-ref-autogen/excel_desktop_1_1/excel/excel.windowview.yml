@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#view:member" />
+  - <xref uid="excel!Excel.Interfaces.WindowData#view:member"
+  alttext="Excel.Interfaces.WindowData.view" />
 
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#view:member" />
+  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#view:member"
+  alttext="Excel.Interfaces.WindowUpdateData.view" />
 
-  - <xref uid="excel!Excel.Window#view:member" />
+  - <xref uid="excel!Excel.Window#view:member" alttext="Excel.Window.view" />
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#fieldShading:member" />
+  - <xref uid="word!Word.Interfaces.ViewData#fieldShading:member"
+  alttext="Word.Interfaces.ViewData.fieldShading" />
 
-  - <xref uid="word!Word.View#fieldShading:member" />
+  - <xref uid="word!Word.View#fieldShading:member"
+  alttext="Word.View.fieldShading" />
 
 isPreview: false
 isDeprecated: false

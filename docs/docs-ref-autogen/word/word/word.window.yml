@@ -15,13 +15,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#activeWindow:member" />
+  - <xref uid="word!Word.Document#activeWindow:member"
+  alttext="Word.Document.activeWindow" />
 
-  - <xref uid="word!Word.Window#next:member" />
+  - <xref uid="word!Word.Window#next:member" alttext="Word.Window.next" />
 
-  - <xref uid="word!Word.Window#previous:member" />
+  - <xref uid="word!Word.Window#previous:member" alttext="Word.Window.previous"
+  />
 
-  - <xref uid="word!Word.WindowCollection#items:member" />
+  - <xref uid="word!Word.WindowCollection#items:member"
+  alttext="Word.WindowCollection.items" />
 
   #### Examples
 

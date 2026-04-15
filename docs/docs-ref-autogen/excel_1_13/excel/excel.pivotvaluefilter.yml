@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotFilters#valueFilter:member" />
+  - <xref uid="excel!Excel.PivotFilters#valueFilter:member"
+  alttext="Excel.PivotFilters.valueFilter" />
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Field#linkFormat:member" />
+  - <xref uid="word!Word.Field#linkFormat:member"
+  alttext="Word.Field.linkFormat" />
 
 isPreview: false
 isDeprecated: false

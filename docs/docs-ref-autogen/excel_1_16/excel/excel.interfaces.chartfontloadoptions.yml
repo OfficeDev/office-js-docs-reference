@@ -14,31 +14,36 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member"
+  alttext="Excel.Interfaces.ChartAreaFormatLoadOptions.font" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member" />
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member" />
-
-  - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member"
+  alttext="Excel.Interfaces.ChartAxisFormatLoadOptions.font" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions#font:member" />
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member"
+  alttext="Excel.Interfaces.ChartAxisTitleFormatLoadOptions.font" />
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member"
+  alttext="Excel.Interfaces.ChartDataLabelFormatLoadOptions.font" />
+
+  - <xref
+  uid="excel!Excel.Interfaces.ChartDataTableFormatLoadOptions#font:member"
+  alttext="Excel.Interfaces.ChartDataTableFormatLoadOptions.font" />
 
   - <xref uid="excel!Excel.Interfaces.ChartFormatStringLoadOptions#font:member"
-  />
+  alttext="Excel.Interfaces.ChartFormatStringLoadOptions.font" />
 
   - <xref uid="excel!Excel.Interfaces.ChartLegendFormatLoadOptions#font:member"
-  />
+  alttext="Excel.Interfaces.ChartLegendFormatLoadOptions.font" />
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member"
-  />
+  alttext="Excel.Interfaces.ChartTitleFormatLoadOptions.font" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions#font:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.font" />
 
 isPreview: false
 isDeprecated: false

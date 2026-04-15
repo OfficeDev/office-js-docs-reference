@@ -13,7 +13,7 @@ remarks: >-
 
 
   - <xref uid="word!Word.DocumentCheckInWithVersionOptions#versionType:member"
-  />
+  alttext="Word.DocumentCheckInWithVersionOptions.versionType" />
 
 isPreview: false
 isDeprecated: false

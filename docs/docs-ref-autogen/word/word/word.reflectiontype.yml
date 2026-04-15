@@ -14,11 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ReflectionFormatData#type:member" />
+  - <xref uid="word!Word.Interfaces.ReflectionFormatData#type:member"
+  alttext="Word.Interfaces.ReflectionFormatData.type" />
 
-  - <xref uid="word!Word.Interfaces.ReflectionFormatUpdateData#type:member" />
+  - <xref uid="word!Word.Interfaces.ReflectionFormatUpdateData#type:member"
+  alttext="Word.Interfaces.ReflectionFormatUpdateData.type" />
 
-  - <xref uid="word!Word.ReflectionFormat#type:member" />
+  - <xref uid="word!Word.ReflectionFormat#type:member"
+  alttext="Word.ReflectionFormat.type" />
 
 isPreview: false
 isDeprecated: false

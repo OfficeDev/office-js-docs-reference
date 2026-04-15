@@ -6,11 +6,15 @@ fullName: Word.Interfaces.WindowData
 summary: >-
   An interface describing the data returned by calling `window.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.WindowCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.WindowCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.WindowCollectionData#items:member"
+  alttext="Word.Interfaces.WindowCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.WindowCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.WindowCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

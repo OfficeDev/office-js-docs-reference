@@ -6,10 +6,12 @@ fullName: Excel.ThreeFlagsSet
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.IconCollections#threeFlags:member" />
+
+  - <xref uid="excel!Excel.IconCollections#threeFlags:member"
+  alttext="Excel.IconCollections.threeFlags" />
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.RevisionsFilter#reviewers:member" />
+  - <xref uid="word!Word.RevisionsFilter#reviewers:member"
+  alttext="Word.RevisionsFilter.reviewers" />
 
 isPreview: false
 isDeprecated: false

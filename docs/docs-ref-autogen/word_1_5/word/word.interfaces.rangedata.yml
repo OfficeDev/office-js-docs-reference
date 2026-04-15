@@ -8,18 +8,24 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FieldData#result:member" />
+  - <xref uid="word!Word.Interfaces.FieldData#result:member"
+  alttext="Word.Interfaces.FieldData.result" />
 
-  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member" />
+  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member"
+  alttext="Word.Interfaces.NoteItemData.reference" />
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member"
+  alttext="Word.Interfaces.RangeCollectionData.items" />
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member" />
+  - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.RangeCollectionUpdateData.items" />
 
-  - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member"
+  alttext="Word.Interfaces.RangeScopedCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.RangeScopedCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

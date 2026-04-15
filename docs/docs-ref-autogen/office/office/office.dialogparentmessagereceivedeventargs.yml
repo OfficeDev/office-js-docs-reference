@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.UI#addHandlerAsync:member(1)" />
+  - <xref uid="office!Office.UI#addHandlerAsync:member(1)"
+  alttext="Office.UI.addHandlerAsync" />
 
   #### Examples
 

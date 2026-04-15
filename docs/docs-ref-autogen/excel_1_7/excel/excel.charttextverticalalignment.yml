@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartTitle#verticalAlignment:member" />
+  - <xref uid="excel!Excel.ChartTitle#verticalAlignment:member"
+  alttext="Excel.ChartTitle.verticalAlignment" />
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.ChartTitleData.verticalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member" />
+  uid="excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member"
+  alttext="Excel.Interfaces.ChartTitleUpdateData.verticalAlignment" />
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#layoutMode:member" />
+  - <xref uid="word!Word.Interfaces.PageSetupData#layoutMode:member"
+  alttext="Word.Interfaces.PageSetupData.layoutMode" />
 
-  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#layoutMode:member" />
+  - <xref uid="word!Word.Interfaces.PageSetupUpdateData#layoutMode:member"
+  alttext="Word.Interfaces.PageSetupUpdateData.layoutMode" />
 
-  - <xref uid="word!Word.PageSetup#layoutMode:member" />
+  - <xref uid="word!Word.PageSetup#layoutMode:member"
+  alttext="Word.PageSetup.layoutMode" />
 
 isPreview: false
 isDeprecated: false

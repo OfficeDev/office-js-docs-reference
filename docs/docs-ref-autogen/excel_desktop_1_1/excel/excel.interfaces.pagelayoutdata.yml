@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.PageLayoutData
 summary: >-
   An interface describing the data returned by calling `pageLayout.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#pageLayout:member" />
+
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#pageLayout:member"
+  alttext="Excel.Interfaces.WorksheetData.pageLayout" />
 
 isPreview: false
 isDeprecated: false

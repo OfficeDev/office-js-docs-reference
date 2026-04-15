@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartPoint#dataLabel:member" />
+  - <xref uid="excel!Excel.ChartPoint#dataLabel:member"
+  alttext="Excel.ChartPoint.dataLabel" />
 
   #### Examples
 

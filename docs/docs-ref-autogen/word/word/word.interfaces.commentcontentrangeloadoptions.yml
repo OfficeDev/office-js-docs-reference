@@ -13,16 +13,18 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member" />
+  uid="word!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member"
+  alttext="Word.Interfaces.CommentCollectionLoadOptions.contentRange" />
 
-  - <xref uid="word!Word.Interfaces.CommentLoadOptions#contentRange:member" />
+  - <xref uid="word!Word.Interfaces.CommentLoadOptions#contentRange:member"
+  alttext="Word.Interfaces.CommentLoadOptions.contentRange" />
 
   - <xref
   uid="word!Word.Interfaces.CommentReplyCollectionLoadOptions#contentRange:member"
-  />
+  alttext="Word.Interfaces.CommentReplyCollectionLoadOptions.contentRange" />
 
   - <xref uid="word!Word.Interfaces.CommentReplyLoadOptions#contentRange:member"
-  />
+  alttext="Word.Interfaces.CommentReplyLoadOptions.contentRange" />
 
 isPreview: false
 isDeprecated: false

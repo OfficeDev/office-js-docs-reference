@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.InsertWorksheetOptions#positionType:member" />
+  - <xref uid="excel!Excel.InsertWorksheetOptions#positionType:member"
+  alttext="Excel.InsertWorksheetOptions.positionType" />
 
   #### Examples
 

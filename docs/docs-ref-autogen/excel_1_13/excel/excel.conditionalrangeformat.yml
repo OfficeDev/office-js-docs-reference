@@ -14,15 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellValueConditionalFormat#format:member" />
+  - <xref uid="excel!Excel.CellValueConditionalFormat#format:member"
+  alttext="Excel.CellValueConditionalFormat.format" />
 
-  - <xref uid="excel!Excel.CustomConditionalFormat#format:member" />
+  - <xref uid="excel!Excel.CustomConditionalFormat#format:member"
+  alttext="Excel.CustomConditionalFormat.format" />
 
-  - <xref uid="excel!Excel.PresetCriteriaConditionalFormat#format:member" />
+  - <xref uid="excel!Excel.PresetCriteriaConditionalFormat#format:member"
+  alttext="Excel.PresetCriteriaConditionalFormat.format" />
 
-  - <xref uid="excel!Excel.TextConditionalFormat#format:member" />
+  - <xref uid="excel!Excel.TextConditionalFormat#format:member"
+  alttext="Excel.TextConditionalFormat.format" />
 
-  - <xref uid="excel!Excel.TopBottomConditionalFormat#format:member" />
+  - <xref uid="excel!Excel.TopBottomConditionalFormat#format:member"
+  alttext="Excel.TopBottomConditionalFormat.format" />
 
 isPreview: false
 isDeprecated: false

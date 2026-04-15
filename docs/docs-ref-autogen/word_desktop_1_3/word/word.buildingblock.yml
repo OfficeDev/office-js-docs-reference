@@ -15,19 +15,23 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.BuildingBlockGalleryContentControl#placeholderText:member" />
+  uid="word!Word.BuildingBlockGalleryContentControl#placeholderText:member"
+  alttext="Word.BuildingBlockGalleryContentControl.placeholderText" />
 
   - <xref uid="word!Word.ContentControlPlaceholderOptions#buildingBlock:member"
-  />
+  alttext="Word.ContentControlPlaceholderOptions.buildingBlock" />
 
-  - <xref uid="word!Word.DatePickerContentControl#placeholderText:member" />
+  - <xref uid="word!Word.DatePickerContentControl#placeholderText:member"
+  alttext="Word.DatePickerContentControl.placeholderText" />
 
-  - <xref uid="word!Word.GroupContentControl#placeholderText:member" />
+  - <xref uid="word!Word.GroupContentControl#placeholderText:member"
+  alttext="Word.GroupContentControl.placeholderText" />
 
-  - <xref uid="word!Word.PictureContentControl#placeholderText:member" />
+  - <xref uid="word!Word.PictureContentControl#placeholderText:member"
+  alttext="Word.PictureContentControl.placeholderText" />
 
   - <xref uid="word!Word.RepeatingSectionContentControl#placeholderText:member"
-  />
+  alttext="Word.RepeatingSectionContentControl.placeholderText" />
 
 isPreview: false
 isDeprecated: false

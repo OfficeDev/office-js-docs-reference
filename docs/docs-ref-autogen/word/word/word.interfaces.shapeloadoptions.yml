@@ -15,21 +15,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CanvasLoadOptions#shape:member" />
+  - <xref uid="word!Word.Interfaces.CanvasLoadOptions#shape:member"
+  alttext="Word.Interfaces.CanvasLoadOptions.shape" />
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#background:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#background:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.background" />
 
   - <xref
-  uid="word!Word.Interfaces.ShapeCollectionLoadOptions#parentCanvas:member" />
+  uid="word!Word.Interfaces.ShapeCollectionLoadOptions#parentCanvas:member"
+  alttext="Word.Interfaces.ShapeCollectionLoadOptions.parentCanvas" />
 
   - <xref
-  uid="word!Word.Interfaces.ShapeCollectionLoadOptions#parentGroup:member" />
+  uid="word!Word.Interfaces.ShapeCollectionLoadOptions#parentGroup:member"
+  alttext="Word.Interfaces.ShapeCollectionLoadOptions.parentGroup" />
 
-  - <xref uid="word!Word.Interfaces.ShapeGroupLoadOptions#shape:member" />
+  - <xref uid="word!Word.Interfaces.ShapeGroupLoadOptions#shape:member"
+  alttext="Word.Interfaces.ShapeGroupLoadOptions.shape" />
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#parentCanvas:member" />
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#parentCanvas:member"
+  alttext="Word.Interfaces.ShapeLoadOptions.parentCanvas" />
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#parentGroup:member" />
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#parentGroup:member"
+  alttext="Word.Interfaces.ShapeLoadOptions.parentGroup" />
 
 isPreview: false
 isDeprecated: false

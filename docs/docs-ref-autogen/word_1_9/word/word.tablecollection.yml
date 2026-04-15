@@ -15,13 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#tables:member" />
+  - <xref uid="word!Word.Body#tables:member" alttext="Word.Body.tables" />
 
-  - <xref uid="word!Word.ContentControl#tables:member" />
+  - <xref uid="word!Word.ContentControl#tables:member"
+  alttext="Word.ContentControl.tables" />
 
-  - <xref uid="word!Word.Range#tables:member" />
+  - <xref uid="word!Word.Range#tables:member" alttext="Word.Range.tables" />
 
-  - <xref uid="word!Word.Table#tables:member" />
+  - <xref uid="word!Word.Table#tables:member" alttext="Word.Table.tables" />
 
   #### Examples
 

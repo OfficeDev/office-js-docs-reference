@@ -20,7 +20,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableRowCollection#items:member" />
+  - <xref uid="excel!Excel.TableRowCollection#items:member"
+  alttext="Excel.TableRowCollection.items" />
 
 isPreview: false
 isDeprecated: false

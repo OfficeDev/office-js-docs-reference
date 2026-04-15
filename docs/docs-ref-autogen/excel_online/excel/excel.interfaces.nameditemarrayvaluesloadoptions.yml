@@ -14,10 +14,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#arrayValues:member"
-  />
+  alttext="Excel.Interfaces.NamedItemCollectionLoadOptions.arrayValues" />
 
   - <xref uid="excel!Excel.Interfaces.NamedItemLoadOptions#arrayValues:member"
-  />
+  alttext="Excel.Interfaces.NamedItemLoadOptions.arrayValues" />
 
 isPreview: false
 isDeprecated: false

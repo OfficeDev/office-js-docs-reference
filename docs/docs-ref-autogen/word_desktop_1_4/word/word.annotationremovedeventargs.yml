@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#onAnnotationRemoved:member" />
+  - <xref uid="word!Word.Document#onAnnotationRemoved:member"
+  alttext="Word.Document.onAnnotationRemoved" />
 
   #### Examples
 

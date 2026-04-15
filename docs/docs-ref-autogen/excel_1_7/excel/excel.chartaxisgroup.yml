@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#axisGroup:member" />
+  - <xref uid="excel!Excel.ChartAxis#axisGroup:member"
+  alttext="Excel.ChartAxis.axisGroup" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#axisGroup:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#axisGroup:member"
+  alttext="Excel.Interfaces.ChartAxisData.axisGroup" />
 
 isPreview: false
 isDeprecated: false

@@ -19,13 +19,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MeetingSuggestion#attendees:member" />
+  - <xref uid="outlook!Office.MeetingSuggestion#attendees:member"
+  alttext="Office.MeetingSuggestion.attendees" />
 
-  - <xref uid="outlook!Office.Recipients#addAsync:member(1)" />
+  - <xref uid="outlook!Office.Recipients#addAsync:member(1)"
+  alttext="Office.Recipients.addAsync" />
 
-  - <xref uid="outlook!Office.Recipients#setAsync:member(1)" />
+  - <xref uid="outlook!Office.Recipients#setAsync:member(1)"
+  alttext="Office.Recipients.setAsync" />
 
-  - <xref uid="outlook!Office.TaskSuggestion#assignees:member" />
+  - <xref uid="outlook!Office.TaskSuggestion#assignees:member"
+  alttext="Office.TaskSuggestion.assignees" />
 
   #### Examples
 

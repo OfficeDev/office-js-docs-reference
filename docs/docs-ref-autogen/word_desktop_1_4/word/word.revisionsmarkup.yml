@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RevisionsFilterData#markup:member" />
+  - <xref uid="word!Word.Interfaces.RevisionsFilterData#markup:member"
+  alttext="Word.Interfaces.RevisionsFilterData.markup" />
 
-  - <xref uid="word!Word.Interfaces.RevisionsFilterUpdateData#markup:member" />
+  - <xref uid="word!Word.Interfaces.RevisionsFilterUpdateData#markup:member"
+  alttext="Word.Interfaces.RevisionsFilterUpdateData.markup" />
 
-  - <xref uid="word!Word.RevisionsFilter#markup:member" />
+  - <xref uid="word!Word.RevisionsFilter#markup:member"
+  alttext="Word.RevisionsFilter.markup" />
 
 isPreview: false
 isDeprecated: false

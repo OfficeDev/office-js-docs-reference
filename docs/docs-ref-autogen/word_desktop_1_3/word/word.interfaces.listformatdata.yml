@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ListFormatData
 summary: >-
   An interface describing the data returned by calling `listFormat.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.RangeData#listFormat:member" />
+
+  - <xref uid="word!Word.Interfaces.RangeData#listFormat:member"
+  alttext="Word.Interfaces.RangeData.listFormat" />
 
 isPreview: false
 isDeprecated: false

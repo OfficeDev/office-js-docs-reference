@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Paragraph#listItem:member" />
+  - <xref uid="word!Word.Paragraph#listItem:member"
+  alttext="Word.Paragraph.listItem" />
 
-  - <xref uid="word!Word.Paragraph#listItemOrNullObject:member" />
+  - <xref uid="word!Word.Paragraph#listItemOrNullObject:member"
+  alttext="Word.Paragraph.listItemOrNullObject" />
 
   #### Examples
 

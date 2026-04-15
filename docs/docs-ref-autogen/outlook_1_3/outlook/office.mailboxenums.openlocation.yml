@@ -22,7 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#getIsOpenFromLocationAllowed:member(1)" />
+  - <xref uid="outlook!Office.Mailbox#getIsOpenFromLocationAllowed:member(1)"
+  alttext="Office.Mailbox.getIsOpenFromLocationAllowed" />
 
   #### Examples
 

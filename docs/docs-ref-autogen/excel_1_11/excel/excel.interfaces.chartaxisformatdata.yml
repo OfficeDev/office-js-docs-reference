@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartAxisFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartAxisFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#format:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#format:member"
+  alttext="Excel.Interfaces.ChartAxisData.format" />
 
 isPreview: false
 isDeprecated: false

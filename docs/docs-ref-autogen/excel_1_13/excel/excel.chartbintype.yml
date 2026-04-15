@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartBinOptions#type:member" />
+  - <xref uid="excel!Excel.ChartBinOptions#type:member"
+  alttext="Excel.ChartBinOptions.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartBinOptionsData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartBinOptionsData#type:member"
+  alttext="Excel.Interfaces.ChartBinOptionsData.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartBinOptionsUpdateData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartBinOptionsUpdateData#type:member"
+  alttext="Excel.Interfaces.ChartBinOptionsUpdateData.type" />
 
 isPreview: false
 isDeprecated: false

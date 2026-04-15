@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Shape#textFrame:member" />
+  - <xref uid="excel!Excel.Shape#textFrame:member"
+  alttext="Excel.Shape.textFrame" />
 
 isPreview: false
 isDeprecated: false

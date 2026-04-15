@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartTrendlineCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

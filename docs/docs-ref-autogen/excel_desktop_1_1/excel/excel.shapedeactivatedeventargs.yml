@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Shape#onDeactivated:member" />
+  - <xref uid="excel!Excel.Shape#onDeactivated:member"
+  alttext="Excel.Shape.onDeactivated" />
 
 isPreview: false
 isDeprecated: false

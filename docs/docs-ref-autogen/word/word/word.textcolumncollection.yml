@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.PageSetup#textColumns:member" />
+  - <xref uid="word!Word.PageSetup#textColumns:member"
+  alttext="Word.PageSetup.textColumns" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentPrintOutOptions#range:member" />
+  - <xref uid="word!Word.DocumentPrintOutOptions#range:member"
+  alttext="Word.DocumentPrintOutOptions.range" />
 
 isPreview: false
 isDeprecated: false

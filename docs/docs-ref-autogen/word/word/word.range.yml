@@ -13,73 +13,97 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Bookmark#range:member" />
+  - <xref uid="word!Word.Bookmark#range:member" alttext="Word.Bookmark.range" />
 
-  - <xref uid="word!Word.Break#range:member" />
+  - <xref uid="word!Word.Break#range:member" alttext="Word.Break.range" />
 
-  - <xref uid="word!Word.BuildingBlockGalleryContentControl#range:member" />
+  - <xref uid="word!Word.BuildingBlockGalleryContentControl#range:member"
+  alttext="Word.BuildingBlockGalleryContentControl.range" />
 
-  - <xref uid="word!Word.CoauthoringLock#range:member" />
+  - <xref uid="word!Word.CoauthoringLock#range:member"
+  alttext="Word.CoauthoringLock.range" />
 
-  - <xref uid="word!Word.CoauthoringLockAddOptions#range:member" />
+  - <xref uid="word!Word.CoauthoringLockAddOptions#range:member"
+  alttext="Word.CoauthoringLockAddOptions.range" />
 
-  - <xref uid="word!Word.CoauthoringUpdate#range:member" />
+  - <xref uid="word!Word.CoauthoringUpdate#range:member"
+  alttext="Word.CoauthoringUpdate.range" />
 
-  - <xref uid="word!Word.Conflict#range:member" />
+  - <xref uid="word!Word.Conflict#range:member" alttext="Word.Conflict.range" />
 
-  - <xref uid="word!Word.ContentControlPlaceholderOptions#range:member" />
+  - <xref uid="word!Word.ContentControlPlaceholderOptions#range:member"
+  alttext="Word.ContentControlPlaceholderOptions.range" />
 
-  - <xref uid="word!Word.CritiqueAnnotation#range:member" />
+  - <xref uid="word!Word.CritiqueAnnotation#range:member"
+  alttext="Word.CritiqueAnnotation.range" />
 
-  - <xref uid="word!Word.DatePickerContentControl#range:member" />
+  - <xref uid="word!Word.DatePickerContentControl#range:member"
+  alttext="Word.DatePickerContentControl.range" />
 
-  - <xref uid="word!Word.Document#content:member" />
+  - <xref uid="word!Word.Document#content:member"
+  alttext="Word.Document.content" />
 
-  - <xref uid="word!Word.Editor#nextRange:member" />
+  - <xref uid="word!Word.Editor#nextRange:member"
+  alttext="Word.Editor.nextRange" />
 
-  - <xref uid="word!Word.Editor#range:member" />
+  - <xref uid="word!Word.Editor#range:member" alttext="Word.Editor.range" />
 
-  - <xref uid="word!Word.Field#result:member" />
+  - <xref uid="word!Word.Field#result:member" alttext="Word.Field.result" />
 
-  - <xref uid="word!Word.Frame#range:member" />
+  - <xref uid="word!Word.Frame#range:member" alttext="Word.Frame.range" />
 
-  - <xref uid="word!Word.GroupContentControl#range:member" />
+  - <xref uid="word!Word.GroupContentControl#range:member"
+  alttext="Word.GroupContentControl.range" />
 
-  - <xref uid="word!Word.HtmlDivision#range:member" />
+  - <xref uid="word!Word.HtmlDivision#range:member"
+  alttext="Word.HtmlDivision.range" />
 
-  - <xref uid="word!Word.Hyperlink#range:member" />
+  - <xref uid="word!Word.Hyperlink#range:member" alttext="Word.Hyperlink.range"
+  />
 
-  - <xref uid="word!Word.Index#range:member" />
+  - <xref uid="word!Word.Index#range:member" alttext="Word.Index.range" />
 
-  - <xref uid="word!Word.NoteItem#reference:member" />
+  - <xref uid="word!Word.NoteItem#reference:member"
+  alttext="Word.NoteItem.reference" />
 
-  - <xref uid="word!Word.PictureContentControl#range:member" />
+  - <xref uid="word!Word.PictureContentControl#range:member"
+  alttext="Word.PictureContentControl.range" />
 
-  - <xref uid="word!Word.RangeCollection#items:member" />
+  - <xref uid="word!Word.RangeCollection#items:member"
+  alttext="Word.RangeCollection.items" />
 
-  - <xref uid="word!Word.RangeScopedCollection#items:member" />
+  - <xref uid="word!Word.RangeScopedCollection#items:member"
+  alttext="Word.RangeScopedCollection.items" />
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#range:member" />
+  - <xref uid="word!Word.RepeatingSectionContentControl#range:member"
+  alttext="Word.RepeatingSectionContentControl.range" />
 
-  - <xref uid="word!Word.RepeatingSectionItem#range:member" />
+  - <xref uid="word!Word.RepeatingSectionItem#range:member"
+  alttext="Word.RepeatingSectionItem.range" />
 
-  - <xref uid="word!Word.Revision#movedRange:member" />
+  - <xref uid="word!Word.Revision#movedRange:member"
+  alttext="Word.Revision.movedRange" />
 
-  - <xref uid="word!Word.Revision#range:member" />
+  - <xref uid="word!Word.Revision#range:member" alttext="Word.Revision.range" />
 
-  - <xref uid="word!Word.Selection#formattedText:member" />
+  - <xref uid="word!Word.Selection#formattedText:member"
+  alttext="Word.Selection.formattedText" />
 
-  - <xref uid="word!Word.Selection#range:member" />
+  - <xref uid="word!Word.Selection#range:member" alttext="Word.Selection.range"
+  />
 
-  - <xref uid="word!Word.TableOfAuthorities#range:member" />
+  - <xref uid="word!Word.TableOfAuthorities#range:member"
+  alttext="Word.TableOfAuthorities.range" />
 
-  - <xref uid="word!Word.TableOfContents#range:member" />
+  - <xref uid="word!Word.TableOfContents#range:member"
+  alttext="Word.TableOfContents.range" />
 
-  - <xref uid="word!Word.TableOfFigures#range:member" />
+  - <xref uid="word!Word.TableOfFigures#range:member"
+  alttext="Word.TableOfFigures.range" />
 
-  - <xref uid="word!Word.TableRow#range:member" />
+  - <xref uid="word!Word.TableRow#range:member" alttext="Word.TableRow.range" />
 
-  - <xref uid="word!Word.XmlNode#range:member" />
+  - <xref uid="word!Word.XmlNode#range:member" alttext="Word.XmlNode.range" />
 
   #### Examples
 

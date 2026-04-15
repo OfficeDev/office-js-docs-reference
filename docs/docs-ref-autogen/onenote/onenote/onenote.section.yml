@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Page#parentSection:member" />
+  - <xref uid="onenote!OneNote.Page#parentSection:member"
+  alttext="OneNote.Page.parentSection" />
 
-  - <xref uid="onenote!OneNote.SectionCollection#items:member" />
+  - <xref uid="onenote!OneNote.SectionCollection#items:member"
+  alttext="OneNote.SectionCollection.items" />
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RequestContext#application:member" />
+  - <xref uid="excel!Excel.RequestContext#application:member"
+  alttext="Excel.RequestContext.application" />
 
-  - <xref uid="excel!Excel.Workbook#application:member" />
+  - <xref uid="excel!Excel.Workbook#application:member"
+  alttext="Excel.Workbook.application" />
 
 isPreview: false
 isDeprecated: false

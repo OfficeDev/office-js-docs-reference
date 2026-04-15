@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.HtmlDivisionCollection#items:member" />
+  - <xref uid="word!Word.HtmlDivisionCollection#items:member"
+  alttext="Word.HtmlDivisionCollection.items" />
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#preset:member" />
+  - <xref uid="excel!Excel.ConditionalFormat#preset:member"
+  alttext="Excel.ConditionalFormat.preset" />
 
-  - <xref uid="excel!Excel.ConditionalFormat#presetOrNullObject:member" />
+  - <xref uid="excel!Excel.ConditionalFormat#presetOrNullObject:member"
+  alttext="Excel.ConditionalFormat.presetOrNullObject" />
 
 isPreview: false
 isDeprecated: false

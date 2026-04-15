@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member" />
+  uid="onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member"
+  alttext="OneNote.Interfaces.InkAnalysisLineUpdateData.paragraph" />
 
 isPreview: false
 isDeprecated: false

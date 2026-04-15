@@ -4,18 +4,33 @@ uid: office!Office.CustomXmlNode:interface
 package: office!
 fullName: Office.CustomXmlNode
 summary: Represents an XML node in a tree in a document.
-remarks: |-
+remarks: >-
   **Applications**: Word
+
 
   #### Used by
 
-  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member(1)" />
-  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member(1)" />
-  - <xref uid="office!Office.NodeDeletedEventArgs#oldNextSibling:member" />
-  - <xref uid="office!Office.NodeDeletedEventArgs#oldNode:member" />
-  - <xref uid="office!Office.NodeInsertedEventArgs#newNode:member" />
-  - <xref uid="office!Office.NodeReplacedEventArgs#newNode:member" />
-  - <xref uid="office!Office.NodeReplacedEventArgs#oldNode:member" />
+
+  - <xref uid="office!Office.CustomXmlNode#getNodesAsync:member(1)"
+  alttext="Office.CustomXmlNode.getNodesAsync" />
+
+  - <xref uid="office!Office.CustomXmlPart#getNodesAsync:member(1)"
+  alttext="Office.CustomXmlPart.getNodesAsync" />
+
+  - <xref uid="office!Office.NodeDeletedEventArgs#oldNextSibling:member"
+  alttext="Office.NodeDeletedEventArgs.oldNextSibling" />
+
+  - <xref uid="office!Office.NodeDeletedEventArgs#oldNode:member"
+  alttext="Office.NodeDeletedEventArgs.oldNode" />
+
+  - <xref uid="office!Office.NodeInsertedEventArgs#newNode:member"
+  alttext="Office.NodeInsertedEventArgs.newNode" />
+
+  - <xref uid="office!Office.NodeReplacedEventArgs#newNode:member"
+  alttext="Office.NodeReplacedEventArgs.newNode" />
+
+  - <xref uid="office!Office.NodeReplacedEventArgs#oldNode:member"
+  alttext="Office.NodeReplacedEventArgs.oldNode" />
 
 isPreview: false
 isDeprecated: false

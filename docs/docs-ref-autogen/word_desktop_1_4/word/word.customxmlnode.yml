@@ -16,28 +16,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlAddNodeOptions#nextSibling:member" />
+  - <xref uid="word!Word.CustomXmlAddNodeOptions#nextSibling:member"
+  alttext="Word.CustomXmlAddNodeOptions.nextSibling" />
 
-  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nextSibling:member" />
+  - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nextSibling:member"
+  alttext="Word.CustomXmlInsertNodeBeforeOptions.nextSibling" />
 
   - <xref uid="word!Word.CustomXmlInsertSubtreeBeforeOptions#nextSibling:member"
-  />
+  alttext="Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling" />
 
-  - <xref uid="word!Word.CustomXmlNode#firstChild:member" />
+  - <xref uid="word!Word.CustomXmlNode#firstChild:member"
+  alttext="Word.CustomXmlNode.firstChild" />
 
-  - <xref uid="word!Word.CustomXmlNode#lastChild:member" />
+  - <xref uid="word!Word.CustomXmlNode#lastChild:member"
+  alttext="Word.CustomXmlNode.lastChild" />
 
-  - <xref uid="word!Word.CustomXmlNode#nextSibling:member" />
+  - <xref uid="word!Word.CustomXmlNode#nextSibling:member"
+  alttext="Word.CustomXmlNode.nextSibling" />
 
-  - <xref uid="word!Word.CustomXmlNode#parentNode:member" />
+  - <xref uid="word!Word.CustomXmlNode#parentNode:member"
+  alttext="Word.CustomXmlNode.parentNode" />
 
-  - <xref uid="word!Word.CustomXmlNode#previousSibling:member" />
+  - <xref uid="word!Word.CustomXmlNode#previousSibling:member"
+  alttext="Word.CustomXmlNode.previousSibling" />
 
-  - <xref uid="word!Word.CustomXmlNodeCollection#items:member" />
+  - <xref uid="word!Word.CustomXmlNodeCollection#items:member"
+  alttext="Word.CustomXmlNodeCollection.items" />
 
-  - <xref uid="word!Word.CustomXmlPart#documentElement:member" />
+  - <xref uid="word!Word.CustomXmlPart#documentElement:member"
+  alttext="Word.CustomXmlPart.documentElement" />
 
-  - <xref uid="word!Word.XmlMapping#customXmlNode:member" />
+  - <xref uid="word!Word.XmlMapping#customXmlNode:member"
+  alttext="Word.XmlMapping.customXmlNode" />
 
 isPreview: false
 isDeprecated: false

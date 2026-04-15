@@ -12,26 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTask#assignees:member" />
+  - <xref uid="excel!Excel.DocumentTask#assignees:member"
+  alttext="Excel.DocumentTask.assignees" />
 
-  - <xref uid="excel!Excel.DocumentTask#completedBy:member" />
+  - <xref uid="excel!Excel.DocumentTask#completedBy:member"
+  alttext="Excel.DocumentTask.completedBy" />
 
-  - <xref uid="excel!Excel.DocumentTask#createdBy:member" />
+  - <xref uid="excel!Excel.DocumentTask#createdBy:member"
+  alttext="Excel.DocumentTask.createdBy" />
 
-  - <xref uid="excel!Excel.DocumentTaskChange#assignee:member" />
+  - <xref uid="excel!Excel.DocumentTaskChange#assignee:member"
+  alttext="Excel.DocumentTaskChange.assignee" />
 
-  - <xref uid="excel!Excel.DocumentTaskChange#changedBy:member" />
+  - <xref uid="excel!Excel.DocumentTaskChange#changedBy:member"
+  alttext="Excel.DocumentTaskChange.changedBy" />
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member" />
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member"
+  alttext="Excel.Interfaces.DocumentTaskChangeData.assignee" />
 
   - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member"
-  />
+  alttext="Excel.Interfaces.DocumentTaskChangeData.changedBy" />
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#assignees:member" />
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#assignees:member"
+  alttext="Excel.Interfaces.DocumentTaskData.assignees" />
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#completedBy:member" />
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#completedBy:member"
+  alttext="Excel.Interfaces.DocumentTaskData.completedBy" />
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#createdBy:member" />
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskData#createdBy:member"
+  alttext="Excel.Interfaces.DocumentTaskData.createdBy" />
 
 isPreview: true
 isDeprecated: false

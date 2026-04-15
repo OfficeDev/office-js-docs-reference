@@ -12,14 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTask#startAndDueDateTime:member" />
+  - <xref uid="excel!Excel.DocumentTask#startAndDueDateTime:member"
+  alttext="Excel.DocumentTask.startAndDueDateTime" />
 
   - <xref
-  uid="excel!Excel.Interfaces.DocumentTaskData#startAndDueDateTime:member" />
+  uid="excel!Excel.Interfaces.DocumentTaskData#startAndDueDateTime:member"
+  alttext="Excel.Interfaces.DocumentTaskData.startAndDueDateTime" />
 
   - <xref
   uid="excel!Excel.Interfaces.DocumentTaskUpdateData#startAndDueDateTime:member"
-  />
+  alttext="Excel.Interfaces.DocumentTaskUpdateData.startAndDueDateTime" />
 
 isPreview: true
 isDeprecated: false

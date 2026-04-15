@@ -12,12 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataPivotHierarchy#showAs:member" />
+  - <xref uid="excel!Excel.DataPivotHierarchy#showAs:member"
+  alttext="Excel.DataPivotHierarchy.showAs" />
 
-  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#showAs:member" />
+  - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#showAs:member"
+  alttext="Excel.Interfaces.DataPivotHierarchyData.showAs" />
 
   - <xref
-  uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#showAs:member" />
+  uid="excel!Excel.Interfaces.DataPivotHierarchyUpdateData#showAs:member"
+  alttext="Excel.Interfaces.DataPivotHierarchyUpdateData.showAs" />
 
 isPreview: false
 isDeprecated: false

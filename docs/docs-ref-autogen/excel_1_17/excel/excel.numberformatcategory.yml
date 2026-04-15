@@ -13,9 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeData#numberFormatCategories:member"
-  />
+  alttext="Excel.Interfaces.RangeData.numberFormatCategories" />
 
-  - <xref uid="excel!Excel.Range#numberFormatCategories:member" />
+  - <xref uid="excel!Excel.Range#numberFormatCategories:member"
+  alttext="Excel.Range.numberFormatCategories" />
 
 isPreview: false
 isDeprecated: false

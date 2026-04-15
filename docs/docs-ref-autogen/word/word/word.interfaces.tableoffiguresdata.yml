@@ -11,10 +11,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.TableOfFiguresCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.TableOfFiguresCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.TableOfFiguresCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.TableOfFiguresCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.TableOfFiguresCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

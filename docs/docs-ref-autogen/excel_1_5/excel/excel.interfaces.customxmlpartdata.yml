@@ -11,19 +11,22 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.CustomXmlPartCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.CustomXmlPartCollectionUpdateData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
+  uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member"
+  alttext="Excel.Interfaces.CustomXmlPartScopedCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#customXmlParts:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#customXmlParts:member"
+  alttext="Excel.Interfaces.WorkbookData.customXmlParts" />
 
 isPreview: false
 isDeprecated: false

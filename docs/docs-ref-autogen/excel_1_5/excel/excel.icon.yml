@@ -12,161 +12,236 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterCriteria#icon:member" />
+  - <xref uid="excel!Excel.FilterCriteria#icon:member"
+  alttext="Excel.FilterCriteria.icon" />
 
-  - <xref uid="excel!Excel.FiveArrowsGraySet#grayDownArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayDownArrow:member"
+  alttext="Excel.FiveArrowsGraySet.grayDownArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member"
+  alttext="Excel.FiveArrowsGraySet.grayDownInclineArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsGraySet#graySideArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsGraySet#graySideArrow:member"
+  alttext="Excel.FiveArrowsGraySet.graySideArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsGraySet#grayUpArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayUpArrow:member"
+  alttext="Excel.FiveArrowsGraySet.grayUpArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member"
+  alttext="Excel.FiveArrowsGraySet.grayUpInclineArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsSet#greenUpArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsSet#greenUpArrow:member"
+  alttext="Excel.FiveArrowsSet.greenUpArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsSet#redDownArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsSet#redDownArrow:member"
+  alttext="Excel.FiveArrowsSet.redDownArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member"
+  alttext="Excel.FiveArrowsSet.yellowDownInclineArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsSet#yellowSideArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsSet#yellowSideArrow:member"
+  alttext="Excel.FiveArrowsSet.yellowSideArrow" />
 
-  - <xref uid="excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member" />
+  - <xref uid="excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member"
+  alttext="Excel.FiveArrowsSet.yellowUpInclineArrow" />
 
-  - <xref uid="excel!Excel.FiveBoxesSet#fourFilledBoxes:member" />
+  - <xref uid="excel!Excel.FiveBoxesSet#fourFilledBoxes:member"
+  alttext="Excel.FiveBoxesSet.fourFilledBoxes" />
 
-  - <xref uid="excel!Excel.FiveBoxesSet#noFilledBoxes:member" />
+  - <xref uid="excel!Excel.FiveBoxesSet#noFilledBoxes:member"
+  alttext="Excel.FiveBoxesSet.noFilledBoxes" />
 
-  - <xref uid="excel!Excel.FiveBoxesSet#oneFilledBox:member" />
+  - <xref uid="excel!Excel.FiveBoxesSet#oneFilledBox:member"
+  alttext="Excel.FiveBoxesSet.oneFilledBox" />
 
-  - <xref uid="excel!Excel.FiveBoxesSet#threeFilledBoxes:member" />
+  - <xref uid="excel!Excel.FiveBoxesSet#threeFilledBoxes:member"
+  alttext="Excel.FiveBoxesSet.threeFilledBoxes" />
 
-  - <xref uid="excel!Excel.FiveBoxesSet#twoFilledBoxes:member" />
+  - <xref uid="excel!Excel.FiveBoxesSet#twoFilledBoxes:member"
+  alttext="Excel.FiveBoxesSet.twoFilledBoxes" />
 
-  - <xref uid="excel!Excel.FiveQuartersSet#blackCircle:member" />
+  - <xref uid="excel!Excel.FiveQuartersSet#blackCircle:member"
+  alttext="Excel.FiveQuartersSet.blackCircle" />
 
-  - <xref uid="excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member" />
+  - <xref uid="excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member"
+  alttext="Excel.FiveQuartersSet.circleWithOneWhiteQuarter" />
 
   - <xref uid="excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member"
-  />
+  alttext="Excel.FiveQuartersSet.circleWithThreeWhiteQuarters" />
 
-  - <xref uid="excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member" />
+  - <xref uid="excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member"
+  alttext="Excel.FiveQuartersSet.circleWithTwoWhiteQuarters" />
 
   - <xref uid="excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member"
+  alttext="Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters" />
+
+  - <xref uid="excel!Excel.FiveRatingSet#fourBars:member"
+  alttext="Excel.FiveRatingSet.fourBars" />
+
+  - <xref uid="excel!Excel.FiveRatingSet#noBars:member"
+  alttext="Excel.FiveRatingSet.noBars" />
+
+  - <xref uid="excel!Excel.FiveRatingSet#oneBar:member"
+  alttext="Excel.FiveRatingSet.oneBar" />
+
+  - <xref uid="excel!Excel.FiveRatingSet#threeBars:member"
+  alttext="Excel.FiveRatingSet.threeBars" />
+
+  - <xref uid="excel!Excel.FiveRatingSet#twoBars:member"
+  alttext="Excel.FiveRatingSet.twoBars" />
+
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayDownArrow:member"
+  alttext="Excel.FourArrowsGraySet.grayDownArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member"
+  alttext="Excel.FourArrowsGraySet.grayDownInclineArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayUpArrow:member"
+  alttext="Excel.FourArrowsGraySet.grayUpArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member"
+  alttext="Excel.FourArrowsGraySet.grayUpInclineArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsSet#greenUpArrow:member"
+  alttext="Excel.FourArrowsSet.greenUpArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsSet#redDownArrow:member"
+  alttext="Excel.FourArrowsSet.redDownArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsSet#yellowDownInclineArrow:member"
+  alttext="Excel.FourArrowsSet.yellowDownInclineArrow" />
+
+  - <xref uid="excel!Excel.FourArrowsSet#yellowUpInclineArrow:member"
+  alttext="Excel.FourArrowsSet.yellowUpInclineArrow" />
+
+  - <xref uid="excel!Excel.FourRatingSet#fourBars:member"
+  alttext="Excel.FourRatingSet.fourBars" />
+
+  - <xref uid="excel!Excel.FourRatingSet#oneBar:member"
+  alttext="Excel.FourRatingSet.oneBar" />
+
+  - <xref uid="excel!Excel.FourRatingSet#threeBars:member"
+  alttext="Excel.FourRatingSet.threeBars" />
+
+  - <xref uid="excel!Excel.FourRatingSet#twoBars:member"
+  alttext="Excel.FourRatingSet.twoBars" />
+
+  - <xref uid="excel!Excel.FourRedToBlackSet#blackCircle:member"
+  alttext="Excel.FourRedToBlackSet.blackCircle" />
+
+  - <xref uid="excel!Excel.FourRedToBlackSet#grayCircle:member"
+  alttext="Excel.FourRedToBlackSet.grayCircle" />
+
+  - <xref uid="excel!Excel.FourRedToBlackSet#pinkCircle:member"
+  alttext="Excel.FourRedToBlackSet.pinkCircle" />
+
+  - <xref uid="excel!Excel.FourRedToBlackSet#redCircle:member"
+  alttext="Excel.FourRedToBlackSet.redCircle" />
+
+  - <xref uid="excel!Excel.FourTrafficLightsSet#blackCircleWithBorder:member"
+  alttext="Excel.FourTrafficLightsSet.blackCircleWithBorder" />
+
+  - <xref uid="excel!Excel.FourTrafficLightsSet#greenCircle:member"
+  alttext="Excel.FourTrafficLightsSet.greenCircle" />
+
+  - <xref uid="excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member"
+  alttext="Excel.FourTrafficLightsSet.redCircleWithBorder" />
+
+  - <xref uid="excel!Excel.FourTrafficLightsSet#yellowCircle:member"
+  alttext="Excel.FourTrafficLightsSet.yellowCircle" />
+
+  - <xref uid="excel!Excel.SortField#icon:member" alttext="Excel.SortField.icon"
   />
 
-  - <xref uid="excel!Excel.FiveRatingSet#fourBars:member" />
+  - <xref uid="excel!Excel.ThreeArrowsGraySet#grayDownArrow:member"
+  alttext="Excel.ThreeArrowsGraySet.grayDownArrow" />
 
-  - <xref uid="excel!Excel.FiveRatingSet#noBars:member" />
+  - <xref uid="excel!Excel.ThreeArrowsGraySet#graySideArrow:member"
+  alttext="Excel.ThreeArrowsGraySet.graySideArrow" />
 
-  - <xref uid="excel!Excel.FiveRatingSet#oneBar:member" />
+  - <xref uid="excel!Excel.ThreeArrowsGraySet#grayUpArrow:member"
+  alttext="Excel.ThreeArrowsGraySet.grayUpArrow" />
 
-  - <xref uid="excel!Excel.FiveRatingSet#threeBars:member" />
+  - <xref uid="excel!Excel.ThreeArrowsSet#greenUpArrow:member"
+  alttext="Excel.ThreeArrowsSet.greenUpArrow" />
 
-  - <xref uid="excel!Excel.FiveRatingSet#twoBars:member" />
+  - <xref uid="excel!Excel.ThreeArrowsSet#redDownArrow:member"
+  alttext="Excel.ThreeArrowsSet.redDownArrow" />
 
-  - <xref uid="excel!Excel.FourArrowsGraySet#grayDownArrow:member" />
+  - <xref uid="excel!Excel.ThreeArrowsSet#yellowSideArrow:member"
+  alttext="Excel.ThreeArrowsSet.yellowSideArrow" />
 
-  - <xref uid="excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member" />
+  - <xref uid="excel!Excel.ThreeFlagsSet#greenFlag:member"
+  alttext="Excel.ThreeFlagsSet.greenFlag" />
 
-  - <xref uid="excel!Excel.FourArrowsGraySet#grayUpArrow:member" />
+  - <xref uid="excel!Excel.ThreeFlagsSet#redFlag:member"
+  alttext="Excel.ThreeFlagsSet.redFlag" />
 
-  - <xref uid="excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member" />
+  - <xref uid="excel!Excel.ThreeFlagsSet#yellowFlag:member"
+  alttext="Excel.ThreeFlagsSet.yellowFlag" />
 
-  - <xref uid="excel!Excel.FourArrowsSet#greenUpArrow:member" />
+  - <xref uid="excel!Excel.ThreeSignsSet#greenCircle:member"
+  alttext="Excel.ThreeSignsSet.greenCircle" />
 
-  - <xref uid="excel!Excel.FourArrowsSet#redDownArrow:member" />
+  - <xref uid="excel!Excel.ThreeSignsSet#redDiamond:member"
+  alttext="Excel.ThreeSignsSet.redDiamond" />
 
-  - <xref uid="excel!Excel.FourArrowsSet#yellowDownInclineArrow:member" />
+  - <xref uid="excel!Excel.ThreeSignsSet#yellowTriangle:member"
+  alttext="Excel.ThreeSignsSet.yellowTriangle" />
 
-  - <xref uid="excel!Excel.FourArrowsSet#yellowUpInclineArrow:member" />
+  - <xref uid="excel!Excel.ThreeStarsSet#goldStar:member"
+  alttext="Excel.ThreeStarsSet.goldStar" />
 
-  - <xref uid="excel!Excel.FourRatingSet#fourBars:member" />
+  - <xref uid="excel!Excel.ThreeStarsSet#halfGoldStar:member"
+  alttext="Excel.ThreeStarsSet.halfGoldStar" />
 
-  - <xref uid="excel!Excel.FourRatingSet#oneBar:member" />
+  - <xref uid="excel!Excel.ThreeStarsSet#silverStar:member"
+  alttext="Excel.ThreeStarsSet.silverStar" />
 
-  - <xref uid="excel!Excel.FourRatingSet#threeBars:member" />
+  - <xref uid="excel!Excel.ThreeSymbols2Set#greenCheck:member"
+  alttext="Excel.ThreeSymbols2Set.greenCheck" />
 
-  - <xref uid="excel!Excel.FourRatingSet#twoBars:member" />
+  - <xref uid="excel!Excel.ThreeSymbols2Set#redCross:member"
+  alttext="Excel.ThreeSymbols2Set.redCross" />
 
-  - <xref uid="excel!Excel.FourRedToBlackSet#blackCircle:member" />
+  - <xref uid="excel!Excel.ThreeSymbols2Set#yellowExclamation:member"
+  alttext="Excel.ThreeSymbols2Set.yellowExclamation" />
 
-  - <xref uid="excel!Excel.FourRedToBlackSet#grayCircle:member" />
+  - <xref uid="excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member"
+  alttext="Excel.ThreeSymbolsSet.greenCheckSymbol" />
 
-  - <xref uid="excel!Excel.FourRedToBlackSet#pinkCircle:member" />
+  - <xref uid="excel!Excel.ThreeSymbolsSet#redCrossSymbol:member"
+  alttext="Excel.ThreeSymbolsSet.redCrossSymbol" />
 
-  - <xref uid="excel!Excel.FourRedToBlackSet#redCircle:member" />
+  - <xref uid="excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member"
+  alttext="Excel.ThreeSymbolsSet.yellowExclamationSymbol" />
 
-  - <xref uid="excel!Excel.FourTrafficLightsSet#blackCircleWithBorder:member" />
+  - <xref uid="excel!Excel.ThreeTrafficLights1Set#greenCircle:member"
+  alttext="Excel.ThreeTrafficLights1Set.greenCircle" />
 
-  - <xref uid="excel!Excel.FourTrafficLightsSet#greenCircle:member" />
+  - <xref uid="excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member"
+  alttext="Excel.ThreeTrafficLights1Set.redCircleWithBorder" />
 
-  - <xref uid="excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member" />
+  - <xref uid="excel!Excel.ThreeTrafficLights1Set#yellowCircle:member"
+  alttext="Excel.ThreeTrafficLights1Set.yellowCircle" />
 
-  - <xref uid="excel!Excel.FourTrafficLightsSet#yellowCircle:member" />
+  - <xref uid="excel!Excel.ThreeTrafficLights2Set#greenTrafficLight:member"
+  alttext="Excel.ThreeTrafficLights2Set.greenTrafficLight" />
 
-  - <xref uid="excel!Excel.SortField#icon:member" />
+  - <xref uid="excel!Excel.ThreeTrafficLights2Set#redTrafficLight:member"
+  alttext="Excel.ThreeTrafficLights2Set.redTrafficLight" />
 
-  - <xref uid="excel!Excel.ThreeArrowsGraySet#grayDownArrow:member" />
+  - <xref uid="excel!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member"
+  alttext="Excel.ThreeTrafficLights2Set.yellowTrafficLight" />
 
-  - <xref uid="excel!Excel.ThreeArrowsGraySet#graySideArrow:member" />
+  - <xref uid="excel!Excel.ThreeTrianglesSet#greenUpTriangle:member"
+  alttext="Excel.ThreeTrianglesSet.greenUpTriangle" />
 
-  - <xref uid="excel!Excel.ThreeArrowsGraySet#grayUpArrow:member" />
+  - <xref uid="excel!Excel.ThreeTrianglesSet#redDownTriangle:member"
+  alttext="Excel.ThreeTrianglesSet.redDownTriangle" />
 
-  - <xref uid="excel!Excel.ThreeArrowsSet#greenUpArrow:member" />
-
-  - <xref uid="excel!Excel.ThreeArrowsSet#redDownArrow:member" />
-
-  - <xref uid="excel!Excel.ThreeArrowsSet#yellowSideArrow:member" />
-
-  - <xref uid="excel!Excel.ThreeFlagsSet#greenFlag:member" />
-
-  - <xref uid="excel!Excel.ThreeFlagsSet#redFlag:member" />
-
-  - <xref uid="excel!Excel.ThreeFlagsSet#yellowFlag:member" />
-
-  - <xref uid="excel!Excel.ThreeSignsSet#greenCircle:member" />
-
-  - <xref uid="excel!Excel.ThreeSignsSet#redDiamond:member" />
-
-  - <xref uid="excel!Excel.ThreeSignsSet#yellowTriangle:member" />
-
-  - <xref uid="excel!Excel.ThreeStarsSet#goldStar:member" />
-
-  - <xref uid="excel!Excel.ThreeStarsSet#halfGoldStar:member" />
-
-  - <xref uid="excel!Excel.ThreeStarsSet#silverStar:member" />
-
-  - <xref uid="excel!Excel.ThreeSymbols2Set#greenCheck:member" />
-
-  - <xref uid="excel!Excel.ThreeSymbols2Set#redCross:member" />
-
-  - <xref uid="excel!Excel.ThreeSymbols2Set#yellowExclamation:member" />
-
-  - <xref uid="excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member" />
-
-  - <xref uid="excel!Excel.ThreeSymbolsSet#redCrossSymbol:member" />
-
-  - <xref uid="excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member" />
-
-  - <xref uid="excel!Excel.ThreeTrafficLights1Set#greenCircle:member" />
-
-  - <xref uid="excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member" />
-
-  - <xref uid="excel!Excel.ThreeTrafficLights1Set#yellowCircle:member" />
-
-  - <xref uid="excel!Excel.ThreeTrafficLights2Set#greenTrafficLight:member" />
-
-  - <xref uid="excel!Excel.ThreeTrafficLights2Set#redTrafficLight:member" />
-
-  - <xref uid="excel!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member" />
-
-  - <xref uid="excel!Excel.ThreeTrianglesSet#greenUpTriangle:member" />
-
-  - <xref uid="excel!Excel.ThreeTrianglesSet#redDownTriangle:member" />
-
-  - <xref uid="excel!Excel.ThreeTrianglesSet#yellowDash:member" />
+  - <xref uid="excel!Excel.ThreeTrianglesSet#yellowDash:member"
+  alttext="Excel.ThreeTrianglesSet.yellowDash" />
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.InlinePicture#imageFormat:member" />
+  - <xref uid="word!Word.InlinePicture#imageFormat:member"
+  alttext="Word.InlinePicture.imageFormat" />
 
-  - <xref uid="word!Word.Interfaces.InlinePictureData#imageFormat:member" />
+  - <xref uid="word!Word.Interfaces.InlinePictureData#imageFormat:member"
+  alttext="Word.Interfaces.InlinePictureData.imageFormat" />
 
   #### Examples
 

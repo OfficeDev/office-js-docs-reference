@@ -15,14 +15,15 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#background:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideCollectionLoadOptions.background" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#background:member" />
+  uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions#background:member"
+  alttext="PowerPoint.Interfaces.SlideLoadOptions.background" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#background:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideScopedCollectionLoadOptions.background" />
 
 isPreview: false
 isDeprecated: false

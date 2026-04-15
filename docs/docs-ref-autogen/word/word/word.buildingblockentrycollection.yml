@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Template#buildingBlockEntries:member" />
+  - <xref uid="word!Word.Template#buildingBlockEntries:member"
+  alttext="Word.Template.buildingBlockEntries" />
 
 isPreview: false
 isDeprecated: false

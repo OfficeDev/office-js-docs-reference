@@ -9,19 +9,20 @@ remarks: >-
 
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData#items:member" />
+  uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData#items:member"
+  alttext="PowerPoint.Interfaces.SlideCollectionData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideCollectionUpdateData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideScopedCollectionData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideScopedCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

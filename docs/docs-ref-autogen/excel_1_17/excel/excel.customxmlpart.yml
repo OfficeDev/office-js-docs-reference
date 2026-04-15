@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CustomXmlPartCollection#items:member" />
+  - <xref uid="excel!Excel.CustomXmlPartCollection#items:member"
+  alttext="Excel.CustomXmlPartCollection.items" />
 
-  - <xref uid="excel!Excel.CustomXmlPartScopedCollection#items:member" />
+  - <xref uid="excel!Excel.CustomXmlPartScopedCollection#items:member"
+  alttext="Excel.CustomXmlPartScopedCollection.items" />
 
 isPreview: false
 isDeprecated: false

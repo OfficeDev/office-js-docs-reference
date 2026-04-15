@@ -15,24 +15,30 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#shading:member"
-  />
+  alttext="Word.Interfaces.FrameCollectionLoadOptions.shading" />
 
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#shading:member" />
+  - <xref uid="word!Word.Interfaces.FrameLoadOptions#shading:member"
+  alttext="Word.Interfaces.FrameLoadOptions.shading" />
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#shading:member" />
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#shading:member"
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.shading" />
 
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#shading:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#shading:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.shading" />
 
   - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#shading:member"
-  />
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.shading" />
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#shading:member" />
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#shading:member"
+  alttext="Word.Interfaces.RangeLoadOptions.shading" />
 
   - <xref
-  uid="word!Word.Interfaces.TableColumnCollectionLoadOptions#shading:member" />
+  uid="word!Word.Interfaces.TableColumnCollectionLoadOptions#shading:member"
+  alttext="Word.Interfaces.TableColumnCollectionLoadOptions.shading" />
 
-  - <xref uid="word!Word.Interfaces.TableColumnLoadOptions#shading:member" />
+  - <xref uid="word!Word.Interfaces.TableColumnLoadOptions#shading:member"
+  alttext="Word.Interfaces.TableColumnLoadOptions.shading" />
 
 isPreview: false
 isDeprecated: false

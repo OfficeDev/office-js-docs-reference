@@ -4,12 +4,15 @@ uid: office!Office.SetBindingDataOptions:interface
 package: office!
 fullName: Office.SetBindingDataOptions
 summary: Provides options for how to set the data in a binding.
-remarks: |-
+remarks: >-
   If the rows option is used, the value must be "thisRow".
+
 
   #### Used by
 
-  - <xref uid="office!Office.Binding#setDataAsync:member(1)" />
+
+  - <xref uid="office!Office.Binding#setDataAsync:member(1)"
+  alttext="Office.Binding.setDataAsync" />
 
 isPreview: false
 isDeprecated: false

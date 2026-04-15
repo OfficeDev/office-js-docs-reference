@@ -11,20 +11,22 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.CellValueConditionalFormatData#format:member" />
+  uid="excel!Excel.Interfaces.CellValueConditionalFormatData#format:member"
+  alttext="Excel.Interfaces.CellValueConditionalFormatData.format" />
 
   - <xref uid="excel!Excel.Interfaces.CustomConditionalFormatData#format:member"
-  />
+  alttext="Excel.Interfaces.CustomConditionalFormatData.format" />
 
   - <xref
   uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#format:member"
-  />
+  alttext="Excel.Interfaces.PresetCriteriaConditionalFormatData.format" />
 
   - <xref uid="excel!Excel.Interfaces.TextConditionalFormatData#format:member"
-  />
+  alttext="Excel.Interfaces.TextConditionalFormatData.format" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member" />
+  uid="excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member"
+  alttext="Excel.Interfaces.TopBottomConditionalFormatData.format" />
 
 isPreview: false
 isDeprecated: false

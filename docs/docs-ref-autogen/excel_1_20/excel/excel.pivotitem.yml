@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotItemCollection#items:member" />
+  - <xref uid="excel!Excel.PivotItemCollection#items:member"
+  alttext="Excel.PivotItemCollection.items" />
 
-  - <xref uid="excel!Excel.PivotManualFilter#selectedItems:member" />
+  - <xref uid="excel!Excel.PivotManualFilter#selectedItems:member"
+  alttext="Excel.PivotManualFilter.selectedItems" />
 
-  - <xref uid="excel!Excel.ShowAsRule#baseItem:member" />
+  - <xref uid="excel!Excel.ShowAsRule#baseItem:member"
+  alttext="Excel.ShowAsRule.baseItem" />
 
 isPreview: false
 isDeprecated: false

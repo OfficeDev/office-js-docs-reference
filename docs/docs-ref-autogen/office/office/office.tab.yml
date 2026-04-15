@@ -19,7 +19,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.RibbonUpdaterData#tabs:member" />
+  - <xref uid="office!Office.RibbonUpdaterData#tabs:member"
+  alttext="Office.RibbonUpdaterData.tabs" />
 
   #### Examples
 

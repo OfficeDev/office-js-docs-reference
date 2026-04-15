@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ShapeFontUpdateData
 summary: >-
   An interface for updating data on the `ShapeFont` object, for use in
   `shapeFont.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.TextRangeUpdateData#font:member" />
+
+  - <xref uid="excel!Excel.Interfaces.TextRangeUpdateData#font:member"
+  alttext="Excel.Interfaces.TextRangeUpdateData.font" />
 
 isPreview: false
 isDeprecated: false

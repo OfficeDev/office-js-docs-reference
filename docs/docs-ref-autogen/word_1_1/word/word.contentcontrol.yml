@@ -18,17 +18,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentContentControl:member" />
+  - <xref uid="word!Word.Body#parentContentControl:member"
+  alttext="Word.Body.parentContentControl" />
 
-  - <xref uid="word!Word.ContentControl#parentContentControl:member" />
+  - <xref uid="word!Word.ContentControl#parentContentControl:member"
+  alttext="Word.ContentControl.parentContentControl" />
 
-  - <xref uid="word!Word.ContentControlCollection#items:member" />
+  - <xref uid="word!Word.ContentControlCollection#items:member"
+  alttext="Word.ContentControlCollection.items" />
 
-  - <xref uid="word!Word.InlinePicture#parentContentControl:member" />
+  - <xref uid="word!Word.InlinePicture#parentContentControl:member"
+  alttext="Word.InlinePicture.parentContentControl" />
 
-  - <xref uid="word!Word.Paragraph#parentContentControl:member" />
+  - <xref uid="word!Word.Paragraph#parentContentControl:member"
+  alttext="Word.Paragraph.parentContentControl" />
 
-  - <xref uid="word!Word.Range#parentContentControl:member" />
+  - <xref uid="word!Word.Range#parentContentControl:member"
+  alttext="Word.Range.parentContentControl" />
 
   #### Examples
 

@@ -12,13 +12,15 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetCustomPropertyCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.WorksheetCustomPropertyCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData.items"
   />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#customProperties:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#customProperties:member"
+  alttext="Excel.Interfaces.WorksheetData.customProperties" />
 
 isPreview: false
 isDeprecated: false

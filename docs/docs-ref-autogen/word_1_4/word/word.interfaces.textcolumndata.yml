@@ -10,10 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TextColumnCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.TextColumnCollectionData#items:member"
+  alttext="Word.Interfaces.TextColumnCollectionData.items" />
 
   - <xref uid="word!Word.Interfaces.TextColumnCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.TextColumnCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

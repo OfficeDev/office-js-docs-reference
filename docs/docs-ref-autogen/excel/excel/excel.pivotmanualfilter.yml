@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotFilters#manualFilter:member" />
+  - <xref uid="excel!Excel.PivotFilters#manualFilter:member"
+  alttext="Excel.PivotFilters.manualFilter" />
 
 isPreview: false
 isDeprecated: false

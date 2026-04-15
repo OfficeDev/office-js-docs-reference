@@ -14,12 +14,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.RangeFormatData.verticalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member" />
+  uid="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member"
+  alttext="Excel.Interfaces.RangeFormatUpdateData.verticalAlignment" />
 
-  - <xref uid="excel!Excel.RangeFormat#verticalAlignment:member" />
+  - <xref uid="excel!Excel.RangeFormat#verticalAlignment:member"
+  alttext="Excel.RangeFormat.verticalAlignment" />
 
   #### Examples
 

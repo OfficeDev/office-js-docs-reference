@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#custom:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatUpdateData.custom" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#customOrNullObject:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatUpdateData.customOrNullObject" />
 
 isPreview: false
 isDeprecated: false

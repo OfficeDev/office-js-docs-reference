@@ -11,9 +11,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ApplicationUpdateData#bibliography:member"
-  />
+  alttext="Word.Interfaces.ApplicationUpdateData.bibliography" />
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#bibliography:member" />
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#bibliography:member"
+  alttext="Word.Interfaces.DocumentUpdateData.bibliography" />
 
 isPreview: false
 isDeprecated: false

@@ -10,28 +10,39 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeCollectionData#items:member"
+  alttext="Word.Interfaces.CustomXmlNodeCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlNodeCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.CustomXmlNodeCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.CustomXmlNodeCollectionUpdateData.items" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#attributes:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#attributes:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.attributes" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#childNodes:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#childNodes:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.childNodes" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#firstChild:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#firstChild:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.firstChild" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#lastChild:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#lastChild:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.lastChild" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#nextSibling:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#nextSibling:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.nextSibling" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#parentNode:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#parentNode:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.parentNode" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#previousSibling:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeData#previousSibling:member"
+  alttext="Word.Interfaces.CustomXmlNodeData.previousSibling" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlPartData#documentElement:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlPartData#documentElement:member"
+  alttext="Word.Interfaces.CustomXmlPartData.documentElement" />
 
-  - <xref uid="word!Word.Interfaces.XmlMappingData#customXmlNode:member" />
+  - <xref uid="word!Word.Interfaces.XmlMappingData#customXmlNode:member"
+  alttext="Word.Interfaces.XmlMappingData.customXmlNode" />
 
 isPreview: false
 isDeprecated: false

@@ -6,10 +6,12 @@ fullName: Excel.FiveRatingSet
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.IconCollections#fiveRating:member" />
+
+  - <xref uid="excel!Excel.IconCollections#fiveRating:member"
+  alttext="Excel.IconCollections.fiveRating" />
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#protectionType:member" />
+  - <xref uid="word!Word.Document#protectionType:member"
+  alttext="Word.Document.protectionType" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#protectionType:member" />
+  - <xref uid="word!Word.Interfaces.DocumentData#protectionType:member"
+  alttext="Word.Interfaces.DocumentData.protectionType" />
 
 isPreview: false
 isDeprecated: false

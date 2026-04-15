@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeData#twoLinesInOne:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#twoLinesInOne:member"
+  alttext="Word.Interfaces.RangeData.twoLinesInOne" />
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#twoLinesInOne:member" />
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#twoLinesInOne:member"
+  alttext="Word.Interfaces.RangeUpdateData.twoLinesInOne" />
 
-  - <xref uid="word!Word.Range#twoLinesInOne:member" />
+  - <xref uid="word!Word.Range#twoLinesInOne:member"
+  alttext="Word.Range.twoLinesInOne" />
 
 isPreview: false
 isDeprecated: false

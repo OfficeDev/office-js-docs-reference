@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ConflictCollection#items:member" />
+  - <xref uid="word!Word.ConflictCollection#items:member"
+  alttext="Word.ConflictCollection.items" />
 
 isPreview: false
 isDeprecated: false

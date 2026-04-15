@@ -6,10 +6,12 @@ fullName: Word.Interfaces.TextFrameUpdateData
 summary: >-
   An interface for updating data on the `TextFrame` object, for use in
   `textFrame.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#textFrame:member" />
+
+  - <xref uid="word!Word.Interfaces.ShapeUpdateData#textFrame:member"
+  alttext="Word.Interfaces.ShapeUpdateData.textFrame" />
 
 isPreview: false
 isDeprecated: false

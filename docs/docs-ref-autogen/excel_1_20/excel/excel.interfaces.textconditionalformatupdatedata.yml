@@ -12,10 +12,11 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#textComparison:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatUpdateData.textComparison" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#textComparisonOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject"
   />
 
 isPreview: false

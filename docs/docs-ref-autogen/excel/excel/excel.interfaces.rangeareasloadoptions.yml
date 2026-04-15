@@ -19,10 +19,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#rangeSelection:member"
-  />
+  alttext="Excel.Interfaces.WindowCollectionLoadOptions.rangeSelection" />
 
   - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#rangeSelection:member"
-  />
+  alttext="Excel.Interfaces.WindowLoadOptions.rangeSelection" />
 
 isPreview: false
 isDeprecated: false

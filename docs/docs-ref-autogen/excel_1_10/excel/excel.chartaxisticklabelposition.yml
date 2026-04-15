@@ -12,12 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#tickLabelPosition:member" />
+  - <xref uid="excel!Excel.ChartAxis#tickLabelPosition:member"
+  alttext="Excel.ChartAxis.tickLabelPosition" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#tickLabelPosition:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#tickLabelPosition:member"
+  alttext="Excel.Interfaces.ChartAxisData.tickLabelPosition" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member" />
+  uid="excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member"
+  alttext="Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition" />
 
 isPreview: false
 isDeprecated: false

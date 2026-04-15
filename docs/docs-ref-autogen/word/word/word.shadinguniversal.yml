@@ -14,23 +14,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ConditionalStyle#shading:member" />
+  - <xref uid="word!Word.ConditionalStyle#shading:member"
+  alttext="Word.ConditionalStyle.shading" />
 
-  - <xref uid="word!Word.Frame#shading:member" />
+  - <xref uid="word!Word.Frame#shading:member" alttext="Word.Frame.shading" />
 
-  - <xref uid="word!Word.Paragraph#shading:member" />
+  - <xref uid="word!Word.Paragraph#shading:member"
+  alttext="Word.Paragraph.shading" />
 
-  - <xref uid="word!Word.Range#shading:member" />
+  - <xref uid="word!Word.Range#shading:member" alttext="Word.Range.shading" />
 
-  - <xref uid="word!Word.Selection#shading:member" />
+  - <xref uid="word!Word.Selection#shading:member"
+  alttext="Word.Selection.shading" />
 
-  - <xref uid="word!Word.Table#shading:member" />
+  - <xref uid="word!Word.Table#shading:member" alttext="Word.Table.shading" />
 
-  - <xref uid="word!Word.TableCell#shading:member" />
+  - <xref uid="word!Word.TableCell#shading:member"
+  alttext="Word.TableCell.shading" />
 
-  - <xref uid="word!Word.TableColumn#shading:member" />
+  - <xref uid="word!Word.TableColumn#shading:member"
+  alttext="Word.TableColumn.shading" />
 
-  - <xref uid="word!Word.TableRow#shading:member" />
+  - <xref uid="word!Word.TableRow#shading:member"
+  alttext="Word.TableRow.shading" />
 
 isPreview: false
 isDeprecated: false

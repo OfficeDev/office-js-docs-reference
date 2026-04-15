@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#grammaticalErrors:member" />
+  - <xref uid="word!Word.Document#grammaticalErrors:member"
+  alttext="Word.Document.grammaticalErrors" />
 
-  - <xref uid="word!Word.Document#spellingErrors:member" />
+  - <xref uid="word!Word.Document#spellingErrors:member"
+  alttext="Word.Document.spellingErrors" />
 
-  - <xref uid="word!Word.Document#storyRanges:member" />
+  - <xref uid="word!Word.Document#storyRanges:member"
+  alttext="Word.Document.storyRanges" />
 
   #### Examples
 

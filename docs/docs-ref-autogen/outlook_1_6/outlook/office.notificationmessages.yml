@@ -30,13 +30,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#notificationMessages:member" />
+  - <xref uid="outlook!Office.AppointmentCompose#notificationMessages:member"
+  alttext="Office.AppointmentCompose.notificationMessages" />
 
-  - <xref uid="outlook!Office.AppointmentRead#notificationMessages:member" />
+  - <xref uid="outlook!Office.AppointmentRead#notificationMessages:member"
+  alttext="Office.AppointmentRead.notificationMessages" />
 
-  - <xref uid="outlook!Office.MessageCompose#notificationMessages:member" />
+  - <xref uid="outlook!Office.MessageCompose#notificationMessages:member"
+  alttext="Office.MessageCompose.notificationMessages" />
 
-  - <xref uid="outlook!Office.MessageRead#notificationMessages:member" />
+  - <xref uid="outlook!Office.MessageRead#notificationMessages:member"
+  alttext="Office.MessageRead.notificationMessages" />
 
 isPreview: false
 isDeprecated: false

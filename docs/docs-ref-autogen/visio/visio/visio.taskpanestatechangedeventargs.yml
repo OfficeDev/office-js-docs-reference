@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onTaskPaneStateChanged:member" />
+  - <xref uid="visio!Visio.Document#onTaskPaneStateChanged:member"
+  alttext="Visio.Document.onTaskPaneStateChanged" />
 
 isPreview: false
 isDeprecated: false

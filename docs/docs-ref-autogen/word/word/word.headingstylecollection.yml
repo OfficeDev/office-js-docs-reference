@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableOfContents#additionalHeadingStyles:member" />
+  - <xref uid="word!Word.TableOfContents#additionalHeadingStyles:member"
+  alttext="Word.TableOfContents.additionalHeadingStyles" />
 
-  - <xref uid="word!Word.TableOfFigures#additionalHeadingStyles:member" />
+  - <xref uid="word!Word.TableOfFigures#additionalHeadingStyles:member"
+  alttext="Word.TableOfFigures.additionalHeadingStyles" />
 
 isPreview: false
 isDeprecated: false

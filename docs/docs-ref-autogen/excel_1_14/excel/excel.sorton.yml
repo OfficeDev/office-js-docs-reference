@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SortField#sortOn:member" />
+  - <xref uid="excel!Excel.SortField#sortOn:member"
+  alttext="Excel.SortField.sortOn" />
 
   #### Examples
 

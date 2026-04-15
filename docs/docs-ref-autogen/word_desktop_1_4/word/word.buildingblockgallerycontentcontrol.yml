@@ -13,7 +13,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.ContentControl#buildingBlockGalleryContentControl:member" />
+  uid="word!Word.ContentControl#buildingBlockGalleryContentControl:member"
+  alttext="Word.ContentControl.buildingBlockGalleryContentControl" />
 
 isPreview: false
 isDeprecated: false

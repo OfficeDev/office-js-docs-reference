@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Range#editors:member" />
+  - <xref uid="word!Word.Range#editors:member" alttext="Word.Range.editors" />
 
 isPreview: false
 isDeprecated: false

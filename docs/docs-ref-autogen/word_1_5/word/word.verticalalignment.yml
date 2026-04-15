@@ -13,25 +13,33 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TableCellData#verticalAlignment:member" />
+  - <xref uid="word!Word.Interfaces.TableCellData#verticalAlignment:member"
+  alttext="Word.Interfaces.TableCellData.verticalAlignment" />
 
   - <xref
-  uid="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member" />
+  uid="word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member"
+  alttext="Word.Interfaces.TableCellUpdateData.verticalAlignment" />
 
-  - <xref uid="word!Word.Interfaces.TableData#verticalAlignment:member" />
+  - <xref uid="word!Word.Interfaces.TableData#verticalAlignment:member"
+  alttext="Word.Interfaces.TableData.verticalAlignment" />
 
-  - <xref uid="word!Word.Interfaces.TableRowData#verticalAlignment:member" />
+  - <xref uid="word!Word.Interfaces.TableRowData#verticalAlignment:member"
+  alttext="Word.Interfaces.TableRowData.verticalAlignment" />
 
   - <xref uid="word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member"
-  />
+  alttext="Word.Interfaces.TableRowUpdateData.verticalAlignment" />
 
-  - <xref uid="word!Word.Interfaces.TableUpdateData#verticalAlignment:member" />
+  - <xref uid="word!Word.Interfaces.TableUpdateData#verticalAlignment:member"
+  alttext="Word.Interfaces.TableUpdateData.verticalAlignment" />
 
-  - <xref uid="word!Word.Table#verticalAlignment:member" />
+  - <xref uid="word!Word.Table#verticalAlignment:member"
+  alttext="Word.Table.verticalAlignment" />
 
-  - <xref uid="word!Word.TableCell#verticalAlignment:member" />
+  - <xref uid="word!Word.TableCell#verticalAlignment:member"
+  alttext="Word.TableCell.verticalAlignment" />
 
-  - <xref uid="word!Word.TableRow#verticalAlignment:member" />
+  - <xref uid="word!Word.TableRow#verticalAlignment:member"
+  alttext="Word.TableRow.verticalAlignment" />
 
   #### Examples
 

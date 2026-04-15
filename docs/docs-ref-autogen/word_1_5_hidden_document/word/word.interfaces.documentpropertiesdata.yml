@@ -6,11 +6,15 @@ fullName: Word.Interfaces.DocumentPropertiesData
 summary: >-
   An interface describing the data returned by calling
   `documentProperties.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentCreatedData#properties:member" />
-  - <xref uid="word!Word.Interfaces.DocumentData#properties:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentCreatedData#properties:member"
+  alttext="Word.Interfaces.DocumentCreatedData.properties" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#properties:member"
+  alttext="Word.Interfaces.DocumentData.properties" />
 
 isPreview: false
 isDeprecated: false

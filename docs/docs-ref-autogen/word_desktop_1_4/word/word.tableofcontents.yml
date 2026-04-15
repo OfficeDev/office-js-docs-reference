@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableOfContentsCollection#items:member" />
+  - <xref uid="word!Word.TableOfContentsCollection#items:member"
+  alttext="Word.TableOfContentsCollection.items" />
 
 isPreview: false
 isDeprecated: false

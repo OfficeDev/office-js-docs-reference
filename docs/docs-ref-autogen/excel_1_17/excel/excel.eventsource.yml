@@ -12,45 +12,65 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member"
+  alttext="Excel.ChartAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member"
+  alttext="Excel.ChartDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.CommentAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.CommentAddedEventArgs#source:member"
+  alttext="Excel.CommentAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.CommentChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.CommentChangedEventArgs#source:member"
+  alttext="Excel.CommentChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.CommentDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.CommentDeletedEventArgs#source:member"
+  alttext="Excel.CommentDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.TableAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.TableAddedEventArgs#source:member"
+  alttext="Excel.TableAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.TableChangedEventArgs#source:member"
+  alttext="Excel.TableChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member"
+  alttext="Excel.TableDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member"
+  alttext="Excel.WorksheetAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member"
+  alttext="Excel.WorksheetChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetColumnSortedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetColumnSortedEventArgs#source:member"
+  alttext="Excel.WorksheetColumnSortedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member"
+  alttext="Excel.WorksheetDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member"
+  alttext="Excel.WorksheetFormatChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetFormulaChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetFormulaChangedEventArgs#source:member"
+  alttext="Excel.WorksheetFormulaChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetMovedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetMovedEventArgs#source:member"
+  alttext="Excel.WorksheetMovedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetNameChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetNameChangedEventArgs#source:member"
+  alttext="Excel.WorksheetNameChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetProtectionChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetProtectionChangedEventArgs#source:member"
+  alttext="Excel.WorksheetProtectionChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member"
+  alttext="Excel.WorksheetRowHiddenChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetRowSortedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetRowSortedEventArgs#source:member"
+  alttext="Excel.WorksheetRowSortedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetVisibilityChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetVisibilityChangedEventArgs#source:member"
+  alttext="Excel.WorksheetVisibilityChangedEventArgs.source" />
 
 isPreview: false
 isDeprecated: false

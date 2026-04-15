@@ -13,7 +13,7 @@ remarks: >-
 
 
   - <xref uid="word!Word.SelectionConvertToTableOptions#autoFitBehavior:member"
-  />
+  alttext="Word.SelectionConvertToTableOptions.autoFitBehavior" />
 
 isPreview: false
 isDeprecated: false

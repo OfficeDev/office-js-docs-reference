@@ -22,7 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetCollection#onMoved:member" />
+  - <xref uid="excel!Excel.WorksheetCollection#onMoved:member"
+  alttext="Excel.WorksheetCollection.onMoved" />
 
   #### Examples
 

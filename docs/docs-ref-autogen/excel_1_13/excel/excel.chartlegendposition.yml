@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartLegend#position:member" />
+  - <xref uid="excel!Excel.ChartLegend#position:member"
+  alttext="Excel.ChartLegend.position" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartLegendData#position:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLegendData#position:member"
+  alttext="Excel.Interfaces.ChartLegendData.position" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartLegendUpdateData#position:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLegendUpdateData#position:member"
+  alttext="Excel.Interfaces.ChartLegendUpdateData.position" />
 
 isPreview: false
 isDeprecated: false

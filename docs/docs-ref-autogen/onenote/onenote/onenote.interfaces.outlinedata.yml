@@ -6,10 +6,12 @@ fullName: OneNote.Interfaces.OutlineData
 summary: >-
   An interface describing the data returned by calling `outline.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentData#outline:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.PageContentData#outline:member"
+  alttext="OneNote.Interfaces.PageContentData.outline" />
 
 isPreview: false
 isDeprecated: false

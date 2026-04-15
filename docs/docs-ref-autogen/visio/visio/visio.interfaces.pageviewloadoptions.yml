@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.PageCollectionLoadOptions#view:member" />
+  - <xref uid="visio!Visio.Interfaces.PageCollectionLoadOptions#view:member"
+  alttext="Visio.Interfaces.PageCollectionLoadOptions.view" />
 
-  - <xref uid="visio!Visio.Interfaces.PageLoadOptions#view:member" />
+  - <xref uid="visio!Visio.Interfaces.PageLoadOptions#view:member"
+  alttext="Visio.Interfaces.PageLoadOptions.view" />
 
 isPreview: false
 isDeprecated: false

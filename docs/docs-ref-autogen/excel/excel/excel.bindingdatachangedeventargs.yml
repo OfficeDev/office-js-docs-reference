@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Binding#onDataChanged:member" />
+  - <xref uid="excel!Excel.Binding#onDataChanged:member"
+  alttext="Excel.Binding.onDataChanged" />
 
 isPreview: false
 isDeprecated: false

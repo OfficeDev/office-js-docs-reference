@@ -10,14 +10,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Interfaces.CommentCollectionData#items:member" />
+  - <xref uid="visio!Visio.Interfaces.CommentCollectionData#items:member"
+  alttext="Visio.Interfaces.CommentCollectionData.items" />
 
   - <xref uid="visio!Visio.Interfaces.CommentCollectionUpdateData#items:member"
-  />
+  alttext="Visio.Interfaces.CommentCollectionUpdateData.items" />
 
-  - <xref uid="visio!Visio.Interfaces.PageData#comments:member" />
+  - <xref uid="visio!Visio.Interfaces.PageData#comments:member"
+  alttext="Visio.Interfaces.PageData.comments" />
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#comments:member" />
+  - <xref uid="visio!Visio.Interfaces.ShapeData#comments:member"
+  alttext="Visio.Interfaces.ShapeData.comments" />
 
 isPreview: false
 isDeprecated: false

@@ -13,21 +13,23 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member"
-  />
+  alttext="OneNote.Interfaces.OutlineLoadOptions.paragraphs" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions#paragraphs:member"
-  />
+  alttext="OneNote.Interfaces.ParagraphCollectionLoadOptions.paragraphs" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#paragraphs:member" />
+  uid="onenote!OneNote.Interfaces.ParagraphLoadOptions#paragraphs:member"
+  alttext="OneNote.Interfaces.ParagraphLoadOptions.paragraphs" />
 
   - <xref
   uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#paragraphs:member"
-  />
+  alttext="OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.TableCellLoadOptions#paragraphs:member" />
+  uid="onenote!OneNote.Interfaces.TableCellLoadOptions#paragraphs:member"
+  alttext="OneNote.Interfaces.TableCellLoadOptions.paragraphs" />
 
 isPreview: false
 isDeprecated: false

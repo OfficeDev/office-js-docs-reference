@@ -10,10 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageBreakCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.PageBreakCollectionData#items:member"
+  alttext="Excel.Interfaces.PageBreakCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.PageBreakCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

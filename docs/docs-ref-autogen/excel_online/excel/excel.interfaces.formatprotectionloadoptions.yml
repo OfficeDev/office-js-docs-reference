@@ -13,7 +13,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member"
-  />
+  alttext="Excel.Interfaces.RangeFormatLoadOptions.protection" />
 
 isPreview: false
 isDeprecated: false

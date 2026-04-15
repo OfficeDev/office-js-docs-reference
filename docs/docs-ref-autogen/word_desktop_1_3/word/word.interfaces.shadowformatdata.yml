@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ShadowFormatData
 summary: >-
   An interface describing the data returned by calling
   `shadowFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.FontData#textShadow:member" />
+
+  - <xref uid="word!Word.Interfaces.FontData#textShadow:member"
+  alttext="Word.Interfaces.FontData.textShadow" />
 
 isPreview: false
 isDeprecated: false

@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartGridlinesFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartGridlinesFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartGridlinesData#format:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartGridlinesData#format:member"
+  alttext="Excel.Interfaces.ChartGridlinesData.format" />
 
 isPreview: false
 isDeprecated: false

@@ -31,7 +31,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Ews#getTokenStatusAsync:member(1)" />
+  - <xref uid="outlook!Office.Ews#getTokenStatusAsync:member(1)"
+  alttext="Office.Ews.getTokenStatusAsync" />
 
   #### Examples
 

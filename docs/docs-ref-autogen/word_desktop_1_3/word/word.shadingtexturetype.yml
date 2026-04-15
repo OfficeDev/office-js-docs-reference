@@ -17,18 +17,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShadingData#texture:member" />
+  - <xref uid="word!Word.Interfaces.ShadingData#texture:member"
+  alttext="Word.Interfaces.ShadingData.texture" />
 
-  - <xref uid="word!Word.Interfaces.ShadingUniversalData#texture:member" />
+  - <xref uid="word!Word.Interfaces.ShadingUniversalData#texture:member"
+  alttext="Word.Interfaces.ShadingUniversalData.texture" />
 
   - <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData#texture:member"
+  alttext="Word.Interfaces.ShadingUniversalUpdateData.texture" />
+
+  - <xref uid="word!Word.Interfaces.ShadingUpdateData#texture:member"
+  alttext="Word.Interfaces.ShadingUpdateData.texture" />
+
+  - <xref uid="word!Word.Shading#texture:member" alttext="Word.Shading.texture"
   />
 
-  - <xref uid="word!Word.Interfaces.ShadingUpdateData#texture:member" />
-
-  - <xref uid="word!Word.Shading#texture:member" />
-
-  - <xref uid="word!Word.ShadingUniversal#texture:member" />
+  - <xref uid="word!Word.ShadingUniversal#texture:member"
+  alttext="Word.ShadingUniversal.texture" />
 
   #### Examples
 

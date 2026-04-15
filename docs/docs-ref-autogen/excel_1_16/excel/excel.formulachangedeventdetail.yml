@@ -13,7 +13,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.WorksheetFormulaChangedEventArgs#formulaDetails:member" />
+  uid="excel!Excel.WorksheetFormulaChangedEventArgs#formulaDetails:member"
+  alttext="Excel.WorksheetFormulaChangedEventArgs.formulaDetails" />
 
 isPreview: false
 isDeprecated: false

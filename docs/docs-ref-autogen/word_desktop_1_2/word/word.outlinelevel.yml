@@ -13,12 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ParagraphFormatData#outlineLevel:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphFormatData#outlineLevel:member"
+  alttext="Word.Interfaces.ParagraphFormatData.outlineLevel" />
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphFormatUpdateData#outlineLevel:member" />
+  uid="word!Word.Interfaces.ParagraphFormatUpdateData#outlineLevel:member"
+  alttext="Word.Interfaces.ParagraphFormatUpdateData.outlineLevel" />
 
-  - <xref uid="word!Word.ParagraphFormat#outlineLevel:member" />
+  - <xref uid="word!Word.ParagraphFormat#outlineLevel:member"
+  alttext="Word.ParagraphFormat.outlineLevel" />
 
   #### Examples
 

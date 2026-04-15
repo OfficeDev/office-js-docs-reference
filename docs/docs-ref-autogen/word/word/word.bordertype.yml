@@ -13,29 +13,36 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Border#type:member" />
+  - <xref uid="word!Word.Border#type:member" alttext="Word.Border.type" />
 
-  - <xref uid="word!Word.BorderCollection#insideBorderType:member" />
+  - <xref uid="word!Word.BorderCollection#insideBorderType:member"
+  alttext="Word.BorderCollection.insideBorderType" />
 
-  - <xref uid="word!Word.BorderCollection#outsideBorderType:member" />
+  - <xref uid="word!Word.BorderCollection#outsideBorderType:member"
+  alttext="Word.BorderCollection.outsideBorderType" />
 
   - <xref
   uid="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderType:member"
-  />
+  alttext="Word.Interfaces.BorderCollectionUpdateData.insideBorderType" />
 
   - <xref
   uid="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderType:member"
-  />
+  alttext="Word.Interfaces.BorderCollectionUpdateData.outsideBorderType" />
 
-  - <xref uid="word!Word.Interfaces.BorderData#type:member" />
+  - <xref uid="word!Word.Interfaces.BorderData#type:member"
+  alttext="Word.Interfaces.BorderData.type" />
 
-  - <xref uid="word!Word.Interfaces.BorderUpdateData#type:member" />
+  - <xref uid="word!Word.Interfaces.BorderUpdateData#type:member"
+  alttext="Word.Interfaces.BorderUpdateData.type" />
 
-  - <xref uid="word!Word.Interfaces.TableBorderData#type:member" />
+  - <xref uid="word!Word.Interfaces.TableBorderData#type:member"
+  alttext="Word.Interfaces.TableBorderData.type" />
 
-  - <xref uid="word!Word.Interfaces.TableBorderUpdateData#type:member" />
+  - <xref uid="word!Word.Interfaces.TableBorderUpdateData#type:member"
+  alttext="Word.Interfaces.TableBorderUpdateData.type" />
 
-  - <xref uid="word!Word.TableBorder#type:member" />
+  - <xref uid="word!Word.TableBorder#type:member"
+  alttext="Word.TableBorder.type" />
 
   #### Examples
 

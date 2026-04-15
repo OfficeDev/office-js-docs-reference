@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Style#shading:member" />
+  - <xref uid="word!Word.Style#shading:member" alttext="Word.Style.shading" />
 
-  - <xref uid="word!Word.TableStyle#shading:member" />
+  - <xref uid="word!Word.TableStyle#shading:member"
+  alttext="Word.TableStyle.shading" />
 
   #### Examples
 

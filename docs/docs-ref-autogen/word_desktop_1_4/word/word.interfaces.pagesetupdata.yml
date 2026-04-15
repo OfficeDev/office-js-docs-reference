@@ -6,11 +6,15 @@ fullName: Word.Interfaces.PageSetupData
 summary: >-
   An interface describing the data returned by calling `pageSetup.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentData#pageSetup:member" />
-  - <xref uid="word!Word.Interfaces.SectionData#pageSetup:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#pageSetup:member"
+  alttext="Word.Interfaces.DocumentData.pageSetup" />
+
+  - <xref uid="word!Word.Interfaces.SectionData#pageSetup:member"
+  alttext="Word.Interfaces.SectionData.pageSetup" />
 
 isPreview: false
 isDeprecated: false

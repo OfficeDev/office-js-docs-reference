@@ -15,10 +15,11 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions#margins:member"
-  />
+  alttext="PowerPoint.Interfaces.TableCellCollectionLoadOptions.margins" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#margins:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#margins:member"
+  alttext="PowerPoint.Interfaces.TableCellLoadOptions.margins" />
 
 isPreview: false
 isDeprecated: false

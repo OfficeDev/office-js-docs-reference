@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BorderUniversalCollection#items:member" />
+  - <xref uid="word!Word.BorderUniversalCollection#items:member"
+  alttext="Word.BorderUniversalCollection.items" />
 
 isPreview: false
 isDeprecated: false

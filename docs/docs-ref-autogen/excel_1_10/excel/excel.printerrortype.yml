@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printErrors:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printErrors:member"
+  alttext="Excel.Interfaces.PageLayoutData.printErrors" />
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member"
-  />
+  alttext="Excel.Interfaces.PageLayoutUpdateData.printErrors" />
 
-  - <xref uid="excel!Excel.PageLayout#printErrors:member" />
+  - <xref uid="excel!Excel.PageLayout#printErrors:member"
+  alttext="Excel.PageLayout.printErrors" />
 
 isPreview: false
 isDeprecated: false

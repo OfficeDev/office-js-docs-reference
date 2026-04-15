@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotFilters#dateFilter:member" />
+  - <xref uid="excel!Excel.PivotFilters#dateFilter:member"
+  alttext="Excel.PivotFilters.dateFilter" />
 
 isPreview: false
 isDeprecated: false

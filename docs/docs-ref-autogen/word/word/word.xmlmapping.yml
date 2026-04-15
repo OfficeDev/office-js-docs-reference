@@ -18,17 +18,22 @@ remarks: >-
 
 
   - <xref uid="word!Word.BuildingBlockGalleryContentControl#xmlMapping:member"
-  />
+  alttext="Word.BuildingBlockGalleryContentControl.xmlMapping" />
 
-  - <xref uid="word!Word.ContentControl#xmlMapping:member" />
+  - <xref uid="word!Word.ContentControl#xmlMapping:member"
+  alttext="Word.ContentControl.xmlMapping" />
 
-  - <xref uid="word!Word.DatePickerContentControl#xmlMapping:member" />
+  - <xref uid="word!Word.DatePickerContentControl#xmlMapping:member"
+  alttext="Word.DatePickerContentControl.xmlMapping" />
 
-  - <xref uid="word!Word.GroupContentControl#xmlMapping:member" />
+  - <xref uid="word!Word.GroupContentControl#xmlMapping:member"
+  alttext="Word.GroupContentControl.xmlMapping" />
 
-  - <xref uid="word!Word.PictureContentControl#xmlMapping:member" />
+  - <xref uid="word!Word.PictureContentControl#xmlMapping:member"
+  alttext="Word.PictureContentControl.xmlMapping" />
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#xmlMapping:member" />
+  - <xref uid="word!Word.RepeatingSectionContentControl#xmlMapping:member"
+  alttext="Word.RepeatingSectionContentControl.xmlMapping" />
 
 isPreview: false
 isDeprecated: false

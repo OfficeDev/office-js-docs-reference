@@ -13,12 +13,14 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonWidthType:member"
-  />
+  alttext="Word.Interfaces.ViewData.revisionsBalloonWidthType" />
 
   - <xref
-  uid="word!Word.Interfaces.ViewUpdateData#revisionsBalloonWidthType:member" />
+  uid="word!Word.Interfaces.ViewUpdateData#revisionsBalloonWidthType:member"
+  alttext="Word.Interfaces.ViewUpdateData.revisionsBalloonWidthType" />
 
-  - <xref uid="word!Word.View#revisionsBalloonWidthType:member" />
+  - <xref uid="word!Word.View#revisionsBalloonWidthType:member"
+  alttext="Word.View.revisionsBalloonWidthType" />
 
 isPreview: false
 isDeprecated: false

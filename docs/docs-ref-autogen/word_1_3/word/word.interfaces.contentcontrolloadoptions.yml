@@ -18,88 +18,102 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.BodyLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member"
-  />
+  alttext="Word.Interfaces.BodyLoadOptions.parentContentControlOrNullObject" />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.ContentControlLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.ContentControlLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.InlinePictureLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.InlinePictureLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
-  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member" />
+  uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
   uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
-  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member" />
+  uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.RangeLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member"
-  />
+  alttext="Word.Interfaces.RangeLoadOptions.parentContentControlOrNullObject" />
 
   - <xref
   uid="word!Word.Interfaces.TableCollectionLoadOptions#parentContentControl:member"
-  />
+  alttext="Word.Interfaces.TableCollectionLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.TableCollectionLoadOptions#parentContentControlOrNullObject:member"
+  alttext="Word.Interfaces.TableCollectionLoadOptions.parentContentControlOrNullObject"
   />
 
   - <xref
-  uid="word!Word.Interfaces.TableLoadOptions#parentContentControl:member" />
+  uid="word!Word.Interfaces.TableLoadOptions#parentContentControl:member"
+  alttext="Word.Interfaces.TableLoadOptions.parentContentControl" />
 
   - <xref
   uid="word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member"
-  />
+  alttext="Word.Interfaces.TableLoadOptions.parentContentControlOrNullObject" />
 
 isPreview: false
 isDeprecated: false

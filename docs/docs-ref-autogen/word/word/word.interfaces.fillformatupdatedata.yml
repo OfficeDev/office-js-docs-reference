@@ -6,10 +6,12 @@ fullName: Word.Interfaces.FillFormatUpdateData
 summary: >-
   An interface for updating data on the `FillFormat` object, for use in
   `fillFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#fill:member" />
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#fill:member"
+  alttext="Word.Interfaces.FontUpdateData.fill" />
 
 isPreview: false
 isDeprecated: false

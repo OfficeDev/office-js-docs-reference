@@ -12,12 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#verticalAlignment:member" />
+  - <xref uid="word!Word.Interfaces.PageSetupData#verticalAlignment:member"
+  alttext="Word.Interfaces.PageSetupData.verticalAlignment" />
 
   - <xref
-  uid="word!Word.Interfaces.PageSetupUpdateData#verticalAlignment:member" />
+  uid="word!Word.Interfaces.PageSetupUpdateData#verticalAlignment:member"
+  alttext="Word.Interfaces.PageSetupUpdateData.verticalAlignment" />
 
-  - <xref uid="word!Word.PageSetup#verticalAlignment:member" />
+  - <xref uid="word!Word.PageSetup#verticalAlignment:member"
+  alttext="Word.PageSetup.verticalAlignment" />
 
 isPreview: false
 isDeprecated: false

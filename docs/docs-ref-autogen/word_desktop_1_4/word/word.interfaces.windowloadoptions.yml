@@ -14,16 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#activeWindow:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.activeWindow" />
 
-  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#next:member" />
+  - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#next:member"
+  alttext="Word.Interfaces.WindowCollectionLoadOptions.next" />
 
   - <xref uid="word!Word.Interfaces.WindowCollectionLoadOptions#previous:member"
-  />
+  alttext="Word.Interfaces.WindowCollectionLoadOptions.previous" />
 
-  - <xref uid="word!Word.Interfaces.WindowLoadOptions#next:member" />
+  - <xref uid="word!Word.Interfaces.WindowLoadOptions#next:member"
+  alttext="Word.Interfaces.WindowLoadOptions.next" />
 
-  - <xref uid="word!Word.Interfaces.WindowLoadOptions#previous:member" />
+  - <xref uid="word!Word.Interfaces.WindowLoadOptions#previous:member"
+  alttext="Word.Interfaces.WindowLoadOptions.previous" />
 
 isPreview: false
 isDeprecated: false

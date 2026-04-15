@@ -18,13 +18,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AttachmentDetails#attachmentType:member" />
+  - <xref uid="outlook!Office.AttachmentDetails#attachmentType:member"
+  alttext="Office.AttachmentDetails.attachmentType" />
 
-  - <xref uid="outlook!Office.AttachmentDetailsCompose#attachmentType:member" />
+  - <xref uid="outlook!Office.AttachmentDetailsCompose#attachmentType:member"
+  alttext="Office.AttachmentDetailsCompose.attachmentType" />
 
-  - <xref uid="outlook!Office.MessageFormAttachment#type:member" />
+  - <xref uid="outlook!Office.MessageFormAttachment#type:member"
+  alttext="Office.MessageFormAttachment.type" />
 
-  - <xref uid="outlook!Office.ReplyFormAttachment#type:member" />
+  - <xref uid="outlook!Office.ReplyFormAttachment#type:member"
+  alttext="Office.ReplyFormAttachment.type" />
 
   #### Examples
 

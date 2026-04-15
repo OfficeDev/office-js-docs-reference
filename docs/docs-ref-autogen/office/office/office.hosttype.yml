@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#host:member" />
+  - <xref uid="office!Office.Context#host:member" alttext="Office.Context.host"
+  />
 
-  - <xref uid="office!Office.ContextInformation#host:member" />
+  - <xref uid="office!Office.ContextInformation#host:member"
+  alttext="Office.ContextInformation.host" />
 
   #### Examples
 

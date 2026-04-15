@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.FontUpdateData#threeDimensionalFormat:member" />
+  uid="word!Word.Interfaces.FontUpdateData#threeDimensionalFormat:member"
+  alttext="Word.Interfaces.FontUpdateData.threeDimensionalFormat" />
 
 isPreview: false
 isDeprecated: false

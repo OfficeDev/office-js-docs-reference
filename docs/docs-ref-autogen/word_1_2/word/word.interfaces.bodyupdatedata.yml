@@ -6,11 +6,15 @@ fullName: Word.Interfaces.BodyUpdateData
 summary: >-
   An interface for updating data on the `Body` object, for use in `body.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#body:member" />
-  - <xref uid="word!Word.Interfaces.SectionUpdateData#body:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#body:member"
+  alttext="Word.Interfaces.DocumentUpdateData.body" />
+
+  - <xref uid="word!Word.Interfaces.SectionUpdateData#body:member"
+  alttext="Word.Interfaces.SectionUpdateData.body" />
 
 isPreview: false
 isDeprecated: false

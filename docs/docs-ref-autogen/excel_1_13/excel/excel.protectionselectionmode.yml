@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetProtectionOptions#selectionMode:member" />
+  - <xref uid="excel!Excel.WorksheetProtectionOptions#selectionMode:member"
+  alttext="Excel.WorksheetProtectionOptions.selectionMode" />
 
 isPreview: false
 isDeprecated: false

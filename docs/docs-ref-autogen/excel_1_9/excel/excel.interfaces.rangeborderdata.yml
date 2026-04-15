@@ -10,14 +10,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeBorderCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeBorderCollectionData#items:member"
+  alttext="Excel.Interfaces.RangeBorderCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.RangeBorderCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#borders:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeFormatData#borders:member"
+  alttext="Excel.Interfaces.RangeFormatData.borders" />
 
-  - <xref uid="excel!Excel.Interfaces.StyleData#borders:member" />
+  - <xref uid="excel!Excel.Interfaces.StyleData#borders:member"
+  alttext="Excel.Interfaces.StyleData.borders" />
 
 isPreview: false
 isDeprecated: false

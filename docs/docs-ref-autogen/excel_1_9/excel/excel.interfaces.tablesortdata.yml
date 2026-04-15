@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.TableSortData
 summary: >-
   An interface describing the data returned by calling `tableSort.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.TableData#sort:member" />
+
+  - <xref uid="excel!Excel.Interfaces.TableData#sort:member"
+  alttext="Excel.Interfaces.TableData.sort" />
 
 isPreview: false
 isDeprecated: false

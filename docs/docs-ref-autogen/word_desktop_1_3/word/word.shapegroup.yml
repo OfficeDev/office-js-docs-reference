@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Shape#shapeGroup:member" />
+  - <xref uid="word!Word.Shape#shapeGroup:member"
+  alttext="Word.Shape.shapeGroup" />
 
   #### Examples
 

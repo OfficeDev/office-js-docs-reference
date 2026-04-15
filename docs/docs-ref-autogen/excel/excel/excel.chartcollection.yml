@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#charts:member" />
+  - <xref uid="excel!Excel.Worksheet#charts:member"
+  alttext="Excel.Worksheet.charts" />
 
 isPreview: false
 isDeprecated: false

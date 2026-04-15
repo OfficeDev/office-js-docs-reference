@@ -4,14 +4,24 @@ uid: word!Word.Interfaces.ListData:interface
 package: word!
 fullName: Word.Interfaces.ListData
 summary: An interface describing the data returned by calling `list.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.BodyData#lists:member" />
-  - <xref uid="word!Word.Interfaces.ContentControlData#lists:member" />
-  - <xref uid="word!Word.Interfaces.ListCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.ListCollectionUpdateData#items:member" />
-  - <xref uid="word!Word.Interfaces.ListFormatData#list:member" />
+
+  - <xref uid="word!Word.Interfaces.BodyData#lists:member"
+  alttext="Word.Interfaces.BodyData.lists" />
+
+  - <xref uid="word!Word.Interfaces.ContentControlData#lists:member"
+  alttext="Word.Interfaces.ContentControlData.lists" />
+
+  - <xref uid="word!Word.Interfaces.ListCollectionData#items:member"
+  alttext="Word.Interfaces.ListCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.ListCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.ListCollectionUpdateData.items" />
+
+  - <xref uid="word!Word.Interfaces.ListFormatData#list:member"
+  alttext="Word.Interfaces.ListFormatData.list" />
 
 isPreview: false
 isDeprecated: false

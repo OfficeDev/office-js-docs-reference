@@ -11,9 +11,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CommentReplyUpdateData#contentRange:member"
-  />
+  alttext="Word.Interfaces.CommentReplyUpdateData.contentRange" />
 
-  - <xref uid="word!Word.Interfaces.CommentUpdateData#contentRange:member" />
+  - <xref uid="word!Word.Interfaces.CommentUpdateData#contentRange:member"
+  alttext="Word.Interfaces.CommentUpdateData.contentRange" />
 
 isPreview: false
 isDeprecated: false

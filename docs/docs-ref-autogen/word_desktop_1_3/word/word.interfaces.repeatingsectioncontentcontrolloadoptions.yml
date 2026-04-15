@@ -14,10 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#repeatingSectionContentControl:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.repeatingSectionContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#repeatingSectionContentControl:member"
+  alttext="Word.Interfaces.ContentControlLoadOptions.repeatingSectionContentControl"
   />
 
 isPreview: false

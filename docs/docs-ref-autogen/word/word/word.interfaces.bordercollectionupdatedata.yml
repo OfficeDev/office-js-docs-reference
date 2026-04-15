@@ -6,10 +6,12 @@ fullName: Word.Interfaces.BorderCollectionUpdateData
 summary: >-
   An interface for updating data on the `BorderCollection` object, for use in
   `borderCollection.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#borders:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#borders:member"
+  alttext="Word.Interfaces.StyleUpdateData.borders" />
 
 isPreview: false
 isDeprecated: false

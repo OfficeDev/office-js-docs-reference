@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#boxwhiskerOptions:member" />
+  uid="excel!Excel.Interfaces.ChartSeriesUpdateData#boxwhiskerOptions:member"
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.boxwhiskerOptions" />
 
 isPreview: false
 isDeprecated: false

@@ -14,10 +14,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member"
-  />
+  alttext="Word.Interfaces.CommentReplyCollectionLoadOptions.parentComment" />
 
   - <xref
-  uid="word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member" />
+  uid="word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member"
+  alttext="Word.Interfaces.CommentReplyLoadOptions.parentComment" />
 
 isPreview: false
 isDeprecated: false

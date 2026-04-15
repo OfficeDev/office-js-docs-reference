@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Slicer#slicerStyle:member" />
+  - <xref uid="excel!Excel.Slicer#slicerStyle:member"
+  alttext="Excel.Slicer.slicerStyle" />
 
-  - <xref uid="excel!Excel.SlicerStyleCollection#items:member" />
+  - <xref uid="excel!Excel.SlicerStyleCollection#items:member"
+  alttext="Excel.SlicerStyleCollection.items" />
 
 isPreview: false
 isDeprecated: false

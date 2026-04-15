@@ -13,130 +13,162 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.BookmarkCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.BookmarkLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.BookmarkLoadOptions#range:member"
+  alttext="Word.Interfaces.BookmarkLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member"
+  alttext="Word.Interfaces.BreakCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member"
+  alttext="Word.Interfaces.BreakLoadOptions.range" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions.range"
   />
 
   - <xref
   uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.CoauthoringLockCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member"
+  alttext="Word.Interfaces.CoauthoringLockLoadOptions.range" />
 
   - <xref
   uid="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.CoauthoringUpdateCollectionLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.CoauthoringUpdateLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.ConflictCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.ConflictLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.ConflictLoadOptions#range:member"
+  alttext="Word.Interfaces.ConflictLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.CritiqueAnnotationLoadOptions.range" />
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member" />
+  uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member"
+  alttext="Word.Interfaces.DatePickerContentControlLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#content:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#content:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.content" />
 
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#nextRange:member" />
+  - <xref uid="word!Word.Interfaces.EditorLoadOptions#nextRange:member"
+  alttext="Word.Interfaces.EditorLoadOptions.nextRange" />
 
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member"
+  alttext="Word.Interfaces.EditorLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
+  - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member"
+  alttext="Word.Interfaces.FieldCollectionLoadOptions.result" />
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" />
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member"
+  alttext="Word.Interfaces.FieldLoadOptions.result" />
 
-  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member"
+  alttext="Word.Interfaces.FrameCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member"
+  alttext="Word.Interfaces.FrameLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.GroupContentControlLoadOptions.range" />
 
   - <xref
-  uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member" />
+  uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member"
+  alttext="Word.Interfaces.HtmlDivisionCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member"
+  alttext="Word.Interfaces.HtmlDivisionLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.HyperlinkCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member"
+  alttext="Word.Interfaces.HyperlinkLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.IndexCollectionLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.IndexCollectionLoadOptions#range:member"
+  alttext="Word.Interfaces.IndexCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member" />
-
-  - <xref
-  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
-
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
+  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member"
+  alttext="Word.Interfaces.IndexLoadOptions.range" />
 
   - <xref
-  uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member" />
+  uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member"
+  alttext="Word.Interfaces.NoteItemCollectionLoadOptions.reference" />
+
+  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member"
+  alttext="Word.Interfaces.NoteItemLoadOptions.reference" />
+
+  - <xref
+  uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member"
+  alttext="Word.Interfaces.PictureContentControlLoadOptions.range" />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.RepeatingSectionContentControlLoadOptions.range" />
 
   - <xref
-  uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member" />
+  uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member"
+  alttext="Word.Interfaces.RepeatingSectionItemLoadOptions.range" />
 
   - <xref
-  uid="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member" />
+  uid="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member"
+  alttext="Word.Interfaces.RevisionCollectionLoadOptions.movedRange" />
 
   - <xref uid="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.RevisionCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#movedRange:member" />
+  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#movedRange:member"
+  alttext="Word.Interfaces.RevisionLoadOptions.movedRange" />
 
-  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.RevisionLoadOptions#range:member"
+  alttext="Word.Interfaces.RevisionLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.SelectionLoadOptions#formattedText:member"
-  />
+  alttext="Word.Interfaces.SelectionLoadOptions.formattedText" />
 
-  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.SelectionLoadOptions#range:member"
+  alttext="Word.Interfaces.SelectionLoadOptions.range" />
 
   - <xref
   uid="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.TableOfAuthoritiesLoadOptions.range" />
 
   - <xref
   uid="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.TableOfContentsCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.TableOfContentsLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.TableOfContentsLoadOptions#range:member"
+  alttext="Word.Interfaces.TableOfContentsLoadOptions.range" />
 
   - <xref
-  uid="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member" />
+  uid="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member"
+  alttext="Word.Interfaces.TableOfFiguresCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member"
+  alttext="Word.Interfaces.TableOfFiguresLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.TableRowCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#range:member"
+  alttext="Word.Interfaces.TableRowLoadOptions.range" />
 
   - <xref uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member"
-  />
+  alttext="Word.Interfaces.XmlNodeCollectionLoadOptions.range" />
 
-  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#range:member" />
+  - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#range:member"
+  alttext="Word.Interfaces.XmlNodeLoadOptions.range" />
 
 isPreview: false
 isDeprecated: false

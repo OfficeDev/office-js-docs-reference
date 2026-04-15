@@ -8,18 +8,24 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.TableCollectionData#items:member"
+  alttext="Excel.Interfaces.TableCollectionData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.TableCollectionUpdateData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.TableCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.TableCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.TableScopedCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.TableScopedCollectionData#items:member"
+  alttext="Excel.Interfaces.TableScopedCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.TableScopedCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#tables:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#tables:member"
+  alttext="Excel.Interfaces.WorkbookData.tables" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#tables:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#tables:member"
+  alttext="Excel.Interfaces.WorksheetData.tables" />
 
 isPreview: false
 isDeprecated: false

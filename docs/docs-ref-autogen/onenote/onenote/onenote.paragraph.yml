@@ -14,19 +14,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Image#paragraph:member" />
+  - <xref uid="onenote!OneNote.Image#paragraph:member"
+  alttext="OneNote.Image.paragraph" />
 
-  - <xref uid="onenote!OneNote.InkWord#paragraph:member" />
+  - <xref uid="onenote!OneNote.InkWord#paragraph:member"
+  alttext="OneNote.InkWord.paragraph" />
 
-  - <xref uid="onenote!OneNote.Paragraph#parentParagraph:member" />
+  - <xref uid="onenote!OneNote.Paragraph#parentParagraph:member"
+  alttext="OneNote.Paragraph.parentParagraph" />
 
-  - <xref uid="onenote!OneNote.Paragraph#parentParagraphOrNull:member" />
+  - <xref uid="onenote!OneNote.Paragraph#parentParagraphOrNull:member"
+  alttext="OneNote.Paragraph.parentParagraphOrNull" />
 
-  - <xref uid="onenote!OneNote.ParagraphCollection#items:member" />
+  - <xref uid="onenote!OneNote.ParagraphCollection#items:member"
+  alttext="OneNote.ParagraphCollection.items" />
 
-  - <xref uid="onenote!OneNote.RichText#paragraph:member" />
+  - <xref uid="onenote!OneNote.RichText#paragraph:member"
+  alttext="OneNote.RichText.paragraph" />
 
-  - <xref uid="onenote!OneNote.Table#paragraph:member" />
+  - <xref uid="onenote!OneNote.Table#paragraph:member"
+  alttext="OneNote.Table.paragraph" />
 
 isPreview: false
 isDeprecated: false

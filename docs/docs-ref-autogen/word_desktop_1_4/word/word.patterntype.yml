@@ -12,15 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#pattern:member" />
+  - <xref uid="word!Word.FillFormat#pattern:member"
+  alttext="Word.FillFormat.pattern" />
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#pattern:member" />
+  - <xref uid="word!Word.Interfaces.FillFormatData#pattern:member"
+  alttext="Word.Interfaces.FillFormatData.pattern" />
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#pattern:member" />
+  - <xref uid="word!Word.Interfaces.LineFormatData#pattern:member"
+  alttext="Word.Interfaces.LineFormatData.pattern" />
 
-  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#pattern:member" />
+  - <xref uid="word!Word.Interfaces.LineFormatUpdateData#pattern:member"
+  alttext="Word.Interfaces.LineFormatUpdateData.pattern" />
 
-  - <xref uid="word!Word.LineFormat#pattern:member" />
+  - <xref uid="word!Word.LineFormat#pattern:member"
+  alttext="Word.LineFormat.pattern" />
 
 isPreview: false
 isDeprecated: false

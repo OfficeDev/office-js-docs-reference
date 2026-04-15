@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#pages:member" />
+  uid="onenote!OneNote.Interfaces.SectionCollectionLoadOptions#pages:member"
+  alttext="OneNote.Interfaces.SectionCollectionLoadOptions.pages" />
 
-  - <xref uid="onenote!OneNote.Interfaces.SectionLoadOptions#pages:member" />
+  - <xref uid="onenote!OneNote.Interfaces.SectionLoadOptions#pages:member"
+  alttext="OneNote.Interfaces.SectionLoadOptions.pages" />
 
 isPreview: false
 isDeprecated: false

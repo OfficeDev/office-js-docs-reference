@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member"
+  alttext="Excel.Interfaces.RangeLoadOptions.worksheet" />
 
 isPreview: false
 isDeprecated: false

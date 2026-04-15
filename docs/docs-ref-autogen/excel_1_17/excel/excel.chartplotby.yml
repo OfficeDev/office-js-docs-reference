@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#plotBy:member" />
+  - <xref uid="excel!Excel.Chart#plotBy:member" alttext="Excel.Chart.plotBy" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#plotBy:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartData#plotBy:member"
+  alttext="Excel.Interfaces.ChartData.plotBy" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#plotBy:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#plotBy:member"
+  alttext="Excel.Interfaces.ChartUpdateData.plotBy" />
 
 isPreview: false
 isDeprecated: false

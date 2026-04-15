@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.PageCollection#items:member" />
+  - <xref uid="word!Word.PageCollection#items:member"
+  alttext="Word.PageCollection.items" />
 
   #### Examples
 

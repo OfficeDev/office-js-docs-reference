@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ShapeGroupUpdateData
 summary: >-
   An interface for updating data on the `ShapeGroup` object, for use in
   `shapeGroup.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.ShapeUpdateData#shapeGroup:member" />
+
+  - <xref uid="word!Word.Interfaces.ShapeUpdateData#shapeGroup:member"
+  alttext="Word.Interfaces.ShapeUpdateData.shapeGroup" />
 
 isPreview: false
 isDeprecated: false

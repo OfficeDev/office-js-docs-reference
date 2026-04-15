@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#onAnnotationPopupAction:member" />
+  - <xref uid="word!Word.Document#onAnnotationPopupAction:member"
+  alttext="Word.Document.onAnnotationPopupAction" />
 
   #### Examples
 

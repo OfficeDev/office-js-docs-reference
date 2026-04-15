@@ -6,10 +6,12 @@ fullName: Visio.Interfaces.PageViewUpdateData
 summary: >-
   An interface for updating data on the PageView object, for use in
   `pageView.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="visio!Visio.Interfaces.PageUpdateData#view:member" />
+
+  - <xref uid="visio!Visio.Interfaces.PageUpdateData#view:member"
+  alttext="Visio.Interfaces.PageUpdateData.view" />
 
 isPreview: false
 isDeprecated: false

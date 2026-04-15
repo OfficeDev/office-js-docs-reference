@@ -10,17 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.OutlineData#paragraphs:member" />
+  - <xref uid="onenote!OneNote.Interfaces.OutlineData#paragraphs:member"
+  alttext="OneNote.Interfaces.OutlineData.paragraphs" />
 
   - <xref uid="onenote!OneNote.Interfaces.ParagraphCollectionData#items:member"
-  />
+  alttext="OneNote.Interfaces.ParagraphCollectionData.items" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member" />
+  uid="onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member"
+  alttext="OneNote.Interfaces.ParagraphCollectionUpdateData.items" />
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#paragraphs:member" />
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#paragraphs:member"
+  alttext="OneNote.Interfaces.ParagraphData.paragraphs" />
 
-  - <xref uid="onenote!OneNote.Interfaces.TableCellData#paragraphs:member" />
+  - <xref uid="onenote!OneNote.Interfaces.TableCellData#paragraphs:member"
+  alttext="OneNote.Interfaces.TableCellData.paragraphs" />
 
 isPreview: false
 isDeprecated: false

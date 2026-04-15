@@ -14,9 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FrameCollection#items:member" />
+  - <xref uid="word!Word.FrameCollection#items:member"
+  alttext="Word.FrameCollection.items" />
 
-  - <xref uid="word!Word.Style#frame:member" />
+  - <xref uid="word!Word.Style#frame:member" alttext="Word.Style.frame" />
 
 isPreview: false
 isDeprecated: false

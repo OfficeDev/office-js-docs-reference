@@ -6,10 +6,12 @@ fullName: Office.AddBindingFromPromptOptions
 summary: >-
   Provides options for configuring the prompt and identifying the binding that
   is created.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.Bindings#addFromPromptAsync:member(1)" />
+
+  - <xref uid="office!Office.Bindings#addFromPromptAsync:member(1)"
+  alttext="Office.Bindings.addFromPromptAsync" />
 
 isPreview: false
 isDeprecated: false

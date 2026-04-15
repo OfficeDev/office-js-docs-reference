@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Paragraph#table:member" />
+  - <xref uid="onenote!OneNote.Paragraph#table:member"
+  alttext="OneNote.Paragraph.table" />
 
-  - <xref uid="onenote!OneNote.TableRow#parentTable:member" />
+  - <xref uid="onenote!OneNote.TableRow#parentTable:member"
+  alttext="OneNote.TableRow.parentTable" />
 
 isPreview: false
 isDeprecated: false

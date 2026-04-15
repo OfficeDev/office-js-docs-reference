@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member"
+  alttext="PowerPoint.ShapeCollection.items" />
 
   #### Examples
 

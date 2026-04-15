@@ -10,10 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BookmarkCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.BookmarkCollectionData#items:member"
+  alttext="Word.Interfaces.BookmarkCollectionData.items" />
 
   - <xref uid="word!Word.Interfaces.BookmarkCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.BookmarkCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

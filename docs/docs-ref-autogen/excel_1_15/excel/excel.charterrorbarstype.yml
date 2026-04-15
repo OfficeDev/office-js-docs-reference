@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartErrorBars#type:member" />
+  - <xref uid="excel!Excel.ChartErrorBars#type:member"
+  alttext="Excel.ChartErrorBars.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsData#type:member"
+  alttext="Excel.Interfaces.ChartErrorBarsData.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsUpdateData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsUpdateData#type:member"
+  alttext="Excel.Interfaces.ChartErrorBarsUpdateData.type" />
 
 isPreview: false
 isDeprecated: false

@@ -6,11 +6,15 @@ fullName: OneNote.Interfaces.ImageUpdateData
 summary: >-
   An interface for updating data on the `Image` object, for use in `image.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.PageContentUpdateData#image:member" />
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData#image:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.PageContentUpdateData#image:member"
+  alttext="OneNote.Interfaces.PageContentUpdateData.image" />
+
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData#image:member"
+  alttext="OneNote.Interfaces.ParagraphUpdateData.image" />
 
 isPreview: false
 isDeprecated: false

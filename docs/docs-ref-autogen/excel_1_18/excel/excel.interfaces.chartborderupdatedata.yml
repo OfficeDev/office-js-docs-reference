@@ -11,32 +11,36 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#border:member"
-  />
+  alttext="Excel.Interfaces.ChartAreaFormatUpdateData.border" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#border:member" />
+  uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#border:member"
+  alttext="Excel.Interfaces.ChartAxisTitleFormatUpdateData.border" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#border:member" />
+  uid="excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#border:member"
+  alttext="Excel.Interfaces.ChartDataLabelFormatUpdateData.border" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataTableFormatUpdateData#border:member" />
+  uid="excel!Excel.Interfaces.ChartDataTableFormatUpdateData#border:member"
+  alttext="Excel.Interfaces.ChartDataTableFormatUpdateData.border" />
 
   - <xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData#border:member"
-  />
+  alttext="Excel.Interfaces.ChartLegendFormatUpdateData.border" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member" />
+  uid="excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member"
+  alttext="Excel.Interfaces.ChartPlotAreaFormatUpdateData.border" />
 
   - <xref uid="excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member"
-  />
+  alttext="Excel.Interfaces.ChartPointFormatUpdateData.border" />
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member"
-  />
+  alttext="Excel.Interfaces.ChartTitleFormatUpdateData.border" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData#border:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineLabelFormatUpdateData.border" />
 
 isPreview: false
 isDeprecated: false

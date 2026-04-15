@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#ligature:member" />
+  - <xref uid="word!Word.Font#ligature:member" alttext="Word.Font.ligature" />
 
-  - <xref uid="word!Word.Interfaces.FontData#ligature:member" />
+  - <xref uid="word!Word.Interfaces.FontData#ligature:member"
+  alttext="Word.Interfaces.FontData.ligature" />
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#ligature:member" />
+  - <xref uid="word!Word.Interfaces.FontUpdateData#ligature:member"
+  alttext="Word.Interfaces.FontUpdateData.ligature" />
 
 isPreview: false
 isDeprecated: false

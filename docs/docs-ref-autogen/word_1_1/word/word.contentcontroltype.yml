@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#type:member" />
+  - <xref uid="word!Word.ContentControl#type:member"
+  alttext="Word.ContentControl.type" />
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#type:member" />
+  - <xref uid="word!Word.Interfaces.ContentControlData#type:member"
+  alttext="Word.Interfaces.ContentControlData.type" />
 
   #### Examples
 

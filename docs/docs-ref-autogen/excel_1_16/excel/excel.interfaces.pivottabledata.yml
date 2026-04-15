@@ -10,21 +10,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PivotTableCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.PivotTableCollectionData#items:member"
+  alttext="Excel.Interfaces.PivotTableCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.PivotTableCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.PivotTableCollectionUpdateData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member" />
+  uid="excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member"
+  alttext="Excel.Interfaces.PivotTableScopedCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.PivotTableScopedCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#pivotTables:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#pivotTables:member"
+  alttext="Excel.Interfaces.WorkbookData.pivotTables" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#pivotTables:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#pivotTables:member"
+  alttext="Excel.Interfaces.WorksheetData.pivotTables" />
 
 isPreview: false
 isDeprecated: false

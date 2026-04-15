@@ -12,61 +12,78 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentBody:member" />
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.BodyLoadOptions.parentBody" />
 
   - <xref
-  uid="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member" />
+  uid="word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member"
+  alttext="Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject" />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member"
-  />
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.parentBody" />
 
   - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#parentBody:member"
-  />
+  alttext="Word.Interfaces.ContentControlLoadOptions.parentBody" />
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#body:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#body:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.body" />
 
   - <xref
-  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member" />
+  uid="word!Word.Interfaces.FieldCollectionLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.FieldCollectionLoadOptions.parentBody" />
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#parentBody:member" />
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.FieldLoadOptions.parentBody" />
 
   - <xref uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#body:member"
-  />
+  alttext="Word.Interfaces.NoteItemCollectionLoadOptions.body" />
 
-  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#body:member" />
-
-  - <xref
-  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member" />
-
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member" />
+  - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#body:member"
+  alttext="Word.Interfaces.NoteItemLoadOptions.body" />
 
   - <xref
-  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member" />
+  uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.parentBody" />
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentBody:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.parentBody" />
+
+  - <xref
+  uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.parentBody" />
+
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.RangeLoadOptions.parentBody" />
 
   - <xref
   uid="word!Word.Interfaces.RangeScopedCollectionLoadOptions#parentBody:member"
-  />
+  alttext="Word.Interfaces.RangeScopedCollectionLoadOptions.parentBody" />
 
-  - <xref uid="word!Word.Interfaces.SectionCollectionLoadOptions#body:member" />
+  - <xref uid="word!Word.Interfaces.SectionCollectionLoadOptions#body:member"
+  alttext="Word.Interfaces.SectionCollectionLoadOptions.body" />
 
-  - <xref uid="word!Word.Interfaces.SectionLoadOptions#body:member" />
+  - <xref uid="word!Word.Interfaces.SectionLoadOptions#body:member"
+  alttext="Word.Interfaces.SectionLoadOptions.body" />
 
-  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#body:member" />
+  - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#body:member"
+  alttext="Word.Interfaces.ShapeCollectionLoadOptions.body" />
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#body:member" />
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#body:member"
+  alttext="Word.Interfaces.ShapeLoadOptions.body" />
 
   - <xref uid="word!Word.Interfaces.TableCellCollectionLoadOptions#body:member"
-  />
+  alttext="Word.Interfaces.TableCellCollectionLoadOptions.body" />
 
-  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#body:member" />
+  - <xref uid="word!Word.Interfaces.TableCellLoadOptions#body:member"
+  alttext="Word.Interfaces.TableCellLoadOptions.body" />
 
   - <xref
-  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member" />
+  uid="word!Word.Interfaces.TableCollectionLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.TableCollectionLoadOptions.parentBody" />
 
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentBody:member" />
+  - <xref uid="word!Word.Interfaces.TableLoadOptions#parentBody:member"
+  alttext="Word.Interfaces.TableLoadOptions.parentBody" />
 
 isPreview: false
 isDeprecated: false

@@ -12,23 +12,32 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.ChartAddedEventArgs#source:member"
+  alttext="Excel.ChartAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.ChartDeletedEventArgs#source:member"
+  alttext="Excel.ChartDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.TableAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.TableAddedEventArgs#source:member"
+  alttext="Excel.TableAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.TableChangedEventArgs#source:member"
+  alttext="Excel.TableChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.TableDeletedEventArgs#source:member"
+  alttext="Excel.TableDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetAddedEventArgs#source:member"
+  alttext="Excel.WorksheetAddedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#source:member"
+  alttext="Excel.WorksheetChangedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetDeletedEventArgs#source:member"
+  alttext="Excel.WorksheetDeletedEventArgs.source" />
 
-  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member" />
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#source:member"
+  alttext="Excel.WorksheetFormatChangedEventArgs.source" />
 
 isPreview: false
 isDeprecated: false

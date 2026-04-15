@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member" />
+  - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member"
+  alttext="Excel.Interfaces.TableCollectionLoadOptions.sort" />
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#sort:member" />
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#sort:member"
+  alttext="Excel.Interfaces.TableLoadOptions.sort" />
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#pageColor:member" />
+  - <xref uid="word!Word.Interfaces.ViewData#pageColor:member"
+  alttext="Word.Interfaces.ViewData.pageColor" />
 
-  - <xref uid="word!Word.Interfaces.ViewUpdateData#pageColor:member" />
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#pageColor:member"
+  alttext="Word.Interfaces.ViewUpdateData.pageColor" />
 
-  - <xref uid="word!Word.View#pageColor:member" />
+  - <xref uid="word!Word.View#pageColor:member" alttext="Word.View.pageColor" />
 
 isPreview: false
 isDeprecated: false

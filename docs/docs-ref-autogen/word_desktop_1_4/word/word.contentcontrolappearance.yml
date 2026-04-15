@@ -14,58 +14,68 @@ remarks: >-
 
 
   - <xref uid="word!Word.BuildingBlockGalleryContentControl#appearance:member"
-  />
+  alttext="Word.BuildingBlockGalleryContentControl.appearance" />
 
-  - <xref uid="word!Word.ContentControl#appearance:member" />
+  - <xref uid="word!Word.ContentControl#appearance:member"
+  alttext="Word.ContentControl.appearance" />
 
-  - <xref uid="word!Word.DatePickerContentControl#appearance:member" />
+  - <xref uid="word!Word.DatePickerContentControl#appearance:member"
+  alttext="Word.DatePickerContentControl.appearance" />
 
-  - <xref uid="word!Word.GroupContentControl#appearance:member" />
+  - <xref uid="word!Word.GroupContentControl#appearance:member"
+  alttext="Word.GroupContentControl.appearance" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#appearance:member"
-  />
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.appearance" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#appearance:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance"
   />
 
-  - <xref uid="word!Word.Interfaces.ContentControlData#appearance:member" />
+  - <xref uid="word!Word.Interfaces.ContentControlData#appearance:member"
+  alttext="Word.Interfaces.ContentControlData.appearance" />
 
   - <xref uid="word!Word.Interfaces.ContentControlUpdateData#appearance:member"
-  />
+  alttext="Word.Interfaces.ContentControlUpdateData.appearance" />
 
   - <xref
-  uid="word!Word.Interfaces.DatePickerContentControlData#appearance:member" />
+  uid="word!Word.Interfaces.DatePickerContentControlData#appearance:member"
+  alttext="Word.Interfaces.DatePickerContentControlData.appearance" />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlUpdateData#appearance:member"
-  />
+  alttext="Word.Interfaces.DatePickerContentControlUpdateData.appearance" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlData#appearance:member"
-  />
+  alttext="Word.Interfaces.GroupContentControlData.appearance" />
 
   - <xref
-  uid="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member" />
+  uid="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member"
+  alttext="Word.Interfaces.GroupContentControlUpdateData.appearance" />
 
   - <xref uid="word!Word.Interfaces.PictureContentControlData#appearance:member"
-  />
+  alttext="Word.Interfaces.PictureContentControlData.appearance" />
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlUpdateData#appearance:member"
-  />
+  alttext="Word.Interfaces.PictureContentControlUpdateData.appearance" />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlData#appearance:member"
-  />
+  alttext="Word.Interfaces.RepeatingSectionContentControlData.appearance" />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#appearance:member"
+  alttext="Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance"
   />
 
-  - <xref uid="word!Word.PictureContentControl#appearance:member" />
+  - <xref uid="word!Word.PictureContentControl#appearance:member"
+  alttext="Word.PictureContentControl.appearance" />
 
-  - <xref uid="word!Word.RepeatingSectionContentControl#appearance:member" />
+  - <xref uid="word!Word.RepeatingSectionContentControl#appearance:member"
+  alttext="Word.RepeatingSectionContentControl.appearance" />
 
   #### Examples
 

@@ -13,13 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFill#pattern:member" />
+  - <xref uid="excel!Excel.CellPropertiesFill#pattern:member"
+  alttext="Excel.CellPropertiesFill.pattern" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeFillData#pattern:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeFillData#pattern:member"
+  alttext="Excel.Interfaces.RangeFillData.pattern" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeFillUpdateData#pattern:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeFillUpdateData#pattern:member"
+  alttext="Excel.Interfaces.RangeFillUpdateData.pattern" />
 
-  - <xref uid="excel!Excel.RangeFill#pattern:member" />
+  - <xref uid="excel!Excel.RangeFill#pattern:member"
+  alttext="Excel.RangeFill.pattern" />
 
   #### Examples
 

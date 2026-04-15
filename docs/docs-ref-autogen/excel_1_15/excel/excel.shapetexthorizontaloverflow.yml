@@ -13,12 +13,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TextFrameData#horizontalOverflow:member"
-  />
+  alttext="Excel.Interfaces.TextFrameData.horizontalOverflow" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member" />
+  uid="excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member"
+  alttext="Excel.Interfaces.TextFrameUpdateData.horizontalOverflow" />
 
-  - <xref uid="excel!Excel.TextFrame#horizontalOverflow:member" />
+  - <xref uid="excel!Excel.TextFrame#horizontalOverflow:member"
+  alttext="Excel.TextFrame.horizontalOverflow" />
 
 isPreview: false
 isDeprecated: false

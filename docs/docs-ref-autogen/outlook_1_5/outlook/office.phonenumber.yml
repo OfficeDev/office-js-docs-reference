@@ -35,19 +35,24 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member(1)" />
+  - <xref uid="outlook!Office.AppointmentRead#getEntitiesByType:member(1)"
+  alttext="Office.AppointmentRead.getEntitiesByType" />
 
   - <xref
-  uid="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)" />
+  uid="outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)"
+  alttext="Office.AppointmentRead.getFilteredEntitiesByName" />
 
-  - <xref uid="outlook!Office.Contact#phoneNumbers:member" />
+  - <xref uid="outlook!Office.Contact#phoneNumbers:member"
+  alttext="Office.Contact.phoneNumbers" />
 
-  - <xref uid="outlook!Office.Entities#phoneNumbers:member" />
+  - <xref uid="outlook!Office.Entities#phoneNumbers:member"
+  alttext="Office.Entities.phoneNumbers" />
 
-  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#getEntitiesByType:member(1)"
+  alttext="Office.MessageRead.getEntitiesByType" />
 
   - <xref uid="outlook!Office.MessageRead#getFilteredEntitiesByName:member(1)"
-  />
+  alttext="Office.MessageRead.getFilteredEntitiesByName" />
 
   #### Examples
 

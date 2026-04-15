@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member" />
+  uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member"
+  alttext="Excel.Interfaces.PivotTableCollectionLoadOptions.layout" />
 
-  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member" />
+  - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member"
+  alttext="Excel.Interfaces.PivotTableLoadOptions.layout" />
 
 isPreview: false
 isDeprecated: false

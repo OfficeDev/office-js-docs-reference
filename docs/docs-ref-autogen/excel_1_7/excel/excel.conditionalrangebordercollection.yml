@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalRangeFormat#borders:member" />
+  - <xref uid="excel!Excel.ConditionalRangeFormat#borders:member"
+  alttext="Excel.ConditionalRangeFormat.borders" />
 
 isPreview: false
 isDeprecated: false

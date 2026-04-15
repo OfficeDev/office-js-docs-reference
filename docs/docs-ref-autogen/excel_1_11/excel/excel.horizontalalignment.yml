@@ -13,23 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#horizontalAlignment:member" />
+  - <xref uid="excel!Excel.CellPropertiesFormat#horizontalAlignment:member"
+  alttext="Excel.CellPropertiesFormat.horizontalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member" />
+  uid="excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member"
+  alttext="Excel.Interfaces.RangeFormatData.horizontalAlignment" />
 
   - <xref
   uid="excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member"
-  />
+  alttext="Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment" />
 
-  - <xref uid="excel!Excel.Interfaces.StyleData#horizontalAlignment:member" />
+  - <xref uid="excel!Excel.Interfaces.StyleData#horizontalAlignment:member"
+  alttext="Excel.Interfaces.StyleData.horizontalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.StyleUpdateData#horizontalAlignment:member" />
+  uid="excel!Excel.Interfaces.StyleUpdateData#horizontalAlignment:member"
+  alttext="Excel.Interfaces.StyleUpdateData.horizontalAlignment" />
 
-  - <xref uid="excel!Excel.RangeFormat#horizontalAlignment:member" />
+  - <xref uid="excel!Excel.RangeFormat#horizontalAlignment:member"
+  alttext="Excel.RangeFormat.horizontalAlignment" />
 
-  - <xref uid="excel!Excel.Style#horizontalAlignment:member" />
+  - <xref uid="excel!Excel.Style#horizontalAlignment:member"
+  alttext="Excel.Style.horizontalAlignment" />
 
   #### Examples
 

@@ -10,25 +10,34 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#backgroundColor:member" />
+  - <xref uid="word!Word.Interfaces.FillFormatData#backgroundColor:member"
+  alttext="Word.Interfaces.FillFormatData.backgroundColor" />
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#foregroundColor:member" />
+  - <xref uid="word!Word.Interfaces.FillFormatData#foregroundColor:member"
+  alttext="Word.Interfaces.FillFormatData.foregroundColor" />
 
-  - <xref uid="word!Word.Interfaces.FontData#textColor:member" />
+  - <xref uid="word!Word.Interfaces.FontData#textColor:member"
+  alttext="Word.Interfaces.FontData.textColor" />
 
-  - <xref uid="word!Word.Interfaces.GlowFormatData#color:member" />
+  - <xref uid="word!Word.Interfaces.GlowFormatData#color:member"
+  alttext="Word.Interfaces.GlowFormatData.color" />
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#backgroundColor:member" />
+  - <xref uid="word!Word.Interfaces.LineFormatData#backgroundColor:member"
+  alttext="Word.Interfaces.LineFormatData.backgroundColor" />
 
-  - <xref uid="word!Word.Interfaces.LineFormatData#foregroundColor:member" />
+  - <xref uid="word!Word.Interfaces.LineFormatData#foregroundColor:member"
+  alttext="Word.Interfaces.LineFormatData.foregroundColor" />
 
-  - <xref uid="word!Word.Interfaces.ShadowFormatData#foregroundColor:member" />
+  - <xref uid="word!Word.Interfaces.ShadowFormatData#foregroundColor:member"
+  alttext="Word.Interfaces.ShadowFormatData.foregroundColor" />
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#contourColor:member" />
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#contourColor:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.contourColor" />
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColor:member" />
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColor:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.extrusionColor" />
 
 isPreview: false
 isDeprecated: false

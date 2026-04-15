@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.CustomPropertyCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.CustomPropertyCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.CustomPropertyCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.CustomPropertyCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

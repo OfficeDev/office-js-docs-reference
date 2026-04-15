@@ -13,12 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#changeTrackingMode:member" />
+  - <xref uid="word!Word.Document#changeTrackingMode:member"
+  alttext="Word.Document.changeTrackingMode" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#changeTrackingMode:member" />
+  - <xref uid="word!Word.Interfaces.DocumentData#changeTrackingMode:member"
+  alttext="Word.Interfaces.DocumentData.changeTrackingMode" />
 
   - <xref
-  uid="word!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member" />
+  uid="word!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member"
+  alttext="Word.Interfaces.DocumentUpdateData.changeTrackingMode" />
 
   #### Examples
 

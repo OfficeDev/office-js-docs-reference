@@ -14,13 +14,13 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#ownerPart:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeCollectionLoadOptions.ownerPart" />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#ownerPart:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeLoadOptions.ownerPart" />
 
   - <xref uid="word!Word.Interfaces.XmlMappingLoadOptions#customXmlPart:member"
-  />
+  alttext="Word.Interfaces.XmlMappingLoadOptions.customXmlPart" />
 
 isPreview: false
 isDeprecated: false

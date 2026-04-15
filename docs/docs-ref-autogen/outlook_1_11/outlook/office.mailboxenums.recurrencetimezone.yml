@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.RecurrenceTimeZone#name:member" />
+  - <xref uid="outlook!Office.RecurrenceTimeZone#name:member"
+  alttext="Office.RecurrenceTimeZone.name" />
 
   #### Examples
 

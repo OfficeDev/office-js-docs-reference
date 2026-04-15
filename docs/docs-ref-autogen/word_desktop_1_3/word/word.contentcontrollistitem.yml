@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControlListItemCollection#items:member" />
+  - <xref uid="word!Word.ContentControlListItemCollection#items:member"
+  alttext="Word.ContentControlListItemCollection.items" />
 
   #### Examples
 

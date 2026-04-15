@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WindowData#windowState:member" />
+  - <xref uid="excel!Excel.Interfaces.WindowData#windowState:member"
+  alttext="Excel.Interfaces.WindowData.windowState" />
 
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#windowState:member" />
+  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#windowState:member"
+  alttext="Excel.Interfaces.WindowUpdateData.windowState" />
 
-  - <xref uid="excel!Excel.Window#windowState:member" />
+  - <xref uid="excel!Excel.Window#windowState:member"
+  alttext="Excel.Window.windowState" />
 
 isPreview: false
 isDeprecated: false

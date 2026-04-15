@@ -12,19 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#majorTickMark:member" />
+  - <xref uid="excel!Excel.ChartAxis#majorTickMark:member"
+  alttext="Excel.ChartAxis.majorTickMark" />
 
-  - <xref uid="excel!Excel.ChartAxis#minorTickMark:member" />
+  - <xref uid="excel!Excel.ChartAxis#minorTickMark:member"
+  alttext="Excel.ChartAxis.minorTickMark" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorTickMark:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorTickMark:member"
+  alttext="Excel.Interfaces.ChartAxisData.majorTickMark" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorTickMark:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorTickMark:member"
+  alttext="Excel.Interfaces.ChartAxisData.minorTickMark" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member"
-  />
+  alttext="Excel.Interfaces.ChartAxisUpdateData.majorTickMark" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member"
-  />
+  alttext="Excel.Interfaces.ChartAxisUpdateData.minorTickMark" />
 
 isPreview: false
 isDeprecated: false

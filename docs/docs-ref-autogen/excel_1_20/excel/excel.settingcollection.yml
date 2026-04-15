@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SettingsChangedEventArgs#settings:member" />
+  - <xref uid="excel!Excel.SettingsChangedEventArgs#settings:member"
+  alttext="Excel.SettingsChangedEventArgs.settings" />
 
-  - <xref uid="excel!Excel.Workbook#settings:member" />
+  - <xref uid="excel!Excel.Workbook#settings:member"
+  alttext="Excel.Workbook.settings" />
 
 isPreview: false
 isDeprecated: false

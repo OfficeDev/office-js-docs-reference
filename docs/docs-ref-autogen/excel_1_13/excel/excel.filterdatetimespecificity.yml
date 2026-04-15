@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterDatetime#specificity:member" />
+  - <xref uid="excel!Excel.FilterDatetime#specificity:member"
+  alttext="Excel.FilterDatetime.specificity" />
 
   #### Examples
 

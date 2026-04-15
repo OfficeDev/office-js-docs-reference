@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#gutterPosition:member" />
+  - <xref uid="word!Word.Interfaces.PageSetupData#gutterPosition:member"
+  alttext="Word.Interfaces.PageSetupData.gutterPosition" />
 
   - <xref uid="word!Word.Interfaces.PageSetupUpdateData#gutterPosition:member"
-  />
+  alttext="Word.Interfaces.PageSetupUpdateData.gutterPosition" />
 
-  - <xref uid="word!Word.PageSetup#gutterPosition:member" />
+  - <xref uid="word!Word.PageSetup#gutterPosition:member"
+  alttext="Word.PageSetup.gutterPosition" />
 
 isPreview: false
 isDeprecated: false

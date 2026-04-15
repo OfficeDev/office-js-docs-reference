@@ -8,67 +8,158 @@ summary: >-
   the Office add-in and the Word application run in two different processes, the
   request context is required to get access to the Word object model from the
   add-in.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - <xref uid="word!Word.Application#context:member" />
-  - <xref uid="word!Word.Body#context:member" />
-  - <xref uid="word!Word.Comment#context:member" />
-  - <xref uid="word!Word.CommentCollection#context:member" />
-  - <xref uid="word!Word.CommentContentRange#context:member" />
-  - <xref uid="word!Word.CommentReply#context:member" />
-  - <xref uid="word!Word.CommentReplyCollection#context:member" />
-  - <xref uid="word!Word.ContentControl#context:member" />
-  - <xref uid="word!Word.ContentControlCollection#context:member" />
-  - <xref uid="word!Word.CustomProperty#context:member" />
-  - <xref uid="word!Word.CustomPropertyCollection#context:member" />
-  - <xref uid="word!Word.CustomXmlPart#context:member" />
-  - <xref uid="word!Word.CustomXmlPartCollection#context:member" />
-  - <xref uid="word!Word.CustomXmlPartScopedCollection#context:member" />
-  - <xref uid="word!Word.Document#context:member" />
-  - <xref uid="word!Word.DocumentCreated#context:member" />
-  - <xref uid="word!Word.DocumentProperties#context:member" />
-  - <xref uid="word!Word.Field#context:member" />
-  - <xref uid="word!Word.FieldCollection#context:member" />
-  - <xref uid="word!Word.Font#context:member" />
-  - <xref uid="word!Word.InlinePicture#context:member" />
-  - <xref uid="word!Word.InlinePictureCollection#context:member" />
-  - <xref uid="word!Word.List#context:member" />
-  - <xref uid="word!Word.ListCollection#context:member" />
-  - <xref uid="word!Word.ListItem#context:member" />
-  - <xref uid="word!Word.NoteItem#context:member" />
-  - <xref uid="word!Word.NoteItemCollection#context:member" />
-  - <xref uid="word!Word.Paragraph#context:member" />
-  - <xref uid="word!Word.ParagraphCollection#context:member" />
-  - <xref uid="word!Word.ParagraphFormat#context:member" />
-  - <xref uid="word!Word.Range#context:member" />
-  - <xref uid="word!Word.RangeCollection#context:member" />
-  - <xref uid="word!Word.SearchOptions#context:member" />
-  - <xref uid="word!Word.Section#context:member" />
-  - <xref uid="word!Word.SectionCollection#context:member" />
-  - <xref uid="word!Word.Setting#context:member" />
-  - <xref uid="word!Word.SettingCollection#context:member" />
-  - <xref uid="word!Word.Style#context:member" />
-  - <xref uid="word!Word.StyleCollection#context:member" />
-  - <xref uid="word!Word.Table#context:member" />
-  - <xref uid="word!Word.TableBorder#context:member" />
-  - <xref uid="word!Word.TableCell#context:member" />
-  - <xref uid="word!Word.TableCellCollection#context:member" />
-  - <xref uid="word!Word.TableCollection#context:member" />
-  - <xref uid="word!Word.TableRow#context:member" />
-  - <xref uid="word!Word.TableRowCollection#context:member" />
+
+  - <xref uid="word!Word.Application#context:member"
+  alttext="Word.Application.context" />
+
+  - <xref uid="word!Word.Body#context:member" alttext="Word.Body.context" />
+
+  - <xref uid="word!Word.Comment#context:member" alttext="Word.Comment.context"
+  />
+
+  - <xref uid="word!Word.CommentCollection#context:member"
+  alttext="Word.CommentCollection.context" />
+
+  - <xref uid="word!Word.CommentContentRange#context:member"
+  alttext="Word.CommentContentRange.context" />
+
+  - <xref uid="word!Word.CommentReply#context:member"
+  alttext="Word.CommentReply.context" />
+
+  - <xref uid="word!Word.CommentReplyCollection#context:member"
+  alttext="Word.CommentReplyCollection.context" />
+
+  - <xref uid="word!Word.ContentControl#context:member"
+  alttext="Word.ContentControl.context" />
+
+  - <xref uid="word!Word.ContentControlCollection#context:member"
+  alttext="Word.ContentControlCollection.context" />
+
+  - <xref uid="word!Word.CustomProperty#context:member"
+  alttext="Word.CustomProperty.context" />
+
+  - <xref uid="word!Word.CustomPropertyCollection#context:member"
+  alttext="Word.CustomPropertyCollection.context" />
+
+  - <xref uid="word!Word.CustomXmlPart#context:member"
+  alttext="Word.CustomXmlPart.context" />
+
+  - <xref uid="word!Word.CustomXmlPartCollection#context:member"
+  alttext="Word.CustomXmlPartCollection.context" />
+
+  - <xref uid="word!Word.CustomXmlPartScopedCollection#context:member"
+  alttext="Word.CustomXmlPartScopedCollection.context" />
+
+  - <xref uid="word!Word.Document#context:member"
+  alttext="Word.Document.context" />
+
+  - <xref uid="word!Word.DocumentCreated#context:member"
+  alttext="Word.DocumentCreated.context" />
+
+  - <xref uid="word!Word.DocumentProperties#context:member"
+  alttext="Word.DocumentProperties.context" />
+
+  - <xref uid="word!Word.Field#context:member" alttext="Word.Field.context" />
+
+  - <xref uid="word!Word.FieldCollection#context:member"
+  alttext="Word.FieldCollection.context" />
+
+  - <xref uid="word!Word.Font#context:member" alttext="Word.Font.context" />
+
+  - <xref uid="word!Word.InlinePicture#context:member"
+  alttext="Word.InlinePicture.context" />
+
+  - <xref uid="word!Word.InlinePictureCollection#context:member"
+  alttext="Word.InlinePictureCollection.context" />
+
+  - <xref uid="word!Word.List#context:member" alttext="Word.List.context" />
+
+  - <xref uid="word!Word.ListCollection#context:member"
+  alttext="Word.ListCollection.context" />
+
+  - <xref uid="word!Word.ListItem#context:member"
+  alttext="Word.ListItem.context" />
+
+  - <xref uid="word!Word.NoteItem#context:member"
+  alttext="Word.NoteItem.context" />
+
+  - <xref uid="word!Word.NoteItemCollection#context:member"
+  alttext="Word.NoteItemCollection.context" />
+
+  - <xref uid="word!Word.Paragraph#context:member"
+  alttext="Word.Paragraph.context" />
+
+  - <xref uid="word!Word.ParagraphCollection#context:member"
+  alttext="Word.ParagraphCollection.context" />
+
+  - <xref uid="word!Word.ParagraphFormat#context:member"
+  alttext="Word.ParagraphFormat.context" />
+
+  - <xref uid="word!Word.Range#context:member" alttext="Word.Range.context" />
+
+  - <xref uid="word!Word.RangeCollection#context:member"
+  alttext="Word.RangeCollection.context" />
+
+  - <xref uid="word!Word.SearchOptions#context:member"
+  alttext="Word.SearchOptions.context" />
+
+  - <xref uid="word!Word.Section#context:member" alttext="Word.Section.context"
+  />
+
+  - <xref uid="word!Word.SectionCollection#context:member"
+  alttext="Word.SectionCollection.context" />
+
+  - <xref uid="word!Word.Setting#context:member" alttext="Word.Setting.context"
+  />
+
+  - <xref uid="word!Word.SettingCollection#context:member"
+  alttext="Word.SettingCollection.context" />
+
+  - <xref uid="word!Word.Style#context:member" alttext="Word.Style.context" />
+
+  - <xref uid="word!Word.StyleCollection#context:member"
+  alttext="Word.StyleCollection.context" />
+
+  - <xref uid="word!Word.Table#context:member" alttext="Word.Table.context" />
+
+  - <xref uid="word!Word.TableBorder#context:member"
+  alttext="Word.TableBorder.context" />
+
+  - <xref uid="word!Word.TableCell#context:member"
+  alttext="Word.TableCell.context" />
+
+  - <xref uid="word!Word.TableCellCollection#context:member"
+  alttext="Word.TableCellCollection.context" />
+
+  - <xref uid="word!Word.TableCollection#context:member"
+  alttext="Word.TableCollection.context" />
+
+  - <xref uid="word!Word.TableRow#context:member"
+  alttext="Word.TableRow.context" />
+
+  - <xref uid="word!Word.TableRowCollection#context:member"
+  alttext="Word.TableRowCollection.context" />
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await Word.run(async (context: Word.RequestContext) => {
     const document = context.document;
     // Interact with the Word document...
   });
+
   ```
 
 isPreview: false

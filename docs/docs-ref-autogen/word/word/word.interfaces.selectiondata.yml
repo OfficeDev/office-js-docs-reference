@@ -6,10 +6,12 @@ fullName: Word.Interfaces.SelectionData
 summary: >-
   An interface describing the data returned by calling `selection.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentData#selection:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#selection:member"
+  alttext="Word.Interfaces.DocumentData.selection" />
 
 isPreview: false
 isDeprecated: false

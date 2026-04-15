@@ -14,11 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#checkboxContentControl:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.checkboxContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#checkboxContentControl:member"
-  />
+  alttext="Word.Interfaces.ContentControlLoadOptions.checkboxContentControl" />
 
 isPreview: false
 isDeprecated: false

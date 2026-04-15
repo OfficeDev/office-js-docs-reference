@@ -6,10 +6,12 @@ fullName: Word.Interfaces.StyleUpdateData
 summary: >-
   An interface for updating data on the `Style` object, for use in `style.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#linkStyle:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#linkStyle:member"
+  alttext="Word.Interfaces.StyleUpdateData.linkStyle" />
 
 isPreview: false
 isDeprecated: false

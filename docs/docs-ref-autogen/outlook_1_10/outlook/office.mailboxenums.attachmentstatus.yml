@@ -19,7 +19,8 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member" />
+  uid="outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member"
+  alttext="Office.AttachmentsChangedEventArgs.attachmentStatus" />
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartCollection#onDeleted:member" />
+  - <xref uid="excel!Excel.ChartCollection#onDeleted:member"
+  alttext="Excel.ChartCollection.onDeleted" />
 
 isPreview: false
 isDeprecated: false

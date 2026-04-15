@@ -12,23 +12,31 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#backgroundColor:member" />
+  - <xref uid="word!Word.FillFormat#backgroundColor:member"
+  alttext="Word.FillFormat.backgroundColor" />
 
-  - <xref uid="word!Word.FillFormat#foregroundColor:member" />
+  - <xref uid="word!Word.FillFormat#foregroundColor:member"
+  alttext="Word.FillFormat.foregroundColor" />
 
-  - <xref uid="word!Word.Font#textColor:member" />
+  - <xref uid="word!Word.Font#textColor:member" alttext="Word.Font.textColor" />
 
-  - <xref uid="word!Word.GlowFormat#color:member" />
+  - <xref uid="word!Word.GlowFormat#color:member"
+  alttext="Word.GlowFormat.color" />
 
-  - <xref uid="word!Word.LineFormat#backgroundColor:member" />
+  - <xref uid="word!Word.LineFormat#backgroundColor:member"
+  alttext="Word.LineFormat.backgroundColor" />
 
-  - <xref uid="word!Word.LineFormat#foregroundColor:member" />
+  - <xref uid="word!Word.LineFormat#foregroundColor:member"
+  alttext="Word.LineFormat.foregroundColor" />
 
-  - <xref uid="word!Word.ShadowFormat#foregroundColor:member" />
+  - <xref uid="word!Word.ShadowFormat#foregroundColor:member"
+  alttext="Word.ShadowFormat.foregroundColor" />
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#contourColor:member" />
+  - <xref uid="word!Word.ThreeDimensionalFormat#contourColor:member"
+  alttext="Word.ThreeDimensionalFormat.contourColor" />
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColor:member" />
+  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColor:member"
+  alttext="Word.ThreeDimensionalFormat.extrusionColor" />
 
 isPreview: false
 isDeprecated: false

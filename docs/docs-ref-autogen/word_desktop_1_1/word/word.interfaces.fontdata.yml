@@ -4,17 +4,33 @@ uid: word!Word.Interfaces.FontData:interface
 package: word!
 fullName: Word.Interfaces.FontData
 summary: An interface describing the data returned by calling `font.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.BodyData#font:member" />
-  - <xref uid="word!Word.Interfaces.ContentControlData#font:member" />
-  - <xref uid="word!Word.Interfaces.ListLevelData#font:member" />
-  - <xref uid="word!Word.Interfaces.ParagraphData#font:member" />
-  - <xref uid="word!Word.Interfaces.RangeData#font:member" />
-  - <xref uid="word!Word.Interfaces.StyleData#font:member" />
-  - <xref uid="word!Word.Interfaces.TableData#font:member" />
-  - <xref uid="word!Word.Interfaces.TableRowData#font:member" />
+
+  - <xref uid="word!Word.Interfaces.BodyData#font:member"
+  alttext="Word.Interfaces.BodyData.font" />
+
+  - <xref uid="word!Word.Interfaces.ContentControlData#font:member"
+  alttext="Word.Interfaces.ContentControlData.font" />
+
+  - <xref uid="word!Word.Interfaces.ListLevelData#font:member"
+  alttext="Word.Interfaces.ListLevelData.font" />
+
+  - <xref uid="word!Word.Interfaces.ParagraphData#font:member"
+  alttext="Word.Interfaces.ParagraphData.font" />
+
+  - <xref uid="word!Word.Interfaces.RangeData#font:member"
+  alttext="Word.Interfaces.RangeData.font" />
+
+  - <xref uid="word!Word.Interfaces.StyleData#font:member"
+  alttext="Word.Interfaces.StyleData.font" />
+
+  - <xref uid="word!Word.Interfaces.TableData#font:member"
+  alttext="Word.Interfaces.TableData.font" />
+
+  - <xref uid="word!Word.Interfaces.TableRowData#font:member"
+  alttext="Word.Interfaces.TableRowData.font" />
 
 isPreview: false
 isDeprecated: false

@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AttachmentContent#format:member" />
+  - <xref uid="outlook!Office.AttachmentContent#format:member"
+  alttext="Office.AttachmentContent.format" />
 
   #### Examples
 

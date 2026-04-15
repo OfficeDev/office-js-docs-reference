@@ -72,9 +72,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#internetHeaders:member" />
+  - <xref uid="outlook!Office.LoadedMessageCompose#internetHeaders:member"
+  alttext="Office.LoadedMessageCompose.internetHeaders" />
 
-  - <xref uid="outlook!Office.MessageCompose#internetHeaders:member" />
+  - <xref uid="outlook!Office.MessageCompose#internetHeaders:member"
+  alttext="Office.MessageCompose.internetHeaders" />
 
 isPreview: false
 isDeprecated: false

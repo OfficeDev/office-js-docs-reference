@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.InfobarDetails#infobarType:member" />
+  - <xref uid="outlook!Office.InfobarDetails#infobarType:member"
+  alttext="Office.InfobarDetails.infobarType" />
 
   #### Examples
 

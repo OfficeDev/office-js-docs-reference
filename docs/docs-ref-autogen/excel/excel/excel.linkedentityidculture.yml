@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.LinkedEntityLoadServiceRequest#entities:member" />
+  - <xref uid="excel!Excel.LinkedEntityLoadServiceRequest#entities:member"
+  alttext="Excel.LinkedEntityLoadServiceRequest.entities" />
 
 isPreview: false
 isDeprecated: false

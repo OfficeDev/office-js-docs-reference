@@ -17,9 +17,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicCompactLayout#icon:member" />
+  - <xref uid="excel!Excel.BasicCompactLayout#icon:member"
+  alttext="Excel.BasicCompactLayout.icon" />
 
-  - <xref uid="excel!Excel.EntityCompactLayout#icon:member" />
+  - <xref uid="excel!Excel.EntityCompactLayout#icon:member"
+  alttext="Excel.EntityCompactLayout.icon" />
 
   #### Examples
 

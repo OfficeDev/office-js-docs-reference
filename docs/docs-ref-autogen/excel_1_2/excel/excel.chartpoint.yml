@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartPointsCollection#items:member" />
+  - <xref uid="excel!Excel.ChartPointsCollection#items:member"
+  alttext="Excel.ChartPointsCollection.items" />
 
   #### Examples
 

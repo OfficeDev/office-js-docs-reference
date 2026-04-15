@@ -6,10 +6,12 @@ fullName: Visio.Interfaces.PageViewData
 summary: >-
   An interface describing the data returned by calling `pageView.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="visio!Visio.Interfaces.PageData#view:member" />
+
+  - <xref uid="visio!Visio.Interfaces.PageData#view:member"
+  alttext="Visio.Interfaces.PageData.view" />
 
 isPreview: false
 isDeprecated: false

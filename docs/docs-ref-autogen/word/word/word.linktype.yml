@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.LinkFormatData#type:member" />
+  - <xref uid="word!Word.Interfaces.LinkFormatData#type:member"
+  alttext="Word.Interfaces.LinkFormatData.type" />
 
-  - <xref uid="word!Word.LinkFormat#type:member" />
+  - <xref uid="word!Word.LinkFormat#type:member" alttext="Word.LinkFormat.type"
+  />
 
 isPreview: false
 isDeprecated: false

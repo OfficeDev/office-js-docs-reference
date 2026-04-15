@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Comment#replies:member" />
+  - <xref uid="excel!Excel.Comment#replies:member"
+  alttext="Excel.Comment.replies" />
 
 isPreview: false
 isDeprecated: false

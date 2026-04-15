@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Bookmark#storyType:member" />
+  - <xref uid="word!Word.Bookmark#storyType:member"
+  alttext="Word.Bookmark.storyType" />
 
-  - <xref uid="word!Word.Interfaces.BookmarkData#storyType:member" />
+  - <xref uid="word!Word.Interfaces.BookmarkData#storyType:member"
+  alttext="Word.Interfaces.BookmarkData.storyType" />
 
-  - <xref uid="word!Word.Interfaces.RangeData#storyType:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#storyType:member"
+  alttext="Word.Interfaces.RangeData.storyType" />
 
-  - <xref uid="word!Word.Interfaces.SelectionData#storyType:member" />
+  - <xref uid="word!Word.Interfaces.SelectionData#storyType:member"
+  alttext="Word.Interfaces.SelectionData.storyType" />
 
-  - <xref uid="word!Word.Range#storyType:member" />
+  - <xref uid="word!Word.Range#storyType:member" alttext="Word.Range.storyType"
+  />
 
-  - <xref uid="word!Word.Selection#storyType:member" />
+  - <xref uid="word!Word.Selection#storyType:member"
+  alttext="Word.Selection.storyType" />
 
 isPreview: false
 isDeprecated: false

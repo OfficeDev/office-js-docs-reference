@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Table#rows:member" />
+  - <xref uid="excel!Excel.Table#rows:member" alttext="Excel.Table.rows" />
 
 isPreview: false
 isDeprecated: false

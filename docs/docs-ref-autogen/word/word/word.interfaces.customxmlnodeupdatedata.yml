@@ -11,27 +11,31 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#firstChild:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeUpdateData.firstChild" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#lastChild:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#lastChild:member"
+  alttext="Word.Interfaces.CustomXmlNodeUpdateData.lastChild" />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#nextSibling:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeUpdateData.nextSibling" />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData#parentNode:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeUpdateData.parentNode" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlNodeUpdateData#previousSibling:member" />
+  uid="word!Word.Interfaces.CustomXmlNodeUpdateData#previousSibling:member"
+  alttext="Word.Interfaces.CustomXmlNodeUpdateData.previousSibling" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartUpdateData#documentElement:member" />
+  uid="word!Word.Interfaces.CustomXmlPartUpdateData#documentElement:member"
+  alttext="Word.Interfaces.CustomXmlPartUpdateData.documentElement" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member" />
+  uid="word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member"
+  alttext="Word.Interfaces.CustomXmlValidationErrorUpdateData.node" />
 
   - <xref uid="word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member"
-  />
+  alttext="Word.Interfaces.XmlMappingUpdateData.customXmlNode" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#styles:member" />
+  - <xref uid="excel!Excel.Workbook#styles:member"
+  alttext="Excel.Workbook.styles" />
 
 isPreview: false
 isDeprecated: false

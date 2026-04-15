@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#colorScale:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatData.colorScale" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatData#colorScaleOrNullObject:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatData.colorScaleOrNullObject" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#textShadow:member" />
+  - <xref uid="word!Word.Interfaces.FontLoadOptions#textShadow:member"
+  alttext="Word.Interfaces.FontLoadOptions.textShadow" />
 
 isPreview: false
 isDeprecated: false

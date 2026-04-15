@@ -4,10 +4,12 @@ uid: office!OfficeExtension.RequestUrlAndHeaderInfo:interface
 package: office!
 fullName: OfficeExtension.RequestUrlAndHeaderInfo
 summary: Request URL and headers
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!OfficeExtension.RunOptions#session:member" />
+
+  - <xref uid="office!OfficeExtension.RunOptions#session:member"
+  alttext="OfficeExtension.RunOptions.session" />
 
 isPreview: false
 isDeprecated: false

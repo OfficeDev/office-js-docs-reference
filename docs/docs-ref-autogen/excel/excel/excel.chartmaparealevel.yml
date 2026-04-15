@@ -14,11 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartMapOptions#level:member" />
+  - <xref uid="excel!Excel.ChartMapOptions#level:member"
+  alttext="Excel.ChartMapOptions.level" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsData#level:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsData#level:member"
+  alttext="Excel.Interfaces.ChartMapOptionsData.level" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member"
+  alttext="Excel.Interfaces.ChartMapOptionsUpdateData.level" />
 
 isPreview: false
 isDeprecated: false

@@ -12,12 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TextFrameData#verticalOverflow:member" />
+  - <xref uid="excel!Excel.Interfaces.TextFrameData#verticalOverflow:member"
+  alttext="Excel.Interfaces.TextFrameData.verticalOverflow" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member" />
+  uid="excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member"
+  alttext="Excel.Interfaces.TextFrameUpdateData.verticalOverflow" />
 
-  - <xref uid="excel!Excel.TextFrame#verticalOverflow:member" />
+  - <xref uid="excel!Excel.TextFrame#verticalOverflow:member"
+  alttext="Excel.TextFrame.verticalOverflow" />
 
 isPreview: false
 isDeprecated: false

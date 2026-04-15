@@ -14,9 +14,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#comment:member"
-  />
+  alttext="Excel.Interfaces.DocumentTaskCollectionLoadOptions.comment" />
 
-  - <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions#comment:member" />
+  - <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions#comment:member"
+  alttext="Excel.Interfaces.DocumentTaskLoadOptions.comment" />
 
 isPreview: false
 isDeprecated: false

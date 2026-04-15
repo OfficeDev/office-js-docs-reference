@@ -18,19 +18,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#worksheet:member" />
+  - <xref uid="excel!Excel.Chart#worksheet:member"
+  alttext="Excel.Chart.worksheet" />
 
-  - <xref uid="excel!Excel.NamedItem#worksheet:member" />
+  - <xref uid="excel!Excel.NamedItem#worksheet:member"
+  alttext="Excel.NamedItem.worksheet" />
 
-  - <xref uid="excel!Excel.NamedItem#worksheetOrNullObject:member" />
+  - <xref uid="excel!Excel.NamedItem#worksheetOrNullObject:member"
+  alttext="Excel.NamedItem.worksheetOrNullObject" />
 
-  - <xref uid="excel!Excel.PivotTable#worksheet:member" />
+  - <xref uid="excel!Excel.PivotTable#worksheet:member"
+  alttext="Excel.PivotTable.worksheet" />
 
-  - <xref uid="excel!Excel.Range#worksheet:member" />
+  - <xref uid="excel!Excel.Range#worksheet:member"
+  alttext="Excel.Range.worksheet" />
 
-  - <xref uid="excel!Excel.Table#worksheet:member" />
+  - <xref uid="excel!Excel.Table#worksheet:member"
+  alttext="Excel.Table.worksheet" />
 
-  - <xref uid="excel!Excel.WorksheetCollection#items:member" />
+  - <xref uid="excel!Excel.WorksheetCollection#items:member"
+  alttext="Excel.WorksheetCollection.items" />
 
   #### Examples
 

@@ -13,15 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Presentation#customXmlParts:member" />
+  - <xref uid="powerpoint!PowerPoint.Presentation#customXmlParts:member"
+  alttext="PowerPoint.Presentation.customXmlParts" />
 
-  - <xref uid="powerpoint!PowerPoint.Shape#customXmlParts:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#customXmlParts:member"
+  alttext="PowerPoint.Shape.customXmlParts" />
 
-  - <xref uid="powerpoint!PowerPoint.Slide#customXmlParts:member" />
+  - <xref uid="powerpoint!PowerPoint.Slide#customXmlParts:member"
+  alttext="PowerPoint.Slide.customXmlParts" />
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayout#customXmlParts:member" />
+  - <xref uid="powerpoint!PowerPoint.SlideLayout#customXmlParts:member"
+  alttext="PowerPoint.SlideLayout.customXmlParts" />
 
-  - <xref uid="powerpoint!PowerPoint.SlideMaster#customXmlParts:member" />
+  - <xref uid="powerpoint!PowerPoint.SlideMaster#customXmlParts:member"
+  alttext="PowerPoint.SlideMaster.customXmlParts" />
 
 isPreview: false
 isDeprecated: false

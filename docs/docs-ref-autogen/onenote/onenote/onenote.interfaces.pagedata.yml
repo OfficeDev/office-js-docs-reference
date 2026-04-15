@@ -8,14 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisData#page:member" />
+  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisData#page:member"
+  alttext="OneNote.Interfaces.InkAnalysisData.page" />
 
-  - <xref uid="onenote!OneNote.Interfaces.PageCollectionData#items:member" />
+  - <xref uid="onenote!OneNote.Interfaces.PageCollectionData#items:member"
+  alttext="OneNote.Interfaces.PageCollectionData.items" />
 
   - <xref uid="onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member"
-  />
+  alttext="OneNote.Interfaces.PageCollectionUpdateData.items" />
 
-  - <xref uid="onenote!OneNote.Interfaces.SectionData#pages:member" />
+  - <xref uid="onenote!OneNote.Interfaces.SectionData#pages:member"
+  alttext="OneNote.Interfaces.SectionData.pages" />
 
 isPreview: false
 isDeprecated: false

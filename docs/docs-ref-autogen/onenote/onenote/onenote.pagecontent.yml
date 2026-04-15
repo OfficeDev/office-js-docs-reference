@@ -14,13 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.FloatingInk#pageContent:member" />
+  - <xref uid="onenote!OneNote.FloatingInk#pageContent:member"
+  alttext="OneNote.FloatingInk.pageContent" />
 
-  - <xref uid="onenote!OneNote.Image#pageContent:member" />
+  - <xref uid="onenote!OneNote.Image#pageContent:member"
+  alttext="OneNote.Image.pageContent" />
 
-  - <xref uid="onenote!OneNote.Outline#pageContent:member" />
+  - <xref uid="onenote!OneNote.Outline#pageContent:member"
+  alttext="OneNote.Outline.pageContent" />
 
-  - <xref uid="onenote!OneNote.PageContentCollection#items:member" />
+  - <xref uid="onenote!OneNote.PageContentCollection#items:member"
+  alttext="OneNote.PageContentCollection.items" />
 
 isPreview: false
 isDeprecated: false

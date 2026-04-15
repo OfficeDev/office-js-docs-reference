@@ -8,23 +8,33 @@ summary: >-
   Since the Office add-in and the PowerPoint application run in two different
   processes, the request context is required to get access to the PowerPoint
   object model from the add-in.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - <xref uid="powerpoint!PowerPoint.Application#context:member" />
-  - <xref uid="powerpoint!PowerPoint.Presentation#context:member" />
+
+  - <xref uid="powerpoint!PowerPoint.Application#context:member"
+  alttext="PowerPoint.Application.context" />
+
+  - <xref uid="powerpoint!PowerPoint.Presentation#context:member"
+  alttext="PowerPoint.Presentation.context" />
+
   #### Examples
 
+
   ```TypeScript
+
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
+
   // object to work with the Office file.
+
   await PowerPoint.run(async (context) => {
     const presentation = context.presentation;
     // Interact with the PowerPoint presentation...
   });
+
   ```
 
 isPreview: false

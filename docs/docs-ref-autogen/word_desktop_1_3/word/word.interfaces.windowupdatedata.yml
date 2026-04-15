@@ -6,10 +6,12 @@ fullName: Word.Interfaces.WindowUpdateData
 summary: >-
   An interface for updating data on the `Window` object, for use in
   `window.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentUpdateData#activeWindow:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentUpdateData#activeWindow:member"
+  alttext="Word.Interfaces.DocumentUpdateData.activeWindow" />
 
 isPreview: false
 isDeprecated: false

@@ -15,22 +15,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BooleanCellValue#provider:member" />
+  - <xref uid="excel!Excel.BooleanCellValue#provider:member"
+  alttext="Excel.BooleanCellValue.provider" />
 
-  - <xref uid="excel!Excel.DoubleCellValue#provider:member" />
+  - <xref uid="excel!Excel.DoubleCellValue#provider:member"
+  alttext="Excel.DoubleCellValue.provider" />
 
-  - <xref uid="excel!Excel.EntityCellValue#provider:member" />
+  - <xref uid="excel!Excel.EntityCellValue#provider:member"
+  alttext="Excel.EntityCellValue.provider" />
 
   - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#provider:member"
-  />
+  alttext="Excel.ExternalCodeServiceObjectCellValue.provider" />
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member" />
+  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member"
+  alttext="Excel.LinkedEntityCellValue.provider" />
 
-  - <xref uid="excel!Excel.LocalImageCellValue#provider:member" />
+  - <xref uid="excel!Excel.LocalImageCellValue#provider:member"
+  alttext="Excel.LocalImageCellValue.provider" />
 
-  - <xref uid="excel!Excel.StringCellValue#provider:member" />
+  - <xref uid="excel!Excel.StringCellValue#provider:member"
+  alttext="Excel.StringCellValue.provider" />
 
-  - <xref uid="excel!Excel.WebImageCellValue#provider:member" />
+  - <xref uid="excel!Excel.WebImageCellValue#provider:member"
+  alttext="Excel.WebImageCellValue.provider" />
 
 isPreview: false
 isDeprecated: false

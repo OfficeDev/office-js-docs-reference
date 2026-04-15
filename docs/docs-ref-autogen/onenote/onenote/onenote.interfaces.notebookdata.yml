@@ -10,13 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.ApplicationData#notebooks:member" />
+  - <xref uid="onenote!OneNote.Interfaces.ApplicationData#notebooks:member"
+  alttext="OneNote.Interfaces.ApplicationData.notebooks" />
 
   - <xref uid="onenote!OneNote.Interfaces.NotebookCollectionData#items:member"
-  />
+  alttext="OneNote.Interfaces.NotebookCollectionData.items" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member" />
+  uid="onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member"
+  alttext="OneNote.Interfaces.NotebookCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

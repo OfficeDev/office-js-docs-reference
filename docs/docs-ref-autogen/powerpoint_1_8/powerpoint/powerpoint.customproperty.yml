@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.CustomPropertyCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.CustomPropertyCollection#items:member"
+  alttext="PowerPoint.CustomPropertyCollection.items" />
 
 isPreview: false
 isDeprecated: false

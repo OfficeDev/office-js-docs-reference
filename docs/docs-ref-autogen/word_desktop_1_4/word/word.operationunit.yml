@@ -13,19 +13,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionDeleteOptions#unit:member" />
+  - <xref uid="word!Word.SelectionDeleteOptions#unit:member"
+  alttext="Word.SelectionDeleteOptions.unit" />
 
-  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member" />
+  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member"
+  alttext="Word.SelectionMoveLeftRightOptions.unit" />
 
-  - <xref uid="word!Word.SelectionMoveOptions#unit:member" />
+  - <xref uid="word!Word.SelectionMoveOptions#unit:member"
+  alttext="Word.SelectionMoveOptions.unit" />
 
-  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member" />
+  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member"
+  alttext="Word.SelectionMoveStartEndOptions.unit" />
 
-  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member" />
+  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member"
+  alttext="Word.SelectionMoveUpDownOptions.unit" />
 
-  - <xref uid="word!Word.SelectionNextOptions#unit:member" />
+  - <xref uid="word!Word.SelectionNextOptions#unit:member"
+  alttext="Word.SelectionNextOptions.unit" />
 
-  - <xref uid="word!Word.SelectionPreviousOptions#unit:member" />
+  - <xref uid="word!Word.SelectionPreviousOptions#unit:member"
+  alttext="Word.SelectionPreviousOptions.unit" />
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#datePickerContentControl:member" />
+  - <xref uid="word!Word.ContentControl#datePickerContentControl:member"
+  alttext="Word.ContentControl.datePickerContentControl" />
 
 isPreview: false
 isDeprecated: false

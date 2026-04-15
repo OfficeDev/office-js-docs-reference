@@ -13,9 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#title:member"
-  />
+  alttext="Excel.Interfaces.ChartCollectionLoadOptions.title" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#title:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#title:member"
+  alttext="Excel.Interfaces.ChartLoadOptions.title" />
 
 isPreview: false
 isDeprecated: false

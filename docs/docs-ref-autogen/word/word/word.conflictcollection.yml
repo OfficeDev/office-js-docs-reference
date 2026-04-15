@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Coauthoring#conflicts:member" />
+  - <xref uid="word!Word.Coauthoring#conflicts:member"
+  alttext="Word.Coauthoring.conflicts" />
 
-  - <xref uid="word!Word.Range#conflicts:member" />
+  - <xref uid="word!Word.Range#conflicts:member" alttext="Word.Range.conflicts"
+  />
 
 isPreview: false
 isDeprecated: false

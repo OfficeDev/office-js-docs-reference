@@ -25,7 +25,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FieldCollection#items:member" />
+  - <xref uid="word!Word.FieldCollection#items:member"
+  alttext="Word.FieldCollection.items" />
 
   #### Examples
 

@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeData#horizontalInVertical:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#horizontalInVertical:member"
+  alttext="Word.Interfaces.RangeData.horizontalInVertical" />
 
   - <xref uid="word!Word.Interfaces.RangeUpdateData#horizontalInVertical:member"
-  />
+  alttext="Word.Interfaces.RangeUpdateData.horizontalInVertical" />
 
-  - <xref uid="word!Word.Range#horizontalInVertical:member" />
+  - <xref uid="word!Word.Range#horizontalInVertical:member"
+  alttext="Word.Range.horizontalInVertical" />
 
 isPreview: false
 isDeprecated: false

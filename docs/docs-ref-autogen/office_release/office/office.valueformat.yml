@@ -18,9 +18,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.GetBindingDataOptions#valueFormat:member" />
+  - <xref uid="office!Office.GetBindingDataOptions#valueFormat:member"
+  alttext="Office.GetBindingDataOptions.valueFormat" />
 
-  - <xref uid="office!Office.GetSelectedDataOptions#valueFormat:member" />
+  - <xref uid="office!Office.GetSelectedDataOptions#valueFormat:member"
+  alttext="Office.GetSelectedDataOptions.valueFormat" />
 
   #### Examples
 

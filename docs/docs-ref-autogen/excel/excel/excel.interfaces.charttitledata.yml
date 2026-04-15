@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartTitleData
 summary: >-
   An interface describing the data returned by calling `chartTitle.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#title:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartData#title:member"
+  alttext="Excel.Interfaces.ChartData.title" />
 
 isPreview: false
 isDeprecated: false

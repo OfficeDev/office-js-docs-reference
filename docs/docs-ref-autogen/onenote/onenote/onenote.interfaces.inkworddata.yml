@@ -10,12 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.InkWordCollectionData#items:member" />
+  - <xref uid="onenote!OneNote.Interfaces.InkWordCollectionData#items:member"
+  alttext="OneNote.Interfaces.InkWordCollectionData.items" />
 
   - <xref
-  uid="onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member" />
+  uid="onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member"
+  alttext="OneNote.Interfaces.InkWordCollectionUpdateData.items" />
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#inkWords:member" />
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphData#inkWords:member"
+  alttext="OneNote.Interfaces.ParagraphData.inkWords" />
 
 isPreview: false
 isDeprecated: false

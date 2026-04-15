@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PageLayout#headersFooters:member" />
+  - <xref uid="excel!Excel.PageLayout#headersFooters:member"
+  alttext="Excel.PageLayout.headersFooters" />
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,7 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member"
-  />
+  alttext="Word.Interfaces.DocumentLoadOptions.attachedTemplate" />
 
 isPreview: false
 isDeprecated: false

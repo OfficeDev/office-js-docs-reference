@@ -64,9 +64,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#getEntities:member(1)" />
+  - <xref uid="outlook!Office.AppointmentRead#getEntities:member(1)"
+  alttext="Office.AppointmentRead.getEntities" />
 
-  - <xref uid="outlook!Office.MessageRead#getEntities:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#getEntities:member(1)"
+  alttext="Office.MessageRead.getEntities" />
 
 isPreview: false
 isDeprecated: true

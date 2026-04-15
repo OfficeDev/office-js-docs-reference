@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.FormatProtectionData
 summary: >-
   An interface describing the data returned by calling
   `formatProtection.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#protection:member" />
+
+  - <xref uid="excel!Excel.Interfaces.RangeFormatData#protection:member"
+  alttext="Excel.Interfaces.RangeFormatData.protection" />
 
 isPreview: false
 isDeprecated: false

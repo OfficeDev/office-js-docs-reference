@@ -25,21 +25,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#fields:member" />
+  - <xref uid="word!Word.Body#fields:member" alttext="Word.Body.fields" />
 
-  - <xref uid="word!Word.ContentControl#fields:member" />
+  - <xref uid="word!Word.ContentControl#fields:member"
+  alttext="Word.ContentControl.fields" />
 
-  - <xref uid="word!Word.Document#fields:member" />
+  - <xref uid="word!Word.Document#fields:member" alttext="Word.Document.fields"
+  />
 
-  - <xref uid="word!Word.Paragraph#fields:member" />
+  - <xref uid="word!Word.Paragraph#fields:member"
+  alttext="Word.Paragraph.fields" />
 
-  - <xref uid="word!Word.Range#fields:member" />
+  - <xref uid="word!Word.Range#fields:member" alttext="Word.Range.fields" />
 
-  - <xref uid="word!Word.Selection#fields:member" />
+  - <xref uid="word!Word.Selection#fields:member"
+  alttext="Word.Selection.fields" />
 
-  - <xref uid="word!Word.Table#fields:member" />
+  - <xref uid="word!Word.Table#fields:member" alttext="Word.Table.fields" />
 
-  - <xref uid="word!Word.TableRow#fields:member" />
+  - <xref uid="word!Word.TableRow#fields:member" alttext="Word.TableRow.fields"
+  />
 
   #### Examples
 

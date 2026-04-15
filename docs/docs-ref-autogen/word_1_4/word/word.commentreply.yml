@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentReplyCollection#items:member" />
+  - <xref uid="word!Word.CommentReplyCollection#items:member"
+  alttext="Word.CommentReplyCollection.items" />
 
   #### Examples
 

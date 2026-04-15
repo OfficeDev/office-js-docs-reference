@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.NamedItemArrayValuesData
 summary: >-
   An interface describing the data returned by calling
   `namedItemArrayValues.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#arrayValues:member" />
+
+  - <xref uid="excel!Excel.Interfaces.NamedItemData#arrayValues:member"
+  alttext="Excel.Interfaces.NamedItemData.arrayValues" />
 
 isPreview: false
 isDeprecated: false

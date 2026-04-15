@@ -13,11 +13,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#categoryAxis:member"
-  />
+  alttext="Excel.Interfaces.ChartAxesLoadOptions.categoryAxis" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member"
+  alttext="Excel.Interfaces.ChartAxesLoadOptions.seriesAxis" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member"
+  alttext="Excel.Interfaces.ChartAxesLoadOptions.valueAxis" />
 
 isPreview: false
 isDeprecated: false

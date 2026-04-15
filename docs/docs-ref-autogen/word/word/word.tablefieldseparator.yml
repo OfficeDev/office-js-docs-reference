@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableConvertToTextOptions#separator:member" />
+  - <xref uid="word!Word.TableConvertToTextOptions#separator:member"
+  alttext="Word.TableConvertToTextOptions.separator" />
 
 isPreview: false
 isDeprecated: false

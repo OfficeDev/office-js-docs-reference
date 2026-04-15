@@ -6,10 +6,12 @@ fullName: Word.Interfaces.TableStyleData
 summary: >-
   An interface describing the data returned by calling `tableStyle.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleData#tableStyle:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleData#tableStyle:member"
+  alttext="Word.Interfaces.StyleData.tableStyle" />
 
 isPreview: false
 isDeprecated: false

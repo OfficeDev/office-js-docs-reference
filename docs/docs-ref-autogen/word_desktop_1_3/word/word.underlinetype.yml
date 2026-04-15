@@ -13,18 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentContentRange#underline:member" />
+  - <xref uid="word!Word.CommentContentRange#underline:member"
+  alttext="Word.CommentContentRange.underline" />
 
-  - <xref uid="word!Word.Font#underline:member" />
+  - <xref uid="word!Word.Font#underline:member" alttext="Word.Font.underline" />
 
-  - <xref uid="word!Word.Interfaces.CommentContentRangeData#underline:member" />
+  - <xref uid="word!Word.Interfaces.CommentContentRangeData#underline:member"
+  alttext="Word.Interfaces.CommentContentRangeData.underline" />
 
   - <xref
-  uid="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member" />
+  uid="word!Word.Interfaces.CommentContentRangeUpdateData#underline:member"
+  alttext="Word.Interfaces.CommentContentRangeUpdateData.underline" />
 
-  - <xref uid="word!Word.Interfaces.FontData#underline:member" />
+  - <xref uid="word!Word.Interfaces.FontData#underline:member"
+  alttext="Word.Interfaces.FontData.underline" />
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member" />
+  - <xref uid="word!Word.Interfaces.FontUpdateData#underline:member"
+  alttext="Word.Interfaces.FontUpdateData.underline" />
 
   #### Examples
 

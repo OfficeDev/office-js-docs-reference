@@ -13,13 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFont#underline:member" />
+  - <xref uid="excel!Excel.CellPropertiesFont#underline:member"
+  alttext="Excel.CellPropertiesFont.underline" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeFontData#underline:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeFontData#underline:member"
+  alttext="Excel.Interfaces.RangeFontData.underline" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeFontUpdateData#underline:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeFontUpdateData#underline:member"
+  alttext="Excel.Interfaces.RangeFontUpdateData.underline" />
 
-  - <xref uid="excel!Excel.RangeFont#underline:member" />
+  - <xref uid="excel!Excel.RangeFont#underline:member"
+  alttext="Excel.RangeFont.underline" />
 
   #### Examples
 

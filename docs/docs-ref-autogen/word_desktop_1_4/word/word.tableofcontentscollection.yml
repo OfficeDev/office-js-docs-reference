@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#tablesOfContents:member" />
+  - <xref uid="word!Word.Document#tablesOfContents:member"
+  alttext="Word.Document.tablesOfContents" />
 
 isPreview: false
 isDeprecated: false

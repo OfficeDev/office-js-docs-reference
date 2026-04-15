@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlValidationError#type:member" />
+  - <xref uid="word!Word.CustomXmlValidationError#type:member"
+  alttext="Word.CustomXmlValidationError.type" />
 
-  - <xref uid="word!Word.Interfaces.CustomXmlValidationErrorData#type:member" />
+  - <xref uid="word!Word.Interfaces.CustomXmlValidationErrorData#type:member"
+  alttext="Word.Interfaces.CustomXmlValidationErrorData.type" />
 
 isPreview: true
 isDeprecated: false

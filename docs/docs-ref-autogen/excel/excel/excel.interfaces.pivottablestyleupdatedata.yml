@@ -11,7 +11,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData#pivotStyle:member"
-  />
+  alttext="Excel.Interfaces.PivotLayoutUpdateData.pivotStyle" />
 
 isPreview: false
 isDeprecated: false

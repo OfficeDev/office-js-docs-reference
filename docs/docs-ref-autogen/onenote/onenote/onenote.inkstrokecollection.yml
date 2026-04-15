@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.FloatingInk#inkStrokes:member" />
+  - <xref uid="onenote!OneNote.FloatingInk#inkStrokes:member"
+  alttext="OneNote.FloatingInk.inkStrokes" />
 
 isPreview: false
 isDeprecated: false

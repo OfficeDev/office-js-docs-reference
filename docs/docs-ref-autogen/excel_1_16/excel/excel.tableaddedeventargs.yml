@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableCollection#onAdded:member" />
+  - <xref uid="excel!Excel.TableCollection#onAdded:member"
+  alttext="Excel.TableCollection.onAdded" />
 
 isPreview: false
 isDeprecated: false

@@ -9,10 +9,12 @@ summary: >-
   object returned by  when called with
   [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.SlideRange#slides:member" />
+
+  - <xref uid="office!Office.SlideRange#slides:member"
+  alttext="Office.SlideRange.slides" />
 
 isPreview: false
 isDeprecated: false

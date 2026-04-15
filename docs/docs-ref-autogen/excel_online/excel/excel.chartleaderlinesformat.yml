@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartLeaderLines#format:member" />
+  - <xref uid="excel!Excel.ChartLeaderLines#format:member"
+  alttext="Excel.ChartLeaderLines.format" />
 
   #### Examples
 

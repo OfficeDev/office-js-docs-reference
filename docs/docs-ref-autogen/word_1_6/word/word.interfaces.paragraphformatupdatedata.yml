@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ParagraphFormatUpdateData
 summary: >-
   An interface for updating data on the `ParagraphFormat` object, for use in
   `paragraphFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#paragraphFormat:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#paragraphFormat:member"
+  alttext="Word.Interfaces.StyleUpdateData.paragraphFormat" />
 
 isPreview: false
 isDeprecated: false

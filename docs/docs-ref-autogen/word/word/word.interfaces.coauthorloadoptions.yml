@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CoauthoringLoadOptions#me:member" />
+  - <xref uid="word!Word.Interfaces.CoauthoringLoadOptions#me:member"
+  alttext="Word.Interfaces.CoauthoringLoadOptions.me" />
 
   - <xref
   uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#owner:member"
-  />
+  alttext="Word.Interfaces.CoauthoringLockCollectionLoadOptions.owner" />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#owner:member" />
+  - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#owner:member"
+  alttext="Word.Interfaces.CoauthoringLockLoadOptions.owner" />
 
 isPreview: false
 isDeprecated: false

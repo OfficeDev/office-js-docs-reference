@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CoauthoringLockCollection#items:member" />
+  - <xref uid="word!Word.CoauthoringLockCollection#items:member"
+  alttext="Word.CoauthoringLockCollection.items" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.HyperlinkCollection#items:member" />
+  - <xref uid="word!Word.HyperlinkCollection#items:member"
+  alttext="Word.HyperlinkCollection.items" />
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#platform:member" />
+  - <xref uid="office!Office.Context#platform:member"
+  alttext="Office.Context.platform" />
 
-  - <xref uid="office!Office.ContextInformation#platform:member" />
+  - <xref uid="office!Office.ContextInformation#platform:member"
+  alttext="Office.ContextInformation.platform" />
 
   #### Examples
 

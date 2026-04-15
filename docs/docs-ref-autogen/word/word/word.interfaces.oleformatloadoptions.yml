@@ -15,9 +15,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#oleFormat:member"
-  />
+  alttext="Word.Interfaces.FieldCollectionLoadOptions.oleFormat" />
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#oleFormat:member" />
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#oleFormat:member"
+  alttext="Word.Interfaces.FieldLoadOptions.oleFormat" />
 
 isPreview: false
 isDeprecated: false

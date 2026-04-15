@@ -14,13 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Shape#parentGroup:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#parentGroup:member"
+  alttext="PowerPoint.Shape.parentGroup" />
 
-  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member"
+  alttext="PowerPoint.ShapeCollection.items" />
 
-  - <xref uid="powerpoint!PowerPoint.ShapeGroup#shape:member" />
+  - <xref uid="powerpoint!PowerPoint.ShapeGroup#shape:member"
+  alttext="PowerPoint.ShapeGroup.shape" />
 
-  - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#items:member"
+  alttext="PowerPoint.ShapeScopedCollection.items" />
 
   #### Examples
 

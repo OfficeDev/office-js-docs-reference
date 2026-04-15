@@ -11,7 +11,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeFormatUpdateData#protection:member"
-  />
+  alttext="Excel.Interfaces.RangeFormatUpdateData.protection" />
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#scope:member" />
+  - <xref uid="excel!Excel.Interfaces.NamedItemData#scope:member"
+  alttext="Excel.Interfaces.NamedItemData.scope" />
 
-  - <xref uid="excel!Excel.NamedItem#scope:member" />
+  - <xref uid="excel!Excel.NamedItem#scope:member"
+  alttext="Excel.NamedItem.scope" />
 
 isPreview: false
 isDeprecated: false

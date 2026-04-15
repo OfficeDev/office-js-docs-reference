@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ShapeFontData#underline:member" />
+  - <xref uid="excel!Excel.Interfaces.ShapeFontData#underline:member"
+  alttext="Excel.Interfaces.ShapeFontData.underline" />
 
-  - <xref uid="excel!Excel.Interfaces.ShapeFontUpdateData#underline:member" />
+  - <xref uid="excel!Excel.Interfaces.ShapeFontUpdateData#underline:member"
+  alttext="Excel.Interfaces.ShapeFontUpdateData.underline" />
 
-  - <xref uid="excel!Excel.ShapeFont#underline:member" />
+  - <xref uid="excel!Excel.ShapeFont#underline:member"
+  alttext="Excel.ShapeFont.underline" />
 
 isPreview: false
 isDeprecated: false

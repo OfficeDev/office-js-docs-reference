@@ -10,12 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.SlicerStyleCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.SlicerStyleCollectionData#items:member"
+  alttext="Excel.Interfaces.SlicerStyleCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.SlicerStyleCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#slicerStyles:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#slicerStyles:member"
+  alttext="Excel.Interfaces.WorkbookData.slicerStyles" />
 
 isPreview: false
 isDeprecated: false

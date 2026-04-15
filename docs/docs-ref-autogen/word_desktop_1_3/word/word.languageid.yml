@@ -12,62 +12,86 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#language:member" />
+  - <xref uid="word!Word.Application#language:member"
+  alttext="Word.Application.language" />
 
-  - <xref uid="word!Word.DatePickerContentControl#dateDisplayLocale:member" />
+  - <xref uid="word!Word.DatePickerContentControl#dateDisplayLocale:member"
+  alttext="Word.DatePickerContentControl.dateDisplayLocale" />
 
-  - <xref uid="word!Word.Interfaces.ApplicationData#language:member" />
+  - <xref uid="word!Word.Interfaces.ApplicationData#language:member"
+  alttext="Word.Interfaces.ApplicationData.language" />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlData#dateDisplayLocale:member"
-  />
+  alttext="Word.Interfaces.DatePickerContentControlData.dateDisplayLocale" />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member"
+  alttext="Word.Interfaces.DatePickerContentControlUpdateData.dateDisplayLocale"
   />
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageId:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#languageId:member"
+  alttext="Word.Interfaces.RangeData.languageId" />
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageIdFarEast:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#languageIdFarEast:member"
+  alttext="Word.Interfaces.RangeData.languageIdFarEast" />
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageIdOther:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#languageIdOther:member"
+  alttext="Word.Interfaces.RangeData.languageIdOther" />
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageId:member" />
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageId:member"
+  alttext="Word.Interfaces.RangeUpdateData.languageId" />
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdFarEast:member" />
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdFarEast:member"
+  alttext="Word.Interfaces.RangeUpdateData.languageIdFarEast" />
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdOther:member" />
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdOther:member"
+  alttext="Word.Interfaces.RangeUpdateData.languageIdOther" />
 
-  - <xref uid="word!Word.Interfaces.StyleData#languageId:member" />
+  - <xref uid="word!Word.Interfaces.StyleData#languageId:member"
+  alttext="Word.Interfaces.StyleData.languageId" />
 
-  - <xref uid="word!Word.Interfaces.StyleData#languageIdFarEast:member" />
+  - <xref uid="word!Word.Interfaces.StyleData#languageIdFarEast:member"
+  alttext="Word.Interfaces.StyleData.languageIdFarEast" />
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#languageId:member" />
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#languageId:member"
+  alttext="Word.Interfaces.StyleUpdateData.languageId" />
 
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member" />
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member"
+  alttext="Word.Interfaces.StyleUpdateData.languageIdFarEast" />
 
-  - <xref uid="word!Word.Interfaces.TemplateData#languageId:member" />
+  - <xref uid="word!Word.Interfaces.TemplateData#languageId:member"
+  alttext="Word.Interfaces.TemplateData.languageId" />
 
-  - <xref uid="word!Word.Interfaces.TemplateData#languageIdFarEast:member" />
+  - <xref uid="word!Word.Interfaces.TemplateData#languageIdFarEast:member"
+  alttext="Word.Interfaces.TemplateData.languageIdFarEast" />
 
-  - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageId:member" />
+  - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageId:member"
+  alttext="Word.Interfaces.TemplateUpdateData.languageId" />
 
   - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageIdFarEast:member"
-  />
+  alttext="Word.Interfaces.TemplateUpdateData.languageIdFarEast" />
 
-  - <xref uid="word!Word.Range#languageId:member" />
+  - <xref uid="word!Word.Range#languageId:member"
+  alttext="Word.Range.languageId" />
 
-  - <xref uid="word!Word.Range#languageIdFarEast:member" />
+  - <xref uid="word!Word.Range#languageIdFarEast:member"
+  alttext="Word.Range.languageIdFarEast" />
 
-  - <xref uid="word!Word.Range#languageIdOther:member" />
+  - <xref uid="word!Word.Range#languageIdOther:member"
+  alttext="Word.Range.languageIdOther" />
 
-  - <xref uid="word!Word.Style#languageId:member" />
+  - <xref uid="word!Word.Style#languageId:member"
+  alttext="Word.Style.languageId" />
 
-  - <xref uid="word!Word.Style#languageIdFarEast:member" />
+  - <xref uid="word!Word.Style#languageIdFarEast:member"
+  alttext="Word.Style.languageIdFarEast" />
 
-  - <xref uid="word!Word.Template#languageId:member" />
+  - <xref uid="word!Word.Template#languageId:member"
+  alttext="Word.Template.languageId" />
 
-  - <xref uid="word!Word.Template#languageIdFarEast:member" />
+  - <xref uid="word!Word.Template#languageIdFarEast:member"
+  alttext="Word.Template.languageIdFarEast" />
 
 isPreview: false
 isDeprecated: false

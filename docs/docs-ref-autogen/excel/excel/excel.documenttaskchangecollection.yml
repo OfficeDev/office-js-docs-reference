@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTask#changes:member" />
+  - <xref uid="excel!Excel.DocumentTask#changes:member"
+  alttext="Excel.DocumentTask.changes" />
 
 isPreview: true
 isDeprecated: false

@@ -12,41 +12,48 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartDataLabel#verticalAlignment:member" />
+  - <xref uid="excel!Excel.ChartDataLabel#verticalAlignment:member"
+  alttext="Excel.ChartDataLabel.verticalAlignment" />
 
-  - <xref uid="excel!Excel.ChartDataLabels#verticalAlignment:member" />
+  - <xref uid="excel!Excel.ChartDataLabels#verticalAlignment:member"
+  alttext="Excel.ChartDataLabels.verticalAlignment" />
 
-  - <xref uid="excel!Excel.ChartTitle#verticalAlignment:member" />
+  - <xref uid="excel!Excel.ChartTitle#verticalAlignment:member"
+  alttext="Excel.ChartTitle.verticalAlignment" />
 
-  - <xref uid="excel!Excel.ChartTrendlineLabel#verticalAlignment:member" />
+  - <xref uid="excel!Excel.ChartTrendlineLabel#verticalAlignment:member"
+  alttext="Excel.ChartTrendlineLabel.verticalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelData#verticalAlignment:member" />
+  uid="excel!Excel.Interfaces.ChartDataLabelData#verticalAlignment:member"
+  alttext="Excel.Interfaces.ChartDataLabelData.verticalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsData#verticalAlignment:member" />
+  uid="excel!Excel.Interfaces.ChartDataLabelsData#verticalAlignment:member"
+  alttext="Excel.Interfaces.ChartDataLabelsData.verticalAlignment" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.ChartDataLabelUpdateData.verticalAlignment" />
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.ChartTitleData.verticalAlignment" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member" />
+  uid="excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member"
+  alttext="Excel.Interfaces.ChartTitleUpdateData.verticalAlignment" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineLabelData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#verticalAlignment:member"
-  />
+  alttext="Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment" />
 
 isPreview: false
 isDeprecated: false

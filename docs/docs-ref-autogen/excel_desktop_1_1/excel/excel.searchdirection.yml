@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SearchCriteria#searchDirection:member" />
+  - <xref uid="excel!Excel.SearchCriteria#searchDirection:member"
+  alttext="Excel.SearchCriteria.searchDirection" />
 
   #### Examples
 

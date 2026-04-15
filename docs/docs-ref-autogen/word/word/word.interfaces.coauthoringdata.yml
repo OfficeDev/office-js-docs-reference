@@ -6,10 +6,12 @@ fullName: Word.Interfaces.CoauthoringData
 summary: >-
   An interface describing the data returned by calling
   `coauthoring.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentData#coauthoring:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#coauthoring:member"
+  alttext="Word.Interfaces.DocumentData.coauthoring" />
 
 isPreview: false
 isDeprecated: false

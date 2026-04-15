@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShapeData#type:member" />
+  - <xref uid="word!Word.Interfaces.ShapeData#type:member"
+  alttext="Word.Interfaces.ShapeData.type" />
 
-  - <xref uid="word!Word.Shape#type:member" />
+  - <xref uid="word!Word.Shape#type:member" alttext="Word.Shape.type" />
 
   #### Examples
 

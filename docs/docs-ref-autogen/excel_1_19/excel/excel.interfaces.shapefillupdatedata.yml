@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ShapeFillUpdateData
 summary: >-
   An interface for updating data on the `ShapeFill` object, for use in
   `shapeFill.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#fill:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#fill:member"
+  alttext="Excel.Interfaces.ShapeUpdateData.fill" />
 
 isPreview: false
 isDeprecated: false

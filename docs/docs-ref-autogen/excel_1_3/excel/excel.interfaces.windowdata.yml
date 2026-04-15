@@ -10,10 +10,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WindowCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.WindowCollectionData#items:member"
+  alttext="Excel.Interfaces.WindowCollectionData.items" />
 
   - <xref uid="excel!Excel.Interfaces.WindowCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.WindowCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

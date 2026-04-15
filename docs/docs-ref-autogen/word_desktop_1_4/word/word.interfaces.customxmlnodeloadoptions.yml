@@ -18,52 +18,57 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#firstChild:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeCollectionLoadOptions.firstChild" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#lastChild:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeCollectionLoadOptions.lastChild" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#nextSibling:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeCollectionLoadOptions.nextSibling" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#parentNode:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeCollectionLoadOptions.parentNode" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#previousSibling:member"
+  alttext="Word.Interfaces.CustomXmlNodeCollectionLoadOptions.previousSibling"
   />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#firstChild:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeLoadOptions.firstChild" />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#lastChild:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeLoadOptions.lastChild" />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#nextSibling:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeLoadOptions.nextSibling" />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#parentNode:member"
-  />
+  alttext="Word.Interfaces.CustomXmlNodeLoadOptions.parentNode" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#previousSibling:member" />
+  uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#previousSibling:member"
+  alttext="Word.Interfaces.CustomXmlNodeLoadOptions.previousSibling" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#documentElement:member"
+  alttext="Word.Interfaces.CustomXmlPartCollectionLoadOptions.documentElement"
   />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlPartLoadOptions#documentElement:member" />
+  uid="word!Word.Interfaces.CustomXmlPartLoadOptions#documentElement:member"
+  alttext="Word.Interfaces.CustomXmlPartLoadOptions.documentElement" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#documentElement:member"
+  alttext="Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.documentElement"
   />
 
   - <xref uid="word!Word.Interfaces.XmlMappingLoadOptions#customXmlNode:member"
-  />
+  alttext="Word.Interfaces.XmlMappingLoadOptions.customXmlNode" />
 
 isPreview: false
 isDeprecated: false

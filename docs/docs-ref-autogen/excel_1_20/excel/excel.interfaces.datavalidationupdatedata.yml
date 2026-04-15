@@ -11,9 +11,11 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member" />
+  uid="excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member"
+  alttext="Excel.Interfaces.RangeAreasUpdateData.dataValidation" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#dataValidation:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#dataValidation:member"
+  alttext="Excel.Interfaces.RangeUpdateData.dataValidation" />
 
 isPreview: false
 isDeprecated: false

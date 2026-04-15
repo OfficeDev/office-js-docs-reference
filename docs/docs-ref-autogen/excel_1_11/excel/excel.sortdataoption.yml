@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SortField#dataOption:member" />
+  - <xref uid="excel!Excel.SortField#dataOption:member"
+  alttext="Excel.SortField.dataOption" />
 
 isPreview: false
 isDeprecated: false

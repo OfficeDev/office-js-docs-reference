@@ -13,7 +13,8 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions#inkStrokes:member" />
+  uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions#inkStrokes:member"
+  alttext="OneNote.Interfaces.FloatingInkLoadOptions.inkStrokes" />
 
 isPreview: false
 isDeprecated: false

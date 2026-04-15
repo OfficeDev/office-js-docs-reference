@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.HeaderFooterGroup#state:member" />
+  - <xref uid="excel!Excel.HeaderFooterGroup#state:member"
+  alttext="Excel.HeaderFooterGroup.state" />
 
-  - <xref uid="excel!Excel.Interfaces.HeaderFooterGroupData#state:member" />
+  - <xref uid="excel!Excel.Interfaces.HeaderFooterGroupData#state:member"
+  alttext="Excel.Interfaces.HeaderFooterGroupData.state" />
 
   - <xref uid="excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterGroupUpdateData.state" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TextColumnCollection#items:member" />
+  - <xref uid="word!Word.TextColumnCollection#items:member"
+  alttext="Word.TextColumnCollection.items" />
 
 isPreview: false
 isDeprecated: false

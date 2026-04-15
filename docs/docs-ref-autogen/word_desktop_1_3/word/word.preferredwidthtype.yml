@@ -15,12 +15,14 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.TableColumnData#preferredWidthType:member"
-  />
+  alttext="Word.Interfaces.TableColumnData.preferredWidthType" />
 
   - <xref
-  uid="word!Word.Interfaces.TableColumnUpdateData#preferredWidthType:member" />
+  uid="word!Word.Interfaces.TableColumnUpdateData#preferredWidthType:member"
+  alttext="Word.Interfaces.TableColumnUpdateData.preferredWidthType" />
 
-  - <xref uid="word!Word.TableColumn#preferredWidthType:member" />
+  - <xref uid="word!Word.TableColumn#preferredWidthType:member"
+  alttext="Word.TableColumn.preferredWidthType" />
 
 isPreview: false
 isDeprecated: false

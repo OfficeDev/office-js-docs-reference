@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.CustomXmlPrefixMappingCollectionData.items" />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

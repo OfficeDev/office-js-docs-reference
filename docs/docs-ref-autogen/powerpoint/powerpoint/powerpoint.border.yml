@@ -13,17 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Borders#bottom:member" />
+  - <xref uid="powerpoint!PowerPoint.Borders#bottom:member"
+  alttext="PowerPoint.Borders.bottom" />
 
-  - <xref uid="powerpoint!PowerPoint.Borders#diagonalDown:member" />
+  - <xref uid="powerpoint!PowerPoint.Borders#diagonalDown:member"
+  alttext="PowerPoint.Borders.diagonalDown" />
 
-  - <xref uid="powerpoint!PowerPoint.Borders#diagonalUp:member" />
+  - <xref uid="powerpoint!PowerPoint.Borders#diagonalUp:member"
+  alttext="PowerPoint.Borders.diagonalUp" />
 
-  - <xref uid="powerpoint!PowerPoint.Borders#left:member" />
+  - <xref uid="powerpoint!PowerPoint.Borders#left:member"
+  alttext="PowerPoint.Borders.left" />
 
-  - <xref uid="powerpoint!PowerPoint.Borders#right:member" />
+  - <xref uid="powerpoint!PowerPoint.Borders#right:member"
+  alttext="PowerPoint.Borders.right" />
 
-  - <xref uid="powerpoint!PowerPoint.Borders#top:member" />
+  - <xref uid="powerpoint!PowerPoint.Borders#top:member"
+  alttext="PowerPoint.Borders.top" />
 
 isPreview: false
 isDeprecated: false

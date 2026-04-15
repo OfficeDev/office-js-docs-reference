@@ -12,22 +12,25 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#placeholderText:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.placeholderText"
   />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlUpdateData#placeholderText:member"
+  alttext="Word.Interfaces.DatePickerContentControlUpdateData.placeholderText"
   />
 
   - <xref
   uid="word!Word.Interfaces.GroupContentControlUpdateData#placeholderText:member"
-  />
+  alttext="Word.Interfaces.GroupContentControlUpdateData.placeholderText" />
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlUpdateData#placeholderText:member"
-  />
+  alttext="Word.Interfaces.PictureContentControlUpdateData.placeholderText" />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#placeholderText:member"
+  alttext="Word.Interfaces.RepeatingSectionContentControlUpdateData.placeholderText"
   />
 
 isPreview: false

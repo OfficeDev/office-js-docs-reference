@@ -18,13 +18,15 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatData#extrusionColorType:member"
-  />
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.extrusionColorType" />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#extrusionColorType:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.extrusionColorType"
   />
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColorType:member" />
+  - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColorType:member"
+  alttext="Word.ThreeDimensionalFormat.extrusionColorType" />
 
 isPreview: false
 isDeprecated: false

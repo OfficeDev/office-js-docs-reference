@@ -12,27 +12,27 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooterPicture:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterUpdateData.centerFooterPicture" />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeaderPicture:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterUpdateData.centerHeaderPicture" />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooterPicture:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterUpdateData.leftFooterPicture" />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeaderPicture:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterUpdateData.leftHeaderPicture" />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooterPicture:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterUpdateData.rightFooterPicture" />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeaderPicture:member"
-  />
+  alttext="Excel.Interfaces.HeaderFooterUpdateData.rightHeaderPicture" />
 
 isPreview: false
 isDeprecated: false

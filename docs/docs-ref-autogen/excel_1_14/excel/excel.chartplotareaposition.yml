@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartPlotArea#position:member" />
+  - <xref uid="excel!Excel.ChartPlotArea#position:member"
+  alttext="Excel.ChartPlotArea.position" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaData#position:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartPlotAreaData#position:member"
+  alttext="Excel.Interfaces.ChartPlotAreaData.position" />
 
   - <xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData#position:member"
-  />
+  alttext="Excel.Interfaces.ChartPlotAreaUpdateData.position" />
 
 isPreview: false
 isDeprecated: false

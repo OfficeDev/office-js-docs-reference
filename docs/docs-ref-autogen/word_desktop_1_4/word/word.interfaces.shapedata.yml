@@ -4,20 +4,42 @@ uid: word!Word.Interfaces.ShapeData:interface
 package: word!
 fullName: Word.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.BodyData#shapes:member" />
-  - <xref uid="word!Word.Interfaces.CanvasData#shape:member" />
-  - <xref uid="word!Word.Interfaces.CanvasData#shapes:member" />
-  - <xref uid="word!Word.Interfaces.ParagraphData#shapes:member" />
-  - <xref uid="word!Word.Interfaces.RangeData#shapes:member" />
-  - <xref uid="word!Word.Interfaces.ShapeCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.ShapeCollectionUpdateData#items:member" />
-  - <xref uid="word!Word.Interfaces.ShapeData#parentCanvas:member" />
-  - <xref uid="word!Word.Interfaces.ShapeData#parentGroup:member" />
-  - <xref uid="word!Word.Interfaces.ShapeGroupData#shape:member" />
-  - <xref uid="word!Word.Interfaces.ShapeGroupData#shapes:member" />
+
+  - <xref uid="word!Word.Interfaces.BodyData#shapes:member"
+  alttext="Word.Interfaces.BodyData.shapes" />
+
+  - <xref uid="word!Word.Interfaces.CanvasData#shape:member"
+  alttext="Word.Interfaces.CanvasData.shape" />
+
+  - <xref uid="word!Word.Interfaces.CanvasData#shapes:member"
+  alttext="Word.Interfaces.CanvasData.shapes" />
+
+  - <xref uid="word!Word.Interfaces.ParagraphData#shapes:member"
+  alttext="Word.Interfaces.ParagraphData.shapes" />
+
+  - <xref uid="word!Word.Interfaces.RangeData#shapes:member"
+  alttext="Word.Interfaces.RangeData.shapes" />
+
+  - <xref uid="word!Word.Interfaces.ShapeCollectionData#items:member"
+  alttext="Word.Interfaces.ShapeCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.ShapeCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.ShapeCollectionUpdateData.items" />
+
+  - <xref uid="word!Word.Interfaces.ShapeData#parentCanvas:member"
+  alttext="Word.Interfaces.ShapeData.parentCanvas" />
+
+  - <xref uid="word!Word.Interfaces.ShapeData#parentGroup:member"
+  alttext="Word.Interfaces.ShapeData.parentGroup" />
+
+  - <xref uid="word!Word.Interfaces.ShapeGroupData#shape:member"
+  alttext="Word.Interfaces.ShapeGroupData.shape" />
+
+  - <xref uid="word!Word.Interfaces.ShapeGroupData#shapes:member"
+  alttext="Word.Interfaces.ShapeGroupData.shapes" />
 
 isPreview: false
 isDeprecated: false

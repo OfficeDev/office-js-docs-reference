@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Field#type:member" />
+  - <xref uid="word!Word.Field#type:member" alttext="Word.Field.type" />
 
-  - <xref uid="word!Word.Interfaces.FieldData#type:member" />
+  - <xref uid="word!Word.Interfaces.FieldData#type:member"
+  alttext="Word.Interfaces.FieldData.type" />
 
   #### Examples
 

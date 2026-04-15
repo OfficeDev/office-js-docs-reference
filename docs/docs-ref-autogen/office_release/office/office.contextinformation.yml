@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Context#diagnostics:member" />
+  - <xref uid="office!Office.Context#diagnostics:member"
+  alttext="Office.Context.diagnostics" />
 
 isPreview: false
 isDeprecated: false

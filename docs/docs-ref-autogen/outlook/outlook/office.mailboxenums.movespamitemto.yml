@@ -39,7 +39,8 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.SpamReportingEventCompletedOptions#moveItemTo:member" />
+  uid="outlook!Office.SpamReportingEventCompletedOptions#moveItemTo:member"
+  alttext="Office.SpamReportingEventCompletedOptions.moveItemTo" />
 
   #### Examples
 

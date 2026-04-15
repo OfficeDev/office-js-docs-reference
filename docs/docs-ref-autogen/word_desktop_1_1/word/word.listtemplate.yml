@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Style#listTemplate:member" />
+  - <xref uid="word!Word.Style#listTemplate:member"
+  alttext="Word.Style.listTemplate" />
 
   #### Examples
 

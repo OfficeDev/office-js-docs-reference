@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListData#levelTypes:member" />
+  - <xref uid="word!Word.Interfaces.ListData#levelTypes:member"
+  alttext="Word.Interfaces.ListData.levelTypes" />
 
-  - <xref uid="word!Word.List#levelTypes:member" />
+  - <xref uid="word!Word.List#levelTypes:member" alttext="Word.List.levelTypes"
+  />
 
   #### Examples
 

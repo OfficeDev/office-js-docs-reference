@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#triggerSource:member" />
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#triggerSource:member"
+  alttext="Excel.WorksheetChangedEventArgs.triggerSource" />
 
 isPreview: false
 isDeprecated: false

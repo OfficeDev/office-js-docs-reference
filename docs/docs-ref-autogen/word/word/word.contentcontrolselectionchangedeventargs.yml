@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#onSelectionChanged:member" />
+  - <xref uid="word!Word.ContentControl#onSelectionChanged:member"
+  alttext="Word.ContentControl.onSelectionChanged" />
 
   #### Examples
 

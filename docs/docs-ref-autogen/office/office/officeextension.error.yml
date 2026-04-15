@@ -6,10 +6,12 @@ fullName: OfficeExtension.Error
 summary: >-
   The error object returned by `context.sync()`<!-- -->, if a promise is
   rejected due to an error while processing the request.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!OfficeExtension.Error#innerError:member" />
+
+  - <xref uid="office!OfficeExtension.Error#innerError:member"
+  alttext="OfficeExtension.Error.innerError" />
 
 isPreview: false
 isDeprecated: false

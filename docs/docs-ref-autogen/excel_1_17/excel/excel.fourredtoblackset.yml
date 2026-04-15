@@ -6,10 +6,12 @@ fullName: Excel.FourRedToBlackSet
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.IconCollections#fourRedToBlack:member" />
+
+  - <xref uid="excel!Excel.IconCollections#fourRedToBlack:member"
+  alttext="Excel.IconCollections.fourRedToBlack" />
 
 isPreview: false
 isDeprecated: false

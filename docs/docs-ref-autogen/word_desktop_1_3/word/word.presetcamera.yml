@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetCamera:member" />
+  uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetCamera:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetCamera" />
 
-  - <xref uid="word!Word.ThreeDimensionalFormat#presetCamera:member" />
+  - <xref uid="word!Word.ThreeDimensionalFormat#presetCamera:member"
+  alttext="Word.ThreeDimensionalFormat.presetCamera" />
 
 isPreview: false
 isDeprecated: false

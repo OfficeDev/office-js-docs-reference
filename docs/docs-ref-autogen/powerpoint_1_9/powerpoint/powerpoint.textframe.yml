@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Shape#textFrame:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#textFrame:member"
+  alttext="PowerPoint.Shape.textFrame" />
 
   #### Examples
 

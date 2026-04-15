@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.PageContent#outline:member" />
+  - <xref uid="onenote!OneNote.PageContent#outline:member"
+  alttext="OneNote.PageContent.outline" />
 
-  - <xref uid="onenote!OneNote.Paragraph#outline:member" />
+  - <xref uid="onenote!OneNote.Paragraph#outline:member"
+  alttext="OneNote.Paragraph.outline" />
 
 isPreview: false
 isDeprecated: false

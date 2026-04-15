@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.HyperlinkCollection#items:member" />
+  - <xref uid="visio!Visio.HyperlinkCollection#items:member"
+  alttext="Visio.HyperlinkCollection.items" />
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.InlinePictureCollection#items:member" />
+  - <xref uid="word!Word.InlinePictureCollection#items:member"
+  alttext="Word.InlinePictureCollection.items" />
 
   #### Examples
 

@@ -6,10 +6,12 @@ fullName: Excel.Interfaces.ChartBinOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartBinOptions.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#binOptions:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#binOptions:member"
+  alttext="Excel.Interfaces.ChartSeriesData.binOptions" />
 
 isPreview: false
 isDeprecated: false

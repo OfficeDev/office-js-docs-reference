@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#cellValue:member" />
+  - <xref uid="excel!Excel.ConditionalFormat#cellValue:member"
+  alttext="Excel.ConditionalFormat.cellValue" />
 
-  - <xref uid="excel!Excel.ConditionalFormat#cellValueOrNullObject:member" />
+  - <xref uid="excel!Excel.ConditionalFormat#cellValueOrNullObject:member"
+  alttext="Excel.ConditionalFormat.cellValueOrNullObject" />
 
 isPreview: false
 isDeprecated: false

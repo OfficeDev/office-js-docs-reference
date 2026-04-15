@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkAnalysisLine#paragraph:member" />
+  - <xref uid="onenote!OneNote.InkAnalysisLine#paragraph:member"
+  alttext="OneNote.InkAnalysisLine.paragraph" />
 
-  - <xref uid="onenote!OneNote.InkAnalysisParagraphCollection#items:member" />
+  - <xref uid="onenote!OneNote.InkAnalysisParagraphCollection#items:member"
+  alttext="OneNote.InkAnalysisParagraphCollection.items" />
 
 isPreview: false
 isDeprecated: false

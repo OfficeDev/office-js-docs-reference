@@ -14,11 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#groupContentControl:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.groupContentControl"
   />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#groupContentControl:member"
-  />
+  alttext="Word.Interfaces.ContentControlLoadOptions.groupContentControl" />
 
 isPreview: false
 isDeprecated: false

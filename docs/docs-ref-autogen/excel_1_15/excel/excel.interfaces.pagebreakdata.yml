@@ -10,16 +10,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageBreakCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.PageBreakCollectionData#items:member"
+  alttext="Excel.Interfaces.PageBreakCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.PageBreakCollectionUpdateData.items" />
 
   - <xref uid="excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member"
-  />
+  alttext="Excel.Interfaces.WorksheetData.horizontalPageBreaks" />
 
   - <xref uid="excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member"
-  />
+  alttext="Excel.Interfaces.WorksheetData.verticalPageBreaks" />
 
 isPreview: false
 isDeprecated: false

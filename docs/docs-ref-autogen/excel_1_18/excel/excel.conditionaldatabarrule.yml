@@ -12,24 +12,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataBarConditionalFormat#lowerBoundRule:member" />
+  - <xref uid="excel!Excel.DataBarConditionalFormat#lowerBoundRule:member"
+  alttext="Excel.DataBarConditionalFormat.lowerBoundRule" />
 
-  - <xref uid="excel!Excel.DataBarConditionalFormat#upperBoundRule:member" />
+  - <xref uid="excel!Excel.DataBarConditionalFormat#upperBoundRule:member"
+  alttext="Excel.DataBarConditionalFormat.upperBoundRule" />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#lowerBoundRule:member"
-  />
+  alttext="Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule" />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#upperBoundRule:member"
-  />
+  alttext="Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule" />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#lowerBoundRule:member"
+  alttext="Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule"
   />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#upperBoundRule:member"
+  alttext="Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule"
   />
 
 isPreview: false

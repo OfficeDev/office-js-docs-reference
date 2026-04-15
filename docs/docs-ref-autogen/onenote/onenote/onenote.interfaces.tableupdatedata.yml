@@ -6,10 +6,12 @@ fullName: OneNote.Interfaces.TableUpdateData
 summary: >-
   An interface for updating data on the `Table` object, for use in `table.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData#table:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData#table:member"
+  alttext="OneNote.Interfaces.ParagraphUpdateData.table" />
 
 isPreview: false
 isDeprecated: false

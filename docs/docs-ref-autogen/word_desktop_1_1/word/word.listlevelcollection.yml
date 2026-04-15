@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ListTemplate#listLevels:member" />
+  - <xref uid="word!Word.ListTemplate#listLevels:member"
+  alttext="Word.ListTemplate.listLevels" />
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartCollection#onAdded:member" />
+  - <xref uid="excel!Excel.ChartCollection#onAdded:member"
+  alttext="Excel.ChartCollection.onAdded" />
 
 isPreview: false
 isDeprecated: false

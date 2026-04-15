@@ -14,9 +14,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member"
-  />
+  alttext="Excel.Interfaces.WorksheetCollectionLoadOptions.protection" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#protection:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#protection:member"
+  alttext="Excel.Interfaces.WorksheetLoadOptions.protection" />
 
 isPreview: false
 isDeprecated: false

@@ -12,14 +12,14 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items" />
 
   - <xref uid="excel!Excel.Interfaces.ConditionalRangeFormatData#borders:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeFormatData.borders" />
 
 isPreview: false
 isDeprecated: false

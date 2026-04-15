@@ -6,11 +6,15 @@ fullName: Excel.Interfaces.RangeUpdateData
 summary: >-
   An interface for updating data on the `Range` object, for use in `range.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#activeCell:member" />
-  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#visibleRange:member" />
+
+  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#activeCell:member"
+  alttext="Excel.Interfaces.WindowUpdateData.activeCell" />
+
+  - <xref uid="excel!Excel.Interfaces.WindowUpdateData#visibleRange:member"
+  alttext="Excel.Interfaces.WindowUpdateData.visibleRange" />
 
 isPreview: false
 isDeprecated: false

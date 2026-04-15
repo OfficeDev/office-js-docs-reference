@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.LinkedEntityDataDomainCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

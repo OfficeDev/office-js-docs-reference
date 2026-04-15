@@ -6,15 +6,27 @@ fullName: Excel.Interfaces.ChartLineFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartLineFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#line:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsFormatData#line:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartGridlinesFormatData#line:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartLeaderLinesFormatData#line:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatData#line:member" />
-  - <xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData#line:member" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#line:member"
+  alttext="Excel.Interfaces.ChartAxisFormatData.line" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartErrorBarsFormatData#line:member"
+  alttext="Excel.Interfaces.ChartErrorBarsFormatData.line" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartGridlinesFormatData#line:member"
+  alttext="Excel.Interfaces.ChartGridlinesFormatData.line" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartLeaderLinesFormatData#line:member"
+  alttext="Excel.Interfaces.ChartLeaderLinesFormatData.line" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatData#line:member"
+  alttext="Excel.Interfaces.ChartSeriesFormatData.line" />
+
+  - <xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData#line:member"
+  alttext="Excel.Interfaces.ChartTrendlineFormatData.line" />
 
 isPreview: false
 isDeprecated: false

@@ -11,12 +11,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TimelineStyleCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.TimelineStyleCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.TimelineStyleCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#timelineStyles:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#timelineStyles:member"
+  alttext="Excel.Interfaces.WorkbookData.timelineStyles" />
 
 isPreview: false
 isDeprecated: false

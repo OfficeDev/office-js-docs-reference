@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.QueryData#loadedTo:member" />
+  - <xref uid="excel!Excel.Interfaces.QueryData#loadedTo:member"
+  alttext="Excel.Interfaces.QueryData.loadedTo" />
 
-  - <xref uid="excel!Excel.Query#loadedTo:member" />
+  - <xref uid="excel!Excel.Query#loadedTo:member" alttext="Excel.Query.loadedTo"
+  />
 
 isPreview: false
 isDeprecated: false

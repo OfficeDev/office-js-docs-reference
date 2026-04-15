@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#application:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookLoadOptions#application:member"
+  alttext="Excel.Interfaces.WorkbookLoadOptions.application" />
 
 isPreview: false
 isDeprecated: false

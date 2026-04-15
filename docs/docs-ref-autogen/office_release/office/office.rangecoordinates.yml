@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.RangeFormatConfiguration#cells:member" />
+  - <xref uid="office!Office.RangeFormatConfiguration#cells:member"
+  alttext="Office.RangeFormatConfiguration.cells" />
 
   #### Examples
 

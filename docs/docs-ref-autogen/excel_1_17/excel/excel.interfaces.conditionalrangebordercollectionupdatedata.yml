@@ -12,7 +12,7 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#borders:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeFormatUpdateData.borders" />
 
 isPreview: false
 isDeprecated: false

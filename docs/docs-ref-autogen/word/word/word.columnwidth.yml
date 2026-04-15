@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#columnWidth:member" />
+  - <xref uid="word!Word.Interfaces.ViewData#columnWidth:member"
+  alttext="Word.Interfaces.ViewData.columnWidth" />
 
-  - <xref uid="word!Word.Interfaces.ViewUpdateData#columnWidth:member" />
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#columnWidth:member"
+  alttext="Word.Interfaces.ViewUpdateData.columnWidth" />
 
-  - <xref uid="word!Word.View#columnWidth:member" />
+  - <xref uid="word!Word.View#columnWidth:member"
+  alttext="Word.View.columnWidth" />
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onDocumentLoadComplete:member" />
+  - <xref uid="visio!Visio.Document#onDocumentLoadComplete:member"
+  alttext="Visio.Document.onDocumentLoadComplete" />
 
   #### Examples
 

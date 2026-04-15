@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#hyperlink:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeData#hyperlink:member"
+  alttext="Excel.Interfaces.RangeData.hyperlink" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#hyperlink:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#hyperlink:member"
+  alttext="Excel.Interfaces.RangeUpdateData.hyperlink" />
 
-  - <xref uid="excel!Excel.Range#hyperlink:member" />
+  - <xref uid="excel!Excel.Range#hyperlink:member"
+  alttext="Excel.Range.hyperlink" />
 
 isPreview: false
 isDeprecated: false

@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#fill:member" />
+  uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#fill:member"
+  alttext="Excel.Interfaces.ConditionalRangeFormatUpdateData.fill" />
 
 isPreview: false
 isDeprecated: false

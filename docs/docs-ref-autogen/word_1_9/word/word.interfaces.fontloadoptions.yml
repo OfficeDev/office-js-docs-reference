@@ -12,34 +12,45 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member"
+  alttext="Word.Interfaces.BodyLoadOptions.font" />
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member" />
+  uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member"
+  alttext="Word.Interfaces.ContentControlCollectionLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#font:member"
+  alttext="Word.Interfaces.ContentControlLoadOptions.font" />
 
   - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member"
-  />
+  alttext="Word.Interfaces.ParagraphCollectionLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#font:member"
+  alttext="Word.Interfaces.ParagraphLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#font:member"
+  alttext="Word.Interfaces.RangeCollectionLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member"
+  alttext="Word.Interfaces.RangeLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#font:member"
+  alttext="Word.Interfaces.StyleCollectionLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#font:member"
+  alttext="Word.Interfaces.StyleLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.TableCollectionLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.TableCollectionLoadOptions#font:member"
+  alttext="Word.Interfaces.TableCollectionLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.TableLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.TableLoadOptions#font:member"
+  alttext="Word.Interfaces.TableLoadOptions.font" />
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#font:member"
-  />
+  alttext="Word.Interfaces.TableRowCollectionLoadOptions.font" />
 
-  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#font:member" />
+  - <xref uid="word!Word.Interfaces.TableRowLoadOptions#font:member"
+  alttext="Word.Interfaces.TableRowLoadOptions.font" />
 
 isPreview: false
 isDeprecated: false

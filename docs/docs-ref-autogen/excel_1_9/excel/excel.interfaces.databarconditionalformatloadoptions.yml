@@ -14,18 +14,20 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBar:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#dataBarOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject"
   />
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member" />
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBar:member"
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.dataBar" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#dataBarOrNullObject:member"
-  />
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject" />
 
 isPreview: false
 isDeprecated: false

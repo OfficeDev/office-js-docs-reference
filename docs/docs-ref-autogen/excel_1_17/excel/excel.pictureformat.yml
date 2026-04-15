@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Image#format:member" />
+  - <xref uid="excel!Excel.Image#format:member" alttext="Excel.Image.format" />
 
-  - <xref uid="excel!Excel.Interfaces.ImageData#format:member" />
+  - <xref uid="excel!Excel.Interfaces.ImageData#format:member"
+  alttext="Excel.Interfaces.ImageData.format" />
 
   #### Examples
 

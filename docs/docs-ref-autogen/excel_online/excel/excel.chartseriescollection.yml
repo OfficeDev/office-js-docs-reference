@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#series:member" />
+  - <xref uid="excel!Excel.Chart#series:member" alttext="Excel.Chart.series" />
 
 isPreview: false
 isDeprecated: false

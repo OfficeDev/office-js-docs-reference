@@ -23,10 +23,12 @@ summary: >-
 
 
   - [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="outlook!Office.Mailbox#item:member" />
+
+  - <xref uid="outlook!Office.Mailbox#item:member" alttext="Office.Mailbox.item"
+  />
 
 isPreview: false
 isDeprecated: false

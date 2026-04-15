@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Critique#colorScheme:member" />
+  - <xref uid="word!Word.Critique#colorScheme:member"
+  alttext="Word.Critique.colorScheme" />
 
   #### Examples
 

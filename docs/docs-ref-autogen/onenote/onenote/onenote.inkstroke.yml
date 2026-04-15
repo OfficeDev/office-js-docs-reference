@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkStrokeCollection#items:member" />
+  - <xref uid="onenote!OneNote.InkStrokeCollection#items:member"
+  alttext="OneNote.InkStrokeCollection.items" />
 
 isPreview: false
 isDeprecated: false

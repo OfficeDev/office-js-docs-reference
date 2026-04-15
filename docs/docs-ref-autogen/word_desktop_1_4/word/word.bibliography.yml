@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#bibliography:member" />
+  - <xref uid="word!Word.Application#bibliography:member"
+  alttext="Word.Application.bibliography" />
 
-  - <xref uid="word!Word.Document#bibliography:member" />
+  - <xref uid="word!Word.Document#bibliography:member"
+  alttext="Word.Document.bibliography" />
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.WindowData#state:member" />
+  - <xref uid="word!Word.Interfaces.WindowData#state:member"
+  alttext="Word.Interfaces.WindowData.state" />
 
-  - <xref uid="word!Word.Interfaces.WindowUpdateData#state:member" />
+  - <xref uid="word!Word.Interfaces.WindowUpdateData#state:member"
+  alttext="Word.Interfaces.WindowUpdateData.state" />
 
-  - <xref uid="word!Word.Window#state:member" />
+  - <xref uid="word!Word.Window#state:member" alttext="Word.Window.state" />
 
 isPreview: false
 isDeprecated: false

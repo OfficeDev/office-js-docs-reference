@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#range:member" />
+  - <xref uid="word!Word.DocumentExportAsFixedFormat2Options#range:member"
+  alttext="Word.DocumentExportAsFixedFormat2Options.range" />
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#range:member" />
+  - <xref uid="word!Word.DocumentExportAsFixedFormat3Options#range:member"
+  alttext="Word.DocumentExportAsFixedFormat3Options.range" />
 
-  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#range:member" />
+  - <xref uid="word!Word.DocumentExportAsFixedFormatOptions#range:member"
+  alttext="Word.DocumentExportAsFixedFormatOptions.range" />
 
 isPreview: false
 isDeprecated: false

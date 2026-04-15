@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.EmailAddressDetails#appointmentResponse:member" />
+  - <xref uid="outlook!Office.EmailAddressDetails#appointmentResponse:member"
+  alttext="Office.EmailAddressDetails.appointmentResponse" />
 
   #### Examples
 

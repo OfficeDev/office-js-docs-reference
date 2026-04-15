@@ -11,14 +11,15 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.AllowEditRangeCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.AllowEditRangeCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.AllowEditRangeCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.AllowEditRangeCollectionUpdateData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetProtectionData#allowEditRanges:member" />
+  uid="excel!Excel.Interfaces.WorksheetProtectionData#allowEditRanges:member"
+  alttext="Excel.Interfaces.WorksheetProtectionData.allowEditRanges" />
 
 isPreview: false
 isDeprecated: false

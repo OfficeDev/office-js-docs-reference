@@ -14,17 +14,21 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member"
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale"
   />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScaleOrNullObject"
   />
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member" />
+  uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member"
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.colorScale" />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScaleOrNullObject:member"
+  alttext="Excel.Interfaces.ConditionalFormatLoadOptions.colorScaleOrNullObject"
   />
 
 isPreview: false

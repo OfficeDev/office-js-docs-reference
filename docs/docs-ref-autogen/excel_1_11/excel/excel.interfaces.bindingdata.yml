@@ -10,12 +10,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.BindingCollectionData#items:member" />
+  - <xref uid="excel!Excel.Interfaces.BindingCollectionData#items:member"
+  alttext="Excel.Interfaces.BindingCollectionData.items" />
 
   - <xref uid="excel!Excel.Interfaces.BindingCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.BindingCollectionUpdateData.items" />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#bindings:member" />
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#bindings:member"
+  alttext="Excel.Interfaces.WorkbookData.bindings" />
 
 isPreview: false
 isDeprecated: false

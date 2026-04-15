@@ -6,10 +6,12 @@ fullName: Word.Interfaces.GlowFormatData
 summary: >-
   An interface describing the data returned by calling `glowFormat.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.FontData#glow:member" />
+
+  - <xref uid="word!Word.Interfaces.FontData#glow:member"
+  alttext="Word.Interfaces.FontData.glow" />
 
 isPreview: false
 isDeprecated: false

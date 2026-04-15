@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#changeType:member" />
+  - <xref uid="excel!Excel.TableChangedEventArgs#changeType:member"
+  alttext="Excel.TableChangedEventArgs.changeType" />
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#changeType:member" />
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#changeType:member"
+  alttext="Excel.WorksheetChangedEventArgs.changeType" />
 
 isPreview: false
 isDeprecated: false

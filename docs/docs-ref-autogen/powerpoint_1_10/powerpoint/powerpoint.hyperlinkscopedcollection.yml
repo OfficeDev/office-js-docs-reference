@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TextRange#hyperlinks:member" />
+  - <xref uid="powerpoint!PowerPoint.TextRange#hyperlinks:member"
+  alttext="PowerPoint.TextRange.hyperlinks" />
 
 isPreview: false
 isDeprecated: false

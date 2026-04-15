@@ -16,14 +16,16 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetLightingDirection:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetLightingDirection"
   />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetLightingDirection:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatUpdateData.presetLightingDirection"
   />
 
   - <xref uid="word!Word.ThreeDimensionalFormat#presetLightingDirection:member"
-  />
+  alttext="Word.ThreeDimensionalFormat.presetLightingDirection" />
 
 isPreview: false
 isDeprecated: false

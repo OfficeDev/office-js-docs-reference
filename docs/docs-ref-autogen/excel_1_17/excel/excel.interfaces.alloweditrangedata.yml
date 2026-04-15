@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.AllowEditRangeCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.AllowEditRangeCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.AllowEditRangeCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.AllowEditRangeCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

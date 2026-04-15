@@ -16,15 +16,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#shapes:member" />
+  - <xref uid="word!Word.Body#shapes:member" alttext="Word.Body.shapes" />
 
-  - <xref uid="word!Word.Canvas#shapes:member" />
+  - <xref uid="word!Word.Canvas#shapes:member" alttext="Word.Canvas.shapes" />
 
-  - <xref uid="word!Word.Paragraph#shapes:member" />
+  - <xref uid="word!Word.Paragraph#shapes:member"
+  alttext="Word.Paragraph.shapes" />
 
-  - <xref uid="word!Word.Range#shapes:member" />
+  - <xref uid="word!Word.Range#shapes:member" alttext="Word.Range.shapes" />
 
-  - <xref uid="word!Word.ShapeGroup#shapes:member" />
+  - <xref uid="word!Word.ShapeGroup#shapes:member"
+  alttext="Word.ShapeGroup.shapes" />
 
   #### Examples
 

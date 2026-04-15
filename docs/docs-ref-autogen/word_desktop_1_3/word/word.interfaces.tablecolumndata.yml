@@ -10,12 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeData#tableColumns:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#tableColumns:member"
+  alttext="Word.Interfaces.RangeData.tableColumns" />
 
-  - <xref uid="word!Word.Interfaces.TableColumnCollectionData#items:member" />
+  - <xref uid="word!Word.Interfaces.TableColumnCollectionData#items:member"
+  alttext="Word.Interfaces.TableColumnCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.TableColumnCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.TableColumnCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.TableColumnCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

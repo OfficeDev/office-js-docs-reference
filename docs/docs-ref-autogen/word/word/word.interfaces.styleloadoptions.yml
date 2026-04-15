@@ -13,9 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#linkStyle:member"
-  />
+  alttext="Word.Interfaces.StyleCollectionLoadOptions.linkStyle" />
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#linkStyle:member" />
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#linkStyle:member"
+  alttext="Word.Interfaces.StyleLoadOptions.linkStyle" />
 
 isPreview: false
 isDeprecated: false

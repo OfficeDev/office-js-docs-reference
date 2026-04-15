@@ -6,11 +6,15 @@ fullName: OneNote.Interfaces.FloatingInkData
 summary: >-
   An interface describing the data returned by calling
   `floatingInk.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member" />
-  - <xref uid="onenote!OneNote.Interfaces.PageContentData#ink:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member"
+  alttext="OneNote.Interfaces.InkStrokeData.floatingInk" />
+
+  - <xref uid="onenote!OneNote.Interfaces.PageContentData#ink:member"
+  alttext="OneNote.Interfaces.PageContentData.ink" />
 
 isPreview: false
 isDeprecated: false

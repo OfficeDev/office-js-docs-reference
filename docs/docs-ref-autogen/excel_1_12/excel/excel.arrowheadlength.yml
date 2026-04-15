@@ -13,19 +13,24 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadLength:member" />
+  - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadLength:member"
+  alttext="Excel.Interfaces.LineData.beginArrowheadLength" />
 
-  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadLength:member" />
+  - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadLength:member"
+  alttext="Excel.Interfaces.LineData.endArrowheadLength" />
 
   - <xref
-  uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member" />
+  uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member"
+  alttext="Excel.Interfaces.LineUpdateData.beginArrowheadLength" />
 
   - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadLength:member"
-  />
+  alttext="Excel.Interfaces.LineUpdateData.endArrowheadLength" />
 
-  - <xref uid="excel!Excel.Line#beginArrowheadLength:member" />
+  - <xref uid="excel!Excel.Line#beginArrowheadLength:member"
+  alttext="Excel.Line.beginArrowheadLength" />
 
-  - <xref uid="excel!Excel.Line#endArrowheadLength:member" />
+  - <xref uid="excel!Excel.Line#endArrowheadLength:member"
+  alttext="Excel.Line.endArrowheadLength" />
 
   #### Examples
 

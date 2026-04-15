@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#cells:member" />
+  uid="onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#cells:member"
+  alttext="OneNote.Interfaces.TableRowCollectionLoadOptions.cells" />
 
-  - <xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member" />
+  - <xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member"
+  alttext="OneNote.Interfaces.TableRowLoadOptions.cells" />
 
 isPreview: false
 isDeprecated: false

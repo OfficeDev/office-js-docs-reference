@@ -13,7 +13,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.AutorunEventCompletedOptions#autorunEventType:member"
-  />
+  alttext="Excel.AutorunEventCompletedOptions.autorunEventType" />
 
 isPreview: true
 isDeprecated: false

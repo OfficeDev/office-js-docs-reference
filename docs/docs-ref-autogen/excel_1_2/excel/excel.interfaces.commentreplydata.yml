@@ -11,10 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.CommentReplyCollectionData#items:member"
-  />
+  alttext="Excel.Interfaces.CommentReplyCollectionData.items" />
 
   - <xref
-  uid="excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member" />
+  uid="excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.CommentReplyCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

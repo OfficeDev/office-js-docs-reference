@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Hyperlink#type:member" />
+  - <xref uid="word!Word.Hyperlink#type:member" alttext="Word.Hyperlink.type" />
 
-  - <xref uid="word!Word.Interfaces.HyperlinkData#type:member" />
+  - <xref uid="word!Word.Interfaces.HyperlinkData#type:member"
+  alttext="Word.Interfaces.HyperlinkData.type" />
 
 isPreview: false
 isDeprecated: false

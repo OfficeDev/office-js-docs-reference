@@ -6,10 +6,12 @@ fullName: OneNote.Interfaces.PageUpdateData
 summary: >-
   An interface for updating data on the `Page` object, for use in `page.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member" />
+
+  - <xref uid="onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member"
+  alttext="OneNote.Interfaces.InkAnalysisUpdateData.page" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalCellValueRule#operator:member" />
+  - <xref uid="excel!Excel.ConditionalCellValueRule#operator:member"
+  alttext="Excel.ConditionalCellValueRule.operator" />
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#dataConnections:member" />
+  - <xref uid="excel!Excel.Workbook#dataConnections:member"
+  alttext="Excel.Workbook.dataConnections" />
 
 isPreview: false
 isDeprecated: false

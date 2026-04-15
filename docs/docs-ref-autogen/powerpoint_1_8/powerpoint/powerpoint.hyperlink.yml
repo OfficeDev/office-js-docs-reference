@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.HyperlinkCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.HyperlinkCollection#items:member"
+  alttext="PowerPoint.HyperlinkCollection.items" />
 
   #### Examples
 

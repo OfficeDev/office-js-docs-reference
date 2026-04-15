@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.WindowData#imeMode:member" />
+  - <xref uid="word!Word.Interfaces.WindowData#imeMode:member"
+  alttext="Word.Interfaces.WindowData.imeMode" />
 
-  - <xref uid="word!Word.Interfaces.WindowUpdateData#imeMode:member" />
+  - <xref uid="word!Word.Interfaces.WindowUpdateData#imeMode:member"
+  alttext="Word.Interfaces.WindowUpdateData.imeMode" />
 
-  - <xref uid="word!Word.Window#imeMode:member" />
+  - <xref uid="word!Word.Window#imeMode:member" alttext="Word.Window.imeMode" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeBorderCollection#items:member" />
+  - <xref uid="excel!Excel.RangeBorderCollection#items:member"
+  alttext="Excel.RangeBorderCollection.items" />
 
 isPreview: false
 isDeprecated: false

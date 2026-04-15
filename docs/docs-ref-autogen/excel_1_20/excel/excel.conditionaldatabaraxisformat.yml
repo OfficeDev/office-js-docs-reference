@@ -12,14 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataBarConditionalFormat#axisFormat:member" />
+  - <xref uid="excel!Excel.DataBarConditionalFormat#axisFormat:member"
+  alttext="Excel.DataBarConditionalFormat.axisFormat" />
 
   - <xref
-  uid="excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member" />
+  uid="excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member"
+  alttext="Excel.Interfaces.DataBarConditionalFormatData.axisFormat" />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat:member"
-  />
+  alttext="Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat" />
 
 isPreview: false
 isDeprecated: false

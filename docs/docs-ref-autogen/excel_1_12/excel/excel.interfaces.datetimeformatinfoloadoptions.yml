@@ -15,7 +15,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.CultureInfoLoadOptions#datetimeFormat:member" />
+  uid="excel!Excel.Interfaces.CultureInfoLoadOptions#datetimeFormat:member"
+  alttext="Excel.Interfaces.CultureInfoLoadOptions.datetimeFormat" />
 
 isPreview: false
 isDeprecated: false

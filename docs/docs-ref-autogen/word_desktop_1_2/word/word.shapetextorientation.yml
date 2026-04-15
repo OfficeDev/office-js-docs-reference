@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TextFrameData#orientation:member" />
+  - <xref uid="word!Word.Interfaces.TextFrameData#orientation:member"
+  alttext="Word.Interfaces.TextFrameData.orientation" />
 
-  - <xref uid="word!Word.Interfaces.TextFrameUpdateData#orientation:member" />
+  - <xref uid="word!Word.Interfaces.TextFrameUpdateData#orientation:member"
+  alttext="Word.Interfaces.TextFrameUpdateData.orientation" />
 
-  - <xref uid="word!Word.TextFrame#orientation:member" />
+  - <xref uid="word!Word.TextFrame#orientation:member"
+  alttext="Word.TextFrame.orientation" />
 
   #### Examples
 

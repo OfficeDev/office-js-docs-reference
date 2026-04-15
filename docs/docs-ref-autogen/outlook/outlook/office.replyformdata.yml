@@ -25,29 +25,37 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllForm:member(1)" />
+  - <xref uid="outlook!Office.AppointmentRead#displayReplyAllForm:member(1)"
+  alttext="Office.AppointmentRead.displayReplyAllForm" />
 
   - <xref
-  uid="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(1)" />
+  uid="outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(1)"
+  alttext="Office.AppointmentRead.displayReplyAllFormAsync" />
 
-  - <xref uid="outlook!Office.AppointmentRead#displayReplyForm:member(1)" />
+  - <xref uid="outlook!Office.AppointmentRead#displayReplyForm:member(1)"
+  alttext="Office.AppointmentRead.displayReplyForm" />
 
   - <xref uid="outlook!Office.AppointmentRead#displayReplyFormAsync:member(1)"
-  />
+  alttext="Office.AppointmentRead.displayReplyFormAsync" />
 
   - <xref
-  uid="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(1)" />
+  uid="outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(1)"
+  alttext="Office.LoadedMessageRead.displayReplyAllFormAsync" />
 
   - <xref uid="outlook!Office.LoadedMessageRead#displayReplyFormAsync:member(1)"
-  />
+  alttext="Office.LoadedMessageRead.displayReplyFormAsync" />
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllForm:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#displayReplyAllForm:member(1)"
+  alttext="Office.MessageRead.displayReplyAllForm" />
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyAllFormAsync:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#displayReplyAllFormAsync:member(1)"
+  alttext="Office.MessageRead.displayReplyAllFormAsync" />
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyForm:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#displayReplyForm:member(1)"
+  alttext="Office.MessageRead.displayReplyForm" />
 
-  - <xref uid="outlook!Office.MessageRead#displayReplyFormAsync:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#displayReplyFormAsync:member(1)"
+  alttext="Office.MessageRead.displayReplyFormAsync" />
 
   #### Examples
 

@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#numberSpacing:member" />
+  - <xref uid="word!Word.Font#numberSpacing:member"
+  alttext="Word.Font.numberSpacing" />
 
-  - <xref uid="word!Word.Interfaces.FontData#numberSpacing:member" />
+  - <xref uid="word!Word.Interfaces.FontData#numberSpacing:member"
+  alttext="Word.Interfaces.FontData.numberSpacing" />
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#numberSpacing:member" />
+  - <xref uid="word!Word.Interfaces.FontUpdateData#numberSpacing:member"
+  alttext="Word.Interfaces.FontUpdateData.numberSpacing" />
 
 isPreview: false
 isDeprecated: false

@@ -16,9 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCell#font:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCell#font:member"
+  alttext="PowerPoint.TableCell.font" />
 
-  - <xref uid="powerpoint!PowerPoint.TextRange#font:member" />
+  - <xref uid="powerpoint!PowerPoint.TextRange#font:member"
+  alttext="PowerPoint.TextRange.font" />
 
   #### Examples
 

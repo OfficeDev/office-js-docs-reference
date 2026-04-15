@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.DocumentLibraryVersionCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.DocumentLibraryVersionCollectionData.items" />
 
   - <xref
   uid="word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member"
-  />
+  alttext="Word.Interfaces.DocumentLibraryVersionCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

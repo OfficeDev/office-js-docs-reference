@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#type:member" />
+  - <xref uid="excel!Excel.ConditionalFormat#type:member"
+  alttext="Excel.ConditionalFormat.type" />
 
-  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#type:member" />
+  - <xref uid="excel!Excel.Interfaces.ConditionalFormatData#type:member"
+  alttext="Excel.Interfaces.ConditionalFormatData.type" />
 
   #### Examples
 

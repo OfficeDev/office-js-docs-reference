@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#plotArea:member" />
+  - <xref uid="excel!Excel.Chart#plotArea:member" alttext="Excel.Chart.plotArea"
+  />
 
 isPreview: false
 isDeprecated: false

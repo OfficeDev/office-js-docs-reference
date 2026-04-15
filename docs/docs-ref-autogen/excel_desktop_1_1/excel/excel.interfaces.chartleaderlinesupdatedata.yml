@@ -11,7 +11,8 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#leaderLines:member" />
+  uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#leaderLines:member"
+  alttext="Excel.Interfaces.ChartDataLabelsUpdateData.leaderLines" />
 
 isPreview: false
 isDeprecated: false

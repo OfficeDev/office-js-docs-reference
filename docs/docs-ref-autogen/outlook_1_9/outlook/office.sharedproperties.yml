@@ -34,15 +34,18 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member(1)" />
+  uid="outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member(1)"
+  alttext="Office.AppointmentCompose.getSharedPropertiesAsync" />
 
   - <xref
-  uid="outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)" />
+  uid="outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)"
+  alttext="Office.AppointmentRead.getSharedPropertiesAsync" />
 
   - <xref uid="outlook!Office.MessageCompose#getSharedPropertiesAsync:member(1)"
-  />
+  alttext="Office.MessageCompose.getSharedPropertiesAsync" />
 
-  - <xref uid="outlook!Office.MessageRead#getSharedPropertiesAsync:member(1)" />
+  - <xref uid="outlook!Office.MessageRead#getSharedPropertiesAsync:member(1)"
+  alttext="Office.MessageRead.getSharedPropertiesAsync" />
 
   #### Examples
 

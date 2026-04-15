@@ -11,10 +11,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CustomXmlSchemaCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.CustomXmlSchemaCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.CustomXmlSchemaCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#webSettings:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#webSettings:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.webSettings" />
 
 isPreview: false
 isDeprecated: false

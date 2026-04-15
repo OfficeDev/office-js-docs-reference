@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Presentation#slides:member" />
+  - <xref uid="powerpoint!PowerPoint.Presentation#slides:member"
+  alttext="PowerPoint.Presentation.slides" />
 
   #### Examples
 

@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#indexes:member" />
+  - <xref uid="word!Word.Document#indexes:member"
+  alttext="Word.Document.indexes" />
 
 isPreview: false
 isDeprecated: false

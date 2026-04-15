@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#maximum:member" />
+  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#maximum:member"
+  alttext="Excel.ConditionalColorScaleCriteria.maximum" />
 
-  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#midpoint:member" />
+  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#midpoint:member"
+  alttext="Excel.ConditionalColorScaleCriteria.midpoint" />
 
-  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#minimum:member" />
+  - <xref uid="excel!Excel.ConditionalColorScaleCriteria#minimum:member"
+  alttext="Excel.ConditionalColorScaleCriteria.minimum" />
 
   #### Examples
 

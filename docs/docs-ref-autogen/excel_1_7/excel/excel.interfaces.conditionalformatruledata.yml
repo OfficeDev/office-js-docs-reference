@@ -11,7 +11,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.CustomConditionalFormatData#rule:member"
-  />
+  alttext="Excel.Interfaces.CustomConditionalFormatData.rule" />
 
 isPreview: false
 isDeprecated: false

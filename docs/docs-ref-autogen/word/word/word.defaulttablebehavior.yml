@@ -13,7 +13,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.SelectionConvertToTableOptions#defaultTableBehavior:member" />
+  uid="word!Word.SelectionConvertToTableOptions#defaultTableBehavior:member"
+  alttext="Word.SelectionConvertToTableOptions.defaultTableBehavior" />
 
 isPreview: true
 isDeprecated: false

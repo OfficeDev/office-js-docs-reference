@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeViewCollection#items:member" />
+  - <xref uid="excel!Excel.RangeViewCollection#items:member"
+  alttext="Excel.RangeViewCollection.items" />
 
 isPreview: false
 isDeprecated: false

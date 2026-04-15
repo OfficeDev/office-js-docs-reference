@@ -12,13 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalRangeBorder#style:member" />
+  - <xref uid="excel!Excel.ConditionalRangeBorder#style:member"
+  alttext="Excel.ConditionalRangeBorder.style" />
 
   - <xref uid="excel!Excel.Interfaces.ConditionalRangeBorderData#style:member"
-  />
+  alttext="Excel.Interfaces.ConditionalRangeBorderData.style" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style:member" />
+  uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style:member"
+  alttext="Excel.Interfaces.ConditionalRangeBorderUpdateData.style" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableCollection#onDeleted:member" />
+  - <xref uid="excel!Excel.TableCollection#onDeleted:member"
+  alttext="Excel.TableCollection.onDeleted" />
 
 isPreview: false
 isDeprecated: false

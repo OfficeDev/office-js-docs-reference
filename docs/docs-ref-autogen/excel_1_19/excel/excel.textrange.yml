@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TextFrame#textRange:member" />
+  - <xref uid="excel!Excel.TextFrame#textRange:member"
+  alttext="Excel.TextFrame.textRange" />
 
 isPreview: false
 isDeprecated: false

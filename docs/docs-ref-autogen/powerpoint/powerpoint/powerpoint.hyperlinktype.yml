@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Hyperlink#type:member" />
+  - <xref uid="powerpoint!PowerPoint.Hyperlink#type:member"
+  alttext="PowerPoint.Hyperlink.type" />
 
-  - <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData#type:member" />
+  - <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData#type:member"
+  alttext="PowerPoint.Interfaces.HyperlinkData.type" />
 
 isPreview: false
 isDeprecated: false

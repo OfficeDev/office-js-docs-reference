@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.QueryData#error:member" />
+  - <xref uid="excel!Excel.Interfaces.QueryData#error:member"
+  alttext="Excel.Interfaces.QueryData.error" />
 
-  - <xref uid="excel!Excel.Query#error:member" />
+  - <xref uid="excel!Excel.Query#error:member" alttext="Excel.Query.error" />
 
 isPreview: false
 isDeprecated: false

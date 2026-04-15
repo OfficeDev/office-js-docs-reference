@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Section#pages:member" />
+  - <xref uid="onenote!OneNote.Section#pages:member"
+  alttext="OneNote.Section.pages" />
 
 isPreview: false
 isDeprecated: false

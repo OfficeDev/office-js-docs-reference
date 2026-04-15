@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PlaceholderErrorCellValue#target:member" />
+  - <xref uid="excel!Excel.PlaceholderErrorCellValue#target:member"
+  alttext="Excel.PlaceholderErrorCellValue.target" />
 
 isPreview: false
 isDeprecated: false

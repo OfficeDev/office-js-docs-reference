@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.RequestContext#document:member" />
+  - <xref uid="word!Word.RequestContext#document:member"
+  alttext="Word.RequestContext.document" />
 
   #### Examples
 

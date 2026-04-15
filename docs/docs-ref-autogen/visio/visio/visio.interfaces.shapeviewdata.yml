@@ -6,10 +6,12 @@ fullName: Visio.Interfaces.ShapeViewData
 summary: >-
   An interface describing the data returned by calling `shapeView.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#view:member" />
+
+  - <xref uid="visio!Visio.Interfaces.ShapeData#view:member"
+  alttext="Visio.Interfaces.ShapeData.view" />
 
 isPreview: false
 isDeprecated: false

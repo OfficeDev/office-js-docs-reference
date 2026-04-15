@@ -7,10 +7,12 @@ summary: >-
   Specifies whether to select (highlight) the location to navigate to (when
   using the [Document](xref:office!Office.Document:interface)<!--
   -->.goToByIdAsync method).
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.GoToByIdOptions#selectionMode:member" />
+
+  - <xref uid="office!Office.GoToByIdOptions#selectionMode:member"
+  alttext="Office.GoToByIdOptions.selectionMode" />
 
 isPreview: false
 isDeprecated: false

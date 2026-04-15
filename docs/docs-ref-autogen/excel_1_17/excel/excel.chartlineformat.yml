@@ -12,15 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxisFormat#line:member" />
+  - <xref uid="excel!Excel.ChartAxisFormat#line:member"
+  alttext="Excel.ChartAxisFormat.line" />
 
-  - <xref uid="excel!Excel.ChartErrorBarsFormat#line:member" />
+  - <xref uid="excel!Excel.ChartErrorBarsFormat#line:member"
+  alttext="Excel.ChartErrorBarsFormat.line" />
 
-  - <xref uid="excel!Excel.ChartGridlinesFormat#line:member" />
+  - <xref uid="excel!Excel.ChartGridlinesFormat#line:member"
+  alttext="Excel.ChartGridlinesFormat.line" />
 
-  - <xref uid="excel!Excel.ChartSeriesFormat#line:member" />
+  - <xref uid="excel!Excel.ChartSeriesFormat#line:member"
+  alttext="Excel.ChartSeriesFormat.line" />
 
-  - <xref uid="excel!Excel.ChartTrendlineFormat#line:member" />
+  - <xref uid="excel!Excel.ChartTrendlineFormat#line:member"
+  alttext="Excel.ChartTrendlineFormat.line" />
 
 isPreview: false
 isDeprecated: false

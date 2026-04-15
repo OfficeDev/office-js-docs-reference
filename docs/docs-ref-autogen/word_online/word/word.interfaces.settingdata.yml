@@ -6,12 +6,18 @@ fullName: Word.Interfaces.SettingData
 summary: >-
   An interface describing the data returned by calling `setting.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.DocumentData#settings:member" />
-  - <xref uid="word!Word.Interfaces.SettingCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.SettingCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.DocumentData#settings:member"
+  alttext="Word.Interfaces.DocumentData.settings" />
+
+  - <xref uid="word!Word.Interfaces.SettingCollectionData#items:member"
+  alttext="Word.Interfaces.SettingCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.SettingCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.SettingCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

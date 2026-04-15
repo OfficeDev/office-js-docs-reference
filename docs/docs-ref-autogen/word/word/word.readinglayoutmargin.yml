@@ -13,13 +13,15 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.ViewData#readingLayoutTruncateMargins:member" />
+  uid="word!Word.Interfaces.ViewData#readingLayoutTruncateMargins:member"
+  alttext="Word.Interfaces.ViewData.readingLayoutTruncateMargins" />
 
   - <xref
   uid="word!Word.Interfaces.ViewUpdateData#readingLayoutTruncateMargins:member"
-  />
+  alttext="Word.Interfaces.ViewUpdateData.readingLayoutTruncateMargins" />
 
-  - <xref uid="word!Word.View#readingLayoutTruncateMargins:member" />
+  - <xref uid="word!Word.View#readingLayoutTruncateMargins:member"
+  alttext="Word.View.readingLayoutTruncateMargins" />
 
 isPreview: false
 isDeprecated: false

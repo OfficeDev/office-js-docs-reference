@@ -31,9 +31,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#enhancedLocation:member" />
+  - <xref uid="outlook!Office.AppointmentCompose#enhancedLocation:member"
+  alttext="Office.AppointmentCompose.enhancedLocation" />
 
-  - <xref uid="outlook!Office.AppointmentRead#enhancedLocation:member" />
+  - <xref uid="outlook!Office.AppointmentRead#enhancedLocation:member"
+  alttext="Office.AppointmentRead.enhancedLocation" />
 
 isPreview: false
 isDeprecated: false

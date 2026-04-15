@@ -14,12 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#sectionDirection:member" />
+  - <xref uid="word!Word.Interfaces.PageSetupData#sectionDirection:member"
+  alttext="Word.Interfaces.PageSetupData.sectionDirection" />
 
   - <xref uid="word!Word.Interfaces.PageSetupUpdateData#sectionDirection:member"
-  />
+  alttext="Word.Interfaces.PageSetupUpdateData.sectionDirection" />
 
-  - <xref uid="word!Word.PageSetup#sectionDirection:member" />
+  - <xref uid="word!Word.PageSetup#sectionDirection:member"
+  alttext="Word.PageSetup.sectionDirection" />
 
 isPreview: false
 isDeprecated: false

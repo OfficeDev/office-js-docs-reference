@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#textureType:member" />
+  - <xref uid="word!Word.FillFormat#textureType:member"
+  alttext="Word.FillFormat.textureType" />
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#textureType:member" />
+  - <xref uid="word!Word.Interfaces.FillFormatData#textureType:member"
+  alttext="Word.Interfaces.FillFormatData.textureType" />
 
 isPreview: false
 isDeprecated: false

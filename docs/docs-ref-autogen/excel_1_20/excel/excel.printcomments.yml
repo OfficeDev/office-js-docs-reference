@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printComments:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#printComments:member"
+  alttext="Excel.Interfaces.PageLayoutData.printComments" />
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printComments:member"
-  />
+  alttext="Excel.Interfaces.PageLayoutUpdateData.printComments" />
 
-  - <xref uid="excel!Excel.PageLayout#printComments:member" />
+  - <xref uid="excel!Excel.PageLayout#printComments:member"
+  alttext="Excel.PageLayout.printComments" />
 
 isPreview: false
 isDeprecated: false

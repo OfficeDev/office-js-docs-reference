@@ -15,9 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Field#kind:member" />
+  - <xref uid="word!Word.Field#kind:member" alttext="Word.Field.kind" />
 
-  - <xref uid="word!Word.Interfaces.FieldData#kind:member" />
+  - <xref uid="word!Word.Interfaces.FieldData#kind:member"
+  alttext="Word.Interfaces.FieldData.kind" />
 
   #### Examples
 

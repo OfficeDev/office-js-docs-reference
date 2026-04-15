@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TrackedChangeData#type:member" />
+  - <xref uid="word!Word.Interfaces.TrackedChangeData#type:member"
+  alttext="Word.Interfaces.TrackedChangeData.type" />
 
-  - <xref uid="word!Word.TrackedChange#type:member" />
+  - <xref uid="word!Word.TrackedChange#type:member"
+  alttext="Word.TrackedChange.type" />
 
   #### Examples
 

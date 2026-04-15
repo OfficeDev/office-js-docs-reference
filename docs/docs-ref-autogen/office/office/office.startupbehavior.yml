@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Addin#getStartupBehavior:member(1)" />
+  - <xref uid="office!Office.Addin#getStartupBehavior:member(1)"
+  alttext="Office.Addin.getStartupBehavior" />
 
-  - <xref uid="office!Office.Addin#setStartupBehavior:member(1)" />
+  - <xref uid="office!Office.Addin#setStartupBehavior:member(1)"
+  alttext="Office.Addin.setStartupBehavior" />
 
   #### Examples
 

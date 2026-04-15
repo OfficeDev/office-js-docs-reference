@@ -11,20 +11,26 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BorderUniversalCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.BorderUniversalCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.BorderUniversalCollectionUpdateData.items" />
 
-  - <xref uid="word!Word.Interfaces.FontData#borders:member" />
+  - <xref uid="word!Word.Interfaces.FontData#borders:member"
+  alttext="Word.Interfaces.FontData.borders" />
 
-  - <xref uid="word!Word.Interfaces.FrameData#borders:member" />
+  - <xref uid="word!Word.Interfaces.FrameData#borders:member"
+  alttext="Word.Interfaces.FrameData.borders" />
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#borders:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphData#borders:member"
+  alttext="Word.Interfaces.ParagraphData.borders" />
 
-  - <xref uid="word!Word.Interfaces.SectionData#borders:member" />
+  - <xref uid="word!Word.Interfaces.SectionData#borders:member"
+  alttext="Word.Interfaces.SectionData.borders" />
 
-  - <xref uid="word!Word.Interfaces.TableColumnData#borders:member" />
+  - <xref uid="word!Word.Interfaces.TableColumnData#borders:member"
+  alttext="Word.Interfaces.TableColumnData.borders" />
 
 isPreview: false
 isDeprecated: false

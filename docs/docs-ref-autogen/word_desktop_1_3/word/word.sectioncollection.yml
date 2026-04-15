@@ -15,9 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#sections:member" />
+  - <xref uid="word!Word.Document#sections:member"
+  alttext="Word.Document.sections" />
 
-  - <xref uid="word!Word.Range#sections:member" />
+  - <xref uid="word!Word.Range#sections:member" alttext="Word.Range.sections" />
 
   #### Examples
 

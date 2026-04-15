@@ -6,10 +6,12 @@ fullName: Excel.ThreeStarsSet
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.IconCollections#threeStars:member" />
+
+  - <xref uid="excel!Excel.IconCollections#threeStars:member"
+  alttext="Excel.IconCollections.threeStars" />
 
 isPreview: false
 isDeprecated: false

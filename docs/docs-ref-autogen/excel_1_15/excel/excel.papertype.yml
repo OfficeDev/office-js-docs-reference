@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#paperSize:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#paperSize:member"
+  alttext="Excel.Interfaces.PageLayoutData.paperSize" />
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member"
+  alttext="Excel.Interfaces.PageLayoutUpdateData.paperSize" />
 
-  - <xref uid="excel!Excel.PageLayout#paperSize:member" />
+  - <xref uid="excel!Excel.PageLayout#paperSize:member"
+  alttext="Excel.PageLayout.paperSize" />
 
 isPreview: false
 isDeprecated: false

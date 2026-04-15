@@ -15,14 +15,16 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#placeholderFormat:member"
+  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.placeholderFormat"
   />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#placeholderFormat:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeLoadOptions.placeholderFormat" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#placeholderFormat:member"
+  alttext="PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.placeholderFormat"
   />
 
 isPreview: false

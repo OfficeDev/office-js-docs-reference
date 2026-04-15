@@ -15,12 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ListLevelData#trailingCharacter:member" />
+  - <xref uid="word!Word.Interfaces.ListLevelData#trailingCharacter:member"
+  alttext="Word.Interfaces.ListLevelData.trailingCharacter" />
 
   - <xref
-  uid="word!Word.Interfaces.ListLevelUpdateData#trailingCharacter:member" />
+  uid="word!Word.Interfaces.ListLevelUpdateData#trailingCharacter:member"
+  alttext="Word.Interfaces.ListLevelUpdateData.trailingCharacter" />
 
-  - <xref uid="word!Word.ListLevel#trailingCharacter:member" />
+  - <xref uid="word!Word.ListLevel#trailingCharacter:member"
+  alttext="Word.ListLevel.trailingCharacter" />
 
   #### Examples
 

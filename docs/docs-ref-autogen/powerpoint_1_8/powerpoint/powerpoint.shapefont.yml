@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TextRange#font:member" />
+  - <xref uid="powerpoint!PowerPoint.TextRange#font:member"
+  alttext="PowerPoint.TextRange.font" />
 
   #### Examples
 

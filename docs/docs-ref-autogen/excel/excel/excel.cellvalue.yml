@@ -13,87 +13,118 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ArrayCellValue#elements:member" />
+  - <xref uid="excel!Excel.ArrayCellValue#elements:member"
+  alttext="Excel.ArrayCellValue.elements" />
 
-  - <xref uid="excel!Excel.ChangedEventDetail#valueAsJsonAfter:member" />
+  - <xref uid="excel!Excel.ChangedEventDetail#valueAsJsonAfter:member"
+  alttext="Excel.ChangedEventDetail.valueAsJsonAfter" />
 
-  - <xref uid="excel!Excel.ChangedEventDetail#valueAsJsonBefore:member" />
+  - <xref uid="excel!Excel.ChangedEventDetail#valueAsJsonBefore:member"
+  alttext="Excel.ChangedEventDetail.valueAsJsonBefore" />
 
-  - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#preview:member" />
+  - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#preview:member"
+  alttext="Excel.ExternalCodeServiceObjectCellValue.preview" />
 
   - <xref
-  uid="excel!Excel.Interfaces.NamedItemArrayValuesData#valuesAsJson:member" />
+  uid="excel!Excel.Interfaces.NamedItemArrayValuesData#valuesAsJson:member"
+  alttext="Excel.Interfaces.NamedItemArrayValuesData.valuesAsJson" />
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemArrayValuesData#valuesAsJsonLocal:member"
-  />
+  alttext="Excel.Interfaces.NamedItemArrayValuesData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#valueAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.NamedItemData#valueAsJson:member"
+  alttext="Excel.Interfaces.NamedItemData.valueAsJson" />
 
-  - <xref uid="excel!Excel.Interfaces.NamedItemData#valueAsJsonLocal:member" />
+  - <xref uid="excel!Excel.Interfaces.NamedItemData#valueAsJsonLocal:member"
+  alttext="Excel.Interfaces.NamedItemData.valueAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeData#valuesAsJson:member"
+  alttext="Excel.Interfaces.RangeData.valuesAsJson" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeData#valuesAsJsonLocal:member"
+  alttext="Excel.Interfaces.RangeData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeUpdateData#valuesAsJson:member"
+  alttext="Excel.Interfaces.RangeUpdateData.valuesAsJson" />
 
   - <xref uid="excel!Excel.Interfaces.RangeUpdateData#valuesAsJsonLocal:member"
-  />
+  alttext="Excel.Interfaces.RangeUpdateData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeViewData#valuesAsJson:member"
+  alttext="Excel.Interfaces.RangeViewData.valuesAsJson" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeViewData#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeViewData#valuesAsJsonLocal:member"
+  alttext="Excel.Interfaces.RangeViewData.valuesAsJsonLocal" />
 
   - <xref uid="excel!Excel.Interfaces.RangeViewUpdateData#valuesAsJson:member"
-  />
+  alttext="Excel.Interfaces.RangeViewUpdateData.valuesAsJson" />
 
   - <xref
-  uid="excel!Excel.Interfaces.RangeViewUpdateData#valuesAsJsonLocal:member" />
+  uid="excel!Excel.Interfaces.RangeViewUpdateData#valuesAsJsonLocal:member"
+  alttext="Excel.Interfaces.RangeViewUpdateData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.TableColumnData#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.TableColumnData#valuesAsJson:member"
+  alttext="Excel.Interfaces.TableColumnData.valuesAsJson" />
 
   - <xref uid="excel!Excel.Interfaces.TableColumnData#valuesAsJsonLocal:member"
-  />
+  alttext="Excel.Interfaces.TableColumnData.valuesAsJsonLocal" />
 
   - <xref uid="excel!Excel.Interfaces.TableColumnUpdateData#valuesAsJson:member"
-  />
+  alttext="Excel.Interfaces.TableColumnUpdateData.valuesAsJson" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TableColumnUpdateData#valuesAsJsonLocal:member" />
+  uid="excel!Excel.Interfaces.TableColumnUpdateData#valuesAsJsonLocal:member"
+  alttext="Excel.Interfaces.TableColumnUpdateData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.TableRowData#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.TableRowData#valuesAsJson:member"
+  alttext="Excel.Interfaces.TableRowData.valuesAsJson" />
 
-  - <xref uid="excel!Excel.Interfaces.TableRowData#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.Interfaces.TableRowData#valuesAsJsonLocal:member"
+  alttext="Excel.Interfaces.TableRowData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Interfaces.TableRowUpdateData#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Interfaces.TableRowUpdateData#valuesAsJson:member"
+  alttext="Excel.Interfaces.TableRowUpdateData.valuesAsJson" />
 
   - <xref
-  uid="excel!Excel.Interfaces.TableRowUpdateData#valuesAsJsonLocal:member" />
+  uid="excel!Excel.Interfaces.TableRowUpdateData#valuesAsJsonLocal:member"
+  alttext="Excel.Interfaces.TableRowUpdateData.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.NamedItem#valueAsJson:member" />
+  - <xref uid="excel!Excel.NamedItem#valueAsJson:member"
+  alttext="Excel.NamedItem.valueAsJson" />
 
-  - <xref uid="excel!Excel.NamedItem#valueAsJsonLocal:member" />
+  - <xref uid="excel!Excel.NamedItem#valueAsJsonLocal:member"
+  alttext="Excel.NamedItem.valueAsJsonLocal" />
 
-  - <xref uid="excel!Excel.NamedItemArrayValues#valuesAsJson:member" />
+  - <xref uid="excel!Excel.NamedItemArrayValues#valuesAsJson:member"
+  alttext="Excel.NamedItemArrayValues.valuesAsJson" />
 
-  - <xref uid="excel!Excel.NamedItemArrayValues#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.NamedItemArrayValues#valuesAsJsonLocal:member"
+  alttext="Excel.NamedItemArrayValues.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.Range#valuesAsJson:member" />
+  - <xref uid="excel!Excel.Range#valuesAsJson:member"
+  alttext="Excel.Range.valuesAsJson" />
 
-  - <xref uid="excel!Excel.Range#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.Range#valuesAsJsonLocal:member"
+  alttext="Excel.Range.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.RangeView#valuesAsJson:member" />
+  - <xref uid="excel!Excel.RangeView#valuesAsJson:member"
+  alttext="Excel.RangeView.valuesAsJson" />
 
-  - <xref uid="excel!Excel.RangeView#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.RangeView#valuesAsJsonLocal:member"
+  alttext="Excel.RangeView.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.TableColumn#valuesAsJson:member" />
+  - <xref uid="excel!Excel.TableColumn#valuesAsJson:member"
+  alttext="Excel.TableColumn.valuesAsJson" />
 
-  - <xref uid="excel!Excel.TableColumn#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.TableColumn#valuesAsJsonLocal:member"
+  alttext="Excel.TableColumn.valuesAsJsonLocal" />
 
-  - <xref uid="excel!Excel.TableRow#valuesAsJson:member" />
+  - <xref uid="excel!Excel.TableRow#valuesAsJson:member"
+  alttext="Excel.TableRow.valuesAsJson" />
 
-  - <xref uid="excel!Excel.TableRow#valuesAsJsonLocal:member" />
+  - <xref uid="excel!Excel.TableRow#valuesAsJsonLocal:member"
+  alttext="Excel.TableRow.valuesAsJsonLocal" />
 
 
 

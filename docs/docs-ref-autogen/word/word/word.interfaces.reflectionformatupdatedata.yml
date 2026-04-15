@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ReflectionFormatUpdateData
 summary: >-
   An interface for updating data on the `ReflectionFormat` object, for use in
   `reflectionFormat.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#reflection:member" />
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#reflection:member"
+  alttext="Word.Interfaces.FontUpdateData.reflection" />
 
 isPreview: false
 isDeprecated: false

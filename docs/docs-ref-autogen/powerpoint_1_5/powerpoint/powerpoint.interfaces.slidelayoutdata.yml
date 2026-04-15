@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideLayoutCollectionData.items" />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.SlideLayoutCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

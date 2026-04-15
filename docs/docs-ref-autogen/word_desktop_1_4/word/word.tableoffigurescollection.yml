@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#tablesOfFigures:member" />
+  - <xref uid="word!Word.Document#tablesOfFigures:member"
+  alttext="Word.Document.tablesOfFigures" />
 
 isPreview: false
 isDeprecated: false

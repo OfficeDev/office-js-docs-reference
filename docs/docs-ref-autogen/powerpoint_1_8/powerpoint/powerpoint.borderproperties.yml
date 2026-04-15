@@ -14,17 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.TableCellBorders#bottom:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#bottom:member"
+  alttext="PowerPoint.TableCellBorders.bottom" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCellBorders#diagonalDown:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#diagonalDown:member"
+  alttext="PowerPoint.TableCellBorders.diagonalDown" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCellBorders#diagonalUp:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#diagonalUp:member"
+  alttext="PowerPoint.TableCellBorders.diagonalUp" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCellBorders#left:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#left:member"
+  alttext="PowerPoint.TableCellBorders.left" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCellBorders#right:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#right:member"
+  alttext="PowerPoint.TableCellBorders.right" />
 
-  - <xref uid="powerpoint!PowerPoint.TableCellBorders#top:member" />
+  - <xref uid="powerpoint!PowerPoint.TableCellBorders#top:member"
+  alttext="PowerPoint.TableCellBorders.top" />
 
   #### Examples
 

@@ -16,7 +16,8 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.RepeatingSectionContentControl#repeatingSectionItems:member" />
+  uid="word!Word.RepeatingSectionContentControl#repeatingSectionItems:member"
+  alttext="Word.RepeatingSectionContentControl.repeatingSectionItems" />
 
 isPreview: false
 isDeprecated: false

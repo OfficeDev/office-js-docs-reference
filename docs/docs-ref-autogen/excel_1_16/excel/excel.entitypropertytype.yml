@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.EntityCellValue#properties:member" />
+  - <xref uid="excel!Excel.EntityCellValue#properties:member"
+  alttext="Excel.EntityCellValue.properties" />
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#properties:member" />
+  - <xref uid="excel!Excel.LinkedEntityCellValue#properties:member"
+  alttext="Excel.LinkedEntityCellValue.properties" />
 
 
 

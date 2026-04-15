@@ -18,9 +18,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RequestContext#workbook:member" />
+  - <xref uid="excel!Excel.RequestContext#workbook:member"
+  alttext="Excel.RequestContext.workbook" />
 
-  - <xref uid="excel!Excel.SelectionChangedEventArgs#workbook:member" />
+  - <xref uid="excel!Excel.SelectionChangedEventArgs#workbook:member"
+  alttext="Excel.SelectionChangedEventArgs.workbook" />
 
   #### Examples
 

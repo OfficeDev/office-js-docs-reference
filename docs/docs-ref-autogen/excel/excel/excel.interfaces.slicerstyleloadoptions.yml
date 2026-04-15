@@ -15,9 +15,11 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member" />
+  uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member"
+  alttext="Excel.Interfaces.SlicerCollectionLoadOptions.slicerStyle" />
 
-  - <xref uid="excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member" />
+  - <xref uid="excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member"
+  alttext="Excel.Interfaces.SlicerLoadOptions.slicerStyle" />
 
 isPreview: false
 isDeprecated: false

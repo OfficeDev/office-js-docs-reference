@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxes#categoryAxis:member" />
+  - <xref uid="excel!Excel.ChartAxes#categoryAxis:member"
+  alttext="Excel.ChartAxes.categoryAxis" />
 
-  - <xref uid="excel!Excel.ChartAxes#seriesAxis:member" />
+  - <xref uid="excel!Excel.ChartAxes#seriesAxis:member"
+  alttext="Excel.ChartAxes.seriesAxis" />
 
-  - <xref uid="excel!Excel.ChartAxes#valueAxis:member" />
+  - <xref uid="excel!Excel.ChartAxes#valueAxis:member"
+  alttext="Excel.ChartAxes.valueAxis" />
 
 isPreview: false
 isDeprecated: false

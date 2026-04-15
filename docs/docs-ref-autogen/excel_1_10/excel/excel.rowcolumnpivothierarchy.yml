@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RowColumnPivotHierarchyCollection#items:member" />
+  - <xref uid="excel!Excel.RowColumnPivotHierarchyCollection#items:member"
+  alttext="Excel.RowColumnPivotHierarchyCollection.items" />
 
 isPreview: false
 isDeprecated: false

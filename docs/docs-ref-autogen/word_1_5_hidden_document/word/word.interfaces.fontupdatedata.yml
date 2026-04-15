@@ -6,16 +6,30 @@ fullName: Word.Interfaces.FontUpdateData
 summary: >-
   An interface for updating data on the `Font` object, for use in `font.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.BodyUpdateData#font:member" />
-  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#font:member" />
-  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#font:member" />
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#font:member" />
-  - <xref uid="word!Word.Interfaces.StyleUpdateData#font:member" />
-  - <xref uid="word!Word.Interfaces.TableRowUpdateData#font:member" />
-  - <xref uid="word!Word.Interfaces.TableUpdateData#font:member" />
+
+  - <xref uid="word!Word.Interfaces.BodyUpdateData#font:member"
+  alttext="Word.Interfaces.BodyUpdateData.font" />
+
+  - <xref uid="word!Word.Interfaces.ContentControlUpdateData#font:member"
+  alttext="Word.Interfaces.ContentControlUpdateData.font" />
+
+  - <xref uid="word!Word.Interfaces.ParagraphUpdateData#font:member"
+  alttext="Word.Interfaces.ParagraphUpdateData.font" />
+
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#font:member"
+  alttext="Word.Interfaces.RangeUpdateData.font" />
+
+  - <xref uid="word!Word.Interfaces.StyleUpdateData#font:member"
+  alttext="Word.Interfaces.StyleUpdateData.font" />
+
+  - <xref uid="word!Word.Interfaces.TableRowUpdateData#font:member"
+  alttext="Word.Interfaces.TableRowUpdateData.font" />
+
+  - <xref uid="word!Word.Interfaces.TableUpdateData#font:member"
+  alttext="Word.Interfaces.TableUpdateData.font" />
 
 isPreview: false
 isDeprecated: false

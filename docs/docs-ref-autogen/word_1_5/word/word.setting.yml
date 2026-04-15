@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SettingCollection#items:member" />
+  - <xref uid="word!Word.SettingCollection#items:member"
+  alttext="Word.SettingCollection.items" />
 
   #### Examples
 

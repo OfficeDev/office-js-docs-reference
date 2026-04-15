@@ -13,16 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Icon#set:member" />
+  - <xref uid="excel!Excel.Icon#set:member" alttext="Excel.Icon.set" />
 
-  - <xref uid="excel!Excel.IconSetConditionalFormat#style:member" />
+  - <xref uid="excel!Excel.IconSetConditionalFormat#style:member"
+  alttext="Excel.IconSetConditionalFormat.style" />
 
   - <xref uid="excel!Excel.Interfaces.IconSetConditionalFormatData#style:member"
-  />
+  alttext="Excel.Interfaces.IconSetConditionalFormatData.style" />
 
   - <xref
   uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member"
-  />
+  alttext="Excel.Interfaces.IconSetConditionalFormatUpdateData.style" />
 
   #### Examples
 

@@ -22,9 +22,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#displayNewMessageForm:member(1)" />
+  - <xref uid="outlook!Office.Mailbox#displayNewMessageForm:member(1)"
+  alttext="Office.Mailbox.displayNewMessageForm" />
 
-  - <xref uid="outlook!Office.Mailbox#displayNewMessageFormAsync:member(1)" />
+  - <xref uid="outlook!Office.Mailbox#displayNewMessageFormAsync:member(1)"
+  alttext="Office.Mailbox.displayNewMessageFormAsync" />
 
 isPreview: false
 isDeprecated: false

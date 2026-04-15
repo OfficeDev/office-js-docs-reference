@@ -13,27 +13,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentBody:member" />
+  - <xref uid="word!Word.Body#parentBody:member" alttext="Word.Body.parentBody"
+  />
 
-  - <xref uid="word!Word.Body#parentBodyOrNullObject:member" />
+  - <xref uid="word!Word.Body#parentBodyOrNullObject:member"
+  alttext="Word.Body.parentBodyOrNullObject" />
 
-  - <xref uid="word!Word.ContentControl#parentBody:member" />
+  - <xref uid="word!Word.ContentControl#parentBody:member"
+  alttext="Word.ContentControl.parentBody" />
 
-  - <xref uid="word!Word.Document#body:member" />
+  - <xref uid="word!Word.Document#body:member" alttext="Word.Document.body" />
 
-  - <xref uid="word!Word.DocumentCreated#body:member" />
+  - <xref uid="word!Word.DocumentCreated#body:member"
+  alttext="Word.DocumentCreated.body" />
 
-  - <xref uid="word!Word.Field#parentBody:member" />
+  - <xref uid="word!Word.Field#parentBody:member"
+  alttext="Word.Field.parentBody" />
 
-  - <xref uid="word!Word.Paragraph#parentBody:member" />
+  - <xref uid="word!Word.Paragraph#parentBody:member"
+  alttext="Word.Paragraph.parentBody" />
 
-  - <xref uid="word!Word.Range#parentBody:member" />
+  - <xref uid="word!Word.Range#parentBody:member"
+  alttext="Word.Range.parentBody" />
 
-  - <xref uid="word!Word.Section#body:member" />
+  - <xref uid="word!Word.Section#body:member" alttext="Word.Section.body" />
 
-  - <xref uid="word!Word.Table#parentBody:member" />
+  - <xref uid="word!Word.Table#parentBody:member"
+  alttext="Word.Table.parentBody" />
 
-  - <xref uid="word!Word.TableCell#body:member" />
+  - <xref uid="word!Word.TableCell#body:member" alttext="Word.TableCell.body" />
 
   #### Examples
 

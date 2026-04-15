@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.OfficeTheme#themeId:member" />
+  - <xref uid="office!Office.OfficeTheme#themeId:member"
+  alttext="Office.OfficeTheme.themeId" />
 
   #### Examples
 

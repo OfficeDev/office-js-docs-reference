@@ -17,9 +17,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#pageLayout:member"
-  />
+  alttext="Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member"
+  alttext="Excel.Interfaces.WorksheetLoadOptions.pageLayout" />
 
 isPreview: false
 isDeprecated: false

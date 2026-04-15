@@ -10,18 +10,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#contentControls:member" />
+  - <xref uid="word!Word.Interfaces.BodyData#contentControls:member"
+  alttext="Word.Interfaces.BodyData.contentControls" />
 
   - <xref uid="word!Word.Interfaces.ContentControlCollectionData#items:member"
-  />
+  alttext="Word.Interfaces.ContentControlCollectionData.items" />
 
   - <xref
-  uid="word!Word.Interfaces.ContentControlCollectionUpdateData#items:member" />
+  uid="word!Word.Interfaces.ContentControlCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.ContentControlCollectionUpdateData.items" />
 
   - <xref uid="word!Word.Interfaces.ContentControlData#contentControls:member"
-  />
+  alttext="Word.Interfaces.ContentControlData.contentControls" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#contentControls:member" />
+  - <xref uid="word!Word.Interfaces.DocumentData#contentControls:member"
+  alttext="Word.Interfaces.DocumentData.contentControls" />
 
 isPreview: false
 isDeprecated: false

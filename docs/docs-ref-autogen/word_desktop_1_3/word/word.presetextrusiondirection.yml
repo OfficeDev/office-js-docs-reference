@@ -16,10 +16,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetExtrusionDirection:member"
+  alttext="Word.Interfaces.ThreeDimensionalFormatData.presetExtrusionDirection"
   />
 
   - <xref uid="word!Word.ThreeDimensionalFormat#presetExtrusionDirection:member"
-  />
+  alttext="Word.ThreeDimensionalFormat.presetExtrusionDirection" />
 
 isPreview: false
 isDeprecated: false

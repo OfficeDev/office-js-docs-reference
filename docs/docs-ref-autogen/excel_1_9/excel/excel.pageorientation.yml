@@ -13,12 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.PageLayoutData#orientation:member" />
+  - <xref uid="excel!Excel.Interfaces.PageLayoutData#orientation:member"
+  alttext="Excel.Interfaces.PageLayoutData.orientation" />
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member"
-  />
+  alttext="Excel.Interfaces.PageLayoutUpdateData.orientation" />
 
-  - <xref uid="excel!Excel.PageLayout#orientation:member" />
+  - <xref uid="excel!Excel.PageLayout#orientation:member"
+  alttext="Excel.PageLayout.orientation" />
 
   #### Examples
 

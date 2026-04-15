@@ -11,9 +11,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Body#prependAsync:member(1)" />
+  - <xref uid="outlook!Office.Body#prependAsync:member(1)"
+  alttext="Office.Body.prependAsync" />
 
-  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member(1)" />
+  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member(1)"
+  alttext="Office.Body.setSelectedDataAsync" />
 
   #### Examples
 

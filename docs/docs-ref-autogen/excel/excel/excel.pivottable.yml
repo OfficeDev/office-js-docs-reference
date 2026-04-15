@@ -16,9 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotTableCollection#items:member" />
+  - <xref uid="excel!Excel.PivotTableCollection#items:member"
+  alttext="Excel.PivotTableCollection.items" />
 
-  - <xref uid="excel!Excel.PivotTableScopedCollection#items:member" />
+  - <xref uid="excel!Excel.PivotTableScopedCollection#items:member"
+  alttext="Excel.PivotTableScopedCollection.items" />
 
 isPreview: false
 isDeprecated: false

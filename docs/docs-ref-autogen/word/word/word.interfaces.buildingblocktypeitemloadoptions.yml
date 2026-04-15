@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.BuildingBlockCategoryLoadOptions#type:member" />
+  uid="word!Word.Interfaces.BuildingBlockCategoryLoadOptions#type:member"
+  alttext="Word.Interfaces.BuildingBlockCategoryLoadOptions.type" />
 
-  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#type:member" />
+  - <xref uid="word!Word.Interfaces.BuildingBlockLoadOptions#type:member"
+  alttext="Word.Interfaces.BuildingBlockLoadOptions.type" />
 
 isPreview: false
 isDeprecated: false

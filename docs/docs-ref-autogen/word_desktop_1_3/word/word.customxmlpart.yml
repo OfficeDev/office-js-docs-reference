@@ -13,15 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlNode#ownerPart:member" />
+  - <xref uid="word!Word.CustomXmlNode#ownerPart:member"
+  alttext="Word.CustomXmlNode.ownerPart" />
 
-  - <xref uid="word!Word.CustomXmlPartCollection#items:member" />
+  - <xref uid="word!Word.CustomXmlPartCollection#items:member"
+  alttext="Word.CustomXmlPartCollection.items" />
 
-  - <xref uid="word!Word.CustomXmlPartScopedCollection#items:member" />
+  - <xref uid="word!Word.CustomXmlPartScopedCollection#items:member"
+  alttext="Word.CustomXmlPartScopedCollection.items" />
 
-  - <xref uid="word!Word.XmlMapping#customXmlPart:member" />
+  - <xref uid="word!Word.XmlMapping#customXmlPart:member"
+  alttext="Word.XmlMapping.customXmlPart" />
 
-  - <xref uid="word!Word.XmlSetMappingOptions#source:member" />
+  - <xref uid="word!Word.XmlSetMappingOptions#source:member"
+  alttext="Word.XmlSetMappingOptions.source" />
 
   #### Examples
 

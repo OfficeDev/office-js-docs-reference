@@ -6,11 +6,15 @@ fullName: Office.AuthOptions
 summary: >-
   Provides options for the user experience when Office obtains an access token
   to the add-in from AAD v. 2.0 with the `getAccessToken` method.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="office!Office.Auth#getAccessToken:member(1)" />
-  - <xref uid="office!Office.Auth#getAccessTokenAsync:member(1)" />
+
+  - <xref uid="office!Office.Auth#getAccessToken:member(1)"
+  alttext="Office.Auth.getAccessToken" />
+
+  - <xref uid="office!Office.Auth#getAccessTokenAsync:member(1)"
+  alttext="Office.Auth.getAccessTokenAsync" />
 
 isPreview: false
 isDeprecated: false

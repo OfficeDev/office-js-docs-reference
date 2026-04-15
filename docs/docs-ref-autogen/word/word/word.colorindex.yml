@@ -12,49 +12,63 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BorderUniversal#colorIndex:member" />
+  - <xref uid="word!Word.BorderUniversal#colorIndex:member"
+  alttext="Word.BorderUniversal.colorIndex" />
 
-  - <xref uid="word!Word.Font#colorIndex:member" />
-
-  - <xref uid="word!Word.Font#colorIndexBidirectional:member" />
-
-  - <xref uid="word!Word.Interfaces.BorderUniversalData#colorIndex:member" />
-
-  - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#colorIndex:member"
+  - <xref uid="word!Word.Font#colorIndex:member" alttext="Word.Font.colorIndex"
   />
 
-  - <xref uid="word!Word.Interfaces.FontData#colorIndex:member" />
+  - <xref uid="word!Word.Font#colorIndexBidirectional:member"
+  alttext="Word.Font.colorIndexBidirectional" />
 
-  - <xref uid="word!Word.Interfaces.FontData#colorIndexBidirectional:member" />
+  - <xref uid="word!Word.Interfaces.BorderUniversalData#colorIndex:member"
+  alttext="Word.Interfaces.BorderUniversalData.colorIndex" />
 
-  - <xref uid="word!Word.Interfaces.FontUpdateData#colorIndex:member" />
+  - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#colorIndex:member"
+  alttext="Word.Interfaces.BorderUniversalUpdateData.colorIndex" />
+
+  - <xref uid="word!Word.Interfaces.FontData#colorIndex:member"
+  alttext="Word.Interfaces.FontData.colorIndex" />
+
+  - <xref uid="word!Word.Interfaces.FontData#colorIndexBidirectional:member"
+  alttext="Word.Interfaces.FontData.colorIndexBidirectional" />
+
+  - <xref uid="word!Word.Interfaces.FontUpdateData#colorIndex:member"
+  alttext="Word.Interfaces.FontUpdateData.colorIndex" />
 
   - <xref
-  uid="word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member" />
+  uid="word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member"
+  alttext="Word.Interfaces.FontUpdateData.colorIndexBidirectional" />
 
-  - <xref uid="word!Word.Interfaces.RangeData#highlightColorIndex:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#highlightColorIndex:member"
+  alttext="Word.Interfaces.RangeData.highlightColorIndex" />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalData#backgroundPatternColorIndex:member"
-  />
+  alttext="Word.Interfaces.ShadingUniversalData.backgroundPatternColorIndex" />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalData#foregroundPatternColorIndex:member"
-  />
+  alttext="Word.Interfaces.ShadingUniversalData.foregroundPatternColorIndex" />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalUpdateData#backgroundPatternColorIndex:member"
+  alttext="Word.Interfaces.ShadingUniversalUpdateData.backgroundPatternColorIndex"
   />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalUpdateData#foregroundPatternColorIndex:member"
+  alttext="Word.Interfaces.ShadingUniversalUpdateData.foregroundPatternColorIndex"
   />
 
-  - <xref uid="word!Word.Range#highlightColorIndex:member" />
+  - <xref uid="word!Word.Range#highlightColorIndex:member"
+  alttext="Word.Range.highlightColorIndex" />
 
-  - <xref uid="word!Word.ShadingUniversal#backgroundPatternColorIndex:member" />
+  - <xref uid="word!Word.ShadingUniversal#backgroundPatternColorIndex:member"
+  alttext="Word.ShadingUniversal.backgroundPatternColorIndex" />
 
-  - <xref uid="word!Word.ShadingUniversal#foregroundPatternColorIndex:member" />
+  - <xref uid="word!Word.ShadingUniversal#foregroundPatternColorIndex:member"
+  alttext="Word.ShadingUniversal.foregroundPatternColorIndex" />
 
 isPreview: false
 isDeprecated: false

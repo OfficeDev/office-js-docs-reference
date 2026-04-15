@@ -13,14 +13,17 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.BuildingBlockGalleryContentControl#buildingBlockType:member" />
+  uid="word!Word.BuildingBlockGalleryContentControl#buildingBlockType:member"
+  alttext="Word.BuildingBlockGalleryContentControl.buildingBlockType" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#buildingBlockType:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlData.buildingBlockType"
   />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#buildingBlockType:member"
+  alttext="Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.buildingBlockType"
   />
 
 isPreview: false

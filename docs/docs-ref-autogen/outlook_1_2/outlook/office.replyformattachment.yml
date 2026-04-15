@@ -23,7 +23,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.ReplyFormData#attachments:member" />
+  - <xref uid="outlook!Office.ReplyFormData#attachments:member"
+  alttext="Office.ReplyFormData.attachments" />
 
   #### Examples
 

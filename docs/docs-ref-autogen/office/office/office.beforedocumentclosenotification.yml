@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Addin#beforeDocumentCloseNotification:member" />
+  - <xref uid="office!Office.Addin#beforeDocumentCloseNotification:member"
+  alttext="Office.Addin.beforeDocumentCloseNotification" />
 
   #### Examples
 

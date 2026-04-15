@@ -24,9 +24,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#subject:member" />
+  - <xref uid="outlook!Office.AppointmentCompose#subject:member"
+  alttext="Office.AppointmentCompose.subject" />
 
-  - <xref uid="outlook!Office.MessageCompose#subject:member" />
+  - <xref uid="outlook!Office.MessageCompose#subject:member"
+  alttext="Office.MessageCompose.subject" />
 
 isPreview: false
 isDeprecated: false

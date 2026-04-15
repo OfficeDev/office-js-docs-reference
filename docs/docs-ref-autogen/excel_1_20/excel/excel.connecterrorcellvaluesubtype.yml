@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConnectErrorCellValue#errorSubType:member" />
+  - <xref uid="excel!Excel.ConnectErrorCellValue#errorSubType:member"
+  alttext="Excel.ConnectErrorCellValue.errorSubType" />
 
 isPreview: false
 isDeprecated: false

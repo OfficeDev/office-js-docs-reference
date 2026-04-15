@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.BindingCollection#items:member" />
+  - <xref uid="powerpoint!PowerPoint.BindingCollection#items:member"
+  alttext="PowerPoint.BindingCollection.items" />
 
   #### Examples
 

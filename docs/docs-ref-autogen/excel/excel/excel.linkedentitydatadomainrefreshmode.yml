@@ -18,27 +18,30 @@ remarks: >-
 
 
   - <xref
-  uid="excel!Excel.Interfaces.LinkedEntityDataDomainData#refreshMode:member" />
+  uid="excel!Excel.Interfaces.LinkedEntityDataDomainData#refreshMode:member"
+  alttext="Excel.Interfaces.LinkedEntityDataDomainData.refreshMode" />
 
   - <xref
   uid="excel!Excel.Interfaces.LinkedEntityDataDomainData#supportedRefreshModes:member"
-  />
+  alttext="Excel.Interfaces.LinkedEntityDataDomainData.supportedRefreshModes" />
 
   - <xref
   uid="excel!Excel.Interfaces.LinkedEntityDataDomainUpdateData#refreshMode:member"
-  />
+  alttext="Excel.Interfaces.LinkedEntityDataDomainUpdateData.refreshMode" />
 
-  - <xref uid="excel!Excel.LinkedEntityDataDomain#refreshMode:member" />
+  - <xref uid="excel!Excel.LinkedEntityDataDomain#refreshMode:member"
+  alttext="Excel.LinkedEntityDataDomain.refreshMode" />
 
   - <xref uid="excel!Excel.LinkedEntityDataDomain#supportedRefreshModes:member"
-  />
+  alttext="Excel.LinkedEntityDataDomain.supportedRefreshModes" />
 
   - <xref
   uid="excel!Excel.LinkedEntityDataDomainCreateOptions#supportedRefreshModes:member"
-  />
+  alttext="Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes" />
 
   - <xref
   uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs#refreshMode:member"
+  alttext="Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode"
   />
 
 isPreview: false

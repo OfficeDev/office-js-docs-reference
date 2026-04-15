@@ -4,11 +4,15 @@ uid: word!Word.Interfaces.PageData:interface
 package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.PageCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.PageCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.PageCollectionData#items:member"
+  alttext="Word.Interfaces.PageCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.PageCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.PageCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

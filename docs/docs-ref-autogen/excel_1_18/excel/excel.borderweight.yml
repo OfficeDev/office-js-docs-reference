@@ -12,13 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellBorder#weight:member" />
+  - <xref uid="excel!Excel.CellBorder#weight:member"
+  alttext="Excel.CellBorder.weight" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeBorderData#weight:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeBorderData#weight:member"
+  alttext="Excel.Interfaces.RangeBorderData.weight" />
 
-  - <xref uid="excel!Excel.Interfaces.RangeBorderUpdateData#weight:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeBorderUpdateData#weight:member"
+  alttext="Excel.Interfaces.RangeBorderUpdateData.weight" />
 
-  - <xref uid="excel!Excel.RangeBorder#weight:member" />
+  - <xref uid="excel!Excel.RangeBorder#weight:member"
+  alttext="Excel.RangeBorder.weight" />
 
 isPreview: false
 isDeprecated: false

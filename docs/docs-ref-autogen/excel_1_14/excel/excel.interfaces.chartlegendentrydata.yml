@@ -10,14 +10,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ChartLegendData#legendEntries:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartLegendData#legendEntries:member"
+  alttext="Excel.Interfaces.ChartLegendData.legendEntries" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartLegendEntryCollectionData#items:member" />
+  uid="excel!Excel.Interfaces.ChartLegendEntryCollectionData#items:member"
+  alttext="Excel.Interfaces.ChartLegendEntryCollectionData.items" />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member"
-  />
+  alttext="Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

@@ -17,10 +17,11 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#lineFormat:member"
-  />
+  alttext="PowerPoint.Interfaces.ShapeCollectionLoadOptions.lineFormat" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member" />
+  uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member"
+  alttext="PowerPoint.Interfaces.ShapeLoadOptions.lineFormat" />
 
 isPreview: false
 isDeprecated: false

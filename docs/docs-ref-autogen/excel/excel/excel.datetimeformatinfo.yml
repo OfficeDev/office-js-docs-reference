@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CultureInfo#datetimeFormat:member" />
+  - <xref uid="excel!Excel.CultureInfo#datetimeFormat:member"
+  alttext="Excel.CultureInfo.datetimeFormat" />
 
 isPreview: false
 isDeprecated: false

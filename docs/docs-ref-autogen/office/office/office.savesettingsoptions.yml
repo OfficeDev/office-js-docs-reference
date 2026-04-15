@@ -4,16 +4,21 @@ uid: office!Office.SaveSettingsOptions:interface
 package: office!
 fullName: Office.SaveSettingsOptions
 summary: Provides options for saving settings.
-remarks: |-
+remarks: >-
 
 
 
   #### Used by
 
-  - <xref uid="office!Office.Settings#saveAsync:member(1)" />
+
+  - <xref uid="office!Office.Settings#saveAsync:member(1)"
+  alttext="Office.Settings.saveAsync" />
+
   #### Examples
 
+
   ```TypeScript
+
   function persistSettingsWithContext() {
       Office.context.document.settings.set('reportFormat', 'pdf');
 
@@ -29,6 +34,7 @@ remarks: |-
           }
       });
   }
+
   ```
 
 isPreview: false

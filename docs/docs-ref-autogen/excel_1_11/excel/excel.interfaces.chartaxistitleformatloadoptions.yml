@@ -13,7 +13,7 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisTitleLoadOptions#format:member"
-  />
+  alttext="Excel.Interfaces.ChartAxisTitleLoadOptions.format" />
 
 isPreview: false
 isDeprecated: false

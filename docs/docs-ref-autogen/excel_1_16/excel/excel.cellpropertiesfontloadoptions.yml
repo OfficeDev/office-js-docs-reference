@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormatLoadOptions#font:member" />
+  - <xref uid="excel!Excel.CellPropertiesFormatLoadOptions#font:member"
+  alttext="Excel.CellPropertiesFormatLoadOptions.font" />
 
 isPreview: false
 isDeprecated: false

@@ -4,13 +4,21 @@ uid: excel!Excel.Interfaces.NoteData:interface
 package: excel!
 fullName: Excel.Interfaces.NoteData
 summary: An interface describing the data returned by calling `note.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.NoteCollectionData#items:member" />
-  - <xref uid="excel!Excel.Interfaces.NoteCollectionUpdateData#items:member" />
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#notes:member" />
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#notes:member" />
+
+  - <xref uid="excel!Excel.Interfaces.NoteCollectionData#items:member"
+  alttext="Excel.Interfaces.NoteCollectionData.items" />
+
+  - <xref uid="excel!Excel.Interfaces.NoteCollectionUpdateData#items:member"
+  alttext="Excel.Interfaces.NoteCollectionUpdateData.items" />
+
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#notes:member"
+  alttext="Excel.Interfaces.WorkbookData.notes" />
+
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#notes:member"
+  alttext="Excel.Interfaces.WorksheetData.notes" />
 
 isPreview: false
 isDeprecated: false

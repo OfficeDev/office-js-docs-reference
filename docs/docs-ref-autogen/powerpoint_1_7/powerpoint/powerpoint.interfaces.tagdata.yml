@@ -9,10 +9,11 @@ remarks: >-
 
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.TagCollectionData#items:member"
-  />
+  alttext="PowerPoint.Interfaces.TagCollectionData.items" />
 
   - <xref
-  uid="powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData#items:member" />
+  uid="powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData#items:member"
+  alttext="PowerPoint.Interfaces.TagCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

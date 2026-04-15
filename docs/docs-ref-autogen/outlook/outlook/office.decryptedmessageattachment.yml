@@ -31,7 +31,8 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.MessageDecryptEventCompletedOptions#attachments:member" />
+  uid="outlook!Office.MessageDecryptEventCompletedOptions#attachments:member"
+  alttext="Office.MessageDecryptEventCompletedOptions.attachments" />
 
   #### Examples
 

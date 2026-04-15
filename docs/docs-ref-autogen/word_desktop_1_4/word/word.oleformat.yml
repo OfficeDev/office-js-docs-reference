@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Field#oleFormat:member" />
+  - <xref uid="word!Word.Field#oleFormat:member" alttext="Word.Field.oleFormat"
+  />
 
 isPreview: false
 isDeprecated: false

@@ -14,15 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#itemType:member" />
+  - <xref uid="outlook!Office.AppointmentCompose#itemType:member"
+  alttext="Office.AppointmentCompose.itemType" />
 
-  - <xref uid="outlook!Office.AppointmentRead#itemType:member" />
+  - <xref uid="outlook!Office.AppointmentRead#itemType:member"
+  alttext="Office.AppointmentRead.itemType" />
 
-  - <xref uid="outlook!Office.MessageCompose#itemType:member" />
+  - <xref uid="outlook!Office.MessageCompose#itemType:member"
+  alttext="Office.MessageCompose.itemType" />
 
-  - <xref uid="outlook!Office.MessageRead#itemType:member" />
+  - <xref uid="outlook!Office.MessageRead#itemType:member"
+  alttext="Office.MessageRead.itemType" />
 
-  - <xref uid="outlook!Office.SelectedItemDetails#itemType:member" />
+  - <xref uid="outlook!Office.SelectedItemDetails#itemType:member"
+  alttext="Office.SelectedItemDetails.itemType" />
 
   #### Examples
 

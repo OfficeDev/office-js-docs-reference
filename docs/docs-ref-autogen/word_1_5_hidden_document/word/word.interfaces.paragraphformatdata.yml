@@ -6,10 +6,12 @@ fullName: Word.Interfaces.ParagraphFormatData
 summary: >-
   An interface describing the data returned by calling
   `paragraphFormat.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.StyleData#paragraphFormat:member" />
+
+  - <xref uid="word!Word.Interfaces.StyleData#paragraphFormat:member"
+  alttext="Word.Interfaces.StyleData.paragraphFormat" />
 
 isPreview: false
 isDeprecated: false

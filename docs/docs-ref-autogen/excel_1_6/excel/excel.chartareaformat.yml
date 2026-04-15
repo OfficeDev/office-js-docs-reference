@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#format:member" />
+  - <xref uid="excel!Excel.Chart#format:member" alttext="Excel.Chart.format" />
 
 isPreview: false
 isDeprecated: false

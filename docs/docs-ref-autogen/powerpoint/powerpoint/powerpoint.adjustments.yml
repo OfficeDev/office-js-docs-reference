@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Shape#adjustments:member" />
+  - <xref uid="powerpoint!PowerPoint.Shape#adjustments:member"
+  alttext="PowerPoint.Shape.adjustments" />
 
 isPreview: false
 isDeprecated: false

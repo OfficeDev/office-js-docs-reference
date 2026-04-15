@@ -12,28 +12,34 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#baseTimeUnit:member" />
+  - <xref uid="excel!Excel.ChartAxis#baseTimeUnit:member"
+  alttext="Excel.ChartAxis.baseTimeUnit" />
 
-  - <xref uid="excel!Excel.ChartAxis#majorTimeUnitScale:member" />
+  - <xref uid="excel!Excel.ChartAxis#majorTimeUnitScale:member"
+  alttext="Excel.ChartAxis.majorTimeUnitScale" />
 
-  - <xref uid="excel!Excel.ChartAxis#minorTimeUnitScale:member" />
+  - <xref uid="excel!Excel.ChartAxis#minorTimeUnitScale:member"
+  alttext="Excel.ChartAxis.minorTimeUnitScale" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartAxisData#baseTimeUnit:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartAxisData#baseTimeUnit:member"
+  alttext="Excel.Interfaces.ChartAxisData.baseTimeUnit" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorTimeUnitScale:member"
-  />
+  alttext="Excel.Interfaces.ChartAxisData.majorTimeUnitScale" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorTimeUnitScale:member"
-  />
+  alttext="Excel.Interfaces.ChartAxisData.minorTimeUnitScale" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit:member"
-  />
+  alttext="Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member" />
+  uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member"
+  alttext="Excel.Interfaces.ChartAxisUpdateData.majorTimeUnitScale" />
 
   - <xref
-  uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member" />
+  uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member"
+  alttext="Excel.Interfaces.ChartAxisUpdateData.minorTimeUnitScale" />
 
 isPreview: false
 isDeprecated: false

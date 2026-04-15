@@ -4,11 +4,15 @@ uid: word!Word.Interfaces.IndexData:interface
 package: word!
 fullName: Word.Interfaces.IndexData
 summary: An interface describing the data returned by calling `index.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.IndexCollectionData#items:member" />
-  - <xref uid="word!Word.Interfaces.IndexCollectionUpdateData#items:member" />
+
+  - <xref uid="word!Word.Interfaces.IndexCollectionData#items:member"
+  alttext="Word.Interfaces.IndexCollectionData.items" />
+
+  - <xref uid="word!Word.Interfaces.IndexCollectionUpdateData#items:member"
+  alttext="Word.Interfaces.IndexCollectionUpdateData.items" />
 
 isPreview: false
 isDeprecated: false

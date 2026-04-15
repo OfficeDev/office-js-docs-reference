@@ -12,14 +12,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetProtectionData#options:member" />
+  - <xref uid="excel!Excel.Interfaces.WorksheetProtectionData#options:member"
+  alttext="Excel.Interfaces.WorksheetProtectionData.options" />
 
   - <xref
-  uid="excel!Excel.Interfaces.WorksheetProtectionData#savedOptions:member" />
+  uid="excel!Excel.Interfaces.WorksheetProtectionData#savedOptions:member"
+  alttext="Excel.Interfaces.WorksheetProtectionData.savedOptions" />
 
-  - <xref uid="excel!Excel.WorksheetProtection#options:member" />
+  - <xref uid="excel!Excel.WorksheetProtection#options:member"
+  alttext="Excel.WorksheetProtection.options" />
 
-  - <xref uid="excel!Excel.WorksheetProtection#savedOptions:member" />
+  - <xref uid="excel!Excel.WorksheetProtection#savedOptions:member"
+  alttext="Excel.WorksheetProtection.savedOptions" />
 
 isPreview: false
 isDeprecated: false

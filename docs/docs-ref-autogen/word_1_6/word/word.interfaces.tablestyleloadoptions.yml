@@ -13,9 +13,11 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member" />
+  uid="word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member"
+  alttext="Word.Interfaces.StyleCollectionLoadOptions.tableStyle" />
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#tableStyle:member" />
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#tableStyle:member"
+  alttext="Word.Interfaces.StyleLoadOptions.tableStyle" />
 
 isPreview: false
 isDeprecated: false

@@ -31,11 +31,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.NotificationMessages#addAsync:member(1)" />
+  - <xref uid="outlook!Office.NotificationMessages#addAsync:member(1)"
+  alttext="Office.NotificationMessages.addAsync" />
 
-  - <xref uid="outlook!Office.NotificationMessages#getAllAsync:member(1)" />
+  - <xref uid="outlook!Office.NotificationMessages#getAllAsync:member(1)"
+  alttext="Office.NotificationMessages.getAllAsync" />
 
-  - <xref uid="outlook!Office.NotificationMessages#replaceAsync:member(1)" />
+  - <xref uid="outlook!Office.NotificationMessages#replaceAsync:member(1)"
+  alttext="Office.NotificationMessages.replaceAsync" />
 
   #### Examples
 

@@ -25,7 +25,8 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#organizer:member" />
+  - <xref uid="outlook!Office.AppointmentCompose#organizer:member"
+  alttext="Office.AppointmentCompose.organizer" />
 
 isPreview: false
 isDeprecated: false

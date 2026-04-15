@@ -4,15 +4,27 @@ uid: visio!Visio.Interfaces.ShapeData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
-  - <xref uid="visio!Visio.Interfaces.PageData#allShapes:member" />
-  - <xref uid="visio!Visio.Interfaces.PageData#shapes:member" />
-  - <xref uid="visio!Visio.Interfaces.SelectionData#shapes:member" />
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionData#items:member" />
-  - <xref uid="visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member" />
-  - <xref uid="visio!Visio.Interfaces.ShapeData#subShapes:member" />
+
+  - <xref uid="visio!Visio.Interfaces.PageData#allShapes:member"
+  alttext="Visio.Interfaces.PageData.allShapes" />
+
+  - <xref uid="visio!Visio.Interfaces.PageData#shapes:member"
+  alttext="Visio.Interfaces.PageData.shapes" />
+
+  - <xref uid="visio!Visio.Interfaces.SelectionData#shapes:member"
+  alttext="Visio.Interfaces.SelectionData.shapes" />
+
+  - <xref uid="visio!Visio.Interfaces.ShapeCollectionData#items:member"
+  alttext="Visio.Interfaces.ShapeCollectionData.items" />
+
+  - <xref uid="visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member"
+  alttext="Visio.Interfaces.ShapeCollectionUpdateData.items" />
+
+  - <xref uid="visio!Visio.Interfaces.ShapeData#subShapes:member"
+  alttext="Visio.Interfaces.ShapeData.subShapes" />
 
 isPreview: false
 isDeprecated: false

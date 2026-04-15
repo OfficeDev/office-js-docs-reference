@@ -12,19 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartPoint#markerStyle:member" />
+  - <xref uid="excel!Excel.ChartPoint#markerStyle:member"
+  alttext="Excel.ChartPoint.markerStyle" />
 
-  - <xref uid="excel!Excel.ChartSeries#markerStyle:member" />
+  - <xref uid="excel!Excel.ChartSeries#markerStyle:member"
+  alttext="Excel.ChartSeries.markerStyle" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartPointData#markerStyle:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartPointData#markerStyle:member"
+  alttext="Excel.Interfaces.ChartPointData.markerStyle" />
 
   - <xref uid="excel!Excel.Interfaces.ChartPointUpdateData#markerStyle:member"
-  />
+  alttext="Excel.Interfaces.ChartPointUpdateData.markerStyle" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#markerStyle:member" />
+  - <xref uid="excel!Excel.Interfaces.ChartSeriesData#markerStyle:member"
+  alttext="Excel.Interfaces.ChartSeriesData.markerStyle" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member"
-  />
+  alttext="Excel.Interfaces.ChartSeriesUpdateData.markerStyle" />
 
 isPreview: false
 isDeprecated: false

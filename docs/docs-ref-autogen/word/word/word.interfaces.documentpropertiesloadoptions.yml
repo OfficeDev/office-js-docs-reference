@@ -13,17 +13,19 @@ remarks: >-
 
 
   - <xref
-  uid="word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member" />
+  uid="word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member"
+  alttext="Word.Interfaces.DocumentCreatedLoadOptions.properties" />
 
   - <xref
   uid="word!Word.Interfaces.DocumentLoadOptions#builtInDocumentProperties:member"
-  />
+  alttext="Word.Interfaces.DocumentLoadOptions.builtInDocumentProperties" />
 
   - <xref
   uid="word!Word.Interfaces.DocumentLoadOptions#customDocumentProperties:member"
-  />
+  alttext="Word.Interfaces.DocumentLoadOptions.customDocumentProperties" />
 
-  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#properties:member" />
+  - <xref uid="word!Word.Interfaces.DocumentLoadOptions#properties:member"
+  alttext="Word.Interfaces.DocumentLoadOptions.properties" />
 
 isPreview: false
 isDeprecated: false
