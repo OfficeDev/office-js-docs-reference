@@ -54,25 +54,23 @@ remarks: >-
 
 
   - <xref
-  uid="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member" />
-  (parameter type)
-
-  - <xref uid="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member"
-  /> (parameter type)
+  uid="outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)" />
 
   - <xref
-  uid="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member" />
-  (parameter type)
+  uid="outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)" />
 
   - <xref
-  uid="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member" />
-  (parameter type)
+  uid="outlook!Office.LoadedMessageCompose#loadCustomPropertiesAsync:member(1)"
+  />
 
-  - <xref uid="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member"
-  /> (parameter type)
+  - <xref
+  uid="outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)" />
 
-  - <xref uid="outlook!Office.MessageRead#loadCustomPropertiesAsync:member" />
-  (parameter type)
+  - <xref
+  uid="outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)" />
+
+  - <xref uid="outlook!Office.MessageRead#loadCustomPropertiesAsync:member(1)"
+  />
 
 isPreview: false
 isDeprecated: false

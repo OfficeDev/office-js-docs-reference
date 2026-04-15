@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Field#result:member" /> (property type)
+  - <xref uid="word!Word.Field#result:member" />
 
-  - <xref uid="word!Word.NoteItem#reference:member" /> (property type)
+  - <xref uid="word!Word.NoteItem#reference:member" />
 
-  - <xref uid="word!Word.RangeCollection#items:member" /> (property type)
+  - <xref uid="word!Word.RangeCollection#items:member" />
 
   #### Examples
 

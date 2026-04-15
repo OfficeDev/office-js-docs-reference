@@ -25,7 +25,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.MessageRead#display:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#display:member" />
 
 isPreview: true
 isDeprecated: false

@@ -12,23 +12,22 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#tables:member" /> (property type)
+  - <xref uid="word!Word.Body#tables:member" />
 
-  - <xref uid="word!Word.ContentControl#tables:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#tables:member" />
 
-  - <xref uid="word!Word.Document#tables:member" /> (property type)
+  - <xref uid="word!Word.Document#tables:member" />
 
-  - <xref uid="word!Word.Range#tables:member" /> (property type)
+  - <xref uid="word!Word.Range#tables:member" />
 
-  - <xref uid="word!Word.Selection#tables:member" /> (property type)
+  - <xref uid="word!Word.Selection#tables:member" />
 
-  - <xref uid="word!Word.Selection#topLevelTables:member" /> (property type)
+  - <xref uid="word!Word.Selection#topLevelTables:member" />
 
-  - <xref uid="word!Word.Table#tables:member" /> (property type)
+  - <xref uid="word!Word.Table#tables:member" />
 
   #### Examples
 

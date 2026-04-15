@@ -10,29 +10,28 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentBody:member" /> (property type)
+  - <xref uid="word!Word.Body#parentBody:member" />
 
-  - <xref uid="word!Word.Body#parentBodyOrNullObject:member" /> (property type)
+  - <xref uid="word!Word.Body#parentBodyOrNullObject:member" />
 
-  - <xref uid="word!Word.ContentControl#parentBody:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#parentBody:member" />
 
-  - <xref uid="word!Word.Document#body:member" /> (property type)
+  - <xref uid="word!Word.Document#body:member" />
 
-  - <xref uid="word!Word.DocumentCreated#body:member" /> (property type)
+  - <xref uid="word!Word.DocumentCreated#body:member" />
 
-  - <xref uid="word!Word.Paragraph#parentBody:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#parentBody:member" />
 
-  - <xref uid="word!Word.Range#parentBody:member" /> (property type)
+  - <xref uid="word!Word.Range#parentBody:member" />
 
-  - <xref uid="word!Word.Section#body:member" /> (property type)
+  - <xref uid="word!Word.Section#body:member" />
 
-  - <xref uid="word!Word.Table#parentBody:member" /> (property type)
+  - <xref uid="word!Word.Table#parentBody:member" />
 
-  - <xref uid="word!Word.TableCell#body:member" /> (property type)
+  - <xref uid="word!Word.TableCell#body:member" />
 
   #### Examples
 

@@ -16,23 +16,23 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#placeholderText:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#placeholderText:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.GroupContentControlLoadOptions#placeholderText:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlLoadOptions#placeholderText:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#placeholderText:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

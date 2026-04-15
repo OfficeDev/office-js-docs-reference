@@ -13,14 +13,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.DocumentLoadOptions#pageSetup:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.SectionCollectionLoadOptions#pageSetup:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.SectionLoadOptions#pageSetup:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

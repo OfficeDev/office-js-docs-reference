@@ -13,13 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.StyleCollectionLoadOptions#fill:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.StyleLoadOptions#fill:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.StyleLoadOptions#fill:member" />
 
 isPreview: false
 isDeprecated: false

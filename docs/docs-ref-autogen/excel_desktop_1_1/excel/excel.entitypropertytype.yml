@@ -13,17 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BooleanCellValue#properties:member" /> (property
-  type)
+  - <xref uid="excel!Excel.BooleanCellValue#properties:member" />
 
-  - <xref uid="excel!Excel.DoubleCellValue#properties:member" /> (property type)
+  - <xref uid="excel!Excel.DoubleCellValue#properties:member" />
 
-  - <xref uid="excel!Excel.EntityCellValue#properties:member" /> (property type)
+  - <xref uid="excel!Excel.EntityCellValue#properties:member" />
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#properties:member" /> (property
-  type)
+  - <xref uid="excel!Excel.LinkedEntityCellValue#properties:member" />
 
-  - <xref uid="excel!Excel.StringCellValue#properties:member" /> (property type)
+  - <xref uid="excel!Excel.StringCellValue#properties:member" />
 
 
 

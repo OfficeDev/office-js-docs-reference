@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableSortOptions#sortOrder:member" /> (property type)
+  - <xref uid="word!Word.TableSortOptions#sortOrder:member" />
 
-  - <xref uid="word!Word.TableSortOptions#sortOrder2:member" /> (property type)
+  - <xref uid="word!Word.TableSortOptions#sortOrder2:member" />
 
-  - <xref uid="word!Word.TableSortOptions#sortOrder3:member" /> (property type)
+  - <xref uid="word!Word.TableSortOptions#sortOrder3:member" />
 
 isPreview: false
 isDeprecated: false

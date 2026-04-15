@@ -11,15 +11,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member" />
 
   - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#items:member" />
-  (property type)
 
   #### Examples
 

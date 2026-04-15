@@ -10,13 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TableData#rows:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.TableData#rows:member" />
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

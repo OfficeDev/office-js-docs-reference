@@ -17,10 +17,9 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#ownerDocument:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

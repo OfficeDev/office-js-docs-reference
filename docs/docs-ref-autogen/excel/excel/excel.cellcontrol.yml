@@ -13,13 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.RangeData#control:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.RangeData#control:member" />
 
   - <xref uid="excel!Excel.Interfaces.RangeUpdateData#control:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Range#control:member" /> (property type)
+  - <xref uid="excel!Excel.Range#control:member" />
 
 
 

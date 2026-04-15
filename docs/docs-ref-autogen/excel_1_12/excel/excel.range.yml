@@ -18,41 +18,34 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BasicDataValidation#formula1:member" /> (property
-  type)
+  - <xref uid="excel!Excel.BasicDataValidation#formula1:member" />
 
-  - <xref uid="excel!Excel.BasicDataValidation#formula2:member" /> (property
-  type)
+  - <xref uid="excel!Excel.BasicDataValidation#formula2:member" />
 
-  - <xref uid="excel!Excel.DateTimeDataValidation#formula1:member" /> (property
-  type)
+  - <xref uid="excel!Excel.DateTimeDataValidation#formula1:member" />
 
-  - <xref uid="excel!Excel.DateTimeDataValidation#formula2:member" /> (property
-  type)
+  - <xref uid="excel!Excel.DateTimeDataValidation#formula2:member" />
 
-  - <xref uid="excel!Excel.ListDataValidation#source:member" /> (property type)
+  - <xref uid="excel!Excel.ListDataValidation#source:member" />
 
-  - <xref uid="excel!Excel.RangeCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.RangeCollection#items:member" />
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member" /> (return
-  type)
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRange:member(1)" />
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member" />
-  (return type)
+  - <xref uid="excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)"
+  />
 
-  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member" /> (return
-  type)
+  - <xref uid="excel!Excel.WorksheetChangedEventArgs#getRange:member(1)" />
 
   - <xref
-  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member" />
-  (return type)
+  uid="excel!Excel.WorksheetChangedEventArgs#getRangeOrNullObject:member(1)" />
 
-  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member" />
-  (return type)
+  - <xref uid="excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)"
+  />
 
   - <xref
-  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member"
-  /> (return type)
+  uid="excel!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)"
+  />
 
   #### Examples
 

@@ -10,14 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.ConditionalStyle#paragraphFormat:member" /> (property
-  type)
+  - <xref uid="word!Word.ConditionalStyle#paragraphFormat:member" />
 
-  - <xref uid="word!Word.Style#paragraphFormat:member" /> (property type)
+  - <xref uid="word!Word.Style#paragraphFormat:member" />
 
   #### Examples
 

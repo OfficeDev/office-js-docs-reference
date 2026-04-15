@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartAreaFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartAreaFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartData#format:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ChartData#format:member" />
 
 isPreview: false
 isDeprecated: false

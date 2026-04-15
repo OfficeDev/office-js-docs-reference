@@ -13,10 +13,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.TableLoadOptions#columns:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

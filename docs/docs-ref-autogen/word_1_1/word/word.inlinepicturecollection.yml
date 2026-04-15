@@ -12,16 +12,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#inlinePictures:member" /> (property type)
+  - <xref uid="word!Word.Body#inlinePictures:member" />
 
-  - <xref uid="word!Word.ContentControl#inlinePictures:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#inlinePictures:member" />
 
-  - <xref uid="word!Word.Paragraph#inlinePictures:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#inlinePictures:member" />
 
   #### Examples
 

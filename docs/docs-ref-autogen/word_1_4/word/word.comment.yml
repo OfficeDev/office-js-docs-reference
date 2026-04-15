@@ -10,13 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentCollection#items:member" /> (property type)
+  - <xref uid="word!Word.CommentCollection#items:member" />
 
-  - <xref uid="word!Word.CommentReply#parentComment:member" /> (property type)
+  - <xref uid="word!Word.CommentReply#parentComment:member" />
 
   #### Examples
 

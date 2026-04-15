@@ -6,12 +6,10 @@ fullName: Visio.Interfaces.ShapeViewUpdateData
 summary: >-
   An interface for updating data on the ShapeView object, for use in
   `shapeView.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="visio!Visio.Interfaces.ShapeUpdateData#view:member" /> (property
-  type)
+  - <xref uid="visio!Visio.Interfaces.ShapeUpdateData#view:member" />
 
 isPreview: false
 isDeprecated: false

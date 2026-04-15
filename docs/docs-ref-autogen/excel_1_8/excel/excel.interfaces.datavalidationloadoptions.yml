@@ -17,7 +17,6 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

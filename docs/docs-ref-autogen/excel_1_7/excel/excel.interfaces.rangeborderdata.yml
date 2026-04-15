@@ -11,17 +11,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeBorderCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.RangeFormatData#borders:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.StyleData#borders:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.StyleData#borders:member" />
 
 isPreview: false
 isDeprecated: false

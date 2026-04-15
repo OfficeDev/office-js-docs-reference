@@ -14,13 +14,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.TextFrameData#verticalAlignment:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.TextFrameUpdateData#verticalAlignment:member" />
-  (property type)
 
-  - <xref uid="word!Word.TextFrame#verticalAlignment:member" /> (property type)
+  - <xref uid="word!Word.TextFrame#verticalAlignment:member" />
 
   #### Examples
 

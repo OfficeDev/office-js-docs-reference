@@ -17,21 +17,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ShadingData#texture:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ShadingData#texture:member" />
 
   - <xref uid="word!Word.Interfaces.ShadingUniversalData#texture:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData#texture:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ShadingUpdateData#texture:member" />
-  (property type)
 
-  - <xref uid="word!Word.Shading#texture:member" /> (property type)
+  - <xref uid="word!Word.Shading#texture:member" />
 
-  - <xref uid="word!Word.ShadingUniversal#texture:member" /> (property type)
+  - <xref uid="word!Word.ShadingUniversal#texture:member" />
 
   #### Examples
 

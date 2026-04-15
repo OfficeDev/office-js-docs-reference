@@ -12,27 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BodyLoadOptions#font:member" />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#font:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#font:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeCollectionLoadOptions#font:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RangeLoadOptions#font:member" />
 
 isPreview: false
 isDeprecated: false

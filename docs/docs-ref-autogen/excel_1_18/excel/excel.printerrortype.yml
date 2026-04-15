@@ -13,12 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutData#printErrors:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.PageLayout#printErrors:member" /> (property type)
+  - <xref uid="excel!Excel.PageLayout#printErrors:member" />
 
 isPreview: false
 isDeprecated: false

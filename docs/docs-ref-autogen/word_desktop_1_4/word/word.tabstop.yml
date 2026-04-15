@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TabStop#next:member" /> (property type)
+  - <xref uid="word!Word.TabStop#next:member" />
 
-  - <xref uid="word!Word.TabStop#previous:member" /> (property type)
+  - <xref uid="word!Word.TabStop#previous:member" />
 
-  - <xref uid="word!Word.TabStopCollection#items:member" /> (property type)
+  - <xref uid="word!Word.TabStopCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

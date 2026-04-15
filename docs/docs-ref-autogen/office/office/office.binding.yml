@@ -47,23 +47,18 @@ remarks: >-
 
 
   - <xref uid="office!Office.BindingDataChangedEventArgs#binding:member" />
-  (property type)
 
-  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member" />
-  (parameter type)
+  - <xref uid="office!Office.Bindings#addFromNamedItemAsync:member(1)" />
 
-  - <xref uid="office!Office.Bindings#addFromPromptAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.Bindings#addFromPromptAsync:member(1)" />
 
-  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member" />
-  (parameter type)
+  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member(1)" />
 
-  - <xref uid="office!Office.Bindings#getAllAsync:member" /> (parameter type)
+  - <xref uid="office!Office.Bindings#getAllAsync:member(1)" />
 
-  - <xref uid="office!Office.Bindings#getByIdAsync:member" /> (parameter type)
+  - <xref uid="office!Office.Bindings#getByIdAsync:member(1)" />
 
   - <xref uid="office!Office.BindingSelectionChangedEventArgs#binding:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

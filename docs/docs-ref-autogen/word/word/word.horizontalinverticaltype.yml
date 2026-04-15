@@ -13,12 +13,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.RangeData#horizontalInVertical:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeUpdateData#horizontalInVertical:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Range#horizontalInVertical:member" /> (property type)
+  - <xref uid="word!Word.Range#horizontalInVertical:member" />
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataPivotHierarchy#field:member" /> (property type)
+  - <xref uid="excel!Excel.DataPivotHierarchy#field:member" />
 
-  - <xref uid="excel!Excel.PivotFieldCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.PivotFieldCollection#items:member" />
 
-  - <xref uid="excel!Excel.ShowAsRule#baseField:member" /> (property type)
+  - <xref uid="excel!Excel.ShowAsRule#baseField:member" />
 
 isPreview: false
 isDeprecated: false

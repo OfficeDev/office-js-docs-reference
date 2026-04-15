@@ -16,13 +16,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#selection:member" /> (property type)
+  - <xref uid="word!Word.Document#selection:member" />
 
-  - <xref uid="word!Word.Pane#selection:member" /> (property type)
+  - <xref uid="word!Word.Pane#selection:member" />
 
   #### Examples
 

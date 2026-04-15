@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetCollection#onDeleted:member" /> (property
-  type)
+  - <xref uid="excel!Excel.WorksheetCollection#onDeleted:member" />
 
 isPreview: false
 isDeprecated: false

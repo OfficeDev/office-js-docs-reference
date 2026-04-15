@@ -4,15 +4,11 @@ uid: word!Word.Interfaces.FieldData:interface
 package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="word!Word.Interfaces.FieldCollectionData#items:member" />
-  (property type)
-
   - <xref uid="word!Word.Interfaces.FieldCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

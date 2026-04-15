@@ -14,10 +14,9 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.StyleLoadOptions#paragraphFormat:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

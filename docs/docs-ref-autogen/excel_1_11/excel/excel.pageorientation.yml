@@ -14,12 +14,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutData#orientation:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.PageLayout#orientation:member" /> (property type)
+  - <xref uid="excel!Excel.PageLayout#orientation:member" />
 
   #### Examples
 

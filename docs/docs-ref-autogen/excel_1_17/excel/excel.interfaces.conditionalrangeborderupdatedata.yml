@@ -12,19 +12,19 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

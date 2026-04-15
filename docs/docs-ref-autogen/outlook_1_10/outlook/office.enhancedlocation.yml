@@ -32,10 +32,8 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#enhancedLocation:member" />
-  (property type)
 
   - <xref uid="outlook!Office.AppointmentRead#enhancedLocation:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

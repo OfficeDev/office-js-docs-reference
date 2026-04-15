@@ -15,12 +15,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.TableStyleData#tableDirection:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableStyleUpdateData#tableDirection:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.TableStyle#tableDirection:member" /> (property type)
+  - <xref uid="word!Word.TableStyle#tableDirection:member" />
 
 isPreview: false
 isDeprecated: false

@@ -15,45 +15,36 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentContentControl:member" /> (property type)
+  - <xref uid="word!Word.Body#parentContentControl:member" />
 
   - <xref uid="word!Word.Body#parentContentControlOrNullObject:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControl#parentContentControl:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControl#parentContentControlOrNullObject:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.ContentControlCollection#items:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControlCollection#items:member" />
 
-  - <xref uid="word!Word.InlinePicture#parentContentControl:member" /> (property
-  type)
+  - <xref uid="word!Word.InlinePicture#parentContentControl:member" />
 
   - <xref uid="word!Word.InlinePicture#parentContentControlOrNullObject:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Paragraph#parentContentControl:member" /> (property
-  type)
+  - <xref uid="word!Word.Paragraph#parentContentControl:member" />
 
   - <xref uid="word!Word.Paragraph#parentContentControlOrNullObject:member" />
-  (property type)
 
-  - <xref uid="word!Word.Range#parentContentControl:member" /> (property type)
+  - <xref uid="word!Word.Range#parentContentControl:member" />
 
   - <xref uid="word!Word.Range#parentContentControlOrNullObject:member" />
-  (property type)
 
-  - <xref uid="word!Word.Table#parentContentControl:member" /> (property type)
+  - <xref uid="word!Word.Table#parentContentControl:member" />
 
   - <xref uid="word!Word.Table#parentContentControlOrNullObject:member" />
-  (property type)
 
   #### Examples
 

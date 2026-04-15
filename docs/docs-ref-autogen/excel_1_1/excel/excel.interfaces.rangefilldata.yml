@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.RangeFillData
 summary: >-
   An interface describing the data returned by calling `rangeFill.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.RangeFormatData#fill:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.RangeFormatData#fill:member" />
 
 isPreview: false
 isDeprecated: false

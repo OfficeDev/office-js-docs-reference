@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CoauthorCollection#items:member" /> (property type)
+  - <xref uid="word!Word.CoauthorCollection#items:member" />
 
-  - <xref uid="word!Word.Coauthoring#me:member" /> (property type)
+  - <xref uid="word!Word.Coauthoring#me:member" />
 
-  - <xref uid="word!Word.CoauthoringLock#owner:member" /> (property type)
+  - <xref uid="word!Word.CoauthoringLock#owner:member" />
 
 isPreview: false
 isDeprecated: false

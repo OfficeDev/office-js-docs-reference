@@ -12,11 +12,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartLegendEntryCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

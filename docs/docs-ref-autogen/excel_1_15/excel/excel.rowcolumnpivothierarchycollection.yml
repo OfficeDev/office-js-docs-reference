@@ -14,10 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.PivotTable#columnHierarchies:member" /> (property
-  type)
+  - <xref uid="excel!Excel.PivotTable#columnHierarchies:member" />
 
-  - <xref uid="excel!Excel.PivotTable#rowHierarchies:member" /> (property type)
+  - <xref uid="excel!Excel.PivotTable#rowHierarchies:member" />
 
 isPreview: false
 isDeprecated: false

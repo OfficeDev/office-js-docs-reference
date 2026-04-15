@@ -12,7 +12,6 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -11,16 +11,13 @@ remarks: >-
 
 
   - <xref uid="visio!Visio.Interfaces.CommentCollectionData#items:member" />
-  (property type)
 
   - <xref uid="visio!Visio.Interfaces.CommentCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
-  - <xref uid="visio!Visio.Interfaces.PageData#comments:member" /> (property
-  type)
+  - <xref uid="visio!Visio.Interfaces.PageData#comments:member" />
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#comments:member" /> (property
-  type)
+  - <xref uid="visio!Visio.Interfaces.ShapeData#comments:member" />
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#customXmlParts:member" /> (property type)
+  - <xref uid="excel!Excel.Workbook#customXmlParts:member" />
 
 isPreview: false
 isDeprecated: false

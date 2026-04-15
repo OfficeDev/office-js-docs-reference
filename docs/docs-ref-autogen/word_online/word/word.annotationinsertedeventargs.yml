@@ -10,12 +10,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#onAnnotationInserted:member" /> (property
-  type)
+  - <xref uid="word!Word.Document#onAnnotationInserted:member" />
 
   #### Examples
 

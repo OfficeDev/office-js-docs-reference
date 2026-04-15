@@ -12,57 +12,49 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BorderUniversal#colorIndex:member" /> (property type)
+  - <xref uid="word!Word.BorderUniversal#colorIndex:member" />
 
-  - <xref uid="word!Word.Font#colorIndex:member" /> (property type)
+  - <xref uid="word!Word.Font#colorIndex:member" />
 
-  - <xref uid="word!Word.Font#colorIndexBidirectional:member" /> (property type)
+  - <xref uid="word!Word.Font#colorIndexBidirectional:member" />
 
   - <xref uid="word!Word.Interfaces.BorderUniversalData#colorIndex:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.BorderUniversalUpdateData#colorIndex:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.FontData#colorIndex:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FontData#colorIndex:member" />
 
   - <xref uid="word!Word.Interfaces.FontData#colorIndexBidirectional:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.FontUpdateData#colorIndex:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeData#highlightColorIndex:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalData#backgroundPatternColorIndex:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalData#foregroundPatternColorIndex:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalUpdateData#backgroundPatternColorIndex:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ShadingUniversalUpdateData#foregroundPatternColorIndex:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Range#highlightColorIndex:member" /> (property type)
+  - <xref uid="word!Word.Range#highlightColorIndex:member" />
 
   - <xref uid="word!Word.ShadingUniversal#backgroundPatternColorIndex:member" />
-  (property type)
 
   - <xref uid="word!Word.ShadingUniversal#foregroundPatternColorIndex:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#horizontalPageBreaks:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Worksheet#horizontalPageBreaks:member" />
 
-  - <xref uid="excel!Excel.Worksheet#verticalPageBreaks:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Worksheet#verticalPageBreaks:member" />
 
 isPreview: false
 isDeprecated: false

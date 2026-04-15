@@ -11,11 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.LinkedWorkbookCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

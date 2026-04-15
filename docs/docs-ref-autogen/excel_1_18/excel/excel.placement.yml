@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.ShapeData#placement:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ShapeData#placement:member" />
 
   - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#placement:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Shape#placement:member" /> (property type)
+  - <xref uid="excel!Excel.Shape#placement:member" />
 
 isPreview: false
 isDeprecated: false

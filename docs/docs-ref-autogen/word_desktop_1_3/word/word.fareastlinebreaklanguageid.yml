@@ -16,14 +16,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.TemplateData#farEastLineBreakLanguage:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.TemplateUpdateData#farEastLineBreakLanguage:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Template#farEastLineBreakLanguage:member" /> (property
-  type)
+  - <xref uid="word!Word.Template#farEastLineBreakLanguage:member" />
 
 isPreview: false
 isDeprecated: false

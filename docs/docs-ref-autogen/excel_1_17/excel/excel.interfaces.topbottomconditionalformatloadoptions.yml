@@ -14,19 +14,18 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottom:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#topBottomOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottom:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottomOrNullObject:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

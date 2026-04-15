@@ -13,13 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ShapeLineFormatData#dashStyle:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ShapeLineFormatUpdateData#dashStyle:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.ShapeLineFormat#dashStyle:member" /> (property type)
+  - <xref uid="excel!Excel.ShapeLineFormat#dashStyle:member" />
 
 isPreview: false
 isDeprecated: false

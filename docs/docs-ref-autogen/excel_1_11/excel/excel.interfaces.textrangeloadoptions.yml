@@ -15,7 +15,6 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TextFrameLoadOptions#textRange:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -33,8 +33,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#location:member" /> (property
-  type)
+  - <xref uid="outlook!Office.AppointmentCompose#location:member" />
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ArrayCellValue#referencedValues:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ArrayCellValue#referencedValues:member" />
 
-  - <xref uid="excel!Excel.EntityCellValue#referencedValues:member" /> (property
-  type)
+  - <xref uid="excel!Excel.EntityCellValue#referencedValues:member" />
 
 
   Learn more about the types in this type alias through the following links. 

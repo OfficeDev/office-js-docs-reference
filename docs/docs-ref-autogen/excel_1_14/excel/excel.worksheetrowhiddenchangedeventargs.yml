@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onRowHiddenChanged:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Worksheet#onRowHiddenChanged:member" />
 
   - <xref uid="excel!Excel.WorksheetCollection#onRowHiddenChanged:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

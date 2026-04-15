@@ -13,14 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TextFrameData#verticalAlignment:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.TextFrame#verticalAlignment:member" /> (property
-  type)
+  - <xref uid="excel!Excel.TextFrame#verticalAlignment:member" />
 
 isPreview: false
 isDeprecated: false

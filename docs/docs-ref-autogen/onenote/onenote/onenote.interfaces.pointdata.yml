@@ -9,11 +9,9 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.PointCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="onenote!OneNote.Interfaces.PointCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

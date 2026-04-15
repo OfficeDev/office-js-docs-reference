@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#document:member" /> (property type)
+  - <xref uid="office!Office.Binding#document:member" />
 
-  - <xref uid="office!Office.Bindings#document:member" /> (property type)
+  - <xref uid="office!Office.Bindings#document:member" />
 
-  - <xref uid="office!Office.Context#document:member" /> (property type)
+  - <xref uid="office!Office.Context#document:member" />
 
   - <xref uid="office!Office.DocumentSelectionChangedEventArgs#document:member"
-  /> (property type)
+  />
 
   #### Examples
 

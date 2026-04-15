@@ -11,16 +11,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.SlicerCollectionData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.SlicerCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#slicers:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#slicers:member" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#slicers:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#slicers:member" />
 
 isPreview: false
 isDeprecated: false

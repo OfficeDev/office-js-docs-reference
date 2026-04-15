@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.TableCell#column:member" /> (property type)
+  - <xref uid="word!Word.TableCell#column:member" />
 
-  - <xref uid="word!Word.TableColumnCollection#items:member" /> (property type)
+  - <xref uid="word!Word.TableColumnCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

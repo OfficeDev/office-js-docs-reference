@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Template#buildingBlockTypes:member" /> (property type)
+  - <xref uid="word!Word.Template#buildingBlockTypes:member" />
 
 isPreview: false
 isDeprecated: false

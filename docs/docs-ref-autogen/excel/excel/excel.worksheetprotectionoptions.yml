@@ -13,17 +13,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.WorksheetProtectionData#options:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetProtectionData#savedOptions:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.WorksheetProtection#options:member" /> (property
-  type)
+  - <xref uid="excel!Excel.WorksheetProtection#options:member" />
 
-  - <xref uid="excel!Excel.WorksheetProtection#savedOptions:member" /> (property
-  type)
+  - <xref uid="excel!Excel.WorksheetProtection#savedOptions:member" />
 
 isPreview: false
 isDeprecated: false

@@ -6,24 +6,17 @@ fullName: Office.FilterType
 summary: >-
   Specifies whether filtering from the Office application is applied when the
   data is retrieved.
-remarks: >-
+remarks: |-
 
 
 
   #### Used by
 
-
   - <xref uid="office!Office.GetBindingDataOptions#filterType:member" />
-  (property type)
-
   - <xref uid="office!Office.GetSelectedDataOptions#filterType:member" />
-  (property type)
-
   #### Examples
 
-
   ```TypeScript
-
   /* Set the selection options. These will:
    - Pass the string "myContext" to the callback.
    - Include both visible and hidden data.
@@ -36,9 +29,7 @@ remarks: >-
       valueFormat: Office.ValueFormat.Formatted
   }
 
-
   // Get the selected data in the Office document as text.
-
   Office.context.document.getSelectedDataAsync(
       Office.CoercionType.Text,
       options,
@@ -49,7 +40,6 @@ remarks: >-
               console.log(`The selected data is "${asyncResult.value}".`);
           }
   });
-
   ```
 
 isPreview: false

@@ -4,114 +4,57 @@ uid: onenote!OneNote.RequestContext:class
 package: onenote!
 fullName: OneNote.RequestContext
 summary: ''
-remarks: >-
+remarks: |-
+
 
 
   #### Used by
 
-
-  - <xref uid="onenote!OneNote.Application#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.FloatingInk#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.Image#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.InkAnalysis#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.InkAnalysisLine#context:member" /> (property
-  type)
-
+  - <xref uid="onenote!OneNote.Application#context:member" />
+  - <xref uid="onenote!OneNote.FloatingInk#context:member" />
+  - <xref uid="onenote!OneNote.Image#context:member" />
+  - <xref uid="onenote!OneNote.InkAnalysis#context:member" />
+  - <xref uid="onenote!OneNote.InkAnalysisLine#context:member" />
   - <xref uid="onenote!OneNote.InkAnalysisLineCollection#context:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.InkAnalysisParagraph#context:member" /> (property
-  type)
-
+  - <xref uid="onenote!OneNote.InkAnalysisParagraph#context:member" />
   - <xref uid="onenote!OneNote.InkAnalysisParagraphCollection#context:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.InkAnalysisWord#context:member" /> (property
-  type)
-
+  - <xref uid="onenote!OneNote.InkAnalysisWord#context:member" />
   - <xref uid="onenote!OneNote.InkAnalysisWordCollection#context:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.InkStroke#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.InkStrokeCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.InkWord#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.InkWordCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.Notebook#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.NotebookCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.NoteTag#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.Outline#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.Page#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.PageCollection#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.PageContent#context:member" /> (property type)
-
+  - <xref uid="onenote!OneNote.InkStroke#context:member" />
+  - <xref uid="onenote!OneNote.InkStrokeCollection#context:member" />
+  - <xref uid="onenote!OneNote.InkWord#context:member" />
+  - <xref uid="onenote!OneNote.InkWordCollection#context:member" />
+  - <xref uid="onenote!OneNote.Notebook#context:member" />
+  - <xref uid="onenote!OneNote.NotebookCollection#context:member" />
+  - <xref uid="onenote!OneNote.NoteTag#context:member" />
+  - <xref uid="onenote!OneNote.Outline#context:member" />
+  - <xref uid="onenote!OneNote.Page#context:member" />
+  - <xref uid="onenote!OneNote.PageCollection#context:member" />
+  - <xref uid="onenote!OneNote.PageContent#context:member" />
   - <xref uid="onenote!OneNote.PageContentCollection#context:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.Paragraph#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.ParagraphCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.Point#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.PointCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.RichText#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.Section#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.SectionCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.SectionGroup#context:member" /> (property type)
-
+  - <xref uid="onenote!OneNote.Paragraph#context:member" />
+  - <xref uid="onenote!OneNote.ParagraphCollection#context:member" />
+  - <xref uid="onenote!OneNote.Point#context:member" />
+  - <xref uid="onenote!OneNote.PointCollection#context:member" />
+  - <xref uid="onenote!OneNote.RichText#context:member" />
+  - <xref uid="onenote!OneNote.Section#context:member" />
+  - <xref uid="onenote!OneNote.SectionCollection#context:member" />
+  - <xref uid="onenote!OneNote.SectionGroup#context:member" />
   - <xref uid="onenote!OneNote.SectionGroupCollection#context:member" />
-  (property type)
-
-  - <xref uid="onenote!OneNote.Table#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.TableCell#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.TableCellCollection#context:member" /> (property
-  type)
-
-  - <xref uid="onenote!OneNote.TableRow#context:member" /> (property type)
-
-  - <xref uid="onenote!OneNote.TableRowCollection#context:member" /> (property
-  type)
-
+  - <xref uid="onenote!OneNote.Table#context:member" />
+  - <xref uid="onenote!OneNote.TableCell#context:member" />
+  - <xref uid="onenote!OneNote.TableCellCollection#context:member" />
+  - <xref uid="onenote!OneNote.TableRow#context:member" />
+  - <xref uid="onenote!OneNote.TableRowCollection#context:member" />
   #### Examples
 
-
   ```TypeScript
-
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
-
   // object to work with the Office file.
-
   await OneNote.run(async (context) => {
       const notebook = context.application.getActiveNotebook();
       // Interact with the OneNote notebook...
   });
-
   ```
 
 isPreview: false

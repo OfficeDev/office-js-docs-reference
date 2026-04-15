@@ -13,10 +13,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.SelectionConvertToTableOptions#format:member" />
-  (property type)
 
-  - <xref uid="word!Word.TableAutoFormatOptions#format:member" /> (property
-  type)
+  - <xref uid="word!Word.TableAutoFormatOptions#format:member" />
 
 isPreview: false
 isDeprecated: false

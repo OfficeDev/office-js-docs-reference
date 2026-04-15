@@ -4,18 +4,12 @@ uid: excel!Excel.Interfaces.ChartData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartData
 summary: An interface describing the data returned by calling `chart.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="excel!Excel.Interfaces.ChartCollectionData#items:member" />
-  (property type)
-
   - <xref uid="excel!Excel.Interfaces.ChartCollectionUpdateData#items:member" />
-  (property type)
-
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#charts:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#charts:member" />
 
 isPreview: false
 isDeprecated: false

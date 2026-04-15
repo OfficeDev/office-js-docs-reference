@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#indexes:member" /> (property type)
+  - <xref uid="word!Word.Document#indexes:member" />
 
 isPreview: false
 isDeprecated: false

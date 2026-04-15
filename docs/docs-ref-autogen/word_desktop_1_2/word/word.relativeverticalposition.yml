@@ -18,14 +18,12 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ShapeData#relativeVerticalPosition:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member" />
-  (property type)
 
-  - <xref uid="word!Word.Shape#relativeVerticalPosition:member" /> (property
-  type)
+  - <xref uid="word!Word.Shape#relativeVerticalPosition:member" />
 
   #### Examples
 

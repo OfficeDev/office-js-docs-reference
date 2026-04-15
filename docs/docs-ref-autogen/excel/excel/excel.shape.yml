@@ -17,23 +17,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.GeometricShape#shape:member" /> (property type)
+  - <xref uid="excel!Excel.GeometricShape#shape:member" />
 
-  - <xref uid="excel!Excel.GroupShapeCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.GroupShapeCollection#items:member" />
 
-  - <xref uid="excel!Excel.Image#shape:member" /> (property type)
+  - <xref uid="excel!Excel.Image#shape:member" />
 
-  - <xref uid="excel!Excel.Line#beginConnectedShape:member" /> (property type)
+  - <xref uid="excel!Excel.Line#beginConnectedShape:member" />
 
-  - <xref uid="excel!Excel.Line#endConnectedShape:member" /> (property type)
+  - <xref uid="excel!Excel.Line#endConnectedShape:member" />
 
-  - <xref uid="excel!Excel.Line#shape:member" /> (property type)
+  - <xref uid="excel!Excel.Line#shape:member" />
 
-  - <xref uid="excel!Excel.Shape#parentGroup:member" /> (property type)
+  - <xref uid="excel!Excel.Shape#parentGroup:member" />
 
-  - <xref uid="excel!Excel.ShapeCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.ShapeCollection#items:member" />
 
-  - <xref uid="excel!Excel.ShapeGroup#shape:member" /> (property type)
+  - <xref uid="excel!Excel.ShapeGroup#shape:member" />
 
 isPreview: false
 isDeprecated: false

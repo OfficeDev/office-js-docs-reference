@@ -6,27 +6,15 @@ fullName: Word.Interfaces.FontUpdateData
 summary: >-
   An interface for updating data on the `Font` object, for use in `font.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyUpdateData#font:member" /> (property
-  type)
-
+  - <xref uid="word!Word.Interfaces.BodyUpdateData#font:member" />
   - <xref uid="word!Word.Interfaces.ContentControlUpdateData#font:member" />
-  (property type)
-
   - <xref uid="word!Word.Interfaces.ParagraphUpdateData#font:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.TableRowUpdateData#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.TableUpdateData#font:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#font:member" />
+  - <xref uid="word!Word.Interfaces.TableRowUpdateData#font:member" />
+  - <xref uid="word!Word.Interfaces.TableUpdateData#font:member" />
 
 isPreview: false
 isDeprecated: false

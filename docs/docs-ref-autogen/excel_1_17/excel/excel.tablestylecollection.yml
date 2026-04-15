@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#tableStyles:member" /> (property type)
+  - <xref uid="excel!Excel.Workbook#tableStyles:member" />
 
 isPreview: false
 isDeprecated: false

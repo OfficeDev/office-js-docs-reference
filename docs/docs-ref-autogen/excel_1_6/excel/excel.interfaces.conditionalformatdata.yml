@@ -12,14 +12,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.RangeData#conditionalFormats:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

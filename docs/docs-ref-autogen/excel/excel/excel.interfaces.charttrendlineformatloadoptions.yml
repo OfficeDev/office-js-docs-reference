@@ -14,10 +14,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineCollectionLoadOptions#format:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartTrendlineLoadOptions#format:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

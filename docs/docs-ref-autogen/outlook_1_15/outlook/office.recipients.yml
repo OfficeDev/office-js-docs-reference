@@ -23,23 +23,20 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#optionalAttendees:member" />
-  (property type)
 
   - <xref uid="outlook!Office.AppointmentCompose#requiredAttendees:member" />
-  (property type)
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#bcc:member" /> (property
-  type)
+  - <xref uid="outlook!Office.LoadedMessageCompose#bcc:member" />
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#cc:member" /> (property type)
+  - <xref uid="outlook!Office.LoadedMessageCompose#cc:member" />
 
-  - <xref uid="outlook!Office.LoadedMessageCompose#to:member" /> (property type)
+  - <xref uid="outlook!Office.LoadedMessageCompose#to:member" />
 
-  - <xref uid="outlook!Office.MessageCompose#bcc:member" /> (property type)
+  - <xref uid="outlook!Office.MessageCompose#bcc:member" />
 
-  - <xref uid="outlook!Office.MessageCompose#cc:member" /> (property type)
+  - <xref uid="outlook!Office.MessageCompose#cc:member" />
 
-  - <xref uid="outlook!Office.MessageCompose#to:member" /> (property type)
+  - <xref uid="outlook!Office.MessageCompose#to:member" />
 
 isPreview: false
 isDeprecated: false

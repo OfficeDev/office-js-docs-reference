@@ -4,19 +4,13 @@ uid: word!Word.Interfaces.BodyData:interface
 package: word!
 fullName: Word.Interfaces.BodyData
 summary: An interface describing the data returned by calling `body.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="word!Word.Interfaces.DocumentCreatedData#body:member" />
-  (property type)
-
-  - <xref uid="word!Word.Interfaces.DocumentData#body:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.SectionData#body:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableCellData#body:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.DocumentData#body:member" />
+  - <xref uid="word!Word.Interfaces.SectionData#body:member" />
+  - <xref uid="word!Word.Interfaces.TableCellData#body:member" />
 
 isPreview: false
 isDeprecated: false

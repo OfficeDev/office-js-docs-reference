@@ -28,13 +28,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentRead#attachments:member" /> (property
-  type)
+  - <xref uid="outlook!Office.AppointmentRead#attachments:member" />
 
-  - <xref uid="outlook!Office.LoadedMessageRead#attachments:member" /> (property
-  type)
+  - <xref uid="outlook!Office.LoadedMessageRead#attachments:member" />
 
-  - <xref uid="outlook!Office.MessageRead#attachments:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#attachments:member" />
 
   #### Examples
 

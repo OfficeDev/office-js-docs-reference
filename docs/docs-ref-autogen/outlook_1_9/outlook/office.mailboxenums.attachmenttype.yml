@@ -19,16 +19,12 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AttachmentDetails#attachmentType:member" />
-  (property type)
 
   - <xref uid="outlook!Office.AttachmentDetailsCompose#attachmentType:member" />
-  (property type)
 
-  - <xref uid="outlook!Office.MessageFormAttachment#type:member" /> (property
-  type)
+  - <xref uid="outlook!Office.MessageFormAttachment#type:member" />
 
-  - <xref uid="outlook!Office.ReplyFormAttachment#type:member" /> (property
-  type)
+  - <xref uid="outlook!Office.ReplyFormAttachment#type:member" />
 
   #### Examples
 

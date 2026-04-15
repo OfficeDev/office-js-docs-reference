@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.BreakCollection#items:member" /> (property type)
+  - <xref uid="word!Word.BreakCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

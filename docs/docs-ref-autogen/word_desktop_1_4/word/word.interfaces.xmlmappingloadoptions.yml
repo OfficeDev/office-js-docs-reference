@@ -19,26 +19,25 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#xmlMapping:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#xmlMapping:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ContentControlLoadOptions#xmlMapping:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#xmlMapping:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.GroupContentControlLoadOptions#xmlMapping:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlLoadOptions#xmlMapping:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

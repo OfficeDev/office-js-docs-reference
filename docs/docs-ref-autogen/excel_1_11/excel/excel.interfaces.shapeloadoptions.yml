@@ -18,34 +18,27 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ImageLoadOptions#shape:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.Interfaces.LineLoadOptions#shape:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.LineLoadOptions#shape:member" />
 
   - <xref
   uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#parentGroup:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeGroupLoadOptions#shape:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ViewData#pageMovementType:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ViewUpdateData#pageMovementType:member" />
-  (property type)
 
-  - <xref uid="word!Word.View#pageMovementType:member" /> (property type)
+  - <xref uid="word!Word.View#pageMovementType:member" />
 
 isPreview: false
 isDeprecated: false

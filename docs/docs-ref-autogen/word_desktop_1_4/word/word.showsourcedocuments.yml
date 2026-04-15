@@ -13,12 +13,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.WindowData#showSourceDocuments:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.WindowUpdateData#showSourceDocuments:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Window#showSourceDocuments:member" /> (property type)
+  - <xref uid="word!Word.Window#showSourceDocuments:member" />
 
 isPreview: false
 isDeprecated: false

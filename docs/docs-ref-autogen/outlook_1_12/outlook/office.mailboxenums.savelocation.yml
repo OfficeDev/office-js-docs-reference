@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#getIsSaveToLocationAllowed:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.Mailbox#getIsSaveToLocationAllowed:member(1)" />
 
   #### Examples
 

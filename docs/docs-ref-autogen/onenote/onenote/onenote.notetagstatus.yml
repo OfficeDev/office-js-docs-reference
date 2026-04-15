@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.NoteTagData#status:member" />
-  (property type)
 
-  - <xref uid="onenote!OneNote.NoteTag#status:member" /> (property type)
+  - <xref uid="onenote!OneNote.NoteTag#status:member" />
 
 isPreview: false
 isDeprecated: false

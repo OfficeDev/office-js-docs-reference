@@ -15,14 +15,12 @@ remarks: >-
 
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontData#underline:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member" />
-  (property type)
 
-  - <xref uid="powerpoint!PowerPoint.ShapeFont#underline:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.ShapeFont#underline:member" />
 
   #### Examples
 

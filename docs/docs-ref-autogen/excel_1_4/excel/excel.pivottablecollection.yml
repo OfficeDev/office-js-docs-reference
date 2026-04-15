@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#pivotTables:member" /> (property type)
+  - <xref uid="excel!Excel.Workbook#pivotTables:member" />
 
-  - <xref uid="excel!Excel.Worksheet#pivotTables:member" /> (property type)
+  - <xref uid="excel!Excel.Worksheet#pivotTables:member" />
 
 isPreview: false
 isDeprecated: false

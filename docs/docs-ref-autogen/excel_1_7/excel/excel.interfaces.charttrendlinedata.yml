@@ -11,14 +11,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesData#trendlines:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartTrendlineCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

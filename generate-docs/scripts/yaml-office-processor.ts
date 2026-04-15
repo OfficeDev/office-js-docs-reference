@@ -408,23 +408,21 @@ function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex, availabl
 }
 
 /**
- * Deduplicates method overloads by removing the (1), (2) suffixes.
+ * Deduplicates method overloads by keeping only the first overload.
+ * Preserves the original UID with overload suffix for valid xref links.
  */
 function deduplicateMethodOverloads(references: UsedByReference[]): UsedByReference[] {
   const seen = new Set<string>();
   const result: UsedByReference[] = [];
 
   for (const ref of references) {
-    // Remove overload suffix from UID: ":member(1)" -> ":member"
+    // Get base UID for deduplication: ":member(1)" -> ":member"
     const baseUID = ref.uid.replace(/\(\d+\)$/, '');
 
     if (!seen.has(baseUID)) {
       seen.add(baseUID);
-      // Use the base UID without overload number
-      result.push({
-        ...ref,
-        uid: baseUID
-      });
+      // Keep the original UID with overload suffix for valid xref links
+      result.push(ref);
     }
   }
 
@@ -459,8 +457,9 @@ function generateUsedBySection(references: UsedByReference[]): string {
     refs.sort((a, b) => a.name.localeCompare(b.name));
 
     // Add each reference as a bullet point with xref link
+    // The xref will automatically display the clean API name (e.g., "Excel.TableChangedEventArgs.getRange")
     for (const ref of refs) {
-      lines.push(`- <xref uid="${ref.uid}" /> (${ref.contextText})`);
+      lines.push(`- <xref uid="${ref.uid}" />`);
     }
   }
 

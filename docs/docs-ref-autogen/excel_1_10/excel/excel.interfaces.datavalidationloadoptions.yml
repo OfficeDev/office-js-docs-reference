@@ -18,14 +18,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.RangeAreasLoadOptions#dataValidation:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.RangeCollectionLoadOptions#dataValidation:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

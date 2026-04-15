@@ -11,14 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeAreasCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.RangeAreasCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.WorkbookRangeAreasData#areas:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,13 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterPivotHierarchy#fields:member" /> (property
-  type)
+  - <xref uid="excel!Excel.FilterPivotHierarchy#fields:member" />
 
-  - <xref uid="excel!Excel.PivotHierarchy#fields:member" /> (property type)
+  - <xref uid="excel!Excel.PivotHierarchy#fields:member" />
 
-  - <xref uid="excel!Excel.RowColumnPivotHierarchy#fields:member" /> (property
-  type)
+  - <xref uid="excel!Excel.RowColumnPivotHierarchy#fields:member" />
 
 isPreview: false
 isDeprecated: false

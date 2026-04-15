@@ -13,15 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Comment#contentType:member" /> (property type)
+  - <xref uid="excel!Excel.Comment#contentType:member" />
 
-  - <xref uid="excel!Excel.CommentReply#contentType:member" /> (property type)
+  - <xref uid="excel!Excel.CommentReply#contentType:member" />
 
   - <xref uid="excel!Excel.Interfaces.CommentData#contentType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.CommentReplyData#contentType:member" />
-  (property type)
 
   #### Examples
 

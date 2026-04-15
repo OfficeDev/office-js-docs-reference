@@ -13,10 +13,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.SelectionMoveLeftRightOptions#extend:member" />
-  (property type)
 
-  - <xref uid="word!Word.SelectionMoveUpDownOptions#extend:member" /> (property
-  type)
+  - <xref uid="word!Word.SelectionMoveUpDownOptions#extend:member" />
 
 isPreview: false
 isDeprecated: false

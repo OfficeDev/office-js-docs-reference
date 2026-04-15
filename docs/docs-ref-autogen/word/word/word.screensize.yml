@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.WebSettingsData#screenSize:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.WebSettingsUpdateData#screenSize:member" />
-  (property type)
 
-  - <xref uid="word!Word.WebSettings#screenSize:member" /> (property type)
+  - <xref uid="word!Word.WebSettings#screenSize:member" />
 
 isPreview: false
 isDeprecated: false

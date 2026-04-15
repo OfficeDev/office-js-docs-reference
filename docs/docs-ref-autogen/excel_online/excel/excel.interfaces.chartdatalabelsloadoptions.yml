@@ -14,17 +14,15 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#dataLabels:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions#dataLabels:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

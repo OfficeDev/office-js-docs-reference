@@ -15,15 +15,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.IconSetConditionalFormat#criteria:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.IconSetConditionalFormatData#criteria:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Image#ocrData:member" /> (property type)
+  - <xref uid="onenote!OneNote.Image#ocrData:member" />
 
-  - <xref uid="onenote!OneNote.Interfaces.ImageData#ocrData:member" /> (property
-  type)
+  - <xref uid="onenote!OneNote.Interfaces.ImageData#ocrData:member" />
 
 isPreview: false
 isDeprecated: false

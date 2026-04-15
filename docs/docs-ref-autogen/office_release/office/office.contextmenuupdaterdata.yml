@@ -18,8 +18,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.ContextMenu#requestUpdate:member" /> (parameter
-  type)
+  - <xref uid="office!Office.ContextMenu#requestUpdate:member(1)" />
 
 isPreview: false
 isDeprecated: false

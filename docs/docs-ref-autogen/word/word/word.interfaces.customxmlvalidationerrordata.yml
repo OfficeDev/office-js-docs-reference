@@ -11,15 +11,14 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CustomXmlPartData#errors:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

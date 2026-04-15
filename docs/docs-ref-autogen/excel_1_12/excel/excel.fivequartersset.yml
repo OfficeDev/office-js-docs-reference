@@ -6,12 +6,10 @@ fullName: Excel.FiveQuartersSet
 summary: >-
   \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.IconCollections#fiveQuarters:member" /> (property
-  type)
+  - <xref uid="excel!Excel.IconCollections#fiveQuarters:member" />
 
 isPreview: false
 isDeprecated: false

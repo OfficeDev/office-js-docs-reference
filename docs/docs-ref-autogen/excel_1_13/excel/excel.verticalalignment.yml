@@ -14,25 +14,21 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.CellPropertiesFormat#verticalAlignment:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.StyleData#verticalAlignment:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.StyleUpdateData#verticalAlignment:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.RangeFormat#verticalAlignment:member" /> (property
-  type)
+  - <xref uid="excel!Excel.RangeFormat#verticalAlignment:member" />
 
-  - <xref uid="excel!Excel.Style#verticalAlignment:member" /> (property type)
+  - <xref uid="excel!Excel.Style#verticalAlignment:member" />
 
   #### Examples
 

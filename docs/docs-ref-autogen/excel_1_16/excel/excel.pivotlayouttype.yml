@@ -13,12 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotLayoutData#layoutType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData#layoutType:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.PivotLayout#layoutType:member" /> (property type)
+  - <xref uid="excel!Excel.PivotLayout#layoutType:member" />
 
 isPreview: false
 isDeprecated: false

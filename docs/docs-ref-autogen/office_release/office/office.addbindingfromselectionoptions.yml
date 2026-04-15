@@ -4,12 +4,10 @@ uid: office!Office.AddBindingFromSelectionOptions:interface
 package: office!
 fullName: Office.AddBindingFromSelectionOptions
 summary: Provides options for identifying the binding that is created.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member" />
-  (parameter type)
+  - <xref uid="office!Office.Bindings#addFromSelectionAsync:member(1)" />
 
 isPreview: false
 isDeprecated: false

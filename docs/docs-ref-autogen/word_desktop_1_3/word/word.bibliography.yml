@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#bibliography:member" /> (property type)
+  - <xref uid="word!Word.Application#bibliography:member" />
 
-  - <xref uid="word!Word.Document#bibliography:member" /> (property type)
+  - <xref uid="word!Word.Document#bibliography:member" />
 
 isPreview: false
 isDeprecated: false

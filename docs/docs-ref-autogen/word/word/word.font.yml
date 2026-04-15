@@ -10,29 +10,28 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#font:member" /> (property type)
+  - <xref uid="word!Word.Body#font:member" />
 
-  - <xref uid="word!Word.ConditionalStyle#font:member" /> (property type)
+  - <xref uid="word!Word.ConditionalStyle#font:member" />
 
-  - <xref uid="word!Word.ContentControl#font:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#font:member" />
 
-  - <xref uid="word!Word.ListLevel#font:member" /> (property type)
+  - <xref uid="word!Word.ListLevel#font:member" />
 
-  - <xref uid="word!Word.Paragraph#font:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#font:member" />
 
-  - <xref uid="word!Word.Range#font:member" /> (property type)
+  - <xref uid="word!Word.Range#font:member" />
 
-  - <xref uid="word!Word.Selection#font:member" /> (property type)
+  - <xref uid="word!Word.Selection#font:member" />
 
-  - <xref uid="word!Word.Style#font:member" /> (property type)
+  - <xref uid="word!Word.Style#font:member" />
 
-  - <xref uid="word!Word.Table#font:member" /> (property type)
+  - <xref uid="word!Word.Table#font:member" />
 
-  - <xref uid="word!Word.TableRow#font:member" /> (property type)
+  - <xref uid="word!Word.TableRow#font:member" />
 
   #### Examples
 

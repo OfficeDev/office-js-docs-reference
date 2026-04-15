@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.Interfaces.NoteTagData#type:member" /> (property
-  type)
+  - <xref uid="onenote!OneNote.Interfaces.NoteTagData#type:member" />
 
-  - <xref uid="onenote!OneNote.NoteTag#type:member" /> (property type)
+  - <xref uid="onenote!OneNote.NoteTag#type:member" />
 
 isPreview: false
 isDeprecated: false

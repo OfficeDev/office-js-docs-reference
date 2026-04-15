@@ -16,13 +16,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ListLevelData#trailingCharacter:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ListLevelUpdateData#trailingCharacter:member" />
-  (property type)
 
-  - <xref uid="word!Word.ListLevel#trailingCharacter:member" /> (property type)
+  - <xref uid="word!Word.ListLevel#trailingCharacter:member" />
 
   #### Examples
 

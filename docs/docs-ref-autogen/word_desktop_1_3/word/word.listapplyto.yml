@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ListTemplateApplyOptions#applyTo:member" /> (property
-  type)
+  - <xref uid="word!Word.ListTemplateApplyOptions#applyTo:member" />
 
 isPreview: false
 isDeprecated: false

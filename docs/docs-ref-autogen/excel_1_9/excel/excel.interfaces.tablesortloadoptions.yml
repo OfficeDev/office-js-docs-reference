@@ -13,14 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#sort:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.TableLoadOptions#sort:member" />
 
   - <xref
   uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#sort:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

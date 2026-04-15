@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.PageContent#image:member" /> (property type)
+  - <xref uid="onenote!OneNote.PageContent#image:member" />
 
-  - <xref uid="onenote!OneNote.Paragraph#image:member" /> (property type)
+  - <xref uid="onenote!OneNote.Paragraph#image:member" />
 
 isPreview: false
 isDeprecated: false

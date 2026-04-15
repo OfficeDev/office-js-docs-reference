@@ -12,25 +12,21 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterData#centerFooterPicture:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterData#centerHeaderPicture:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.HeaderFooterData#leftFooterPicture:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.HeaderFooterData#leftHeaderPicture:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterData#rightFooterPicture:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterData#rightHeaderPicture:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

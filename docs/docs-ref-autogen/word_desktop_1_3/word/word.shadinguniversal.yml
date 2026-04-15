@@ -14,13 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Frame#shading:member" /> (property type)
+  - <xref uid="word!Word.Frame#shading:member" />
 
-  - <xref uid="word!Word.Paragraph#shading:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#shading:member" />
 
-  - <xref uid="word!Word.Range#shading:member" /> (property type)
+  - <xref uid="word!Word.Range#shading:member" />
 
-  - <xref uid="word!Word.TableColumn#shading:member" /> (property type)
+  - <xref uid="word!Word.TableColumn#shading:member" />
 
 isPreview: false
 isDeprecated: false

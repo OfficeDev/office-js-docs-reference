@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ShapeGroup#shapes:member" /> (property type)
+  - <xref uid="excel!Excel.ShapeGroup#shapes:member" />
 
 isPreview: false
 isDeprecated: false

@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#view:member" /> (property type)
+  - <xref uid="visio!Visio.Interfaces.ShapeData#view:member" />
 
 isPreview: false
 isDeprecated: false

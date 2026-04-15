@@ -11,31 +11,25 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeData#ownerPart:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.CustomXmlPartCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.DocumentCreatedData#customXmlParts:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.DocumentData#customXmlParts:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.XmlMappingData#customXmlPart:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

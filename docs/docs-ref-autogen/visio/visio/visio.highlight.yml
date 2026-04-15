@@ -14,12 +14,10 @@ remarks: >-
 
 
   - <xref uid="visio!Visio.Interfaces.ShapeViewData#highlight:member" />
-  (property type)
 
   - <xref uid="visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member" />
-  (property type)
 
-  - <xref uid="visio!Visio.ShapeView#highlight:member" /> (property type)
+  - <xref uid="visio!Visio.ShapeView#highlight:member" />
 
 isPreview: false
 isDeprecated: false

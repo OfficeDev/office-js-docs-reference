@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.FontData#glow:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.FontData#glow:member" />
 
 isPreview: false
 isDeprecated: false

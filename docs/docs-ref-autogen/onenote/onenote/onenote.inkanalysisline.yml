@@ -15,9 +15,8 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.InkAnalysisLineCollection#items:member" />
-  (property type)
 
-  - <xref uid="onenote!OneNote.InkAnalysisWord#line:member" /> (property type)
+  - <xref uid="onenote!OneNote.InkAnalysisWord#line:member" />
 
 isPreview: false
 isDeprecated: false

@@ -11,14 +11,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ListTemplateCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ListTemplateCollectionUpdateData#items:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.StyleData#listTemplate:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.StyleData#listTemplate:member" />
 
 isPreview: false
 isDeprecated: false

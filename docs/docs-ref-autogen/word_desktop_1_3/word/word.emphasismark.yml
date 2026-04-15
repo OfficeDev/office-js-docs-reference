@@ -14,13 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#emphasisMark:member" /> (property type)
+  - <xref uid="word!Word.Font#emphasisMark:member" />
 
-  - <xref uid="word!Word.Interfaces.FontData#emphasisMark:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FontData#emphasisMark:member" />
 
   - <xref uid="word!Word.Interfaces.FontUpdateData#emphasisMark:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

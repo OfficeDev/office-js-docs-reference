@@ -10,19 +10,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#builtInDocumentProperties:member" /> (property
-  type)
+  - <xref uid="word!Word.Document#builtInDocumentProperties:member" />
 
-  - <xref uid="word!Word.Document#customDocumentProperties:member" /> (property
-  type)
+  - <xref uid="word!Word.Document#customDocumentProperties:member" />
 
-  - <xref uid="word!Word.Document#properties:member" /> (property type)
+  - <xref uid="word!Word.Document#properties:member" />
 
-  - <xref uid="word!Word.DocumentCreated#properties:member" /> (property type)
+  - <xref uid="word!Word.DocumentCreated#properties:member" />
 
   #### Examples
 

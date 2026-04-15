@@ -13,10 +13,8 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.WorksheetProtectionData#options:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.WorksheetProtection#options:member" /> (property
-  type)
+  - <xref uid="excel!Excel.WorksheetProtection#options:member" />
 
 isPreview: false
 isDeprecated: false

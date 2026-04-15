@@ -14,19 +14,18 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSet:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#iconSetOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#iconSetOrNullObject:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

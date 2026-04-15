@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidationErrorAlert#style:member" /> (property
-  type)
+  - <xref uid="excel!Excel.DataValidationErrorAlert#style:member" />
 
 isPreview: false
 isDeprecated: false

@@ -15,34 +15,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CommentEventArgs#source:member" /> (property type)
+  - <xref uid="word!Word.CommentEventArgs#source:member" />
 
   - <xref uid="word!Word.ContentControlAddedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlDataChangedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlDeletedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlEnteredEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlExitedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlSelectionChangedEventArgs#source:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.ParagraphAddedEventArgs#source:member" /> (property
-  type)
+  - <xref uid="word!Word.ParagraphAddedEventArgs#source:member" />
 
-  - <xref uid="word!Word.ParagraphChangedEventArgs#source:member" /> (property
-  type)
+  - <xref uid="word!Word.ParagraphChangedEventArgs#source:member" />
 
-  - <xref uid="word!Word.ParagraphDeletedEventArgs#source:member" /> (property
-  type)
+  - <xref uid="word!Word.ParagraphDeletedEventArgs#source:member" />
 
   #### Examples
 

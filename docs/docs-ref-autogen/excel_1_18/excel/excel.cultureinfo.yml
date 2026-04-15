@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#cultureInfo:member" /> (property type)
+  - <xref uid="excel!Excel.Application#cultureInfo:member" />
 
 isPreview: false
 isDeprecated: false

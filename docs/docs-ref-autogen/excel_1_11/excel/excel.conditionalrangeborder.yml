@@ -13,19 +13,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.ConditionalRangeBorderCollection#bottom:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ConditionalRangeBorderCollection#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ConditionalRangeBorderCollection#left:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ConditionalRangeBorderCollection#right:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ConditionalRangeBorderCollection#top:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

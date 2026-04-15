@@ -16,14 +16,12 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TextFrameData#autoSizeSetting:member" />
-  (property type)
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#autoSizeSetting:member"
-  /> (property type)
+  />
 
   - <xref uid="powerpoint!PowerPoint.TextFrame#autoSizeSetting:member" />
-  (property type)
 
   #### Examples
 

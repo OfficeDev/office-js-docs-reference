@@ -10,45 +10,38 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#parentTable:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#parentTable:member" />
 
   - <xref uid="word!Word.ContentControl#parentTableOrNullObject:member" />
-  (property type)
 
-  - <xref uid="word!Word.Field#parentTable:member" /> (property type)
+  - <xref uid="word!Word.Field#parentTable:member" />
 
-  - <xref uid="word!Word.Field#parentTableOrNullObject:member" /> (property
-  type)
+  - <xref uid="word!Word.Field#parentTableOrNullObject:member" />
 
-  - <xref uid="word!Word.InlinePicture#parentTable:member" /> (property type)
+  - <xref uid="word!Word.InlinePicture#parentTable:member" />
 
   - <xref uid="word!Word.InlinePicture#parentTableOrNullObject:member" />
-  (property type)
 
-  - <xref uid="word!Word.Paragraph#parentTable:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#parentTable:member" />
 
-  - <xref uid="word!Word.Paragraph#parentTableOrNullObject:member" /> (property
-  type)
+  - <xref uid="word!Word.Paragraph#parentTableOrNullObject:member" />
 
-  - <xref uid="word!Word.Range#parentTable:member" /> (property type)
+  - <xref uid="word!Word.Range#parentTable:member" />
 
-  - <xref uid="word!Word.Range#parentTableOrNullObject:member" /> (property
-  type)
+  - <xref uid="word!Word.Range#parentTableOrNullObject:member" />
 
-  - <xref uid="word!Word.Table#parentTable:member" /> (property type)
+  - <xref uid="word!Word.Table#parentTable:member" />
 
-  - <xref uid="word!Word.Table#parentTableOrNullObject:member" /> (property
-  type)
+  - <xref uid="word!Word.Table#parentTableOrNullObject:member" />
 
-  - <xref uid="word!Word.TableCell#parentTable:member" /> (property type)
+  - <xref uid="word!Word.TableCell#parentTable:member" />
 
-  - <xref uid="word!Word.TableCollection#items:member" /> (property type)
+  - <xref uid="word!Word.TableCollection#items:member" />
 
-  - <xref uid="word!Word.TableRow#parentTable:member" /> (property type)
+  - <xref uid="word!Word.TableRow#parentTable:member" />
 
   #### Examples
 

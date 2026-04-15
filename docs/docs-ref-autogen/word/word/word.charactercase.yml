@@ -12,12 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.RangeData#case:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.RangeData#case:member" />
 
-  - <xref uid="word!Word.Interfaces.RangeUpdateData#case:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RangeUpdateData#case:member" />
 
-  - <xref uid="word!Word.Range#case:member" /> (property type)
+  - <xref uid="word!Word.Range#case:member" />
 
 isPreview: false
 isDeprecated: false

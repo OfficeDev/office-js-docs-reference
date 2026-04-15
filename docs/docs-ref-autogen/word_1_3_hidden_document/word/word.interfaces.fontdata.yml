@@ -4,23 +4,15 @@ uid: word!Word.Interfaces.FontData:interface
 package: word!
 fullName: Word.Interfaces.FontData
 summary: An interface describing the data returned by calling `font.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.BodyData#font:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.ContentControlData#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.ParagraphData#font:member" /> (property
-  type)
-
-  - <xref uid="word!Word.Interfaces.RangeData#font:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableData#font:member" /> (property type)
-
-  - <xref uid="word!Word.Interfaces.TableRowData#font:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.BodyData#font:member" />
+  - <xref uid="word!Word.Interfaces.ContentControlData#font:member" />
+  - <xref uid="word!Word.Interfaces.ParagraphData#font:member" />
+  - <xref uid="word!Word.Interfaces.RangeData#font:member" />
+  - <xref uid="word!Word.Interfaces.TableData#font:member" />
+  - <xref uid="word!Word.Interfaces.TableRowData#font:member" />
 
 isPreview: false
 isDeprecated: false

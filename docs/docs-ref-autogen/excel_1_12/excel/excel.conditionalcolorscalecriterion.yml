@@ -14,13 +14,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.ConditionalColorScaleCriteria#maximum:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ConditionalColorScaleCriteria#midpoint:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ConditionalColorScaleCriteria#minimum:member" />
-  (property type)
 
   #### Examples
 

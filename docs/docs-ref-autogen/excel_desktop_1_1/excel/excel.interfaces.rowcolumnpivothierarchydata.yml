@@ -11,18 +11,17 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotTableData#columnHierarchies:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.PivotTableData#rowHierarchies:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -13,15 +13,12 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.HeaderFooterGroup#defaultForAllPages:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.HeaderFooterGroup#evenPages:member" /> (property
-  type)
+  - <xref uid="excel!Excel.HeaderFooterGroup#evenPages:member" />
 
-  - <xref uid="excel!Excel.HeaderFooterGroup#firstPage:member" /> (property
-  type)
+  - <xref uid="excel!Excel.HeaderFooterGroup#firstPage:member" />
 
-  - <xref uid="excel!Excel.HeaderFooterGroup#oddPages:member" /> (property type)
+  - <xref uid="excel!Excel.HeaderFooterGroup#oddPages:member" />
 
 isPreview: false
 isDeprecated: false

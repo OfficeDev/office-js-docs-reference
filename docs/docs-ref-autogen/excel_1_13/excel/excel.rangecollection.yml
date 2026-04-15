@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.RangeAreas#areas:member" /> (property type)
+  - <xref uid="excel!Excel.RangeAreas#areas:member" />
 
-  - <xref uid="excel!Excel.WorkbookRangeAreas#ranges:member" /> (property type)
+  - <xref uid="excel!Excel.WorkbookRangeAreas#ranges:member" />
 
 isPreview: false
 isDeprecated: false

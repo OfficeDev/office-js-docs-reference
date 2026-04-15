@@ -21,33 +21,28 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentForm#optionalAttendees:member" />
-  (property type)
 
   - <xref uid="outlook!Office.AppointmentForm#requiredAttendees:member" />
-  (property type)
 
   - <xref uid="outlook!Office.AppointmentRead#optionalAttendees:member" />
-  (property type)
 
-  - <xref uid="outlook!Office.AppointmentRead#organizer:member" /> (property
-  type)
+  - <xref uid="outlook!Office.AppointmentRead#organizer:member" />
 
   - <xref uid="outlook!Office.AppointmentRead#requiredAttendees:member" />
-  (property type)
 
-  - <xref uid="outlook!Office.MessageRead#cc:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#cc:member" />
 
-  - <xref uid="outlook!Office.MessageRead#from:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#from:member" />
 
-  - <xref uid="outlook!Office.MessageRead#sender:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#sender:member" />
 
-  - <xref uid="outlook!Office.MessageRead#to:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#to:member" />
 
-  - <xref uid="outlook!Office.Recipients#addAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Recipients#addAsync:member(1)" />
 
-  - <xref uid="outlook!Office.Recipients#getAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Recipients#getAsync:member(1)" />
 
-  - <xref uid="outlook!Office.Recipients#setAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Recipients#setAsync:member(1)" />
 
 isPreview: false
 isDeprecated: false

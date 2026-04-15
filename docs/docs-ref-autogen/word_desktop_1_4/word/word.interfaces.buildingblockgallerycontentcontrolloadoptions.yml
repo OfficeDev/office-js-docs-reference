@@ -14,11 +14,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#buildingBlockGalleryContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#buildingBlockGalleryContentControl:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

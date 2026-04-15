@@ -12,7 +12,6 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.FontUpdateData#threeDimensionalFormat:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

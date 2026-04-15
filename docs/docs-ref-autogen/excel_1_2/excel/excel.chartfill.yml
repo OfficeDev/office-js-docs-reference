@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAreaFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAreaFormat#fill:member" />
 
-  - <xref uid="excel!Excel.ChartDataLabelFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.ChartDataLabelFormat#fill:member" />
 
-  - <xref uid="excel!Excel.ChartLegendFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.ChartLegendFormat#fill:member" />
 
-  - <xref uid="excel!Excel.ChartPointFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.ChartPointFormat#fill:member" />
 
-  - <xref uid="excel!Excel.ChartSeriesFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.ChartSeriesFormat#fill:member" />
 
-  - <xref uid="excel!Excel.ChartTitleFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.ChartTitleFormat#fill:member" />
 
 isPreview: false
 isDeprecated: false

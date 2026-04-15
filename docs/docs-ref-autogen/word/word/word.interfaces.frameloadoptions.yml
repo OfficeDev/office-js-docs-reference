@@ -15,10 +15,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#frame:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.StyleLoadOptions#frame:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.StyleLoadOptions#frame:member" />
 
 isPreview: false
 isDeprecated: false

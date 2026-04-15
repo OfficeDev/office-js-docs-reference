@@ -12,15 +12,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onSelectionChanged:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Worksheet#onSelectionChanged:member" />
 
   - <xref uid="excel!Excel.WorksheetCollection#onSelectionChanged:member" />
-  (property type)
 
   #### Examples
 

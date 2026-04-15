@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#names:member" /> (property type)
+  - <xref uid="excel!Excel.Workbook#names:member" />
 
-  - <xref uid="excel!Excel.Worksheet#names:member" /> (property type)
+  - <xref uid="excel!Excel.Worksheet#names:member" />
 
 isPreview: false
 isDeprecated: false

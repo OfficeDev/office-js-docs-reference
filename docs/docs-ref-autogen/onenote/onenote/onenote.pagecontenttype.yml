@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.PageContentData#type:member" />
-  (property type)
 
-  - <xref uid="onenote!OneNote.PageContent#type:member" /> (property type)
+  - <xref uid="onenote!OneNote.PageContent#type:member" />
 
 isPreview: false
 isDeprecated: false

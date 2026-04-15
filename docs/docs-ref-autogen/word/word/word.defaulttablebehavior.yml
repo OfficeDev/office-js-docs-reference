@@ -14,7 +14,6 @@ remarks: >-
 
   - <xref
   uid="word!Word.SelectionConvertToTableOptions#defaultTableBehavior:member" />
-  (property type)
 
 isPreview: true
 isDeprecated: false

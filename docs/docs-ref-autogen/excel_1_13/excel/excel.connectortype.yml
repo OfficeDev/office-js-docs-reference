@@ -14,12 +14,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.LineData#connectorType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.LineUpdateData#connectorType:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Line#connectorType:member" /> (property type)
+  - <xref uid="excel!Excel.Line#connectorType:member" />
 
   #### Examples
 

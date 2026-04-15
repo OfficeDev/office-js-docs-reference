@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.InkAnalysisParagraph#inkAnalysis:member" />
-  (property type)
 
-  - <xref uid="onenote!OneNote.Page#inkAnalysisOrNull:member" /> (property type)
+  - <xref uid="onenote!OneNote.Page#inkAnalysisOrNull:member" />
 
 isPreview: false
 isDeprecated: false

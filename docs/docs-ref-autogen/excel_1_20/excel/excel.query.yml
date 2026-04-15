@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.QueryCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.QueryCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

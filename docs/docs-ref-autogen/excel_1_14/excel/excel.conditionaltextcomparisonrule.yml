@@ -13,13 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TextConditionalFormatData#rule:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.TextConditionalFormat#rule:member" /> (property type)
+  - <xref uid="excel!Excel.TextConditionalFormat#rule:member" />
 
 isPreview: false
 isDeprecated: false

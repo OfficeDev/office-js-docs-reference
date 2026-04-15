@@ -23,13 +23,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Categories#getAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Categories#getAsync:member(1)" />
 
-  - <xref uid="outlook!Office.MasterCategories#addAsync:member" /> (parameter
-  type)
+  - <xref uid="outlook!Office.MasterCategories#addAsync:member(1)" />
 
-  - <xref uid="outlook!Office.MasterCategories#getAsync:member" /> (parameter
-  type)
+  - <xref uid="outlook!Office.MasterCategories#getAsync:member(1)" />
 
   #### Examples
 

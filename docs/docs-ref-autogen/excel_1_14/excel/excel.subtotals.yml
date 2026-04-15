@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotFieldData#subtotals:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.PivotField#subtotals:member" /> (property type)
+  - <xref uid="excel!Excel.PivotField#subtotals:member" />
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.XmlNodeData#validationStatus:member" />
-  (property type)
 
-  - <xref uid="word!Word.XmlNode#validationStatus:member" /> (property type)
+  - <xref uid="word!Word.XmlNode#validationStatus:member" />
 
 isPreview: false
 isDeprecated: false

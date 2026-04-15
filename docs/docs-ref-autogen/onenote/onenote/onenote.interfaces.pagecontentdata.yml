@@ -12,14 +12,12 @@ remarks: >-
 
   - <xref
   uid="onenote!OneNote.Interfaces.PageContentCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="onenote!OneNote.Interfaces.PageContentCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
-  - <xref uid="onenote!OneNote.Interfaces.PageData#contents:member" /> (property
-  type)
+  - <xref uid="onenote!OneNote.Interfaces.PageData#contents:member" />
 
 isPreview: false
 isDeprecated: false

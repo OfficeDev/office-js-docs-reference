@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BooleanCellValue#layouts:member" /> (property type)
+  - <xref uid="excel!Excel.BooleanCellValue#layouts:member" />
 
-  - <xref uid="excel!Excel.DoubleCellValue#layouts:member" /> (property type)
+  - <xref uid="excel!Excel.DoubleCellValue#layouts:member" />
 
-  - <xref uid="excel!Excel.StringCellValue#layouts:member" /> (property type)
+  - <xref uid="excel!Excel.StringCellValue#layouts:member" />
 
 isPreview: false
 isDeprecated: false

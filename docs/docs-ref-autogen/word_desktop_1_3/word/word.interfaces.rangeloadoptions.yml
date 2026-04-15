@@ -13,61 +13,49 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" />
 
   - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

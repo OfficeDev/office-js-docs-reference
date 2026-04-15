@@ -11,24 +11,20 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BorderUniversalCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.BorderUniversalCollectionUpdateData#items:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FontData#borders:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.FontData#borders:member" />
 
-  - <xref uid="word!Word.Interfaces.FrameData#borders:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.FrameData#borders:member" />
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#borders:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ParagraphData#borders:member" />
 
-  - <xref uid="word!Word.Interfaces.SectionData#borders:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.SectionData#borders:member" />
 
-  - <xref uid="word!Word.Interfaces.TableColumnData#borders:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.TableColumnData#borders:member" />
 
 isPreview: false
 isDeprecated: false

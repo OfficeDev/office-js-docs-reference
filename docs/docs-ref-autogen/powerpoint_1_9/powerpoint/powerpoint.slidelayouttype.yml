@@ -14,9 +14,8 @@ remarks: >-
 
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutData#type:member" />
-  (property type)
 
-  - <xref uid="powerpoint!PowerPoint.SlideLayout#type:member" /> (property type)
+  - <xref uid="powerpoint!PowerPoint.SlideLayout#type:member" />
 
 isPreview: false
 isDeprecated: false

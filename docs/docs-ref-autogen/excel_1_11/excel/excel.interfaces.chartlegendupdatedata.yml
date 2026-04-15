@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartLegendUpdateData
 summary: >-
   An interface for updating data on the `ChartLegend` object, for use in
   `chartLegend.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="excel!Excel.Interfaces.ChartUpdateData#legend:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

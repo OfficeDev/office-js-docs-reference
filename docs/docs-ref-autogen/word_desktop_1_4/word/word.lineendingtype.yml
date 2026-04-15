@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#textLineEnding:member" /> (property type)
+  - <xref uid="word!Word.Document#textLineEnding:member" />
 
   - <xref uid="word!Word.Interfaces.DocumentData#textLineEnding:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.DocumentUpdateData#textLineEnding:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

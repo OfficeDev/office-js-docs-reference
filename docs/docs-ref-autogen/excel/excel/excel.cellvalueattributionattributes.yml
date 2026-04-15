@@ -16,13 +16,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.CellValuePropertyMetadata#attribution:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.LocalImageCellValue#attribution:member" /> (property
-  type)
+  - <xref uid="excel!Excel.LocalImageCellValue#attribution:member" />
 
-  - <xref uid="excel!Excel.WebImageCellValue#attribution:member" /> (property
-  type)
+  - <xref uid="excel!Excel.WebImageCellValue#attribution:member" />
 
 isPreview: false
 isDeprecated: false

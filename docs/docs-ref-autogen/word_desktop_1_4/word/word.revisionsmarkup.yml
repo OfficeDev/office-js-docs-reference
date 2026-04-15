@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.RevisionsFilterData#markup:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RevisionsFilterUpdateData#markup:member" />
-  (property type)
 
-  - <xref uid="word!Word.RevisionsFilter#markup:member" /> (property type)
+  - <xref uid="word!Word.RevisionsFilter#markup:member" />
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Coauthor#locks:member" /> (property type)
+  - <xref uid="word!Word.Coauthor#locks:member" />
 
-  - <xref uid="word!Word.Coauthoring#locks:member" /> (property type)
+  - <xref uid="word!Word.Coauthoring#locks:member" />
 
 isPreview: false
 isDeprecated: false

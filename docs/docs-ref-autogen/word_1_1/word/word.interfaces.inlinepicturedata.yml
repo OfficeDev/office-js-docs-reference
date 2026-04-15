@@ -10,21 +10,16 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BodyData#inlinePictures:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BodyData#inlinePictures:member" />
 
   - <xref uid="word!Word.Interfaces.ContentControlData#inlinePictures:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.InlinePictureCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ParagraphData#inlinePictures:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

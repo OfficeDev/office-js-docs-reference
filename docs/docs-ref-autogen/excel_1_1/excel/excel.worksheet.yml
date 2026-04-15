@@ -18,9 +18,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Range#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.Range#worksheet:member" />
 
-  - <xref uid="excel!Excel.WorksheetCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.WorksheetCollection#items:member" />
 
   #### Examples
 

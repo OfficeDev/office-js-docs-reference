@@ -12,17 +12,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#activeWindow:member" /> (property type)
+  - <xref uid="word!Word.Document#activeWindow:member" />
 
-  - <xref uid="word!Word.Window#next:member" /> (property type)
+  - <xref uid="word!Word.Window#next:member" />
 
-  - <xref uid="word!Word.Window#previous:member" /> (property type)
+  - <xref uid="word!Word.Window#previous:member" />
 
-  - <xref uid="word!Word.WindowCollection#items:member" /> (property type)
+  - <xref uid="word!Word.WindowCollection#items:member" />
 
   #### Examples
 

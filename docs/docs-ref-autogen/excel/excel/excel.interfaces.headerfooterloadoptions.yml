@@ -14,19 +14,16 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#defaultForAllPages:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#evenPages:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#firstPage:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions#oddPages:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

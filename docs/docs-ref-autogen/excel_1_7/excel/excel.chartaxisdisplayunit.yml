@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#displayUnit:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAxis#displayUnit:member" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisData#displayUnit:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#displayUnit:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

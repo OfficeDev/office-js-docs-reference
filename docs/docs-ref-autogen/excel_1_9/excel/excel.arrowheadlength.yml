@@ -14,21 +14,18 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.LineData#beginArrowheadLength:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.LineData#endArrowheadLength:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.LineUpdateData#endArrowheadLength:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.Line#beginArrowheadLength:member" /> (property type)
+  - <xref uid="excel!Excel.Line#beginArrowheadLength:member" />
 
-  - <xref uid="excel!Excel.Line#endArrowheadLength:member" /> (property type)
+  - <xref uid="excel!Excel.Line#endArrowheadLength:member" />
 
   #### Examples
 

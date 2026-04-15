@@ -34,14 +34,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.SensitivityLabel#setAsync:member" /> (parameter
-  type)
+  - <xref uid="outlook!Office.SensitivityLabel#setAsync:member(1)" />
 
   - <xref uid="outlook!Office.SensitivityLabelDetails#children:member" />
-  (property type)
 
-  - <xref uid="outlook!Office.SensitivityLabelsCatalog#getAsync:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.SensitivityLabelsCatalog#getAsync:member(1)" />
 
   #### Examples
 

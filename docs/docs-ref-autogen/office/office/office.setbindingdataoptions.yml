@@ -9,7 +9,7 @@ remarks: |-
 
   #### Used by
 
-  - <xref uid="office!Office.Binding#setDataAsync:member" /> (parameter type)
+  - <xref uid="office!Office.Binding#setDataAsync:member(1)" />
 
 isPreview: false
 isDeprecated: false

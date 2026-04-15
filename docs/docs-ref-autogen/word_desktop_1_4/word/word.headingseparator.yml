@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Index#headingSeparator:member" /> (property type)
+  - <xref uid="word!Word.Index#headingSeparator:member" />
 
-  - <xref uid="word!Word.IndexAddOptions#headingSeparator:member" /> (property
-  type)
+  - <xref uid="word!Word.IndexAddOptions#headingSeparator:member" />
 
   - <xref uid="word!Word.Interfaces.IndexData#headingSeparator:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

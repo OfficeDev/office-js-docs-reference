@@ -11,12 +11,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="visio!Visio.Document#onPageLoadComplete:member" /> (property
-  type)
+  - <xref uid="visio!Visio.Document#onPageLoadComplete:member" />
 
   #### Examples
 

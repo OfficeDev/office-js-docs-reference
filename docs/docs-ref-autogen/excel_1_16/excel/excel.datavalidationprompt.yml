@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidation#prompt:member" /> (property type)
+  - <xref uid="excel!Excel.DataValidation#prompt:member" />
 
   - <xref uid="excel!Excel.Interfaces.DataValidationData#prompt:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.DataValidationUpdateData#prompt:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

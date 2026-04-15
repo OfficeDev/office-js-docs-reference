@@ -26,7 +26,6 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#isAllDayEvent:member" />
-  (property type)
 
 isPreview: true
 isDeprecated: false

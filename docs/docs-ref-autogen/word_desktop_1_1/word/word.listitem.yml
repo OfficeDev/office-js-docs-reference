@@ -10,14 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Paragraph#listItem:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#listItem:member" />
 
-  - <xref uid="word!Word.Paragraph#listItemOrNullObject:member" /> (property
-  type)
+  - <xref uid="word!Word.Paragraph#listItemOrNullObject:member" />
 
   #### Examples
 

@@ -14,23 +14,17 @@ remarks: >-
 
 
   - <xref uid="word!Word.ContentControlAddedEventArgs#eventType:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlDataChangedEventArgs#eventType:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlDeletedEventArgs#eventType:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlEnteredEventArgs#eventType:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlExitedEventArgs#eventType:member" />
-  (property type)
 
   - <xref
   uid="word!Word.ContentControlSelectionChangedEventArgs#eventType:member" />
-  (property type)
 
   #### Examples
 

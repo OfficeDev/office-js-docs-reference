@@ -11,19 +11,16 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotTableCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

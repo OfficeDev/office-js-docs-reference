@@ -11,11 +11,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PivotFieldCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

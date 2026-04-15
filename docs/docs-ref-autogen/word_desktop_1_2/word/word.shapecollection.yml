@@ -13,19 +13,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#shapes:member" /> (property type)
+  - <xref uid="word!Word.Body#shapes:member" />
 
-  - <xref uid="word!Word.Canvas#shapes:member" /> (property type)
+  - <xref uid="word!Word.Canvas#shapes:member" />
 
-  - <xref uid="word!Word.Paragraph#shapes:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#shapes:member" />
 
-  - <xref uid="word!Word.Range#shapes:member" /> (property type)
+  - <xref uid="word!Word.Range#shapes:member" />
 
-  - <xref uid="word!Word.ShapeGroup#shapes:member" /> (property type)
+  - <xref uid="word!Word.ShapeGroup#shapes:member" />
 
   #### Examples
 

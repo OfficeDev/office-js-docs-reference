@@ -10,50 +10,44 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#onCommentAdded:member" /> (property type)
+  - <xref uid="word!Word.Body#onCommentAdded:member" />
 
-  - <xref uid="word!Word.Body#onCommentChanged:member" /> (property type)
+  - <xref uid="word!Word.Body#onCommentChanged:member" />
 
-  - <xref uid="word!Word.Body#onCommentDeleted:member" /> (property type)
+  - <xref uid="word!Word.Body#onCommentDeleted:member" />
 
-  - <xref uid="word!Word.Body#onCommentDeselected:member" /> (property type)
+  - <xref uid="word!Word.Body#onCommentDeselected:member" />
 
-  - <xref uid="word!Word.Body#onCommentSelected:member" /> (property type)
+  - <xref uid="word!Word.Body#onCommentSelected:member" />
 
-  - <xref uid="word!Word.ContentControl#onCommentAdded:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#onCommentAdded:member" />
 
-  - <xref uid="word!Word.ContentControl#onCommentChanged:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#onCommentChanged:member" />
 
-  - <xref uid="word!Word.ContentControl#onCommentDeselected:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#onCommentDeselected:member" />
 
-  - <xref uid="word!Word.ContentControl#onCommentSelected:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#onCommentSelected:member" />
 
-  - <xref uid="word!Word.Paragraph#onCommentAdded:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#onCommentAdded:member" />
 
-  - <xref uid="word!Word.Paragraph#onCommentChanged:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#onCommentChanged:member" />
 
-  - <xref uid="word!Word.Paragraph#onCommentDeleted:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#onCommentDeleted:member" />
 
-  - <xref uid="word!Word.Paragraph#onCommentDeselected:member" /> (property
-  type)
+  - <xref uid="word!Word.Paragraph#onCommentDeselected:member" />
 
-  - <xref uid="word!Word.Paragraph#onCommentSelected:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#onCommentSelected:member" />
 
-  - <xref uid="word!Word.Range#onCommentAdded:member" /> (property type)
+  - <xref uid="word!Word.Range#onCommentAdded:member" />
 
-  - <xref uid="word!Word.Range#onCommentChanged:member" /> (property type)
+  - <xref uid="word!Word.Range#onCommentChanged:member" />
 
-  - <xref uid="word!Word.Range#onCommentDeselected:member" /> (property type)
+  - <xref uid="word!Word.Range#onCommentDeselected:member" />
 
-  - <xref uid="word!Word.Range#onCommentSelected:member" /> (property type)
+  - <xref uid="word!Word.Range#onCommentSelected:member" />
 
   #### Examples
 

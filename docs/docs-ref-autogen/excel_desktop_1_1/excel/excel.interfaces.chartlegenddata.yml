@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartLegendData
 summary: >-
   An interface describing the data returned by calling
   `chartLegend.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartData#legend:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ChartData#legend:member" />
 
 isPreview: false
 isDeprecated: false

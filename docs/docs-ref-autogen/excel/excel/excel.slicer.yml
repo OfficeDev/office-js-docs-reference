@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.SlicerCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.SlicerCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

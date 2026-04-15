@@ -22,21 +22,20 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#fields:member" /> (property type)
+  - <xref uid="word!Word.Body#fields:member" />
 
-  - <xref uid="word!Word.ContentControl#fields:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#fields:member" />
 
-  - <xref uid="word!Word.Paragraph#fields:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#fields:member" />
 
-  - <xref uid="word!Word.Range#fields:member" /> (property type)
+  - <xref uid="word!Word.Range#fields:member" />
 
-  - <xref uid="word!Word.Table#fields:member" /> (property type)
+  - <xref uid="word!Word.Table#fields:member" />
 
-  - <xref uid="word!Word.TableRow#fields:member" /> (property type)
+  - <xref uid="word!Word.TableRow#fields:member" />
 
   #### Examples
 

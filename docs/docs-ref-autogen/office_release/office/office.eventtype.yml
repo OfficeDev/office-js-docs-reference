@@ -22,47 +22,36 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.Binding#addHandlerAsync:member" /> (parameter type)
+  - <xref uid="office!Office.Binding#addHandlerAsync:member(1)" />
 
-  - <xref uid="office!Office.Binding#removeHandlerAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.Binding#removeHandlerAsync:member(1)" />
 
   - <xref uid="office!Office.BindingDataChangedEventArgs#type:member" />
-  (property type)
 
   - <xref uid="office!Office.BindingSelectionChangedEventArgs#type:member" />
-  (property type)
 
-  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.CustomXmlPart#addHandlerAsync:member(1)" />
 
-  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member" />
-  (parameter type)
+  - <xref uid="office!Office.CustomXmlPart#removeHandlerAsync:member(1)" />
 
-  - <xref uid="office!Office.Dialog#addEventHandler:member" /> (parameter type)
+  - <xref uid="office!Office.Dialog#addEventHandler:member(1)" />
 
   - <xref uid="office!Office.DialogParentMessageReceivedEventArgs#type:member"
-  /> (property type)
+  />
 
-  - <xref uid="office!Office.Document#addHandlerAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.Document#addHandlerAsync:member(1)" />
 
-  - <xref uid="office!Office.Document#removeHandlerAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.Document#removeHandlerAsync:member(1)" />
 
   - <xref uid="office!Office.DocumentSelectionChangedEventArgs#type:member" />
-  (property type)
 
-  - <xref uid="office!Office.Settings#addHandlerAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.Settings#addHandlerAsync:member(1)" />
 
-  - <xref uid="office!Office.Settings#removeHandlerAsync:member" /> (parameter
-  type)
+  - <xref uid="office!Office.Settings#removeHandlerAsync:member(1)" />
 
-  - <xref uid="office!Office.SettingsChangedEventArgs#type:member" /> (property
-  type)
+  - <xref uid="office!Office.SettingsChangedEventArgs#type:member" />
 
-  - <xref uid="office!Office.UI#addHandlerAsync:member" /> (parameter type)
+  - <xref uid="office!Office.UI#addHandlerAsync:member(1)" />
 
   #### Examples
 

@@ -16,22 +16,17 @@ remarks: >-
 
 
   - <xref uid="word!Word.ContentControlAddedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlDataChangedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlDeletedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlEnteredEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlExitedEventArgs#source:member" />
-  (property type)
 
   - <xref uid="word!Word.ContentControlSelectionChangedEventArgs#source:member"
-  /> (property type)
+  />
 
   #### Examples
 

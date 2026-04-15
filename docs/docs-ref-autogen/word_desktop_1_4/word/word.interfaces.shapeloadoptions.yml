@@ -15,28 +15,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CanvasLoadOptions#shape:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.CanvasLoadOptions#shape:member" />
 
   - <xref uid="word!Word.Interfaces.DocumentLoadOptions#background:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ShapeCollectionLoadOptions#parentCanvas:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ShapeCollectionLoadOptions#parentGroup:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ShapeGroupLoadOptions#shape:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ShapeLoadOptions#parentCanvas:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ShapeLoadOptions#parentGroup:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

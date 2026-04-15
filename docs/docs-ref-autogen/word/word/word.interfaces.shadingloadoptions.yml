@@ -13,13 +13,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#shading:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.StyleLoadOptions#shading:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableStyleLoadOptions#shading:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.TableChangedEventArgs#details:member" /> (property
-  type)
+  - <xref uid="excel!Excel.TableChangedEventArgs#details:member" />
 
   - <xref uid="excel!Excel.WorksheetChangedEventArgs#details:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

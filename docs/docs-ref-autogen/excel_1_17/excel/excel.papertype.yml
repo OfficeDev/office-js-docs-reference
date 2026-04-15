@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutData#paperSize:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.PageLayout#paperSize:member" /> (property type)
+  - <xref uid="excel!Excel.PageLayout#paperSize:member" />
 
 isPreview: false
 isDeprecated: false

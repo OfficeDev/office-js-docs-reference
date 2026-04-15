@@ -13,34 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Border#type:member" /> (property type)
+  - <xref uid="word!Word.Border#type:member" />
 
-  - <xref uid="word!Word.BorderCollection#insideBorderType:member" /> (property
-  type)
+  - <xref uid="word!Word.BorderCollection#insideBorderType:member" />
 
-  - <xref uid="word!Word.BorderCollection#outsideBorderType:member" /> (property
-  type)
+  - <xref uid="word!Word.BorderCollection#outsideBorderType:member" />
 
   - <xref
   uid="word!Word.Interfaces.BorderCollectionUpdateData#insideBorderType:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.BorderCollectionUpdateData#outsideBorderType:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.BorderData#type:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.BorderData#type:member" />
 
-  - <xref uid="word!Word.Interfaces.BorderUpdateData#type:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BorderUpdateData#type:member" />
 
-  - <xref uid="word!Word.Interfaces.TableBorderData#type:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.TableBorderData#type:member" />
 
   - <xref uid="word!Word.Interfaces.TableBorderUpdateData#type:member" />
-  (property type)
 
-  - <xref uid="word!Word.TableBorder#type:member" /> (property type)
+  - <xref uid="word!Word.TableBorder#type:member" />
 
   #### Examples
 

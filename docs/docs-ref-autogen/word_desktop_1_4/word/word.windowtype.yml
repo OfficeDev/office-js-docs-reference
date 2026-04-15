@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.WindowData#type:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.WindowData#type:member" />
 
-  - <xref uid="word!Word.Window#type:member" /> (property type)
+  - <xref uid="word!Word.Window#type:member" />
 
 isPreview: false
 isDeprecated: false

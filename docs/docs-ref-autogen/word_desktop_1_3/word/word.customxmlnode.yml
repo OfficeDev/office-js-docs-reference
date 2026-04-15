@@ -17,32 +17,27 @@ remarks: >-
 
 
   - <xref uid="word!Word.CustomXmlAddNodeOptions#nextSibling:member" />
-  (property type)
 
   - <xref uid="word!Word.CustomXmlInsertNodeBeforeOptions#nextSibling:member" />
-  (property type)
 
   - <xref uid="word!Word.CustomXmlInsertSubtreeBeforeOptions#nextSibling:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.CustomXmlNode#firstChild:member" /> (property type)
+  - <xref uid="word!Word.CustomXmlNode#firstChild:member" />
 
-  - <xref uid="word!Word.CustomXmlNode#lastChild:member" /> (property type)
+  - <xref uid="word!Word.CustomXmlNode#lastChild:member" />
 
-  - <xref uid="word!Word.CustomXmlNode#nextSibling:member" /> (property type)
+  - <xref uid="word!Word.CustomXmlNode#nextSibling:member" />
 
-  - <xref uid="word!Word.CustomXmlNode#parentNode:member" /> (property type)
+  - <xref uid="word!Word.CustomXmlNode#parentNode:member" />
 
-  - <xref uid="word!Word.CustomXmlNode#previousSibling:member" /> (property
-  type)
+  - <xref uid="word!Word.CustomXmlNode#previousSibling:member" />
 
-  - <xref uid="word!Word.CustomXmlNodeCollection#items:member" /> (property
-  type)
+  - <xref uid="word!Word.CustomXmlNodeCollection#items:member" />
 
-  - <xref uid="word!Word.CustomXmlPart#documentElement:member" /> (property
-  type)
+  - <xref uid="word!Word.CustomXmlPart#documentElement:member" />
 
-  - <xref uid="word!Word.XmlMapping#customXmlNode:member" /> (property type)
+  - <xref uid="word!Word.XmlMapping#customXmlNode:member" />
 
 isPreview: false
 isDeprecated: false

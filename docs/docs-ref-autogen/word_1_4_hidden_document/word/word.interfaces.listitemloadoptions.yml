@@ -14,18 +14,15 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ParagraphLoadOptions#listItem:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ParagraphLoadOptions#listItemOrNullObject:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

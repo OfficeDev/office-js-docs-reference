@@ -11,16 +11,14 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#setSelectedDataAsync:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)"
+  />
 
-  - <xref uid="outlook!Office.Body#prependAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Body#prependAsync:member(1)" />
 
-  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member" /> (parameter
-  type)
+  - <xref uid="outlook!Office.Body#setSelectedDataAsync:member(1)" />
 
-  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.MessageCompose#setSelectedDataAsync:member(1)" />
 
   #### Examples
 

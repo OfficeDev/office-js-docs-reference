@@ -15,10 +15,9 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#fill:member"
-  /> (property type)
+  />
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#fill:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

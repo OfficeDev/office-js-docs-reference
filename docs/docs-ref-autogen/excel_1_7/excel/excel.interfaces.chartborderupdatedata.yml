@@ -11,13 +11,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData#border:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

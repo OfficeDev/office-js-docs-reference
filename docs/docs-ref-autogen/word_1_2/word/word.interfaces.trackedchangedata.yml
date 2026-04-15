@@ -11,11 +11,9 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.TrackedChangeCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.TrackedChangeCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

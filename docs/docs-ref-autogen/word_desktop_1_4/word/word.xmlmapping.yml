@@ -18,18 +18,15 @@ remarks: >-
 
 
   - <xref uid="word!Word.BuildingBlockGalleryContentControl#xmlMapping:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.ContentControl#xmlMapping:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#xmlMapping:member" />
 
   - <xref uid="word!Word.DatePickerContentControl#xmlMapping:member" />
-  (property type)
 
-  - <xref uid="word!Word.GroupContentControl#xmlMapping:member" /> (property
-  type)
+  - <xref uid="word!Word.GroupContentControl#xmlMapping:member" />
 
-  - <xref uid="word!Word.PictureContentControl#xmlMapping:member" /> (property
-  type)
+  - <xref uid="word!Word.PictureContentControl#xmlMapping:member" />
 
 isPreview: false
 isDeprecated: false

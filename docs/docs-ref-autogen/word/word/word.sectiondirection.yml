@@ -15,12 +15,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.PageSetupData#sectionDirection:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.PageSetupUpdateData#sectionDirection:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.PageSetup#sectionDirection:member" /> (property type)
+  - <xref uid="word!Word.PageSetup#sectionDirection:member" />
 
 isPreview: false
 isDeprecated: false

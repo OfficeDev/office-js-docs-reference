@@ -10,7 +10,7 @@ remarks: |-
 
   #### Used by
 
-  - <xref uid="office!Office.Settings#saveAsync:member" /> (parameter type)
+  - <xref uid="office!Office.Settings#saveAsync:member(1)" />
   #### Examples
 
   ```TypeScript

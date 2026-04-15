@@ -13,13 +13,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.PaneCollection#items:member" /> (property type)
+  - <xref uid="word!Word.PaneCollection#items:member" />
 
-  - <xref uid="word!Word.Window#activePane:member" /> (property type)
+  - <xref uid="word!Word.Window#activePane:member" />
 
   #### Examples
 

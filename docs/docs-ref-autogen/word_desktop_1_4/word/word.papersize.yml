@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.PageSetupData#paperSize:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.PageSetupData#paperSize:member" />
 
   - <xref uid="word!Word.Interfaces.PageSetupUpdateData#paperSize:member" />
-  (property type)
 
-  - <xref uid="word!Word.PageSetup#paperSize:member" /> (property type)
+  - <xref uid="word!Word.PageSetup#paperSize:member" />
 
 isPreview: false
 isDeprecated: false

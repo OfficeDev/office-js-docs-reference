@@ -13,13 +13,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.PageSetupData#verticalAlignment:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.PageSetupUpdateData#verticalAlignment:member" />
-  (property type)
 
-  - <xref uid="word!Word.PageSetup#verticalAlignment:member" /> (property type)
+  - <xref uid="word!Word.PageSetup#verticalAlignment:member" />
 
 isPreview: false
 isDeprecated: false

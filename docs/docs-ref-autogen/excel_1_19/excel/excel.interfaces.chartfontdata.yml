@@ -11,31 +11,23 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAreaFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartDataLabelFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartDataTableFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartFormatStringData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartLegendFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartTitleFormatData#font:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartTrendlineLabelFormatData#font:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

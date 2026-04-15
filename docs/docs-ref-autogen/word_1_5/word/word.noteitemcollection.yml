@@ -12,33 +12,32 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#endnotes:member" /> (property type)
+  - <xref uid="word!Word.Body#endnotes:member" />
 
-  - <xref uid="word!Word.Body#footnotes:member" /> (property type)
+  - <xref uid="word!Word.Body#footnotes:member" />
 
-  - <xref uid="word!Word.ContentControl#endnotes:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#endnotes:member" />
 
-  - <xref uid="word!Word.ContentControl#footnotes:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#footnotes:member" />
 
-  - <xref uid="word!Word.Paragraph#endnotes:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#endnotes:member" />
 
-  - <xref uid="word!Word.Paragraph#footnotes:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#footnotes:member" />
 
-  - <xref uid="word!Word.Range#endnotes:member" /> (property type)
+  - <xref uid="word!Word.Range#endnotes:member" />
 
-  - <xref uid="word!Word.Range#footnotes:member" /> (property type)
+  - <xref uid="word!Word.Range#footnotes:member" />
 
-  - <xref uid="word!Word.Table#endnotes:member" /> (property type)
+  - <xref uid="word!Word.Table#endnotes:member" />
 
-  - <xref uid="word!Word.Table#footnotes:member" /> (property type)
+  - <xref uid="word!Word.Table#footnotes:member" />
 
-  - <xref uid="word!Word.TableRow#endnotes:member" /> (property type)
+  - <xref uid="word!Word.TableRow#endnotes:member" />
 
-  - <xref uid="word!Word.TableRow#footnotes:member" /> (property type)
+  - <xref uid="word!Word.TableRow#footnotes:member" />
 
   #### Examples
 

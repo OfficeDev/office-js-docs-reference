@@ -14,37 +14,30 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.FillFormatLoadOptions#backgroundColor:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.FillFormatLoadOptions#foregroundColor:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.FontLoadOptions#textColor:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.GlowFormatLoadOptions#color:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.LineFormatLoadOptions#foregroundColor:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ShadowFormatLoadOptions#foregroundColor:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#contourColor:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions#extrusionColor:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

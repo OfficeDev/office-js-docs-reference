@@ -12,27 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAreaFormat#border:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAreaFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartAxisTitleFormat#border:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartAxisTitleFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartDataLabelFormat#border:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartDataLabelFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartDataTableFormat#border:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartDataTableFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartLegendFormat#border:member" /> (property type)
+  - <xref uid="excel!Excel.ChartLegendFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartPlotAreaFormat#border:member" /> (property type)
+  - <xref uid="excel!Excel.ChartPlotAreaFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartPointFormat#border:member" /> (property type)
+  - <xref uid="excel!Excel.ChartPointFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartTitleFormat#border:member" /> (property type)
+  - <xref uid="excel!Excel.ChartTitleFormat#border:member" />
 
-  - <xref uid="excel!Excel.ChartTrendlineLabelFormat#border:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartTrendlineLabelFormat#border:member" />
 
 isPreview: false
 isDeprecated: false

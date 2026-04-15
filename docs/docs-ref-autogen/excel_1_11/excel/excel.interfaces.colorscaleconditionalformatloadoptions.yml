@@ -14,19 +14,18 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScale:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#colorScaleOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScale:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#colorScaleOrNullObject:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

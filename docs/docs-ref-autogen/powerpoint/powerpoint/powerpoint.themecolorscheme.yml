@@ -11,18 +11,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Slide#themeColorScheme:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.Slide#themeColorScheme:member" />
 
   - <xref uid="powerpoint!PowerPoint.SlideLayout#themeColorScheme:member" />
-  (property type)
 
   - <xref uid="powerpoint!PowerPoint.SlideMaster#themeColorScheme:member" />
-  (property type)
 
   #### Examples
 

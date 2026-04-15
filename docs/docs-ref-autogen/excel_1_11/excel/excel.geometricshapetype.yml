@@ -14,12 +14,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ShapeData#geometricShapeType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.Shape#geometricShapeType:member" /> (property type)
+  - <xref uid="excel!Excel.Shape#geometricShapeType:member" />
 
   #### Examples
 

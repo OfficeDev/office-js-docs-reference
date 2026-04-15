@@ -13,10 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomProperty#type:member" /> (property type)
+  - <xref uid="word!Word.CustomProperty#type:member" />
 
-  - <xref uid="word!Word.Interfaces.CustomPropertyData#type:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.CustomPropertyData#type:member" />
 
   #### Examples
 

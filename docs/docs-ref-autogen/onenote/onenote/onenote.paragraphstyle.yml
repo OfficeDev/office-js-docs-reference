@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.RichTextData#style:member" />
-  (property type)
 
-  - <xref uid="onenote!OneNote.RichText#style:member" /> (property type)
+  - <xref uid="onenote!OneNote.RichText#style:member" />
 
 isPreview: false
 isDeprecated: false

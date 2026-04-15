@@ -8,75 +8,58 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BookmarkData#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BookmarkData#range:member" />
 
-  - <xref uid="word!Word.Interfaces.BreakData#range:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.BreakData#range:member" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CoauthoringLockData#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.CoauthoringUpdateData#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.ConflictData#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ConflictData#range:member" />
 
   - <xref uid="word!Word.Interfaces.DatePickerContentControlData#range:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.EditorData#nextRange:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.EditorData#nextRange:member" />
 
-  - <xref uid="word!Word.Interfaces.EditorData#range:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.EditorData#range:member" />
 
-  - <xref uid="word!Word.Interfaces.FieldData#result:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.FieldData#result:member" />
 
-  - <xref uid="word!Word.Interfaces.FrameData#range:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.FrameData#range:member" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlData#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.HyperlinkData#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.HyperlinkData#range:member" />
 
-  - <xref uid="word!Word.Interfaces.IndexData#range:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.IndexData#range:member" />
 
-  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.NoteItemData#reference:member" />
 
   - <xref uid="word!Word.Interfaces.PictureContentControlData#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeCollectionData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeScopedCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RangeScopedCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlData#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RepeatingSectionItemData#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.RevisionData#movedRange:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RevisionData#movedRange:member" />
 
-  - <xref uid="word!Word.Interfaces.RevisionData#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RevisionData#range:member" />
 
 isPreview: false
 isDeprecated: false

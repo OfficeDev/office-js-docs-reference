@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#columnWidth:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ViewData#columnWidth:member" />
 
   - <xref uid="word!Word.Interfaces.ViewUpdateData#columnWidth:member" />
-  (property type)
 
-  - <xref uid="word!Word.View#columnWidth:member" /> (property type)
+  - <xref uid="word!Word.View#columnWidth:member" />
 
 isPreview: false
 isDeprecated: false

@@ -18,39 +18,37 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BodyLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.RangeLoadOptions#parentContentControl:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

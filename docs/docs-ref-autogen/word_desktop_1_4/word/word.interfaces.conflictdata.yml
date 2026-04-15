@@ -11,16 +11,13 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CoauthoringData#conflicts:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ConflictCollectionData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ConflictCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.RangeData#conflicts:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RangeData#conflicts:member" />
 
 isPreview: false
 isDeprecated: false

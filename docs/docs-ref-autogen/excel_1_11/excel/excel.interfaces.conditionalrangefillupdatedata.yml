@@ -12,7 +12,6 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalRangeFormatUpdateData#fill:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

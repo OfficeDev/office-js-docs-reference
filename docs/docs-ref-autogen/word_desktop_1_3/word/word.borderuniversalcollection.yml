@@ -14,15 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Font#borders:member" /> (property type)
+  - <xref uid="word!Word.Font#borders:member" />
 
-  - <xref uid="word!Word.Frame#borders:member" /> (property type)
+  - <xref uid="word!Word.Frame#borders:member" />
 
-  - <xref uid="word!Word.Paragraph#borders:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#borders:member" />
 
-  - <xref uid="word!Word.Section#borders:member" /> (property type)
+  - <xref uid="word!Word.Section#borders:member" />
 
-  - <xref uid="word!Word.TableColumn#borders:member" /> (property type)
+  - <xref uid="word!Word.TableColumn#borders:member" />
 
 isPreview: false
 isDeprecated: false

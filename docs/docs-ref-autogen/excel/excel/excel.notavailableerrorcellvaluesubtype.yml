@@ -13,7 +13,6 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.NotAvailableErrorCellValue#errorSubType:member" />
-  (property type)
 
 isPreview: true
 isDeprecated: false

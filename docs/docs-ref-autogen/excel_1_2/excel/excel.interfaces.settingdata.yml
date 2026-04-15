@@ -11,10 +11,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.SettingCollectionData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.SettingCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -13,17 +13,13 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" />
 
   - <xref
   uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

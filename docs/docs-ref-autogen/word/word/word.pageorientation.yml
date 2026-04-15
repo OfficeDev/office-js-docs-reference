@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.PageSetupData#orientation:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.PageSetupUpdateData#orientation:member" />
-  (property type)
 
-  - <xref uid="word!Word.PageSetup#orientation:member" /> (property type)
+  - <xref uid="word!Word.PageSetup#orientation:member" />
 
 isPreview: false
 isDeprecated: false

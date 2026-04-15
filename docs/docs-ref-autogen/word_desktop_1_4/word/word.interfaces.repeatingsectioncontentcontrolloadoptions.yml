@@ -14,11 +14,11 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionLoadOptions#repeatingSectionContentControl:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlLoadOptions#repeatingSectionContentControl:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

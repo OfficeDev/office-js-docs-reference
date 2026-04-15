@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.FilterCriteria#values:member" /> (property type)
+  - <xref uid="excel!Excel.FilterCriteria#values:member" />
 
-  - <xref uid="excel!Excel.PivotDateFilter#comparator:member" /> (property type)
+  - <xref uid="excel!Excel.PivotDateFilter#comparator:member" />
 
-  - <xref uid="excel!Excel.PivotDateFilter#lowerBound:member" /> (property type)
+  - <xref uid="excel!Excel.PivotDateFilter#lowerBound:member" />
 
-  - <xref uid="excel!Excel.PivotDateFilter#upperBound:member" /> (property type)
+  - <xref uid="excel!Excel.PivotDateFilter#upperBound:member" />
 
 isPreview: false
 isDeprecated: false

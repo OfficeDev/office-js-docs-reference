@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartCollection#onAdded:member" /> (property type)
+  - <xref uid="excel!Excel.ChartCollection#onAdded:member" />
 
 isPreview: false
 isDeprecated: false

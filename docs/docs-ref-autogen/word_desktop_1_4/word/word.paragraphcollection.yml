@@ -12,23 +12,22 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.Body#paragraphs:member" />
 
-  - <xref uid="word!Word.ContentControl#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#paragraphs:member" />
 
-  - <xref uid="word!Word.Document#listParagraphs:member" /> (property type)
+  - <xref uid="word!Word.Document#listParagraphs:member" />
 
-  - <xref uid="word!Word.Document#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.Document#paragraphs:member" />
 
-  - <xref uid="word!Word.List#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.List#paragraphs:member" />
 
-  - <xref uid="word!Word.Range#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.Range#paragraphs:member" />
 
-  - <xref uid="word!Word.Selection#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.Selection#paragraphs:member" />
 
   #### Examples
 

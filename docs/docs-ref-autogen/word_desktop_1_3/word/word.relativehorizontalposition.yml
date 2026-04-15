@@ -17,25 +17,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Frame#relativeHorizontalPosition:member" /> (property
-  type)
+  - <xref uid="word!Word.Frame#relativeHorizontalPosition:member" />
 
   - <xref uid="word!Word.Interfaces.FrameData#relativeHorizontalPosition:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.FrameUpdateData#relativeHorizontalPosition:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ShapeData#relativeHorizontalPosition:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ShapeUpdateData#relativeHorizontalPosition:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Shape#relativeHorizontalPosition:member" /> (property
-  type)
+  - <xref uid="word!Word.Shape#relativeHorizontalPosition:member" />
 
   #### Examples
 

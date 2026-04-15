@@ -16,13 +16,11 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#image:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#image:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#image:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

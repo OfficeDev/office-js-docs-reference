@@ -12,25 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#backgroundColor:member" /> (property type)
+  - <xref uid="word!Word.FillFormat#backgroundColor:member" />
 
-  - <xref uid="word!Word.FillFormat#foregroundColor:member" /> (property type)
+  - <xref uid="word!Word.FillFormat#foregroundColor:member" />
 
-  - <xref uid="word!Word.Font#textColor:member" /> (property type)
+  - <xref uid="word!Word.Font#textColor:member" />
 
-  - <xref uid="word!Word.GlowFormat#color:member" /> (property type)
+  - <xref uid="word!Word.GlowFormat#color:member" />
 
-  - <xref uid="word!Word.LineFormat#backgroundColor:member" /> (property type)
+  - <xref uid="word!Word.LineFormat#backgroundColor:member" />
 
-  - <xref uid="word!Word.LineFormat#foregroundColor:member" /> (property type)
+  - <xref uid="word!Word.LineFormat#foregroundColor:member" />
 
-  - <xref uid="word!Word.ShadowFormat#foregroundColor:member" /> (property type)
+  - <xref uid="word!Word.ShadowFormat#foregroundColor:member" />
 
   - <xref uid="word!Word.ThreeDimensionalFormat#contourColor:member" />
-  (property type)
 
   - <xref uid="word!Word.ThreeDimensionalFormat#extrusionColor:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

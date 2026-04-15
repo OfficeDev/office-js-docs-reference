@@ -15,13 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DataValidation#rule:member" /> (property type)
+  - <xref uid="excel!Excel.DataValidation#rule:member" />
 
   - <xref uid="excel!Excel.Interfaces.DataValidationData#rule:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.DataValidationUpdateData#rule:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,21 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartPoint#markerStyle:member" /> (property type)
+  - <xref uid="excel!Excel.ChartPoint#markerStyle:member" />
 
-  - <xref uid="excel!Excel.ChartSeries#markerStyle:member" /> (property type)
+  - <xref uid="excel!Excel.ChartSeries#markerStyle:member" />
 
   - <xref uid="excel!Excel.Interfaces.ChartPointData#markerStyle:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartPointUpdateData#markerStyle:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesData#markerStyle:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

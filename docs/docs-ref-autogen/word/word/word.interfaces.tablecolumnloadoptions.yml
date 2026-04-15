@@ -14,10 +14,8 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.TableCellCollectionLoadOptions#column:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableCellLoadOptions#column:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

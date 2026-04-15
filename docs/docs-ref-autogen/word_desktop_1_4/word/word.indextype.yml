@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Index#type:member" /> (property type)
+  - <xref uid="word!Word.Index#type:member" />
 
-  - <xref uid="word!Word.IndexAddOptions#type:member" /> (property type)
+  - <xref uid="word!Word.IndexAddOptions#type:member" />
 
-  - <xref uid="word!Word.Interfaces.IndexData#type:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.IndexData#type:member" />
 
 isPreview: false
 isDeprecated: false

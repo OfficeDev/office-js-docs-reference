@@ -13,10 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Annotation#state:member" /> (property type)
+  - <xref uid="word!Word.Annotation#state:member" />
 
-  - <xref uid="word!Word.Interfaces.AnnotationData#state:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.AnnotationData#state:member" />
 
   #### Examples
 

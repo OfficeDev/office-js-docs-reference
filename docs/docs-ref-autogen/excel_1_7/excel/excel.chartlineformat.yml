@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxisFormat#line:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAxisFormat#line:member" />
 
-  - <xref uid="excel!Excel.ChartGridlinesFormat#line:member" /> (property type)
+  - <xref uid="excel!Excel.ChartGridlinesFormat#line:member" />
 
-  - <xref uid="excel!Excel.ChartSeriesFormat#line:member" /> (property type)
+  - <xref uid="excel!Excel.ChartSeriesFormat#line:member" />
 
-  - <xref uid="excel!Excel.ChartTrendlineFormat#line:member" /> (property type)
+  - <xref uid="excel!Excel.ChartTrendlineFormat#line:member" />
 
 isPreview: false
 isDeprecated: false

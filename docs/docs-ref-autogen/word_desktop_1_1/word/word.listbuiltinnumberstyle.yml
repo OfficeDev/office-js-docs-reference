@@ -14,12 +14,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ListLevelData#numberStyle:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ListLevelUpdateData#numberStyle:member" />
-  (property type)
 
-  - <xref uid="word!Word.ListLevel#numberStyle:member" /> (property type)
+  - <xref uid="word!Word.ListLevel#numberStyle:member" />
 
   #### Examples
 

@@ -13,15 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.BulletFormat#style:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.BulletFormat#style:member" />
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.BulletFormatData#style:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#style:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

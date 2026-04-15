@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
 summary: >-
   An interface for updating data on the `ChartPivotOptions` object, for use in
   `chartPivotOptions.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="excel!Excel.Interfaces.ChartUpdateData#pivotOptions:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

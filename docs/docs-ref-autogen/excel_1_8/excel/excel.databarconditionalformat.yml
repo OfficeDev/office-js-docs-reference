@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#dataBar:member" /> (property type)
+  - <xref uid="excel!Excel.ConditionalFormat#dataBar:member" />
 
   - <xref uid="excel!Excel.ConditionalFormat#dataBarOrNullObject:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

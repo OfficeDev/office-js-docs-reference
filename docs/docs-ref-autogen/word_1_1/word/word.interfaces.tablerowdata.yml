@@ -11,10 +11,9 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

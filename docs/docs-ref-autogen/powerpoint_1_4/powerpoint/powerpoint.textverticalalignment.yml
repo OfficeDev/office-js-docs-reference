@@ -26,14 +26,13 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TextFrameData#verticalAlignment:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#verticalAlignment:member"
-  /> (property type)
+  />
 
   - <xref uid="powerpoint!PowerPoint.TextFrame#verticalAlignment:member" />
-  (property type)
 
   #### Examples
 

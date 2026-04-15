@@ -11,18 +11,15 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisFormatUpdateData#line:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatUpdateData#line:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineFormatUpdateData#line:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

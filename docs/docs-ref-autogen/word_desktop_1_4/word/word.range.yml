@@ -13,78 +13,73 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Bookmark#range:member" /> (property type)
+  - <xref uid="word!Word.Bookmark#range:member" />
 
-  - <xref uid="word!Word.Break#range:member" /> (property type)
+  - <xref uid="word!Word.Break#range:member" />
 
   - <xref uid="word!Word.BuildingBlockGalleryContentControl#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.CoauthoringLock#range:member" /> (property type)
+  - <xref uid="word!Word.CoauthoringLock#range:member" />
 
-  - <xref uid="word!Word.CoauthoringLockAddOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.CoauthoringLockAddOptions#range:member" />
 
-  - <xref uid="word!Word.CoauthoringUpdate#range:member" /> (property type)
+  - <xref uid="word!Word.CoauthoringUpdate#range:member" />
 
-  - <xref uid="word!Word.Conflict#range:member" /> (property type)
+  - <xref uid="word!Word.Conflict#range:member" />
 
   - <xref uid="word!Word.ContentControlPlaceholderOptions#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.CritiqueAnnotation#range:member" /> (property type)
+  - <xref uid="word!Word.CritiqueAnnotation#range:member" />
 
-  - <xref uid="word!Word.DatePickerContentControl#range:member" /> (property
-  type)
+  - <xref uid="word!Word.DatePickerContentControl#range:member" />
 
-  - <xref uid="word!Word.Document#content:member" /> (property type)
+  - <xref uid="word!Word.Document#content:member" />
 
-  - <xref uid="word!Word.Editor#nextRange:member" /> (property type)
+  - <xref uid="word!Word.Editor#nextRange:member" />
 
-  - <xref uid="word!Word.Editor#range:member" /> (property type)
+  - <xref uid="word!Word.Editor#range:member" />
 
-  - <xref uid="word!Word.Field#result:member" /> (property type)
+  - <xref uid="word!Word.Field#result:member" />
 
-  - <xref uid="word!Word.Frame#range:member" /> (property type)
+  - <xref uid="word!Word.Frame#range:member" />
 
-  - <xref uid="word!Word.GroupContentControl#range:member" /> (property type)
+  - <xref uid="word!Word.GroupContentControl#range:member" />
 
-  - <xref uid="word!Word.HtmlDivision#range:member" /> (property type)
+  - <xref uid="word!Word.HtmlDivision#range:member" />
 
-  - <xref uid="word!Word.Hyperlink#range:member" /> (property type)
+  - <xref uid="word!Word.Hyperlink#range:member" />
 
-  - <xref uid="word!Word.Index#range:member" /> (property type)
+  - <xref uid="word!Word.Index#range:member" />
 
-  - <xref uid="word!Word.NoteItem#reference:member" /> (property type)
+  - <xref uid="word!Word.NoteItem#reference:member" />
 
-  - <xref uid="word!Word.PictureContentControl#range:member" /> (property type)
+  - <xref uid="word!Word.PictureContentControl#range:member" />
 
-  - <xref uid="word!Word.RangeCollection#items:member" /> (property type)
+  - <xref uid="word!Word.RangeCollection#items:member" />
 
-  - <xref uid="word!Word.RangeScopedCollection#items:member" /> (property type)
+  - <xref uid="word!Word.RangeScopedCollection#items:member" />
 
   - <xref uid="word!Word.RepeatingSectionContentControl#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.RepeatingSectionItem#range:member" /> (property type)
+  - <xref uid="word!Word.RepeatingSectionItem#range:member" />
 
-  - <xref uid="word!Word.Revision#movedRange:member" /> (property type)
+  - <xref uid="word!Word.Revision#movedRange:member" />
 
-  - <xref uid="word!Word.Revision#range:member" /> (property type)
+  - <xref uid="word!Word.Revision#range:member" />
 
-  - <xref uid="word!Word.Selection#formattedText:member" /> (property type)
+  - <xref uid="word!Word.Selection#formattedText:member" />
 
-  - <xref uid="word!Word.Selection#range:member" /> (property type)
+  - <xref uid="word!Word.Selection#range:member" />
 
-  - <xref uid="word!Word.TableOfAuthorities#range:member" /> (property type)
+  - <xref uid="word!Word.TableOfAuthorities#range:member" />
 
-  - <xref uid="word!Word.TableOfContents#range:member" /> (property type)
+  - <xref uid="word!Word.TableOfContents#range:member" />
 
-  - <xref uid="word!Word.TableOfFigures#range:member" /> (property type)
+  - <xref uid="word!Word.TableOfFigures#range:member" />
 
-  - <xref uid="word!Word.TableRow#range:member" /> (property type)
+  - <xref uid="word!Word.TableRow#range:member" />
 
-  - <xref uid="word!Word.XmlNode#range:member" /> (property type)
+  - <xref uid="word!Word.XmlNode#range:member" />
 
   #### Examples
 

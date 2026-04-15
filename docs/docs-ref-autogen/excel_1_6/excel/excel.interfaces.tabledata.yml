@@ -9,23 +9,17 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TableCollectionData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.TableCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.TableScopedCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TableScopedCollectionUpdateData#items:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.WorkbookData#tables:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.WorkbookData#tables:member" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#tables:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#tables:member" />
 
 isPreview: false
 isDeprecated: false

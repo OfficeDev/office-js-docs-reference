@@ -15,12 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.EntityCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.EntityCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member" /> (property
-  type)
+  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.WebImageCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.WebImageCellValue#provider:member" />
 
 isPreview: false
 isDeprecated: false

@@ -13,12 +13,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TextFrameData#readingOrder:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.TextFrame#readingOrder:member" /> (property type)
+  - <xref uid="excel!Excel.TextFrame#readingOrder:member" />
 
 isPreview: false
 isDeprecated: false

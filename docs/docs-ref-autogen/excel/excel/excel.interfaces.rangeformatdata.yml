@@ -6,15 +6,11 @@ fullName: Excel.Interfaces.RangeFormatData
 summary: >-
   An interface describing the data returned by calling
   `rangeFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.RangeAreasData#format:member" /> (property
-  type)
-
-  - <xref uid="excel!Excel.Interfaces.RangeData#format:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.RangeAreasData#format:member" />
+  - <xref uid="excel!Excel.Interfaces.RangeData#format:member" />
 
 isPreview: false
 isDeprecated: false

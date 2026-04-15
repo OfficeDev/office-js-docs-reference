@@ -19,60 +19,49 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheet:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemCollectionLoadOptions#worksheetOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.NamedItemLoadOptions#worksheetOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.RangeLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.TableLoadOptions#worksheet:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

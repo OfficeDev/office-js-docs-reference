@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartTrendlineCollection#items:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartTrendlineCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

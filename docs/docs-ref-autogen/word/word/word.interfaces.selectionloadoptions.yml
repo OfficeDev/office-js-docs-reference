@@ -19,13 +19,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.DocumentLoadOptions#selection:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.PaneCollectionLoadOptions#selection:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.PaneLoadOptions#selection:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

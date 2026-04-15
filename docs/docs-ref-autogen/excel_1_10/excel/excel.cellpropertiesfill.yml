@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellPropertiesFormat#fill:member" /> (property type)
+  - <xref uid="excel!Excel.CellPropertiesFormat#fill:member" />
 
 isPreview: false
 isDeprecated: false

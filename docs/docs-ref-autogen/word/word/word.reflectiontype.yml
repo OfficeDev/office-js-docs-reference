@@ -15,12 +15,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ReflectionFormatData#type:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ReflectionFormatUpdateData#type:member" />
-  (property type)
 
-  - <xref uid="word!Word.ReflectionFormat#type:member" /> (property type)
+  - <xref uid="word!Word.ReflectionFormat#type:member" />
 
 isPreview: false
 isDeprecated: false

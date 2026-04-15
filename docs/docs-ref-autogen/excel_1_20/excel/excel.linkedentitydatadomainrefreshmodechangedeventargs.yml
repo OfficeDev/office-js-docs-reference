@@ -19,7 +19,7 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -10,13 +10,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#body:member" /> (property type)
+  - <xref uid="word!Word.Document#body:member" />
 
-  - <xref uid="word!Word.Section#body:member" /> (property type)
+  - <xref uid="word!Word.Section#body:member" />
 
   #### Examples
 

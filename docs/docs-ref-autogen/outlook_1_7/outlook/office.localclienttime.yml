@@ -19,11 +19,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#convertToLocalClientTime:member" />
-  (return type)
+  - <xref uid="outlook!Office.Mailbox#convertToLocalClientTime:member(1)" />
 
-  - <xref uid="outlook!Office.Mailbox#convertToUtcClientTime:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.Mailbox#convertToUtcClientTime:member(1)" />
 
   #### Examples
 

@@ -14,13 +14,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.TextFrame#autoSizeSetting:member" /> (property type)
+  - <xref uid="excel!Excel.TextFrame#autoSizeSetting:member" />
 
   #### Examples
 

@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.RangeAreasUpdateData
 summary: >-
   An interface for updating data on the `RangeAreas` object, for use in
   `rangeAreas.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="excel!Excel.Interfaces.WindowUpdateData#rangeSelection:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

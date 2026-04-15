@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ConditionalFormat#topBottom:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ConditionalFormat#topBottom:member" />
 
   - <xref uid="excel!Excel.ConditionalFormat#topBottomOrNullObject:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

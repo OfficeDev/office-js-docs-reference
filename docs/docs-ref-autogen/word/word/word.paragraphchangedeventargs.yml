@@ -12,11 +12,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#onParagraphChanged:member" /> (property type)
+  - <xref uid="word!Word.Document#onParagraphChanged:member" />
 
   #### Examples
 

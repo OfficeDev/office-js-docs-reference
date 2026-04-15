@@ -14,17 +14,15 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.CommentLoadOptions#contentRange:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CommentReplyCollectionLoadOptions#contentRange:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CommentReplyLoadOptions#contentRange:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

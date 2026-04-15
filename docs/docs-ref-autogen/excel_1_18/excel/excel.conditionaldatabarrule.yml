@@ -13,26 +13,24 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.DataBarConditionalFormat#lowerBoundRule:member" />
-  (property type)
 
   - <xref uid="excel!Excel.DataBarConditionalFormat#upperBoundRule:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#lowerBoundRule:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#upperBoundRule:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#lowerBoundRule:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#upperBoundRule:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -14,34 +14,29 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.ChartDataLabel#geometricShapeType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.ChartDataLabels#geometricShapeType:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartDataLabelData#geometricShapeType:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartDataLabelsData#geometricShapeType:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData#geometricShapeType:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartDataLabelUpdateData#geometricShapeType:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ShapeData#geometricShapeType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.Shape#geometricShapeType:member" /> (property type)
+  - <xref uid="excel!Excel.Shape#geometricShapeType:member" />
 
   #### Examples
 

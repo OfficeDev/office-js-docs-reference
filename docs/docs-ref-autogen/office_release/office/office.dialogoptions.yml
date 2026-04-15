@@ -7,7 +7,7 @@ summary: Provides options for how a dialog is displayed.
 remarks: |-
   #### Used by
 
-  - <xref uid="office!Office.UI#displayDialogAsync:member" /> (parameter type)
+  - <xref uid="office!Office.UI#displayDialogAsync:member(1)" />
 
 isPreview: false
 isDeprecated: false

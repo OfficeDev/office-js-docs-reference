@@ -14,14 +14,13 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#rule:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#rule:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.PresetCriteriaConditionalFormat#rule:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - <xref uid="word!Word.Interfaces.ShapeData#canvas:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.ShapeData#canvas:member" />
 
 isPreview: false
 isDeprecated: false

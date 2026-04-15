@@ -13,10 +13,8 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartCollectionLoadOptions#axes:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#axes:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ChartLoadOptions#axes:member" />
 
 isPreview: false
 isDeprecated: false

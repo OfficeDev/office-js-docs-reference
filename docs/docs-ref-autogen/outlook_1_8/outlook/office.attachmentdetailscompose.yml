@@ -28,11 +28,10 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#getAttachmentsAsync:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)"
+  />
 
-  - <xref uid="outlook!Office.MessageCompose#getAttachmentsAsync:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.MessageCompose#getAttachmentsAsync:member(1)" />
 
   #### Examples
 

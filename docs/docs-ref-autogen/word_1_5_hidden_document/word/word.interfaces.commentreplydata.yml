@@ -10,15 +10,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.CommentData#replies:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.CommentData#replies:member" />
 
   - <xref uid="word!Word.Interfaces.CommentReplyCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CommentReplyCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

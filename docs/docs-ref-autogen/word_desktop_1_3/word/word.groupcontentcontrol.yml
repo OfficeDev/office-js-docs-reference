@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ContentControl#groupContentControl:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#groupContentControl:member" />
 
 isPreview: false
 isDeprecated: false

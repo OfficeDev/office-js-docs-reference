@@ -6,12 +6,10 @@ fullName: Word.Interfaces.LineFormatUpdateData
 summary: >-
   An interface for updating data on the `LineFormat` object, for use in
   `lineFormat.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.FontUpdateData#line:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FontUpdateData#line:member" />
 
 isPreview: false
 isDeprecated: false

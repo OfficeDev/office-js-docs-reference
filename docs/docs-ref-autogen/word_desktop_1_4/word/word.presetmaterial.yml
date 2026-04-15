@@ -14,14 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatData#presetMaterial:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData#presetMaterial:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.ThreeDimensionalFormat#presetMaterial:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

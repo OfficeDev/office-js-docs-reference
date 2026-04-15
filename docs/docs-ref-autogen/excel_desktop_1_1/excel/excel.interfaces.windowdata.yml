@@ -11,16 +11,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ApplicationData#activeWindow:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ApplicationData#windows:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.WindowCollectionData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.WindowCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

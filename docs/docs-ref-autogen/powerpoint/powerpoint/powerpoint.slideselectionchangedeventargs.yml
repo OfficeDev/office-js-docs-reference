@@ -15,7 +15,6 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Presentation#onSlideSelectionChanged:member" />
-  (property type)
 
 isPreview: true
 isDeprecated: false

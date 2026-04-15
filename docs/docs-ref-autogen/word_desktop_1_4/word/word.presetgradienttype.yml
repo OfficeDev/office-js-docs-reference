@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#presetGradientType:member" /> (property
-  type)
+  - <xref uid="word!Word.FillFormat#presetGradientType:member" />
 
   - <xref uid="word!Word.Interfaces.FillFormatData#presetGradientType:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

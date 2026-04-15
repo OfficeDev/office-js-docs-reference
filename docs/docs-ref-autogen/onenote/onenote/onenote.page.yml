@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="onenote!OneNote.InkAnalysis#page:member" /> (property type)
+  - <xref uid="onenote!OneNote.InkAnalysis#page:member" />
 
-  - <xref uid="onenote!OneNote.PageCollection#items:member" /> (property type)
+  - <xref uid="onenote!OneNote.PageCollection#items:member" />
 
-  - <xref uid="onenote!OneNote.PageContent#parentPage:member" /> (property type)
+  - <xref uid="onenote!OneNote.PageContent#parentPage:member" />
 
 isPreview: false
 isDeprecated: false

@@ -43,20 +43,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.AppointmentCompose#recurrence:member" /> (property
-  type)
+  - <xref uid="outlook!Office.AppointmentCompose#recurrence:member" />
 
-  - <xref uid="outlook!Office.AppointmentRead#recurrence:member" /> (property
-  type)
+  - <xref uid="outlook!Office.AppointmentRead#recurrence:member" />
 
-  - <xref uid="outlook!Office.MessageRead#recurrence:member" /> (property type)
+  - <xref uid="outlook!Office.MessageRead#recurrence:member" />
 
-  - <xref uid="outlook!Office.Recurrence#getAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Recurrence#getAsync:member(1)" />
 
-  - <xref uid="outlook!Office.Recurrence#setAsync:member" /> (parameter type)
+  - <xref uid="outlook!Office.Recurrence#setAsync:member(1)" />
 
   - <xref uid="outlook!Office.RecurrenceChangedEventArgs#recurrence:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,45 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Index#tabLeader:member" /> (property type)
+  - <xref uid="word!Word.Index#tabLeader:member" />
 
-  - <xref uid="word!Word.Interfaces.IndexData#tabLeader:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.IndexData#tabLeader:member" />
 
   - <xref uid="word!Word.Interfaces.IndexUpdateData#tabLeader:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableOfAuthoritiesData#tabLeader:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.TableOfAuthoritiesUpdateData#tabLeader:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableOfContentsData#tabLeader:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableOfContentsUpdateData#tabLeader:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.TableOfFiguresData#tabLeader:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableOfFiguresUpdateData#tabLeader:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.TabStopData#leader:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.TabStopData#leader:member" />
 
-  - <xref uid="word!Word.TableOfAuthorities#tabLeader:member" /> (property type)
+  - <xref uid="word!Word.TableOfAuthorities#tabLeader:member" />
 
-  - <xref uid="word!Word.TableOfContents#tabLeader:member" /> (property type)
+  - <xref uid="word!Word.TableOfContents#tabLeader:member" />
 
-  - <xref uid="word!Word.TableOfFigures#tabLeader:member" /> (property type)
+  - <xref uid="word!Word.TableOfFigures#tabLeader:member" />
 
-  - <xref uid="word!Word.TabStop#leader:member" /> (property type)
+  - <xref uid="word!Word.TabStop#leader:member" />
 
-  - <xref uid="word!Word.TabStopAddOptions#leader:member" /> (property type)
+  - <xref uid="word!Word.TabStopAddOptions#leader:member" />
 
 isPreview: false
 isDeprecated: false

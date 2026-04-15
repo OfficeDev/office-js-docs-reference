@@ -12,17 +12,16 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.ListCollection#items:member" /> (property type)
+  - <xref uid="word!Word.ListCollection#items:member" />
 
-  - <xref uid="word!Word.ListFormat#list:member" /> (property type)
+  - <xref uid="word!Word.ListFormat#list:member" />
 
-  - <xref uid="word!Word.Paragraph#list:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#list:member" />
 
-  - <xref uid="word!Word.Paragraph#listOrNullObject:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#listOrNullObject:member" />
 
   #### Examples
 

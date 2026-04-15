@@ -15,24 +15,22 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.BooleanCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.BooleanCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.DoubleCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.DoubleCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.EntityCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.EntityCellValue#provider:member" />
 
   - <xref uid="excel!Excel.ExternalCodeServiceObjectCellValue#provider:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member" /> (property
-  type)
+  - <xref uid="excel!Excel.LinkedEntityCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.LocalImageCellValue#provider:member" /> (property
-  type)
+  - <xref uid="excel!Excel.LocalImageCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.StringCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.StringCellValue#provider:member" />
 
-  - <xref uid="excel!Excel.WebImageCellValue#provider:member" /> (property type)
+  - <xref uid="excel!Excel.WebImageCellValue#provider:member" />
 
 isPreview: false
 isDeprecated: false

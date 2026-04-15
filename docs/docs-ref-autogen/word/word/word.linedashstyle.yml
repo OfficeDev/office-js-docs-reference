@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.LineFormatData#dashStyle:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.LineFormatUpdateData#dashStyle:member" />
-  (property type)
 
-  - <xref uid="word!Word.LineFormat#dashStyle:member" /> (property type)
+  - <xref uid="word!Word.LineFormat#dashStyle:member" />
 
 isPreview: false
 isDeprecated: false

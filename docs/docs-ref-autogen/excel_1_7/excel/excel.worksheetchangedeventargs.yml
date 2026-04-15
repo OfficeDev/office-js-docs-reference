@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#onChanged:member" /> (property type)
+  - <xref uid="excel!Excel.Worksheet#onChanged:member" />
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ViewData#revisionsBalloonSide:member" />
-  (property type)
 
-  - <xref uid="word!Word.View#revisionsBalloonSide:member" /> (property type)
+  - <xref uid="word!Word.View#revisionsBalloonSide:member" />
 
 isPreview: false
 isDeprecated: false

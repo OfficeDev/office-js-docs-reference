@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutData#printOrder:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.PageLayout#printOrder:member" /> (property type)
+  - <xref uid="excel!Excel.PageLayout#printOrder:member" />
 
 isPreview: false
 isDeprecated: false

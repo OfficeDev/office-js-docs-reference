@@ -14,23 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ConditionalStyle#borders:member" /> (property type)
+  - <xref uid="word!Word.ConditionalStyle#borders:member" />
 
-  - <xref uid="word!Word.Font#borders:member" /> (property type)
+  - <xref uid="word!Word.Font#borders:member" />
 
-  - <xref uid="word!Word.Frame#borders:member" /> (property type)
+  - <xref uid="word!Word.Frame#borders:member" />
 
-  - <xref uid="word!Word.Paragraph#borders:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#borders:member" />
 
-  - <xref uid="word!Word.Range#borders:member" /> (property type)
+  - <xref uid="word!Word.Range#borders:member" />
 
-  - <xref uid="word!Word.Section#borders:member" /> (property type)
+  - <xref uid="word!Word.Section#borders:member" />
 
-  - <xref uid="word!Word.Selection#borders:member" /> (property type)
+  - <xref uid="word!Word.Selection#borders:member" />
 
-  - <xref uid="word!Word.TableColumn#borders:member" /> (property type)
+  - <xref uid="word!Word.TableColumn#borders:member" />
 
-  - <xref uid="word!Word.TableStyle#borders:member" /> (property type)
+  - <xref uid="word!Word.TableStyle#borders:member" />
 
 isPreview: false
 isDeprecated: false

@@ -11,20 +11,17 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BodyData#contentControls:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ContentControlCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.ContentControlCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ContentControlData#contentControls:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.DocumentData#contentControls:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

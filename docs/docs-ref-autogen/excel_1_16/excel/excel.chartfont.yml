@@ -12,28 +12,26 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAreaFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAreaFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartAxisFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAxisFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartAxisTitleFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAxisTitleFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartDataLabelFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartDataLabelFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartDataTableFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartDataTableFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartFormatString#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartFormatString#font:member" />
 
-  - <xref uid="excel!Excel.ChartLegendFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartLegendFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartTitleFormat#font:member" /> (property type)
+  - <xref uid="excel!Excel.ChartTitleFormat#font:member" />
 
-  - <xref uid="excel!Excel.ChartTrendlineLabelFormat#font:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartTrendlineLabelFormat#font:member" />
 
   #### Examples
 

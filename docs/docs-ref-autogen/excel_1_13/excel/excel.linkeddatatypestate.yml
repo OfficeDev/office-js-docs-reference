@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeData#linkedDataTypeState:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Range#linkedDataTypeState:member" /> (property type)
+  - <xref uid="excel!Excel.Range#linkedDataTypeState:member" />
 
 isPreview: false
 isDeprecated: false

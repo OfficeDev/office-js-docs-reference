@@ -13,10 +13,9 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions#borders:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.StyleLoadOptions#borders:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

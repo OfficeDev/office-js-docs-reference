@@ -13,10 +13,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" />
 
 isPreview: false
 isDeprecated: false

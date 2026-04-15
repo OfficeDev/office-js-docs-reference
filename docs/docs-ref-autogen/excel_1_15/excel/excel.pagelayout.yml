@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Worksheet#pageLayout:member" /> (property type)
+  - <xref uid="excel!Excel.Worksheet#pageLayout:member" />
 
 isPreview: false
 isDeprecated: false

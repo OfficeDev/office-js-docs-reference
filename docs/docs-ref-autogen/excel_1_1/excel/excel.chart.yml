@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.ChartCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

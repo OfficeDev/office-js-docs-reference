@@ -12,33 +12,28 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartAxis#baseTimeUnit:member" /> (property type)
+  - <xref uid="excel!Excel.ChartAxis#baseTimeUnit:member" />
 
-  - <xref uid="excel!Excel.ChartAxis#majorTimeUnitScale:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartAxis#majorTimeUnitScale:member" />
 
-  - <xref uid="excel!Excel.ChartAxis#minorTimeUnitScale:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartAxis#minorTimeUnitScale:member" />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisData#baseTimeUnit:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisData#majorTimeUnitScale:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisData#minorTimeUnitScale:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

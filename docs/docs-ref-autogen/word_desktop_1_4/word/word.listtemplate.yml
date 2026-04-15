@@ -10,15 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.ListFormat#listTemplate:member" /> (property type)
+  - <xref uid="word!Word.ListFormat#listTemplate:member" />
 
-  - <xref uid="word!Word.ListTemplateCollection#items:member" /> (property type)
+  - <xref uid="word!Word.ListTemplateCollection#items:member" />
 
-  - <xref uid="word!Word.Style#listTemplate:member" /> (property type)
+  - <xref uid="word!Word.Style#listTemplate:member" />
 
   #### Examples
 

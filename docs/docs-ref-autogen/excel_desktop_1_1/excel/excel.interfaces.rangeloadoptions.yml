@@ -19,17 +19,14 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#activeCell:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.WindowCollectionLoadOptions#visibleRange:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#activeCell:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.WindowLoadOptions#visibleRange:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

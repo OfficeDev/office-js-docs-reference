@@ -18,26 +18,21 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CellBorderCollection#bottom:member" /> (property
-  type)
+  - <xref uid="excel!Excel.CellBorderCollection#bottom:member" />
 
   - <xref uid="excel!Excel.CellBorderCollection#diagonalDown:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.CellBorderCollection#diagonalUp:member" /> (property
-  type)
+  - <xref uid="excel!Excel.CellBorderCollection#diagonalUp:member" />
 
-  - <xref uid="excel!Excel.CellBorderCollection#horizontal:member" /> (property
-  type)
+  - <xref uid="excel!Excel.CellBorderCollection#horizontal:member" />
 
-  - <xref uid="excel!Excel.CellBorderCollection#left:member" /> (property type)
+  - <xref uid="excel!Excel.CellBorderCollection#left:member" />
 
-  - <xref uid="excel!Excel.CellBorderCollection#right:member" /> (property type)
+  - <xref uid="excel!Excel.CellBorderCollection#right:member" />
 
-  - <xref uid="excel!Excel.CellBorderCollection#top:member" /> (property type)
+  - <xref uid="excel!Excel.CellBorderCollection#top:member" />
 
-  - <xref uid="excel!Excel.CellBorderCollection#vertical:member" /> (property
-  type)
+  - <xref uid="excel!Excel.CellBorderCollection#vertical:member" />
 
   #### Examples
 

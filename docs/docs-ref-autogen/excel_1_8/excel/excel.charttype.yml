@@ -13,21 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#chartType:member" /> (property type)
+  - <xref uid="excel!Excel.Chart#chartType:member" />
 
-  - <xref uid="excel!Excel.ChartSeries#chartType:member" /> (property type)
+  - <xref uid="excel!Excel.ChartSeries#chartType:member" />
 
-  - <xref uid="excel!Excel.Interfaces.ChartData#chartType:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ChartData#chartType:member" />
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesData#chartType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartUpdateData#chartType:member" />
-  (property type)
 
   #### Examples
 

@@ -11,19 +11,15 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CoauthorCollectionData#items:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.CoauthorCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringData#authors:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.CoauthoringData#authors:member" />
 
-  - <xref uid="word!Word.Interfaces.CoauthoringData#me:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.CoauthoringData#me:member" />
 
   - <xref uid="word!Word.Interfaces.CoauthoringLockData#owner:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

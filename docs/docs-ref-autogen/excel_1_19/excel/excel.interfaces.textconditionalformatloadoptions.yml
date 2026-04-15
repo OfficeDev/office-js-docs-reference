@@ -14,19 +14,19 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparison:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#textComparisonOrNullObject:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparison:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatLoadOptions#textComparisonOrNullObject:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

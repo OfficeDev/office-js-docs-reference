@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Workbook#slicers:member" /> (property type)
+  - <xref uid="excel!Excel.Workbook#slicers:member" />
 
-  - <xref uid="excel!Excel.Worksheet#slicers:member" /> (property type)
+  - <xref uid="excel!Excel.Worksheet#slicers:member" />
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Presentation#pageSetup:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.Presentation#pageSetup:member" />
 
 isPreview: false
 isDeprecated: false

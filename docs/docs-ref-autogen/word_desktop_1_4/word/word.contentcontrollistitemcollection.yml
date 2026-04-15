@@ -14,15 +14,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.ComboBoxContentControl#listItems:member" /> (property
-  type)
+  - <xref uid="word!Word.ComboBoxContentControl#listItems:member" />
 
   - <xref uid="word!Word.DropDownListContentControl#listItems:member" />
-  (property type)
 
   #### Examples
 

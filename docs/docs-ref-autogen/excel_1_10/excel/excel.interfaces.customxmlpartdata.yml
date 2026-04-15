@@ -11,22 +11,19 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.CustomXmlPartCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.WorkbookData#customXmlParts:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

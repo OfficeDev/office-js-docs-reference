@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.FontLoadOptions#line:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FontLoadOptions#line:member" />
 
 isPreview: false
 isDeprecated: false

@@ -11,14 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.WorkbookData#worksheets:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.WorksheetCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -11,14 +11,11 @@ remarks: >-
 
 
   - <xref uid="visio!Visio.Interfaces.HyperlinkCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member" />
-  (property type)
 
-  - <xref uid="visio!Visio.Interfaces.ShapeData#hyperlinks:member" /> (property
-  type)
+  - <xref uid="visio!Visio.Interfaces.ShapeData#hyperlinks:member" />
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartPointLoadOptions#dataLabel:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#dataLabel:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -6,12 +6,10 @@ fullName: Word.Interfaces.ShapeGroupData
 summary: >-
   An interface describing the data returned by calling `shapeGroup.toJSON()`<!--
   -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ShapeData#shapeGroup:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ShapeData#shapeGroup:member" />
 
 isPreview: false
 isDeprecated: false

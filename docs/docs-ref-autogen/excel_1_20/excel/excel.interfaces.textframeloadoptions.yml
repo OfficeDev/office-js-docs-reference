@@ -14,14 +14,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#textFrame:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.ShapeCollectionLoadOptions#textFrame:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

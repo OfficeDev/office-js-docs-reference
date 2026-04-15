@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="office!Office.AsyncResult#error:member" /> (property type)
+  - <xref uid="office!Office.AsyncResult#error:member" />
 
 isPreview: false
 isDeprecated: false

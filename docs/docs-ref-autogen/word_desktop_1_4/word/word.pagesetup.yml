@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#pageSetup:member" /> (property type)
+  - <xref uid="word!Word.Document#pageSetup:member" />
 
-  - <xref uid="word!Word.Section#pageSetup:member" /> (property type)
+  - <xref uid="word!Word.Section#pageSetup:member" />
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,6 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#format:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

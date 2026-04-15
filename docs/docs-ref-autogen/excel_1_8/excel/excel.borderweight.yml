@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeBorderData#weight:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.RangeBorderUpdateData#weight:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.RangeBorder#weight:member" /> (property type)
+  - <xref uid="excel!Excel.RangeBorder#weight:member" />
 
 isPreview: false
 isDeprecated: false

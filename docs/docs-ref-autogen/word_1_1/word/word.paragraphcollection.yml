@@ -12,15 +12,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.Body#paragraphs:member" />
 
-  - <xref uid="word!Word.ContentControl#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#paragraphs:member" />
 
-  - <xref uid="word!Word.Range#paragraphs:member" /> (property type)
+  - <xref uid="word!Word.Range#paragraphs:member" />
 
   #### Examples
 

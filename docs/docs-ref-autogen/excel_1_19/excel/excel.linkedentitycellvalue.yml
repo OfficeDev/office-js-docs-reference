@@ -13,10 +13,8 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.LinkedEntityLoadServiceResult#entities:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.PlaceholderErrorCellValue#target:member" /> (property
-  type)
+  - <xref uid="excel!Excel.PlaceholderErrorCellValue#target:member" />
 
 isPreview: false
 isDeprecated: false

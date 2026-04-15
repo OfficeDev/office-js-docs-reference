@@ -15,11 +15,11 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#background:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#background:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

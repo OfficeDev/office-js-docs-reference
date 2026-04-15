@@ -31,22 +31,17 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#notificationMessages:member" />
-  (property type)
 
   - <xref uid="outlook!Office.AppointmentRead#notificationMessages:member" />
-  (property type)
 
   - <xref uid="outlook!Office.LoadedMessageCompose#notificationMessages:member"
-  /> (property type)
+  />
 
   - <xref uid="outlook!Office.LoadedMessageRead#notificationMessages:member" />
-  (property type)
 
   - <xref uid="outlook!Office.MessageCompose#notificationMessages:member" />
-  (property type)
 
   - <xref uid="outlook!Office.MessageRead#notificationMessages:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#displayNewMessageForm:member" />
-  (parameter type)
+  - <xref uid="outlook!Office.Mailbox#displayNewMessageForm:member(1)" />
 
 isPreview: false
 isDeprecated: false

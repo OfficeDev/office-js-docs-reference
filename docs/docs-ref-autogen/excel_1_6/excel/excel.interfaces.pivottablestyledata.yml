@@ -12,11 +12,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

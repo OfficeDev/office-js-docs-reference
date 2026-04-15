@@ -19,12 +19,10 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="excel!Excel.WorksheetCollection#onMoved:member" /> (property
-  type)
+  - <xref uid="excel!Excel.WorksheetCollection#onMoved:member" />
 
   #### Examples
 

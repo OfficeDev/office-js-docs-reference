@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.CultureInfo#numberFormat:member" /> (property type)
+  - <xref uid="excel!Excel.CultureInfo#numberFormat:member" />
 
 isPreview: false
 isDeprecated: false

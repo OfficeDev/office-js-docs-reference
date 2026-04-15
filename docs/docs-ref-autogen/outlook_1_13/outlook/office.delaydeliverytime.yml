@@ -26,7 +26,6 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.MessageCompose#delayDeliveryTime:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

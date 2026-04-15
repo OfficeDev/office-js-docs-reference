@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ShapeLineFormatData#style:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeLineFormatUpdateData#style:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.ShapeLineFormat#style:member" /> (property type)
+  - <xref uid="excel!Excel.ShapeLineFormat#style:member" />
 
 isPreview: false
 isDeprecated: false

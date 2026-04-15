@@ -14,11 +14,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#workbookLinksRefreshMode:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.LinkedWorkbookCollection#workbookLinksRefreshMode:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

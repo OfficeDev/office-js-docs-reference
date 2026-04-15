@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.FillFormat#type:member" /> (property type)
+  - <xref uid="word!Word.FillFormat#type:member" />
 
-  - <xref uid="word!Word.Interfaces.FillFormatData#type:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FillFormatData#type:member" />
 
 isPreview: false
 isDeprecated: false

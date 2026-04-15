@@ -13,21 +13,20 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Canvas#shape:member" /> (property type)
+  - <xref uid="word!Word.Canvas#shape:member" />
 
-  - <xref uid="word!Word.Document#background:member" /> (property type)
+  - <xref uid="word!Word.Document#background:member" />
 
-  - <xref uid="word!Word.Shape#parentCanvas:member" /> (property type)
+  - <xref uid="word!Word.Shape#parentCanvas:member" />
 
-  - <xref uid="word!Word.Shape#parentGroup:member" /> (property type)
+  - <xref uid="word!Word.Shape#parentGroup:member" />
 
-  - <xref uid="word!Word.ShapeCollection#items:member" /> (property type)
+  - <xref uid="word!Word.ShapeCollection#items:member" />
 
-  - <xref uid="word!Word.ShapeGroup#shape:member" /> (property type)
+  - <xref uid="word!Word.ShapeGroup#shape:member" />
 
   #### Examples
 

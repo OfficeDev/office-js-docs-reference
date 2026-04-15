@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.XmlNodeData#level:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.XmlNodeData#level:member" />
 
-  - <xref uid="word!Word.XmlNode#level:member" /> (property type)
+  - <xref uid="word!Word.XmlNode#level:member" />
 
 isPreview: false
 isDeprecated: false

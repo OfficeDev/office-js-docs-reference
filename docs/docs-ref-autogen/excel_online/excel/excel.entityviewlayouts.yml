@@ -13,10 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.EntityCellValue#layouts:member" /> (property type)
+  - <xref uid="excel!Excel.EntityCellValue#layouts:member" />
 
-  - <xref uid="excel!Excel.LinkedEntityCellValue#layouts:member" /> (property
-  type)
+  - <xref uid="excel!Excel.LinkedEntityCellValue#layouts:member" />
 
   #### Examples
 

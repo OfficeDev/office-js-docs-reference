@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Range#tableColumns:member" /> (property type)
+  - <xref uid="word!Word.Range#tableColumns:member" />
 
-  - <xref uid="word!Word.Table#columns:member" /> (property type)
+  - <xref uid="word!Word.Table#columns:member" />
 
 isPreview: false
 isDeprecated: false

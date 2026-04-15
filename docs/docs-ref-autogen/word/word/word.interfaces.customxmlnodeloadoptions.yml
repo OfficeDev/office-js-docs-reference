@@ -18,62 +18,59 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#firstChild:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#lastChild:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#nextSibling:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#parentNode:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#previousSibling:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#firstChild:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#lastChild:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#nextSibling:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#parentNode:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlNodeLoadOptions#previousSibling:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#documentElement:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartLoadOptions#documentElement:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#documentElement:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#node:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#node:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.XmlMappingLoadOptions#customXmlNode:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

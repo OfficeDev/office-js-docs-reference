@@ -13,12 +13,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.RangeData#characterWidth:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeUpdateData#characterWidth:member" />
-  (property type)
 
-  - <xref uid="word!Word.Range#characterWidth:member" /> (property type)
+  - <xref uid="word!Word.Range#characterWidth:member" />
 
 isPreview: false
 isDeprecated: false

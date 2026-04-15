@@ -13,161 +13,130 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.BookmarkLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.BreakCollectionLoadOptions#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BreakLoadOptions#range:member" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CoauthoringLockCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CoauthoringLockLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.CoauthoringUpdateCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.CoauthoringUpdateLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ConflictCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ConflictLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.DocumentLoadOptions#content:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.EditorLoadOptions#nextRange:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.EditorLoadOptions#range:member" />
 
   - <xref uid="word!Word.Interfaces.FieldCollectionLoadOptions#result:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FieldLoadOptions#result:member" />
 
   - <xref uid="word!Word.Interfaces.FrameCollectionLoadOptions#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FrameLoadOptions#range:member" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.HyperlinkCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.HyperlinkLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.IndexCollectionLoadOptions#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.IndexLoadOptions#range:member" />
 
   - <xref
   uid="word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.NoteItemLoadOptions#reference:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RevisionCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.RevisionLoadOptions#movedRange:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RevisionLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.SelectionLoadOptions#formattedText:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.SelectionLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.TableOfContentsCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.TableOfContentsLoadOptions#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableOfFiguresLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TableRowCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.TableRowLoadOptions#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.XmlNodeCollectionLoadOptions#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.XmlNodeLoadOptions#range:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

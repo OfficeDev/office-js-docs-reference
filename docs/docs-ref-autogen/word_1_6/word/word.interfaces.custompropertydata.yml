@@ -11,15 +11,13 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.CustomPropertyCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.DocumentPropertiesData#customProperties:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

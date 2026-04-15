@@ -16,14 +16,12 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#style:member" />
-  (property type)
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#style:member"
-  /> (property type)
+  />
 
-  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#style:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#style:member" />
 
   #### Examples
 

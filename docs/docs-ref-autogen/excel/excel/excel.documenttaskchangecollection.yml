@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTask#changes:member" /> (property type)
+  - <xref uid="excel!Excel.DocumentTask#changes:member" />
 
 isPreview: true
 isDeprecated: false

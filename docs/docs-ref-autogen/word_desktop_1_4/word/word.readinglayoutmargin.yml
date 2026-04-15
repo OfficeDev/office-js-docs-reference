@@ -14,14 +14,12 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.ViewData#readingLayoutTruncateMargins:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.ViewUpdateData#readingLayoutTruncateMargins:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.View#readingLayoutTruncateMargins:member" /> (property
-  type)
+  - <xref uid="word!Word.View#readingLayoutTruncateMargins:member" />
 
 isPreview: false
 isDeprecated: false

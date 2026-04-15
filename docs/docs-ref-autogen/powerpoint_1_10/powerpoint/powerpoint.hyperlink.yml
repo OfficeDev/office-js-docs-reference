@@ -11,15 +11,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
   - <xref uid="powerpoint!PowerPoint.HyperlinkCollection#items:member" />
-  (property type)
 
   - <xref uid="powerpoint!PowerPoint.HyperlinkScopedCollection#items:member" />
-  (property type)
 
   #### Examples
 

@@ -13,9 +13,8 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.ParagraphData#type:member" />
-  (property type)
 
-  - <xref uid="onenote!OneNote.Paragraph#type:member" /> (property type)
+  - <xref uid="onenote!OneNote.Paragraph#type:member" />
 
 isPreview: false
 isDeprecated: false

@@ -11,22 +11,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Graphic#shape:member" /> (property type)
+  - <xref uid="powerpoint!PowerPoint.Graphic#shape:member" />
 
-  - <xref uid="powerpoint!PowerPoint.Shape#parentGroup:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.Shape#parentGroup:member" />
 
-  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member" /> (property
-  type)
+  - <xref uid="powerpoint!PowerPoint.ShapeCollection#items:member" />
 
-  - <xref uid="powerpoint!PowerPoint.ShapeGroup#shape:member" /> (property type)
+  - <xref uid="powerpoint!PowerPoint.ShapeGroup#shape:member" />
 
   - <xref uid="powerpoint!PowerPoint.ShapeScopedCollection#items:member" />
-  (property type)
 
   #### Examples
 

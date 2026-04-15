@@ -12,21 +12,19 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.CellValueConditionalFormatData#format:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.CustomConditionalFormatData#format:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#format:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.TextConditionalFormatData#format:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

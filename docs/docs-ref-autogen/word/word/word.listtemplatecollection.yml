@@ -15,12 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#listTemplates:member" /> (property type)
+  - <xref uid="word!Word.Document#listTemplates:member" />
 
-  - <xref uid="word!Word.ListTemplateGallery#listTemplates:member" /> (property
-  type)
+  - <xref uid="word!Word.ListTemplateGallery#listTemplates:member" />
 
-  - <xref uid="word!Word.Template#listTemplates:member" /> (property type)
+  - <xref uid="word!Word.Template#listTemplates:member" />
 
 isPreview: false
 isDeprecated: false

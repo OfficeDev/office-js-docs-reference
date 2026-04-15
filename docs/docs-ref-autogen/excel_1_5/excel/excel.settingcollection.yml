@@ -16,9 +16,8 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.SettingsChangedEventArgs#settings:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Workbook#settings:member" /> (property type)
+  - <xref uid="excel!Excel.Workbook#settings:member" />
 
 isPreview: false
 isDeprecated: false

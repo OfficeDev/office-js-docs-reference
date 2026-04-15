@@ -11,10 +11,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.CommentCollectionData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.CommentCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

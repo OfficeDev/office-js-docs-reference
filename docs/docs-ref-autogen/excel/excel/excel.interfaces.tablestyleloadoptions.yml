@@ -16,14 +16,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.TableCollectionLoadOptions#tableStyle:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.TableLoadOptions#tableStyle:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

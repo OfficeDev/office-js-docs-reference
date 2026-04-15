@@ -13,14 +13,12 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

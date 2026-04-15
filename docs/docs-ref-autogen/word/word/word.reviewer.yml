@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.ReviewerCollection#items:member" /> (property type)
+  - <xref uid="word!Word.ReviewerCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

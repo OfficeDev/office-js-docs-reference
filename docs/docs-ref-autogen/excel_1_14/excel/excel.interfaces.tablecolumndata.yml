@@ -11,14 +11,11 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.TableColumnCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.TableData#columns:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.TableData#columns:member" />
 
 isPreview: false
 isDeprecated: false

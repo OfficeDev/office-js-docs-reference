@@ -12,12 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.TabStopData#alignment:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.TabStopData#alignment:member" />
 
-  - <xref uid="word!Word.TabStop#alignment:member" /> (property type)
+  - <xref uid="word!Word.TabStop#alignment:member" />
 
-  - <xref uid="word!Word.TabStopAddOptions#alignment:member" /> (property type)
+  - <xref uid="word!Word.TabStopAddOptions#alignment:member" />
 
 isPreview: false
 isDeprecated: false

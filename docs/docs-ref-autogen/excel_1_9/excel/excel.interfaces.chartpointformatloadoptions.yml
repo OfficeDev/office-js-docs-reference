@@ -13,11 +13,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.ChartPointLoadOptions#format:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#format:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

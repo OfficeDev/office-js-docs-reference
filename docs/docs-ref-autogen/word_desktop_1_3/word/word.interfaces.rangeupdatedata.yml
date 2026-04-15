@@ -10,42 +10,35 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.BreakUpdateData#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.BreakUpdateData#range:member" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#range:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlUpdateData#range:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member" />
 
-  - <xref uid="word!Word.Interfaces.FrameUpdateData#range:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FrameUpdateData#range:member" />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlUpdateData#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.HyperlinkUpdateData#range:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.NoteItemUpdateData#reference:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlUpdateData#range:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#range:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.RepeatingSectionItemUpdateData#range:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

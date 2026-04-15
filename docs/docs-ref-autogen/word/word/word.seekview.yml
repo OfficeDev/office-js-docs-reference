@@ -12,12 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ViewData#seekView:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.ViewData#seekView:member" />
 
-  - <xref uid="word!Word.Interfaces.ViewUpdateData#seekView:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ViewUpdateData#seekView:member" />
 
-  - <xref uid="word!Word.View#seekView:member" /> (property type)
+  - <xref uid="word!Word.View#seekView:member" />
 
 isPreview: false
 isDeprecated: false

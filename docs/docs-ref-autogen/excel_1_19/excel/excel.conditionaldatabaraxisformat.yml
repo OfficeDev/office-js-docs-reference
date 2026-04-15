@@ -13,15 +13,13 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.DataBarConditionalFormat#axisFormat:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#axisFormat:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

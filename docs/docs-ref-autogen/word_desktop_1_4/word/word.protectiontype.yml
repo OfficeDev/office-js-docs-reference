@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#protectionType:member" /> (property type)
+  - <xref uid="word!Word.Document#protectionType:member" />
 
   - <xref uid="word!Word.Interfaces.DocumentData#protectionType:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -73,7 +73,6 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.MessageCompose#internetHeaders:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

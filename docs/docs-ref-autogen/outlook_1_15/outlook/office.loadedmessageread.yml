@@ -43,8 +43,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#loadItemByIdAsync:member" /> (parameter
-  type)
+  - <xref uid="outlook!Office.Mailbox#loadItemByIdAsync:member(1)" />
 
   #### Examples
 

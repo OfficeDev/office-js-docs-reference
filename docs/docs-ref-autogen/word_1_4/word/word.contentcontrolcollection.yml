@@ -17,20 +17,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#contentControls:member" /> (property type)
+  - <xref uid="word!Word.Body#contentControls:member" />
 
-  - <xref uid="word!Word.ContentControl#contentControls:member" /> (property
-  type)
+  - <xref uid="word!Word.ContentControl#contentControls:member" />
 
-  - <xref uid="word!Word.Document#contentControls:member" /> (property type)
+  - <xref uid="word!Word.Document#contentControls:member" />
 
-  - <xref uid="word!Word.Paragraph#contentControls:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#contentControls:member" />
 
-  - <xref uid="word!Word.Range#contentControls:member" /> (property type)
+  - <xref uid="word!Word.Range#contentControls:member" />
 
   #### Examples
 

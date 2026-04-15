@@ -6,21 +6,13 @@ fullName: Excel.Interfaces.ChartLineFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartLineFormat.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="excel!Excel.Interfaces.ChartAxisFormatData#line:member" />
-  (property type)
-
   - <xref uid="excel!Excel.Interfaces.ChartGridlinesFormatData#line:member" />
-  (property type)
-
   - <xref uid="excel!Excel.Interfaces.ChartSeriesFormatData#line:member" />
-  (property type)
-
   - <xref uid="excel!Excel.Interfaces.ChartTrendlineFormatData#line:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

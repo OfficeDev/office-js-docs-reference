@@ -9,23 +9,17 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.GroupShapeCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeCollectionData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ShapeCollectionUpdateData#items:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Interfaces.ShapeGroupData#shapes:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ShapeGroupData#shapes:member" />
 
-  - <xref uid="excel!Excel.Interfaces.WorksheetData#shapes:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.WorksheetData#shapes:member" />
 
 isPreview: false
 isDeprecated: false

@@ -6,12 +6,10 @@ fullName: Visio.Interfaces.ApplicationData
 summary: >-
   An interface describing the data returned by calling
   `application.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
   - <xref uid="visio!Visio.Interfaces.DocumentData#application:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

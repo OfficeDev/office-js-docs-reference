@@ -14,14 +14,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PivotTableLoadOptions#layout:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#layout:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

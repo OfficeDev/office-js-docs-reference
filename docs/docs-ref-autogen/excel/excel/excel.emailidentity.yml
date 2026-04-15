@@ -12,32 +12,26 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.DocumentTask#assignees:member" /> (property type)
+  - <xref uid="excel!Excel.DocumentTask#assignees:member" />
 
-  - <xref uid="excel!Excel.DocumentTask#completedBy:member" /> (property type)
+  - <xref uid="excel!Excel.DocumentTask#completedBy:member" />
 
-  - <xref uid="excel!Excel.DocumentTask#createdBy:member" /> (property type)
+  - <xref uid="excel!Excel.DocumentTask#createdBy:member" />
 
-  - <xref uid="excel!Excel.DocumentTaskChange#assignee:member" /> (property
-  type)
+  - <xref uid="excel!Excel.DocumentTaskChange#assignee:member" />
 
-  - <xref uid="excel!Excel.DocumentTaskChange#changedBy:member" /> (property
-  type)
+  - <xref uid="excel!Excel.DocumentTaskChange#changedBy:member" />
 
   - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#assignee:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.DocumentTaskData#assignees:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.DocumentTaskData#completedBy:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.DocumentTaskData#createdBy:member" />
-  (property type)
 
 isPreview: true
 isDeprecated: false

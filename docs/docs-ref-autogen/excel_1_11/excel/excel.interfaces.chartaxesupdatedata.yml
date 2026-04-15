@@ -6,12 +6,10 @@ fullName: Excel.Interfaces.ChartAxesUpdateData
 summary: >-
   An interface for updating data on the `ChartAxes` object, for use in
   `chartAxes.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#axes:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.ChartUpdateData#axes:member" />
 
 isPreview: false
 isDeprecated: false

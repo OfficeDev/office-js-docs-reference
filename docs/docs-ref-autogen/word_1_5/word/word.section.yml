@@ -10,16 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Body#parentSection:member" /> (property type)
+  - <xref uid="word!Word.Body#parentSection:member" />
 
-  - <xref uid="word!Word.Body#parentSectionOrNullObject:member" /> (property
-  type)
+  - <xref uid="word!Word.Body#parentSectionOrNullObject:member" />
 
-  - <xref uid="word!Word.SectionCollection#items:member" /> (property type)
+  - <xref uid="word!Word.SectionCollection#items:member" />
 
   #### Examples
 

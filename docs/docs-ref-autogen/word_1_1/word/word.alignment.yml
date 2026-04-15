@@ -13,13 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Interfaces.ParagraphData#alignment:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ParagraphData#alignment:member" />
 
   - <xref uid="word!Word.Interfaces.ParagraphUpdateData#alignment:member" />
-  (property type)
 
-  - <xref uid="word!Word.Paragraph#alignment:member" /> (property type)
+  - <xref uid="word!Word.Paragraph#alignment:member" />
 
   #### Examples
 

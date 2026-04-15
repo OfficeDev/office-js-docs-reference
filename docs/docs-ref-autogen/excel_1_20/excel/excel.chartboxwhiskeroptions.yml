@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartSeries#boxwhiskerOptions:member" /> (property
-  type)
+  - <xref uid="excel!Excel.ChartSeries#boxwhiskerOptions:member" />
 
 isPreview: false
 isDeprecated: false

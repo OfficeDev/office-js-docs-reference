@@ -13,7 +13,6 @@ remarks: >-
 
 
   - <xref uid="word!Word.ListTemplateApplyOptions#defaultListBehavior:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

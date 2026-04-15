@@ -32,10 +32,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="outlook!Office.Mailbox#convertToEwsId:member" /> (parameter type)
+  - <xref uid="outlook!Office.Mailbox#convertToEwsId:member(1)" />
 
-  - <xref uid="outlook!Office.Mailbox#convertToRestId:member" /> (parameter
-  type)
+  - <xref uid="outlook!Office.Mailbox#convertToRestId:member(1)" />
 
   #### Examples
 

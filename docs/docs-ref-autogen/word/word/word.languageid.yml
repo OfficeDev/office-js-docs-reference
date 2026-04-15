@@ -12,102 +12,82 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Application#language:member" /> (property type)
+  - <xref uid="word!Word.Application#language:member" />
 
   - <xref uid="word!Word.DatePickerContentControl#dateDisplayLocale:member" />
-  (property type)
 
-  - <xref uid="word!Word.Index#indexLanguage:member" /> (property type)
+  - <xref uid="word!Word.Index#indexLanguage:member" />
 
-  - <xref uid="word!Word.IndexAddOptions#indexLanguage:member" /> (property
-  type)
+  - <xref uid="word!Word.IndexAddOptions#indexLanguage:member" />
 
   - <xref uid="word!Word.Interfaces.ApplicationData#language:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlData#dateDisplayLocale:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Interfaces.IndexData#indexLanguage:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.IndexData#indexLanguage:member" />
 
-  - <xref uid="word!Word.Interfaces.RangeData#languageId:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.RangeData#languageId:member" />
 
   - <xref uid="word!Word.Interfaces.RangeData#languageIdFarEast:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeData#languageIdOther:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeUpdateData#languageId:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdFarEast:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RangeUpdateData#languageIdOther:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.SelectionData#languageId:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.SelectionData#languageIdFarEast:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.SelectionData#languageIdOther:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.StyleData#languageId:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.StyleData#languageId:member" />
 
   - <xref uid="word!Word.Interfaces.StyleData#languageIdFarEast:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.StyleUpdateData#languageId:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.TemplateData#languageId:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.TemplateData#languageId:member" />
 
   - <xref uid="word!Word.Interfaces.TemplateData#languageIdFarEast:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageId:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TemplateUpdateData#languageIdFarEast:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Range#languageId:member" /> (property type)
+  - <xref uid="word!Word.Range#languageId:member" />
 
-  - <xref uid="word!Word.Range#languageIdFarEast:member" /> (property type)
+  - <xref uid="word!Word.Range#languageIdFarEast:member" />
 
-  - <xref uid="word!Word.Range#languageIdOther:member" /> (property type)
+  - <xref uid="word!Word.Range#languageIdOther:member" />
 
-  - <xref uid="word!Word.Selection#languageId:member" /> (property type)
+  - <xref uid="word!Word.Selection#languageId:member" />
 
-  - <xref uid="word!Word.Selection#languageIdFarEast:member" /> (property type)
+  - <xref uid="word!Word.Selection#languageIdFarEast:member" />
 
-  - <xref uid="word!Word.Selection#languageIdOther:member" /> (property type)
+  - <xref uid="word!Word.Selection#languageIdOther:member" />
 
-  - <xref uid="word!Word.Style#languageId:member" /> (property type)
+  - <xref uid="word!Word.Style#languageId:member" />
 
-  - <xref uid="word!Word.Style#languageIdFarEast:member" /> (property type)
+  - <xref uid="word!Word.Style#languageIdFarEast:member" />
 
-  - <xref uid="word!Word.TableSortOptions#languageId:member" /> (property type)
+  - <xref uid="word!Word.TableSortOptions#languageId:member" />
 
-  - <xref uid="word!Word.Template#languageId:member" /> (property type)
+  - <xref uid="word!Word.Template#languageId:member" />
 
-  - <xref uid="word!Word.Template#languageIdFarEast:member" /> (property type)
+  - <xref uid="word!Word.Template#languageIdFarEast:member" />
 
 isPreview: false
 isDeprecated: false

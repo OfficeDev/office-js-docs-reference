@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#saveFormat:member" /> (property type)
+  - <xref uid="word!Word.Document#saveFormat:member" />
 
-  - <xref uid="word!Word.Interfaces.DocumentData#saveFormat:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.DocumentData#saveFormat:member" />
 
 isPreview: false
 isDeprecated: false

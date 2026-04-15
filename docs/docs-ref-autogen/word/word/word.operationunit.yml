@@ -13,23 +13,19 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.SelectionDeleteOptions#unit:member" /> (property type)
+  - <xref uid="word!Word.SelectionDeleteOptions#unit:member" />
 
-  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member" /> (property
-  type)
+  - <xref uid="word!Word.SelectionMoveLeftRightOptions#unit:member" />
 
-  - <xref uid="word!Word.SelectionMoveOptions#unit:member" /> (property type)
+  - <xref uid="word!Word.SelectionMoveOptions#unit:member" />
 
-  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member" /> (property
-  type)
+  - <xref uid="word!Word.SelectionMoveStartEndOptions#unit:member" />
 
-  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member" /> (property
-  type)
+  - <xref uid="word!Word.SelectionMoveUpDownOptions#unit:member" />
 
-  - <xref uid="word!Word.SelectionNextOptions#unit:member" /> (property type)
+  - <xref uid="word!Word.SelectionNextOptions#unit:member" />
 
-  - <xref uid="word!Word.SelectionPreviousOptions#unit:member" /> (property
-  type)
+  - <xref uid="word!Word.SelectionPreviousOptions#unit:member" />
 
   #### Examples
 

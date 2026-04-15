@@ -13,22 +13,18 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.ChartBorder#lineStyle:member" /> (property type)
+  - <xref uid="excel!Excel.ChartBorder#lineStyle:member" />
 
-  - <xref uid="excel!Excel.ChartLineFormat#lineStyle:member" /> (property type)
+  - <xref uid="excel!Excel.ChartLineFormat#lineStyle:member" />
 
   - <xref uid="excel!Excel.Interfaces.ChartBorderData#lineStyle:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartBorderUpdateData#lineStyle:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ChartLineFormatUpdateData#lineStyle:member" />
-  (property type)
 
   #### Examples
 

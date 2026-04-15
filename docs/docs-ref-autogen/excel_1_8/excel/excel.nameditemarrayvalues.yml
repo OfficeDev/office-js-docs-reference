@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.NamedItem#arrayValues:member" /> (property type)
+  - <xref uid="excel!Excel.NamedItem#arrayValues:member" />
 
 isPreview: false
 isDeprecated: false

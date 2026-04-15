@@ -14,10 +14,8 @@ remarks: >-
 
   - <xref
   uid="word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.DocumentLoadOptions#properties:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#revisions:member" /> (property type)
+  - <xref uid="word!Word.Document#revisions:member" />
 
-  - <xref uid="word!Word.Range#revisions:member" /> (property type)
+  - <xref uid="word!Word.Range#revisions:member" />
 
 isPreview: false
 isDeprecated: false

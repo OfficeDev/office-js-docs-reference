@@ -29,7 +29,6 @@ remarks: >-
 
 
   - <xref uid="outlook!Office.AppointmentCompose#sensitivity:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

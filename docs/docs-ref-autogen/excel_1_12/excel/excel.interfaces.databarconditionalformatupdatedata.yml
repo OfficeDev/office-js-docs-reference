@@ -12,11 +12,10 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBar:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ConditionalFormatUpdateData#dataBarOrNullObject:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

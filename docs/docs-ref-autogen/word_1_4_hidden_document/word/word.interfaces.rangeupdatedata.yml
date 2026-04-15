@@ -6,12 +6,10 @@ fullName: Word.Interfaces.RangeUpdateData
 summary: >-
   An interface for updating data on the `Range` object, for use in `range.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.FieldUpdateData#result:member" />
 
 isPreview: false
 isDeprecated: false

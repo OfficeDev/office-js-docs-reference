@@ -12,21 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#justificationMode:member" /> (property type)
+  - <xref uid="word!Word.Document#justificationMode:member" />
 
   - <xref uid="word!Word.Interfaces.DocumentData#justificationMode:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.DocumentUpdateData#justificationMode:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.TemplateData#justificationMode:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.TemplateUpdateData#justificationMode:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.Template#justificationMode:member" /> (property type)
+  - <xref uid="word!Word.Template#justificationMode:member" />
 
 isPreview: false
 isDeprecated: false

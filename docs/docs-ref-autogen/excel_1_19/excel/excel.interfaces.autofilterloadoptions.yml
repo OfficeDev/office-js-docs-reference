@@ -16,21 +16,18 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.TableCollectionLoadOptions#autoFilter:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.TableLoadOptions#autoFilter:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions#autoFilter:member"
-  /> (property type)
+  />
 
   - <xref uid="excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

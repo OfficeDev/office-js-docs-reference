@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="visio!Visio.ShapeCollection#items:member" /> (property type)
+  - <xref uid="visio!Visio.ShapeCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

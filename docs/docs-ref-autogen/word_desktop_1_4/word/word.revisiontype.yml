@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.Conflict#type:member" /> (property type)
+  - <xref uid="word!Word.Conflict#type:member" />
 
-  - <xref uid="word!Word.Interfaces.ConflictData#type:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.ConflictData#type:member" />
 
-  - <xref uid="word!Word.Interfaces.RevisionData#type:member" /> (property type)
+  - <xref uid="word!Word.Interfaces.RevisionData#type:member" />
 
-  - <xref uid="word!Word.Revision#type:member" /> (property type)
+  - <xref uid="word!Word.Revision#type:member" />
 
 isPreview: false
 isDeprecated: false

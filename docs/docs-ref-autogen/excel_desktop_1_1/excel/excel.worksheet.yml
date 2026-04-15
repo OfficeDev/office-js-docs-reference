@@ -18,29 +18,27 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Chart#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.Chart#worksheet:member" />
 
   - <xref uid="excel!Excel.InsertWorksheetOptions#relativeTo:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.NamedItem#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.NamedItem#worksheet:member" />
 
-  - <xref uid="excel!Excel.NamedItem#worksheetOrNullObject:member" /> (property
-  type)
+  - <xref uid="excel!Excel.NamedItem#worksheetOrNullObject:member" />
 
-  - <xref uid="excel!Excel.PivotTable#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.PivotTable#worksheet:member" />
 
-  - <xref uid="excel!Excel.Range#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.Range#worksheet:member" />
 
-  - <xref uid="excel!Excel.RangeAreas#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.RangeAreas#worksheet:member" />
 
-  - <xref uid="excel!Excel.Slicer#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.Slicer#worksheet:member" />
 
-  - <xref uid="excel!Excel.Table#worksheet:member" /> (property type)
+  - <xref uid="excel!Excel.Table#worksheet:member" />
 
-  - <xref uid="excel!Excel.Window#activeWorksheet:member" /> (property type)
+  - <xref uid="excel!Excel.Window#activeWorksheet:member" />
 
-  - <xref uid="excel!Excel.WorksheetCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.WorksheetCollection#items:member" />
 
   #### Examples
 

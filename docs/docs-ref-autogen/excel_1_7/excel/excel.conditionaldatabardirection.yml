@@ -14,15 +14,14 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.DataBarConditionalFormat#barDirection:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatData#barDirection:member"
-  /> (property type)
+  />
 
   - <xref
   uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection:member"
-  /> (property type)
+  />
 
   #### Examples
 

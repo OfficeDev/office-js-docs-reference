@@ -14,14 +14,12 @@ remarks: >-
 
   - <xref
   uid="excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData#rule:member"
-  /> (property type)
+  />
 
-  - <xref uid="excel!Excel.TopBottomConditionalFormat#rule:member" /> (property
-  type)
+  - <xref uid="excel!Excel.TopBottomConditionalFormat#rule:member" />
 
 isPreview: false
 isDeprecated: false

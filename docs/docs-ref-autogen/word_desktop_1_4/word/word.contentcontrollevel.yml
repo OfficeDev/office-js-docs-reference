@@ -13,34 +13,28 @@ remarks: >-
 
 
   - <xref uid="word!Word.BuildingBlockGalleryContentControl#level:member" />
-  (property type)
 
-  - <xref uid="word!Word.DatePickerContentControl#level:member" /> (property
-  type)
+  - <xref uid="word!Word.DatePickerContentControl#level:member" />
 
-  - <xref uid="word!Word.GroupContentControl#level:member" /> (property type)
+  - <xref uid="word!Word.GroupContentControl#level:member" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#level:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.DatePickerContentControlData#level:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlData#level:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.PictureContentControlData#level:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlData#level:member" />
-  (property type)
 
-  - <xref uid="word!Word.PictureContentControl#level:member" /> (property type)
+  - <xref uid="word!Word.PictureContentControl#level:member" />
 
   - <xref uid="word!Word.RepeatingSectionContentControl#level:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

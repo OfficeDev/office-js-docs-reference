@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlNode#attributes:member" /> (property type)
+  - <xref uid="word!Word.CustomXmlNode#attributes:member" />
 
-  - <xref uid="word!Word.CustomXmlNode#childNodes:member" /> (property type)
+  - <xref uid="word!Word.CustomXmlNode#childNodes:member" />
 
 isPreview: false
 isDeprecated: false

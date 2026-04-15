@@ -11,23 +11,18 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.DataPivotHierarchyData#field:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PivotFieldCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.PivotHierarchyData#fields:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

@@ -11,11 +11,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.RangeViewCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member" />
-  (property type)
 
 isPreview: false
 isDeprecated: false

@@ -12,13 +12,12 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Document#sections:member" /> (property type)
+  - <xref uid="word!Word.Document#sections:member" />
 
-  - <xref uid="word!Word.Range#sections:member" /> (property type)
+  - <xref uid="word!Word.Range#sections:member" />
 
   #### Examples
 

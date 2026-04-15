@@ -9,7 +9,7 @@ summary: >-
 remarks: |-
   #### Used by
 
-  - <xref uid="excel!Excel.Interfaces.TableData#sort:member" /> (property type)
+  - <xref uid="excel!Excel.Interfaces.TableData#sort:member" />
 
 isPreview: false
 isDeprecated: false

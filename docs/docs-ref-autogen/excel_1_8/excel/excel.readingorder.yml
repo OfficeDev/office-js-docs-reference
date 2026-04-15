@@ -14,12 +14,10 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.StyleData#readingOrder:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.StyleUpdateData#readingOrder:member" />
-  (property type)
 
-  - <xref uid="excel!Excel.Style#readingOrder:member" /> (property type)
+  - <xref uid="excel!Excel.Style#readingOrder:member" />
 
   #### Examples
 

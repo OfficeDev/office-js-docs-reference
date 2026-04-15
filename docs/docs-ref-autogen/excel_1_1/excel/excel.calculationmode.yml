@@ -13,15 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Application#calculationMode:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Application#calculationMode:member" />
 
   - <xref uid="excel!Excel.Interfaces.ApplicationData#calculationMode:member" />
-  (property type)
 
   - <xref
   uid="excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member" />
-  (property type)
 
   #### Examples
 

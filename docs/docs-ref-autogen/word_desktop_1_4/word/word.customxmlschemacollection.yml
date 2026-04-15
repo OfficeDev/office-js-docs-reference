@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="word!Word.CustomXmlPart#schemaCollection:member" /> (property
-  type)
+  - <xref uid="word!Word.CustomXmlPart#schemaCollection:member" />
 
 isPreview: false
 isDeprecated: false

@@ -15,10 +15,8 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.ShapeCollectionLoadOptions#canvas:member" />
-  (property type)
 
-  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#canvas:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ShapeLoadOptions#canvas:member" />
 
 isPreview: false
 isDeprecated: false

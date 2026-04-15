@@ -10,15 +10,14 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - <xref uid="word!Word.Pane#pages:member" /> (property type)
+  - <xref uid="word!Word.Pane#pages:member" />
 
-  - <xref uid="word!Word.Pane#pagesEnclosingViewport:member" /> (property type)
+  - <xref uid="word!Word.Pane#pagesEnclosingViewport:member" />
 
-  - <xref uid="word!Word.Range#pages:member" /> (property type)
+  - <xref uid="word!Word.Range#pages:member" />
 
   #### Examples
 

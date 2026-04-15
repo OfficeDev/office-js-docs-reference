@@ -14,65 +14,58 @@ remarks: >-
 
 
   - <xref uid="word!Word.BuildingBlockGalleryContentControl#appearance:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.ContentControl#appearance:member" /> (property type)
+  - <xref uid="word!Word.ContentControl#appearance:member" />
 
   - <xref uid="word!Word.DatePickerContentControl#appearance:member" />
-  (property type)
 
-  - <xref uid="word!Word.GroupContentControl#appearance:member" /> (property
-  type)
+  - <xref uid="word!Word.GroupContentControl#appearance:member" />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData#appearance:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData#appearance:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.ContentControlData#appearance:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.ContentControlUpdateData#appearance:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlData#appearance:member" />
-  (property type)
 
   - <xref
   uid="word!Word.Interfaces.DatePickerContentControlUpdateData#appearance:member"
-  /> (property type)
+  />
 
   - <xref uid="word!Word.Interfaces.GroupContentControlData#appearance:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.GroupContentControlUpdateData#appearance:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.PictureContentControlData#appearance:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.PictureContentControlUpdateData#appearance:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlData#appearance:member"
-  /> (property type)
+  />
 
   - <xref
   uid="word!Word.Interfaces.RepeatingSectionContentControlUpdateData#appearance:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.PictureContentControl#appearance:member" /> (property
-  type)
+  - <xref uid="word!Word.PictureContentControl#appearance:member" />
 
   - <xref uid="word!Word.RepeatingSectionContentControl#appearance:member" />
-  (property type)
 
   #### Examples
 

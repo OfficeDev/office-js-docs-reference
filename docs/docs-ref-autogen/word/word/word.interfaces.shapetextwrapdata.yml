@@ -6,12 +6,10 @@ fullName: Word.Interfaces.ShapeTextWrapData
 summary: >-
   An interface describing the data returned by calling
   `shapeTextWrap.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - <xref uid="word!Word.Interfaces.ShapeData#textWrap:member" /> (property
-  type)
+  - <xref uid="word!Word.Interfaces.ShapeData#textWrap:member" />
 
 isPreview: false
 isDeprecated: false

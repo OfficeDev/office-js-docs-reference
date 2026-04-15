@@ -14,28 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="powerpoint!PowerPoint.Border#dashStyle:member" /> (property type)
+  - <xref uid="powerpoint!PowerPoint.Border#dashStyle:member" />
 
   - <xref uid="powerpoint!PowerPoint.BorderProperties#dashStyle:member" />
-  (property type)
 
   - <xref uid="powerpoint!PowerPoint.Interfaces.BorderData#dashStyle:member" />
-  (property type)
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.BorderUpdateData#dashStyle:member" />
-  (property type)
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData#dashStyle:member" />
-  (property type)
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData#dashStyle:member"
-  /> (property type)
+  />
 
   - <xref uid="powerpoint!PowerPoint.ShapeLineFormat#dashStyle:member" />
-  (property type)
 
   #### Examples
 

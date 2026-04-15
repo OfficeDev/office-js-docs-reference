@@ -11,10 +11,9 @@ remarks: >-
 
 
   - <xref uid="excel!Excel.Interfaces.SlicerUpdateData#worksheet:member" />
-  (property type)
 
   - <xref uid="excel!Excel.Interfaces.WindowUpdateData#activeWorksheet:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

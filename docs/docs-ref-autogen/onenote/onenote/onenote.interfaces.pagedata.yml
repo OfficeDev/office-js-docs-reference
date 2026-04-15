@@ -9,16 +9,13 @@ remarks: >-
 
 
   - <xref uid="onenote!OneNote.Interfaces.InkAnalysisData#page:member" />
-  (property type)
 
   - <xref uid="onenote!OneNote.Interfaces.PageCollectionData#items:member" />
-  (property type)
 
   - <xref uid="onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
-  - <xref uid="onenote!OneNote.Interfaces.SectionData#pages:member" /> (property
-  type)
+  - <xref uid="onenote!OneNote.Interfaces.SectionData#pages:member" />
 
 isPreview: false
 isDeprecated: false

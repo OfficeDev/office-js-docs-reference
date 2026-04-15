@@ -12,11 +12,11 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

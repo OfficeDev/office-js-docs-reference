@@ -12,10 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Interfaces.TableSortData#method:member" /> (property
-  type)
+  - <xref uid="excel!Excel.Interfaces.TableSortData#method:member" />
 
-  - <xref uid="excel!Excel.TableSort#method:member" /> (property type)
+  - <xref uid="excel!Excel.TableSort#method:member" />
 
 isPreview: false
 isDeprecated: false

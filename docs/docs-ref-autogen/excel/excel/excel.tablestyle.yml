@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - <xref uid="excel!Excel.Table#tableStyle:member" /> (property type)
+  - <xref uid="excel!Excel.Table#tableStyle:member" />
 
-  - <xref uid="excel!Excel.TableStyleCollection#items:member" /> (property type)
+  - <xref uid="excel!Excel.TableStyleCollection#items:member" />
 
 isPreview: false
 isDeprecated: false

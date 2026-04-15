@@ -12,19 +12,18 @@ remarks: >-
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData#items:member" />
-  (property type)
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData#items:member"
-  /> (property type)
+  />
 
   - <xref
   uid="powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData#items:member"
-  /> (property type)
+  />
 
 isPreview: false
 isDeprecated: false

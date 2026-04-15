@@ -15,12 +15,10 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.RevisionsFilterData#view:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.RevisionsFilterUpdateData#view:member" />
-  (property type)
 
-  - <xref uid="word!Word.RevisionsFilter#view:member" /> (property type)
+  - <xref uid="word!Word.RevisionsFilter#view:member" />
 
 isPreview: false
 isDeprecated: false

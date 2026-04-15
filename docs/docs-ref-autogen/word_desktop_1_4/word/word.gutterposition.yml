@@ -13,12 +13,11 @@ remarks: >-
 
 
   - <xref uid="word!Word.Interfaces.PageSetupData#gutterPosition:member" />
-  (property type)
 
   - <xref uid="word!Word.Interfaces.PageSetupUpdateData#gutterPosition:member"
-  /> (property type)
+  />
 
-  - <xref uid="word!Word.PageSetup#gutterPosition:member" /> (property type)
+  - <xref uid="word!Word.PageSetup#gutterPosition:member" />
 
 isPreview: false
 isDeprecated: false
