@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Slide.themeColorScheme](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-themecolorscheme-member)
 
-  - [PowerPoint.SlideLayout.themeColorScheme](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-themecolorscheme-member)
+  **PowerPoint.Slide** (1 member)
 
-  - [PowerPoint.SlideMaster.themeColorScheme](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-themecolorscheme-member)
+  - [themeColorScheme](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-themecolorscheme-member)
+
+
+  **PowerPoint.SlideLayout** (1 member)
+
+  - [themeColorScheme](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-themecolorscheme-member)
+
+
+  **PowerPoint.SlideMaster** (1 member)
+
+  - [themeColorScheme](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-themecolorscheme-member)
 
   #### Examples
 

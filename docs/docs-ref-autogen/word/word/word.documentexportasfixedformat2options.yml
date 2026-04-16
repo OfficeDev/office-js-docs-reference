@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.exportAsFixedFormat2](/javascript/api/word/word.document#word-word-document-exportasfixedformat2-member(1))
+
+  **Word.Document** (1 member)
+
+  - [exportAsFixedFormat2](/javascript/api/word/word.document#word-word-document-exportasfixedformat2-member(1))
 
 isPreview: true
 isDeprecated: false

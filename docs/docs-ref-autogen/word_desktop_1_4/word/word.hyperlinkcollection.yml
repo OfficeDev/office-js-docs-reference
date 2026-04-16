@@ -14,15 +14,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)
 
-  - [Word.HyperlinkCollection.load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
+  **Word.Document** (1 member)
 
-  - [Word.HyperlinkCollection.track](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-track-member(1))
+  - [hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)
 
-  - [Word.HyperlinkCollection.untrack](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-untrack-member(1))
 
-  - [Word.Range.hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)
+  **Word.HyperlinkCollection** (3 members)
+
+  - [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
+
+  - [track](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-untrack-member(1))
+
+
+  **Word.Range** (1 member)
+
+  - [hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.SlideLayoutCollection.load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
 
-  - [PowerPoint.SlideMaster.layouts](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-layouts-member)
+  **PowerPoint.SlideLayoutCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
+
+
+  **PowerPoint.SlideMaster** (1 member)
+
+  - [layouts](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-layouts-member)
 
   #### Examples
 

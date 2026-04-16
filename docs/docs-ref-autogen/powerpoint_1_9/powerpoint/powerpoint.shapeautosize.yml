@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.TextFrame.autoSizeSetting](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-autosizesetting-member)
+
+  **PowerPoint.TextFrame** (1 member)
+
+  - [autoSizeSetting](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-autosizesetting-member)
 
   #### Examples
 

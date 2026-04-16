@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.ContentControlCollection.getByChangeTrackingStates](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1))
+
+  **Word.ContentControlCollection** (1 member)
+
+  - [getByChangeTrackingStates](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1))
 
   #### Examples
 

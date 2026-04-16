@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Coauthoring.load](/javascript/api/word/word.coauthoring#word-word-coauthoring-load-member(1))
+
+  **Word.Coauthoring** (1 member)
+
+  - [load](/javascript/api/word/word.coauthoring#word-word-coauthoring-load-member(1))
 
 isPreview: false
 isDeprecated: false

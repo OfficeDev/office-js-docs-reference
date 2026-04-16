@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.getImage](/javascript/api/excel/excel.chart#excel-excel-chart-getimage-member(1))
+
+  **Excel.Chart** (1 member)
+
+  - [getImage](/javascript/api/excel/excel.chart#excel-excel-chart-getimage-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartCollection.load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
+
+  **Excel.ChartCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

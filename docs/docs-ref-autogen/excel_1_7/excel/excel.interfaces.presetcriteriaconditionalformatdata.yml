@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PresetCriteriaConditionalFormat.toJSON](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-tojson-member(1))
+
+  **Excel.PresetCriteriaConditionalFormat** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

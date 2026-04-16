@@ -13,15 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListTemplate.load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1))
 
-  - [Word.ListTemplate.set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(2))
+  **Word.ListTemplate** (4 members)
 
-  - [Word.ListTemplate.track](/javascript/api/word/word.listtemplate#word-word-listtemplate-track-member(1))
+  - [load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1))
 
-  - [Word.ListTemplate.untrack](/javascript/api/word/word.listtemplate#word-word-listtemplate-untrack-member(1))
+  - [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(2))
 
-  - [Word.Style.listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
+  - [track](/javascript/api/word/word.listtemplate#word-word-listtemplate-track-member(1))
+
+  - [untrack](/javascript/api/word/word.listtemplate#word-word-listtemplate-untrack-member(1))
+
+
+  **Word.Style** (1 member)
+
+  - [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
 
   #### Examples
 

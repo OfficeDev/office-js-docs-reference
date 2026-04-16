@@ -26,7 +26,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Recurrence.seriesTime](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-seriestime-member)
+
+  **Office.Recurrence** (1 member)
+
+  - [seriesTime](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-seriestime-member)
 
   #### Examples
 

@@ -15,11 +15,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellValuePropertyMetadata.attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-attribution-member)
 
-  - [Excel.LocalImageCellValue.attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)
+  **Excel.CellValuePropertyMetadata** (1 member)
 
-  - [Excel.WebImageCellValue.attribution](/javascript/api/excel/excel.webimagecellvalue#excel-excel-webimagecellvalue-attribution-member)
+  - [attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-attribution-member)
+
+
+  **Excel.LocalImageCellValue** (1 member)
+
+  - [attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)
+
+
+  **Excel.WebImageCellValue** (1 member)
+
+  - [attribution](/javascript/api/excel/excel.webimagecellvalue#excel-excel-webimagecellvalue-attribution-member)
 
 isPreview: false
 isDeprecated: false

@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Critique.colorScheme](/javascript/api/word/word.critique#word-word-critique-colorscheme-member)
+
+  **Word.Critique** (1 member)
+
+  - [colorScheme](/javascript/api/word/word.critique#word-word-critique-colorscheme-member)
 
   #### Examples
 

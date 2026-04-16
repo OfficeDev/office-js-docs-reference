@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableOfAuthoritiesCollection.load](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-load-member(1))
+
+  **Word.TableOfAuthoritiesCollection** (1 member)
+
+  - [load](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

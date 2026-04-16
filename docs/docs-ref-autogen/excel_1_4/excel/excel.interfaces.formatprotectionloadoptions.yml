@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.FormatProtection.load](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-load-member(1))
+
+  **Excel.FormatProtection** (1 member)
+
+  - [load](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-load-member(1))
 
 isPreview: false
 isDeprecated: false

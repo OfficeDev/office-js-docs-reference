@@ -13,9 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Line.beginArrowheadWidth](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadwidth-member)
 
-  - [Excel.Line.endArrowheadWidth](/javascript/api/excel/excel.line#excel-excel-line-endarrowheadwidth-member)
+  **Excel.Line** (2 members)
+
+  - [beginArrowheadWidth](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadwidth-member)
+
+  - [endArrowheadWidth](/javascript/api/excel/excel.line#excel-excel-line-endarrowheadwidth-member)
 
   #### Examples
 

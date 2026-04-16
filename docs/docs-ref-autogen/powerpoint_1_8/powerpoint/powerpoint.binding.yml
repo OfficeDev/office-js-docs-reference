@@ -13,19 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Binding.load](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-load-member(1))
 
-  - [PowerPoint.BindingCollection.add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
+  **PowerPoint.Binding** (1 member)
 
-  - [PowerPoint.BindingCollection.addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
+  - [load](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-load-member(1))
 
-  - [PowerPoint.BindingCollection.getItem](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitem-member(1))
 
-  - [PowerPoint.BindingCollection.getItemAt](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitemat-member(1))
+  **PowerPoint.BindingCollection** (6 members)
 
-  - [PowerPoint.BindingCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitemornullobject-member(1))
+  - [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
 
-  - [PowerPoint.BindingCollection.items](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-items-member)
+  - [addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-items-member)
 
   #### Examples
 

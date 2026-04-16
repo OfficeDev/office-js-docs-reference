@@ -31,9 +31,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.sessionData](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sessiondata-member)
 
-  - [Office.MessageCompose.sessionData](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-sessiondata-member)
+  **Office.AppointmentCompose** (1 member)
+
+  - [sessionData](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sessiondata-member)
+
+
+  **Office.MessageCompose** (1 member)
+
+  - [sessionData](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-sessiondata-member)
 
 isPreview: false
 isDeprecated: false

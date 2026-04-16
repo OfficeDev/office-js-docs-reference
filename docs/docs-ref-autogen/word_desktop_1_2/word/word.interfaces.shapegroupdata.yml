@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShapeGroup.toJSON](/javascript/api/word/word.shapegroup#word-word-shapegroup-tojson-member(1))
+
+  **Word.ShapeGroup** (1 member)
+
+  - [toJSON](/javascript/api/word/word.shapegroup#word-word-shapegroup-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

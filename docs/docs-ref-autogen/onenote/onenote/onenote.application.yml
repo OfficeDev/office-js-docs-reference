@@ -14,11 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Application.load](/javascript/api/onenote/onenote.application#onenote-onenote-application-load-member(1))
 
-  - [OneNote.Application.set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(2))
+  **OneNote.Application** (2 members)
 
-  - [OneNote.RequestContext.application](/javascript/api/onenote/onenote.requestcontext#onenote-onenote-requestcontext-application-member)
+  - [load](/javascript/api/onenote/onenote.application#onenote-onenote-application-load-member(1))
+
+  - [set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(2))
+
+
+  **OneNote.RequestContext** (1 member)
+
+  - [application](/javascript/api/onenote/onenote.requestcontext#onenote-onenote-requestcontext-application-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomPropertyCollection.load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(1))
 
-  - [PowerPoint.DocumentProperties.customProperties](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-customproperties-member)
+  **PowerPoint.CustomPropertyCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(1))
+
+
+  **PowerPoint.DocumentProperties** (1 member)
+
+  - [customProperties](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-customproperties-member)
 
 isPreview: false
 isDeprecated: false

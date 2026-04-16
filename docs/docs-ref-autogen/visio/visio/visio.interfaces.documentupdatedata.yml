@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Document.set](/javascript/api/visio/visio.document#visio-visio-document-set-member(1))
+
+  **Visio.Document** (1 member)
+
+  - [set](/javascript/api/visio/visio.document#visio-visio-document-set-member(1))
 
 isPreview: false
 isDeprecated: false

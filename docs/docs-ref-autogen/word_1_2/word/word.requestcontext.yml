@@ -15,33 +15,75 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.context](/javascript/api/word/word.body#word-word-body-context-member)
 
-  - [Word.ContentControl.context](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-context-member)
+  **Word.Body** (1 member)
 
-  - [Word.ContentControlCollection.context](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-context-member)
+  - [context](/javascript/api/word/word.body#word-word-body-context-member)
 
-  - [Word.Document.context](/javascript/api/word/word.document#word-word-document-context-member)
 
-  - [Word.Font.context](/javascript/api/word/word.font#word-word-font-context-member)
+  **Word.ContentControl** (1 member)
 
-  - [Word.InlinePicture.context](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-context-member)
+  - [context](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-context-member)
 
-  - [Word.InlinePictureCollection.context](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-context-member)
 
-  - [Word.Paragraph.context](/javascript/api/word/word.paragraph#word-word-paragraph-context-member)
+  **Word.ContentControlCollection** (1 member)
 
-  - [Word.ParagraphCollection.context](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-context-member)
+  - [context](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-context-member)
 
-  - [Word.Range.context](/javascript/api/word/word.range#word-word-range-context-member)
 
-  - [Word.RangeCollection.context](/javascript/api/word/word.rangecollection#word-word-rangecollection-context-member)
+  **Word.Document** (1 member)
 
-  - [Word.SearchOptions.context](/javascript/api/word/word.searchoptions#word-word-searchoptions-context-member)
+  - [context](/javascript/api/word/word.document#word-word-document-context-member)
 
-  - [Word.Section.context](/javascript/api/word/word.section#word-word-section-context-member)
 
-  - [Word.SectionCollection.context](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-context-member)
+  **Word.Font** (1 member)
+
+  - [context](/javascript/api/word/word.font#word-word-font-context-member)
+
+
+  **Word.InlinePicture** (1 member)
+
+  - [context](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-context-member)
+
+
+  **Word.InlinePictureCollection** (1 member)
+
+  - [context](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-context-member)
+
+
+  **Word.Paragraph** (1 member)
+
+  - [context](/javascript/api/word/word.paragraph#word-word-paragraph-context-member)
+
+
+  **Word.ParagraphCollection** (1 member)
+
+  - [context](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-context-member)
+
+
+  **Word.Range** (1 member)
+
+  - [context](/javascript/api/word/word.range#word-word-range-context-member)
+
+
+  **Word.RangeCollection** (1 member)
+
+  - [context](/javascript/api/word/word.rangecollection#word-word-rangecollection-context-member)
+
+
+  **Word.SearchOptions** (1 member)
+
+  - [context](/javascript/api/word/word.searchoptions#word-word-searchoptions-context-member)
+
+
+  **Word.Section** (1 member)
+
+  - [context](/javascript/api/word/word.section#word-word-section-context-member)
+
+
+  **Word.SectionCollection** (1 member)
+
+  - [context](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-context-member)
 
   #### Examples
 

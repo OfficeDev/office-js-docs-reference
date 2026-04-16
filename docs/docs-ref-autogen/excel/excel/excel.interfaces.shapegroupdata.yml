@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeGroup.toJSON](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-tojson-member(1))
+
+  **Excel.ShapeGroup** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

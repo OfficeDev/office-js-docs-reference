@@ -13,37 +13,55 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlNode.ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)
 
-  - [Word.CustomXmlPart.load](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-load-member(1))
+  **Word.CustomXmlNode** (1 member)
 
-  - [Word.CustomXmlPart.set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(2))
+  - [ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)
 
-  - [Word.CustomXmlPart.track](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-track-member(1))
 
-  - [Word.CustomXmlPart.untrack](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-untrack-member(1))
+  **Word.CustomXmlPart** (4 members)
 
-  - [Word.CustomXmlPartCollection.add](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1))
+  - [load](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-load-member(1))
 
-  - [Word.CustomXmlPartCollection.getItem](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitem-member(1))
+  - [set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(2))
 
-  - [Word.CustomXmlPartCollection.getItemOrNullObject](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitemornullobject-member(1))
+  - [track](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-track-member(1))
 
-  - [Word.CustomXmlPartCollection.items](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-items-member)
+  - [untrack](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-untrack-member(1))
 
-  - [Word.CustomXmlPartScopedCollection.getItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitem-member(1))
 
-  - [Word.CustomXmlPartScopedCollection.getItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitemornullobject-member(1))
+  **Word.CustomXmlPartCollection** (4 members)
 
-  - [Word.CustomXmlPartScopedCollection.getOnlyItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitem-member(1))
+  - [add](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1))
 
-  - [Word.CustomXmlPartScopedCollection.getOnlyItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
+  - [getItem](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitem-member(1))
 
-  - [Word.CustomXmlPartScopedCollection.items](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-items-member)
+  - [getItemOrNullObject](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitemornullobject-member(1))
 
-  - [Word.XmlMapping.customXmlPart](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlpart-member)
+  - [items](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-items-member)
 
-  - [Word.XmlSetMappingOptions.source](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-source-member)
+
+  **Word.CustomXmlPartScopedCollection** (5 members)
+
+  - [getItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitem-member(1))
+
+  - [getItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitemornullobject-member(1))
+
+  - [getOnlyItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitem-member(1))
+
+  - [getOnlyItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
+
+  - [items](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-items-member)
+
+
+  **Word.XmlMapping** (1 member)
+
+  - [customXmlPart](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlpart-member)
+
+
+  **Word.XmlSetMappingOptions** (1 member)
+
+  - [source](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-source-member)
 
   #### Examples
 

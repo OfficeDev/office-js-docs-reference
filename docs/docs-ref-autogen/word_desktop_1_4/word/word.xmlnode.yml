@@ -12,31 +12,40 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
 
-  - [Word.XmlNode.firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member)
+  **Word.Document** (1 member)
 
-  - [Word.XmlNode.lastChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-lastchild-member)
+  - [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
 
-  - [Word.XmlNode.load](/javascript/api/word/word.xmlnode#word-word-xmlnode-load-member(1))
 
-  - [Word.XmlNode.nextSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-nextsibling-member)
+  **Word.XmlNode** (10 members)
 
-  - [Word.XmlNode.parentNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-parentnode-member)
+  - [firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member)
 
-  - [Word.XmlNode.previousSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-previoussibling-member)
+  - [lastChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-lastchild-member)
 
-  - [Word.XmlNode.removeChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-removechild-member(1))
+  - [load](/javascript/api/word/word.xmlnode#word-word-xmlnode-load-member(1))
 
-  - [Word.XmlNode.selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
+  - [nextSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-nextsibling-member)
 
-  - [Word.XmlNode.track](/javascript/api/word/word.xmlnode#word-word-xmlnode-track-member(1))
+  - [parentNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-parentnode-member)
 
-  - [Word.XmlNode.untrack](/javascript/api/word/word.xmlnode#word-word-xmlnode-untrack-member(1))
+  - [previousSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-previoussibling-member)
 
-  - [Word.XmlNodeCollection.getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1))
+  - [removeChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-removechild-member(1))
 
-  - [Word.XmlNodeCollection.items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
+  - [selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
+
+  - [track](/javascript/api/word/word.xmlnode#word-word-xmlnode-track-member(1))
+
+  - [untrack](/javascript/api/word/word.xmlnode#word-word-xmlnode-untrack-member(1))
+
+
+  **Word.XmlNodeCollection** (2 members)
+
+  - [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1))
+
+  - [items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
 
 isPreview: false
 isDeprecated: false

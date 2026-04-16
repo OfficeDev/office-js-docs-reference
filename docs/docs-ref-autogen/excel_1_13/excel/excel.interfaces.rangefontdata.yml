@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeFont.toJSON](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-tojson-member(1))
+
+  **Excel.RangeFont** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataPivotHierarchyCollection.load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
 
-  - [Excel.PivotTable.dataHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-datahierarchies-member)
+  **Excel.DataPivotHierarchyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
+
+
+  **Excel.PivotTable** (1 member)
+
+  - [dataHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-datahierarchies-member)
 
 isPreview: false
 isDeprecated: false

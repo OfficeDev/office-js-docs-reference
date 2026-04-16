@@ -13,17 +13,26 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ConditionalStyle.paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)
 
-  - [Word.ParagraphFormat.load](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-load-member(1))
+  **Word.ConditionalStyle** (1 member)
 
-  - [Word.ParagraphFormat.set](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-set-member(2))
+  - [paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)
 
-  - [Word.ParagraphFormat.track](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-track-member(1))
 
-  - [Word.ParagraphFormat.untrack](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-untrack-member(1))
+  **Word.ParagraphFormat** (4 members)
 
-  - [Word.Style.paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)
+  - [load](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-load-member(1))
+
+  - [set](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-set-member(2))
+
+  - [track](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-track-member(1))
+
+  - [untrack](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-untrack-member(1))
+
+
+  **Word.Style** (1 member)
+
+  - [paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)
 
   #### Examples
 

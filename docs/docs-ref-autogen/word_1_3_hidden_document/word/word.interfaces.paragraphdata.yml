@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Paragraph.toJSON](/javascript/api/word/word.paragraph#word-word-paragraph-tojson-member(1))
+
+  **Word.Paragraph** (1 member)
+
+  - [toJSON](/javascript/api/word/word.paragraph#word-word-paragraph-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

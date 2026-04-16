@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartPointFormat.load](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-load-member(1))
+
+  **Excel.ChartPointFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

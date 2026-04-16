@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CoauthoringLockCollection.load](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-load-member(1))
+
+  **Word.CoauthoringLockCollection** (1 member)
+
+  - [load](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

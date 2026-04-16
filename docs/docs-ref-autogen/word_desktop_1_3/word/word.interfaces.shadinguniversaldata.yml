@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShadingUniversal.toJSON](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-tojson-member(1))
+
+  **Word.ShadingUniversal** (1 member)
+
+  - [toJSON](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

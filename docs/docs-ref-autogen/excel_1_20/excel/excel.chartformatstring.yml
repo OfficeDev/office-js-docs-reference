@@ -14,13 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabel.getSubstring](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-getsubstring-member(1))
 
-  - [Excel.ChartFormatString.load](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-load-member(1))
+  **Excel.ChartDataLabel** (1 member)
 
-  - [Excel.ChartFormatString.set](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-set-member(2))
+  - [getSubstring](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-getsubstring-member(1))
 
-  - [Excel.ChartTitle.getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
+
+  **Excel.ChartFormatString** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-set-member(2))
+
+
+  **Excel.ChartTitle** (1 member)
+
+  - [getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
 
 isPreview: false
 isDeprecated: false

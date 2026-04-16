@@ -13,57 +13,78 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1))
 
-  - [Word.Body.insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1))
+  **Word.Body** (4 members)
 
-  - [Word.Body.insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1))
 
-  - [Word.Body.insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
+  - [insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1))
 
-  - [Word.ContentControl.insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1))
+  - [insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1))
 
-  - [Word.ContentControl.insertHtml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserthtml-member(1))
+  - [insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
 
-  - [Word.ContentControl.insertOoxml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertooxml-member(1))
 
-  - [Word.ContentControl.insertText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttext-member(1))
+  **Word.ContentControl** (4 members)
 
-  - [Word.Document.getSelection](/javascript/api/word/word.document#word-word-document-getselection-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1))
 
-  - [Word.InlinePicture.insertFileFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertfilefrombase64-member(1))
+  - [insertHtml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserthtml-member(1))
 
-  - [Word.InlinePicture.insertHtml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserthtml-member(1))
+  - [insertOoxml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertooxml-member(1))
 
-  - [Word.InlinePicture.insertOoxml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertooxml-member(1))
+  - [insertText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttext-member(1))
 
-  - [Word.InlinePicture.insertText](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserttext-member(1))
 
-  - [Word.Paragraph.insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1))
+  **Word.Document** (1 member)
 
-  - [Word.Paragraph.insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1))
+  - [getSelection](/javascript/api/word/word.document#word-word-document-getselection-member(1))
 
-  - [Word.Paragraph.insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1))
 
-  - [Word.Paragraph.insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
+  **Word.InlinePicture** (4 members)
 
-  - [Word.Range.insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertfilefrombase64-member(1))
 
-  - [Word.Range.insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1))
+  - [insertHtml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserthtml-member(1))
 
-  - [Word.Range.insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1))
+  - [insertOoxml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertooxml-member(1))
 
-  - [Word.Range.insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
+  - [insertText](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserttext-member(1))
 
-  - [Word.Range.load](/javascript/api/word/word.range#word-word-range-load-member(1))
 
-  - [Word.Range.set](/javascript/api/word/word.range#word-word-range-set-member(2))
+  **Word.Paragraph** (4 members)
 
-  - [Word.Range.track](/javascript/api/word/word.range#word-word-range-track-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1))
 
-  - [Word.Range.untrack](/javascript/api/word/word.range#word-word-range-untrack-member(1))
+  - [insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1))
 
-  - [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
+  - [insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1))
+
+  - [insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
+
+
+  **Word.Range** (8 members)
+
+  - [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1))
+
+  - [insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1))
+
+  - [insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1))
+
+  - [insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
+
+  - [load](/javascript/api/word/word.range#word-word-range-load-member(1))
+
+  - [set](/javascript/api/word/word.range#word-word-range-set-member(2))
+
+  - [track](/javascript/api/word/word.range#word-word-range-track-member(1))
+
+  - [untrack](/javascript/api/word/word.range#word-word-range-untrack-member(1))
+
+
+  **Word.RangeCollection** (1 member)
+
+  - [items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
 
   #### Examples
 

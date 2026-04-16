@@ -28,7 +28,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Mailbox.diagnostics](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-diagnostics-member)
+
+  **Office.Mailbox** (1 member)
+
+  - [diagnostics](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-diagnostics-member)
 
   #### Examples
 

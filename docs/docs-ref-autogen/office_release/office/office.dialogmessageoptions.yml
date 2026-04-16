@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Dialog.messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1))
 
-  - [Office.UI.messageParent](/javascript/api/office/office.ui#office-office-ui-messageparent-member(1))
+  **Office.Dialog** (1 member)
+
+  - [messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1))
+
+
+  **Office.UI** (1 member)
+
+  - [messageParent](/javascript/api/office/office.ui#office-office-ui-messageparent-member(1))
 
 isPreview: false
 isDeprecated: false

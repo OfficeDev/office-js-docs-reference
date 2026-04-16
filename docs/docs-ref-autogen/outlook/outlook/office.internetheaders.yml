@@ -72,9 +72,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.LoadedMessageCompose.internetHeaders](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-internetheaders-member)
 
-  - [Office.MessageCompose.internetHeaders](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-internetheaders-member)
+  **Office.LoadedMessageCompose** (1 member)
+
+  - [internetHeaders](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-internetheaders-member)
+
+
+  **Office.MessageCompose** (1 member)
+
+  - [internetHeaders](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-internetheaders-member)
 
 isPreview: false
 isDeprecated: false

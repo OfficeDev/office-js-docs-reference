@@ -13,13 +13,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Application.load](/javascript/api/word/word.application#word-word-application-load-member(1))
 
-  - [Word.Application.newObject](/javascript/api/word/word.application.newobject:member)
+  **Word.Application** (3 members)
 
-  - [Word.Application.set](/javascript/api/word/word.application#word-word-application-set-member(2))
+  - [load](/javascript/api/word/word.application#word-word-application-load-member(1))
 
-  - [Word.RequestContext.application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
+  - [newObject](/javascript/api/word/word.application.newobject:member)
+
+  - [set](/javascript/api/word/word.application#word-word-application-set-member(2))
+
+
+  **Word.RequestContext** (1 member)
+
+  - [application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
 
   #### Examples
 

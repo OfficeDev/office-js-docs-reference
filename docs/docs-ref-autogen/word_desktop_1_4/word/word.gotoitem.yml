@@ -14,9 +14,12 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Selection.goToNext](/javascript/api/word/word.selection#word-word-selection-gotonext-member(1))
 
-  - [Word.Selection.goToPrevious](/javascript/api/word/word.selection#word-word-selection-gotoprevious-member(1))
+  **Word.Selection** (2 members)
+
+  - [goToNext](/javascript/api/word/word.selection#word-word-selection-gotonext-member(1))
+
+  - [goToPrevious](/javascript/api/word/word.selection#word-word-selection-gotoprevious-member(1))
 
 isPreview: false
 isDeprecated: false

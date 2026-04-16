@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotFieldCollection.load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
+
+  **Excel.PivotFieldCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Pane.load](/javascript/api/word/word.pane#word-word-pane-load-member(1))
+
+  **Word.Pane** (1 member)
+
+  - [load](/javascript/api/word/word.pane#word-word-pane-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -35,7 +35,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Diagnostics.ews](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-ews-member)
+
+  **Office.Diagnostics** (1 member)
+
+  - [ews](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-ews-member)
 
   #### Examples
 

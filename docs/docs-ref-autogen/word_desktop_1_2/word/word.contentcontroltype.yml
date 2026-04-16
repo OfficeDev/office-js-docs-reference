@@ -13,13 +13,22 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member)
 
-  - [Word.ContentControl.type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
+  **Word.ContentControl** (2 members)
 
-  - [Word.ContentControlCollection.getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+  - [subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member)
 
-  - [Word.ContentControlOptions.types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)
+  - [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
+
+
+  **Word.ContentControlCollection** (1 member)
+
+  - [getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+
+
+  **Word.ContentControlOptions** (1 member)
+
+  - [types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)
 
   #### Examples
 

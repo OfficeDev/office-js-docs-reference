@@ -6,11 +6,12 @@ fullName: Word.Interfaces.OleFormatUpdateData
 summary: >-
   An interface for updating data on the `OleFormat` object, for use in
   `oleFormat.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.OleFormat.set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(1))
+  **Word.OleFormat** (1 member)
+  - [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

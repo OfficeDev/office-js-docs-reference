@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TextFrame.readingOrder](/javascript/api/excel/excel.textframe#excel-excel-textframe-readingorder-member)
+
+  **Excel.TextFrame** (1 member)
+
+  - [readingOrder](/javascript/api/excel/excel.textframe#excel-excel-textframe-readingorder-member)
 
 isPreview: false
 isDeprecated: false

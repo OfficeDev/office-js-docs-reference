@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShadingUniversal.set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(1))
+
+  **Word.ShadingUniversal** (1 member)
+
+  - [set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RequestContext.runtime](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-runtime-member)
 
-  - [Excel.Runtime.load](/javascript/api/excel/excel.runtime#excel-excel-runtime-load-member(1))
+  **Excel.RequestContext** (1 member)
 
-  - [Excel.Runtime.set](/javascript/api/excel/excel.runtime#excel-excel-runtime-set-member(2))
+  - [runtime](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-runtime-member)
+
+
+  **Excel.Runtime** (2 members)
+
+  - [load](/javascript/api/excel/excel.runtime#excel-excel-runtime-load-member(1))
+
+  - [set](/javascript/api/excel/excel.runtime#excel-excel-runtime-set-member(2))
 
 isPreview: false
 isDeprecated: false

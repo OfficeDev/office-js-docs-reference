@@ -23,7 +23,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Recurrence.recurrenceTimeZone](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-recurrencetimezone-member)
+
+  **Office.Recurrence** (1 member)
+
+  - [recurrenceTimeZone](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-recurrencetimezone-member)
 
   #### Examples
 

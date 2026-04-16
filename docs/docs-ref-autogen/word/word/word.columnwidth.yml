@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.columnWidth](/javascript/api/word/word.view#word-word-view-columnwidth-member)
+
+  **Word.View** (1 member)
+
+  - [columnWidth](/javascript/api/word/word.view#word-word-view-columnwidth-member)
 
 isPreview: false
 isDeprecated: false

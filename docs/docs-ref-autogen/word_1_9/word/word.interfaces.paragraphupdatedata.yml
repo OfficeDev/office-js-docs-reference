@@ -6,11 +6,12 @@ fullName: Word.Interfaces.ParagraphUpdateData
 summary: >-
   An interface for updating data on the `Paragraph` object, for use in
   `paragraph.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Paragraph.set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(1))
+  **Word.Paragraph** (1 member)
+  - [set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(1))
 
 isPreview: false
 isDeprecated: false

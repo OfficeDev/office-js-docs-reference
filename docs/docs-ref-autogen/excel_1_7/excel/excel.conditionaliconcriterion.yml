@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.IconSetConditionalFormat.criteria](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-criteria-member)
+
+  **Excel.IconSetConditionalFormat** (1 member)
+
+  - [criteria](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-criteria-member)
 
 isPreview: false
 isDeprecated: false

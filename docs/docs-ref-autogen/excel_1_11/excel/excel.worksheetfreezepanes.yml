@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.freezePanes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-freezepanes-member)
+
+  **Excel.Worksheet** (1 member)
+
+  - [freezePanes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-freezepanes-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalRangeFormat.load](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-load-member(1))
+
+  **Excel.ConditionalRangeFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

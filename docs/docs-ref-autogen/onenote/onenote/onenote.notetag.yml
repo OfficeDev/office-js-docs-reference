@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.NoteTag.load](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-load-member(1))
 
-  - [OneNote.NoteTag.track](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-track-member(1))
+  **OneNote.NoteTag** (3 members)
 
-  - [OneNote.NoteTag.untrack](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-untrack-member(1))
+  - [load](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-load-member(1))
 
-  - [OneNote.Paragraph.addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
+  - [track](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-track-member(1))
+
+  - [untrack](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-untrack-member(1))
+
+
+  **OneNote.Paragraph** (1 member)
+
+  - [addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
 
 isPreview: false
 isDeprecated: false

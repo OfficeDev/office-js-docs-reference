@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.splitSpecial](/javascript/api/word/word.view#word-word-view-splitspecial-member)
+
+  **Word.View** (1 member)
+
+  - [splitSpecial](/javascript/api/word/word.view#word-word-view-splitspecial-member)
 
 isPreview: false
 isDeprecated: false

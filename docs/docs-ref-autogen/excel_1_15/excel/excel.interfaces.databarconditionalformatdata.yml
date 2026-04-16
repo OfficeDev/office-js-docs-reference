@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataBarConditionalFormat.toJSON](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-tojson-member(1))
+
+  **Excel.DataBarConditionalFormat** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

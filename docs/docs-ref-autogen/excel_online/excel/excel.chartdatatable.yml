@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.getDataTable](/javascript/api/excel/excel.chart#excel-excel-chart-getdatatable-member(1))
 
-  - [Excel.Chart.getDataTableOrNullObject](/javascript/api/excel/excel.chart#excel-excel-chart-getdatatableornullobject-member(1))
+  **Excel.Chart** (2 members)
 
-  - [Excel.ChartDataTable.load](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-load-member(1))
+  - [getDataTable](/javascript/api/excel/excel.chart#excel-excel-chart-getdatatable-member(1))
 
-  - [Excel.ChartDataTable.set](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-set-member(2))
+  - [getDataTableOrNullObject](/javascript/api/excel/excel.chart#excel-excel-chart-getdatatableornullobject-member(1))
+
+
+  **Excel.ChartDataTable** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Shape.textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
 
-  - [PowerPoint.TextFrame.load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
+  **PowerPoint.Shape** (1 member)
+
+  - [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
+
+
+  **PowerPoint.TextFrame** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
 
   #### Examples
 

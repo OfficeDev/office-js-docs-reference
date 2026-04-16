@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.WindowCollection.load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
+
+  **Word.WindowCollection** (1 member)
+
+  - [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

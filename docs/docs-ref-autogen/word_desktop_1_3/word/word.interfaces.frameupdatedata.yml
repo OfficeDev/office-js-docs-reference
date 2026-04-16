@@ -6,11 +6,12 @@ fullName: Word.Interfaces.FrameUpdateData
 summary: >-
   An interface for updating data on the `Frame` object, for use in `frame.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Frame.set](/javascript/api/word/word.frame#word-word-frame-set-member(1))
+  **Word.Frame** (1 member)
+  - [set](/javascript/api/word/word.frame#word-word-frame-set-member(1))
 
 isPreview: false
 isDeprecated: false

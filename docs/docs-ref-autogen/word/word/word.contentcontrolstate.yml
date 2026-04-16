@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.ContentControl.setState](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-setstate-member(1))
+
+  **Word.ContentControl** (1 member)
+
+  - [setState](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-setstate-member(1))
 
   #### Examples
 

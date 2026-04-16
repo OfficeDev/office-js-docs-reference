@@ -14,13 +14,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.Chart.setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1))
 
-  - [Excel.ChartCollection.add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+  **Excel.Chart** (1 member)
+
+  - [setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1))
+
+
+  **Excel.ChartCollection** (1 member)
+
+  - [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
 
   #### Examples
 

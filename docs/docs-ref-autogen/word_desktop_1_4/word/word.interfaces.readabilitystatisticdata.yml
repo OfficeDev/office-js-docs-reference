@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReadabilityStatistic.toJSON](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-tojson-member(1))
+
+  **Word.ReadabilityStatistic** (1 member)
+
+  - [toJSON](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

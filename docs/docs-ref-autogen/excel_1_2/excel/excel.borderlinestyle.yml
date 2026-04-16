@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeBorder.style](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-style-member)
+
+  **Excel.RangeBorder** (1 member)
+
+  - [style](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-style-member)
 
   #### Examples
 

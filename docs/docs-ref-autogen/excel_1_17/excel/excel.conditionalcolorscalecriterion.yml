@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalColorScaleCriteria.maximum](/javascript/api/excel/excel.conditionalcolorscalecriteria#excel-excel-conditionalcolorscalecriteria-maximum-member)
 
-  - [Excel.ConditionalColorScaleCriteria.midpoint](/javascript/api/excel/excel.conditionalcolorscalecriteria#excel-excel-conditionalcolorscalecriteria-midpoint-member)
+  **Excel.ConditionalColorScaleCriteria** (3 members)
 
-  - [Excel.ConditionalColorScaleCriteria.minimum](/javascript/api/excel/excel.conditionalcolorscalecriteria#excel-excel-conditionalcolorscalecriteria-minimum-member)
+  - [maximum](/javascript/api/excel/excel.conditionalcolorscalecriteria#excel-excel-conditionalcolorscalecriteria-maximum-member)
+
+  - [midpoint](/javascript/api/excel/excel.conditionalcolorscalecriteria#excel-excel-conditionalcolorscalecriteria-midpoint-member)
+
+  - [minimum](/javascript/api/excel/excel.conditionalcolorscalecriteria#excel-excel-conditionalcolorscalecriteria-minimum-member)
 
   #### Examples
 

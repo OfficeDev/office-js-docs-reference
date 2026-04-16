@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTrendlineFormat.load](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-load-member(1))
+
+  **Excel.ChartTrendlineFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

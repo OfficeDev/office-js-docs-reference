@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalFormat.changeRuleToContainsText](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocontainstext-member(1))
 
-  - [Excel.TextConditionalFormat.rule](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-rule-member)
+  **Excel.ConditionalFormat** (1 member)
+
+  - [changeRuleToContainsText](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocontainstext-member(1))
+
+
+  **Excel.TextConditionalFormat** (1 member)
+
+  - [rule](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-rule-member)
 
 isPreview: false
 isDeprecated: false

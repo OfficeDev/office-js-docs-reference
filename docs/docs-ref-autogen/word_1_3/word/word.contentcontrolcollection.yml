@@ -20,27 +20,45 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
 
-  - [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)
+  **Word.Body** (1 member)
 
-  - [Word.ContentControlCollection.getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1))
+  - [contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
 
-  - [Word.ContentControlCollection.getByTitle](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytitle-member(1))
 
-  - [Word.ContentControlCollection.getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.ContentControlCollection.load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - [contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)
 
-  - [Word.ContentControlCollection.track](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-track-member(1))
 
-  - [Word.ContentControlCollection.untrack](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-untrack-member(1))
+  **Word.ContentControlCollection** (6 members)
 
-  - [Word.Document.contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member)
+  - [getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1))
 
-  - [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
+  - [getByTitle](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytitle-member(1))
 
-  - [Word.Range.contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
+  - [getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+
+  - [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+
+  - [track](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-untrack-member(1))
+
+
+  **Word.Document** (1 member)
+
+  - [contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member)
+
+
+  **Word.Paragraph** (1 member)
+
+  - [contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
+
+
+  **Word.Range** (1 member)
+
+  - [contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
 
   #### Examples
 

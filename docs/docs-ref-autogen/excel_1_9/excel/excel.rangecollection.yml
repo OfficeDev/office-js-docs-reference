@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeAreas.areas](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-areas-member)
 
-  - [Excel.RangeCollection.load](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-load-member(1))
+  **Excel.RangeAreas** (1 member)
+
+  - [areas](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-areas-member)
+
+
+  **Excel.RangeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.emphasisMark](/javascript/api/word/word.font#word-word-font-emphasismark-member)
 
-  - [Word.Range.emphasisMark](/javascript/api/word/word.range#word-word-range-emphasismark-member)
+  **Word.Font** (1 member)
+
+  - [emphasisMark](/javascript/api/word/word.font#word-word-font-emphasismark-member)
+
+
+  **Word.Range** (1 member)
+
+  - [emphasisMark](/javascript/api/word/word.range#word-word-range-emphasismark-member)
 
 isPreview: false
 isDeprecated: false

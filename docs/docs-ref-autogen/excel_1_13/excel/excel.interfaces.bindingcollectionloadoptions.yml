@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BindingCollection.load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
+
+  **Excel.BindingCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

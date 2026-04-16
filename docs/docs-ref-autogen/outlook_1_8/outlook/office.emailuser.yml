@@ -19,13 +19,22 @@ remarks: >-
   #### Used by
 
 
-  - [Office.MeetingSuggestion.attendees](/javascript/api/outlook/office.meetingsuggestion#outlook-office-meetingsuggestion-attendees-member)
 
-  - [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1))
+  **Office.MeetingSuggestion** (1 member)
 
-  - [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
+  - [attendees](/javascript/api/outlook/office.meetingsuggestion#outlook-office-meetingsuggestion-attendees-member)
 
-  - [Office.TaskSuggestion.assignees](/javascript/api/outlook/office.tasksuggestion#outlook-office-tasksuggestion-assignees-member)
+
+  **Office.Recipients** (2 members)
+
+  - [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1))
+
+  - [setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
+
+
+  **Office.TaskSuggestion** (1 member)
+
+  - [assignees](/javascript/api/outlook/office.tasksuggestion#outlook-office-tasksuggestion-assignees-member)
 
   #### Examples
 

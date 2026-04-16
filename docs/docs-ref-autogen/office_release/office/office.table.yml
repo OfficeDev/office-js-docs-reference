@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.RangeFormatConfiguration.cells](/javascript/api/office/office.rangeformatconfiguration#office-office-rangeformatconfiguration-cells-member)
+
+  **Office.RangeFormatConfiguration** (1 member)
+
+  - [cells](/javascript/api/office/office.rangeformatconfiguration#office-office-rangeformatconfiguration-cells-member)
 
 isPreview: false
 isDeprecated: false

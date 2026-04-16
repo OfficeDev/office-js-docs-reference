@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellPropertiesFormatLoadOptions.font](/javascript/api/excel/excel.cellpropertiesformatloadoptions#excel-excel-cellpropertiesformatloadoptions-font-member)
+
+  **Excel.CellPropertiesFormatLoadOptions** (1 member)
+
+  - [font](/javascript/api/excel/excel.cellpropertiesformatloadoptions#excel-excel-cellpropertiesformatloadoptions-font-member)
 
 isPreview: false
 isDeprecated: false

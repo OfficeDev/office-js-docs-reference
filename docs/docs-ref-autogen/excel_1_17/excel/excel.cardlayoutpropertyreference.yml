@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CardLayoutStandardProperties.mainImage](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-mainimage-member)
 
-  - [Excel.CardLayoutStandardProperties.subTitle](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-subtitle-member)
+  **Excel.CardLayoutStandardProperties** (3 members)
 
-  - [Excel.CardLayoutStandardProperties.title](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-title-member)
+  - [mainImage](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-mainimage-member)
+
+  - [subTitle](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-subtitle-member)
+
+  - [title](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-title-member)
 
 isPreview: false
 isDeprecated: false

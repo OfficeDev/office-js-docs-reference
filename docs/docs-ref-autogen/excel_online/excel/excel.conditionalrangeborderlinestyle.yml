@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalRangeBorder.style](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-style-member)
+
+  **Excel.ConditionalRangeBorder** (1 member)
+
+  - [style](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-style-member)
 
 isPreview: false
 isDeprecated: false

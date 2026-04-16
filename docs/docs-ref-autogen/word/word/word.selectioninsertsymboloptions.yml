@@ -12,11 +12,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Selection.insertSymbol](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))
+
+  **Word.Selection** (1 member)
+
+  - [insertSymbol](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))
 
   #### Examples
 

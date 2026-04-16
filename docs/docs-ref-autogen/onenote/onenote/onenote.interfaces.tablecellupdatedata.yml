@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.TableCell.set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(1))
+
+  **OneNote.TableCell** (1 member)
+
+  - [set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Selection.type](/javascript/api/word/word.selection#word-word-selection-type-member)
+
+  **Word.Selection** (1 member)
+
+  - [type](/javascript/api/word/word.selection#word-word-selection-type-member)
 
 isPreview: false
 isDeprecated: false

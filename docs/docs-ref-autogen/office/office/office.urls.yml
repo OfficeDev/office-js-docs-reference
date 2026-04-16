@@ -22,7 +22,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Context.urls](/javascript/api/office/office.context#office-office-context-urls-member)
+
+  **Office.Context** (1 member)
+
+  - [urls](/javascript/api/office/office.context#office-office-context-urls-member)
 
 isPreview: false
 isDeprecated: false

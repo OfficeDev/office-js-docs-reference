@@ -17,9 +17,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.AllowEditRangeCollection.load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(1))
 
-  - [Excel.WorksheetProtection.allowEditRanges](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-alloweditranges-member)
+  **Excel.AllowEditRangeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(1))
+
+
+  **Excel.WorksheetProtection** (1 member)
+
+  - [allowEditRanges](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-alloweditranges-member)
 
 isPreview: false
 isDeprecated: false

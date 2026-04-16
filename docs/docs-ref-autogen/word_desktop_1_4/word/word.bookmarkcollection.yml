@@ -14,15 +14,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BookmarkCollection.load](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-load-member(1))
 
-  - [Word.BookmarkCollection.track](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-track-member(1))
+  **Word.BookmarkCollection** (3 members)
 
-  - [Word.BookmarkCollection.untrack](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-untrack-member(1))
+  - [load](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-load-member(1))
 
-  - [Word.Document.bookmarks](/javascript/api/word/word.document#word-word-document-bookmarks-member)
+  - [track](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-track-member(1))
 
-  - [Word.Range.bookmarks](/javascript/api/word/word.range#word-word-range-bookmarks-member)
+  - [untrack](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-untrack-member(1))
+
+
+  **Word.Document** (1 member)
+
+  - [bookmarks](/javascript/api/word/word.document#word-word-document-bookmarks-member)
+
+
+  **Word.Range** (1 member)
+
+  - [bookmarks](/javascript/api/word/word.range#word-word-range-bookmarks-member)
 
 isPreview: false
 isDeprecated: false

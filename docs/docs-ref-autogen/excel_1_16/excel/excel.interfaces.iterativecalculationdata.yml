@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.IterativeCalculation.toJSON](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-tojson-member(1))
+
+  **Excel.IterativeCalculation** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

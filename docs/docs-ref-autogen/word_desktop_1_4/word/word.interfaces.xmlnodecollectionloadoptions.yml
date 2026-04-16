@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.XmlNodeCollection.load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1))
+
+  **Word.XmlNodeCollection** (1 member)
+
+  - [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

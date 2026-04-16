@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CultureInfo.toJSON](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-tojson-member(1))
+
+  **Excel.CultureInfo** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.Workbook.close](/javascript/api/excel/excel.workbook#excel-excel-workbook-close-member(1))
+
+  **Excel.Workbook** (1 member)
+
+  - [close](/javascript/api/excel/excel.workbook#excel-excel-workbook-close-member(1))
 
   #### Examples
 

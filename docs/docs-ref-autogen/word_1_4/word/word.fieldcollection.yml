@@ -25,23 +25,44 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.fields](/javascript/api/word/word.body#word-word-body-fields-member)
 
-  - [Word.ContentControl.fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)
+  **Word.Body** (1 member)
 
-  - [Word.FieldCollection.load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
+  - [fields](/javascript/api/word/word.body#word-word-body-fields-member)
 
-  - [Word.FieldCollection.track](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-track-member(1))
 
-  - [Word.FieldCollection.untrack](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-untrack-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.Paragraph.fields](/javascript/api/word/word.paragraph#word-word-paragraph-fields-member)
+  - [fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)
 
-  - [Word.Range.fields](/javascript/api/word/word.range#word-word-range-fields-member)
 
-  - [Word.Table.fields](/javascript/api/word/word.table#word-word-table-fields-member)
+  **Word.FieldCollection** (3 members)
 
-  - [Word.TableRow.fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)
+  - [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
+
+  - [track](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-untrack-member(1))
+
+
+  **Word.Paragraph** (1 member)
+
+  - [fields](/javascript/api/word/word.paragraph#word-word-paragraph-fields-member)
+
+
+  **Word.Range** (1 member)
+
+  - [fields](/javascript/api/word/word.range#word-word-range-fields-member)
+
+
+  **Word.Table** (1 member)
+
+  - [fields](/javascript/api/word/word.table#word-word-table-fields-member)
+
+
+  **Word.TableRow** (1 member)
+
+  - [fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)
 
   #### Examples
 

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.GetBindingDataOptions.filterType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-filtertype-member)
 
-  - [Office.GetSelectedDataOptions.filterType](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-filtertype-member)
+  **Office.GetBindingDataOptions** (1 member)
+
+  - [filterType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-filtertype-member)
+
+
+  **Office.GetSelectedDataOptions** (1 member)
+
+  - [filterType](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-filtertype-member)
 
   #### Examples
 

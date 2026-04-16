@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DocumentExportAsFixedFormat2Options.optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-optimizefor-member)
 
-  - [Word.DocumentExportAsFixedFormat3Options.optimizeFor](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-optimizefor-member)
+  **Word.DocumentExportAsFixedFormat2Options** (1 member)
 
-  - [Word.DocumentExportAsFixedFormatOptions.optimizeFor](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-optimizefor-member)
+  - [optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-optimizefor-member)
+
+
+  **Word.DocumentExportAsFixedFormat3Options** (1 member)
+
+  - [optimizeFor](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-optimizefor-member)
+
+
+  **Word.DocumentExportAsFixedFormatOptions** (1 member)
+
+  - [optimizeFor](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-optimizefor-member)
 
   #### Examples
 

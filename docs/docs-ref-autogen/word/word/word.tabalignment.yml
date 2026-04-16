@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TabStop.alignment](/javascript/api/word/word.tabstop#word-word-tabstop-alignment-member)
 
-  - [Word.TabStopAddOptions.alignment](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-alignment-member)
+  **Word.TabStop** (1 member)
+
+  - [alignment](/javascript/api/word/word.tabstop#word-word-tabstop-alignment-member)
+
+
+  **Word.TabStopAddOptions** (1 member)
+
+  - [alignment](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-alignment-member)
 
 isPreview: false
 isDeprecated: false

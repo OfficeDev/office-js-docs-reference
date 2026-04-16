@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Paragraph.load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1))
+
+  **Word.Paragraph** (1 member)
+
+  - [load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1))
 
 isPreview: false
 isDeprecated: false

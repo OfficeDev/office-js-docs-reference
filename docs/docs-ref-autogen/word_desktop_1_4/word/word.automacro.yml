@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.runAutoMacro](/javascript/api/word/word.document#word-word-document-runautomacro-member(1))
+
+  **Word.Document** (1 member)
+
+  - [runAutoMacro](/javascript/api/word/word.document#word-word-document-runautomacro-member(1))
 
 isPreview: false
 isDeprecated: false

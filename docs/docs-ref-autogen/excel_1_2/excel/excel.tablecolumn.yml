@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableColumn.load](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-load-member(1))
 
-  - [Excel.TableColumn.set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(2))
+  **Excel.TableColumn** (2 members)
 
-  - [Excel.TableColumnCollection.add](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1))
+  - [load](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-load-member(1))
 
-  - [Excel.TableColumnCollection.getItem](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitem-member(1))
+  - [set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(2))
 
-  - [Excel.TableColumnCollection.getItemAt](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemat-member(1))
 
-  - [Excel.TableColumnCollection.items](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-items-member)
+  **Excel.TableColumnCollection** (4 members)
+
+  - [add](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1))
+
+  - [getItem](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemat-member(1))
+
+  - [items](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-items-member)
 
 isPreview: false
 isDeprecated: false

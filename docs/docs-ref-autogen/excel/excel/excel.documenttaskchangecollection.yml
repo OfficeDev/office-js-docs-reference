@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DocumentTask.changes](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-changes-member)
 
-  - [Excel.DocumentTaskChangeCollection.load](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-load-member(1))
+  **Excel.DocumentTask** (1 member)
+
+  - [changes](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-changes-member)
+
+
+  **Excel.DocumentTaskChangeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-load-member(1))
 
 isPreview: true
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlock.toJSON](/javascript/api/word/word.buildingblock#word-word-buildingblock-tojson-member(1))
+
+  **Word.BuildingBlock** (1 member)
+
+  - [toJSON](/javascript/api/word/word.buildingblock#word-word-buildingblock-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

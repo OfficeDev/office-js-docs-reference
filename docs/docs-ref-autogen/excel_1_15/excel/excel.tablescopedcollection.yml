@@ -15,11 +15,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.getTables](/javascript/api/excel/excel.range#excel-excel-range-gettables-member(1))
 
-  - [Excel.RangeAreas.getTables](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-gettables-member(1))
+  **Excel.Range** (1 member)
 
-  - [Excel.TableScopedCollection.load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
+  - [getTables](/javascript/api/excel/excel.range#excel-excel-range-gettables-member(1))
+
+
+  **Excel.RangeAreas** (1 member)
+
+  - [getTables](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-gettables-member(1))
+
+
+  **Excel.TableScopedCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

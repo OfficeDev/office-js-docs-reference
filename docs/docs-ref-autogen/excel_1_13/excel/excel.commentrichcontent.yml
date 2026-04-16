@@ -15,13 +15,25 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.updateMentions](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))
 
-  - [Excel.CommentCollection.add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+  **Excel.Comment** (1 member)
 
-  - [Excel.CommentReply.updateMentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))
+  - [updateMentions](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))
 
-  - [Excel.CommentReplyCollection.add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+
+  **Excel.CommentCollection** (1 member)
+
+  - [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+
+
+  **Excel.CommentReply** (1 member)
+
+  - [updateMentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))
+
+
+  **Excel.CommentReplyCollection** (1 member)
+
+  - [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

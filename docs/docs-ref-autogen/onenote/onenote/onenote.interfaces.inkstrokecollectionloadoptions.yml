@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.InkStrokeCollection.load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
+
+  **OneNote.InkStrokeCollection** (1 member)
+
+  - [load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

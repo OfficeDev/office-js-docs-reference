@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.PageSetup.sectionDirection](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectiondirection-member)
+
+  **Word.PageSetup** (1 member)
+
+  - [sectionDirection](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectiondirection-member)
 
 isPreview: false
 isDeprecated: false

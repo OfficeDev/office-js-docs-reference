@@ -20,17 +20,23 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableRow.load](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-load-member(1))
 
-  - [Excel.TableRow.set](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-set-member(2))
+  **Excel.TableRow** (2 members)
 
-  - [Excel.TableRowCollection.add](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1))
+  - [load](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-load-member(1))
 
-  - [Excel.TableRowCollection.addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
+  - [set](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-set-member(2))
 
-  - [Excel.TableRowCollection.getItemAt](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-getitemat-member(1))
 
-  - [Excel.TableRowCollection.items](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-items-member)
+  **Excel.TableRowCollection** (4 members)
+
+  - [add](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1))
+
+  - [addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-getitemat-member(1))
+
+  - [items](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-items-member)
 
 isPreview: false
 isDeprecated: false

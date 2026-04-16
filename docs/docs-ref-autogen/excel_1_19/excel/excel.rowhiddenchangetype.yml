@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.WorksheetRowHiddenChangedEventArgs.changeType](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-changetype-member)
+
+  **Excel.WorksheetRowHiddenChangedEventArgs** (1 member)
+
+  - [changeType](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-changetype-member)
 
 isPreview: false
 isDeprecated: false

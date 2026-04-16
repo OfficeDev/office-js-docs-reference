@@ -8,25 +8,55 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControlCollection.load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
 
-  - [Word.CustomPropertyCollection.load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+  **Word.ContentControlCollection** (1 member)
 
-  - [Word.InlinePictureCollection.load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+  - [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
 
-  - [Word.ListCollection.load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
 
-  - [Word.ParagraphCollection.load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+  **Word.CustomPropertyCollection** (1 member)
 
-  - [Word.RangeCollection.load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+  - [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
 
-  - [Word.SectionCollection.load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
 
-  - [Word.TableCellCollection.load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
+  **Word.InlinePictureCollection** (1 member)
 
-  - [Word.TableCollection.load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+  - [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
 
-  - [Word.TableRowCollection.load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
+
+  **Word.ListCollection** (1 member)
+
+  - [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+
+
+  **Word.ParagraphCollection** (1 member)
+
+  - [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+
+
+  **Word.RangeCollection** (1 member)
+
+  - [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+
+
+  **Word.SectionCollection** (1 member)
+
+  - [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+
+
+  **Word.TableCellCollection** (1 member)
+
+  - [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
+
+
+  **Word.TableCollection** (1 member)
+
+  - [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+
+
+  **Word.TableRowCollection** (1 member)
+
+  - [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

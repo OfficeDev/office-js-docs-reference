@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.PageContent.type](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-type-member)
+
+  **OneNote.PageContent** (1 member)
+
+  - [type](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-type-member)
 
 isPreview: false
 isDeprecated: false

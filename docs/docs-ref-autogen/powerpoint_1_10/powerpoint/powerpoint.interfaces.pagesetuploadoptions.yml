@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.PageSetup.load](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-load-member(1))
+
+  **PowerPoint.PageSetup** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-load-member(1))
 
 isPreview: false
 isDeprecated: false

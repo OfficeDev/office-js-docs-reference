@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShapeGroup.load](/javascript/api/word/word.shapegroup#word-word-shapegroup-load-member(1))
+
+  **Word.ShapeGroup** (1 member)
+
+  - [load](/javascript/api/word/word.shapegroup#word-word-shapegroup-load-member(1))
 
 isPreview: false
 isDeprecated: false

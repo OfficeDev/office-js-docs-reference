@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Document.onTaskPaneStateChanged](/javascript/api/visio/visio.document#visio-visio-document-ontaskpanestatechanged-member)
+
+  **Visio.Document** (1 member)
+
+  - [onTaskPaneStateChanged](/javascript/api/visio/visio.document#visio-visio-document-ontaskpanestatechanged-member)
 
 isPreview: false
 isDeprecated: false

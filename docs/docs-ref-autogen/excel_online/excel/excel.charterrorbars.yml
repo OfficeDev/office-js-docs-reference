@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartErrorBars.load](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-load-member(1))
 
-  - [Excel.ChartErrorBars.set](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-set-member(2))
+  **Excel.ChartErrorBars** (2 members)
 
-  - [Excel.ChartSeries.xErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-xerrorbars-member)
+  - [load](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-load-member(1))
 
-  - [Excel.ChartSeries.yErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-yerrorbars-member)
+  - [set](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-set-member(2))
+
+
+  **Excel.ChartSeries** (2 members)
+
+  - [xErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-xerrorbars-member)
+
+  - [yErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-yerrorbars-member)
 
 isPreview: false
 isDeprecated: false

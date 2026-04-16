@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItemArrayValues.toJSON](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-tojson-member(1))
+
+  **Excel.NamedItemArrayValues** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

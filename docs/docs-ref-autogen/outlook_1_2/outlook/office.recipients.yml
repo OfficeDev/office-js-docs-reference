@@ -22,15 +22,21 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.optionalAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-optionalattendees-member)
 
-  - [Office.AppointmentCompose.requiredAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-requiredattendees-member)
+  **Office.AppointmentCompose** (2 members)
 
-  - [Office.MessageCompose.bcc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-bcc-member)
+  - [optionalAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-optionalattendees-member)
 
-  - [Office.MessageCompose.cc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-cc-member)
+  - [requiredAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-requiredattendees-member)
 
-  - [Office.MessageCompose.to](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-to-member)
+
+  **Office.MessageCompose** (3 members)
+
+  - [bcc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-bcc-member)
+
+  - [cc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-cc-member)
+
+  - [to](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-to-member)
 
 isPreview: false
 isDeprecated: false

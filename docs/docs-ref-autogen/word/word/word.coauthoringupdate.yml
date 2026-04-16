@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CoauthoringUpdate.load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1))
 
-  - [Word.CoauthoringUpdate.set](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-set-member(2))
+  **Word.CoauthoringUpdate** (4 members)
 
-  - [Word.CoauthoringUpdate.track](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-track-member(1))
+  - [load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1))
 
-  - [Word.CoauthoringUpdate.untrack](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-untrack-member(1))
+  - [set](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-set-member(2))
 
-  - [Word.CoauthoringUpdateCollection.items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)
+  - [track](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-track-member(1))
+
+  - [untrack](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-untrack-member(1))
+
+
+  **Word.CoauthoringUpdateCollection** (1 member)
+
+  - [items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)
 
 isPreview: false
 isDeprecated: false

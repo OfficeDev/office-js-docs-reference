@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ArrayCellValue.referencedValues](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-referencedvalues-member)
 
-  - [Excel.EntityCellValue.referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)
+  **Excel.ArrayCellValue** (1 member)
+
+  - [referencedValues](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-referencedvalues-member)
+
+
+  **Excel.EntityCellValue** (1 member)
+
+  - [referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)
 
 
   Learn more about the types in this type alias through the following links. 

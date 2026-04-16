@@ -12,15 +12,30 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ArrayCellValue.referencedValues](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-referencedvalues-member)
 
-  - [Excel.BooleanCellValue.referencedValues](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-referencedvalues-member)
+  **Excel.ArrayCellValue** (1 member)
 
-  - [Excel.DoubleCellValue.referencedValues](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-referencedvalues-member)
+  - [referencedValues](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-referencedvalues-member)
 
-  - [Excel.EntityCellValue.referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)
 
-  - [Excel.StringCellValue.referencedValues](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-referencedvalues-member)
+  **Excel.BooleanCellValue** (1 member)
+
+  - [referencedValues](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-referencedvalues-member)
+
+
+  **Excel.DoubleCellValue** (1 member)
+
+  - [referencedValues](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-referencedvalues-member)
+
+
+  **Excel.EntityCellValue** (1 member)
+
+  - [referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)
+
+
+  **Excel.StringCellValue** (1 member)
+
+  - [referencedValues](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-referencedvalues-member)
 
 
   Learn more about the types in this type alias through the following links. 

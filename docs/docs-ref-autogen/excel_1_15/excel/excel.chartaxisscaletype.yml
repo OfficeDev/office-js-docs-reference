@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxis.scaleType](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-scaletype-member)
+
+  **Excel.ChartAxis** (1 member)
+
+  - [scaleType](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-scaletype-member)
 
 isPreview: false
 isDeprecated: false

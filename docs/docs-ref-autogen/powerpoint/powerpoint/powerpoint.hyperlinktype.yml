@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Hyperlink.type](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-type-member)
+
+  **PowerPoint.Hyperlink** (1 member)
+
+  - [type](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-type-member)
 
 isPreview: false
 isDeprecated: false

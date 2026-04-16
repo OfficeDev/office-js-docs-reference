@@ -13,13 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Presentation.tags](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-tags-member)
 
-  - [PowerPoint.Shape.tags](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-tags-member)
+  **PowerPoint.Presentation** (1 member)
 
-  - [PowerPoint.Slide.tags](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tags-member)
+  - [tags](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-tags-member)
 
-  - [PowerPoint.TagCollection.load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
+
+  **PowerPoint.Shape** (1 member)
+
+  - [tags](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-tags-member)
+
+
+  **PowerPoint.Slide** (1 member)
+
+  - [tags](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tags-member)
+
+
+  **PowerPoint.TagCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
 
   #### Examples
 

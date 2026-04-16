@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onFormatChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformatchanged-member)
 
-  - [Excel.WorksheetCollection.onFormatChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformatchanged-member)
+  **Excel.Worksheet** (1 member)
+
+  - [onFormatChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformatchanged-member)
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [onFormatChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformatchanged-member)
 
 isPreview: false
 isDeprecated: false

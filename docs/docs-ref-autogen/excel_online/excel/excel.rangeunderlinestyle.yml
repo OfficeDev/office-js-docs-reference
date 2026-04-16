@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellPropertiesFont.underline](/javascript/api/excel/excel.cellpropertiesfont#excel-excel-cellpropertiesfont-underline-member)
 
-  - [Excel.RangeFont.underline](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-underline-member)
+  **Excel.CellPropertiesFont** (1 member)
+
+  - [underline](/javascript/api/excel/excel.cellpropertiesfont#excel-excel-cellpropertiesfont-underline-member)
+
+
+  **Excel.RangeFont** (1 member)
+
+  - [underline](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-underline-member)
 
   #### Examples
 

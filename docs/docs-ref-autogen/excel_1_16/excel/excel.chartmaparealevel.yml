@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartMapOptions.level](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-level-member)
+
+  **Excel.ChartMapOptions** (1 member)
+
+  - [level](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-level-member)
 
 isPreview: false
 isDeprecated: false

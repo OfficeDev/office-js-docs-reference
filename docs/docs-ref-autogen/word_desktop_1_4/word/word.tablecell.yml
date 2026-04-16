@@ -13,57 +13,84 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.parentTableCell](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecell-member)
 
-  - [Word.ContentControl.parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecellornullobject-member)
+  **Word.ContentControl** (2 members)
 
-  - [Word.Field.parentTableCell](/javascript/api/word/word.field#word-word-field-parenttablecell-member)
+  - [parentTableCell](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecell-member)
 
-  - [Word.Field.parentTableCellOrNullObject](/javascript/api/word/word.field#word-word-field-parenttablecellornullobject-member)
+  - [parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecellornullobject-member)
 
-  - [Word.InlinePicture.parentTableCell](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecell-member)
 
-  - [Word.InlinePicture.parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecellornullobject-member)
+  **Word.Field** (2 members)
 
-  - [Word.Paragraph.parentTableCell](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecell-member)
+  - [parentTableCell](/javascript/api/word/word.field#word-word-field-parenttablecell-member)
 
-  - [Word.Paragraph.parentTableCellOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecellornullobject-member)
+  - [parentTableCellOrNullObject](/javascript/api/word/word.field#word-word-field-parenttablecellornullobject-member)
 
-  - [Word.Range.parentTableCell](/javascript/api/word/word.range#word-word-range-parenttablecell-member)
 
-  - [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#word-word-range-parenttablecellornullobject-member)
+  **Word.InlinePicture** (2 members)
 
-  - [Word.Table.getCell](/javascript/api/word/word.table#word-word-table-getcell-member(1))
+  - [parentTableCell](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecell-member)
 
-  - [Word.Table.getCellOrNullObject](/javascript/api/word/word.table#word-word-table-getcellornullobject-member(1))
+  - [parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecellornullobject-member)
 
-  - [Word.Table.mergeCells](/javascript/api/word/word.table#word-word-table-mergecells-member(1))
 
-  - [Word.Table.parentTableCell](/javascript/api/word/word.table#word-word-table-parenttablecell-member)
+  **Word.Paragraph** (2 members)
 
-  - [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#word-word-table-parenttablecellornullobject-member)
+  - [parentTableCell](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecell-member)
 
-  - [Word.TableCell.getNext](/javascript/api/word/word.tablecell#word-word-tablecell-getnext-member(1))
+  - [parentTableCellOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecellornullobject-member)
 
-  - [Word.TableCell.getNextOrNullObject](/javascript/api/word/word.tablecell#word-word-tablecell-getnextornullobject-member(1))
 
-  - [Word.TableCell.load](/javascript/api/word/word.tablecell#word-word-tablecell-load-member(1))
+  **Word.Range** (2 members)
 
-  - [Word.TableCell.merge](/javascript/api/word/word.tablecell#word-word-tablecell-merge-member(1))
+  - [parentTableCell](/javascript/api/word/word.range#word-word-range-parenttablecell-member)
 
-  - [Word.TableCell.set](/javascript/api/word/word.tablecell#word-word-tablecell-set-member(2))
+  - [parentTableCellOrNullObject](/javascript/api/word/word.range#word-word-range-parenttablecellornullobject-member)
 
-  - [Word.TableCell.track](/javascript/api/word/word.tablecell#word-word-tablecell-track-member(1))
 
-  - [Word.TableCell.untrack](/javascript/api/word/word.tablecell#word-word-tablecell-untrack-member(1))
+  **Word.Table** (5 members)
 
-  - [Word.TableCellCollection.getFirst](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirst-member(1))
+  - [getCell](/javascript/api/word/word.table#word-word-table-getcell-member(1))
 
-  - [Word.TableCellCollection.getFirstOrNullObject](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirstornullobject-member(1))
+  - [getCellOrNullObject](/javascript/api/word/word.table#word-word-table-getcellornullobject-member(1))
 
-  - [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-items-member)
+  - [mergeCells](/javascript/api/word/word.table#word-word-table-mergecells-member(1))
 
-  - [Word.TableRow.merge](/javascript/api/word/word.tablerow#word-word-tablerow-merge-member(1))
+  - [parentTableCell](/javascript/api/word/word.table#word-word-table-parenttablecell-member)
+
+  - [parentTableCellOrNullObject](/javascript/api/word/word.table#word-word-table-parenttablecellornullobject-member)
+
+
+  **Word.TableCell** (7 members)
+
+  - [getNext](/javascript/api/word/word.tablecell#word-word-tablecell-getnext-member(1))
+
+  - [getNextOrNullObject](/javascript/api/word/word.tablecell#word-word-tablecell-getnextornullobject-member(1))
+
+  - [load](/javascript/api/word/word.tablecell#word-word-tablecell-load-member(1))
+
+  - [merge](/javascript/api/word/word.tablecell#word-word-tablecell-merge-member(1))
+
+  - [set](/javascript/api/word/word.tablecell#word-word-tablecell-set-member(2))
+
+  - [track](/javascript/api/word/word.tablecell#word-word-tablecell-track-member(1))
+
+  - [untrack](/javascript/api/word/word.tablecell#word-word-tablecell-untrack-member(1))
+
+
+  **Word.TableCellCollection** (3 members)
+
+  - [getFirst](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirst-member(1))
+
+  - [getFirstOrNullObject](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirstornullobject-member(1))
+
+  - [items](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-items-member)
+
+
+  **Word.TableRow** (1 member)
+
+  - [merge](/javascript/api/word/word.tablerow#word-word-tablerow-merge-member(1))
 
   #### Examples
 

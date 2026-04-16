@@ -12,23 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataPivotHierarchy.load](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-load-member(1))
 
-  - [Excel.DataPivotHierarchy.set](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-set-member(2))
+  **Excel.DataPivotHierarchy** (2 members)
 
-  - [Excel.DataPivotHierarchyCollection.add](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-add-member(1))
+  - [load](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-load-member(1))
 
-  - [Excel.DataPivotHierarchyCollection.getItem](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-getitem-member(1))
+  - [set](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-set-member(2))
 
-  - [Excel.DataPivotHierarchyCollection.getItemOrNullObject](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-getitemornullobject-member(1))
 
-  - [Excel.DataPivotHierarchyCollection.items](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-items-member)
+  **Excel.DataPivotHierarchyCollection** (5 members)
 
-  - [Excel.DataPivotHierarchyCollection.remove](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-remove-member(1))
+  - [add](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-add-member(1))
 
-  - [Excel.PivotField.sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
+  - [getItem](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-getitem-member(1))
 
-  - [Excel.PivotLayout.getDataHierarchy](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getdatahierarchy-member(1))
+  - [getItemOrNullObject](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-items-member)
+
+  - [remove](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-remove-member(1))
+
+
+  **Excel.PivotField** (1 member)
+
+  - [sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
+
+
+  **Excel.PivotLayout** (1 member)
+
+  - [getDataHierarchy](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getdatahierarchy-member(1))
 
 isPreview: false
 isDeprecated: false

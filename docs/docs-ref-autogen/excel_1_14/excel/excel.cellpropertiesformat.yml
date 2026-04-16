@@ -14,11 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.SettableCellProperties.format](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-format-member)
 
-  - [Excel.SettableColumnProperties.format](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-format-member)
+  **Excel.SettableCellProperties** (1 member)
 
-  - [Excel.SettableRowProperties.format](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-format-member)
+  - [format](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-format-member)
+
+
+  **Excel.SettableColumnProperties** (1 member)
+
+  - [format](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-format-member)
+
+
+  **Excel.SettableRowProperties** (1 member)
+
+  - [format](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-format-member)
 
 isPreview: false
 isDeprecated: false

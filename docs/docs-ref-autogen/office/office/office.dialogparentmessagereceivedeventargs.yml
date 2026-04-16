@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.UI.addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1))
+
+  **Office.UI** (1 member)
+
+  - [addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1))
 
   #### Examples
 

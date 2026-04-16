@@ -19,7 +19,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.RibbonUpdaterData.tabs](/javascript/api/office/office.ribbonupdaterdata#office-office-ribbonupdaterdata-tabs-member)
+
+  **Office.RibbonUpdaterData** (1 member)
+
+  - [tabs](/javascript/api/office/office.ribbonupdaterdata#office-office-ribbonupdaterdata-tabs-member)
 
   #### Examples
 

@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.HyperlinkScopedCollection.load](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-load-member(1))
 
-  - [PowerPoint.TextRange.hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-hyperlinks-member)
+  **PowerPoint.HyperlinkScopedCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-load-member(1))
+
+
+  **PowerPoint.TextRange** (1 member)
+
+  - [hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-hyperlinks-member)
 
 isPreview: false
 isDeprecated: false

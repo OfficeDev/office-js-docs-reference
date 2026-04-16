@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalCellValueRule.operator](/javascript/api/excel/excel.conditionalcellvaluerule#excel-excel-conditionalcellvaluerule-operator-member)
+
+  **Excel.ConditionalCellValueRule** (1 member)
+
+  - [operator](/javascript/api/excel/excel.conditionalcellvaluerule#excel-excel-conditionalcellvaluerule-operator-member)
 
 isPreview: false
 isDeprecated: false

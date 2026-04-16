@@ -16,7 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShapeTextWrap.side](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-side-member)
+
+  **Word.ShapeTextWrap** (1 member)
+
+  - [side](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-side-member)
 
   #### Examples
 

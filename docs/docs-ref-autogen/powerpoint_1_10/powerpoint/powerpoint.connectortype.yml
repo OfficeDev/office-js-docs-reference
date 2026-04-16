@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.ShapeCollection.addLine](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addline-member(1))
+
+  **PowerPoint.ShapeCollection** (1 member)
+
+  - [addLine](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addline-member(1))
 
   #### Examples
 

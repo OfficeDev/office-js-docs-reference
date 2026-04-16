@@ -10,13 +10,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Document.insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
 
-  - [Word.DocumentCreated.insertFileFromBase64](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))
+  **Word.Document** (1 member)
+
+  - [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
+
+
+  **Word.DocumentCreated** (1 member)
+
+  - [insertFileFromBase64](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))
 
   #### Examples
 

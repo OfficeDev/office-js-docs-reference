@@ -13,41 +13,53 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)
 
-  - [Word.Body.onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)
+  **Word.Body** (5 members)
 
-  - [Word.Body.onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)
+  - [onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)
 
-  - [Word.Body.onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member)
+  - [onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)
 
-  - [Word.Body.onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)
+  - [onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)
 
-  - [Word.ContentControl.onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member)
+  - [onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member)
 
-  - [Word.ContentControl.onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member)
+  - [onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)
 
-  - [Word.ContentControl.onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member)
 
-  - [Word.ContentControl.onCommentSelected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentselected-member)
+  **Word.ContentControl** (4 members)
 
-  - [Word.Paragraph.onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)
+  - [onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member)
 
-  - [Word.Paragraph.onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member)
+  - [onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member)
 
-  - [Word.Paragraph.onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)
+  - [onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member)
 
-  - [Word.Paragraph.onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member)
+  - [onCommentSelected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentselected-member)
 
-  - [Word.Paragraph.onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)
 
-  - [Word.Range.onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member)
+  **Word.Paragraph** (5 members)
 
-  - [Word.Range.onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)
+  - [onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)
 
-  - [Word.Range.onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member)
+  - [onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member)
 
-  - [Word.Range.onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)
+  - [onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)
+
+  - [onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member)
+
+  - [onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)
+
+
+  **Word.Range** (4 members)
+
+  - [onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member)
+
+  - [onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)
+
+  - [onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member)
+
+  - [onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)
 
   #### Examples
 

@@ -14,27 +14,36 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotLayout.pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)
 
-  - [Excel.PivotLayout.setStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))
+  **Excel.PivotLayout** (2 members)
 
-  - [Excel.PivotTableStyle.duplicate](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-duplicate-member(1))
+  - [pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)
 
-  - [Excel.PivotTableStyle.load](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-load-member(1))
+  - [setStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))
 
-  - [Excel.PivotTableStyle.set](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-set-member(2))
 
-  - [Excel.PivotTableStyleCollection.add](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-add-member(1))
+  **Excel.PivotTableStyle** (3 members)
 
-  - [Excel.PivotTableStyleCollection.getDefault](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getdefault-member(1))
+  - [duplicate](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-duplicate-member(1))
 
-  - [Excel.PivotTableStyleCollection.getItem](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getitem-member(1))
+  - [load](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-load-member(1))
 
-  - [Excel.PivotTableStyleCollection.getItemOrNullObject](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getitemornullobject-member(1))
+  - [set](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-set-member(2))
 
-  - [Excel.PivotTableStyleCollection.items](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-items-member)
 
-  - [Excel.PivotTableStyleCollection.setDefault](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-setdefault-member(1))
+  **Excel.PivotTableStyleCollection** (6 members)
+
+  - [add](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-add-member(1))
+
+  - [getDefault](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getdefault-member(1))
+
+  - [getItem](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getitem-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-items-member)
+
+  - [setDefault](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-setdefault-member(1))
 
 isPreview: false
 isDeprecated: false

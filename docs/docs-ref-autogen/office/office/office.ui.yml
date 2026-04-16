@@ -19,7 +19,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Context.ui](/javascript/api/office/office.context#office-office-context-ui-member)
+
+  **Office.Context** (1 member)
+
+  - [ui](/javascript/api/office/office.context#office-office-context-ui-member)
 
   #### Examples
 

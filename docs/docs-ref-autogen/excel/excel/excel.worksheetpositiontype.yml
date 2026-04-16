@@ -15,11 +15,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.InsertWorksheetOptions.positionType](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-positiontype-member)
 
-  - [Excel.Worksheet.copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
+  **Excel.InsertWorksheetOptions** (1 member)
 
-  - [Excel.WorksheetCollection.addFromBase64](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))
+  - [positionType](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-positiontype-member)
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [addFromBase64](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))
 
   #### Examples
 

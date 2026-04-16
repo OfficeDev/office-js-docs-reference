@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BorderCollection.toJSON](/javascript/api/word/word.bordercollection#word-word-bordercollection-tojson-member(1))
+
+  **Word.BorderCollection** (1 member)
+
+  - [toJSON](/javascript/api/word/word.bordercollection#word-word-bordercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

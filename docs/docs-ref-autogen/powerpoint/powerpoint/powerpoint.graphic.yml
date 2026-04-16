@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Graphic.load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
 
-  - [PowerPoint.Shape.getGraphicOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getgraphicornullobject-member(1))
+  **PowerPoint.Graphic** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
+
+
+  **PowerPoint.Shape** (1 member)
+
+  - [getGraphicOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getgraphicornullobject-member(1))
 
 isPreview: true
 isDeprecated: false

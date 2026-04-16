@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartLegend.legendEntries](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-legendentries-member)
 
-  - [Excel.ChartLegendEntryCollection.load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
+  **Excel.ChartLegend** (1 member)
+
+  - [legendEntries](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-legendentries-member)
+
+
+  **Excel.ChartLegendEntryCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

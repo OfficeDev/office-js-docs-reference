@@ -16,7 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReviewerCollection.load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1))
+
+  **Word.ReviewerCollection** (1 member)
+
+  - [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,27 +13,36 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member)
 
-  - [Word.Body.parentSectionOrNullObject](/javascript/api/word/word.body#word-word-body-parentsectionornullobject-member)
+  **Word.Body** (2 members)
 
-  - [Word.Section.getNext](/javascript/api/word/word.section#word-word-section-getnext-member(1))
+  - [parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member)
 
-  - [Word.Section.getNextOrNullObject](/javascript/api/word/word.section#word-word-section-getnextornullobject-member(1))
+  - [parentSectionOrNullObject](/javascript/api/word/word.body#word-word-body-parentsectionornullobject-member)
 
-  - [Word.Section.load](/javascript/api/word/word.section#word-word-section-load-member(1))
 
-  - [Word.Section.set](/javascript/api/word/word.section#word-word-section-set-member(2))
+  **Word.Section** (6 members)
 
-  - [Word.Section.track](/javascript/api/word/word.section#word-word-section-track-member(1))
+  - [getNext](/javascript/api/word/word.section#word-word-section-getnext-member(1))
 
-  - [Word.Section.untrack](/javascript/api/word/word.section#word-word-section-untrack-member(1))
+  - [getNextOrNullObject](/javascript/api/word/word.section#word-word-section-getnextornullobject-member(1))
 
-  - [Word.SectionCollection.getFirst](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1))
+  - [load](/javascript/api/word/word.section#word-word-section-load-member(1))
 
-  - [Word.SectionCollection.getFirstOrNullObject](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirstornullobject-member(1))
+  - [set](/javascript/api/word/word.section#word-word-section-set-member(2))
 
-  - [Word.SectionCollection.items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
+  - [track](/javascript/api/word/word.section#word-word-section-track-member(1))
+
+  - [untrack](/javascript/api/word/word.section#word-word-section-untrack-member(1))
+
+
+  **Word.SectionCollection** (3 members)
+
+  - [getFirst](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1))
+
+  - [getFirstOrNullObject](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirstornullobject-member(1))
+
+  - [items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
 
   #### Examples
 

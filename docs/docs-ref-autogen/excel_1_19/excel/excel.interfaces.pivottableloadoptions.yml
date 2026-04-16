@@ -16,7 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotTable.load](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-load-member(1))
+
+  **Excel.PivotTable** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -9,20 +9,18 @@ summary: >-
 
   **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
-remarks: >-
+remarks: |-
 
 
 
   #### Used by
 
 
-  - [Office.Tab.groups](/javascript/api/office/office.tab#office-office-tab-groups-member)
-
+  **Office.Tab** (1 member)
+  - [groups](/javascript/api/office/office.tab#office-office-tab-groups-member)
   #### Examples
 
-
   ```TypeScript
-
   /**
    * Shows or hides a contextual tab.
    */
@@ -46,7 +44,6 @@ remarks: >-
           ],
       });
   }
-
   ```
 
 isPreview: false

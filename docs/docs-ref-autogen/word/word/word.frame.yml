@@ -14,21 +14,30 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Frame.load](/javascript/api/word/word.frame#word-word-frame-load-member(1))
 
-  - [Word.Frame.set](/javascript/api/word/word.frame#word-word-frame-set-member(2))
+  **Word.Frame** (4 members)
 
-  - [Word.Frame.track](/javascript/api/word/word.frame#word-word-frame-track-member(1))
+  - [load](/javascript/api/word/word.frame#word-word-frame-load-member(1))
 
-  - [Word.Frame.untrack](/javascript/api/word/word.frame#word-word-frame-untrack-member(1))
+  - [set](/javascript/api/word/word.frame#word-word-frame-set-member(2))
 
-  - [Word.FrameCollection.add](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1))
+  - [track](/javascript/api/word/word.frame#word-word-frame-track-member(1))
 
-  - [Word.FrameCollection.getItem](/javascript/api/word/word.framecollection#word-word-framecollection-getitem-member(1))
+  - [untrack](/javascript/api/word/word.frame#word-word-frame-untrack-member(1))
 
-  - [Word.FrameCollection.items](/javascript/api/word/word.framecollection#word-word-framecollection-items-member)
 
-  - [Word.Style.frame](/javascript/api/word/word.style#word-word-style-frame-member)
+  **Word.FrameCollection** (3 members)
+
+  - [add](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1))
+
+  - [getItem](/javascript/api/word/word.framecollection#word-word-framecollection-getitem-member(1))
+
+  - [items](/javascript/api/word/word.framecollection#word-word-framecollection-items-member)
+
+
+  **Word.Style** (1 member)
+
+  - [frame](/javascript/api/word/word.style#word-word-style-frame-member)
 
 isPreview: false
 isDeprecated: false

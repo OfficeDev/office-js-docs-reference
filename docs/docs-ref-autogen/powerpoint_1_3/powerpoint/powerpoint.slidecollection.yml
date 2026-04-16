@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Presentation.slides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-slides-member)
 
-  - [PowerPoint.SlideCollection.load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
+  **PowerPoint.Presentation** (1 member)
+
+  - [slides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-slides-member)
+
+
+  **PowerPoint.SlideCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
 
   #### Examples
 

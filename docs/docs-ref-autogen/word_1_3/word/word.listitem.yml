@@ -13,17 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListItem.load](/javascript/api/word/word.listitem#word-word-listitem-load-member(1))
 
-  - [Word.ListItem.set](/javascript/api/word/word.listitem#word-word-listitem-set-member(2))
+  **Word.ListItem** (4 members)
 
-  - [Word.ListItem.track](/javascript/api/word/word.listitem#word-word-listitem-track-member(1))
+  - [load](/javascript/api/word/word.listitem#word-word-listitem-load-member(1))
 
-  - [Word.ListItem.untrack](/javascript/api/word/word.listitem#word-word-listitem-untrack-member(1))
+  - [set](/javascript/api/word/word.listitem#word-word-listitem-set-member(2))
 
-  - [Word.Paragraph.listItem](/javascript/api/word/word.paragraph#word-word-paragraph-listitem-member)
+  - [track](/javascript/api/word/word.listitem#word-word-listitem-track-member(1))
 
-  - [Word.Paragraph.listItemOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listitemornullobject-member)
+  - [untrack](/javascript/api/word/word.listitem#word-word-listitem-untrack-member(1))
+
+
+  **Word.Paragraph** (2 members)
+
+  - [listItem](/javascript/api/word/word.paragraph#word-word-paragraph-listitem-member)
+
+  - [listItemOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listitemornullobject-member)
 
   #### Examples
 

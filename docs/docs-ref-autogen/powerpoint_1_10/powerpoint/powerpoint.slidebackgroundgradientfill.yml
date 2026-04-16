@@ -13,13 +13,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.SlideBackgroundFill.getGradientFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getgradientfillornullobject-member(1))
 
-  - [PowerPoint.SlideBackgroundGradientFill.load](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-load-member(1))
+  **PowerPoint.SlideBackgroundFill** (1 member)
+
+  - [getGradientFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getgradientfillornullobject-member(1))
+
+
+  **PowerPoint.SlideBackgroundGradientFill** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-load-member(1))
 
   #### Examples
 

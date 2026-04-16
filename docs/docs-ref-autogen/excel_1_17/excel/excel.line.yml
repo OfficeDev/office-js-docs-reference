@@ -14,11 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Line.load](/javascript/api/excel/excel.line#excel-excel-line-load-member(1))
 
-  - [Excel.Line.set](/javascript/api/excel/excel.line#excel-excel-line-set-member(2))
+  **Excel.Line** (2 members)
 
-  - [Excel.Shape.line](/javascript/api/excel/excel.shape#excel-excel-shape-line-member)
+  - [load](/javascript/api/excel/excel.line#excel-excel-line-load-member(1))
+
+  - [set](/javascript/api/excel/excel.line#excel-excel-line-set-member(2))
+
+
+  **Excel.Shape** (1 member)
+
+  - [line](/javascript/api/excel/excel.shape#excel-excel-shape-line-member)
 
 isPreview: false
 isDeprecated: false

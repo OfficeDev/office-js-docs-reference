@@ -15,9 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.BindingCollection.load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(1))
 
-  - [PowerPoint.Presentation.bindings](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-bindings-member)
+  **PowerPoint.BindingCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(1))
+
+
+  **PowerPoint.Presentation** (1 member)
+
+  - [bindings](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-bindings-member)
 
   #### Examples
 

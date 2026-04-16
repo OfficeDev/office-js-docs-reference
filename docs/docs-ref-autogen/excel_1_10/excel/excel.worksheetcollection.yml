@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.worksheets](/javascript/api/excel/excel.workbook#excel-excel-workbook-worksheets-member)
 
-  - [Excel.WorksheetCollection.load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
+  **Excel.Workbook** (1 member)
+
+  - [worksheets](/javascript/api/excel/excel.workbook#excel-excel-workbook-worksheets-member)
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Shape.type](/javascript/api/word/word.shape#word-word-shape-type-member)
 
-  - [Word.ShapeCollection.getByTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))
+  **Word.Shape** (1 member)
+
+  - [type](/javascript/api/word/word.shape#word-word-shape-type-member)
+
+
+  **Word.ShapeCollection** (1 member)
+
+  - [getByTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))
 
   #### Examples
 

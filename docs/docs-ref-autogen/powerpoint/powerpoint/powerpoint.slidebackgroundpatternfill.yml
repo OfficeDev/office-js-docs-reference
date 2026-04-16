@@ -13,13 +13,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.SlideBackgroundFill.getPatternFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpatternfillornullobject-member(1))
 
-  - [PowerPoint.SlideBackgroundPatternFill.load](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-load-member(1))
+  **PowerPoint.SlideBackgroundFill** (1 member)
+
+  - [getPatternFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpatternfillornullobject-member(1))
+
+
+  **PowerPoint.SlideBackgroundPatternFill** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-load-member(1))
 
   #### Examples
 

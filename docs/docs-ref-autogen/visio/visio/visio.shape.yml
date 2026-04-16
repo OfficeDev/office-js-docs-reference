@@ -12,15 +12,24 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.PageView.isShapeInViewport](/javascript/api/visio/visio.pageview#visio-visio-pageview-isshapeinviewport-member(1))
 
-  - [Visio.Shape.load](/javascript/api/visio/visio.shape#visio-visio-shape-load-member(1))
+  **Visio.PageView** (1 member)
 
-  - [Visio.Shape.set](/javascript/api/visio/visio.shape#visio-visio-shape-set-member(2))
+  - [isShapeInViewport](/javascript/api/visio/visio.pageview#visio-visio-pageview-isshapeinviewport-member(1))
 
-  - [Visio.ShapeCollection.getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1))
 
-  - [Visio.ShapeCollection.items](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-items-member)
+  **Visio.Shape** (2 members)
+
+  - [load](/javascript/api/visio/visio.shape#visio-visio-shape-load-member(1))
+
+  - [set](/javascript/api/visio/visio.shape#visio-visio-shape-set-member(2))
+
+
+  **Visio.ShapeCollection** (2 members)
+
+  - [getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1))
+
+  - [items](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-items-member)
 
 isPreview: false
 isDeprecated: false

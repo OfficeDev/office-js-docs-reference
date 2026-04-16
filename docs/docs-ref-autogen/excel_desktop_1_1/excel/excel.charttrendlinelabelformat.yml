@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTrendlineLabel.format](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-format-member)
 
-  - [Excel.ChartTrendlineLabelFormat.load](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-load-member(1))
+  **Excel.ChartTrendlineLabel** (1 member)
 
-  - [Excel.ChartTrendlineLabelFormat.set](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-set-member(2))
+  - [format](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-format-member)
+
+
+  **Excel.ChartTrendlineLabelFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

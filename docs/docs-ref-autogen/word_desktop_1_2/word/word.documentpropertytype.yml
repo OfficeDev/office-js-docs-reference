@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomProperty.type](/javascript/api/word/word.customproperty#word-word-customproperty-type-member)
+
+  **Word.CustomProperty** (1 member)
+
+  - [type](/javascript/api/word/word.customproperty#word-word-customproperty-type-member)
 
   #### Examples
 

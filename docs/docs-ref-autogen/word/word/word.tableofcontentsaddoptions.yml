@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableOfContentsCollection.add](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-add-member(1))
+
+  **Word.TableOfContentsCollection** (1 member)
+
+  - [add](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ColorFormat.type](/javascript/api/word/word.colorformat#word-word-colorformat-type-member)
+
+  **Word.ColorFormat** (1 member)
+
+  - [type](/javascript/api/word/word.colorformat#word-word-colorformat-type-member)
 
 isPreview: false
 isDeprecated: false

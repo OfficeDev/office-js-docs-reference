@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.SectionGroupCollection.load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
+
+  **OneNote.SectionGroupCollection** (1 member)
+
+  - [load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

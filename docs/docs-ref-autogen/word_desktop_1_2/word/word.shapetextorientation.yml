@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TextFrame.orientation](/javascript/api/word/word.textframe#word-word-textframe-orientation-member)
+
+  **Word.TextFrame** (1 member)
+
+  - [orientation](/javascript/api/word/word.textframe#word-word-textframe-orientation-member)
 
   #### Examples
 

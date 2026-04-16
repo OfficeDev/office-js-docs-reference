@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotLayout.load](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-load-member(1))
+
+  **Excel.PivotLayout** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Border.toJSON](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-tojson-member(1))
+
+  **PowerPoint.Border** (1 member)
+
+  - [toJSON](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -8,7 +8,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.RemoveHandlerOptions.handler](/javascript/api/office/office.removehandleroptions#office-office-removehandleroptions-handler-member)
+
+  **Office.RemoveHandlerOptions** (1 member)
+
+  - [handler](/javascript/api/office/office.removehandleroptions#office-office-removehandleroptions-handler-member)
 
 isPreview: false
 isDeprecated: false

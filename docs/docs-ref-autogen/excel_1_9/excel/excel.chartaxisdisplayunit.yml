@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxis.displayUnit](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-displayunit-member)
+
+  **Excel.ChartAxis** (1 member)
+
+  - [displayUnit](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-displayunit-member)
 
 isPreview: false
 isDeprecated: false

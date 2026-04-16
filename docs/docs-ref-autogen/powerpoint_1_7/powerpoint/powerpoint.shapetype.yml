@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Shape.type](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-type-member)
+
+  **PowerPoint.Shape** (1 member)
+
+  - [type](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-type-member)
 
   #### Examples
 

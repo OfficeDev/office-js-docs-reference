@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.StyleCollection.toJSON](/javascript/api/word/word.stylecollection#word-word-stylecollection-tojson-member(1))
+
+  **Word.StyleCollection** (1 member)
+
+  - [toJSON](/javascript/api/word/word.stylecollection#word-word-stylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

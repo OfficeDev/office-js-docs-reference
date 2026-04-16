@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Outline.toJSON](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-tojson-member(1))
+
+  **OneNote.Outline** (1 member)
+
+  - [toJSON](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

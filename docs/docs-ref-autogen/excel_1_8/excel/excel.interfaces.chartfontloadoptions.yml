@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartFont.load](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-load-member(1))
+
+  **Excel.ChartFont** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -35,9 +35,12 @@ remarks: >-
   #### Used by
 
 
-  - [Office.DevicePermission.requestPermissions](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissions-member(1))
 
-  - [Office.DevicePermission.requestPermissionsAsync](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissionsasync-member(1))
+  **Office.DevicePermission** (2 members)
+
+  - [requestPermissions](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissions-member(1))
+
+  - [requestPermissionsAsync](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissionsasync-member(1))
 
   #### Examples
 

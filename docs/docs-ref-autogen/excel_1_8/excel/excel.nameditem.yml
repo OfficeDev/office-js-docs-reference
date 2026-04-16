@@ -17,19 +17,25 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItem.load](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-load-member(1))
 
-  - [Excel.NamedItem.set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(2))
+  **Excel.NamedItem** (2 members)
 
-  - [Excel.NamedItemCollection.add](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-add-member(1))
+  - [load](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-load-member(1))
 
-  - [Excel.NamedItemCollection.addFormulaLocal](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-addformulalocal-member(1))
+  - [set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(2))
 
-  - [Excel.NamedItemCollection.getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1))
 
-  - [Excel.NamedItemCollection.getItemOrNullObject](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitemornullobject-member(1))
+  **Excel.NamedItemCollection** (5 members)
 
-  - [Excel.NamedItemCollection.items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
+  - [add](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-add-member(1))
+
+  - [addFormulaLocal](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-addformulalocal-member(1))
+
+  - [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
 
   #### Examples
 

@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalFormat.textComparison](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparison-member)
 
-  - [Excel.ConditionalFormat.textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparisonornullobject-member)
+  **Excel.ConditionalFormat** (2 members)
 
-  - [Excel.TextConditionalFormat.load](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-load-member(1))
+  - [textComparison](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparison-member)
 
-  - [Excel.TextConditionalFormat.set](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-set-member(2))
+  - [textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparisonornullobject-member)
+
+
+  **Excel.TextConditionalFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

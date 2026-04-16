@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.IconCollections.threeSigns](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threesigns-member)
+
+  **Excel.IconCollections** (1 member)
+
+  - [threeSigns](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threesigns-member)
 
 isPreview: false
 isDeprecated: false

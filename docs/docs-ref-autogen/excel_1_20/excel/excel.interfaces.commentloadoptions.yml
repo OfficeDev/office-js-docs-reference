@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.load](/javascript/api/excel/excel.comment#excel-excel-comment-load-member(1))
+
+  **Excel.Comment** (1 member)
+
+  - [load](/javascript/api/excel/excel.comment#excel-excel-comment-load-member(1))
 
 isPreview: false
 isDeprecated: false

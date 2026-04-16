@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxisFormat.set](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-set-member(1))
+
+  **Excel.ChartAxisFormat** (1 member)
+
+  - [set](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

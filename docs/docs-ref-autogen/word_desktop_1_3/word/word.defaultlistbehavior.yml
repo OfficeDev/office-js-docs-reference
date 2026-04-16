@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListFormat.applyBulletDefault](/javascript/api/word/word.listformat#word-word-listformat-applybulletdefault-member(1))
 
-  - [Word.ListFormat.applyNumberDefault](/javascript/api/word/word.listformat#word-word-listformat-applynumberdefault-member(1))
+  **Word.ListFormat** (3 members)
 
-  - [Word.ListFormat.applyOutlineNumberDefault](/javascript/api/word/word.listformat#word-word-listformat-applyoutlinenumberdefault-member(1))
+  - [applyBulletDefault](/javascript/api/word/word.listformat#word-word-listformat-applybulletdefault-member(1))
 
-  - [Word.ListTemplateApplyOptions.defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)
+  - [applyNumberDefault](/javascript/api/word/word.listformat#word-word-listformat-applynumberdefault-member(1))
+
+  - [applyOutlineNumberDefault](/javascript/api/word/word.listformat#word-word-listformat-applyoutlinenumberdefault-member(1))
+
+
+  **Word.ListTemplateApplyOptions** (1 member)
+
+  - [defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)
 
 isPreview: false
 isDeprecated: false

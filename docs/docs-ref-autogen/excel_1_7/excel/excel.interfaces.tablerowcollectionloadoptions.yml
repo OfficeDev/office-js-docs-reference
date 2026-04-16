@@ -20,7 +20,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableRowCollection.load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
+
+  **Excel.TableRowCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

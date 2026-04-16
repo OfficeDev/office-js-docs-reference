@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NumberFormatInfo.load](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-load-member(1))
+
+  **Excel.NumberFormatInfo** (1 member)
+
+  - [load](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-load-member(1))
 
 isPreview: false
 isDeprecated: false

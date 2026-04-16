@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartCollection.onAdded](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-onadded-member)
+
+  **Excel.ChartCollection** (1 member)
+
+  - [onAdded](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-onadded-member)
 
 isPreview: false
 isDeprecated: false

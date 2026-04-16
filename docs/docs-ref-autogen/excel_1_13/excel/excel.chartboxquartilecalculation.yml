@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartBoxwhiskerOptions.quartileCalculation](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-quartilecalculation-member)
+
+  **Excel.ChartBoxwhiskerOptions** (1 member)
+
+  - [quartileCalculation](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-quartilecalculation-member)
 
 isPreview: false
 isDeprecated: false

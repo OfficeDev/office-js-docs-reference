@@ -13,21 +13,36 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Hyperlink.load](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-load-member(1))
 
-  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+  **PowerPoint.Hyperlink** (1 member)
 
-  - [PowerPoint.HyperlinkCollection.getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1))
+  - [load](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-load-member(1))
 
-  - [PowerPoint.HyperlinkCollection.items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
 
-  - [PowerPoint.HyperlinkScopedCollection.getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-getitemat-member(1))
+  **PowerPoint.HyperlinkCollection** (3 members)
 
-  - [PowerPoint.HyperlinkScopedCollection.items](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-items-member)
+  - [add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
 
-  - [PowerPoint.Shape.setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1))
 
-  - [PowerPoint.TextRange.setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
+  - [items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
+
+
+  **PowerPoint.HyperlinkScopedCollection** (2 members)
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-getitemat-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-items-member)
+
+
+  **PowerPoint.Shape** (1 member)
+
+  - [setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
+
+
+  **PowerPoint.TextRange** (1 member)
+
+  - [setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
 
   #### Examples
 

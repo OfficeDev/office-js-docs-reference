@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeBorderCollection.toJSON](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-tojson-member(1))
+
+  **Excel.RangeBorderCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

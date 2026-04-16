@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.LineFormat.load](/javascript/api/word/word.lineformat#word-word-lineformat-load-member(1))
+
+  **Word.LineFormat** (1 member)
+
+  - [load](/javascript/api/word/word.lineformat#word-word-lineformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

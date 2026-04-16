@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataPivotHierarchyCollection.load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
+
+  **Excel.DataPivotHierarchyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

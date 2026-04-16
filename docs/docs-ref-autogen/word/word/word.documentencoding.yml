@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.openEncoding](/javascript/api/word/word.document#word-word-document-openencoding-member)
 
-  - [Word.Document.reloadAs](/javascript/api/word/word.document#word-word-document-reloadas-member(1))
+  **Word.Document** (4 members)
 
-  - [Word.Document.saveEncoding](/javascript/api/word/word.document#word-word-document-saveencoding-member)
+  - [openEncoding](/javascript/api/word/word.document#word-word-document-openencoding-member)
 
-  - [Word.Document.textEncoding](/javascript/api/word/word.document#word-word-document-textencoding-member)
+  - [reloadAs](/javascript/api/word/word.document#word-word-document-reloadas-member(1))
 
-  - [Word.WebSettings.encoding](/javascript/api/word/word.websettings#word-word-websettings-encoding-member)
+  - [saveEncoding](/javascript/api/word/word.document#word-word-document-saveencoding-member)
+
+  - [textEncoding](/javascript/api/word/word.document#word-word-document-textencoding-member)
+
+
+  **Word.WebSettings** (1 member)
+
+  - [encoding](/javascript/api/word/word.websettings#word-word-websettings-encoding-member)
 
 isPreview: false
 isDeprecated: false

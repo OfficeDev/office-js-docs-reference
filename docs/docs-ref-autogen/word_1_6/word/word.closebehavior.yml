@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Document.close](/javascript/api/word/word.document#word-word-document-close-member(1))
+
+  **Word.Document** (1 member)
+
+  - [close](/javascript/api/word/word.document#word-word-document-close-member(1))
 
   #### Examples
 

@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.onParagraphChanged](/javascript/api/word/word.document#word-word-document-onparagraphchanged-member)
+
+  **Word.Document** (1 member)
+
+  - [onParagraphChanged](/javascript/api/word/word.document#word-word-document-onparagraphchanged-member)
 
   #### Examples
 

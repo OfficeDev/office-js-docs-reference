@@ -14,11 +14,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItemCollection.load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
 
-  - [Excel.Workbook.names](/javascript/api/excel/excel.workbook#excel-excel-workbook-names-member)
+  **Excel.NamedItemCollection** (1 member)
 
-  - [Excel.Worksheet.names](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-names-member)
+  - [load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+
+
+  **Excel.Workbook** (1 member)
+
+  - [names](/javascript/api/excel/excel.workbook#excel-excel-workbook-names-member)
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [names](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-names-member)
 
 isPreview: false
 isDeprecated: false

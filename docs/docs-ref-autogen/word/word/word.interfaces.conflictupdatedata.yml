@@ -6,11 +6,12 @@ fullName: Word.Interfaces.ConflictUpdateData
 summary: >-
   An interface for updating data on the `Conflict` object, for use in
   `conflict.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Conflict.set](/javascript/api/word/word.conflict#word-word-conflict-set-member(1))
+  **Word.Conflict** (1 member)
+  - [set](/javascript/api/word/word.conflict#word-word-conflict-set-member(1))
 
 isPreview: false
 isDeprecated: false

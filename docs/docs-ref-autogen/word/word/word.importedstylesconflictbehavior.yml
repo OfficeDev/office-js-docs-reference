@@ -12,11 +12,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Document.importStylesFromJson](/javascript/api/word/word.document#word-word-document-importstylesfromjson-member(1))
+
+  **Word.Document** (1 member)
+
+  - [importStylesFromJson](/javascript/api/word/word.document#word-word-document-importstylesfromjson-member(1))
 
   #### Examples
 

@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomProperty.load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
 
-  - [PowerPoint.CustomPropertyCollection.add](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-add-member(1))
+  **PowerPoint.CustomProperty** (1 member)
 
-  - [PowerPoint.CustomPropertyCollection.getItem](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitem-member(1))
+  - [load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
 
-  - [PowerPoint.CustomPropertyCollection.getItemAt](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemat-member(1))
 
-  - [PowerPoint.CustomPropertyCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemornullobject-member(1))
+  **PowerPoint.CustomPropertyCollection** (5 members)
 
-  - [PowerPoint.CustomPropertyCollection.items](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-items-member)
+  - [add](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-add-member(1))
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-items-member)
 
 isPreview: false
 isDeprecated: false

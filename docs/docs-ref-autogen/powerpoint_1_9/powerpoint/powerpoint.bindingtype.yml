@@ -13,11 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Binding.type](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-type-member)
 
-  - [PowerPoint.BindingCollection.add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
+  **PowerPoint.Binding** (1 member)
 
-  - [PowerPoint.BindingCollection.addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
+  - [type](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-type-member)
+
+
+  **PowerPoint.BindingCollection** (2 members)
+
+  - [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
+
+  - [addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
 
   #### Examples
 

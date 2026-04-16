@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.onAnnotationPopupAction](/javascript/api/word/word.document#word-word-document-onannotationpopupaction-member)
+
+  **Word.Document** (1 member)
+
+  - [onAnnotationPopupAction](/javascript/api/word/word.document#word-word-document-onannotationpopupaction-member)
 
   #### Examples
 

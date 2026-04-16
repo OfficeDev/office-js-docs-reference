@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Filter.toJSON](/javascript/api/excel/excel.filter#excel-excel-filter-tojson-member(1))
+
+  **Excel.Filter** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.filter#excel-excel-filter-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

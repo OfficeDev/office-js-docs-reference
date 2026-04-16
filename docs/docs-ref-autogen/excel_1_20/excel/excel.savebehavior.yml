@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.Workbook.save](/javascript/api/excel/excel.workbook#excel-excel-workbook-save-member(1))
+
+  **Excel.Workbook** (1 member)
+
+  - [save](/javascript/api/excel/excel.workbook#excel-excel-workbook-save-member(1))
 
   #### Examples
 

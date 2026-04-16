@@ -17,7 +17,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeAreas.load](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-load-member(1))
+
+  **Excel.RangeAreas** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-load-member(1))
 
 isPreview: false
 isDeprecated: false

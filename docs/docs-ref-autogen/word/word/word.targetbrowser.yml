@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.WebSettings.targetBrowser](/javascript/api/word/word.websettings#word-word-websettings-targetbrowser-member)
+
+  **Word.WebSettings** (1 member)
+
+  - [targetBrowser](/javascript/api/word/word.websettings#word-word-websettings-targetbrowser-member)
 
 isPreview: false
 isDeprecated: false

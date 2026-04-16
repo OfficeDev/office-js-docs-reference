@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.SelectionConvertToTableOptions.defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-defaulttablebehavior-member)
+
+  **Word.SelectionConvertToTableOptions** (1 member)
+
+  - [defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-defaulttablebehavior-member)
 
 isPreview: true
 isDeprecated: false

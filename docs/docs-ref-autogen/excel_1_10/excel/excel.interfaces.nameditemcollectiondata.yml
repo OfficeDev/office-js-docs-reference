@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItemCollection.toJSON](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-tojson-member(1))
+
+  **Excel.NamedItemCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ShapeFill.load](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-load-member(1))
+
+  **PowerPoint.ShapeFill** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-load-member(1))
 
 isPreview: false
 isDeprecated: false

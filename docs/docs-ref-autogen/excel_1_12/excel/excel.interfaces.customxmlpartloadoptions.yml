@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomXmlPart.load](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-load-member(1))
+
+  **Excel.CustomXmlPart** (1 member)
+
+  - [load](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-load-member(1))
 
 isPreview: false
 isDeprecated: false

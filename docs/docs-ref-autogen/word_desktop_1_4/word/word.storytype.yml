@@ -12,11 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Bookmark.storyType](/javascript/api/word/word.bookmark#word-word-bookmark-storytype-member)
 
-  - [Word.Range.storyType](/javascript/api/word/word.range#word-word-range-storytype-member)
+  **Word.Bookmark** (1 member)
 
-  - [Word.Selection.storyType](/javascript/api/word/word.selection#word-word-selection-storytype-member)
+  - [storyType](/javascript/api/word/word.bookmark#word-word-bookmark-storytype-member)
+
+
+  **Word.Range** (1 member)
+
+  - [storyType](/javascript/api/word/word.range#word-word-range-storytype-member)
+
+
+  **Word.Selection** (1 member)
+
+  - [storyType](/javascript/api/word/word.selection#word-word-selection-storytype-member)
 
 isPreview: false
 isDeprecated: false

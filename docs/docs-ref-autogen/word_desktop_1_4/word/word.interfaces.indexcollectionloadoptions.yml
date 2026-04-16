@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.IndexCollection.load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
+
+  **Word.IndexCollection** (1 member)
+
+  - [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

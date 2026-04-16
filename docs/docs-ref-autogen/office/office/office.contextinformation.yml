@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Context.diagnostics](/javascript/api/office/office.context#office-office-context-diagnostics-member)
+
+  **Office.Context** (1 member)
+
+  - [diagnostics](/javascript/api/office/office.context#office-office-context-diagnostics-member)
 
 isPreview: false
 isDeprecated: false

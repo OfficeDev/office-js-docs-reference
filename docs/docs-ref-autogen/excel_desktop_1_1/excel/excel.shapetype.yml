@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Shape.type](/javascript/api/excel/excel.shape#excel-excel-shape-type-member)
+
+  **Excel.Shape** (1 member)
+
+  - [type](/javascript/api/excel/excel.shape#excel-excel-shape-type-member)
 
 isPreview: false
 isDeprecated: false

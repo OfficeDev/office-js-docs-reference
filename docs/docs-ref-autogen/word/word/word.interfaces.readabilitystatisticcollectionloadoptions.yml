@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReadabilityStatisticCollection.load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1))
+
+  **Word.ReadabilityStatisticCollection** (1 member)
+
+  - [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

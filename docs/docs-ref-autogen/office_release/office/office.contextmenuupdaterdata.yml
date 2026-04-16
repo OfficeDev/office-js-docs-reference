@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.ContextMenu.requestUpdate](/javascript/api/office/office.contextmenu#office-office-contextmenu-requestupdate-member(1))
+
+  **Office.ContextMenu** (1 member)
+
+  - [requestUpdate](/javascript/api/office/office.contextmenu#office-office-contextmenu-requestupdate-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.hyperlink](/javascript/api/excel/excel.range#excel-excel-range-hyperlink-member)
+
+  **Excel.Range** (1 member)
+
+  - [hyperlink](/javascript/api/excel/excel.range#excel-excel-range-hyperlink-member)
 
 isPreview: false
 isDeprecated: false

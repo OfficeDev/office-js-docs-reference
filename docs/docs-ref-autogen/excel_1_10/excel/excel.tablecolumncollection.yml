@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Table.columns](/javascript/api/excel/excel.table#excel-excel-table-columns-member)
 
-  - [Excel.TableColumnCollection.load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+  **Excel.Table** (1 member)
+
+  - [columns](/javascript/api/excel/excel.table#excel-excel-table-columns-member)
+
+
+  **Excel.TableColumnCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
 
   #### Examples
 

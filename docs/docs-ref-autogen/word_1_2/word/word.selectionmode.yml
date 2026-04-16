@@ -12,19 +12,33 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Body.select](/javascript/api/word/word.body#word-word-body-select-member(1))
 
-  - [Word.ContentControl.select](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-select-member(1))
+  **Word.Body** (1 member)
 
-  - [Word.InlinePicture.select](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-select-member(1))
+  - [select](/javascript/api/word/word.body#word-word-body-select-member(1))
 
-  - [Word.Paragraph.select](/javascript/api/word/word.paragraph#word-word-paragraph-select-member(1))
 
-  - [Word.Range.select](/javascript/api/word/word.range#word-word-range-select-member(1))
+  **Word.ContentControl** (1 member)
+
+  - [select](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-select-member(1))
+
+
+  **Word.InlinePicture** (1 member)
+
+  - [select](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-select-member(1))
+
+
+  **Word.Paragraph** (1 member)
+
+  - [select](/javascript/api/word/word.paragraph#word-word-paragraph-select-member(1))
+
+
+  **Word.Range** (1 member)
+
+  - [select](/javascript/api/word/word.range#word-word-range-select-member(1))
 
   #### Examples
 

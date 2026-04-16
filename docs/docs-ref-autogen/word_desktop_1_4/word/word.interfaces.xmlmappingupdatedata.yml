@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.XmlMapping.set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(1))
+
+  **Word.XmlMapping** (1 member)
+
+  - [set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(1))
 
 isPreview: false
 isDeprecated: false

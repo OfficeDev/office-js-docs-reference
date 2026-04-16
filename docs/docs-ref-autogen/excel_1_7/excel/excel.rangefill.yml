@@ -12,13 +12,22 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeFill.load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1))
 
-  - [Excel.RangeFill.set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(2))
+  **Excel.RangeFill** (2 members)
 
-  - [Excel.RangeFormat.fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
+  - [load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1))
 
-  - [Excel.Style.fill](/javascript/api/excel/excel.style#excel-excel-style-fill-member)
+  - [set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(2))
+
+
+  **Excel.RangeFormat** (1 member)
+
+  - [fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
+
+
+  **Excel.Style** (1 member)
+
+  - [fill](/javascript/api/excel/excel.style#excel-excel-style-fill-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,17 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BorderUniversal.load](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-load-member(1))
 
-  - [Word.BorderUniversal.set](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-set-member(2))
+  **Word.BorderUniversal** (4 members)
 
-  - [Word.BorderUniversal.track](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-track-member(1))
+  - [load](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-load-member(1))
 
-  - [Word.BorderUniversal.untrack](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-untrack-member(1))
+  - [set](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-set-member(2))
 
-  - [Word.BorderUniversalCollection.getItem](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-getitem-member(1))
+  - [track](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-track-member(1))
 
-  - [Word.BorderUniversalCollection.items](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-items-member)
+  - [untrack](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-untrack-member(1))
+
+
+  **Word.BorderUniversalCollection** (2 members)
+
+  - [getItem](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-getitem-member(1))
+
+  - [items](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-items-member)
 
 isPreview: false
 isDeprecated: false

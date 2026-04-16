@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Shape.load](/javascript/api/word/word.shape#word-word-shape-load-member(1))
+
+  **Word.Shape** (1 member)
+
+  - [load](/javascript/api/word/word.shape#word-word-shape-load-member(1))
 
 isPreview: false
 isDeprecated: false

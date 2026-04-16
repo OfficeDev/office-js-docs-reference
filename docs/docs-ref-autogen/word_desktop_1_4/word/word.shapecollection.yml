@@ -16,31 +16,49 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.shapes](/javascript/api/word/word.body#word-word-body-shapes-member)
 
-  - [Word.Canvas.shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)
+  **Word.Body** (1 member)
 
-  - [Word.Paragraph.shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)
+  - [shapes](/javascript/api/word/word.body#word-word-body-shapes-member)
 
-  - [Word.Range.shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
 
-  - [Word.ShapeCollection.getByGeometricTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1))
+  **Word.Canvas** (1 member)
 
-  - [Word.ShapeCollection.getByIds](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyids-member(1))
+  - [shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)
 
-  - [Word.ShapeCollection.getByNames](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbynames-member(1))
 
-  - [Word.ShapeCollection.getByTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))
+  **Word.Paragraph** (1 member)
 
-  - [Word.ShapeCollection.load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(1))
+  - [shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)
 
-  - [Word.ShapeCollection.track](/javascript/api/word/word.shapecollection#word-word-shapecollection-track-member(1))
 
-  - [Word.ShapeCollection.untrack](/javascript/api/word/word.shapecollection#word-word-shapecollection-untrack-member(1))
+  **Word.Range** (1 member)
 
-  - [Word.ShapeGroup.shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member)
+  - [shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
 
-  - [Word.ShapeGroup.ungroup](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))
+
+  **Word.ShapeCollection** (7 members)
+
+  - [getByGeometricTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1))
+
+  - [getByIds](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyids-member(1))
+
+  - [getByNames](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbynames-member(1))
+
+  - [getByTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))
+
+  - [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(1))
+
+  - [track](/javascript/api/word/word.shapecollection#word-word-shapecollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.shapecollection#word-word-shapecollection-untrack-member(1))
+
+
+  **Word.ShapeGroup** (2 members)
+
+  - [shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member)
+
+  - [ungroup](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))
 
   #### Examples
 

@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.SelectionMoveLeftRightOptions.extend](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-extend-member)
 
-  - [Word.SelectionMoveUpDownOptions.extend](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-extend-member)
+  **Word.SelectionMoveLeftRightOptions** (1 member)
+
+  - [extend](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-extend-member)
+
+
+  **Word.SelectionMoveUpDownOptions** (1 member)
+
+  - [extend](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-extend-member)
 
 isPreview: false
 isDeprecated: false

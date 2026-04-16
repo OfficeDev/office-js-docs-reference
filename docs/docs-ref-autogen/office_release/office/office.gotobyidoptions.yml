@@ -30,7 +30,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.goToByIdAsync](/javascript/api/office/office.document#office-office-document-gotobyidasync-member(1))
+
+  **Office.Document** (1 member)
+
+  - [goToByIdAsync](/javascript/api/office/office.document#office-office-document-gotobyidasync-member(1))
 
 isPreview: false
 isDeprecated: false

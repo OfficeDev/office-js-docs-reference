@@ -6,11 +6,12 @@ fullName: Word.Interfaces.StyleUpdateData
 summary: >-
   An interface for updating data on the `Style` object, for use in `style.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Style.set](/javascript/api/word/word.style#word-word-style-set-member(1))
+  **Word.Style** (1 member)
+  - [set](/javascript/api/word/word.style#word-word-style-set-member(1))
 
 isPreview: false
 isDeprecated: false

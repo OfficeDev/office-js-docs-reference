@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.PointCollection.toJSON](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-tojson-member(1))
+
+  **OneNote.PointCollection** (1 member)
+
+  - [toJSON](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

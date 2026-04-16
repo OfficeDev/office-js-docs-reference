@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Bibliography.load](/javascript/api/word/word.bibliography#word-word-bibliography-load-member(1))
+
+  **Word.Bibliography** (1 member)
+
+  - [load](/javascript/api/word/word.bibliography#word-word-bibliography-load-member(1))
 
 isPreview: false
 isDeprecated: false

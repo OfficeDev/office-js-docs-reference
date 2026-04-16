@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Table.autoFitBehavior](/javascript/api/word/word.table#word-word-table-autofitbehavior-member(1))
+
+  **Word.Table** (1 member)
+
+  - [autoFitBehavior](/javascript/api/word/word.table#word-word-table-autofitbehavior-member(1))
 
 isPreview: false
 isDeprecated: false

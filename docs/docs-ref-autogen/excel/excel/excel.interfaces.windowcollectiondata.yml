@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.WindowCollection.toJSON](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-tojson-member(1))
+
+  **Excel.WindowCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

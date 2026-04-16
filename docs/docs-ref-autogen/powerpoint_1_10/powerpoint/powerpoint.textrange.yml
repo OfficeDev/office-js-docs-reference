@@ -15,19 +15,34 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Hyperlink.getLinkedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedtextrangeornullobject-member(1))
 
-  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+  **PowerPoint.Hyperlink** (1 member)
 
-  - [PowerPoint.Presentation.getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1))
+  - [getLinkedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedtextrangeornullobject-member(1))
 
-  - [PowerPoint.Presentation.getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
 
-  - [PowerPoint.TextFrame.textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
+  **PowerPoint.HyperlinkCollection** (1 member)
 
-  - [PowerPoint.TextRange.getSubstring](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getsubstring-member(1))
+  - [add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
 
-  - [PowerPoint.TextRange.load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
+
+  **PowerPoint.Presentation** (2 members)
+
+  - [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1))
+
+  - [getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
+
+
+  **PowerPoint.TextFrame** (1 member)
+
+  - [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
+
+
+  **PowerPoint.TextRange** (2 members)
+
+  - [getSubstring](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getsubstring-member(1))
+
+  - [load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
 
   #### Examples
 

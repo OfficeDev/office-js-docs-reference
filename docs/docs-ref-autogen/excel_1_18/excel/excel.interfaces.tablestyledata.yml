@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableStyle.toJSON](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-tojson-member(1))
+
+  **Excel.TableStyle** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

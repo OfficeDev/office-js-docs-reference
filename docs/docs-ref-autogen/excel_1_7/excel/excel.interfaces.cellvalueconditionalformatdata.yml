@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellValueConditionalFormat.toJSON](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-tojson-member(1))
+
+  **Excel.CellValueConditionalFormat** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

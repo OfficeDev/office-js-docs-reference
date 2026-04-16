@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomProperty.load](/javascript/api/word/word.customproperty#word-word-customproperty-load-member(1))
+
+  **Word.CustomProperty** (1 member)
+
+  - [load](/javascript/api/word/word.customproperty#word-word-customproperty-load-member(1))
 
 isPreview: false
 isDeprecated: false

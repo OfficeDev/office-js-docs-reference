@@ -8,13 +8,19 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Binding.type](/javascript/api/office/office.binding#office-office-binding-type-member)
 
-  - [Office.Bindings.addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1))
+  **Office.Binding** (1 member)
 
-  - [Office.Bindings.addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1))
+  - [type](/javascript/api/office/office.binding#office-office-binding-type-member)
 
-  - [Office.Bindings.addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1))
+
+  **Office.Bindings** (3 members)
+
+  - [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1))
+
+  - [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1))
+
+  - [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1))
 
 isPreview: false
 isDeprecated: false

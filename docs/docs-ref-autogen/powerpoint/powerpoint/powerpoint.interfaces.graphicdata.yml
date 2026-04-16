@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Graphic.toJSON](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-tojson-member(1))
+
+  **PowerPoint.Graphic** (1 member)
+
+  - [toJSON](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

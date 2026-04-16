@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlockGalleryContentControl.set](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-set-member(1))
+
+  **Word.BuildingBlockGalleryContentControl** (1 member)
+
+  - [set](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

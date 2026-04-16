@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OfficeExtension.Error.innerError](/javascript/api/office/officeextension.error#office-officeextension-error-innererror-member)
+
+  **OfficeExtension.Error** (1 member)
+
+  - [innerError](/javascript/api/office/officeextension.error#office-officeextension-error-innererror-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,13 +12,15 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Shape.scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1))
 
-  - [Word.Shape.scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
+  **Word.Shape** (2 members)
+
+  - [scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1))
+
+  - [scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
 
   #### Examples
 

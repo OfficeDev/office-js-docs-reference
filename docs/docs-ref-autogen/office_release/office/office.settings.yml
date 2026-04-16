@@ -31,11 +31,20 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.settings](/javascript/api/office/office.document#office-office-document-settings-member)
 
-  - [Office.Settings.refreshAsync](/javascript/api/office/office.settings#office-office-settings-refreshasync-member(1))
+  **Office.Document** (1 member)
 
-  - [Office.SettingsChangedEventArgs.settings](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-settings-member)
+  - [settings](/javascript/api/office/office.document#office-office-document-settings-member)
+
+
+  **Office.Settings** (1 member)
+
+  - [refreshAsync](/javascript/api/office/office.settings#office-office-settings-refreshasync-member(1))
+
+
+  **Office.SettingsChangedEventArgs** (1 member)
+
+  - [settings](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-settings-member)
 
 isPreview: false
 isDeprecated: false

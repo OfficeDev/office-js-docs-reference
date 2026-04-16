@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotLayout.toJSON](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-tojson-member(1))
+
+  **Excel.PivotLayout** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

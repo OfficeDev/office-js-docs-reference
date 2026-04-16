@@ -6,11 +6,12 @@ fullName: Word.Interfaces.BreakUpdateData
 summary: >-
   An interface for updating data on the `Break` object, for use in `break.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Break.set](/javascript/api/word/word.break#word-word-break-set-member(1))
+  **Word.Break** (1 member)
+  - [set](/javascript/api/word/word.break#word-word-break-set-member(1))
 
 isPreview: false
 isDeprecated: false

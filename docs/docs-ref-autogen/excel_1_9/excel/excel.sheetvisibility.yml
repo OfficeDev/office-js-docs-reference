@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.visibility](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-visibility-member)
+
+  **Excel.Worksheet** (1 member)
+
+  - [visibility](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-visibility-member)
 
   #### Examples
 

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShapeTextWrap.toJSON](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-tojson-member(1))
+
+  **Word.ShapeTextWrap** (1 member)
+
+  - [toJSON](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

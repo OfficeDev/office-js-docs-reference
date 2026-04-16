@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableColumn.load](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-load-member(1))
+
+  **Excel.TableColumn** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-load-member(1))
 
 isPreview: false
 isDeprecated: false

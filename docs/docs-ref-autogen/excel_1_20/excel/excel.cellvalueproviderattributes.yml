@@ -15,17 +15,35 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BooleanCellValue.provider](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-provider-member)
 
-  - [Excel.DoubleCellValue.provider](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-provider-member)
+  **Excel.BooleanCellValue** (1 member)
 
-  - [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-provider-member)
+  - [provider](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-provider-member)
 
-  - [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-provider-member)
 
-  - [Excel.StringCellValue.provider](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-provider-member)
+  **Excel.DoubleCellValue** (1 member)
 
-  - [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#excel-excel-webimagecellvalue-provider-member)
+  - [provider](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-provider-member)
+
+
+  **Excel.EntityCellValue** (1 member)
+
+  - [provider](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-provider-member)
+
+
+  **Excel.LinkedEntityCellValue** (1 member)
+
+  - [provider](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-provider-member)
+
+
+  **Excel.StringCellValue** (1 member)
+
+  - [provider](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-provider-member)
+
+
+  **Excel.WebImageCellValue** (1 member)
+
+  - [provider](/javascript/api/excel/excel.webimagecellvalue#excel-excel-webimagecellvalue-provider-member)
 
 isPreview: false
 isDeprecated: false

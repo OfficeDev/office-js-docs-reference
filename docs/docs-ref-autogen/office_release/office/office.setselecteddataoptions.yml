@@ -11,7 +11,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.setSelectedDataAsync](/javascript/api/office/office.document#office-office-document-setselecteddataasync-member(1))
+
+  **Office.Document** (1 member)
+
+  - [setSelectedDataAsync](/javascript/api/office/office.document#office-office-document-setselecteddataasync-member(1))
 
   #### Examples
 

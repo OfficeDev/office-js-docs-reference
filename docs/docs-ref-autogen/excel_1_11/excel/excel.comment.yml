@@ -12,23 +12,32 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.load](/javascript/api/excel/excel.comment#excel-excel-comment-load-member(1))
 
-  - [Excel.Comment.set](/javascript/api/excel/excel.comment#excel-excel-comment-set-member(2))
+  **Excel.Comment** (2 members)
 
-  - [Excel.CommentCollection.add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+  - [load](/javascript/api/excel/excel.comment#excel-excel-comment-load-member(1))
 
-  - [Excel.CommentCollection.getItem](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitem-member(1))
+  - [set](/javascript/api/excel/excel.comment#excel-excel-comment-set-member(2))
 
-  - [Excel.CommentCollection.getItemAt](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitemat-member(1))
 
-  - [Excel.CommentCollection.getItemByCell](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembycell-member(1))
+  **Excel.CommentCollection** (6 members)
 
-  - [Excel.CommentCollection.getItemByReplyId](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembyreplyid-member(1))
+  - [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
 
-  - [Excel.CommentCollection.items](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-items-member)
+  - [getItem](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitem-member(1))
 
-  - [Excel.CommentReply.getParentComment](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-getparentcomment-member(1))
+  - [getItemAt](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitemat-member(1))
+
+  - [getItemByCell](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembycell-member(1))
+
+  - [getItemByReplyId](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembyreplyid-member(1))
+
+  - [items](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-items-member)
+
+
+  **Excel.CommentReply** (1 member)
+
+  - [getParentComment](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-getparentcomment-member(1))
 
 isPreview: false
 isDeprecated: false

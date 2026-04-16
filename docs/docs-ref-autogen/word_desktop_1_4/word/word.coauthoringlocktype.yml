@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CoauthoringLock.type](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-type-member)
 
-  - [Word.CoauthoringLockAddOptions.type](/javascript/api/word/word.coauthoringlockaddoptions#word-word-coauthoringlockaddoptions-type-member)
+  **Word.CoauthoringLock** (1 member)
+
+  - [type](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-type-member)
+
+
+  **Word.CoauthoringLockAddOptions** (1 member)
+
+  - [type](/javascript/api/word/word.coauthoringlockaddoptions#word-word-coauthoringlockaddoptions-type-member)
 
 isPreview: false
 isDeprecated: false

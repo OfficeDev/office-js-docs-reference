@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Application.iterativeCalculation](/javascript/api/excel/excel.application#excel-excel-application-iterativecalculation-member)
 
-  - [Excel.IterativeCalculation.load](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-load-member(1))
+  **Excel.Application** (1 member)
 
-  - [Excel.IterativeCalculation.set](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-set-member(2))
+  - [iterativeCalculation](/javascript/api/excel/excel.application#excel-excel-application-iterativecalculation-member)
+
+
+  **Excel.IterativeCalculation** (2 members)
+
+  - [load](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-load-member(1))
+
+  - [set](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-set-member(2))
 
 isPreview: false
 isDeprecated: false

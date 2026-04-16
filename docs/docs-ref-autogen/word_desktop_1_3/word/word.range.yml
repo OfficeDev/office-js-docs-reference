@@ -13,133 +13,220 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.getRange](/javascript/api/word/word.body#word-word-body-getrange-member(1))
 
-  - [Word.Body.insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1))
+  **Word.Body** (5 members)
 
-  - [Word.Body.insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1))
+  - [getRange](/javascript/api/word/word.body#word-word-body-getrange-member(1))
 
-  - [Word.Body.insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1))
 
-  - [Word.Body.insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
+  - [insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1))
 
-  - [Word.Break.range](/javascript/api/word/word.break#word-word-break-range-member)
+  - [insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1))
 
-  - [Word.BuildingBlock.insert](/javascript/api/word/word.buildingblock#word-word-buildingblock-insert-member(1))
+  - [insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
 
-  - [Word.BuildingBlockCollection.add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
 
-  - [Word.BuildingBlockEntryCollection.add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
+  **Word.Break** (1 member)
 
-  - [Word.BuildingBlockGalleryContentControl.range](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-range-member)
+  - [range](/javascript/api/word/word.break#word-word-break-range-member)
 
-  - [Word.Comment.getRange](/javascript/api/word/word.comment#word-word-comment-getrange-member(1))
 
-  - [Word.ContentControl.getRange](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))
+  **Word.BuildingBlock** (1 member)
 
-  - [Word.ContentControl.insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1))
+  - [insert](/javascript/api/word/word.buildingblock#word-word-buildingblock-insert-member(1))
 
-  - [Word.ContentControl.insertHtml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserthtml-member(1))
 
-  - [Word.ContentControl.insertOoxml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertooxml-member(1))
+  **Word.BuildingBlockCollection** (1 member)
 
-  - [Word.ContentControl.insertText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttext-member(1))
+  - [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
 
-  - [Word.ContentControlPlaceholderOptions.range](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-range-member)
 
-  - [Word.CritiqueAnnotation.range](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-range-member)
+  **Word.BuildingBlockEntryCollection** (1 member)
 
-  - [Word.DatePickerContentControl.range](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-range-member)
+  - [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
 
-  - [Word.Document.getBookmarkRange](/javascript/api/word/word.document#word-word-document-getbookmarkrange-member(1))
 
-  - [Word.Document.getBookmarkRangeOrNullObject](/javascript/api/word/word.document#word-word-document-getbookmarkrangeornullobject-member(1))
+  **Word.BuildingBlockGalleryContentControl** (1 member)
 
-  - [Word.Document.getSelection](/javascript/api/word/word.document#word-word-document-getselection-member(1))
+  - [range](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-range-member)
 
-  - [Word.Field.result](/javascript/api/word/word.field#word-word-field-result-member)
 
-  - [Word.Frame.range](/javascript/api/word/word.frame#word-word-frame-range-member)
+  **Word.Comment** (1 member)
 
-  - [Word.FrameCollection.add](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1))
+  - [getRange](/javascript/api/word/word.comment#word-word-comment-getrange-member(1))
 
-  - [Word.GroupContentControl.range](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-range-member)
 
-  - [Word.Hyperlink.range](/javascript/api/word/word.hyperlink#word-word-hyperlink-range-member)
+  **Word.ContentControl** (5 members)
 
-  - [Word.HyperlinkCollection.add](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1))
+  - [getRange](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))
 
-  - [Word.InlinePicture.getRange](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getrange-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1))
 
-  - [Word.InlinePicture.insertFileFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertfilefrombase64-member(1))
+  - [insertHtml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserthtml-member(1))
 
-  - [Word.InlinePicture.insertHtml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserthtml-member(1))
+  - [insertOoxml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertooxml-member(1))
 
-  - [Word.InlinePicture.insertOoxml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertooxml-member(1))
+  - [insertText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttext-member(1))
 
-  - [Word.InlinePicture.insertText](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserttext-member(1))
 
-  - [Word.NoteItem.reference](/javascript/api/word/word.noteitem#word-word-noteitem-reference-member)
+  **Word.ContentControlPlaceholderOptions** (1 member)
 
-  - [Word.Page.getRange](/javascript/api/word/word.page#word-word-page-getrange-member(1))
+  - [range](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-range-member)
 
-  - [Word.Paragraph.getRange](/javascript/api/word/word.paragraph#word-word-paragraph-getrange-member(1))
 
-  - [Word.Paragraph.insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1))
+  **Word.CritiqueAnnotation** (1 member)
 
-  - [Word.Paragraph.insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1))
+  - [range](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-range-member)
 
-  - [Word.Paragraph.insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1))
 
-  - [Word.Paragraph.insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
+  **Word.DatePickerContentControl** (1 member)
 
-  - [Word.PictureContentControl.range](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-range-member)
+  - [range](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-range-member)
 
-  - [Word.Range.compareLocationWith](/javascript/api/word/word.range#word-word-range-comparelocationwith-member(1))
 
-  - [Word.Range.expandTo](/javascript/api/word/word.range#word-word-range-expandto-member(1))
+  **Word.Document** (3 members)
 
-  - [Word.Range.expandToOrNullObject](/javascript/api/word/word.range#word-word-range-expandtoornullobject-member(1))
+  - [getBookmarkRange](/javascript/api/word/word.document#word-word-document-getbookmarkrange-member(1))
 
-  - [Word.Range.getNextTextRange](/javascript/api/word/word.range#word-word-range-getnexttextrange-member(1))
+  - [getBookmarkRangeOrNullObject](/javascript/api/word/word.document#word-word-document-getbookmarkrangeornullobject-member(1))
 
-  - [Word.Range.getNextTextRangeOrNullObject](/javascript/api/word/word.range#word-word-range-getnexttextrangeornullobject-member(1))
+  - [getSelection](/javascript/api/word/word.document#word-word-document-getselection-member(1))
 
-  - [Word.Range.getRange](/javascript/api/word/word.range#word-word-range-getrange-member(1))
 
-  - [Word.Range.insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1))
+  **Word.Field** (1 member)
 
-  - [Word.Range.insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1))
+  - [result](/javascript/api/word/word.field#word-word-field-result-member)
 
-  - [Word.Range.insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1))
 
-  - [Word.Range.insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
+  **Word.Frame** (1 member)
 
-  - [Word.Range.intersectWith](/javascript/api/word/word.range#word-word-range-intersectwith-member(1))
+  - [range](/javascript/api/word/word.frame#word-word-frame-range-member)
 
-  - [Word.Range.intersectWithOrNullObject](/javascript/api/word/word.range#word-word-range-intersectwithornullobject-member(1))
 
-  - [Word.Range.load](/javascript/api/word/word.range#word-word-range-load-member(1))
+  **Word.FrameCollection** (1 member)
 
-  - [Word.Range.set](/javascript/api/word/word.range#word-word-range-set-member(2))
+  - [add](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1))
 
-  - [Word.Range.track](/javascript/api/word/word.range#word-word-range-track-member(1))
 
-  - [Word.Range.untrack](/javascript/api/word/word.range#word-word-range-untrack-member(1))
+  **Word.GroupContentControl** (1 member)
 
-  - [Word.RangeCollection.getFirst](/javascript/api/word/word.rangecollection#word-word-rangecollection-getfirst-member(1))
+  - [range](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-range-member)
 
-  - [Word.RangeCollection.getFirstOrNullObject](/javascript/api/word/word.rangecollection#word-word-rangecollection-getfirstornullobject-member(1))
 
-  - [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
+  **Word.Hyperlink** (1 member)
 
-  - [Word.RepeatingSectionContentControl.range](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-range-member)
+  - [range](/javascript/api/word/word.hyperlink#word-word-hyperlink-range-member)
 
-  - [Word.RepeatingSectionItem.range](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-range-member)
 
-  - [Word.Table.getRange](/javascript/api/word/word.table#word-word-table-getrange-member(1))
+  **Word.HyperlinkCollection** (1 member)
 
-  - [Word.TrackedChange.getRange](/javascript/api/word/word.trackedchange#word-word-trackedchange-getrange-member(1))
+  - [add](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1))
+
+
+  **Word.InlinePicture** (5 members)
+
+  - [getRange](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getrange-member(1))
+
+  - [insertFileFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertfilefrombase64-member(1))
+
+  - [insertHtml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserthtml-member(1))
+
+  - [insertOoxml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertooxml-member(1))
+
+  - [insertText](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserttext-member(1))
+
+
+  **Word.NoteItem** (1 member)
+
+  - [reference](/javascript/api/word/word.noteitem#word-word-noteitem-reference-member)
+
+
+  **Word.Page** (1 member)
+
+  - [getRange](/javascript/api/word/word.page#word-word-page-getrange-member(1))
+
+
+  **Word.Paragraph** (5 members)
+
+  - [getRange](/javascript/api/word/word.paragraph#word-word-paragraph-getrange-member(1))
+
+  - [insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1))
+
+  - [insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1))
+
+  - [insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1))
+
+  - [insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
+
+
+  **Word.PictureContentControl** (1 member)
+
+  - [range](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-range-member)
+
+
+  **Word.Range** (16 members)
+
+  - [compareLocationWith](/javascript/api/word/word.range#word-word-range-comparelocationwith-member(1))
+
+  - [expandTo](/javascript/api/word/word.range#word-word-range-expandto-member(1))
+
+  - [expandToOrNullObject](/javascript/api/word/word.range#word-word-range-expandtoornullobject-member(1))
+
+  - [getNextTextRange](/javascript/api/word/word.range#word-word-range-getnexttextrange-member(1))
+
+  - [getNextTextRangeOrNullObject](/javascript/api/word/word.range#word-word-range-getnexttextrangeornullobject-member(1))
+
+  - [getRange](/javascript/api/word/word.range#word-word-range-getrange-member(1))
+
+  - [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1))
+
+  - [insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1))
+
+  - [insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1))
+
+  - [insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
+
+  - [intersectWith](/javascript/api/word/word.range#word-word-range-intersectwith-member(1))
+
+  - [intersectWithOrNullObject](/javascript/api/word/word.range#word-word-range-intersectwithornullobject-member(1))
+
+  - [load](/javascript/api/word/word.range#word-word-range-load-member(1))
+
+  - [set](/javascript/api/word/word.range#word-word-range-set-member(2))
+
+  - [track](/javascript/api/word/word.range#word-word-range-track-member(1))
+
+  - [untrack](/javascript/api/word/word.range#word-word-range-untrack-member(1))
+
+
+  **Word.RangeCollection** (3 members)
+
+  - [getFirst](/javascript/api/word/word.rangecollection#word-word-rangecollection-getfirst-member(1))
+
+  - [getFirstOrNullObject](/javascript/api/word/word.rangecollection#word-word-rangecollection-getfirstornullobject-member(1))
+
+  - [items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
+
+
+  **Word.RepeatingSectionContentControl** (1 member)
+
+  - [range](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-range-member)
+
+
+  **Word.RepeatingSectionItem** (1 member)
+
+  - [range](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-range-member)
+
+
+  **Word.Table** (1 member)
+
+  - [getRange](/javascript/api/word/word.table#word-word-table-getrange-member(1))
+
+
+  **Word.TrackedChange** (1 member)
+
+  - [getRange](/javascript/api/word/word.trackedchange#word-word-trackedchange-getrange-member(1))
 
   #### Examples
 

@@ -16,7 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ParagraphFormat.horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-horizontalalignment-member)
+
+  **PowerPoint.ParagraphFormat** (1 member)
+
+  - [horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-horizontalalignment-member)
 
   #### Examples
 

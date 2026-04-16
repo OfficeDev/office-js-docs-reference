@@ -12,11 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.CommentCollection.load](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-load-member(1))
 
-  - [Visio.Page.comments](/javascript/api/visio/visio.page#visio-visio-page-comments-member)
+  **Visio.CommentCollection** (1 member)
 
-  - [Visio.Shape.comments](/javascript/api/visio/visio.shape#visio-visio-shape-comments-member)
+  - [load](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-load-member(1))
+
+
+  **Visio.Page** (1 member)
+
+  - [comments](/javascript/api/visio/visio.page#visio-visio-page-comments-member)
+
+
+  **Visio.Shape** (1 member)
+
+  - [comments](/javascript/api/visio/visio.shape#visio-visio-shape-comments-member)
 
 isPreview: false
 isDeprecated: false

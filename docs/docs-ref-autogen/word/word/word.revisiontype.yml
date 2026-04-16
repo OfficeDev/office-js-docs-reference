@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Conflict.type](/javascript/api/word/word.conflict#word-word-conflict-type-member)
 
-  - [Word.Revision.type](/javascript/api/word/word.revision#word-word-revision-type-member)
+  **Word.Conflict** (1 member)
+
+  - [type](/javascript/api/word/word.conflict#word-word-conflict-type-member)
+
+
+  **Word.Revision** (1 member)
+
+  - [type](/javascript/api/word/word.revision#word-word-revision-type-member)
 
 isPreview: false
 isDeprecated: false

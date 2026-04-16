@@ -12,15 +12,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BorderUniversal.colorIndex](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-colorindex-member)
 
-  - [Word.Font.colorIndex](/javascript/api/word/word.font#word-word-font-colorindex-member)
+  **Word.BorderUniversal** (1 member)
 
-  - [Word.Font.colorIndexBidirectional](/javascript/api/word/word.font#word-word-font-colorindexbidirectional-member)
+  - [colorIndex](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-colorindex-member)
 
-  - [Word.ShadingUniversal.backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member)
 
-  - [Word.ShadingUniversal.foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolorindex-member)
+  **Word.Font** (2 members)
+
+  - [colorIndex](/javascript/api/word/word.font#word-word-font-colorindex-member)
+
+  - [colorIndexBidirectional](/javascript/api/word/word.font#word-word-font-colorindexbidirectional-member)
+
+
+  **Word.ShadingUniversal** (2 members)
+
+  - [backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member)
+
+  - [foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolorindex-member)
 
 isPreview: false
 isDeprecated: false

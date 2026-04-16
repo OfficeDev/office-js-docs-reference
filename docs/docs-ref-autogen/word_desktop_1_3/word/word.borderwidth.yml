@@ -13,11 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Border.width](/javascript/api/word/word.border#word-word-border-width-member)
 
-  - [Word.BorderCollection.insideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insideborderwidth-member)
+  **Word.Border** (1 member)
 
-  - [Word.BorderCollection.outsideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsideborderwidth-member)
+  - [width](/javascript/api/word/word.border#word-word-border-width-member)
+
+
+  **Word.BorderCollection** (2 members)
+
+  - [insideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insideborderwidth-member)
+
+  - [outsideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsideborderwidth-member)
 
   #### Examples
 

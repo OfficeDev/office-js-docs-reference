@@ -4,11 +4,12 @@ uid: word!Word.Interfaces.TableData:interface
 package: word!
 fullName: Word.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Table.toJSON](/javascript/api/word/word.table#word-word-table-tojson-member(1))
+  **Word.Table** (1 member)
+  - [toJSON](/javascript/api/word/word.table#word-word-table-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

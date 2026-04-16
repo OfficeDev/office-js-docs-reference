@@ -16,33 +16,51 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Binding.getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
 
-  - [Excel.PivotTableCollection.add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1))
+  **Excel.Binding** (1 member)
 
-  - [Excel.SlicerCollection.add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
+  - [getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
 
-  - [Excel.Table.load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1))
 
-  - [Excel.Table.set](/javascript/api/excel/excel.table#excel-excel-table-set-member(2))
+  **Excel.PivotTableCollection** (1 member)
 
-  - [Excel.TableCollection.add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
+  - [add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1))
 
-  - [Excel.TableCollection.getItem](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitem-member(1))
 
-  - [Excel.TableCollection.getItemAt](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemat-member(1))
+  **Excel.SlicerCollection** (1 member)
 
-  - [Excel.TableCollection.getItemOrNullObject](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemornullobject-member(1))
+  - [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
-  - [Excel.TableCollection.items](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-items-member)
 
-  - [Excel.TableScopedCollection.getFirst](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-getfirst-member(1))
+  **Excel.Table** (2 members)
 
-  - [Excel.TableScopedCollection.getItem](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-getitem-member(1))
+  - [load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1))
 
-  - [Excel.TableScopedCollection.getItemOrNullObject](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-getitemornullobject-member(1))
+  - [set](/javascript/api/excel/excel.table#excel-excel-table-set-member(2))
 
-  - [Excel.TableScopedCollection.items](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-items-member)
+
+  **Excel.TableCollection** (5 members)
+
+  - [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
+
+  - [getItem](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-items-member)
+
+
+  **Excel.TableScopedCollection** (4 members)
+
+  - [getFirst](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-getfirst-member(1))
+
+  - [getItem](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-getitem-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-items-member)
 
 isPreview: false
 isDeprecated: false

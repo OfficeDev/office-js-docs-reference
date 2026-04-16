@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DocumentTask.toJSON](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-tojson-member(1))
+
+  **Excel.DocumentTask** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

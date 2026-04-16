@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableStyle.condition](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))
+
+  **Word.TableStyle** (1 member)
+
+  - [condition](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeFill.type](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-type-member)
+
+  **Excel.ShapeFill** (1 member)
+
+  - [type](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-type-member)
 
 isPreview: false
 isDeprecated: false

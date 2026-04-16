@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Comment.load](/javascript/api/visio/visio.comment#visio-visio-comment-load-member(1))
 
-  - [Visio.Comment.set](/javascript/api/visio/visio.comment#visio-visio-comment-set-member(2))
+  **Visio.Comment** (2 members)
 
-  - [Visio.CommentCollection.getItem](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-getitem-member(1))
+  - [load](/javascript/api/visio/visio.comment#visio-visio-comment-load-member(1))
 
-  - [Visio.CommentCollection.items](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-items-member)
+  - [set](/javascript/api/visio/visio.comment#visio-visio-comment-set-member(2))
+
+
+  **Visio.CommentCollection** (2 members)
+
+  - [getItem](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-getitem-member(1))
+
+  - [items](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-items-member)
 
 isPreview: false
 isDeprecated: false

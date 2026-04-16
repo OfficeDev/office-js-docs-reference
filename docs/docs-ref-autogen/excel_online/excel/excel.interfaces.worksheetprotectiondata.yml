@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.WorksheetProtection.toJSON](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-tojson-member(1))
+
+  **Excel.WorksheetProtection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

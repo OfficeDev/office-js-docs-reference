@@ -13,51 +13,81 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Binding.getShape](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-getshape-member(1))
 
-  - [PowerPoint.BindingCollection.add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
+  **PowerPoint.Binding** (1 member)
 
-  - [PowerPoint.Hyperlink.getLinkedShapeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedshapeornullobject-member(1))
+  - [getShape](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-getshape-member(1))
 
-  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
 
-  - [PowerPoint.Shape.load](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-load-member(1))
+  **PowerPoint.BindingCollection** (1 member)
 
-  - [PowerPoint.Shape.parentGroup](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-parentgroup-member)
+  - [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
 
-  - [PowerPoint.ShapeCollection.addGeometricShape](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgeometricshape-member(1))
 
-  - [PowerPoint.ShapeCollection.addGroup](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgroup-member(1))
+  **PowerPoint.Hyperlink** (1 member)
 
-  - [PowerPoint.ShapeCollection.addLine](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addline-member(1))
+  - [getLinkedShapeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedshapeornullobject-member(1))
 
-  - [PowerPoint.ShapeCollection.addTable](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtable-member(1))
 
-  - [PowerPoint.ShapeCollection.addTextBox](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtextbox-member(1))
+  **PowerPoint.HyperlinkCollection** (1 member)
 
-  - [PowerPoint.ShapeCollection.getItem](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitem-member(1))
+  - [add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
 
-  - [PowerPoint.ShapeCollection.getItemAt](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemat-member(1))
 
-  - [PowerPoint.ShapeCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemornullobject-member(1))
+  **PowerPoint.Shape** (2 members)
 
-  - [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-items-member)
+  - [load](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-load-member(1))
 
-  - [PowerPoint.ShapeGroup.shape](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shape-member)
+  - [parentGroup](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-parentgroup-member)
 
-  - [PowerPoint.ShapeScopedCollection.getItem](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitem-member(1))
 
-  - [PowerPoint.ShapeScopedCollection.getItemAt](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemat-member(1))
+  **PowerPoint.ShapeCollection** (9 members)
 
-  - [PowerPoint.ShapeScopedCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemornullobject-member(1))
+  - [addGeometricShape](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgeometricshape-member(1))
 
-  - [PowerPoint.ShapeScopedCollection.group](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-group-member(1))
+  - [addGroup](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgroup-member(1))
 
-  - [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-items-member)
+  - [addLine](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addline-member(1))
 
-  - [PowerPoint.Table.getShape](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getshape-member(1))
+  - [addTable](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtable-member(1))
 
-  - [PowerPoint.TextFrame.getParentShape](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-getparentshape-member(1))
+  - [addTextBox](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtextbox-member(1))
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-items-member)
+
+
+  **PowerPoint.ShapeGroup** (1 member)
+
+  - [shape](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shape-member)
+
+
+  **PowerPoint.ShapeScopedCollection** (5 members)
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemornullobject-member(1))
+
+  - [group](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-group-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-items-member)
+
+
+  **PowerPoint.Table** (1 member)
+
+  - [getShape](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getshape-member(1))
+
+
+  **PowerPoint.TextFrame** (1 member)
+
+  - [getParentShape](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-getparentshape-member(1))
 
   #### Examples
 

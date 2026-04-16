@@ -27,7 +27,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.SmartAlertsEventCompletedOptions.sendModeOverride](/javascript/api/outlook/office.smartalertseventcompletedoptions#outlook-office-smartalertseventcompletedoptions-sendmodeoverride-member)
+
+  **Office.SmartAlertsEventCompletedOptions** (1 member)
+
+  - [sendModeOverride](/javascript/api/outlook/office.smartalertseventcompletedoptions#outlook-office-smartalertseventcompletedoptions-sendmodeoverride-member)
 
   #### Examples
 

@@ -12,11 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.mentions](/javascript/api/excel/excel.comment#excel-excel-comment-mentions-member)
 
-  - [Excel.CommentReply.mentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-mentions-member)
+  **Excel.Comment** (1 member)
 
-  - [Excel.CommentRichContent.mentions](/javascript/api/excel/excel.commentrichcontent#excel-excel-commentrichcontent-mentions-member)
+  - [mentions](/javascript/api/excel/excel.comment#excel-excel-comment-mentions-member)
+
+
+  **Excel.CommentReply** (1 member)
+
+  - [mentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-mentions-member)
+
+
+  **Excel.CommentRichContent** (1 member)
+
+  - [mentions](/javascript/api/excel/excel.commentrichcontent#excel-excel-commentrichcontent-mentions-member)
 
 isPreview: false
 isDeprecated: false

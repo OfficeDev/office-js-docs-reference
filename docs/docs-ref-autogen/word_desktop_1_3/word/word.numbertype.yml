@@ -13,11 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListFormat.convertNumbersToText](/javascript/api/word/word.listformat#word-word-listformat-convertnumberstotext-member(1))
 
-  - [Word.ListFormat.removeNumbers](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))
+  **Word.ListFormat** (2 members)
 
-  - [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)
+  - [convertNumbersToText](/javascript/api/word/word.listformat#word-word-listformat-convertnumberstotext-member(1))
+
+  - [removeNumbers](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))
+
+
+  **Word.ListFormatCountNumberedItemsOptions** (1 member)
+
+  - [numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)
 
   #### Examples
 

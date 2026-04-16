@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomProperty.load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
+
+  **PowerPoint.CustomProperty** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
 
 isPreview: false
 isDeprecated: false

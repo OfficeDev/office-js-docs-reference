@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.HyperlinkCollection.load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(1))
+
+  **PowerPoint.HyperlinkCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

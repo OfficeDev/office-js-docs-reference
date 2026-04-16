@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxis.position](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-position-member)
+
+  **Excel.ChartAxis** (1 member)
+
+  - [position](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-position-member)
 
 isPreview: false
 isDeprecated: false

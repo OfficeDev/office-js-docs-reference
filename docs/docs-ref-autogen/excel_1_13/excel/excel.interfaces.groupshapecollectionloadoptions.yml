@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.GroupShapeCollection.load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(1))
+
+  **Excel.GroupShapeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

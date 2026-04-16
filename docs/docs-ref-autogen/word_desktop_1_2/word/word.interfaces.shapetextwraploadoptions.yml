@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShapeTextWrap.load](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-load-member(1))
+
+  **Word.ShapeTextWrap** (1 member)
+
+  - [load](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Image.format](/javascript/api/excel/excel.image#excel-excel-image-format-member)
 
-  - [Excel.Shape.getAsImage](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))
+  **Excel.Image** (1 member)
+
+  - [format](/javascript/api/excel/excel.image#excel-excel-image-format-member)
+
+
+  **Excel.Shape** (1 member)
+
+  - [getAsImage](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))
 
   #### Examples
 

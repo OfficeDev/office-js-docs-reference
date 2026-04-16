@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListLevel.trailingCharacter](/javascript/api/word/word.listlevel#word-word-listlevel-trailingcharacter-member)
+
+  **Word.ListLevel** (1 member)
+
+  - [trailingCharacter](/javascript/api/word/word.listlevel#word-word-listlevel-trailingcharacter-member)
 
   #### Examples
 

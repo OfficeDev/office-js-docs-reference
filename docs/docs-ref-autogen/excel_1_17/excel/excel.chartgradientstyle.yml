@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeries.gradientStyle](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientstyle-member)
+
+  **Excel.ChartSeries** (1 member)
+
+  - [gradientStyle](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientstyle-member)
 
 isPreview: false
 isDeprecated: false

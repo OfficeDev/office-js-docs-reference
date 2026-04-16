@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.axes](/javascript/api/excel/excel.chart#excel-excel-chart-axes-member)
 
-  - [Excel.ChartAxes.load](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-load-member(1))
+  **Excel.Chart** (1 member)
 
-  - [Excel.ChartAxes.set](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-set-member(2))
+  - [axes](/javascript/api/excel/excel.chart#excel-excel-chart-axes-member)
+
+
+  **Excel.ChartAxes** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-set-member(2))
 
 isPreview: false
 isDeprecated: false

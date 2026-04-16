@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellPropertiesFormat.horizontalAlignment](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-horizontalalignment-member)
 
-  - [Excel.RangeFormat.horizontalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-horizontalalignment-member)
+  **Excel.CellPropertiesFormat** (1 member)
 
-  - [Excel.Style.horizontalAlignment](/javascript/api/excel/excel.style#excel-excel-style-horizontalalignment-member)
+  - [horizontalAlignment](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-horizontalalignment-member)
+
+
+  **Excel.RangeFormat** (1 member)
+
+  - [horizontalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-horizontalalignment-member)
+
+
+  **Excel.Style** (1 member)
+
+  - [horizontalAlignment](/javascript/api/excel/excel.style#excel-excel-style-horizontalalignment-member)
 
   #### Examples
 

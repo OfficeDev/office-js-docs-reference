@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTitle.load](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-load-member(1))
+
+  **Excel.ChartTitle** (1 member)
+
+  - [load](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-load-member(1))
 
 isPreview: false
 isDeprecated: false

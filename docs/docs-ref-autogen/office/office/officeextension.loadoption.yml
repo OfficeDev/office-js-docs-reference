@@ -37,13 +37,15 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [OfficeExtension.ClientRequestContext.load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1))
 
-  - [OfficeExtension.ClientRequestContext.loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+  **OfficeExtension.ClientRequestContext** (2 members)
+
+  - [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1))
+
+  - [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
 
   #### Examples
 

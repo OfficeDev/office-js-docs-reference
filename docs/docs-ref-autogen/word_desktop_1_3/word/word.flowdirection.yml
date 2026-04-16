@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TextColumnCollection.getFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getflowdirection-member(1))
 
-  - [Word.TextColumnCollection.setFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setflowdirection-member(1))
+  **Word.TextColumnCollection** (2 members)
+
+  - [getFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getflowdirection-member(1))
+
+  - [setFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setflowdirection-member(1))
 
 isPreview: false
 isDeprecated: false

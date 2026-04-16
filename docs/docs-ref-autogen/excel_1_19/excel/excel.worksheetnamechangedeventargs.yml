@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onNameChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onnamechanged-member)
 
-  - [Excel.WorksheetCollection.onNameChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onnamechanged-member)
+  **Excel.Worksheet** (1 member)
+
+  - [onNameChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onnamechanged-member)
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [onNameChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onnamechanged-member)
 
   #### Examples
 

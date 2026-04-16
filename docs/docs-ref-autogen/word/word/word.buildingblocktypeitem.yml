@@ -12,17 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlock.type](/javascript/api/word/word.buildingblock#word-word-buildingblock-type-member)
 
-  - [Word.BuildingBlockCategory.type](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-type-member)
+  **Word.BuildingBlock** (1 member)
 
-  - [Word.BuildingBlockTypeItem.load](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-load-member(1))
+  - [type](/javascript/api/word/word.buildingblock#word-word-buildingblock-type-member)
 
-  - [Word.BuildingBlockTypeItem.track](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-track-member(1))
 
-  - [Word.BuildingBlockTypeItem.untrack](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-untrack-member(1))
+  **Word.BuildingBlockCategory** (1 member)
 
-  - [Word.BuildingBlockTypeItemCollection.getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
+  - [type](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-type-member)
+
+
+  **Word.BuildingBlockTypeItem** (3 members)
+
+  - [load](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-load-member(1))
+
+  - [track](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-track-member(1))
+
+  - [untrack](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-untrack-member(1))
+
+
+  **Word.BuildingBlockTypeItemCollection** (1 member)
+
+  - [getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
 
 isPreview: false
 isDeprecated: false

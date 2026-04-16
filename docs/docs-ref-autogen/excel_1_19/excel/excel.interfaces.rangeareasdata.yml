@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeAreas.toJSON](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-tojson-member(1))
+
+  **Excel.RangeAreas** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

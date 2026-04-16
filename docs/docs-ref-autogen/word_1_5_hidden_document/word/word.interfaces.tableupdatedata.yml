@@ -6,11 +6,12 @@ fullName: Word.Interfaces.TableUpdateData
 summary: >-
   An interface for updating data on the `Table` object, for use in `table.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Table.set](/javascript/api/word/word.table#word-word-table-set-member(1))
+  **Word.Table** (1 member)
+  - [set](/javascript/api/word/word.table#word-word-table-set-member(1))
 
 isPreview: false
 isDeprecated: false

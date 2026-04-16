@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.SlideLayout.background](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-background-member)
 
-  - [PowerPoint.SlideLayoutBackground.load](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-load-member(1))
+  **PowerPoint.SlideLayout** (1 member)
+
+  - [background](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-background-member)
+
+
+  **PowerPoint.SlideLayoutBackground** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-load-member(1))
 
 isPreview: false
 isDeprecated: false

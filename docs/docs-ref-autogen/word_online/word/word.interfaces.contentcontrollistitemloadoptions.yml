@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControlListItem.load](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-load-member(1))
+
+  **Word.ContentControlListItem** (1 member)
+
+  - [load](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-load-member(1))
 
 isPreview: false
 isDeprecated: false

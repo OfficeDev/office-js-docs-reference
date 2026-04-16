@@ -14,13 +14,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.getDirectPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getdirectprecedents-member(1))
 
-  - [Excel.WorkbookRangeAreas.load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1))
+  **Excel.Range** (1 member)
 
-  - [Excel.WorkbookRangeAreas.track](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-track-member(1))
+  - [getDirectPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getdirectprecedents-member(1))
 
-  - [Excel.WorkbookRangeAreas.untrack](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-untrack-member(1))
+
+  **Excel.WorkbookRangeAreas** (3 members)
+
+  - [load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1))
+
+  - [track](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-track-member(1))
+
+  - [untrack](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

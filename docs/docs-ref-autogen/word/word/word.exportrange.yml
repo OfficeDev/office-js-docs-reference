@@ -12,11 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DocumentExportAsFixedFormat2Options.range](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-range-member)
 
-  - [Word.DocumentExportAsFixedFormat3Options.range](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-range-member)
+  **Word.DocumentExportAsFixedFormat2Options** (1 member)
 
-  - [Word.DocumentExportAsFixedFormatOptions.range](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-range-member)
+  - [range](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-range-member)
+
+
+  **Word.DocumentExportAsFixedFormat3Options** (1 member)
+
+  - [range](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-range-member)
+
+
+  **Word.DocumentExportAsFixedFormatOptions** (1 member)
+
+  - [range](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-range-member)
 
 isPreview: false
 isDeprecated: false

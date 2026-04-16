@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#word-word-paragraph-alignment-member)
+
+  **Word.Paragraph** (1 member)
+
+  - [alignment](/javascript/api/word/word.paragraph#word-word-paragraph-alignment-member)
 
   #### Examples
 

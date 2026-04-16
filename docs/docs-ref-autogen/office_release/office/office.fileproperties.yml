@@ -11,7 +11,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.getFilePropertiesAsync](/javascript/api/office/office.document#office-office-document-getfilepropertiesasync-member(1))
+
+  **Office.Document** (1 member)
+
+  - [getFilePropertiesAsync](/javascript/api/office/office.document#office-office-document-getfilepropertiesasync-member(1))
 
   #### Examples
 

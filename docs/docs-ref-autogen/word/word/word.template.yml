@@ -12,19 +12,28 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.attachedTemplate](/javascript/api/word/word.document#word-word-document-attachedtemplate-member)
 
-  - [Word.Template.load](/javascript/api/word/word.template#word-word-template-load-member(1))
+  **Word.Document** (1 member)
 
-  - [Word.Template.set](/javascript/api/word/word.template#word-word-template-set-member(2))
+  - [attachedTemplate](/javascript/api/word/word.document#word-word-document-attachedtemplate-member)
 
-  - [Word.Template.track](/javascript/api/word/word.template#word-word-template-track-member(1))
 
-  - [Word.Template.untrack](/javascript/api/word/word.template#word-word-template-untrack-member(1))
+  **Word.Template** (4 members)
 
-  - [Word.TemplateCollection.getItemAt](/javascript/api/word/word.templatecollection#word-word-templatecollection-getitemat-member(1))
+  - [load](/javascript/api/word/word.template#word-word-template-load-member(1))
 
-  - [Word.TemplateCollection.items](/javascript/api/word/word.templatecollection#word-word-templatecollection-items-member)
+  - [set](/javascript/api/word/word.template#word-word-template-set-member(2))
+
+  - [track](/javascript/api/word/word.template#word-word-template-track-member(1))
+
+  - [untrack](/javascript/api/word/word.template#word-word-template-untrack-member(1))
+
+
+  **Word.TemplateCollection** (2 members)
+
+  - [getItemAt](/javascript/api/word/word.templatecollection#word-word-templatecollection-getitemat-member(1))
+
+  - [items](/javascript/api/word/word.templatecollection#word-word-templatecollection-items-member)
 
 isPreview: false
 isDeprecated: false

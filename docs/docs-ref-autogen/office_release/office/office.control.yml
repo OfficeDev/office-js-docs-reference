@@ -21,9 +21,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Group.controls](/javascript/api/office/office.group#office-office-group-controls-member)
 
-  - [Office.Tab.controls](/javascript/api/office/office.tab#office-office-tab-controls-member)
+  **Office.Group** (1 member)
+
+  - [controls](/javascript/api/office/office.group#office-office-group-controls-member)
+
+
+  **Office.Tab** (1 member)
+
+  - [controls](/javascript/api/office/office.tab#office-office-tab-controls-member)
 
   #### Examples
 

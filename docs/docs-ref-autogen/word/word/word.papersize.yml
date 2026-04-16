@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.PageSetup.paperSize](/javascript/api/word/word.pagesetup#word-word-pagesetup-papersize-member)
+
+  **Word.PageSetup** (1 member)
+
+  - [paperSize](/javascript/api/word/word.pagesetup#word-word-pagesetup-papersize-member)
 
 isPreview: false
 isDeprecated: false

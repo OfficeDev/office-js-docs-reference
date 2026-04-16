@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Presentation.getSelectedShapes](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedshapes-member(1))
 
-  - [PowerPoint.ShapeGroup.shapes](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shapes-member)
+  **PowerPoint.Presentation** (1 member)
 
-  - [PowerPoint.ShapeScopedCollection.load](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-load-member(1))
+  - [getSelectedShapes](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedshapes-member(1))
+
+
+  **PowerPoint.ShapeGroup** (1 member)
+
+  - [shapes](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shapes-member)
+
+
+  **PowerPoint.ShapeScopedCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-load-member(1))
 
   #### Examples
 

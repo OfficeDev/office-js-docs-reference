@@ -17,63 +17,87 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.GeometricShape.shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
 
-  - [Excel.GroupShapeCollection.getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1))
+  **Excel.GeometricShape** (1 member)
 
-  - [Excel.GroupShapeCollection.getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1))
+  - [shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
 
-  - [Excel.GroupShapeCollection.getItemOrNullObject](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemornullobject-member(1))
 
-  - [Excel.GroupShapeCollection.items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
+  **Excel.GroupShapeCollection** (4 members)
 
-  - [Excel.Image.shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
+  - [getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1))
 
-  - [Excel.Line.beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member)
+  - [getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1))
 
-  - [Excel.Line.connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1))
+  - [getItemOrNullObject](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemornullobject-member(1))
 
-  - [Excel.Line.connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1))
+  - [items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
 
-  - [Excel.Line.endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member)
 
-  - [Excel.Line.shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
+  **Excel.Image** (1 member)
 
-  - [Excel.Shape.copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
+  - [shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
 
-  - [Excel.Shape.load](/javascript/api/excel/excel.shape#excel-excel-shape-load-member(1))
 
-  - [Excel.Shape.parentGroup](/javascript/api/excel/excel.shape#excel-excel-shape-parentgroup-member)
+  **Excel.Line** (5 members)
 
-  - [Excel.Shape.set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(2))
+  - [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member)
 
-  - [Excel.ShapeCollection.addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
+  - [connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1))
 
-  - [Excel.ShapeCollection.addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1))
+  - [connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1))
 
-  - [Excel.ShapeCollection.addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1))
+  - [endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member)
 
-  - [Excel.ShapeCollection.addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
+  - [shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
 
-  - [Excel.ShapeCollection.addLocalImageReference](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))
 
-  - [Excel.ShapeCollection.addSvg](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))
+  **Excel.Shape** (4 members)
 
-  - [Excel.ShapeCollection.addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1))
+  - [copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
 
-  - [Excel.ShapeCollection.getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1))
+  - [load](/javascript/api/excel/excel.shape#excel-excel-shape-load-member(1))
 
-  - [Excel.ShapeCollection.getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1))
+  - [parentGroup](/javascript/api/excel/excel.shape#excel-excel-shape-parentgroup-member)
 
-  - [Excel.ShapeCollection.getItemOrNullObject](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemornullobject-member(1))
+  - [set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(2))
 
-  - [Excel.ShapeCollection.items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
 
-  - [Excel.ShapeGroup.shape](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shape-member)
+  **Excel.ShapeCollection** (11 members)
 
-  - [Excel.Workbook.getActiveShape](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshape-member(1))
+  - [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
 
-  - [Excel.Workbook.getActiveShapeOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshapeornullobject-member(1))
+  - [addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1))
+
+  - [addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1))
+
+  - [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
+
+  - [addLocalImageReference](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))
+
+  - [addSvg](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))
+
+  - [addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1))
+
+  - [getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
+
+
+  **Excel.ShapeGroup** (1 member)
+
+  - [shape](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shape-member)
+
+
+  **Excel.Workbook** (2 members)
+
+  - [getActiveShape](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshape-member(1))
+
+  - [getActiveShapeOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshapeornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

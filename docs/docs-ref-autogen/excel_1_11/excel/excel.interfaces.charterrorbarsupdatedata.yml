@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartErrorBars.set](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-set-member(1))
+
+  **Excel.ChartErrorBars** (1 member)
+
+  - [set](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-set-member(1))
 
 isPreview: false
 isDeprecated: false

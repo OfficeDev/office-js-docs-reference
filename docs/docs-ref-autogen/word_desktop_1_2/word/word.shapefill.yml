@@ -15,15 +15,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Shape.fill](/javascript/api/word/word.shape#word-word-shape-fill-member)
 
-  - [Word.ShapeFill.load](/javascript/api/word/word.shapefill#word-word-shapefill-load-member(1))
+  **Word.Shape** (1 member)
 
-  - [Word.ShapeFill.set](/javascript/api/word/word.shapefill#word-word-shapefill-set-member(2))
+  - [fill](/javascript/api/word/word.shape#word-word-shape-fill-member)
 
-  - [Word.ShapeFill.track](/javascript/api/word/word.shapefill#word-word-shapefill-track-member(1))
 
-  - [Word.ShapeFill.untrack](/javascript/api/word/word.shapefill#word-word-shapefill-untrack-member(1))
+  **Word.ShapeFill** (4 members)
+
+  - [load](/javascript/api/word/word.shapefill#word-word-shapefill-load-member(1))
+
+  - [set](/javascript/api/word/word.shapefill#word-word-shapefill-set-member(2))
+
+  - [track](/javascript/api/word/word.shapefill#word-word-shapefill-track-member(1))
+
+  - [untrack](/javascript/api/word/word.shapefill#word-word-shapefill-untrack-member(1))
 
   #### Examples
 

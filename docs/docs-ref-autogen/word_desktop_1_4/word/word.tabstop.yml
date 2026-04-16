@@ -12,23 +12,29 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TabStop.load](/javascript/api/word/word.tabstop#word-word-tabstop-load-member(1))
 
-  - [Word.TabStop.next](/javascript/api/word/word.tabstop#word-word-tabstop-next-member)
+  **Word.TabStop** (5 members)
 
-  - [Word.TabStop.previous](/javascript/api/word/word.tabstop#word-word-tabstop-previous-member)
+  - [load](/javascript/api/word/word.tabstop#word-word-tabstop-load-member(1))
 
-  - [Word.TabStop.track](/javascript/api/word/word.tabstop#word-word-tabstop-track-member(1))
+  - [next](/javascript/api/word/word.tabstop#word-word-tabstop-next-member)
 
-  - [Word.TabStop.untrack](/javascript/api/word/word.tabstop#word-word-tabstop-untrack-member(1))
+  - [previous](/javascript/api/word/word.tabstop#word-word-tabstop-previous-member)
 
-  - [Word.TabStopCollection.add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))
+  - [track](/javascript/api/word/word.tabstop#word-word-tabstop-track-member(1))
 
-  - [Word.TabStopCollection.after](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1))
+  - [untrack](/javascript/api/word/word.tabstop#word-word-tabstop-untrack-member(1))
 
-  - [Word.TabStopCollection.before](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1))
 
-  - [Word.TabStopCollection.items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)
+  **Word.TabStopCollection** (4 members)
+
+  - [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))
+
+  - [after](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1))
+
+  - [before](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1))
+
+  - [items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)
 
 isPreview: false
 isDeprecated: false

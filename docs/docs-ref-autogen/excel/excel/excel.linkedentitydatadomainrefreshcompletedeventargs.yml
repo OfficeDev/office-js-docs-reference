@@ -17,7 +17,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.LinkedEntityDataDomainCollection.onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshcompleted-member)
+
+  **Excel.LinkedEntityDataDomainCollection** (1 member)
+
+  - [onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshcompleted-member)
 
 isPreview: false
 isDeprecated: false

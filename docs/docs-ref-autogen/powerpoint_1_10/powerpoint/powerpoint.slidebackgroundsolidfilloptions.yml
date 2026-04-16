@@ -13,11 +13,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.SlideBackgroundFill.setSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setsolidfill-member(1))
+
+  **PowerPoint.SlideBackgroundFill** (1 member)
+
+  - [setSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setsolidfill-member(1))
 
   #### Examples
 

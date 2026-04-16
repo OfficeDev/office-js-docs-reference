@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.FillFormat.toJSON](/javascript/api/word/word.fillformat#word-word-fillformat-tojson-member(1))
+
+  **Word.FillFormat** (1 member)
+
+  - [toJSON](/javascript/api/word/word.fillformat#word-word-fillformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

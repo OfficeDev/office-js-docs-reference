@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeFill.load](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-load-member(1))
+
+  **Excel.ShapeFill** (1 member)
+
+  - [load](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-load-member(1))
 
 isPreview: false
 isDeprecated: false

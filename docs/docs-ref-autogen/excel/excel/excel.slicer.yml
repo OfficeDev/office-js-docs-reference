@@ -12,23 +12,32 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Slicer.load](/javascript/api/excel/excel.slicer#excel-excel-slicer-load-member(1))
 
-  - [Excel.Slicer.set](/javascript/api/excel/excel.slicer#excel-excel-slicer-set-member(2))
+  **Excel.Slicer** (2 members)
 
-  - [Excel.SlicerCollection.add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
+  - [load](/javascript/api/excel/excel.slicer#excel-excel-slicer-load-member(1))
 
-  - [Excel.SlicerCollection.getItem](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitem-member(1))
+  - [set](/javascript/api/excel/excel.slicer#excel-excel-slicer-set-member(2))
 
-  - [Excel.SlicerCollection.getItemAt](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemat-member(1))
 
-  - [Excel.SlicerCollection.getItemOrNullObject](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemornullobject-member(1))
+  **Excel.SlicerCollection** (5 members)
 
-  - [Excel.SlicerCollection.items](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-items-member)
+  - [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
-  - [Excel.Workbook.getActiveSlicer](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveslicer-member(1))
+  - [getItem](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitem-member(1))
 
-  - [Excel.Workbook.getActiveSlicerOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveslicerornullobject-member(1))
+  - [getItemAt](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-items-member)
+
+
+  **Excel.Workbook** (2 members)
+
+  - [getActiveSlicer](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveslicer-member(1))
+
+  - [getActiveSlicerOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveslicerornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

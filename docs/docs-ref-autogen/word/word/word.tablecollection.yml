@@ -15,25 +15,46 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.tables](/javascript/api/word/word.body#word-word-body-tables-member)
 
-  - [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)
+  **Word.Body** (1 member)
 
-  - [Word.Document.tables](/javascript/api/word/word.document#word-word-document-tables-member)
+  - [tables](/javascript/api/word/word.body#word-word-body-tables-member)
 
-  - [Word.Range.tables](/javascript/api/word/word.range#word-word-range-tables-member)
 
-  - [Word.Selection.tables](/javascript/api/word/word.selection#word-word-selection-tables-member)
+  **Word.ContentControl** (1 member)
 
-  - [Word.Selection.topLevelTables](/javascript/api/word/word.selection#word-word-selection-topleveltables-member)
+  - [tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)
 
-  - [Word.Table.tables](/javascript/api/word/word.table#word-word-table-tables-member)
 
-  - [Word.TableCollection.load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+  **Word.Document** (1 member)
 
-  - [Word.TableCollection.track](/javascript/api/word/word.tablecollection#word-word-tablecollection-track-member(1))
+  - [tables](/javascript/api/word/word.document#word-word-document-tables-member)
 
-  - [Word.TableCollection.untrack](/javascript/api/word/word.tablecollection#word-word-tablecollection-untrack-member(1))
+
+  **Word.Range** (1 member)
+
+  - [tables](/javascript/api/word/word.range#word-word-range-tables-member)
+
+
+  **Word.Selection** (2 members)
+
+  - [tables](/javascript/api/word/word.selection#word-word-selection-tables-member)
+
+  - [topLevelTables](/javascript/api/word/word.selection#word-word-selection-topleveltables-member)
+
+
+  **Word.Table** (1 member)
+
+  - [tables](/javascript/api/word/word.table#word-word-table-tables-member)
+
+
+  **Word.TableCollection** (3 members)
+
+  - [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+
+  - [track](/javascript/api/word/word.tablecollection#word-word-tablecollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.tablecollection#word-word-tablecollection-untrack-member(1))
 
   #### Examples
 

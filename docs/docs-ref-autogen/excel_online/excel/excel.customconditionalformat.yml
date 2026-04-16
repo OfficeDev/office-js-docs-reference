@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalFormat.custom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-custom-member)
 
-  - [Excel.ConditionalFormat.customOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-customornullobject-member)
+  **Excel.ConditionalFormat** (2 members)
 
-  - [Excel.CustomConditionalFormat.load](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-load-member(1))
+  - [custom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-custom-member)
 
-  - [Excel.CustomConditionalFormat.set](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-set-member(2))
+  - [customOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-customornullobject-member)
+
+
+  **Excel.CustomConditionalFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HeadingStyle.toJSON](/javascript/api/word/word.headingstyle#word-word-headingstyle-tojson-member(1))
+
+  **Word.HeadingStyle** (1 member)
+
+  - [toJSON](/javascript/api/word/word.headingstyle#word-word-headingstyle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

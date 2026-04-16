@@ -13,25 +13,46 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.font](/javascript/api/word/word.body#word-word-body-font-member)
 
-  - [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
+  **Word.Body** (1 member)
 
-  - [Word.Font.load](/javascript/api/word/word.font#word-word-font-load-member(1))
+  - [font](/javascript/api/word/word.body#word-word-body-font-member)
 
-  - [Word.Font.set](/javascript/api/word/word.font#word-word-font-set-member(2))
 
-  - [Word.Font.track](/javascript/api/word/word.font#word-word-font-track-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.Font.untrack](/javascript/api/word/word.font#word-word-font-untrack-member(1))
+  - [font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
 
-  - [Word.Paragraph.font](/javascript/api/word/word.paragraph#word-word-paragraph-font-member)
 
-  - [Word.Range.font](/javascript/api/word/word.range#word-word-range-font-member)
+  **Word.Font** (4 members)
 
-  - [Word.Table.font](/javascript/api/word/word.table#word-word-table-font-member)
+  - [load](/javascript/api/word/word.font#word-word-font-load-member(1))
 
-  - [Word.TableRow.font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
+  - [set](/javascript/api/word/word.font#word-word-font-set-member(2))
+
+  - [track](/javascript/api/word/word.font#word-word-font-track-member(1))
+
+  - [untrack](/javascript/api/word/word.font#word-word-font-untrack-member(1))
+
+
+  **Word.Paragraph** (1 member)
+
+  - [font](/javascript/api/word/word.paragraph#word-word-paragraph-font-member)
+
+
+  **Word.Range** (1 member)
+
+  - [font](/javascript/api/word/word.range#word-word-range-font-member)
+
+
+  **Word.Table** (1 member)
+
+  - [font](/javascript/api/word/word.table#word-word-table-font-member)
+
+
+  **Word.TableRow** (1 member)
+
+  - [font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
 
   #### Examples
 

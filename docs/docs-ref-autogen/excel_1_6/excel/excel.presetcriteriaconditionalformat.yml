@@ -14,13 +14,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalFormat.preset](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-preset-member)
 
-  - [Excel.ConditionalFormat.presetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-presetornullobject-member)
+  **Excel.ConditionalFormat** (2 members)
 
-  - [Excel.PresetCriteriaConditionalFormat.load](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-load-member(1))
+  - [preset](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-preset-member)
 
-  - [Excel.PresetCriteriaConditionalFormat.set](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-set-member(2))
+  - [presetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-presetornullobject-member)
+
+
+  **Excel.PresetCriteriaConditionalFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

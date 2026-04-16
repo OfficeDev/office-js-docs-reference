@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.WebSettings.toJSON](/javascript/api/word/word.websettings#word-word-websettings-tojson-member(1))
+
+  **Word.WebSettings** (1 member)
+
+  - [toJSON](/javascript/api/word/word.websettings#word-word-websettings-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

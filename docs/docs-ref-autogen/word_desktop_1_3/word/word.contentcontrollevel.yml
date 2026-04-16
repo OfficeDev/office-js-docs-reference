@@ -12,15 +12,30 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlockGalleryContentControl.level](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-level-member)
 
-  - [Word.DatePickerContentControl.level](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-level-member)
+  **Word.BuildingBlockGalleryContentControl** (1 member)
 
-  - [Word.GroupContentControl.level](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-level-member)
+  - [level](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-level-member)
 
-  - [Word.PictureContentControl.level](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-level-member)
 
-  - [Word.RepeatingSectionContentControl.level](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-level-member)
+  **Word.DatePickerContentControl** (1 member)
+
+  - [level](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-level-member)
+
+
+  **Word.GroupContentControl** (1 member)
+
+  - [level](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-level-member)
+
+
+  **Word.PictureContentControl** (1 member)
+
+  - [level](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-level-member)
+
+
+  **Word.RepeatingSectionContentControl** (1 member)
+
+  - [level](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-level-member)
 
 isPreview: false
 isDeprecated: false

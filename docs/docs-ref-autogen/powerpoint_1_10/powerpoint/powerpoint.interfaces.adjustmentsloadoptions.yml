@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Adjustments.load](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-load-member(1))
+
+  **PowerPoint.Adjustments** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-load-member(1))
 
 isPreview: false
 isDeprecated: false

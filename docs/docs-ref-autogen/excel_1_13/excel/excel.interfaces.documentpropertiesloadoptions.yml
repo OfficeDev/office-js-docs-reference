@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DocumentProperties.load](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-load-member(1))
+
+  **Excel.DocumentProperties** (1 member)
+
+  - [load](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-load-member(1))
 
 isPreview: false
 isDeprecated: false

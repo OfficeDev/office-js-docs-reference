@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Paragraph.insertAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))
+
+  **Word.Paragraph** (1 member)
+
+  - [insertAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))
 
   #### Examples
 

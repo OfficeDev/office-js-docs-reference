@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotLayout.load](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-load-member(1))
 
-  - [Excel.PivotLayout.set](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-set-member(2))
+  **Excel.PivotLayout** (2 members)
 
-  - [Excel.PivotTable.layout](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-layout-member)
+  - [load](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-load-member(1))
+
+  - [set](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-set-member(2))
+
+
+  **Excel.PivotTable** (1 member)
+
+  - [layout](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-layout-member)
 
 isPreview: false
 isDeprecated: false

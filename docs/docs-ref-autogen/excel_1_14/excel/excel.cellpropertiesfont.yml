@@ -16,7 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellPropertiesFormat.font](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-font-member)
+
+  **Excel.CellPropertiesFormat** (1 member)
+
+  - [font](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-font-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,25 +12,37 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Paragraph.parentTableCell](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecell-member)
 
-  - [OneNote.Paragraph.parentTableCellOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecellornull-member)
+  **OneNote.Paragraph** (2 members)
 
-  - [OneNote.Table.getCell](/javascript/api/onenote/onenote.table#onenote-onenote-table-getcell-member(1))
+  - [parentTableCell](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecell-member)
 
-  - [OneNote.TableCell.load](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-load-member(1))
+  - [parentTableCellOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecellornull-member)
 
-  - [OneNote.TableCell.set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(2))
 
-  - [OneNote.TableCell.track](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-track-member(1))
+  **OneNote.Table** (1 member)
 
-  - [OneNote.TableCell.untrack](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-untrack-member(1))
+  - [getCell](/javascript/api/onenote/onenote.table#onenote-onenote-table-getcell-member(1))
 
-  - [OneNote.TableCellCollection.getItem](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitem-member(1))
 
-  - [OneNote.TableCellCollection.getItemAt](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitemat-member(1))
+  **OneNote.TableCell** (4 members)
 
-  - [OneNote.TableCellCollection.items](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-items-member)
+  - [load](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-load-member(1))
+
+  - [set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(2))
+
+  - [track](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-track-member(1))
+
+  - [untrack](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-untrack-member(1))
+
+
+  **OneNote.TableCellCollection** (3 members)
+
+  - [getItem](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitemat-member(1))
+
+  - [items](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-items-member)
 
 isPreview: false
 isDeprecated: false

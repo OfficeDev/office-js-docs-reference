@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Revision.load](/javascript/api/word/word.revision#word-word-revision-load-member(1))
 
-  - [Word.Revision.set](/javascript/api/word/word.revision#word-word-revision-set-member(2))
+  **Word.Revision** (4 members)
 
-  - [Word.Revision.track](/javascript/api/word/word.revision#word-word-revision-track-member(1))
+  - [load](/javascript/api/word/word.revision#word-word-revision-load-member(1))
 
-  - [Word.Revision.untrack](/javascript/api/word/word.revision#word-word-revision-untrack-member(1))
+  - [set](/javascript/api/word/word.revision#word-word-revision-set-member(2))
 
-  - [Word.RevisionCollection.items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)
+  - [track](/javascript/api/word/word.revision#word-word-revision-track-member(1))
+
+  - [untrack](/javascript/api/word/word.revision#word-word-revision-untrack-member(1))
+
+
+  **Word.RevisionCollection** (1 member)
+
+  - [items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

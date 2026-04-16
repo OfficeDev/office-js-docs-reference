@@ -4,11 +4,12 @@ uid: word!Word.Interfaces.BreakData:interface
 package: word!
 fullName: Word.Interfaces.BreakData
 summary: An interface describing the data returned by calling `break.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Break.toJSON](/javascript/api/word/word.break#word-word-break-tojson-member(1))
+  **Word.Break** (1 member)
+  - [toJSON](/javascript/api/word/word.break#word-word-break-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

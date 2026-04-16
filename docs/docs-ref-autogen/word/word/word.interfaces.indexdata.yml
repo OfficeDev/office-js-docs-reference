@@ -4,11 +4,12 @@ uid: word!Word.Interfaces.IndexData:interface
 package: word!
 fullName: Word.Interfaces.IndexData
 summary: An interface describing the data returned by calling `index.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Index.toJSON](/javascript/api/word/word.index#word-word-index-tojson-member(1))
+  **Word.Index** (1 member)
+  - [toJSON](/javascript/api/word/word.index#word-word-index-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Application.checkSpelling](/javascript/api/excel/excel.application#excel-excel-application-checkspelling-member(1))
 
-  - [Excel.Range.checkSpelling](/javascript/api/excel/excel.range#excel-excel-range-checkspelling-member(1))
+  **Excel.Application** (1 member)
 
-  - [Excel.Worksheet.checkSpelling](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-checkspelling-member(1))
+  - [checkSpelling](/javascript/api/excel/excel.application#excel-excel-application-checkspelling-member(1))
+
+
+  **Excel.Range** (1 member)
+
+  - [checkSpelling](/javascript/api/excel/excel.range#excel-excel-range-checkspelling-member(1))
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [checkSpelling](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-checkspelling-member(1))
 
 isPreview: false
 isDeprecated: false

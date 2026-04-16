@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.replies](/javascript/api/excel/excel.comment#excel-excel-comment-replies-member)
 
-  - [Excel.CommentReplyCollection.load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(1))
+  **Excel.Comment** (1 member)
+
+  - [replies](/javascript/api/excel/excel.comment#excel-excel-comment-replies-member)
+
+
+  **Excel.CommentReplyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

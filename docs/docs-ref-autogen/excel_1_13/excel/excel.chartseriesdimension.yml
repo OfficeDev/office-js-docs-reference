@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.ChartSeries.getDimensionValues](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensionvalues-member(1))
+
+  **Excel.ChartSeries** (1 member)
+
+  - [getDimensionValues](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensionvalues-member(1))
 
   #### Examples
 

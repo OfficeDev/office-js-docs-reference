@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartFormatString.toJSON](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-tojson-member(1))
+
+  **Excel.ChartFormatString** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

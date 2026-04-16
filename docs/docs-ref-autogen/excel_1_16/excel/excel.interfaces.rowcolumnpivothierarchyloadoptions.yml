@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RowColumnPivotHierarchy.load](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-load-member(1))
+
+  **Excel.RowColumnPivotHierarchy** (1 member)
+
+  - [load](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-load-member(1))
 
 isPreview: false
 isDeprecated: false

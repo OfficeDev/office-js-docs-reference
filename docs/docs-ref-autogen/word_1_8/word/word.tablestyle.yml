@@ -13,15 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Style.tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)
 
-  - [Word.TableStyle.load](/javascript/api/word/word.tablestyle#word-word-tablestyle-load-member(1))
+  **Word.Style** (1 member)
 
-  - [Word.TableStyle.set](/javascript/api/word/word.tablestyle#word-word-tablestyle-set-member(2))
+  - [tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)
 
-  - [Word.TableStyle.track](/javascript/api/word/word.tablestyle#word-word-tablestyle-track-member(1))
 
-  - [Word.TableStyle.untrack](/javascript/api/word/word.tablestyle#word-word-tablestyle-untrack-member(1))
+  **Word.TableStyle** (4 members)
+
+  - [load](/javascript/api/word/word.tablestyle#word-word-tablestyle-load-member(1))
+
+  - [set](/javascript/api/word/word.tablestyle#word-word-tablestyle-set-member(2))
+
+  - [track](/javascript/api/word/word.tablestyle#word-word-tablestyle-track-member(1))
+
+  - [untrack](/javascript/api/word/word.tablestyle#word-word-tablestyle-untrack-member(1))
 
   #### Examples
 

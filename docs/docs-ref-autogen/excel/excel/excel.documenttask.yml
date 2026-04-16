@@ -12,27 +12,39 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
 
-  - [Excel.Comment.getTask](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))
+  **Excel.Comment** (3 members)
 
-  - [Excel.Comment.getTaskOrNullObject](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))
+  - [assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
 
-  - [Excel.CommentReply.assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
+  - [getTask](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))
 
-  - [Excel.CommentReply.getTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))
+  - [getTaskOrNullObject](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))
 
-  - [Excel.CommentReply.getTaskOrNullObject](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))
 
-  - [Excel.DocumentTask.load](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-load-member(1))
+  **Excel.CommentReply** (3 members)
 
-  - [Excel.DocumentTaskCollection.getItem](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1))
+  - [assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
 
-  - [Excel.DocumentTaskCollection.getItemAt](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1))
+  - [getTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))
 
-  - [Excel.DocumentTaskCollection.getItemOrNullObject](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemornullobject-member(1))
+  - [getTaskOrNullObject](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))
 
-  - [Excel.DocumentTaskCollection.items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)
+
+  **Excel.DocumentTask** (1 member)
+
+  - [load](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-load-member(1))
+
+
+  **Excel.DocumentTaskCollection** (4 members)
+
+  - [getItem](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)
 
 isPreview: true
 isDeprecated: false

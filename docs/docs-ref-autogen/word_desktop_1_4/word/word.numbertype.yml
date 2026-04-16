@@ -13,15 +13,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.convertNumbersToText](/javascript/api/word/word.document#word-word-document-convertnumberstotext-member(1))
 
-  - [Word.Document.removeNumbers](/javascript/api/word/word.document#word-word-document-removenumbers-member(1))
+  **Word.Document** (2 members)
 
-  - [Word.ListFormat.convertNumbersToText](/javascript/api/word/word.listformat#word-word-listformat-convertnumberstotext-member(1))
+  - [convertNumbersToText](/javascript/api/word/word.document#word-word-document-convertnumberstotext-member(1))
 
-  - [Word.ListFormat.removeNumbers](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))
+  - [removeNumbers](/javascript/api/word/word.document#word-word-document-removenumbers-member(1))
 
-  - [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)
+
+  **Word.ListFormat** (2 members)
+
+  - [convertNumbersToText](/javascript/api/word/word.listformat#word-word-listformat-convertnumberstotext-member(1))
+
+  - [removeNumbers](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))
+
+
+  **Word.ListFormatCountNumberedItemsOptions** (1 member)
+
+  - [numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)
 
   #### Examples
 

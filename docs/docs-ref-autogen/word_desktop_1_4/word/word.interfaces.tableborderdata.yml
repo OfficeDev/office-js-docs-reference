@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableBorder.toJSON](/javascript/api/word/word.tableborder#word-word-tableborder-tojson-member(1))
+
+  **Word.TableBorder** (1 member)
+
+  - [toJSON](/javascript/api/word/word.tableborder#word-word-tableborder-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,25 +14,40 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.FloatingInk.pageContent](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-pagecontent-member)
 
-  - [OneNote.Image.pageContent](/javascript/api/onenote/onenote.image#onenote-onenote-image-pagecontent-member)
+  **OneNote.FloatingInk** (1 member)
 
-  - [OneNote.Outline.pageContent](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-pagecontent-member)
+  - [pageContent](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-pagecontent-member)
 
-  - [OneNote.PageContent.load](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-load-member(1))
 
-  - [OneNote.PageContent.set](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-set-member(2))
+  **OneNote.Image** (1 member)
 
-  - [OneNote.PageContent.track](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-track-member(1))
+  - [pageContent](/javascript/api/onenote/onenote.image#onenote-onenote-image-pagecontent-member)
 
-  - [OneNote.PageContent.untrack](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-untrack-member(1))
 
-  - [OneNote.PageContentCollection.getItem](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitem-member(1))
+  **OneNote.Outline** (1 member)
 
-  - [OneNote.PageContentCollection.getItemAt](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitemat-member(1))
+  - [pageContent](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-pagecontent-member)
 
-  - [OneNote.PageContentCollection.items](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-items-member)
+
+  **OneNote.PageContent** (4 members)
+
+  - [load](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-load-member(1))
+
+  - [set](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-set-member(2))
+
+  - [track](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-track-member(1))
+
+  - [untrack](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-untrack-member(1))
+
+
+  **OneNote.PageContentCollection** (3 members)
+
+  - [getItem](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitemat-member(1))
+
+  - [items](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeLineFormat.toJSON](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-tojson-member(1))
+
+  **Excel.ShapeLineFormat** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

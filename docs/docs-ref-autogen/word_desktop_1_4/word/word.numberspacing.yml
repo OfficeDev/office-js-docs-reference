@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.numberSpacing](/javascript/api/word/word.font#word-word-font-numberspacing-member)
+
+  **Word.Font** (1 member)
+
+  - [numberSpacing](/javascript/api/word/word.font#word-word-font-numberspacing-member)
 
 isPreview: false
 isDeprecated: false

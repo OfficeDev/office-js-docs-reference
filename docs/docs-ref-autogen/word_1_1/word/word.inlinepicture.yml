@@ -13,17 +13,26 @@ remarks: >-
   #### Used by
 
 
-  - [Word.InlinePicture.load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1))
 
-  - [Word.InlinePicture.set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(2))
+  **Word.InlinePicture** (4 members)
 
-  - [Word.InlinePicture.track](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-track-member(1))
+  - [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1))
 
-  - [Word.InlinePicture.untrack](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-untrack-member(1))
+  - [set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(2))
 
-  - [Word.InlinePictureCollection.items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
+  - [track](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-track-member(1))
 
-  - [Word.Paragraph.insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
+  - [untrack](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-untrack-member(1))
+
+
+  **Word.InlinePictureCollection** (1 member)
+
+  - [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
+
+
+  **Word.Paragraph** (1 member)
+
+  - [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
 
   #### Examples
 

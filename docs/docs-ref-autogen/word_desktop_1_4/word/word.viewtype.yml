@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.type](/javascript/api/word/word.view#word-word-view-type-member)
+
+  **Word.View** (1 member)
+
+  - [type](/javascript/api/word/word.view#word-word-view-type-member)
 
 isPreview: false
 isDeprecated: false

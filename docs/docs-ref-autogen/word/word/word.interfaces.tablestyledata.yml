@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableStyle.toJSON](/javascript/api/word/word.tablestyle#word-word-tablestyle-tojson-member(1))
+
+  **Word.TableStyle** (1 member)
+
+  - [toJSON](/javascript/api/word/word.tablestyle#word-word-tablestyle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

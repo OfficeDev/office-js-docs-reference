@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartLegendEntryCollection.toJSON](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-tojson-member(1))
+
+  **Excel.ChartLegendEntryCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

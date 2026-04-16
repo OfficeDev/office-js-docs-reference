@@ -14,9 +14,12 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotField.applyFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-applyfilter-member(1))
 
-  - [Excel.PivotField.getFilters](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-getfilters-member(1))
+  **Excel.PivotField** (2 members)
+
+  - [applyFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-applyfilter-member(1))
+
+  - [getFilters](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-getfilters-member(1))
 
 isPreview: false
 isDeprecated: false

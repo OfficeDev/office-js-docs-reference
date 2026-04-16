@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.RangeSort.apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
+
+  **Excel.RangeSort** (1 member)
+
+  - [apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
 
   #### Examples
 

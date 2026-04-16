@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeFormat.set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(1))
+
+  **Excel.RangeFormat** (1 member)
+
+  - [set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,11 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.visibility](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-visibility-member)
 
-  - [Excel.WorksheetVisibilityChangedEventArgs.visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilityafter-member)
+  **Excel.Worksheet** (1 member)
 
-  - [Excel.WorksheetVisibilityChangedEventArgs.visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilitybefore-member)
+  - [visibility](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-visibility-member)
+
+
+  **Excel.WorksheetVisibilityChangedEventArgs** (2 members)
+
+  - [visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilityafter-member)
+
+  - [visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilitybefore-member)
 
   #### Examples
 

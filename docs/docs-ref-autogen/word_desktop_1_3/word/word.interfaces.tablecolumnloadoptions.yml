@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableColumn.load](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-load-member(1))
+
+  **Word.TableColumn** (1 member)
+
+  - [load](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-load-member(1))
 
 isPreview: false
 isDeprecated: false

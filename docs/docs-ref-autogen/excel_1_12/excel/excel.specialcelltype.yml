@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.getSpecialCells](/javascript/api/excel/excel.range#excel-excel-range-getspecialcells-member(1))
 
-  - [Excel.Range.getSpecialCellsOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-getspecialcellsornullobject-member(1))
+  **Excel.Range** (2 members)
 
-  - [Excel.RangeAreas.getSpecialCells](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getspecialcells-member(1))
+  - [getSpecialCells](/javascript/api/excel/excel.range#excel-excel-range-getspecialcells-member(1))
 
-  - [Excel.RangeAreas.getSpecialCellsOrNullObject](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getspecialcellsornullobject-member(1))
+  - [getSpecialCellsOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-getspecialcellsornullobject-member(1))
+
+
+  **Excel.RangeAreas** (2 members)
+
+  - [getSpecialCells](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getspecialcells-member(1))
+
+  - [getSpecialCellsOrNullObject](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getspecialcellsornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReflectionFormat.set](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-set-member(1))
+
+  **Word.ReflectionFormat** (1 member)
+
+  - [set](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

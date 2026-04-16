@@ -12,23 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
 
-  - [Excel.CommentReply.assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
+  **Excel.Comment** (1 member)
 
-  - [Excel.DocumentTask.assign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))
+  - [assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
 
-  - [Excel.DocumentTask.assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)
 
-  - [Excel.DocumentTask.completedBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-completedby-member)
+  **Excel.CommentReply** (1 member)
 
-  - [Excel.DocumentTask.createdBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-createdby-member)
+  - [assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
 
-  - [Excel.DocumentTask.unassign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassign-member(1))
 
-  - [Excel.DocumentTaskChange.assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member)
+  **Excel.DocumentTask** (5 members)
 
-  - [Excel.DocumentTaskChange.changedBy](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-changedby-member)
+  - [assign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))
+
+  - [assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)
+
+  - [completedBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-completedby-member)
+
+  - [createdBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-createdby-member)
+
+  - [unassign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassign-member(1))
+
+
+  **Excel.DocumentTaskChange** (2 members)
+
+  - [assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member)
+
+  - [changedBy](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-changedby-member)
 
 isPreview: true
 isDeprecated: false

@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalDataBarNegativeFormat.load](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-load-member(1))
 
-  - [Excel.ConditionalDataBarNegativeFormat.set](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-set-member(2))
+  **Excel.ConditionalDataBarNegativeFormat** (2 members)
 
-  - [Excel.DataBarConditionalFormat.negativeFormat](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-negativeformat-member)
+  - [load](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-set-member(2))
+
+
+  **Excel.DataBarConditionalFormat** (1 member)
+
+  - [negativeFormat](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-negativeformat-member)
 
 isPreview: false
 isDeprecated: false

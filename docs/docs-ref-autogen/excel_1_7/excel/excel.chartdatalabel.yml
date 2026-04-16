@@ -13,11 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabel.load](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-load-member(1))
 
-  - [Excel.ChartDataLabel.set](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-set-member(2))
+  **Excel.ChartDataLabel** (2 members)
 
-  - [Excel.ChartPoint.dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)
+  - [load](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-set-member(2))
+
+
+  **Excel.ChartPoint** (1 member)
+
+  - [dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)
 
   #### Examples
 

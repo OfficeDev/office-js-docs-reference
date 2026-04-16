@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ColorFormat.toJSON](/javascript/api/word/word.colorformat#word-word-colorformat-tojson-member(1))
+
+  **Word.ColorFormat** (1 member)
+
+  - [toJSON](/javascript/api/word/word.colorformat#word-word-colorformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

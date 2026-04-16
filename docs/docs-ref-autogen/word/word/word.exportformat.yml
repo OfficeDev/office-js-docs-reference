@@ -10,15 +10,17 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Document.exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))
 
-  - [Word.Document.exportAsFixedFormat2](/javascript/api/word/word.document#word-word-document-exportasfixedformat2-member(1))
+  **Word.Document** (3 members)
 
-  - [Word.Document.exportAsFixedFormat3](/javascript/api/word/word.document#word-word-document-exportasfixedformat3-member(1))
+  - [exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))
+
+  - [exportAsFixedFormat2](/javascript/api/word/word.document#word-word-document-exportasfixedformat2-member(1))
+
+  - [exportAsFixedFormat3](/javascript/api/word/word.document#word-word-document-exportasfixedformat3-member(1))
 
   #### Examples
 

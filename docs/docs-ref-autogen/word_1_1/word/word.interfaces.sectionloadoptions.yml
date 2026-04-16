@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Section.load](/javascript/api/word/word.section#word-word-section-load-member(1))
+
+  **Word.Section** (1 member)
+
+  - [load](/javascript/api/word/word.section#word-word-section-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Query.load](/javascript/api/excel/excel.query#excel-excel-query-load-member(1))
+
+  **Excel.Query** (1 member)
+
+  - [load](/javascript/api/excel/excel.query#excel-excel-query-load-member(1))
 
 isPreview: false
 isDeprecated: false

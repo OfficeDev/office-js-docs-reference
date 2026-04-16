@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeBorder.load](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-load-member(1))
+
+  **Excel.RangeBorder** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-load-member(1))
 
 isPreview: false
 isDeprecated: false

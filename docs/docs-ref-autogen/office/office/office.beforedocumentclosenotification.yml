@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Addin.beforeDocumentCloseNotification](/javascript/api/office/office.addin#office-office-addin-beforedocumentclosenotification-member)
+
+  **Office.Addin** (1 member)
+
+  - [beforeDocumentCloseNotification](/javascript/api/office/office.addin#office-office-addin-beforedocumentclosenotification-member)
 
   #### Examples
 

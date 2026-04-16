@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Coauthoring.toJSON](/javascript/api/word/word.coauthoring#word-word-coauthoring-tojson-member(1))
+
+  **Word.Coauthoring** (1 member)
+
+  - [toJSON](/javascript/api/word/word.coauthoring#word-word-coauthoring-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

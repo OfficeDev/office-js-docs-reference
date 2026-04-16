@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.TableCellProperties.borders](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-borders-member)
+
+  **PowerPoint.TableCellProperties** (1 member)
+
+  - [borders](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-borders-member)
 
   #### Examples
 

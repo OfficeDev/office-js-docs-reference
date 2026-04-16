@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.onSelectionChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onselectionchanged-member)
+
+  **Word.ContentControl** (1 member)
+
+  - [onSelectionChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onselectionchanged-member)
 
   #### Examples
 

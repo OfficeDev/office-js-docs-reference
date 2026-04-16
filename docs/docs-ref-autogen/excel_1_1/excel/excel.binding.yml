@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Binding.load](/javascript/api/excel/excel.binding#excel-excel-binding-load-member(1))
 
-  - [Excel.BindingCollection.getItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitem-member(1))
+  **Excel.Binding** (1 member)
 
-  - [Excel.BindingCollection.getItemAt](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemat-member(1))
+  - [load](/javascript/api/excel/excel.binding#excel-excel-binding-load-member(1))
 
-  - [Excel.BindingCollection.items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
+
+  **Excel.BindingCollection** (3 members)
+
+  - [getItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemat-member(1))
+
+  - [items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
 
 isPreview: false
 isDeprecated: false

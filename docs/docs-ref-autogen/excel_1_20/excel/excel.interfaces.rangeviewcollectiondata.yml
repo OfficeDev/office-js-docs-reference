@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeViewCollection.toJSON](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-tojson-member(1))
+
+  **Excel.RangeViewCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -19,7 +19,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.ContextMenuUpdaterData.controls](/javascript/api/office/office.contextmenuupdaterdata#office-office-contextmenuupdaterdata-controls-member)
+
+  **Office.ContextMenuUpdaterData** (1 member)
+
+  - [controls](/javascript/api/office/office.contextmenuupdaterdata#office-office-contextmenuupdaterdata-controls-member)
 
   #### Examples
 

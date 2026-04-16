@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Index.type](/javascript/api/word/word.index#word-word-index-type-member)
 
-  - [Word.IndexAddOptions.type](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-type-member)
+  **Word.Index** (1 member)
+
+  - [type](/javascript/api/word/word.index#word-word-index-type-member)
+
+
+  **Word.IndexAddOptions** (1 member)
+
+  - [type](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-type-member)
 
 isPreview: false
 isDeprecated: false

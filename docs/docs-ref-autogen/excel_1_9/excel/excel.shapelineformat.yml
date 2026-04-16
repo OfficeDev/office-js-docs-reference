@@ -14,11 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Shape.lineFormat](/javascript/api/excel/excel.shape#excel-excel-shape-lineformat-member)
 
-  - [Excel.ShapeLineFormat.load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1))
+  **Excel.Shape** (1 member)
 
-  - [Excel.ShapeLineFormat.set](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-set-member(2))
+  - [lineFormat](/javascript/api/excel/excel.shape#excel-excel-shape-lineformat-member)
+
+
+  **Excel.ShapeLineFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CardLayoutStandardProperties.sections](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-sections-member)
+
+  **Excel.CardLayoutStandardProperties** (1 member)
+
+  - [sections](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-sections-member)
 
 
 

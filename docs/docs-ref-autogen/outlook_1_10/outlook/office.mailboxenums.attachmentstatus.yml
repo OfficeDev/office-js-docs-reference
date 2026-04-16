@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AttachmentsChangedEventArgs.attachmentStatus](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentstatus-member)
+
+  **Office.AttachmentsChangedEventArgs** (1 member)
+
+  - [attachmentStatus](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentstatus-member)
 
   #### Examples
 

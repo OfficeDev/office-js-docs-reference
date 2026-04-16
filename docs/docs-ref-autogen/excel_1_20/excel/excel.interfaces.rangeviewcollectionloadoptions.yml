@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeViewCollection.load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
+
+  **Excel.RangeViewCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

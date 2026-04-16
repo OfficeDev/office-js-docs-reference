@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member)
+
+  **Word.Document** (1 member)
+
+  - [onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member)
 
   #### Examples
 

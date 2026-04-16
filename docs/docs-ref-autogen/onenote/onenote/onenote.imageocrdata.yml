@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Image.ocrData](/javascript/api/onenote/onenote.image#onenote-onenote-image-ocrdata-member)
+
+  **OneNote.Image** (1 member)
+
+  - [ocrData](/javascript/api/onenote/onenote.image#onenote-onenote-image-ocrdata-member)
 
 isPreview: false
 isDeprecated: false

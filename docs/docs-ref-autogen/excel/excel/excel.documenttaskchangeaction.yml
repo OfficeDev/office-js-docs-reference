@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DocumentTaskChange.type](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-type-member)
+
+  **Excel.DocumentTaskChange** (1 member)
+
+  - [type](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-type-member)
 
 isPreview: true
 isDeprecated: false

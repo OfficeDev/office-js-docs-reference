@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Adjustments.load](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-load-member(1))
 
-  - [PowerPoint.Shape.adjustments](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-adjustments-member)
+  **PowerPoint.Adjustments** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-load-member(1))
+
+
+  **PowerPoint.Shape** (1 member)
+
+  - [adjustments](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-adjustments-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartLegend.format](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-format-member)
 
-  - [Excel.ChartLegendFormat.load](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-load-member(1))
+  **Excel.ChartLegend** (1 member)
 
-  - [Excel.ChartLegendFormat.set](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-set-member(2))
+  - [format](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-format-member)
+
+
+  **Excel.ChartLegendFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

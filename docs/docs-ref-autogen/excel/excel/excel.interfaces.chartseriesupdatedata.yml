@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeries.set](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-set-member(1))
+
+  **Excel.ChartSeries** (1 member)
+
+  - [set](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-set-member(1))
 
 isPreview: false
 isDeprecated: false

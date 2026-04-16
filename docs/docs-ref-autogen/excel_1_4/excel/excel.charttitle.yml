@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.title](/javascript/api/excel/excel.chart#excel-excel-chart-title-member)
 
-  - [Excel.ChartTitle.load](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-load-member(1))
+  **Excel.Chart** (1 member)
 
-  - [Excel.ChartTitle.set](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-set-member(2))
+  - [title](/javascript/api/excel/excel.chart#excel-excel-chart-title-member)
+
+
+  **Excel.ChartTitle** (2 members)
+
+  - [load](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-load-member(1))
+
+  - [set](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.InkAnalysisParagraph.toJSON](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-tojson-member(1))
+
+  **OneNote.InkAnalysisParagraph** (1 member)
+
+  - [toJSON](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

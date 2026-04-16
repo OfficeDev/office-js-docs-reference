@@ -15,19 +15,28 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
 
-  - [Word.Document.sections](/javascript/api/word/word.document#word-word-document-sections-member)
+  **Word.Document** (2 members)
 
-  - [Word.DocumentCreated.insertFileFromBase64](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
 
-  - [Word.DocumentCreated.sections](/javascript/api/word/word.documentcreated#word-word-documentcreated-sections-member)
+  - [sections](/javascript/api/word/word.document#word-word-document-sections-member)
 
-  - [Word.SectionCollection.load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
 
-  - [Word.SectionCollection.track](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-track-member(1))
+  **Word.DocumentCreated** (2 members)
 
-  - [Word.SectionCollection.untrack](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-untrack-member(1))
+  - [insertFileFromBase64](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))
+
+  - [sections](/javascript/api/word/word.documentcreated#word-word-documentcreated-sections-member)
+
+
+  **Word.SectionCollection** (3 members)
+
+  - [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+
+  - [track](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-untrack-member(1))
 
   #### Examples
 

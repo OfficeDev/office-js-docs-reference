@@ -4,11 +4,12 @@ uid: word!Word.Interfaces.ViewData:interface
 package: word!
 fullName: Word.Interfaces.ViewData
 summary: An interface describing the data returned by calling `view.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.View.toJSON](/javascript/api/word/word.view#word-word-view-tojson-member(1))
+  **Word.View** (1 member)
+  - [toJSON](/javascript/api/word/word.view#word-word-view-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,47 +13,68 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.parentTableCell](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecell-member)
 
-  - [Word.ContentControl.parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecellornullobject-member)
+  **Word.ContentControl** (2 members)
 
-  - [Word.InlinePicture.parentTableCell](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecell-member)
+  - [parentTableCell](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecell-member)
 
-  - [Word.InlinePicture.parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecellornullobject-member)
+  - [parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttablecellornullobject-member)
 
-  - [Word.Paragraph.parentTableCell](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecell-member)
 
-  - [Word.Paragraph.parentTableCellOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecellornullobject-member)
+  **Word.InlinePicture** (2 members)
 
-  - [Word.Range.parentTableCell](/javascript/api/word/word.range#word-word-range-parenttablecell-member)
+  - [parentTableCell](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecell-member)
 
-  - [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#word-word-range-parenttablecellornullobject-member)
+  - [parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecellornullobject-member)
 
-  - [Word.Table.getCell](/javascript/api/word/word.table#word-word-table-getcell-member(1))
 
-  - [Word.Table.getCellOrNullObject](/javascript/api/word/word.table#word-word-table-getcellornullobject-member(1))
+  **Word.Paragraph** (2 members)
 
-  - [Word.Table.parentTableCell](/javascript/api/word/word.table#word-word-table-parenttablecell-member)
+  - [parentTableCell](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecell-member)
 
-  - [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#word-word-table-parenttablecellornullobject-member)
+  - [parentTableCellOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttablecellornullobject-member)
 
-  - [Word.TableCell.getNext](/javascript/api/word/word.tablecell#word-word-tablecell-getnext-member(1))
 
-  - [Word.TableCell.getNextOrNullObject](/javascript/api/word/word.tablecell#word-word-tablecell-getnextornullobject-member(1))
+  **Word.Range** (2 members)
 
-  - [Word.TableCell.load](/javascript/api/word/word.tablecell#word-word-tablecell-load-member(1))
+  - [parentTableCell](/javascript/api/word/word.range#word-word-range-parenttablecell-member)
 
-  - [Word.TableCell.set](/javascript/api/word/word.tablecell#word-word-tablecell-set-member(2))
+  - [parentTableCellOrNullObject](/javascript/api/word/word.range#word-word-range-parenttablecellornullobject-member)
 
-  - [Word.TableCell.track](/javascript/api/word/word.tablecell#word-word-tablecell-track-member(1))
 
-  - [Word.TableCell.untrack](/javascript/api/word/word.tablecell#word-word-tablecell-untrack-member(1))
+  **Word.Table** (4 members)
 
-  - [Word.TableCellCollection.getFirst](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirst-member(1))
+  - [getCell](/javascript/api/word/word.table#word-word-table-getcell-member(1))
 
-  - [Word.TableCellCollection.getFirstOrNullObject](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirstornullobject-member(1))
+  - [getCellOrNullObject](/javascript/api/word/word.table#word-word-table-getcellornullobject-member(1))
 
-  - [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-items-member)
+  - [parentTableCell](/javascript/api/word/word.table#word-word-table-parenttablecell-member)
+
+  - [parentTableCellOrNullObject](/javascript/api/word/word.table#word-word-table-parenttablecellornullobject-member)
+
+
+  **Word.TableCell** (6 members)
+
+  - [getNext](/javascript/api/word/word.tablecell#word-word-tablecell-getnext-member(1))
+
+  - [getNextOrNullObject](/javascript/api/word/word.tablecell#word-word-tablecell-getnextornullobject-member(1))
+
+  - [load](/javascript/api/word/word.tablecell#word-word-tablecell-load-member(1))
+
+  - [set](/javascript/api/word/word.tablecell#word-word-tablecell-set-member(2))
+
+  - [track](/javascript/api/word/word.tablecell#word-word-tablecell-track-member(1))
+
+  - [untrack](/javascript/api/word/word.tablecell#word-word-tablecell-untrack-member(1))
+
+
+  **Word.TableCellCollection** (3 members)
+
+  - [getFirst](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirst-member(1))
+
+  - [getFirstOrNullObject](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirstornullobject-member(1))
+
+  - [items](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-items-member)
 
   #### Examples
 

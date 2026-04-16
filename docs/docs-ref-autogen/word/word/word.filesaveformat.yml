@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.saveFormat](/javascript/api/word/word.document#word-word-document-saveformat-member)
+
+  **Word.Document** (1 member)
+
+  - [saveFormat](/javascript/api/word/word.document#word-word-document-saveformat-member)
 
 isPreview: false
 isDeprecated: false

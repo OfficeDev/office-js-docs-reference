@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeCollection.toJSON](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-tojson-member(1))
+
+  **Excel.ShapeCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

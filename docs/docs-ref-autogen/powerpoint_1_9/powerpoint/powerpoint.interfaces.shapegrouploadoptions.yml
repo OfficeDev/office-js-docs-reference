@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ShapeGroup.load](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-load-member(1))
+
+  **PowerPoint.ShapeGroup** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-load-member(1))
 
 isPreview: false
 isDeprecated: false

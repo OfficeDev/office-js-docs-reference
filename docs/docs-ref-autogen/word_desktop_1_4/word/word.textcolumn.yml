@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TextColumn.load](/javascript/api/word/word.textcolumn#word-word-textcolumn-load-member(1))
 
-  - [Word.TextColumn.set](/javascript/api/word/word.textcolumn#word-word-textcolumn-set-member(2))
+  **Word.TextColumn** (4 members)
 
-  - [Word.TextColumn.track](/javascript/api/word/word.textcolumn#word-word-textcolumn-track-member(1))
+  - [load](/javascript/api/word/word.textcolumn#word-word-textcolumn-load-member(1))
 
-  - [Word.TextColumn.untrack](/javascript/api/word/word.textcolumn#word-word-textcolumn-untrack-member(1))
+  - [set](/javascript/api/word/word.textcolumn#word-word-textcolumn-set-member(2))
 
-  - [Word.TextColumnCollection.add](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-add-member(1))
+  - [track](/javascript/api/word/word.textcolumn#word-word-textcolumn-track-member(1))
 
-  - [Word.TextColumnCollection.items](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-items-member)
+  - [untrack](/javascript/api/word/word.textcolumn#word-word-textcolumn-untrack-member(1))
+
+
+  **Word.TextColumnCollection** (2 members)
+
+  - [add](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-add-member(1))
+
+  - [items](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -19,15 +19,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.selection](/javascript/api/word/word.document#word-word-document-selection-member)
 
-  - [Word.Pane.selection](/javascript/api/word/word.pane#word-word-pane-selection-member)
+  **Word.Document** (1 member)
 
-  - [Word.Selection.load](/javascript/api/word/word.selection#word-word-selection-load-member(1))
+  - [selection](/javascript/api/word/word.document#word-word-document-selection-member)
 
-  - [Word.Selection.track](/javascript/api/word/word.selection#word-word-selection-track-member(1))
 
-  - [Word.Selection.untrack](/javascript/api/word/word.selection#word-word-selection-untrack-member(1))
+  **Word.Pane** (1 member)
+
+  - [selection](/javascript/api/word/word.pane#word-word-pane-selection-member)
+
+
+  **Word.Selection** (3 members)
+
+  - [load](/javascript/api/word/word.selection#word-word-selection-load-member(1))
+
+  - [track](/javascript/api/word/word.selection#word-word-selection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.selection#word-word-selection-untrack-member(1))
 
   #### Examples
 

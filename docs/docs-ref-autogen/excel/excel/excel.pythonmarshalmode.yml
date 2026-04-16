@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.togglePythonMarshalMode](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))
+
+  **Excel.Range** (1 member)
+
+  - [togglePythonMarshalMode](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))
 
 isPreview: true
 isDeprecated: false

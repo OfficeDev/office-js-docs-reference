@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ShapeCollection.load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
+
+  **PowerPoint.ShapeCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -4,11 +4,12 @@ uid: word!Word.Interfaces.StyleData:interface
 package: word!
 fullName: Word.Interfaces.StyleData
 summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Style.toJSON](/javascript/api/word/word.style#word-word-style-tojson-member(1))
+  **Word.Style** (1 member)
+  - [toJSON](/javascript/api/word/word.style#word-word-style-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

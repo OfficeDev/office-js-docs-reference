@@ -12,13 +12,15 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.Shape.scaleHeight](/javascript/api/excel/excel.shape#excel-excel-shape-scaleheight-member(1))
 
-  - [Excel.Shape.scaleWidth](/javascript/api/excel/excel.shape#excel-excel-shape-scalewidth-member(1))
+  **Excel.Shape** (2 members)
+
+  - [scaleHeight](/javascript/api/excel/excel.shape#excel-excel-shape-scaleheight-member(1))
+
+  - [scaleWidth](/javascript/api/excel/excel.shape#excel-excel-shape-scalewidth-member(1))
 
   #### Examples
 

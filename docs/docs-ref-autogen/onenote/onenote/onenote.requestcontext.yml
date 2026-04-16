@@ -11,77 +11,185 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Application.context](/javascript/api/onenote/onenote.application#onenote-onenote-application-context-member)
 
-  - [OneNote.FloatingInk.context](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-context-member)
+  **OneNote.Application** (1 member)
 
-  - [OneNote.Image.context](/javascript/api/onenote/onenote.image#onenote-onenote-image-context-member)
+  - [context](/javascript/api/onenote/onenote.application#onenote-onenote-application-context-member)
 
-  - [OneNote.InkAnalysis.context](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-context-member)
 
-  - [OneNote.InkAnalysisLine.context](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-context-member)
+  **OneNote.FloatingInk** (1 member)
 
-  - [OneNote.InkAnalysisLineCollection.context](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-context-member)
+  - [context](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-context-member)
 
-  - [OneNote.InkAnalysisParagraph.context](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-context-member)
 
-  - [OneNote.InkAnalysisParagraphCollection.context](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-context-member)
+  **OneNote.Image** (1 member)
 
-  - [OneNote.InkAnalysisWord.context](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-context-member)
+  - [context](/javascript/api/onenote/onenote.image#onenote-onenote-image-context-member)
 
-  - [OneNote.InkAnalysisWordCollection.context](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-context-member)
 
-  - [OneNote.InkStroke.context](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-context-member)
+  **OneNote.InkAnalysis** (1 member)
 
-  - [OneNote.InkStrokeCollection.context](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-context-member)
 
-  - [OneNote.InkWord.context](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-context-member)
 
-  - [OneNote.InkWordCollection.context](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-context-member)
+  **OneNote.InkAnalysisLine** (1 member)
 
-  - [OneNote.Notebook.context](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-context-member)
 
-  - [OneNote.NotebookCollection.context](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-context-member)
 
-  - [OneNote.NoteTag.context](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-context-member)
+  **OneNote.InkAnalysisLineCollection** (1 member)
 
-  - [OneNote.Outline.context](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-context-member)
 
-  - [OneNote.Page.context](/javascript/api/onenote/onenote.page#onenote-onenote-page-context-member)
 
-  - [OneNote.PageCollection.context](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-context-member)
+  **OneNote.InkAnalysisParagraph** (1 member)
 
-  - [OneNote.PageContent.context](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-context-member)
 
-  - [OneNote.PageContentCollection.context](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-context-member)
 
-  - [OneNote.Paragraph.context](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-context-member)
+  **OneNote.InkAnalysisParagraphCollection** (1 member)
 
-  - [OneNote.ParagraphCollection.context](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-context-member)
 
-  - [OneNote.Point.context](/javascript/api/onenote/onenote.point#onenote-onenote-point-context-member)
 
-  - [OneNote.PointCollection.context](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-context-member)
+  **OneNote.InkAnalysisWord** (1 member)
 
-  - [OneNote.RichText.context](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-context-member)
 
-  - [OneNote.Section.context](/javascript/api/onenote/onenote.section#onenote-onenote-section-context-member)
 
-  - [OneNote.SectionCollection.context](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-context-member)
+  **OneNote.InkAnalysisWordCollection** (1 member)
 
-  - [OneNote.SectionGroup.context](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-context-member)
+  - [context](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-context-member)
 
-  - [OneNote.SectionGroupCollection.context](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-context-member)
 
-  - [OneNote.Table.context](/javascript/api/onenote/onenote.table#onenote-onenote-table-context-member)
+  **OneNote.InkStroke** (1 member)
 
-  - [OneNote.TableCell.context](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-context-member)
+  - [context](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-context-member)
 
-  - [OneNote.TableCellCollection.context](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-context-member)
 
-  - [OneNote.TableRow.context](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-context-member)
+  **OneNote.InkStrokeCollection** (1 member)
 
-  - [OneNote.TableRowCollection.context](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-context-member)
+  - [context](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-context-member)
+
+
+  **OneNote.InkWord** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-context-member)
+
+
+  **OneNote.InkWordCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-context-member)
+
+
+  **OneNote.NoteTag** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-context-member)
+
+
+  **OneNote.Notebook** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-context-member)
+
+
+  **OneNote.NotebookCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-context-member)
+
+
+  **OneNote.Outline** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-context-member)
+
+
+  **OneNote.Page** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.page#onenote-onenote-page-context-member)
+
+
+  **OneNote.PageCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-context-member)
+
+
+  **OneNote.PageContent** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-context-member)
+
+
+  **OneNote.PageContentCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-context-member)
+
+
+  **OneNote.Paragraph** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-context-member)
+
+
+  **OneNote.ParagraphCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-context-member)
+
+
+  **OneNote.Point** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.point#onenote-onenote-point-context-member)
+
+
+  **OneNote.PointCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-context-member)
+
+
+  **OneNote.RichText** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-context-member)
+
+
+  **OneNote.Section** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.section#onenote-onenote-section-context-member)
+
+
+  **OneNote.SectionCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-context-member)
+
+
+  **OneNote.SectionGroup** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-context-member)
+
+
+  **OneNote.SectionGroupCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-context-member)
+
+
+  **OneNote.Table** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.table#onenote-onenote-table-context-member)
+
+
+  **OneNote.TableCell** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-context-member)
+
+
+  **OneNote.TableCellCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-context-member)
+
+
+  **OneNote.TableRow** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-context-member)
+
+
+  **OneNote.TableRowCollection** (1 member)
+
+  - [context](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-context-member)
 
   #### Examples
 

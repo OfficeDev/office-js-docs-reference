@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.mode](/javascript/api/office/office.document#office-office-document-mode-member)
+
+  **Office.Document** (1 member)
+
+  - [mode](/javascript/api/office/office.document#office-office-document-mode-member)
 
   #### Examples
 

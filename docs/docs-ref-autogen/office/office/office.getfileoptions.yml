@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.getFileAsync](/javascript/api/office/office.document#office-office-document-getfileasync-member(1))
+
+  **Office.Document** (1 member)
+
+  - [getFileAsync](/javascript/api/office/office.document#office-office-document-getfileasync-member(1))
 
 isPreview: false
 isDeprecated: false

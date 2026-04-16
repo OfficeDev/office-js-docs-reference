@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlNode.insertNodeBefore](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-insertnodebefore-member(1))
+
+  **Word.CustomXmlNode** (1 member)
+
+  - [insertNodeBefore](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-insertnodebefore-member(1))
 
 isPreview: false
 isDeprecated: false

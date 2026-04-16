@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.Range.delete](/javascript/api/excel/excel.range#excel-excel-range-delete-member(1))
+
+  **Excel.Range** (1 member)
+
+  - [delete](/javascript/api/excel/excel.range#excel-excel-range-delete-member(1))
 
   #### Examples
 

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.DocumentView.toJSON](/javascript/api/visio/visio.documentview#visio-visio-documentview-tojson-member(1))
+
+  **Visio.DocumentView** (1 member)
+
+  - [toJSON](/javascript/api/visio/visio.documentview#visio-visio-documentview-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

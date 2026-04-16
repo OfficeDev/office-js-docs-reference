@@ -16,23 +16,32 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1))
 
-  - [Excel.Chart.set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(2))
+  **Excel.Chart** (2 members)
 
-  - [Excel.ChartCollection.add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+  - [load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1))
 
-  - [Excel.ChartCollection.getItem](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitem-member(1))
+  - [set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(2))
 
-  - [Excel.ChartCollection.getItemAt](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemat-member(1))
 
-  - [Excel.ChartCollection.getItemOrNullObject](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemornullobject-member(1))
+  **Excel.ChartCollection** (5 members)
 
-  - [Excel.ChartCollection.items](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-items-member)
+  - [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
 
-  - [Excel.Workbook.getActiveChart](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactivechart-member(1))
+  - [getItem](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitem-member(1))
 
-  - [Excel.Workbook.getActiveChartOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactivechartornullobject-member(1))
+  - [getItemAt](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-items-member)
+
+
+  **Excel.Workbook** (2 members)
+
+  - [getActiveChart](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactivechart-member(1))
+
+  - [getActiveChartOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactivechartornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

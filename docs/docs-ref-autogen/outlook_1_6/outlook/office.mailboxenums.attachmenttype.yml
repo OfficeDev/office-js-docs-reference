@@ -18,11 +18,20 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AttachmentDetails.attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
 
-  - [Office.MessageFormAttachment.type](/javascript/api/outlook/office.messageformattachment#outlook-office-messageformattachment-type-member)
+  **Office.AttachmentDetails** (1 member)
 
-  - [Office.ReplyFormAttachment.type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
+  - [attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
+
+
+  **Office.MessageFormAttachment** (1 member)
+
+  - [type](/javascript/api/outlook/office.messageformattachment#outlook-office-messageformattachment-type-member)
+
+
+  **Office.ReplyFormAttachment** (1 member)
+
+  - [type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
 
   #### Examples
 

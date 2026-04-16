@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.series](/javascript/api/excel/excel.chart#excel-excel-chart-series-member)
 
-  - [Excel.ChartSeriesCollection.load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
+  **Excel.Chart** (1 member)
+
+  - [series](/javascript/api/excel/excel.chart#excel-excel-chart-series-member)
+
+
+  **Excel.ChartSeriesCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

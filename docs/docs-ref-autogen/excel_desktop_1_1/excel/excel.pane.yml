@@ -12,13 +12,22 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Pane.load](/javascript/api/excel/excel.pane#excel-excel-pane-load-member(1))
 
-  - [Excel.PaneCollection.getItemAt](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1))
+  **Excel.Pane** (1 member)
 
-  - [Excel.PaneCollection.items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)
+  - [load](/javascript/api/excel/excel.pane#excel-excel-pane-load-member(1))
 
-  - [Excel.Window.activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)
+
+  **Excel.PaneCollection** (2 members)
+
+  - [getItemAt](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1))
+
+  - [items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)
+
+
+  **Excel.Window** (1 member)
+
+  - [activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)
 
 isPreview: false
 isDeprecated: false

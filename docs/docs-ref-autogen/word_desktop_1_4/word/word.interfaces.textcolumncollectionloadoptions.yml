@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TextColumnCollection.load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1))
+
+  **Word.TextColumnCollection** (1 member)
+
+  - [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

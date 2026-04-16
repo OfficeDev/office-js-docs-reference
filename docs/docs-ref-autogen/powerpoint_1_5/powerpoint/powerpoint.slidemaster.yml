@@ -13,21 +13,33 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Shape.getParentSlideMaster](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidemaster-member(1))
 
-  - [PowerPoint.Shape.getParentSlideMasterOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidemasterornullobject-member(1))
+  **PowerPoint.Shape** (2 members)
 
-  - [PowerPoint.Slide.slideMaster](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-slidemaster-member)
+  - [getParentSlideMaster](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidemaster-member(1))
 
-  - [PowerPoint.SlideMaster.load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
+  - [getParentSlideMasterOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidemasterornullobject-member(1))
 
-  - [PowerPoint.SlideMasterCollection.getItem](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitem-member(1))
 
-  - [PowerPoint.SlideMasterCollection.getItemAt](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitemat-member(1))
+  **PowerPoint.Slide** (1 member)
 
-  - [PowerPoint.SlideMasterCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitemornullobject-member(1))
+  - [slideMaster](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-slidemaster-member)
 
-  - [PowerPoint.SlideMasterCollection.items](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-items-member)
+
+  **PowerPoint.SlideMaster** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
+
+
+  **PowerPoint.SlideMasterCollection** (4 members)
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-items-member)
 
   #### Examples
 

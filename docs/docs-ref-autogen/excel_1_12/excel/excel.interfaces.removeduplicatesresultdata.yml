@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RemoveDuplicatesResult.toJSON](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-tojson-member(1))
+
+  **Excel.RemoveDuplicatesResult** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

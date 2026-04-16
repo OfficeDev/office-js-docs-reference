@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.checkInWithVersion](/javascript/api/word/word.document#word-word-document-checkinwithversion-member(1))
+
+  **Word.Document** (1 member)
+
+  - [checkInWithVersion](/javascript/api/word/word.document#word-word-document-checkinwithversion-member(1))
 
 isPreview: true
 isDeprecated: false

@@ -17,15 +17,30 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)
 
-  - [Word.ContentControl.styleBuiltIn](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-stylebuiltin-member)
+  **Word.Body** (1 member)
 
-  - [Word.Paragraph.styleBuiltIn](/javascript/api/word/word.paragraph#word-word-paragraph-stylebuiltin-member)
+  - [styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)
 
-  - [Word.Range.styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)
 
-  - [Word.Table.styleBuiltIn](/javascript/api/word/word.table#word-word-table-stylebuiltin-member)
+  **Word.ContentControl** (1 member)
+
+  - [styleBuiltIn](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-stylebuiltin-member)
+
+
+  **Word.Paragraph** (1 member)
+
+  - [styleBuiltIn](/javascript/api/word/word.paragraph#word-word-paragraph-stylebuiltin-member)
+
+
+  **Word.Range** (1 member)
+
+  - [styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)
+
+
+  **Word.Table** (1 member)
+
+  - [styleBuiltIn](/javascript/api/word/word.table#word-word-table-stylebuiltin-member)
 
   #### Examples
 

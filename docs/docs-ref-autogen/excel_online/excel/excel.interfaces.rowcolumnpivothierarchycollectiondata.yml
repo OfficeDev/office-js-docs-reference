@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RowColumnPivotHierarchyCollection.toJSON](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-tojson-member(1))
+
+  **Excel.RowColumnPivotHierarchyCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

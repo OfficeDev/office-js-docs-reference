@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxes.categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member)
 
-  - [Excel.ChartAxes.seriesAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-seriesaxis-member)
+  **Excel.ChartAxes** (3 members)
 
-  - [Excel.ChartAxes.valueAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-valueaxis-member)
+  - [categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member)
 
-  - [Excel.ChartAxis.load](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-load-member(1))
+  - [seriesAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-seriesaxis-member)
 
-  - [Excel.ChartAxis.set](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-set-member(2))
+  - [valueAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-valueaxis-member)
+
+
+  **Excel.ChartAxis** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-set-member(2))
 
 isPreview: false
 isDeprecated: false

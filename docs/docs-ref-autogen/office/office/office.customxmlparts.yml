@@ -11,7 +11,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.customXmlParts](/javascript/api/office/office.document#office-office-document-customxmlparts-member)
+
+  **Office.Document** (1 member)
+
+  - [customXmlParts](/javascript/api/office/office.document#office-office-document-customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

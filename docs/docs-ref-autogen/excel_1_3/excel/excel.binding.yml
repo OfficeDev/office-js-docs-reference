@@ -12,23 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Binding.load](/javascript/api/excel/excel.binding#excel-excel-binding-load-member(1))
 
-  - [Excel.BindingCollection.add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1))
+  **Excel.Binding** (1 member)
 
-  - [Excel.BindingCollection.addFromNamedItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromnameditem-member(1))
+  - [load](/javascript/api/excel/excel.binding#excel-excel-binding-load-member(1))
 
-  - [Excel.BindingCollection.addFromSelection](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromselection-member(1))
 
-  - [Excel.BindingCollection.getItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitem-member(1))
+  **Excel.BindingCollection** (6 members)
 
-  - [Excel.BindingCollection.getItemAt](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemat-member(1))
+  - [add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1))
 
-  - [Excel.BindingCollection.items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
+  - [addFromNamedItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromnameditem-member(1))
 
-  - [Excel.BindingDataChangedEventArgs.binding](/javascript/api/excel/excel.bindingdatachangedeventargs#excel-excel-bindingdatachangedeventargs-binding-member)
+  - [addFromSelection](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromselection-member(1))
 
-  - [Excel.BindingSelectionChangedEventArgs.binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-binding-member)
+  - [getItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemat-member(1))
+
+  - [items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
+
+
+  **Excel.BindingDataChangedEventArgs** (1 member)
+
+  - [binding](/javascript/api/excel/excel.bindingdatachangedeventargs#excel-excel-bindingdatachangedeventargs-binding-member)
+
+
+  **Excel.BindingSelectionChangedEventArgs** (1 member)
+
+  - [binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-binding-member)
 
 isPreview: false
 isDeprecated: false

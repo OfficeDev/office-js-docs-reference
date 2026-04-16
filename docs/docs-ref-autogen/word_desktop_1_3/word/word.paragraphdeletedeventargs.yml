@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.onParagraphDeleted](/javascript/api/word/word.document#word-word-document-onparagraphdeleted-member)
+
+  **Word.Document** (1 member)
+
+  - [onParagraphDeleted](/javascript/api/word/word.document#word-word-document-onparagraphdeleted-member)
 
   #### Examples
 

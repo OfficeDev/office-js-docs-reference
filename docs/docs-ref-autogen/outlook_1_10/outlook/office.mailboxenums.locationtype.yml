@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.LocationIdentifier.type](/javascript/api/outlook/office.locationidentifier#outlook-office-locationidentifier-type-member)
+
+  **Office.LocationIdentifier** (1 member)
+
+  - [type](/javascript/api/outlook/office.locationidentifier#outlook-office-locationidentifier-type-member)
 
   #### Examples
 

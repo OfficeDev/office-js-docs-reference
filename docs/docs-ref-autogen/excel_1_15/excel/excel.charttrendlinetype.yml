@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTrendline.type](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-type-member)
 
-  - [Excel.ChartTrendlineCollection.add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1))
+  **Excel.ChartTrendline** (1 member)
+
+  - [type](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-type-member)
+
+
+  **Excel.ChartTrendlineCollection** (1 member)
+
+  - [add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

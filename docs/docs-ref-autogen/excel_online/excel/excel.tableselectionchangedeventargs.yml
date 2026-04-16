@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Table.onSelectionChanged](/javascript/api/excel/excel.table#excel-excel-table-onselectionchanged-member)
+
+  **Excel.Table** (1 member)
+
+  - [onSelectionChanged](/javascript/api/excel/excel.table#excel-excel-table-onselectionchanged-member)
 
 isPreview: false
 isDeprecated: false

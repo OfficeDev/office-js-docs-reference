@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.PlaceholderFormat.load](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-load-member(1))
 
-  - [PowerPoint.Shape.placeholderFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-placeholderformat-member)
+  **PowerPoint.PlaceholderFormat** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-load-member(1))
+
+
+  **PowerPoint.Shape** (1 member)
+
+  - [placeholderFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-placeholderformat-member)
 
   #### Examples
 

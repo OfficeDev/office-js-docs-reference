@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.FloatingInk.load](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-load-member(1))
+
+  **OneNote.FloatingInk** (1 member)
+
+  - [load](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Frame.load](/javascript/api/word/word.frame#word-word-frame-load-member(1))
+
+  **Word.Frame** (1 member)
+
+  - [load](/javascript/api/word/word.frame#word-word-frame-load-member(1))
 
 isPreview: false
 isDeprecated: false

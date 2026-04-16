@@ -12,11 +12,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Selection.getNextRange](/javascript/api/word/word.selection#word-word-selection-getnextrange-member(1))
+
+  **Word.Selection** (1 member)
+
+  - [getNextRange](/javascript/api/word/word.selection#word-word-selection-getnextrange-member(1))
 
   #### Examples
 

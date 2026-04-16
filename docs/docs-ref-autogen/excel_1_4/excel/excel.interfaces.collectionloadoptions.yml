@@ -8,31 +8,70 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BindingCollection.load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
 
-  - [Excel.ChartCollection.load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
+  **Excel.BindingCollection** (1 member)
 
-  - [Excel.ChartPointsCollection.load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
+  - [load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
 
-  - [Excel.ChartSeriesCollection.load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
 
-  - [Excel.NamedItemCollection.load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+  **Excel.ChartCollection** (1 member)
 
-  - [Excel.PivotTableCollection.load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
 
-  - [Excel.RangeBorderCollection.load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
 
-  - [Excel.RangeViewCollection.load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
+  **Excel.ChartPointsCollection** (1 member)
 
-  - [Excel.SettingCollection.load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
 
-  - [Excel.TableCollection.load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
 
-  - [Excel.TableColumnCollection.load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+  **Excel.ChartSeriesCollection** (1 member)
 
-  - [Excel.TableRowCollection.load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
 
-  - [Excel.WorksheetCollection.load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
+
+  **Excel.NamedItemCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+
+
+  **Excel.PivotTableCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
+
+
+  **Excel.RangeBorderCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
+
+
+  **Excel.RangeViewCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
+
+
+  **Excel.SettingCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+
+
+  **Excel.TableCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
+
+
+  **Excel.TableColumnCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+
+
+  **Excel.TableRowCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

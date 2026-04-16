@@ -8,7 +8,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.bindings](/javascript/api/office/office.document#office-office-document-bindings-member)
+
+  **Office.Document** (1 member)
+
+  - [bindings](/javascript/api/office/office.document#office-office-document-bindings-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BorderCollection.load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(1))
+
+  **Word.BorderCollection** (1 member)
+
+  - [load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

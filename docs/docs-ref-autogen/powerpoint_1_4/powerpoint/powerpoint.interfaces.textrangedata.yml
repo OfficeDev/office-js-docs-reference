@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.TextRange.toJSON](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-tojson-member(1))
+
+  **PowerPoint.TextRange** (1 member)
+
+  - [toJSON](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

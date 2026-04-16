@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ColorScaleConditionalFormat.load](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-load-member(1))
 
-  - [Excel.ColorScaleConditionalFormat.set](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-set-member(2))
+  **Excel.ColorScaleConditionalFormat** (2 members)
 
-  - [Excel.ConditionalFormat.colorScale](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscale-member)
+  - [load](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-load-member(1))
 
-  - [Excel.ConditionalFormat.colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscaleornullobject-member)
+  - [set](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-set-member(2))
+
+
+  **Excel.ConditionalFormat** (2 members)
+
+  - [colorScale](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscale-member)
+
+  - [colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscaleornullobject-member)
 
 isPreview: false
 isDeprecated: false

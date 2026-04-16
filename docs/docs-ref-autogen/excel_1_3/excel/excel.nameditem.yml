@@ -17,13 +17,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItem.load](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-load-member(1))
 
-  - [Excel.NamedItem.set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(2))
+  **Excel.NamedItem** (2 members)
 
-  - [Excel.NamedItemCollection.getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1))
+  - [load](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-load-member(1))
 
-  - [Excel.NamedItemCollection.items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
+  - [set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(2))
+
+
+  **Excel.NamedItemCollection** (2 members)
+
+  - [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1))
+
+  - [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
 
   #### Examples
 

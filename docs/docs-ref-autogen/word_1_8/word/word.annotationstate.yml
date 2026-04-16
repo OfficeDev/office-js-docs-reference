@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Annotation.state](/javascript/api/word/word.annotation#word-word-annotation-state-member)
+
+  **Word.Annotation** (1 member)
+
+  - [state](/javascript/api/word/word.annotation#word-word-annotation-state-member)
 
   #### Examples
 

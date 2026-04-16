@@ -15,15 +15,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Canvas.load](/javascript/api/word/word.canvas#word-word-canvas-load-member(1))
 
-  - [Word.Canvas.set](/javascript/api/word/word.canvas#word-word-canvas-set-member(2))
+  **Word.Canvas** (4 members)
 
-  - [Word.Canvas.track](/javascript/api/word/word.canvas#word-word-canvas-track-member(1))
+  - [load](/javascript/api/word/word.canvas#word-word-canvas-load-member(1))
 
-  - [Word.Canvas.untrack](/javascript/api/word/word.canvas#word-word-canvas-untrack-member(1))
+  - [set](/javascript/api/word/word.canvas#word-word-canvas-set-member(2))
 
-  - [Word.Shape.canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)
+  - [track](/javascript/api/word/word.canvas#word-word-canvas-track-member(1))
+
+  - [untrack](/javascript/api/word/word.canvas#word-word-canvas-untrack-member(1))
+
+
+  **Word.Shape** (1 member)
+
+  - [canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)
 
   #### Examples
 

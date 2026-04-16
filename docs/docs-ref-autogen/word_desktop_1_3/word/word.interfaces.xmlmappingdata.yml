@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.XmlMapping.toJSON](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-tojson-member(1))
+
+  **Word.XmlMapping** (1 member)
+
+  - [toJSON](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,11 +6,12 @@ fullName: Excel.Interfaces.WindowUpdateData
 summary: >-
   An interface for updating data on the `Window` object, for use in
   `window.set({ ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Excel.Window.set](/javascript/api/excel/excel.window#excel-excel-window-set-member(1))
+  **Excel.Window** (1 member)
+  - [set](/javascript/api/excel/excel.window#excel-excel-window-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,17 +15,29 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
 
-  - [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
+  **Word.Body** (1 member)
 
-  - [Word.ParagraphCollection.load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+  - [paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
 
-  - [Word.ParagraphCollection.track](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-track-member(1))
 
-  - [Word.ParagraphCollection.untrack](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-untrack-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.Range.paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
+  - [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
+
+
+  **Word.ParagraphCollection** (3 members)
+
+  - [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+
+  - [track](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-untrack-member(1))
+
+
+  **Word.Range** (1 member)
+
+  - [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
 
   #### Examples
 

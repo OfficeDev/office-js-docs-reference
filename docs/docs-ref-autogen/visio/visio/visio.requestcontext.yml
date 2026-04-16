@@ -15,37 +15,85 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Application.context](/javascript/api/visio/visio.application#visio-visio-application-context-member)
 
-  - [Visio.Comment.context](/javascript/api/visio/visio.comment#visio-visio-comment-context-member)
+  **Visio.Application** (1 member)
 
-  - [Visio.CommentCollection.context](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-context-member)
+  - [context](/javascript/api/visio/visio.application#visio-visio-application-context-member)
 
-  - [Visio.Document.context](/javascript/api/visio/visio.document#visio-visio-document-context-member)
 
-  - [Visio.DocumentView.context](/javascript/api/visio/visio.documentview#visio-visio-documentview-context-member)
+  **Visio.Comment** (1 member)
 
-  - [Visio.Hyperlink.context](/javascript/api/visio/visio.hyperlink#visio-visio-hyperlink-context-member)
+  - [context](/javascript/api/visio/visio.comment#visio-visio-comment-context-member)
 
-  - [Visio.HyperlinkCollection.context](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-context-member)
 
-  - [Visio.Page.context](/javascript/api/visio/visio.page#visio-visio-page-context-member)
+  **Visio.CommentCollection** (1 member)
 
-  - [Visio.PageCollection.context](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-context-member)
+  - [context](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-context-member)
 
-  - [Visio.PageView.context](/javascript/api/visio/visio.pageview#visio-visio-pageview-context-member)
 
-  - [Visio.Selection.context](/javascript/api/visio/visio.selection#visio-visio-selection-context-member)
+  **Visio.Document** (1 member)
 
-  - [Visio.Shape.context](/javascript/api/visio/visio.shape#visio-visio-shape-context-member)
+  - [context](/javascript/api/visio/visio.document#visio-visio-document-context-member)
 
-  - [Visio.ShapeCollection.context](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-context-member)
 
-  - [Visio.ShapeDataItem.context](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-context-member)
+  **Visio.DocumentView** (1 member)
 
-  - [Visio.ShapeDataItemCollection.context](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-context-member)
+  - [context](/javascript/api/visio/visio.documentview#visio-visio-documentview-context-member)
 
-  - [Visio.ShapeView.context](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-context-member)
+
+  **Visio.Hyperlink** (1 member)
+
+  - [context](/javascript/api/visio/visio.hyperlink#visio-visio-hyperlink-context-member)
+
+
+  **Visio.HyperlinkCollection** (1 member)
+
+  - [context](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-context-member)
+
+
+  **Visio.Page** (1 member)
+
+  - [context](/javascript/api/visio/visio.page#visio-visio-page-context-member)
+
+
+  **Visio.PageCollection** (1 member)
+
+  - [context](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-context-member)
+
+
+  **Visio.PageView** (1 member)
+
+  - [context](/javascript/api/visio/visio.pageview#visio-visio-pageview-context-member)
+
+
+  **Visio.Selection** (1 member)
+
+  - [context](/javascript/api/visio/visio.selection#visio-visio-selection-context-member)
+
+
+  **Visio.Shape** (1 member)
+
+  - [context](/javascript/api/visio/visio.shape#visio-visio-shape-context-member)
+
+
+  **Visio.ShapeCollection** (1 member)
+
+  - [context](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-context-member)
+
+
+  **Visio.ShapeDataItem** (1 member)
+
+  - [context](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-context-member)
+
+
+  **Visio.ShapeDataItemCollection** (1 member)
+
+  - [context](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-context-member)
+
+
+  **Visio.ShapeView** (1 member)
+
+  - [context](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-context-member)
 
   #### Examples
 

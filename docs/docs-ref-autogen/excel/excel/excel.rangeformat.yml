@@ -14,13 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.format](/javascript/api/excel/excel.range#excel-excel-range-format-member)
 
-  - [Excel.RangeAreas.format](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-format-member)
+  **Excel.Range** (1 member)
 
-  - [Excel.RangeFormat.load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1))
+  - [format](/javascript/api/excel/excel.range#excel-excel-range-format-member)
 
-  - [Excel.RangeFormat.set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(2))
+
+  **Excel.RangeAreas** (1 member)
+
+  - [format](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-format-member)
+
+
+  **Excel.RangeFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -14,19 +14,37 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellValueConditionalFormat.format](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-format-member)
 
-  - [Excel.ConditionalRangeFormat.load](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-load-member(1))
+  **Excel.CellValueConditionalFormat** (1 member)
 
-  - [Excel.ConditionalRangeFormat.set](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-set-member(2))
+  - [format](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-format-member)
 
-  - [Excel.CustomConditionalFormat.format](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-format-member)
 
-  - [Excel.PresetCriteriaConditionalFormat.format](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-format-member)
+  **Excel.ConditionalRangeFormat** (2 members)
 
-  - [Excel.TextConditionalFormat.format](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-format-member)
+  - [load](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-load-member(1))
 
-  - [Excel.TopBottomConditionalFormat.format](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-format-member)
+  - [set](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-set-member(2))
+
+
+  **Excel.CustomConditionalFormat** (1 member)
+
+  - [format](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-format-member)
+
+
+  **Excel.PresetCriteriaConditionalFormat** (1 member)
+
+  - [format](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-format-member)
+
+
+  **Excel.TextConditionalFormat** (1 member)
+
+  - [format](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-format-member)
+
+
+  **Excel.TopBottomConditionalFormat** (1 member)
+
+  - [format](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-format-member)
 
 isPreview: false
 isDeprecated: false

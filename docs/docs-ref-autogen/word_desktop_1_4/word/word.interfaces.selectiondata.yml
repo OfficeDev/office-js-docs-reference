@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Selection.toJSON](/javascript/api/word/word.selection#word-word-selection-tojson-member(1))
+
+  **Word.Selection** (1 member)
+
+  - [toJSON](/javascript/api/word/word.selection#word-word-selection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

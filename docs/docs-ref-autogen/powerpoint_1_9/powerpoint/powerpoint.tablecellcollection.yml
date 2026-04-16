@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Table.getMergedAreas](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getmergedareas-member(1))
 
-  - [PowerPoint.TableCellCollection.load](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-load-member(1))
+  **PowerPoint.Table** (1 member)
+
+  - [getMergedAreas](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getmergedareas-member(1))
+
+
+  **PowerPoint.TableCellCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

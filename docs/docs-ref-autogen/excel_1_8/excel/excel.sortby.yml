@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotField.sortByLabels](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbylabels-member(1))
+
+  **Excel.PivotField** (1 member)
+
+  - [sortByLabels](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbylabels-member(1))
 
 isPreview: false
 isDeprecated: false

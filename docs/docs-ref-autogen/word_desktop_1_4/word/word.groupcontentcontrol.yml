@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.groupContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-groupcontentcontrol-member)
 
-  - [Word.GroupContentControl.load](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-load-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.GroupContentControl.set](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-set-member(2))
+  - [groupContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-groupcontentcontrol-member)
 
-  - [Word.GroupContentControl.track](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-track-member(1))
 
-  - [Word.GroupContentControl.untrack](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-untrack-member(1))
+  **Word.GroupContentControl** (4 members)
+
+  - [load](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-load-member(1))
+
+  - [set](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-set-member(2))
+
+  - [track](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-track-member(1))
+
+  - [untrack](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

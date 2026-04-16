@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.onAutoSaveSettingChanged](/javascript/api/excel/excel.workbook#excel-excel-workbook-onautosavesettingchanged-member)
+
+  **Excel.Workbook** (1 member)
+
+  - [onAutoSaveSettingChanged](/javascript/api/excel/excel.workbook#excel-excel-workbook-onautosavesettingchanged-member)
 
 isPreview: false
 isDeprecated: false

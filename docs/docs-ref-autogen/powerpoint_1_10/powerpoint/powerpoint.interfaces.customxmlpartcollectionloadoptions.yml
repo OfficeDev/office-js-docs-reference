@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomXmlPartCollection.load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(1))
+
+  **PowerPoint.CustomXmlPartCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

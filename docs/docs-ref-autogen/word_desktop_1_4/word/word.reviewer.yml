@@ -15,15 +15,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Reviewer.load](/javascript/api/word/word.reviewer#word-word-reviewer-load-member(1))
 
-  - [Word.Reviewer.set](/javascript/api/word/word.reviewer#word-word-reviewer-set-member(2))
+  **Word.Reviewer** (4 members)
 
-  - [Word.Reviewer.track](/javascript/api/word/word.reviewer#word-word-reviewer-track-member(1))
+  - [load](/javascript/api/word/word.reviewer#word-word-reviewer-load-member(1))
 
-  - [Word.Reviewer.untrack](/javascript/api/word/word.reviewer#word-word-reviewer-untrack-member(1))
+  - [set](/javascript/api/word/word.reviewer#word-word-reviewer-set-member(2))
 
-  - [Word.ReviewerCollection.items](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-items-member)
+  - [track](/javascript/api/word/word.reviewer#word-word-reviewer-track-member(1))
+
+  - [untrack](/javascript/api/word/word.reviewer#word-word-reviewer-untrack-member(1))
+
+
+  **Word.ReviewerCollection** (1 member)
+
+  - [items](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-items-member)
 
 isPreview: false
 isDeprecated: false

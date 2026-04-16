@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.WindowCloseOptions.saveChanges](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-savechanges-member)
+
+  **Word.WindowCloseOptions** (1 member)
+
+  - [saveChanges](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-savechanges-member)
 
   #### Examples
 

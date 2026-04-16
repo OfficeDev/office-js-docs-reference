@@ -15,15 +15,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HeadingStyleCollection.load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(1))
 
-  - [Word.HeadingStyleCollection.track](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-track-member(1))
+  **Word.HeadingStyleCollection** (3 members)
 
-  - [Word.HeadingStyleCollection.untrack](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-untrack-member(1))
+  - [load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(1))
 
-  - [Word.TableOfContents.additionalHeadingStyles](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-additionalheadingstyles-member)
+  - [track](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-track-member(1))
 
-  - [Word.TableOfFigures.additionalHeadingStyles](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-additionalheadingstyles-member)
+  - [untrack](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-untrack-member(1))
+
+
+  **Word.TableOfContents** (1 member)
+
+  - [additionalHeadingStyles](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-additionalheadingstyles-member)
+
+
+  **Word.TableOfFigures** (1 member)
+
+  - [additionalHeadingStyles](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-additionalheadingstyles-member)
 
 isPreview: false
 isDeprecated: false

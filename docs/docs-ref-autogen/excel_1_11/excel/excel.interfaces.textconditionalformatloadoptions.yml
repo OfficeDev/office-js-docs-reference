@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TextConditionalFormat.load](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-load-member(1))
+
+  **Excel.TextConditionalFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

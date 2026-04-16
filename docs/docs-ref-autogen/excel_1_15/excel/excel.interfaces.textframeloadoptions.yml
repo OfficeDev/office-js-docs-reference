@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TextFrame.load](/javascript/api/excel/excel.textframe#excel-excel-textframe-load-member(1))
+
+  **Excel.TextFrame** (1 member)
+
+  - [load](/javascript/api/excel/excel.textframe#excel-excel-textframe-load-member(1))
 
 isPreview: false
 isDeprecated: false

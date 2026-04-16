@@ -10,13 +10,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Excel.Range.clear](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))
 
-  - [Excel.RangeAreas.clear](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clear-member(1))
+  **Excel.Range** (1 member)
+
+  - [clear](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))
+
+
+  **Excel.RangeAreas** (1 member)
+
+  - [clear](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clear-member(1))
 
   #### Examples
 

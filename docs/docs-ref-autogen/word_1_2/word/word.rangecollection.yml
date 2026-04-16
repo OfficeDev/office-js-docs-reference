@@ -10,23 +10,37 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Body.search](/javascript/api/word/word.body#word-word-body-search-member(1))
 
-  - [Word.ContentControl.search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
+  **Word.Body** (1 member)
 
-  - [Word.Paragraph.search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
+  - [search](/javascript/api/word/word.body#word-word-body-search-member(1))
 
-  - [Word.Range.search](/javascript/api/word/word.range#word-word-range-search-member(1))
 
-  - [Word.RangeCollection.load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.RangeCollection.track](/javascript/api/word/word.rangecollection#word-word-rangecollection-track-member(1))
+  - [search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
 
-  - [Word.RangeCollection.untrack](/javascript/api/word/word.rangecollection#word-word-rangecollection-untrack-member(1))
+
+  **Word.Paragraph** (1 member)
+
+  - [search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
+
+
+  **Word.Range** (1 member)
+
+  - [search](/javascript/api/word/word.range#word-word-range-search-member(1))
+
+
+  **Word.RangeCollection** (3 members)
+
+  - [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+
+  - [track](/javascript/api/word/word.rangecollection#word-word-rangecollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.rangecollection#word-word-rangecollection-untrack-member(1))
 
   #### Examples
 

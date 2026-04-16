@@ -15,9 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
+  **PowerPoint.Application** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
+
+
+  **PowerPoint.Presentation** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
 
   #### Examples
 

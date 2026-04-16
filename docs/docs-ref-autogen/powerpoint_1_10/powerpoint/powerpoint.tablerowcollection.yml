@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Table.rows](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-rows-member)
 
-  - [PowerPoint.TableRowCollection.load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
+  **PowerPoint.Table** (1 member)
+
+  - [rows](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-rows-member)
+
+
+  **PowerPoint.TableRowCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

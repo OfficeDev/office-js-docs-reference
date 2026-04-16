@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartBoxwhiskerOptions.load](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-load-member(1))
+
+  **Excel.ChartBoxwhiskerOptions** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-load-member(1))
 
 isPreview: false
 isDeprecated: false

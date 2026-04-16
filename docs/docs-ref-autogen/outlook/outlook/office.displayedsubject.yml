@@ -24,7 +24,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Display.subject](/javascript/api/outlook/office.display#outlook-office-display-subject-member)
+
+  **Office.Display** (1 member)
+
+  - [subject](/javascript/api/outlook/office.display#outlook-office-display-subject-member)
 
 isPreview: true
 isDeprecated: false

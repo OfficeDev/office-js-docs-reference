@@ -12,31 +12,52 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ColorFormat.load](/javascript/api/word/word.colorformat#word-word-colorformat-load-member(1))
 
-  - [Word.ColorFormat.set](/javascript/api/word/word.colorformat#word-word-colorformat-set-member(2))
+  **Word.ColorFormat** (4 members)
 
-  - [Word.ColorFormat.track](/javascript/api/word/word.colorformat#word-word-colorformat-track-member(1))
+  - [load](/javascript/api/word/word.colorformat#word-word-colorformat-load-member(1))
 
-  - [Word.ColorFormat.untrack](/javascript/api/word/word.colorformat#word-word-colorformat-untrack-member(1))
+  - [set](/javascript/api/word/word.colorformat#word-word-colorformat-set-member(2))
 
-  - [Word.FillFormat.backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)
+  - [track](/javascript/api/word/word.colorformat#word-word-colorformat-track-member(1))
 
-  - [Word.FillFormat.foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)
+  - [untrack](/javascript/api/word/word.colorformat#word-word-colorformat-untrack-member(1))
 
-  - [Word.Font.textColor](/javascript/api/word/word.font#word-word-font-textcolor-member)
 
-  - [Word.GlowFormat.color](/javascript/api/word/word.glowformat#word-word-glowformat-color-member)
+  **Word.FillFormat** (2 members)
 
-  - [Word.LineFormat.backgroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-backgroundcolor-member)
+  - [backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)
 
-  - [Word.LineFormat.foregroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-foregroundcolor-member)
+  - [foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)
 
-  - [Word.ShadowFormat.foregroundColor](/javascript/api/word/word.shadowformat#word-word-shadowformat-foregroundcolor-member)
 
-  - [Word.ThreeDimensionalFormat.contourColor](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-contourcolor-member)
+  **Word.Font** (1 member)
 
-  - [Word.ThreeDimensionalFormat.extrusionColor](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-extrusioncolor-member)
+  - [textColor](/javascript/api/word/word.font#word-word-font-textcolor-member)
+
+
+  **Word.GlowFormat** (1 member)
+
+  - [color](/javascript/api/word/word.glowformat#word-word-glowformat-color-member)
+
+
+  **Word.LineFormat** (2 members)
+
+  - [backgroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-backgroundcolor-member)
+
+  - [foregroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-foregroundcolor-member)
+
+
+  **Word.ShadowFormat** (1 member)
+
+  - [foregroundColor](/javascript/api/word/word.shadowformat#word-word-shadowformat-foregroundcolor-member)
+
+
+  **Word.ThreeDimensionalFormat** (2 members)
+
+  - [contourColor](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-contourcolor-member)
+
+  - [extrusionColor](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-extrusioncolor-member)
 
 isPreview: false
 isDeprecated: false

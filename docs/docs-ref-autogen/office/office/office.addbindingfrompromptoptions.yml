@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Bindings.addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1))
+
+  **Office.Bindings** (1 member)
+
+  - [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1))
 
 isPreview: false
 isDeprecated: false

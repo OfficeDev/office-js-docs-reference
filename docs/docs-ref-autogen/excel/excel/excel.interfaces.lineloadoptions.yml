@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Line.load](/javascript/api/excel/excel.line#excel-excel-line-load-member(1))
+
+  **Excel.Line** (1 member)
+
+  - [load](/javascript/api/excel/excel.line#excel-excel-line-load-member(1))
 
 isPreview: false
 isDeprecated: false

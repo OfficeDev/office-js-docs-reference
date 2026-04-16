@@ -11,9 +11,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.SetBindingDataOptions.cellFormat](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-cellformat-member)
 
-  - [Office.SetSelectedDataOptions.cellFormat](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-cellformat-member)
+  **Office.SetBindingDataOptions** (1 member)
+
+  - [cellFormat](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-cellformat-member)
+
+
+  **Office.SetSelectedDataOptions** (1 member)
+
+  - [cellFormat](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-cellformat-member)
 
   #### Examples
 

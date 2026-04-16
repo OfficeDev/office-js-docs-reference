@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomProperty.load](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-load-member(1))
 
-  - [Excel.CustomProperty.set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(2))
+  **Excel.CustomProperty** (2 members)
 
-  - [Excel.CustomPropertyCollection.add](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-add-member(1))
+  - [load](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-load-member(1))
 
-  - [Excel.CustomPropertyCollection.getItem](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-getitem-member(1))
+  - [set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(2))
 
-  - [Excel.CustomPropertyCollection.getItemOrNullObject](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-getitemornullobject-member(1))
 
-  - [Excel.CustomPropertyCollection.items](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-items-member)
+  **Excel.CustomPropertyCollection** (4 members)
+
+  - [add](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-add-member(1))
+
+  - [getItem](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-getitem-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-items-member)
 
 isPreview: false
 isDeprecated: false

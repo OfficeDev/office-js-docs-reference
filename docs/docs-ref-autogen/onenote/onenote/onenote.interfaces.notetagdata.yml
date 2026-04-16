@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.NoteTag.toJSON](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-tojson-member(1))
+
+  **OneNote.NoteTag** (1 member)
+
+  - [toJSON](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

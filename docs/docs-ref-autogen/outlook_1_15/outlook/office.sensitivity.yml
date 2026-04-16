@@ -27,7 +27,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.sensitivity](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivity-member)
+
+  **Office.AppointmentCompose** (1 member)
+
+  - [sensitivity](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivity-member)
 
 isPreview: false
 isDeprecated: false

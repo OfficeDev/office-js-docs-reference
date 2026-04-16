@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeries.getDimensionDataSourceType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1))
+
+  **Excel.ChartSeries** (1 member)
+
+  - [getDimensionDataSourceType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1))
 
 isPreview: false
 isDeprecated: false

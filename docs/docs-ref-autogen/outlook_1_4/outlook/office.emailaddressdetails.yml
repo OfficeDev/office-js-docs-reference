@@ -20,29 +20,41 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentForm.optionalAttendees](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-optionalattendees-member)
 
-  - [Office.AppointmentForm.requiredAttendees](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-requiredattendees-member)
+  **Office.AppointmentForm** (2 members)
 
-  - [Office.AppointmentRead.optionalAttendees](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-optionalattendees-member)
+  - [optionalAttendees](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-optionalattendees-member)
 
-  - [Office.AppointmentRead.organizer](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-organizer-member)
+  - [requiredAttendees](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-requiredattendees-member)
 
-  - [Office.AppointmentRead.requiredAttendees](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-requiredattendees-member)
 
-  - [Office.MessageRead.cc](/javascript/api/outlook/office.messageread#outlook-office-messageread-cc-member)
+  **Office.AppointmentRead** (3 members)
 
-  - [Office.MessageRead.from](/javascript/api/outlook/office.messageread#outlook-office-messageread-from-member)
+  - [optionalAttendees](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-optionalattendees-member)
 
-  - [Office.MessageRead.sender](/javascript/api/outlook/office.messageread#outlook-office-messageread-sender-member)
+  - [organizer](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-organizer-member)
 
-  - [Office.MessageRead.to](/javascript/api/outlook/office.messageread#outlook-office-messageread-to-member)
+  - [requiredAttendees](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-requiredattendees-member)
 
-  - [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1))
 
-  - [Office.Recipients.getAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-getasync-member(1))
+  **Office.MessageRead** (4 members)
 
-  - [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
+  - [cc](/javascript/api/outlook/office.messageread#outlook-office-messageread-cc-member)
+
+  - [from](/javascript/api/outlook/office.messageread#outlook-office-messageread-from-member)
+
+  - [sender](/javascript/api/outlook/office.messageread#outlook-office-messageread-sender-member)
+
+  - [to](/javascript/api/outlook/office.messageread#outlook-office-messageread-to-member)
+
+
+  **Office.Recipients** (3 members)
+
+  - [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1))
+
+  - [getAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-getasync-member(1))
+
+  - [setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
 
 isPreview: false
 isDeprecated: false

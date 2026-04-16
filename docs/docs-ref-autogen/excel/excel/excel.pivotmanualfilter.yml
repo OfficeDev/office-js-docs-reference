@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotFilters.manualFilter](/javascript/api/excel/excel.pivotfilters#excel-excel-pivotfilters-manualfilter-member)
+
+  **Excel.PivotFilters** (1 member)
+
+  - [manualFilter](/javascript/api/excel/excel.pivotfilters#excel-excel-pivotfilters-manualfilter-member)
 
 isPreview: false
 isDeprecated: false

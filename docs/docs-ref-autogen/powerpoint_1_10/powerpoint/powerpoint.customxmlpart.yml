@@ -12,29 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomXmlPart.load](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-load-member(1))
 
-  - [PowerPoint.CustomXmlPartCollection.add](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-add-member(1))
+  **PowerPoint.CustomXmlPart** (1 member)
 
-  - [PowerPoint.CustomXmlPartCollection.getItem](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitem-member(1))
+  - [load](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-load-member(1))
 
-  - [PowerPoint.CustomXmlPartCollection.getItemAt](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitemat-member(1))
 
-  - [PowerPoint.CustomXmlPartCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitemornullobject-member(1))
+  **PowerPoint.CustomXmlPartCollection** (5 members)
 
-  - [PowerPoint.CustomXmlPartCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-items-member)
+  - [add](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-add-member(1))
 
-  - [PowerPoint.CustomXmlPartScopedCollection.getItem](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitem-member(1))
+  - [getItem](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitem-member(1))
 
-  - [PowerPoint.CustomXmlPartScopedCollection.getItemAt](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitemat-member(1))
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitemat-member(1))
 
-  - [PowerPoint.CustomXmlPartScopedCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitemornullobject-member(1))
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitemornullobject-member(1))
 
-  - [PowerPoint.CustomXmlPartScopedCollection.getOnlyItem](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getonlyitem-member(1))
+  - [items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-items-member)
 
-  - [PowerPoint.CustomXmlPartScopedCollection.getOnlyItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
 
-  - [PowerPoint.CustomXmlPartScopedCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-items-member)
+  **PowerPoint.CustomXmlPartScopedCollection** (6 members)
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitemornullobject-member(1))
+
+  - [getOnlyItem](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getonlyitem-member(1))
+
+  - [getOnlyItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-items-member)
 
 isPreview: false
 isDeprecated: false

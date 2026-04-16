@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.SlideBackgroundSolidFill.toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-tojson-member(1))
+
+  **PowerPoint.SlideBackgroundSolidFill** (1 member)
+
+  - [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Slicer.sortBy](/javascript/api/excel/excel.slicer#excel-excel-slicer-sortby-member)
+
+  **Excel.Slicer** (1 member)
+
+  - [sortBy](/javascript/api/excel/excel.slicer#excel-excel-slicer-sortby-member)
 
 isPreview: false
 isDeprecated: false

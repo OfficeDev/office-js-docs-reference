@@ -12,17 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.SlicerItem.load](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-load-member(1))
 
-  - [Excel.SlicerItem.set](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-set-member(2))
+  **Excel.SlicerItem** (2 members)
 
-  - [Excel.SlicerItemCollection.getItem](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitem-member(1))
+  - [load](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-load-member(1))
 
-  - [Excel.SlicerItemCollection.getItemAt](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemat-member(1))
+  - [set](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-set-member(2))
 
-  - [Excel.SlicerItemCollection.getItemOrNullObject](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemornullobject-member(1))
 
-  - [Excel.SlicerItemCollection.items](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-items-member)
+  **Excel.SlicerItemCollection** (4 members)
+
+  - [getItem](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-items-member)
 
 isPreview: false
 isDeprecated: false

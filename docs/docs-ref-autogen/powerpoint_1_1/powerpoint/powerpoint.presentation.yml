@@ -18,9 +18,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Presentation.load](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-load-member(1))
 
-  - [PowerPoint.RequestContext.presentation](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-presentation-member)
+  **PowerPoint.Presentation** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-load-member(1))
+
+
+  **PowerPoint.RequestContext** (1 member)
+
+  - [presentation](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-presentation-member)
 
   #### Examples
 

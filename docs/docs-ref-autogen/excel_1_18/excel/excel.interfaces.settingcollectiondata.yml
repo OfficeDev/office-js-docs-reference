@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.SettingCollection.toJSON](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-tojson-member(1))
+
+  **Excel.SettingCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

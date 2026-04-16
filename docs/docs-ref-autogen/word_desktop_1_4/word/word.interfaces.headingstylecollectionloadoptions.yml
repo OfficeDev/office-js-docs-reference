@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HeadingStyleCollection.load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(1))
+
+  **Word.HeadingStyleCollection** (1 member)
+
+  - [load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

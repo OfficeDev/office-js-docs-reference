@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.XmlNode.level](/javascript/api/word/word.xmlnode#word-word-xmlnode-level-member)
+
+  **Word.XmlNode** (1 member)
+
+  - [level](/javascript/api/word/word.xmlnode#word-word-xmlnode-level-member)
 
 isPreview: false
 isDeprecated: false

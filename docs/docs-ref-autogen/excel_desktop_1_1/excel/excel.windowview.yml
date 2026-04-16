@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Window.view](/javascript/api/excel/excel.window#excel-excel-window-view-member)
+
+  **Excel.Window** (1 member)
+
+  - [view](/javascript/api/excel/excel.window#excel-excel-window-view-member)
 
 isPreview: false
 isDeprecated: false

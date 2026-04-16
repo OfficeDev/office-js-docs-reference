@@ -12,17 +12,35 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAddedEventArgs.source](/javascript/api/excel/excel.chartaddedeventargs#excel-excel-chartaddedeventargs-source-member)
 
-  - [Excel.ChartDeletedEventArgs.source](/javascript/api/excel/excel.chartdeletedeventargs#excel-excel-chartdeletedeventargs-source-member)
+  **Excel.ChartAddedEventArgs** (1 member)
 
-  - [Excel.TableChangedEventArgs.source](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-source-member)
+  - [source](/javascript/api/excel/excel.chartaddedeventargs#excel-excel-chartaddedeventargs-source-member)
 
-  - [Excel.WorksheetAddedEventArgs.source](/javascript/api/excel/excel.worksheetaddedeventargs#excel-excel-worksheetaddedeventargs-source-member)
 
-  - [Excel.WorksheetChangedEventArgs.source](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-source-member)
+  **Excel.ChartDeletedEventArgs** (1 member)
 
-  - [Excel.WorksheetDeletedEventArgs.source](/javascript/api/excel/excel.worksheetdeletedeventargs#excel-excel-worksheetdeletedeventargs-source-member)
+  - [source](/javascript/api/excel/excel.chartdeletedeventargs#excel-excel-chartdeletedeventargs-source-member)
+
+
+  **Excel.TableChangedEventArgs** (1 member)
+
+  - [source](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-source-member)
+
+
+  **Excel.WorksheetAddedEventArgs** (1 member)
+
+  - [source](/javascript/api/excel/excel.worksheetaddedeventargs#excel-excel-worksheetaddedeventargs-source-member)
+
+
+  **Excel.WorksheetChangedEventArgs** (1 member)
+
+  - [source](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-source-member)
+
+
+  **Excel.WorksheetDeletedEventArgs** (1 member)
+
+  - [source](/javascript/api/excel/excel.worksheetdeletedeventargs#excel-excel-worksheetdeletedeventargs-source-member)
 
 isPreview: false
 isDeprecated: false

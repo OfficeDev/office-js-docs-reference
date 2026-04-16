@@ -15,15 +15,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListTemplateGallery.load](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-load-member(1))
 
-  - [Word.ListTemplateGallery.track](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-track-member(1))
+  **Word.ListTemplateGallery** (3 members)
 
-  - [Word.ListTemplateGallery.untrack](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-untrack-member(1))
+  - [load](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-load-member(1))
 
-  - [Word.ListTemplateGalleryCollection.getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))
+  - [track](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-track-member(1))
 
-  - [Word.ListTemplateGalleryCollection.items](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-items-member)
+  - [untrack](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-untrack-member(1))
+
+
+  **Word.ListTemplateGalleryCollection** (2 members)
+
+  - [getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))
+
+  - [items](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-items-member)
 
 isPreview: false
 isDeprecated: false

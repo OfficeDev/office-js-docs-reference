@@ -17,11 +17,20 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Table.convertToText](/javascript/api/word/word.table#word-word-table-converttotext-member(1))
 
-  - [Word.TableRow.convertToText](/javascript/api/word/word.tablerow#word-word-tablerow-converttotext-member(1))
+  **Word.Table** (1 member)
 
-  - [Word.TableRowCollection.convertToText](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-converttotext-member(1))
+  - [convertToText](/javascript/api/word/word.table#word-word-table-converttotext-member(1))
+
+
+  **Word.TableRow** (1 member)
+
+  - [convertToText](/javascript/api/word/word.tablerow#word-word-tablerow-converttotext-member(1))
+
+
+  **Word.TableRowCollection** (1 member)
+
+  - [convertToText](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-converttotext-member(1))
 
 isPreview: false
 isDeprecated: false

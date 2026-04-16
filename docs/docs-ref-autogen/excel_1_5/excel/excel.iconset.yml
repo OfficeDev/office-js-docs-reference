@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Icon.set](/javascript/api/excel/excel.icon#excel-excel-icon-set-member)
+
+  **Excel.Icon** (1 member)
+
+  - [set](/javascript/api/excel/excel.icon#excel-excel-icon-set-member)
 
   #### Examples
 

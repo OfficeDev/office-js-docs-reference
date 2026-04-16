@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onSingleClicked](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onsingleclicked-member)
 
-  - [Excel.WorksheetCollection.onSingleClicked](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onsingleclicked-member)
+  **Excel.Worksheet** (1 member)
+
+  - [onSingleClicked](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onsingleclicked-member)
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [onSingleClicked](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onsingleclicked-member)
 
 isPreview: false
 isDeprecated: false

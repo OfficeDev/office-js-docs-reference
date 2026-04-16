@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DropCap.toJSON](/javascript/api/word/word.dropcap#word-word-dropcap-tojson-member(1))
+
+  **Word.DropCap** (1 member)
+
+  - [toJSON](/javascript/api/word/word.dropcap#word-word-dropcap-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

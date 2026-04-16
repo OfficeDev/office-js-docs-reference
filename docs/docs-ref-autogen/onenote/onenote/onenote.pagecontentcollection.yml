@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Page.contents](/javascript/api/onenote/onenote.page#onenote-onenote-page-contents-member)
 
-  - [OneNote.PageContentCollection.load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+  **OneNote.Page** (1 member)
 
-  - [OneNote.PageContentCollection.track](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-track-member(1))
+  - [contents](/javascript/api/onenote/onenote.page#onenote-onenote-page-contents-member)
 
-  - [OneNote.PageContentCollection.untrack](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-untrack-member(1))
+
+  **OneNote.PageContentCollection** (3 members)
+
+  - [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+
+  - [track](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-track-member(1))
+
+  - [untrack](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

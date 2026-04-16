@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.LinkFormat.toJSON](/javascript/api/word/word.linkformat#word-word-linkformat-tojson-member(1))
+
+  **Word.LinkFormat** (1 member)
+
+  - [toJSON](/javascript/api/word/word.linkformat#word-word-linkformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

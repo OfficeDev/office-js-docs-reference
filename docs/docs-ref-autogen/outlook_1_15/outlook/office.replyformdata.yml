@@ -25,25 +25,34 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentRead.displayReplyAllForm](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyallform-member(1))
 
-  - [Office.AppointmentRead.displayReplyAllFormAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyallformasync-member(1))
+  **Office.AppointmentRead** (4 members)
 
-  - [Office.AppointmentRead.displayReplyForm](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyform-member(1))
+  - [displayReplyAllForm](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyallform-member(1))
 
-  - [Office.AppointmentRead.displayReplyFormAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyformasync-member(1))
+  - [displayReplyAllFormAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyallformasync-member(1))
 
-  - [Office.LoadedMessageRead.displayReplyAllFormAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-displayreplyallformasync-member(1))
+  - [displayReplyForm](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyform-member(1))
 
-  - [Office.LoadedMessageRead.displayReplyFormAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-displayreplyformasync-member(1))
+  - [displayReplyFormAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyformasync-member(1))
 
-  - [Office.MessageRead.displayReplyAllForm](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyallform-member(1))
 
-  - [Office.MessageRead.displayReplyAllFormAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyallformasync-member(1))
+  **Office.LoadedMessageRead** (2 members)
 
-  - [Office.MessageRead.displayReplyForm](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyform-member(1))
+  - [displayReplyAllFormAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-displayreplyallformasync-member(1))
 
-  - [Office.MessageRead.displayReplyFormAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyformasync-member(1))
+  - [displayReplyFormAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-displayreplyformasync-member(1))
+
+
+  **Office.MessageRead** (4 members)
+
+  - [displayReplyAllForm](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyallform-member(1))
+
+  - [displayReplyAllFormAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyallformasync-member(1))
+
+  - [displayReplyForm](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyform-member(1))
+
+  - [displayReplyFormAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-displayreplyformasync-member(1))
 
   #### Examples
 

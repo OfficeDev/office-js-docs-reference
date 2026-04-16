@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.seekView](/javascript/api/word/word.view#word-word-view-seekview-member)
+
+  **Word.View** (1 member)
+
+  - [seekView](/javascript/api/word/word.view#word-word-view-seekview-member)
 
 isPreview: false
 isDeprecated: false

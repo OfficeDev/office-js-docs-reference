@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PresetCriteriaConditionalFormat.load](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-load-member(1))
+
+  **Excel.PresetCriteriaConditionalFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

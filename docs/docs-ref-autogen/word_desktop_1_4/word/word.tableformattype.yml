@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableAutoFormatOptions.format](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-format-member)
+
+  **Word.TableAutoFormatOptions** (1 member)
+
+  - [format](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-format-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,26 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Notebook.sectionGroups](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-sectiongroups-member)
 
-  - [OneNote.SectionGroup.sectionGroups](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-sectiongroups-member)
+  **OneNote.Notebook** (1 member)
 
-  - [OneNote.SectionGroupCollection.getByName](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getbyname-member(1))
+  - [sectionGroups](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-sectiongroups-member)
 
-  - [OneNote.SectionGroupCollection.load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
 
-  - [OneNote.SectionGroupCollection.track](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-track-member(1))
+  **OneNote.SectionGroup** (1 member)
 
-  - [OneNote.SectionGroupCollection.untrack](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-untrack-member(1))
+  - [sectionGroups](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-sectiongroups-member)
+
+
+  **OneNote.SectionGroupCollection** (4 members)
+
+  - [getByName](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getbyname-member(1))
+
+  - [load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
+
+  - [track](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-track-member(1))
+
+  - [untrack](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

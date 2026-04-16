@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Application.windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)
 
-  - [Excel.WindowCollection.load](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-load-member(1))
+  **Excel.Application** (1 member)
+
+  - [windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)
+
+
+  **Excel.WindowCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

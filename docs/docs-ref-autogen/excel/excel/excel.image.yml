@@ -14,11 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Image.load](/javascript/api/excel/excel.image#excel-excel-image-load-member(1))
 
-  - [Excel.Image.set](/javascript/api/excel/excel.image#excel-excel-image-set-member(2))
+  **Excel.Image** (2 members)
 
-  - [Excel.Shape.image](/javascript/api/excel/excel.shape#excel-excel-shape-image-member)
+  - [load](/javascript/api/excel/excel.image#excel-excel-image-load-member(1))
+
+  - [set](/javascript/api/excel/excel.image#excel-excel-image-set-member(2))
+
+
+  **Excel.Shape** (1 member)
+
+  - [image](/javascript/api/excel/excel.shape#excel-excel-shape-image-member)
 
 isPreview: false
 isDeprecated: false

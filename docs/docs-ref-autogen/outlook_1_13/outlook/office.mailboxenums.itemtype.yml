@@ -14,15 +14,30 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.itemType](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-itemtype-member)
 
-  - [Office.AppointmentRead.itemType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-itemtype-member)
+  **Office.AppointmentCompose** (1 member)
 
-  - [Office.MessageCompose.itemType](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-itemtype-member)
+  - [itemType](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-itemtype-member)
 
-  - [Office.MessageRead.itemType](/javascript/api/outlook/office.messageread#outlook-office-messageread-itemtype-member)
 
-  - [Office.SelectedItemDetails.itemType](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-itemtype-member)
+  **Office.AppointmentRead** (1 member)
+
+  - [itemType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-itemtype-member)
+
+
+  **Office.MessageCompose** (1 member)
+
+  - [itemType](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-itemtype-member)
+
+
+  **Office.MessageRead** (1 member)
+
+  - [itemType](/javascript/api/outlook/office.messageread#outlook-office-messageread-itemtype-member)
+
+
+  **Office.SelectedItemDetails** (1 member)
+
+  - [itemType](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-itemtype-member)
 
   #### Examples
 

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Shape.fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
 
-  - [PowerPoint.ShapeFill.load](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-load-member(1))
+  **PowerPoint.Shape** (1 member)
+
+  - [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
+
+
+  **PowerPoint.ShapeFill** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-load-member(1))
 
   #### Examples
 

@@ -12,15 +12,23 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
 
-  - [PowerPoint.Shape.setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
+  **PowerPoint.HyperlinkCollection** (1 member)
 
-  - [PowerPoint.TextRange.setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
+  - [add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+
+
+  **PowerPoint.Shape** (1 member)
+
+  - [setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
+
+
+  **PowerPoint.TextRange** (1 member)
+
+  - [setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
 
   #### Examples
 

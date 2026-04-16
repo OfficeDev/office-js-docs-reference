@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Selection.insertCells](/javascript/api/word/word.selection#word-word-selection-insertcells-member(1))
+
+  **Word.Selection** (1 member)
+
+  - [insertCells](/javascript/api/word/word.selection#word-word-selection-insertcells-member(1))
 
 isPreview: false
 isDeprecated: false

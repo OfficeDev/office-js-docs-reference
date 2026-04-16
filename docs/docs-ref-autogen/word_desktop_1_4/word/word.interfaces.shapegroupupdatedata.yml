@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ShapeGroup.set](/javascript/api/word/word.shapegroup#word-word-shapegroup-set-member(1))
+
+  **Word.ShapeGroup** (1 member)
+
+  - [set](/javascript/api/word/word.shapegroup#word-word-shapegroup-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabelFormat.set](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-set-member(1))
+
+  **Excel.ChartDataLabelFormat** (1 member)
+
+  - [set](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

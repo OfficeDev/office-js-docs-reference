@@ -29,7 +29,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.MessageCompose.from](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-from-member)
+
+  **Office.MessageCompose** (1 member)
+
+  - [from](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-from-member)
 
 isPreview: false
 isDeprecated: false

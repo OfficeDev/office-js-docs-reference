@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomFunctionManager.toJSON](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-tojson-member(1))
+
+  **Excel.CustomFunctionManager** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

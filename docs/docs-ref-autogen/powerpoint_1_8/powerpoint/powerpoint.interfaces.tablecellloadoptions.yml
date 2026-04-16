@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.TableCell.load](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-load-member(1))
+
+  **PowerPoint.TableCell** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-load-member(1))
 
 isPreview: false
 isDeprecated: false

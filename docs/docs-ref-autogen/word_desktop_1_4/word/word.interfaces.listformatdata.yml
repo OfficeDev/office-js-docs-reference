@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListFormat.toJSON](/javascript/api/word/word.listformat#word-word-listformat-tojson-member(1))
+
+  **Word.ListFormat** (1 member)
+
+  - [toJSON](/javascript/api/word/word.listformat#word-word-listformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

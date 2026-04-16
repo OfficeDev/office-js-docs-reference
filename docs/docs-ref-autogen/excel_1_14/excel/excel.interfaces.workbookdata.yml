@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.toJSON](/javascript/api/excel/excel.workbook#excel-excel-workbook-tojson-member(1))
+
+  **Excel.Workbook** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.workbook#excel-excel-workbook-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

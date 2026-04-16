@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Shape.placement](/javascript/api/excel/excel.shape#excel-excel-shape-placement-member)
+
+  **Excel.Shape** (1 member)
+
+  - [placement](/javascript/api/excel/excel.shape#excel-excel-shape-placement-member)
 
 isPreview: false
 isDeprecated: false

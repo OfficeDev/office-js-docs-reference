@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.sendFaxOverInternet](/javascript/api/word/word.document#word-word-document-sendfaxoverinternet-member(1))
+
+  **Word.Document** (1 member)
+
+  - [sendFaxOverInternet](/javascript/api/word/word.document#word-word-document-sendfaxoverinternet-member(1))
 
 isPreview: true
 isDeprecated: false

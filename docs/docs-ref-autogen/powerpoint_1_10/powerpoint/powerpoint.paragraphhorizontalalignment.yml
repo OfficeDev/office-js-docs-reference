@@ -16,11 +16,20 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ParagraphFormat.horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-horizontalalignment-member)
 
-  - [PowerPoint.TableCell.horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-horizontalalignment-member)
+  **PowerPoint.ParagraphFormat** (1 member)
 
-  - [PowerPoint.TableCellProperties.horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-horizontalalignment-member)
+  - [horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-horizontalalignment-member)
+
+
+  **PowerPoint.TableCell** (1 member)
+
+  - [horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-horizontalalignment-member)
+
+
+  **PowerPoint.TableCellProperties** (1 member)
+
+  - [horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-horizontalalignment-member)
 
   #### Examples
 

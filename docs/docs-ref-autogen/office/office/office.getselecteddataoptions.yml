@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Document.getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1))
+
+  **Office.Document** (1 member)
+
+  - [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1))
 
   #### Examples
 

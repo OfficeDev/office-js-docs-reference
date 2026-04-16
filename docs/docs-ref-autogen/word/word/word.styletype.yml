@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
 
-  - [Word.DocumentCreated.addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
+  **Word.Document** (1 member)
 
-  - [Word.Style.type](/javascript/api/word/word.style#word-word-style-type-member)
+  - [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
+
+
+  **Word.DocumentCreated** (1 member)
+
+  - [addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
+
+
+  **Word.Style** (1 member)
+
+  - [type](/javascript/api/word/word.style#word-word-style-type-member)
 
   #### Examples
 

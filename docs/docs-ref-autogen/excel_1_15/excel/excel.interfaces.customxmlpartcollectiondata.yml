@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomXmlPartCollection.toJSON](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-tojson-member(1))
+
+  **Excel.CustomXmlPartCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

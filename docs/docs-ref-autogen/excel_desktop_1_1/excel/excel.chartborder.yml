@@ -12,27 +12,57 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAreaFormat.border](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-border-member)
 
-  - [Excel.ChartAxisTitleFormat.border](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-border-member)
+  **Excel.ChartAreaFormat** (1 member)
 
-  - [Excel.ChartBorder.load](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-load-member(1))
+  - [border](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-border-member)
 
-  - [Excel.ChartBorder.set](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-set-member(2))
 
-  - [Excel.ChartDataLabelFormat.border](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-border-member)
+  **Excel.ChartAxisTitleFormat** (1 member)
 
-  - [Excel.ChartDataTableFormat.border](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-border-member)
+  - [border](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-border-member)
 
-  - [Excel.ChartLegendFormat.border](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-border-member)
 
-  - [Excel.ChartPlotAreaFormat.border](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-border-member)
+  **Excel.ChartBorder** (2 members)
 
-  - [Excel.ChartPointFormat.border](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-border-member)
+  - [load](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-load-member(1))
 
-  - [Excel.ChartTitleFormat.border](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-border-member)
+  - [set](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-set-member(2))
 
-  - [Excel.ChartTrendlineLabelFormat.border](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-border-member)
+
+  **Excel.ChartDataLabelFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-border-member)
+
+
+  **Excel.ChartDataTableFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-border-member)
+
+
+  **Excel.ChartLegendFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-border-member)
+
+
+  **Excel.ChartPlotAreaFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-border-member)
+
+
+  **Excel.ChartPointFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-border-member)
+
+
+  **Excel.ChartTitleFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-border-member)
+
+
+  **Excel.ChartTrendlineLabelFormat** (1 member)
+
+  - [border](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-border-member)
 
 isPreview: false
 isDeprecated: false

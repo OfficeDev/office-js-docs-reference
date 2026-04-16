@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ParagraphFormat.load](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-load-member(1))
+
+  **Word.ParagraphFormat** (1 member)
+
+  - [load](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

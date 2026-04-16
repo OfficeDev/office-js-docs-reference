@@ -15,17 +15,35 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControlAddedEventArgs.source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
 
-  - [Word.ContentControlDataChangedEventArgs.source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)
+  **Word.ContentControlAddedEventArgs** (1 member)
 
-  - [Word.ContentControlDeletedEventArgs.source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)
+  - [source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
 
-  - [Word.ContentControlEnteredEventArgs.source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)
 
-  - [Word.ContentControlExitedEventArgs.source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)
+  **Word.ContentControlDataChangedEventArgs** (1 member)
 
-  - [Word.ContentControlSelectionChangedEventArgs.source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)
+  - [source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)
+
+
+  **Word.ContentControlDeletedEventArgs** (1 member)
+
+  - [source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)
+
+
+  **Word.ContentControlEnteredEventArgs** (1 member)
+
+  - [source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)
+
+
+  **Word.ContentControlExitedEventArgs** (1 member)
+
+  - [source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)
+
+
+  **Word.ContentControlSelectionChangedEventArgs** (1 member)
+
+  - [source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)
 
   #### Examples
 

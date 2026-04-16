@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NoteCollection.load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
 
-  - [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)
+  **Excel.NoteCollection** (1 member)
 
-  - [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)
+  - [load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
+
+
+  **Excel.Workbook** (1 member)
+
+  - [notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)
 
   #### Examples
 

@@ -15,31 +15,40 @@ remarks: >-
   #### Used by
 
 
-  - [Word.List.load](/javascript/api/word/word.list#word-word-list-load-member(1))
 
-  - [Word.List.track](/javascript/api/word/word.list#word-word-list-track-member(1))
+  **Word.List** (3 members)
 
-  - [Word.List.untrack](/javascript/api/word/word.list#word-word-list-untrack-member(1))
+  - [load](/javascript/api/word/word.list#word-word-list-load-member(1))
 
-  - [Word.ListCollection.getById](/javascript/api/word/word.listcollection#word-word-listcollection-getbyid-member(1))
+  - [track](/javascript/api/word/word.list#word-word-list-track-member(1))
 
-  - [Word.ListCollection.getByIdOrNullObject](/javascript/api/word/word.listcollection#word-word-listcollection-getbyidornullobject-member(1))
+  - [untrack](/javascript/api/word/word.list#word-word-list-untrack-member(1))
 
-  - [Word.ListCollection.getFirst](/javascript/api/word/word.listcollection#word-word-listcollection-getfirst-member(1))
 
-  - [Word.ListCollection.getFirstOrNullObject](/javascript/api/word/word.listcollection#word-word-listcollection-getfirstornullobject-member(1))
+  **Word.ListCollection** (6 members)
 
-  - [Word.ListCollection.getItem](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))
+  - [getById](/javascript/api/word/word.listcollection#word-word-listcollection-getbyid-member(1))
 
-  - [Word.ListCollection.items](/javascript/api/word/word.listcollection#word-word-listcollection-items-member)
+  - [getByIdOrNullObject](/javascript/api/word/word.listcollection#word-word-listcollection-getbyidornullobject-member(1))
 
-  - [Word.Paragraph.attachToList](/javascript/api/word/word.paragraph#word-word-paragraph-attachtolist-member(1))
+  - [getFirst](/javascript/api/word/word.listcollection#word-word-listcollection-getfirst-member(1))
 
-  - [Word.Paragraph.list](/javascript/api/word/word.paragraph#word-word-paragraph-list-member)
+  - [getFirstOrNullObject](/javascript/api/word/word.listcollection#word-word-listcollection-getfirstornullobject-member(1))
 
-  - [Word.Paragraph.listOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listornullobject-member)
+  - [getItem](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))
 
-  - [Word.Paragraph.startNewList](/javascript/api/word/word.paragraph#word-word-paragraph-startnewlist-member(1))
+  - [items](/javascript/api/word/word.listcollection#word-word-listcollection-items-member)
+
+
+  **Word.Paragraph** (4 members)
+
+  - [attachToList](/javascript/api/word/word.paragraph#word-word-paragraph-attachtolist-member(1))
+
+  - [list](/javascript/api/word/word.paragraph#word-word-paragraph-list-member)
+
+  - [listOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listornullobject-member)
+
+  - [startNewList](/javascript/api/word/word.paragraph#word-word-paragraph-startnewlist-member(1))
 
   #### Examples
 

@@ -12,15 +12,24 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Application.getSelectedInkStrokes](/javascript/api/onenote/onenote.application#onenote-onenote-application-getselectedinkstrokes-member(1))
 
-  - [OneNote.FloatingInk.inkStrokes](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-inkstrokes-member)
+  **OneNote.Application** (1 member)
 
-  - [OneNote.InkStrokeCollection.load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
+  - [getSelectedInkStrokes](/javascript/api/onenote/onenote.application#onenote-onenote-application-getselectedinkstrokes-member(1))
 
-  - [OneNote.InkStrokeCollection.track](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-track-member(1))
 
-  - [OneNote.InkStrokeCollection.untrack](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-untrack-member(1))
+  **OneNote.FloatingInk** (1 member)
+
+  - [inkStrokes](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-inkstrokes-member)
+
+
+  **OneNote.InkStrokeCollection** (3 members)
+
+  - [load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
+
+  - [track](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-track-member(1))
+
+  - [untrack](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

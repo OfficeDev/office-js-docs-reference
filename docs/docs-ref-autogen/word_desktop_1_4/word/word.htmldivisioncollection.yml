@@ -15,9 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HtmlDivision.htmlDivisions](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisions-member)
 
-  - [Word.HtmlDivisionCollection.load](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-load-member(1))
+  **Word.HtmlDivision** (1 member)
+
+  - [htmlDivisions](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisions-member)
+
+
+  **Word.HtmlDivisionCollection** (1 member)
+
+  - [load](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,9 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.AnnotationSet.critiques](/javascript/api/word/word.annotationset#word-word-annotationset-critiques-member)
 
-  - [Word.CritiqueAnnotation.critique](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-critique-member)
+  **Word.AnnotationSet** (1 member)
+
+  - [critiques](/javascript/api/word/word.annotationset#word-word-annotationset-critiques-member)
+
+
+  **Word.CritiqueAnnotation** (1 member)
+
+  - [critique](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-critique-member)
 
   #### Examples
 

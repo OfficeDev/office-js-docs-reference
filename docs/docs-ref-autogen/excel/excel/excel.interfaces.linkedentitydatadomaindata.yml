@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.LinkedEntityDataDomain.toJSON](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-tojson-member(1))
+
+  **Excel.LinkedEntityDataDomain** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

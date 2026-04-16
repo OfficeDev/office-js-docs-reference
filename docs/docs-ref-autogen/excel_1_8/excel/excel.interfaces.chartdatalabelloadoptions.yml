@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabel.load](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-load-member(1))
+
+  **Excel.ChartDataLabel** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-load-member(1))
 
 isPreview: false
 isDeprecated: false

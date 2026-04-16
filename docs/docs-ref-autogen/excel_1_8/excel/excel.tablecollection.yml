@@ -15,11 +15,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableCollection.load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
 
-  - [Excel.Workbook.tables](/javascript/api/excel/excel.workbook#excel-excel-workbook-tables-member)
+  **Excel.TableCollection** (1 member)
 
-  - [Excel.Worksheet.tables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tables-member)
+  - [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
+
+
+  **Excel.Workbook** (1 member)
+
+  - [tables](/javascript/api/excel/excel.workbook#excel-excel-workbook-tables-member)
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [tables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tables-member)
 
   #### Examples
 

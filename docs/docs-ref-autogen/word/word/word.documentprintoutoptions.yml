@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.printOut](/javascript/api/word/word.document#word-word-document-printout-member(1))
+
+  **Word.Document** (1 member)
+
+  - [printOut](/javascript/api/word/word.document#word-word-document-printout-member(1))
 
 isPreview: true
 isDeprecated: false

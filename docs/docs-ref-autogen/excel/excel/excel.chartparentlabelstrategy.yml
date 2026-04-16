@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeries.parentLabelStrategy](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-parentlabelstrategy-member)
+
+  **Excel.ChartSeries** (1 member)
+
+  - [parentLabelStrategy](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-parentlabelstrategy-member)
 
 isPreview: false
 isDeprecated: false

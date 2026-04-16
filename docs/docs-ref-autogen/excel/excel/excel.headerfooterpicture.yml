@@ -12,21 +12,27 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.HeaderFooter.centerFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerfooterpicture-member)
 
-  - [Excel.HeaderFooter.centerHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerheaderpicture-member)
+  **Excel.HeaderFooter** (6 members)
 
-  - [Excel.HeaderFooter.leftFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftfooterpicture-member)
+  - [centerFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerfooterpicture-member)
 
-  - [Excel.HeaderFooter.leftHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftheaderpicture-member)
+  - [centerHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerheaderpicture-member)
 
-  - [Excel.HeaderFooter.rightFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightfooterpicture-member)
+  - [leftFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftfooterpicture-member)
 
-  - [Excel.HeaderFooter.rightHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightheaderpicture-member)
+  - [leftHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftheaderpicture-member)
 
-  - [Excel.HeaderFooterPicture.load](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-load-member(1))
+  - [rightFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightfooterpicture-member)
 
-  - [Excel.HeaderFooterPicture.set](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-set-member(2))
+  - [rightHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightheaderpicture-member)
+
+
+  **Excel.HeaderFooterPicture** (2 members)
+
+  - [load](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-load-member(1))
+
+  - [set](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-set-member(2))
 
 isPreview: false
 isDeprecated: false

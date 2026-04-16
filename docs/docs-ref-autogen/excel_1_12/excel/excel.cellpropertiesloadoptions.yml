@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1))
+
+  **Excel.Range** (1 member)
+
+  - [getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1))
 
 isPreview: false
 isDeprecated: false

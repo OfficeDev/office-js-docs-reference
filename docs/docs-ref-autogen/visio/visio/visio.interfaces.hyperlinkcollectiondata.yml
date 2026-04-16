@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.HyperlinkCollection.toJSON](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-tojson-member(1))
+
+  **Visio.HyperlinkCollection** (1 member)
+
+  - [toJSON](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

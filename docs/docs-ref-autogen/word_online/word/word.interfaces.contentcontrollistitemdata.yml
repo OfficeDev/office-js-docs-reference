@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControlListItem.toJSON](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-tojson-member(1))
+
+  **Word.ContentControlListItem** (1 member)
+
+  - [toJSON](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

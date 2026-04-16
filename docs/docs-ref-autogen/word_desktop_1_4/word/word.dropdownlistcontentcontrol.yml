@@ -15,13 +15,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.dropDownListContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-dropdownlistcontentcontrol-member)
 
-  - [Word.DropDownListContentControl.load](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-load-member(1))
+  **Word.ContentControl** (1 member)
 
-  - [Word.DropDownListContentControl.track](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-track-member(1))
+  - [dropDownListContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-dropdownlistcontentcontrol-member)
 
-  - [Word.DropDownListContentControl.untrack](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-untrack-member(1))
+
+  **Word.DropDownListContentControl** (3 members)
+
+  - [load](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-load-member(1))
+
+  - [track](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-track-member(1))
+
+  - [untrack](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-untrack-member(1))
 
   #### Examples
 

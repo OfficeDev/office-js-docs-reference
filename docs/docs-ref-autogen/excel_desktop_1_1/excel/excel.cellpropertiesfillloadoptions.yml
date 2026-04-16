@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellPropertiesFormatLoadOptions.fill](/javascript/api/excel/excel.cellpropertiesformatloadoptions#excel-excel-cellpropertiesformatloadoptions-fill-member)
+
+  **Excel.CellPropertiesFormatLoadOptions** (1 member)
+
+  - [fill](/javascript/api/excel/excel.cellpropertiesformatloadoptions#excel-excel-cellpropertiesformatloadoptions-fill-member)
 
 isPreview: false
 isDeprecated: false

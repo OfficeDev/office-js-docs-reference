@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.HyperlinkCollection.load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(1))
 
-  - [PowerPoint.Slide.hyperlinks](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-hyperlinks-member)
+  **PowerPoint.HyperlinkCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(1))
+
+
+  **PowerPoint.Slide** (1 member)
+
+  - [hyperlinks](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-hyperlinks-member)
 
   #### Examples
 

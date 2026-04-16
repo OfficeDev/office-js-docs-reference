@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeries.format](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-format-member)
 
-  - [Excel.ChartSeriesFormat.load](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-load-member(1))
+  **Excel.ChartSeries** (1 member)
 
-  - [Excel.ChartSeriesFormat.set](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-set-member(2))
+  - [format](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-format-member)
+
+
+  **Excel.ChartSeriesFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

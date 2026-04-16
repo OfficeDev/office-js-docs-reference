@@ -8,95 +8,230 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BindingCollection.load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
 
-  - [Excel.ChartCollection.load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
+  **Excel.BindingCollection** (1 member)
 
-  - [Excel.ChartLegendEntryCollection.load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
+  - [load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
 
-  - [Excel.ChartPointsCollection.load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
 
-  - [Excel.ChartSeriesCollection.load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
+  **Excel.ChartCollection** (1 member)
 
-  - [Excel.ChartTrendlineCollection.load](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
 
-  - [Excel.CommentCollection.load](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-load-member(1))
 
-  - [Excel.CommentReplyCollection.load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(1))
+  **Excel.ChartLegendEntryCollection** (1 member)
 
-  - [Excel.ConditionalFormatCollection.load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
 
-  - [Excel.ConditionalRangeBorderCollection.load](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-load-member(1))
 
-  - [Excel.CustomPropertyCollection.load](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-load-member(1))
+  **Excel.ChartPointsCollection** (1 member)
 
-  - [Excel.CustomXmlPartCollection.load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
 
-  - [Excel.CustomXmlPartScopedCollection.load](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-load-member(1))
 
-  - [Excel.DataPivotHierarchyCollection.load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
+  **Excel.ChartSeriesCollection** (1 member)
 
-  - [Excel.FilterPivotHierarchyCollection.load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(1))
+  - [load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
 
-  - [Excel.GroupShapeCollection.load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(1))
 
-  - [Excel.NamedItemCollection.load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+  **Excel.ChartTrendlineCollection** (1 member)
 
-  - [Excel.NoteCollection.load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
+  - [load](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-load-member(1))
 
-  - [Excel.PageBreakCollection.load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
 
-  - [Excel.PivotFieldCollection.load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
+  **Excel.CommentCollection** (1 member)
 
-  - [Excel.PivotHierarchyCollection.load](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-load-member(1))
+  - [load](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-load-member(1))
 
-  - [Excel.PivotItemCollection.load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
 
-  - [Excel.PivotTableCollection.load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
+  **Excel.CommentReplyCollection** (1 member)
 
-  - [Excel.PivotTableScopedCollection.load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
+  - [load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(1))
 
-  - [Excel.PivotTableStyleCollection.load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
 
-  - [Excel.QueryCollection.load](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-load-member(1))
+  **Excel.ConditionalFormatCollection** (1 member)
 
-  - [Excel.RangeAreasCollection.load](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-load-member(1))
+  - [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
 
-  - [Excel.RangeBorderCollection.load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
 
-  - [Excel.RangeCollection.load](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-load-member(1))
+  **Excel.ConditionalRangeBorderCollection** (1 member)
 
-  - [Excel.RangeViewCollection.load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
+  - [load](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-load-member(1))
 
-  - [Excel.RowColumnPivotHierarchyCollection.load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
 
-  - [Excel.SettingCollection.load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+  **Excel.CustomPropertyCollection** (1 member)
 
-  - [Excel.ShapeCollection.load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(1))
+  - [load](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-load-member(1))
 
-  - [Excel.SlicerCollection.load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(1))
 
-  - [Excel.SlicerItemCollection.load](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-load-member(1))
+  **Excel.CustomXmlPartCollection** (1 member)
 
-  - [Excel.SlicerStyleCollection.load](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-load-member(1))
+  - [load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
 
-  - [Excel.StyleCollection.load](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-load-member(1))
 
-  - [Excel.TableCollection.load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
+  **Excel.CustomXmlPartScopedCollection** (1 member)
 
-  - [Excel.TableColumnCollection.load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+  - [load](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-load-member(1))
 
-  - [Excel.TableRowCollection.load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
 
-  - [Excel.TableScopedCollection.load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
+  **Excel.DataPivotHierarchyCollection** (1 member)
 
-  - [Excel.TableStyleCollection.load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
+  - [load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
 
-  - [Excel.TimelineStyleCollection.load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
 
-  - [Excel.WorksheetCollection.load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
+  **Excel.FilterPivotHierarchyCollection** (1 member)
 
-  - [Excel.WorksheetCustomPropertyCollection.load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
+  - [load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(1))
+
+
+  **Excel.GroupShapeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(1))
+
+
+  **Excel.NamedItemCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+
+
+  **Excel.NoteCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
+
+
+  **Excel.PageBreakCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
+
+
+  **Excel.PivotFieldCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
+
+
+  **Excel.PivotHierarchyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-load-member(1))
+
+
+  **Excel.PivotItemCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
+
+
+  **Excel.PivotTableCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
+
+
+  **Excel.PivotTableScopedCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
+
+
+  **Excel.PivotTableStyleCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
+
+
+  **Excel.QueryCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-load-member(1))
+
+
+  **Excel.RangeAreasCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-load-member(1))
+
+
+  **Excel.RangeBorderCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
+
+
+  **Excel.RangeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-load-member(1))
+
+
+  **Excel.RangeViewCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
+
+
+  **Excel.RowColumnPivotHierarchyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
+
+
+  **Excel.SettingCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+
+
+  **Excel.ShapeCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(1))
+
+
+  **Excel.SlicerCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(1))
+
+
+  **Excel.SlicerItemCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-load-member(1))
+
+
+  **Excel.SlicerStyleCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-load-member(1))
+
+
+  **Excel.StyleCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-load-member(1))
+
+
+  **Excel.TableCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
+
+
+  **Excel.TableColumnCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+
+
+  **Excel.TableRowCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
+
+
+  **Excel.TableScopedCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
+
+
+  **Excel.TableStyleCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
+
+
+  **Excel.TimelineStyleCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
+
+
+  **Excel.WorksheetCustomPropertyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

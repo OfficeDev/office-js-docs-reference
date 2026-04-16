@@ -15,11 +15,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PageLayout.load](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-load-member(1))
 
-  - [Excel.PageLayout.set](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-set-member(2))
+  **Excel.PageLayout** (2 members)
 
-  - [Excel.Worksheet.pageLayout](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pagelayout-member)
+  - [load](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-load-member(1))
+
+  - [set](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-set-member(2))
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [pageLayout](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pagelayout-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Application.load](/javascript/api/visio/visio.application#visio-visio-application-load-member(1))
+
+  **Visio.Application** (1 member)
+
+  - [load](/javascript/api/visio/visio.application#visio-visio-application-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -18,15 +18,30 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AttachmentDetails.attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
 
-  - [Office.AttachmentDetailsCompose.attachmentType](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-attachmenttype-member)
+  **Office.AttachmentDetails** (1 member)
 
-  - [Office.DecryptedMessageAttachment.attachmentType](/javascript/api/outlook/office.decryptedmessageattachment#outlook-office-decryptedmessageattachment-attachmenttype-member)
+  - [attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
 
-  - [Office.MessageFormAttachment.type](/javascript/api/outlook/office.messageformattachment#outlook-office-messageformattachment-type-member)
 
-  - [Office.ReplyFormAttachment.type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
+  **Office.AttachmentDetailsCompose** (1 member)
+
+  - [attachmentType](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-attachmenttype-member)
+
+
+  **Office.DecryptedMessageAttachment** (1 member)
+
+  - [attachmentType](/javascript/api/outlook/office.decryptedmessageattachment#outlook-office-decryptedmessageattachment-attachmenttype-member)
+
+
+  **Office.MessageFormAttachment** (1 member)
+
+  - [type](/javascript/api/outlook/office.messageformattachment#outlook-office-messageformattachment-type-member)
+
+
+  **Office.ReplyFormAttachment** (1 member)
+
+  - [type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
 
   #### Examples
 

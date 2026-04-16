@@ -13,11 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabels.leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)
 
-  - [Excel.ChartLeaderLines.load](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-load-member(1))
+  **Excel.ChartDataLabels** (1 member)
 
-  - [Excel.ChartLeaderLines.set](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-set-member(2))
+  - [leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)
+
+
+  **Excel.ChartLeaderLines** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-set-member(2))
 
   #### Examples
 

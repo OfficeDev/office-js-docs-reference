@@ -17,15 +17,24 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ComboBoxContentControl.listItems](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-listitems-member)
 
-  - [Word.ContentControlListItemCollection.load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+  **Word.ComboBoxContentControl** (1 member)
 
-  - [Word.ContentControlListItemCollection.track](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-track-member(1))
+  - [listItems](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-listitems-member)
 
-  - [Word.ContentControlListItemCollection.untrack](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-untrack-member(1))
 
-  - [Word.DropDownListContentControl.listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)
+  **Word.ContentControlListItemCollection** (3 members)
+
+  - [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+
+  - [track](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-untrack-member(1))
+
+
+  **Word.DropDownListContentControl** (1 member)
+
+  - [listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)
 
   #### Examples
 

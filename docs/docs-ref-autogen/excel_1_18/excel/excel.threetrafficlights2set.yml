@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.IconCollections.threeTrafficLights2](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetrafficlights2-member)
+
+  **Excel.IconCollections** (1 member)
+
+  - [threeTrafficLights2](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetrafficlights2-member)
 
 isPreview: false
 isDeprecated: false

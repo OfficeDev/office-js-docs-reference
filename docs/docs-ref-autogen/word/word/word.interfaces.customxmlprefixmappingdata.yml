@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlPrefixMapping.toJSON](/javascript/api/word/word.customxmlprefixmapping#word-word-customxmlprefixmapping-tojson-member(1))
+
+  **Word.CustomXmlPrefixMapping** (1 member)
+
+  - [toJSON](/javascript/api/word/word.customxmlprefixmapping#word-word-customxmlprefixmapping-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

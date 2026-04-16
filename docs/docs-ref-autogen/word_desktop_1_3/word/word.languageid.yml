@@ -12,23 +12,38 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Application.language](/javascript/api/word/word.application#word-word-application-language-member)
 
-  - [Word.DatePickerContentControl.dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
+  **Word.Application** (1 member)
 
-  - [Word.Range.languageId](/javascript/api/word/word.range#word-word-range-languageid-member)
+  - [language](/javascript/api/word/word.application#word-word-application-language-member)
 
-  - [Word.Range.languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member)
 
-  - [Word.Range.languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
+  **Word.DatePickerContentControl** (1 member)
 
-  - [Word.Style.languageId](/javascript/api/word/word.style#word-word-style-languageid-member)
+  - [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
 
-  - [Word.Style.languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
 
-  - [Word.Template.languageId](/javascript/api/word/word.template#word-word-template-languageid-member)
+  **Word.Range** (3 members)
 
-  - [Word.Template.languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
+  - [languageId](/javascript/api/word/word.range#word-word-range-languageid-member)
+
+  - [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member)
+
+  - [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
+
+
+  **Word.Style** (2 members)
+
+  - [languageId](/javascript/api/word/word.style#word-word-style-languageid-member)
+
+  - [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
+
+
+  **Word.Template** (2 members)
+
+  - [languageId](/javascript/api/word/word.template#word-word-template-languageid-member)
+
+  - [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
 
 isPreview: false
 isDeprecated: false

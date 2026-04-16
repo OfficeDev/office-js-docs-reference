@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Document.view](/javascript/api/visio/visio.document#visio-visio-document-view-member)
 
-  - [Visio.DocumentView.load](/javascript/api/visio/visio.documentview#visio-visio-documentview-load-member(1))
+  **Visio.Document** (1 member)
 
-  - [Visio.DocumentView.set](/javascript/api/visio/visio.documentview#visio-visio-documentview-set-member(2))
+  - [view](/javascript/api/visio/visio.document#visio-visio-document-view-member)
+
+
+  **Visio.DocumentView** (2 members)
+
+  - [load](/javascript/api/visio/visio.documentview#visio-visio-documentview-load-member(1))
+
+  - [set](/javascript/api/visio/visio.documentview#visio-visio-documentview-set-member(2))
 
 isPreview: false
 isDeprecated: false

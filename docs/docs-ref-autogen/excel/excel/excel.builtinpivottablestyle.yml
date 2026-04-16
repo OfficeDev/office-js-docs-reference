@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotLayout.setStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))
+
+  **Excel.PivotLayout** (1 member)
+
+  - [setStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))
 
 isPreview: true
 isDeprecated: false

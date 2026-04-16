@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PaneCollection.load](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-load-member(1))
 
-  - [Excel.Window.panes](/javascript/api/excel/excel.window#excel-excel-window-panes-member)
+  **Excel.PaneCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-load-member(1))
+
+
+  **Excel.Window** (1 member)
+
+  - [panes](/javascript/api/excel/excel.window#excel-excel-window-panes-member)
 
 isPreview: false
 isDeprecated: false

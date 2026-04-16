@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DocumentMergeOptions.useFormattingFrom](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-useformattingfrom-member)
+
+  **Word.DocumentMergeOptions** (1 member)
+
+  - [useFormattingFrom](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-useformattingfrom-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeBorder.set](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-set-member(1))
+
+  **Excel.RangeBorder** (1 member)
+
+  - [set](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-set-member(1))
 
 isPreview: false
 isDeprecated: false

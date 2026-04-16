@@ -11,7 +11,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.GoToByIdOptions.selectionMode](/javascript/api/office/office.gotobyidoptions#office-office-gotobyidoptions-selectionmode-member)
+
+  **Office.GoToByIdOptions** (1 member)
+
+  - [selectionMode](/javascript/api/office/office.gotobyidoptions#office-office-gotobyidoptions-selectionmode-member)
 
 isPreview: false
 isDeprecated: false

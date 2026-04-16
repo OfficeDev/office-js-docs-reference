@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.GoToOptions.direction](/javascript/api/word/word.gotooptions#word-word-gotooptions-direction-member)
+
+  **Word.GoToOptions** (1 member)
+
+  - [direction](/javascript/api/word/word.gotooptions#word-word-gotooptions-direction-member)
 
 isPreview: false
 isDeprecated: false

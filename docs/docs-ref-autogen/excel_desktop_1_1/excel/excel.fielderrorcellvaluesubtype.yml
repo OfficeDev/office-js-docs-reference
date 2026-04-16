@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.FieldErrorCellValue.errorSubType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errorsubtype-member)
+
+  **Excel.FieldErrorCellValue** (1 member)
+
+  - [errorSubType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,15 +13,21 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Tag.load](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-load-member(1))
 
-  - [PowerPoint.TagCollection.getItem](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-getitem-member(1))
+  **PowerPoint.Tag** (1 member)
 
-  - [PowerPoint.TagCollection.getItemAt](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-getitemat-member(1))
+  - [load](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-load-member(1))
 
-  - [PowerPoint.TagCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-getitemornullobject-member(1))
 
-  - [PowerPoint.TagCollection.items](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-items-member)
+  **PowerPoint.TagCollection** (4 members)
+
+  - [getItem](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-getitem-member(1))
+
+  - [getItemAt](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-getitemat-member(1))
+
+  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-items-member)
 
   #### Examples
 

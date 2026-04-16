@@ -10,13 +10,15 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Section.getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1))
 
-  - [Word.Section.getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
+  **Word.Section** (2 members)
+
+  - [getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1))
+
+  - [getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
 
   #### Examples
 

@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataPivotHierarchy.summarizeBy](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-summarizeby-member)
+
+  **Excel.DataPivotHierarchy** (1 member)
+
+  - [summarizeBy](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-summarizeby-member)
 
   #### Examples
 

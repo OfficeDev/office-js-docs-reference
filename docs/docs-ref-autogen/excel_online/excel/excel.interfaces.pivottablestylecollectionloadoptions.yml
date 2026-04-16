@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotTableStyleCollection.load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
+
+  **Excel.PivotTableStyleCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

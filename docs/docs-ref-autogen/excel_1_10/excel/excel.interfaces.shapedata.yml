@@ -8,7 +8,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Shape.toJSON](/javascript/api/excel/excel.shape#excel-excel-shape-tojson-member(1))
+
+  **Excel.Shape** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.shape#excel-excel-shape-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

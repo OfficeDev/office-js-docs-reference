@@ -20,13 +20,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Application.templates](/javascript/api/word/word.application#word-word-application-templates-member)
 
-  - [Word.TemplateCollection.load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(1))
+  **Word.Application** (1 member)
 
-  - [Word.TemplateCollection.track](/javascript/api/word/word.templatecollection#word-word-templatecollection-track-member(1))
+  - [templates](/javascript/api/word/word.application#word-word-application-templates-member)
 
-  - [Word.TemplateCollection.untrack](/javascript/api/word/word.templatecollection#word-word-templatecollection-untrack-member(1))
+
+  **Word.TemplateCollection** (3 members)
+
+  - [load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(1))
+
+  - [track](/javascript/api/word/word.templatecollection#word-word-templatecollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.templatecollection#word-word-templatecollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

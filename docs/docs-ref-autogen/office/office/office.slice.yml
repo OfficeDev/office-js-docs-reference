@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.File.getSliceAsync](/javascript/api/office/office.file#office-office-file-getsliceasync-member(1))
+
+  **Office.File** (1 member)
+
+  - [getSliceAsync](/javascript/api/office/office.file#office-office-file-getsliceasync-member(1))
 
   #### Examples
 

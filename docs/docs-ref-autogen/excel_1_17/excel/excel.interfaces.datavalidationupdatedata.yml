@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataValidation.set](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-set-member(1))
+
+  **Excel.DataValidation** (1 member)
+
+  - [set](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-set-member(1))
 
 isPreview: false
 isDeprecated: false

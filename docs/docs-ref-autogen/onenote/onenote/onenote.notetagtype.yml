@@ -12,9 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.NoteTag.type](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-type-member)
 
-  - [OneNote.Paragraph.addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
+  **OneNote.NoteTag** (1 member)
+
+  - [type](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-type-member)
+
+
+  **OneNote.Paragraph** (1 member)
+
+  - [addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
 
 isPreview: false
 isDeprecated: false

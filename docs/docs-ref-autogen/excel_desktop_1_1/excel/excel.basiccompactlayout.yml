@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BasicViewLayouts.compact](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-compact-member)
+
+  **Excel.BasicViewLayouts** (1 member)
+
+  - [compact](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-compact-member)
 
 isPreview: false
 isDeprecated: false

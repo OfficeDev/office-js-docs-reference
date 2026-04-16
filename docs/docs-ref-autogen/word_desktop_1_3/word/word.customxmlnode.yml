@@ -16,49 +16,70 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlAddNodeOptions.nextSibling](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-nextsibling-member)
 
-  - [Word.CustomXmlInsertNodeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-nextsibling-member)
+  **Word.CustomXmlAddNodeOptions** (1 member)
 
-  - [Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions#word-word-customxmlinsertsubtreebeforeoptions-nextsibling-member)
+  - [nextSibling](/javascript/api/word/word.customxmladdnodeoptions#word-word-customxmladdnodeoptions-nextsibling-member)
 
-  - [Word.CustomXmlNode.firstChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-firstchild-member)
 
-  - [Word.CustomXmlNode.lastChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-lastchild-member)
+  **Word.CustomXmlInsertNodeBeforeOptions** (1 member)
 
-  - [Word.CustomXmlNode.load](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-load-member(1))
+  - [nextSibling](/javascript/api/word/word.customxmlinsertnodebeforeoptions#word-word-customxmlinsertnodebeforeoptions-nextsibling-member)
 
-  - [Word.CustomXmlNode.nextSibling](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-nextsibling-member)
 
-  - [Word.CustomXmlNode.parentNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-parentnode-member)
+  **Word.CustomXmlInsertSubtreeBeforeOptions** (1 member)
 
-  - [Word.CustomXmlNode.previousSibling](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-previoussibling-member)
+  - [nextSibling](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions#word-word-customxmlinsertsubtreebeforeoptions-nextsibling-member)
 
-  - [Word.CustomXmlNode.removeChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-removechild-member(1))
 
-  - [Word.CustomXmlNode.replaceChildNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildnode-member(1))
+  **Word.CustomXmlNode** (13 members)
 
-  - [Word.CustomXmlNode.replaceChildSubtree](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildsubtree-member(1))
+  - [firstChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-firstchild-member)
 
-  - [Word.CustomXmlNode.selectSingleNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectsinglenode-member(1))
+  - [lastChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-lastchild-member)
 
-  - [Word.CustomXmlNode.set](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-set-member(2))
+  - [load](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-load-member(1))
 
-  - [Word.CustomXmlNode.track](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-track-member(1))
+  - [nextSibling](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-nextsibling-member)
 
-  - [Word.CustomXmlNode.untrack](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-untrack-member(1))
+  - [parentNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-parentnode-member)
 
-  - [Word.CustomXmlNodeCollection.items](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-items-member)
+  - [previousSibling](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-previoussibling-member)
 
-  - [Word.CustomXmlPart.addNode](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-addnode-member(1))
+  - [removeChild](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-removechild-member(1))
 
-  - [Word.CustomXmlPart.documentElement](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-documentelement-member)
+  - [replaceChildNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildnode-member(1))
 
-  - [Word.CustomXmlPart.selectSingleNode](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectsinglenode-member(1))
+  - [replaceChildSubtree](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildsubtree-member(1))
 
-  - [Word.XmlMapping.customXmlNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlnode-member)
+  - [selectSingleNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectsinglenode-member(1))
 
-  - [Word.XmlMapping.setMappingByNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmappingbynode-member(1))
+  - [set](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-set-member(2))
+
+  - [track](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-track-member(1))
+
+  - [untrack](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-untrack-member(1))
+
+
+  **Word.CustomXmlNodeCollection** (1 member)
+
+  - [items](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-items-member)
+
+
+  **Word.CustomXmlPart** (3 members)
+
+  - [addNode](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-addnode-member(1))
+
+  - [documentElement](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-documentelement-member)
+
+  - [selectSingleNode](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectsinglenode-member(1))
+
+
+  **Word.XmlMapping** (2 members)
+
+  - [customXmlNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlnode-member)
+
+  - [setMappingByNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmappingbynode-member(1))
 
 isPreview: false
 isDeprecated: false

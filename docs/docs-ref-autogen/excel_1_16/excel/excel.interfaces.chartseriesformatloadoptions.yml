@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeriesFormat.load](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-load-member(1))
+
+  **Excel.ChartSeriesFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

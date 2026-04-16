@@ -10,13 +10,18 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.Presentation.getSelectedSlides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedslides-member(1))
 
-  - [PowerPoint.SlideScopedCollection.load](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-load-member(1))
+  **PowerPoint.Presentation** (1 member)
+
+  - [getSelectedSlides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedslides-member(1))
+
+
+  **PowerPoint.SlideScopedCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-load-member(1))
 
   #### Examples
 

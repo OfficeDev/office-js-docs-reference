@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReadabilityStatistic.load](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-load-member(1))
 
-  - [Word.ReadabilityStatistic.track](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-track-member(1))
+  **Word.ReadabilityStatistic** (3 members)
 
-  - [Word.ReadabilityStatistic.untrack](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-untrack-member(1))
+  - [load](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-load-member(1))
 
-  - [Word.ReadabilityStatisticCollection.getItemAt](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-getitemat-member(1))
+  - [track](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-track-member(1))
 
-  - [Word.ReadabilityStatisticCollection.items](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-items-member)
+  - [untrack](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-untrack-member(1))
+
+
+  **Word.ReadabilityStatisticCollection** (2 members)
+
+  - [getItemAt](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-getitemat-member(1))
+
+  - [items](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-items-member)
 
 isPreview: false
 isDeprecated: false

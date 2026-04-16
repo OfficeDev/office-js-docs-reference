@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxisTitle.format](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-format-member)
 
-  - [Excel.ChartAxisTitleFormat.load](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-load-member(1))
+  **Excel.ChartAxisTitle** (1 member)
 
-  - [Excel.ChartAxisTitleFormat.set](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-set-member(2))
+  - [format](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-format-member)
+
+
+  **Excel.ChartAxisTitleFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

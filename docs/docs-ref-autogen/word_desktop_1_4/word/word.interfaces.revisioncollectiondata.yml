@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.RevisionCollection.toJSON](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-tojson-member(1))
+
+  **Word.RevisionCollection** (1 member)
+
+  - [toJSON](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

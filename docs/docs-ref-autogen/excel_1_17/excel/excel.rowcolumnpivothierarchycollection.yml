@@ -14,11 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotTable.columnHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-columnhierarchies-member)
 
-  - [Excel.PivotTable.rowHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-rowhierarchies-member)
+  **Excel.PivotTable** (2 members)
 
-  - [Excel.RowColumnPivotHierarchyCollection.load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
+  - [columnHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-columnhierarchies-member)
+
+  - [rowHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-rowhierarchies-member)
+
+
+  **Excel.RowColumnPivotHierarchyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

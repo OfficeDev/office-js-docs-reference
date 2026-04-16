@@ -12,11 +12,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [PowerPoint.Shape.setZOrder](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-setzorder-member(1))
+
+  **PowerPoint.Shape** (1 member)
+
+  - [setZOrder](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-setzorder-member(1))
 
   #### Examples
 

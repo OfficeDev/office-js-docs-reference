@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.WorksheetCollection.onDeleted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-ondeleted-member)
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [onDeleted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-ondeleted-member)
 
 isPreview: false
 isDeprecated: false

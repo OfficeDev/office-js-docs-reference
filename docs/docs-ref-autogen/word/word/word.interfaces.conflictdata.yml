@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Conflict.toJSON](/javascript/api/word/word.conflict#word-word-conflict-tojson-member(1))
+
+  **Word.Conflict** (1 member)
+
+  - [toJSON](/javascript/api/word/word.conflict#word-word-conflict-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

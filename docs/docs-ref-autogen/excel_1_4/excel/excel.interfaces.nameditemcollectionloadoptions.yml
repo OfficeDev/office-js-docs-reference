@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItemCollection.load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+
+  **Excel.NamedItemCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

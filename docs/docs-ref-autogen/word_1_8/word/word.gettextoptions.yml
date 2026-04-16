@@ -12,11 +12,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.Paragraph.getText](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))
+
+  **Word.Paragraph** (1 member)
+
+  - [getText](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))
 
   #### Examples
 

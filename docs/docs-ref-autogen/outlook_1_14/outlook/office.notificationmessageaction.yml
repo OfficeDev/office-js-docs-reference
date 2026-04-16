@@ -28,7 +28,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.NotificationMessageDetails.actions](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-actions-member)
+
+  **Office.NotificationMessageDetails** (1 member)
+
+  - [actions](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-actions-member)
 
   #### Examples
 

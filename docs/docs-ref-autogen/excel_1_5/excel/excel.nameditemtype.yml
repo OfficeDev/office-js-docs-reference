@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItem.type](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-type-member)
+
+  **Excel.NamedItem** (1 member)
+
+  - [type](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-type-member)
 
 isPreview: false
 isDeprecated: false

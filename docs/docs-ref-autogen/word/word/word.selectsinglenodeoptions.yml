@@ -15,9 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
 
-  - [Word.XmlNode.selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
+  **Word.Document** (1 member)
+
+  - [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
+
+
+  **Word.XmlNode** (1 member)
+
+  - [selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.AutorunEventCompletedOptions.autorunEventType](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-autoruneventtype-member)
+
+  **Excel.AutorunEventCompletedOptions** (1 member)
+
+  - [autorunEventType](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-autoruneventtype-member)
 
 isPreview: true
 isDeprecated: false

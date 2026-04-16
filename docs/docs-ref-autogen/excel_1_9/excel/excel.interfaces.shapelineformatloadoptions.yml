@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeLineFormat.load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1))
+
+  **Excel.ShapeLineFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

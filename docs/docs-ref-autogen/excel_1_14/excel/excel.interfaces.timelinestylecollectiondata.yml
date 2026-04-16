@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TimelineStyleCollection.toJSON](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-tojson-member(1))
+
+  **Excel.TimelineStyleCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

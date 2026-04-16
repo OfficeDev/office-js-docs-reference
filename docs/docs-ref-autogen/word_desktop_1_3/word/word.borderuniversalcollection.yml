@@ -14,21 +14,39 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BorderUniversalCollection.load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
 
-  - [Word.BorderUniversalCollection.track](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-track-member(1))
+  **Word.BorderUniversalCollection** (3 members)
 
-  - [Word.BorderUniversalCollection.untrack](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-untrack-member(1))
+  - [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
 
-  - [Word.Font.borders](/javascript/api/word/word.font#word-word-font-borders-member)
+  - [track](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-track-member(1))
 
-  - [Word.Frame.borders](/javascript/api/word/word.frame#word-word-frame-borders-member)
+  - [untrack](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-untrack-member(1))
 
-  - [Word.Paragraph.borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)
 
-  - [Word.Section.borders](/javascript/api/word/word.section#word-word-section-borders-member)
+  **Word.Font** (1 member)
 
-  - [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-borders-member)
+  - [borders](/javascript/api/word/word.font#word-word-font-borders-member)
+
+
+  **Word.Frame** (1 member)
+
+  - [borders](/javascript/api/word/word.frame#word-word-frame-borders-member)
+
+
+  **Word.Paragraph** (1 member)
+
+  - [borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)
+
+
+  **Word.Section** (1 member)
+
+  - [borders](/javascript/api/word/word.section#word-word-section-borders-member)
+
+
+  **Word.TableColumn** (1 member)
+
+  - [borders](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-borders-member)
 
 isPreview: false
 isDeprecated: false

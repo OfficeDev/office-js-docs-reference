@@ -14,13 +14,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CoauthorCollection.load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(1))
 
-  - [Word.CoauthorCollection.track](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-track-member(1))
+  **Word.CoauthorCollection** (3 members)
 
-  - [Word.CoauthorCollection.untrack](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-untrack-member(1))
+  - [load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(1))
 
-  - [Word.Coauthoring.authors](/javascript/api/word/word.coauthoring#word-word-coauthoring-authors-member)
+  - [track](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-untrack-member(1))
+
+
+  **Word.Coauthoring** (1 member)
+
+  - [authors](/javascript/api/word/word.coauthoring#word-word-coauthoring-authors-member)
 
 isPreview: false
 isDeprecated: false

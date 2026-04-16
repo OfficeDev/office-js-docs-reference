@@ -15,109 +15,265 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Application.context](/javascript/api/excel/excel.application#excel-excel-application-context-member)
 
-  - [Excel.Binding.context](/javascript/api/excel/excel.binding#excel-excel-binding-context-member)
+  **Excel.Application** (1 member)
 
-  - [Excel.BindingCollection.context](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-context-member)
+  - [context](/javascript/api/excel/excel.application#excel-excel-application-context-member)
 
-  - [Excel.Chart.context](/javascript/api/excel/excel.chart#excel-excel-chart-context-member)
 
-  - [Excel.ChartAreaFormat.context](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-context-member)
+  **Excel.Binding** (1 member)
 
-  - [Excel.ChartAxes.context](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-context-member)
+  - [context](/javascript/api/excel/excel.binding#excel-excel-binding-context-member)
 
-  - [Excel.ChartAxis.context](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-context-member)
 
-  - [Excel.ChartAxisFormat.context](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-context-member)
+  **Excel.BindingCollection** (1 member)
 
-  - [Excel.ChartAxisTitle.context](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-context-member)
+  - [context](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-context-member)
 
-  - [Excel.ChartAxisTitleFormat.context](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-context-member)
 
-  - [Excel.ChartCollection.context](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-context-member)
+  **Excel.Chart** (1 member)
 
-  - [Excel.ChartDataLabelFormat.context](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-context-member)
+  - [context](/javascript/api/excel/excel.chart#excel-excel-chart-context-member)
 
-  - [Excel.ChartDataLabels.context](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-context-member)
 
-  - [Excel.ChartFill.context](/javascript/api/excel/excel.chartfill#excel-excel-chartfill-context-member)
+  **Excel.ChartAreaFormat** (1 member)
 
-  - [Excel.ChartFont.context](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-context-member)
+  - [context](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-context-member)
 
-  - [Excel.ChartGridlines.context](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-context-member)
 
-  - [Excel.ChartGridlinesFormat.context](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-context-member)
+  **Excel.ChartAxes** (1 member)
 
-  - [Excel.ChartLegend.context](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-context-member)
+  - [context](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-context-member)
 
-  - [Excel.ChartLegendFormat.context](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-context-member)
 
-  - [Excel.ChartLineFormat.context](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-context-member)
+  **Excel.ChartAxis** (1 member)
 
-  - [Excel.ChartPoint.context](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-context-member)
+  - [context](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-context-member)
 
-  - [Excel.ChartPointFormat.context](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-context-member)
 
-  - [Excel.ChartPointsCollection.context](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-context-member)
+  **Excel.ChartAxisFormat** (1 member)
 
-  - [Excel.ChartSeries.context](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-context-member)
+  - [context](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-context-member)
 
-  - [Excel.ChartSeriesCollection.context](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-context-member)
 
-  - [Excel.ChartSeriesFormat.context](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-context-member)
+  **Excel.ChartAxisTitle** (1 member)
 
-  - [Excel.ChartTitle.context](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-context-member)
+  - [context](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-context-member)
 
-  - [Excel.ChartTitleFormat.context](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-context-member)
 
-  - [Excel.Filter.context](/javascript/api/excel/excel.filter#excel-excel-filter-context-member)
+  **Excel.ChartAxisTitleFormat** (1 member)
 
-  - [Excel.FormatProtection.context](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-context-member)
+  - [context](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-context-member)
 
-  - [Excel.FunctionResult.context](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-context-member)
 
-  - [Excel.Functions.context](/javascript/api/excel/excel.functions#excel-excel-functions-context-member)
+  **Excel.ChartCollection** (1 member)
 
-  - [Excel.NamedItem.context](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-context-member)
+  - [context](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-context-member)
 
-  - [Excel.NamedItemCollection.context](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-context-member)
 
-  - [Excel.Range.context](/javascript/api/excel/excel.range#excel-excel-range-context-member)
+  **Excel.ChartDataLabelFormat** (1 member)
 
-  - [Excel.RangeBorder.context](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-context-member)
+  - [context](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-context-member)
 
-  - [Excel.RangeBorderCollection.context](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-context-member)
 
-  - [Excel.RangeFill.context](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-context-member)
+  **Excel.ChartDataLabels** (1 member)
 
-  - [Excel.RangeFont.context](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-context-member)
+  - [context](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-context-member)
 
-  - [Excel.RangeFormat.context](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-context-member)
 
-  - [Excel.RangeSort.context](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-context-member)
+  **Excel.ChartFill** (1 member)
 
-  - [Excel.Table.context](/javascript/api/excel/excel.table#excel-excel-table-context-member)
+  - [context](/javascript/api/excel/excel.chartfill#excel-excel-chartfill-context-member)
 
-  - [Excel.TableCollection.context](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-context-member)
 
-  - [Excel.TableColumn.context](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-context-member)
+  **Excel.ChartFont** (1 member)
 
-  - [Excel.TableColumnCollection.context](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-context-member)
+  - [context](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-context-member)
 
-  - [Excel.TableRow.context](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-context-member)
 
-  - [Excel.TableRowCollection.context](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-context-member)
+  **Excel.ChartGridlines** (1 member)
 
-  - [Excel.TableSort.context](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-context-member)
+  - [context](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-context-member)
 
-  - [Excel.Workbook.context](/javascript/api/excel/excel.workbook#excel-excel-workbook-context-member)
 
-  - [Excel.Worksheet.context](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-context-member)
+  **Excel.ChartGridlinesFormat** (1 member)
 
-  - [Excel.WorksheetCollection.context](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-context-member)
+  - [context](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-context-member)
 
-  - [Excel.WorksheetProtection.context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
+
+  **Excel.ChartLegend** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-context-member)
+
+
+  **Excel.ChartLegendFormat** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-context-member)
+
+
+  **Excel.ChartLineFormat** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-context-member)
+
+
+  **Excel.ChartPoint** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-context-member)
+
+
+  **Excel.ChartPointFormat** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-context-member)
+
+
+  **Excel.ChartPointsCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-context-member)
+
+
+  **Excel.ChartSeries** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-context-member)
+
+
+  **Excel.ChartSeriesCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-context-member)
+
+
+  **Excel.ChartSeriesFormat** (1 member)
+
+  - [context](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-context-member)
+
+
+  **Excel.ChartTitle** (1 member)
+
+  - [context](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-context-member)
+
+
+  **Excel.ChartTitleFormat** (1 member)
+
+  - [context](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-context-member)
+
+
+  **Excel.Filter** (1 member)
+
+  - [context](/javascript/api/excel/excel.filter#excel-excel-filter-context-member)
+
+
+  **Excel.FormatProtection** (1 member)
+
+  - [context](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-context-member)
+
+
+  **Excel.FunctionResult** (1 member)
+
+  - [context](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-context-member)
+
+
+  **Excel.Functions** (1 member)
+
+  - [context](/javascript/api/excel/excel.functions#excel-excel-functions-context-member)
+
+
+  **Excel.NamedItem** (1 member)
+
+  - [context](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-context-member)
+
+
+  **Excel.NamedItemCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-context-member)
+
+
+  **Excel.Range** (1 member)
+
+  - [context](/javascript/api/excel/excel.range#excel-excel-range-context-member)
+
+
+  **Excel.RangeBorder** (1 member)
+
+  - [context](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-context-member)
+
+
+  **Excel.RangeBorderCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-context-member)
+
+
+  **Excel.RangeFill** (1 member)
+
+  - [context](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-context-member)
+
+
+  **Excel.RangeFont** (1 member)
+
+  - [context](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-context-member)
+
+
+  **Excel.RangeFormat** (1 member)
+
+  - [context](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-context-member)
+
+
+  **Excel.RangeSort** (1 member)
+
+  - [context](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-context-member)
+
+
+  **Excel.Table** (1 member)
+
+  - [context](/javascript/api/excel/excel.table#excel-excel-table-context-member)
+
+
+  **Excel.TableCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-context-member)
+
+
+  **Excel.TableColumn** (1 member)
+
+  - [context](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-context-member)
+
+
+  **Excel.TableColumnCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-context-member)
+
+
+  **Excel.TableRow** (1 member)
+
+  - [context](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-context-member)
+
+
+  **Excel.TableRowCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-context-member)
+
+
+  **Excel.TableSort** (1 member)
+
+  - [context](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-context-member)
+
+
+  **Excel.Workbook** (1 member)
+
+  - [context](/javascript/api/excel/excel.workbook#excel-excel-workbook-context-member)
+
+
+  **Excel.Worksheet** (1 member)
+
+  - [context](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-context-member)
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [context](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-context-member)
+
+
+  **Excel.WorksheetProtection** (1 member)
+
+  - [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
 
   #### Examples
 

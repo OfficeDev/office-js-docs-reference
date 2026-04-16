@@ -13,13 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabel.geometricShapeType](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-geometricshapetype-member)
 
-  - [Excel.ChartDataLabels.geometricShapeType](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-geometricshapetype-member)
+  **Excel.ChartDataLabel** (1 member)
 
-  - [Excel.Shape.geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
+  - [geometricShapeType](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-geometricshapetype-member)
 
-  - [Excel.ShapeCollection.addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
+
+  **Excel.ChartDataLabels** (1 member)
+
+  - [geometricShapeType](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-geometricshapetype-member)
+
+
+  **Excel.Shape** (1 member)
+
+  - [geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
+
+
+  **Excel.ShapeCollection** (1 member)
+
+  - [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
 
   #### Examples
 

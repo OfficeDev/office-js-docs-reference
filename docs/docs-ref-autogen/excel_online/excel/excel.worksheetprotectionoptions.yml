@@ -12,13 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.WorksheetProtection.options](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-options-member)
 
-  - [Excel.WorksheetProtection.protect](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protect-member(1))
+  **Excel.WorksheetProtection** (4 members)
 
-  - [Excel.WorksheetProtection.savedOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-savedoptions-member)
+  - [options](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-options-member)
 
-  - [Excel.WorksheetProtection.updateOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-updateoptions-member(1))
+  - [protect](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protect-member(1))
+
+  - [savedOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-savedoptions-member)
+
+  - [updateOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-updateoptions-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,13 +14,22 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeFont.load](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-load-member(1))
 
-  - [Excel.RangeFont.set](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-set-member(2))
+  **Excel.RangeFont** (2 members)
 
-  - [Excel.RangeFormat.font](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-font-member)
+  - [load](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-load-member(1))
 
-  - [Excel.Style.font](/javascript/api/excel/excel.style#excel-excel-style-font-member)
+  - [set](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-set-member(2))
+
+
+  **Excel.RangeFormat** (1 member)
+
+  - [font](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-font-member)
+
+
+  **Excel.Style** (1 member)
+
+  - [font](/javascript/api/excel/excel.style#excel-excel-style-font-member)
 
 isPreview: false
 isDeprecated: false

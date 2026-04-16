@@ -13,11 +13,20 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Field.type](/javascript/api/word/word.field#word-word-field-type-member)
 
-  - [Word.FieldCollection.getByTypes](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getbytypes-member(1))
+  **Word.Field** (1 member)
 
-  - [Word.Range.insertField](/javascript/api/word/word.range#word-word-range-insertfield-member(1))
+  - [type](/javascript/api/word/word.field#word-word-field-type-member)
+
+
+  **Word.FieldCollection** (1 member)
+
+  - [getByTypes](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getbytypes-member(1))
+
+
+  **Word.Range** (1 member)
+
+  - [insertField](/javascript/api/word/word.range#word-word-range-insertfield-member(1))
 
   #### Examples
 

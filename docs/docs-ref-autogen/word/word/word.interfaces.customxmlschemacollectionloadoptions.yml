@@ -15,7 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlSchemaCollection.load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(1))
+
+  **Word.CustomXmlSchemaCollection** (1 member)
+
+  - [load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

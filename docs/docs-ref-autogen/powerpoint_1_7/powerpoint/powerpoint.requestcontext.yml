@@ -15,63 +15,150 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - [PowerPoint.BulletFormat.context](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-context-member)
+  **PowerPoint.Application** (1 member)
 
-  - [PowerPoint.CustomProperty.context](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - [PowerPoint.CustomPropertyCollection.context](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-context-member)
 
-  - [PowerPoint.CustomXmlPart.context](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-context-member)
+  **PowerPoint.BulletFormat** (1 member)
 
-  - [PowerPoint.CustomXmlPartCollection.context](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-context-member)
 
-  - [PowerPoint.CustomXmlPartScopedCollection.context](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-context-member)
 
-  - [PowerPoint.DocumentProperties.context](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-context-member)
+  **PowerPoint.CustomProperty** (1 member)
 
-  - [PowerPoint.Hyperlink.context](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-context-member)
 
-  - [PowerPoint.HyperlinkCollection.context](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-context-member)
 
-  - [PowerPoint.ParagraphFormat.context](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-context-member)
+  **PowerPoint.CustomPropertyCollection** (1 member)
 
-  - [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-context-member)
 
-  - [PowerPoint.Shape.context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
 
-  - [PowerPoint.ShapeCollection.context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
+  **PowerPoint.CustomXmlPart** (1 member)
 
-  - [PowerPoint.ShapeFill.context](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-context-member)
 
-  - [PowerPoint.ShapeFont.context](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-context-member)
 
-  - [PowerPoint.ShapeLineFormat.context](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-context-member)
+  **PowerPoint.CustomXmlPartCollection** (1 member)
 
-  - [PowerPoint.ShapeScopedCollection.context](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-context-member)
 
-  - [PowerPoint.Slide.context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
 
-  - [PowerPoint.SlideCollection.context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
+  **PowerPoint.CustomXmlPartScopedCollection** (1 member)
 
-  - [PowerPoint.SlideLayout.context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-context-member)
 
-  - [PowerPoint.SlideLayoutCollection.context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
 
-  - [PowerPoint.SlideMaster.context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
+  **PowerPoint.DocumentProperties** (1 member)
 
-  - [PowerPoint.SlideMasterCollection.context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-context-member)
 
-  - [PowerPoint.SlideScopedCollection.context](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-context-member)
 
-  - [PowerPoint.Tag.context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
+  **PowerPoint.Hyperlink** (1 member)
 
-  - [PowerPoint.TagCollection.context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
+  - [context](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-context-member)
 
-  - [PowerPoint.TextFrame.context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
 
-  - [PowerPoint.TextRange.context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
+  **PowerPoint.HyperlinkCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-context-member)
+
+
+  **PowerPoint.ParagraphFormat** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-context-member)
+
+
+  **PowerPoint.Presentation** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
+
+
+  **PowerPoint.Shape** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
+
+
+  **PowerPoint.ShapeCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
+
+
+  **PowerPoint.ShapeFill** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-context-member)
+
+
+  **PowerPoint.ShapeFont** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-context-member)
+
+
+  **PowerPoint.ShapeLineFormat** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-context-member)
+
+
+  **PowerPoint.ShapeScopedCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-context-member)
+
+
+  **PowerPoint.Slide** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
+
+
+  **PowerPoint.SlideCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
+
+
+  **PowerPoint.SlideLayout** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
+
+
+  **PowerPoint.SlideLayoutCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
+
+
+  **PowerPoint.SlideMaster** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
+
+
+  **PowerPoint.SlideMasterCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
+
+
+  **PowerPoint.SlideScopedCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-context-member)
+
+
+  **PowerPoint.Tag** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
+
+
+  **PowerPoint.TagCollection** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
+
+
+  **PowerPoint.TextFrame** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
+
+
+  **PowerPoint.TextRange** (1 member)
+
+  - [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
 
   #### Examples
 

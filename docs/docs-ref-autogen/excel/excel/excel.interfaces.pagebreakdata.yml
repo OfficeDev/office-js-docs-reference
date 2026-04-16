@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PageBreak.toJSON](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-tojson-member(1))
+
+  **Excel.PageBreak** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -29,9 +29,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.LoadedMessageCompose.from](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-from-member)
 
-  - [Office.MessageCompose.from](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-from-member)
+  **Office.LoadedMessageCompose** (1 member)
+
+  - [from](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-from-member)
+
+
+  **Office.MessageCompose** (1 member)
+
+  - [from](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-from-member)
 
 isPreview: false
 isDeprecated: false

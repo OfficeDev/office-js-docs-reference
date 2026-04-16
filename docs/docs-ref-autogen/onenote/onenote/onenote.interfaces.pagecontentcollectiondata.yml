@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.PageContentCollection.toJSON](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-tojson-member(1))
+
+  **OneNote.PageContentCollection** (1 member)
+
+  - [toJSON](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

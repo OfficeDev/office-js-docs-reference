@@ -6,11 +6,12 @@ fullName: Word.Interfaces.IndexUpdateData
 summary: >-
   An interface for updating data on the `Index` object, for use in `index.set({
   ... })`<!-- -->.
-remarks: >-
+remarks: |-
   #### Used by
 
 
-  - [Word.Index.set](/javascript/api/word/word.index#word-word-index-set-member(1))
+  **Word.Index** (1 member)
+  - [set](/javascript/api/word/word.index#word-word-index-set-member(1))
 
 isPreview: false
 isDeprecated: false

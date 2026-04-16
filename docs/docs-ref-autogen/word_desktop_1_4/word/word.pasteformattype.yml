@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Selection.pasteAndFormat](/javascript/api/word/word.selection#word-word-selection-pasteandformat-member(1))
+
+  **Word.Selection** (1 member)
+
+  - [pasteAndFormat](/javascript/api/word/word.selection#word-word-selection-pasteandformat-member(1))
 
 isPreview: false
 isDeprecated: false

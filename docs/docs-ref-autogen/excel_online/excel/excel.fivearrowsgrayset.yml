@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.IconCollections.fiveArrowsGray](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fivearrowsgray-member)
+
+  **Excel.IconCollections** (1 member)
+
+  - [fiveArrowsGray](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fivearrowsgray-member)
 
 isPreview: false
 isDeprecated: false

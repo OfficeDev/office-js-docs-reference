@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Source.load](/javascript/api/word/word.source#word-word-source-load-member(1))
+
+  **Word.Source** (1 member)
+
+  - [load](/javascript/api/word/word.source#word-word-source-load-member(1))
 
 isPreview: false
 isDeprecated: false

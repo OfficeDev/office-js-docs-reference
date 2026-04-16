@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.sort](/javascript/api/excel/excel.range#excel-excel-range-sort-member)
+
+  **Excel.Range** (1 member)
+
+  - [sort](/javascript/api/excel/excel.range#excel-excel-range-sort-member)
 
 isPreview: false
 isDeprecated: false

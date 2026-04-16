@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellBorder.style](/javascript/api/excel/excel.cellborder#excel-excel-cellborder-style-member)
 
-  - [Excel.RangeBorder.style](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-style-member)
+  **Excel.CellBorder** (1 member)
+
+  - [style](/javascript/api/excel/excel.cellborder#excel-excel-cellborder-style-member)
+
+
+  **Excel.RangeBorder** (1 member)
+
+  - [style](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-style-member)
 
   #### Examples
 

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.PictureContentControl.load](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-load-member(1))
+
+  **Word.PictureContentControl** (1 member)
+
+  - [load](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-load-member(1))
 
 isPreview: false
 isDeprecated: false

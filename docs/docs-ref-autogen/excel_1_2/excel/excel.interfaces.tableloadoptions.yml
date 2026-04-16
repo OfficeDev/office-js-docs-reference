@@ -16,7 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Table.load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1))
+
+  **Excel.Table** (1 member)
+
+  - [load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1))
 
 isPreview: false
 isDeprecated: false

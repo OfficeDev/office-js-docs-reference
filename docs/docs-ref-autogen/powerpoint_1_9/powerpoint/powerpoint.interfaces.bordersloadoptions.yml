@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Borders.load](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-load-member(1))
+
+  **PowerPoint.Borders** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReflectionFormat.load](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-load-member(1))
+
+  **Word.ReflectionFormat** (1 member)
+
+  - [load](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

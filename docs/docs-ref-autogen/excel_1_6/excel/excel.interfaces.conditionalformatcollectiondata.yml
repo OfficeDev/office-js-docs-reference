@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalFormatCollection.toJSON](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-tojson-member(1))
+
+  **Excel.ConditionalFormatCollection** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onCalculated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculated-member)
 
-  - [Excel.WorksheetCollection.onCalculated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculated-member)
+  **Excel.Worksheet** (1 member)
+
+  - [onCalculated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculated-member)
+
+
+  **Excel.WorksheetCollection** (1 member)
+
+  - [onCalculated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculated-member)
 
   #### Examples
 

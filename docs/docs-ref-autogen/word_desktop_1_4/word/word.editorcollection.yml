@@ -14,13 +14,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.EditorCollection.load](/javascript/api/word/word.editorcollection#word-word-editorcollection-load-member(1))
 
-  - [Word.EditorCollection.track](/javascript/api/word/word.editorcollection#word-word-editorcollection-track-member(1))
+  **Word.EditorCollection** (3 members)
 
-  - [Word.EditorCollection.untrack](/javascript/api/word/word.editorcollection#word-word-editorcollection-untrack-member(1))
+  - [load](/javascript/api/word/word.editorcollection#word-word-editorcollection-load-member(1))
 
-  - [Word.Range.editors](/javascript/api/word/word.range#word-word-range-editors-member)
+  - [track](/javascript/api/word/word.editorcollection#word-word-editorcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.editorcollection#word-word-editorcollection-untrack-member(1))
+
+
+  **Word.Range** (1 member)
+
+  - [editors](/javascript/api/word/word.range#word-word-range-editors-member)
 
 isPreview: false
 isDeprecated: false

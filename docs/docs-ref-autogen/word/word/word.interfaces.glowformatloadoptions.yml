@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.GlowFormat.load](/javascript/api/word/word.glowformat#word-word-glowformat-load-member(1))
+
+  **Word.GlowFormat** (1 member)
+
+  - [load](/javascript/api/word/word.glowformat#word-word-glowformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

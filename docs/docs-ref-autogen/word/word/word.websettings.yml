@@ -12,13 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.webSettings](/javascript/api/word/word.document#word-word-document-websettings-member)
 
-  - [Word.WebSettings.load](/javascript/api/word/word.websettings#word-word-websettings-load-member(1))
+  **Word.Document** (1 member)
 
-  - [Word.WebSettings.track](/javascript/api/word/word.websettings#word-word-websettings-track-member(1))
+  - [webSettings](/javascript/api/word/word.document#word-word-document-websettings-member)
 
-  - [Word.WebSettings.untrack](/javascript/api/word/word.websettings#word-word-websettings-untrack-member(1))
+
+  **Word.WebSettings** (3 members)
+
+  - [load](/javascript/api/word/word.websettings#word-word-websettings-load-member(1))
+
+  - [track](/javascript/api/word/word.websettings#word-word-websettings-track-member(1))
+
+  - [untrack](/javascript/api/word/word.websettings#word-word-websettings-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

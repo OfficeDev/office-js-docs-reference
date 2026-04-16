@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Slide.load](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-load-member(1))
+
+  **PowerPoint.Slide** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-load-member(1))
 
 isPreview: false
 isDeprecated: false

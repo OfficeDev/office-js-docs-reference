@@ -10,11 +10,13 @@ remarks: >-
 
 
 
-
   #### Used by
 
 
-  - [Word.List.setLevelBullet](/javascript/api/word/word.list#word-word-list-setlevelbullet-member(1))
+
+  **Word.List** (1 member)
+
+  - [setLevelBullet](/javascript/api/word/word.list#word-word-list-setlevelbullet-member(1))
 
   #### Examples
 

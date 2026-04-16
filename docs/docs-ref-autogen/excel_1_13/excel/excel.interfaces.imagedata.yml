@@ -8,7 +8,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Image.toJSON](/javascript/api/excel/excel.image#excel-excel-image-tojson-member(1))
+
+  **Excel.Image** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.image#excel-excel-image-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

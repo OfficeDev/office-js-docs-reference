@@ -14,11 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TabStopCollection.load](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-load-member(1))
 
-  - [Word.TabStopCollection.track](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-track-member(1))
+  **Word.TabStopCollection** (3 members)
 
-  - [Word.TabStopCollection.untrack](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-untrack-member(1))
+  - [load](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-load-member(1))
+
+  - [track](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-track-member(1))
+
+  - [untrack](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

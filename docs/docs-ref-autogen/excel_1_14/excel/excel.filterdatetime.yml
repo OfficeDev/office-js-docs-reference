@@ -12,15 +12,24 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Filter.applyValuesFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))
 
-  - [Excel.FilterCriteria.values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)
+  **Excel.Filter** (1 member)
 
-  - [Excel.PivotDateFilter.comparator](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-comparator-member)
+  - [applyValuesFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))
 
-  - [Excel.PivotDateFilter.lowerBound](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-lowerbound-member)
 
-  - [Excel.PivotDateFilter.upperBound](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-upperbound-member)
+  **Excel.FilterCriteria** (1 member)
+
+  - [values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)
+
+
+  **Excel.PivotDateFilter** (3 members)
+
+  - [comparator](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-comparator-member)
+
+  - [lowerBound](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-lowerbound-member)
+
+  - [upperBound](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-upperbound-member)
 
 isPreview: false
 isDeprecated: false

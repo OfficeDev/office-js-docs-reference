@@ -12,9 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.find](/javascript/api/excel/excel.range#excel-excel-range-find-member(1))
 
-  - [Excel.Range.findOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-findornullobject-member(1))
+  **Excel.Range** (2 members)
+
+  - [find](/javascript/api/excel/excel.range#excel-excel-range-find-member(1))
+
+  - [findOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-findornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

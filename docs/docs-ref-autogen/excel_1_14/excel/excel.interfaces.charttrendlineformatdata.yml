@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTrendlineFormat.toJSON](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-tojson-member(1))
+
+  **Excel.ChartTrendlineFormat** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

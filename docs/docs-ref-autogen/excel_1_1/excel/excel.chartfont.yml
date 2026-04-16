@@ -15,21 +15,42 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAreaFormat.font](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-font-member)
 
-  - [Excel.ChartAxisFormat.font](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-font-member)
+  **Excel.ChartAreaFormat** (1 member)
 
-  - [Excel.ChartAxisTitleFormat.font](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-font-member)
+  - [font](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-font-member)
 
-  - [Excel.ChartDataLabelFormat.font](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-font-member)
 
-  - [Excel.ChartFont.load](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-load-member(1))
+  **Excel.ChartAxisFormat** (1 member)
 
-  - [Excel.ChartFont.set](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-set-member(2))
+  - [font](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-font-member)
 
-  - [Excel.ChartLegendFormat.font](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-font-member)
 
-  - [Excel.ChartTitleFormat.font](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-font-member)
+  **Excel.ChartAxisTitleFormat** (1 member)
+
+  - [font](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-font-member)
+
+
+  **Excel.ChartDataLabelFormat** (1 member)
+
+  - [font](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-font-member)
+
+
+  **Excel.ChartFont** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-set-member(2))
+
+
+  **Excel.ChartLegendFormat** (1 member)
+
+  - [font](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-font-member)
+
+
+  **Excel.ChartTitleFormat** (1 member)
+
+  - [font](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-font-member)
 
   #### Examples
 

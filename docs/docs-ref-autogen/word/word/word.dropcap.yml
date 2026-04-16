@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DropCap.load](/javascript/api/word/word.dropcap#word-word-dropcap-load-member(1))
 
-  - [Word.DropCap.track](/javascript/api/word/word.dropcap#word-word-dropcap-track-member(1))
+  **Word.DropCap** (3 members)
 
-  - [Word.DropCap.untrack](/javascript/api/word/word.dropcap#word-word-dropcap-untrack-member(1))
+  - [load](/javascript/api/word/word.dropcap#word-word-dropcap-load-member(1))
+
+  - [track](/javascript/api/word/word.dropcap#word-word-dropcap-track-member(1))
+
+  - [untrack](/javascript/api/word/word.dropcap#word-word-dropcap-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

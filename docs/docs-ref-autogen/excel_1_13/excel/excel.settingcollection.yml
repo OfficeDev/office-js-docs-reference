@@ -15,11 +15,20 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.SettingCollection.load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
 
-  - [Excel.SettingsChangedEventArgs.settings](/javascript/api/excel/excel.settingschangedeventargs#excel-excel-settingschangedeventargs-settings-member)
+  **Excel.SettingCollection** (1 member)
 
-  - [Excel.Workbook.settings](/javascript/api/excel/excel.workbook#excel-excel-workbook-settings-member)
+  - [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+
+
+  **Excel.SettingsChangedEventArgs** (1 member)
+
+  - [settings](/javascript/api/excel/excel.settingschangedeventargs#excel-excel-settingschangedeventargs-settings-member)
+
+
+  **Excel.Workbook** (1 member)
+
+  - [settings](/javascript/api/excel/excel.workbook#excel-excel-workbook-settings-member)
 
 isPreview: false
 isDeprecated: false

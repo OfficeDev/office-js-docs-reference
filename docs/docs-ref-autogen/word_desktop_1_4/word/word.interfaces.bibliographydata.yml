@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Bibliography.toJSON](/javascript/api/word/word.bibliography#word-word-bibliography-tojson-member(1))
+
+  **Word.Bibliography** (1 member)
+
+  - [toJSON](/javascript/api/word/word.bibliography#word-word-bibliography-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

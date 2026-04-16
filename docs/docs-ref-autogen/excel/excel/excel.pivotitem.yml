@@ -12,23 +12,41 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotField.sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
 
-  - [Excel.PivotItem.load](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-load-member(1))
+  **Excel.PivotField** (1 member)
 
-  - [Excel.PivotItem.set](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-set-member(2))
+  - [sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
 
-  - [Excel.PivotItemCollection.getItem](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitem-member(1))
 
-  - [Excel.PivotItemCollection.getItemOrNullObject](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitemornullobject-member(1))
+  **Excel.PivotItem** (2 members)
 
-  - [Excel.PivotItemCollection.items](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-items-member)
+  - [load](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-load-member(1))
 
-  - [Excel.PivotLayout.getCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))
+  - [set](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-set-member(2))
 
-  - [Excel.PivotManualFilter.selectedItems](/javascript/api/excel/excel.pivotmanualfilter#excel-excel-pivotmanualfilter-selecteditems-member)
 
-  - [Excel.ShowAsRule.baseItem](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-baseitem-member)
+  **Excel.PivotItemCollection** (3 members)
+
+  - [getItem](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitem-member(1))
+
+  - [getItemOrNullObject](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitemornullobject-member(1))
+
+  - [items](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-items-member)
+
+
+  **Excel.PivotLayout** (1 member)
+
+  - [getCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))
+
+
+  **Excel.PivotManualFilter** (1 member)
+
+  - [selectedItems](/javascript/api/excel/excel.pivotmanualfilter#excel-excel-pivotmanualfilter-selecteditems-member)
+
+
+  **Excel.ShowAsRule** (1 member)
+
+  - [baseItem](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-baseitem-member)
 
 isPreview: false
 isDeprecated: false

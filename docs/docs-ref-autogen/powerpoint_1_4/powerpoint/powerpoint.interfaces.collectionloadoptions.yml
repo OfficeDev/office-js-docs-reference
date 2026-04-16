@@ -8,15 +8,30 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ShapeCollection.load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
 
-  - [PowerPoint.SlideCollection.load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
+  **PowerPoint.ShapeCollection** (1 member)
 
-  - [PowerPoint.SlideLayoutCollection.load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
+  - [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
 
-  - [PowerPoint.SlideMasterCollection.load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(1))
 
-  - [PowerPoint.TagCollection.load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
+  **PowerPoint.SlideCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
+
+
+  **PowerPoint.SlideLayoutCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
+
+
+  **PowerPoint.SlideMasterCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(1))
+
+
+  **PowerPoint.TagCollection** (1 member)
+
+  - [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

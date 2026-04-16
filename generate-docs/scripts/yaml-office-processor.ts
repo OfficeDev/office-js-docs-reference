@@ -474,6 +474,7 @@ function convertUidToUrl(uid: string): string {
 
 /**
  * Generates the markdown for the "Used By" section.
+ * Groups references by containing class for better readability.
  */
 function generateUsedBySection(references: UsedByReference[]): string {
   if (references.length === 0) {
@@ -490,28 +491,30 @@ function generateUsedBySection(references: UsedByReference[]): string {
 
   const lines: string[] = ['\n\n#### Used by\n'];
 
-  // Group by package
-  const grouped = groupByPackage(filteredReferences);
+  // Group by containing class
+  const groupedByClass = groupByContainingClass(filteredReferences);
 
-  // Sort packages alphabetically
-  const packageNames = Object.keys(grouped).sort();
+  // Sort class names alphabetically
+  const classNames = Object.keys(groupedByClass).sort();
 
-  for (const packageName of packageNames) {
-    const refs = grouped[packageName];
+  for (const className of classNames) {
+    const members = groupedByClass[className];
 
-    // Add package header if there are multiple packages
-    if (packageNames.length > 1) {
-      lines.push(`\n**${capitalizeFirst(packageName)}**\n`);
-    }
+    // Add class header with member count
+    lines.push(`\n**${className}** (${members.length} member${members.length !== 1 ? 's' : ''})`);
 
-    // Sort references alphabetically by display name
-    refs.sort((a, b) => a.name.localeCompare(b.name));
+    // Sort members alphabetically by member name (without class prefix)
+    members.sort((a, b) => {
+      const memberA = a.name.substring(className.length + 1); // Remove "ClassName." prefix
+      const memberB = b.name.substring(className.length + 1);
+      return memberA.localeCompare(memberB);
+    });
 
-    // Add each reference as a bullet point with escaped markdown link
-    // Use the same format as requirement set links: [Text](url)
-    for (const ref of refs) {
+    // Add each member with compact formatting
+    for (const ref of members) {
       const url = convertUidToUrl(ref.uid);
-      lines.push(`- [${ref.name}](${url})`);
+      const memberName = ref.name.substring(className.length + 1); // Remove "ClassName." prefix
+      lines.push(`- [${memberName}](${url})`);
     }
   }
 
@@ -521,24 +524,26 @@ function generateUsedBySection(references: UsedByReference[]): string {
 /**
  * Groups references by package name.
  */
-function groupByPackage(references: UsedByReference[]): Record<string, UsedByReference[]> {
+/**
+ * Groups references by their containing class.
+ * Example: "Excel.Worksheet.getRange" -> class is "Excel.Worksheet"
+ */
+function groupByContainingClass(references: UsedByReference[]): Record<string, UsedByReference[]> {
   const grouped: Record<string, UsedByReference[]> = {};
 
   for (const ref of references) {
-    if (!grouped[ref.packageName]) {
-      grouped[ref.packageName] = [];
+    // Extract class name from the full qualified name
+    // E.g., "Excel.Worksheet.getRange" -> "Excel.Worksheet"
+    const lastDotIndex = ref.name.lastIndexOf('.');
+    const className = lastDotIndex > 0 ? ref.name.substring(0, lastDotIndex) : ref.name;
+
+    if (!grouped[className]) {
+      grouped[className] = [];
     }
-    grouped[ref.packageName].push(ref);
+    grouped[className].push(ref);
   }
 
   return grouped;
-}
-
-/**
- * Capitalizes the first letter of a string.
- */
-function capitalizeFirst(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 // ---- Main Processing ----

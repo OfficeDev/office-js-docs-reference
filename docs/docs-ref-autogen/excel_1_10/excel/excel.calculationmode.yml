@@ -13,7 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Application.calculationMode](/javascript/api/excel/excel.application#excel-excel-application-calculationmode-member)
+
+  **Excel.Application** (1 member)
+
+  - [calculationMode](/javascript/api/excel/excel.application#excel-excel-application-calculationmode-member)
 
   #### Examples
 

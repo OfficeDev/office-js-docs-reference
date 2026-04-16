@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HeadingStyle.load](/javascript/api/word/word.headingstyle#word-word-headingstyle-load-member(1))
+
+  **Word.HeadingStyle** (1 member)
+
+  - [load](/javascript/api/word/word.headingstyle#word-word-headingstyle-load-member(1))
 
 isPreview: false
 isDeprecated: false

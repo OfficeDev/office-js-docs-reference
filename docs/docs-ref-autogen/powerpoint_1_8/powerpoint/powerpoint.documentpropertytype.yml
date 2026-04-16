@@ -12,7 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomProperty.type](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-type-member)
+
+  **PowerPoint.CustomProperty** (1 member)
+
+  - [type](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-type-member)
 
 isPreview: false
 isDeprecated: false

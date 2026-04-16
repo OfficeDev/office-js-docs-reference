@@ -14,7 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeFormat.load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1))
+
+  **Excel.RangeFormat** (1 member)
+
+  - [load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

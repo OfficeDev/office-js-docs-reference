@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TextFrame.toJSON](/javascript/api/excel/excel.textframe#excel-excel-textframe-tojson-member(1))
+
+  **Excel.TextFrame** (1 member)
+
+  - [toJSON](/javascript/api/excel/excel.textframe#excel-excel-textframe-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

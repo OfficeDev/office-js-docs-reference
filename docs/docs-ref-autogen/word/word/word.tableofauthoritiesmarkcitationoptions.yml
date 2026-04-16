@@ -15,9 +15,12 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableOfAuthoritiesCollection.markAllCitations](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markallcitations-member(1))
 
-  - [Word.TableOfAuthoritiesCollection.markCitation](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))
+  **Word.TableOfAuthoritiesCollection** (2 members)
+
+  - [markAllCitations](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markallcitations-member(1))
+
+  - [markCitation](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))
 
 isPreview: false
 isDeprecated: false

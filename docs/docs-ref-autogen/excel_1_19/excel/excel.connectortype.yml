@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Line.connectorType](/javascript/api/excel/excel.line#excel-excel-line-connectortype-member)
 
-  - [Excel.ShapeCollection.addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
+  **Excel.Line** (1 member)
+
+  - [connectorType](/javascript/api/excel/excel.line#excel-excel-line-connectortype-member)
+
+
+  **Excel.ShapeCollection** (1 member)
+
+  - [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
 
   #### Examples
 

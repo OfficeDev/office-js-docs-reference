@@ -13,9 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartPointsCollection.load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
 
-  - [Excel.ChartSeries.points](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-points-member)
+  **Excel.ChartPointsCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
+
+
+  **Excel.ChartSeries** (1 member)
+
+  - [points](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-points-member)
 
   #### Examples
 

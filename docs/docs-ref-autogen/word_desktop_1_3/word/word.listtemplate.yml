@@ -13,23 +13,32 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListFormat.applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))
 
-  - [Word.ListFormat.canContinuePreviousList](/javascript/api/word/word.listformat#word-word-listformat-cancontinuepreviouslist-member(1))
+  **Word.ListFormat** (3 members)
 
-  - [Word.ListFormat.listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)
+  - [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))
 
-  - [Word.ListTemplate.load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1))
+  - [canContinuePreviousList](/javascript/api/word/word.listformat#word-word-listformat-cancontinuepreviouslist-member(1))
 
-  - [Word.ListTemplate.set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(2))
+  - [listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)
 
-  - [Word.ListTemplate.track](/javascript/api/word/word.listtemplate#word-word-listtemplate-track-member(1))
 
-  - [Word.ListTemplate.untrack](/javascript/api/word/word.listtemplate#word-word-listtemplate-untrack-member(1))
+  **Word.ListTemplate** (4 members)
 
-  - [Word.Style.linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1))
+  - [load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1))
 
-  - [Word.Style.listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
+  - [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(2))
+
+  - [track](/javascript/api/word/word.listtemplate#word-word-listtemplate-track-member(1))
+
+  - [untrack](/javascript/api/word/word.listtemplate#word-word-listtemplate-untrack-member(1))
+
+
+  **Word.Style** (2 members)
+
+  - [linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1))
+
+  - [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
 
   #### Examples
 

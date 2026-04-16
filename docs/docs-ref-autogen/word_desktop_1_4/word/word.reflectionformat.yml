@@ -12,15 +12,21 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.reflection](/javascript/api/word/word.font#word-word-font-reflection-member)
 
-  - [Word.ReflectionFormat.load](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-load-member(1))
+  **Word.Font** (1 member)
 
-  - [Word.ReflectionFormat.set](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-set-member(2))
+  - [reflection](/javascript/api/word/word.font#word-word-font-reflection-member)
 
-  - [Word.ReflectionFormat.track](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-track-member(1))
 
-  - [Word.ReflectionFormat.untrack](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-untrack-member(1))
+  **Word.ReflectionFormat** (4 members)
+
+  - [load](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-load-member(1))
+
+  - [set](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-set-member(2))
+
+  - [track](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-track-member(1))
+
+  - [untrack](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

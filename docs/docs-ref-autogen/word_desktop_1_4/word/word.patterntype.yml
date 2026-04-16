@@ -12,11 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.FillFormat.pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member)
 
-  - [Word.FillFormat.setPatterned](/javascript/api/word/word.fillformat#word-word-fillformat-setpatterned-member(1))
+  **Word.FillFormat** (2 members)
 
-  - [Word.LineFormat.pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)
+  - [pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member)
+
+  - [setPatterned](/javascript/api/word/word.fillformat#word-word-fillformat-setpatterned-member(1))
+
+
+  **Word.LineFormat** (1 member)
+
+  - [pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)
 
 isPreview: false
 isDeprecated: false

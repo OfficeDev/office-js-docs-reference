@@ -18,7 +18,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Selection.load](/javascript/api/word/word.selection#word-word-selection-load-member(1))
+
+  **Word.Selection** (1 member)
+
+  - [load](/javascript/api/word/word.selection#word-word-selection-load-member(1))
 
 isPreview: false
 isDeprecated: false

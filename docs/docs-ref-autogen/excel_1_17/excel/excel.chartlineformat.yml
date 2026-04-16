@@ -12,19 +12,37 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxisFormat.line](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-line-member)
 
-  - [Excel.ChartErrorBarsFormat.line](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-line-member)
+  **Excel.ChartAxisFormat** (1 member)
 
-  - [Excel.ChartGridlinesFormat.line](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-line-member)
+  - [line](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-line-member)
 
-  - [Excel.ChartLineFormat.load](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-load-member(1))
 
-  - [Excel.ChartLineFormat.set](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-set-member(2))
+  **Excel.ChartErrorBarsFormat** (1 member)
 
-  - [Excel.ChartSeriesFormat.line](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-line-member)
+  - [line](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-line-member)
 
-  - [Excel.ChartTrendlineFormat.line](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-line-member)
+
+  **Excel.ChartGridlinesFormat** (1 member)
+
+  - [line](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-line-member)
+
+
+  **Excel.ChartLineFormat** (2 members)
+
+  - [load](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-load-member(1))
+
+  - [set](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-set-member(2))
+
+
+  **Excel.ChartSeriesFormat** (1 member)
+
+  - [line](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-line-member)
+
+
+  **Excel.ChartTrendlineFormat** (1 member)
+
+  - [line](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-line-member)
 
 isPreview: false
 isDeprecated: false

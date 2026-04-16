@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [Word.SettingCollection.toJSON](/javascript/api/word/word.settingcollection#word-word-settingcollection-tojson-member(1))
+
+  **Word.SettingCollection** (1 member)
+
+  - [toJSON](/javascript/api/word/word.settingcollection#word-word-settingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

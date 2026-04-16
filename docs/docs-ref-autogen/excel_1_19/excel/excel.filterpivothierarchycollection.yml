@@ -14,9 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.FilterPivotHierarchyCollection.load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(1))
 
-  - [Excel.PivotTable.filterHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-filterhierarchies-member)
+  **Excel.FilterPivotHierarchyCollection** (1 member)
+
+  - [load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(1))
+
+
+  **Excel.PivotTable** (1 member)
+
+  - [filterHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-filterhierarchies-member)
 
 isPreview: false
 isDeprecated: false

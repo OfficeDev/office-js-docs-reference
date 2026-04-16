@@ -10,7 +10,10 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.SectionCollection.toJSON](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-tojson-member(1))
+
+  **OneNote.SectionCollection** (1 member)
+
+  - [toJSON](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
