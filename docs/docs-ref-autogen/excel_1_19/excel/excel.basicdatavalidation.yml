@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.DataValidationRule.decimal](/javascript/api/excel/excel.datavalidationrule#decimal-member)
-  \]
 
   -
   [Excel.DataValidationRule.textLength](/javascript/api/excel/excel.datavalidationrule#textlength-member)
-  \]
 
   -
   [Excel.DataValidationRule.wholeNumber](/javascript/api/excel/excel.datavalidationrule#wholenumber-member)
-  \]
 
 isPreview: false
 isDeprecated: false

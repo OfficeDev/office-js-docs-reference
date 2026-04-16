@@ -16,10 +16,8 @@ remarks: >-
 
   -
   [Word.Document.hyperlinks](/javascript/api/word/word.document#hyperlinks-member)
-  \]
 
   - [Word.Range.hyperlinks](/javascript/api/word/word.range#hyperlinks-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ConditionalFormat.custom](/javascript/api/excel/excel.conditionalformat#custom-member)
-  \]
 
   -
   [Excel.ConditionalFormat.customOrNullObject](/javascript/api/excel/excel.conditionalformat#customornullobject-member)
-  \]
 
 isPreview: false
 isDeprecated: false

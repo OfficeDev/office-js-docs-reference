@@ -17,11 +17,9 @@ remarks: >-
 
   -
   [Word.Application.bibliography](/javascript/api/word/word.application#bibliography-member)
-  \]
 
   -
   [Word.Document.bibliography](/javascript/api/word/word.document#bibliography-member)
-  \]
 
 isPreview: false
 isDeprecated: false

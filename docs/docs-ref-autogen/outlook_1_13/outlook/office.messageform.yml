@@ -24,11 +24,9 @@ remarks: >-
 
   -
   [Office.Mailbox.displayNewMessageForm](/javascript/api/outlook/office.mailbox#displaynewmessageform-member)
-  \]
 
   -
   [Office.Mailbox.displayNewMessageFormAsync](/javascript/api/outlook/office.mailbox#displaynewmessageformasync-member)
-  \]
 
 isPreview: false
 isDeprecated: false

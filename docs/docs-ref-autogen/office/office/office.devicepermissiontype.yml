@@ -37,11 +37,9 @@ remarks: >-
 
   -
   [Office.DevicePermission.requestPermissions](/javascript/api/office/office.devicepermission#requestpermissions-member)
-  \]
 
   -
   [Office.DevicePermission.requestPermissionsAsync](/javascript/api/office/office.devicepermission#requestpermissionsasync-member)
-  \]
 
   #### Examples
 

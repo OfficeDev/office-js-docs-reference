@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Word.SelectionConvertToTableOptions.format](/javascript/api/word/word.selectionconverttotableoptions#format-member)
-  \]
 
   -
   [Word.TableAutoFormatOptions.format](/javascript/api/word/word.tableautoformatoptions#format-member)
-  \]
 
 isPreview: false
 isDeprecated: false

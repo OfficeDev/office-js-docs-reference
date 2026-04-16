@@ -14,25 +14,20 @@ remarks: >-
 
   -
   [Word.BorderUniversal.colorIndex](/javascript/api/word/word.borderuniversal#colorindex-member)
-  \]
 
-  - [Word.Font.colorIndex](/javascript/api/word/word.font#colorindex-member) \]
+  - [Word.Font.colorIndex](/javascript/api/word/word.font#colorindex-member)
 
   -
   [Word.Font.colorIndexBidirectional](/javascript/api/word/word.font#colorindexbidirectional-member)
-  \]
 
   -
   [Word.Range.highlightColorIndex](/javascript/api/word/word.range#highlightcolorindex-member)
-  \]
 
   -
   [Word.ShadingUniversal.backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#backgroundpatterncolorindex-member)
-  \]
 
   -
   [Word.ShadingUniversal.foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#foregroundpatterncolorindex-member)
-  \]
 
 isPreview: false
 isDeprecated: false

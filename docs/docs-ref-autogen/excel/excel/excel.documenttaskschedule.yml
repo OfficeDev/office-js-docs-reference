@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.DocumentTask.startAndDueDateTime](/javascript/api/excel/excel.documenttask#startandduedatetime-member)
-  \]
 
 isPreview: true
 isDeprecated: false

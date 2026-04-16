@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.horizontalPageBreaks](/javascript/api/excel/excel.worksheet#horizontalpagebreaks-member)
-  \]
 
   -
   [Excel.Worksheet.verticalPageBreaks](/javascript/api/excel/excel.worksheet#verticalpagebreaks-member)
-  \]
 
 isPreview: false
 isDeprecated: false

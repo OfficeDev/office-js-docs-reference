@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [OneNote.PageContent.image](/javascript/api/onenote/onenote.pagecontent#image-member)
-  \]
 
   -
   [OneNote.Paragraph.image](/javascript/api/onenote/onenote.paragraph#image-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,39 +14,30 @@ remarks: >-
 
   -
   [Excel.ChartAddedEventArgs.source](/javascript/api/excel/excel.chartaddedeventargs#source-member)
-  \]
 
   -
   [Excel.ChartDeletedEventArgs.source](/javascript/api/excel/excel.chartdeletedeventargs#source-member)
-  \]
 
   -
   [Excel.TableAddedEventArgs.source](/javascript/api/excel/excel.tableaddedeventargs#source-member)
-  \]
 
   -
   [Excel.TableChangedEventArgs.source](/javascript/api/excel/excel.tablechangedeventargs#source-member)
-  \]
 
   -
   [Excel.TableDeletedEventArgs.source](/javascript/api/excel/excel.tabledeletedeventargs#source-member)
-  \]
 
   -
   [Excel.WorksheetAddedEventArgs.source](/javascript/api/excel/excel.worksheetaddedeventargs#source-member)
-  \]
 
   -
   [Excel.WorksheetChangedEventArgs.source](/javascript/api/excel/excel.worksheetchangedeventargs#source-member)
-  \]
 
   -
   [Excel.WorksheetDeletedEventArgs.source](/javascript/api/excel/excel.worksheetdeletedeventargs#source-member)
-  \]
 
   -
   [Excel.WorksheetFormatChangedEventArgs.source](/javascript/api/excel/excel.worksheetformatchangedeventargs#source-member)
-  \]
 
 isPreview: false
 isDeprecated: false

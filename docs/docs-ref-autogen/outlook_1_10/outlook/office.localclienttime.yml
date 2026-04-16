@@ -21,11 +21,9 @@ remarks: >-
 
   -
   [Office.Mailbox.convertToLocalClientTime](/javascript/api/outlook/office.mailbox#converttolocalclienttime-member)
-  \]
 
   -
   [Office.Mailbox.convertToUtcClientTime](/javascript/api/outlook/office.mailbox#converttoutcclienttime-member)
-  \]
 
   #### Examples
 

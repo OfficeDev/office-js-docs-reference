@@ -21,19 +21,15 @@ remarks: >-
 
   -
   [Office.MeetingSuggestion.attendees](/javascript/api/outlook/office.meetingsuggestion#attendees-member)
-  \]
 
   -
   [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#addasync-member)
-  \]
 
   -
   [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#setasync-member)
-  \]
 
   -
   [Office.TaskSuggestion.assignees](/javascript/api/outlook/office.tasksuggestion#assignees-member)
-  \]
 
   #### Examples
 

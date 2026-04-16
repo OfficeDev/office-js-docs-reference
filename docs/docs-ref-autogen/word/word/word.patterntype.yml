@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Word.FillFormat.pattern](/javascript/api/word/word.fillformat#pattern-member)
-  \]
 
   -
   [Word.LineFormat.pattern](/javascript/api/word/word.lineformat#pattern-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -16,9 +16,8 @@ remarks: >-
 
   -
   [Word.FrameCollection.items](/javascript/api/word/word.framecollection#items-member)
-  \]
 
-  - [Word.Style.frame](/javascript/api/word/word.style#frame-member) \]
+  - [Word.Style.frame](/javascript/api/word/word.style#frame-member)
 
 isPreview: false
 isDeprecated: false

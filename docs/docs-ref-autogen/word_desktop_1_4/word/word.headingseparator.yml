@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Word.Index.headingSeparator](/javascript/api/word/word.index#headingseparator-member)
-  \]
 
   -
   [Word.IndexAddOptions.headingSeparator](/javascript/api/word/word.indexaddoptions#headingseparator-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,27 +14,21 @@ remarks: >-
 
   -
   [PowerPoint.Borders.bottom](/javascript/api/powerpoint/powerpoint.borders#bottom-member)
-  \]
 
   -
   [PowerPoint.Borders.diagonalDown](/javascript/api/powerpoint/powerpoint.borders#diagonaldown-member)
-  \]
 
   -
   [PowerPoint.Borders.diagonalUp](/javascript/api/powerpoint/powerpoint.borders#diagonalup-member)
-  \]
 
   -
   [PowerPoint.Borders.left](/javascript/api/powerpoint/powerpoint.borders#left-member)
-  \]
 
   -
   [PowerPoint.Borders.right](/javascript/api/powerpoint/powerpoint.borders#right-member)
-  \]
 
   -
   [PowerPoint.Borders.top](/javascript/api/powerpoint/powerpoint.borders#top-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onVisibilityChanged](/javascript/api/excel/excel.worksheet#onvisibilitychanged-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#onvisibilitychanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

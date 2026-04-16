@@ -14,23 +14,18 @@ remarks: >-
 
   -
   [Excel.ConditionalRangeBorderCollection.bottom](/javascript/api/excel/excel.conditionalrangebordercollection#bottom-member)
-  \]
 
   -
   [Excel.ConditionalRangeBorderCollection.items](/javascript/api/excel/excel.conditionalrangebordercollection#items-member)
-  \]
 
   -
   [Excel.ConditionalRangeBorderCollection.left](/javascript/api/excel/excel.conditionalrangebordercollection#left-member)
-  \]
 
   -
   [Excel.ConditionalRangeBorderCollection.right](/javascript/api/excel/excel.conditionalrangebordercollection#right-member)
-  \]
 
   -
   [Excel.ConditionalRangeBorderCollection.top](/javascript/api/excel/excel.conditionalrangebordercollection#top-member)
-  \]
 
 isPreview: false
 isDeprecated: false

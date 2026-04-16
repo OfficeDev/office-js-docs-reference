@@ -22,51 +22,39 @@ remarks: >-
 
   -
   [Office.AppointmentForm.optionalAttendees](/javascript/api/outlook/office.appointmentform#optionalattendees-member)
-  \]
 
   -
   [Office.AppointmentForm.requiredAttendees](/javascript/api/outlook/office.appointmentform#requiredattendees-member)
-  \]
 
   -
   [Office.AppointmentRead.optionalAttendees](/javascript/api/outlook/office.appointmentread#optionalattendees-member)
-  \]
 
   -
   [Office.AppointmentRead.organizer](/javascript/api/outlook/office.appointmentread#organizer-member)
-  \]
 
   -
   [Office.AppointmentRead.requiredAttendees](/javascript/api/outlook/office.appointmentread#requiredattendees-member)
-  \]
 
   -
   [Office.MessageRead.cc](/javascript/api/outlook/office.messageread#cc-member)
-  \]
 
   -
   [Office.MessageRead.from](/javascript/api/outlook/office.messageread#from-member)
-  \]
 
   -
   [Office.MessageRead.sender](/javascript/api/outlook/office.messageread#sender-member)
-  \]
 
   -
   [Office.MessageRead.to](/javascript/api/outlook/office.messageread#to-member)
-  \]
 
   -
   [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#addasync-member)
-  \]
 
   -
   [Office.Recipients.getAsync](/javascript/api/outlook/office.recipients#getasync-member)
-  \]
 
   -
   [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#setasync-member)
-  \]
 
 isPreview: false
 isDeprecated: false

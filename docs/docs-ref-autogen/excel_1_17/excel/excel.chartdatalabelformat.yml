@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ChartDataLabel.format](/javascript/api/excel/excel.chartdatalabel#format-member)
-  \]
 
   -
   [Excel.ChartDataLabels.format](/javascript/api/excel/excel.chartdatalabels#format-member)
-  \]
 
 isPreview: false
 isDeprecated: false

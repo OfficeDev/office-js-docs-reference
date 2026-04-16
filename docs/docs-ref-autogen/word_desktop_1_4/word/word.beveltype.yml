@@ -17,11 +17,9 @@ remarks: >-
 
   -
   [Word.ThreeDimensionalFormat.bevelBottomType](/javascript/api/word/word.threedimensionalformat#bevelbottomtype-member)
-  \]
 
   -
   [Word.ThreeDimensionalFormat.bevelTopType](/javascript/api/word/word.threedimensionalformat#beveltoptype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

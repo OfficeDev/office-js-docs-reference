@@ -15,19 +15,15 @@ remarks: >-
 
   -
   [PowerPoint.Shape.parentGroup](/javascript/api/powerpoint/powerpoint.shape#parentgroup-member)
-  \]
 
   -
   [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#items-member)
-  \]
 
   -
   [PowerPoint.ShapeGroup.shape](/javascript/api/powerpoint/powerpoint.shapegroup#shape-member)
-  \]
 
   -
   [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#items-member)
-  \]
 
   #### Examples
 

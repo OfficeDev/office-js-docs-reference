@@ -27,35 +27,27 @@ remarks: >-
 
   -
   [Office.AppointmentRead.displayReplyAllForm](/javascript/api/outlook/office.appointmentread#displayreplyallform-member)
-  \]
 
   -
   [Office.AppointmentRead.displayReplyAllFormAsync](/javascript/api/outlook/office.appointmentread#displayreplyallformasync-member)
-  \]
 
   -
   [Office.AppointmentRead.displayReplyForm](/javascript/api/outlook/office.appointmentread#displayreplyform-member)
-  \]
 
   -
   [Office.AppointmentRead.displayReplyFormAsync](/javascript/api/outlook/office.appointmentread#displayreplyformasync-member)
-  \]
 
   -
   [Office.MessageRead.displayReplyAllForm](/javascript/api/outlook/office.messageread#displayreplyallform-member)
-  \]
 
   -
   [Office.MessageRead.displayReplyAllFormAsync](/javascript/api/outlook/office.messageread#displayreplyallformasync-member)
-  \]
 
   -
   [Office.MessageRead.displayReplyForm](/javascript/api/outlook/office.messageread#displayreplyform-member)
-  \]
 
   -
   [Office.MessageRead.displayReplyFormAsync](/javascript/api/outlook/office.messageread#displayreplyformasync-member)
-  \]
 
   #### Examples
 

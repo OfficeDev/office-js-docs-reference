@@ -18,11 +18,9 @@ remarks: >-
 
   -
   [Excel.TableCollection.items](/javascript/api/excel/excel.tablecollection#items-member)
-  \]
 
   -
   [Excel.TableScopedCollection.items](/javascript/api/excel/excel.tablescopedcollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.Binding.onDataChanged](/javascript/api/excel/excel.binding#ondatachanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

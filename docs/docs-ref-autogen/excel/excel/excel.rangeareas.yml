@@ -19,11 +19,9 @@ remarks: >-
 
   -
   [Excel.RangeAreasCollection.items](/javascript/api/excel/excel.rangeareascollection#items-member)
-  \]
 
   -
   [Excel.Window.rangeSelection](/javascript/api/excel/excel.window#rangeselection-member)
-  \]
 
 isPreview: false
 isDeprecated: false

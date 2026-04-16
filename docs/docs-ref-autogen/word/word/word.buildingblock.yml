@@ -16,27 +16,21 @@ remarks: >-
 
   -
   [Word.BuildingBlockGalleryContentControl.placeholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#placeholdertext-member)
-  \]
 
   -
   [Word.ContentControlPlaceholderOptions.buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#buildingblock-member)
-  \]
 
   -
   [Word.DatePickerContentControl.placeholderText](/javascript/api/word/word.datepickercontentcontrol#placeholdertext-member)
-  \]
 
   -
   [Word.GroupContentControl.placeholderText](/javascript/api/word/word.groupcontentcontrol#placeholdertext-member)
-  \]
 
   -
   [Word.PictureContentControl.placeholderText](/javascript/api/word/word.picturecontentcontrol#placeholdertext-member)
-  \]
 
   -
   [Word.RepeatingSectionContentControl.placeholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#placeholdertext-member)
-  \]
 
 isPreview: false
 isDeprecated: false

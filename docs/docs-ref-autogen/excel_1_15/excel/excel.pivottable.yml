@@ -18,11 +18,9 @@ remarks: >-
 
   -
   [Excel.PivotTableCollection.items](/javascript/api/excel/excel.pivottablecollection#items-member)
-  \]
 
   -
   [Excel.PivotTableScopedCollection.items](/javascript/api/excel/excel.pivottablescopedcollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

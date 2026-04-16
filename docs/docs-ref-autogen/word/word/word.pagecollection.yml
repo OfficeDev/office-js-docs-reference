@@ -13,13 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Pane.pages](/javascript/api/word/word.pane#pages-member) \]
+  - [Word.Pane.pages](/javascript/api/word/word.pane#pages-member)
 
   -
   [Word.Pane.pagesEnclosingViewport](/javascript/api/word/word.pane#pagesenclosingviewport-member)
-  \]
 
-  - [Word.Range.pages](/javascript/api/word/word.range#pages-member) \]
+  - [Word.Range.pages](/javascript/api/word/word.range#pages-member)
 
   #### Examples
 

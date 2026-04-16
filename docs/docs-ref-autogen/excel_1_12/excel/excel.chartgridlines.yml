@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ChartAxis.majorGridlines](/javascript/api/excel/excel.chartaxis#majorgridlines-member)
-  \]
 
   -
   [Excel.ChartAxis.minorGridlines](/javascript/api/excel/excel.chartaxis#minorgridlines-member)
-  \]
 
 isPreview: false
 isDeprecated: false

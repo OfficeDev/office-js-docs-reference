@@ -10,7 +10,6 @@ remarks: >-
 
   -
   [OfficeExtension.RunOptions.session](/javascript/api/office/officeextension.runoptions#session-member)
-  \]
 
 isPreview: false
 isDeprecated: false

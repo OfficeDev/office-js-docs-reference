@@ -25,15 +25,12 @@ remarks: >-
 
   -
   [Office.Categories.getAsync](/javascript/api/outlook/office.categories#getasync-member)
-  \]
 
   -
   [Office.MasterCategories.addAsync](/javascript/api/outlook/office.mastercategories#addasync-member)
-  \]
 
   -
   [Office.MasterCategories.getAsync](/javascript/api/outlook/office.mastercategories#getasync-member)
-  \]
 
   #### Examples
 

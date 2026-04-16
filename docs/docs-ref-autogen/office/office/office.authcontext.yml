@@ -16,7 +16,6 @@ remarks: >-
 
   -
   [Office.Auth.getAuthContext](/javascript/api/office/office.auth#getauthcontext-member)
-  \]
 
 isPreview: false
 isDeprecated: false

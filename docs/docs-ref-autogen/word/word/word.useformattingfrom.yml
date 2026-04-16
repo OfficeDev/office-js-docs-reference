@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Word.DocumentMergeOptions.useFormattingFrom](/javascript/api/word/word.documentmergeoptions#useformattingfrom-member)
-  \]
 
 isPreview: false
 isDeprecated: false

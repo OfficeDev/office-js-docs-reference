@@ -14,18 +14,16 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.borders](/javascript/api/word/word.font#borders-member) \]
+  - [Word.Font.borders](/javascript/api/word/word.font#borders-member)
 
-  - [Word.Frame.borders](/javascript/api/word/word.frame#borders-member) \]
+  - [Word.Frame.borders](/javascript/api/word/word.frame#borders-member)
 
   - [Word.Paragraph.borders](/javascript/api/word/word.paragraph#borders-member)
-  \]
 
-  - [Word.Section.borders](/javascript/api/word/word.section#borders-member) \]
+  - [Word.Section.borders](/javascript/api/word/word.section#borders-member)
 
   -
   [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
-  \]
 
 isPreview: false
 isDeprecated: false

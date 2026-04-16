@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Word.TableSortOptions.sortFieldType](/javascript/api/word/word.tablesortoptions#sortfieldtype-member)
-  \]
 
   -
   [Word.TableSortOptions.sortFieldType2](/javascript/api/word/word.tablesortoptions#sortfieldtype2-member)
-  \]
 
   -
   [Word.TableSortOptions.sortFieldType3](/javascript/api/word/word.tablesortoptions#sortfieldtype3-member)
-  \]
 
 isPreview: false
 isDeprecated: false

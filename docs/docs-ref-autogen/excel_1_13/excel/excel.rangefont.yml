@@ -16,9 +16,8 @@ remarks: >-
 
   -
   [Excel.RangeFormat.font](/javascript/api/excel/excel.rangeformat#font-member)
-  \]
 
-  - [Excel.Style.font](/javascript/api/excel/excel.style#font-member) \]
+  - [Excel.Style.font](/javascript/api/excel/excel.style#font-member)
 
 isPreview: false
 isDeprecated: false

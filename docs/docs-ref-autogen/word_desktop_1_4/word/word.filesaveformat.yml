@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Word.Document.saveFormat](/javascript/api/word/word.document#saveformat-member)
-  \]
 
 isPreview: false
 isDeprecated: false

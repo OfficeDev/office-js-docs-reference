@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.WorksheetProtectionOptions.selectionMode](/javascript/api/excel/excel.worksheetprotectionoptions#selectionmode-member)
-  \]
 
 isPreview: false
 isDeprecated: false

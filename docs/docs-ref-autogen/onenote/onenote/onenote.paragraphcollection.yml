@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [OneNote.Outline.paragraphs](/javascript/api/onenote/onenote.outline#paragraphs-member)
-  \]
 
   -
   [OneNote.Paragraph.paragraphs](/javascript/api/onenote/onenote.paragraph#paragraphs-member)
-  \]
 
   -
   [OneNote.TableCell.paragraphs](/javascript/api/onenote/onenote.tablecell#paragraphs-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.Application.calculationState](/javascript/api/excel/excel.application#calculationstate-member)
-  \]
 
 isPreview: false
 isDeprecated: false

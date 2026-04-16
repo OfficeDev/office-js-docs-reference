@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [OneNote.InkAnalysisParagraph.inkAnalysis](/javascript/api/onenote/onenote.inkanalysisparagraph#inkanalysis-member)
-  \]
 
   -
   [OneNote.Page.inkAnalysisOrNull](/javascript/api/onenote/onenote.page#inkanalysisornull-member)
-  \]
 
 isPreview: false
 isDeprecated: false

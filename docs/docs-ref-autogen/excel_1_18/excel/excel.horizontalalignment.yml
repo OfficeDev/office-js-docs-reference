@@ -15,15 +15,12 @@ remarks: >-
 
   -
   [Excel.CellPropertiesFormat.horizontalAlignment](/javascript/api/excel/excel.cellpropertiesformat#horizontalalignment-member)
-  \]
 
   -
   [Excel.RangeFormat.horizontalAlignment](/javascript/api/excel/excel.rangeformat#horizontalalignment-member)
-  \]
 
   -
   [Excel.Style.horizontalAlignment](/javascript/api/excel/excel.style#horizontalalignment-member)
-  \]
 
   #### Examples
 

@@ -25,27 +25,21 @@ remarks: >-
 
   -
   [Office.AppointmentCompose.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentcontentasync-member)
-  \]
 
   -
   [Office.AppointmentRead.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#getattachmentcontentasync-member)
-  \]
 
   -
   [Office.LoadedMessageCompose.getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessagecompose#getattachmentcontentasync-member)
-  \]
 
   -
   [Office.LoadedMessageRead.getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#getattachmentcontentasync-member)
-  \]
 
   -
   [Office.MessageCompose.getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#getattachmentcontentasync-member)
-  \]
 
   -
   [Office.MessageRead.getAttachmentContentAsync](/javascript/api/outlook/office.messageread#getattachmentcontentasync-member)
-  \]
 
   #### Examples
 

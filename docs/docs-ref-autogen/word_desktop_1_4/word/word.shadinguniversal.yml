@@ -16,29 +16,23 @@ remarks: >-
 
   -
   [Word.ConditionalStyle.shading](/javascript/api/word/word.conditionalstyle#shading-member)
-  \]
 
-  - [Word.Frame.shading](/javascript/api/word/word.frame#shading-member) \]
+  - [Word.Frame.shading](/javascript/api/word/word.frame#shading-member)
 
   - [Word.Paragraph.shading](/javascript/api/word/word.paragraph#shading-member)
-  \]
 
-  - [Word.Range.shading](/javascript/api/word/word.range#shading-member) \]
+  - [Word.Range.shading](/javascript/api/word/word.range#shading-member)
 
   - [Word.Selection.shading](/javascript/api/word/word.selection#shading-member)
-  \]
 
-  - [Word.Table.shading](/javascript/api/word/word.table#shading-member) \]
+  - [Word.Table.shading](/javascript/api/word/word.table#shading-member)
 
   - [Word.TableCell.shading](/javascript/api/word/word.tablecell#shading-member)
-  \]
 
   -
   [Word.TableColumn.shading](/javascript/api/word/word.tablecolumn#shading-member)
-  \]
 
   - [Word.TableRow.shading](/javascript/api/word/word.tablerow#shading-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -20,51 +20,39 @@ remarks: >-
 
   -
   [Excel.BasicDataValidation.formula1](/javascript/api/excel/excel.basicdatavalidation#formula1-member)
-  \]
 
   -
   [Excel.BasicDataValidation.formula2](/javascript/api/excel/excel.basicdatavalidation#formula2-member)
-  \]
 
   -
   [Excel.DateTimeDataValidation.formula1](/javascript/api/excel/excel.datetimedatavalidation#formula1-member)
-  \]
 
   -
   [Excel.DateTimeDataValidation.formula2](/javascript/api/excel/excel.datetimedatavalidation#formula2-member)
-  \]
 
   -
   [Excel.ListDataValidation.source](/javascript/api/excel/excel.listdatavalidation#source-member)
-  \]
 
   -
   [Excel.RangeCollection.items](/javascript/api/excel/excel.rangecollection#items-member)
-  \]
 
   -
   [Excel.TableChangedEventArgs.getRange](/javascript/api/excel/excel.tablechangedeventargs#getrange-member)
-  \]
 
   -
   [Excel.TableChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#getrangeornullobject-member)
-  \]
 
   -
   [Excel.WorksheetChangedEventArgs.getRange](/javascript/api/excel/excel.worksheetchangedeventargs#getrange-member)
-  \]
 
   -
   [Excel.WorksheetChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#getrangeornullobject-member)
-  \]
 
   -
   [Excel.WorksheetFormatChangedEventArgs.getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#getrange-member)
-  \]
 
   -
   [Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#getrangeornullobject-member)
-  \]
 
   #### Examples
 

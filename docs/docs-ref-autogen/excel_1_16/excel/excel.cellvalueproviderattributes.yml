@@ -17,15 +17,12 @@ remarks: >-
 
   -
   [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#provider-member)
-  \]
 
   -
   [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#provider-member)
-  \]
 
   -
   [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#provider-member)
-  \]
 
 isPreview: false
 isDeprecated: false

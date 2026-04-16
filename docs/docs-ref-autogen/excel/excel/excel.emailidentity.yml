@@ -14,23 +14,18 @@ remarks: >-
 
   -
   [Excel.DocumentTask.assignees](/javascript/api/excel/excel.documenttask#assignees-member)
-  \]
 
   -
   [Excel.DocumentTask.completedBy](/javascript/api/excel/excel.documenttask#completedby-member)
-  \]
 
   -
   [Excel.DocumentTask.createdBy](/javascript/api/excel/excel.documenttask#createdby-member)
-  \]
 
   -
   [Excel.DocumentTaskChange.assignee](/javascript/api/excel/excel.documenttaskchange#assignee-member)
-  \]
 
   -
   [Excel.DocumentTaskChange.changedBy](/javascript/api/excel/excel.documenttaskchange#changedby-member)
-  \]
 
 isPreview: true
 isDeprecated: false

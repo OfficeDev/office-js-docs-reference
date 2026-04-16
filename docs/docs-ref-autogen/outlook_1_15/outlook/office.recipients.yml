@@ -24,35 +24,27 @@ remarks: >-
 
   -
   [Office.AppointmentCompose.optionalAttendees](/javascript/api/outlook/office.appointmentcompose#optionalattendees-member)
-  \]
 
   -
   [Office.AppointmentCompose.requiredAttendees](/javascript/api/outlook/office.appointmentcompose#requiredattendees-member)
-  \]
 
   -
   [Office.LoadedMessageCompose.bcc](/javascript/api/outlook/office.loadedmessagecompose#bcc-member)
-  \]
 
   -
   [Office.LoadedMessageCompose.cc](/javascript/api/outlook/office.loadedmessagecompose#cc-member)
-  \]
 
   -
   [Office.LoadedMessageCompose.to](/javascript/api/outlook/office.loadedmessagecompose#to-member)
-  \]
 
   -
   [Office.MessageCompose.bcc](/javascript/api/outlook/office.messagecompose#bcc-member)
-  \]
 
   -
   [Office.MessageCompose.cc](/javascript/api/outlook/office.messagecompose#cc-member)
-  \]
 
   -
   [Office.MessageCompose.to](/javascript/api/outlook/office.messagecompose#to-member)
-  \]
 
 isPreview: false
 isDeprecated: false

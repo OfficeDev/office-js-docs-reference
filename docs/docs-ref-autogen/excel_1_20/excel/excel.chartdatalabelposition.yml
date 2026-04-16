@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ChartDataLabel.position](/javascript/api/excel/excel.chartdatalabel#position-member)
-  \]
 
   -
   [Excel.ChartDataLabels.position](/javascript/api/excel/excel.chartdatalabels#position-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.DataBarConditionalFormat.lowerBoundRule](/javascript/api/excel/excel.databarconditionalformat#lowerboundrule-member)
-  \]
 
   -
   [Excel.DataBarConditionalFormat.upperBoundRule](/javascript/api/excel/excel.databarconditionalformat#upperboundrule-member)
-  \]
 
 isPreview: false
 isDeprecated: false

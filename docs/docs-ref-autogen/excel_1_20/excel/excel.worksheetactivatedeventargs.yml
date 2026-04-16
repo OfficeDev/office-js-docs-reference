@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onActivated](/javascript/api/excel/excel.worksheet#onactivated-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onActivated](/javascript/api/excel/excel.worksheetcollection#onactivated-member)
-  \]
 
 isPreview: false
 isDeprecated: false

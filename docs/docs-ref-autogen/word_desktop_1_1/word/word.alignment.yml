@@ -15,33 +15,26 @@ remarks: >-
 
   -
   [Word.ListLevel.alignment](/javascript/api/word/word.listlevel#alignment-member)
-  \]
 
   -
   [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#alignment-member)
-  \]
 
   -
   [Word.ParagraphFormat.alignment](/javascript/api/word/word.paragraphformat#alignment-member)
-  \]
 
-  - [Word.Table.alignment](/javascript/api/word/word.table#alignment-member) \]
+  - [Word.Table.alignment](/javascript/api/word/word.table#alignment-member)
 
   -
   [Word.Table.horizontalAlignment](/javascript/api/word/word.table#horizontalalignment-member)
-  \]
 
   -
   [Word.TableCell.horizontalAlignment](/javascript/api/word/word.tablecell#horizontalalignment-member)
-  \]
 
   -
   [Word.TableRow.horizontalAlignment](/javascript/api/word/word.tablerow#horizontalalignment-member)
-  \]
 
   -
   [Word.TableStyle.alignment](/javascript/api/word/word.tablestyle#alignment-member)
-  \]
 
   #### Examples
 

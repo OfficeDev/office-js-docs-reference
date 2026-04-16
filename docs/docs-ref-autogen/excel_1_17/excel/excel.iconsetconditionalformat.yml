@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ConditionalFormat.iconSet](/javascript/api/excel/excel.conditionalformat#iconset-member)
-  \]
 
   -
   [Excel.ConditionalFormat.iconSetOrNullObject](/javascript/api/excel/excel.conditionalformat#iconsetornullobject-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onChanged](/javascript/api/excel/excel.worksheet#onchanged-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onChanged](/javascript/api/excel/excel.worksheetcollection#onchanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

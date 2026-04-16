@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.Table.autoFilter](/javascript/api/excel/excel.table#autofilter-member)
-  \]
 
   -
   [Excel.Worksheet.autoFilter](/javascript/api/excel/excel.worksheet#autofilter-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -16,15 +16,12 @@ remarks: >-
 
   -
   [Excel.FilterPivotHierarchy.fields](/javascript/api/excel/excel.filterpivothierarchy#fields-member)
-  \]
 
   -
   [Excel.PivotHierarchy.fields](/javascript/api/excel/excel.pivothierarchy#fields-member)
-  \]
 
   -
   [Excel.RowColumnPivotHierarchy.fields](/javascript/api/excel/excel.rowcolumnpivothierarchy#fields-member)
-  \]
 
 isPreview: false
 isDeprecated: false

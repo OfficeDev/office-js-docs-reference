@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.PivotItemCollection.items](/javascript/api/excel/excel.pivotitemcollection#items-member)
-  \]
 
   -
   [Excel.PivotManualFilter.selectedItems](/javascript/api/excel/excel.pivotmanualfilter#selecteditems-member)
-  \]
 
   -
   [Excel.ShowAsRule.baseItem](/javascript/api/excel/excel.showasrule#baseitem-member)
-  \]
 
 isPreview: false
 isDeprecated: false

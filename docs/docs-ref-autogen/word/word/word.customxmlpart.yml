@@ -15,23 +15,18 @@ remarks: >-
 
   -
   [Word.CustomXmlNode.ownerPart](/javascript/api/word/word.customxmlnode#ownerpart-member)
-  \]
 
   -
   [Word.CustomXmlPartCollection.items](/javascript/api/word/word.customxmlpartcollection#items-member)
-  \]
 
   -
   [Word.CustomXmlPartScopedCollection.items](/javascript/api/word/word.customxmlpartscopedcollection#items-member)
-  \]
 
   -
   [Word.XmlMapping.customXmlPart](/javascript/api/word/word.xmlmapping#customxmlpart-member)
-  \]
 
   -
   [Word.XmlSetMappingOptions.source](/javascript/api/word/word.xmlsetmappingoptions#source-member)
-  \]
 
   #### Examples
 

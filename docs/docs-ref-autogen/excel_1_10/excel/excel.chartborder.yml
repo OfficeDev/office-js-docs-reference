@@ -14,35 +14,27 @@ remarks: >-
 
   -
   [Excel.ChartAreaFormat.border](/javascript/api/excel/excel.chartareaformat#border-member)
-  \]
 
   -
   [Excel.ChartAxisTitleFormat.border](/javascript/api/excel/excel.chartaxistitleformat#border-member)
-  \]
 
   -
   [Excel.ChartDataLabelFormat.border](/javascript/api/excel/excel.chartdatalabelformat#border-member)
-  \]
 
   -
   [Excel.ChartLegendFormat.border](/javascript/api/excel/excel.chartlegendformat#border-member)
-  \]
 
   -
   [Excel.ChartPlotAreaFormat.border](/javascript/api/excel/excel.chartplotareaformat#border-member)
-  \]
 
   -
   [Excel.ChartPointFormat.border](/javascript/api/excel/excel.chartpointformat#border-member)
-  \]
 
   -
   [Excel.ChartTitleFormat.border](/javascript/api/excel/excel.charttitleformat#border-member)
-  \]
 
   -
   [Excel.ChartTrendlineLabelFormat.border](/javascript/api/excel/excel.charttrendlinelabelformat#border-member)
-  \]
 
 isPreview: false
 isDeprecated: false

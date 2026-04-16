@@ -16,23 +16,18 @@ remarks: >-
 
   -
   [Excel.CellValueConditionalFormat.format](/javascript/api/excel/excel.cellvalueconditionalformat#format-member)
-  \]
 
   -
   [Excel.CustomConditionalFormat.format](/javascript/api/excel/excel.customconditionalformat#format-member)
-  \]
 
   -
   [Excel.PresetCriteriaConditionalFormat.format](/javascript/api/excel/excel.presetcriteriaconditionalformat#format-member)
-  \]
 
   -
   [Excel.TextConditionalFormat.format](/javascript/api/excel/excel.textconditionalformat#format-member)
-  \]
 
   -
   [Excel.TopBottomConditionalFormat.format](/javascript/api/excel/excel.topbottomconditionalformat#format-member)
-  \]
 
 isPreview: false
 isDeprecated: false

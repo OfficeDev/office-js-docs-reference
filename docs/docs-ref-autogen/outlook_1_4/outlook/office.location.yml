@@ -35,7 +35,6 @@ remarks: >-
 
   -
   [Office.AppointmentCompose.location](/javascript/api/outlook/office.appointmentcompose#location-member)
-  \]
 
 isPreview: false
 isDeprecated: false

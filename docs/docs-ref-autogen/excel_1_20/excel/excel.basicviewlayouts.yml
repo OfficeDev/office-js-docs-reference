@@ -16,15 +16,12 @@ remarks: >-
 
   -
   [Excel.BooleanCellValue.layouts](/javascript/api/excel/excel.booleancellvalue#layouts-member)
-  \]
 
   -
   [Excel.DoubleCellValue.layouts](/javascript/api/excel/excel.doublecellvalue#layouts-member)
-  \]
 
   -
   [Excel.StringCellValue.layouts](/javascript/api/excel/excel.stringcellvalue#layouts-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -34,11 +34,9 @@ remarks: >-
 
   -
   [Office.Mailbox.convertToEwsId](/javascript/api/outlook/office.mailbox#converttoewsid-member)
-  \]
 
   -
   [Office.Mailbox.convertToRestId](/javascript/api/outlook/office.mailbox#converttorestid-member)
-  \]
 
   #### Examples
 

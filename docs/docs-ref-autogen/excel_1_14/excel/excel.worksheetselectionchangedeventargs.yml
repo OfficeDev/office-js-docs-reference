@@ -17,11 +17,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onSelectionChanged](/javascript/api/excel/excel.worksheet#onselectionchanged-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onSelectionChanged](/javascript/api/excel/excel.worksheetcollection#onselectionchanged-member)
-  \]
 
   #### Examples
 

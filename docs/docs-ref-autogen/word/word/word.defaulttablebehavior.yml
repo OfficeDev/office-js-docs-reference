@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Word.SelectionConvertToTableOptions.defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#defaulttablebehavior-member)
-  \]
 
 isPreview: true
 isDeprecated: false

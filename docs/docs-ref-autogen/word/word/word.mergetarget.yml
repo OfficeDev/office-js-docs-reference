@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Word.DocumentMergeOptions.mergeTarget](/javascript/api/word/word.documentmergeoptions#mergetarget-member)
-  \]
 
 isPreview: false
 isDeprecated: false

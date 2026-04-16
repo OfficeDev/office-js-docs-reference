@@ -14,23 +14,18 @@ remarks: >-
 
   -
   [Excel.ChartAxisFormat.line](/javascript/api/excel/excel.chartaxisformat#line-member)
-  \]
 
   -
   [Excel.ChartErrorBarsFormat.line](/javascript/api/excel/excel.charterrorbarsformat#line-member)
-  \]
 
   -
   [Excel.ChartGridlinesFormat.line](/javascript/api/excel/excel.chartgridlinesformat#line-member)
-  \]
 
   -
   [Excel.ChartSeriesFormat.line](/javascript/api/excel/excel.chartseriesformat#line-member)
-  \]
 
   -
   [Excel.ChartTrendlineFormat.line](/javascript/api/excel/excel.charttrendlineformat#line-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -15,9 +15,8 @@ remarks: >-
 
 
   - [Word.Frame.heightRule](/javascript/api/word/word.frame#heightrule-member)
-  \]
 
-  - [Word.Frame.widthRule](/javascript/api/word/word.frame#widthrule-member) \]
+  - [Word.Frame.widthRule](/javascript/api/word/word.frame#widthrule-member)
 
 isPreview: false
 isDeprecated: false

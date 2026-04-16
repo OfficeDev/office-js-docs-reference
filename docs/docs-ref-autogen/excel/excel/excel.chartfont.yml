@@ -17,39 +17,30 @@ remarks: >-
 
   -
   [Excel.ChartAreaFormat.font](/javascript/api/excel/excel.chartareaformat#font-member)
-  \]
 
   -
   [Excel.ChartAxisFormat.font](/javascript/api/excel/excel.chartaxisformat#font-member)
-  \]
 
   -
   [Excel.ChartAxisTitleFormat.font](/javascript/api/excel/excel.chartaxistitleformat#font-member)
-  \]
 
   -
   [Excel.ChartDataLabelFormat.font](/javascript/api/excel/excel.chartdatalabelformat#font-member)
-  \]
 
   -
   [Excel.ChartDataTableFormat.font](/javascript/api/excel/excel.chartdatatableformat#font-member)
-  \]
 
   -
   [Excel.ChartFormatString.font](/javascript/api/excel/excel.chartformatstring#font-member)
-  \]
 
   -
   [Excel.ChartLegendFormat.font](/javascript/api/excel/excel.chartlegendformat#font-member)
-  \]
 
   -
   [Excel.ChartTitleFormat.font](/javascript/api/excel/excel.charttitleformat#font-member)
-  \]
 
   -
   [Excel.ChartTrendlineLabelFormat.font](/javascript/api/excel/excel.charttrendlinelabelformat#font-member)
-  \]
 
   #### Examples
 

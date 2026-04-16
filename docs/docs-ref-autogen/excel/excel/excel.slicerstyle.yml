@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.Slicer.slicerStyle](/javascript/api/excel/excel.slicer#slicerstyle-member)
-  \]
 
   -
   [Excel.SlicerStyleCollection.items](/javascript/api/excel/excel.slicerstylecollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

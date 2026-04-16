@@ -15,7 +15,7 @@ remarks: |-
 
   #### Used by
 
-  - [Office.Tab.groups](/javascript/api/office/office.tab#groups-member) \]
+  - [Office.Tab.groups](/javascript/api/office/office.tab#groups-member)
   #### Examples
 
   ```TypeScript

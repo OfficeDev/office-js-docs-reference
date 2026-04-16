@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Office.Dialog.messageChild](/javascript/api/office/office.dialog#messagechild-member)
-  \]
 
   -
   [Office.UI.messageParent](/javascript/api/office/office.ui#messageparent-member)
-  \]
 
 isPreview: false
 isDeprecated: false

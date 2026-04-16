@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.LinkedWorkbookCollection.workbookLinksRefreshMode](/javascript/api/excel/excel.linkedworkbookcollection#workbooklinksrefreshmode-member)
-  \]
 
 isPreview: false
 isDeprecated: false

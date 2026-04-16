@@ -33,15 +33,12 @@ remarks: >-
 
   -
   [Office.NotificationMessages.addAsync](/javascript/api/outlook/office.notificationmessages#addasync-member)
-  \]
 
   -
   [Office.NotificationMessages.getAllAsync](/javascript/api/outlook/office.notificationmessages#getallasync-member)
-  \]
 
   -
   [Office.NotificationMessages.replaceAsync](/javascript/api/outlook/office.notificationmessages#replaceasync-member)
-  \]
 
   #### Examples
 

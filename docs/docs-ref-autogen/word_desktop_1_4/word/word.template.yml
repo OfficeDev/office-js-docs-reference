@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Word.Document.attachedTemplate](/javascript/api/word/word.document#attachedtemplate-member)
-  \]
 
   -
   [Word.TemplateCollection.items](/javascript/api/word/word.templatecollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

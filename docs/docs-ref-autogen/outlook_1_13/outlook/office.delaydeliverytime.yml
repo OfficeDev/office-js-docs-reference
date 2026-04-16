@@ -26,7 +26,6 @@ remarks: >-
 
   -
   [Office.MessageCompose.delayDeliveryTime](/javascript/api/outlook/office.messagecompose#delaydeliverytime-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -26,7 +26,6 @@ remarks: >-
 
   -
   [Office.MessageRead.display](/javascript/api/outlook/office.messageread#display-member)
-  \]
 
 isPreview: true
 isDeprecated: false

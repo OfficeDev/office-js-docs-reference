@@ -19,7 +19,6 @@ remarks: >-
 
   -
   [Excel.LinkedEntityDataDomainCollection.onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#onlinkedentitydatadomainadded-member)
-  \]
 
 isPreview: false
 isDeprecated: false

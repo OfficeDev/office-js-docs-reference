@@ -15,16 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member) \]
+  - [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member)
 
   -
   [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
-  \]
 
-  - [Word.List.paragraphs](/javascript/api/word/word.list#paragraphs-member) \]
+  - [Word.List.paragraphs](/javascript/api/word/word.list#paragraphs-member)
 
   - [Word.Range.paragraphs](/javascript/api/word/word.range#paragraphs-member)
-  \]
 
   #### Examples
 

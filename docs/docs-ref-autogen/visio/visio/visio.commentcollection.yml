@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Page.comments](/javascript/api/visio/visio.page#comments-member) \]
+  - [Visio.Page.comments](/javascript/api/visio/visio.page#comments-member)
 
-  - [Visio.Shape.comments](/javascript/api/visio/visio.shape#comments-member) \]
+  - [Visio.Shape.comments](/javascript/api/visio/visio.shape#comments-member)
 
 isPreview: false
 isDeprecated: false

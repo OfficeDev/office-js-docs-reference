@@ -17,11 +17,9 @@ remarks: >-
 
   -
   [Word.CustomXmlNode.attributes](/javascript/api/word/word.customxmlnode#attributes-member)
-  \]
 
   -
   [Word.CustomXmlNode.childNodes](/javascript/api/word/word.customxmlnode#childnodes-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ArrayCellValue.referencedValues](/javascript/api/excel/excel.arraycellvalue#referencedvalues-member)
-  \]
 
   -
   [Excel.EntityCellValue.referencedValues](/javascript/api/excel/excel.entitycellvalue#referencedvalues-member)
-  \]
 
 
   Learn more about the types in this type alias through the following links. 

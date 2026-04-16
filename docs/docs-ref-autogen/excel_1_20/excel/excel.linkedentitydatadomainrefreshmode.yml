@@ -16,19 +16,15 @@ remarks: >-
 
   -
   [Excel.LinkedEntityDataDomain.refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#refreshmode-member)
-  \]
 
   -
   [Excel.LinkedEntityDataDomain.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#supportedrefreshmodes-member)
-  \]
 
   -
   [Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#supportedrefreshmodes-member)
-  \]
 
   -
   [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#refreshmode-member)
-  \]
 
 isPreview: false
 isDeprecated: false

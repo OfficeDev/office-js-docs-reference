@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.frames](/javascript/api/word/word.document#frames-member) \]
+  - [Word.Document.frames](/javascript/api/word/word.document#frames-member)
 
-  - [Word.Range.frames](/javascript/api/word/word.range#frames-member) \]
+  - [Word.Range.frames](/javascript/api/word/word.range#frames-member)
 
 isPreview: false
 isDeprecated: false

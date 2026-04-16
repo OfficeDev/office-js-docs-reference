@@ -18,11 +18,9 @@ remarks: >-
 
   -
   [Excel.Range.dataValidation](/javascript/api/excel/excel.range#datavalidation-member)
-  \]
 
   -
   [Excel.RangeAreas.dataValidation](/javascript/api/excel/excel.rangeareas#datavalidation-member)
-  \]
 
 isPreview: false
 isDeprecated: false

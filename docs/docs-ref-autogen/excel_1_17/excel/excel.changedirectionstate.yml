@@ -16,7 +16,6 @@ remarks: >-
 
   -
   [Excel.WorksheetChangedEventArgs.changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#changedirectionstate-member)
-  \]
 
 isPreview: false
 isDeprecated: false

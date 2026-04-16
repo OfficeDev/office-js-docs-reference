@@ -19,23 +19,18 @@ remarks: >-
 
   -
   [Word.BuildingBlockGalleryContentControl.xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#xmlmapping-member)
-  \]
 
   -
   [Word.ContentControl.xmlMapping](/javascript/api/word/word.contentcontrol#xmlmapping-member)
-  \]
 
   -
   [Word.DatePickerContentControl.xmlMapping](/javascript/api/word/word.datepickercontentcontrol#xmlmapping-member)
-  \]
 
   -
   [Word.GroupContentControl.xmlMapping](/javascript/api/word/word.groupcontentcontrol#xmlmapping-member)
-  \]
 
   -
   [Word.PictureContentControl.xmlMapping](/javascript/api/word/word.picturecontentcontrol#xmlmapping-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.ChartAreaFormat.border](/javascript/api/excel/excel.chartareaformat#border-member)
-  \]
 
   -
   [Excel.ChartPointFormat.border](/javascript/api/excel/excel.chartpointformat#border-member)
-  \]
 
   -
   [Excel.ChartTitleFormat.border](/javascript/api/excel/excel.charttitleformat#border-member)
-  \]
 
 isPreview: false
 isDeprecated: false

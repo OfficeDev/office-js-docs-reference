@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.DataPivotHierarchy.field](/javascript/api/excel/excel.datapivothierarchy#field-member)
-  \]
 
   -
   [Excel.PivotFieldCollection.items](/javascript/api/excel/excel.pivotfieldcollection#items-member)
-  \]
 
   -
   [Excel.ShowAsRule.baseField](/javascript/api/excel/excel.showasrule#basefield-member)
-  \]
 
 isPreview: false
 isDeprecated: false

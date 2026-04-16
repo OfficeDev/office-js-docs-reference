@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.ChartAxes.categoryAxis](/javascript/api/excel/excel.chartaxes#categoryaxis-member)
-  \]
 
   -
   [Excel.ChartAxes.seriesAxis](/javascript/api/excel/excel.chartaxes#seriesaxis-member)
-  \]
 
   -
   [Excel.ChartAxes.valueAxis](/javascript/api/excel/excel.chartaxes#valueaxis-member)
-  \]
 
 isPreview: false
 isDeprecated: false

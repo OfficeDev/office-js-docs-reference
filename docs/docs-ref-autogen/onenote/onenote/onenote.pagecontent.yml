@@ -16,19 +16,15 @@ remarks: >-
 
   -
   [OneNote.FloatingInk.pageContent](/javascript/api/onenote/onenote.floatingink#pagecontent-member)
-  \]
 
   -
   [OneNote.Image.pageContent](/javascript/api/onenote/onenote.image#pagecontent-member)
-  \]
 
   -
   [OneNote.Outline.pageContent](/javascript/api/onenote/onenote.outline#pagecontent-member)
-  \]
 
   -
   [OneNote.PageContentCollection.items](/javascript/api/onenote/onenote.pagecontentcollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

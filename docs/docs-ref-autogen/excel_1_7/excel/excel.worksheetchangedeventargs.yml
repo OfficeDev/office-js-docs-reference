@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.Worksheet.onChanged](/javascript/api/excel/excel.worksheet#onchanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

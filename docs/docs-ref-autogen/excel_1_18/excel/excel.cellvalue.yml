@@ -15,63 +15,48 @@ remarks: >-
 
   -
   [Excel.ArrayCellValue.elements](/javascript/api/excel/excel.arraycellvalue#elements-member)
-  \]
 
   -
   [Excel.ChangedEventDetail.valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#valueasjsonafter-member)
-  \]
 
   -
   [Excel.ChangedEventDetail.valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#valueasjsonbefore-member)
-  \]
 
   -
   [Excel.NamedItem.valueAsJson](/javascript/api/excel/excel.nameditem#valueasjson-member)
-  \]
 
   -
   [Excel.NamedItem.valueAsJsonLocal](/javascript/api/excel/excel.nameditem#valueasjsonlocal-member)
-  \]
 
   -
   [Excel.NamedItemArrayValues.valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#valuesasjson-member)
-  \]
 
   -
   [Excel.NamedItemArrayValues.valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#valuesasjsonlocal-member)
-  \]
 
   -
   [Excel.Range.valuesAsJson](/javascript/api/excel/excel.range#valuesasjson-member)
-  \]
 
   -
   [Excel.Range.valuesAsJsonLocal](/javascript/api/excel/excel.range#valuesasjsonlocal-member)
-  \]
 
   -
   [Excel.RangeView.valuesAsJson](/javascript/api/excel/excel.rangeview#valuesasjson-member)
-  \]
 
   -
   [Excel.RangeView.valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#valuesasjsonlocal-member)
-  \]
 
   -
   [Excel.TableColumn.valuesAsJson](/javascript/api/excel/excel.tablecolumn#valuesasjson-member)
-  \]
 
   -
   [Excel.TableColumn.valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#valuesasjsonlocal-member)
-  \]
 
   -
   [Excel.TableRow.valuesAsJson](/javascript/api/excel/excel.tablerow#valuesasjson-member)
-  \]
 
   -
   [Excel.TableRow.valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#valuesasjsonlocal-member)
-  \]
 
 
 

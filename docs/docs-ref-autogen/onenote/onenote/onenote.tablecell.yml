@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [OneNote.Paragraph.parentTableCell](/javascript/api/onenote/onenote.paragraph#parenttablecell-member)
-  \]
 
   -
   [OneNote.Paragraph.parentTableCellOrNull](/javascript/api/onenote/onenote.paragraph#parenttablecellornull-member)
-  \]
 
   -
   [OneNote.TableCellCollection.items](/javascript/api/onenote/onenote.tablecellcollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

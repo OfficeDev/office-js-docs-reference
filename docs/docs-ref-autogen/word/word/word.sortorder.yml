@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Word.TableSortOptions.sortOrder](/javascript/api/word/word.tablesortoptions#sortorder-member)
-  \]
 
   -
   [Word.TableSortOptions.sortOrder2](/javascript/api/word/word.tablesortoptions#sortorder2-member)
-  \]
 
   -
   [Word.TableSortOptions.sortOrder3](/javascript/api/word/word.tablesortoptions#sortorder3-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -39,11 +39,9 @@ remarks: >-
 
   -
   [Office.AppointmentCompose.sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#sensitivitylabel-member)
-  \]
 
   -
   [Office.MessageCompose.sensitivityLabel](/javascript/api/outlook/office.messagecompose#sensitivitylabel-member)
-  \]
 
 isPreview: false
 isDeprecated: false

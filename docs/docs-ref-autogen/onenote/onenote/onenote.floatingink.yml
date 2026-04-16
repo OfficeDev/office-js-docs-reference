@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [OneNote.InkStroke.floatingInk](/javascript/api/onenote/onenote.inkstroke#floatingink-member)
-  \]
 
   -
   [OneNote.PageContent.ink](/javascript/api/onenote/onenote.pagecontent#ink-member)
-  \]
 
 isPreview: false
 isDeprecated: false

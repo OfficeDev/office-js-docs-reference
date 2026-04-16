@@ -19,17 +19,13 @@ remarks: >-
 
 
   - [Excel.Chart.worksheet](/javascript/api/excel/excel.chart#worksheet-member)
-  \]
 
   - [Excel.Range.worksheet](/javascript/api/excel/excel.range#worksheet-member)
-  \]
 
   - [Excel.Table.worksheet](/javascript/api/excel/excel.table#worksheet-member)
-  \]
 
   -
   [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#items-member)
-  \]
 
   #### Examples
 

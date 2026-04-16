@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.Table.tableStyle](/javascript/api/excel/excel.table#tablestyle-member)
-  \]
 
   -
   [Excel.TableStyleCollection.items](/javascript/api/excel/excel.tablestylecollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

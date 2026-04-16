@@ -74,7 +74,6 @@ remarks: >-
 
   -
   [Office.MessageCompose.internetHeaders](/javascript/api/outlook/office.messagecompose#internetheaders-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onColumnSorted](/javascript/api/excel/excel.worksheet#oncolumnsorted-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onColumnSorted](/javascript/api/excel/excel.worksheetcollection#oncolumnsorted-member)
-  \]
 
 isPreview: false
 isDeprecated: false

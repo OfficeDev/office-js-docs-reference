@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#conditionalformats-member)
-  \]
 
   -
   [Excel.RangeAreas.conditionalFormats](/javascript/api/excel/excel.rangeareas#conditionalformats-member)
-  \]
 
 isPreview: false
 isDeprecated: false

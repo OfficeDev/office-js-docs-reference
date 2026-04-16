@@ -14,9 +14,8 @@ remarks: >-
 
   -
   [Excel.RangeFormat.fill](/javascript/api/excel/excel.rangeformat#fill-member)
-  \]
 
-  - [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member) \]
+  - [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member)
 
 isPreview: false
 isDeprecated: false

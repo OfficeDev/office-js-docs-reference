@@ -16,10 +16,8 @@ remarks: >-
 
   -
   [Excel.HeaderFooterPicture.colorType](/javascript/api/excel/excel.headerfooterpicture#colortype-member)
-  \]
 
   - [Excel.Image.colorType](/javascript/api/excel/excel.image#colortype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

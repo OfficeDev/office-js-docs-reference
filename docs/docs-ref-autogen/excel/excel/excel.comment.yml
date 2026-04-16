@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.CommentCollection.items](/javascript/api/excel/excel.commentcollection#items-member)
-  \]
 
   -
   [Excel.DocumentTask.comment](/javascript/api/excel/excel.documenttask#comment-member)
-  \]
 
 isPreview: false
 isDeprecated: false

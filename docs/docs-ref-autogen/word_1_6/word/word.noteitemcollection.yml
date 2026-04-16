@@ -15,40 +15,34 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.endnotes](/javascript/api/word/word.body#endnotes-member) \]
+  - [Word.Body.endnotes](/javascript/api/word/word.body#endnotes-member)
 
-  - [Word.Body.footnotes](/javascript/api/word/word.body#footnotes-member) \]
+  - [Word.Body.footnotes](/javascript/api/word/word.body#footnotes-member)
 
   -
   [Word.ContentControl.endnotes](/javascript/api/word/word.contentcontrol#endnotes-member)
-  \]
 
   -
   [Word.ContentControl.footnotes](/javascript/api/word/word.contentcontrol#footnotes-member)
-  \]
 
   -
   [Word.Paragraph.endnotes](/javascript/api/word/word.paragraph#endnotes-member)
-  \]
 
   -
   [Word.Paragraph.footnotes](/javascript/api/word/word.paragraph#footnotes-member)
-  \]
 
-  - [Word.Range.endnotes](/javascript/api/word/word.range#endnotes-member) \]
+  - [Word.Range.endnotes](/javascript/api/word/word.range#endnotes-member)
 
-  - [Word.Range.footnotes](/javascript/api/word/word.range#footnotes-member) \]
+  - [Word.Range.footnotes](/javascript/api/word/word.range#footnotes-member)
 
-  - [Word.Table.endnotes](/javascript/api/word/word.table#endnotes-member) \]
+  - [Word.Table.endnotes](/javascript/api/word/word.table#endnotes-member)
 
-  - [Word.Table.footnotes](/javascript/api/word/word.table#footnotes-member) \]
+  - [Word.Table.footnotes](/javascript/api/word/word.table#footnotes-member)
 
   - [Word.TableRow.endnotes](/javascript/api/word/word.tablerow#endnotes-member)
-  \]
 
   -
   [Word.TableRow.footnotes](/javascript/api/word/word.tablerow#footnotes-member)
-  \]
 
   #### Examples
 

@@ -17,648 +17,495 @@ remarks: >-
 
   -
   [Word.Annotation.context](/javascript/api/word/word.annotation#context-member)
-  \]
 
   -
   [Word.AnnotationCollection.context](/javascript/api/word/word.annotationcollection#context-member)
-  \]
 
   -
   [Word.Application.context](/javascript/api/word/word.application#context-member)
-  \]
 
   -
   [Word.Bibliography.context](/javascript/api/word/word.bibliography#context-member)
-  \]
 
-  - [Word.Body.context](/javascript/api/word/word.body#context-member) \]
+  - [Word.Body.context](/javascript/api/word/word.body#context-member)
 
   - [Word.Bookmark.context](/javascript/api/word/word.bookmark#context-member)
-  \]
 
   -
   [Word.BookmarkCollection.context](/javascript/api/word/word.bookmarkcollection#context-member)
-  \]
 
-  - [Word.Border.context](/javascript/api/word/word.border#context-member) \]
+  - [Word.Border.context](/javascript/api/word/word.border#context-member)
 
   -
   [Word.BorderCollection.context](/javascript/api/word/word.bordercollection#context-member)
-  \]
 
   -
   [Word.BorderUniversal.context](/javascript/api/word/word.borderuniversal#context-member)
-  \]
 
   -
   [Word.BorderUniversalCollection.context](/javascript/api/word/word.borderuniversalcollection#context-member)
-  \]
 
-  - [Word.Break.context](/javascript/api/word/word.break#context-member) \]
+  - [Word.Break.context](/javascript/api/word/word.break#context-member)
 
   -
   [Word.BreakCollection.context](/javascript/api/word/word.breakcollection#context-member)
-  \]
 
   -
   [Word.BuildingBlock.context](/javascript/api/word/word.buildingblock#context-member)
-  \]
 
   -
   [Word.BuildingBlockCategory.context](/javascript/api/word/word.buildingblockcategory#context-member)
-  \]
 
   -
   [Word.BuildingBlockCategoryCollection.context](/javascript/api/word/word.buildingblockcategorycollection#context-member)
-  \]
 
   -
   [Word.BuildingBlockCollection.context](/javascript/api/word/word.buildingblockcollection#context-member)
-  \]
 
   -
   [Word.BuildingBlockEntryCollection.context](/javascript/api/word/word.buildingblockentrycollection#context-member)
-  \]
 
   -
   [Word.BuildingBlockGalleryContentControl.context](/javascript/api/word/word.buildingblockgallerycontentcontrol#context-member)
-  \]
 
   -
   [Word.BuildingBlockTypeItem.context](/javascript/api/word/word.buildingblocktypeitem#context-member)
-  \]
 
   -
   [Word.BuildingBlockTypeItemCollection.context](/javascript/api/word/word.buildingblocktypeitemcollection#context-member)
-  \]
 
-  - [Word.Canvas.context](/javascript/api/word/word.canvas#context-member) \]
+  - [Word.Canvas.context](/javascript/api/word/word.canvas#context-member)
 
   -
   [Word.CheckboxContentControl.context](/javascript/api/word/word.checkboxcontentcontrol#context-member)
-  \]
 
   - [Word.Coauthor.context](/javascript/api/word/word.coauthor#context-member)
-  \]
 
   -
   [Word.CoauthorCollection.context](/javascript/api/word/word.coauthorcollection#context-member)
-  \]
 
   -
   [Word.Coauthoring.context](/javascript/api/word/word.coauthoring#context-member)
-  \]
 
   -
   [Word.CoauthoringLock.context](/javascript/api/word/word.coauthoringlock#context-member)
-  \]
 
   -
   [Word.CoauthoringLockCollection.context](/javascript/api/word/word.coauthoringlockcollection#context-member)
-  \]
 
   -
   [Word.CoauthoringUpdate.context](/javascript/api/word/word.coauthoringupdate#context-member)
-  \]
 
   -
   [Word.CoauthoringUpdateCollection.context](/javascript/api/word/word.coauthoringupdatecollection#context-member)
-  \]
 
   -
   [Word.ColorFormat.context](/javascript/api/word/word.colorformat#context-member)
-  \]
 
   -
   [Word.ComboBoxContentControl.context](/javascript/api/word/word.comboboxcontentcontrol#context-member)
-  \]
 
-  - [Word.Comment.context](/javascript/api/word/word.comment#context-member) \]
+  - [Word.Comment.context](/javascript/api/word/word.comment#context-member)
 
   -
   [Word.CommentCollection.context](/javascript/api/word/word.commentcollection#context-member)
-  \]
 
   -
   [Word.CommentContentRange.context](/javascript/api/word/word.commentcontentrange#context-member)
-  \]
 
   -
   [Word.CommentReply.context](/javascript/api/word/word.commentreply#context-member)
-  \]
 
   -
   [Word.CommentReplyCollection.context](/javascript/api/word/word.commentreplycollection#context-member)
-  \]
 
   -
   [Word.ConditionalStyle.context](/javascript/api/word/word.conditionalstyle#context-member)
-  \]
 
   - [Word.Conflict.context](/javascript/api/word/word.conflict#context-member)
-  \]
 
   -
   [Word.ConflictCollection.context](/javascript/api/word/word.conflictcollection#context-member)
-  \]
 
   -
   [Word.ContentControl.context](/javascript/api/word/word.contentcontrol#context-member)
-  \]
 
   -
   [Word.ContentControlCollection.context](/javascript/api/word/word.contentcontrolcollection#context-member)
-  \]
 
   -
   [Word.ContentControlListItem.context](/javascript/api/word/word.contentcontrollistitem#context-member)
-  \]
 
   -
   [Word.ContentControlListItemCollection.context](/javascript/api/word/word.contentcontrollistitemcollection#context-member)
-  \]
 
   -
   [Word.CritiqueAnnotation.context](/javascript/api/word/word.critiqueannotation#context-member)
-  \]
 
   -
   [Word.CustomProperty.context](/javascript/api/word/word.customproperty#context-member)
-  \]
 
   -
   [Word.CustomPropertyCollection.context](/javascript/api/word/word.custompropertycollection#context-member)
-  \]
 
   -
   [Word.CustomXmlNode.context](/javascript/api/word/word.customxmlnode#context-member)
-  \]
 
   -
   [Word.CustomXmlNodeCollection.context](/javascript/api/word/word.customxmlnodecollection#context-member)
-  \]
 
   -
   [Word.CustomXmlPart.context](/javascript/api/word/word.customxmlpart#context-member)
-  \]
 
   -
   [Word.CustomXmlPartCollection.context](/javascript/api/word/word.customxmlpartcollection#context-member)
-  \]
 
   -
   [Word.CustomXmlPartScopedCollection.context](/javascript/api/word/word.customxmlpartscopedcollection#context-member)
-  \]
 
   -
   [Word.CustomXmlPrefixMapping.context](/javascript/api/word/word.customxmlprefixmapping#context-member)
-  \]
 
   -
   [Word.CustomXmlPrefixMappingCollection.context](/javascript/api/word/word.customxmlprefixmappingcollection#context-member)
-  \]
 
   -
   [Word.CustomXmlSchema.context](/javascript/api/word/word.customxmlschema#context-member)
-  \]
 
   -
   [Word.CustomXmlSchemaCollection.context](/javascript/api/word/word.customxmlschemacollection#context-member)
-  \]
 
   -
   [Word.CustomXmlValidationError.context](/javascript/api/word/word.customxmlvalidationerror#context-member)
-  \]
 
   -
   [Word.CustomXmlValidationErrorCollection.context](/javascript/api/word/word.customxmlvalidationerrorcollection#context-member)
-  \]
 
   -
   [Word.DatePickerContentControl.context](/javascript/api/word/word.datepickercontentcontrol#context-member)
-  \]
 
   - [Word.Document.context](/javascript/api/word/word.document#context-member)
-  \]
 
   -
   [Word.DocumentCreated.context](/javascript/api/word/word.documentcreated#context-member)
-  \]
 
   -
   [Word.DocumentLibraryVersion.context](/javascript/api/word/word.documentlibraryversion#context-member)
-  \]
 
   -
   [Word.DocumentLibraryVersionCollection.context](/javascript/api/word/word.documentlibraryversioncollection#context-member)
-  \]
 
   -
   [Word.DocumentProperties.context](/javascript/api/word/word.documentproperties#context-member)
-  \]
 
-  - [Word.DropCap.context](/javascript/api/word/word.dropcap#context-member) \]
+  - [Word.DropCap.context](/javascript/api/word/word.dropcap#context-member)
 
   -
   [Word.DropDownListContentControl.context](/javascript/api/word/word.dropdownlistcontentcontrol#context-member)
-  \]
 
-  - [Word.Editor.context](/javascript/api/word/word.editor#context-member) \]
+  - [Word.Editor.context](/javascript/api/word/word.editor#context-member)
 
   -
   [Word.EditorCollection.context](/javascript/api/word/word.editorcollection#context-member)
-  \]
 
-  - [Word.Field.context](/javascript/api/word/word.field#context-member) \]
+  - [Word.Field.context](/javascript/api/word/word.field#context-member)
 
   -
   [Word.FieldCollection.context](/javascript/api/word/word.fieldcollection#context-member)
-  \]
 
   -
   [Word.FillFormat.context](/javascript/api/word/word.fillformat#context-member)
-  \]
 
-  - [Word.Font.context](/javascript/api/word/word.font#context-member) \]
+  - [Word.Font.context](/javascript/api/word/word.font#context-member)
 
   -
   [Word.FontNameCollection.context](/javascript/api/word/word.fontnamecollection#context-member)
-  \]
 
-  - [Word.Frame.context](/javascript/api/word/word.frame#context-member) \]
+  - [Word.Frame.context](/javascript/api/word/word.frame#context-member)
 
   -
   [Word.FrameCollection.context](/javascript/api/word/word.framecollection#context-member)
-  \]
 
   -
   [Word.GlowFormat.context](/javascript/api/word/word.glowformat#context-member)
-  \]
 
   -
   [Word.GroupContentControl.context](/javascript/api/word/word.groupcontentcontrol#context-member)
-  \]
 
   -
   [Word.HeadingStyle.context](/javascript/api/word/word.headingstyle#context-member)
-  \]
 
   -
   [Word.HeadingStyleCollection.context](/javascript/api/word/word.headingstylecollection#context-member)
-  \]
 
   -
   [Word.HtmlDivision.context](/javascript/api/word/word.htmldivision#context-member)
-  \]
 
   -
   [Word.HtmlDivisionCollection.context](/javascript/api/word/word.htmldivisioncollection#context-member)
-  \]
 
   - [Word.Hyperlink.context](/javascript/api/word/word.hyperlink#context-member)
-  \]
 
   -
   [Word.HyperlinkCollection.context](/javascript/api/word/word.hyperlinkcollection#context-member)
-  \]
 
-  - [Word.Index.context](/javascript/api/word/word.index#context-member) \]
+  - [Word.Index.context](/javascript/api/word/word.index#context-member)
 
   -
   [Word.IndexCollection.context](/javascript/api/word/word.indexcollection#context-member)
-  \]
 
   -
   [Word.InlinePicture.context](/javascript/api/word/word.inlinepicture#context-member)
-  \]
 
   -
   [Word.InlinePictureCollection.context](/javascript/api/word/word.inlinepicturecollection#context-member)
-  \]
 
   -
   [Word.LineFormat.context](/javascript/api/word/word.lineformat#context-member)
-  \]
 
   -
   [Word.LineNumbering.context](/javascript/api/word/word.linenumbering#context-member)
-  \]
 
   -
   [Word.LinkFormat.context](/javascript/api/word/word.linkformat#context-member)
-  \]
 
-  - [Word.List.context](/javascript/api/word/word.list#context-member) \]
+  - [Word.List.context](/javascript/api/word/word.list#context-member)
 
   -
   [Word.ListCollection.context](/javascript/api/word/word.listcollection#context-member)
-  \]
 
   -
   [Word.ListFormat.context](/javascript/api/word/word.listformat#context-member)
-  \]
 
   - [Word.ListItem.context](/javascript/api/word/word.listitem#context-member)
-  \]
 
   - [Word.ListLevel.context](/javascript/api/word/word.listlevel#context-member)
-  \]
 
   -
   [Word.ListLevelCollection.context](/javascript/api/word/word.listlevelcollection#context-member)
-  \]
 
   -
   [Word.ListTemplate.context](/javascript/api/word/word.listtemplate#context-member)
-  \]
 
   -
   [Word.ListTemplateCollection.context](/javascript/api/word/word.listtemplatecollection#context-member)
-  \]
 
   -
   [Word.ListTemplateGallery.context](/javascript/api/word/word.listtemplategallery#context-member)
-  \]
 
   -
   [Word.ListTemplateGalleryCollection.context](/javascript/api/word/word.listtemplategallerycollection#context-member)
-  \]
 
   - [Word.NoteItem.context](/javascript/api/word/word.noteitem#context-member)
-  \]
 
   -
   [Word.NoteItemCollection.context](/javascript/api/word/word.noteitemcollection#context-member)
-  \]
 
   - [Word.OleFormat.context](/javascript/api/word/word.oleformat#context-member)
-  \]
 
-  - [Word.Page.context](/javascript/api/word/word.page#context-member) \]
+  - [Word.Page.context](/javascript/api/word/word.page#context-member)
 
   -
   [Word.PageCollection.context](/javascript/api/word/word.pagecollection#context-member)
-  \]
 
   - [Word.PageSetup.context](/javascript/api/word/word.pagesetup#context-member)
-  \]
 
-  - [Word.Pane.context](/javascript/api/word/word.pane#context-member) \]
+  - [Word.Pane.context](/javascript/api/word/word.pane#context-member)
 
   -
   [Word.PaneCollection.context](/javascript/api/word/word.panecollection#context-member)
-  \]
 
   - [Word.Paragraph.context](/javascript/api/word/word.paragraph#context-member)
-  \]
 
   -
   [Word.ParagraphCollection.context](/javascript/api/word/word.paragraphcollection#context-member)
-  \]
 
   -
   [Word.ParagraphFormat.context](/javascript/api/word/word.paragraphformat#context-member)
-  \]
 
   -
   [Word.PictureContentControl.context](/javascript/api/word/word.picturecontentcontrol#context-member)
-  \]
 
-  - [Word.Range.context](/javascript/api/word/word.range#context-member) \]
+  - [Word.Range.context](/javascript/api/word/word.range#context-member)
 
   -
   [Word.RangeCollection.context](/javascript/api/word/word.rangecollection#context-member)
-  \]
 
   -
   [Word.RangeScopedCollection.context](/javascript/api/word/word.rangescopedcollection#context-member)
-  \]
 
   -
   [Word.ReadabilityStatistic.context](/javascript/api/word/word.readabilitystatistic#context-member)
-  \]
 
   -
   [Word.ReadabilityStatisticCollection.context](/javascript/api/word/word.readabilitystatisticcollection#context-member)
-  \]
 
   -
   [Word.ReflectionFormat.context](/javascript/api/word/word.reflectionformat#context-member)
-  \]
 
   -
   [Word.RepeatingSectionContentControl.context](/javascript/api/word/word.repeatingsectioncontentcontrol#context-member)
-  \]
 
   -
   [Word.RepeatingSectionItem.context](/javascript/api/word/word.repeatingsectionitem#context-member)
-  \]
 
   -
   [Word.RepeatingSectionItemCollection.context](/javascript/api/word/word.repeatingsectionitemcollection#context-member)
-  \]
 
   - [Word.Reviewer.context](/javascript/api/word/word.reviewer#context-member)
-  \]
 
   -
   [Word.ReviewerCollection.context](/javascript/api/word/word.reviewercollection#context-member)
-  \]
 
   - [Word.Revision.context](/javascript/api/word/word.revision#context-member)
-  \]
 
   -
   [Word.RevisionCollection.context](/javascript/api/word/word.revisioncollection#context-member)
-  \]
 
   -
   [Word.RevisionsFilter.context](/javascript/api/word/word.revisionsfilter#context-member)
-  \]
 
   -
   [Word.SearchOptions.context](/javascript/api/word/word.searchoptions#context-member)
-  \]
 
-  - [Word.Section.context](/javascript/api/word/word.section#context-member) \]
+  - [Word.Section.context](/javascript/api/word/word.section#context-member)
 
   -
   [Word.SectionCollection.context](/javascript/api/word/word.sectioncollection#context-member)
-  \]
 
   - [Word.Selection.context](/javascript/api/word/word.selection#context-member)
-  \]
 
-  - [Word.Setting.context](/javascript/api/word/word.setting#context-member) \]
+  - [Word.Setting.context](/javascript/api/word/word.setting#context-member)
 
   -
   [Word.SettingCollection.context](/javascript/api/word/word.settingcollection#context-member)
-  \]
 
-  - [Word.Shading.context](/javascript/api/word/word.shading#context-member) \]
+  - [Word.Shading.context](/javascript/api/word/word.shading#context-member)
 
   -
   [Word.ShadingUniversal.context](/javascript/api/word/word.shadinguniversal#context-member)
-  \]
 
   -
   [Word.ShadowFormat.context](/javascript/api/word/word.shadowformat#context-member)
-  \]
 
-  - [Word.Shape.context](/javascript/api/word/word.shape#context-member) \]
+  - [Word.Shape.context](/javascript/api/word/word.shape#context-member)
 
   -
   [Word.ShapeCollection.context](/javascript/api/word/word.shapecollection#context-member)
-  \]
 
   - [Word.ShapeFill.context](/javascript/api/word/word.shapefill#context-member)
-  \]
 
   -
   [Word.ShapeGroup.context](/javascript/api/word/word.shapegroup#context-member)
-  \]
 
   -
   [Word.ShapeTextWrap.context](/javascript/api/word/word.shapetextwrap#context-member)
-  \]
 
-  - [Word.Source.context](/javascript/api/word/word.source#context-member) \]
+  - [Word.Source.context](/javascript/api/word/word.source#context-member)
 
   -
   [Word.SourceCollection.context](/javascript/api/word/word.sourcecollection#context-member)
-  \]
 
-  - [Word.Style.context](/javascript/api/word/word.style#context-member) \]
+  - [Word.Style.context](/javascript/api/word/word.style#context-member)
 
   -
   [Word.StyleCollection.context](/javascript/api/word/word.stylecollection#context-member)
-  \]
 
-  - [Word.Table.context](/javascript/api/word/word.table#context-member) \]
+  - [Word.Table.context](/javascript/api/word/word.table#context-member)
 
   -
   [Word.TableBorder.context](/javascript/api/word/word.tableborder#context-member)
-  \]
 
   - [Word.TableCell.context](/javascript/api/word/word.tablecell#context-member)
-  \]
 
   -
   [Word.TableCellCollection.context](/javascript/api/word/word.tablecellcollection#context-member)
-  \]
 
   -
   [Word.TableCollection.context](/javascript/api/word/word.tablecollection#context-member)
-  \]
 
   -
   [Word.TableColumn.context](/javascript/api/word/word.tablecolumn#context-member)
-  \]
 
   -
   [Word.TableColumnCollection.context](/javascript/api/word/word.tablecolumncollection#context-member)
-  \]
 
   -
   [Word.TableOfAuthorities.context](/javascript/api/word/word.tableofauthorities#context-member)
-  \]
 
   -
   [Word.TableOfAuthoritiesCategory.context](/javascript/api/word/word.tableofauthoritiescategory#context-member)
-  \]
 
   -
   [Word.TableOfAuthoritiesCategoryCollection.context](/javascript/api/word/word.tableofauthoritiescategorycollection#context-member)
-  \]
 
   -
   [Word.TableOfAuthoritiesCollection.context](/javascript/api/word/word.tableofauthoritiescollection#context-member)
-  \]
 
   -
   [Word.TableOfContents.context](/javascript/api/word/word.tableofcontents#context-member)
-  \]
 
   -
   [Word.TableOfContentsCollection.context](/javascript/api/word/word.tableofcontentscollection#context-member)
-  \]
 
   -
   [Word.TableOfFigures.context](/javascript/api/word/word.tableoffigures#context-member)
-  \]
 
   -
   [Word.TableOfFiguresCollection.context](/javascript/api/word/word.tableoffigurescollection#context-member)
-  \]
 
   - [Word.TableRow.context](/javascript/api/word/word.tablerow#context-member)
-  \]
 
   -
   [Word.TableRowCollection.context](/javascript/api/word/word.tablerowcollection#context-member)
-  \]
 
   -
   [Word.TableStyle.context](/javascript/api/word/word.tablestyle#context-member)
-  \]
 
-  - [Word.TabStop.context](/javascript/api/word/word.tabstop#context-member) \]
+  - [Word.TabStop.context](/javascript/api/word/word.tabstop#context-member)
 
   -
   [Word.TabStopCollection.context](/javascript/api/word/word.tabstopcollection#context-member)
-  \]
 
   - [Word.Template.context](/javascript/api/word/word.template#context-member)
-  \]
 
   -
   [Word.TemplateCollection.context](/javascript/api/word/word.templatecollection#context-member)
-  \]
 
   -
   [Word.TextColumn.context](/javascript/api/word/word.textcolumn#context-member)
-  \]
 
   -
   [Word.TextColumnCollection.context](/javascript/api/word/word.textcolumncollection#context-member)
-  \]
 
   - [Word.TextFrame.context](/javascript/api/word/word.textframe#context-member)
-  \]
 
   -
   [Word.ThreeDimensionalFormat.context](/javascript/api/word/word.threedimensionalformat#context-member)
-  \]
 
   -
   [Word.TrackedChange.context](/javascript/api/word/word.trackedchange#context-member)
-  \]
 
   -
   [Word.TrackedChangeCollection.context](/javascript/api/word/word.trackedchangecollection#context-member)
-  \]
 
-  - [Word.View.context](/javascript/api/word/word.view#context-member) \]
+  - [Word.View.context](/javascript/api/word/word.view#context-member)
 
   -
   [Word.WebSettings.context](/javascript/api/word/word.websettings#context-member)
-  \]
 
-  - [Word.Window.context](/javascript/api/word/word.window#context-member) \]
+  - [Word.Window.context](/javascript/api/word/word.window#context-member)
 
   -
   [Word.WindowCollection.context](/javascript/api/word/word.windowcollection#context-member)
-  \]
 
   -
   [Word.XmlMapping.context](/javascript/api/word/word.xmlmapping#context-member)
-  \]
 
-  - [Word.XmlNode.context](/javascript/api/word/word.xmlnode#context-member) \]
+  - [Word.XmlNode.context](/javascript/api/word/word.xmlnode#context-member)
 
   -
   [Word.XmlNodeCollection.context](/javascript/api/word/word.xmlnodecollection#context-member)
-  \]
 
   #### Examples
 

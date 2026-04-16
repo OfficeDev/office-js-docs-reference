@@ -31,7 +31,6 @@ remarks: >-
 
   -
   [Office.MessageCompose.from](/javascript/api/outlook/office.messagecompose#from-member)
-  \]
 
 isPreview: false
 isDeprecated: false

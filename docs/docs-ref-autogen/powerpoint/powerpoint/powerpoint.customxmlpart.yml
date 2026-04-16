@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [PowerPoint.CustomXmlPartCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#items-member)
-  \]
 
   -
   [PowerPoint.CustomXmlPartScopedCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

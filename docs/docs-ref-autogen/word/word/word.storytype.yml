@@ -14,13 +14,11 @@ remarks: >-
 
   -
   [Word.Bookmark.storyType](/javascript/api/word/word.bookmark#storytype-member)
-  \]
 
-  - [Word.Range.storyType](/javascript/api/word/word.range#storytype-member) \]
+  - [Word.Range.storyType](/javascript/api/word/word.range#storytype-member)
 
   -
   [Word.Selection.storyType](/javascript/api/word/word.selection#storytype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

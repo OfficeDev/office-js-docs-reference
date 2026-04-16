@@ -25,15 +25,12 @@ remarks: >-
 
   -
   [Office.EnhancedLocation.addAsync](/javascript/api/outlook/office.enhancedlocation#addasync-member)
-  \]
 
   -
   [Office.EnhancedLocation.removeAsync](/javascript/api/outlook/office.enhancedlocation#removeasync-member)
-  \]
 
   -
   [Office.LocationDetails.locationIdentifier](/javascript/api/outlook/office.locationdetails#locationidentifier-member)
-  \]
 
   #### Examples
 

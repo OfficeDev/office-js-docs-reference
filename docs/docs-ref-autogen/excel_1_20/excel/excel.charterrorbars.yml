@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ChartSeries.xErrorBars](/javascript/api/excel/excel.chartseries#xerrorbars-member)
-  \]
 
   -
   [Excel.ChartSeries.yErrorBars](/javascript/api/excel/excel.chartseries#yerrorbars-member)
-  \]
 
 isPreview: false
 isDeprecated: false

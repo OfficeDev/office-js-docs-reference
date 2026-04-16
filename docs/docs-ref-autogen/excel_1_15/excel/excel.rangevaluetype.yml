@@ -14,23 +14,18 @@ remarks: >-
 
   -
   [Excel.ChangedEventDetail.valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#valuetypeafter-member)
-  \]
 
   -
   [Excel.ChangedEventDetail.valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#valuetypebefore-member)
-  \]
 
   -
   [Excel.NamedItemArrayValues.types](/javascript/api/excel/excel.nameditemarrayvalues#types-member)
-  \]
 
   -
   [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
-  \]
 
   -
   [Excel.RangeView.valueTypes](/javascript/api/excel/excel.rangeview#valuetypes-member)
-  \]
 
 isPreview: false
 isDeprecated: false

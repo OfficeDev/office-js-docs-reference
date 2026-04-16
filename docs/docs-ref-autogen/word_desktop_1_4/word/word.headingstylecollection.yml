@@ -17,11 +17,9 @@ remarks: >-
 
   -
   [Word.TableOfContents.additionalHeadingStyles](/javascript/api/word/word.tableofcontents#additionalheadingstyles-member)
-  \]
 
   -
   [Word.TableOfFigures.additionalHeadingStyles](/javascript/api/word/word.tableoffigures#additionalheadingstyles-member)
-  \]
 
 isPreview: false
 isDeprecated: false

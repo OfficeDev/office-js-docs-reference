@@ -17,9 +17,8 @@ remarks: >-
 
   -
   [Word.Range.tableColumns](/javascript/api/word/word.range#tablecolumns-member)
-  \]
 
-  - [Word.Table.columns](/javascript/api/word/word.table#columns-member) \]
+  - [Word.Table.columns](/javascript/api/word/word.table#columns-member)
 
 isPreview: false
 isDeprecated: false

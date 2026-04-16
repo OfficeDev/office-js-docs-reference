@@ -16,17 +16,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.shapes](/javascript/api/word/word.body#shapes-member) \]
+  - [Word.Body.shapes](/javascript/api/word/word.body#shapes-member)
 
-  - [Word.Canvas.shapes](/javascript/api/word/word.canvas#shapes-member) \]
+  - [Word.Canvas.shapes](/javascript/api/word/word.canvas#shapes-member)
 
   - [Word.Paragraph.shapes](/javascript/api/word/word.paragraph#shapes-member)
-  \]
 
-  - [Word.Range.shapes](/javascript/api/word/word.range#shapes-member) \]
+  - [Word.Range.shapes](/javascript/api/word/word.range#shapes-member)
 
   - [Word.ShapeGroup.shapes](/javascript/api/word/word.shapegroup#shapes-member)
-  \]
 
   #### Examples
 

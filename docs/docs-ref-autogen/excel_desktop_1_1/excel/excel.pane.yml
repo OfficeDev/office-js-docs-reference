@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.PaneCollection.items](/javascript/api/excel/excel.panecollection#items-member)
-  \]
 
   -
   [Excel.Window.activePane](/javascript/api/excel/excel.window#activepane-member)
-  \]
 
 isPreview: false
 isDeprecated: false

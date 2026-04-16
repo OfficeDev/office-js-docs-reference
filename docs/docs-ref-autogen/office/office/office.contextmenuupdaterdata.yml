@@ -20,7 +20,6 @@ remarks: >-
 
   -
   [Office.ContextMenu.requestUpdate](/javascript/api/office/office.contextmenu#requestupdate-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Chart.onDeactivated](/javascript/api/excel/excel.chart#ondeactivated-member)
-  \]
 
   -
   [Excel.ChartCollection.onDeactivated](/javascript/api/excel/excel.chartcollection#ondeactivated-member)
-  \]
 
 isPreview: false
 isDeprecated: false

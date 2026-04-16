@@ -14,10 +14,8 @@ remarks: >-
 
   -
   [Word.Document.pageSetup](/javascript/api/word/word.document#pagesetup-member)
-  \]
 
   - [Word.Section.pageSetup](/javascript/api/word/word.section#pagesetup-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -55,27 +55,21 @@ remarks: >-
 
   -
   [Office.AppointmentCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#loadcustompropertiesasync-member)
-  \]
 
   -
   [Office.AppointmentRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#loadcustompropertiesasync-member)
-  \]
 
   -
   [Office.LoadedMessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#loadcustompropertiesasync-member)
-  \]
 
   -
   [Office.LoadedMessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#loadcustompropertiesasync-member)
-  \]
 
   -
   [Office.MessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#loadcustompropertiesasync-member)
-  \]
 
   -
   [Office.MessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#loadcustompropertiesasync-member)
-  \]
 
 isPreview: false
 isDeprecated: false

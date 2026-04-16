@@ -14,9 +14,8 @@ remarks: >-
 
   -
   [Excel.RangeFormat.borders](/javascript/api/excel/excel.rangeformat#borders-member)
-  \]
 
-  - [Excel.Style.borders](/javascript/api/excel/excel.style#borders-member) \]
+  - [Excel.Style.borders](/javascript/api/excel/excel.style#borders-member)
 
 isPreview: false
 isDeprecated: false

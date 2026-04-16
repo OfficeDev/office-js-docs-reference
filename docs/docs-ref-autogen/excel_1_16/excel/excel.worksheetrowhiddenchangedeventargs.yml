@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onRowHiddenChanged](/javascript/api/excel/excel.worksheet#onrowhiddenchanged-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onRowHiddenChanged](/javascript/api/excel/excel.worksheetcollection#onrowhiddenchanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -25,11 +25,9 @@ remarks: >-
 
   -
   [Office.EnhancedLocation.getAsync](/javascript/api/outlook/office.enhancedlocation#getasync-member)
-  \]
 
   -
   [Office.EnhancedLocationsChangedEventArgs.enhancedLocations](/javascript/api/outlook/office.enhancedlocationschangedeventargs#enhancedlocations-member)
-  \]
 
   #### Examples
 

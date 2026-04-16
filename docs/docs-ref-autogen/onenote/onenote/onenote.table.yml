@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [OneNote.Paragraph.table](/javascript/api/onenote/onenote.paragraph#table-member)
-  \]
 
   -
   [OneNote.TableRow.parentTable](/javascript/api/onenote/onenote.tablerow#parenttable-member)
-  \]
 
 isPreview: false
 isDeprecated: false

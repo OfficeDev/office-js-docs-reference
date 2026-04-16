@@ -19,7 +19,6 @@ remarks: >-
 
   -
   [Excel.LinkedEntityDataDomainCollection.onRefreshModeChanged](/javascript/api/excel/excel.linkedentitydatadomaincollection#onrefreshmodechanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

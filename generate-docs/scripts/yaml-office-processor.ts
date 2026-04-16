@@ -496,7 +496,7 @@ function generateUsedBySection(references: UsedByReference[]): string {
     // Use the same format as requirement set links: [Text](url)
     for (const ref of refs) {
       const url = convertUidToUrl(ref.uid);
-      lines.push(`- [${ref.name}](${url}) \\]`);
+      lines.push(`- [${ref.name}](${url})`);
     }
   }
 

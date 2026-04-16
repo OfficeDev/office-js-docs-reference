@@ -13,11 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Icon.set](/javascript/api/excel/excel.icon#set-member) \]
+  - [Excel.Icon.set](/javascript/api/excel/excel.icon#set-member)
 
   -
   [Excel.IconSetConditionalFormat.style](/javascript/api/excel/excel.iconsetconditionalformat#style-member)
-  \]
 
   #### Examples
 

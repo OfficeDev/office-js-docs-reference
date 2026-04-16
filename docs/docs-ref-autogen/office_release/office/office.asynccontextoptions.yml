@@ -15,195 +15,147 @@ remarks: >-
 
   -
   [Office.Binding.addHandlerAsync](/javascript/api/office/office.binding#addhandlerasync-member)
-  \]
 
   -
   [Office.Bindings.getAllAsync](/javascript/api/office/office.bindings#getallasync-member)
-  \]
 
   -
   [Office.Bindings.getByIdAsync](/javascript/api/office/office.bindings#getbyidasync-member)
-  \]
 
   -
   [Office.Bindings.releaseByIdAsync](/javascript/api/office/office.bindings#releasebyidasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.getNodesAsync](/javascript/api/office/office.customxmlnode#getnodesasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.getNodeValueAsync](/javascript/api/office/office.customxmlnode#getnodevalueasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.getTextAsync](/javascript/api/office/office.customxmlnode#gettextasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.getXmlAsync](/javascript/api/office/office.customxmlnode#getxmlasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.setNodeValueAsync](/javascript/api/office/office.customxmlnode#setnodevalueasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.setTextAsync](/javascript/api/office/office.customxmlnode#settextasync-member)
-  \]
 
   -
   [Office.CustomXmlNode.setXmlAsync](/javascript/api/office/office.customxmlnode#setxmlasync-member)
-  \]
 
   -
   [Office.CustomXmlPart.addHandlerAsync](/javascript/api/office/office.customxmlpart#addhandlerasync-member)
-  \]
 
   -
   [Office.CustomXmlPart.deleteAsync](/javascript/api/office/office.customxmlpart#deleteasync-member)
-  \]
 
   -
   [Office.CustomXmlPart.getNodesAsync](/javascript/api/office/office.customxmlpart#getnodesasync-member)
-  \]
 
   -
   [Office.CustomXmlPart.getXmlAsync](/javascript/api/office/office.customxmlpart#getxmlasync-member)
-  \]
 
   -
   [Office.CustomXmlParts.addAsync](/javascript/api/office/office.customxmlparts#addasync-member)
-  \]
 
   -
   [Office.CustomXmlParts.getByIdAsync](/javascript/api/office/office.customxmlparts#getbyidasync-member)
-  \]
 
   -
   [Office.CustomXmlParts.getByNamespaceAsync](/javascript/api/office/office.customxmlparts#getbynamespaceasync-member)
-  \]
 
   -
   [Office.CustomXmlPrefixMappings.addNamespaceAsync](/javascript/api/office/office.customxmlprefixmappings#addnamespaceasync-member)
-  \]
 
   -
   [Office.CustomXmlPrefixMappings.getNamespaceAsync](/javascript/api/office/office.customxmlprefixmappings#getnamespaceasync-member)
-  \]
 
   -
   [Office.CustomXmlPrefixMappings.getPrefixAsync](/javascript/api/office/office.customxmlprefixmappings#getprefixasync-member)
-  \]
 
   -
   [Office.DevicePermission.requestPermissionsAsync](/javascript/api/office/office.devicepermission#requestpermissionsasync-member)
-  \]
 
   -
   [Office.Document.addHandlerAsync](/javascript/api/office/office.document#addhandlerasync-member)
-  \]
 
   -
   [Office.Document.getActiveViewAsync](/javascript/api/office/office.document#getactiveviewasync-member)
-  \]
 
   -
   [Office.Document.getFilePropertiesAsync](/javascript/api/office/office.document#getfilepropertiesasync-member)
-  \]
 
   -
   [Office.Document.getMaxResourceIndexAsync](/javascript/api/office/office.document#getmaxresourceindexasync-member)
-  \]
 
   -
   [Office.Document.getMaxTaskIndexAsync](/javascript/api/office/office.document#getmaxtaskindexasync-member)
-  \]
 
   -
   [Office.Document.getProjectFieldAsync](/javascript/api/office/office.document#getprojectfieldasync-member)
-  \]
 
   -
   [Office.Document.getResourceByIndexAsync](/javascript/api/office/office.document#getresourcebyindexasync-member)
-  \]
 
   -
   [Office.Document.getResourceFieldAsync](/javascript/api/office/office.document#getresourcefieldasync-member)
-  \]
 
   -
   [Office.Document.getSelectedResourceAsync](/javascript/api/office/office.document#getselectedresourceasync-member)
-  \]
 
   -
   [Office.Document.getSelectedTaskAsync](/javascript/api/office/office.document#getselectedtaskasync-member)
-  \]
 
   -
   [Office.Document.getSelectedViewAsync](/javascript/api/office/office.document#getselectedviewasync-member)
-  \]
 
   -
   [Office.Document.getTaskAsync](/javascript/api/office/office.document#gettaskasync-member)
-  \]
 
   -
   [Office.Document.getTaskByIndexAsync](/javascript/api/office/office.document#gettaskbyindexasync-member)
-  \]
 
   -
   [Office.Document.getTaskFieldAsync](/javascript/api/office/office.document#gettaskfieldasync-member)
-  \]
 
   -
   [Office.Document.getWSSUrlAsync](/javascript/api/office/office.document#getwssurlasync-member)
-  \]
 
   -
   [Office.Document.setResourceFieldAsync](/javascript/api/office/office.document#setresourcefieldasync-member)
-  \]
 
   -
   [Office.Document.setTaskFieldAsync](/javascript/api/office/office.document#settaskfieldasync-member)
-  \]
 
   -
   [Office.Settings.addHandlerAsync](/javascript/api/office/office.settings#addhandlerasync-member)
-  \]
 
   -
   [Office.TableBinding.addColumnsAsync](/javascript/api/office/office.tablebinding#addcolumnsasync-member)
-  \]
 
   -
   [Office.TableBinding.addRowsAsync](/javascript/api/office/office.tablebinding#addrowsasync-member)
-  \]
 
   -
   [Office.TableBinding.clearFormatsAsync](/javascript/api/office/office.tablebinding#clearformatsasync-member)
-  \]
 
   -
   [Office.TableBinding.deleteAllDataValuesAsync](/javascript/api/office/office.tablebinding#deletealldatavaluesasync-member)
-  \]
 
   -
   [Office.TableBinding.getFormatsAsync](/javascript/api/office/office.tablebinding#getformatsasync-member)
-  \]
 
   -
   [Office.TableBinding.setFormatsAsync](/javascript/api/office/office.tablebinding#setformatsasync-member)
-  \]
 
   -
   [Office.TableBinding.setTableOptionsAsync](/javascript/api/office/office.tablebinding#settableoptionsasync-member)
-  \]
 
   -
   [Office.UI.addHandlerAsync](/javascript/api/office/office.ui#addhandlerasync-member)
-  \]
 
   #### Examples
 

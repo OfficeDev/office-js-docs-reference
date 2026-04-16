@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.kind](/javascript/api/word/word.document#kind-member) \]
+  - [Word.Document.kind](/javascript/api/word/word.document#kind-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,23 +14,18 @@ remarks: >-
 
   -
   [PowerPoint.Presentation.customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#customxmlparts-member)
-  \]
 
   -
   [PowerPoint.Shape.customXmlParts](/javascript/api/powerpoint/powerpoint.shape#customxmlparts-member)
-  \]
 
   -
   [PowerPoint.Slide.customXmlParts](/javascript/api/powerpoint/powerpoint.slide#customxmlparts-member)
-  \]
 
   -
   [PowerPoint.SlideLayout.customXmlParts](/javascript/api/powerpoint/powerpoint.slidelayout#customxmlparts-member)
-  \]
 
   -
   [PowerPoint.SlideMaster.customXmlParts](/javascript/api/powerpoint/powerpoint.slidemaster#customxmlparts-member)
-  \]
 
 isPreview: false
 isDeprecated: false

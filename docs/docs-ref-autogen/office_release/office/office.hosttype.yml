@@ -13,11 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Context.host](/javascript/api/office/office.context#host-member) \]
+  - [Office.Context.host](/javascript/api/office/office.context#host-member)
 
   -
   [Office.ContextInformation.host](/javascript/api/office/office.contextinformation#host-member)
-  \]
 
   #### Examples
 

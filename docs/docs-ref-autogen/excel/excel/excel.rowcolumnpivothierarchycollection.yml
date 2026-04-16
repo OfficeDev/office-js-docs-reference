@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.PivotTable.columnHierarchies](/javascript/api/excel/excel.pivottable#columnhierarchies-member)
-  \]
 
   -
   [Excel.PivotTable.rowHierarchies](/javascript/api/excel/excel.pivottable#rowhierarchies-member)
-  \]
 
 isPreview: false
 isDeprecated: false

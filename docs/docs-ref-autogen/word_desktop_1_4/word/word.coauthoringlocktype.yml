@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Word.CoauthoringLock.type](/javascript/api/word/word.coauthoringlock#type-member)
-  \]
 
   -
   [Word.CoauthoringLockAddOptions.type](/javascript/api/word/word.coauthoringlockaddoptions#type-member)
-  \]
 
 isPreview: false
 isDeprecated: false

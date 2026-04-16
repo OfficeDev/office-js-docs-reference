@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Window.imeMode](/javascript/api/word/word.window#imemode-member) \]
+  - [Word.Window.imeMode](/javascript/api/word/word.window#imemode-member)
 
 isPreview: false
 isDeprecated: false

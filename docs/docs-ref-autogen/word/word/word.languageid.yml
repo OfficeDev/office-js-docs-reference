@@ -14,61 +14,46 @@ remarks: >-
 
   -
   [Word.Application.language](/javascript/api/word/word.application#language-member)
-  \]
 
   -
   [Word.DatePickerContentControl.dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#datedisplaylocale-member)
-  \]
 
   -
   [Word.Index.indexLanguage](/javascript/api/word/word.index#indexlanguage-member)
-  \]
 
   -
   [Word.IndexAddOptions.indexLanguage](/javascript/api/word/word.indexaddoptions#indexlanguage-member)
-  \]
 
   - [Word.Range.languageId](/javascript/api/word/word.range#languageid-member)
-  \]
 
   -
   [Word.Range.languageIdFarEast](/javascript/api/word/word.range#languageidfareast-member)
-  \]
 
   -
   [Word.Range.languageIdOther](/javascript/api/word/word.range#languageidother-member)
-  \]
 
   -
   [Word.Selection.languageId](/javascript/api/word/word.selection#languageid-member)
-  \]
 
   -
   [Word.Selection.languageIdFarEast](/javascript/api/word/word.selection#languageidfareast-member)
-  \]
 
   -
   [Word.Selection.languageIdOther](/javascript/api/word/word.selection#languageidother-member)
-  \]
 
   - [Word.Style.languageId](/javascript/api/word/word.style#languageid-member)
-  \]
 
   -
   [Word.Style.languageIdFarEast](/javascript/api/word/word.style#languageidfareast-member)
-  \]
 
   -
   [Word.TableSortOptions.languageId](/javascript/api/word/word.tablesortoptions#languageid-member)
-  \]
 
   -
   [Word.Template.languageId](/javascript/api/word/word.template#languageid-member)
-  \]
 
   -
   [Word.Template.languageIdFarEast](/javascript/api/word/word.template#languageidfareast-member)
-  \]
 
 isPreview: false
 isDeprecated: false

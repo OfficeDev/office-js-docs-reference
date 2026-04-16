@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [OneNote.InkAnalysis.page](/javascript/api/onenote/onenote.inkanalysis#page-member)
-  \]
 
   -
   [OneNote.PageCollection.items](/javascript/api/onenote/onenote.pagecollection#items-member)
-  \]
 
   -
   [OneNote.PageContent.parentPage](/javascript/api/onenote/onenote.pagecontent#parentpage-member)
-  \]
 
 isPreview: false
 isDeprecated: false

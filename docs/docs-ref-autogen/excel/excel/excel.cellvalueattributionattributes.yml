@@ -17,15 +17,12 @@ remarks: >-
 
   -
   [Excel.CellValuePropertyMetadata.attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#attribution-member)
-  \]
 
   -
   [Excel.LocalImageCellValue.attribution](/javascript/api/excel/excel.localimagecellvalue#attribution-member)
-  \]
 
   -
   [Excel.WebImageCellValue.attribution](/javascript/api/excel/excel.webimagecellvalue#attribution-member)
-  \]
 
 isPreview: false
 isDeprecated: false

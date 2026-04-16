@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [OfficeRuntime.DisplayWebDialogOptions.onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#onmessage-member)
-  \]
 
   -
   [OfficeRuntime.DisplayWebDialogOptions.onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#onruntimeerror-member)
-  \]
 
 isPreview: false
 isDeprecated: false

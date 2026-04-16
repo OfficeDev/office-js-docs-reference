@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.CommentChangedEventArgs.changeType](/javascript/api/excel/excel.commentchangedeventargs#changetype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

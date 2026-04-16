@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.PivotLayout.pivotStyle](/javascript/api/excel/excel.pivotlayout#pivotstyle-member)
-  \]
 
   -
   [Excel.PivotTableStyleCollection.items](/javascript/api/excel/excel.pivottablestylecollection#items-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ChartPoint.markerStyle](/javascript/api/excel/excel.chartpoint#markerstyle-member)
-  \]
 
   -
   [Excel.ChartSeries.markerStyle](/javascript/api/excel/excel.chartseries#markerstyle-member)
-  \]
 
 isPreview: false
 isDeprecated: false

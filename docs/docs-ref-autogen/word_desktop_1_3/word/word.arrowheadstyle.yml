@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Word.LineFormat.beginArrowheadStyle](/javascript/api/word/word.lineformat#beginarrowheadstyle-member)
-  \]
 
   -
   [Word.LineFormat.endArrowheadStyle](/javascript/api/word/word.lineformat#endarrowheadstyle-member)
-  \]
 
 isPreview: false
 isDeprecated: false

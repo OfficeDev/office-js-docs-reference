@@ -16,15 +16,12 @@ remarks: >-
 
   -
   [Excel.ChartSeries.gradientMaximumType](/javascript/api/excel/excel.chartseries#gradientmaximumtype-member)
-  \]
 
   -
   [Excel.ChartSeries.gradientMidpointType](/javascript/api/excel/excel.chartseries#gradientmidpointtype-member)
-  \]
 
   -
   [Excel.ChartSeries.gradientMinimumType](/javascript/api/excel/excel.chartseries#gradientminimumtype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

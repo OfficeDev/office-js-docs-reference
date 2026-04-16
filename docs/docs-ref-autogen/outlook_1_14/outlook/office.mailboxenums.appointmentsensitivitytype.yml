@@ -22,15 +22,12 @@ remarks: >-
 
   -
   [Office.AppointmentRead.sensitivity](/javascript/api/outlook/office.appointmentread#sensitivity-member)
-  \]
 
   -
   [Office.Sensitivity.getAsync](/javascript/api/outlook/office.sensitivity#getasync-member)
-  \]
 
   -
   [Office.Sensitivity.setAsync](/javascript/api/outlook/office.sensitivity#setasync-member)
-  \]
 
   #### Examples
 

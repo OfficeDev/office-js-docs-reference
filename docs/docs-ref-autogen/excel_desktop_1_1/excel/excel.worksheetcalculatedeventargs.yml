@@ -15,11 +15,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onCalculated](/javascript/api/excel/excel.worksheet#oncalculated-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onCalculated](/javascript/api/excel/excel.worksheetcollection#oncalculated-member)
-  \]
 
   #### Examples
 

@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [OneNote.InkAnalysisLineCollection.items](/javascript/api/onenote/onenote.inkanalysislinecollection#items-member)
-  \]
 
   -
   [OneNote.InkAnalysisWord.line](/javascript/api/onenote/onenote.inkanalysisword#line-member)
-  \]
 
 isPreview: false
 isDeprecated: false

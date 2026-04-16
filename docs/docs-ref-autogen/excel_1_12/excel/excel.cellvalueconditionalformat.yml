@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ConditionalFormat.cellValue](/javascript/api/excel/excel.conditionalformat#cellvalue-member)
-  \]
 
   -
   [Excel.ConditionalFormat.cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#cellvalueornullobject-member)
-  \]
 
 isPreview: false
 isDeprecated: false

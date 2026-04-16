@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Word.DocumentPrintOutOptions.range](/javascript/api/word/word.documentprintoutoptions#range-member)
-  \]
 
 isPreview: false
 isDeprecated: false

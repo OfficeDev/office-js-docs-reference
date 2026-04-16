@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.LinkedEntityLoadServiceResult.entities](/javascript/api/excel/excel.linkedentityloadserviceresult#entities-member)
-  \]
 
   -
   [Excel.PlaceholderErrorCellValue.target](/javascript/api/excel/excel.placeholdererrorcellvalue#target-member)
-  \]
 
 isPreview: false
 isDeprecated: false

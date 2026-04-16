@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
-  \]
 
   -
   [Excel.RangeView.valueTypes](/javascript/api/excel/excel.rangeview#valuetypes-member)
-  \]
 
 isPreview: false
 isDeprecated: false

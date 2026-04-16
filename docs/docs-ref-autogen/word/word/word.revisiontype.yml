@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Conflict.type](/javascript/api/word/word.conflict#type-member) \]
+  - [Word.Conflict.type](/javascript/api/word/word.conflict#type-member)
 
-  - [Word.Revision.type](/javascript/api/word/word.revision#type-member) \]
+  - [Word.Revision.type](/javascript/api/word/word.revision#type-member)
 
 isPreview: false
 isDeprecated: false

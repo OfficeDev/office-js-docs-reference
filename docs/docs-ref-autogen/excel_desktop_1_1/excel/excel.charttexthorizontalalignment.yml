@@ -14,19 +14,15 @@ remarks: >-
 
   -
   [Excel.ChartDataLabel.horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#horizontalalignment-member)
-  \]
 
   -
   [Excel.ChartDataLabels.horizontalAlignment](/javascript/api/excel/excel.chartdatalabels#horizontalalignment-member)
-  \]
 
   -
   [Excel.ChartTitle.horizontalAlignment](/javascript/api/excel/excel.charttitle#horizontalalignment-member)
-  \]
 
   -
   [Excel.ChartTrendlineLabel.horizontalAlignment](/javascript/api/excel/excel.charttrendlinelabel#horizontalalignment-member)
-  \]
 
 isPreview: false
 isDeprecated: false

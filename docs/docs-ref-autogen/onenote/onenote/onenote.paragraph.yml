@@ -16,31 +16,24 @@ remarks: >-
 
   -
   [OneNote.Image.paragraph](/javascript/api/onenote/onenote.image#paragraph-member)
-  \]
 
   -
   [OneNote.InkWord.paragraph](/javascript/api/onenote/onenote.inkword#paragraph-member)
-  \]
 
   -
   [OneNote.Paragraph.parentParagraph](/javascript/api/onenote/onenote.paragraph#parentparagraph-member)
-  \]
 
   -
   [OneNote.Paragraph.parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#parentparagraphornull-member)
-  \]
 
   -
   [OneNote.ParagraphCollection.items](/javascript/api/onenote/onenote.paragraphcollection#items-member)
-  \]
 
   -
   [OneNote.RichText.paragraph](/javascript/api/onenote/onenote.richtext#paragraph-member)
-  \]
 
   -
   [OneNote.Table.paragraph](/javascript/api/onenote/onenote.table#paragraph-member)
-  \]
 
 isPreview: false
 isDeprecated: false

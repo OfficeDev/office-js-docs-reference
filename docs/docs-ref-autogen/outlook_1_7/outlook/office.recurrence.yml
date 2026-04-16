@@ -45,27 +45,21 @@ remarks: >-
 
   -
   [Office.AppointmentCompose.recurrence](/javascript/api/outlook/office.appointmentcompose#recurrence-member)
-  \]
 
   -
   [Office.AppointmentRead.recurrence](/javascript/api/outlook/office.appointmentread#recurrence-member)
-  \]
 
   -
   [Office.MessageRead.recurrence](/javascript/api/outlook/office.messageread#recurrence-member)
-  \]
 
   -
   [Office.Recurrence.getAsync](/javascript/api/outlook/office.recurrence#getasync-member)
-  \]
 
   -
   [Office.Recurrence.setAsync](/javascript/api/outlook/office.recurrence#setasync-member)
-  \]
 
   -
   [Office.RecurrenceChangedEventArgs.recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#recurrence-member)
-  \]
 
 isPreview: false
 isDeprecated: false

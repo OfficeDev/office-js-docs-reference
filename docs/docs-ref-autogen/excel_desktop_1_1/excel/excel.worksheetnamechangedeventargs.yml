@@ -15,11 +15,9 @@ remarks: >-
 
   -
   [Excel.Worksheet.onNameChanged](/javascript/api/excel/excel.worksheet#onnamechanged-member)
-  \]
 
   -
   [Excel.WorksheetCollection.onNameChanged](/javascript/api/excel/excel.worksheetcollection#onnamechanged-member)
-  \]
 
   #### Examples
 

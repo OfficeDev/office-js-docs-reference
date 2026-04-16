@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.CardLayoutStandardProperties.mainImage](/javascript/api/excel/excel.cardlayoutstandardproperties#mainimage-member)
-  \]
 
   -
   [Excel.CardLayoutStandardProperties.subTitle](/javascript/api/excel/excel.cardlayoutstandardproperties#subtitle-member)
-  \]
 
   -
   [Excel.CardLayoutStandardProperties.title](/javascript/api/excel/excel.cardlayoutstandardproperties#title-member)
-  \]
 
 isPreview: false
 isDeprecated: false

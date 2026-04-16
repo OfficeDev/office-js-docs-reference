@@ -14,19 +14,15 @@ remarks: >-
 
   -
   [Excel.HeaderFooterGroup.defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#defaultforallpages-member)
-  \]
 
   -
   [Excel.HeaderFooterGroup.evenPages](/javascript/api/excel/excel.headerfootergroup#evenpages-member)
-  \]
 
   -
   [Excel.HeaderFooterGroup.firstPage](/javascript/api/excel/excel.headerfootergroup#firstpage-member)
-  \]
 
   -
   [Excel.HeaderFooterGroup.oddPages](/javascript/api/excel/excel.headerfootergroup#oddpages-member)
-  \]
 
 isPreview: false
 isDeprecated: false

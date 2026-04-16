@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.ConditionalFormat.dataBar](/javascript/api/excel/excel.conditionalformat#databar-member)
-  \]
 
   -
   [Excel.ConditionalFormat.dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#databarornullobject-member)
-  \]
 
 isPreview: false
 isDeprecated: false

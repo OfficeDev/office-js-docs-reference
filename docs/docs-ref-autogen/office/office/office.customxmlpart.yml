@@ -16,15 +16,12 @@ remarks: >-
 
   -
   [Office.CustomXmlParts.addAsync](/javascript/api/office/office.customxmlparts#addasync-member)
-  \]
 
   -
   [Office.CustomXmlParts.getByIdAsync](/javascript/api/office/office.customxmlparts#getbyidasync-member)
-  \]
 
   -
   [Office.CustomXmlParts.getByNamespaceAsync](/javascript/api/office/office.customxmlparts#getbynamespaceasync-member)
-  \]
 
 isPreview: false
 isDeprecated: false

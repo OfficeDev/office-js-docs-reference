@@ -14,9 +14,8 @@ remarks: >-
 
   -
   [Word.Coauthoring.conflicts](/javascript/api/word/word.coauthoring#conflicts-member)
-  \]
 
-  - [Word.Range.conflicts](/javascript/api/word/word.range#conflicts-member) \]
+  - [Word.Range.conflicts](/javascript/api/word/word.range#conflicts-member)
 
 isPreview: false
 isDeprecated: false

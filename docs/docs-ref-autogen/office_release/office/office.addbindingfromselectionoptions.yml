@@ -10,7 +10,6 @@ remarks: >-
 
   -
   [Office.Bindings.addFromSelectionAsync](/javascript/api/office/office.bindings#addfromselectionasync-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [OneNote.PageContent.outline](/javascript/api/onenote/onenote.pagecontent#outline-member)
-  \]
 
   -
   [OneNote.Paragraph.outline](/javascript/api/onenote/onenote.paragraph#outline-member)
-  \]
 
 isPreview: false
 isDeprecated: false

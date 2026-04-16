@@ -16,15 +16,12 @@ remarks: >-
 
   -
   [Excel.SettableCellProperties.format](/javascript/api/excel/excel.settablecellproperties#format-member)
-  \]
 
   -
   [Excel.SettableColumnProperties.format](/javascript/api/excel/excel.settablecolumnproperties#format-member)
-  \]
 
   -
   [Excel.SettableRowProperties.format](/javascript/api/excel/excel.settablerowproperties#format-member)
-  \]
 
 isPreview: false
 isDeprecated: false

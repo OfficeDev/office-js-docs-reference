@@ -10,19 +10,15 @@ remarks: >-
 
   -
   [Office.Binding.removeHandlerAsync](/javascript/api/office/office.binding#removehandlerasync-member)
-  \]
 
   -
   [Office.CustomXmlPart.removeHandlerAsync](/javascript/api/office/office.customxmlpart#removehandlerasync-member)
-  \]
 
   -
   [Office.Document.removeHandlerAsync](/javascript/api/office/office.document#removehandlerasync-member)
-  \]
 
   -
   [Office.Settings.removeHandlerAsync](/javascript/api/office/office.settings#removehandlerasync-member)
-  \]
 
 isPreview: false
 isDeprecated: false

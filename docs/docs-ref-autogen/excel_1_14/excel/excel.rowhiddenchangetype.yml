@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.WorksheetRowHiddenChangedEventArgs.changeType](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#changetype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

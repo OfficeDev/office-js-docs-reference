@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Word.Document.farEastLineBreakLanguage](/javascript/api/word/word.document#fareastlinebreaklanguage-member)
-  \]
 
   -
   [Word.Template.farEastLineBreakLanguage](/javascript/api/word/word.template#fareastlinebreaklanguage-member)
-  \]
 
 isPreview: false
 isDeprecated: false

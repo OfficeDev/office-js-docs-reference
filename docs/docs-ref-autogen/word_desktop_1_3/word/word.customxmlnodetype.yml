@@ -16,23 +16,18 @@ remarks: >-
 
   -
   [Word.CustomXmlAddNodeOptions.nodeType](/javascript/api/word/word.customxmladdnodeoptions#nodetype-member)
-  \]
 
   -
   [Word.CustomXmlAppendChildNodeOptions.nodeType](/javascript/api/word/word.customxmlappendchildnodeoptions#nodetype-member)
-  \]
 
   -
   [Word.CustomXmlInsertNodeBeforeOptions.nodeType](/javascript/api/word/word.customxmlinsertnodebeforeoptions#nodetype-member)
-  \]
 
   -
   [Word.CustomXmlNode.nodeType](/javascript/api/word/word.customxmlnode#nodetype-member)
-  \]
 
   -
   [Word.CustomXmlReplaceChildNodeOptions.nodeType](/javascript/api/word/word.customxmlreplacechildnodeoptions#nodetype-member)
-  \]
 
 isPreview: false
 isDeprecated: false

@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [OneNote.NotebookCollection.items](/javascript/api/onenote/onenote.notebookcollection#items-member)
-  \]
 
   -
   [OneNote.Section.notebook](/javascript/api/onenote/onenote.section#notebook-member)
-  \]
 
   -
   [OneNote.SectionGroup.notebook](/javascript/api/onenote/onenote.sectiongroup#notebook-member)
-  \]
 
 isPreview: false
 isDeprecated: false

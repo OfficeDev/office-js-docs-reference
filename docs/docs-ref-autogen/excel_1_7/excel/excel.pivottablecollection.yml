@@ -16,11 +16,9 @@ remarks: >-
 
   -
   [Excel.Workbook.pivotTables](/javascript/api/excel/excel.workbook#pivottables-member)
-  \]
 
   -
   [Excel.Worksheet.pivotTables](/javascript/api/excel/excel.worksheet#pivottables-member)
-  \]
 
 isPreview: false
 isDeprecated: false

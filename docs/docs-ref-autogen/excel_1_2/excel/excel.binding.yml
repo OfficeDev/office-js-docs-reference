@@ -14,15 +14,12 @@ remarks: >-
 
   -
   [Excel.BindingCollection.items](/javascript/api/excel/excel.bindingcollection#items-member)
-  \]
 
   -
   [Excel.BindingDataChangedEventArgs.binding](/javascript/api/excel/excel.bindingdatachangedeventargs#binding-member)
-  \]
 
   -
   [Excel.BindingSelectionChangedEventArgs.binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#binding-member)
-  \]
 
 isPreview: false
 isDeprecated: false

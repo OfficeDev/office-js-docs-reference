@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Visio.DataRefreshCompleteEventArgs.document](/javascript/api/visio/visio.datarefreshcompleteeventargs#document-member)
-  \]
 
   -
   [Visio.RequestContext.document](/javascript/api/visio/visio.requestcontext#document-member)
-  \]
 
 isPreview: false
 isDeprecated: false

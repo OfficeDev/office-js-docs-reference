@@ -20,7 +20,6 @@ remarks: >-
 
   -
   [Word.Application.listTemplateGalleries](/javascript/api/word/word.application#listtemplategalleries-member)
-  \]
 
 isPreview: false
 isDeprecated: false

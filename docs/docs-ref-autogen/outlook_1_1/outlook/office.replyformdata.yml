@@ -27,19 +27,15 @@ remarks: >-
 
   -
   [Office.AppointmentRead.displayReplyAllForm](/javascript/api/outlook/office.appointmentread#displayreplyallform-member)
-  \]
 
   -
   [Office.AppointmentRead.displayReplyForm](/javascript/api/outlook/office.appointmentread#displayreplyform-member)
-  \]
 
   -
   [Office.MessageRead.displayReplyAllForm](/javascript/api/outlook/office.messageread#displayreplyallform-member)
-  \]
 
   -
   [Office.MessageRead.displayReplyForm](/javascript/api/outlook/office.messageread#displayreplyform-member)
-  \]
 
   #### Examples
 

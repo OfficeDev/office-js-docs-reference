@@ -15,15 +15,12 @@ remarks: >-
 
   -
   [Excel.CellPropertiesFormat.readingOrder](/javascript/api/excel/excel.cellpropertiesformat#readingorder-member)
-  \]
 
   -
   [Excel.RangeFormat.readingOrder](/javascript/api/excel/excel.rangeformat#readingorder-member)
-  \]
 
   -
   [Excel.Style.readingOrder](/javascript/api/excel/excel.style#readingorder-member)
-  \]
 
   #### Examples
 

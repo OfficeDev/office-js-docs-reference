@@ -14,7 +14,6 @@ remarks: >-
 
   -
   [Excel.Table.onSelectionChanged](/javascript/api/excel/excel.table#onselectionchanged-member)
-  \]
 
 isPreview: false
 isDeprecated: false

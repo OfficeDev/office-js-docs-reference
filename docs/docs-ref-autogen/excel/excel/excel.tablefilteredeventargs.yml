@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [Excel.Table.onFiltered](/javascript/api/excel/excel.table#onfiltered-member)
-  \]
 
   -
   [Excel.TableCollection.onFiltered](/javascript/api/excel/excel.tablecollection#onfiltered-member)
-  \]
 
 isPreview: true
 isDeprecated: false

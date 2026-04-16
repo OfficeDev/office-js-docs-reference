@@ -16,9 +16,8 @@ remarks: >-
 
   -
   [Word.Document.bookmarks](/javascript/api/word/word.document#bookmarks-member)
-  \]
 
-  - [Word.Range.bookmarks](/javascript/api/word/word.range#bookmarks-member) \]
+  - [Word.Range.bookmarks](/javascript/api/word/word.range#bookmarks-member)
 
 isPreview: false
 isDeprecated: false

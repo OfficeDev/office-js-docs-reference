@@ -54,19 +54,15 @@ remarks: >-
 
   -
   [Office.Document.getSelectedDataAsync](/javascript/api/office/office.document#getselecteddataasync-member)
-  \]
 
   -
   [Office.GetBindingDataOptions.coercionType](/javascript/api/office/office.getbindingdataoptions#coerciontype-member)
-  \]
 
   -
   [Office.SetBindingDataOptions.coercionType](/javascript/api/office/office.setbindingdataoptions#coerciontype-member)
-  \]
 
   -
   [Office.SetSelectedDataOptions.coercionType](/javascript/api/office/office.setselecteddataoptions#coerciontype-member)
-  \]
 
   #### Examples
 

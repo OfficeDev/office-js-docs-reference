@@ -14,11 +14,9 @@ remarks: >-
 
   -
   [OneNote.Notebook.sectionGroups](/javascript/api/onenote/onenote.notebook#sectiongroups-member)
-  \]
 
   -
   [OneNote.SectionGroup.sectionGroups](/javascript/api/onenote/onenote.sectiongroup#sectiongroups-member)
-  \]
 
 isPreview: false
 isDeprecated: false
