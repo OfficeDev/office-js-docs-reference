@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Range.numberFormatCategories](/javascript/api/excel/excel.range#numberformatcategories-member)
+  - [Excel.Range.numberFormatCategories](/javascript/api/excel/excel.range#numberformatcategories-member)
 
 isPreview: false
 isDeprecated: false

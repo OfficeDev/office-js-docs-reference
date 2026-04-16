@@ -20,67 +20,47 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentForm.optionalAttendees](/javascript/api/outlook/office.appointmentform#optionalattendees-member)
+  - [Office.AppointmentForm.optionalAttendees](/javascript/api/outlook/office.appointmentform#optionalattendees-member)
 
-  -
-  [Office.AppointmentForm.requiredAttendees](/javascript/api/outlook/office.appointmentform#requiredattendees-member)
+  - [Office.AppointmentForm.requiredAttendees](/javascript/api/outlook/office.appointmentform#requiredattendees-member)
 
-  -
-  [Office.AppointmentRead.optionalAttendees](/javascript/api/outlook/office.appointmentread#optionalattendees-member)
+  - [Office.AppointmentRead.optionalAttendees](/javascript/api/outlook/office.appointmentread#optionalattendees-member)
 
-  -
-  [Office.AppointmentRead.organizer](/javascript/api/outlook/office.appointmentread#organizer-member)
+  - [Office.AppointmentRead.organizer](/javascript/api/outlook/office.appointmentread#organizer-member)
 
-  -
-  [Office.AppointmentRead.requiredAttendees](/javascript/api/outlook/office.appointmentread#requiredattendees-member)
+  - [Office.AppointmentRead.requiredAttendees](/javascript/api/outlook/office.appointmentread#requiredattendees-member)
 
   - [Office.From.getAsync](/javascript/api/outlook/office.from#getasync-member)
 
-  -
-  [Office.LoadedMessageRead.cc](/javascript/api/outlook/office.loadedmessageread#cc-member)
+  - [Office.LoadedMessageRead.cc](/javascript/api/outlook/office.loadedmessageread#cc-member)
 
-  -
-  [Office.LoadedMessageRead.from](/javascript/api/outlook/office.loadedmessageread#from-member)
+  - [Office.LoadedMessageRead.from](/javascript/api/outlook/office.loadedmessageread#from-member)
 
-  -
-  [Office.LoadedMessageRead.sender](/javascript/api/outlook/office.loadedmessageread#sender-member)
+  - [Office.LoadedMessageRead.sender](/javascript/api/outlook/office.loadedmessageread#sender-member)
 
-  -
-  [Office.LoadedMessageRead.to](/javascript/api/outlook/office.loadedmessageread#to-member)
+  - [Office.LoadedMessageRead.to](/javascript/api/outlook/office.loadedmessageread#to-member)
 
-  -
-  [Office.MessageForm.bccRecipients](/javascript/api/outlook/office.messageform#bccrecipients-member)
+  - [Office.MessageForm.bccRecipients](/javascript/api/outlook/office.messageform#bccrecipients-member)
 
-  -
-  [Office.MessageForm.ccRecipients](/javascript/api/outlook/office.messageform#ccrecipients-member)
+  - [Office.MessageForm.ccRecipients](/javascript/api/outlook/office.messageform#ccrecipients-member)
 
-  -
-  [Office.MessageForm.toRecipients](/javascript/api/outlook/office.messageform#torecipients-member)
+  - [Office.MessageForm.toRecipients](/javascript/api/outlook/office.messageform#torecipients-member)
 
-  -
-  [Office.MessageRead.cc](/javascript/api/outlook/office.messageread#cc-member)
+  - [Office.MessageRead.cc](/javascript/api/outlook/office.messageread#cc-member)
 
-  -
-  [Office.MessageRead.from](/javascript/api/outlook/office.messageread#from-member)
+  - [Office.MessageRead.from](/javascript/api/outlook/office.messageread#from-member)
 
-  -
-  [Office.MessageRead.sender](/javascript/api/outlook/office.messageread#sender-member)
+  - [Office.MessageRead.sender](/javascript/api/outlook/office.messageread#sender-member)
 
-  -
-  [Office.MessageRead.to](/javascript/api/outlook/office.messageread#to-member)
+  - [Office.MessageRead.to](/javascript/api/outlook/office.messageread#to-member)
 
-  -
-  [Office.Organizer.getAsync](/javascript/api/outlook/office.organizer#getasync-member)
+  - [Office.Organizer.getAsync](/javascript/api/outlook/office.organizer#getasync-member)
 
-  -
-  [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#addasync-member)
+  - [Office.Recipients.addAsync](/javascript/api/outlook/office.recipients#addasync-member)
 
-  -
-  [Office.Recipients.getAsync](/javascript/api/outlook/office.recipients#getasync-member)
+  - [Office.Recipients.getAsync](/javascript/api/outlook/office.recipients#getasync-member)
 
-  -
-  [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#setasync-member)
+  - [Office.Recipients.setAsync](/javascript/api/outlook/office.recipients#setasync-member)
 
 isPreview: false
 isDeprecated: false

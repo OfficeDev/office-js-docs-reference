@@ -15,11 +15,9 @@ remarks: >-
 
   - [Word.Body.font](/javascript/api/word/word.body#font-member)
 
-  -
-  [Word.ConditionalStyle.font](/javascript/api/word/word.conditionalstyle#font-member)
+  - [Word.ConditionalStyle.font](/javascript/api/word/word.conditionalstyle#font-member)
 
-  -
-  [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
+  - [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
 
   - [Word.ListLevel.font](/javascript/api/word/word.listlevel#font-member)
 

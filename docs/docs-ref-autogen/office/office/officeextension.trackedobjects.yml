@@ -11,8 +11,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OfficeExtension.ClientRequestContext.trackedObjects](/javascript/api/office/officeextension.clientrequestcontext#trackedobjects-member)
+  - [OfficeExtension.ClientRequestContext.trackedObjects](/javascript/api/office/officeextension.clientrequestcontext#trackedobjects-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Bibliography.sources](/javascript/api/word/word.bibliography#sources-member)
+  - [Word.Bibliography.sources](/javascript/api/word/word.bibliography#sources-member)
 
 isPreview: false
 isDeprecated: false

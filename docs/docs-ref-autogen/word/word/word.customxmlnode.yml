@@ -16,41 +16,29 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.CustomXmlAddNodeOptions.nextSibling](/javascript/api/word/word.customxmladdnodeoptions#nextsibling-member)
+  - [Word.CustomXmlAddNodeOptions.nextSibling](/javascript/api/word/word.customxmladdnodeoptions#nextsibling-member)
 
-  -
-  [Word.CustomXmlInsertNodeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertnodebeforeoptions#nextsibling-member)
+  - [Word.CustomXmlInsertNodeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertnodebeforeoptions#nextsibling-member)
 
-  -
-  [Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions#nextsibling-member)
+  - [Word.CustomXmlInsertSubtreeBeforeOptions.nextSibling](/javascript/api/word/word.customxmlinsertsubtreebeforeoptions#nextsibling-member)
 
-  -
-  [Word.CustomXmlNode.firstChild](/javascript/api/word/word.customxmlnode#firstchild-member)
+  - [Word.CustomXmlNode.firstChild](/javascript/api/word/word.customxmlnode#firstchild-member)
 
-  -
-  [Word.CustomXmlNode.lastChild](/javascript/api/word/word.customxmlnode#lastchild-member)
+  - [Word.CustomXmlNode.lastChild](/javascript/api/word/word.customxmlnode#lastchild-member)
 
-  -
-  [Word.CustomXmlNode.nextSibling](/javascript/api/word/word.customxmlnode#nextsibling-member)
+  - [Word.CustomXmlNode.nextSibling](/javascript/api/word/word.customxmlnode#nextsibling-member)
 
-  -
-  [Word.CustomXmlNode.parentNode](/javascript/api/word/word.customxmlnode#parentnode-member)
+  - [Word.CustomXmlNode.parentNode](/javascript/api/word/word.customxmlnode#parentnode-member)
 
-  -
-  [Word.CustomXmlNode.previousSibling](/javascript/api/word/word.customxmlnode#previoussibling-member)
+  - [Word.CustomXmlNode.previousSibling](/javascript/api/word/word.customxmlnode#previoussibling-member)
 
-  -
-  [Word.CustomXmlNodeCollection.items](/javascript/api/word/word.customxmlnodecollection#items-member)
+  - [Word.CustomXmlNodeCollection.items](/javascript/api/word/word.customxmlnodecollection#items-member)
 
-  -
-  [Word.CustomXmlPart.documentElement](/javascript/api/word/word.customxmlpart#documentelement-member)
+  - [Word.CustomXmlPart.documentElement](/javascript/api/word/word.customxmlpart#documentelement-member)
 
-  -
-  [Word.CustomXmlValidationError.node](/javascript/api/word/word.customxmlvalidationerror#node-member)
+  - [Word.CustomXmlValidationError.node](/javascript/api/word/word.customxmlvalidationerror#node-member)
 
-  -
-  [Word.XmlMapping.customXmlNode](/javascript/api/word/word.xmlmapping#customxmlnode-member)
+  - [Word.XmlMapping.customXmlNode](/javascript/api/word/word.xmlmapping#customxmlnode-member)
 
 isPreview: false
 isDeprecated: false

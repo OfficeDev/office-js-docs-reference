@@ -32,17 +32,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#getsharedpropertiesasync-member)
+  - [Office.AppointmentCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#getsharedpropertiesasync-member)
 
-  -
-  [Office.AppointmentRead.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentread#getsharedpropertiesasync-member)
+  - [Office.AppointmentRead.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentread#getsharedpropertiesasync-member)
 
-  -
-  [Office.MessageCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.messagecompose#getsharedpropertiesasync-member)
+  - [Office.MessageCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.messagecompose#getsharedpropertiesasync-member)
 
-  -
-  [Office.MessageRead.getSharedPropertiesAsync](/javascript/api/outlook/office.messageread#getsharedpropertiesasync-member)
+  - [Office.MessageRead.getSharedPropertiesAsync](/javascript/api/outlook/office.messageread#getsharedpropertiesasync-member)
 
   #### Examples
 

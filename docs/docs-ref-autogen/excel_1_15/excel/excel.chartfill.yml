@@ -12,38 +12,27 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartAreaFormat.fill](/javascript/api/excel/excel.chartareaformat#fill-member)
+  - [Excel.ChartAreaFormat.fill](/javascript/api/excel/excel.chartareaformat#fill-member)
 
-  -
-  [Excel.ChartAxisFormat.fill](/javascript/api/excel/excel.chartaxisformat#fill-member)
+  - [Excel.ChartAxisFormat.fill](/javascript/api/excel/excel.chartaxisformat#fill-member)
 
-  -
-  [Excel.ChartAxisTitleFormat.fill](/javascript/api/excel/excel.chartaxistitleformat#fill-member)
+  - [Excel.ChartAxisTitleFormat.fill](/javascript/api/excel/excel.chartaxistitleformat#fill-member)
 
-  -
-  [Excel.ChartDataLabelFormat.fill](/javascript/api/excel/excel.chartdatalabelformat#fill-member)
+  - [Excel.ChartDataLabelFormat.fill](/javascript/api/excel/excel.chartdatalabelformat#fill-member)
 
-  -
-  [Excel.ChartDataTableFormat.fill](/javascript/api/excel/excel.chartdatatableformat#fill-member)
+  - [Excel.ChartDataTableFormat.fill](/javascript/api/excel/excel.chartdatatableformat#fill-member)
 
-  -
-  [Excel.ChartLegendFormat.fill](/javascript/api/excel/excel.chartlegendformat#fill-member)
+  - [Excel.ChartLegendFormat.fill](/javascript/api/excel/excel.chartlegendformat#fill-member)
 
-  -
-  [Excel.ChartPlotAreaFormat.fill](/javascript/api/excel/excel.chartplotareaformat#fill-member)
+  - [Excel.ChartPlotAreaFormat.fill](/javascript/api/excel/excel.chartplotareaformat#fill-member)
 
-  -
-  [Excel.ChartPointFormat.fill](/javascript/api/excel/excel.chartpointformat#fill-member)
+  - [Excel.ChartPointFormat.fill](/javascript/api/excel/excel.chartpointformat#fill-member)
 
-  -
-  [Excel.ChartSeriesFormat.fill](/javascript/api/excel/excel.chartseriesformat#fill-member)
+  - [Excel.ChartSeriesFormat.fill](/javascript/api/excel/excel.chartseriesformat#fill-member)
 
-  -
-  [Excel.ChartTitleFormat.fill](/javascript/api/excel/excel.charttitleformat#fill-member)
+  - [Excel.ChartTitleFormat.fill](/javascript/api/excel/excel.charttitleformat#fill-member)
 
-  -
-  [Excel.ChartTrendlineLabelFormat.fill](/javascript/api/excel/excel.charttrendlinelabelformat#fill-member)
+  - [Excel.ChartTrendlineLabelFormat.fill](/javascript/api/excel/excel.charttrendlinelabelformat#fill-member)
 
 isPreview: false
 isDeprecated: false

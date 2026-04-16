@@ -11,8 +11,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Addin.onVisibilityModeChanged](/javascript/api/office/office.addin#onvisibilitymodechanged-member)
+  - [Office.Addin.onVisibilityModeChanged](/javascript/api/office/office.addin#onvisibilitymodechanged-member)
 
   #### Examples
 

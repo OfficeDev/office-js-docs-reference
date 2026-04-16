@@ -17,11 +17,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RangeAreasCollection.items](/javascript/api/excel/excel.rangeareascollection#items-member)
+  - [Excel.RangeAreasCollection.items](/javascript/api/excel/excel.rangeareascollection#items-member)
 
-  -
-  [Excel.Window.rangeSelection](/javascript/api/excel/excel.window#rangeselection-member)
+  - [Excel.Window.rangeSelection](/javascript/api/excel/excel.window#rangeselection-member)
 
 isPreview: false
 isDeprecated: false

@@ -17,8 +17,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PivotLabelFilter.condition](/javascript/api/excel/excel.pivotlabelfilter#condition-member)
+  - [Excel.PivotLabelFilter.condition](/javascript/api/excel/excel.pivotlabelfilter#condition-member)
 
   #### Examples
 

@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.DocumentCountNumberedItemsOptions.numberType](/javascript/api/word/word.documentcountnumbereditemsoptions#numbertype-member)
+  - [Word.DocumentCountNumberedItemsOptions.numberType](/javascript/api/word/word.documentcountnumbereditemsoptions#numbertype-member)
 
-  -
-  [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#numbertype-member)
+  - [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#numbertype-member)
 
   #### Examples
 

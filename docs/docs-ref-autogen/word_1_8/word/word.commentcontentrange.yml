@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Comment.contentRange](/javascript/api/word/word.comment#contentrange-member)
+  - [Word.Comment.contentRange](/javascript/api/word/word.comment#contentrange-member)
 
-  -
-  [Word.CommentReply.contentRange](/javascript/api/word/word.commentreply#contentrange-member)
+  - [Word.CommentReply.contentRange](/javascript/api/word/word.commentreply#contentrange-member)
 
   #### Examples
 

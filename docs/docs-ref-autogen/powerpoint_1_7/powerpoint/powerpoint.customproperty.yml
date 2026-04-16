@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.CustomPropertyCollection.items](/javascript/api/powerpoint/powerpoint.custompropertycollection#items-member)
+  - [PowerPoint.CustomPropertyCollection.items](/javascript/api/powerpoint/powerpoint.custompropertycollection#items-member)
 
 isPreview: false
 isDeprecated: false

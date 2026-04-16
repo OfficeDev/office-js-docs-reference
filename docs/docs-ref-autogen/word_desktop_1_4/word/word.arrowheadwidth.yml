@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.LineFormat.beginArrowheadWidth](/javascript/api/word/word.lineformat#beginarrowheadwidth-member)
+  - [Word.LineFormat.beginArrowheadWidth](/javascript/api/word/word.lineformat#beginarrowheadwidth-member)
 
-  -
-  [Word.LineFormat.endArrowheadWidth](/javascript/api/word/word.lineformat#endarrowheadwidth-member)
+  - [Word.LineFormat.endArrowheadWidth](/javascript/api/word/word.lineformat#endarrowheadwidth-member)
 
 isPreview: false
 isDeprecated: false

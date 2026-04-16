@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OneNote.Page.contents](/javascript/api/onenote/onenote.page#contents-member)
+  - [OneNote.Page.contents](/javascript/api/onenote/onenote.page#contents-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.QueryCollection.items](/javascript/api/excel/excel.querycollection#items-member)
+  - [Excel.QueryCollection.items](/javascript/api/excel/excel.querycollection#items-member)
 
 isPreview: false
 isDeprecated: false

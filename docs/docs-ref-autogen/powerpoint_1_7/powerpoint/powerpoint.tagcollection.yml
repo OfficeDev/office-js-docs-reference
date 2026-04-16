@@ -13,14 +13,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.Presentation.tags](/javascript/api/powerpoint/powerpoint.presentation#tags-member)
+  - [PowerPoint.Presentation.tags](/javascript/api/powerpoint/powerpoint.presentation#tags-member)
 
-  -
-  [PowerPoint.Shape.tags](/javascript/api/powerpoint/powerpoint.shape#tags-member)
+  - [PowerPoint.Shape.tags](/javascript/api/powerpoint/powerpoint.shape#tags-member)
 
-  -
-  [PowerPoint.Slide.tags](/javascript/api/powerpoint/powerpoint.slide#tags-member)
+  - [PowerPoint.Slide.tags](/javascript/api/powerpoint/powerpoint.slide#tags-member)
 
   #### Examples
 

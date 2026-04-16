@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.DatePickerContentControl.dateCalendarType](/javascript/api/word/word.datepickercontentcontrol#datecalendartype-member)
+  - [Word.DatePickerContentControl.dateCalendarType](/javascript/api/word/word.datepickercontentcontrol#datecalendartype-member)
 
 isPreview: false
 isDeprecated: false

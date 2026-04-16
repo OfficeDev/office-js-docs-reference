@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OneNote.Paragraph.richText](/javascript/api/onenote/onenote.paragraph#richtext-member)
+  - [OneNote.Paragraph.richText](/javascript/api/onenote/onenote.paragraph#richtext-member)
 
 isPreview: false
 isDeprecated: false

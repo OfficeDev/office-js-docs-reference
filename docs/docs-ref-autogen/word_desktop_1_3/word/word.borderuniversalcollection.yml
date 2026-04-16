@@ -22,8 +22,7 @@ remarks: >-
 
   - [Word.Section.borders](/javascript/api/word/word.section#borders-member)
 
-  -
-  [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
+  - [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
 
 isPreview: false
 isDeprecated: false

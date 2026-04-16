@@ -15,15 +15,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ListCollection.items](/javascript/api/word/word.listcollection#items-member)
+  - [Word.ListCollection.items](/javascript/api/word/word.listcollection#items-member)
 
   - [Word.ListFormat.list](/javascript/api/word/word.listformat#list-member)
 
   - [Word.Paragraph.list](/javascript/api/word/word.paragraph#list-member)
 
-  -
-  [Word.Paragraph.listOrNullObject](/javascript/api/word/word.paragraph#listornullobject-member)
+  - [Word.Paragraph.listOrNullObject](/javascript/api/word/word.paragraph#listornullobject-member)
 
   #### Examples
 

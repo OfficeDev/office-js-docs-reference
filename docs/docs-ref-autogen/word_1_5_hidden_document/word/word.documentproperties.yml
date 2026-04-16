@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.properties](/javascript/api/word/word.document#properties-member)
+  - [Word.Document.properties](/javascript/api/word/word.document#properties-member)
 
-  -
-  [Word.DocumentCreated.properties](/javascript/api/word/word.documentcreated#properties-member)
+  - [Word.DocumentCreated.properties](/javascript/api/word/word.documentcreated#properties-member)
 
   #### Examples
 

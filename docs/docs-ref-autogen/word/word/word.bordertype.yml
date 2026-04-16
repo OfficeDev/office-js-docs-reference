@@ -15,11 +15,9 @@ remarks: >-
 
   - [Word.Border.type](/javascript/api/word/word.border#type-member)
 
-  -
-  [Word.BorderCollection.insideBorderType](/javascript/api/word/word.bordercollection#insidebordertype-member)
+  - [Word.BorderCollection.insideBorderType](/javascript/api/word/word.bordercollection#insidebordertype-member)
 
-  -
-  [Word.BorderCollection.outsideBorderType](/javascript/api/word/word.bordercollection#outsidebordertype-member)
+  - [Word.BorderCollection.outsideBorderType](/javascript/api/word/word.bordercollection#outsidebordertype-member)
 
   - [Word.TableBorder.type](/javascript/api/word/word.tableborder#type-member)
 

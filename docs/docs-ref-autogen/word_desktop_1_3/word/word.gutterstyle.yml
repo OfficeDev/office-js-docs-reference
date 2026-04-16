@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.PageSetup.gutterStyle](/javascript/api/word/word.pagesetup#gutterstyle-member)
+  - [Word.PageSetup.gutterStyle](/javascript/api/word/word.pagesetup#gutterstyle-member)
 
 isPreview: false
 isDeprecated: false

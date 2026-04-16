@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.MessageForm.attachments](/javascript/api/outlook/office.messageform#attachments-member)
+  - [Office.MessageForm.attachments](/javascript/api/outlook/office.messageform#attachments-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,44 +13,31 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ContentControl.parentTableCell](/javascript/api/word/word.contentcontrol#parenttablecell-member)
+  - [Word.ContentControl.parentTableCell](/javascript/api/word/word.contentcontrol#parenttablecell-member)
 
-  -
-  [Word.ContentControl.parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#parenttablecellornullobject-member)
+  - [Word.ContentControl.parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#parenttablecellornullobject-member)
 
-  -
-  [Word.Field.parentTableCell](/javascript/api/word/word.field#parenttablecell-member)
+  - [Word.Field.parentTableCell](/javascript/api/word/word.field#parenttablecell-member)
 
-  -
-  [Word.Field.parentTableCellOrNullObject](/javascript/api/word/word.field#parenttablecellornullobject-member)
+  - [Word.Field.parentTableCellOrNullObject](/javascript/api/word/word.field#parenttablecellornullobject-member)
 
-  -
-  [Word.InlinePicture.parentTableCell](/javascript/api/word/word.inlinepicture#parenttablecell-member)
+  - [Word.InlinePicture.parentTableCell](/javascript/api/word/word.inlinepicture#parenttablecell-member)
 
-  -
-  [Word.InlinePicture.parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#parenttablecellornullobject-member)
+  - [Word.InlinePicture.parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#parenttablecellornullobject-member)
 
-  -
-  [Word.Paragraph.parentTableCell](/javascript/api/word/word.paragraph#parenttablecell-member)
+  - [Word.Paragraph.parentTableCell](/javascript/api/word/word.paragraph#parenttablecell-member)
 
-  -
-  [Word.Paragraph.parentTableCellOrNullObject](/javascript/api/word/word.paragraph#parenttablecellornullobject-member)
+  - [Word.Paragraph.parentTableCellOrNullObject](/javascript/api/word/word.paragraph#parenttablecellornullobject-member)
 
-  -
-  [Word.Range.parentTableCell](/javascript/api/word/word.range#parenttablecell-member)
+  - [Word.Range.parentTableCell](/javascript/api/word/word.range#parenttablecell-member)
 
-  -
-  [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#parenttablecellornullobject-member)
+  - [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#parenttablecellornullobject-member)
 
-  -
-  [Word.Table.parentTableCell](/javascript/api/word/word.table#parenttablecell-member)
+  - [Word.Table.parentTableCell](/javascript/api/word/word.table#parenttablecell-member)
 
-  -
-  [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#parenttablecellornullobject-member)
+  - [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#parenttablecellornullobject-member)
 
-  -
-  [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#items-member)
+  - [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#items-member)
 
   #### Examples
 

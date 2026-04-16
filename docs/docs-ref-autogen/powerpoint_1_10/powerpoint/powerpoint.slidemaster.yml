@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.Slide.slideMaster](/javascript/api/powerpoint/powerpoint.slide#slidemaster-member)
+  - [PowerPoint.Slide.slideMaster](/javascript/api/powerpoint/powerpoint.slide#slidemaster-member)
 
-  -
-  [PowerPoint.SlideMasterCollection.items](/javascript/api/powerpoint/powerpoint.slidemastercollection#items-member)
+  - [PowerPoint.SlideMasterCollection.items](/javascript/api/powerpoint/powerpoint.slidemastercollection#items-member)
 
   #### Examples
 

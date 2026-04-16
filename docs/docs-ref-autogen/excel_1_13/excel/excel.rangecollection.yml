@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RangeAreas.areas](/javascript/api/excel/excel.rangeareas#areas-member)
+  - [Excel.RangeAreas.areas](/javascript/api/excel/excel.rangeareas#areas-member)
 
-  -
-  [Excel.WorkbookRangeAreas.ranges](/javascript/api/excel/excel.workbookrangeareas#ranges-member)
+  - [Excel.WorkbookRangeAreas.ranges](/javascript/api/excel/excel.workbookrangeareas#ranges-member)
 
 isPreview: false
 isDeprecated: false

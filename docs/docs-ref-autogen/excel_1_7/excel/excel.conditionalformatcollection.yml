@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#conditionalformats-member)
+  - [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#conditionalformats-member)
 
 isPreview: false
 isDeprecated: false

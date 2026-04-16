@@ -14,8 +14,7 @@ remarks: >-
 
   - [Word.TableCell.column](/javascript/api/word/word.tablecell#column-member)
 
-  -
-  [Word.TableColumnCollection.items](/javascript/api/word/word.tablecolumncollection#items-member)
+  - [Word.TableColumnCollection.items](/javascript/api/word/word.tablecolumncollection#items-member)
 
 isPreview: false
 isDeprecated: false

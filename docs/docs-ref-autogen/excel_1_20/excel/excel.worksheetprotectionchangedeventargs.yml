@@ -15,11 +15,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Worksheet.onProtectionChanged](/javascript/api/excel/excel.worksheet#onprotectionchanged-member)
+  - [Excel.Worksheet.onProtectionChanged](/javascript/api/excel/excel.worksheet#onprotectionchanged-member)
 
-  -
-  [Excel.WorksheetCollection.onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onprotectionchanged-member)
+  - [Excel.WorksheetCollection.onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onprotectionchanged-member)
 
 isPreview: false
 isDeprecated: false

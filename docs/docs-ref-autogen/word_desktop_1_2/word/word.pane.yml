@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.PaneCollection.items](/javascript/api/word/word.panecollection#items-member)
+  - [Word.PaneCollection.items](/javascript/api/word/word.panecollection#items-member)
 
   - [Word.Window.activePane](/javascript/api/word/word.window#activepane-member)
 

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.AutoFilter.criteria](/javascript/api/excel/excel.autofilter#criteria-member)
+  - [Excel.AutoFilter.criteria](/javascript/api/excel/excel.autofilter#criteria-member)
 
   - [Excel.Filter.criteria](/javascript/api/excel/excel.filter#criteria-member)
 

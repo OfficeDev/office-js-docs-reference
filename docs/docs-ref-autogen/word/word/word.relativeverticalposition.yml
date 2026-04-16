@@ -17,11 +17,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Frame.relativeVerticalPosition](/javascript/api/word/word.frame#relativeverticalposition-member)
+  - [Word.Frame.relativeVerticalPosition](/javascript/api/word/word.frame#relativeverticalposition-member)
 
-  -
-  [Word.Shape.relativeVerticalPosition](/javascript/api/word/word.shape#relativeverticalposition-member)
+  - [Word.Shape.relativeVerticalPosition](/javascript/api/word/word.shape#relativeverticalposition-member)
 
   #### Examples
 

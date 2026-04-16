@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ConditionalStyle.shading](/javascript/api/word/word.conditionalstyle#shading-member)
+  - [Word.ConditionalStyle.shading](/javascript/api/word/word.conditionalstyle#shading-member)
 
   - [Word.Frame.shading](/javascript/api/word/word.frame#shading-member)
 
@@ -29,8 +28,7 @@ remarks: >-
 
   - [Word.TableCell.shading](/javascript/api/word/word.tablecell#shading-member)
 
-  -
-  [Word.TableColumn.shading](/javascript/api/word/word.tablecolumn#shading-member)
+  - [Word.TableColumn.shading](/javascript/api/word/word.tablecolumn#shading-member)
 
   - [Word.TableRow.shading](/javascript/api/word/word.tablerow#shading-member)
 

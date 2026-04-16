@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.onParagraphAdded](/javascript/api/word/word.document#onparagraphadded-member)
+  - [Word.Document.onParagraphAdded](/javascript/api/word/word.document#onparagraphadded-member)
 
   #### Examples
 

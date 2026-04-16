@@ -15,16 +15,13 @@ remarks: >-
 
   - [Word.Body.parentBody](/javascript/api/word/word.body#parentbody-member)
 
-  -
-  [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#parentbodyornullobject-member)
+  - [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#parentbodyornullobject-member)
 
-  -
-  [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#parentbody-member)
+  - [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#parentbody-member)
 
   - [Word.Document.body](/javascript/api/word/word.document#body-member)
 
-  -
-  [Word.Paragraph.parentBody](/javascript/api/word/word.paragraph#parentbody-member)
+  - [Word.Paragraph.parentBody](/javascript/api/word/word.paragraph#parentbody-member)
 
   - [Word.Range.parentBody](/javascript/api/word/word.range#parentbody-member)
 

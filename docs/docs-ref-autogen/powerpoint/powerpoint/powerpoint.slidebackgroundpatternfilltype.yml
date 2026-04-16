@@ -16,11 +16,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.SlideBackgroundPatternFill.pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#pattern-member)
+  - [PowerPoint.SlideBackgroundPatternFill.pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#pattern-member)
 
-  -
-  [PowerPoint.SlideBackgroundPatternFillOptions.pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions#pattern-member)
+  - [PowerPoint.SlideBackgroundPatternFillOptions.pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions#pattern-member)
 
   #### Examples
 

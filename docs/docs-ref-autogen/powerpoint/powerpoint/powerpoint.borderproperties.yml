@@ -13,23 +13,17 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.TableCellBorders.bottom](/javascript/api/powerpoint/powerpoint.tablecellborders#bottom-member)
+  - [PowerPoint.TableCellBorders.bottom](/javascript/api/powerpoint/powerpoint.tablecellborders#bottom-member)
 
-  -
-  [PowerPoint.TableCellBorders.diagonalDown](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonaldown-member)
+  - [PowerPoint.TableCellBorders.diagonalDown](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonaldown-member)
 
-  -
-  [PowerPoint.TableCellBorders.diagonalUp](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonalup-member)
+  - [PowerPoint.TableCellBorders.diagonalUp](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonalup-member)
 
-  -
-  [PowerPoint.TableCellBorders.left](/javascript/api/powerpoint/powerpoint.tablecellborders#left-member)
+  - [PowerPoint.TableCellBorders.left](/javascript/api/powerpoint/powerpoint.tablecellborders#left-member)
 
-  -
-  [PowerPoint.TableCellBorders.right](/javascript/api/powerpoint/powerpoint.tablecellborders#right-member)
+  - [PowerPoint.TableCellBorders.right](/javascript/api/powerpoint/powerpoint.tablecellborders#right-member)
 
-  -
-  [PowerPoint.TableCellBorders.top](/javascript/api/powerpoint/powerpoint.tablecellborders#top-member)
+  - [PowerPoint.TableCellBorders.top](/javascript/api/powerpoint/powerpoint.tablecellborders#top-member)
 
   #### Examples
 

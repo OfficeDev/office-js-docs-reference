@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.CellPropertiesFormat.fill](/javascript/api/excel/excel.cellpropertiesformat#fill-member)
+  - [Excel.CellPropertiesFormat.fill](/javascript/api/excel/excel.cellpropertiesformat#fill-member)
 
 isPreview: false
 isDeprecated: false

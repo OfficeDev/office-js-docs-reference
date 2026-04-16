@@ -14,8 +14,7 @@ remarks: >-
 
   - [Word.TabStop.alignment](/javascript/api/word/word.tabstop#alignment-member)
 
-  -
-  [Word.TabStopAddOptions.alignment](/javascript/api/word/word.tabstopaddoptions#alignment-member)
+  - [Word.TabStopAddOptions.alignment](/javascript/api/word/word.tabstopaddoptions#alignment-member)
 
 isPreview: false
 isDeprecated: false

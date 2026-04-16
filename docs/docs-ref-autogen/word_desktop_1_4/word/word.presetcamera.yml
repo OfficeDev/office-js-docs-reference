@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ThreeDimensionalFormat.presetCamera](/javascript/api/word/word.threedimensionalformat#presetcamera-member)
+  - [Word.ThreeDimensionalFormat.presetCamera](/javascript/api/word/word.threedimensionalformat#presetcamera-member)
 
 isPreview: false
 isDeprecated: false

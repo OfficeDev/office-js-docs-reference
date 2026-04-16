@@ -8,8 +8,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OfficeExtension.ClientRequestContext.debugInfo](/javascript/api/office/officeextension.clientrequestcontext#debuginfo-member)
+  - [OfficeExtension.ClientRequestContext.debugInfo](/javascript/api/office/officeextension.clientrequestcontext#debuginfo-member)
 
 isPreview: false
 isDeprecated: false

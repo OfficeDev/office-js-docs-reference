@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ColorScaleConditionalFormat.criteria](/javascript/api/excel/excel.colorscaleconditionalformat#criteria-member)
+  - [Excel.ColorScaleConditionalFormat.criteria](/javascript/api/excel/excel.colorscaleconditionalformat#criteria-member)
 
   #### Examples
 

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartLegend.legendEntries](/javascript/api/excel/excel.chartlegend#legendentries-member)
+  - [Excel.ChartLegend.legendEntries](/javascript/api/excel/excel.chartlegend#legendentries-member)
 
 isPreview: false
 isDeprecated: false

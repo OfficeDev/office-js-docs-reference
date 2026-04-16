@@ -12,17 +12,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.openEncoding](/javascript/api/word/word.document#openencoding-member)
+  - [Word.Document.openEncoding](/javascript/api/word/word.document#openencoding-member)
 
-  -
-  [Word.Document.saveEncoding](/javascript/api/word/word.document#saveencoding-member)
+  - [Word.Document.saveEncoding](/javascript/api/word/word.document#saveencoding-member)
 
-  -
-  [Word.Document.textEncoding](/javascript/api/word/word.document#textencoding-member)
+  - [Word.Document.textEncoding](/javascript/api/word/word.document#textencoding-member)
 
-  -
-  [Word.WebSettings.encoding](/javascript/api/word/word.websettings#encoding-member)
+  - [Word.WebSettings.encoding](/javascript/api/word/word.websettings#encoding-member)
 
 isPreview: false
 isDeprecated: false

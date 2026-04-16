@@ -12,22 +12,17 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.XmlNode.firstChild](/javascript/api/word/word.xmlnode#firstchild-member)
+  - [Word.XmlNode.firstChild](/javascript/api/word/word.xmlnode#firstchild-member)
 
   - [Word.XmlNode.lastChild](/javascript/api/word/word.xmlnode#lastchild-member)
 
-  -
-  [Word.XmlNode.nextSibling](/javascript/api/word/word.xmlnode#nextsibling-member)
+  - [Word.XmlNode.nextSibling](/javascript/api/word/word.xmlnode#nextsibling-member)
 
-  -
-  [Word.XmlNode.parentNode](/javascript/api/word/word.xmlnode#parentnode-member)
+  - [Word.XmlNode.parentNode](/javascript/api/word/word.xmlnode#parentnode-member)
 
-  -
-  [Word.XmlNode.previousSibling](/javascript/api/word/word.xmlnode#previoussibling-member)
+  - [Word.XmlNode.previousSibling](/javascript/api/word/word.xmlnode#previoussibling-member)
 
-  -
-  [Word.XmlNodeCollection.items](/javascript/api/word/word.xmlnodecollection#items-member)
+  - [Word.XmlNodeCollection.items](/javascript/api/word/word.xmlnodecollection#items-member)
 
 isPreview: false
 isDeprecated: false

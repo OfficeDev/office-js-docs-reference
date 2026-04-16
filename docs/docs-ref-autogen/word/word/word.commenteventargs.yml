@@ -13,59 +13,41 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Body.onCommentAdded](/javascript/api/word/word.body#oncommentadded-member)
+  - [Word.Body.onCommentAdded](/javascript/api/word/word.body#oncommentadded-member)
 
-  -
-  [Word.Body.onCommentChanged](/javascript/api/word/word.body#oncommentchanged-member)
+  - [Word.Body.onCommentChanged](/javascript/api/word/word.body#oncommentchanged-member)
 
-  -
-  [Word.Body.onCommentDeleted](/javascript/api/word/word.body#oncommentdeleted-member)
+  - [Word.Body.onCommentDeleted](/javascript/api/word/word.body#oncommentdeleted-member)
 
-  -
-  [Word.Body.onCommentDeselected](/javascript/api/word/word.body#oncommentdeselected-member)
+  - [Word.Body.onCommentDeselected](/javascript/api/word/word.body#oncommentdeselected-member)
 
-  -
-  [Word.Body.onCommentSelected](/javascript/api/word/word.body#oncommentselected-member)
+  - [Word.Body.onCommentSelected](/javascript/api/word/word.body#oncommentselected-member)
 
-  -
-  [Word.ContentControl.onCommentAdded](/javascript/api/word/word.contentcontrol#oncommentadded-member)
+  - [Word.ContentControl.onCommentAdded](/javascript/api/word/word.contentcontrol#oncommentadded-member)
 
-  -
-  [Word.ContentControl.onCommentChanged](/javascript/api/word/word.contentcontrol#oncommentchanged-member)
+  - [Word.ContentControl.onCommentChanged](/javascript/api/word/word.contentcontrol#oncommentchanged-member)
 
-  -
-  [Word.ContentControl.onCommentDeselected](/javascript/api/word/word.contentcontrol#oncommentdeselected-member)
+  - [Word.ContentControl.onCommentDeselected](/javascript/api/word/word.contentcontrol#oncommentdeselected-member)
 
-  -
-  [Word.ContentControl.onCommentSelected](/javascript/api/word/word.contentcontrol#oncommentselected-member)
+  - [Word.ContentControl.onCommentSelected](/javascript/api/word/word.contentcontrol#oncommentselected-member)
 
-  -
-  [Word.Paragraph.onCommentAdded](/javascript/api/word/word.paragraph#oncommentadded-member)
+  - [Word.Paragraph.onCommentAdded](/javascript/api/word/word.paragraph#oncommentadded-member)
 
-  -
-  [Word.Paragraph.onCommentChanged](/javascript/api/word/word.paragraph#oncommentchanged-member)
+  - [Word.Paragraph.onCommentChanged](/javascript/api/word/word.paragraph#oncommentchanged-member)
 
-  -
-  [Word.Paragraph.onCommentDeleted](/javascript/api/word/word.paragraph#oncommentdeleted-member)
+  - [Word.Paragraph.onCommentDeleted](/javascript/api/word/word.paragraph#oncommentdeleted-member)
 
-  -
-  [Word.Paragraph.onCommentDeselected](/javascript/api/word/word.paragraph#oncommentdeselected-member)
+  - [Word.Paragraph.onCommentDeselected](/javascript/api/word/word.paragraph#oncommentdeselected-member)
 
-  -
-  [Word.Paragraph.onCommentSelected](/javascript/api/word/word.paragraph#oncommentselected-member)
+  - [Word.Paragraph.onCommentSelected](/javascript/api/word/word.paragraph#oncommentselected-member)
 
-  -
-  [Word.Range.onCommentAdded](/javascript/api/word/word.range#oncommentadded-member)
+  - [Word.Range.onCommentAdded](/javascript/api/word/word.range#oncommentadded-member)
 
-  -
-  [Word.Range.onCommentChanged](/javascript/api/word/word.range#oncommentchanged-member)
+  - [Word.Range.onCommentChanged](/javascript/api/word/word.range#oncommentchanged-member)
 
-  -
-  [Word.Range.onCommentDeselected](/javascript/api/word/word.range#oncommentdeselected-member)
+  - [Word.Range.onCommentDeselected](/javascript/api/word/word.range#oncommentdeselected-member)
 
-  -
-  [Word.Range.onCommentSelected](/javascript/api/word/word.range#oncommentselected-member)
+  - [Word.Range.onCommentSelected](/javascript/api/word/word.range#oncommentselected-member)
 
   #### Examples
 

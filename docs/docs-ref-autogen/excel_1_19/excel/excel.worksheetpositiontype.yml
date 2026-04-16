@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.InsertWorksheetOptions.positionType](/javascript/api/excel/excel.insertworksheetoptions#positiontype-member)
+  - [Excel.InsertWorksheetOptions.positionType](/javascript/api/excel/excel.insertworksheetoptions#positiontype-member)
 
   #### Examples
 

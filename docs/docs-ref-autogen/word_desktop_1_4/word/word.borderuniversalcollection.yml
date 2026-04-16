@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ConditionalStyle.borders](/javascript/api/word/word.conditionalstyle#borders-member)
+  - [Word.ConditionalStyle.borders](/javascript/api/word/word.conditionalstyle#borders-member)
 
   - [Word.Font.borders](/javascript/api/word/word.font#borders-member)
 
@@ -29,11 +28,9 @@ remarks: >-
 
   - [Word.Selection.borders](/javascript/api/word/word.selection#borders-member)
 
-  -
-  [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
+  - [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
 
-  -
-  [Word.TableStyle.borders](/javascript/api/word/word.tablestyle#borders-member)
+  - [Word.TableStyle.borders](/javascript/api/word/word.tablestyle#borders-member)
 
 isPreview: false
 isDeprecated: false

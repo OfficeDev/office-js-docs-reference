@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartAxis.axisGroup](/javascript/api/excel/excel.chartaxis#axisgroup-member)
+  - [Excel.ChartAxis.axisGroup](/javascript/api/excel/excel.chartaxis#axisgroup-member)
 
 isPreview: false
 isDeprecated: false

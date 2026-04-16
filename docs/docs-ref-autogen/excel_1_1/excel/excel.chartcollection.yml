@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Worksheet.charts](/javascript/api/excel/excel.worksheet#charts-member)
+  - [Excel.Worksheet.charts](/javascript/api/excel/excel.worksheet#charts-member)
 
 isPreview: false
 isDeprecated: false

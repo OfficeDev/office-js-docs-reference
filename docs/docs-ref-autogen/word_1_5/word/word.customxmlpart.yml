@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.CustomXmlPartCollection.items](/javascript/api/word/word.customxmlpartcollection#items-member)
+  - [Word.CustomXmlPartCollection.items](/javascript/api/word/word.customxmlpartcollection#items-member)
 
-  -
-  [Word.CustomXmlPartScopedCollection.items](/javascript/api/word/word.customxmlpartscopedcollection#items-member)
+  - [Word.CustomXmlPartScopedCollection.items](/javascript/api/word/word.customxmlpartscopedcollection#items-member)
 
   #### Examples
 

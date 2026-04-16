@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PageBreakCollection.items](/javascript/api/excel/excel.pagebreakcollection#items-member)
+  - [Excel.PageBreakCollection.items](/javascript/api/excel/excel.pagebreakcollection#items-member)
 
 isPreview: false
 isDeprecated: false

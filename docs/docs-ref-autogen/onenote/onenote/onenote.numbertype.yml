@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OneNote.ParagraphInfo.numberType](/javascript/api/onenote/onenote.paragraphinfo#numbertype-member)
+  - [OneNote.ParagraphInfo.numberType](/javascript/api/onenote/onenote.paragraphinfo#numbertype-member)
 
 isPreview: false
 isDeprecated: false

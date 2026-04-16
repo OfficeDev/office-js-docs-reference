@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.DocumentTask.changes](/javascript/api/excel/excel.documenttask#changes-member)
+  - [Excel.DocumentTask.changes](/javascript/api/excel/excel.documenttask#changes-member)
 
 isPreview: true
 isDeprecated: false

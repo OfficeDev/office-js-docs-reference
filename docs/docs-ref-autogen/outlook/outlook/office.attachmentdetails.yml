@@ -28,14 +28,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentRead.attachments](/javascript/api/outlook/office.appointmentread#attachments-member)
+  - [Office.AppointmentRead.attachments](/javascript/api/outlook/office.appointmentread#attachments-member)
 
-  -
-  [Office.LoadedMessageRead.attachments](/javascript/api/outlook/office.loadedmessageread#attachments-member)
+  - [Office.LoadedMessageRead.attachments](/javascript/api/outlook/office.loadedmessageread#attachments-member)
 
-  -
-  [Office.MessageRead.attachments](/javascript/api/outlook/office.messageread#attachments-member)
+  - [Office.MessageRead.attachments](/javascript/api/outlook/office.messageread#attachments-member)
 
   #### Examples
 

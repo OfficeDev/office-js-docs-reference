@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.TextConditionalFormat.rule](/javascript/api/excel/excel.textconditionalformat#rule-member)
+  - [Excel.TextConditionalFormat.rule](/javascript/api/excel/excel.textconditionalformat#rule-member)
 
 isPreview: false
 isDeprecated: false

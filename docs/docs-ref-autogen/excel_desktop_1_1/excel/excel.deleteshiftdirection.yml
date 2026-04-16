@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChangeDirectionState.deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#deleteshiftdirection-member)
+  - [Excel.ChangeDirectionState.deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#deleteshiftdirection-member)
 
   #### Examples
 

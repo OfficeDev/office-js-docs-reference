@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.CellBorder.weight](/javascript/api/excel/excel.cellborder#weight-member)
+  - [Excel.CellBorder.weight](/javascript/api/excel/excel.cellborder#weight-member)
 
-  -
-  [Excel.RangeBorder.weight](/javascript/api/excel/excel.rangeborder#weight-member)
+  - [Excel.RangeBorder.weight](/javascript/api/excel/excel.rangeborder#weight-member)
 
 isPreview: false
 isDeprecated: false

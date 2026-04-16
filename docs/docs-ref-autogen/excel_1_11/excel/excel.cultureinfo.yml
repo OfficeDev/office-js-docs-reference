@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Application.cultureInfo](/javascript/api/excel/excel.application#cultureinfo-member)
+  - [Excel.Application.cultureInfo](/javascript/api/excel/excel.application#cultureinfo-member)
 
 isPreview: false
 isDeprecated: false

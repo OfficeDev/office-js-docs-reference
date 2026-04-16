@@ -23,11 +23,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.TableCellProperties.verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#verticalalignment-member)
+  - [PowerPoint.TableCellProperties.verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#verticalalignment-member)
 
-  -
-  [PowerPoint.TextFrame.verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#verticalalignment-member)
+  - [PowerPoint.TextFrame.verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#verticalalignment-member)
 
   #### Examples
 

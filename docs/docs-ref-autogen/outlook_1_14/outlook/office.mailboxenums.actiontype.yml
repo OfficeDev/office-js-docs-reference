@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.NotificationMessageAction.actionType](/javascript/api/outlook/office.notificationmessageaction#actiontype-member)
+  - [Office.NotificationMessageAction.actionType](/javascript/api/outlook/office.notificationmessageaction#actiontype-member)
 
   #### Examples
 

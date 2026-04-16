@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartAxis.format](/javascript/api/excel/excel.chartaxis#format-member)
+  - [Excel.ChartAxis.format](/javascript/api/excel/excel.chartaxis#format-member)
 
 isPreview: false
 isDeprecated: false

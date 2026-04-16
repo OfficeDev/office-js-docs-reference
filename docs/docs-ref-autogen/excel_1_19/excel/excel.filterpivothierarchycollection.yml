@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PivotTable.filterHierarchies](/javascript/api/excel/excel.pivottable#filterhierarchies-member)
+  - [Excel.PivotTable.filterHierarchies](/javascript/api/excel/excel.pivottable#filterhierarchies-member)
 
 isPreview: false
 isDeprecated: false

@@ -733,8 +733,26 @@ async function processYamlFile(
     let output = yaml.dump(doc, {
       lineWidth: -1,
       noRefs: true,
-      sortKeys: false
+      sortKeys: false,
+      noCompatMode: true,
+      flowLevel: -1
     });
+
+    // Fix YAML formatting issue: yaml.dump() sometimes puts markdown list bullets on separate lines
+    // Convert "  -\n  [Text](url)" to "  - [Text](url)"
+    const lines = output.split('\n');
+    const linesToRemove = new Set<number>();
+    for (let i = 0; i < lines.length - 1; i++) {
+      // Check if current line ends with just a bullet and next line starts with a markdown link
+      const currentMatch = lines[i].match(/^(\s+)-$/);
+      if (currentMatch && lines[i + 1].match(/^\s+\[.+?\]\(.+?\)/)) {
+        const indent = currentMatch[1];
+        const nextLineContent = lines[i + 1].trim();
+        lines[i] = `${indent}- ${nextLineContent}`;
+        linesToRemove.add(i + 1); // Mark next line for removal
+      }
+    }
+    output = lines.filter((_, index) => !linesToRemove.has(index)).join('\n');
 
     // Prepend the YamlMime header if it existed
     if (yamlMimeHeader) {

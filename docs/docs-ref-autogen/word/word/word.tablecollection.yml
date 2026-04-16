@@ -17,8 +17,7 @@ remarks: >-
 
   - [Word.Body.tables](/javascript/api/word/word.body#tables-member)
 
-  -
-  [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#tables-member)
+  - [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#tables-member)
 
   - [Word.Document.tables](/javascript/api/word/word.document#tables-member)
 
@@ -26,8 +25,7 @@ remarks: >-
 
   - [Word.Selection.tables](/javascript/api/word/word.selection#tables-member)
 
-  -
-  [Word.Selection.topLevelTables](/javascript/api/word/word.selection#topleveltables-member)
+  - [Word.Selection.topLevelTables](/javascript/api/word/word.selection#topleveltables-member)
 
   - [Word.Table.tables](/javascript/api/word/word.table#tables-member)
 

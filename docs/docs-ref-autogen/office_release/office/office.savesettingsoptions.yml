@@ -11,8 +11,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Settings.saveAsync](/javascript/api/office/office.settings#saveasync-member)
+  - [Office.Settings.saveAsync](/javascript/api/office/office.settings#saveasync-member)
 
   #### Examples
 

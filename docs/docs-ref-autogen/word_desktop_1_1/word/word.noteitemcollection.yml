@@ -19,17 +19,13 @@ remarks: >-
 
   - [Word.Body.footnotes](/javascript/api/word/word.body#footnotes-member)
 
-  -
-  [Word.ContentControl.endnotes](/javascript/api/word/word.contentcontrol#endnotes-member)
+  - [Word.ContentControl.endnotes](/javascript/api/word/word.contentcontrol#endnotes-member)
 
-  -
-  [Word.ContentControl.footnotes](/javascript/api/word/word.contentcontrol#footnotes-member)
+  - [Word.ContentControl.footnotes](/javascript/api/word/word.contentcontrol#footnotes-member)
 
-  -
-  [Word.Paragraph.endnotes](/javascript/api/word/word.paragraph#endnotes-member)
+  - [Word.Paragraph.endnotes](/javascript/api/word/word.paragraph#endnotes-member)
 
-  -
-  [Word.Paragraph.footnotes](/javascript/api/word/word.paragraph#footnotes-member)
+  - [Word.Paragraph.footnotes](/javascript/api/word/word.paragraph#footnotes-member)
 
   - [Word.Range.endnotes](/javascript/api/word/word.range#endnotes-member)
 
@@ -41,8 +37,7 @@ remarks: >-
 
   - [Word.TableRow.endnotes](/javascript/api/word/word.tablerow#endnotes-member)
 
-  -
-  [Word.TableRow.footnotes](/javascript/api/word/word.tablerow#footnotes-member)
+  - [Word.TableRow.footnotes](/javascript/api/word/word.tablerow#footnotes-member)
 
   #### Examples
 

@@ -15,8 +15,7 @@ remarks: >-
 
   - [Word.Body.lists](/javascript/api/word/word.body#lists-member)
 
-  -
-  [Word.ContentControl.lists](/javascript/api/word/word.contentcontrol#lists-member)
+  - [Word.ContentControl.lists](/javascript/api/word/word.contentcontrol#lists-member)
 
   - [Word.Range.lists](/javascript/api/word/word.range#lists-member)
 

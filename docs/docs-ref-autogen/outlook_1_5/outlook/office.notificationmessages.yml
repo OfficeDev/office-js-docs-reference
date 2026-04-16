@@ -30,17 +30,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentCompose.notificationMessages](/javascript/api/outlook/office.appointmentcompose#notificationmessages-member)
+  - [Office.AppointmentCompose.notificationMessages](/javascript/api/outlook/office.appointmentcompose#notificationmessages-member)
 
-  -
-  [Office.AppointmentRead.notificationMessages](/javascript/api/outlook/office.appointmentread#notificationmessages-member)
+  - [Office.AppointmentRead.notificationMessages](/javascript/api/outlook/office.appointmentread#notificationmessages-member)
 
-  -
-  [Office.MessageCompose.notificationMessages](/javascript/api/outlook/office.messagecompose#notificationmessages-member)
+  - [Office.MessageCompose.notificationMessages](/javascript/api/outlook/office.messagecompose#notificationmessages-member)
 
-  -
-  [Office.MessageRead.notificationMessages](/javascript/api/outlook/office.messageread#notificationmessages-member)
+  - [Office.MessageRead.notificationMessages](/javascript/api/outlook/office.messageread#notificationmessages-member)
 
 isPreview: false
 isDeprecated: false

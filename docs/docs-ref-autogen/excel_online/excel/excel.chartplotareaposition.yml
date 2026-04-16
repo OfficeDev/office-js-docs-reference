@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartPlotArea.position](/javascript/api/excel/excel.chartplotarea#position-member)
+  - [Excel.ChartPlotArea.position](/javascript/api/excel/excel.chartplotarea#position-member)
 
 isPreview: false
 isDeprecated: false

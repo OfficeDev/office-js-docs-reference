@@ -16,8 +16,7 @@ remarks: >-
 
   - [Visio.Page.shapes](/javascript/api/visio/visio.page#shapes-member)
 
-  -
-  [Visio.Selection.shapes](/javascript/api/visio/visio.selection#shapes-member)
+  - [Visio.Selection.shapes](/javascript/api/visio/visio.selection#shapes-member)
 
   - [Visio.Shape.subShapes](/javascript/api/visio/visio.shape#subshapes-member)
 

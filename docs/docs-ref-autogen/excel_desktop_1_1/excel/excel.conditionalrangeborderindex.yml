@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ConditionalRangeBorder.sideIndex](/javascript/api/excel/excel.conditionalrangeborder#sideindex-member)
+  - [Excel.ConditionalRangeBorder.sideIndex](/javascript/api/excel/excel.conditionalrangeborder#sideindex-member)
 
 isPreview: false
 isDeprecated: false

@@ -17,11 +17,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Shape.relativeHorizontalSize](/javascript/api/word/word.shape#relativehorizontalsize-member)
+  - [Word.Shape.relativeHorizontalSize](/javascript/api/word/word.shape#relativehorizontalsize-member)
 
-  -
-  [Word.Shape.relativeVerticalSize](/javascript/api/word/word.shape#relativeverticalsize-member)
+  - [Word.Shape.relativeVerticalSize](/javascript/api/word/word.shape#relativeverticalsize-member)
 
   #### Examples
 

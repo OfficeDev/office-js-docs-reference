@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Coauthoring.authors](/javascript/api/word/word.coauthoring#authors-member)
+  - [Word.Coauthoring.authors](/javascript/api/word/word.coauthoring#authors-member)
 
 isPreview: false
 isDeprecated: false

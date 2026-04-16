@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.onAnnotationRemoved](/javascript/api/word/word.document#onannotationremoved-member)
+  - [Word.Document.onAnnotationRemoved](/javascript/api/word/word.document#onannotationremoved-member)
 
   #### Examples
 

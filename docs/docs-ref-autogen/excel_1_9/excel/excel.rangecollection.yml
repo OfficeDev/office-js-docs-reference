@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RangeAreas.areas](/javascript/api/excel/excel.rangeareas#areas-member)
+  - [Excel.RangeAreas.areas](/javascript/api/excel/excel.rangeareas#areas-member)
 
 isPreview: false
 isDeprecated: false

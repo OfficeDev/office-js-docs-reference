@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PlaceholderErrorCellValue.target](/javascript/api/excel/excel.placeholdererrorcellvalue#target-member)
+  - [Excel.PlaceholderErrorCellValue.target](/javascript/api/excel/excel.placeholdererrorcellvalue#target-member)
 
 isPreview: false
 isDeprecated: false

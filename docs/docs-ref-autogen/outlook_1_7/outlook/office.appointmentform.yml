@@ -23,8 +23,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Mailbox.displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#displaynewappointmentform-member)
+  - [Office.Mailbox.displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#displaynewappointmentform-member)
 
   #### Examples
 

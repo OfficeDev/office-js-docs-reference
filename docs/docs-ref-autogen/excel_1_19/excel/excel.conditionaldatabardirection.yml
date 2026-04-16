@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.DataBarConditionalFormat.barDirection](/javascript/api/excel/excel.databarconditionalformat#bardirection-member)
+  - [Excel.DataBarConditionalFormat.barDirection](/javascript/api/excel/excel.databarconditionalformat#bardirection-member)
 
   #### Examples
 

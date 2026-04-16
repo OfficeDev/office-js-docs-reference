@@ -15,8 +15,7 @@ remarks: >-
 
   - [Word.Body.font](/javascript/api/word/word.body#font-member)
 
-  -
-  [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
+  - [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
 
   - [Word.Paragraph.font](/javascript/api/word/word.paragraph#font-member)
 

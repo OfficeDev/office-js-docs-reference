@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartSeries.trendlines](/javascript/api/excel/excel.chartseries#trendlines-member)
+  - [Excel.ChartSeries.trendlines](/javascript/api/excel/excel.chartseries#trendlines-member)
 
 isPreview: false
 isDeprecated: false

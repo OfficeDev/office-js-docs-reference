@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.FillFormat.gradientStyle](/javascript/api/word/word.fillformat#gradientstyle-member)
+  - [Word.FillFormat.gradientStyle](/javascript/api/word/word.fillformat#gradientstyle-member)
 
 isPreview: false
 isDeprecated: false

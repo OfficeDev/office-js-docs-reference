@@ -42,8 +42,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Mailbox.loadItemByIdAsync](/javascript/api/outlook/office.mailbox#loaditembyidasync-member)
+  - [Office.Mailbox.loadItemByIdAsync](/javascript/api/outlook/office.mailbox#loaditembyidasync-member)
 
   #### Examples
 

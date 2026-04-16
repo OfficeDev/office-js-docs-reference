@@ -28,8 +28,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.MailboxEvent.completed](/javascript/api/outlook/office.mailboxevent#completed-member)
+  - [Office.MailboxEvent.completed](/javascript/api/outlook/office.mailboxevent#completed-member)
 
   #### Examples
 

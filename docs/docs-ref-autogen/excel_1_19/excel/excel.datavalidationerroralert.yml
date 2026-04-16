@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.DataValidation.errorAlert](/javascript/api/excel/excel.datavalidation#erroralert-member)
+  - [Excel.DataValidation.errorAlert](/javascript/api/excel/excel.datavalidation#erroralert-member)
 
   #### Examples
 

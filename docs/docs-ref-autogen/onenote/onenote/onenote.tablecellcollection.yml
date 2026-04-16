@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OneNote.TableRow.cells](/javascript/api/onenote/onenote.tablerow#cells-member)
+  - [OneNote.TableRow.cells](/javascript/api/onenote/onenote.tablerow#cells-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,14 +13,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Body.parentSection](/javascript/api/word/word.body#parentsection-member)
+  - [Word.Body.parentSection](/javascript/api/word/word.body#parentsection-member)
 
-  -
-  [Word.Body.parentSectionOrNullObject](/javascript/api/word/word.body#parentsectionornullobject-member)
+  - [Word.Body.parentSectionOrNullObject](/javascript/api/word/word.body#parentsectionornullobject-member)
 
-  -
-  [Word.SectionCollection.items](/javascript/api/word/word.sectioncollection#items-member)
+  - [Word.SectionCollection.items](/javascript/api/word/word.sectioncollection#items-member)
 
   #### Examples
 

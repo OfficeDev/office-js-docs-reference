@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ThreeDimensionalFormat.presetLightingDirection](/javascript/api/word/word.threedimensionalformat#presetlightingdirection-member)
+  - [Word.ThreeDimensionalFormat.presetLightingDirection](/javascript/api/word/word.threedimensionalformat#presetlightingdirection-member)
 
 isPreview: false
 isDeprecated: false

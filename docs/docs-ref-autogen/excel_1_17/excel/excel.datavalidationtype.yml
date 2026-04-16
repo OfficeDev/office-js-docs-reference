@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.DataValidation.type](/javascript/api/excel/excel.datavalidation#type-member)
+  - [Excel.DataValidation.type](/javascript/api/excel/excel.datavalidation#type-member)
 
 isPreview: false
 isDeprecated: false

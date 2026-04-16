@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartDataTable.format](/javascript/api/excel/excel.chartdatatable#format-member)
+  - [Excel.ChartDataTable.format](/javascript/api/excel/excel.chartdatatable#format-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.HeaderFooterGroup.state](/javascript/api/excel/excel.headerfootergroup#state-member)
+  - [Excel.HeaderFooterGroup.state](/javascript/api/excel/excel.headerfootergroup#state-member)
 
 isPreview: false
 isDeprecated: false

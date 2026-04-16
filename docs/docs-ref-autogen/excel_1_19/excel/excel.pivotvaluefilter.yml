@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PivotFilters.valueFilter](/javascript/api/excel/excel.pivotfilters#valuefilter-member)
+  - [Excel.PivotFilters.valueFilter](/javascript/api/excel/excel.pivotfilters#valuefilter-member)
 
   #### Examples
 

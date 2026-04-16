@@ -15,29 +15,21 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.BooleanCellValue.provider](/javascript/api/excel/excel.booleancellvalue#provider-member)
+  - [Excel.BooleanCellValue.provider](/javascript/api/excel/excel.booleancellvalue#provider-member)
 
-  -
-  [Excel.DoubleCellValue.provider](/javascript/api/excel/excel.doublecellvalue#provider-member)
+  - [Excel.DoubleCellValue.provider](/javascript/api/excel/excel.doublecellvalue#provider-member)
 
-  -
-  [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#provider-member)
+  - [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#provider-member)
 
-  -
-  [Excel.ExternalCodeServiceObjectCellValue.provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#provider-member)
+  - [Excel.ExternalCodeServiceObjectCellValue.provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#provider-member)
 
-  -
-  [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#provider-member)
+  - [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#provider-member)
 
-  -
-  [Excel.LocalImageCellValue.provider](/javascript/api/excel/excel.localimagecellvalue#provider-member)
+  - [Excel.LocalImageCellValue.provider](/javascript/api/excel/excel.localimagecellvalue#provider-member)
 
-  -
-  [Excel.StringCellValue.provider](/javascript/api/excel/excel.stringcellvalue#provider-member)
+  - [Excel.StringCellValue.provider](/javascript/api/excel/excel.stringcellvalue#provider-member)
 
-  -
-  [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#provider-member)
+  - [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#provider-member)
 
 isPreview: false
 isDeprecated: false

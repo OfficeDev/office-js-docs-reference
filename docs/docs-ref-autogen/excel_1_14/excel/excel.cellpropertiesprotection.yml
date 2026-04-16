@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.CellPropertiesFormat.protection](/javascript/api/excel/excel.cellpropertiesformat#protection-member)
+  - [Excel.CellPropertiesFormat.protection](/javascript/api/excel/excel.cellpropertiesformat#protection-member)
 
 isPreview: false
 isDeprecated: false

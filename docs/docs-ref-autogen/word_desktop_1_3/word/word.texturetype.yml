@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.FillFormat.textureType](/javascript/api/word/word.fillformat#texturetype-member)
+  - [Word.FillFormat.textureType](/javascript/api/word/word.fillformat#texturetype-member)
 
 isPreview: false
 isDeprecated: false

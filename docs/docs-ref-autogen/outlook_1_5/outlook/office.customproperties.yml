@@ -53,17 +53,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#loadcustompropertiesasync-member)
+  - [Office.AppointmentCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#loadcustompropertiesasync-member)
 
-  -
-  [Office.AppointmentRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#loadcustompropertiesasync-member)
+  - [Office.AppointmentRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#loadcustompropertiesasync-member)
 
-  -
-  [Office.MessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#loadcustompropertiesasync-member)
+  - [Office.MessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#loadcustompropertiesasync-member)
 
-  -
-  [Office.MessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#loadcustompropertiesasync-member)
+  - [Office.MessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#loadcustompropertiesasync-member)
 
 isPreview: false
 isDeprecated: false

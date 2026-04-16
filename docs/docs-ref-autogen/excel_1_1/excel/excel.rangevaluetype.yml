@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
+  - [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
 
 isPreview: false
 isDeprecated: false

@@ -185,8 +185,7 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      - [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -243,8 +242,7 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      - [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -395,8 +393,7 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      - [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -495,8 +492,7 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      - [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox

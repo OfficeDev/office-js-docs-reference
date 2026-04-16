@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Application.activeWindow](/javascript/api/excel/excel.application#activewindow-member)
+  - [Excel.Application.activeWindow](/javascript/api/excel/excel.application#activewindow-member)
 
-  -
-  [Excel.WindowCollection.items](/javascript/api/excel/excel.windowcollection#items-member)
+  - [Excel.WindowCollection.items](/javascript/api/excel/excel.windowcollection#items-member)
 
 isPreview: false
 isDeprecated: false

@@ -19,8 +19,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Binding.onSelectionChanged](/javascript/api/excel/excel.binding#onselectionchanged-member)
+  - [Excel.Binding.onSelectionChanged](/javascript/api/excel/excel.binding#onselectionchanged-member)
 
 isPreview: false
 isDeprecated: false

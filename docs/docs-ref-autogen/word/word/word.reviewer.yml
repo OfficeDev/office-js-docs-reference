@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ReviewerCollection.items](/javascript/api/word/word.reviewercollection#items-member)
+  - [Word.ReviewerCollection.items](/javascript/api/word/word.reviewercollection#items-member)
 
 isPreview: false
 isDeprecated: false

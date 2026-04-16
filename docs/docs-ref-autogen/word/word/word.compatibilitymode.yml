@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.compatibilityMode](/javascript/api/word/word.document#compatibilitymode-member)
+  - [Word.Document.compatibilityMode](/javascript/api/word/word.document#compatibilitymode-member)
 
 isPreview: false
 isDeprecated: false

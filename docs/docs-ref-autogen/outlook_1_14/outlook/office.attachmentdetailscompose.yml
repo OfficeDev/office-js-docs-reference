@@ -28,11 +28,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentCompose.getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentsasync-member)
+  - [Office.AppointmentCompose.getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentsasync-member)
 
-  -
-  [Office.MessageCompose.getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#getattachmentsasync-member)
+  - [Office.MessageCompose.getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#getattachmentsasync-member)
 
   #### Examples
 

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RangeFormat.borders](/javascript/api/excel/excel.rangeformat#borders-member)
+  - [Excel.RangeFormat.borders](/javascript/api/excel/excel.rangeformat#borders-member)
 
 isPreview: false
 isDeprecated: false

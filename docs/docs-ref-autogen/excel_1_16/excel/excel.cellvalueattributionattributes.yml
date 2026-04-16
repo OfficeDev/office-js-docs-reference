@@ -15,11 +15,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.CellValuePropertyMetadata.attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#attribution-member)
+  - [Excel.CellValuePropertyMetadata.attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#attribution-member)
 
-  -
-  [Excel.WebImageCellValue.attribution](/javascript/api/excel/excel.webimagecellvalue#attribution-member)
+  - [Excel.WebImageCellValue.attribution](/javascript/api/excel/excel.webimagecellvalue#attribution-member)
 
 isPreview: false
 isDeprecated: false

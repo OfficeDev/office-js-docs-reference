@@ -17,8 +17,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OfficeRuntime.Auth.getAccessToken](/javascript/api/office-runtime/officeruntime.auth#getaccesstoken-member)
+  - [OfficeRuntime.Auth.getAccessToken](/javascript/api/office-runtime/officeruntime.auth#getaccesstoken-member)
 
 isPreview: false
 isDeprecated: false

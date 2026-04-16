@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.Table.styleSettings](/javascript/api/powerpoint/powerpoint.table#stylesettings-member)
+  - [PowerPoint.Table.styleSettings](/javascript/api/powerpoint/powerpoint.table#stylesettings-member)
 
 isPreview: false
 isDeprecated: false

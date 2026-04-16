@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.WorksheetProtection.options](/javascript/api/excel/excel.worksheetprotection#options-member)
+  - [Excel.WorksheetProtection.options](/javascript/api/excel/excel.worksheetprotection#options-member)
 
-  -
-  [Excel.WorksheetProtection.savedOptions](/javascript/api/excel/excel.worksheetprotection#savedoptions-member)
+  - [Excel.WorksheetProtection.savedOptions](/javascript/api/excel/excel.worksheetprotection#savedoptions-member)
 
 isPreview: false
 isDeprecated: false

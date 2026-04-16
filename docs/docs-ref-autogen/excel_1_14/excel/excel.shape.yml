@@ -17,30 +17,23 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.GeometricShape.shape](/javascript/api/excel/excel.geometricshape#shape-member)
+  - [Excel.GeometricShape.shape](/javascript/api/excel/excel.geometricshape#shape-member)
 
-  -
-  [Excel.GroupShapeCollection.items](/javascript/api/excel/excel.groupshapecollection#items-member)
+  - [Excel.GroupShapeCollection.items](/javascript/api/excel/excel.groupshapecollection#items-member)
 
   - [Excel.Image.shape](/javascript/api/excel/excel.image#shape-member)
 
-  -
-  [Excel.Line.beginConnectedShape](/javascript/api/excel/excel.line#beginconnectedshape-member)
+  - [Excel.Line.beginConnectedShape](/javascript/api/excel/excel.line#beginconnectedshape-member)
 
-  -
-  [Excel.Line.endConnectedShape](/javascript/api/excel/excel.line#endconnectedshape-member)
+  - [Excel.Line.endConnectedShape](/javascript/api/excel/excel.line#endconnectedshape-member)
 
   - [Excel.Line.shape](/javascript/api/excel/excel.line#shape-member)
 
-  -
-  [Excel.Shape.parentGroup](/javascript/api/excel/excel.shape#parentgroup-member)
+  - [Excel.Shape.parentGroup](/javascript/api/excel/excel.shape#parentgroup-member)
 
-  -
-  [Excel.ShapeCollection.items](/javascript/api/excel/excel.shapecollection#items-member)
+  - [Excel.ShapeCollection.items](/javascript/api/excel/excel.shapecollection#items-member)
 
-  -
-  [Excel.ShapeGroup.shape](/javascript/api/excel/excel.shapegroup#shape-member)
+  - [Excel.ShapeGroup.shape](/javascript/api/excel/excel.shapegroup#shape-member)
 
 isPreview: false
 isDeprecated: false

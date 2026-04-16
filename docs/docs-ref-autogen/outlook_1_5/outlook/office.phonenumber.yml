@@ -35,23 +35,17 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentRead.getEntitiesByType](/javascript/api/outlook/office.appointmentread#getentitiesbytype-member)
+  - [Office.AppointmentRead.getEntitiesByType](/javascript/api/outlook/office.appointmentread#getentitiesbytype-member)
 
-  -
-  [Office.AppointmentRead.getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#getfilteredentitiesbyname-member)
+  - [Office.AppointmentRead.getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#getfilteredentitiesbyname-member)
 
-  -
-  [Office.Contact.phoneNumbers](/javascript/api/outlook/office.contact#phonenumbers-member)
+  - [Office.Contact.phoneNumbers](/javascript/api/outlook/office.contact#phonenumbers-member)
 
-  -
-  [Office.Entities.phoneNumbers](/javascript/api/outlook/office.entities#phonenumbers-member)
+  - [Office.Entities.phoneNumbers](/javascript/api/outlook/office.entities#phonenumbers-member)
 
-  -
-  [Office.MessageRead.getEntitiesByType](/javascript/api/outlook/office.messageread#getentitiesbytype-member)
+  - [Office.MessageRead.getEntitiesByType](/javascript/api/outlook/office.messageread#getentitiesbytype-member)
 
-  -
-  [Office.MessageRead.getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#getfilteredentitiesbyname-member)
+  - [Office.MessageRead.getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#getfilteredentitiesbyname-member)
 
   #### Examples
 

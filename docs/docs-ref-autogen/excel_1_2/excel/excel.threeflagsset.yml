@@ -10,8 +10,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.IconCollections.threeFlags](/javascript/api/excel/excel.iconcollections#threeflags-member)
+  - [Excel.IconCollections.threeFlags](/javascript/api/excel/excel.iconcollections#threeflags-member)
 
 isPreview: false
 isDeprecated: false

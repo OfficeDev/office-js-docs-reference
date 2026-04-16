@@ -23,8 +23,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Mailbox.getSelectedItemsAsync](/javascript/api/outlook/office.mailbox#getselecteditemsasync-member)
+  - [Office.Mailbox.getSelectedItemsAsync](/javascript/api/outlook/office.mailbox#getselecteditemsasync-member)
 
   #### Examples
 

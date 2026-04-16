@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ConditionalRangeFormat.fill](/javascript/api/excel/excel.conditionalrangeformat#fill-member)
+  - [Excel.ConditionalRangeFormat.fill](/javascript/api/excel/excel.conditionalrangeformat#fill-member)
 
 isPreview: false
 isDeprecated: false

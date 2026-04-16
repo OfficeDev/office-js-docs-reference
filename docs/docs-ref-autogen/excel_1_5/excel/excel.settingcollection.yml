@@ -15,11 +15,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.SettingsChangedEventArgs.settings](/javascript/api/excel/excel.settingschangedeventargs#settings-member)
+  - [Excel.SettingsChangedEventArgs.settings](/javascript/api/excel/excel.settingschangedeventargs#settings-member)
 
-  -
-  [Excel.Workbook.settings](/javascript/api/excel/excel.workbook#settings-member)
+  - [Excel.Workbook.settings](/javascript/api/excel/excel.workbook#settings-member)
 
 isPreview: false
 isDeprecated: false

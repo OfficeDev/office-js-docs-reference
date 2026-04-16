@@ -16,8 +16,7 @@ remarks: >-
 
   - [Word.TabStop.previous](/javascript/api/word/word.tabstop#previous-member)
 
-  -
-  [Word.TabStopCollection.items](/javascript/api/word/word.tabstopcollection#items-member)
+  - [Word.TabStopCollection.items](/javascript/api/word/word.tabstopcollection#items-member)
 
 isPreview: false
 isDeprecated: false

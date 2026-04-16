@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartLegend.format](/javascript/api/excel/excel.chartlegend#format-member)
+  - [Excel.ChartLegend.format](/javascript/api/excel/excel.chartlegend#format-member)
 
 isPreview: false
 isDeprecated: false

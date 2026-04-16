@@ -16,8 +16,7 @@ remarks: >-
 
   - [Word.Font.emphasisMark](/javascript/api/word/word.font#emphasismark-member)
 
-  -
-  [Word.Range.emphasisMark](/javascript/api/word/word.range#emphasismark-member)
+  - [Word.Range.emphasisMark](/javascript/api/word/word.range#emphasismark-member)
 
 isPreview: false
 isDeprecated: false

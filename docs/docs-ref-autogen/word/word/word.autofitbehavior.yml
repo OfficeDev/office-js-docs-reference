@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.SelectionConvertToTableOptions.autoFitBehavior](/javascript/api/word/word.selectionconverttotableoptions#autofitbehavior-member)
+  - [Word.SelectionConvertToTableOptions.autoFitBehavior](/javascript/api/word/word.selectionconverttotableoptions#autofitbehavior-member)
 
 isPreview: false
 isDeprecated: false

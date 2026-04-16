@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AsyncResult.error](/javascript/api/office/office.asyncresult#error-member)
+  - [Office.AsyncResult.error](/javascript/api/office/office.asyncresult#error-member)
 
 isPreview: false
 isDeprecated: false

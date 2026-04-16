@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.DocumentProperties.custom](/javascript/api/excel/excel.documentproperties#custom-member)
+  - [Excel.DocumentProperties.custom](/javascript/api/excel/excel.documentproperties#custom-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.customXmlParts](/javascript/api/word/word.document#customxmlparts-member)
+  - [Word.Document.customXmlParts](/javascript/api/word/word.document#customxmlparts-member)
 
-  -
-  [Word.DocumentCreated.customXmlParts](/javascript/api/word/word.documentcreated#customxmlparts-member)
+  - [Word.DocumentCreated.customXmlParts](/javascript/api/word/word.documentcreated#customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

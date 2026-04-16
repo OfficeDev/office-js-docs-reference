@@ -18,14 +18,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.RecurrenceProperties.dayOfWeek](/javascript/api/outlook/office.recurrenceproperties#dayofweek-member)
+  - [Office.RecurrenceProperties.dayOfWeek](/javascript/api/outlook/office.recurrenceproperties#dayofweek-member)
 
-  -
-  [Office.RecurrenceProperties.days](/javascript/api/outlook/office.recurrenceproperties#days-member)
+  - [Office.RecurrenceProperties.days](/javascript/api/outlook/office.recurrenceproperties#days-member)
 
-  -
-  [Office.RecurrenceProperties.firstDayOfWeek](/javascript/api/outlook/office.recurrenceproperties#firstdayofweek-member)
+  - [Office.RecurrenceProperties.firstDayOfWeek](/javascript/api/outlook/office.recurrenceproperties#firstdayofweek-member)
 
   #### Examples
 

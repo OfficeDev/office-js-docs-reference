@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ContentControl.subtype](/javascript/api/word/word.contentcontrol#subtype-member)
+  - [Word.ContentControl.subtype](/javascript/api/word/word.contentcontrol#subtype-member)
 
-  -
-  [Word.ContentControl.type](/javascript/api/word/word.contentcontrol#type-member)
+  - [Word.ContentControl.type](/javascript/api/word/word.contentcontrol#type-member)
 
   #### Examples
 

@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.TableStyle.tableDirection](/javascript/api/word/word.tablestyle#tabledirection-member)
+  - [Word.TableStyle.tableDirection](/javascript/api/word/word.tablestyle#tabledirection-member)
 
 isPreview: false
 isDeprecated: false

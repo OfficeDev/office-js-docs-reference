@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.TextColumnCollection.items](/javascript/api/word/word.textcolumncollection#items-member)
+  - [Word.TextColumnCollection.items](/javascript/api/word/word.textcolumncollection#items-member)
 
 isPreview: false
 isDeprecated: false

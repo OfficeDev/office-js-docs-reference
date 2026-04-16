@@ -13,14 +13,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Table.verticalAlignment](/javascript/api/word/word.table#verticalalignment-member)
+  - [Word.Table.verticalAlignment](/javascript/api/word/word.table#verticalalignment-member)
 
-  -
-  [Word.TableCell.verticalAlignment](/javascript/api/word/word.tablecell#verticalalignment-member)
+  - [Word.TableCell.verticalAlignment](/javascript/api/word/word.tablecell#verticalalignment-member)
 
-  -
-  [Word.TableRow.verticalAlignment](/javascript/api/word/word.tablerow#verticalalignment-member)
+  - [Word.TableRow.verticalAlignment](/javascript/api/word/word.tablerow#verticalalignment-member)
 
   #### Examples
 

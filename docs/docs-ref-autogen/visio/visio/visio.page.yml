@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Visio.PageCollection.items](/javascript/api/visio/visio.pagecollection#items-member)
+  - [Visio.PageCollection.items](/javascript/api/visio/visio.pagecollection#items-member)
 
 isPreview: false
 isDeprecated: false

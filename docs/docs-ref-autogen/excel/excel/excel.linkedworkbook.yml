@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.LinkedWorkbookCollection.items](/javascript/api/excel/excel.linkedworkbookcollection#items-member)
+  - [Excel.LinkedWorkbookCollection.items](/javascript/api/excel/excel.linkedworkbookcollection#items-member)
 
 isPreview: false
 isDeprecated: false

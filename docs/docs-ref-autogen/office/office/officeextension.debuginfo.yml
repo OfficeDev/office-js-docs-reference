@@ -8,11 +8,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OfficeExtension.DebugInfo.innerError](/javascript/api/office/officeextension.debuginfo#innererror-member)
+  - [OfficeExtension.DebugInfo.innerError](/javascript/api/office/officeextension.debuginfo#innererror-member)
 
-  -
-  [OfficeExtension.Error.debugInfo](/javascript/api/office/officeextension.error#debuginfo-member)
+  - [OfficeExtension.Error.debugInfo](/javascript/api/office/officeextension.error#debuginfo-member)
 
 isPreview: false
 isDeprecated: false

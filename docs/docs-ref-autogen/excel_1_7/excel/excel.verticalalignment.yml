@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RangeFormat.verticalAlignment](/javascript/api/excel/excel.rangeformat#verticalalignment-member)
+  - [Excel.RangeFormat.verticalAlignment](/javascript/api/excel/excel.rangeformat#verticalalignment-member)
 
-  -
-  [Excel.Style.verticalAlignment](/javascript/api/excel/excel.style#verticalalignment-member)
+  - [Excel.Style.verticalAlignment](/javascript/api/excel/excel.style#verticalalignment-member)
 
   #### Examples
 

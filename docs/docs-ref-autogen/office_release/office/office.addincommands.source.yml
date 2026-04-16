@@ -36,8 +36,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AddinCommands.Event.source](/javascript/api/office/office.addincommands.event#source-member)
+  - [Office.AddinCommands.Event.source](/javascript/api/office/office.addincommands.event#source-member)
 
 isPreview: false
 isDeprecated: false

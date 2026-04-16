@@ -24,8 +24,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.MessageRead.display](/javascript/api/outlook/office.messageread#display-member)
+  - [Office.MessageRead.display](/javascript/api/outlook/office.messageread#display-member)
 
 isPreview: true
 isDeprecated: false

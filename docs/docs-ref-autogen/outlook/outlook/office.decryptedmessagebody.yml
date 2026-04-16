@@ -29,8 +29,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.MessageDecryptEventCompletedOptions.emailBody](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#emailbody-member)
+  - [Office.MessageDecryptEventCompletedOptions.emailBody](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#emailbody-member)
 
   #### Examples
 

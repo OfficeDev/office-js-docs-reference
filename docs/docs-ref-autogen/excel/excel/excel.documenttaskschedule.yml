@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.DocumentTask.startAndDueDateTime](/javascript/api/excel/excel.documenttask#startandduedatetime-member)
+  - [Excel.DocumentTask.startAndDueDateTime](/javascript/api/excel/excel.documenttask#startandduedatetime-member)
 
 isPreview: true
 isDeprecated: false

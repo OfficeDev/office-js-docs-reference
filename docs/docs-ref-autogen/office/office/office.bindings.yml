@@ -8,8 +8,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Document.bindings](/javascript/api/office/office.document#bindings-member)
+  - [Office.Document.bindings](/javascript/api/office/office.document#bindings-member)
 
 isPreview: false
 isDeprecated: false
@@ -40,16 +39,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       For Excel, the itemName parameter can refer to a named range or a table.
@@ -399,16 +395,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       Adds the specified type of binding object to the Bindings collection,
@@ -486,16 +479,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       Adds the specified type of binding object to the Bindings collection,
@@ -545,16 +535,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
     isPreview: false
     isDeprecated: false
@@ -590,16 +577,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       #### Examples
@@ -652,16 +636,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified ID does not exist.
@@ -703,16 +684,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified ID does not exist.
@@ -769,16 +747,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified ID does not exist.
@@ -821,16 +796,13 @@ methods:
       **Requirement sets**:
 
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified ID does not exist.

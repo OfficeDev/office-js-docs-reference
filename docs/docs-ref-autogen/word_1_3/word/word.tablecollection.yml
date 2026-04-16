@@ -17,8 +17,7 @@ remarks: >-
 
   - [Word.Body.tables](/javascript/api/word/word.body#tables-member)
 
-  -
-  [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#tables-member)
+  - [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#tables-member)
 
   - [Word.Range.tables](/javascript/api/word/word.range#tables-member)
 

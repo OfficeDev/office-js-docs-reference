@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.webSettings](/javascript/api/word/word.document#websettings-member)
+  - [Word.Document.webSettings](/javascript/api/word/word.document#websettings-member)
 
 isPreview: false
 isDeprecated: false

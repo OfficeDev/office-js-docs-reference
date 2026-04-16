@@ -12,17 +12,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartDataLabel.verticalAlignment](/javascript/api/excel/excel.chartdatalabel#verticalalignment-member)
+  - [Excel.ChartDataLabel.verticalAlignment](/javascript/api/excel/excel.chartdatalabel#verticalalignment-member)
 
-  -
-  [Excel.ChartDataLabels.verticalAlignment](/javascript/api/excel/excel.chartdatalabels#verticalalignment-member)
+  - [Excel.ChartDataLabels.verticalAlignment](/javascript/api/excel/excel.chartdatalabels#verticalalignment-member)
 
-  -
-  [Excel.ChartTitle.verticalAlignment](/javascript/api/excel/excel.charttitle#verticalalignment-member)
+  - [Excel.ChartTitle.verticalAlignment](/javascript/api/excel/excel.charttitle#verticalalignment-member)
 
-  -
-  [Excel.ChartTrendlineLabel.verticalAlignment](/javascript/api/excel/excel.charttrendlinelabel#verticalalignment-member)
+  - [Excel.ChartTrendlineLabel.verticalAlignment](/javascript/api/excel/excel.charttrendlinelabel#verticalalignment-member)
 
 isPreview: false
 isDeprecated: false

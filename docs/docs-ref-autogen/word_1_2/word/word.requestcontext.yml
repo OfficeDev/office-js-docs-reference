@@ -17,39 +17,31 @@ remarks: >-
 
   - [Word.Body.context](/javascript/api/word/word.body#context-member)
 
-  -
-  [Word.ContentControl.context](/javascript/api/word/word.contentcontrol#context-member)
+  - [Word.ContentControl.context](/javascript/api/word/word.contentcontrol#context-member)
 
-  -
-  [Word.ContentControlCollection.context](/javascript/api/word/word.contentcontrolcollection#context-member)
+  - [Word.ContentControlCollection.context](/javascript/api/word/word.contentcontrolcollection#context-member)
 
   - [Word.Document.context](/javascript/api/word/word.document#context-member)
 
   - [Word.Font.context](/javascript/api/word/word.font#context-member)
 
-  -
-  [Word.InlinePicture.context](/javascript/api/word/word.inlinepicture#context-member)
+  - [Word.InlinePicture.context](/javascript/api/word/word.inlinepicture#context-member)
 
-  -
-  [Word.InlinePictureCollection.context](/javascript/api/word/word.inlinepicturecollection#context-member)
+  - [Word.InlinePictureCollection.context](/javascript/api/word/word.inlinepicturecollection#context-member)
 
   - [Word.Paragraph.context](/javascript/api/word/word.paragraph#context-member)
 
-  -
-  [Word.ParagraphCollection.context](/javascript/api/word/word.paragraphcollection#context-member)
+  - [Word.ParagraphCollection.context](/javascript/api/word/word.paragraphcollection#context-member)
 
   - [Word.Range.context](/javascript/api/word/word.range#context-member)
 
-  -
-  [Word.RangeCollection.context](/javascript/api/word/word.rangecollection#context-member)
+  - [Word.RangeCollection.context](/javascript/api/word/word.rangecollection#context-member)
 
-  -
-  [Word.SearchOptions.context](/javascript/api/word/word.searchoptions#context-member)
+  - [Word.SearchOptions.context](/javascript/api/word/word.searchoptions#context-member)
 
   - [Word.Section.context](/javascript/api/word/word.section#context-member)
 
-  -
-  [Word.SectionCollection.context](/javascript/api/word/word.sectioncollection#context-member)
+  - [Word.SectionCollection.context](/javascript/api/word/word.sectioncollection#context-member)
 
   #### Examples
 

@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartPoint.format](/javascript/api/excel/excel.chartpoint#format-member)
+  - [Excel.ChartPoint.format](/javascript/api/excel/excel.chartpoint#format-member)
 
 isPreview: false
 isDeprecated: false

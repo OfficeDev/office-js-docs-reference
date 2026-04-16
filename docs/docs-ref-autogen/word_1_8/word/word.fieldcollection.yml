@@ -27,8 +27,7 @@ remarks: >-
 
   - [Word.Body.fields](/javascript/api/word/word.body#fields-member)
 
-  -
-  [Word.ContentControl.fields](/javascript/api/word/word.contentcontrol#fields-member)
+  - [Word.ContentControl.fields](/javascript/api/word/word.contentcontrol#fields-member)
 
   - [Word.Paragraph.fields](/javascript/api/word/word.paragraph#fields-member)
 

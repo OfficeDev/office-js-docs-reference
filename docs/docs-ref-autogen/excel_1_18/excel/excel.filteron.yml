@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.FilterCriteria.filterOn](/javascript/api/excel/excel.filtercriteria#filteron-member)
+  - [Excel.FilterCriteria.filterOn](/javascript/api/excel/excel.filtercriteria#filteron-member)
 
   #### Examples
 

@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.CommentContentRange.underline](/javascript/api/word/word.commentcontentrange#underline-member)
+  - [Word.CommentContentRange.underline](/javascript/api/word/word.commentcontentrange#underline-member)
 
   - [Word.Font.underline](/javascript/api/word/word.font#underline-member)
 

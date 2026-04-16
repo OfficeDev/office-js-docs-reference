@@ -41,17 +41,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.AppointmentCompose.body](/javascript/api/outlook/office.appointmentcompose#body-member)
+  - [Office.AppointmentCompose.body](/javascript/api/outlook/office.appointmentcompose#body-member)
 
-  -
-  [Office.AppointmentRead.body](/javascript/api/outlook/office.appointmentread#body-member)
+  - [Office.AppointmentRead.body](/javascript/api/outlook/office.appointmentread#body-member)
 
-  -
-  [Office.MessageCompose.body](/javascript/api/outlook/office.messagecompose#body-member)
+  - [Office.MessageCompose.body](/javascript/api/outlook/office.messagecompose#body-member)
 
-  -
-  [Office.MessageRead.body](/javascript/api/outlook/office.messageread#body-member)
+  - [Office.MessageRead.body](/javascript/api/outlook/office.messageread#body-member)
 
   #### Examples
 

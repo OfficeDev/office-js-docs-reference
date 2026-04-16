@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.NamedSheetViewCollection.items](/javascript/api/excel/excel.namedsheetviewcollection#items-member)
+  - [Excel.NamedSheetViewCollection.items](/javascript/api/excel/excel.namedsheetviewcollection#items-member)
 
 isPreview: false
 isDeprecated: false

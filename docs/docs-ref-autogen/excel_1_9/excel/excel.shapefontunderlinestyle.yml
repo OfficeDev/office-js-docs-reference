@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ShapeFont.underline](/javascript/api/excel/excel.shapefont#underline-member)
+  - [Excel.ShapeFont.underline](/javascript/api/excel/excel.shapefont#underline-member)
 
 isPreview: false
 isDeprecated: false

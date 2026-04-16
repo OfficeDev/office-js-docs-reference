@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.XmlNode.validationStatus](/javascript/api/word/word.xmlnode#validationstatus-member)
+  - [Word.XmlNode.validationStatus](/javascript/api/word/word.xmlnode#validationstatus-member)
 
 isPreview: false
 isDeprecated: false

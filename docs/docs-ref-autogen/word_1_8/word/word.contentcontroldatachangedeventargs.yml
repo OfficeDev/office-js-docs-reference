@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ContentControl.onDataChanged](/javascript/api/word/word.contentcontrol#ondatachanged-member)
+  - [Word.ContentControl.onDataChanged](/javascript/api/word/word.contentcontrol#ondatachanged-member)
 
   #### Examples
 

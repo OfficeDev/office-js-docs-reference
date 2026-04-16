@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Mailbox.getIsOpenFromLocationAllowed](/javascript/api/outlook/office.mailbox#getisopenfromlocationallowed-member)
+  - [Office.Mailbox.getIsOpenFromLocationAllowed](/javascript/api/outlook/office.mailbox#getisopenfromlocationallowed-member)
 
   #### Examples
 

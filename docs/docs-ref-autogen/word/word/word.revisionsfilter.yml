@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.View.revisionsFilter](/javascript/api/word/word.view#revisionsfilter-member)
+  - [Word.View.revisionsFilter](/javascript/api/word/word.view#revisionsfilter-member)
 
 isPreview: false
 isDeprecated: false

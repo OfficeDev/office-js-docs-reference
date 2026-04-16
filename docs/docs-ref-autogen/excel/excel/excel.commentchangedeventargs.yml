@@ -13,8 +13,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.CommentCollection.onChanged](/javascript/api/excel/excel.commentcollection#onchanged-member)
+  - [Excel.CommentCollection.onChanged](/javascript/api/excel/excel.commentcollection#onchanged-member)
 
   #### Examples
 

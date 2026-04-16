@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartTrendline.format](/javascript/api/excel/excel.charttrendline#format-member)
+  - [Excel.ChartTrendline.format](/javascript/api/excel/excel.charttrendline#format-member)
 
 isPreview: false
 isDeprecated: false

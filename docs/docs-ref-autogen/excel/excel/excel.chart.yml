@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ChartCollection.items](/javascript/api/excel/excel.chartcollection#items-member)
+  - [Excel.ChartCollection.items](/javascript/api/excel/excel.chartcollection#items-member)
 
 isPreview: false
 isDeprecated: false

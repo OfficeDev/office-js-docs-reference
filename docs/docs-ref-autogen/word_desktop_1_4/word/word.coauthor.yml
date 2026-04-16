@@ -12,13 +12,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.CoauthorCollection.items](/javascript/api/word/word.coauthorcollection#items-member)
+  - [Word.CoauthorCollection.items](/javascript/api/word/word.coauthorcollection#items-member)
 
   - [Word.Coauthoring.me](/javascript/api/word/word.coauthoring#me-member)
 
-  -
-  [Word.CoauthoringLock.owner](/javascript/api/word/word.coauthoringlock#owner-member)
+  - [Word.CoauthoringLock.owner](/javascript/api/word/word.coauthoringlock#owner-member)
 
 isPreview: false
 isDeprecated: false

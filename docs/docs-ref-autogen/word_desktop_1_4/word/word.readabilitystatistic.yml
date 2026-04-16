@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ReadabilityStatisticCollection.items](/javascript/api/word/word.readabilitystatisticcollection#items-member)
+  - [Word.ReadabilityStatisticCollection.items](/javascript/api/word/word.readabilitystatisticcollection#items-member)
 
 isPreview: false
 isDeprecated: false

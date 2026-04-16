@@ -14,8 +14,7 @@ remarks: >-
 
   - [Word.Index.sortBy](/javascript/api/word/word.index#sortby-member)
 
-  -
-  [Word.IndexAddOptions.sortBy](/javascript/api/word/word.indexaddoptions#sortby-member)
+  - [Word.IndexAddOptions.sortBy](/javascript/api/word/word.indexaddoptions#sortby-member)
 
 isPreview: false
 isDeprecated: false

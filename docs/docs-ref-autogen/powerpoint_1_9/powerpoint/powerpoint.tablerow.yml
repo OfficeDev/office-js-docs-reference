@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.TableRowCollection.items](/javascript/api/powerpoint/powerpoint.tablerowcollection#items-member)
+  - [PowerPoint.TableRowCollection.items](/javascript/api/powerpoint/powerpoint.tablerowcollection#items-member)
 
 isPreview: false
 isDeprecated: false

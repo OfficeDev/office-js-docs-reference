@@ -14,11 +14,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.TableChangedEventArgs.details](/javascript/api/excel/excel.tablechangedeventargs#details-member)
+  - [Excel.TableChangedEventArgs.details](/javascript/api/excel/excel.tablechangedeventargs#details-member)
 
-  -
-  [Excel.WorksheetChangedEventArgs.details](/javascript/api/excel/excel.worksheetchangedeventargs#details-member)
+  - [Excel.WorksheetChangedEventArgs.details](/javascript/api/excel/excel.worksheetchangedeventargs#details-member)
 
 isPreview: false
 isDeprecated: false

@@ -15,11 +15,9 @@ remarks: >-
 
   - [Word.Border.width](/javascript/api/word/word.border#width-member)
 
-  -
-  [Word.BorderCollection.insideBorderWidth](/javascript/api/word/word.bordercollection#insideborderwidth-member)
+  - [Word.BorderCollection.insideBorderWidth](/javascript/api/word/word.bordercollection#insideborderwidth-member)
 
-  -
-  [Word.BorderCollection.outsideBorderWidth](/javascript/api/word/word.bordercollection#outsideborderwidth-member)
+  - [Word.BorderCollection.outsideBorderWidth](/javascript/api/word/word.bordercollection#outsideborderwidth-member)
 
   #### Examples
 

@@ -13,11 +13,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.BorderProperties.dashStyle](/javascript/api/powerpoint/powerpoint.borderproperties#dashstyle-member)
+  - [PowerPoint.BorderProperties.dashStyle](/javascript/api/powerpoint/powerpoint.borderproperties#dashstyle-member)
 
-  -
-  [PowerPoint.ShapeLineFormat.dashStyle](/javascript/api/powerpoint/powerpoint.shapelineformat#dashstyle-member)
+  - [PowerPoint.ShapeLineFormat.dashStyle](/javascript/api/powerpoint/powerpoint.shapelineformat#dashstyle-member)
 
   #### Examples
 

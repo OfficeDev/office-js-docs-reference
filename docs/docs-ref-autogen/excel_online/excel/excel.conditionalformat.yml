@@ -17,8 +17,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ConditionalFormatCollection.items](/javascript/api/excel/excel.conditionalformatcollection#items-member)
+  - [Excel.ConditionalFormatCollection.items](/javascript/api/excel/excel.conditionalformatcollection#items-member)
 
 isPreview: false
 isDeprecated: false

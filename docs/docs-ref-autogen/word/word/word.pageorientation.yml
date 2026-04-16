@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.PageSetup.orientation](/javascript/api/word/word.pagesetup#orientation-member)
+  - [Word.PageSetup.orientation](/javascript/api/word/word.pagesetup#orientation-member)
 
 isPreview: false
 isDeprecated: false

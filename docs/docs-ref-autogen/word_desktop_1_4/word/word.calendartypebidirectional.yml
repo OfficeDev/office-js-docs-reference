@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.SelectionInsertDateTimeOptions.calendarType](/javascript/api/word/word.selectioninsertdatetimeoptions#calendartype-member)
+  - [Word.SelectionInsertDateTimeOptions.calendarType](/javascript/api/word/word.selectioninsertdatetimeoptions#calendartype-member)
 
 isPreview: false
 isDeprecated: false

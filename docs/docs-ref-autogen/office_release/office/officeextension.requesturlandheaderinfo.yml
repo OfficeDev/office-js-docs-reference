@@ -8,8 +8,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [OfficeExtension.RunOptions.session](/javascript/api/office/officeextension.runoptions#session-member)
+  - [OfficeExtension.RunOptions.session](/javascript/api/office/officeextension.runoptions#session-member)
 
 isPreview: false
 isDeprecated: false

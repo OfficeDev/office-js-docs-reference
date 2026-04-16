@@ -17,13 +17,11 @@ remarks: >-
 
   - [Word.Document.sections](/javascript/api/word/word.document#sections-member)
 
-  -
-  [Word.DocumentCreated.sections](/javascript/api/word/word.documentcreated#sections-member)
+  - [Word.DocumentCreated.sections](/javascript/api/word/word.documentcreated#sections-member)
 
   - [Word.Range.sections](/javascript/api/word/word.range#sections-member)
 
-  -
-  [Word.Selection.sections](/javascript/api/word/word.selection#sections-member)
+  - [Word.Selection.sections](/javascript/api/word/word.selection#sections-member)
 
   #### Examples
 

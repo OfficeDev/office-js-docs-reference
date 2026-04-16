@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.attachedTemplate](/javascript/api/word/word.document#attachedtemplate-member)
+  - [Word.Document.attachedTemplate](/javascript/api/word/word.document#attachedtemplate-member)
 
-  -
-  [Word.TemplateCollection.items](/javascript/api/word/word.templatecollection#items-member)
+  - [Word.TemplateCollection.items](/javascript/api/word/word.templatecollection#items-member)
 
 isPreview: false
 isDeprecated: false

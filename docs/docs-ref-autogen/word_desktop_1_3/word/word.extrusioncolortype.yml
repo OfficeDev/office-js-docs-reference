@@ -16,8 +16,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ThreeDimensionalFormat.extrusionColorType](/javascript/api/word/word.threedimensionalformat#extrusioncolortype-member)
+  - [Word.ThreeDimensionalFormat.extrusionColorType](/javascript/api/word/word.threedimensionalformat#extrusioncolortype-member)
 
 isPreview: false
 isDeprecated: false

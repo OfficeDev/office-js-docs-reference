@@ -15,11 +15,9 @@ remarks: >-
 
   - [Word.Field.result](/javascript/api/word/word.field#result-member)
 
-  -
-  [Word.NoteItem.reference](/javascript/api/word/word.noteitem#reference-member)
+  - [Word.NoteItem.reference](/javascript/api/word/word.noteitem#reference-member)
 
-  -
-  [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
+  - [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
 
   #### Examples
 

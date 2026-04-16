@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ConflictCollection.items](/javascript/api/word/word.conflictcollection#items-member)
+  - [Word.ConflictCollection.items](/javascript/api/word/word.conflictcollection#items-member)
 
 isPreview: false
 isDeprecated: false

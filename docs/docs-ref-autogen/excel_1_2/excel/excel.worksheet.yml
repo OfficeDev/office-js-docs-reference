@@ -24,8 +24,7 @@ remarks: >-
 
   - [Excel.Table.worksheet](/javascript/api/excel/excel.table#worksheet-member)
 
-  -
-  [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#items-member)
+  - [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#items-member)
 
   #### Examples
 

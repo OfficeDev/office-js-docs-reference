@@ -19,17 +19,13 @@ remarks: >-
 
   - [Word.Body.styleBuiltIn](/javascript/api/word/word.body#stylebuiltin-member)
 
-  -
-  [Word.ContentControl.styleBuiltIn](/javascript/api/word/word.contentcontrol#stylebuiltin-member)
+  - [Word.ContentControl.styleBuiltIn](/javascript/api/word/word.contentcontrol#stylebuiltin-member)
 
-  -
-  [Word.Paragraph.styleBuiltIn](/javascript/api/word/word.paragraph#stylebuiltin-member)
+  - [Word.Paragraph.styleBuiltIn](/javascript/api/word/word.paragraph#stylebuiltin-member)
 
-  -
-  [Word.Range.styleBuiltIn](/javascript/api/word/word.range#stylebuiltin-member)
+  - [Word.Range.styleBuiltIn](/javascript/api/word/word.range#stylebuiltin-member)
 
-  -
-  [Word.Table.styleBuiltIn](/javascript/api/word/word.table#stylebuiltin-member)
+  - [Word.Table.styleBuiltIn](/javascript/api/word/word.table#stylebuiltin-member)
 
   #### Examples
 

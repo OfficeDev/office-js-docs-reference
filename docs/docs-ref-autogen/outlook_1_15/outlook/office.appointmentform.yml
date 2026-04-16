@@ -23,11 +23,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Mailbox.displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#displaynewappointmentform-member)
+  - [Office.Mailbox.displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#displaynewappointmentform-member)
 
-  -
-  [Office.Mailbox.displayNewAppointmentFormAsync](/javascript/api/outlook/office.mailbox#displaynewappointmentformasync-member)
+  - [Office.Mailbox.displayNewAppointmentFormAsync](/javascript/api/outlook/office.mailbox#displaynewappointmentformasync-member)
 
   #### Examples
 

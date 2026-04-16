@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.DropEventData.dataTransfer](/javascript/api/outlook/office.dropeventdata#datatransfer-member)
+  - [Office.DropEventData.dataTransfer](/javascript/api/outlook/office.dropeventdata#datatransfer-member)
 
   #### Examples
 

@@ -22,8 +22,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Office.Mailbox.displayNewMessageForm](/javascript/api/outlook/office.mailbox#displaynewmessageform-member)
+  - [Office.Mailbox.displayNewMessageForm](/javascript/api/outlook/office.mailbox#displaynewmessageform-member)
 
 isPreview: false
 isDeprecated: false

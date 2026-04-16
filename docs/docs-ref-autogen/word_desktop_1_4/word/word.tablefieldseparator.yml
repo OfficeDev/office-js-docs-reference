@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.TableConvertToTextOptions.separator](/javascript/api/word/word.tableconverttotextoptions#separator-member)
+  - [Word.TableConvertToTextOptions.separator](/javascript/api/word/word.tableconverttotextoptions#separator-member)
 
 isPreview: false
 isDeprecated: false

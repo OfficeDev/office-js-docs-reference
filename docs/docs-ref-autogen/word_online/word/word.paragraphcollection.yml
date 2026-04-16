@@ -17,8 +17,7 @@ remarks: >-
 
   - [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member)
 
-  -
-  [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
+  - [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
 
   - [Word.List.paragraphs](/javascript/api/word/word.list#paragraphs-member)
 

@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.Chart.onActivated](/javascript/api/excel/excel.chart#onactivated-member)
+  - [Excel.Chart.onActivated](/javascript/api/excel/excel.chart#onactivated-member)
 
-  -
-  [Excel.ChartCollection.onActivated](/javascript/api/excel/excel.chartcollection#onactivated-member)
+  - [Excel.ChartCollection.onActivated](/javascript/api/excel/excel.chartcollection#onactivated-member)
 
 isPreview: false
 isDeprecated: false

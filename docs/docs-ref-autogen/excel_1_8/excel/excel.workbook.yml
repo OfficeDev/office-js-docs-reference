@@ -18,11 +18,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#workbook-member)
+  - [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#workbook-member)
 
-  -
-  [Excel.SelectionChangedEventArgs.workbook](/javascript/api/excel/excel.selectionchangedeventargs#workbook-member)
+  - [Excel.SelectionChangedEventArgs.workbook](/javascript/api/excel/excel.selectionchangedeventargs#workbook-member)
 
   #### Examples
 

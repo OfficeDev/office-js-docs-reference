@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.TableSort.method](/javascript/api/excel/excel.tablesort#method-member)
+  - [Excel.TableSort.method](/javascript/api/excel/excel.tablesort#method-member)
 
 isPreview: false
 isDeprecated: false

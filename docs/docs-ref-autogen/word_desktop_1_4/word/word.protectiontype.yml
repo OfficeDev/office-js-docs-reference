@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.protectionType](/javascript/api/word/word.document#protectiontype-member)
+  - [Word.Document.protectionType](/javascript/api/word/word.document#protectiontype-member)
 
 isPreview: false
 isDeprecated: false

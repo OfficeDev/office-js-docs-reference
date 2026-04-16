@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.PageSetup.verticalAlignment](/javascript/api/word/word.pagesetup#verticalalignment-member)
+  - [Word.PageSetup.verticalAlignment](/javascript/api/word/word.pagesetup#verticalalignment-member)
 
 isPreview: false
 isDeprecated: false

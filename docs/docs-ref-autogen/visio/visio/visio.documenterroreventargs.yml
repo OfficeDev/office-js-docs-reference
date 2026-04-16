@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Visio.Document.onDocumentError](/javascript/api/visio/visio.document#ondocumenterror-member)
+  - [Visio.Document.onDocumentError](/javascript/api/visio/visio.document#ondocumenterror-member)
 
 isPreview: false
 isDeprecated: false

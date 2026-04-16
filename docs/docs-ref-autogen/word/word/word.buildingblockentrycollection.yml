@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Template.buildingBlockEntries](/javascript/api/word/word.template#buildingblockentries-member)
+  - [Word.Template.buildingBlockEntries](/javascript/api/word/word.template#buildingblockentries-member)
 
 isPreview: false
 isDeprecated: false

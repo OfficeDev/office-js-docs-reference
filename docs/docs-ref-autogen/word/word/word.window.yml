@@ -15,15 +15,13 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.activeWindow](/javascript/api/word/word.document#activewindow-member)
+  - [Word.Document.activeWindow](/javascript/api/word/word.document#activewindow-member)
 
   - [Word.Window.next](/javascript/api/word/word.window#next-member)
 
   - [Word.Window.previous](/javascript/api/word/word.window#previous-member)
 
-  -
-  [Word.WindowCollection.items](/javascript/api/word/word.windowcollection#items-member)
+  - [Word.WindowCollection.items](/javascript/api/word/word.windowcollection#items-member)
 
   #### Examples
 

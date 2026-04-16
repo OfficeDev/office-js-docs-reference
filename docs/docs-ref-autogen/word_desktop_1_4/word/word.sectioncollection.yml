@@ -19,8 +19,7 @@ remarks: >-
 
   - [Word.Range.sections](/javascript/api/word/word.range#sections-member)
 
-  -
-  [Word.Selection.sections](/javascript/api/word/word.selection#sections-member)
+  - [Word.Selection.sections](/javascript/api/word/word.selection#sections-member)
 
   #### Examples
 

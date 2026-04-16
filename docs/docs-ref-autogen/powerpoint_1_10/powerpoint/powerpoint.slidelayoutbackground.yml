@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.SlideLayout.background](/javascript/api/powerpoint/powerpoint.slidelayout#background-member)
+  - [PowerPoint.SlideLayout.background](/javascript/api/powerpoint/powerpoint.slidelayout#background-member)
 
 isPreview: false
 isDeprecated: false

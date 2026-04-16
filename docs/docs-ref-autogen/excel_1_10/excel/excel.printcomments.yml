@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PageLayout.printComments](/javascript/api/excel/excel.pagelayout#printcomments-member)
+  - [Excel.PageLayout.printComments](/javascript/api/excel/excel.pagelayout#printcomments-member)
 
 isPreview: false
 isDeprecated: false

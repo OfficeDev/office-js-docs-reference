@@ -13,23 +13,17 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ContentControlAddedEventArgs.eventType](/javascript/api/word/word.contentcontroladdedeventargs#eventtype-member)
+  - [Word.ContentControlAddedEventArgs.eventType](/javascript/api/word/word.contentcontroladdedeventargs#eventtype-member)
 
-  -
-  [Word.ContentControlDataChangedEventArgs.eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#eventtype-member)
+  - [Word.ContentControlDataChangedEventArgs.eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#eventtype-member)
 
-  -
-  [Word.ContentControlDeletedEventArgs.eventType](/javascript/api/word/word.contentcontroldeletedeventargs#eventtype-member)
+  - [Word.ContentControlDeletedEventArgs.eventType](/javascript/api/word/word.contentcontroldeletedeventargs#eventtype-member)
 
-  -
-  [Word.ContentControlEnteredEventArgs.eventType](/javascript/api/word/word.contentcontrolenteredeventargs#eventtype-member)
+  - [Word.ContentControlEnteredEventArgs.eventType](/javascript/api/word/word.contentcontrolenteredeventargs#eventtype-member)
 
-  -
-  [Word.ContentControlExitedEventArgs.eventType](/javascript/api/word/word.contentcontrolexitedeventargs#eventtype-member)
+  - [Word.ContentControlExitedEventArgs.eventType](/javascript/api/word/word.contentcontrolexitedeventargs#eventtype-member)
 
-  -
-  [Word.ContentControlSelectionChangedEventArgs.eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#eventtype-member)
+  - [Word.ContentControlSelectionChangedEventArgs.eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#eventtype-member)
 
   #### Examples
 

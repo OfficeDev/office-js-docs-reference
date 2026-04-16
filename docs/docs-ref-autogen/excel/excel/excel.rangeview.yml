@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.RangeViewCollection.items](/javascript/api/excel/excel.rangeviewcollection#items-member)
+  - [Excel.RangeViewCollection.items](/javascript/api/excel/excel.rangeviewcollection#items-member)
 
 isPreview: false
 isDeprecated: false

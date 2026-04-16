@@ -12,11 +12,9 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ConditionalFormat.colorScale](/javascript/api/excel/excel.conditionalformat#colorscale-member)
+  - [Excel.ConditionalFormat.colorScale](/javascript/api/excel/excel.conditionalformat#colorscale-member)
 
-  -
-  [Excel.ConditionalFormat.colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#colorscaleornullobject-member)
+  - [Excel.ConditionalFormat.colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#colorscaleornullobject-member)
 
 isPreview: false
 isDeprecated: false

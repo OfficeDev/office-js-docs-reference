@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.TextFrame.orientation](/javascript/api/excel/excel.textframe#orientation-member)
+  - [Excel.TextFrame.orientation](/javascript/api/excel/excel.textframe#orientation-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,8 +14,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.PivotTable.dataHierarchies](/javascript/api/excel/excel.pivottable#datahierarchies-member)
+  - [Excel.PivotTable.dataHierarchies](/javascript/api/excel/excel.pivottable#datahierarchies-member)
 
 isPreview: false
 isDeprecated: false

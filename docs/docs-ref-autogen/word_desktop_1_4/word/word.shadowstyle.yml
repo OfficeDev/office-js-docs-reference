@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.ShadowFormat.style](/javascript/api/word/word.shadowformat#style-member)
+  - [Word.ShadowFormat.style](/javascript/api/word/word.shadowformat#style-member)
 
 isPreview: false
 isDeprecated: false

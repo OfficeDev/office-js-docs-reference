@@ -13,14 +13,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [PowerPoint.SlideBackground.fill](/javascript/api/powerpoint/powerpoint.slidebackground#fill-member)
+  - [PowerPoint.SlideBackground.fill](/javascript/api/powerpoint/powerpoint.slidebackground#fill-member)
 
-  -
-  [PowerPoint.SlideLayoutBackground.fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#fill-member)
+  - [PowerPoint.SlideLayoutBackground.fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#fill-member)
 
-  -
-  [PowerPoint.SlideMasterBackground.fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#fill-member)
+  - [PowerPoint.SlideMasterBackground.fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#fill-member)
 
   #### Examples
 

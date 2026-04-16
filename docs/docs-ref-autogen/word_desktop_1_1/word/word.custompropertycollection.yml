@@ -15,8 +15,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.DocumentProperties.customProperties](/javascript/api/word/word.documentproperties#customproperties-member)
+  - [Word.DocumentProperties.customProperties](/javascript/api/word/word.documentproperties#customproperties-member)
 
   #### Examples
 

@@ -13,14 +13,11 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.Document.grammaticalErrors](/javascript/api/word/word.document#grammaticalerrors-member)
+  - [Word.Document.grammaticalErrors](/javascript/api/word/word.document#grammaticalerrors-member)
 
-  -
-  [Word.Document.spellingErrors](/javascript/api/word/word.document#spellingerrors-member)
+  - [Word.Document.spellingErrors](/javascript/api/word/word.document#spellingerrors-member)
 
-  -
-  [Word.Document.storyRanges](/javascript/api/word/word.document#storyranges-member)
+  - [Word.Document.storyRanges](/javascript/api/word/word.document#storyranges-member)
 
   #### Examples
 

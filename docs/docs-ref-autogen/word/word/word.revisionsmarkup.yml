@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Word.RevisionsFilter.markup](/javascript/api/word/word.revisionsfilter#markup-member)
+  - [Word.RevisionsFilter.markup](/javascript/api/word/word.revisionsfilter#markup-member)
 
 isPreview: false
 isDeprecated: false

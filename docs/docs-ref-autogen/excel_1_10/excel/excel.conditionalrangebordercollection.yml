@@ -12,8 +12,7 @@ remarks: >-
   #### Used by
 
 
-  -
-  [Excel.ConditionalRangeFormat.borders](/javascript/api/excel/excel.conditionalrangeformat#borders-member)
+  - [Excel.ConditionalRangeFormat.borders](/javascript/api/excel/excel.conditionalrangeformat#borders-member)
 
 isPreview: false
 isDeprecated: false
