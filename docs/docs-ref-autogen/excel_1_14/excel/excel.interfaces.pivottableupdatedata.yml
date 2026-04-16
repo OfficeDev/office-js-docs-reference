@@ -21,9 +21,8 @@ properties:
       Specifies if the PivotTable allows the application of multiple
       PivotFilters on a given PivotField in the table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -39,8 +38,8 @@ properties:
       Specifies if the PivotTable allows values in the data body to be edited by
       the user.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -54,8 +53,8 @@ properties:
     fullName: name
     summary: Name of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +70,8 @@ properties:
       Specifies whether the PivotTable refreshes when the workbook opens.
       Corresponds to "Refresh on load" setting in the UI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +85,8 @@ properties:
     fullName: useCustomSortLists
     summary: Specifies if the PivotTable uses custom lists when sorting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

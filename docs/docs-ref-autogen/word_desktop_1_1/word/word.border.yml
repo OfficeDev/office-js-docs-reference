@@ -5,15 +5,15 @@ package: word!
 fullName: Word.Border
 summary: Represents the `Border` object for text, a paragraph, or a table.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.BorderCollection.items](/javascript/api/word/word.bordercollection#items-member)
   \]
 
@@ -68,8 +68,8 @@ properties:
       Specifies the color for the border. Color is specified in ‘\#RRGGBB’
       format or by using the color name.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +98,8 @@ properties:
     fullName: location
     summary: Gets the location of the border.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -119,8 +119,8 @@ properties:
     fullName: type
     summary: Specifies the border type for the border.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -147,8 +147,8 @@ properties:
     fullName: visible
     summary: Specifies whether the border is visible.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -162,8 +162,8 @@ properties:
     fullName: width
     summary: Specifies the width for the border.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -10,8 +10,8 @@ summary: >-
   An array of `AttachmentDetailsCompose` objects is returned by the
   `getAttachmentsAsync` method.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -28,11 +28,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentsasync-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#getattachmentsasync-member)
   \]
 

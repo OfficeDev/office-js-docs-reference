@@ -5,16 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.WindowLoadOptions
 summary: Represents a window in the workbook.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ApplicationLoadOptions.activeWindow](/javascript/api/excel/excel.interfaces.applicationloadoptions#activewindow-member)
-  \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +34,8 @@ properties:
     fullName: activeCell
     summary: Gets the active cell in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -57,8 +49,8 @@ properties:
     fullName: activePane
     summary: Gets the active pane in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +64,8 @@ properties:
     fullName: activeWorksheet
     summary: Gets the active worksheet in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -88,8 +80,8 @@ properties:
     fullName: autoFilterDateGroupingEnabled
     summary: Specifies whether AutoFilter date grouping is enabled in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -103,8 +95,8 @@ properties:
     fullName: enableResize
     summary: Specifies whether resizing is enabled for the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -118,8 +110,8 @@ properties:
     fullName: freezePanes
     summary: Specifies whether panes are frozen in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +125,8 @@ properties:
     fullName: height
     summary: Specifies the height of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -148,8 +140,8 @@ properties:
     fullName: index
     summary: Gets the index of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -163,8 +155,8 @@ properties:
     fullName: isVisible
     summary: Specifies whether the window is visible.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -180,8 +172,8 @@ properties:
       Specifies the distance, in points, from the left edge of the computer
       screen to the left edge of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -195,8 +187,8 @@ properties:
     fullName: name
     summary: Specifies the name of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -210,8 +202,8 @@ properties:
     fullName: scrollColumn
     summary: Specifies the scroll column of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -225,8 +217,8 @@ properties:
     fullName: scrollRow
     summary: Specifies the scroll row of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -240,8 +232,8 @@ properties:
     fullName: showFormulas
     summary: Specifies whether formulas are shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -255,8 +247,8 @@ properties:
     fullName: showGridlines
     summary: Specifies whether gridlines are shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -270,8 +262,8 @@ properties:
     fullName: showHeadings
     summary: Specifies whether headings are shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -285,8 +277,8 @@ properties:
     fullName: showHorizontalScrollBar
     summary: Specifies whether the horizontal scroll bar is shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -300,8 +292,8 @@ properties:
     fullName: showOutline
     summary: Specifies whether outline is shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -318,8 +310,8 @@ properties:
       window is using right-to-left layout, false means that the window is using
       left-to-right layout.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -333,8 +325,8 @@ properties:
     fullName: showRuler
     summary: Specifies whether the ruler is shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -348,8 +340,8 @@ properties:
     fullName: showVerticalScrollBar
     summary: Specifies whether the vertical scroll bar is shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -363,8 +355,8 @@ properties:
     fullName: showWhitespace
     summary: Specifies whether whitespace is shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -378,8 +370,8 @@ properties:
     fullName: showWorkbookTabs
     summary: Specifies whether workbook tabs are shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -393,8 +385,8 @@ properties:
     fullName: showZeros
     summary: Specifies whether zeroes are shown in the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -408,8 +400,8 @@ properties:
     fullName: split
     summary: Specifies the split state of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -423,8 +415,8 @@ properties:
     fullName: splitColumn
     summary: Specifies the split column of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -438,8 +430,8 @@ properties:
     fullName: splitHorizontal
     summary: Specifies the horizontal split of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -453,8 +445,8 @@ properties:
     fullName: splitRow
     summary: Specifies the split row of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -468,8 +460,8 @@ properties:
     fullName: splitVertical
     summary: Specifies the vertical split of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -483,8 +475,8 @@ properties:
     fullName: tabRatio
     summary: Specifies the tab ratio of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -501,8 +493,8 @@ properties:
       top edge of the usable area (below the menus, any toolbars docked at the
       top, and the formula bar).
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -516,8 +508,8 @@ properties:
     fullName: type
     summary: Specifies the type of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -531,8 +523,8 @@ properties:
     fullName: usableHeight
     summary: Gets the usable height of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -546,8 +538,8 @@ properties:
     fullName: usableWidth
     summary: Gets the usable width of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -561,8 +553,8 @@ properties:
     fullName: view
     summary: Specifies the view of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -576,8 +568,8 @@ properties:
     fullName: visibleRange
     summary: Gets the visible range of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -591,8 +583,8 @@ properties:
     fullName: width
     summary: Specifies the display width of the window.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -606,8 +598,8 @@ properties:
     fullName: windowNumber
     summary: Gets the window number.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -621,8 +613,8 @@ properties:
     fullName: windowState
     summary: Specifies the window state.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -638,8 +630,8 @@ properties:
       Specifies an integer value that represents the display size of the window.
       It can be set to a percentage between 10 and 400.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

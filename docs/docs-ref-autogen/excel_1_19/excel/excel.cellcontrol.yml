@@ -5,24 +5,15 @@ package: excel!
 fullName: Excel.CellControl
 summary: Represents an interactable control inside of a cell.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.RangeData.control](/javascript/api/excel/excel.interfaces.rangedata#control-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeUpdateData.control](/javascript/api/excel/excel.interfaces.rangeupdatedata#control-member)
-  \]
-
-  - \[ [Excel.Range.control](/javascript/api/excel/excel.range#control-member)
-  \]
+  - [Excel.Range.control](/javascript/api/excel/excel.range#control-member) \]
 
 
 

@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.DocumentTaskSchedule
 summary: Represents information about a task's schedule.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DocumentTask.startAndDueDateTime](/javascript/api/excel/excel.documenttask#startandduedatetime-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskData.startAndDueDateTime](/javascript/api/excel/excel.interfaces.documenttaskdata#startandduedatetime-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskUpdateData.startAndDueDateTime](/javascript/api/excel/excel.interfaces.documenttaskupdatedata#startandduedatetime-member)
   \]
 
 isPreview: true
@@ -34,9 +26,8 @@ properties:
     fullName: dueDateTime
     summary: Gets the date and time that the task is due. All dates are in UTC.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -50,9 +41,8 @@ properties:
     fullName: startDateTime
     summary: Gets the date and time that the task should start. All dates are in UTC.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

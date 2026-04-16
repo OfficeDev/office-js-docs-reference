@@ -5,25 +5,23 @@ package: visio!
 fullName: Visio.ShapeCollection
 summary: Represents the Shape Collection.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[ [Visio.Page.allShapes](/javascript/api/visio/visio.page#allshapes-member)
-  \]
+  - [Visio.Page.allShapes](/javascript/api/visio/visio.page#allshapes-member) \]
 
-  - \[ [Visio.Page.shapes](/javascript/api/visio/visio.page#shapes-member) \]
+  - [Visio.Page.shapes](/javascript/api/visio/visio.page#shapes-member) \]
 
-  - \[
+  -
   [Visio.Selection.shapes](/javascript/api/visio/visio.selection#shapes-member)
   \]
 
-  - \[
-  [Visio.Shape.subShapes](/javascript/api/visio/visio.shape#subshapes-member) \]
+  - [Visio.Shape.subShapes](/javascript/api/visio/visio.shape#subshapes-member)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -64,9 +62,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of Shapes in the collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -102,9 +99,8 @@ methods:
     fullName: getItem(key)
     summary: Gets a Shape using its key (name or Index).
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

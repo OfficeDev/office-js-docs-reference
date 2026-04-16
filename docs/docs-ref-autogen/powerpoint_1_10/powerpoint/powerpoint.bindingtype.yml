@@ -5,21 +5,16 @@ package: powerpoint!
 fullName: PowerPoint.BindingType
 summary: Represents the possible binding types.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Binding.type](/javascript/api/powerpoint/powerpoint.binding#type-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.BindingData.type](/javascript/api/powerpoint/powerpoint.interfaces.bindingdata#type-member)
   \]
 
   #### Examples
@@ -74,7 +69,6 @@ fields:
       Represents a shape binding.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Shape"'

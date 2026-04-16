@@ -5,15 +5,15 @@ package: word!
 fullName: Word.FontBias
 summary: Specifies the font bias to use when formatting East Asian text.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.SelectionInsertSymbolOptions.bias](/javascript/api/word/word.selectioninsertsymboloptions#bias-member)
   \]
 
@@ -58,8 +58,8 @@ fields:
       Uses the font bias for Far East text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FarEast"'
   - name: noSpecified
     uid: word!Word.FontBias.noSpecified:member
@@ -68,8 +68,8 @@ fields:
       No font bias specified.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NoSpecified"'
   - name: standard
     uid: word!Word.FontBias.standard:member
@@ -78,6 +78,6 @@ fields:
       Uses the default font bias.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Standard"'

@@ -7,8 +7,8 @@ summary: >-
   Provides configuration options for the
   [XmlNode.setValidationError](xref:word!Word.XmlNode:class) method.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -22,8 +22,8 @@ properties:
       If provided, specifies whether the validation error should be cleared
       automatically. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -37,8 +37,8 @@ properties:
     fullName: errorText
     summary: If provided, specifies the error text to display for the validation error.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

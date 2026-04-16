@@ -7,38 +7,38 @@ summary: >-
   A container for the visible content on a page. A Paragraph can contain any one
   ParagraphType type of content.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Image.paragraph](/javascript/api/onenote/onenote.image#paragraph-member)
   \]
 
-  - \[
+  -
   [OneNote.InkWord.paragraph](/javascript/api/onenote/onenote.inkword#paragraph-member)
   \]
 
-  - \[
+  -
   [OneNote.Paragraph.parentParagraph](/javascript/api/onenote/onenote.paragraph#parentparagraph-member)
   \]
 
-  - \[
+  -
   [OneNote.Paragraph.parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#parentparagraphornull-member)
   \]
 
-  - \[
+  -
   [OneNote.ParagraphCollection.items](/javascript/api/onenote/onenote.paragraphcollection#items-member)
   \]
 
-  - \[
+  -
   [OneNote.RichText.paragraph](/javascript/api/onenote/onenote.richtext#paragraph-member)
   \]
 
-  - \[
+  -
   [OneNote.Table.paragraph](/javascript/api/onenote/onenote.table#paragraph-member)
   \]
 
@@ -67,9 +67,8 @@ properties:
     fullName: id
     summary: Gets the ID of the Paragraph object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +84,8 @@ properties:
       Gets the Image object in the Paragraph. Throws an exception if
       ParagraphType is not Image.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -103,9 +101,8 @@ properties:
       Gets the Ink collection in the Paragraph. Throws an exception if
       ParagraphType is not Ink.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +116,8 @@ properties:
     fullName: outline
     summary: Gets the Outline object that contains the Paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -135,9 +131,8 @@ properties:
     fullName: paragraphs
     summary: The collection of paragraphs under this paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -153,9 +148,8 @@ properties:
       Gets the parent paragraph object. Throws if a parent paragraph does not
       exist.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -171,9 +165,8 @@ properties:
       Gets the parent paragraph object. Returns null if a parent paragraph
       doesn't exist.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -189,9 +182,8 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If
       parent isn't a TableCell, throws ItemNotFound.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -207,9 +199,8 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If
       parent isn't a TableCell, returns null.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -225,9 +216,8 @@ properties:
       Gets the RichText object in the Paragraph. Throws an exception if
       ParagraphType is not RichText. Read-only
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -243,9 +233,8 @@ properties:
       Gets the Table object in the Paragraph. Throws an exception if
       ParagraphType isn't Table.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -259,9 +248,8 @@ properties:
     fullName: type
     summary: Gets the type of the Paragraph object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -280,9 +268,8 @@ methods:
     fullName: addNoteTag(type, status)
     summary: Add NoteTag to the paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -306,9 +293,8 @@ methods:
     fullName: addNoteTag(type, status)
     summary: Add NoteTag to the paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -340,9 +326,8 @@ methods:
     fullName: delete()
     summary: Deletes the paragraph
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -390,9 +375,8 @@ methods:
     fullName: getParagraphInfo()
     summary: Get list information of paragraph
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -409,9 +393,8 @@ methods:
     fullName: insertHtmlAsSibling(insertLocation, html)
     summary: Inserts the specified HTML content
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -472,9 +455,8 @@ methods:
     fullName: insertHtmlAsSibling(insertLocation, html)
     summary: Inserts the specified HTML content
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -502,9 +484,8 @@ methods:
     fullName: insertImageAsSibling(insertLocation, base64EncodedImage, width, height)
     summary: Inserts the image at the specified insert location..
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -572,9 +553,8 @@ methods:
     fullName: insertImageAsSibling(insertLocation, base64EncodedImage, width, height)
     summary: Inserts the image at the specified insert location.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -609,9 +589,8 @@ methods:
     fullName: insertRichTextAsSibling(insertLocation, paragraphText)
     summary: Inserts the paragraph text at the specifiec insert location.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -667,9 +646,8 @@ methods:
     fullName: insertRichTextAsSibling(insertLocation, paragraphText)
     summary: Inserts the paragraph text at the specifiec insert location.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -695,9 +673,8 @@ methods:
       Adds a table with the specified number of rows and columns before or after
       the current paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -731,9 +708,8 @@ methods:
       Adds a table with the specified number of rows and columns before or after
       the current paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.FormulaChangedEventDetail
 summary: Provides information about a changed formula during a formula changed event.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.WorksheetFormulaChangedEventArgs.formulaDetails](/javascript/api/excel/excel.worksheetformulachangedeventargs#formuladetails-member)
   \]
 
@@ -26,9 +26,8 @@ properties:
     fullName: cellAddress
     summary: The address of the cell that contains the changed formula.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -42,9 +41,8 @@ properties:
     fullName: previousFormula
     summary: Represents the previous formula, before it was changed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

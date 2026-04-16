@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.DataVisualizerDiagramResultType
 summary: Result of Data Visualizer Diagram operations.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +18,8 @@ fields:
       Conflict error in operation.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"ConflictError"'
   - name: success
     uid: visio!Visio.DataVisualizerDiagramResultType.success:member
@@ -30,9 +28,8 @@ fields:
       Operation is successful.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Success"'
   - name: unexpected
     uid: visio!Visio.DataVisualizerDiagramResultType.unexpected:member
@@ -41,9 +38,8 @@ fields:
       Unexpected error during operation.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Unexpected"'
   - name: validationError
     uid: visio!Visio.DataVisualizerDiagramResultType.validationError:member
@@ -52,7 +48,6 @@ fields:
       Validation error in operation.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"ValidationError"'

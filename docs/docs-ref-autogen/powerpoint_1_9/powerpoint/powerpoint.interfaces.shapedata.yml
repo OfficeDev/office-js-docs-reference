@@ -4,25 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.ShapeData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.ShapeCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeScopedCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeScopedCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +18,8 @@ properties:
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +33,8 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +50,8 @@ properties:
       The distance, in points, from the left side of the shape to the left side
       of the slide.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +72,8 @@ properties:
 
       - A level greater than 1 indicates the shape is a nested group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -109,9 +87,8 @@ properties:
     fullName: name
     summary: Specifies the name of this shape.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -127,9 +104,8 @@ properties:
       The distance, in points, from the top edge of the shape to the top edge of
       the slide.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -146,9 +122,8 @@ properties:
       [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
       details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -172,9 +147,8 @@ properties:
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +166,8 @@ properties:
       slide also has a unique z-order stack, so two shapes on separate slides
       could have the same z-order number.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

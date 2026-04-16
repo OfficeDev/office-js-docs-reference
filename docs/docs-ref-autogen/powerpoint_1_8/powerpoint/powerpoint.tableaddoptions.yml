@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.TableAddOptions
 summary: Represents the available options when adding a table.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -47,9 +46,8 @@ properties:
       length must be equal to the number of columns in the table. Specify an
       empty object for columns that should use the default formatting.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -96,9 +94,8 @@ properties:
       PowerPoint sets it to the nearest possible value. For example, a height of
       400 for 3 rows may result in an actual height of 399.9999.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -140,9 +137,8 @@ properties:
       left side of the slide. The table is centered horizontally when this
       parameter isn't provided.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -158,9 +154,8 @@ properties:
       If specified, represents an rectangular area where multiple cells appear
       as a single cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -208,9 +203,8 @@ properties:
       length must be equal to the number of rows in the table. Specify an empty
       object for rows that should use the default formatting.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -257,9 +251,8 @@ properties:
       properties specified, which will be applied to the entire merged area. For
       the other cells in the merged area, an empty object should be provided.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -324,9 +317,8 @@ properties:
       top edge of the slide. A default value is used when this parameter isn't
       provided.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -356,9 +348,8 @@ properties:
       To provide a plain appearance for the table, set this property to an empty
       object and don't specify `specificCellProperties`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -414,9 +405,8 @@ properties:
       each merged area can have a non-empty string value. The other cells in the
       merged area must be an empty string.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -466,9 +456,8 @@ properties:
       PowerPoint sets it to the nearest possible value. For example, a width of
       400 for 3 columns may result in an actual width of 399.9999.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

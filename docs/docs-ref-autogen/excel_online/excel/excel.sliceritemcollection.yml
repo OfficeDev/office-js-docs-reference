@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.SlicerItemCollection
 summary: Represents a collection of all the slicer item objects in the slicer.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Slicer.slicerItems](/javascript/api/excel/excel.slicer#sliceritems-member)
   \]
 
@@ -55,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of slicer items in the slicer.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +71,8 @@ methods:
     fullName: getItem(key)
     summary: Gets a slicer item object using its key or name.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +91,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a slicer item based on its position in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -120,9 +117,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

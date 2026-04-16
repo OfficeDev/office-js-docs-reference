@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.TableStyleData
 summary: >-
   An interface describing the data returned by calling `tableStyle.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableData.tableStyle](/javascript/api/excel/excel.interfaces.tabledata#tablestyle-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.tablestylecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablestylecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.tableStyles](/javascript/api/excel/excel.interfaces.workbookdata#tablestyles-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +18,8 @@ properties:
     fullName: name
     summary: Specifies the name of the table style.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +33,8 @@ properties:
     fullName: readOnly
     summary: Specifies if this `TableStyle` object is read-only.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

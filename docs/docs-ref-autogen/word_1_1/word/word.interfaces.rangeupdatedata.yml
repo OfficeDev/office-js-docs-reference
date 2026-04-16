@@ -20,8 +20,8 @@ properties:
       Gets the text format of the range. Use this to get and set font name,
       size, color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -38,8 +38,8 @@ properties:
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

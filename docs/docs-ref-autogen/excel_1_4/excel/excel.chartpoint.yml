@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.ChartPoint
 summary: Represents a point of a series in a chart.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartPointsCollection.items](/javascript/api/excel/excel.chartpointscollection#items-member)
   \]
 
@@ -90,8 +90,8 @@ properties:
     fullName: format
     summary: Encapsulates the format properties chart point.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -105,8 +105,8 @@ properties:
     fullName: value
     summary: Returns the value of a chart point.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.CustomConditionalFormat
 summary: Represents a custom conditional format type.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalFormat.custom](/javascript/api/excel/excel.conditionalformat#custom-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalFormat.customOrNullObject](/javascript/api/excel/excel.conditionalformat#customornullobject-member)
   \]
 
@@ -47,8 +47,8 @@ properties:
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -84,8 +84,8 @@ properties:
     fullName: rule
     summary: Specifies the `Rule` object on this conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

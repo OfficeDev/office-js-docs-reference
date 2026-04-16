@@ -6,21 +6,7 @@ fullName: Word.Interfaces.BorderData
 summary: >-
   An interface describing the data returned by calling `border.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BorderCollectionData.items](/javascript/api/word/word.interfaces.bordercollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BorderCollectionUpdateData.items](/javascript/api/word/word.interfaces.bordercollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.StyleData.borders](/javascript/api/word/word.interfaces.styledata#borders-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Specifies the color for the border. Color is specified in ‘\#RRGGBB’
       format or by using the color name.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,8 +35,8 @@ properties:
     fullName: location
     summary: Gets the location of the border.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +55,8 @@ properties:
     fullName: type
     summary: Specifies the border type for the border.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +83,8 @@ properties:
     fullName: visible
     summary: Specifies whether the border is visible.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -112,8 +98,8 @@ properties:
     fullName: width
     summary: Specifies the width for the border.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

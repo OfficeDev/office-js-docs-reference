@@ -5,24 +5,16 @@ package: excel!
 fullName: Excel.AggregationFunction
 summary: Aggregation function for the `DataPivotHierarchy`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataPivotHierarchy.summarizeBy](/javascript/api/excel/excel.datapivothierarchy#summarizeby-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataPivotHierarchyData.summarizeBy](/javascript/api/excel/excel.interfaces.datapivothierarchydata#summarizeby-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy](/javascript/api/excel/excel.interfaces.datapivothierarchyupdatedata#summarizeby-member)
   \]
 
   #### Examples
@@ -59,8 +51,8 @@ fields:
       Excel will automatically select the aggregation based on the data items.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: average
     uid: excel!Excel.AggregationFunction.average:member
@@ -70,8 +62,8 @@ fields:
       function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Average"'
   - name: count
     uid: excel!Excel.AggregationFunction.count:member
@@ -81,8 +73,8 @@ fields:
       function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Count"'
   - name: countNumbers
     uid: excel!Excel.AggregationFunction.countNumbers:member
@@ -92,8 +84,8 @@ fields:
       function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CountNumbers"'
   - name: max
     uid: excel!Excel.AggregationFunction.max:member
@@ -103,8 +95,8 @@ fields:
       function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Max"'
   - name: min
     uid: excel!Excel.AggregationFunction.min:member
@@ -114,8 +106,8 @@ fields:
       function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Min"'
   - name: product
     uid: excel!Excel.AggregationFunction.product:member
@@ -125,8 +117,8 @@ fields:
       function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Product"'
   - name: standardDeviation
     uid: excel!Excel.AggregationFunction.standardDeviation:member
@@ -136,8 +128,8 @@ fields:
       STDEV function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StandardDeviation"'
   - name: standardDeviationP
     uid: excel!Excel.AggregationFunction.standardDeviationP:member
@@ -147,8 +139,8 @@ fields:
       STDEVP function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StandardDeviationP"'
   - name: sum
     uid: excel!Excel.AggregationFunction.sum:member
@@ -157,8 +149,8 @@ fields:
       Aggregate using the sum of the data, equivalent to the SUM function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Sum"'
   - name: unknown
     uid: excel!Excel.AggregationFunction.unknown:member
@@ -167,8 +159,8 @@ fields:
       Aggregation function is unknown or unsupported.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'
   - name: variance
     uid: excel!Excel.AggregationFunction.variance:member
@@ -177,8 +169,8 @@ fields:
       Aggregate using the variance of the data, equivalent to the VAR function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Variance"'
   - name: varianceP
     uid: excel!Excel.AggregationFunction.varianceP:member
@@ -187,6 +179,6 @@ fields:
       Aggregate using the variance of the data, equivalent to the VARP function.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"VarianceP"'

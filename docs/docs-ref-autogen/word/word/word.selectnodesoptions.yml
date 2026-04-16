@@ -8,8 +8,8 @@ summary: >-
   [XmlNode.selectNodes](xref:word!Word.XmlNode:class) and
   [Document.selectNodes](xref:word!Word.Document:class) methods.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -23,8 +23,8 @@ properties:
       If provided, specifies whether to skip text nodes in the search. The
       default value is `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -40,8 +40,8 @@ properties:
       If provided, specifies the prefix mapping for the XPath expression. The
       default value is "" (empty string).
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

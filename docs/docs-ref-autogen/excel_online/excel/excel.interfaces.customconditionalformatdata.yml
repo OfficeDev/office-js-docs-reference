@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.CustomConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `customConditionalFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatData.custom](/javascript/api/excel/excel.interfaces.conditionalformatdata#custom-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatData.customOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatdata#customornullobject-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +20,8 @@ properties:
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +37,8 @@ properties:
     fullName: rule
     summary: Specifies the `Rule` object on this conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

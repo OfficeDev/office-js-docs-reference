@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ShapeTextVerticalAlignment
 summary: Specifies the vertical alignment for the text frame in a shape.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TextFrameData.verticalAlignment](/javascript/api/excel/excel.interfaces.textframedata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TextFrameUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.textframeupdatedata#verticalalignment-member)
-  \]
-
-  - \[
+  -
   [Excel.TextFrame.verticalAlignment](/javascript/api/excel/excel.textframe#verticalalignment-member)
   \]
 
@@ -31,34 +23,34 @@ fields:
     uid: excel!Excel.ShapeTextVerticalAlignment.bottom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Bottom"'
   - name: distributed
     uid: excel!Excel.ShapeTextVerticalAlignment.distributed:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Distributed"'
   - name: justified
     uid: excel!Excel.ShapeTextVerticalAlignment.justified:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Justified"'
   - name: middle
     uid: excel!Excel.ShapeTextVerticalAlignment.middle:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Middle"'
   - name: top
     uid: excel!Excel.ShapeTextVerticalAlignment.top:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Top"'

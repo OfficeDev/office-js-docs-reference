@@ -5,151 +5,71 @@ package: excel!
 fullName: Excel.CellValue
 summary: Represents the value in a cell.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ArrayCellValue.elements](/javascript/api/excel/excel.arraycellvalue#elements-member)
   \]
 
-  - \[
+  -
   [Excel.ChangedEventDetail.valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#valueasjsonafter-member)
   \]
 
-  - \[
+  -
   [Excel.ChangedEventDetail.valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#valueasjsonbefore-member)
   \]
 
-  - \[
-  [Excel.Interfaces.NamedItemArrayValuesData.valuesAsJson](/javascript/api/excel/excel.interfaces.nameditemarrayvaluesdata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NamedItemArrayValuesData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.nameditemarrayvaluesdata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NamedItemData.valueAsJson](/javascript/api/excel/excel.interfaces.nameditemdata#valueasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NamedItemData.valueAsJsonLocal](/javascript/api/excel/excel.interfaces.nameditemdata#valueasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeData.valuesAsJson](/javascript/api/excel/excel.interfaces.rangedata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.rangedata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeUpdateData.valuesAsJson](/javascript/api/excel/excel.interfaces.rangeupdatedata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeUpdateData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.rangeupdatedata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeViewData.valuesAsJson](/javascript/api/excel/excel.interfaces.rangeviewdata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeViewData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.rangeviewdata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeViewUpdateData.valuesAsJson](/javascript/api/excel/excel.interfaces.rangeviewupdatedata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeViewUpdateData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.rangeviewupdatedata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableColumnData.valuesAsJson](/javascript/api/excel/excel.interfaces.tablecolumndata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableColumnData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.tablecolumndata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableColumnUpdateData.valuesAsJson](/javascript/api/excel/excel.interfaces.tablecolumnupdatedata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableColumnUpdateData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.tablecolumnupdatedata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableRowData.valuesAsJson](/javascript/api/excel/excel.interfaces.tablerowdata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableRowData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.tablerowdata#valuesasjsonlocal-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableRowUpdateData.valuesAsJson](/javascript/api/excel/excel.interfaces.tablerowupdatedata#valuesasjson-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableRowUpdateData.valuesAsJsonLocal](/javascript/api/excel/excel.interfaces.tablerowupdatedata#valuesasjsonlocal-member)
-  \]
-
-  - \[
+  -
   [Excel.NamedItem.valueAsJson](/javascript/api/excel/excel.nameditem#valueasjson-member)
   \]
 
-  - \[
+  -
   [Excel.NamedItem.valueAsJsonLocal](/javascript/api/excel/excel.nameditem#valueasjsonlocal-member)
   \]
 
-  - \[
+  -
   [Excel.NamedItemArrayValues.valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#valuesasjson-member)
   \]
 
-  - \[
+  -
   [Excel.NamedItemArrayValues.valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#valuesasjsonlocal-member)
   \]
 
-  - \[
+  -
   [Excel.Range.valuesAsJson](/javascript/api/excel/excel.range#valuesasjson-member)
   \]
 
-  - \[
+  -
   [Excel.Range.valuesAsJsonLocal](/javascript/api/excel/excel.range#valuesasjsonlocal-member)
   \]
 
-  - \[
+  -
   [Excel.RangeView.valuesAsJson](/javascript/api/excel/excel.rangeview#valuesasjson-member)
   \]
 
-  - \[
+  -
   [Excel.RangeView.valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#valuesasjsonlocal-member)
   \]
 
-  - \[
+  -
   [Excel.TableColumn.valuesAsJson](/javascript/api/excel/excel.tablecolumn#valuesasjson-member)
   \]
 
-  - \[
+  -
   [Excel.TableColumn.valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#valuesasjsonlocal-member)
   \]
 
-  - \[
+  -
   [Excel.TableRow.valuesAsJson](/javascript/api/excel/excel.tablerow#valuesasjson-member)
   \]
 
-  - \[
+  -
   [Excel.TableRow.valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#valuesasjsonlocal-member)
   \]
 

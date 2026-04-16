@@ -19,9 +19,8 @@ properties:
     fullName: author
     summary: The author of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +35,8 @@ properties:
     fullName: category
     summary: The category of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +53,8 @@ properties:
       The Comments field in the metadata of the presentation. These have no
       connection to comments made in slides.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +69,8 @@ properties:
     fullName: company
     summary: The company of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +85,8 @@ properties:
     fullName: keywords
     summary: The keywords of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +101,8 @@ properties:
     fullName: manager
     summary: The manager of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +117,8 @@ properties:
     fullName: revisionNumber
     summary: The revision number of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +133,8 @@ properties:
     fullName: subject
     summary: The subject of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +148,8 @@ properties:
     fullName: title
     summary: The title of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

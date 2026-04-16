@@ -10,8 +10,9 @@ summary: >-
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!--
   -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
 
   #### Examples
 
@@ -46,8 +47,8 @@ properties:
       Specifies the range reference in A1-style. Address value contains the
       sheet reference (e.g., "Sheet1!A1:B4").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -63,8 +64,8 @@ properties:
       Represents the range reference for the specified range in the language of
       the user.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +81,8 @@ properties:
       Specifies the number of cells in the range. This API will return -1 if the
       cell count exceeds 2^31-1 (2,147,483,647).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +96,8 @@ properties:
     fullName: columnCount
     summary: Specifies the total number of columns in the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -114,8 +115,8 @@ properties:
       in the range are hidden. Value is `null` when some columns in a range are
       hidden and other columns in the same range are not hidden.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -129,8 +130,8 @@ properties:
     fullName: columnIndex
     summary: Specifies the column number of the first cell in the range. Zero-indexed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -161,8 +162,8 @@ properties:
       Returns a format object, encapsulating the range's font, fill, borders,
       alignment, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -178,8 +179,8 @@ properties:
       Represents the formula in A1-style notation. If a cell has no formula, its
       value is returned instead.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -197,8 +198,8 @@ properties:
       would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
       value is returned instead.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -214,8 +215,8 @@ properties:
       Represents the formula in R1C1-style notation. If a cell has no formula,
       its value is returned instead.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -233,8 +234,8 @@ properties:
       the range are hidden. Value is `null` when some cells in a range are
       hidden and other cells in the same range are not hidden.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -252,8 +253,8 @@ properties:
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -294,8 +295,8 @@ properties:
     fullName: rowCount
     summary: Returns the total number of rows in the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -313,8 +314,8 @@ properties:
       range are hidden. Value is `null` when some rows in a range are hidden and
       other rows in the same range are not hidden.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -328,8 +329,8 @@ properties:
     fullName: rowIndex
     summary: Returns the row number of the first cell in the range. Zero-indexed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -343,8 +344,8 @@ properties:
     fullName: sort
     summary: Represents the range sort of the current range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -398,8 +399,8 @@ properties:
       cell width. The number sign (\#) substitution that happens in the Excel UI
       will not affect the text value returned by the API.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -421,8 +422,8 @@ properties:
       are stored as dates, use a locale-aware API like `formulasLocal` or use a
       locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -458,8 +459,8 @@ properties:
     fullName: valueTypes
     summary: Specifies the type of data in each cell.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -473,8 +474,8 @@ properties:
     fullName: worksheet
     summary: The worksheet containing the current range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -489,8 +490,8 @@ methods:
     fullName: clear(applyTo)
     summary: Clear range values and formatting, such as fill and border.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -529,8 +530,8 @@ methods:
     fullName: clear(applyTo)
     summary: Clear range values and formatting, such as fill and border.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -555,8 +556,8 @@ methods:
     fullName: delete(shift)
     summary: Deletes the cells associated with the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -593,8 +594,8 @@ methods:
     fullName: delete(shift)
     summary: Deletes the cells associated with the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -617,8 +618,8 @@ methods:
       Gets the smallest range object that encompasses the given ranges. For
       example, the `GetBoundingRect` of "B2:C5" and "D10:E15" is "B2:E15".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -660,8 +661,8 @@ methods:
       as it stays within the worksheet grid. The returned cell is located
       relative to the top left cell of the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -703,8 +704,8 @@ methods:
     fullName: getColumn(column)
     summary: Gets a column contained in the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -743,8 +744,8 @@ methods:
       Gets a certain number of columns to the right of the current `Range`
       object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -769,8 +770,8 @@ methods:
       Gets a certain number of columns to the left of the current `Range`
       object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -796,8 +797,8 @@ methods:
       example, if the current range represents cells "B4:E11", its
       `getEntireColumn` is a range that represents columns "B:E").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -839,8 +840,8 @@ methods:
       if the current range represents cells "B4:E11", its `GetEntireRow` is a
       range that represents rows "4:11").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -882,8 +883,8 @@ methods:
       Gets the range object that represents the rectangular intersection of the
       given ranges.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -925,8 +926,8 @@ methods:
       Gets the last cell within the range. For example, the last cell of "B2:D5"
       is "D5".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -961,8 +962,8 @@ methods:
       Gets the last column within the range. For example, the last column of
       "B2:D5" is "D2:D5".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -997,8 +998,8 @@ methods:
       Gets the last row within the range. For example, the last row of "B2:D5"
       is "B5:D5".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1035,8 +1036,8 @@ methods:
       resulting range is forced outside the bounds of the worksheet grid, an
       error will be thrown.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1086,8 +1087,8 @@ methods:
       bottom-right corner expanded (or contracted) by some number of rows and
       columns.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1115,8 +1116,8 @@ methods:
     fullName: getRow(row)
     summary: Gets a row contained in the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1153,8 +1154,8 @@ methods:
     fullName: getRowsAbove(count)
     summary: Gets a certain number of rows above the current `Range` object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1177,8 +1178,8 @@ methods:
     fullName: getRowsBelow(count)
     summary: Gets a certain number of rows below the current `Range` object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1203,8 +1204,8 @@ methods:
       Returns the used range of the given range object. If there are no used
       cells within the range, this function will throw an `ItemNotFound` error.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1292,8 +1293,8 @@ methods:
     fullName: getVisibleView()
     summary: Represents the visible rows of the current range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1311,8 +1312,8 @@ methods:
       range, and shifts the other cells to make space. Returns a new `Range`
       object at the now blank space.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1352,8 +1353,8 @@ methods:
       range, and shifts the other cells to make space. Returns a new `Range`
       object at the now blank space.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1465,8 +1466,8 @@ methods:
     fullName: merge(across)
     summary: Merge the range cells into one region in the worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1515,8 +1516,8 @@ methods:
     fullName: select()
     summary: Selects the specified range in the Excel UI.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -1668,8 +1669,8 @@ methods:
     fullName: unmerge()
     summary: Unmerge the range cells into separate cells.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

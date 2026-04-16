@@ -7,32 +7,8 @@ summary: >-
   Represents the `AutoFilter` object. AutoFilter turns the values in Excel
   column into specific filters based on the cell contents.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableCollectionLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#autofilter-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.tableloadoptions#autofilter-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#autofilter-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.worksheetcollectionloadoptions#autofilter-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetLoadOptions.autoFilter](/javascript/api/excel/excel.interfaces.worksheetloadoptions#autofilter-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -60,8 +36,8 @@ properties:
     fullName: criteria
     summary: An array that holds all the filter criteria in the autofiltered range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +51,8 @@ properties:
     fullName: enabled
     summary: Specifies if the AutoFilter is enabled.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -90,8 +66,8 @@ properties:
     fullName: isDataFiltered
     summary: Specifies if the AutoFilter has filter criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

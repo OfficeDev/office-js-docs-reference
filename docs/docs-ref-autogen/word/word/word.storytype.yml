@@ -5,33 +5,20 @@ package: word!
 fullName: Word.StoryType
 summary: Specifies the type of story in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Bookmark.storyType](/javascript/api/word/word.bookmark#storytype-member)
   \]
 
-  - \[
-  [Word.Interfaces.BookmarkData.storyType](/javascript/api/word/word.interfaces.bookmarkdata#storytype-member)
-  \]
+  - [Word.Range.storyType](/javascript/api/word/word.range#storytype-member) \]
 
-  - \[
-  [Word.Interfaces.RangeData.storyType](/javascript/api/word/word.interfaces.rangedata#storytype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SelectionData.storyType](/javascript/api/word/word.interfaces.selectiondata#storytype-member)
-  \]
-
-  - \[ [Word.Range.storyType](/javascript/api/word/word.range#storytype-member)
-  \]
-
-  - \[
+  -
   [Word.Selection.storyType](/javascript/api/word/word.selection#storytype-member)
   \]
 
@@ -45,8 +32,8 @@ fields:
       Comments story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Comments"'
   - name: endnoteContinuationNotice
     uid: word!Word.StoryType.endnoteContinuationNotice:member
@@ -55,8 +42,8 @@ fields:
       Endnote continuation notice story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteContinuationNotice"'
   - name: endnoteContinuationSeparator
     uid: word!Word.StoryType.endnoteContinuationSeparator:member
@@ -65,8 +52,8 @@ fields:
       Endnote continuation separator story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteContinuationSeparator"'
   - name: endnotes
     uid: word!Word.StoryType.endnotes:member
@@ -75,8 +62,8 @@ fields:
       Endnotes story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Endnotes"'
   - name: endnoteSeparator
     uid: word!Word.StoryType.endnoteSeparator:member
@@ -85,8 +72,8 @@ fields:
       Endnote separator story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteSeparator"'
   - name: evenPagesFooter
     uid: word!Word.StoryType.evenPagesFooter:member
@@ -95,8 +82,8 @@ fields:
       Even pages footer story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EvenPagesFooter"'
   - name: evenPagesHeader
     uid: word!Word.StoryType.evenPagesHeader:member
@@ -105,8 +92,8 @@ fields:
       Even pages header story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EvenPagesHeader"'
   - name: firstPageFooter
     uid: word!Word.StoryType.firstPageFooter:member
@@ -115,8 +102,8 @@ fields:
       First page footer story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FirstPageFooter"'
   - name: firstPageHeader
     uid: word!Word.StoryType.firstPageHeader:member
@@ -125,8 +112,8 @@ fields:
       First page header story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FirstPageHeader"'
   - name: footnoteContinuationNotice
     uid: word!Word.StoryType.footnoteContinuationNotice:member
@@ -135,8 +122,8 @@ fields:
       Footnote continuation notice story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteContinuationNotice"'
   - name: footnoteContinuationSeparator
     uid: word!Word.StoryType.footnoteContinuationSeparator:member
@@ -145,8 +132,8 @@ fields:
       Footnote continuation separator story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteContinuationSeparator"'
   - name: footnotes
     uid: word!Word.StoryType.footnotes:member
@@ -155,8 +142,8 @@ fields:
       Footnotes story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Footnotes"'
   - name: footnoteSeparator
     uid: word!Word.StoryType.footnoteSeparator:member
@@ -165,8 +152,8 @@ fields:
       Footnote separator story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteSeparator"'
   - name: mainText
     uid: word!Word.StoryType.mainText:member
@@ -175,8 +162,8 @@ fields:
       Main text story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MainText"'
   - name: primaryFooter
     uid: word!Word.StoryType.primaryFooter:member
@@ -185,8 +172,8 @@ fields:
       Primary footer story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PrimaryFooter"'
   - name: primaryHeader
     uid: word!Word.StoryType.primaryHeader:member
@@ -195,8 +182,8 @@ fields:
       Primary header story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PrimaryHeader"'
   - name: textFrame
     uid: word!Word.StoryType.textFrame:member
@@ -205,6 +192,6 @@ fields:
       Text frame story.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TextFrame"'

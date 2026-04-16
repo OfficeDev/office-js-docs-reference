@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartAxisTitleFormat
 summary: Represents the chart axis title formatting.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxisTitle.format](/javascript/api/excel/excel.chartaxistitle#format-member)
   \]
 
@@ -28,8 +28,8 @@ properties:
       Specifies the chart axis title's border format, which includes color,
       linestyle, and weight.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +58,8 @@ properties:
     fullName: fill
     summary: Specifies the chart axis title's fill formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +75,8 @@ properties:
       Specifies the chart axis title's font attributes, such as font name, font
       size, or color, of the chart axis title object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

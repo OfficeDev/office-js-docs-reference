@@ -7,15 +7,15 @@ summary: >-
   Contains the collection of the document's
   [Word.TableRow](xref:word!Word.TableRow:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Table.rows](/javascript/api/word/word.table#rows-member) \]
+  - [Word.Table.rows](/javascript/api/word/word.table#rows-member) \]
 
   #### Examples
 
@@ -85,8 +85,8 @@ methods:
       Gets the first row in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -137,8 +137,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

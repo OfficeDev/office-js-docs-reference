@@ -39,23 +39,23 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentRead.getEntitiesByType](/javascript/api/outlook/office.appointmentread#getentitiesbytype-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#getfilteredentitiesbyname-member)
   \]
 
-  - \[
+  -
   [Office.Entities.meetingSuggestions](/javascript/api/outlook/office.entities#meetingsuggestions-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.getEntitiesByType](/javascript/api/outlook/office.messageread#getentitiesbytype-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#getfilteredentitiesbyname-member)
   \]
 

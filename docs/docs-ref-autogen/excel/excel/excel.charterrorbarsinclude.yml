@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartErrorBarsInclude
 summary: Represents which parts of the error bar to include.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartErrorBars.include](/javascript/api/excel/excel.charterrorbars#include-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartErrorBarsData.include](/javascript/api/excel/excel.interfaces.charterrorbarsdata#include-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartErrorBarsUpdateData.include](/javascript/api/excel/excel.interfaces.charterrorbarsupdatedata#include-member)
   \]
 
 isPreview: false
@@ -31,20 +23,20 @@ fields:
     uid: excel!Excel.ChartErrorBarsInclude.both:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Both"'
   - name: minusValues
     uid: excel!Excel.ChartErrorBarsInclude.minusValues:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"MinusValues"'
   - name: plusValues
     uid: excel!Excel.ChartErrorBarsInclude.plusValues:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PlusValues"'

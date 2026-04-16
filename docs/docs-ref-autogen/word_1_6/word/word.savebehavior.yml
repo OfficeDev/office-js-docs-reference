@@ -5,8 +5,8 @@ package: word!
 fullName: Word.SaveBehavior
 summary: Specifies the save behavior for `Document.save`<!-- -->.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -40,8 +40,8 @@ fields:
       saved. Won't take effect if the document was previously saved.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Prompt"'
   - name: save
     uid: word!Word.SaveBehavior.save:member
@@ -52,6 +52,6 @@ fields:
       location.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Save"'

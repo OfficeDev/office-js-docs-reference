@@ -5,14 +5,14 @@ package: word!
 fullName: Word.MergeTarget
 summary: Specifies the target document for merge operations.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.DocumentMergeOptions.mergeTarget](/javascript/api/word/word.documentmergeoptions#mergetarget-member)
   \]
 
@@ -26,8 +26,8 @@ fields:
       Represents merging into the current document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Current"'
   - name: new
     uid: word!Word.MergeTarget.new:member
@@ -36,8 +36,8 @@ fields:
       Represents merging into a new document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"New"'
   - name: selected
     uid: word!Word.MergeTarget.selected:member
@@ -46,6 +46,6 @@ fields:
       Represents merging into the selected document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Selected"'

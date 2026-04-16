@@ -6,17 +6,7 @@ fullName: PowerPoint.Interfaces.TableColumnData
 summary: >-
   An interface describing the data returned by calling
   `tableColumn.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.TableColumnCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.tablecolumncollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.TableColumnCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.tablecolumncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

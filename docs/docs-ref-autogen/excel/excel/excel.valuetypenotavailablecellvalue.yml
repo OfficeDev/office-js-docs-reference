@@ -8,8 +8,8 @@ summary: >-
   serialized. For example, an \#UNKNOWN! error which represents a type of rich
   value not known to this version of Excel.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -23,9 +23,8 @@ properties:
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -45,9 +44,8 @@ properties:
       Represents the value that would be returned by `Range.values` for a cell
       with this value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +59,8 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -7,19 +7,18 @@ summary: >-
   Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
   objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Document.settings](/javascript/api/word/word.document#settings-member)
+  - [Word.Document.settings](/javascript/api/word/word.document#settings-member)
   \]
 
-  - \[
+  -
   [Word.DocumentCreated.settings](/javascript/api/word/word.documentcreated#settings-member)
   \]
 
@@ -112,8 +111,8 @@ methods:
     fullName: add(key, value)
     summary: Creates a new setting or sets an existing setting.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -167,8 +166,8 @@ methods:
     fullName: deleteAll()
     summary: Deletes all settings in this add-in.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -219,8 +218,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of items in the collection.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -273,8 +272,8 @@ methods:
       Gets a `Setting` object by its key, which is case-sensitive. Throws an
       `ItemNotFound` error if the setting doesn't exist.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -327,8 +326,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

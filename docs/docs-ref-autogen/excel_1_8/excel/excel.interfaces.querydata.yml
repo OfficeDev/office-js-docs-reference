@@ -4,17 +4,7 @@ uid: excel!Excel.Interfaces.QueryData:interface
 package: excel!
 fullName: Excel.Interfaces.QueryData
 summary: An interface describing the data returned by calling `query.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.QueryCollectionData.items](/javascript/api/excel/excel.interfaces.querycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.QueryCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.querycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

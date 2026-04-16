@@ -9,18 +9,18 @@ summary: >-
   ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!--
   -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Range.dataValidation](/javascript/api/excel/excel.range#datavalidation-member)
   \]
 
-  - \[
+  -
   [Excel.RangeAreas.dataValidation](/javascript/api/excel/excel.rangeareas#datavalidation-member)
   \]
 
@@ -49,8 +49,8 @@ properties:
     fullName: errorAlert
     summary: Error alert when user enters invalid data.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -83,7 +83,7 @@ properties:
           commentsRange.dataValidation.errorAlert = {
               message: "It is redundant to include the baby name in the comment.",
               showAlert: true,
-              style: "Information",
+              style: Excel.DataValidationAlertStyle.information,
               title: "Baby Name in Comment"
           };
 
@@ -106,8 +106,8 @@ properties:
       Specifies if data validation will be performed on blank cells. Default is
       `true`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +121,8 @@ properties:
     fullName: prompt
     summary: Prompt when users select a cell.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -159,7 +159,7 @@ properties:
           rankingRange.dataValidation.errorAlert = {
               message: "Sorry, only positive numbers are allowed",
               showAlert: true,
-              style: "Stop",
+              style: Excel.DataValidationAlertStyle.stop,
               title: "Negative Number Entered"
           };
 
@@ -182,8 +182,8 @@ properties:
       Data validation rule that contains different type of data validation
       criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -231,8 +231,8 @@ properties:
     fullName: type
     summary: Type of the data validation, see `Excel.DataValidationType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -256,8 +256,8 @@ properties:
       values are invalid. Returns `null` if there are both valid and invalid
       cell values within the range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -272,8 +272,8 @@ methods:
     fullName: clear()
     summary: Clears the data validation from the current range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -291,8 +291,8 @@ methods:
       with invalid cell values. If all cell values are valid, this function will
       throw an `ItemNotFound` error.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -310,8 +310,8 @@ methods:
       with invalid cell values. If all cell values are valid, this function will
       return `null`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

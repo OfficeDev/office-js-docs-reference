@@ -5,23 +5,15 @@ package: word!
 fullName: Word.OutlineLevel
 summary: Represents the outline levels.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ParagraphFormatData.outlineLevel](/javascript/api/word/word.interfaces.paragraphformatdata#outlinelevel-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphFormatUpdateData.outlineLevel](/javascript/api/word/word.interfaces.paragraphformatupdatedata#outlinelevel-member)
-  \]
-
-  - \[
+  -
   [Word.ParagraphFormat.outlineLevel](/javascript/api/word/word.paragraphformat#outlinelevel-member)
   \]
 
@@ -60,8 +52,8 @@ fields:
       Represents outline level 1.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel1"'
   - name: outlineLevel2
     uid: word!Word.OutlineLevel.outlineLevel2:member
@@ -70,8 +62,8 @@ fields:
       Represents outline level 2.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel2"'
   - name: outlineLevel3
     uid: word!Word.OutlineLevel.outlineLevel3:member
@@ -80,8 +72,8 @@ fields:
       Represents outline level 3.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel3"'
   - name: outlineLevel4
     uid: word!Word.OutlineLevel.outlineLevel4:member
@@ -90,8 +82,8 @@ fields:
       Represents outline level 4.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel4"'
   - name: outlineLevel5
     uid: word!Word.OutlineLevel.outlineLevel5:member
@@ -100,8 +92,8 @@ fields:
       Represents outline level 5.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel5"'
   - name: outlineLevel6
     uid: word!Word.OutlineLevel.outlineLevel6:member
@@ -110,8 +102,8 @@ fields:
       Represents outline level 6.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel6"'
   - name: outlineLevel7
     uid: word!Word.OutlineLevel.outlineLevel7:member
@@ -120,8 +112,8 @@ fields:
       Represents outline level 7.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel7"'
   - name: outlineLevel8
     uid: word!Word.OutlineLevel.outlineLevel8:member
@@ -130,8 +122,8 @@ fields:
       Represents outline level 8.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel8"'
   - name: outlineLevel9
     uid: word!Word.OutlineLevel.outlineLevel9:member
@@ -140,8 +132,8 @@ fields:
       Represents outline level 9.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevel9"'
   - name: outlineLevelBodyText
     uid: word!Word.OutlineLevel.outlineLevelBodyText:member
@@ -150,6 +142,6 @@ fields:
       Represents outline level body text, not an outline level.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutlineLevelBodyText"'

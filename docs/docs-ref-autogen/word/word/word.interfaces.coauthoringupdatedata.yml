@@ -6,21 +6,7 @@ fullName: Word.Interfaces.CoauthoringUpdateData
 summary: >-
   An interface describing the data returned by calling
   `coauthoringUpdate.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CoauthoringData.updates](/javascript/api/word/word.interfaces.coauthoringdata#updates-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CoauthoringUpdateCollectionData.items](/javascript/api/word/word.interfaces.coauthoringupdatecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CoauthoringUpdateCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthoringupdatecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Gets a `Range` object that represents the portion of the document that's
       contained in the `CoauthoringUpdate` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

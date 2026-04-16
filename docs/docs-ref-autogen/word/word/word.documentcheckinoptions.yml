@@ -7,8 +7,8 @@ summary: >-
   Provides configuration options for the
   [Document.checkIn](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: true
 isDeprecated: false
@@ -20,8 +20,8 @@ properties:
     fullName: comment
     summary: If provided, specifies a comment for the check-in operation.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -37,8 +37,8 @@ properties:
       If provided, specifies whether to make the document public after check-in.
       The default value is `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -54,8 +54,8 @@ properties:
       If provided, specifies whether to save changes before checking in. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false

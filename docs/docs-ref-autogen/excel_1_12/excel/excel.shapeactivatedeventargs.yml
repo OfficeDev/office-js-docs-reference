@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ShapeActivatedEventArgs
 summary: Provides information about the shape that raised the activated event.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Shape.onActivated](/javascript/api/excel/excel.shape#onactivated-member)
   \]
 
@@ -26,8 +26,8 @@ properties:
     fullName: shapeId
     summary: Gets the ID of the activated shape.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -41,8 +41,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -56,8 +56,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the shape is activated.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

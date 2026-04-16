@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.CustomPropertyData
 summary: >-
   An interface describing the data returned by calling
   `customProperty.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CustomPropertyCollectionData.items](/javascript/api/excel/excel.interfaces.custompropertycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomPropertyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.custompropertycollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentPropertiesData.custom](/javascript/api/excel/excel.interfaces.documentpropertiesdata#custom-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -35,8 +21,8 @@ properties:
       outside of Excel on the web (larger keys are automatically trimmed to 255
       characters on other platforms).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -50,8 +36,8 @@ properties:
     fullName: type
     summary: The type of the value used for the custom property.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +58,8 @@ properties:
       outside of Excel on the web (larger values are automatically trimmed to
       255 characters on other platforms).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -8,28 +8,19 @@ summary: >-
   [PowerPoint.SlideBackgroundGradientFill](xref:powerpoint!PowerPoint.SlideBackgroundGradientFill:class)<!--
   -->.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
-  [PowerPoint.Interfaces.SlideBackgroundGradientFillData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundgradientfilldata#type-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundgradientfillupdatedata#type-member)
-  \]
-
-  - \[
+  -
   [PowerPoint.SlideBackgroundGradientFill.type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#type-member)
   \]
 
-  - \[
+  -
   [PowerPoint.SlideBackgroundGradientFillOptions.type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfilloptions#type-member)
   \]
 
@@ -66,9 +57,8 @@ fields:
       Linear gradient fill.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Linear"'
   - name: path
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.path:member
@@ -77,9 +67,8 @@ fields:
       Path gradient fill.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Path"'
   - name: radial
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.radial:member
@@ -88,9 +77,8 @@ fields:
       Radial gradient fill.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Radial"'
   - name: rectangular
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.rectangular:member
@@ -99,9 +87,8 @@ fields:
       Rectangular gradient fill.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Rectangular"'
   - name: shadeFromTitle
     uid: >-
@@ -111,9 +98,8 @@ fields:
       Shade from title gradient fill.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ShadeFromTitle"'
   - name: unsupported
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.unsupported:member
@@ -122,7 +108,6 @@ fields:
       Unsupported gradient fill.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Unsupported"'

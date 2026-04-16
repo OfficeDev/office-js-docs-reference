@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.ChartErrorBarsData
 summary: >-
   An interface describing the data returned by calling
   `chartErrorBars.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.xErrorBars](/javascript/api/excel/excel.interfaces.chartseriesdata#xerrorbars-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.yErrorBars](/javascript/api/excel/excel.interfaces.chartseriesdata#yerrorbars-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +18,8 @@ properties:
     fullName: endStyleCap
     summary: Specifies if error bars have an end style cap.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -43,8 +33,8 @@ properties:
     fullName: format
     summary: Specifies the formatting type of the error bars.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +50,8 @@ properties:
     fullName: include
     summary: Specifies which parts of the error bars to include.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +69,8 @@ properties:
     fullName: type
     summary: The type of range marked by the error bars.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +88,8 @@ properties:
     fullName: visible
     summary: Specifies whether the error bars are displayed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

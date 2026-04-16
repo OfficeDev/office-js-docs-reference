@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartPlotAreaUpdateData
 summary: >-
   An interface for updating data on the `ChartPlotArea` object, for use in
   `chartPlotArea.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartUpdateData.plotArea](/javascript/api/excel/excel.interfaces.chartupdatedata#plotarea-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: format
     summary: Specifies the formatting of a chart plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -42,8 +36,8 @@ properties:
     fullName: height
     summary: Specifies the height value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -57,8 +51,8 @@ properties:
     fullName: insideHeight
     summary: Specifies the inside height value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +66,8 @@ properties:
     fullName: insideLeft
     summary: Specifies the inside left value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +81,8 @@ properties:
     fullName: insideTop
     summary: Specifies the inside top value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -102,8 +96,8 @@ properties:
     fullName: insideWidth
     summary: Specifies the inside width value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -117,8 +111,8 @@ properties:
     fullName: left
     summary: Specifies the left value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -132,8 +126,8 @@ properties:
     fullName: position
     summary: Specifies the position of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -149,8 +143,8 @@ properties:
     fullName: top
     summary: Specifies the top value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -164,8 +158,8 @@ properties:
     fullName: width
     summary: Specifies the width value of a plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartTrendlineType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartTrendline.type](/javascript/api/excel/excel.charttrendline#type-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineData.type](/javascript/api/excel/excel.interfaces.charttrendlinedata#type-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineUpdateData.type](/javascript/api/excel/excel.interfaces.charttrendlineupdatedata#type-member)
   \]
 
 isPreview: false
@@ -31,41 +23,41 @@ fields:
     uid: excel!Excel.ChartTrendlineType.exponential:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Exponential"'
   - name: linear
     uid: excel!Excel.ChartTrendlineType.linear:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Linear"'
   - name: logarithmic
     uid: excel!Excel.ChartTrendlineType.logarithmic:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Logarithmic"'
   - name: movingAverage
     uid: excel!Excel.ChartTrendlineType.movingAverage:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"MovingAverage"'
   - name: polynomial
     uid: excel!Excel.ChartTrendlineType.polynomial:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Polynomial"'
   - name: power
     uid: excel!Excel.ChartTrendlineType.power:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Power"'

@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.WorksheetFreezePanes
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.freezePanes](/javascript/api/excel/excel.worksheet#freezepanes-member)
   \]
 
@@ -44,8 +44,8 @@ methods:
       Sets the frozen cells in the active worksheet view. The range provided
       corresponds to cells that will be frozen in the top- and left-most pane.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -87,8 +87,8 @@ methods:
     fullName: freezeColumns(count)
     summary: Freeze the first column or columns of the worksheet in place.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -130,8 +130,8 @@ methods:
     fullName: freezeRows(count)
     summary: Freeze the top row or rows of the worksheet in place.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -174,8 +174,8 @@ methods:
       The frozen range corresponds to cells that are frozen in the top- and
       left-most pane.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -197,8 +197,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -267,8 +267,8 @@ methods:
     fullName: unfreeze()
     summary: Removes all frozen panes in the worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

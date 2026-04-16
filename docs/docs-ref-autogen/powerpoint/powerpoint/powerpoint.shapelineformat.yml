@@ -7,16 +7,15 @@ summary: >-
   Represents the line formatting for the shape object. For images and geometric
   shapes, line formatting represents the border of the shape.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Shape.lineFormat](/javascript/api/powerpoint/powerpoint.shape#lineformat-member)
   \]
 
@@ -61,9 +60,8 @@ properties:
       Represents the line color in HTML color format, in the form \#RRGGBB
       (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +94,8 @@ properties:
       [PowerPoint.ShapeLineDashStyle](xref:powerpoint!PowerPoint.ShapeLineDashStyle:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -154,9 +151,8 @@ properties:
       [PowerPoint.ShapeLineStyle](xref:powerpoint!PowerPoint.ShapeLineStyle:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -177,9 +173,8 @@ properties:
       (opaque) through 1.0 (clear). Returns null when the shape has inconsistent
       transparencies.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -195,9 +190,8 @@ properties:
       Specifies if the line formatting of a shape element is visible. Returns
       `null` when the shape has inconsistent visibilities.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -213,9 +207,8 @@ properties:
       Represents the weight of the line, in points. Returns `null` when the line
       isn't visible or there are inconsistent line weights.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

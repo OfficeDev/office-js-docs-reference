@@ -5,28 +5,8 @@ package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLoadOptions
 summary: Represents ink analysis data for a given set of ink strokes.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions.inkAnalysis](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphcollectionloadoptions#inkanalysis-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisParagraphLoadOptions.inkAnalysis](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphloadoptions#inkanalysis-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull](/javascript/api/onenote/onenote.interfaces.pagecollectionloadoptions#inkanalysisornull-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull](/javascript/api/onenote/onenote.interfaces.pageloadoptions#inkanalysisornull-member)
-  \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -54,9 +34,8 @@ properties:
     fullName: id
     summary: Gets the ID of the InkAnalysis object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +49,8 @@ properties:
     fullName: page
     summary: Gets the parent page object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

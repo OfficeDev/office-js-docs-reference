@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.TimelineStyleCollectionLoadOptions
 summary: Represents a collection of timeline styles.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +34,8 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of the timeline style.'
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +51,8 @@ properties:
       For EACH ITEM in the collection: Specifies if this `TimelineStyle` object
       is read-only.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

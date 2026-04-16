@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartPointFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartPointFormat` object, for use in
   `chartPointFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartPointUpdateData.format](/javascript/api/excel/excel.interfaces.chartpointupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,8 +20,8 @@ properties:
       Represents the border format of a chart data point, which includes color,
       style, and weight information.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

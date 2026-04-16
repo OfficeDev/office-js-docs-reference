@@ -6,29 +6,7 @@ fullName: Word.Interfaces.InlinePictureData
 summary: >-
   An interface describing the data returned by calling
   `inlinePicture.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BodyData.inlinePictures](/javascript/api/word/word.interfaces.bodydata#inlinepictures-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.inlinePictures](/javascript/api/word/word.interfaces.contentcontroldata#inlinepictures-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureCollectionData.items](/javascript/api/word/word.interfaces.inlinepicturecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureCollectionUpdateData.items](/javascript/api/word/word.interfaces.inlinepicturecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphData.inlinePictures](/javascript/api/word/word.interfaces.paragraphdata#inlinepictures-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +20,8 @@ properties:
       Specifies a string that represents the alternative text associated with
       the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -57,8 +35,8 @@ properties:
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +50,8 @@ properties:
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -89,8 +67,8 @@ properties:
       Specifies a hyperlink on the image. Use a '\#' to separate the address
       part from the optional location part.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -106,8 +84,8 @@ properties:
       Specifies whether the inline image retains its original proportions when
       you resize it.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +99,8 @@ properties:
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

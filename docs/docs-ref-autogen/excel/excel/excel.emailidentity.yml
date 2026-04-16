@@ -5,51 +5,31 @@ package: excel!
 fullName: Excel.EmailIdentity
 summary: Represents information about a user's identity.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DocumentTask.assignees](/javascript/api/excel/excel.documenttask#assignees-member)
   \]
 
-  - \[
+  -
   [Excel.DocumentTask.completedBy](/javascript/api/excel/excel.documenttask#completedby-member)
   \]
 
-  - \[
+  -
   [Excel.DocumentTask.createdBy](/javascript/api/excel/excel.documenttask#createdby-member)
   \]
 
-  - \[
+  -
   [Excel.DocumentTaskChange.assignee](/javascript/api/excel/excel.documenttaskchange#assignee-member)
   \]
 
-  - \[
+  -
   [Excel.DocumentTaskChange.changedBy](/javascript/api/excel/excel.documenttaskchange#changedby-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskChangeData.assignee](/javascript/api/excel/excel.interfaces.documenttaskchangedata#assignee-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskChangeData.changedBy](/javascript/api/excel/excel.interfaces.documenttaskchangedata#changedby-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskData.assignees](/javascript/api/excel/excel.interfaces.documenttaskdata#assignees-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskData.completedBy](/javascript/api/excel/excel.interfaces.documenttaskdata#completedby-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DocumentTaskData.createdBy](/javascript/api/excel/excel.interfaces.documenttaskdata#createdby-member)
   \]
 
 isPreview: true
@@ -62,9 +42,8 @@ properties:
     fullName: displayName
     summary: Represents the user's display name.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -78,9 +57,8 @@ properties:
     fullName: email
     summary: Represents the user's email.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -94,9 +72,8 @@ properties:
     fullName: id
     summary: Represents the user's unique ID.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

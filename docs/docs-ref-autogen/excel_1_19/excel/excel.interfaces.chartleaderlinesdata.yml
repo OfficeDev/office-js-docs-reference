@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartLeaderLinesData
 summary: >-
   An interface describing the data returned by calling
   `chartLeaderLines.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsData.leaderLines](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#leaderlines-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: format
     summary: Represents the formatting of leader lines of data labels in a series.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

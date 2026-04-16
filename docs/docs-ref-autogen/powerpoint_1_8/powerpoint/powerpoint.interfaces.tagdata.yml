@@ -4,17 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.TagData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagData
 summary: An interface describing the data returned by calling `tag.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.TagCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.tagcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.TagCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.tagcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -29,9 +19,8 @@ properties:
       `TagCollection` and always stored as uppercase letters within the
       document.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -45,9 +34,8 @@ properties:
     fullName: value
     summary: Gets the value of the tag.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

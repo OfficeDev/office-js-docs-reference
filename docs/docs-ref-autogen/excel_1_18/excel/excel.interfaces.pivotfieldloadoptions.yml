@@ -5,20 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.PivotFieldLoadOptions
 summary: Represents the Excel PivotField.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field](/javascript/api/excel/excel.interfaces.datapivothierarchycollectionloadoptions#field-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataPivotHierarchyLoadOptions.field](/javascript/api/excel/excel.interfaces.datapivothierarchyloadoptions#field-member)
-  \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,8 +34,8 @@ properties:
     fullName: id
     summary: ID of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +49,8 @@ properties:
     fullName: name
     summary: Name of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +64,8 @@ properties:
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -91,8 +79,8 @@ properties:
     fullName: subtotals
     summary: Subtotals of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

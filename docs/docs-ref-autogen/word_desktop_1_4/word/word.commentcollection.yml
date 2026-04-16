@@ -5,19 +5,18 @@ package: word!
 fullName: Word.CommentCollection
 summary: Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Document.comments](/javascript/api/word/word.document#comments-member)
+  - [Word.Document.comments](/javascript/api/word/word.document#comments-member)
   \]
 
-  - \[
+  -
   [Word.Selection.comments](/javascript/api/word/word.selection#comments-member)
   \]
 
@@ -120,8 +119,8 @@ methods:
       Gets the first comment in the collection. Throws an `ItemNotFound` error
       if this collection is empty.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -141,8 +140,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

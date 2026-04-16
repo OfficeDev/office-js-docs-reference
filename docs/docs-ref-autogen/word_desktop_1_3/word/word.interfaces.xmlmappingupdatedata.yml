@@ -6,29 +6,7 @@ fullName: Word.Interfaces.XmlMappingUpdateData
 summary: >-
   An interface for updating data on the `XmlMapping` object, for use in
   `xmlMapping.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolupdatedata#xmlmapping-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.contentcontrolupdatedata#xmlmapping-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#xmlmapping-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.groupcontentcontrolupdatedata#xmlmapping-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlUpdateData.xmlMapping](/javascript/api/word/word.interfaces.picturecontentcontrolupdatedata#xmlmapping-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +20,8 @@ properties:
       Returns a `CustomXmlNode` object that represents the custom XML node in
       the data store that the content control in the document maps to.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +37,8 @@ properties:
       Returns a `CustomXmlPart` object that represents the custom XML part to
       which the content control in the document maps.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

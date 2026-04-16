@@ -10,8 +10,8 @@ summary: >-
   `recurrenceType`<!-- -->, `recurrenceProperties`<!-- -->, and
   `recurrenceTimeZone` (optional).
 remarks: >-
-  \[ [API set: Mailbox
-  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -43,27 +43,27 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.recurrence](/javascript/api/outlook/office.appointmentcompose#recurrence-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.recurrence](/javascript/api/outlook/office.appointmentread#recurrence-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.recurrence](/javascript/api/outlook/office.messageread#recurrence-member)
   \]
 
-  - \[
+  -
   [Office.Recurrence.getAsync](/javascript/api/outlook/office.recurrence#getasync-member)
   \]
 
-  - \[
+  -
   [Office.Recurrence.setAsync](/javascript/api/outlook/office.recurrence#setasync-member)
   \]
 
-  - \[
+  -
   [Office.RecurrenceChangedEventArgs.recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#recurrence-member)
   \]
 
@@ -77,9 +77,8 @@ properties:
     fullName: recurrenceProperties
     summary: Gets or sets the properties of the recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -103,9 +102,8 @@ properties:
     fullName: recurrenceTimeZone
     summary: Gets or sets the properties of the recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -129,9 +127,8 @@ properties:
     fullName: recurrenceType
     summary: Gets or sets the type of the recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -162,9 +159,8 @@ properties:
       UTC time.** Instead, it is set in the time zone specified by the
       `recurrenceTimeZone` value or defaulted to the item's time zone.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -194,9 +190,8 @@ methods:
       This method returns the entire `Recurrence` object for the appointment
       series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -270,9 +265,8 @@ methods:
       This method returns the entire `Recurrence` object for the appointment
       series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -310,9 +304,8 @@ methods:
     fullName: setAsync(recurrencePattern, options, callback)
     summary: Sets the recurrence pattern of an appointment series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -439,9 +432,8 @@ methods:
     fullName: setAsync(recurrencePattern, callback)
     summary: Sets the recurrence pattern of an appointment series.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.Note
 summary: Represents a note in the workbook or worksheet.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.NoteCollection.items](/javascript/api/excel/excel.notecollection#items-member)
   \]
 
@@ -48,9 +48,8 @@ properties:
     fullName: authorName
     summary: Gets the author of the note.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +63,8 @@ properties:
     fullName: content
     summary: Specifies the text of the note.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -118,9 +116,8 @@ properties:
       Specifies the height of the note. Note: This property is not supported in
       Excel on the web.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -158,9 +155,8 @@ properties:
       Specifies the visibility of the note. A value of `true` means the note is
       shown. Note: This property is not supported in Excel on the web.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -200,9 +196,8 @@ properties:
       Specifies the width of the note. Note: This property is not supported in
       Excel on the web.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -239,9 +234,8 @@ methods:
     fullName: delete()
     summary: Deletes the note.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -278,9 +272,8 @@ methods:
     fullName: getLocation()
     summary: Gets the cell where this note is located.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

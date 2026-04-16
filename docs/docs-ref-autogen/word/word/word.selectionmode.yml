@@ -7,8 +7,8 @@ summary: >-
   Represents where the cursor (insertion point) is set in the document after a
   selection.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -40,8 +40,8 @@ fields:
       selected range).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
@@ -50,8 +50,8 @@ fields:
       The entire range is selected.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
@@ -61,6 +61,6 @@ fields:
       the selected range).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Start"'

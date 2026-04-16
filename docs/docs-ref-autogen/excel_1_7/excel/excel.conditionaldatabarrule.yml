@@ -5,35 +5,19 @@ package: excel!
 fullName: Excel.ConditionalDataBarRule
 summary: Represents a rule-type for a data bar.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataBarConditionalFormat.lowerBoundRule](/javascript/api/excel/excel.databarconditionalformat#lowerboundrule-member)
   \]
 
-  - \[
+  -
   [Excel.DataBarConditionalFormat.upperBoundRule](/javascript/api/excel/excel.databarconditionalformat#upperboundrule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#lowerboundrule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#upperboundrule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#lowerboundrule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#upperboundrule-member)
   \]
 
 isPreview: false
@@ -46,8 +30,8 @@ properties:
     fullName: formula
     summary: The formula, if required, on which to evaluate the data bar rule.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +45,8 @@ properties:
     fullName: type
     summary: The type of rule for the data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

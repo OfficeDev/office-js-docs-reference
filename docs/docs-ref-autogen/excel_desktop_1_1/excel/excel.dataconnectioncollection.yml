@@ -7,14 +7,14 @@ summary: >-
   Represents a collection of all the data connections that are part of the
   workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Workbook.dataConnections](/javascript/api/excel/excel.workbook#dataconnections-member)
   \]
 
@@ -49,8 +49,8 @@ methods:
       connections, data connections outside the original workbook (except Power
       BI connections), and connections to data protected by a firewall.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

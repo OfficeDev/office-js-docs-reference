@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.PrintOrder
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PageLayoutData.printOrder](/javascript/api/excel/excel.interfaces.pagelayoutdata#printorder-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PageLayoutUpdateData.printOrder](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#printorder-member)
-  \]
-
-  - \[
+  -
   [Excel.PageLayout.printOrder](/javascript/api/excel/excel.pagelayout#printorder-member)
   \]
 
@@ -35,8 +27,8 @@ fields:
       right.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DownThenOver"'
   - name: overThenDown
     uid: excel!Excel.PrintOrder.overThenDown:member
@@ -46,6 +38,6 @@ fields:
       rows.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OverThenDown"'

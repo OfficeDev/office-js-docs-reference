@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ShowAsRule
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataPivotHierarchy.showAs](/javascript/api/excel/excel.datapivothierarchy#showas-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataPivotHierarchyData.showAs](/javascript/api/excel/excel.interfaces.datapivothierarchydata#showas-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataPivotHierarchyUpdateData.showAs](/javascript/api/excel/excel.interfaces.datapivothierarchyupdatedata#showas-member)
   \]
 
 isPreview: false
@@ -36,8 +28,8 @@ properties:
       The PivotField to base the `ShowAs` calculation on, if applicable
       according to the `ShowAsCalculation` type, else `null`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +45,8 @@ properties:
       The item to base the `ShowAs` calculation on, if applicable according to
       the `ShowAsCalculation` type, else `null`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -107,8 +99,8 @@ properties:
       The `ShowAs` calculation to use for the PivotField. See
       `Excel.ShowAsCalculation` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeBorderCollection`
   object, for use in `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeFormatUpdateData.borders](/javascript/api/excel/excel.interfaces.conditionalrangeformatupdatedata#borders-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -25,8 +19,8 @@ properties:
     fullName: bottom
     summary: Gets the bottom border.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +54,8 @@ properties:
     fullName: left
     summary: Gets the left border.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +73,8 @@ properties:
     fullName: right
     summary: Gets the right border.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +92,8 @@ properties:
     fullName: top
     summary: Gets the top border.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

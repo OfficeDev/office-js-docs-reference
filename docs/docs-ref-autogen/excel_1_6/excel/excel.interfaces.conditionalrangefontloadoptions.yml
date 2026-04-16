@@ -7,16 +7,8 @@ summary: >-
   This object represents the font attributes (font style, color, etc.) for an
   object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeFormatLoadOptions.font](/javascript/api/excel/excel.interfaces.conditionalrangeformatloadoptions#font-member)
-  \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +36,8 @@ properties:
     fullName: bold
     summary: Specifies if the font is bold.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +53,8 @@ properties:
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +68,8 @@ properties:
     fullName: italic
     summary: Specifies if the font is italic.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -92,8 +84,8 @@ properties:
     fullName: strikethrough
     summary: Specifies the strikethrough status of the font.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -109,8 +101,8 @@ properties:
       The type of underline applied to the font. See
       `Excel.ConditionalRangeFontUnderlineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

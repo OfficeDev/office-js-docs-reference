@@ -8,42 +8,42 @@ summary: >-
   to provide specified branding information for a `CellValue` type that supports
   provider attributes.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.BooleanCellValue.provider](/javascript/api/excel/excel.booleancellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.DoubleCellValue.provider](/javascript/api/excel/excel.doublecellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.EntityCellValue.provider](/javascript/api/excel/excel.entitycellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.ExternalCodeServiceObjectCellValue.provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.LinkedEntityCellValue.provider](/javascript/api/excel/excel.linkedentitycellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.LocalImageCellValue.provider](/javascript/api/excel/excel.localimagecellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.StringCellValue.provider](/javascript/api/excel/excel.stringcellvalue#provider-member)
   \]
 
-  - \[
+  -
   [Excel.WebImageCellValue.provider](/javascript/api/excel/excel.webimagecellvalue#provider-member)
   \]
 
@@ -60,9 +60,8 @@ properties:
       no logo is specified. If a logo is specified, this will be used as tooltip
       text.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -78,9 +77,8 @@ properties:
       Represents a URL used to download an image that will be used as a logo in
       card view.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +94,8 @@ properties:
       Represents a URL that is the navigation target if the user clicks on the
       logo element in card view.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartErrorBarsFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartErrorBarsFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartErrorBarsData.format](/javascript/api/excel/excel.interfaces.charterrorbarsdata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: line
     summary: Represents the chart line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -8,22 +8,22 @@ summary: >-
   used to describe where information came from, if the information comes from a
   public source.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CellValuePropertyMetadata.attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#attribution-member)
   \]
 
-  - \[
+  -
   [Excel.LocalImageCellValue.attribution](/javascript/api/excel/excel.localimagecellvalue#attribution-member)
   \]
 
-  - \[
+  -
   [Excel.WebImageCellValue.attribution](/javascript/api/excel/excel.webimagecellvalue#attribution-member)
   \]
 
@@ -39,9 +39,8 @@ properties:
       Represents a URL to a license or source that describes how this property
       can be used.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +54,8 @@ properties:
     fullName: licenseText
     summary: Represents a name for the license that governs this property.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +69,8 @@ properties:
     fullName: sourceAddress
     summary: Represents a URL to the source of the `CellValue`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +84,8 @@ properties:
     fullName: sourceText
     summary: Represents a name for the source of the `CellValue`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

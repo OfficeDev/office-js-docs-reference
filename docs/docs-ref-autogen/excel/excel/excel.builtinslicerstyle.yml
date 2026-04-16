@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.BuiltInSlicerStyle
 summary: Represents a built-in slicer style.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: true
 isDeprecated: false
@@ -18,9 +18,8 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with dark shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dark1"'
   - name: dark2
     uid: excel!Excel.BuiltInSlicerStyle.dark2:member
@@ -29,9 +28,8 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with dark shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dark2"'
   - name: dark3
     uid: excel!Excel.BuiltInSlicerStyle.dark3:member
@@ -40,9 +38,8 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with dark shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dark3"'
   - name: dark4
     uid: excel!Excel.BuiltInSlicerStyle.dark4:member
@@ -51,9 +48,8 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with dark shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dark4"'
   - name: dark5
     uid: excel!Excel.BuiltInSlicerStyle.dark5:member
@@ -62,9 +58,8 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with dark shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dark5"'
   - name: dark6
     uid: excel!Excel.BuiltInSlicerStyle.dark6:member
@@ -73,9 +68,8 @@ fields:
       "Accent 6" (green in the default "Office" theme) with dark shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dark6"'
   - name: light1
     uid: excel!Excel.BuiltInSlicerStyle.light1:member
@@ -84,9 +78,8 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Light1"'
   - name: light2
     uid: excel!Excel.BuiltInSlicerStyle.light2:member
@@ -95,9 +88,8 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Light2"'
   - name: light3
     uid: excel!Excel.BuiltInSlicerStyle.light3:member
@@ -106,9 +98,8 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Light3"'
   - name: light4
     uid: excel!Excel.BuiltInSlicerStyle.light4:member
@@ -117,9 +108,8 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Light4"'
   - name: light5
     uid: excel!Excel.BuiltInSlicerStyle.light5:member
@@ -128,9 +118,8 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Light5"'
   - name: light6
     uid: excel!Excel.BuiltInSlicerStyle.light6:member
@@ -139,9 +128,8 @@ fields:
       "Accent 6" (green in the default "Office" theme) with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Light6"'
   - name: other1
     uid: excel!Excel.BuiltInSlicerStyle.other1:member
@@ -150,9 +138,8 @@ fields:
       Dark gray with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Other1"'
   - name: other2
     uid: excel!Excel.BuiltInSlicerStyle.other2:member
@@ -161,7 +148,6 @@ fields:
       Medium blue with light shading.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Other2"'

@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.TextConditionalFormat
 summary: Represents a specific text conditional format.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalFormat.textComparison](/javascript/api/excel/excel.conditionalformat#textcomparison-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalFormat.textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#textcomparisonornullobject-member)
   \]
 
@@ -47,8 +47,8 @@ properties:
       Returns a format object, encapsulating the conditional format's font,
       fill, borders, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -85,8 +85,8 @@ properties:
     fullName: rule
     summary: The rule of the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

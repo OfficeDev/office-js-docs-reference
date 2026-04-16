@@ -5,22 +5,22 @@ package: excel!
 fullName: Excel.CommentDetail
 summary: A structure for the comment ID and IDs of its related replies.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CommentAddedEventArgs.commentDetails](/javascript/api/excel/excel.commentaddedeventargs#commentdetails-member)
   \]
 
-  - \[
+  -
   [Excel.CommentChangedEventArgs.commentDetails](/javascript/api/excel/excel.commentchangedeventargs#commentdetails-member)
   \]
 
-  - \[
+  -
   [Excel.CommentDeletedEventArgs.commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#commentdetails-member)
   \]
 
@@ -34,9 +34,8 @@ properties:
     fullName: commentId
     summary: Represents the ID of the comment.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +49,8 @@ properties:
     fullName: replyIds
     summary: Represents the IDs of the related replies that belong to the comment.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

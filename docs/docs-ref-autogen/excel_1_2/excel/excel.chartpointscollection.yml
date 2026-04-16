@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.ChartPointsCollection
 summary: A collection of all the chart points within a series inside a chart.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartSeries.points](/javascript/api/excel/excel.chartseries#points-member)
   \]
 
@@ -90,8 +90,8 @@ properties:
     fullName: count
     summary: Returns the number of chart points in the series.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -119,8 +119,8 @@ methods:
     fullName: getItemAt(index)
     summary: Retrieve a point based on its position within the series.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

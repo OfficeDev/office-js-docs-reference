@@ -9,9 +9,8 @@ summary: >-
   `Office.context.mailbox.loadItemByIdAsync` is called on a message in read
   mode.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -43,7 +42,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Mailbox.loadItemByIdAsync](/javascript/api/outlook/office.mailbox#loaditembyidasync-member)
   \]
 
@@ -120,9 +119,8 @@ properties:
     fullName: body
     summary: Gets the item's body and its format.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -150,9 +148,8 @@ properties:
     fullName: categories
     summary: Gets an object that provides methods to manage the item's categories.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -262,9 +259,8 @@ properties:
     fullName: dateTimeModified
     summary: Gets the date and time that an item was last modified.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -580,9 +576,8 @@ properties:
     fullName: notificationMessages
     summary: Gets the notification messages of the item.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -629,9 +624,8 @@ properties:
       of single appointments. `undefined` is returned for messages that aren't
       meeting requests.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -718,9 +712,8 @@ properties:
       and classic), the `seriesId` returns the Exchange Web Services (EWS) ID of
       the parent (series) item that this item belongs to.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -862,9 +855,8 @@ methods:
       of the selected message or the organizer and all attendees of the selected
       appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -936,9 +928,8 @@ methods:
       of the selected message or the organizer and all attendees of the selected
       appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1002,9 +993,8 @@ methods:
       Displays a reply form that includes only the sender of the selected
       message or the organizer of the selected appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1075,9 +1065,8 @@ methods:
       Displays a reply form that includes only the sender of the selected
       message or the organizer of the selected appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1146,9 +1135,8 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1203,9 +1191,8 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1247,9 +1234,8 @@ methods:
     fullName: getAsFileAsync(options, callback)
     summary: Gets the current message in EML format encoded in Base64.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1294,9 +1280,8 @@ methods:
     fullName: getAsFileAsync(callback)
     summary: Gets the current message in EML format encoded in Base64.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1350,9 +1335,8 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1428,9 +1412,8 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1488,9 +1471,8 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1538,9 +1520,8 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1580,9 +1561,8 @@ methods:
       Returns string values in the selected item that match the regular
       expressions defined in an XML manifest file.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1644,9 +1624,8 @@ methods:
       Returns string values in the selected item that match the named regular
       expression defined in an XML manifest file.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1710,9 +1689,8 @@ methods:
       expressions defined in an XML manifest file. Highlighted matches apply to
       contextual add-ins.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1780,10 +1758,9 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
-      shared mailbox
+      [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+      mailbox
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1835,10 +1812,9 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
-      shared mailbox
+      [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+      mailbox
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1891,9 +1867,8 @@ methods:
       `asyncResult.value` property. This object can be used to get custom
       properties from the mail item.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       To learn more about custom properties, see [Get and set add-in metadata
@@ -1948,9 +1923,8 @@ methods:
       When multiple mail items are selected, closes the currently loaded item,
       so that another selected mail item can be loaded for processing.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -2008,9 +1982,8 @@ methods:
       When multiple mail items are selected, closes the currently loaded item,
       so that another selected mail item can be loaded for processing.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

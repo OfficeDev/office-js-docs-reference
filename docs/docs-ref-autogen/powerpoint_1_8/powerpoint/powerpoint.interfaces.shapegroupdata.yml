@@ -18,9 +18,8 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

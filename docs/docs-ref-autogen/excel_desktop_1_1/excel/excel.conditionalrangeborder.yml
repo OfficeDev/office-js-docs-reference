@@ -5,30 +5,30 @@ package: excel!
 fullName: Excel.ConditionalRangeBorder
 summary: Represents the border of an object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalRangeBorderCollection.bottom](/javascript/api/excel/excel.conditionalrangebordercollection#bottom-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalRangeBorderCollection.items](/javascript/api/excel/excel.conditionalrangebordercollection#items-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalRangeBorderCollection.left](/javascript/api/excel/excel.conditionalrangebordercollection#left-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalRangeBorderCollection.right](/javascript/api/excel/excel.conditionalrangebordercollection#right-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalRangeBorderCollection.top](/javascript/api/excel/excel.conditionalrangebordercollection#top-member)
   \]
 
@@ -44,8 +44,8 @@ properties:
       HTML color code representing the color of the border line, in the form
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +76,8 @@ properties:
       Constant value that indicates the specific side of the border. See
       `Excel.ConditionalRangeBorderIndex` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +97,8 @@ properties:
       One of the constants of line style specifying the line style for the
       border. See `Excel.BorderLineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,35 +5,19 @@ package: excel!
 fullName: Excel.ArrowheadLength
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.LineData.beginArrowheadLength](/javascript/api/excel/excel.interfaces.linedata#beginarrowheadlength-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.LineData.endArrowheadLength](/javascript/api/excel/excel.interfaces.linedata#endarrowheadlength-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.LineUpdateData.beginArrowheadLength](/javascript/api/excel/excel.interfaces.lineupdatedata#beginarrowheadlength-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.LineUpdateData.endArrowheadLength](/javascript/api/excel/excel.interfaces.lineupdatedata#endarrowheadlength-member)
-  \]
-
-  - \[
+  -
   [Excel.Line.beginArrowheadLength](/javascript/api/excel/excel.line#beginarrowheadlength-member)
   \]
 
-  - \[
+  -
   [Excel.Line.endArrowheadLength](/javascript/api/excel/excel.line#endarrowheadlength-member)
   \]
 
@@ -69,20 +53,20 @@ fields:
     uid: excel!Excel.ArrowheadLength.long:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Long"'
   - name: medium
     uid: excel!Excel.ArrowheadLength.medium:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Medium"'
   - name: short
     uid: excel!Excel.ArrowheadLength.short:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Short"'

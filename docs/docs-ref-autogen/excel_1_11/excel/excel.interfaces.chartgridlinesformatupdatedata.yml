@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartGridlinesFormat` object, for use
   in `chartGridlinesFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartGridlinesUpdateData.format](/javascript/api/excel/excel.interfaces.chartgridlinesupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: line
     summary: Represents chart line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

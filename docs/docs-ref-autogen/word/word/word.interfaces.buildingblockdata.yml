@@ -6,29 +6,7 @@ fullName: Word.Interfaces.BuildingBlockData
 summary: >-
   An interface describing the data returned by calling
   `buildingBlock.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlData.placeholderText](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#placeholdertext-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlData.placeholderText](/javascript/api/word/word.interfaces.datepickercontentcontroldata#placeholdertext-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlData.placeholderText](/javascript/api/word/word.interfaces.groupcontentcontroldata#placeholdertext-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlData.placeholderText](/javascript/api/word/word.interfaces.picturecontentcontroldata#placeholdertext-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionContentControlData.placeholderText](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#placeholdertext-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +18,8 @@ properties:
     fullName: description
     summary: Specifies the description for the building block.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -55,8 +33,8 @@ properties:
     fullName: id
     summary: Returns the internal identification number for the building block.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -70,8 +48,8 @@ properties:
     fullName: index
     summary: Returns the position of this building block in a collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +65,8 @@ properties:
       Specifies a `DocPartInsertType` value that represents how to insert the
       contents of the building block into the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -104,8 +82,8 @@ properties:
     fullName: name
     summary: Specifies the name of the building block.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -119,8 +97,8 @@ properties:
     fullName: value
     summary: Specifies the contents of the building block.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

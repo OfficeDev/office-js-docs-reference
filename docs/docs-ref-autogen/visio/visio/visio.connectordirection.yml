@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.ConnectorDirection
 summary: Direction of connector in DataVisualizer diagram.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +18,8 @@ fields:
       Direction will be from target to source shape.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"FromTarget"'
   - name: toTarget
     uid: visio!Visio.ConnectorDirection.toTarget:member
@@ -30,7 +28,6 @@ fields:
       Direction will be from source to target shape.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"ToTarget"'

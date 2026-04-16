@@ -5,21 +5,21 @@ package: word!
 fullName: Word.PageCollection
 summary: Represents the collection of [Word.Page](xref:word!Word.Page:class) objects.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Pane.pages](/javascript/api/word/word.pane#pages-member) \]
+  - [Word.Pane.pages](/javascript/api/word/word.pane#pages-member) \]
 
-  - \[
+  -
   [Word.Pane.pagesEnclosingViewport](/javascript/api/word/word.pane#pagesenclosingviewport-member)
   \]
 
-  - \[ [Word.Range.pages](/javascript/api/word/word.range#pages-member) \]
+  - [Word.Range.pages](/javascript/api/word/word.range#pages-member) \]
 
   #### Examples
 
@@ -101,8 +101,8 @@ methods:
       Gets the first page in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -122,8 +122,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

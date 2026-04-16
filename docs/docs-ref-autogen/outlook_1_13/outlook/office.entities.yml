@@ -64,19 +64,19 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentRead.getEntities](/javascript/api/outlook/office.appointmentread#getentities-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.getSelectedEntities](/javascript/api/outlook/office.appointmentread#getselectedentities-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.getEntities](/javascript/api/outlook/office.messageread#getentities-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.getSelectedEntities](/javascript/api/outlook/office.messageread#getselectedentities-member)
   \]
 

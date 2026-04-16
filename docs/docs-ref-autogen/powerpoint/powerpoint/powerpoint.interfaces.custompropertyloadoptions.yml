@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomPropertyLoadOptions
 summary: Represents a custom property.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +34,8 @@ properties:
     fullName: key
     summary: The string that uniquely identifies the custom property.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +49,8 @@ properties:
     fullName: type
     summary: The type of the value used for the custom property.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +67,8 @@ properties:
       length 255 characters. Larger strings cause the operation to fail with an
       `InvalidArgument` error.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

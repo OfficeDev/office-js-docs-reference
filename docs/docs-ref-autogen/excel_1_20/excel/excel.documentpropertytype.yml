@@ -5,19 +5,15 @@ package: excel!
 fullName: Excel.DocumentPropertyType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CustomProperty.type](/javascript/api/excel/excel.customproperty#type-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomPropertyData.type](/javascript/api/excel/excel.interfaces.custompropertydata#type-member)
   \]
 
 isPreview: false
@@ -27,34 +23,34 @@ fields:
     uid: excel!Excel.DocumentPropertyType.boolean:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Boolean"'
   - name: date
     uid: excel!Excel.DocumentPropertyType.date:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Date"'
   - name: float
     uid: excel!Excel.DocumentPropertyType.float:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Float"'
   - name: number
     uid: excel!Excel.DocumentPropertyType.number:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Number"'
   - name: string
     uid: excel!Excel.DocumentPropertyType.string:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"String"'

@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.RangeFill
 summary: Represents the background of a range object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.RangeFormat.fill](/javascript/api/excel/excel.rangeformat#fill-member)
   \]
 
-  - \[ [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member) \]
+  - [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +30,8 @@ properties:
       HTML color code representing the color of the background, in the form
       \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +61,8 @@ methods:
     fullName: clear()
     summary: Resets the range background.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

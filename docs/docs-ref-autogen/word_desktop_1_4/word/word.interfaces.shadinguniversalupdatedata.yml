@@ -6,25 +6,7 @@ fullName: Word.Interfaces.ShadingUniversalUpdateData
 summary: >-
   An interface for updating data on the `ShadingUniversal` object, for use in
   `shadingUniversal.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.FrameUpdateData.shading](/javascript/api/word/word.interfaces.frameupdatedata#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphUpdateData.shading](/javascript/api/word/word.interfaces.paragraphupdatedata#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeUpdateData.shading](/javascript/api/word/word.interfaces.rangeupdatedata#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableColumnUpdateData.shading](/javascript/api/word/word.interfaces.tablecolumnupdatedata#shading-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +22,8 @@ properties:
       `ShadingUniversal` object. You can provide the value in the '\#RRGGBB'
       format.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +40,8 @@ properties:
       Specifies the color that's applied to the background of the
       `ShadingUniversal` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -86,8 +68,8 @@ properties:
       `ShadingUniversal` object. This color is applied to the dots and lines in
       the shading pattern. You can provide the value in the '\#RRGGBB' format.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -105,8 +87,8 @@ properties:
       `ShadingUniversal` object. This color is applied to the dots and lines in
       the shading pattern.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -134,8 +116,8 @@ properties:
       Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

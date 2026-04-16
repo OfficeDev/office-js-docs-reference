@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.ShapeView
 summary: Represents the ShapeView class.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[ [Visio.Shape.view](/javascript/api/visio/visio.shape#view-member) \]
+  - [Visio.Shape.view](/javascript/api/visio/visio.shape#view-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -40,9 +39,8 @@ properties:
     fullName: highlight
     summary: Represents the highlight around the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -81,9 +79,8 @@ methods:
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -147,9 +144,8 @@ methods:
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -263,9 +259,8 @@ methods:
     fullName: removeOverlay(OverlayId)
     summary: Removes particular overlay or all overlays on the Shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -358,9 +353,8 @@ methods:
       run time. The updated text retains the existing formatting properties of
       the shape's text.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -379,9 +373,8 @@ methods:
     fullName: showOverlay(overlayId, show)
     summary: Shows particular overlay on the Shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

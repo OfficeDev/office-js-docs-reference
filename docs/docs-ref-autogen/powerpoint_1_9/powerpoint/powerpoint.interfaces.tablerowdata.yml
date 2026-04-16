@@ -6,17 +6,7 @@ fullName: PowerPoint.Interfaces.TableRowData
 summary: >-
   An interface describing the data returned by calling `tableRow.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.TableRowCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.tablerowcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.TableRowCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.tablerowcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -28,9 +18,8 @@ properties:
     fullName: currentHeight
     summary: Retrieves the current height of the row in points.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +36,8 @@ properties:
       than the minimum height, the row height will be increased to the minimum
       height.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +53,8 @@ properties:
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

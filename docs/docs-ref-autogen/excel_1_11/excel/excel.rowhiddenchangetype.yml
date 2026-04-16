@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.RowHiddenChangeType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.WorksheetRowHiddenChangedEventArgs.changeType](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#changetype-member)
   \]
 
@@ -26,9 +26,8 @@ fields:
       `Hidden` indicates that the row is hidden.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Hidden"'
   - name: unhidden
     uid: excel!Excel.RowHiddenChangeType.unhidden:member
@@ -37,7 +36,6 @@ fields:
       `Unhidden` indicates that the row is not hidden.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unhidden"'

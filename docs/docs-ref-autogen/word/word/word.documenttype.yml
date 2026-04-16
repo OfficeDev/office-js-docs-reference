@@ -5,18 +5,14 @@ package: word!
 fullName: Word.DocumentType
 summary: Specifies the type of document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Document.type](/javascript/api/word/word.document#type-member) \]
-
-  - \[
-  [Word.Interfaces.DocumentData.type](/javascript/api/word/word.interfaces.documentdata#type-member)
-  \]
+  - [Word.Document.type](/javascript/api/word/word.document#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +24,8 @@ fields:
       Represents a standard document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Document"'
   - name: frameset
     uid: word!Word.DocumentType.frameset:member
@@ -38,8 +34,8 @@ fields:
       Represents a frameset document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Frameset"'
   - name: template
     uid: word!Word.DocumentType.template:member
@@ -48,6 +44,6 @@ fields:
       Represents a document template.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Template"'

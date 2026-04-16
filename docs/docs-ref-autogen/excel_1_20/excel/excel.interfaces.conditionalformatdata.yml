@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.ConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `conditionalFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionData.items](/javascript/api/excel/excel.interfaces.conditionalformatcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.conditionalformatcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeAreasData.conditionalFormats](/javascript/api/excel/excel.interfaces.rangeareasdata#conditionalformats-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeData.conditionalFormats](/javascript/api/excel/excel.interfaces.rangedata#conditionalformats-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -38,8 +20,8 @@ properties:
       Returns the cell value conditional format properties if the current
       conditional format is a `CellValue` type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +40,8 @@ properties:
       Returns the cell value conditional format properties if the current
       conditional format is a `CellValue` type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -78,8 +60,8 @@ properties:
       Returns the color scale conditional format properties if the current
       conditional format is a `ColorScale` type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +80,8 @@ properties:
       Returns the color scale conditional format properties if the current
       conditional format is a `ColorScale` type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -120,8 +102,8 @@ properties:
       Returns the custom conditional format properties if the current
       conditional format is a custom type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -139,8 +121,8 @@ properties:
       Returns the custom conditional format properties if the current
       conditional format is a custom type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -158,8 +140,8 @@ properties:
       Returns the data bar properties if the current conditional format is a
       data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -177,8 +159,8 @@ properties:
       Returns the data bar properties if the current conditional format is a
       data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -196,8 +178,8 @@ properties:
       Returns the icon set conditional format properties if the current
       conditional format is an `IconSet` type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -215,8 +197,8 @@ properties:
       Returns the icon set conditional format properties if the current
       conditional format is an `IconSet` type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -234,8 +216,8 @@ properties:
       The priority of the conditional format in the current
       `ConditionalFormatCollection`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -251,8 +233,8 @@ properties:
       Returns the preset criteria conditional format. See
       `Excel.PresetCriteriaConditionalFormat` for more details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -271,8 +253,8 @@ properties:
       Returns the preset criteria conditional format. See
       `Excel.PresetCriteriaConditionalFormat` for more details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -299,8 +281,8 @@ properties:
       a new copy of the object at that new priority location if you want to make
       further changes to it.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -317,8 +299,8 @@ properties:
       formats shall take effect on that cell. Value is `null` on data bars, icon
       sets, and color scales as there's no concept of `StopIfTrue` for these.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -335,8 +317,8 @@ properties:
       conditional format is a text type. For example, to format cells matching
       the word "Text".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -356,8 +338,8 @@ properties:
       conditional format is a text type. For example, to format cells matching
       the word "Text".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -376,8 +358,8 @@ properties:
       conditional format is a `TopBottom` type. For example, to format the top
       10% or bottom 10 items.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -397,8 +379,8 @@ properties:
       conditional format is a `TopBottom` type. For example, to format the top
       10% or bottom 10 items.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -415,8 +397,8 @@ properties:
     fullName: type
     summary: A type of conditional format. Only one can be set at a time.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

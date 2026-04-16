@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.BooleanCellValue
 summary: Represents the value of a cell containing a Boolean.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -20,9 +20,8 @@ properties:
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +37,8 @@ properties:
       Represents the value that would be returned by `Range.values` for a cell
       with this value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +52,8 @@ properties:
     fullName: layouts
     summary: Represents layout information for views of this boolean value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +67,8 @@ properties:
     fullName: properties
     summary: Represents additional properties of this boolean value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -95,9 +91,8 @@ properties:
       in this `BooleanCellValue`<!-- -->. This information can be used for
       branding in card view.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +108,8 @@ properties:
       Represents the cell values which are referenced within
       `BooleanCellValue.properties`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +123,8 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

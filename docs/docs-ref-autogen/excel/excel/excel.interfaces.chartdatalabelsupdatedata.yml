@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.ChartDataLabelsUpdateData
 summary: >-
   An interface for updating data on the `ChartDataLabels` object, for use in
   `chartDataLabels.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.dataLabels](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#datalabels-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartUpdateData.dataLabels](/javascript/api/excel/excel.interfaces.chartupdatedata#datalabels-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +20,8 @@ properties:
       Specifies if data labels automatically generate appropriate text based on
       context.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +37,8 @@ properties:
       Specifies the format of chart data labels, which includes fill and font
       formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +58,8 @@ properties:
       `Excel.GeometricShapeType` for more details. Value is `null` if the data
       labels are not geometric shapes.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -190,8 +179,8 @@ properties:
       `Excel.ChartTextHorizontalAlignment` for details. This property is valid
       only when the `TextOrientation` of data label is 0.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -209,9 +198,8 @@ properties:
     fullName: leaderLines
     summary: Gets an object that represents the leader lines of the data labels.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -229,8 +217,8 @@ properties:
       Specifies if the number format is linked to the cells. If `true`<!-- -->,
       the number format will change in the labels when it changes in the cells.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -244,8 +232,8 @@ properties:
     fullName: numberFormat
     summary: Specifies the format code for data labels.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -261,8 +249,8 @@ properties:
       Value that represents the position of the data label. See
       `Excel.ChartDataLabelPosition` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -282,8 +270,8 @@ properties:
     fullName: separator
     summary: String representing the separator used for the data labels on a chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -297,8 +285,8 @@ properties:
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -312,8 +300,8 @@ properties:
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -329,9 +317,8 @@ properties:
       Specifies if leader lines are displayed for the data labels. `true` if
       leader lines are shown; otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -345,8 +332,8 @@ properties:
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -360,8 +347,8 @@ properties:
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -375,8 +362,8 @@ properties:
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -390,8 +377,8 @@ properties:
     fullName: showValue
     summary: Specifies if the data label value is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -408,8 +395,8 @@ properties:
       value should either be an integer from -90 to 90 or the integer 180 for
       vertically-oriented text.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -426,8 +413,8 @@ properties:
       `Excel.ChartTextVerticalAlignment` for details. This property is valid
       only when `TextOrientation` of the data label is -90, 90, or 180.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

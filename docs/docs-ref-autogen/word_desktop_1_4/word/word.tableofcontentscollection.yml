@@ -8,14 +8,14 @@ summary: >-
   [Word.TableOfContents](xref:word!Word.TableOfContents:class) objects in a Word
   document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.tablesOfContents](/javascript/api/word/word.document#tablesofcontents-member)
   \]
 
@@ -58,8 +58,8 @@ methods:
     fullName: add(range, options)
     summary: Adds a table of contents to the document at the specified range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -162,8 +162,8 @@ methods:
       field](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
       after the specified range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

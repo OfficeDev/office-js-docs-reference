@@ -13,9 +13,8 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Applicable Outlook
@@ -38,7 +37,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.SpamReportingEventCompletedOptions.moveItemTo](/javascript/api/outlook/office.spamreportingeventcompletedoptions#moveitemto-member)
   \]
 

@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.ChartLegendEntryData
 summary: >-
   An interface describing the data returned by calling
   `chartLegendEntry.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartLegendData.legendEntries](/javascript/api/excel/excel.interfaces.chartlegenddata#legendentries-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLegendEntryCollectionData.items](/javascript/api/excel/excel.interfaces.chartlegendentrycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.chartlegendentrycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: visible
     summary: Represents the visibility of a chart legend entry.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

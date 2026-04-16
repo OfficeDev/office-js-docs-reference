@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.VerticalAlignment
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.RangeFormatData.verticalAlignment](/javascript/api/excel/excel.interfaces.rangeformatdata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeFormatUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#verticalalignment-member)
-  \]
-
-  - \[
+  -
   [Excel.RangeFormat.verticalAlignment](/javascript/api/excel/excel.rangeformat#verticalalignment-member)
   \]
 
@@ -53,34 +45,34 @@ fields:
     uid: excel!Excel.VerticalAlignment.bottom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Bottom"'
   - name: center
     uid: excel!Excel.VerticalAlignment.center:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Center"'
   - name: distributed
     uid: excel!Excel.VerticalAlignment.distributed:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Distributed"'
   - name: justify
     uid: excel!Excel.VerticalAlignment.justify:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Justify"'
   - name: top
     uid: excel!Excel.VerticalAlignment.top:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Top"'

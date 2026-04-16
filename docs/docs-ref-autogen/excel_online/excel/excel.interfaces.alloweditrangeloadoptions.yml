@@ -9,8 +9,8 @@ summary: >-
   `AllowEditRange` object can be used to allow editing of a specific range,
   while maintaining protection on the rest of the worksheet.
 remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +42,8 @@ properties:
       protection is enabled and not paused, this method throws an `AccessDenied`
       error and fails to set the range.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +58,8 @@ properties:
     fullName: isPasswordProtected
     summary: Specifies if the object is password protected.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +79,8 @@ properties:
       with the same string, or if the string is `null` or empty (""), then this
       method throws an `InvalidArgument` error and fails to set the title.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

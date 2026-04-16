@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.LocationDetails
 summary: Represents a location. Read-only.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -23,11 +23,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.EnhancedLocation.getAsync](/javascript/api/outlook/office.enhancedlocation#getasync-member)
   \]
 
-  - \[
+  -
   [Office.EnhancedLocationsChangedEventArgs.enhancedLocations](/javascript/api/outlook/office.enhancedlocationschangedeventargs#enhancedlocations-member)
   \]
 

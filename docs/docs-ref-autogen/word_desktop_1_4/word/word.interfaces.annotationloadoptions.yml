@@ -5,8 +5,8 @@ package: word!
 fullName: Word.Interfaces.AnnotationLoadOptions
 summary: Represents an annotation attached to a paragraph.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +34,8 @@ properties:
     fullName: critiqueAnnotation
     summary: Gets the `CritiqueAnnotation` object.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +53,8 @@ properties:
       Gets the unique identifier, which is meant to be used for easier tracking
       of `Annotation` objects.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -68,8 +68,8 @@ properties:
     fullName: state
     summary: Gets the state of the annotation.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

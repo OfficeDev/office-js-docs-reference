@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.SubtotalLocationType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PivotLayoutData.subtotalLocation](/javascript/api/excel/excel.interfaces.pivotlayoutdata#subtotallocation-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation](/javascript/api/excel/excel.interfaces.pivotlayoutupdatedata#subtotallocation-member)
-  \]
-
-  - \[
+  -
   [Excel.PivotLayout.subtotalLocation](/javascript/api/excel/excel.pivotlayout#subtotallocation-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Subtotals are at the bottom.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AtBottom"'
   - name: atTop
     uid: excel!Excel.SubtotalLocationType.atTop:member
@@ -44,8 +36,8 @@ fields:
       Subtotals are at the top.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AtTop"'
   - name: 'off'
     uid: excel!Excel.SubtotalLocationType.off:member
@@ -54,6 +46,6 @@ fields:
       Subtotals are off.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Off"'

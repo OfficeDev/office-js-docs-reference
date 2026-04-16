@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `ColorScaleConditionalFormat` object,
   for use in `colorScaleConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatUpdateData.colorScale](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#colorscale-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#colorscaleornullobject-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -31,8 +21,8 @@ properties:
       The criteria of the color scale. Midpoint is optional when using a two
       point color scale.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

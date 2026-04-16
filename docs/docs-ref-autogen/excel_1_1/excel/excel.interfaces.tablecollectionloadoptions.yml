@@ -7,24 +7,8 @@ summary: >-
   Represents a collection of all the tables that are part of the workbook or
   worksheet, depending on how it was reached.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.WorkbookLoadOptions.tables](/javascript/api/excel/excel.interfaces.workbookloadoptions#tables-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetCollectionLoadOptions.tables](/javascript/api/excel/excel.interfaces.worksheetcollectionloadoptions#tables-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetLoadOptions.tables](/javascript/api/excel/excel.interfaces.worksheetloadoptions#tables-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -54,8 +38,8 @@ properties:
       For EACH ITEM in the collection: Represents a collection of all the
       columns in the table.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +59,8 @@ properties:
       the table in a given workbook. The value of the identifier remains the
       same even when the table is renamed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +81,8 @@ properties:
       table](https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114)
       article.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -114,8 +98,8 @@ properties:
       For EACH ITEM in the collection: Represents a collection of all the rows
       in the table.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -134,8 +118,8 @@ properties:
       For EACH ITEM in the collection: Specifies if the header row is visible.
       This value can be set to show or remove the header row.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -151,8 +135,8 @@ properties:
       For EACH ITEM in the collection: Specifies if the total row is visible.
       This value can be set to show or remove the total row.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -171,8 +155,8 @@ properties:
       "TableStyleDark1" through "TableStyleDark11". A custom user-defined style
       present in the workbook can also be specified.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

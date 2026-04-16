@@ -5,19 +5,16 @@ package: visio!
 fullName: Visio.CommentCollection
 summary: Represents the CommentCollection for a given Shape.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[ [Visio.Page.comments](/javascript/api/visio/visio.page#comments-member)
-  \]
+  - [Visio.Page.comments](/javascript/api/visio/visio.page#comments-member) \]
 
-  - \[ [Visio.Shape.comments](/javascript/api/visio/visio.shape#comments-member)
-  \]
+  - [Visio.Shape.comments](/javascript/api/visio/visio.shape#comments-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -58,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of Comments.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +71,8 @@ methods:
     fullName: getItem(key)
     summary: Gets the Comment using its name.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

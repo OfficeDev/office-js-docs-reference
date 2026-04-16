@@ -4,29 +4,7 @@ uid: word!Word.Interfaces.PageData:interface
 package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.PageCollectionData.items](/javascript/api/word/word.interfaces.pagecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PageCollectionUpdateData.items](/javascript/api/word/word.interfaces.pagecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PaneData.pages](/javascript/api/word/word.interfaces.panedata#pages-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PaneData.pagesEnclosingViewport](/javascript/api/word/word.interfaces.panedata#pagesenclosingviewport-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeData.pages](/javascript/api/word/word.interfaces.rangedata#pages-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +18,8 @@ properties:
       Gets the height, in points, of the paper defined in the Page Setup dialog
       box.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -57,8 +35,8 @@ properties:
       Gets the index of the page. The page index is 1-based and independent of
       the user's custom page numbering.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +52,8 @@ properties:
       Gets the width, in points, of the paper defined in the Page Setup dialog
       box.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

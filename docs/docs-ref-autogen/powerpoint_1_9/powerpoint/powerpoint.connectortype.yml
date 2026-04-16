@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.ConnectorType
 summary: Specifies the connector type for line shapes.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -53,9 +52,8 @@ fields:
       Curve connector type.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Curve"'
   - name: elbow
     uid: powerpoint!PowerPoint.ConnectorType.elbow:member
@@ -64,9 +62,8 @@ fields:
       Elbow connector type.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Elbow"'
   - name: straight
     uid: powerpoint!PowerPoint.ConnectorType.straight:member
@@ -75,7 +72,6 @@ fields:
       Straight connector type.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Straight"'

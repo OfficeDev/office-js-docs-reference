@@ -12,31 +12,31 @@ summary: >-
   Currently, only rich text, plain text, checkbox, dropdown list, and combo box
   content controls are supported.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Body.contentControls](/javascript/api/word/word.body#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.Document.contentControls](/javascript/api/word/word.document#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.Range.contentControls](/javascript/api/word/word.range#contentcontrols-member)
   \]
 
@@ -105,8 +105,8 @@ methods:
       Gets a content control by its identifier. Throws an `ItemNotFound` error
       if there isn't a content control with the identifier in this collection.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -149,8 +149,8 @@ methods:
     fullName: getByTag(tag)
     summary: Gets the content controls that have the specified tag.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -194,8 +194,8 @@ methods:
     fullName: getByTitle(title)
     summary: Gets the content controls that have the specified title.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -251,8 +251,8 @@ methods:
     fullName: getItem(id)
     summary: Gets a content control by its ID.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -4,29 +4,7 @@ uid: word!Word.Interfaces.TableData:interface
 package: word!
 fullName: Word.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BodyData.tables](/javascript/api/word/word.interfaces.bodydata#tables-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.tables](/javascript/api/word/word.interfaces.contentcontroldata#tables-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCollectionData.items](/javascript/api/word/word.interfaces.tablecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCollectionUpdateData.items](/javascript/api/word/word.interfaces.tablecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableData.tables](/javascript/api/word/word.interfaces.tabledata#tables-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +18,8 @@ properties:
       Specifies the alignment of the table against the page column. The value
       can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +37,8 @@ properties:
     fullName: description
     summary: Specifies the description of the table.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +52,8 @@ properties:
     fullName: fields
     summary: Gets the collection of `Field` objects in the table.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -91,8 +69,8 @@ properties:
       Gets the font. Use this to get and set font name, size, color, and other
       properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -106,8 +84,8 @@ properties:
     fullName: headerRowCount
     summary: Specifies the number of header rows.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -124,8 +102,8 @@ properties:
       can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or
       `justified`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -143,8 +121,8 @@ properties:
     fullName: isUniform
     summary: Indicates whether all of the table rows are uniform.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -158,8 +136,8 @@ properties:
     fullName: nestingLevel
     summary: Gets the nesting level of the table. Top-level tables have level 1.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -173,8 +151,8 @@ properties:
     fullName: rowCount
     summary: Gets the number of rows in the table.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -188,8 +166,8 @@ properties:
     fullName: rows
     summary: Gets all of the table rows.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -205,8 +183,8 @@ properties:
       Specifies the shading color. Color is specified in "\#RRGGBB" format or by
       using the color name.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -223,8 +201,8 @@ properties:
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -238,8 +216,8 @@ properties:
     fullName: styleBandedColumns
     summary: Specifies whether the table has banded columns.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -253,8 +231,8 @@ properties:
     fullName: styleBandedRows
     summary: Specifies whether the table has banded rows.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -271,8 +249,8 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -390,8 +368,8 @@ properties:
     fullName: styleFirstColumn
     summary: Specifies whether the table has a first column with a special style.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -405,8 +383,8 @@ properties:
     fullName: styleLastColumn
     summary: Specifies whether the table has a last column with a special style.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -420,8 +398,8 @@ properties:
     fullName: styleTotalRow
     summary: Specifies whether the table has a total (last) row with a special style.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -435,8 +413,8 @@ properties:
     fullName: tables
     summary: Gets the child tables nested one level deeper.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -450,8 +428,8 @@ properties:
     fullName: title
     summary: Specifies the title of the table.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -465,8 +443,8 @@ properties:
     fullName: values
     summary: Specifies the text values in the table, as a 2D JavaScript array.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -482,8 +460,8 @@ properties:
       Specifies the vertical alignment of every cell in the table. The value can
       be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -501,8 +479,8 @@ properties:
     fullName: width
     summary: Specifies the width of the table in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -7,22 +7,22 @@ summary: >-
   Represents a collection of all the PivotFields that are part of a PivotTable's
   hierarchy.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.FilterPivotHierarchy.fields](/javascript/api/excel/excel.filterpivothierarchy#fields-member)
   \]
 
-  - \[
+  -
   [Excel.PivotHierarchy.fields](/javascript/api/excel/excel.pivothierarchy#fields-member)
   \]
 
-  - \[
+  -
   [Excel.RowColumnPivotHierarchy.fields](/javascript/api/excel/excel.rowcolumnpivothierarchy#fields-member)
   \]
 
@@ -65,8 +65,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of pivot fields in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -81,8 +81,8 @@ methods:
     fullName: getItem(name)
     summary: Gets a PivotField by its name or ID.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -106,8 +106,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

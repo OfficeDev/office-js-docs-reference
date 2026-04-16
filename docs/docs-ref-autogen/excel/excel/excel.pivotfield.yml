@@ -5,22 +5,22 @@ package: excel!
 fullName: Excel.PivotField
 summary: Represents the Excel PivotField.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataPivotHierarchy.field](/javascript/api/excel/excel.datapivothierarchy#field-member)
   \]
 
-  - \[
+  -
   [Excel.PivotFieldCollection.items](/javascript/api/excel/excel.pivotfieldcollection#items-member)
   \]
 
-  - \[
+  -
   [Excel.ShowAsRule.baseField](/javascript/api/excel/excel.showasrule#basefield-member)
   \]
 
@@ -49,8 +49,8 @@ properties:
     fullName: id
     summary: ID of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -64,8 +64,8 @@ properties:
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +79,8 @@ properties:
     fullName: name
     summary: Name of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -94,8 +94,8 @@ properties:
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -109,8 +109,8 @@ properties:
     fullName: subtotals
     summary: Subtotals of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -128,9 +128,8 @@ methods:
       the field. If the provided filters are invalid or cannot be applied, an
       exception is thrown.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -153,9 +152,8 @@ methods:
       Clears all criteria from all of the field's filters. This removes any
       active filtering on the field.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -199,9 +197,8 @@ methods:
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -222,9 +219,8 @@ methods:
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -245,9 +241,8 @@ methods:
     fullName: getFilters()
     summary: Gets all filters currently applied on the field.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -264,9 +259,8 @@ methods:
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -294,9 +288,8 @@ methods:
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -456,8 +449,8 @@ methods:
       be applied based on it, if not sort will be based on the PivotField
       itself.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -479,8 +472,8 @@ methods:
       defines which specific values will be used to sort when there are multiple
       values from the same DataPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -518,8 +511,8 @@ methods:
       defines which specific values will be used to sort when there are multiple
       values from the same DataPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

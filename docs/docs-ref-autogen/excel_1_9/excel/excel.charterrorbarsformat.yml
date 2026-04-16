@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartErrorBarsFormat
 summary: Encapsulates the format properties for chart error bars.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartErrorBars.format](/javascript/api/excel/excel.charterrorbars#format-member)
   \]
 
@@ -41,8 +41,8 @@ properties:
     fullName: line
     summary: Represents the chart line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

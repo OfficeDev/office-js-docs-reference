@@ -5,19 +5,15 @@ package: word!
 fullName: Word.CompatibilityMode
 summary: Specifies the compatibility mode that Word uses when opening the document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.compatibilityMode](/javascript/api/word/word.document#compatibilitymode-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.compatibilityMode](/javascript/api/word/word.interfaces.documentdata#compatibilitymode-member)
   \]
 
 isPreview: false
@@ -30,8 +26,8 @@ fields:
       Current Word version compatibility mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Current"'
   - name: word2003
     uid: word!Word.CompatibilityMode.word2003:member
@@ -40,8 +36,8 @@ fields:
       Word 2003 compatibility mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Word2003"'
   - name: word2007
     uid: word!Word.CompatibilityMode.word2007:member
@@ -50,8 +46,8 @@ fields:
       Word 2007 compatibility mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Word2007"'
   - name: word2010
     uid: word!Word.CompatibilityMode.word2010:member
@@ -60,8 +56,8 @@ fields:
       Word 2010 compatibility mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Word2010"'
   - name: word2013
     uid: word!Word.CompatibilityMode.word2013:member
@@ -70,6 +66,6 @@ fields:
       Word 2013 compatibility mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Word2013"'

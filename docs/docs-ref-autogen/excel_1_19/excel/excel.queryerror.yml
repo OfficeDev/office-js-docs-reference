@@ -5,18 +5,14 @@ package: excel!
 fullName: Excel.QueryError
 summary: An enum that specifies the query load error message.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.QueryData.error](/javascript/api/excel/excel.interfaces.querydata#error-member)
-  \]
-
-  - \[ [Excel.Query.error](/javascript/api/excel/excel.query#error-member) \]
+  - [Excel.Query.error](/javascript/api/excel/excel.query#error-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -28,9 +24,8 @@ fields:
       Download failed.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FailedDownload"'
   - name: failedLoadToDataModel
     uid: excel!Excel.QueryError.failedLoadToDataModel:member
@@ -39,9 +34,8 @@ fields:
       Load to the data model failed.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FailedLoadToDataModel"'
   - name: failedLoadToWorksheet
     uid: excel!Excel.QueryError.failedLoadToWorksheet:member
@@ -50,9 +44,8 @@ fields:
       Load to the worksheet failed.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FailedLoadToWorksheet"'
   - name: failedToCompleteDownload
     uid: excel!Excel.QueryError.failedToCompleteDownload:member
@@ -61,9 +54,8 @@ fields:
       Download did not complete.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FailedToCompleteDownload"'
   - name: none
     uid: excel!Excel.QueryError.none:member
@@ -72,9 +64,8 @@ fields:
       No error.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"None"'
   - name: unknown
     uid: excel!Excel.QueryError.unknown:member
@@ -83,7 +74,6 @@ fields:
       Unknown error.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'

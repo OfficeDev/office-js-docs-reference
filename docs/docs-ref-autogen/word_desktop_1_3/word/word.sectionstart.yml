@@ -5,22 +5,14 @@ package: word!
 fullName: Word.SectionStart
 summary: Specifies the type of section break for the specified item.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.PageSetupData.sectionStart](/javascript/api/word/word.interfaces.pagesetupdata#sectionstart-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PageSetupUpdateData.sectionStart](/javascript/api/word/word.interfaces.pagesetupupdatedata#sectionstart-member)
-  \]
-
-  - \[
+  -
   [Word.PageSetup.sectionStart](/javascript/api/word/word.pagesetup#sectionstart-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Continuous section break.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Continuous"'
   - name: evenPage
     uid: word!Word.SectionStart.evenPage:member
@@ -44,8 +36,8 @@ fields:
       Even page section break.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EvenPage"'
   - name: newColumn
     uid: word!Word.SectionStart.newColumn:member
@@ -54,8 +46,8 @@ fields:
       New column section break.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NewColumn"'
   - name: newPage
     uid: word!Word.SectionStart.newPage:member
@@ -64,8 +56,8 @@ fields:
       New page section break.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NewPage"'
   - name: oddPage
     uid: word!Word.SectionStart.oddPage:member
@@ -74,6 +66,6 @@ fields:
       Odd page section break.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OddPage"'

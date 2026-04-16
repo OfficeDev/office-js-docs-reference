@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.PivotHierarchyData
 summary: >-
   An interface describing the data returned by calling
   `pivotHierarchy.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.pivothierarchycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivothierarchycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

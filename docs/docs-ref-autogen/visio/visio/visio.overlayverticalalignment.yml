@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.OverlayVerticalAlignment
 summary: Represents the Vertical Alignment of the Overlay relative to the shape.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -16,23 +15,20 @@ fields:
     uid: visio!Visio.OverlayVerticalAlignment.bottom:member
     package: visio!
     summary: >-
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Bottom"'
   - name: middle
     uid: visio!Visio.OverlayVerticalAlignment.middle:member
     package: visio!
     summary: >-
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Middle"'
   - name: top
     uid: visio!Visio.OverlayVerticalAlignment.top:member
     package: visio!
     summary: >-
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Top"'

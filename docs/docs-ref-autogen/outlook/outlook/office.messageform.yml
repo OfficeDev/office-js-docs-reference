@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.MessageForm
 summary: Represents the details of the form for composing a new message.
 remarks: >-
-  \[ [API set: Mailbox
-  1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -22,11 +22,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Mailbox.displayNewMessageForm](/javascript/api/outlook/office.mailbox#displaynewmessageform-member)
   \]
 
-  - \[
+  -
   [Office.Mailbox.displayNewMessageFormAsync](/javascript/api/outlook/office.mailbox#displaynewmessageformasync-member)
   \]
 
@@ -44,9 +44,8 @@ properties:
       Outlook item attachment (`Office.MailboxEnums.AttachmentType.Item`<!--
       -->).
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -70,9 +69,8 @@ properties:
     fullName: bccRecipients
     summary: Sets the recipients in the Bcc field of the message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -102,9 +100,8 @@ properties:
     fullName: ccRecipients
     summary: Sets the recipients in the Cc field of the message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -134,9 +131,8 @@ properties:
     fullName: htmlBody
     summary: Sets the body of the message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -163,9 +159,8 @@ properties:
     fullName: subject
     summary: Sets the subject of the message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -192,9 +187,8 @@ properties:
     fullName: toRecipients
     summary: Sets the recipients in the To field of the message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

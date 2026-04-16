@@ -5,22 +5,14 @@ package: word!
 fullName: Word.PageColor
 summary: Specifies the page color options in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.pageColor](/javascript/api/word/word.interfaces.viewdata#pagecolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.pageColor](/javascript/api/word/word.interfaces.viewupdatedata#pagecolor-member)
-  \]
-
-  - \[ [Word.View.pageColor](/javascript/api/word/word.view#pagecolor-member) \]
+  - [Word.View.pageColor](/javascript/api/word/word.view#pagecolor-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +24,8 @@ fields:
       Inverse.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Inverse"'
   - name: none
     uid: word!Word.PageColor.none:member
@@ -42,8 +34,8 @@ fields:
       None.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: sepia
     uid: word!Word.PageColor.sepia:member
@@ -52,6 +44,6 @@ fields:
       Sepia.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Sepia"'

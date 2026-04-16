@@ -5,16 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.ShapeGetImageFormatType
 summary: Represents the format of an image.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.ShapeGetImageOptions.format](/javascript/api/powerpoint/powerpoint.shapegetimageoptions#format-member)
   \]
 
@@ -67,7 +66,6 @@ fields:
       The picture is in PNG format.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Png"'

@@ -5,19 +5,15 @@ package: word!
 fullName: Word.ProtectionType
 summary: Specifies the protection type for a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.protectionType](/javascript/api/word/word.document#protectiontype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.protectionType](/javascript/api/word/word.interfaces.documentdata#protectiontype-member)
   \]
 
 isPreview: false
@@ -30,8 +26,8 @@ fields:
       Only comments are allowed in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AllowOnlyComments"'
   - name: allowOnlyFormFields
     uid: word!Word.ProtectionType.allowOnlyFormFields:member
@@ -40,8 +36,8 @@ fields:
       Only form fields are allowed in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AllowOnlyFormFields"'
   - name: allowOnlyReading
     uid: word!Word.ProtectionType.allowOnlyReading:member
@@ -50,8 +46,8 @@ fields:
       Only reading is allowed in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AllowOnlyReading"'
   - name: allowOnlyRevisions
     uid: word!Word.ProtectionType.allowOnlyRevisions:member
@@ -60,8 +56,8 @@ fields:
       Only revisions are allowed in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AllowOnlyRevisions"'
   - name: noProtection
     uid: word!Word.ProtectionType.noProtection:member
@@ -70,6 +66,6 @@ fields:
       No protection is applied to the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NoProtection"'

@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.PageContentCollection
 summary: Represents the contents of a page, as a collection of PageContent objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Page.contents](/javascript/api/onenote/onenote.page#contents-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: count
     summary: Returns the number of page contents in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +72,8 @@ methods:
       Gets a PageContent object by ID or by its index in the collection.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +94,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a page content on its position in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples

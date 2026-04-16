@@ -5,22 +5,14 @@ package: word!
 fullName: Word.ReadingLayoutMargin
 summary: Specifies the margin options in reading layout view in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.readingLayoutTruncateMargins](/javascript/api/word/word.interfaces.viewdata#readinglayouttruncatemargins-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.readingLayoutTruncateMargins](/javascript/api/word/word.interfaces.viewupdatedata#readinglayouttruncatemargins-member)
-  \]
-
-  - \[
+  -
   [Word.View.readingLayoutTruncateMargins](/javascript/api/word/word.view#readinglayouttruncatemargins-member)
   \]
 
@@ -35,8 +27,8 @@ fields:
       margins based on the available space.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Automatic"'
   - name: full
     uid: word!Word.ReadingLayoutMargin.full:member
@@ -45,8 +37,8 @@ fields:
       Shows margins.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Full"'
   - name: suppress
     uid: word!Word.ReadingLayoutMargin.suppress:member
@@ -55,6 +47,6 @@ fields:
       Hides margins.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Suppress"'

@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.CardLayoutTableSection
 summary: Represents a section of a card that is arranged as a table in card view.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples
@@ -102,9 +102,8 @@ properties:
     fullName: layout
     summary: Represents the type of layout for this section.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

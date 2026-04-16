@@ -5,8 +5,8 @@ package: word!
 fullName: Word.StatisticType
 summary: Document statistic types.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       Characters in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Characters"'
   - name: charactersWithSpaces
     uid: word!Word.StatisticType.charactersWithSpaces:member
@@ -28,8 +28,8 @@ fields:
       Characters including spaces.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CharactersWithSpaces"'
   - name: farEastCharacters
     uid: word!Word.StatisticType.farEastCharacters:member
@@ -38,8 +38,8 @@ fields:
       Far East (DBCS) characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FarEastCharacters"'
   - name: lines
     uid: word!Word.StatisticType.lines:member
@@ -48,8 +48,8 @@ fields:
       Lines in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lines"'
   - name: pages
     uid: word!Word.StatisticType.pages:member
@@ -58,8 +58,8 @@ fields:
       Pages in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pages"'
   - name: paragraphs
     uid: word!Word.StatisticType.paragraphs:member
@@ -68,8 +68,8 @@ fields:
       Paragraphs in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Paragraphs"'
   - name: words
     uid: word!Word.StatisticType.words:member
@@ -78,6 +78,6 @@ fields:
       Words in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Words"'

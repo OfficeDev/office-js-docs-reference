@@ -5,16 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.InsertSlideFormatting
 summary: Specifies the formatting options for when slides are inserted.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.InsertSlideOptions.formatting](/javascript/api/powerpoint/powerpoint.insertslideoptions#formatting-member)
   \]
 
@@ -55,9 +54,8 @@ fields:
       Copy the source theme into the target presentation and use that theme.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"KeepSourceFormatting"'
   - name: useDestinationTheme
     uid: powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member
@@ -66,7 +64,6 @@ fields:
       Use the existing theme in the target presentation.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"UseDestinationTheme"'

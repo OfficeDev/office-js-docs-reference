@@ -8,15 +8,15 @@ summary: >-
   `condition` defines what criteria need to be set in order for the filter to
   operate.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.PivotFilters.labelFilter](/javascript/api/excel/excel.pivotfilters#labelfilter-member)
   \]
 
@@ -66,9 +66,8 @@ properties:
       type of comparison is defined by the condition. Note: A numeric string is
       treated as a number when being compared against other numeric strings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +83,8 @@ properties:
       Specifies the condition for the filter, which defines the necessary
       filtering criteria.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +106,8 @@ properties:
       If `true`<!-- -->, filter *excludes* items that meet criteria. The
       default is `false` (filter to include items that meet criteria).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -127,9 +124,8 @@ properties:
       numeric string is treated as a number when being compared against other
       numeric strings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -145,9 +141,8 @@ properties:
       The substring used for the `beginsWith`<!-- -->, `endsWith`<!-- -->, and
       `contains` filter conditions.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -164,9 +159,8 @@ properties:
       numeric string is treated as a number when being compared against other
       numeric strings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

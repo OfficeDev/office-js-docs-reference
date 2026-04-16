@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ConditionalDataBarPositiveFormat
 summary: Represents a conditional format for the positive side of the data bar.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataBarConditionalFormat.positiveFormat](/javascript/api/excel/excel.databarconditionalformat#positiveformat-member)
   \]
 
@@ -29,8 +29,8 @@ properties:
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
       is "" (an empty string) if no border is present or set.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +61,8 @@ properties:
       HTML color code representing the fill color, in the form \#RRGGBB (e.g.,
       "FFA500") or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +76,8 @@ properties:
     fullName: gradientFill
     summary: Specifies if the data bar has a gradient.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,25 +6,7 @@ fullName: OneNote.Interfaces.SectionData
 summary: >-
   An interface describing the data returned by calling `section.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.NotebookData.sections](/javascript/api/onenote/onenote.interfaces.notebookdata#sections-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.SectionCollectionData.items](/javascript/api/onenote/onenote.interfaces.sectioncollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.SectionCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.sectioncollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.SectionGroupData.sections](/javascript/api/onenote/onenote.interfaces.sectiongroupdata#sections-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +18,8 @@ properties:
     fullName: clientUrl
     summary: The client URL of the section. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +33,8 @@ properties:
     fullName: id
     summary: Gets the ID of the section. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +48,8 @@ properties:
     fullName: isEncrypted
     summary: True if this section is encrypted with a password. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +63,8 @@ properties:
     fullName: isLocked
     summary: True if this section is locked. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +78,8 @@ properties:
     fullName: name
     summary: Gets the name of the section. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +93,8 @@ properties:
     fullName: pages
     summary: The collection of pages in the section. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -132,9 +108,8 @@ properties:
     fullName: webUrl
     summary: The web URL of the page. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

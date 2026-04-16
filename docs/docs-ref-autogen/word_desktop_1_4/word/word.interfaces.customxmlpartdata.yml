@@ -6,37 +6,7 @@ fullName: Word.Interfaces.CustomXmlPartData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPart.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CustomXmlNodeData.ownerPart](/javascript/api/word/word.interfaces.customxmlnodedata#ownerpart-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartCollectionData.items](/javascript/api/word/word.interfaces.customxmlpartcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlpartcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartScopedCollectionData.items](/javascript/api/word/word.interfaces.customxmlpartscopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlpartscopedcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.customXmlParts](/javascript/api/word/word.interfaces.documentdata#customxmlparts-member)
-  \]
-
-  - \[
-  [Word.Interfaces.XmlMappingData.customXmlPart](/javascript/api/word/word.interfaces.xmlmappingdata#customxmlpart-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -48,8 +18,8 @@ properties:
     fullName: builtIn
     summary: Gets whether the `CustomXmlPart` is built-in.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -65,8 +35,8 @@ properties:
       Gets the root element of a bound region of data in the document. If the
       region is empty, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +50,8 @@ properties:
     fullName: id
     summary: Gets the ID of the custom XML part.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +67,8 @@ properties:
       Gets the set of namespace prefix mappings used against the current
       `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -114,8 +84,8 @@ properties:
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -131,8 +101,8 @@ properties:
       Specifies a `CustomXmlSchemaCollection` object representing the set of
       schemas attached to a bound region of data in the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -146,8 +116,8 @@ properties:
     fullName: xml
     summary: Gets the XML representation of the current `CustomXmlPart` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,8 +5,8 @@ package: word!
 fullName: Word.InsertLocation
 summary: Represents the insertion location type.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   To be used with an API call, such as `obj.insertSomething(newStuff,
@@ -48,8 +48,8 @@ fields:
       Add content after the contents of the calling object.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"After"'
   - name: before
     uid: word!Word.InsertLocation.before:member
@@ -58,8 +58,8 @@ fields:
       Add content before the contents of the calling object.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Before"'
   - name: end
     uid: word!Word.InsertLocation.end:member
@@ -68,8 +68,8 @@ fields:
       Append content to the contents of the calling object.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"End"'
   - name: replace
     uid: word!Word.InsertLocation.replace:member
@@ -78,8 +78,8 @@ fields:
       Replace the contents of the current object.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Replace"'
   - name: start
     uid: word!Word.InsertLocation.start:member
@@ -88,6 +88,6 @@ fields:
       Prepend content to the contents of the calling object.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Start"'

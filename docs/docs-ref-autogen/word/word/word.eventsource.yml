@@ -7,51 +7,51 @@ summary: >-
   An enum that specifies an event's source. It can be local or remote (through
   coauthoring).
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CommentEventArgs.source](/javascript/api/word/word.commenteventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlAddedEventArgs.source](/javascript/api/word/word.contentcontroladdedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlDataChangedEventArgs.source](/javascript/api/word/word.contentcontroldatachangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlDeletedEventArgs.source](/javascript/api/word/word.contentcontroldeletedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlEnteredEventArgs.source](/javascript/api/word/word.contentcontrolenteredeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlExitedEventArgs.source](/javascript/api/word/word.contentcontrolexitedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlSelectionChangedEventArgs.source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ParagraphAddedEventArgs.source](/javascript/api/word/word.paragraphaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ParagraphChangedEventArgs.source](/javascript/api/word/word.paragraphchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Word.ParagraphDeletedEventArgs.source](/javascript/api/word/word.paragraphdeletedeventargs#source-member)
   \]
 
@@ -104,8 +104,8 @@ fields:
       Local source.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
@@ -114,6 +114,6 @@ fields:
       Remote source.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Remote"'

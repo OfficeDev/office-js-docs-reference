@@ -5,8 +5,9 @@ package: word!
 fullName: Word.ExportOptimizeFor
 summary: Specifies the optimization target for document export.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
 
   #### Examples
 
@@ -47,8 +48,8 @@ fields:
       Optimizes for on-screen display.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OnScreen"'
   - name: print
     uid: word!Word.ExportOptimizeFor.print:member
@@ -57,6 +58,6 @@ fields:
       Optimizes for print.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Print"'

@@ -7,16 +7,8 @@ summary: >-
   Provides information based on current system culture settings. This includes
   the culture names, number formatting, and other culturally dependent settings.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ApplicationLoadOptions.cultureInfo](/javascript/api/excel/excel.interfaces.applicationloadoptions#cultureinfo-member)
-  \]
+  [API set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +38,8 @@ properties:
       Defines the culturally appropriate format of displaying date and time.
       This is based on current system culture settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +58,8 @@ properties:
       Gets the culture name in the format languagecode2-country/regioncode2
       (e.g., "zh-cn" or "en-us"). This is based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +75,8 @@ properties:
       Defines the culturally appropriate format of displaying numbers. This is
       based on current system culture settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

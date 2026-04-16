@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ShapeTextVerticalOverflow
 summary: Specifies the vertical overflow for the text frame in a shape.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TextFrameData.verticalOverflow](/javascript/api/excel/excel.interfaces.textframedata#verticaloverflow-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TextFrameUpdateData.verticalOverflow](/javascript/api/excel/excel.interfaces.textframeupdatedata#verticaloverflow-member)
-  \]
-
-  - \[
+  -
   [Excel.TextFrame.verticalOverflow](/javascript/api/excel/excel.textframe#verticaloverflow-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Hide text that does not fit vertically within the text frame.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Clip"'
   - name: ellipsis
     uid: excel!Excel.ShapeTextVerticalOverflow.ellipsis:member
@@ -45,8 +37,8 @@ fields:
       ellipsis (...) at the end of the visible text.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Ellipsis"'
   - name: overflow
     uid: excel!Excel.ShapeTextVerticalOverflow.overflow:member
@@ -56,6 +48,6 @@ fields:
       bottom, or both depending on the text alignment).
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Overflow"'

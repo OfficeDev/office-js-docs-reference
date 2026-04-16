@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.BoundingBox
 summary: Represents the BoundingBox of the shape.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +20,8 @@ properties:
       The distance between the top and bottom edges of the bounding box of the
       shape, excluding any data graphics associated with the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -39,9 +37,8 @@ properties:
       The distance between the left and right edges of the bounding box of the
       shape, excluding any data graphics associated with the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +52,8 @@ properties:
     fullName: x
     summary: An integer that specifies the x-coordinate of the bounding box.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +67,8 @@ properties:
     fullName: 'y'
     summary: An integer that specifies the y-coordinate of the bounding box.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

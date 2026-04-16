@@ -5,27 +5,18 @@ package: powerpoint!
 fullName: PowerPoint.TableStyle
 summary: Represents the available built-in table styles.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
-  [PowerPoint.Interfaces.TableStyleSettingsData.style](/javascript/api/powerpoint/powerpoint.interfaces.tablestylesettingsdata#style-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.TableStyleSettingsUpdateData.style](/javascript/api/powerpoint/powerpoint.interfaces.tablestylesettingsupdatedata#style-member)
-  \]
-
-  - \[
+  -
   [PowerPoint.TableAddOptions.style](/javascript/api/powerpoint/powerpoint.tableaddoptions#style-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableStyleSettings.style](/javascript/api/powerpoint/powerpoint.tablestylesettings#style-member)
   \]
 
@@ -39,9 +30,8 @@ fields:
       Specifies the style "Dark Style 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1"'
   - name: darkStyle1Accent1
     uid: powerpoint!PowerPoint.TableStyle.darkStyle1Accent1:member
@@ -50,9 +40,8 @@ fields:
       Specifies the style "Dark style 1 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1Accent1"'
   - name: darkStyle1Accent2
     uid: powerpoint!PowerPoint.TableStyle.darkStyle1Accent2:member
@@ -61,9 +50,8 @@ fields:
       Specifies the style "Dark style 1 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1Accent2"'
   - name: darkStyle1Accent3
     uid: powerpoint!PowerPoint.TableStyle.darkStyle1Accent3:member
@@ -72,9 +60,8 @@ fields:
       Specifies the style "Dark style 1 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1Accent3"'
   - name: darkStyle1Accent4
     uid: powerpoint!PowerPoint.TableStyle.darkStyle1Accent4:member
@@ -83,9 +70,8 @@ fields:
       Specifies the style "Dark style 1 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1Accent4"'
   - name: darkStyle1Accent5
     uid: powerpoint!PowerPoint.TableStyle.darkStyle1Accent5:member
@@ -94,9 +80,8 @@ fields:
       Specifies the style "Dark style 1 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1Accent5"'
   - name: darkStyle1Accent6
     uid: powerpoint!PowerPoint.TableStyle.darkStyle1Accent6:member
@@ -105,9 +90,8 @@ fields:
       Specifies the style "Dark style 1 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle1Accent6"'
   - name: darkStyle2
     uid: powerpoint!PowerPoint.TableStyle.darkStyle2:member
@@ -116,9 +100,8 @@ fields:
       Specifies the style "Dark Style 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle2"'
   - name: darkStyle2Accent1
     uid: powerpoint!PowerPoint.TableStyle.darkStyle2Accent1:member
@@ -127,9 +110,8 @@ fields:
       Specifies the style "Dark style 2 - Accent 1/Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle2Accent1"'
   - name: darkStyle2Accent2
     uid: powerpoint!PowerPoint.TableStyle.darkStyle2Accent2:member
@@ -138,9 +120,8 @@ fields:
       Specifies the style "Dark style 2 - Accent 3/Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle2Accent2"'
   - name: darkStyle2Accent3
     uid: powerpoint!PowerPoint.TableStyle.darkStyle2Accent3:member
@@ -149,9 +130,8 @@ fields:
       Specifies the style "Dark style 2 - Accent 5/Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"DarkStyle2Accent3"'
   - name: lightStyle1
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1:member
@@ -160,9 +140,8 @@ fields:
       Specifies the style "Light Style 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1"'
   - name: lightStyle1Accent1
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1Accent1:member
@@ -171,9 +150,8 @@ fields:
       Specifies the style "Light style 1 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1Accent1"'
   - name: lightStyle1Accent2
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1Accent2:member
@@ -182,9 +160,8 @@ fields:
       Specifies the style "Light style 1 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1Accent2"'
   - name: lightStyle1Accent3
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1Accent3:member
@@ -193,9 +170,8 @@ fields:
       Specifies the style "Light style 1 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1Accent3"'
   - name: lightStyle1Accent4
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1Accent4:member
@@ -204,9 +180,8 @@ fields:
       Specifies the style "Light style 1 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1Accent4"'
   - name: lightStyle1Accent5
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1Accent5:member
@@ -215,9 +190,8 @@ fields:
       Specifies the style "Light style 1 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1Accent5"'
   - name: lightStyle1Accent6
     uid: powerpoint!PowerPoint.TableStyle.lightStyle1Accent6:member
@@ -226,9 +200,8 @@ fields:
       Specifies the style "Light style 1 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle1Accent6"'
   - name: lightStyle2
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2:member
@@ -237,9 +210,8 @@ fields:
       Specifies the style "Light Style 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2"'
   - name: lightStyle2Accent1
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2Accent1:member
@@ -248,9 +220,8 @@ fields:
       Specifies the style "Light style 2 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2Accent1"'
   - name: lightStyle2Accent2
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2Accent2:member
@@ -259,9 +230,8 @@ fields:
       Specifies the style "Light style 2 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2Accent2"'
   - name: lightStyle2Accent3
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2Accent3:member
@@ -270,9 +240,8 @@ fields:
       Specifies the style "Light style 2 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2Accent3"'
   - name: lightStyle2Accent4
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2Accent4:member
@@ -281,9 +250,8 @@ fields:
       Specifies the style "Light style 2 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2Accent4"'
   - name: lightStyle2Accent5
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2Accent5:member
@@ -292,9 +260,8 @@ fields:
       Specifies the style "Light style 2 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2Accent5"'
   - name: lightStyle2Accent6
     uid: powerpoint!PowerPoint.TableStyle.lightStyle2Accent6:member
@@ -303,9 +270,8 @@ fields:
       Specifies the style "Light style 2 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle2Accent6"'
   - name: lightStyle3
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3:member
@@ -314,9 +280,8 @@ fields:
       Specifies the style "Light Style 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3"'
   - name: lightStyle3Accent1
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3Accent1:member
@@ -325,9 +290,8 @@ fields:
       Specifies the style "Light style 3 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3Accent1"'
   - name: lightStyle3Accent2
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3Accent2:member
@@ -336,9 +300,8 @@ fields:
       Specifies the style "Light style 3 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3Accent2"'
   - name: lightStyle3Accent3
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3Accent3:member
@@ -347,9 +310,8 @@ fields:
       Specifies the style "Light style 3 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3Accent3"'
   - name: lightStyle3Accent4
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3Accent4:member
@@ -358,9 +320,8 @@ fields:
       Specifies the style "Light style 3 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3Accent4"'
   - name: lightStyle3Accent5
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3Accent5:member
@@ -369,9 +330,8 @@ fields:
       Specifies the style "Light style 3 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3Accent5"'
   - name: lightStyle3Accent6
     uid: powerpoint!PowerPoint.TableStyle.lightStyle3Accent6:member
@@ -380,9 +340,8 @@ fields:
       Specifies the style "Light style 3 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LightStyle3Accent6"'
   - name: mediumStyle1
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1:member
@@ -391,9 +350,8 @@ fields:
       Specifies the style "Medium Style 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1"'
   - name: mediumStyle1Accent1
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1Accent1:member
@@ -402,9 +360,8 @@ fields:
       Specifies the style "Medium style 1 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1Accent1"'
   - name: mediumStyle1Accent2
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1Accent2:member
@@ -413,9 +370,8 @@ fields:
       Specifies the style "Medium style 1 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1Accent2"'
   - name: mediumStyle1Accent3
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1Accent3:member
@@ -424,9 +380,8 @@ fields:
       Specifies the style "Medium style 1 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1Accent3"'
   - name: mediumStyle1Accent4
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1Accent4:member
@@ -435,9 +390,8 @@ fields:
       Specifies the style "Medium style 1 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1Accent4"'
   - name: mediumStyle1Accent5
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1Accent5:member
@@ -446,9 +400,8 @@ fields:
       Specifies the style "Medium style 1 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1Accent5"'
   - name: mediumStyle1Accent6
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle1Accent6:member
@@ -457,9 +410,8 @@ fields:
       Specifies the style "Medium style 1 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle1Accent6"'
   - name: mediumStyle2
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2:member
@@ -468,9 +420,8 @@ fields:
       Specifies the style "Medium Style 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2"'
   - name: mediumStyle2Accent1
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2Accent1:member
@@ -479,9 +430,8 @@ fields:
       Specifies the style "Medium style 2 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2Accent1"'
   - name: mediumStyle2Accent2
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2Accent2:member
@@ -490,9 +440,8 @@ fields:
       Specifies the style "Medium style 2 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2Accent2"'
   - name: mediumStyle2Accent3
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2Accent3:member
@@ -501,9 +450,8 @@ fields:
       Specifies the style "Medium style 2 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2Accent3"'
   - name: mediumStyle2Accent4
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2Accent4:member
@@ -512,9 +460,8 @@ fields:
       Specifies the style "Medium style 2 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2Accent4"'
   - name: mediumStyle2Accent5
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2Accent5:member
@@ -523,9 +470,8 @@ fields:
       Specifies the style "Medium style 2 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2Accent5"'
   - name: mediumStyle2Accent6
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle2Accent6:member
@@ -534,9 +480,8 @@ fields:
       Specifies the style "Medium style 2 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle2Accent6"'
   - name: mediumStyle3
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3:member
@@ -545,9 +490,8 @@ fields:
       Specifies the style "Medium Style 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3"'
   - name: mediumStyle3Accent1
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3Accent1:member
@@ -556,9 +500,8 @@ fields:
       Specifies the style "Medium style 3 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3Accent1"'
   - name: mediumStyle3Accent2
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3Accent2:member
@@ -567,9 +510,8 @@ fields:
       Specifies the style "Medium style 3 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3Accent2"'
   - name: mediumStyle3Accent3
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3Accent3:member
@@ -578,9 +520,8 @@ fields:
       Specifies the style "Medium style 3 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3Accent3"'
   - name: mediumStyle3Accent4
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3Accent4:member
@@ -589,9 +530,8 @@ fields:
       Specifies the style "Medium style 3 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3Accent4"'
   - name: mediumStyle3Accent5
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3Accent5:member
@@ -600,9 +540,8 @@ fields:
       Specifies the style "Medium style 3 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3Accent5"'
   - name: mediumStyle3Accent6
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle3Accent6:member
@@ -611,9 +550,8 @@ fields:
       Specifies the style "Medium style 3 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle3Accent6"'
   - name: mediumStyle4
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4:member
@@ -622,9 +560,8 @@ fields:
       Specifies the style "Medium Style 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4"'
   - name: mediumStyle4Accent1
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4Accent1:member
@@ -633,9 +570,8 @@ fields:
       Specifies the style "Medium style 4 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4Accent1"'
   - name: mediumStyle4Accent2
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4Accent2:member
@@ -644,9 +580,8 @@ fields:
       Specifies the style "Medium style 4 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4Accent2"'
   - name: mediumStyle4Accent3
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4Accent3:member
@@ -655,9 +590,8 @@ fields:
       Specifies the style "Medium style 4 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4Accent3"'
   - name: mediumStyle4Accent4
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4Accent4:member
@@ -666,9 +600,8 @@ fields:
       Specifies the style "Medium style 4 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4Accent4"'
   - name: mediumStyle4Accent5
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4Accent5:member
@@ -677,9 +610,8 @@ fields:
       Specifies the style "Medium style 4 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4Accent5"'
   - name: mediumStyle4Accent6
     uid: powerpoint!PowerPoint.TableStyle.mediumStyle4Accent6:member
@@ -688,9 +620,8 @@ fields:
       Specifies the style "Medium style 4 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediumStyle4Accent6"'
   - name: noStyleNoGrid
     uid: powerpoint!PowerPoint.TableStyle.noStyleNoGrid:member
@@ -699,9 +630,8 @@ fields:
       Specifies the style "No style, No grid" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"NoStyleNoGrid"'
   - name: noStyleTableGrid
     uid: powerpoint!PowerPoint.TableStyle.noStyleTableGrid:member
@@ -710,9 +640,8 @@ fields:
       Specifies the style "No style, Table grid" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"NoStyleTableGrid"'
   - name: themedStyle1Accent1
     uid: powerpoint!PowerPoint.TableStyle.themedStyle1Accent1:member
@@ -721,9 +650,8 @@ fields:
       Specifies the style "Themed style 1 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle1Accent1"'
   - name: themedStyle1Accent2
     uid: powerpoint!PowerPoint.TableStyle.themedStyle1Accent2:member
@@ -732,9 +660,8 @@ fields:
       Specifies the style "Themed style 1 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle1Accent2"'
   - name: themedStyle1Accent3
     uid: powerpoint!PowerPoint.TableStyle.themedStyle1Accent3:member
@@ -743,9 +670,8 @@ fields:
       Specifies the style "Themed style 1 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle1Accent3"'
   - name: themedStyle1Accent4
     uid: powerpoint!PowerPoint.TableStyle.themedStyle1Accent4:member
@@ -754,9 +680,8 @@ fields:
       Specifies the style "Themed style 1 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle1Accent4"'
   - name: themedStyle1Accent5
     uid: powerpoint!PowerPoint.TableStyle.themedStyle1Accent5:member
@@ -765,9 +690,8 @@ fields:
       Specifies the style "Themed style 1 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle1Accent5"'
   - name: themedStyle1Accent6
     uid: powerpoint!PowerPoint.TableStyle.themedStyle1Accent6:member
@@ -776,9 +700,8 @@ fields:
       Specifies the style "Themed style 1 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle1Accent6"'
   - name: themedStyle2Accent1
     uid: powerpoint!PowerPoint.TableStyle.themedStyle2Accent1:member
@@ -787,9 +710,8 @@ fields:
       Specifies the style "Themed style 2 - Accent 1" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle2Accent1"'
   - name: themedStyle2Accent2
     uid: powerpoint!PowerPoint.TableStyle.themedStyle2Accent2:member
@@ -798,9 +720,8 @@ fields:
       Specifies the style "Themed style 2 - Accent 2" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle2Accent2"'
   - name: themedStyle2Accent3
     uid: powerpoint!PowerPoint.TableStyle.themedStyle2Accent3:member
@@ -809,9 +730,8 @@ fields:
       Specifies the style "Themed style 2 - Accent 3" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle2Accent3"'
   - name: themedStyle2Accent4
     uid: powerpoint!PowerPoint.TableStyle.themedStyle2Accent4:member
@@ -820,9 +740,8 @@ fields:
       Specifies the style "Themed style 2 - Accent 4" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle2Accent4"'
   - name: themedStyle2Accent5
     uid: powerpoint!PowerPoint.TableStyle.themedStyle2Accent5:member
@@ -831,9 +750,8 @@ fields:
       Specifies the style "Themed style 2 - Accent 5" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle2Accent5"'
   - name: themedStyle2Accent6
     uid: powerpoint!PowerPoint.TableStyle.themedStyle2Accent6:member
@@ -842,7 +760,6 @@ fields:
       Specifies the style "Themed style 2 - Accent 6" in UI.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThemedStyle2Accent6"'

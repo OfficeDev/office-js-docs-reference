@@ -7,8 +7,8 @@ summary: >-
   Represents a checkbox. This is a cell control that allows a user to toggle the
   boolean value in a cell.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples

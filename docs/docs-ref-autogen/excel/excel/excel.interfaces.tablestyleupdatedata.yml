@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.TableStyleUpdateData
 summary: >-
   An interface for updating data on the `TableStyle` object, for use in
   `tableStyle.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableUpdateData.tableStyle](/javascript/api/excel/excel.interfaces.tableupdatedata#tablestyle-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: name
     summary: Specifies the name of the table style.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

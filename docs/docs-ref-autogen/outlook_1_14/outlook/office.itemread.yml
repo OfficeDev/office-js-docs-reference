@@ -23,12 +23,10 @@ summary: >-
 
 
   - [MessageRead](xref:outlook!Office.MessageRead:interface)
-remarks: >-
+remarks: |-
   #### Used by
 
-
-  - \[ [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#item-member)
-  \]
+  - [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#item-member) \]
 
 isPreview: false
 isDeprecated: false

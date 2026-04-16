@@ -7,22 +7,14 @@ summary: >-
   Specifies whether the gutter style should conform to left-to-right text flow
   or right-to-left text flow.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.PageSetupData.gutterStyle](/javascript/api/word/word.interfaces.pagesetupdata#gutterstyle-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PageSetupUpdateData.gutterStyle](/javascript/api/word/word.interfaces.pagesetupupdatedata#gutterstyle-member)
-  \]
-
-  - \[
+  -
   [Word.PageSetup.gutterStyle](/javascript/api/word/word.pagesetup#gutterstyle-member)
   \]
 
@@ -36,8 +28,8 @@ fields:
       Gutter style for bidirectional text flow. This is mainly right to left.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bidirectional"'
   - name: latin
     uid: word!Word.GutterStyle.latin:member
@@ -46,6 +38,6 @@ fields:
       Gutter style for Latin text flow. This is mainly left to right.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Latin"'

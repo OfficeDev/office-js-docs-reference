@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartAxisFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartAxisFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.format](/javascript/api/excel/excel.interfaces.chartaxisdata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,8 +20,8 @@ properties:
       Specifies the font attributes (font name, font size, color, etc.) for a
       chart axis element.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -41,8 +35,8 @@ properties:
     fullName: line
     summary: Specifies chart line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

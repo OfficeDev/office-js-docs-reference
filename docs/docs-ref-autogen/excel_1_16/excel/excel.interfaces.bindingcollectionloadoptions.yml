@@ -7,16 +7,8 @@ summary: >-
   Represents the collection of all the binding objects that are part of the
   workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.WorkbookLoadOptions.bindings](/javascript/api/excel/excel.interfaces.workbookloadoptions#bindings-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +36,8 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Represents the binding identifier.'
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +53,8 @@ properties:
       For EACH ITEM in the collection: Returns the type of the binding. See
       `Excel.BindingType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

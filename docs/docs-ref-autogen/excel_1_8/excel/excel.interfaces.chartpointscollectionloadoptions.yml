@@ -5,20 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions
 summary: A collection of all the chart points within a series inside a chart.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.points](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#points-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesLoadOptions.points](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#points-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,8 +34,8 @@ properties:
     fullName: dataLabel
     summary: 'For EACH ITEM in the collection: Returns the data label of a chart point.'
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -65,8 +53,8 @@ properties:
       For EACH ITEM in the collection: Encapsulates the format properties chart
       point.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -85,8 +73,8 @@ properties:
       For EACH ITEM in the collection: Represents whether a data point has a
       data label. Not applicable for surface charts.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -103,8 +91,8 @@ properties:
       For EACH ITEM in the collection: HTML color code representation of the
       marker background color of a data point (e.g., \#FF0000 represents Red).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +109,8 @@ properties:
       For EACH ITEM in the collection: HTML color code representation of the
       marker foreground color of a data point (e.g., \#FF0000 represents Red).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -140,8 +128,8 @@ properties:
       InvalidArgument error if it's set with a size outside of the supported
       range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -157,8 +145,8 @@ properties:
       For EACH ITEM in the collection: Represents marker style of a chart data
       point. See `Excel.ChartMarkerStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -172,8 +160,8 @@ properties:
     fullName: value
     summary: 'For EACH ITEM in the collection: Returns the value of a chart point.'
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

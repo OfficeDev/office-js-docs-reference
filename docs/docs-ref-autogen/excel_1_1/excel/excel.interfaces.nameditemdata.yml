@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.NamedItemData
 summary: >-
   An interface describing the data returned by calling `namedItem.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.NamedItemCollectionData.items](/javascript/api/excel/excel.interfaces.nameditemcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NamedItemCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.nameditemcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.names](/javascript/api/excel/excel.interfaces.workbookdata#names-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: name
     summary: The name of the object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +35,9 @@ properties:
       Specifies the type of the value returned by the name's formula. See
       `Excel.NamedItemType` for details.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
-      1.7 for
+      [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
+      for
       Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,8 +58,8 @@ properties:
       will return the range address. This API returns the \#VALUE! error in the
       Excel UI if it refers to a user-defined function.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -88,8 +73,8 @@ properties:
     fullName: visible
     summary: Specifies if the object is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

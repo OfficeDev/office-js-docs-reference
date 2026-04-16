@@ -7,22 +7,14 @@ summary: >-
   Specifies how Word displays the reading order and alignment for the specified
   sections.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.PageSetupData.sectionDirection](/javascript/api/word/word.interfaces.pagesetupdata#sectiondirection-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PageSetupUpdateData.sectionDirection](/javascript/api/word/word.interfaces.pagesetupupdatedata#sectiondirection-member)
-  \]
-
-  - \[
+  -
   [Word.PageSetup.sectionDirection](/javascript/api/word/word.pagesetup#sectiondirection-member)
   \]
 
@@ -36,8 +28,8 @@ fields:
       Left-to-right reading order.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.SectionDirection.rightToLeft:member
@@ -46,6 +38,6 @@ fields:
       Right-to-left reading order.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RightToLeft"'

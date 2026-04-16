@@ -6,13 +6,7 @@ fullName: Word.Interfaces.CanvasUpdateData
 summary: >-
   An interface for updating data on the `Canvas` object, for use in
   `canvas.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ShapeUpdateData.canvas](/javascript/api/word/word.interfaces.shapeupdatedata#canvas-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the canvas.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

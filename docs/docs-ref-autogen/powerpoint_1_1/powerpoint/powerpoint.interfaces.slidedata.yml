@@ -4,25 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.SlideData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideData
 summary: An interface describing the data returned by calling `slide.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.SlideCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidecollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideScopedCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidescopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideScopedCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidescopedcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

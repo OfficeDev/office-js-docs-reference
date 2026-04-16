@@ -5,22 +5,14 @@ package: word!
 fullName: Word.TargetBrowser
 summary: Specifies the target web browser for HTML export and web page optimization.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.WebSettingsData.targetBrowser](/javascript/api/word/word.interfaces.websettingsdata#targetbrowser-member)
-  \]
-
-  - \[
-  [Word.Interfaces.WebSettingsUpdateData.targetBrowser](/javascript/api/word/word.interfaces.websettingsupdatedata#targetbrowser-member)
-  \]
-
-  - \[
+  -
   [Word.WebSettings.targetBrowser](/javascript/api/word/word.websettings#targetbrowser-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Microsoft Internet Explorer 4.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ie4"'
   - name: ie5
     uid: word!Word.TargetBrowser.ie5:member
@@ -44,8 +36,8 @@ fields:
       Microsoft Internet Explorer 5.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ie5"'
   - name: ie6
     uid: word!Word.TargetBrowser.ie6:member
@@ -54,8 +46,8 @@ fields:
       Microsoft Internet Explorer 6.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ie6"'
   - name: v3
     uid: word!Word.TargetBrowser.v3:member
@@ -64,8 +56,8 @@ fields:
       Browser version 3.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"V3"'
   - name: v4
     uid: word!Word.TargetBrowser.v4:member
@@ -74,6 +66,6 @@ fields:
       Browser version 4.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"V4"'

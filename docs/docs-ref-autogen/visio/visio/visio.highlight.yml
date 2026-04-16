@@ -5,23 +5,14 @@ package: visio!
 fullName: Visio.Highlight
 summary: Represents the highlight data added to the shape.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
-  [Visio.Interfaces.ShapeViewData.highlight](/javascript/api/visio/visio.interfaces.shapeviewdata#highlight-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeViewUpdateData.highlight](/javascript/api/visio/visio.interfaces.shapeviewupdatedata#highlight-member)
-  \]
-
-  - \[
+  -
   [Visio.ShapeView.highlight](/javascript/api/visio/visio.shapeview#highlight-member)
   \]
 
@@ -40,9 +31,8 @@ properties:
       value between 0 and 0xFF (255), and BB is the blue value between 0 and
       0xFF (255).
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -79,9 +69,8 @@ properties:
       A positive integer that specifies the width of the highlight's stroke in
       pixels.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

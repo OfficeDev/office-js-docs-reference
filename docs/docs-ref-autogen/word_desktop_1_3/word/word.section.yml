@@ -5,23 +5,23 @@ package: word!
 fullName: Word.Section
 summary: Represents a section in a Word document.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Body.parentSection](/javascript/api/word/word.body#parentsection-member)
   \]
 
-  - \[
+  -
   [Word.Body.parentSectionOrNullObject](/javascript/api/word/word.body#parentsectionornullobject-member)
   \]
 
-  - \[
+  -
   [Word.SectionCollection.items](/javascript/api/word/word.sectioncollection#items-member)
   \]
 
@@ -59,8 +59,8 @@ properties:
       Gets the `Body` object of the section. This doesn't include the header,
       footer, and other section metadata.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +76,8 @@ properties:
       Returns a `BorderUniversalCollection` object that represents all the
       borders in the section.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -106,8 +106,8 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the section.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +121,8 @@ properties:
     fullName: protectedForForms
     summary: Specifies if the section is protected for forms.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -137,8 +137,8 @@ methods:
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -197,8 +197,8 @@ methods:
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -240,8 +240,8 @@ methods:
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -283,8 +283,8 @@ methods:
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -345,8 +345,8 @@ methods:
       Gets the next section. Throws an `ItemNotFound` error if this section is
       the last one.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -366,8 +366,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

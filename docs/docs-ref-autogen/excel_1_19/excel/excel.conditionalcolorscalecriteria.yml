@@ -5,24 +5,16 @@ package: excel!
 fullName: Excel.ConditionalColorScaleCriteria
 summary: Represents the criteria of the color scale.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ColorScaleConditionalFormat.criteria](/javascript/api/excel/excel.colorscaleconditionalformat#criteria-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ColorScaleConditionalFormatData.criteria](/javascript/api/excel/excel.interfaces.colorscaleconditionalformatdata#criteria-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria](/javascript/api/excel/excel.interfaces.colorscaleconditionalformatupdatedata#criteria-member)
   \]
 
   #### Examples
@@ -61,8 +53,8 @@ properties:
     fullName: maximum
     summary: The maximum point of the color scale criterion.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -78,8 +70,8 @@ properties:
       The midpoint of the color scale criterion, if the color scale is a 3-color
       scale.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -93,8 +85,8 @@ properties:
     fullName: minimum
     summary: The minimum point of the color scale criterion.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

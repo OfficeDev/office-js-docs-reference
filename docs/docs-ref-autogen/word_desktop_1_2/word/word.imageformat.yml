@@ -5,20 +5,16 @@ package: word!
 fullName: Word.ImageFormat
 summary: Represents image format type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.InlinePicture.imageFormat](/javascript/api/word/word.inlinepicture#imageformat-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureData.imageFormat](/javascript/api/word/word.interfaces.inlinepicturedata#imageformat-member)
   \]
 
   #### Examples
@@ -57,8 +53,8 @@ fields:
       Bitmap image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bmp"'
   - name: emf
     uid: word!Word.ImageFormat.emf:member
@@ -67,8 +63,8 @@ fields:
       Enhanced Metafile image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Emf"'
   - name: exif
     uid: word!Word.ImageFormat.exif:member
@@ -77,8 +73,8 @@ fields:
       Exif image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Exif"'
   - name: gif
     uid: word!Word.ImageFormat.gif:member
@@ -87,8 +83,8 @@ fields:
       GIF image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Gif"'
   - name: icon
     uid: word!Word.ImageFormat.icon:member
@@ -97,8 +93,8 @@ fields:
       Icon image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Icon"'
   - name: jpeg
     uid: word!Word.ImageFormat.jpeg:member
@@ -107,8 +103,8 @@ fields:
       JPEG image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Jpeg"'
   - name: pdf
     uid: word!Word.ImageFormat.pdf:member
@@ -117,8 +113,8 @@ fields:
       PDF image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pdf"'
   - name: pict
     uid: word!Word.ImageFormat.pict:member
@@ -127,8 +123,8 @@ fields:
       PICT image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pict"'
   - name: png
     uid: word!Word.ImageFormat.png:member
@@ -137,8 +133,8 @@ fields:
       PNG image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Png"'
   - name: svg
     uid: word!Word.ImageFormat.svg:member
@@ -147,8 +143,8 @@ fields:
       SVG image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Svg"'
   - name: tiff
     uid: word!Word.ImageFormat.tiff:member
@@ -157,8 +153,8 @@ fields:
       TIFF image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tiff"'
   - name: undefined
     uid: word!Word.ImageFormat.undefined:member
@@ -167,8 +163,8 @@ fields:
       Undefined image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Undefined"'
   - name: unsupported
     uid: word!Word.ImageFormat.unsupported:member
@@ -177,8 +173,8 @@ fields:
       Unsupported image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Unsupported"'
   - name: wmf
     uid: word!Word.ImageFormat.wmf:member
@@ -187,6 +183,6 @@ fields:
       Windows Metafile image format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Wmf"'

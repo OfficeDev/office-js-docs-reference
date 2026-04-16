@@ -5,8 +5,8 @@ package: word!
 fullName: Word.AnnotationSet
 summary: Annotations set produced by the add-in. Currently supporting only critiques.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -81,8 +81,8 @@ properties:
     fullName: critiques
     summary: Critiques.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartPlotAreaPosition
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartPlotArea.position](/javascript/api/excel/excel.chartplotarea#position-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartPlotAreaData.position](/javascript/api/excel/excel.interfaces.chartplotareadata#position-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartPlotAreaUpdateData.position](/javascript/api/excel/excel.interfaces.chartplotareaupdatedata#position-member)
   \]
 
 isPreview: false
@@ -31,13 +23,13 @@ fields:
     uid: excel!Excel.ChartPlotAreaPosition.automatic:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: custom
     uid: excel!Excel.ChartPlotAreaPosition.custom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Custom"'

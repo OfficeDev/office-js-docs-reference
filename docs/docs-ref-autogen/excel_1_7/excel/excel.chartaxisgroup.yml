@@ -5,19 +5,15 @@ package: excel!
 fullName: Excel.ChartAxisGroup
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxis.axisGroup](/javascript/api/excel/excel.chartaxis#axisgroup-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.axisGroup](/javascript/api/excel/excel.interfaces.chartaxisdata#axisgroup-member)
   \]
 
 isPreview: false
@@ -27,13 +23,13 @@ fields:
     uid: excel!Excel.ChartAxisGroup.primary:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Primary"'
   - name: secondary
     uid: excel!Excel.ChartAxisGroup.secondary:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Secondary"'

@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.DelegatePermissions
 summary: This bitmask represents a delegate's permissions on a shared folder.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Applicable Outlook
@@ -18,7 +18,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.SharedProperties.delegatePermissions](/javascript/api/outlook/office.sharedproperties#delegatepermissions-member)
   \]
 

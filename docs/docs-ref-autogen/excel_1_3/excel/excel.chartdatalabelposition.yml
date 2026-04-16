@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartDataLabelPosition
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartDataLabels.position](/javascript/api/excel/excel.chartdatalabels#position-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsData.position](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#position-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsUpdateData.position](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#position-member)
   \]
 
 isPreview: false
@@ -31,83 +23,83 @@ fields:
     uid: excel!Excel.ChartDataLabelPosition.bestFit:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BestFit"'
   - name: bottom
     uid: excel!Excel.ChartDataLabelPosition.bottom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Bottom"'
   - name: callout
     uid: excel!Excel.ChartDataLabelPosition.callout:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Callout"'
   - name: center
     uid: excel!Excel.ChartDataLabelPosition.center:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Center"'
   - name: insideBase
     uid: excel!Excel.ChartDataLabelPosition.insideBase:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"InsideBase"'
   - name: insideEnd
     uid: excel!Excel.ChartDataLabelPosition.insideEnd:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"InsideEnd"'
   - name: invalid
     uid: excel!Excel.ChartDataLabelPosition.invalid:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Invalid"'
   - name: left
     uid: excel!Excel.ChartDataLabelPosition.left:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Left"'
   - name: none
     uid: excel!Excel.ChartDataLabelPosition.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: outsideEnd
     uid: excel!Excel.ChartDataLabelPosition.outsideEnd:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OutsideEnd"'
   - name: right
     uid: excel!Excel.ChartDataLabelPosition.right:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Right"'
   - name: top
     uid: excel!Excel.ChartDataLabelPosition.top:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Top"'

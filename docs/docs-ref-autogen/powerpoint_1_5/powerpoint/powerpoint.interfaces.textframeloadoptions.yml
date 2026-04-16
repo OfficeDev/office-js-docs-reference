@@ -5,25 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.TextFrameLoadOptions
 summary: Represents the text frame of a shape object.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.textFrame](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#textframe-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeLoadOptions.textFrame](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#textframe-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.textFrame](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#textframe-member)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -55,9 +38,8 @@ properties:
       to automatically fit the text to the text frame, to automatically fit the
       text frame to the text, or not perform any automatic sizing.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +53,8 @@ properties:
     fullName: bottomMargin
     summary: Represents the bottom margin, in points, of the text frame.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +68,8 @@ properties:
     fullName: hasText
     summary: Specifies if the text frame contains text.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -103,9 +83,8 @@ properties:
     fullName: leftMargin
     summary: Represents the left margin, in points, of the text frame.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +98,8 @@ properties:
     fullName: rightMargin
     summary: Represents the right margin, in points, of the text frame.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -139,9 +117,8 @@ properties:
       [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) for
       details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -158,9 +135,8 @@ properties:
     fullName: topMargin
     summary: Represents the top margin, in points, of the text frame.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -178,9 +154,8 @@ properties:
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -194,9 +169,8 @@ properties:
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

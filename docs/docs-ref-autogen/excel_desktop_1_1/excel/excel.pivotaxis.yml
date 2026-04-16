@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.PivotAxis
 summary: Represents the axis from which to get the PivotItems.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       The column axis.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Column"'
   - name: data
     uid: excel!Excel.PivotAxis.data:member
@@ -28,8 +28,8 @@ fields:
       The data axis.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Data"'
   - name: filter
     uid: excel!Excel.PivotAxis.filter:member
@@ -38,8 +38,8 @@ fields:
       The filter axis.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Filter"'
   - name: row
     uid: excel!Excel.PivotAxis.row:member
@@ -48,8 +48,8 @@ fields:
       The row axis.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Row"'
   - name: unknown
     uid: excel!Excel.PivotAxis.unknown:member
@@ -58,6 +58,6 @@ fields:
       The axis or region is unknown or unsupported.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

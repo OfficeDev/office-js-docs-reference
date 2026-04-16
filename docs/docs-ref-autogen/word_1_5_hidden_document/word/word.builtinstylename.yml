@@ -5,8 +5,8 @@ package: word!
 fullName: Word.BuiltInStyleName
 summary: Represents the built-in style in a Word document.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi
@@ -17,63 +17,22 @@ remarks: >-
   #### Used by
 
 
-  - \[
-  [Word.Body.styleBuiltIn](/javascript/api/word/word.body#stylebuiltin-member)
+  - [Word.Body.styleBuiltIn](/javascript/api/word/word.body#stylebuiltin-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.styleBuiltIn](/javascript/api/word/word.contentcontrol#stylebuiltin-member)
   \]
 
-  - \[
-  [Word.Interfaces.BodyData.styleBuiltIn](/javascript/api/word/word.interfaces.bodydata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BodyUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.bodyupdatedata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.styleBuiltIn](/javascript/api/word/word.interfaces.contentcontroldata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.contentcontrolupdatedata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphData.styleBuiltIn](/javascript/api/word/word.interfaces.paragraphdata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.paragraphupdatedata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeData.styleBuiltIn](/javascript/api/word/word.interfaces.rangedata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.rangeupdatedata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableData.styleBuiltIn](/javascript/api/word/word.interfaces.tabledata#stylebuiltin-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableUpdateData.styleBuiltIn](/javascript/api/word/word.interfaces.tableupdatedata#stylebuiltin-member)
-  \]
-
-  - \[
+  -
   [Word.Paragraph.styleBuiltIn](/javascript/api/word/word.paragraph#stylebuiltin-member)
   \]
 
-  - \[
+  -
   [Word.Range.styleBuiltIn](/javascript/api/word/word.range#stylebuiltin-member)
   \]
 
-  - \[
+  -
   [Word.Table.styleBuiltIn](/javascript/api/word/word.table#stylebuiltin-member)
   \]
 
@@ -110,8 +69,8 @@ fields:
       Bibliography style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bibliography"'
   - name: bookTitle
     uid: word!Word.BuiltInStyleName.bookTitle:member
@@ -120,8 +79,8 @@ fields:
       Book title style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BookTitle"'
   - name: caption
     uid: word!Word.BuiltInStyleName.caption:member
@@ -130,8 +89,8 @@ fields:
       Caption style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Caption"'
   - name: emphasis
     uid: word!Word.BuiltInStyleName.emphasis:member
@@ -140,8 +99,8 @@ fields:
       Emphasis style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Emphasis"'
   - name: endnoteReference
     uid: word!Word.BuiltInStyleName.endnoteReference:member
@@ -150,8 +109,8 @@ fields:
       Endnote reference style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteReference"'
   - name: endnoteText
     uid: word!Word.BuiltInStyleName.endnoteText:member
@@ -160,8 +119,8 @@ fields:
       Endnote text style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteText"'
   - name: footer
     uid: word!Word.BuiltInStyleName.footer:member
@@ -170,8 +129,8 @@ fields:
       Footer style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Footer"'
   - name: footnoteReference
     uid: word!Word.BuiltInStyleName.footnoteReference:member
@@ -180,8 +139,8 @@ fields:
       Footnote reference style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteReference"'
   - name: footnoteText
     uid: word!Word.BuiltInStyleName.footnoteText:member
@@ -190,8 +149,8 @@ fields:
       Footnote text style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteText"'
   - name: gridTable1Light
     uid: word!Word.BuiltInStyleName.gridTable1Light:member
@@ -200,8 +159,8 @@ fields:
       Grid table light style 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light"'
   - name: gridTable1Light_Accent1
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent1:member
@@ -210,8 +169,8 @@ fields:
       Grid table light style 1, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light_Accent1"'
   - name: gridTable1Light_Accent2
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent2:member
@@ -220,8 +179,8 @@ fields:
       Grid table light style 1, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light_Accent2"'
   - name: gridTable1Light_Accent3
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent3:member
@@ -230,8 +189,8 @@ fields:
       Grid table light style 1, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light_Accent3"'
   - name: gridTable1Light_Accent4
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent4:member
@@ -240,8 +199,8 @@ fields:
       Grid table light style 1, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light_Accent4"'
   - name: gridTable1Light_Accent5
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent5:member
@@ -250,8 +209,8 @@ fields:
       Grid table light style 1, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light_Accent5"'
   - name: gridTable1Light_Accent6
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent6:member
@@ -260,8 +219,8 @@ fields:
       Grid table light style 1, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable1Light_Accent6"'
   - name: gridTable2
     uid: word!Word.BuiltInStyleName.gridTable2:member
@@ -270,8 +229,8 @@ fields:
       Grid table style 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2"'
   - name: gridTable2_Accent1
     uid: word!Word.BuiltInStyleName.gridTable2_Accent1:member
@@ -280,8 +239,8 @@ fields:
       Grid table style 2, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2_Accent1"'
   - name: gridTable2_Accent2
     uid: word!Word.BuiltInStyleName.gridTable2_Accent2:member
@@ -290,8 +249,8 @@ fields:
       Grid table style 2, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2_Accent2"'
   - name: gridTable2_Accent3
     uid: word!Word.BuiltInStyleName.gridTable2_Accent3:member
@@ -300,8 +259,8 @@ fields:
       Grid table style 2, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2_Accent3"'
   - name: gridTable2_Accent4
     uid: word!Word.BuiltInStyleName.gridTable2_Accent4:member
@@ -310,8 +269,8 @@ fields:
       Grid table style 2, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2_Accent4"'
   - name: gridTable2_Accent5
     uid: word!Word.BuiltInStyleName.gridTable2_Accent5:member
@@ -320,8 +279,8 @@ fields:
       Grid table style 2, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2_Accent5"'
   - name: gridTable2_Accent6
     uid: word!Word.BuiltInStyleName.gridTable2_Accent6:member
@@ -330,8 +289,8 @@ fields:
       Grid table style 2, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable2_Accent6"'
   - name: gridTable3
     uid: word!Word.BuiltInStyleName.gridTable3:member
@@ -340,8 +299,8 @@ fields:
       Grid table style 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3"'
   - name: gridTable3_Accent1
     uid: word!Word.BuiltInStyleName.gridTable3_Accent1:member
@@ -350,8 +309,8 @@ fields:
       Grid table style 3, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3_Accent1"'
   - name: gridTable3_Accent2
     uid: word!Word.BuiltInStyleName.gridTable3_Accent2:member
@@ -360,8 +319,8 @@ fields:
       Grid table style 3, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3_Accent2"'
   - name: gridTable3_Accent3
     uid: word!Word.BuiltInStyleName.gridTable3_Accent3:member
@@ -370,8 +329,8 @@ fields:
       Grid table style 3, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3_Accent3"'
   - name: gridTable3_Accent4
     uid: word!Word.BuiltInStyleName.gridTable3_Accent4:member
@@ -380,8 +339,8 @@ fields:
       Grid table style 3, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3_Accent4"'
   - name: gridTable3_Accent5
     uid: word!Word.BuiltInStyleName.gridTable3_Accent5:member
@@ -390,8 +349,8 @@ fields:
       Grid table style 3, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3_Accent5"'
   - name: gridTable3_Accent6
     uid: word!Word.BuiltInStyleName.gridTable3_Accent6:member
@@ -400,8 +359,8 @@ fields:
       Grid table style 3, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable3_Accent6"'
   - name: gridTable4
     uid: word!Word.BuiltInStyleName.gridTable4:member
@@ -410,8 +369,8 @@ fields:
       Grid table style 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4"'
   - name: gridTable4_Accent1
     uid: word!Word.BuiltInStyleName.gridTable4_Accent1:member
@@ -420,8 +379,8 @@ fields:
       Grid table style 4, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4_Accent1"'
   - name: gridTable4_Accent2
     uid: word!Word.BuiltInStyleName.gridTable4_Accent2:member
@@ -430,8 +389,8 @@ fields:
       Grid table style 4, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4_Accent2"'
   - name: gridTable4_Accent3
     uid: word!Word.BuiltInStyleName.gridTable4_Accent3:member
@@ -440,8 +399,8 @@ fields:
       Grid table style 4, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4_Accent3"'
   - name: gridTable4_Accent4
     uid: word!Word.BuiltInStyleName.gridTable4_Accent4:member
@@ -450,8 +409,8 @@ fields:
       Grid table style 4, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4_Accent4"'
   - name: gridTable4_Accent5
     uid: word!Word.BuiltInStyleName.gridTable4_Accent5:member
@@ -460,8 +419,8 @@ fields:
       Grid table style 4, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4_Accent5"'
   - name: gridTable4_Accent6
     uid: word!Word.BuiltInStyleName.gridTable4_Accent6:member
@@ -470,8 +429,8 @@ fields:
       Grid table style 4, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable4_Accent6"'
   - name: gridTable5Dark
     uid: word!Word.BuiltInStyleName.gridTable5Dark:member
@@ -480,8 +439,8 @@ fields:
       Grid table dark style 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark"'
   - name: gridTable5Dark_Accent1
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent1:member
@@ -490,8 +449,8 @@ fields:
       Grid table dark style 5, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark_Accent1"'
   - name: gridTable5Dark_Accent2
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent2:member
@@ -500,8 +459,8 @@ fields:
       Grid table dark style 5, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark_Accent2"'
   - name: gridTable5Dark_Accent3
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent3:member
@@ -510,8 +469,8 @@ fields:
       Grid table dark style 5, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark_Accent3"'
   - name: gridTable5Dark_Accent4
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent4:member
@@ -520,8 +479,8 @@ fields:
       Grid table dark style 5, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark_Accent4"'
   - name: gridTable5Dark_Accent5
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent5:member
@@ -530,8 +489,8 @@ fields:
       Grid table dark style 5, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark_Accent5"'
   - name: gridTable5Dark_Accent6
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent6:member
@@ -540,8 +499,8 @@ fields:
       Grid table dark style 5, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable5Dark_Accent6"'
   - name: gridTable6Colorful
     uid: word!Word.BuiltInStyleName.gridTable6Colorful:member
@@ -550,8 +509,8 @@ fields:
       Grid table colorful style 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful"'
   - name: gridTable6Colorful_Accent1
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent1:member
@@ -560,8 +519,8 @@ fields:
       Grid table colorful style 6, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful_Accent1"'
   - name: gridTable6Colorful_Accent2
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent2:member
@@ -570,8 +529,8 @@ fields:
       Grid table colorful style 6, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful_Accent2"'
   - name: gridTable6Colorful_Accent3
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent3:member
@@ -580,8 +539,8 @@ fields:
       Grid table colorful style 6, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful_Accent3"'
   - name: gridTable6Colorful_Accent4
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent4:member
@@ -590,8 +549,8 @@ fields:
       Grid table colorful style 6, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful_Accent4"'
   - name: gridTable6Colorful_Accent5
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent5:member
@@ -600,8 +559,8 @@ fields:
       Grid table colorful style 6, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful_Accent5"'
   - name: gridTable6Colorful_Accent6
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent6:member
@@ -610,8 +569,8 @@ fields:
       Grid table colorful style 6, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable6Colorful_Accent6"'
   - name: gridTable7Colorful
     uid: word!Word.BuiltInStyleName.gridTable7Colorful:member
@@ -620,8 +579,8 @@ fields:
       Grid table colorful style 7.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful"'
   - name: gridTable7Colorful_Accent1
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent1:member
@@ -630,8 +589,8 @@ fields:
       Grid table colorful style 7, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful_Accent1"'
   - name: gridTable7Colorful_Accent2
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent2:member
@@ -640,8 +599,8 @@ fields:
       Grid table colorful style 7, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful_Accent2"'
   - name: gridTable7Colorful_Accent3
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent3:member
@@ -650,8 +609,8 @@ fields:
       Grid table colorful style 7, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful_Accent3"'
   - name: gridTable7Colorful_Accent4
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent4:member
@@ -660,8 +619,8 @@ fields:
       Grid table colorful style 7, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful_Accent4"'
   - name: gridTable7Colorful_Accent5
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent5:member
@@ -670,8 +629,8 @@ fields:
       Grid table colorful style 7, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful_Accent5"'
   - name: gridTable7Colorful_Accent6
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent6:member
@@ -680,8 +639,8 @@ fields:
       Grid table colorful style 7, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GridTable7Colorful_Accent6"'
   - name: header
     uid: word!Word.BuiltInStyleName.header:member
@@ -690,8 +649,8 @@ fields:
       Header style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Header"'
   - name: heading1
     uid: word!Word.BuiltInStyleName.heading1:member
@@ -700,8 +659,8 @@ fields:
       Heading 1 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading1"'
   - name: heading2
     uid: word!Word.BuiltInStyleName.heading2:member
@@ -710,8 +669,8 @@ fields:
       Heading 2 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading2"'
   - name: heading3
     uid: word!Word.BuiltInStyleName.heading3:member
@@ -720,8 +679,8 @@ fields:
       Heading 3 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading3"'
   - name: heading4
     uid: word!Word.BuiltInStyleName.heading4:member
@@ -730,8 +689,8 @@ fields:
       Heading 4 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading4"'
   - name: heading5
     uid: word!Word.BuiltInStyleName.heading5:member
@@ -740,8 +699,8 @@ fields:
       Heading 5 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading5"'
   - name: heading6
     uid: word!Word.BuiltInStyleName.heading6:member
@@ -750,8 +709,8 @@ fields:
       Heading 6 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading6"'
   - name: heading7
     uid: word!Word.BuiltInStyleName.heading7:member
@@ -760,8 +719,8 @@ fields:
       Heading 7 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading7"'
   - name: heading8
     uid: word!Word.BuiltInStyleName.heading8:member
@@ -770,8 +729,8 @@ fields:
       Heading 8 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading8"'
   - name: heading9
     uid: word!Word.BuiltInStyleName.heading9:member
@@ -780,8 +739,8 @@ fields:
       Heading 9 style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading9"'
   - name: hyperlink
     uid: word!Word.BuiltInStyleName.hyperlink:member
@@ -790,8 +749,8 @@ fields:
       Hyperlink style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hyperlink"'
   - name: intenseEmphasis
     uid: word!Word.BuiltInStyleName.intenseEmphasis:member
@@ -800,8 +759,8 @@ fields:
       Intense emphasis style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IntenseEmphasis"'
   - name: intenseQuote
     uid: word!Word.BuiltInStyleName.intenseQuote:member
@@ -810,8 +769,8 @@ fields:
       Intense quote style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IntenseQuote"'
   - name: intenseReference
     uid: word!Word.BuiltInStyleName.intenseReference:member
@@ -820,8 +779,8 @@ fields:
       Intense reference style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IntenseReference"'
   - name: listParagraph
     uid: word!Word.BuiltInStyleName.listParagraph:member
@@ -830,8 +789,8 @@ fields:
       List paragraph style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListParagraph"'
   - name: listTable1Light
     uid: word!Word.BuiltInStyleName.listTable1Light:member
@@ -840,8 +799,8 @@ fields:
       List table light style 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light"'
   - name: listTable1Light_Accent1
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent1:member
@@ -850,8 +809,8 @@ fields:
       List table light style 1, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light_Accent1"'
   - name: listTable1Light_Accent2
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent2:member
@@ -860,8 +819,8 @@ fields:
       List table light style 1, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light_Accent2"'
   - name: listTable1Light_Accent3
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent3:member
@@ -870,8 +829,8 @@ fields:
       List table light style 1, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light_Accent3"'
   - name: listTable1Light_Accent4
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent4:member
@@ -880,8 +839,8 @@ fields:
       List table light style 1, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light_Accent4"'
   - name: listTable1Light_Accent5
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent5:member
@@ -890,8 +849,8 @@ fields:
       List table light style 1, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light_Accent5"'
   - name: listTable1Light_Accent6
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent6:member
@@ -900,8 +859,8 @@ fields:
       List table light style 1, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable1Light_Accent6"'
   - name: listTable2
     uid: word!Word.BuiltInStyleName.listTable2:member
@@ -910,8 +869,8 @@ fields:
       List table style 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2"'
   - name: listTable2_Accent1
     uid: word!Word.BuiltInStyleName.listTable2_Accent1:member
@@ -920,8 +879,8 @@ fields:
       List table style 2, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2_Accent1"'
   - name: listTable2_Accent2
     uid: word!Word.BuiltInStyleName.listTable2_Accent2:member
@@ -930,8 +889,8 @@ fields:
       List table style 2, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2_Accent2"'
   - name: listTable2_Accent3
     uid: word!Word.BuiltInStyleName.listTable2_Accent3:member
@@ -940,8 +899,8 @@ fields:
       List table style 2, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2_Accent3"'
   - name: listTable2_Accent4
     uid: word!Word.BuiltInStyleName.listTable2_Accent4:member
@@ -950,8 +909,8 @@ fields:
       List table style 2, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2_Accent4"'
   - name: listTable2_Accent5
     uid: word!Word.BuiltInStyleName.listTable2_Accent5:member
@@ -960,8 +919,8 @@ fields:
       List table style 2, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2_Accent5"'
   - name: listTable2_Accent6
     uid: word!Word.BuiltInStyleName.listTable2_Accent6:member
@@ -970,8 +929,8 @@ fields:
       List table style 2, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable2_Accent6"'
   - name: listTable3
     uid: word!Word.BuiltInStyleName.listTable3:member
@@ -980,8 +939,8 @@ fields:
       List table style 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3"'
   - name: listTable3_Accent1
     uid: word!Word.BuiltInStyleName.listTable3_Accent1:member
@@ -990,8 +949,8 @@ fields:
       List table style 3, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3_Accent1"'
   - name: listTable3_Accent2
     uid: word!Word.BuiltInStyleName.listTable3_Accent2:member
@@ -1000,8 +959,8 @@ fields:
       List table style 3, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3_Accent2"'
   - name: listTable3_Accent3
     uid: word!Word.BuiltInStyleName.listTable3_Accent3:member
@@ -1010,8 +969,8 @@ fields:
       List table style 3, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3_Accent3"'
   - name: listTable3_Accent4
     uid: word!Word.BuiltInStyleName.listTable3_Accent4:member
@@ -1020,8 +979,8 @@ fields:
       List table style 3, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3_Accent4"'
   - name: listTable3_Accent5
     uid: word!Word.BuiltInStyleName.listTable3_Accent5:member
@@ -1030,8 +989,8 @@ fields:
       List table style 3, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3_Accent5"'
   - name: listTable3_Accent6
     uid: word!Word.BuiltInStyleName.listTable3_Accent6:member
@@ -1040,8 +999,8 @@ fields:
       List table style 3, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable3_Accent6"'
   - name: listTable4
     uid: word!Word.BuiltInStyleName.listTable4:member
@@ -1050,8 +1009,8 @@ fields:
       List table style 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4"'
   - name: listTable4_Accent1
     uid: word!Word.BuiltInStyleName.listTable4_Accent1:member
@@ -1060,8 +1019,8 @@ fields:
       List table style 4, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4_Accent1"'
   - name: listTable4_Accent2
     uid: word!Word.BuiltInStyleName.listTable4_Accent2:member
@@ -1070,8 +1029,8 @@ fields:
       List table style 4, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4_Accent2"'
   - name: listTable4_Accent3
     uid: word!Word.BuiltInStyleName.listTable4_Accent3:member
@@ -1080,8 +1039,8 @@ fields:
       List table style 4, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4_Accent3"'
   - name: listTable4_Accent4
     uid: word!Word.BuiltInStyleName.listTable4_Accent4:member
@@ -1090,8 +1049,8 @@ fields:
       List table style 4, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4_Accent4"'
   - name: listTable4_Accent5
     uid: word!Word.BuiltInStyleName.listTable4_Accent5:member
@@ -1100,8 +1059,8 @@ fields:
       List table style 4, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4_Accent5"'
   - name: listTable4_Accent6
     uid: word!Word.BuiltInStyleName.listTable4_Accent6:member
@@ -1110,8 +1069,8 @@ fields:
       List table style 4, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable4_Accent6"'
   - name: listTable5Dark
     uid: word!Word.BuiltInStyleName.listTable5Dark:member
@@ -1120,8 +1079,8 @@ fields:
       List table dark style 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark"'
   - name: listTable5Dark_Accent1
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent1:member
@@ -1130,8 +1089,8 @@ fields:
       List table dark style 5, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark_Accent1"'
   - name: listTable5Dark_Accent2
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent2:member
@@ -1140,8 +1099,8 @@ fields:
       List table dark style 5, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark_Accent2"'
   - name: listTable5Dark_Accent3
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent3:member
@@ -1150,8 +1109,8 @@ fields:
       List table dark style 5, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark_Accent3"'
   - name: listTable5Dark_Accent4
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent4:member
@@ -1160,8 +1119,8 @@ fields:
       List table dark style 5, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark_Accent4"'
   - name: listTable5Dark_Accent5
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent5:member
@@ -1170,8 +1129,8 @@ fields:
       List table dark style 5, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark_Accent5"'
   - name: listTable5Dark_Accent6
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent6:member
@@ -1180,8 +1139,8 @@ fields:
       List table dark style 5, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable5Dark_Accent6"'
   - name: listTable6Colorful
     uid: word!Word.BuiltInStyleName.listTable6Colorful:member
@@ -1190,8 +1149,8 @@ fields:
       List table colorful style 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful"'
   - name: listTable6Colorful_Accent1
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent1:member
@@ -1200,8 +1159,8 @@ fields:
       List table colorful style 6, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful_Accent1"'
   - name: listTable6Colorful_Accent2
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent2:member
@@ -1210,8 +1169,8 @@ fields:
       List table colorful style 6, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful_Accent2"'
   - name: listTable6Colorful_Accent3
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent3:member
@@ -1220,8 +1179,8 @@ fields:
       List table colorful style 6, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful_Accent3"'
   - name: listTable6Colorful_Accent4
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent4:member
@@ -1230,8 +1189,8 @@ fields:
       List table colorful style 6, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful_Accent4"'
   - name: listTable6Colorful_Accent5
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent5:member
@@ -1240,8 +1199,8 @@ fields:
       List table colorful style 6, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful_Accent5"'
   - name: listTable6Colorful_Accent6
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent6:member
@@ -1250,8 +1209,8 @@ fields:
       List table colorful style 6, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable6Colorful_Accent6"'
   - name: listTable7Colorful
     uid: word!Word.BuiltInStyleName.listTable7Colorful:member
@@ -1260,8 +1219,8 @@ fields:
       List table colorful style 7.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful"'
   - name: listTable7Colorful_Accent1
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent1:member
@@ -1270,8 +1229,8 @@ fields:
       List table colorful style 7, accent 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful_Accent1"'
   - name: listTable7Colorful_Accent2
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent2:member
@@ -1280,8 +1239,8 @@ fields:
       List table colorful style 7, accent 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful_Accent2"'
   - name: listTable7Colorful_Accent3
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent3:member
@@ -1290,8 +1249,8 @@ fields:
       List table colorful style 7, accent 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful_Accent3"'
   - name: listTable7Colorful_Accent4
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent4:member
@@ -1300,8 +1259,8 @@ fields:
       List table colorful style 7, accent 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful_Accent4"'
   - name: listTable7Colorful_Accent5
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent5:member
@@ -1310,8 +1269,8 @@ fields:
       List table colorful style 7, accent 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful_Accent5"'
   - name: listTable7Colorful_Accent6
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent6:member
@@ -1320,8 +1279,8 @@ fields:
       List table colorful style 7, accent 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListTable7Colorful_Accent6"'
   - name: normal
     uid: word!Word.BuiltInStyleName.normal:member
@@ -1330,8 +1289,8 @@ fields:
       Reset character and paragraph style to default.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Normal"'
   - name: noSpacing
     uid: word!Word.BuiltInStyleName.noSpacing:member
@@ -1340,8 +1299,8 @@ fields:
       No spacing style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NoSpacing"'
   - name: other
     uid: word!Word.BuiltInStyleName.other:member
@@ -1350,8 +1309,8 @@ fields:
       Mixed styles or other style not in this list.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Other"'
   - name: plainTable1
     uid: word!Word.BuiltInStyleName.plainTable1:member
@@ -1360,8 +1319,8 @@ fields:
       Plain table style 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTable1"'
   - name: plainTable2
     uid: word!Word.BuiltInStyleName.plainTable2:member
@@ -1370,8 +1329,8 @@ fields:
       Plain table style 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTable2"'
   - name: plainTable3
     uid: word!Word.BuiltInStyleName.plainTable3:member
@@ -1380,8 +1339,8 @@ fields:
       Plain table style 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTable3"'
   - name: plainTable4
     uid: word!Word.BuiltInStyleName.plainTable4:member
@@ -1390,8 +1349,8 @@ fields:
       Plain table style 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTable4"'
   - name: plainTable5
     uid: word!Word.BuiltInStyleName.plainTable5:member
@@ -1400,8 +1359,8 @@ fields:
       Plain table style 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTable5"'
   - name: quote
     uid: word!Word.BuiltInStyleName.quote:member
@@ -1410,8 +1369,8 @@ fields:
       Quote style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Quote"'
   - name: strong
     uid: word!Word.BuiltInStyleName.strong:member
@@ -1420,8 +1379,8 @@ fields:
       Strong style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Strong"'
   - name: subtitle
     uid: word!Word.BuiltInStyleName.subtitle:member
@@ -1430,8 +1389,8 @@ fields:
       Subtitle style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Subtitle"'
   - name: subtleEmphasis
     uid: word!Word.BuiltInStyleName.subtleEmphasis:member
@@ -1440,8 +1399,8 @@ fields:
       Subtle emphasis style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SubtleEmphasis"'
   - name: subtleReference
     uid: word!Word.BuiltInStyleName.subtleReference:member
@@ -1450,8 +1409,8 @@ fields:
       Subtle reference style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SubtleReference"'
   - name: tableGrid
     uid: word!Word.BuiltInStyleName.tableGrid:member
@@ -1460,8 +1419,8 @@ fields:
       Table grid style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableGrid"'
   - name: tableGridLight
     uid: word!Word.BuiltInStyleName.tableGridLight:member
@@ -1470,8 +1429,8 @@ fields:
       Table grid light style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableGridLight"'
   - name: title
     uid: word!Word.BuiltInStyleName.title:member
@@ -1480,8 +1439,8 @@ fields:
       Title style.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Title"'
   - name: toc1
     uid: word!Word.BuiltInStyleName.toc1:member
@@ -1490,8 +1449,8 @@ fields:
       Table-of-content level 1.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc1"'
   - name: toc2
     uid: word!Word.BuiltInStyleName.toc2:member
@@ -1500,8 +1459,8 @@ fields:
       Table-of-content level 2.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc2"'
   - name: toc3
     uid: word!Word.BuiltInStyleName.toc3:member
@@ -1510,8 +1469,8 @@ fields:
       Table-of-content level 3.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc3"'
   - name: toc4
     uid: word!Word.BuiltInStyleName.toc4:member
@@ -1520,8 +1479,8 @@ fields:
       Table-of-content level 4.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc4"'
   - name: toc5
     uid: word!Word.BuiltInStyleName.toc5:member
@@ -1530,8 +1489,8 @@ fields:
       Table-of-content level 5.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc5"'
   - name: toc6
     uid: word!Word.BuiltInStyleName.toc6:member
@@ -1540,8 +1499,8 @@ fields:
       Table-of-content level 6.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc6"'
   - name: toc7
     uid: word!Word.BuiltInStyleName.toc7:member
@@ -1550,8 +1509,8 @@ fields:
       Table-of-content level 7.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc7"'
   - name: toc8
     uid: word!Word.BuiltInStyleName.toc8:member
@@ -1560,8 +1519,8 @@ fields:
       Table-of-content level 8.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc8"'
   - name: toc9
     uid: word!Word.BuiltInStyleName.toc9:member
@@ -1570,8 +1529,8 @@ fields:
       Table-of-content level 9.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toc9"'
   - name: tocHeading
     uid: word!Word.BuiltInStyleName.tocHeading:member
@@ -1580,6 +1539,6 @@ fields:
       Table-of-content heading.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TocHeading"'

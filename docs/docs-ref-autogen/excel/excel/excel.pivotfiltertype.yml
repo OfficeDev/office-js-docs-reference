@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.PivotFilterType
 summary: A simple enum that represents a type of filter for a PivotField.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +19,8 @@ fields:
       cannot simultaneously have a label filter and a date filter applied.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Date"'
   - name: label
     uid: excel!Excel.PivotFilterType.label:member
@@ -31,9 +30,8 @@ fields:
       simultaneously have a label filter and a date filter applied.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Label"'
   - name: manual
     uid: excel!Excel.PivotFilterType.manual:member
@@ -42,9 +40,8 @@ fields:
       Filters specific manually selected PivotItems from the PivotTable.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Manual"'
   - name: unknown
     uid: excel!Excel.PivotFilterType.unknown:member
@@ -53,9 +50,8 @@ fields:
       `PivotFilterType` is unknown or unsupported.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'
   - name: value
     uid: excel!Excel.PivotFilterType.value:member
@@ -65,7 +61,6 @@ fields:
       `DataPivotHierarchy`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Value"'

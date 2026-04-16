@@ -5,19 +5,15 @@ package: word!
 fullName: Word.GradientColorType
 summary: Specifies the type of gradient used in a shape's fill.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.FillFormat.gradientColorType](/javascript/api/word/word.fillformat#gradientcolortype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FillFormatData.gradientColorType](/javascript/api/word/word.interfaces.fillformatdata#gradientcolortype-member)
   \]
 
 isPreview: false
@@ -31,8 +27,8 @@ fields:
       gradient types are selected.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: multiColor
     uid: word!Word.GradientColorType.multiColor:member
@@ -41,8 +37,8 @@ fields:
       Gradient that includes more than two colors, often customized.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MultiColor"'
   - name: oneColor
     uid: word!Word.GradientColorType.oneColor:member
@@ -51,8 +47,8 @@ fields:
       Gradient with a single color and varying transparency or brightness.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OneColor"'
   - name: presetColors
     uid: word!Word.GradientColorType.presetColors:member
@@ -61,8 +57,8 @@ fields:
       Gradient that uses a predefined set of colors.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PresetColors"'
   - name: twoColors
     uid: word!Word.GradientColorType.twoColors:member
@@ -71,6 +67,6 @@ fields:
       Gradient that blends two distinct colors.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TwoColors"'

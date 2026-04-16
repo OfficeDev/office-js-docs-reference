@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.MessageFormAttachment
 summary: A file or Outlook item attachment. Used when displaying a new message form.
 remarks: >-
-  \[ [API set: Mailbox
-  1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -22,7 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.MessageForm.attachments](/javascript/api/outlook/office.messageform#attachments-member)
   \]
 
@@ -40,9 +40,8 @@ properties:
       `type` property is set to `Office.MailboxEnums.AttachmentType.File`<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -69,9 +68,8 @@ properties:
       a string of up to 100 characters. Only specify if the `type` property is
       set to `Office.MailboxEnums.AttachmentType.Item`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -97,9 +95,8 @@ properties:
       The name of the attachment. The name can be up to 255 characters in
       length.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -125,9 +122,8 @@ properties:
       The type of attachment. Must be `Office.MailboxEnums.AttachmentType.File`
       or `Office.MailboxEnums.AttachmentType.Item`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -159,9 +155,8 @@ properties:
       The URI of the location for the file. Only specify if the `type` property
       is set to `Office.MailboxEnums.AttachmentType.File`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

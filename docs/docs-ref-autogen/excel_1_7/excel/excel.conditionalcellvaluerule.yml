@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ConditionalCellValueRule
 summary: Represents a cell value conditional format rule.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CellValueConditionalFormat.rule](/javascript/api/excel/excel.cellvalueconditionalformat#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CellValueConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatdata#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CellValueConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatupdatedata#rule-member)
   \]
 
 isPreview: false
@@ -36,8 +28,8 @@ properties:
       The formula, if required, on which to evaluate the conditional format
       rule.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -76,8 +68,8 @@ properties:
       The formula, if required, on which to evaluate the conditional format
       rule.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -91,8 +83,8 @@ properties:
     fullName: operator
     summary: The operator of the cell value conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

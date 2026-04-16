@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartPointFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartPointFormat` object, for use in
   `chartPointFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartPointUpdateData.format](/javascript/api/excel/excel.interfaces.chartpointupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -5,22 +5,14 @@ package: word!
 fullName: Word.TextOrientation
 summary: Specifies the orientation of text in a text frame or shape.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.SelectionData.orientation](/javascript/api/word/word.interfaces.selectiondata#orientation-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SelectionUpdateData.orientation](/javascript/api/word/word.interfaces.selectionupdatedata#orientation-member)
-  \]
-
-  - \[
+  -
   [Word.Selection.orientation](/javascript/api/word/word.selection#orientation-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Text is vertical with letters rotated 90 degrees counterclockwise.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Downward"'
   - name: horizontal
     uid: word!Word.TextOrientation.horizontal:member
@@ -44,8 +36,8 @@ fields:
       Text is horizontal.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Horizontal"'
   - name: horizontalRotatedFarEast
     uid: word!Word.TextOrientation.horizontalRotatedFarEast:member
@@ -55,8 +47,8 @@ fields:
       languages.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HorizontalRotatedFarEast"'
   - name: upward
     uid: word!Word.TextOrientation.upward:member
@@ -65,8 +57,8 @@ fields:
       Text is vertical with letters rotated 90 degrees clockwise.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Upward"'
   - name: vertical
     uid: word!Word.TextOrientation.vertical:member
@@ -75,8 +67,8 @@ fields:
       Text is vertical and reads downward from the top, left to right.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Vertical"'
   - name: verticalFarEast
     uid: word!Word.TextOrientation.verticalFarEast:member
@@ -85,6 +77,6 @@ fields:
       Text is vertical and reads downward from the top, right to left.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"VerticalFarEast"'

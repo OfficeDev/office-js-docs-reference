@@ -6,17 +6,7 @@ fullName: Word.Interfaces.ReviewerData
 summary: >-
   An interface describing the data returned by calling `reviewer.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ReviewerCollectionData.items](/javascript/api/word/word.interfaces.reviewercollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ReviewerCollectionUpdateData.items](/javascript/api/word/word.interfaces.reviewercollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +18,8 @@ properties:
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

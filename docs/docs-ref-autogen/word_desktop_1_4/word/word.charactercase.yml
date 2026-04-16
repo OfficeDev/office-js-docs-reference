@@ -5,22 +5,14 @@ package: word!
 fullName: Word.CharacterCase
 summary: Specifies the case of the text in the specified range.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.RangeData.case](/javascript/api/word/word.interfaces.rangedata#case-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeUpdateData.case](/javascript/api/word/word.interfaces.rangeupdatedata#case-member)
-  \]
-
-  - \[ [Word.Range.case](/javascript/api/word/word.range#case-member) \]
+  - [Word.Range.case](/javascript/api/word/word.range#case-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +24,8 @@ fields:
       Specifies full-width characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FullWidth"'
   - name: halfWidth
     uid: word!Word.CharacterCase.halfWidth:member
@@ -42,8 +34,8 @@ fields:
       Specifies half-width characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HalfWidth"'
   - name: hiragana
     uid: word!Word.CharacterCase.hiragana:member
@@ -52,8 +44,8 @@ fields:
       Specifies Hiragana characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.CharacterCase.katakana:member
@@ -62,8 +54,8 @@ fields:
       Specifies Katakana characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Katakana"'
   - name: lower
     uid: word!Word.CharacterCase.lower:member
@@ -72,8 +64,8 @@ fields:
       Specifies lowercase.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lower"'
   - name: next
     uid: word!Word.CharacterCase.next:member
@@ -82,8 +74,8 @@ fields:
       Specifies the next case.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Next"'
   - name: titleSentence
     uid: word!Word.CharacterCase.titleSentence:member
@@ -92,8 +84,8 @@ fields:
       Specifies title case for the sentence.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TitleSentence"'
   - name: titleWord
     uid: word!Word.CharacterCase.titleWord:member
@@ -102,8 +94,8 @@ fields:
       Specifies title case for each word.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TitleWord"'
   - name: toggle
     uid: word!Word.CharacterCase.toggle:member
@@ -112,8 +104,8 @@ fields:
       Specifies toggle case.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Toggle"'
   - name: upper
     uid: word!Word.CharacterCase.upper:member
@@ -122,6 +114,6 @@ fields:
       Specifies uppercase.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Upper"'

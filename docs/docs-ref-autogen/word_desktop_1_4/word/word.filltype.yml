@@ -5,19 +5,14 @@ package: word!
 fullName: Word.FillType
 summary: Specifies a shape's fill type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.FillFormat.type](/javascript/api/word/word.fillformat#type-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FillFormatData.type](/javascript/api/word/word.interfaces.fillformatdata#type-member)
-  \]
+  - [Word.FillFormat.type](/javascript/api/word/word.fillformat#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -29,8 +24,8 @@ fields:
       Represents a background fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Background"'
   - name: gradient
     uid: word!Word.FillType.gradient:member
@@ -39,8 +34,8 @@ fields:
       Represents a gradient fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Gradient"'
   - name: mixed
     uid: word!Word.FillType.mixed:member
@@ -49,8 +44,8 @@ fields:
       Represents a mixed fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: patterned
     uid: word!Word.FillType.patterned:member
@@ -59,8 +54,8 @@ fields:
       Represents a patterned fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Patterned"'
   - name: picture
     uid: word!Word.FillType.picture:member
@@ -69,8 +64,8 @@ fields:
       Represents a picture fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Picture"'
   - name: solid
     uid: word!Word.FillType.solid:member
@@ -79,8 +74,8 @@ fields:
       Represents a solid fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Solid"'
   - name: textured
     uid: word!Word.FillType.textured:member
@@ -89,6 +84,6 @@ fields:
       Represents a textured fill type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Textured"'

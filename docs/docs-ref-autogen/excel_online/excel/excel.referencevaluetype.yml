@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.ReferenceValueType
 summary: Represents the types of the `ReferenceValue` object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,9 +18,8 @@ fields:
       Represents an `ArrayCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Array"'
   - name: boolean
     uid: excel!Excel.ReferenceValueType.boolean:member
@@ -29,9 +28,8 @@ fields:
       Represents a `BooleanCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.ReferenceValueType.double:member
@@ -40,9 +38,8 @@ fields:
       Represents a `DoubleCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Double"'
   - name: entity
     uid: excel!Excel.ReferenceValueType.entity:member
@@ -51,9 +48,8 @@ fields:
       Represents an `EntityCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Entity"'
   - name: root
     uid: excel!Excel.ReferenceValueType.root:member
@@ -62,9 +58,8 @@ fields:
       Represents a `RootReferenceCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Root"'
   - name: string
     uid: excel!Excel.ReferenceValueType.string:member
@@ -73,7 +68,6 @@ fields:
       Represents a `StringCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"String"'

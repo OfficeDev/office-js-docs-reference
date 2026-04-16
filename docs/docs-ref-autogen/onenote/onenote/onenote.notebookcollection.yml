@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.NotebookCollection
 summary: Represents a collection of notebooks.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Application.notebooks](/javascript/api/onenote/onenote.application#notebooks-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: count
     summary: Returns the number of notebooks in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +72,8 @@ methods:
       Gets the collection of notebooks with the specified name that are open in
       the application instance.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -122,9 +120,8 @@ methods:
     fullName: getItem(index)
     summary: Gets a notebook by ID or by its index in the collection. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -145,9 +142,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a notebook on its position in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,54 +5,54 @@ package: excel!
 fullName: Excel.ChartFill
 summary: Represents the fill formatting for a chart element.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAreaFormat.fill](/javascript/api/excel/excel.chartareaformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartAxisFormat.fill](/javascript/api/excel/excel.chartaxisformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartAxisTitleFormat.fill](/javascript/api/excel/excel.chartaxistitleformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartDataLabelFormat.fill](/javascript/api/excel/excel.chartdatalabelformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartDataTableFormat.fill](/javascript/api/excel/excel.chartdatatableformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartLegendFormat.fill](/javascript/api/excel/excel.chartlegendformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartPlotAreaFormat.fill](/javascript/api/excel/excel.chartplotareaformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartPointFormat.fill](/javascript/api/excel/excel.chartpointformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartSeriesFormat.fill](/javascript/api/excel/excel.chartseriesformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTitleFormat.fill](/javascript/api/excel/excel.charttitleformat#fill-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTrendlineLabelFormat.fill](/javascript/api/excel/excel.charttrendlinelabelformat#fill-member)
   \]
 
@@ -82,8 +82,8 @@ methods:
     fullName: clear()
     summary: Clears the fill color of a chart element.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -117,9 +117,8 @@ methods:
     fullName: getSolidColor()
     summary: Gets the uniform color fill formatting of a chart element.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -160,8 +159,8 @@ methods:
     fullName: setSolidColor(color)
     summary: Sets the fill formatting of a chart element to a uniform color.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

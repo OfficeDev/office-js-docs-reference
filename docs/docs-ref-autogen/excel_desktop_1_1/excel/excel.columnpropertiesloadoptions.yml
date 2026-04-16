@@ -8,8 +8,8 @@ summary: >-
   "range.getColumnProperties" method.
 
 
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 remarks: ''
 
 isPreview: false
@@ -24,8 +24,8 @@ properties:
       Specifies whether to load on the `columnHidden` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -42,8 +42,8 @@ properties:
       Specifies whether to load on the `columnIndex` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -60,8 +60,8 @@ properties:
       Specifies whether to load on the `format` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false

@@ -5,42 +5,21 @@ package: word!
 fullName: Word.UnderlineType
 summary: Represents the supported styles for underline format.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CommentContentRange.underline](/javascript/api/word/word.commentcontentrange#underline-member)
   \]
 
-  - \[ [Word.Font.underline](/javascript/api/word/word.font#underline-member) \]
+  - [Word.Font.underline](/javascript/api/word/word.font#underline-member) \]
 
-  - \[
-  [Word.Interfaces.CommentContentRangeData.underline](/javascript/api/word/word.interfaces.commentcontentrangedata#underline-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CommentContentRangeUpdateData.underline](/javascript/api/word/word.interfaces.commentcontentrangeupdatedata#underline-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontData.underline](/javascript/api/word/word.interfaces.fontdata#underline-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontUpdateData.underline](/javascript/api/word/word.interfaces.fontupdatedata#underline-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeData.underline](/javascript/api/word/word.interfaces.rangedata#underline-member)
-  \]
-
-  - \[ [Word.Range.underline](/javascript/api/word/word.range#underline-member)
-  \]
+  - [Word.Range.underline](/javascript/api/word/word.range#underline-member) \]
 
   #### Examples
 
@@ -77,8 +56,8 @@ fields:
       A single dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashLine"'
   - name: dashLineHeavy
     uid: word!Word.UnderlineType.dashLineHeavy:member
@@ -87,8 +66,8 @@ fields:
       A heavy dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashLineHeavy"'
   - name: dashLineLong
     uid: word!Word.UnderlineType.dashLineLong:member
@@ -97,8 +76,8 @@ fields:
       A long dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashLineLong"'
   - name: dashLineLongHeavy
     uid: word!Word.UnderlineType.dashLineLongHeavy:member
@@ -107,8 +86,8 @@ fields:
       A long heavy dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashLineLongHeavy"'
   - name: dotDashLine
     uid: word!Word.UnderlineType.dotDashLine:member
@@ -117,8 +96,8 @@ fields:
       An alternating dot-dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DotDashLine"'
   - name: dotDashLineHeavy
     uid: word!Word.UnderlineType.dotDashLineHeavy:member
@@ -127,8 +106,8 @@ fields:
       A heavy dot-dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DotDashLineHeavy"'
   - name: dotLine
     uid: word!Word.UnderlineType.dotLine:member
@@ -137,8 +116,8 @@ fields:
       Warning: dotLine has been deprecated.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DotLine"'
   - name: dotted
     uid: word!Word.UnderlineType.dotted:member
@@ -147,8 +126,8 @@ fields:
       A dotted underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Dotted"'
   - name: dottedHeavy
     uid: word!Word.UnderlineType.dottedHeavy:member
@@ -157,8 +136,8 @@ fields:
       A heavy dotted underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DottedHeavy"'
   - name: double
     uid: word!Word.UnderlineType.double:member
@@ -167,8 +146,8 @@ fields:
       A double underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Double"'
   - name: hidden
     uid: word!Word.UnderlineType.hidden:member
@@ -177,15 +156,15 @@ fields:
       Warning: hidden has been deprecated.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hidden"'
   - name: mixed
     uid: word!Word.UnderlineType.mixed:member
     package: word!
     summary: >-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: none
     uid: word!Word.UnderlineType.none:member
@@ -194,8 +173,8 @@ fields:
       No underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: single
     uid: word!Word.UnderlineType.single:member
@@ -204,8 +183,8 @@ fields:
       A single underline. This is the default value.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Single"'
   - name: thick
     uid: word!Word.UnderlineType.thick:member
@@ -214,8 +193,8 @@ fields:
       A single thick underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Thick"'
   - name: twoDotDashLine
     uid: word!Word.UnderlineType.twoDotDashLine:member
@@ -224,8 +203,8 @@ fields:
       An alternating dot-dot-dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TwoDotDashLine"'
   - name: twoDotDashLineHeavy
     uid: word!Word.UnderlineType.twoDotDashLineHeavy:member
@@ -234,8 +213,8 @@ fields:
       An alternating heavy dot-dot-dash underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TwoDotDashLineHeavy"'
   - name: wave
     uid: word!Word.UnderlineType.wave:member
@@ -244,8 +223,8 @@ fields:
       A single wavy underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Wave"'
   - name: waveDouble
     uid: word!Word.UnderlineType.waveDouble:member
@@ -254,8 +233,8 @@ fields:
       A double wavy underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WaveDouble"'
   - name: waveHeavy
     uid: word!Word.UnderlineType.waveHeavy:member
@@ -264,8 +243,8 @@ fields:
       A heavy wavy underline.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WaveHeavy"'
   - name: word
     uid: word!Word.UnderlineType.word:member
@@ -274,6 +253,6 @@ fields:
       Only underline individual words.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Word"'

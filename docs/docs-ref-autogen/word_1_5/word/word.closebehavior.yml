@@ -5,8 +5,8 @@ package: word!
 fullName: Word.CloseBehavior
 summary: Specifies the close behavior for `Document.close`<!-- -->.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -36,8 +36,8 @@ fields:
       Saves the changes before closing the document.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Save"'
   - name: skipSave
     uid: word!Word.CloseBehavior.skipSave:member
@@ -46,6 +46,6 @@ fields:
       Discard the possible changes when closing the document.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SkipSave"'

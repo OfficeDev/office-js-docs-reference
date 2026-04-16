@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Mailbox.userProfile](/javascript/api/outlook/office.mailbox#userprofile-member)
   \]
 
@@ -34,9 +34,8 @@ properties:
     fullName: accountType
     summary: Gets the account type of the user associated with the mailbox.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

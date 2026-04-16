@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ConditionalTextComparisonRule
 summary: Represents a cell value conditional format rule.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TextConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.textconditionalformatdata#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TextConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.textconditionalformatupdatedata#rule-member)
-  \]
-
-  - \[
+  -
   [Excel.TextConditionalFormat.rule](/javascript/api/excel/excel.textconditionalformat#rule-member)
   \]
 
@@ -34,8 +26,8 @@ properties:
     fullName: operator
     summary: The operator of the text conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +45,8 @@ properties:
     fullName: text
     summary: The text value of the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

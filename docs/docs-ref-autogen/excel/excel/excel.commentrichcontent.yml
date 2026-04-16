@@ -8,8 +8,8 @@ summary: >-
   content incudes the text string and any other objects contained within the
   comment body, such as mentions.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -23,9 +23,8 @@ properties:
       An array containing all the entities (e.g., people) mentioned within the
       comment.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -74,9 +73,8 @@ properties:
       mentions, the first mentioned entity has an ID attribute of 0, and the
       second mentioned entity has an ID attribute of 1).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

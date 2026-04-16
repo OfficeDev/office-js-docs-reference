@@ -5,18 +5,14 @@ package: excel!
 fullName: Excel.TableSource
 summary: Specifies the data source type for a table.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TableData.source](/javascript/api/excel/excel.interfaces.tabledata#source-member)
-  \]
-
-  - \[ [Excel.Table.source](/javascript/api/excel/excel.table#source-member) \]
+  - [Excel.Table.source](/javascript/api/excel/excel.table#source-member) \]
 
 isPreview: true
 isDeprecated: false
@@ -28,9 +24,8 @@ fields:
       An external data source, such as Microsoft SharePoint Foundation.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"External"'
   - name: model
     uid: excel!Excel.TableSource.model:member
@@ -39,9 +34,8 @@ fields:
       A Power Pivot model.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Model"'
   - name: query
     uid: excel!Excel.TableSource.query:member
@@ -50,9 +44,8 @@ fields:
       A Power Query query data source.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Query"'
   - name: range
     uid: excel!Excel.TableSource.range:member
@@ -61,9 +54,8 @@ fields:
       A range object in this worksheet.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Range"'
   - name: xml
     uid: excel!Excel.TableSource.xml:member
@@ -72,7 +64,6 @@ fields:
       An XML data source.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Xml"'

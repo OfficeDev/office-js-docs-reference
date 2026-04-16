@@ -5,47 +5,23 @@ package: word!
 fullName: Word.VerticalAlignment
 summary: Represents the vertical alignment of text.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.TableCellData.verticalAlignment](/javascript/api/word/word.interfaces.tablecelldata#verticalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.tablecellupdatedata#verticalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableData.verticalAlignment](/javascript/api/word/word.interfaces.tabledata#verticalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableRowData.verticalAlignment](/javascript/api/word/word.interfaces.tablerowdata#verticalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableRowUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.tablerowupdatedata#verticalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableUpdateData.verticalAlignment](/javascript/api/word/word.interfaces.tableupdatedata#verticalalignment-member)
-  \]
-
-  - \[
+  -
   [Word.Table.verticalAlignment](/javascript/api/word/word.table#verticalalignment-member)
   \]
 
-  - \[
+  -
   [Word.TableCell.verticalAlignment](/javascript/api/word/word.tablecell#verticalalignment-member)
   \]
 
-  - \[
+  -
   [Word.TableRow.verticalAlignment](/javascript/api/word/word.tablerow#verticalalignment-member)
   \]
 
@@ -86,8 +62,8 @@ fields:
       Bottom vertical alignment.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bottom"'
   - name: center
     uid: word!Word.VerticalAlignment.center:member
@@ -96,8 +72,8 @@ fields:
       Center vertical alignment.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Center"'
   - name: mixed
     uid: word!Word.VerticalAlignment.mixed:member
@@ -106,8 +82,8 @@ fields:
       Mixed vertical alignment.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: top
     uid: word!Word.VerticalAlignment.top:member
@@ -116,6 +92,6 @@ fields:
       Top vertical alignment.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Top"'

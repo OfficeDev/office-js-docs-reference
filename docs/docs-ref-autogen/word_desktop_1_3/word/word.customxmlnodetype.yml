@@ -7,35 +7,31 @@ summary: >-
   Represents the type of a
   [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class)<!-- -->.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CustomXmlAddNodeOptions.nodeType](/javascript/api/word/word.customxmladdnodeoptions#nodetype-member)
   \]
 
-  - \[
+  -
   [Word.CustomXmlAppendChildNodeOptions.nodeType](/javascript/api/word/word.customxmlappendchildnodeoptions#nodetype-member)
   \]
 
-  - \[
+  -
   [Word.CustomXmlInsertNodeBeforeOptions.nodeType](/javascript/api/word/word.customxmlinsertnodebeforeoptions#nodetype-member)
   \]
 
-  - \[
+  -
   [Word.CustomXmlNode.nodeType](/javascript/api/word/word.customxmlnode#nodetype-member)
   \]
 
-  - \[
+  -
   [Word.CustomXmlReplaceChildNodeOptions.nodeType](/javascript/api/word/word.customxmlreplacechildnodeoptions#nodetype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlNodeData.nodeType](/javascript/api/word/word.interfaces.customxmlnodedata#nodetype-member)
   \]
 
 isPreview: false
@@ -48,8 +44,8 @@ fields:
       Represents an XML attribute node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"attribute"'
   - name: cData
     uid: word!Word.CustomXmlNodeType.cData:member
@@ -58,8 +54,8 @@ fields:
       Represents an XML CDATA section node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"cData"'
   - name: comment
     uid: word!Word.CustomXmlNodeType.comment:member
@@ -68,8 +64,8 @@ fields:
       Represents an XML comment node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"comment"'
   - name: document
     uid: word!Word.CustomXmlNodeType.document:member
@@ -78,8 +74,8 @@ fields:
       Represents an XML document node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"document"'
   - name: element
     uid: word!Word.CustomXmlNodeType.element:member
@@ -88,8 +84,8 @@ fields:
       Represents an XML element node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"element"'
   - name: processingInstruction
     uid: word!Word.CustomXmlNodeType.processingInstruction:member
@@ -98,8 +94,8 @@ fields:
       Represents an XML processing instruction node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"processingInstruction"'
   - name: text
     uid: word!Word.CustomXmlNodeType.text:member
@@ -108,6 +104,6 @@ fields:
       Represents an XML text node.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"text"'

@@ -5,50 +5,30 @@ package: word!
 fullName: Word.ContentControlLevel
 summary: Represents the content control level type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.BuildingBlockGalleryContentControl.level](/javascript/api/word/word.buildingblockgallerycontentcontrol#level-member)
   \]
 
-  - \[
+  -
   [Word.DatePickerContentControl.level](/javascript/api/word/word.datepickercontentcontrol#level-member)
   \]
 
-  - \[
+  -
   [Word.GroupContentControl.level](/javascript/api/word/word.groupcontentcontrol#level-member)
   \]
 
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlData.level](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#level-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlData.level](/javascript/api/word/word.interfaces.datepickercontentcontroldata#level-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlData.level](/javascript/api/word/word.interfaces.groupcontentcontroldata#level-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlData.level](/javascript/api/word/word.interfaces.picturecontentcontroldata#level-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionContentControlData.level](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#level-member)
-  \]
-
-  - \[
+  -
   [Word.PictureContentControl.level](/javascript/api/word/word.picturecontentcontrol#level-member)
   \]
 
-  - \[
+  -
   [Word.RepeatingSectionContentControl.level](/javascript/api/word/word.repeatingsectioncontentcontrol#level-member)
   \]
 
@@ -62,8 +42,8 @@ fields:
       Represents a cell-level content control.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Cell"'
   - name: inline
     uid: word!Word.ContentControlLevel.inline:member
@@ -72,8 +52,8 @@ fields:
       Represents an inline content control.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.ContentControlLevel.paragraph:member
@@ -82,8 +62,8 @@ fields:
       Represents a paragraph-level content control.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Paragraph"'
   - name: row
     uid: word!Word.ContentControlLevel.row:member
@@ -92,6 +72,6 @@ fields:
       Represents a row-level content control.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Row"'

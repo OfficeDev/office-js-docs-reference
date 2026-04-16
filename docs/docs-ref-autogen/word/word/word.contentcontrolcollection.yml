@@ -12,35 +12,35 @@ summary: >-
   Currently, only rich text, plain text, checkbox, dropdown list, and combo box
   content controls are supported.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Body.contentControls](/javascript/api/word/word.body#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.Document.contentControls](/javascript/api/word/word.document#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.DocumentCreated.contentControls](/javascript/api/word/word.documentcreated#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#contentcontrols-member)
   \]
 
-  - \[
+  -
   [Word.Range.contentControls](/javascript/api/word/word.range#contentcontrols-member)
   \]
 
@@ -107,8 +107,8 @@ methods:
     fullName: getByChangeTrackingStates(changeTrackingStates)
     summary: Gets the content controls that have the specified tracking state.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -131,8 +131,8 @@ methods:
       Gets a content control by its identifier. Throws an `ItemNotFound` error
       if there isn't a content control with the identifier in this collection.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -181,8 +181,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -229,8 +229,8 @@ methods:
     fullName: getByTag(tag)
     summary: Gets the content controls that have the specified tag.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -274,8 +274,8 @@ methods:
     fullName: getByTitle(title)
     summary: Gets the content controls that have the specified title.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -331,8 +331,8 @@ methods:
     fullName: getByTypes(types)
     summary: Gets the content controls that have the specified types.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -355,8 +355,8 @@ methods:
       Gets the first content control in this collection. Throws an
       `ItemNotFound` error if this collection is empty.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -405,8 +405,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -472,8 +472,8 @@ methods:
     fullName: getItem(id)
     summary: Gets a content control by its ID.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

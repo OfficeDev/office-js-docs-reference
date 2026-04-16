@@ -6,17 +6,7 @@ fullName: Word.Interfaces.RevisionData
 summary: >-
   An interface describing the data returned by calling `revision.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.RevisionCollectionData.items](/javascript/api/word/word.interfaces.revisioncollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RevisionCollectionUpdateData.items](/javascript/api/word/word.interfaces.revisioncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

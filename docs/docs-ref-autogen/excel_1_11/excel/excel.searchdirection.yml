@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.SearchDirection
 summary: Specifies the search direction.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.SearchCriteria.searchDirection](/javascript/api/excel/excel.searchcriteria#searchdirection-member)
   \]
 
@@ -44,8 +44,8 @@ fields:
       Search in reverse order.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Backwards"'
   - name: forward
     uid: excel!Excel.SearchDirection.forward:member
@@ -54,6 +54,6 @@ fields:
       Search in forward order.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Forward"'

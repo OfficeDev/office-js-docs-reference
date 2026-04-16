@@ -5,15 +5,14 @@ package: powerpoint!
 fullName: PowerPoint.SlideLayoutBackground
 summary: Represents the background of a slide layout.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.SlideLayout.background](/javascript/api/powerpoint/powerpoint.slidelayout#background-member)
   \]
 
@@ -30,9 +29,8 @@ properties:
       Specifies whether the slide layout background fill hides or displays
       background graphic objects from the slide master.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +59,8 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of the background.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +77,8 @@ properties:
       Specifies if the slide layout background follows the slide master
       background.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -178,9 +174,8 @@ methods:
     fullName: reset()
     summary: Resets the fill formatting of the slide layout background.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

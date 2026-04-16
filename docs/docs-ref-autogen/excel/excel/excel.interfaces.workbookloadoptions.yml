@@ -10,8 +10,8 @@ summary: >-
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
   -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -39,8 +39,8 @@ properties:
     fullName: application
     summary: Represents the Excel application instance that contains this workbook.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -54,8 +54,8 @@ properties:
     fullName: autoSave
     summary: Specifies if the workbook is in AutoSave mode.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +69,8 @@ properties:
     fullName: bindings
     summary: Represents a collection of bindings that are part of the workbook.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -86,8 +86,8 @@ properties:
     fullName: calculationEngineVersion
     summary: Returns a number about the version of Excel Calculation Engine.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -104,8 +104,8 @@ properties:
       which they are attached. False if the charts track the index of the data
       points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +123,8 @@ properties:
       that depends on an external code service to complete. The valid range is 1
       to 86400, inclusive.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -142,8 +141,8 @@ properties:
       can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -160,8 +159,8 @@ properties:
       can be used to reference data (cell values and names) outside of the
       current workbook.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -178,8 +177,8 @@ properties:
     fullName: name
     summary: Gets the workbook name.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -193,8 +192,8 @@ properties:
     fullName: previouslySaved
     summary: Specifies if the workbook has ever been saved locally or online.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -208,8 +207,8 @@ properties:
     fullName: properties
     summary: Gets the workbook properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -226,8 +225,8 @@ properties:
     fullName: protection
     summary: Returns the protection object for a workbook.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -244,8 +243,8 @@ properties:
     fullName: readOnly
     summary: Returns `true` if the workbook is open in read-only mode.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -261,9 +260,8 @@ properties:
       Specifies whether the PivotTable's field list pane is shown at the
       workbook level.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -277,8 +275,8 @@ properties:
     fullName: tables
     summary: Represents a collection of tables associated with the workbook.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -294,9 +292,8 @@ properties:
     fullName: use1904DateSystem
     summary: True if the workbook uses the 1904 date system.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -313,8 +310,8 @@ properties:
       precision of the numbers as they're displayed. Data will permanently lose
       accuracy when switching this property from `false` to `true`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

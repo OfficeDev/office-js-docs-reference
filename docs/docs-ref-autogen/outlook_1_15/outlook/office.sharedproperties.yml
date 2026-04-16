@@ -13,10 +13,9 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+  [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
   mailbox
   support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -33,27 +32,27 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#getsharedpropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentread#getsharedpropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#getsharedpropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageRead.getSharedPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#getsharedpropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.getSharedPropertiesAsync](/javascript/api/outlook/office.messagecompose#getsharedpropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.getSharedPropertiesAsync](/javascript/api/outlook/office.messageread#getsharedpropertiesasync-member)
   \]
 

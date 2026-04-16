@@ -8,9 +8,8 @@ summary: >-
   [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
   pattern fill.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -52,9 +51,8 @@ properties:
       If provided, specifies the background color in HTML color format (e.g.,
       "\#FFFFFF" or "white").
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +69,8 @@ properties:
       If provided, specifies the foreground color in HTML color format (e.g.,
       "\#FFA500" or "orange").
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +84,8 @@ properties:
     fullName: pattern
     summary: If provided, specifies the pattern type.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

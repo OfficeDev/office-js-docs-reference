@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.LinkedEntityDataDomainData
 summary: >-
   An interface describing the data returned by calling
   `linkedEntityDataDomain.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.LinkedEntityDataDomainCollectionData.items](/javascript/api/excel/excel.interfaces.linkedentitydatadomaincollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.LinkedEntityDataDomainCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.linkedentitydatadomaincollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -30,9 +20,8 @@ properties:
       Gets the name of the data provider for the linked entity data domain. This
       name can change based on the information provided by the data provider.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -52,9 +41,8 @@ properties:
       This ID is not applicable to linked entity data domains defined by service
       data providers, such as Bing or Power BI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -75,9 +63,8 @@ properties:
       domain were last refreshed. Returns `undefined` if `LinkedEntityCellValue`
       objects have not been refreshed since the workbook was opened.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -101,9 +88,8 @@ properties:
       -->. This ID is not applicable to linked entity data domains defined by
       service data providers, such as Bing or Power BI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -122,9 +108,8 @@ properties:
       Gets the name of the linked entity data domain. This name can change based
       on the information provided by the data provider.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -145,9 +130,8 @@ properties:
       of this linked entity data domain are refreshed automatically. The refresh
       interval only applies if the `refreshMode` is set to "Periodic".
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -170,9 +154,8 @@ properties:
       refresh mode is set to "Periodic", the refresh interval is set to the
       `periodicRefreshInterval` of this linked entity data domain.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -197,9 +180,8 @@ properties:
       defined by service data providers, such as Bing or Power BI, or defined by
       Office Add-ins. This ID never changes across user sessions.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -220,9 +202,8 @@ properties:
       This array can change based on the information provided by the data
       provider.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.

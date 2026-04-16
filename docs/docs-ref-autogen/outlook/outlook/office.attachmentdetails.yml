@@ -10,8 +10,8 @@ summary: >-
   An array of `AttachmentDetails` objects is returned as the `attachments`
   property of an appointment or message item.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -28,15 +28,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentRead.attachments](/javascript/api/outlook/office.appointmentread#attachments-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageRead.attachments](/javascript/api/outlook/office.loadedmessageread#attachments-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.attachments](/javascript/api/outlook/office.messageread#attachments-member)
   \]
 

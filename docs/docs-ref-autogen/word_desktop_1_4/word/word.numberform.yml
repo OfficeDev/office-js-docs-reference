@@ -5,23 +5,14 @@ package: word!
 fullName: Word.NumberForm
 summary: Specifies the number form setting for an OpenType font.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Font.numberForm](/javascript/api/word/word.font#numberform-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontData.numberForm](/javascript/api/word/word.interfaces.fontdata#numberform-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontUpdateData.numberForm](/javascript/api/word/word.interfaces.fontupdatedata#numberform-member)
-  \]
+  - [Word.Font.numberForm](/javascript/api/word/word.font#numberform-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,8 +24,8 @@ fields:
       Default number form setting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Default"'
   - name: lining
     uid: word!Word.NumberForm.lining:member
@@ -43,8 +34,8 @@ fields:
       Lining number form setting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lining"'
   - name: oldStyle
     uid: word!Word.NumberForm.oldStyle:member
@@ -53,6 +44,6 @@ fields:
       Old-style number form setting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OldStyle"'

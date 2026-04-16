@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.CrossFunctionalFlowchartOrientation
 summary: Represents the orientation of the Cross Functional Flowchart diagram.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +18,8 @@ fields:
       Horizontal Cross Functional Flowchart.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Horizontal"'
   - name: vertical
     uid: visio!Visio.CrossFunctionalFlowchartOrientation.vertical:member
@@ -30,7 +28,6 @@ fields:
       Vertical Cross Functional Flowchart.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Vertical"'

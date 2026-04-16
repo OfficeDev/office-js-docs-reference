@@ -11,11 +11,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.SetBindingDataOptions.cellFormat](/javascript/api/office/office.setbindingdataoptions#cellformat-member)
   \]
 
-  - \[
+  -
   [Office.SetSelectedDataOptions.cellFormat](/javascript/api/office/office.setselecteddataoptions#cellformat-member)
   \]
 

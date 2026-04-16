@@ -5,16 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartGridlinesFormatLoadOptions
 summary: Encapsulates the format properties for chart gridlines.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartGridlinesLoadOptions.format](/javascript/api/excel/excel.interfaces.chartgridlinesloadoptions#format-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +34,8 @@ properties:
     fullName: line
     summary: Represents chart line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

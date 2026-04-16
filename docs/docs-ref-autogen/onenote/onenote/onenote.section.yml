@@ -5,18 +5,18 @@ package: onenote!
 fullName: OneNote.Section
 summary: Represents a OneNote section. Sections can contain pages.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Page.parentSection](/javascript/api/onenote/onenote.page#parentsection-member)
   \]
 
-  - \[
+  -
   [OneNote.SectionCollection.items](/javascript/api/onenote/onenote.sectioncollection#items-member)
   \]
 
@@ -30,9 +30,8 @@ properties:
     fullName: clientUrl
     summary: The client url of the section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +60,8 @@ properties:
     fullName: id
     summary: Gets the ID of the section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +75,8 @@ properties:
     fullName: isEncrypted
     summary: True if this section is encrypted with a password.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +90,8 @@ properties:
     fullName: isLocked
     summary: True if this section is locked.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -109,9 +105,8 @@ properties:
     fullName: name
     summary: Gets the name of the section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +120,8 @@ properties:
     fullName: notebook
     summary: Gets the notebook that contains the section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +135,8 @@ properties:
     fullName: pages
     summary: The collection of pages in the section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -159,9 +152,8 @@ properties:
       Gets the section group that contains the section. Throws ItemNotFound if
       the section is a direct child of the notebook.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -177,9 +169,8 @@ properties:
       Gets the section group that contains the section. Returns null if the
       section is a direct child of the notebook. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -193,9 +184,8 @@ properties:
     fullName: webUrl
     summary: The web URL of the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -210,9 +200,8 @@ methods:
     fullName: addPage(title)
     summary: Adds a new page to the end of the section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -256,9 +245,8 @@ methods:
     fullName: copyToNotebook(destinationNotebook)
     summary: Copies this section to specified notebook.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -305,9 +293,8 @@ methods:
     fullName: copyToSectionGroup(destinationSectionGroup)
     summary: Copies this section to specified section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -357,9 +344,8 @@ methods:
     fullName: getRestApiId()
     summary: Gets the REST API ID.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -396,9 +382,8 @@ methods:
     fullName: insertSectionAsSibling(location, title)
     summary: Inserts a new section before or after the current section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -422,9 +407,8 @@ methods:
     fullName: insertSectionAsSibling(location, title)
     summary: Inserts a new section before or after the current section.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples

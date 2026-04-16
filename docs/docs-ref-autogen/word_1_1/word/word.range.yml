@@ -5,15 +5,15 @@ package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
   \]
 
@@ -57,8 +57,8 @@ properties:
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -89,8 +89,8 @@ properties:
       Gets the text format of the range. Use this to get and set font name,
       size, color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -104,8 +104,8 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly
@@ -126,8 +126,8 @@ properties:
       Gets the currently supported content control that contains the range.
       Throws an `ItemNotFound` error if there isn't a parent content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -195,8 +195,8 @@ properties:
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -210,8 +210,8 @@ properties:
     fullName: text
     summary: Gets the text of the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -228,8 +228,8 @@ methods:
       Clears the contents of the `Range` object. The user can perform the undo
       operation on the cleared content.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -269,8 +269,8 @@ methods:
     fullName: delete()
     summary: Deletes the range and its content from the document.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -317,8 +317,8 @@ methods:
       across platforms, use `Range.getOoxml()` and convert the returned XML to
       HTML.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -358,8 +358,8 @@ methods:
     fullName: getOoxml()
     summary: Gets the OOXML representation of the `Range` object.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -399,8 +399,8 @@ methods:
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -456,8 +456,8 @@ methods:
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Range` object with a content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
@@ -554,8 +554,8 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -616,8 +616,8 @@ methods:
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -670,8 +670,8 @@ methods:
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -731,8 +731,8 @@ methods:
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -784,8 +784,8 @@ methods:
     fullName: insertText(text, insertLocation)
     summary: Inserts text at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -914,8 +914,8 @@ methods:
       Performs a search with the specified search options on the scope of the
       `Range` object. The search results are a collection of `Range` objects.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -955,8 +955,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1005,8 +1005,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

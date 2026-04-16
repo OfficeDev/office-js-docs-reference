@@ -5,24 +5,16 @@ package: word!
 fullName: Word.ContentControlAppearance
 summary: Represents the content control appearance.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ContentControl.appearance](/javascript/api/word/word.contentcontrol#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.appearance](/javascript/api/word/word.interfaces.contentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.contentcontrolupdatedata#appearance-member)
   \]
 
   #### Examples
@@ -82,8 +74,8 @@ fields:
       (with optional title).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
@@ -92,8 +84,8 @@ fields:
       Represents a content control that isn't shown.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
@@ -102,6 +94,6 @@ fields:
       Represents a content control shown as start and end markers.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tags"'

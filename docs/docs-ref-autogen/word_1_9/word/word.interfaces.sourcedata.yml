@@ -6,17 +6,7 @@ fullName: Word.Interfaces.SourceData
 summary: >-
   An interface describing the data returned by calling `source.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.SourceCollectionData.items](/javascript/api/word/word.interfaces.sourcecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SourceCollectionUpdateData.items](/javascript/api/word/word.interfaces.sourcecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

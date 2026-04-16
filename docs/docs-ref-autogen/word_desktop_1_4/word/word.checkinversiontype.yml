@@ -5,8 +5,8 @@ package: word!
 fullName: Word.CheckInVersionType
 summary: Specifies the version type for document check-in operations.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       Represents a major version check-in.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Major"'
   - name: minor
     uid: word!Word.CheckInVersionType.minor:member
@@ -28,8 +28,8 @@ fields:
       Represents a minor version check-in.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Minor"'
   - name: overwrite
     uid: word!Word.CheckInVersionType.overwrite:member
@@ -38,6 +38,6 @@ fields:
       Represents an overwrite version check-in.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Overwrite"'

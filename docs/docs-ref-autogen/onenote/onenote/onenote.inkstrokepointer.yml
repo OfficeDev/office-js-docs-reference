@@ -5,19 +5,15 @@ package: onenote!
 fullName: OneNote.InkStrokePointer
 summary: Weak reference to an ink stroke object and its content parent.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.InkAnalysisWord.strokePointers](/javascript/api/onenote/onenote.inkanalysisword#strokepointers-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisWordData.strokePointers](/javascript/api/onenote/onenote.interfaces.inkanalysisworddata#strokepointers-member)
   \]
 
 isPreview: false
@@ -30,9 +26,8 @@ properties:
     fullName: contentId
     summary: Represents the ID of the page content object corresponding to this stroke.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,9 +41,8 @@ properties:
     fullName: inkStrokeId
     summary: Represents the ID of the ink stroke.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

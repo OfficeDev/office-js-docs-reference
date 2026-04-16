@@ -7,8 +7,8 @@ summary: >-
   Provides configuration options for the
   [Document.getRange](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: true
 isDeprecated: false
@@ -22,8 +22,8 @@ properties:
       If provided, specifies the ending character position. The default value is
       the end of the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -39,8 +39,8 @@ properties:
       If provided, specifies the starting character position. The default value
       is `0`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false

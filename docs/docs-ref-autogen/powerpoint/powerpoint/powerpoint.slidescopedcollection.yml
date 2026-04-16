@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.SlideScopedCollection
 summary: Represents a collection of slides in the presentation.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -85,9 +84,8 @@ methods:
       Exports all slides in this collection to their own presentation file,
       returned as Base64-encoded data.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +100,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of slides in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +116,8 @@ methods:
     fullName: getItem(key)
     summary: Gets a slide using its unique ID.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -142,9 +138,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a slide using its zero-based index in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -170,9 +165,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

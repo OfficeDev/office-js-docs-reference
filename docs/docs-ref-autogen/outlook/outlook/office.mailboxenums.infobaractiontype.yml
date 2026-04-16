@@ -8,16 +8,15 @@ summary: >-
   [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Office.InfobarDetails.actionType](/javascript/api/outlook/office.infobardetails#actiontype-member)
   \]
 
@@ -75,7 +74,6 @@ fields:
       Dismiss action was selected.
 
 
-      * \[ [API set: Mailbox
+      * [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
     value: '1'

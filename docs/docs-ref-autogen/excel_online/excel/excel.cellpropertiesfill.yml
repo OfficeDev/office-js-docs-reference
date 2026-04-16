@@ -9,14 +9,14 @@ summary: >-
   input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->,
   and `setColumnProperties`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CellPropertiesFormat.fill](/javascript/api/excel/excel.cellpropertiesformat#fill-member)
   \]
 
@@ -30,8 +30,8 @@ properties:
     fullName: color
     summary: Represents the `format.fill.color` property.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -129,8 +129,8 @@ properties:
     fullName: pattern
     summary: Represents the `format.fill.pattern` property.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -154,8 +154,8 @@ properties:
     fullName: patternColor
     summary: Represents the `format.fill.patternColor` property.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -169,8 +169,8 @@ properties:
     fullName: patternTintAndShade
     summary: Represents the `format.fill.patternTintAndShade` property.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -184,8 +184,8 @@ properties:
     fullName: tintAndShade
     summary: Represents the `format.fill.tintAndShade` property.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

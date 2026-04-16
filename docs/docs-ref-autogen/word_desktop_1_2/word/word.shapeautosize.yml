@@ -5,23 +5,15 @@ package: word!
 fullName: Word.ShapeAutoSize
 summary: Determines the type of automatic sizing allowed.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.TextFrameData.autoSizeSetting](/javascript/api/word/word.interfaces.textframedata#autosizesetting-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TextFrameUpdateData.autoSizeSetting](/javascript/api/word/word.interfaces.textframeupdatedata#autosizesetting-member)
-  \]
-
-  - \[
+  -
   [Word.TextFrame.autoSizeSetting](/javascript/api/word/word.textframe#autosizesetting-member)
   \]
 
@@ -65,8 +57,8 @@ fields:
       A combination of automatic sizing schemes are used.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeAutoSize.none:member
@@ -75,8 +67,8 @@ fields:
       No autosizing.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: shapeToFitText
     uid: word!Word.ShapeAutoSize.shapeToFitText:member
@@ -85,8 +77,8 @@ fields:
       The shape is adjusted to fit the text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ShapeToFitText"'
   - name: textToFitShape
     uid: word!Word.ShapeAutoSize.textToFitShape:member
@@ -95,6 +87,6 @@ fields:
       The text is adjusted to fit the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TextToFitShape"'

@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.ChartLeaderLines
 summary: Gets an object that represents the formatting of chart leader lines.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartDataLabels.leaderLines](/javascript/api/excel/excel.chartdatalabels#leaderlines-member)
   \]
 
@@ -71,9 +71,8 @@ properties:
     fullName: format
     summary: Represents the formatting of leader lines of data labels in a series.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

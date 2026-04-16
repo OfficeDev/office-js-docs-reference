@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.LinkedWorkbookCollection
 summary: Represents a collection of linked workbook objects.
 remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Workbook.linkedWorkbooks](/javascript/api/excel/excel.workbook#linkedworkbooks-member)
   \]
 
@@ -56,8 +56,8 @@ properties:
       Represents the update mode of the workbook links. The mode is same for all
       of the workbook links present in the workbook.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +79,8 @@ methods:
       any formulas referencing workbook links are removed entirely and replaced
       with the most recently retrieved values.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +95,8 @@ methods:
     fullName: getItem(key)
     summary: Gets information about a linked workbook by its URL.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +121,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -215,8 +215,8 @@ methods:
     fullName: refreshAll()
     summary: Makes a request to refresh all the workbook links.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

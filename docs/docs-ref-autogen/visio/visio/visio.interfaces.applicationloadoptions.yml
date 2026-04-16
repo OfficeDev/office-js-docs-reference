@@ -5,17 +5,8 @@ package: visio!
 fullName: Visio.Interfaces.ApplicationLoadOptions
 summary: Represents the Application.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.DocumentLoadOptions.application](/javascript/api/visio/visio.interfaces.documentloadoptions#application-member)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -43,9 +34,8 @@ properties:
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,9 +49,8 @@ properties:
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

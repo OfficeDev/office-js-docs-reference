@@ -6,17 +6,7 @@ fullName: Word.Interfaces.AnnotationData
 summary: >-
   An interface describing the data returned by calling `annotation.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.AnnotationCollectionData.items](/javascript/api/word/word.interfaces.annotationcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.AnnotationCollectionUpdateData.items](/javascript/api/word/word.interfaces.annotationcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

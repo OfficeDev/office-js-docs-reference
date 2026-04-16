@@ -5,8 +5,8 @@ package: word!
 fullName: Word.FieldCollection
 summary: Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   Important: To learn more about which fields can be inserted, see the
@@ -25,21 +25,20 @@ remarks: >-
   #### Used by
 
 
-  - \[ [Word.Body.fields](/javascript/api/word/word.body#fields-member) \]
+  - [Word.Body.fields](/javascript/api/word/word.body#fields-member) \]
 
-  - \[
+  -
   [Word.ContentControl.fields](/javascript/api/word/word.contentcontrol#fields-member)
   \]
 
-  - \[
-  [Word.Paragraph.fields](/javascript/api/word/word.paragraph#fields-member) \]
-
-  - \[ [Word.Range.fields](/javascript/api/word/word.range#fields-member) \]
-
-  - \[ [Word.Table.fields](/javascript/api/word/word.table#fields-member) \]
-
-  - \[ [Word.TableRow.fields](/javascript/api/word/word.tablerow#fields-member)
+  - [Word.Paragraph.fields](/javascript/api/word/word.paragraph#fields-member)
   \]
+
+  - [Word.Range.fields](/javascript/api/word/word.range#fields-member) \]
+
+  - [Word.Table.fields](/javascript/api/word/word.table#fields-member) \]
+
+  - [Word.TableRow.fields](/javascript/api/word/word.tablerow#fields-member) \]
 
   #### Examples
 
@@ -144,8 +143,8 @@ methods:
       Gets the first field in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -165,8 +164,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

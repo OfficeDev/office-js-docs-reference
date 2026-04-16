@@ -5,39 +5,39 @@ package: word!
 fullName: Word.OperationUnit
 summary: Specifies the unit of measurement used in Word operations.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.SelectionDeleteOptions.unit](/javascript/api/word/word.selectiondeleteoptions#unit-member)
   \]
 
-  - \[
+  -
   [Word.SelectionMoveLeftRightOptions.unit](/javascript/api/word/word.selectionmoveleftrightoptions#unit-member)
   \]
 
-  - \[
+  -
   [Word.SelectionMoveOptions.unit](/javascript/api/word/word.selectionmoveoptions#unit-member)
   \]
 
-  - \[
+  -
   [Word.SelectionMoveStartEndOptions.unit](/javascript/api/word/word.selectionmovestartendoptions#unit-member)
   \]
 
-  - \[
+  -
   [Word.SelectionMoveUpDownOptions.unit](/javascript/api/word/word.selectionmoveupdownoptions#unit-member)
   \]
 
-  - \[
+  -
   [Word.SelectionNextOptions.unit](/javascript/api/word/word.selectionnextoptions#unit-member)
   \]
 
-  - \[
+  -
   [Word.SelectionPreviousOptions.unit](/javascript/api/word/word.selectionpreviousoptions#unit-member)
   \]
 
@@ -76,8 +76,8 @@ fields:
       Specifies a cell unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Cell"'
   - name: character
     uid: word!Word.OperationUnit.character:member
@@ -86,8 +86,8 @@ fields:
       Specifies a character unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Character"'
   - name: characterFormat
     uid: word!Word.OperationUnit.characterFormat:member
@@ -96,8 +96,8 @@ fields:
       Specifies a character format unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CharacterFormat"'
   - name: column
     uid: word!Word.OperationUnit.column:member
@@ -106,8 +106,8 @@ fields:
       Specifies a column unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Column"'
   - name: item
     uid: word!Word.OperationUnit.item:member
@@ -116,8 +116,8 @@ fields:
       Specifies an item unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Item"'
   - name: line
     uid: word!Word.OperationUnit.line:member
@@ -126,8 +126,8 @@ fields:
       Specifies a line unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Line"'
   - name: paragraph
     uid: word!Word.OperationUnit.paragraph:member
@@ -136,8 +136,8 @@ fields:
       Specifies a paragraph unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Paragraph"'
   - name: paragraphFormat
     uid: word!Word.OperationUnit.paragraphFormat:member
@@ -146,8 +146,8 @@ fields:
       Specifies a paragraph format unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParagraphFormat"'
   - name: row
     uid: word!Word.OperationUnit.row:member
@@ -156,8 +156,8 @@ fields:
       Specifies a row unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Row"'
   - name: screen
     uid: word!Word.OperationUnit.screen:member
@@ -166,8 +166,8 @@ fields:
       Specifies a screen unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Screen"'
   - name: section
     uid: word!Word.OperationUnit.section:member
@@ -176,8 +176,8 @@ fields:
       Specifies a section unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Section"'
   - name: sentence
     uid: word!Word.OperationUnit.sentence:member
@@ -186,8 +186,8 @@ fields:
       Specifies a sentence unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Sentence"'
   - name: story
     uid: word!Word.OperationUnit.story:member
@@ -196,8 +196,8 @@ fields:
       Specifies a story unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Story"'
   - name: table
     uid: word!Word.OperationUnit.table:member
@@ -206,8 +206,8 @@ fields:
       Specifies a table unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Table"'
   - name: window
     uid: word!Word.OperationUnit.window:member
@@ -216,8 +216,8 @@ fields:
       Specifies a window unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Window"'
   - name: word
     uid: word!Word.OperationUnit.word:member
@@ -226,6 +226,6 @@ fields:
       Specifies a word unit.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Word"'

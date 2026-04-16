@@ -6,33 +6,7 @@ fullName: Excel.Interfaces.ChartLineFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartLineFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAxisFormatData.line](/javascript/api/excel/excel.interfaces.chartaxisformatdata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartErrorBarsFormatData.line](/javascript/api/excel/excel.interfaces.charterrorbarsformatdata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartGridlinesFormatData.line](/javascript/api/excel/excel.interfaces.chartgridlinesformatdata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLeaderLinesFormatData.line](/javascript/api/excel/excel.interfaces.chartleaderlinesformatdata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesFormatData.line](/javascript/api/excel/excel.interfaces.chartseriesformatdata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineFormatData.line](/javascript/api/excel/excel.interfaces.charttrendlineformatdata#line-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +18,8 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +33,8 @@ properties:
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +54,8 @@ properties:
     fullName: weight
     summary: Represents weight of the line, in points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

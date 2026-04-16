@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartAxisPosition
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxis.position](/javascript/api/excel/excel.chartaxis#position-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.position](/javascript/api/excel/excel.interfaces.chartaxisdata#position-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisUpdateData.position](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#position-member)
   \]
 
 isPreview: false
@@ -31,27 +23,27 @@ fields:
     uid: excel!Excel.ChartAxisPosition.automatic:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: custom
     uid: excel!Excel.ChartAxisPosition.custom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Custom"'
   - name: maximum
     uid: excel!Excel.ChartAxisPosition.maximum:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Maximum"'
   - name: minimum
     uid: excel!Excel.ChartAxisPosition.minimum:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Minimum"'

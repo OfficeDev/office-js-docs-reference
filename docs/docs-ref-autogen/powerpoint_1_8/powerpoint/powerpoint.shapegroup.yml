@@ -7,16 +7,15 @@ summary: >-
   Represents a shape group inside a presentation. To get the corresponding Shape
   object, use `ShapeGroup.shape`<!-- -->.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Shape.group](/javascript/api/powerpoint/powerpoint.shape#group-member)
   \]
 
@@ -81,9 +80,8 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +95,8 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +110,8 @@ properties:
     fullName: shapes
     summary: Returns the collection of `Shape` objects in the group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -233,9 +229,8 @@ methods:
     fullName: ungroup()
     summary: Ungroups any grouped shapes in the specified shape group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

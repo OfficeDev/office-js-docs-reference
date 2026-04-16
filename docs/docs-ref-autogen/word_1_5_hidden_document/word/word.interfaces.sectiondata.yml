@@ -6,25 +6,7 @@ fullName: Word.Interfaces.SectionData
 summary: >-
   An interface describing the data returned by calling `section.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.DocumentCreatedData.sections](/javascript/api/word/word.interfaces.documentcreateddata#sections-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.sections](/javascript/api/word/word.interfaces.documentdata#sections-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionCollectionData.items](/javascript/api/word/word.interfaces.sectioncollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionCollectionUpdateData.items](/javascript/api/word/word.interfaces.sectioncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -38,8 +20,8 @@ properties:
       Gets the `Body` object of the section. This doesn't include the header,
       footer, and other section metadata.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

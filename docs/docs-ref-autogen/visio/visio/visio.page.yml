@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.Page
 summary: Represents the Page class.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.PageCollection.items](/javascript/api/visio/visio.pagecollection#items-member)
   \]
 
@@ -27,9 +26,8 @@ properties:
     fullName: allShapes
     summary: All shapes in the Page, including subshapes.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,9 +41,8 @@ properties:
     fullName: comments
     summary: Returns the Comments Collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +71,8 @@ properties:
     fullName: height
     summary: Returns the height of the page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +86,8 @@ properties:
     fullName: index
     summary: Index of the Page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +101,8 @@ properties:
     fullName: isBackground
     summary: Whether the page is a background page or not.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -122,9 +116,8 @@ properties:
     fullName: name
     summary: Page name.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -138,9 +131,8 @@ properties:
     fullName: shapes
     summary: All top-level shapes in the Page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -154,9 +146,8 @@ properties:
     fullName: view
     summary: Returns the view of the page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -170,9 +161,8 @@ properties:
     fullName: width
     summary: Returns the width of the page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -187,9 +177,8 @@ methods:
     fullName: activate()
     summary: Sets the page as Active Page of the document.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,23 +5,15 @@ package: word!
 fullName: Word.ListBuiltInNumberStyle
 summary: Represents the built-in number styles for lists in Word.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ListLevelData.numberStyle](/javascript/api/word/word.interfaces.listleveldata#numberstyle-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ListLevelUpdateData.numberStyle](/javascript/api/word/word.interfaces.listlevelupdatedata#numberstyle-member)
-  \]
-
-  - \[
+  -
   [Word.ListLevel.numberStyle](/javascript/api/word/word.listlevel#numberstyle-member)
   \]
 
@@ -77,8 +69,8 @@ fields:
       Aiueo characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Aiueo"'
   - name: aiueoHalfWidth
     uid: word!Word.ListBuiltInNumberStyle.aiueoHalfWidth:member
@@ -87,8 +79,8 @@ fields:
       Aiueo half width characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AiueoHalfWidth"'
   - name: arabic
     uid: word!Word.ListBuiltInNumberStyle.arabic:member
@@ -97,8 +89,8 @@ fields:
       Arabic numerals (1, 2, 3, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Arabic"'
   - name: arabic1
     uid: word!Word.ListBuiltInNumberStyle.arabic1:member
@@ -107,8 +99,8 @@ fields:
       Arabic1 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Arabic1"'
   - name: arabic2
     uid: word!Word.ListBuiltInNumberStyle.arabic2:member
@@ -117,8 +109,8 @@ fields:
       Arabic2 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Arabic2"'
   - name: arabicFullWidth
     uid: word!Word.ListBuiltInNumberStyle.arabicFullWidth:member
@@ -127,8 +119,8 @@ fields:
       Arabic full-width numbers.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ArabicFullWidth"'
   - name: arabicLZ
     uid: word!Word.ListBuiltInNumberStyle.arabicLZ:member
@@ -137,8 +129,8 @@ fields:
       Arabic full-width numbers with leading zeros.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ArabicLZ"'
   - name: arabicLZ2
     uid: word!Word.ListBuiltInNumberStyle.arabicLZ2:member
@@ -147,8 +139,8 @@ fields:
       Arabic numbers with leading zeros (style 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ArabicLZ2"'
   - name: arabicLZ3
     uid: word!Word.ListBuiltInNumberStyle.arabicLZ3:member
@@ -157,8 +149,8 @@ fields:
       Arabic numbers with leading zeros (style 3).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ArabicLZ3"'
   - name: arabicLZ4
     uid: word!Word.ListBuiltInNumberStyle.arabicLZ4:member
@@ -167,8 +159,8 @@ fields:
       Arabic numbers with leading zeros (style 4).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ArabicLZ4"'
   - name: bullet
     uid: word!Word.ListBuiltInNumberStyle.bullet:member
@@ -177,8 +169,8 @@ fields:
       Bullet characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bullet"'
   - name: cardinalText
     uid: word!Word.ListBuiltInNumberStyle.cardinalText:member
@@ -187,8 +179,8 @@ fields:
       Cardinal numbers as text (one, two, three, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CardinalText"'
   - name: chosung
     uid: word!Word.ListBuiltInNumberStyle.chosung:member
@@ -197,8 +189,8 @@ fields:
       Chosung characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Chosung"'
   - name: ganada
     uid: word!Word.ListBuiltInNumberStyle.ganada:member
@@ -207,8 +199,8 @@ fields:
       Ganada characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ganada"'
   - name: gbnum1
     uid: word!Word.ListBuiltInNumberStyle.gbnum1:member
@@ -217,8 +209,8 @@ fields:
       GBNum1 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GBNum1"'
   - name: gbnum2
     uid: word!Word.ListBuiltInNumberStyle.gbnum2:member
@@ -227,8 +219,8 @@ fields:
       GBNum2 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GBNum2"'
   - name: gbnum3
     uid: word!Word.ListBuiltInNumberStyle.gbnum3:member
@@ -237,8 +229,8 @@ fields:
       GBNum3 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GBNum3"'
   - name: gbnum4
     uid: word!Word.ListBuiltInNumberStyle.gbnum4:member
@@ -247,8 +239,8 @@ fields:
       GBNum4 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GBNum4"'
   - name: hangul
     uid: word!Word.ListBuiltInNumberStyle.hangul:member
@@ -257,8 +249,8 @@ fields:
       Hangul characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hangul"'
   - name: hanja
     uid: word!Word.ListBuiltInNumberStyle.hanja:member
@@ -267,8 +259,8 @@ fields:
       Hanja characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hanja"'
   - name: hanjaRead
     uid: word!Word.ListBuiltInNumberStyle.hanjaRead:member
@@ -277,8 +269,8 @@ fields:
       Hanja read numbers.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HanjaRead"'
   - name: hanjaReadDigit
     uid: word!Word.ListBuiltInNumberStyle.hanjaReadDigit:member
@@ -287,8 +279,8 @@ fields:
       Hanja read digits.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HanjaReadDigit"'
   - name: hebrew1
     uid: word!Word.ListBuiltInNumberStyle.hebrew1:member
@@ -297,8 +289,8 @@ fields:
       Hebrew1 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hebrew1"'
   - name: hebrew2
     uid: word!Word.ListBuiltInNumberStyle.hebrew2:member
@@ -307,8 +299,8 @@ fields:
       Hebrew2 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hebrew2"'
   - name: hindiArabic
     uid: word!Word.ListBuiltInNumberStyle.hindiArabic:member
@@ -317,8 +309,8 @@ fields:
       Hindi Arabic style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HindiArabic"'
   - name: hindiCardinalText
     uid: word!Word.ListBuiltInNumberStyle.hindiCardinalText:member
@@ -327,8 +319,8 @@ fields:
       Hindi cardinal text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HindiCardinalText"'
   - name: hindiLetter1
     uid: word!Word.ListBuiltInNumberStyle.hindiLetter1:member
@@ -337,8 +329,8 @@ fields:
       Hindi letter style 1.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HindiLetter1"'
   - name: hindiLetter2
     uid: word!Word.ListBuiltInNumberStyle.hindiLetter2:member
@@ -347,8 +339,8 @@ fields:
       Hindi letter style 2.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HindiLetter2"'
   - name: iroha
     uid: word!Word.ListBuiltInNumberStyle.iroha:member
@@ -357,8 +349,8 @@ fields:
       Iroha characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Iroha"'
   - name: irohaHalfWidth
     uid: word!Word.ListBuiltInNumberStyle.irohaHalfWidth:member
@@ -367,8 +359,8 @@ fields:
       Iroha half width characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IrohaHalfWidth"'
   - name: kanji
     uid: word!Word.ListBuiltInNumberStyle.kanji:member
@@ -377,8 +369,8 @@ fields:
       Kanji.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Kanji"'
   - name: kanjiDigit
     uid: word!Word.ListBuiltInNumberStyle.kanjiDigit:member
@@ -387,8 +379,8 @@ fields:
       Kanji digits.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"KanjiDigit"'
   - name: kanjiTraditional
     uid: word!Word.ListBuiltInNumberStyle.kanjiTraditional:member
@@ -397,8 +389,8 @@ fields:
       Traditional Kanji characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"KanjiTraditional"'
   - name: kanjiTraditional2
     uid: word!Word.ListBuiltInNumberStyle.kanjiTraditional2:member
@@ -407,8 +399,8 @@ fields:
       Traditional Kanji characters (alternative form).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"KanjiTraditional2"'
   - name: legal
     uid: word!Word.ListBuiltInNumberStyle.legal:member
@@ -417,8 +409,8 @@ fields:
       Legal numbering style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Legal"'
   - name: legalLZ
     uid: word!Word.ListBuiltInNumberStyle.legalLZ:member
@@ -427,8 +419,8 @@ fields:
       Legal numbering style with leading zeros.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegalLZ"'
   - name: lowercaseBulgarian
     uid: word!Word.ListBuiltInNumberStyle.lowercaseBulgarian:member
@@ -437,8 +429,8 @@ fields:
       Lowercase Bulgarian.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LowercaseBulgarian"'
   - name: lowercaseGreek
     uid: word!Word.ListBuiltInNumberStyle.lowercaseGreek:member
@@ -447,8 +439,8 @@ fields:
       Lowercase Greek.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LowercaseGreek"'
   - name: lowercaseRussian
     uid: word!Word.ListBuiltInNumberStyle.lowercaseRussian:member
@@ -457,8 +449,8 @@ fields:
       Lowercase Russian.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LowercaseRussian"'
   - name: lowercaseTurkish
     uid: word!Word.ListBuiltInNumberStyle.lowercaseTurkish:member
@@ -467,8 +459,8 @@ fields:
       Lowercase Turkish.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LowercaseTurkish"'
   - name: lowerLetter
     uid: word!Word.ListBuiltInNumberStyle.lowerLetter:member
@@ -477,8 +469,8 @@ fields:
       Lowercase letters (a, b, c, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LowerLetter"'
   - name: lowerRoman
     uid: word!Word.ListBuiltInNumberStyle.lowerRoman:member
@@ -487,8 +479,8 @@ fields:
       Lowercase Roman numerals (i, ii, iii, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LowerRoman"'
   - name: none
     uid: word!Word.ListBuiltInNumberStyle.none:member
@@ -497,8 +489,8 @@ fields:
       No built-in number style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: numberInCircle
     uid: word!Word.ListBuiltInNumberStyle.numberInCircle:member
@@ -507,8 +499,8 @@ fields:
       Numbers enclosed in a circle.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NumberInCircle"'
   - name: ordinal
     uid: word!Word.ListBuiltInNumberStyle.ordinal:member
@@ -517,8 +509,8 @@ fields:
       Ordinal numbers (1st, 2nd, 3rd, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ordinal"'
   - name: ordinalText
     uid: word!Word.ListBuiltInNumberStyle.ordinalText:member
@@ -527,8 +519,8 @@ fields:
       Ordinal numbers as text (first, second, third, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OrdinalText"'
   - name: pictureBullet
     uid: word!Word.ListBuiltInNumberStyle.pictureBullet:member
@@ -537,8 +529,8 @@ fields:
       Picture bullet.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PictureBullet"'
   - name: simpChinNum1
     uid: word!Word.ListBuiltInNumberStyle.simpChinNum1:member
@@ -547,8 +539,8 @@ fields:
       Simplified Chinese numbers (style 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SimpChinNum1"'
   - name: simpChinNum2
     uid: word!Word.ListBuiltInNumberStyle.simpChinNum2:member
@@ -557,8 +549,8 @@ fields:
       Simplified Chinese numbers (style 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SimpChinNum2"'
   - name: simpChinNum3
     uid: word!Word.ListBuiltInNumberStyle.simpChinNum3:member
@@ -567,8 +559,8 @@ fields:
       Simplified Chinese numbers (style 3).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SimpChinNum3"'
   - name: simpChinNum4
     uid: word!Word.ListBuiltInNumberStyle.simpChinNum4:member
@@ -577,8 +569,8 @@ fields:
       Simplified Chinese numbers (style 4).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SimpChinNum4"'
   - name: thaiArabic
     uid: word!Word.ListBuiltInNumberStyle.thaiArabic:member
@@ -587,8 +579,8 @@ fields:
       Thai Arabic characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThaiArabic"'
   - name: thaiCardinalText
     uid: word!Word.ListBuiltInNumberStyle.thaiCardinalText:member
@@ -597,8 +589,8 @@ fields:
       Thai cardinal text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThaiCardinalText"'
   - name: thaiLetter
     uid: word!Word.ListBuiltInNumberStyle.thaiLetter:member
@@ -607,8 +599,8 @@ fields:
       Thai letter characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThaiLetter"'
   - name: tradChinNum1
     uid: word!Word.ListBuiltInNumberStyle.tradChinNum1:member
@@ -617,8 +609,8 @@ fields:
       Traditional Chinese numbers (style 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TradChinNum1"'
   - name: tradChinNum2
     uid: word!Word.ListBuiltInNumberStyle.tradChinNum2:member
@@ -627,8 +619,8 @@ fields:
       Traditional Chinese numbers (style 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TradChinNum2"'
   - name: tradChinNum3
     uid: word!Word.ListBuiltInNumberStyle.tradChinNum3:member
@@ -637,8 +629,8 @@ fields:
       Traditional Chinese numbers (style 3).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TradChinNum3"'
   - name: tradChinNum4
     uid: word!Word.ListBuiltInNumberStyle.tradChinNum4:member
@@ -647,8 +639,8 @@ fields:
       Traditional Chinese numbers (style 4).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TradChinNum4"'
   - name: uppercaseBulgarian
     uid: word!Word.ListBuiltInNumberStyle.uppercaseBulgarian:member
@@ -657,8 +649,8 @@ fields:
       Uppercase Bulgarian.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UppercaseBulgarian"'
   - name: uppercaseGreek
     uid: word!Word.ListBuiltInNumberStyle.uppercaseGreek:member
@@ -667,8 +659,8 @@ fields:
       Uppercase Greek.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UppercaseGreek"'
   - name: uppercaseRussian
     uid: word!Word.ListBuiltInNumberStyle.uppercaseRussian:member
@@ -677,8 +669,8 @@ fields:
       Uppercase Russian.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UppercaseRussian"'
   - name: uppercaseTurkish
     uid: word!Word.ListBuiltInNumberStyle.uppercaseTurkish:member
@@ -687,8 +679,8 @@ fields:
       Uppercase Turkish.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UppercaseTurkish"'
   - name: upperLetter
     uid: word!Word.ListBuiltInNumberStyle.upperLetter:member
@@ -697,8 +689,8 @@ fields:
       Uppercase letters (A, B, C, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UpperLetter"'
   - name: upperRoman
     uid: word!Word.ListBuiltInNumberStyle.upperRoman:member
@@ -707,8 +699,8 @@ fields:
       Uppercase Roman numerals (I, II, III, ...).
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UpperRoman"'
   - name: vietCardinalText
     uid: word!Word.ListBuiltInNumberStyle.vietCardinalText:member
@@ -717,8 +709,8 @@ fields:
       Vietnamese cardinal text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"VietCardinalText"'
   - name: zodiac1
     uid: word!Word.ListBuiltInNumberStyle.zodiac1:member
@@ -727,8 +719,8 @@ fields:
       Zodiac1 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Zodiac1"'
   - name: zodiac2
     uid: word!Word.ListBuiltInNumberStyle.zodiac2:member
@@ -737,8 +729,8 @@ fields:
       Zodiac2 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Zodiac2"'
   - name: zodiac3
     uid: word!Word.ListBuiltInNumberStyle.zodiac3:member
@@ -747,6 +739,6 @@ fields:
       Zodiac3 characters.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Zodiac3"'

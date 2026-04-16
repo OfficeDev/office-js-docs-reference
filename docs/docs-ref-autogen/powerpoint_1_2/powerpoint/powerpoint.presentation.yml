@@ -10,16 +10,15 @@ summary: >-
   model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
   -->.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.RequestContext.presentation](/javascript/api/powerpoint/powerpoint.requestcontext#presentation-member)
   \]
 
@@ -75,9 +74,8 @@ properties:
     fullName: slides
     summary: Returns an ordered collection of slides in the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +89,8 @@ properties:
     fullName: title
     summary: Returns the title of the presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -110,9 +107,8 @@ methods:
       Inserts the specified slides from a presentation into the current
       presentation.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

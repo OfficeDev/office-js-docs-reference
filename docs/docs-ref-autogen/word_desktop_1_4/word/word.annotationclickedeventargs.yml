@@ -5,15 +5,15 @@ package: word!
 fullName: Word.AnnotationClickedEventArgs
 summary: Holds annotation information that is passed back on annotation inserted event.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.onAnnotationClicked](/javascript/api/word/word.document#onannotationclicked-member)
   \]
 
@@ -70,8 +70,8 @@ properties:
     fullName: id
     summary: Specifies the annotation ID for which the event was fired.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

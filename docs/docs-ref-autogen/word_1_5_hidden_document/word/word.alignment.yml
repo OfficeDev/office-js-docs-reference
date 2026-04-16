@@ -5,82 +5,33 @@ package: word!
 fullName: Word.Alignment
 summary: Represents the horizontal alignment of text.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ParagraphData.alignment](/javascript/api/word/word.interfaces.paragraphdata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphFormatData.alignment](/javascript/api/word/word.interfaces.paragraphformatdata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphFormatUpdateData.alignment](/javascript/api/word/word.interfaces.paragraphformatupdatedata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphUpdateData.alignment](/javascript/api/word/word.interfaces.paragraphupdatedata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellData.horizontalAlignment](/javascript/api/word/word.interfaces.tablecelldata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellUpdateData.horizontalAlignment](/javascript/api/word/word.interfaces.tablecellupdatedata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableData.alignment](/javascript/api/word/word.interfaces.tabledata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableData.horizontalAlignment](/javascript/api/word/word.interfaces.tabledata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableRowData.horizontalAlignment](/javascript/api/word/word.interfaces.tablerowdata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableRowUpdateData.horizontalAlignment](/javascript/api/word/word.interfaces.tablerowupdatedata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableUpdateData.alignment](/javascript/api/word/word.interfaces.tableupdatedata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableUpdateData.horizontalAlignment](/javascript/api/word/word.interfaces.tableupdatedata#horizontalalignment-member)
-  \]
-
-  - \[
+  -
   [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#alignment-member)
   \]
 
-  - \[
+  -
   [Word.ParagraphFormat.alignment](/javascript/api/word/word.paragraphformat#alignment-member)
   \]
 
-  - \[ [Word.Table.alignment](/javascript/api/word/word.table#alignment-member)
-  \]
+  - [Word.Table.alignment](/javascript/api/word/word.table#alignment-member) \]
 
-  - \[
+  -
   [Word.Table.horizontalAlignment](/javascript/api/word/word.table#horizontalalignment-member)
   \]
 
-  - \[
+  -
   [Word.TableCell.horizontalAlignment](/javascript/api/word/word.tablecell#horizontalalignment-member)
   \]
 
-  - \[
+  -
   [Word.TableRow.horizontalAlignment](/javascript/api/word/word.tablerow#horizontalalignment-member)
   \]
 
@@ -122,8 +73,8 @@ fields:
       Alignment to the center.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Centered"'
   - name: justified
     uid: word!Word.Alignment.justified:member
@@ -132,8 +83,8 @@ fields:
       Fully justified alignment.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Justified"'
   - name: left
     uid: word!Word.Alignment.left:member
@@ -142,8 +93,8 @@ fields:
       Alignment to the left.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Left"'
   - name: mixed
     uid: word!Word.Alignment.mixed:member
@@ -152,8 +103,8 @@ fields:
       Mixed horizontal alignment.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: right
     uid: word!Word.Alignment.right:member
@@ -162,8 +113,8 @@ fields:
       Alignment to the right.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Right"'
   - name: unknown
     uid: word!Word.Alignment.unknown:member
@@ -172,6 +123,6 @@ fields:
       Unknown alignment.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Unknown"'

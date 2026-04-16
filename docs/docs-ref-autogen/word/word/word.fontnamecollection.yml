@@ -5,14 +5,14 @@ package: word!
 fullName: Word.FontNameCollection
 summary: Represents a list of the names of all the available fonts.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Application.fontNames](/javascript/api/word/word.application#fontnames-member)
   \]
 
@@ -42,8 +42,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of items in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +58,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets the font name at the specified index.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

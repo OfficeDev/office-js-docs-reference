@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.InkAnalysisLineCollection
 summary: Represents a collection of InkAnalysisLine objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.InkAnalysisParagraph.lines](/javascript/api/onenote/onenote.inkanalysisparagraph#lines-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: count
     summary: Returns the number of InkAnalysisLines in the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +72,8 @@ methods:
       Gets a InkAnalysisLine object by ID or by its index in the collection.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +94,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a InkAnalysisLine on its position in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

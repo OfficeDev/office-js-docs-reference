@@ -4,17 +4,7 @@ uid: word!Word.Interfaces.PageData:interface
 package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.PageCollectionData.items](/javascript/api/word/word.interfaces.pagecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PageCollectionUpdateData.items](/javascript/api/word/word.interfaces.pagecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.RangeSort
 summary: Manages sorting operations on `Range` objects.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Range.sort](/javascript/api/excel/excel.range#sort-member) \]
+  - [Excel.Range.sort](/javascript/api/excel/excel.range#sort-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +40,8 @@ methods:
     fullName: apply(fields, matchCase, hasHeaders, orientation, method)
     summary: Perform a sort operation.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +75,8 @@ methods:
     fullName: apply(fields, matchCase, hasHeaders, orientation, method)
     summary: Perform a sort operation.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

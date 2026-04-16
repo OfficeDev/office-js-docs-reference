@@ -6,17 +6,7 @@ fullName: Word.Interfaces.XmlNodeData
 summary: >-
   An interface describing the data returned by calling `xmlNode.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.XmlNodeCollectionData.items](/javascript/api/word/word.interfaces.xmlnodecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.XmlNodeCollectionUpdateData.items](/javascript/api/word/word.interfaces.xmlnodecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

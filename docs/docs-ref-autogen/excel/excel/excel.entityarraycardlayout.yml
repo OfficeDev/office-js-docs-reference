@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.EntityArrayCardLayout
 summary: Represents a card layout that is best used for an array.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: true
 isDeprecated: false
@@ -18,9 +18,8 @@ properties:
     fullName: arrayProperty
     summary: Represents name of the property that contains the array shown in the card.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -37,9 +36,8 @@ properties:
       card may report fewer columns than actually exist to display a smaller
       amount of preview data.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -55,9 +53,8 @@ properties:
       Represents name of the property that contains the array shown in the card.
       Default value is "Array".
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -71,9 +68,8 @@ properties:
     fullName: firstRowIsHeader
     summary: Represents whether the first row of the array is treated as a header.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -87,9 +83,8 @@ properties:
     fullName: layout
     summary: Represents the type of this layout.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -106,9 +101,8 @@ properties:
       card may report fewer rows than actually exist to display a smaller amount
       of preview data.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

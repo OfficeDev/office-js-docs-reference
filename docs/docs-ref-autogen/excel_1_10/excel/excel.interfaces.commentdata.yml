@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.CommentData
 summary: >-
   An interface describing the data returned by calling `comment.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CommentCollectionData.items](/javascript/api/excel/excel.interfaces.commentcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CommentCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.commentcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.comments](/javascript/api/excel/excel.interfaces.workbookdata#comments-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetData.comments](/javascript/api/excel/excel.interfaces.worksheetdata#comments-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +18,8 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment's author.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +33,8 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment's author.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +48,8 @@ properties:
     fullName: content
     summary: The comment's content. The string is plain text.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -86,9 +65,8 @@ properties:
       Gets the creation time of the comment. Returns `null` if the comment was
       converted from a note, since the comment does not have a creation date.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +80,8 @@ properties:
     fullName: id
     summary: Specifies the comment identifier.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -118,9 +95,8 @@ properties:
     fullName: replies
     summary: Represents a collection of reply objects associated with the comment.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

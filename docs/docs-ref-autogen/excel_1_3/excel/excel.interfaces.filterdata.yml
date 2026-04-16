@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.FilterData
 summary: >-
   An interface describing the data returned by calling `filter.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableColumnData.filter](/javascript/api/excel/excel.interfaces.tablecolumndata#filter-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: criteria
     summary: The currently applied filter on the given column.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

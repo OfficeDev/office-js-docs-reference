@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.Application
 summary: Represents the Excel application that manages the workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.RequestContext.application](/javascript/api/excel/excel.requestcontext#application-member)
   \]
 
-  - \[
+  -
   [Excel.Workbook.application](/javascript/api/excel/excel.workbook#application-member)
   \]
 
@@ -32,8 +32,8 @@ properties:
       Returns the Excel calculation engine version used for the last full
       recalculation.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -54,8 +54,8 @@ properties:
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.1 for get, 1.8 for
+      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +75,8 @@ properties:
       Returns the calculation state of the application. See
       `Excel.CalculationState` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -112,9 +112,8 @@ properties:
       includes the culture names, number formatting, and other culturally
       dependent settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +129,8 @@ properties:
       Gets the string used as the decimal separator for numeric values. This is
       based on the local Excel settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -185,8 +183,8 @@ properties:
       the settings will apply to the Excel Application. In Excel on the web and
       other platforms, the settings will apply to the active workbook.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -202,9 +200,8 @@ properties:
       Gets the string used to separate groups of digits to the left of the
       decimal for numeric values. This is based on the local Excel settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -220,9 +217,8 @@ properties:
       Specifies if the system separators of Excel are enabled. System separators
       include the decimal separator and thousands separator.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -237,8 +233,8 @@ methods:
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -275,8 +271,8 @@ methods:
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -459,8 +455,8 @@ methods:
       it is the developer's responsibility to re-calc the workbook, to ensure
       that any dependencies are propagated.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -481,8 +477,8 @@ methods:
       (such as in a loop). Repeated calls will cause the Excel window to
       flicker.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

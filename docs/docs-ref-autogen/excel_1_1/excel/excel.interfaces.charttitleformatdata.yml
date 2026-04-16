@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartTitleFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartTitleFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartTitleData.format](/javascript/api/excel/excel.interfaces.charttitledata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,8 +20,8 @@ properties:
       Represents the font attributes (such as font name, font size, and color)
       for an object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

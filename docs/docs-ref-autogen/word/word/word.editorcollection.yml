@@ -7,14 +7,14 @@ summary: >-
   Represents the [editors](xref:word!Word.Editor:class) in a protected
   (read-only) Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Range.editors](/javascript/api/word/word.range#editors-member) \]
+  - [Word.Range.editors](/javascript/api/word/word.range#editors-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +44,8 @@ methods:
       Returns an `Editor` object that represents a new permission for the
       specified user to modify a range within the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +66,8 @@ methods:
       Returns an `Editor` object that represents a new permission for the
       specified group of users to modify a range within the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -88,8 +88,8 @@ methods:
       Returns an `Editor` object that represents a new permission for the
       specified group of users to modify a range within the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -110,8 +110,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of items in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -126,8 +126,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets an `Editor` object by its index in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

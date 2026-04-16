@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.ReferencedValue
 summary: Represents the value in a cell.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ArrayCellValue.referencedValues](/javascript/api/excel/excel.arraycellvalue#referencedvalues-member)
   \]
 
-  - \[
+  -
   [Excel.EntityCellValue.referencedValues](/javascript/api/excel/excel.entitycellvalue#referencedvalues-member)
   \]
 

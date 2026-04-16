@@ -5,14 +5,14 @@ package: word!
 fullName: Word.PrintOutItem
 summary: Specifies the type of item to print from a document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.DocumentPrintOutOptions.item](/javascript/api/word/word.documentprintoutoptions#item-member)
   \]
 
@@ -26,8 +26,8 @@ fields:
       Represents printing the AutoText entries.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AutoTextEntries"'
   - name: comments
     uid: word!Word.PrintOutItem.comments:member
@@ -36,8 +36,8 @@ fields:
       Represents printing the comments.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Comments"'
   - name: documentContent
     uid: word!Word.PrintOutItem.documentContent:member
@@ -46,8 +46,8 @@ fields:
       Represents printing the document content.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentContent"'
   - name: documentWithMarkup
     uid: word!Word.PrintOutItem.documentWithMarkup:member
@@ -56,8 +56,8 @@ fields:
       Represents printing the document with markup.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentWithMarkup"'
   - name: envelope
     uid: word!Word.PrintOutItem.envelope:member
@@ -66,8 +66,8 @@ fields:
       Represents printing the envelope.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Envelope"'
   - name: keyAssignments
     uid: word!Word.PrintOutItem.keyAssignments:member
@@ -76,8 +76,8 @@ fields:
       Represents printing the key assignments.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"KeyAssignments"'
   - name: markup
     uid: word!Word.PrintOutItem.markup:member
@@ -86,8 +86,8 @@ fields:
       Represents printing the markup.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Markup"'
   - name: properties
     uid: word!Word.PrintOutItem.properties:member
@@ -96,8 +96,8 @@ fields:
       Represents printing the document properties.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Properties"'
   - name: styles
     uid: word!Word.PrintOutItem.styles:member
@@ -106,6 +106,6 @@ fields:
       Represents printing the styles.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Styles"'

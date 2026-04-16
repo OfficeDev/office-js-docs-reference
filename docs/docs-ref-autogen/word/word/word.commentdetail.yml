@@ -5,15 +5,15 @@ package: word!
 fullName: Word.CommentDetail
 summary: A structure for the ID and reply IDs of this comment.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CommentEventArgs.commentDetails](/javascript/api/word/word.commenteventargs#commentdetails-member)
   \]
 
@@ -66,8 +66,8 @@ properties:
     fullName: id
     summary: Represents the ID of this comment.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -81,8 +81,8 @@ properties:
     fullName: replyIds
     summary: Represents the IDs of the replies to this comment.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false

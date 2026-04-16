@@ -7,9 +7,8 @@ summary: >-
   Represents the available options when adding a picture (represented by a
   [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object).
 remarks: >-
-  \[ [API set: PowerPointApi BETA (PREVIEW
+  [API set: PowerPointApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 isPreview: true
 isDeprecated: false
@@ -24,9 +23,8 @@ properties:
       default value is 72 points (1 inch). Throws an `InvalidArgument` exception
       when set with a negative value.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
+      [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -42,9 +40,8 @@ properties:
       Specifies the distance, in points, from the left side of the picture to
       the left side of the slide. When not provided, the default value is 0.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
+      [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -60,9 +57,8 @@ properties:
       Specifies the distance, in points, from the top edge of the picture to the
       top edge of the slide. When not provided, the default value is 0.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
+      [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -79,9 +75,8 @@ properties:
       default value is 72 points (1 inch). Throws an `InvalidArgument` exception
       when set with a negative value.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
+      [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

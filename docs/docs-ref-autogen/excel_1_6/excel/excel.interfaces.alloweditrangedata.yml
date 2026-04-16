@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.AllowEditRangeData
 summary: >-
   An interface describing the data returned by calling
   `allowEditRange.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.AllowEditRangeCollectionData.items](/javascript/api/excel/excel.interfaces.alloweditrangecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.AllowEditRangeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.alloweditrangecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

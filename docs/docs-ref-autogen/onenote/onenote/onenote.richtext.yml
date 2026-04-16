@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.RichText
 summary: Represents a RichText object in a Paragraph.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Paragraph.richText](/javascript/api/onenote/onenote.paragraph#richtext-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: id
     summary: Gets the ID of the RichText object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -57,9 +56,8 @@ properties:
     fullName: languageId
     summary: The language id of the text.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +71,8 @@ properties:
     fullName: paragraph
     summary: Gets the Paragraph object that contains the RichText object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +86,8 @@ properties:
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +101,8 @@ properties:
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -122,9 +117,8 @@ methods:
     fullName: getHtml()
     summary: Gets the HTML of the rich text.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

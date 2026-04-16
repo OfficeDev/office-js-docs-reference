@@ -5,18 +5,18 @@ package: word!
 fullName: Word.MovementType
 summary: Specifies the type of movement when navigating through a document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.SelectionMoveLeftRightOptions.extend](/javascript/api/word/word.selectionmoveleftrightoptions#extend-member)
   \]
 
-  - \[
+  -
   [Word.SelectionMoveUpDownOptions.extend](/javascript/api/word/word.selectionmoveupdownoptions#extend-member)
   \]
 
@@ -30,8 +30,8 @@ fields:
       Extends the selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Extend"'
   - name: move
     uid: word!Word.MovementType.move:member
@@ -40,6 +40,6 @@ fields:
       Moves the insertion point or selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Move"'

@@ -5,9 +5,8 @@ package: outlook!
 fullName: Office.SensitivityLabelDetails
 summary: Represents the properties of available sensitivity labels in Outlook.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -34,15 +33,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.SensitivityLabel.setAsync](/javascript/api/outlook/office.sensitivitylabel#setasync-member)
   \]
 
-  - \[
+  -
   [Office.SensitivityLabelDetails.children](/javascript/api/outlook/office.sensitivitylabeldetails#children-member)
   \]
 
-  - \[
+  -
   [Office.SensitivityLabelsCatalog.getAsync](/javascript/api/outlook/office.sensitivitylabelscatalog#getasync-member)
   \]
 

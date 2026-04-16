@@ -5,36 +5,35 @@ package: powerpoint!
 fullName: PowerPoint.BorderProperties
 summary: Represents the properties for a table cell border.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TableCellBorders.bottom](/javascript/api/powerpoint/powerpoint.tablecellborders#bottom-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableCellBorders.diagonalDown](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonaldown-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableCellBorders.diagonalUp](/javascript/api/powerpoint/powerpoint.tablecellborders#diagonalup-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableCellBorders.left](/javascript/api/powerpoint/powerpoint.tablecellborders#left-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableCellBorders.right](/javascript/api/powerpoint/powerpoint.tablecellborders#right-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableCellBorders.top](/javascript/api/powerpoint/powerpoint.tablecellborders#top-member)
   \]
 
@@ -85,9 +84,8 @@ properties:
       Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
       "FFA500") or as a named HTML color value (e.g., "orange").
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -137,9 +135,8 @@ properties:
     fullName: dashStyle
     summary: Represents the dash style of the line.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -199,9 +196,8 @@ properties:
       Specifies the transparency percentage of the line as a value from 0.0
       (opaque) through 1.0 (clear).
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -215,9 +211,8 @@ properties:
     fullName: weight
     summary: Represents the weight of the line, in points.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

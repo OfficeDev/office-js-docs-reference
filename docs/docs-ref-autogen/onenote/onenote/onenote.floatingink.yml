@@ -5,18 +5,18 @@ package: onenote!
 fullName: OneNote.FloatingInk
 summary: Represents a group of ink strokes.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.InkStroke.floatingInk](/javascript/api/onenote/onenote.inkstroke#floatingink-member)
   \]
 
-  - \[
+  -
   [OneNote.PageContent.ink](/javascript/api/onenote/onenote.pagecontent#ink-member)
   \]
 
@@ -45,9 +45,8 @@ properties:
     fullName: id
     summary: Gets the ID of the FloatingInk object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +60,8 @@ properties:
     fullName: inkStrokes
     summary: Gets the strokes of the FloatingInk object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +75,8 @@ properties:
     fullName: pageContent
     summary: Gets the PageContent parent of the FloatingInk object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

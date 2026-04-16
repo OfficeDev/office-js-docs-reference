@@ -7,16 +7,8 @@ summary: >-
   Defines the culturally appropriate format of displaying numbers. This is based
   on current system culture settings.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CultureInfoLoadOptions.datetimeFormat](/javascript/api/excel/excel.interfaces.cultureinfoloadoptions#datetimeformat-member)
-  \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +38,8 @@ properties:
       Gets the string used as the date separator. This is based on current
       system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +56,8 @@ properties:
       Gets the format string for a long date value. This is based on current
       system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +74,8 @@ properties:
       Gets the format string for a long time value. This is based on current
       system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -103,9 +92,8 @@ properties:
       Gets the format string for a short date value. This is based on current
       system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +109,8 @@ properties:
       Gets the string used as the time separator. This is based on current
       system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

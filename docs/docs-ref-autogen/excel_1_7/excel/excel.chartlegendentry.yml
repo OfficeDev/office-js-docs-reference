@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartLegendEntry
 summary: Represents the legend entry in `legendEntryCollection`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartLegendEntryCollection.items](/javascript/api/excel/excel.chartlegendentrycollection#items-member)
   \]
 
@@ -41,8 +41,8 @@ properties:
     fullName: visible
     summary: Represents the visibility of a chart legend entry.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

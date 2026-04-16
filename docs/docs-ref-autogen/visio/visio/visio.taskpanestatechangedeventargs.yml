@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.TaskPaneStateChangedEventArgs
 summary: Provides information about the TaskPaneStateChanged event.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.Document.onTaskPaneStateChanged](/javascript/api/visio/visio.document#ontaskpanestatechanged-member)
   \]
 
@@ -27,9 +26,8 @@ properties:
     fullName: isVisible
     summary: Current state of the task pane.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,9 +41,8 @@ properties:
     fullName: paneType
     summary: Type of the TaskPane.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

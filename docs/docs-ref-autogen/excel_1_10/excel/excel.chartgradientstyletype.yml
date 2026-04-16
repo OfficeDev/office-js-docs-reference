@@ -7,47 +7,23 @@ summary: >-
   Represents the gradient style type of a chart series. This is only applicable
   for region map charts.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartSeries.gradientMaximumType](/javascript/api/excel/excel.chartseries#gradientmaximumtype-member)
   \]
 
-  - \[
+  -
   [Excel.ChartSeries.gradientMidpointType](/javascript/api/excel/excel.chartseries#gradientmidpointtype-member)
   \]
 
-  - \[
+  -
   [Excel.ChartSeries.gradientMinimumType](/javascript/api/excel/excel.chartseries#gradientminimumtype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.gradientMaximumType](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientmaximumtype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.gradientMidpointType](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientmidpointtype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.gradientMinimumType](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientminimumtype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientmaximumtype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientmidpointtype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientminimumtype-member)
   \]
 
 isPreview: false
@@ -57,20 +33,20 @@ fields:
     uid: excel!Excel.ChartGradientStyleType.extremeValue:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExtremeValue"'
   - name: number
     uid: excel!Excel.ChartGradientStyleType.number:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Number"'
   - name: percent
     uid: excel!Excel.ChartGradientStyleType.percent:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Percent"'

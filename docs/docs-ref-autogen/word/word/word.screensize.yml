@@ -5,22 +5,14 @@ package: word!
 fullName: Word.ScreenSize
 summary: Specifies the screen size for web page preview and HTML export optimization.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.WebSettingsData.screenSize](/javascript/api/word/word.interfaces.websettingsdata#screensize-member)
-  \]
-
-  - \[
-  [Word.Interfaces.WebSettingsUpdateData.screenSize](/javascript/api/word/word.interfaces.websettingsupdatedata#screensize-member)
-  \]
-
-  - \[
+  -
   [Word.WebSettings.screenSize](/javascript/api/word/word.websettings#screensize-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Screen resolution 1024x768 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1024x768"'
   - name: size1152x882
     uid: word!Word.ScreenSize.size1152x882:member
@@ -44,8 +36,8 @@ fields:
       Screen resolution 1152x882 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1152x882"'
   - name: size1152x900
     uid: word!Word.ScreenSize.size1152x900:member
@@ -54,8 +46,8 @@ fields:
       Screen resolution 1152x900 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1152x900"'
   - name: size1280x1024
     uid: word!Word.ScreenSize.size1280x1024:member
@@ -64,8 +56,8 @@ fields:
       Screen resolution 1280x1024 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1280x1024"'
   - name: size1600x1200
     uid: word!Word.ScreenSize.size1600x1200:member
@@ -74,8 +66,8 @@ fields:
       Screen resolution 1600x1200 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1600x1200"'
   - name: size1800x1440
     uid: word!Word.ScreenSize.size1800x1440:member
@@ -84,8 +76,8 @@ fields:
       Screen resolution 1800x1440 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1800x1440"'
   - name: size1920x1200
     uid: word!Word.ScreenSize.size1920x1200:member
@@ -94,8 +86,8 @@ fields:
       Screen resolution 1920x1200 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size1920x1200"'
   - name: size544x376
     uid: word!Word.ScreenSize.size544x376:member
@@ -104,8 +96,8 @@ fields:
       Screen resolution 544x376 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size544x376"'
   - name: size640x480
     uid: word!Word.ScreenSize.size640x480:member
@@ -114,8 +106,8 @@ fields:
       Screen resolution 640x480 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size640x480"'
   - name: size720x512
     uid: word!Word.ScreenSize.size720x512:member
@@ -124,8 +116,8 @@ fields:
       Screen resolution 720x512 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size720x512"'
   - name: size800x600
     uid: word!Word.ScreenSize.size800x600:member
@@ -134,6 +126,6 @@ fields:
       Screen resolution 800x600 pixels.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Size800x600"'

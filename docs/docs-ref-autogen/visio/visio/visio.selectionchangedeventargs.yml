@@ -7,16 +7,15 @@ summary: >-
   Provides information about the shape collection that raised the
   SelectionChanged event.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.Document.onSelectionChanged](/javascript/api/visio/visio.document#onselectionchanged-member)
   \]
 
@@ -86,9 +85,8 @@ properties:
       Gets the name of the page which has the ShapeCollection object that raised
       the SelectionChanged event.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +100,8 @@ properties:
     fullName: shapeNames
     summary: Gets the array of shape names that raised the SelectionChanged event.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

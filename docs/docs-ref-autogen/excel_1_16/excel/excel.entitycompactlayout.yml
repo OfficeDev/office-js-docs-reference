@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.EntityCompactLayout
 summary: The compact layout properties for an entity.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,9 +18,8 @@ properties:
     fullName: icon
     summary: Specifies the name of the icon which is used to open the card.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

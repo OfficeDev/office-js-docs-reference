@@ -7,19 +7,18 @@ summary: >-
   A collection of [Word.Revision](xref:word!Word.Revision:class) objects that
   represent the changes marked with revision marks in a range or document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.revisions](/javascript/api/word/word.document#revisions-member)
   \]
 
-  - \[ [Word.Range.revisions](/javascript/api/word/word.range#revisions-member)
-  \]
+  - [Word.Range.revisions](/javascript/api/word/word.range#revisions-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -62,8 +61,8 @@ methods:
       Accepts all the tracked changes in the document or range, removes all
       revision marks, and incorporates the changes into the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +79,8 @@ methods:
       Returns a `Revision` object that represents the specified item in the
       collection.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -174,8 +173,8 @@ methods:
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the document or range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

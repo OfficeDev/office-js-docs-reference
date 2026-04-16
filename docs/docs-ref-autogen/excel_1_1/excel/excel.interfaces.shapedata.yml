@@ -4,25 +4,7 @@ uid: excel!Excel.Interfaces.ShapeData:interface
 package: excel!
 fullName: Excel.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.GroupShapeCollectionData.items](/javascript/api/excel/excel.interfaces.groupshapecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.GroupShapeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.groupshapecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeCollectionData.items](/javascript/api/excel/excel.interfaces.shapecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.shapecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

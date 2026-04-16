@@ -5,20 +5,16 @@ package: word!
 fullName: Word.DocumentPropertyType
 summary: Represents the document property type.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CustomProperty.type](/javascript/api/word/word.customproperty#type-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomPropertyData.type](/javascript/api/word/word.interfaces.custompropertydata#type-member)
   \]
 
   #### Examples
@@ -51,8 +47,8 @@ fields:
       Represents a Boolean type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Boolean"'
   - name: date
     uid: word!Word.DocumentPropertyType.date:member
@@ -61,8 +57,8 @@ fields:
       Represents a date type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Date"'
   - name: number
     uid: word!Word.DocumentPropertyType.number:member
@@ -71,8 +67,8 @@ fields:
       Represents a number type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Number"'
   - name: string
     uid: word!Word.DocumentPropertyType.string:member
@@ -81,6 +77,6 @@ fields:
       Represents a string type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"String"'

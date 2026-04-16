@@ -5,15 +5,14 @@ package: powerpoint!
 fullName: PowerPoint.HyperlinkScopedCollection
 summary: Represents a scoped collection of hyperlinks.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TextRange.hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#hyperlinks-member)
   \]
 
@@ -56,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of hyperlinks in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +73,8 @@ methods:
       Gets a hyperlink using its zero-based index in the collection. Throws an
       `InvalidArgument` exception when the index is out of range.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

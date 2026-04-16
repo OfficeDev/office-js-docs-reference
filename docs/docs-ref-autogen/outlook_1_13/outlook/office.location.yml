@@ -7,8 +7,8 @@ summary: >-
   Provides methods to get and set the location of a meeting in an Outlook
   add-in.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -33,7 +33,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.location](/javascript/api/outlook/office.appointmentcompose#location-member)
   \]
 
@@ -53,9 +53,8 @@ methods:
       to get the location of an appointment. The location of the appointment is
       provided as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -122,9 +121,8 @@ methods:
       to get the location of an appointment. The location of the appointment is
       provided as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -186,9 +184,8 @@ methods:
       to set the location of an appointment. Setting the location of an
       appointment overwrites the current location.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -276,9 +273,8 @@ methods:
       to set the location of an appointment. Setting the location of an
       appointment overwrites the current location.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

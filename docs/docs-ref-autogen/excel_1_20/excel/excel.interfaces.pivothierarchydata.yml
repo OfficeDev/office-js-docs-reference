@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.PivotHierarchyData
 summary: >-
   An interface describing the data returned by calling
   `pivotHierarchy.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.pivothierarchycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivothierarchycollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableData.hierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#hierarchies-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: fields
     summary: Returns the PivotFields associated with the PivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +33,8 @@ properties:
     fullName: id
     summary: ID of the PivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -62,8 +48,8 @@ properties:
     fullName: name
     summary: Name of the PivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

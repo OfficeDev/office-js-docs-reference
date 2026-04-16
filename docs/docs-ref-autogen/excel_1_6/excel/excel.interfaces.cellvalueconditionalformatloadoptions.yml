@@ -5,28 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.CellValueConditionalFormatLoadOptions
 summary: Represents a cell value conditional format.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#cellvalue-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#cellvalueornullobject-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatLoadOptions.cellValue](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#cellvalue-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#cellvalueornullobject-member)
-  \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -56,8 +36,8 @@ properties:
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +54,8 @@ properties:
     fullName: rule
     summary: Specifies the rule object on this conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

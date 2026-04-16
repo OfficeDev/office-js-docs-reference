@@ -5,8 +5,8 @@ package: onenote!
 fullName: OneNote.ParagraphInfo
 summary: List information for paragraph.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,9 +18,8 @@ properties:
     fullName: bulletType
     summary: Bullet list type of paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +33,8 @@ properties:
     fullName: indentationLevel
     summary: Level of indentation of the paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +48,8 @@ properties:
     fullName: index
     summary: Index of paragraph in a list.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +63,8 @@ properties:
     fullName: listType
     summary: Type of list in paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +80,8 @@ properties:
     fullName: numberType
     summary: Numbered list type of paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

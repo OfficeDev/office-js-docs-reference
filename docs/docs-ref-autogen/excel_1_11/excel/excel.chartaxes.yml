@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartAxes
 summary: Represents the chart axes.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Chart.axes](/javascript/api/excel/excel.chart#axes-member) \]
+  - [Excel.Chart.axes](/javascript/api/excel/excel.chart#axes-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +24,8 @@ properties:
     fullName: categoryAxis
     summary: Represents the category axis in a chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -54,8 +54,8 @@ properties:
     fullName: seriesAxis
     summary: Represents the series axis of a 3-D chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +69,8 @@ properties:
     fullName: valueAxis
     summary: Represents the value axis in an axis.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -106,8 +106,8 @@ methods:
     fullName: getItem(type, group)
     summary: Returns the specific axis identified by type and group.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +133,8 @@ methods:
     fullName: getItem(type, group)
     summary: Returns the specific axis identified by type and group.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

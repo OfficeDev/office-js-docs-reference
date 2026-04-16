@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
 summary: Represents a collection of legend entries.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -37,8 +37,8 @@ properties:
       For EACH ITEM in the collection: Represents the visibility of a chart
       legend entry.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

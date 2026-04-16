@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.Diagnostics
 summary: Provides diagnostic information to an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -28,7 +28,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Mailbox.diagnostics](/javascript/api/outlook/office.mailbox#diagnostics-member)
   \]
 
@@ -87,9 +87,8 @@ properties:
       `newOutlookWindows`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!--
       -->, or `OutlookAndroid`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -128,9 +127,8 @@ properties:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->, the property returns the version of the Exchange Server.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -181,9 +179,8 @@ properties:
       example, Outlook on the web uses this view in a full screen window on a
       desktop computer.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

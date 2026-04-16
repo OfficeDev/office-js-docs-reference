@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.CustomPropertyData
 summary: >-
   An interface describing the data returned by calling
   `customProperty.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CustomPropertyCollectionData.items](/javascript/api/excel/excel.interfaces.custompropertycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomPropertyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.custompropertycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

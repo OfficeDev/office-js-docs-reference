@@ -465,10 +465,18 @@ function generateUsedBySection(references: UsedByReference[]): string {
     return '';
   }
 
+  // Filter out references from the Interfaces namespace
+  // (e.g., Excel.Interfaces.DataValidationData, Excel.Interfaces.DataValidationUpdateData)
+  const filteredReferences = references.filter(ref => !ref.name.includes('.Interfaces.'));
+
+  if (filteredReferences.length === 0) {
+    return '';
+  }
+
   const lines: string[] = ['\n\n#### Used by\n'];
 
   // Group by package
-  const grouped = groupByPackage(references);
+  const grouped = groupByPackage(filteredReferences);
 
   // Sort packages alphabetically
   const packageNames = Object.keys(grouped).sort();
@@ -485,10 +493,10 @@ function generateUsedBySection(references: UsedByReference[]): string {
     refs.sort((a, b) => a.name.localeCompare(b.name));
 
     // Add each reference as a bullet point with escaped markdown link
-    // Use the same format as requirement set links: \[ [Text](url) \]
+    // Use the same format as requirement set links: [Text](url)
     for (const ref of refs) {
       const url = convertUidToUrl(ref.uid);
-      lines.push(`- \\[ [${ref.name}](${url}) \\]`);
+      lines.push(`- [${ref.name}](${url}) \\]`);
     }
   }
 
@@ -805,9 +813,9 @@ function hyperlinkApiSets(item: IYamlItem): boolean {
   if (item.summary && typeof item.summary === 'string') {
     // First capitalize "Api" to "API"
     let newSummary = item.summary.replace(/Api set:/g, 'API set:');
-    // Then add hyperlink: \[API set: ExcelApi 1.1\] -> \[ [API set: ExcelApi 1.1](url) \]
+    // Then add hyperlink: \[API set: ExcelApi 1.1\] -> [API set: ExcelApi 1.1](url)
     newSummary = newSummary.replace(/\\\[(API set:[^\]]+)\\\]/g, (match, apiSetText) => {
-      return `\\[ [${apiSetText}](${url}) \\]`;
+      return `[${apiSetText}](${url})`;
     });
 
     if (newSummary !== item.summary) {
@@ -819,9 +827,9 @@ function hyperlinkApiSets(item: IYamlItem): boolean {
   if (item.remarks && typeof item.remarks === 'string') {
     // First capitalize "Api" to "API"
     let newRemarks = item.remarks.replace(/Api set:/g, 'API set:');
-    // Then add hyperlink: \[API set: ExcelApi 1.1\] -> \[ [API set: ExcelApi 1.1](url) \]
+    // Then add hyperlink: \[API set: ExcelApi 1.1\] -> [API set: ExcelApi 1.1](url)
     newRemarks = newRemarks.replace(/\\\[(API set:[^\]]+)\\\]/g, (match, apiSetText) => {
-      return `\\[ [${apiSetText}](${url}) \\]`;
+      return `[${apiSetText}](${url})`;
     });
 
     if (newRemarks !== item.remarks) {

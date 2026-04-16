@@ -5,19 +5,19 @@ package: excel!
 fullName: Excel.WorksheetNameChangedEventArgs
 summary: Provides information about the worksheet whose name has changed.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.onNameChanged](/javascript/api/excel/excel.worksheet#onnamechanged-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetCollection.onNameChanged](/javascript/api/excel/excel.worksheetcollection#onnamechanged-member)
   \]
 
@@ -50,9 +50,8 @@ properties:
     fullName: nameAfter
     summary: Gets the new name of the worksheet, after the name change.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +65,8 @@ properties:
     fullName: nameBefore
     summary: Gets the previous name of the worksheet, before the name changed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +80,8 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +95,8 @@ properties:
     fullName: type
     summary: Gets the type of the event.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -114,9 +110,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet with the new name.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

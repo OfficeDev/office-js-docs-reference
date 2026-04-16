@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.WorksheetVisibilityChangedEventArgs
 summary: Provides information about the worksheet whose visibility has changed.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.onVisibilityChanged](/javascript/api/excel/excel.worksheet#onvisibilitychanged-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetCollection.onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#onvisibilitychanged-member)
   \]
 
@@ -30,9 +30,8 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,9 +45,8 @@ properties:
     fullName: type
     summary: Gets the type of the event.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +62,8 @@ properties:
       Gets the new visibility setting of the worksheet, after the visibility
       change.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -86,9 +83,8 @@ properties:
       Gets the previous visibility setting of the worksheet, before the
       visibility change.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +102,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet whose visibility has changed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

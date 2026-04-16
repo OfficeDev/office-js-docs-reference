@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.NamedSheetViewData
 summary: >-
   An interface describing the data returned by calling
   `namedSheetView.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.NamedSheetViewCollectionData.items](/javascript/api/excel/excel.interfaces.namedsheetviewcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NamedSheetViewCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.namedsheetviewcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -31,8 +21,8 @@ properties:
       empty string (""). Naming the view by using the name property causes the
       sheet view to be saved.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.FilterPivotHierarchyData
 summary: >-
   An interface describing the data returned by calling
   `filterPivotHierarchy.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.FilterPivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.filterpivothierarchycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.filterpivothierarchycollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableData.filterHierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#filterhierarchies-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -33,8 +19,8 @@ properties:
     fullName: enableMultipleFilterItems
     summary: Determines whether to allow multiple filter items.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -48,8 +34,8 @@ properties:
     fullName: fields
     summary: Returns the PivotFields associated with the FilterPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -63,8 +49,8 @@ properties:
     fullName: id
     summary: ID of the FilterPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -78,8 +64,8 @@ properties:
     fullName: name
     summary: Name of the FilterPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -93,8 +79,8 @@ properties:
     fullName: position
     summary: Position of the FilterPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

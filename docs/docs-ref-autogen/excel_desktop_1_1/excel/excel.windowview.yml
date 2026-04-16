@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.WindowView
 summary: Specifies the view mode of the window.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.WindowData.view](/javascript/api/excel/excel.interfaces.windowdata#view-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WindowUpdateData.view](/javascript/api/excel/excel.interfaces.windowupdatedata#view-member)
-  \]
-
-  - \[ [Excel.Window.view](/javascript/api/excel/excel.window#view-member) \]
+  - [Excel.Window.view](/javascript/api/excel/excel.window#view-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,8 +25,8 @@ fields:
       and editing.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"normalView"'
   - name: pageBreakPreview
     uid: excel!Excel.WindowView.pageBreakPreview:member
@@ -44,8 +36,8 @@ fields:
       pages will break when printed.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"pageBreakPreview"'
   - name: pageLayoutView
     uid: excel!Excel.WindowView.pageLayoutView:member
@@ -55,6 +47,6 @@ fields:
       worksheet will look when printed.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"pageLayoutView"'

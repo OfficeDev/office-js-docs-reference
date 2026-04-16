@@ -5,19 +5,19 @@ package: word!
 fullName: Word.CommentContentRange
 summary: Represents a content range within a comment.
 remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Comment.contentRange](/javascript/api/word/word.comment#contentrange-member)
   \]
 
-  - \[
+  -
   [Word.CommentReply.contentRange](/javascript/api/word/word.commentreply#contentrange-member)
   \]
 
@@ -61,8 +61,8 @@ properties:
     fullName: bold
     summary: Specifies whether the comment text is bold.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -94,8 +94,8 @@ properties:
       All hyperlinks in the range are deleted when you set a new hyperlink on
       the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -109,8 +109,8 @@ properties:
     fullName: isEmpty
     summary: Checks whether the range length is zero.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -124,8 +124,8 @@ properties:
     fullName: italic
     summary: Specifies whether the comment text is italicized.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -139,8 +139,8 @@ properties:
     fullName: strikeThrough
     summary: Specifies whether the comment text has a strikethrough.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -154,8 +154,8 @@ properties:
     fullName: text
     summary: Gets the text of the comment range.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -171,8 +171,8 @@ properties:
       Specifies the comment text's underline type. `none` if the comment text
       isn't underlined.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -201,8 +201,8 @@ methods:
       comment, the content range tracked across context turns to empty if any
       revision to the comment is posted through the UI.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

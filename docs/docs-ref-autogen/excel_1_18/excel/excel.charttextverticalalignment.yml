@@ -5,59 +5,27 @@ package: excel!
 fullName: Excel.ChartTextVerticalAlignment
 summary: Represents the vertical alignment for the specified object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartDataLabel.verticalAlignment](/javascript/api/excel/excel.chartdatalabel#verticalalignment-member)
   \]
 
-  - \[
+  -
   [Excel.ChartDataLabels.verticalAlignment](/javascript/api/excel/excel.chartdatalabels#verticalalignment-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTitle.verticalAlignment](/javascript/api/excel/excel.charttitle#verticalalignment-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTrendlineLabel.verticalAlignment](/javascript/api/excel/excel.charttrendlinelabel#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabeldata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelupdatedata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttitledata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttitleupdatedata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabeldata#verticalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineLabelUpdateData.verticalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabelupdatedata#verticalalignment-member)
   \]
 
 isPreview: false
@@ -67,34 +35,34 @@ fields:
     uid: excel!Excel.ChartTextVerticalAlignment.bottom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Bottom"'
   - name: center
     uid: excel!Excel.ChartTextVerticalAlignment.center:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Center"'
   - name: distributed
     uid: excel!Excel.ChartTextVerticalAlignment.distributed:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Distributed"'
   - name: justify
     uid: excel!Excel.ChartTextVerticalAlignment.justify:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Justify"'
   - name: top
     uid: excel!Excel.ChartTextVerticalAlignment.top:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Top"'

@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.PrintComments
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PageLayoutData.printComments](/javascript/api/excel/excel.interfaces.pagelayoutdata#printcomments-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PageLayoutUpdateData.printComments](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#printcomments-member)
-  \]
-
-  - \[
+  -
   [Excel.PageLayout.printComments](/javascript/api/excel/excel.pagelayout#printcomments-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Comments will be printed as end notes at the end of the worksheet.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"EndSheet"'
   - name: inPlace
     uid: excel!Excel.PrintComments.inPlace:member
@@ -44,8 +36,8 @@ fields:
       Comments will be printed where they were inserted in the worksheet.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"InPlace"'
   - name: noComments
     uid: excel!Excel.PrintComments.noComments:member
@@ -54,6 +46,6 @@ fields:
       Comments will not be printed.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NoComments"'

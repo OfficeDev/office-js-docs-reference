@@ -7,24 +7,8 @@ summary: >-
   Represents a table style, which defines the style elements by region of the
   table.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableCollectionLoadOptions.tableStyle](/javascript/api/excel/excel.interfaces.tablecollectionloadoptions#tablestyle-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableLoadOptions.tableStyle](/javascript/api/excel/excel.interfaces.tableloadoptions#tablestyle-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableScopedCollectionLoadOptions.tableStyle](/javascript/api/excel/excel.interfaces.tablescopedcollectionloadoptions#tablestyle-member)
-  \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -52,9 +36,8 @@ properties:
     fullName: name
     summary: Specifies the name of the table style.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +51,8 @@ properties:
     fullName: readOnly
     summary: Specifies if this `TableStyle` object is read-only.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

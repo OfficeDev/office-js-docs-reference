@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.PivotFieldData
 summary: >-
   An interface describing the data returned by calling `pivotField.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotFieldCollectionData.items](/javascript/api/excel/excel.interfaces.pivotfieldcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotFieldCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivotfieldcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

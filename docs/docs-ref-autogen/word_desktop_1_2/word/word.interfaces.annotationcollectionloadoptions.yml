@@ -7,8 +7,8 @@ summary: >-
   Contains a collection of [Word.Annotation](xref:word!Word.Annotation:class)
   objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -37,8 +37,8 @@ properties:
     fullName: critiqueAnnotation
     summary: 'For EACH ITEM in the collection: Gets the `CritiqueAnnotation` object.'
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -56,8 +56,8 @@ properties:
       For EACH ITEM in the collection: Gets the unique identifier, which is
       meant to be used for easier tracking of `Annotation` objects.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -71,8 +71,8 @@ properties:
     fullName: state
     summary: 'For EACH ITEM in the collection: Gets the state of the annotation.'
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

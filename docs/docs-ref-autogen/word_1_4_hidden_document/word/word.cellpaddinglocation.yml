@@ -5,8 +5,8 @@ package: word!
 fullName: Word.CellPaddingLocation
 summary: Represents the location of cell padding.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -43,8 +43,8 @@ fields:
       Padding at the bottom of the cell.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bottom"'
   - name: left
     uid: word!Word.CellPaddingLocation.left:member
@@ -53,8 +53,8 @@ fields:
       Padding at the left of the cell.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Left"'
   - name: right
     uid: word!Word.CellPaddingLocation.right:member
@@ -63,8 +63,8 @@ fields:
       Padding at the right of the cell.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Right"'
   - name: top
     uid: word!Word.CellPaddingLocation.top:member
@@ -73,6 +73,6 @@ fields:
       Padding at the top of the cell.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Top"'

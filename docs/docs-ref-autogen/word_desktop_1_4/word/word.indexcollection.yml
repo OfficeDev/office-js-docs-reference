@@ -7,15 +7,15 @@ summary: >-
   A collection of [Word.Index](xref:word!Word.Index:class) objects that
   represents all the indexes in the document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Document.indexes](/javascript/api/word/word.document#indexes-member) \]
+  - [Word.Document.indexes](/javascript/api/word/word.document#indexes-member)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -58,8 +58,8 @@ methods:
       Returns an `Index` object that represents a new index added to the
       document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +87,8 @@ methods:
       Gets the `IndexFormat` value that represents the formatting for the
       indexes in the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -181,8 +181,8 @@ methods:
       field](https://support.microsoft.com/office/abaf7c78-6e21-418d-bf8b-f8186d2e4d08)
       after all instances of the text in the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

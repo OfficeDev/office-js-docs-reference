@@ -8,8 +8,8 @@ summary: >-
   "range.getCellProperties" method.
 
 
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 remarks: ''
 
 isPreview: false
@@ -24,8 +24,8 @@ properties:
       Specifies whether to load on the `address` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -79,8 +79,8 @@ properties:
       Specifies whether to load on the `addressLocal` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -97,8 +97,8 @@ properties:
       Specifies whether to load on the `format` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -115,8 +115,8 @@ properties:
       Specifies whether to load on the `hidden` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -133,8 +133,8 @@ properties:
       Specifies whether to load on the `hyperlink` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -151,8 +151,8 @@ properties:
       Specifies whether to load on the `style` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false

@@ -7,25 +7,8 @@ summary: >-
   Represents a shape group inside a presentation. To get the corresponding Shape
   object, use `ShapeGroup.shape`<!-- -->.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.group](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#group-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeLoadOptions.group](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#group-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.group](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#group-member)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -53,9 +36,8 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -69,9 +51,8 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

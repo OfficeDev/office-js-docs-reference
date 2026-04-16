@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartSeriesFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartSeriesFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.format](/javascript/api/excel/excel.interfaces.chartseriesdata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: line
     summary: Represents line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

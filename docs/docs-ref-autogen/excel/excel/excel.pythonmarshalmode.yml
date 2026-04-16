@@ -7,8 +7,8 @@ summary: >-
   Specifies what an =PY formula returns, such as an Excel value or a Python
   object.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: true
 isDeprecated: false
@@ -20,9 +20,8 @@ fields:
       Specifies that the result of an =PY formula should be an Excel value.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExcelValue"'
   - name: pythonObject
     uid: excel!Excel.PythonMarshalMode.pythonObject:member
@@ -32,7 +31,6 @@ fields:
       object in the Python service.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PythonObject"'

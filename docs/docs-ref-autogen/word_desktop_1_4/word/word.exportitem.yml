@@ -5,8 +5,9 @@ package: word!
 fullName: Word.ExportItem
 summary: Specifies the export item type for a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
 
   #### Examples
 
@@ -47,8 +48,8 @@ fields:
       Exports document content only.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentContent"'
   - name: documentWithMarkup
     uid: word!Word.ExportItem.documentWithMarkup:member
@@ -57,6 +58,6 @@ fields:
       Exports document with markup (annotations).
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentWithMarkup"'

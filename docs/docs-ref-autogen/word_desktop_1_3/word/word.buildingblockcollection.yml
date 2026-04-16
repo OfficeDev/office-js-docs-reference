@@ -8,14 +8,14 @@ summary: >-
   [Word.BuildingBlock](xref:word!Word.BuildingBlock:class) objects for a
   specific building block type and category in a template.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.BuildingBlockCategory.buildingBlocks](/javascript/api/word/word.buildingblockcategory#buildingblocks-member)
   \]
 
@@ -45,8 +45,8 @@ methods:
     fullName: add(name, range, description, insertType)
     summary: Creates a new building block and returns a `BuildingBlock` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +76,8 @@ methods:
     fullName: add(name, range, description, insertType)
     summary: Creates a new building block and returns a `BuildingBlock` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -107,8 +107,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of items in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -125,8 +125,8 @@ methods:
       Returns a `BuildingBlock` object that represents the specified item in the
       collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

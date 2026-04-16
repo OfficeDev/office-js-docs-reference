@@ -10,15 +10,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [OfficeExtension.ClientObject.context](/javascript/api/office/officeextension.clientobject#context-member)
   \]
 
-  - \[
+  -
   [OfficeExtension.EventHandlerResult.context](/javascript/api/office/officeextension.eventhandlerresult#context-member)
   \]
 
-  - \[
+  -
   [OfficeExtension.RunOptions.previousObjects](/javascript/api/office/officeextension.runoptions#previousobjects-member)
   \]
 

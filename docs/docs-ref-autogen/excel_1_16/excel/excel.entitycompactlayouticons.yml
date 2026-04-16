@@ -9,15 +9,15 @@ summary: >-
   contains an entity card, or to the left of the title of a referenced entity
   inside an entity card. Selecting the icon opens the entity card.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.EntityCompactLayout.icon](/javascript/api/excel/excel.entitycompactlayout#icon-member)
   \]
 
@@ -66,9 +66,8 @@ fields:
       Accessibility icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Accessibility"'
   - name: airplane
     uid: excel!Excel.EntityCompactLayoutIcons.airplane:member
@@ -77,9 +76,8 @@ fields:
       Airplane icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Airplane"'
   - name: airplaneTakeOff
     uid: excel!Excel.EntityCompactLayoutIcons.airplaneTakeOff:member
@@ -88,9 +86,8 @@ fields:
       Airplane taking off icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AirplaneTakeOff"'
   - name: album
     uid: excel!Excel.EntityCompactLayoutIcons.album:member
@@ -99,9 +96,8 @@ fields:
       Album icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Album"'
   - name: alert
     uid: excel!Excel.EntityCompactLayoutIcons.alert:member
@@ -110,9 +106,8 @@ fields:
       Alert icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Alert"'
   - name: alertUrgent
     uid: excel!Excel.EntityCompactLayoutIcons.alertUrgent:member
@@ -121,9 +116,8 @@ fields:
       Alert urgent icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AlertUrgent"'
   - name: animal
     uid: excel!Excel.EntityCompactLayoutIcons.animal:member
@@ -132,9 +126,8 @@ fields:
       Animal icon. Displays as a pawprint.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Animal"'
   - name: animalCat
     uid: excel!Excel.EntityCompactLayoutIcons.animalCat:member
@@ -143,9 +136,8 @@ fields:
       Animal cat icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AnimalCat"'
   - name: animalDog
     uid: excel!Excel.EntityCompactLayoutIcons.animalDog:member
@@ -154,9 +146,8 @@ fields:
       Animal dog icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AnimalDog"'
   - name: animalRabbit
     uid: excel!Excel.EntityCompactLayoutIcons.animalRabbit:member
@@ -165,9 +156,8 @@ fields:
       Animal rabbit icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AnimalRabbit"'
   - name: animalTurtle
     uid: excel!Excel.EntityCompactLayoutIcons.animalTurtle:member
@@ -176,9 +166,8 @@ fields:
       Animal turtle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AnimalTurtle"'
   - name: appFolder
     uid: excel!Excel.EntityCompactLayoutIcons.appFolder:member
@@ -187,9 +176,8 @@ fields:
       App folder icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AppFolder"'
   - name: appGeneric
     uid: excel!Excel.EntityCompactLayoutIcons.appGeneric:member
@@ -198,9 +186,8 @@ fields:
       App generic icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"AppGeneric"'
   - name: apple
     uid: excel!Excel.EntityCompactLayoutIcons.apple:member
@@ -209,9 +196,8 @@ fields:
       Apple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Apple"'
   - name: approvalsApp
     uid: excel!Excel.EntityCompactLayoutIcons.approvalsApp:member
@@ -220,9 +206,8 @@ fields:
       Approvals app icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ApprovalsApp"'
   - name: archive
     uid: excel!Excel.EntityCompactLayoutIcons.archive:member
@@ -231,9 +216,8 @@ fields:
       Archive icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Archive"'
   - name: archiveMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.archiveMultiple:member
@@ -242,9 +226,8 @@ fields:
       Archive multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ArchiveMultiple"'
   - name: arrowTrendingLines
     uid: excel!Excel.EntityCompactLayoutIcons.arrowTrendingLines:member
@@ -253,9 +236,8 @@ fields:
       Arrow trending lines icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ArrowTrendingLines"'
   - name: art
     uid: excel!Excel.EntityCompactLayoutIcons.art:member
@@ -264,9 +246,8 @@ fields:
       Art icon. Displays as a paint palette.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Art"'
   - name: atom
     uid: excel!Excel.EntityCompactLayoutIcons.atom:member
@@ -275,9 +256,8 @@ fields:
       Atom icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Atom"'
   - name: attach
     uid: excel!Excel.EntityCompactLayoutIcons.attach:member
@@ -286,9 +266,8 @@ fields:
       Attach icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Attach"'
   - name: automobile
     uid: excel!Excel.EntityCompactLayoutIcons.automobile:member
@@ -297,9 +276,8 @@ fields:
       Automobile icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Automobile"'
   - name: autosum
     uid: excel!Excel.EntityCompactLayoutIcons.autosum:member
@@ -308,9 +286,8 @@ fields:
       Autosum icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Autosum"'
   - name: backpack
     uid: excel!Excel.EntityCompactLayoutIcons.backpack:member
@@ -319,9 +296,8 @@ fields:
       Backpack icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Backpack"'
   - name: badge
     uid: excel!Excel.EntityCompactLayoutIcons.badge:member
@@ -330,9 +306,8 @@ fields:
       Badge icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Badge"'
   - name: balloon
     uid: excel!Excel.EntityCompactLayoutIcons.balloon:member
@@ -341,9 +316,8 @@ fields:
       Balloon icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Balloon"'
   - name: bank
     uid: excel!Excel.EntityCompactLayoutIcons.bank:member
@@ -352,9 +326,8 @@ fields:
       Bank icon. Displays as a building with pillars and a triangular roof.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bank"'
   - name: barcodeScanner
     uid: excel!Excel.EntityCompactLayoutIcons.barcodeScanner:member
@@ -363,9 +336,8 @@ fields:
       Barcode scanner icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BarcodeScanner"'
   - name: basketball
     uid: excel!Excel.EntityCompactLayoutIcons.basketball:member
@@ -374,9 +346,8 @@ fields:
       Basketball icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Basketball"'
   - name: battery0
     uid: excel!Excel.EntityCompactLayoutIcons.battery0:member
@@ -385,9 +356,8 @@ fields:
       Battery empty icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Battery0"'
   - name: battery10
     uid: excel!Excel.EntityCompactLayoutIcons.battery10:member
@@ -396,9 +366,8 @@ fields:
       Battery full icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Battery10"'
   - name: beach
     uid: excel!Excel.EntityCompactLayoutIcons.beach:member
@@ -407,9 +376,8 @@ fields:
       Beach icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Beach"'
   - name: beaker
     uid: excel!Excel.EntityCompactLayoutIcons.beaker:member
@@ -418,9 +386,8 @@ fields:
       Beaker icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Beaker"'
   - name: bed
     uid: excel!Excel.EntityCompactLayoutIcons.bed:member
@@ -429,9 +396,8 @@ fields:
       Bed icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bed"'
   - name: binFull
     uid: excel!Excel.EntityCompactLayoutIcons.binFull:member
@@ -440,9 +406,8 @@ fields:
       Bin full icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BinFull"'
   - name: bird
     uid: excel!Excel.EntityCompactLayoutIcons.bird:member
@@ -451,9 +416,8 @@ fields:
       Bird icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bird"'
   - name: bluetooth
     uid: excel!Excel.EntityCompactLayoutIcons.bluetooth:member
@@ -462,9 +426,8 @@ fields:
       Bluetooth icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bluetooth"'
   - name: board
     uid: excel!Excel.EntityCompactLayoutIcons.board:member
@@ -473,9 +436,8 @@ fields:
       Board icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Board"'
   - name: boardGames
     uid: excel!Excel.EntityCompactLayoutIcons.boardGames:member
@@ -484,9 +446,8 @@ fields:
       Board games icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BoardGames"'
   - name: book
     uid: excel!Excel.EntityCompactLayoutIcons.book:member
@@ -495,9 +456,8 @@ fields:
       Book icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Book"'
   - name: bookmark
     uid: excel!Excel.EntityCompactLayoutIcons.bookmark:member
@@ -506,9 +466,8 @@ fields:
       Bookmark icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bookmark"'
   - name: bookmarkMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.bookmarkMultiple:member
@@ -517,9 +476,8 @@ fields:
       Bookmark multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BookmarkMultiple"'
   - name: bot
     uid: excel!Excel.EntityCompactLayoutIcons.bot:member
@@ -528,9 +486,8 @@ fields:
       Bot icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bot"'
   - name: bowlChopsticks
     uid: excel!Excel.EntityCompactLayoutIcons.bowlChopsticks:member
@@ -539,9 +496,8 @@ fields:
       Bowl chopsticks icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BowlChopsticks"'
   - name: box
     uid: excel!Excel.EntityCompactLayoutIcons.box:member
@@ -550,9 +506,8 @@ fields:
       Box icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Box"'
   - name: boxMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.boxMultiple:member
@@ -561,9 +516,8 @@ fields:
       Box multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BoxMultiple"'
   - name: brainCircuit
     uid: excel!Excel.EntityCompactLayoutIcons.brainCircuit:member
@@ -572,9 +526,8 @@ fields:
       Brain circuit icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BrainCircuit"'
   - name: branch
     uid: excel!Excel.EntityCompactLayoutIcons.branch:member
@@ -583,9 +536,8 @@ fields:
       Branch icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Branch"'
   - name: branchFork
     uid: excel!Excel.EntityCompactLayoutIcons.branchFork:member
@@ -594,9 +546,8 @@ fields:
       Branch fork icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BranchFork"'
   - name: branchRequest
     uid: excel!Excel.EntityCompactLayoutIcons.branchRequest:member
@@ -605,9 +556,8 @@ fields:
       Branch request icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BranchRequest"'
   - name: bridge
     uid: excel!Excel.EntityCompactLayoutIcons.bridge:member
@@ -616,9 +566,8 @@ fields:
       Bridge icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bridge"'
   - name: briefcase
     uid: excel!Excel.EntityCompactLayoutIcons.briefcase:member
@@ -627,9 +576,8 @@ fields:
       Briefcase icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Briefcase"'
   - name: briefcaseMedical
     uid: excel!Excel.EntityCompactLayoutIcons.briefcaseMedical:member
@@ -638,9 +586,8 @@ fields:
       Briefcase medical icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BriefcaseMedical"'
   - name: broadActivityFeed
     uid: excel!Excel.EntityCompactLayoutIcons.broadActivityFeed:member
@@ -649,9 +596,8 @@ fields:
       Broad activity feed icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BroadActivityFeed"'
   - name: broom
     uid: excel!Excel.EntityCompactLayoutIcons.broom:member
@@ -660,9 +606,8 @@ fields:
       Broom icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Broom"'
   - name: bug
     uid: excel!Excel.EntityCompactLayoutIcons.bug:member
@@ -671,9 +616,8 @@ fields:
       Bug icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Bug"'
   - name: building
     uid: excel!Excel.EntityCompactLayoutIcons.building:member
@@ -682,9 +626,8 @@ fields:
       Building icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Building"'
   - name: buildingBank
     uid: excel!Excel.EntityCompactLayoutIcons.buildingBank:member
@@ -693,9 +636,8 @@ fields:
       Building bank icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingBank"'
   - name: buildingFactory
     uid: excel!Excel.EntityCompactLayoutIcons.buildingFactory:member
@@ -704,9 +646,8 @@ fields:
       Building factory icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingFactory"'
   - name: buildingGovernment
     uid: excel!Excel.EntityCompactLayoutIcons.buildingGovernment:member
@@ -715,9 +656,8 @@ fields:
       Building government icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingGovernment"'
   - name: buildingHome
     uid: excel!Excel.EntityCompactLayoutIcons.buildingHome:member
@@ -726,9 +666,8 @@ fields:
       Building home icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingHome"'
   - name: buildingLighthouse
     uid: excel!Excel.EntityCompactLayoutIcons.buildingLighthouse:member
@@ -737,9 +676,8 @@ fields:
       Building lighthouse icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingLighthouse"'
   - name: buildingMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.buildingMultiple:member
@@ -748,9 +686,8 @@ fields:
       Building multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingMultiple"'
   - name: buildingRetail
     uid: excel!Excel.EntityCompactLayoutIcons.buildingRetail:member
@@ -759,9 +696,8 @@ fields:
       Building retail icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingRetail"'
   - name: buildingRetailMore
     uid: excel!Excel.EntityCompactLayoutIcons.buildingRetailMore:member
@@ -770,9 +706,8 @@ fields:
       Building retail more icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingRetailMore"'
   - name: buildingRetailToolbox
     uid: excel!Excel.EntityCompactLayoutIcons.buildingRetailToolbox:member
@@ -781,9 +716,8 @@ fields:
       Building retail toolbox icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingRetailToolbox"'
   - name: buildingShop
     uid: excel!Excel.EntityCompactLayoutIcons.buildingShop:member
@@ -792,9 +726,8 @@ fields:
       Building shop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingShop"'
   - name: buildingSkyscraper
     uid: excel!Excel.EntityCompactLayoutIcons.buildingSkyscraper:member
@@ -803,9 +736,8 @@ fields:
       Building skyscraper icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"BuildingSkyscraper"'
   - name: calculator
     uid: excel!Excel.EntityCompactLayoutIcons.calculator:member
@@ -814,9 +746,8 @@ fields:
       Calculator icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Calculator"'
   - name: calendarLtr
     uid: excel!Excel.EntityCompactLayoutIcons.calendarLtr:member
@@ -825,9 +756,8 @@ fields:
       Calendar left to right icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CalendarLtr"'
   - name: calendarRtl
     uid: excel!Excel.EntityCompactLayoutIcons.calendarRtl:member
@@ -836,9 +766,8 @@ fields:
       Calendar right to left icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CalendarRtl"'
   - name: call
     uid: excel!Excel.EntityCompactLayoutIcons.call:member
@@ -847,9 +776,8 @@ fields:
       Call icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Call"'
   - name: calligraphyPen
     uid: excel!Excel.EntityCompactLayoutIcons.calligraphyPen:member
@@ -858,9 +786,8 @@ fields:
       Calligraphy pen icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CalligraphyPen"'
   - name: camera
     uid: excel!Excel.EntityCompactLayoutIcons.camera:member
@@ -869,9 +796,8 @@ fields:
       Camera icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Camera"'
   - name: cameraDome
     uid: excel!Excel.EntityCompactLayoutIcons.cameraDome:member
@@ -880,9 +806,8 @@ fields:
       Camera dome icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CameraDome"'
   - name: car
     uid: excel!Excel.EntityCompactLayoutIcons.car:member
@@ -891,9 +816,8 @@ fields:
       Car icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Car"'
   - name: cart
     uid: excel!Excel.EntityCompactLayoutIcons.cart:member
@@ -902,9 +826,8 @@ fields:
       Cart icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Cart"'
   - name: cat
     uid: excel!Excel.EntityCompactLayoutIcons.cat:member
@@ -913,9 +836,8 @@ fields:
       Cat icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Cat"'
   - name: certificate
     uid: excel!Excel.EntityCompactLayoutIcons.certificate:member
@@ -924,9 +846,8 @@ fields:
       Certificate icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Certificate"'
   - name: chartMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.chartMultiple:member
@@ -935,9 +856,8 @@ fields:
       Chart multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ChartMultiple"'
   - name: chat
     uid: excel!Excel.EntityCompactLayoutIcons.chat:member
@@ -946,9 +866,8 @@ fields:
       Chat icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Chat"'
   - name: chatMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.chatMultiple:member
@@ -957,9 +876,8 @@ fields:
       Chat multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ChatMultiple"'
   - name: chatVideo
     uid: excel!Excel.EntityCompactLayoutIcons.chatVideo:member
@@ -968,9 +886,8 @@ fields:
       Chat video icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ChatVideo"'
   - name: check
     uid: excel!Excel.EntityCompactLayoutIcons.check:member
@@ -979,9 +896,8 @@ fields:
       Check icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Check"'
   - name: checkboxChecked
     uid: excel!Excel.EntityCompactLayoutIcons.checkboxChecked:member
@@ -990,9 +906,8 @@ fields:
       Checkbox checked icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CheckboxChecked"'
   - name: checkboxUnchecked
     uid: excel!Excel.EntityCompactLayoutIcons.checkboxUnchecked:member
@@ -1001,9 +916,8 @@ fields:
       Checkbox unchecked icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CheckboxUnchecked"'
   - name: checkmark
     uid: excel!Excel.EntityCompactLayoutIcons.checkmark:member
@@ -1012,9 +926,8 @@ fields:
       Checkmark icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Checkmark"'
   - name: chess
     uid: excel!Excel.EntityCompactLayoutIcons.chess:member
@@ -1023,9 +936,8 @@ fields:
       Chess icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Chess"'
   - name: city
     uid: excel!Excel.EntityCompactLayoutIcons.city:member
@@ -1034,9 +946,8 @@ fields:
       City icon. Displays as multiple tall buildings.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"City"'
   - name: class
     uid: excel!Excel.EntityCompactLayoutIcons.class:member
@@ -1045,9 +956,8 @@ fields:
       Class icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Class"'
   - name: classification
     uid: excel!Excel.EntityCompactLayoutIcons.classification:member
@@ -1056,9 +966,8 @@ fields:
       Classification icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Classification"'
   - name: clipboard
     uid: excel!Excel.EntityCompactLayoutIcons.clipboard:member
@@ -1067,9 +976,8 @@ fields:
       Clipboard icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Clipboard"'
   - name: clipboardDataBar
     uid: excel!Excel.EntityCompactLayoutIcons.clipboardDataBar:member
@@ -1078,9 +986,8 @@ fields:
       Clipboard data bar icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ClipboardDataBar"'
   - name: clipboardPulse
     uid: excel!Excel.EntityCompactLayoutIcons.clipboardPulse:member
@@ -1089,9 +996,8 @@ fields:
       Clipboard pulse icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ClipboardPulse"'
   - name: clipboardTask
     uid: excel!Excel.EntityCompactLayoutIcons.clipboardTask:member
@@ -1100,9 +1006,8 @@ fields:
       Clipboard task icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ClipboardTask"'
   - name: clock
     uid: excel!Excel.EntityCompactLayoutIcons.clock:member
@@ -1111,9 +1016,8 @@ fields:
       Clock icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Clock"'
   - name: clockAlarm
     uid: excel!Excel.EntityCompactLayoutIcons.clockAlarm:member
@@ -1122,9 +1026,8 @@ fields:
       Clock alarm icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ClockAlarm"'
   - name: cloud
     uid: excel!Excel.EntityCompactLayoutIcons.cloud:member
@@ -1133,9 +1036,8 @@ fields:
       Cloud icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Cloud"'
   - name: cloudWords
     uid: excel!Excel.EntityCompactLayoutIcons.cloudWords:member
@@ -1144,9 +1046,8 @@ fields:
       Cloud words icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CloudWords"'
   - name: code
     uid: excel!Excel.EntityCompactLayoutIcons.code:member
@@ -1155,9 +1056,8 @@ fields:
       Code icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Code"'
   - name: collections
     uid: excel!Excel.EntityCompactLayoutIcons.collections:member
@@ -1166,9 +1066,8 @@ fields:
       Collections icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Collections"'
   - name: comment
     uid: excel!Excel.EntityCompactLayoutIcons.comment:member
@@ -1177,9 +1076,8 @@ fields:
       Comment icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Comment"'
   - name: commentMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.commentMultiple:member
@@ -1188,9 +1086,8 @@ fields:
       Comment multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CommentMultiple"'
   - name: communication
     uid: excel!Excel.EntityCompactLayoutIcons.communication:member
@@ -1199,9 +1096,8 @@ fields:
       Communication icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Communication"'
   - name: compassNorthwest
     uid: excel!Excel.EntityCompactLayoutIcons.compassNorthwest:member
@@ -1210,9 +1106,8 @@ fields:
       Compass northwest icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CompassNorthwest"'
   - name: conferenceRoom
     uid: excel!Excel.EntityCompactLayoutIcons.conferenceRoom:member
@@ -1221,9 +1116,8 @@ fields:
       Conference room icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ConferenceRoom"'
   - name: connector
     uid: excel!Excel.EntityCompactLayoutIcons.connector:member
@@ -1232,9 +1126,8 @@ fields:
       Connector icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Connector"'
   - name: constellation
     uid: excel!Excel.EntityCompactLayoutIcons.constellation:member
@@ -1243,9 +1136,8 @@ fields:
       Constellation icon. Displays dots in the shape of Ursa Major.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Constellation"'
   - name: contactCard
     uid: excel!Excel.EntityCompactLayoutIcons.contactCard:member
@@ -1254,9 +1146,8 @@ fields:
       Contact card icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ContactCard"'
   - name: cookies
     uid: excel!Excel.EntityCompactLayoutIcons.cookies:member
@@ -1265,9 +1156,8 @@ fields:
       Cookies icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Cookies"'
   - name: couch
     uid: excel!Excel.EntityCompactLayoutIcons.couch:member
@@ -1276,9 +1166,8 @@ fields:
       Couch icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Couch"'
   - name: creditCardPerson
     uid: excel!Excel.EntityCompactLayoutIcons.creditCardPerson:member
@@ -1287,9 +1176,8 @@ fields:
       Credit card person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CreditCardPerson"'
   - name: creditCardToolbox
     uid: excel!Excel.EntityCompactLayoutIcons.creditCardToolbox:member
@@ -1298,9 +1186,8 @@ fields:
       Credit card toolbox icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CreditCardToolbox"'
   - name: cube
     uid: excel!Excel.EntityCompactLayoutIcons.cube:member
@@ -1309,9 +1196,8 @@ fields:
       Cube icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Cube"'
   - name: cubeMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.cubeMultiple:member
@@ -1320,9 +1206,8 @@ fields:
       Cube multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CubeMultiple"'
   - name: cubeTree
     uid: excel!Excel.EntityCompactLayoutIcons.cubeTree:member
@@ -1331,9 +1216,8 @@ fields:
       Cube tree icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CubeTree"'
   - name: currencyDollarEuro
     uid: excel!Excel.EntityCompactLayoutIcons.currencyDollarEuro:member
@@ -1342,9 +1226,8 @@ fields:
       Currency dollar euro icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CurrencyDollarEuro"'
   - name: currencyDollarRupee
     uid: excel!Excel.EntityCompactLayoutIcons.currencyDollarRupee:member
@@ -1353,9 +1236,8 @@ fields:
       Currency dollar rupee icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"CurrencyDollarRupee"'
   - name: dataArea
     uid: excel!Excel.EntityCompactLayoutIcons.dataArea:member
@@ -1364,9 +1246,8 @@ fields:
       Data area icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataArea"'
   - name: database
     uid: excel!Excel.EntityCompactLayoutIcons.database:member
@@ -1375,9 +1256,8 @@ fields:
       Database icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Database"'
   - name: databaseMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.databaseMultiple:member
@@ -1386,9 +1266,8 @@ fields:
       Database multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DatabaseMultiple"'
   - name: dataFunnel
     uid: excel!Excel.EntityCompactLayoutIcons.dataFunnel:member
@@ -1397,9 +1276,8 @@ fields:
       Data funnel icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataFunnel"'
   - name: dataHistogram
     uid: excel!Excel.EntityCompactLayoutIcons.dataHistogram:member
@@ -1408,9 +1286,8 @@ fields:
       Data histogram icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataHistogram"'
   - name: dataLine
     uid: excel!Excel.EntityCompactLayoutIcons.dataLine:member
@@ -1419,9 +1296,8 @@ fields:
       Data line icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataLine"'
   - name: dataPie
     uid: excel!Excel.EntityCompactLayoutIcons.dataPie:member
@@ -1430,9 +1306,8 @@ fields:
       Data pie icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataPie"'
   - name: dataScatter
     uid: excel!Excel.EntityCompactLayoutIcons.dataScatter:member
@@ -1441,9 +1316,8 @@ fields:
       Data scatter icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataScatter"'
   - name: dataSunburst
     uid: excel!Excel.EntityCompactLayoutIcons.dataSunburst:member
@@ -1452,9 +1326,8 @@ fields:
       Data sunburst icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataSunburst"'
   - name: dataTreemap
     uid: excel!Excel.EntityCompactLayoutIcons.dataTreemap:member
@@ -1463,9 +1336,8 @@ fields:
       Data treemap icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataTreemap"'
   - name: dataWaterfall
     uid: excel!Excel.EntityCompactLayoutIcons.dataWaterfall:member
@@ -1474,9 +1346,8 @@ fields:
       Data waterfall icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataWaterfall"'
   - name: dataWhisker
     uid: excel!Excel.EntityCompactLayoutIcons.dataWhisker:member
@@ -1485,9 +1356,8 @@ fields:
       Data whisker icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataWhisker"'
   - name: dentist
     uid: excel!Excel.EntityCompactLayoutIcons.dentist:member
@@ -1496,9 +1366,8 @@ fields:
       Dentist icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dentist"'
   - name: designIdeas
     uid: excel!Excel.EntityCompactLayoutIcons.designIdeas:member
@@ -1507,9 +1376,8 @@ fields:
       Design ideas icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DesignIdeas"'
   - name: desktop
     uid: excel!Excel.EntityCompactLayoutIcons.desktop:member
@@ -1518,9 +1386,8 @@ fields:
       Desktop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Desktop"'
   - name: desktopMac
     uid: excel!Excel.EntityCompactLayoutIcons.desktopMac:member
@@ -1529,9 +1396,8 @@ fields:
       Desktop Mac icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DesktopMac"'
   - name: developerBoard
     uid: excel!Excel.EntityCompactLayoutIcons.developerBoard:member
@@ -1540,9 +1406,8 @@ fields:
       Developer board icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DeveloperBoard"'
   - name: deviceMeetingRoom
     uid: excel!Excel.EntityCompactLayoutIcons.deviceMeetingRoom:member
@@ -1551,9 +1416,8 @@ fields:
       Device meeting room icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DeviceMeetingRoom"'
   - name: diagram
     uid: excel!Excel.EntityCompactLayoutIcons.diagram:member
@@ -1562,9 +1426,8 @@ fields:
       Diagram icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Diagram"'
   - name: dialpad
     uid: excel!Excel.EntityCompactLayoutIcons.dialpad:member
@@ -1573,9 +1436,8 @@ fields:
       Dialpad icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dialpad"'
   - name: diamond
     uid: excel!Excel.EntityCompactLayoutIcons.diamond:member
@@ -1584,9 +1446,8 @@ fields:
       Diamond icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Diamond"'
   - name: dinosaur
     uid: excel!Excel.EntityCompactLayoutIcons.dinosaur:member
@@ -1596,9 +1457,8 @@ fields:
       Brachiosaurus.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dinosaur"'
   - name: directions
     uid: excel!Excel.EntityCompactLayoutIcons.directions:member
@@ -1607,9 +1467,8 @@ fields:
       Directions icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Directions"'
   - name: disaster
     uid: excel!Excel.EntityCompactLayoutIcons.disaster:member
@@ -1618,9 +1477,8 @@ fields:
       Disaster icon. Displays as a house sinking in a flood.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Disaster"'
   - name: diversity
     uid: excel!Excel.EntityCompactLayoutIcons.diversity:member
@@ -1629,9 +1487,8 @@ fields:
       Diversity icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Diversity"'
   - name: dNA
     uid: excel!Excel.EntityCompactLayoutIcons.dNA:member
@@ -1640,9 +1497,8 @@ fields:
       DNA icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DNA"'
   - name: doctor
     uid: excel!Excel.EntityCompactLayoutIcons.doctor:member
@@ -1651,9 +1507,8 @@ fields:
       Doctor icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Doctor"'
   - name: document
     uid: excel!Excel.EntityCompactLayoutIcons.document:member
@@ -1662,9 +1517,8 @@ fields:
       Document icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Document"'
   - name: documentData
     uid: excel!Excel.EntityCompactLayoutIcons.documentData:member
@@ -1673,9 +1527,8 @@ fields:
       Document data icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DocumentData"'
   - name: documentLandscape
     uid: excel!Excel.EntityCompactLayoutIcons.documentLandscape:member
@@ -1684,9 +1537,8 @@ fields:
       Document landscape icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DocumentLandscape"'
   - name: documentMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.documentMultiple:member
@@ -1695,9 +1547,8 @@ fields:
       Document multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DocumentMultiple"'
   - name: documentPdf
     uid: excel!Excel.EntityCompactLayoutIcons.documentPdf:member
@@ -1706,9 +1557,8 @@ fields:
       Document PDF icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DocumentPdf"'
   - name: documentQueue
     uid: excel!Excel.EntityCompactLayoutIcons.documentQueue:member
@@ -1717,9 +1567,8 @@ fields:
       Document queue icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DocumentQueue"'
   - name: documentText
     uid: excel!Excel.EntityCompactLayoutIcons.documentText:member
@@ -1728,9 +1577,8 @@ fields:
       Document text icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DocumentText"'
   - name: dog
     uid: excel!Excel.EntityCompactLayoutIcons.dog:member
@@ -1739,9 +1587,8 @@ fields:
       Dog icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dog"'
   - name: door
     uid: excel!Excel.EntityCompactLayoutIcons.door:member
@@ -1750,9 +1597,8 @@ fields:
       Door icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Door"'
   - name: doorTag
     uid: excel!Excel.EntityCompactLayoutIcons.doorTag:member
@@ -1761,9 +1607,8 @@ fields:
       Door tag icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DoorTag"'
   - name: drafts
     uid: excel!Excel.EntityCompactLayoutIcons.drafts:member
@@ -1772,9 +1617,8 @@ fields:
       Drafts icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Drafts"'
   - name: drama
     uid: excel!Excel.EntityCompactLayoutIcons.drama:member
@@ -1783,9 +1627,8 @@ fields:
       Drama icon. Displays as a pair of theatre masks.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Drama"'
   - name: drinkBeer
     uid: excel!Excel.EntityCompactLayoutIcons.drinkBeer:member
@@ -1794,9 +1637,8 @@ fields:
       Drink beer icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DrinkBeer"'
   - name: drinkCoffee
     uid: excel!Excel.EntityCompactLayoutIcons.drinkCoffee:member
@@ -1805,9 +1647,8 @@ fields:
       Drink coffee icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DrinkCoffee"'
   - name: drinkMargarita
     uid: excel!Excel.EntityCompactLayoutIcons.drinkMargarita:member
@@ -1816,9 +1657,8 @@ fields:
       Drink margarita icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DrinkMargarita"'
   - name: drinkToGo
     uid: excel!Excel.EntityCompactLayoutIcons.drinkToGo:member
@@ -1827,9 +1667,8 @@ fields:
       Drink to go icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DrinkToGo"'
   - name: drinkWine
     uid: excel!Excel.EntityCompactLayoutIcons.drinkWine:member
@@ -1838,9 +1677,8 @@ fields:
       Drink wine icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DrinkWine"'
   - name: driveTrain
     uid: excel!Excel.EntityCompactLayoutIcons.driveTrain:member
@@ -1849,9 +1687,8 @@ fields:
       Drive train icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DriveTrain"'
   - name: drop
     uid: excel!Excel.EntityCompactLayoutIcons.drop:member
@@ -1860,9 +1697,8 @@ fields:
       Drop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Drop"'
   - name: dualScreen
     uid: excel!Excel.EntityCompactLayoutIcons.dualScreen:member
@@ -1871,9 +1707,8 @@ fields:
       Dual screen icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DualScreen"'
   - name: dumbbell
     uid: excel!Excel.EntityCompactLayoutIcons.dumbbell:member
@@ -1882,9 +1717,8 @@ fields:
       Dumbbell icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Dumbbell"'
   - name: earth
     uid: excel!Excel.EntityCompactLayoutIcons.earth:member
@@ -1893,9 +1727,8 @@ fields:
       Earth icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Earth"'
   - name: emoji
     uid: excel!Excel.EntityCompactLayoutIcons.emoji:member
@@ -1904,9 +1737,8 @@ fields:
       Emoji icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Emoji"'
   - name: emojiAngry
     uid: excel!Excel.EntityCompactLayoutIcons.emojiAngry:member
@@ -1915,9 +1747,8 @@ fields:
       Emoji angry icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiAngry"'
   - name: emojiHand
     uid: excel!Excel.EntityCompactLayoutIcons.emojiHand:member
@@ -1926,9 +1757,8 @@ fields:
       Emoji hand icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiHand"'
   - name: emojiLaugh
     uid: excel!Excel.EntityCompactLayoutIcons.emojiLaugh:member
@@ -1937,9 +1767,8 @@ fields:
       Emoji laugh icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiLaugh"'
   - name: emojiMeh
     uid: excel!Excel.EntityCompactLayoutIcons.emojiMeh:member
@@ -1948,9 +1777,8 @@ fields:
       Emoji meh icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiMeh"'
   - name: emojiMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.emojiMultiple:member
@@ -1959,9 +1787,8 @@ fields:
       Emoji multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiMultiple"'
   - name: emojiSad
     uid: excel!Excel.EntityCompactLayoutIcons.emojiSad:member
@@ -1970,9 +1797,8 @@ fields:
       Emoji sad icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiSad"'
   - name: emojiSadSlight
     uid: excel!Excel.EntityCompactLayoutIcons.emojiSadSlight:member
@@ -1981,9 +1807,8 @@ fields:
       Emoji sad slight icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiSadSlight"'
   - name: emojiSmileSlight
     uid: excel!Excel.EntityCompactLayoutIcons.emojiSmileSlight:member
@@ -1992,9 +1817,8 @@ fields:
       Emoji smile slight icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiSmileSlight"'
   - name: emojiSparkle
     uid: excel!Excel.EntityCompactLayoutIcons.emojiSparkle:member
@@ -2003,9 +1827,8 @@ fields:
       Emoji sparkle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiSparkle"'
   - name: emojiSurprise
     uid: excel!Excel.EntityCompactLayoutIcons.emojiSurprise:member
@@ -2014,9 +1837,8 @@ fields:
       Emoji surprise icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmojiSurprise"'
   - name: engine
     uid: excel!Excel.EntityCompactLayoutIcons.engine:member
@@ -2025,9 +1847,8 @@ fields:
       Engine icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Engine"'
   - name: eraser
     uid: excel!Excel.EntityCompactLayoutIcons.eraser:member
@@ -2036,9 +1857,8 @@ fields:
       Eraser icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Eraser"'
   - name: eye
     uid: excel!Excel.EntityCompactLayoutIcons.eye:member
@@ -2047,9 +1867,8 @@ fields:
       Eye icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Eye"'
   - name: eyedropper
     uid: excel!Excel.EntityCompactLayoutIcons.eyedropper:member
@@ -2058,9 +1877,8 @@ fields:
       Eyedropper icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Eyedropper"'
   - name: fax
     uid: excel!Excel.EntityCompactLayoutIcons.fax:member
@@ -2069,9 +1887,8 @@ fields:
       Fax icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Fax"'
   - name: fingerprint
     uid: excel!Excel.EntityCompactLayoutIcons.fingerprint:member
@@ -2080,9 +1897,8 @@ fields:
       Fingerprint icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Fingerprint"'
   - name: firstAid
     uid: excel!Excel.EntityCompactLayoutIcons.firstAid:member
@@ -2091,9 +1907,8 @@ fields:
       First aid icon. Displays as a briefcase with a medical cross symbol.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FirstAid"'
   - name: flag
     uid: excel!Excel.EntityCompactLayoutIcons.flag:member
@@ -2102,9 +1917,8 @@ fields:
       Flag icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Flag"'
   - name: flash
     uid: excel!Excel.EntityCompactLayoutIcons.flash:member
@@ -2113,9 +1927,8 @@ fields:
       Flash icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Flash"'
   - name: flashlight
     uid: excel!Excel.EntityCompactLayoutIcons.flashlight:member
@@ -2124,9 +1937,8 @@ fields:
       Flashlight icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Flashlight"'
   - name: flow
     uid: excel!Excel.EntityCompactLayoutIcons.flow:member
@@ -2135,9 +1947,8 @@ fields:
       Flow icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Flow"'
   - name: flowchart
     uid: excel!Excel.EntityCompactLayoutIcons.flowchart:member
@@ -2146,9 +1957,8 @@ fields:
       Flowchart icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Flowchart"'
   - name: folder
     uid: excel!Excel.EntityCompactLayoutIcons.folder:member
@@ -2157,9 +1967,8 @@ fields:
       Folder icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Folder"'
   - name: folderOpen
     uid: excel!Excel.EntityCompactLayoutIcons.folderOpen:member
@@ -2168,9 +1977,8 @@ fields:
       Folder open icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FolderOpen"'
   - name: folderOpenVertical
     uid: excel!Excel.EntityCompactLayoutIcons.folderOpenVertical:member
@@ -2179,9 +1987,8 @@ fields:
       Folder open vertical icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FolderOpenVertical"'
   - name: folderPerson
     uid: excel!Excel.EntityCompactLayoutIcons.folderPerson:member
@@ -2190,9 +1997,8 @@ fields:
       Folder person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FolderPerson"'
   - name: folderZip
     uid: excel!Excel.EntityCompactLayoutIcons.folderZip:member
@@ -2201,9 +2007,8 @@ fields:
       Folder zip icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FolderZip"'
   - name: food
     uid: excel!Excel.EntityCompactLayoutIcons.food:member
@@ -2212,9 +2017,8 @@ fields:
       Food icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Food"'
   - name: foodApple
     uid: excel!Excel.EntityCompactLayoutIcons.foodApple:member
@@ -2223,9 +2027,8 @@ fields:
       Food apple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FoodApple"'
   - name: foodCake
     uid: excel!Excel.EntityCompactLayoutIcons.foodCake:member
@@ -2234,9 +2037,8 @@ fields:
       Food cake icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FoodCake"'
   - name: foodEgg
     uid: excel!Excel.EntityCompactLayoutIcons.foodEgg:member
@@ -2245,9 +2047,8 @@ fields:
       Food egg icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FoodEgg"'
   - name: foodGrains
     uid: excel!Excel.EntityCompactLayoutIcons.foodGrains:member
@@ -2256,9 +2057,8 @@ fields:
       Food grains icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FoodGrains"'
   - name: foodPizza
     uid: excel!Excel.EntityCompactLayoutIcons.foodPizza:member
@@ -2267,9 +2067,8 @@ fields:
       Food pizza icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FoodPizza"'
   - name: foodToast
     uid: excel!Excel.EntityCompactLayoutIcons.foodToast:member
@@ -2278,9 +2077,8 @@ fields:
       Food toast icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FoodToast"'
   - name: galaxy
     uid: excel!Excel.EntityCompactLayoutIcons.galaxy:member
@@ -2289,9 +2087,8 @@ fields:
       Galaxy icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Galaxy"'
   - name: games
     uid: excel!Excel.EntityCompactLayoutIcons.games:member
@@ -2300,9 +2097,8 @@ fields:
       Games icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Games"'
   - name: ganttChart
     uid: excel!Excel.EntityCompactLayoutIcons.ganttChart:member
@@ -2311,9 +2107,8 @@ fields:
       Gantt chart icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GanttChart"'
   - name: gas
     uid: excel!Excel.EntityCompactLayoutIcons.gas:member
@@ -2322,9 +2117,8 @@ fields:
       Gas icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Gas"'
   - name: gasPump
     uid: excel!Excel.EntityCompactLayoutIcons.gasPump:member
@@ -2333,9 +2127,8 @@ fields:
       Gas pump icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GasPump"'
   - name: gauge
     uid: excel!Excel.EntityCompactLayoutIcons.gauge:member
@@ -2344,9 +2137,8 @@ fields:
       Gauge icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Gauge"'
   - name: gavel
     uid: excel!Excel.EntityCompactLayoutIcons.gavel:member
@@ -2355,9 +2147,8 @@ fields:
       Gavel icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Gavel"'
   - name: generic
     uid: excel!Excel.EntityCompactLayoutIcons.generic:member
@@ -2366,9 +2157,8 @@ fields:
       The default icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Generic"'
   - name: gift
     uid: excel!Excel.EntityCompactLayoutIcons.gift:member
@@ -2377,9 +2167,8 @@ fields:
       Gift icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Gift"'
   - name: giftCard
     uid: excel!Excel.EntityCompactLayoutIcons.giftCard:member
@@ -2388,9 +2177,8 @@ fields:
       Gift card icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GiftCard"'
   - name: glasses
     uid: excel!Excel.EntityCompactLayoutIcons.glasses:member
@@ -2399,9 +2187,8 @@ fields:
       Glasses icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Glasses"'
   - name: globe
     uid: excel!Excel.EntityCompactLayoutIcons.globe:member
@@ -2410,9 +2197,8 @@ fields:
       Globe icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Globe"'
   - name: globeSurface
     uid: excel!Excel.EntityCompactLayoutIcons.globeSurface:member
@@ -2421,9 +2207,8 @@ fields:
       Globe surface icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GlobeSurface"'
   - name: grid
     uid: excel!Excel.EntityCompactLayoutIcons.grid:member
@@ -2432,9 +2217,8 @@ fields:
       Grid icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Grid"'
   - name: gridDots
     uid: excel!Excel.EntityCompactLayoutIcons.gridDots:member
@@ -2443,9 +2227,8 @@ fields:
       Grid dots icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GridDots"'
   - name: gridKanban
     uid: excel!Excel.EntityCompactLayoutIcons.gridKanban:member
@@ -2454,9 +2237,8 @@ fields:
       Grid Kanban icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GridKanban"'
   - name: guardian
     uid: excel!Excel.EntityCompactLayoutIcons.guardian:member
@@ -2465,9 +2247,8 @@ fields:
       Guardian icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Guardian"'
   - name: guest
     uid: excel!Excel.EntityCompactLayoutIcons.guest:member
@@ -2476,9 +2257,8 @@ fields:
       Guest icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Guest"'
   - name: guitar
     uid: excel!Excel.EntityCompactLayoutIcons.guitar:member
@@ -2487,9 +2267,8 @@ fields:
       Guitar icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Guitar"'
   - name: handLeft
     uid: excel!Excel.EntityCompactLayoutIcons.handLeft:member
@@ -2498,9 +2277,8 @@ fields:
       Hand left icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HandLeft"'
   - name: handRight
     uid: excel!Excel.EntityCompactLayoutIcons.handRight:member
@@ -2509,9 +2287,8 @@ fields:
       Hand right icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HandRight"'
   - name: handshake
     uid: excel!Excel.EntityCompactLayoutIcons.handshake:member
@@ -2520,9 +2297,8 @@ fields:
       Handshake icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Handshake"'
   - name: hardDrive
     uid: excel!Excel.EntityCompactLayoutIcons.hardDrive:member
@@ -2531,9 +2307,8 @@ fields:
       Hard drive icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HardDrive"'
   - name: hatGraduation
     uid: excel!Excel.EntityCompactLayoutIcons.hatGraduation:member
@@ -2542,9 +2317,8 @@ fields:
       Graduation hat icon. Displays as a hat with a tassel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HatGraduation"'
   - name: headphones
     uid: excel!Excel.EntityCompactLayoutIcons.headphones:member
@@ -2553,9 +2327,8 @@ fields:
       Headphones icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Headphones"'
   - name: headphonesSoundWave
     uid: excel!Excel.EntityCompactLayoutIcons.headphonesSoundWave:member
@@ -2564,9 +2337,8 @@ fields:
       Headphones sound wave icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HeadphonesSoundWave"'
   - name: headset
     uid: excel!Excel.EntityCompactLayoutIcons.headset:member
@@ -2575,9 +2347,8 @@ fields:
       Headset icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Headset"'
   - name: headsetVr
     uid: excel!Excel.EntityCompactLayoutIcons.headsetVr:member
@@ -2586,9 +2357,8 @@ fields:
       Headset VR icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HeadsetVr"'
   - name: heart
     uid: excel!Excel.EntityCompactLayoutIcons.heart:member
@@ -2597,9 +2367,8 @@ fields:
       Heart icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Heart"'
   - name: heartBroken
     uid: excel!Excel.EntityCompactLayoutIcons.heartBroken:member
@@ -2608,9 +2377,8 @@ fields:
       Heart broken icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HeartBroken"'
   - name: heartCircle
     uid: excel!Excel.EntityCompactLayoutIcons.heartCircle:member
@@ -2619,9 +2387,8 @@ fields:
       Heart circle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HeartCircle"'
   - name: heartHuman
     uid: excel!Excel.EntityCompactLayoutIcons.heartHuman:member
@@ -2630,9 +2397,8 @@ fields:
       Human heart icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HeartHuman"'
   - name: heartPulse
     uid: excel!Excel.EntityCompactLayoutIcons.heartPulse:member
@@ -2641,9 +2407,8 @@ fields:
       Heart pulse icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HeartPulse"'
   - name: history
     uid: excel!Excel.EntityCompactLayoutIcons.history:member
@@ -2652,9 +2417,8 @@ fields:
       History icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"History"'
   - name: home
     uid: excel!Excel.EntityCompactLayoutIcons.home:member
@@ -2663,9 +2427,8 @@ fields:
       Home icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Home"'
   - name: homeMore
     uid: excel!Excel.EntityCompactLayoutIcons.homeMore:member
@@ -2674,9 +2437,8 @@ fields:
       Home more icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HomeMore"'
   - name: homePerson
     uid: excel!Excel.EntityCompactLayoutIcons.homePerson:member
@@ -2685,9 +2447,8 @@ fields:
       Home person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"HomePerson"'
   - name: icons
     uid: excel!Excel.EntityCompactLayoutIcons.icons:member
@@ -2696,9 +2457,8 @@ fields:
       Icons icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Icons"'
   - name: image
     uid: excel!Excel.EntityCompactLayoutIcons.image:member
@@ -2707,9 +2467,8 @@ fields:
       Image icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Image"'
   - name: imageGlobe
     uid: excel!Excel.EntityCompactLayoutIcons.imageGlobe:member
@@ -2718,9 +2477,8 @@ fields:
       Image globe icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ImageGlobe"'
   - name: imageMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.imageMultiple:member
@@ -2729,9 +2487,8 @@ fields:
       Image multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ImageMultiple"'
   - name: iot
     uid: excel!Excel.EntityCompactLayoutIcons.iot:member
@@ -2740,9 +2497,8 @@ fields:
       IoT icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Iot"'
   - name: joystick
     uid: excel!Excel.EntityCompactLayoutIcons.joystick:member
@@ -2751,9 +2507,8 @@ fields:
       Joystick icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Joystick"'
   - name: justice
     uid: excel!Excel.EntityCompactLayoutIcons.justice:member
@@ -2762,9 +2517,8 @@ fields:
       Justice icon. Displays as the scales of justice.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Justice"'
   - name: key
     uid: excel!Excel.EntityCompactLayoutIcons.key:member
@@ -2773,9 +2527,8 @@ fields:
       Key icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Key"'
   - name: keyboard
     uid: excel!Excel.EntityCompactLayoutIcons.keyboard:member
@@ -2784,9 +2537,8 @@ fields:
       Keyboard icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Keyboard"'
   - name: keyboardLayoutSplit
     uid: excel!Excel.EntityCompactLayoutIcons.keyboardLayoutSplit:member
@@ -2795,9 +2547,8 @@ fields:
       Keyboard layout split icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"KeyboardLayoutSplit"'
   - name: keyMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.keyMultiple:member
@@ -2806,9 +2557,8 @@ fields:
       Key multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"KeyMultiple"'
   - name: languages
     uid: excel!Excel.EntityCompactLayoutIcons.languages:member
@@ -2817,9 +2567,8 @@ fields:
       Languages icon. Displays as a document and a globe.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Languages"'
   - name: laptop
     uid: excel!Excel.EntityCompactLayoutIcons.laptop:member
@@ -2828,9 +2577,8 @@ fields:
       Laptop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Laptop"'
   - name: lasso
     uid: excel!Excel.EntityCompactLayoutIcons.lasso:member
@@ -2839,9 +2587,8 @@ fields:
       Lasso icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Lasso"'
   - name: launcherSettings
     uid: excel!Excel.EntityCompactLayoutIcons.launcherSettings:member
@@ -2850,9 +2597,8 @@ fields:
       Launcher settings icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LauncherSettings"'
   - name: layer
     uid: excel!Excel.EntityCompactLayoutIcons.layer:member
@@ -2861,9 +2607,8 @@ fields:
       Layer icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Layer"'
   - name: leaf
     uid: excel!Excel.EntityCompactLayoutIcons.leaf:member
@@ -2872,9 +2617,8 @@ fields:
       Leaf icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Leaf"'
   - name: leafOne
     uid: excel!Excel.EntityCompactLayoutIcons.leafOne:member
@@ -2883,9 +2627,8 @@ fields:
       Leaf one icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LeafOne"'
   - name: leafThree
     uid: excel!Excel.EntityCompactLayoutIcons.leafThree:member
@@ -2894,9 +2637,8 @@ fields:
       Leaf three icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LeafThree"'
   - name: leafTwo
     uid: excel!Excel.EntityCompactLayoutIcons.leafTwo:member
@@ -2905,9 +2647,8 @@ fields:
       Leaf two icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LeafTwo"'
   - name: library
     uid: excel!Excel.EntityCompactLayoutIcons.library:member
@@ -2916,9 +2657,8 @@ fields:
       Library icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Library"'
   - name: lightbulb
     uid: excel!Excel.EntityCompactLayoutIcons.lightbulb:member
@@ -2927,9 +2667,8 @@ fields:
       Lightbulb icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Lightbulb"'
   - name: lightbulbFilament
     uid: excel!Excel.EntityCompactLayoutIcons.lightbulbFilament:member
@@ -2938,9 +2677,8 @@ fields:
       Lightbulb filament icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LightbulbFilament"'
   - name: likert
     uid: excel!Excel.EntityCompactLayoutIcons.likert:member
@@ -2949,9 +2687,8 @@ fields:
       Likert icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Likert"'
   - name: link
     uid: excel!Excel.EntityCompactLayoutIcons.link:member
@@ -2960,9 +2697,8 @@ fields:
       Link icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Link"'
   - name: localLanguage
     uid: excel!Excel.EntityCompactLayoutIcons.localLanguage:member
@@ -2971,9 +2707,8 @@ fields:
       Local language icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LocalLanguage"'
   - name: location
     uid: excel!Excel.EntityCompactLayoutIcons.location:member
@@ -2982,9 +2717,8 @@ fields:
       Location icon. Displays as a map marker.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Location"'
   - name: lockClosed
     uid: excel!Excel.EntityCompactLayoutIcons.lockClosed:member
@@ -2993,9 +2727,8 @@ fields:
       Lock closed icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LockClosed"'
   - name: lockMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.lockMultiple:member
@@ -3004,9 +2737,8 @@ fields:
       Lock multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LockMultiple"'
   - name: lockOpen
     uid: excel!Excel.EntityCompactLayoutIcons.lockOpen:member
@@ -3015,9 +2747,8 @@ fields:
       Lock open icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LockOpen"'
   - name: lottery
     uid: excel!Excel.EntityCompactLayoutIcons.lottery:member
@@ -3026,9 +2757,8 @@ fields:
       Lottery icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Lottery"'
   - name: luggage
     uid: excel!Excel.EntityCompactLayoutIcons.luggage:member
@@ -3037,9 +2767,8 @@ fields:
       Luggage icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Luggage"'
   - name: mail
     uid: excel!Excel.EntityCompactLayoutIcons.mail:member
@@ -3048,9 +2777,8 @@ fields:
       Mail icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Mail"'
   - name: mailInbox
     uid: excel!Excel.EntityCompactLayoutIcons.mailInbox:member
@@ -3059,9 +2787,8 @@ fields:
       Mail inbox icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MailInbox"'
   - name: mailMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.mailMultiple:member
@@ -3070,9 +2797,8 @@ fields:
       Mail multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MailMultiple"'
   - name: map
     uid: excel!Excel.EntityCompactLayoutIcons.map:member
@@ -3081,9 +2807,8 @@ fields:
       Map icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Map"'
   - name: mapPin
     uid: excel!Excel.EntityCompactLayoutIcons.mapPin:member
@@ -3092,9 +2817,8 @@ fields:
       Map pin icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MapPin"'
   - name: markdown
     uid: excel!Excel.EntityCompactLayoutIcons.markdown:member
@@ -3103,9 +2827,8 @@ fields:
       Markdown icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Markdown"'
   - name: mathFormula
     uid: excel!Excel.EntityCompactLayoutIcons.mathFormula:member
@@ -3114,9 +2837,8 @@ fields:
       Math formula icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MathFormula"'
   - name: mathSymbols
     uid: excel!Excel.EntityCompactLayoutIcons.mathSymbols:member
@@ -3125,9 +2847,8 @@ fields:
       Math symbols icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MathSymbols"'
   - name: max
     uid: excel!Excel.EntityCompactLayoutIcons.max:member
@@ -3136,9 +2857,8 @@ fields:
       Max icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Max"'
   - name: megaphone
     uid: excel!Excel.EntityCompactLayoutIcons.megaphone:member
@@ -3147,9 +2867,8 @@ fields:
       Megaphone icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Megaphone"'
   - name: megaphoneLoud
     uid: excel!Excel.EntityCompactLayoutIcons.megaphoneLoud:member
@@ -3158,9 +2877,8 @@ fields:
       Megaphone loud icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MegaphoneLoud"'
   - name: mention
     uid: excel!Excel.EntityCompactLayoutIcons.mention:member
@@ -3169,9 +2887,8 @@ fields:
       Mention icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Mention"'
   - name: mic
     uid: excel!Excel.EntityCompactLayoutIcons.mic:member
@@ -3180,9 +2897,8 @@ fields:
       Mic icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Mic"'
   - name: microscope
     uid: excel!Excel.EntityCompactLayoutIcons.microscope:member
@@ -3191,9 +2907,8 @@ fields:
       Microscope icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Microscope"'
   - name: midi
     uid: excel!Excel.EntityCompactLayoutIcons.midi:member
@@ -3202,9 +2917,8 @@ fields:
       Midi icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Midi"'
   - name: molecule
     uid: excel!Excel.EntityCompactLayoutIcons.molecule:member
@@ -3213,9 +2927,8 @@ fields:
       Molecule icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Molecule"'
   - name: money
     uid: excel!Excel.EntityCompactLayoutIcons.money:member
@@ -3224,9 +2937,8 @@ fields:
       Money icon. Displays as paper money and coins.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Money"'
   - name: moneyHand
     uid: excel!Excel.EntityCompactLayoutIcons.moneyHand:member
@@ -3235,9 +2947,8 @@ fields:
       Money hand icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MoneyHand"'
   - name: mountain
     uid: excel!Excel.EntityCompactLayoutIcons.mountain:member
@@ -3246,9 +2957,8 @@ fields:
       Mountain icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Mountain"'
   - name: movieCamera
     uid: excel!Excel.EntityCompactLayoutIcons.movieCamera:member
@@ -3257,9 +2967,8 @@ fields:
       Movie camera icon. Displays as a video camera.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MovieCamera"'
   - name: moviesAndTv
     uid: excel!Excel.EntityCompactLayoutIcons.moviesAndTv:member
@@ -3268,9 +2977,8 @@ fields:
       Movies and TV icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MoviesAndTv"'
   - name: musicNote
     uid: excel!Excel.EntityCompactLayoutIcons.musicNote:member
@@ -3279,9 +2987,8 @@ fields:
       Music note icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MusicNote"'
   - name: musicNote1
     uid: excel!Excel.EntityCompactLayoutIcons.musicNote1:member
@@ -3290,9 +2997,8 @@ fields:
       Music note icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MusicNote1"'
   - name: musicNote2
     uid: excel!Excel.EntityCompactLayoutIcons.musicNote2:member
@@ -3301,9 +3007,8 @@ fields:
       Music double note icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MusicNote2"'
   - name: myLocation
     uid: excel!Excel.EntityCompactLayoutIcons.myLocation:member
@@ -3312,9 +3017,8 @@ fields:
       My location icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MyLocation"'
   - name: nByN
     uid: excel!Excel.EntityCompactLayoutIcons.nByN:member
@@ -3323,9 +3027,8 @@ fields:
       N by N icon. Displays as a three by three grid.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"NByN"'
   - name: nByOne
     uid: excel!Excel.EntityCompactLayoutIcons.nByOne:member
@@ -3334,9 +3037,8 @@ fields:
       N by one icon. Displays as a three by one grid.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"NByOne"'
   - name: news
     uid: excel!Excel.EntityCompactLayoutIcons.news:member
@@ -3345,9 +3047,8 @@ fields:
       News icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"News"'
   - name: notablePeople
     uid: excel!Excel.EntityCompactLayoutIcons.notablePeople:member
@@ -3356,9 +3057,8 @@ fields:
       Notable people icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"NotablePeople"'
   - name: note
     uid: excel!Excel.EntityCompactLayoutIcons.note:member
@@ -3367,9 +3067,8 @@ fields:
       Note icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Note"'
   - name: notebook
     uid: excel!Excel.EntityCompactLayoutIcons.notebook:member
@@ -3378,9 +3077,8 @@ fields:
       Notebook icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Notebook"'
   - name: notepad
     uid: excel!Excel.EntityCompactLayoutIcons.notepad:member
@@ -3389,9 +3087,8 @@ fields:
       Notepad icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Notepad"'
   - name: notepadPerson
     uid: excel!Excel.EntityCompactLayoutIcons.notepadPerson:member
@@ -3400,9 +3097,8 @@ fields:
       Notepad person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"NotepadPerson"'
   - name: oneByN
     uid: excel!Excel.EntityCompactLayoutIcons.oneByN:member
@@ -3411,9 +3107,8 @@ fields:
       One by N icon. Displays as a one by three grid.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OneByN"'
   - name: oneByOne
     uid: excel!Excel.EntityCompactLayoutIcons.oneByOne:member
@@ -3422,9 +3117,8 @@ fields:
       One by one icon. Displays as a one by one grid.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OneByOne"'
   - name: options
     uid: excel!Excel.EntityCompactLayoutIcons.options:member
@@ -3433,9 +3127,8 @@ fields:
       Options icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Options"'
   - name: organization
     uid: excel!Excel.EntityCompactLayoutIcons.organization:member
@@ -3444,9 +3137,8 @@ fields:
       Organization icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Organization"'
   - name: organizationHorizontal
     uid: excel!Excel.EntityCompactLayoutIcons.organizationHorizontal:member
@@ -3455,9 +3147,8 @@ fields:
       Organization horizontal icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OrganizationHorizontal"'
   - name: oval
     uid: excel!Excel.EntityCompactLayoutIcons.oval:member
@@ -3466,9 +3157,8 @@ fields:
       Oval icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Oval"'
   - name: paintBrush
     uid: excel!Excel.EntityCompactLayoutIcons.paintBrush:member
@@ -3477,9 +3167,8 @@ fields:
       Paint brush icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PaintBrush"'
   - name: paintBucket
     uid: excel!Excel.EntityCompactLayoutIcons.paintBucket:member
@@ -3488,9 +3177,8 @@ fields:
       Paint bucket icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PaintBucket"'
   - name: partlySunnyWeather
     uid: excel!Excel.EntityCompactLayoutIcons.partlySunnyWeather:member
@@ -3499,9 +3187,8 @@ fields:
       Partly sunny weather icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PartlySunnyWeather"'
   - name: password
     uid: excel!Excel.EntityCompactLayoutIcons.password:member
@@ -3510,9 +3197,8 @@ fields:
       Password icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Password"'
   - name: patch
     uid: excel!Excel.EntityCompactLayoutIcons.patch:member
@@ -3521,9 +3207,8 @@ fields:
       Patch icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Patch"'
   - name: patient
     uid: excel!Excel.EntityCompactLayoutIcons.patient:member
@@ -3532,9 +3217,8 @@ fields:
       Patient icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Patient"'
   - name: payment
     uid: excel!Excel.EntityCompactLayoutIcons.payment:member
@@ -3543,9 +3227,8 @@ fields:
       Payment icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Payment"'
   - name: pen
     uid: excel!Excel.EntityCompactLayoutIcons.pen:member
@@ -3554,9 +3237,8 @@ fields:
       Pen icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pen"'
   - name: pentagon
     uid: excel!Excel.EntityCompactLayoutIcons.pentagon:member
@@ -3565,9 +3247,8 @@ fields:
       Pentagon icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pentagon"'
   - name: people
     uid: excel!Excel.EntityCompactLayoutIcons.people:member
@@ -3576,9 +3257,8 @@ fields:
       People icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"People"'
   - name: peopleAudience
     uid: excel!Excel.EntityCompactLayoutIcons.peopleAudience:member
@@ -3587,9 +3267,8 @@ fields:
       People audience icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleAudience"'
   - name: peopleCall
     uid: excel!Excel.EntityCompactLayoutIcons.peopleCall:member
@@ -3598,9 +3277,8 @@ fields:
       People call icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleCall"'
   - name: peopleCommunity
     uid: excel!Excel.EntityCompactLayoutIcons.peopleCommunity:member
@@ -3609,9 +3287,8 @@ fields:
       People community icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleCommunity"'
   - name: peopleMoney
     uid: excel!Excel.EntityCompactLayoutIcons.peopleMoney:member
@@ -3620,9 +3297,8 @@ fields:
       People money icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleMoney"'
   - name: peopleQueue
     uid: excel!Excel.EntityCompactLayoutIcons.peopleQueue:member
@@ -3631,9 +3307,8 @@ fields:
       People queue icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleQueue"'
   - name: peopleTeam
     uid: excel!Excel.EntityCompactLayoutIcons.peopleTeam:member
@@ -3642,9 +3317,8 @@ fields:
       People team icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleTeam"'
   - name: peopleToolbox
     uid: excel!Excel.EntityCompactLayoutIcons.peopleToolbox:member
@@ -3653,9 +3327,8 @@ fields:
       People toolbox icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PeopleToolbox"'
   - name: person
     uid: excel!Excel.EntityCompactLayoutIcons.person:member
@@ -3664,9 +3337,8 @@ fields:
       Person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Person"'
   - name: personBoard
     uid: excel!Excel.EntityCompactLayoutIcons.personBoard:member
@@ -3675,9 +3347,8 @@ fields:
       Person board icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PersonBoard"'
   - name: personCall
     uid: excel!Excel.EntityCompactLayoutIcons.personCall:member
@@ -3686,9 +3357,8 @@ fields:
       Person call icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PersonCall"'
   - name: personChat
     uid: excel!Excel.EntityCompactLayoutIcons.personChat:member
@@ -3697,9 +3367,8 @@ fields:
       Person chat icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PersonChat"'
   - name: personFeedback
     uid: excel!Excel.EntityCompactLayoutIcons.personFeedback:member
@@ -3708,9 +3377,8 @@ fields:
       Person feedback icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PersonFeedback"'
   - name: personSupport
     uid: excel!Excel.EntityCompactLayoutIcons.personSupport:member
@@ -3719,9 +3387,8 @@ fields:
       Person support icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PersonSupport"'
   - name: personVoice
     uid: excel!Excel.EntityCompactLayoutIcons.personVoice:member
@@ -3730,9 +3397,8 @@ fields:
       Person voice icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PersonVoice"'
   - name: phone
     uid: excel!Excel.EntityCompactLayoutIcons.phone:member
@@ -3741,9 +3407,8 @@ fields:
       Phone icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Phone"'
   - name: phoneDesktop
     uid: excel!Excel.EntityCompactLayoutIcons.phoneDesktop:member
@@ -3752,9 +3417,8 @@ fields:
       Phone desktop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PhoneDesktop"'
   - name: phoneLaptop
     uid: excel!Excel.EntityCompactLayoutIcons.phoneLaptop:member
@@ -3763,9 +3427,8 @@ fields:
       Phone laptop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PhoneLaptop"'
   - name: phoneShake
     uid: excel!Excel.EntityCompactLayoutIcons.phoneShake:member
@@ -3774,9 +3437,8 @@ fields:
       Phone shake icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PhoneShake"'
   - name: phoneTablet
     uid: excel!Excel.EntityCompactLayoutIcons.phoneTablet:member
@@ -3785,9 +3447,8 @@ fields:
       Phone tablet icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PhoneTablet"'
   - name: phoneVibrate
     uid: excel!Excel.EntityCompactLayoutIcons.phoneVibrate:member
@@ -3796,9 +3457,8 @@ fields:
       Phone vibrate icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PhoneVibrate"'
   - name: photoFilter
     uid: excel!Excel.EntityCompactLayoutIcons.photoFilter:member
@@ -3807,9 +3467,8 @@ fields:
       Photo filter icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PhotoFilter"'
   - name: pi
     uid: excel!Excel.EntityCompactLayoutIcons.pi:member
@@ -3818,9 +3477,8 @@ fields:
       Pi icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pi"'
   - name: pictureInPicture
     uid: excel!Excel.EntityCompactLayoutIcons.pictureInPicture:member
@@ -3829,9 +3487,8 @@ fields:
       Picture in picture icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PictureInPicture"'
   - name: pilates
     uid: excel!Excel.EntityCompactLayoutIcons.pilates:member
@@ -3840,9 +3497,8 @@ fields:
       Pilates icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pilates"'
   - name: pill
     uid: excel!Excel.EntityCompactLayoutIcons.pill:member
@@ -3851,9 +3507,8 @@ fields:
       Pill icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pill"'
   - name: pin
     uid: excel!Excel.EntityCompactLayoutIcons.pin:member
@@ -3862,9 +3517,8 @@ fields:
       Pin icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pin"'
   - name: pipeline
     uid: excel!Excel.EntityCompactLayoutIcons.pipeline:member
@@ -3873,9 +3527,8 @@ fields:
       Pipeline icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pipeline"'
   - name: planet
     uid: excel!Excel.EntityCompactLayoutIcons.planet:member
@@ -3884,9 +3537,8 @@ fields:
       Planet icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Planet"'
   - name: playingCards
     uid: excel!Excel.EntityCompactLayoutIcons.playingCards:member
@@ -3895,9 +3547,8 @@ fields:
       Playing cards icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PlayingCards"'
   - name: plugConnected
     uid: excel!Excel.EntityCompactLayoutIcons.plugConnected:member
@@ -3906,9 +3557,8 @@ fields:
       Plug connected icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PlugConnected"'
   - name: plugDisconnected
     uid: excel!Excel.EntityCompactLayoutIcons.plugDisconnected:member
@@ -3917,9 +3567,8 @@ fields:
       Plug disconnected icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PlugDisconnected"'
   - name: pointScan
     uid: excel!Excel.EntityCompactLayoutIcons.pointScan:member
@@ -3928,9 +3577,8 @@ fields:
       Point scan icon. Displays as a target focus symbol.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PointScan"'
   - name: poll
     uid: excel!Excel.EntityCompactLayoutIcons.poll:member
@@ -3939,9 +3587,8 @@ fields:
       Poll icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Poll"'
   - name: power
     uid: excel!Excel.EntityCompactLayoutIcons.power:member
@@ -3950,9 +3597,8 @@ fields:
       Power icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Power"'
   - name: predictions
     uid: excel!Excel.EntityCompactLayoutIcons.predictions:member
@@ -3961,9 +3607,8 @@ fields:
       Predictions icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Predictions"'
   - name: premium
     uid: excel!Excel.EntityCompactLayoutIcons.premium:member
@@ -3972,9 +3617,8 @@ fields:
       Premium icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Premium"'
   - name: presenter
     uid: excel!Excel.EntityCompactLayoutIcons.presenter:member
@@ -3983,9 +3627,8 @@ fields:
       Presenter icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Presenter"'
   - name: previewLink
     uid: excel!Excel.EntityCompactLayoutIcons.previewLink:member
@@ -3994,9 +3637,8 @@ fields:
       Preview link icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PreviewLink"'
   - name: print
     uid: excel!Excel.EntityCompactLayoutIcons.print:member
@@ -4005,9 +3647,8 @@ fields:
       Print icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Print"'
   - name: production
     uid: excel!Excel.EntityCompactLayoutIcons.production:member
@@ -4016,9 +3657,8 @@ fields:
       Production icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Production"'
   - name: prohibited
     uid: excel!Excel.EntityCompactLayoutIcons.prohibited:member
@@ -4027,9 +3667,8 @@ fields:
       Prohibited icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Prohibited"'
   - name: projectionScreen
     uid: excel!Excel.EntityCompactLayoutIcons.projectionScreen:member
@@ -4038,9 +3677,8 @@ fields:
       Projection screen icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ProjectionScreen"'
   - name: protocolHandler
     uid: excel!Excel.EntityCompactLayoutIcons.protocolHandler:member
@@ -4049,9 +3687,8 @@ fields:
       Protocol handler icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ProtocolHandler"'
   - name: pulse
     uid: excel!Excel.EntityCompactLayoutIcons.pulse:member
@@ -4060,9 +3697,8 @@ fields:
       Pulse icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Pulse"'
   - name: pulseSquare
     uid: excel!Excel.EntityCompactLayoutIcons.pulseSquare:member
@@ -4071,9 +3707,8 @@ fields:
       Pulse square icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PulseSquare"'
   - name: puzzlePiece
     uid: excel!Excel.EntityCompactLayoutIcons.puzzlePiece:member
@@ -4082,9 +3717,8 @@ fields:
       Puzzle piece icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PuzzlePiece"'
   - name: qrCode
     uid: excel!Excel.EntityCompactLayoutIcons.qrCode:member
@@ -4093,9 +3727,8 @@ fields:
       QR code icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"QrCode"'
   - name: radar
     uid: excel!Excel.EntityCompactLayoutIcons.radar:member
@@ -4104,9 +3737,8 @@ fields:
       Radar icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Radar"'
   - name: ram
     uid: excel!Excel.EntityCompactLayoutIcons.ram:member
@@ -4115,9 +3747,8 @@ fields:
       Ram icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Ram"'
   - name: readingList
     uid: excel!Excel.EntityCompactLayoutIcons.readingList:member
@@ -4126,9 +3757,8 @@ fields:
       Reading list icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ReadingList"'
   - name: realEstate
     uid: excel!Excel.EntityCompactLayoutIcons.realEstate:member
@@ -4137,9 +3767,8 @@ fields:
       Real estate icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"RealEstate"'
   - name: receipt
     uid: excel!Excel.EntityCompactLayoutIcons.receipt:member
@@ -4148,9 +3777,8 @@ fields:
       Receipt icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Receipt"'
   - name: reward
     uid: excel!Excel.EntityCompactLayoutIcons.reward:member
@@ -4159,9 +3787,8 @@ fields:
       Reward icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Reward"'
   - name: rhombus
     uid: excel!Excel.EntityCompactLayoutIcons.rhombus:member
@@ -4170,9 +3797,8 @@ fields:
       Rhombus icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Rhombus"'
   - name: ribbon
     uid: excel!Excel.EntityCompactLayoutIcons.ribbon:member
@@ -4181,9 +3807,8 @@ fields:
       Ribbon icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Ribbon"'
   - name: ribbonStar
     uid: excel!Excel.EntityCompactLayoutIcons.ribbonStar:member
@@ -4192,9 +3817,8 @@ fields:
       Ribbon star icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"RibbonStar"'
   - name: roadCone
     uid: excel!Excel.EntityCompactLayoutIcons.roadCone:member
@@ -4203,9 +3827,8 @@ fields:
       Road cone icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"RoadCone"'
   - name: rocket
     uid: excel!Excel.EntityCompactLayoutIcons.rocket:member
@@ -4214,9 +3837,8 @@ fields:
       Rocket icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Rocket"'
   - name: router
     uid: excel!Excel.EntityCompactLayoutIcons.router:member
@@ -4225,9 +3847,8 @@ fields:
       Router icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Router"'
   - name: rss
     uid: excel!Excel.EntityCompactLayoutIcons.rss:member
@@ -4236,9 +3857,8 @@ fields:
       RSS icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Rss"'
   - name: ruler
     uid: excel!Excel.EntityCompactLayoutIcons.ruler:member
@@ -4247,9 +3867,8 @@ fields:
       Ruler icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Ruler"'
   - name: run
     uid: excel!Excel.EntityCompactLayoutIcons.run:member
@@ -4258,9 +3877,8 @@ fields:
       Run icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Run"'
   - name: running
     uid: excel!Excel.EntityCompactLayoutIcons.running:member
@@ -4269,9 +3887,8 @@ fields:
       Running icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Running"'
   - name: satellite
     uid: excel!Excel.EntityCompactLayoutIcons.satellite:member
@@ -4280,9 +3897,8 @@ fields:
       Satellite icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Satellite"'
   - name: save
     uid: excel!Excel.EntityCompactLayoutIcons.save:member
@@ -4291,9 +3907,8 @@ fields:
       Save icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Save"'
   - name: savings
     uid: excel!Excel.EntityCompactLayoutIcons.savings:member
@@ -4302,9 +3917,8 @@ fields:
       Savings icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Savings"'
   - name: scales
     uid: excel!Excel.EntityCompactLayoutIcons.scales:member
@@ -4313,9 +3927,8 @@ fields:
       Scales icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Scales"'
   - name: scan
     uid: excel!Excel.EntityCompactLayoutIcons.scan:member
@@ -4324,9 +3937,8 @@ fields:
       Scan icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Scan"'
   - name: scratchpad
     uid: excel!Excel.EntityCompactLayoutIcons.scratchpad:member
@@ -4335,9 +3947,8 @@ fields:
       Scratchpad icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Scratchpad"'
   - name: screenPerson
     uid: excel!Excel.EntityCompactLayoutIcons.screenPerson:member
@@ -4346,9 +3957,8 @@ fields:
       Screen person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ScreenPerson"'
   - name: screenshot
     uid: excel!Excel.EntityCompactLayoutIcons.screenshot:member
@@ -4357,9 +3967,8 @@ fields:
       Screenshot icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Screenshot"'
   - name: search
     uid: excel!Excel.EntityCompactLayoutIcons.search:member
@@ -4368,9 +3977,8 @@ fields:
       Search icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Search"'
   - name: serialPort
     uid: excel!Excel.EntityCompactLayoutIcons.serialPort:member
@@ -4379,9 +3987,8 @@ fields:
       Serial port icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SerialPort"'
   - name: server
     uid: excel!Excel.EntityCompactLayoutIcons.server:member
@@ -4390,9 +3997,8 @@ fields:
       Server icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Server"'
   - name: serverMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.serverMultiple:member
@@ -4401,9 +4007,8 @@ fields:
       Server multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ServerMultiple"'
   - name: serviceBell
     uid: excel!Excel.EntityCompactLayoutIcons.serviceBell:member
@@ -4412,9 +4017,8 @@ fields:
       Service bell icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ServiceBell"'
   - name: settings
     uid: excel!Excel.EntityCompactLayoutIcons.settings:member
@@ -4423,9 +4027,8 @@ fields:
       Settings icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Settings"'
   - name: shapes
     uid: excel!Excel.EntityCompactLayoutIcons.shapes:member
@@ -4434,9 +4037,8 @@ fields:
       Shapes icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Shapes"'
   - name: shield
     uid: excel!Excel.EntityCompactLayoutIcons.shield:member
@@ -4445,9 +4047,8 @@ fields:
       Shield icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Shield"'
   - name: shieldTask
     uid: excel!Excel.EntityCompactLayoutIcons.shieldTask:member
@@ -4456,9 +4057,8 @@ fields:
       Shield task icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ShieldTask"'
   - name: shoppingBag
     uid: excel!Excel.EntityCompactLayoutIcons.shoppingBag:member
@@ -4467,9 +4067,8 @@ fields:
       Shopping bag icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ShoppingBag"'
   - name: signature
     uid: excel!Excel.EntityCompactLayoutIcons.signature:member
@@ -4478,9 +4077,8 @@ fields:
       Signature icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Signature"'
   - name: sim
     uid: excel!Excel.EntityCompactLayoutIcons.sim:member
@@ -4489,9 +4087,8 @@ fields:
       Sim icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Sim"'
   - name: sleep
     uid: excel!Excel.EntityCompactLayoutIcons.sleep:member
@@ -4500,9 +4097,8 @@ fields:
       Sleep icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Sleep"'
   - name: smartwatch
     uid: excel!Excel.EntityCompactLayoutIcons.smartwatch:member
@@ -4511,9 +4107,8 @@ fields:
       Smartwatch icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Smartwatch"'
   - name: soundSource
     uid: excel!Excel.EntityCompactLayoutIcons.soundSource:member
@@ -4522,9 +4117,8 @@ fields:
       Sound source icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SoundSource"'
   - name: soundWaveCircle
     uid: excel!Excel.EntityCompactLayoutIcons.soundWaveCircle:member
@@ -4533,9 +4127,8 @@ fields:
       Sound wave circle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SoundWaveCircle"'
   - name: sparkle
     uid: excel!Excel.EntityCompactLayoutIcons.sparkle:member
@@ -4544,9 +4137,8 @@ fields:
       Sparkle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Sparkle"'
   - name: speaker0
     uid: excel!Excel.EntityCompactLayoutIcons.speaker0:member
@@ -4555,9 +4147,8 @@ fields:
       Speaker icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Speaker0"'
   - name: speaker2
     uid: excel!Excel.EntityCompactLayoutIcons.speaker2:member
@@ -4566,9 +4157,8 @@ fields:
       Speaker with sound wave icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Speaker2"'
   - name: sport
     uid: excel!Excel.EntityCompactLayoutIcons.sport:member
@@ -4577,9 +4167,8 @@ fields:
       Sport icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Sport"'
   - name: sportAmericanFootball
     uid: excel!Excel.EntityCompactLayoutIcons.sportAmericanFootball:member
@@ -4588,9 +4177,8 @@ fields:
       Sport american football icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SportAmericanFootball"'
   - name: sportBaseball
     uid: excel!Excel.EntityCompactLayoutIcons.sportBaseball:member
@@ -4599,9 +4187,8 @@ fields:
       Sport baseball icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SportBaseball"'
   - name: sportBasketball
     uid: excel!Excel.EntityCompactLayoutIcons.sportBasketball:member
@@ -4610,9 +4197,8 @@ fields:
       Sport basketball icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SportBasketball"'
   - name: sportHockey
     uid: excel!Excel.EntityCompactLayoutIcons.sportHockey:member
@@ -4621,9 +4207,8 @@ fields:
       Sport hockey icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SportHockey"'
   - name: sportSoccer
     uid: excel!Excel.EntityCompactLayoutIcons.sportSoccer:member
@@ -4632,9 +4217,8 @@ fields:
       Sport soccer icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SportSoccer"'
   - name: squareMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.squareMultiple:member
@@ -4643,9 +4227,8 @@ fields:
       Square multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SquareMultiple"'
   - name: squareShadow
     uid: excel!Excel.EntityCompactLayoutIcons.squareShadow:member
@@ -4654,9 +4237,8 @@ fields:
       Square shadow icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SquareShadow"'
   - name: squaresNested
     uid: excel!Excel.EntityCompactLayoutIcons.squaresNested:member
@@ -4665,9 +4247,8 @@ fields:
       Squares nested icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SquaresNested"'
   - name: stack
     uid: excel!Excel.EntityCompactLayoutIcons.stack:member
@@ -4676,9 +4257,8 @@ fields:
       Stack icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Stack"'
   - name: stackStar
     uid: excel!Excel.EntityCompactLayoutIcons.stackStar:member
@@ -4687,9 +4267,8 @@ fields:
       Stack star icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StackStar"'
   - name: star
     uid: excel!Excel.EntityCompactLayoutIcons.star:member
@@ -4698,9 +4277,8 @@ fields:
       Star icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Star"'
   - name: starFilled
     uid: excel!Excel.EntityCompactLayoutIcons.starFilled:member
@@ -4709,9 +4287,8 @@ fields:
       Star filled icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StarFilled"'
   - name: starHalf
     uid: excel!Excel.EntityCompactLayoutIcons.starHalf:member
@@ -4720,9 +4297,8 @@ fields:
       Star half icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StarHalf"'
   - name: starLineHorizontal3
     uid: excel!Excel.EntityCompactLayoutIcons.starLineHorizontal3:member
@@ -4731,9 +4307,8 @@ fields:
       Star with 3 horizontal lines icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StarLineHorizontal3"'
   - name: starOneQuarter
     uid: excel!Excel.EntityCompactLayoutIcons.starOneQuarter:member
@@ -4742,9 +4317,8 @@ fields:
       Star one quarter icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StarOneQuarter"'
   - name: starThreeQuarter
     uid: excel!Excel.EntityCompactLayoutIcons.starThreeQuarter:member
@@ -4753,9 +4327,8 @@ fields:
       Star three quarter icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StarThreeQuarter"'
   - name: status
     uid: excel!Excel.EntityCompactLayoutIcons.status:member
@@ -4764,9 +4337,8 @@ fields:
       Status icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Status"'
   - name: steps
     uid: excel!Excel.EntityCompactLayoutIcons.steps:member
@@ -4775,9 +4347,8 @@ fields:
       Steps icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Steps"'
   - name: stethoscope
     uid: excel!Excel.EntityCompactLayoutIcons.stethoscope:member
@@ -4786,9 +4357,8 @@ fields:
       Stethoscope icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Stethoscope"'
   - name: sticker
     uid: excel!Excel.EntityCompactLayoutIcons.sticker:member
@@ -4797,9 +4367,8 @@ fields:
       Sticker icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Sticker"'
   - name: storage
     uid: excel!Excel.EntityCompactLayoutIcons.storage:member
@@ -4808,9 +4377,8 @@ fields:
       Storage icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Storage"'
   - name: stream
     uid: excel!Excel.EntityCompactLayoutIcons.stream:member
@@ -4819,9 +4387,8 @@ fields:
       Stream icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Stream"'
   - name: streamInput
     uid: excel!Excel.EntityCompactLayoutIcons.streamInput:member
@@ -4830,9 +4397,8 @@ fields:
       Stream input icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StreamInput"'
   - name: streamInputOutput
     uid: excel!Excel.EntityCompactLayoutIcons.streamInputOutput:member
@@ -4841,9 +4407,8 @@ fields:
       Stream input output icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StreamInputOutput"'
   - name: streamOutput
     uid: excel!Excel.EntityCompactLayoutIcons.streamOutput:member
@@ -4852,9 +4417,8 @@ fields:
       Stream output icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StreamOutput"'
   - name: styleGuide
     uid: excel!Excel.EntityCompactLayoutIcons.styleGuide:member
@@ -4863,9 +4427,8 @@ fields:
       Style guide icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"StyleGuide"'
   - name: subGrid
     uid: excel!Excel.EntityCompactLayoutIcons.subGrid:member
@@ -4874,9 +4437,8 @@ fields:
       Sub grid icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SubGrid"'
   - name: subtitles
     uid: excel!Excel.EntityCompactLayoutIcons.subtitles:member
@@ -4885,9 +4447,8 @@ fields:
       Subtitles icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Subtitles"'
   - name: surfaceEarbuds
     uid: excel!Excel.EntityCompactLayoutIcons.surfaceEarbuds:member
@@ -4896,9 +4457,8 @@ fields:
       Surface earbuds icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SurfaceEarbuds"'
   - name: surfaceHub
     uid: excel!Excel.EntityCompactLayoutIcons.surfaceHub:member
@@ -4907,9 +4467,8 @@ fields:
       Surface hub icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"SurfaceHub"'
   - name: symbols
     uid: excel!Excel.EntityCompactLayoutIcons.symbols:member
@@ -4918,9 +4477,8 @@ fields:
       Symbols icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Symbols"'
   - name: syringe
     uid: excel!Excel.EntityCompactLayoutIcons.syringe:member
@@ -4929,9 +4487,8 @@ fields:
       Syringe icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Syringe"'
   - name: system
     uid: excel!Excel.EntityCompactLayoutIcons.system:member
@@ -4940,9 +4497,8 @@ fields:
       System icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"System"'
   - name: tabDesktop
     uid: excel!Excel.EntityCompactLayoutIcons.tabDesktop:member
@@ -4951,9 +4507,8 @@ fields:
       Tab desktop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TabDesktop"'
   - name: tabInprivateAccount
     uid: excel!Excel.EntityCompactLayoutIcons.tabInprivateAccount:member
@@ -4962,9 +4517,8 @@ fields:
       Tab InPrivate account icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TabInprivateAccount"'
   - name: table
     uid: excel!Excel.EntityCompactLayoutIcons.table:member
@@ -4973,9 +4527,8 @@ fields:
       Table icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Table"'
   - name: tableImage
     uid: excel!Excel.EntityCompactLayoutIcons.tableImage:member
@@ -4984,9 +4537,8 @@ fields:
       Table image icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TableImage"'
   - name: tableMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.tableMultiple:member
@@ -4995,9 +4547,8 @@ fields:
       Table multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TableMultiple"'
   - name: tablet
     uid: excel!Excel.EntityCompactLayoutIcons.tablet:member
@@ -5006,9 +4557,8 @@ fields:
       Tablet icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Tablet"'
   - name: tabs
     uid: excel!Excel.EntityCompactLayoutIcons.tabs:member
@@ -5017,9 +4567,8 @@ fields:
       Tabs icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Tabs"'
   - name: tag
     uid: excel!Excel.EntityCompactLayoutIcons.tag:member
@@ -5028,9 +4577,8 @@ fields:
       Tag icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Tag"'
   - name: tagCircle
     uid: excel!Excel.EntityCompactLayoutIcons.tagCircle:member
@@ -5039,9 +4587,8 @@ fields:
       Tag circle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TagCircle"'
   - name: tagMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.tagMultiple:member
@@ -5050,9 +4597,8 @@ fields:
       Tag multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TagMultiple"'
   - name: target
     uid: excel!Excel.EntityCompactLayoutIcons.target:member
@@ -5061,9 +4607,8 @@ fields:
       Target icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Target"'
   - name: targetArrow
     uid: excel!Excel.EntityCompactLayoutIcons.targetArrow:member
@@ -5072,9 +4617,8 @@ fields:
       Target arrow icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TargetArrow"'
   - name: teddy
     uid: excel!Excel.EntityCompactLayoutIcons.teddy:member
@@ -5083,9 +4627,8 @@ fields:
       Teddy icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Teddy"'
   - name: temperature
     uid: excel!Excel.EntityCompactLayoutIcons.temperature:member
@@ -5094,9 +4637,8 @@ fields:
       Temperature icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Temperature"'
   - name: tent
     uid: excel!Excel.EntityCompactLayoutIcons.tent:member
@@ -5105,9 +4647,8 @@ fields:
       Tent icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Tent"'
   - name: tetrisApp
     uid: excel!Excel.EntityCompactLayoutIcons.tetrisApp:member
@@ -5116,9 +4657,8 @@ fields:
       Tetris app icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TetrisApp"'
   - name: textbox
     uid: excel!Excel.EntityCompactLayoutIcons.textbox:member
@@ -5127,9 +4667,8 @@ fields:
       Textbox icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Textbox"'
   - name: textQuote
     uid: excel!Excel.EntityCompactLayoutIcons.textQuote:member
@@ -5138,9 +4677,8 @@ fields:
       Text quote icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TextQuote"'
   - name: thinking
     uid: excel!Excel.EntityCompactLayoutIcons.thinking:member
@@ -5149,9 +4687,8 @@ fields:
       Thinking icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Thinking"'
   - name: thumbDislike
     uid: excel!Excel.EntityCompactLayoutIcons.thumbDislike:member
@@ -5160,9 +4697,8 @@ fields:
       Thumb dislike icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ThumbDislike"'
   - name: thumbLike
     uid: excel!Excel.EntityCompactLayoutIcons.thumbLike:member
@@ -5171,9 +4707,8 @@ fields:
       Thumb like icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ThumbLike"'
   - name: ticketDiagonal
     uid: excel!Excel.EntityCompactLayoutIcons.ticketDiagonal:member
@@ -5182,9 +4717,8 @@ fields:
       Ticket diagonal icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TicketDiagonal"'
   - name: ticketHorizontal
     uid: excel!Excel.EntityCompactLayoutIcons.ticketHorizontal:member
@@ -5193,9 +4727,8 @@ fields:
       Ticket horizontal icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TicketHorizontal"'
   - name: timeAndWeather
     uid: excel!Excel.EntityCompactLayoutIcons.timeAndWeather:member
@@ -5204,9 +4737,8 @@ fields:
       Time and weather icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TimeAndWeather"'
   - name: timeline
     uid: excel!Excel.EntityCompactLayoutIcons.timeline:member
@@ -5215,9 +4747,8 @@ fields:
       Timeline icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Timeline"'
   - name: timer
     uid: excel!Excel.EntityCompactLayoutIcons.timer:member
@@ -5226,9 +4757,8 @@ fields:
       Timer icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Timer"'
   - name: toolbox
     uid: excel!Excel.EntityCompactLayoutIcons.toolbox:member
@@ -5237,9 +4767,8 @@ fields:
       Toolbox icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Toolbox"'
   - name: topSpeed
     uid: excel!Excel.EntityCompactLayoutIcons.topSpeed:member
@@ -5248,9 +4777,8 @@ fields:
       Top speed icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TopSpeed"'
   - name: translate
     uid: excel!Excel.EntityCompactLayoutIcons.translate:member
@@ -5259,9 +4787,8 @@ fields:
       Translate icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Translate"'
   - name: transmission
     uid: excel!Excel.EntityCompactLayoutIcons.transmission:member
@@ -5270,9 +4797,8 @@ fields:
       Transmission icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Transmission"'
   - name: treeDeciduous
     uid: excel!Excel.EntityCompactLayoutIcons.treeDeciduous:member
@@ -5281,9 +4807,8 @@ fields:
       Tree deciduous icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TreeDeciduous"'
   - name: treeEvergreen
     uid: excel!Excel.EntityCompactLayoutIcons.treeEvergreen:member
@@ -5292,9 +4817,8 @@ fields:
       Tree evergreen icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TreeEvergreen"'
   - name: trophy
     uid: excel!Excel.EntityCompactLayoutIcons.trophy:member
@@ -5303,9 +4827,8 @@ fields:
       Trophy icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Trophy"'
   - name: tv
     uid: excel!Excel.EntityCompactLayoutIcons.tv:member
@@ -5314,9 +4837,8 @@ fields:
       TV icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Tv"'
   - name: tvUsb
     uid: excel!Excel.EntityCompactLayoutIcons.tvUsb:member
@@ -5325,9 +4847,8 @@ fields:
       TV USB icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TvUsb"'
   - name: umbrella
     uid: excel!Excel.EntityCompactLayoutIcons.umbrella:member
@@ -5336,9 +4857,8 @@ fields:
       Umbrella icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Umbrella"'
   - name: usbPlug
     uid: excel!Excel.EntityCompactLayoutIcons.usbPlug:member
@@ -5347,9 +4867,8 @@ fields:
       USB plug icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"UsbPlug"'
   - name: usbStick
     uid: excel!Excel.EntityCompactLayoutIcons.usbStick:member
@@ -5358,9 +4877,8 @@ fields:
       USB stick icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"UsbStick"'
   - name: vault
     uid: excel!Excel.EntityCompactLayoutIcons.vault:member
@@ -5369,9 +4887,8 @@ fields:
       Vault icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Vault"'
   - name: vehicleBicycle
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleBicycle:member
@@ -5380,9 +4897,8 @@ fields:
       Vehicle bicycle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleBicycle"'
   - name: vehicleBus
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleBus:member
@@ -5391,9 +4907,8 @@ fields:
       Vehicle bus icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleBus"'
   - name: vehicleCab
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleCab:member
@@ -5402,9 +4917,8 @@ fields:
       Vehicle cab icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleCab"'
   - name: vehicleCar
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleCar:member
@@ -5413,9 +4927,8 @@ fields:
       Vehicle car icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleCar"'
   - name: vehicleCarCollision
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleCarCollision:member
@@ -5424,9 +4937,8 @@ fields:
       Vehicle car collision icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleCarCollision"'
   - name: vehicleCarProfileLtr
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleCarProfileLtr:member
@@ -5435,9 +4947,8 @@ fields:
       Vehicle car profile left-to-right icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleCarProfileLtr"'
   - name: vehicleCarProfileRtl
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleCarProfileRtl:member
@@ -5446,9 +4957,8 @@ fields:
       Vehicle car profile right-to-left icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleCarProfileRtl"'
   - name: vehicleShip
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleShip:member
@@ -5457,9 +4967,8 @@ fields:
       Vehicle ship icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleShip"'
   - name: vehicleSubway
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleSubway:member
@@ -5468,9 +4977,8 @@ fields:
       Vehicle subway icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleSubway"'
   - name: vehicleTruck
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleTruck:member
@@ -5479,9 +4987,8 @@ fields:
       Vehicle truck icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleTruck"'
   - name: vehicleTruckBag
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleTruckBag:member
@@ -5490,9 +4997,8 @@ fields:
       Vehicle truck bag icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleTruckBag"'
   - name: vehicleTruckCube
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleTruckCube:member
@@ -5501,9 +5007,8 @@ fields:
       Vehicle truck cube icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleTruckCube"'
   - name: vehicleTruckProfile
     uid: excel!Excel.EntityCompactLayoutIcons.vehicleTruckProfile:member
@@ -5512,9 +5017,8 @@ fields:
       Vehicle truck profile icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VehicleTruckProfile"'
   - name: video
     uid: excel!Excel.EntityCompactLayoutIcons.video:member
@@ -5523,9 +5027,8 @@ fields:
       Video icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Video"'
   - name: video360
     uid: excel!Excel.EntityCompactLayoutIcons.video360:member
@@ -5534,9 +5037,8 @@ fields:
       Video 360 icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Video360"'
   - name: videoChat
     uid: excel!Excel.EntityCompactLayoutIcons.videoChat:member
@@ -5545,9 +5047,8 @@ fields:
       Video chat icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VideoChat"'
   - name: videoClip
     uid: excel!Excel.EntityCompactLayoutIcons.videoClip:member
@@ -5556,9 +5057,8 @@ fields:
       Video clip icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VideoClip"'
   - name: videoClipMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.videoClipMultiple:member
@@ -5567,9 +5067,8 @@ fields:
       Video clip multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VideoClipMultiple"'
   - name: videoPerson
     uid: excel!Excel.EntityCompactLayoutIcons.videoPerson:member
@@ -5578,9 +5077,8 @@ fields:
       Video person icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VideoPerson"'
   - name: videoRecording
     uid: excel!Excel.EntityCompactLayoutIcons.videoRecording:member
@@ -5589,9 +5087,8 @@ fields:
       Video recording icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VideoRecording"'
   - name: videoSecurity
     uid: excel!Excel.EntityCompactLayoutIcons.videoSecurity:member
@@ -5600,9 +5097,8 @@ fields:
       Video security icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VideoSecurity"'
   - name: viewDesktop
     uid: excel!Excel.EntityCompactLayoutIcons.viewDesktop:member
@@ -5611,9 +5107,8 @@ fields:
       View desktop icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ViewDesktop"'
   - name: viewDesktopMobile
     uid: excel!Excel.EntityCompactLayoutIcons.viewDesktopMobile:member
@@ -5622,9 +5117,8 @@ fields:
       View desktop mobile icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ViewDesktopMobile"'
   - name: violin
     uid: excel!Excel.EntityCompactLayoutIcons.violin:member
@@ -5633,9 +5127,8 @@ fields:
       Violin icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Violin"'
   - name: virtualNetwork
     uid: excel!Excel.EntityCompactLayoutIcons.virtualNetwork:member
@@ -5644,9 +5137,8 @@ fields:
       Virtual network icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"VirtualNetwork"'
   - name: voicemail
     uid: excel!Excel.EntityCompactLayoutIcons.voicemail:member
@@ -5655,9 +5147,8 @@ fields:
       Voicemail icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Voicemail"'
   - name: vote
     uid: excel!Excel.EntityCompactLayoutIcons.vote:member
@@ -5666,9 +5157,8 @@ fields:
       Vote icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Vote"'
   - name: walkieTalkie
     uid: excel!Excel.EntityCompactLayoutIcons.walkieTalkie:member
@@ -5677,9 +5167,8 @@ fields:
       Walkie talkie icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WalkieTalkie"'
   - name: wallet
     uid: excel!Excel.EntityCompactLayoutIcons.wallet:member
@@ -5688,9 +5177,8 @@ fields:
       Wallet icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Wallet"'
   - name: walletCreditCard
     uid: excel!Excel.EntityCompactLayoutIcons.walletCreditCard:member
@@ -5699,9 +5187,8 @@ fields:
       Wallet credit card icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WalletCreditCard"'
   - name: wallpaper
     uid: excel!Excel.EntityCompactLayoutIcons.wallpaper:member
@@ -5710,9 +5197,8 @@ fields:
       Wallpaper icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Wallpaper"'
   - name: wand
     uid: excel!Excel.EntityCompactLayoutIcons.wand:member
@@ -5721,9 +5207,8 @@ fields:
       Wand icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Wand"'
   - name: warning
     uid: excel!Excel.EntityCompactLayoutIcons.warning:member
@@ -5732,9 +5217,8 @@ fields:
       Warning icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Warning"'
   - name: weatherBlowingSnow
     uid: excel!Excel.EntityCompactLayoutIcons.weatherBlowingSnow:member
@@ -5743,9 +5227,8 @@ fields:
       Weather blowing snow icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherBlowingSnow"'
   - name: weatherCloudy
     uid: excel!Excel.EntityCompactLayoutIcons.weatherCloudy:member
@@ -5754,9 +5237,8 @@ fields:
       Weather cloudy icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherCloudy"'
   - name: weatherDrizzle
     uid: excel!Excel.EntityCompactLayoutIcons.weatherDrizzle:member
@@ -5765,9 +5247,8 @@ fields:
       Weather drizzle icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherDrizzle"'
   - name: weatherDuststorm
     uid: excel!Excel.EntityCompactLayoutIcons.weatherDuststorm:member
@@ -5776,9 +5257,8 @@ fields:
       Weather duststorm icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherDuststorm"'
   - name: weatherFog
     uid: excel!Excel.EntityCompactLayoutIcons.weatherFog:member
@@ -5787,9 +5267,8 @@ fields:
       Weather fog icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherFog"'
   - name: weatherHailDay
     uid: excel!Excel.EntityCompactLayoutIcons.weatherHailDay:member
@@ -5798,9 +5277,8 @@ fields:
       Weather hail day icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherHailDay"'
   - name: weatherHailNight
     uid: excel!Excel.EntityCompactLayoutIcons.weatherHailNight:member
@@ -5809,9 +5287,8 @@ fields:
       Weather hail night icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherHailNight"'
   - name: weatherHaze
     uid: excel!Excel.EntityCompactLayoutIcons.weatherHaze:member
@@ -5820,9 +5297,8 @@ fields:
       Weather haze icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherHaze"'
   - name: weatherMoon
     uid: excel!Excel.EntityCompactLayoutIcons.weatherMoon:member
@@ -5831,9 +5307,8 @@ fields:
       Weather moon icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherMoon"'
   - name: weatherPartlyCloudyDay
     uid: excel!Excel.EntityCompactLayoutIcons.weatherPartlyCloudyDay:member
@@ -5842,9 +5317,8 @@ fields:
       Weather partly cloudy day icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherPartlyCloudyDay"'
   - name: weatherPartlyCloudyNight
     uid: excel!Excel.EntityCompactLayoutIcons.weatherPartlyCloudyNight:member
@@ -5853,9 +5327,8 @@ fields:
       Weather partly cloudy night icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherPartlyCloudyNight"'
   - name: weatherRain
     uid: excel!Excel.EntityCompactLayoutIcons.weatherRain:member
@@ -5864,9 +5337,8 @@ fields:
       Weather rain icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherRain"'
   - name: weatherRainShowersDay
     uid: excel!Excel.EntityCompactLayoutIcons.weatherRainShowersDay:member
@@ -5875,9 +5347,8 @@ fields:
       Weather rain showers day icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherRainShowersDay"'
   - name: weatherRainShowersNight
     uid: excel!Excel.EntityCompactLayoutIcons.weatherRainShowersNight:member
@@ -5886,9 +5357,8 @@ fields:
       Weather rain showers night icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherRainShowersNight"'
   - name: weatherRainSnow
     uid: excel!Excel.EntityCompactLayoutIcons.weatherRainSnow:member
@@ -5897,9 +5367,8 @@ fields:
       Weather rain snow icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherRainSnow"'
   - name: weatherSnow
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSnow:member
@@ -5908,9 +5377,8 @@ fields:
       Weather snow icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSnow"'
   - name: weatherSnowflake
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSnowflake:member
@@ -5919,9 +5387,8 @@ fields:
       Weather snowflake icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSnowflake"'
   - name: weatherSnowShowerDay
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSnowShowerDay:member
@@ -5930,9 +5397,8 @@ fields:
       Weather snow shower day icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSnowShowerDay"'
   - name: weatherSnowShowerNight
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSnowShowerNight:member
@@ -5941,9 +5407,8 @@ fields:
       Weather snow shower night icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSnowShowerNight"'
   - name: weatherSqualls
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSqualls:member
@@ -5952,9 +5417,8 @@ fields:
       Weather squalls icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSqualls"'
   - name: weatherSunnyHigh
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSunnyHigh:member
@@ -5963,9 +5427,8 @@ fields:
       Weather sunny high icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSunnyHigh"'
   - name: weatherSunnyLow
     uid: excel!Excel.EntityCompactLayoutIcons.weatherSunnyLow:member
@@ -5974,9 +5437,8 @@ fields:
       Weather sunny low icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherSunnyLow"'
   - name: weatherThunderstorm
     uid: excel!Excel.EntityCompactLayoutIcons.weatherThunderstorm:member
@@ -5985,9 +5447,8 @@ fields:
       Weather thunderstorm icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WeatherThunderstorm"'
   - name: webAsset
     uid: excel!Excel.EntityCompactLayoutIcons.webAsset:member
@@ -5996,9 +5457,8 @@ fields:
       Web asset icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WebAsset"'
   - name: whiteboard
     uid: excel!Excel.EntityCompactLayoutIcons.whiteboard:member
@@ -6007,9 +5467,8 @@ fields:
       Whiteboard icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Whiteboard"'
   - name: wifi1
     uid: excel!Excel.EntityCompactLayoutIcons.wifi1:member
@@ -6018,9 +5477,8 @@ fields:
       Wifi signal with 3 bars icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Wifi1"'
   - name: wifi2
     uid: excel!Excel.EntityCompactLayoutIcons.wifi2:member
@@ -6029,9 +5487,8 @@ fields:
       Wifi signal with 2 bars icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Wifi2"'
   - name: window
     uid: excel!Excel.EntityCompactLayoutIcons.window:member
@@ -6040,9 +5497,8 @@ fields:
       Window icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Window"'
   - name: windowMultiple
     uid: excel!Excel.EntityCompactLayoutIcons.windowMultiple:member
@@ -6051,9 +5507,8 @@ fields:
       Window multiple icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WindowMultiple"'
   - name: windowWrench
     uid: excel!Excel.EntityCompactLayoutIcons.windowWrench:member
@@ -6062,9 +5517,8 @@ fields:
       Window wrench icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WindowWrench"'
   - name: wrench
     uid: excel!Excel.EntityCompactLayoutIcons.wrench:member
@@ -6073,9 +5527,8 @@ fields:
       Wrench icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Wrench"'
   - name: wrenchScrewdriver
     uid: excel!Excel.EntityCompactLayoutIcons.wrenchScrewdriver:member
@@ -6084,9 +5537,8 @@ fields:
       Wrench screwdriver icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"WrenchScrewdriver"'
   - name: xray
     uid: excel!Excel.EntityCompactLayoutIcons.xray:member
@@ -6095,9 +5547,8 @@ fields:
       X-ray icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Xray"'
   - name: yoga
     uid: excel!Excel.EntityCompactLayoutIcons.yoga:member
@@ -6106,7 +5557,6 @@ fields:
       Yoga icon.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Yoga"'

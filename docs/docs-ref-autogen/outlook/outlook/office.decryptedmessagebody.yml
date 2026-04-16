@@ -5,9 +5,8 @@ package: outlook!
 fullName: Office.DecryptedMessageBody
 summary: Represents the body of a decrypted message.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -30,7 +29,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.MessageDecryptEventCompletedOptions.emailBody](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#emailbody-member)
   \]
 
@@ -113,9 +112,8 @@ properties:
       be formatted as `Office.CoercionType.Html` or
       `Office.CoercionType.Text`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -139,9 +137,8 @@ properties:
     fullName: content
     summary: Specifies the content displayed in the body of the message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

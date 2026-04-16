@@ -5,34 +5,18 @@ package: word!
 fullName: Word.ArrowheadWidth
 summary: Specifies the width of the arrowhead at the end of a line.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.LineFormatData.beginArrowheadWidth](/javascript/api/word/word.interfaces.lineformatdata#beginarrowheadwidth-member)
-  \]
-
-  - \[
-  [Word.Interfaces.LineFormatData.endArrowheadWidth](/javascript/api/word/word.interfaces.lineformatdata#endarrowheadwidth-member)
-  \]
-
-  - \[
-  [Word.Interfaces.LineFormatUpdateData.beginArrowheadWidth](/javascript/api/word/word.interfaces.lineformatupdatedata#beginarrowheadwidth-member)
-  \]
-
-  - \[
-  [Word.Interfaces.LineFormatUpdateData.endArrowheadWidth](/javascript/api/word/word.interfaces.lineformatupdatedata#endarrowheadwidth-member)
-  \]
-
-  - \[
+  -
   [Word.LineFormat.beginArrowheadWidth](/javascript/api/word/word.lineformat#beginarrowheadwidth-member)
   \]
 
-  - \[
+  -
   [Word.LineFormat.endArrowheadWidth](/javascript/api/word/word.lineformat#endarrowheadwidth-member)
   \]
 
@@ -46,8 +30,8 @@ fields:
       Represents a medium arrowhead width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Medium"'
   - name: mixed
     uid: word!Word.ArrowheadWidth.mixed:member
@@ -56,8 +40,8 @@ fields:
       Represents a mixed arrowhead width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: narrow
     uid: word!Word.ArrowheadWidth.narrow:member
@@ -66,8 +50,8 @@ fields:
       Represents a narrow arrowhead width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Narrow"'
   - name: wide
     uid: word!Word.ArrowheadWidth.wide:member
@@ -76,6 +60,6 @@ fields:
       Represents a wide arrowhead width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Wide"'

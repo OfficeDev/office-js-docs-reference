@@ -4,17 +4,7 @@ uid: word!Word.Interfaces.FieldData:interface
 package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.FieldCollectionData.items](/javascript/api/word/word.interfaces.fieldcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldCollectionUpdateData.items](/javascript/api/word/word.interfaces.fieldcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

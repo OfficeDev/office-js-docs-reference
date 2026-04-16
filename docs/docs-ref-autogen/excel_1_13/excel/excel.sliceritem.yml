@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.SlicerItem
 summary: Represents a slicer item in a slicer.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.SlicerItemCollection.items](/javascript/api/excel/excel.sliceritemcollection#items-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: hasData
     summary: Value is `true` if the slicer item has data.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +60,8 @@ properties:
       slicer item is the only one selected, when it is deselected, all items
       will be selected.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +75,8 @@ properties:
     fullName: key
     summary: Represents the unique value representing the slicer item.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +90,8 @@ properties:
     fullName: name
     summary: Represents the title displayed in the Excel UI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

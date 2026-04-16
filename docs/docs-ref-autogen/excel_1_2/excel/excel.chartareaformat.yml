@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartAreaFormat
 summary: Encapsulates the format properties for the overall chart area.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Chart.format](/javascript/api/excel/excel.chart#format-member) \]
+  - [Excel.Chart.format](/javascript/api/excel/excel.chart#format-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -41,8 +41,8 @@ properties:
       Represents the fill format of an object, which includes background
       formatting information.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +58,8 @@ properties:
       Represents the font attributes (font name, font size, color, etc.) for the
       current object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

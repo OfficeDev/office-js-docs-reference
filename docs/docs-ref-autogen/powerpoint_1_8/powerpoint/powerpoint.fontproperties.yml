@@ -5,20 +5,19 @@ package: powerpoint!
 fullName: PowerPoint.FontProperties
 summary: Represents the font attributes, such as font name, size, and color.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TableCellProperties.font](/javascript/api/powerpoint/powerpoint.tablecellproperties#font-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TextRun.font](/javascript/api/powerpoint/powerpoint.textrun#font-member)
   \]
 
@@ -81,9 +80,8 @@ properties:
       Represents whether the font uses all caps, where lowercase letters are
       shown as capital letters.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +95,8 @@ properties:
     fullName: bold
     summary: Represents the bold status of font.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -115,9 +112,8 @@ properties:
       Represents the HTML color in the hexadecimal format (e.g., "\#FF0000"
       represents red) or as a named HTML color value (e.g., "red").
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -179,9 +175,8 @@ properties:
     fullName: doubleStrikethrough
     summary: Represents the double-strikethrough status of the font.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -243,9 +238,8 @@ properties:
     fullName: italic
     summary: Represents the italic status of font.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -262,9 +256,8 @@ properties:
       Script or East Asian language, this is the corresponding font name;
       otherwise it's the Latin font name.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -326,9 +319,8 @@ properties:
     fullName: size
     summary: Represents the font size in points (e.g., 11).
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -344,9 +336,8 @@ properties:
       Represents whether the text uses small caps, where lowercase letters are
       shown as small capital letters.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -360,9 +351,8 @@ properties:
     fullName: strikethrough
     summary: Represents the strikethrough status of the font.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -424,9 +414,8 @@ properties:
     fullName: subscript
     summary: Represents the subscript status of the font.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -488,9 +477,8 @@ properties:
     fullName: superscript
     summary: Represents the superscript status of the font.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -555,9 +543,8 @@ properties:
       [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

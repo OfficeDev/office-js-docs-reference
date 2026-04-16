@@ -5,15 +5,15 @@ package: word!
 fullName: Word.InlinePicture
 summary: Represents an inline picture.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.InlinePictureCollection.items](/javascript/api/word/word.inlinepicturecollection#items-member)
   \]
 
@@ -51,8 +51,8 @@ properties:
       Specifies a string that represents the alternative text associated with
       the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +66,8 @@ properties:
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -96,8 +96,8 @@ properties:
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -113,8 +113,8 @@ properties:
       Specifies a hyperlink on the image. Use a '\#' to separate the address
       part from the optional location part.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -130,8 +130,8 @@ properties:
       Specifies whether the inline image retains its original proportions when
       you resize it.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -145,8 +145,8 @@ properties:
     fullName: paragraph
     summary: Gets the parent paragraph that contains the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -162,8 +162,8 @@ properties:
       Gets the content control that contains the inline image. Throws an
       `ItemNotFound` error if there isn't a parent content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -177,8 +177,8 @@ properties:
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -193,8 +193,8 @@ methods:
     fullName: delete()
     summary: Deletes the inline picture from the document.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -209,8 +209,8 @@ methods:
     fullName: getBase64ImageSrc()
     summary: Gets the Base64-encoded string representation of the inline image.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -252,8 +252,8 @@ methods:
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -284,8 +284,8 @@ methods:
     fullName: insertContentControl()
     summary: Wraps the inline picture with a rich text content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -300,8 +300,8 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -334,8 +334,8 @@ methods:
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -361,8 +361,8 @@ methods:
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts an inline picture at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -394,8 +394,8 @@ methods:
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -421,8 +421,8 @@ methods:
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -449,8 +449,8 @@ methods:
     fullName: insertText(text, insertLocation)
     summary: Inserts text at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -554,8 +554,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the inline picture. This causes Word to scroll to the selection.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -576,8 +576,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the inline picture. This causes Word to scroll to the selection.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

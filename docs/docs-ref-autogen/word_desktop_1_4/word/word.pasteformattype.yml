@@ -5,8 +5,8 @@ package: word!
 fullName: Word.PasteFormatType
 summary: Specifies the type of formatting when paste to a document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       Pastes a chart as an editable chart.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Chart"'
   - name: chartLinked
     uid: word!Word.PasteFormatType.chartLinked:member
@@ -28,8 +28,8 @@ fields:
       Pastes a chart with a link to the source data.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ChartLinked"'
   - name: chartPicture
     uid: word!Word.PasteFormatType.chartPicture:member
@@ -38,8 +38,8 @@ fields:
       Pastes a chart as a picture.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ChartPicture"'
   - name: formatOriginalFormatting
     uid: word!Word.PasteFormatType.formatOriginalFormatting:member
@@ -48,8 +48,8 @@ fields:
       Applies the original formatting of the pasted content.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FormatOriginalFormatting"'
   - name: formatPlainText
     uid: word!Word.PasteFormatType.formatPlainText:member
@@ -58,8 +58,8 @@ fields:
       Pastes content as plain text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FormatPlainText"'
   - name: formatSurroundingFormattingWithEmphasis
     uid: word!Word.PasteFormatType.formatSurroundingFormattingWithEmphasis:member
@@ -68,8 +68,8 @@ fields:
       Applies surrounding formatting with emphasis.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FormatSurroundingFormattingWithEmphasis"'
   - name: listCombineWithExistingList
     uid: word!Word.PasteFormatType.listCombineWithExistingList:member
@@ -78,8 +78,8 @@ fields:
       Combines the pasted list with an existing list.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListCombineWithExistingList"'
   - name: listContinueNumbering
     uid: word!Word.PasteFormatType.listContinueNumbering:member
@@ -88,8 +88,8 @@ fields:
       Continues numbering from the previous list.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListContinueNumbering"'
   - name: listDontMerge
     uid: word!Word.PasteFormatType.listDontMerge:member
@@ -98,8 +98,8 @@ fields:
       Prevents merging the pasted list with an existing list.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListDontMerge"'
   - name: listRestartNumbering
     uid: word!Word.PasteFormatType.listRestartNumbering:member
@@ -108,8 +108,8 @@ fields:
       Restarts numbering for the new list.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListRestartNumbering"'
   - name: pasteDefault
     uid: word!Word.PasteFormatType.pasteDefault:member
@@ -118,8 +118,8 @@ fields:
       Uses the default paste behavior.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PasteDefault"'
   - name: singleCellTable
     uid: word!Word.PasteFormatType.singleCellTable:member
@@ -128,8 +128,8 @@ fields:
       Pastes a table into a single cell.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SingleCellTable"'
   - name: singleCellText
     uid: word!Word.PasteFormatType.singleCellText:member
@@ -138,8 +138,8 @@ fields:
       Pastes text into a single cell.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SingleCellText"'
   - name: tableAppendTable
     uid: word!Word.PasteFormatType.tableAppendTable:member
@@ -148,8 +148,8 @@ fields:
       Appends the pasted table to the existing table.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableAppendTable"'
   - name: tableInsertAsRows
     uid: word!Word.PasteFormatType.tableInsertAsRows:member
@@ -158,8 +158,8 @@ fields:
       Inserts the pasted table as new rows.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableInsertAsRows"'
   - name: tableOriginalFormatting
     uid: word!Word.PasteFormatType.tableOriginalFormatting:member
@@ -168,8 +168,8 @@ fields:
       Inserts the pasted table with its original formatting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableOriginalFormatting"'
   - name: tableOverwriteCells
     uid: word!Word.PasteFormatType.tableOverwriteCells:member
@@ -178,8 +178,8 @@ fields:
       Overwrites existing cells with the pasted table.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableOverwriteCells"'
   - name: useDestinationStylesRecovery
     uid: word!Word.PasteFormatType.useDestinationStylesRecovery:member
@@ -188,6 +188,6 @@ fields:
       Uses the destination styles for the pasted content.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UseDestinationStylesRecovery"'

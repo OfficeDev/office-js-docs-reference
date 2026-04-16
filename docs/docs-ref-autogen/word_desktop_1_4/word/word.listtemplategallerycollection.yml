@@ -11,14 +11,14 @@ summary: >-
   lists](https://support.microsoft.com/office/6c06ef65-27ad-4893-80c9-0b944cb81f5f)
   for how to access in the Word UI).
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Application.listTemplateGalleries](/javascript/api/word/word.application#listtemplategalleries-member)
   \]
 
@@ -61,8 +61,8 @@ methods:
     fullName: getByType(type)
     summary: Gets a `ListTemplateGallery` object by its type in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -81,8 +81,8 @@ methods:
     fullName: getByType(type)
     summary: Gets a `ListTemplateGallery` object by its type in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

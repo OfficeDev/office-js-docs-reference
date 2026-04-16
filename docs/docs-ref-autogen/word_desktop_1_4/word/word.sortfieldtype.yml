@@ -5,22 +5,22 @@ package: word!
 fullName: Word.SortFieldType
 summary: Specifies the type of field to sort by.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.TableSortOptions.sortFieldType](/javascript/api/word/word.tablesortoptions#sortfieldtype-member)
   \]
 
-  - \[
+  -
   [Word.TableSortOptions.sortFieldType2](/javascript/api/word/word.tablesortoptions#sortfieldtype2-member)
   \]
 
-  - \[
+  -
   [Word.TableSortOptions.sortFieldType3](/javascript/api/word/word.tablesortoptions#sortfieldtype3-member)
   \]
 
@@ -34,8 +34,8 @@ fields:
       Sorts content alphanumerically.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Alphanumeric"'
   - name: date
     uid: word!Word.SortFieldType.date:member
@@ -44,8 +44,8 @@ fields:
       Sorts content by date.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Date"'
   - name: japanJis
     uid: word!Word.SortFieldType.japanJis:member
@@ -54,8 +54,8 @@ fields:
       Sorts content using the Japanese JIS standard.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"JapanJis"'
   - name: koreaKs
     uid: word!Word.SortFieldType.koreaKs:member
@@ -64,8 +64,8 @@ fields:
       Sorts content using the Korean KS standard.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"KoreaKs"'
   - name: numeric
     uid: word!Word.SortFieldType.numeric:member
@@ -74,8 +74,8 @@ fields:
       Sorts content numerically.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Numeric"'
   - name: stroke
     uid: word!Word.SortFieldType.stroke:member
@@ -84,8 +84,8 @@ fields:
       Sorts content by stroke count.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Stroke"'
   - name: syllable
     uid: word!Word.SortFieldType.syllable:member
@@ -94,6 +94,6 @@ fields:
       Sorts content by syllables.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Syllable"'

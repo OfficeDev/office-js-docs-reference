@@ -7,23 +7,15 @@ summary: >-
   Represents an icon criterion which contains a type, value, an operator, and an
   optional custom icon, if not using an icon set.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.IconSetConditionalFormat.criteria](/javascript/api/excel/excel.iconsetconditionalformat#criteria-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.IconSetConditionalFormatData.criteria](/javascript/api/excel/excel.interfaces.iconsetconditionalformatdata#criteria-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria](/javascript/api/excel/excel.interfaces.iconsetconditionalformatupdatedata#criteria-member)
   \]
 
 isPreview: false
@@ -38,8 +30,8 @@ properties:
       The custom icon for the current criterion, if different from the default
       icon set, else `null` will be returned.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +45,8 @@ properties:
     fullName: formula
     summary: A number or a formula depending on the type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -121,8 +113,8 @@ properties:
       `greaterThan` or `greaterThanOrEqual` for each of the rule types for the
       icon conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -191,8 +183,8 @@ properties:
     fullName: type
     summary: What the icon conditional formula should be based on.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

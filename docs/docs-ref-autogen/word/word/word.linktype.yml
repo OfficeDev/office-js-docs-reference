@@ -5,19 +5,14 @@ package: word!
 fullName: Word.LinkType
 summary: Specifies the type of link.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.LinkFormatData.type](/javascript/api/word/word.interfaces.linkformatdata#type-member)
-  \]
-
-  - \[ [Word.LinkFormat.type](/javascript/api/word/word.linkformat#type-member)
-  \]
+  - [Word.LinkFormat.type](/javascript/api/word/word.linkformat#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -29,8 +24,8 @@ fields:
       Microsoft Excel chart.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Chart"'
   - name: dde
     uid: word!Word.LinkType.dde:member
@@ -39,8 +34,8 @@ fields:
       Dynamic Data Exchange.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Dde"'
   - name: ddeAuto
     uid: word!Word.LinkType.ddeAuto:member
@@ -49,8 +44,8 @@ fields:
       Automatic DDE.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DdeAuto"'
   - name: import
     uid: word!Word.LinkType.import:member
@@ -59,8 +54,8 @@ fields:
       Import file.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Import"'
   - name: include
     uid: word!Word.LinkType.include:member
@@ -69,8 +64,8 @@ fields:
       Include file.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Include"'
   - name: ole
     uid: word!Word.LinkType.ole:member
@@ -79,8 +74,8 @@ fields:
       OLE object.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ole"'
   - name: picture
     uid: word!Word.LinkType.picture:member
@@ -89,8 +84,8 @@ fields:
       Picture.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Picture"'
   - name: reference
     uid: word!Word.LinkType.reference:member
@@ -99,8 +94,8 @@ fields:
       Reference library.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Reference"'
   - name: text
     uid: word!Word.LinkType.text:member
@@ -109,6 +104,6 @@ fields:
       Text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Text"'

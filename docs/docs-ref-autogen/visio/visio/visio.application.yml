@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.Application
 summary: Represents the Application.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.Document.application](/javascript/api/visio/visio.document#application-member)
   \]
 
@@ -42,9 +41,8 @@ properties:
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -78,9 +76,8 @@ properties:
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -226,9 +223,8 @@ methods:
     fullName: showToolbar(id, show)
     summary: Sets the visibility of a specific toolbar in the application.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -250,9 +246,8 @@ methods:
     fullName: showToolbar(id, show)
     summary: Sets the visibility of a specific toolbar in the application.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.ChartTrendlineData
 summary: >-
   An interface describing the data returned by calling
   `chartTrendline.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineCollectionData.items](/javascript/api/excel/excel.interfaces.charttrendlinecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.charttrendlinecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -5,24 +5,16 @@ package: word!
 fullName: Word.RevisionType
 summary: Specifies the revision type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Conflict.type](/javascript/api/word/word.conflict#type-member) \]
+  - [Word.Conflict.type](/javascript/api/word/word.conflict#type-member) \]
 
-  - \[
-  [Word.Interfaces.ConflictData.type](/javascript/api/word/word.interfaces.conflictdata#type-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RevisionData.type](/javascript/api/word/word.interfaces.revisiondata#type-member)
-  \]
-
-  - \[ [Word.Revision.type](/javascript/api/word/word.revision#type-member) \]
+  - [Word.Revision.type](/javascript/api/word/word.revision#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +26,8 @@ fields:
       Cell deletion revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CellDeletion"'
   - name: cellInsertion
     uid: word!Word.RevisionType.cellInsertion:member
@@ -44,8 +36,8 @@ fields:
       Cell insertion revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CellInsertion"'
   - name: cellMerge
     uid: word!Word.RevisionType.cellMerge:member
@@ -54,8 +46,8 @@ fields:
       Cell merge revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CellMerge"'
   - name: cellSplit
     uid: word!Word.RevisionType.cellSplit:member
@@ -64,8 +56,8 @@ fields:
       Cell split revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CellSplit"'
   - name: conflict
     uid: word!Word.RevisionType.conflict:member
@@ -74,8 +66,8 @@ fields:
       Conflict revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Conflict"'
   - name: conflictDelete
     uid: word!Word.RevisionType.conflictDelete:member
@@ -84,8 +76,8 @@ fields:
       Conflict delete revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ConflictDelete"'
   - name: conflictInsert
     uid: word!Word.RevisionType.conflictInsert:member
@@ -94,8 +86,8 @@ fields:
       Conflict insert revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ConflictInsert"'
   - name: delete
     uid: word!Word.RevisionType.delete:member
@@ -104,8 +96,8 @@ fields:
       Delete revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Delete"'
   - name: displayField
     uid: word!Word.RevisionType.displayField:member
@@ -114,8 +106,8 @@ fields:
       Display field revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DisplayField"'
   - name: insert
     uid: word!Word.RevisionType.insert:member
@@ -124,8 +116,8 @@ fields:
       Insert revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Insert"'
   - name: movedFrom
     uid: word!Word.RevisionType.movedFrom:member
@@ -134,8 +126,8 @@ fields:
       Moved from revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MovedFrom"'
   - name: movedTo
     uid: word!Word.RevisionType.movedTo:member
@@ -144,8 +136,8 @@ fields:
       Moved to revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MovedTo"'
   - name: none
     uid: word!Word.RevisionType.none:member
@@ -154,8 +146,8 @@ fields:
       No revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: paragraphNumber
     uid: word!Word.RevisionType.paragraphNumber:member
@@ -164,8 +156,8 @@ fields:
       Paragraph number revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParagraphNumber"'
   - name: paragraphProperty
     uid: word!Word.RevisionType.paragraphProperty:member
@@ -174,8 +166,8 @@ fields:
       Paragraph property revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParagraphProperty"'
   - name: property
     uid: word!Word.RevisionType.property:member
@@ -184,8 +176,8 @@ fields:
       Property revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Property"'
   - name: reconcile
     uid: word!Word.RevisionType.reconcile:member
@@ -194,8 +186,8 @@ fields:
       Reconcile revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Reconcile"'
   - name: replace
     uid: word!Word.RevisionType.replace:member
@@ -204,8 +196,8 @@ fields:
       Replace revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Replace"'
   - name: sectionProperty
     uid: word!Word.RevisionType.sectionProperty:member
@@ -214,8 +206,8 @@ fields:
       Section property revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionProperty"'
   - name: style
     uid: word!Word.RevisionType.style:member
@@ -224,8 +216,8 @@ fields:
       Style revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Style"'
   - name: styleDefinition
     uid: word!Word.RevisionType.styleDefinition:member
@@ -234,8 +226,8 @@ fields:
       Style definition revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"StyleDefinition"'
   - name: tableProperty
     uid: word!Word.RevisionType.tableProperty:member
@@ -244,6 +236,6 @@ fields:
       Table property revision.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TableProperty"'

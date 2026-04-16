@@ -6,13 +6,7 @@ fullName: Visio.Interfaces.ShapeViewData
 summary: >-
   An interface describing the data returned by calling `shapeView.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.ShapeData.view](/javascript/api/visio/visio.interfaces.shapedata#view-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: highlight
     summary: Represents the highlight around the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

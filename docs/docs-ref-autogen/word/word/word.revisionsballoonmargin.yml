@@ -5,18 +5,14 @@ package: word!
 fullName: Word.RevisionsBalloonMargin
 summary: Specifies the margin for revision balloons in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.revisionsBalloonSide](/javascript/api/word/word.interfaces.viewdata#revisionsballoonside-member)
-  \]
-
-  - \[
+  -
   [Word.View.revisionsBalloonSide](/javascript/api/word/word.view#revisionsballoonside-member)
   \]
 
@@ -30,8 +26,8 @@ fields:
       Left margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Left"'
   - name: right
     uid: word!Word.RevisionsBalloonMargin.right:member
@@ -40,6 +36,6 @@ fields:
       Right margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Right"'

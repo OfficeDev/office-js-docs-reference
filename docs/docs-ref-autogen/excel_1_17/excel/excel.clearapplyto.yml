@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.ClearApplyTo
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples
@@ -54,8 +54,8 @@ fields:
       Clears everything in the range.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"All"'
   - name: contents
     uid: excel!Excel.ClearApplyTo.contents:member
@@ -64,8 +64,8 @@ fields:
       Clears the contents of the range, leaving formatting intact.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Contents"'
   - name: formats
     uid: excel!Excel.ClearApplyTo.formats:member
@@ -74,8 +74,8 @@ fields:
       Clears all formatting for the range, leaving values intact.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Formats"'
   - name: hyperlinks
     uid: excel!Excel.ClearApplyTo.hyperlinks:member
@@ -84,8 +84,8 @@ fields:
       Clears all hyperlinks, but leaves all content and formatting intact.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Hyperlinks"'
   - name: removeHyperlinks
     uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
@@ -95,6 +95,6 @@ fields:
       conditional formats, and data validation intact.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RemoveHyperlinks"'

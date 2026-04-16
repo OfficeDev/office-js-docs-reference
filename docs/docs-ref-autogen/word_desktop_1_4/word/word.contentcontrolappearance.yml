@@ -5,83 +5,35 @@ package: word!
 fullName: Word.ContentControlAppearance
 summary: Represents the content control appearance.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.BuildingBlockGalleryContentControl.appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#appearance-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.appearance](/javascript/api/word/word.contentcontrol#appearance-member)
   \]
 
-  - \[
+  -
   [Word.DatePickerContentControl.appearance](/javascript/api/word/word.datepickercontentcontrol#appearance-member)
   \]
 
-  - \[
+  -
   [Word.GroupContentControl.appearance](/javascript/api/word/word.groupcontentcontrol#appearance-member)
   \]
 
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlData.appearance](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolupdatedata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.appearance](/javascript/api/word/word.interfaces.contentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.contentcontrolupdatedata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlData.appearance](/javascript/api/word/word.interfaces.datepickercontentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlData.appearance](/javascript/api/word/word.interfaces.groupcontentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.groupcontentcontrolupdatedata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlData.appearance](/javascript/api/word/word.interfaces.picturecontentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.picturecontentcontrolupdatedata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionContentControlData.appearance](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#appearance-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionContentControlUpdateData.appearance](/javascript/api/word/word.interfaces.repeatingsectioncontentcontrolupdatedata#appearance-member)
-  \]
-
-  - \[
+  -
   [Word.PictureContentControl.appearance](/javascript/api/word/word.picturecontentcontrol#appearance-member)
   \]
 
-  - \[
+  -
   [Word.RepeatingSectionContentControl.appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#appearance-member)
   \]
 
@@ -142,8 +94,8 @@ fields:
       (with optional title).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
@@ -152,8 +104,8 @@ fields:
       Represents a content control that isn't shown.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
@@ -162,6 +114,6 @@ fields:
       Represents a content control shown as start and end markers.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tags"'

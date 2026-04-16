@@ -7,8 +7,8 @@ summary: >-
   Specifies which part of the shape retains its position when the shape is
   scaled.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -53,8 +53,8 @@ fields:
       Scale from the bottom right corner of the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaleFromBottomRight"'
   - name: scaleFromMiddle
     uid: word!Word.ShapeScaleFrom.scaleFromMiddle:member
@@ -63,8 +63,8 @@ fields:
       Scale from the center of the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaleFromMiddle"'
   - name: scaleFromTopLeft
     uid: word!Word.ShapeScaleFrom.scaleFromTopLeft:member
@@ -73,6 +73,6 @@ fields:
       Scale from the top left corner of the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaleFromTopLeft"'

@@ -5,24 +5,23 @@ package: powerpoint!
 fullName: PowerPoint.SlideBackgroundFill
 summary: Represents the fill formatting of a slide background object.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.SlideBackground.fill](/javascript/api/powerpoint/powerpoint.slidebackground#fill-member)
   \]
 
-  - \[
+  -
   [PowerPoint.SlideLayoutBackground.fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#fill-member)
   \]
 
-  - \[
+  -
   [PowerPoint.SlideMasterBackground.fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#fill-member)
   \]
 
@@ -77,9 +76,8 @@ properties:
       [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +102,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -164,9 +161,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -230,9 +226,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -296,9 +291,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -431,9 +425,8 @@ methods:
       Sets the fill formatting of the slide background to a gradient fill. This
       changes the fill type to `gradient`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -484,9 +477,8 @@ methods:
       Sets the fill formatting of the slide background to a pattern fill. This
       changes the fill type to `pattern`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -540,9 +532,8 @@ methods:
       Sets the fill formatting of the slide background to a picture or texture
       fill. This changes the fill type to `pictureOrTexture`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -596,9 +587,8 @@ methods:
       Sets the fill formatting of the slide background to a solid fill. This
       changes the fill type to `solid`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

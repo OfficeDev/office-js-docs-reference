@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.SortDataOption
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.SortField.dataOption](/javascript/api/excel/excel.sortfield#dataoption-member)
   \]
 
@@ -23,13 +23,13 @@ fields:
     uid: excel!Excel.SortDataOption.normal:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Normal"'
   - name: textAsNumber
     uid: excel!Excel.SortDataOption.textAsNumber:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"TextAsNumber"'

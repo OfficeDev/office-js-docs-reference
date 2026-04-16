@@ -7,18 +7,18 @@ summary: >-
   Provides information about the details of a `WorksheetChangedEvent` or
   `TableChangedEvent`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.TableChangedEventArgs.details](/javascript/api/excel/excel.tablechangedeventargs#details-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetChangedEventArgs.details](/javascript/api/excel/excel.worksheetchangedeventargs#details-member)
   \]
 
@@ -35,8 +35,8 @@ properties:
       string, number, or Boolean. Cells that contain an error will return the
       error string.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +53,8 @@ properties:
       string, number, or Boolean. Cells that contain an error will return the
       error string.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -68,8 +68,8 @@ properties:
     fullName: valueTypeAfter
     summary: Represents the type of value after the change.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +87,8 @@ properties:
     fullName: valueTypeBefore
     summary: Represents the type of value before the change.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

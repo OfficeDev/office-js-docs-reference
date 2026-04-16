@@ -5,63 +5,63 @@ package: word!
 fullName: Word.TableCell
 summary: Represents a table cell in a Word document.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ContentControl.parentTableCell](/javascript/api/word/word.contentcontrol#parenttablecell-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.parentTableCellOrNullObject](/javascript/api/word/word.contentcontrol#parenttablecellornullobject-member)
   \]
 
-  - \[
+  -
   [Word.Field.parentTableCell](/javascript/api/word/word.field#parenttablecell-member)
   \]
 
-  - \[
+  -
   [Word.Field.parentTableCellOrNullObject](/javascript/api/word/word.field#parenttablecellornullobject-member)
   \]
 
-  - \[
+  -
   [Word.InlinePicture.parentTableCell](/javascript/api/word/word.inlinepicture#parenttablecell-member)
   \]
 
-  - \[
+  -
   [Word.InlinePicture.parentTableCellOrNullObject](/javascript/api/word/word.inlinepicture#parenttablecellornullobject-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.parentTableCell](/javascript/api/word/word.paragraph#parenttablecell-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.parentTableCellOrNullObject](/javascript/api/word/word.paragraph#parenttablecellornullobject-member)
   \]
 
-  - \[
+  -
   [Word.Range.parentTableCell](/javascript/api/word/word.range#parenttablecell-member)
   \]
 
-  - \[
+  -
   [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#parenttablecellornullobject-member)
   \]
 
-  - \[
+  -
   [Word.Table.parentTableCell](/javascript/api/word/word.table#parenttablecell-member)
   \]
 
-  - \[
+  -
   [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#parenttablecellornullobject-member)
   \]
 
-  - \[
+  -
   [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#items-member)
   \]
 
@@ -103,8 +103,8 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -118,8 +118,8 @@ properties:
     fullName: cellIndex
     summary: Gets the index of the cell in its row.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -135,8 +135,8 @@ properties:
       Returns the `TableColumn` object that represents the table column that
       contains this cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -152,8 +152,8 @@ properties:
       Specifies the width of the cell's column in points. This is applicable to
       uniform tables.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -185,8 +185,8 @@ properties:
       `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -233,8 +233,8 @@ properties:
     fullName: parentRow
     summary: Gets the parent row of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -248,8 +248,8 @@ properties:
     fullName: parentTable
     summary: Gets the parent table of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -263,8 +263,8 @@ properties:
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -280,8 +280,8 @@ properties:
       Returns the `ShadingUniversal` object that represents the shading of the
       table cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -297,8 +297,8 @@ properties:
       Specifies the shading color of the cell. Color is specified in "\#RRGGBB"
       format or by using the color name.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -312,8 +312,8 @@ properties:
     fullName: value
     summary: Specifies the text of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -329,8 +329,8 @@ properties:
       Specifies the vertical alignment of the cell. The value can be `top`<!--
       -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -377,8 +377,8 @@ properties:
     fullName: width
     summary: Gets the width of the cell in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -397,8 +397,8 @@ methods:
       that calculates and displays the sum of the values in table cells above or
       to the left of the cell specified in the expression.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -415,8 +415,8 @@ methods:
       Deletes the table cell and optionally controls how the remaining cells are
       shifted.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -439,8 +439,8 @@ methods:
       Deletes the column containing this cell. This is applicable to uniform
       tables.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -455,8 +455,8 @@ methods:
     fullName: deleteRow()
     summary: Deletes the row containing this cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -474,8 +474,8 @@ methods:
       field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
       that contains the specified formula into a table cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -494,8 +494,8 @@ methods:
     fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -514,8 +514,8 @@ methods:
     fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -569,8 +569,8 @@ methods:
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -593,8 +593,8 @@ methods:
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -646,8 +646,8 @@ methods:
       Gets the next cell. Throws an `ItemNotFound` error if this cell is the
       last one.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -667,8 +667,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -686,8 +686,8 @@ methods:
       a template. This is applicable to uniform tables. The string values, if
       specified, are set in the newly inserted rows.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -721,8 +721,8 @@ methods:
       Inserts rows above or below the cell, using the cell's row as a template.
       The string values, if specified, are set in the newly inserted rows.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -828,8 +828,8 @@ methods:
     fullName: merge(mergeTo)
     summary: Merges this table cell with the specified table cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -848,8 +848,8 @@ methods:
     fullName: select()
     summary: Selects the table cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -915,8 +915,8 @@ methods:
     fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -942,8 +942,8 @@ methods:
     fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -969,8 +969,8 @@ methods:
     fullName: split(rowCount, columnCount)
     summary: Splits the cell into the specified number of rows and columns.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

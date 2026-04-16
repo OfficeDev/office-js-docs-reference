@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ConditionalDataBarAxisFormat
 summary: Represents the format options for a data bar axis.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataBarConditionalFormat.axisFormat](/javascript/api/excel/excel.databarconditionalformat#axisformat-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataBarConditionalFormatData.axisFormat](/javascript/api/excel/excel.interfaces.databarconditionalformatdata#axisformat-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat](/javascript/api/excel/excel.interfaces.databarconditionalformatupdatedata#axisformat-member)
   \]
 
 isPreview: false
@@ -31,20 +23,20 @@ fields:
     uid: excel!Excel.ConditionalDataBarAxisFormat.automatic:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: cellMidPoint
     uid: excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CellMidPoint"'
   - name: none
     uid: excel!Excel.ConditionalDataBarAxisFormat.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'

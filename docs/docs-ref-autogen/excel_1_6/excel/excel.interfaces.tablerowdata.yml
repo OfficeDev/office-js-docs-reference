@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.TableRowData
 summary: >-
   An interface describing the data returned by calling `tableRow.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableData.rows](/javascript/api/excel/excel.interfaces.tabledata#rows-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableRowCollectionData.items](/javascript/api/excel/excel.interfaces.tablerowcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableRowCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablerowcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +39,8 @@ properties:
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -7,28 +7,8 @@ summary: >-
   Represents an Image. An Image can be a direct child of a PageContent object or
   a Paragraph object.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.PageContentCollectionLoadOptions.image](/javascript/api/onenote/onenote.interfaces.pagecontentcollectionloadoptions#image-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageContentLoadOptions.image](/javascript/api/onenote/onenote.interfaces.pagecontentloadoptions#image-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.ParagraphCollectionLoadOptions.image](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#image-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.ParagraphLoadOptions.image](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#image-member)
-  \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -56,9 +36,8 @@ properties:
     fullName: description
     summary: Gets or sets the description of the Image.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +51,8 @@ properties:
     fullName: height
     summary: Gets or sets the height of the Image layout.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +66,8 @@ properties:
     fullName: hyperlink
     summary: Gets or sets the hyperlink of the Image.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +81,8 @@ properties:
     fullName: id
     summary: Gets the ID of the Image object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -122,9 +98,8 @@ properties:
       Gets the data obtained by OCR (Optical Character Recognition) of this
       Image, such as OCR text and language.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +116,8 @@ properties:
       isn't a direct child of a PageContent. This object defines the position of
       the Image on the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -161,9 +135,8 @@ properties:
       Gets the Paragraph object that contains the Image. Throws if the Image
       isn't a direct child of a Paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -179,9 +152,8 @@ properties:
     fullName: width
     summary: Gets or sets the width of the Image layout.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

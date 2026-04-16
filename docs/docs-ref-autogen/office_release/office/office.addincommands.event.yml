@@ -18,8 +18,8 @@ remarks: >-
   The following outlines support information for Outlook.
 
 
-  \[ [API set: Mailbox
-  1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  [API set: Mailbox
+  1.3](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
   See [Add-in commands requirement
@@ -49,8 +49,8 @@ properties:
       The following outlines support information for Outlook.
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox
+      1.3](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       **[Minimum permission
@@ -324,8 +324,8 @@ methods:
       The following outlines support information for Outlook.
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox
+      1.3](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       **[Minimum permission

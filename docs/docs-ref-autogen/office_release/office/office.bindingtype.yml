@@ -8,18 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - \[ [Office.Binding.type](/javascript/api/office/office.binding#type-member)
-  \]
+  - [Office.Binding.type](/javascript/api/office/office.binding#type-member) \]
 
-  - \[
+  -
   [Office.Bindings.addFromNamedItemAsync](/javascript/api/office/office.bindings#addfromnameditemasync-member)
   \]
 
-  - \[
+  -
   [Office.Bindings.addFromPromptAsync](/javascript/api/office/office.bindings#addfrompromptasync-member)
   \]
 
-  - \[
+  -
   [Office.Bindings.addFromSelectionAsync](/javascript/api/office/office.bindings#addfromselectionasync-member)
   \]
 

@@ -5,20 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
 summary: Represents an object containing values and types of a named item.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.NamedItemCollectionLoadOptions.arrayValues](/javascript/api/excel/excel.interfaces.nameditemcollectionloadoptions#arrayvalues-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NamedItemLoadOptions.arrayValues](/javascript/api/excel/excel.interfaces.nameditemloadoptions#arrayvalues-member)
-  \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,8 +34,8 @@ properties:
     fullName: types
     summary: Represents the types for each item in the named item array
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +49,8 @@ properties:
     fullName: values
     summary: Represents the values of each item in the named item array.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

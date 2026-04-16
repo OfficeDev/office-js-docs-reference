@@ -5,28 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.DataBarConditionalFormatLoadOptions
 summary: Represents an Excel conditional data bar type.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBar](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#databar-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.dataBarOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#databarornullobject-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatLoadOptions.dataBar](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#databar-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatLoadOptions.dataBarOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#databarornullobject-member)
-  \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -58,8 +38,8 @@ properties:
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
       is "" (an empty string) if no axis is present or set.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +54,8 @@ properties:
     fullName: axisFormat
     summary: Representation of how the axis is determined for an Excel data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -90,8 +70,8 @@ properties:
     fullName: barDirection
     summary: Specifies the direction that the data bar graphic should be based on.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -110,8 +90,8 @@ properties:
       set as a JSON object (use `x.lowerBoundRule = {...}` instead of
       `x.lowerBoundRule.formula = ...`<!-- -->).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -126,8 +106,8 @@ properties:
     fullName: negativeFormat
     summary: Representation of all values to the left of the axis in an Excel data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -149,8 +129,8 @@ properties:
       Representation of all values to the right of the axis in an Excel data
       bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -172,8 +152,8 @@ properties:
       If `true`<!-- -->, hides the values from the cells where the data bar is
       applied.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -192,8 +172,8 @@ properties:
       set as a JSON object (use `x.upperBoundRule = {...}` instead of
       `x.upperBoundRule.formula = ...`<!-- -->).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

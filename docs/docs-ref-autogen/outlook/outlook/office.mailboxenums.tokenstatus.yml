@@ -7,9 +7,8 @@ summary: >-
   Specifies the status of Exchange Web Services (EWS) callback tokens or REST
   API tokens in an organization.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Applicable Outlook
@@ -31,7 +30,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Ews.getTokenStatusAsync](/javascript/api/outlook/office.ews#gettokenstatusasync-member)
   \]
 

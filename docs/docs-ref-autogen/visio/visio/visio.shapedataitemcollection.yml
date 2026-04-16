@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.ShapeDataItemCollection
 summary: Represents the ShapeDataItemCollection for a given Shape.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.Shape.shapeDataItems](/javascript/api/visio/visio.shape#shapedataitems-member)
   \]
 
@@ -56,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of Shape Data Items.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +71,8 @@ methods:
     fullName: getItem(key)
     summary: Gets the ShapeDataItem using its name.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

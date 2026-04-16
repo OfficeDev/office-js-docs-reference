@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ConditionalPresetCriteriaRule
 summary: Represents the preset criteria conditional format rule.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PresetCriteriaConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatdata#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatupdatedata#rule-member)
-  \]
-
-  - \[
+  -
   [Excel.PresetCriteriaConditionalFormat.rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#rule-member)
   \]
 
@@ -34,8 +26,8 @@ properties:
     fullName: criterion
     summary: The criterion of the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

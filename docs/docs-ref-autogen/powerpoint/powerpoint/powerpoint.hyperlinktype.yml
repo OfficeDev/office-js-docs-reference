@@ -5,20 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.HyperlinkType
 summary: Specifies the type of object that a hyperlink is applied to.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Hyperlink.type](/javascript/api/powerpoint/powerpoint.hyperlink#type-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.HyperlinkData.type](/javascript/api/powerpoint/powerpoint.interfaces.hyperlinkdata#type-member)
   \]
 
 isPreview: false
@@ -31,9 +26,8 @@ fields:
       Specifies that the hyperlink is applied to a Shape.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Shape"'
   - name: textRange
     uid: powerpoint!PowerPoint.HyperlinkType.textRange:member
@@ -42,7 +36,6 @@ fields:
       Specifies that the hyperlink is applied to a TextRange.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextRange"'

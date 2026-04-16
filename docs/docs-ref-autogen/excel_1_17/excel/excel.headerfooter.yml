@@ -5,26 +5,26 @@ package: excel!
 fullName: Excel.HeaderFooter
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.HeaderFooterGroup.defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#defaultforallpages-member)
   \]
 
-  - \[
+  -
   [Excel.HeaderFooterGroup.evenPages](/javascript/api/excel/excel.headerfootergroup#evenpages-member)
   \]
 
-  - \[
+  -
   [Excel.HeaderFooterGroup.firstPage](/javascript/api/excel/excel.headerfootergroup#firstpage-member)
   \]
 
-  - \[
+  -
   [Excel.HeaderFooterGroup.oddPages](/javascript/api/excel/excel.headerfootergroup#oddpages-member)
   \]
 
@@ -41,8 +41,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +59,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -92,8 +92,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -110,8 +110,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -128,8 +128,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -146,8 +146,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

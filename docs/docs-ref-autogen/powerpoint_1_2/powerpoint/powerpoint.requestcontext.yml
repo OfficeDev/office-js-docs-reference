@@ -15,19 +15,19 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#context-member)
   \]
 
-  - \[
+  -
   [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#context-member)
   \]
 
-  - \[
+  -
   [PowerPoint.Slide.context](/javascript/api/powerpoint/powerpoint.slide#context-member)
   \]
 
-  - \[
+  -
   [PowerPoint.SlideCollection.context](/javascript/api/powerpoint/powerpoint.slidecollection#context-member)
   \]
 

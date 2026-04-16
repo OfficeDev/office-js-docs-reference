@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.NumberFormatInfoData
 summary: >-
   An interface describing the data returned by calling
   `numberFormatInfo.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CultureInfoData.numberFormat](/javascript/api/excel/excel.interfaces.cultureinfodata#numberformat-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,9 +20,8 @@ properties:
       Gets the currency symbol for currency values. This is based on current
       system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -44,9 +37,8 @@ properties:
       Gets the string used as the decimal separator for numeric values. This is
       based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +54,8 @@ properties:
       Gets the string used to separate groups of digits to the left of the
       decimal for numeric values. This is based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

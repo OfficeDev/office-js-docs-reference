@@ -5,8 +5,8 @@ package: word!
 fullName: Word.RemoveDocInfoType
 summary: Specifies the type of document information to remove.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       All document information types.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"All"'
   - name: atMentions
     uid: word!Word.RemoveDocInfoType.atMentions:member
@@ -28,8 +28,8 @@ fields:
       At mentions in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AtMentions"'
   - name: commentReactions
     uid: word!Word.RemoveDocInfoType.commentReactions:member
@@ -38,8 +38,8 @@ fields:
       Comment reactions in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CommentReactions"'
   - name: comments
     uid: word!Word.RemoveDocInfoType.comments:member
@@ -48,8 +48,8 @@ fields:
       Comments in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Comments"'
   - name: contentType
     uid: word!Word.RemoveDocInfoType.contentType:member
@@ -58,8 +58,8 @@ fields:
       Content type information.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentType"'
   - name: documentIntelligence
     uid: word!Word.RemoveDocInfoType.documentIntelligence:member
@@ -68,8 +68,8 @@ fields:
       Document intelligence information.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentIntelligence"'
   - name: documentManagementPolicy
     uid: word!Word.RemoveDocInfoType.documentManagementPolicy:member
@@ -78,8 +78,8 @@ fields:
       Document management policy.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentManagementPolicy"'
   - name: documentProperties
     uid: word!Word.RemoveDocInfoType.documentProperties:member
@@ -88,8 +88,8 @@ fields:
       Document properties.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentProperties"'
   - name: documentServerProperties
     uid: word!Word.RemoveDocInfoType.documentServerProperties:member
@@ -98,8 +98,8 @@ fields:
       Document server properties.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentServerProperties"'
   - name: documentTasks
     uid: word!Word.RemoveDocInfoType.documentTasks:member
@@ -108,8 +108,8 @@ fields:
       Document tasks.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentTasks"'
   - name: documentWorkspace
     uid: word!Word.RemoveDocInfoType.documentWorkspace:member
@@ -118,8 +118,8 @@ fields:
       Document workspace properties.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentWorkspace"'
   - name: emailHeader
     uid: word!Word.RemoveDocInfoType.emailHeader:member
@@ -128,8 +128,8 @@ fields:
       Email header in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EmailHeader"'
   - name: inkAnnotations
     uid: word!Word.RemoveDocInfoType.inkAnnotations:member
@@ -138,8 +138,8 @@ fields:
       Ink annotations in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"InkAnnotations"'
   - name: removePersonalInformation
     uid: word!Word.RemoveDocInfoType.removePersonalInformation:member
@@ -148,8 +148,8 @@ fields:
       Personal information in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RemovePersonalInformation"'
   - name: revisions
     uid: word!Word.RemoveDocInfoType.revisions:member
@@ -158,8 +158,8 @@ fields:
       Revisions in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Revisions"'
   - name: routingSlip
     uid: word!Word.RemoveDocInfoType.routingSlip:member
@@ -168,8 +168,8 @@ fields:
       Routing slip in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RoutingSlip"'
   - name: sendForReview
     uid: word!Word.RemoveDocInfoType.sendForReview:member
@@ -178,8 +178,8 @@ fields:
       Send for review information in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SendForReview"'
   - name: taskpaneWebExtensions
     uid: word!Word.RemoveDocInfoType.taskpaneWebExtensions:member
@@ -188,8 +188,8 @@ fields:
       Taskpane web extensions.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TaskpaneWebExtensions"'
   - name: template
     uid: word!Word.RemoveDocInfoType.template:member
@@ -198,8 +198,8 @@ fields:
       Template information.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Template"'
   - name: versions
     uid: word!Word.RemoveDocInfoType.versions:member
@@ -208,6 +208,6 @@ fields:
       Versions in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Versions"'

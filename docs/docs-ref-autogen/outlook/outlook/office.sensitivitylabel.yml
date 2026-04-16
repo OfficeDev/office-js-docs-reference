@@ -10,9 +10,8 @@ summary: >-
   labels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -38,15 +37,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#sensitivitylabel-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageCompose.sensitivityLabel](/javascript/api/outlook/office.loadedmessagecompose#sensitivitylabel-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.sensitivityLabel](/javascript/api/outlook/office.messagecompose#sensitivitylabel-member)
   \]
 
@@ -62,9 +61,8 @@ methods:
       Gets the unique identifier (GUID) of the sensitivity label applied to a
       message or appointment being composed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -119,9 +117,8 @@ methods:
       Gets the unique identifier (GUID) of the sensitivity label applied to a
       message or appointment being composed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -199,9 +196,8 @@ methods:
       Applies the specified sensitivity label to the message or appointment
       being composed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -280,9 +276,8 @@ methods:
       Applies the specified sensitivity label to the message or appointment
       being composed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.NameErrorCellValueSubType
 summary: Represents types of \#NAME? errors.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.NameErrorCellValue.errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#errorsubtype-member)
   \]
 
@@ -26,9 +26,8 @@ fields:
       An unknown type of error. Displays as error type \#NAME? in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'
   - name: unsupportedFunction
     uid: excel!Excel.NameErrorCellValueSubType.unsupportedFunction:member
@@ -38,7 +37,6 @@ fields:
       as error type \#NAME? in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"UnsupportedFunction"'

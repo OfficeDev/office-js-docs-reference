@@ -9,23 +9,15 @@ summary: >-
   options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!--
   -->.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ShapeTextWrapData.type](/javascript/api/word/word.interfaces.shapetextwrapdata#type-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeTextWrapUpdateData.type](/javascript/api/word/word.interfaces.shapetextwrapupdatedata#type-member)
-  \]
-
-  - \[
+  -
   [Word.ShapeTextWrap.type](/javascript/api/word/word.shapetextwrap#type-member)
   \]
 
@@ -70,8 +62,8 @@ fields:
       Places shape behind text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Behind"'
   - name: front
     uid: word!Word.ShapeTextWrapType.front:member
@@ -80,8 +72,8 @@ fields:
       Places shape in front of text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Front"'
   - name: inline
     uid: word!Word.ShapeTextWrapType.inline:member
@@ -90,8 +82,8 @@ fields:
       Places the shape in line with text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Inline"'
   - name: square
     uid: word!Word.ShapeTextWrapType.square:member
@@ -100,8 +92,8 @@ fields:
       Wraps text squarely around the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Square"'
   - name: through
     uid: word!Word.ShapeTextWrapType.through:member
@@ -110,8 +102,8 @@ fields:
       Wraps text around and through the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Through"'
   - name: tight
     uid: word!Word.ShapeTextWrapType.tight:member
@@ -120,8 +112,8 @@ fields:
       Wraps text close to the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tight"'
   - name: topBottom
     uid: word!Word.ShapeTextWrapType.topBottom:member
@@ -130,6 +122,6 @@ fields:
       Places text above and below the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TopBottom"'

@@ -5,9 +5,8 @@ package: outlook!
 fullName: Office.DecryptedMessageAttachment
 summary: Represents an attachment in a decrypted message.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -30,7 +29,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.MessageDecryptEventCompletedOptions.attachments](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#attachments-member)
   \]
 
@@ -110,9 +109,8 @@ properties:
     fullName: attachmentType
     summary: Specifies the type of attachment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -140,9 +138,8 @@ properties:
     fullName: content
     summary: Specifies the Base64-encoded content of the attachment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -175,9 +172,8 @@ properties:
       The `contentId` property must be specified if `isInline` is set to
       `true`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -218,9 +214,8 @@ properties:
       the body of the message instead of in the attachment list. If the
       `isInline` property isn't specified, its value is set to false.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -244,9 +239,8 @@ properties:
     fullName: name
     summary: Specifies the name of the attachment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -274,9 +268,8 @@ properties:
       specified for attachments of type `MailboxEnums.AttachmentType.Cloud`<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

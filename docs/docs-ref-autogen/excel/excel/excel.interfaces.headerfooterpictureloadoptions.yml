@@ -5,36 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.HeaderFooterPictureLoadOptions
 summary: Represents a picture in the header or footer of a worksheet.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.HeaderFooterLoadOptions.centerFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#centerfooterpicture-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterLoadOptions.centerHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#centerheaderpicture-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterLoadOptions.leftFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#leftfooterpicture-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterLoadOptions.leftHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#leftheaderpicture-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterLoadOptions.rightFooterPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#rightfooterpicture-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterLoadOptions.rightHeaderPicture](/javascript/api/excel/excel.interfaces.headerfooterloadoptions#rightheaderpicture-member)
-  \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -64,8 +36,8 @@ properties:
       Specifies the brightness of the picture. The value for this property must
       be a number from 0.0 (dimmest) to 1.0 (brightest).
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +51,8 @@ properties:
     fullName: colorType
     summary: Specifies the type of color transformation of the picture.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -96,8 +68,8 @@ properties:
       Specifies the contrast of the picture. The value for this property must be
       a number from 0.0 (least contrast) to 1.0 (most contrast).
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -113,8 +85,8 @@ properties:
       Specifies the number of points that are cropped off the bottom of the
       picture.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -130,8 +102,8 @@ properties:
       Specifies the number of points that are cropped off the left side of the
       picture.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -147,8 +119,8 @@ properties:
       Specifies the number of points that are cropped off the right side of the
       picture.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -164,8 +136,8 @@ properties:
       Specifies the number of points that are cropped off the top of the
       picture.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -181,8 +153,8 @@ properties:
       Specifies the URL (on the intranet or the web) or path (local or network)
       to the location where the source object is saved.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -196,8 +168,8 @@ properties:
     fullName: height
     summary: Specifies the height of the picture in points.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -215,8 +187,8 @@ properties:
       proportions when resized. `true` if it retains its proportions; otherwise,
       `false`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -230,8 +202,8 @@ properties:
     fullName: width
     summary: Specifies the width of the picture in points.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

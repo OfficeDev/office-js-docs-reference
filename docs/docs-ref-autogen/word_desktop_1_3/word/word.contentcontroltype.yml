@@ -5,32 +5,24 @@ package: word!
 fullName: Word.ContentControlType
 summary: Specifies supported content control types and subtypes.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ContentControl.subtype](/javascript/api/word/word.contentcontrol#subtype-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.type](/javascript/api/word/word.contentcontrol#type-member)
   \]
 
-  - \[
+  -
   [Word.ContentControlOptions.types](/javascript/api/word/word.contentcontroloptions#types-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.subtype](/javascript/api/word/word.interfaces.contentcontroldata#subtype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.type](/javascript/api/word/word.interfaces.contentcontroldata#type-member)
   \]
 
   #### Examples
@@ -73,8 +65,8 @@ fields:
       Building block gallery content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BuildingBlockGallery"'
   - name: checkBox
     uid: word!Word.ContentControlType.checkBox:member
@@ -83,8 +75,8 @@ fields:
       Check box content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CheckBox"'
   - name: comboBox
     uid: word!Word.ContentControlType.comboBox:member
@@ -93,8 +85,8 @@ fields:
       Combo box content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ComboBox"'
   - name: datePicker
     uid: word!Word.ContentControlType.datePicker:member
@@ -103,8 +95,8 @@ fields:
       Date picker content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DatePicker"'
   - name: dropDownList
     uid: word!Word.ContentControlType.dropDownList:member
@@ -113,8 +105,8 @@ fields:
       Dropdown list content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DropDownList"'
   - name: group
     uid: word!Word.ContentControlType.group:member
@@ -123,8 +115,8 @@ fields:
       Group content control type.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Group"'
   - name: picture
     uid: word!Word.ContentControlType.picture:member
@@ -133,8 +125,8 @@ fields:
       Picture content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Picture"'
   - name: plainText
     uid: word!Word.ContentControlType.plainText:member
@@ -143,8 +135,8 @@ fields:
       Plain text content control type.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainText"'
   - name: plainTextInline
     uid: word!Word.ContentControlType.plainTextInline:member
@@ -153,8 +145,8 @@ fields:
       Plain text content control subtype containing inline elements.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTextInline"'
   - name: plainTextParagraph
     uid: word!Word.ContentControlType.plainTextParagraph:member
@@ -163,8 +155,8 @@ fields:
       Plain text content control subtype containing paragraphs.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PlainTextParagraph"'
   - name: repeatingSection
     uid: word!Word.ContentControlType.repeatingSection:member
@@ -173,8 +165,8 @@ fields:
       Repeating section content control (type and subtype).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RepeatingSection"'
   - name: richText
     uid: word!Word.ContentControlType.richText:member
@@ -183,8 +175,8 @@ fields:
       Rich text content control type.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RichText"'
   - name: richTextInline
     uid: word!Word.ContentControlType.richTextInline:member
@@ -193,8 +185,8 @@ fields:
       Rich text content control subtype containing inline elements.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RichTextInline"'
   - name: richTextParagraphs
     uid: word!Word.ContentControlType.richTextParagraphs:member
@@ -203,8 +195,8 @@ fields:
       Rich text content control subtype containing paragraphs.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RichTextParagraphs"'
   - name: richTextTable
     uid: word!Word.ContentControlType.richTextTable:member
@@ -213,8 +205,8 @@ fields:
       Rich text content control subtype containing a whole table.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RichTextTable"'
   - name: richTextTableCell
     uid: word!Word.ContentControlType.richTextTableCell:member
@@ -223,8 +215,8 @@ fields:
       Rich text content control subtype containing a whole cell.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RichTextTableCell"'
   - name: richTextTableRow
     uid: word!Word.ContentControlType.richTextTableRow:member
@@ -233,8 +225,8 @@ fields:
       Rich text content control subtype containing a whole row.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RichTextTableRow"'
   - name: unknown
     uid: word!Word.ContentControlType.unknown:member
@@ -243,6 +235,6 @@ fields:
       Unknown content control type.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Unknown"'

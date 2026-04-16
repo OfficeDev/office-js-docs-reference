@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.AppointmentForm
 summary: Represents the details of the form for creating a new appointment.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -23,7 +23,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Mailbox.displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#displaynewappointmentform-member)
   \]
 
@@ -75,9 +75,8 @@ properties:
     fullName: body
     summary: Sets the body of the appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -101,9 +100,8 @@ properties:
     fullName: end
     summary: Sets the date and time that the appointment is to end.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -127,9 +125,8 @@ properties:
     fullName: location
     summary: Sets the location of the appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -153,9 +150,8 @@ properties:
     fullName: optionalAttendees
     summary: Sets the optional attendees of the appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -181,9 +177,8 @@ properties:
     fullName: requiredAttendees
     summary: Sets the required attendees of the appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -209,9 +204,8 @@ properties:
     fullName: resources
     summary: Sets the resources of the appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -235,9 +229,8 @@ properties:
     fullName: start
     summary: Sets the date and time that the appointment is to begin.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -261,9 +254,8 @@ properties:
     fullName: subject
     summary: Sets the description that appears in the Title field of the appointment.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

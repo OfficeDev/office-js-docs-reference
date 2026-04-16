@@ -7,15 +7,15 @@ summary: >-
   Provides information about the content control that raised the
   `contentControlSelectionChanged` event.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ContentControl.onSelectionChanged](/javascript/api/word/word.contentcontrol#onselectionchanged-member)
   \]
 
@@ -70,8 +70,8 @@ properties:
     fullName: eventType
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -101,8 +101,8 @@ properties:
     fullName: ids
     summary: Gets the content control IDs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -118,8 +118,8 @@ properties:
       Specifies the source of the event. It can be local or remote (through
       coauthoring).
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,23 +5,14 @@ package: word!
 fullName: Word.SpecialPane
 summary: Specifies the special pane options in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.splitSpecial](/javascript/api/word/word.interfaces.viewdata#splitspecial-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.splitSpecial](/javascript/api/word/word.interfaces.viewupdatedata#splitspecial-member)
-  \]
-
-  - \[
-  [Word.View.splitSpecial](/javascript/api/word/word.view#splitspecial-member)
+  - [Word.View.splitSpecial](/javascript/api/word/word.view#splitspecial-member)
   \]
 
 isPreview: false
@@ -34,8 +25,8 @@ fields:
       Comments.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Comments"'
   - name: currentPageFooter
     uid: word!Word.SpecialPane.currentPageFooter:member
@@ -44,8 +35,8 @@ fields:
       Current page footer.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CurrentPageFooter"'
   - name: currentPageHeader
     uid: word!Word.SpecialPane.currentPageHeader:member
@@ -54,8 +45,8 @@ fields:
       Current page header.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CurrentPageHeader"'
   - name: endnoteContinuationNotice
     uid: word!Word.SpecialPane.endnoteContinuationNotice:member
@@ -64,8 +55,8 @@ fields:
       Endnote continuation notice.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteContinuationNotice"'
   - name: endnoteContinuationSeparator
     uid: word!Word.SpecialPane.endnoteContinuationSeparator:member
@@ -74,8 +65,8 @@ fields:
       Endnote continuation separator.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteContinuationSeparator"'
   - name: endnotes
     uid: word!Word.SpecialPane.endnotes:member
@@ -84,8 +75,8 @@ fields:
       Endnotes.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Endnotes"'
   - name: endnoteSeparator
     uid: word!Word.SpecialPane.endnoteSeparator:member
@@ -94,8 +85,8 @@ fields:
       Endnote separator.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EndnoteSeparator"'
   - name: evenPagesFooter
     uid: word!Word.SpecialPane.evenPagesFooter:member
@@ -104,8 +95,8 @@ fields:
       Even pages footer.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EvenPagesFooter"'
   - name: evenPagesHeader
     uid: word!Word.SpecialPane.evenPagesHeader:member
@@ -114,8 +105,8 @@ fields:
       Even pages header.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EvenPagesHeader"'
   - name: firstPageFooter
     uid: word!Word.SpecialPane.firstPageFooter:member
@@ -124,8 +115,8 @@ fields:
       First page footer.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FirstPageFooter"'
   - name: firstPageHeader
     uid: word!Word.SpecialPane.firstPageHeader:member
@@ -134,8 +125,8 @@ fields:
       First page header.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FirstPageHeader"'
   - name: footnoteContinuationNotice
     uid: word!Word.SpecialPane.footnoteContinuationNotice:member
@@ -144,8 +135,8 @@ fields:
       Footnote continuation notice.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteContinuationNotice"'
   - name: footnoteContinuationSeparator
     uid: word!Word.SpecialPane.footnoteContinuationSeparator:member
@@ -154,8 +145,8 @@ fields:
       Footnote continuation separator.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteContinuationSeparator"'
   - name: footnotes
     uid: word!Word.SpecialPane.footnotes:member
@@ -164,8 +155,8 @@ fields:
       Footnotes.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Footnotes"'
   - name: footnoteSeparator
     uid: word!Word.SpecialPane.footnoteSeparator:member
@@ -174,8 +165,8 @@ fields:
       Footnote separator.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FootnoteSeparator"'
   - name: none
     uid: word!Word.SpecialPane.none:member
@@ -184,8 +175,8 @@ fields:
       None.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: primaryFooter
     uid: word!Word.SpecialPane.primaryFooter:member
@@ -194,8 +185,8 @@ fields:
       Primary footer.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PrimaryFooter"'
   - name: primaryHeader
     uid: word!Word.SpecialPane.primaryHeader:member
@@ -204,8 +195,8 @@ fields:
       Primary header.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PrimaryHeader"'
   - name: revisions
     uid: word!Word.SpecialPane.revisions:member
@@ -214,8 +205,8 @@ fields:
       Revisions.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Revisions"'
   - name: revisionsHoriz
     uid: word!Word.SpecialPane.revisionsHoriz:member
@@ -224,8 +215,8 @@ fields:
       Revisions horizontal.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RevisionsHoriz"'
   - name: revisionsVert
     uid: word!Word.SpecialPane.revisionsVert:member
@@ -234,6 +225,6 @@ fields:
       Revisions vertical.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RevisionsVert"'

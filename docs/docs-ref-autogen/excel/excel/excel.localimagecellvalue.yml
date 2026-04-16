@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.LocalImageCellValue
 summary: Represents the value of a cell containing a locally stored or generated image.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: true
 isDeprecated: false
@@ -20,9 +20,8 @@ properties:
       Represents the alternate text used in accessibility scenarios to describe
       what the image represents.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -38,9 +37,8 @@ properties:
       Represents attribution information to describe the source and license
       requirements for this image.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -56,9 +54,8 @@ properties:
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -77,9 +74,8 @@ properties:
       `valuesAsJsonLocal` property, this string value aligns with the user's
       display locale.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -93,9 +89,8 @@ properties:
     fullName: image
     summary: Represents the image itself, either cached or encoded.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -114,9 +109,8 @@ properties:
       provided the image. This information is used for branding purposes in
       image cards.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -130,9 +124,8 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

@@ -5,16 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions
 summary: Represents a collection of linked workbook objects.
 remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.WorkbookLoadOptions.linkedWorkbooks](/javascript/api/excel/excel.interfaces.workbookloadoptions#linkedworkbooks-member)
-  \]
+  [API set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +36,8 @@ properties:
       For EACH ITEM in the collection: The original URL pointing to the linked
       workbook. It is unique across all linked workbooks in the collection.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -7,39 +7,36 @@ summary: >-
   Represents the collection of
   [Word.BorderUniversal](xref:word!Word.BorderUniversal:class) objects.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ConditionalStyle.borders](/javascript/api/word/word.conditionalstyle#borders-member)
   \]
 
-  - \[ [Word.Font.borders](/javascript/api/word/word.font#borders-member) \]
+  - [Word.Font.borders](/javascript/api/word/word.font#borders-member) \]
 
-  - \[ [Word.Frame.borders](/javascript/api/word/word.frame#borders-member) \]
+  - [Word.Frame.borders](/javascript/api/word/word.frame#borders-member) \]
 
-  - \[
-  [Word.Paragraph.borders](/javascript/api/word/word.paragraph#borders-member)
+  - [Word.Paragraph.borders](/javascript/api/word/word.paragraph#borders-member)
   \]
 
-  - \[ [Word.Range.borders](/javascript/api/word/word.range#borders-member) \]
+  - [Word.Range.borders](/javascript/api/word/word.range#borders-member) \]
 
-  - \[ [Word.Section.borders](/javascript/api/word/word.section#borders-member)
+  - [Word.Section.borders](/javascript/api/word/word.section#borders-member) \]
+
+  - [Word.Selection.borders](/javascript/api/word/word.selection#borders-member)
   \]
 
-  - \[
-  [Word.Selection.borders](/javascript/api/word/word.selection#borders-member)
-  \]
-
-  - \[
+  -
   [Word.TableColumn.borders](/javascript/api/word/word.tablecolumn#borders-member)
   \]
 
-  - \[
+  -
   [Word.TableStyle.borders](/javascript/api/word/word.tablestyle#borders-member)
   \]
 
@@ -85,8 +82,8 @@ methods:
       Applies the specified page-border formatting to all sections in the
       document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -101,8 +98,8 @@ methods:
     fullName: getItem(index)
     summary: Gets a `Border` object by its index in the collection.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false

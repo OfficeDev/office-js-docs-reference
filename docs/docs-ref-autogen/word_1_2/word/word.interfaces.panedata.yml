@@ -4,17 +4,7 @@ uid: word!Word.Interfaces.PaneData:interface
 package: word!
 fullName: Word.Interfaces.PaneData
 summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.PaneCollectionData.items](/javascript/api/word/word.interfaces.panecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PaneCollectionUpdateData.items](/javascript/api/word/word.interfaces.panecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

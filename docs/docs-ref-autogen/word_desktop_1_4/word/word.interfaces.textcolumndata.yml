@@ -6,21 +6,7 @@ fullName: Word.Interfaces.TextColumnData
 summary: >-
   An interface describing the data returned by calling `textColumn.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.PageSetupData.textColumns](/javascript/api/word/word.interfaces.pagesetupdata#textcolumns-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TextColumnCollectionData.items](/javascript/api/word/word.interfaces.textcolumncollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TextColumnCollectionUpdateData.items](/javascript/api/word/word.interfaces.textcolumncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Specifies the amount of spacing (in points) after the specified paragraph
       or text column.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,8 +35,8 @@ properties:
     fullName: width
     summary: Specifies the width, in points, of the specified text columns.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartTrendlineFormat` object, for use
   in `chartTrendlineFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineUpdateData.format](/javascript/api/excel/excel.interfaces.charttrendlineupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: line
     summary: Represents chart line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

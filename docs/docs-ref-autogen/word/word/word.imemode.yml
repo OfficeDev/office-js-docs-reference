@@ -5,22 +5,14 @@ package: word!
 fullName: Word.ImeMode
 summary: Specifies the IME (Input Method Editor) mode.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.WindowData.imeMode](/javascript/api/word/word.interfaces.windowdata#imemode-member)
-  \]
-
-  - \[
-  [Word.Interfaces.WindowUpdateData.imeMode](/javascript/api/word/word.interfaces.windowupdatedata#imemode-member)
-  \]
-
-  - \[ [Word.Window.imeMode](/javascript/api/word/word.window#imemode-member) \]
+  - [Word.Window.imeMode](/javascript/api/word/word.window#imemode-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +24,8 @@ fields:
       Specifies the half-width alphanumeric IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Alpha"'
   - name: alphaFull
     uid: word!Word.ImeMode.alphaFull:member
@@ -42,8 +34,8 @@ fields:
       Specifies the full-width alphanumeric IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AlphaFull"'
   - name: hangul
     uid: word!Word.ImeMode.hangul:member
@@ -52,8 +44,8 @@ fields:
       Specifies the half-width Hangul IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hangul"'
   - name: hangulFull
     uid: word!Word.ImeMode.hangulFull:member
@@ -62,8 +54,8 @@ fields:
       Specifies the full-width Hangul IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HangulFull"'
   - name: hiragana
     uid: word!Word.ImeMode.hiragana:member
@@ -72,8 +64,8 @@ fields:
       Specifies the Hiragana IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.ImeMode.katakana:member
@@ -82,8 +74,8 @@ fields:
       Specifies the Katakana (double-byte) IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Katakana"'
   - name: katakanaHalf
     uid: word!Word.ImeMode.katakanaHalf:member
@@ -92,8 +84,8 @@ fields:
       Specifies the Katakana (half-width) IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"KatakanaHalf"'
   - name: noControl
     uid: word!Word.ImeMode.noControl:member
@@ -102,8 +94,8 @@ fields:
       Specifies no control over the IME mode.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NoControl"'
   - name: 'off'
     uid: word!Word.ImeMode.off:member
@@ -112,8 +104,8 @@ fields:
       Specifies the IME mode is off.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Off"'
   - name: 'on'
     uid: word!Word.ImeMode.on:member
@@ -122,6 +114,6 @@ fields:
       Specifies the IME mode is on.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"On"'

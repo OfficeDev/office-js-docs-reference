@@ -5,19 +5,15 @@ package: word!
 fullName: Word.ShapeType
 summary: Represents the shape type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ShapeData.type](/javascript/api/word/word.interfaces.shapedata#type-member)
-  \]
-
-  - \[ [Word.Shape.type](/javascript/api/word/word.shape#type-member) \]
+  - [Word.Shape.type](/javascript/api/word/word.shape#type-member) \]
 
   #### Examples
 
@@ -60,8 +56,8 @@ fields:
       Canvas shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Canvas"'
   - name: geometricShape
     uid: word!Word.ShapeType.geometricShape:member
@@ -70,8 +66,8 @@ fields:
       Geometric shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GeometricShape"'
   - name: group
     uid: word!Word.ShapeType.group:member
@@ -80,8 +76,8 @@ fields:
       Group shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Group"'
   - name: picture
     uid: word!Word.ShapeType.picture:member
@@ -90,8 +86,8 @@ fields:
       Picture shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Picture"'
   - name: textBox
     uid: word!Word.ShapeType.textBox:member
@@ -100,8 +96,8 @@ fields:
       Text box shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TextBox"'
   - name: unsupported
     uid: word!Word.ShapeType.unsupported:member
@@ -110,6 +106,6 @@ fields:
       Unsupported shape type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Unsupported"'

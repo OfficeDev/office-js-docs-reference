@@ -5,8 +5,8 @@ package: word!
 fullName: Word.HeaderFooterType
 summary: Represents the type of header or footer.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -39,8 +39,8 @@ fields:
       Returns all headers or footers on even-numbered pages of a section.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EvenPages"'
   - name: firstPage
     uid: word!Word.HeaderFooterType.firstPage:member
@@ -49,8 +49,8 @@ fields:
       Returns the header or footer on the first page of a section.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FirstPage"'
   - name: primary
     uid: word!Word.HeaderFooterType.primary:member
@@ -60,6 +60,6 @@ fields:
       first page or even pages if they are different.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Primary"'

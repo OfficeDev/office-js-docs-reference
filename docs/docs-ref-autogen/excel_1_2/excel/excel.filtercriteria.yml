@@ -5,18 +5,14 @@ package: excel!
 fullName: Excel.FilterCriteria
 summary: Represents the filtering criteria applied to a column.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Filter.criteria](/javascript/api/excel/excel.filter#criteria-member) \]
-
-  - \[
-  [Excel.Interfaces.FilterData.criteria](/javascript/api/excel/excel.interfaces.filterdata#criteria-member)
+  - [Excel.Filter.criteria](/javascript/api/excel/excel.filter#criteria-member)
   \]
 
 isPreview: false
@@ -31,8 +27,8 @@ properties:
       The HTML color string used to filter cells. Used with `cellColor` and
       `fontColor` filtering.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +49,8 @@ properties:
       Used as a number in the case of top/bottom items/percents (e.g., "5" for
       the top 5 items if `filterOn` is set to `topItems`<!-- -->).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -70,8 +66,8 @@ properties:
       The second criterion used to filter data. Only used as an operator in the
       case of `custom` filtering.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +83,8 @@ properties:
       The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply
       on this column. Used with `dynamic` filtering.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -129,8 +125,8 @@ properties:
       The property used by the filter to determine whether the values should
       stay visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -180,8 +176,8 @@ properties:
     fullName: icon
     summary: The icon used to filter cells. Used with `icon` filtering.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -197,8 +193,8 @@ properties:
       The operator used to combine criterion 1 and 2 when using `custom`
       filtering.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -212,8 +208,8 @@ properties:
     fullName: values
     summary: The set of values to be used as part of `values` filtering.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

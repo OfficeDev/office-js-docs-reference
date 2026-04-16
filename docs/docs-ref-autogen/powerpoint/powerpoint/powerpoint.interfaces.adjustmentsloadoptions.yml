@@ -5,25 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.AdjustmentsLoadOptions
 summary: Represents the adjustment values for a shape.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.ShapeCollectionLoadOptions.adjustments](/javascript/api/powerpoint/powerpoint.interfaces.shapecollectionloadoptions#adjustments-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeLoadOptions.adjustments](/javascript/api/powerpoint/powerpoint.interfaces.shapeloadoptions#adjustments-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions.adjustments](/javascript/api/powerpoint/powerpoint.interfaces.shapescopedcollectionloadoptions#adjustments-member)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -51,9 +34,8 @@ properties:
     fullName: count
     summary: Specifies the number of adjustment points.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

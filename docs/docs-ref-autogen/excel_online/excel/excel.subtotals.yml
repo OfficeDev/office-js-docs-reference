@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.Subtotals
 summary: Subtotals for the Pivot Field.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PivotFieldData.subtotals](/javascript/api/excel/excel.interfaces.pivotfielddata#subtotals-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotFieldUpdateData.subtotals](/javascript/api/excel/excel.interfaces.pivotfieldupdatedata#subtotals-member)
-  \]
-
-  - \[
+  -
   [Excel.PivotField.subtotals](/javascript/api/excel/excel.pivotfield#subtotals-member)
   \]
 
@@ -36,8 +28,8 @@ properties:
       If `Automatic` is set to `true`<!-- -->, then all other values will be
       ignored when setting the `Subtotals`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

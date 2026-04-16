@@ -7,8 +7,8 @@ summary: >-
   Represents the input parameter of setCellProperties.
 
 
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 remarks: ''
 
 isPreview: false
@@ -23,8 +23,8 @@ properties:
       Represents the `format` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -41,8 +41,8 @@ properties:
       Represents the `hyperlink` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -59,8 +59,8 @@ properties:
       Represents the `style` property.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false

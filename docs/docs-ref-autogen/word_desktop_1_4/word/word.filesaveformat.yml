@@ -5,19 +5,15 @@ package: word!
 fullName: Word.FileSaveFormat
 summary: Represents the file format to use when saving a document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.saveFormat](/javascript/api/word/word.document#saveformat-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.saveFormat](/javascript/api/word/word.interfaces.documentdata#saveformat-member)
   \]
 
 isPreview: false
@@ -30,8 +26,8 @@ fields:
       Represents Microsoft Office Word 97 - 2003 binary file format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Document"'
   - name: documentDefault
     uid: word!Word.FileSaveFormat.documentDefault:member
@@ -41,8 +37,8 @@ fields:
       format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DocumentDefault"'
   - name: dosText
     uid: word!Word.FileSaveFormat.dosText:member
@@ -51,8 +47,8 @@ fields:
       Represents Microsoft DOS text format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DosText"'
   - name: dosTextLineBreaks
     uid: word!Word.FileSaveFormat.dosTextLineBreaks:member
@@ -61,8 +57,8 @@ fields:
       Represents Microsoft DOS text with line breaks preserved.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DosTextLineBreaks"'
   - name: filteredHtml
     uid: word!Word.FileSaveFormat.filteredHtml:member
@@ -71,8 +67,8 @@ fields:
       Represents filtered HTML format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FilteredHtml"'
   - name: flatXml
     uid: word!Word.FileSaveFormat.flatXml:member
@@ -81,8 +77,8 @@ fields:
       Represents Open XML file format saved as a single XML file.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlatXml"'
   - name: flatXmlMacroEnabled
     uid: word!Word.FileSaveFormat.flatXmlMacroEnabled:member
@@ -92,8 +88,8 @@ fields:
       file.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlatXmlMacroEnabled"'
   - name: flatXmlTemplate
     uid: word!Word.FileSaveFormat.flatXmlTemplate:member
@@ -102,8 +98,8 @@ fields:
       Represents Open XML template format saved as a single XML file.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlatXmlTemplate"'
   - name: flatXmlTemplateMacroEnabled
     uid: word!Word.FileSaveFormat.flatXmlTemplateMacroEnabled:member
@@ -113,8 +109,8 @@ fields:
       XML file.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlatXmlTemplateMacroEnabled"'
   - name: html
     uid: word!Word.FileSaveFormat.html:member
@@ -123,8 +119,8 @@ fields:
       Represents standard HTML format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Html"'
   - name: openDocumentText
     uid: word!Word.FileSaveFormat.openDocumentText:member
@@ -133,8 +129,8 @@ fields:
       Represents OpenDocument Text format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OpenDocumentText"'
   - name: pdf
     uid: word!Word.FileSaveFormat.pdf:member
@@ -143,8 +139,8 @@ fields:
       Represents PDF format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pdf"'
   - name: rtf
     uid: word!Word.FileSaveFormat.rtf:member
@@ -153,8 +149,8 @@ fields:
       Represents Rich Text Format (RTF).
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Rtf"'
   - name: strictOpenXmlDocument
     uid: word!Word.FileSaveFormat.strictOpenXmlDocument:member
@@ -163,8 +159,8 @@ fields:
       Represents Strict Open XML document format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"StrictOpenXmlDocument"'
   - name: template
     uid: word!Word.FileSaveFormat.template:member
@@ -173,8 +169,8 @@ fields:
       Represents Word template format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Template"'
   - name: text
     uid: word!Word.FileSaveFormat.text:member
@@ -183,8 +179,8 @@ fields:
       Represents Microsoft Windows text format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Text"'
   - name: textLineBreaks
     uid: word!Word.FileSaveFormat.textLineBreaks:member
@@ -193,8 +189,8 @@ fields:
       Represents Windows text format with line breaks preserved.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TextLineBreaks"'
   - name: unicodeText
     uid: word!Word.FileSaveFormat.unicodeText:member
@@ -203,8 +199,8 @@ fields:
       Represents Unicode text format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UnicodeText"'
   - name: webArchive
     uid: word!Word.FileSaveFormat.webArchive:member
@@ -213,8 +209,8 @@ fields:
       Represents Web archive format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WebArchive"'
   - name: xml
     uid: word!Word.FileSaveFormat.xml:member
@@ -223,8 +219,8 @@ fields:
       Represents Extensible Markup Language (XML) format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Xml"'
   - name: xmlDocument
     uid: word!Word.FileSaveFormat.xmlDocument:member
@@ -233,8 +229,8 @@ fields:
       Represents XML document format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"XmlDocument"'
   - name: xmlDocumentMacroEnabled
     uid: word!Word.FileSaveFormat.xmlDocumentMacroEnabled:member
@@ -243,8 +239,8 @@ fields:
       Represents XML document format with macros enabled.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"XmlDocumentMacroEnabled"'
   - name: xmlTemplate
     uid: word!Word.FileSaveFormat.xmlTemplate:member
@@ -253,8 +249,8 @@ fields:
       Represents XML template format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"XmlTemplate"'
   - name: xmlTemplateMacroEnabled
     uid: word!Word.FileSaveFormat.xmlTemplateMacroEnabled:member
@@ -263,8 +259,8 @@ fields:
       Represents XML template format with macros enabled.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"XmlTemplateMacroEnabled"'
   - name: xps
     uid: word!Word.FileSaveFormat.xps:member
@@ -273,6 +269,6 @@ fields:
       Represents XPS format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Xps"'

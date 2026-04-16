@@ -5,28 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.HeaderFooterLoadOptions
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#defaultforallpages-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#evenpages-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#firstpage-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages](/javascript/api/excel/excel.interfaces.headerfootergrouploadoptions#oddpages-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -57,8 +37,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +54,8 @@ properties:
       Gets a `HeaderFooterPicture` object that represents the picture for the
       center section of the footer.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +75,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -112,8 +92,8 @@ properties:
       Gets a `HeaderFooterPicture` object that represents the picture for the
       center section of the header.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +113,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -150,8 +130,8 @@ properties:
       Gets a `HeaderFooterPicture` object that represents the picture for the
       left section of the footer.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -171,8 +151,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -188,8 +168,8 @@ properties:
       Gets a `HeaderFooterPicture` object that represents the picture for the
       left section of the header.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -209,8 +189,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -226,8 +206,8 @@ properties:
       Gets a `HeaderFooterPicture` object that represents the picture for the
       right section of the footer.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -247,8 +227,8 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -264,8 +244,8 @@ properties:
       Gets a `HeaderFooterPicture` object that represents the picture for the
       right section of the header.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

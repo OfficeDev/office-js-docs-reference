@@ -5,17 +5,17 @@ package: word!
 fullName: Word.Body
 summary: Represents the body of a document or a section.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Document.body](/javascript/api/word/word.document#body-member) \]
+  - [Word.Document.body](/javascript/api/word/word.document#body-member) \]
 
-  - \[ [Word.Section.body](/javascript/api/word/word.section#body-member) \]
+  - [Word.Section.body](/javascript/api/word/word.section#body-member) \]
 
   #### Examples
 
@@ -46,8 +46,8 @@ properties:
     fullName: contentControls
     summary: Gets the collection of rich text content control objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -78,8 +78,8 @@ properties:
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -136,8 +136,8 @@ properties:
       Gets the collection of `InlinePicture` objects in the body. The collection
       doesn't include floating images.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -178,8 +178,8 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: Paragraphs in tables aren't returned for requirement sets 1.1
@@ -260,8 +260,8 @@ properties:
       Gets the content control that contains the body. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -278,8 +278,8 @@ properties:
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -293,8 +293,8 @@ properties:
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -340,8 +340,8 @@ methods:
       Clears the contents of the `Body` object. The user can perform the undo
       operation on the cleared content.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -395,8 +395,8 @@ methods:
       across platforms, use `Body.getOoxml()` and convert the returned XML to
       HTML.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -440,8 +440,8 @@ methods:
     fullName: getOoxml()
     summary: Gets the OOXML (Office Open XML) representation of the `Body` object.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -485,8 +485,8 @@ methods:
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -546,8 +546,8 @@ methods:
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Body` object with a content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
@@ -632,8 +632,8 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document into the body at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -700,8 +700,8 @@ methods:
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -761,8 +761,8 @@ methods:
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -838,8 +838,8 @@ methods:
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -895,8 +895,8 @@ methods:
     fullName: insertText(text, insertLocation)
     summary: Inserts text into the body at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1032,8 +1032,8 @@ methods:
       Performs a search with the specified search options on the scope of the
       `Body` object. The search results are a collection of `Range` objects.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1123,8 +1123,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the body and navigates the Word UI to it.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1172,8 +1172,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the body and navigates the Word UI to it.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

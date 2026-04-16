@@ -4,41 +4,7 @@ uid: word!Word.Interfaces.FieldData:interface
 package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BodyData.fields](/javascript/api/word/word.interfaces.bodydata#fields-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlData.fields](/javascript/api/word/word.interfaces.contentcontroldata#fields-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldCollectionData.items](/javascript/api/word/word.interfaces.fieldcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldCollectionUpdateData.items](/javascript/api/word/word.interfaces.fieldcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphData.fields](/javascript/api/word/word.interfaces.paragraphdata#fields-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeData.fields](/javascript/api/word/word.interfaces.rangedata#fields-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableData.fields](/javascript/api/word/word.interfaces.tabledata#fields-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableRowData.fields](/javascript/api/word/word.interfaces.tablerowdata#fields-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -50,8 +16,8 @@ properties:
     fullName: code
     summary: Specifies the field's code instruction.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Note: The ability to set the code was introduced in WordApi 1.5.
@@ -71,8 +37,8 @@ properties:
       type, it's `null` and it will throw a general exception when code attempts
       to set it.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -86,8 +52,8 @@ properties:
     fullName: kind
     summary: Gets the field's kind.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -105,8 +71,8 @@ properties:
       Specifies whether the field is locked. `true` if the field is locked,
       `false` otherwise.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -120,8 +86,8 @@ properties:
     fullName: result
     summary: Gets the field's result data.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -137,8 +103,8 @@ properties:
       Specifies whether the field codes are displayed for the specified field.
       `true` if the field codes are displayed, `false` otherwise.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -152,8 +118,8 @@ properties:
     fullName: type
     summary: Gets the field's type.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

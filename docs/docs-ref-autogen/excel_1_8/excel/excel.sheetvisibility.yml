@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.SheetVisibility
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.WorksheetData.visibility](/javascript/api/excel/excel.interfaces.worksheetdata#visibility-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetUpdateData.visibility](/javascript/api/excel/excel.interfaces.worksheetupdatedata#visibility-member)
-  \]
-
-  - \[
+  -
   [Excel.Worksheet.visibility](/javascript/api/excel/excel.worksheet#visibility-member)
   \]
 
@@ -59,20 +51,20 @@ fields:
     uid: excel!Excel.SheetVisibility.hidden:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Hidden"'
   - name: veryHidden
     uid: excel!Excel.SheetVisibility.veryHidden:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"VeryHidden"'
   - name: visible
     uid: excel!Excel.SheetVisibility.visible:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Visible"'

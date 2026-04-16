@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.PageCollection
 summary: Represents a collection of pages.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Section.pages](/javascript/api/onenote/onenote.section#pages-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: count
     summary: Returns the number of pages in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +70,8 @@ methods:
     fullName: getByTitle(title)
     summary: Gets the collection of pages with the specified title.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -128,9 +126,8 @@ methods:
     fullName: getItem(index)
     summary: Gets a page by ID or by its index in the collection. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +148,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a page on its position in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

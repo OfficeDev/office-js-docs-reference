@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.GetBindingDataOptions.filterType](/javascript/api/office/office.getbindingdataoptions#filtertype-member)
   \]
 
-  - \[
+  -
   [Office.GetSelectedDataOptions.filterType](/javascript/api/office/office.getselecteddataoptions#filtertype-member)
   \]
 

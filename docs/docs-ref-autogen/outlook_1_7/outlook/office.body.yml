@@ -8,8 +8,8 @@ summary: >-
   message or appointment. It is returned in the body property of the selected
   item.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   To learn how to get or set the body of a mail item, see [Get or set the body
@@ -41,19 +41,19 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.body](/javascript/api/outlook/office.appointmentcompose#body-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.body](/javascript/api/outlook/office.appointmentread#body-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.body](/javascript/api/outlook/office.messagecompose#body-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.body](/javascript/api/outlook/office.messageread#body-member)
   \]
 
@@ -111,9 +111,8 @@ methods:
       Returns the entire current body in the format specified by
       `coercionType`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -229,9 +228,8 @@ methods:
       Returns the entire current body in the format specified by
       `coercionType`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -364,9 +362,8 @@ methods:
     fullName: getTypeAsync(options, callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -441,9 +438,8 @@ methods:
     fullName: getTypeAsync(callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -488,9 +484,8 @@ methods:
     fullName: prependAsync(data, options, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -647,9 +642,8 @@ methods:
     fullName: prependAsync(data, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -753,9 +747,8 @@ methods:
     fullName: setAsync(data, options, callback)
     summary: Replaces the entire body with the specified text.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -987,9 +980,8 @@ methods:
     fullName: setAsync(data, callback)
     summary: Replaces the entire body with the specified text.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1137,9 +1129,8 @@ methods:
       will be inserted at the top of the body content. After insertion, the
       cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1281,9 +1272,8 @@ methods:
       will be inserted at the top of the body content. After insertion, the
       cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

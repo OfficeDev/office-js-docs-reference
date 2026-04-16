@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.PivotTableStyleData
 summary: >-
   An interface describing the data returned by calling
   `pivotTableStyle.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotTableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablestylecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablestylecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

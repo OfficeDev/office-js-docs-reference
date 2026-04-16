@@ -6,17 +6,7 @@ fullName: Word.Interfaces.ListLevelData
 summary: >-
   An interface describing the data returned by calling `listLevel.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ListLevelCollectionData.items](/javascript/api/word/word.interfaces.listlevelcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ListLevelCollectionUpdateData.items](/javascript/api/word/word.interfaces.listlevelcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

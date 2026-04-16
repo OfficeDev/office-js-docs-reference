@@ -23,9 +23,8 @@ properties:
     fullName: setResult
     summary: Set the result for the custom function. May be called more than once.
     remarks: >-
-      \[ [API set: CustomFunctionsRuntime
+      [API set: CustomFunctionsRuntime
       1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets)
-      \]
 
 
       #### Examples

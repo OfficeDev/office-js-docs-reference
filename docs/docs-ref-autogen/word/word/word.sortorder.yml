@@ -5,22 +5,22 @@ package: word!
 fullName: Word.SortOrder
 summary: Specifies the sort order.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.TableSortOptions.sortOrder](/javascript/api/word/word.tablesortoptions#sortorder-member)
   \]
 
-  - \[
+  -
   [Word.TableSortOptions.sortOrder2](/javascript/api/word/word.tablesortoptions#sortorder2-member)
   \]
 
-  - \[
+  -
   [Word.TableSortOptions.sortOrder3](/javascript/api/word/word.tablesortoptions#sortorder3-member)
   \]
 
@@ -34,8 +34,8 @@ fields:
       Sorts in ascending order.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ascending"'
   - name: descending
     uid: word!Word.SortOrder.descending:member
@@ -44,6 +44,6 @@ fields:
       Sorts in descending order.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Descending"'

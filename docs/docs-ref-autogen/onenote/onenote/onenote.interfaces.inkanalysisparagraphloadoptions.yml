@@ -7,20 +7,8 @@ summary: >-
   Represents ink analysis data for an identified paragraph formed by ink
   strokes.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.paragraph](/javascript/api/onenote/onenote.interfaces.inkanalysislinecollectionloadoptions#paragraph-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisLineLoadOptions.paragraph](/javascript/api/onenote/onenote.interfaces.inkanalysislineloadoptions#paragraph-member)
-  \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -48,9 +36,8 @@ properties:
     fullName: id
     summary: Gets the ID of the InkAnalysisParagraph object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +52,8 @@ properties:
     fullName: inkAnalysis
     summary: Reference to the parent InkAnalysisPage.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +69,8 @@ properties:
     fullName: lines
     summary: Gets the ink analysis lines in this ink analysis paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

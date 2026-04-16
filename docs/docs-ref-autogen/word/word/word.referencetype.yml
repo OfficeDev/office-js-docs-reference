@@ -5,8 +5,8 @@ package: word!
 fullName: Word.ReferenceType
 summary: Specifies the type of reference to insert.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       Refers to a bookmark in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bookmark"'
   - name: endnote
     uid: word!Word.ReferenceType.endnote:member
@@ -28,8 +28,8 @@ fields:
       Refers to an endnote in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Endnote"'
   - name: footnote
     uid: word!Word.ReferenceType.footnote:member
@@ -38,8 +38,8 @@ fields:
       Refers to a footnote in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Footnote"'
   - name: heading
     uid: word!Word.ReferenceType.heading:member
@@ -48,8 +48,8 @@ fields:
       Refers to a heading in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heading"'
   - name: numberedItem
     uid: word!Word.ReferenceType.numberedItem:member
@@ -58,6 +58,6 @@ fields:
       Refers to a numbered item in the document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NumberedItem"'

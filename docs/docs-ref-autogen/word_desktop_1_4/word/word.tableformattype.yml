@@ -5,14 +5,14 @@ package: word!
 fullName: Word.TableFormatType
 summary: Specifies the table format to apply.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.TableAutoFormatOptions.format](/javascript/api/word/word.tableautoformatoptions#format-member)
   \]
 
@@ -26,8 +26,8 @@ fields:
       Applies the Classic1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Classic1"'
   - name: classic2
     uid: word!Word.TableFormatType.classic2:member
@@ -36,8 +36,8 @@ fields:
       Applies the Classic2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Classic2"'
   - name: classic3
     uid: word!Word.TableFormatType.classic3:member
@@ -46,8 +46,8 @@ fields:
       Applies the Classic3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Classic3"'
   - name: classic4
     uid: word!Word.TableFormatType.classic4:member
@@ -56,8 +56,8 @@ fields:
       Applies the Classic4 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Classic4"'
   - name: colorful1
     uid: word!Word.TableFormatType.colorful1:member
@@ -66,8 +66,8 @@ fields:
       Applies the Colorful1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Colorful1"'
   - name: colorful2
     uid: word!Word.TableFormatType.colorful2:member
@@ -76,8 +76,8 @@ fields:
       Applies the Colorful2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Colorful2"'
   - name: colorful3
     uid: word!Word.TableFormatType.colorful3:member
@@ -86,8 +86,8 @@ fields:
       Applies the Colorful3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Colorful3"'
   - name: columns1
     uid: word!Word.TableFormatType.columns1:member
@@ -96,8 +96,8 @@ fields:
       Applies the Columns1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Columns1"'
   - name: columns2
     uid: word!Word.TableFormatType.columns2:member
@@ -106,8 +106,8 @@ fields:
       Applies the Columns2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Columns2"'
   - name: columns3
     uid: word!Word.TableFormatType.columns3:member
@@ -116,8 +116,8 @@ fields:
       Applies the Columns3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Columns3"'
   - name: columns4
     uid: word!Word.TableFormatType.columns4:member
@@ -126,8 +126,8 @@ fields:
       Applies the Columns4 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Columns4"'
   - name: columns5
     uid: word!Word.TableFormatType.columns5:member
@@ -136,8 +136,8 @@ fields:
       Applies the Columns5 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Columns5"'
   - name: contemporary
     uid: word!Word.TableFormatType.contemporary:member
@@ -146,8 +146,8 @@ fields:
       Applies the Contemporary table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Contemporary"'
   - name: elegant
     uid: word!Word.TableFormatType.elegant:member
@@ -156,8 +156,8 @@ fields:
       Applies the Elegant table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Elegant"'
   - name: grid1
     uid: word!Word.TableFormatType.grid1:member
@@ -166,8 +166,8 @@ fields:
       Applies the Grid1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid1"'
   - name: grid2
     uid: word!Word.TableFormatType.grid2:member
@@ -176,8 +176,8 @@ fields:
       Applies the Grid2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid2"'
   - name: grid3
     uid: word!Word.TableFormatType.grid3:member
@@ -186,8 +186,8 @@ fields:
       Applies the Grid3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid3"'
   - name: grid4
     uid: word!Word.TableFormatType.grid4:member
@@ -196,8 +196,8 @@ fields:
       Applies the Grid4 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid4"'
   - name: grid5
     uid: word!Word.TableFormatType.grid5:member
@@ -206,8 +206,8 @@ fields:
       Applies the Grid5 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid5"'
   - name: grid6
     uid: word!Word.TableFormatType.grid6:member
@@ -216,8 +216,8 @@ fields:
       Applies the Grid6 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid6"'
   - name: grid7
     uid: word!Word.TableFormatType.grid7:member
@@ -226,8 +226,8 @@ fields:
       Applies the Grid7 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid7"'
   - name: grid8
     uid: word!Word.TableFormatType.grid8:member
@@ -236,8 +236,8 @@ fields:
       Applies the Grid8 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Grid8"'
   - name: list1
     uid: word!Word.TableFormatType.list1:member
@@ -246,8 +246,8 @@ fields:
       Applies the List1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List1"'
   - name: list2
     uid: word!Word.TableFormatType.list2:member
@@ -256,8 +256,8 @@ fields:
       Applies the List2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List2"'
   - name: list3
     uid: word!Word.TableFormatType.list3:member
@@ -266,8 +266,8 @@ fields:
       Applies the List3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List3"'
   - name: list4
     uid: word!Word.TableFormatType.list4:member
@@ -276,8 +276,8 @@ fields:
       Applies the List4 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List4"'
   - name: list5
     uid: word!Word.TableFormatType.list5:member
@@ -286,8 +286,8 @@ fields:
       Applies the List5 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List5"'
   - name: list6
     uid: word!Word.TableFormatType.list6:member
@@ -296,8 +296,8 @@ fields:
       Applies the List6 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List6"'
   - name: list7
     uid: word!Word.TableFormatType.list7:member
@@ -306,8 +306,8 @@ fields:
       Applies the List7 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List7"'
   - name: list8
     uid: word!Word.TableFormatType.list8:member
@@ -316,8 +316,8 @@ fields:
       Applies the List8 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"List8"'
   - name: none
     uid: word!Word.TableFormatType.none:member
@@ -326,8 +326,8 @@ fields:
       Applies no formatting to the table.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: professional
     uid: word!Word.TableFormatType.professional:member
@@ -336,8 +336,8 @@ fields:
       Applies the Professional table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Professional"'
   - name: simple1
     uid: word!Word.TableFormatType.simple1:member
@@ -346,8 +346,8 @@ fields:
       Applies the Simple1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Simple1"'
   - name: simple2
     uid: word!Word.TableFormatType.simple2:member
@@ -356,8 +356,8 @@ fields:
       Applies the Simple2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Simple2"'
   - name: simple3
     uid: word!Word.TableFormatType.simple3:member
@@ -366,8 +366,8 @@ fields:
       Applies the Simple3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Simple3"'
   - name: subtle1
     uid: word!Word.TableFormatType.subtle1:member
@@ -376,8 +376,8 @@ fields:
       Applies the Subtle1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Subtle1"'
   - name: subtle2
     uid: word!Word.TableFormatType.subtle2:member
@@ -386,8 +386,8 @@ fields:
       Applies the Subtle2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Subtle2"'
   - name: threeDEffects1
     uid: word!Word.TableFormatType.threeDEffects1:member
@@ -396,8 +396,8 @@ fields:
       Applies the 3D Effects1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThreeDEffects1"'
   - name: threeDEffects2
     uid: word!Word.TableFormatType.threeDEffects2:member
@@ -406,8 +406,8 @@ fields:
       Applies the 3D Effects2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThreeDEffects2"'
   - name: threeDEffects3
     uid: word!Word.TableFormatType.threeDEffects3:member
@@ -416,8 +416,8 @@ fields:
       Applies the 3D Effects3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThreeDEffects3"'
   - name: web1
     uid: word!Word.TableFormatType.web1:member
@@ -426,8 +426,8 @@ fields:
       Applies the Web1 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Web1"'
   - name: web2
     uid: word!Word.TableFormatType.web2:member
@@ -436,8 +436,8 @@ fields:
       Applies the Web2 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Web2"'
   - name: web3
     uid: word!Word.TableFormatType.web3:member
@@ -446,6 +446,6 @@ fields:
       Applies the Web3 table format.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Web3"'

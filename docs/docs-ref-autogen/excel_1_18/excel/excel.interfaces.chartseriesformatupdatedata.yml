@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartSeriesFormat` object, for use in
   `chartSeriesFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.format](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: line
     summary: Represents line formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

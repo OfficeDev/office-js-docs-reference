@@ -5,20 +5,8 @@ package: word!
 fullName: Word.Interfaces.CritiqueAnnotationLoadOptions
 summary: Represents an annotation wrapper around critique displayed in the document.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.AnnotationCollectionLoadOptions.critiqueAnnotation](/javascript/api/word/word.interfaces.annotationcollectionloadoptions#critiqueannotation-member)
-  \]
-
-  - \[
-  [Word.Interfaces.AnnotationLoadOptions.critiqueAnnotation](/javascript/api/word/word.interfaces.annotationloadoptions#critiqueannotation-member)
-  \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,8 +34,8 @@ properties:
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +49,8 @@ properties:
     fullName: range
     summary: Gets the range of text that is annotated.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

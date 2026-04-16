@@ -6,13 +6,7 @@ fullName: Visio.Interfaces.ShapeViewUpdateData
 summary: >-
   An interface for updating data on the ShapeView object, for use in
   `shapeView.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.ShapeUpdateData.view](/javascript/api/visio/visio.interfaces.shapeupdatedata#view-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: highlight
     summary: Represents the highlight around the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

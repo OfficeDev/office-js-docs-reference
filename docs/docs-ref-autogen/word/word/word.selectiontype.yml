@@ -5,18 +5,14 @@ package: word!
 fullName: Word.SelectionType
 summary: Specifies the type of selection in the document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.SelectionData.type](/javascript/api/word/word.interfaces.selectiondata#type-member)
-  \]
-
-  - \[ [Word.Selection.type](/javascript/api/word/word.selection#type-member) \]
+  - [Word.Selection.type](/javascript/api/word/word.selection#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +24,8 @@ fields:
       Represents a block selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Block"'
   - name: column
     uid: word!Word.SelectionType.column:member
@@ -38,8 +34,8 @@ fields:
       Represents a column selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Column"'
   - name: frame
     uid: word!Word.SelectionType.frame:member
@@ -48,8 +44,8 @@ fields:
       Represents a frame selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Frame"'
   - name: inlineShape
     uid: word!Word.SelectionType.inlineShape:member
@@ -58,8 +54,8 @@ fields:
       Represents an inline shape selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"InlineShape"'
   - name: insertionPoint
     uid: word!Word.SelectionType.insertionPoint:member
@@ -68,8 +64,8 @@ fields:
       Represents an insertion point (IP) selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"InsertionPoint"'
   - name: normal
     uid: word!Word.SelectionType.normal:member
@@ -78,8 +74,8 @@ fields:
       Represents a normal selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Normal"'
   - name: noSelection
     uid: word!Word.SelectionType.noSelection:member
@@ -88,8 +84,8 @@ fields:
       No selection is made.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NoSelection"'
   - name: row
     uid: word!Word.SelectionType.row:member
@@ -98,8 +94,8 @@ fields:
       Represents a row selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Row"'
   - name: selectionShape
     uid: word!Word.SelectionType.selectionShape:member
@@ -108,6 +104,6 @@ fields:
       Represents a shape selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SelectionShape"'

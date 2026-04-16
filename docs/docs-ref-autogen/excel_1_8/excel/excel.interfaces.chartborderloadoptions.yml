@@ -5,44 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartBorderLoadOptions
 summary: Represents the border formatting of a chart element.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAreaFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.chartareaformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.chartaxistitleformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.chartdatalabelformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLegendFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.chartlegendformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.chartplotareaformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartPointFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.chartpointformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.charttitleformatloadoptions#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.border](/javascript/api/excel/excel.interfaces.charttrendlinelabelformatloadoptions#border-member)
-  \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -70,8 +34,8 @@ properties:
     fullName: color
     summary: HTML color code representing the color of borders in the chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +51,8 @@ properties:
       Represents the line style of the border. See `Excel.ChartLineStyle` for
       details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -102,8 +66,8 @@ properties:
     fullName: weight
     summary: Represents weight of the border, in points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

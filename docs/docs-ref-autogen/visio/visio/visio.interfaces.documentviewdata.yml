@@ -6,13 +6,7 @@ fullName: Visio.Interfaces.DocumentViewData
 summary: >-
   An interface describing the data returned by calling
   `documentView.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.DocumentData.view](/javascript/api/visio/visio.interfaces.documentdata#view-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: disableHyperlinks
     summary: Disable Hyperlinks.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +33,8 @@ properties:
     fullName: disablePan
     summary: Disable Pan.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,9 +48,8 @@ properties:
     fullName: disablePanZoomWindow
     summary: Disable PanZoomWindow.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +63,8 @@ properties:
     fullName: disableZoom
     summary: Disable Zoom.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +78,8 @@ properties:
     fullName: hideDiagramBoundary
     summary: Hide Diagram Boundary.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

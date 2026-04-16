@@ -5,28 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
 summary: Represents an icon set criteria for conditional formatting.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSet](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#iconset-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatCollectionLoadOptions.iconSetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatcollectionloadoptions#iconsetornullobject-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatLoadOptions.iconSet](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#iconset-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatLoadOptions.iconSetOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatloadoptions#iconsetornullobject-member)
-  \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -58,8 +38,8 @@ properties:
       custom icon can be modified, while type, formula, and operator will be
       ignored when set.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +56,8 @@ properties:
       If `true`<!-- -->, reverses the icon orders for the icon set. Note that
       this cannot be set if custom icons are used.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -92,8 +72,8 @@ properties:
     fullName: showIconOnly
     summary: If `true`<!-- -->, hides the values and only shows icons.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -107,8 +87,8 @@ properties:
     fullName: style
     summary: If set, displays the icon set option for the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

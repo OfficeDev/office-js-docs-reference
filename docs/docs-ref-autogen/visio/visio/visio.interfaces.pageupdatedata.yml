@@ -18,9 +18,8 @@ properties:
     fullName: view
     summary: Returns the view of the page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

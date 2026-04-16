@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.BorderWeight
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.RangeBorderData.weight](/javascript/api/excel/excel.interfaces.rangeborderdata#weight-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeBorderUpdateData.weight](/javascript/api/excel/excel.interfaces.rangeborderupdatedata#weight-member)
-  \]
-
-  - \[
+  -
   [Excel.RangeBorder.weight](/javascript/api/excel/excel.rangeborder#weight-member)
   \]
 
@@ -31,27 +23,27 @@ fields:
     uid: excel!Excel.BorderWeight.hairline:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Hairline"'
   - name: medium
     uid: excel!Excel.BorderWeight.medium:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Medium"'
   - name: thick
     uid: excel!Excel.BorderWeight.thick:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Thick"'
   - name: thin
     uid: excel!Excel.BorderWeight.thin:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Thin"'

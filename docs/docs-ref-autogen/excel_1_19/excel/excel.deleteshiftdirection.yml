@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.DeleteShiftDirection
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChangeDirectionState.deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#deleteshiftdirection-member)
   \]
 
@@ -44,13 +44,13 @@ fields:
     uid: excel!Excel.DeleteShiftDirection.left:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Left"'
   - name: up
     uid: excel!Excel.DeleteShiftDirection.up:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Up"'

@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.RowColumnPivotHierarchyData
 summary: >-
   An interface describing the data returned by calling
   `rowColumnPivotHierarchy.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

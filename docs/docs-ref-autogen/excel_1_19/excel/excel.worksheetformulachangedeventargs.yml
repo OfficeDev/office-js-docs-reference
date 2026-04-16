@@ -7,19 +7,19 @@ summary: >-
   Provides information about the worksheet and formulas that raised the formula
   changed event.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.onFormulaChanged](/javascript/api/excel/excel.worksheet#onformulachanged-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetCollection.onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#onformulachanged-member)
   \]
 
@@ -75,9 +75,8 @@ properties:
       that something on the sheet has changed, but the details cannot be
       reported.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +90,8 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +105,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +120,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the formula changed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

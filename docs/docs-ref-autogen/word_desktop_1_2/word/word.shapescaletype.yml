@@ -5,8 +5,8 @@ package: word!
 fullName: Word.ShapeScaleType
 summary: Specifies the scale size type of a shape.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -51,8 +51,8 @@ fields:
       Scale from current size of the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CurrentSize"'
   - name: originalSize
     uid: word!Word.ShapeScaleType.originalSize:member
@@ -61,6 +61,6 @@ fields:
       Scale from original size of the shape. It only works for pictures.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OriginalSize"'

@@ -10,27 +10,27 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AddBindingFromPromptOptions.sampleData](/javascript/api/office/office.addbindingfrompromptoptions#sampledata-member)
   \]
 
-  - \[
+  -
   [Office.Binding.setDataAsync](/javascript/api/office/office.binding#setdataasync-member)
   \]
 
-  - \[
+  -
   [Office.Document.getSelectedDataAsync](/javascript/api/office/office.document#getselecteddataasync-member)
   \]
 
-  - \[
+  -
   [Office.Document.setSelectedDataAsync](/javascript/api/office/office.document#setselecteddataasync-member)
   \]
 
-  - \[
+  -
   [Office.TableBinding.addColumnsAsync](/javascript/api/office/office.tablebinding#addcolumnsasync-member)
   \]
 
-  - \[
+  -
   [Office.TableBinding.addRowsAsync](/javascript/api/office/office.tablebinding#addrowsasync-member)
   \]
 

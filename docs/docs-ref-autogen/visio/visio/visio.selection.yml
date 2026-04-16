@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.Selection
 summary: Represents the Selection in the page.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +33,8 @@ properties:
     fullName: shapes
     summary: Gets the Shapes of the Selection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

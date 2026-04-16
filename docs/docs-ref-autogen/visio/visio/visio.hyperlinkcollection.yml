@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.HyperlinkCollection
 summary: Represents the Hyperlink Collection.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.Shape.hyperlinks](/javascript/api/visio/visio.shape#hyperlinks-member)
   \]
 
@@ -56,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of hyperlinks.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +71,8 @@ methods:
     fullName: getItem(Key)
     summary: Gets a Hyperlink using its key (name or Id).
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

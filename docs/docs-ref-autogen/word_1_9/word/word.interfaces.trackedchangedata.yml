@@ -6,17 +6,7 @@ fullName: Word.Interfaces.TrackedChangeData
 summary: >-
   An interface describing the data returned by calling
   `trackedChange.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TrackedChangeCollectionData.items](/javascript/api/word/word.interfaces.trackedchangecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TrackedChangeCollectionUpdateData.items](/javascript/api/word/word.interfaces.trackedchangecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +18,8 @@ properties:
     fullName: author
     summary: Gets the author of the tracked change.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -43,8 +33,8 @@ properties:
     fullName: date
     summary: Gets the date of the tracked change.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +48,8 @@ properties:
     fullName: text
     summary: Gets the text of the tracked change.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -73,8 +63,8 @@ properties:
     fullName: type
     summary: Gets the type of the tracked change.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

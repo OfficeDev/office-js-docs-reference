@@ -15,63 +15,62 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Visio.Application.context](/javascript/api/visio/visio.application#context-member)
   \]
 
-  - \[
-  [Visio.Comment.context](/javascript/api/visio/visio.comment#context-member) \]
+  - [Visio.Comment.context](/javascript/api/visio/visio.comment#context-member)
+  \]
 
-  - \[
+  -
   [Visio.CommentCollection.context](/javascript/api/visio/visio.commentcollection#context-member)
   \]
 
-  - \[
+  -
   [Visio.Document.context](/javascript/api/visio/visio.document#context-member)
   \]
 
-  - \[
+  -
   [Visio.DocumentView.context](/javascript/api/visio/visio.documentview#context-member)
   \]
 
-  - \[
+  -
   [Visio.Hyperlink.context](/javascript/api/visio/visio.hyperlink#context-member)
   \]
 
-  - \[
+  -
   [Visio.HyperlinkCollection.context](/javascript/api/visio/visio.hyperlinkcollection#context-member)
   \]
 
-  - \[ [Visio.Page.context](/javascript/api/visio/visio.page#context-member) \]
+  - [Visio.Page.context](/javascript/api/visio/visio.page#context-member) \]
 
-  - \[
+  -
   [Visio.PageCollection.context](/javascript/api/visio/visio.pagecollection#context-member)
   \]
 
-  - \[
+  -
   [Visio.PageView.context](/javascript/api/visio/visio.pageview#context-member)
   \]
 
-  - \[
+  -
   [Visio.Selection.context](/javascript/api/visio/visio.selection#context-member)
   \]
 
-  - \[ [Visio.Shape.context](/javascript/api/visio/visio.shape#context-member)
-  \]
+  - [Visio.Shape.context](/javascript/api/visio/visio.shape#context-member) \]
 
-  - \[
+  -
   [Visio.ShapeCollection.context](/javascript/api/visio/visio.shapecollection#context-member)
   \]
 
-  - \[
+  -
   [Visio.ShapeDataItem.context](/javascript/api/visio/visio.shapedataitem#context-member)
   \]
 
-  - \[
+  -
   [Visio.ShapeDataItemCollection.context](/javascript/api/visio/visio.shapedataitemcollection#context-member)
   \]
 
-  - \[
+  -
   [Visio.ShapeView.context](/javascript/api/visio/visio.shapeview#context-member)
   \]
 

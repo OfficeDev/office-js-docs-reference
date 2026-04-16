@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.StyleCollection
 summary: Represents a collection of all the styles.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Workbook.styles](/javascript/api/excel/excel.workbook#styles-member) \]
+  - [Excel.Workbook.styles](/javascript/api/excel/excel.workbook#styles-member)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -54,8 +54,8 @@ methods:
     fullName: add(name)
     summary: Adds a new style to the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -107,8 +107,8 @@ methods:
     fullName: getItem(name)
     summary: Gets a `Style` by name.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

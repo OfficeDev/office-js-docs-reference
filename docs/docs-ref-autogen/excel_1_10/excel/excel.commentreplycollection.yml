@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.CommentReplyCollection
 summary: Represents a collection of comment reply objects that are part of the comment.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Comment.replies](/javascript/api/excel/excel.comment#replies-member) \]
+  - [Excel.Comment.replies](/javascript/api/excel/excel.comment#replies-member)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -54,9 +54,8 @@ methods:
     fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -108,9 +107,8 @@ methods:
     fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -142,9 +140,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of comment replies in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -159,9 +156,8 @@ methods:
     fullName: getItem(commentReplyId)
     summary: Returns a comment reply identified by its ID.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -180,9 +176,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a comment reply based on its position in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,14 +5,14 @@ package: word!
 fullName: Word.BreakCollection
 summary: Contains a collection of [Word.Break](xref:word!Word.Break:class) objects.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Page.breaks](/javascript/api/word/word.page#breaks-member) \]
+  - [Word.Page.breaks](/javascript/api/word/word.page#breaks-member) \]
 
 isPreview: false
 isDeprecated: false

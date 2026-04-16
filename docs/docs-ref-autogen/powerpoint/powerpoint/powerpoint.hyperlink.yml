@@ -5,20 +5,19 @@ package: powerpoint!
 fullName: PowerPoint.Hyperlink
 summary: Represents a single hyperlink.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.HyperlinkCollection.items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#items-member)
   \]
 
-  - \[
+  -
   [PowerPoint.HyperlinkScopedCollection.items](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#items-member)
   \]
 
@@ -61,9 +60,8 @@ properties:
       Specifies the address of the hyperlink, which can be a URL, a file name or
       file path, or an email address with the `mailto` URI scheme.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +90,8 @@ properties:
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -111,9 +108,8 @@ properties:
       [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +126,8 @@ methods:
     fullName: delete()
     summary: Deletes the hyperlink.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -191,9 +186,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -219,9 +213,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

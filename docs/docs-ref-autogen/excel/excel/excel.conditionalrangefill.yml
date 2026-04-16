@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ConditionalRangeFill
 summary: Represents the background of a conditional range object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalRangeFormat.fill](/javascript/api/excel/excel.conditionalrangeformat#fill-member)
   \]
 
@@ -28,8 +28,8 @@ properties:
       HTML color code representing the color of the fill, in the form \#RRGGBB
       (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +59,8 @@ methods:
     fullName: clear()
     summary: Resets the fill.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

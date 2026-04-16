@@ -5,16 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
 summary: Encapsulates the format properties for the chart trendline label.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineLabelLoadOptions.format](/javascript/api/excel/excel.interfaces.charttrendlinelabelloadoptions#format-member)
-  \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +34,8 @@ properties:
     fullName: border
     summary: Specifies the border format, which includes color, linestyle, and weight.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +51,8 @@ properties:
       Specifies the font attributes (such as font name, font size, and color)
       for a chart trendline label.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

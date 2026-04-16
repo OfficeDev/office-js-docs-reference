@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartAxisTickLabelPosition
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxis.tickLabelPosition](/javascript/api/excel/excel.chartaxis#ticklabelposition-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.tickLabelPosition](/javascript/api/excel/excel.interfaces.chartaxisdata#ticklabelposition-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#ticklabelposition-member)
   \]
 
 isPreview: false
@@ -31,27 +23,27 @@ fields:
     uid: excel!Excel.ChartAxisTickLabelPosition.high:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"High"'
   - name: low
     uid: excel!Excel.ChartAxisTickLabelPosition.low:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Low"'
   - name: nextToAxis
     uid: excel!Excel.ChartAxisTickLabelPosition.nextToAxis:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NextToAxis"'
   - name: none
     uid: excel!Excel.ChartAxisTickLabelPosition.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'

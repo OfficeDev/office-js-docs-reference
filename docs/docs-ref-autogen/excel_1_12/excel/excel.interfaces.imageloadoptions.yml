@@ -7,24 +7,8 @@ summary: >-
   Represents an image in the worksheet. To get the corresponding `Shape` object,
   use `Image.shape`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.GroupShapeCollectionLoadOptions.image](/javascript/api/excel/excel.interfaces.groupshapecollectionloadoptions#image-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeCollectionLoadOptions.image](/javascript/api/excel/excel.interfaces.shapecollectionloadoptions#image-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeLoadOptions.image](/javascript/api/excel/excel.interfaces.shapeloadoptions#image-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -52,8 +36,8 @@ properties:
     fullName: format
     summary: Returns the format of the image.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +51,8 @@ properties:
     fullName: id
     summary: Specifies the shape identifier for the image object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -82,8 +66,8 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object associated with the image.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

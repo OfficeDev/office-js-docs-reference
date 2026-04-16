@@ -7,23 +7,22 @@ summary: >-
   Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
   objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member)
-  \]
+  - [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member) \]
 
-  - \[
+  -
   [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
   \]
 
-  - \[
-  [Word.Range.paragraphs](/javascript/api/word/word.range#paragraphs-member) \]
+  - [Word.Range.paragraphs](/javascript/api/word/word.range#paragraphs-member)
+  \]
 
   #### Examples
 

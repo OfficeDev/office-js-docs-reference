@@ -5,16 +5,8 @@ package: onenote!
 fullName: OneNote.Interfaces.TableRowCollectionLoadOptions
 summary: Contains a collection of TableRow objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.TableLoadOptions.rows](/javascript/api/onenote/onenote.interfaces.tableloadoptions#rows-member)
-  \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -44,9 +36,8 @@ properties:
       For EACH ITEM in the collection: Gets the number of cells in the row.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -60,9 +51,8 @@ properties:
     fullName: cells
     summary: 'For EACH ITEM in the collection: Gets the cells in the row.'
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +69,8 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the row. Read-only.'
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +85,8 @@ properties:
     fullName: parentTable
     summary: 'For EACH ITEM in the collection: Gets the parent table.'
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -114,9 +102,8 @@ properties:
       For EACH ITEM in the collection: Gets the index of the row in its parent
       table. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

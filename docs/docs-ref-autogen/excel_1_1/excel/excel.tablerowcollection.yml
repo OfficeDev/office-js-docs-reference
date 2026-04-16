@@ -13,14 +13,14 @@ summary: >-
   are added, a table row will continue to point at the index for which it was
   created.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Table.rows](/javascript/api/excel/excel.table#rows-member) \]
+  - [Excel.Table.rows](/javascript/api/excel/excel.table#rows-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -47,8 +47,8 @@ properties:
     fullName: count
     summary: Returns the number of rows in the table.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -85,10 +85,9 @@ methods:
       sorted or if new rows are added, a table row will continue to point at the
       index for which it was created.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of
+      [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of
       multiple rows; 1.15 for adding `alwaysInsert`
       parameter.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -150,8 +149,8 @@ methods:
       sorted or if new rows are added, a table row will continue to point at the
       index for which it was created.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

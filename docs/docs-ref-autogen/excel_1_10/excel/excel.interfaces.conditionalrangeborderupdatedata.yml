@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeBorder` object, for use
   in `conditionalRangeBorder.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#bottom-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#left-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#right-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top](/javascript/api/excel/excel.interfaces.conditionalrangebordercollectionupdatedata#top-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -38,8 +20,8 @@ properties:
       HTML color code representing the color of the border line, in the form
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -55,8 +37,8 @@ properties:
       One of the constants of line style specifying the line style for the
       border. See `Excel.BorderLineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

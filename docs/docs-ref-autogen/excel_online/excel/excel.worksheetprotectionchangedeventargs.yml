@@ -8,18 +8,18 @@ summary: >-
   changed event, which fires when the protection status is updated in a
   worksheet.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.onProtectionChanged](/javascript/api/excel/excel.worksheet#onprotectionchanged-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetCollection.onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onprotectionchanged-member)
   \]
 
@@ -34,8 +34,8 @@ properties:
     fullName: allowEditRangesChanged
     summary: Specifies if any of the `AllowEditRange` objects have changed.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +49,8 @@ properties:
     fullName: isProtected
     summary: Gets the current protection status of the worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -92,8 +91,8 @@ properties:
     fullName: protectionOptionsChanged
     summary: Specifies if the `WorksheetProtectionOptions` have changed.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -108,8 +107,8 @@ properties:
     fullName: sheetPasswordChanged
     summary: Specifies if the worksheet password has changed.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +122,8 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -165,9 +163,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -181,9 +178,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the protection status is changed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples

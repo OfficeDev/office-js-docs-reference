@@ -5,15 +5,14 @@ package: onenote!
 fullName: OneNote.TableRowCollection
 summary: Contains a collection of TableRow objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [OneNote.Table.rows](/javascript/api/onenote/onenote.table#rows-member)
-  \]
+  - [OneNote.Table.rows](/javascript/api/onenote/onenote.table#rows-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -40,9 +39,8 @@ properties:
     fullName: count
     summary: Returns the number of table rows in this collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +70,8 @@ methods:
       Gets a table row object by ID or by its index in the collection.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +90,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a table row at its position in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ProtectionSelectionMode
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.WorksheetProtectionOptions.selectionMode](/javascript/api/excel/excel.worksheetprotectionoptions#selectionmode-member)
   \]
 
@@ -26,8 +26,8 @@ fields:
       Selection is not allowed for any cells.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: normal
     uid: excel!Excel.ProtectionSelectionMode.normal:member
@@ -36,8 +36,8 @@ fields:
       Selection is allowed for all cells.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Normal"'
   - name: unlocked
     uid: excel!Excel.ProtectionSelectionMode.unlocked:member
@@ -46,6 +46,6 @@ fields:
       Selection is allowed only for cells that are not locked.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unlocked"'

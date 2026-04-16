@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.TableStyleData
 summary: >-
   An interface describing the data returned by calling `tableStyle.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.TableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.tablestylecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.tablestylecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -5,15 +5,15 @@ package: word!
 fullName: Word.Application
 summary: Represents the `Application` object.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.RequestContext.application](/javascript/api/word/word.requestcontext#application-member)
   \]
 
@@ -78,8 +78,8 @@ methods:
     fullName: createDocument(base64File)
     summary: Creates a new document by using an optional Base64-encoded .docx file.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -234,8 +234,8 @@ methods:
       Parse styles from template Base64 file and return JSON format of retrieved
       styles as a string.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

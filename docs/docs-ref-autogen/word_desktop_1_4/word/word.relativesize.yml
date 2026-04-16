@@ -9,35 +9,19 @@ summary: >-
   document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
   -->.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ShapeData.relativeHorizontalSize](/javascript/api/word/word.interfaces.shapedata#relativehorizontalsize-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeData.relativeVerticalSize](/javascript/api/word/word.interfaces.shapedata#relativeverticalsize-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeUpdateData.relativeHorizontalSize](/javascript/api/word/word.interfaces.shapeupdatedata#relativehorizontalsize-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeUpdateData.relativeVerticalSize](/javascript/api/word/word.interfaces.shapeupdatedata#relativeverticalsize-member)
-  \]
-
-  - \[
+  -
   [Word.Shape.relativeHorizontalSize](/javascript/api/word/word.shape#relativehorizontalsize-member)
   \]
 
-  - \[
+  -
   [Word.Shape.relativeVerticalSize](/javascript/api/word/word.shape#relativeverticalsize-member)
   \]
 
@@ -87,8 +71,8 @@ fields:
       Relative to bottom margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BottomMargin"'
   - name: insideMargin
     uid: word!Word.RelativeSize.insideMargin:member
@@ -97,8 +81,8 @@ fields:
       Relative to inside margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"InsideMargin"'
   - name: margin
     uid: word!Word.RelativeSize.margin:member
@@ -107,8 +91,8 @@ fields:
       Relative to margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeSize.outsideMargin:member
@@ -117,8 +101,8 @@ fields:
       Relative to outside margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeSize.page:member
@@ -127,8 +111,8 @@ fields:
       Relative to page.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Page"'
   - name: topMargin
     uid: word!Word.RelativeSize.topMargin:member
@@ -137,6 +121,6 @@ fields:
       Relative to top margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TopMargin"'

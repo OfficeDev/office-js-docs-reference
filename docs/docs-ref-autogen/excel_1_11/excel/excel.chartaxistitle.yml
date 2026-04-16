@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.ChartAxisTitle
 summary: Represents the title of a chart axis.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.ChartAxis.title](/javascript/api/excel/excel.chartaxis#title-member) \]
+  - [Excel.ChartAxis.title](/javascript/api/excel/excel.chartaxis#title-member)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +40,8 @@ properties:
     fullName: format
     summary: Specifies the formatting of the chart axis title.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -55,8 +55,8 @@ properties:
     fullName: text
     summary: Specifies the axis title.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -70,8 +70,8 @@ properties:
     fullName: visible
     summary: Specifies if the axis title is visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -233,8 +233,8 @@ methods:
       A string value that represents the formula of chart axis title using
       A1-style notation.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

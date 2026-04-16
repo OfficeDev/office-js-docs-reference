@@ -14,9 +14,8 @@ summary: >-
   Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Applicable Outlook
@@ -28,7 +27,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.SmartAlertsEventCompletedOptions.sendModeOverride](/javascript/api/outlook/office.smartalertseventcompletedoptions#sendmodeoverride-member)
   \]
 

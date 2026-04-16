@@ -5,24 +5,16 @@ package: excel!
 fullName: Excel.DataValidationErrorAlert
 summary: Represents the error alert properties for the data validation.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataValidation.errorAlert](/javascript/api/excel/excel.datavalidation#erroralert-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataValidationData.errorAlert](/javascript/api/excel/excel.interfaces.datavalidationdata#erroralert-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataValidationUpdateData.errorAlert](/javascript/api/excel/excel.interfaces.datavalidationupdatedata#erroralert-member)
   \]
 
   #### Examples
@@ -59,7 +51,7 @@ remarks: >-
       rankingRange.dataValidation.errorAlert = {
           message: "Sorry, only positive numbers are allowed",
           showAlert: true,
-          style: "Stop",
+          style: Excel.DataValidationAlertStyle.stop,
           title: "Negative Number Entered"
       };
 
@@ -78,8 +70,8 @@ properties:
     fullName: message
     summary: Represents the error alert message.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +87,8 @@ properties:
       Specifies whether to show an error alert dialog when a user enters invalid
       data. The default is `true`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -112,8 +104,8 @@ properties:
       The data validation alert type, please see
       `Excel.DataValidationAlertStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -131,8 +123,8 @@ properties:
     fullName: title
     summary: Represents the error alert dialog title.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

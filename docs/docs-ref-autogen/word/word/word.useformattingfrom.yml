@@ -5,14 +5,14 @@ package: word!
 fullName: Word.UseFormattingFrom
 summary: Specifies the source of formatting to use during document operations.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.DocumentMergeOptions.useFormattingFrom](/javascript/api/word/word.documentmergeoptions#useformattingfrom-member)
   \]
 
@@ -26,8 +26,8 @@ fields:
       Represents using formatting from the current document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Current"'
   - name: prompt
     uid: word!Word.UseFormattingFrom.prompt:member
@@ -36,8 +36,8 @@ fields:
       Represents prompting the user for formatting preferences.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Prompt"'
   - name: selected
     uid: word!Word.UseFormattingFrom.selected:member
@@ -46,6 +46,6 @@ fields:
       Represents using formatting from the selected document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Selected"'

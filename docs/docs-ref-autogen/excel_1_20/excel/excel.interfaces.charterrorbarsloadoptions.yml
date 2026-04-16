@@ -5,28 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
 summary: This object represents the attributes for a chart's error bars.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#xerrorbars-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#yerrorbars-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#xerrorbars-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#yerrorbars-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -54,8 +34,8 @@ properties:
     fullName: endStyleCap
     summary: Specifies if error bars have an end style cap.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +49,8 @@ properties:
     fullName: format
     summary: Specifies the formatting type of the error bars.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +67,8 @@ properties:
     fullName: include
     summary: Specifies which parts of the error bars to include.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -102,8 +82,8 @@ properties:
     fullName: type
     summary: The type of range marked by the error bars.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -117,8 +97,8 @@ properties:
     fullName: visible
     summary: Specifies whether the error bars are displayed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

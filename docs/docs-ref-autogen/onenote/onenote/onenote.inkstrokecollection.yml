@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.InkStrokeCollection
 summary: Represents a collection of InkStroke objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.FloatingInk.inkStrokes](/javascript/api/onenote/onenote.floatingink#inkstrokes-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: count
     summary: Returns the number of InkStrokes in the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +72,8 @@ methods:
       Gets a InkStroke object by ID or by its index in the collection.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +94,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a InkStroke on its position in the collection.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

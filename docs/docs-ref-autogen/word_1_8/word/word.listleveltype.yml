@@ -5,20 +5,15 @@ package: word!
 fullName: Word.ListLevelType
 summary: Represents the type of list level.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ListData.levelTypes](/javascript/api/word/word.interfaces.listdata#leveltypes-member)
-  \]
-
-  - \[ [Word.List.levelTypes](/javascript/api/word/word.list#leveltypes-member)
-  \]
+  - [Word.List.levelTypes](/javascript/api/word/word.list#leveltypes-member) \]
 
   #### Examples
 
@@ -73,8 +68,8 @@ fields:
       Represents the bullet type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bullet"'
   - name: number
     uid: word!Word.ListLevelType.number:member
@@ -83,8 +78,8 @@ fields:
       Represents the numbering type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Number"'
   - name: picture
     uid: word!Word.ListLevelType.picture:member
@@ -93,6 +88,6 @@ fields:
       Represents the picture type.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Picture"'

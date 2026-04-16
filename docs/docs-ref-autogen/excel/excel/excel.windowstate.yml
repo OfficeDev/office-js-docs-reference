@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.WindowState
 summary: Specifies the display state of a window.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.WindowData.windowState](/javascript/api/excel/excel.interfaces.windowdata#windowstate-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WindowUpdateData.windowState](/javascript/api/excel/excel.interfaces.windowupdatedata#windowstate-member)
-  \]
-
-  - \[
+  -
   [Excel.Window.windowState](/javascript/api/excel/excel.window#windowstate-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       The window is maximized to fill the entire screen.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"maximized"'
   - name: minimized
     uid: excel!Excel.WindowState.minimized:member
@@ -44,8 +36,8 @@ fields:
       The window is minimized and collapsed to the taskbar.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"minimized"'
   - name: normal
     uid: excel!Excel.WindowState.normal:member
@@ -54,6 +46,6 @@ fields:
       The window is displayed in normal size and can be moved or resized.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"normal"'

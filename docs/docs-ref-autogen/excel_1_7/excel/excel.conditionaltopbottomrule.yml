@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ConditionalTopBottomRule
 summary: Represents the rule of the top/bottom conditional format.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TopBottomConditionalFormatData.rule](/javascript/api/excel/excel.interfaces.topbottomconditionalformatdata#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.topbottomconditionalformatupdatedata#rule-member)
-  \]
-
-  - \[
+  -
   [Excel.TopBottomConditionalFormat.rule](/javascript/api/excel/excel.topbottomconditionalformat#rule-member)
   \]
 
@@ -36,8 +28,8 @@ properties:
       The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent
       ranks.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +43,8 @@ properties:
     fullName: type
     summary: Format values based on the top or bottom rank.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

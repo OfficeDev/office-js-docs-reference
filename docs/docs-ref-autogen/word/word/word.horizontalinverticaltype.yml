@@ -5,22 +5,14 @@ package: word!
 fullName: Word.HorizontalInVerticalType
 summary: Specifies the format for horizontal text set within vertical text.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.RangeData.horizontalInVertical](/javascript/api/word/word.interfaces.rangedata#horizontalinvertical-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeUpdateData.horizontalInVertical](/javascript/api/word/word.interfaces.rangeupdatedata#horizontalinvertical-member)
-  \]
-
-  - \[
+  -
   [Word.Range.horizontalInVertical](/javascript/api/word/word.range#horizontalinvertical-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       The horizontal text is sized to fit in the line of vertical text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FitInLine"'
   - name: none
     uid: word!Word.HorizontalInVerticalType.none:member
@@ -44,8 +36,8 @@ fields:
       No formatting is applied to the horizontal text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: resizeLine
     uid: word!Word.HorizontalInVerticalType.resizeLine:member
@@ -54,6 +46,6 @@ fields:
       The line of vertical text is sized to accommodate the horizontal text.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ResizeLine"'

@@ -7,34 +7,17 @@ summary: >-
   Represents how Word interprets the rule used to determine the height or width
   of a [Word.Frame](xref:word!Word.Frame:class)<!-- -->.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Frame.heightRule](/javascript/api/word/word.frame#heightrule-member) \]
-
-  - \[ [Word.Frame.widthRule](/javascript/api/word/word.frame#widthrule-member)
+  - [Word.Frame.heightRule](/javascript/api/word/word.frame#heightrule-member)
   \]
 
-  - \[
-  [Word.Interfaces.FrameData.heightRule](/javascript/api/word/word.interfaces.framedata#heightrule-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FrameData.widthRule](/javascript/api/word/word.interfaces.framedata#widthrule-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FrameUpdateData.heightRule](/javascript/api/word/word.interfaces.frameupdatedata#heightrule-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FrameUpdateData.widthRule](/javascript/api/word/word.interfaces.frameupdatedata#widthrule-member)
-  \]
+  - [Word.Frame.widthRule](/javascript/api/word/word.frame#widthrule-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -47,8 +30,8 @@ fields:
       specified by the `height` property or `width` property.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AtLeast"'
   - name: auto
     uid: word!Word.FrameSizeRule.auto:member
@@ -58,8 +41,8 @@ fields:
       the frame.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Auto"'
   - name: exact
     uid: word!Word.FrameSizeRule.exact:member
@@ -69,6 +52,6 @@ fields:
       property or `width` property.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Exact"'

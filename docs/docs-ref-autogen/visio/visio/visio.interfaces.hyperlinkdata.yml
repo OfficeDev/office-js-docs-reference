@@ -6,21 +6,7 @@ fullName: Visio.Interfaces.HyperlinkData
 summary: >-
   An interface describing the data returned by calling `hyperlink.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.HyperlinkCollectionData.items](/javascript/api/visio/visio.interfaces.hyperlinkcollectiondata#items-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.HyperlinkCollectionUpdateData.items](/javascript/api/visio/visio.interfaces.hyperlinkcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeData.hyperlinks](/javascript/api/visio/visio.interfaces.shapedata#hyperlinks-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: address
     summary: Gets the address of the Hyperlink object. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +33,8 @@ properties:
     fullName: description
     summary: Gets the description of a hyperlink. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +50,8 @@ properties:
       Gets the extra URL request information used to resolve the hyperlink's
       URL. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +65,8 @@ properties:
     fullName: subAddress
     summary: Gets the sub-address of the Hyperlink object. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

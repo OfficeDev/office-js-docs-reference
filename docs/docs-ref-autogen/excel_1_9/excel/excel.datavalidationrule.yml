@@ -8,23 +8,15 @@ summary: >-
   only use one of them at a time according the `Excel.DataValidationType`<!--
   -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataValidation.rule](/javascript/api/excel/excel.datavalidation#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataValidationData.rule](/javascript/api/excel/excel.interfaces.datavalidationdata#rule-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataValidationUpdateData.rule](/javascript/api/excel/excel.interfaces.datavalidationupdatedata#rule-member)
   \]
 
 isPreview: false
@@ -37,8 +29,8 @@ properties:
     fullName: custom
     summary: Custom data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -52,8 +44,8 @@ properties:
     fullName: date
     summary: Date data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +59,8 @@ properties:
     fullName: decimal
     summary: Decimal data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -82,8 +74,8 @@ properties:
     fullName: list
     summary: List data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -131,8 +123,8 @@ properties:
     fullName: textLength
     summary: Text length data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -146,8 +138,8 @@ properties:
     fullName: time
     summary: Time data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -161,8 +153,8 @@ properties:
     fullName: wholeNumber
     summary: Whole number data validation criteria.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -199,7 +191,7 @@ properties:
           rankingRange.dataValidation.errorAlert = {
               message: "Sorry, only positive numbers are allowed",
               showAlert: true,
-              style: "Stop",
+              style: Excel.DataValidationAlertStyle.stop,
               title: "Negative Number Entered"
           };
 

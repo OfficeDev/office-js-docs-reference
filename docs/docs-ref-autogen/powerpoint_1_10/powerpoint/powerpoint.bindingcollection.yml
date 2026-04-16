@@ -7,16 +7,15 @@ summary: >-
   Represents the collection of all the binding objects that are part of the
   presentation.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Presentation.bindings](/javascript/api/powerpoint/powerpoint.presentation#bindings-member)
   \]
 
@@ -101,9 +100,8 @@ methods:
       Adds a new binding to a particular Shape. If the provided ID is already
       being used by a binding, the existing binding will be overwritten.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -175,9 +173,8 @@ methods:
       Adds a new binding to a particular Shape. If the provided ID is already
       being used by a binding, the existing binding will be overwritten.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -206,9 +203,8 @@ methods:
       Adds a new binding based on the current selection. If the selection has
       multiple areas, the `InvalidReference` error will be returned.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -234,9 +230,8 @@ methods:
       Adds a new binding based on the current selection. If the selection has
       multiple areas, the `InvalidReference` error will be returned.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -258,9 +253,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of bindings in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -277,9 +271,8 @@ methods:
       Gets a binding object by ID. Throws an ItemNotFoundException if there's no
       binding with that ID.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -323,9 +316,8 @@ methods:
       InvalidArgumentException if the index less than 0, or greater than or
       equal to the count of items in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -349,9 +341,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

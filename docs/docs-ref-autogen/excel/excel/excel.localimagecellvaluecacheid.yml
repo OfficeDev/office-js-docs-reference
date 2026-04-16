@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.LocalImageCellValueCacheId
 summary: The UID of a previously cached image.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.LocalImageCellValue.image](/javascript/api/excel/excel.localimagecellvalue#image-member)
   \]
 
@@ -26,9 +26,8 @@ properties:
     fullName: cachedUid
     summary: Represents the image's UID as it appears in the cache.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

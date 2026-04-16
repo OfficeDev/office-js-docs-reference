@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.TagLoadOptions
 summary: Represents a single tag in the slide.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +37,8 @@ properties:
       `TagCollection` and always stored as uppercase letters within the
       document.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +52,8 @@ properties:
     fullName: value
     summary: Gets the value of the tag.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

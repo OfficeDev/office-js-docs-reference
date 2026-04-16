@@ -6,17 +6,7 @@ fullName: Word.Interfaces.NoteItemData
 summary: >-
   An interface describing the data returned by calling `noteItem.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.NoteItemCollectionData.items](/javascript/api/word/word.interfaces.noteitemcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.NoteItemCollectionUpdateData.items](/javascript/api/word/word.interfaces.noteitemcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +20,8 @@ properties:
       Represents the body object of the note item. It's the portion of the text
       within the footnote or endnote.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -45,8 +35,8 @@ properties:
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +50,8 @@ properties:
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -8,9 +8,8 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
   when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission level
@@ -27,7 +26,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.MailboxEvent.completed](/javascript/api/outlook/office.mailboxevent#completed-member)
   \]
 
@@ -90,9 +89,8 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -126,9 +124,8 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -197,10 +194,8 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function
-      command
+      [API set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function command
       support)](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -287,9 +282,8 @@ properties:
       add-in for processing when the applicable button is selected from the
       Smart Alerts dialog.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -361,9 +355,8 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -409,9 +402,8 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level

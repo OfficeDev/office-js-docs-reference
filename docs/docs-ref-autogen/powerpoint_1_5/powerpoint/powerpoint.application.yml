@@ -5,15 +5,14 @@ package: powerpoint!
 fullName: PowerPoint.Application
 summary: Represents the PowerPoint application that manages the presentation.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.RequestContext.application](/javascript/api/powerpoint/powerpoint.requestcontext#application-member)
   \]
 

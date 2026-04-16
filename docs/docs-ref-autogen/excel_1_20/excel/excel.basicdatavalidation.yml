@@ -5,22 +5,22 @@ package: excel!
 fullName: Excel.BasicDataValidation
 summary: Represents the basic type data validation criteria.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataValidationRule.decimal](/javascript/api/excel/excel.datavalidationrule#decimal-member)
   \]
 
-  - \[
+  -
   [Excel.DataValidationRule.textLength](/javascript/api/excel/excel.datavalidationrule#textlength-member)
   \]
 
-  - \[
+  -
   [Excel.DataValidationRule.wholeNumber](/javascript/api/excel/excel.datavalidationrule#wholenumber-member)
   \]
 
@@ -45,8 +45,8 @@ properties:
       returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)",
       etc.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +67,8 @@ properties:
       retrieving the value, it will always be returned as a string formula, for
       example: "=10", "=A1", "=SUM(A1:B5)", etc.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -82,8 +82,8 @@ properties:
     fullName: operator
     summary: The operator to use for validating the data.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

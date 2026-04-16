@@ -5,8 +5,8 @@ package: word!
 fullName: Word.RangeCollection
 summary: Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples

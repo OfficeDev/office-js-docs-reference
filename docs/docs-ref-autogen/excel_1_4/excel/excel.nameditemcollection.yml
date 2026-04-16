@@ -7,18 +7,17 @@ summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or
   worksheet, depending on how it was reached.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Workbook.names](/javascript/api/excel/excel.workbook#names-member)
-  \]
+  - [Excel.Workbook.names](/javascript/api/excel/excel.workbook#names-member) \]
 
-  - \[
-  [Excel.Worksheet.names](/javascript/api/excel/excel.worksheet#names-member) \]
+  - [Excel.Worksheet.names](/javascript/api/excel/excel.worksheet#names-member)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -59,8 +58,8 @@ methods:
     fullName: add(name, reference, comment)
     summary: Adds a new name to the collection of the given scope.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -111,8 +110,8 @@ methods:
       Adds a new name to the collection of the given scope using the user's
       locale for the formula.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -139,8 +138,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of named items in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -155,8 +154,8 @@ methods:
     fullName: getItem(name)
     summary: Gets a `NamedItem` object using its name.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -197,8 +196,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

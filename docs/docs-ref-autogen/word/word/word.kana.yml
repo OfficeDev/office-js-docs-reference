@@ -5,22 +5,14 @@ package: word!
 fullName: Word.Kana
 summary: Specifies the Kana type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.RangeData.kana](/javascript/api/word/word.interfaces.rangedata#kana-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeUpdateData.kana](/javascript/api/word/word.interfaces.rangeupdatedata#kana-member)
-  \]
-
-  - \[ [Word.Range.kana](/javascript/api/word/word.range#kana-member) \]
+  - [Word.Range.kana](/javascript/api/word/word.range#kana-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +24,8 @@ fields:
       Hiragana Kana type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.Kana.katakana:member
@@ -42,6 +34,6 @@ fields:
       Katakana Kana type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Katakana"'

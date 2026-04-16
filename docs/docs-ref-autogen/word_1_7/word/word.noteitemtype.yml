@@ -5,19 +5,15 @@ package: word!
 fullName: Word.NoteItemType
 summary: Note item type.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.NoteItemData.type](/javascript/api/word/word.interfaces.noteitemdata#type-member)
-  \]
-
-  - \[ [Word.NoteItem.type](/javascript/api/word/word.noteitem#type-member) \]
+  - [Word.NoteItem.type](/javascript/api/word/word.noteitem#type-member) \]
 
   #### Examples
 
@@ -59,8 +55,8 @@ fields:
       Endnote type.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Endnote"'
   - name: footnote
     uid: word!Word.NoteItemType.footnote:member
@@ -69,6 +65,6 @@ fields:
       Footnote type.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Footnote"'

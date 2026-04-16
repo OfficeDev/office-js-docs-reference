@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartMapOptionsUpdateData
 summary: >-
   An interface for updating data on the `ChartMapOptions` object, for use in
   `chartMapOptions.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.mapOptions](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#mapoptions-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: labelStrategy
     summary: Specifies the series map labels strategy of a region map chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -43,8 +37,8 @@ properties:
     fullName: level
     summary: Specifies the series mapping level of a region map chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -63,8 +57,8 @@ properties:
     fullName: projectionType
     summary: Specifies the series projection type of a region map chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

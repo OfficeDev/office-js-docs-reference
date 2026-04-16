@@ -5,34 +5,34 @@ package: excel!
 fullName: Excel.EventSource
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAddedEventArgs.source](/javascript/api/excel/excel.chartaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.ChartDeletedEventArgs.source](/javascript/api/excel/excel.chartdeletedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.TableChangedEventArgs.source](/javascript/api/excel/excel.tablechangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetAddedEventArgs.source](/javascript/api/excel/excel.worksheetaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetChangedEventArgs.source](/javascript/api/excel/excel.worksheetchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetDeletedEventArgs.source](/javascript/api/excel/excel.worksheetdeletedeventargs#source-member)
   \]
 
@@ -46,8 +46,8 @@ fields:
       Local means the event comes from a local user session.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Local"'
   - name: remote
     uid: excel!Excel.EventSource.remote:member
@@ -56,6 +56,6 @@ fields:
       Remote means the event comes from a remote user session.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Remote"'

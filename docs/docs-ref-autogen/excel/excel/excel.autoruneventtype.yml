@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.AutorunEventType
 summary: Specifies the type of autorun event.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.AutorunEventCompletedOptions.autorunEventType](/javascript/api/excel/excel.autoruneventcompletedoptions#autoruneventtype-member)
   \]
 
@@ -26,9 +26,8 @@ fields:
       The autorun event type is triggered when the document is saved.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OnDocumentSave"'
   - name: onDocumentSaveAs
     uid: excel!Excel.AutorunEventType.onDocumentSaveAs:member
@@ -38,9 +37,8 @@ fields:
       file.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OnDocumentSaveAs"'
   - name: unknown
     uid: excel!Excel.AutorunEventType.unknown:member
@@ -49,7 +47,6 @@ fields:
       The autorun event type is unknown.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'

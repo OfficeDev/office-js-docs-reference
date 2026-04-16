@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.PrintErrorType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PageLayoutData.printErrors](/javascript/api/excel/excel.interfaces.pagelayoutdata#printerrors-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PageLayoutUpdateData.printErrors](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#printerrors-member)
-  \]
-
-  - \[
+  -
   [Excel.PageLayout.printErrors](/javascript/api/excel/excel.pagelayout#printerrors-member)
   \]
 
@@ -31,27 +23,27 @@ fields:
     uid: excel!Excel.PrintErrorType.asDisplayed:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AsDisplayed"'
   - name: blank
     uid: excel!Excel.PrintErrorType.blank:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Blank"'
   - name: dash
     uid: excel!Excel.PrintErrorType.dash:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Dash"'
   - name: notAvailable
     uid: excel!Excel.PrintErrorType.notAvailable:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NotAvailable"'

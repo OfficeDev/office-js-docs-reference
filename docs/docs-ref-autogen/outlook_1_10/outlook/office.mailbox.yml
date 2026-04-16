@@ -29,6 +29,7 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
   #### Examples
 
 
@@ -172,9 +173,8 @@ properties:
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email
       account.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -312,9 +312,8 @@ properties:
       Gets an object that provides methods to manage the categories master list
       associated with a mailbox.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -401,9 +400,8 @@ properties:
     fullName: restUrl
     summary: Gets the URL of the REST endpoint for this email account.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -494,9 +492,8 @@ methods:
       Adds an event handler for a supported event. Events are only available in
       task pane add-ins.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -604,9 +601,8 @@ methods:
       Adds an event handler for a supported event. Events are only available in
       task pane add-ins.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -674,9 +670,8 @@ methods:
     fullName: convertToEwsId(id, restVersion)
     summary: Converts a supported ID into the Exchange Web Services (EWS) format.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -844,9 +839,8 @@ methods:
     fullName: convertToRestId(id, restVersion)
     summary: Converts a supported ID into REST format.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1027,9 +1021,8 @@ methods:
       appointment, a blank pane opens on the client computer or device, and no
       error message is returned.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1111,9 +1104,8 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1213,9 +1205,8 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1272,9 +1263,8 @@ methods:
       message will be displayed on the client computer, and no error message is
       returned.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1363,9 +1353,8 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1463,9 +1452,8 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1530,9 +1518,8 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1629,9 +1616,8 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1747,9 +1733,8 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1800,9 +1785,8 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1870,9 +1854,8 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -1966,9 +1949,8 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -2019,9 +2001,8 @@ methods:
 
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -2229,9 +2210,8 @@ methods:
 
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
+      [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -2708,9 +2688,8 @@ methods:
       The `makeEwsRequestAsync` method sends an EWS request on behalf of the
       add-in to Exchange.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -2897,9 +2876,8 @@ methods:
       Removes the event handlers for a supported event type. Events are only
       available in task pane add-ins.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -2968,9 +2946,8 @@ methods:
       Removes the event handlers for a supported event type. Events are only
       available in task pane add-ins.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

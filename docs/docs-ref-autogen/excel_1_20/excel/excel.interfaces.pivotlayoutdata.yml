@@ -27,9 +27,8 @@ properties:
       and is used to determine whether they wish to hear the description of the
       content.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +51,8 @@ properties:
       and is used to determine whether they wish to hear the description of the
       content.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,8 +68,8 @@ properties:
       Specifies if formatting will be automatically formatted when it's
       refreshed or when fields are moved.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +88,8 @@ properties:
       this value does not set that property to `true`<!-- -->. By default, this
       is an empty string.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +103,8 @@ properties:
     fullName: enableFieldList
     summary: Specifies if the field list can be shown in the UI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +122,8 @@ properties:
       value of `emptyCellText` persists when this property is set to `false`<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -144,8 +139,8 @@ properties:
       This property indicates the PivotLayoutType of all fields on the
       PivotTable. If fields have different states, this will be null.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -164,8 +159,8 @@ properties:
       recalculated by operations such as pivoting, sorting, or changing page
       field items.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -179,8 +174,8 @@ properties:
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -196,9 +191,8 @@ properties:
       Specifies whether the PivotTable displays field headers (field captions
       and filter drop-downs).
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -212,8 +206,8 @@ properties:
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -229,8 +223,8 @@ properties:
       This property indicates the `SubtotalLocationType` of all fields on the
       PivotTable. If fields have different states, this will be `null`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

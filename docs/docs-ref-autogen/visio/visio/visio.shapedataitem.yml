@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.ShapeDataItem
 summary: Represents the ShapeDataItem.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.ShapeDataItemCollection.items](/javascript/api/visio/visio.shapedataitemcollection#items-member)
   \]
 
@@ -42,9 +41,8 @@ properties:
     fullName: format
     summary: A string that specifies the format of the shape data item.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     fullName: formattedValue
     summary: A string that specifies the formatted value of the shape data item.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +71,8 @@ properties:
     fullName: label
     summary: A string that specifies the label of the shape data item.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +86,8 @@ properties:
     fullName: value
     summary: A string that specifies the value of the shape data item.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

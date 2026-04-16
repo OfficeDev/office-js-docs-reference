@@ -5,22 +5,14 @@ package: word!
 fullName: Word.RevisionsBalloonWidthType
 summary: Specifies the width type for revision balloons in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.revisionsBalloonWidthType](/javascript/api/word/word.interfaces.viewdata#revisionsballoonwidthtype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.revisionsBalloonWidthType](/javascript/api/word/word.interfaces.viewupdatedata#revisionsballoonwidthtype-member)
-  \]
-
-  - \[
+  -
   [Word.View.revisionsBalloonWidthType](/javascript/api/word/word.view#revisionsballoonwidthtype-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Balloon width as a percentage.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Percent"'
   - name: points
     uid: word!Word.RevisionsBalloonWidthType.points:member
@@ -44,6 +36,6 @@ fields:
       Balloon width in points.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Points"'

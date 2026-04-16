@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.DataSourceType
 summary: Represents the type of source for the data connection.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +18,8 @@ fields:
       Microsoft Excel workbook.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Excel"'
   - name: unknown
     uid: visio!Visio.DataSourceType.unknown:member
@@ -30,7 +28,6 @@ fields:
       Unknown Data Source.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Unknown"'

@@ -7,16 +7,8 @@ summary: >-
   Defines the culturally appropriate format of displaying numbers. This is based
   on current system culture settings.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CultureInfoLoadOptions.numberFormat](/javascript/api/excel/excel.interfaces.cultureinfoloadoptions#numberformat-member)
-  \]
+  [API set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -47,9 +39,8 @@ properties:
       Gets the string used as the decimal separator for numeric values. This is
       based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +57,8 @@ properties:
       Gets the string used to separate groups of digits to the left of the
       decimal for numeric values. This is based on current system settings.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

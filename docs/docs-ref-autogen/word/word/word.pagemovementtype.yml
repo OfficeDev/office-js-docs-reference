@@ -5,22 +5,14 @@ package: word!
 fullName: Word.PageMovementType
 summary: Specifies the page movement type in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.pageMovementType](/javascript/api/word/word.interfaces.viewdata#pagemovementtype-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.pageMovementType](/javascript/api/word/word.interfaces.viewupdatedata#pagemovementtype-member)
-  \]
-
-  - \[
+  -
   [Word.View.pageMovementType](/javascript/api/word/word.view#pagemovementtype-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Side to side.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SideToSide"'
   - name: vertical
     uid: word!Word.PageMovementType.vertical:member
@@ -44,6 +36,6 @@ fields:
       Vertical.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Vertical"'

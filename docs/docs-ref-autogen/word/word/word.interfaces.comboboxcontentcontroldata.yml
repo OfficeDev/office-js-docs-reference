@@ -6,13 +6,7 @@ fullName: Word.Interfaces.ComboBoxContentControlData
 summary: >-
   An interface describing the data returned by calling
   `comboBoxContentControl.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ContentControlData.comboBoxContentControl](/javascript/api/word/word.interfaces.contentcontroldata#comboboxcontentcontrol-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

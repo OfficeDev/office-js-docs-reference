@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.CalcErrorCellValueSubType
 summary: Represents types of \#CALC! errors.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CalcErrorCellValue.errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#errorsubtype-member)
   \]
 
@@ -27,9 +27,8 @@ fields:
       \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ArrayOfArrays"'
   - name: arrayOfRanges
     uid: excel!Excel.CalcErrorCellValueSubType.arrayOfRanges:member
@@ -39,9 +38,8 @@ fields:
       \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ArrayOfRanges"'
   - name: dataTableReferencedPendingFormula
     uid: >-
@@ -52,9 +50,8 @@ fields:
       formula is likely asynchronous. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataTableReferencedPendingFormula"'
   - name: emptyArray
     uid: excel!Excel.CalcErrorCellValueSubType.emptyArray:member
@@ -64,9 +61,8 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"EmptyArray"'
   - name: eRegexReplaceCharLimit
     uid: excel!Excel.CalcErrorCellValueSubType.eRegexReplaceCharLimit:member
@@ -76,9 +72,8 @@ fields:
       error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ERegexReplaceCharLimit"'
   - name: externalQueryRef
     uid: excel!Excel.CalcErrorCellValueSubType.externalQueryRef:member
@@ -88,9 +83,8 @@ fields:
       workbook. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalQueryRef"'
   - name: functionInCell
     uid: excel!Excel.CalcErrorCellValueSubType.functionInCell:member
@@ -100,9 +94,8 @@ fields:
       reference. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"FunctionInCell"'
   - name: imageExceedsSizeLimit
     uid: excel!Excel.CalcErrorCellValueSubType.imageExceedsSizeLimit:member
@@ -113,9 +106,8 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ImageExceedsSizeLimit"'
   - name: invalidPythonObject
     uid: excel!Excel.CalcErrorCellValueSubType.invalidPythonObject:member
@@ -126,9 +118,8 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"InvalidPythonObject"'
   - name: lambdaInCell
     uid: excel!Excel.CalcErrorCellValueSubType.lambdaInCell:member
@@ -138,9 +129,8 @@ fields:
       as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"LambdaInCell"'
   - name: pythonGridQuery
     uid: excel!Excel.CalcErrorCellValueSubType.pythonGridQuery:member
@@ -150,9 +140,8 @@ fields:
       Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PythonGridQuery"'
   - name: pythonPowerQueryDataUploadEtagChanged
     uid: >-
@@ -163,9 +152,8 @@ fields:
       \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PythonPowerQueryDataUploadEtagChanged"'
   - name: pythonPowerQueryDataUploadSizeLimitExceeded
     uid: >-
@@ -176,9 +164,8 @@ fields:
       external code service. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PythonPowerQueryDataUploadSizeLimitExceeded"'
   - name: queryInCell
     uid: excel!Excel.CalcErrorCellValueSubType.queryInCell:member
@@ -188,9 +175,8 @@ fields:
       Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"QueryInCell"'
   - name: requestTooLarge
     uid: excel!Excel.CalcErrorCellValueSubType.requestTooLarge:member
@@ -200,9 +186,8 @@ fields:
       external code service. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"RequestTooLarge"'
   - name: textOverflow
     uid: excel!Excel.CalcErrorCellValueSubType.textOverflow:member
@@ -215,9 +200,8 @@ fields:
       counts as multiple characters toward the maximum character limit.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TextOverflow"'
   - name: tooDeeplyNested
     uid: excel!Excel.CalcErrorCellValueSubType.tooDeeplyNested:member
@@ -227,9 +211,8 @@ fields:
       another `CellValue`<!-- -->. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TooDeeplyNested"'
   - name: tooManyCells
     uid: excel!Excel.CalcErrorCellValueSubType.tooManyCells:member
@@ -239,9 +222,8 @@ fields:
       error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"TooManyCells"'
   - name: unexpectedReturnValue
     uid: excel!Excel.CalcErrorCellValueSubType.unexpectedReturnValue:member
@@ -251,9 +233,8 @@ fields:
       result. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"UnexpectedReturnValue"'
   - name: uninitializedPythonObject
     uid: excel!Excel.CalcErrorCellValueSubType.uninitializedPythonObject:member
@@ -263,9 +244,8 @@ fields:
       \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"UninitializedPythonObject"'
   - name: unknown
     uid: excel!Excel.CalcErrorCellValueSubType.unknown:member
@@ -274,9 +254,8 @@ fields:
       An unknown type of error. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'
   - name: unsupportedLifting
     uid: excel!Excel.CalcErrorCellValueSubType.unsupportedLifting:member
@@ -286,7 +265,6 @@ fields:
       Dynamic UDF) over an array. Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"UnsupportedLifting"'

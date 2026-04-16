@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ExternalErrorCellValueSubType
 summary: Represents types of \#EXTERNAL! errors.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ExternalErrorCellValue.errorSubType](/javascript/api/excel/excel.externalerrorcellvalue#errorsubtype-member)
   \]
 
@@ -26,7 +26,6 @@ fields:
       An unknown type of error. Displays as error type \#EXTERNAL! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'

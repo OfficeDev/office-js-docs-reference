@@ -20,9 +20,8 @@ properties:
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +35,8 @@ properties:
     fullName: view
     summary: Returns the view of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

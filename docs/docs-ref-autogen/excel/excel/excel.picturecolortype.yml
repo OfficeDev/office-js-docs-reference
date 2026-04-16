@@ -7,34 +7,18 @@ summary: >-
   Specifies the color transformation of a picture in the header or footer of a
   worksheet.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.HeaderFooterPicture.colorType](/javascript/api/excel/excel.headerfooterpicture#colortype-member)
   \]
 
-  - \[
-  [Excel.Image.colorType](/javascript/api/excel/excel.image#colortype-member) \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterPictureData.colorType](/javascript/api/excel/excel.interfaces.headerfooterpicturedata#colortype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterPictureUpdateData.colorType](/javascript/api/excel/excel.interfaces.headerfooterpictureupdatedata#colortype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ImageData.colorType](/javascript/api/excel/excel.interfaces.imagedata#colortype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ImageUpdateData.colorType](/javascript/api/excel/excel.interfaces.imageupdatedata#colortype-member)
+  - [Excel.Image.colorType](/javascript/api/excel/excel.image#colortype-member)
   \]
 
 isPreview: false
@@ -47,8 +31,8 @@ fields:
       Default color transformation.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: blackAndWhite
     uid: excel!Excel.PictureColorType.blackAndWhite:member
@@ -57,8 +41,8 @@ fields:
       Black-and-white transformation.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BlackAndWhite"'
   - name: grayScale
     uid: excel!Excel.PictureColorType.grayScale:member
@@ -67,8 +51,8 @@ fields:
       Grayscale transformation.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"GrayScale"'
   - name: mixed
     uid: excel!Excel.PictureColorType.mixed:member
@@ -77,8 +61,8 @@ fields:
       Mixed transformation.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Mixed"'
   - name: watermark
     uid: excel!Excel.PictureColorType.watermark:member
@@ -87,6 +71,6 @@ fields:
       Watermark transformation.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Watermark"'

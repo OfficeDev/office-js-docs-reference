@@ -5,35 +5,19 @@ package: excel!
 fullName: Excel.ChartAxisTickMark
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxis.majorTickMark](/javascript/api/excel/excel.chartaxis#majortickmark-member)
   \]
 
-  - \[
+  -
   [Excel.ChartAxis.minorTickMark](/javascript/api/excel/excel.chartaxis#minortickmark-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.majorTickMark](/javascript/api/excel/excel.interfaces.chartaxisdata#majortickmark-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.minorTickMark](/javascript/api/excel/excel.interfaces.chartaxisdata#minortickmark-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisUpdateData.majorTickMark](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#majortickmark-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisUpdateData.minorTickMark](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#minortickmark-member)
   \]
 
 isPreview: false
@@ -43,27 +27,27 @@ fields:
     uid: excel!Excel.ChartAxisTickMark.cross:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Cross"'
   - name: inside
     uid: excel!Excel.ChartAxisTickMark.inside:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Inside"'
   - name: none
     uid: excel!Excel.ChartAxisTickMark.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: outside
     uid: excel!Excel.ChartAxisTickMark.outside:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Outside"'

@@ -6,29 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeFormat` object, for use
   in `conditionalRangeFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CellValueConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatupdatedata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.customconditionalformatupdatedata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatupdatedata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TextConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.textconditionalformatupdatedata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TopBottomConditionalFormatUpdateData.format](/javascript/api/excel/excel.interfaces.topbottomconditionalformatupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +20,8 @@ properties:
       Collection of border objects that apply to the overall conditional format
       range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +38,8 @@ properties:
     fullName: fill
     summary: Returns the fill object defined on the overall conditional format range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -78,8 +56,8 @@ properties:
     fullName: font
     summary: Returns the font object defined on the overall conditional format range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -101,8 +79,8 @@ properties:
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->. Cleared if `null` is passed in.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

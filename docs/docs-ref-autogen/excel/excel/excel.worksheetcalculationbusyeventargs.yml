@@ -7,18 +7,18 @@ summary: >-
   Provides information about the ranges that raised the `onCalculationBusy`
   event, which triggers when the calculation is in progress in a worksheet.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.onCalculationBusy](/javascript/api/excel/excel.worksheet#oncalculationbusy-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetCollection.onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#oncalculationbusy-member)
   \]
 
@@ -35,9 +35,8 @@ properties:
       calculation, the string is a comma-separated list of those range
       addresses.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -51,9 +50,8 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -67,9 +65,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -83,9 +80,8 @@ properties:
     fullName: worksheetId
     summary: The ID of the worksheet within which the calculation occurred.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

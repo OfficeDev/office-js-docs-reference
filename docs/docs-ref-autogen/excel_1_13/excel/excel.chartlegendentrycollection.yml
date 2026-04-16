@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartLegendEntryCollection
 summary: Represents a collection of legend entries.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartLegend.legendEntries](/javascript/api/excel/excel.chartlegend#legendentries-member)
   \]
 
@@ -55,8 +55,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of legend entries in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -71,8 +71,8 @@ methods:
     fullName: getItemAt(index)
     summary: Returns a legend entry at the given index.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

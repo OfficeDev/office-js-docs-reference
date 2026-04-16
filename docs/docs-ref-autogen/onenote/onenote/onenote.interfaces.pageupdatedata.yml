@@ -6,13 +6,7 @@ fullName: OneNote.Interfaces.PageUpdateData
 summary: >-
   An interface for updating data on the `Page` object, for use in `page.set({
   ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisUpdateData.page](/javascript/api/onenote/onenote.interfaces.inkanalysisupdatedata#page-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,9 +20,8 @@ properties:
       Text interpretation for the ink on the page. Returns null if there is no
       ink analysis information. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -44,9 +37,8 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -60,9 +52,8 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

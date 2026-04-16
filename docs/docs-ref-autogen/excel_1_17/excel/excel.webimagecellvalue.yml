@@ -7,14 +7,14 @@ summary: >-
   Represents the value of a cell containing an image downloaded from the
   internet.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.PlaceholderErrorCellValue.target](/javascript/api/excel/excel.placeholdererrorcellvalue#target-member)
   \]
 
@@ -30,9 +30,8 @@ properties:
       Represents the URL from which the image will be downloaded. This image
       must be hosted on a server that supports HTTPS.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -83,9 +82,8 @@ properties:
       Represents the alternate text that can be used in accessibility scenarios
       to describe what the image represents.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -101,9 +99,8 @@ properties:
       Represents attribution information to describe the source and license
       requirements for using this image.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +116,8 @@ properties:
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +136,8 @@ properties:
       `valuesAsJsonLocal` property, this string value aligns with the user's
       display locale.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -159,9 +154,8 @@ properties:
       provided the image. This information can be used for branding in image
       cards.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -177,9 +171,8 @@ properties:
       Represents the URL of a webpage with images that are considered related to
       this `WebImageCellValue`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -193,9 +186,8 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples

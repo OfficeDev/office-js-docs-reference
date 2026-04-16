@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.WorksheetProtection
 summary: Represents the protection of a worksheet object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.protection](/javascript/api/excel/excel.worksheet#protection-member)
   \]
 
@@ -41,8 +41,8 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -56,8 +56,8 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +151,8 @@ methods:
     fullName: protect(options, password)
     summary: Protects a worksheet. Fails if the worksheet has already been protected.
     remarks: >-
-      \[ [API set: ExcelApi 1.2 for options; 1.7 for
+      [API set: ExcelApi 1.2 for options; 1.7 for
       password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -228,9 +227,8 @@ methods:
     fullName: unprotect(password)
     summary: Unprotects a worksheet.
     remarks: >-
-      \[ [API set: ExcelApi 1.7 for
+      [API set: ExcelApi 1.7 for
       password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples

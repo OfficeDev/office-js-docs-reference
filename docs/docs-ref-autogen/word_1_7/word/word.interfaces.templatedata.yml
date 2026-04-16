@@ -6,17 +6,7 @@ fullName: Word.Interfaces.TemplateData
 summary: >-
   An interface describing the data returned by calling `template.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TemplateCollectionData.items](/javascript/api/word/word.interfaces.templatecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TemplateCollectionUpdateData.items](/javascript/api/word/word.interfaces.templatecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

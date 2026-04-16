@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.CloseBehavior
 summary: Specifies the close behavior for `Workbook.close`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples
@@ -34,8 +34,8 @@ fields:
       Save the possible changes before closing the workbook.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Save"'
   - name: skipSave
     uid: excel!Excel.CloseBehavior.skipSave:member
@@ -44,6 +44,6 @@ fields:
       Discard the possible changes when closing the workbook.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SkipSave"'

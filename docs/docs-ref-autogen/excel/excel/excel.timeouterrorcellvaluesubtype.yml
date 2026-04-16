@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.TimeoutErrorCellValueSubType
 summary: Represents types of \#TIMEOUT! errors.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.TimeoutErrorCellValue.errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#errorsubtype-member)
   \]
 
@@ -26,9 +26,8 @@ fields:
       Python function timed out. Displays as error type \#TIMEOUT! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"PythonTimeoutLimitReached"'
   - name: unknown
     uid: excel!Excel.TimeoutErrorCellValueSubType.unknown:member
@@ -37,7 +36,6 @@ fields:
       An unknown type of error. Displays as error type \#TIMEOUT! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'

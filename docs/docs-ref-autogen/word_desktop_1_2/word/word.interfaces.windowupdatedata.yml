@@ -6,13 +6,7 @@ fullName: Word.Interfaces.WindowUpdateData
 summary: >-
   An interface for updating data on the `Window` object, for use in
   `window.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.DocumentUpdateData.activeWindow](/javascript/api/word/word.interfaces.documentupdatedata#activewindow-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

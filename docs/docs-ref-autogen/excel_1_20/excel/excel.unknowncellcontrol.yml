@@ -8,8 +8,8 @@ summary: >-
   in a future version of Excel, and the current version of Excel doesn't know
   how to display this control.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false

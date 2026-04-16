@@ -6,25 +6,7 @@ fullName: Word.Interfaces.ListTemplateData
 summary: >-
   An interface describing the data returned by calling
   `listTemplate.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ListFormatData.listTemplate](/javascript/api/word/word.interfaces.listformatdata#listtemplate-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ListTemplateCollectionData.items](/javascript/api/word/word.interfaces.listtemplatecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ListTemplateCollectionUpdateData.items](/javascript/api/word/word.interfaces.listtemplatecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.StyleData.listTemplate](/javascript/api/word/word.interfaces.styledata#listtemplate-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -38,8 +20,8 @@ properties:
       Gets a `ListLevelCollection` object that represents all the levels for the
       list template.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +35,8 @@ properties:
     fullName: outlineNumbered
     summary: Specifies whether the list template is outline numbered.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

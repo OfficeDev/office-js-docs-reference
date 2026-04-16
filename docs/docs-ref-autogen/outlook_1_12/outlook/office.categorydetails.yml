@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.CategoryDetails
 summary: Represents a category's details like name and associated color.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -23,15 +23,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Categories.getAsync](/javascript/api/outlook/office.categories#getasync-member)
   \]
 
-  - \[
+  -
   [Office.MasterCategories.addAsync](/javascript/api/outlook/office.mastercategories#addasync-member)
   \]
 
-  - \[
+  -
   [Office.MasterCategories.getAsync](/javascript/api/outlook/office.mastercategories#getasync-member)
   \]
 

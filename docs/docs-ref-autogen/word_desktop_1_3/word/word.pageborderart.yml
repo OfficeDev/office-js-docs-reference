@@ -5,23 +5,15 @@ package: word!
 fullName: Word.PageBorderArt
 summary: Specifies the graphical page border setting of a page.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.BorderUniversal.artStyle](/javascript/api/word/word.borderuniversal#artstyle-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BorderUniversalData.artStyle](/javascript/api/word/word.interfaces.borderuniversaldata#artstyle-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BorderUniversalUpdateData.artStyle](/javascript/api/word/word.interfaces.borderuniversalupdatedata#artstyle-member)
   \]
 
 isPreview: false
@@ -34,8 +26,8 @@ fields:
       Represents a border with apple design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Apples"'
   - name: archedScallops
     uid: word!Word.PageBorderArt.archedScallops:member
@@ -44,8 +36,8 @@ fields:
       Represents a border with arched scallops design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ArchedScallops"'
   - name: babyPacifier
     uid: word!Word.PageBorderArt.babyPacifier:member
@@ -54,8 +46,8 @@ fields:
       Represents a border with baby pacifier design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BabyPacifier"'
   - name: babyRattle
     uid: word!Word.PageBorderArt.babyRattle:member
@@ -64,8 +56,8 @@ fields:
       Represents a border with baby rattle design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BabyRattle"'
   - name: balloons3Colors
     uid: word!Word.PageBorderArt.balloons3Colors:member
@@ -74,8 +66,8 @@ fields:
       Represents a border with three-color balloons design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Balloons3Colors"'
   - name: balloonsHotAir
     uid: word!Word.PageBorderArt.balloonsHotAir:member
@@ -84,8 +76,8 @@ fields:
       Represents a border with hot air balloons design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BalloonsHotAir"'
   - name: basicBlackDashes
     uid: word!Word.PageBorderArt.basicBlackDashes:member
@@ -94,8 +86,8 @@ fields:
       Represents a border with basic black dashes design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicBlackDashes"'
   - name: basicBlackDots
     uid: word!Word.PageBorderArt.basicBlackDots:member
@@ -104,8 +96,8 @@ fields:
       Represents a border with basic black dots design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicBlackDots"'
   - name: basicBlackSquares
     uid: word!Word.PageBorderArt.basicBlackSquares:member
@@ -114,8 +106,8 @@ fields:
       Represents a border with basic black squares design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicBlackSquares"'
   - name: basicThinLines
     uid: word!Word.PageBorderArt.basicThinLines:member
@@ -124,8 +116,8 @@ fields:
       Represents a border with basic thin lines design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicThinLines"'
   - name: basicWhiteDashes
     uid: word!Word.PageBorderArt.basicWhiteDashes:member
@@ -134,8 +126,8 @@ fields:
       Represents a border with basic white dashes design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicWhiteDashes"'
   - name: basicWhiteDots
     uid: word!Word.PageBorderArt.basicWhiteDots:member
@@ -144,8 +136,8 @@ fields:
       Represents a border with basic white dots design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicWhiteDots"'
   - name: basicWhiteSquares
     uid: word!Word.PageBorderArt.basicWhiteSquares:member
@@ -154,8 +146,8 @@ fields:
       Represents a border with basic white squares design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicWhiteSquares"'
   - name: basicWideInline
     uid: word!Word.PageBorderArt.basicWideInline:member
@@ -164,8 +156,8 @@ fields:
       Represents a border with basic wide inline design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicWideInline"'
   - name: basicWideMidline
     uid: word!Word.PageBorderArt.basicWideMidline:member
@@ -174,8 +166,8 @@ fields:
       Represents a border with basic wide midline design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicWideMidline"'
   - name: basicWideOutline
     uid: word!Word.PageBorderArt.basicWideOutline:member
@@ -184,8 +176,8 @@ fields:
       Represents a border with basic wide outline design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BasicWideOutline"'
   - name: bats
     uid: word!Word.PageBorderArt.bats:member
@@ -194,8 +186,8 @@ fields:
       Represents a border with bats design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Bats"'
   - name: birds
     uid: word!Word.PageBorderArt.birds:member
@@ -204,8 +196,8 @@ fields:
       Represents a border with birds design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Birds"'
   - name: birdsFlight
     uid: word!Word.PageBorderArt.birdsFlight:member
@@ -214,8 +206,8 @@ fields:
       Represents a border with birds in flight design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BirdsFlight"'
   - name: cabins
     uid: word!Word.PageBorderArt.cabins:member
@@ -224,8 +216,8 @@ fields:
       Represents a border with cabins design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Cabins"'
   - name: cakeSlice
     uid: word!Word.PageBorderArt.cakeSlice:member
@@ -234,8 +226,8 @@ fields:
       Represents a border with cake slice design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CakeSlice"'
   - name: candyCorn
     uid: word!Word.PageBorderArt.candyCorn:member
@@ -244,8 +236,8 @@ fields:
       Represents a border with candy corn design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CandyCorn"'
   - name: celticKnotwork
     uid: word!Word.PageBorderArt.celticKnotwork:member
@@ -254,8 +246,8 @@ fields:
       Represents a border with Celtic knotwork design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CelticKnotwork"'
   - name: certificateBanner
     uid: word!Word.PageBorderArt.certificateBanner:member
@@ -264,8 +256,8 @@ fields:
       Represents a border with certificate banner design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CertificateBanner"'
   - name: chainLink
     uid: word!Word.PageBorderArt.chainLink:member
@@ -274,8 +266,8 @@ fields:
       Represents a border with chain link design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ChainLink"'
   - name: champagneBottle
     uid: word!Word.PageBorderArt.champagneBottle:member
@@ -284,8 +276,8 @@ fields:
       Represents a border with champagne bottle design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ChampagneBottle"'
   - name: checkedBarBlack
     uid: word!Word.PageBorderArt.checkedBarBlack:member
@@ -294,8 +286,8 @@ fields:
       Represents a border with black checked bar design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CheckedBarBlack"'
   - name: checkedBarColor
     uid: word!Word.PageBorderArt.checkedBarColor:member
@@ -304,8 +296,8 @@ fields:
       Represents a border with colored checked bar design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CheckedBarColor"'
   - name: checkered
     uid: word!Word.PageBorderArt.checkered:member
@@ -314,8 +306,8 @@ fields:
       Represents a border with checkered design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Checkered"'
   - name: christmasTree
     uid: word!Word.PageBorderArt.christmasTree:member
@@ -324,8 +316,8 @@ fields:
       Represents a border with Christmas tree design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ChristmasTree"'
   - name: circlesLines
     uid: word!Word.PageBorderArt.circlesLines:member
@@ -334,8 +326,8 @@ fields:
       Represents a border with circles and lines design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CirclesLines"'
   - name: circlesRectangles
     uid: word!Word.PageBorderArt.circlesRectangles:member
@@ -344,8 +336,8 @@ fields:
       Represents a border with circles and rectangles design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CirclesRectangles"'
   - name: classicalWave
     uid: word!Word.PageBorderArt.classicalWave:member
@@ -354,8 +346,8 @@ fields:
       Represents a border with classical wave design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ClassicalWave"'
   - name: clocks
     uid: word!Word.PageBorderArt.clocks:member
@@ -364,8 +356,8 @@ fields:
       Represents a border with clocks design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Clocks"'
   - name: compass
     uid: word!Word.PageBorderArt.compass:member
@@ -374,8 +366,8 @@ fields:
       Represents a border with compass design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Compass"'
   - name: confetti
     uid: word!Word.PageBorderArt.confetti:member
@@ -384,8 +376,8 @@ fields:
       Represents a border with confetti design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Confetti"'
   - name: confettiGrays
     uid: word!Word.PageBorderArt.confettiGrays:member
@@ -394,8 +386,8 @@ fields:
       Represents a border with gray confetti design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ConfettiGrays"'
   - name: confettiOutline
     uid: word!Word.PageBorderArt.confettiOutline:member
@@ -404,8 +396,8 @@ fields:
       Represents a border with outline confetti design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ConfettiOutline"'
   - name: confettiStreamers
     uid: word!Word.PageBorderArt.confettiStreamers:member
@@ -414,8 +406,8 @@ fields:
       Represents a border with confetti streamers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ConfettiStreamers"'
   - name: confettiWhite
     uid: word!Word.PageBorderArt.confettiWhite:member
@@ -424,8 +416,8 @@ fields:
       Represents a border with white confetti design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ConfettiWhite"'
   - name: cornerTriangles
     uid: word!Word.PageBorderArt.cornerTriangles:member
@@ -434,8 +426,8 @@ fields:
       Represents a border with corner triangles design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CornerTriangles"'
   - name: couponCutoutDashes
     uid: word!Word.PageBorderArt.couponCutoutDashes:member
@@ -444,8 +436,8 @@ fields:
       Represents a border with coupon cutout dashes design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CouponCutoutDashes"'
   - name: couponCutoutDots
     uid: word!Word.PageBorderArt.couponCutoutDots:member
@@ -454,8 +446,8 @@ fields:
       Represents a border with coupon cutout dots design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CouponCutoutDots"'
   - name: crazyMaze
     uid: word!Word.PageBorderArt.crazyMaze:member
@@ -464,8 +456,8 @@ fields:
       Represents a border with crazy maze design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CrazyMaze"'
   - name: creaturesButterfly
     uid: word!Word.PageBorderArt.creaturesButterfly:member
@@ -474,8 +466,8 @@ fields:
       Represents a border with butterfly creatures design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CreaturesButterfly"'
   - name: creaturesFish
     uid: word!Word.PageBorderArt.creaturesFish:member
@@ -484,8 +476,8 @@ fields:
       Represents a border with fish creatures design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CreaturesFish"'
   - name: creaturesInsects
     uid: word!Word.PageBorderArt.creaturesInsects:member
@@ -494,8 +486,8 @@ fields:
       Represents a border with insects creatures design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CreaturesInsects"'
   - name: creaturesLadyBug
     uid: word!Word.PageBorderArt.creaturesLadyBug:member
@@ -504,8 +496,8 @@ fields:
       Represents a border with ladybug creatures design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CreaturesLadyBug"'
   - name: crossStitch
     uid: word!Word.PageBorderArt.crossStitch:member
@@ -514,8 +506,8 @@ fields:
       Represents a border with cross stitch design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"CrossStitch"'
   - name: cup
     uid: word!Word.PageBorderArt.cup:member
@@ -524,8 +516,8 @@ fields:
       Represents a border with cup design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Cup"'
   - name: decoArch
     uid: word!Word.PageBorderArt.decoArch:member
@@ -534,8 +526,8 @@ fields:
       Represents a border with deco arch design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DecoArch"'
   - name: decoArchColor
     uid: word!Word.PageBorderArt.decoArchColor:member
@@ -544,8 +536,8 @@ fields:
       Represents a border with colored deco arch design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DecoArchColor"'
   - name: decoBlocks
     uid: word!Word.PageBorderArt.decoBlocks:member
@@ -554,8 +546,8 @@ fields:
       Represents a border with deco blocks design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DecoBlocks"'
   - name: diamondsGray
     uid: word!Word.PageBorderArt.diamondsGray:member
@@ -564,8 +556,8 @@ fields:
       Represents a border with gray diamonds design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DiamondsGray"'
   - name: doubleD
     uid: word!Word.PageBorderArt.doubleD:member
@@ -574,8 +566,8 @@ fields:
       Represents a border with double D design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DoubleD"'
   - name: doubleDiamonds
     uid: word!Word.PageBorderArt.doubleDiamonds:member
@@ -584,8 +576,8 @@ fields:
       Represents a border with double diamonds design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DoubleDiamonds"'
   - name: earth1
     uid: word!Word.PageBorderArt.earth1:member
@@ -594,8 +586,8 @@ fields:
       Represents a border with Earth design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Earth1"'
   - name: earth2
     uid: word!Word.PageBorderArt.earth2:member
@@ -604,8 +596,8 @@ fields:
       Represents a border with Earth design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Earth2"'
   - name: eclipsingSquares1
     uid: word!Word.PageBorderArt.eclipsingSquares1:member
@@ -614,8 +606,8 @@ fields:
       Represents a border with eclipsing squares design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EclipsingSquares1"'
   - name: eclipsingSquares2
     uid: word!Word.PageBorderArt.eclipsingSquares2:member
@@ -624,8 +616,8 @@ fields:
       Represents a border with eclipsing squares design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EclipsingSquares2"'
   - name: eggsBlack
     uid: word!Word.PageBorderArt.eggsBlack:member
@@ -634,8 +626,8 @@ fields:
       Represents a border with black eggs design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EggsBlack"'
   - name: fans
     uid: word!Word.PageBorderArt.fans:member
@@ -644,8 +636,8 @@ fields:
       Represents a border with fans design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Fans"'
   - name: film
     uid: word!Word.PageBorderArt.film:member
@@ -654,8 +646,8 @@ fields:
       Represents a border with film design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Film"'
   - name: firecrackers
     uid: word!Word.PageBorderArt.firecrackers:member
@@ -664,8 +656,8 @@ fields:
       Represents a border with firecrackers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Firecrackers"'
   - name: flowersBlockPrint
     uid: word!Word.PageBorderArt.flowersBlockPrint:member
@@ -674,8 +666,8 @@ fields:
       Represents a border with block print flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersBlockPrint"'
   - name: flowersDaisies
     uid: word!Word.PageBorderArt.flowersDaisies:member
@@ -684,8 +676,8 @@ fields:
       Represents a border with daisies flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersDaisies"'
   - name: flowersModern1
     uid: word!Word.PageBorderArt.flowersModern1:member
@@ -694,8 +686,8 @@ fields:
       Represents a border with modern 1 flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersModern1"'
   - name: flowersModern2
     uid: word!Word.PageBorderArt.flowersModern2:member
@@ -704,8 +696,8 @@ fields:
       Represents a border with modern 2 flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersModern2"'
   - name: flowersPansy
     uid: word!Word.PageBorderArt.flowersPansy:member
@@ -714,8 +706,8 @@ fields:
       Represents a border with pansy flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersPansy"'
   - name: flowersRedRose
     uid: word!Word.PageBorderArt.flowersRedRose:member
@@ -724,8 +716,8 @@ fields:
       Represents a border with red rose flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersRedRose"'
   - name: flowersRoses
     uid: word!Word.PageBorderArt.flowersRoses:member
@@ -734,8 +726,8 @@ fields:
       Represents a border with roses flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersRoses"'
   - name: flowersTeacup
     uid: word!Word.PageBorderArt.flowersTeacup:member
@@ -744,8 +736,8 @@ fields:
       Represents a border with teacup and flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersTeacup"'
   - name: flowersTiny
     uid: word!Word.PageBorderArt.flowersTiny:member
@@ -754,8 +746,8 @@ fields:
       Represents a border with tiny flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"FlowersTiny"'
   - name: gems
     uid: word!Word.PageBorderArt.gems:member
@@ -764,8 +756,8 @@ fields:
       Represents a border with gems design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Gems"'
   - name: gingerbreadMan
     uid: word!Word.PageBorderArt.gingerbreadMan:member
@@ -774,8 +766,8 @@ fields:
       Represents a border with gingerbread man design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"GingerbreadMan"'
   - name: gradient
     uid: word!Word.PageBorderArt.gradient:member
@@ -784,8 +776,8 @@ fields:
       Represents a border with gradient design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Gradient"'
   - name: handmade1
     uid: word!Word.PageBorderArt.handmade1:member
@@ -794,8 +786,8 @@ fields:
       Represents a border with handmade design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Handmade1"'
   - name: handmade2
     uid: word!Word.PageBorderArt.handmade2:member
@@ -804,8 +796,8 @@ fields:
       Represents a border with handmade design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Handmade2"'
   - name: heartBalloon
     uid: word!Word.PageBorderArt.heartBalloon:member
@@ -814,8 +806,8 @@ fields:
       Represents a border with heart balloon design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HeartBalloon"'
   - name: heartGray
     uid: word!Word.PageBorderArt.heartGray:member
@@ -824,8 +816,8 @@ fields:
       Represents a border with gray heart design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HeartGray"'
   - name: hearts
     uid: word!Word.PageBorderArt.hearts:member
@@ -834,8 +826,8 @@ fields:
       Represents a border with hearts design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hearts"'
   - name: heebieJeebies
     uid: word!Word.PageBorderArt.heebieJeebies:member
@@ -844,8 +836,8 @@ fields:
       Represents a border with heebie jeebies design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HeebieJeebies"'
   - name: holly
     uid: word!Word.PageBorderArt.holly:member
@@ -854,8 +846,8 @@ fields:
       Represents a border with holly design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Holly"'
   - name: houseFunky
     uid: word!Word.PageBorderArt.houseFunky:member
@@ -864,8 +856,8 @@ fields:
       Represents a border with funky house design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HouseFunky"'
   - name: hypnotic
     uid: word!Word.PageBorderArt.hypnotic:member
@@ -874,8 +866,8 @@ fields:
       Represents a border with hypnotic design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hypnotic"'
   - name: iceCreamCones
     uid: word!Word.PageBorderArt.iceCreamCones:member
@@ -884,8 +876,8 @@ fields:
       Represents a border with ice cream cone design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IceCreamCones"'
   - name: lightBulb
     uid: word!Word.PageBorderArt.lightBulb:member
@@ -894,8 +886,8 @@ fields:
       Represents a border with light bulb design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LightBulb"'
   - name: lightning1
     uid: word!Word.PageBorderArt.lightning1:member
@@ -904,8 +896,8 @@ fields:
       Represents a border with lightning design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lightning1"'
   - name: lightning2
     uid: word!Word.PageBorderArt.lightning2:member
@@ -914,8 +906,8 @@ fields:
       Represents a border with lightning design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lightning2"'
   - name: mapleLeaf
     uid: word!Word.PageBorderArt.mapleLeaf:member
@@ -924,8 +916,8 @@ fields:
       Represents a border with maple leaf design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MapleLeaf"'
   - name: mapleMuffins
     uid: word!Word.PageBorderArt.mapleMuffins:member
@@ -934,8 +926,8 @@ fields:
       Represents a border with maple muffin design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MapleMuffins"'
   - name: mapPins
     uid: word!Word.PageBorderArt.mapPins:member
@@ -944,8 +936,8 @@ fields:
       Represents a border with map pins design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MapPins"'
   - name: marquee
     uid: word!Word.PageBorderArt.marquee:member
@@ -954,8 +946,8 @@ fields:
       Represents a border with marquee design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Marquee"'
   - name: marqueeToothed
     uid: word!Word.PageBorderArt.marqueeToothed:member
@@ -964,8 +956,8 @@ fields:
       Represents a border with marquee toothed design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MarqueeToothed"'
   - name: moons
     uid: word!Word.PageBorderArt.moons:member
@@ -974,8 +966,8 @@ fields:
       Represents a border with moons design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Moons"'
   - name: mosaic
     uid: word!Word.PageBorderArt.mosaic:member
@@ -984,8 +976,8 @@ fields:
       Represents a border with mosaic design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mosaic"'
   - name: musicNotes
     uid: word!Word.PageBorderArt.musicNotes:member
@@ -994,8 +986,8 @@ fields:
       Represents a border with music notes design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MusicNotes"'
   - name: northwest
     uid: word!Word.PageBorderArt.northwest:member
@@ -1004,8 +996,8 @@ fields:
       Represents a border with northwest design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Northwest"'
   - name: ovals
     uid: word!Word.PageBorderArt.ovals:member
@@ -1014,8 +1006,8 @@ fields:
       Represents a border with ovals design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ovals"'
   - name: packages
     uid: word!Word.PageBorderArt.packages:member
@@ -1024,8 +1016,8 @@ fields:
       Represents a border with packages design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Packages"'
   - name: palmsBlack
     uid: word!Word.PageBorderArt.palmsBlack:member
@@ -1034,8 +1026,8 @@ fields:
       Represents a border with black palms design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PalmsBlack"'
   - name: palmsColor
     uid: word!Word.PageBorderArt.palmsColor:member
@@ -1044,8 +1036,8 @@ fields:
       Represents a border with palm trees in color.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PalmsColor"'
   - name: paperClips
     uid: word!Word.PageBorderArt.paperClips:member
@@ -1054,8 +1046,8 @@ fields:
       Represents a border with paper clips design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PaperClips"'
   - name: papyrus
     uid: word!Word.PageBorderArt.papyrus:member
@@ -1064,8 +1056,8 @@ fields:
       Represents a border with papyrus design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Papyrus"'
   - name: partyFavor
     uid: word!Word.PageBorderArt.partyFavor:member
@@ -1074,8 +1066,8 @@ fields:
       Represents a border with party favor design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PartyFavor"'
   - name: partyGlass
     uid: word!Word.PageBorderArt.partyGlass:member
@@ -1084,8 +1076,8 @@ fields:
       Represents a border with party glass design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PartyGlass"'
   - name: pencils
     uid: word!Word.PageBorderArt.pencils:member
@@ -1094,8 +1086,8 @@ fields:
       Represents a border with pencils design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pencils"'
   - name: people
     uid: word!Word.PageBorderArt.people:member
@@ -1104,8 +1096,8 @@ fields:
       Represents a border with people design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"People"'
   - name: peopleHats
     uid: word!Word.PageBorderArt.peopleHats:member
@@ -1114,8 +1106,8 @@ fields:
       Represents a border with people wearing hats design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PeopleHats"'
   - name: peopleWaving
     uid: word!Word.PageBorderArt.peopleWaving:member
@@ -1124,8 +1116,8 @@ fields:
       Represents a border with people waving design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PeopleWaving"'
   - name: poinsettias
     uid: word!Word.PageBorderArt.poinsettias:member
@@ -1134,8 +1126,8 @@ fields:
       Represents a border with poinsettias flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Poinsettias"'
   - name: postageStamp
     uid: word!Word.PageBorderArt.postageStamp:member
@@ -1144,8 +1136,8 @@ fields:
       Represents a border with postage stamp design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PostageStamp"'
   - name: pumpkin1
     uid: word!Word.PageBorderArt.pumpkin1:member
@@ -1154,8 +1146,8 @@ fields:
       Represents a border with pumpkin design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pumpkin1"'
   - name: pushPinNote1
     uid: word!Word.PageBorderArt.pushPinNote1:member
@@ -1164,8 +1156,8 @@ fields:
       Represents a border with push pin note design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PushPinNote1"'
   - name: pushPinNote2
     uid: word!Word.PageBorderArt.pushPinNote2:member
@@ -1174,8 +1166,8 @@ fields:
       Represents a border with push pin note design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PushPinNote2"'
   - name: pyramids
     uid: word!Word.PageBorderArt.pyramids:member
@@ -1184,8 +1176,8 @@ fields:
       Represents a border with pyramids design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pyramids"'
   - name: pyramidsAbove
     uid: word!Word.PageBorderArt.pyramidsAbove:member
@@ -1194,8 +1186,8 @@ fields:
       Represents a border with pyramids above design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PyramidsAbove"'
   - name: quadrants
     uid: word!Word.PageBorderArt.quadrants:member
@@ -1204,8 +1196,8 @@ fields:
       Represents a border with quadrants design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Quadrants"'
   - name: rings
     uid: word!Word.PageBorderArt.rings:member
@@ -1214,8 +1206,8 @@ fields:
       Represents a border with rings design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Rings"'
   - name: safari
     uid: word!Word.PageBorderArt.safari:member
@@ -1224,8 +1216,8 @@ fields:
       Represents a border with safari design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Safari"'
   - name: sawtooth
     uid: word!Word.PageBorderArt.sawtooth:member
@@ -1234,8 +1226,8 @@ fields:
       Represents a border with sawtooth design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Sawtooth"'
   - name: sawtoothGray
     uid: word!Word.PageBorderArt.sawtoothGray:member
@@ -1244,8 +1236,8 @@ fields:
       Represents a border with gray sawtooth design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SawtoothGray"'
   - name: scaredCat
     uid: word!Word.PageBorderArt.scaredCat:member
@@ -1254,8 +1246,8 @@ fields:
       Represents a border with scared cat design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaredCat"'
   - name: seattle
     uid: word!Word.PageBorderArt.seattle:member
@@ -1264,8 +1256,8 @@ fields:
       Represents a border with Seattle design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Seattle"'
   - name: shadowedSquares
     uid: word!Word.PageBorderArt.shadowedSquares:member
@@ -1274,8 +1266,8 @@ fields:
       Represents a border with shadowed squares design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ShadowedSquares"'
   - name: sharksTeeth
     uid: word!Word.PageBorderArt.sharksTeeth:member
@@ -1284,8 +1276,8 @@ fields:
       Represents a border with sharks teeth design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SharksTeeth"'
   - name: shorebirdTracks
     uid: word!Word.PageBorderArt.shorebirdTracks:member
@@ -1294,8 +1286,8 @@ fields:
       Represents a border with shorebird tracks design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ShorebirdTracks"'
   - name: skyrocket
     uid: word!Word.PageBorderArt.skyrocket:member
@@ -1304,8 +1296,8 @@ fields:
       Represents a border with skyrocket design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Skyrocket"'
   - name: snowflakeFancy
     uid: word!Word.PageBorderArt.snowflakeFancy:member
@@ -1314,8 +1306,8 @@ fields:
       Represents a border with fancy snowflake design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SnowflakeFancy"'
   - name: snowflakes
     uid: word!Word.PageBorderArt.snowflakes:member
@@ -1324,8 +1316,8 @@ fields:
       Represents a border with snowflakes design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Snowflakes"'
   - name: sombrero
     uid: word!Word.PageBorderArt.sombrero:member
@@ -1334,8 +1326,8 @@ fields:
       Represents a border with sombrero design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Sombrero"'
   - name: southwest
     uid: word!Word.PageBorderArt.southwest:member
@@ -1344,8 +1336,8 @@ fields:
       Represents a border with southwest design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Southwest"'
   - name: stars
     uid: word!Word.PageBorderArt.stars:member
@@ -1354,8 +1346,8 @@ fields:
       Represents a border with stars design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Stars"'
   - name: stars3D
     uid: word!Word.PageBorderArt.stars3D:member
@@ -1364,8 +1356,8 @@ fields:
       Represents a border with 3D stars design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Stars3D"'
   - name: starsBlack
     uid: word!Word.PageBorderArt.starsBlack:member
@@ -1374,8 +1366,8 @@ fields:
       Represents a border with black stars design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"StarsBlack"'
   - name: starsShadowed
     uid: word!Word.PageBorderArt.starsShadowed:member
@@ -1384,8 +1376,8 @@ fields:
       Represents a border with shadowed stars design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"StarsShadowed"'
   - name: starsTop
     uid: word!Word.PageBorderArt.starsTop:member
@@ -1394,8 +1386,8 @@ fields:
       Represents a border with top stars design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"StarsTop"'
   - name: sun
     uid: word!Word.PageBorderArt.sun:member
@@ -1404,8 +1396,8 @@ fields:
       Represents a border with sun design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Sun"'
   - name: swirligig
     uid: word!Word.PageBorderArt.swirligig:member
@@ -1414,8 +1406,8 @@ fields:
       Represents a border with swirligig design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Swirligig"'
   - name: tornPaper
     uid: word!Word.PageBorderArt.tornPaper:member
@@ -1424,8 +1416,8 @@ fields:
       Represents a border with torn paper design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TornPaper"'
   - name: tornPaperBlack
     uid: word!Word.PageBorderArt.tornPaperBlack:member
@@ -1434,8 +1426,8 @@ fields:
       Represents a border with black torn paper design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TornPaperBlack"'
   - name: trees
     uid: word!Word.PageBorderArt.trees:member
@@ -1444,8 +1436,8 @@ fields:
       Represents a border with trees design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Trees"'
   - name: triangleParty
     uid: word!Word.PageBorderArt.triangleParty:member
@@ -1454,8 +1446,8 @@ fields:
       Represents a border with triangle party design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TriangleParty"'
   - name: triangles
     uid: word!Word.PageBorderArt.triangles:member
@@ -1464,8 +1456,8 @@ fields:
       Represents a border with triangles design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Triangles"'
   - name: tribal1
     uid: word!Word.PageBorderArt.tribal1:member
@@ -1474,8 +1466,8 @@ fields:
       Represents a border with tribal design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tribal1"'
   - name: tribal2
     uid: word!Word.PageBorderArt.tribal2:member
@@ -1484,8 +1476,8 @@ fields:
       Represents a border with tribal design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tribal2"'
   - name: tribal3
     uid: word!Word.PageBorderArt.tribal3:member
@@ -1494,8 +1486,8 @@ fields:
       Represents a border with tribal design (variant 3).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tribal3"'
   - name: tribal4
     uid: word!Word.PageBorderArt.tribal4:member
@@ -1504,8 +1496,8 @@ fields:
       Represents a border with tribal design (variant 4).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tribal4"'
   - name: tribal5
     uid: word!Word.PageBorderArt.tribal5:member
@@ -1514,8 +1506,8 @@ fields:
       Represents a border with tribal design (variant 5).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tribal5"'
   - name: tribal6
     uid: word!Word.PageBorderArt.tribal6:member
@@ -1524,8 +1516,8 @@ fields:
       Represents a border with tribal design (variant 6).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tribal6"'
   - name: twistedLines1
     uid: word!Word.PageBorderArt.twistedLines1:member
@@ -1534,8 +1526,8 @@ fields:
       Represents a border with twisted lines design (variant 1).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TwistedLines1"'
   - name: twistedLines2
     uid: word!Word.PageBorderArt.twistedLines2:member
@@ -1544,8 +1536,8 @@ fields:
       Represents a border with twisted lines design (variant 2).
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TwistedLines2"'
   - name: vine
     uid: word!Word.PageBorderArt.vine:member
@@ -1554,8 +1546,8 @@ fields:
       Represents a border with vine design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Vine"'
   - name: waveline
     uid: word!Word.PageBorderArt.waveline:member
@@ -1564,8 +1556,8 @@ fields:
       Represents a border with waveline design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Waveline"'
   - name: weavingAngles
     uid: word!Word.PageBorderArt.weavingAngles:member
@@ -1574,8 +1566,8 @@ fields:
       Represents a border with weaving angles design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WeavingAngles"'
   - name: weavingBraid
     uid: word!Word.PageBorderArt.weavingBraid:member
@@ -1584,8 +1576,8 @@ fields:
       Represents a border with weaving braid design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WeavingBraid"'
   - name: weavingRibbon
     uid: word!Word.PageBorderArt.weavingRibbon:member
@@ -1594,8 +1586,8 @@ fields:
       Represents a border with weaving ribbon design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WeavingRibbon"'
   - name: weavingStrips
     uid: word!Word.PageBorderArt.weavingStrips:member
@@ -1604,8 +1596,8 @@ fields:
       Represents a border with weaving strips design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WeavingStrips"'
   - name: whiteFlowers
     uid: word!Word.PageBorderArt.whiteFlowers:member
@@ -1614,8 +1606,8 @@ fields:
       Represents a border with white flowers design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WhiteFlowers"'
   - name: woodwork
     uid: word!Word.PageBorderArt.woodwork:member
@@ -1624,8 +1616,8 @@ fields:
       Represents a border with woodwork design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Woodwork"'
   - name: xillusions
     uid: word!Word.PageBorderArt.xillusions:member
@@ -1634,8 +1626,8 @@ fields:
       Represents a border with X illusions design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"XIllusions"'
   - name: zanyTriangles
     uid: word!Word.PageBorderArt.zanyTriangles:member
@@ -1644,8 +1636,8 @@ fields:
       Represents a border with zany triangles design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ZanyTriangles"'
   - name: zigZag
     uid: word!Word.PageBorderArt.zigZag:member
@@ -1654,8 +1646,8 @@ fields:
       Represents a border with zigzag design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ZigZag"'
   - name: zigZagStitch
     uid: word!Word.PageBorderArt.zigZagStitch:member
@@ -1664,6 +1656,6 @@ fields:
       Represents a border with zigzag stitch design.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ZigZagStitch"'

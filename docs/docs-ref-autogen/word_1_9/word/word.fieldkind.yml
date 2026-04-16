@@ -7,19 +7,15 @@ summary: >-
   Represents the kind of [Word.Field](xref:word!Word.Field:class) object.
   Indicates how the field works in relation to updating.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Field.kind](/javascript/api/word/word.field#kind-member) \]
-
-  - \[
-  [Word.Interfaces.FieldData.kind](/javascript/api/word/word.interfaces.fielddata#kind-member)
-  \]
+  - [Word.Field.kind](/javascript/api/word/word.field#kind-member) \]
 
   #### Examples
 
@@ -57,8 +53,8 @@ fields:
       Represents that the field doesn't have a result.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Cold"'
   - name: hot
     uid: word!Word.FieldKind.hot:member
@@ -69,8 +65,8 @@ fields:
       manually updated.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hot"'
   - name: none
     uid: word!Word.FieldKind.none:member
@@ -80,8 +76,8 @@ fields:
       characters with nothing inside.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: warm
     uid: word!Word.FieldKind.warm:member
@@ -91,6 +87,6 @@ fields:
       or the field can be manually updated.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Warm"'

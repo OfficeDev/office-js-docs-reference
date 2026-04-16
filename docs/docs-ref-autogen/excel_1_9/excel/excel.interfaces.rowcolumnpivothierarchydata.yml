@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.RowColumnPivotHierarchyData
 summary: >-
   An interface describing the data returned by calling
   `rowColumnPivotHierarchy.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotTableData.columnHierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#columnhierarchies-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableData.rowHierarchies](/javascript/api/excel/excel.interfaces.pivottabledata#rowhierarchies-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchycollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.rowcolumnpivothierarchycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -36,8 +18,8 @@ properties:
     fullName: fields
     summary: Returns the PivotFields associated with the RowColumnPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +33,8 @@ properties:
     fullName: id
     summary: ID of the RowColumnPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +48,8 @@ properties:
     fullName: name
     summary: Name of the RowColumnPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -81,8 +63,8 @@ properties:
     fullName: position
     summary: Position of the RowColumnPivotHierarchy.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,25 +6,7 @@ fullName: PowerPoint.Interfaces.HyperlinkData
 summary: >-
   An interface describing the data returned by calling `hyperlink.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.HyperlinkCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.hyperlinkcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.HyperlinkCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.hyperlinkcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.HyperlinkScopedCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.hyperlinkscopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.hyperlinkscopedcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

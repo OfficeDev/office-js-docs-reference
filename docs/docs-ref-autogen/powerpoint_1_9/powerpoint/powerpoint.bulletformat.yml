@@ -8,16 +8,15 @@ summary: >-
   [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!--
   -->.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.ParagraphFormat.bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#bulletformat-member)
   \]
 
@@ -94,9 +93,8 @@ properties:
       the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
       includes text fragments with different bullet visibility values.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

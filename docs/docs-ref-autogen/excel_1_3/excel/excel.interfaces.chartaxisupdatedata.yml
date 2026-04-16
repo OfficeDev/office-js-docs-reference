@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.ChartAxisUpdateData
 summary: >-
   An interface for updating data on the `ChartAxis` object, for use in
   `chartAxis.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAxesUpdateData.categoryAxis](/javascript/api/excel/excel.interfaces.chartaxesupdatedata#categoryaxis-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxesUpdateData.seriesAxis](/javascript/api/excel/excel.interfaces.chartaxesupdatedata#seriesaxis-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxesUpdateData.valueAxis](/javascript/api/excel/excel.interfaces.chartaxesupdatedata#valueaxis-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Represents the formatting of a chart object, which includes line and font
       formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -53,8 +39,8 @@ properties:
       Returns an object that represents the major gridlines for the specified
       axis.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +58,8 @@ properties:
       Represents the interval between two major tick marks. Can be set to a
       numeric value or an empty string. The returned value is always a number.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -90,8 +76,8 @@ properties:
       value or an empty string (for automatic axis values). The returned value
       is always a number.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -108,8 +94,8 @@ properties:
       value or an empty string (for automatic axis values). The returned value
       is always a number.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -125,8 +111,8 @@ properties:
       Returns an object that represents the minor gridlines for the specified
       axis.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -145,8 +131,8 @@ properties:
       numeric value or an empty string (for automatic axis values). The returned
       value is always a number.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -160,8 +146,8 @@ properties:
     fullName: title
     summary: Represents the axis title.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

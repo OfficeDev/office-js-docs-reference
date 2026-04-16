@@ -6,17 +6,7 @@ fullName: Word.Interfaces.CoauthoringUpdateData
 summary: >-
   An interface describing the data returned by calling
   `coauthoringUpdate.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CoauthoringUpdateCollectionData.items](/javascript/api/word/word.interfaces.coauthoringupdatecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CoauthoringUpdateCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthoringupdatecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

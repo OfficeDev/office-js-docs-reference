@@ -7,16 +7,15 @@ summary: >-
   Provides information about the success or failure of the DocumentLoadComplete
   event.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.Document.onDocumentLoadComplete](/javascript/api/visio/visio.document#ondocumentloadcomplete-member)
   \]
 
@@ -54,9 +53,8 @@ properties:
     fullName: success
     summary: Gets the success or failure of the DocumentLoadComplete event.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

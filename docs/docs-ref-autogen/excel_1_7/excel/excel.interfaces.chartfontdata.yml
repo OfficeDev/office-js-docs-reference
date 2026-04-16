@@ -6,37 +6,7 @@ fullName: Excel.Interfaces.ChartFontData
 summary: >-
   An interface describing the data returned by calling `chartFont.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAreaFormatData.font](/javascript/api/excel/excel.interfaces.chartareaformatdata#font-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisFormatData.font](/javascript/api/excel/excel.interfaces.chartaxisformatdata#font-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisTitleFormatData.font](/javascript/api/excel/excel.interfaces.chartaxistitleformatdata#font-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelFormatData.font](/javascript/api/excel/excel.interfaces.chartdatalabelformatdata#font-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartFormatStringData.font](/javascript/api/excel/excel.interfaces.chartformatstringdata#font-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLegendFormatData.font](/javascript/api/excel/excel.interfaces.chartlegendformatdata#font-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleFormatData.font](/javascript/api/excel/excel.interfaces.charttitleformatdata#font-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -48,8 +18,8 @@ properties:
     fullName: bold
     summary: Represents the bold status of font.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -65,8 +35,8 @@ properties:
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +50,8 @@ properties:
     fullName: italic
     summary: Represents the italic status of the font.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +65,8 @@ properties:
     fullName: name
     summary: Font name (e.g., "Calibri")
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -110,8 +80,8 @@ properties:
     fullName: size
     summary: Size of the font (e.g., 11)
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -127,8 +97,8 @@ properties:
       Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for
       details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

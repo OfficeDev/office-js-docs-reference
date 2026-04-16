@@ -7,15 +7,15 @@ summary: >-
   Represents the data specific to content controls of type `dropDownList`<!--
   -->.
 remarks: >-
-  \[ [API set: WordApi
-  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ContentControl.dropDownListContentControl](/javascript/api/word/word.contentcontrol#dropdownlistcontentcontrol-member)
   \]
 
@@ -65,8 +65,8 @@ properties:
     fullName: listItems
     summary: Gets the collection of list items in the dropdown list content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -140,8 +140,8 @@ methods:
       [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class)
       object.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -217,8 +217,8 @@ methods:
     fullName: deleteAllListItems()
     summary: Deletes all list items in this dropdown list content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

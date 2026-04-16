@@ -6,21 +6,7 @@ fullName: OneNote.Interfaces.PageContentData
 summary: >-
   An interface describing the data returned by calling
   `pageContent.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.PageContentCollectionData.items](/javascript/api/onenote/onenote.interfaces.pagecontentcollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageContentCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.pagecontentcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageData.contents](/javascript/api/onenote/onenote.interfaces.pagedata#contents-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: id
     summary: Gets the ID of the PageContent object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +35,8 @@ properties:
       Gets the Image in the PageContent object. Throws an exception if
       PageContentType isn't Image.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +52,8 @@ properties:
       Gets the ink in the PageContent object. Throws an exception if
       PageContentType isn't Ink.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +67,8 @@ properties:
     fullName: left
     summary: Gets or sets the left (X-axis) position of the PageContent object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +84,8 @@ properties:
       Gets the Outline in the PageContent object. Throws an exception if
       PageContentType isn't Outline.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -118,9 +99,8 @@ properties:
     fullName: top
     summary: Gets or sets the top (Y-axis) position of the PageContent object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -134,9 +114,8 @@ properties:
     fullName: type
     summary: Gets the type of the PageContent object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -6,45 +6,7 @@ fullName: Word.Interfaces.ColorFormatData
 summary: >-
   An interface describing the data returned by calling
   `colorFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.FillFormatData.backgroundColor](/javascript/api/word/word.interfaces.fillformatdata#backgroundcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FillFormatData.foregroundColor](/javascript/api/word/word.interfaces.fillformatdata#foregroundcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontData.textColor](/javascript/api/word/word.interfaces.fontdata#textcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GlowFormatData.color](/javascript/api/word/word.interfaces.glowformatdata#color-member)
-  \]
-
-  - \[
-  [Word.Interfaces.LineFormatData.backgroundColor](/javascript/api/word/word.interfaces.lineformatdata#backgroundcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.LineFormatData.foregroundColor](/javascript/api/word/word.interfaces.lineformatdata#foregroundcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShadowFormatData.foregroundColor](/javascript/api/word/word.interfaces.shadowformatdata#foregroundcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ThreeDimensionalFormatData.contourColor](/javascript/api/word/word.interfaces.threedimensionalformatdata#contourcolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ThreeDimensionalFormatData.extrusionColor](/javascript/api/word/word.interfaces.threedimensionalformatdata#extrusioncolor-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -58,8 +20,8 @@ properties:
       Specifies the brightness of a specified shape color. Valid values are from
       `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -73,8 +35,8 @@ properties:
     fullName: objectThemeColor
     summary: Specifies the theme color for a color format.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -99,8 +61,8 @@ properties:
       Specifies the red-green-blue (RGB) value of the specified color. You can
       provide the value in the '\#RRGGBB' format.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -116,8 +78,8 @@ properties:
       Specifies the lightening or darkening of a specified shape's color. Valid
       values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -131,8 +93,8 @@ properties:
     fullName: type
     summary: Returns the shape color type.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

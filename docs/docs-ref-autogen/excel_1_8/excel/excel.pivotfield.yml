@@ -5,22 +5,22 @@ package: excel!
 fullName: Excel.PivotField
 summary: Represents the Excel PivotField.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataPivotHierarchy.field](/javascript/api/excel/excel.datapivothierarchy#field-member)
   \]
 
-  - \[
+  -
   [Excel.PivotFieldCollection.items](/javascript/api/excel/excel.pivotfieldcollection#items-member)
   \]
 
-  - \[
+  -
   [Excel.ShowAsRule.baseField](/javascript/api/excel/excel.showasrule#basefield-member)
   \]
 
@@ -49,8 +49,8 @@ properties:
     fullName: id
     summary: ID of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -64,8 +64,8 @@ properties:
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -79,8 +79,8 @@ properties:
     fullName: name
     summary: Name of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -94,8 +94,8 @@ properties:
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -109,8 +109,8 @@ properties:
     fullName: subtotals
     summary: Subtotals of the PivotField.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -257,8 +257,8 @@ methods:
       be applied based on it, if not sort will be based on the PivotField
       itself.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

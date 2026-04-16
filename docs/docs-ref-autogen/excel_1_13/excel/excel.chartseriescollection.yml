@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartSeriesCollection
 summary: Represents a collection of chart series.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Chart.series](/javascript/api/excel/excel.chart#series-member) \]
+  - [Excel.Chart.series](/javascript/api/excel/excel.chart#series-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -39,8 +39,8 @@ properties:
     fullName: count
     summary: Returns the number of series in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -71,8 +71,8 @@ methods:
       until values, x-axis values, or bubble sizes for it are set (depending on
       chart type).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -94,8 +94,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of series in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -110,8 +110,8 @@ methods:
     fullName: getItemAt(index)
     summary: Retrieves a series based on its position in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

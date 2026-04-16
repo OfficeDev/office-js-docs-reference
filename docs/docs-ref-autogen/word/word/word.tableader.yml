@@ -5,67 +5,30 @@ package: word!
 fullName: Word.TabLeader
 summary: Specifies the tab leader style.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Index.tabLeader](/javascript/api/word/word.index#tableader-member)
-  \]
+  - [Word.Index.tabLeader](/javascript/api/word/word.index#tableader-member) \]
 
-  - \[
-  [Word.Interfaces.IndexData.tabLeader](/javascript/api/word/word.interfaces.indexdata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.IndexUpdateData.tabLeader](/javascript/api/word/word.interfaces.indexupdatedata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfAuthoritiesData.tabLeader](/javascript/api/word/word.interfaces.tableofauthoritiesdata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfAuthoritiesUpdateData.tabLeader](/javascript/api/word/word.interfaces.tableofauthoritiesupdatedata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfContentsData.tabLeader](/javascript/api/word/word.interfaces.tableofcontentsdata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfContentsUpdateData.tabLeader](/javascript/api/word/word.interfaces.tableofcontentsupdatedata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfFiguresData.tabLeader](/javascript/api/word/word.interfaces.tableoffiguresdata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfFiguresUpdateData.tabLeader](/javascript/api/word/word.interfaces.tableoffiguresupdatedata#tableader-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TabStopData.leader](/javascript/api/word/word.interfaces.tabstopdata#leader-member)
-  \]
-
-  - \[
+  -
   [Word.TableOfAuthorities.tabLeader](/javascript/api/word/word.tableofauthorities#tableader-member)
   \]
 
-  - \[
+  -
   [Word.TableOfContents.tabLeader](/javascript/api/word/word.tableofcontents#tableader-member)
   \]
 
-  - \[
+  -
   [Word.TableOfFigures.tabLeader](/javascript/api/word/word.tableoffigures#tableader-member)
   \]
 
-  - \[ [Word.TabStop.leader](/javascript/api/word/word.tabstop#leader-member) \]
+  - [Word.TabStop.leader](/javascript/api/word/word.tabstop#leader-member) \]
 
-  - \[
+  -
   [Word.TabStopAddOptions.leader](/javascript/api/word/word.tabstopaddoptions#leader-member)
   \]
 
@@ -79,8 +42,8 @@ fields:
       Dashes are used as the tab leader.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Dashes"'
   - name: dots
     uid: word!Word.TabLeader.dots:member
@@ -89,8 +52,8 @@ fields:
       Dots are used as the tab leader.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Dots"'
   - name: heavy
     uid: word!Word.TabLeader.heavy:member
@@ -99,8 +62,8 @@ fields:
       Heavy lines are used as the tab leader.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Heavy"'
   - name: lines
     uid: word!Word.TabLeader.lines:member
@@ -109,8 +72,8 @@ fields:
       Lines are used as the tab leader.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lines"'
   - name: middleDot
     uid: word!Word.TabLeader.middleDot:member
@@ -119,8 +82,8 @@ fields:
       Middle dots are used as the tab leader.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MiddleDot"'
   - name: spaces
     uid: word!Word.TabLeader.spaces:member
@@ -129,6 +92,6 @@ fields:
       Spaces are used as the tab leader.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Spaces"'

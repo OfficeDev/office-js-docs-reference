@@ -5,24 +5,8 @@ package: word!
 fullName: Word.Interfaces.BodyLoadOptions
 summary: Represents the body of a document or a section.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.DocumentLoadOptions.body](/javascript/api/word/word.interfaces.documentloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionCollectionLoadOptions.body](/javascript/api/word/word.interfaces.sectioncollectionloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionLoadOptions.body](/javascript/api/word/word.interfaces.sectionloadoptions#body-member)
-  \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -52,8 +36,8 @@ properties:
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +53,8 @@ properties:
       Gets the content control that contains the body. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -89,8 +73,8 @@ properties:
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -104,8 +88,8 @@ properties:
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

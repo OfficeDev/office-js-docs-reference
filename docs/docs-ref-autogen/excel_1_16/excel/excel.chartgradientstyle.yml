@@ -7,23 +7,15 @@ summary: >-
   Represents the gradient style of a chart series. This is only applicable for
   region map charts.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartSeries.gradientStyle](/javascript/api/excel/excel.chartseries#gradientstyle-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.gradientStyle](/javascript/api/excel/excel.interfaces.chartseriesdata#gradientstyle-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.gradientStyle](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#gradientstyle-member)
   \]
 
 isPreview: false
@@ -33,13 +25,13 @@ fields:
     uid: excel!Excel.ChartGradientStyle.threePhaseColor:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThreePhaseColor"'
   - name: twoPhaseColor
     uid: excel!Excel.ChartGradientStyle.twoPhaseColor:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"TwoPhaseColor"'

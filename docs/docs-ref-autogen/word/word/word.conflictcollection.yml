@@ -5,19 +5,18 @@ package: word!
 fullName: Word.ConflictCollection
 summary: Represents the coauthoring conflicts in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Coauthoring.conflicts](/javascript/api/word/word.coauthoring#conflicts-member)
   \]
 
-  - \[ [Word.Range.conflicts](/javascript/api/word/word.range#conflicts-member)
-  \]
+  - [Word.Range.conflicts](/javascript/api/word/word.range#conflicts-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -60,8 +59,8 @@ methods:
       Accepts all of the user's changes, removes the conflicts, and merges the
       changes into the server copy of the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +75,8 @@ methods:
     fullName: getItem(index)
     summary: Gets a `Conflict` object by its index in the collection.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -172,8 +171,8 @@ methods:
       Rejects all of the user's changes and retains the server copy of the
       document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

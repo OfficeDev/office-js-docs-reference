@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.PageLayoutZoomOptions
 summary: Represents page zoom properties.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PageLayoutData.zoom](/javascript/api/excel/excel.interfaces.pagelayoutdata#zoom-member)
+  - [Excel.PageLayout.zoom](/javascript/api/excel/excel.pagelayout#zoom-member)
   \]
-
-  - \[
-  [Excel.Interfaces.PageLayoutUpdateData.zoom](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#zoom-member)
-  \]
-
-  - \[
-  [Excel.PageLayout.zoom](/javascript/api/excel/excel.pagelayout#zoom-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -35,8 +27,8 @@ properties:
       Number of pages to fit horizontally. This value can be `null` if
       percentage scale is used.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -52,8 +44,8 @@ properties:
       Print page scale value can be between 10 and 400. This value can be `null`
       if fit to page tall or wide is specified.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +61,8 @@ properties:
       Number of pages to fit vertically. This value can be `null` if percentage
       scale is used.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

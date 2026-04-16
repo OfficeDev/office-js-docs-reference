@@ -5,31 +5,30 @@ package: powerpoint!
 fullName: PowerPoint.CustomXmlPartCollection
 summary: A collection of custom XML parts.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Presentation.customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#customxmlparts-member)
   \]
 
-  - \[
+  -
   [PowerPoint.Shape.customXmlParts](/javascript/api/powerpoint/powerpoint.shape#customxmlparts-member)
   \]
 
-  - \[
+  -
   [PowerPoint.Slide.customXmlParts](/javascript/api/powerpoint/powerpoint.slide#customxmlparts-member)
   \]
 
-  - \[
+  -
   [PowerPoint.SlideLayout.customXmlParts](/javascript/api/powerpoint/powerpoint.slidelayout#customxmlparts-member)
   \]
 
-  - \[
+  -
   [PowerPoint.SlideMaster.customXmlParts](/javascript/api/powerpoint/powerpoint.slidemaster#customxmlparts-member)
   \]
 
@@ -72,9 +71,8 @@ methods:
     fullName: add(xml)
     summary: Adds a new `CustomXmlPart` to the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +95,8 @@ methods:
       Gets a new scoped collection of custom XML parts whose namespaces match
       the given namespace.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +121,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of custom XML parts in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +137,8 @@ methods:
     fullName: getItem(id)
     summary: Gets a `CustomXmlPart` based on its ID.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -169,9 +164,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

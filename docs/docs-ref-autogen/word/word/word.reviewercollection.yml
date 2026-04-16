@@ -9,14 +9,14 @@ summary: >-
   object contains the names of all reviewers who have reviewed documents opened
   or edited on a computer.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.RevisionsFilter.reviewers](/javascript/api/word/word.revisionsfilter#reviewers-member)
   \]
 
@@ -61,8 +61,8 @@ methods:
       Returns a `Reviewer` object that represents the specified item in the
       collection.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false

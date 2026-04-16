@@ -5,19 +5,14 @@ package: powerpoint!
 fullName: PowerPoint.SlideLayoutType
 summary: Specifies the type of a slide layout.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
-  [PowerPoint.Interfaces.SlideLayoutData.type](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutdata#type-member)
-  \]
-
-  - \[
+  -
   [PowerPoint.SlideLayout.type](/javascript/api/powerpoint/powerpoint.slidelayout#type-member)
   \]
 
@@ -31,9 +26,8 @@ fields:
       Blank layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Blank"'
   - name: chart
     uid: powerpoint!PowerPoint.SlideLayoutType.chart:member
@@ -42,9 +36,8 @@ fields:
       Chart layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Chart"'
   - name: chartAndText
     uid: powerpoint!PowerPoint.SlideLayoutType.chartAndText:member
@@ -53,9 +46,8 @@ fields:
       Chart and text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ChartAndText"'
   - name: clipArtAndText
     uid: powerpoint!PowerPoint.SlideLayoutType.clipArtAndText:member
@@ -64,9 +56,8 @@ fields:
       ClipArt and text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ClipArtAndText"'
   - name: clipArtAndVerticalText
     uid: powerpoint!PowerPoint.SlideLayoutType.clipArtAndVerticalText:member
@@ -75,9 +66,8 @@ fields:
       ClipArt and vertical text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ClipArtAndVerticalText"'
   - name: comparison
     uid: powerpoint!PowerPoint.SlideLayoutType.comparison:member
@@ -86,9 +76,8 @@ fields:
       Comparison layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Comparison"'
   - name: contentWithCaption
     uid: powerpoint!PowerPoint.SlideLayoutType.contentWithCaption:member
@@ -97,9 +86,8 @@ fields:
       Content with caption layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ContentWithCaption"'
   - name: custom
     uid: powerpoint!PowerPoint.SlideLayoutType.custom:member
@@ -108,9 +96,8 @@ fields:
       Custom layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Custom"'
   - name: fourObjects
     uid: powerpoint!PowerPoint.SlideLayoutType.fourObjects:member
@@ -119,9 +106,8 @@ fields:
       Four objects layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"FourObjects"'
   - name: largeObject
     uid: powerpoint!PowerPoint.SlideLayoutType.largeObject:member
@@ -130,9 +116,8 @@ fields:
       Large object layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"LargeObject"'
   - name: mediaClipAndText
     uid: powerpoint!PowerPoint.SlideLayoutType.mediaClipAndText:member
@@ -141,9 +126,8 @@ fields:
       MediaClip and text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"MediaClipAndText"'
   - name: mixed
     uid: powerpoint!PowerPoint.SlideLayoutType.mixed:member
@@ -152,9 +136,8 @@ fields:
       Mixed layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Mixed"'
   - name: object
     uid: powerpoint!PowerPoint.SlideLayoutType.object:member
@@ -163,9 +146,8 @@ fields:
       Object layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Object"'
   - name: objectAndText
     uid: powerpoint!PowerPoint.SlideLayoutType.objectAndText:member
@@ -174,9 +156,8 @@ fields:
       Object and text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ObjectAndText"'
   - name: objectAndTwoObjects
     uid: powerpoint!PowerPoint.SlideLayoutType.objectAndTwoObjects:member
@@ -185,9 +166,8 @@ fields:
       Object and two objects layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ObjectAndTwoObjects"'
   - name: objectOverText
     uid: powerpoint!PowerPoint.SlideLayoutType.objectOverText:member
@@ -196,9 +176,8 @@ fields:
       Object over text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ObjectOverText"'
   - name: organizationChart
     uid: powerpoint!PowerPoint.SlideLayoutType.organizationChart:member
@@ -207,9 +186,8 @@ fields:
       Organization chart layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"OrganizationChart"'
   - name: pictureWithCaption
     uid: powerpoint!PowerPoint.SlideLayoutType.pictureWithCaption:member
@@ -218,9 +196,8 @@ fields:
       Picture with caption layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"PictureWithCaption"'
   - name: sectionHeader
     uid: powerpoint!PowerPoint.SlideLayoutType.sectionHeader:member
@@ -229,9 +206,8 @@ fields:
       Section header layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"SectionHeader"'
   - name: table
     uid: powerpoint!PowerPoint.SlideLayoutType.table:member
@@ -240,9 +216,8 @@ fields:
       Table layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Table"'
   - name: text
     uid: powerpoint!PowerPoint.SlideLayoutType.text:member
@@ -251,9 +226,8 @@ fields:
       Text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Text"'
   - name: textAndChart
     uid: powerpoint!PowerPoint.SlideLayoutType.textAndChart:member
@@ -262,9 +236,8 @@ fields:
       Text and chart layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextAndChart"'
   - name: textAndClipArt
     uid: powerpoint!PowerPoint.SlideLayoutType.textAndClipArt:member
@@ -273,9 +246,8 @@ fields:
       Text and ClipArt layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextAndClipArt"'
   - name: textAndMediaClip
     uid: powerpoint!PowerPoint.SlideLayoutType.textAndMediaClip:member
@@ -284,9 +256,8 @@ fields:
       Text and MediaClip layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextAndMediaClip"'
   - name: textAndObject
     uid: powerpoint!PowerPoint.SlideLayoutType.textAndObject:member
@@ -295,9 +266,8 @@ fields:
       Text and object layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextAndObject"'
   - name: textAndTwoObjects
     uid: powerpoint!PowerPoint.SlideLayoutType.textAndTwoObjects:member
@@ -306,9 +276,8 @@ fields:
       Text and two objects layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextAndTwoObjects"'
   - name: textOverObject
     uid: powerpoint!PowerPoint.SlideLayoutType.textOverObject:member
@@ -317,9 +286,8 @@ fields:
       Text over object layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TextOverObject"'
   - name: title
     uid: powerpoint!PowerPoint.SlideLayoutType.title:member
@@ -328,9 +296,8 @@ fields:
       Title layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Title"'
   - name: titleOnly
     uid: powerpoint!PowerPoint.SlideLayoutType.titleOnly:member
@@ -339,9 +306,8 @@ fields:
       Title only layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TitleOnly"'
   - name: twoColumnText
     uid: powerpoint!PowerPoint.SlideLayoutType.twoColumnText:member
@@ -350,9 +316,8 @@ fields:
       Two-column text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TwoColumnText"'
   - name: twoObjects
     uid: powerpoint!PowerPoint.SlideLayoutType.twoObjects:member
@@ -361,9 +326,8 @@ fields:
       Two objects layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TwoObjects"'
   - name: twoObjectsAndObject
     uid: powerpoint!PowerPoint.SlideLayoutType.twoObjectsAndObject:member
@@ -372,9 +336,8 @@ fields:
       Two objects and object layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TwoObjectsAndObject"'
   - name: twoObjectsAndText
     uid: powerpoint!PowerPoint.SlideLayoutType.twoObjectsAndText:member
@@ -383,9 +346,8 @@ fields:
       Two objects and text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TwoObjectsAndText"'
   - name: twoObjectsOverText
     uid: powerpoint!PowerPoint.SlideLayoutType.twoObjectsOverText:member
@@ -394,9 +356,8 @@ fields:
       Two objects over text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"TwoObjectsOverText"'
   - name: verticalText
     uid: powerpoint!PowerPoint.SlideLayoutType.verticalText:member
@@ -405,9 +366,8 @@ fields:
       Vertical text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"VerticalText"'
   - name: verticalTitleAndText
     uid: powerpoint!PowerPoint.SlideLayoutType.verticalTitleAndText:member
@@ -416,9 +376,8 @@ fields:
       Vertical title and text layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"VerticalTitleAndText"'
   - name: verticalTitleAndTextOverChart
     uid: powerpoint!PowerPoint.SlideLayoutType.verticalTitleAndTextOverChart:member
@@ -427,7 +386,6 @@ fields:
       Vertical title and text over chart layout.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"VerticalTitleAndTextOverChart"'

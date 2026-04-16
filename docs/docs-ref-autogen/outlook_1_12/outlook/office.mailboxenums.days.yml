@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.Days
 summary: Specifies the day of week or type of day.
 remarks: >-
-  \[ [API set: Mailbox
-  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Applicable Outlook
@@ -18,15 +18,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.RecurrenceProperties.dayOfWeek](/javascript/api/outlook/office.recurrenceproperties#dayofweek-member)
   \]
 
-  - \[
+  -
   [Office.RecurrenceProperties.days](/javascript/api/outlook/office.recurrenceproperties#days-member)
   \]
 
-  - \[
+  -
   [Office.RecurrenceProperties.firstDayOfWeek](/javascript/api/outlook/office.recurrenceproperties#firstdayofweek-member)
   \]
 

@@ -20,9 +20,8 @@ properties:
       Represents the format of a chart data table, which includes fill, font,
       and border format.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +37,8 @@ properties:
     fullName: showHorizontalBorder
     summary: Specifies whether to display the horizontal border of the data table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +52,8 @@ properties:
     fullName: showLegendKey
     summary: Specifies whether to show the legend key of the data table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +67,8 @@ properties:
     fullName: showOutlineBorder
     summary: Specifies whether to display the outline border of the data table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -86,9 +82,8 @@ properties:
     fullName: showVerticalBorder
     summary: Specifies whether to display the vertical border of the data table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +97,8 @@ properties:
     fullName: visible
     summary: Specifies whether to show the data table of the chart.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

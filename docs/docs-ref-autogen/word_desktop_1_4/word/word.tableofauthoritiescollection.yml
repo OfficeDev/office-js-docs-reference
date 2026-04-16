@@ -8,14 +8,14 @@ summary: >-
   [Word.TableOfAuthorities](xref:word!Word.TableOfAuthorities:class) objects in
   a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.tablesOfAuthorities](/javascript/api/word/word.document#tablesofauthorities-member)
   \]
 
@@ -58,8 +58,8 @@ methods:
     fullName: add(range, options)
     summary: Adds a table of authorities to the document at the specified range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -165,8 +165,8 @@ methods:
       field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c)
       after all instances of the specified citation text.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -195,8 +195,8 @@ methods:
       field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c)
       at the specified range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -225,8 +225,8 @@ methods:
     fullName: selectNextCitation(shortCitation)
     summary: Finds and selects the next instance of the specified citation text.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

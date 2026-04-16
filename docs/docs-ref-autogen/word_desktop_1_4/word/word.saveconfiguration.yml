@@ -5,15 +5,15 @@ package: word!
 fullName: Word.SaveConfiguration
 summary: Specifies the save options.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.WindowCloseOptions.saveChanges](/javascript/api/word/word.windowcloseoptions#savechanges-member)
   \]
 
@@ -46,8 +46,8 @@ fields:
       Specifies not to save changes.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DoNotSaveChanges"'
   - name: promptToSaveChanges
     uid: word!Word.SaveConfiguration.promptToSaveChanges:member
@@ -56,8 +56,8 @@ fields:
       Specifies to prompt to save changes.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PromptToSaveChanges"'
   - name: saveChanges
     uid: word!Word.SaveConfiguration.saveChanges:member
@@ -66,6 +66,6 @@ fields:
       Specifies to save changes.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SaveChanges"'

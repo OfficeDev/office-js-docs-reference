@@ -5,15 +5,15 @@ package: outlook!
 fullName: Office.RecipientsChangedFields
 summary: Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
 remarks: >-
-  \[ [API set: Mailbox
-  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Office.RecipientsChangedEventArgs.changedRecipientFields](/javascript/api/outlook/office.recipientschangedeventargs#changedrecipientfields-member)
   \]
 
@@ -53,9 +53,8 @@ properties:
     fullName: bcc
     summary: Gets if recipients in the **bcc** field were changed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -69,9 +68,8 @@ properties:
     fullName: cc
     summary: Gets if recipients in the **cc** field were changed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +83,8 @@ properties:
     fullName: optionalAttendees
     summary: Gets if optional attendees were changed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -101,9 +98,8 @@ properties:
     fullName: requiredAttendees
     summary: Gets if required attendees were changed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +113,8 @@ properties:
     fullName: resources
     summary: Gets if resources were changed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -133,9 +128,8 @@ properties:
     fullName: to
     summary: Gets if recipients in the **to** field were changed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

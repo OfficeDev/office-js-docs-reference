@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartPlotAreaFormat` object, for use in
   `chartPlotAreaFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartPlotAreaUpdateData.format](/javascript/api/excel/excel.interfaces.chartplotareaupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: border
     summary: Specifies the border attributes of a chart plot area.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

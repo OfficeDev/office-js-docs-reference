@@ -5,30 +5,14 @@ package: word!
 fullName: Word.Interfaces.SelectionLoadOptions
 summary: Represents a selected range or the insertion point in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   Note: [Range](xref:word!Word.Range:class) objects share many of the same
   methods and properties as `Selection` objects. Using `Range` objects is
   preferable for manipulating a document when there isn't a reason to physically
   change the current selection.
-
-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.DocumentLoadOptions.selection](/javascript/api/word/word.interfaces.documentloadoptions#selection-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PaneCollectionLoadOptions.selection](/javascript/api/word/word.interfaces.panecollectionloadoptions#selection-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PaneLoadOptions.selection](/javascript/api/word/word.interfaces.paneloadoptions#selection-member)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -56,8 +40,8 @@ properties:
     fullName: end
     summary: Specifies the ending character position of the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -71,8 +55,8 @@ properties:
     fullName: fitTextWidth
     summary: Specifies the width in which Word fits the text in the current selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -88,8 +72,8 @@ properties:
       Returns the `Font` object that represents the character formatting of the
       selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -105,8 +89,8 @@ properties:
       Specifies a `Range` object that includes the formatted text in the range
       or selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -123,8 +107,8 @@ properties:
       text. If the selected text contains a mix of proofed and un-proofed
       content, this API returns `null`<!-- -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -138,8 +122,8 @@ properties:
     fullName: isActive
     summary: Returns whether the selection in the specified window or pane is active.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -153,8 +137,8 @@ properties:
     fullName: isColumnSelectModeActive
     summary: Specifies whether column selection mode is active.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -168,8 +152,8 @@ properties:
     fullName: isEndOfRowMark
     summary: Returns whether the selection is at the end-of-row mark in a table.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -183,8 +167,8 @@ properties:
     fullName: isExtendModeActive
     summary: Specifies whether Extend mode is active.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -199,8 +183,8 @@ properties:
     fullName: isInsertionPointAtEndOfLine
     summary: Returns whether the insertion point is at the end of a line.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -214,8 +198,8 @@ properties:
     fullName: isStartActive
     summary: Specifies whether the beginning of the selection is active.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -229,8 +213,8 @@ properties:
     fullName: languageDetected
     summary: Specifies whether Word has detected the language of the selected text.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -244,8 +228,8 @@ properties:
     fullName: languageId
     summary: Returns the language for the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -259,8 +243,8 @@ properties:
     fullName: languageIdFarEast
     summary: Returns the East Asian language for the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -276,8 +260,8 @@ properties:
       Returns the language for the selection that isn't classified as an East
       Asian language.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -291,8 +275,8 @@ properties:
     fullName: orientation
     summary: Specifies the orientation of text in the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -308,8 +292,8 @@ properties:
       Returns the `Range` object for the portion of the document contained in
       the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -325,8 +309,8 @@ properties:
       Returns the `ShadingUniversal` object for the shading formatting for the
       selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -342,8 +326,8 @@ properties:
     fullName: start
     summary: Specifies the starting character position of the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -357,8 +341,8 @@ properties:
     fullName: storyLength
     summary: Returns the number of characters in the story that contains the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -372,8 +356,8 @@ properties:
     fullName: storyType
     summary: Returns the story type for the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -387,8 +371,8 @@ properties:
     fullName: text
     summary: Specifies the text in the selection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -402,8 +386,8 @@ properties:
     fullName: type
     summary: Returns the selection type.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

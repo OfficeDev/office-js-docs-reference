@@ -6,21 +6,7 @@ fullName: OneNote.Interfaces.InkAnalysisParagraphData
 summary: >-
   An interface describing the data returned by calling
   `inkAnalysisParagraph.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisLineData.paragraph](/javascript/api/onenote/onenote.interfaces.inkanalysislinedata#paragraph-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisParagraphCollectionData.items](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphcollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.inkanalysisparagraphcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: id
     summary: Gets the ID of the InkAnalysisParagraph object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +33,8 @@ properties:
     fullName: inkAnalysis
     summary: Reference to the parent InkAnalysisPage. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +48,8 @@ properties:
     fullName: lines
     summary: Gets the ink analysis lines in this ink analysis paragraph. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

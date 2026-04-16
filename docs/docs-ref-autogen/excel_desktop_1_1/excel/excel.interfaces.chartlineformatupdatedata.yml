@@ -6,33 +6,7 @@ fullName: Excel.Interfaces.ChartLineFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartLineFormat` object, for use in
   `chartLineFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAxisFormatUpdateData.line](/javascript/api/excel/excel.interfaces.chartaxisformatupdatedata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartErrorBarsFormatUpdateData.line](/javascript/api/excel/excel.interfaces.charterrorbarsformatupdatedata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartGridlinesFormatUpdateData.line](/javascript/api/excel/excel.interfaces.chartgridlinesformatupdatedata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLeaderLinesFormatUpdateData.line](/javascript/api/excel/excel.interfaces.chartleaderlinesformatupdatedata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesFormatUpdateData.line](/javascript/api/excel/excel.interfaces.chartseriesformatupdatedata#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineFormatUpdateData.line](/javascript/api/excel/excel.interfaces.charttrendlineformatupdatedata#line-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +18,8 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +33,8 @@ properties:
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +54,8 @@ properties:
     fullName: weight
     summary: Represents weight of the line, in points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

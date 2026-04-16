@@ -5,28 +5,20 @@ package: excel!
 fullName: Excel.ContentType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Comment.contentType](/javascript/api/excel/excel.comment#contenttype-member)
   \]
 
-  - \[
+  -
   [Excel.CommentReply.contentType](/javascript/api/excel/excel.commentreply#contenttype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CommentData.contentType](/javascript/api/excel/excel.interfaces.commentdata#contenttype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CommentReplyData.contentType](/javascript/api/excel/excel.interfaces.commentreplydata#contenttype-member)
   \]
 
   #### Examples
@@ -70,9 +62,8 @@ fields:
       Comment content containing mentions.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Mention"'
   - name: plain
     uid: excel!Excel.ContentType.plain:member
@@ -81,7 +72,6 @@ fields:
       Indicates a plain format type for the comment content.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Plain"'

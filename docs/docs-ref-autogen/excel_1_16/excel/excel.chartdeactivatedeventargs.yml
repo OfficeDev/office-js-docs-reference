@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.ChartDeactivatedEventArgs
 summary: Provides information about the chart that raised the deactivated event.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Chart.onDeactivated](/javascript/api/excel/excel.chart#ondeactivated-member)
   \]
 
-  - \[
+  -
   [Excel.ChartCollection.onDeactivated](/javascript/api/excel/excel.chartcollection#ondeactivated-member)
   \]
 
@@ -30,8 +30,8 @@ properties:
     fullName: chartId
     summary: Gets the ID of the chart that is deactivated.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -45,8 +45,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +60,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the chart is deactivated.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

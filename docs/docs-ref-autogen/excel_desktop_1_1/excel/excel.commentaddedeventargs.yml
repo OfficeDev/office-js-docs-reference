@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.CommentAddedEventArgs
 summary: Provides information about the comments that raised the comment added event.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CommentCollection.onAdded](/javascript/api/excel/excel.commentcollection#onadded-member)
   \]
 
@@ -65,9 +65,8 @@ properties:
       Gets the `CommentDetail` array that contains the comment ID and IDs of its
       related replies.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +80,8 @@ properties:
     fullName: source
     summary: Specifies the source of the event. See `Excel.EventSource` for details.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +95,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +110,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the event happened.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

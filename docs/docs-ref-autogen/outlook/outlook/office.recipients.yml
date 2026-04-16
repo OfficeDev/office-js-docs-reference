@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.Recipients
 summary: Represents recipients of an item. Compose mode only.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -22,35 +22,35 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.optionalAttendees](/javascript/api/outlook/office.appointmentcompose#optionalattendees-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentCompose.requiredAttendees](/javascript/api/outlook/office.appointmentcompose#requiredattendees-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageCompose.bcc](/javascript/api/outlook/office.loadedmessagecompose#bcc-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageCompose.cc](/javascript/api/outlook/office.loadedmessagecompose#cc-member)
   \]
 
-  - \[
+  -
   [Office.LoadedMessageCompose.to](/javascript/api/outlook/office.loadedmessagecompose#to-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.bcc](/javascript/api/outlook/office.messagecompose#bcc-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.cc](/javascript/api/outlook/office.messagecompose#cc-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.to](/javascript/api/outlook/office.messagecompose#to-member)
   \]
 
@@ -66,9 +66,8 @@ methods:
       Adds a recipient list to the existing recipients for an appointment or
       message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -204,9 +203,8 @@ methods:
       Adds a recipient list to the existing recipients for an appointment or
       message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -299,9 +297,8 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets a recipient list for an appointment or message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -423,9 +420,8 @@ methods:
     fullName: getAsync(callback)
     summary: Gets a recipient list for an appointment or message.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -639,9 +635,8 @@ methods:
 
       The `setAsync` method overwrites the current recipient list.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -747,9 +742,8 @@ methods:
 
       The `setAsync` method overwrites the current recipient list.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

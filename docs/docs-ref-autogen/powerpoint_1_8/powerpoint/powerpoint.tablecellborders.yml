@@ -5,16 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.TableCellBorders
 summary: Represents the borders of a table cell.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TableCellProperties.borders](/javascript/api/powerpoint/powerpoint.tablecellproperties#borders-member)
   \]
 
@@ -63,9 +62,8 @@ properties:
     fullName: bottom
     summary: Represents the bottom border.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -115,9 +113,8 @@ properties:
     fullName: diagonalDown
     summary: Represents the diagonal border (top-left to bottom-right).
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -131,9 +128,8 @@ properties:
     fullName: diagonalUp
     summary: Represents the diagonal border (bottom-left to top-right).
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -147,9 +143,8 @@ properties:
     fullName: left
     summary: Represents the left border.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -199,9 +194,8 @@ properties:
     fullName: right
     summary: Represents the right border.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -251,9 +245,8 @@ properties:
     fullName: top
     summary: Represents the top border.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

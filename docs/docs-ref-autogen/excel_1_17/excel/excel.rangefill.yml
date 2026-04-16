@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.RangeFill
 summary: Represents the background of a range object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.RangeFormat.fill](/javascript/api/excel/excel.rangeformat#fill-member)
   \]
 
-  - \[ [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member) \]
+  - [Excel.Style.fill](/javascript/api/excel/excel.style#fill-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +30,8 @@ properties:
       HTML color code representing the color of the background, in the form
       \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -63,8 +63,8 @@ properties:
       LinearGradient and RectangularGradient are not supported. A `null` value
       indicates that the entire range doesn't have a uniform pattern setting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -90,8 +90,8 @@ properties:
       The HTML color code representing the color of the range pattern, in the
       form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -109,8 +109,8 @@ properties:
       original color. A `null` value indicates that the range doesn't have
       uniform `patternTintAndShade` settings.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -128,8 +128,8 @@ properties:
       original color. A `null` value indicates that the range doesn't have
       uniform `tintAndShade` settings.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -144,8 +144,8 @@ methods:
     fullName: clear()
     summary: Resets the range background.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

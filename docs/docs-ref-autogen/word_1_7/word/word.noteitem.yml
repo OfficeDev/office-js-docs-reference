@@ -5,15 +5,15 @@ package: word!
 fullName: Word.NoteItem
 summary: Represents a footnote or endnote.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.NoteItemCollection.items](/javascript/api/word/word.noteitemcollection#items-member)
   \]
 
@@ -56,8 +56,8 @@ properties:
       Represents the body object of the note item. It's the portion of the text
       within the footnote or endnote.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -114,8 +114,8 @@ properties:
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -158,8 +158,8 @@ properties:
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -205,8 +205,8 @@ methods:
     fullName: delete()
     summary: Deletes the note item.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -250,8 +250,8 @@ methods:
       Gets the next note item of the same type. Throws an `ItemNotFound` error
       if this note item is the last one.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -298,8 +298,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

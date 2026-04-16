@@ -8,15 +8,14 @@ summary: >-
   supported by Host through APIs. Used in case of Show TaskPane API, TaskPane
   State Changed, or similar events.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.TaskPaneStateChangedEventArgs.paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#panetype-member)
   \]
 
@@ -30,9 +29,8 @@ fields:
       Data Visualizer Organization Mapping pane.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"DataVisualizerOrgChartMappings"'
   - name: dataVisualizerProcessMappings
     uid: visio!Visio.TaskPaneType.dataVisualizerProcessMappings:member
@@ -41,9 +39,8 @@ fields:
       Data Visualizer Process Mapping pane.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"DataVisualizerProcessMappings"'
   - name: none
     uid: visio!Visio.TaskPaneType.none:member
@@ -52,7 +49,6 @@ fields:
       No task pane.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"None"'

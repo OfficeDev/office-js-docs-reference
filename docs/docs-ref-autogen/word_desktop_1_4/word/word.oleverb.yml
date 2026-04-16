@@ -7,8 +7,8 @@ summary: >-
   Specifies the action associated with the verb that the OLE object should
   perform.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -21,8 +21,8 @@ fields:
       note that the object remains active, however.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DiscardUndoState"'
   - name: hide
     uid: word!Word.OleVerb.hide:member
@@ -31,8 +31,8 @@ fields:
       Removes the object's user interface from view.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hide"'
   - name: inPlaceActivate
     uid: word!Word.OleVerb.inPlaceActivate:member
@@ -42,8 +42,8 @@ fields:
       user-interface tools.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"InPlaceActivate"'
   - name: open
     uid: word!Word.OleVerb.open:member
@@ -52,8 +52,8 @@ fields:
       Opens the object in a separate window.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Open"'
   - name: primary
     uid: word!Word.OleVerb.primary:member
@@ -62,8 +62,8 @@ fields:
       Performs the verb that is invoked when the user double-clicks the object.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Primary"'
   - name: show
     uid: word!Word.OleVerb.show:member
@@ -73,8 +73,8 @@ fields:
       newly inserted object for initial editing.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Show"'
   - name: uiActivate
     uid: word!Word.OleVerb.uiActivate:member
@@ -84,6 +84,6 @@ fields:
       the object needs, such as menus or toolbars.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UiActivate"'

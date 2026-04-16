@@ -8,14 +8,14 @@ summary: >-
   [Word.CustomXmlSchema](xref:word!Word.CustomXmlSchema:class) objects attached
   to a data stream.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CustomXmlPart.schemaCollection](/javascript/api/word/word.customxmlpart#schemacollection-member)
   \]
 
@@ -60,8 +60,8 @@ methods:
       Adds one or more schemas to the schema collection that can then be added
       to a stream in the data store and to the schema library.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +80,8 @@ methods:
     fullName: addCollection(schemaCollection)
     summary: Adds an existing schema collection to the current schema collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -102,8 +102,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of items in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -120,8 +120,8 @@ methods:
       Returns a `CustomXmlSchema` object that represents the specified item in
       the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -140,8 +140,8 @@ methods:
     fullName: getNamespaceUri()
     summary: Returns the number of items in the collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -301,8 +301,8 @@ methods:
       Specifies whether the schemas in the schema collection are valid (conforms
       to the syntactic rules of XML and the rules for a specified vocabulary).
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

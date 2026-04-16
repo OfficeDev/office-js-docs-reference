@@ -7,8 +7,8 @@ summary: >-
   Provides information about the linked entity data domain whose
   `LinkedEntityCellValue` objects were refreshed.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   This interface isn't supported in Excel on the web.
@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Excel.LinkedEntityDataDomainCollection.onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#onrefreshcompleted-member)
   \]
 
@@ -33,9 +33,8 @@ properties:
       Gets any errors encountered during the request to refresh
       `LinkedEntityCellValue` objects of the linked entity data domain.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -56,9 +55,8 @@ properties:
       not applicable to linked entity data domains defined by service data
       providers, such as Bing or Power BI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -79,9 +77,8 @@ properties:
       data domain were refreshed successfully, otherwise returns `false`<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -101,9 +98,8 @@ properties:
       Gets the service ID of the linked entity data domain whose
       `LinkedEntityCellValue` objects were refreshed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -120,9 +116,8 @@ properties:
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.
@@ -139,9 +134,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This property isn't supported in Excel on the web.

@@ -5,15 +5,15 @@ package: excel!
 fullName: Excel.ConditionalIconCriterionOperator
 summary: Represents the operator for each icon criteria.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalIconCriterion.operator](/javascript/api/excel/excel.conditionaliconcriterion#operator-member)
   \]
 
@@ -74,20 +74,20 @@ fields:
     uid: excel!Excel.ConditionalIconCriterionOperator.greaterThan:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"GreaterThan"'
   - name: greaterThanOrEqual
     uid: excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"GreaterThanOrEqual"'
   - name: invalid
     uid: excel!Excel.ConditionalIconCriterionOperator.invalid:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Invalid"'

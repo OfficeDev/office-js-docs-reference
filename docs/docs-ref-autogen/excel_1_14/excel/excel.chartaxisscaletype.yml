@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartAxisScaleType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxis.scaleType](/javascript/api/excel/excel.chartaxis#scaletype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisData.scaleType](/javascript/api/excel/excel.interfaces.chartaxisdata#scaletype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartAxisUpdateData.scaleType](/javascript/api/excel/excel.interfaces.chartaxisupdatedata#scaletype-member)
   \]
 
 isPreview: false
@@ -31,13 +23,13 @@ fields:
     uid: excel!Excel.ChartAxisScaleType.linear:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Linear"'
   - name: logarithmic
     uid: excel!Excel.ChartAxisScaleType.logarithmic:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Logarithmic"'

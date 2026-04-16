@@ -7,22 +7,14 @@ summary: >-
   Specifies the direction in which Microsoft Word orders cells in the specified
   table or row.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.TableStyleData.tableDirection](/javascript/api/word/word.interfaces.tablestyledata#tabledirection-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableStyleUpdateData.tableDirection](/javascript/api/word/word.interfaces.tablestyleupdatedata#tabledirection-member)
-  \]
-
-  - \[
+  -
   [Word.TableStyle.tableDirection](/javascript/api/word/word.tablestyle#tabledirection-member)
   \]
 
@@ -36,8 +28,8 @@ fields:
       The table is arranged with the first column in the leftmost position.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.TableDirection.rightToLeft:member
@@ -46,6 +38,6 @@ fields:
       The table is arranged with the first column in the rightmost position.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RightToLeft"'

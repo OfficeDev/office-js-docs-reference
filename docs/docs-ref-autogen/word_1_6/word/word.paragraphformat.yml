@@ -5,15 +5,15 @@ package: word!
 fullName: Word.ParagraphFormat
 summary: Represents a style of paragraph in a document.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Style.paragraphFormat](/javascript/api/word/word.style#paragraphformat-member)
   \]
 
@@ -61,8 +61,8 @@ properties:
     fullName: alignment
     summary: Specifies the alignment for the specified paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -133,8 +133,8 @@ properties:
       positive value to set a first-line indent, and use a negative value to set
       a hanging indent.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -150,8 +150,8 @@ properties:
       Specifies whether all lines in the specified paragraphs remain on the same
       page when Microsoft Word repaginates the document.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -167,8 +167,8 @@ properties:
       Specifies whether the specified paragraph remains on the same page as the
       paragraph that follows it when Microsoft Word repaginates the document.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -182,8 +182,8 @@ properties:
     fullName: leftIndent
     summary: Specifies the left indent.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -232,8 +232,8 @@ properties:
     fullName: lineSpacing
     summary: Specifies the line spacing (in points) for the specified paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -249,8 +249,8 @@ properties:
       Specifies the amount of spacing (in gridlines) after the specified
       paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -266,8 +266,8 @@ properties:
       Specifies the amount of spacing (in gridlines) before the specified
       paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -281,8 +281,8 @@ properties:
     fullName: mirrorIndents
     summary: Specifies whether left and right indents are the same width.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -296,8 +296,8 @@ properties:
     fullName: outlineLevel
     summary: Specifies the outline level for the specified paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -319,8 +319,8 @@ properties:
     fullName: rightIndent
     summary: Specifies the right indent (in points) for the specified paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -336,8 +336,8 @@ properties:
       Specifies the amount of spacing (in points) after the specified paragraph
       or text column.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -351,8 +351,8 @@ properties:
     fullName: spaceBefore
     summary: Specifies the spacing (in points) before the specified paragraphs.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -369,8 +369,8 @@ properties:
       remain on the same page as the rest of the paragraph when Microsoft Word
       repaginates the document.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

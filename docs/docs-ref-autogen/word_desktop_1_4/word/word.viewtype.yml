@@ -5,22 +5,14 @@ package: word!
 fullName: Word.ViewType
 summary: Specifies the view type in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.type](/javascript/api/word/word.interfaces.viewdata#type-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.type](/javascript/api/word/word.interfaces.viewupdatedata#type-member)
-  \]
-
-  - \[ [Word.View.type](/javascript/api/word/word.view#type-member) \]
+  - [Word.View.type](/javascript/api/word/word.view#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +24,8 @@ fields:
       Conflict.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Conflict"'
   - name: master
     uid: word!Word.ViewType.master:member
@@ -42,8 +34,8 @@ fields:
       Master.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Master"'
   - name: normal
     uid: word!Word.ViewType.normal:member
@@ -52,8 +44,8 @@ fields:
       Normal.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Normal"'
   - name: outline
     uid: word!Word.ViewType.outline:member
@@ -62,8 +54,8 @@ fields:
       Outline.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Outline"'
   - name: print
     uid: word!Word.ViewType.print:member
@@ -72,8 +64,8 @@ fields:
       Print.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Print"'
   - name: printPreview
     uid: word!Word.ViewType.printPreview:member
@@ -82,8 +74,8 @@ fields:
       Print preview.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PrintPreview"'
   - name: reading
     uid: word!Word.ViewType.reading:member
@@ -92,8 +84,8 @@ fields:
       Reading.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Reading"'
   - name: web
     uid: word!Word.ViewType.web:member
@@ -102,6 +94,6 @@ fields:
       Web.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Web"'

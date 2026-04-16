@@ -6,17 +6,7 @@ fullName: Word.Interfaces.TableColumnData
 summary: >-
   An interface describing the data returned by calling
   `tableColumn.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TableColumnCollectionData.items](/javascript/api/word/word.interfaces.tablecolumncollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableColumnCollectionUpdateData.items](/javascript/api/word/word.interfaces.tablecolumncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.MessageType
 summary: MessageType represents the type of message when event is fired from Host.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -20,9 +19,8 @@ fields:
       DataVisualizer diagram operation complete Event Message.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '1'
   - name: none
     uid: visio!Visio.MessageType.none:member
@@ -31,7 +29,6 @@ fields:
       No message.
 
 
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '0'

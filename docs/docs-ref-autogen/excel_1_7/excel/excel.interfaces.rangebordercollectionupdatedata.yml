@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
 summary: >-
   An interface for updating data on the `RangeBorderCollection` object, for use
   in `rangeBorderCollection.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.RangeFormatUpdateData.borders](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#borders-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.StyleUpdateData.borders](/javascript/api/excel/excel.interfaces.styleupdatedata#borders-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

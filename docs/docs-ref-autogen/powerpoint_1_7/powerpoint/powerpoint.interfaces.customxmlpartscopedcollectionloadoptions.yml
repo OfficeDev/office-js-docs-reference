@@ -9,9 +9,8 @@ summary: >-
   some operation (such as filtering by namespace). A scoped collection cannot be
   scoped any further.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -41,9 +40,8 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: The ID of the custom XML part.'
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     fullName: namespaceUri
     summary: 'For EACH ITEM in the collection: The namespace URI of the custom XML part.'
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

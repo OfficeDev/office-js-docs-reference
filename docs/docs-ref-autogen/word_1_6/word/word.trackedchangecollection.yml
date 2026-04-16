@@ -7,8 +7,8 @@ summary: >-
   Contains a collection of
   [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -76,8 +76,8 @@ methods:
     fullName: acceptAll()
     summary: Accepts all the tracked changes in the collection.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -115,8 +115,8 @@ methods:
       Gets the first TrackedChange in this collection. Throws an `ItemNotFound`
       error if this collection is empty.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -164,8 +164,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -254,8 +254,8 @@ methods:
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the collection.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

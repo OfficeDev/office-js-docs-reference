@@ -7,23 +7,15 @@ summary: >-
   Represents the parent label strategy of the chart series layout. This only
   applies to treemap charts
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartSeries.parentLabelStrategy](/javascript/api/excel/excel.chartseries#parentlabelstrategy-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.parentLabelStrategy](/javascript/api/excel/excel.interfaces.chartseriesdata#parentlabelstrategy-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.parentLabelStrategy](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#parentlabelstrategy-member)
   \]
 
 isPreview: false
@@ -33,20 +25,20 @@ fields:
     uid: excel!Excel.ChartParentLabelStrategy.banner:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Banner"'
   - name: none
     uid: excel!Excel.ChartParentLabelStrategy.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: overlapping
     uid: excel!Excel.ChartParentLabelStrategy.overlapping:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Overlapping"'

@@ -5,23 +5,19 @@ package: word!
 fullName: Word.HeadingSeparator
 summary: Specifies the type of separator to use for headings.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Index.headingSeparator](/javascript/api/word/word.index#headingseparator-member)
   \]
 
-  - \[
+  -
   [Word.IndexAddOptions.headingSeparator](/javascript/api/word/word.indexaddoptions#headingseparator-member)
-  \]
-
-  - \[
-  [Word.Interfaces.IndexData.headingSeparator](/javascript/api/word/word.interfaces.indexdata#headingseparator-member)
   \]
 
 isPreview: false
@@ -34,8 +30,8 @@ fields:
       A blank line is used as a separator for headings.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BlankLine"'
   - name: letter
     uid: word!Word.HeadingSeparator.letter:member
@@ -44,8 +40,8 @@ fields:
       A single letter is used as a separator for headings.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Letter"'
   - name: letterFull
     uid: word!Word.HeadingSeparator.letterFull:member
@@ -54,8 +50,8 @@ fields:
       A full-width letter is used as a separator for headings.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LetterFull"'
   - name: letterLow
     uid: word!Word.HeadingSeparator.letterLow:member
@@ -64,8 +60,8 @@ fields:
       A lowercase letter is used as a separator for headings.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LetterLow"'
   - name: none
     uid: word!Word.HeadingSeparator.none:member
@@ -74,6 +70,6 @@ fields:
       No separator is used for headings.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'

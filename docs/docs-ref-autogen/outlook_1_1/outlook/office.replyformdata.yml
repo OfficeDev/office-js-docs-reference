@@ -7,8 +7,8 @@ summary: >-
   A ReplyFormData object that contains body or attachment data and a callback
   function. Used when displaying a reply form.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -25,19 +25,19 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentRead.displayReplyAllForm](/javascript/api/outlook/office.appointmentread#displayreplyallform-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.displayReplyForm](/javascript/api/outlook/office.appointmentread#displayreplyform-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.displayReplyAllForm](/javascript/api/outlook/office.messageread#displayreplyallform-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.displayReplyForm](/javascript/api/outlook/office.messageread#displayreplyform-member)
   \]
 
@@ -109,9 +109,8 @@ properties:
       parameter is called with a single parameter, `asyncResult`<!-- -->, which
       is an `Office.AsyncResult` object.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -139,9 +138,8 @@ properties:
       A string that contains text and HTML and that represents the body of the
       reply form. The string is limited to 32 KB.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -168,9 +166,8 @@ properties:
       `asyncContext` property to specify any object that you want to access in
       the callback function.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

@@ -8,9 +8,8 @@ summary: >-
   [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
   picture or texture fill properties.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -78,9 +77,8 @@ properties:
       Specifies the transparency percentage of the fill as a value from 0.0
       (opaque) through 1.0 (clear).
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -187,9 +185,8 @@ methods:
     fullName: setImage(base64EncodedImage)
     summary: Sets the image used to fill.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

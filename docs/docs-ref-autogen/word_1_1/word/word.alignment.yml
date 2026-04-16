@@ -5,23 +5,15 @@ package: word!
 fullName: Word.Alignment
 summary: Represents the horizontal alignment of text.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ParagraphData.alignment](/javascript/api/word/word.interfaces.paragraphdata#alignment-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphUpdateData.alignment](/javascript/api/word/word.interfaces.paragraphupdatedata#alignment-member)
-  \]
-
-  - \[
+  -
   [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#alignment-member)
   \]
 
@@ -63,8 +55,8 @@ fields:
       Alignment to the center.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Centered"'
   - name: justified
     uid: word!Word.Alignment.justified:member
@@ -73,8 +65,8 @@ fields:
       Fully justified alignment.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Justified"'
   - name: left
     uid: word!Word.Alignment.left:member
@@ -83,8 +75,8 @@ fields:
       Alignment to the left.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Left"'
   - name: mixed
     uid: word!Word.Alignment.mixed:member
@@ -93,8 +85,8 @@ fields:
       Mixed horizontal alignment.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: right
     uid: word!Word.Alignment.right:member
@@ -103,8 +95,8 @@ fields:
       Alignment to the right.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Right"'
   - name: unknown
     uid: word!Word.Alignment.unknown:member
@@ -113,6 +105,6 @@ fields:
       Unknown alignment.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Unknown"'

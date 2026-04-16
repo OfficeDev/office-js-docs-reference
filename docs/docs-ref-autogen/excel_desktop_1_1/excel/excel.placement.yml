@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.Placement
 summary: Specifies the way that an object is attached to its underlying cells.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.ShapeData.placement](/javascript/api/excel/excel.interfaces.shapedata#placement-member)
+  - [Excel.Shape.placement](/javascript/api/excel/excel.shape#placement-member)
   \]
-
-  - \[
-  [Excel.Interfaces.ShapeUpdateData.placement](/javascript/api/excel/excel.interfaces.shapeupdatedata#placement-member)
-  \]
-
-  - \[
-  [Excel.Shape.placement](/javascript/api/excel/excel.shape#placement-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,8 +25,8 @@ fields:
       The object is free floating.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Absolute"'
   - name: oneCell
     uid: excel!Excel.Placement.oneCell:member
@@ -43,8 +35,8 @@ fields:
       The object is moved with the cells.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OneCell"'
   - name: twoCell
     uid: excel!Excel.Placement.twoCell:member
@@ -53,6 +45,6 @@ fields:
       The object is moved and sized with the cells.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"TwoCell"'

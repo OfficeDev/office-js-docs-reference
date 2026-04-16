@@ -4,33 +4,7 @@ uid: visio!Visio.Interfaces.ShapeData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.PageData.allShapes](/javascript/api/visio/visio.interfaces.pagedata#allshapes-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.PageData.shapes](/javascript/api/visio/visio.interfaces.pagedata#shapes-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.SelectionData.shapes](/javascript/api/visio/visio.interfaces.selectiondata#shapes-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeCollectionData.items](/javascript/api/visio/visio.interfaces.shapecollectiondata#items-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/visio/visio.interfaces.shapecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeData.subShapes](/javascript/api/visio/visio.interfaces.shapedata#subshapes-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -42,9 +16,8 @@ properties:
     fullName: comments
     summary: Returns the Comments Collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +31,8 @@ properties:
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +46,8 @@ properties:
     fullName: id
     summary: Shape's identifier.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +61,8 @@ properties:
     fullName: name
     summary: Shape's name.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +78,8 @@ properties:
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +93,8 @@ properties:
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +108,8 @@ properties:
     fullName: subShapes
     summary: Gets SubShape Collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +123,8 @@ properties:
     fullName: text
     summary: Shape's text.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -172,9 +138,8 @@ properties:
     fullName: view
     summary: Returns the view of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

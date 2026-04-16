@@ -5,8 +5,8 @@ package: word!
 fullName: Word.ContentControlOptions
 summary: Specifies the options that define which content controls are returned.
 remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -73,8 +73,8 @@ properties:
       `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
       `repeatingSection`<!-- -->, `picture`<!-- -->, or `group`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Note: `plainText` support was added in WordApi 1.5. `checkBox` support was

@@ -5,20 +5,19 @@ package: powerpoint!
 fullName: PowerPoint.TableCellProperties
 summary: Represents the table cell properties to update.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TableAddOptions.specificCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#specificcellproperties-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableAddOptions.uniformCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#uniformcellproperties-member)
   \]
 
@@ -79,9 +78,8 @@ properties:
     fullName: borders
     summary: Specifies the border formatting of the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -131,9 +129,8 @@ properties:
     fullName: fill
     summary: Specifies the fill formatting of the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -195,9 +192,8 @@ properties:
     fullName: font
     summary: Specifies the font formatting of the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -259,9 +255,8 @@ properties:
     fullName: horizontalAlignment
     summary: Specifies the horizontal alignment of the text in the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -314,9 +309,8 @@ properties:
     fullName: indentLevel
     summary: Specifies the indent level of the text in the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -363,9 +357,8 @@ properties:
     fullName: margins
     summary: Specifies the margin settings in the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -384,9 +377,8 @@ properties:
       If a portion of the text requires different formatting, use the `textRuns`
       property instead.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -404,9 +396,8 @@ properties:
       objects. Each `TextRun` object represents a sequence of one or more
       characters that share the same font attributes.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -476,9 +467,8 @@ properties:
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text in the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

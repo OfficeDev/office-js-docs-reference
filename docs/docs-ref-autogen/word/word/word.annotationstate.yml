@@ -5,19 +5,15 @@ package: word!
 fullName: Word.AnnotationState
 summary: Represents the state of the annotation.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Annotation.state](/javascript/api/word/word.annotation#state-member) \]
-
-  - \[
-  [Word.Interfaces.AnnotationData.state](/javascript/api/word/word.interfaces.annotationdata#state-member)
+  - [Word.Annotation.state](/javascript/api/word/word.annotation#state-member)
   \]
 
   #### Examples
@@ -63,8 +59,8 @@ fields:
       Accepted.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accepted"'
   - name: created
     uid: word!Word.AnnotationState.created:member
@@ -73,8 +69,8 @@ fields:
       Created.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Created"'
   - name: rejected
     uid: word!Word.AnnotationState.rejected:member
@@ -83,6 +79,6 @@ fields:
       Rejected.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Rejected"'

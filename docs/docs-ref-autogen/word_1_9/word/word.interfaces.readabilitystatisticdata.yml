@@ -6,17 +6,7 @@ fullName: Word.Interfaces.ReadabilityStatisticData
 summary: >-
   An interface describing the data returned by calling
   `readabilityStatistic.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ReadabilityStatisticCollectionData.items](/javascript/api/word/word.interfaces.readabilitystatisticcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ReadabilityStatisticCollectionUpdateData.items](/javascript/api/word/word.interfaces.readabilitystatisticcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

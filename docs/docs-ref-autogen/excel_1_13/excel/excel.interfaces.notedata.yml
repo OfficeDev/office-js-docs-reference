@@ -4,17 +4,7 @@ uid: excel!Excel.Interfaces.NoteData:interface
 package: excel!
 fullName: Excel.Interfaces.NoteData
 summary: An interface describing the data returned by calling `note.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.NoteCollectionData.items](/javascript/api/excel/excel.interfaces.notecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.NoteCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.notecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

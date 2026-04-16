@@ -6,17 +6,7 @@ fullName: Word.Interfaces.TabStopData
 summary: >-
   An interface describing the data returned by calling `tabStop.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TabStopCollectionData.items](/javascript/api/word/word.interfaces.tabstopcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TabStopCollectionUpdateData.items](/javascript/api/word/word.interfaces.tabstopcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +20,8 @@ properties:
       Gets a `TabAlignment` value that represents the alignment for the tab
       stop.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,8 +39,8 @@ properties:
     fullName: customTab
     summary: Gets whether this tab stop is a custom tab stop.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +56,8 @@ properties:
       Gets a `TabLeader` value that represents the leader for this `TabStop`
       object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -85,8 +75,8 @@ properties:
     fullName: position
     summary: Gets the position of the tab stop relative to the left margin.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

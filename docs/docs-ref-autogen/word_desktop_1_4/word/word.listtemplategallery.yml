@@ -8,14 +8,14 @@ summary: >-
   [Word.ListTemplateGalleryType](xref:word!Word.ListTemplateGalleryType:enum)<!--
   -->.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ListTemplateGalleryCollection.items](/javascript/api/word/word.listtemplategallerycollection#items-member)
   \]
 
@@ -46,8 +46,8 @@ properties:
       Returns a `ListTemplateCollection` object that represents all the list
       templates for the specified list gallery.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

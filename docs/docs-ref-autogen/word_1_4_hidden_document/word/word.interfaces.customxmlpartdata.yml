@@ -6,33 +6,7 @@ fullName: Word.Interfaces.CustomXmlPartData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPart.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CustomXmlPartCollectionData.items](/javascript/api/word/word.interfaces.customxmlpartcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlpartcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartScopedCollectionData.items](/javascript/api/word/word.interfaces.customxmlpartscopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items](/javascript/api/word/word.interfaces.customxmlpartscopedcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentCreatedData.customXmlParts](/javascript/api/word/word.interfaces.documentcreateddata#customxmlparts-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.customXmlParts](/javascript/api/word/word.interfaces.documentdata#customxmlparts-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +18,8 @@ properties:
     fullName: id
     summary: Gets the ID of the custom XML part.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +33,8 @@ properties:
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

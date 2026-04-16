@@ -7,14 +7,14 @@ summary: >-
   A simple enum for top/bottom filters to select whether to filter by the top N
   or bottom N percent, number, or sum of values.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.PivotValueFilter.selectionType](/javascript/api/excel/excel.pivotvaluefilter#selectiontype-member)
   \]
 
@@ -28,9 +28,8 @@ fields:
       Filter the top/bottom N number of items as measured by the chosen value.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Items"'
   - name: percent
     uid: excel!Excel.TopBottomSelectionType.percent:member
@@ -39,9 +38,8 @@ fields:
       Filter the top/bottom N percent of items as measured by the chosen value.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Percent"'
   - name: sum
     uid: excel!Excel.TopBottomSelectionType.sum:member
@@ -50,7 +48,6 @@ fields:
       Filter the top/bottom N sum as measured by the chosen value.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Sum"'

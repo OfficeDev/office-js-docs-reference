@@ -6,17 +6,7 @@ fullName: Word.Interfaces.TableOfAuthoritiesCategoryData
 summary: >-
   An interface describing the data returned by calling
   `tableOfAuthoritiesCategory.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TableOfAuthoritiesCategoryCollectionData.items](/javascript/api/word/word.interfaces.tableofauthoritiescategorycollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData.items](/javascript/api/word/word.interfaces.tableofauthoritiescategorycollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +22,8 @@ properties:
       for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class)
       will remain the same.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

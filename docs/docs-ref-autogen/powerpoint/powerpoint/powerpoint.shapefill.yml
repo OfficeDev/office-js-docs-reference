@@ -5,20 +5,19 @@ package: powerpoint!
 fullName: PowerPoint.ShapeFill
 summary: Represents the fill formatting of a shape object.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.Shape.fill](/javascript/api/powerpoint/powerpoint.shape#fill-member)
   \]
 
-  - \[
+  -
   [PowerPoint.TableCell.fill](/javascript/api/powerpoint/powerpoint.tablecell#fill-member)
   \]
 
@@ -77,9 +76,8 @@ properties:
       Represents the shape fill foreground color in HTML color format, in the
       form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -134,9 +132,8 @@ properties:
       support transparency or the shape fill has inconsistent transparency, such
       as with a gradient fill type.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -182,9 +179,8 @@ properties:
       [PowerPoint.ShapeFillType](xref:powerpoint!PowerPoint.ShapeFillType:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -231,9 +227,8 @@ methods:
     fullName: clear()
     summary: Clears the fill formatting of this shape.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -329,9 +324,8 @@ methods:
       Sets the fill formatting of the shape to an image. This changes the fill
       type to `PictureAndTexture`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -395,9 +389,8 @@ methods:
       Sets the fill formatting of the shape to a uniform color. This changes the
       fill type to `Solid`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

@@ -8,14 +8,14 @@ summary: >-
   [Word.CustomXmlSchemaCollection](xref:word!Word.CustomXmlSchemaCollection:class)
   object.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CustomXmlSchemaCollection.items](/javascript/api/word/word.customxmlschemacollection#items-member)
   \]
 
@@ -44,8 +44,8 @@ properties:
     fullName: location
     summary: Gets the location of the schema on a computer.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +61,8 @@ properties:
       Gets the unique address identifier for the namespace of the
       `CustomXmlSchema` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +80,8 @@ methods:
       [Word.CustomXmlSchemaCollection](xref:word!Word.CustomXmlSchemaCollection:class)
       object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -174,8 +174,8 @@ methods:
     fullName: reload()
     summary: Reloads the schema from a file.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

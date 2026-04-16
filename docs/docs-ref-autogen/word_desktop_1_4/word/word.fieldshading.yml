@@ -5,19 +5,14 @@ package: word!
 fullName: Word.FieldShading
 summary: Specifies the field shading options in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.fieldShading](/javascript/api/word/word.interfaces.viewdata#fieldshading-member)
-  \]
-
-  - \[
-  [Word.View.fieldShading](/javascript/api/word/word.view#fieldshading-member)
+  - [Word.View.fieldShading](/javascript/api/word/word.view#fieldshading-member)
   \]
 
 isPreview: false
@@ -30,8 +25,8 @@ fields:
       Always shade fields.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Always"'
   - name: never
     uid: word!Word.FieldShading.never:member
@@ -40,8 +35,8 @@ fields:
       Never shade fields.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Never"'
   - name: whenSelected
     uid: word!Word.FieldShading.whenSelected:member
@@ -50,6 +45,6 @@ fields:
       Shade fields when selected.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"WhenSelected"'

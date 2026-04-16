@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ChartPivotOptions
 summary: Encapsulates the options for the pivot chart.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Chart.pivotOptions](/javascript/api/excel/excel.chart#pivotoptions-member)
   \]
 
@@ -45,8 +45,8 @@ properties:
       Buttons" command on the "Field Buttons" drop-down list of the "Analyze"
       tab, which is available when a PivotChart is selected.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +60,8 @@ properties:
     fullName: showLegendFieldButtons
     summary: Specifies whether to display the legend field buttons on a PivotChart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -77,8 +77,8 @@ properties:
       Specifies whether to display the report filter field buttons on a
       PivotChart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -92,8 +92,8 @@ properties:
     fullName: showValueFieldButtons
     summary: Specifies whether to display the show value field buttons on a PivotChart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

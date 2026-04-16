@@ -5,34 +5,34 @@ package: excel!
 fullName: Excel.ChartLineFormat
 summary: Encapsulates the formatting options for line elements.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxisFormat.line](/javascript/api/excel/excel.chartaxisformat#line-member)
   \]
 
-  - \[
+  -
   [Excel.ChartErrorBarsFormat.line](/javascript/api/excel/excel.charterrorbarsformat#line-member)
   \]
 
-  - \[
+  -
   [Excel.ChartGridlinesFormat.line](/javascript/api/excel/excel.chartgridlinesformat#line-member)
   \]
 
-  - \[
+  -
   [Excel.ChartLeaderLinesFormat.line](/javascript/api/excel/excel.chartleaderlinesformat#line-member)
   \]
 
-  - \[
+  -
   [Excel.ChartSeriesFormat.line](/javascript/api/excel/excel.chartseriesformat#line-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTrendlineFormat.line](/javascript/api/excel/excel.charttrendlineformat#line-member)
   \]
 
@@ -46,8 +46,8 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +76,8 @@ properties:
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +97,8 @@ properties:
     fullName: weight
     summary: Represents weight of the line, in points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -113,8 +113,8 @@ methods:
     fullName: clear()
     summary: Clears the line format of a chart element.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

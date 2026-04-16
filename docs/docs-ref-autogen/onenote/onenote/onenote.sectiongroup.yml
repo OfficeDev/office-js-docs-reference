@@ -7,30 +7,30 @@ summary: >-
   Represents a OneNote section group. Section groups can contain sections and
   other section groups.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Section.parentSectionGroup](/javascript/api/onenote/onenote.section#parentsectiongroup-member)
   \]
 
-  - \[
+  -
   [OneNote.Section.parentSectionGroupOrNull](/javascript/api/onenote/onenote.section#parentsectiongroupornull-member)
   \]
 
-  - \[
+  -
   [OneNote.SectionGroup.parentSectionGroup](/javascript/api/onenote/onenote.sectiongroup#parentsectiongroup-member)
   \]
 
-  - \[
+  -
   [OneNote.SectionGroup.parentSectionGroupOrNull](/javascript/api/onenote/onenote.sectiongroup#parentsectiongroupornull-member)
   \]
 
-  - \[
+  -
   [OneNote.SectionGroupCollection.items](/javascript/api/onenote/onenote.sectiongroupcollection#items-member)
   \]
 
@@ -44,9 +44,8 @@ properties:
     fullName: clientUrl
     summary: The client URL of the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +74,8 @@ properties:
     fullName: id
     summary: Gets the ID of the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +89,8 @@ properties:
     fullName: name
     summary: Gets the name of the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +104,8 @@ properties:
     fullName: notebook
     summary: Gets the notebook that contains the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +121,8 @@ properties:
       Gets the section group that contains the section group. Throws
       ItemNotFound if the section group is a direct child of the notebook.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -143,9 +138,8 @@ properties:
       Gets the section group that contains the section group. Returns null if
       the section group is a direct child of the notebook.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -159,9 +153,8 @@ properties:
     fullName: sectionGroups
     summary: The collection of section groups in the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -175,9 +168,8 @@ properties:
     fullName: sections
     summary: The collection of sections in the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +184,8 @@ methods:
     fullName: addSection(title)
     summary: Adds a new section to the end of the section group.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -242,9 +233,8 @@ methods:
     fullName: addSectionGroup(name)
     summary: Adds a new section group to the end of this sectionGroup.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -298,9 +288,8 @@ methods:
     fullName: getRestApiId()
     summary: Gets the REST API ID.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -6,17 +6,7 @@ fullName: Word.Interfaces.ListItemUpdateData
 summary: >-
   An interface for updating data on the `ListItem` object, for use in
   `listItem.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ParagraphUpdateData.listItem](/javascript/api/word/word.interfaces.paragraphupdatedata#listitem-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphUpdateData.listItemOrNullObject](/javascript/api/word/word.interfaces.paragraphupdatedata#listitemornullobject-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +18,8 @@ properties:
     fullName: level
     summary: Specifies the level of the item in the list.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

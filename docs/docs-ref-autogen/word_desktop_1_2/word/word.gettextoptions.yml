@@ -7,8 +7,8 @@ summary: >-
   Specifies the options to be included in a
   [Paragraph.getText](xref:word!Word.Paragraph:class) operation.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -46,8 +46,8 @@ properties:
       If provided, specifies whether to include hidden text in the result of the
       `Paragraph.getText` method. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -64,8 +64,8 @@ properties:
       result of the `Paragraph.getText` method. The default value is `false`<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

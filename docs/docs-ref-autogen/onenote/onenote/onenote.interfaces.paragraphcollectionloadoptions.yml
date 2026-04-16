@@ -5,32 +5,8 @@ package: onenote!
 fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions
 summary: Represents a collection of Paragraph objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.OutlineLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.outlineloadoptions#paragraphs-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.ParagraphCollectionLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.paragraphcollectionloadoptions#paragraphs-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.ParagraphLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.paragraphloadoptions#paragraphs-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.tablecellcollectionloadoptions#paragraphs-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.TableCellLoadOptions.paragraphs](/javascript/api/onenote/onenote.interfaces.tablecellloadoptions#paragraphs-member)
-  \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -60,9 +36,8 @@ properties:
       For EACH ITEM in the collection: Gets the ID of the Paragraph object.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -78,9 +53,8 @@ properties:
       For EACH ITEM in the collection: Gets the Image object in the Paragraph.
       Throws an exception if ParagraphType isn't Image.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +70,8 @@ properties:
       For EACH ITEM in the collection: Gets the Ink collection in the Paragraph.
       Throws an exception if ParagraphType isn't Ink.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +90,8 @@ properties:
       For EACH ITEM in the collection: Gets the Outline object that contains the
       Paragraph.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +108,8 @@ properties:
       For EACH ITEM in the collection: The collection of paragraphs under this
       paragraph. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -158,9 +129,8 @@ properties:
       For EACH ITEM in the collection: Gets the parent paragraph object. Throws
       if a parent paragraph doesn't exist.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -179,9 +149,8 @@ properties:
       For EACH ITEM in the collection: Gets the parent paragraph object. Returns
       null if a parent paragraph doesn't exist.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -201,9 +170,8 @@ properties:
       the Paragraph if one exists. If parent isn't a TableCell, throws
       ItemNotFound.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -222,9 +190,8 @@ properties:
       For EACH ITEM in the collection: Gets the TableCell object that contains
       the Paragraph if one exists. If parent is not a TableCell, returns null.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -242,9 +209,8 @@ properties:
       For EACH ITEM in the collection: Gets the RichText object in the
       Paragraph. Throws an exception if ParagraphType isn't RichText.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -262,9 +228,8 @@ properties:
       For EACH ITEM in the collection: Gets the Table object in the Paragraph.
       Throws an exception if ParagraphType isn't Table.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -280,9 +245,8 @@ properties:
       For EACH ITEM in the collection: Gets the type of the Paragraph object.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.CustomXmlPartData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPart.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CustomXmlPartCollectionData.items](/javascript/api/excel/excel.interfaces.customxmlpartcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomXmlPartCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.customxmlpartcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomXmlPartScopedCollectionData.items](/javascript/api/excel/excel.interfaces.customxmlpartscopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.customxmlpartscopedcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

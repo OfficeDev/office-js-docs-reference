@@ -4,17 +4,7 @@ uid: word!Word.Interfaces.ShapeData:interface
 package: word!
 fullName: Word.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ShapeCollectionData.items](/javascript/api/word/word.interfaces.shapecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeCollectionUpdateData.items](/javascript/api/word/word.interfaces.shapecollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

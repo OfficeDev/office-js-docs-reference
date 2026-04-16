@@ -6,17 +6,7 @@ fullName: Word.Interfaces.HtmlDivisionData
 summary: >-
   An interface describing the data returned by calling
   `htmlDivision.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.HtmlDivisionCollectionData.items](/javascript/api/word/word.interfaces.htmldivisioncollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.HtmlDivisionCollectionUpdateData.items](/javascript/api/word/word.interfaces.htmldivisioncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

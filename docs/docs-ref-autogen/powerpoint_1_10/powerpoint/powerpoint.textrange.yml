@@ -7,16 +7,15 @@ summary: >-
   Contains the text that is attached to a shape, in addition to properties and
   methods for manipulating the text.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TextFrame.textRange](/javascript/api/powerpoint/powerpoint.textframe#textrange-member)
   \]
 
@@ -66,9 +65,8 @@ properties:
       Returns a `ShapeFont` object that represents the font attributes for the
       text range.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -102,9 +100,8 @@ properties:
     fullName: hyperlinks
     summary: Returns a collection of hyperlinks that exist on this `TextRange`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -122,9 +119,8 @@ properties:
       the value is greater than the length of the available text from the
       starting point.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +137,8 @@ properties:
       [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -207,9 +202,8 @@ properties:
       `InvalidArgument` exception when set with a negative value or if the value
       is greater than the length of the text.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -223,9 +217,8 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -243,9 +236,8 @@ methods:
       [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object
       that holds this `TextRange`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -306,9 +298,8 @@ methods:
     fullName: getSubstring(start, length)
     summary: Returns a `TextRange` object for the substring in the given range.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -416,9 +407,8 @@ methods:
       Sets a hyperlink on this `TextRange` with the specified options. This will
       delete all existing hyperlinks on this `TextRange`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -442,9 +432,8 @@ methods:
     fullName: setSelected()
     summary: Selects this `TextRange` in the current view.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

@@ -5,90 +5,90 @@ package: excel!
 fullName: Excel.EventSource
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAddedEventArgs.source](/javascript/api/excel/excel.chartaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.ChartDeletedEventArgs.source](/javascript/api/excel/excel.chartdeletedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.CommentAddedEventArgs.source](/javascript/api/excel/excel.commentaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.CommentChangedEventArgs.source](/javascript/api/excel/excel.commentchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.CommentDeletedEventArgs.source](/javascript/api/excel/excel.commentdeletedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.TableAddedEventArgs.source](/javascript/api/excel/excel.tableaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.TableChangedEventArgs.source](/javascript/api/excel/excel.tablechangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.TableDeletedEventArgs.source](/javascript/api/excel/excel.tabledeletedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetAddedEventArgs.source](/javascript/api/excel/excel.worksheetaddedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetChangedEventArgs.source](/javascript/api/excel/excel.worksheetchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetColumnSortedEventArgs.source](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetDeletedEventArgs.source](/javascript/api/excel/excel.worksheetdeletedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetFormatChangedEventArgs.source](/javascript/api/excel/excel.worksheetformatchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetFormulaChangedEventArgs.source](/javascript/api/excel/excel.worksheetformulachangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetMovedEventArgs.source](/javascript/api/excel/excel.worksheetmovedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetNameChangedEventArgs.source](/javascript/api/excel/excel.worksheetnamechangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetProtectionChangedEventArgs.source](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetRowHiddenChangedEventArgs.source](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetRowSortedEventArgs.source](/javascript/api/excel/excel.worksheetrowsortedeventargs#source-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetVisibilityChangedEventArgs.source](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#source-member)
   \]
 
@@ -102,8 +102,8 @@ fields:
       Local means the event comes from a local user session.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Local"'
   - name: remote
     uid: excel!Excel.EventSource.remote:member
@@ -112,6 +112,6 @@ fields:
       Remote means the event comes from a remote user session.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Remote"'

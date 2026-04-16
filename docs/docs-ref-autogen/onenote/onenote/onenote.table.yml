@@ -5,18 +5,18 @@ package: onenote!
 fullName: OneNote.Table
 summary: Represents a table in a OneNote page.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.Paragraph.table](/javascript/api/onenote/onenote.paragraph#table-member)
   \]
 
-  - \[
+  -
   [OneNote.TableRow.parentTable](/javascript/api/onenote/onenote.tablerow#parenttable-member)
   \]
 
@@ -32,9 +32,8 @@ properties:
       Gets or sets whether the borders are visible or not. True if they are
       visible, false if they are hidden.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +47,8 @@ properties:
     fullName: columnCount
     summary: Gets the number of columns in the table.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +77,8 @@ properties:
     fullName: id
     summary: Gets the ID of the table.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -95,9 +92,8 @@ properties:
     fullName: paragraph
     summary: Gets the Paragraph object that contains the Table object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -111,9 +107,8 @@ properties:
     fullName: rowCount
     summary: Gets the number of rows in the table.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -127,9 +122,8 @@ properties:
     fullName: rows
     summary: Gets all of the table rows.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -146,9 +140,8 @@ methods:
       Adds a column to the end of the table. Values, if specified, are set in
       the new column. Otherwise the column is empty.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -201,9 +194,8 @@ methods:
       Adds a row to the end of the table. Values, if specified, are set in the
       new row. Otherwise the row is empty.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -255,9 +247,8 @@ methods:
     fullName: clear()
     summary: Clears the contents of the table.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -272,9 +263,8 @@ methods:
     fullName: getCell(rowIndex, cellIndex)
     summary: Gets the table cell at a specified row and column.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -329,9 +319,8 @@ methods:
       Inserts a column at the given index in the table. Values, if specified,
       are set in the new column. Otherwise the column is empty.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -388,9 +377,8 @@ methods:
       Inserts a row at the given index in the table. Values, if specified, are
       set in the new row. Otherwise the row is empty.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -605,9 +593,8 @@ methods:
       Sets the shading color of all cells in the table. The color code to set
       the cells to.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

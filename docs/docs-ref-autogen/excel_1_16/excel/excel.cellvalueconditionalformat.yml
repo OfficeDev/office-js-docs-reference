@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.CellValueConditionalFormat
 summary: Represents a cell value conditional format.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalFormat.cellValue](/javascript/api/excel/excel.conditionalformat#cellvalue-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalFormat.cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#cellvalueornullobject-member)
   \]
 
@@ -47,8 +47,8 @@ properties:
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -85,8 +85,8 @@ properties:
     fullName: rule
     summary: Specifies the rule object on this conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

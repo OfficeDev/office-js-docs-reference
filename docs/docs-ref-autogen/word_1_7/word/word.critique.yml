@@ -7,24 +7,20 @@ summary: >-
   Critique that will be rendered as underline for the specified part of
   paragraph in the document.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.AnnotationSet.critiques](/javascript/api/word/word.annotationset#critiques-member)
   \]
 
-  - \[
+  -
   [Word.CritiqueAnnotation.critique](/javascript/api/word/word.critiqueannotation#critique-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CritiqueAnnotationData.critique](/javascript/api/word/word.interfaces.critiqueannotationdata#critique-member)
   \]
 
   #### Examples
@@ -99,8 +95,8 @@ properties:
     fullName: colorScheme
     summary: Specifies the color scheme of the critique.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -118,8 +114,8 @@ properties:
     fullName: length
     summary: Specifies the length of the critique inside paragraph.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +129,8 @@ properties:
     fullName: start
     summary: Specifies the start index of the critique inside paragraph.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

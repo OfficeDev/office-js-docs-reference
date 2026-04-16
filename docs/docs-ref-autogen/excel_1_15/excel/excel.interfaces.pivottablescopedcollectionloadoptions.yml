@@ -8,8 +8,8 @@ summary: >-
   based on the location of the PivotTable's top-left corner. They are ordered
   top-to-bottom and then left-to-right.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -40,9 +40,8 @@ properties:
       For EACH ITEM in the collection: Specifies if the PivotTable allows the
       application of multiple PivotFilters on a given PivotField in the table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +58,8 @@ properties:
       For EACH ITEM in the collection: Specifies if the PivotTable allows values
       in the data body to be edited by the user.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +73,8 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the PivotTable.'
     remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +90,8 @@ properties:
       For EACH ITEM in the collection: The PivotLayout describing the layout and
       visual structure of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -107,8 +105,8 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the PivotTable.'
     remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +124,8 @@ properties:
       refreshes when the workbook opens. Corresponds to "Refresh on load"
       setting in the UI.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -145,8 +142,8 @@ properties:
       For EACH ITEM in the collection: Specifies if the PivotTable uses custom
       lists when sorting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -163,9 +160,8 @@ properties:
       For EACH ITEM in the collection: The worksheet containing the current
       PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

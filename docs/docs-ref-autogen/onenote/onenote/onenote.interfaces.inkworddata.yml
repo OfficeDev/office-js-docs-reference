@@ -6,21 +6,7 @@ fullName: OneNote.Interfaces.InkWordData
 summary: >-
   An interface describing the data returned by calling `inkWord.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkWordCollectionData.items](/javascript/api/onenote/onenote.interfaces.inkwordcollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkWordCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.inkwordcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.ParagraphData.inkWords](/javascript/api/onenote/onenote.interfaces.paragraphdata#inkwords-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: id
     summary: Gets the ID of the InkWord object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +33,8 @@ properties:
     fullName: languageId
     summary: The id of the recognized language in this ink word. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +50,8 @@ properties:
       The words that were recognized in this ink word, in order of likelihood.
       Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

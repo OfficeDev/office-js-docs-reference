@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.Runtime
 summary: Represents the Excel Runtime class.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.RequestContext.runtime](/javascript/api/excel/excel.requestcontext#runtime-member)
   \]
 

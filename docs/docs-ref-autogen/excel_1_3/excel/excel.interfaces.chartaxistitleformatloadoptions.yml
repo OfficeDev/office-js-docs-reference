@@ -5,16 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
 summary: Represents the chart axis title formatting.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAxisTitleLoadOptions.format](/javascript/api/excel/excel.interfaces.chartaxistitleloadoptions#format-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +36,8 @@ properties:
       Specifies the chart axis title's font attributes, such as font name, font
       size, or color, of the chart axis title object.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

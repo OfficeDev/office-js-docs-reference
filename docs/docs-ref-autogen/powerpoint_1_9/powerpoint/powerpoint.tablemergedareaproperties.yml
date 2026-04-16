@@ -5,16 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.TableMergedAreaProperties
 summary: Represents the properties of a merged area of cells in a table.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TableAddOptions.mergedAreas](/javascript/api/powerpoint/powerpoint.tableaddoptions#mergedareas-member)
   \]
 
@@ -58,9 +57,8 @@ properties:
       Specifies the number of columns for the merged cells area. Must be 1 or
       greater.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -105,9 +103,8 @@ properties:
       Specifies the zero-based index of the column of the top left cell of the
       merged area.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -152,9 +149,8 @@ properties:
       Specifies the number of rows for the merged cells area. Must be 1 or
       greater.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -199,9 +195,8 @@ properties:
       Specifies the zero-based index of the row of the top left cell of the
       merged area.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

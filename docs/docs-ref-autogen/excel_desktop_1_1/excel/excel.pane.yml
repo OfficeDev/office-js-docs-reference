@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.Pane
 summary: Represents a pane, such as a frozen or split pane, in an Excel window.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.PaneCollection.items](/javascript/api/excel/excel.panecollection#items-member)
   \]
 
-  - \[
+  -
   [Excel.Window.activePane](/javascript/api/excel/excel.window#activepane-member)
   \]
 
@@ -45,8 +45,8 @@ properties:
     fullName: index
     summary: Returns index of the pane.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

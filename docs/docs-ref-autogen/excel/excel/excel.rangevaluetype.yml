@@ -5,58 +5,46 @@ package: excel!
 fullName: Excel.RangeValueType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChangedEventDetail.valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#valuetypeafter-member)
   \]
 
-  - \[
+  -
   [Excel.ChangedEventDetail.valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#valuetypebefore-member)
   \]
 
-  - \[
+  -
   [Excel.ExternalCodeServiceObjectCellValue.basicType](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#basictype-member)
   \]
 
-  - \[
-  [Excel.Interfaces.NamedItemArrayValuesData.types](/javascript/api/excel/excel.interfaces.nameditemarrayvaluesdata#types-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeData.valueTypes](/javascript/api/excel/excel.interfaces.rangedata#valuetypes-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeViewData.valueTypes](/javascript/api/excel/excel.interfaces.rangeviewdata#valuetypes-member)
-  \]
-
-  - \[
+  -
   [Excel.NamedItemArrayValues.types](/javascript/api/excel/excel.nameditemarrayvalues#types-member)
   \]
 
-  - \[
+  -
   [Excel.Range.valueTypes](/javascript/api/excel/excel.range#valuetypes-member)
   \]
 
-  - \[
+  -
   [Excel.RangeView.valueTypes](/javascript/api/excel/excel.rangeview#valuetypes-member)
   \]
 
-  - \[
+  -
   [Excel.ReferenceCellValue.basicType](/javascript/api/excel/excel.referencecellvalue#basictype-member)
   \]
 
-  - \[
+  -
   [Excel.RootReferenceCellValue.basicType](/javascript/api/excel/excel.rootreferencecellvalue#basictype-member)
   \]
 
-  - \[
+  -
   [Excel.ValueTypeNotAvailableCellValue.basicType](/javascript/api/excel/excel.valuetypenotavailablecellvalue#basictype-member)
   \]
 
@@ -67,55 +55,55 @@ fields:
     uid: excel!Excel.RangeValueType.boolean:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.RangeValueType.double:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Double"'
   - name: empty
     uid: excel!Excel.RangeValueType.empty:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Empty"'
   - name: error
     uid: excel!Excel.RangeValueType.error:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Error"'
   - name: integer
     uid: excel!Excel.RangeValueType.integer:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Integer"'
   - name: richValue
     uid: excel!Excel.RangeValueType.richValue:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RichValue"'
   - name: string
     uid: excel!Excel.RangeValueType.string:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"String"'
   - name: unknown
     uid: excel!Excel.RangeValueType.unknown:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

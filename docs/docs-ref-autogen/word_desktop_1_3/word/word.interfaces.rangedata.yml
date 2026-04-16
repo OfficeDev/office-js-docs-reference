@@ -4,69 +4,7 @@ uid: word!Word.Interfaces.RangeData:interface
 package: word!
 fullName: Word.Interfaces.RangeData
 summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BreakData.range](/javascript/api/word/word.interfaces.breakdata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlData.range](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontroldata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlData.range](/javascript/api/word/word.interfaces.datepickercontentcontroldata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldData.result](/javascript/api/word/word.interfaces.fielddata#result-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FrameData.range](/javascript/api/word/word.interfaces.framedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlData.range](/javascript/api/word/word.interfaces.groupcontentcontroldata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.HyperlinkData.range](/javascript/api/word/word.interfaces.hyperlinkdata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.NoteItemData.reference](/javascript/api/word/word.interfaces.noteitemdata#reference-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlData.range](/javascript/api/word/word.interfaces.picturecontentcontroldata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeCollectionData.items](/javascript/api/word/word.interfaces.rangecollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeCollectionUpdateData.items](/javascript/api/word/word.interfaces.rangecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeScopedCollectionData.items](/javascript/api/word/word.interfaces.rangescopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeScopedCollectionUpdateData.items](/javascript/api/word/word.interfaces.rangescopedcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionContentControlData.range](/javascript/api/word/word.interfaces.repeatingsectioncontentcontroldata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionItemData.range](/javascript/api/word/word.interfaces.repeatingsectionitemdata#range-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -78,8 +16,8 @@ properties:
     fullName: fields
     summary: Gets the collection of `Field` objects in the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +33,8 @@ properties:
       Gets the text format of the range. Use this to get and set font name,
       size, color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -112,8 +50,8 @@ properties:
       Gets a `FrameCollection` object that represents all the frames in the
       range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -129,8 +67,8 @@ properties:
       Specifies the proofing status (spelling and grammar checking) of the
       range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -148,8 +86,8 @@ properties:
       the range. Use a '\#' to separate the address part from the optional
       location part.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -165,8 +103,8 @@ properties:
       Returns a `HyperlinkCollection` object that represents all the hyperlinks
       in the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -180,8 +118,8 @@ properties:
     fullName: inlinePictures
     summary: Gets the collection of `InlinePicture` objects in the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -195,8 +133,8 @@ properties:
     fullName: isEmpty
     summary: Checks whether the range length is zero.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -212,8 +150,8 @@ properties:
       Specifies whether Microsoft Word has detected the language of the text in
       the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -227,8 +165,8 @@ properties:
     fullName: languageId
     summary: Specifies a `LanguageId` value that represents the language for the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -339,8 +277,8 @@ properties:
     fullName: languageIdFarEast
     summary: Specifies an East Asian language for the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -453,8 +391,8 @@ properties:
       Specifies a language for the range that isn't classified as an East Asian
       language.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -567,8 +505,8 @@ properties:
       Returns a `ListFormat` object that represents all the list formatting
       characteristics of the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -582,8 +520,8 @@ properties:
     fullName: pages
     summary: Gets the collection of pages in the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -597,8 +535,8 @@ properties:
     fullName: sections
     summary: Gets the collection of sections in the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -614,8 +552,8 @@ properties:
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -632,8 +570,8 @@ properties:
       both inline and floating shapes. Currently, only the following shapes are
       supported: text boxes, geometric shapes, groups, pictures, and canvases.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: Be aware that with time, additional types of shapes may be
@@ -655,8 +593,8 @@ properties:
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -673,8 +611,8 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -794,8 +732,8 @@ properties:
       Gets a `TableColumnCollection` object that represents all the table
       columns in the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -809,8 +747,8 @@ properties:
     fullName: text
     summary: Gets the text of the range.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

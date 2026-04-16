@@ -5,16 +5,14 @@ package: visio!
 fullName: Visio.PageCollection
 summary: Represents a collection of Page objects that are part of the document.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[ [Visio.Document.pages](/javascript/api/visio/visio.document#pages-member)
-  \]
+  - [Visio.Document.pages](/javascript/api/visio/visio.document#pages-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -55,9 +53,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of pages in the collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +69,8 @@ methods:
     fullName: getItem(key)
     summary: Gets a page using its key (name or Id).
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples

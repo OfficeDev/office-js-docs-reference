@@ -23,11 +23,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentRead.getEntitiesByType](/javascript/api/outlook/office.appointmentread#getentitiesbytype-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.getEntitiesByType](/javascript/api/outlook/office.messageread#getentitiesbytype-member)
   \]
 

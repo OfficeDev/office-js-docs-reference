@@ -5,19 +5,18 @@ package: excel!
 fullName: Excel.NoteCollection
 summary: Represents a collection of note objects that are part of the workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#notes-member)
-  \]
+  - [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#notes-member) \]
 
-  - \[
-  [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#notes-member) \]
+  - [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#notes-member)
+  \]
 
   #### Examples
 
@@ -79,9 +78,8 @@ methods:
     fullName: add(cellAddress, content)
     summary: Adds a new note with the given content on the given cell.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -128,9 +126,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of notes in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -145,9 +142,8 @@ methods:
     fullName: getItem(key)
     summary: Gets a note by its cell address.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -192,9 +188,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a note from the collection based on its position.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -239,9 +234,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

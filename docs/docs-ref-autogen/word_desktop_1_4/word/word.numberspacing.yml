@@ -5,23 +5,15 @@ package: word!
 fullName: Word.NumberSpacing
 summary: Specifies the number spacing setting for an OpenType font.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Font.numberSpacing](/javascript/api/word/word.font#numberspacing-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontData.numberSpacing](/javascript/api/word/word.interfaces.fontdata#numberspacing-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FontUpdateData.numberSpacing](/javascript/api/word/word.interfaces.fontupdatedata#numberspacing-member)
   \]
 
 isPreview: false
@@ -34,8 +26,8 @@ fields:
       Default number spacing setting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Default"'
   - name: proportional
     uid: word!Word.NumberSpacing.proportional:member
@@ -44,8 +36,8 @@ fields:
       Proportional number spacing setting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Proportional"'
   - name: tabular
     uid: word!Word.NumberSpacing.tabular:member
@@ -54,6 +46,6 @@ fields:
       Tabular number spacing setting.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tabular"'

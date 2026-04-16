@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.ErrorCellValueType
 summary: Represents the types of the `ErrorCellValue` object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples
@@ -48,9 +48,8 @@ fields:
       Represents a `BlockedErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Blocked"'
   - name: busy
     uid: excel!Excel.ErrorCellValueType.busy:member
@@ -59,9 +58,8 @@ fields:
       Represents a `BusyErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Busy"'
   - name: calc
     uid: excel!Excel.ErrorCellValueType.calc:member
@@ -70,9 +68,8 @@ fields:
       Represents a `CalcErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Calc"'
   - name: connect
     uid: excel!Excel.ErrorCellValueType.connect:member
@@ -81,9 +78,8 @@ fields:
       Represents a `ConnectErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Connect"'
   - name: div0
     uid: excel!Excel.ErrorCellValueType.div0:member
@@ -92,9 +88,8 @@ fields:
       Represents a `Div0ErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Div0"'
   - name: external
     uid: excel!Excel.ErrorCellValueType.external:member
@@ -103,9 +98,8 @@ fields:
       Represents an `ExternalErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"External"'
   - name: field
     uid: excel!Excel.ErrorCellValueType.field:member
@@ -114,9 +108,8 @@ fields:
       Represents a `FieldErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Field"'
   - name: gettingData
     uid: excel!Excel.ErrorCellValueType.gettingData:member
@@ -125,9 +118,8 @@ fields:
       Represents a `GettingDataErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GettingData"'
   - name: name
     uid: excel!Excel.ErrorCellValueType.name:member
@@ -136,9 +128,8 @@ fields:
       Represents a `NameErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Name"'
   - name: notAvailable
     uid: excel!Excel.ErrorCellValueType.notAvailable:member
@@ -147,9 +138,8 @@ fields:
       Represents a `NotAvailableErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"NotAvailable"'
   - name: 'null'
     uid: excel!Excel.ErrorCellValueType.null:member
@@ -158,9 +148,8 @@ fields:
       Represents a `NullErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Null"'
   - name: num
     uid: excel!Excel.ErrorCellValueType.num:member
@@ -169,9 +158,8 @@ fields:
       Represents a `NumErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Num"'
   - name: placeholder
     uid: excel!Excel.ErrorCellValueType.placeholder:member
@@ -180,9 +168,8 @@ fields:
       Represents a `PlaceholderErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Placeholder"'
   - name: python
     uid: excel!Excel.ErrorCellValueType.python:member
@@ -191,9 +178,8 @@ fields:
       Represents a `PythonErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Python"'
   - name: ref
     uid: excel!Excel.ErrorCellValueType.ref:member
@@ -202,9 +188,8 @@ fields:
       Represents a `RefErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Ref"'
   - name: spill
     uid: excel!Excel.ErrorCellValueType.spill:member
@@ -213,9 +198,8 @@ fields:
       Represents a `SpillErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Spill"'
   - name: timeout
     uid: excel!Excel.ErrorCellValueType.timeout:member
@@ -224,9 +208,8 @@ fields:
       Represents a `TimeoutErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Timeout"'
   - name: value
     uid: excel!Excel.ErrorCellValueType.value:member
@@ -235,7 +218,6 @@ fields:
       Represents a `ValueErrorCellValue`<!-- -->.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Value"'

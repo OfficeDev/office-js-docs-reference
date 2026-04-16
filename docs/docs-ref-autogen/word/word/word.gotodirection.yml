@@ -7,14 +7,14 @@ summary: >-
   Specifies the direction in which to move when using the
   [Selection.goTo](xref:word!Word.Selection:class) method.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.GoToOptions.direction](/javascript/api/word/word.gotooptions#direction-member)
   \]
 
@@ -28,8 +28,8 @@ fields:
       Moves to the first item.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"First"'
   - name: last
     uid: word!Word.GoToDirection.last:member
@@ -38,8 +38,8 @@ fields:
       Moves to the last item.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Last"'
   - name: next
     uid: word!Word.GoToDirection.next:member
@@ -48,8 +48,8 @@ fields:
       Moves to the next item.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Next"'
   - name: previous
     uid: word!Word.GoToDirection.previous:member
@@ -58,6 +58,6 @@ fields:
       Moves to the previous item.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Previous"'

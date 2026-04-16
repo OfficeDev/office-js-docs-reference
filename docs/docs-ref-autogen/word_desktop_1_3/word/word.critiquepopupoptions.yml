@@ -5,15 +5,15 @@ package: word!
 fullName: Word.CritiquePopupOptions
 summary: Properties defining the behavior of the pop-up menu for a given critique.
 remarks: >-
-  \[ [API set: WordApi
-  1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Critique.popupOptions](/javascript/api/word/word.critique#popupoptions-member)
   \]
 
@@ -91,8 +91,8 @@ properties:
       Specifies the manifest resource ID of the string to use for branding. This
       branding text appears next to your add-in icon in the pop-up menu.
     remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -106,8 +106,8 @@ properties:
     fullName: subtitleResourceId
     summary: Specifies the manifest resource ID of the string to use as the subtitle.
     remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +121,8 @@ properties:
     fullName: suggestions
     summary: Specifies the suggestions to display in the critique pop-up menu.
     remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -136,8 +136,8 @@ properties:
     fullName: titleResourceId
     summary: Specifies the manifest resource ID of the string to use as the title.
     remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

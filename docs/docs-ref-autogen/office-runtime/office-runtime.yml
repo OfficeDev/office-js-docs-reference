@@ -16,8 +16,8 @@ functions:
     package: office-runtime!
     summary: Function that enables a pop up web dialog box.
     remarks: >-
-      \[ [API set: CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       #### Examples

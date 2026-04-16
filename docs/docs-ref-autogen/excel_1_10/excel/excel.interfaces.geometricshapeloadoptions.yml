@@ -8,24 +8,8 @@ summary: >-
   rectangle, block arrow, equation symbol, flowchart item, star, banner,
   callout, or any other basic shape in Excel.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape](/javascript/api/excel/excel.interfaces.groupshapecollectionloadoptions#geometricshape-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape](/javascript/api/excel/excel.interfaces.shapecollectionloadoptions#geometricshape-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeLoadOptions.geometricShape](/javascript/api/excel/excel.interfaces.shapeloadoptions#geometricshape-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -53,8 +37,8 @@ properties:
     fullName: id
     summary: Returns the shape identifier.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -68,8 +52,8 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object for the geometric shape.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.Point
 summary: Represents a single point of ink stroke
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.PointCollection.items](/javascript/api/onenote/onenote.pointcollection#items-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: id
     summary: Gets the ID of the Point object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

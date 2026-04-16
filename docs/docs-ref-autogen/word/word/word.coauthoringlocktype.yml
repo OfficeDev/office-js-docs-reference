@@ -7,23 +7,19 @@ summary: >-
   Represents the types of [coauthoring
   locks](xref:word!Word.CoauthoringLock:class)<!-- -->.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CoauthoringLock.type](/javascript/api/word/word.coauthoringlock#type-member)
   \]
 
-  - \[
+  -
   [Word.CoauthoringLockAddOptions.type](/javascript/api/word/word.coauthoringlockaddoptions#type-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CoauthoringLockData.type](/javascript/api/word/word.interfaces.coauthoringlockdata#type-member)
   \]
 
 isPreview: false
@@ -36,8 +32,8 @@ fields:
       Represents that the lock has changed.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Changed"'
   - name: ephemeral
     uid: word!Word.CoauthoringLockType.ephemeral:member
@@ -46,8 +42,8 @@ fields:
       Represents that the lock is ephemeral.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Ephemeral"'
   - name: none
     uid: word!Word.CoauthoringLockType.none:member
@@ -56,8 +52,8 @@ fields:
       Reserved for future use.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: reservation
     uid: word!Word.CoauthoringLockType.reservation:member
@@ -66,6 +62,6 @@ fields:
       Represents that the lock is a reservation.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Reservation"'

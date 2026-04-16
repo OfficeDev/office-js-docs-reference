@@ -6,17 +6,7 @@ fullName: Word.Interfaces.NoteItemData
 summary: >-
   An interface describing the data returned by calling `noteItem.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.NoteItemCollectionData.items](/javascript/api/word/word.interfaces.noteitemcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.NoteItemCollectionUpdateData.items](/javascript/api/word/word.interfaces.noteitemcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

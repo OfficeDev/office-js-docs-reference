@@ -7,38 +7,26 @@ summary: >-
   Represents the refresh mode setting for the `LinkedEntityCellValue` objects of
   a `LinkedEntityDataDomain`<!-- -->.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.LinkedEntityDataDomainData.refreshMode](/javascript/api/excel/excel.interfaces.linkedentitydatadomaindata#refreshmode-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.LinkedEntityDataDomainData.supportedRefreshModes](/javascript/api/excel/excel.interfaces.linkedentitydatadomaindata#supportedrefreshmodes-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.LinkedEntityDataDomainUpdateData.refreshMode](/javascript/api/excel/excel.interfaces.linkedentitydatadomainupdatedata#refreshmode-member)
-  \]
-
-  - \[
+  -
   [Excel.LinkedEntityDataDomain.refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#refreshmode-member)
   \]
 
-  - \[
+  -
   [Excel.LinkedEntityDataDomain.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#supportedrefreshmodes-member)
   \]
 
-  - \[
+  -
   [Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#supportedrefreshmodes-member)
   \]
 
-  - \[
+  -
   [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#refreshmode-member)
   \]
 
@@ -52,9 +40,8 @@ fields:
       Manual refresh by the user. Refresh is not triggered automatically.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Manual"'
   - name: onLoad
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.onLoad:member
@@ -65,9 +52,8 @@ fields:
       load, applicable to linked entity data domains defined by Office Add-ins.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OnLoad"'
   - name: periodic
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.periodic:member
@@ -81,9 +67,8 @@ fields:
       refresh each time the add-in loads.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Periodic"'
   - name: unknown
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.unknown:member
@@ -92,7 +77,6 @@ fields:
       Refresh mode is unknown or unsupported.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'

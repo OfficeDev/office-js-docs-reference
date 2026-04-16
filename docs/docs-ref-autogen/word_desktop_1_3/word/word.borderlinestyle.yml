@@ -7,23 +7,15 @@ summary: >-
   Specifies the [border](xref:word!Word.BorderUniversal:class) style for an
   object.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.BorderUniversal.lineStyle](/javascript/api/word/word.borderuniversal#linestyle-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BorderUniversalData.lineStyle](/javascript/api/word/word.interfaces.borderuniversaldata#linestyle-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BorderUniversalUpdateData.lineStyle](/javascript/api/word/word.interfaces.borderuniversalupdatedata#linestyle-member)
   \]
 
 isPreview: false
@@ -36,8 +28,8 @@ fields:
       Dash-dot line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashDot"'
   - name: dashDotDot
     uid: word!Word.BorderLineStyle.dashDotDot:member
@@ -46,8 +38,8 @@ fields:
       Dash-dot-dot line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashDotDot"'
   - name: dashDotStroked
     uid: word!Word.BorderLineStyle.dashDotStroked:member
@@ -56,8 +48,8 @@ fields:
       Dash-dot stroked line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashDotStroked"'
   - name: dashLargeGap
     uid: word!Word.BorderLineStyle.dashLargeGap:member
@@ -66,8 +58,8 @@ fields:
       Dashed line style with large gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashLargeGap"'
   - name: dashSmallGap
     uid: word!Word.BorderLineStyle.dashSmallGap:member
@@ -76,8 +68,8 @@ fields:
       Dashed line style with small gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DashSmallGap"'
   - name: dot
     uid: word!Word.BorderLineStyle.dot:member
@@ -86,8 +78,8 @@ fields:
       Dotted line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Dot"'
   - name: double
     uid: word!Word.BorderLineStyle.double:member
@@ -96,8 +88,8 @@ fields:
       Double line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Double"'
   - name: doubleWavy
     uid: word!Word.BorderLineStyle.doubleWavy:member
@@ -106,8 +98,8 @@ fields:
       Double wavy line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DoubleWavy"'
   - name: emboss3D
     uid: word!Word.BorderLineStyle.emboss3D:member
@@ -116,8 +108,8 @@ fields:
       Embossed 3D line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Emboss3D"'
   - name: engrave3D
     uid: word!Word.BorderLineStyle.engrave3D:member
@@ -126,8 +118,8 @@ fields:
       Engraved 3D line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Engrave3D"'
   - name: inset
     uid: word!Word.BorderLineStyle.inset:member
@@ -136,8 +128,8 @@ fields:
       Inset line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Inset"'
   - name: none
     uid: word!Word.BorderLineStyle.none:member
@@ -146,8 +138,8 @@ fields:
       No line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: outset
     uid: word!Word.BorderLineStyle.outset:member
@@ -156,8 +148,8 @@ fields:
       Outset line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Outset"'
   - name: single
     uid: word!Word.BorderLineStyle.single:member
@@ -166,8 +158,8 @@ fields:
       Single line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Single"'
   - name: singleWavy
     uid: word!Word.BorderLineStyle.singleWavy:member
@@ -176,8 +168,8 @@ fields:
       Single wavy line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SingleWavy"'
   - name: thickThinLargeGap
     uid: word!Word.BorderLineStyle.thickThinLargeGap:member
@@ -186,8 +178,8 @@ fields:
       Thick-thin line style with large gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThickThinLargeGap"'
   - name: thickThinMedGap
     uid: word!Word.BorderLineStyle.thickThinMedGap:member
@@ -196,8 +188,8 @@ fields:
       Thick-thin line style with medium gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThickThinMedGap"'
   - name: thickThinSmallGap
     uid: word!Word.BorderLineStyle.thickThinSmallGap:member
@@ -206,8 +198,8 @@ fields:
       Thick-thin line style with small gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThickThinSmallGap"'
   - name: thinThickLargeGap
     uid: word!Word.BorderLineStyle.thinThickLargeGap:member
@@ -216,8 +208,8 @@ fields:
       Thin-thick line style with large gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThinThickLargeGap"'
   - name: thinThickMedGap
     uid: word!Word.BorderLineStyle.thinThickMedGap:member
@@ -226,8 +218,8 @@ fields:
       Thin-thick line style with medium gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThinThickMedGap"'
   - name: thinThickSmallGap
     uid: word!Word.BorderLineStyle.thinThickSmallGap:member
@@ -236,8 +228,8 @@ fields:
       Thin-thick line style with small gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThinThickSmallGap"'
   - name: thinThickThinLargeGap
     uid: word!Word.BorderLineStyle.thinThickThinLargeGap:member
@@ -246,8 +238,8 @@ fields:
       Thin-thick-thin line style with large gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThinThickThinLargeGap"'
   - name: thinThickThinMedGap
     uid: word!Word.BorderLineStyle.thinThickThinMedGap:member
@@ -256,8 +248,8 @@ fields:
       Thin-thick-thin line style with medium gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThinThickThinMedGap"'
   - name: thinThickThinSmallGap
     uid: word!Word.BorderLineStyle.thinThickThinSmallGap:member
@@ -266,8 +258,8 @@ fields:
       Thin-thick-thin line style with small gaps.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ThinThickThinSmallGap"'
   - name: triple
     uid: word!Word.BorderLineStyle.triple:member
@@ -276,6 +268,6 @@ fields:
       Triple line style.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Triple"'

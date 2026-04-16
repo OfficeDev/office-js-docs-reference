@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `DataBarConditionalFormat` object, for
   use in `dataBarConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatUpdateData.dataBar](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#databar-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#databarornullobject-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -31,8 +21,8 @@ properties:
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
       is "" (an empty string) if no axis is present or set.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +37,8 @@ properties:
     fullName: axisFormat
     summary: Representation of how the axis is determined for an Excel data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +57,8 @@ properties:
     fullName: barDirection
     summary: Specifies the direction that the data bar graphic should be based on.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -91,8 +81,8 @@ properties:
       set as a JSON object (use `x.lowerBoundRule = {...}` instead of
       `x.lowerBoundRule.formula = ...`<!-- -->).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -107,8 +97,8 @@ properties:
     fullName: negativeFormat
     summary: Representation of all values to the left of the axis in an Excel data bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -130,8 +120,8 @@ properties:
       Representation of all values to the right of the axis in an Excel data
       bar.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -153,8 +143,8 @@ properties:
       If `true`<!-- -->, hides the values from the cells where the data bar is
       applied.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -173,8 +163,8 @@ properties:
       set as a JSON object (use `x.upperBoundRule = {...}` instead of
       `x.upperBoundRule.formula = ...`<!-- -->).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

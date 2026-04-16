@@ -5,14 +5,14 @@ package: word!
 fullName: Word.CustomXmlPrefixMapping
 summary: Represents a `CustomXmlPrefixMapping` object.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.CustomXmlPrefixMappingCollection.items](/javascript/api/word/word.customxmlprefixmappingcollection#items-member)
   \]
 
@@ -43,8 +43,8 @@ properties:
       Gets the unique address identifier for the namespace of the
       `CustomXmlPrefixMapping` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +58,8 @@ properties:
     fullName: prefix
     summary: Gets the prefix for the `CustomXmlPrefixMapping` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

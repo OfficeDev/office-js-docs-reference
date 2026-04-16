@@ -7,18 +7,18 @@ summary: >-
   Represents the collection of [Word.XmlNode](xref:word!Word.XmlNode:class)
   objects.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.XmlNode.attributes](/javascript/api/word/word.xmlnode#attributes-member)
   \]
 
-  - \[
+  -
   [Word.XmlNode.childNodes](/javascript/api/word/word.xmlnode#childnodes-member)
   \]
 
@@ -61,8 +61,8 @@ methods:
     fullName: getItemAt(index)
     summary: Returns an individual `XmlNode` object in a collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

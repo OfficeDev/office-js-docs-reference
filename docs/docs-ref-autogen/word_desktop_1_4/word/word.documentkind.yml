@@ -5,22 +5,14 @@ package: word!
 fullName: Word.DocumentKind
 summary: Specifies the kind or purpose of a document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Document.kind](/javascript/api/word/word.document#kind-member) \]
-
-  - \[
-  [Word.Interfaces.DocumentData.kind](/javascript/api/word/word.interfaces.documentdata#kind-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentUpdateData.kind](/javascript/api/word/word.interfaces.documentupdatedata#kind-member)
-  \]
+  - [Word.Document.kind](/javascript/api/word/word.document#kind-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +24,8 @@ fields:
       Represents an email document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Email"'
   - name: letter
     uid: word!Word.DocumentKind.letter:member
@@ -42,8 +34,8 @@ fields:
       Represents a letter document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Letter"'
   - name: notSpecified
     uid: word!Word.DocumentKind.notSpecified:member
@@ -52,6 +44,6 @@ fields:
       Represents a document with no specified kind.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NotSpecified"'

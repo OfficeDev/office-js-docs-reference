@@ -7,15 +7,15 @@ summary: >-
   Represents the color scheme of a critique in the document, affecting underline
   and highlight.
 remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Critique.colorScheme](/javascript/api/word/word.critique#colorscheme-member)
   \]
 
@@ -91,8 +91,8 @@ fields:
       Berry color.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Berry"'
   - name: blue
     uid: word!Word.CritiqueColorScheme.blue:member
@@ -101,8 +101,8 @@ fields:
       Blue color.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Blue"'
   - name: green
     uid: word!Word.CritiqueColorScheme.green:member
@@ -111,8 +111,8 @@ fields:
       Green color.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Green"'
   - name: lavender
     uid: word!Word.CritiqueColorScheme.lavender:member
@@ -121,8 +121,8 @@ fields:
       Lavender color.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Lavender"'
   - name: red
     uid: word!Word.CritiqueColorScheme.red:member
@@ -131,6 +131,6 @@ fields:
       Red color.
 
 
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Red"'

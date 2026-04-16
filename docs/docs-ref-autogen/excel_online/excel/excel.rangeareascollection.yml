@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.RangeAreasCollection
 summary: Contains the collection of cross-workbook level ranges.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.WorkbookRangeAreas.areas](/javascript/api/excel/excel.workbookrangeareas#areas-member)
   \]
 
@@ -55,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of `RangeAreas` objects in this collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +71,8 @@ methods:
     fullName: getItemAt(index)
     summary: Returns the `RangeAreas` object based on position in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

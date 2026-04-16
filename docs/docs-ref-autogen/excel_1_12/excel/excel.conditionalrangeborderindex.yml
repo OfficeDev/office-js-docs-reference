@@ -5,19 +5,15 @@ package: excel!
 fullName: Excel.ConditionalRangeBorderIndex
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalRangeBorder.sideIndex](/javascript/api/excel/excel.conditionalrangeborder#sideindex-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderData.sideIndex](/javascript/api/excel/excel.interfaces.conditionalrangeborderdata#sideindex-member)
   \]
 
 isPreview: false
@@ -27,27 +23,27 @@ fields:
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeBottom:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"EdgeBottom"'
   - name: edgeLeft
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeLeft:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"EdgeLeft"'
   - name: edgeRight
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeRight:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"EdgeRight"'
   - name: edgeTop
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeTop:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"EdgeTop"'

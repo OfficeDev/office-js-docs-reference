@@ -6,21 +6,7 @@ fullName: Visio.Interfaces.ShapeDataItemData
 summary: >-
   An interface describing the data returned by calling
   `shapeDataItem.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.ShapeData.shapeDataItems](/javascript/api/visio/visio.interfaces.shapedata#shapedataitems-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeDataItemCollectionData.items](/javascript/api/visio/visio.interfaces.shapedataitemcollectiondata#items-member)
-  \]
-
-  - \[
-  [Visio.Interfaces.ShapeDataItemCollectionUpdateData.items](/javascript/api/visio/visio.interfaces.shapedataitemcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: format
     summary: A string that specifies the format of the shape data item. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +35,8 @@ properties:
       A string that specifies the formatted value of the shape data item.
       Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +50,8 @@ properties:
     fullName: label
     summary: A string that specifies the label of the shape data item. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +65,8 @@ properties:
     fullName: value
     summary: A string that specifies the value of the shape data item. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -7,44 +7,8 @@ summary: >-
   Represents the `ShadingUniversal` object, which manages shading for a range,
   paragraph, frame, or table.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.FrameCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.framecollectionloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FrameLoadOptions.shading](/javascript/api/word/word.interfaces.frameloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphLoadOptions.shading](/javascript/api/word/word.interfaces.paragraphloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.rangecollectionloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeLoadOptions.shading](/javascript/api/word/word.interfaces.rangeloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableColumnCollectionLoadOptions.shading](/javascript/api/word/word.interfaces.tablecolumncollectionloadoptions#shading-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableColumnLoadOptions.shading](/javascript/api/word/word.interfaces.tablecolumnloadoptions#shading-member)
-  \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -76,8 +40,8 @@ properties:
       `ShadingUniversal` object. You can provide the value in the '\#RRGGBB'
       format.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -94,8 +58,8 @@ properties:
       Specifies the color that's applied to the background of the
       `ShadingUniversal` object.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -113,8 +77,8 @@ properties:
       `ShadingUniversal` object. This color is applied to the dots and lines in
       the shading pattern. You can provide the value in the '\#RRGGBB' format.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -132,8 +96,8 @@ properties:
       `ShadingUniversal` object. This color is applied to the dots and lines in
       the shading pattern.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -152,8 +116,8 @@ properties:
       Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

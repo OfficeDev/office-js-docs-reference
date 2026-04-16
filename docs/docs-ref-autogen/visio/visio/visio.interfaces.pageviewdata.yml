@@ -6,13 +6,7 @@ fullName: Visio.Interfaces.PageViewData
 summary: >-
   An interface describing the data returned by calling `pageView.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.PageData.view](/javascript/api/visio/visio.interfaces.pagedata#view-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,9 +20,8 @@ properties:
       Gets and sets the page's zoom level. The value can be between 10 and 400
       and denotes the percentage of zoom.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

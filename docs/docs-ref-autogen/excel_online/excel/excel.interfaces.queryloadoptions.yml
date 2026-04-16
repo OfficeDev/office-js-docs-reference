@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.QueryLoadOptions
 summary: Represents a Power Query query.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +34,8 @@ properties:
     fullName: error
     summary: Gets the query error message from when the query was last refreshed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +49,8 @@ properties:
     fullName: loadedTo
     summary: Gets the query loaded to object type.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +64,8 @@ properties:
     fullName: loadedToDataModel
     summary: Specifies if the query loaded to the data model.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +81,8 @@ properties:
       Gets the name of the query. Query names cannot contain periods or
       quotation marks.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +96,8 @@ properties:
     fullName: refreshDate
     summary: Gets the date and time when the query was last refreshed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -118,9 +113,8 @@ properties:
       Gets the number of rows that were loaded when the query was last
       refreshed. If last refresh has errors the value will be -1.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

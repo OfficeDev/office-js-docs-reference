@@ -8,23 +8,15 @@ summary: >-
   shape, on either the left or right side only, or on the side of the shape
   that's farther from the respective page margin.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ShapeTextWrapData.side](/javascript/api/word/word.interfaces.shapetextwrapdata#side-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeTextWrapUpdateData.side](/javascript/api/word/word.interfaces.shapetextwrapupdatedata#side-member)
-  \]
-
-  - \[
+  -
   [Word.ShapeTextWrap.side](/javascript/api/word/word.shapetextwrap#side-member)
   \]
 
@@ -69,8 +61,8 @@ fields:
       Both left and right sides of the shape.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Both"'
   - name: largest
     uid: word!Word.ShapeTextWrapSide.largest:member
@@ -79,8 +71,8 @@ fields:
       Side of the shape that's farther from the respective page margin.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Largest"'
   - name: left
     uid: word!Word.ShapeTextWrapSide.left:member
@@ -89,8 +81,8 @@ fields:
       Left side of the shape only.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Left"'
   - name: none
     uid: word!Word.ShapeTextWrapSide.none:member
@@ -99,8 +91,8 @@ fields:
       Has no wrap side property, such as those for inline shapes.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"None"'
   - name: right
     uid: word!Word.ShapeTextWrapSide.right:member
@@ -109,6 +101,6 @@ fields:
       Right side of the shape only.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Right"'

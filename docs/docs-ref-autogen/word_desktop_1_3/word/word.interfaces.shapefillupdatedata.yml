@@ -6,13 +6,7 @@ fullName: Word.Interfaces.ShapeFillUpdateData
 summary: >-
   An interface for updating data on the `ShapeFill` object, for use in
   `shapeFill.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ShapeUpdateData.fill](/javascript/api/word/word.interfaces.shapeupdatedata#fill-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,8 +20,8 @@ properties:
       Specifies the shape fill background color. You can provide the value in
       the '\#RRGGBB' format or the color name.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -43,8 +37,8 @@ properties:
       Specifies the shape fill foreground color. You can provide the value in
       the '\#RRGGBB' format or the color name.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -62,8 +56,8 @@ properties:
       support transparency or the shape fill has inconsistent transparency, such
       as with a gradient fill type.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

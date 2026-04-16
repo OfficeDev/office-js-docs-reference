@@ -5,20 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartPivotOptionsLoadOptions
 summary: Encapsulates the options for the pivot chart.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartCollectionLoadOptions.pivotOptions](/javascript/api/excel/excel.interfaces.chartcollectionloadoptions#pivotoptions-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLoadOptions.pivotOptions](/javascript/api/excel/excel.interfaces.chartloadoptions#pivotoptions-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -51,8 +39,8 @@ properties:
       Buttons" command on the "Field Buttons" drop-down list of the "Analyze"
       tab, which is available when a PivotChart is selected.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +55,8 @@ properties:
     fullName: showLegendFieldButtons
     summary: Specifies whether to display the legend field buttons on a PivotChart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -85,8 +73,8 @@ properties:
       Specifies whether to display the report filter field buttons on a
       PivotChart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -101,8 +89,8 @@ properties:
     fullName: showValueFieldButtons
     summary: Specifies whether to display the show value field buttons on a PivotChart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

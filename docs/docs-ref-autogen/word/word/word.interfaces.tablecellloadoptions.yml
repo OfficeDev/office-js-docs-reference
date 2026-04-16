@@ -5,116 +5,8 @@ package: word!
 fullName: Word.Interfaces.TableCellLoadOptions
 summary: Represents a table cell in a Word document.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.fieldloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.fieldloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.inlinepicturecollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.inlinepictureloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.paragraphloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.paragraphloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.rangeloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.rangeloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCollectionLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parenttablecellornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableLoadOptions.parentTableCell](/javascript/api/word/word.interfaces.tableloadoptions#parenttablecell-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableLoadOptions.parentTableCellOrNullObject](/javascript/api/word/word.interfaces.tableloadoptions#parenttablecellornullobject-member)
-  \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -142,8 +34,8 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -157,8 +49,8 @@ properties:
     fullName: cellIndex
     summary: Gets the index of the cell in its row.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -174,8 +66,8 @@ properties:
       Returns the `TableColumn` object that represents the table column that
       contains this cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -191,8 +83,8 @@ properties:
       Specifies the width of the cell's column in points. This is applicable to
       uniform tables.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -209,8 +101,8 @@ properties:
       `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -224,8 +116,8 @@ properties:
     fullName: parentRow
     summary: Gets the parent row of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -239,8 +131,8 @@ properties:
     fullName: parentTable
     summary: Gets the parent table of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -254,8 +146,8 @@ properties:
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -271,8 +163,8 @@ properties:
       Returns the `ShadingUniversal` object that represents the shading of the
       table cell.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -290,8 +182,8 @@ properties:
       Specifies the shading color of the cell. Color is specified in "\#RRGGBB"
       format or by using the color name.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -305,8 +197,8 @@ properties:
     fullName: value
     summary: Specifies the text of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -322,8 +214,8 @@ properties:
       Specifies the vertical alignment of the cell. The value can be `top`<!--
       -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -337,8 +229,8 @@ properties:
     fullName: width
     summary: Gets the width of the cell in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

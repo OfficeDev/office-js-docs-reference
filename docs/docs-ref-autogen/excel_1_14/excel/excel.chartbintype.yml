@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartBinType
 summary: Specifies the bin type of a histogram chart or pareto chart series.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartBinOptions.type](/javascript/api/excel/excel.chartbinoptions#type-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartBinOptionsData.type](/javascript/api/excel/excel.interfaces.chartbinoptionsdata#type-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartBinOptionsUpdateData.type](/javascript/api/excel/excel.interfaces.chartbinoptionsupdatedata#type-member)
   \]
 
 isPreview: false
@@ -31,27 +23,27 @@ fields:
     uid: excel!Excel.ChartBinType.auto:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Auto"'
   - name: binCount
     uid: excel!Excel.ChartBinType.binCount:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BinCount"'
   - name: binWidth
     uid: excel!Excel.ChartBinType.binWidth:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BinWidth"'
   - name: category
     uid: excel!Excel.ChartBinType.category:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Category"'

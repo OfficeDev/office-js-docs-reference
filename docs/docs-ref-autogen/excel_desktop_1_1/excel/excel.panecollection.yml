@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.PaneCollection
 summary: Represents a collection of Pane objects.
 remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Window.panes](/javascript/api/excel/excel.window#panes-member) \]
+  - [Excel.Window.panes](/javascript/api/excel/excel.window#panes-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -53,8 +53,8 @@ methods:
     fullName: getCount()
     summary: Returns the number of panes in the collection.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +69,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets the pane in the collection by index.
     remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

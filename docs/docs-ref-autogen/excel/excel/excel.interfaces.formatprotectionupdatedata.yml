@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.FormatProtectionUpdateData
 summary: >-
   An interface for updating data on the `FormatProtection` object, for use in
   `formatProtection.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.RangeFormatUpdateData.protection](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#protection-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -27,8 +21,8 @@ properties:
       value indicates that the entire range doesn't have a uniform formula
       hidden setting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -44,8 +38,8 @@ properties:
       Specifies if Excel locks the cells in the object. A `null` value indicates
       that the entire range doesn't have a uniform lock setting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.WindowData
 summary: >-
   An interface describing the data returned by calling `window.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.WindowCollectionData.items](/javascript/api/excel/excel.interfaces.windowcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WindowCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.windowcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.PageOrientation
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PageLayoutData.orientation](/javascript/api/excel/excel.interfaces.pagelayoutdata#orientation-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PageLayoutUpdateData.orientation](/javascript/api/excel/excel.interfaces.pagelayoutupdatedata#orientation-member)
-  \]
-
-  - \[
+  -
   [Excel.PageLayout.orientation](/javascript/api/excel/excel.pagelayout#orientation-member)
   \]
 
@@ -49,13 +41,13 @@ fields:
     uid: excel!Excel.PageOrientation.landscape:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Landscape"'
   - name: portrait
     uid: excel!Excel.PageOrientation.portrait:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Portrait"'

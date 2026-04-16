@@ -7,8 +7,8 @@ summary: >-
   Represents the `DragAndDropEventArgs.dragAndDropEventData` object when
   messages or file attachments are dragged over an add-in's task pane.
 remarks: >-
-  \[ [API set: Mailbox
-  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   To learn more about the drag-and-drop feature and how to implement it across
@@ -22,7 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.DragAndDropEventArgs.dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#draganddropeventdata-member)
   \]
 
@@ -73,9 +73,8 @@ properties:
       position in pixels. The position is relative to the left edge of the
       Outlook on the web or the new Outlook on Windows client window.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +91,8 @@ properties:
       position in pixels. The position is relative to the top edge of the
       Outlook on the web or the new Outlook on Windows client window.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -111,9 +109,8 @@ properties:
       position in pixels. The position is relative to the left edge of the
       add-in's task pane.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +127,8 @@ properties:
       position in pixels. The position is relative to the top edge of the
       add-in's task pane.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -148,9 +144,8 @@ properties:
       Gets the type of drag-and-drop event. The `dragover` event occurs when
       messages or file attachments are dragged over an add-in's task pane.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

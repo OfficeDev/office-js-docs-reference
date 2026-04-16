@@ -6,17 +6,7 @@ fullName: Word.Interfaces.CoauthorData
 summary: >-
   An interface describing the data returned by calling `coauthor.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CoauthorCollectionData.items](/javascript/api/word/word.interfaces.coauthorcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CoauthorCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthorcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

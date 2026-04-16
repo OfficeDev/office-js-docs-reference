@@ -7,9 +7,8 @@ summary: >-
   Provides properties to temporarily set the content displayed in the body or
   subject of a message in read mode.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -25,7 +24,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.MessageRead.display](/javascript/api/outlook/office.messageread#display-member)
   \]
 
@@ -41,9 +40,8 @@ properties:
       Gets an object to temporarily set the content displayed in the body of a
       message in read mode.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -101,9 +99,8 @@ properties:
       Gets an object to temporarily set the content displayed in the subject of
       a message in read mode.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

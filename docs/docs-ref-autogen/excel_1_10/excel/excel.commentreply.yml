@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.CommentReply
 summary: Represents a comment reply in the workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CommentReplyCollection.items](/javascript/api/excel/excel.commentreplycollection#items-member)
   \]
 
@@ -26,9 +26,8 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -42,9 +41,8 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment reply's author.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     fullName: content
     summary: The comment reply's content. The string is plain text.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -114,9 +111,8 @@ properties:
     fullName: creationDate
     summary: Gets the creation time of the comment reply.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +126,8 @@ properties:
     fullName: id
     summary: Specifies the comment reply identifier.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -147,9 +142,8 @@ methods:
     fullName: delete()
     summary: Deletes the comment reply.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -184,9 +178,8 @@ methods:
     fullName: getLocation()
     summary: Gets the cell where this comment reply is located.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -201,9 +194,8 @@ methods:
     fullName: getParentComment()
     summary: Gets the parent comment of this reply.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

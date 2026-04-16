@@ -7,16 +7,15 @@ summary: >-
   Provides additional details about the notification message that raised the
   `Office.EventType.InfobarClicked` event.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Office.InfobarClickedEventArgs.infobarDetails](/javascript/api/outlook/office.infobarclickedeventargs#infobardetails-member)
   \]
 
@@ -74,9 +73,8 @@ properties:
     fullName: actionType
     summary: The action type. Currently, "Dismiss" is the only supported action.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +88,8 @@ properties:
     fullName: infobarType
     summary: The notification type.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

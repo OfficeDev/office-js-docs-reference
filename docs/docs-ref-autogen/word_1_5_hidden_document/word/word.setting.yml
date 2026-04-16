@@ -5,15 +5,15 @@ package: word!
 fullName: Word.Setting
 summary: Represents a setting of the add-in.
 remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.SettingCollection.items](/javascript/api/word/word.settingcollection#items-member)
   \]
 
@@ -73,8 +73,8 @@ properties:
     fullName: key
     summary: Gets the key of the setting.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -120,8 +120,8 @@ properties:
     fullName: value
     summary: Specifies the value of the setting.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -168,8 +168,8 @@ methods:
     fullName: delete()
     summary: Deletes the setting.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

@@ -7,22 +7,14 @@ summary: >-
   Specifies whether Word displays the original version of a document or a
   version with revisions and formatting changes applied.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.RevisionsFilterData.view](/javascript/api/word/word.interfaces.revisionsfilterdata#view-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RevisionsFilterUpdateData.view](/javascript/api/word/word.interfaces.revisionsfilterupdatedata#view-member)
-  \]
-
-  - \[
+  -
   [Word.RevisionsFilter.view](/javascript/api/word/word.revisionsfilter#view-member)
   \]
 
@@ -36,8 +28,8 @@ fields:
       Final view.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Final"'
   - name: original
     uid: word!Word.RevisionsView.original:member
@@ -46,6 +38,6 @@ fields:
       Original view.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Original"'

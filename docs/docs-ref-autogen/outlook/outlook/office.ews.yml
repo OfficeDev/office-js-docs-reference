@@ -7,9 +7,8 @@ summary: >-
   Provides methods to determine if Exchange Web Services (EWS) callback tokens
   are supported in an organization.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -36,7 +35,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Diagnostics.ews](/javascript/api/outlook/office.diagnostics#ews-member)
   \]
 
@@ -83,9 +82,8 @@ methods:
     fullName: getTokenStatusAsync(options, callback)
     summary: Gets the status of EWS callback tokens in an organization.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -157,9 +155,8 @@ methods:
     fullName: getTokenStatusAsync(callback)
     summary: Gets the status of EWS callback tokens in an organization.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

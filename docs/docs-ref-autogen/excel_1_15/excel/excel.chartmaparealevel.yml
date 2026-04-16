@@ -7,23 +7,15 @@ summary: >-
   Represents the mapping level of a chart series. This only applies to region
   map charts.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartMapOptions.level](/javascript/api/excel/excel.chartmapoptions#level-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartMapOptionsData.level](/javascript/api/excel/excel.interfaces.chartmapoptionsdata#level-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartMapOptionsUpdateData.level](/javascript/api/excel/excel.interfaces.chartmapoptionsupdatedata#level-member)
   \]
 
 isPreview: false
@@ -33,55 +25,55 @@ fields:
     uid: excel!Excel.ChartMapAreaLevel.automatic:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: city
     uid: excel!Excel.ChartMapAreaLevel.city:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"City"'
   - name: continent
     uid: excel!Excel.ChartMapAreaLevel.continent:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Continent"'
   - name: country
     uid: excel!Excel.ChartMapAreaLevel.country:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Country"'
   - name: county
     uid: excel!Excel.ChartMapAreaLevel.county:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"County"'
   - name: dataOnly
     uid: excel!Excel.ChartMapAreaLevel.dataOnly:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DataOnly"'
   - name: state
     uid: excel!Excel.ChartMapAreaLevel.state:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"State"'
   - name: world
     uid: excel!Excel.ChartMapAreaLevel.world:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"World"'

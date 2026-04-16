@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.ChartGridlines
 summary: Represents major or minor gridlines on a chart axis.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartAxis.majorGridlines](/javascript/api/excel/excel.chartaxis#majorgridlines-member)
   \]
 
-  - \[
+  -
   [Excel.ChartAxis.minorGridlines](/javascript/api/excel/excel.chartaxis#minorgridlines-member)
   \]
 
@@ -45,8 +45,8 @@ properties:
     fullName: format
     summary: Represents the formatting of chart gridlines.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +60,8 @@ properties:
     fullName: visible
     summary: Specifies if the axis gridlines are visible.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

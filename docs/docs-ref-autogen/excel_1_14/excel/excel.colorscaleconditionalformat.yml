@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.ColorScaleConditionalFormat
 summary: Represents the color scale criteria for conditional formatting.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalFormat.colorScale](/javascript/api/excel/excel.conditionalformat#colorscale-member)
   \]
 
-  - \[
+  -
   [Excel.ConditionalFormat.colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#colorscaleornullobject-member)
   \]
 
@@ -47,8 +47,8 @@ properties:
       The criteria of the color scale. Midpoint is optional when using a two
       point color scale.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -91,8 +91,8 @@ properties:
       If `true`<!-- -->, the color scale will have three points (minimum,
       midpoint, maximum), otherwise it will have two (minimum, maximum).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

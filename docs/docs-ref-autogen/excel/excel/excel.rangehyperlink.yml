@@ -5,25 +5,17 @@ package: excel!
 fullName: Excel.RangeHyperlink
 summary: Represents the necessary strings to get/set a hyperlink (XHL) object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.RangeData.hyperlink](/javascript/api/excel/excel.interfaces.rangedata#hyperlink-member)
+  - [Excel.Range.hyperlink](/javascript/api/excel/excel.range#hyperlink-member)
   \]
 
-  - \[
-  [Excel.Interfaces.RangeUpdateData.hyperlink](/javascript/api/excel/excel.interfaces.rangeupdatedata#hyperlink-member)
-  \]
-
-  - \[
-  [Excel.Range.hyperlink](/javascript/api/excel/excel.range#hyperlink-member) \]
-
-  - \[
+  -
   [Excel.SettableCellProperties.hyperlink](/javascript/api/excel/excel.settablecellproperties#hyperlink-member)
   \]
 
@@ -37,8 +29,8 @@ properties:
     fullName: address
     summary: Represents the URL target for the hyperlink.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -89,8 +81,8 @@ properties:
     fullName: documentReference
     summary: Represents the document reference target for the hyperlink.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -141,8 +133,8 @@ properties:
     fullName: screenTip
     summary: Represents the string displayed when hovering over the hyperlink.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -195,8 +187,8 @@ properties:
       Represents the string that is displayed in the top left most cell in the
       range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

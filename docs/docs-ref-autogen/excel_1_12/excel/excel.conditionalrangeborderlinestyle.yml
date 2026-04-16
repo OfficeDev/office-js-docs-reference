@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ConditionalRangeBorderLineStyle
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalRangeBorder.style](/javascript/api/excel/excel.conditionalrangeborder#style-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderData.style](/javascript/api/excel/excel.interfaces.conditionalrangeborderdata#style-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeBorderUpdateData.style](/javascript/api/excel/excel.interfaces.conditionalrangeborderupdatedata#style-member)
   \]
 
 isPreview: false
@@ -31,41 +23,41 @@ fields:
     uid: excel!Excel.ConditionalRangeBorderLineStyle.continuous:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Continuous"'
   - name: dash
     uid: excel!Excel.ConditionalRangeBorderLineStyle.dash:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Dash"'
   - name: dashDot
     uid: excel!Excel.ConditionalRangeBorderLineStyle.dashDot:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DashDot"'
   - name: dashDotDot
     uid: excel!Excel.ConditionalRangeBorderLineStyle.dashDotDot:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DashDotDot"'
   - name: dot
     uid: excel!Excel.ConditionalRangeBorderLineStyle.dot:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Dot"'
   - name: none
     uid: excel!Excel.ConditionalRangeBorderLineStyle.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'

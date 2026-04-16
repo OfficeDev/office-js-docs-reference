@@ -6,21 +6,7 @@ fullName: OneNote.Interfaces.NotebookData
 summary: >-
   An interface describing the data returned by calling `notebook.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.ApplicationData.notebooks](/javascript/api/onenote/onenote.interfaces.applicationdata#notebooks-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.NotebookCollectionData.items](/javascript/api/onenote/onenote.interfaces.notebookcollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.NotebookCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.notebookcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: baseUrl
     summary: The URL of the site where this notebook is located. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +33,8 @@ properties:
     fullName: clientUrl
     summary: The client URL of the notebook. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +48,8 @@ properties:
     fullName: id
     summary: Gets the ID of the notebook. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +65,8 @@ properties:
       '* True if the notebook isn't created by the user (i.e., 'Misplaced
       Sections'). Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +80,8 @@ properties:
     fullName: name
     summary: Gets the name of the notebook. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -114,9 +95,8 @@ properties:
     fullName: sectionGroups
     summary: The section groups in the notebook. Read only
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +110,8 @@ properties:
     fullName: sections
     summary: The sections of the notebook. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,83 +5,83 @@ package: word!
 fullName: Word.CommentEventArgs
 summary: Provides information about the comments that raised the comment event.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Body.onCommentAdded](/javascript/api/word/word.body#oncommentadded-member)
   \]
 
-  - \[
+  -
   [Word.Body.onCommentChanged](/javascript/api/word/word.body#oncommentchanged-member)
   \]
 
-  - \[
+  -
   [Word.Body.onCommentDeleted](/javascript/api/word/word.body#oncommentdeleted-member)
   \]
 
-  - \[
+  -
   [Word.Body.onCommentDeselected](/javascript/api/word/word.body#oncommentdeselected-member)
   \]
 
-  - \[
+  -
   [Word.Body.onCommentSelected](/javascript/api/word/word.body#oncommentselected-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.onCommentAdded](/javascript/api/word/word.contentcontrol#oncommentadded-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.onCommentChanged](/javascript/api/word/word.contentcontrol#oncommentchanged-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.onCommentDeselected](/javascript/api/word/word.contentcontrol#oncommentdeselected-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.onCommentSelected](/javascript/api/word/word.contentcontrol#oncommentselected-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.onCommentAdded](/javascript/api/word/word.paragraph#oncommentadded-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.onCommentChanged](/javascript/api/word/word.paragraph#oncommentchanged-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.onCommentDeleted](/javascript/api/word/word.paragraph#oncommentdeleted-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.onCommentDeselected](/javascript/api/word/word.paragraph#oncommentdeselected-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.onCommentSelected](/javascript/api/word/word.paragraph#oncommentselected-member)
   \]
 
-  - \[
+  -
   [Word.Range.onCommentAdded](/javascript/api/word/word.range#oncommentadded-member)
   \]
 
-  - \[
+  -
   [Word.Range.onCommentChanged](/javascript/api/word/word.range#oncommentchanged-member)
   \]
 
-  - \[
+  -
   [Word.Range.onCommentDeselected](/javascript/api/word/word.range#oncommentdeselected-member)
   \]
 
-  - \[
+  -
   [Word.Range.onCommentSelected](/javascript/api/word/word.range#oncommentselected-member)
   \]
 
@@ -135,8 +135,8 @@ properties:
     fullName: changeType
     summary: Represents how the `commentChanged` event is raised.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -157,8 +157,8 @@ properties:
       Gets the `CommentDetail` array which contains the IDs and reply IDs of the
       involved comments.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -174,8 +174,8 @@ properties:
       Specifies the source of the event. It can be local or remote (through
       coauthoring).
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false
@@ -189,8 +189,8 @@ properties:
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: true
     isDeprecated: false

@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ConditionalRangeFontUnderlineStyle
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalRangeFont.underline](/javascript/api/excel/excel.conditionalrangefont#underline-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeFontData.underline](/javascript/api/excel/excel.interfaces.conditionalrangefontdata#underline-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalRangeFontUpdateData.underline](/javascript/api/excel/excel.interfaces.conditionalrangefontupdatedata#underline-member)
   \]
 
 isPreview: false
@@ -31,20 +23,20 @@ fields:
     uid: excel!Excel.ConditionalRangeFontUnderlineStyle.double:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Double"'
   - name: none
     uid: excel!Excel.ConditionalRangeFontUnderlineStyle.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: single
     uid: excel!Excel.ConditionalRangeFontUnderlineStyle.single:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Single"'

@@ -5,21 +5,17 @@ package: word!
 fullName: Word.IndexSortBy
 summary: Specifies how an index is sorted.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Index.sortBy](/javascript/api/word/word.index#sortby-member) \]
+  - [Word.Index.sortBy](/javascript/api/word/word.index#sortby-member) \]
 
-  - \[
+  -
   [Word.IndexAddOptions.sortBy](/javascript/api/word/word.indexaddoptions#sortby-member)
-  \]
-
-  - \[
-  [Word.Interfaces.IndexData.sortBy](/javascript/api/word/word.interfaces.indexdata#sortby-member)
   \]
 
 isPreview: false
@@ -32,8 +28,8 @@ fields:
       Sort by stroke.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Stroke"'
   - name: syllable
     uid: word!Word.IndexSortBy.syllable:member
@@ -42,6 +38,6 @@ fields:
       Sort by syllable.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Syllable"'

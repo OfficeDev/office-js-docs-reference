@@ -7,9 +7,8 @@ summary: >-
   Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface)
   of an appointment.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Applicable Outlook
@@ -21,15 +20,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentRead.sensitivity](/javascript/api/outlook/office.appointmentread#sensitivity-member)
   \]
 
-  - \[
+  -
   [Office.Sensitivity.getAsync](/javascript/api/outlook/office.sensitivity#getasync-member)
   \]
 
-  - \[
+  -
   [Office.Sensitivity.setAsync](/javascript/api/outlook/office.sensitivity#setasync-member)
   \]
 

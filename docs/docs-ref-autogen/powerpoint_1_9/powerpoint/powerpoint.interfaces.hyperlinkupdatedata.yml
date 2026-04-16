@@ -20,9 +20,8 @@ properties:
       Specifies the address of the hyperlink, which can be a URL, a file name or
       file path, or an email address with the `mailto` URI scheme.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +35,8 @@ properties:
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

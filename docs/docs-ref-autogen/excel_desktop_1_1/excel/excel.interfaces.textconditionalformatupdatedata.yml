@@ -6,17 +6,7 @@ fullName: Excel.Interfaces.TextConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `TextConditionalFormat` object, for use
   in `textConditionalFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatUpdateData.textComparison](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#textcomparison-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject](/javascript/api/excel/excel.interfaces.conditionalformatupdatedata#textcomparisonornullobject-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -30,8 +20,8 @@ properties:
       Returns a format object, encapsulating the conditional format's font,
       fill, borders, and other properties.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -48,8 +38,8 @@ properties:
     fullName: rule
     summary: The rule of the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

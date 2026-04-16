@@ -6,13 +6,7 @@ fullName: Visio.Interfaces.ApplicationData
 summary: >-
   An interface describing the data returned by calling
   `application.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Visio.Interfaces.DocumentData.application](/javascript/api/visio/visio.interfaces.documentdata#application-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +33,8 @@ properties:
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

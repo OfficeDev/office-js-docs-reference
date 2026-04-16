@@ -5,16 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.Binding
 summary: Represents an Office.js binding that is defined in the presentation.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.BindingCollection.items](/javascript/api/powerpoint/powerpoint.bindingcollection#items-member)
   \]
 
@@ -64,9 +63,8 @@ properties:
     fullName: id
     summary: Represents the binding identifier.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +78,8 @@ properties:
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +94,8 @@ methods:
     fullName: delete()
     summary: Deletes the binding.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +112,8 @@ methods:
       Returns the shape represented by the binding. Throws an error if the
       binding isn't of the correct type.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

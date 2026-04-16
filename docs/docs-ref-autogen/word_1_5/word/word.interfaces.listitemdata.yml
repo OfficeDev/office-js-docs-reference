@@ -6,17 +6,7 @@ fullName: Word.Interfaces.ListItemData
 summary: >-
   An interface describing the data returned by calling `listItem.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ParagraphData.listItem](/javascript/api/word/word.interfaces.paragraphdata#listitem-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphData.listItemOrNullObject](/javascript/api/word/word.interfaces.paragraphdata#listitemornullobject-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -28,8 +18,8 @@ properties:
     fullName: level
     summary: Specifies the level of the item in the list.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -43,8 +33,8 @@ properties:
     fullName: listString
     summary: Gets the list item bullet, number, or picture as a string.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -58,8 +48,8 @@ properties:
     fullName: siblingIndex
     summary: Gets the list item order number in relation to its siblings.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

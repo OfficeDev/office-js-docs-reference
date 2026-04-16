@@ -5,20 +5,8 @@ package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
 summary: Represents a collection of InkAnalysisWord objects.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words](/javascript/api/onenote/onenote.interfaces.inkanalysislinecollectionloadoptions#words-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisLineLoadOptions.words](/javascript/api/onenote/onenote.interfaces.inkanalysislineloadoptions#words-member)
-  \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -49,9 +37,8 @@ properties:
       For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord
       object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +55,8 @@ properties:
       For EACH ITEM in the collection: The id of the recognized language in this
       inkAnalysisWord. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +71,8 @@ properties:
     fullName: line
     summary: 'For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.'
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +92,8 @@ properties:
       For EACH ITEM in the collection: Weak references to the ink strokes that
       were recognized as part of this ink analysis word. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +110,8 @@ properties:
       For EACH ITEM in the collection: The words that were recognized in this
       ink word, in order of likelihood. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,9 +5,8 @@ package: visio!
 fullName: Visio.OverlayHorizontalAlignment
 summary: Represents the Horizontal Alignment of the Overlay relative to the shape.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -16,23 +15,20 @@ fields:
     uid: visio!Visio.OverlayHorizontalAlignment.center:member
     package: visio!
     summary: >-
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Center"'
   - name: left
     uid: visio!Visio.OverlayHorizontalAlignment.left:member
     package: visio!
     summary: >-
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Left"'
   - name: right
     uid: visio!Visio.OverlayHorizontalAlignment.right:member
     package: visio!
     summary: >-
-      * \[ [API set:
+      * [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
     value: '"Right"'

@@ -44,11 +44,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
-  [Office.Body.getAsync](/javascript/api/outlook/office.body#getasync-member) \]
+  - [Office.Body.getAsync](/javascript/api/outlook/office.body#getasync-member)
+  \]
 
-  - \[
-  [Office.Body.setAsync](/javascript/api/outlook/office.body#setasync-member) \]
+  - [Office.Body.setAsync](/javascript/api/outlook/office.body#setasync-member)
+  \]
 
   #### Examples
 

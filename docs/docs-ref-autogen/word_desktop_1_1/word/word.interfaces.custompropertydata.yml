@@ -6,21 +6,7 @@ fullName: Word.Interfaces.CustomPropertyData
 summary: >-
   An interface describing the data returned by calling
   `customProperty.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CustomPropertyCollectionData.items](/javascript/api/word/word.interfaces.custompropertycollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CustomPropertyCollectionUpdateData.items](/javascript/api/word/word.interfaces.custompropertycollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentPropertiesData.customProperties](/javascript/api/word/word.interfaces.documentpropertiesdata#customproperties-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: key
     summary: Gets the key of the custom property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,8 +35,8 @@ properties:
       Gets the value type of the custom property. Possible values are: String,
       Number, Date, Boolean.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -73,8 +59,8 @@ properties:
       16-bit chars (possibly creating invalid unicode by breaking up a surrogate
       pair).
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

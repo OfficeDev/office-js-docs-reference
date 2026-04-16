@@ -17,8 +17,8 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   When using custom properties in your add-in, keep in mind that:
@@ -53,19 +53,19 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.AppointmentCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#loadcustompropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.AppointmentRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#loadcustompropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#loadcustompropertiesasync-member)
   \]
 
-  - \[
+  -
   [Office.MessageRead.loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#loadcustompropertiesasync-member)
   \]
 
@@ -79,9 +79,8 @@ methods:
     fullName: get(name)
     summary: Returns the value of the specified custom property.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -201,9 +200,8 @@ methods:
       `saveAsync` while in the disconnected state, `saveAsync` would return an
       error. Your callback function should handle this error accordingly.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **Important**: In Outlook on Windows, custom properties saved while in
@@ -282,9 +280,8 @@ methods:
       `saveAsync` while in the disconnected state, `saveAsync` would return an
       error. Your callback function should handle this error accordingly.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -325,9 +322,8 @@ methods:
       value. The `value` parameter can be of any type; however, it is always
       passed to the server as a string.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

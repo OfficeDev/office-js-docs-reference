@@ -5,20 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartAxesLoadOptions
 summary: Represents the chart axes.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartCollectionLoadOptions.axes](/javascript/api/excel/excel.interfaces.chartcollectionloadoptions#axes-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartLoadOptions.axes](/javascript/api/excel/excel.interfaces.chartloadoptions#axes-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,8 +34,8 @@ properties:
     fullName: categoryAxis
     summary: Represents the category axis in a chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -61,8 +49,8 @@ properties:
     fullName: seriesAxis
     summary: Represents the series axis of a 3-D chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +64,8 @@ properties:
     fullName: valueAxis
     summary: Represents the value axis in an axis.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

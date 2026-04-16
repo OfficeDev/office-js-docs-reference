@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.WorksheetCustomPropertyCollection
 summary: Contains the collection of worksheet-level custom property.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.customProperties](/javascript/api/excel/excel.worksheet#customproperties-member)
   \]
 
@@ -57,9 +57,8 @@ methods:
       Adds a new custom property that maps to the provided key. This overwrites
       existing custom properties with that key.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -110,9 +109,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of custom properties on this worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +127,8 @@ methods:
       Gets a custom property object by its key, which is case-insensitive.
       Throws an error if the custom property does not exist.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -159,9 +156,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

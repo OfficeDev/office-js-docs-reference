@@ -5,15 +5,15 @@ package: word!
 fullName: Word.ComboBoxContentControl
 summary: Represents the data specific to content controls of type `comboBox`<!-- -->.
 remarks: >-
-  \[ [API set: WordApi
-  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ContentControl.comboBoxContentControl](/javascript/api/word/word.contentcontrol#comboboxcontentcontrol-member)
   \]
 
@@ -63,8 +63,8 @@ properties:
     fullName: listItems
     summary: Gets the collection of list items in the combo box content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -138,8 +138,8 @@ methods:
       [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class)
       object.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -215,8 +215,8 @@ methods:
     fullName: deleteAllListItems()
     summary: Deletes all list items in this combo box content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

@@ -6,17 +6,7 @@ fullName: Word.Interfaces.CoauthoringLockData
 summary: >-
   An interface describing the data returned by calling
   `coauthoringLock.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.CoauthoringLockCollectionData.items](/javascript/api/word/word.interfaces.coauthoringlockcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.CoauthoringLockCollectionUpdateData.items](/javascript/api/word/word.interfaces.coauthoringlockcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

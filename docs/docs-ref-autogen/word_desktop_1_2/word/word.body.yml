@@ -5,47 +5,46 @@ package: word!
 fullName: Word.Body
 summary: Represents the body of a document or a section.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Body.parentBody](/javascript/api/word/word.body#parentbody-member)
-  \]
+  - [Word.Body.parentBody](/javascript/api/word/word.body#parentbody-member) \]
 
-  - \[
+  -
   [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#parentbodyornullobject-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#parentbody-member)
   \]
 
-  - \[ [Word.Document.body](/javascript/api/word/word.document#body-member) \]
+  - [Word.Document.body](/javascript/api/word/word.document#body-member) \]
 
-  - \[
-  [Word.Field.parentBody](/javascript/api/word/word.field#parentbody-member) \]
+  - [Word.Field.parentBody](/javascript/api/word/word.field#parentbody-member)
+  \]
 
-  - \[ [Word.NoteItem.body](/javascript/api/word/word.noteitem#body-member) \]
+  - [Word.NoteItem.body](/javascript/api/word/word.noteitem#body-member) \]
 
-  - \[
+  -
   [Word.Paragraph.parentBody](/javascript/api/word/word.paragraph#parentbody-member)
   \]
 
-  - \[
-  [Word.Range.parentBody](/javascript/api/word/word.range#parentbody-member) \]
+  - [Word.Range.parentBody](/javascript/api/word/word.range#parentbody-member)
+  \]
 
-  - \[ [Word.Section.body](/javascript/api/word/word.section#body-member) \]
+  - [Word.Section.body](/javascript/api/word/word.section#body-member) \]
 
-  - \[ [Word.Shape.body](/javascript/api/word/word.shape#body-member) \]
+  - [Word.Shape.body](/javascript/api/word/word.shape#body-member) \]
 
-  - \[
-  [Word.Table.parentBody](/javascript/api/word/word.table#parentbody-member) \]
+  - [Word.Table.parentBody](/javascript/api/word/word.table#parentbody-member)
+  \]
 
-  - \[ [Word.TableCell.body](/javascript/api/word/word.tablecell#body-member) \]
+  - [Word.TableCell.body](/javascript/api/word/word.tablecell#body-member) \]
 
   #### Examples
 
@@ -76,8 +75,8 @@ properties:
     fullName: contentControls
     summary: Gets the collection of rich text content control objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -106,8 +105,8 @@ properties:
     fullName: endnotes
     summary: Gets the collection of endnotes in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -121,8 +120,8 @@ properties:
     fullName: fields
     summary: Gets the collection of `Field` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -169,8 +168,8 @@ properties:
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -225,8 +224,8 @@ properties:
     fullName: footnotes
     summary: Gets the collection of footnotes in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -264,8 +263,8 @@ properties:
       Gets the collection of `InlinePicture` objects in the body. The collection
       doesn't include floating images.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -306,8 +305,8 @@ properties:
     fullName: lists
     summary: Gets the collection of `List` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -365,8 +364,8 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: Paragraphs in tables aren't returned for requirement sets 1.1
@@ -448,8 +447,8 @@ properties:
       body could be a header. Throws an `ItemNotFound` error if there isn't a
       parent body.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -469,8 +468,8 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -486,8 +485,8 @@ properties:
       Gets the content control that contains the body. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -507,8 +506,8 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -524,8 +523,8 @@ properties:
       Gets the parent section of the body. Throws an `ItemNotFound` error if
       there isn't a parent section.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -544,8 +543,8 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -562,8 +561,8 @@ properties:
       and floating shapes. Currently, only the following shapes are supported:
       text boxes, geometric shapes, groups, pictures, and canvases.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: Be aware that with time, additional types of shapes may be
@@ -617,8 +616,8 @@ properties:
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -635,8 +634,8 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -754,8 +753,8 @@ properties:
     fullName: tables
     summary: Gets the collection of `Table` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -791,8 +790,8 @@ properties:
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -839,8 +838,8 @@ properties:
       -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
       `noteItem` are supported in WordApi 1.5 and later.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -893,8 +892,8 @@ methods:
       Clears the contents of the `Body` object. The user can perform the undo
       operation on the cleared content.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -941,8 +940,8 @@ methods:
     fullName: getComments()
     summary: Gets comments associated with the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -981,8 +980,8 @@ methods:
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: If specific types are provided in the options parameter, only
@@ -1019,8 +1018,8 @@ methods:
       across platforms, use `Body.getOoxml()` and convert the returned XML to
       HTML.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1064,8 +1063,8 @@ methods:
     fullName: getOoxml()
     summary: Gets the OOXML (Office Open XML) representation of the `Body` object.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1111,8 +1110,8 @@ methods:
       Gets the whole body, or the starting or ending point of the body, as a
       range.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1172,8 +1171,8 @@ methods:
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1196,8 +1195,8 @@ methods:
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -1220,8 +1219,8 @@ methods:
     fullName: getTrackedChanges()
     summary: Gets the collection of the `TrackedChange` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1259,8 +1258,8 @@ methods:
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1320,8 +1319,8 @@ methods:
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Body` object with a content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
@@ -1406,8 +1405,8 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document into the body at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -1474,8 +1473,8 @@ methods:
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1535,8 +1534,8 @@ methods:
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts a picture into the body at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1596,8 +1595,8 @@ methods:
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1673,8 +1672,8 @@ methods:
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1730,8 +1729,8 @@ methods:
     fullName: insertTable(rowCount, columnCount, insertLocation, values)
     summary: Inserts a table with the specified number of rows and columns.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1791,8 +1790,8 @@ methods:
     fullName: insertText(text, insertLocation)
     summary: Inserts text into the body at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -1928,8 +1927,8 @@ methods:
       Performs a search with the specified search options on the scope of the
       `Body` object. The search results are a collection of `Range` objects.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -2019,8 +2018,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the body and navigates the Word UI to it.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -2068,8 +2067,8 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the body and navigates the Word UI to it.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -6,21 +6,7 @@ fullName: OneNote.Interfaces.TableRowData
 summary: >-
   An interface describing the data returned by calling `tableRow.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.TableData.rows](/javascript/api/onenote/onenote.interfaces.tabledata#rows-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.TableRowCollectionData.items](/javascript/api/onenote/onenote.interfaces.tablerowcollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.TableRowCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.tablerowcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: cellCount
     summary: Gets the number of cells in the row. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +33,8 @@ properties:
     fullName: cells
     summary: Gets the cells in the row. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +48,8 @@ properties:
     fullName: id
     summary: Gets the ID of the row. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +63,8 @@ properties:
     fullName: rowIndex
     summary: Gets the index of the row in its parent table. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.From
 summary: Provides a method to get the from value of a message in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox
-  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -29,11 +29,11 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.LoadedMessageCompose.from](/javascript/api/outlook/office.loadedmessagecompose#from-member)
   \]
 
-  - \[
+  -
   [Office.MessageCompose.from](/javascript/api/outlook/office.messagecompose#from-member)
   \]
 
@@ -57,9 +57,8 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -152,9 +151,8 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

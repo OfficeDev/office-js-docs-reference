@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ShapeFill
 summary: Represents the fill formatting of a shape object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Excel.Shape.fill](/javascript/api/excel/excel.shape#fill-member) \]
+  - [Excel.Shape.fill](/javascript/api/excel/excel.shape#fill-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -41,8 +41,8 @@ properties:
       Represents the shape fill foreground color in HTML color format, in the
       form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +60,8 @@ properties:
       support transparency or the shape fill has inconsistent transparency, such
       as with a gradient fill type.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +75,8 @@ properties:
     fullName: type
     summary: Returns the fill type of the shape. See `Excel.ShapeFillType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -95,8 +95,8 @@ methods:
     fullName: clear()
     summary: Clears the fill formatting of this shape.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -238,8 +238,8 @@ methods:
       Sets the fill formatting of the shape to a uniform color. This changes the
       fill type to "Solid".
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

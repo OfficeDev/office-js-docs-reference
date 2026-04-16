@@ -4,17 +4,7 @@ uid: word!Word.Interfaces.IndexData:interface
 package: word!
 fullName: Word.Interfaces.IndexData
 summary: An interface describing the data returned by calling `index.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.IndexCollectionData.items](/javascript/api/word/word.interfaces.indexcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.IndexCollectionUpdateData.items](/javascript/api/word/word.interfaces.indexcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

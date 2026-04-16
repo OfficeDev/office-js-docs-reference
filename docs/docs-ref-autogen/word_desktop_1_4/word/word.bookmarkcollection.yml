@@ -7,19 +7,18 @@ summary: >-
   A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that
   represent the bookmarks in the specified selection, range, or document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Document.bookmarks](/javascript/api/word/word.document#bookmarks-member)
   \]
 
-  - \[ [Word.Range.bookmarks](/javascript/api/word/word.range#bookmarks-member)
-  \]
+  - [Word.Range.bookmarks](/javascript/api/word/word.range#bookmarks-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -60,8 +59,8 @@ methods:
     fullName: exists(name)
     summary: Determines whether the specified bookmark exists.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

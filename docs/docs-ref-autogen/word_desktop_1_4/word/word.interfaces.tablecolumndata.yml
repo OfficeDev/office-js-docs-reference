@@ -6,21 +6,7 @@ fullName: Word.Interfaces.TableColumnData
 summary: >-
   An interface describing the data returned by calling
   `tableColumn.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.RangeData.tableColumns](/javascript/api/word/word.interfaces.rangedata#tablecolumns-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableColumnCollectionData.items](/javascript/api/word/word.interfaces.tablecolumncollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableColumnCollectionUpdateData.items](/javascript/api/word/word.interfaces.tablecolumncollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Returns a `BorderUniversalCollection` object that represents all the
       borders for the table column.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,8 +35,8 @@ properties:
     fullName: columnIndex
     summary: Returns the position of this column in a collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +52,8 @@ properties:
       Returns `true` if the column or row is the first one in the table; `false`
       otherwise.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -83,8 +69,8 @@ properties:
       Returns `true` if the column or row is the last one in the table; `false`
       otherwise.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +84,8 @@ properties:
     fullName: nestingLevel
     summary: Returns the nesting level of the column.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -116,8 +102,8 @@ properties:
       width) for the column. The unit of measurement can be specified by the
       `preferredWidthType` property.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +119,8 @@ properties:
       Specifies the preferred unit of measurement to use for the width of the
       table column.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -154,8 +140,8 @@ properties:
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the column.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -169,8 +155,8 @@ properties:
     fullName: width
     summary: Specifies the width of the column, in points.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

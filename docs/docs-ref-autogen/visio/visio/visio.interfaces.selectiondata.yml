@@ -18,9 +18,8 @@ properties:
     fullName: shapes
     summary: Gets the Shapes of the Selection. Read-only.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

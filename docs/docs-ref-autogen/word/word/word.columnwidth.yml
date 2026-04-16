@@ -5,23 +5,15 @@ package: word!
 fullName: Word.ColumnWidth
 summary: Specifies the column width options in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ViewData.columnWidth](/javascript/api/word/word.interfaces.viewdata#columnwidth-member)
+  - [Word.View.columnWidth](/javascript/api/word/word.view#columnwidth-member)
   \]
-
-  - \[
-  [Word.Interfaces.ViewUpdateData.columnWidth](/javascript/api/word/word.interfaces.viewupdatedata#columnwidth-member)
-  \]
-
-  - \[
-  [Word.View.columnWidth](/javascript/api/word/word.view#columnwidth-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,8 +25,8 @@ fields:
       Default column width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Default"'
   - name: narrow
     uid: word!Word.ColumnWidth.narrow:member
@@ -43,8 +35,8 @@ fields:
       Narrow column width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Narrow"'
   - name: wide
     uid: word!Word.ColumnWidth.wide:member
@@ -53,6 +45,6 @@ fields:
       Wide column width.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Wide"'

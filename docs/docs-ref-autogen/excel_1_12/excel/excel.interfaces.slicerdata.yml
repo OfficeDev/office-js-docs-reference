@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.SlicerData
 summary: >-
   An interface describing the data returned by calling `slicer.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.SlicerCollectionData.items](/javascript/api/excel/excel.interfaces.slicercollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.SlicerCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.slicercollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.slicers](/javascript/api/excel/excel.interfaces.workbookdata#slicers-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetData.slicers](/javascript/api/excel/excel.interfaces.worksheetdata#slicers-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +18,8 @@ properties:
     fullName: caption
     summary: Represents the caption of the slicer.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +36,8 @@ properties:
       `InvalidArgument` exception when set with a negative value or zero as an
       input.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +51,8 @@ properties:
     fullName: id
     summary: Represents the unique ID of the slicer.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +68,8 @@ properties:
       Value is `true` if all filters currently applied on the slicer are
       cleared.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +86,8 @@ properties:
       the left of the worksheet. Throws an `InvalidArgument` error when set with
       a negative value as an input.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +101,8 @@ properties:
     fullName: name
     summary: Represents the name of the slicer.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +116,8 @@ properties:
     fullName: slicerItems
     summary: Represents the collection of slicer items that are part of the slicer.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -158,9 +133,8 @@ properties:
       Specifies the sort order of the items in the slicer. Possible values are:
       "DataSourceOrder", "Ascending", "Descending".
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -182,9 +156,8 @@ properties:
       through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -201,9 +174,8 @@ properties:
       top of the worksheet. Throws an `InvalidArgument` error when set with a
       negative value as an input.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -220,9 +192,8 @@ properties:
       `InvalidArgument` error when set with a negative value or zero as an
       input.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -236,9 +207,8 @@ properties:
     fullName: worksheet
     summary: Represents the worksheet containing the slicer.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

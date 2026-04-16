@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.HeaderFooterState
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.HeaderFooterGroup.state](/javascript/api/excel/excel.headerfootergroup#state-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterGroupData.state](/javascript/api/excel/excel.interfaces.headerfootergroupdata#state-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.HeaderFooterGroupUpdateData.state](/javascript/api/excel/excel.interfaces.headerfootergroupupdatedata#state-member)
   \]
 
 isPreview: false
@@ -34,8 +26,8 @@ fields:
       Only one general header/footer is used for all pages printed.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Default"'
   - name: firstAndDefault
     uid: excel!Excel.HeaderFooterState.firstAndDefault:member
@@ -45,8 +37,8 @@ fields:
       used for all other pages.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"FirstAndDefault"'
   - name: firstOddAndEven
     uid: excel!Excel.HeaderFooterState.firstOddAndEven:member
@@ -56,8 +48,8 @@ fields:
       header/footer for odd and even pages.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"FirstOddAndEven"'
   - name: oddAndEven
     uid: excel!Excel.HeaderFooterState.oddAndEven:member
@@ -66,6 +58,6 @@ fields:
       There is a different header/footer for odd and even pages.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OddAndEven"'

@@ -5,104 +5,8 @@ package: word!
 fullName: Word.Interfaces.BodyLoadOptions
 summary: Represents the body of a document or a section.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BodyLoadOptions.parentBody](/javascript/api/word/word.interfaces.bodyloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject](/javascript/api/word/word.interfaces.bodyloadoptions#parentbodyornullobject-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.contentcontrolcollectionloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ContentControlLoadOptions.parentBody](/javascript/api/word/word.interfaces.contentcontrolloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentCreatedLoadOptions.body](/javascript/api/word/word.interfaces.documentcreatedloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentLoadOptions.body](/javascript/api/word/word.interfaces.documentloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.fieldcollectionloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldLoadOptions.parentBody](/javascript/api/word/word.interfaces.fieldloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.NoteItemCollectionLoadOptions.body](/javascript/api/word/word.interfaces.noteitemcollectionloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.NoteItemLoadOptions.body](/javascript/api/word/word.interfaces.noteitemloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.paragraphcollectionloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ParagraphLoadOptions.parentBody](/javascript/api/word/word.interfaces.paragraphloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.rangecollectionloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeLoadOptions.parentBody](/javascript/api/word/word.interfaces.rangeloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RangeScopedCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.rangescopedcollectionloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionCollectionLoadOptions.body](/javascript/api/word/word.interfaces.sectioncollectionloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionLoadOptions.body](/javascript/api/word/word.interfaces.sectionloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeCollectionLoadOptions.body](/javascript/api/word/word.interfaces.shapecollectionloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ShapeLoadOptions.body](/javascript/api/word/word.interfaces.shapeloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellCollectionLoadOptions.body](/javascript/api/word/word.interfaces.tablecellcollectionloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellLoadOptions.body](/javascript/api/word/word.interfaces.tablecellloadoptions#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCollectionLoadOptions.parentBody](/javascript/api/word/word.interfaces.tablecollectionloadoptions#parentbody-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableLoadOptions.parentBody](/javascript/api/word/word.interfaces.tableloadoptions#parentbody-member)
-  \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -132,8 +36,8 @@ properties:
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -150,8 +54,8 @@ properties:
       body could be a header. Throws an `ItemNotFound` error if there isn't a
       parent body.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -171,8 +75,8 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -188,8 +92,8 @@ properties:
       Gets the content control that contains the body. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -212,8 +116,8 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -233,8 +137,8 @@ properties:
       Gets the parent section of the body. Throws an `ItemNotFound` error if
       there isn't a parent section.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -253,8 +157,8 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -271,8 +175,8 @@ properties:
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -289,8 +193,8 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -304,8 +208,8 @@ properties:
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -323,8 +227,8 @@ properties:
       -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
       `noteItem` are supported in WordApi 1.5 and later.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

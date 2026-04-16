@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.KeyboardDirection
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples
@@ -48,31 +48,27 @@ fields:
     uid: excel!Excel.KeyboardDirection.down:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Down"'
   - name: left
     uid: excel!Excel.KeyboardDirection.left:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Left"'
   - name: right
     uid: excel!Excel.KeyboardDirection.right:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Right"'
   - name: up
     uid: excel!Excel.KeyboardDirection.up:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Up"'

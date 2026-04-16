@@ -6,13 +6,7 @@ fullName: Word.Interfaces.CheckboxContentControlData
 summary: >-
   An interface describing the data returned by calling
   `checkboxContentControl.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.ContentControlData.checkboxContentControl](/javascript/api/word/word.interfaces.contentcontroldata#checkboxcontentcontrol-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,8 +18,8 @@ properties:
     fullName: isChecked
     summary: Specifies the current state of the checkbox.
     remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

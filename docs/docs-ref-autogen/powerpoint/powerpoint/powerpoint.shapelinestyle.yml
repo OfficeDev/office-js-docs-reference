@@ -5,24 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.ShapeLineStyle
 summary: Specifies the style for a line.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
-  [PowerPoint.Interfaces.ShapeLineFormatData.style](/javascript/api/powerpoint/powerpoint.interfaces.shapelineformatdata#style-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.ShapeLineFormatUpdateData.style](/javascript/api/powerpoint/powerpoint.interfaces.shapelineformatupdatedata#style-member)
-  \]
-
-  - \[
+  -
   [PowerPoint.ShapeLineFormat.style](/javascript/api/powerpoint/powerpoint.shapelineformat#style-member)
   \]
 
@@ -65,9 +56,8 @@ fields:
       Single line.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Single"'
   - name: thickBetweenThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member
@@ -76,9 +66,8 @@ fields:
       Thick line with a thin line on each side.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickThin:member
@@ -89,9 +78,8 @@ fields:
       the thin line.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThickThin"'
   - name: thinThick
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThick:member
@@ -102,9 +90,8 @@ fields:
       the thin line.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThinThick"'
   - name: thinThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThin:member
@@ -113,7 +100,6 @@ fields:
       Two thin lines.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"ThinThin"'

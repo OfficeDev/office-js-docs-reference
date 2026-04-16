@@ -7,22 +7,14 @@ summary: >-
   Represents the level of line breaking to use for East Asian languages in the
   specified document or template.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.TemplateData.farEastLineBreakLevel](/javascript/api/word/word.interfaces.templatedata#fareastlinebreaklevel-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TemplateUpdateData.farEastLineBreakLevel](/javascript/api/word/word.interfaces.templateupdatedata#fareastlinebreaklevel-member)
-  \]
-
-  - \[
+  -
   [Word.Template.farEastLineBreakLevel](/javascript/api/word/word.template#fareastlinebreaklevel-member)
   \]
 
@@ -36,8 +28,8 @@ fields:
       Represents the custom line break level.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Custom"'
   - name: normal
     uid: word!Word.FarEastLineBreakLevel.normal:member
@@ -46,8 +38,8 @@ fields:
       Represents the normal line break level.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Normal"'
   - name: strict
     uid: word!Word.FarEastLineBreakLevel.strict:member
@@ -56,6 +48,6 @@ fields:
       Represents the strict line break level.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Strict"'

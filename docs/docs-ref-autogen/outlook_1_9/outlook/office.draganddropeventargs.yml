@@ -8,8 +8,8 @@ summary: >-
   attachments being dragged and dropped into an add-in's task pane when the
   `Office.EventType.DragAndDropEvent` event is raised.
 remarks: >-
-  \[ [API set: Mailbox
-  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   To learn more about the drag-and-drop feature and how to implement it across
@@ -66,9 +66,8 @@ properties:
       pane and the messages or file attachments being dragged and dropped into
       the task pane.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +87,8 @@ properties:
       -->.
 
 
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
     remarks: ''
 
     isPreview: false

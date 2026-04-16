@@ -6,17 +6,7 @@ fullName: Word.Interfaces.TableOfAuthoritiesData
 summary: >-
   An interface describing the data returned by calling
   `tableOfAuthorities.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TableOfAuthoritiesCollectionData.items](/javascript/api/word/word.interfaces.tableofauthoritiescollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableOfAuthoritiesCollectionUpdateData.items](/javascript/api/word/word.interfaces.tableofauthoritiescollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

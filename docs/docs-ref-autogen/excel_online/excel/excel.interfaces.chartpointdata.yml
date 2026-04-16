@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.ChartPointData
 summary: >-
   An interface describing the data returned by calling `chartPoint.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartPointsCollectionData.items](/javascript/api/excel/excel.interfaces.chartpointscollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartPointsCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.chartpointscollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.points](/javascript/api/excel/excel.interfaces.chartseriesdata#points-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: dataLabel
     summary: Returns the data label of a chart point.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +33,8 @@ properties:
     fullName: format
     summary: Encapsulates the format properties chart point.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -64,8 +50,8 @@ properties:
       Represents whether a data point has a data label. Not applicable for
       surface charts.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -81,8 +67,8 @@ properties:
       HTML color code representation of the marker background color of a data
       point (e.g., \#FF0000 represents Red).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +84,8 @@ properties:
       HTML color code representation of the marker foreground color of a data
       point (e.g., \#FF0000 represents Red).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -116,8 +102,8 @@ properties:
       72. This method returns an InvalidArgument error if it's set with a size
       outside of the supported range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +119,8 @@ properties:
       Represents marker style of a chart data point. See
       `Excel.ChartMarkerStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -154,8 +140,8 @@ properties:
     fullName: value
     summary: Returns the value of a chart point.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

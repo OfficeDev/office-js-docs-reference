@@ -5,9 +5,8 @@ package: outlook!
 fullName: Office.SelectedItemDetails
 summary: Represents the properties of a message that's currently selected in Outlook.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -24,7 +23,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.Mailbox.getSelectedItemsAsync](/javascript/api/outlook/office.mailbox#getselecteditemsasync-member)
   \]
 
@@ -70,9 +69,8 @@ properties:
       The Exchange Web Services (EWS) item identifier of the message that's
       currently selected.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -98,9 +96,8 @@ properties:
       The Outlook mode (`Read` or `Compose`<!-- -->) of the message that's
       currently selected.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -126,9 +123,8 @@ properties:
       The type of the item that's currently selected. `Message` is the only
       supported type at this time.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission
@@ -154,9 +150,8 @@ properties:
       The description that appears in the subject field of the message that's
       currently selected.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission

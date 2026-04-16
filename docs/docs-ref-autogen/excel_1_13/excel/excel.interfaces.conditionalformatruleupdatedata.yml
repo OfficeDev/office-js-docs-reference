@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
 summary: >-
   An interface for updating data on the `ConditionalFormatRule` object, for use
   in `conditionalFormatRule.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CustomConditionalFormatUpdateData.rule](/javascript/api/excel/excel.interfaces.customconditionalformatupdatedata#rule-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -26,8 +20,8 @@ properties:
       The formula, if required, on which to evaluate the conditional format
       rule.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -43,8 +37,8 @@ properties:
       The formula, if required, on which to evaluate the conditional format rule
       in the user's language.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -60,8 +54,8 @@ properties:
       The formula, if required, on which to evaluate the conditional format rule
       in R1C1-style notation.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

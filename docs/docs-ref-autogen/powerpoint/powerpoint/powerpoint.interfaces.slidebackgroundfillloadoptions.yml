@@ -5,25 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions
 summary: Represents the fill formatting of a slide background object.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.SlideBackgroundLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.slidebackgroundloadoptions#fill-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutbackgroundloadoptions#fill-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions.fill](/javascript/api/powerpoint/powerpoint.interfaces.slidemasterbackgroundloadoptions#fill-member)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -56,9 +39,8 @@ properties:
       [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

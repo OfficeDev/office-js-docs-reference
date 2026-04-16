@@ -5,24 +5,15 @@ package: powerpoint!
 fullName: PowerPoint.BulletType
 summary: Specifies the type of a bullet.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.BulletFormat.type](/javascript/api/powerpoint/powerpoint.bulletformat#type-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.BulletFormatData.type](/javascript/api/powerpoint/powerpoint.interfaces.bulletformatdata#type-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.BulletFormatUpdateData.type](/javascript/api/powerpoint/powerpoint.interfaces.bulletformatupdatedata#type-member)
   \]
 
 isPreview: false
@@ -35,9 +26,8 @@ fields:
       No bullets.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"None"'
   - name: numbered
     uid: powerpoint!PowerPoint.BulletType.numbered:member
@@ -46,9 +36,8 @@ fields:
       Numbered bullet (e.g., 1, 2, 3 or a, b, c).
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Numbered"'
   - name: unnumbered
     uid: powerpoint!PowerPoint.BulletType.unnumbered:member
@@ -57,9 +46,8 @@ fields:
       Symbol-based bullet (e.g., disc, circle, square).
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Unnumbered"'
   - name: unsupported
     uid: powerpoint!PowerPoint.BulletType.unsupported:member
@@ -68,7 +56,6 @@ fields:
       Type is unsupported.
 
 
-      * \[ [API set: PowerPointApi
+      * [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
     value: '"Unsupported"'

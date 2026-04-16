@@ -6,33 +6,7 @@ fullName: Excel.Interfaces.PivotTableData
 summary: >-
   An interface describing the data returned by calling `pivotTable.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotTableCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableScopedCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablescopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableScopedCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablescopedcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.pivotTables](/javascript/api/excel/excel.interfaces.workbookdata#pivottables-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorksheetData.pivotTables](/javascript/api/excel/excel.interfaces.worksheetdata#pivottables-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +20,8 @@ properties:
       Specifies if the PivotTable allows the application of multiple
       PivotFilters on a given PivotField in the table.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,8 +35,8 @@ properties:
     fullName: columnHierarchies
     summary: The Column Pivot Hierarchies of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +53,8 @@ properties:
     fullName: dataHierarchies
     summary: The Data Pivot Hierarchies of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -99,8 +72,8 @@ properties:
       Specifies if the PivotTable allows values in the data body to be edited by
       the user.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -114,8 +87,8 @@ properties:
     fullName: filterHierarchies
     summary: The Filter Pivot Hierarchies of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -131,8 +104,8 @@ properties:
     fullName: hierarchies
     summary: The Pivot Hierarchies of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -146,8 +119,8 @@ properties:
     fullName: id
     summary: ID of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -161,8 +134,8 @@ properties:
     fullName: name
     summary: Name of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -176,8 +149,8 @@ properties:
     fullName: rowHierarchies
     summary: The Row Pivot Hierarchies of the PivotTable.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -194,8 +167,8 @@ properties:
     fullName: useCustomSortLists
     summary: Specifies if the PivotTable uses custom lists when sorting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

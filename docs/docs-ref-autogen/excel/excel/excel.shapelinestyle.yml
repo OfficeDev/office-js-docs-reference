@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ShapeLineStyle
 summary: The style for a line.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.ShapeLineFormatData.style](/javascript/api/excel/excel.interfaces.shapelineformatdata#style-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ShapeLineFormatUpdateData.style](/javascript/api/excel/excel.interfaces.shapelineformatupdatedata#style-member)
-  \]
-
-  - \[
+  -
   [Excel.ShapeLineFormat.style](/javascript/api/excel/excel.shapelineformat#style-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Single line.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Single"'
   - name: thickBetweenThin
     uid: excel!Excel.ShapeLineStyle.thickBetweenThin:member
@@ -44,8 +36,8 @@ fields:
       Thick line with a thin line on each side.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: excel!Excel.ShapeLineStyle.thickThin:member
@@ -56,8 +48,8 @@ fields:
       the thin line.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThickThin"'
   - name: thinThick
     uid: excel!Excel.ShapeLineStyle.thinThick:member
@@ -68,8 +60,8 @@ fields:
       the thin line.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThinThick"'
   - name: thinThin
     uid: excel!Excel.ShapeLineStyle.thinThin:member
@@ -78,6 +70,6 @@ fields:
       Two thin lines.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThinThin"'

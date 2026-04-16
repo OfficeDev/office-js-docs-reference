@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.ShapeScopedCollection
 summary: Represents a collection of shapes.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -75,9 +74,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of shapes in the collection.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -128,9 +126,8 @@ methods:
       Gets a shape using its unique ID. An error is thrown if the shape doesn't
       exist.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -153,9 +150,8 @@ methods:
       Gets a shape using its zero-based index in the collection. An error is
       thrown if the index is out of range.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -181,9 +177,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
 
       #### Examples

@@ -6,29 +6,7 @@ fullName: Excel.Interfaces.ConditionalRangeFormatData
 summary: >-
   An interface describing the data returned by calling
   `conditionalRangeFormat.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.CellValueConditionalFormatData.format](/javascript/api/excel/excel.interfaces.cellvalueconditionalformatdata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.CustomConditionalFormatData.format](/javascript/api/excel/excel.interfaces.customconditionalformatdata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PresetCriteriaConditionalFormatData.format](/javascript/api/excel/excel.interfaces.presetcriteriaconditionalformatdata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TextConditionalFormatData.format](/javascript/api/excel/excel.interfaces.textconditionalformatdata#format-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TopBottomConditionalFormatData.format](/javascript/api/excel/excel.interfaces.topbottomconditionalformatdata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -42,8 +20,8 @@ properties:
       Collection of border objects that apply to the overall conditional format
       range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +37,8 @@ properties:
     fullName: fill
     summary: Returns the fill object defined on the overall conditional format range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -76,8 +54,8 @@ properties:
     fullName: font
     summary: Returns the font object defined on the overall conditional format range.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +75,8 @@ properties:
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->. Cleared if `null` is passed in.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

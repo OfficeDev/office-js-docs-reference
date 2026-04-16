@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.DocumentTaskChangeCollection
 summary: Represents a collection of change records for a task.
 remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DocumentTask.changes](/javascript/api/excel/excel.documenttask#changes-member)
   \]
 
@@ -55,9 +55,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of change records in the collection for the task.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -72,9 +71,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a task change record by using its index in the collection.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

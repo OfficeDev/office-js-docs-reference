@@ -5,18 +5,14 @@ package: excel!
 fullName: Excel.SortField
 summary: Represents a condition in a sorting operation.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TableSortData.fields](/javascript/api/excel/excel.interfaces.tablesortdata#fields-member)
-  \]
-
-  - \[
+  -
   [Excel.TableSort.fields](/javascript/api/excel/excel.tablesort#fields-member)
   \]
 
@@ -30,8 +26,8 @@ properties:
     fullName: ascending
     summary: Specifies if the sorting is done in an ascending fashion.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +43,8 @@ properties:
       Specifies the color that is the target of the condition if the sorting is
       on font or cell color.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -62,8 +58,8 @@ properties:
     fullName: dataOption
     summary: Represents additional sorting options for this field.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -81,8 +77,8 @@ properties:
       Specifies the icon that is the target of the condition, if the sorting is
       on the cell's icon.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +94,8 @@ properties:
       Specifies the column (or row, depending on the sort orientation) that the
       condition is on. Represented as an offset from the first column (or row).
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -113,8 +109,8 @@ properties:
     fullName: sortOn
     summary: Specifies the type of sorting of this condition.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -132,8 +128,8 @@ properties:
       Specifies the subfield that is the target property name of a rich value to
       sort on.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

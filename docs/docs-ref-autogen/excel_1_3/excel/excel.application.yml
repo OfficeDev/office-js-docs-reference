@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.Application
 summary: Represents the Excel application that manages the workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.RequestContext.application](/javascript/api/excel/excel.requestcontext#application-member)
   \]
 
-  - \[
+  -
   [Excel.Workbook.application](/javascript/api/excel/excel.workbook#application-member)
   \]
 
@@ -37,8 +37,8 @@ properties:
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.1 for get, 1.8 for
+      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +72,8 @@ methods:
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples
@@ -110,8 +110,8 @@ methods:
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
       #### Examples

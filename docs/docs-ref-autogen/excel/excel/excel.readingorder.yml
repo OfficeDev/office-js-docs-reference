@@ -5,39 +5,23 @@ package: excel!
 fullName: Excel.ReadingOrder
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.CellPropertiesFormat.readingOrder](/javascript/api/excel/excel.cellpropertiesformat#readingorder-member)
   \]
 
-  - \[
-  [Excel.Interfaces.RangeFormatData.readingOrder](/javascript/api/excel/excel.interfaces.rangeformatdata#readingorder-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.RangeFormatUpdateData.readingOrder](/javascript/api/excel/excel.interfaces.rangeformatupdatedata#readingorder-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.StyleData.readingOrder](/javascript/api/excel/excel.interfaces.styledata#readingorder-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.StyleUpdateData.readingOrder](/javascript/api/excel/excel.interfaces.styleupdatedata#readingorder-member)
-  \]
-
-  - \[
+  -
   [Excel.RangeFormat.readingOrder](/javascript/api/excel/excel.rangeformat#readingorder-member)
   \]
 
-  - \[
+  -
   [Excel.Style.readingOrder](/javascript/api/excel/excel.style#readingorder-member)
   \]
 
@@ -81,8 +65,8 @@ fields:
       first, reading order is left to right.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Context"'
   - name: leftToRight
     uid: excel!Excel.ReadingOrder.leftToRight:member
@@ -91,8 +75,8 @@ fields:
       Left to right reading order
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: excel!Excel.ReadingOrder.rightToLeft:member
@@ -101,6 +85,6 @@ fields:
       Right to left reading order
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RightToLeft"'

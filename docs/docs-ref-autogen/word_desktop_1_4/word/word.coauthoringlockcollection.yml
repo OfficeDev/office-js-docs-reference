@@ -5,17 +5,16 @@ package: word!
 fullName: Word.CoauthoringLockCollection
 summary: Represents a collection of coauthoring locks in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[ [Word.Coauthor.locks](/javascript/api/word/word.coauthor#locks-member) \]
+  - [Word.Coauthor.locks](/javascript/api/word/word.coauthor#locks-member) \]
 
-  - \[
-  [Word.Coauthoring.locks](/javascript/api/word/word.coauthoring#locks-member)
+  - [Word.Coauthoring.locks](/javascript/api/word/word.coauthoring#locks-member)
   \]
 
 isPreview: false
@@ -59,8 +58,8 @@ methods:
       Returns a `CoauthoringLock` object that represents a lock added to a
       specified range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -201,8 +200,8 @@ methods:
     fullName: unlockEphemeralLocks()
     summary: Removes all ephemeral locks from the document.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

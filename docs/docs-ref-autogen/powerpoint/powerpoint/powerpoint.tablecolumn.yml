@@ -5,15 +5,14 @@ package: powerpoint!
 fullName: PowerPoint.TableColumn
 summary: Represents a column in a table.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TableColumnCollection.items](/javascript/api/powerpoint/powerpoint.tablecolumncollection#items-member)
   \]
 
@@ -29,9 +28,8 @@ properties:
       Returns the index number of the column within the column collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -63,9 +61,8 @@ properties:
       less than the minimum width, the column width will be increased to the
       minimum width.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +77,8 @@ methods:
     fullName: delete()
     summary: Deletes the column.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

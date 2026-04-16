@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.BindingData
 summary: >-
   An interface describing the data returned by calling `binding.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.BindingCollectionData.items](/javascript/api/excel/excel.interfaces.bindingcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.BindingCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.bindingcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.bindings](/javascript/api/excel/excel.interfaces.workbookdata#bindings-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: id
     summary: Represents the binding identifier.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +33,8 @@ properties:
     fullName: type
     summary: Returns the type of the binding. See `Excel.BindingType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

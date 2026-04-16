@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ConditionalTopBottomCriterionType
 summary: Represents the criteria for the above/below average conditional format type.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConditionalTopBottomRule.type](/javascript/api/excel/excel.conditionaltopbottomrule#type-member)
   \]
 
@@ -23,34 +23,34 @@ fields:
     uid: excel!Excel.ConditionalTopBottomCriterionType.bottomItems:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BottomItems"'
   - name: bottomPercent
     uid: excel!Excel.ConditionalTopBottomCriterionType.bottomPercent:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BottomPercent"'
   - name: invalid
     uid: excel!Excel.ConditionalTopBottomCriterionType.invalid:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Invalid"'
   - name: topItems
     uid: excel!Excel.ConditionalTopBottomCriterionType.topItems:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"TopItems"'
   - name: topPercent
     uid: excel!Excel.ConditionalTopBottomCriterionType.topPercent:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"TopPercent"'

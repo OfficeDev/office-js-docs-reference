@@ -6,17 +6,7 @@ fullName: PowerPoint.Interfaces.SlideLayoutData
 summary: >-
   An interface describing the data returned by calling
   `slideLayout.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.SlideLayoutCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.SlideLayoutCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.slidelayoutcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

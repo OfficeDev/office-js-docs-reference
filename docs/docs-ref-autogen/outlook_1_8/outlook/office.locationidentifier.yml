@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.LocationIdentifier
 summary: Represents the ID of a location.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
 
   **[Minimum permission
@@ -23,15 +23,15 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.EnhancedLocation.addAsync](/javascript/api/outlook/office.enhancedlocation#addasync-member)
   \]
 
-  - \[
+  -
   [Office.EnhancedLocation.removeAsync](/javascript/api/outlook/office.enhancedlocation#removeasync-member)
   \]
 
-  - \[
+  -
   [Office.LocationDetails.locationIdentifier](/javascript/api/outlook/office.locationdetails#locationidentifier-member)
   \]
 

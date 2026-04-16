@@ -5,18 +5,14 @@ package: word!
 fullName: Word.ColorType
 summary: Specifies the color type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.ColorFormat.type](/javascript/api/word/word.colorformat#type-member) \]
-
-  - \[
-  [Word.Interfaces.ColorFormatData.type](/javascript/api/word/word.interfaces.colorformatdata#type-member)
+  - [Word.ColorFormat.type](/javascript/api/word/word.colorformat#type-member)
   \]
 
 isPreview: false
@@ -29,8 +25,8 @@ fields:
       Represents an RGB color type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"rgb"'
   - name: scheme
     uid: word!Word.ColorType.scheme:member
@@ -39,6 +35,6 @@ fields:
       Represents a scheme color type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"scheme"'

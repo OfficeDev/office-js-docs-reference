@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.WorksheetProtectionData
 summary: >-
   An interface describing the data returned by calling
   `worksheetProtection.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.WorksheetData.protection](/javascript/api/excel/excel.interfaces.worksheetdata#protection-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -29,8 +23,8 @@ properties:
       `AllowEditRange` object can be used to allow editing of a specific range,
       while maintaining protection on the rest of the worksheet.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -44,8 +38,8 @@ properties:
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -59,8 +53,8 @@ properties:
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -74,8 +68,8 @@ properties:
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -89,8 +83,8 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -104,8 +98,8 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -122,8 +116,8 @@ properties:
       the same `WorksheetProtectionOptions` object regardless of the worksheet
       protection state.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

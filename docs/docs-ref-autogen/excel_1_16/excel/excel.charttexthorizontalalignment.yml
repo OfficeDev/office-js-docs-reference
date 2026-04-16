@@ -5,59 +5,27 @@ package: excel!
 fullName: Excel.ChartTextHorizontalAlignment
 summary: Represents the horizontal alignment for the specified object.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartDataLabel.horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#horizontalalignment-member)
   \]
 
-  - \[
+  -
   [Excel.ChartDataLabels.horizontalAlignment](/javascript/api/excel/excel.chartdatalabels#horizontalalignment-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTitle.horizontalAlignment](/javascript/api/excel/excel.charttitle#horizontalalignment-member)
   \]
 
-  - \[
+  -
   [Excel.ChartTrendlineLabel.horizontalAlignment](/javascript/api/excel/excel.charttrendlinelabel#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabeldata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsdata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelsupdatedata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartDataLabelUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.chartdatalabelupdatedata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttitledata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttitleupdatedata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabeldata#horizontalalignment-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineLabelUpdateData.horizontalAlignment](/javascript/api/excel/excel.interfaces.charttrendlinelabelupdatedata#horizontalalignment-member)
   \]
 
 isPreview: false
@@ -67,34 +35,34 @@ fields:
     uid: excel!Excel.ChartTextHorizontalAlignment.center:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Center"'
   - name: distributed
     uid: excel!Excel.ChartTextHorizontalAlignment.distributed:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Distributed"'
   - name: justify
     uid: excel!Excel.ChartTextHorizontalAlignment.justify:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Justify"'
   - name: left
     uid: excel!Excel.ChartTextHorizontalAlignment.left:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Left"'
   - name: right
     uid: excel!Excel.ChartTextHorizontalAlignment.right:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Right"'

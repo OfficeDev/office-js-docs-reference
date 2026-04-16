@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.Comment
 summary: Represents the Comment.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.CommentCollection.items](/javascript/api/visio/visio.commentcollection#items-member)
   \]
 
@@ -27,9 +26,8 @@ properties:
     fullName: author
     summary: A string that specifies the name of the author of the comment.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     fullName: date
     summary: A string that specifies the date when the comment was created.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +71,8 @@ properties:
     fullName: text
     summary: A string that contains the comment text.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.Hyperlink
 summary: Represents the Hyperlink.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.HyperlinkCollection.items](/javascript/api/visio/visio.hyperlinkcollection#items-member)
   \]
 
@@ -27,9 +26,8 @@ properties:
     fullName: address
     summary: Gets the address of the Hyperlink object.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     fullName: description
     summary: Gets the description of a hyperlink.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -76,9 +73,8 @@ properties:
       Gets the extra URL request information used to resolve the hyperlink's
       URL.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +88,8 @@ properties:
     fullName: subAddress
     summary: Gets the sub-address of the Hyperlink object.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

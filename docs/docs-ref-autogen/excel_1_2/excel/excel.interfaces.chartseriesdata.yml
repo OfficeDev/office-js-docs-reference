@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.ChartSeriesData
 summary: >-
   An interface describing the data returned by calling
   `chartSeries.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartData.series](/javascript/api/excel/excel.interfaces.chartdata#series-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesCollectionData.items](/javascript/api/excel/excel.interfaces.chartseriescollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.chartseriescollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +20,8 @@ properties:
       Represents the formatting of a chart series, which includes fill and line
       formatting.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +37,8 @@ properties:
       Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +52,8 @@ properties:
     fullName: points
     summary: Returns a collection of all points in the series.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.ShapeTextReadingOrder
 summary: Specifies the reading order for the text frame in a shape.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.TextFrameData.readingOrder](/javascript/api/excel/excel.interfaces.textframedata#readingorder-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.TextFrameUpdateData.readingOrder](/javascript/api/excel/excel.interfaces.textframeupdatedata#readingorder-member)
-  \]
-
-  - \[
+  -
   [Excel.TextFrame.readingOrder](/javascript/api/excel/excel.textframe#readingorder-member)
   \]
 
@@ -31,13 +23,13 @@ fields:
     uid: excel!Excel.ShapeTextReadingOrder.leftToRight:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: excel!Excel.ShapeTextReadingOrder.rightToLeft:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RightToLeft"'

@@ -5,14 +5,14 @@ package: onenote!
 fullName: OneNote.InkStroke
 summary: Represents a single stroke of ink.
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OneNote.InkStrokeCollection.items](/javascript/api/onenote/onenote.inkstrokecollection#items-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: floatingInk
     summary: Gets the ID of the InkStroke object. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -57,9 +56,8 @@ properties:
     fullName: id
     summary: Gets the ID of the InkStroke object.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

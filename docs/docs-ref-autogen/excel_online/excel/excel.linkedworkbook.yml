@@ -9,14 +9,14 @@ summary: >-
   workbook. In this scenario, the second workbook is called the "linked
   workbook".
 remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.LinkedWorkbookCollection.items](/javascript/api/excel/excel.linkedworkbookcollection#items-member)
   \]
 
@@ -47,8 +47,8 @@ properties:
       The original URL pointing to the linked workbook. It is unique across all
       linked workbooks in the collection.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +67,8 @@ methods:
       `LinkedWorkbook` object is invalidated and removed from
       `LinkedWorkbookCollection`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -161,8 +161,8 @@ methods:
     fullName: refresh()
     summary: Makes a request to refresh the data retrieved from the linked workbook.
     remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

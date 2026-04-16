@@ -6,25 +6,7 @@ fullName: Excel.Interfaces.PivotTableData
 summary: >-
   An interface describing the data returned by calling `pivotTable.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotTableCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableScopedCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablescopedcollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableScopedCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablescopedcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

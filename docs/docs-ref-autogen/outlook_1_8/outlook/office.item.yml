@@ -39,8 +39,7 @@ remarks: >-
   #### Used by
 
 
-  - \[ [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#item-member)
-  \]
+  - [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#item-member) \]
 
   #### Examples
 

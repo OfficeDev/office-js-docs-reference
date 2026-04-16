@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.PivotTableStyleData
 summary: >-
   An interface describing the data returned by calling
   `pivotTableStyle.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.PivotTableStyleCollectionData.items](/javascript/api/excel/excel.interfaces.pivottablestylecollectiondata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotTableStyleCollectionUpdateData.items](/javascript/api/excel/excel.interfaces.pivottablestylecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.WorkbookData.pivotTableStyles](/javascript/api/excel/excel.interfaces.workbookdata#pivottablestyles-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +18,8 @@ properties:
     fullName: name
     summary: Specifies the name of the PivotTable style.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +33,8 @@ properties:
     fullName: readOnly
     summary: Specifies if this `PivotTableStyle` object is read-only.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

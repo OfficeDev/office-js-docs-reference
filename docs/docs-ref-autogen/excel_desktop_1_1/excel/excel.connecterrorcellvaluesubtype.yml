@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.ConnectErrorCellValueSubType
 summary: Represents types of \#CONNECT! errors.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ConnectErrorCellValue.errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#errorsubtype-member)
   \]
 
@@ -27,9 +27,8 @@ fields:
       as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataTypeNoConnection"'
   - name: dataTypeServiceError
     uid: excel!Excel.ConnectErrorCellValueSubType.dataTypeServiceError:member
@@ -39,9 +38,8 @@ fields:
       as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DataTypeServiceError"'
   - name: externalLinks
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinks:member
@@ -51,9 +49,8 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinks"'
   - name: externalLinksAccessFailed
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinksAccessFailed:member
@@ -63,9 +60,8 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksAccessFailed"'
   - name: externalLinksFailedToRefresh
     uid: >-
@@ -76,9 +72,8 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksFailedToRefresh"'
   - name: externalLinksFileTooLarge
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinksFileTooLarge:member
@@ -88,9 +83,8 @@ fields:
       capacity. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksFileTooLarge"'
   - name: externalLinksInvalidRequest
     uid: >-
@@ -101,9 +95,8 @@ fields:
       Displays as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksInvalidRequest"'
   - name: externalLinksNonCloudLocation
     uid: >-
@@ -115,9 +108,8 @@ fields:
       cloud location. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksNonCloudLocation"'
   - name: externalLinksServerError
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinksServerError:member
@@ -127,9 +119,8 @@ fields:
       Displays as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksServerError"'
   - name: externalLinksThrottledByHost
     uid: >-
@@ -140,9 +131,8 @@ fields:
       error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksThrottledByHost"'
   - name: externalLinksUnAuthenticated
     uid: >-
@@ -153,9 +143,8 @@ fields:
       as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ExternalLinksUnAuthenticated"'
   - name: genericServerError
     uid: excel!Excel.ConnectErrorCellValueSubType.genericServerError:member
@@ -165,9 +154,8 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"GenericServerError"'
   - name: missingContent
     uid: excel!Excel.ConnectErrorCellValueSubType.missingContent:member
@@ -177,9 +165,8 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"MissingContent"'
   - name: outdatedLinkedEntity
     uid: excel!Excel.ConnectErrorCellValueSubType.outdatedLinkedEntity:member
@@ -189,9 +176,8 @@ fields:
       \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"OutdatedLinkedEntity"'
   - name: requestThrottle
     uid: excel!Excel.ConnectErrorCellValueSubType.requestThrottle:member
@@ -201,9 +187,8 @@ fields:
       in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"RequestThrottle"'
   - name: serviceError
     uid: excel!Excel.ConnectErrorCellValueSubType.serviceError:member
@@ -213,9 +198,8 @@ fields:
       \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ServiceError"'
   - name: unknown
     uid: excel!Excel.ConnectErrorCellValueSubType.unknown:member
@@ -224,7 +208,6 @@ fields:
       An unknown type of error. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Unknown"'

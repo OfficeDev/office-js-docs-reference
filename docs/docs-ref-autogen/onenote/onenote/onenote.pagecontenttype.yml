@@ -5,18 +5,14 @@ package: onenote!
 fullName: OneNote.PageContentType
 summary: ''
 remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [OneNote.Interfaces.PageContentData.type](/javascript/api/onenote/onenote.interfaces.pagecontentdata#type-member)
-  \]
-
-  - \[
+  -
   [OneNote.PageContent.type](/javascript/api/onenote/onenote.pagecontent#type-member)
   \]
 
@@ -27,31 +23,27 @@ fields:
     uid: onenote!OneNote.PageContentType.image:member
     package: onenote!
     summary: >-
-      * \[ [API set: OneNoteApi
+      * [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
     value: '"Image"'
   - name: ink
     uid: onenote!OneNote.PageContentType.ink:member
     package: onenote!
     summary: >-
-      * \[ [API set: OneNoteApi
+      * [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
     value: '"Ink"'
   - name: other
     uid: onenote!OneNote.PageContentType.other:member
     package: onenote!
     summary: >-
-      * \[ [API set: OneNoteApi
+      * [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
     value: '"Other"'
   - name: outline
     uid: onenote!OneNote.PageContentType.outline:member
     package: onenote!
     summary: >-
-      * \[ [API set: OneNoteApi
+      * [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
     value: '"Outline"'

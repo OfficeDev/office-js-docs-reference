@@ -6,13 +6,7 @@ fullName: Excel.Interfaces.ChartLeaderLinesFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartLeaderLinesFormat` object, for use
   in `chartLeaderLinesFormat.set({ ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartLeaderLinesUpdateData.format](/javascript/api/excel/excel.interfaces.chartleaderlinesupdatedata#format-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -24,9 +18,8 @@ properties:
     fullName: line
     summary: Gets an object that represents the line formatting of chart leader lines.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

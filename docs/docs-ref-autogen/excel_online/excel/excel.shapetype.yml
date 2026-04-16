@@ -5,18 +5,14 @@ package: excel!
 fullName: Excel.ShapeType
 summary: Specifies the type of a shape.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.ShapeData.type](/javascript/api/excel/excel.interfaces.shapedata#type-member)
-  \]
-
-  - \[ [Excel.Shape.type](/javascript/api/excel/excel.shape#type-member) \]
+  - [Excel.Shape.type](/javascript/api/excel/excel.shape#type-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -25,34 +21,34 @@ fields:
     uid: excel!Excel.ShapeType.geometricShape:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"GeometricShape"'
   - name: group
     uid: excel!Excel.ShapeType.group:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Group"'
   - name: image
     uid: excel!Excel.ShapeType.image:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Image"'
   - name: line
     uid: excel!Excel.ShapeType.line:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Line"'
   - name: unsupported
     uid: excel!Excel.ShapeType.unsupported:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unsupported"'

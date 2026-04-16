@@ -4,25 +4,7 @@ uid: onenote!OneNote.Interfaces.PageData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [OneNote.Interfaces.InkAnalysisData.page](/javascript/api/onenote/onenote.interfaces.inkanalysisdata#page-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageCollectionData.items](/javascript/api/onenote/onenote.interfaces.pagecollectiondata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.PageCollectionUpdateData.items](/javascript/api/onenote/onenote.interfaces.pagecollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [OneNote.Interfaces.SectionData.pages](/javascript/api/onenote/onenote.interfaces.sectiondata#pages-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +16,8 @@ properties:
     fullName: classNotebookPageSource
     summary: Gets the ClassNotebookPageSource to the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +31,8 @@ properties:
     fullName: clientUrl
     summary: The client url of the page. Read only
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +46,8 @@ properties:
     fullName: contents
     summary: The collection of PageContent objects on the page. Read only
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +61,8 @@ properties:
     fullName: id
     summary: Gets the ID of the page. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +78,8 @@ properties:
       Text interpretation for the ink on the page. Returns null if there is no
       ink analysis information. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +93,8 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -132,9 +108,8 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -148,9 +123,8 @@ properties:
     fullName: webUrl
     summary: The web URL of the page. Read-only.
     remarks: >-
-      \[ [API set: OneNoteApi
+      [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

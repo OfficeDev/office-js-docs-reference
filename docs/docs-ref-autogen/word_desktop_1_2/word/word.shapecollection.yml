@@ -8,25 +8,24 @@ summary: >-
   Currently, only the following shapes are supported: text boxes, geometric
   shapes, groups, pictures, and canvases.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Body.shapes](/javascript/api/word/word.body#shapes-member) \]
+  - [Word.Body.shapes](/javascript/api/word/word.body#shapes-member) \]
 
-  - \[ [Word.Canvas.shapes](/javascript/api/word/word.canvas#shapes-member) \]
+  - [Word.Canvas.shapes](/javascript/api/word/word.canvas#shapes-member) \]
 
-  - \[
-  [Word.Paragraph.shapes](/javascript/api/word/word.paragraph#shapes-member) \]
+  - [Word.Paragraph.shapes](/javascript/api/word/word.paragraph#shapes-member)
+  \]
 
-  - \[ [Word.Range.shapes](/javascript/api/word/word.range#shapes-member) \]
+  - [Word.Range.shapes](/javascript/api/word/word.range#shapes-member) \]
 
-  - \[
-  [Word.ShapeGroup.shapes](/javascript/api/word/word.shapegroup#shapes-member)
+  - [Word.ShapeGroup.shapes](/javascript/api/word/word.shapegroup#shapes-member)
   \]
 
   #### Examples
@@ -101,8 +100,8 @@ methods:
       Gets the shapes that have the specified geometric types. Only applied to
       geometric shapes.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -148,8 +147,8 @@ methods:
       Gets a shape by its identifier. Throws an `ItemNotFound` error if there
       isn't a shape with the identifier in this collection.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -174,8 +173,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -194,8 +193,8 @@ methods:
     fullName: getByIds(ids)
     summary: Gets the shapes by the identifiers.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -214,8 +213,8 @@ methods:
     fullName: getByNames(names)
     summary: Gets the shapes that have the specified names.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -234,8 +233,8 @@ methods:
     fullName: getByTypes(types)
     summary: Gets the shapes that have the specified types.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -282,8 +281,8 @@ methods:
       Gets the first shape in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -331,8 +330,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -374,8 +373,8 @@ methods:
       Groups floating shapes in this collection, inline shapes will be skipped.
       Returns a `Shape` object that represents the new group of shapes.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

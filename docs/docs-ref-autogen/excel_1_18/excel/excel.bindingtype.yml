@@ -5,19 +5,15 @@ package: excel!
 fullName: Excel.BindingType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Excel.Binding.type](/javascript/api/excel/excel.binding#type-member) \]
-
-  - \[
-  [Excel.Interfaces.BindingData.type](/javascript/api/excel/excel.interfaces.bindingdata#type-member)
-  \]
+  - [Excel.Binding.type](/javascript/api/excel/excel.binding#type-member) \]
 
   #### Examples
 
@@ -51,20 +47,20 @@ fields:
     uid: excel!Excel.BindingType.range:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Range"'
   - name: table
     uid: excel!Excel.BindingType.table:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Table"'
   - name: text
     uid: excel!Excel.BindingType.text:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Text"'

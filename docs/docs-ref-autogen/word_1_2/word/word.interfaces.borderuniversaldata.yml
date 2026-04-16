@@ -6,17 +6,7 @@ fullName: Word.Interfaces.BorderUniversalData
 summary: >-
   An interface describing the data returned by calling
   `borderUniversal.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BorderUniversalCollectionData.items](/javascript/api/word/word.interfaces.borderuniversalcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BorderUniversalCollectionUpdateData.items](/javascript/api/word/word.interfaces.borderuniversalcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

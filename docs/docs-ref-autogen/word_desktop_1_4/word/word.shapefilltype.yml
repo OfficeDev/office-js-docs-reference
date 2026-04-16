@@ -5,19 +5,15 @@ package: word!
 fullName: Word.ShapeFillType
 summary: Specifies a [shape's](xref:word!Word.Shape:class) fill type.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ShapeFillData.type](/javascript/api/word/word.interfaces.shapefilldata#type-member)
-  \]
-
-  - \[ [Word.ShapeFill.type](/javascript/api/word/word.shapefill#type-member) \]
+  - [Word.ShapeFill.type](/javascript/api/word/word.shapefill#type-member) \]
 
   #### Examples
 
@@ -63,8 +59,8 @@ fields:
       Gradient fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Gradient"'
   - name: mixed
     uid: word!Word.ShapeFillType.mixed:member
@@ -73,8 +69,8 @@ fields:
       Mixed fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: noFill
     uid: word!Word.ShapeFillType.noFill:member
@@ -83,8 +79,8 @@ fields:
       No fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NoFill"'
   - name: pattern
     uid: word!Word.ShapeFillType.pattern:member
@@ -93,8 +89,8 @@ fields:
       Pattern fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pattern"'
   - name: picture
     uid: word!Word.ShapeFillType.picture:member
@@ -103,8 +99,8 @@ fields:
       Picture fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Picture"'
   - name: solid
     uid: word!Word.ShapeFillType.solid:member
@@ -113,8 +109,8 @@ fields:
       Solid fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Solid"'
   - name: texture
     uid: word!Word.ShapeFillType.texture:member
@@ -123,6 +119,6 @@ fields:
       Texture fill.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Texture"'

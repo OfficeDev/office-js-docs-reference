@@ -7,23 +7,15 @@ summary: >-
   Represents the character inserted after the [list
   item](xref:word!Word.ListItem:class) mark.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ListLevelData.trailingCharacter](/javascript/api/word/word.interfaces.listleveldata#trailingcharacter-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ListLevelUpdateData.trailingCharacter](/javascript/api/word/word.interfaces.listlevelupdatedata#trailingcharacter-member)
-  \]
-
-  - \[
+  -
   [Word.ListLevel.trailingCharacter](/javascript/api/word/word.listlevel#trailingcharacter-member)
   \]
 
@@ -79,8 +71,8 @@ fields:
       No character is inserted.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TrailingNone"'
   - name: trailingSpace
     uid: word!Word.TrailingCharacter.trailingSpace:member
@@ -89,8 +81,8 @@ fields:
       A space is inserted. Default.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TrailingSpace"'
   - name: trailingTab
     uid: word!Word.TrailingCharacter.trailingTab:member
@@ -99,6 +91,6 @@ fields:
       A tab is inserted.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"TrailingTab"'

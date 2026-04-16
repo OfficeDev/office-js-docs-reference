@@ -8,14 +8,14 @@ summary: >-
   [Word.HtmlDivision](xref:word!Word.HtmlDivision:class) objects in a Word
   document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.HtmlDivision.htmlDivisions](/javascript/api/word/word.htmldivision#htmldivisions-member)
   \]
 
@@ -60,8 +60,8 @@ methods:
       Returns an `HtmlDivision` object from the collection based on the
       specified index.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -5,18 +5,18 @@ package: office-runtime!
 fullName: OfficeRuntime.Dialog
 summary: Object representing the dialog box.
 remarks: >-
-  \[ [API set: CustomFunctionsRuntime
-  1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  [API set: CustomFunctionsRuntime
+  1.1](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
   #### Used by
 
 
-  - \[
+  -
   [OfficeRuntime.DisplayWebDialogOptions.onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#onmessage-member)
   \]
 
-  - \[
+  -
   [OfficeRuntime.DisplayWebDialogOptions.onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#onruntimeerror-member)
   \]
 
@@ -30,8 +30,8 @@ methods:
     fullName: close()
     summary: Method to close a dialog box. Returns a Promise.
     remarks: >-
-      \[ [API set: CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/reference/javascript-api-for-office)
 
     isPreview: false
     isDeprecated: false

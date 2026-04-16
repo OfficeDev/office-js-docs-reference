@@ -8,14 +8,14 @@ summary: >-
   The `Reviewer` object is a member of the
   [Word.ReviewerCollection](xref:word!Word.ReviewerCollection:class) object.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ReviewerCollection.items](/javascript/api/word/word.reviewercollection#items-member)
   \]
 
@@ -44,8 +44,8 @@ properties:
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

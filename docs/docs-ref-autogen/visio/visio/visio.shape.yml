@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.Shape
 summary: Represents the Shape class.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[
+  -
   [Visio.ShapeCollection.items](/javascript/api/visio/visio.shapecollection#items-member)
   \]
 
@@ -27,9 +26,8 @@ properties:
     fullName: comments
     summary: Returns the Comments Collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +56,8 @@ properties:
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +71,8 @@ properties:
     fullName: id
     summary: Shape's identifier.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +86,8 @@ properties:
     fullName: name
     summary: Shape's name.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +103,8 @@ properties:
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +118,8 @@ properties:
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +133,8 @@ properties:
     fullName: subShapes
     summary: Gets SubShape Collection.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +148,8 @@ properties:
     fullName: text
     summary: Shape's text.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -172,9 +163,8 @@ properties:
     fullName: view
     summary: Returns the view of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -191,9 +181,8 @@ methods:
       Returns the AbsoluteBoundingBox object that specifies absolute bounding
       box of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -210,9 +199,8 @@ methods:
     fullName: getBounds()
     summary: Returns the BoundingBox object that specifies bounding box of the shape.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

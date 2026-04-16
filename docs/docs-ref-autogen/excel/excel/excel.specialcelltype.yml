@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.SpecialCellType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -18,8 +18,8 @@ fields:
       Cells with no content.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Blanks"'
   - name: conditionalFormats
     uid: excel!Excel.SpecialCellType.conditionalFormats:member
@@ -28,8 +28,8 @@ fields:
       All cells with conditional formats.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ConditionalFormats"'
   - name: constants
     uid: excel!Excel.SpecialCellType.constants:member
@@ -38,8 +38,8 @@ fields:
       Cells containing constants.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Constants"'
   - name: dataValidations
     uid: excel!Excel.SpecialCellType.dataValidations:member
@@ -48,8 +48,8 @@ fields:
       Cells with validation criteria.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DataValidations"'
   - name: dirtyFormulas
     uid: excel!Excel.SpecialCellType.dirtyFormulas:member
@@ -58,9 +58,8 @@ fields:
       Cells contain formulas which don't have up-to-date results.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
+      * [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"DirtyFormulas"'
   - name: formulas
     uid: excel!Excel.SpecialCellType.formulas:member
@@ -69,8 +68,8 @@ fields:
       Cells containing formulas.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Formulas"'
   - name: sameConditionalFormat
     uid: excel!Excel.SpecialCellType.sameConditionalFormat:member
@@ -79,8 +78,8 @@ fields:
       Cells with the same conditional format as the first cell in the range.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SameConditionalFormat"'
   - name: sameDataValidation
     uid: excel!Excel.SpecialCellType.sameDataValidation:member
@@ -90,8 +89,8 @@ fields:
       range.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SameDataValidation"'
   - name: visible
     uid: excel!Excel.SpecialCellType.visible:member
@@ -100,6 +99,6 @@ fields:
       Cells that are visible.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Visible"'

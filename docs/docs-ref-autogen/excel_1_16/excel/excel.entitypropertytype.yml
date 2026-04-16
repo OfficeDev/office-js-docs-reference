@@ -5,19 +5,19 @@ package: excel!
 fullName: Excel.EntityPropertyType
 summary: Represents the value of a property.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.EntityCellValue.properties](/javascript/api/excel/excel.entitycellvalue#properties-member)
   \]
 
-  - \[
+  -
   [Excel.LinkedEntityCellValue.properties](/javascript/api/excel/excel.linkedentitycellvalue#properties-member)
   \]
 

@@ -5,19 +5,19 @@ package: word!
 fullName: Word.NumberType
 summary: Specifies the type of numbers in a list.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.DocumentCountNumberedItemsOptions.numberType](/javascript/api/word/word.documentcountnumbereditemsoptions#numbertype-member)
   \]
 
-  - \[
+  -
   [Word.ListFormatCountNumberedItemsOptions.numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#numbertype-member)
   \]
 
@@ -58,8 +58,8 @@ fields:
       Default value for all other cases.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AllNumbers"'
   - name: listNum
     uid: word!Word.NumberType.listNum:member
@@ -70,8 +70,8 @@ fields:
       -->.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListNum"'
   - name: paragraph
     uid: word!Word.NumberType.paragraph:member
@@ -81,6 +81,6 @@ fields:
       **Bullets and Numbering** dialog box.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Paragraph"'

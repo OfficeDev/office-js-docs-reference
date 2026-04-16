@@ -10,9 +10,8 @@ summary: >-
   [SpamReporting](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
   event.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   **[Minimum permission
@@ -29,7 +28,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Office.MailboxEvent.completed](/javascript/api/outlook/office.mailboxevent#completed-member)
   \]
 
@@ -88,9 +87,8 @@ properties:
       specifies the ID of the task pane that opens after the message is
       processed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -186,9 +184,8 @@ properties:
       specifies any JSON data passed to the add-in's task pane after the message
       is processed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -293,9 +290,8 @@ properties:
       to signal that a reported message has finished processing, this property
       specifies the Outlook mailbox folder to which the message will be moved.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -338,9 +334,8 @@ properties:
       specifies whether the message is moved to a different folder in the
       mailbox.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -397,9 +392,8 @@ properties:
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))<!--
       -->, the reported message remains in its current mailbox folder.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -444,9 +438,8 @@ properties:
 
       - `noMove` - Leaves the reported message in its current folder.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level
@@ -536,9 +529,8 @@ properties:
       If this property isn't specified, a dialog isn't shown to the user once
       their reported message is processed.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
 
       **[Minimum permission level

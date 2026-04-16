@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellLoadOptions
 summary: Represents a table.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +34,8 @@ properties:
     fullName: borders
     summary: Gets the collection of borders for the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +53,8 @@ properties:
       Gets the number of table columns this cell spans across. Will be greater
       than or equal to 1.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +68,8 @@ properties:
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +83,8 @@ properties:
     fullName: fill
     summary: Gets the fill color of the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +101,8 @@ properties:
     fullName: font
     summary: Gets the font of the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -128,9 +122,8 @@ properties:
       Specifies the horizontal alignment of the text in the table cell. Returns
       `null` if the cell text contains different alignments.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -146,9 +139,8 @@ properties:
       Specifies the indent level of the text in the table cell. Returns `null`
       if the cell text contains different indent levels.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -162,9 +154,8 @@ properties:
     fullName: margins
     summary: Gets the set of margins in the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -182,9 +173,8 @@ properties:
       Gets the number of table rows this cell spans across. Will be greater than
       or equal to 1.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -198,9 +188,8 @@ properties:
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -214,9 +203,8 @@ properties:
     fullName: text
     summary: Specifies the text content of the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -234,9 +222,8 @@ properties:
       objects. Each `TextRun` object represents a sequence of one or more
       characters that share the same font attributes.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -251,9 +238,8 @@ properties:
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text in the table cell.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

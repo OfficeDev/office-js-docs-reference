@@ -5,18 +5,14 @@ package: excel!
 fullName: Excel.NumberFormatCategory
 summary: Represents a category of number formats.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.RangeData.numberFormatCategories](/javascript/api/excel/excel.interfaces.rangedata#numberformatcategories-member)
-  \]
-
-  - \[
+  -
   [Excel.Range.numberFormatCategories](/javascript/api/excel/excel.range#numberformatcategories-member)
   \]
 
@@ -31,9 +27,8 @@ fields:
       column.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Accounting"'
   - name: currency
     uid: excel!Excel.NumberFormatCategory.currency:member
@@ -43,9 +38,8 @@ fields:
       formats to align decimal points in a column.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Currency"'
   - name: custom
     uid: excel!Excel.NumberFormatCategory.custom:member
@@ -54,9 +48,8 @@ fields:
       A custom format that is not a part of any category.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Custom"'
   - name: date
     uid: excel!Excel.NumberFormatCategory.date:member
@@ -68,9 +61,8 @@ fields:
       Formats without an asterisk are not affected by operating system settings.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Date"'
   - name: fraction
     uid: excel!Excel.NumberFormatCategory.fraction:member
@@ -80,9 +72,8 @@ fields:
       remainder rounded to the nearest fraction value.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Fraction"'
   - name: general
     uid: excel!Excel.NumberFormatCategory.general:member
@@ -91,9 +82,8 @@ fields:
       General format cells have no specific number format.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"General"'
   - name: number
     uid: excel!Excel.NumberFormatCategory.number:member
@@ -103,9 +93,8 @@ fields:
       offer specialized formatting for monetary value.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Number"'
   - name: percentage
     uid: excel!Excel.NumberFormatCategory.percentage:member
@@ -115,9 +104,8 @@ fields:
       with a percent symbol.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Percentage"'
   - name: scientific
     uid: excel!Excel.NumberFormatCategory.scientific:member
@@ -127,9 +115,8 @@ fields:
       multiplied by a power of 10.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Scientific"'
   - name: special
     uid: excel!Excel.NumberFormatCategory.special:member
@@ -138,9 +125,8 @@ fields:
       Special formats are useful for tracking list and database values.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Special"'
   - name: text
     uid: excel!Excel.NumberFormatCategory.text:member
@@ -150,9 +136,8 @@ fields:
       The cell is displayed exactly as entered.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Text"'
   - name: time
     uid: excel!Excel.NumberFormatCategory.time:member
@@ -164,7 +149,6 @@ fields:
       Formats without an asterisk are not affected by operating system settings.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"Time"'

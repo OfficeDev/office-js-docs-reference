@@ -5,29 +5,29 @@ package: word!
 fullName: Word.Font
 summary: Represents a font.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[ [Word.Body.font](/javascript/api/word/word.body#font-member) \]
+  - [Word.Body.font](/javascript/api/word/word.body#font-member) \]
 
-  - \[
+  -
   [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
   \]
 
-  - \[ [Word.Paragraph.font](/javascript/api/word/word.paragraph#font-member) \]
+  - [Word.Paragraph.font](/javascript/api/word/word.paragraph#font-member) \]
 
-  - \[ [Word.Range.font](/javascript/api/word/word.range#font-member) \]
+  - [Word.Range.font](/javascript/api/word/word.range#font-member) \]
 
-  - \[ [Word.Style.font](/javascript/api/word/word.style#font-member) \]
+  - [Word.Style.font](/javascript/api/word/word.style#font-member) \]
 
-  - \[ [Word.Table.font](/javascript/api/word/word.table#font-member) \]
+  - [Word.Table.font](/javascript/api/word/word.table#font-member) \]
 
-  - \[ [Word.TableRow.font](/javascript/api/word/word.tablerow#font-member) \]
+  - [Word.TableRow.font](/javascript/api/word/word.tablerow#font-member) \]
 
   #### Examples
 
@@ -66,8 +66,8 @@ properties:
       Specifies whether the font is bold. `true` if the font is formatted as
       bold, otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -109,8 +109,8 @@ properties:
       Specifies the color for the font. You can provide the value in the
       '\#RRGGBB' format or the color name.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -167,8 +167,8 @@ properties:
       Specifies whether the font has a double strikethrough. `true` if the font
       is formatted as double strikethrough text, otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -192,8 +192,8 @@ properties:
       for Windows Desktop, any other color is converted to the closest color
       when applied to the font.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -235,8 +235,8 @@ properties:
       Specifies whether the font is italicized. `true` if the font is
       italicized, otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -250,8 +250,8 @@ properties:
     fullName: name
     summary: Specifies the name of the font.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -291,8 +291,8 @@ properties:
     fullName: size
     summary: Specifies the font size in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -334,8 +334,8 @@ properties:
       Specifies whether the font has a strikethrough. `true` if the font is
       formatted as strikethrough text, otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples
@@ -377,8 +377,8 @@ properties:
       Specifies whether the font is a subscript. `true` if the font is formatted
       as subscript, otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -394,8 +394,8 @@ properties:
       Specifies whether the font is a superscript. `true` if the font is
       formatted as superscript, otherwise, `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -409,8 +409,8 @@ properties:
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       #### Examples

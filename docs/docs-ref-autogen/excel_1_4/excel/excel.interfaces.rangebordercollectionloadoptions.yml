@@ -5,16 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
 summary: Represents the border objects that make up the range border.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.RangeFormatLoadOptions.borders](/javascript/api/excel/excel.interfaces.rangeformatloadoptions#borders-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -45,8 +37,8 @@ properties:
       the border line, in the form \#RRGGBB (e.g., "FFA500"), or as a named HTML
       color (e.g., "orange").
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -62,8 +54,8 @@ properties:
       For EACH ITEM in the collection: Constant value that indicates the
       specific side of the border. See `Excel.BorderIndex` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -80,8 +72,8 @@ properties:
       specifying the line style for the border. See `Excel.BorderLineStyle` for
       details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -97,8 +89,8 @@ properties:
       For EACH ITEM in the collection: Specifies the weight of the border around
       a range. See `Excel.BorderWeight` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

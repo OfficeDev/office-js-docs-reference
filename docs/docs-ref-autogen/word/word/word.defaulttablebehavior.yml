@@ -5,14 +5,14 @@ package: word!
 fullName: Word.DefaultTableBehavior
 summary: Specifies the default behavior when inserting a new table.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.SelectionConvertToTableOptions.defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#defaulttablebehavior-member)
   \]
 
@@ -26,8 +26,8 @@ fields:
       Disables AutoFit.
 
 
-      * \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"DisableAutoFit"'
   - name: enableAutoFit
     uid: word!Word.DefaultTableBehavior.enableAutoFit:member
@@ -36,6 +36,6 @@ fields:
       Enables AutoFit.
 
 
-      * \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"EnableAutoFit"'

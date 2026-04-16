@@ -6,21 +6,7 @@ fullName: Excel.Interfaces.ChartBorderData
 summary: >-
   An interface describing the data returned by calling
   `chartBorder.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAreaFormatData.border](/javascript/api/excel/excel.interfaces.chartareaformatdata#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartPointFormatData.border](/javascript/api/excel/excel.interfaces.chartpointformatdata#border-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTitleFormatData.border](/javascript/api/excel/excel.interfaces.charttitleformatdata#border-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: color
     summary: HTML color code representing the color of borders in the chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -49,8 +35,8 @@ properties:
       Represents the line style of the border. See `Excel.ChartLineStyle` for
       details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -70,8 +56,8 @@ properties:
     fullName: weight
     summary: Represents weight of the border, in points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

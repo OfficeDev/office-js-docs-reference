@@ -6,17 +6,7 @@ fullName: PowerPoint.Interfaces.BindingData
 summary: >-
   An interface describing the data returned by calling `binding.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [PowerPoint.Interfaces.BindingCollectionData.items](/javascript/api/powerpoint/powerpoint.interfaces.bindingcollectiondata#items-member)
-  \]
-
-  - \[
-  [PowerPoint.Interfaces.BindingCollectionUpdateData.items](/javascript/api/powerpoint/powerpoint.interfaces.bindingcollectionupdatedata#items-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false

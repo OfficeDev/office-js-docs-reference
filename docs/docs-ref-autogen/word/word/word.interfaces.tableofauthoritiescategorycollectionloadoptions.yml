@@ -8,8 +8,8 @@ summary: >-
   [Word.TableOfAuthoritiesCategory](xref:word!Word.TableOfAuthoritiesCategory:class)
   objects in a Word document.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -44,8 +44,8 @@ properties:
       [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class)
       will remain the same.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

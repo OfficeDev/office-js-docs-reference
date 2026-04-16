@@ -5,14 +5,14 @@ package: excel!
 fullName: Excel.Query
 summary: Represents a Power Query query.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.QueryCollection.items](/javascript/api/excel/excel.querycollection#items-member)
   \]
 
@@ -41,9 +41,8 @@ properties:
     fullName: error
     summary: Gets the query error message from when the query was last refreshed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -63,9 +62,8 @@ properties:
     fullName: loadedTo
     summary: Gets the query loaded to object type.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +81,8 @@ properties:
     fullName: loadedToDataModel
     summary: Specifies if the query loaded to the data model.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -101,9 +98,8 @@ properties:
       Gets the name of the query. Query names cannot contain periods or
       quotation marks.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -140,9 +136,8 @@ properties:
     fullName: refreshDate
     summary: Gets the date and time when the query was last refreshed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -181,9 +176,8 @@ properties:
       Gets the number of rows that were loaded when the query was last
       refreshed. If last refresh has errors the value will be -1.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -223,9 +217,8 @@ methods:
       Deletes the query and associated connection. Tables associated with the
       query will no longer be connected.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false
@@ -314,9 +307,8 @@ methods:
     fullName: refresh()
     summary: Refreshes the query. This only starts the refresh.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: true
     isDeprecated: false

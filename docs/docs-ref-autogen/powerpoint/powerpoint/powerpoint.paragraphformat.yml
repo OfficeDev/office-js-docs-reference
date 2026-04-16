@@ -8,16 +8,15 @@ summary: >-
   the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
   -->.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [PowerPoint.TextRange.paragraphFormat](/javascript/api/powerpoint/powerpoint.textrange#paragraphformat-member)
   \]
 
@@ -79,9 +78,8 @@ properties:
       [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -115,9 +113,8 @@ properties:
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
       for details.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -137,9 +134,8 @@ properties:
     fullName: indentLevel
     summary: Represents the indent level of the paragraph.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

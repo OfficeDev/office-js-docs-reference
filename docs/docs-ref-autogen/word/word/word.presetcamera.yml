@@ -5,18 +5,14 @@ package: word!
 fullName: Word.PresetCamera
 summary: Indicates the effects camera type used by the specified object.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.ThreeDimensionalFormatData.presetCamera](/javascript/api/word/word.interfaces.threedimensionalformatdata#presetcamera-member)
-  \]
-
-  - \[
+  -
   [Word.ThreeDimensionalFormat.presetCamera](/javascript/api/word/word.threedimensionalformat#presetcamera-member)
   \]
 
@@ -30,8 +26,8 @@ fields:
       Represents an isometric bottom-down camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricBottomDown"'
   - name: isometricBottomUp
     uid: word!Word.PresetCamera.isometricBottomUp:member
@@ -40,8 +36,8 @@ fields:
       Represents an isometric bottom-up camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricBottomUp"'
   - name: isometricLeftDown
     uid: word!Word.PresetCamera.isometricLeftDown:member
@@ -50,8 +46,8 @@ fields:
       Represents an isometric left-down camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricLeftDown"'
   - name: isometricLeftUp
     uid: word!Word.PresetCamera.isometricLeftUp:member
@@ -60,8 +56,8 @@ fields:
       Represents an isometric left-up camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricLeftUp"'
   - name: isometricOffAxis1Left
     uid: word!Word.PresetCamera.isometricOffAxis1Left:member
@@ -70,8 +66,8 @@ fields:
       Represents an isometric off-axis 1 left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis1Left"'
   - name: isometricOffAxis1Right
     uid: word!Word.PresetCamera.isometricOffAxis1Right:member
@@ -80,8 +76,8 @@ fields:
       Represents an isometric off-axis 1 right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis1Right"'
   - name: isometricOffAxis1Top
     uid: word!Word.PresetCamera.isometricOffAxis1Top:member
@@ -90,8 +86,8 @@ fields:
       Represents an isometric off-axis 1 top camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis1Top"'
   - name: isometricOffAxis2Left
     uid: word!Word.PresetCamera.isometricOffAxis2Left:member
@@ -100,8 +96,8 @@ fields:
       Represents an isometric off-axis 2 left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis2Left"'
   - name: isometricOffAxis2Right
     uid: word!Word.PresetCamera.isometricOffAxis2Right:member
@@ -110,8 +106,8 @@ fields:
       Represents an isometric off-axis 2 right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis2Right"'
   - name: isometricOffAxis2Top
     uid: word!Word.PresetCamera.isometricOffAxis2Top:member
@@ -120,8 +116,8 @@ fields:
       Represents an isometric off-axis 2 top camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis2Top"'
   - name: isometricOffAxis3Bottom
     uid: word!Word.PresetCamera.isometricOffAxis3Bottom:member
@@ -130,8 +126,8 @@ fields:
       Represents an isometric off-axis 3 bottom camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis3Bottom"'
   - name: isometricOffAxis3Left
     uid: word!Word.PresetCamera.isometricOffAxis3Left:member
@@ -140,8 +136,8 @@ fields:
       Represents an isometric off-axis 3 left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis3Left"'
   - name: isometricOffAxis3Right
     uid: word!Word.PresetCamera.isometricOffAxis3Right:member
@@ -150,8 +146,8 @@ fields:
       Represents an isometric off-axis 3 right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis3Right"'
   - name: isometricOffAxis4Bottom
     uid: word!Word.PresetCamera.isometricOffAxis4Bottom:member
@@ -160,8 +156,8 @@ fields:
       Represents an isometric off-axis 4 bottom camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis4Bottom"'
   - name: isometricOffAxis4Left
     uid: word!Word.PresetCamera.isometricOffAxis4Left:member
@@ -170,8 +166,8 @@ fields:
       Represents an isometric off-axis 4 left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis4Left"'
   - name: isometricOffAxis4Right
     uid: word!Word.PresetCamera.isometricOffAxis4Right:member
@@ -180,8 +176,8 @@ fields:
       Represents an isometric off-axis 4 right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricOffAxis4Right"'
   - name: isometricRightDown
     uid: word!Word.PresetCamera.isometricRightDown:member
@@ -190,8 +186,8 @@ fields:
       Represents an isometric right-down camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricRightDown"'
   - name: isometricRightUp
     uid: word!Word.PresetCamera.isometricRightUp:member
@@ -200,8 +196,8 @@ fields:
       Represents an isometric right-up camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricRightUp"'
   - name: isometricTopDown
     uid: word!Word.PresetCamera.isometricTopDown:member
@@ -210,8 +206,8 @@ fields:
       Represents an isometric top-down camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricTopDown"'
   - name: isometricTopUp
     uid: word!Word.PresetCamera.isometricTopUp:member
@@ -220,8 +216,8 @@ fields:
       Represents an isometric top-up camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"IsometricTopUp"'
   - name: legacyObliqueBottom
     uid: word!Word.PresetCamera.legacyObliqueBottom:member
@@ -230,8 +226,8 @@ fields:
       Represents a legacy oblique bottom camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueBottom"'
   - name: legacyObliqueBottomLeft
     uid: word!Word.PresetCamera.legacyObliqueBottomLeft:member
@@ -240,8 +236,8 @@ fields:
       Represents a legacy oblique bottom-left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueBottomLeft"'
   - name: legacyObliqueBottomRight
     uid: word!Word.PresetCamera.legacyObliqueBottomRight:member
@@ -250,8 +246,8 @@ fields:
       Represents a legacy oblique bottom-right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueBottomRight"'
   - name: legacyObliqueFront
     uid: word!Word.PresetCamera.legacyObliqueFront:member
@@ -260,8 +256,8 @@ fields:
       Represents a legacy oblique front camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueFront"'
   - name: legacyObliqueLeft
     uid: word!Word.PresetCamera.legacyObliqueLeft:member
@@ -270,8 +266,8 @@ fields:
       Represents a legacy oblique left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueLeft"'
   - name: legacyObliqueRight
     uid: word!Word.PresetCamera.legacyObliqueRight:member
@@ -280,8 +276,8 @@ fields:
       Represents a legacy oblique right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueRight"'
   - name: legacyObliqueTop
     uid: word!Word.PresetCamera.legacyObliqueTop:member
@@ -290,8 +286,8 @@ fields:
       Represents a legacy oblique top camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueTop"'
   - name: legacyObliqueTopLeft
     uid: word!Word.PresetCamera.legacyObliqueTopLeft:member
@@ -300,8 +296,8 @@ fields:
       Represents a legacy oblique top-left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueTopLeft"'
   - name: legacyObliqueTopRight
     uid: word!Word.PresetCamera.legacyObliqueTopRight:member
@@ -310,8 +306,8 @@ fields:
       Represents a legacy oblique top-right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyObliqueTopRight"'
   - name: legacyPerspectiveBottom
     uid: word!Word.PresetCamera.legacyPerspectiveBottom:member
@@ -320,8 +316,8 @@ fields:
       Represents a legacy perspective bottom camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveBottom"'
   - name: legacyPerspectiveBottomLeft
     uid: word!Word.PresetCamera.legacyPerspectiveBottomLeft:member
@@ -330,8 +326,8 @@ fields:
       Represents a legacy perspective bottom-left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveBottomLeft"'
   - name: legacyPerspectiveBottomRight
     uid: word!Word.PresetCamera.legacyPerspectiveBottomRight:member
@@ -340,8 +336,8 @@ fields:
       Represents a legacy perspective bottom-right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveBottomRight"'
   - name: legacyPerspectiveFront
     uid: word!Word.PresetCamera.legacyPerspectiveFront:member
@@ -350,8 +346,8 @@ fields:
       Represents a legacy perspective front camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveFront"'
   - name: legacyPerspectiveLeft
     uid: word!Word.PresetCamera.legacyPerspectiveLeft:member
@@ -360,8 +356,8 @@ fields:
       Represents a legacy perspective left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveLeft"'
   - name: legacyPerspectiveRight
     uid: word!Word.PresetCamera.legacyPerspectiveRight:member
@@ -370,8 +366,8 @@ fields:
       Represents a legacy perspective right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveRight"'
   - name: legacyPerspectiveTop
     uid: word!Word.PresetCamera.legacyPerspectiveTop:member
@@ -380,8 +376,8 @@ fields:
       Represents a legacy perspective top camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveTop"'
   - name: legacyPerspectiveTopLeft
     uid: word!Word.PresetCamera.legacyPerspectiveTopLeft:member
@@ -390,8 +386,8 @@ fields:
       Represents a legacy perspective top-left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveTopLeft"'
   - name: legacyPerspectiveTopRight
     uid: word!Word.PresetCamera.legacyPerspectiveTopRight:member
@@ -400,8 +396,8 @@ fields:
       Represents a legacy perspective top-right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"LegacyPerspectiveTopRight"'
   - name: mixed
     uid: word!Word.PresetCamera.mixed:member
@@ -410,8 +406,8 @@ fields:
       Represents a mixed camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: obliqueBottom
     uid: word!Word.PresetCamera.obliqueBottom:member
@@ -420,8 +416,8 @@ fields:
       Represents an oblique bottom camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueBottom"'
   - name: obliqueBottomLeft
     uid: word!Word.PresetCamera.obliqueBottomLeft:member
@@ -430,8 +426,8 @@ fields:
       Represents an oblique bottom-left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueBottomLeft"'
   - name: obliqueBottomRight
     uid: word!Word.PresetCamera.obliqueBottomRight:member
@@ -440,8 +436,8 @@ fields:
       Represents an oblique bottom-right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueBottomRight"'
   - name: obliqueLeft
     uid: word!Word.PresetCamera.obliqueLeft:member
@@ -450,8 +446,8 @@ fields:
       Represents an oblique left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueLeft"'
   - name: obliqueRight
     uid: word!Word.PresetCamera.obliqueRight:member
@@ -460,8 +456,8 @@ fields:
       Represents an oblique right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueRight"'
   - name: obliqueTop
     uid: word!Word.PresetCamera.obliqueTop:member
@@ -470,8 +466,8 @@ fields:
       Represents an oblique top camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueTop"'
   - name: obliqueTopLeft
     uid: word!Word.PresetCamera.obliqueTopLeft:member
@@ -480,8 +476,8 @@ fields:
       Represents an oblique top-left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueTopLeft"'
   - name: obliqueTopRight
     uid: word!Word.PresetCamera.obliqueTopRight:member
@@ -490,8 +486,8 @@ fields:
       Represents an oblique top-right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ObliqueTopRight"'
   - name: orthographicFront
     uid: word!Word.PresetCamera.orthographicFront:member
@@ -500,8 +496,8 @@ fields:
       Represents an orthographic front camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OrthographicFront"'
   - name: perspectiveAbove
     uid: word!Word.PresetCamera.perspectiveAbove:member
@@ -510,8 +506,8 @@ fields:
       Represents a perspective above camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveAbove"'
   - name: perspectiveAboveLeftFacing
     uid: word!Word.PresetCamera.perspectiveAboveLeftFacing:member
@@ -520,8 +516,8 @@ fields:
       Represents a perspective above-left facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveAboveLeftFacing"'
   - name: perspectiveAboveRightFacing
     uid: word!Word.PresetCamera.perspectiveAboveRightFacing:member
@@ -530,8 +526,8 @@ fields:
       Represents a perspective above-right facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveAboveRightFacing"'
   - name: perspectiveBelow
     uid: word!Word.PresetCamera.perspectiveBelow:member
@@ -540,8 +536,8 @@ fields:
       Represents a perspective below camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveBelow"'
   - name: perspectiveContrastingLeftFacing
     uid: word!Word.PresetCamera.perspectiveContrastingLeftFacing:member
@@ -550,8 +546,8 @@ fields:
       Represents a perspective contrasting-left facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveContrastingLeftFacing"'
   - name: perspectiveContrastingRightFacing
     uid: word!Word.PresetCamera.perspectiveContrastingRightFacing:member
@@ -560,8 +556,8 @@ fields:
       Represents a perspective contrasting-right facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveContrastingRightFacing"'
   - name: perspectiveFront
     uid: word!Word.PresetCamera.perspectiveFront:member
@@ -570,8 +566,8 @@ fields:
       Represents a perspective front camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveFront"'
   - name: perspectiveHeroicExtremeLeftFacing
     uid: word!Word.PresetCamera.perspectiveHeroicExtremeLeftFacing:member
@@ -580,8 +576,8 @@ fields:
       Represents a perspective heroic-extreme left facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveHeroicExtremeLeftFacing"'
   - name: perspectiveHeroicExtremeRightFacing
     uid: word!Word.PresetCamera.perspectiveHeroicExtremeRightFacing:member
@@ -590,8 +586,8 @@ fields:
       Represents a perspective heroic-extreme right facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveHeroicExtremeRightFacing"'
   - name: perspectiveHeroicLeftFacing
     uid: word!Word.PresetCamera.perspectiveHeroicLeftFacing:member
@@ -600,8 +596,8 @@ fields:
       Represents a perspective heroic-left facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveHeroicLeftFacing"'
   - name: perspectiveHeroicRightFacing
     uid: word!Word.PresetCamera.perspectiveHeroicRightFacing:member
@@ -610,8 +606,8 @@ fields:
       Represents a perspective heroic-right facing camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveHeroicRightFacing"'
   - name: perspectiveLeft
     uid: word!Word.PresetCamera.perspectiveLeft:member
@@ -620,8 +616,8 @@ fields:
       Represents a perspective left camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveLeft"'
   - name: perspectiveRelaxed
     uid: word!Word.PresetCamera.perspectiveRelaxed:member
@@ -630,8 +626,8 @@ fields:
       Represents a relaxed perspective camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveRelaxed"'
   - name: perspectiveRelaxedModerately
     uid: word!Word.PresetCamera.perspectiveRelaxedModerately:member
@@ -640,8 +636,8 @@ fields:
       Represents a moderately relaxed perspective camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveRelaxedModerately"'
   - name: perspectiveRight
     uid: word!Word.PresetCamera.perspectiveRight:member
@@ -650,6 +646,6 @@ fields:
       Represents a perspective right camera type.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"PerspectiveRight"'

@@ -6,53 +6,7 @@ fullName: Word.Interfaces.RangeUpdateData
 summary: >-
   An interface for updating data on the `Range` object, for use in `range.set({
   ... })`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.BreakUpdateData.range](/javascript/api/word/word.interfaces.breakupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.BuildingBlockGalleryContentControlUpdateData.range](/javascript/api/word/word.interfaces.buildingblockgallerycontentcontrolupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DatePickerContentControlUpdateData.range](/javascript/api/word/word.interfaces.datepickercontentcontrolupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FieldUpdateData.result](/javascript/api/word/word.interfaces.fieldupdatedata#result-member)
-  \]
-
-  - \[
-  [Word.Interfaces.FrameUpdateData.range](/javascript/api/word/word.interfaces.frameupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.GroupContentControlUpdateData.range](/javascript/api/word/word.interfaces.groupcontentcontrolupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.HyperlinkUpdateData.range](/javascript/api/word/word.interfaces.hyperlinkupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.NoteItemUpdateData.reference](/javascript/api/word/word.interfaces.noteitemupdatedata#reference-member)
-  \]
-
-  - \[
-  [Word.Interfaces.PictureContentControlUpdateData.range](/javascript/api/word/word.interfaces.picturecontentcontrolupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionContentControlUpdateData.range](/javascript/api/word/word.interfaces.repeatingsectioncontentcontrolupdatedata#range-member)
-  \]
-
-  - \[
-  [Word.Interfaces.RepeatingSectionItemUpdateData.range](/javascript/api/word/word.interfaces.repeatingsectionitemupdatedata#range-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -66,8 +20,8 @@ properties:
       Gets the text format of the range. Use this to get and set font name,
       size, color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -83,8 +37,8 @@ properties:
       Specifies the proofing status (spelling and grammar checking) of the
       range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -102,8 +56,8 @@ properties:
       the range. Use a '\#' to separate the address part from the optional
       location part.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -119,8 +73,8 @@ properties:
       Specifies whether Microsoft Word has detected the language of the text in
       the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -134,8 +88,8 @@ properties:
     fullName: languageId
     summary: Specifies a `LanguageId` value that represents the language for the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -246,8 +200,8 @@ properties:
     fullName: languageIdFarEast
     summary: Specifies an East Asian language for the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -360,8 +314,8 @@ properties:
       Specifies a language for the range that isn't classified as an East Asian
       language.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -474,8 +428,8 @@ properties:
       Returns a `ListFormat` object that represents all the list formatting
       characteristics of the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -491,8 +445,8 @@ properties:
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the range.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -511,8 +465,8 @@ properties:
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -529,8 +483,8 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

@@ -7,23 +7,23 @@ summary: >-
   Contains a collection of
   [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.Body.inlinePictures](/javascript/api/word/word.body#inlinepictures-member)
   \]
 
-  - \[
+  -
   [Word.ContentControl.inlinePictures](/javascript/api/word/word.contentcontrol#inlinepictures-member)
   \]
 
-  - \[
+  -
   [Word.Paragraph.inlinePictures](/javascript/api/word/word.paragraph#inlinepictures-member)
   \]
 

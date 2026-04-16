@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.ChartSplitType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartSeries.splitType](/javascript/api/excel/excel.chartseries#splittype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesData.splitType](/javascript/api/excel/excel.interfaces.chartseriesdata#splittype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesUpdateData.splitType](/javascript/api/excel/excel.interfaces.chartseriesupdatedata#splittype-member)
   \]
 
 isPreview: false
@@ -31,27 +23,27 @@ fields:
     uid: excel!Excel.ChartSplitType.splitByCustomSplit:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SplitByCustomSplit"'
   - name: splitByPercentValue
     uid: excel!Excel.ChartSplitType.splitByPercentValue:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SplitByPercentValue"'
   - name: splitByPosition
     uid: excel!Excel.ChartSplitType.splitByPosition:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SplitByPosition"'
   - name: splitByValue
     uid: excel!Excel.ChartSplitType.splitByValue:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SplitByValue"'

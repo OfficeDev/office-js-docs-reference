@@ -5,23 +5,15 @@ package: word!
 fullName: Word.ThemeColorIndex
 summary: Specifies the theme colors for document themes.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ColorFormat.objectThemeColor](/javascript/api/word/word.colorformat#objectthemecolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ColorFormatData.objectThemeColor](/javascript/api/word/word.interfaces.colorformatdata#objectthemecolor-member)
-  \]
-
-  - \[
-  [Word.Interfaces.ColorFormatUpdateData.objectThemeColor](/javascript/api/word/word.interfaces.colorformatupdatedata#objectthemecolor-member)
   \]
 
 isPreview: false
@@ -34,8 +26,8 @@ fields:
       The first accent color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accent1"'
   - name: accent2
     uid: word!Word.ThemeColorIndex.accent2:member
@@ -44,8 +36,8 @@ fields:
       The second accent color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accent2"'
   - name: accent3
     uid: word!Word.ThemeColorIndex.accent3:member
@@ -54,8 +46,8 @@ fields:
       The third accent color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accent3"'
   - name: accent4
     uid: word!Word.ThemeColorIndex.accent4:member
@@ -64,8 +56,8 @@ fields:
       The fourth accent color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accent4"'
   - name: accent5
     uid: word!Word.ThemeColorIndex.accent5:member
@@ -74,8 +66,8 @@ fields:
       The fifth accent color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accent5"'
   - name: accent6
     uid: word!Word.ThemeColorIndex.accent6:member
@@ -84,8 +76,8 @@ fields:
       The sixth accent color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Accent6"'
   - name: background1
     uid: word!Word.ThemeColorIndex.background1:member
@@ -94,8 +86,8 @@ fields:
       The first background color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Background1"'
   - name: background2
     uid: word!Word.ThemeColorIndex.background2:member
@@ -104,8 +96,8 @@ fields:
       The second background color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Background2"'
   - name: hyperlink
     uid: word!Word.ThemeColorIndex.hyperlink:member
@@ -114,8 +106,8 @@ fields:
       The color used for hyperlinks.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hyperlink"'
   - name: hyperlinkFollowed
     uid: word!Word.ThemeColorIndex.hyperlinkFollowed:member
@@ -124,8 +116,8 @@ fields:
       The color used for followed hyperlinks.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"HyperlinkFollowed"'
   - name: mainDark1
     uid: word!Word.ThemeColorIndex.mainDark1:member
@@ -134,8 +126,8 @@ fields:
       The first dark color in the main theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MainDark1"'
   - name: mainDark2
     uid: word!Word.ThemeColorIndex.mainDark2:member
@@ -144,8 +136,8 @@ fields:
       The second dark color in the main theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MainDark2"'
   - name: mainLight1
     uid: word!Word.ThemeColorIndex.mainLight1:member
@@ -154,8 +146,8 @@ fields:
       The first light color in the main theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MainLight1"'
   - name: mainLight2
     uid: word!Word.ThemeColorIndex.mainLight2:member
@@ -164,8 +156,8 @@ fields:
       The second light color in the main theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"MainLight2"'
   - name: notThemeColor
     uid: word!Word.ThemeColorIndex.notThemeColor:member
@@ -174,8 +166,8 @@ fields:
       Not a theme color. Used when the color is not part of the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"NotThemeColor"'
   - name: text1
     uid: word!Word.ThemeColorIndex.text1:member
@@ -184,8 +176,8 @@ fields:
       The first text color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Text1"'
   - name: text2
     uid: word!Word.ThemeColorIndex.text2:member
@@ -194,6 +186,6 @@ fields:
       The second text color in the theme.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Text2"'

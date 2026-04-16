@@ -7,23 +7,15 @@ summary: >-
   Represents the region level of a chart series layout. This only applies to
   region map charts.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.ChartMapOptions.labelStrategy](/javascript/api/excel/excel.chartmapoptions#labelstrategy-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartMapOptionsData.labelStrategy](/javascript/api/excel/excel.interfaces.chartmapoptionsdata#labelstrategy-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy](/javascript/api/excel/excel.interfaces.chartmapoptionsupdatedata#labelstrategy-member)
   \]
 
 isPreview: false
@@ -33,20 +25,20 @@ fields:
     uid: excel!Excel.ChartMapLabelStrategy.bestFit:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BestFit"'
   - name: none
     uid: excel!Excel.ChartMapLabelStrategy.none:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: showAll
     uid: excel!Excel.ChartMapLabelStrategy.showAll:member
     package: excel!
     summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ShowAll"'

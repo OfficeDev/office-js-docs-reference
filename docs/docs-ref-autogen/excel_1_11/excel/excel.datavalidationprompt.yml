@@ -5,23 +5,15 @@ package: excel!
 fullName: Excel.DataValidationPrompt
 summary: Represents the user prompt properties for the data validation.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.DataValidation.prompt](/javascript/api/excel/excel.datavalidation#prompt-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataValidationData.prompt](/javascript/api/excel/excel.interfaces.datavalidationdata#prompt-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.DataValidationUpdateData.prompt](/javascript/api/excel/excel.interfaces.datavalidationupdatedata#prompt-member)
   \]
 
 isPreview: false
@@ -34,8 +26,8 @@ properties:
     fullName: message
     summary: Specifies the message of the prompt.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +43,8 @@ properties:
       Specifies if a prompt is shown when a user selects a cell with data
       validation.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +58,8 @@ properties:
     fullName: title
     summary: Specifies the title for the prompt.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

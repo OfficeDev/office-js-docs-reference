@@ -5,8 +5,8 @@ package: word!
 fullName: Word.BreakType
 summary: Specifies the form of a break.
 remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -37,8 +37,8 @@ fields:
       Line break.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Line"'
   - name: next
     uid: word!Word.BreakType.next:member
@@ -47,8 +47,8 @@ fields:
       Warning: next has been deprecated. Use sectionNext instead.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Next"'
   - name: page
     uid: word!Word.BreakType.page:member
@@ -57,8 +57,8 @@ fields:
       Page break at the insertion point.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Page"'
   - name: sectionContinuous
     uid: word!Word.BreakType.sectionContinuous:member
@@ -67,8 +67,8 @@ fields:
       New section without a corresponding page break.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionContinuous"'
   - name: sectionEven
     uid: word!Word.BreakType.sectionEven:member
@@ -79,8 +79,8 @@ fields:
       next odd-numbered page blank.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionEven"'
   - name: sectionNext
     uid: word!Word.BreakType.sectionNext:member
@@ -89,8 +89,8 @@ fields:
       Section break on next page.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionNext"'
   - name: sectionOdd
     uid: word!Word.BreakType.sectionOdd:member
@@ -101,6 +101,6 @@ fields:
       next even-numbered page blank.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionOdd"'

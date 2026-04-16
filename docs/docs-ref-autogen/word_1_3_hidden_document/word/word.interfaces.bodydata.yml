@@ -4,25 +4,7 @@ uid: word!Word.Interfaces.BodyData:interface
 package: word!
 fullName: Word.Interfaces.BodyData
 summary: An interface describing the data returned by calling `body.toJSON()`<!-- -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.DocumentCreatedData.body](/javascript/api/word/word.interfaces.documentcreateddata#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.DocumentData.body](/javascript/api/word/word.interfaces.documentdata#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.SectionData.body](/javascript/api/word/word.interfaces.sectiondata#body-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellData.body](/javascript/api/word/word.interfaces.tablecelldata#body-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -34,8 +16,8 @@ properties:
     fullName: contentControls
     summary: Gets the collection of rich text content control objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +33,8 @@ properties:
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -68,8 +50,8 @@ properties:
       Gets the collection of `InlinePicture` objects in the body. The collection
       doesn't include floating images.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -83,8 +65,8 @@ properties:
     fullName: lists
     summary: Gets the collection of `List` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +80,8 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
       Important: Paragraphs in tables aren't returned for requirement sets 1.1
@@ -120,8 +102,8 @@ properties:
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -138,8 +120,8 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -257,8 +239,8 @@ properties:
     fullName: tables
     summary: Gets the collection of `Table` objects in the body.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -272,8 +254,8 @@ properties:
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -291,8 +273,8 @@ properties:
       -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
       `noteItem` are supported in WordApi 1.5 and later.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

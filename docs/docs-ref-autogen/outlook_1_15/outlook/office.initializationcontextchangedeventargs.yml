@@ -13,9 +13,8 @@ summary: >-
   spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
   dialog when the `Office.EventType.InitializationContextChanged` event occurs.
 remarks: >-
-  \[ [API set: Mailbox
+  [API set: Mailbox
   1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
 
 
   #### Examples
@@ -62,9 +61,8 @@ properties:
       actionable message, notification message, Smart Alerts dialog, or
       integrated spam-reporting dialog.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +79,8 @@ properties:
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
+      [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

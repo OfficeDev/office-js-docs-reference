@@ -5,20 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartBinOptionsLoadOptions
 summary: Encapsulates the bin options for histogram charts and pareto charts.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions](/javascript/api/excel/excel.interfaces.chartseriescollectionloadoptions#binoptions-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesLoadOptions.binOptions](/javascript/api/excel/excel.interfaces.chartseriesloadoptions#binoptions-member)
-  \]
+  [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -46,8 +34,8 @@ properties:
     fullName: allowOverflow
     summary: Specifies if bin overflow is enabled in a histogram chart or pareto chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -63,8 +51,8 @@ properties:
       Specifies if bin underflow is enabled in a histogram chart or pareto
       chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -78,8 +66,8 @@ properties:
     fullName: count
     summary: Specifies the bin count of a histogram chart or pareto chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -93,8 +81,8 @@ properties:
     fullName: overflowValue
     summary: Specifies the bin overflow value of a histogram chart or pareto chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -108,8 +96,8 @@ properties:
     fullName: type
     summary: Specifies the bin's type for a histogram chart or pareto chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -123,8 +111,8 @@ properties:
     fullName: underflowValue
     summary: Specifies the bin underflow value of a histogram chart or pareto chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -138,8 +126,8 @@ properties:
     fullName: width
     summary: Specifies the bin width value of a histogram chart or pareto chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

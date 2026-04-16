@@ -5,28 +5,8 @@ package: excel!
 fullName: Excel.Interfaces.ChartLineFormatLoadOptions
 summary: Encapsulates the formatting options for line elements.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Used by
-
-
-  - \[
-  [Excel.Interfaces.ChartAxisFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.chartaxisformatloadoptions#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartGridlinesFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.chartgridlinesformatloadoptions#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartSeriesFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.chartseriesformatloadoptions#line-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.ChartTrendlineFormatLoadOptions.line](/javascript/api/excel/excel.interfaces.charttrendlineformatloadoptions#line-member)
-  \]
+  [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -54,8 +34,8 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -69,8 +49,8 @@ properties:
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -84,8 +64,8 @@ properties:
     fullName: weight
     summary: Represents weight of the line, in points.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

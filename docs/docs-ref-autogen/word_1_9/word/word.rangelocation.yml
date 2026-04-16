@@ -8,8 +8,8 @@ summary: >-
   different objects such as [Word.Paragraph](xref:word!Word.Paragraph:class) and
   [Word.ContentControl](xref:word!Word.ContentControl:class)<!-- -->.
 remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Examples
@@ -61,8 +61,8 @@ fields:
       characters.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"After"'
   - name: before
     uid: word!Word.RangeLocation.before:member
@@ -71,8 +71,8 @@ fields:
       For content control only. It's the point before the opening tag.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Before"'
   - name: content
     uid: word!Word.RangeLocation.content:member
@@ -81,8 +81,8 @@ fields:
       The range between `start` and `end`<!-- -->.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Content"'
   - name: end
     uid: word!Word.RangeLocation.end:member
@@ -93,8 +93,8 @@ fields:
       closing tag.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"End"'
   - name: start
     uid: word!Word.RangeLocation.start:member
@@ -104,8 +104,8 @@ fields:
       after the opening tag.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Start"'
   - name: whole
     uid: word!Word.RangeLocation.whole:member
@@ -116,6 +116,6 @@ fields:
       control are also included.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Whole"'

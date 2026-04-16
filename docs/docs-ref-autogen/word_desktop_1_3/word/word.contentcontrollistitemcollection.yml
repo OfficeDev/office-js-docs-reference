@@ -9,19 +9,19 @@ summary: >-
   objects that represent the items in a dropdown list or combo box content
   control.
 remarks: >-
-  \[ [API set: WordApi
-  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApi
+  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ComboBoxContentControl.listItems](/javascript/api/word/word.comboboxcontentcontrol#listitems-member)
   \]
 
-  - \[
+  -
   [Word.DropDownListContentControl.listItems](/javascript/api/word/word.dropdownlistcontentcontrol#listitems-member)
   \]
 
@@ -111,8 +111,8 @@ methods:
       Gets the first list item in this collection. Throws an `ItemNotFound`
       error if this collection is empty.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +133,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

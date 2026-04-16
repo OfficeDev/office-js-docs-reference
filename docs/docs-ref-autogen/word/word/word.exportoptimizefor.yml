@@ -5,23 +5,23 @@ package: word!
 fullName: Word.ExportOptimizeFor
 summary: Specifies the optimization target for document export.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.DocumentExportAsFixedFormat2Options.optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#optimizefor-member)
   \]
 
-  - \[
+  -
   [Word.DocumentExportAsFixedFormat3Options.optimizeFor](/javascript/api/word/word.documentexportasfixedformat3options#optimizefor-member)
   \]
 
-  - \[
+  -
   [Word.DocumentExportAsFixedFormatOptions.optimizeFor](/javascript/api/word/word.documentexportasfixedformatoptions#optimizefor-member)
   \]
 
@@ -64,8 +64,8 @@ fields:
       Optimizes for on-screen display.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OnScreen"'
   - name: print
     uid: word!Word.ExportOptimizeFor.print:member
@@ -74,6 +74,6 @@ fields:
       Optimizes for print.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Print"'

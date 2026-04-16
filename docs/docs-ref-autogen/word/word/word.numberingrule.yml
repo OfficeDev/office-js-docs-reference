@@ -5,22 +5,14 @@ package: word!
 fullName: Word.NumberingRule
 summary: Specifies the numbering rule to apply.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Word.Interfaces.LineNumberingData.restartMode](/javascript/api/word/word.interfaces.linenumberingdata#restartmode-member)
-  \]
-
-  - \[
-  [Word.Interfaces.LineNumberingUpdateData.restartMode](/javascript/api/word/word.interfaces.linenumberingupdatedata#restartmode-member)
-  \]
-
-  - \[
+  -
   [Word.LineNumbering.restartMode](/javascript/api/word/word.linenumbering#restartmode-member)
   \]
 
@@ -34,8 +26,8 @@ fields:
       Restart numbering continuously.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RestartContinuous"'
   - name: restartPage
     uid: word!Word.NumberingRule.restartPage:member
@@ -44,8 +36,8 @@ fields:
       Restart numbering at the beginning of each page.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RestartPage"'
   - name: restartSection
     uid: word!Word.NumberingRule.restartSection:member
@@ -54,6 +46,6 @@ fields:
       Restart numbering at the beginning of each section.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"RestartSection"'

@@ -9,8 +9,8 @@ summary: >-
   currencies defined by service data providers, such as Bing or Power BI, or
   linked entity data domains defined by Office Add-ins.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   This class isn't supported in Excel on the web.
@@ -19,7 +19,7 @@ remarks: >-
   #### Used by
 
 
-  - \[
+  -
   [Excel.Workbook.linkedEntityDataDomains](/javascript/api/excel/excel.workbook#linkedentitydatadomains-member)
   \]
 
@@ -65,9 +65,8 @@ methods:
       the collection. Once the linked entity data domain is added, it can be
       used to create `LinkedEntityCellValue` objects.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -93,9 +92,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of linked entity data domains in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -113,9 +111,8 @@ methods:
     fullName: getItem(id)
     summary: Gets a linked entity data domain by its `id`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -140,9 +137,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a linked entity data domain by its index in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -164,9 +160,8 @@ methods:
     fullName: getItemByName(name)
     summary: Gets a linked entity data domain by its `name`<!-- -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -198,9 +193,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -231,9 +225,8 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -339,9 +332,8 @@ methods:
       domains in this collection. The refresh request can fail if the data
       providers are busy or temporarily inaccessible.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This method isn't supported in Excel on the web.
@@ -387,9 +379,8 @@ events:
     fullName: onLinkedEntityDataDomainAdded
     summary: Occurs when a new linked entity data domain is added to the workbook.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This event isn't supported in Excel on the web.
@@ -413,9 +404,8 @@ events:
       Occurs when the request to refresh `LinkedEntityCellValue` objects of a
       linked entity data domain is completed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This event isn't supported in Excel on the web.
@@ -437,9 +427,8 @@ events:
     fullName: onRefreshModeChanged
     summary: Occurs when the `refreshMode` of a linked entity data domain is changed.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       This event isn't supported in Excel on the web.

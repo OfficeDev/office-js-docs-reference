@@ -7,19 +7,19 @@ summary: >-
   Provides information about the worksheet that raised the selection changed
   event.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Worksheet.onSelectionChanged](/javascript/api/excel/excel.worksheet#onselectionchanged-member)
   \]
 
-  - \[
+  -
   [Excel.WorksheetCollection.onSelectionChanged](/javascript/api/excel/excel.worksheetcollection#onselectionchanged-member)
   \]
 
@@ -66,8 +66,8 @@ properties:
       Gets the range address that represents the selected area of a specific
       worksheet.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -81,8 +81,8 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -96,8 +96,8 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the selection changed.
     remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

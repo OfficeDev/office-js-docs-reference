@@ -5,15 +5,14 @@ package: visio!
 fullName: Visio.PageView
 summary: Represents the PageView class.
 remarks: >-
-  \[ [API set:
+  [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
 
 
   #### Used by
 
 
-  - \[ [Visio.Page.view](/javascript/api/visio/visio.page#view-member) \]
+  - [Visio.Page.view](/javascript/api/visio/visio.page#view-member) \]
 
 isPreview: false
 isDeprecated: false
@@ -42,9 +41,8 @@ properties:
       Get and set Page's Zoom level. The value can be between 10 and 400 and
       denotes the percentage of zoom.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -80,9 +78,8 @@ methods:
       Pans the Visio drawing to place the specified shape in the center of the
       view.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
 
       #### Examples
@@ -121,9 +118,8 @@ methods:
     fullName: fitToWindow()
     summary: Fit Page to current window.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +136,8 @@ methods:
       Returns the position object that specifies the position of the page in the
       view.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -159,9 +154,8 @@ methods:
     fullName: getSelection()
     summary: Represents the Selection in the page.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -176,9 +170,8 @@ methods:
     fullName: isShapeInViewport(Shape)
     summary: To check if the shape is in view of the page or not.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -326,9 +319,8 @@ methods:
     fullName: setPosition(Position)
     summary: Sets the position of the page in the view.
     remarks: >-
-      \[ [API set:
+      [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
 
     isPreview: false
     isDeprecated: false

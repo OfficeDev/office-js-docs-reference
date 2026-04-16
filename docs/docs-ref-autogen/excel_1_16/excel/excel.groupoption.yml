@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.GroupOption
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Examples
@@ -44,9 +44,8 @@ fields:
       Group by columns.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ByColumns"'
   - name: byRows
     uid: excel!Excel.GroupOption.byRows:member
@@ -55,7 +54,6 @@ fields:
       Group by rows.
 
 
-      * \[ [API set: ExcelApi
+      * [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
     value: '"ByRows"'

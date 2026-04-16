@@ -5,8 +5,8 @@ package: office-runtime!
 fullName: OfficeRuntime.Storage
 summary: Asynchronous, global, and persistent key-value storage.
 remarks: >-
-  \[ [API set: SharedRuntime 1.1, Mailbox
-  1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  [API set: SharedRuntime 1.1, Mailbox
+  1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
   This interface is available in the [SharedRuntime 1.1 requirement
@@ -37,8 +37,8 @@ methods:
       Retrieves an item from storage based on its key. Returns a Promise. In the
       event the Promise does not resolve, returns null.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement
@@ -96,8 +96,8 @@ methods:
       Retrieves multiple items from storage based on their key. Returns a
       Promise. In the event the Promise does not resolve, returns null.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement
@@ -156,8 +156,8 @@ methods:
     fullName: getKeys()
     summary: Retrieves an array of all keys from storage. Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement
@@ -208,8 +208,8 @@ methods:
     fullName: removeItem(key)
     summary: Removes an item from storage based on its key. Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement
@@ -267,8 +267,8 @@ methods:
     fullName: removeItems(keys)
     summary: Removes multiple items from storage. Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement
@@ -320,8 +320,8 @@ methods:
       Sets a key-value pair into storage or updates an existing key-value pair.
       Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement
@@ -377,8 +377,8 @@ methods:
       Sets multiple items into storage or updates multiple items within storage.
       Returns a Promise.
     remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: SharedRuntime 1.1, Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office)
 
 
       This method is available in the [SharedRuntime 1.1 requirement

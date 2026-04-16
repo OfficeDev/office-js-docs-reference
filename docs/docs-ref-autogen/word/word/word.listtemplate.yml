@@ -5,23 +5,23 @@ package: word!
 fullName: Word.ListTemplate
 summary: Represents a list template.
 remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
 
   #### Used by
 
 
-  - \[
+  -
   [Word.ListFormat.listTemplate](/javascript/api/word/word.listformat#listtemplate-member)
   \]
 
-  - \[
+  -
   [Word.ListTemplateCollection.items](/javascript/api/word/word.listtemplatecollection#items-member)
   \]
 
-  - \[
+  -
   [Word.Style.listTemplate](/javascript/api/word/word.style#listtemplate-member)
   \]
 
@@ -94,8 +94,8 @@ properties:
       Gets a `ListLevelCollection` object that represents all the levels for the
       list template.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -109,8 +109,8 @@ properties:
     fullName: name
     summary: Specifies the name of the list template.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -124,8 +124,8 @@ properties:
     fullName: outlineNumbered
     summary: Specifies whether the list template is outline numbered.
     remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false

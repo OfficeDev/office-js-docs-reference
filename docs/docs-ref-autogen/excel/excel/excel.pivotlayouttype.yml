@@ -5,22 +5,14 @@ package: excel!
 fullName: Excel.PivotLayoutType
 summary: ''
 remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
-  [Excel.Interfaces.PivotLayoutData.layoutType](/javascript/api/excel/excel.interfaces.pivotlayoutdata#layouttype-member)
-  \]
-
-  - \[
-  [Excel.Interfaces.PivotLayoutUpdateData.layoutType](/javascript/api/excel/excel.interfaces.pivotlayoutupdatedata#layouttype-member)
-  \]
-
-  - \[
+  -
   [Excel.PivotLayout.layoutType](/javascript/api/excel/excel.pivotlayout#layouttype-member)
   \]
 
@@ -35,8 +27,8 @@ fields:
       column.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Compact"'
   - name: outline
     uid: excel!Excel.PivotLayoutType.outline:member
@@ -46,8 +38,8 @@ fields:
       are always on the bottom.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Outline"'
   - name: tabular
     uid: excel!Excel.PivotLayoutType.tabular:member
@@ -57,6 +49,6 @@ fields:
       items.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Tabular"'

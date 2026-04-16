@@ -5,18 +5,18 @@ package: excel!
 fullName: Excel.CommentCollection
 summary: Represents a collection of comment objects that are part of the workbook.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  [API set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
 
-  - \[
+  -
   [Excel.Workbook.comments](/javascript/api/excel/excel.workbook#comments-member)
   \]
 
-  - \[
+  -
   [Excel.Worksheet.comments](/javascript/api/excel/excel.worksheet#comments-member)
   \]
 
@@ -62,9 +62,8 @@ methods:
       `InvalidArgument` error is thrown if the provided range is larger than one
       cell.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -127,9 +126,8 @@ methods:
       `InvalidArgument` error is thrown if the provided range is larger than one
       cell.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -169,9 +167,8 @@ methods:
     fullName: getCount()
     summary: Gets the number of comments in the collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +183,8 @@ methods:
     fullName: getItem(commentId)
     summary: Gets a comment from the collection based on its ID.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -207,9 +203,8 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a comment from the collection based on its position.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -230,9 +225,8 @@ methods:
       Gets the comment from the specified cell. If there is no comment in the
       cell, an error is thrown.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -255,9 +249,8 @@ methods:
     fullName: getItemByReplyId(replyId)
     summary: Gets the comment to which the given reply is connected.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -374,9 +367,8 @@ events:
     fullName: onAdded
     summary: Occurs when the comments are added.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -445,9 +437,8 @@ events:
       Occurs when comments or replies in a comment collection are changed,
       including when replies are deleted.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples
@@ -514,9 +505,8 @@ events:
     fullName: onDeleted
     summary: Occurs when comments are deleted in the comment collection.
     remarks: >-
-      \[ [API set: ExcelApi
+      [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
 
 
       #### Examples

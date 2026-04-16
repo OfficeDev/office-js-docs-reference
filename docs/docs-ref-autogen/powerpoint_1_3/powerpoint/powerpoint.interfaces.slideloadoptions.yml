@@ -5,9 +5,8 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLoadOptions
 summary: Represents a single slide of a presentation.
 remarks: >-
-  \[ [API set: PowerPointApi
+  [API set: PowerPointApi
   1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +34,8 @@ properties:
     fullName: id
     summary: Gets the unique ID of the slide.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +49,8 @@ properties:
     fullName: layout
     summary: Gets the layout of the slide.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +67,8 @@ properties:
     fullName: slideMaster
     summary: Gets the `SlideMaster` object that represents the slide's default content.
     remarks: >-
-      \[ [API set: PowerPointApi
+      [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
 
     isPreview: false
     isDeprecated: false

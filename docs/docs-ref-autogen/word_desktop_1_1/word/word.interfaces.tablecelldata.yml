@@ -6,21 +6,7 @@ fullName: Word.Interfaces.TableCellData
 summary: >-
   An interface describing the data returned by calling `tableCell.toJSON()`<!--
   -->.
-remarks: >-
-  #### Used by
-
-
-  - \[
-  [Word.Interfaces.TableCellCollectionData.items](/javascript/api/word/word.interfaces.tablecellcollectiondata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableCellCollectionUpdateData.items](/javascript/api/word/word.interfaces.tablecellcollectionupdatedata#items-member)
-  \]
-
-  - \[
-  [Word.Interfaces.TableRowData.cells](/javascript/api/word/word.interfaces.tablerowdata#cells-member)
-  \]
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -32,8 +18,8 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -47,8 +33,8 @@ properties:
     fullName: cellIndex
     summary: Gets the index of the cell in its row.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -64,8 +50,8 @@ properties:
       Specifies the width of the cell's column in points. This is applicable to
       uniform tables.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -82,8 +68,8 @@ properties:
       `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
       -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -101,8 +87,8 @@ properties:
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -118,8 +104,8 @@ properties:
       Specifies the shading color of the cell. Color is specified in "\#RRGGBB"
       format or by using the color name.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -133,8 +119,8 @@ properties:
     fullName: value
     summary: Specifies the text of the cell.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -150,8 +136,8 @@ properties:
       Specifies the vertical alignment of the cell. The value can be `top`<!--
       -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
@@ -169,8 +155,8 @@ properties:
     fullName: width
     summary: Gets the width of the cell in points.
     remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      [API set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
     isPreview: false
     isDeprecated: false
