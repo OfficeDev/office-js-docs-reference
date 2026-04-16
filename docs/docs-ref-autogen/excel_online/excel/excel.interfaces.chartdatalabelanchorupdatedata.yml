@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartDataLabelAnchorUpdateData
 summary: >-
   An interface for updating data on the `ChartDataLabelAnchor` object, for use
   in `chartDataLabelAnchor.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartDataLabelAnchor.set](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-set-member(1))
 
 isPreview: false
 isDeprecated: false

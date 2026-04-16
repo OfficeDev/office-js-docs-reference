@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.ContentControl.datePickerContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-datepickercontentcontrol-member)
 
+  - [Word.DatePickerContentControl.load](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-load-member(1))
+
+  - [Word.DatePickerContentControl.set](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-set-member(2))
+
+  - [Word.DatePickerContentControl.track](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-track-member(1))
+
+  - [Word.DatePickerContentControl.untrack](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

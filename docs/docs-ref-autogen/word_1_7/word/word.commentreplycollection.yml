@@ -18,6 +18,12 @@ remarks: >-
 
   - [Word.Comment.replies](/javascript/api/word/word.comment#word-word-comment-replies-member)
 
+  - [Word.CommentReplyCollection.load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
+
+  - [Word.CommentReplyCollection.track](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-track-member(1))
+
+  - [Word.CommentReplyCollection.untrack](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-untrack-member(1))
+
   #### Examples
 
 

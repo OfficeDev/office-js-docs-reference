@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PivotFieldUpdateData
 summary: >-
   An interface for updating data on the `PivotField` object, for use in
   `pivotField.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PivotField.set](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-set-member(1))
 
 isPreview: false
 isDeprecated: false

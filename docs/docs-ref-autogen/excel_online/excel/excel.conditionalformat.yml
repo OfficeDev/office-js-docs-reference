@@ -17,6 +17,18 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ConditionalFormat.load](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-load-member(1))
+
+  - [Excel.ConditionalFormat.set](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-set-member(2))
+
+  - [Excel.ConditionalFormatCollection.add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1))
+
+  - [Excel.ConditionalFormatCollection.getItem](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitem-member(1))
+
+  - [Excel.ConditionalFormatCollection.getItemAt](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemat-member(1))
+
+  - [Excel.ConditionalFormatCollection.getItemOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemornullobject-member(1))
+
   - [Excel.ConditionalFormatCollection.items](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-items-member)
 
 isPreview: false

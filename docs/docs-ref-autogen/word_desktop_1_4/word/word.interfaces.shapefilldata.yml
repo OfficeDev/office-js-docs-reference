@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShapeFillData
 summary: >-
   An interface describing the data returned by calling `shapeFill.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShapeFill.toJSON](/javascript/api/word/word.shapefill#word-word-shapefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

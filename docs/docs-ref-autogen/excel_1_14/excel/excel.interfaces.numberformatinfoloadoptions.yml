@@ -10,6 +10,12 @@ remarks: >-
   [API set: ExcelApi
   1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.NumberFormatInfo.load](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

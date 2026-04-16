@@ -14,6 +14,14 @@ remarks: >-
   #### Used by
 
 
+  - [Word.View.load](/javascript/api/word/word.view#word-word-view-load-member(1))
+
+  - [Word.View.set](/javascript/api/word/word.view#word-word-view-set-member(2))
+
+  - [Word.View.track](/javascript/api/word/word.view#word-word-view-track-member(1))
+
+  - [Word.View.untrack](/javascript/api/word/word.view#word-word-view-untrack-member(1))
+
   - [Word.Window.view](/javascript/api/word/word.window#word-word-window-view-member)
 
 isPreview: false

@@ -27,6 +27,14 @@ remarks: >-
 
   - [Word.PictureContentControl.xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
 
+  - [Word.XmlMapping.load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1))
+
+  - [Word.XmlMapping.set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(2))
+
+  - [Word.XmlMapping.track](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-track-member(1))
+
+  - [Word.XmlMapping.untrack](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -14,6 +14,10 @@ remarks: >-
 
   - [Visio.DataRefreshCompleteEventArgs.document](/javascript/api/visio/visio.datarefreshcompleteeventargs#visio-visio-datarefreshcompleteeventargs-document-member)
 
+  - [Visio.Document.load](/javascript/api/visio/visio.document#visio-visio-document-load-member(1))
+
+  - [Visio.Document.set](/javascript/api/visio/visio.document#visio-visio-document-set-member(2))
+
   - [Visio.RequestContext.document](/javascript/api/visio/visio.requestcontext#visio-visio-requestcontext-document-member)
 
 isPreview: false

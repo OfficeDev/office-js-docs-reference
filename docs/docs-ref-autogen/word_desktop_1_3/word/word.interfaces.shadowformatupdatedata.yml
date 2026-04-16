@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShadowFormatUpdateData
 summary: >-
   An interface for updating data on the `ShadowFormat` object, for use in
   `shadowFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShadowFormat.set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

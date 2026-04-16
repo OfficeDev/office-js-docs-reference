@@ -12,6 +12,13 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.SlideBackgroundFill.setSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setsolidfill-member(1))
+
   #### Examples
 
 

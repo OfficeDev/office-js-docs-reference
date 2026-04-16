@@ -13,6 +13,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Filter.applyDynamicFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applydynamicfilter-member(1))
+
   - [Excel.FilterCriteria.dynamicCriteria](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-dynamiccriteria-member)
 
   #### Examples

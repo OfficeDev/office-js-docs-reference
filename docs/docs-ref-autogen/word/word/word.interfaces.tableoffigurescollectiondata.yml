@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableOfFiguresCollectionData
 summary: >-
   An interface describing the data returned by calling
   `tableOfFiguresCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableOfFiguresCollection.toJSON](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

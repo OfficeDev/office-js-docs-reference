@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeFormatUpdateData
 summary: >-
   An interface for updating data on the `RangeFormat` object, for use in
   `rangeFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeFormat.set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

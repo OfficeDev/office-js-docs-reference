@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalRangeFillUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeFill` object, for use
   in `conditionalRangeFill.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalRangeFill.set](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-set-member(1))
 
 isPreview: false
 isDeprecated: false

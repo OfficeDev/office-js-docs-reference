@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.Chart.format](/javascript/api/excel/excel.chart#excel-excel-chart-format-member)
 
+  - [Excel.ChartAreaFormat.load](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-load-member(1))
+
+  - [Excel.ChartAreaFormat.set](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

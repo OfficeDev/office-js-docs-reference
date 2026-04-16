@@ -9,6 +9,15 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.Presentation.getSelectedSlides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedslides-member(1))
+
+  - [PowerPoint.SlideScopedCollection.load](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-load-member(1))
+
   #### Examples
 
 

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.WorksheetCollectionData
 summary: >-
   An interface describing the data returned by calling
   `worksheetCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.WorksheetCollection.toJSON](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

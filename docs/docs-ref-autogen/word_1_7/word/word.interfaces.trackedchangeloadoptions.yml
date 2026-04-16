@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.TrackedChange.load](/javascript/api/word/word.trackedchange#word-word-trackedchange-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.OutlineData
 summary: >-
   An interface describing the data returned by calling `outline.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Outline.toJSON](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

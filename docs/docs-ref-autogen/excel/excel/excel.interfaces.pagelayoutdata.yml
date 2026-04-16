@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PageLayoutData
 summary: >-
   An interface describing the data returned by calling `pageLayout.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PageLayout.toJSON](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

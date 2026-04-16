@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartTrendlineUpdateData
 summary: >-
   An interface for updating data on the `ChartTrendline` object, for use in
   `chartTrendline.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartTrendline.set](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-set-member(1))
 
 isPreview: false
 isDeprecated: false

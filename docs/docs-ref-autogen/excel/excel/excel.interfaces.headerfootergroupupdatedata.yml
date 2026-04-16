@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
 summary: >-
   An interface for updating data on the `HeaderFooterGroup` object, for use in
   `headerFooterGroup.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.HeaderFooterGroup.set](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-set-member(1))
 
 isPreview: false
 isDeprecated: false

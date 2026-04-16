@@ -11,6 +11,15 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Shape.scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1))
+
+  - [Word.Shape.scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
+
   #### Examples
 
 

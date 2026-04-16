@@ -8,6 +8,12 @@ remarks: >-
   [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.Table.load](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

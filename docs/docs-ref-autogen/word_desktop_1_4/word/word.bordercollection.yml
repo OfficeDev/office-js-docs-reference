@@ -13,6 +13,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.BorderCollection.load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(1))
+
+  - [Word.BorderCollection.track](/javascript/api/word/word.bordercollection#word-word-bordercollection-track-member(1))
+
+  - [Word.BorderCollection.untrack](/javascript/api/word/word.bordercollection#word-word-bordercollection-untrack-member(1))
+
   - [Word.Style.borders](/javascript/api/word/word.style#word-word-style-borders-member)
 
   #### Examples

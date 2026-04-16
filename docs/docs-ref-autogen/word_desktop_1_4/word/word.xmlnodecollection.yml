@@ -14,9 +14,19 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Document.selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
+
   - [Word.XmlNode.attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member)
 
   - [Word.XmlNode.childNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-childnodes-member)
+
+  - [Word.XmlNode.selectNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))
+
+  - [Word.XmlNodeCollection.load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1))
+
+  - [Word.XmlNodeCollection.track](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-track-member(1))
+
+  - [Word.XmlNodeCollection.untrack](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

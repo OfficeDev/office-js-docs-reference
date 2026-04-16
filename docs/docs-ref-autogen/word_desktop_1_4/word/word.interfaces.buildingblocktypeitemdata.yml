@@ -6,7 +6,11 @@ fullName: Word.Interfaces.BuildingBlockTypeItemData
 summary: >-
   An interface describing the data returned by calling
   `buildingBlockTypeItem.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.BuildingBlockTypeItem.toJSON](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

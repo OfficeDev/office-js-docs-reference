@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.SlideMasterData
 summary: >-
   An interface describing the data returned by calling
   `slideMaster.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.SlideMaster.toJSON](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

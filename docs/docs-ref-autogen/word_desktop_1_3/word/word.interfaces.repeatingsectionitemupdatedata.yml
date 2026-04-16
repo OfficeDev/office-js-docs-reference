@@ -6,7 +6,11 @@ fullName: Word.Interfaces.RepeatingSectionItemUpdateData
 summary: >-
   An interface for updating data on the `RepeatingSectionItem` object, for use
   in `repeatingSectionItem.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.RepeatingSectionItem.set](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-set-member(1))
 
 isPreview: false
 isDeprecated: false

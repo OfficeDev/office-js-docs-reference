@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.Application.newObject](/javascript/api/powerpoint/powerpoint.application.newobject:member)
+
   - [PowerPoint.RequestContext.application](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-application-member)
 
 isPreview: false

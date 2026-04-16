@@ -13,6 +13,12 @@ remarks: >-
 
   This interface isn't supported in Excel on the web.
 
+
+  #### Used by
+
+
+  - [Excel.LinkedEntityDataDomainCollection.add](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-add-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

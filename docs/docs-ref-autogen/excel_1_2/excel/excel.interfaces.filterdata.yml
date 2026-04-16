@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.FilterData
 summary: >-
   An interface describing the data returned by calling `filter.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Filter.toJSON](/javascript/api/excel/excel.filter#excel-excel-filter-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

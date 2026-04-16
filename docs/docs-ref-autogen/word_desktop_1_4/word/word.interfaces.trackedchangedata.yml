@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TrackedChangeData
 summary: >-
   An interface describing the data returned by calling
   `trackedChange.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TrackedChange.toJSON](/javascript/api/word/word.trackedchange#word-word-trackedchange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

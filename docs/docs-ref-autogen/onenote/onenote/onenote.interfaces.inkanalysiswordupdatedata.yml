@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
 summary: >-
   An interface for updating data on the `InkAnalysisWord` object, for use in
   `inkAnalysisWord.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.InkAnalysisWord.set](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-set-member(1))
 
 isPreview: false
 isDeprecated: false

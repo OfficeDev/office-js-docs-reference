@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.ShapeTextWrap.load](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

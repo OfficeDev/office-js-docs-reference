@@ -9,6 +9,15 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.CommentCollection.add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+
+  - [Excel.CommentReplyCollection.add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+
   #### Examples
 
 

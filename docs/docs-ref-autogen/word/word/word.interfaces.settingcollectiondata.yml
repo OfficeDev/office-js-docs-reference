@@ -6,7 +6,11 @@ fullName: Word.Interfaces.SettingCollectionData
 summary: >-
   An interface describing the data returned by calling
   `settingCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.SettingCollection.toJSON](/javascript/api/word/word.settingcollection#word-word-settingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -18,27 +18,55 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Body.insertContentControl](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))
+
   - [Word.Body.parentContentControl](/javascript/api/word/word.body#word-word-body-parentcontentcontrol-member)
 
   - [Word.Body.parentContentControlOrNullObject](/javascript/api/word/word.body#word-word-body-parentcontentcontrolornullobject-member)
+
+  - [Word.ContentControl.load](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-load-member(1))
 
   - [Word.ContentControl.parentContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrol-member)
 
   - [Word.ContentControl.parentContentControlOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrolornullobject-member)
 
+  - [Word.ContentControl.set](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-set-member(2))
+
+  - [Word.ContentControl.track](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-track-member(1))
+
+  - [Word.ContentControl.untrack](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-untrack-member(1))
+
+  - [Word.ContentControlCollection.getById](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyid-member(1))
+
+  - [Word.ContentControlCollection.getByIdOrNullObject](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyidornullobject-member(1))
+
+  - [Word.ContentControlCollection.getFirst](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getfirst-member(1))
+
+  - [Word.ContentControlCollection.getFirstOrNullObject](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getfirstornullobject-member(1))
+
+  - [Word.ContentControlCollection.getItem](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getitem-member(1))
+
   - [Word.ContentControlCollection.items](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-items-member)
+
+  - [Word.InlinePicture.insertContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1))
 
   - [Word.InlinePicture.parentContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrol-member)
 
   - [Word.InlinePicture.parentContentControlOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrolornullobject-member)
 
+  - [Word.Paragraph.insertContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))
+
   - [Word.Paragraph.parentContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrol-member)
 
   - [Word.Paragraph.parentContentControlOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrolornullobject-member)
 
+  - [Word.Range.insertContentControl](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))
+
   - [Word.Range.parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)
 
   - [Word.Range.parentContentControlOrNullObject](/javascript/api/word/word.range#word-word-range-parentcontentcontrolornullobject-member)
+
+  - [Word.Table.insertContentControl](/javascript/api/word/word.table#word-word-table-insertcontentcontrol-member(1))
 
   - [Word.Table.parentContentControl](/javascript/api/word/word.table#word-word-table-parentcontentcontrol-member)
 

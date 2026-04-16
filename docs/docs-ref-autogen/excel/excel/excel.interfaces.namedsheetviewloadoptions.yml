@@ -12,6 +12,12 @@ remarks: >-
   [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.NamedSheetView.load](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

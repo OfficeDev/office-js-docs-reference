@@ -12,6 +12,14 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.RangeBorder.load](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-load-member(1))
+
+  - [Excel.RangeBorder.set](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-set-member(2))
+
+  - [Excel.RangeBorderCollection.getItem](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitem-member(1))
+
+  - [Excel.RangeBorderCollection.getItemAt](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitemat-member(1))
+
   - [Excel.RangeBorderCollection.items](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-items-member)
 
 isPreview: false

@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.SectionData
 summary: >-
   An interface describing the data returned by calling `section.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Section.toJSON](/javascript/api/onenote/onenote.section#onenote-onenote-section-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

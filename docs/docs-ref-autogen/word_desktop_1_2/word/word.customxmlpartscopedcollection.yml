@@ -12,6 +12,19 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.CustomXmlPartCollection.getByNamespace](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getbynamespace-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.track](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-track-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.untrack](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-untrack-member(1))
+
   #### Examples
 
 

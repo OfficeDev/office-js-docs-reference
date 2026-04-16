@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.Document.tablesOfFigures](/javascript/api/word/word.document#word-word-document-tablesoffigures-member)
 
+  - [Word.TableOfFiguresCollection.load](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-load-member(1))
+
+  - [Word.TableOfFiguresCollection.track](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-track-member(1))
+
+  - [Word.TableOfFiguresCollection.untrack](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

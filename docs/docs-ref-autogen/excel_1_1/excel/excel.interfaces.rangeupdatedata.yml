@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeUpdateData
 summary: >-
   An interface for updating data on the `Range` object, for use in `range.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Range.set](/javascript/api/excel/excel.range#excel-excel-range-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -4,7 +4,11 @@ uid: powerpoint!PowerPoint.Interfaces.TableData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.Table.toJSON](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

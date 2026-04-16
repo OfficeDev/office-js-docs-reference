@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.BuildingBlockCategory.buildingBlocks](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-buildingblocks-member)
 
+  - [Word.BuildingBlockCollection.load](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-load-member(1))
+
+  - [Word.BuildingBlockCollection.track](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-track-member(1))
+
+  - [Word.BuildingBlockCollection.untrack](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -8,6 +8,14 @@ remarks: >-
   [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
 
+
+  #### Used by
+
+
+  - [Visio.PageView.getPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-getposition-member(1))
+
+  - [Visio.PageView.setPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-setposition-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

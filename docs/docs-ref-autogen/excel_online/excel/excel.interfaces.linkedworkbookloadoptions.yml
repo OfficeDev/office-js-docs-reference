@@ -12,6 +12,12 @@ remarks: >-
   [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.LinkedWorkbook.load](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

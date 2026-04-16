@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.InkAnalysisLineCollectionData
 summary: >-
   An interface describing the data returned by calling
   `inkAnalysisLineCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.InkAnalysisLineCollection.toJSON](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartFontData
 summary: >-
   An interface describing the data returned by calling `chartFont.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartFont.toJSON](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ReflectionFormatData
 summary: >-
   An interface describing the data returned by calling
   `reflectionFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ReflectionFormat.toJSON](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

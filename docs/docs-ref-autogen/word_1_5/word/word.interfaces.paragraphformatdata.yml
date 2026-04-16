@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ParagraphFormatData
 summary: >-
   An interface describing the data returned by calling
   `paragraphFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ParagraphFormat.toJSON](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

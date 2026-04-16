@@ -13,6 +13,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ComboBoxContentControl.load](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-load-member(1))
+
+  - [Word.ComboBoxContentControl.track](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-track-member(1))
+
+  - [Word.ComboBoxContentControl.untrack](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-untrack-member(1))
+
   - [Word.ContentControl.comboBoxContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-comboboxcontentcontrol-member)
 
   #### Examples

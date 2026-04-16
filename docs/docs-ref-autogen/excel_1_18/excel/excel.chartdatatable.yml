@@ -8,6 +8,18 @@ remarks: >-
   [API set: ExcelApi
   1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Chart.getDataTable](/javascript/api/excel/excel.chart#excel-excel-chart-getdatatable-member(1))
+
+  - [Excel.Chart.getDataTableOrNullObject](/javascript/api/excel/excel.chart#excel-excel-chart-getdatatableornullobject-member(1))
+
+  - [Excel.ChartDataTable.load](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-load-member(1))
+
+  - [Excel.ChartDataTable.set](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

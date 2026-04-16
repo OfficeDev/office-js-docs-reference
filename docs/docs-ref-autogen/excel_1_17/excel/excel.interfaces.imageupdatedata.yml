@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ImageUpdateData
 summary: >-
   An interface for updating data on the `Image` object, for use in `image.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Image.set](/javascript/api/excel/excel.image#excel-excel-image-set-member(1))
 
 isPreview: false
 isDeprecated: false

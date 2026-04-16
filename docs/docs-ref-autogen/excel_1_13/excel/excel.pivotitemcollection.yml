@@ -16,6 +16,10 @@ remarks: >-
 
   - [Excel.PivotField.items](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-items-member)
 
+  - [Excel.PivotItemCollection.load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
+
+  - [Excel.PivotLayout.getPivotItems](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getpivotitems-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

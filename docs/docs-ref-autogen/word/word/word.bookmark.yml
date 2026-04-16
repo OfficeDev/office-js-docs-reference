@@ -17,6 +17,20 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Bookmark.copyTo](/javascript/api/word/word.bookmark#word-word-bookmark-copyto-member(1))
+
+  - [Word.Bookmark.load](/javascript/api/word/word.bookmark#word-word-bookmark-load-member(1))
+
+  - [Word.Bookmark.set](/javascript/api/word/word.bookmark#word-word-bookmark-set-member(2))
+
+  - [Word.Bookmark.track](/javascript/api/word/word.bookmark#word-word-bookmark-track-member(1))
+
+  - [Word.Bookmark.untrack](/javascript/api/word/word.bookmark#word-word-bookmark-untrack-member(1))
+
+  - [Word.BookmarkCollection.add](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-add-member(1))
+
+  - [Word.BookmarkCollection.getItem](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-getitem-member(1))
+
   - [Word.BookmarkCollection.items](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-items-member)
 
 isPreview: false

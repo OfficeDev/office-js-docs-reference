@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TabStopData
 summary: >-
   An interface describing the data returned by calling `tabStop.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TabStop.toJSON](/javascript/api/word/word.tabstop#word-word-tabstop-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

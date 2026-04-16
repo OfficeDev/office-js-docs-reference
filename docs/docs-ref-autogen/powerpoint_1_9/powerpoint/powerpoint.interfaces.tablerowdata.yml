@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.TableRowData
 summary: >-
   An interface describing the data returned by calling `tableRow.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.TableRow.toJSON](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

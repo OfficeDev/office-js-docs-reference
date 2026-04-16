@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `TopBottomConditionalFormat` object, for
   use in `topBottomConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TopBottomConditionalFormat.set](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

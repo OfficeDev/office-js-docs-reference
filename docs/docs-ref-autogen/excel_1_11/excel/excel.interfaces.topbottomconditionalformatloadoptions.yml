@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.TopBottomConditionalFormat.load](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

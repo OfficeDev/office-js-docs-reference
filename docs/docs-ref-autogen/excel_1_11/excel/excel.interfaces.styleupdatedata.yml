@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.StyleUpdateData
 summary: >-
   An interface for updating data on the `Style` object, for use in `style.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Style.set](/javascript/api/excel/excel.style#excel-excel-style-set-member(1))
 
 isPreview: false
 isDeprecated: false

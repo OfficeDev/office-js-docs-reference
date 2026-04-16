@@ -9,6 +9,13 @@ remarks: >-
   1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.Presentation.insertSlidesFromBase64](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-insertslidesfrombase64-member(1))
+
   #### Examples
 
 

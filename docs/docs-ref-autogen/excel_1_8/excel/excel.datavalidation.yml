@@ -16,6 +16,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.DataValidation.load](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-load-member(1))
+
+  - [Excel.DataValidation.set](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-set-member(2))
+
   - [Excel.Range.dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
 
 isPreview: false

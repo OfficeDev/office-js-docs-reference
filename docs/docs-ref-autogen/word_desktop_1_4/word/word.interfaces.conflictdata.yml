@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ConflictData
 summary: >-
   An interface describing the data returned by calling `conflict.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Conflict.toJSON](/javascript/api/word/word.conflict#word-word-conflict-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

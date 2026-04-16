@@ -13,6 +13,20 @@ remarks: >-
   #### Used by
 
 
+  - [Word.CustomProperty.load](/javascript/api/word/word.customproperty#word-word-customproperty-load-member(1))
+
+  - [Word.CustomProperty.set](/javascript/api/word/word.customproperty#word-word-customproperty-set-member(2))
+
+  - [Word.CustomProperty.track](/javascript/api/word/word.customproperty#word-word-customproperty-track-member(1))
+
+  - [Word.CustomProperty.untrack](/javascript/api/word/word.customproperty#word-word-customproperty-untrack-member(1))
+
+  - [Word.CustomPropertyCollection.add](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-add-member(1))
+
+  - [Word.CustomPropertyCollection.getItem](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getitem-member(1))
+
+  - [Word.CustomPropertyCollection.getItemOrNullObject](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-getitemornullobject-member(1))
+
   - [Word.CustomPropertyCollection.items](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-items-member)
 
   #### Examples

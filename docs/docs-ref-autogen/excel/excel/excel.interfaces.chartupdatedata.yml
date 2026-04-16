@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartUpdateData
 summary: >-
   An interface for updating data on the `Chart` object, for use in `chart.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Chart.set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(1))
 
 isPreview: false
 isDeprecated: false

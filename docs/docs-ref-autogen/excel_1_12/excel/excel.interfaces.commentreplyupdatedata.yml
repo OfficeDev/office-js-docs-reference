@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CommentReplyUpdateData
 summary: >-
   An interface for updating data on the `CommentReply` object, for use in
   `commentReply.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CommentReply.set](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,6 +14,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.CustomXmlPartCollection.load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
+
+  - [Word.CustomXmlPartCollection.track](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-track-member(1))
+
+  - [Word.CustomXmlPartCollection.untrack](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-untrack-member(1))
+
   - [Word.Document.customXmlParts](/javascript/api/word/word.document#word-word-document-customxmlparts-member)
 
 isPreview: false

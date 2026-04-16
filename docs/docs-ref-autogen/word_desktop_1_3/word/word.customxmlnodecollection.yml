@@ -19,6 +19,16 @@ remarks: >-
 
   - [Word.CustomXmlNode.childNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-childnodes-member)
 
+  - [Word.CustomXmlNode.selectNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectnodes-member(1))
+
+  - [Word.CustomXmlNodeCollection.load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1))
+
+  - [Word.CustomXmlNodeCollection.track](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-track-member(1))
+
+  - [Word.CustomXmlNodeCollection.untrack](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-untrack-member(1))
+
+  - [Word.CustomXmlPart.selectNodes](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectnodes-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

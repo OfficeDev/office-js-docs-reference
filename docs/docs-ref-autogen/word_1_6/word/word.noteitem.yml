@@ -13,7 +13,27 @@ remarks: >-
   #### Used by
 
 
+  - [Word.NoteItem.getNext](/javascript/api/word/word.noteitem#word-word-noteitem-getnext-member(1))
+
+  - [Word.NoteItem.getNextOrNullObject](/javascript/api/word/word.noteitem#word-word-noteitem-getnextornullobject-member(1))
+
+  - [Word.NoteItem.load](/javascript/api/word/word.noteitem#word-word-noteitem-load-member(1))
+
+  - [Word.NoteItem.set](/javascript/api/word/word.noteitem#word-word-noteitem-set-member(2))
+
+  - [Word.NoteItem.track](/javascript/api/word/word.noteitem#word-word-noteitem-track-member(1))
+
+  - [Word.NoteItem.untrack](/javascript/api/word/word.noteitem#word-word-noteitem-untrack-member(1))
+
+  - [Word.NoteItemCollection.getFirst](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirst-member(1))
+
+  - [Word.NoteItemCollection.getFirstOrNullObject](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirstornullobject-member(1))
+
   - [Word.NoteItemCollection.items](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-items-member)
+
+  - [Word.Range.insertEndnote](/javascript/api/word/word.range#word-word-range-insertendnote-member(1))
+
+  - [Word.Range.insertFootnote](/javascript/api/word/word.range#word-word-range-insertfootnote-member(1))
 
   #### Examples
 

@@ -13,6 +13,15 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Chart.setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1))
+
+  - [Excel.ChartCollection.add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+
   #### Examples
 
 

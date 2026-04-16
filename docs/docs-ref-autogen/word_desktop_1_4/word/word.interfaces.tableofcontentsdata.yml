@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableOfContentsData
 summary: >-
   An interface describing the data returned by calling
   `tableOfContents.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableOfContents.toJSON](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableRowUpdateData
 summary: >-
   An interface for updating data on the `TableRow` object, for use in
   `tableRow.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableRow.set](/javascript/api/word/word.tablerow#word-word-tablerow-set-member(1))
 
 isPreview: false
 isDeprecated: false

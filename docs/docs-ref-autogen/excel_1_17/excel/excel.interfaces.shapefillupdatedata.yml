@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ShapeFillUpdateData
 summary: >-
   An interface for updating data on the `ShapeFill` object, for use in
   `shapeFill.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ShapeFill.set](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-set-member(1))
 
 isPreview: false
 isDeprecated: false

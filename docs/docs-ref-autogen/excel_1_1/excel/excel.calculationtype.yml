@@ -9,6 +9,13 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Application.calculate](/javascript/api/excel/excel.application#excel-excel-application-calculate-member(1))
+
   #### Examples
 
 

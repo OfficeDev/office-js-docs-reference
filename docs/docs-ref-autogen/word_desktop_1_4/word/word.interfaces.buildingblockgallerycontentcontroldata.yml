@@ -6,7 +6,11 @@ fullName: Word.Interfaces.BuildingBlockGalleryContentControlData
 summary: >-
   An interface describing the data returned by calling
   `buildingBlockGalleryContentControl.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.BuildingBlockGalleryContentControl.toJSON](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

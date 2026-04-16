@@ -12,9 +12,23 @@ remarks: >-
   #### Used by
 
 
+  - [Word.TabStop.load](/javascript/api/word/word.tabstop#word-word-tabstop-load-member(1))
+
   - [Word.TabStop.next](/javascript/api/word/word.tabstop#word-word-tabstop-next-member)
 
   - [Word.TabStop.previous](/javascript/api/word/word.tabstop#word-word-tabstop-previous-member)
+
+  - [Word.TabStop.track](/javascript/api/word/word.tabstop#word-word-tabstop-track-member(1))
+
+  - [Word.TabStop.untrack](/javascript/api/word/word.tabstop#word-word-tabstop-untrack-member(1))
+
+  - [Word.TabStopCollection.add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))
+
+  - [Word.TabStopCollection.after](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1))
+
+  - [Word.TabStopCollection.before](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1))
+
+  - [Word.TabStopCollection.getItem](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-getitem-member(1))
 
   - [Word.TabStopCollection.items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)
 

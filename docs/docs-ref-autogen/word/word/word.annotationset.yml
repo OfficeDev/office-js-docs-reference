@@ -9,6 +9,13 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Paragraph.insertAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))
+
   #### Examples
 
 

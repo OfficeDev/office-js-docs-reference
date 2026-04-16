@@ -14,6 +14,8 @@ remarks: >-
 
   - [Word.ThreeDimensionalFormat.presetThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetthreedimensionalformat-member)
 
+  - [Word.ThreeDimensionalFormat.setThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setthreedimensionalformat-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.OleFormatData
 summary: >-
   An interface describing the data returned by calling `oleFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.OleFormat.toJSON](/javascript/api/word/word.oleformat#word-word-oleformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

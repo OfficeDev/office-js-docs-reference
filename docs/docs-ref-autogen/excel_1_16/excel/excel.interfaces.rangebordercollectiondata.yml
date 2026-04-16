@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeBorderCollectionData
 summary: >-
   An interface describing the data returned by calling
   `rangeBorderCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeBorderCollection.toJSON](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

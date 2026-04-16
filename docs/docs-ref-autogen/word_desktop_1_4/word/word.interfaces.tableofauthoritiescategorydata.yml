@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableOfAuthoritiesCategoryData
 summary: >-
   An interface describing the data returned by calling
   `tableOfAuthoritiesCategory.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableOfAuthoritiesCategory.toJSON](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -8,6 +8,12 @@ remarks: >-
   [API set: PowerPointApi
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.CustomXmlPartCollection.load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

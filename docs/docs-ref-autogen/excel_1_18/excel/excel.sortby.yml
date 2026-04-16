@@ -8,6 +8,16 @@ remarks: >-
   [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.PivotField.sortByLabels](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbylabels-member(1))
+
+  - [Excel.PivotField.sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
+
+  - [Excel.PivotLayout.setAutoSortOnCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setautosortoncell-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

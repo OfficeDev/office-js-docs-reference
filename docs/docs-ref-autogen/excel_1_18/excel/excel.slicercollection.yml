@@ -14,6 +14,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.SlicerCollection.load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(1))
+
   - [Excel.Workbook.slicers](/javascript/api/excel/excel.workbook#excel-excel-workbook-slicers-member)
 
   - [Excel.Worksheet.slicers](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-slicers-member)

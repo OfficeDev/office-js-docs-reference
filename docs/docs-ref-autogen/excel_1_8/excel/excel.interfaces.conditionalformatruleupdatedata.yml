@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
 summary: >-
   An interface for updating data on the `ConditionalFormatRule` object, for use
   in `conditionalFormatRule.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalFormatRule.set](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-set-member(1))
 
 isPreview: false
 isDeprecated: false

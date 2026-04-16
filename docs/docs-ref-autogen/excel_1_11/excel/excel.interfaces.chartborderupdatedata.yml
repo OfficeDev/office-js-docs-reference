@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartBorderUpdateData
 summary: >-
   An interface for updating data on the `ChartBorder` object, for use in
   `chartBorder.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartBorder.set](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-set-member(1))
 
 isPreview: false
 isDeprecated: false

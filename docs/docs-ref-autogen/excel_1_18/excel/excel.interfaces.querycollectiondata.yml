@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.QueryCollectionData
 summary: >-
   An interface describing the data returned by calling
   `queryCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.QueryCollection.toJSON](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.FieldCollectionData
 summary: >-
   An interface describing the data returned by calling
   `fieldCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.FieldCollection.toJSON](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

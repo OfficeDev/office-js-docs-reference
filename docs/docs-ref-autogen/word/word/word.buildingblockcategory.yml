@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.BuildingBlock.category](/javascript/api/word/word.buildingblock#word-word-buildingblock-category-member)
 
+  - [Word.BuildingBlockCategory.load](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-load-member(1))
+
+  - [Word.BuildingBlockCategory.track](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-track-member(1))
+
+  - [Word.BuildingBlockCategory.untrack](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-untrack-member(1))
+
+  - [Word.BuildingBlockCategoryCollection.getItemAt](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-getitemat-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

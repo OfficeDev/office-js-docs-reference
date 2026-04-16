@@ -19,6 +19,8 @@ remarks: >-
 
   - [Excel.Shape.geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
 
+  - [Excel.ShapeCollection.addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
+
   #### Examples
 
 

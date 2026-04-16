@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.DocumentTaskChange.load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1))
+
 isPreview: true
 isDeprecated: false
 type: interface

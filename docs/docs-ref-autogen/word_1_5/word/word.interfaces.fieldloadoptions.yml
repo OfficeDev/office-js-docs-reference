@@ -20,6 +20,12 @@ remarks: >-
   Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
   -->.
 
+
+  #### Used by
+
+
+  - [Word.Field.load](/javascript/api/word/word.field#word-word-field-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

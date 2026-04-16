@@ -11,6 +11,19 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.AnnotationCollection.load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
+
+  - [Word.AnnotationCollection.track](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-track-member(1))
+
+  - [Word.AnnotationCollection.untrack](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-untrack-member(1))
+
+  - [Word.Paragraph.getAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-getannotations-member(1))
+
   #### Examples
 
 

@@ -14,6 +14,10 @@ remarks: >-
 
   - [Visio.Page.view](/javascript/api/visio/visio.page#visio-visio-page-view-member)
 
+  - [Visio.PageView.load](/javascript/api/visio/visio.pageview#visio-visio-pageview-load-member(1))
+
+  - [Visio.PageView.set](/javascript/api/visio/visio.pageview#visio-visio-pageview-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

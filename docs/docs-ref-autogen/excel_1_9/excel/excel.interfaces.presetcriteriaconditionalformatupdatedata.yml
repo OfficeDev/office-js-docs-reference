@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `PresetCriteriaConditionalFormat`
   object, for use in `presetCriteriaConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PresetCriteriaConditionalFormat.set](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

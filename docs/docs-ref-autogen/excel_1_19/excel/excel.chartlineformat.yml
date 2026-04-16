@@ -20,6 +20,10 @@ remarks: >-
 
   - [Excel.ChartLeaderLinesFormat.line](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-line-member)
 
+  - [Excel.ChartLineFormat.load](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-load-member(1))
+
+  - [Excel.ChartLineFormat.set](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-set-member(2))
+
   - [Excel.ChartSeriesFormat.line](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-line-member)
 
   - [Excel.ChartTrendlineFormat.line](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-line-member)

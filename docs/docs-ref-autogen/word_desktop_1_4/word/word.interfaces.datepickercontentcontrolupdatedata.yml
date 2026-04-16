@@ -6,7 +6,11 @@ fullName: Word.Interfaces.DatePickerContentControlUpdateData
 summary: >-
   An interface for updating data on the `DatePickerContentControl` object, for
   use in `datePickerContentControl.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.DatePickerContentControl.set](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

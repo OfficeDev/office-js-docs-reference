@@ -9,6 +9,13 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Workbook.close](/javascript/api/excel/excel.workbook#excel-excel-workbook-close-member(1))
+
   #### Examples
 
 

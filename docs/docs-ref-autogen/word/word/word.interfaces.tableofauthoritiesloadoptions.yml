@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.TableOfAuthorities.load](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

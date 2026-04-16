@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.LinkedEntityDataDomainData
 summary: >-
   An interface describing the data returned by calling
   `linkedEntityDataDomain.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.LinkedEntityDataDomain.toJSON](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

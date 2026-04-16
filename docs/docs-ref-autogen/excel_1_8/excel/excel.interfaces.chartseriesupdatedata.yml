@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartSeriesUpdateData
 summary: >-
   An interface for updating data on the `ChartSeries` object, for use in
   `chartSeries.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartSeries.set](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-set-member(1))
 
 isPreview: false
 isDeprecated: false

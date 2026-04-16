@@ -6,7 +6,11 @@ fullName: Word.Interfaces.XmlMappingUpdateData
 summary: >-
   An interface for updating data on the `XmlMapping` object, for use in
   `xmlMapping.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.XmlMapping.set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(1))
 
 isPreview: false
 isDeprecated: false

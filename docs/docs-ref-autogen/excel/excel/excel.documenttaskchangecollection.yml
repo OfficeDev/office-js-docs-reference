@@ -14,6 +14,8 @@ remarks: >-
 
   - [Excel.DocumentTask.changes](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-changes-member)
 
+  - [Excel.DocumentTaskChangeCollection.load](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-load-member(1))
+
 isPreview: true
 isDeprecated: false
 type: class

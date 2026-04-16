@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.ChartSeries.format](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-format-member)
 
+  - [Excel.ChartSeriesFormat.load](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-load-member(1))
+
+  - [Excel.ChartSeriesFormat.set](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.SlicerStyleCollection.load](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-load-member(1))
+
   - [Excel.Workbook.slicerStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-slicerstyles-member)
 
 isPreview: false

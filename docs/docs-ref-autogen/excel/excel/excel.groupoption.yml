@@ -9,6 +9,19 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Range.group](/javascript/api/excel/excel.range#excel-excel-range-group-member(1))
+
+  - [Excel.Range.hideGroupDetails](/javascript/api/excel/excel.range#excel-excel-range-hidegroupdetails-member(1))
+
+  - [Excel.Range.showGroupDetails](/javascript/api/excel/excel.range#excel-excel-range-showgroupdetails-member(1))
+
+  - [Excel.Range.ungroup](/javascript/api/excel/excel.range#excel-excel-range-ungroup-member(1))
+
   #### Examples
 
 

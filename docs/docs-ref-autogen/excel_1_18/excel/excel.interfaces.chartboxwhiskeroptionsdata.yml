@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartBoxwhiskerOptions.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartBoxwhiskerOptions.toJSON](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

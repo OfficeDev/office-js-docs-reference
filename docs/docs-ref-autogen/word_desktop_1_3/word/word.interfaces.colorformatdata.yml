@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ColorFormatData
 summary: >-
   An interface describing the data returned by calling
   `colorFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ColorFormat.toJSON](/javascript/api/word/word.colorformat#word-word-colorformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

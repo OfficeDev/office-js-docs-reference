@@ -9,6 +9,15 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Range.clear](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))
+
+  - [Excel.RangeAreas.clear](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clear-member(1))
+
   #### Examples
 
 

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ParagraphData
 summary: >-
   An interface describing the data returned by calling `paragraph.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Paragraph.toJSON](/javascript/api/word/word.paragraph#word-word-paragraph-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

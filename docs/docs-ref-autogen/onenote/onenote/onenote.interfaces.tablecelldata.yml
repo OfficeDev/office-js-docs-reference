@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.TableCellData
 summary: >-
   An interface describing the data returned by calling `tableCell.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.TableCell.toJSON](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

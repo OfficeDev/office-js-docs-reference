@@ -20,6 +20,10 @@ remarks: >-
 
   - [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)
 
+  - [Excel.Workbook.load](/javascript/api/excel/excel.workbook#excel-excel-workbook-load-member(1))
+
+  - [Excel.Workbook.set](/javascript/api/excel/excel.workbook#excel-excel-workbook-set-member(2))
+
   #### Examples
 
 

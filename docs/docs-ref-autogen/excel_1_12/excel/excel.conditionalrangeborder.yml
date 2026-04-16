@@ -12,7 +12,15 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ConditionalRangeBorder.load](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-load-member(1))
+
+  - [Excel.ConditionalRangeBorder.set](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-set-member(2))
+
   - [Excel.ConditionalRangeBorderCollection.bottom](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-bottom-member)
+
+  - [Excel.ConditionalRangeBorderCollection.getItem](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-getitem-member(1))
+
+  - [Excel.ConditionalRangeBorderCollection.getItemAt](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-getitemat-member(1))
 
   - [Excel.ConditionalRangeBorderCollection.items](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-items-member)
 

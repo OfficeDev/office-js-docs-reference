@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Visio.HyperlinkCollection.load](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-load-member(1))
+
   - [Visio.Shape.hyperlinks](/javascript/api/visio/visio.shape#visio-visio-shape-hyperlinks-member)
 
 isPreview: false

@@ -14,6 +14,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.NamedItemCollection.load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+
   - [Excel.Workbook.names](/javascript/api/excel/excel.workbook#excel-excel-workbook-names-member)
 
   - [Excel.Worksheet.names](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-names-member)

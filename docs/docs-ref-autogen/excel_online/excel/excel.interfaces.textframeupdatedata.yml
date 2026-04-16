@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TextFrameUpdateData
 summary: >-
   An interface for updating data on the `TextFrame` object, for use in
   `textFrame.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TextFrame.set](/javascript/api/excel/excel.textframe#excel-excel-textframe-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -9,6 +9,13 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.ContentControlCollection.getByChangeTrackingStates](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1))
+
   #### Examples
 
 

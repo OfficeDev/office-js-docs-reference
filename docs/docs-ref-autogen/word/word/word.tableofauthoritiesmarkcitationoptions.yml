@@ -11,6 +11,14 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.TableOfAuthoritiesCollection.markAllCitations](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markallcitations-member(1))
+
+  - [Word.TableOfAuthoritiesCollection.markCitation](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

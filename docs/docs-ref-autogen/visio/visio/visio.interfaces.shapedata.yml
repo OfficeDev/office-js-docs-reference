@@ -4,7 +4,11 @@ uid: visio!Visio.Interfaces.ShapeData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Visio.Shape.toJSON](/javascript/api/visio/visio.shape#visio-visio-shape-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

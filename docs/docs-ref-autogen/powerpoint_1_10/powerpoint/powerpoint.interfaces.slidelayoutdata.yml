@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.SlideLayoutData
 summary: >-
   An interface describing the data returned by calling
   `slideLayout.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.SlideLayout.toJSON](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

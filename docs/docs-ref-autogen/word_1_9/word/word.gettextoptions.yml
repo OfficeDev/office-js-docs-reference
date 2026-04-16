@@ -11,6 +11,13 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Paragraph.getText](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))
+
   #### Examples
 
 

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.NamedItemUpdateData
 summary: >-
   An interface for updating data on the `NamedItem` object, for use in
   `namedItem.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.NamedItem.set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(1))
 
 isPreview: false
 isDeprecated: false

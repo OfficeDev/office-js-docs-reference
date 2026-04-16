@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CommentData
 summary: >-
   An interface describing the data returned by calling `comment.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Comment.toJSON](/javascript/api/excel/excel.comment#excel-excel-comment-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

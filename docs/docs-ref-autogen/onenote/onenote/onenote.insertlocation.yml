@@ -8,6 +8,24 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.Page.insertPageAsSibling](/javascript/api/onenote/onenote.page#onenote-onenote-page-insertpageassibling-member(1))
+
+  - [OneNote.Paragraph.insertHtmlAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inserthtmlassibling-member(1))
+
+  - [OneNote.Paragraph.insertImageAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertimageassibling-member(1))
+
+  - [OneNote.Paragraph.insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1))
+
+  - [OneNote.Paragraph.insertTableAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inserttableassibling-member(1))
+
+  - [OneNote.Section.insertSectionAsSibling](/javascript/api/onenote/onenote.section#onenote-onenote-section-insertsectionassibling-member(1))
+
+  - [OneNote.TableRow.insertRowAsSibling](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-insertrowassibling-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

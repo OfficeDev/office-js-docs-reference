@@ -19,17 +19,45 @@ remarks: >-
 
   - [Excel.GeometricShape.shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
 
+  - [Excel.GroupShapeCollection.getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1))
+
+  - [Excel.GroupShapeCollection.getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1))
+
   - [Excel.GroupShapeCollection.items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
 
   - [Excel.Image.shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
 
   - [Excel.Line.beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member)
 
+  - [Excel.Line.connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1))
+
+  - [Excel.Line.connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1))
+
   - [Excel.Line.endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member)
 
   - [Excel.Line.shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
 
+  - [Excel.Shape.copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
+
+  - [Excel.Shape.load](/javascript/api/excel/excel.shape#excel-excel-shape-load-member(1))
+
   - [Excel.Shape.parentGroup](/javascript/api/excel/excel.shape#excel-excel-shape-parentgroup-member)
+
+  - [Excel.Shape.set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(2))
+
+  - [Excel.ShapeCollection.addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
+
+  - [Excel.ShapeCollection.addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1))
+
+  - [Excel.ShapeCollection.addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1))
+
+  - [Excel.ShapeCollection.addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
+
+  - [Excel.ShapeCollection.addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1))
+
+  - [Excel.ShapeCollection.getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1))
+
+  - [Excel.ShapeCollection.getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1))
 
   - [Excel.ShapeCollection.items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
 

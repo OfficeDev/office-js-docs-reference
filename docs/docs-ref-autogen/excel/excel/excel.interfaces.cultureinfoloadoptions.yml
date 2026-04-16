@@ -10,6 +10,12 @@ remarks: >-
   [API set: ExcelApi
   1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.CultureInfo.load](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

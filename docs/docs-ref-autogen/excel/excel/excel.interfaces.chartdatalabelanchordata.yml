@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartDataLabelAnchorData
 summary: >-
   An interface describing the data returned by calling
   `chartDataLabelAnchor.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartDataLabelAnchor.toJSON](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

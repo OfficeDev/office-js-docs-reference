@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartAxes.getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1))
+
   - [Excel.ChartAxis.type](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-type-member)
 
 isPreview: false

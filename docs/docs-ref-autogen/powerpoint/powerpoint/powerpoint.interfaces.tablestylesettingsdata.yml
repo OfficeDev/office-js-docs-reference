@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.TableStyleSettingsData
 summary: >-
   An interface describing the data returned by calling
   `tableStyleSettings.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.TableStyleSettings.toJSON](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

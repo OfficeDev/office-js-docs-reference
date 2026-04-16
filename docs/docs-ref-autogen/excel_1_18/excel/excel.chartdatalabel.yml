@@ -13,6 +13,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartDataLabel.load](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-load-member(1))
+
+  - [Excel.ChartDataLabel.set](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-set-member(2))
+
   - [Excel.ChartPoint.dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)
 
   #### Examples

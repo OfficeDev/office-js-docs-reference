@@ -15,7 +15,19 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.Hyperlink.getLinkedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedtextrangeornullobject-member(1))
+
+  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+
+  - [PowerPoint.Presentation.getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1))
+
+  - [PowerPoint.Presentation.getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
+
   - [PowerPoint.TextFrame.textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
+
+  - [PowerPoint.TextRange.getSubstring](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getsubstring-member(1))
+
+  - [PowerPoint.TextRange.load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
 
   #### Examples
 

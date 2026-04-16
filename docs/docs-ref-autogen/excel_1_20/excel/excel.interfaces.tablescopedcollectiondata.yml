@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TableScopedCollectionData
 summary: >-
   An interface describing the data returned by calling
   `tableScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TableScopedCollection.toJSON](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

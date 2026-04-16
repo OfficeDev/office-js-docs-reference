@@ -16,6 +16,10 @@ remarks: >-
 
   - [Excel.ChartAxis.minorGridlines](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-minorgridlines-member)
 
+  - [Excel.ChartGridlines.load](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-load-member(1))
+
+  - [Excel.ChartGridlines.set](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

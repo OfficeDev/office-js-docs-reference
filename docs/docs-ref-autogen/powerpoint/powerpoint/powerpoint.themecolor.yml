@@ -9,6 +9,15 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.ThemeColorScheme.getThemeColor](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-getthemecolor-member(1))
+
+  - [PowerPoint.ThemeColorScheme.setThemeColor](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-setthemecolor-member(1))
+
   #### Examples
 
 

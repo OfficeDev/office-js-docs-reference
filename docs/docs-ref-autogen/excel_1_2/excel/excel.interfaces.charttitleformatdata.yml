@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartTitleFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartTitleFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartTitleFormat.toJSON](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

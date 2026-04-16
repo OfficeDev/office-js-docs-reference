@@ -13,6 +13,64 @@ remarks: >-
   [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.ConditionalFormat.getRanges](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getranges-member(1))
+
+  - [Excel.DataValidation.getInvalidCells](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-getinvalidcells-member(1))
+
+  - [Excel.DataValidation.getInvalidCellsOrNullObject](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-getinvalidcellsornullobject-member(1))
+
+  - [Excel.PageLayout.getPrintArea](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprintarea-member(1))
+
+  - [Excel.PageLayout.getPrintAreaOrNullObject](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprintareaornullobject-member(1))
+
+  - [Excel.PageLayout.setPrintArea](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-setprintarea-member(1))
+
+  - [Excel.Range.copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))
+
+  - [Excel.Range.getSpecialCells](/javascript/api/excel/excel.range#excel-excel-range-getspecialcells-member(1))
+
+  - [Excel.Range.getSpecialCellsOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-getspecialcellsornullobject-member(1))
+
+  - [Excel.RangeAreas.copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1))
+
+  - [Excel.RangeAreas.getEntireColumn](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getentirecolumn-member(1))
+
+  - [Excel.RangeAreas.getEntireRow](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getentirerow-member(1))
+
+  - [Excel.RangeAreas.getIntersection](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getintersection-member(1))
+
+  - [Excel.RangeAreas.getIntersectionOrNullObject](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getintersectionornullobject-member(1))
+
+  - [Excel.RangeAreas.getOffsetRangeAreas](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getoffsetrangeareas-member(1))
+
+  - [Excel.RangeAreas.getSpecialCells](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getspecialcells-member(1))
+
+  - [Excel.RangeAreas.getSpecialCellsOrNullObject](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getspecialcellsornullobject-member(1))
+
+  - [Excel.RangeAreas.getUsedRangeAreas](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getusedrangeareas-member(1))
+
+  - [Excel.RangeAreas.getUsedRangeAreasOrNullObject](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getusedrangeareasornullobject-member(1))
+
+  - [Excel.RangeAreas.load](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-load-member(1))
+
+  - [Excel.RangeAreas.set](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-set-member(2))
+
+  - [Excel.RangeAreas.track](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-track-member(1))
+
+  - [Excel.RangeAreas.untrack](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-untrack-member(1))
+
+  - [Excel.Workbook.getSelectedRanges](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedranges-member(1))
+
+  - [Excel.Worksheet.findAll](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findall-member(1))
+
+  - [Excel.Worksheet.findAllOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findallornullobject-member(1))
+
+  - [Excel.Worksheet.getRanges](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getranges-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Shading.load](/javascript/api/word/word.shading#word-word-shading-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

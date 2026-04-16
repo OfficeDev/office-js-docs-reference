@@ -6,7 +6,11 @@ fullName: Word.Interfaces.RevisionsFilterData
 summary: >-
   An interface describing the data returned by calling
   `revisionsFilter.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.RevisionsFilter.toJSON](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

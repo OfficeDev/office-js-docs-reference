@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.BindingCollectionData
 summary: >-
   An interface describing the data returned by calling
   `bindingCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.BindingCollection.toJSON](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

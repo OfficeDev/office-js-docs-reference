@@ -16,6 +16,19 @@ remarks: >-
   object.
 
 
+
+
+  #### Used by
+
+
+  - [Word.Range.insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1))
+
+  - [Word.Range.insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1))
+
+  - [Word.Range.insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1))
+
+  - [Word.Range.insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
+
   #### Examples
 
 

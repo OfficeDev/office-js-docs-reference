@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.WorksheetUpdateData
 summary: >-
   An interface for updating data on the `Worksheet` object, for use in
   `worksheet.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Worksheet.set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(1))
 
 isPreview: false
 isDeprecated: false

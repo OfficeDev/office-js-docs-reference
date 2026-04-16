@@ -11,6 +11,18 @@ remarks: >-
   [API set: ExcelApi
   1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Comment.updateMentions](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))
+
+  - [Excel.CommentCollection.add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+
+  - [Excel.CommentReply.updateMentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))
+
+  - [Excel.CommentReplyCollection.add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

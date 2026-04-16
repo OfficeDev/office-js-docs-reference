@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.SlicerItem.load](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

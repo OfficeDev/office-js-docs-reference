@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.ParagraphUpdateData
 summary: >-
   An interface for updating data on the `Paragraph` object, for use in
   `paragraph.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Paragraph.set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(1))
 
 isPreview: false
 isDeprecated: false

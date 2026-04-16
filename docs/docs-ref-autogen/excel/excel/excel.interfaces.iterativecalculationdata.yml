@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.IterativeCalculationData
 summary: >-
   An interface describing the data returned by calling
   `iterativeCalculation.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.IterativeCalculation.toJSON](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

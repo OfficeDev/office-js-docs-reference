@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomPropertyCollectionData
 summary: >-
   An interface describing the data returned by calling
   `customPropertyCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomPropertyCollection.toJSON](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

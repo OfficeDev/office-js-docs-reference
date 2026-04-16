@@ -4,7 +4,11 @@ uid: word!Word.Interfaces.ListData:interface
 package: word!
 fullName: Word.Interfaces.ListData
 summary: An interface describing the data returned by calling `list.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.List.toJSON](/javascript/api/word/word.list#word-word-list-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

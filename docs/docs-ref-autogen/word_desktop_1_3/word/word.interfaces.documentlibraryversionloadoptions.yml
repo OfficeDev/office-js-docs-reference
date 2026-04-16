@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.DocumentLibraryVersion.load](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

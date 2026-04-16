@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.WorkbookCreatedData
 summary: >-
   An interface describing the data returned by calling
   `workbookCreated.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.WorkbookCreated.toJSON](/javascript/api/excel/excel.workbookcreated#excel-excel-workbookcreated-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

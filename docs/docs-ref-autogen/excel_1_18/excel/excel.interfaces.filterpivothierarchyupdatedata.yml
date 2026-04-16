@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
 summary: >-
   An interface for updating data on the `FilterPivotHierarchy` object, for use
   in `filterPivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.FilterPivotHierarchy.set](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.DocumentPropertiesData
 summary: >-
   An interface describing the data returned by calling
   `documentProperties.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.DocumentProperties.toJSON](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

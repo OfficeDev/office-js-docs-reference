@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CommentReplyData
 summary: >-
   An interface describing the data returned by calling
   `commentReply.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CommentReply.toJSON](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

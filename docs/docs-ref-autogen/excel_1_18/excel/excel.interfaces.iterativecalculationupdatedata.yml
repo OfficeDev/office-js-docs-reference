@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.IterativeCalculationUpdateData
 summary: >-
   An interface for updating data on the `IterativeCalculation` object, for use
   in `iterativeCalculation.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.IterativeCalculation.set](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-set-member(1))
 
 isPreview: false
 isDeprecated: false

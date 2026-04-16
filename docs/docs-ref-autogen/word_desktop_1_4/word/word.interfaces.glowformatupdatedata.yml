@@ -6,7 +6,11 @@ fullName: Word.Interfaces.GlowFormatUpdateData
 summary: >-
   An interface for updating data on the `GlowFormat` object, for use in
   `glowFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.GlowFormat.set](/javascript/api/word/word.glowformat#word-word-glowformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.FormatProtectionData
 summary: >-
   An interface describing the data returned by calling
   `formatProtection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.FormatProtection.toJSON](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

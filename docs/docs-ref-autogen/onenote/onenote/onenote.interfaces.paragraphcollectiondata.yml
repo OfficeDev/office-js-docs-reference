@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.ParagraphCollectionData
 summary: >-
   An interface describing the data returned by calling
   `paragraphCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.ParagraphCollection.toJSON](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

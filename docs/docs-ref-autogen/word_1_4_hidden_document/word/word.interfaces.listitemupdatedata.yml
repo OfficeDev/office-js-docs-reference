@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListItemUpdateData
 summary: >-
   An interface for updating data on the `ListItem` object, for use in
   `listItem.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListItem.set](/javascript/api/word/word.listitem#word-word-listitem-set-member(1))
 
 isPreview: false
 isDeprecated: false

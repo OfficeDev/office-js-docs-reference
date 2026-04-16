@@ -39,9 +39,13 @@ remarks: >-
 
   - [Excel.TableColumn.valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)
 
+  - [Excel.TableColumnCollection.addAsJson](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-addasjson-member(1))
+
   - [Excel.TableRow.valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member)
 
   - [Excel.TableRow.valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)
+
+  - [Excel.TableRowCollection.addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
 
 
 

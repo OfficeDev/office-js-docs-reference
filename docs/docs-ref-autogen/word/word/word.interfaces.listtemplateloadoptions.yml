@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.ListTemplate.load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

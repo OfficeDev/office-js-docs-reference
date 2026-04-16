@@ -12,6 +12,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ListFormat.applyBulletDefault](/javascript/api/word/word.listformat#word-word-listformat-applybulletdefault-member(1))
+
+  - [Word.ListFormat.applyNumberDefault](/javascript/api/word/word.listformat#word-word-listformat-applynumberdefault-member(1))
+
+  - [Word.ListFormat.applyOutlineNumberDefault](/javascript/api/word/word.listformat#word-word-listformat-applyoutlinenumberdefault-member(1))
+
   - [Word.ListTemplateApplyOptions.defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)
 
 isPreview: false

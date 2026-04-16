@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartAxisFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartAxisFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartAxisFormat.toJSON](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

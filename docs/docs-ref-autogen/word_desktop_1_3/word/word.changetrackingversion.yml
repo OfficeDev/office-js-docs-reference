@@ -9,6 +9,19 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.getReviewedText](/javascript/api/word/word.body#word-word-body-getreviewedtext-member(1))
+
+  - [Word.ContentControl.getReviewedText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getreviewedtext-member(1))
+
+  - [Word.Paragraph.getReviewedText](/javascript/api/word/word.paragraph#word-word-paragraph-getreviewedtext-member(1))
+
+  - [Word.Range.getReviewedText](/javascript/api/word/word.range#word-word-range-getreviewedtext-member(1))
+
   #### Examples
 
 

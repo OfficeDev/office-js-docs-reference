@@ -12,7 +12,23 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.Table.appendRow](/javascript/api/onenote/onenote.table#onenote-onenote-table-appendrow-member(1))
+
+  - [OneNote.Table.insertRow](/javascript/api/onenote/onenote.table#onenote-onenote-table-insertrow-member(1))
+
   - [OneNote.TableCell.parentRow](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-parentrow-member)
+
+  - [OneNote.TableRow.insertRowAsSibling](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-insertrowassibling-member(1))
+
+  - [OneNote.TableRow.load](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-load-member(1))
+
+  - [OneNote.TableRow.track](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-track-member(1))
+
+  - [OneNote.TableRow.untrack](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-untrack-member(1))
+
+  - [OneNote.TableRowCollection.getItem](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-getitem-member(1))
+
+  - [OneNote.TableRowCollection.getItemAt](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-getitemat-member(1))
 
   - [OneNote.TableRowCollection.items](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-items-member)
 

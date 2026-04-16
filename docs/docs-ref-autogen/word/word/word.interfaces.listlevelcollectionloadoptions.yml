@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.ListLevelCollection.load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -14,6 +14,22 @@ remarks: >-
   #### Used by
 
 
+  - [Word.BuildingBlock.load](/javascript/api/word/word.buildingblock#word-word-buildingblock-load-member(1))
+
+  - [Word.BuildingBlock.set](/javascript/api/word/word.buildingblock#word-word-buildingblock-set-member(2))
+
+  - [Word.BuildingBlock.track](/javascript/api/word/word.buildingblock#word-word-buildingblock-track-member(1))
+
+  - [Word.BuildingBlock.untrack](/javascript/api/word/word.buildingblock#word-word-buildingblock-untrack-member(1))
+
+  - [Word.BuildingBlockCollection.add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
+
+  - [Word.BuildingBlockCollection.getItemAt](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-getitemat-member(1))
+
+  - [Word.BuildingBlockEntryCollection.add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
+
+  - [Word.BuildingBlockEntryCollection.getItemAt](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-getitemat-member(1))
+
   - [Word.BuildingBlockGalleryContentControl.placeholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-placeholdertext-member)
 
   - [Word.ContentControlPlaceholderOptions.buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-buildingblock-member)

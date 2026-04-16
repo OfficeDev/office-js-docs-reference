@@ -13,6 +13,14 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Shading.load](/javascript/api/word/word.shading#word-word-shading-load-member(1))
+
+  - [Word.Shading.set](/javascript/api/word/word.shading#word-word-shading-set-member(2))
+
+  - [Word.Shading.track](/javascript/api/word/word.shading#word-word-shading-track-member(1))
+
+  - [Word.Shading.untrack](/javascript/api/word/word.shading#word-word-shading-untrack-member(1))
+
   - [Word.Style.shading](/javascript/api/word/word.style#word-word-style-shading-member)
 
   #### Examples

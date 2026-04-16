@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.SlideScopedCollectionData
 summary: >-
   An interface describing the data returned by calling
   `slideScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.SlideScopedCollection.toJSON](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomXmlValidationErrorUpdateData
 summary: >-
   An interface for updating data on the `CustomXmlValidationError` object, for
   use in `customXmlValidationError.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomXmlValidationError.set](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-set-member(1))
 
 isPreview: false
 isDeprecated: false

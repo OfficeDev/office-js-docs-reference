@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PivotHierarchyUpdateData
 summary: >-
   An interface for updating data on the `PivotHierarchy` object, for use in
   `pivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PivotHierarchy.set](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

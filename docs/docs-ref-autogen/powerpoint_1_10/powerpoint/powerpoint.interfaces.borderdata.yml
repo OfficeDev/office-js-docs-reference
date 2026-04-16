@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.BorderData
 summary: >-
   An interface describing the data returned by calling `border.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.Border.toJSON](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

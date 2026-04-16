@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartErrorBarsFormat` object, for use
   in `chartErrorBarsFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartErrorBarsFormat.set](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

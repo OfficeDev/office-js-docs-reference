@@ -13,9 +13,31 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.Shape.load](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-load-member(1))
+
+  - [PowerPoint.ShapeCollection.addGeometricShape](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgeometricshape-member(1))
+
+  - [PowerPoint.ShapeCollection.addLine](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addline-member(1))
+
+  - [PowerPoint.ShapeCollection.addTextBox](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtextbox-member(1))
+
+  - [PowerPoint.ShapeCollection.getItem](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitem-member(1))
+
+  - [PowerPoint.ShapeCollection.getItemAt](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemat-member(1))
+
+  - [PowerPoint.ShapeCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemornullobject-member(1))
+
   - [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-items-member)
 
+  - [PowerPoint.ShapeScopedCollection.getItem](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitem-member(1))
+
+  - [PowerPoint.ShapeScopedCollection.getItemAt](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemat-member(1))
+
+  - [PowerPoint.ShapeScopedCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemornullobject-member(1))
+
   - [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-items-member)
+
+  - [PowerPoint.TextFrame.getParentShape](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-getparentshape-member(1))
 
   #### Examples
 

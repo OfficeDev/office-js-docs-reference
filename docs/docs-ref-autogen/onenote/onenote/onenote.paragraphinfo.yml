@@ -8,6 +8,12 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.Paragraph.getParagraphInfo](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-getparagraphinfo-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

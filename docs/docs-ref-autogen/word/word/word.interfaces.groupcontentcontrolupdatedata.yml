@@ -6,7 +6,11 @@ fullName: Word.Interfaces.GroupContentControlUpdateData
 summary: >-
   An interface for updating data on the `GroupContentControl` object, for use in
   `groupContentControl.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.GroupContentControl.set](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

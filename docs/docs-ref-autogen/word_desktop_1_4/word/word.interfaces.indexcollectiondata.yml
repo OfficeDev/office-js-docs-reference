@@ -6,7 +6,11 @@ fullName: Word.Interfaces.IndexCollectionData
 summary: >-
   An interface describing the data returned by calling
   `indexCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.IndexCollection.toJSON](/javascript/api/word/word.indexcollection#word-word-indexcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

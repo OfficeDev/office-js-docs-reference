@@ -9,6 +9,13 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Document.close](/javascript/api/word/word.document#word-word-document-close-member(1))
+
   #### Examples
 
 

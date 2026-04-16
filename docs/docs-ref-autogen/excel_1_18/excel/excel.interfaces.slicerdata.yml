@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.SlicerData
 summary: >-
   An interface describing the data returned by calling `slicer.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Slicer.toJSON](/javascript/api/excel/excel.slicer#excel-excel-slicer-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

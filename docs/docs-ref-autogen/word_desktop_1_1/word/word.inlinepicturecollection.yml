@@ -19,6 +19,12 @@ remarks: >-
 
   - [Word.ContentControl.inlinePictures](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inlinepictures-member)
 
+  - [Word.InlinePictureCollection.load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+
+  - [Word.InlinePictureCollection.track](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-track-member(1))
+
+  - [Word.InlinePictureCollection.untrack](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-untrack-member(1))
+
   - [Word.Paragraph.inlinePictures](/javascript/api/word/word.paragraph#word-word-paragraph-inlinepictures-member)
 
   - [Word.Range.inlinePictures](/javascript/api/word/word.range#word-word-range-inlinepictures-member)

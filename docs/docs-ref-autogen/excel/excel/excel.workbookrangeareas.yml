@@ -10,6 +10,24 @@ remarks: >-
   [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Range.getDependents](/javascript/api/excel/excel.range#excel-excel-range-getdependents-member(1))
+
+  - [Excel.Range.getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1))
+
+  - [Excel.Range.getDirectPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getdirectprecedents-member(1))
+
+  - [Excel.Range.getPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getprecedents-member(1))
+
+  - [Excel.WorkbookRangeAreas.load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1))
+
+  - [Excel.WorkbookRangeAreas.track](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-track-member(1))
+
+  - [Excel.WorkbookRangeAreas.untrack](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

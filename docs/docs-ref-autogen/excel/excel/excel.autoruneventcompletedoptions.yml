@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Workbook.autorunEventCompleted](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))
+
 isPreview: true
 isDeprecated: false
 type: interface

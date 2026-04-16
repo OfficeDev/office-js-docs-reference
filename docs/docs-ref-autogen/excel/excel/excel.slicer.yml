@@ -12,7 +12,23 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Slicer.load](/javascript/api/excel/excel.slicer#excel-excel-slicer-load-member(1))
+
+  - [Excel.Slicer.set](/javascript/api/excel/excel.slicer#excel-excel-slicer-set-member(2))
+
+  - [Excel.SlicerCollection.add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
+
+  - [Excel.SlicerCollection.getItem](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitem-member(1))
+
+  - [Excel.SlicerCollection.getItemAt](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemat-member(1))
+
+  - [Excel.SlicerCollection.getItemOrNullObject](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemornullobject-member(1))
+
   - [Excel.SlicerCollection.items](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-items-member)
+
+  - [Excel.Workbook.getActiveSlicer](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveslicer-member(1))
+
+  - [Excel.Workbook.getActiveSlicerOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveslicerornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

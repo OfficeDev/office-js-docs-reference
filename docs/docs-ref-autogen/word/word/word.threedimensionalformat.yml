@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.Font.threeDimensionalFormat](/javascript/api/word/word.font#word-word-font-threedimensionalformat-member)
 
+  - [Word.ThreeDimensionalFormat.load](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-load-member(1))
+
+  - [Word.ThreeDimensionalFormat.set](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-set-member(2))
+
+  - [Word.ThreeDimensionalFormat.track](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-track-member(1))
+
+  - [Word.ThreeDimensionalFormat.untrack](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

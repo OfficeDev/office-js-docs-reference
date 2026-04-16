@@ -6,7 +6,11 @@ fullName: Word.Interfaces.DocumentLibraryVersionCollectionData
 summary: >-
   An interface describing the data returned by calling
   `documentLibraryVersionCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.DocumentLibraryVersionCollection.toJSON](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

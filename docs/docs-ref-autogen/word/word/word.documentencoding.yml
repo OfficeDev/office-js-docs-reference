@@ -14,6 +14,8 @@ remarks: >-
 
   - [Word.Document.openEncoding](/javascript/api/word/word.document#word-word-document-openencoding-member)
 
+  - [Word.Document.reloadAs](/javascript/api/word/word.document#word-word-document-reloadas-member(1))
+
   - [Word.Document.saveEncoding](/javascript/api/word/word.document#word-word-document-saveencoding-member)
 
   - [Word.Document.textEncoding](/javascript/api/word/word.document#word-word-document-textencoding-member)

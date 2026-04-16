@@ -11,6 +11,14 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.TableOfContentsCollection.markTocEntry](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))
+
+  - [Word.TableOfFiguresCollection.markTocEntry](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

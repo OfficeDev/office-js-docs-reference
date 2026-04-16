@@ -9,6 +9,13 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.ShapeCollection.addGeometricShape](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgeometricshape-member(1))
+
   #### Examples
 
 

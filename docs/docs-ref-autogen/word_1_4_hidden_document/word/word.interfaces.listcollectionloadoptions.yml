@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.ListCollection.load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

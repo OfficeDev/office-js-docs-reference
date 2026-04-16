@@ -6,7 +6,11 @@ fullName: Word.Interfaces.BorderCollectionData
 summary: >-
   An interface describing the data returned by calling
   `borderCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.BorderCollection.toJSON](/javascript/api/word/word.bordercollection#word-word-bordercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

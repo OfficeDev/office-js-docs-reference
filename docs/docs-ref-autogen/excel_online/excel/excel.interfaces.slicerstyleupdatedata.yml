@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.SlicerStyleUpdateData
 summary: >-
   An interface for updating data on the `SlicerStyle` object, for use in
   `slicerStyle.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.SlicerStyle.set](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-set-member(1))
 
 isPreview: false
 isDeprecated: false

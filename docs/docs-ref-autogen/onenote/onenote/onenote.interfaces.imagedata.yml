@@ -4,7 +4,11 @@ uid: onenote!OneNote.Interfaces.ImageData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ImageData
 summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Image.toJSON](/javascript/api/onenote/onenote.image#onenote-onenote-image-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

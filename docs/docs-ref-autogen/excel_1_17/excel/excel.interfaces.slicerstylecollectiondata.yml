@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.SlicerStyleCollectionData
 summary: >-
   An interface describing the data returned by calling
   `slicerStyleCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.SlicerStyleCollection.toJSON](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Document.getRange](/javascript/api/word/word.document#word-word-document-getrange-member(1))
+
 isPreview: true
 isDeprecated: false
 type: interface

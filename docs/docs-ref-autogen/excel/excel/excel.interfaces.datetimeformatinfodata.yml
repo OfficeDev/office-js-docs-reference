@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DatetimeFormatInfoData
 summary: >-
   An interface describing the data returned by calling
   `datetimeFormatInfo.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DatetimeFormatInfo.toJSON](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

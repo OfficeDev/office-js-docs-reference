@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ParagraphFormatUpdateData
 summary: >-
   An interface for updating data on the `ParagraphFormat` object, for use in
   `paragraphFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ParagraphFormat.set](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

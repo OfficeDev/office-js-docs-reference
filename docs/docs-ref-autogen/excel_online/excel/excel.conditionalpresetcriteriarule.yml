@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ConditionalFormat.changeRuleToPresetCriteria](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletopresetcriteria-member(1))
+
   - [Excel.PresetCriteriaConditionalFormat.rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-rule-member)
 
 isPreview: false

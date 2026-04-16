@@ -22,6 +22,12 @@ remarks: >-
 
   - [Word.Application.templates](/javascript/api/word/word.application#word-word-application-templates-member)
 
+  - [Word.TemplateCollection.load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(1))
+
+  - [Word.TemplateCollection.track](/javascript/api/word/word.templatecollection#word-word-templatecollection-track-member(1))
+
+  - [Word.TemplateCollection.untrack](/javascript/api/word/word.templatecollection#word-word-templatecollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

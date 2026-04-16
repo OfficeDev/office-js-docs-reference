@@ -16,6 +16,22 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Binding.getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
+
+  - [Excel.PivotTableCollection.add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1))
+
+  - [Excel.Table.load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1))
+
+  - [Excel.Table.set](/javascript/api/excel/excel.table#excel-excel-table-set-member(2))
+
+  - [Excel.TableCollection.add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
+
+  - [Excel.TableCollection.getItem](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitem-member(1))
+
+  - [Excel.TableCollection.getItemAt](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemat-member(1))
+
+  - [Excel.TableCollection.getItemOrNullObject](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemornullobject-member(1))
+
   - [Excel.TableCollection.items](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-items-member)
 
 isPreview: false

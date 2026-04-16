@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.OleFormat.load](/javascript/api/word/word.oleformat#word-word-oleformat-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

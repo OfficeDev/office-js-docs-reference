@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.Font.reflection](/javascript/api/word/word.font#word-word-font-reflection-member)
 
+  - [Word.ReflectionFormat.load](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-load-member(1))
+
+  - [Word.ReflectionFormat.set](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-set-member(2))
+
+  - [Word.ReflectionFormat.track](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-track-member(1))
+
+  - [Word.ReflectionFormat.untrack](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

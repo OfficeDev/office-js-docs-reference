@@ -15,6 +15,8 @@ remarks: >-
 
   - [Excel.Table.columns](/javascript/api/excel/excel.table#excel-excel-table-columns-member)
 
+  - [Excel.TableColumnCollection.load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+
   #### Examples
 
 

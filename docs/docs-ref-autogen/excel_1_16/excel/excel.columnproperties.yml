@@ -9,7 +9,11 @@ summary: >-
 
   [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Range.getColumnProperties](/javascript/api/excel/excel.range#excel-excel-range-getcolumnproperties-member(1))
 
 isPreview: false
 isDeprecated: false

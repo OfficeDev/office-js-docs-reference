@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.CustomXmlPartCollection.load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartAxes.getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1))
+
   - [Excel.ChartAxis.axisGroup](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-axisgroup-member)
 
   - [Excel.ChartSeries.axisGroup](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-axisgroup-member)

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.BibliographyData
 summary: >-
   An interface describing the data returned by calling
   `bibliography.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Bibliography.toJSON](/javascript/api/word/word.bibliography#word-word-bibliography-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

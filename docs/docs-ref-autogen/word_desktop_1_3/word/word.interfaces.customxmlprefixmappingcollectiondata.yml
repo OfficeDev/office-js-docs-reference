@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomXmlPrefixMappingCollectionData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPrefixMappingCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomXmlPrefixMappingCollection.toJSON](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

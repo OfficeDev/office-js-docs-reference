@@ -15,7 +15,29 @@ remarks: >-
 
   - [Word.CustomXmlNode.ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)
 
+  - [Word.CustomXmlPart.load](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-load-member(1))
+
+  - [Word.CustomXmlPart.set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(2))
+
+  - [Word.CustomXmlPart.track](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-track-member(1))
+
+  - [Word.CustomXmlPart.untrack](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-untrack-member(1))
+
+  - [Word.CustomXmlPartCollection.add](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1))
+
+  - [Word.CustomXmlPartCollection.getItem](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitem-member(1))
+
+  - [Word.CustomXmlPartCollection.getItemOrNullObject](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitemornullobject-member(1))
+
   - [Word.CustomXmlPartCollection.items](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-items-member)
+
+  - [Word.CustomXmlPartScopedCollection.getItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitem-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.getItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitemornullobject-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.getOnlyItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitem-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.getOnlyItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
 
   - [Word.CustomXmlPartScopedCollection.items](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-items-member)
 

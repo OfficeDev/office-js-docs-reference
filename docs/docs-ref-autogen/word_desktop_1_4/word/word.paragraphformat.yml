@@ -15,6 +15,14 @@ remarks: >-
 
   - [Word.ConditionalStyle.paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)
 
+  - [Word.ParagraphFormat.load](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-load-member(1))
+
+  - [Word.ParagraphFormat.set](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-set-member(2))
+
+  - [Word.ParagraphFormat.track](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-track-member(1))
+
+  - [Word.ParagraphFormat.untrack](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-untrack-member(1))
+
   - [Word.Style.paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)
 
   #### Examples

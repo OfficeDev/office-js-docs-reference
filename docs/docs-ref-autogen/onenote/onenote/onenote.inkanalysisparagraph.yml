@@ -16,6 +16,18 @@ remarks: >-
 
   - [OneNote.InkAnalysisLine.paragraph](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-paragraph-member)
 
+  - [OneNote.InkAnalysisParagraph.load](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-load-member(1))
+
+  - [OneNote.InkAnalysisParagraph.set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(2))
+
+  - [OneNote.InkAnalysisParagraph.track](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-track-member(1))
+
+  - [OneNote.InkAnalysisParagraph.untrack](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-untrack-member(1))
+
+  - [OneNote.InkAnalysisParagraphCollection.getItem](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitem-member(1))
+
+  - [OneNote.InkAnalysisParagraphCollection.getItemAt](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitemat-member(1))
+
   - [OneNote.InkAnalysisParagraphCollection.items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-items-member)
 
 isPreview: false

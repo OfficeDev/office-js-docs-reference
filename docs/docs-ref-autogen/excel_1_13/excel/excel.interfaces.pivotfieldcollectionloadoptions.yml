@@ -10,6 +10,12 @@ remarks: >-
   [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.PivotFieldCollection.load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

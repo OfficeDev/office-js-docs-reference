@@ -16,6 +16,12 @@ remarks: >-
 
   - [Excel.TextFrame.textRange](/javascript/api/excel/excel.textframe#excel-excel-textframe-textrange-member)
 
+  - [Excel.TextRange.getSubstring](/javascript/api/excel/excel.textrange#excel-excel-textrange-getsubstring-member(1))
+
+  - [Excel.TextRange.load](/javascript/api/excel/excel.textrange#excel-excel-textrange-load-member(1))
+
+  - [Excel.TextRange.set](/javascript/api/excel/excel.textrange#excel-excel-textrange-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

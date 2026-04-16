@@ -9,7 +9,11 @@ summary: >-
 
   [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Range.setRowProperties](/javascript/api/excel/excel.range#excel-excel-range-setrowproperties-member(1))
 
 isPreview: false
 isDeprecated: false

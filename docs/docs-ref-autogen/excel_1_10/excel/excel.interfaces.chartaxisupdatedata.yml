@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartAxisUpdateData
 summary: >-
   An interface for updating data on the `ChartAxis` object, for use in
   `chartAxis.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartAxis.set](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-set-member(1))
 
 isPreview: false
 isDeprecated: false

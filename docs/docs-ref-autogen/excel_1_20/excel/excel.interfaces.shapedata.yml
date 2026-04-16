@@ -4,7 +4,11 @@ uid: excel!Excel.Interfaces.ShapeData:interface
 package: excel!
 fullName: Excel.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Shape.toJSON](/javascript/api/excel/excel.shape#excel-excel-shape-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

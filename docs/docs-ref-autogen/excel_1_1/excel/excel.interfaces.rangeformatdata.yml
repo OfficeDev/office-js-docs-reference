@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeFormatData
 summary: >-
   An interface describing the data returned by calling
   `rangeFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeFormat.toJSON](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

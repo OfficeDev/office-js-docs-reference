@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ThreeDimensionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `threeDimensionalFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ThreeDimensionalFormat.toJSON](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.CellValueConditionalFormat.load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1))
+
+  - [Excel.CellValueConditionalFormat.set](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-set-member(2))
+
   - [Excel.ConditionalFormat.cellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalue-member)
 
   - [Excel.ConditionalFormat.cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalueornullobject-member)

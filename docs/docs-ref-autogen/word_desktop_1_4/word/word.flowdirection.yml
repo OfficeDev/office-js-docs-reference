@@ -8,6 +8,14 @@ remarks: >-
   [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.TextColumnCollection.getFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getflowdirection-member(1))
+
+  - [Word.TextColumnCollection.setFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-setflowdirection-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

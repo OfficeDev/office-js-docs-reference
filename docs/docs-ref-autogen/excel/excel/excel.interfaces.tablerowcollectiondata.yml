@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TableRowCollectionData
 summary: >-
   An interface describing the data returned by calling
   `tableRowCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TableRowCollection.toJSON](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

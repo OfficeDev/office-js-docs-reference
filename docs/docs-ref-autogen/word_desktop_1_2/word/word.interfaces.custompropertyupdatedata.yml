@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomPropertyUpdateData
 summary: >-
   An interface for updating data on the `CustomProperty` object, for use in
   `customProperty.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomProperty.set](/javascript/api/word/word.customproperty#word-word-customproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false

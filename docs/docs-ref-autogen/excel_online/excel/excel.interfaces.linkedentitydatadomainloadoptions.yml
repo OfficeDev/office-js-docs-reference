@@ -17,6 +17,12 @@ remarks: >-
 
   This interface isn't supported in Excel on the web.
 
+
+  #### Used by
+
+
+  - [Excel.LinkedEntityDataDomain.load](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

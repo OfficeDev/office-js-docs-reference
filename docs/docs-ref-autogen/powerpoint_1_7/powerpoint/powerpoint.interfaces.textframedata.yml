@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.TextFrameData
 summary: >-
   An interface describing the data returned by calling `textFrame.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.TextFrame.toJSON](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

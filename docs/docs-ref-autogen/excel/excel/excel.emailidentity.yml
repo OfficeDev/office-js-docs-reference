@@ -12,11 +12,19 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Comment.assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
+
+  - [Excel.CommentReply.assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
+
+  - [Excel.DocumentTask.assign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))
+
   - [Excel.DocumentTask.assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)
 
   - [Excel.DocumentTask.completedBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-completedby-member)
 
   - [Excel.DocumentTask.createdBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-createdby-member)
+
+  - [Excel.DocumentTask.unassign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassign-member(1))
 
   - [Excel.DocumentTaskChange.assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member)
 

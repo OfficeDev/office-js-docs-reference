@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.PivotTable.getDataSourceType](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-getdatasourcetype-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -22,13 +22,45 @@ remarks: >-
 
   - [Word.Body.contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
 
+  - [Word.Body.getContentControls](/javascript/api/word/word.body#word-word-body-getcontentcontrols-member(1))
+
   - [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)
+
+  - [Word.ContentControl.getContentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))
+
+  - [Word.ContentControlCollection.getByChangeTrackingStates](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1))
+
+  - [Word.ContentControlCollection.getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1))
+
+  - [Word.ContentControlCollection.getByTitle](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytitle-member(1))
+
+  - [Word.ContentControlCollection.getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+
+  - [Word.ContentControlCollection.load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+
+  - [Word.ContentControlCollection.track](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-track-member(1))
+
+  - [Word.ContentControlCollection.untrack](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-untrack-member(1))
 
   - [Word.Document.contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member)
 
+  - [Word.Document.getContentControls](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1))
+
+  - [Word.Document.selectContentControlsByTag](/javascript/api/word/word.document#word-word-document-selectcontentcontrolsbytag-member(1))
+
+  - [Word.Document.selectContentControlsByTitle](/javascript/api/word/word.document#word-word-document-selectcontentcontrolsbytitle-member(1))
+
+  - [Word.Document.selectLinkedControls](/javascript/api/word/word.document#word-word-document-selectlinkedcontrols-member(1))
+
+  - [Word.Document.selectUnlinkedControls](/javascript/api/word/word.document#word-word-document-selectunlinkedcontrols-member(1))
+
   - [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
 
+  - [Word.Paragraph.getContentControls](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))
+
   - [Word.Range.contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
+
+  - [Word.Range.getContentControls](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))
 
   #### Examples
 

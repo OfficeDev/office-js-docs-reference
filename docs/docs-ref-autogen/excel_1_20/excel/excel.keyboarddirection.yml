@@ -9,6 +9,15 @@ remarks: >-
   1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Range.getExtendedRange](/javascript/api/excel/excel.range#excel-excel-range-getextendedrange-member(1))
+
+  - [Excel.Range.getRangeEdge](/javascript/api/excel/excel.range#excel-excel-range-getrangeedge-member(1))
+
   #### Examples
 
 

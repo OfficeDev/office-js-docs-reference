@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TextConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `TextConditionalFormat` object, for use
   in `textConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TextConditionalFormat.set](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

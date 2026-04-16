@@ -13,6 +13,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.NoteCollection.load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
+
   - [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)
 
   - [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PivotLayoutUpdateData
 summary: >-
   An interface for updating data on the `PivotLayout` object, for use in
   `pivotLayout.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PivotLayout.set](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-set-member(1))
 
 isPreview: false
 isDeprecated: false

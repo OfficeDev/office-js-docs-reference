@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TextRangeUpdateData
 summary: >-
   An interface for updating data on the `TextRange` object, for use in
   `textRange.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TextRange.set](/javascript/api/excel/excel.textrange#excel-excel-textrange-set-member(1))
 
 isPreview: false
 isDeprecated: false

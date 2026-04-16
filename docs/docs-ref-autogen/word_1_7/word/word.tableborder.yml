@@ -9,6 +9,25 @@ remarks: >-
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Table.getBorder](/javascript/api/word/word.table#word-word-table-getborder-member(1))
+
+  - [Word.TableBorder.load](/javascript/api/word/word.tableborder#word-word-tableborder-load-member(1))
+
+  - [Word.TableBorder.set](/javascript/api/word/word.tableborder#word-word-tableborder-set-member(2))
+
+  - [Word.TableBorder.track](/javascript/api/word/word.tableborder#word-word-tableborder-track-member(1))
+
+  - [Word.TableBorder.untrack](/javascript/api/word/word.tableborder#word-word-tableborder-untrack-member(1))
+
+  - [Word.TableCell.getBorder](/javascript/api/word/word.tablecell#word-word-tablecell-getborder-member(1))
+
+  - [Word.TableRow.getBorder](/javascript/api/word/word.tablerow#word-word-tablerow-getborder-member(1))
+
   #### Examples
 
 

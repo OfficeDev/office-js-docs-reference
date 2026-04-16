@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.TableStyleCollection.load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
+
   - [Excel.Workbook.tableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-tablestyles-member)
 
 isPreview: false

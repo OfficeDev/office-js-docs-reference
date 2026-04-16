@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartLineFormatData
 summary: >-
   An interface describing the data returned by calling
   `chartLineFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartLineFormat.toJSON](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

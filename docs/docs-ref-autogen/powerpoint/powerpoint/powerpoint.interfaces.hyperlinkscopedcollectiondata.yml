@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.HyperlinkScopedCollectionData
 summary: >-
   An interface describing the data returned by calling
   `hyperlinkScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.HyperlinkScopedCollection.toJSON](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

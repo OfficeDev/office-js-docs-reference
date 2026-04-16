@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.HeaderFooterUpdateData
 summary: >-
   An interface for updating data on the `HeaderFooter` object, for use in
   `headerFooter.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.HeaderFooter.set](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-set-member(1))
 
 isPreview: false
 isDeprecated: false

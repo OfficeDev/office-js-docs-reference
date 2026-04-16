@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartAxesData
 summary: >-
   An interface describing the data returned by calling `chartAxes.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartAxes.toJSON](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

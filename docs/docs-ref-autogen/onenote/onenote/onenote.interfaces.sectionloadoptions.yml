@@ -8,6 +8,12 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.Section.load](/javascript/api/onenote/onenote.section#onenote-onenote-section-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

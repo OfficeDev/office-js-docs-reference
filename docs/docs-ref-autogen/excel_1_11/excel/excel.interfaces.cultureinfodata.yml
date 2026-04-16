@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CultureInfoData
 summary: >-
   An interface describing the data returned by calling
   `cultureInfo.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CultureInfo.toJSON](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

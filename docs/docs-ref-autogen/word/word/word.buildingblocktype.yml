@@ -12,7 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - [Word.BuildingBlockEntryCollection.add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
+
   - [Word.BuildingBlockGalleryContentControl.buildingBlockType](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-buildingblocktype-member)
+
+  - [Word.BuildingBlockTypeItemCollection.getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,6 +12,12 @@ remarks: >-
   [API set: WordApi
   1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.ContentControlListItemCollection.load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

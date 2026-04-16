@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.Font.textShadow](/javascript/api/word/word.font#word-word-font-textshadow-member)
 
+  - [Word.ShadowFormat.load](/javascript/api/word/word.shadowformat#word-word-shadowformat-load-member(1))
+
+  - [Word.ShadowFormat.set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(2))
+
+  - [Word.ShadowFormat.track](/javascript/api/word/word.shadowformat#word-word-shadowformat-track-member(1))
+
+  - [Word.ShadowFormat.untrack](/javascript/api/word/word.shadowformat#word-word-shadowformat-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

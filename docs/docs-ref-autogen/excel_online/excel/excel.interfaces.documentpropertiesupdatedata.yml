@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DocumentPropertiesUpdateData
 summary: >-
   An interface for updating data on the `DocumentProperties` object, for use in
   `documentProperties.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DocumentProperties.set](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-set-member(1))
 
 isPreview: false
 isDeprecated: false

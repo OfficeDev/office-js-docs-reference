@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.RepeatingSectionContentControl.repeatingSectionItems](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-repeatingsectionitems-member)
 
+  - [Word.RepeatingSectionItemCollection.load](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-load-member(1))
+
+  - [Word.RepeatingSectionItemCollection.track](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-track-member(1))
+
+  - [Word.RepeatingSectionItemCollection.untrack](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

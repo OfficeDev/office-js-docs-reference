@@ -15,6 +15,10 @@ remarks: >-
 
   - [Word.Field.type](/javascript/api/word/word.field#word-word-field-type-member)
 
+  - [Word.FieldCollection.getByTypes](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getbytypes-member(1))
+
+  - [Word.Range.insertField](/javascript/api/word/word.range#word-word-range-insertfield-member(1))
+
   #### Examples
 
 

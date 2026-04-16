@@ -11,6 +11,16 @@ remarks: >-
   [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Range.getTables](/javascript/api/excel/excel.range#excel-excel-range-gettables-member(1))
+
+  - [Excel.RangeAreas.getTables](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-gettables-member(1))
+
+  - [Excel.TableScopedCollection.load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

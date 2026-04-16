@@ -17,6 +17,14 @@ remarks: >-
 
   - [Word.CustomXmlPart.schemaCollection](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-schemacollection-member)
 
+  - [Word.CustomXmlSchemaCollection.addCollection](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-addcollection-member(1))
+
+  - [Word.CustomXmlSchemaCollection.load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(1))
+
+  - [Word.CustomXmlSchemaCollection.track](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-track-member(1))
+
+  - [Word.CustomXmlSchemaCollection.untrack](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartPointUpdateData
 summary: >-
   An interface for updating data on the `ChartPoint` object, for use in
   `chartPoint.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartPoint.set](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-set-member(1))
 
 isPreview: false
 isDeprecated: false

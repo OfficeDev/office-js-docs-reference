@@ -9,6 +9,19 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.insertBreak](/javascript/api/word/word.body#word-word-body-insertbreak-member(1))
+
+  - [Word.ContentControl.insertBreak](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertbreak-member(1))
+
+  - [Word.Paragraph.insertBreak](/javascript/api/word/word.paragraph#word-word-paragraph-insertbreak-member(1))
+
+  - [Word.Range.insertBreak](/javascript/api/word/word.range#word-word-range-insertbreak-member(1))
+
   #### Examples
 
 

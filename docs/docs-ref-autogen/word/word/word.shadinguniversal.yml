@@ -24,6 +24,14 @@ remarks: >-
 
   - [Word.Selection.shading](/javascript/api/word/word.selection#word-word-selection-shading-member)
 
+  - [Word.ShadingUniversal.load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1))
+
+  - [Word.ShadingUniversal.set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(2))
+
+  - [Word.ShadingUniversal.track](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-track-member(1))
+
+  - [Word.ShadingUniversal.untrack](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-untrack-member(1))
+
   - [Word.Table.shading](/javascript/api/word/word.table#word-word-table-shading-member)
 
   - [Word.TableCell.shading](/javascript/api/word/word.tablecell#word-word-tablecell-shading-member)

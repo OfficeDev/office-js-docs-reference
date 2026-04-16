@@ -16,6 +16,8 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.BulletFormat.load](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-load-member(1))
+
   - [PowerPoint.ParagraphFormat.bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-bulletformat-member)
 
   #### Examples

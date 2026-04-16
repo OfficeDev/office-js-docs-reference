@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DataValidationUpdateData
 summary: >-
   An interface for updating data on the `DataValidation` object, for use in
   `dataValidation.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DataValidation.set](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-set-member(1))
 
 isPreview: false
 isDeprecated: false

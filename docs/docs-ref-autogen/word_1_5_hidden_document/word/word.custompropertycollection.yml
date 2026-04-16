@@ -15,6 +15,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.CustomPropertyCollection.load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+
+  - [Word.CustomPropertyCollection.track](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-track-member(1))
+
+  - [Word.CustomPropertyCollection.untrack](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-untrack-member(1))
+
   - [Word.DocumentProperties.customProperties](/javascript/api/word/word.documentproperties#word-word-documentproperties-customproperties-member)
 
   #### Examples

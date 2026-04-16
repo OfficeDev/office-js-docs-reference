@@ -12,7 +12,23 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.CustomXmlPart.load](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-load-member(1))
+
+  - [Excel.CustomXmlPartCollection.add](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-add-member(1))
+
+  - [Excel.CustomXmlPartCollection.getItem](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitem-member(1))
+
+  - [Excel.CustomXmlPartCollection.getItemOrNullObject](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitemornullobject-member(1))
+
   - [Excel.CustomXmlPartCollection.items](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-items-member)
+
+  - [Excel.CustomXmlPartScopedCollection.getItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitem-member(1))
+
+  - [Excel.CustomXmlPartScopedCollection.getItemOrNullObject](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitemornullobject-member(1))
+
+  - [Excel.CustomXmlPartScopedCollection.getOnlyItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getonlyitem-member(1))
+
+  - [Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
 
   - [Excel.CustomXmlPartScopedCollection.items](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-items-member)
 

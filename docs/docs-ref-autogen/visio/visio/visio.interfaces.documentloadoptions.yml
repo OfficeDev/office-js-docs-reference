@@ -8,6 +8,12 @@ remarks: >-
   [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
 
+
+  #### Used by
+
+
+  - [Visio.Document.load](/javascript/api/visio/visio.document#visio-visio-document-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

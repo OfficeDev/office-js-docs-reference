@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.NamedItemArrayValuesData
 summary: >-
   An interface describing the data returned by calling
   `namedItemArrayValues.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.NamedItemArrayValues.toJSON](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Visio.Interfaces.HyperlinkCollectionData
 summary: >-
   An interface describing the data returned by calling
   `hyperlinkCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Visio.HyperlinkCollection.toJSON](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

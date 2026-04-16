@@ -13,6 +13,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartPointsCollection.load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
+
   - [Excel.ChartSeries.points](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-points-member)
 
   #### Examples

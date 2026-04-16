@@ -13,7 +13,23 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ComboBoxContentControl.addListItem](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-addlistitem-member(1))
+
+  - [Word.ContentControlListItem.load](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-load-member(1))
+
+  - [Word.ContentControlListItem.set](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-set-member(2))
+
+  - [Word.ContentControlListItem.track](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-track-member(1))
+
+  - [Word.ContentControlListItem.untrack](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-untrack-member(1))
+
+  - [Word.ContentControlListItemCollection.getFirst](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirst-member(1))
+
+  - [Word.ContentControlListItemCollection.getFirstOrNullObject](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirstornullobject-member(1))
+
   - [Word.ContentControlListItemCollection.items](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-items-member)
+
+  - [Word.DropDownListContentControl.addListItem](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-addlistitem-member(1))
 
   #### Examples
 

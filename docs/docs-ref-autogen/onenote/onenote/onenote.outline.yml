@@ -12,6 +12,18 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.Application.getActiveOutline](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutline-member(1))
+
+  - [OneNote.Application.getActiveOutlineOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutlineornull-member(1))
+
+  - [OneNote.Outline.load](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-load-member(1))
+
+  - [OneNote.Outline.track](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-track-member(1))
+
+  - [OneNote.Outline.untrack](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-untrack-member(1))
+
+  - [OneNote.Page.addOutline](/javascript/api/onenote/onenote.page#onenote-onenote-page-addoutline-member(1))
+
   - [OneNote.PageContent.outline](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-outline-member)
 
   - [OneNote.Paragraph.outline](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-outline-member)

@@ -15,6 +15,13 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.Shape.getImageAsBase64](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getimageasbase64-member(1))
+
   #### Examples
 
 

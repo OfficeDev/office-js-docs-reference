@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomXmlPartData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPart.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomXmlPart.toJSON](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

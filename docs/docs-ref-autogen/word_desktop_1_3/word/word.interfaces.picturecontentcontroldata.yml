@@ -6,7 +6,11 @@ fullName: Word.Interfaces.PictureContentControlData
 summary: >-
   An interface describing the data returned by calling
   `pictureContentControl.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.PictureContentControl.toJSON](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

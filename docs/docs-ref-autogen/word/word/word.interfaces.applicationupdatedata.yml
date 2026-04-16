@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ApplicationUpdateData
 summary: >-
   An interface for updating data on the `Application` object, for use in
   `application.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Application.set](/javascript/api/word/word.application#word-word-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

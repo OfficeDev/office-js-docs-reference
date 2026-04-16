@@ -6,7 +6,11 @@ fullName: Word.Interfaces.SectionData
 summary: >-
   An interface describing the data returned by calling `section.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Section.toJSON](/javascript/api/word/word.section#word-word-section-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

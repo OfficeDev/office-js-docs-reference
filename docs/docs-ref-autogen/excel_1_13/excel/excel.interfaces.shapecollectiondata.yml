@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ShapeCollectionData
 summary: >-
   An interface describing the data returned by calling
   `shapeCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ShapeCollection.toJSON](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

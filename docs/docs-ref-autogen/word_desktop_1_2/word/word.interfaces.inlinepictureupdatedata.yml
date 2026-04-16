@@ -6,7 +6,11 @@ fullName: Word.Interfaces.InlinePictureUpdateData
 summary: >-
   An interface for updating data on the `InlinePicture` object, for use in
   `inlinePicture.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.InlinePicture.set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(1))
 
 isPreview: false
 isDeprecated: false

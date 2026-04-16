@@ -9,6 +9,25 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.search](/javascript/api/word/word.body#word-word-body-search-member(1))
+
+  - [Word.ContentControl.search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
+
+  - [Word.Paragraph.search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
+
+  - [Word.Range.search](/javascript/api/word/word.range#word-word-range-search-member(1))
+
+  - [Word.RangeCollection.load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+
+  - [Word.RangeCollection.track](/javascript/api/word/word.rangecollection#word-word-rangecollection-track-member(1))
+
+  - [Word.RangeCollection.untrack](/javascript/api/word/word.rangecollection#word-word-rangecollection-untrack-member(1))
+
   #### Examples
 
 

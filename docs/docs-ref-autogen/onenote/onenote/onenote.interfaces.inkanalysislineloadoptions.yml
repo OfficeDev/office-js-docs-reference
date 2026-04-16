@@ -10,6 +10,12 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.InkAnalysisLine.load](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

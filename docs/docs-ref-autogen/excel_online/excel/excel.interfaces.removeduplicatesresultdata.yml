@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RemoveDuplicatesResultData
 summary: >-
   An interface describing the data returned by calling
   `removeDuplicatesResult.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RemoveDuplicatesResult.toJSON](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

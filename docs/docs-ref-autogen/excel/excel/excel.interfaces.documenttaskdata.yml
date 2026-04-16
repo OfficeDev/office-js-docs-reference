@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DocumentTaskData
 summary: >-
   An interface describing the data returned by calling
   `documentTask.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DocumentTask.toJSON](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

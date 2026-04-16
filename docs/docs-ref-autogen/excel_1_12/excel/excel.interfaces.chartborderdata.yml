@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartBorderData
 summary: >-
   An interface describing the data returned by calling
   `chartBorder.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartBorder.toJSON](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

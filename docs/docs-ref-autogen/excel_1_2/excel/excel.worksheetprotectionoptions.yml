@@ -14,6 +14,8 @@ remarks: >-
 
   - [Excel.WorksheetProtection.options](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-options-member)
 
+  - [Excel.WorksheetProtection.protect](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protect-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

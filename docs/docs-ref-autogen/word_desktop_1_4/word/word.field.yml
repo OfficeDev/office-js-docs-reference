@@ -25,7 +25,35 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Field.getNext](/javascript/api/word/word.field#word-word-field-getnext-member(1))
+
+  - [Word.Field.getNextOrNullObject](/javascript/api/word/word.field#word-word-field-getnextornullobject-member(1))
+
+  - [Word.Field.load](/javascript/api/word/word.field#word-word-field-load-member(1))
+
+  - [Word.Field.set](/javascript/api/word/word.field#word-word-field-set-member(2))
+
+  - [Word.Field.track](/javascript/api/word/word.field#word-word-field-track-member(1))
+
+  - [Word.Field.untrack](/javascript/api/word/word.field#word-word-field-untrack-member(1))
+
+  - [Word.FieldCollection.getFirst](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getfirst-member(1))
+
+  - [Word.FieldCollection.getFirstOrNullObject](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getfirstornullobject-member(1))
+
   - [Word.FieldCollection.items](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-items-member)
+
+  - [Word.Range.insertField](/javascript/api/word/word.range#word-word-range-insertfield-member(1))
+
+  - [Word.Selection.nextField](/javascript/api/word/word.selection#word-word-selection-nextfield-member(1))
+
+  - [Word.Selection.previousField](/javascript/api/word/word.selection#word-word-selection-previousfield-member(1))
+
+  - [Word.TableOfAuthoritiesCollection.markCitation](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))
+
+  - [Word.TableOfContentsCollection.markTocEntry](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))
+
+  - [Word.TableOfFiguresCollection.markTocEntry](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))
 
   #### Examples
 

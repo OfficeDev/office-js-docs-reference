@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalFormatRuleData
 summary: >-
   An interface describing the data returned by calling
   `conditionalFormatRule.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalFormatRule.toJSON](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

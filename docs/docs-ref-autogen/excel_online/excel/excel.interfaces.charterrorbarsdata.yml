@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartErrorBarsData
 summary: >-
   An interface describing the data returned by calling
   `chartErrorBars.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartErrorBars.toJSON](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

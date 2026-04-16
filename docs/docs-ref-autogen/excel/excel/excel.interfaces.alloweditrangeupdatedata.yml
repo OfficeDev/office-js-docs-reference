@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.AllowEditRangeUpdateData
 summary: >-
   An interface for updating data on the `AllowEditRange` object, for use in
   `allowEditRange.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.AllowEditRange.set](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-set-member(1))
 
 isPreview: false
 isDeprecated: false

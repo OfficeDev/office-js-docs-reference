@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ShapeFontUpdateData
 summary: >-
   An interface for updating data on the `ShapeFont` object, for use in
   `shapeFont.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ShapeFont.set](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-set-member(1))
 
 isPreview: false
 isDeprecated: false

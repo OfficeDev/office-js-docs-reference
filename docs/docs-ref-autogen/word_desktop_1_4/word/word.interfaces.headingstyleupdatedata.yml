@@ -6,7 +6,11 @@ fullName: Word.Interfaces.HeadingStyleUpdateData
 summary: >-
   An interface for updating data on the `HeadingStyle` object, for use in
   `headingStyle.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.HeadingStyle.set](/javascript/api/word/word.headingstyle#word-word-headingstyle-set-member(1))
 
 isPreview: false
 isDeprecated: false

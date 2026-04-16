@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.IconSetConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `iconSetConditionalFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.IconSetConditionalFormat.toJSON](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

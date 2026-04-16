@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
 summary: >-
   An interface for updating data on the `ConditionalDataBarPositiveFormat`
   object, for use in `conditionalDataBarPositiveFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalDataBarPositiveFormat.set](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

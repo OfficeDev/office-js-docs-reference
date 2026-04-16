@@ -16,6 +16,12 @@ remarks: >-
 
   - [Word.Document.indexes](/javascript/api/word/word.document#word-word-document-indexes-member)
 
+  - [Word.IndexCollection.load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
+
+  - [Word.IndexCollection.track](/javascript/api/word/word.indexcollection#word-word-indexcollection-track-member(1))
+
+  - [Word.IndexCollection.untrack](/javascript/api/word/word.indexcollection#word-word-indexcollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

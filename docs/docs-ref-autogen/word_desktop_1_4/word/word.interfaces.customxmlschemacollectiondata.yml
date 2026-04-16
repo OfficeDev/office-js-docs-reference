@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomXmlSchemaCollectionData
 summary: >-
   An interface describing the data returned by calling
   `customXmlSchemaCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomXmlSchemaCollection.toJSON](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

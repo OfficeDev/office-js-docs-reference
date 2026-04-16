@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.CustomXmlPartCollection.load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
+
   - [Excel.Workbook.customXmlParts](/javascript/api/excel/excel.workbook#excel-excel-workbook-customxmlparts-member)
 
 isPreview: false

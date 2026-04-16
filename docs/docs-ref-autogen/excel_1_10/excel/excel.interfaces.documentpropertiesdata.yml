@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DocumentPropertiesData
 summary: >-
   An interface describing the data returned by calling
   `documentProperties.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DocumentProperties.toJSON](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

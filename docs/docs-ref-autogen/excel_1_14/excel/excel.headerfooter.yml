@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.HeaderFooter.load](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-load-member(1))
+
+  - [Excel.HeaderFooter.set](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-set-member(2))
+
   - [Excel.HeaderFooterGroup.defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-defaultforallpages-member)
 
   - [Excel.HeaderFooterGroup.evenPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-evenpages-member)

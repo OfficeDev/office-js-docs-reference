@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Note.load](/javascript/api/excel/excel.note#excel-excel-note-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

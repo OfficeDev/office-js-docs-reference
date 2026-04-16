@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Conflict.load](/javascript/api/word/word.conflict#word-word-conflict-load-member(1))
+
+  - [Word.Conflict.set](/javascript/api/word/word.conflict#word-word-conflict-set-member(2))
+
+  - [Word.Conflict.track](/javascript/api/word/word.conflict#word-word-conflict-track-member(1))
+
+  - [Word.Conflict.untrack](/javascript/api/word/word.conflict#word-word-conflict-untrack-member(1))
+
+  - [Word.ConflictCollection.getItem](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-getitem-member(1))
+
   - [Word.ConflictCollection.items](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-items-member)
 
 isPreview: false

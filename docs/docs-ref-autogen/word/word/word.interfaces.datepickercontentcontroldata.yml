@@ -6,7 +6,11 @@ fullName: Word.Interfaces.DatePickerContentControlData
 summary: >-
   An interface describing the data returned by calling
   `datePickerContentControl.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.DatePickerContentControl.toJSON](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

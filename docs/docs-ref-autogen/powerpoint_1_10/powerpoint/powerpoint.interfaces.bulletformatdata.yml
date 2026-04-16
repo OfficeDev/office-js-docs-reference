@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.BulletFormatData
 summary: >-
   An interface describing the data returned by calling
   `bulletFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.BulletFormat.toJSON](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

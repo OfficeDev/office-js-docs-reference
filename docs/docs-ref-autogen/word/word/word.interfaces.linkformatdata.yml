@@ -6,7 +6,11 @@ fullName: Word.Interfaces.LinkFormatData
 summary: >-
   An interface describing the data returned by calling `linkFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.LinkFormat.toJSON](/javascript/api/word/word.linkformat#word-word-linkformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

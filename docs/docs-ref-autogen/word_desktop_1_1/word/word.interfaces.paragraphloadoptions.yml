@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Paragraph.load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

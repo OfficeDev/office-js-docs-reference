@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.TableCellUpdateData
 summary: >-
   An interface for updating data on the `TableCell` object, for use in
   `tableCell.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.TableCell.set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(1))
 
 isPreview: false
 isDeprecated: false

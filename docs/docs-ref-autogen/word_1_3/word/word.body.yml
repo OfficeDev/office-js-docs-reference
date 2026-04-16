@@ -13,9 +13,17 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Body.load](/javascript/api/word/word.body#word-word-body-load-member(1))
+
   - [Word.Body.parentBody](/javascript/api/word/word.body#word-word-body-parentbody-member)
 
   - [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#word-word-body-parentbodyornullobject-member)
+
+  - [Word.Body.set](/javascript/api/word/word.body#word-word-body-set-member(2))
+
+  - [Word.Body.track](/javascript/api/word/word.body#word-word-body-track-member(1))
+
+  - [Word.Body.untrack](/javascript/api/word/word.body#word-word-body-untrack-member(1))
 
   - [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)
 
@@ -26,6 +34,10 @@ remarks: >-
   - [Word.Range.parentBody](/javascript/api/word/word.range#word-word-range-parentbody-member)
 
   - [Word.Section.body](/javascript/api/word/word.section#word-word-section-body-member)
+
+  - [Word.Section.getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1))
+
+  - [Word.Section.getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
 
   - [Word.Table.parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)
 

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.WindowData
 summary: >-
   An interface describing the data returned by calling `window.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Window.toJSON](/javascript/api/word/word.window#word-word-window-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

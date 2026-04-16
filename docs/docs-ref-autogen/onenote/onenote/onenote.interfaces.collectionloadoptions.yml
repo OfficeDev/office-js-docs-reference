@@ -4,7 +4,37 @@ uid: onenote!OneNote.Interfaces.CollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.InkAnalysisLineCollection.load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
+
+  - [OneNote.InkAnalysisParagraphCollection.load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1))
+
+  - [OneNote.InkAnalysisWordCollection.load](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-load-member(1))
+
+  - [OneNote.InkStrokeCollection.load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
+
+  - [OneNote.InkWordCollection.load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
+
+  - [OneNote.NotebookCollection.load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
+
+  - [OneNote.PageCollection.load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1))
+
+  - [OneNote.PageContentCollection.load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+
+  - [OneNote.ParagraphCollection.load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
+
+  - [OneNote.PointCollection.load](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-load-member(1))
+
+  - [OneNote.SectionCollection.load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(1))
+
+  - [OneNote.SectionGroupCollection.load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
+
+  - [OneNote.TableCellCollection.load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
+
+  - [OneNote.TableRowCollection.load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.Field.linkFormat](/javascript/api/word/word.field#word-word-field-linkformat-member)
 
+  - [Word.LinkFormat.load](/javascript/api/word/word.linkformat#word-word-linkformat-load-member(1))
+
+  - [Word.LinkFormat.set](/javascript/api/word/word.linkformat#word-word-linkformat-set-member(2))
+
+  - [Word.LinkFormat.track](/javascript/api/word/word.linkformat#word-word-linkformat-track-member(1))
+
+  - [Word.LinkFormat.untrack](/javascript/api/word/word.linkformat#word-word-linkformat-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

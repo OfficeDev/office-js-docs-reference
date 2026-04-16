@@ -33,11 +33,37 @@ remarks: >-
 
   - [Word.Range.parentTableCellOrNullObject](/javascript/api/word/word.range#word-word-range-parenttablecellornullobject-member)
 
+  - [Word.Table.getCell](/javascript/api/word/word.table#word-word-table-getcell-member(1))
+
+  - [Word.Table.getCellOrNullObject](/javascript/api/word/word.table#word-word-table-getcellornullobject-member(1))
+
+  - [Word.Table.mergeCells](/javascript/api/word/word.table#word-word-table-mergecells-member(1))
+
   - [Word.Table.parentTableCell](/javascript/api/word/word.table#word-word-table-parenttablecell-member)
 
   - [Word.Table.parentTableCellOrNullObject](/javascript/api/word/word.table#word-word-table-parenttablecellornullobject-member)
 
+  - [Word.TableCell.getNext](/javascript/api/word/word.tablecell#word-word-tablecell-getnext-member(1))
+
+  - [Word.TableCell.getNextOrNullObject](/javascript/api/word/word.tablecell#word-word-tablecell-getnextornullobject-member(1))
+
+  - [Word.TableCell.load](/javascript/api/word/word.tablecell#word-word-tablecell-load-member(1))
+
+  - [Word.TableCell.merge](/javascript/api/word/word.tablecell#word-word-tablecell-merge-member(1))
+
+  - [Word.TableCell.set](/javascript/api/word/word.tablecell#word-word-tablecell-set-member(2))
+
+  - [Word.TableCell.track](/javascript/api/word/word.tablecell#word-word-tablecell-track-member(1))
+
+  - [Word.TableCell.untrack](/javascript/api/word/word.tablecell#word-word-tablecell-untrack-member(1))
+
+  - [Word.TableCellCollection.getFirst](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirst-member(1))
+
+  - [Word.TableCellCollection.getFirstOrNullObject](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-getfirstornullobject-member(1))
+
   - [Word.TableCellCollection.items](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-items-member)
+
+  - [Word.TableRow.merge](/javascript/api/word/word.tablerow#word-word-tablerow-merge-member(1))
 
   #### Examples
 

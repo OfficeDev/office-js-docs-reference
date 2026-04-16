@@ -12,7 +12,25 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Comment.load](/javascript/api/excel/excel.comment#excel-excel-comment-load-member(1))
+
+  - [Excel.Comment.set](/javascript/api/excel/excel.comment#excel-excel-comment-set-member(2))
+
+  - [Excel.CommentCollection.add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+
+  - [Excel.CommentCollection.getItem](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitem-member(1))
+
+  - [Excel.CommentCollection.getItemAt](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitemat-member(1))
+
+  - [Excel.CommentCollection.getItemByCell](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembycell-member(1))
+
+  - [Excel.CommentCollection.getItemByReplyId](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembyreplyid-member(1))
+
+  - [Excel.CommentCollection.getItemOrNullObject](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitemornullobject-member(1))
+
   - [Excel.CommentCollection.items](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-items-member)
+
+  - [Excel.CommentReply.getParentComment](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-getparentcomment-member(1))
 
   - [Excel.DocumentTask.comment](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-comment-member)
 

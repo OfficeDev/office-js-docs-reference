@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.ChartDataTable.load](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

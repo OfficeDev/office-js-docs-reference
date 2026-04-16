@@ -13,6 +13,16 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Table.convertToText](/javascript/api/word/word.table#word-word-table-converttotext-member(1))
+
+  - [Word.TableRow.convertToText](/javascript/api/word/word.tablerow#word-word-tablerow-converttotext-member(1))
+
+  - [Word.TableRowCollection.convertToText](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-converttotext-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

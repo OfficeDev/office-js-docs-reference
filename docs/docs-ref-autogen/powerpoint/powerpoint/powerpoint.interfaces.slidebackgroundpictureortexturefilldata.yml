@@ -7,7 +7,11 @@ fullName: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData
 summary: >-
   An interface describing the data returned by calling
   `slideBackgroundPictureOrTextureFill.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.SlideBackgroundPictureOrTextureFill.toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

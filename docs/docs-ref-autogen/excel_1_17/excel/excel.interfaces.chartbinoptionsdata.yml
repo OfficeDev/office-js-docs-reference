@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartBinOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartBinOptions.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartBinOptions.toJSON](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

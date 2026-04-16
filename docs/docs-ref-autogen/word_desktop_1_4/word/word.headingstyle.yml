@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Word.HeadingStyle.load](/javascript/api/word/word.headingstyle#word-word-headingstyle-load-member(1))
+
+  - [Word.HeadingStyle.set](/javascript/api/word/word.headingstyle#word-word-headingstyle-set-member(2))
+
+  - [Word.HeadingStyle.track](/javascript/api/word/word.headingstyle#word-word-headingstyle-track-member(1))
+
+  - [Word.HeadingStyle.untrack](/javascript/api/word/word.headingstyle#word-word-headingstyle-untrack-member(1))
+
+  - [Word.HeadingStyleCollection.add](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1))
+
   - [Word.HeadingStyleCollection.items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)
 
 isPreview: false

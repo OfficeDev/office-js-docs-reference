@@ -14,13 +14,29 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.Application.getActiveParagraph](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraph-member(1))
+
+  - [OneNote.Application.getActiveParagraphOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraphornull-member(1))
+
   - [OneNote.Image.paragraph](/javascript/api/onenote/onenote.image#onenote-onenote-image-paragraph-member)
 
   - [OneNote.InkWord.paragraph](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-paragraph-member)
 
+  - [OneNote.Paragraph.load](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-load-member(1))
+
   - [OneNote.Paragraph.parentParagraph](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraph-member)
 
   - [OneNote.Paragraph.parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraphornull-member)
+
+  - [OneNote.Paragraph.set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(2))
+
+  - [OneNote.Paragraph.track](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-track-member(1))
+
+  - [OneNote.Paragraph.untrack](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-untrack-member(1))
+
+  - [OneNote.ParagraphCollection.getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1))
+
+  - [OneNote.ParagraphCollection.getItemAt](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitemat-member(1))
 
   - [OneNote.ParagraphCollection.items](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-items-member)
 

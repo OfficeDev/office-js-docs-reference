@@ -6,7 +6,11 @@ fullName: Word.Interfaces.LineFormatData
 summary: >-
   An interface describing the data returned by calling `lineFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.LineFormat.toJSON](/javascript/api/word/word.lineformat#word-word-lineformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

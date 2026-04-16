@@ -11,6 +11,12 @@ remarks: >-
   [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.WorkbookCreated.load](/javascript/api/excel/excel.workbookcreated#excel-excel-workbookcreated-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

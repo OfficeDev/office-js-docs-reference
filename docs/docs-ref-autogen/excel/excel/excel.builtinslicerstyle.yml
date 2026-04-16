@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Slicer.setStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-setstyle-member(1))
+
 isPreview: true
 isDeprecated: false
 fields:

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TableStyleCollectionData
 summary: >-
   An interface describing the data returned by calling
   `tableStyleCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TableStyleCollection.toJSON](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

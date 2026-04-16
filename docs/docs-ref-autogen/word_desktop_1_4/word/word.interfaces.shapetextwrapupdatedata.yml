@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShapeTextWrapUpdateData
 summary: >-
   An interface for updating data on the `ShapeTextWrap` object, for use in
   `shapeTextWrap.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShapeTextWrap.set](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-set-member(1))
 
 isPreview: false
 isDeprecated: false

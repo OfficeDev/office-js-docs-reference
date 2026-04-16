@@ -14,6 +14,12 @@ remarks: >-
 
   - [OneNote.InkAnalysisLine.words](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-words-member)
 
+  - [OneNote.InkAnalysisWordCollection.load](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-load-member(1))
+
+  - [OneNote.InkAnalysisWordCollection.track](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-track-member(1))
+
+  - [OneNote.InkAnalysisWordCollection.untrack](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

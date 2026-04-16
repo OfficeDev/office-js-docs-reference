@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.Shape.textFrame](/javascript/api/excel/excel.shape#excel-excel-shape-textframe-member)
 
+  - [Excel.TextFrame.load](/javascript/api/excel/excel.textframe#excel-excel-textframe-load-member(1))
+
+  - [Excel.TextFrame.set](/javascript/api/excel/excel.textframe#excel-excel-textframe-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -10,6 +10,12 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.SectionGroup.load](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -11,6 +11,12 @@ remarks: >-
   [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Document.load](/javascript/api/word/word.document#word-word-document-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

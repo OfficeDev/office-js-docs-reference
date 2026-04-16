@@ -32,11 +32,41 @@ remarks: >-
 
   - [Excel.RangeAreas.worksheet](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-worksheet-member)
 
+  - [Excel.Shape.copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
+
   - [Excel.Slicer.worksheet](/javascript/api/excel/excel.slicer#excel-excel-slicer-worksheet-member)
+
+  - [Excel.SlicerCollection.add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
   - [Excel.Table.worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
 
   - [Excel.Window.activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)
+
+  - [Excel.Worksheet.copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
+
+  - [Excel.Worksheet.getNext](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnext-member(1))
+
+  - [Excel.Worksheet.getNextOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnextornullobject-member(1))
+
+  - [Excel.Worksheet.getPrevious](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getprevious-member(1))
+
+  - [Excel.Worksheet.getPreviousOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getpreviousornullobject-member(1))
+
+  - [Excel.Worksheet.load](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-load-member(1))
+
+  - [Excel.Worksheet.set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(2))
+
+  - [Excel.WorksheetCollection.add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1))
+
+  - [Excel.WorksheetCollection.getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1))
+
+  - [Excel.WorksheetCollection.getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1))
+
+  - [Excel.WorksheetCollection.getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1))
+
+  - [Excel.WorksheetCollection.getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1))
+
+  - [Excel.WorksheetCollection.getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1))
 
   - [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
 

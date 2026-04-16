@@ -14,6 +14,8 @@ remarks: >-
 
   - [Excel.Workbook.protection](/javascript/api/excel/excel.workbook#excel-excel-workbook-protection-member)
 
+  - [Excel.WorkbookProtection.load](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

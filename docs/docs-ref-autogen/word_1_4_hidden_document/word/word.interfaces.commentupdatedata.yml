@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CommentUpdateData
 summary: >-
   An interface for updating data on the `Comment` object, for use in
   `comment.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Comment.set](/javascript/api/word/word.comment#word-word-comment-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `DataBarConditionalFormat` object, for
   use in `dataBarConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DataBarConditionalFormat.set](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -21,6 +21,18 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.LinkedEntityDataDomain.load](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-load-member(1))
+
+  - [Excel.LinkedEntityDataDomainCollection.getItem](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitem-member(1))
+
+  - [Excel.LinkedEntityDataDomainCollection.getItemAt](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemat-member(1))
+
+  - [Excel.LinkedEntityDataDomainCollection.getItemByName](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembyname-member(1))
+
+  - [Excel.LinkedEntityDataDomainCollection.getItemByNameOrNullObject](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembynameornullobject-member(1))
+
+  - [Excel.LinkedEntityDataDomainCollection.getItemOrNullObject](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemornullobject-member(1))
+
   - [Excel.LinkedEntityDataDomainCollection.items](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-items-member)
 
 isPreview: false

@@ -15,6 +15,8 @@ remarks: >-
 
   - [PowerPoint.SlideBackground.fill](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-fill-member)
 
+  - [PowerPoint.SlideBackgroundFill.load](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-load-member(1))
+
   - [PowerPoint.SlideLayoutBackground.fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-fill-member)
 
   - [PowerPoint.SlideMasterBackground.fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-fill-member)

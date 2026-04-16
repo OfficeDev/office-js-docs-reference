@@ -4,7 +4,11 @@ uid: excel!Excel.Interfaces.ImageData:interface
 package: excel!
 fullName: Excel.Interfaces.ImageData
 summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Image.toJSON](/javascript/api/excel/excel.image#excel-excel-image-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

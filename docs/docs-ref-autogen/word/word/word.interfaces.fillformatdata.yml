@@ -6,7 +6,11 @@ fullName: Word.Interfaces.FillFormatData
 summary: >-
   An interface describing the data returned by calling `fillFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.FillFormat.toJSON](/javascript/api/word/word.fillformat#word-word-fillformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

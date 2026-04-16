@@ -14,7 +14,11 @@ remarks: >-
 
   - [Excel.WorksheetProtection.options](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-options-member)
 
+  - [Excel.WorksheetProtection.protect](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protect-member(1))
+
   - [Excel.WorksheetProtection.savedOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-savedoptions-member)
+
+  - [Excel.WorksheetProtection.updateOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-updateoptions-member(1))
 
 isPreview: false
 isDeprecated: false

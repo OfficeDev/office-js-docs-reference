@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShadingData
 summary: >-
   An interface describing the data returned by calling `shading.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Shading.toJSON](/javascript/api/word/word.shading#word-word-shading-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

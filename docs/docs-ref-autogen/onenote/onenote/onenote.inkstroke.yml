@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.InkStroke.load](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-load-member(1))
+
+  - [OneNote.InkStroke.track](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-track-member(1))
+
+  - [OneNote.InkStroke.untrack](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-untrack-member(1))
+
+  - [OneNote.InkStrokeCollection.getItem](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-getitem-member(1))
+
+  - [OneNote.InkStrokeCollection.getItemAt](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-getitemat-member(1))
+
   - [OneNote.InkStrokeCollection.items](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-items-member)
 
 isPreview: false

@@ -23,6 +23,12 @@ remarks: >-
 
   - [Word.ContentControl.footnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-footnotes-member)
 
+  - [Word.NoteItemCollection.load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1))
+
+  - [Word.NoteItemCollection.track](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-track-member(1))
+
+  - [Word.NoteItemCollection.untrack](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-untrack-member(1))
+
   - [Word.Paragraph.endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member)
 
   - [Word.Paragraph.footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)

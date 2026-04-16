@@ -15,6 +15,22 @@ remarks: >-
 
   - [Word.TableCell.parentRow](/javascript/api/word/word.tablecell#word-word-tablecell-parentrow-member)
 
+  - [Word.TableRow.getNext](/javascript/api/word/word.tablerow#word-word-tablerow-getnext-member(1))
+
+  - [Word.TableRow.getNextOrNullObject](/javascript/api/word/word.tablerow#word-word-tablerow-getnextornullobject-member(1))
+
+  - [Word.TableRow.load](/javascript/api/word/word.tablerow#word-word-tablerow-load-member(1))
+
+  - [Word.TableRow.set](/javascript/api/word/word.tablerow#word-word-tablerow-set-member(2))
+
+  - [Word.TableRow.track](/javascript/api/word/word.tablerow#word-word-tablerow-track-member(1))
+
+  - [Word.TableRow.untrack](/javascript/api/word/word.tablerow#word-word-tablerow-untrack-member(1))
+
+  - [Word.TableRowCollection.getFirst](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-getfirst-member(1))
+
+  - [Word.TableRowCollection.getFirstOrNullObject](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-getfirstornullobject-member(1))
+
   - [Word.TableRowCollection.items](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-items-member)
 
   #### Examples

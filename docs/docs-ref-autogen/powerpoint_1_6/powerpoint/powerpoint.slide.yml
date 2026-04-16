@@ -13,7 +13,25 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.Shape.getParentSlide](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslide-member(1))
+
+  - [PowerPoint.Shape.getParentSlideOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslideornullobject-member(1))
+
+  - [PowerPoint.Slide.load](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-load-member(1))
+
+  - [PowerPoint.SlideCollection.getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1))
+
+  - [PowerPoint.SlideCollection.getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1))
+
+  - [PowerPoint.SlideCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1))
+
   - [PowerPoint.SlideCollection.items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
+
+  - [PowerPoint.SlideScopedCollection.getItem](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitem-member(1))
+
+  - [PowerPoint.SlideScopedCollection.getItemAt](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitemat-member(1))
+
+  - [PowerPoint.SlideScopedCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitemornullobject-member(1))
 
   - [PowerPoint.SlideScopedCollection.items](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-items-member)
 

@@ -8,6 +8,12 @@ remarks: >-
   [API set: PowerPointApi
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.TableStyleSettings.load](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

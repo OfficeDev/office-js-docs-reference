@@ -14,6 +14,8 @@ remarks: >-
 
   - [Word.FillFormat.pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member)
 
+  - [Word.FillFormat.setPatterned](/javascript/api/word/word.fillformat#word-word-fillformat-setpatterned-member(1))
+
   - [Word.LineFormat.pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)
 
 isPreview: false

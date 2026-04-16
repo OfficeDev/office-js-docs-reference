@@ -256,7 +256,8 @@ function analyzeMemberTypeReferences(member: ApiJsonMember, index: UsedByIndex, 
   }
 
   // For methods: analyze return type and parameters
-  if (member.kind === 'MethodSignature') {
+  // Handle both interface methods (MethodSignature) and class methods (Method)
+  if (member.kind === 'MethodSignature' || member.kind === 'Method') {
     // Return type
     if (member.returnTypeTokenRange) {
       const returnTokens = member.excerptTokens.slice(

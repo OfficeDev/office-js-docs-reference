@@ -20,6 +20,12 @@ remarks: >-
 
   - [Word.Application.listTemplateGalleries](/javascript/api/word/word.application#word-word-application-listtemplategalleries-member)
 
+  - [Word.ListTemplateGalleryCollection.load](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-load-member(1))
+
+  - [Word.ListTemplateGalleryCollection.track](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-track-member(1))
+
+  - [Word.ListTemplateGalleryCollection.untrack](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

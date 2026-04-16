@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Word.CoauthoringLock.load](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-load-member(1))
+
+  - [Word.CoauthoringLock.set](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-set-member(2))
+
+  - [Word.CoauthoringLock.track](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-track-member(1))
+
+  - [Word.CoauthoringLock.untrack](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-untrack-member(1))
+
+  - [Word.CoauthoringLockCollection.add](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-add-member(1))
+
   - [Word.CoauthoringLockCollection.items](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-items-member)
 
 isPreview: false

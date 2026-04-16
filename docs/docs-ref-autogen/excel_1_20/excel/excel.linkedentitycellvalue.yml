@@ -16,6 +16,8 @@ remarks: >-
 
   - [Excel.PlaceholderErrorCellValue.target](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-target-member)
 
+  - [Excel.Workbook.getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

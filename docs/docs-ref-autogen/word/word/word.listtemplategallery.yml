@@ -15,6 +15,16 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ListTemplateGallery.load](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-load-member(1))
+
+  - [Word.ListTemplateGallery.track](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-track-member(1))
+
+  - [Word.ListTemplateGallery.untrack](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-untrack-member(1))
+
+  - [Word.ListTemplateGalleryCollection.getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))
+
+  - [Word.ListTemplateGalleryCollection.getItem](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getitem-member(1))
+
   - [Word.ListTemplateGalleryCollection.items](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-items-member)
 
 isPreview: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomXmlPartUpdateData
 summary: >-
   An interface for updating data on the `CustomXmlPart` object, for use in
   `customXmlPart.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomXmlPart.set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(1))
 
 isPreview: false
 isDeprecated: false

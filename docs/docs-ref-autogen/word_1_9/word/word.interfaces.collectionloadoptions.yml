@@ -4,7 +4,51 @@ uid: word!Word.Interfaces.CollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.AnnotationCollection.load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
+
+  - [Word.CommentCollection.load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1))
+
+  - [Word.CommentReplyCollection.load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
+
+  - [Word.ContentControlCollection.load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+
+  - [Word.ContentControlListItemCollection.load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+
+  - [Word.CustomPropertyCollection.load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+
+  - [Word.CustomXmlPartCollection.load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
+
+  - [Word.CustomXmlPartScopedCollection.load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(1))
+
+  - [Word.FieldCollection.load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
+
+  - [Word.InlinePictureCollection.load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+
+  - [Word.ListCollection.load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+
+  - [Word.NoteItemCollection.load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1))
+
+  - [Word.ParagraphCollection.load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+
+  - [Word.RangeCollection.load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+
+  - [Word.SectionCollection.load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+
+  - [Word.SettingCollection.load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
+
+  - [Word.StyleCollection.load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1))
+
+  - [Word.TableCellCollection.load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
+
+  - [Word.TableCollection.load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+
+  - [Word.TableRowCollection.load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
+
+  - [Word.TrackedChangeCollection.load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

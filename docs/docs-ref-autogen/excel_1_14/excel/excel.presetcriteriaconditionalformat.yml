@@ -18,6 +18,10 @@ remarks: >-
 
   - [Excel.ConditionalFormat.presetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-presetornullobject-member)
 
+  - [Excel.PresetCriteriaConditionalFormat.load](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-load-member(1))
+
+  - [Excel.PresetCriteriaConditionalFormat.set](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -16,6 +16,12 @@ remarks: >-
 
   - [OneNote.Paragraph.paragraphs](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-paragraphs-member)
 
+  - [OneNote.ParagraphCollection.load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
+
+  - [OneNote.ParagraphCollection.track](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-track-member(1))
+
+  - [OneNote.ParagraphCollection.untrack](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-untrack-member(1))
+
   - [OneNote.TableCell.paragraphs](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-paragraphs-member)
 
 isPreview: false

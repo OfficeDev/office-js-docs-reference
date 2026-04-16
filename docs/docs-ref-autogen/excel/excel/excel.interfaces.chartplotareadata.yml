@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartPlotAreaData
 summary: >-
   An interface describing the data returned by calling
   `chartPlotArea.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartPlotArea.toJSON](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

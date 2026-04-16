@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `IconSetConditionalFormat` object, for
   use in `iconSetConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.IconSetConditionalFormat.set](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

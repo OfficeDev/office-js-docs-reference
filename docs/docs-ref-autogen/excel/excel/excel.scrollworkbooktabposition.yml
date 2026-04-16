@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApiDesktop
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Window.scrollWorkbookTabs](/javascript/api/excel/excel.window#excel-excel-window-scrollworkbooktabs-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.Point.load](/javascript/api/onenote/onenote.point#onenote-onenote-point-load-member(1))
+
+  - [OneNote.Point.track](/javascript/api/onenote/onenote.point#onenote-onenote-point-track-member(1))
+
+  - [OneNote.Point.untrack](/javascript/api/onenote/onenote.point#onenote-onenote-point-untrack-member(1))
+
+  - [OneNote.PointCollection.getItem](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-getitem-member(1))
+
+  - [OneNote.PointCollection.getItemAt](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-getitemat-member(1))
+
   - [OneNote.PointCollection.items](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-items-member)
 
 isPreview: false

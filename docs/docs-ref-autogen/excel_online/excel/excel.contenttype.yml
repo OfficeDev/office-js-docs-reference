@@ -15,7 +15,11 @@ remarks: >-
 
   - [Excel.Comment.contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
 
+  - [Excel.CommentCollection.add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+
   - [Excel.CommentReply.contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
+
+  - [Excel.CommentReplyCollection.add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
   #### Examples
 

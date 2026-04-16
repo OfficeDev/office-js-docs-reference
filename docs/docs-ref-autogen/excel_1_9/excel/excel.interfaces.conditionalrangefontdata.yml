@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalRangeFontData
 summary: >-
   An interface describing the data returned by calling
   `conditionalRangeFont.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalRangeFont.toJSON](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -9,6 +9,21 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.getContentControls](/javascript/api/word/word.body#word-word-body-getcontentcontrols-member(1))
+
+  - [Word.ContentControl.getContentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))
+
+  - [Word.Document.getContentControls](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1))
+
+  - [Word.Paragraph.getContentControls](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))
+
+  - [Word.Range.getContentControls](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))
+
   #### Examples
 
 

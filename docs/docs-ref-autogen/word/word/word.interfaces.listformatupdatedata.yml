@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListFormatUpdateData
 summary: >-
   An interface for updating data on the `ListFormat` object, for use in
   `listFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListFormat.set](/javascript/api/word/word.listformat#word-word-listformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

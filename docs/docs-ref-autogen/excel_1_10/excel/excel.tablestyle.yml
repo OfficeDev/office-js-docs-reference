@@ -14,7 +14,23 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.TableStyle.duplicate](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-duplicate-member(1))
+
+  - [Excel.TableStyle.load](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-load-member(1))
+
+  - [Excel.TableStyle.set](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-set-member(2))
+
+  - [Excel.TableStyleCollection.add](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-add-member(1))
+
+  - [Excel.TableStyleCollection.getDefault](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getdefault-member(1))
+
+  - [Excel.TableStyleCollection.getItem](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getitem-member(1))
+
+  - [Excel.TableStyleCollection.getItemOrNullObject](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getitemornullobject-member(1))
+
   - [Excel.TableStyleCollection.items](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-items-member)
+
+  - [Excel.TableStyleCollection.setDefault](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-setdefault-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,6 +10,12 @@ remarks: >-
   [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.ShapeGroup.load](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -15,6 +15,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ListLevelCollection.load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
+
+  - [Word.ListLevelCollection.track](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-track-member(1))
+
+  - [Word.ListLevelCollection.untrack](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-untrack-member(1))
+
   - [Word.ListTemplate.listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)
 
   #### Examples

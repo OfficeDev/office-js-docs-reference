@@ -16,6 +16,20 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.NamedSheetView.duplicate](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-duplicate-member(1))
+
+  - [Excel.NamedSheetView.load](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-load-member(1))
+
+  - [Excel.NamedSheetViewCollection.add](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-add-member(1))
+
+  - [Excel.NamedSheetViewCollection.enterTemporary](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-entertemporary-member(1))
+
+  - [Excel.NamedSheetViewCollection.getActive](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getactive-member(1))
+
+  - [Excel.NamedSheetViewCollection.getItem](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitem-member(1))
+
+  - [Excel.NamedSheetViewCollection.getItemAt](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemat-member(1))
+
   - [Excel.NamedSheetViewCollection.items](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-items-member)
 
 isPreview: false

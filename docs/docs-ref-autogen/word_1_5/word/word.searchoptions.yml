@@ -14,6 +14,29 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.search](/javascript/api/word/word.body#word-word-body-search-member(1))
+
+  - [Word.ContentControl.search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
+
+  - [Word.Paragraph.search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
+
+  - [Word.Range.search](/javascript/api/word/word.range#word-word-range-search-member(1))
+
+  - [Word.SearchOptions.load](/javascript/api/word/word.searchoptions#word-word-searchoptions-load-member(1))
+
+  - [Word.SearchOptions.newObject](/javascript/api/word/word.searchoptions.newobject:member)
+
+  - [Word.SearchOptions.set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(2))
+
+  - [Word.Table.search](/javascript/api/word/word.table#word-word-table-search-member(1))
+
+  - [Word.TableRow.search](/javascript/api/word/word.tablerow#word-word-tablerow-search-member(1))
+
   #### Examples
 
 

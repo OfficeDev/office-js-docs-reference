@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.RichTextData
 summary: >-
   An interface describing the data returned by calling `richText.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.RichText.toJSON](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

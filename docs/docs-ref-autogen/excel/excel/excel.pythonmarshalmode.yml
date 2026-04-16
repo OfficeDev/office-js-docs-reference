@@ -10,6 +10,12 @@ remarks: >-
   [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Range.togglePythonMarshalMode](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))
+
 isPreview: true
 isDeprecated: false
 fields:

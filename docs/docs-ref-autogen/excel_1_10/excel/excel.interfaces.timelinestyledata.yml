@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TimelineStyleData
 summary: >-
   An interface describing the data returned by calling
   `timelineStyle.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TimelineStyle.toJSON](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

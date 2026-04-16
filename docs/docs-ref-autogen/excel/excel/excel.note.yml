@@ -13,6 +13,18 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Note.load](/javascript/api/excel/excel.note#excel-excel-note-load-member(1))
+
+  - [Excel.Note.set](/javascript/api/excel/excel.note#excel-excel-note-set-member(2))
+
+  - [Excel.NoteCollection.add](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-add-member(1))
+
+  - [Excel.NoteCollection.getItem](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitem-member(1))
+
+  - [Excel.NoteCollection.getItemAt](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemat-member(1))
+
+  - [Excel.NoteCollection.getItemOrNullObject](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemornullobject-member(1))
+
   - [Excel.NoteCollection.items](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-items-member)
 
   #### Examples

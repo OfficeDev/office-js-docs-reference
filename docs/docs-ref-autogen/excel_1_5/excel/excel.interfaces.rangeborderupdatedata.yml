@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeBorderUpdateData
 summary: >-
   An interface for updating data on the `RangeBorder` object, for use in
   `rangeBorder.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeBorder.set](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TableColumnUpdateData
 summary: >-
   An interface for updating data on the `TableColumn` object, for use in
   `tableColumn.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TableColumn.set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(1))
 
 isPreview: false
 isDeprecated: false

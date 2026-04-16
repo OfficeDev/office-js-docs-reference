@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ColorScaleConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `colorScaleConditionalFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ColorScaleConditionalFormat.toJSON](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

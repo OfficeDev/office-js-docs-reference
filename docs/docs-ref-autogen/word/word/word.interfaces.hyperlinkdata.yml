@@ -6,7 +6,11 @@ fullName: Word.Interfaces.HyperlinkData
 summary: >-
   An interface describing the data returned by calling `hyperlink.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Hyperlink.toJSON](/javascript/api/word/word.hyperlink#word-word-hyperlink-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

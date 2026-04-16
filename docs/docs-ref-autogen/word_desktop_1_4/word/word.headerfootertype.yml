@@ -9,6 +9,15 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Section.getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1))
+
+  - [Word.Section.getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
+
   #### Examples
 
 

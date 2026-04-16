@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.FormatProtection.load](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-load-member(1))
+
+  - [Excel.FormatProtection.set](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-set-member(2))
+
   - [Excel.RangeFormat.protection](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-protection-member)
 
 isPreview: false

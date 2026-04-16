@@ -12,6 +12,12 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.InkWordCollection.load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
+
+  - [OneNote.InkWordCollection.track](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-track-member(1))
+
+  - [OneNote.InkWordCollection.untrack](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-untrack-member(1))
+
   - [OneNote.Paragraph.inkWords](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inkwords-member)
 
 isPreview: false

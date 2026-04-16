@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeAreasUpdateData
 summary: >-
   An interface for updating data on the `RangeAreas` object, for use in
   `rangeAreas.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeAreas.set](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-set-member(1))
 
 isPreview: false
 isDeprecated: false

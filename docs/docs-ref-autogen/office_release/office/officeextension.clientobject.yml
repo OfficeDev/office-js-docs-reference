@@ -12,7 +12,15 @@ remarks: >-
   #### Used by
 
 
+  - [OfficeExtension.ClientRequestContext.load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1))
+
+  - [OfficeExtension.ClientRequestContext.loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+
   - [OfficeExtension.RunOptions.previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
+
+  - [OfficeExtension.TrackedObjects.add](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-add-member(1))
+
+  - [OfficeExtension.TrackedObjects.remove](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-remove-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -9,6 +9,15 @@ remarks: >-
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Range.copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))
+
+  - [Excel.RangeAreas.copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1))
+
   #### Examples
 
 

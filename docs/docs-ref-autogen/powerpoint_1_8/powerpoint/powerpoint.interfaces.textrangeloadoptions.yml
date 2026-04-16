@@ -10,6 +10,12 @@ remarks: >-
   [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.TextRange.load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

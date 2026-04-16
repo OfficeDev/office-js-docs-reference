@@ -14,6 +14,10 @@ remarks: >-
 
   - [Word.BuildingBlock.insertType](/javascript/api/word/word.buildingblock#word-word-buildingblock-inserttype-member)
 
+  - [Word.BuildingBlockCollection.add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
+
+  - [Word.BuildingBlockEntryCollection.add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
+
 isPreview: false
 isDeprecated: false
 fields:

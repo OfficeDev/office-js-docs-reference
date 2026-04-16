@@ -15,6 +15,12 @@ remarks: >-
 
   - [Word.Annotation.critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)
 
+  - [Word.CritiqueAnnotation.load](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-load-member(1))
+
+  - [Word.CritiqueAnnotation.track](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-track-member(1))
+
+  - [Word.CritiqueAnnotation.untrack](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-untrack-member(1))
+
   #### Examples
 
 

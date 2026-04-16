@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.NamedItemData
 summary: >-
   An interface describing the data returned by calling `namedItem.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.NamedItem.toJSON](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

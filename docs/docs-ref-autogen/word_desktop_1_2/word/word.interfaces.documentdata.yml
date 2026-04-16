@@ -6,7 +6,11 @@ fullName: Word.Interfaces.DocumentData
 summary: >-
   An interface describing the data returned by calling `document.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Document.toJSON](/javascript/api/word/word.document#word-word-document-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

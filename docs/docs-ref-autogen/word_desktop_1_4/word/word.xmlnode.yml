@@ -12,15 +12,29 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Document.selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
+
   - [Word.XmlNode.firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member)
 
   - [Word.XmlNode.lastChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-lastchild-member)
+
+  - [Word.XmlNode.load](/javascript/api/word/word.xmlnode#word-word-xmlnode-load-member(1))
 
   - [Word.XmlNode.nextSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-nextsibling-member)
 
   - [Word.XmlNode.parentNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-parentnode-member)
 
   - [Word.XmlNode.previousSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-previoussibling-member)
+
+  - [Word.XmlNode.removeChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-removechild-member(1))
+
+  - [Word.XmlNode.selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
+
+  - [Word.XmlNode.track](/javascript/api/word/word.xmlnode#word-word-xmlnode-track-member(1))
+
+  - [Word.XmlNode.untrack](/javascript/api/word/word.xmlnode#word-word-xmlnode-untrack-member(1))
+
+  - [Word.XmlNodeCollection.getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1))
 
   - [Word.XmlNodeCollection.items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
 

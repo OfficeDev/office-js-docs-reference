@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartErrorBars.load](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-load-member(1))
+
+  - [Excel.ChartErrorBars.set](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-set-member(2))
+
   - [Excel.ChartSeries.xErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-xerrorbars-member)
 
   - [Excel.ChartSeries.yErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-yerrorbars-member)

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.HeaderFooterPictureUpdateData
 summary: >-
   An interface for updating data on the `HeaderFooterPicture` object, for use in
   `headerFooterPicture.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.HeaderFooterPicture.set](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-set-member(1))
 
 isPreview: false
 isDeprecated: false

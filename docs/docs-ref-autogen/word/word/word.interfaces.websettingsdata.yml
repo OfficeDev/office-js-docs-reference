@@ -6,7 +6,11 @@ fullName: Word.Interfaces.WebSettingsData
 summary: >-
   An interface describing the data returned by calling
   `webSettings.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.WebSettings.toJSON](/javascript/api/word/word.websettings#word-word-websettings-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

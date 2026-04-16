@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CheckboxContentControlUpdateData
 summary: >-
   An interface for updating data on the `CheckboxContentControl` object, for use
   in `checkboxContentControl.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CheckboxContentControl.set](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,11 @@ summary: >-
   More information can be found in [Remove an event
   handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OfficeExtension.EventHandlers.add](/javascript/api/office/officeextension.eventhandlers#office-officeextension-eventhandlers-add-member(1))
 
 isPreview: false
 isDeprecated: false

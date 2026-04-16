@@ -17,6 +17,14 @@ remarks: >-
 
   - [Word.Font.line](/javascript/api/word/word.font#word-word-font-line-member)
 
+  - [Word.LineFormat.load](/javascript/api/word/word.lineformat#word-word-lineformat-load-member(1))
+
+  - [Word.LineFormat.set](/javascript/api/word/word.lineformat#word-word-lineformat-set-member(2))
+
+  - [Word.LineFormat.track](/javascript/api/word/word.lineformat#word-word-lineformat-track-member(1))
+
+  - [Word.LineFormat.untrack](/javascript/api/word/word.lineformat#word-word-lineformat-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

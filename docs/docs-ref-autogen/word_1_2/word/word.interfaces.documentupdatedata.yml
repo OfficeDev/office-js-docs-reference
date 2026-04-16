@@ -6,7 +6,11 @@ fullName: Word.Interfaces.DocumentUpdateData
 summary: >-
   An interface for updating data on the `Document` object, for use in
   `document.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Document.set](/javascript/api/word/word.document#word-word-document-set-member(1))
 
 isPreview: false
 isDeprecated: false

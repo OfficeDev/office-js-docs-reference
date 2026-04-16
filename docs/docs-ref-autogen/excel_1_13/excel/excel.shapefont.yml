@@ -14,6 +14,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ShapeFont.load](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-load-member(1))
+
+  - [Excel.ShapeFont.set](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-set-member(2))
+
   - [Excel.TextRange.font](/javascript/api/excel/excel.textrange#excel-excel-textrange-font-member)
 
 isPreview: false

@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Visio.ShapeDataItem.load](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-load-member(1))
+
+  - [Visio.ShapeDataItemCollection.getItem](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-getitem-member(1))
+
   - [Visio.ShapeDataItemCollection.items](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-items-member)
 
 isPreview: false

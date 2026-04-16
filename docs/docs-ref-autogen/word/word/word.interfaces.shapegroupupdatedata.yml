@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShapeGroupUpdateData
 summary: >-
   An interface for updating data on the `ShapeGroup` object, for use in
   `shapeGroup.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShapeGroup.set](/javascript/api/word/word.shapegroup#word-word-shapegroup-set-member(1))
 
 isPreview: false
 isDeprecated: false

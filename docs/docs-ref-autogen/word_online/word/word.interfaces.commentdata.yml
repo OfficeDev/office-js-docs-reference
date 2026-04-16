@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CommentData
 summary: >-
   An interface describing the data returned by calling `comment.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Comment.toJSON](/javascript/api/word/word.comment#word-word-comment-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

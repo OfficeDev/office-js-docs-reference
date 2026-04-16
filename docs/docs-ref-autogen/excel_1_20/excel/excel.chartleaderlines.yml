@@ -15,6 +15,10 @@ remarks: >-
 
   - [Excel.ChartDataLabels.leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)
 
+  - [Excel.ChartLeaderLines.load](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-load-member(1))
+
+  - [Excel.ChartLeaderLines.set](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-set-member(2))
+
   #### Examples
 
 

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartDataTableUpdateData
 summary: >-
   An interface for updating data on the `ChartDataTable` object, for use in
   `chartDataTable.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartDataTable.set](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-set-member(1))
 
 isPreview: false
 isDeprecated: false

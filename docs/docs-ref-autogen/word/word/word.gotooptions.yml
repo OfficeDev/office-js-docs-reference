@@ -11,6 +11,14 @@ remarks: >-
   [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Document.goTo](/javascript/api/word/word.document#word-word-document-goto-member(1))
+
+  - [Word.Selection.goTo](/javascript/api/word/word.selection#word-word-selection-goto-member(1))
+
 isPreview: true
 isDeprecated: false
 type: interface

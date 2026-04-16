@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListTemplateCollectionData
 summary: >-
   An interface describing the data returned by calling
   `listTemplateCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListTemplateCollection.toJSON](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

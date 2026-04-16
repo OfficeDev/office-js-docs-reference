@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.CustomXmlValidationErrorCollection.add](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-add-member(1))
+
 isPreview: true
 isDeprecated: false
 type: interface

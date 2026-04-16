@@ -11,6 +11,12 @@ remarks: >-
   [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.CustomXmlValidationError.load](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-load-member(1))
+
 isPreview: true
 isDeprecated: false
 type: interface

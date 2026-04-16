@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CoauthorCollectionData
 summary: >-
   An interface describing the data returned by calling
   `coauthorCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CoauthorCollection.toJSON](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

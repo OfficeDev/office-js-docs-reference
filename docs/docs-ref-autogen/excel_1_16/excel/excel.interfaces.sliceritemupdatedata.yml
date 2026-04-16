@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.SlicerItemUpdateData
 summary: >-
   An interface for updating data on the `SlicerItem` object, for use in
   `slicerItem.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.SlicerItem.set](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-set-member(1))
 
 isPreview: false
 isDeprecated: false

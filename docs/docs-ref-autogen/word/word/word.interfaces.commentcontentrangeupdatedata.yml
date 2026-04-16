@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CommentContentRangeUpdateData
 summary: >-
   An interface for updating data on the `CommentContentRange` object, for use in
   `commentContentRange.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CommentContentRange.set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(1))
 
 isPreview: false
 isDeprecated: false

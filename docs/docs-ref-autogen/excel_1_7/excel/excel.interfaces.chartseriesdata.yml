@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartSeriesData
 summary: >-
   An interface describing the data returned by calling
   `chartSeries.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartSeries.toJSON](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

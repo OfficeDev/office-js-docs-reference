@@ -17,6 +17,14 @@ remarks: >-
 
   - [Word.Shape.textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)
 
+  - [Word.TextFrame.load](/javascript/api/word/word.textframe#word-word-textframe-load-member(1))
+
+  - [Word.TextFrame.set](/javascript/api/word/word.textframe#word-word-textframe-set-member(2))
+
+  - [Word.TextFrame.track](/javascript/api/word/word.textframe#word-word-textframe-track-member(1))
+
+  - [Word.TextFrame.untrack](/javascript/api/word/word.textframe#word-word-textframe-untrack-member(1))
+
   #### Examples
 
 

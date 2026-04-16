@@ -17,6 +17,16 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Setting.load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1))
+
+  - [Excel.Setting.set](/javascript/api/excel/excel.setting#excel-excel-setting-set-member(2))
+
+  - [Excel.SettingCollection.add](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1))
+
+  - [Excel.SettingCollection.getItem](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitem-member(1))
+
+  - [Excel.SettingCollection.getItemOrNullObject](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitemornullobject-member(1))
+
   - [Excel.SettingCollection.items](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-items-member)
 
 isPreview: false

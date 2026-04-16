@@ -12,6 +12,18 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.CommentReply.load](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-load-member(1))
+
+  - [Excel.CommentReply.set](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-set-member(2))
+
+  - [Excel.CommentReplyCollection.add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+
+  - [Excel.CommentReplyCollection.getItem](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitem-member(1))
+
+  - [Excel.CommentReplyCollection.getItemAt](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitemat-member(1))
+
+  - [Excel.CommentReplyCollection.getItemOrNullObject](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitemornullobject-member(1))
+
   - [Excel.CommentReplyCollection.items](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-items-member)
 
 isPreview: false

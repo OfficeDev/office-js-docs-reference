@@ -8,6 +8,18 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.NoteTag.load](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-load-member(1))
+
+  - [OneNote.NoteTag.track](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-track-member(1))
+
+  - [OneNote.NoteTag.untrack](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-untrack-member(1))
+
+  - [OneNote.Paragraph.addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

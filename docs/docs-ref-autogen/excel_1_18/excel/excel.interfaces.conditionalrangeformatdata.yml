@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalRangeFormatData
 summary: >-
   An interface describing the data returned by calling
   `conditionalRangeFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalRangeFormat.toJSON](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

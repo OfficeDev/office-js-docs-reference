@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartMapOptionsData
 summary: >-
   An interface describing the data returned by calling
   `chartMapOptions.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartMapOptions.toJSON](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

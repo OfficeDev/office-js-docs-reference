@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableCellData
 summary: >-
   An interface describing the data returned by calling `tableCell.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableCell.toJSON](/javascript/api/word/word.tablecell#word-word-tablecell-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

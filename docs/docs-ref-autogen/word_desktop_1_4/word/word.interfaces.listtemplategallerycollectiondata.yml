@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListTemplateGalleryCollectionData
 summary: >-
   An interface describing the data returned by calling
   `listTemplateGalleryCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListTemplateGalleryCollection.toJSON](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

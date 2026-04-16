@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.ApplicationUpdateData
 summary: >-
   An interface for updating data on the `Application` object, for use in
   `application.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Application.set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

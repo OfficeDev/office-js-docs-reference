@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.ShapeFillData
 summary: >-
   An interface describing the data returned by calling `shapeFill.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.ShapeFill.toJSON](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

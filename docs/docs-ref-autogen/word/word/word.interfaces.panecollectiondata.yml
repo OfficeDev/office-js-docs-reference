@@ -6,7 +6,11 @@ fullName: Word.Interfaces.PaneCollectionData
 summary: >-
   An interface describing the data returned by calling
   `paneCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.PaneCollection.toJSON](/javascript/api/word/word.panecollection#word-word-panecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

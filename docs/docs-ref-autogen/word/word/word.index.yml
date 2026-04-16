@@ -15,6 +15,18 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Index.load](/javascript/api/word/word.index#word-word-index-load-member(1))
+
+  - [Word.Index.set](/javascript/api/word/word.index#word-word-index-set-member(2))
+
+  - [Word.Index.track](/javascript/api/word/word.index#word-word-index-track-member(1))
+
+  - [Word.Index.untrack](/javascript/api/word/word.index#word-word-index-untrack-member(1))
+
+  - [Word.IndexCollection.add](/javascript/api/word/word.indexcollection#word-word-indexcollection-add-member(1))
+
+  - [Word.IndexCollection.getItem](/javascript/api/word/word.indexcollection#word-word-indexcollection-getitem-member(1))
+
   - [Word.IndexCollection.items](/javascript/api/word/word.indexcollection#word-word-indexcollection-items-member)
 
 isPreview: false

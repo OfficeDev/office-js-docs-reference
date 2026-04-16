@@ -14,6 +14,12 @@ remarks: >-
 
   - [OneNote.Page.contents](/javascript/api/onenote/onenote.page#onenote-onenote-page-contents-member)
 
+  - [OneNote.PageContentCollection.load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+
+  - [OneNote.PageContentCollection.track](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-track-member(1))
+
+  - [OneNote.PageContentCollection.untrack](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

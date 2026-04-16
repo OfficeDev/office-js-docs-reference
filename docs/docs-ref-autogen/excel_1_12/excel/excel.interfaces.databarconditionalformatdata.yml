@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DataBarConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `dataBarConditionalFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DataBarConditionalFormat.toJSON](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

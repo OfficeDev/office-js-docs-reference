@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.FloatingInkData
 summary: >-
   An interface describing the data returned by calling
   `floatingInk.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.FloatingInk.toJSON](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

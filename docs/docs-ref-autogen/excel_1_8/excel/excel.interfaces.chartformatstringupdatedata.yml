@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartFormatStringUpdateData
 summary: >-
   An interface for updating data on the `ChartFormatString` object, for use in
   `chartFormatString.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartFormatString.set](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-set-member(1))
 
 isPreview: false
 isDeprecated: false

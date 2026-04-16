@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Document.protect](/javascript/api/word/word.document#word-word-document-protect-member(1))
+
   - [Word.Document.protectionType](/javascript/api/word/word.document#word-word-document-protectiontype-member)
 
 isPreview: false

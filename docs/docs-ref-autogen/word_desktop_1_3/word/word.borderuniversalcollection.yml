@@ -14,6 +14,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.BorderUniversalCollection.load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
+
+  - [Word.BorderUniversalCollection.track](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-track-member(1))
+
+  - [Word.BorderUniversalCollection.untrack](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-untrack-member(1))
+
   - [Word.Font.borders](/javascript/api/word/word.font#word-word-font-borders-member)
 
   - [Word.Frame.borders](/javascript/api/word/word.frame#word-word-frame-borders-member)

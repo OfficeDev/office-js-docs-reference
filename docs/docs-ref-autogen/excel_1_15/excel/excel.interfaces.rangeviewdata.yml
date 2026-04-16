@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeViewData
 summary: >-
   An interface describing the data returned by calling `rangeView.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeView.toJSON](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

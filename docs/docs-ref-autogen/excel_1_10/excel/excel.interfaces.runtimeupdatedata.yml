@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RuntimeUpdateData
 summary: >-
   An interface for updating data on the `Runtime` object, for use in
   `runtime.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Runtime.set](/javascript/api/excel/excel.runtime#excel-excel-runtime-set-member(1))
 
 isPreview: false
 isDeprecated: false

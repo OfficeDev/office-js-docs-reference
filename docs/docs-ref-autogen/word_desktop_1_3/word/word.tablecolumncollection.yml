@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.Range.tableColumns](/javascript/api/word/word.range#word-word-range-tablecolumns-member)
 
+  - [Word.TableColumnCollection.load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1))
+
+  - [Word.TableColumnCollection.track](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-track-member(1))
+
+  - [Word.TableColumnCollection.untrack](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

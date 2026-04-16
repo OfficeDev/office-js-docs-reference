@@ -6,7 +6,11 @@ fullName: Visio.Interfaces.ShapeUpdateData
 summary: >-
   An interface for updating data on the Shape object, for use in `shape.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Visio.Shape.set](/javascript/api/visio/visio.shape#visio-visio-shape-set-member(1))
 
 isPreview: false
 isDeprecated: false

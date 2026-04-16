@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableColumnUpdateData
 summary: >-
   An interface for updating data on the `TableColumn` object, for use in
   `tableColumn.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableColumn.set](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-set-member(1))
 
 isPreview: false
 isDeprecated: false

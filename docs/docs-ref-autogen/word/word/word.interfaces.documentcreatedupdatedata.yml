@@ -6,7 +6,11 @@ fullName: Word.Interfaces.DocumentCreatedUpdateData
 summary: >-
   An interface for updating data on the `DocumentCreated` object, for use in
   `documentCreated.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.DocumentCreated.set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListItemData
 summary: >-
   An interface describing the data returned by calling `listItem.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListItem.toJSON](/javascript/api/word/word.listitem#word-word-listitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

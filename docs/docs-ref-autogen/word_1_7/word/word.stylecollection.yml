@@ -9,6 +9,19 @@ remarks: >-
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Document.getStyles](/javascript/api/word/word.document#word-word-document-getstyles-member(1))
+
+  - [Word.StyleCollection.load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1))
+
+  - [Word.StyleCollection.track](/javascript/api/word/word.stylecollection#word-word-stylecollection-track-member(1))
+
+  - [Word.StyleCollection.untrack](/javascript/api/word/word.stylecollection#word-word-stylecollection-untrack-member(1))
+
   #### Examples
 
 

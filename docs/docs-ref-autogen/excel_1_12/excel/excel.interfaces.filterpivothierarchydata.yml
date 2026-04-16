@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.FilterPivotHierarchyData
 summary: >-
   An interface describing the data returned by calling
   `filterPivotHierarchy.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.FilterPivotHierarchy.toJSON](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

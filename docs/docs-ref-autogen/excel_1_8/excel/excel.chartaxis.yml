@@ -14,9 +14,15 @@ remarks: >-
 
   - [Excel.ChartAxes.categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member)
 
+  - [Excel.ChartAxes.getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1))
+
   - [Excel.ChartAxes.seriesAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-seriesaxis-member)
 
   - [Excel.ChartAxes.valueAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-valueaxis-member)
+
+  - [Excel.ChartAxis.load](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-load-member(1))
+
+  - [Excel.ChartAxis.set](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-set-member(2))
 
 isPreview: false
 isDeprecated: false

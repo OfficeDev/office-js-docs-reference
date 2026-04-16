@@ -8,6 +8,16 @@ remarks: >-
   [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.ChartDataLabel.getTailAnchor](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-gettailanchor-member(1))
+
+  - [Excel.ChartDataLabelAnchor.load](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-load-member(1))
+
+  - [Excel.ChartDataLabelAnchor.set](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

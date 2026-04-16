@@ -12,6 +12,21 @@ remarks: >-
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Application.createDocument](/javascript/api/word/word.application#word-word-application-createdocument-member(1))
+
+  - [Word.DocumentCreated.load](/javascript/api/word/word.documentcreated#word-word-documentcreated-load-member(1))
+
+  - [Word.DocumentCreated.set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(2))
+
+  - [Word.DocumentCreated.track](/javascript/api/word/word.documentcreated#word-word-documentcreated-track-member(1))
+
+  - [Word.DocumentCreated.untrack](/javascript/api/word/word.documentcreated#word-word-documentcreated-untrack-member(1))
+
   #### Examples
 
 

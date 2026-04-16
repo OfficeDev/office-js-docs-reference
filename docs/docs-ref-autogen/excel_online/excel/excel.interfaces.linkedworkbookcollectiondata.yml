@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.LinkedWorkbookCollectionData
 summary: >-
   An interface describing the data returned by calling
   `linkedWorkbookCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.LinkedWorkbookCollection.toJSON](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableRowCollectionData
 summary: >-
   An interface describing the data returned by calling
   `tableRowCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableRowCollection.toJSON](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

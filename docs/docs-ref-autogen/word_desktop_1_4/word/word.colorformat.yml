@@ -12,6 +12,14 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ColorFormat.load](/javascript/api/word/word.colorformat#word-word-colorformat-load-member(1))
+
+  - [Word.ColorFormat.set](/javascript/api/word/word.colorformat#word-word-colorformat-set-member(2))
+
+  - [Word.ColorFormat.track](/javascript/api/word/word.colorformat#word-word-colorformat-track-member(1))
+
+  - [Word.ColorFormat.untrack](/javascript/api/word/word.colorformat#word-word-colorformat-untrack-member(1))
+
   - [Word.FillFormat.backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)
 
   - [Word.FillFormat.foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)

@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.InkWord.load](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-load-member(1))
+
+  - [OneNote.InkWord.track](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-track-member(1))
+
+  - [OneNote.InkWord.untrack](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-untrack-member(1))
+
+  - [OneNote.InkWordCollection.getItem](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitem-member(1))
+
+  - [OneNote.InkWordCollection.getItemAt](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitemat-member(1))
+
   - [OneNote.InkWordCollection.items](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-items-member)
 
 isPreview: false

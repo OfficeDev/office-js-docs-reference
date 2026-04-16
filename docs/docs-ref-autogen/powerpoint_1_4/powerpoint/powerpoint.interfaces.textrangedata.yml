@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.TextRangeData
 summary: >-
   An interface describing the data returned by calling `textRange.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.TextRange.toJSON](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

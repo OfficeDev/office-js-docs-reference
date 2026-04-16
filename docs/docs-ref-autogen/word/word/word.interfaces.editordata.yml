@@ -6,7 +6,11 @@ fullName: Word.Interfaces.EditorData
 summary: >-
   An interface describing the data returned by calling `editor.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Editor.toJSON](/javascript/api/word/word.editor#word-word-editor-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

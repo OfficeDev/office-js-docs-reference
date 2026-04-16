@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShadingUniversalUpdateData
 summary: >-
   An interface for updating data on the `ShadingUniversal` object, for use in
   `shadingUniversal.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShadingUniversal.set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(1))
 
 isPreview: false
 isDeprecated: false

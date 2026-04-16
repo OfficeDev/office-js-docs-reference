@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartLeaderLinesUpdateData
 summary: >-
   An interface for updating data on the `ChartLeaderLines` object, for use in
   `chartLeaderLines.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartLeaderLines.set](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-set-member(1))
 
 isPreview: false
 isDeprecated: false

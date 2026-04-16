@@ -6,7 +6,11 @@ fullName: Visio.Interfaces.ShapeCollectionData
 summary: >-
   An interface describing the data returned by calling
   `shapeCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Visio.ShapeCollection.toJSON](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

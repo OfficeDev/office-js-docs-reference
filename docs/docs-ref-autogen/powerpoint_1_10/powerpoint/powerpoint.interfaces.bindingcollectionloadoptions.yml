@@ -10,6 +10,12 @@ remarks: >-
   [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.BindingCollection.load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

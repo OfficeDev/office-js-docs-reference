@@ -9,6 +9,45 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.search](/javascript/api/word/word.body#word-word-body-search-member(1))
+
+  - [Word.ContentControl.getTextRanges](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettextranges-member(1))
+
+  - [Word.ContentControl.search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
+
+  - [Word.ContentControl.split](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-split-member(1))
+
+  - [Word.Document.search](/javascript/api/word/word.document#word-word-document-search-member(1))
+
+  - [Word.Paragraph.getTextRanges](/javascript/api/word/word.paragraph#word-word-paragraph-gettextranges-member(1))
+
+  - [Word.Paragraph.search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
+
+  - [Word.Paragraph.split](/javascript/api/word/word.paragraph#word-word-paragraph-split-member(1))
+
+  - [Word.Range.getHyperlinkRanges](/javascript/api/word/word.range#word-word-range-gethyperlinkranges-member(1))
+
+  - [Word.Range.getTextRanges](/javascript/api/word/word.range#word-word-range-gettextranges-member(1))
+
+  - [Word.Range.search](/javascript/api/word/word.range#word-word-range-search-member(1))
+
+  - [Word.Range.split](/javascript/api/word/word.range#word-word-range-split-member(1))
+
+  - [Word.RangeCollection.load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+
+  - [Word.RangeCollection.track](/javascript/api/word/word.rangecollection#word-word-rangecollection-track-member(1))
+
+  - [Word.RangeCollection.untrack](/javascript/api/word/word.rangecollection#word-word-rangecollection-untrack-member(1))
+
+  - [Word.Table.search](/javascript/api/word/word.table#word-word-table-search-member(1))
+
+  - [Word.TableRow.search](/javascript/api/word/word.tablerow#word-word-tablerow-search-member(1))
+
   #### Examples
 
 

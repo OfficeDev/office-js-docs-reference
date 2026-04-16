@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartAxisTitleUpdateData
 summary: >-
   An interface for updating data on the `ChartAxisTitle` object, for use in
   `chartAxisTitle.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartAxisTitle.set](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-set-member(1))
 
 isPreview: false
 isDeprecated: false

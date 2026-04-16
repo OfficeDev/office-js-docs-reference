@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.SlideBackgroundFillData
 summary: >-
   An interface describing the data returned by calling
   `slideBackgroundFill.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.SlideBackgroundFill.toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

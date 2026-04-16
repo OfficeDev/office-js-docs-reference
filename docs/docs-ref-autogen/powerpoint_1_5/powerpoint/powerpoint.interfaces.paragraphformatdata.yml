@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.ParagraphFormatData
 summary: >-
   An interface describing the data returned by calling
   `paragraphFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.ParagraphFormat.toJSON](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

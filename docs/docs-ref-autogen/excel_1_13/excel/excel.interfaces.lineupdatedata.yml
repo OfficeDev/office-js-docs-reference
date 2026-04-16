@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.LineUpdateData
 summary: >-
   An interface for updating data on the `Line` object, for use in `line.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Line.set](/javascript/api/excel/excel.line#excel-excel-line-set-member(1))
 
 isPreview: false
 isDeprecated: false

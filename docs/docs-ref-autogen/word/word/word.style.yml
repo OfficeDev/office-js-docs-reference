@@ -13,7 +13,25 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Document.addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
+
+  - [Word.DocumentCreated.addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
+
   - [Word.Style.linkStyle](/javascript/api/word/word.style#word-word-style-linkstyle-member)
+
+  - [Word.Style.load](/javascript/api/word/word.style#word-word-style-load-member(1))
+
+  - [Word.Style.set](/javascript/api/word/word.style#word-word-style-set-member(2))
+
+  - [Word.Style.track](/javascript/api/word/word.style#word-word-style-track-member(1))
+
+  - [Word.Style.untrack](/javascript/api/word/word.style#word-word-style-untrack-member(1))
+
+  - [Word.StyleCollection.getByName](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1))
+
+  - [Word.StyleCollection.getByNameOrNullObject](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1))
+
+  - [Word.StyleCollection.getItem](/javascript/api/word/word.stylecollection#word-word-stylecollection-getitem-member(1))
 
   - [Word.StyleCollection.items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)
 

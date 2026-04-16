@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeAreasCollectionData
 summary: >-
   An interface describing the data returned by calling
   `rangeAreasCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeAreasCollection.toJSON](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

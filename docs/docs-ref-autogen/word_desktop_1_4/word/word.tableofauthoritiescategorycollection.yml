@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.Document.tableOfAuthoritiesCategories](/javascript/api/word/word.document#word-word-document-tableofauthoritiescategories-member)
 
+  - [Word.TableOfAuthoritiesCategoryCollection.load](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-load-member(1))
+
+  - [Word.TableOfAuthoritiesCategoryCollection.track](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-track-member(1))
+
+  - [Word.TableOfAuthoritiesCategoryCollection.untrack](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CanvasUpdateData
 summary: >-
   An interface for updating data on the `Canvas` object, for use in
   `canvas.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Canvas.set](/javascript/api/word/word.canvas#word-word-canvas-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.ImageUpdateData
 summary: >-
   An interface for updating data on the `Image` object, for use in `image.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Image.set](/javascript/api/onenote/onenote.image#onenote-onenote-image-set-member(1))
 
 isPreview: false
 isDeprecated: false

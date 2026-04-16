@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShapeUpdateData
 summary: >-
   An interface for updating data on the `Shape` object, for use in `shape.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Shape.set](/javascript/api/word/word.shape#word-word-shape-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Visio.Application.load](/javascript/api/visio/visio.application#visio-visio-application-load-member(1))
+
+  - [Visio.Application.set](/javascript/api/visio/visio.application#visio-visio-application-set-member(2))
+
   - [Visio.Document.application](/javascript/api/visio/visio.document#visio-visio-document-application-member)
 
 isPreview: false

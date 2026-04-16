@@ -12,7 +12,19 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.RowColumnPivotHierarchy.load](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-load-member(1))
+
+  - [Excel.RowColumnPivotHierarchy.set](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-set-member(2))
+
+  - [Excel.RowColumnPivotHierarchyCollection.add](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-add-member(1))
+
+  - [Excel.RowColumnPivotHierarchyCollection.getItem](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-getitem-member(1))
+
+  - [Excel.RowColumnPivotHierarchyCollection.getItemOrNullObject](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-getitemornullobject-member(1))
+
   - [Excel.RowColumnPivotHierarchyCollection.items](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-items-member)
+
+  - [Excel.RowColumnPivotHierarchyCollection.remove](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-remove-member(1))
 
 isPreview: false
 isDeprecated: false

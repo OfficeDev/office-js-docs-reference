@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.SettingData
 summary: >-
   An interface describing the data returned by calling `setting.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Setting.toJSON](/javascript/api/excel/excel.setting#excel-excel-setting-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

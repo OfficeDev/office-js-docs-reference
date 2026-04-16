@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ShapeFillData
 summary: >-
   An interface describing the data returned by calling `shapeFill.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ShapeFill.toJSON](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

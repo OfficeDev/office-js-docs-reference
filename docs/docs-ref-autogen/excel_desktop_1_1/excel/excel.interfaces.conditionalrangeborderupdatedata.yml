@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
 summary: >-
   An interface for updating data on the `ConditionalRangeBorder` object, for use
   in `conditionalRangeBorder.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalRangeBorder.set](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-set-member(1))
 
 isPreview: false
 isDeprecated: false

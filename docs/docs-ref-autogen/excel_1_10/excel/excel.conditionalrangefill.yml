@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ConditionalRangeFill.load](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-load-member(1))
+
+  - [Excel.ConditionalRangeFill.set](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-set-member(2))
+
   - [Excel.ConditionalRangeFormat.fill](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-fill-member)
 
 isPreview: false

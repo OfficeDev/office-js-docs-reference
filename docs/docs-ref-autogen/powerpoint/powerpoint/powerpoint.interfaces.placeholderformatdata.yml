@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.PlaceholderFormatData
 summary: >-
   An interface describing the data returned by calling
   `placeholderFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.PlaceholderFormat.toJSON](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

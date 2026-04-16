@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartDataLabelsData
 summary: >-
   An interface describing the data returned by calling
   `chartDataLabels.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartDataLabels.toJSON](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TableSortData
 summary: >-
   An interface describing the data returned by calling `tableSort.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TableSort.toJSON](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

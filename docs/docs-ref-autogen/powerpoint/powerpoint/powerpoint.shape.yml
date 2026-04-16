@@ -13,15 +13,55 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.Binding.getShape](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-getshape-member(1))
+
+  - [PowerPoint.BindingCollection.add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
+
   - [PowerPoint.Graphic.shape](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-shape-member)
 
+  - [PowerPoint.Hyperlink.getLinkedShapeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedshapeornullobject-member(1))
+
+  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+
+  - [PowerPoint.Shape.load](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-load-member(1))
+
   - [PowerPoint.Shape.parentGroup](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-parentgroup-member)
+
+  - [PowerPoint.ShapeCollection.addGeometricShape](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgeometricshape-member(1))
+
+  - [PowerPoint.ShapeCollection.addGroup](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addgroup-member(1))
+
+  - [PowerPoint.ShapeCollection.addLine](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addline-member(1))
+
+  - [PowerPoint.ShapeCollection.addPicture](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addpicture-member(1))
+
+  - [PowerPoint.ShapeCollection.addTable](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtable-member(1))
+
+  - [PowerPoint.ShapeCollection.addTextBox](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtextbox-member(1))
+
+  - [PowerPoint.ShapeCollection.getItem](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitem-member(1))
+
+  - [PowerPoint.ShapeCollection.getItemAt](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemat-member(1))
+
+  - [PowerPoint.ShapeCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemornullobject-member(1))
 
   - [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-items-member)
 
   - [PowerPoint.ShapeGroup.shape](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shape-member)
 
+  - [PowerPoint.ShapeScopedCollection.getItem](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitem-member(1))
+
+  - [PowerPoint.ShapeScopedCollection.getItemAt](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemat-member(1))
+
+  - [PowerPoint.ShapeScopedCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemornullobject-member(1))
+
+  - [PowerPoint.ShapeScopedCollection.group](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-group-member(1))
+
   - [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-items-member)
+
+  - [PowerPoint.Table.getShape](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getshape-member(1))
+
+  - [PowerPoint.TextFrame.getParentShape](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-getparentshape-member(1))
 
   #### Examples
 

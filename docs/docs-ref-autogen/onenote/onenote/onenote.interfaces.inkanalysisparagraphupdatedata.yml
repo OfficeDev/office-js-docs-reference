@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.InkAnalysisParagraphUpdateData
 summary: >-
   An interface for updating data on the `InkAnalysisParagraph` object, for use
   in `inkAnalysisParagraph.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.InkAnalysisParagraph.set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(1))
 
 isPreview: false
 isDeprecated: false

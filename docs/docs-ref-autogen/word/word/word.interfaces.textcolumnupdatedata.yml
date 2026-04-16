@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TextColumnUpdateData
 summary: >-
   An interface for updating data on the `TextColumn` object, for use in
   `textColumn.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TextColumn.set](/javascript/api/word/word.textcolumn#word-word-textcolumn-set-member(1))
 
 isPreview: false
 isDeprecated: false

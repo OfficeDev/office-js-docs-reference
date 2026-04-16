@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.NamedSheetViewCollectionData
 summary: >-
   An interface describing the data returned by calling
   `namedSheetViewCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.NamedSheetViewCollection.toJSON](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

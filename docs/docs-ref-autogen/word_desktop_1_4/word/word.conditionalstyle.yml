@@ -10,6 +10,18 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.ConditionalStyle.load](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-load-member(1))
+
+  - [Word.ConditionalStyle.track](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-track-member(1))
+
+  - [Word.ConditionalStyle.untrack](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-untrack-member(1))
+
+  - [Word.TableStyle.condition](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

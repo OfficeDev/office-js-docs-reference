@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.PivotTableStyleCollection.load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
+
   - [Excel.Workbook.pivotTableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottablestyles-member)
 
 isPreview: false

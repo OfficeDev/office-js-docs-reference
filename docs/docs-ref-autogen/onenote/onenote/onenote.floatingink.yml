@@ -12,6 +12,12 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.FloatingInk.load](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-load-member(1))
+
+  - [OneNote.FloatingInk.track](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-track-member(1))
+
+  - [OneNote.FloatingInk.untrack](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-untrack-member(1))
+
   - [OneNote.InkStroke.floatingInk](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-floatingink-member)
 
   - [OneNote.PageContent.ink](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-ink-member)

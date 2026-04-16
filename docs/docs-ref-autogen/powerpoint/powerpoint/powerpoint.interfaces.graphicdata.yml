@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.GraphicData
 summary: >-
   An interface describing the data returned by calling `graphic.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.Graphic.toJSON](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

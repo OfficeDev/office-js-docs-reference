@@ -12,6 +12,26 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Comment.assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
+
+  - [Excel.Comment.getTask](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))
+
+  - [Excel.Comment.getTaskOrNullObject](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))
+
+  - [Excel.CommentReply.assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
+
+  - [Excel.CommentReply.getTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))
+
+  - [Excel.CommentReply.getTaskOrNullObject](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))
+
+  - [Excel.DocumentTask.load](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-load-member(1))
+
+  - [Excel.DocumentTaskCollection.getItem](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1))
+
+  - [Excel.DocumentTaskCollection.getItemAt](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1))
+
+  - [Excel.DocumentTaskCollection.getItemOrNullObject](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemornullobject-member(1))
+
   - [Excel.DocumentTaskCollection.items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)
 
 isPreview: true

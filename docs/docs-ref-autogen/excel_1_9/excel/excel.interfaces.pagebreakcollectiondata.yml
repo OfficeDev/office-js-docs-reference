@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PageBreakCollectionData
 summary: >-
   An interface describing the data returned by calling
   `pageBreakCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PageBreakCollection.toJSON](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

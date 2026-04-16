@@ -16,6 +16,8 @@ remarks: >-
 
   - [Excel.CultureInfo.datetimeFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-datetimeformat-member)
 
+  - [Excel.DatetimeFormatInfo.load](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

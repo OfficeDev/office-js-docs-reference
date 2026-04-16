@@ -13,6 +13,12 @@ remarks: >-
   [API set: ExcelApi
   1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Setting.load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

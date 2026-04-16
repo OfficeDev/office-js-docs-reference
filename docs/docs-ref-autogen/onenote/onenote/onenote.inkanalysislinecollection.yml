@@ -12,6 +12,12 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.InkAnalysisLineCollection.load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
+
+  - [OneNote.InkAnalysisLineCollection.track](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-track-member(1))
+
+  - [OneNote.InkAnalysisLineCollection.untrack](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-untrack-member(1))
+
   - [OneNote.InkAnalysisParagraph.lines](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-lines-member)
 
 isPreview: false

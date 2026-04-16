@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TableOfAuthoritiesUpdateData
 summary: >-
   An interface for updating data on the `TableOfAuthorities` object, for use in
   `tableOfAuthorities.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TableOfAuthorities.set](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-set-member(1))
 
 isPreview: false
 isDeprecated: false

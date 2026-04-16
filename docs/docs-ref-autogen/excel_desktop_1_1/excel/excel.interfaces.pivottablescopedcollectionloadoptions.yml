@@ -11,6 +11,12 @@ remarks: >-
   [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.PivotTableScopedCollection.load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

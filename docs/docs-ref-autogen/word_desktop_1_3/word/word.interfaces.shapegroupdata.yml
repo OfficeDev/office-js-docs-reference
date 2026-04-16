@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShapeGroupData
 summary: >-
   An interface describing the data returned by calling `shapeGroup.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShapeGroup.toJSON](/javascript/api/word/word.shapegroup#word-word-shapegroup-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

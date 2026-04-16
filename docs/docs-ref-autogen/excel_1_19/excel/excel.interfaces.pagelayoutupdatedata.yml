@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PageLayoutUpdateData
 summary: >-
   An interface for updating data on the `PageLayout` object, for use in
   `pageLayout.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PageLayout.set](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-set-member(1))
 
 isPreview: false
 isDeprecated: false

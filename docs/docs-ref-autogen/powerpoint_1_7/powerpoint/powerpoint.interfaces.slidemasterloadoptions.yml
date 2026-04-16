@@ -8,6 +8,12 @@ remarks: >-
   [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.SlideMaster.load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

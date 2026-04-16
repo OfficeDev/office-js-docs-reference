@@ -13,7 +13,19 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Annotation.load](/javascript/api/word/word.annotation#word-word-annotation-load-member(1))
+
+  - [Word.Annotation.track](/javascript/api/word/word.annotation#word-word-annotation-track-member(1))
+
+  - [Word.Annotation.untrack](/javascript/api/word/word.annotation#word-word-annotation-untrack-member(1))
+
+  - [Word.AnnotationCollection.getFirst](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirst-member(1))
+
+  - [Word.AnnotationCollection.getFirstOrNullObject](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirstornullobject-member(1))
+
   - [Word.AnnotationCollection.items](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-items-member)
+
+  - [Word.Document.getAnnotationById](/javascript/api/word/word.document#word-word-document-getannotationbyid-member(1))
 
   #### Examples
 

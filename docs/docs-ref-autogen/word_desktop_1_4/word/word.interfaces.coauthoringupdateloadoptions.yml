@@ -8,6 +8,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.CoauthoringUpdate.load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

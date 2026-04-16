@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.TableStyleCollection.load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CustomPropertyUpdateData
 summary: >-
   An interface for updating data on the `CustomProperty` object, for use in
   `customProperty.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CustomProperty.set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false

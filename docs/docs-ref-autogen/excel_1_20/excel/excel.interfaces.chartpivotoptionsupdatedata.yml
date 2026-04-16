@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
 summary: >-
   An interface for updating data on the `ChartPivotOptions` object, for use in
   `chartPivotOptions.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartPivotOptions.set](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-set-member(1))
 
 isPreview: false
 isDeprecated: false

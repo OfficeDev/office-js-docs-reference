@@ -13,6 +13,8 @@ remarks: >-
   #### Used by
 
 
+  - [Word.List.setLevelAlignment](/javascript/api/word/word.list#word-word-list-setlevelalignment-member(1))
+
   - [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#word-word-paragraph-alignment-member)
 
   - [Word.ParagraphFormat.alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)

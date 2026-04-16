@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.CustomProperty.load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
+
+  - [PowerPoint.CustomPropertyCollection.add](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-add-member(1))
+
+  - [PowerPoint.CustomPropertyCollection.getItem](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitem-member(1))
+
+  - [PowerPoint.CustomPropertyCollection.getItemAt](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemat-member(1))
+
+  - [PowerPoint.CustomPropertyCollection.getItemOrNullObject](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemornullobject-member(1))
+
   - [PowerPoint.CustomPropertyCollection.items](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-items-member)
 
 isPreview: false

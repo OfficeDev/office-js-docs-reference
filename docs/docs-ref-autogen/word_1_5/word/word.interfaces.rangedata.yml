@@ -4,7 +4,11 @@ uid: word!Word.Interfaces.RangeData:interface
 package: word!
 fullName: Word.Interfaces.RangeData
 summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Range.toJSON](/javascript/api/word/word.range#word-word-range-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

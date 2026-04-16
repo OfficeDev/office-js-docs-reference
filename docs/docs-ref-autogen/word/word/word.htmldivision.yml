@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Word.HtmlDivision.htmlDivisionParent](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisionparent-member(1))
+
+  - [Word.HtmlDivision.load](/javascript/api/word/word.htmldivision#word-word-htmldivision-load-member(1))
+
+  - [Word.HtmlDivision.track](/javascript/api/word/word.htmldivision#word-word-htmldivision-track-member(1))
+
+  - [Word.HtmlDivision.untrack](/javascript/api/word/word.htmldivision#word-word-htmldivision-untrack-member(1))
+
+  - [Word.HtmlDivisionCollection.getItemAt](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1))
+
   - [Word.HtmlDivisionCollection.items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)
 
 isPreview: false

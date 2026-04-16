@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ShapeTextWrapData
 summary: >-
   An interface describing the data returned by calling
   `shapeTextWrap.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ShapeTextWrap.toJSON](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

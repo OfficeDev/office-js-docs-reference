@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CoauthoringLockUpdateData
 summary: >-
   An interface for updating data on the `CoauthoringLock` object, for use in
   `coauthoringLock.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CoauthoringLock.set](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-set-member(1))
 
 isPreview: false
 isDeprecated: false

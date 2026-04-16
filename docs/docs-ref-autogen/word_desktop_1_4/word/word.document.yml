@@ -16,6 +16,14 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Document.load](/javascript/api/word/word.document#word-word-document-load-member(1))
+
+  - [Word.Document.set](/javascript/api/word/word.document#word-word-document-set-member(2))
+
+  - [Word.Document.track](/javascript/api/word/word.document#word-word-document-track-member(1))
+
+  - [Word.Document.untrack](/javascript/api/word/word.document#word-word-document-untrack-member(1))
+
   - [Word.RequestContext.document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
 
   - [Word.XmlNode.ownerDocument](/javascript/api/word/word.xmlnode#word-word-xmlnode-ownerdocument-member)

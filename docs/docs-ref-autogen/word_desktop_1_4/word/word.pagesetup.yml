@@ -14,6 +14,14 @@ remarks: >-
 
   - [Word.Document.pageSetup](/javascript/api/word/word.document#word-word-document-pagesetup-member)
 
+  - [Word.PageSetup.load](/javascript/api/word/word.pagesetup#word-word-pagesetup-load-member(1))
+
+  - [Word.PageSetup.set](/javascript/api/word/word.pagesetup#word-word-pagesetup-set-member(2))
+
+  - [Word.PageSetup.track](/javascript/api/word/word.pagesetup#word-word-pagesetup-track-member(1))
+
+  - [Word.PageSetup.untrack](/javascript/api/word/word.pagesetup#word-word-pagesetup-untrack-member(1))
+
   - [Word.Section.pageSetup](/javascript/api/word/word.section#word-word-section-pagesetup-member)
 
 isPreview: false

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.LineNumberingData
 summary: >-
   An interface describing the data returned by calling
   `lineNumbering.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.LineNumbering.toJSON](/javascript/api/word/word.linenumbering#word-word-linenumbering-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

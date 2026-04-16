@@ -13,6 +13,24 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Editor.load](/javascript/api/word/word.editor#word-word-editor-load-member(1))
+
+  - [Word.Editor.set](/javascript/api/word/word.editor#word-word-editor-set-member(2))
+
+  - [Word.Editor.track](/javascript/api/word/word.editor#word-word-editor-track-member(1))
+
+  - [Word.Editor.untrack](/javascript/api/word/word.editor#word-word-editor-untrack-member(1))
+
+  - [Word.EditorCollection.addById](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbyid-member(1))
+
+  - [Word.EditorCollection.addByType](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1))
+
+  - [Word.EditorCollection.getItemAt](/javascript/api/word/word.editorcollection#word-word-editorcollection-getitemat-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

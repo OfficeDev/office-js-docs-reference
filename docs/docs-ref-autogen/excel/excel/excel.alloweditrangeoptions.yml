@@ -10,6 +10,12 @@ remarks: >-
   [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.AllowEditRangeCollection.add](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-add-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

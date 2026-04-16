@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ShapeLineFormatUpdateData
 summary: >-
   An interface for updating data on the `ShapeLineFormat` object, for use in
   `shapeLineFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ShapeLineFormat.set](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

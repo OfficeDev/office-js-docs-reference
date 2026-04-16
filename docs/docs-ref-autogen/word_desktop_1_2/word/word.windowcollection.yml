@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.Document.windows](/javascript/api/word/word.document#word-word-document-windows-member)
 
+  - [Word.WindowCollection.load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
+
+  - [Word.WindowCollection.track](/javascript/api/word/word.windowcollection#word-word-windowcollection-track-member(1))
+
+  - [Word.WindowCollection.untrack](/javascript/api/word/word.windowcollection#word-word-windowcollection-untrack-member(1))
+
   #### Examples
 
 

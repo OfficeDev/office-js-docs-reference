@@ -6,7 +6,11 @@ fullName: Word.Interfaces.HeadingStyleCollectionData
 summary: >-
   An interface describing the data returned by calling
   `headingStyleCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.HeadingStyleCollection.toJSON](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

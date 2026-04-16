@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Filter.applyIconFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyiconfilter-member(1))
+
   - [Excel.FilterCriteria.icon](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-icon-member)
 
   - [Excel.FiveArrowsGraySet.grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydownarrow-member)

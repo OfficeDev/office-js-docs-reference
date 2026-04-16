@@ -8,6 +8,14 @@ remarks: >-
   [API set: PowerPointApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.Graphic.load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
+
+  - [PowerPoint.Shape.getGraphicOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getgraphicornullobject-member(1))
+
 isPreview: true
 isDeprecated: false
 type: class

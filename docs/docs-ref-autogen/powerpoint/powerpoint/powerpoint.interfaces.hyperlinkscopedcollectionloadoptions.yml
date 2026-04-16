@@ -9,6 +9,12 @@ remarks: >-
   [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.HyperlinkScopedCollection.load](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

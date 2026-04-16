@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.Chart.axes](/javascript/api/excel/excel.chart#excel-excel-chart-axes-member)
 
+  - [Excel.ChartAxes.load](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-load-member(1))
+
+  - [Excel.ChartAxes.set](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

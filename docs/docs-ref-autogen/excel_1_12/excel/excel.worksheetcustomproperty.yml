@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.WorksheetCustomProperty.load](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-load-member(1))
+
+  - [Excel.WorksheetCustomProperty.set](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-set-member(2))
+
+  - [Excel.WorksheetCustomPropertyCollection.add](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-add-member(1))
+
+  - [Excel.WorksheetCustomPropertyCollection.getItem](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-getitem-member(1))
+
+  - [Excel.WorksheetCustomPropertyCollection.getItemOrNullObject](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-getitemornullobject-member(1))
+
   - [Excel.WorksheetCustomPropertyCollection.items](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-items-member)
 
 isPreview: false

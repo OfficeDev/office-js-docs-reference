@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TableUpdateData
 summary: >-
   An interface for updating data on the `Table` object, for use in `table.set({
   ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Table.set](/javascript/api/excel/excel.table#excel-excel-table-set-member(1))
 
 isPreview: false
 isDeprecated: false

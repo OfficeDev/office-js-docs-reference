@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `ColorScaleConditionalFormat` object,
   for use in `colorScaleConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ColorScaleConditionalFormat.set](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

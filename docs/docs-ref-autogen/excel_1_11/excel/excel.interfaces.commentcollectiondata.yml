@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CommentCollectionData
 summary: >-
   An interface describing the data returned by calling
   `commentCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CommentCollection.toJSON](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

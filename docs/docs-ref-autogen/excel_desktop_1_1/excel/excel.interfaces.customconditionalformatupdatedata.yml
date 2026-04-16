@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
 summary: >-
   An interface for updating data on the `CustomConditionalFormat` object, for
   use in `customConditionalFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CustomConditionalFormat.set](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

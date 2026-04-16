@@ -12,6 +12,14 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Range.getVisibleView](/javascript/api/excel/excel.range#excel-excel-range-getvisibleview-member(1))
+
+  - [Excel.RangeView.load](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-load-member(1))
+
+  - [Excel.RangeView.set](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-set-member(2))
+
+  - [Excel.RangeViewCollection.getItemAt](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getitemat-member(1))
+
   - [Excel.RangeViewCollection.items](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-items-member)
 
 isPreview: false

@@ -14,6 +14,12 @@ remarks: >-
 
   - [Word.Document.frames](/javascript/api/word/word.document#word-word-document-frames-member)
 
+  - [Word.FrameCollection.load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
+
+  - [Word.FrameCollection.track](/javascript/api/word/word.framecollection#word-word-framecollection-track-member(1))
+
+  - [Word.FrameCollection.untrack](/javascript/api/word/word.framecollection#word-word-framecollection-untrack-member(1))
+
   - [Word.Range.frames](/javascript/api/word/word.range#word-word-range-frames-member)
 
 isPreview: false

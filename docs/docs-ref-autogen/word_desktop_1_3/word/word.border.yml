@@ -13,6 +13,22 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Border.load](/javascript/api/word/word.border#word-word-border-load-member(1))
+
+  - [Word.Border.set](/javascript/api/word/word.border#word-word-border-set-member(2))
+
+  - [Word.Border.track](/javascript/api/word/word.border#word-word-border-track-member(1))
+
+  - [Word.Border.untrack](/javascript/api/word/word.border#word-word-border-untrack-member(1))
+
+  - [Word.BorderCollection.getByLocation](/javascript/api/word/word.bordercollection#word-word-bordercollection-getbylocation-member(1))
+
+  - [Word.BorderCollection.getFirst](/javascript/api/word/word.bordercollection#word-word-bordercollection-getfirst-member(1))
+
+  - [Word.BorderCollection.getFirstOrNullObject](/javascript/api/word/word.bordercollection#word-word-bordercollection-getfirstornullobject-member(1))
+
+  - [Word.BorderCollection.getItem](/javascript/api/word/word.bordercollection#word-word-bordercollection-getitem-member(1))
+
   - [Word.BorderCollection.items](/javascript/api/word/word.bordercollection#word-word-bordercollection-items-member)
 
   #### Examples

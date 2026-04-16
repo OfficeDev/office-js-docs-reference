@@ -8,6 +8,14 @@ remarks: >-
   [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.Range.replaceAll](/javascript/api/excel/excel.range#excel-excel-range-replaceall-member(1))
+
+  - [Excel.Worksheet.replaceAll](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-replaceall-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

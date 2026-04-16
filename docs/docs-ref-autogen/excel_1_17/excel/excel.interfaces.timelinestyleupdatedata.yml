@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TimelineStyleUpdateData
 summary: >-
   An interface for updating data on the `TimelineStyle` object, for use in
   `timelineStyle.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TimelineStyle.set](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,6 +13,12 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Editor.load](/javascript/api/word/word.editor#word-word-editor-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -13,9 +13,23 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Comment.load](/javascript/api/word/word.comment#word-word-comment-load-member(1))
+
+  - [Word.Comment.set](/javascript/api/word/word.comment#word-word-comment-set-member(2))
+
+  - [Word.Comment.track](/javascript/api/word/word.comment#word-word-comment-track-member(1))
+
+  - [Word.Comment.untrack](/javascript/api/word/word.comment#word-word-comment-untrack-member(1))
+
+  - [Word.CommentCollection.getFirst](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirst-member(1))
+
+  - [Word.CommentCollection.getFirstOrNullObject](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirstornullobject-member(1))
+
   - [Word.CommentCollection.items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)
 
   - [Word.CommentReply.parentComment](/javascript/api/word/word.commentreply#word-word-commentreply-parentcomment-member)
+
+  - [Word.Range.insertComment](/javascript/api/word/word.range#word-word-range-insertcomment-member(1))
 
   #### Examples
 

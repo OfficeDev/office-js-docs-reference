@@ -13,6 +13,10 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.Hyperlink.load](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-load-member(1))
+
+  - [PowerPoint.HyperlinkCollection.getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1))
+
   - [PowerPoint.HyperlinkCollection.items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
 
   #### Examples

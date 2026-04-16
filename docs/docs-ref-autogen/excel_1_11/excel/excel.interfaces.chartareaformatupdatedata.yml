@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartAreaFormatUpdateData
 summary: >-
   An interface for updating data on the `ChartAreaFormat` object, for use in
   `chartAreaFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartAreaFormat.set](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

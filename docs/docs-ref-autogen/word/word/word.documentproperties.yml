@@ -21,6 +21,14 @@ remarks: >-
 
   - [Word.DocumentCreated.properties](/javascript/api/word/word.documentcreated#word-word-documentcreated-properties-member)
 
+  - [Word.DocumentProperties.load](/javascript/api/word/word.documentproperties#word-word-documentproperties-load-member(1))
+
+  - [Word.DocumentProperties.set](/javascript/api/word/word.documentproperties#word-word-documentproperties-set-member(2))
+
+  - [Word.DocumentProperties.track](/javascript/api/word/word.documentproperties#word-word-documentproperties-track-member(1))
+
+  - [Word.DocumentProperties.untrack](/javascript/api/word/word.documentproperties#word-word-documentproperties-untrack-member(1))
+
   #### Examples
 
 

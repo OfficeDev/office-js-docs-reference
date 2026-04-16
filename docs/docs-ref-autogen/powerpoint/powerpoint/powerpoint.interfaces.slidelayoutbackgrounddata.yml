@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.SlideLayoutBackgroundData
 summary: >-
   An interface describing the data returned by calling
   `slideLayoutBackground.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.SlideLayoutBackground.toJSON](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

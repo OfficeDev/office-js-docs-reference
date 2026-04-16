@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Application.load](/javascript/api/excel/excel.application#excel-excel-application-load-member(1))
+
+  - [Excel.Application.set](/javascript/api/excel/excel.application#excel-excel-application-set-member(2))
+
   - [Excel.RequestContext.application](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-application-member)
 
   - [Excel.Workbook.application](/javascript/api/excel/excel.workbook#excel-excel-workbook-application-member)

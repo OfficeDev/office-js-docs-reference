@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.NamedSheetViewCollection.load](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-load-member(1))
+
   - [Excel.Worksheet.namedSheetViews](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-namedsheetviews-member)
 
 isPreview: false

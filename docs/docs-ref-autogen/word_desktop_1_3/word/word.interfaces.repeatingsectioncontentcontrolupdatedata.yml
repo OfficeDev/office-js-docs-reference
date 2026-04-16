@@ -6,7 +6,11 @@ fullName: Word.Interfaces.RepeatingSectionContentControlUpdateData
 summary: >-
   An interface for updating data on the `RepeatingSectionContentControl` object,
   for use in `repeatingSectionContentControl.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.RepeatingSectionContentControl.set](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

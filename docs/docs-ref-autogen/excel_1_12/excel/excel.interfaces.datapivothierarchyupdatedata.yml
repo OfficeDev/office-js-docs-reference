@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
 summary: >-
   An interface for updating data on the `DataPivotHierarchy` object, for use in
   `dataPivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DataPivotHierarchy.set](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

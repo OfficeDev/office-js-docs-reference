@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.DataValidationData
 summary: >-
   An interface describing the data returned by calling
   `dataValidation.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.DataValidation.toJSON](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

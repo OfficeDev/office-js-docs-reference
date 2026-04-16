@@ -6,7 +6,11 @@ fullName: Visio.Interfaces.SelectionData
 summary: >-
   An interface describing the data returned by calling `selection.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Visio.Selection.toJSON](/javascript/api/visio/visio.selection#visio-visio-selection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.ContentControl.lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)
 
+  - [Word.ListCollection.load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+
+  - [Word.ListCollection.track](/javascript/api/word/word.listcollection#word-word-listcollection-track-member(1))
+
+  - [Word.ListCollection.untrack](/javascript/api/word/word.listcollection#word-word-listcollection-untrack-member(1))
+
   - [Word.Range.lists](/javascript/api/word/word.range#word-word-range-lists-member)
 
   #### Examples

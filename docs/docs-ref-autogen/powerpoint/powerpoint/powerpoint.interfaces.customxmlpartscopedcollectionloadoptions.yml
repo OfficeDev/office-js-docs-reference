@@ -12,6 +12,12 @@ remarks: >-
   [API set: PowerPointApi
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [PowerPoint.CustomXmlPartScopedCollection.load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -16,6 +16,12 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.LinkedWorkbook.load](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-load-member(1))
+
+  - [Excel.LinkedWorkbookCollection.getItem](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitem-member(1))
+
+  - [Excel.LinkedWorkbookCollection.getItemOrNullObject](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitemornullobject-member(1))
+
   - [Excel.LinkedWorkbookCollection.items](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-items-member)
 
 isPreview: false

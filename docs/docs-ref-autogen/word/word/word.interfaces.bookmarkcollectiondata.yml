@@ -6,7 +6,11 @@ fullName: Word.Interfaces.BookmarkCollectionData
 summary: >-
   An interface describing the data returned by calling
   `bookmarkCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.BookmarkCollection.toJSON](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -4,7 +4,11 @@ uid: excel!Excel.Interfaces.TableData:interface
 package: excel!
 fullName: Excel.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.Table.toJSON](/javascript/api/excel/excel.table#excel-excel-table-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartMapOptions.load](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-load-member(1))
+
+  - [Excel.ChartMapOptions.set](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-set-member(2))
+
   - [Excel.ChartSeries.mapOptions](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-mapoptions-member)
 
 isPreview: false

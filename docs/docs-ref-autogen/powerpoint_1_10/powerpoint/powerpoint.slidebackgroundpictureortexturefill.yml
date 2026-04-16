@@ -12,6 +12,15 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.SlideBackgroundFill.getPictureOrTextureFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpictureortexturefillornullobject-member(1))
+
+  - [PowerPoint.SlideBackgroundPictureOrTextureFill.load](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-load-member(1))
+
   #### Examples
 
 

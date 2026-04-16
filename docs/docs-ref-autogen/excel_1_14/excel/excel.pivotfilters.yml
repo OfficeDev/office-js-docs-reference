@@ -10,6 +10,14 @@ remarks: >-
   [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.PivotField.applyFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-applyfilter-member(1))
+
+  - [Excel.PivotField.getFilters](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-getfilters-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

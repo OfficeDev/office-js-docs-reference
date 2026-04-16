@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.SectionGroupCollectionData
 summary: >-
   An interface describing the data returned by calling
   `sectionGroupCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.SectionGroupCollection.toJSON](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

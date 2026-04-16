@@ -17,6 +17,12 @@ remarks: >-
 
   - [Word.Document.tablesOfAuthorities](/javascript/api/word/word.document#word-word-document-tablesofauthorities-member)
 
+  - [Word.TableOfAuthoritiesCollection.load](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-load-member(1))
+
+  - [Word.TableOfAuthoritiesCollection.track](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-track-member(1))
+
+  - [Word.TableOfAuthoritiesCollection.untrack](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

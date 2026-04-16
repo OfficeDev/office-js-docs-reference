@@ -12,6 +12,12 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.DocumentTaskChange.load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1))
+
+  - [Excel.DocumentTaskChange.newObject](/javascript/api/excel/excel.documenttaskchange.newobject:member)
+
+  - [Excel.DocumentTaskChangeCollection.getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1))
+
   - [Excel.DocumentTaskChangeCollection.items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
 
 isPreview: true

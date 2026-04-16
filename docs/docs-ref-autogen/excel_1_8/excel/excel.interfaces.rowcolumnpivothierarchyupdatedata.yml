@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
 summary: >-
   An interface for updating data on the `RowColumnPivotHierarchy` object, for
   use in `rowColumnPivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RowColumnPivotHierarchy.set](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

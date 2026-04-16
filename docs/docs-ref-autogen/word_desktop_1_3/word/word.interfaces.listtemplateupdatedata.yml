@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListTemplateUpdateData
 summary: >-
   An interface for updating data on the `ListTemplate` object, for use in
   `listTemplate.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListTemplate.set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(1))
 
 isPreview: false
 isDeprecated: false

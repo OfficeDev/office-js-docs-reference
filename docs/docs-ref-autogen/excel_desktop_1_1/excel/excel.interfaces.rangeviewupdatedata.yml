@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.RangeViewUpdateData
 summary: >-
   An interface for updating data on the `RangeView` object, for use in
   `rangeView.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.RangeView.set](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-set-member(1))
 
 isPreview: false
 isDeprecated: false

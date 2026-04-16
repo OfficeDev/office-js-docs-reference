@@ -6,7 +6,11 @@ fullName: Word.Interfaces.RevisionsFilterUpdateData
 summary: >-
   An interface for updating data on the `RevisionsFilter` object, for use in
   `revisionsFilter.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.RevisionsFilter.set](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-set-member(1))
 
 isPreview: false
 isDeprecated: false

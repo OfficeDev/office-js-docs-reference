@@ -6,7 +6,11 @@ fullName: Word.Interfaces.InlinePictureData
 summary: >-
   An interface describing the data returned by calling
   `inlinePicture.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.InlinePicture.toJSON](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

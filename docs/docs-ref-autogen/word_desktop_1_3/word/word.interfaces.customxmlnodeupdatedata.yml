@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CustomXmlNodeUpdateData
 summary: >-
   An interface for updating data on the `CustomXmlNode` object, for use in
   `customXmlNode.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CustomXmlNode.set](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-set-member(1))
 
 isPreview: false
 isDeprecated: false

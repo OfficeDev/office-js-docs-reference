@@ -11,6 +11,13 @@ remarks: >-
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Selection.getNextRange](/javascript/api/word/word.selection#word-word-selection-getnextrange-member(1))
+
   #### Examples
 
 

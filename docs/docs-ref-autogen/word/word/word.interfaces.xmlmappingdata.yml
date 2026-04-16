@@ -6,7 +6,11 @@ fullName: Word.Interfaces.XmlMappingData
 summary: >-
   An interface describing the data returned by calling `xmlMapping.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.XmlMapping.toJSON](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,6 +14,14 @@ remarks: >-
   #### Used by
 
 
+  - [Word.LineNumbering.load](/javascript/api/word/word.linenumbering#word-word-linenumbering-load-member(1))
+
+  - [Word.LineNumbering.set](/javascript/api/word/word.linenumbering#word-word-linenumbering-set-member(2))
+
+  - [Word.LineNumbering.track](/javascript/api/word/word.linenumbering#word-word-linenumbering-track-member(1))
+
+  - [Word.LineNumbering.untrack](/javascript/api/word/word.linenumbering#word-word-linenumbering-untrack-member(1))
+
   - [Word.PageSetup.lineNumbering](/javascript/api/word/word.pagesetup#word-word-pagesetup-linenumbering-member)
 
 isPreview: false

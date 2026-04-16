@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CommentReplyUpdateData
 summary: >-
   An interface for updating data on the `CommentReply` object, for use in
   `commentReply.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CommentReply.set](/javascript/api/word/word.commentreply#word-word-commentreply-set-member(1))
 
 isPreview: false
 isDeprecated: false

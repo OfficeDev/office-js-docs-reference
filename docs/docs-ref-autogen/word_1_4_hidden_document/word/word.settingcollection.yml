@@ -19,6 +19,12 @@ remarks: >-
 
   - [Word.DocumentCreated.settings](/javascript/api/word/word.documentcreated#word-word-documentcreated-settings-member)
 
+  - [Word.SettingCollection.load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
+
+  - [Word.SettingCollection.track](/javascript/api/word/word.settingcollection#word-word-settingcollection-track-member(1))
+
+  - [Word.SettingCollection.untrack](/javascript/api/word/word.settingcollection#word-word-settingcollection-untrack-member(1))
+
   #### Examples
 
 

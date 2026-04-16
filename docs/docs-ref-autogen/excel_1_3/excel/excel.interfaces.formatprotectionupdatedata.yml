@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.FormatProtectionUpdateData
 summary: >-
   An interface for updating data on the `FormatProtection` object, for use in
   `formatProtection.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.FormatProtection.set](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ConditionalRangeBorderData
 summary: >-
   An interface describing the data returned by calling
   `conditionalRangeBorder.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ConditionalRangeBorder.toJSON](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

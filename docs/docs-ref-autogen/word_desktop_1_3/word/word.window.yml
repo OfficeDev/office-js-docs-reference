@@ -17,6 +17,18 @@ remarks: >-
 
   - [Word.Document.activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)
 
+  - [Word.Window.load](/javascript/api/word/word.window#word-word-window-load-member(1))
+
+  - [Word.Window.set](/javascript/api/word/word.window#word-word-window-set-member(2))
+
+  - [Word.Window.track](/javascript/api/word/word.window#word-word-window-track-member(1))
+
+  - [Word.Window.untrack](/javascript/api/word/word.window#word-word-window-untrack-member(1))
+
+  - [Word.WindowCollection.getFirst](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirst-member(1))
+
+  - [Word.WindowCollection.getFirstOrNullObject](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirstornullobject-member(1))
+
   - [Word.WindowCollection.items](/javascript/api/word/word.windowcollection#word-word-windowcollection-items-member)
 
   #### Examples

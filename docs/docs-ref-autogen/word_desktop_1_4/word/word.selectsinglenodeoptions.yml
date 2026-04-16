@@ -11,6 +11,14 @@ remarks: >-
   [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.Document.selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
+
+  - [Word.XmlNode.selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

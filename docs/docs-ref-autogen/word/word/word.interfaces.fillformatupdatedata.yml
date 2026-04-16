@@ -6,7 +6,11 @@ fullName: Word.Interfaces.FillFormatUpdateData
 summary: >-
   An interface for updating data on the `FillFormat` object, for use in
   `fillFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.FillFormat.set](/javascript/api/word/word.fillformat#word-word-fillformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

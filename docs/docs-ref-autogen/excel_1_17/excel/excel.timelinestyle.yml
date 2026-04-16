@@ -14,7 +14,23 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.TimelineStyle.duplicate](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-duplicate-member(1))
+
+  - [Excel.TimelineStyle.load](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-load-member(1))
+
+  - [Excel.TimelineStyle.set](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-set-member(2))
+
+  - [Excel.TimelineStyleCollection.add](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-add-member(1))
+
+  - [Excel.TimelineStyleCollection.getDefault](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-getdefault-member(1))
+
+  - [Excel.TimelineStyleCollection.getItem](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-getitem-member(1))
+
+  - [Excel.TimelineStyleCollection.getItemOrNullObject](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-getitemornullobject-member(1))
+
   - [Excel.TimelineStyleCollection.items](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-items-member)
+
+  - [Excel.TimelineStyleCollection.setDefault](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-setdefault-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -16,6 +16,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.ReviewerCollection.load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1))
+
+  - [Word.ReviewerCollection.track](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-track-member(1))
+
+  - [Word.ReviewerCollection.untrack](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-untrack-member(1))
+
   - [Word.RevisionsFilter.reviewers](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-reviewers-member)
 
 isPreview: false

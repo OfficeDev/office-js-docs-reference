@@ -14,6 +14,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.RangeFont.load](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-load-member(1))
+
+  - [Excel.RangeFont.set](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-set-member(2))
+
   - [Excel.RangeFormat.font](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-font-member)
 
 isPreview: false

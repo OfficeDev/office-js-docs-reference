@@ -24,6 +24,10 @@ remarks: >-
 
   - [Excel.HeaderFooter.rightHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightheaderpicture-member)
 
+  - [Excel.HeaderFooterPicture.load](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-load-member(1))
+
+  - [Excel.HeaderFooterPicture.set](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

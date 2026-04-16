@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.Chart.title](/javascript/api/excel/excel.chart#excel-excel-chart-title-member)
 
+  - [Excel.ChartTitle.load](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-load-member(1))
+
+  - [Excel.ChartTitle.set](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

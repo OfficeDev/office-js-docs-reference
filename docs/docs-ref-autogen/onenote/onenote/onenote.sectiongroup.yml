@@ -14,13 +14,29 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.Notebook.addSectionGroup](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-addsectiongroup-member(1))
+
+  - [OneNote.Section.copyToSectionGroup](/javascript/api/onenote/onenote.section#onenote-onenote-section-copytosectiongroup-member(1))
+
   - [OneNote.Section.parentSectionGroup](/javascript/api/onenote/onenote.section#onenote-onenote-section-parentsectiongroup-member)
 
   - [OneNote.Section.parentSectionGroupOrNull](/javascript/api/onenote/onenote.section#onenote-onenote-section-parentsectiongroupornull-member)
 
+  - [OneNote.SectionGroup.addSectionGroup](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-addsectiongroup-member(1))
+
+  - [OneNote.SectionGroup.load](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-load-member(1))
+
   - [OneNote.SectionGroup.parentSectionGroup](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-parentsectiongroup-member)
 
   - [OneNote.SectionGroup.parentSectionGroupOrNull](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-parentsectiongroupornull-member)
+
+  - [OneNote.SectionGroup.track](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-track-member(1))
+
+  - [OneNote.SectionGroup.untrack](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-untrack-member(1))
+
+  - [OneNote.SectionGroupCollection.getItem](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getitem-member(1))
+
+  - [OneNote.SectionGroupCollection.getItemAt](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getitemat-member(1))
 
   - [OneNote.SectionGroupCollection.items](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-items-member)
 

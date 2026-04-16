@@ -6,7 +6,11 @@ fullName: Word.Interfaces.CommentContentRangeData
 summary: >-
   An interface describing the data returned by calling
   `commentContentRange.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.CommentContentRange.toJSON](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.NotebookData
 summary: >-
   An interface describing the data returned by calling `notebook.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.Notebook.toJSON](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

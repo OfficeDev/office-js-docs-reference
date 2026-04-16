@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.Chart.dataLabels](/javascript/api/excel/excel.chart#excel-excel-chart-datalabels-member)
 
+  - [Excel.ChartDataLabels.load](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-load-member(1))
+
+  - [Excel.ChartDataLabels.set](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-set-member(2))
+
   - [Excel.ChartSeries.dataLabels](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-datalabels-member)
 
 isPreview: false

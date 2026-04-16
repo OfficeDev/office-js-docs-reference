@@ -12,6 +12,10 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.RangeFill.load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1))
+
+  - [Excel.RangeFill.set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(2))
+
   - [Excel.RangeFormat.fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
 
 isPreview: false

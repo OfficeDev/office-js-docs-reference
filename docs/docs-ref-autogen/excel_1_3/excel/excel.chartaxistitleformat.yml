@@ -14,6 +14,10 @@ remarks: >-
 
   - [Excel.ChartAxisTitle.format](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-format-member)
 
+  - [Excel.ChartAxisTitleFormat.load](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-load-member(1))
+
+  - [Excel.ChartAxisTitleFormat.set](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

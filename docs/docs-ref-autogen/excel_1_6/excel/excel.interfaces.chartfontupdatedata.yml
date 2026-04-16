@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartFontUpdateData
 summary: >-
   An interface for updating data on the `ChartFont` object, for use in
   `chartFont.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartFont.set](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-set-member(1))
 
 isPreview: false
 isDeprecated: false

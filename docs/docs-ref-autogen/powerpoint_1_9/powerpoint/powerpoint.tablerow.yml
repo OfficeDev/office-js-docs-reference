@@ -12,6 +12,12 @@ remarks: >-
   #### Used by
 
 
+  - [PowerPoint.TableRow.load](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-load-member(1))
+
+  - [PowerPoint.TableRowCollection.deleteRows](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-deleterows-member(1))
+
+  - [PowerPoint.TableRowCollection.getItemAt](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-getitemat-member(1))
+
   - [PowerPoint.TableRowCollection.items](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-items-member)
 
 isPreview: false

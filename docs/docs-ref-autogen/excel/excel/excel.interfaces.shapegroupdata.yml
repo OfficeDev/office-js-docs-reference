@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ShapeGroupData
 summary: >-
   An interface describing the data returned by calling `shapeGroup.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ShapeGroup.toJSON](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

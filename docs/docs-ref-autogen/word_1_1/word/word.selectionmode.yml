@@ -11,6 +11,19 @@ remarks: >-
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.select](/javascript/api/word/word.body#word-word-body-select-member(1))
+
+  - [Word.ContentControl.select](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-select-member(1))
+
+  - [Word.Paragraph.select](/javascript/api/word/word.paragraph#word-word-paragraph-select-member(1))
+
+  - [Word.Range.select](/javascript/api/word/word.range#word-word-range-select-member(1))
+
   #### Examples
 
 

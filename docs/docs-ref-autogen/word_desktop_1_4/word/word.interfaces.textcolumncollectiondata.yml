@@ -6,7 +6,11 @@ fullName: Word.Interfaces.TextColumnCollectionData
 summary: >-
   An interface describing the data returned by calling
   `textColumnCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.TextColumnCollection.toJSON](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

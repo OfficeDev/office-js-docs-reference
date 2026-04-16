@@ -6,7 +6,11 @@ fullName: Visio.Interfaces.PageCollectionData
 summary: >-
   An interface describing the data returned by calling
   `pageCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Visio.PageCollection.toJSON](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

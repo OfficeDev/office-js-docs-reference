@@ -11,6 +11,25 @@ remarks: >-
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Body.getTrackedChanges](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))
+
+  - [Word.ContentControl.getTrackedChanges](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))
+
+  - [Word.Paragraph.getTrackedChanges](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))
+
+  - [Word.Range.getTrackedChanges](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))
+
+  - [Word.TrackedChangeCollection.load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
+
+  - [Word.TrackedChangeCollection.track](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-track-member(1))
+
+  - [Word.TrackedChangeCollection.untrack](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-untrack-member(1))
+
   #### Examples
 
 

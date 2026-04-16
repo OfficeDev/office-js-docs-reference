@@ -11,6 +11,17 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [PowerPoint.HyperlinkCollection.add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+
+  - [PowerPoint.Shape.setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
+
+  - [PowerPoint.TextRange.setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
+
   #### Examples
 
 

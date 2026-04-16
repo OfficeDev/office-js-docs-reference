@@ -6,7 +6,11 @@ fullName: Word.Interfaces.SettingUpdateData
 summary: >-
   An interface for updating data on the `Setting` object, for use in
   `setting.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.Setting.set](/javascript/api/word/word.setting#word-word-setting-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,6 +15,12 @@ remarks: >-
   #### Used by
 
 
+  - [Word.BuildingBlockCategoryCollection.load](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-load-member(1))
+
+  - [Word.BuildingBlockCategoryCollection.track](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-track-member(1))
+
+  - [Word.BuildingBlockCategoryCollection.untrack](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-untrack-member(1))
+
   - [Word.BuildingBlockTypeItem.categories](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-categories-member)
 
 isPreview: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.CustomXmlPartScopedCollectionData
 summary: >-
   An interface describing the data returned by calling
   `customXmlPartScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.CustomXmlPartScopedCollection.toJSON](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -8,6 +8,12 @@ remarks: >-
   [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.SlicerStyleCollection.load](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

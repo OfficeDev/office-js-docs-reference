@@ -6,7 +6,11 @@ fullName: Word.Interfaces.StyleCollectionData
 summary: >-
   An interface describing the data returned by calling
   `styleCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.StyleCollection.toJSON](/javascript/api/word/word.stylecollection#word-word-stylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

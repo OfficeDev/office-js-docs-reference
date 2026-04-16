@@ -20,6 +20,16 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.TableRow.load](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-load-member(1))
+
+  - [Excel.TableRow.set](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-set-member(2))
+
+  - [Excel.TableRowCollection.add](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1))
+
+  - [Excel.TableRowCollection.addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
+
+  - [Excel.TableRowCollection.getItemAt](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-getitemat-member(1))
+
   - [Excel.TableRowCollection.items](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-items-member)
 
 isPreview: false

@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartLegendEntryCollectionData
 summary: >-
   An interface describing the data returned by calling
   `chartLegendEntryCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartLegendEntryCollection.toJSON](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,6 +14,10 @@ remarks: >-
 
   - [Visio.Document.view](/javascript/api/visio/visio.document#visio-visio-document-view-member)
 
+  - [Visio.DocumentView.load](/javascript/api/visio/visio.documentview#visio-visio-documentview-load-member(1))
+
+  - [Visio.DocumentView.set](/javascript/api/visio/visio.documentview#visio-visio-documentview-set-member(2))
+
 isPreview: false
 isDeprecated: false
 type: class

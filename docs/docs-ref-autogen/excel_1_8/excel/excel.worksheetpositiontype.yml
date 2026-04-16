@@ -11,6 +11,13 @@ remarks: >-
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Excel.Worksheet.copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
+
   #### Examples
 
 

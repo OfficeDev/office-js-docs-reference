@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.NoteTagData
 summary: >-
   An interface describing the data returned by calling `noteTag.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.NoteTag.toJSON](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

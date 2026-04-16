@@ -15,9 +15,27 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Body.insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
+
+  - [Word.ContentControl.insertParagraph](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertparagraph-member(1))
+
+  - [Word.InlinePicture.insertParagraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertparagraph-member(1))
+
   - [Word.InlinePicture.paragraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-paragraph-member)
 
+  - [Word.Paragraph.insertParagraph](/javascript/api/word/word.paragraph#word-word-paragraph-insertparagraph-member(1))
+
+  - [Word.Paragraph.load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1))
+
+  - [Word.Paragraph.set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(2))
+
+  - [Word.Paragraph.track](/javascript/api/word/word.paragraph#word-word-paragraph-track-member(1))
+
+  - [Word.Paragraph.untrack](/javascript/api/word/word.paragraph#word-word-paragraph-untrack-member(1))
+
   - [Word.ParagraphCollection.items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
+
+  - [Word.Range.insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
 
   #### Examples
 

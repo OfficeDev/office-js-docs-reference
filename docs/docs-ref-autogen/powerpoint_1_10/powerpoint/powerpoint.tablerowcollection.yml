@@ -14,6 +14,8 @@ remarks: >-
 
   - [PowerPoint.Table.rows](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-rows-member)
 
+  - [PowerPoint.TableRowCollection.load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

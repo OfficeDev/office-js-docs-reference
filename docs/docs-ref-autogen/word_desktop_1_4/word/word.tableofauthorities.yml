@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Word.TableOfAuthorities.load](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-load-member(1))
+
+  - [Word.TableOfAuthorities.set](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-set-member(2))
+
+  - [Word.TableOfAuthorities.track](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-track-member(1))
+
+  - [Word.TableOfAuthorities.untrack](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-untrack-member(1))
+
+  - [Word.TableOfAuthoritiesCollection.add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1))
+
   - [Word.TableOfAuthoritiesCollection.items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)
 
 isPreview: false

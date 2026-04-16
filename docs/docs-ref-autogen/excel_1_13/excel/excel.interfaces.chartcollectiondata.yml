@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartCollectionData
 summary: >-
   An interface describing the data returned by calling
   `chartCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartCollection.toJSON](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

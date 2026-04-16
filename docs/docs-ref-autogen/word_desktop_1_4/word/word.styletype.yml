@@ -13,6 +13,8 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Document.addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
+
   - [Word.Style.type](/javascript/api/word/word.style#word-word-style-type-member)
 
   #### Examples

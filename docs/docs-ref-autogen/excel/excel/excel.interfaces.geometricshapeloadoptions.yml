@@ -11,6 +11,12 @@ remarks: >-
   [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.GeometricShape.load](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -12,6 +12,8 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.Filter.apply](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1))
+
   - [Excel.Filter.criteria](/javascript/api/excel/excel.filter#excel-excel-filter-criteria-member)
 
 isPreview: false

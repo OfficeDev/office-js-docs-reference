@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.TextConditionalFormatData
 summary: >-
   An interface describing the data returned by calling
   `textConditionalFormat.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.TextConditionalFormat.toJSON](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

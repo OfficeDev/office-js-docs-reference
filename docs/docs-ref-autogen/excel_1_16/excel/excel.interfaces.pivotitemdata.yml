@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.PivotItemData
 summary: >-
   An interface describing the data returned by calling `pivotItem.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.PivotItem.toJSON](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

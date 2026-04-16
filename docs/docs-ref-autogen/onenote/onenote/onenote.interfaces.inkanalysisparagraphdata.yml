@@ -6,7 +6,11 @@ fullName: OneNote.Interfaces.InkAnalysisParagraphData
 summary: >-
   An interface describing the data returned by calling
   `inkAnalysisParagraph.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [OneNote.InkAnalysisParagraph.toJSON](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -17,6 +17,8 @@ remarks: >-
 
   - [Word.ContentControl.type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
 
+  - [Word.ContentControlCollection.getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+
   - [Word.ContentControlOptions.types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)
 
   #### Examples

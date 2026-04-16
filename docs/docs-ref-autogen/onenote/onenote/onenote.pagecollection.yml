@@ -12,6 +12,14 @@ remarks: >-
   #### Used by
 
 
+  - [OneNote.PageCollection.getByTitle](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getbytitle-member(1))
+
+  - [OneNote.PageCollection.load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1))
+
+  - [OneNote.PageCollection.track](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-track-member(1))
+
+  - [OneNote.PageCollection.untrack](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-untrack-member(1))
+
   - [OneNote.Section.pages](/javascript/api/onenote/onenote.section#onenote-onenote-section-pages-member)
 
 isPreview: false

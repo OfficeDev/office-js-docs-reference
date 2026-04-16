@@ -9,6 +9,13 @@ remarks: >-
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
+
+  #### Used by
+
+
+  - [Word.Range.compareLocationWith](/javascript/api/word/word.range#word-word-range-comparelocationwith-member(1))
+
   #### Examples
 
 

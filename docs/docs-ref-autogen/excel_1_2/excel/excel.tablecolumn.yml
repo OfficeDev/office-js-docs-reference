@@ -12,6 +12,16 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.TableColumn.load](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-load-member(1))
+
+  - [Excel.TableColumn.set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(2))
+
+  - [Excel.TableColumnCollection.add](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1))
+
+  - [Excel.TableColumnCollection.getItem](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitem-member(1))
+
+  - [Excel.TableColumnCollection.getItemAt](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemat-member(1))
+
   - [Excel.TableColumnCollection.items](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-items-member)
 
 isPreview: false

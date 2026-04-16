@@ -10,6 +10,12 @@ remarks: >-
   [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Word.TrackedChangeCollection.load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

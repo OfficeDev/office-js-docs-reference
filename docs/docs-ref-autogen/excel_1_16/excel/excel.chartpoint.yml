@@ -13,6 +13,12 @@ remarks: >-
   #### Used by
 
 
+  - [Excel.ChartPoint.load](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-load-member(1))
+
+  - [Excel.ChartPoint.set](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-set-member(2))
+
+  - [Excel.ChartPointsCollection.getItemAt](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-getitemat-member(1))
+
   - [Excel.ChartPointsCollection.items](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-items-member)
 
   #### Examples

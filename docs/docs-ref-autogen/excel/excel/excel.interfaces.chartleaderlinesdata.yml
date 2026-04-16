@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.ChartLeaderLinesData
 summary: >-
   An interface describing the data returned by calling
   `chartLeaderLines.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.ChartLeaderLines.toJSON](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

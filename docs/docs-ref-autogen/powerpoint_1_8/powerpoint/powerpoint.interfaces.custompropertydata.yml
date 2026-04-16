@@ -6,7 +6,11 @@ fullName: PowerPoint.Interfaces.CustomPropertyData
 summary: >-
   An interface describing the data returned by calling
   `customProperty.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [PowerPoint.CustomProperty.toJSON](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

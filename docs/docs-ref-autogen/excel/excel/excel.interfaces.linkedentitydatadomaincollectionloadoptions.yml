@@ -12,6 +12,12 @@ remarks: >-
   [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [Excel.LinkedEntityDataDomainCollection.load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

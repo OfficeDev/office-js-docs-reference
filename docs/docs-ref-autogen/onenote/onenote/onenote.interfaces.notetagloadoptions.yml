@@ -8,6 +8,12 @@ remarks: >-
   [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
 
+
+  #### Used by
+
+
+  - [OneNote.NoteTag.load](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-load-member(1))
+
 isPreview: false
 isDeprecated: false
 type: interface

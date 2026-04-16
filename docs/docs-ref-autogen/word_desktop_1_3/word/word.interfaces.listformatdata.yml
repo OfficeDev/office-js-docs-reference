@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ListFormatData
 summary: >-
   An interface describing the data returned by calling `listFormat.toJSON()`<!--
   -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ListFormat.toJSON](/javascript/api/word/word.listformat#word-word-listformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

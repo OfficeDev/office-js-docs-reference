@@ -6,7 +6,11 @@ fullName: Word.Interfaces.ReviewerCollectionData
 summary: >-
   An interface describing the data returned by calling
   `reviewerCollection.toJSON()`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.ReviewerCollection.toJSON](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

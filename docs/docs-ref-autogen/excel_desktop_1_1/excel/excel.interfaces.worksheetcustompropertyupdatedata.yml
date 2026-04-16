@@ -6,7 +6,11 @@ fullName: Excel.Interfaces.WorksheetCustomPropertyUpdateData
 summary: >-
   An interface for updating data on the `WorksheetCustomProperty` object, for
   use in `worksheetCustomProperty.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Excel.WorksheetCustomProperty.set](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false

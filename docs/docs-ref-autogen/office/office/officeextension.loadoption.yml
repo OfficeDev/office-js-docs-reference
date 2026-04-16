@@ -36,6 +36,15 @@ remarks: >-
   of the font properties are loaded.
 
 
+
+
+  #### Used by
+
+
+  - [OfficeExtension.ClientRequestContext.load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1))
+
+  - [OfficeExtension.ClientRequestContext.loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+
   #### Examples
 
 

@@ -16,6 +16,14 @@ remarks: >-
 
   - [OneNote.SectionGroup.sectionGroups](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-sectiongroups-member)
 
+  - [OneNote.SectionGroupCollection.getByName](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getbyname-member(1))
+
+  - [OneNote.SectionGroupCollection.load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
+
+  - [OneNote.SectionGroupCollection.track](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-track-member(1))
+
+  - [OneNote.SectionGroupCollection.untrack](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-untrack-member(1))
+
 isPreview: false
 isDeprecated: false
 type: class

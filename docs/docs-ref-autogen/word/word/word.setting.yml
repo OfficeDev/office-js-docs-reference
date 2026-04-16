@@ -13,6 +13,20 @@ remarks: >-
   #### Used by
 
 
+  - [Word.Setting.load](/javascript/api/word/word.setting#word-word-setting-load-member(1))
+
+  - [Word.Setting.set](/javascript/api/word/word.setting#word-word-setting-set-member(2))
+
+  - [Word.Setting.track](/javascript/api/word/word.setting#word-word-setting-track-member(1))
+
+  - [Word.Setting.untrack](/javascript/api/word/word.setting#word-word-setting-untrack-member(1))
+
+  - [Word.SettingCollection.add](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1))
+
+  - [Word.SettingCollection.getItem](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitem-member(1))
+
+  - [Word.SettingCollection.getItemOrNullObject](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitemornullobject-member(1))
+
   - [Word.SettingCollection.items](/javascript/api/word/word.settingcollection#word-word-settingcollection-items-member)
 
   #### Examples

@@ -6,7 +6,11 @@ fullName: Word.Interfaces.LineFormatUpdateData
 summary: >-
   An interface for updating data on the `LineFormat` object, for use in
   `lineFormat.set({ ... })`<!-- -->.
-remarks: ''
+remarks: >-
+  #### Used by
+
+
+  - [Word.LineFormat.set](/javascript/api/word/word.lineformat#word-word-lineformat-set-member(1))
 
 isPreview: false
 isDeprecated: false
