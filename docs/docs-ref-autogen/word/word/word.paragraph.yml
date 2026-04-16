@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.InlinePicture.paragraph](/javascript/api/word/word.inlinepicture#paragraph-member)
+  - [Word.InlinePicture.paragraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-paragraph-member)
 
-  - [Word.ParagraphCollection.items](/javascript/api/word/word.paragraphcollection#items-member)
+  - [Word.ParagraphCollection.items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
 
   #### Examples
 

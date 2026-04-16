@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.LinkedWorkbookCollection.workbookLinksRefreshMode](/javascript/api/excel/excel.linkedworkbookcollection#workbooklinksrefreshmode-member)
+  - [Excel.LinkedWorkbookCollection.workbookLinksRefreshMode](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-workbooklinksrefreshmode-member)
 
 isPreview: false
 isDeprecated: false

@@ -23,11 +23,11 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Categories.getAsync](/javascript/api/outlook/office.categories#getasync-member)
+  - [Office.Categories.getAsync](/javascript/api/outlook/office.categories#outlook-office-categories-getasync-member(1))
 
-  - [Office.MasterCategories.addAsync](/javascript/api/outlook/office.mastercategories#addasync-member)
+  - [Office.MasterCategories.addAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1))
 
-  - [Office.MasterCategories.getAsync](/javascript/api/outlook/office.mastercategories#getasync-member)
+  - [Office.MasterCategories.getAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-getasync-member(1))
 
   #### Examples
 

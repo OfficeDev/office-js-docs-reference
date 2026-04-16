@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.pageMovementType](/javascript/api/word/word.view#pagemovementtype-member)
+  - [Word.View.pageMovementType](/javascript/api/word/word.view#word-word-view-pagemovementtype-member)
 
 isPreview: false
 isDeprecated: false

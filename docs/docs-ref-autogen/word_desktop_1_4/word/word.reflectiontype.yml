@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ReflectionFormat.type](/javascript/api/word/word.reflectionformat#type-member)
+  - [Word.ReflectionFormat.type](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-type-member)
 
 isPreview: false
 isDeprecated: false

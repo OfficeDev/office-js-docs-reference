@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OfficeExtension.RunOptions.previousObjects](/javascript/api/office/officeextension.runoptions#previousobjects-member)
+  - [OfficeExtension.RunOptions.previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
 
 isPreview: false
 isDeprecated: false

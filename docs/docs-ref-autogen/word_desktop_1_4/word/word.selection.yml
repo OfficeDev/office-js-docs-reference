@@ -19,9 +19,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.selection](/javascript/api/word/word.document#selection-member)
+  - [Word.Document.selection](/javascript/api/word/word.document#word-word-document-selection-member)
 
-  - [Word.Pane.selection](/javascript/api/word/word.pane#selection-member)
+  - [Word.Pane.selection](/javascript/api/word/word.pane#word-word-pane-selection-member)
 
   #### Examples
 

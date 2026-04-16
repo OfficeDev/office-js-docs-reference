@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CultureInfo.numberFormat](/javascript/api/excel/excel.cultureinfo#numberformat-member)
+  - [Excel.CultureInfo.numberFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-numberformat-member)
 
 isPreview: false
 isDeprecated: false

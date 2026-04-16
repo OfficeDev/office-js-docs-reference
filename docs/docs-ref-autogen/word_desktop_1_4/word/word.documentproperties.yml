@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.builtInDocumentProperties](/javascript/api/word/word.document#builtindocumentproperties-member)
+  - [Word.Document.builtInDocumentProperties](/javascript/api/word/word.document#word-word-document-builtindocumentproperties-member)
 
-  - [Word.Document.customDocumentProperties](/javascript/api/word/word.document#customdocumentproperties-member)
+  - [Word.Document.customDocumentProperties](/javascript/api/word/word.document#word-word-document-customdocumentproperties-member)
 
-  - [Word.Document.properties](/javascript/api/word/word.document#properties-member)
+  - [Word.Document.properties](/javascript/api/word/word.document#word-word-document-properties-member)
 
   #### Examples
 

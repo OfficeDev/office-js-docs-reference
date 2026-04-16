@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellValueConditionalFormat.rule](/javascript/api/excel/excel.cellvalueconditionalformat#rule-member)
+  - [Excel.CellValueConditionalFormat.rule](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-rule-member)
 
 isPreview: false
 isDeprecated: false

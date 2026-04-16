@@ -17,15 +17,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlockGalleryContentControl.xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#xmlmapping-member)
+  - [Word.BuildingBlockGalleryContentControl.xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-xmlmapping-member)
 
-  - [Word.ContentControl.xmlMapping](/javascript/api/word/word.contentcontrol#xmlmapping-member)
+  - [Word.ContentControl.xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)
 
-  - [Word.DatePickerContentControl.xmlMapping](/javascript/api/word/word.datepickercontentcontrol#xmlmapping-member)
+  - [Word.DatePickerContentControl.xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)
 
-  - [Word.GroupContentControl.xmlMapping](/javascript/api/word/word.groupcontentcontrol#xmlmapping-member)
+  - [Word.GroupContentControl.xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)
 
-  - [Word.PictureContentControl.xmlMapping](/javascript/api/word/word.picturecontentcontrol#xmlmapping-member)
+  - [Word.PictureContentControl.xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
 
 isPreview: false
 isDeprecated: false

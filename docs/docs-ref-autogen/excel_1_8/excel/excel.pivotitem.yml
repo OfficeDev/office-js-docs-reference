@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotItemCollection.items](/javascript/api/excel/excel.pivotitemcollection#items-member)
+  - [Excel.PivotItemCollection.items](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-items-member)
 
-  - [Excel.ShowAsRule.baseItem](/javascript/api/excel/excel.showasrule#baseitem-member)
+  - [Excel.ShowAsRule.baseItem](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-baseitem-member)
 
 isPreview: false
 isDeprecated: false

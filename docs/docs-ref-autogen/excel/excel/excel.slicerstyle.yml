@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Slicer.slicerStyle](/javascript/api/excel/excel.slicer#slicerstyle-member)
+  - [Excel.Slicer.slicerStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-slicerstyle-member)
 
-  - [Excel.SlicerStyleCollection.items](/javascript/api/excel/excel.slicerstylecollection#items-member)
+  - [Excel.SlicerStyleCollection.items](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

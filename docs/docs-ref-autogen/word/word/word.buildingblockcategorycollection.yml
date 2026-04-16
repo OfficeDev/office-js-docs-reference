@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlockTypeItem.categories](/javascript/api/word/word.buildingblocktypeitem#categories-member)
+  - [Word.BuildingBlockTypeItem.categories](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-categories-member)
 
 isPreview: false
 isDeprecated: false

@@ -44,9 +44,9 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Body.getAsync](/javascript/api/outlook/office.body#getasync-member)
+  - [Office.Body.getAsync](/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
 
-  - [Office.Body.setAsync](/javascript/api/outlook/office.body#setasync-member)
+  - [Office.Body.setAsync](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))
 
   #### Examples
 

@@ -21,7 +21,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.LinkedEntityDataDomainCollection.items](/javascript/api/excel/excel.linkedentitydatadomaincollection#items-member)
+  - [Excel.LinkedEntityDataDomainCollection.items](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-items-member)
 
 isPreview: false
 isDeprecated: false

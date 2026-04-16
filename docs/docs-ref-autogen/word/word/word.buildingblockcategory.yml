@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlock.category](/javascript/api/word/word.buildingblock#category-member)
+  - [Word.BuildingBlock.category](/javascript/api/word/word.buildingblock#word-word-buildingblock-category-member)
 
 isPreview: false
 isDeprecated: false

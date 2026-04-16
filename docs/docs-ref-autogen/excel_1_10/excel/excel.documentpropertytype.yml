@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomProperty.type](/javascript/api/excel/excel.customproperty#type-member)
+  - [Excel.CustomProperty.type](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-type-member)
 
 isPreview: false
 isDeprecated: false

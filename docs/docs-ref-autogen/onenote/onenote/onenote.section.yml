@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Page.parentSection](/javascript/api/onenote/onenote.page#parentsection-member)
+  - [OneNote.Page.parentSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-parentsection-member)
 
-  - [OneNote.SectionCollection.items](/javascript/api/onenote/onenote.sectioncollection#items-member)
+  - [OneNote.SectionCollection.items](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

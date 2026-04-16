@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.SelectionInsertDateTimeOptions.dateLanguage](/javascript/api/word/word.selectioninsertdatetimeoptions#datelanguage-member)
+  - [Word.SelectionInsertDateTimeOptions.dateLanguage](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-datelanguage-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RequestContext.application](/javascript/api/excel/excel.requestcontext#application-member)
+  - [Excel.RequestContext.application](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-application-member)
 
-  - [Excel.Workbook.application](/javascript/api/excel/excel.workbook#application-member)
+  - [Excel.Workbook.application](/javascript/api/excel/excel.workbook#excel-excel-workbook-application-member)
 
 isPreview: false
 isDeprecated: false

@@ -15,19 +15,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.paragraphs](/javascript/api/word/word.body#paragraphs-member)
+  - [Word.Body.paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
 
-  - [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#paragraphs-member)
+  - [Word.ContentControl.paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
 
-  - [Word.Document.listParagraphs](/javascript/api/word/word.document#listparagraphs-member)
+  - [Word.Document.listParagraphs](/javascript/api/word/word.document#word-word-document-listparagraphs-member)
 
-  - [Word.Document.paragraphs](/javascript/api/word/word.document#paragraphs-member)
+  - [Word.Document.paragraphs](/javascript/api/word/word.document#word-word-document-paragraphs-member)
 
-  - [Word.List.paragraphs](/javascript/api/word/word.list#paragraphs-member)
+  - [Word.List.paragraphs](/javascript/api/word/word.list#word-word-list-paragraphs-member)
 
-  - [Word.Range.paragraphs](/javascript/api/word/word.range#paragraphs-member)
+  - [Word.Range.paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
 
-  - [Word.Selection.paragraphs](/javascript/api/word/word.selection#paragraphs-member)
+  - [Word.Selection.paragraphs](/javascript/api/word/word.selection#word-word-selection-paragraphs-member)
 
   #### Examples
 

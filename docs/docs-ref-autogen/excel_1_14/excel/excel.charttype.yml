@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.chartType](/javascript/api/excel/excel.chart#charttype-member)
+  - [Excel.Chart.chartType](/javascript/api/excel/excel.chart#excel-excel-chart-charttype-member)
 
-  - [Excel.ChartSeries.chartType](/javascript/api/excel/excel.chartseries#charttype-member)
+  - [Excel.ChartSeries.chartType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-charttype-member)
 
   #### Examples
 

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomConditionalFormat.rule](/javascript/api/excel/excel.customconditionalformat#rule-member)
+  - [Excel.CustomConditionalFormat.rule](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-rule-member)
 
 isPreview: false
 isDeprecated: false

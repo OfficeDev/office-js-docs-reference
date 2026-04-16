@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Query.loadedTo](/javascript/api/excel/excel.query#loadedto-member)
+  - [Excel.Query.loadedTo](/javascript/api/excel/excel.query#excel-excel-query-loadedto-member)
 
 isPreview: false
 isDeprecated: false

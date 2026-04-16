@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HtmlDivisionCollection.items](/javascript/api/word/word.htmldivisioncollection#items-member)
+  - [Word.HtmlDivisionCollection.items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

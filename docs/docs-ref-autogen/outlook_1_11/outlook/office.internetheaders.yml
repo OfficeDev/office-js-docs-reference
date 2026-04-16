@@ -72,7 +72,7 @@ remarks: >-
   #### Used by
 
 
-  - [Office.MessageCompose.internetHeaders](/javascript/api/outlook/office.messagecompose#internetheaders-member)
+  - [Office.MessageCompose.internetHeaders](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-internetheaders-member)
 
 isPreview: false
 isDeprecated: false

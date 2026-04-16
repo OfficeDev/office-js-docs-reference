@@ -20,17 +20,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.contentControls](/javascript/api/word/word.body#contentcontrols-member)
+  - [Word.Body.contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
 
-  - [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#contentcontrols-member)
+  - [Word.ContentControl.contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)
 
-  - [Word.Document.contentControls](/javascript/api/word/word.document#contentcontrols-member)
+  - [Word.Document.contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member)
 
-  - [Word.DocumentCreated.contentControls](/javascript/api/word/word.documentcreated#contentcontrols-member)
+  - [Word.DocumentCreated.contentControls](/javascript/api/word/word.documentcreated#word-word-documentcreated-contentcontrols-member)
 
-  - [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#contentcontrols-member)
+  - [Word.Paragraph.contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
 
-  - [Word.Range.contentControls](/javascript/api/word/word.range#contentcontrols-member)
+  - [Word.Range.contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
 
   #### Examples
 

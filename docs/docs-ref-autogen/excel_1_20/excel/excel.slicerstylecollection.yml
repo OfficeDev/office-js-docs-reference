@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.slicerStyles](/javascript/api/excel/excel.workbook#slicerstyles-member)
+  - [Excel.Workbook.slicerStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-slicerstyles-member)
 
 isPreview: false
 isDeprecated: false

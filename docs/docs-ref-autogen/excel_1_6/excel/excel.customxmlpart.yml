@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CustomXmlPartCollection.items](/javascript/api/excel/excel.customxmlpartcollection#items-member)
+  - [Excel.CustomXmlPartCollection.items](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-items-member)
 
-  - [Excel.CustomXmlPartScopedCollection.items](/javascript/api/excel/excel.customxmlpartscopedcollection#items-member)
+  - [Excel.CustomXmlPartScopedCollection.items](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-items-member)
 
 isPreview: false
 isDeprecated: false

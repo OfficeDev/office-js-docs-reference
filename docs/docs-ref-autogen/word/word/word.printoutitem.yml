@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DocumentPrintOutOptions.item](/javascript/api/word/word.documentprintoutoptions#item-member)
+  - [Word.DocumentPrintOutOptions.item](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-item-member)
 
 isPreview: false
 isDeprecated: false

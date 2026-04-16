@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.inlinePictures](/javascript/api/word/word.body#inlinepictures-member)
+  - [Word.Body.inlinePictures](/javascript/api/word/word.body#word-word-body-inlinepictures-member)
 
-  - [Word.ContentControl.inlinePictures](/javascript/api/word/word.contentcontrol#inlinepictures-member)
+  - [Word.ContentControl.inlinePictures](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inlinepictures-member)
 
-  - [Word.Paragraph.inlinePictures](/javascript/api/word/word.paragraph#inlinepictures-member)
+  - [Word.Paragraph.inlinePictures](/javascript/api/word/word.paragraph#word-word-paragraph-inlinepictures-member)
 
   #### Examples
 

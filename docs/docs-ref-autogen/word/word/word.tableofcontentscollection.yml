@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.tablesOfContents](/javascript/api/word/word.document#tablesofcontents-member)
+  - [Word.Document.tablesOfContents](/javascript/api/word/word.document#word-word-document-tablesofcontents-member)
 
 isPreview: false
 isDeprecated: false

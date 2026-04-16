@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Slicer.slicerItems](/javascript/api/excel/excel.slicer#sliceritems-member)
+  - [Excel.Slicer.slicerItems](/javascript/api/excel/excel.slicer#excel-excel-slicer-sliceritems-member)
 
 isPreview: false
 isDeprecated: false

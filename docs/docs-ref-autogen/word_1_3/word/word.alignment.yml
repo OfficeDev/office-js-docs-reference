@@ -13,15 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#alignment-member)
+  - [Word.Paragraph.alignment](/javascript/api/word/word.paragraph#word-word-paragraph-alignment-member)
 
-  - [Word.Table.alignment](/javascript/api/word/word.table#alignment-member)
+  - [Word.Table.alignment](/javascript/api/word/word.table#word-word-table-alignment-member)
 
-  - [Word.Table.horizontalAlignment](/javascript/api/word/word.table#horizontalalignment-member)
+  - [Word.Table.horizontalAlignment](/javascript/api/word/word.table#word-word-table-horizontalalignment-member)
 
-  - [Word.TableCell.horizontalAlignment](/javascript/api/word/word.tablecell#horizontalalignment-member)
+  - [Word.TableCell.horizontalAlignment](/javascript/api/word/word.tablecell#word-word-tablecell-horizontalalignment-member)
 
-  - [Word.TableRow.horizontalAlignment](/javascript/api/word/word.tablerow#horizontalalignment-member)
+  - [Word.TableRow.horizontalAlignment](/javascript/api/word/word.tablerow#word-word-tablerow-horizontalalignment-member)
 
   #### Examples
 

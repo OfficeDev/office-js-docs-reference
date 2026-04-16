@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.queries](/javascript/api/excel/excel.workbook#queries-member)
+  - [Excel.Workbook.queries](/javascript/api/excel/excel.workbook#excel-excel-workbook-queries-member)
 
 isPreview: false
 isDeprecated: false

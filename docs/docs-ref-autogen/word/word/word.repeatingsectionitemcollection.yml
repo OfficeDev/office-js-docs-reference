@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.RepeatingSectionContentControl.repeatingSectionItems](/javascript/api/word/word.repeatingsectioncontentcontrol#repeatingsectionitems-member)
+  - [Word.RepeatingSectionContentControl.repeatingSectionItems](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-repeatingsectionitems-member)
 
 isPreview: false
 isDeprecated: false

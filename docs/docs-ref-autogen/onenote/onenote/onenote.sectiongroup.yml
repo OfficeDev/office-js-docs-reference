@@ -14,15 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Section.parentSectionGroup](/javascript/api/onenote/onenote.section#parentsectiongroup-member)
+  - [OneNote.Section.parentSectionGroup](/javascript/api/onenote/onenote.section#onenote-onenote-section-parentsectiongroup-member)
 
-  - [OneNote.Section.parentSectionGroupOrNull](/javascript/api/onenote/onenote.section#parentsectiongroupornull-member)
+  - [OneNote.Section.parentSectionGroupOrNull](/javascript/api/onenote/onenote.section#onenote-onenote-section-parentsectiongroupornull-member)
 
-  - [OneNote.SectionGroup.parentSectionGroup](/javascript/api/onenote/onenote.sectiongroup#parentsectiongroup-member)
+  - [OneNote.SectionGroup.parentSectionGroup](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-parentsectiongroup-member)
 
-  - [OneNote.SectionGroup.parentSectionGroupOrNull](/javascript/api/onenote/onenote.sectiongroup#parentsectiongroupornull-member)
+  - [OneNote.SectionGroup.parentSectionGroupOrNull](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-parentsectiongroupornull-member)
 
-  - [OneNote.SectionGroupCollection.items](/javascript/api/onenote/onenote.sectiongroupcollection#items-member)
+  - [OneNote.SectionGroupCollection.items](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -11,19 +11,19 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.setSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#setselecteddataasync-member)
+  - [Office.AppointmentCompose.setSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-setselecteddataasync-member(1))
 
-  - [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#appendonsendasync-member)
+  - [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#outlook-office-body-appendonsendasync-member(1))
 
-  - [Office.Body.prependAsync](/javascript/api/outlook/office.body#prependasync-member)
+  - [Office.Body.prependAsync](/javascript/api/outlook/office.body#outlook-office-body-prependasync-member(1))
 
-  - [Office.Body.setAsync](/javascript/api/outlook/office.body#setasync-member)
+  - [Office.Body.setAsync](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))
 
-  - [Office.Body.setSelectedDataAsync](/javascript/api/outlook/office.body#setselecteddataasync-member)
+  - [Office.Body.setSelectedDataAsync](/javascript/api/outlook/office.body#outlook-office-body-setselecteddataasync-member(1))
 
-  - [Office.Body.setSignatureAsync](/javascript/api/outlook/office.body#setsignatureasync-member)
+  - [Office.Body.setSignatureAsync](/javascript/api/outlook/office.body#outlook-office-body-setsignatureasync-member(1))
 
-  - [Office.MessageCompose.setSelectedDataAsync](/javascript/api/outlook/office.messagecompose#setselecteddataasync-member)
+  - [Office.MessageCompose.setSelectedDataAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-setselecteddataasync-member(1))
 
   #### Examples
 

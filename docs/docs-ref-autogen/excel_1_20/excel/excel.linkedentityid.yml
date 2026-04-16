@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.LinkedEntityCellValue.id](/javascript/api/excel/excel.linkedentitycellvalue#id-member)
+  - [Excel.LinkedEntityCellValue.id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.bookmarks](/javascript/api/word/word.document#bookmarks-member)
+  - [Word.Document.bookmarks](/javascript/api/word/word.document#word-word-document-bookmarks-member)
 
-  - [Word.Range.bookmarks](/javascript/api/word/word.range#bookmarks-member)
+  - [Word.Range.bookmarks](/javascript/api/word/word.range#word-word-range-bookmarks-member)
 
 isPreview: false
 isDeprecated: false

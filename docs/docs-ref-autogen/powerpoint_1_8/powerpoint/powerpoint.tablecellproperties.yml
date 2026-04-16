@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.TableAddOptions.specificCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#specificcellproperties-member)
+  - [PowerPoint.TableAddOptions.specificCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-specificcellproperties-member)
 
-  - [PowerPoint.TableAddOptions.uniformCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#uniformcellproperties-member)
+  - [PowerPoint.TableAddOptions.uniformCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-uniformcellproperties-member)
 
   #### Examples
 

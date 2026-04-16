@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.glow](/javascript/api/word/word.font#glow-member)
+  - [Word.Font.glow](/javascript/api/word/word.font#word-word-font-glow-member)
 
 isPreview: false
 isDeprecated: false

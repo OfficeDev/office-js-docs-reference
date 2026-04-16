@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.revisionsBalloonSide](/javascript/api/word/word.view#revisionsballoonside-member)
+  - [Word.View.revisionsBalloonSide](/javascript/api/word/word.view#word-word-view-revisionsballoonside-member)
 
 isPreview: false
 isDeprecated: false

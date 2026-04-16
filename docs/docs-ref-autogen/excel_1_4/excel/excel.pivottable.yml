@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotTableCollection.items](/javascript/api/excel/excel.pivottablecollection#items-member)
+  - [Excel.PivotTableCollection.items](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-items-member)
 
 isPreview: false
 isDeprecated: false

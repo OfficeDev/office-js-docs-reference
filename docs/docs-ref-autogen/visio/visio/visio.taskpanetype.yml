@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.TaskPaneStateChangedEventArgs.paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#panetype-member)
+  - [Visio.TaskPaneStateChangedEventArgs.paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#visio-visio-taskpanestatechangedeventargs-panetype-member)
 
 isPreview: false
 isDeprecated: false

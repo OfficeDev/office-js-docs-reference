@@ -11,19 +11,19 @@ remarks: >-
   #### Used by
 
 
-  - [Office.CustomXmlNode.getNodesAsync](/javascript/api/office/office.customxmlnode#getnodesasync-member)
+  - [Office.CustomXmlNode.getNodesAsync](/javascript/api/office/office.customxmlnode#office-office-customxmlnode-getnodesasync-member(1))
 
-  - [Office.CustomXmlPart.getNodesAsync](/javascript/api/office/office.customxmlpart#getnodesasync-member)
+  - [Office.CustomXmlPart.getNodesAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-getnodesasync-member(1))
 
-  - [Office.NodeDeletedEventArgs.oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#oldnextsibling-member)
+  - [Office.NodeDeletedEventArgs.oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnextsibling-member)
 
-  - [Office.NodeDeletedEventArgs.oldNode](/javascript/api/office/office.nodedeletedeventargs#oldnode-member)
+  - [Office.NodeDeletedEventArgs.oldNode](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnode-member)
 
-  - [Office.NodeInsertedEventArgs.newNode](/javascript/api/office/office.nodeinsertedeventargs#newnode-member)
+  - [Office.NodeInsertedEventArgs.newNode](/javascript/api/office/office.nodeinsertedeventargs#office-office-nodeinsertedeventargs-newnode-member)
 
-  - [Office.NodeReplacedEventArgs.newNode](/javascript/api/office/office.nodereplacedeventargs#newnode-member)
+  - [Office.NodeReplacedEventArgs.newNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-newnode-member)
 
-  - [Office.NodeReplacedEventArgs.oldNode](/javascript/api/office/office.nodereplacedeventargs#oldnode-member)
+  - [Office.NodeReplacedEventArgs.oldNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-oldnode-member)
 
 isPreview: false
 isDeprecated: false

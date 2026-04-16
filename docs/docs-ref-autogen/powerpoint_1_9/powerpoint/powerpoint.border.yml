@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Borders.bottom](/javascript/api/powerpoint/powerpoint.borders#bottom-member)
+  - [PowerPoint.Borders.bottom](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-bottom-member)
 
-  - [PowerPoint.Borders.diagonalDown](/javascript/api/powerpoint/powerpoint.borders#diagonaldown-member)
+  - [PowerPoint.Borders.diagonalDown](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonaldown-member)
 
-  - [PowerPoint.Borders.diagonalUp](/javascript/api/powerpoint/powerpoint.borders#diagonalup-member)
+  - [PowerPoint.Borders.diagonalUp](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonalup-member)
 
-  - [PowerPoint.Borders.left](/javascript/api/powerpoint/powerpoint.borders#left-member)
+  - [PowerPoint.Borders.left](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-left-member)
 
-  - [PowerPoint.Borders.right](/javascript/api/powerpoint/powerpoint.borders#right-member)
+  - [PowerPoint.Borders.right](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-right-member)
 
-  - [PowerPoint.Borders.top](/javascript/api/powerpoint/powerpoint.borders#top-member)
+  - [PowerPoint.Borders.top](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-top-member)
 
 isPreview: false
 isDeprecated: false

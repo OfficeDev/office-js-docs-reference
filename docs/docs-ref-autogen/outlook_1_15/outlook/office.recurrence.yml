@@ -43,19 +43,19 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.recurrence](/javascript/api/outlook/office.appointmentcompose#recurrence-member)
+  - [Office.AppointmentCompose.recurrence](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-recurrence-member)
 
-  - [Office.AppointmentRead.recurrence](/javascript/api/outlook/office.appointmentread#recurrence-member)
+  - [Office.AppointmentRead.recurrence](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-recurrence-member)
 
-  - [Office.LoadedMessageRead.recurrence](/javascript/api/outlook/office.loadedmessageread#recurrence-member)
+  - [Office.LoadedMessageRead.recurrence](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-recurrence-member)
 
-  - [Office.MessageRead.recurrence](/javascript/api/outlook/office.messageread#recurrence-member)
+  - [Office.MessageRead.recurrence](/javascript/api/outlook/office.messageread#outlook-office-messageread-recurrence-member)
 
-  - [Office.Recurrence.getAsync](/javascript/api/outlook/office.recurrence#getasync-member)
+  - [Office.Recurrence.getAsync](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-getasync-member(1))
 
-  - [Office.Recurrence.setAsync](/javascript/api/outlook/office.recurrence#setasync-member)
+  - [Office.Recurrence.setAsync](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-setasync-member(1))
 
-  - [Office.RecurrenceChangedEventArgs.recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#recurrence-member)
+  - [Office.RecurrenceChangedEventArgs.recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#outlook-office-recurrencechangedeventargs-recurrence-member)
 
 isPreview: false
 isDeprecated: false

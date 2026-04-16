@@ -13,19 +13,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.SelectionDeleteOptions.unit](/javascript/api/word/word.selectiondeleteoptions#unit-member)
+  - [Word.SelectionDeleteOptions.unit](/javascript/api/word/word.selectiondeleteoptions#word-word-selectiondeleteoptions-unit-member)
 
-  - [Word.SelectionMoveLeftRightOptions.unit](/javascript/api/word/word.selectionmoveleftrightoptions#unit-member)
+  - [Word.SelectionMoveLeftRightOptions.unit](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-unit-member)
 
-  - [Word.SelectionMoveOptions.unit](/javascript/api/word/word.selectionmoveoptions#unit-member)
+  - [Word.SelectionMoveOptions.unit](/javascript/api/word/word.selectionmoveoptions#word-word-selectionmoveoptions-unit-member)
 
-  - [Word.SelectionMoveStartEndOptions.unit](/javascript/api/word/word.selectionmovestartendoptions#unit-member)
+  - [Word.SelectionMoveStartEndOptions.unit](/javascript/api/word/word.selectionmovestartendoptions#word-word-selectionmovestartendoptions-unit-member)
 
-  - [Word.SelectionMoveUpDownOptions.unit](/javascript/api/word/word.selectionmoveupdownoptions#unit-member)
+  - [Word.SelectionMoveUpDownOptions.unit](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-unit-member)
 
-  - [Word.SelectionNextOptions.unit](/javascript/api/word/word.selectionnextoptions#unit-member)
+  - [Word.SelectionNextOptions.unit](/javascript/api/word/word.selectionnextoptions#word-word-selectionnextoptions-unit-member)
 
-  - [Word.SelectionPreviousOptions.unit](/javascript/api/word/word.selectionpreviousoptions#unit-member)
+  - [Word.SelectionPreviousOptions.unit](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-unit-member)
 
   #### Examples
 

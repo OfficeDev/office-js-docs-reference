@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAreaFormat.colorScheme](/javascript/api/excel/excel.chartareaformat#colorscheme-member)
+  - [Excel.ChartAreaFormat.colorScheme](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-colorscheme-member)
 
 isPreview: false
 isDeprecated: false

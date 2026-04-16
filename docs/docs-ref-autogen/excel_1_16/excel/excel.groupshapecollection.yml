@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ShapeGroup.shapes](/javascript/api/excel/excel.shapegroup#shapes-member)
+  - [Excel.ShapeGroup.shapes](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shapes-member)
 
 isPreview: false
 isDeprecated: false

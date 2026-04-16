@@ -12,15 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlockGalleryContentControl.level](/javascript/api/word/word.buildingblockgallerycontentcontrol#level-member)
+  - [Word.BuildingBlockGalleryContentControl.level](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-level-member)
 
-  - [Word.DatePickerContentControl.level](/javascript/api/word/word.datepickercontentcontrol#level-member)
+  - [Word.DatePickerContentControl.level](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-level-member)
 
-  - [Word.GroupContentControl.level](/javascript/api/word/word.groupcontentcontrol#level-member)
+  - [Word.GroupContentControl.level](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-level-member)
 
-  - [Word.PictureContentControl.level](/javascript/api/word/word.picturecontentcontrol#level-member)
+  - [Word.PictureContentControl.level](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-level-member)
 
-  - [Word.RepeatingSectionContentControl.level](/javascript/api/word/word.repeatingsectioncontentcontrol#level-member)
+  - [Word.RepeatingSectionContentControl.level](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-level-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.LineFormat.dashStyle](/javascript/api/word/word.lineformat#dashstyle-member)
+  - [Word.LineFormat.dashStyle](/javascript/api/word/word.lineformat#word-word-lineformat-dashstyle-member)
 
 isPreview: false
 isDeprecated: false

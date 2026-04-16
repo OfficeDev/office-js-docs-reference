@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.textLineEnding](/javascript/api/word/word.document#textlineending-member)
+  - [Word.Document.textLineEnding](/javascript/api/word/word.document#word-word-document-textlineending-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.HeaderFooter.centerFooterPicture](/javascript/api/excel/excel.headerfooter#centerfooterpicture-member)
+  - [Excel.HeaderFooter.centerFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerfooterpicture-member)
 
-  - [Excel.HeaderFooter.centerHeaderPicture](/javascript/api/excel/excel.headerfooter#centerheaderpicture-member)
+  - [Excel.HeaderFooter.centerHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-centerheaderpicture-member)
 
-  - [Excel.HeaderFooter.leftFooterPicture](/javascript/api/excel/excel.headerfooter#leftfooterpicture-member)
+  - [Excel.HeaderFooter.leftFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftfooterpicture-member)
 
-  - [Excel.HeaderFooter.leftHeaderPicture](/javascript/api/excel/excel.headerfooter#leftheaderpicture-member)
+  - [Excel.HeaderFooter.leftHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-leftheaderpicture-member)
 
-  - [Excel.HeaderFooter.rightFooterPicture](/javascript/api/excel/excel.headerfooter#rightfooterpicture-member)
+  - [Excel.HeaderFooter.rightFooterPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightfooterpicture-member)
 
-  - [Excel.HeaderFooter.rightHeaderPicture](/javascript/api/excel/excel.headerfooter#rightheaderpicture-member)
+  - [Excel.HeaderFooter.rightHeaderPicture](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-rightheaderpicture-member)
 
 isPreview: false
 isDeprecated: false

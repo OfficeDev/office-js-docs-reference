@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataValidationRule.custom](/javascript/api/excel/excel.datavalidationrule#custom-member)
+  - [Excel.DataValidationRule.custom](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-custom-member)
 
 isPreview: false
 isDeprecated: false

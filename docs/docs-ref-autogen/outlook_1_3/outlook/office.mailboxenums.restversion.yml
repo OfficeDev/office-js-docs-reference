@@ -32,9 +32,9 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Mailbox.convertToEwsId](/javascript/api/outlook/office.mailbox#converttoewsid-member)
+  - [Office.Mailbox.convertToEwsId](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoewsid-member(1))
 
-  - [Office.Mailbox.convertToRestId](/javascript/api/outlook/office.mailbox#converttorestid-member)
+  - [Office.Mailbox.convertToRestId](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttorestid-member(1))
 
   #### Examples
 

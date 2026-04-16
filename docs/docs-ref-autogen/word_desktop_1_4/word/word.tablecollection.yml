@@ -15,19 +15,19 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.tables](/javascript/api/word/word.body#tables-member)
+  - [Word.Body.tables](/javascript/api/word/word.body#word-word-body-tables-member)
 
-  - [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#tables-member)
+  - [Word.ContentControl.tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)
 
-  - [Word.Document.tables](/javascript/api/word/word.document#tables-member)
+  - [Word.Document.tables](/javascript/api/word/word.document#word-word-document-tables-member)
 
-  - [Word.Range.tables](/javascript/api/word/word.range#tables-member)
+  - [Word.Range.tables](/javascript/api/word/word.range#word-word-range-tables-member)
 
-  - [Word.Selection.tables](/javascript/api/word/word.selection#tables-member)
+  - [Word.Selection.tables](/javascript/api/word/word.selection#word-word-selection-tables-member)
 
-  - [Word.Selection.topLevelTables](/javascript/api/word/word.selection#topleveltables-member)
+  - [Word.Selection.topLevelTables](/javascript/api/word/word.selection#word-word-selection-topleveltables-member)
 
-  - [Word.Table.tables](/javascript/api/word/word.table#tables-member)
+  - [Word.Table.tables](/javascript/api/word/word.table#word-word-table-tables-member)
 
   #### Examples
 

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BlockedErrorCellValue.errorSubType](/javascript/api/excel/excel.blockederrorcellvalue#errorsubtype-member)
+  - [Excel.BlockedErrorCellValue.errorSubType](/javascript/api/excel/excel.blockederrorcellvalue#excel-excel-blockederrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

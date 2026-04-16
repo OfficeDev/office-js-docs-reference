@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.WorksheetProtection.allowEditRanges](/javascript/api/excel/excel.worksheetprotection#alloweditranges-member)
+  - [Excel.WorksheetProtection.allowEditRanges](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-alloweditranges-member)
 
 isPreview: false
 isDeprecated: false

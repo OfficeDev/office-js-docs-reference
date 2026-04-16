@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Table.rows](/javascript/api/excel/excel.table#rows-member)
+  - [Excel.Table.rows](/javascript/api/excel/excel.table#excel-excel-table-rows-member)
 
 isPreview: false
 isDeprecated: false

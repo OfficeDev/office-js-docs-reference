@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RowColumnPivotHierarchyCollection.items](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#items-member)
+  - [Excel.RowColumnPivotHierarchyCollection.items](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-items-member)
 
 isPreview: false
 isDeprecated: false

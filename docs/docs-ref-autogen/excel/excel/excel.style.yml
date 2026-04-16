@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.StyleCollection.items](/javascript/api/excel/excel.stylecollection#items-member)
+  - [Excel.StyleCollection.items](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

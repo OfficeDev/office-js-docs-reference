@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Field.oleFormat](/javascript/api/word/word.field#oleformat-member)
+  - [Word.Field.oleFormat](/javascript/api/word/word.field#word-word-field-oleformat-member)
 
 isPreview: false
 isDeprecated: false

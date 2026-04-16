@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.PointCollection.items](/javascript/api/onenote/onenote.pointcollection#items-member)
+  - [OneNote.PointCollection.items](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-items-member)
 
 isPreview: false
 isDeprecated: false

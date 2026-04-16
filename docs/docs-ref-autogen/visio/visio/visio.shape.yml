@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.ShapeCollection.items](/javascript/api/visio/visio.shapecollection#items-member)
+  - [Visio.ShapeCollection.items](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-items-member)
 
 isPreview: false
 isDeprecated: false

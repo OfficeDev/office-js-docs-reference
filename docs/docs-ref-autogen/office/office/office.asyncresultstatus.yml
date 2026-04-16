@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AsyncResult.status](/javascript/api/office/office.asyncresult#status-member)
+  - [Office.AsyncResult.status](/javascript/api/office/office.asyncresult#office-office-asyncresult-status-member)
 
   #### Examples
 

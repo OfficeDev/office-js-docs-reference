@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.LinkFormat.type](/javascript/api/word/word.linkformat#type-member)
+  - [Word.LinkFormat.type](/javascript/api/word/word.linkformat#word-word-linkformat-type-member)
 
 isPreview: false
 isDeprecated: false

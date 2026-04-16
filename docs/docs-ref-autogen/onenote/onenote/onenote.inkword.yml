@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.InkWordCollection.items](/javascript/api/onenote/onenote.inkwordcollection#items-member)
+  - [OneNote.InkWordCollection.items](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-items-member)
 
 isPreview: false
 isDeprecated: false

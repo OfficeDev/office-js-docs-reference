@@ -13,15 +13,15 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BooleanCellValue.properties](/javascript/api/excel/excel.booleancellvalue#properties-member)
+  - [Excel.BooleanCellValue.properties](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-properties-member)
 
-  - [Excel.DoubleCellValue.properties](/javascript/api/excel/excel.doublecellvalue#properties-member)
+  - [Excel.DoubleCellValue.properties](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-properties-member)
 
-  - [Excel.EntityCellValue.properties](/javascript/api/excel/excel.entitycellvalue#properties-member)
+  - [Excel.EntityCellValue.properties](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)
 
-  - [Excel.LinkedEntityCellValue.properties](/javascript/api/excel/excel.linkedentitycellvalue#properties-member)
+  - [Excel.LinkedEntityCellValue.properties](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)
 
-  - [Excel.StringCellValue.properties](/javascript/api/excel/excel.stringcellvalue#properties-member)
+  - [Excel.StringCellValue.properties](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-properties-member)
 
 
 

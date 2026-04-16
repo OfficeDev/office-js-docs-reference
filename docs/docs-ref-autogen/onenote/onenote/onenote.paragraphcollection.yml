@@ -12,11 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Outline.paragraphs](/javascript/api/onenote/onenote.outline#paragraphs-member)
+  - [OneNote.Outline.paragraphs](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-paragraphs-member)
 
-  - [OneNote.Paragraph.paragraphs](/javascript/api/onenote/onenote.paragraph#paragraphs-member)
+  - [OneNote.Paragraph.paragraphs](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-paragraphs-member)
 
-  - [OneNote.TableCell.paragraphs](/javascript/api/onenote/onenote.tablecell#paragraphs-member)
+  - [OneNote.TableCell.paragraphs](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-paragraphs-member)
 
 isPreview: false
 isDeprecated: false

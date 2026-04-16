@@ -11,7 +11,7 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Binding.getDataAsync](/javascript/api/office/office.binding#getdataasync-member)
+  - [Office.Binding.getDataAsync](/javascript/api/office/office.binding#office-office-binding-getdataasync-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TextFrame.verticalOverflow](/javascript/api/excel/excel.textframe#verticaloverflow-member)
+  - [Excel.TextFrame.verticalOverflow](/javascript/api/excel/excel.textframe#excel-excel-textframe-verticaloverflow-member)
 
 isPreview: false
 isDeprecated: false

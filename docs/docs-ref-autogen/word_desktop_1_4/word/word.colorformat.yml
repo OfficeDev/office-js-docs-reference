@@ -12,23 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - [Word.FillFormat.backgroundColor](/javascript/api/word/word.fillformat#backgroundcolor-member)
+  - [Word.FillFormat.backgroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-backgroundcolor-member)
 
-  - [Word.FillFormat.foregroundColor](/javascript/api/word/word.fillformat#foregroundcolor-member)
+  - [Word.FillFormat.foregroundColor](/javascript/api/word/word.fillformat#word-word-fillformat-foregroundcolor-member)
 
-  - [Word.Font.textColor](/javascript/api/word/word.font#textcolor-member)
+  - [Word.Font.textColor](/javascript/api/word/word.font#word-word-font-textcolor-member)
 
-  - [Word.GlowFormat.color](/javascript/api/word/word.glowformat#color-member)
+  - [Word.GlowFormat.color](/javascript/api/word/word.glowformat#word-word-glowformat-color-member)
 
-  - [Word.LineFormat.backgroundColor](/javascript/api/word/word.lineformat#backgroundcolor-member)
+  - [Word.LineFormat.backgroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-backgroundcolor-member)
 
-  - [Word.LineFormat.foregroundColor](/javascript/api/word/word.lineformat#foregroundcolor-member)
+  - [Word.LineFormat.foregroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-foregroundcolor-member)
 
-  - [Word.ShadowFormat.foregroundColor](/javascript/api/word/word.shadowformat#foregroundcolor-member)
+  - [Word.ShadowFormat.foregroundColor](/javascript/api/word/word.shadowformat#word-word-shadowformat-foregroundcolor-member)
 
-  - [Word.ThreeDimensionalFormat.contourColor](/javascript/api/word/word.threedimensionalformat#contourcolor-member)
+  - [Word.ThreeDimensionalFormat.contourColor](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-contourcolor-member)
 
-  - [Word.ThreeDimensionalFormat.extrusionColor](/javascript/api/word/word.threedimensionalformat#extrusioncolor-member)
+  - [Word.ThreeDimensionalFormat.extrusionColor](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-extrusioncolor-member)
 
 isPreview: false
 isDeprecated: false

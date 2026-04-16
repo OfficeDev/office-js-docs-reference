@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Application.notebooks](/javascript/api/onenote/onenote.application#notebooks-member)
+  - [OneNote.Application.notebooks](/javascript/api/onenote/onenote.application#onenote-onenote-application-notebooks-member)
 
 isPreview: false
 isDeprecated: false

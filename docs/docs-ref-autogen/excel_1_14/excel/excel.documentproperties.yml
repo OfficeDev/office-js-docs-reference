@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.properties](/javascript/api/excel/excel.workbook#properties-member)
+  - [Excel.Workbook.properties](/javascript/api/excel/excel.workbook#excel-excel-workbook-properties-member)
 
 isPreview: false
 isDeprecated: false

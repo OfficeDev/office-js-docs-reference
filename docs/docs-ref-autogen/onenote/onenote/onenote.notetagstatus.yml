@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.NoteTag.status](/javascript/api/onenote/onenote.notetag#status-member)
+  - [OneNote.NoteTag.status](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-status-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,15 +14,15 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.itemType](/javascript/api/outlook/office.appointmentcompose#itemtype-member)
+  - [Office.AppointmentCompose.itemType](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-itemtype-member)
 
-  - [Office.AppointmentRead.itemType](/javascript/api/outlook/office.appointmentread#itemtype-member)
+  - [Office.AppointmentRead.itemType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-itemtype-member)
 
-  - [Office.MessageCompose.itemType](/javascript/api/outlook/office.messagecompose#itemtype-member)
+  - [Office.MessageCompose.itemType](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-itemtype-member)
 
-  - [Office.MessageRead.itemType](/javascript/api/outlook/office.messageread#itemtype-member)
+  - [Office.MessageRead.itemType](/javascript/api/outlook/office.messageread#outlook-office-messageread-itemtype-member)
 
-  - [Office.SelectedItemDetails.itemType](/javascript/api/outlook/office.selecteditemdetails#itemtype-member)
+  - [Office.SelectedItemDetails.itemType](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-itemtype-member)
 
   #### Examples
 

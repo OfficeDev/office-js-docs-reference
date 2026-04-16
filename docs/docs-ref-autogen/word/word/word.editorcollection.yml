@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Range.editors](/javascript/api/word/word.range#editors-member)
+  - [Word.Range.editors](/javascript/api/word/word.range#word-word-range-editors-member)
 
 isPreview: false
 isDeprecated: false

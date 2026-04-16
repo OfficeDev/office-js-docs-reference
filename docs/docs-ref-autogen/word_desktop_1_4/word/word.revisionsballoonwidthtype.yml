@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.View.revisionsBalloonWidthType](/javascript/api/word/word.view#revisionsballoonwidthtype-member)
+  - [Word.View.revisionsBalloonWidthType](/javascript/api/word/word.view#word-word-view-revisionsballoonwidthtype-member)
 
 isPreview: false
 isDeprecated: false

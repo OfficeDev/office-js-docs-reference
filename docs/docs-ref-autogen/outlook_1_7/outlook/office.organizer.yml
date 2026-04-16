@@ -25,7 +25,7 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.organizer](/javascript/api/outlook/office.appointmentcompose#organizer-member)
+  - [Office.AppointmentCompose.organizer](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-organizer-member)
 
 isPreview: false
 isDeprecated: false

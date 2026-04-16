@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTitle.position](/javascript/api/excel/excel.charttitle#position-member)
+  - [Excel.ChartTitle.position](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-position-member)
 
 isPreview: false
 isDeprecated: false

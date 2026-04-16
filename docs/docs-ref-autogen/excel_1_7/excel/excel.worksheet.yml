@@ -18,19 +18,19 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.worksheet](/javascript/api/excel/excel.chart#worksheet-member)
+  - [Excel.Chart.worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)
 
-  - [Excel.NamedItem.worksheet](/javascript/api/excel/excel.nameditem#worksheet-member)
+  - [Excel.NamedItem.worksheet](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheet-member)
 
-  - [Excel.NamedItem.worksheetOrNullObject](/javascript/api/excel/excel.nameditem#worksheetornullobject-member)
+  - [Excel.NamedItem.worksheetOrNullObject](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheetornullobject-member)
 
-  - [Excel.PivotTable.worksheet](/javascript/api/excel/excel.pivottable#worksheet-member)
+  - [Excel.PivotTable.worksheet](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-worksheet-member)
 
-  - [Excel.Range.worksheet](/javascript/api/excel/excel.range#worksheet-member)
+  - [Excel.Range.worksheet](/javascript/api/excel/excel.range#excel-excel-range-worksheet-member)
 
-  - [Excel.Table.worksheet](/javascript/api/excel/excel.table#worksheet-member)
+  - [Excel.Table.worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
 
-  - [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#items-member)
+  - [Excel.WorksheetCollection.items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
 
   #### Examples
 

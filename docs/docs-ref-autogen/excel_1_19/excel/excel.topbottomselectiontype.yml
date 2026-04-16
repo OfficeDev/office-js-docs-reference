@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotValueFilter.selectionType](/javascript/api/excel/excel.pivotvaluefilter#selectiontype-member)
+  - [Excel.PivotValueFilter.selectionType](/javascript/api/excel/excel.pivotvaluefilter#excel-excel-pivotvaluefilter-selectiontype-member)
 
 isPreview: false
 isDeprecated: false

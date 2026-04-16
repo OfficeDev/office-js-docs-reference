@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataBarConditionalFormat.negativeFormat](/javascript/api/excel/excel.databarconditionalformat#negativeformat-member)
+  - [Excel.DataBarConditionalFormat.negativeFormat](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-negativeformat-member)
 
 isPreview: false
 isDeprecated: false

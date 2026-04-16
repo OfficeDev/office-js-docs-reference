@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlValidationErrorCollection.items](/javascript/api/word/word.customxmlvalidationerrorcollection#items-member)
+  - [Word.CustomXmlValidationErrorCollection.items](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-items-member)
 
 isPreview: true
 isDeprecated: false

@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CommentCollection.items](/javascript/api/word/word.commentcollection#items-member)
+  - [Word.CommentCollection.items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)
 
-  - [Word.CommentReply.parentComment](/javascript/api/word/word.commentreply#parentcomment-member)
+  - [Word.CommentReply.parentComment](/javascript/api/word/word.commentreply#word-word-commentreply-parentcomment-member)
 
   #### Examples
 

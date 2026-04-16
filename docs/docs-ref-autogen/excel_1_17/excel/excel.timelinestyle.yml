@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TimelineStyleCollection.items](/javascript/api/excel/excel.timelinestylecollection#items-member)
+  - [Excel.TimelineStyleCollection.items](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

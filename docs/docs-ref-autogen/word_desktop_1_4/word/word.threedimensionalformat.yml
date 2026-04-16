@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.threeDimensionalFormat](/javascript/api/word/word.font#threedimensionalformat-member)
+  - [Word.Font.threeDimensionalFormat](/javascript/api/word/word.font#word-word-font-threedimensionalformat-member)
 
 isPreview: false
 isDeprecated: false

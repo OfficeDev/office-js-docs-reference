@@ -37,7 +37,7 @@ remarks: >-
   #### Used by
 
 
-  - [Office.SpamReportingEventCompletedOptions.moveItemTo](/javascript/api/outlook/office.spamreportingeventcompletedoptions#moveitemto-member)
+  - [Office.SpamReportingEventCompletedOptions.moveItemTo](/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-moveitemto-member)
 
   #### Examples
 

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Window.type](/javascript/api/excel/excel.window#type-member)
+  - [Excel.Window.type](/javascript/api/excel/excel.window#excel-excel-window-type-member)
 
 isPreview: false
 isDeprecated: false

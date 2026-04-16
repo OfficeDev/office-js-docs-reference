@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.BulletFormat.type](/javascript/api/powerpoint/powerpoint.bulletformat#type-member)
+  - [PowerPoint.BulletFormat.type](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-type-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataPivotHierarchy.showAs](/javascript/api/excel/excel.datapivothierarchy#showas-member)
+  - [Excel.DataPivotHierarchy.showAs](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-showas-member)
 
 isPreview: false
 isDeprecated: false

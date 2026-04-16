@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Template.justificationMode](/javascript/api/word/word.template#justificationmode-member)
+  - [Word.Template.justificationMode](/javascript/api/word/word.template#word-word-template-justificationmode-member)
 
 isPreview: false
 isDeprecated: false

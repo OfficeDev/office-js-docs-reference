@@ -11,9 +11,9 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Body.prependAsync](/javascript/api/outlook/office.body#prependasync-member)
+  - [Office.Body.prependAsync](/javascript/api/outlook/office.body#outlook-office-body-prependasync-member(1))
 
-  - [Office.Body.setSelectedDataAsync](/javascript/api/outlook/office.body#setselecteddataasync-member)
+  - [Office.Body.setSelectedDataAsync](/javascript/api/outlook/office.body#outlook-office-body-setselecteddataasync-member(1))
 
   #### Examples
 

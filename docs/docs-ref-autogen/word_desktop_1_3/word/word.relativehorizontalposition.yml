@@ -17,9 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Frame.relativeHorizontalPosition](/javascript/api/word/word.frame#relativehorizontalposition-member)
+  - [Word.Frame.relativeHorizontalPosition](/javascript/api/word/word.frame#word-word-frame-relativehorizontalposition-member)
 
-  - [Word.Shape.relativeHorizontalPosition](/javascript/api/word/word.shape#relativehorizontalposition-member)
+  - [Word.Shape.relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)
 
   #### Examples
 

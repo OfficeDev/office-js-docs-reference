@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableColumnCollection.items](/javascript/api/excel/excel.tablecolumncollection#items-member)
+  - [Excel.TableColumnCollection.items](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-items-member)
 
 isPreview: false
 isDeprecated: false

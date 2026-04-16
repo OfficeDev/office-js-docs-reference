@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.linkedEntityDataDomains](/javascript/api/excel/excel.workbook#linkedentitydatadomains-member)
+  - [Excel.Workbook.linkedEntityDataDomains](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedentitydatadomains-member)
 
 isPreview: false
 isDeprecated: false

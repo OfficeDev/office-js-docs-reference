@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartSeries.mapOptions](/javascript/api/excel/excel.chartseries#mapoptions-member)
+  - [Excel.ChartSeries.mapOptions](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-mapoptions-member)
 
 isPreview: false
 isDeprecated: false

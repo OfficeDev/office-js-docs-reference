@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxis.type](/javascript/api/excel/excel.chartaxis#type-member)
+  - [Excel.ChartAxis.type](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-type-member)
 
 isPreview: false
 isDeprecated: false

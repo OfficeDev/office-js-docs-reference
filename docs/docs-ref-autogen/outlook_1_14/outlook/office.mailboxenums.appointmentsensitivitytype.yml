@@ -20,11 +20,11 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentRead.sensitivity](/javascript/api/outlook/office.appointmentread#sensitivity-member)
+  - [Office.AppointmentRead.sensitivity](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-sensitivity-member)
 
-  - [Office.Sensitivity.getAsync](/javascript/api/outlook/office.sensitivity#getasync-member)
+  - [Office.Sensitivity.getAsync](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-getasync-member(1))
 
-  - [Office.Sensitivity.setAsync](/javascript/api/outlook/office.sensitivity#setasync-member)
+  - [Office.Sensitivity.setAsync](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-setasync-member(1))
 
   #### Examples
 

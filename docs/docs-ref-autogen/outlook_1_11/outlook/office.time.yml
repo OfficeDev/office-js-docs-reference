@@ -24,9 +24,9 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.end](/javascript/api/outlook/office.appointmentcompose#end-member)
+  - [Office.AppointmentCompose.end](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-end-member)
 
-  - [Office.AppointmentCompose.start](/javascript/api/outlook/office.appointmentcompose#start-member)
+  - [Office.AppointmentCompose.start](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-start-member)
 
 isPreview: false
 isDeprecated: false

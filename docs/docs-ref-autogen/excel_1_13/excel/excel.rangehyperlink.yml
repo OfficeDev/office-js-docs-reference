@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.hyperlink](/javascript/api/excel/excel.range#hyperlink-member)
+  - [Excel.Range.hyperlink](/javascript/api/excel/excel.range#excel-excel-range-hyperlink-member)
 
-  - [Excel.SettableCellProperties.hyperlink](/javascript/api/excel/excel.settablecellproperties#hyperlink-member)
+  - [Excel.SettableCellProperties.hyperlink](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-hyperlink-member)
 
 isPreview: false
 isDeprecated: false

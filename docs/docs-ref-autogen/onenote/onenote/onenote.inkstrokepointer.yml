@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.InkAnalysisWord.strokePointers](/javascript/api/onenote/onenote.inkanalysisword#strokepointers-member)
+  - [OneNote.InkAnalysisWord.strokePointers](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-strokepointers-member)
 
 isPreview: false
 isDeprecated: false

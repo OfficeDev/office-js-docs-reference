@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BusyErrorCellValue.errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#errorsubtype-member)
+  - [Excel.BusyErrorCellValue.errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

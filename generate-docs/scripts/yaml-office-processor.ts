@@ -435,7 +435,9 @@ function deduplicateMethodOverloads(references: UsedByReference[]): UsedByRefere
  * -> /javascript/api/excel/excel.datapivothierarchy#summarizeby-member
  */
 function convertUidToUrl(uid: string): string {
-  // Remove overload suffix like (1), (2)
+  // Extract overload suffix like (1), (2) to append at the end
+  const overloadMatch = uid.match(/\((\d+)\)$/);
+  const overloadSuffix = overloadMatch ? `(${overloadMatch[1]})` : '';
   const cleanUid = uid.replace(/\(\d+\)$/, '');
 
   // Split on ! to get package and reference
@@ -447,14 +449,26 @@ function convertUidToUrl(uid: string): string {
   const packageName = parts[0];
   let reference = parts[1];
 
-  // Convert to lowercase
-  reference = reference.toLowerCase();
+  // Split reference into class path and member part
+  // Example: "Excel.DataPivotHierarchy#summarizeBy:member"
+  // becomes classPath = "Excel.DataPivotHierarchy", memberPart = "summarizeBy:member"
+  const hashIndex = reference.indexOf('#');
+  const classPath = hashIndex > 0 ? reference.substring(0, hashIndex) : reference;
+  const memberPart = hashIndex > 0 ? reference.substring(hashIndex + 1) : '';
 
-  // Replace : with -
-  reference = reference.replace(/:/g, '-');
+  // Convert class path to lowercase for URL
+  const classPathLower = classPath.toLowerCase();
 
-  // Build URL
-  return `/javascript/api/${packageName}/${reference}`;
+  // Build anchor: <package>-<full-qualified-path-with-dashes>-<member-name>-<kind>
+  let anchor = '';
+  if (memberPart) {
+    // Convert everything to lowercase and replace : with - and dots with - for the anchor
+    const anchorBase = `${packageName}-${classPath.replace(/\./g, '-')}-${memberPart.replace(/:/g, '-')}`.toLowerCase();
+    anchor = `#${anchorBase}${overloadSuffix}`;
+  }
+
+  // Build URL: /javascript/api/<package>/<class-path><anchor>
+  return `/javascript/api/${packageName}/${classPathLower}${anchor}`;
 }
 
 /**

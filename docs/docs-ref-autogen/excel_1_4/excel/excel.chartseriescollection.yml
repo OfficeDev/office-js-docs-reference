@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.series](/javascript/api/excel/excel.chart#series-member)
+  - [Excel.Chart.series](/javascript/api/excel/excel.chart#excel-excel-chart-series-member)
 
 isPreview: false
 isDeprecated: false

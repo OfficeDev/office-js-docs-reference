@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Range.characterWidth](/javascript/api/word/word.range#characterwidth-member)
+  - [Word.Range.characterWidth](/javascript/api/word/word.range#word-word-range-characterwidth-member)
 
 isPreview: false
 isDeprecated: false

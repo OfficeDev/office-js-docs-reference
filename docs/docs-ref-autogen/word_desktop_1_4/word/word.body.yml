@@ -13,29 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.parentBody](/javascript/api/word/word.body#parentbody-member)
+  - [Word.Body.parentBody](/javascript/api/word/word.body#word-word-body-parentbody-member)
 
-  - [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#parentbodyornullobject-member)
+  - [Word.Body.parentBodyOrNullObject](/javascript/api/word/word.body#word-word-body-parentbodyornullobject-member)
 
-  - [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#parentbody-member)
+  - [Word.ContentControl.parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)
 
-  - [Word.Document.body](/javascript/api/word/word.document#body-member)
+  - [Word.Document.body](/javascript/api/word/word.document#word-word-document-body-member)
 
-  - [Word.Field.parentBody](/javascript/api/word/word.field#parentbody-member)
+  - [Word.Field.parentBody](/javascript/api/word/word.field#word-word-field-parentbody-member)
 
-  - [Word.NoteItem.body](/javascript/api/word/word.noteitem#body-member)
+  - [Word.NoteItem.body](/javascript/api/word/word.noteitem#word-word-noteitem-body-member)
 
-  - [Word.Paragraph.parentBody](/javascript/api/word/word.paragraph#parentbody-member)
+  - [Word.Paragraph.parentBody](/javascript/api/word/word.paragraph#word-word-paragraph-parentbody-member)
 
-  - [Word.Range.parentBody](/javascript/api/word/word.range#parentbody-member)
+  - [Word.Range.parentBody](/javascript/api/word/word.range#word-word-range-parentbody-member)
 
-  - [Word.Section.body](/javascript/api/word/word.section#body-member)
+  - [Word.Section.body](/javascript/api/word/word.section#word-word-section-body-member)
 
-  - [Word.Shape.body](/javascript/api/word/word.shape#body-member)
+  - [Word.Shape.body](/javascript/api/word/word.shape#word-word-shape-body-member)
 
-  - [Word.Table.parentBody](/javascript/api/word/word.table#parentbody-member)
+  - [Word.Table.parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)
 
-  - [Word.TableCell.body](/javascript/api/word/word.tablecell#body-member)
+  - [Word.TableCell.body](/javascript/api/word/word.tablecell#word-word-tablecell-body-member)
 
   #### Examples
 

@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Comment.contentType](/javascript/api/excel/excel.comment#contenttype-member)
+  - [Excel.Comment.contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
 
-  - [Excel.CommentReply.contentType](/javascript/api/excel/excel.commentreply#contenttype-member)
+  - [Excel.CommentReply.contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
 
   #### Examples
 

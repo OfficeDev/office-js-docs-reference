@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableCell.parentRow](/javascript/api/word/word.tablecell#parentrow-member)
+  - [Word.TableCell.parentRow](/javascript/api/word/word.tablecell#word-word-tablecell-parentrow-member)
 
-  - [Word.TableRowCollection.items](/javascript/api/word/word.tablerowcollection#items-member)
+  - [Word.TableRowCollection.items](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-items-member)
 
   #### Examples
 

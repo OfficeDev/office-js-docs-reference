@@ -16,9 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.RequestContext.document](/javascript/api/word/word.requestcontext#document-member)
+  - [Word.RequestContext.document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
 
-  - [Word.XmlNode.ownerDocument](/javascript/api/word/word.xmlnode#ownerdocument-member)
+  - [Word.XmlNode.ownerDocument](/javascript/api/word/word.xmlnode#word-word-xmlnode-ownerdocument-member)
 
   #### Examples
 

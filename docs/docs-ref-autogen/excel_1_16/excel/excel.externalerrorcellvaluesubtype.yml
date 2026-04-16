@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ExternalErrorCellValue.errorSubType](/javascript/api/excel/excel.externalerrorcellvalue#errorsubtype-member)
+  - [Excel.ExternalErrorCellValue.errorSubType](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

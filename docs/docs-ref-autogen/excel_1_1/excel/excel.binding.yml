@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.BindingCollection.items](/javascript/api/excel/excel.bindingcollection#items-member)
+  - [Excel.BindingCollection.items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
 
 isPreview: false
 isDeprecated: false

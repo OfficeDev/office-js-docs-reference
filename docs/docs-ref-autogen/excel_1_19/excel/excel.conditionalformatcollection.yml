@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#conditionalformats-member)
+  - [Excel.Range.conditionalFormats](/javascript/api/excel/excel.range#excel-excel-range-conditionalformats-member)
 
-  - [Excel.RangeAreas.conditionalFormats](/javascript/api/excel/excel.rangeareas#conditionalformats-member)
+  - [Excel.RangeAreas.conditionalFormats](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-conditionalformats-member)
 
 isPreview: false
 isDeprecated: false

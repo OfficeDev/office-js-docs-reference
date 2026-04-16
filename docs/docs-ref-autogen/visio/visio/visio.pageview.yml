@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Visio.Page.view](/javascript/api/visio/visio.page#view-member)
+  - [Visio.Page.view](/javascript/api/visio/visio.page#visio-visio-page-view-member)
 
 isPreview: false
 isDeprecated: false

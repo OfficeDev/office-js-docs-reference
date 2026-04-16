@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Table.rows](/javascript/api/onenote/onenote.table#rows-member)
+  - [OneNote.Table.rows](/javascript/api/onenote/onenote.table#onenote-onenote-table-rows-member)
 
 isPreview: false
 isDeprecated: false

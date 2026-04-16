@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onChanged](/javascript/api/excel/excel.worksheet#onchanged-member)
+  - [Excel.Worksheet.onChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onchanged-member)
 
-  - [Excel.WorksheetCollection.onChanged](/javascript/api/excel/excel.worksheetcollection#onchanged-member)
+  - [Excel.WorksheetCollection.onChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onchanged-member)
 
 isPreview: false
 isDeprecated: false

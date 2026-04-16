@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Notebook.sectionGroups](/javascript/api/onenote/onenote.notebook#sectiongroups-member)
+  - [OneNote.Notebook.sectionGroups](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-sectiongroups-member)
 
-  - [OneNote.SectionGroup.sectionGroups](/javascript/api/onenote/onenote.sectiongroup#sectiongroups-member)
+  - [OneNote.SectionGroup.sectionGroups](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-sectiongroups-member)
 
 isPreview: false
 isDeprecated: false

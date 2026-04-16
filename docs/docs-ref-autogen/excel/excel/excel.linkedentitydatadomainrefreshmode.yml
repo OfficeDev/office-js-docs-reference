@@ -17,13 +17,13 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.LinkedEntityDataDomain.refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#refreshmode-member)
+  - [Excel.LinkedEntityDataDomain.refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member)
 
-  - [Excel.LinkedEntityDataDomain.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#supportedrefreshmodes-member)
+  - [Excel.LinkedEntityDataDomain.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)
 
-  - [Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#supportedrefreshmodes-member)
+  - [Excel.LinkedEntityDataDomainCreateOptions.supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-supportedrefreshmodes-member)
 
-  - [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#refreshmode-member)
+  - [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs.refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-refreshmode-member)
 
 isPreview: false
 isDeprecated: false

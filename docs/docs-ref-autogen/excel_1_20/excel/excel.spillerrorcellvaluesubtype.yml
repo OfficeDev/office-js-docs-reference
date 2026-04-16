@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.SpillErrorCellValue.errorSubType](/javascript/api/excel/excel.spillerrorcellvalue#errorsubtype-member)
+  - [Excel.SpillErrorCellValue.errorSubType](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

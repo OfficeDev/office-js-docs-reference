@@ -16,9 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ParagraphFormat.horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#horizontalalignment-member)
+  - [PowerPoint.ParagraphFormat.horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-horizontalalignment-member)
 
-  - [PowerPoint.TableCellProperties.horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#horizontalalignment-member)
+  - [PowerPoint.TableCellProperties.horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-horizontalalignment-member)
 
   #### Examples
 

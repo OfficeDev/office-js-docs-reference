@@ -14,13 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Frame.shading](/javascript/api/word/word.frame#shading-member)
+  - [Word.Frame.shading](/javascript/api/word/word.frame#word-word-frame-shading-member)
 
-  - [Word.Paragraph.shading](/javascript/api/word/word.paragraph#shading-member)
+  - [Word.Paragraph.shading](/javascript/api/word/word.paragraph#word-word-paragraph-shading-member)
 
-  - [Word.Range.shading](/javascript/api/word/word.range#shading-member)
+  - [Word.Range.shading](/javascript/api/word/word.range#word-word-range-shading-member)
 
-  - [Word.TableColumn.shading](/javascript/api/word/word.tablecolumn#shading-member)
+  - [Word.TableColumn.shading](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-shading-member)
 
 isPreview: false
 isDeprecated: false

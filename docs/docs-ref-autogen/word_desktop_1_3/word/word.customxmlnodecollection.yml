@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlNode.attributes](/javascript/api/word/word.customxmlnode#attributes-member)
+  - [Word.CustomXmlNode.attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member)
 
-  - [Word.CustomXmlNode.childNodes](/javascript/api/word/word.customxmlnode#childnodes-member)
+  - [Word.CustomXmlNode.childNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-childnodes-member)
 
 isPreview: false
 isDeprecated: false

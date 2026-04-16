@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlockGalleryContentControl.buildingBlockType](/javascript/api/word/word.buildingblockgallerycontentcontrol#buildingblocktype-member)
+  - [Word.BuildingBlockGalleryContentControl.buildingBlockType](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-buildingblocktype-member)
 
 isPreview: false
 isDeprecated: false

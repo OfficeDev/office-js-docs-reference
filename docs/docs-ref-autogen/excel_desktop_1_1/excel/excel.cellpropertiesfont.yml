@@ -16,9 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellPropertiesFormat.font](/javascript/api/excel/excel.cellpropertiesformat#font-member)
+  - [Excel.CellPropertiesFormat.font](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-font-member)
 
-  - [Excel.RangeTextRun.font](/javascript/api/excel/excel.rangetextrun#font-member)
+  - [Excel.RangeTextRun.font](/javascript/api/excel/excel.rangetextrun#excel-excel-rangetextrun-font-member)
 
 isPreview: false
 isDeprecated: false

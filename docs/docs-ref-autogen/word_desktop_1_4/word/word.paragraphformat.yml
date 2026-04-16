@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ConditionalStyle.paragraphFormat](/javascript/api/word/word.conditionalstyle#paragraphformat-member)
+  - [Word.ConditionalStyle.paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)
 
-  - [Word.Style.paragraphFormat](/javascript/api/word/word.style#paragraphformat-member)
+  - [Word.Style.paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)
 
   #### Examples
 

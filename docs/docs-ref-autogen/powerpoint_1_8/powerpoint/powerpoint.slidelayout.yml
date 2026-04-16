@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Slide.layout](/javascript/api/powerpoint/powerpoint.slide#layout-member)
+  - [PowerPoint.Slide.layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)
 
-  - [PowerPoint.SlideLayoutCollection.items](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#items-member)
+  - [PowerPoint.SlideLayoutCollection.items](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-items-member)
 
   #### Examples
 

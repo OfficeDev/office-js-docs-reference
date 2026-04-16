@@ -15,43 +15,43 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#context-member)
+  - [PowerPoint.Application.context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - [PowerPoint.BulletFormat.context](/javascript/api/powerpoint/powerpoint.bulletformat#context-member)
+  - [PowerPoint.BulletFormat.context](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-context-member)
 
-  - [PowerPoint.ParagraphFormat.context](/javascript/api/powerpoint/powerpoint.paragraphformat#context-member)
+  - [PowerPoint.ParagraphFormat.context](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-context-member)
 
-  - [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#context-member)
+  - [PowerPoint.Presentation.context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
 
-  - [PowerPoint.Shape.context](/javascript/api/powerpoint/powerpoint.shape#context-member)
+  - [PowerPoint.Shape.context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
 
-  - [PowerPoint.ShapeCollection.context](/javascript/api/powerpoint/powerpoint.shapecollection#context-member)
+  - [PowerPoint.ShapeCollection.context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
 
-  - [PowerPoint.ShapeFill.context](/javascript/api/powerpoint/powerpoint.shapefill#context-member)
+  - [PowerPoint.ShapeFill.context](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-context-member)
 
-  - [PowerPoint.ShapeFont.context](/javascript/api/powerpoint/powerpoint.shapefont#context-member)
+  - [PowerPoint.ShapeFont.context](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-context-member)
 
-  - [PowerPoint.ShapeLineFormat.context](/javascript/api/powerpoint/powerpoint.shapelineformat#context-member)
+  - [PowerPoint.ShapeLineFormat.context](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-context-member)
 
-  - [PowerPoint.Slide.context](/javascript/api/powerpoint/powerpoint.slide#context-member)
+  - [PowerPoint.Slide.context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
 
-  - [PowerPoint.SlideCollection.context](/javascript/api/powerpoint/powerpoint.slidecollection#context-member)
+  - [PowerPoint.SlideCollection.context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
 
-  - [PowerPoint.SlideLayout.context](/javascript/api/powerpoint/powerpoint.slidelayout#context-member)
+  - [PowerPoint.SlideLayout.context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
 
-  - [PowerPoint.SlideLayoutCollection.context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#context-member)
+  - [PowerPoint.SlideLayoutCollection.context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
 
-  - [PowerPoint.SlideMaster.context](/javascript/api/powerpoint/powerpoint.slidemaster#context-member)
+  - [PowerPoint.SlideMaster.context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
 
-  - [PowerPoint.SlideMasterCollection.context](/javascript/api/powerpoint/powerpoint.slidemastercollection#context-member)
+  - [PowerPoint.SlideMasterCollection.context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
 
-  - [PowerPoint.Tag.context](/javascript/api/powerpoint/powerpoint.tag#context-member)
+  - [PowerPoint.Tag.context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
 
-  - [PowerPoint.TagCollection.context](/javascript/api/powerpoint/powerpoint.tagcollection#context-member)
+  - [PowerPoint.TagCollection.context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
 
-  - [PowerPoint.TextFrame.context](/javascript/api/powerpoint/powerpoint.textframe#context-member)
+  - [PowerPoint.TextFrame.context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
 
-  - [PowerPoint.TextRange.context](/javascript/api/powerpoint/powerpoint.textrange#context-member)
+  - [PowerPoint.TextRange.context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
 
   #### Examples
 

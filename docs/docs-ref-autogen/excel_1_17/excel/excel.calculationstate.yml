@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Application.calculationState](/javascript/api/excel/excel.application#calculationstate-member)
+  - [Excel.Application.calculationState](/javascript/api/excel/excel.application#excel-excel-application-calculationstate-member)
 
 isPreview: false
 isDeprecated: false

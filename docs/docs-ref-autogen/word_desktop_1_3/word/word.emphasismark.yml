@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.emphasisMark](/javascript/api/word/word.font#emphasismark-member)
+  - [Word.Font.emphasisMark](/javascript/api/word/word.font#word-word-font-emphasismark-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Coauthoring.updates](/javascript/api/word/word.coauthoring#updates-member)
+  - [Word.Coauthoring.updates](/javascript/api/word/word.coauthoring#word-word-coauthoring-updates-member)
 
 isPreview: false
 isDeprecated: false

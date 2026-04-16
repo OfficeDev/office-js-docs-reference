@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.RevisionsFilter.reviewers](/javascript/api/word/word.revisionsfilter#reviewers-member)
+  - [Word.RevisionsFilter.reviewers](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-reviewers-member)
 
 isPreview: false
 isDeprecated: false

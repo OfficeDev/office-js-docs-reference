@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PageLayout.printErrors](/javascript/api/excel/excel.pagelayout#printerrors-member)
+  - [Excel.PageLayout.printErrors](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printerrors-member)
 
 isPreview: false
 isDeprecated: false

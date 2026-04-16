@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTrendline.label](/javascript/api/excel/excel.charttrendline#label-member)
+  - [Excel.ChartTrendline.label](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-label-member)
 
 isPreview: false
 isDeprecated: false

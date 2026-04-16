@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.FillFormat.pattern](/javascript/api/word/word.fillformat#pattern-member)
+  - [Word.FillFormat.pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member)
 
-  - [Word.LineFormat.pattern](/javascript/api/word/word.lineformat#pattern-member)
+  - [Word.LineFormat.pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)
 
 isPreview: false
 isDeprecated: false

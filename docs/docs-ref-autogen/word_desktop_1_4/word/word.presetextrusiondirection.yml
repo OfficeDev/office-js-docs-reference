@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ThreeDimensionalFormat.presetExtrusionDirection](/javascript/api/word/word.threedimensionalformat#presetextrusiondirection-member)
+  - [Word.ThreeDimensionalFormat.presetExtrusionDirection](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetextrusiondirection-member)
 
 isPreview: false
 isDeprecated: false

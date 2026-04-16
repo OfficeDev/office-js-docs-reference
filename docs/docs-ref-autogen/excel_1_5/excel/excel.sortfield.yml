@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.TableSort.fields](/javascript/api/excel/excel.tablesort#fields-member)
+  - [Excel.TableSort.fields](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-fields-member)
 
 isPreview: false
 isDeprecated: false

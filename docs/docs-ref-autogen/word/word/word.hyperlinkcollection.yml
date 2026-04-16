@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.hyperlinks](/javascript/api/word/word.document#hyperlinks-member)
+  - [Word.Document.hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)
 
-  - [Word.Range.hyperlinks](/javascript/api/word/word.range#hyperlinks-member)
+  - [Word.Range.hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)
 
 isPreview: false
 isDeprecated: false

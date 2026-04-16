@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.AllowEditRangeCollection.items](/javascript/api/excel/excel.alloweditrangecollection#items-member)
+  - [Excel.AllowEditRangeCollection.items](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-items-member)
 
 isPreview: false
 isDeprecated: false

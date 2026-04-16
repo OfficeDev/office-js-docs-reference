@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.pivotOptions](/javascript/api/excel/excel.chart#pivotoptions-member)
+  - [Excel.Chart.pivotOptions](/javascript/api/excel/excel.chart#excel-excel-chart-pivotoptions-member)
 
 isPreview: false
 isDeprecated: false

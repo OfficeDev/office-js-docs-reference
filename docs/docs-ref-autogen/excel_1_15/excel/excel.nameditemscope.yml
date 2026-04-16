@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.NamedItem.scope](/javascript/api/excel/excel.nameditem#scope-member)
+  - [Excel.NamedItem.scope](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-scope-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.FloatingInk.inkStrokes](/javascript/api/onenote/onenote.floatingink#inkstrokes-member)
+  - [OneNote.FloatingInk.inkStrokes](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-inkstrokes-member)
 
 isPreview: false
 isDeprecated: false

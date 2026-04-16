@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.PageSetup.gutterPosition](/javascript/api/word/word.pagesetup#gutterposition-member)
+  - [Word.PageSetup.gutterPosition](/javascript/api/word/word.pagesetup#word-word-pagesetup-gutterposition-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.linkedWorkbooks](/javascript/api/excel/excel.workbook#linkedworkbooks-member)
+  - [Excel.Workbook.linkedWorkbooks](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedworkbooks-member)
 
 isPreview: false
 isDeprecated: false

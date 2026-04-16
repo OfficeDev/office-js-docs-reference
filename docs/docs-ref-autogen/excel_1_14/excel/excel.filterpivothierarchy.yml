@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.FilterPivotHierarchyCollection.items](/javascript/api/excel/excel.filterpivothierarchycollection#items-member)
+  - [Excel.FilterPivotHierarchyCollection.items](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-items-member)
 
 isPreview: false
 isDeprecated: false

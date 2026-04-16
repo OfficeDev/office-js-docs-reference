@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#items-member)
+  - [PowerPoint.ShapeCollection.items](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-items-member)
 
-  - [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#items-member)
+  - [PowerPoint.ShapeScopedCollection.items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-items-member)
 
   #### Examples
 

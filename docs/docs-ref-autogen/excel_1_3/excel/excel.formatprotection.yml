@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeFormat.protection](/javascript/api/excel/excel.rangeformat#protection-member)
+  - [Excel.RangeFormat.protection](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-protection-member)
 
 isPreview: false
 isDeprecated: false

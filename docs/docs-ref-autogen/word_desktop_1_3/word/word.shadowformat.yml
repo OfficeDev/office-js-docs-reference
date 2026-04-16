@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Font.textShadow](/javascript/api/word/word.font#textshadow-member)
+  - [Word.Font.textShadow](/javascript/api/word/word.font#word-word-font-textshadow-member)
 
 isPreview: false
 isDeprecated: false

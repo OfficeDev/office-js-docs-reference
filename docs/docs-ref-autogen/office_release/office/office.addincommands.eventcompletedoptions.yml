@@ -50,7 +50,7 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AddinCommands.Event.completed](/javascript/api/office/office.addincommands.event#completed-member)
+  - [Office.AddinCommands.Event.completed](/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
 
 isPreview: false
 isDeprecated: false

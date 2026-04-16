@@ -23,10 +23,11 @@ summary: >-
 
 
   - [Appointment](xref:outlook!Office.Appointment:interface)
-remarks: |-
+remarks: >-
   #### Used by
 
-  - [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#item-member)
+
+  - [Office.Mailbox.item](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-item-member)
 
 isPreview: false
 isDeprecated: false

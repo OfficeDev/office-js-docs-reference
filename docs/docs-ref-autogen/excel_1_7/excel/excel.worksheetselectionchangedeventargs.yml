@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onSelectionChanged](/javascript/api/excel/excel.worksheet#onselectionchanged-member)
+  - [Excel.Worksheet.onSelectionChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onselectionchanged-member)
 
   #### Examples
 

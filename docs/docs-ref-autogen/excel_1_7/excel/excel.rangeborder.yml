@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeBorderCollection.items](/javascript/api/excel/excel.rangebordercollection#items-member)
+  - [Excel.RangeBorderCollection.items](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-items-member)
 
 isPreview: false
 isDeprecated: false

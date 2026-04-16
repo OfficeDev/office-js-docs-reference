@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Range.format](/javascript/api/excel/excel.range#format-member)
+  - [Excel.Range.format](/javascript/api/excel/excel.range#excel-excel-range-format-member)
 
-  - [Excel.RangeAreas.format](/javascript/api/excel/excel.rangeareas#format-member)
+  - [Excel.RangeAreas.format](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-format-member)
 
 isPreview: false
 isDeprecated: false

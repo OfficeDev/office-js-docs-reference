@@ -17,9 +17,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ComboBoxContentControl.listItems](/javascript/api/word/word.comboboxcontentcontrol#listitems-member)
+  - [Word.ComboBoxContentControl.listItems](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-listitems-member)
 
-  - [Word.DropDownListContentControl.listItems](/javascript/api/word/word.dropdownlistcontentcontrol#listitems-member)
+  - [Word.DropDownListContentControl.listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)
 
   #### Examples
 

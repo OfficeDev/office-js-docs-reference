@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotTable.columnHierarchies](/javascript/api/excel/excel.pivottable#columnhierarchies-member)
+  - [Excel.PivotTable.columnHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-columnhierarchies-member)
 
-  - [Excel.PivotTable.rowHierarchies](/javascript/api/excel/excel.pivottable#rowhierarchies-member)
+  - [Excel.PivotTable.rowHierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-rowhierarchies-member)
 
 isPreview: false
 isDeprecated: false

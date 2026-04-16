@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartMapOptions.projectionType](/javascript/api/excel/excel.chartmapoptions#projectiontype-member)
+  - [Excel.ChartMapOptions.projectionType](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-projectiontype-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.tableStyles](/javascript/api/excel/excel.workbook#tablestyles-member)
+  - [Excel.Workbook.tableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-tablestyles-member)
 
 isPreview: false
 isDeprecated: false

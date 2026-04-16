@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.customXmlParts](/javascript/api/word/word.document#customxmlparts-member)
+  - [Word.Document.customXmlParts](/javascript/api/word/word.document#word-word-document-customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

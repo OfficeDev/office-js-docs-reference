@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onFormulaChanged](/javascript/api/excel/excel.worksheet#onformulachanged-member)
+  - [Excel.Worksheet.onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member)
 
-  - [Excel.WorksheetCollection.onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#onformulachanged-member)
+  - [Excel.WorksheetCollection.onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformulachanged-member)
 
   #### Examples
 

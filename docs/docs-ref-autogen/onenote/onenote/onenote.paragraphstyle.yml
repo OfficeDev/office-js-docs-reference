@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.RichText.style](/javascript/api/onenote/onenote.richtext#style-member)
+  - [OneNote.RichText.style](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-style-member)
 
 isPreview: false
 isDeprecated: false

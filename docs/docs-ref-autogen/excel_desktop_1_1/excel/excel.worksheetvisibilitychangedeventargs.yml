@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.onVisibilityChanged](/javascript/api/excel/excel.worksheet#onvisibilitychanged-member)
+  - [Excel.Worksheet.onVisibilityChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onvisibilitychanged-member)
 
-  - [Excel.WorksheetCollection.onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#onvisibilitychanged-member)
+  - [Excel.WorksheetCollection.onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onvisibilitychanged-member)
 
 isPreview: false
 isDeprecated: false

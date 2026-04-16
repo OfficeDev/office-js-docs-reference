@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Application.templates](/javascript/api/word/word.application#templates-member)
+  - [Word.Application.templates](/javascript/api/word/word.application#word-word-application-templates-member)
 
 isPreview: false
 isDeprecated: false

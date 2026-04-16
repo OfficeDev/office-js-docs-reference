@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.BuildingBlock.insertType](/javascript/api/word/word.buildingblock#inserttype-member)
+  - [Word.BuildingBlock.insertType](/javascript/api/word/word.buildingblock#word-word-buildingblock-inserttype-member)
 
 isPreview: false
 isDeprecated: false

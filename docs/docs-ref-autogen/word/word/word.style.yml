@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Style.linkStyle](/javascript/api/word/word.style#linkstyle-member)
+  - [Word.Style.linkStyle](/javascript/api/word/word.style#word-word-style-linkstyle-member)
 
-  - [Word.StyleCollection.items](/javascript/api/word/word.stylecollection#items-member)
+  - [Word.StyleCollection.items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)
 
   #### Examples
 

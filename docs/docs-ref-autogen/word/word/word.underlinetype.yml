@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CommentContentRange.underline](/javascript/api/word/word.commentcontentrange#underline-member)
+  - [Word.CommentContentRange.underline](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-underline-member)
 
-  - [Word.Font.underline](/javascript/api/word/word.font#underline-member)
+  - [Word.Font.underline](/javascript/api/word/word.font#word-word-font-underline-member)
 
-  - [Word.Range.underline](/javascript/api/word/word.range#underline-member)
+  - [Word.Range.underline](/javascript/api/word/word.range#word-word-range-underline-member)
 
   #### Examples
 

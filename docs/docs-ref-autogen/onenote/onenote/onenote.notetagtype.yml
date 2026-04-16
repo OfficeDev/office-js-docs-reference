@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.NoteTag.type](/javascript/api/onenote/onenote.notetag#type-member)
+  - [OneNote.NoteTag.type](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-type-member)
 
 isPreview: false
 isDeprecated: false

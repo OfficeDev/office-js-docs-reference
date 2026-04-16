@@ -13,31 +13,31 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControl.parentTable](/javascript/api/word/word.contentcontrol#parenttable-member)
+  - [Word.ContentControl.parentTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttable-member)
 
-  - [Word.ContentControl.parentTableOrNullObject](/javascript/api/word/word.contentcontrol#parenttableornullobject-member)
+  - [Word.ContentControl.parentTableOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttableornullobject-member)
 
-  - [Word.InlinePicture.parentTable](/javascript/api/word/word.inlinepicture#parenttable-member)
+  - [Word.InlinePicture.parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member)
 
-  - [Word.InlinePicture.parentTableOrNullObject](/javascript/api/word/word.inlinepicture#parenttableornullobject-member)
+  - [Word.InlinePicture.parentTableOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttableornullobject-member)
 
-  - [Word.Paragraph.parentTable](/javascript/api/word/word.paragraph#parenttable-member)
+  - [Word.Paragraph.parentTable](/javascript/api/word/word.paragraph#word-word-paragraph-parenttable-member)
 
-  - [Word.Paragraph.parentTableOrNullObject](/javascript/api/word/word.paragraph#parenttableornullobject-member)
+  - [Word.Paragraph.parentTableOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttableornullobject-member)
 
-  - [Word.Range.parentTable](/javascript/api/word/word.range#parenttable-member)
+  - [Word.Range.parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member)
 
-  - [Word.Range.parentTableOrNullObject](/javascript/api/word/word.range#parenttableornullobject-member)
+  - [Word.Range.parentTableOrNullObject](/javascript/api/word/word.range#word-word-range-parenttableornullobject-member)
 
-  - [Word.Table.parentTable](/javascript/api/word/word.table#parenttable-member)
+  - [Word.Table.parentTable](/javascript/api/word/word.table#word-word-table-parenttable-member)
 
-  - [Word.Table.parentTableOrNullObject](/javascript/api/word/word.table#parenttableornullobject-member)
+  - [Word.Table.parentTableOrNullObject](/javascript/api/word/word.table#word-word-table-parenttableornullobject-member)
 
-  - [Word.TableCell.parentTable](/javascript/api/word/word.tablecell#parenttable-member)
+  - [Word.TableCell.parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
 
-  - [Word.TableCollection.items](/javascript/api/word/word.tablecollection#items-member)
+  - [Word.TableCollection.items](/javascript/api/word/word.tablecollection#word-word-tablecollection-items-member)
 
-  - [Word.TableRow.parentTable](/javascript/api/word/word.tablerow#parenttable-member)
+  - [Word.TableRow.parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)
 
   #### Examples
 

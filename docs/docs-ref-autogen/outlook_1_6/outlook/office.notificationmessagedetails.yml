@@ -31,11 +31,11 @@ remarks: >-
   #### Used by
 
 
-  - [Office.NotificationMessages.addAsync](/javascript/api/outlook/office.notificationmessages#addasync-member)
+  - [Office.NotificationMessages.addAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-addasync-member(1))
 
-  - [Office.NotificationMessages.getAllAsync](/javascript/api/outlook/office.notificationmessages#getallasync-member)
+  - [Office.NotificationMessages.getAllAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-getallasync-member(1))
 
-  - [Office.NotificationMessages.replaceAsync](/javascript/api/outlook/office.notificationmessages#replaceasync-member)
+  - [Office.NotificationMessages.replaceAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))
 
   #### Examples
 

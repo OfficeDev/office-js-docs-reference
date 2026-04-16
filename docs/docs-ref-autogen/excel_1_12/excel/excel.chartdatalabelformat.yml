@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabel.format](/javascript/api/excel/excel.chartdatalabel#format-member)
+  - [Excel.ChartDataLabel.format](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-format-member)
 
-  - [Excel.ChartDataLabels.format](/javascript/api/excel/excel.chartdatalabels#format-member)
+  - [Excel.ChartDataLabels.format](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-format-member)
 
 isPreview: false
 isDeprecated: false

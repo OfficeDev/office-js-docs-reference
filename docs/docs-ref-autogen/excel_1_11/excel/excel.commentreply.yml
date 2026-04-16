@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CommentReplyCollection.items](/javascript/api/excel/excel.commentreplycollection#items-member)
+  - [Excel.CommentReplyCollection.items](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-items-member)
 
 isPreview: false
 isDeprecated: false

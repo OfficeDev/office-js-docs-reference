@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.SettableCellProperties.textRuns](/javascript/api/excel/excel.settablecellproperties#textruns-member)
+  - [Excel.SettableCellProperties.textRuns](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-textruns-member)
 
 isPreview: false
 isDeprecated: false

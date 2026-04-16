@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.HeadingStyleCollection.items](/javascript/api/word/word.headingstylecollection#items-member)
+  - [Word.HeadingStyleCollection.items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

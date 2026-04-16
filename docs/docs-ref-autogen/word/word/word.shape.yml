@@ -16,17 +16,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Canvas.shape](/javascript/api/word/word.canvas#shape-member)
+  - [Word.Canvas.shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)
 
-  - [Word.Document.background](/javascript/api/word/word.document#background-member)
+  - [Word.Document.background](/javascript/api/word/word.document#word-word-document-background-member)
 
-  - [Word.Shape.parentCanvas](/javascript/api/word/word.shape#parentcanvas-member)
+  - [Word.Shape.parentCanvas](/javascript/api/word/word.shape#word-word-shape-parentcanvas-member)
 
-  - [Word.Shape.parentGroup](/javascript/api/word/word.shape#parentgroup-member)
+  - [Word.Shape.parentGroup](/javascript/api/word/word.shape#word-word-shape-parentgroup-member)
 
-  - [Word.ShapeCollection.items](/javascript/api/word/word.shapecollection#items-member)
+  - [Word.ShapeCollection.items](/javascript/api/word/word.shapecollection#word-word-shapecollection-items-member)
 
-  - [Word.ShapeGroup.shape](/javascript/api/word/word.shapegroup#shape-member)
+  - [Word.ShapeGroup.shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)
 
   #### Examples
 

@@ -13,23 +13,23 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ContentControlAddedEventArgs.eventType](/javascript/api/word/word.contentcontroladdedeventargs#eventtype-member)
+  - [Word.ContentControlAddedEventArgs.eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)
 
-  - [Word.ContentControlDataChangedEventArgs.eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#eventtype-member)
+  - [Word.ContentControlDataChangedEventArgs.eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)
 
-  - [Word.ContentControlDeletedEventArgs.eventType](/javascript/api/word/word.contentcontroldeletedeventargs#eventtype-member)
+  - [Word.ContentControlDeletedEventArgs.eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)
 
-  - [Word.ContentControlEnteredEventArgs.eventType](/javascript/api/word/word.contentcontrolenteredeventargs#eventtype-member)
+  - [Word.ContentControlEnteredEventArgs.eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)
 
-  - [Word.ContentControlExitedEventArgs.eventType](/javascript/api/word/word.contentcontrolexitedeventargs#eventtype-member)
+  - [Word.ContentControlExitedEventArgs.eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)
 
-  - [Word.ContentControlSelectionChangedEventArgs.eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#eventtype-member)
+  - [Word.ContentControlSelectionChangedEventArgs.eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)
 
-  - [Word.ParagraphAddedEventArgs.type](/javascript/api/word/word.paragraphaddedeventargs#type-member)
+  - [Word.ParagraphAddedEventArgs.type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)
 
-  - [Word.ParagraphChangedEventArgs.type](/javascript/api/word/word.paragraphchangedeventargs#type-member)
+  - [Word.ParagraphChangedEventArgs.type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)
 
-  - [Word.ParagraphDeletedEventArgs.type](/javascript/api/word/word.paragraphdeletedeventargs#type-member)
+  - [Word.ParagraphDeletedEventArgs.type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)
 
   #### Examples
 

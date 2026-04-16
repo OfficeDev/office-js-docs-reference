@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.CustomXmlPartCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#items-member)
+  - [PowerPoint.CustomXmlPartCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-items-member)
 
-  - [PowerPoint.CustomXmlPartScopedCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#items-member)
+  - [PowerPoint.CustomXmlPartScopedCollection.items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-items-member)
 
 isPreview: false
 isDeprecated: false

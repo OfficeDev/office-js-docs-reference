@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DropCap.position](/javascript/api/word/word.dropcap#position-member)
+  - [Word.DropCap.position](/javascript/api/word/word.dropcap#word-word-dropcap-position-member)
 
 isPreview: false
 isDeprecated: false

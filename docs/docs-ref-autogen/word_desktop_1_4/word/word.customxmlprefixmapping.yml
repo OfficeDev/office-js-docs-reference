@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CustomXmlPrefixMappingCollection.items](/javascript/api/word/word.customxmlprefixmappingcollection#items-member)
+  - [Word.CustomXmlPrefixMappingCollection.items](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,11 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - [Office.CustomXmlParts.addAsync](/javascript/api/office/office.customxmlparts#addasync-member)
+  - [Office.CustomXmlParts.addAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-addasync-member(1))
 
-  - [Office.CustomXmlParts.getByIdAsync](/javascript/api/office/office.customxmlparts#getbyidasync-member)
+  - [Office.CustomXmlParts.getByIdAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbyidasync-member(1))
 
-  - [Office.CustomXmlParts.getByNamespaceAsync](/javascript/api/office/office.customxmlparts#getbynamespaceasync-member)
+  - [Office.CustomXmlParts.getByNamespaceAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbynamespaceasync-member(1))
 
 isPreview: false
 isDeprecated: false

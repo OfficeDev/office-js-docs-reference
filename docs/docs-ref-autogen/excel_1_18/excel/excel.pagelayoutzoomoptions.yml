@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PageLayout.zoom](/javascript/api/excel/excel.pagelayout#zoom-member)
+  - [Excel.PageLayout.zoom](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-zoom-member)
 
 isPreview: false
 isDeprecated: false

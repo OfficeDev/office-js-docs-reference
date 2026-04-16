@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataBarConditionalFormat.axisFormat](/javascript/api/excel/excel.databarconditionalformat#axisformat-member)
+  - [Excel.DataBarConditionalFormat.axisFormat](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-axisformat-member)
 
 isPreview: false
 isDeprecated: false

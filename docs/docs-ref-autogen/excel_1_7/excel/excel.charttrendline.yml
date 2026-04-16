@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartTrendlineCollection.items](/javascript/api/excel/excel.charttrendlinecollection#items-member)
+  - [Excel.ChartTrendlineCollection.items](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-items-member)
 
 isPreview: false
 isDeprecated: false

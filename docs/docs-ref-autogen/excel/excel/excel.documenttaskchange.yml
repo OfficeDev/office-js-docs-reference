@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DocumentTaskChangeCollection.items](/javascript/api/excel/excel.documenttaskchangecollection#items-member)
+  - [Excel.DocumentTaskChangeCollection.items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
 
 isPreview: true
 isDeprecated: false

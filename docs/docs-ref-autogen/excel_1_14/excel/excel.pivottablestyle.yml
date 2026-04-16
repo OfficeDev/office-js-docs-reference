@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.PivotTableStyleCollection.items](/javascript/api/excel/excel.pivottablestylecollection#items-member)
+  - [Excel.PivotTableStyleCollection.items](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

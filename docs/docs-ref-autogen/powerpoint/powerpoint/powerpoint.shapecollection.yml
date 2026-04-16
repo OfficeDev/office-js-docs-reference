@@ -13,11 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Slide.shapes](/javascript/api/powerpoint/powerpoint.slide#shapes-member)
+  - [PowerPoint.Slide.shapes](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-shapes-member)
 
-  - [PowerPoint.SlideLayout.shapes](/javascript/api/powerpoint/powerpoint.slidelayout#shapes-member)
+  - [PowerPoint.SlideLayout.shapes](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-shapes-member)
 
-  - [PowerPoint.SlideMaster.shapes](/javascript/api/powerpoint/powerpoint.slidemaster#shapes-member)
+  - [PowerPoint.SlideMaster.shapes](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-shapes-member)
 
   #### Examples
 

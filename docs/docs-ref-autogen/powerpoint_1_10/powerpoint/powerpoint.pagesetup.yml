@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [PowerPoint.Presentation.pageSetup](/javascript/api/powerpoint/powerpoint.presentation#pagesetup-member)
+  - [PowerPoint.Presentation.pageSetup](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-pagesetup-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.GoToOptions.item](/javascript/api/word/word.gotooptions#item-member)
+  - [Word.GoToOptions.item](/javascript/api/word/word.gotooptions#word-word-gotooptions-item-member)
 
 isPreview: false
 isDeprecated: false

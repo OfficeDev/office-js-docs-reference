@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.TableOfAuthoritiesCollection.items](/javascript/api/word/word.tableofauthoritiescollection#items-member)
+  - [Word.TableOfAuthoritiesCollection.items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)
 
 isPreview: false
 isDeprecated: false

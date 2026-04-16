@@ -15,13 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.sections](/javascript/api/word/word.document#sections-member)
+  - [Word.Document.sections](/javascript/api/word/word.document#word-word-document-sections-member)
 
-  - [Word.DocumentCreated.sections](/javascript/api/word/word.documentcreated#sections-member)
+  - [Word.DocumentCreated.sections](/javascript/api/word/word.documentcreated#word-word-documentcreated-sections-member)
 
-  - [Word.Range.sections](/javascript/api/word/word.range#sections-member)
+  - [Word.Range.sections](/javascript/api/word/word.range#word-word-range-sections-member)
 
-  - [Word.Selection.sections](/javascript/api/word/word.selection#sections-member)
+  - [Word.Selection.sections](/javascript/api/word/word.selection#word-word-selection-sections-member)
 
   #### Examples
 

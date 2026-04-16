@@ -18,21 +18,21 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.CellBorderCollection.bottom](/javascript/api/excel/excel.cellbordercollection#bottom-member)
+  - [Excel.CellBorderCollection.bottom](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-bottom-member)
 
-  - [Excel.CellBorderCollection.diagonalDown](/javascript/api/excel/excel.cellbordercollection#diagonaldown-member)
+  - [Excel.CellBorderCollection.diagonalDown](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonaldown-member)
 
-  - [Excel.CellBorderCollection.diagonalUp](/javascript/api/excel/excel.cellbordercollection#diagonalup-member)
+  - [Excel.CellBorderCollection.diagonalUp](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonalup-member)
 
-  - [Excel.CellBorderCollection.horizontal](/javascript/api/excel/excel.cellbordercollection#horizontal-member)
+  - [Excel.CellBorderCollection.horizontal](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-horizontal-member)
 
-  - [Excel.CellBorderCollection.left](/javascript/api/excel/excel.cellbordercollection#left-member)
+  - [Excel.CellBorderCollection.left](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-left-member)
 
-  - [Excel.CellBorderCollection.right](/javascript/api/excel/excel.cellbordercollection#right-member)
+  - [Excel.CellBorderCollection.right](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-right-member)
 
-  - [Excel.CellBorderCollection.top](/javascript/api/excel/excel.cellbordercollection#top-member)
+  - [Excel.CellBorderCollection.top](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-top-member)
 
-  - [Excel.CellBorderCollection.vertical](/javascript/api/excel/excel.cellbordercollection#vertical-member)
+  - [Excel.CellBorderCollection.vertical](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-vertical-member)
 
   #### Examples
 

@@ -18,7 +18,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#workbook-member)
+  - [Excel.RequestContext.workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)
 
   #### Examples
 

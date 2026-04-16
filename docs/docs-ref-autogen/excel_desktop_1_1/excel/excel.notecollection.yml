@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#notes-member)
+  - [Excel.Workbook.notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)
 
-  - [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#notes-member)
+  - [Excel.Worksheet.notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)
 
   #### Examples
 

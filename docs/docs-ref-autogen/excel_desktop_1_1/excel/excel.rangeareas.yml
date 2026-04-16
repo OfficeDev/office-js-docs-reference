@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.RangeAreasCollection.items](/javascript/api/excel/excel.rangeareascollection#items-member)
+  - [Excel.RangeAreasCollection.items](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-items-member)
 
 isPreview: false
 isDeprecated: false

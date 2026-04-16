@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartDataLabels.position](/javascript/api/excel/excel.chartdatalabels#position-member)
+  - [Excel.ChartDataLabels.position](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-position-member)
 
 isPreview: false
 isDeprecated: false

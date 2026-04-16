@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Page.breaks](/javascript/api/word/word.page#breaks-member)
+  - [Word.Page.breaks](/javascript/api/word/word.page#word-word-page-breaks-member)
 
 isPreview: false
 isDeprecated: false

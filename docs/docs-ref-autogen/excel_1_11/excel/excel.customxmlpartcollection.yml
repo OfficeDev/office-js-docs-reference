@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.customXmlParts](/javascript/api/excel/excel.workbook#customxmlparts-member)
+  - [Excel.Workbook.customXmlParts](/javascript/api/excel/excel.workbook#excel-excel-workbook-customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

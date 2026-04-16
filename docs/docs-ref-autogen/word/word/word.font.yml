@@ -13,25 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.font](/javascript/api/word/word.body#font-member)
+  - [Word.Body.font](/javascript/api/word/word.body#word-word-body-font-member)
 
-  - [Word.ConditionalStyle.font](/javascript/api/word/word.conditionalstyle#font-member)
+  - [Word.ConditionalStyle.font](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-font-member)
 
-  - [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#font-member)
+  - [Word.ContentControl.font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
 
-  - [Word.ListLevel.font](/javascript/api/word/word.listlevel#font-member)
+  - [Word.ListLevel.font](/javascript/api/word/word.listlevel#word-word-listlevel-font-member)
 
-  - [Word.Paragraph.font](/javascript/api/word/word.paragraph#font-member)
+  - [Word.Paragraph.font](/javascript/api/word/word.paragraph#word-word-paragraph-font-member)
 
-  - [Word.Range.font](/javascript/api/word/word.range#font-member)
+  - [Word.Range.font](/javascript/api/word/word.range#word-word-range-font-member)
 
-  - [Word.Selection.font](/javascript/api/word/word.selection#font-member)
+  - [Word.Selection.font](/javascript/api/word/word.selection#word-word-selection-font-member)
 
-  - [Word.Style.font](/javascript/api/word/word.style#font-member)
+  - [Word.Style.font](/javascript/api/word/word.style#word-word-style-font-member)
 
-  - [Word.Table.font](/javascript/api/word/word.table#font-member)
+  - [Word.Table.font](/javascript/api/word/word.table#word-word-table-font-member)
 
-  - [Word.TableRow.font](/javascript/api/word/word.tablerow#font-member)
+  - [Word.TableRow.font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
 
   #### Examples
 

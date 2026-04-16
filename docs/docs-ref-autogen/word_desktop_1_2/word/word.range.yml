@@ -13,13 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - [Word.CritiqueAnnotation.range](/javascript/api/word/word.critiqueannotation#range-member)
+  - [Word.CritiqueAnnotation.range](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-range-member)
 
-  - [Word.Field.result](/javascript/api/word/word.field#result-member)
+  - [Word.Field.result](/javascript/api/word/word.field#word-word-field-result-member)
 
-  - [Word.NoteItem.reference](/javascript/api/word/word.noteitem#reference-member)
+  - [Word.NoteItem.reference](/javascript/api/word/word.noteitem#word-word-noteitem-reference-member)
 
-  - [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#items-member)
+  - [Word.RangeCollection.items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
 
   #### Examples
 

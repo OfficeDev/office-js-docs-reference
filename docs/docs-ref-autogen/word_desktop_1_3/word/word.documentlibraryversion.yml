@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DocumentLibraryVersionCollection.items](/javascript/api/word/word.documentlibraryversioncollection#items-member)
+  - [Word.DocumentLibraryVersionCollection.items](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

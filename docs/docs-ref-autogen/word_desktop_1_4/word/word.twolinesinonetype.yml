@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Range.twoLinesInOne](/javascript/api/word/word.range#twolinesinone-member)
+  - [Word.Range.twoLinesInOne](/javascript/api/word/word.range#word-word-range-twolinesinone-member)
 
 isPreview: false
 isDeprecated: false

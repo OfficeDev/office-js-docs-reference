@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.ListTemplateApplyOptions.defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#defaultlistbehavior-member)
+  - [Word.ListTemplateApplyOptions.defaultListBehavior](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-defaultlistbehavior-member)
 
 isPreview: false
 isDeprecated: false

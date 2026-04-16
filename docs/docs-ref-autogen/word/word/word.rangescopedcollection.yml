@@ -14,17 +14,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.characters](/javascript/api/word/word.document#characters-member)
+  - [Word.Document.characters](/javascript/api/word/word.document#word-word-document-characters-member)
 
-  - [Word.Document.sentences](/javascript/api/word/word.document#sentences-member)
+  - [Word.Document.sentences](/javascript/api/word/word.document#word-word-document-sentences-member)
 
-  - [Word.Document.words](/javascript/api/word/word.document#words-member)
+  - [Word.Document.words](/javascript/api/word/word.document#word-word-document-words-member)
 
-  - [Word.Selection.characters](/javascript/api/word/word.selection#characters-member)
+  - [Word.Selection.characters](/javascript/api/word/word.selection#word-word-selection-characters-member)
 
-  - [Word.Selection.sentences](/javascript/api/word/word.selection#sentences-member)
+  - [Word.Selection.sentences](/javascript/api/word/word.selection#word-word-selection-sentences-member)
 
-  - [Word.Selection.words](/javascript/api/word/word.selection#words-member)
+  - [Word.Selection.words](/javascript/api/word/word.selection#word-word-selection-words-member)
 
 isPreview: false
 isDeprecated: false

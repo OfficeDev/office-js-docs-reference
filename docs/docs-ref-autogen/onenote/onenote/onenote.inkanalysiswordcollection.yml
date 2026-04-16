@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.InkAnalysisLine.words](/javascript/api/onenote/onenote.inkanalysisline#words-member)
+  - [OneNote.InkAnalysisLine.words](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-words-member)
 
 isPreview: false
 isDeprecated: false

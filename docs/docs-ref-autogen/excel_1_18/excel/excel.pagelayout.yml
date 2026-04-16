@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Worksheet.pageLayout](/javascript/api/excel/excel.worksheet#pagelayout-member)
+  - [Excel.Worksheet.pageLayout](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pagelayout-member)
 
 isPreview: false
 isDeprecated: false

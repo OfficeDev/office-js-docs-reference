@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.DocumentMergeOptions.mergeTarget](/javascript/api/word/word.documentmergeoptions#mergetarget-member)
+  - [Word.DocumentMergeOptions.mergeTarget](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-mergetarget-member)
 
 isPreview: false
 isDeprecated: false

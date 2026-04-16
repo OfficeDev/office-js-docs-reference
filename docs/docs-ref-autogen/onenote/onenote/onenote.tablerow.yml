@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.TableCell.parentRow](/javascript/api/onenote/onenote.tablecell#parentrow-member)
+  - [OneNote.TableCell.parentRow](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-parentrow-member)
 
-  - [OneNote.TableRowCollection.items](/javascript/api/onenote/onenote.tablerowcollection#items-member)
+  - [OneNote.TableRowCollection.items](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-items-member)
 
 isPreview: false
 isDeprecated: false

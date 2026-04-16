@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.justificationMode](/javascript/api/word/word.document#justificationmode-member)
+  - [Word.Document.justificationMode](/javascript/api/word/word.document#word-word-document-justificationmode-member)
 
-  - [Word.Template.justificationMode](/javascript/api/word/word.template#justificationmode-member)
+  - [Word.Template.justificationMode](/javascript/api/word/word.template#word-word-template-justificationmode-member)
 
 isPreview: false
 isDeprecated: false

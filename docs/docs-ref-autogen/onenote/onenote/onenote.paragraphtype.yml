@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.Paragraph.type](/javascript/api/onenote/onenote.paragraph#type-member)
+  - [OneNote.Paragraph.type](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-type-member)
 
 isPreview: false
 isDeprecated: false

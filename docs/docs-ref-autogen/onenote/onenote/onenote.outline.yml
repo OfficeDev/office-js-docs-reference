@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.PageContent.outline](/javascript/api/onenote/onenote.pagecontent#outline-member)
+  - [OneNote.PageContent.outline](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-outline-member)
 
-  - [OneNote.Paragraph.outline](/javascript/api/onenote/onenote.paragraph#outline-member)
+  - [OneNote.Paragraph.outline](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-outline-member)
 
 isPreview: false
 isDeprecated: false

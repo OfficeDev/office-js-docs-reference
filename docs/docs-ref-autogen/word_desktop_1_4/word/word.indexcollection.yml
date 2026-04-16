@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Document.indexes](/javascript/api/word/word.document#indexes-member)
+  - [Word.Document.indexes](/javascript/api/word/word.document#word-word-document-indexes-member)
 
 isPreview: false
 isDeprecated: false

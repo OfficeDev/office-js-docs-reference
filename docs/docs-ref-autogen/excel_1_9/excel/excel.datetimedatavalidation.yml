@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataValidationRule.date](/javascript/api/excel/excel.datavalidationrule#date-member)
+  - [Excel.DataValidationRule.date](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-date-member)
 
-  - [Excel.DataValidationRule.time](/javascript/api/excel/excel.datavalidationrule#time-member)
+  - [Excel.DataValidationRule.time](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-time-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Chart.dataLabels](/javascript/api/excel/excel.chart#datalabels-member)
+  - [Excel.Chart.dataLabels](/javascript/api/excel/excel.chart#excel-excel-chart-datalabels-member)
 
 isPreview: false
 isDeprecated: false

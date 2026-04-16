@@ -23,13 +23,13 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#getattachmentcontentasync-member)
+  - [Office.AppointmentCompose.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentcontentasync-member(1))
 
-  - [Office.AppointmentRead.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#getattachmentcontentasync-member)
+  - [Office.AppointmentRead.getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getattachmentcontentasync-member(1))
 
-  - [Office.MessageCompose.getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#getattachmentcontentasync-member)
+  - [Office.MessageCompose.getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentcontentasync-member(1))
 
-  - [Office.MessageRead.getAttachmentContentAsync](/javascript/api/outlook/office.messageread#getattachmentcontentasync-member)
+  - [Office.MessageRead.getAttachmentContentAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getattachmentcontentasync-member(1))
 
   #### Examples
 

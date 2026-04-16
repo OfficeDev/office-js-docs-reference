@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.FilterCriteria.operator](/javascript/api/excel/excel.filtercriteria#operator-member)
+  - [Excel.FilterCriteria.operator](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-operator-member)
 
 isPreview: false
 isDeprecated: false

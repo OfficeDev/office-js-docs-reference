@@ -18,17 +18,17 @@ remarks: >-
   #### Used by
 
 
-  - [Word.Body.parentContentControl](/javascript/api/word/word.body#parentcontentcontrol-member)
+  - [Word.Body.parentContentControl](/javascript/api/word/word.body#word-word-body-parentcontentcontrol-member)
 
-  - [Word.ContentControl.parentContentControl](/javascript/api/word/word.contentcontrol#parentcontentcontrol-member)
+  - [Word.ContentControl.parentContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrol-member)
 
-  - [Word.ContentControlCollection.items](/javascript/api/word/word.contentcontrolcollection#items-member)
+  - [Word.ContentControlCollection.items](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-items-member)
 
-  - [Word.InlinePicture.parentContentControl](/javascript/api/word/word.inlinepicture#parentcontentcontrol-member)
+  - [Word.InlinePicture.parentContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrol-member)
 
-  - [Word.Paragraph.parentContentControl](/javascript/api/word/word.paragraph#parentcontentcontrol-member)
+  - [Word.Paragraph.parentContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrol-member)
 
-  - [Word.Range.parentContentControl](/javascript/api/word/word.range#parentcontentcontrol-member)
+  - [Word.Range.parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)
 
   #### Examples
 

@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ChartAxis.majorTickMark](/javascript/api/excel/excel.chartaxis#majortickmark-member)
+  - [Excel.ChartAxis.majorTickMark](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-majortickmark-member)
 
-  - [Excel.ChartAxis.minorTickMark](/javascript/api/excel/excel.chartaxis#minortickmark-member)
+  - [Excel.ChartAxis.minorTickMark](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-minortickmark-member)
 
 isPreview: false
 isDeprecated: false

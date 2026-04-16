@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.DataValidation.prompt](/javascript/api/excel/excel.datavalidation#prompt-member)
+  - [Excel.DataValidation.prompt](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-prompt-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.ConditionalRangeFormat.font](/javascript/api/excel/excel.conditionalrangeformat#font-member)
+  - [Excel.ConditionalRangeFormat.font](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-font-member)
 
 isPreview: false
 isDeprecated: false

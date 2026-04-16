@@ -24,9 +24,9 @@ remarks: >-
   #### Used by
 
 
-  - [Office.AppointmentCompose.subject](/javascript/api/outlook/office.appointmentcompose#subject-member)
+  - [Office.AppointmentCompose.subject](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-subject-member)
 
-  - [Office.MessageCompose.subject](/javascript/api/outlook/office.messagecompose#subject-member)
+  - [Office.MessageCompose.subject](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-subject-member)
 
 isPreview: false
 isDeprecated: false

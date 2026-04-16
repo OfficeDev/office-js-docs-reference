@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.tasks](/javascript/api/excel/excel.workbook#tasks-member)
+  - [Excel.Workbook.tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)
 
-  - [Excel.Worksheet.tasks](/javascript/api/excel/excel.worksheet#tasks-member)
+  - [Excel.Worksheet.tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)
 
 isPreview: true
 isDeprecated: false

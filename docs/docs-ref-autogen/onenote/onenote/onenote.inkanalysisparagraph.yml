@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - [OneNote.InkAnalysisLine.paragraph](/javascript/api/onenote/onenote.inkanalysisline#paragraph-member)
+  - [OneNote.InkAnalysisLine.paragraph](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-paragraph-member)
 
-  - [OneNote.InkAnalysisParagraphCollection.items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#items-member)
+  - [OneNote.InkAnalysisParagraphCollection.items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-items-member)
 
 isPreview: false
 isDeprecated: false

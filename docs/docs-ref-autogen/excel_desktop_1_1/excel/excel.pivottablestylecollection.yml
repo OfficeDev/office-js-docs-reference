@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - [Excel.Workbook.pivotTableStyles](/javascript/api/excel/excel.workbook#pivottablestyles-member)
+  - [Excel.Workbook.pivotTableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottablestyles-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - [Office.Binding.document](/javascript/api/office/office.binding#document-member)
+  - [Office.Binding.document](/javascript/api/office/office.binding#office-office-binding-document-member)
 
-  - [Office.Bindings.document](/javascript/api/office/office.bindings#document-member)
+  - [Office.Bindings.document](/javascript/api/office/office.bindings#office-office-bindings-document-member)
 
-  - [Office.Context.document](/javascript/api/office/office.context#document-member)
+  - [Office.Context.document](/javascript/api/office/office.context#office-office-context-document-member)
 
-  - [Office.DocumentSelectionChangedEventArgs.document](/javascript/api/office/office.documentselectionchangedeventargs#document-member)
+  - [Office.DocumentSelectionChangedEventArgs.document](/javascript/api/office/office.documentselectionchangedeventargs#office-office-documentselectionchangedeventargs-document-member)
 
   #### Examples
 
