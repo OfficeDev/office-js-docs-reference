@@ -1,7 +1,7 @@
 Excel.ArrayCellValue:interface(1):
   - |-
     // This is an example of the complete JSON for an array value.
-    // The array contains a mix of different data types.
+    // The array contains a variety of data types, including an entity.
     const myArray: Excel.ArrayCellValue = {
         type: Excel.CellValueType.array,
         elements: [
@@ -16,6 +16,22 @@ Excel.ArrayCellValue:interface(1):
             {
                 type: Excel.CellValueType.boolean,
                 basicValue: true
+            },
+            {
+                type: Excel.CellValueType.entity,
+                text: "Product Info",
+                properties: {
+                    name: {
+                        type: Excel.CellValueType.string,
+                        basicValue: "Widget A"
+                    },
+                    price: {
+                        type: Excel.CellValueType.double,
+                        basicValue: 19.99
+                    }
+                },
+                basicType: Excel.RangeValueType.error,
+                basicValue: "#VALUE!"
             }
         ],
         basicType: Excel.RangeValueType.error, // A read-only property. Used as a fallback in incompatible scenarios.
