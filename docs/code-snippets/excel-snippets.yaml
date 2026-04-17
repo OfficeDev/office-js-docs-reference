@@ -1,4 +1,4 @@
-Excel.ArrayCellValue:interface(1):
+Excel.ArrayCellValue:interface:
   - |-
     // This `ArrayCellValue` contains a variety of data types, including an entity.
     const myArray: Excel.ArrayCellValue = {
