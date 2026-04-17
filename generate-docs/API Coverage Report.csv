@@ -2455,7 +2455,7 @@ excel,Excel.DataValidation,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.DataValidation,"set(properties, options)",Method,Good,false
 excel,Excel.DataValidation,"set(properties)",Method,Fine,false
 excel,Excel.DataValidation,"toJSON()",Method,Excellent,false
-excel,Excel.DataValidationAlertStyle,N/A,Enum,Great,false
+excel,Excel.DataValidationAlertStyle,N/A,Enum,Great,true
 excel,Excel.DataValidationAlertStyle,"information",EnumField,Great,false
 excel,Excel.DataValidationAlertStyle,"stop",EnumField,Great,false
 excel,Excel.DataValidationAlertStyle,"warning",EnumField,Great,false
