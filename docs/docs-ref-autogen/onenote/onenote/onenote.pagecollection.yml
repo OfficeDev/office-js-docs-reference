@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.PageCollection: [getByTitle](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getbytitle-member(1)), [getByTitle](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getbytitle-member(1)), [load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1)), [track](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-untrack-member(1))
+  - OneNote.PageCollection: [getByTitle](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getbytitle-member(1)),
+  [load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1)), [track](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-untrack-member(1))
 
   - OneNote.Section: [pages](/javascript/api/onenote/onenote.section#onenote-onenote-section-pages-member)
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.FillFormat: [gradientStyle](/javascript/api/word/word.fillformat#word-word-fillformat-gradientstyle-member), [gradientStyle](/javascript/api/word/word.fillformat#word-word-fillformat-gradientstyle-member), [setOneColorGradient](/javascript/api/word/word.fillformat#word-word-fillformat-setonecolorgradient-member(1)), [setPresetGradient](/javascript/api/word/word.fillformat#word-word-fillformat-setpresetgradient-member(1)), [setTwoColorGradient](/javascript/api/word/word.fillformat#word-word-fillformat-settwocolorgradient-member(1))
+  - Word.FillFormat: [gradientStyle](/javascript/api/word/word.fillformat#word-word-fillformat-gradientstyle-member),
+  [setOneColorGradient](/javascript/api/word/word.fillformat#word-word-fillformat-setonecolorgradient-member(1)), [setPresetGradient](/javascript/api/word/word.fillformat#word-word-fillformat-setpresetgradient-member(1)), [setTwoColorGradient](/javascript/api/word/word.fillformat#word-word-fillformat-settwocolorgradient-member(1))
 
 isPreview: false
 isDeprecated: false

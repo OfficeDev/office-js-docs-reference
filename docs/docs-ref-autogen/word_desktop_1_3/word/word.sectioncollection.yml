@@ -15,11 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1)), [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1)), [sections](/javascript/api/word/word.document#word-word-document-sections-member)
+  - Word.Document: [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1)),
+  [sections](/javascript/api/word/word.document#word-word-document-sections-member)
 
   - Word.Range: [sections](/javascript/api/word/word.range#word-word-range-sections-member)
 
-  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1)), [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1)), [track](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-track-member(1)), [untrack](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-untrack-member(1))
+  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1)),
+  [track](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-track-member(1)), [untrack](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-untrack-member(1))
 
   #### Examples
 

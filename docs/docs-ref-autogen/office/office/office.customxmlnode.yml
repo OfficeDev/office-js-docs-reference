@@ -15,11 +15,13 @@ remarks: >-
 
   - Office.CustomXmlPart: [getNodesAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-getnodesasync-member(1))
 
-  - Office.NodeDeletedEventArgs: [oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnextsibling-member), [oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnextsibling-member), [oldNode](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnode-member)
+  - Office.NodeDeletedEventArgs: [oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnextsibling-member),
+  [oldNode](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnode-member)
 
   - Office.NodeInsertedEventArgs: [newNode](/javascript/api/office/office.nodeinsertedeventargs#office-office-nodeinsertedeventargs-newnode-member)
 
-  - Office.NodeReplacedEventArgs: [newNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-newnode-member), [newNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-newnode-member), [oldNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-oldnode-member)
+  - Office.NodeReplacedEventArgs: [newNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-newnode-member),
+  [oldNode](/javascript/api/office/office.nodereplacedeventargs#office-office-nodereplacedeventargs-oldnode-member)
 
 isPreview: false
 isDeprecated: false

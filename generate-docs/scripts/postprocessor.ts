@@ -684,7 +684,7 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
         if (lines[i].match(/,\s*$/)) {
             let j = i + 1;
             // Keep joining continuation lines while they exist
-            while (j < lines.length && lines[j].match(/^\s+\[.+?\]\(.+?\)/)) {
+            while (j < lines.length && !linesToRemove.has(j) && lines[j].match(/^\s+\[.+?\]\(.+?\)/)) {
                 lines[i] = `${lines[i]} ${lines[j].trim()}`;
                 linesToRemove.add(j);
                 j++;

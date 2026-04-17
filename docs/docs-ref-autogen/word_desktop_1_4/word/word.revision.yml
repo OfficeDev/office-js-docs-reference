@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Revision: [load](/javascript/api/word/word.revision#word-word-revision-load-member(1)), [load](/javascript/api/word/word.revision#word-word-revision-load-member(1)), [set](/javascript/api/word/word.revision#word-word-revision-set-member(2)), [track](/javascript/api/word/word.revision#word-word-revision-track-member(1)), [untrack](/javascript/api/word/word.revision#word-word-revision-untrack-member(1))
+  - Word.Revision: [load](/javascript/api/word/word.revision#word-word-revision-load-member(1)),
+  [set](/javascript/api/word/word.revision#word-word-revision-set-member(2)), [track](/javascript/api/word/word.revision#word-word-revision-track-member(1)), [untrack](/javascript/api/word/word.revision#word-word-revision-untrack-member(1))
 
   - Word.RevisionCollection: [items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)
 

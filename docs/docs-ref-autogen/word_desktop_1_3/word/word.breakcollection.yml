@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.BreakCollection: [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1)), [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1)), [track](/javascript/api/word/word.breakcollection#word-word-breakcollection-track-member(1)), [untrack](/javascript/api/word/word.breakcollection#word-word-breakcollection-untrack-member(1))
+  - Word.BreakCollection: [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1)),
+  [track](/javascript/api/word/word.breakcollection#word-word-breakcollection-track-member(1)), [untrack](/javascript/api/word/word.breakcollection#word-word-breakcollection-untrack-member(1))
 
   - Word.Page: [breaks](/javascript/api/word/word.page#word-word-page-breaks-member)
 

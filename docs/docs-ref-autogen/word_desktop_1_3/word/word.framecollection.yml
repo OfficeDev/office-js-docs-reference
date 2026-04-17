@@ -14,7 +14,8 @@ remarks: >-
 
   - Word.Document: [frames](/javascript/api/word/word.document#word-word-document-frames-member)
 
-  - Word.FrameCollection: [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1)), [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1)), [track](/javascript/api/word/word.framecollection#word-word-framecollection-track-member(1)), [untrack](/javascript/api/word/word.framecollection#word-word-framecollection-untrack-member(1))
+  - Word.FrameCollection: [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1)),
+  [track](/javascript/api/word/word.framecollection#word-word-framecollection-track-member(1)), [untrack](/javascript/api/word/word.framecollection#word-word-framecollection-untrack-member(1))
 
   - Word.Range: [frames](/javascript/api/word/word.range#word-word-range-frames-member)
 

@@ -22,23 +22,27 @@ remarks: >-
   #### Used by
 
 
-  - Office.Binding: [addHandlerAsync](/javascript/api/office/office.binding#office-office-binding-addhandlerasync-member(1)), [addHandlerAsync](/javascript/api/office/office.binding#office-office-binding-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.binding#office-office-binding-removehandlerasync-member(1))
+  - Office.Binding: [addHandlerAsync](/javascript/api/office/office.binding#office-office-binding-addhandlerasync-member(1)),
+  [removeHandlerAsync](/javascript/api/office/office.binding#office-office-binding-removehandlerasync-member(1))
 
   - Office.BindingDataChangedEventArgs: [type](/javascript/api/office/office.bindingdatachangedeventargs#office-office-bindingdatachangedeventargs-type-member)
 
   - Office.BindingSelectionChangedEventArgs: [type](/javascript/api/office/office.bindingselectionchangedeventargs#office-office-bindingselectionchangedeventargs-type-member)
 
-  - Office.CustomXmlPart: [addHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-addhandlerasync-member(1)), [addHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-removehandlerasync-member(1))
+  - Office.CustomXmlPart: [addHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-addhandlerasync-member(1)),
+  [removeHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-removehandlerasync-member(1))
 
   - Office.Dialog: [addEventHandler](/javascript/api/office/office.dialog#office-office-dialog-addeventhandler-member(1))
 
   - Office.DialogParentMessageReceivedEventArgs: [type](/javascript/api/office/office.dialogparentmessagereceivedeventargs#office-office-dialogparentmessagereceivedeventargs-type-member)
 
-  - Office.Document: [addHandlerAsync](/javascript/api/office/office.document#office-office-document-addhandlerasync-member(1)), [addHandlerAsync](/javascript/api/office/office.document#office-office-document-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.document#office-office-document-removehandlerasync-member(1))
+  - Office.Document: [addHandlerAsync](/javascript/api/office/office.document#office-office-document-addhandlerasync-member(1)),
+  [removeHandlerAsync](/javascript/api/office/office.document#office-office-document-removehandlerasync-member(1))
 
   - Office.DocumentSelectionChangedEventArgs: [type](/javascript/api/office/office.documentselectionchangedeventargs#office-office-documentselectionchangedeventargs-type-member)
 
-  - Office.Settings: [addHandlerAsync](/javascript/api/office/office.settings#office-office-settings-addhandlerasync-member(1)), [addHandlerAsync](/javascript/api/office/office.settings#office-office-settings-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
+  - Office.Settings: [addHandlerAsync](/javascript/api/office/office.settings#office-office-settings-addhandlerasync-member(1)),
+  [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
 
   - Office.SettingsChangedEventArgs: [type](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-type-member)
 

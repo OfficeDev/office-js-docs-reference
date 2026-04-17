@@ -23,7 +23,8 @@ remarks: >-
 
   - Word.Range: [getTrackedChanges](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))
 
-  - Word.TrackedChangeCollection: [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1)), [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1)), [track](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-track-member(1)), [untrack](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-untrack-member(1))
+  - Word.TrackedChangeCollection: [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1)),
+  [track](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-track-member(1)), [untrack](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-untrack-member(1))
 
   #### Examples
 

@@ -14,9 +14,11 @@ remarks: >-
 
   - Excel.DataPivotHierarchy: [field](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-field-member)
 
-  - Excel.PivotField: [load](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-load-member(1)), [load](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-load-member(1)), [set](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-set-member(2))
+  - Excel.PivotField: [load](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-load-member(1)),
+  [set](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-set-member(2))
 
-  - Excel.PivotFieldCollection: [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
+  - Excel.PivotFieldCollection: [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)),
+  [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
 
   - Excel.ShowAsRule: [baseField](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-basefield-member)
 

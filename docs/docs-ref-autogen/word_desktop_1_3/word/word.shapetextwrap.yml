@@ -17,7 +17,8 @@ remarks: >-
 
   - Word.Shape: [textWrap](/javascript/api/word/word.shape#word-word-shape-textwrap-member)
 
-  - Word.ShapeTextWrap: [load](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-load-member(1)), [load](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-load-member(1)), [set](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-set-member(2)), [track](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-track-member(1)), [untrack](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-untrack-member(1))
+  - Word.ShapeTextWrap: [load](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-load-member(1)),
+  [set](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-set-member(2)), [track](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-track-member(1)), [untrack](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-untrack-member(1))
 
   #### Examples
 

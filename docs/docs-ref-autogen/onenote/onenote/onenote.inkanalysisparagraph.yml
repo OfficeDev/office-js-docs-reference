@@ -16,9 +16,11 @@ remarks: >-
 
   - OneNote.InkAnalysisLine: [paragraph](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-paragraph-member)
 
-  - OneNote.InkAnalysisParagraph: [load](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-load-member(1)), [load](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-load-member(1)), [set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(2)), [track](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-untrack-member(1))
+  - OneNote.InkAnalysisParagraph: [load](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-load-member(1)),
+  [set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(2)), [track](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-untrack-member(1))
 
-  - OneNote.InkAnalysisParagraphCollection: [getItem](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitem-member(1)), [getItem](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-items-member)
+  - OneNote.InkAnalysisParagraphCollection: [getItem](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitem-member(1)),
+  [getItemAt](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-items-member)
 
 isPreview: false
 isDeprecated: false

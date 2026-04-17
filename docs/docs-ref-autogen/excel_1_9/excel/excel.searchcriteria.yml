@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [find](/javascript/api/excel/excel.range#excel-excel-range-find-member(1)), [find](/javascript/api/excel/excel.range#excel-excel-range-find-member(1)), [findOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-findornullobject-member(1))
+  - Excel.Range: [find](/javascript/api/excel/excel.range#excel-excel-range-find-member(1)),
+  [findOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-findornullobject-member(1))
 
 isPreview: false
 isDeprecated: false

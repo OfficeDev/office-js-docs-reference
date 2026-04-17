@@ -14,7 +14,8 @@ remarks: >-
 
   - Excel.ChartAxis: [title](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-title-member)
 
-  - Excel.ChartAxisTitle: [load](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-load-member(1)), [load](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-load-member(1)), [set](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-set-member(2))
+  - Excel.ChartAxisTitle: [load](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-load-member(1)),
+  [set](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-set-member(2))
 
 isPreview: false
 isDeprecated: false

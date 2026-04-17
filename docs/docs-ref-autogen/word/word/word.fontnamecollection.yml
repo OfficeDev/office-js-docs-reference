@@ -14,7 +14,8 @@ remarks: >-
 
   - Word.Application: [fontNames](/javascript/api/word/word.application#word-word-application-fontnames-member)
 
-  - Word.FontNameCollection: [load](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-load-member(1)), [load](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-load-member(1)), [track](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-track-member(1)), [untrack](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-untrack-member(1))
+  - Word.FontNameCollection: [load](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-load-member(1)),
+  [track](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-track-member(1)), [untrack](/javascript/api/word/word.fontnamecollection#word-word-fontnamecollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

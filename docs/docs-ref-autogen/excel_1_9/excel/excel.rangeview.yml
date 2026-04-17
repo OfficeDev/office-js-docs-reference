@@ -14,9 +14,11 @@ remarks: >-
 
   - Excel.Range: [getVisibleView](/javascript/api/excel/excel.range#excel-excel-range-getvisibleview-member(1))
 
-  - Excel.RangeView: [load](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-load-member(1)), [load](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-load-member(1)), [set](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-set-member(2))
+  - Excel.RangeView: [load](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-load-member(1)),
+  [set](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-set-member(2))
 
-  - Excel.RangeViewCollection: [getItemAt](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getitemat-member(1)), [getItemAt](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-items-member)
+  - Excel.RangeViewCollection: [getItemAt](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getitemat-member(1)),
+  [items](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-items-member)
 
 isPreview: false
 isDeprecated: false

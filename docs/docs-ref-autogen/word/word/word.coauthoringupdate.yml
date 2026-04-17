@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CoauthoringUpdate: [load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1)), [load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1)), [set](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-set-member(2)), [track](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-track-member(1)), [untrack](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-untrack-member(1))
+  - Word.CoauthoringUpdate: [load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1)),
+  [set](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-set-member(2)), [track](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-track-member(1)), [untrack](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-untrack-member(1))
 
   - Word.CoauthoringUpdateCollection: [items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)
 

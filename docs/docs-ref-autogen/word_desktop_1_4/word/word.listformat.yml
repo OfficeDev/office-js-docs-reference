@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListFormat: [load](/javascript/api/word/word.listformat#word-word-listformat-load-member(1)), [load](/javascript/api/word/word.listformat#word-word-listformat-load-member(1)), [set](/javascript/api/word/word.listformat#word-word-listformat-set-member(2)), [track](/javascript/api/word/word.listformat#word-word-listformat-track-member(1)), [untrack](/javascript/api/word/word.listformat#word-word-listformat-untrack-member(1))
+  - Word.ListFormat: [load](/javascript/api/word/word.listformat#word-word-listformat-load-member(1)),
+  [set](/javascript/api/word/word.listformat#word-word-listformat-set-member(2)), [track](/javascript/api/word/word.listformat#word-word-listformat-track-member(1)), [untrack](/javascript/api/word/word.listformat#word-word-listformat-untrack-member(1))
 
   - Word.Range: [listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)
 

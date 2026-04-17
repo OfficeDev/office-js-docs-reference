@@ -64,9 +64,11 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentRead: [getEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentities-member(1)), [getEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentities-member(1)), [getSelectedEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getselectedentities-member(1))
+  - Office.AppointmentRead: [getEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentities-member(1)),
+  [getSelectedEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getselectedentities-member(1))
 
-  - Office.MessageRead: [getEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentities-member(1)), [getEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentities-member(1)), [getSelectedEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getselectedentities-member(1))
+  - Office.MessageRead: [getEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentities-member(1)),
+  [getSelectedEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getselectedentities-member(1))
 
 isPreview: false
 isDeprecated: true

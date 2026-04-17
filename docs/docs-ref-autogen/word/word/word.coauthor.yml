@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Coauthor: [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1)), [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1)), [track](/javascript/api/word/word.coauthor#word-word-coauthor-track-member(1)), [untrack](/javascript/api/word/word.coauthor#word-word-coauthor-untrack-member(1))
+  - Word.Coauthor: [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1)),
+  [track](/javascript/api/word/word.coauthor#word-word-coauthor-track-member(1)), [untrack](/javascript/api/word/word.coauthor#word-word-coauthor-untrack-member(1))
 
   - Word.CoauthorCollection: [items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)
 

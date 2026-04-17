@@ -14,7 +14,8 @@ remarks: >-
 
   - Excel.ChartTrendline: [format](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-format-member)
 
-  - Excel.ChartTrendlineFormat: [load](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-load-member(1)), [load](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-load-member(1)), [set](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-set-member(2))
+  - Excel.ChartTrendlineFormat: [load](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-load-member(1)),
+  [set](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

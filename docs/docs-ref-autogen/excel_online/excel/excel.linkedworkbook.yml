@@ -18,7 +18,8 @@ remarks: >-
 
   - Excel.LinkedWorkbook: [load](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-load-member(1))
 
-  - Excel.LinkedWorkbookCollection: [getItem](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-items-member)
+  - Excel.LinkedWorkbookCollection: [getItem](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitem-member(1)),
+  [getItemOrNullObject](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-items-member)
 
 isPreview: false
 isDeprecated: false

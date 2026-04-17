@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.TableCellCollection: [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1)), [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1)), [track](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-untrack-member(1))
+  - OneNote.TableCellCollection: [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1)),
+  [track](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-untrack-member(1))
 
   - OneNote.TableRow: [cells](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-cells-member)
 

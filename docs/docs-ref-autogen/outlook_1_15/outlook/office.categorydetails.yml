@@ -25,7 +25,8 @@ remarks: >-
 
   - Office.Categories: [getAsync](/javascript/api/outlook/office.categories#outlook-office-categories-getasync-member(1))
 
-  - Office.MasterCategories: [addAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1)), [addAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1)), [getAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-getasync-member(1))
+  - Office.MasterCategories: [addAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1)),
+  [getAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-getasync-member(1))
 
   #### Examples
 

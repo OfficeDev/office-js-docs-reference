@@ -20,15 +20,19 @@ remarks: >-
 
   - Word.IndexAddOptions: [indexLanguage](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-indexlanguage-member)
 
-  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member), [languageId](/javascript/api/word/word.range#word-word-range-languageid-member), [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
+  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
 
-  - Word.Selection: [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member), [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member), [languageIdFarEast](/javascript/api/word/word.selection#word-word-selection-languageidfareast-member), [languageIdOther](/javascript/api/word/word.selection#word-word-selection-languageidother-member)
+  - Word.Selection: [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.selection#word-word-selection-languageidfareast-member), [languageIdOther](/javascript/api/word/word.selection#word-word-selection-languageidother-member)
 
-  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
+  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
 
   - Word.TableSortOptions: [languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)
 
-  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
+  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
 
 isPreview: false
 isDeprecated: false

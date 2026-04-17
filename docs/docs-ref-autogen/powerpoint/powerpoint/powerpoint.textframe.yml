@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [getTextFrameOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1)), [getTextFrameOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1)), [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
+  - PowerPoint.Shape: [getTextFrameOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1)),
+  [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
 
   - PowerPoint.TextFrame: [load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
 

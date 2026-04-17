@@ -15,7 +15,8 @@ remarks: >-
 
   - Word.Table: [getBorder](/javascript/api/word/word.table#word-word-table-getborder-member(1))
 
-  - Word.TableBorder: [load](/javascript/api/word/word.tableborder#word-word-tableborder-load-member(1)), [load](/javascript/api/word/word.tableborder#word-word-tableborder-load-member(1)), [set](/javascript/api/word/word.tableborder#word-word-tableborder-set-member(2)), [track](/javascript/api/word/word.tableborder#word-word-tableborder-track-member(1)), [untrack](/javascript/api/word/word.tableborder#word-word-tableborder-untrack-member(1))
+  - Word.TableBorder: [load](/javascript/api/word/word.tableborder#word-word-tableborder-load-member(1)),
+  [set](/javascript/api/word/word.tableborder#word-word-tableborder-set-member(2)), [track](/javascript/api/word/word.tableborder#word-word-tableborder-track-member(1)), [untrack](/javascript/api/word/word.tableborder#word-word-tableborder-untrack-member(1))
 
   - Word.TableCell: [getBorder](/javascript/api/word/word.tablecell#word-word-tablecell-getborder-member(1))
 

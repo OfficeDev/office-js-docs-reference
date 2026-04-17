@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChangedEventDetail: [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member), [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member), [valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypebefore-member)
+  - Excel.ChangedEventDetail: [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member),
+  [valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypebefore-member)
 
   - Excel.ExternalCodeServiceObjectCellValue: [basicType](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-basictype-member)
 

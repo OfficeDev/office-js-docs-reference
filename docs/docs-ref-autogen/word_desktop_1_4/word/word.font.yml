@@ -19,7 +19,8 @@ remarks: >-
 
   - Word.ContentControl: [font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
 
-  - Word.Font: [load](/javascript/api/word/word.font#word-word-font-load-member(1)), [load](/javascript/api/word/word.font#word-word-font-load-member(1)), [set](/javascript/api/word/word.font#word-word-font-set-member(2)), [track](/javascript/api/word/word.font#word-word-font-track-member(1)), [untrack](/javascript/api/word/word.font#word-word-font-untrack-member(1))
+  - Word.Font: [load](/javascript/api/word/word.font#word-word-font-load-member(1)),
+  [set](/javascript/api/word/word.font#word-word-font-set-member(2)), [track](/javascript/api/word/word.font#word-word-font-track-member(1)), [untrack](/javascript/api/word/word.font#word-word-font-untrack-member(1))
 
   - Word.List: [getLevelFont](/javascript/api/word/word.list#word-word-list-getlevelfont-member(1))
 

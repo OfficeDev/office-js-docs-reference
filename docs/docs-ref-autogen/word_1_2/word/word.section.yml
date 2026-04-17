@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Section: [load](/javascript/api/word/word.section#word-word-section-load-member(1)), [load](/javascript/api/word/word.section#word-word-section-load-member(1)), [set](/javascript/api/word/word.section#word-word-section-set-member(2)), [track](/javascript/api/word/word.section#word-word-section-track-member(1)), [untrack](/javascript/api/word/word.section#word-word-section-untrack-member(1))
+  - Word.Section: [load](/javascript/api/word/word.section#word-word-section-load-member(1)),
+  [set](/javascript/api/word/word.section#word-word-section-set-member(2)), [track](/javascript/api/word/word.section#word-word-section-track-member(1)), [untrack](/javascript/api/word/word.section#word-word-section-untrack-member(1))
 
   - Word.SectionCollection: [items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
 

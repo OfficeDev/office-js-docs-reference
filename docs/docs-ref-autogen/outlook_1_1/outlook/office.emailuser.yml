@@ -21,7 +21,8 @@ remarks: >-
 
   - Office.MeetingSuggestion: [attendees](/javascript/api/outlook/office.meetingsuggestion#outlook-office-meetingsuggestion-attendees-member)
 
-  - Office.Recipients: [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1)), [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1)), [setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
+  - Office.Recipients: [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1)),
+  [setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
 
   - Office.TaskSuggestion: [assignees](/javascript/api/outlook/office.tasksuggestion#outlook-office-tasksuggestion-assignees-member)
 

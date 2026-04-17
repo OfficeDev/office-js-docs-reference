@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1)), [getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1)), [getDisplayedCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getdisplayedcellproperties-member(1))
+  - Excel.Range: [getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1)),
+  [getDisplayedCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getdisplayedcellproperties-member(1))
 
 isPreview: false
 isDeprecated: false

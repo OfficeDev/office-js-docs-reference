@@ -15,9 +15,11 @@ remarks: >-
 
   - Word.Comment: [reply](/javascript/api/word/word.comment#word-word-comment-reply-member(1))
 
-  - Word.CommentReply: [load](/javascript/api/word/word.commentreply#word-word-commentreply-load-member(1)), [load](/javascript/api/word/word.commentreply#word-word-commentreply-load-member(1)), [set](/javascript/api/word/word.commentreply#word-word-commentreply-set-member(2)), [track](/javascript/api/word/word.commentreply#word-word-commentreply-track-member(1)), [untrack](/javascript/api/word/word.commentreply#word-word-commentreply-untrack-member(1))
+  - Word.CommentReply: [load](/javascript/api/word/word.commentreply#word-word-commentreply-load-member(1)),
+  [set](/javascript/api/word/word.commentreply#word-word-commentreply-set-member(2)), [track](/javascript/api/word/word.commentreply#word-word-commentreply-track-member(1)), [untrack](/javascript/api/word/word.commentreply#word-word-commentreply-untrack-member(1))
 
-  - Word.CommentReplyCollection: [getFirst](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirst-member(1)), [getFirst](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-items-member)
+  - Word.CommentReplyCollection: [getFirst](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirst-member(1)),
+  [getFirstOrNullObject](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-items-member)
 
   #### Examples
 

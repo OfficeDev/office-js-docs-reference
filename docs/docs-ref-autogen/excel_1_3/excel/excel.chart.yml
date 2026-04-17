@@ -16,9 +16,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Chart: [load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1)), [load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1)), [set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(2))
+  - Excel.Chart: [load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1)),
+  [set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(2))
 
-  - Excel.ChartCollection: [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1)), [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1)), [getItem](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-items-member)
+  - Excel.ChartCollection: [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1)),
+  [getItem](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-items-member)
 
 isPreview: false
 isDeprecated: false

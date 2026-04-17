@@ -14,9 +14,11 @@ remarks: >-
 
   - Visio.PageView: [isShapeInViewport](/javascript/api/visio/visio.pageview#visio-visio-pageview-isshapeinviewport-member(1))
 
-  - Visio.Shape: [load](/javascript/api/visio/visio.shape#visio-visio-shape-load-member(1)), [load](/javascript/api/visio/visio.shape#visio-visio-shape-load-member(1)), [set](/javascript/api/visio/visio.shape#visio-visio-shape-set-member(2))
+  - Visio.Shape: [load](/javascript/api/visio/visio.shape#visio-visio-shape-load-member(1)),
+  [set](/javascript/api/visio/visio.shape#visio-visio-shape-set-member(2))
 
-  - Visio.ShapeCollection: [getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1)), [getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1)), [items](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-items-member)
+  - Visio.ShapeCollection: [getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1)),
+  [items](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-items-member)
 
 isPreview: false
 isDeprecated: false

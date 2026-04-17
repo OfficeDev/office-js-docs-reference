@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAxes: [categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member), [categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member), [seriesAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-seriesaxis-member), [valueAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-valueaxis-member)
+  - Excel.ChartAxes: [categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member),
+  [seriesAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-seriesaxis-member), [valueAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-valueaxis-member)
 
-  - Excel.ChartAxis: [load](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-load-member(1)), [load](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-load-member(1)), [set](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-set-member(2))
+  - Excel.ChartAxis: [load](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-load-member(1)),
+  [set](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-set-member(2))
 
 isPreview: false
 isDeprecated: false

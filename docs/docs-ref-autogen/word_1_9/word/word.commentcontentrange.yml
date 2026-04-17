@@ -15,7 +15,8 @@ remarks: >-
 
   - Word.Comment: [contentRange](/javascript/api/word/word.comment#word-word-comment-contentrange-member)
 
-  - Word.CommentContentRange: [insertText](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-inserttext-member(1)), [insertText](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-inserttext-member(1)), [load](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-load-member(1)), [set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(2)), [track](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-track-member(1)), [untrack](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-untrack-member(1))
+  - Word.CommentContentRange: [insertText](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-inserttext-member(1)),
+  [load](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-load-member(1)), [set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(2)), [track](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-track-member(1)), [untrack](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-untrack-member(1))
 
   - Word.CommentReply: [contentRange](/javascript/api/word/word.commentreply#word-word-commentreply-contentrange-member)
 

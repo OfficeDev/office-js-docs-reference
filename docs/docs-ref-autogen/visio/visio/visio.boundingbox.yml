@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Shape: [getAbsoluteBounds](/javascript/api/visio/visio.shape#visio-visio-shape-getabsolutebounds-member(1)), [getAbsoluteBounds](/javascript/api/visio/visio.shape#visio-visio-shape-getabsolutebounds-member(1)), [getBounds](/javascript/api/visio/visio.shape#visio-visio-shape-getbounds-member(1))
+  - Visio.Shape: [getAbsoluteBounds](/javascript/api/visio/visio.shape#visio-visio-shape-getabsolutebounds-member(1)),
+  [getBounds](/javascript/api/visio/visio.shape#visio-visio-shape-getbounds-member(1))
 
 isPreview: false
 isDeprecated: false

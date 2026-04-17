@@ -15,7 +15,8 @@ remarks: >-
 
   - Excel.Worksheet: [visibility](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-visibility-member)
 
-  - Excel.WorksheetVisibilityChangedEventArgs: [visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilityafter-member), [visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilityafter-member), [visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilitybefore-member)
+  - Excel.WorksheetVisibilityChangedEventArgs: [visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilityafter-member),
+  [visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilitybefore-member)
 
   #### Examples
 

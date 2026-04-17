@@ -13,15 +13,19 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1)), [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1)), [insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
+  - Word.Body: [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1)),
+  [insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1)), [insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
 
-  - Word.ContentControl: [insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1)), [insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertooxml-member(1)), [insertText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttext-member(1))
+  - Word.ContentControl: [insertFileFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertfilefrombase64-member(1)),
+  [insertHtml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertooxml-member(1)), [insertText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttext-member(1))
 
   - Word.Document: [getSelection](/javascript/api/word/word.document#word-word-document-getselection-member(1))
 
-  - Word.Paragraph: [insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1)), [insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1)), [insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
+  - Word.Paragraph: [insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1)),
+  [insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1)), [insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
 
-  - Word.Range: [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1)), [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1)), [insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1)), [load](/javascript/api/word/word.range#word-word-range-load-member(1)), [set](/javascript/api/word/word.range#word-word-range-set-member(2)), [track](/javascript/api/word/word.range#word-word-range-track-member(1)), [untrack](/javascript/api/word/word.range#word-word-range-untrack-member(1))
+  - Word.Range: [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1)),
+  [insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1)), [insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1)), [load](/javascript/api/word/word.range#word-word-range-load-member(1)), [set](/javascript/api/word/word.range#word-word-range-set-member(2)), [track](/javascript/api/word/word.range#word-word-range-track-member(1)), [untrack](/javascript/api/word/word.range#word-word-range-untrack-member(1))
 
   - Word.RangeCollection: [items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
 

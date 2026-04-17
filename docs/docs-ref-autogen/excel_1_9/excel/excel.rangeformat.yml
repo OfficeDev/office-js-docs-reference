@@ -18,7 +18,8 @@ remarks: >-
 
   - Excel.RangeAreas: [format](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-format-member)
 
-  - Excel.RangeFormat: [load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1)), [load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1)), [set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(2))
+  - Excel.RangeFormat: [load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1)),
+  [set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

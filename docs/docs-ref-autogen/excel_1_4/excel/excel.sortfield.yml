@@ -14,7 +14,8 @@ remarks: >-
 
   - Excel.RangeSort: [apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
 
-  - Excel.TableSort: [apply](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1)), [apply](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1)), [fields](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-fields-member)
+  - Excel.TableSort: [apply](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1)),
+  [fields](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-fields-member)
 
 isPreview: false
 isDeprecated: false

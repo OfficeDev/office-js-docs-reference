@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormatRule: [load](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-load-member(1)), [load](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-load-member(1)), [set](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-set-member(2))
+  - Excel.ConditionalFormatRule: [load](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-load-member(1)),
+  [set](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-set-member(2))
 
   - Excel.CustomConditionalFormat: [rule](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-rule-member)
 

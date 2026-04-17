@@ -27,7 +27,8 @@ remarks: >-
 
   - Word.PictureContentControl: [xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
 
-  - Word.XmlMapping: [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1)), [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1)), [set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(2)), [track](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-track-member(1)), [untrack](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-untrack-member(1))
+  - Word.XmlMapping: [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1)),
+  [set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(2)), [track](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-track-member(1)), [untrack](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

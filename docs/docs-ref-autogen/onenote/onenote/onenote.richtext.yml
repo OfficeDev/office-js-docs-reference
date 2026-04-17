@@ -14,9 +14,11 @@ remarks: >-
 
   - OneNote.Outline: [appendRichText](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendrichtext-member(1))
 
-  - OneNote.Paragraph: [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)), [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)), [richText](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-richtext-member)
+  - OneNote.Paragraph: [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)),
+  [richText](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-richtext-member)
 
-  - OneNote.RichText: [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1)), [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1)), [track](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-track-member(1)), [untrack](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-untrack-member(1))
+  - OneNote.RichText: [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1)),
+  [track](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-track-member(1)), [untrack](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-untrack-member(1))
 
   - OneNote.TableCell: [appendRichText](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendrichtext-member(1))
 

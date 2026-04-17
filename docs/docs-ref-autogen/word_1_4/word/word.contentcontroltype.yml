@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member), [subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member), [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
+  - Word.ContentControl: [subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member),
+  [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
 
   - Word.ContentControlCollection: [getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
 

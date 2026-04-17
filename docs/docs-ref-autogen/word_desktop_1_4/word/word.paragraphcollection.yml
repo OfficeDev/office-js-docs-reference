@@ -19,13 +19,16 @@ remarks: >-
 
   - Word.ContentControl: [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
 
-  - Word.Document: [listParagraphs](/javascript/api/word/word.document#word-word-document-listparagraphs-member), [listParagraphs](/javascript/api/word/word.document#word-word-document-listparagraphs-member), [paragraphs](/javascript/api/word/word.document#word-word-document-paragraphs-member)
+  - Word.Document: [listParagraphs](/javascript/api/word/word.document#word-word-document-listparagraphs-member),
+  [paragraphs](/javascript/api/word/word.document#word-word-document-paragraphs-member)
 
-  - Word.List: [getLevelParagraphs](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1)), [getLevelParagraphs](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1)), [paragraphs](/javascript/api/word/word.list#word-word-list-paragraphs-member)
+  - Word.List: [getLevelParagraphs](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1)),
+  [paragraphs](/javascript/api/word/word.list#word-word-list-paragraphs-member)
 
   - Word.ListItem: [getDescendants](/javascript/api/word/word.listitem#word-word-listitem-getdescendants-member(1))
 
-  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1)), [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1)), [track](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-track-member(1)), [untrack](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-untrack-member(1))
+  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1)),
+  [track](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-track-member(1)), [untrack](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-untrack-member(1))
 
   - Word.Range: [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
 

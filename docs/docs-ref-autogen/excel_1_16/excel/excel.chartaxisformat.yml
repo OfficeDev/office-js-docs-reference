@@ -14,7 +14,8 @@ remarks: >-
 
   - Excel.ChartAxis: [format](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-format-member)
 
-  - Excel.ChartAxisFormat: [load](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-load-member(1)), [load](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-load-member(1)), [set](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-set-member(2))
+  - Excel.ChartAxisFormat: [load](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-load-member(1)),
+  [set](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

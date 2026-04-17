@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentLibraryVersion: [load](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-load-member(1)), [load](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-load-member(1)), [track](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-track-member(1)), [untrack](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-untrack-member(1))
+  - Word.DocumentLibraryVersion: [load](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-load-member(1)),
+  [track](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-track-member(1)), [untrack](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-untrack-member(1))
 
-  - Word.DocumentLibraryVersionCollection: [getItem](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-getitem-member(1)), [getItem](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-getitem-member(1)), [items](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-items-member)
+  - Word.DocumentLibraryVersionCollection: [getItem](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-getitem-member(1)),
+  [items](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

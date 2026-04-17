@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Page: [allShapes](/javascript/api/visio/visio.page#visio-visio-page-allshapes-member), [allShapes](/javascript/api/visio/visio.page#visio-visio-page-allshapes-member), [shapes](/javascript/api/visio/visio.page#visio-visio-page-shapes-member)
+  - Visio.Page: [allShapes](/javascript/api/visio/visio.page#visio-visio-page-allshapes-member),
+  [shapes](/javascript/api/visio/visio.page#visio-visio-page-shapes-member)
 
   - Visio.Selection: [shapes](/javascript/api/visio/visio.selection#visio-visio-selection-shapes-member)
 

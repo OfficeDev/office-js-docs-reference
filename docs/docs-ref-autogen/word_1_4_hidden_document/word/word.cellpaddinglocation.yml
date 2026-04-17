@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.Table: [getCellPadding](/javascript/api/word/word.table#word-word-table-getcellpadding-member(1)), [getCellPadding](/javascript/api/word/word.table#word-word-table-getcellpadding-member(1)), [setCellPadding](/javascript/api/word/word.table#word-word-table-setcellpadding-member(1))
+  - Word.Table: [getCellPadding](/javascript/api/word/word.table#word-word-table-getcellpadding-member(1)),
+  [setCellPadding](/javascript/api/word/word.table#word-word-table-setcellpadding-member(1))
 
-  - Word.TableCell: [getCellPadding](/javascript/api/word/word.tablecell#word-word-tablecell-getcellpadding-member(1)), [getCellPadding](/javascript/api/word/word.tablecell#word-word-tablecell-getcellpadding-member(1)), [setCellPadding](/javascript/api/word/word.tablecell#word-word-tablecell-setcellpadding-member(1))
+  - Word.TableCell: [getCellPadding](/javascript/api/word/word.tablecell#word-word-tablecell-getcellpadding-member(1)),
+  [setCellPadding](/javascript/api/word/word.tablecell#word-word-tablecell-setcellpadding-member(1))
 
-  - Word.TableRow: [getCellPadding](/javascript/api/word/word.tablerow#word-word-tablerow-getcellpadding-member(1)), [getCellPadding](/javascript/api/word/word.tablerow#word-word-tablerow-getcellpadding-member(1)), [setCellPadding](/javascript/api/word/word.tablerow#word-word-tablerow-setcellpadding-member(1))
+  - Word.TableRow: [getCellPadding](/javascript/api/word/word.tablerow#word-word-tablerow-getcellpadding-member(1)),
+  [setCellPadding](/javascript/api/word/word.tablerow#word-word-tablerow-setcellpadding-member(1))
 
   #### Examples
 

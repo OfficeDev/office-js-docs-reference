@@ -14,9 +14,11 @@ remarks: >-
 
   - Excel.Application: [activeWindow](/javascript/api/excel/excel.application#excel-excel-application-activewindow-member)
 
-  - Excel.Window: [load](/javascript/api/excel/excel.window#excel-excel-window-load-member(1)), [load](/javascript/api/excel/excel.window#excel-excel-window-load-member(1)), [newWindow](/javascript/api/excel/excel.window#excel-excel-window-newwindow-member(1)), [set](/javascript/api/excel/excel.window#excel-excel-window-set-member(2))
+  - Excel.Window: [load](/javascript/api/excel/excel.window#excel-excel-window-load-member(1)),
+  [newWindow](/javascript/api/excel/excel.window#excel-excel-window-newwindow-member(1)), [set](/javascript/api/excel/excel.window#excel-excel-window-set-member(2))
 
-  - Excel.WindowCollection: [getItemAt](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1)), [getItemAt](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-items-member)
+  - Excel.WindowCollection: [getItemAt](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1)),
+  [items](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CheckboxContentControl: [load](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-load-member(1)), [load](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-load-member(1)), [set](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-set-member(2)), [track](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-untrack-member(1))
+  - Word.CheckboxContentControl: [load](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-load-member(1)),
+  [set](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-set-member(2)), [track](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-untrack-member(1))
 
   - Word.ContentControl: [checkboxContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-checkboxcontentcontrol-member)
 

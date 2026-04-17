@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.HtmlDivision: [htmlDivisionParent](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisionparent-member(1)), [htmlDivisionParent](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisionparent-member(1)), [load](/javascript/api/word/word.htmldivision#word-word-htmldivision-load-member(1)), [track](/javascript/api/word/word.htmldivision#word-word-htmldivision-track-member(1)), [untrack](/javascript/api/word/word.htmldivision#word-word-htmldivision-untrack-member(1))
+  - Word.HtmlDivision: [htmlDivisionParent](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisionparent-member(1)),
+  [load](/javascript/api/word/word.htmldivision#word-word-htmldivision-load-member(1)), [track](/javascript/api/word/word.htmldivision#word-word-htmldivision-track-member(1)), [untrack](/javascript/api/word/word.htmldivision#word-word-htmldivision-untrack-member(1))
 
-  - Word.HtmlDivisionCollection: [getItemAt](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1)), [getItemAt](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1)), [items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)
+  - Word.HtmlDivisionCollection: [getItemAt](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1)),
+  [items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

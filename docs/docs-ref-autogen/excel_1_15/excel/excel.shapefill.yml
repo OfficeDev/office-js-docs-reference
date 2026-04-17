@@ -14,7 +14,8 @@ remarks: >-
 
   - Excel.Shape: [fill](/javascript/api/excel/excel.shape#excel-excel-shape-fill-member)
 
-  - Excel.ShapeFill: [load](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-load-member(1)), [load](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-load-member(1)), [set](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-set-member(2))
+  - Excel.ShapeFill: [load](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-load-member(1)),
+  [set](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-set-member(2))
 
 isPreview: false
 isDeprecated: false

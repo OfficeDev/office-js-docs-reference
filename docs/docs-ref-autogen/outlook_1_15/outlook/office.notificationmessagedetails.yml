@@ -31,7 +31,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.NotificationMessages: [addAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-addasync-member(1)), [addAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-addasync-member(1)), [getAllAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-getallasync-member(1)), [replaceAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))
+  - Office.NotificationMessages: [addAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-addasync-member(1)),
+  [getAllAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-getallasync-member(1)), [replaceAsync](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))
 
   #### Examples
 

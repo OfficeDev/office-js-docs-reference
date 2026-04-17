@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [load](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-load-member(1)), [load](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-load-member(1)), [set](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-set-member(2))
+  - Excel.ChartSeries: [load](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-load-member(1)),
+  [set](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-set-member(2))
 
-  - Excel.ChartSeriesCollection: [add](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-add-member(1)), [add](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-add-member(1)), [getItemAt](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-items-member)
+  - Excel.ChartSeriesCollection: [add](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-add-member(1)),
+  [getItemAt](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-items-member)
 
   #### Examples
 

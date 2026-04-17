@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.TabStop: [load](/javascript/api/word/word.tabstop#word-word-tabstop-load-member(1)), [load](/javascript/api/word/word.tabstop#word-word-tabstop-load-member(1)), [next](/javascript/api/word/word.tabstop#word-word-tabstop-next-member), [previous](/javascript/api/word/word.tabstop#word-word-tabstop-previous-member), [track](/javascript/api/word/word.tabstop#word-word-tabstop-track-member(1)), [untrack](/javascript/api/word/word.tabstop#word-word-tabstop-untrack-member(1))
+  - Word.TabStop: [load](/javascript/api/word/word.tabstop#word-word-tabstop-load-member(1)),
+  [next](/javascript/api/word/word.tabstop#word-word-tabstop-next-member), [previous](/javascript/api/word/word.tabstop#word-word-tabstop-previous-member), [track](/javascript/api/word/word.tabstop#word-word-tabstop-track-member(1)), [untrack](/javascript/api/word/word.tabstop#word-word-tabstop-untrack-member(1))
 
-  - Word.TabStopCollection: [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1)), [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1)), [after](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1)), [before](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1)), [getItem](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-getitem-member(1)), [items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)
+  - Word.TabStopCollection: [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1)),
+  [after](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1)), [before](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1)), [getItem](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-getitem-member(1)), [items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -15,19 +15,26 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member), [endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member), [footnotes](/javascript/api/word/word.body#word-word-body-footnotes-member)
+  - Word.Body: [endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member),
+  [footnotes](/javascript/api/word/word.body#word-word-body-footnotes-member)
 
-  - Word.ContentControl: [endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member), [endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member), [footnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-footnotes-member)
+  - Word.ContentControl: [endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member),
+  [footnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-footnotes-member)
 
-  - Word.NoteItemCollection: [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1)), [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1)), [track](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-track-member(1)), [untrack](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-untrack-member(1))
+  - Word.NoteItemCollection: [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1)),
+  [track](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-track-member(1)), [untrack](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-untrack-member(1))
 
-  - Word.Paragraph: [endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member), [endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member), [footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)
+  - Word.Paragraph: [endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member),
+  [footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)
 
-  - Word.Range: [endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member), [endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member), [footnotes](/javascript/api/word/word.range#word-word-range-footnotes-member)
+  - Word.Range: [endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member),
+  [footnotes](/javascript/api/word/word.range#word-word-range-footnotes-member)
 
-  - Word.Table: [endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member), [endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member), [footnotes](/javascript/api/word/word.table#word-word-table-footnotes-member)
+  - Word.Table: [endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member),
+  [footnotes](/javascript/api/word/word.table#word-word-table-footnotes-member)
 
-  - Word.TableRow: [endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member), [endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member), [footnotes](/javascript/api/word/word.tablerow#word-word-tablerow-footnotes-member)
+  - Word.TableRow: [endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member),
+  [footnotes](/javascript/api/word/word.tablerow#word-word-tablerow-footnotes-member)
 
   #### Examples
 

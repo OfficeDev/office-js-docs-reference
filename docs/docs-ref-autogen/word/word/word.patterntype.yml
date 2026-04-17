@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.FillFormat: [pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member), [pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member), [setPatterned](/javascript/api/word/word.fillformat#word-word-fillformat-setpatterned-member(1))
+  - Word.FillFormat: [pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member),
+  [setPatterned](/javascript/api/word/word.fillformat#word-word-fillformat-setpatterned-member(1))
 
   - Word.LineFormat: [pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)
 

@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedEntityDataDomain: [refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member), [refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member), [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)
+  - Excel.LinkedEntityDataDomain: [refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member),
+  [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)
 
   - Excel.LinkedEntityDataDomainCreateOptions: [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-supportedrefreshmodes-member)
 

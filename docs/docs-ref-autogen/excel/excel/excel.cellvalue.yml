@@ -15,23 +15,30 @@ remarks: >-
 
   - Excel.ArrayCellValue: [elements](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-elements-member)
 
-  - Excel.ChangedEventDetail: [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member), [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member), [valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonbefore-member)
+  - Excel.ChangedEventDetail: [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member),
+  [valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonbefore-member)
 
   - Excel.ExternalCodeServiceObjectCellValue: [preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)
 
-  - Excel.NamedItem: [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member), [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member), [valueAsJsonLocal](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjsonlocal-member)
+  - Excel.NamedItem: [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member),
+  [valueAsJsonLocal](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjsonlocal-member)
 
-  - Excel.NamedItemArrayValues: [valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjsonlocal-member)
+  - Excel.NamedItemArrayValues: [valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member),
+  [valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjsonlocal-member)
 
-  - Excel.Range: [valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.range#excel-excel-range-valuesasjsonlocal-member)
+  - Excel.Range: [valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member),
+  [valuesAsJsonLocal](/javascript/api/excel/excel.range#excel-excel-range-valuesasjsonlocal-member)
 
-  - Excel.RangeView: [valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjsonlocal-member)
+  - Excel.RangeView: [valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member),
+  [valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjsonlocal-member)
 
-  - Excel.TableColumn: [valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)
+  - Excel.TableColumn: [valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member),
+  [valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)
 
   - Excel.TableColumnCollection: [addAsJson](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-addasjson-member(1))
 
-  - Excel.TableRow: [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)
+  - Excel.TableRow: [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member),
+  [valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)
 
   - Excel.TableRowCollection: [addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
 

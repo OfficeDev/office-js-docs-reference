@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.FillFormat: [presetGradientType](/javascript/api/word/word.fillformat#word-word-fillformat-presetgradienttype-member), [presetGradientType](/javascript/api/word/word.fillformat#word-word-fillformat-presetgradienttype-member), [setPresetGradient](/javascript/api/word/word.fillformat#word-word-fillformat-setpresetgradient-member(1))
+  - Word.FillFormat: [presetGradientType](/javascript/api/word/word.fillformat#word-word-fillformat-presetgradienttype-member),
+  [setPresetGradient](/javascript/api/word/word.fillformat#word-word-fillformat-setpresetgradient-member(1))
 
 isPreview: false
 isDeprecated: false

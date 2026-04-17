@@ -19,7 +19,8 @@ remarks: >-
 
   - Word.Table: [columns](/javascript/api/word/word.table#word-word-table-columns-member)
 
-  - Word.TableColumnCollection: [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1)), [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1)), [track](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-track-member(1)), [untrack](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-untrack-member(1))
+  - Word.TableColumnCollection: [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1)),
+  [track](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-track-member(1)), [untrack](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

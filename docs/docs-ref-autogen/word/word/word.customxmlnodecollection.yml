@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlNode: [attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member), [attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member), [childNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-childnodes-member), [selectNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectnodes-member(1))
+  - Word.CustomXmlNode: [attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member),
+  [childNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-childnodes-member), [selectNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectnodes-member(1))
 
-  - Word.CustomXmlNodeCollection: [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1)), [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1)), [track](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-track-member(1)), [untrack](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-untrack-member(1))
+  - Word.CustomXmlNodeCollection: [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1)),
+  [track](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-track-member(1)), [untrack](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-untrack-member(1))
 
   - Word.CustomXmlPart: [selectNodes](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectnodes-member(1))
 

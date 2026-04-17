@@ -18,7 +18,8 @@ remarks: >-
 
   - Word.Application: [createDocument](/javascript/api/word/word.application#word-word-application-createdocument-member(1))
 
-  - Word.DocumentCreated: [load](/javascript/api/word/word.documentcreated#word-word-documentcreated-load-member(1)), [load](/javascript/api/word/word.documentcreated#word-word-documentcreated-load-member(1)), [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(2)), [track](/javascript/api/word/word.documentcreated#word-word-documentcreated-track-member(1)), [untrack](/javascript/api/word/word.documentcreated#word-word-documentcreated-untrack-member(1))
+  - Word.DocumentCreated: [load](/javascript/api/word/word.documentcreated#word-word-documentcreated-load-member(1)),
+  [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(2)), [track](/javascript/api/word/word.documentcreated#word-word-documentcreated-track-member(1)), [untrack](/javascript/api/word/word.documentcreated#word-word-documentcreated-untrack-member(1))
 
   #### Examples
 

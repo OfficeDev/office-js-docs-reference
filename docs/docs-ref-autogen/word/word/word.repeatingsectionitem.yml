@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.RepeatingSectionItem: [insertItemAfter](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitemafter-member(1)), [insertItemAfter](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitemafter-member(1)), [insertItemBefore](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitembefore-member(1)), [load](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-load-member(1)), [set](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-set-member(2)), [track](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-track-member(1)), [untrack](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-untrack-member(1))
+  - Word.RepeatingSectionItem: [insertItemAfter](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitemafter-member(1)),
+  [insertItemBefore](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-insertitembefore-member(1)), [load](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-load-member(1)), [set](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-set-member(2)), [track](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-track-member(1)), [untrack](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-untrack-member(1))
 
   - Word.RepeatingSectionItemCollection: [getItemAt](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-getitemat-member(1))
 

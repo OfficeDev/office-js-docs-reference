@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCellCollection: [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1)), [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1)), [track](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-track-member(1)), [untrack](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-untrack-member(1))
+  - Word.TableCellCollection: [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1)),
+  [track](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-track-member(1)), [untrack](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-untrack-member(1))
 
   - Word.TableRow: [cells](/javascript/api/word/word.tablerow#word-word-tablerow-cells-member)
 

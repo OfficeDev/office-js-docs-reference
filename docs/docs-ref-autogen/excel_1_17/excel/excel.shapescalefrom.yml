@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Shape: [scaleHeight](/javascript/api/excel/excel.shape#excel-excel-shape-scaleheight-member(1)), [scaleHeight](/javascript/api/excel/excel.shape#excel-excel-shape-scaleheight-member(1)), [scaleWidth](/javascript/api/excel/excel.shape#excel-excel-shape-scalewidth-member(1))
+  - Excel.Shape: [scaleHeight](/javascript/api/excel/excel.shape#excel-excel-shape-scaleheight-member(1)),
+  [scaleWidth](/javascript/api/excel/excel.shape#excel-excel-shape-scalewidth-member(1))
 
 isPreview: false
 isDeprecated: false

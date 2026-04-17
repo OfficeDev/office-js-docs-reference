@@ -16,7 +16,8 @@ remarks: >-
 
   - Word.Coauthoring: [updates](/javascript/api/word/word.coauthoring#word-word-coauthoring-updates-member)
 
-  - Word.CoauthoringUpdateCollection: [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(1)), [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(1)), [track](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-track-member(1)), [untrack](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-untrack-member(1))
+  - Word.CoauthoringUpdateCollection: [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(1)),
+  [track](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-track-member(1)), [untrack](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

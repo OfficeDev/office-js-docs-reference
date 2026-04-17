@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Shape: [scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1)), [scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1)), [scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
+  - Word.Shape: [scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1)),
+  [scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
 
   #### Examples
 

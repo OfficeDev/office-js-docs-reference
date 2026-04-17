@@ -17,7 +17,8 @@ remarks: >-
 
   - Word.Document: [readabilityStatistics](/javascript/api/word/word.document#word-word-document-readabilitystatistics-member)
 
-  - Word.ReadabilityStatisticCollection: [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1)), [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1)), [track](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-track-member(1)), [untrack](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-untrack-member(1))
+  - Word.ReadabilityStatisticCollection: [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1)),
+  [track](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-track-member(1)), [untrack](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

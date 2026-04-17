@@ -16,7 +16,8 @@ remarks: >-
 
   - Excel.Shape: [lineFormat](/javascript/api/excel/excel.shape#excel-excel-shape-lineformat-member)
 
-  - Excel.ShapeLineFormat: [load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1)), [load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1)), [set](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-set-member(2))
+  - Excel.ShapeLineFormat: [load](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-load-member(1)),
+  [set](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

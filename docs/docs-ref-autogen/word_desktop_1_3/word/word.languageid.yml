@@ -16,11 +16,14 @@ remarks: >-
 
   - Word.DatePickerContentControl: [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
 
-  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member), [languageId](/javascript/api/word/word.range#word-word-range-languageid-member), [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
+  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
 
-  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
+  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
 
-  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
+  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member),
+  [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
 
 isPreview: false
 isDeprecated: false

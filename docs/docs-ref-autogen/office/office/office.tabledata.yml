@@ -14,9 +14,11 @@ remarks: >-
 
   - Office.Binding: [setDataAsync](/javascript/api/office/office.binding#office-office-binding-setdataasync-member(1))
 
-  - Office.Document: [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(2)), [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(2)), [setSelectedDataAsync](/javascript/api/office/office.document#office-office-document-setselecteddataasync-member(1))
+  - Office.Document: [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(2)),
+  [setSelectedDataAsync](/javascript/api/office/office.document#office-office-document-setselecteddataasync-member(1))
 
-  - Office.TableBinding: [addColumnsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addcolumnsasync-member(1)), [addColumnsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addcolumnsasync-member(1)), [addRowsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addrowsasync-member(1))
+  - Office.TableBinding: [addColumnsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addcolumnsasync-member(1)),
+  [addRowsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addrowsasync-member(1))
 
 isPreview: false
 isDeprecated: false

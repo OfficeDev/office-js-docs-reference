@@ -17,7 +17,8 @@ remarks: >-
 
   - Word.CustomXmlPart: [errors](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-errors-member)
 
-  - Word.CustomXmlValidationErrorCollection: [load](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-load-member(1)), [load](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-load-member(1)), [track](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-track-member(1)), [untrack](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-untrack-member(1))
+  - Word.CustomXmlValidationErrorCollection: [load](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-load-member(1)),
+  [track](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-track-member(1)), [untrack](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-untrack-member(1))
 
 isPreview: true
 isDeprecated: false

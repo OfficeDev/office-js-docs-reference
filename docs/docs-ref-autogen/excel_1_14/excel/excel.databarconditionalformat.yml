@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member), [dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member), [dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databarornullobject-member)
+  - Excel.ConditionalFormat: [dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member),
+  [dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databarornullobject-member)
 
-  - Excel.DataBarConditionalFormat: [load](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-load-member(1)), [load](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-load-member(1)), [set](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-set-member(2))
+  - Excel.DataBarConditionalFormat: [load](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-load-member(1)),
+  [set](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

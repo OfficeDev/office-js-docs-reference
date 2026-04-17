@@ -14,9 +14,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1)), [getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1)), [getDirectPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getdirectprecedents-member(1)), [getPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getprecedents-member(1))
+  - Excel.Range: [getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1)),
+  [getDirectPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getdirectprecedents-member(1)), [getPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getprecedents-member(1))
 
-  - Excel.WorkbookRangeAreas: [load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1)), [load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1)), [track](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-track-member(1)), [untrack](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-untrack-member(1))
+  - Excel.WorkbookRangeAreas: [load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1)),
+  [track](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-track-member(1)), [untrack](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

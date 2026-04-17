@@ -17,7 +17,8 @@ remarks: >-
 
   - PowerPoint.TableCell: [load](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-load-member(1))
 
-  - PowerPoint.TableCellCollection: [getItemAtOrNullObject](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-getitematornullobject-member(1)), [getItemAtOrNullObject](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-getitematornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-items-member)
+  - PowerPoint.TableCellCollection: [getItemAtOrNullObject](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-getitematornullobject-member(1)),
+  [items](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-items-member)
 
   #### Examples
 

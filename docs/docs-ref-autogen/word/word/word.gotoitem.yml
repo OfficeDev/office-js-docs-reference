@@ -16,7 +16,8 @@ remarks: >-
 
   - Word.GoToOptions: [item](/javascript/api/word/word.gotooptions#word-word-gotooptions-item-member)
 
-  - Word.Selection: [goToNext](/javascript/api/word/word.selection#word-word-selection-gotonext-member(1)), [goToNext](/javascript/api/word/word.selection#word-word-selection-gotonext-member(1)), [goToPrevious](/javascript/api/word/word.selection#word-word-selection-gotoprevious-member(1))
+  - Word.Selection: [goToNext](/javascript/api/word/word.selection#word-word-selection-gotonext-member(1)),
+  [goToPrevious](/javascript/api/word/word.selection#word-word-selection-gotoprevious-member(1))
 
 isPreview: false
 isDeprecated: false

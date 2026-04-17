@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.Selection: [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)), [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)), [extend](/javascript/api/word/word.selection#word-word-selection-extend-member(1))
+  - Word.Selection: [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)),
+  [extend](/javascript/api/word/word.selection#word-word-selection-extend-member(1))
 
   - Word.SelectionDeleteOptions: [unit](/javascript/api/word/word.selectiondeleteoptions#word-word-selectiondeleteoptions-unit-member)
 

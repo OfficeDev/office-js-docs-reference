@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.Addin: [getStartupBehavior](/javascript/api/office/office.addin#office-office-addin-getstartupbehavior-member(1)), [getStartupBehavior](/javascript/api/office/office.addin#office-office-addin-getstartupbehavior-member(1)), [setStartupBehavior](/javascript/api/office/office.addin#office-office-addin-setstartupbehavior-member(1))
+  - Office.Addin: [getStartupBehavior](/javascript/api/office/office.addin#office-office-addin-getstartupbehavior-member(1)),
+  [setStartupBehavior](/javascript/api/office/office.addin#office-office-addin-setstartupbehavior-member(1))
 
   #### Examples
 

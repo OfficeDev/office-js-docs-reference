@@ -17,7 +17,8 @@ remarks: >-
 
   - Word.PageSetup: [textColumns](/javascript/api/word/word.pagesetup#word-word-pagesetup-textcolumns-member)
 
-  - Word.TextColumnCollection: [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1)), [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1)), [track](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-track-member(1)), [untrack](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-untrack-member(1))
+  - Word.TextColumnCollection: [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1)),
+  [track](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-track-member(1)), [untrack](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -19,7 +19,8 @@ remarks: >-
 
   - Word.DocumentCreated: [sections](/javascript/api/word/word.documentcreated#word-word-documentcreated-sections-member)
 
-  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1)), [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1)), [track](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-track-member(1)), [untrack](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-untrack-member(1))
+  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1)),
+  [track](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-track-member(1)), [untrack](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-untrack-member(1))
 
   #### Examples
 

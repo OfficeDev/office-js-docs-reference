@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Style: [load](/javascript/api/excel/excel.style#excel-excel-style-load-member(1)), [load](/javascript/api/excel/excel.style#excel-excel-style-load-member(1)), [set](/javascript/api/excel/excel.style#excel-excel-style-set-member(2))
+  - Excel.Style: [load](/javascript/api/excel/excel.style#excel-excel-style-load-member(1)),
+  [set](/javascript/api/excel/excel.style#excel-excel-style-set-member(2))
 
-  - Excel.StyleCollection: [getItem](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-getitem-member(1)), [items](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-items-member)
+  - Excel.StyleCollection: [getItem](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-getitem-member(1)),
+  [items](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

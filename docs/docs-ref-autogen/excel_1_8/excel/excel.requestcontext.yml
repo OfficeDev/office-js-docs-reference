@@ -217,7 +217,8 @@ remarks: >-
 
   - Excel.Table: [context](/javascript/api/excel/excel.table#excel-excel-table-context-member)
 
-  - Excel.TableChangedEventArgs: [getRange](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1)), [getRange](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrangeornullobject-member(1))
+  - Excel.TableChangedEventArgs: [getRange](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1)),
+  [getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrangeornullobject-member(1))
 
   - Excel.TableCollection: [context](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-context-member)
 
@@ -243,7 +244,8 @@ remarks: >-
 
   - Excel.Worksheet: [context](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-context-member)
 
-  - Excel.WorksheetChangedEventArgs: [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)), [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrangeornullobject-member(1))
+  - Excel.WorksheetChangedEventArgs: [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)),
+  [getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrangeornullobject-member(1))
 
   - Excel.WorksheetCollection: [context](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-context-member)
 

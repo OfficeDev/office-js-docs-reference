@@ -14,7 +14,8 @@ remarks: >-
 
   - PowerPoint.CustomProperty: [load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
 
-  - PowerPoint.CustomPropertyCollection: [add](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-add-member(1)), [add](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-add-member(1)), [getItem](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-items-member)
+  - PowerPoint.CustomPropertyCollection: [add](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-add-member(1)),
+  [getItem](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-items-member)
 
 isPreview: false
 isDeprecated: false

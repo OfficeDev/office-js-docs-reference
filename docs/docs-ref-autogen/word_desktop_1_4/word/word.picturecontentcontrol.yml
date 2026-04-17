@@ -14,7 +14,8 @@ remarks: >-
 
   - Word.ContentControl: [pictureContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-picturecontentcontrol-member)
 
-  - Word.PictureContentControl: [load](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-load-member(1)), [load](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-load-member(1)), [set](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-set-member(2)), [track](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-untrack-member(1))
+  - Word.PictureContentControl: [load](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-load-member(1)),
+  [set](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-set-member(2)), [track](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

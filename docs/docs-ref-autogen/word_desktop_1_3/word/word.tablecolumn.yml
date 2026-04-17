@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableColumn: [load](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-load-member(1)), [load](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-load-member(1)), [set](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-set-member(2)), [track](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-track-member(1)), [untrack](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-untrack-member(1))
+  - Word.TableColumn: [load](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-load-member(1)),
+  [set](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-set-member(2)), [track](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-track-member(1)), [untrack](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-untrack-member(1))
 
-  - Word.TableColumnCollection: [add](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-add-member(1)), [add](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-add-member(1)), [items](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-items-member)
+  - Word.TableColumnCollection: [add](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-add-member(1)),
+  [items](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-items-member)
 
 isPreview: false
 isDeprecated: false

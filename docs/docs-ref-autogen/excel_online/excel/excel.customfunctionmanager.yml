@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CustomFunctionManager: [load](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-load-member(1)), [load](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-load-member(1)), [newObject](/javascript/api/excel/excel.customfunctionmanager.newobject:member)
+  - Excel.CustomFunctionManager: [load](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-load-member(1)),
+  [newObject](/javascript/api/excel/excel.customfunctionmanager.newobject:member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,8 @@ remarks: >-
 
   - Excel.Chart: [pivotOptions](/javascript/api/excel/excel.chart#excel-excel-chart-pivotoptions-member)
 
-  - Excel.ChartPivotOptions: [load](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-load-member(1)), [load](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-load-member(1)), [set](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-set-member(2))
+  - Excel.ChartPivotOptions: [load](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-load-member(1)),
+  [set](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfAuthorities: [load](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-load-member(1)), [load](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-load-member(1)), [set](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-set-member(2)), [track](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-track-member(1)), [untrack](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-untrack-member(1))
+  - Word.TableOfAuthorities: [load](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-load-member(1)),
+  [set](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-set-member(2)), [track](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-track-member(1)), [untrack](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-untrack-member(1))
 
-  - Word.TableOfAuthoritiesCollection: [add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1)), [add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1)), [items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)
+  - Word.TableOfAuthoritiesCollection: [add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1)),
+  [items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)
 
 isPreview: false
 isDeprecated: false

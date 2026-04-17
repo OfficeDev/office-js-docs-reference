@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CommentReply: [load](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-load-member(1)), [load](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-load-member(1)), [set](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-set-member(2))
+  - Excel.CommentReply: [load](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-load-member(1)),
+  [set](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-set-member(2))
 
-  - Excel.CommentReplyCollection: [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1)), [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1)), [getItem](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-items-member)
+  - Excel.CommentReplyCollection: [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1)),
+  [getItem](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-items-member)
 
 isPreview: false
 isDeprecated: false

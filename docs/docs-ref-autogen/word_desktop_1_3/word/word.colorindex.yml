@@ -14,9 +14,11 @@ remarks: >-
 
   - Word.BorderUniversal: [colorIndex](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-colorindex-member)
 
-  - Word.Font: [colorIndex](/javascript/api/word/word.font#word-word-font-colorindex-member), [colorIndex](/javascript/api/word/word.font#word-word-font-colorindex-member), [colorIndexBidirectional](/javascript/api/word/word.font#word-word-font-colorindexbidirectional-member)
+  - Word.Font: [colorIndex](/javascript/api/word/word.font#word-word-font-colorindex-member),
+  [colorIndexBidirectional](/javascript/api/word/word.font#word-word-font-colorindexbidirectional-member)
 
-  - Word.ShadingUniversal: [backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member), [backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member), [foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolorindex-member)
+  - Word.ShadingUniversal: [backgroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-backgroundpatterncolorindex-member),
+  [foregroundPatternColorIndex](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-foregroundpatterncolorindex-member)
 
 isPreview: false
 isDeprecated: false

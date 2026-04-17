@@ -16,7 +16,8 @@ remarks: >-
 
   - Word.BuildingBlockCategory: [type](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-type-member)
 
-  - Word.BuildingBlockTypeItem: [load](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-load-member(1)), [load](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-load-member(1)), [track](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-track-member(1)), [untrack](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-untrack-member(1))
+  - Word.BuildingBlockTypeItem: [load](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-load-member(1)),
+  [track](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-track-member(1)), [untrack](/javascript/api/word/word.buildingblocktypeitem#word-word-buildingblocktypeitem-untrack-member(1))
 
   - Word.BuildingBlockTypeItemCollection: [getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
 

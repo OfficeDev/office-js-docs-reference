@@ -17,9 +17,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Setting: [load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1)), [load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1)), [set](/javascript/api/excel/excel.setting#excel-excel-setting-set-member(2))
+  - Excel.Setting: [load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1)),
+  [set](/javascript/api/excel/excel.setting#excel-excel-setting-set-member(2))
 
-  - Excel.SettingCollection: [add](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1)), [add](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1)), [getItem](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-items-member)
+  - Excel.SettingCollection: [add](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1)),
+  [getItem](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-items-member)
 
 isPreview: false
 isDeprecated: false

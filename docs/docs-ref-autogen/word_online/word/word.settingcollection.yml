@@ -17,7 +17,8 @@ remarks: >-
 
   - Word.Document: [settings](/javascript/api/word/word.document#word-word-document-settings-member)
 
-  - Word.SettingCollection: [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1)), [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1)), [track](/javascript/api/word/word.settingcollection#word-word-settingcollection-track-member(1)), [untrack](/javascript/api/word/word.settingcollection#word-word-settingcollection-untrack-member(1))
+  - Word.SettingCollection: [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1)),
+  [track](/javascript/api/word/word.settingcollection#word-word-settingcollection-track-member(1)), [untrack](/javascript/api/word/word.settingcollection#word-word-settingcollection-untrack-member(1))
 
   #### Examples
 

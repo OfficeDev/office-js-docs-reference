@@ -14,7 +14,8 @@ remarks: >-
 
   - Word.Font: [glow](/javascript/api/word/word.font#word-word-font-glow-member)
 
-  - Word.GlowFormat: [load](/javascript/api/word/word.glowformat#word-word-glowformat-load-member(1)), [load](/javascript/api/word/word.glowformat#word-word-glowformat-load-member(1)), [set](/javascript/api/word/word.glowformat#word-word-glowformat-set-member(2)), [track](/javascript/api/word/word.glowformat#word-word-glowformat-track-member(1)), [untrack](/javascript/api/word/word.glowformat#word-word-glowformat-untrack-member(1))
+  - Word.GlowFormat: [load](/javascript/api/word/word.glowformat#word-word-glowformat-load-member(1)),
+  [set](/javascript/api/word/word.glowformat#word-word-glowformat-set-member(2)), [track](/javascript/api/word/word.glowformat#word-word-glowformat-track-member(1)), [untrack](/javascript/api/word/word.glowformat#word-word-glowformat-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

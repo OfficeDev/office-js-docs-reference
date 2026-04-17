@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendline: [load](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-load-member(1)), [load](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-load-member(1)), [set](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-set-member(2))
+  - Excel.ChartTrendline: [load](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-load-member(1)),
+  [set](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-set-member(2))
 
-  - Excel.ChartTrendlineCollection: [add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1)), [add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1)), [getItem](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-getitem-member(1)), [items](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-items-member)
+  - Excel.ChartTrendlineCollection: [add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1)),
+  [getItem](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-getitem-member(1)), [items](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-items-member)
 
 isPreview: false
 isDeprecated: false

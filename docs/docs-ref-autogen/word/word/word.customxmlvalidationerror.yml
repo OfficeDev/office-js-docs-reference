@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlValidationError: [load](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-load-member(1)), [load](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-load-member(1)), [set](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-set-member(2)), [track](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-track-member(1)), [untrack](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-untrack-member(1))
+  - Word.CustomXmlValidationError: [load](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-load-member(1)),
+  [set](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-set-member(2)), [track](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-track-member(1)), [untrack](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-untrack-member(1))
 
-  - Word.CustomXmlValidationErrorCollection: [getItem](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getitem-member(1)), [getItem](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getitem-member(1)), [items](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-items-member)
+  - Word.CustomXmlValidationErrorCollection: [getItem](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-getitem-member(1)),
+  [items](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-items-member)
 
 isPreview: true
 isDeprecated: false

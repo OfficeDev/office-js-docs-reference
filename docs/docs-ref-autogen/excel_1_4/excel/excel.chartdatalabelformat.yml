@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataLabelFormat: [load](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-load-member(1)), [load](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-load-member(1)), [set](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-set-member(2))
+  - Excel.ChartDataLabelFormat: [load](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-load-member(1)),
+  [set](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-set-member(2))
 
   - Excel.ChartDataLabels: [format](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-format-member)
 
