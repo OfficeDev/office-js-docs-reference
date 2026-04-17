@@ -383,7 +383,22 @@ function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex, availabl
   }
 
   // Filter to only include references that exist in the current package/version
-  const filteredReferences = references.filter(ref => availableUIDs.has(ref.uid));
+  let filteredReferences = references.filter(ref => availableUIDs.has(ref.uid));
+
+  // Extract the class name from the current item's UID
+  // Example: "excel!Excel.AllowEditRange:class" → "Excel.AllowEditRange"
+  const uidParts = item.uid.split('!');
+  if (uidParts.length === 2) {
+    const reference = uidParts[1];
+    const currentClassName = reference.split(':')[0].split('#')[0];
+
+    // Filter out self-references (references from the same class)
+    filteredReferences = filteredReferences.filter(ref => {
+      const lastDotIndex = ref.name.lastIndexOf('.');
+      const refClassName = lastDotIndex > 0 ? ref.name.substring(0, lastDotIndex) : ref.name;
+      return refClassName !== currentClassName;
+    });
+  }
 
   // If no valid references remain after filtering, we're done (old section already removed)
   if (filteredReferences.length === 0) {
