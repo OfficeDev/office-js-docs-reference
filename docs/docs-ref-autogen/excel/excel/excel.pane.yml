@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Pane: [load](/javascript/api/excel/excel.pane#excel-excel-pane-load-member(1))
-
   - Excel.PaneCollection: [getItemAt](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1)),
   [items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)
 

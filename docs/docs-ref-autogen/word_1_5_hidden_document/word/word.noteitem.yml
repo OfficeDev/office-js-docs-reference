@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.NoteItem: [getNext](/javascript/api/word/word.noteitem#word-word-noteitem-getnext-member(1)),
-  [getNextOrNullObject](/javascript/api/word/word.noteitem#word-word-noteitem-getnextornullobject-member(1)), [load](/javascript/api/word/word.noteitem#word-word-noteitem-load-member(1)), [set](/javascript/api/word/word.noteitem#word-word-noteitem-set-member(2)), [track](/javascript/api/word/word.noteitem#word-word-noteitem-track-member(1)), [untrack](/javascript/api/word/word.noteitem#word-word-noteitem-untrack-member(1))
-
   - Word.NoteItemCollection: [getFirst](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-items-member)
 

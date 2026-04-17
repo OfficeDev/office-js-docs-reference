@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.Hyperlink: [load](/javascript/api/word/word.hyperlink#word-word-hyperlink-load-member(1)),
-  [set](/javascript/api/word/word.hyperlink#word-word-hyperlink-set-member(2)), [track](/javascript/api/word/word.hyperlink#word-word-hyperlink-track-member(1)), [untrack](/javascript/api/word/word.hyperlink#word-word-hyperlink-untrack-member(1))
-
   - Word.HyperlinkCollection: [add](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1)),
   [items](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-items-member)
 

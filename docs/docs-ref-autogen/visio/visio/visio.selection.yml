@@ -14,8 +14,6 @@ remarks: >-
 
   - Visio.PageView: [getSelection](/javascript/api/visio/visio.pageview#visio-visio-pageview-getselection-member(1))
 
-  - Visio.Selection: [load](/javascript/api/visio/visio.selection#visio-visio-selection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.Chart: [plotArea](/javascript/api/excel/excel.chart#excel-excel-chart-plotarea-member)
 
-  - Excel.ChartPlotArea: [load](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-load-member(1)),
-  [set](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

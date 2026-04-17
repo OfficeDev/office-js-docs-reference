@@ -17,9 +17,6 @@ remarks: >-
 
   - Word.Document: [tableOfAuthoritiesCategories](/javascript/api/word/word.document#word-word-document-tableofauthoritiescategories-member)
 
-  - Word.TableOfAuthoritiesCategoryCollection: [load](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-load-member(1)),
-  [track](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-track-member(1)), [untrack](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-untrack-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

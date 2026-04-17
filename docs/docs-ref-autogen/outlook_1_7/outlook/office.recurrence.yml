@@ -49,9 +49,6 @@ remarks: >-
 
   - Office.MessageRead: [recurrence](/javascript/api/outlook/office.messageread#outlook-office-messageread-recurrence-member)
 
-  - Office.Recurrence: [getAsync](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-getasync-member(1)),
-  [setAsync](/javascript/api/outlook/office.recurrence#outlook-office-recurrence-setasync-member(1))
-
   - Office.RecurrenceChangedEventArgs: [recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#outlook-office-recurrencechangedeventargs-recurrence-member)
 
 isPreview: false

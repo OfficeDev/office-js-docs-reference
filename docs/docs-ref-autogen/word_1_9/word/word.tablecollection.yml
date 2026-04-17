@@ -23,9 +23,6 @@ remarks: >-
 
   - Word.Table: [tables](/javascript/api/word/word.table#word-word-table-tables-member)
 
-  - Word.TableCollection: [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1)),
-  [track](/javascript/api/word/word.tablecollection#word-word-tablecollection-track-member(1)), [untrack](/javascript/api/word/word.tablecollection#word-word-tablecollection-untrack-member(1))
-
   #### Examples
 
 

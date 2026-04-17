@@ -16,9 +16,6 @@ remarks: >-
 
   - Excel.Range: [format](/javascript/api/excel/excel.range#excel-excel-range-format-member)
 
-  - Excel.RangeFormat: [load](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-load-member(1)),
-  [set](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

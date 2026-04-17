@@ -14,8 +14,6 @@ remarks: >-
 
   - Visio.Document: [pages](/javascript/api/visio/visio.document#visio-visio-document-pages-member)
 
-  - Visio.PageCollection: [load](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkStroke: [load](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-load-member(1)),
-  [track](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-untrack-member(1))
-
   - OneNote.InkStrokeCollection: [getItem](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-getitem-member(1)),
   [getItemAt](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-items-member)
 

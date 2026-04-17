@@ -17,9 +17,6 @@ remarks: >-
   - OneNote.Paragraph: [insertTableAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inserttableassibling-member(1)),
   [table](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-table-member)
 
-  - OneNote.Table: [load](/javascript/api/onenote/onenote.table#onenote-onenote-table-load-member(1)),
-  [set](/javascript/api/onenote/onenote.table#onenote-onenote-table-set-member(2)), [track](/javascript/api/onenote/onenote.table#onenote-onenote-table-track-member(1)), [untrack](/javascript/api/onenote/onenote.table#onenote-onenote-table-untrack-member(1))
-
   - OneNote.TableCell: [appendTable](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendtable-member(1))
 
   - OneNote.TableRow: [parentTable](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-parenttable-member)

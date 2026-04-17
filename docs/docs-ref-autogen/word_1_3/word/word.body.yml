@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [load](/javascript/api/word/word.body#word-word-body-load-member(1)),
-  [parentBody](/javascript/api/word/word.body#word-word-body-parentbody-member), [parentBodyOrNullObject](/javascript/api/word/word.body#word-word-body-parentbodyornullobject-member), [set](/javascript/api/word/word.body#word-word-body-set-member(2)), [track](/javascript/api/word/word.body#word-word-body-track-member(1)), [untrack](/javascript/api/word/word.body#word-word-body-untrack-member(1))
-
   - Word.ContentControl: [parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)
 
   - Word.Document: [body](/javascript/api/word/word.document#word-word-document-body-member)

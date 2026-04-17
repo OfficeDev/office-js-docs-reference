@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfFigures: [load](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-load-member(1)),
-  [set](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-set-member(2)), [track](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-track-member(1)), [untrack](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-untrack-member(1))
-
   - Word.TableOfFiguresCollection: [add](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-add-member(1)),
   [items](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-items-member)
 

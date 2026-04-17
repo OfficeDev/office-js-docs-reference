@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.ChartPoint: [format](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-format-member)
 
-  - Excel.ChartPointFormat: [load](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-load-member(1)),
-  [set](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

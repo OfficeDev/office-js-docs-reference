@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.Comment: [load](/javascript/api/word/word.comment#word-word-comment-load-member(1)),
-  [set](/javascript/api/word/word.comment#word-word-comment-set-member(2)), [track](/javascript/api/word/word.comment#word-word-comment-track-member(1)), [untrack](/javascript/api/word/word.comment#word-word-comment-untrack-member(1))
-
   - Word.CommentCollection: [getFirst](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)
 

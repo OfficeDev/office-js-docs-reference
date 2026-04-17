@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.PaneCollection: [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1)),
-  [track](/javascript/api/word/word.panecollection#word-word-panecollection-track-member(1)), [untrack](/javascript/api/word/word.panecollection#word-word-panecollection-untrack-member(1))
-
   - Word.Window: [panes](/javascript/api/word/word.window#word-word-window-panes-member)
 
   #### Examples

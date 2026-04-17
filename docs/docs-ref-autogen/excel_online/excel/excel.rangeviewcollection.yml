@@ -14,8 +14,6 @@ remarks: >-
 
   - Excel.RangeView: [rows](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-rows-member)
 
-  - Excel.RangeViewCollection: [load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

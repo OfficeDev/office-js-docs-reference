@@ -8,13 +8,6 @@ remarks: >-
   [API set: ExcelApi
   1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-  #### Used by
-
-
-  - Excel.CustomFunctionManager: [load](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-load-member(1)),
-  [newObject](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-newobject-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

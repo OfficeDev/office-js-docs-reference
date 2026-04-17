@@ -14,8 +14,6 @@ remarks: >-
 
   - Excel.Comment: [replies](/javascript/api/excel/excel.comment#excel-excel-comment-replies-member)
 
-  - Excel.CommentReplyCollection: [load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

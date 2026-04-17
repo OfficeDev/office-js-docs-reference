@@ -27,9 +27,6 @@ remarks: >-
   - Word.Range: [insertTable](/javascript/api/word/word.range#word-word-range-inserttable-member(1)),
   [parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.range#word-word-range-parenttableornullobject-member)
 
-  - Word.Table: [getNext](/javascript/api/word/word.table#word-word-table-getnext-member(1)),
-  [getNextOrNullObject](/javascript/api/word/word.table#word-word-table-getnextornullobject-member(1)), [insertTable](/javascript/api/word/word.table#word-word-table-inserttable-member(1)), [load](/javascript/api/word/word.table#word-word-table-load-member(1)), [parentTable](/javascript/api/word/word.table#word-word-table-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.table#word-word-table-parenttableornullobject-member), [set](/javascript/api/word/word.table#word-word-table-set-member(2)), [track](/javascript/api/word/word.table#word-word-table-track-member(1)), [untrack](/javascript/api/word/word.table#word-word-table-untrack-member(1))
-
   - Word.TableCell: [parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
 
   - Word.TableCollection: [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1)),

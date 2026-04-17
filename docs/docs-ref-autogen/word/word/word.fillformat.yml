@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.FillFormat: [load](/javascript/api/word/word.fillformat#word-word-fillformat-load-member(1)),
-  [set](/javascript/api/word/word.fillformat#word-word-fillformat-set-member(2)), [track](/javascript/api/word/word.fillformat#word-word-fillformat-track-member(1)), [untrack](/javascript/api/word/word.fillformat#word-word-fillformat-untrack-member(1))
-
   - Word.Font: [fill](/javascript/api/word/word.font#word-word-font-fill-member)
 
 isPreview: false

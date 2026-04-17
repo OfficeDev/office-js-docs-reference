@@ -26,9 +26,6 @@ remarks: >-
   - Word.ContentControl: [contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))
 
-  - Word.ContentControlCollection: [getByChangeTrackingStates](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1)),
-  [getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1)), [getByTitle](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytitle-member(1)), [getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1)), [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1)), [track](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-track-member(1)), [untrack](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-untrack-member(1))
-
   - Word.Document: [contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1)), [selectContentControlsByTag](/javascript/api/word/word.document#word-word-document-selectcontentcontrolsbytag-member(1)), [selectContentControlsByTitle](/javascript/api/word/word.document#word-word-document-selectcontentcontrolsbytitle-member(1)), [selectLinkedControls](/javascript/api/word/word.document#word-word-document-selectlinkedcontrols-member(1)), [selectUnlinkedControls](/javascript/api/word/word.document#word-word-document-selectunlinkedcontrols-member(1))
 

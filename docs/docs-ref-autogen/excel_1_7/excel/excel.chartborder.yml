@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.ChartAreaFormat: [border](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-border-member)
 
-  - Excel.ChartBorder: [load](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-load-member(1)),
-  [set](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-set-member(2))
-
   - Excel.ChartPointFormat: [border](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-border-member)
 
   - Excel.ChartTitleFormat: [border](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-border-member)

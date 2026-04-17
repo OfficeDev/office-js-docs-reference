@@ -14,8 +14,6 @@ remarks: >-
 
   - Visio.Shape: [shapeDataItems](/javascript/api/visio/visio.shape#visio-visio-shape-shapedataitems-member)
 
-  - Visio.ShapeDataItemCollection: [load](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

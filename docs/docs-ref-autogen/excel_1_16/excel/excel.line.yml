@@ -14,9 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Line: [load](/javascript/api/excel/excel.line#excel-excel-line-load-member(1)),
-  [set](/javascript/api/excel/excel.line#excel-excel-line-set-member(2))
-
   - Excel.Shape: [line](/javascript/api/excel/excel.shape#excel-excel-shape-line-member)
 
 isPreview: false

@@ -19,9 +19,6 @@ remarks: >-
 
   - Word.ComboBoxContentControl: [listItems](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-listitems-member)
 
-  - Word.ContentControlListItemCollection: [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1)),
-  [track](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-track-member(1)), [untrack](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-untrack-member(1))
-
   - Word.DropDownListContentControl: [listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)
 
   #### Examples

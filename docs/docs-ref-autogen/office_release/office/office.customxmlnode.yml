@@ -11,8 +11,6 @@ remarks: >-
   #### Used by
 
 
-  - Office.CustomXmlNode: [getNodesAsync](/javascript/api/office/office.customxmlnode#office-office-customxmlnode-getnodesasync-member(1))
-
   - Office.CustomXmlPart: [getNodesAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-getnodesasync-member(1))
 
   - Office.NodeDeletedEventArgs: [oldNextSibling](/javascript/api/office/office.nodedeletedeventargs#office-office-nodedeletedeventargs-oldnextsibling-member),

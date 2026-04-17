@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.ChartDataLabel: [getTailAnchor](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-gettailanchor-member(1))
 
-  - Excel.ChartDataLabelAnchor: [load](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-load-member(1)),
-  [set](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

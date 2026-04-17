@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableColumn: [load](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-load-member(1))
-
   - PowerPoint.TableColumnCollection: [deleteColumns](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-deletecolumns-member(1)),
   [getItemAt](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-getitemat-member(1)), [items](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-items-member)
 

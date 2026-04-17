@@ -28,9 +28,6 @@ remarks: >-
 
   - Word.Range: [search](/javascript/api/word/word.range#word-word-range-search-member(1))
 
-  - Word.SearchOptions: [load](/javascript/api/word/word.searchoptions#word-word-searchoptions-load-member(1)),
-  [newObject](/javascript/api/word/word.searchoptions#word-word-searchoptions-newobject-member(1)), [set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(2))
-
   - Word.Table: [search](/javascript/api/word/word.table#word-word-table-search-member(1))
 
   - Word.TableRow: [search](/javascript/api/word/word.tablerow#word-word-tablerow-search-member(1))

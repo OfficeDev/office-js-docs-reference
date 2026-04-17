@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Borders: [load](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-load-member(1))
-
   - PowerPoint.TableCell: [borders](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-borders-member)
 
 isPreview: false

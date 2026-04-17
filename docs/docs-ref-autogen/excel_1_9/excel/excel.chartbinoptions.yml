@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartBinOptions: [load](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-load-member(1)),
-  [set](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-set-member(2))
-
   - Excel.ChartSeries: [binOptions](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-binoptions-member)
 
 isPreview: false

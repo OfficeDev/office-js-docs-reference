@@ -15,8 +15,6 @@ remarks: >-
 
   - PowerPoint.Presentation: [slideMasters](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-slidemasters-member)
 
-  - PowerPoint.SlideMasterCollection: [load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(1))
-
   #### Examples
 
 

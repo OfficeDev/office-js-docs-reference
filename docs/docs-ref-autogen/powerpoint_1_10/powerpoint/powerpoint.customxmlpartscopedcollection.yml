@@ -17,8 +17,6 @@ remarks: >-
 
   - PowerPoint.CustomXmlPartCollection: [getByNamespace](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getbynamespace-member(1))
 
-  - PowerPoint.CustomXmlPartScopedCollection: [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

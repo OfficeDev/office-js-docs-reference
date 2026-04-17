@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotItem: [load](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-load-member(1)),
-  [set](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-set-member(2))
-
   - Excel.PivotItemCollection: [getItem](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitem-member(1)),
   [getItemOrNullObject](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-items-member)
 

@@ -16,8 +16,6 @@ remarks: >-
 
   - Excel.CultureInfo: [numberFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-numberformat-member)
 
-  - Excel.NumberFormatInfo: [load](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

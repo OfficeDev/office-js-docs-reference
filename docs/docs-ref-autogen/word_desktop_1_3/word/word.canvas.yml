@@ -15,9 +15,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.Canvas: [load](/javascript/api/word/word.canvas#word-word-canvas-load-member(1)),
-  [set](/javascript/api/word/word.canvas#word-word-canvas-set-member(2)), [track](/javascript/api/word/word.canvas#word-word-canvas-track-member(1)), [untrack](/javascript/api/word/word.canvas#word-word-canvas-untrack-member(1))
-
   - Word.Shape: [canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)
 
   #### Examples

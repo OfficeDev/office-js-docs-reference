@@ -15,9 +15,6 @@ remarks: >-
   - Excel.ConditionalFormat: [custom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-custom-member),
   [customOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-customornullobject-member)
 
-  - Excel.CustomConditionalFormat: [load](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-load-member(1)),
-  [set](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

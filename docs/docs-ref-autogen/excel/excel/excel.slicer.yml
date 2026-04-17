@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Slicer: [load](/javascript/api/excel/excel.slicer#excel-excel-slicer-load-member(1)),
-  [set](/javascript/api/excel/excel.slicer#excel-excel-slicer-set-member(2))
-
   - Excel.SlicerCollection: [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-items-member)
 

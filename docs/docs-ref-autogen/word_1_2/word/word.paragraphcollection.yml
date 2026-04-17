@@ -19,9 +19,6 @@ remarks: >-
 
   - Word.ContentControl: [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
 
-  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1)),
-  [track](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-track-member(1)), [untrack](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-untrack-member(1))
-
   - Word.Range: [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
 
   #### Examples

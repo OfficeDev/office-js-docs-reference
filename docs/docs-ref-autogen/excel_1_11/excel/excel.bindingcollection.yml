@@ -14,8 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BindingCollection: [load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
-
   - Excel.Workbook: [bindings](/javascript/api/excel/excel.workbook#excel-excel-workbook-bindings-member)
 
 isPreview: false

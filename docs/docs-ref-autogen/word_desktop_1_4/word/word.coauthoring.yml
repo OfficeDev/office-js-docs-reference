@@ -14,9 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.Coauthoring: [load](/javascript/api/word/word.coauthoring#word-word-coauthoring-load-member(1)),
-  [track](/javascript/api/word/word.coauthoring#word-word-coauthoring-track-member(1)), [untrack](/javascript/api/word/word.coauthoring#word-word-coauthoring-untrack-member(1))
-
   - Word.Document: [coauthoring](/javascript/api/word/word.document#word-word-document-coauthoring-member)
 
 isPreview: false

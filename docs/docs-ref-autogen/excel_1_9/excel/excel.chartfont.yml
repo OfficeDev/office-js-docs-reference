@@ -23,9 +23,6 @@ remarks: >-
 
   - Excel.ChartDataLabelFormat: [font](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-font-member)
 
-  - Excel.ChartFont: [load](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-load-member(1)),
-  [set](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-set-member(2))
-
   - Excel.ChartFormatString: [font](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-font-member)
 
   - Excel.ChartLegendFormat: [font](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-font-member)

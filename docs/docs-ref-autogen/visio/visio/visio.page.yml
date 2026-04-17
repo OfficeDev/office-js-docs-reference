@@ -14,9 +14,6 @@ remarks: >-
 
   - Visio.Document: [getActivePage](/javascript/api/visio/visio.document#visio-visio-document-getactivepage-member(1))
 
-  - Visio.Page: [load](/javascript/api/visio/visio.page#visio-visio-page-load-member(1)),
-  [set](/javascript/api/visio/visio.page#visio-visio-page-set-member(2))
-
   - Visio.PageCollection: [getItem](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-getitem-member(1)),
   [items](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-items-member)
 

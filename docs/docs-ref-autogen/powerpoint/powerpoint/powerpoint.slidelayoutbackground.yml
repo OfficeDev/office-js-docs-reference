@@ -14,8 +14,6 @@ remarks: >-
 
   - PowerPoint.SlideLayout: [background](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-background-member)
 
-  - PowerPoint.SlideLayoutBackground: [load](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Note: [load](/javascript/api/excel/excel.note#excel-excel-note-load-member(1)),
-  [set](/javascript/api/excel/excel.note#excel-excel-note-set-member(2))
-
   - Excel.NoteCollection: [add](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-items-member)
 

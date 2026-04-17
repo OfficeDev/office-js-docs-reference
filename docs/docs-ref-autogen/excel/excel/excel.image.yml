@@ -14,9 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Image: [load](/javascript/api/excel/excel.image#excel-excel-image-load-member(1)),
-  [set](/javascript/api/excel/excel.image#excel-excel-image-set-member(2))
-
   - Excel.Shape: [image](/javascript/api/excel/excel.shape#excel-excel-shape-image-member)
 
 isPreview: false

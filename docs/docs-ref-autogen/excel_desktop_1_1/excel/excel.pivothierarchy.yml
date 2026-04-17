@@ -16,9 +16,6 @@ remarks: >-
 
   - Excel.FilterPivotHierarchyCollection: [add](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-add-member(1))
 
-  - Excel.PivotHierarchy: [load](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-load-member(1)),
-  [set](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-set-member(2))
-
   - Excel.PivotHierarchyCollection: [getItem](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitem-member(1)),
   [getItemOrNullObject](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-items-member)
 

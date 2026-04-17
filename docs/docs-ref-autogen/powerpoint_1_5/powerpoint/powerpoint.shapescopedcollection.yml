@@ -15,8 +15,6 @@ remarks: >-
 
   - PowerPoint.Presentation: [getSelectedShapes](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedshapes-member(1))
 
-  - PowerPoint.ShapeScopedCollection: [load](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-load-member(1))
-
   #### Examples
 
 

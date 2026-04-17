@@ -13,8 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeCollection: [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
-
   - PowerPoint.Slide: [shapes](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-shapes-member)
 
   - PowerPoint.SlideLayout: [shapes](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-shapes-member)

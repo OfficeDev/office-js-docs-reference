@@ -14,8 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AutoFilter: [load](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-load-member(1))
-
   - Excel.Table: [autoFilter](/javascript/api/excel/excel.table#excel-excel-table-autofilter-member)
 
   - Excel.Worksheet: [autoFilter](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-autofilter-member)

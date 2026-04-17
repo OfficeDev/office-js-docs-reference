@@ -14,8 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormatCollection: [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
-
   - Excel.Range: [conditionalFormats](/javascript/api/excel/excel.range#excel-excel-range-conditionalformats-member)
 
   - Excel.RangeAreas: [conditionalFormats](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-conditionalformats-member)

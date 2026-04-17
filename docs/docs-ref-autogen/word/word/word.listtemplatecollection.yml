@@ -17,9 +17,6 @@ remarks: >-
 
   - Word.Document: [listTemplates](/javascript/api/word/word.document#word-word-document-listtemplates-member)
 
-  - Word.ListTemplateCollection: [load](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-load-member(1)),
-  [track](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-track-member(1)), [untrack](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-untrack-member(1))
-
   - Word.ListTemplateGallery: [listTemplates](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-listtemplates-member)
 
   - Word.Template: [listTemplates](/javascript/api/word/word.template#word-word-template-listtemplates-member)

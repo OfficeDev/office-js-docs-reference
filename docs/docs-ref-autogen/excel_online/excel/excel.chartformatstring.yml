@@ -16,9 +16,6 @@ remarks: >-
 
   - Excel.ChartDataLabel: [getSubstring](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-getsubstring-member(1))
 
-  - Excel.ChartFormatString: [load](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-load-member(1)),
-  [set](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-set-member(2))
-
   - Excel.ChartTitle: [getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
 
 isPreview: false

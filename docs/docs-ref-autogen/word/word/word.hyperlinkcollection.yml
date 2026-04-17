@@ -16,9 +16,6 @@ remarks: >-
 
   - Word.Document: [hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)
 
-  - Word.HyperlinkCollection: [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1)),
-  [track](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-track-member(1)), [untrack](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-untrack-member(1))
-
   - Word.Range: [hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)
 
 isPreview: false

@@ -20,9 +20,6 @@ remarks: >-
 
   - Word.Range: [shading](/javascript/api/word/word.range#word-word-range-shading-member)
 
-  - Word.ShadingUniversal: [load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1)),
-  [set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(2)), [track](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-track-member(1)), [untrack](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-untrack-member(1))
-
   - Word.TableColumn: [shading](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-shading-member)
 
 isPreview: false

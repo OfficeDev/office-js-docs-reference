@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalDataBarPositiveFormat: [load](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-load-member(1)),
-  [set](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-set-member(2))
-
   - Excel.DataBarConditionalFormat: [positiveFormat](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-positiveformat-member)
 
 isPreview: false

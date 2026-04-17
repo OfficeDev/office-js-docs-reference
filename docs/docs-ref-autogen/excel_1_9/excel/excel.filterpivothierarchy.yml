@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.FilterPivotHierarchy: [load](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-load-member(1)),
-  [set](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-set-member(2))
-
   - Excel.FilterPivotHierarchyCollection: [add](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-items-member), [remove](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-remove-member(1))
 

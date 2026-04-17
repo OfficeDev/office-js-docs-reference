@@ -18,8 +18,6 @@ remarks: >-
   - PowerPoint.Shape: [getParentSlide](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslide-member(1)),
   [getParentSlideOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslideornullobject-member(1))
 
-  - PowerPoint.Slide: [load](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-load-member(1))
-
   - PowerPoint.SlideCollection: [exportAsBase64Presentation](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-exportasbase64presentation-member(1)),
   [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
 

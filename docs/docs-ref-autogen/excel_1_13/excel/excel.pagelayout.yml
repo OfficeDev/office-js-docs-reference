@@ -15,9 +15,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageLayout: [load](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-load-member(1)),
-  [set](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-set-member(2))
-
   - Excel.Worksheet: [pageLayout](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pagelayout-member)
 
 isPreview: false

@@ -15,9 +15,6 @@ remarks: >-
 
   - Word.CustomXmlNode: [ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)
 
-  - Word.CustomXmlPart: [load](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-load-member(1)),
-  [set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(2)), [track](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-track-member(1)), [untrack](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-untrack-member(1))
-
   - Word.CustomXmlPartCollection: [add](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1)),
   [getItem](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitemornullobject-member(1)), [items](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-items-member)
 

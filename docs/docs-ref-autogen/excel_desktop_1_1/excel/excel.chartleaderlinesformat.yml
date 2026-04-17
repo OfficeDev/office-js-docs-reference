@@ -15,9 +15,6 @@ remarks: >-
 
   - Excel.ChartLeaderLines: [format](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-format-member)
 
-  - Excel.ChartLeaderLinesFormat: [load](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-load-member(1)),
-  [set](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-set-member(2))
-
   #### Examples
 
 

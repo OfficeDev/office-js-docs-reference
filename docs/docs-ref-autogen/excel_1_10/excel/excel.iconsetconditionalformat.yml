@@ -15,9 +15,6 @@ remarks: >-
   - Excel.ConditionalFormat: [iconSet](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconset-member),
   [iconSetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconsetornullobject-member)
 
-  - Excel.IconSetConditionalFormat: [load](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-load-member(1)),
-  [set](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

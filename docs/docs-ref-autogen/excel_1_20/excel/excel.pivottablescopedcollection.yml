@@ -15,8 +15,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTableScopedCollection: [load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
-
   - Excel.Range: [getPivotTables](/javascript/api/excel/excel.range#excel-excel-range-getpivottables-member(1))
 
 isPreview: false

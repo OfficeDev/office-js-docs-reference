@@ -23,9 +23,6 @@ remarks: >-
 
   - Word.Pane: [selection](/javascript/api/word/word.pane#word-word-pane-selection-member)
 
-  - Word.Selection: [load](/javascript/api/word/word.selection#word-word-selection-load-member(1)),
-  [track](/javascript/api/word/word.selection#word-word-selection-track-member(1)), [untrack](/javascript/api/word/word.selection#word-word-selection-untrack-member(1))
-
   #### Examples
 
 

@@ -16,9 +16,6 @@ remarks: >-
   - Word.Body: [parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member),
   [parentSectionOrNullObject](/javascript/api/word/word.body#word-word-body-parentsectionornullobject-member)
 
-  - Word.Section: [getNext](/javascript/api/word/word.section#word-word-section-getnext-member(1)),
-  [getNextOrNullObject](/javascript/api/word/word.section#word-word-section-getnextornullobject-member(1)), [load](/javascript/api/word/word.section#word-word-section-load-member(1)), [set](/javascript/api/word/word.section#word-word-section-set-member(2)), [track](/javascript/api/word/word.section#word-word-section-track-member(1)), [untrack](/javascript/api/word/word.section#word-word-section-untrack-member(1))
-
   - Word.SectionCollection: [getFirst](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
 

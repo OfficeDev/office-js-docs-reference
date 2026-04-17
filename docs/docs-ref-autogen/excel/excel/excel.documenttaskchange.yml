@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DocumentTaskChange: [load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1)),
-  [newObject](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-newobject-member(1))
-
   - Excel.DocumentTaskChangeCollection: [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1)),
   [items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
 

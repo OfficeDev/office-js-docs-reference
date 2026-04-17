@@ -17,9 +17,6 @@ remarks: >-
   - Excel.PivotLayout: [pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member),
   [setStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))
 
-  - Excel.PivotTableStyle: [duplicate](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-duplicate-member(1)),
-  [load](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-load-member(1)), [set](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-set-member(2))
-
   - Excel.PivotTableStyleCollection: [add](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-add-member(1)),
   [getDefault](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getdefault-member(1)), [getItem](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-items-member), [setDefault](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-setdefault-member(1))
 

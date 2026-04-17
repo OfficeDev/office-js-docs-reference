@@ -18,9 +18,6 @@ remarks: >-
 
   - Word.Range: [revisions](/javascript/api/word/word.range#word-word-range-revisions-member)
 
-  - Word.RevisionCollection: [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1)),
-  [track](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-track-member(1)), [untrack](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-untrack-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

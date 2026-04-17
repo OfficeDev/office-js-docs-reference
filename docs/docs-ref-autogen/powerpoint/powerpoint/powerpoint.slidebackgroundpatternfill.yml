@@ -18,8 +18,6 @@ remarks: >-
 
   - PowerPoint.SlideBackgroundFill: [getPatternFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpatternfillornullobject-member(1))
 
-  - PowerPoint.SlideBackgroundPatternFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-load-member(1))
-
   #### Examples
 
 

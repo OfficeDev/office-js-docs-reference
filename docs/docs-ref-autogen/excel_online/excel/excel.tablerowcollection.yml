@@ -22,8 +22,6 @@ remarks: >-
 
   - Excel.Table: [rows](/javascript/api/excel/excel.table#excel-excel-table-rows-member)
 
-  - Excel.TableRowCollection: [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

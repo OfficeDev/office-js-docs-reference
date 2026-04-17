@@ -17,9 +17,6 @@ remarks: >-
 
   - Word.ContentControl: [insertInlinePictureFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertinlinepicturefrombase64-member(1))
 
-  - Word.InlinePicture: [insertInlinePictureFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertinlinepicturefrombase64-member(1)),
-  [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1)), [set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(2)), [track](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-track-member(1)), [untrack](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-untrack-member(1))
-
   - Word.InlinePictureCollection: [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
 
   - Word.Paragraph: [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))

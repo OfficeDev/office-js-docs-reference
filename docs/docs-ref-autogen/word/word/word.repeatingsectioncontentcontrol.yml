@@ -14,9 +14,6 @@ remarks: >-
 
   - Word.ContentControl: [repeatingSectionContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-repeatingsectioncontentcontrol-member)
 
-  - Word.RepeatingSectionContentControl: [load](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-load-member(1)),
-  [set](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-set-member(2)), [track](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-untrack-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

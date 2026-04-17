@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.SlicerCollection: [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
-  - Excel.TableColumn: [load](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-load-member(1)),
-  [set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(2))
-
   - Excel.TableColumnCollection: [add](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-items-member)
 

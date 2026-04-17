@@ -17,9 +17,6 @@ remarks: >-
 
   - Word.Document: [tablesOfContents](/javascript/api/word/word.document#word-word-document-tablesofcontents-member)
 
-  - Word.TableOfContentsCollection: [load](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-load-member(1)),
-  [track](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-track-member(1)), [untrack](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-untrack-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

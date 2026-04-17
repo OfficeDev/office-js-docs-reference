@@ -17,9 +17,6 @@ remarks: >-
 
   - OneNote.InkAnalysis: [page](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-page-member)
 
-  - OneNote.Page: [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1)),
-  [copyToSectionAndSetClassNotebookPageSource](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosectionandsetclassnotebookpagesource-member(1)), [insertPageAsSibling](/javascript/api/onenote/onenote.page#onenote-onenote-page-insertpageassibling-member(1)), [load](/javascript/api/onenote/onenote.page#onenote-onenote-page-load-member(1)), [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(2)), [track](/javascript/api/onenote/onenote.page#onenote-onenote-page-track-member(1)), [untrack](/javascript/api/onenote/onenote.page#onenote-onenote-page-untrack-member(1))
-
   - OneNote.PageCollection: [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1)),
   [getItemAt](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-items-member)
 

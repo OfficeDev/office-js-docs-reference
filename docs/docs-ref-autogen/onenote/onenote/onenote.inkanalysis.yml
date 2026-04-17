@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysis: [load](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-load-member(1)),
-  [set](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-set-member(2)), [track](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-untrack-member(1))
-
   - OneNote.InkAnalysisParagraph: [inkAnalysis](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-inkanalysis-member)
 
   - OneNote.Page: [inkAnalysisOrNull](/javascript/api/onenote/onenote.page#onenote-onenote-page-inkanalysisornull-member)

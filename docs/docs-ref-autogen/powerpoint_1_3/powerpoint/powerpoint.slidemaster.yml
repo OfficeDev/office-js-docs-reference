@@ -15,8 +15,6 @@ remarks: >-
 
   - PowerPoint.Slide: [slideMaster](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-slidemaster-member)
 
-  - PowerPoint.SlideMaster: [load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
-
   - PowerPoint.SlideMasterCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitem-member(1)),
   [getItemAt](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-items-member)
 

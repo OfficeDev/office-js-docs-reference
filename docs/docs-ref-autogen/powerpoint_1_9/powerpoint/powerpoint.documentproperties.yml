@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.DocumentProperties: [load](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-load-member(1))
-
   - PowerPoint.Presentation: [properties](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-properties-member)
 
 isPreview: false

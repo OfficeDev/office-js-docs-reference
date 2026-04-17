@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.Shading: [load](/javascript/api/word/word.shading#word-word-shading-load-member(1)),
-  [set](/javascript/api/word/word.shading#word-word-shading-set-member(2)), [track](/javascript/api/word/word.shading#word-word-shading-track-member(1)), [untrack](/javascript/api/word/word.shading#word-word-shading-untrack-member(1))
-
   - Word.Style: [shading](/javascript/api/word/word.style#word-word-style-shading-member)
 
   - Word.TableStyle: [shading](/javascript/api/word/word.tablestyle#word-word-tablestyle-shading-member)

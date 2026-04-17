@@ -14,9 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Word.BorderUniversalCollection: [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1)),
-  [track](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-track-member(1)), [untrack](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-untrack-member(1))
-
   - Word.ConditionalStyle: [borders](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-borders-member)
 
   - Word.Font: [borders](/javascript/api/word/word.font#word-word-font-borders-member)

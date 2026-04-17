@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ShapeCollection: [load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(1))
-
   - Excel.Worksheet: [shapes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-shapes-member)
 
 isPreview: false

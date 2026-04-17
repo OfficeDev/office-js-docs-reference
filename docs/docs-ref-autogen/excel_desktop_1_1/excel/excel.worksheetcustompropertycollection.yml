@@ -14,8 +14,6 @@ remarks: >-
 
   - Excel.Worksheet: [customProperties](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-customproperties-member)
 
-  - Excel.WorksheetCustomPropertyCollection: [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

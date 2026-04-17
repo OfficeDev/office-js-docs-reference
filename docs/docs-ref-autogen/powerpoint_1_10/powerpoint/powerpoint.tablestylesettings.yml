@@ -14,8 +14,6 @@ remarks: >-
 
   - PowerPoint.Table: [styleSettings](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-stylesettings-member)
 
-  - PowerPoint.TableStyleSettings: [load](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

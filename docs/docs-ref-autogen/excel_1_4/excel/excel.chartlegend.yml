@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.Chart: [legend](/javascript/api/excel/excel.chart#excel-excel-chart-legend-member)
 
-  - Excel.ChartLegend: [load](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-load-member(1)),
-  [set](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

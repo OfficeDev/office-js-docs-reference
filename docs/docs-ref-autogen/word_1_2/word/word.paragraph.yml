@@ -22,9 +22,6 @@ remarks: >-
   - Word.InlinePicture: [insertParagraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertparagraph-member(1)),
   [paragraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-paragraph-member)
 
-  - Word.Paragraph: [insertParagraph](/javascript/api/word/word.paragraph#word-word-paragraph-insertparagraph-member(1)),
-  [load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1)), [set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(2)), [track](/javascript/api/word/word.paragraph#word-word-paragraph-track-member(1)), [untrack](/javascript/api/word/word.paragraph#word-word-paragraph-untrack-member(1))
-
   - Word.ParagraphCollection: [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
 
   - Word.Range: [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))

@@ -15,8 +15,6 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeFont: [load](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-load-member(1))
-
   - PowerPoint.TextRange: [font](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-font-member)
 
   #### Examples

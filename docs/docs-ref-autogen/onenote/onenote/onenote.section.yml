@@ -20,9 +20,6 @@ remarks: >-
   - OneNote.Page: [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1)),
   [copyToSectionAndSetClassNotebookPageSource](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosectionandsetclassnotebookpagesource-member(1)), [parentSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-parentsection-member)
 
-  - OneNote.Section: [copyToNotebook](/javascript/api/onenote/onenote.section#onenote-onenote-section-copytonotebook-member(1)),
-  [copyToSectionGroup](/javascript/api/onenote/onenote.section#onenote-onenote-section-copytosectiongroup-member(1)), [insertSectionAsSibling](/javascript/api/onenote/onenote.section#onenote-onenote-section-insertsectionassibling-member(1)), [load](/javascript/api/onenote/onenote.section#onenote-onenote-section-load-member(1)), [track](/javascript/api/onenote/onenote.section#onenote-onenote-section-track-member(1)), [untrack](/javascript/api/onenote/onenote.section#onenote-onenote-section-untrack-member(1))
-
   - OneNote.SectionCollection: [getItem](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-getitem-member(1)),
   [getItemAt](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-items-member)
 

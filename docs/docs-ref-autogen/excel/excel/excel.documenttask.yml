@@ -18,8 +18,6 @@ remarks: >-
   - Excel.CommentReply: [assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1)),
   [getTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1)), [getTaskOrNullObject](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))
 
-  - Excel.DocumentTask: [load](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-load-member(1))
-
   - Excel.DocumentTaskCollection: [getItem](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1)),
   [getItemAt](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)
 

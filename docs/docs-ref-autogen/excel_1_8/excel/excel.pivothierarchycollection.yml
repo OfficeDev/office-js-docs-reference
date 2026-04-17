@@ -14,8 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotHierarchyCollection: [load](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-load-member(1))
-
   - Excel.PivotTable: [hierarchies](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-hierarchies-member)
 
 isPreview: false

@@ -14,9 +14,6 @@ remarks: >-
 
   - Word.Coauthoring: [conflicts](/javascript/api/word/word.coauthoring#word-word-coauthoring-conflicts-member)
 
-  - Word.ConflictCollection: [load](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-load-member(1)),
-  [track](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-track-member(1)), [untrack](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-untrack-member(1))
-
   - Word.Range: [conflicts](/javascript/api/word/word.range#word-word-range-conflicts-member)
 
 isPreview: false

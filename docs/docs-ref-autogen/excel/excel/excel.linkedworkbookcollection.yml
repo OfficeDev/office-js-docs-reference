@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedWorkbookCollection: [load](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-load-member(1))
-
   - Excel.Workbook: [linkedWorkbooks](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedworkbooks-member)
 
 isPreview: false

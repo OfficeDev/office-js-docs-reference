@@ -15,9 +15,6 @@ remarks: >-
 
   - Word.Style: [tableStyle](/javascript/api/word/word.style#word-word-style-tablestyle-member)
 
-  - Word.TableStyle: [load](/javascript/api/word/word.tablestyle#word-word-tablestyle-load-member(1)),
-  [set](/javascript/api/word/word.tablestyle#word-word-tablestyle-set-member(2)), [track](/javascript/api/word/word.tablestyle#word-word-tablestyle-track-member(1)), [untrack](/javascript/api/word/word.tablestyle#word-word-tablestyle-untrack-member(1))
-
   #### Examples
 
 

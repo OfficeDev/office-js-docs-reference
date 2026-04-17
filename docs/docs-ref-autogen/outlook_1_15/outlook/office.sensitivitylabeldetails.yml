@@ -35,8 +35,6 @@ remarks: >-
 
   - Office.SensitivityLabel: [setAsync](/javascript/api/outlook/office.sensitivitylabel#outlook-office-sensitivitylabel-setasync-member(1))
 
-  - Office.SensitivityLabelDetails: [children](/javascript/api/outlook/office.sensitivitylabeldetails#outlook-office-sensitivitylabeldetails-children-member)
-
   - Office.SensitivityLabelsCatalog: [getAsync](/javascript/api/outlook/office.sensitivitylabelscatalog#outlook-office-sensitivitylabelscatalog-getasync-member(1))
 
   #### Examples

@@ -17,9 +17,6 @@ remarks: >-
 
   - Word.Document: [documentLibraryVersions](/javascript/api/word/word.document#word-word-document-documentlibraryversions-member)
 
-  - Word.DocumentLibraryVersionCollection: [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1)),
-  [track](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-track-member(1)), [untrack](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-untrack-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

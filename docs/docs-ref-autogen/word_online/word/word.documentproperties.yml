@@ -15,9 +15,6 @@ remarks: >-
 
   - Word.Document: [properties](/javascript/api/word/word.document#word-word-document-properties-member)
 
-  - Word.DocumentProperties: [load](/javascript/api/word/word.documentproperties#word-word-documentproperties-load-member(1)),
-  [set](/javascript/api/word/word.documentproperties#word-word-documentproperties-set-member(2)), [track](/javascript/api/word/word.documentproperties#word-word-documentproperties-track-member(1)), [untrack](/javascript/api/word/word.documentproperties#word-word-documentproperties-untrack-member(1))
-
   #### Examples
 
 

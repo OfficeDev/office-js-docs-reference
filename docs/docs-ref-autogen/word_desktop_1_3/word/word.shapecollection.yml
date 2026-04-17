@@ -24,9 +24,6 @@ remarks: >-
 
   - Word.Range: [shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
 
-  - Word.ShapeCollection: [getByGeometricTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1)),
-  [getByIds](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyids-member(1)), [getByNames](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbynames-member(1)), [getByTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1)), [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(1)), [track](/javascript/api/word/word.shapecollection#word-word-shapecollection-track-member(1)), [untrack](/javascript/api/word/word.shapecollection#word-word-shapecollection-untrack-member(1))
-
   - Word.ShapeGroup: [shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member),
   [ungroup](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))
 

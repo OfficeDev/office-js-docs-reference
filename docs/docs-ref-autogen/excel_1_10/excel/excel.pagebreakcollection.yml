@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageBreakCollection: [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
-
   - Excel.Worksheet: [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member),
   [verticalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-verticalpagebreaks-member)
 

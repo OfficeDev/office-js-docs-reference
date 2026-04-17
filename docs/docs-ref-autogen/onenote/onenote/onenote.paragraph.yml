@@ -21,9 +21,6 @@ remarks: >-
 
   - OneNote.InkWord: [paragraph](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-paragraph-member)
 
-  - OneNote.Paragraph: [load](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-load-member(1)),
-  [parentParagraph](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraph-member), [parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraphornull-member), [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(2)), [track](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-track-member(1)), [untrack](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-untrack-member(1))
-
   - OneNote.ParagraphCollection: [getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1)),
   [getItemAt](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-items-member)
 

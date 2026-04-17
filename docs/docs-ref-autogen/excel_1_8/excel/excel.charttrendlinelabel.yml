@@ -14,9 +14,6 @@ remarks: >-
 
   - Excel.ChartTrendline: [label](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-label-member)
 
-  - Excel.ChartTrendlineLabel: [load](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-load-member(1)),
-  [set](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

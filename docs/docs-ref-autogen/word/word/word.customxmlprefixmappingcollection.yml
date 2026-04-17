@@ -17,9 +17,6 @@ remarks: >-
 
   - Word.CustomXmlPart: [namespaceManager](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespacemanager-member)
 
-  - Word.CustomXmlPrefixMappingCollection: [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(1)),
-  [track](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-track-member(1)), [untrack](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-untrack-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

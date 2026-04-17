@@ -13,9 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [load](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-load-member(1)),
-  [set](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-set-member(2))
-
   - Excel.ChartSeriesCollection: [getItemAt](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-getitemat-member(1)),
   [items](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-items-member)
 

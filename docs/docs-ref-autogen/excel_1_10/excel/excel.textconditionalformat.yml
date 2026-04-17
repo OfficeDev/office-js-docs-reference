@@ -15,9 +15,6 @@ remarks: >-
   - Excel.ConditionalFormat: [textComparison](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparison-member),
   [textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparisonornullobject-member)
 
-  - Excel.TextConditionalFormat: [load](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-load-member(1)),
-  [set](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-set-member(2))
-
 isPreview: false
 isDeprecated: false
 type: class

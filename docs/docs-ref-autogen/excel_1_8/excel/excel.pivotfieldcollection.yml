@@ -16,8 +16,6 @@ remarks: >-
 
   - Excel.FilterPivotHierarchy: [fields](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-fields-member)
 
-  - Excel.PivotFieldCollection: [load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
-
   - Excel.PivotHierarchy: [fields](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-fields-member)
 
   - Excel.RowColumnPivotHierarchy: [fields](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-fields-member)

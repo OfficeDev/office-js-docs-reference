@@ -12,9 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.HeaderFooterGroup: [load](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-load-member(1)),
-  [set](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-set-member(2))
-
   - Excel.PageLayout: [headersFooters](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-headersfooters-member)
 
 isPreview: false

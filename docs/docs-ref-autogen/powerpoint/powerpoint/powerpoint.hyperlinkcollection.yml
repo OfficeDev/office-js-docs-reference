@@ -13,8 +13,6 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.HyperlinkCollection: [load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(1))
-
   - PowerPoint.Slide: [hyperlinks](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-hyperlinks-member)
 
   #### Examples

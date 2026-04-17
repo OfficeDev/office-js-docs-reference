@@ -21,9 +21,6 @@ remarks: >-
 
   - Word.Range: [search](/javascript/api/word/word.range#word-word-range-search-member(1))
 
-  - Word.RangeCollection: [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1)),
-  [track](/javascript/api/word/word.rangecollection#word-word-rangecollection-track-member(1)), [untrack](/javascript/api/word/word.rangecollection#word-word-rangecollection-untrack-member(1))
-
   #### Examples
 
 

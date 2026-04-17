@@ -14,8 +14,6 @@ remarks: >-
 
   - Excel.NamedItem: [arrayValues](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-arrayvalues-member)
 
-  - Excel.NamedItemArrayValues: [load](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

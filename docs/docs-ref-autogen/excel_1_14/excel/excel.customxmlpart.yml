@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CustomXmlPart: [load](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-load-member(1))
-
   - Excel.CustomXmlPartCollection: [add](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-items-member)
 

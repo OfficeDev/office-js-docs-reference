@@ -14,8 +14,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTableCollection: [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
-
   - Excel.Workbook: [pivotTables](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottables-member)
 
   - Excel.Worksheet: [pivotTables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pivottables-member)

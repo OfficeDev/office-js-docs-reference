@@ -12,8 +12,6 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CommentCollection: [load](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-load-member(1))
-
   - Excel.Workbook: [comments](/javascript/api/excel/excel.workbook#excel-excel-workbook-comments-member)
 
   - Excel.Worksheet: [comments](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-comments-member)

@@ -17,8 +17,6 @@ remarks: >-
 
   - PowerPoint.ShapeGroup: [shapes](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-shapes-member)
 
-  - PowerPoint.ShapeScopedCollection: [load](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-load-member(1))
-
   #### Examples
 
 

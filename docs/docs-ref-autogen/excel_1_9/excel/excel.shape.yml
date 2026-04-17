@@ -27,9 +27,6 @@ remarks: >-
   - Excel.Line: [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member),
   [connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1)), [connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1)), [endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member), [shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
 
-  - Excel.Shape: [load](/javascript/api/excel/excel.shape#excel-excel-shape-load-member(1)),
-  [parentGroup](/javascript/api/excel/excel.shape#excel-excel-shape-parentgroup-member), [set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(2))
-
   - Excel.ShapeCollection: [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1)),
   [addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1)), [addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1)), [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1)), [addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1)), [getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
 

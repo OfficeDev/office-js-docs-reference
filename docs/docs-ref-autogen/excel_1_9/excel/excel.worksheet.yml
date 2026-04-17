@@ -31,9 +31,6 @@ remarks: >-
 
   - Excel.Table: [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
 
-  - Excel.Worksheet: [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1)),
-  [getNext](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnext-member(1)), [getNextOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnextornullobject-member(1)), [getPrevious](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getprevious-member(1)), [getPreviousOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getpreviousornullobject-member(1)), [load](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-load-member(1)), [set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(2))
-
   - Excel.WorksheetCollection: [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)),
   [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
 

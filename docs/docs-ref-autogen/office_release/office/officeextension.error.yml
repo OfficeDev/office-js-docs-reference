@@ -6,11 +6,7 @@ fullName: OfficeExtension.Error
 summary: >-
   The error object returned by `context.sync()`<!-- -->, if a promise is
   rejected due to an error while processing the request.
-remarks: >-
-  #### Used by
-
-
-  - OfficeExtension.Error: [innerError](/javascript/api/office/officeextension.error#office-officeextension-error-innererror-member)
+remarks: ''
 
 isPreview: false
 isDeprecated: false

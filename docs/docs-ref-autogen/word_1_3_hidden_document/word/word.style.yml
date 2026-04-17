@@ -8,14 +8,6 @@ remarks: >-
   [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
-  #### Used by
-
-
-  - Word.Style: [load](/javascript/api/word/word.style#word-word-style-load-member(1)),
-  [set](/javascript/api/word/word.style#word-word-style-set-member(2)), [track](/javascript/api/word/word.style#word-word-style-track-member(1)), [untrack](/javascript/api/word/word.style#word-word-style-untrack-member(1))
-
   #### Examples
 
 

@@ -16,8 +16,6 @@ remarks: >-
 
   - Excel.Shape: [group](/javascript/api/excel/excel.shape#excel-excel-shape-group-member)
 
-  - Excel.ShapeGroup: [load](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-load-member(1))
-
 isPreview: false
 isDeprecated: false
 type: class

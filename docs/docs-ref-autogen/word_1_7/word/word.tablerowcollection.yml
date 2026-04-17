@@ -22,9 +22,6 @@ remarks: >-
 
   - Word.TableRow: [insertRows](/javascript/api/word/word.tablerow#word-word-tablerow-insertrows-member(1))
 
-  - Word.TableRowCollection: [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1)),
-  [track](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-track-member(1)), [untrack](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-untrack-member(1))
-
   #### Examples
 
 

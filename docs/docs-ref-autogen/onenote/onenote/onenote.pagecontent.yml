@@ -20,9 +20,6 @@ remarks: >-
 
   - OneNote.Outline: [pageContent](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-pagecontent-member)
 
-  - OneNote.PageContent: [load](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-load-member(1)),
-  [set](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-set-member(2)), [track](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-track-member(1)), [untrack](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-untrack-member(1))
-
   - OneNote.PageContentCollection: [getItem](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitem-member(1)),
   [getItemAt](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-items-member)
 

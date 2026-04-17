@@ -15,9 +15,6 @@ remarks: >-
 
   - Word.Body: [getComments](/javascript/api/word/word.body#word-word-body-getcomments-member(1))
 
-  - Word.CommentCollection: [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1)),
-  [track](/javascript/api/word/word.commentcollection#word-word-commentcollection-track-member(1)), [untrack](/javascript/api/word/word.commentcollection#word-word-commentcollection-untrack-member(1))
-
   - Word.ContentControl: [getComments](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))
 
   - Word.Document: [comments](/javascript/api/word/word.document#word-word-document-comments-member)
