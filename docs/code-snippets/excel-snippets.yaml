@@ -1,3 +1,26 @@
+Excel.ArrayCellValue:interface(1):
+  - |-
+    // This is an example of the complete JSON for an array value.
+    // The array contains a mix of different data types.
+    const myArray: Excel.ArrayCellValue = {
+        type: Excel.CellValueType.array,
+        elements: [
+            {
+                type: Excel.CellValueType.string,
+                basicValue: "Item 1"
+            },
+            {
+                type: Excel.CellValueType.double,
+                basicValue: 42
+            },
+            {
+                type: Excel.CellValueType.boolean,
+                basicValue: true
+            }
+        ],
+        basicType: Excel.RangeValueType.error, // A read-only property. Used as a fallback in incompatible scenarios.
+        basicValue: "#VALUE!" // A read-only property. Used as a fallback in incompatible scenarios.
+    };
 Excel.createWorkbook:function(1):
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");
