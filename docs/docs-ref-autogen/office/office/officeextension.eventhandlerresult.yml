@@ -18,10 +18,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OfficeExtension.EventHandlers** (1 member)
-
-  - [add](/javascript/api/office/officeextension.eventhandlers#office-officeextension-eventhandlers-add-member(1))
+  - OfficeExtension.EventHandlers: [add](/javascript/api/office/officeextension.eventhandlers#office-officeextension-eventhandlers-add-member(1))
 
 isPreview: false
 isDeprecated: false

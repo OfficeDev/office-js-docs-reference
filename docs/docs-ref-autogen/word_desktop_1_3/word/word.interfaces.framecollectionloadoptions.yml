@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.FrameCollection** (1 member)
-
-  - [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
+  - Word.FrameCollection: [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

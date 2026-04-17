@@ -15,24 +15,11 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Presentation: [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1)), [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1)), [getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
 
-  **PowerPoint.Presentation** (2 members)
+  - PowerPoint.TextFrame: [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
 
-  - [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1))
-
-  - [getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
-
-
-  **PowerPoint.TextFrame** (1 member)
-
-  - [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
-
-
-  **PowerPoint.TextRange** (2 members)
-
-  - [getSubstring](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getsubstring-member(1))
-
-  - [load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
+  - PowerPoint.TextRange: [getSubstring](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getsubstring-member(1)), [getSubstring](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getsubstring-member(1)), [load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
 
   #### Examples
 

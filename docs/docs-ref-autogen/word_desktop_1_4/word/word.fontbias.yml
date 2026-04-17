@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.SelectionInsertSymbolOptions** (1 member)
-
-  - [bias](/javascript/api/word/word.selectioninsertsymboloptions#word-word-selectioninsertsymboloptions-bias-member)
+  - Word.SelectionInsertSymbolOptions: [bias](/javascript/api/word/word.selectioninsertsymboloptions#word-word-selectioninsertsymboloptions-bias-member)
 
   #### Examples
 

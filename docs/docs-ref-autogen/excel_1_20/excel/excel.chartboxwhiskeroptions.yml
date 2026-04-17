@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartBoxwhiskerOptions: [load](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-load-member(1)), [load](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-load-member(1)), [set](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-set-member(2))
 
-  **Excel.ChartBoxwhiskerOptions** (2 members)
-
-  - [load](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-load-member(1))
-
-  - [set](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-set-member(2))
-
-
-  **Excel.ChartSeries** (1 member)
-
-  - [boxwhiskerOptions](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-boxwhiskeroptions-member)
+  - Excel.ChartSeries: [boxwhiskerOptions](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-boxwhiskeroptions-member)
 
 isPreview: false
 isDeprecated: false

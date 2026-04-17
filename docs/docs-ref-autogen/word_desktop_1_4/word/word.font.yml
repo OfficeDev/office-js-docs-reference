@@ -13,71 +13,29 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [font](/javascript/api/word/word.body#word-word-body-font-member)
 
-  **Word.Body** (1 member)
+  - Word.ConditionalStyle: [font](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-font-member)
 
-  - [font](/javascript/api/word/word.body#word-word-body-font-member)
+  - Word.ContentControl: [font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
 
+  - Word.Font: [load](/javascript/api/word/word.font#word-word-font-load-member(1)), [load](/javascript/api/word/word.font#word-word-font-load-member(1)), [set](/javascript/api/word/word.font#word-word-font-set-member(2)), [track](/javascript/api/word/word.font#word-word-font-track-member(1)), [untrack](/javascript/api/word/word.font#word-word-font-untrack-member(1))
 
-  **Word.ConditionalStyle** (1 member)
+  - Word.List: [getLevelFont](/javascript/api/word/word.list#word-word-list-getlevelfont-member(1))
 
-  - [font](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-font-member)
+  - Word.ListLevel: [font](/javascript/api/word/word.listlevel#word-word-listlevel-font-member)
 
+  - Word.Paragraph: [font](/javascript/api/word/word.paragraph#word-word-paragraph-font-member)
 
-  **Word.ContentControl** (1 member)
+  - Word.Range: [font](/javascript/api/word/word.range#word-word-range-font-member)
 
-  - [font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
+  - Word.Selection: [font](/javascript/api/word/word.selection#word-word-selection-font-member)
 
+  - Word.Style: [font](/javascript/api/word/word.style#word-word-style-font-member)
 
-  **Word.Font** (4 members)
+  - Word.Table: [font](/javascript/api/word/word.table#word-word-table-font-member)
 
-  - [load](/javascript/api/word/word.font#word-word-font-load-member(1))
-
-  - [set](/javascript/api/word/word.font#word-word-font-set-member(2))
-
-  - [track](/javascript/api/word/word.font#word-word-font-track-member(1))
-
-  - [untrack](/javascript/api/word/word.font#word-word-font-untrack-member(1))
-
-
-  **Word.List** (1 member)
-
-  - [getLevelFont](/javascript/api/word/word.list#word-word-list-getlevelfont-member(1))
-
-
-  **Word.ListLevel** (1 member)
-
-  - [font](/javascript/api/word/word.listlevel#word-word-listlevel-font-member)
-
-
-  **Word.Paragraph** (1 member)
-
-  - [font](/javascript/api/word/word.paragraph#word-word-paragraph-font-member)
-
-
-  **Word.Range** (1 member)
-
-  - [font](/javascript/api/word/word.range#word-word-range-font-member)
-
-
-  **Word.Selection** (1 member)
-
-  - [font](/javascript/api/word/word.selection#word-word-selection-font-member)
-
-
-  **Word.Style** (1 member)
-
-  - [font](/javascript/api/word/word.style#word-word-style-font-member)
-
-
-  **Word.Table** (1 member)
-
-  - [font](/javascript/api/word/word.table#word-word-table-font-member)
-
-
-  **Word.TableRow** (1 member)
-
-  - [font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
+  - Word.TableRow: [font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
 
   #### Examples
 

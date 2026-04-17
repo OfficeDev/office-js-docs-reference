@@ -14,15 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CultureInfo: [datetimeFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-datetimeformat-member)
 
-  **Excel.CultureInfo** (1 member)
-
-  - [datetimeFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-datetimeformat-member)
-
-
-  **Excel.DatetimeFormatInfo** (1 member)
-
-  - [load](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-load-member(1))
+  - Excel.DatetimeFormatInfo: [load](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-load-member(1))
 
 isPreview: false
 isDeprecated: false

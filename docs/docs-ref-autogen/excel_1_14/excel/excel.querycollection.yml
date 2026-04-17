@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.QueryCollection: [load](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-load-member(1))
 
-  **Excel.QueryCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [queries](/javascript/api/excel/excel.workbook#excel-excel-workbook-queries-member)
+  - Excel.Workbook: [queries](/javascript/api/excel/excel.workbook#excel-excel-workbook-queries-member)
 
 isPreview: false
 isDeprecated: false

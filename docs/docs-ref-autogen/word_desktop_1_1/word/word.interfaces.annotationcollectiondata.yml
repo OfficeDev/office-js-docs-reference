@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.AnnotationCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-tojson-member(1))
+  - Word.AnnotationCollection: [toJSON](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

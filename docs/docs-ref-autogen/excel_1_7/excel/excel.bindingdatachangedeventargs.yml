@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Binding** (1 member)
-
-  - [onDataChanged](/javascript/api/excel/excel.binding#excel-excel-binding-ondatachanged-member)
+  - Excel.Binding: [onDataChanged](/javascript/api/excel/excel.binding#excel-excel-binding-ondatachanged-member)
 
 isPreview: false
 isDeprecated: false

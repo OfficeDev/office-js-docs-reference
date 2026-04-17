@@ -13,18 +13,14 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.CardLayoutStandardProperties** (1 member)
-
-  - [sections](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-sections-member)
+  - Excel.CardLayoutStandardProperties: [sections](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-sections-member)
 
 
 
   Learn more about the types in this type alias through the following links. 
 
 
-  [Excel.CardLayoutListSection](/javascript/api/excel/excel.cardlayoutlistsection),
-  [Excel.CardLayoutTableSection](/javascript/api/excel/excel.cardlayouttablesection)
+  [Excel.CardLayoutListSection](/javascript/api/excel/excel.cardlayoutlistsection), [Excel.CardLayoutTableSection](/javascript/api/excel/excel.cardlayouttablesection)
 
 
   #### Examples

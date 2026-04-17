@@ -24,20 +24,11 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentCompose: [subject](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-subject-member)
 
-  **Office.AppointmentCompose** (1 member)
+  - Office.LoadedMessageCompose: [subject](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-subject-member)
 
-  - [subject](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-subject-member)
-
-
-  **Office.LoadedMessageCompose** (1 member)
-
-  - [subject](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-subject-member)
-
-
-  **Office.MessageCompose** (1 member)
-
-  - [subject](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-subject-member)
+  - Office.MessageCompose: [subject](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-subject-member)
 
 isPreview: false
 isDeprecated: false

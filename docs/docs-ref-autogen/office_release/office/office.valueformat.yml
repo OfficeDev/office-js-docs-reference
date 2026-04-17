@@ -18,15 +18,9 @@ remarks: >-
   #### Used by
 
 
+  - Office.GetBindingDataOptions: [valueFormat](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-valueformat-member)
 
-  **Office.GetBindingDataOptions** (1 member)
-
-  - [valueFormat](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-valueformat-member)
-
-
-  **Office.GetSelectedDataOptions** (1 member)
-
-  - [valueFormat](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-valueformat-member)
+  - Office.GetSelectedDataOptions: [valueFormat](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-valueformat-member)
 
   #### Examples
 

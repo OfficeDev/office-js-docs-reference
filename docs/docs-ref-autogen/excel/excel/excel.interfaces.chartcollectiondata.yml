@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartCollection** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-tojson-member(1))
+  - Excel.ChartCollection: [toJSON](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

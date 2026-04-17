@@ -8,30 +8,15 @@ remarks: >-
   #### Used by
 
 
+  - Word.ContentControlCollection: [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
 
-  **Word.ContentControlCollection** (1 member)
+  - Word.InlinePictureCollection: [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
 
+  - Word.RangeCollection: [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
 
-  **Word.InlinePictureCollection** (1 member)
-
-  - [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
-
-
-  **Word.ParagraphCollection** (1 member)
-
-  - [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
-
-
-  **Word.RangeCollection** (1 member)
-
-  - [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
-
-
-  **Word.SectionCollection** (1 member)
-
-  - [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

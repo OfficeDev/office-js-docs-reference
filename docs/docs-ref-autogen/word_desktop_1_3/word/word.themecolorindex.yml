@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ColorFormat** (1 member)
-
-  - [objectThemeColor](/javascript/api/word/word.colorformat#word-word-colorformat-objectthemecolor-member)
+  - Word.ColorFormat: [objectThemeColor](/javascript/api/word/word.colorformat#word-word-colorformat-objectthemecolor-member)
 
 isPreview: false
 isDeprecated: false

@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlPrefixMappingCollection** (1 member)
-
-  - [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(1))
+  - Word.CustomXmlPrefixMappingCollection: [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

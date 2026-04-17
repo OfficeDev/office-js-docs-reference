@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartBorder** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-load-member(1))
+  - Excel.ChartBorder: [load](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Shading** (1 member)
-
-  - [load](/javascript/api/word/word.shading#word-word-shading-load-member(1))
+  - Word.Shading: [load](/javascript/api/word/word.shading#word-word-shading-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,20 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.RangeBorderCollection: [load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
 
-  **Excel.RangeBorderCollection** (1 member)
+  - Excel.RangeFormat: [borders](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-borders-member)
 
-  - [load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
-
-
-  **Excel.RangeFormat** (1 member)
-
-  - [borders](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-borders-member)
-
-
-  **Excel.Style** (1 member)
-
-  - [borders](/javascript/api/excel/excel.style#excel-excel-style-borders-member)
+  - Excel.Style: [borders](/javascript/api/excel/excel.style#excel-excel-style-borders-member)
 
 isPreview: false
 isDeprecated: false

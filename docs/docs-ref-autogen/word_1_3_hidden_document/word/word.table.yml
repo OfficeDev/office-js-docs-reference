@@ -13,84 +13,23 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [insertTable](/javascript/api/word/word.body#word-word-body-inserttable-member(1))
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [insertTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1)), [insertTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1)), [parentTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttableornullobject-member)
 
-  - [insertTable](/javascript/api/word/word.body#word-word-body-inserttable-member(1))
+  - Word.InlinePicture: [parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member), [parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttableornullobject-member)
 
+  - Word.Paragraph: [insertTable](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1)), [insertTable](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1)), [parentTable](/javascript/api/word/word.paragraph#word-word-paragraph-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttableornullobject-member)
 
-  **Word.ContentControl** (3 members)
+  - Word.Range: [insertTable](/javascript/api/word/word.range#word-word-range-inserttable-member(1)), [insertTable](/javascript/api/word/word.range#word-word-range-inserttable-member(1)), [parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.range#word-word-range-parenttableornullobject-member)
 
-  - [insertTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1))
+  - Word.Table: [getNext](/javascript/api/word/word.table#word-word-table-getnext-member(1)), [getNext](/javascript/api/word/word.table#word-word-table-getnext-member(1)), [getNextOrNullObject](/javascript/api/word/word.table#word-word-table-getnextornullobject-member(1)), [insertTable](/javascript/api/word/word.table#word-word-table-inserttable-member(1)), [load](/javascript/api/word/word.table#word-word-table-load-member(1)), [parentTable](/javascript/api/word/word.table#word-word-table-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.table#word-word-table-parenttableornullobject-member), [set](/javascript/api/word/word.table#word-word-table-set-member(2)), [track](/javascript/api/word/word.table#word-word-table-track-member(1)), [untrack](/javascript/api/word/word.table#word-word-table-untrack-member(1))
 
-  - [parentTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttable-member)
+  - Word.TableCell: [parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
 
-  - [parentTableOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttableornullobject-member)
+  - Word.TableCollection: [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1)), [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.tablecollection#word-word-tablecollection-items-member)
 
-
-  **Word.InlinePicture** (2 members)
-
-  - [parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member)
-
-  - [parentTableOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttableornullobject-member)
-
-
-  **Word.Paragraph** (3 members)
-
-  - [insertTable](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1))
-
-  - [parentTable](/javascript/api/word/word.paragraph#word-word-paragraph-parenttable-member)
-
-  - [parentTableOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttableornullobject-member)
-
-
-  **Word.Range** (3 members)
-
-  - [insertTable](/javascript/api/word/word.range#word-word-range-inserttable-member(1))
-
-  - [parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member)
-
-  - [parentTableOrNullObject](/javascript/api/word/word.range#word-word-range-parenttableornullobject-member)
-
-
-  **Word.Table** (9 members)
-
-  - [getNext](/javascript/api/word/word.table#word-word-table-getnext-member(1))
-
-  - [getNextOrNullObject](/javascript/api/word/word.table#word-word-table-getnextornullobject-member(1))
-
-  - [insertTable](/javascript/api/word/word.table#word-word-table-inserttable-member(1))
-
-  - [load](/javascript/api/word/word.table#word-word-table-load-member(1))
-
-  - [parentTable](/javascript/api/word/word.table#word-word-table-parenttable-member)
-
-  - [parentTableOrNullObject](/javascript/api/word/word.table#word-word-table-parenttableornullobject-member)
-
-  - [set](/javascript/api/word/word.table#word-word-table-set-member(2))
-
-  - [track](/javascript/api/word/word.table#word-word-table-track-member(1))
-
-  - [untrack](/javascript/api/word/word.table#word-word-table-untrack-member(1))
-
-
-  **Word.TableCell** (1 member)
-
-  - [parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
-
-
-  **Word.TableCollection** (3 members)
-
-  - [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1))
-
-  - [getFirstOrNullObject](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirstornullobject-member(1))
-
-  - [items](/javascript/api/word/word.tablecollection#word-word-tablecollection-items-member)
-
-
-  **Word.TableRow** (1 member)
-
-  - [parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)
+  - Word.TableRow: [parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)
 
   #### Examples
 

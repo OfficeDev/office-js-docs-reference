@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.NoteCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
+  - Excel.NoteCollection: [load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

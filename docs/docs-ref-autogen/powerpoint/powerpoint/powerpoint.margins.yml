@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Margins: [load](/javascript/api/powerpoint/powerpoint.margins#powerpoint-powerpoint-margins-load-member(1))
 
-  **PowerPoint.Margins** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.margins#powerpoint-powerpoint-margins-load-member(1))
-
-
-  **PowerPoint.TableCell** (1 member)
-
-  - [margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)
+  - PowerPoint.TableCell: [margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)
 
 isPreview: false
 isDeprecated: false

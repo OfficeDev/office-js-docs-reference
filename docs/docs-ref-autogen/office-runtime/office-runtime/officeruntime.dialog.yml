@@ -12,12 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OfficeRuntime.DisplayWebDialogOptions** (2 members)
-
-  - [onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onmessage-member)
-
-  - [onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onruntimeerror-member)
+  - OfficeRuntime.DisplayWebDialogOptions: [onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onmessage-member), [onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onmessage-member), [onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onruntimeerror-member)
 
 isPreview: false
 isDeprecated: false

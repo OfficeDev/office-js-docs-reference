@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.DocumentTaskChange** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-tojson-member(1))
+  - Excel.DocumentTaskChange: [toJSON](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

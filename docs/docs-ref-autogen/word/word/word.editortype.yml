@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.EditorCollection** (1 member)
-
-  - [addByType](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1))
+  - Word.EditorCollection: [addByType](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1))
 
 isPreview: false
 isDeprecated: false

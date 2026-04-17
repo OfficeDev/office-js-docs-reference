@@ -20,43 +20,17 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)
 
-  - [contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
+  - Word.ContentControlCollection: [getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1)), [getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1)), [getByTitle](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytitle-member(1)), [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1)), [track](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-track-member(1)), [untrack](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-untrack-member(1))
 
+  - Word.Document: [contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member)
 
-  **Word.ContentControl** (1 member)
+  - Word.Paragraph: [contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
 
-  - [contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)
-
-
-  **Word.ContentControlCollection** (5 members)
-
-  - [getByTag](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytag-member(1))
-
-  - [getByTitle](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytitle-member(1))
-
-  - [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-untrack-member(1))
-
-
-  **Word.Document** (1 member)
-
-  - [contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member)
-
-
-  **Word.Paragraph** (1 member)
-
-  - [contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
-
-
-  **Word.Range** (1 member)
-
-  - [contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
+  - Word.Range: [contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
 
   #### Examples
 

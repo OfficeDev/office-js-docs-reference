@@ -18,17 +18,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.RequestContext: [workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)
 
-  **Excel.RequestContext** (1 member)
-
-  - [workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)
-
-
-  **Excel.Workbook** (2 members)
-
-  - [load](/javascript/api/excel/excel.workbook#excel-excel-workbook-load-member(1))
-
-  - [set](/javascript/api/excel/excel.workbook#excel-excel-workbook-set-member(2))
+  - Excel.Workbook: [load](/javascript/api/excel/excel.workbook#excel-excel-workbook-load-member(1)), [load](/javascript/api/excel/excel.workbook#excel-excel-workbook-load-member(1)), [set](/javascript/api/excel/excel.workbook#excel-excel-workbook-set-member(2))
 
   #### Examples
 

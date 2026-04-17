@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Index: [headingSeparator](/javascript/api/word/word.index#word-word-index-headingseparator-member)
 
-  **Word.Index** (1 member)
-
-  - [headingSeparator](/javascript/api/word/word.index#word-word-index-headingseparator-member)
-
-
-  **Word.IndexAddOptions** (1 member)
-
-  - [headingSeparator](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-headingseparator-member)
+  - Word.IndexAddOptions: [headingSeparator](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-headingseparator-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.CalcErrorCellValue** (1 member)
-
-  - [errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)
+  - Excel.CalcErrorCellValue: [errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

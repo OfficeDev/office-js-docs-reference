@@ -12,23 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.HeaderFooter: [load](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-load-member(1)), [load](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-load-member(1)), [set](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-set-member(2))
 
-  **Excel.HeaderFooter** (2 members)
-
-  - [load](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-load-member(1))
-
-  - [set](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-set-member(2))
-
-
-  **Excel.HeaderFooterGroup** (4 members)
-
-  - [defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-defaultforallpages-member)
-
-  - [evenPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-evenpages-member)
-
-  - [firstPage](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-firstpage-member)
-
-  - [oddPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-oddpages-member)
+  - Excel.HeaderFooterGroup: [defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-defaultforallpages-member), [defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-defaultforallpages-member), [evenPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-evenpages-member), [firstPage](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-firstpage-member), [oddPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-oddpages-member)
 
 isPreview: false
 isDeprecated: false

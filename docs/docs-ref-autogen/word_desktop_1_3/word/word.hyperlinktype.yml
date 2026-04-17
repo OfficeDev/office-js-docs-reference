@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Hyperlink** (1 member)
-
-  - [type](/javascript/api/word/word.hyperlink#word-word-hyperlink-type-member)
+  - Word.Hyperlink: [type](/javascript/api/word/word.hyperlink#word-word-hyperlink-type-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Chart** (1 member)
-
-  - [plotBy](/javascript/api/excel/excel.chart#excel-excel-chart-plotby-member)
+  - Excel.Chart: [plotBy](/javascript/api/excel/excel.chart#excel-excel-chart-plotby-member)
 
 isPreview: false
 isDeprecated: false

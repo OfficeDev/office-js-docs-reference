@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TableRow** (1 member)
-
-  - [set](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-set-member(1))
+  - Excel.TableRow: [set](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-set-member(1))
 
 isPreview: false
 isDeprecated: false

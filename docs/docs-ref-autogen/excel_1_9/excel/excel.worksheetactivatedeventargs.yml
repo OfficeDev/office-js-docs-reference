@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Worksheet: [onActivated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onactivated-member)
 
-  **Excel.Worksheet** (1 member)
-
-  - [onActivated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onactivated-member)
-
-
-  **Excel.WorksheetCollection** (1 member)
-
-  - [onActivated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onactivated-member)
+  - Excel.WorksheetCollection: [onActivated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onactivated-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ShapeFont** (1 member)
-
-  - [set](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-set-member(1))
+  - Excel.ShapeFont: [set](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-set-member(1))
 
 isPreview: false
 isDeprecated: false

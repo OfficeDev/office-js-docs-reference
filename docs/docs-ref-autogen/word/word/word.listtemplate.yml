@@ -13,41 +13,13 @@ remarks: >-
   #### Used by
 
 
+  - Word.ListFormat: [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1)), [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1)), [canContinuePreviousList](/javascript/api/word/word.listformat#word-word-listformat-cancontinuepreviouslist-member(1)), [listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)
 
-  **Word.ListFormat** (3 members)
+  - Word.ListTemplate: [load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1)), [load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1)), [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(2)), [track](/javascript/api/word/word.listtemplate#word-word-listtemplate-track-member(1)), [untrack](/javascript/api/word/word.listtemplate#word-word-listtemplate-untrack-member(1))
 
-  - [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))
+  - Word.ListTemplateCollection: [add](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-add-member(1)), [add](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-add-member(1)), [getItem](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-getitem-member(1)), [items](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-items-member)
 
-  - [canContinuePreviousList](/javascript/api/word/word.listformat#word-word-listformat-cancontinuepreviouslist-member(1))
-
-  - [listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)
-
-
-  **Word.ListTemplate** (4 members)
-
-  - [load](/javascript/api/word/word.listtemplate#word-word-listtemplate-load-member(1))
-
-  - [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(2))
-
-  - [track](/javascript/api/word/word.listtemplate#word-word-listtemplate-track-member(1))
-
-  - [untrack](/javascript/api/word/word.listtemplate#word-word-listtemplate-untrack-member(1))
-
-
-  **Word.ListTemplateCollection** (3 members)
-
-  - [add](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-add-member(1))
-
-  - [getItem](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-getitem-member(1))
-
-  - [items](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-items-member)
-
-
-  **Word.Style** (2 members)
-
-  - [linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1))
-
-  - [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
+  - Word.Style: [linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1)), [linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1)), [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
 
   #### Examples
 

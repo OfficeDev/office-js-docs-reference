@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ReflectionFormat** (1 member)
-
-  - [toJSON](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-tojson-member(1))
+  - Word.ReflectionFormat: [toJSON](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

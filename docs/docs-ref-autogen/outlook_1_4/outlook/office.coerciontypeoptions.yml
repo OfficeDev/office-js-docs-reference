@@ -11,24 +11,11 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentCompose: [setSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-setselecteddataasync-member(1))
 
-  **Office.AppointmentCompose** (1 member)
+  - Office.Body: [prependAsync](/javascript/api/outlook/office.body#outlook-office-body-prependasync-member(1)), [prependAsync](/javascript/api/outlook/office.body#outlook-office-body-prependasync-member(1)), [setAsync](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1)), [setSelectedDataAsync](/javascript/api/outlook/office.body#outlook-office-body-setselecteddataasync-member(1))
 
-  - [setSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-setselecteddataasync-member(1))
-
-
-  **Office.Body** (3 members)
-
-  - [prependAsync](/javascript/api/outlook/office.body#outlook-office-body-prependasync-member(1))
-
-  - [setAsync](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))
-
-  - [setSelectedDataAsync](/javascript/api/outlook/office.body#outlook-office-body-setselecteddataasync-member(1))
-
-
-  **Office.MessageCompose** (1 member)
-
-  - [setSelectedDataAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-setselecteddataasync-member(1))
+  - Office.MessageCompose: [setSelectedDataAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-setselecteddataasync-member(1))
 
   #### Examples
 

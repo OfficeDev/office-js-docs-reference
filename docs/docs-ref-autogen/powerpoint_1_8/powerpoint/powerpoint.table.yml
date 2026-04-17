@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Shape: [getTable](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettable-member(1))
 
-  **PowerPoint.Shape** (1 member)
-
-  - [getTable](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettable-member(1))
-
-
-  **PowerPoint.Table** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-load-member(1))
+  - PowerPoint.Table: [load](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-load-member(1))
 
   #### Examples
 

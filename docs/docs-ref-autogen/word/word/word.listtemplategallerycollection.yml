@@ -18,19 +18,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Application: [listTemplateGalleries](/javascript/api/word/word.application#word-word-application-listtemplategalleries-member)
 
-  **Word.Application** (1 member)
-
-  - [listTemplateGalleries](/javascript/api/word/word.application#word-word-application-listtemplategalleries-member)
-
-
-  **Word.ListTemplateGalleryCollection** (3 members)
-
-  - [load](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-load-member(1))
-
-  - [track](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-untrack-member(1))
+  - Word.ListTemplateGalleryCollection: [load](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-load-member(1)), [load](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-load-member(1)), [track](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-track-member(1)), [untrack](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideCollection** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
+  - PowerPoint.SlideCollection: [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,29 +12,13 @@ remarks: >-
   #### Used by
 
 
+  - Word.Coauthor: [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1)), [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1)), [track](/javascript/api/word/word.coauthor#word-word-coauthor-track-member(1)), [untrack](/javascript/api/word/word.coauthor#word-word-coauthor-untrack-member(1))
 
-  **Word.Coauthor** (3 members)
+  - Word.CoauthorCollection: [items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)
 
-  - [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1))
+  - Word.Coauthoring: [me](/javascript/api/word/word.coauthoring#word-word-coauthoring-me-member)
 
-  - [track](/javascript/api/word/word.coauthor#word-word-coauthor-track-member(1))
-
-  - [untrack](/javascript/api/word/word.coauthor#word-word-coauthor-untrack-member(1))
-
-
-  **Word.CoauthorCollection** (1 member)
-
-  - [items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)
-
-
-  **Word.Coauthoring** (1 member)
-
-  - [me](/javascript/api/word/word.coauthoring#word-word-coauthoring-me-member)
-
-
-  **Word.CoauthoringLock** (1 member)
-
-  - [owner](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-owner-member)
+  - Word.CoauthoringLock: [owner](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-owner-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,36 +12,15 @@ remarks: >-
   #### Used by
 
 
+  - Excel.DataPivotHierarchy: [field](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-field-member)
 
-  **Excel.DataPivotHierarchy** (1 member)
+  - Excel.PivotField: [load](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-load-member(1)), [load](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-load-member(1)), [set](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-set-member(2))
 
-  - [field](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-field-member)
+  - Excel.PivotFieldCollection: [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
 
+  - Excel.ShowAsRule: [baseField](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-basefield-member)
 
-  **Excel.PivotField** (2 members)
-
-  - [load](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-load-member(1))
-
-  - [set](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-set-member(2))
-
-
-  **Excel.PivotFieldCollection** (3 members)
-
-  - [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
-
-
-  **Excel.ShowAsRule** (1 member)
-
-  - [baseField](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-basefield-member)
-
-
-  **Excel.SlicerCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
+  - Excel.SlicerCollection: [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

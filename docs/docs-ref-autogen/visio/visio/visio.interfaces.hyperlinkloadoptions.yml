@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.Hyperlink** (1 member)
-
-  - [load](/javascript/api/visio/visio.hyperlink#visio-visio-hyperlink-load-member(1))
+  - Visio.Hyperlink: [load](/javascript/api/visio/visio.hyperlink#visio-visio-hyperlink-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.Outline** (1 member)
-
-  - [load](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-load-member(1))
+  - OneNote.Outline: [load](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-load-member(1))
 
 isPreview: false
 isDeprecated: false

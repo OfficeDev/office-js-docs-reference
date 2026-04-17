@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Selection** (1 member)
-
-  - [insertFormula](/javascript/api/word/word.selection#word-word-selection-insertformula-member(1))
+  - Word.Selection: [insertFormula](/javascript/api/word/word.selection#word-word-selection-insertformula-member(1))
 
   #### Examples
 

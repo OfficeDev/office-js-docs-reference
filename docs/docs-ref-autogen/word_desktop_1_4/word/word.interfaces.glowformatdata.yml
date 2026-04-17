@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.GlowFormat** (1 member)
-
-  - [toJSON](/javascript/api/word/word.glowformat#word-word-glowformat-tojson-member(1))
+  - Word.GlowFormat: [toJSON](/javascript/api/word/word.glowformat#word-word-glowformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

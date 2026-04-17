@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideMasterBackground** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-tojson-member(1))
+  - PowerPoint.SlideMasterBackground: [toJSON](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

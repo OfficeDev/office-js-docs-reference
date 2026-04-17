@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.RangeFormat: [horizontalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-horizontalalignment-member)
 
-  **Excel.RangeFormat** (1 member)
-
-  - [horizontalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-horizontalalignment-member)
-
-
-  **Excel.Style** (1 member)
-
-  - [horizontalAlignment](/javascript/api/excel/excel.style#excel-excel-style-horizontalalignment-member)
+  - Excel.Style: [horizontalAlignment](/javascript/api/excel/excel.style#excel-excel-style-horizontalalignment-member)
 
   #### Examples
 

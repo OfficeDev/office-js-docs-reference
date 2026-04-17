@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Shape** (1 member)
-
-  - [relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)
+  - Word.Shape: [relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)
 
   #### Examples
 

@@ -12,34 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CustomXmlPart: [load](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-load-member(1))
 
-  **Excel.CustomXmlPart** (1 member)
+  - Excel.CustomXmlPartCollection: [add](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-add-member(1)), [add](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-add-member(1)), [getItem](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-items-member)
 
-  - [load](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-load-member(1))
-
-
-  **Excel.CustomXmlPartCollection** (4 members)
-
-  - [add](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-add-member(1))
-
-  - [getItem](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-items-member)
-
-
-  **Excel.CustomXmlPartScopedCollection** (5 members)
-
-  - [getItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitemornullobject-member(1))
-
-  - [getOnlyItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getonlyitem-member(1))
-
-  - [getOnlyItemOrNullObject](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getonlyitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-items-member)
+  - Excel.CustomXmlPartScopedCollection: [getItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getitemornullobject-member(1)), [getOnlyItem](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getonlyitem-member(1)), [getOnlyItemOrNullObject](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-getonlyitemornullobject-member(1)), [items](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-items-member)
 
 isPreview: false
 isDeprecated: false

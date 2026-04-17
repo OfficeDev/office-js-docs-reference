@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Font** (1 member)
-
-  - [underline](/javascript/api/word/word.font#word-word-font-underline-member)
+  - Word.Font: [underline](/javascript/api/word/word.font#word-word-font-underline-member)
 
   #### Examples
 

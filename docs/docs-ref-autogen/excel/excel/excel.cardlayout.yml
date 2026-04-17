@@ -12,17 +12,13 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.EntityViewLayouts** (1 member)
-
-  - [card](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-card-member)
+  - Excel.EntityViewLayouts: [card](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-card-member)
 
 
   Learn more about the types in this type alias through the following links. 
 
 
-  [Excel.EntityCardLayout](/javascript/api/excel/excel.entitycardlayout),
-  [Excel.EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)
+  [Excel.EntityCardLayout](/javascript/api/excel/excel.entitycardlayout), [Excel.EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)
 
 isPreview: false
 isDeprecated: false

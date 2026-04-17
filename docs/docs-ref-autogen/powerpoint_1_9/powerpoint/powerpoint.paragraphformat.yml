@@ -16,15 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.ParagraphFormat: [load](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-load-member(1))
 
-  **PowerPoint.ParagraphFormat** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-load-member(1))
-
-
-  **PowerPoint.TextRange** (1 member)
-
-  - [paragraphFormat](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-paragraphformat-member)
+  - PowerPoint.TextRange: [paragraphFormat](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-paragraphformat-member)
 
   #### Examples
 

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Table** (1 member)
-
-  - [setStyle](/javascript/api/excel/excel.table#excel-excel-table-setstyle-member(1))
+  - Excel.Table: [setStyle](/javascript/api/excel/excel.table#excel-excel-table-setstyle-member(1))
 
 isPreview: true
 isDeprecated: false

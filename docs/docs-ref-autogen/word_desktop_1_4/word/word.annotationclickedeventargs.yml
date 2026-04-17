@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [onAnnotationClicked](/javascript/api/word/word.document#word-word-document-onannotationclicked-member)
+  - Word.Document: [onAnnotationClicked](/javascript/api/word/word.document#word-word-document-onannotationclicked-member)
 
   #### Examples
 

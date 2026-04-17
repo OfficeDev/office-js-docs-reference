@@ -12,25 +12,13 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartDataLabel: [horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-horizontalalignment-member)
 
-  **Excel.ChartDataLabel** (1 member)
+  - Excel.ChartDataLabels: [horizontalAlignment](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-horizontalalignment-member)
 
-  - [horizontalAlignment](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-horizontalalignment-member)
+  - Excel.ChartTitle: [horizontalAlignment](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-horizontalalignment-member)
 
-
-  **Excel.ChartDataLabels** (1 member)
-
-  - [horizontalAlignment](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-horizontalalignment-member)
-
-
-  **Excel.ChartTitle** (1 member)
-
-  - [horizontalAlignment](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-horizontalalignment-member)
-
-
-  **Excel.ChartTrendlineLabel** (1 member)
-
-  - [horizontalAlignment](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-horizontalalignment-member)
+  - Excel.ChartTrendlineLabel: [horizontalAlignment](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-horizontalalignment-member)
 
 isPreview: false
 isDeprecated: false

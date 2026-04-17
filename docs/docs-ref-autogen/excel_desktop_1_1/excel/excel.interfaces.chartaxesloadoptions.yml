@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartAxes** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-load-member(1))
+  - Excel.ChartAxes: [load](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-load-member(1))
 
 isPreview: false
 isDeprecated: false

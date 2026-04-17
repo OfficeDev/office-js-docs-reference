@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlValidationError** (1 member)
-
-  - [set](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-set-member(1))
+  - Word.CustomXmlValidationError: [set](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-set-member(1))
 
 isPreview: false
 isDeprecated: false

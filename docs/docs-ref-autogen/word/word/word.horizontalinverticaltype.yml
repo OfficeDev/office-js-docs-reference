@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Range** (1 member)
-
-  - [horizontalInVertical](/javascript/api/word/word.range#word-word-range-horizontalinvertical-member)
+  - Word.Range: [horizontalInVertical](/javascript/api/word/word.range#word-word-range-horizontalinvertical-member)
 
 isPreview: false
 isDeprecated: false

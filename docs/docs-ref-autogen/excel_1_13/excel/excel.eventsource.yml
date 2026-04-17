@@ -12,85 +12,37 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartAddedEventArgs: [source](/javascript/api/excel/excel.chartaddedeventargs#excel-excel-chartaddedeventargs-source-member)
 
-  **Excel.ChartAddedEventArgs** (1 member)
+  - Excel.ChartDeletedEventArgs: [source](/javascript/api/excel/excel.chartdeletedeventargs#excel-excel-chartdeletedeventargs-source-member)
 
-  - [source](/javascript/api/excel/excel.chartaddedeventargs#excel-excel-chartaddedeventargs-source-member)
+  - Excel.CommentAddedEventArgs: [source](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-source-member)
 
+  - Excel.CommentChangedEventArgs: [source](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-source-member)
 
-  **Excel.ChartDeletedEventArgs** (1 member)
+  - Excel.CommentDeletedEventArgs: [source](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-source-member)
 
-  - [source](/javascript/api/excel/excel.chartdeletedeventargs#excel-excel-chartdeletedeventargs-source-member)
+  - Excel.TableAddedEventArgs: [source](/javascript/api/excel/excel.tableaddedeventargs#excel-excel-tableaddedeventargs-source-member)
 
+  - Excel.TableChangedEventArgs: [source](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-source-member)
 
-  **Excel.CommentAddedEventArgs** (1 member)
+  - Excel.TableDeletedEventArgs: [source](/javascript/api/excel/excel.tabledeletedeventargs#excel-excel-tabledeletedeventargs-source-member)
 
-  - [source](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-source-member)
+  - Excel.WorksheetAddedEventArgs: [source](/javascript/api/excel/excel.worksheetaddedeventargs#excel-excel-worksheetaddedeventargs-source-member)
 
+  - Excel.WorksheetChangedEventArgs: [source](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-source-member)
 
-  **Excel.CommentChangedEventArgs** (1 member)
+  - Excel.WorksheetColumnSortedEventArgs: [source](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#excel-excel-worksheetcolumnsortedeventargs-source-member)
 
-  - [source](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-source-member)
+  - Excel.WorksheetDeletedEventArgs: [source](/javascript/api/excel/excel.worksheetdeletedeventargs#excel-excel-worksheetdeletedeventargs-source-member)
 
+  - Excel.WorksheetFormatChangedEventArgs: [source](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-source-member)
 
-  **Excel.CommentDeletedEventArgs** (1 member)
+  - Excel.WorksheetFormulaChangedEventArgs: [source](/javascript/api/excel/excel.worksheetformulachangedeventargs#excel-excel-worksheetformulachangedeventargs-source-member)
 
-  - [source](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-source-member)
+  - Excel.WorksheetRowHiddenChangedEventArgs: [source](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-source-member)
 
-
-  **Excel.TableAddedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.tableaddedeventargs#excel-excel-tableaddedeventargs-source-member)
-
-
-  **Excel.TableChangedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-source-member)
-
-
-  **Excel.TableDeletedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.tabledeletedeventargs#excel-excel-tabledeletedeventargs-source-member)
-
-
-  **Excel.WorksheetAddedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetaddedeventargs#excel-excel-worksheetaddedeventargs-source-member)
-
-
-  **Excel.WorksheetChangedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-source-member)
-
-
-  **Excel.WorksheetColumnSortedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetcolumnsortedeventargs#excel-excel-worksheetcolumnsortedeventargs-source-member)
-
-
-  **Excel.WorksheetDeletedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetdeletedeventargs#excel-excel-worksheetdeletedeventargs-source-member)
-
-
-  **Excel.WorksheetFormatChangedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-source-member)
-
-
-  **Excel.WorksheetFormulaChangedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetformulachangedeventargs#excel-excel-worksheetformulachangedeventargs-source-member)
-
-
-  **Excel.WorksheetRowHiddenChangedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-source-member)
-
-
-  **Excel.WorksheetRowSortedEventArgs** (1 member)
-
-  - [source](/javascript/api/excel/excel.worksheetrowsortedeventargs#excel-excel-worksheetrowsortedeventargs-source-member)
+  - Excel.WorksheetRowSortedEventArgs: [source](/javascript/api/excel/excel.worksheetrowsortedeventargs#excel-excel-worksheetrowsortedeventargs-source-member)
 
 isPreview: false
 isDeprecated: false

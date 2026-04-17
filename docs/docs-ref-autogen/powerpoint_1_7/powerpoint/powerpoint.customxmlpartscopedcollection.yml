@@ -15,15 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.CustomXmlPartCollection: [getByNamespace](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getbynamespace-member(1))
 
-  **PowerPoint.CustomXmlPartCollection** (1 member)
-
-  - [getByNamespace](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getbynamespace-member(1))
-
-
-  **PowerPoint.CustomXmlPartScopedCollection** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
+  - PowerPoint.CustomXmlPartScopedCollection: [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

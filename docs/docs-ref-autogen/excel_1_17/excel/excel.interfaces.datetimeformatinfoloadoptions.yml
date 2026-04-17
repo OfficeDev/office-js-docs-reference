@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.DatetimeFormatInfo** (1 member)
-
-  - [load](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-load-member(1))
+  - Excel.DatetimeFormatInfo: [load](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.RepeatingSectionItem** (1 member)
-
-  - [load](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-load-member(1))
+  - Word.RepeatingSectionItem: [load](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-load-member(1))
 
 isPreview: false
 isDeprecated: false

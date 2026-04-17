@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.LinkedWorkbook** (1 member)
-
-  - [load](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-load-member(1))
+  - Excel.LinkedWorkbook: [load](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-load-member(1))
 
 isPreview: false
 isDeprecated: false

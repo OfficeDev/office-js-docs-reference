@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.FilterPivotHierarchy** (1 member)
-
-  - [set](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-set-member(1))
+  - Excel.FilterPivotHierarchy: [set](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

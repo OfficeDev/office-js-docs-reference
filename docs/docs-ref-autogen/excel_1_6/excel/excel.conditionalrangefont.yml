@@ -14,17 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ConditionalRangeFont: [load](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-load-member(1)), [load](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-load-member(1)), [set](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-set-member(2))
 
-  **Excel.ConditionalRangeFont** (2 members)
-
-  - [load](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-load-member(1))
-
-  - [set](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-set-member(2))
-
-
-  **Excel.ConditionalRangeFormat** (1 member)
-
-  - [font](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-font-member)
+  - Excel.ConditionalRangeFormat: [font](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-font-member)
 
 isPreview: false
 isDeprecated: false

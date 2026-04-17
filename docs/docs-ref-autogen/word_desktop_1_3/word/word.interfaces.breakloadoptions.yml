@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Break** (1 member)
-
-  - [load](/javascript/api/word/word.break#word-word-break-load-member(1))
+  - Word.Break: [load](/javascript/api/word/word.break#word-word-break-load-member(1))
 
 isPreview: false
 isDeprecated: false

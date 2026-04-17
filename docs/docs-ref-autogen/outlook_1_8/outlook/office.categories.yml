@@ -35,25 +35,13 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentCompose: [categories](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-categories-member)
 
-  **Office.AppointmentCompose** (1 member)
+  - Office.AppointmentRead: [categories](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-categories-member)
 
-  - [categories](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-categories-member)
+  - Office.MessageCompose: [categories](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-categories-member)
 
-
-  **Office.AppointmentRead** (1 member)
-
-  - [categories](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-categories-member)
-
-
-  **Office.MessageCompose** (1 member)
-
-  - [categories](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-categories-member)
-
-
-  **Office.MessageRead** (1 member)
-
-  - [categories](/javascript/api/outlook/office.messageread#outlook-office-messageread-categories-member)
+  - Office.MessageRead: [categories](/javascript/api/outlook/office.messageread#outlook-office-messageread-categories-member)
 
 isPreview: false
 isDeprecated: false

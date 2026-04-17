@@ -22,30 +22,11 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentCompose: [optionalAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-optionalattendees-member), [optionalAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-optionalattendees-member), [requiredAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-requiredattendees-member)
 
-  **Office.AppointmentCompose** (2 members)
+  - Office.LoadedMessageCompose: [bcc](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-bcc-member), [bcc](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-bcc-member), [cc](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-cc-member), [to](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-to-member)
 
-  - [optionalAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-optionalattendees-member)
-
-  - [requiredAttendees](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-requiredattendees-member)
-
-
-  **Office.LoadedMessageCompose** (3 members)
-
-  - [bcc](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-bcc-member)
-
-  - [cc](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-cc-member)
-
-  - [to](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-to-member)
-
-
-  **Office.MessageCompose** (3 members)
-
-  - [bcc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-bcc-member)
-
-  - [cc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-cc-member)
-
-  - [to](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-to-member)
+  - Office.MessageCompose: [bcc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-bcc-member), [bcc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-bcc-member), [cc](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-cc-member), [to](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-to-member)
 
 isPreview: false
 isDeprecated: false
@@ -163,8 +144,7 @@ methods:
         - id: recipients
           description: >-
             The recipients to add to the recipients list. The array of
-            recipients can contain strings of SMTP email addresses,
-            [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            recipients can contain strings of SMTP email addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
             objects.
           type: >-
@@ -265,8 +245,7 @@ methods:
         - id: recipients
           description: >-
             The recipients to add to the recipients list. The array of
-            recipients can contain strings of SMTP email addresses,
-            [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            recipients can contain strings of SMTP email addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
             objects.
           type: >-
@@ -700,8 +679,7 @@ methods:
         - id: recipients
           description: >-
             The recipients to add to the recipients list. The array of
-            recipients can contain strings of SMTP email addresses,
-            [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            recipients can contain strings of SMTP email addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
             objects.
           type: >-
@@ -932,8 +910,7 @@ methods:
         - id: recipients
           description: >-
             The recipients to add to the recipients list. The array of
-            recipients can contain strings of SMTP email addresses,
-            [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            recipients can contain strings of SMTP email addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
             objects.
           type: >-

@@ -4,12 +4,11 @@ uid: word!Word.Interfaces.BodyData:interface
 package: word!
 fullName: Word.Interfaces.BodyData
 summary: An interface describing the data returned by calling `body.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Body** (1 member)
-  - [toJSON](/javascript/api/word/word.body#word-word-body-tojson-member(1))
+  - Word.Body: [toJSON](/javascript/api/word/word.body#word-word-body-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

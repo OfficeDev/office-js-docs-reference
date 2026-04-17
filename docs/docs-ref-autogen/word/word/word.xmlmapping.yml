@@ -17,46 +17,19 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlockGalleryContentControl: [xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-xmlmapping-member)
 
-  **Word.BuildingBlockGalleryContentControl** (1 member)
+  - Word.ContentControl: [xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)
 
-  - [xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-xmlmapping-member)
+  - Word.DatePickerContentControl: [xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)
 
+  - Word.GroupContentControl: [xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)
 
-  **Word.ContentControl** (1 member)
+  - Word.PictureContentControl: [xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
 
-  - [xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)
+  - Word.RepeatingSectionContentControl: [xmlMapping](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-xmlmapping-member)
 
-
-  **Word.DatePickerContentControl** (1 member)
-
-  - [xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)
-
-
-  **Word.GroupContentControl** (1 member)
-
-  - [xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)
-
-
-  **Word.PictureContentControl** (1 member)
-
-  - [xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
-
-
-  **Word.RepeatingSectionContentControl** (1 member)
-
-  - [xmlMapping](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-xmlmapping-member)
-
-
-  **Word.XmlMapping** (4 members)
-
-  - [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1))
-
-  - [set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(2))
-
-  - [track](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-track-member(1))
-
-  - [untrack](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-untrack-member(1))
+  - Word.XmlMapping: [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1)), [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1)), [set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(2)), [track](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-track-member(1)), [untrack](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

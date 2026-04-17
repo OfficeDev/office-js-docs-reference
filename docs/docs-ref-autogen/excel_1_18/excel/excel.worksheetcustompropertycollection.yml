@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Worksheet: [customProperties](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-customproperties-member)
 
-  **Excel.Worksheet** (1 member)
-
-  - [customProperties](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-customproperties-member)
-
-
-  **Excel.WorksheetCustomPropertyCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
+  - Excel.WorksheetCustomPropertyCollection: [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

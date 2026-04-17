@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.FloatingInk** (1 member)
-
-  - [toJSON](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-tojson-member(1))
+  - OneNote.FloatingInk: [toJSON](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.WebSettings** (1 member)
-
-  - [screenSize](/javascript/api/word/word.websettings#word-word-websettings-screensize-member)
+  - Word.WebSettings: [screenSize](/javascript/api/word/word.websettings#word-word-websettings-screensize-member)
 
 isPreview: false
 isDeprecated: false

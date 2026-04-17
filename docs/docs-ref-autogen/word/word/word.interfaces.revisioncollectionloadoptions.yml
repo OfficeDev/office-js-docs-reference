@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.RevisionCollection** (1 member)
-
-  - [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1))
+  - Word.RevisionCollection: [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlPartCollection** (1 member)
-
-  - [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
+  - Word.CustomXmlPartCollection: [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

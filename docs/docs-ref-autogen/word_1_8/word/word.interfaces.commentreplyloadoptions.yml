@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CommentReply** (1 member)
-
-  - [load](/javascript/api/word/word.commentreply#word-word-commentreply-load-member(1))
+  - Word.CommentReply: [load](/javascript/api/word/word.commentreply#word-word-commentreply-load-member(1))
 
 isPreview: false
 isDeprecated: false

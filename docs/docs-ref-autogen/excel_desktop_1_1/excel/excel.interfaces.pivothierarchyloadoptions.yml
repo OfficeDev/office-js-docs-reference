@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotHierarchy** (1 member)
-
-  - [load](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-load-member(1))
+  - Excel.PivotHierarchy: [load](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotField** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-tojson-member(1))
+  - Excel.PivotField: [toJSON](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

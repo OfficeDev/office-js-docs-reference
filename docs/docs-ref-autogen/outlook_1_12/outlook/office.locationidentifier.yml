@@ -23,17 +23,9 @@ remarks: >-
   #### Used by
 
 
+  - Office.EnhancedLocation: [addAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1)), [addAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1)), [removeAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-removeasync-member(1))
 
-  **Office.EnhancedLocation** (2 members)
-
-  - [addAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1))
-
-  - [removeAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-removeasync-member(1))
-
-
-  **Office.LocationDetails** (1 member)
-
-  - [locationIdentifier](/javascript/api/outlook/office.locationdetails#outlook-office-locationdetails-locationidentifier-member)
+  - Office.LocationDetails: [locationIdentifier](/javascript/api/outlook/office.locationdetails#outlook-office-locationdetails-locationidentifier-member)
 
   #### Examples
 

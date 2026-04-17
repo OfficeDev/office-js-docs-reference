@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Workbook** (1 member)
-
-  - [functions](/javascript/api/excel/excel.workbook#excel-excel-workbook-functions-member)
+  - Excel.Workbook: [functions](/javascript/api/excel/excel.workbook#excel-excel-workbook-functions-member)
 
   #### Examples
 

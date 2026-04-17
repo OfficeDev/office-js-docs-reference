@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.ShapeLineFormat** (1 member)
-
-  - [dashStyle](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-dashstyle-member)
+  - PowerPoint.ShapeLineFormat: [dashStyle](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-dashstyle-member)
 
   #### Examples
 

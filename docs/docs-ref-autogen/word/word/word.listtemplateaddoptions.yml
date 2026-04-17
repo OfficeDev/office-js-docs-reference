@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ListTemplateCollection** (1 member)
-
-  - [add](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-add-member(1))
+  - Word.ListTemplateCollection: [add](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-add-member(1))
 
 isPreview: true
 isDeprecated: false

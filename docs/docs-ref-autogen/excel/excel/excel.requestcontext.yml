@@ -15,1011 +15,405 @@ remarks: >-
   #### Used by
 
 
+  - Excel.AllowEditRange: [context](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-context-member)
 
-  **Excel.AllowEditRange** (1 member)
+  - Excel.AllowEditRangeCollection: [context](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-context-member)
+  - Excel.Application: [context](/javascript/api/excel/excel.application#excel-excel-application-context-member)
 
+  - Excel.AutoFilter: [context](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-context-member)
 
-  **Excel.AllowEditRangeCollection** (1 member)
+  - Excel.Binding: [context](/javascript/api/excel/excel.binding#excel-excel-binding-context-member)
 
-  - [context](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-context-member)
+  - Excel.BindingCollection: [context](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-context-member)
 
+  - Excel.CellValueConditionalFormat: [context](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-context-member)
 
-  **Excel.Application** (1 member)
+  - Excel.Chart: [context](/javascript/api/excel/excel.chart#excel-excel-chart-context-member)
 
-  - [context](/javascript/api/excel/excel.application#excel-excel-application-context-member)
+  - Excel.ChartAreaFormat: [context](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-context-member)
 
+  - Excel.ChartAxes: [context](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-context-member)
 
-  **Excel.AutoFilter** (1 member)
+  - Excel.ChartAxis: [context](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-context-member)
 
-  - [context](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-context-member)
+  - Excel.ChartAxisFormat: [context](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-context-member)
 
+  - Excel.ChartAxisTitle: [context](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-context-member)
 
-  **Excel.Binding** (1 member)
+  - Excel.ChartAxisTitleFormat: [context](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-context-member)
 
-  - [context](/javascript/api/excel/excel.binding#excel-excel-binding-context-member)
+  - Excel.ChartBinOptions: [context](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-context-member)
 
+  - Excel.ChartBorder: [context](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-context-member)
 
-  **Excel.BindingCollection** (1 member)
+  - Excel.ChartBoxwhiskerOptions: [context](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-context-member)
 
-  - [context](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-context-member)
+  - Excel.ChartCollection: [context](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-context-member)
 
+  - Excel.ChartDataLabel: [context](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-context-member)
 
-  **Excel.CellValueConditionalFormat** (1 member)
+  - Excel.ChartDataLabelAnchor: [context](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-context-member)
 
-  - [context](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-context-member)
+  - Excel.ChartDataLabelFormat: [context](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-context-member)
 
+  - Excel.ChartDataLabels: [context](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-context-member)
 
-  **Excel.Chart** (1 member)
+  - Excel.ChartDataTable: [context](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-context-member)
 
-  - [context](/javascript/api/excel/excel.chart#excel-excel-chart-context-member)
+  - Excel.ChartDataTableFormat: [context](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-context-member)
 
+  - Excel.ChartErrorBars: [context](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-context-member)
 
-  **Excel.ChartAreaFormat** (1 member)
+  - Excel.ChartErrorBarsFormat: [context](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-context-member)
+  - Excel.ChartFill: [context](/javascript/api/excel/excel.chartfill#excel-excel-chartfill-context-member)
 
+  - Excel.ChartFont: [context](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-context-member)
 
-  **Excel.ChartAxes** (1 member)
+  - Excel.ChartFormatString: [context](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-context-member)
 
-  - [context](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-context-member)
+  - Excel.ChartGridlines: [context](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-context-member)
 
+  - Excel.ChartGridlinesFormat: [context](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-context-member)
 
-  **Excel.ChartAxis** (1 member)
+  - Excel.ChartLeaderLines: [context](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-context-member)
 
-  - [context](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-context-member)
+  - Excel.ChartLeaderLinesFormat: [context](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-context-member)
 
+  - Excel.ChartLegend: [context](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-context-member)
 
-  **Excel.ChartAxisFormat** (1 member)
+  - Excel.ChartLegendEntry: [context](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-context-member)
 
-  - [context](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-context-member)
+  - Excel.ChartLegendEntryCollection: [context](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-context-member)
 
+  - Excel.ChartLegendFormat: [context](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-context-member)
 
-  **Excel.ChartAxisTitle** (1 member)
+  - Excel.ChartLineFormat: [context](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-context-member)
+  - Excel.ChartMapOptions: [context](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-context-member)
 
+  - Excel.ChartPivotOptions: [context](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-context-member)
 
-  **Excel.ChartAxisTitleFormat** (1 member)
+  - Excel.ChartPlotArea: [context](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-context-member)
 
-  - [context](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-context-member)
+  - Excel.ChartPlotAreaFormat: [context](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-context-member)
 
+  - Excel.ChartPoint: [context](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-context-member)
 
-  **Excel.ChartBinOptions** (1 member)
+  - Excel.ChartPointFormat: [context](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-context-member)
+  - Excel.ChartPointsCollection: [context](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-context-member)
 
+  - Excel.ChartSeries: [context](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-context-member)
 
-  **Excel.ChartBorder** (1 member)
+  - Excel.ChartSeriesCollection: [context](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-context-member)
+  - Excel.ChartSeriesFormat: [context](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-context-member)
 
+  - Excel.ChartTitle: [context](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-context-member)
 
-  **Excel.ChartBoxwhiskerOptions** (1 member)
+  - Excel.ChartTitleFormat: [context](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-context-member)
+  - Excel.ChartTrendline: [context](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-context-member)
 
+  - Excel.ChartTrendlineCollection: [context](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-context-member)
 
-  **Excel.ChartCollection** (1 member)
+  - Excel.ChartTrendlineFormat: [context](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-context-member)
+  - Excel.ChartTrendlineLabel: [context](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-context-member)
 
+  - Excel.ChartTrendlineLabelFormat: [context](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-context-member)
 
-  **Excel.ChartDataLabel** (1 member)
+  - Excel.ColorScaleConditionalFormat: [context](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-context-member)
+  - Excel.Comment: [context](/javascript/api/excel/excel.comment#excel-excel-comment-context-member)
 
+  - Excel.CommentCollection: [context](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-context-member)
 
-  **Excel.ChartDataLabelAnchor** (1 member)
+  - Excel.CommentReply: [context](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-context-member)
 
-  - [context](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-context-member)
+  - Excel.CommentReplyCollection: [context](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-context-member)
 
+  - Excel.ConditionalDataBarNegativeFormat: [context](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-context-member)
 
-  **Excel.ChartDataLabelFormat** (1 member)
+  - Excel.ConditionalDataBarPositiveFormat: [context](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-context-member)
+  - Excel.ConditionalFormat: [context](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-context-member)
 
+  - Excel.ConditionalFormatCollection: [context](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-context-member)
 
-  **Excel.ChartDataLabels** (1 member)
+  - Excel.ConditionalFormatRule: [context](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-context-member)
 
-  - [context](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-context-member)
+  - Excel.ConditionalRangeBorder: [context](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-context-member)
 
+  - Excel.ConditionalRangeBorderCollection: [context](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-context-member)
 
-  **Excel.ChartDataTable** (1 member)
+  - Excel.ConditionalRangeFill: [context](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-context-member)
 
-  - [context](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-context-member)
+  - Excel.ConditionalRangeFont: [context](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-context-member)
 
+  - Excel.ConditionalRangeFormat: [context](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-context-member)
 
-  **Excel.ChartDataTableFormat** (1 member)
+  - Excel.CultureInfo: [context](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-context-member)
 
-  - [context](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-context-member)
+  - Excel.CustomConditionalFormat: [context](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-context-member)
 
+  - Excel.CustomFunctionManager: [context](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-context-member)
 
-  **Excel.ChartErrorBars** (1 member)
+  - Excel.CustomProperty: [context](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-context-member)
 
-  - [context](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-context-member)
+  - Excel.CustomPropertyCollection: [context](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-context-member)
 
+  - Excel.CustomXmlPart: [context](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-context-member)
 
-  **Excel.ChartErrorBarsFormat** (1 member)
+  - Excel.CustomXmlPartCollection: [context](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-context-member)
+  - Excel.CustomXmlPartScopedCollection: [context](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-context-member)
 
+  - Excel.DataBarConditionalFormat: [context](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-context-member)
 
-  **Excel.ChartFill** (1 member)
+  - Excel.DataConnectionCollection: [context](/javascript/api/excel/excel.dataconnectioncollection#excel-excel-dataconnectioncollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartfill#excel-excel-chartfill-context-member)
+  - Excel.DataPivotHierarchy: [context](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-context-member)
 
+  - Excel.DataPivotHierarchyCollection: [context](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-context-member)
 
-  **Excel.ChartFont** (1 member)
+  - Excel.DataValidation: [context](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-context-member)
 
-  - [context](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-context-member)
+  - Excel.DatetimeFormatInfo: [context](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-context-member)
 
+  - Excel.DocumentProperties: [context](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-context-member)
 
-  **Excel.ChartFormatString** (1 member)
+  - Excel.DocumentTask: [context](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-context-member)
 
-  - [context](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-context-member)
+  - Excel.DocumentTaskChange: [context](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-context-member)
 
+  - Excel.DocumentTaskChangeCollection: [context](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-context-member)
 
-  **Excel.ChartGridlines** (1 member)
+  - Excel.DocumentTaskCollection: [context](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-context-member)
+  - Excel.Filter: [context](/javascript/api/excel/excel.filter#excel-excel-filter-context-member)
 
+  - Excel.FilterPivotHierarchy: [context](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-context-member)
 
-  **Excel.ChartGridlinesFormat** (1 member)
+  - Excel.FilterPivotHierarchyCollection: [context](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-context-member)
+  - Excel.FormatProtection: [context](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-context-member)
 
+  - Excel.FunctionResult: [context](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-context-member)
 
-  **Excel.ChartLeaderLines** (1 member)
+  - Excel.Functions: [context](/javascript/api/excel/excel.functions#excel-excel-functions-context-member)
 
-  - [context](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-context-member)
+  - Excel.GeometricShape: [context](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-context-member)
 
+  - Excel.GroupShapeCollection: [context](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-context-member)
 
-  **Excel.ChartLeaderLinesFormat** (1 member)
+  - Excel.HeaderFooter: [context](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-context-member)
 
-  - [context](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-context-member)
+  - Excel.HeaderFooterGroup: [context](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-context-member)
 
+  - Excel.HeaderFooterPicture: [context](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-context-member)
 
-  **Excel.ChartLegend** (1 member)
+  - Excel.IconSetConditionalFormat: [context](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-context-member)
 
-  - [context](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-context-member)
+  - Excel.Image: [context](/javascript/api/excel/excel.image#excel-excel-image-context-member)
 
+  - Excel.IterativeCalculation: [context](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-context-member)
 
-  **Excel.ChartLegendEntry** (1 member)
+  - Excel.Line: [context](/javascript/api/excel/excel.line#excel-excel-line-context-member)
 
-  - [context](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-context-member)
+  - Excel.LinkedEntityDataDomain: [context](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-context-member)
 
+  - Excel.LinkedEntityDataDomainCollection: [context](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-context-member)
 
-  **Excel.ChartLegendEntryCollection** (1 member)
+  - Excel.LinkedWorkbook: [context](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-context-member)
 
-  - [context](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-context-member)
+  - Excel.LinkedWorkbookCollection: [context](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-context-member)
 
+  - Excel.LocalImage: [context](/javascript/api/excel/excel.localimage#excel-excel-localimage-context-member)
 
-  **Excel.ChartLegendFormat** (1 member)
+  - Excel.NamedItem: [context](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-context-member)
 
-  - [context](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-context-member)
+  - Excel.NamedItemArrayValues: [context](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-context-member)
 
+  - Excel.NamedItemCollection: [context](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-context-member)
 
-  **Excel.ChartLineFormat** (1 member)
+  - Excel.NamedSheetView: [context](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-context-member)
 
-  - [context](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-context-member)
+  - Excel.NamedSheetViewCollection: [context](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-context-member)
 
+  - Excel.Note: [context](/javascript/api/excel/excel.note#excel-excel-note-context-member)
 
-  **Excel.ChartMapOptions** (1 member)
+  - Excel.NoteCollection: [context](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-context-member)
+  - Excel.NumberFormatInfo: [context](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-context-member)
 
+  - Excel.PageBreak: [context](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-context-member)
 
-  **Excel.ChartPivotOptions** (1 member)
+  - Excel.PageBreakCollection: [context](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-context-member)
+  - Excel.PageLayout: [context](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-context-member)
 
+  - Excel.Pane: [context](/javascript/api/excel/excel.pane#excel-excel-pane-context-member)
 
-  **Excel.ChartPlotArea** (1 member)
+  - Excel.PaneCollection: [context](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-context-member)
+  - Excel.PivotField: [context](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-context-member)
 
+  - Excel.PivotFieldCollection: [context](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-context-member)
 
-  **Excel.ChartPlotAreaFormat** (1 member)
+  - Excel.PivotHierarchy: [context](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-context-member)
 
-  - [context](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-context-member)
+  - Excel.PivotHierarchyCollection: [context](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-context-member)
 
+  - Excel.PivotItem: [context](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-context-member)
 
-  **Excel.ChartPoint** (1 member)
+  - Excel.PivotItemCollection: [context](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-context-member)
+  - Excel.PivotLayout: [context](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-context-member)
 
+  - Excel.PivotTable: [context](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-context-member)
 
-  **Excel.ChartPointFormat** (1 member)
+  - Excel.PivotTableCollection: [context](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-context-member)
+  - Excel.PivotTableScopedCollection: [context](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-context-member)
 
+  - Excel.PivotTableStyle: [context](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-context-member)
 
-  **Excel.ChartPointsCollection** (1 member)
+  - Excel.PivotTableStyleCollection: [context](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-context-member)
+  - Excel.PresetCriteriaConditionalFormat: [context](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-context-member)
 
+  - Excel.Query: [context](/javascript/api/excel/excel.query#excel-excel-query-context-member)
 
-  **Excel.ChartSeries** (1 member)
+  - Excel.QueryCollection: [context](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-context-member)
+  - Excel.Range: [context](/javascript/api/excel/excel.range#excel-excel-range-context-member)
 
+  - Excel.RangeAreas: [context](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-context-member)
 
-  **Excel.ChartSeriesCollection** (1 member)
+  - Excel.RangeAreasCollection: [context](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-context-member)
+  - Excel.RangeBorder: [context](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-context-member)
 
+  - Excel.RangeBorderCollection: [context](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-context-member)
 
-  **Excel.ChartSeriesFormat** (1 member)
+  - Excel.RangeCollection: [context](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-context-member)
+  - Excel.RangeFill: [context](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-context-member)
 
+  - Excel.RangeFont: [context](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-context-member)
 
-  **Excel.ChartTitle** (1 member)
+  - Excel.RangeFormat: [context](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-context-member)
 
-  - [context](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-context-member)
+  - Excel.RangeSort: [context](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-context-member)
 
+  - Excel.RangeView: [context](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-context-member)
 
-  **Excel.ChartTitleFormat** (1 member)
+  - Excel.RangeViewCollection: [context](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-context-member)
+  - Excel.RemoveDuplicatesResult: [context](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-context-member)
 
+  - Excel.RowColumnPivotHierarchy: [context](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-context-member)
 
-  **Excel.ChartTrendline** (1 member)
+  - Excel.RowColumnPivotHierarchyCollection: [context](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-context-member)
 
-  - [context](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-context-member)
+  - Excel.Runtime: [context](/javascript/api/excel/excel.runtime#excel-excel-runtime-context-member)
 
+  - Excel.Setting: [context](/javascript/api/excel/excel.setting#excel-excel-setting-context-member)
 
-  **Excel.ChartTrendlineCollection** (1 member)
+  - Excel.SettingCollection: [context](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-context-member)
+  - Excel.Shape: [context](/javascript/api/excel/excel.shape#excel-excel-shape-context-member)
 
+  - Excel.ShapeCollection: [context](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-context-member)
 
-  **Excel.ChartTrendlineFormat** (1 member)
+  - Excel.ShapeFill: [context](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-context-member)
 
-  - [context](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-context-member)
+  - Excel.ShapeFont: [context](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-context-member)
 
+  - Excel.ShapeGroup: [context](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-context-member)
 
-  **Excel.ChartTrendlineLabel** (1 member)
+  - Excel.ShapeLineFormat: [context](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-context-member)
 
-  - [context](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-context-member)
+  - Excel.Slicer: [context](/javascript/api/excel/excel.slicer#excel-excel-slicer-context-member)
 
+  - Excel.SlicerCollection: [context](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-context-member)
 
-  **Excel.ChartTrendlineLabelFormat** (1 member)
+  - Excel.SlicerItem: [context](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-context-member)
 
-  - [context](/javascript/api/excel/excel.charttrendlinelabelformat#excel-excel-charttrendlinelabelformat-context-member)
+  - Excel.SlicerItemCollection: [context](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-context-member)
 
+  - Excel.SlicerStyle: [context](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-context-member)
 
-  **Excel.ColorScaleConditionalFormat** (1 member)
+  - Excel.SlicerStyleCollection: [context](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-context-member)
+  - Excel.Style: [context](/javascript/api/excel/excel.style#excel-excel-style-context-member)
 
+  - Excel.StyleCollection: [context](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-context-member)
 
-  **Excel.Comment** (1 member)
+  - Excel.Table: [context](/javascript/api/excel/excel.table#excel-excel-table-context-member)
 
-  - [context](/javascript/api/excel/excel.comment#excel-excel-comment-context-member)
+  - Excel.TableChangedEventArgs: [getRange](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1)), [getRange](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrangeornullobject-member(1))
 
+  - Excel.TableCollection: [context](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-context-member)
 
-  **Excel.CommentCollection** (1 member)
+  - Excel.TableColumn: [context](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-context-member)
 
-  - [context](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-context-member)
+  - Excel.TableColumnCollection: [context](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-context-member)
 
+  - Excel.TableRow: [context](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-context-member)
 
-  **Excel.CommentReply** (1 member)
+  - Excel.TableRowCollection: [context](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-context-member)
+  - Excel.TableScopedCollection: [context](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-context-member)
 
+  - Excel.TableSort: [context](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-context-member)
 
-  **Excel.CommentReplyCollection** (1 member)
+  - Excel.TableStyle: [context](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-context-member)
 
-  - [context](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-context-member)
+  - Excel.TableStyleCollection: [context](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-context-member)
 
+  - Excel.TextConditionalFormat: [context](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-context-member)
 
-  **Excel.ConditionalDataBarNegativeFormat** (1 member)
+  - Excel.TextFrame: [context](/javascript/api/excel/excel.textframe#excel-excel-textframe-context-member)
 
-  - [context](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-context-member)
+  - Excel.TextRange: [context](/javascript/api/excel/excel.textrange#excel-excel-textrange-context-member)
 
+  - Excel.TimelineStyle: [context](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-context-member)
 
-  **Excel.ConditionalDataBarPositiveFormat** (1 member)
+  - Excel.TimelineStyleCollection: [context](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-context-member)
 
-  - [context](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-context-member)
+  - Excel.TopBottomConditionalFormat: [context](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-context-member)
 
+  - Excel.Window: [context](/javascript/api/excel/excel.window#excel-excel-window-context-member)
 
-  **Excel.ConditionalFormat** (1 member)
+  - Excel.WindowCollection: [context](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-context-member)
 
-  - [context](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-context-member)
+  - Excel.Workbook: [context](/javascript/api/excel/excel.workbook#excel-excel-workbook-context-member)
 
+  - Excel.WorkbookCreated: [context](/javascript/api/excel/excel.workbookcreated#excel-excel-workbookcreated-context-member)
 
-  **Excel.ConditionalFormatCollection** (1 member)
+  - Excel.WorkbookProtection: [context](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-context-member)
 
-  - [context](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-context-member)
+  - Excel.WorkbookRangeAreas: [context](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-context-member)
 
+  - Excel.Worksheet: [context](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-context-member)
 
-  **Excel.ConditionalFormatRule** (1 member)
+  - Excel.WorksheetChangedEventArgs: [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)), [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrangeornullobject-member(1))
 
-  - [context](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-context-member)
+  - Excel.WorksheetCollection: [context](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-context-member)
 
+  - Excel.WorksheetCustomProperty: [context](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-context-member)
 
-  **Excel.ConditionalRangeBorder** (1 member)
+  - Excel.WorksheetCustomPropertyCollection: [context](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-context-member)
 
-  - [context](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-context-member)
+  - Excel.WorksheetFormatChangedEventArgs: [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1)), [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrangeornullobject-member(1))
 
+  - Excel.WorksheetFreezePanes: [context](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-context-member)
 
-  **Excel.ConditionalRangeBorderCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-context-member)
-
-
-  **Excel.ConditionalRangeFill** (1 member)
-
-  - [context](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-context-member)
-
-
-  **Excel.ConditionalRangeFont** (1 member)
-
-  - [context](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-context-member)
-
-
-  **Excel.ConditionalRangeFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-context-member)
-
-
-  **Excel.CultureInfo** (1 member)
-
-  - [context](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-context-member)
-
-
-  **Excel.CustomConditionalFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-context-member)
-
-
-  **Excel.CustomFunctionManager** (1 member)
-
-  - [context](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-context-member)
-
-
-  **Excel.CustomProperty** (1 member)
-
-  - [context](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-context-member)
-
-
-  **Excel.CustomPropertyCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-context-member)
-
-
-  **Excel.CustomXmlPart** (1 member)
-
-  - [context](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-context-member)
-
-
-  **Excel.CustomXmlPartCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-context-member)
-
-
-  **Excel.CustomXmlPartScopedCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-context-member)
-
-
-  **Excel.DataBarConditionalFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-context-member)
-
-
-  **Excel.DataConnectionCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.dataconnectioncollection#excel-excel-dataconnectioncollection-context-member)
-
-
-  **Excel.DataPivotHierarchy** (1 member)
-
-  - [context](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-context-member)
-
-
-  **Excel.DataPivotHierarchyCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-context-member)
-
-
-  **Excel.DataValidation** (1 member)
-
-  - [context](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-context-member)
-
-
-  **Excel.DatetimeFormatInfo** (1 member)
-
-  - [context](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-context-member)
-
-
-  **Excel.DocumentProperties** (1 member)
-
-  - [context](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-context-member)
-
-
-  **Excel.DocumentTask** (1 member)
-
-  - [context](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-context-member)
-
-
-  **Excel.DocumentTaskChange** (1 member)
-
-  - [context](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-context-member)
-
-
-  **Excel.DocumentTaskChangeCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-context-member)
-
-
-  **Excel.DocumentTaskCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-context-member)
-
-
-  **Excel.Filter** (1 member)
-
-  - [context](/javascript/api/excel/excel.filter#excel-excel-filter-context-member)
-
-
-  **Excel.FilterPivotHierarchy** (1 member)
-
-  - [context](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-context-member)
-
-
-  **Excel.FilterPivotHierarchyCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-context-member)
-
-
-  **Excel.FormatProtection** (1 member)
-
-  - [context](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-context-member)
-
-
-  **Excel.FunctionResult** (1 member)
-
-  - [context](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-context-member)
-
-
-  **Excel.Functions** (1 member)
-
-  - [context](/javascript/api/excel/excel.functions#excel-excel-functions-context-member)
-
-
-  **Excel.GeometricShape** (1 member)
-
-  - [context](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-context-member)
-
-
-  **Excel.GroupShapeCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-context-member)
-
-
-  **Excel.HeaderFooter** (1 member)
-
-  - [context](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-context-member)
-
-
-  **Excel.HeaderFooterGroup** (1 member)
-
-  - [context](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-context-member)
-
-
-  **Excel.HeaderFooterPicture** (1 member)
-
-  - [context](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-context-member)
-
-
-  **Excel.IconSetConditionalFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-context-member)
-
-
-  **Excel.Image** (1 member)
-
-  - [context](/javascript/api/excel/excel.image#excel-excel-image-context-member)
-
-
-  **Excel.IterativeCalculation** (1 member)
-
-  - [context](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-context-member)
-
-
-  **Excel.Line** (1 member)
-
-  - [context](/javascript/api/excel/excel.line#excel-excel-line-context-member)
-
-
-  **Excel.LinkedEntityDataDomain** (1 member)
-
-  - [context](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-context-member)
-
-
-  **Excel.LinkedEntityDataDomainCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-context-member)
-
-
-  **Excel.LinkedWorkbook** (1 member)
-
-  - [context](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-context-member)
-
-
-  **Excel.LinkedWorkbookCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-context-member)
-
-
-  **Excel.LocalImage** (1 member)
-
-  - [context](/javascript/api/excel/excel.localimage#excel-excel-localimage-context-member)
-
-
-  **Excel.NamedItem** (1 member)
-
-  - [context](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-context-member)
-
-
-  **Excel.NamedItemArrayValues** (1 member)
-
-  - [context](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-context-member)
-
-
-  **Excel.NamedItemCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-context-member)
-
-
-  **Excel.NamedSheetView** (1 member)
-
-  - [context](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-context-member)
-
-
-  **Excel.NamedSheetViewCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-context-member)
-
-
-  **Excel.Note** (1 member)
-
-  - [context](/javascript/api/excel/excel.note#excel-excel-note-context-member)
-
-
-  **Excel.NoteCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-context-member)
-
-
-  **Excel.NumberFormatInfo** (1 member)
-
-  - [context](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-context-member)
-
-
-  **Excel.PageBreak** (1 member)
-
-  - [context](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-context-member)
-
-
-  **Excel.PageBreakCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-context-member)
-
-
-  **Excel.PageLayout** (1 member)
-
-  - [context](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-context-member)
-
-
-  **Excel.Pane** (1 member)
-
-  - [context](/javascript/api/excel/excel.pane#excel-excel-pane-context-member)
-
-
-  **Excel.PaneCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-context-member)
-
-
-  **Excel.PivotField** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-context-member)
-
-
-  **Excel.PivotFieldCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-context-member)
-
-
-  **Excel.PivotHierarchy** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-context-member)
-
-
-  **Excel.PivotHierarchyCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-context-member)
-
-
-  **Excel.PivotItem** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-context-member)
-
-
-  **Excel.PivotItemCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-context-member)
-
-
-  **Excel.PivotLayout** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-context-member)
-
-
-  **Excel.PivotTable** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-context-member)
-
-
-  **Excel.PivotTableCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-context-member)
-
-
-  **Excel.PivotTableScopedCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-context-member)
-
-
-  **Excel.PivotTableStyle** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-context-member)
-
-
-  **Excel.PivotTableStyleCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-context-member)
-
-
-  **Excel.PresetCriteriaConditionalFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-context-member)
-
-
-  **Excel.Query** (1 member)
-
-  - [context](/javascript/api/excel/excel.query#excel-excel-query-context-member)
-
-
-  **Excel.QueryCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-context-member)
-
-
-  **Excel.Range** (1 member)
-
-  - [context](/javascript/api/excel/excel.range#excel-excel-range-context-member)
-
-
-  **Excel.RangeAreas** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-context-member)
-
-
-  **Excel.RangeAreasCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-context-member)
-
-
-  **Excel.RangeBorder** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-context-member)
-
-
-  **Excel.RangeBorderCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-context-member)
-
-
-  **Excel.RangeCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-context-member)
-
-
-  **Excel.RangeFill** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-context-member)
-
-
-  **Excel.RangeFont** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-context-member)
-
-
-  **Excel.RangeFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-context-member)
-
-
-  **Excel.RangeSort** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-context-member)
-
-
-  **Excel.RangeView** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-context-member)
-
-
-  **Excel.RangeViewCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-context-member)
-
-
-  **Excel.RemoveDuplicatesResult** (1 member)
-
-  - [context](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-context-member)
-
-
-  **Excel.RowColumnPivotHierarchy** (1 member)
-
-  - [context](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-context-member)
-
-
-  **Excel.RowColumnPivotHierarchyCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-context-member)
-
-
-  **Excel.Runtime** (1 member)
-
-  - [context](/javascript/api/excel/excel.runtime#excel-excel-runtime-context-member)
-
-
-  **Excel.Setting** (1 member)
-
-  - [context](/javascript/api/excel/excel.setting#excel-excel-setting-context-member)
-
-
-  **Excel.SettingCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-context-member)
-
-
-  **Excel.Shape** (1 member)
-
-  - [context](/javascript/api/excel/excel.shape#excel-excel-shape-context-member)
-
-
-  **Excel.ShapeCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-context-member)
-
-
-  **Excel.ShapeFill** (1 member)
-
-  - [context](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-context-member)
-
-
-  **Excel.ShapeFont** (1 member)
-
-  - [context](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-context-member)
-
-
-  **Excel.ShapeGroup** (1 member)
-
-  - [context](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-context-member)
-
-
-  **Excel.ShapeLineFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-context-member)
-
-
-  **Excel.Slicer** (1 member)
-
-  - [context](/javascript/api/excel/excel.slicer#excel-excel-slicer-context-member)
-
-
-  **Excel.SlicerCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-context-member)
-
-
-  **Excel.SlicerItem** (1 member)
-
-  - [context](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-context-member)
-
-
-  **Excel.SlicerItemCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-context-member)
-
-
-  **Excel.SlicerStyle** (1 member)
-
-  - [context](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-context-member)
-
-
-  **Excel.SlicerStyleCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-context-member)
-
-
-  **Excel.Style** (1 member)
-
-  - [context](/javascript/api/excel/excel.style#excel-excel-style-context-member)
-
-
-  **Excel.StyleCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-context-member)
-
-
-  **Excel.Table** (1 member)
-
-  - [context](/javascript/api/excel/excel.table#excel-excel-table-context-member)
-
-
-  **Excel.TableChangedEventArgs** (2 members)
-
-  - [getRange](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrange-member(1))
-
-  - [getRangeOrNullObject](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-getrangeornullobject-member(1))
-
-
-  **Excel.TableCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-context-member)
-
-
-  **Excel.TableColumn** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-context-member)
-
-
-  **Excel.TableColumnCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-context-member)
-
-
-  **Excel.TableRow** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-context-member)
-
-
-  **Excel.TableRowCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-context-member)
-
-
-  **Excel.TableScopedCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-context-member)
-
-
-  **Excel.TableSort** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-context-member)
-
-
-  **Excel.TableStyle** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-context-member)
-
-
-  **Excel.TableStyleCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-context-member)
-
-
-  **Excel.TextConditionalFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-context-member)
-
-
-  **Excel.TextFrame** (1 member)
-
-  - [context](/javascript/api/excel/excel.textframe#excel-excel-textframe-context-member)
-
-
-  **Excel.TextRange** (1 member)
-
-  - [context](/javascript/api/excel/excel.textrange#excel-excel-textrange-context-member)
-
-
-  **Excel.TimelineStyle** (1 member)
-
-  - [context](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-context-member)
-
-
-  **Excel.TimelineStyleCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-context-member)
-
-
-  **Excel.TopBottomConditionalFormat** (1 member)
-
-  - [context](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-context-member)
-
-
-  **Excel.Window** (1 member)
-
-  - [context](/javascript/api/excel/excel.window#excel-excel-window-context-member)
-
-
-  **Excel.WindowCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-context-member)
-
-
-  **Excel.Workbook** (1 member)
-
-  - [context](/javascript/api/excel/excel.workbook#excel-excel-workbook-context-member)
-
-
-  **Excel.WorkbookCreated** (1 member)
-
-  - [context](/javascript/api/excel/excel.workbookcreated#excel-excel-workbookcreated-context-member)
-
-
-  **Excel.WorkbookProtection** (1 member)
-
-  - [context](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-context-member)
-
-
-  **Excel.WorkbookRangeAreas** (1 member)
-
-  - [context](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-context-member)
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [context](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-context-member)
-
-
-  **Excel.WorksheetChangedEventArgs** (2 members)
-
-  - [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1))
-
-  - [getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrangeornullobject-member(1))
-
-
-  **Excel.WorksheetCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-context-member)
-
-
-  **Excel.WorksheetCustomProperty** (1 member)
-
-  - [context](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-context-member)
-
-
-  **Excel.WorksheetCustomPropertyCollection** (1 member)
-
-  - [context](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-context-member)
-
-
-  **Excel.WorksheetFormatChangedEventArgs** (2 members)
-
-  - [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1))
-
-  - [getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrangeornullobject-member(1))
-
-
-  **Excel.WorksheetFreezePanes** (1 member)
-
-  - [context](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-context-member)
-
-
-  **Excel.WorksheetProtection** (1 member)
-
-  - [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
+  - Excel.WorksheetProtection: [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
 
   #### Examples
 

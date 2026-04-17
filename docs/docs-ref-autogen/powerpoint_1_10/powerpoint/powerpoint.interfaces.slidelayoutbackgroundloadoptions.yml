@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideLayoutBackground** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-load-member(1))
+  - PowerPoint.SlideLayoutBackground: [load](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,31 +12,13 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.Outline: [appendRichText](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendrichtext-member(1))
 
-  **OneNote.Outline** (1 member)
+  - OneNote.Paragraph: [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)), [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)), [richText](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-richtext-member)
 
-  - [appendRichText](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendrichtext-member(1))
+  - OneNote.RichText: [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1)), [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1)), [track](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-track-member(1)), [untrack](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-untrack-member(1))
 
-
-  **OneNote.Paragraph** (2 members)
-
-  - [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1))
-
-  - [richText](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-richtext-member)
-
-
-  **OneNote.RichText** (3 members)
-
-  - [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-untrack-member(1))
-
-
-  **OneNote.TableCell** (1 member)
-
-  - [appendRichText](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendrichtext-member(1))
+  - OneNote.TableCell: [appendRichText](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendrichtext-member(1))
 
 isPreview: false
 isDeprecated: false

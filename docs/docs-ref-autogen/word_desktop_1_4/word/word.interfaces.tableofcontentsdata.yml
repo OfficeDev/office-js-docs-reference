@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TableOfContents** (1 member)
-
-  - [toJSON](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tojson-member(1))
+  - Word.TableOfContents: [toJSON](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,20 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.DocumentTaskCollection: [load](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-load-member(1))
 
-  **Excel.DocumentTaskCollection** (1 member)
+  - Excel.Workbook: [tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)
 
-  - [load](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)
+  - Excel.Worksheet: [tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)
 
 isPreview: true
 isDeprecated: false

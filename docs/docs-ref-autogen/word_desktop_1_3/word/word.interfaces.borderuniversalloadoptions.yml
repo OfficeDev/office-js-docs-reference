@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.BorderUniversal** (1 member)
-
-  - [load](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-load-member(1))
+  - Word.BorderUniversal: [load](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-load-member(1))
 
 isPreview: false
 isDeprecated: false

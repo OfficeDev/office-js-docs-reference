@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TableSort** (1 member)
-
-  - [load](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-load-member(1))
+  - Excel.TableSort: [load](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotTableStyle** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-tojson-member(1))
+  - Excel.PivotTableStyle: [toJSON](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

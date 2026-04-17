@@ -18,10 +18,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.RecurrenceProperties** (1 member)
-
-  - [month](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-month-member)
+  - Office.RecurrenceProperties: [month](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-month-member)
 
   #### Examples
 

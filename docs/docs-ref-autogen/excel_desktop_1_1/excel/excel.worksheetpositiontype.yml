@@ -15,15 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.InsertWorksheetOptions: [positionType](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-positiontype-member)
 
-  **Excel.InsertWorksheetOptions** (1 member)
-
-  - [positionType](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-positiontype-member)
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
+  - Excel.Worksheet: [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
 
   #### Examples
 

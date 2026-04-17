@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [getCrossReferenceItems](/javascript/api/word/word.document#word-word-document-getcrossreferenceitems-member(1))
+  - Word.Document: [getCrossReferenceItems](/javascript/api/word/word.document#word-word-document-getcrossreferenceitems-member(1))
 
 isPreview: false
 isDeprecated: false

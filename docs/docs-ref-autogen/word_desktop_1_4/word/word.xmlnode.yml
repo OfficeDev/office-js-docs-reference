@@ -12,40 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
 
-  **Word.Document** (1 member)
+  - Word.XmlNode: [firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member), [firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member), [lastChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-lastchild-member), [load](/javascript/api/word/word.xmlnode#word-word-xmlnode-load-member(1)), [nextSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-nextsibling-member), [parentNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-parentnode-member), [previousSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-previoussibling-member), [removeChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-removechild-member(1)), [selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1)), [track](/javascript/api/word/word.xmlnode#word-word-xmlnode-track-member(1)), [untrack](/javascript/api/word/word.xmlnode#word-word-xmlnode-untrack-member(1))
 
-  - [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
-
-
-  **Word.XmlNode** (10 members)
-
-  - [firstChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-firstchild-member)
-
-  - [lastChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-lastchild-member)
-
-  - [load](/javascript/api/word/word.xmlnode#word-word-xmlnode-load-member(1))
-
-  - [nextSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-nextsibling-member)
-
-  - [parentNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-parentnode-member)
-
-  - [previousSibling](/javascript/api/word/word.xmlnode#word-word-xmlnode-previoussibling-member)
-
-  - [removeChild](/javascript/api/word/word.xmlnode#word-word-xmlnode-removechild-member(1))
-
-  - [selectSingleNode](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectsinglenode-member(1))
-
-  - [track](/javascript/api/word/word.xmlnode#word-word-xmlnode-track-member(1))
-
-  - [untrack](/javascript/api/word/word.xmlnode#word-word-xmlnode-untrack-member(1))
-
-
-  **Word.XmlNodeCollection** (2 members)
-
-  - [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1))
-
-  - [items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
+  - Word.XmlNodeCollection: [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1)), [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1)), [items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Font** (1 member)
-
-  - [ligature](/javascript/api/word/word.font#word-word-font-ligature-member)
+  - Word.Font: [ligature](/javascript/api/word/word.font#word-word-font-ligature-member)
 
 isPreview: false
 isDeprecated: false

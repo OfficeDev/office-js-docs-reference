@@ -19,15 +19,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.LinkedEntityDataDomainCollection: [load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(1))
 
-  **Excel.LinkedEntityDataDomainCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [linkedEntityDataDomains](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedentitydatadomains-member)
+  - Excel.Workbook: [linkedEntityDataDomains](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedentitydatadomains-member)
 
 isPreview: false
 isDeprecated: false

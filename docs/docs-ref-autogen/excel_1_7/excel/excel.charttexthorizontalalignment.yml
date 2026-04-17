@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartTitle** (1 member)
-
-  - [horizontalAlignment](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-horizontalalignment-member)
+  - Excel.ChartTitle: [horizontalAlignment](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-horizontalalignment-member)
 
 isPreview: false
 isDeprecated: false

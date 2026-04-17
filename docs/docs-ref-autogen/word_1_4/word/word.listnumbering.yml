@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.List** (1 member)
-
-  - [setLevelNumbering](/javascript/api/word/word.list#word-word-list-setlevelnumbering-member(1))
+  - Word.List: [setLevelNumbering](/javascript/api/word/word.list#word-word-list-setlevelnumbering-member(1))
 
   #### Examples
 

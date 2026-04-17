@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.Presentation** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-load-member(1))
+  - PowerPoint.Presentation: [load](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-load-member(1))
 
 isPreview: false
 isDeprecated: false

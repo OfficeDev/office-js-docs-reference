@@ -12,21 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.ContentControl: [repeatingSectionContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-repeatingsectioncontentcontrol-member)
 
-  **Word.ContentControl** (1 member)
-
-  - [repeatingSectionContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-repeatingsectioncontentcontrol-member)
-
-
-  **Word.RepeatingSectionContentControl** (4 members)
-
-  - [load](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-load-member(1))
-
-  - [set](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-set-member(2))
-
-  - [track](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-track-member(1))
-
-  - [untrack](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-untrack-member(1))
+  - Word.RepeatingSectionContentControl: [load](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-load-member(1)), [load](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-load-member(1)), [set](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-set-member(2)), [track](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

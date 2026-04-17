@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.PlaceholderFormat** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-load-member(1))
+  - PowerPoint.PlaceholderFormat: [load](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

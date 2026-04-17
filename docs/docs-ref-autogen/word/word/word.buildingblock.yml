@@ -14,60 +14,23 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlock: [load](/javascript/api/word/word.buildingblock#word-word-buildingblock-load-member(1)), [load](/javascript/api/word/word.buildingblock#word-word-buildingblock-load-member(1)), [set](/javascript/api/word/word.buildingblock#word-word-buildingblock-set-member(2)), [track](/javascript/api/word/word.buildingblock#word-word-buildingblock-track-member(1)), [untrack](/javascript/api/word/word.buildingblock#word-word-buildingblock-untrack-member(1))
 
-  **Word.BuildingBlock** (4 members)
+  - Word.BuildingBlockCollection: [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1)), [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1)), [getItemAt](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-getitemat-member(1))
 
-  - [load](/javascript/api/word/word.buildingblock#word-word-buildingblock-load-member(1))
+  - Word.BuildingBlockEntryCollection: [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1)), [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1)), [getItemAt](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-getitemat-member(1))
 
-  - [set](/javascript/api/word/word.buildingblock#word-word-buildingblock-set-member(2))
+  - Word.BuildingBlockGalleryContentControl: [placeholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-placeholdertext-member)
 
-  - [track](/javascript/api/word/word.buildingblock#word-word-buildingblock-track-member(1))
+  - Word.ContentControlPlaceholderOptions: [buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-buildingblock-member)
 
-  - [untrack](/javascript/api/word/word.buildingblock#word-word-buildingblock-untrack-member(1))
+  - Word.DatePickerContentControl: [placeholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-placeholdertext-member)
 
+  - Word.GroupContentControl: [placeholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-placeholdertext-member)
 
-  **Word.BuildingBlockCollection** (2 members)
+  - Word.PictureContentControl: [placeholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-placeholdertext-member)
 
-  - [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
-
-  - [getItemAt](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-getitemat-member(1))
-
-
-  **Word.BuildingBlockEntryCollection** (2 members)
-
-  - [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
-
-  - [getItemAt](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-getitemat-member(1))
-
-
-  **Word.BuildingBlockGalleryContentControl** (1 member)
-
-  - [placeholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-placeholdertext-member)
-
-
-  **Word.ContentControlPlaceholderOptions** (1 member)
-
-  - [buildingBlock](/javascript/api/word/word.contentcontrolplaceholderoptions#word-word-contentcontrolplaceholderoptions-buildingblock-member)
-
-
-  **Word.DatePickerContentControl** (1 member)
-
-  - [placeholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-placeholdertext-member)
-
-
-  **Word.GroupContentControl** (1 member)
-
-  - [placeholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-placeholdertext-member)
-
-
-  **Word.PictureContentControl** (1 member)
-
-  - [placeholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-placeholdertext-member)
-
-
-  **Word.RepeatingSectionContentControl** (1 member)
-
-  - [placeholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-placeholdertext-member)
+  - Word.RepeatingSectionContentControl: [placeholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-placeholdertext-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalIconCriterion** (1 member)
-
-  - [operator](/javascript/api/excel/excel.conditionaliconcriterion#excel-excel-conditionaliconcriterion-operator-member)
+  - Excel.ConditionalIconCriterion: [operator](/javascript/api/excel/excel.conditionaliconcriterion#excel-excel-conditionaliconcriterion-operator-member)
 
   #### Examples
 

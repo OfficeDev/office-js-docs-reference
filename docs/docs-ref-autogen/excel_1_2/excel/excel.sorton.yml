@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.SortField** (1 member)
-
-  - [sortOn](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-sorton-member)
+  - Excel.SortField: [sortOn](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-sorton-member)
 
   #### Examples
 

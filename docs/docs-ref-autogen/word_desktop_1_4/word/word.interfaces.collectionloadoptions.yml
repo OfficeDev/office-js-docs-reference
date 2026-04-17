@@ -8,295 +8,121 @@ remarks: >-
   #### Used by
 
 
+  - Word.AnnotationCollection: [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
 
-  **Word.AnnotationCollection** (1 member)
+  - Word.BookmarkCollection: [load](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
+  - Word.BorderCollection: [load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(1))
 
+  - Word.BorderUniversalCollection: [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
 
-  **Word.BookmarkCollection** (1 member)
+  - Word.BreakCollection: [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-load-member(1))
+  - Word.CoauthorCollection: [load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(1))
 
+  - Word.CoauthoringLockCollection: [load](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-load-member(1))
 
-  **Word.BorderCollection** (1 member)
+  - Word.CoauthoringUpdateCollection: [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(1))
+  - Word.CommentCollection: [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1))
 
+  - Word.CommentReplyCollection: [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
 
-  **Word.BorderUniversalCollection** (1 member)
+  - Word.ConflictCollection: [load](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
+  - Word.ContentControlCollection: [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
 
+  - Word.ContentControlListItemCollection: [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
 
-  **Word.BreakCollection** (1 member)
+  - Word.CustomPropertyCollection: [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
 
-  - [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1))
+  - Word.CustomXmlNodeCollection: [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1))
 
+  - Word.CustomXmlPartCollection: [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
 
-  **Word.CoauthorCollection** (1 member)
+  - Word.CustomXmlPartScopedCollection: [load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(1))
+  - Word.CustomXmlPrefixMappingCollection: [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(1))
 
+  - Word.CustomXmlSchemaCollection: [load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(1))
 
-  **Word.CoauthoringLockCollection** (1 member)
+  - Word.DocumentLibraryVersionCollection: [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1))
 
-  - [load](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-load-member(1))
+  - Word.FieldCollection: [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
 
+  - Word.FrameCollection: [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
 
-  **Word.CoauthoringUpdateCollection** (1 member)
+  - Word.HeadingStyleCollection: [load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(1))
+  - Word.HtmlDivisionCollection: [load](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-load-member(1))
 
+  - Word.HyperlinkCollection: [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
 
-  **Word.CommentCollection** (1 member)
+  - Word.IndexCollection: [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1))
+  - Word.InlinePictureCollection: [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
 
+  - Word.ListCollection: [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
 
-  **Word.CommentReplyCollection** (1 member)
+  - Word.ListLevelCollection: [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
+  - Word.ListTemplateCollection: [load](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-load-member(1))
 
+  - Word.NoteItemCollection: [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1))
 
-  **Word.ConflictCollection** (1 member)
+  - Word.PageCollection: [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-load-member(1))
+  - Word.PaneCollection: [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1))
 
+  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
 
-  **Word.ContentControlCollection** (1 member)
+  - Word.RangeCollection: [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - Word.RangeScopedCollection: [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1))
 
+  - Word.ReadabilityStatisticCollection: [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1))
 
-  **Word.ContentControlListItemCollection** (1 member)
+  - Word.ReviewerCollection: [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1))
 
-  - [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+  - Word.RevisionCollection: [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1))
 
+  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
 
-  **Word.CustomPropertyCollection** (1 member)
+  - Word.SettingCollection: [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+  - Word.ShapeCollection: [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(1))
 
+  - Word.SourceCollection: [load](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-load-member(1))
 
-  **Word.CustomXmlNodeCollection** (1 member)
+  - Word.StyleCollection: [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1))
+  - Word.TabStopCollection: [load](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-load-member(1))
 
+  - Word.TableCellCollection: [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
 
-  **Word.CustomXmlPartCollection** (1 member)
+  - Word.TableCollection: [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
+  - Word.TableColumnCollection: [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1))
 
+  - Word.TableOfAuthoritiesCategoryCollection: [load](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-load-member(1))
 
-  **Word.CustomXmlPartScopedCollection** (1 member)
+  - Word.TableOfAuthoritiesCollection: [load](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-load-member(1))
 
-  - [load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(1))
+  - Word.TableOfContentsCollection: [load](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-load-member(1))
 
+  - Word.TableOfFiguresCollection: [load](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-load-member(1))
 
-  **Word.CustomXmlPrefixMappingCollection** (1 member)
+  - Word.TableRowCollection: [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
 
-  - [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(1))
+  - Word.TemplateCollection: [load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(1))
 
+  - Word.TextColumnCollection: [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1))
 
-  **Word.CustomXmlSchemaCollection** (1 member)
+  - Word.TrackedChangeCollection: [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
 
-  - [load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(1))
+  - Word.WindowCollection: [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
 
-
-  **Word.DocumentLibraryVersionCollection** (1 member)
-
-  - [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1))
-
-
-  **Word.FieldCollection** (1 member)
-
-  - [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
-
-
-  **Word.FrameCollection** (1 member)
-
-  - [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
-
-
-  **Word.HeadingStyleCollection** (1 member)
-
-  - [load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(1))
-
-
-  **Word.HtmlDivisionCollection** (1 member)
-
-  - [load](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-load-member(1))
-
-
-  **Word.HyperlinkCollection** (1 member)
-
-  - [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
-
-
-  **Word.IndexCollection** (1 member)
-
-  - [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
-
-
-  **Word.InlinePictureCollection** (1 member)
-
-  - [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
-
-
-  **Word.ListCollection** (1 member)
-
-  - [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
-
-
-  **Word.ListLevelCollection** (1 member)
-
-  - [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
-
-
-  **Word.ListTemplateCollection** (1 member)
-
-  - [load](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-load-member(1))
-
-
-  **Word.NoteItemCollection** (1 member)
-
-  - [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1))
-
-
-  **Word.PageCollection** (1 member)
-
-  - [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(1))
-
-
-  **Word.PaneCollection** (1 member)
-
-  - [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1))
-
-
-  **Word.ParagraphCollection** (1 member)
-
-  - [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
-
-
-  **Word.RangeCollection** (1 member)
-
-  - [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
-
-
-  **Word.RangeScopedCollection** (1 member)
-
-  - [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1))
-
-
-  **Word.ReadabilityStatisticCollection** (1 member)
-
-  - [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(1))
-
-
-  **Word.ReviewerCollection** (1 member)
-
-  - [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1))
-
-
-  **Word.RevisionCollection** (1 member)
-
-  - [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1))
-
-
-  **Word.SectionCollection** (1 member)
-
-  - [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
-
-
-  **Word.SettingCollection** (1 member)
-
-  - [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
-
-
-  **Word.ShapeCollection** (1 member)
-
-  - [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(1))
-
-
-  **Word.SourceCollection** (1 member)
-
-  - [load](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-load-member(1))
-
-
-  **Word.StyleCollection** (1 member)
-
-  - [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1))
-
-
-  **Word.TabStopCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-load-member(1))
-
-
-  **Word.TableCellCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
-
-
-  **Word.TableCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
-
-
-  **Word.TableColumnCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1))
-
-
-  **Word.TableOfAuthoritiesCategoryCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-load-member(1))
-
-
-  **Word.TableOfAuthoritiesCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-load-member(1))
-
-
-  **Word.TableOfContentsCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-load-member(1))
-
-
-  **Word.TableOfFiguresCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-load-member(1))
-
-
-  **Word.TableRowCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
-
-
-  **Word.TemplateCollection** (1 member)
-
-  - [load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(1))
-
-
-  **Word.TextColumnCollection** (1 member)
-
-  - [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1))
-
-
-  **Word.TrackedChangeCollection** (1 member)
-
-  - [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
-
-
-  **Word.WindowCollection** (1 member)
-
-  - [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
-
-
-  **Word.XmlNodeCollection** (1 member)
-
-  - [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1))
+  - Word.XmlNodeCollection: [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

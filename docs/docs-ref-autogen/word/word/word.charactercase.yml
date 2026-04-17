@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Range** (1 member)
-
-  - [case](/javascript/api/word/word.range#word-word-range-case-member)
+  - Word.Range: [case](/javascript/api/word/word.range#word-word-range-case-member)
 
 isPreview: false
 isDeprecated: false

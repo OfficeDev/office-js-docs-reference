@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.HeaderFooterGroup: [load](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-load-member(1)), [load](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-load-member(1)), [set](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-set-member(2))
 
-  **Excel.HeaderFooterGroup** (2 members)
-
-  - [load](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-load-member(1))
-
-  - [set](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-set-member(2))
-
-
-  **Excel.PageLayout** (1 member)
-
-  - [headersFooters](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-headersfooters-member)
+  - Excel.PageLayout: [headersFooters](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-headersfooters-member)
 
 isPreview: false
 isDeprecated: false

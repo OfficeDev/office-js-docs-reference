@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartLegend** (1 member)
-
-  - [position](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-position-member)
+  - Excel.ChartLegend: [position](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-position-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,8 +13,7 @@ summary: >-
 
   The Binding object is never called directly. It is the abstract parent class
   of the objects that represent each type of binding:
-  [Office.MatrixBinding](xref:office!Office.MatrixBinding:interface)<!-- -->,
-  [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->, or
+  [Office.MatrixBinding](xref:office!Office.MatrixBinding:interface)<!-- -->, [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->, or
   [Office.TextBinding](xref:office!Office.TextBinding:interface)<!-- -->. All
   three of these objects inherit the getDataAsync and setDataAsync methods from
   the Binding object that enable to you interact with the data in the binding.
@@ -43,28 +42,11 @@ remarks: >-
   #### Used by
 
 
+  - Office.BindingDataChangedEventArgs: [binding](/javascript/api/office/office.bindingdatachangedeventargs#office-office-bindingdatachangedeventargs-binding-member)
 
-  **Office.BindingDataChangedEventArgs** (1 member)
+  - Office.BindingSelectionChangedEventArgs: [binding](/javascript/api/office/office.bindingselectionchangedeventargs#office-office-bindingselectionchangedeventargs-binding-member)
 
-  - [binding](/javascript/api/office/office.bindingdatachangedeventargs#office-office-bindingdatachangedeventargs-binding-member)
-
-
-  **Office.BindingSelectionChangedEventArgs** (1 member)
-
-  - [binding](/javascript/api/office/office.bindingselectionchangedeventargs#office-office-bindingselectionchangedeventargs-binding-member)
-
-
-  **Office.Bindings** (5 members)
-
-  - [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1))
-
-  - [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1))
-
-  - [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1))
-
-  - [getAllAsync](/javascript/api/office/office.bindings#office-office-bindings-getallasync-member(1))
-
-  - [getByIdAsync](/javascript/api/office/office.bindings#office-office-bindings-getbyidasync-member(1))
+  - Office.Bindings: [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1)), [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1)), [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1)), [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1)), [getAllAsync](/javascript/api/office/office.bindings#office-office-bindings-getallasync-member(1)), [getByIdAsync](/javascript/api/office/office.bindings#office-office-bindings-getbyidasync-member(1))
 
 isPreview: false
 isDeprecated: false

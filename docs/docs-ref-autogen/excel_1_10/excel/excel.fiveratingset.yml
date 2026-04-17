@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.IconCollections** (1 member)
-
-  - [fiveRating](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fiverating-member)
+  - Excel.IconCollections: [fiveRating](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fiverating-member)
 
 isPreview: false
 isDeprecated: false

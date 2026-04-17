@@ -4,12 +4,11 @@ uid: word!Word.Interfaces.FrameData:interface
 package: word!
 fullName: Word.Interfaces.FrameData
 summary: An interface describing the data returned by calling `frame.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Frame** (1 member)
-  - [toJSON](/javascript/api/word/word.frame#word-word-frame-tojson-member(1))
+  - Word.Frame: [toJSON](/javascript/api/word/word.frame#word-word-frame-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.FilterDatetime** (1 member)
-
-  - [specificity](/javascript/api/excel/excel.filterdatetime#excel-excel-filterdatetime-specificity-member)
+  - Excel.FilterDatetime: [specificity](/javascript/api/excel/excel.filterdatetime#excel-excel-filterdatetime-specificity-member)
 
   #### Examples
 

@@ -12,19 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.DocumentTaskChange: [load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1)), [load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1)), [newObject](/javascript/api/excel/excel.documenttaskchange.newobject:member)
 
-  **Excel.DocumentTaskChange** (2 members)
-
-  - [load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1))
-
-  - [newObject](/javascript/api/excel/excel.documenttaskchange.newobject:member)
-
-
-  **Excel.DocumentTaskChangeCollection** (2 members)
-
-  - [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1))
-
-  - [items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
+  - Excel.DocumentTaskChangeCollection: [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1)), [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
 
 isPreview: true
 isDeprecated: false

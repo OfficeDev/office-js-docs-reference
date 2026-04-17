@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.Presentation** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-tojson-member(1))
+  - PowerPoint.Presentation: [toJSON](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

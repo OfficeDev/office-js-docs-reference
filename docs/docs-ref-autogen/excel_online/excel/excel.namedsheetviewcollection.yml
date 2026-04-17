@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.NamedSheetViewCollection: [load](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-load-member(1))
 
-  **Excel.NamedSheetViewCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-load-member(1))
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [namedSheetViews](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-namedsheetviews-member)
+  - Excel.Worksheet: [namedSheetViews](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-namedsheetviews-member)
 
 isPreview: false
 isDeprecated: false

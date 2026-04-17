@@ -12,14 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.InkAnalysisParagraphCollection** (3 members)
-
-  - [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-untrack-member(1))
+  - OneNote.InkAnalysisParagraphCollection: [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1)), [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1)), [track](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

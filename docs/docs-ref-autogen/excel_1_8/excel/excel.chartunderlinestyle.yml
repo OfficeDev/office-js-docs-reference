@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartFont** (1 member)
-
-  - [underline](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-underline-member)
+  - Excel.ChartFont: [underline](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-underline-member)
 
 isPreview: false
 isDeprecated: false

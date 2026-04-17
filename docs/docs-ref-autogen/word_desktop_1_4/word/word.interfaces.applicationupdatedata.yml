@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Application** (1 member)
-
-  - [set](/javascript/api/word/word.application#word-word-application-set-member(1))
+  - Word.Application: [set](/javascript/api/word/word.application#word-word-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

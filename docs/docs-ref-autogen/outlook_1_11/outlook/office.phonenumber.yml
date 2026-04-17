@@ -35,29 +35,13 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentRead: [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)), [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)), [getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getfilteredentitiesbyname-member(1))
 
-  **Office.AppointmentRead** (2 members)
+  - Office.Contact: [phoneNumbers](/javascript/api/outlook/office.contact#outlook-office-contact-phonenumbers-member)
 
-  - [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1))
+  - Office.Entities: [phoneNumbers](/javascript/api/outlook/office.entities#outlook-office-entities-phonenumbers-member)
 
-  - [getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getfilteredentitiesbyname-member(1))
-
-
-  **Office.Contact** (1 member)
-
-  - [phoneNumbers](/javascript/api/outlook/office.contact#outlook-office-contact-phonenumbers-member)
-
-
-  **Office.Entities** (1 member)
-
-  - [phoneNumbers](/javascript/api/outlook/office.entities#outlook-office-entities-phonenumbers-member)
-
-
-  **Office.MessageRead** (2 members)
-
-  - [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1))
-
-  - [getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#outlook-office-messageread-getfilteredentitiesbyname-member(1))
+  - Office.MessageRead: [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1)), [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1)), [getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#outlook-office-messageread-getfilteredentitiesbyname-member(1))
 
   #### Examples
 

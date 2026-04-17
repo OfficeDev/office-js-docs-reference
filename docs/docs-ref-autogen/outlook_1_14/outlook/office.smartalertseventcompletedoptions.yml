@@ -26,10 +26,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.MailboxEvent** (1 member)
-
-  - [completed](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+  - Office.MailboxEvent: [completed](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
 
   #### Examples
 

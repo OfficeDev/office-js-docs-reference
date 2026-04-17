@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Range** (1 member)
-
-  - [autoFill](/javascript/api/excel/excel.range#excel-excel-range-autofill-member(1))
+  - Excel.Range: [autoFill](/javascript/api/excel/excel.range#excel-excel-range-autofill-member(1))
 
   #### Examples
 

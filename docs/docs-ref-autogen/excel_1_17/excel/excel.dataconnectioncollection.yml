@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Workbook** (1 member)
-
-  - [dataConnections](/javascript/api/excel/excel.workbook#excel-excel-workbook-dataconnections-member)
+  - Excel.Workbook: [dataConnections](/javascript/api/excel/excel.workbook#excel-excel-workbook-dataconnections-member)
 
 isPreview: false
 isDeprecated: false

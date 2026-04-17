@@ -14,21 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Field: [oleFormat](/javascript/api/word/word.field#word-word-field-oleformat-member)
 
-  **Word.Field** (1 member)
-
-  - [oleFormat](/javascript/api/word/word.field#word-word-field-oleformat-member)
-
-
-  **Word.OleFormat** (4 members)
-
-  - [load](/javascript/api/word/word.oleformat#word-word-oleformat-load-member(1))
-
-  - [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(2))
-
-  - [track](/javascript/api/word/word.oleformat#word-word-oleformat-track-member(1))
-
-  - [untrack](/javascript/api/word/word.oleformat#word-word-oleformat-untrack-member(1))
+  - Word.OleFormat: [load](/javascript/api/word/word.oleformat#word-word-oleformat-load-member(1)), [load](/javascript/api/word/word.oleformat#word-word-oleformat-load-member(1)), [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(2)), [track](/javascript/api/word/word.oleformat#word-word-oleformat-track-member(1)), [untrack](/javascript/api/word/word.oleformat#word-word-oleformat-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -16,15 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.SlideBackgroundGradientFill: [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-type-member)
 
-  **PowerPoint.SlideBackgroundGradientFill** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-type-member)
-
-
-  **PowerPoint.SlideBackgroundGradientFillOptions** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfilloptions#powerpoint-powerpoint-slidebackgroundgradientfilloptions-type-member)
+  - PowerPoint.SlideBackgroundGradientFillOptions: [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfilloptions#powerpoint-powerpoint-slidebackgroundgradientfilloptions-type-member)
 
   #### Examples
 

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartPlotArea** (1 member)
-
-  - [set](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-set-member(1))
+  - Excel.ChartPlotArea: [set](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-set-member(1))
 
 isPreview: false
 isDeprecated: false

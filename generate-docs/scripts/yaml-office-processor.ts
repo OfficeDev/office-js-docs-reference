@@ -474,7 +474,7 @@ function convertUidToUrl(uid: string): string {
 
 /**
  * Generates the markdown for the "Used By" section.
- * Groups references by containing class for better readability.
+ * Groups references by containing class with inline member lists.
  */
 function generateUsedBySection(references: UsedByReference[]): string {
   if (references.length === 0) {
@@ -500,9 +500,6 @@ function generateUsedBySection(references: UsedByReference[]): string {
   for (const className of classNames) {
     const members = groupedByClass[className];
 
-    // Add class header with member count
-    lines.push(`\n**${className}** (${members.length} member${members.length !== 1 ? 's' : ''})`);
-
     // Sort members alphabetically by member name (without class prefix)
     members.sort((a, b) => {
       const memberA = a.name.substring(className.length + 1); // Remove "ClassName." prefix
@@ -510,12 +507,16 @@ function generateUsedBySection(references: UsedByReference[]): string {
       return memberA.localeCompare(memberB);
     });
 
-    // Add each member with compact formatting
+    // Build inline member list with links
+    const memberLinks: string[] = [];
     for (const ref of members) {
       const url = convertUidToUrl(ref.uid);
       const memberName = ref.name.substring(className.length + 1); // Remove "ClassName." prefix
-      lines.push(`- [${memberName}](${url})`);
+      memberLinks.push(`[${memberName}](${url})`);
     }
+
+    // Format as: - ClassName: member1, member2, member3
+    lines.push(`- ${className}: ${memberLinks.join(', ')}`);
   }
 
   return lines.join('\n');
@@ -762,6 +763,7 @@ async function processYamlFile(
     // Convert "  -\n  [Text](url)" to "  - [Text](url)"
     const lines = output.split('\n');
     const linesToRemove = new Set<number>();
+
     for (let i = 0; i < lines.length - 1; i++) {
       // Check if current line ends with just a bullet and next line starts with a markdown link
       const currentMatch = lines[i].match(/^(\s+)-$/);
@@ -772,6 +774,40 @@ async function processYamlFile(
         linesToRemove.add(i + 1); // Mark next line for removal
       }
     }
+
+    // Fix inline class member lists: join "ClassName:" with member links on next line
+    // Convert "  - ClassName:\n  [member](url)" to "  - ClassName: [member](url)"
+    for (let i = 0; i < lines.length - 1; i++) {
+      if (linesToRemove.has(i)) continue; // Skip already removed lines
+
+      // Check if current line ends with ":" and next line has markdown links
+      const colonMatch = lines[i].match(/^(\s+- .+):$/);
+      if (colonMatch && lines[i + 1].match(/^\s+\[.+?\]\(.+?\)/)) {
+        // Join the lines with a space
+        lines[i] = `${lines[i]} ${lines[i + 1].trim()}`;
+        linesToRemove.add(i + 1);
+      }
+    }
+
+    // Join continuation lines for inline member lists
+    // When a line ends with a comma and next line starts with markdown link, join them
+    for (let i = 0; i < lines.length; i++) {
+      if (linesToRemove.has(i)) continue;
+
+      // If this line ends with a comma, join all continuation lines
+      if (lines[i].match(/,\s*$/)) {
+        let j = i + 1;
+        // Keep joining continuation lines while they exist
+        while (j < lines.length && lines[j].match(/^\s+\[.+?\]\(.+?\)/)) {
+          lines[i] = `${lines[i]} ${lines[j].trim()}`;
+          linesToRemove.add(j);
+          j++;
+          // If the line no longer ends with comma, we're done
+          if (!lines[i].match(/,\s*$/)) break;
+        }
+      }
+    }
+
     output = lines.filter((_, index) => !linesToRemove.has(index)).join('\n');
 
     // Prepend the YamlMime header if it existed

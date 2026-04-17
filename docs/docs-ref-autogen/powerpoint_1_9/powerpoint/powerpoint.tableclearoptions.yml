@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.Table** (1 member)
-
-  - [clear](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-clear-member(1))
+  - PowerPoint.Table: [clear](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-clear-member(1))
 
 isPreview: false
 isDeprecated: false

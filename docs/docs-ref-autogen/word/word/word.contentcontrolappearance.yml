@@ -13,35 +13,17 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlockGalleryContentControl: [appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-appearance-member)
 
-  **Word.BuildingBlockGalleryContentControl** (1 member)
+  - Word.ContentControl: [appearance](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-appearance-member)
 
-  - [appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-appearance-member)
+  - Word.DatePickerContentControl: [appearance](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-appearance-member)
 
+  - Word.GroupContentControl: [appearance](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-appearance-member)
 
-  **Word.ContentControl** (1 member)
+  - Word.PictureContentControl: [appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)
 
-  - [appearance](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-appearance-member)
-
-
-  **Word.DatePickerContentControl** (1 member)
-
-  - [appearance](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-appearance-member)
-
-
-  **Word.GroupContentControl** (1 member)
-
-  - [appearance](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-appearance-member)
-
-
-  **Word.PictureContentControl** (1 member)
-
-  - [appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)
-
-
-  **Word.RepeatingSectionContentControl** (1 member)
-
-  - [appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-appearance-member)
+  - Word.RepeatingSectionContentControl: [appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-appearance-member)
 
   #### Examples
 

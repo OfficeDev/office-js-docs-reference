@@ -12,21 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.Application: [notebooks](/javascript/api/onenote/onenote.application#onenote-onenote-application-notebooks-member)
 
-  **OneNote.Application** (1 member)
-
-  - [notebooks](/javascript/api/onenote/onenote.application#onenote-onenote-application-notebooks-member)
-
-
-  **OneNote.NotebookCollection** (4 members)
-
-  - [getByName](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getbyname-member(1))
-
-  - [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-untrack-member(1))
+  - OneNote.NotebookCollection: [getByName](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getbyname-member(1)), [getByName](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getbyname-member(1)), [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1)), [track](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

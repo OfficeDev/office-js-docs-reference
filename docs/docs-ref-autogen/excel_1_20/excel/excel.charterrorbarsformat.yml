@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartErrorBars: [format](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-format-member)
 
-  **Excel.ChartErrorBars** (1 member)
-
-  - [format](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-format-member)
-
-
-  **Excel.ChartErrorBarsFormat** (2 members)
-
-  - [load](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-load-member(1))
-
-  - [set](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-set-member(2))
+  - Excel.ChartErrorBarsFormat: [load](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-load-member(1)), [load](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-load-member(1)), [set](/javascript/api/excel/excel.charterrorbarsformat#excel-excel-charterrorbarsformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -23,15 +23,9 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentRead: [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1))
 
-  **Office.AppointmentRead** (1 member)
-
-  - [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1))
-
-
-  **Office.MessageRead** (1 member)
-
-  - [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1))
+  - Office.MessageRead: [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1))
 
 isPreview: false
 isDeprecated: true

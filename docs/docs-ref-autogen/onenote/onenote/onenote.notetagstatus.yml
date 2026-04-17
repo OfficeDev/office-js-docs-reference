@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.NoteTag: [status](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-status-member)
 
-  **OneNote.NoteTag** (1 member)
-
-  - [status](/javascript/api/onenote/onenote.notetag#onenote-onenote-notetag-status-member)
-
-
-  **OneNote.Paragraph** (1 member)
-
-  - [addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
+  - OneNote.Paragraph: [addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.DocumentLibraryVersion** (1 member)
-
-  - [load](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-load-member(1))
+  - Word.DocumentLibraryVersion: [load](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-load-member(1))
 
 isPreview: false
 isDeprecated: false

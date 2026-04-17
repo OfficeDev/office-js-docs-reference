@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Chart** (1 member)
-
-  - [load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1))
+  - Excel.Chart: [load](/javascript/api/excel/excel.chart#excel-excel-chart-load-member(1))
 
 isPreview: false
 isDeprecated: false

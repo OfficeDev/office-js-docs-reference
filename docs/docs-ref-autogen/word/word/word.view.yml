@@ -14,21 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.View: [load](/javascript/api/word/word.view#word-word-view-load-member(1)), [load](/javascript/api/word/word.view#word-word-view-load-member(1)), [set](/javascript/api/word/word.view#word-word-view-set-member(2)), [track](/javascript/api/word/word.view#word-word-view-track-member(1)), [untrack](/javascript/api/word/word.view#word-word-view-untrack-member(1))
 
-  **Word.View** (4 members)
-
-  - [load](/javascript/api/word/word.view#word-word-view-load-member(1))
-
-  - [set](/javascript/api/word/word.view#word-word-view-set-member(2))
-
-  - [track](/javascript/api/word/word.view#word-word-view-track-member(1))
-
-  - [untrack](/javascript/api/word/word.view#word-word-view-untrack-member(1))
-
-
-  **Word.Window** (1 member)
-
-  - [view](/javascript/api/word/word.window#word-word-window-view-member)
+  - Word.Window: [view](/javascript/api/word/word.window#word-word-window-view-member)
 
 isPreview: false
 isDeprecated: false

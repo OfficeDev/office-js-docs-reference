@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Selection** (1 member)
-
-  - [convertToTable](/javascript/api/word/word.selection#word-word-selection-converttotable-member(1))
+  - Word.Selection: [convertToTable](/javascript/api/word/word.selection#word-word-selection-converttotable-member(1))
 
 isPreview: true
 isDeprecated: false

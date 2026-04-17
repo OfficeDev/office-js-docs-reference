@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [removeDocumentInformation](/javascript/api/word/word.document#word-word-document-removedocumentinformation-member(1))
+  - Word.Document: [removeDocumentInformation](/javascript/api/word/word.document#word-word-document-removedocumentinformation-member(1))
 
 isPreview: false
 isDeprecated: false

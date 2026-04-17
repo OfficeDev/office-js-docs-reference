@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideBackgroundGradientFill** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-tojson-member(1))
+  - PowerPoint.SlideBackgroundGradientFill: [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

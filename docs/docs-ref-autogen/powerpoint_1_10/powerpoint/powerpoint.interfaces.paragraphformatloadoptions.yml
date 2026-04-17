@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.ParagraphFormat** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-load-member(1))
+  - PowerPoint.ParagraphFormat: [load](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

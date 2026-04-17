@@ -14,20 +14,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.AutoFilter: [load](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-load-member(1))
 
-  **Excel.AutoFilter** (1 member)
+  - Excel.Table: [autoFilter](/javascript/api/excel/excel.table#excel-excel-table-autofilter-member)
 
-  - [load](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-load-member(1))
-
-
-  **Excel.Table** (1 member)
-
-  - [autoFilter](/javascript/api/excel/excel.table#excel-excel-table-autofilter-member)
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [autoFilter](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-autofilter-member)
+  - Excel.Worksheet: [autoFilter](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-autofilter-member)
 
 isPreview: false
 isDeprecated: false

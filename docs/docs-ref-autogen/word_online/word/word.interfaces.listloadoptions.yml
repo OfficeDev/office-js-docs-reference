@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.List** (1 member)
-
-  - [load](/javascript/api/word/word.list#word-word-list-load-member(1))
+  - Word.List: [load](/javascript/api/word/word.list#word-word-list-load-member(1))
 
 isPreview: false
 isDeprecated: false

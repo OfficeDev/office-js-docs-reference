@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.AllowEditRange** (1 member)
-
-  - [load](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-load-member(1))
+  - Excel.AllowEditRange: [load](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-load-member(1))
 
 isPreview: false
 isDeprecated: false

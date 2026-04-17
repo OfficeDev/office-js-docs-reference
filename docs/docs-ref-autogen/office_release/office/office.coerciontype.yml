@@ -46,25 +46,13 @@ remarks: >-
   #### Used by
 
 
+  - Office.Document: [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(10))
 
-  **Office.Document** (1 member)
+  - Office.GetBindingDataOptions: [coercionType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-coerciontype-member)
 
-  - [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(10))
+  - Office.SetBindingDataOptions: [coercionType](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-coerciontype-member)
 
-
-  **Office.GetBindingDataOptions** (1 member)
-
-  - [coercionType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-coerciontype-member)
-
-
-  **Office.SetBindingDataOptions** (1 member)
-
-  - [coercionType](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-coerciontype-member)
-
-
-  **Office.SetSelectedDataOptions** (1 member)
-
-  - [coercionType](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-coerciontype-member)
+  - Office.SetSelectedDataOptions: [coercionType](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-coerciontype-member)
 
   #### Examples
 

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ContentControl** (1 member)
-
-  - [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
+  - Word.ContentControl: [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
 
   #### Examples
 

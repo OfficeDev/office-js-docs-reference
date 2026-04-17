@@ -12,19 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CellValueConditionalFormat: [load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1)), [load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1)), [set](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-set-member(2))
 
-  **Excel.CellValueConditionalFormat** (2 members)
-
-  - [load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1))
-
-  - [set](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-set-member(2))
-
-
-  **Excel.ConditionalFormat** (2 members)
-
-  - [cellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalue-member)
-
-  - [cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalueornullobject-member)
+  - Excel.ConditionalFormat: [cellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalue-member), [cellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalue-member), [cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalueornullobject-member)
 
 isPreview: false
 isDeprecated: false

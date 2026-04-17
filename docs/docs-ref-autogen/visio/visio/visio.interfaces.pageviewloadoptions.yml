@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.PageView** (1 member)
-
-  - [load](/javascript/api/visio/visio.pageview#visio-visio-pageview-load-member(1))
+  - Visio.PageView: [load](/javascript/api/visio/visio.pageview#visio-visio-pageview-load-member(1))
 
 isPreview: false
 isDeprecated: false

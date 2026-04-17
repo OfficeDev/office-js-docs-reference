@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PageLayout** (1 member)
-
-  - [set](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-set-member(1))
+  - Excel.PageLayout: [set](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-set-member(1))
 
 isPreview: false
 isDeprecated: false

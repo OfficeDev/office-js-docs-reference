@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.NamedItem** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-tojson-member(1))
+  - Excel.NamedItem: [toJSON](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

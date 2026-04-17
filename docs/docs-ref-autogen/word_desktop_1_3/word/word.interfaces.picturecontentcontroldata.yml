@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.PictureContentControl** (1 member)
-
-  - [toJSON](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-tojson-member(1))
+  - Word.PictureContentControl: [toJSON](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

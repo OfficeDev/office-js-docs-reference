@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.IconSetConditionalFormat** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-tojson-member(1))
+  - Excel.IconSetConditionalFormat: [toJSON](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

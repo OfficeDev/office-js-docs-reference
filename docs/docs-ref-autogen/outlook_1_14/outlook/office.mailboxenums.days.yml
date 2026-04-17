@@ -18,14 +18,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.RecurrenceProperties** (3 members)
-
-  - [dayOfWeek](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-dayofweek-member)
-
-  - [days](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-days-member)
-
-  - [firstDayOfWeek](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-firstdayofweek-member)
+  - Office.RecurrenceProperties: [dayOfWeek](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-dayofweek-member), [dayOfWeek](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-dayofweek-member), [days](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-days-member), [firstDayOfWeek](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-firstdayofweek-member)
 
   #### Examples
 

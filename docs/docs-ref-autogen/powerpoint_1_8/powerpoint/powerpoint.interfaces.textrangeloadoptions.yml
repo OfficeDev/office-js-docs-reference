@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.TextRange** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
+  - PowerPoint.TextRange: [load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
 
 isPreview: false
 isDeprecated: false

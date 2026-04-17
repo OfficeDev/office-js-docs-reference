@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartLeaderLinesFormat** (1 member)
-
-  - [set](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-set-member(1))
+  - Excel.ChartLeaderLinesFormat: [set](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

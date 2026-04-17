@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.IconCollections** (1 member)
-
-  - [threeTriangles](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetriangles-member)
+  - Excel.IconCollections: [threeTriangles](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetriangles-member)
 
 isPreview: false
 isDeprecated: false

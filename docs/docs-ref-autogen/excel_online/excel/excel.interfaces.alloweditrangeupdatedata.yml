@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.AllowEditRange** (1 member)
-
-  - [set](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-set-member(1))
+  - Excel.AllowEditRange: [set](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-set-member(1))
 
 isPreview: false
 isDeprecated: false

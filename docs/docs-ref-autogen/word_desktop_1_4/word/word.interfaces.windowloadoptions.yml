@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Window** (1 member)
-
-  - [load](/javascript/api/word/word.window#word-word-window-load-member(1))
+  - Word.Window: [load](/javascript/api/word/word.window#word-word-window-load-member(1))
 
 isPreview: false
 isDeprecated: false

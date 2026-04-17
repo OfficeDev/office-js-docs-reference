@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.PaneCollection** (1 member)
-
-  - [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1))
+  - Word.PaneCollection: [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

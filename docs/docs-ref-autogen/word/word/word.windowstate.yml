@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Window** (1 member)
-
-  - [state](/javascript/api/word/word.window#word-word-window-state-member)
+  - Word.Window: [state](/javascript/api/word/word.window#word-word-window-state-member)
 
 isPreview: false
 isDeprecated: false

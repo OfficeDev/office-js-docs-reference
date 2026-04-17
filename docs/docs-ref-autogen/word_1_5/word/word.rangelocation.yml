@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ContentControl** (1 member)
-
-  - [getRange](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))
+  - Word.ContentControl: [getRange](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))
 
   #### Examples
 

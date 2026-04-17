@@ -18,24 +18,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.CellBorderCollection** (8 members)
-
-  - [bottom](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-bottom-member)
-
-  - [diagonalDown](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonaldown-member)
-
-  - [diagonalUp](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonalup-member)
-
-  - [horizontal](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-horizontal-member)
-
-  - [left](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-left-member)
-
-  - [right](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-right-member)
-
-  - [top](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-top-member)
-
-  - [vertical](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-vertical-member)
+  - Excel.CellBorderCollection: [bottom](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-bottom-member), [bottom](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-bottom-member), [diagonalDown](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonaldown-member), [diagonalUp](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonalup-member), [horizontal](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-horizontal-member), [left](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-left-member), [right](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-right-member), [top](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-top-member), [vertical](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-vertical-member)
 
   #### Examples
 

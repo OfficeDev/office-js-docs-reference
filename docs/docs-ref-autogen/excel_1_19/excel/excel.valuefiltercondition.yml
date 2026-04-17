@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotValueFilter** (1 member)
-
-  - [condition](/javascript/api/excel/excel.pivotvaluefilter#excel-excel-pivotvaluefilter-condition-member)
+  - Excel.PivotValueFilter: [condition](/javascript/api/excel/excel.pivotvaluefilter#excel-excel-pivotvaluefilter-condition-member)
 
   #### Examples
 

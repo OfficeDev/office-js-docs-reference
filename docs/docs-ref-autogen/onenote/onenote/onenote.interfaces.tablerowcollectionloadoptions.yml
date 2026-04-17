@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.TableRowCollection** (1 member)
-
-  - [load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(1))
+  - OneNote.TableRowCollection: [load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

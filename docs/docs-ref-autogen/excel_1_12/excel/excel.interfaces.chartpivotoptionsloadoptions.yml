@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartPivotOptions** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-load-member(1))
+  - Excel.ChartPivotOptions: [load](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Range** (1 member)
-
-  - [compareLocationWith](/javascript/api/word/word.range#word-word-range-comparelocationwith-member(1))
+  - Word.Range: [compareLocationWith](/javascript/api/word/word.range#word-word-range-comparelocationwith-member(1))
 
   #### Examples
 

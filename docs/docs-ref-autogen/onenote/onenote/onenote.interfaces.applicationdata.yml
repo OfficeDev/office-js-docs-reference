@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.Application** (1 member)
-
-  - [toJSON](/javascript/api/onenote/onenote.application#onenote-onenote-application-tojson-member(1))
+  - OneNote.Application: [toJSON](/javascript/api/onenote/onenote.application#onenote-onenote-application-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

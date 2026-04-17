@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TopBottomConditionalFormat** (1 member)
-
-  - [load](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-load-member(1))
+  - Excel.TopBottomConditionalFormat: [load](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

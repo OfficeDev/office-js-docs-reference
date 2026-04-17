@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.LineFormat** (1 member)
-
-  - [style](/javascript/api/word/word.lineformat#word-word-lineformat-style-member)
+  - Word.LineFormat: [style](/javascript/api/word/word.lineformat#word-word-lineformat-style-member)
 
 isPreview: false
 isDeprecated: false

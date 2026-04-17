@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.InsertSlideOptions** (1 member)
-
-  - [formatting](/javascript/api/powerpoint/powerpoint.insertslideoptions#powerpoint-powerpoint-insertslideoptions-formatting-member)
+  - PowerPoint.InsertSlideOptions: [formatting](/javascript/api/powerpoint/powerpoint.insertslideoptions#powerpoint-powerpoint-insertslideoptions-formatting-member)
 
   #### Examples
 

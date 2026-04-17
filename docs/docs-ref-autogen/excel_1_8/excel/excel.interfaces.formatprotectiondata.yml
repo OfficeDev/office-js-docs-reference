@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.FormatProtection** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-tojson-member(1))
+  - Excel.FormatProtection: [toJSON](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

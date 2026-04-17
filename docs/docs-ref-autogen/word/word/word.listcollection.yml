@@ -13,34 +13,15 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [lists](/javascript/api/word/word.body#word-word-body-lists-member)
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)
 
-  - [lists](/javascript/api/word/word.body#word-word-body-lists-member)
+  - Word.Document: [lists](/javascript/api/word/word.document#word-word-document-lists-member)
 
+  - Word.ListCollection: [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1)), [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1)), [track](/javascript/api/word/word.listcollection#word-word-listcollection-track-member(1)), [untrack](/javascript/api/word/word.listcollection#word-word-listcollection-untrack-member(1))
 
-  **Word.ContentControl** (1 member)
-
-  - [lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)
-
-
-  **Word.Document** (1 member)
-
-  - [lists](/javascript/api/word/word.document#word-word-document-lists-member)
-
-
-  **Word.ListCollection** (3 members)
-
-  - [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.listcollection#word-word-listcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.listcollection#word-word-listcollection-untrack-member(1))
-
-
-  **Word.Range** (1 member)
-
-  - [lists](/javascript/api/word/word.range#word-word-range-lists-member)
+  - Word.Range: [lists](/javascript/api/word/word.range#word-word-range-lists-member)
 
   #### Examples
 

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CoauthoringUpdate** (1 member)
-
-  - [load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1))
+  - Word.CoauthoringUpdate: [load](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.LineNumbering** (1 member)
-
-  - [set](/javascript/api/word/word.linenumbering#word-word-linenumbering-set-member(1))
+  - Word.LineNumbering: [set](/javascript/api/word/word.linenumbering#word-word-linenumbering-set-member(1))
 
 isPreview: false
 isDeprecated: false

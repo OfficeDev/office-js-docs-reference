@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.ShapeFill** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-type-member)
+  - PowerPoint.ShapeFill: [type](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-type-member)
 
   #### Examples
 

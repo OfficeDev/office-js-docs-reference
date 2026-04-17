@@ -14,20 +14,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ConditionalFormatCollection: [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
 
-  **Excel.ConditionalFormatCollection** (1 member)
+  - Excel.Range: [conditionalFormats](/javascript/api/excel/excel.range#excel-excel-range-conditionalformats-member)
 
-  - [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
-
-
-  **Excel.Range** (1 member)
-
-  - [conditionalFormats](/javascript/api/excel/excel.range#excel-excel-range-conditionalformats-member)
-
-
-  **Excel.RangeAreas** (1 member)
-
-  - [conditionalFormats](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-conditionalformats-member)
+  - Excel.RangeAreas: [conditionalFormats](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-conditionalformats-member)
 
 isPreview: false
 isDeprecated: false

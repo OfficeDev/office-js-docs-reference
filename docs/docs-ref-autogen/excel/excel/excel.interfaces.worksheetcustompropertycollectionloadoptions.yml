@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.WorksheetCustomPropertyCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
+  - Excel.WorksheetCustomPropertyCollection: [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.HyperlinkScopedCollection** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-load-member(1))
+  - PowerPoint.HyperlinkScopedCollection: [load](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

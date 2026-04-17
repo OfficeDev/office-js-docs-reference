@@ -12,47 +12,21 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChangedEventDetail: [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member), [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member), [valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypebefore-member)
 
-  **Excel.ChangedEventDetail** (2 members)
+  - Excel.ExternalCodeServiceObjectCellValue: [basicType](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-basictype-member)
 
-  - [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member)
+  - Excel.NamedItemArrayValues: [types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)
 
-  - [valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypebefore-member)
+  - Excel.Range: [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
 
+  - Excel.RangeView: [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
 
-  **Excel.ExternalCodeServiceObjectCellValue** (1 member)
+  - Excel.ReferenceCellValue: [basicType](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-basictype-member)
 
-  - [basicType](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-basictype-member)
+  - Excel.RootReferenceCellValue: [basicType](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basictype-member)
 
-
-  **Excel.NamedItemArrayValues** (1 member)
-
-  - [types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)
-
-
-  **Excel.Range** (1 member)
-
-  - [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
-
-
-  **Excel.RangeView** (1 member)
-
-  - [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
-
-
-  **Excel.ReferenceCellValue** (1 member)
-
-  - [basicType](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-basictype-member)
-
-
-  **Excel.RootReferenceCellValue** (1 member)
-
-  - [basicType](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basictype-member)
-
-
-  **Excel.ValueTypeNotAvailableCellValue** (1 member)
-
-  - [basicType](/javascript/api/excel/excel.valuetypenotavailablecellvalue#excel-excel-valuetypenotavailablecellvalue-basictype-member)
+  - Excel.ValueTypeNotAvailableCellValue: [basicType](/javascript/api/excel/excel.valuetypenotavailablecellvalue#excel-excel-valuetypenotavailablecellvalue-basictype-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ShapeFont** (1 member)
-
-  - [load](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-load-member(1))
+  - Excel.ShapeFont: [load](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-load-member(1))
 
 isPreview: false
 isDeprecated: false

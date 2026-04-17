@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CommentContentRange** (1 member)
-
-  - [set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(1))
+  - Word.CommentContentRange: [set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(1))
 
 isPreview: false
 isDeprecated: false

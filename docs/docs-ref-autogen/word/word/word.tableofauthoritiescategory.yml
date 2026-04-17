@@ -12,21 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.TableOfAuthoritiesCategory: [load](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-load-member(1)), [load](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-load-member(1)), [track](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-track-member(1)), [untrack](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-untrack-member(1))
 
-  **Word.TableOfAuthoritiesCategory** (3 members)
-
-  - [load](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-load-member(1))
-
-  - [track](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-track-member(1))
-
-  - [untrack](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-untrack-member(1))
-
-
-  **Word.TableOfAuthoritiesCategoryCollection** (2 members)
-
-  - [getItemAt](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getitemat-member(1))
-
-  - [items](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-items-member)
+  - Word.TableOfAuthoritiesCategoryCollection: [getItemAt](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getitemat-member(1)), [getItemAt](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getitemat-member(1)), [items](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-items-member)
 
 isPreview: false
 isDeprecated: false

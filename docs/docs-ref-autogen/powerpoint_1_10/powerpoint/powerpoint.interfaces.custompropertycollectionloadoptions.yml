@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.CustomPropertyCollection** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(1))
+  - PowerPoint.CustomPropertyCollection: [load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Filter: [load](/javascript/api/excel/excel.filter#excel-excel-filter-load-member(1))
 
-  **Excel.Filter** (1 member)
-
-  - [load](/javascript/api/excel/excel.filter#excel-excel-filter-load-member(1))
-
-
-  **Excel.TableColumn** (1 member)
-
-  - [filter](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-filter-member)
+  - Excel.TableColumn: [filter](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-filter-member)
 
 isPreview: false
 isDeprecated: false

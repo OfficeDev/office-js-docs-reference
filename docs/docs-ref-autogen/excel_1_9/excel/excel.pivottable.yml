@@ -16,23 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.PivotTable: [load](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-load-member(1)), [load](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-load-member(1)), [set](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-set-member(2))
 
-  **Excel.PivotTable** (2 members)
-
-  - [load](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-load-member(1))
-
-  - [set](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-set-member(2))
-
-
-  **Excel.PivotTableCollection** (4 members)
-
-  - [add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1))
-
-  - [getItem](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-items-member)
+  - Excel.PivotTableCollection: [add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1)), [add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1)), [getItem](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-items-member)
 
 isPreview: false
 isDeprecated: false

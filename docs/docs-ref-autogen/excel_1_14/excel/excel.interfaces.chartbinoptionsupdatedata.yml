@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartBinOptions** (1 member)
-
-  - [set](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-set-member(1))
+  - Excel.ChartBinOptions: [set](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-set-member(1))
 
 isPreview: false
 isDeprecated: false

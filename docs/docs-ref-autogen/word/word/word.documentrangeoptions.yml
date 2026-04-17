@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [getRange](/javascript/api/word/word.document#word-word-document-getrange-member(1))
+  - Word.Document: [getRange](/javascript/api/word/word.document#word-word-document-getrange-member(1))
 
 isPreview: true
 isDeprecated: false

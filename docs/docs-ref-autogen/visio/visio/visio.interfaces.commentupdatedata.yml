@@ -6,12 +6,11 @@ fullName: Visio.Interfaces.CommentUpdateData
 summary: >-
   An interface for updating data on the Comment object, for use in
   `comment.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Visio.Comment** (1 member)
-  - [set](/javascript/api/visio/visio.comment#visio-visio-comment-set-member(1))
+  - Visio.Comment: [set](/javascript/api/visio/visio.comment#visio-visio-comment-set-member(1))
 
 isPreview: false
 isDeprecated: false

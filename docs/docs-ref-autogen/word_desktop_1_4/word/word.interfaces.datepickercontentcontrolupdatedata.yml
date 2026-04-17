@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.DatePickerContentControl** (1 member)
-
-  - [set](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-set-member(1))
+  - Word.DatePickerContentControl: [set](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartCollection: [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
 
-  **Excel.ChartCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [charts](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-charts-member)
+  - Excel.Worksheet: [charts](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-charts-member)
 
 isPreview: false
 isDeprecated: false

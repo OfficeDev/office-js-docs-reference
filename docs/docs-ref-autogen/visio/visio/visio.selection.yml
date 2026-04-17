@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Visio.PageView: [getSelection](/javascript/api/visio/visio.pageview#visio-visio-pageview-getselection-member(1))
 
-  **Visio.PageView** (1 member)
-
-  - [getSelection](/javascript/api/visio/visio.pageview#visio-visio-pageview-getselection-member(1))
-
-
-  **Visio.Selection** (1 member)
-
-  - [load](/javascript/api/visio/visio.selection#visio-visio-selection-load-member(1))
+  - Visio.Selection: [load](/javascript/api/visio/visio.selection#visio-visio-selection-load-member(1))
 
 isPreview: false
 isDeprecated: false

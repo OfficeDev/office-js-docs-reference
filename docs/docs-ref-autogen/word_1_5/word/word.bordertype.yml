@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TableBorder** (1 member)
-
-  - [type](/javascript/api/word/word.tableborder#word-word-tableborder-type-member)
+  - Word.TableBorder: [type](/javascript/api/word/word.tableborder#word-word-tableborder-type-member)
 
   #### Examples
 

@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartFormatString** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-load-member(1))
+  - Excel.ChartFormatString: [load](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-load-member(1))
 
 isPreview: false
 isDeprecated: false

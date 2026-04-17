@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.HeaderFooter** (1 member)
-
-  - [load](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-load-member(1))
+  - Excel.HeaderFooter: [load](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-load-member(1))
 
 isPreview: false
 isDeprecated: false

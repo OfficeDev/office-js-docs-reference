@@ -19,10 +19,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.Shape** (1 member)
-
-  - [getImageAsBase64](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getimageasbase64-member(1))
+  - PowerPoint.Shape: [getImageAsBase64](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getimageasbase64-member(1))
 
   #### Examples
 

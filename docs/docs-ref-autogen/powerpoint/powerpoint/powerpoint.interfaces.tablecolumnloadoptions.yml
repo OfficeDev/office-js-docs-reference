@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.TableColumn** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-load-member(1))
+  - PowerPoint.TableColumn: [load](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-load-member(1))
 
 isPreview: false
 isDeprecated: false

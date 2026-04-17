@@ -13,20 +13,11 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Shape: [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
 
-  **PowerPoint.Shape** (1 member)
+  - PowerPoint.ShapeFill: [load](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-load-member(1))
 
-  - [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
-
-
-  **PowerPoint.ShapeFill** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-load-member(1))
-
-
-  **PowerPoint.TableCell** (1 member)
-
-  - [fill](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-fill-member)
+  - PowerPoint.TableCell: [fill](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-fill-member)
 
   #### Examples
 

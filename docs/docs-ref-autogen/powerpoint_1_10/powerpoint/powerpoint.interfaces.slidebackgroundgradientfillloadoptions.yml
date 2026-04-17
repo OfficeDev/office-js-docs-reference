@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideBackgroundGradientFill** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-load-member(1))
+  - PowerPoint.SlideBackgroundGradientFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.Comment** (1 member)
-
-  - [load](/javascript/api/visio/visio.comment#visio-visio-comment-load-member(1))
+  - Visio.Comment: [load](/javascript/api/visio/visio.comment#visio-visio-comment-load-member(1))
 
 isPreview: false
 isDeprecated: false

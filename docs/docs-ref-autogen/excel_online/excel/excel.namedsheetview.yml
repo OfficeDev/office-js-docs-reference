@@ -16,27 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.NamedSheetView: [duplicate](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-duplicate-member(1)), [duplicate](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-duplicate-member(1)), [load](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-load-member(1))
 
-  **Excel.NamedSheetView** (2 members)
-
-  - [duplicate](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-duplicate-member(1))
-
-  - [load](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-load-member(1))
-
-
-  **Excel.NamedSheetViewCollection** (6 members)
-
-  - [add](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-add-member(1))
-
-  - [enterTemporary](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-entertemporary-member(1))
-
-  - [getActive](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getactive-member(1))
-
-  - [getItem](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemat-member(1))
-
-  - [items](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-items-member)
+  - Excel.NamedSheetViewCollection: [add](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-add-member(1)), [add](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-add-member(1)), [enterTemporary](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-entertemporary-member(1)), [getActive](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getactive-member(1)), [getItem](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-items-member)
 
 isPreview: false
 isDeprecated: false

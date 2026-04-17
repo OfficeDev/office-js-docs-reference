@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.EntityPropertyExtraProperties** (1 member)
-
-  - [propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)
+  - Excel.EntityPropertyExtraProperties: [propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)
 
 isPreview: false
 isDeprecated: false

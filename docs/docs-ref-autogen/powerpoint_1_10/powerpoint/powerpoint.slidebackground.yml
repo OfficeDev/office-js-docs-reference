@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Slide: [background](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-background-member)
 
-  **PowerPoint.Slide** (1 member)
-
-  - [background](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-background-member)
-
-
-  **PowerPoint.SlideBackground** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-load-member(1))
+  - PowerPoint.SlideBackground: [load](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-load-member(1))
 
   #### Examples
 

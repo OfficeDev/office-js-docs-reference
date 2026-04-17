@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartErrorBars** (1 member)
-
-  - [load](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-load-member(1))
+  - Excel.ChartErrorBars: [load](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-load-member(1))
 
 isPreview: false
 isDeprecated: false

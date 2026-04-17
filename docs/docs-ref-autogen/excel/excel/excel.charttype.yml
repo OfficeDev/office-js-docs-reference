@@ -13,20 +13,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Chart: [chartType](/javascript/api/excel/excel.chart#excel-excel-chart-charttype-member)
 
-  **Excel.Chart** (1 member)
+  - Excel.ChartCollection: [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
 
-  - [chartType](/javascript/api/excel/excel.chart#excel-excel-chart-charttype-member)
-
-
-  **Excel.ChartCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
-
-
-  **Excel.ChartSeries** (1 member)
-
-  - [chartType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-charttype-member)
+  - Excel.ChartSeries: [chartType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-charttype-member)
 
   #### Examples
 

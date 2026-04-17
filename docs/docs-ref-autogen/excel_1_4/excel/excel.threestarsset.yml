@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.IconCollections** (1 member)
-
-  - [threeStars](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threestars-member)
+  - Excel.IconCollections: [threeStars](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threestars-member)
 
 isPreview: false
 isDeprecated: false

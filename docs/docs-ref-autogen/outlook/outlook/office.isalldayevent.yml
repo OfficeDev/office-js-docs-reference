@@ -24,10 +24,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.AppointmentCompose** (1 member)
-
-  - [isAllDayEvent](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-isalldayevent-member)
+  - Office.AppointmentCompose: [isAllDayEvent](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-isalldayevent-member)
 
 isPreview: true
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.InlinePicture** (1 member)
-
-  - [imageFormat](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-imageformat-member)
+  - Word.InlinePicture: [imageFormat](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-imageformat-member)
 
   #### Examples
 

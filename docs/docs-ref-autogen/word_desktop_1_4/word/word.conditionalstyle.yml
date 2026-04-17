@@ -14,19 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.ConditionalStyle: [load](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-load-member(1)), [load](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-load-member(1)), [track](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-track-member(1)), [untrack](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-untrack-member(1))
 
-  **Word.ConditionalStyle** (3 members)
-
-  - [load](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-load-member(1))
-
-  - [track](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-track-member(1))
-
-  - [untrack](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-untrack-member(1))
-
-
-  **Word.TableStyle** (1 member)
-
-  - [condition](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))
+  - Word.TableStyle: [condition](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))
 
 isPreview: false
 isDeprecated: false

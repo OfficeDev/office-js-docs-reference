@@ -15,24 +15,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [settings](/javascript/api/word/word.document#word-word-document-settings-member)
 
-  **Word.Document** (1 member)
+  - Word.DocumentCreated: [settings](/javascript/api/word/word.documentcreated#word-word-documentcreated-settings-member)
 
-  - [settings](/javascript/api/word/word.document#word-word-document-settings-member)
-
-
-  **Word.DocumentCreated** (1 member)
-
-  - [settings](/javascript/api/word/word.documentcreated#word-word-documentcreated-settings-member)
-
-
-  **Word.SettingCollection** (3 members)
-
-  - [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.settingcollection#word-word-settingcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.settingcollection#word-word-settingcollection-untrack-member(1))
+  - Word.SettingCollection: [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1)), [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1)), [track](/javascript/api/word/word.settingcollection#word-word-settingcollection-track-member(1)), [untrack](/javascript/api/word/word.settingcollection#word-word-settingcollection-untrack-member(1))
 
   #### Examples
 

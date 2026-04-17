@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CommentEventArgs** (1 member)
-
-  - [changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)
+  - Word.CommentEventArgs: [changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)
 
   #### Examples
 

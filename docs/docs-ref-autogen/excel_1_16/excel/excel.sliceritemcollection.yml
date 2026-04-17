@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Slicer: [slicerItems](/javascript/api/excel/excel.slicer#excel-excel-slicer-sliceritems-member)
 
-  **Excel.Slicer** (1 member)
-
-  - [slicerItems](/javascript/api/excel/excel.slicer#excel-excel-slicer-sliceritems-member)
-
-
-  **Excel.SlicerItemCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-load-member(1))
+  - Excel.SlicerItemCollection: [load](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

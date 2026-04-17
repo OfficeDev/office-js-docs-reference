@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.HeaderFooterGroup** (1 member)
-
-  - [state](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-state-member)
+  - Excel.HeaderFooterGroup: [state](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-state-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Selection** (1 member)
-
-  - [delete](/javascript/api/word/word.selection#word-word-selection-delete-member(1))
+  - Word.Selection: [delete](/javascript/api/word/word.selection#word-word-selection-delete-member(1))
 
 isPreview: false
 isDeprecated: false

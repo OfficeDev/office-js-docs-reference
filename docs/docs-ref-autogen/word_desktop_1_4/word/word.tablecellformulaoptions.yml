@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TableCell** (1 member)
-
-  - [formula](/javascript/api/word/word.tablecell#word-word-tablecell-formula-member(1))
+  - Word.TableCell: [formula](/javascript/api/word/word.tablecell#word-word-tablecell-formula-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Window** (1 member)
-
-  - [imeMode](/javascript/api/word/word.window#word-word-window-imemode-member)
+  - Word.Window: [imeMode](/javascript/api/word/word.window#word-word-window-imemode-member)
 
 isPreview: false
 isDeprecated: false

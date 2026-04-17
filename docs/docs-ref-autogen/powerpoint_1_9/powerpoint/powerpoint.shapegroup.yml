@@ -15,15 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Shape: [group](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-group-member)
 
-  **PowerPoint.Shape** (1 member)
-
-  - [group](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-group-member)
-
-
-  **PowerPoint.ShapeGroup** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-load-member(1))
+  - PowerPoint.ShapeGroup: [load](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-load-member(1))
 
   #### Examples
 

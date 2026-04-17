@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.TableStyleSettings** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-tojson-member(1))
+  - PowerPoint.TableStyleSettings: [toJSON](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

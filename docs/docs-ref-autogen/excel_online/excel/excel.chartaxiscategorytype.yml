@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartAxis** (1 member)
-
-  - [categoryType](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-categorytype-member)
+  - Excel.ChartAxis: [categoryType](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-categorytype-member)
 
 isPreview: false
 isDeprecated: false

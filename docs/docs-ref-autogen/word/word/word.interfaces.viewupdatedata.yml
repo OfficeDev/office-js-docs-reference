@@ -6,12 +6,11 @@ fullName: Word.Interfaces.ViewUpdateData
 summary: >-
   An interface for updating data on the `View` object, for use in `view.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.View** (1 member)
-  - [set](/javascript/api/word/word.view#word-word-view-set-member(1))
+  - Word.View: [set](/javascript/api/word/word.view#word-word-view-set-member(1))
 
 isPreview: false
 isDeprecated: false

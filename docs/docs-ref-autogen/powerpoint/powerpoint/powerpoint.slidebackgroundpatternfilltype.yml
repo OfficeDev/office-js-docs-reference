@@ -16,15 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.SlideBackgroundPatternFill: [pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-pattern-member)
 
-  **PowerPoint.SlideBackgroundPatternFill** (1 member)
-
-  - [pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-pattern-member)
-
-
-  **PowerPoint.SlideBackgroundPatternFillOptions** (1 member)
-
-  - [pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions#powerpoint-powerpoint-slidebackgroundpatternfilloptions-pattern-member)
+  - PowerPoint.SlideBackgroundPatternFillOptions: [pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions#powerpoint-powerpoint-slidebackgroundpatternfilloptions-pattern-member)
 
   #### Examples
 

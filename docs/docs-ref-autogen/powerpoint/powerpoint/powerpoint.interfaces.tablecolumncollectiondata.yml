@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.TableColumnCollection** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-tojson-member(1))
+  - PowerPoint.TableColumnCollection: [toJSON](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Font** (1 member)
-
-  - [stylisticSet](/javascript/api/word/word.font#word-word-font-stylisticset-member)
+  - Word.Font: [stylisticSet](/javascript/api/word/word.font#word-word-font-stylisticset-member)
 
 isPreview: false
 isDeprecated: false

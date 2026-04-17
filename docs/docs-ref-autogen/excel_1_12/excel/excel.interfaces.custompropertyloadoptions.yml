@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.CustomProperty** (1 member)
-
-  - [load](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-load-member(1))
+  - Excel.CustomProperty: [load](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-load-member(1))
 
 isPreview: false
 isDeprecated: false

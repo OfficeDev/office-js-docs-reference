@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TextFrame** (1 member)
-
-  - [autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)
+  - Word.TextFrame: [autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)
 
   #### Examples
 

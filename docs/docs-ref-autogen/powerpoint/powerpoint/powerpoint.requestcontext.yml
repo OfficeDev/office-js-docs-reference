@@ -15,290 +15,119 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Adjustments: [context](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-context-member)
 
-  **PowerPoint.Adjustments** (1 member)
+  - PowerPoint.Application: [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-context-member)
+  - PowerPoint.Binding: [context](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-context-member)
 
+  - PowerPoint.BindingCollection: [context](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-context-member)
 
-  **PowerPoint.Application** (1 member)
+  - PowerPoint.Border: [context](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
+  - PowerPoint.Borders: [context](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-context-member)
 
+  - PowerPoint.BulletFormat: [context](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-context-member)
 
-  **PowerPoint.Binding** (1 member)
+  - PowerPoint.CustomProperty: [context](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-context-member)
+  - PowerPoint.CustomPropertyCollection: [context](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-context-member)
 
+  - PowerPoint.CustomXmlPart: [context](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-context-member)
 
-  **PowerPoint.BindingCollection** (1 member)
+  - PowerPoint.CustomXmlPartCollection: [context](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-context-member)
+  - PowerPoint.CustomXmlPartScopedCollection: [context](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-context-member)
 
+  - PowerPoint.DocumentProperties: [context](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-context-member)
 
-  **PowerPoint.Border** (1 member)
+  - PowerPoint.Graphic: [context](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-context-member)
+  - PowerPoint.Hyperlink: [context](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-context-member)
 
+  - PowerPoint.HyperlinkCollection: [context](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-context-member)
 
-  **PowerPoint.Borders** (1 member)
+  - PowerPoint.HyperlinkScopedCollection: [context](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-context-member)
+  - PowerPoint.Margins: [context](/javascript/api/powerpoint/powerpoint.margins#powerpoint-powerpoint-margins-context-member)
 
+  - PowerPoint.PageSetup: [context](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-context-member)
 
-  **PowerPoint.BulletFormat** (1 member)
+  - PowerPoint.ParagraphFormat: [context](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-context-member)
+  - PowerPoint.PlaceholderFormat: [context](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-context-member)
 
+  - PowerPoint.Presentation: [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
 
-  **PowerPoint.CustomProperty** (1 member)
+  - PowerPoint.Shape: [context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-context-member)
+  - PowerPoint.ShapeCollection: [context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
 
+  - PowerPoint.ShapeFill: [context](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-context-member)
 
-  **PowerPoint.CustomPropertyCollection** (1 member)
+  - PowerPoint.ShapeFont: [context](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-context-member)
+  - PowerPoint.ShapeGroup: [context](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-context-member)
 
+  - PowerPoint.ShapeLineFormat: [context](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-context-member)
 
-  **PowerPoint.CustomXmlPart** (1 member)
+  - PowerPoint.ShapeScopedCollection: [context](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-context-member)
+  - PowerPoint.Slide: [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
 
+  - PowerPoint.SlideBackground: [context](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-context-member)
 
-  **PowerPoint.CustomXmlPartCollection** (1 member)
+  - PowerPoint.SlideBackgroundFill: [context](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-context-member)
+  - PowerPoint.SlideBackgroundGradientFill: [context](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-context-member)
 
+  - PowerPoint.SlideBackgroundPatternFill: [context](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-context-member)
 
-  **PowerPoint.CustomXmlPartScopedCollection** (1 member)
+  - PowerPoint.SlideBackgroundPictureOrTextureFill: [context](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-context-member)
+  - PowerPoint.SlideBackgroundSolidFill: [context](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-context-member)
 
+  - PowerPoint.SlideCollection: [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
 
-  **PowerPoint.DocumentProperties** (1 member)
+  - PowerPoint.SlideLayout: [context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-context-member)
+  - PowerPoint.SlideLayoutBackground: [context](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-context-member)
 
+  - PowerPoint.SlideLayoutCollection: [context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
 
-  **PowerPoint.Graphic** (1 member)
+  - PowerPoint.SlideMaster: [context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-context-member)
+  - PowerPoint.SlideMasterBackground: [context](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-context-member)
 
+  - PowerPoint.SlideMasterCollection: [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
 
-  **PowerPoint.Hyperlink** (1 member)
+  - PowerPoint.SlideScopedCollection: [context](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-context-member)
+  - PowerPoint.Table: [context](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-context-member)
 
+  - PowerPoint.TableCell: [context](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-context-member)
 
-  **PowerPoint.HyperlinkCollection** (1 member)
+  - PowerPoint.TableCellCollection: [context](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-context-member)
+  - PowerPoint.TableColumn: [context](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-context-member)
 
+  - PowerPoint.TableColumnCollection: [context](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-context-member)
 
-  **PowerPoint.HyperlinkScopedCollection** (1 member)
+  - PowerPoint.TableRow: [context](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-context-member)
+  - PowerPoint.TableRowCollection: [context](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-context-member)
 
+  - PowerPoint.TableStyleSettings: [context](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-context-member)
 
-  **PowerPoint.Margins** (1 member)
+  - PowerPoint.Tag: [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.margins#powerpoint-powerpoint-margins-context-member)
+  - PowerPoint.TagCollection: [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
 
+  - PowerPoint.TextFrame: [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
 
-  **PowerPoint.PageSetup** (1 member)
+  - PowerPoint.TextRange: [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
 
-  - [context](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-context-member)
-
-
-  **PowerPoint.ParagraphFormat** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-context-member)
-
-
-  **PowerPoint.PlaceholderFormat** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-context-member)
-
-
-  **PowerPoint.Presentation** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
-
-
-  **PowerPoint.Shape** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
-
-
-  **PowerPoint.ShapeCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
-
-
-  **PowerPoint.ShapeFill** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-context-member)
-
-
-  **PowerPoint.ShapeFont** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-context-member)
-
-
-  **PowerPoint.ShapeGroup** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shapegroup#powerpoint-powerpoint-shapegroup-context-member)
-
-
-  **PowerPoint.ShapeLineFormat** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-context-member)
-
-
-  **PowerPoint.ShapeScopedCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-context-member)
-
-
-  **PowerPoint.Slide** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
-
-
-  **PowerPoint.SlideBackground** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-context-member)
-
-
-  **PowerPoint.SlideBackgroundFill** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-context-member)
-
-
-  **PowerPoint.SlideBackgroundGradientFill** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-context-member)
-
-
-  **PowerPoint.SlideBackgroundPatternFill** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-context-member)
-
-
-  **PowerPoint.SlideBackgroundPictureOrTextureFill** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-context-member)
-
-
-  **PowerPoint.SlideBackgroundSolidFill** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-context-member)
-
-
-  **PowerPoint.SlideCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
-
-
-  **PowerPoint.SlideLayout** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
-
-
-  **PowerPoint.SlideLayoutBackground** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-context-member)
-
-
-  **PowerPoint.SlideLayoutCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
-
-
-  **PowerPoint.SlideMaster** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
-
-
-  **PowerPoint.SlideMasterBackground** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-context-member)
-
-
-  **PowerPoint.SlideMasterCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
-
-
-  **PowerPoint.SlideScopedCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-context-member)
-
-
-  **PowerPoint.Table** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-context-member)
-
-
-  **PowerPoint.TableCell** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-context-member)
-
-
-  **PowerPoint.TableCellCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-context-member)
-
-
-  **PowerPoint.TableColumn** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-context-member)
-
-
-  **PowerPoint.TableColumnCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-context-member)
-
-
-  **PowerPoint.TableRow** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-context-member)
-
-
-  **PowerPoint.TableRowCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-context-member)
-
-
-  **PowerPoint.TableStyleSettings** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-context-member)
-
-
-  **PowerPoint.Tag** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
-
-
-  **PowerPoint.TagCollection** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
-
-
-  **PowerPoint.TextFrame** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
-
-
-  **PowerPoint.TextRange** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
-
-
-  **PowerPoint.ThemeColorScheme** (1 member)
-
-  - [context](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-context-member)
+  - PowerPoint.ThemeColorScheme: [context](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-context-member)
 
   #### Examples
 

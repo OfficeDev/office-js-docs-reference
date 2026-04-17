@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.PlaceholderFormat: [containedType](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-containedtype-member)
 
-  **PowerPoint.PlaceholderFormat** (1 member)
-
-  - [containedType](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-containedtype-member)
-
-
-  **PowerPoint.Shape** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-type-member)
+  - PowerPoint.Shape: [type](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-type-member)
 
   #### Examples
 

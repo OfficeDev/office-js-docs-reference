@@ -12,36 +12,15 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.Application: [getActiveOutline](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutline-member(1)), [getActiveOutline](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutline-member(1)), [getActiveOutlineOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutlineornull-member(1))
 
-  **OneNote.Application** (2 members)
+  - OneNote.Outline: [load](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-load-member(1)), [load](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-load-member(1)), [track](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-track-member(1)), [untrack](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-untrack-member(1))
 
-  - [getActiveOutline](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutline-member(1))
+  - OneNote.Page: [addOutline](/javascript/api/onenote/onenote.page#onenote-onenote-page-addoutline-member(1))
 
-  - [getActiveOutlineOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveoutlineornull-member(1))
+  - OneNote.PageContent: [outline](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-outline-member)
 
-
-  **OneNote.Outline** (3 members)
-
-  - [load](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-untrack-member(1))
-
-
-  **OneNote.Page** (1 member)
-
-  - [addOutline](/javascript/api/onenote/onenote.page#onenote-onenote-page-addoutline-member(1))
-
-
-  **OneNote.PageContent** (1 member)
-
-  - [outline](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-outline-member)
-
-
-  **OneNote.Paragraph** (1 member)
-
-  - [outline](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-outline-member)
+  - OneNote.Paragraph: [outline](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-outline-member)
 
 isPreview: false
 isDeprecated: false

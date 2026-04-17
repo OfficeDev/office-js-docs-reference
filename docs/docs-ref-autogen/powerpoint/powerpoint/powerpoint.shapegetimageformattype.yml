@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.ShapeGetImageOptions** (1 member)
-
-  - [format](/javascript/api/powerpoint/powerpoint.shapegetimageoptions#powerpoint-powerpoint-shapegetimageoptions-format-member)
+  - PowerPoint.ShapeGetImageOptions: [format](/javascript/api/powerpoint/powerpoint.shapegetimageoptions#powerpoint-powerpoint-shapegetimageoptions-format-member)
 
   #### Examples
 

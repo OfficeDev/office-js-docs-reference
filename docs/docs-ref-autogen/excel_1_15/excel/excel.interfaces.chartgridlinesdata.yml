@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartGridlines** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-tojson-member(1))
+  - Excel.ChartGridlines: [toJSON](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

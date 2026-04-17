@@ -8,10 +8,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.UI** (1 member)
-
-  - [displayDialogAsync](/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1))
+  - Office.UI: [displayDialogAsync](/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1))
 
 isPreview: false
 isDeprecated: false

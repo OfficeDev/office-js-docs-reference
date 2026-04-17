@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlNode** (1 member)
-
-  - [replaceChildNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildnode-member(1))
+  - Word.CustomXmlNode: [replaceChildNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-replacechildnode-member(1))
 
 isPreview: false
 isDeprecated: false

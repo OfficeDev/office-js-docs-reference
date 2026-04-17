@@ -15,19 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.ListLevelCollection: [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1)), [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1)), [track](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-track-member(1)), [untrack](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-untrack-member(1))
 
-  **Word.ListLevelCollection** (3 members)
-
-  - [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-untrack-member(1))
-
-
-  **Word.ListTemplate** (1 member)
-
-  - [listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)
+  - Word.ListTemplate: [listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)
 
   #### Examples
 

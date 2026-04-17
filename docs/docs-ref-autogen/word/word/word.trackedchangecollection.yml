@@ -15,34 +15,15 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [getTrackedChanges](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [getTrackedChanges](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))
 
-  - [getTrackedChanges](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))
+  - Word.Paragraph: [getTrackedChanges](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))
 
+  - Word.Range: [getTrackedChanges](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))
 
-  **Word.ContentControl** (1 member)
-
-  - [getTrackedChanges](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))
-
-
-  **Word.Paragraph** (1 member)
-
-  - [getTrackedChanges](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))
-
-
-  **Word.Range** (1 member)
-
-  - [getTrackedChanges](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))
-
-
-  **Word.TrackedChangeCollection** (3 members)
-
-  - [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-untrack-member(1))
+  - Word.TrackedChangeCollection: [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1)), [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1)), [track](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-track-member(1)), [untrack](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-untrack-member(1))
 
   #### Examples
 

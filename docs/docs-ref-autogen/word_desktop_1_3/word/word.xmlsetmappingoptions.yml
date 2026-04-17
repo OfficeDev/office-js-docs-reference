@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.XmlMapping** (1 member)
-
-  - [setMapping](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmapping-member(1))
+  - Word.XmlMapping: [setMapping](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmapping-member(1))
 
 isPreview: false
 isDeprecated: false

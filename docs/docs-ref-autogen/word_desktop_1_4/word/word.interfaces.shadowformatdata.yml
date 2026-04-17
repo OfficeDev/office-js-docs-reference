@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ShadowFormat** (1 member)
-
-  - [toJSON](/javascript/api/word/word.shadowformat#word-word-shadowformat-tojson-member(1))
+  - Word.ShadowFormat: [toJSON](/javascript/api/word/word.shadowformat#word-word-shadowformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

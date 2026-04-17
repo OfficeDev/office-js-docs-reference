@@ -5,8 +5,7 @@ package: outlook!
 fullName: Office.InitializationContextChangedEventArgs
 summary: >-
   Provides data from an [actionable
-  message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->,
-  [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
+  message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->, [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
   notification, [Smart
   Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
   dialog, or [integrated

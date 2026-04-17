@@ -26,10 +26,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.EmailAddressDetails** (1 member)
-
-  - [recipientType](/javascript/api/outlook/office.emailaddressdetails#outlook-office-emailaddressdetails-recipienttype-member)
+  - Office.EmailAddressDetails: [recipientType](/javascript/api/outlook/office.emailaddressdetails#outlook-office-emailaddressdetails-recipienttype-member)
 
   #### Examples
 

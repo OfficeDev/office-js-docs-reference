@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.IndexCollection** (1 member)
-
-  - [markAllEntries](/javascript/api/word/word.indexcollection#word-word-indexcollection-markallentries-member(1))
+  - Word.IndexCollection: [markAllEntries](/javascript/api/word/word.indexcollection#word-word-indexcollection-markallentries-member(1))
 
 isPreview: false
 isDeprecated: false

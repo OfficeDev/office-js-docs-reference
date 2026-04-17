@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.IndexCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.indexcollection#word-word-indexcollection-tojson-member(1))
+  - Word.IndexCollection: [toJSON](/javascript/api/word/word.indexcollection#word-word-indexcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

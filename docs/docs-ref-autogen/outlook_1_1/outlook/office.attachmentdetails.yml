@@ -28,15 +28,9 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentRead: [attachments](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-attachments-member)
 
-  **Office.AppointmentRead** (1 member)
-
-  - [attachments](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-attachments-member)
-
-
-  **Office.MessageRead** (1 member)
-
-  - [attachments](/javascript/api/outlook/office.messageread#outlook-office-messageread-attachments-member)
+  - Office.MessageRead: [attachments](/javascript/api/outlook/office.messageread#outlook-office-messageread-attachments-member)
 
   #### Examples
 

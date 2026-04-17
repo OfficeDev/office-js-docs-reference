@@ -15,15 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.GeometricShape: [load](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-load-member(1))
 
-  **Excel.GeometricShape** (1 member)
-
-  - [load](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-load-member(1))
-
-
-  **Excel.Shape** (1 member)
-
-  - [geometricShape](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshape-member)
+  - Excel.Shape: [geometricShape](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshape-member)
 
 isPreview: false
 isDeprecated: false

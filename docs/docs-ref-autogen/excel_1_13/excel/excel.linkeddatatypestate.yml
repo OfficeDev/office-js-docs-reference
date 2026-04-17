@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Range** (1 member)
-
-  - [linkedDataTypeState](/javascript/api/excel/excel.range#excel-excel-range-linkeddatatypestate-member)
+  - Excel.Range: [linkedDataTypeState](/javascript/api/excel/excel.range#excel-excel-range-linkeddatatypestate-member)
 
 isPreview: false
 isDeprecated: false

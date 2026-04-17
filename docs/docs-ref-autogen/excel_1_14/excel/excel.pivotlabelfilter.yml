@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotFilters** (1 member)
-
-  - [labelFilter](/javascript/api/excel/excel.pivotfilters#excel-excel-pivotfilters-labelfilter-member)
+  - Excel.PivotFilters: [labelFilter](/javascript/api/excel/excel.pivotfilters#excel-excel-pivotfilters-labelfilter-member)
 
   #### Examples
 

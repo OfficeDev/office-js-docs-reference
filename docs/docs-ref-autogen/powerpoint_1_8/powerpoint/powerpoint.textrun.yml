@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.TableCellProperties** (1 member)
-
-  - [textRuns](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-textruns-member)
+  - PowerPoint.TableCellProperties: [textRuns](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-textruns-member)
 
   #### Examples
 

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.Application** (1 member)
-
-  - [set](/javascript/api/visio/visio.application#visio-visio-application-set-member(1))
+  - Visio.Application: [set](/javascript/api/visio/visio.application#visio-visio-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

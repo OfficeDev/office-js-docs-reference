@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalTextComparisonRule** (1 member)
-
-  - [operator](/javascript/api/excel/excel.conditionaltextcomparisonrule#excel-excel-conditionaltextcomparisonrule-operator-member)
+  - Excel.ConditionalTextComparisonRule: [operator](/javascript/api/excel/excel.conditionaltextcomparisonrule#excel-excel-conditionaltextcomparisonrule-operator-member)
 
   #### Examples
 

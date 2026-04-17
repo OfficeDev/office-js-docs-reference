@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.AnnotationCollection** (1 member)
-
-  - [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
+  - Word.AnnotationCollection: [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

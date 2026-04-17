@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartMapOptions** (1 member)
-
-  - [labelStrategy](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-labelstrategy-member)
+  - Excel.ChartMapOptions: [labelStrategy](/javascript/api/excel/excel.chartmapoptions#excel-excel-chartmapoptions-labelstrategy-member)
 
 isPreview: false
 isDeprecated: false

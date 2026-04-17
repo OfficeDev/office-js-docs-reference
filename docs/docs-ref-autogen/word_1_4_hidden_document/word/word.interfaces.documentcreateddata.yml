@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.DocumentCreated** (1 member)
-
-  - [toJSON](/javascript/api/word/word.documentcreated#word-word-documentcreated-tojson-member(1))
+  - Word.DocumentCreated: [toJSON](/javascript/api/word/word.documentcreated#word-word-documentcreated-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

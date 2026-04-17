@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.SearchOptions** (1 member)
-
-  - [set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(1))
+  - Word.SearchOptions: [set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -19,12 +19,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.Mailbox** (2 members)
-
-  - [convertToLocalClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttolocalclienttime-member(1))
-
-  - [convertToUtcClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoutcclienttime-member(1))
+  - Office.Mailbox: [convertToLocalClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttolocalclienttime-member(1)), [convertToLocalClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttolocalclienttime-member(1)), [convertToUtcClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoutcclienttime-member(1))
 
   #### Examples
 

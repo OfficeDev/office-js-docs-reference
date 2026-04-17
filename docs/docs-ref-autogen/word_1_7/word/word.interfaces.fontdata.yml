@@ -4,12 +4,11 @@ uid: word!Word.Interfaces.FontData:interface
 package: word!
 fullName: Word.Interfaces.FontData
 summary: An interface describing the data returned by calling `font.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Font** (1 member)
-  - [toJSON](/javascript/api/word/word.font#word-word-font-tojson-member(1))
+  - Word.Font: [toJSON](/javascript/api/word/word.font#word-word-font-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

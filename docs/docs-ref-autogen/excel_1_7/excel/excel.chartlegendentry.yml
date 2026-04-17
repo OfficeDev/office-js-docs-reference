@@ -12,19 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartLegendEntry: [load](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-load-member(1)), [load](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-load-member(1)), [set](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-set-member(2))
 
-  **Excel.ChartLegendEntry** (2 members)
-
-  - [load](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-load-member(1))
-
-  - [set](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-set-member(2))
-
-
-  **Excel.ChartLegendEntryCollection** (2 members)
-
-  - [getItemAt](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-getitemat-member(1))
-
-  - [items](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-items-member)
+  - Excel.ChartLegendEntryCollection: [getItemAt](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-getitemat-member(1)), [getItemAt](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-items-member)
 
 isPreview: false
 isDeprecated: false

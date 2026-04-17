@@ -12,12 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.XmlNode** (2 members)
-
-  - [setValidationError](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1))
-
-  - [validationStatus](/javascript/api/word/word.xmlnode#word-word-xmlnode-validationstatus-member)
+  - Word.XmlNode: [setValidationError](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1)), [setValidationError](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1)), [validationStatus](/javascript/api/word/word.xmlnode#word-word-xmlnode-validationstatus-member)
 
 isPreview: false
 isDeprecated: false

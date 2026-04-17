@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.PageContent** (1 member)
-
-  - [load](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-load-member(1))
+  - OneNote.PageContent: [load](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-load-member(1))
 
 isPreview: false
 isDeprecated: false

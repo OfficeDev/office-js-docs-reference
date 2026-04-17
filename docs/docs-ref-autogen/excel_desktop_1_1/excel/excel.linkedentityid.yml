@@ -14,15 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.LinkedEntityCellValue: [id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)
 
-  **Excel.LinkedEntityCellValue** (1 member)
-
-  - [id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)
-
-
-  **Excel.Workbook** (1 member)
-
-  - [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
+  - Excel.Workbook: [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
 
 isPreview: false
 isDeprecated: false

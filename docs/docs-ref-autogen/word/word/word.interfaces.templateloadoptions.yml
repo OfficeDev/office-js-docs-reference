@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Template** (1 member)
-
-  - [load](/javascript/api/word/word.template#word-word-template-load-member(1))
+  - Word.Template: [load](/javascript/api/word/word.template#word-word-template-load-member(1))
 
 isPreview: false
 isDeprecated: false

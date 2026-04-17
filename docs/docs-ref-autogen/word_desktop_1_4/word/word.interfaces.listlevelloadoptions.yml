@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ListLevel** (1 member)
-
-  - [load](/javascript/api/word/word.listlevel#word-word-listlevel-load-member(1))
+  - Word.ListLevel: [load](/javascript/api/word/word.listlevel#word-word-listlevel-load-member(1))
 
 isPreview: false
 isDeprecated: false

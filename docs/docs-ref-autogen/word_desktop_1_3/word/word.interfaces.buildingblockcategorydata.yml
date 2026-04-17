@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.BuildingBlockCategory** (1 member)
-
-  - [toJSON](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-tojson-member(1))
+  - Word.BuildingBlockCategory: [toJSON](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

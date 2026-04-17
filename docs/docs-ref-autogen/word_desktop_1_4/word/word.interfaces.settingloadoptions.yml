@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Setting** (1 member)
-
-  - [load](/javascript/api/word/word.setting#word-word-setting-load-member(1))
+  - Word.Setting: [load](/javascript/api/word/word.setting#word-word-setting-load-member(1))
 
 isPreview: false
 isDeprecated: false

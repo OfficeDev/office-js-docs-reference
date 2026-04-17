@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.FillFormat** (1 member)
-
-  - [type](/javascript/api/word/word.fillformat#word-word-fillformat-type-member)
+  - Word.FillFormat: [type](/javascript/api/word/word.fillformat#word-word-fillformat-type-member)
 
 isPreview: false
 isDeprecated: false

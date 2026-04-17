@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.RangeScopedCollection** (1 member)
-
-  - [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1))
+  - Word.RangeScopedCollection: [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CommentContentRange** (1 member)
-
-  - [load](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-load-member(1))
+  - Word.CommentContentRange: [load](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-load-member(1))
 
 isPreview: false
 isDeprecated: false

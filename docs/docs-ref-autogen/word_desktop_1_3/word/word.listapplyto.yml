@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ListTemplateApplyOptions** (1 member)
-
-  - [applyTo](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-applyto-member)
+  - Word.ListTemplateApplyOptions: [applyTo](/javascript/api/word/word.listtemplateapplyoptions#word-word-listtemplateapplyoptions-applyto-member)
 
 isPreview: false
 isDeprecated: false

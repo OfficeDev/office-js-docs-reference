@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TextFrame** (1 member)
-
-  - [load](/javascript/api/word/word.textframe#word-word-textframe-load-member(1))
+  - Word.TextFrame: [load](/javascript/api/word/word.textframe#word-word-textframe-load-member(1))
 
 isPreview: false
 isDeprecated: false

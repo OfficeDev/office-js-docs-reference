@@ -12,20 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.TableCellCollection: [setHeight](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setheight-member(1))
 
-  **Word.TableCellCollection** (1 member)
+  - Word.TableRow: [setHeight](/javascript/api/word/word.tablerow#word-word-tablerow-setheight-member(1))
 
-  - [setHeight](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setheight-member(1))
-
-
-  **Word.TableRow** (1 member)
-
-  - [setHeight](/javascript/api/word/word.tablerow#word-word-tablerow-setheight-member(1))
-
-
-  **Word.TableRowCollection** (1 member)
-
-  - [setHeight](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setheight-member(1))
+  - Word.TableRowCollection: [setHeight](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setheight-member(1))
 
 isPreview: false
 isDeprecated: false

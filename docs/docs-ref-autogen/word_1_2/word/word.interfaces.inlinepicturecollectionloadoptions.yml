@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.InlinePictureCollection** (1 member)
-
-  - [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+  - Word.InlinePictureCollection: [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

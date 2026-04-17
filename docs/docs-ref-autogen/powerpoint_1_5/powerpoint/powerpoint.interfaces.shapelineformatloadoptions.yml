@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.ShapeLineFormat** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-load-member(1))
+  - PowerPoint.ShapeLineFormat: [load](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

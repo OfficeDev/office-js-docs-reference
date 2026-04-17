@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.RangeBorder** (1 member)
-
-  - [weight](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-weight-member)
+  - Excel.RangeBorder: [weight](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-weight-member)
 
 isPreview: false
 isDeprecated: false

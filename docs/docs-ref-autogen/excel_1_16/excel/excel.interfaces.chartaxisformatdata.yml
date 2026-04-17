@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartAxisFormat** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-tojson-member(1))
+  - Excel.ChartAxisFormat: [toJSON](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

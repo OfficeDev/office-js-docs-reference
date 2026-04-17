@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.LinkFormat** (1 member)
-
-  - [load](/javascript/api/word/word.linkformat#word-word-linkformat-load-member(1))
+  - Word.LinkFormat: [load](/javascript/api/word/word.linkformat#word-word-linkformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

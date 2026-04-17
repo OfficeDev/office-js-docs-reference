@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.View** (1 member)
-
-  - [markupMode](/javascript/api/word/word.view#word-word-view-markupmode-member)
+  - Word.View: [markupMode](/javascript/api/word/word.view#word-word-view-markupmode-member)
 
 isPreview: false
 isDeprecated: false

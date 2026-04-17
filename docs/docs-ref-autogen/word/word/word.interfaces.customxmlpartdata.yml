@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlPart** (1 member)
-
-  - [toJSON](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-tojson-member(1))
+  - Word.CustomXmlPart: [toJSON](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

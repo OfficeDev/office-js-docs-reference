@@ -6,12 +6,11 @@ fullName: Visio.Interfaces.PageUpdateData
 summary: >-
   An interface for updating data on the Page object, for use in `page.set({ ...
   })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Visio.Page** (1 member)
-  - [set](/javascript/api/visio/visio.page#visio-visio-page-set-member(1))
+  - Visio.Page: [set](/javascript/api/visio/visio.page#visio-visio-page-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,56 +14,19 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.Application: [getActiveParagraph](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraph-member(1)), [getActiveParagraph](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraph-member(1)), [getActiveParagraphOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraphornull-member(1))
 
-  **OneNote.Application** (2 members)
+  - OneNote.Image: [paragraph](/javascript/api/onenote/onenote.image#onenote-onenote-image-paragraph-member)
 
-  - [getActiveParagraph](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraph-member(1))
+  - OneNote.InkWord: [paragraph](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-paragraph-member)
 
-  - [getActiveParagraphOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraphornull-member(1))
+  - OneNote.Paragraph: [load](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-load-member(1)), [load](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-load-member(1)), [parentParagraph](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraph-member), [parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraphornull-member), [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(2)), [track](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-track-member(1)), [untrack](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-untrack-member(1))
 
+  - OneNote.ParagraphCollection: [getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1)), [getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-items-member)
 
-  **OneNote.Image** (1 member)
+  - OneNote.RichText: [paragraph](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-paragraph-member)
 
-  - [paragraph](/javascript/api/onenote/onenote.image#onenote-onenote-image-paragraph-member)
-
-
-  **OneNote.InkWord** (1 member)
-
-  - [paragraph](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-paragraph-member)
-
-
-  **OneNote.Paragraph** (6 members)
-
-  - [load](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-load-member(1))
-
-  - [parentParagraph](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraph-member)
-
-  - [parentParagraphOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parentparagraphornull-member)
-
-  - [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(2))
-
-  - [track](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-untrack-member(1))
-
-
-  **OneNote.ParagraphCollection** (3 members)
-
-  - [getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitemat-member(1))
-
-  - [items](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-items-member)
-
-
-  **OneNote.RichText** (1 member)
-
-  - [paragraph](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-paragraph-member)
-
-
-  **OneNote.Table** (1 member)
-
-  - [paragraph](/javascript/api/onenote/onenote.table#onenote-onenote-table-paragraph-member)
+  - OneNote.Table: [paragraph](/javascript/api/onenote/onenote.table#onenote-onenote-table-paragraph-member)
 
 isPreview: false
 isDeprecated: false

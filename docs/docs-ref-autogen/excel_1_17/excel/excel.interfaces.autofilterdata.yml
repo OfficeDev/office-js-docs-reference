@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.AutoFilter** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-tojson-member(1))
+  - Excel.AutoFilter: [toJSON](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

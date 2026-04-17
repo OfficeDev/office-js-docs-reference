@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartBorder: [lineStyle](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-linestyle-member)
 
-  **Excel.ChartBorder** (1 member)
-
-  - [lineStyle](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-linestyle-member)
-
-
-  **Excel.ChartLineFormat** (1 member)
-
-  - [lineStyle](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-linestyle-member)
+  - Excel.ChartLineFormat: [lineStyle](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-linestyle-member)
 
   #### Examples
 

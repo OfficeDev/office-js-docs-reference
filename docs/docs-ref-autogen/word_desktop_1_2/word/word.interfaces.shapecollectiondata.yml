@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ShapeCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.shapecollection#word-word-shapecollection-tojson-member(1))
+  - Word.ShapeCollection: [toJSON](/javascript/api/word/word.shapecollection#word-word-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

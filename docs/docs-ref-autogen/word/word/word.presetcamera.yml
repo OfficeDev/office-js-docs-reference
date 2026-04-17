@@ -12,12 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ThreeDimensionalFormat** (2 members)
-
-  - [presetCamera](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetcamera-member)
-
-  - [setPresetCamera](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setpresetcamera-member(1))
+  - Word.ThreeDimensionalFormat: [presetCamera](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetcamera-member), [presetCamera](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetcamera-member), [setPresetCamera](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-setpresetcamera-member(1))
 
 isPreview: false
 isDeprecated: false

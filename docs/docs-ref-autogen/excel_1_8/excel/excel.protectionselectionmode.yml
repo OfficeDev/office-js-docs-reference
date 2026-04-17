@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.WorksheetProtectionOptions** (1 member)
-
-  - [selectionMode](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-selectionmode-member)
+  - Excel.WorksheetProtectionOptions: [selectionMode](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-selectionmode-member)
 
 isPreview: false
 isDeprecated: false

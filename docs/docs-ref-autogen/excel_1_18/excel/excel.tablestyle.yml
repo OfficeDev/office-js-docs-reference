@@ -14,29 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.TableStyle: [duplicate](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-duplicate-member(1)), [duplicate](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-duplicate-member(1)), [load](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-load-member(1)), [set](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-set-member(2))
 
-  **Excel.TableStyle** (3 members)
-
-  - [duplicate](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-duplicate-member(1))
-
-  - [load](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-load-member(1))
-
-  - [set](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-set-member(2))
-
-
-  **Excel.TableStyleCollection** (6 members)
-
-  - [add](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-add-member(1))
-
-  - [getDefault](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getdefault-member(1))
-
-  - [getItem](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-items-member)
-
-  - [setDefault](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-setdefault-member(1))
+  - Excel.TableStyleCollection: [add](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-add-member(1)), [add](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-add-member(1)), [getDefault](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getdefault-member(1)), [getItem](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-items-member), [setDefault](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-setdefault-member(1))
 
 isPreview: false
 isDeprecated: false

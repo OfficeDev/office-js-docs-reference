@@ -14,12 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Selection** (2 members)
-
-  - [moveLeft](/javascript/api/word/word.selection#word-word-selection-moveleft-member(1))
-
-  - [moveRight](/javascript/api/word/word.selection#word-word-selection-moveright-member(1))
+  - Word.Selection: [moveLeft](/javascript/api/word/word.selection#word-word-selection-moveleft-member(1)), [moveLeft](/javascript/api/word/word.selection#word-word-selection-moveleft-member(1)), [moveRight](/javascript/api/word/word.selection#word-word-selection-moveright-member(1))
 
 isPreview: false
 isDeprecated: false

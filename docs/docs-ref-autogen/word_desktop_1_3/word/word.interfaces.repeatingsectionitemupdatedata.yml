@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.RepeatingSectionItem** (1 member)
-
-  - [set](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-set-member(1))
+  - Word.RepeatingSectionItem: [set](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-set-member(1))
 
 isPreview: false
 isDeprecated: false

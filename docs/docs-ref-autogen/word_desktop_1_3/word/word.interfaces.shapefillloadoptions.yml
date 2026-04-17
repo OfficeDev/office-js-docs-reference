@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ShapeFill** (1 member)
-
-  - [load](/javascript/api/word/word.shapefill#word-word-shapefill-load-member(1))
+  - Word.ShapeFill: [load](/javascript/api/word/word.shapefill#word-word-shapefill-load-member(1))
 
 isPreview: false
 isDeprecated: false

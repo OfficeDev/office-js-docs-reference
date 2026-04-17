@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ShapeFont** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-tojson-member(1))
+  - Excel.ShapeFont: [toJSON](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

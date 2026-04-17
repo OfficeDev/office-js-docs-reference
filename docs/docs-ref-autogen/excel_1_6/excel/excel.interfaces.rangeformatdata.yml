@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.RangeFormat** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-tojson-member(1))
+  - Excel.RangeFormat: [toJSON](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

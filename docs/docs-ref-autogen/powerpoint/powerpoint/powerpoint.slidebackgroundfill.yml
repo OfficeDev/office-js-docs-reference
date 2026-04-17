@@ -13,25 +13,13 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.SlideBackground: [fill](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-fill-member)
 
-  **PowerPoint.SlideBackground** (1 member)
+  - PowerPoint.SlideBackgroundFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-load-member(1))
 
-  - [fill](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-fill-member)
+  - PowerPoint.SlideLayoutBackground: [fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-fill-member)
 
-
-  **PowerPoint.SlideBackgroundFill** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-load-member(1))
-
-
-  **PowerPoint.SlideLayoutBackground** (1 member)
-
-  - [fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-fill-member)
-
-
-  **PowerPoint.SlideMasterBackground** (1 member)
-
-  - [fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-fill-member)
+  - PowerPoint.SlideMasterBackground: [fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-fill-member)
 
   #### Examples
 

@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.LinkedEntityDataDomainCollection** (1 member)
-
-  - [onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitydatadomainadded-member)
+  - Excel.LinkedEntityDataDomainCollection: [onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitydatadomainadded-member)
 
 isPreview: false
 isDeprecated: false

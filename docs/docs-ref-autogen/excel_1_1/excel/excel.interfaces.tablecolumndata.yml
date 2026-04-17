@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TableColumn** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-tojson-member(1))
+  - Excel.TableColumn: [toJSON](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

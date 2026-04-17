@@ -13,19 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [getStyles](/javascript/api/word/word.document#word-word-document-getstyles-member(1))
 
-  **Word.Document** (1 member)
-
-  - [getStyles](/javascript/api/word/word.document#word-word-document-getstyles-member(1))
-
-
-  **Word.StyleCollection** (3 members)
-
-  - [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.stylecollection#word-word-stylecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.stylecollection#word-word-stylecollection-untrack-member(1))
+  - Word.StyleCollection: [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1)), [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1)), [track](/javascript/api/word/word.stylecollection#word-word-stylecollection-track-member(1)), [untrack](/javascript/api/word/word.stylecollection#word-word-stylecollection-untrack-member(1))
 
   #### Examples
 

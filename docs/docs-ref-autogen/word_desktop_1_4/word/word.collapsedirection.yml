@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Selection** (1 member)
-
-  - [collapse](/javascript/api/word/word.selection#word-word-selection-collapse-member(1))
+  - Word.Selection: [collapse](/javascript/api/word/word.selection#word-word-selection-collapse-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,20 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlock: [insertType](/javascript/api/word/word.buildingblock#word-word-buildingblock-inserttype-member)
 
-  **Word.BuildingBlock** (1 member)
+  - Word.BuildingBlockCollection: [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
 
-  - [insertType](/javascript/api/word/word.buildingblock#word-word-buildingblock-inserttype-member)
-
-
-  **Word.BuildingBlockCollection** (1 member)
-
-  - [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
-
-
-  **Word.BuildingBlockEntryCollection** (1 member)
-
-  - [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
+  - Word.BuildingBlockEntryCollection: [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

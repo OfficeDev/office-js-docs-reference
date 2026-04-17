@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.BookmarkCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-tojson-member(1))
+  - Word.BookmarkCollection: [toJSON](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

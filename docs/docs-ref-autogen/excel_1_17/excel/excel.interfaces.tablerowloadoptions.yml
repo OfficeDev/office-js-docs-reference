@@ -20,10 +20,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TableRow** (1 member)
-
-  - [load](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-load-member(1))
+  - Excel.TableRow: [load](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-load-member(1))
 
 isPreview: false
 isDeprecated: false

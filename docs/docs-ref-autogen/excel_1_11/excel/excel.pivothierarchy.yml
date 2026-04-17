@@ -12,36 +12,15 @@ remarks: >-
   #### Used by
 
 
+  - Excel.DataPivotHierarchyCollection: [add](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-add-member(1))
 
-  **Excel.DataPivotHierarchyCollection** (1 member)
+  - Excel.FilterPivotHierarchyCollection: [add](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-add-member(1))
 
-  - [add](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-add-member(1))
+  - Excel.PivotHierarchy: [load](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-load-member(1)), [load](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-load-member(1)), [set](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-set-member(2))
 
+  - Excel.PivotHierarchyCollection: [getItem](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-items-member)
 
-  **Excel.FilterPivotHierarchyCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-add-member(1))
-
-
-  **Excel.PivotHierarchy** (2 members)
-
-  - [load](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-load-member(1))
-
-  - [set](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-set-member(2))
-
-
-  **Excel.PivotHierarchyCollection** (3 members)
-
-  - [getItem](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-items-member)
-
-
-  **Excel.RowColumnPivotHierarchyCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-add-member(1))
+  - Excel.RowColumnPivotHierarchyCollection: [add](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

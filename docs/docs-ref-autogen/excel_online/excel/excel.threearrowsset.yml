@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.IconCollections** (1 member)
-
-  - [threeArrows](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threearrows-member)
+  - Excel.IconCollections: [threeArrows](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threearrows-member)
 
 isPreview: false
 isDeprecated: false

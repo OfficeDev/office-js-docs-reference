@@ -14,14 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.CustomXmlParts** (3 members)
-
-  - [addAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-addasync-member(1))
-
-  - [getByIdAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbyidasync-member(1))
-
-  - [getByNamespaceAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbynamespaceasync-member(1))
+  - Office.CustomXmlParts: [addAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-addasync-member(1)), [addAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-addasync-member(1)), [getByIdAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbyidasync-member(1)), [getByNamespaceAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbynamespaceasync-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -154,8 +147,7 @@ methods:
           description: >-
             The event handler function to add, whose only parameter is of type
             [Office.NodeDeletedEventArgs](xref:office!Office.NodeDeletedEventArgs:interface)<!--
-            -->,
-            [Office.NodeInsertedEventArgs](xref:office!Office.NodeInsertedEventArgs:interface)<!--
+            -->, [Office.NodeInsertedEventArgs](xref:office!Office.NodeInsertedEventArgs:interface)<!--
             -->, or
             [Office.NodeReplacedEventArgs](xref:office!Office.NodeReplacedEventArgs:interface)
           type: '(result: any) =&gt; void'
@@ -281,8 +273,7 @@ methods:
           description: >-
             The event handler function to add, whose only parameter is of type
             [Office.NodeDeletedEventArgs](xref:office!Office.NodeDeletedEventArgs:interface)<!--
-            -->,
-            [Office.NodeInsertedEventArgs](xref:office!Office.NodeInsertedEventArgs:interface)<!--
+            -->, [Office.NodeInsertedEventArgs](xref:office!Office.NodeInsertedEventArgs:interface)<!--
             -->, or
             [Office.NodeReplacedEventArgs](xref:office!Office.NodeReplacedEventArgs:interface)
           type: '(result: any) =&gt; void'

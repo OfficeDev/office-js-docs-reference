@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.Tag** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-load-member(1))
+  - PowerPoint.Tag: [load](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-load-member(1))
 
 isPreview: false
 isDeprecated: false

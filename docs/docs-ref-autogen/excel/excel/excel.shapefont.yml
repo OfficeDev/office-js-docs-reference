@@ -14,17 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ShapeFont: [load](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-load-member(1)), [load](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-load-member(1)), [set](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-set-member(2))
 
-  **Excel.ShapeFont** (2 members)
-
-  - [load](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-load-member(1))
-
-  - [set](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-set-member(2))
-
-
-  **Excel.TextRange** (1 member)
-
-  - [font](/javascript/api/excel/excel.textrange#excel-excel-textrange-font-member)
+  - Excel.TextRange: [font](/javascript/api/excel/excel.textrange#excel-excel-textrange-font-member)
 
 isPreview: false
 isDeprecated: false

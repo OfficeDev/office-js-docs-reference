@@ -13,26 +13,11 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Slide: [layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)
 
-  **PowerPoint.Slide** (1 member)
+  - PowerPoint.SlideLayout: [load](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-load-member(1))
 
-  - [layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)
-
-
-  **PowerPoint.SlideLayout** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-load-member(1))
-
-
-  **PowerPoint.SlideLayoutCollection** (4 members)
-
-  - [getItem](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemat-member(1))
-
-  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-items-member)
+  - PowerPoint.SlideLayoutCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitem-member(1)), [getItem](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-items-member)
 
   #### Examples
 

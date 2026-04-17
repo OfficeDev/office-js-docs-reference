@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartDataLabelAnchor** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-load-member(1))
+  - Excel.ChartDataLabelAnchor: [load](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-load-member(1))
 
 isPreview: false
 isDeprecated: false

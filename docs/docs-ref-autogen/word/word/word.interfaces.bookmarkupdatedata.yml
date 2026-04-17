@@ -6,12 +6,11 @@ fullName: Word.Interfaces.BookmarkUpdateData
 summary: >-
   An interface for updating data on the `Bookmark` object, for use in
   `bookmark.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Bookmark** (1 member)
-  - [set](/javascript/api/word/word.bookmark#word-word-bookmark-set-member(1))
+  - Word.Bookmark: [set](/javascript/api/word/word.bookmark#word-word-bookmark-set-member(1))
 
 isPreview: false
 isDeprecated: false

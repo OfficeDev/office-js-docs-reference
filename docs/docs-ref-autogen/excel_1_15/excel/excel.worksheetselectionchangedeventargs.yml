@@ -15,15 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Worksheet: [onSelectionChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onselectionchanged-member)
 
-  **Excel.Worksheet** (1 member)
-
-  - [onSelectionChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onselectionchanged-member)
-
-
-  **Excel.WorksheetCollection** (1 member)
-
-  - [onSelectionChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onselectionchanged-member)
+  - Excel.WorksheetCollection: [onSelectionChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onselectionchanged-member)
 
   #### Examples
 

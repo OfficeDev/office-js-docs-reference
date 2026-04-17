@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.List** (1 member)
-
-  - [levelTypes](/javascript/api/word/word.list#word-word-list-leveltypes-member)
+  - Word.List: [levelTypes](/javascript/api/word/word.list#word-word-list-leveltypes-member)
 
   #### Examples
 

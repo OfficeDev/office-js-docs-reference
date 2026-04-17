@@ -13,44 +13,19 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [getComments](/javascript/api/word/word.body#word-word-body-getcomments-member(1))
 
-  **Word.Body** (1 member)
+  - Word.CommentCollection: [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1)), [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1)), [track](/javascript/api/word/word.commentcollection#word-word-commentcollection-track-member(1)), [untrack](/javascript/api/word/word.commentcollection#word-word-commentcollection-untrack-member(1))
 
-  - [getComments](/javascript/api/word/word.body#word-word-body-getcomments-member(1))
+  - Word.ContentControl: [getComments](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))
 
+  - Word.Document: [comments](/javascript/api/word/word.document#word-word-document-comments-member)
 
-  **Word.CommentCollection** (3 members)
+  - Word.Paragraph: [getComments](/javascript/api/word/word.paragraph#word-word-paragraph-getcomments-member(1))
 
-  - [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1))
+  - Word.Range: [getComments](/javascript/api/word/word.range#word-word-range-getcomments-member(1))
 
-  - [track](/javascript/api/word/word.commentcollection#word-word-commentcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.commentcollection#word-word-commentcollection-untrack-member(1))
-
-
-  **Word.ContentControl** (1 member)
-
-  - [getComments](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))
-
-
-  **Word.Document** (1 member)
-
-  - [comments](/javascript/api/word/word.document#word-word-document-comments-member)
-
-
-  **Word.Paragraph** (1 member)
-
-  - [getComments](/javascript/api/word/word.paragraph#word-word-paragraph-getcomments-member(1))
-
-
-  **Word.Range** (1 member)
-
-  - [getComments](/javascript/api/word/word.range#word-word-range-getcomments-member(1))
-
-
-  **Word.Selection** (1 member)
-
-  - [comments](/javascript/api/word/word.selection#word-word-selection-comments-member)
+  - Word.Selection: [comments](/javascript/api/word/word.selection#word-word-selection-comments-member)
 
   #### Examples
 

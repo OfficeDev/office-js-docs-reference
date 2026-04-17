@@ -15,86 +15,23 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [insertParagraph](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertparagraph-member(1))
 
-  - [insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
+  - Word.InlinePicture: [insertParagraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertparagraph-member(1)), [insertParagraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertparagraph-member(1)), [paragraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-paragraph-member)
 
+  - Word.List: [insertParagraph](/javascript/api/word/word.list#word-word-list-insertparagraph-member(1))
 
-  **Word.ContentControl** (1 member)
+  - Word.ListItem: [getAncestor](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1)), [getAncestor](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1)), [getAncestorOrNullObject](/javascript/api/word/word.listitem#word-word-listitem-getancestorornullobject-member(1))
 
-  - [insertParagraph](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertparagraph-member(1))
+  - Word.Paragraph: [getNext](/javascript/api/word/word.paragraph#word-word-paragraph-getnext-member(1)), [getNext](/javascript/api/word/word.paragraph#word-word-paragraph-getnext-member(1)), [getNextOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-getnextornullobject-member(1)), [getPrevious](/javascript/api/word/word.paragraph#word-word-paragraph-getprevious-member(1)), [getPreviousOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-getpreviousornullobject-member(1)), [insertParagraph](/javascript/api/word/word.paragraph#word-word-paragraph-insertparagraph-member(1)), [load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1)), [set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(2)), [track](/javascript/api/word/word.paragraph#word-word-paragraph-track-member(1)), [untrack](/javascript/api/word/word.paragraph#word-word-paragraph-untrack-member(1))
 
+  - Word.ParagraphCollection: [getFirst](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirst-member(1)), [getFirst](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirstornullobject-member(1)), [getLast](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getlast-member(1)), [getLastOrNullObject](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getlastornullobject-member(1)), [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
 
-  **Word.InlinePicture** (2 members)
+  - Word.Range: [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
 
-  - [insertParagraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertparagraph-member(1))
-
-  - [paragraph](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-paragraph-member)
-
-
-  **Word.List** (1 member)
-
-  - [insertParagraph](/javascript/api/word/word.list#word-word-list-insertparagraph-member(1))
-
-
-  **Word.ListItem** (2 members)
-
-  - [getAncestor](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1))
-
-  - [getAncestorOrNullObject](/javascript/api/word/word.listitem#word-word-listitem-getancestorornullobject-member(1))
-
-
-  **Word.Paragraph** (9 members)
-
-  - [getNext](/javascript/api/word/word.paragraph#word-word-paragraph-getnext-member(1))
-
-  - [getNextOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-getnextornullobject-member(1))
-
-  - [getPrevious](/javascript/api/word/word.paragraph#word-word-paragraph-getprevious-member(1))
-
-  - [getPreviousOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-getpreviousornullobject-member(1))
-
-  - [insertParagraph](/javascript/api/word/word.paragraph#word-word-paragraph-insertparagraph-member(1))
-
-  - [load](/javascript/api/word/word.paragraph#word-word-paragraph-load-member(1))
-
-  - [set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(2))
-
-  - [track](/javascript/api/word/word.paragraph#word-word-paragraph-track-member(1))
-
-  - [untrack](/javascript/api/word/word.paragraph#word-word-paragraph-untrack-member(1))
-
-
-  **Word.ParagraphCollection** (5 members)
-
-  - [getFirst](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirst-member(1))
-
-  - [getFirstOrNullObject](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirstornullobject-member(1))
-
-  - [getLast](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getlast-member(1))
-
-  - [getLastOrNullObject](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getlastornullobject-member(1))
-
-  - [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
-
-
-  **Word.Range** (1 member)
-
-  - [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
-
-
-  **Word.Table** (5 members)
-
-  - [getParagraphAfter](/javascript/api/word/word.table#word-word-table-getparagraphafter-member(1))
-
-  - [getParagraphAfterOrNullObject](/javascript/api/word/word.table#word-word-table-getparagraphafterornullobject-member(1))
-
-  - [getParagraphBefore](/javascript/api/word/word.table#word-word-table-getparagraphbefore-member(1))
-
-  - [getParagraphBeforeOrNullObject](/javascript/api/word/word.table#word-word-table-getparagraphbeforeornullobject-member(1))
-
-  - [insertParagraph](/javascript/api/word/word.table#word-word-table-insertparagraph-member(1))
+  - Word.Table: [getParagraphAfter](/javascript/api/word/word.table#word-word-table-getparagraphafter-member(1)), [getParagraphAfter](/javascript/api/word/word.table#word-word-table-getparagraphafter-member(1)), [getParagraphAfterOrNullObject](/javascript/api/word/word.table#word-word-table-getparagraphafterornullobject-member(1)), [getParagraphBefore](/javascript/api/word/word.table#word-word-table-getparagraphbefore-member(1)), [getParagraphBeforeOrNullObject](/javascript/api/word/word.table#word-word-table-getparagraphbeforeornullobject-member(1)), [insertParagraph](/javascript/api/word/word.table#word-word-table-insertparagraph-member(1))
 
   #### Examples
 

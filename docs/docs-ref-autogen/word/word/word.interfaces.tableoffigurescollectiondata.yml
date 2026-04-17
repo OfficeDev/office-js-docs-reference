@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TableOfFiguresCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-tojson-member(1))
+  - Word.TableOfFiguresCollection: [toJSON](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

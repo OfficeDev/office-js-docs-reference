@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.PageView** (1 member)
-
-  - [toJSON](/javascript/api/visio/visio.pageview#visio-visio-pageview-tojson-member(1))
+  - Visio.PageView: [toJSON](/javascript/api/visio/visio.pageview#visio-visio-pageview-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

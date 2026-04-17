@@ -13,55 +13,25 @@ remarks: >-
   #### Used by
 
 
+  - Word.CommentEventArgs: [type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)
 
-  **Word.CommentEventArgs** (1 member)
+  - Word.ContentControlAddedEventArgs: [eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)
 
-  - [type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)
+  - Word.ContentControlDataChangedEventArgs: [eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)
 
+  - Word.ContentControlDeletedEventArgs: [eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)
 
-  **Word.ContentControlAddedEventArgs** (1 member)
+  - Word.ContentControlEnteredEventArgs: [eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)
 
-  - [eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)
+  - Word.ContentControlExitedEventArgs: [eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)
 
+  - Word.ContentControlSelectionChangedEventArgs: [eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)
 
-  **Word.ContentControlDataChangedEventArgs** (1 member)
+  - Word.ParagraphAddedEventArgs: [type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)
 
-  - [eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)
+  - Word.ParagraphChangedEventArgs: [type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)
 
-
-  **Word.ContentControlDeletedEventArgs** (1 member)
-
-  - [eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)
-
-
-  **Word.ContentControlEnteredEventArgs** (1 member)
-
-  - [eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)
-
-
-  **Word.ContentControlExitedEventArgs** (1 member)
-
-  - [eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)
-
-
-  **Word.ContentControlSelectionChangedEventArgs** (1 member)
-
-  - [eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)
-
-
-  **Word.ParagraphAddedEventArgs** (1 member)
-
-  - [type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)
-
-
-  **Word.ParagraphChangedEventArgs** (1 member)
-
-  - [type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)
-
-
-  **Word.ParagraphDeletedEventArgs** (1 member)
-
-  - [type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)
+  - Word.ParagraphDeletedEventArgs: [type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)
 
   #### Examples
 

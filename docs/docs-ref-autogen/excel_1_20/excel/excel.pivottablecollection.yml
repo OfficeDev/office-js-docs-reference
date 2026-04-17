@@ -14,20 +14,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.PivotTableCollection: [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
 
-  **Excel.PivotTableCollection** (1 member)
+  - Excel.Workbook: [pivotTables](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottables-member)
 
-  - [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [pivotTables](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottables-member)
-
-
-  **Excel.Worksheet** (1 member)
-
-  - [pivotTables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pivottables-member)
+  - Excel.Worksheet: [pivotTables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pivottables-member)
 
 isPreview: false
 isDeprecated: false

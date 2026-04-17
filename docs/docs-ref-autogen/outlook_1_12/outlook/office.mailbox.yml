@@ -264,9 +264,7 @@ properties:
       type or mode, cast this item to one of the following:
 
 
-      [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->,
-      [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
-      [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!--
+      [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->, [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->, [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!--
       -->, [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 

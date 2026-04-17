@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Application** (1 member)
-
-  - [load](/javascript/api/excel/excel.application#excel-excel-application-load-member(1))
+  - Excel.Application: [load](/javascript/api/excel/excel.application#excel-excel-application-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,20 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CommentAddedEventArgs: [commentDetails](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-commentdetails-member)
 
-  **Excel.CommentAddedEventArgs** (1 member)
+  - Excel.CommentChangedEventArgs: [commentDetails](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-commentdetails-member)
 
-  - [commentDetails](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-commentdetails-member)
-
-
-  **Excel.CommentChangedEventArgs** (1 member)
-
-  - [commentDetails](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-commentdetails-member)
-
-
-  **Excel.CommentDeletedEventArgs** (1 member)
-
-  - [commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-commentdetails-member)
+  - Excel.CommentDeletedEventArgs: [commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-commentdetails-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,96 +13,34 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ArrayCellValue: [elements](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-elements-member)
 
-  **Excel.ArrayCellValue** (1 member)
+  - Excel.ChangedEventDetail: [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member), [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member), [valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonbefore-member)
 
-  - [elements](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-elements-member)
+  - Excel.ExternalCodeServiceObjectCellValue: [preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)
 
+  - Excel.NamedItem: [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member), [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member), [valueAsJsonLocal](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjsonlocal-member)
 
-  **Excel.ChangedEventDetail** (2 members)
+  - Excel.NamedItemArrayValues: [valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjsonlocal-member)
 
-  - [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member)
+  - Excel.Range: [valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.range#excel-excel-range-valuesasjsonlocal-member)
 
-  - [valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonbefore-member)
+  - Excel.RangeView: [valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjsonlocal-member)
 
+  - Excel.TableColumn: [valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)
 
-  **Excel.ExternalCodeServiceObjectCellValue** (1 member)
+  - Excel.TableColumnCollection: [addAsJson](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-addasjson-member(1))
 
-  - [preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)
+  - Excel.TableRow: [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member), [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)
 
-
-  **Excel.NamedItem** (2 members)
-
-  - [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member)
-
-  - [valueAsJsonLocal](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjsonlocal-member)
-
-
-  **Excel.NamedItemArrayValues** (2 members)
-
-  - [valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member)
-
-  - [valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjsonlocal-member)
-
-
-  **Excel.Range** (2 members)
-
-  - [valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member)
-
-  - [valuesAsJsonLocal](/javascript/api/excel/excel.range#excel-excel-range-valuesasjsonlocal-member)
-
-
-  **Excel.RangeView** (2 members)
-
-  - [valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member)
-
-  - [valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjsonlocal-member)
-
-
-  **Excel.TableColumn** (2 members)
-
-  - [valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member)
-
-  - [valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)
-
-
-  **Excel.TableColumnCollection** (1 member)
-
-  - [addAsJson](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-addasjson-member(1))
-
-
-  **Excel.TableRow** (2 members)
-
-  - [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member)
-
-  - [valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)
-
-
-  **Excel.TableRowCollection** (1 member)
-
-  - [addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
+  - Excel.TableRowCollection: [addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
 
 
 
   Learn more about the types in this type alias through the following links. 
 
 
-  [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue),
-  [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue),
-  [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue),
-  [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue),
-  [Excel.EmptyCellValue](/javascript/api/excel/excel.emptycellvalue),
-  [Excel.ErrorCellValue](/javascript/api/excel/excel.errorcellvalue),
-  [Excel.ExternalCodeServiceObjectCellValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue),
-  [Excel.FormattedNumberCellValue](/javascript/api/excel/excel.formattednumbercellvalue),
-  [Excel.FunctionCellValue](/javascript/api/excel/excel.functioncellvalue),
-  [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue),
-  [Excel.LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue),
-  [Excel.ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue),
-  [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue),
-  [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue),
-  [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue),
-  [Excel.CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)
+  [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue), [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue), [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue), [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue), [Excel.EmptyCellValue](/javascript/api/excel/excel.emptycellvalue), [Excel.ErrorCellValue](/javascript/api/excel/excel.errorcellvalue), [Excel.ExternalCodeServiceObjectCellValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue), [Excel.FormattedNumberCellValue](/javascript/api/excel/excel.formattednumbercellvalue), [Excel.FunctionCellValue](/javascript/api/excel/excel.functioncellvalue), [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue), [Excel.LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue), [Excel.ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue), [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue), [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue), [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue), [Excel.CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)
 
 
   #### Examples

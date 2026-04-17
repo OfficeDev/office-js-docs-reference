@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.PivotField: [sortByLabels](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbylabels-member(1)), [sortByLabels](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbylabels-member(1)), [sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
 
-  **Excel.PivotField** (2 members)
-
-  - [sortByLabels](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbylabels-member(1))
-
-  - [sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
-
-
-  **Excel.PivotLayout** (1 member)
-
-  - [setAutoSortOnCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setautosortoncell-member(1))
+  - Excel.PivotLayout: [setAutoSortOnCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setautosortoncell-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalColorScaleCriterion** (1 member)
-
-  - [type](/javascript/api/excel/excel.conditionalcolorscalecriterion#excel-excel-conditionalcolorscalecriterion-type-member)
+  - Excel.ConditionalColorScaleCriterion: [type](/javascript/api/excel/excel.conditionalcolorscalecriterion#excel-excel-conditionalcolorscalecriterion-type-member)
 
   #### Examples
 

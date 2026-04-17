@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.NoteCollection** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-tojson-member(1))
+  - Excel.NoteCollection: [toJSON](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

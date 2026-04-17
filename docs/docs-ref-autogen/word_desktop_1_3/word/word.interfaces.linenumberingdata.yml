@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.LineNumbering** (1 member)
-
-  - [toJSON](/javascript/api/word/word.linenumbering#word-word-linenumbering-tojson-member(1))
+  - Word.LineNumbering: [toJSON](/javascript/api/word/word.linenumbering#word-word-linenumbering-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -16,28 +16,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Binding: [getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
 
-  **Excel.Binding** (1 member)
+  - Excel.Table: [load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1)), [load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1)), [set](/javascript/api/excel/excel.table#excel-excel-table-set-member(2))
 
-  - [getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
-
-
-  **Excel.Table** (2 members)
-
-  - [load](/javascript/api/excel/excel.table#excel-excel-table-load-member(1))
-
-  - [set](/javascript/api/excel/excel.table#excel-excel-table-set-member(2))
-
-
-  **Excel.TableCollection** (4 members)
-
-  - [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
-
-  - [getItem](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemat-member(1))
-
-  - [items](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-items-member)
+  - Excel.TableCollection: [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1)), [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1)), [getItem](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-items-member)
 
 isPreview: false
 isDeprecated: false

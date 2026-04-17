@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartTitle: [format](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-format-member)
 
-  **Excel.ChartTitle** (1 member)
-
-  - [format](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-format-member)
-
-
-  **Excel.ChartTitleFormat** (2 members)
-
-  - [load](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-load-member(1))
-
-  - [set](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-set-member(2))
+  - Excel.ChartTitleFormat: [load](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-load-member(1)), [load](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-load-member(1)), [set](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

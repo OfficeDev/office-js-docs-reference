@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotTableCollection** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-tojson-member(1))
+  - Excel.PivotTableCollection: [toJSON](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

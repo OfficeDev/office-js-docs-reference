@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalRangeFont** (1 member)
-
-  - [underline](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-underline-member)
+  - Excel.ConditionalRangeFont: [underline](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-underline-member)
 
 isPreview: false
 isDeprecated: false

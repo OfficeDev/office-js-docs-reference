@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Filter** (1 member)
-
-  - [load](/javascript/api/excel/excel.filter#excel-excel-filter-load-member(1))
+  - Excel.Filter: [load](/javascript/api/excel/excel.filter#excel-excel-filter-load-member(1))
 
 isPreview: false
 isDeprecated: false

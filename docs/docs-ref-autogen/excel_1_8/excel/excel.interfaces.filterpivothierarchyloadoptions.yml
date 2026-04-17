@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.FilterPivotHierarchy** (1 member)
-
-  - [load](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-load-member(1))
+  - Excel.FilterPivotHierarchy: [load](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-load-member(1))
 
 isPreview: false
 isDeprecated: false

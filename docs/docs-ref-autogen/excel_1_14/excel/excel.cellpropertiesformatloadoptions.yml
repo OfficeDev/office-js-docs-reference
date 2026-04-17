@@ -13,20 +13,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CellPropertiesLoadOptions: [format](/javascript/api/excel/excel.cellpropertiesloadoptions#excel-excel-cellpropertiesloadoptions-format-member)
 
-  **Excel.CellPropertiesLoadOptions** (1 member)
+  - Excel.ColumnPropertiesLoadOptions: [format](/javascript/api/excel/excel.columnpropertiesloadoptions#excel-excel-columnpropertiesloadoptions-format-member)
 
-  - [format](/javascript/api/excel/excel.cellpropertiesloadoptions#excel-excel-cellpropertiesloadoptions-format-member)
-
-
-  **Excel.ColumnPropertiesLoadOptions** (1 member)
-
-  - [format](/javascript/api/excel/excel.columnpropertiesloadoptions#excel-excel-columnpropertiesloadoptions-format-member)
-
-
-  **Excel.RowPropertiesLoadOptions** (1 member)
-
-  - [format](/javascript/api/excel/excel.rowpropertiesloadoptions#excel-excel-rowpropertiesloadoptions-format-member)
+  - Excel.RowPropertiesLoadOptions: [format](/javascript/api/excel/excel.rowpropertiesloadoptions#excel-excel-rowpropertiesloadoptions-format-member)
 
 isPreview: false
 isDeprecated: false

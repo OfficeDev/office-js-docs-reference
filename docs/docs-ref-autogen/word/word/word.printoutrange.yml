@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.DocumentPrintOutOptions** (1 member)
-
-  - [range](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-range-member)
+  - Word.DocumentPrintOutOptions: [range](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-range-member)
 
 isPreview: false
 isDeprecated: false

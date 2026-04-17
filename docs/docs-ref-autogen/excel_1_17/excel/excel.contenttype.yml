@@ -13,25 +13,13 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Comment: [contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
 
-  **Excel.Comment** (1 member)
+  - Excel.CommentCollection: [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
 
-  - [contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
+  - Excel.CommentReply: [contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
 
-
-  **Excel.CommentCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
-
-
-  **Excel.CommentReply** (1 member)
-
-  - [contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
-
-
-  **Excel.CommentReplyCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+  - Excel.CommentReplyCollection: [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
   #### Examples
 

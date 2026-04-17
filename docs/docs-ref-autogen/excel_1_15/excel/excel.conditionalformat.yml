@@ -17,25 +17,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ConditionalFormat: [load](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-load-member(1)), [load](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-load-member(1)), [set](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-set-member(2))
 
-  **Excel.ConditionalFormat** (2 members)
-
-  - [load](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-load-member(1))
-
-  - [set](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-set-member(2))
-
-
-  **Excel.ConditionalFormatCollection** (5 members)
-
-  - [add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1))
-
-  - [getItem](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemat-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-items-member)
+  - Excel.ConditionalFormatCollection: [add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1)), [add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1)), [getItem](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-items-member)
 
 isPreview: false
 isDeprecated: false

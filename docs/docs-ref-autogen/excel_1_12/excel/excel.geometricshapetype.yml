@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Shape: [geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
 
-  **Excel.Shape** (1 member)
-
-  - [geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
-
-
-  **Excel.ShapeCollection** (1 member)
-
-  - [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
+  - Excel.ShapeCollection: [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
 
   #### Examples
 

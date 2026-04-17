@@ -17,72 +17,19 @@ remarks: >-
   #### Used by
 
 
+  - Excel.GeometricShape: [shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
 
-  **Excel.GeometricShape** (1 member)
+  - Excel.GroupShapeCollection: [getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1)), [getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
 
-  - [shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
+  - Excel.Image: [shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
 
+  - Excel.Line: [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member), [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member), [connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1)), [connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1)), [endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member), [shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
 
-  **Excel.GroupShapeCollection** (3 members)
+  - Excel.Shape: [copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1)), [copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1)), [load](/javascript/api/excel/excel.shape#excel-excel-shape-load-member(1)), [parentGroup](/javascript/api/excel/excel.shape#excel-excel-shape-parentgroup-member), [set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(2))
 
-  - [getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1))
+  - Excel.ShapeCollection: [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1)), [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1)), [addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1)), [addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1)), [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1)), [addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1)), [getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
 
-  - [getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1))
-
-  - [items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
-
-
-  **Excel.Image** (1 member)
-
-  - [shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
-
-
-  **Excel.Line** (5 members)
-
-  - [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member)
-
-  - [connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1))
-
-  - [connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1))
-
-  - [endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member)
-
-  - [shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
-
-
-  **Excel.Shape** (4 members)
-
-  - [copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
-
-  - [load](/javascript/api/excel/excel.shape#excel-excel-shape-load-member(1))
-
-  - [parentGroup](/javascript/api/excel/excel.shape#excel-excel-shape-parentgroup-member)
-
-  - [set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(2))
-
-
-  **Excel.ShapeCollection** (8 members)
-
-  - [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
-
-  - [addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1))
-
-  - [addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1))
-
-  - [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
-
-  - [addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1))
-
-  - [getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1))
-
-  - [items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
-
-
-  **Excel.ShapeGroup** (1 member)
-
-  - [shape](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shape-member)
+  - Excel.ShapeGroup: [shape](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shape-member)
 
 isPreview: false
 isDeprecated: false

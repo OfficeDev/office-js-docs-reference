@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.Auth** (1 member)
-
-  - [getAuthContext](/javascript/api/office/office.auth#office-office-auth-getauthcontext-member(1))
+  - Office.Auth: [getAuthContext](/javascript/api/office/office.auth#office-office-auth-getauthcontext-member(1))
 
 isPreview: false
 isDeprecated: false

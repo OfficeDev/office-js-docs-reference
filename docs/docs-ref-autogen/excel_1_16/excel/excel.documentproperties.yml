@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.DocumentProperties: [load](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-load-member(1)), [load](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-load-member(1)), [set](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-set-member(2))
 
-  **Excel.DocumentProperties** (2 members)
-
-  - [load](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-load-member(1))
-
-  - [set](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-set-member(2))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [properties](/javascript/api/excel/excel.workbook#excel-excel-workbook-properties-member)
+  - Excel.Workbook: [properties](/javascript/api/excel/excel.workbook#excel-excel-workbook-properties-member)
 
 isPreview: false
 isDeprecated: false

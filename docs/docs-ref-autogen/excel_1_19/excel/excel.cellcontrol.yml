@@ -13,20 +13,14 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Range** (1 member)
-
-  - [control](/javascript/api/excel/excel.range#excel-excel-range-control-member)
+  - Excel.Range: [control](/javascript/api/excel/excel.range#excel-excel-range-control-member)
 
 
 
   Learn more about the types in this type alias through the following links. 
 
 
-  [Excel.UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol),
-  [Excel.EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol),
-  [Excel.MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol),
-  [Excel.CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)
+  [Excel.UnknownCellControl](/javascript/api/excel/excel.unknowncellcontrol), [Excel.EmptyCellControl](/javascript/api/excel/excel.emptycellcontrol), [Excel.MixedCellControl](/javascript/api/excel/excel.mixedcellcontrol), [Excel.CheckboxCellControl](/javascript/api/excel/excel.checkboxcellcontrol)
 
 
   #### Examples

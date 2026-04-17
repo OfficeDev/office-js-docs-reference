@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotLayout** (1 member)
-
-  - [set](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-set-member(1))
+  - Excel.PivotLayout: [set](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartTitle** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-tojson-member(1))
+  - Excel.ChartTitle: [toJSON](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

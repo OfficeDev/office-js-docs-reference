@@ -14,38 +14,15 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.Image: [load](/javascript/api/onenote/onenote.image#onenote-onenote-image-load-member(1)), [load](/javascript/api/onenote/onenote.image#onenote-onenote-image-load-member(1)), [set](/javascript/api/onenote/onenote.image#onenote-onenote-image-set-member(2)), [track](/javascript/api/onenote/onenote.image#onenote-onenote-image-track-member(1)), [untrack](/javascript/api/onenote/onenote.image#onenote-onenote-image-untrack-member(1))
 
-  **OneNote.Image** (4 members)
+  - OneNote.Outline: [appendImage](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendimage-member(1))
 
-  - [load](/javascript/api/onenote/onenote.image#onenote-onenote-image-load-member(1))
+  - OneNote.PageContent: [image](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-image-member)
 
-  - [set](/javascript/api/onenote/onenote.image#onenote-onenote-image-set-member(2))
+  - OneNote.Paragraph: [image](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-image-member), [image](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-image-member), [insertImageAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertimageassibling-member(1))
 
-  - [track](/javascript/api/onenote/onenote.image#onenote-onenote-image-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.image#onenote-onenote-image-untrack-member(1))
-
-
-  **OneNote.Outline** (1 member)
-
-  - [appendImage](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendimage-member(1))
-
-
-  **OneNote.PageContent** (1 member)
-
-  - [image](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-image-member)
-
-
-  **OneNote.Paragraph** (2 members)
-
-  - [image](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-image-member)
-
-  - [insertImageAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertimageassibling-member(1))
-
-
-  **OneNote.TableCell** (1 member)
-
-  - [appendImage](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendimage-member(1))
+  - OneNote.TableCell: [appendImage](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendimage-member(1))
 
 isPreview: false
 isDeprecated: false

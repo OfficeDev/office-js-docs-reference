@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartPoint: [format](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-format-member)
 
-  **Excel.ChartPoint** (1 member)
-
-  - [format](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-format-member)
-
-
-  **Excel.ChartPointFormat** (2 members)
-
-  - [load](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-load-member(1))
-
-  - [set](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-set-member(2))
+  - Excel.ChartPointFormat: [load](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-load-member(1)), [load](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-load-member(1)), [set](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

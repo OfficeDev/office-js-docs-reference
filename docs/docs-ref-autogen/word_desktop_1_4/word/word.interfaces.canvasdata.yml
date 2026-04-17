@@ -6,12 +6,11 @@ fullName: Word.Interfaces.CanvasData
 summary: >-
   An interface describing the data returned by calling `canvas.toJSON()`<!--
   -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Canvas** (1 member)
-  - [toJSON](/javascript/api/word/word.canvas#word-word-canvas-tojson-member(1))
+  - Word.Canvas: [toJSON](/javascript/api/word/word.canvas#word-word-canvas-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

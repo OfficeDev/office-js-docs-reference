@@ -16,72 +16,19 @@ remarks: >-
   #### Used by
 
 
+  - Word.Canvas: [shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)
 
-  **Word.Canvas** (1 member)
+  - Word.Document: [background](/javascript/api/word/word.document#word-word-document-background-member)
 
-  - [shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)
+  - Word.Paragraph: [insertCanvas](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1)), [insertCanvas](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1)), [insertGeometricShape](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1)), [insertPictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertpicturefrombase64-member(1)), [insertTextBox](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))
 
+  - Word.Range: [insertCanvas](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1)), [insertCanvas](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1)), [insertGeometricShape](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1)), [insertPictureFromBase64](/javascript/api/word/word.range#word-word-range-insertpicturefrombase64-member(1)), [insertTextBox](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))
 
-  **Word.Document** (1 member)
+  - Word.Shape: [load](/javascript/api/word/word.shape#word-word-shape-load-member(1)), [load](/javascript/api/word/word.shape#word-word-shape-load-member(1)), [parentCanvas](/javascript/api/word/word.shape#word-word-shape-parentcanvas-member), [parentGroup](/javascript/api/word/word.shape#word-word-shape-parentgroup-member), [set](/javascript/api/word/word.shape#word-word-shape-set-member(2)), [track](/javascript/api/word/word.shape#word-word-shape-track-member(1)), [untrack](/javascript/api/word/word.shape#word-word-shape-untrack-member(1))
 
-  - [background](/javascript/api/word/word.document#word-word-document-background-member)
+  - Word.ShapeCollection: [getById](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1)), [getById](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1)), [getByIdOrNullObject](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyidornullobject-member(1)), [getFirst](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirstornullobject-member(1)), [group](/javascript/api/word/word.shapecollection#word-word-shapecollection-group-member(1)), [items](/javascript/api/word/word.shapecollection#word-word-shapecollection-items-member)
 
-
-  **Word.Paragraph** (4 members)
-
-  - [insertCanvas](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1))
-
-  - [insertGeometricShape](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))
-
-  - [insertPictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertpicturefrombase64-member(1))
-
-  - [insertTextBox](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))
-
-
-  **Word.Range** (4 members)
-
-  - [insertCanvas](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1))
-
-  - [insertGeometricShape](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1))
-
-  - [insertPictureFromBase64](/javascript/api/word/word.range#word-word-range-insertpicturefrombase64-member(1))
-
-  - [insertTextBox](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))
-
-
-  **Word.Shape** (6 members)
-
-  - [load](/javascript/api/word/word.shape#word-word-shape-load-member(1))
-
-  - [parentCanvas](/javascript/api/word/word.shape#word-word-shape-parentcanvas-member)
-
-  - [parentGroup](/javascript/api/word/word.shape#word-word-shape-parentgroup-member)
-
-  - [set](/javascript/api/word/word.shape#word-word-shape-set-member(2))
-
-  - [track](/javascript/api/word/word.shape#word-word-shape-track-member(1))
-
-  - [untrack](/javascript/api/word/word.shape#word-word-shape-untrack-member(1))
-
-
-  **Word.ShapeCollection** (6 members)
-
-  - [getById](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1))
-
-  - [getByIdOrNullObject](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyidornullobject-member(1))
-
-  - [getFirst](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirst-member(1))
-
-  - [getFirstOrNullObject](/javascript/api/word/word.shapecollection#word-word-shapecollection-getfirstornullobject-member(1))
-
-  - [group](/javascript/api/word/word.shapecollection#word-word-shapecollection-group-member(1))
-
-  - [items](/javascript/api/word/word.shapecollection#word-word-shapecollection-items-member)
-
-
-  **Word.ShapeGroup** (1 member)
-
-  - [shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)
+  - Word.ShapeGroup: [shape](/javascript/api/word/word.shapegroup#word-word-shapegroup-shape-member)
 
   #### Examples
 

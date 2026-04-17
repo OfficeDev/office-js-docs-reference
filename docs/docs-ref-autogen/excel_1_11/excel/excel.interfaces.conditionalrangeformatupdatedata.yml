@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalRangeFormat** (1 member)
-
-  - [set](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-set-member(1))
+  - Excel.ConditionalRangeFormat: [set](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

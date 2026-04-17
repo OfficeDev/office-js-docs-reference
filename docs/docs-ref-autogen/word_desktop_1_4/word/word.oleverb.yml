@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.OleFormat** (1 member)
-
-  - [doVerb](/javascript/api/word/word.oleformat#word-word-oleformat-doverb-member(1))
+  - Word.OleFormat: [doVerb](/javascript/api/word/word.oleformat#word-word-oleformat-doverb-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -8,10 +8,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.Document** (1 member)
-
-  - [bindings](/javascript/api/office/office.document#office-office-document-bindings-member)
+  - Office.Document: [bindings](/javascript/api/office/office.document#office-office-document-bindings-member)
 
 isPreview: false
 isDeprecated: false
@@ -207,10 +204,8 @@ methods:
     summary: Creates a binding against a named object in the document.
     remarks: >-
       [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      -->, [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)<!--
+      -->, [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       For Excel, the itemName parameter can refer to a named range or a table.

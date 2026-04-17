@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Comment** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.comment#excel-excel-comment-tojson-member(1))
+  - Excel.Comment: [toJSON](/javascript/api/excel/excel.comment#excel-excel-comment-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

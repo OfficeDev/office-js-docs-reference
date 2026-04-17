@@ -33,20 +33,11 @@ remarks: >-
   #### Used by
 
 
+  - Office.SensitivityLabel: [setAsync](/javascript/api/outlook/office.sensitivitylabel#outlook-office-sensitivitylabel-setasync-member(1))
 
-  **Office.SensitivityLabel** (1 member)
+  - Office.SensitivityLabelDetails: [children](/javascript/api/outlook/office.sensitivitylabeldetails#outlook-office-sensitivitylabeldetails-children-member)
 
-  - [setAsync](/javascript/api/outlook/office.sensitivitylabel#outlook-office-sensitivitylabel-setasync-member(1))
-
-
-  **Office.SensitivityLabelDetails** (1 member)
-
-  - [children](/javascript/api/outlook/office.sensitivitylabeldetails#outlook-office-sensitivitylabeldetails-children-member)
-
-
-  **Office.SensitivityLabelsCatalog** (1 member)
-
-  - [getAsync](/javascript/api/outlook/office.sensitivitylabelscatalog#outlook-office-sensitivitylabelscatalog-getasync-member(1))
+  - Office.SensitivityLabelsCatalog: [getAsync](/javascript/api/outlook/office.sensitivitylabelscatalog#outlook-office-sensitivitylabelscatalog-getasync-member(1))
 
   #### Examples
 

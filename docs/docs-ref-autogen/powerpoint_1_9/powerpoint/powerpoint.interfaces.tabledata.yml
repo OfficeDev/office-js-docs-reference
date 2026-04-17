@@ -8,10 +8,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.Table** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-tojson-member(1))
+  - PowerPoint.Table: [toJSON](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -24,10 +24,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.FieldCollection** (1 member)
-
-  - [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
+  - Word.FieldCollection: [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

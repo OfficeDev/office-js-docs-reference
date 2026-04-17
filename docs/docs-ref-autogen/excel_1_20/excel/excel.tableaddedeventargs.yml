@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TableCollection** (1 member)
-
-  - [onAdded](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onadded-member)
+  - Excel.TableCollection: [onAdded](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onadded-member)
 
 isPreview: false
 isDeprecated: false

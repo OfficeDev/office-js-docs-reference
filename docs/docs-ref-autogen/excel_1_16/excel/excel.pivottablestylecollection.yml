@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.PivotTableStyleCollection: [load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
 
-  **Excel.PivotTableStyleCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [pivotTableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottablestyles-member)
+  - Excel.Workbook: [pivotTableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottablestyles-member)
 
 isPreview: false
 isDeprecated: false

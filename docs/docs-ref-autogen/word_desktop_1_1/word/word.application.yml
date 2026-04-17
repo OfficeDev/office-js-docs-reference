@@ -13,19 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Application: [load](/javascript/api/word/word.application#word-word-application-load-member(1)), [load](/javascript/api/word/word.application#word-word-application-load-member(1)), [newObject](/javascript/api/word/word.application.newobject:member), [set](/javascript/api/word/word.application#word-word-application-set-member(2))
 
-  **Word.Application** (3 members)
-
-  - [load](/javascript/api/word/word.application#word-word-application-load-member(1))
-
-  - [newObject](/javascript/api/word/word.application.newobject:member)
-
-  - [set](/javascript/api/word/word.application#word-word-application-set-member(2))
-
-
-  **Word.RequestContext** (1 member)
-
-  - [application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
+  - Word.RequestContext: [application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
 
   #### Examples
 

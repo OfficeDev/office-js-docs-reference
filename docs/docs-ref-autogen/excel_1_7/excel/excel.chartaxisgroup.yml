@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartAxes: [getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1))
 
-  **Excel.ChartAxes** (1 member)
-
-  - [getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1))
-
-
-  **Excel.ChartAxis** (1 member)
-
-  - [axisGroup](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-axisgroup-member)
+  - Excel.ChartAxis: [axisGroup](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-axisgroup-member)
 
 isPreview: false
 isDeprecated: false

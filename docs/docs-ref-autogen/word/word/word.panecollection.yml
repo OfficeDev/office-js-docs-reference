@@ -13,19 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.PaneCollection: [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1)), [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1)), [track](/javascript/api/word/word.panecollection#word-word-panecollection-track-member(1)), [untrack](/javascript/api/word/word.panecollection#word-word-panecollection-untrack-member(1))
 
-  **Word.PaneCollection** (3 members)
-
-  - [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.panecollection#word-word-panecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.panecollection#word-word-panecollection-untrack-member(1))
-
-
-  **Word.Window** (1 member)
-
-  - [panes](/javascript/api/word/word.window#word-word-window-panes-member)
+  - Word.Window: [panes](/javascript/api/word/word.window#word-word-window-panes-member)
 
   #### Examples
 

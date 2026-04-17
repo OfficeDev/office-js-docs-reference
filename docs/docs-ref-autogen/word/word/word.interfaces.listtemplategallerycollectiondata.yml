@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ListTemplateGalleryCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-tojson-member(1))
+  - Word.ListTemplateGalleryCollection: [toJSON](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

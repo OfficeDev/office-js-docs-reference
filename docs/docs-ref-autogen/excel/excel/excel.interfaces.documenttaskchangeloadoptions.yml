@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.DocumentTaskChange** (1 member)
-
-  - [load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1))
+  - Excel.DocumentTaskChange: [load](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-load-member(1))
 
 isPreview: true
 isDeprecated: false

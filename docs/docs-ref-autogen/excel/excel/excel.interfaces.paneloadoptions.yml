@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Pane** (1 member)
-
-  - [load](/javascript/api/excel/excel.pane#excel-excel-pane-load-member(1))
+  - Excel.Pane: [load](/javascript/api/excel/excel.pane#excel-excel-pane-load-member(1))
 
 isPreview: false
 isDeprecated: false

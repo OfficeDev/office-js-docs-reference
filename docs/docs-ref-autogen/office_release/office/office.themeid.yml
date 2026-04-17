@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.OfficeTheme** (1 member)
-
-  - [themeId](/javascript/api/office/office.officetheme#office-office-officetheme-themeid-member)
+  - Office.OfficeTheme: [themeId](/javascript/api/office/office.officetheme#office-office-officetheme-themeid-member)
 
   #### Examples
 

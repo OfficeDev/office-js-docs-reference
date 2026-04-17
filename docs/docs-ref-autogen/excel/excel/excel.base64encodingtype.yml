@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Base64EncodedImage** (1 member)
-
-  - [type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)
+  - Excel.Base64EncodedImage: [type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)
 
 isPreview: true
 isDeprecated: false

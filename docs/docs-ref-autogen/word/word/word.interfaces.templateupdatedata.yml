@@ -6,12 +6,11 @@ fullName: Word.Interfaces.TemplateUpdateData
 summary: >-
   An interface for updating data on the `Template` object, for use in
   `template.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Template** (1 member)
-  - [set](/javascript/api/word/word.template#word-word-template-set-member(1))
+  - Word.Template: [set](/javascript/api/word/word.template#word-word-template-set-member(1))
 
 isPreview: false
 isDeprecated: false

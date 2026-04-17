@@ -14,21 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Source: [load](/javascript/api/word/word.source#word-word-source-load-member(1)), [load](/javascript/api/word/word.source#word-word-source-load-member(1)), [track](/javascript/api/word/word.source#word-word-source-track-member(1)), [untrack](/javascript/api/word/word.source#word-word-source-untrack-member(1))
 
-  **Word.Source** (3 members)
-
-  - [load](/javascript/api/word/word.source#word-word-source-load-member(1))
-
-  - [track](/javascript/api/word/word.source#word-word-source-track-member(1))
-
-  - [untrack](/javascript/api/word/word.source#word-word-source-untrack-member(1))
-
-
-  **Word.SourceCollection** (2 members)
-
-  - [add](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-add-member(1))
-
-  - [items](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-items-member)
+  - Word.SourceCollection: [add](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-add-member(1)), [add](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-add-member(1)), [items](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-items-member)
 
 isPreview: false
 isDeprecated: false

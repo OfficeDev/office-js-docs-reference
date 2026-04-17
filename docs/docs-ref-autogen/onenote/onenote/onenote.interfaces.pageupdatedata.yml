@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.Page** (1 member)
-
-  - [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(1))
+  - OneNote.Page: [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(1))
 
 isPreview: false
 isDeprecated: false

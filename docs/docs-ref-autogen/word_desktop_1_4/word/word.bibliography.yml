@@ -15,26 +15,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Application: [bibliography](/javascript/api/word/word.application#word-word-application-bibliography-member)
 
-  **Word.Application** (1 member)
+  - Word.Bibliography: [load](/javascript/api/word/word.bibliography#word-word-bibliography-load-member(1)), [load](/javascript/api/word/word.bibliography#word-word-bibliography-load-member(1)), [set](/javascript/api/word/word.bibliography#word-word-bibliography-set-member(2)), [track](/javascript/api/word/word.bibliography#word-word-bibliography-track-member(1)), [untrack](/javascript/api/word/word.bibliography#word-word-bibliography-untrack-member(1))
 
-  - [bibliography](/javascript/api/word/word.application#word-word-application-bibliography-member)
-
-
-  **Word.Bibliography** (4 members)
-
-  - [load](/javascript/api/word/word.bibliography#word-word-bibliography-load-member(1))
-
-  - [set](/javascript/api/word/word.bibliography#word-word-bibliography-set-member(2))
-
-  - [track](/javascript/api/word/word.bibliography#word-word-bibliography-track-member(1))
-
-  - [untrack](/javascript/api/word/word.bibliography#word-word-bibliography-untrack-member(1))
-
-
-  **Word.Document** (1 member)
-
-  - [bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)
+  - Word.Document: [bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)
 
 isPreview: false
 isDeprecated: false

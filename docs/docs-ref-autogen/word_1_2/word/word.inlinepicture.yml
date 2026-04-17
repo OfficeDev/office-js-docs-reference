@@ -13,43 +13,17 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [insertInlinePictureFromBase64](/javascript/api/word/word.body#word-word-body-insertinlinepicturefrombase64-member(1))
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [insertInlinePictureFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertinlinepicturefrombase64-member(1))
 
-  - [insertInlinePictureFromBase64](/javascript/api/word/word.body#word-word-body-insertinlinepicturefrombase64-member(1))
+  - Word.InlinePicture: [insertInlinePictureFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertinlinepicturefrombase64-member(1)), [insertInlinePictureFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertinlinepicturefrombase64-member(1)), [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1)), [set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(2)), [track](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-track-member(1)), [untrack](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-untrack-member(1))
 
+  - Word.InlinePictureCollection: [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
 
-  **Word.ContentControl** (1 member)
+  - Word.Paragraph: [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
 
-  - [insertInlinePictureFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertinlinepicturefrombase64-member(1))
-
-
-  **Word.InlinePicture** (5 members)
-
-  - [insertInlinePictureFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertinlinepicturefrombase64-member(1))
-
-  - [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1))
-
-  - [set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(2))
-
-  - [track](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-track-member(1))
-
-  - [untrack](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-untrack-member(1))
-
-
-  **Word.InlinePictureCollection** (1 member)
-
-  - [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
-
-
-  **Word.Paragraph** (1 member)
-
-  - [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
-
-
-  **Word.Range** (1 member)
-
-  - [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))
+  - Word.Range: [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))
 
   #### Examples
 

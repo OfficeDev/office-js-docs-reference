@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.DropCap** (1 member)
-
-  - [load](/javascript/api/word/word.dropcap#word-word-dropcap-load-member(1))
+  - Word.DropCap: [load](/javascript/api/word/word.dropcap#word-word-dropcap-load-member(1))
 
 isPreview: false
 isDeprecated: false

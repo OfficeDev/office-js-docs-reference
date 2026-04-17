@@ -8,10 +8,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.Point** (1 member)
-
-  - [toJSON](/javascript/api/onenote/onenote.point#onenote-onenote-point-tojson-member(1))
+  - OneNote.Point: [toJSON](/javascript/api/onenote/onenote.point#onenote-onenote-point-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

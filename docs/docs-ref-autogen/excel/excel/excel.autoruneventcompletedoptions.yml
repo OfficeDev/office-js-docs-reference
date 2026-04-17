@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Workbook** (1 member)
-
-  - [autorunEventCompleted](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))
+  - Excel.Workbook: [autorunEventCompleted](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))
 
 isPreview: true
 isDeprecated: false

@@ -6,12 +6,11 @@ fullName: Word.Interfaces.WindowUpdateData
 summary: >-
   An interface for updating data on the `Window` object, for use in
   `window.set({ ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Window** (1 member)
-  - [set](/javascript/api/word/word.window#word-word-window-set-member(1))
+  - Word.Window: [set](/javascript/api/word/word.window#word-word-window-set-member(1))
 
 isPreview: false
 isDeprecated: false

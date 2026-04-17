@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Workbook** (1 member)
-
-  - [insertWorksheetsFromBase64](/javascript/api/excel/excel.workbook#excel-excel-workbook-insertworksheetsfrombase64-member(1))
+  - Excel.Workbook: [insertWorksheetsFromBase64](/javascript/api/excel/excel.workbook#excel-excel-workbook-insertworksheetsfrombase64-member(1))
 
 isPreview: false
 isDeprecated: false

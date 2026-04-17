@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.PageSetup** (1 member)
-
-  - [sectionStart](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectionstart-member)
+  - Word.PageSetup: [sectionStart](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectionstart-member)
 
 isPreview: false
 isDeprecated: false

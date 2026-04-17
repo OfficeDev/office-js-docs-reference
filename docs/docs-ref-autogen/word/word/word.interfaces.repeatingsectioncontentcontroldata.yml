@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.RepeatingSectionContentControl** (1 member)
-
-  - [toJSON](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-tojson-member(1))
+  - Word.RepeatingSectionContentControl: [toJSON](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

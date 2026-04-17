@@ -15,31 +15,13 @@ remarks: >-
   #### Used by
 
 
+  - Word.Table: [addRows](/javascript/api/word/word.table#word-word-table-addrows-member(1)), [addRows](/javascript/api/word/word.table#word-word-table-addrows-member(1)), [rows](/javascript/api/word/word.table#word-word-table-rows-member)
 
-  **Word.Table** (2 members)
+  - Word.TableCell: [insertRows](/javascript/api/word/word.tablecell#word-word-tablecell-insertrows-member(1))
 
-  - [addRows](/javascript/api/word/word.table#word-word-table-addrows-member(1))
+  - Word.TableRow: [insertRows](/javascript/api/word/word.tablerow#word-word-tablerow-insertrows-member(1))
 
-  - [rows](/javascript/api/word/word.table#word-word-table-rows-member)
-
-
-  **Word.TableCell** (1 member)
-
-  - [insertRows](/javascript/api/word/word.tablecell#word-word-tablecell-insertrows-member(1))
-
-
-  **Word.TableRow** (1 member)
-
-  - [insertRows](/javascript/api/word/word.tablerow#word-word-tablerow-insertrows-member(1))
-
-
-  **Word.TableRowCollection** (3 members)
-
-  - [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-untrack-member(1))
+  - Word.TableRowCollection: [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1)), [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1)), [track](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-track-member(1)), [untrack](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-untrack-member(1))
 
   #### Examples
 

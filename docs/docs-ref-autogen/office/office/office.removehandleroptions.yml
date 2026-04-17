@@ -8,25 +8,13 @@ remarks: >-
   #### Used by
 
 
+  - Office.Binding: [removeHandlerAsync](/javascript/api/office/office.binding#office-office-binding-removehandlerasync-member(1))
 
-  **Office.Binding** (1 member)
+  - Office.CustomXmlPart: [removeHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-removehandlerasync-member(1))
 
-  - [removeHandlerAsync](/javascript/api/office/office.binding#office-office-binding-removehandlerasync-member(1))
+  - Office.Document: [removeHandlerAsync](/javascript/api/office/office.document#office-office-document-removehandlerasync-member(1))
 
-
-  **Office.CustomXmlPart** (1 member)
-
-  - [removeHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-removehandlerasync-member(1))
-
-
-  **Office.Document** (1 member)
-
-  - [removeHandlerAsync](/javascript/api/office/office.document#office-office-document-removehandlerasync-member(1))
-
-
-  **Office.Settings** (1 member)
-
-  - [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
+  - Office.Settings: [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
 
 isPreview: false
 isDeprecated: false

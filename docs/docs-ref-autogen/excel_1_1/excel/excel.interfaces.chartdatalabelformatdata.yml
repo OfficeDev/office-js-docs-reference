@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartDataLabelFormat** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-tojson-member(1))
+  - Excel.ChartDataLabelFormat: [toJSON](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

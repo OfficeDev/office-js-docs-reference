@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.ShapeCollection** (1 member)
-
-  - [addPicture](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addpicture-member(1))
+  - PowerPoint.ShapeCollection: [addPicture](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addpicture-member(1))
 
 isPreview: true
 isDeprecated: false

@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [followHyperlink](/javascript/api/word/word.document#word-word-document-followhyperlink-member(1))
+  - Word.Document: [followHyperlink](/javascript/api/word/word.document#word-word-document-followhyperlink-member(1))
 
 isPreview: true
 isDeprecated: false

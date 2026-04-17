@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [compare](/javascript/api/word/word.document#word-word-document-compare-member(1))
+  - Word.Document: [compare](/javascript/api/word/word.document#word-word-document-compare-member(1))
 
   #### Examples
 

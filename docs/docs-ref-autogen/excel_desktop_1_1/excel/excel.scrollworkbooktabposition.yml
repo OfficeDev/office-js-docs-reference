@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Window** (1 member)
-
-  - [scrollWorkbookTabs](/javascript/api/excel/excel.window#excel-excel-window-scrollworkbooktabs-member(1))
+  - Excel.Window: [scrollWorkbookTabs](/javascript/api/excel/excel.window#excel-excel-window-scrollworkbooktabs-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChartPlotArea: [format](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-format-member)
 
-  **Excel.ChartPlotArea** (1 member)
-
-  - [format](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-format-member)
-
-
-  **Excel.ChartPlotAreaFormat** (2 members)
-
-  - [load](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-load-member(1))
-
-  - [set](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-set-member(2))
+  - Excel.ChartPlotAreaFormat: [load](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-load-member(1)), [load](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-load-member(1)), [set](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-set-member(2))
 
 isPreview: false
 isDeprecated: false

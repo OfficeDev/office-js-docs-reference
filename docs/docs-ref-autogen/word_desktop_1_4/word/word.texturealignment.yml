@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.FillFormat** (1 member)
-
-  - [textureAlignment](/javascript/api/word/word.fillformat#word-word-fillformat-texturealignment-member)
+  - Word.FillFormat: [textureAlignment](/javascript/api/word/word.fillformat#word-word-fillformat-texturealignment-member)
 
 isPreview: false
 isDeprecated: false

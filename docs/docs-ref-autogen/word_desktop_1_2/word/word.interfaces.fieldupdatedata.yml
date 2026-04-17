@@ -6,12 +6,11 @@ fullName: Word.Interfaces.FieldUpdateData
 summary: >-
   An interface for updating data on the `Field` object, for use in `field.set({
   ... })`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Field** (1 member)
-  - [set](/javascript/api/word/word.field#word-word-field-set-member(1))
+  - Word.Field: [set](/javascript/api/word/word.field#word-word-field-set-member(1))
 
 isPreview: false
 isDeprecated: false

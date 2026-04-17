@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideLayout** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-type-member)
+  - PowerPoint.SlideLayout: [type](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-type-member)
 
 isPreview: false
 isDeprecated: false

@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.RangeFormat** (1 member)
-
-  - [verticalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-verticalalignment-member)
+  - Excel.RangeFormat: [verticalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-verticalalignment-member)
 
   #### Examples
 

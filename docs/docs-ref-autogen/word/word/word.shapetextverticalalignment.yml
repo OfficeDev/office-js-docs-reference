@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TextFrame** (1 member)
-
-  - [verticalAlignment](/javascript/api/word/word.textframe#word-word-textframe-verticalalignment-member)
+  - Word.TextFrame: [verticalAlignment](/javascript/api/word/word.textframe#word-word-textframe-verticalalignment-member)
 
   #### Examples
 

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.ShapeView** (1 member)
-
-  - [addOverlay](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-addoverlay-member(1))
+  - Visio.ShapeView: [addOverlay](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-addoverlay-member(1))
 
 isPreview: false
 isDeprecated: false

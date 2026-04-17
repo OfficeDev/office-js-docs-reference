@@ -23,10 +23,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.ReplyFormData** (1 member)
-
-  - [attachments](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-attachments-member)
+  - Office.ReplyFormData: [attachments](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-attachments-member)
 
   #### Examples
 

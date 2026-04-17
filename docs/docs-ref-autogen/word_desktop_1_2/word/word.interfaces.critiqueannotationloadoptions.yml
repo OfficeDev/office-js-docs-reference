@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CritiqueAnnotation** (1 member)
-
-  - [load](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-load-member(1))
+  - Word.CritiqueAnnotation: [load](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-load-member(1))
 
 isPreview: false
 isDeprecated: false

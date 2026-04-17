@@ -13,37 +13,13 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
 
-  **Word.Document** (1 member)
+  - Word.DocumentCreated: [addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
 
-  - [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
+  - Word.Style: [load](/javascript/api/word/word.style#word-word-style-load-member(1)), [load](/javascript/api/word/word.style#word-word-style-load-member(1)), [set](/javascript/api/word/word.style#word-word-style-set-member(2)), [track](/javascript/api/word/word.style#word-word-style-track-member(1)), [untrack](/javascript/api/word/word.style#word-word-style-untrack-member(1))
 
-
-  **Word.DocumentCreated** (1 member)
-
-  - [addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
-
-
-  **Word.Style** (4 members)
-
-  - [load](/javascript/api/word/word.style#word-word-style-load-member(1))
-
-  - [set](/javascript/api/word/word.style#word-word-style-set-member(2))
-
-  - [track](/javascript/api/word/word.style#word-word-style-track-member(1))
-
-  - [untrack](/javascript/api/word/word.style#word-word-style-untrack-member(1))
-
-
-  **Word.StyleCollection** (4 members)
-
-  - [getByName](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1))
-
-  - [getByNameOrNullObject](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1))
-
-  - [getItem](/javascript/api/word/word.stylecollection#word-word-stylecollection-getitem-member(1))
-
-  - [items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)
+  - Word.StyleCollection: [getByName](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1)), [getByName](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1)), [getByNameOrNullObject](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1)), [getItem](/javascript/api/word/word.stylecollection#word-word-stylecollection-getitem-member(1)), [items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)
 
   #### Examples
 

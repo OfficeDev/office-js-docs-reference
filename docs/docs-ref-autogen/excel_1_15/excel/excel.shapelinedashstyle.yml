@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ShapeLineFormat** (1 member)
-
-  - [dashStyle](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-dashstyle-member)
+  - Excel.ShapeLineFormat: [dashStyle](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-dashstyle-member)
 
 isPreview: false
 isDeprecated: false

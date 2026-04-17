@@ -18,55 +18,17 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [insertContentControl](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1)), [insertContentControl](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.body#word-word-body-parentcontentcontrol-member)
 
-  **Word.Body** (2 members)
+  - Word.ContentControl: [load](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-load-member(1)), [load](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-load-member(1)), [parentContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrol-member), [set](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-set-member(2)), [track](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-track-member(1)), [untrack](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-untrack-member(1))
 
-  - [insertContentControl](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))
+  - Word.ContentControlCollection: [getById](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyid-member(1)), [getById](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyid-member(1)), [getItem](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getitem-member(1)), [items](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-items-member)
 
-  - [parentContentControl](/javascript/api/word/word.body#word-word-body-parentcontentcontrol-member)
+  - Word.InlinePicture: [insertContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1)), [insertContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrol-member)
 
+  - Word.Paragraph: [insertContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1)), [insertContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrol-member)
 
-  **Word.ContentControl** (5 members)
-
-  - [load](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-load-member(1))
-
-  - [parentContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrol-member)
-
-  - [set](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-set-member(2))
-
-  - [track](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-track-member(1))
-
-  - [untrack](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-untrack-member(1))
-
-
-  **Word.ContentControlCollection** (3 members)
-
-  - [getById](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyid-member(1))
-
-  - [getItem](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getitem-member(1))
-
-  - [items](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-items-member)
-
-
-  **Word.InlinePicture** (2 members)
-
-  - [insertContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1))
-
-  - [parentContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrol-member)
-
-
-  **Word.Paragraph** (2 members)
-
-  - [insertContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))
-
-  - [parentContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrol-member)
-
-
-  **Word.Range** (2 members)
-
-  - [insertContentControl](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))
-
-  - [parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)
+  - Word.Range: [insertContentControl](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1)), [insertContentControl](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)
 
   #### Examples
 

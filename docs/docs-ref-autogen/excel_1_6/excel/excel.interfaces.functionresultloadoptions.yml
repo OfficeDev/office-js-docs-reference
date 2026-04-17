@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.FunctionResult** (1 member)
-
-  - [load](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-load-member(1))
+  - Excel.FunctionResult: [load](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,27 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Setting: [load](/javascript/api/word/word.setting#word-word-setting-load-member(1)), [load](/javascript/api/word/word.setting#word-word-setting-load-member(1)), [set](/javascript/api/word/word.setting#word-word-setting-set-member(2)), [track](/javascript/api/word/word.setting#word-word-setting-track-member(1)), [untrack](/javascript/api/word/word.setting#word-word-setting-untrack-member(1))
 
-  **Word.Setting** (4 members)
-
-  - [load](/javascript/api/word/word.setting#word-word-setting-load-member(1))
-
-  - [set](/javascript/api/word/word.setting#word-word-setting-set-member(2))
-
-  - [track](/javascript/api/word/word.setting#word-word-setting-track-member(1))
-
-  - [untrack](/javascript/api/word/word.setting#word-word-setting-untrack-member(1))
-
-
-  **Word.SettingCollection** (4 members)
-
-  - [add](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1))
-
-  - [getItem](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/word/word.settingcollection#word-word-settingcollection-items-member)
+  - Word.SettingCollection: [add](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1)), [add](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1)), [getItem](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitemornullobject-member(1)), [items](/javascript/api/word/word.settingcollection#word-word-settingcollection-items-member)
 
   #### Examples
 

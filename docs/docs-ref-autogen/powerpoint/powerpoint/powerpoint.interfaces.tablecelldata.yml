@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.TableCell** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-tojson-member(1))
+  - PowerPoint.TableCell: [toJSON](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

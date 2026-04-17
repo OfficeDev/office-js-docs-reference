@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Range** (1 member)
-
-  - [kana](/javascript/api/word/word.range#word-word-range-kana-member)
+  - Word.Range: [kana](/javascript/api/word/word.range#word-word-range-kana-member)
 
 isPreview: false
 isDeprecated: false

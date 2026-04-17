@@ -12,30 +12,15 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlockGalleryContentControl: [setPlaceholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-setplaceholdertext-member(1))
 
-  **Word.BuildingBlockGalleryContentControl** (1 member)
+  - Word.DatePickerContentControl: [setPlaceholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-setplaceholdertext-member(1))
 
-  - [setPlaceholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-setplaceholdertext-member(1))
+  - Word.GroupContentControl: [setPlaceholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-setplaceholdertext-member(1))
 
+  - Word.PictureContentControl: [setPlaceholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-setplaceholdertext-member(1))
 
-  **Word.DatePickerContentControl** (1 member)
-
-  - [setPlaceholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-setplaceholdertext-member(1))
-
-
-  **Word.GroupContentControl** (1 member)
-
-  - [setPlaceholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-setplaceholdertext-member(1))
-
-
-  **Word.PictureContentControl** (1 member)
-
-  - [setPlaceholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-setplaceholdertext-member(1))
-
-
-  **Word.RepeatingSectionContentControl** (1 member)
-
-  - [setPlaceholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-setplaceholdertext-member(1))
+  - Word.RepeatingSectionContentControl: [setPlaceholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-setplaceholdertext-member(1))
 
 isPreview: false
 isDeprecated: false

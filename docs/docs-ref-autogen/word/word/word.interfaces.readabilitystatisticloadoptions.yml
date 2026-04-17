@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ReadabilityStatistic** (1 member)
-
-  - [load](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-load-member(1))
+  - Word.ReadabilityStatistic: [load](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-load-member(1))
 
 isPreview: false
 isDeprecated: false

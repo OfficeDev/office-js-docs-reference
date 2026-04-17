@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PageLayout** (1 member)
-
-  - [printOrder](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printorder-member)
+  - Excel.PageLayout: [printOrder](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printorder-member)
 
 isPreview: false
 isDeprecated: false

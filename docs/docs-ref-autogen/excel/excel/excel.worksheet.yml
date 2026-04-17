@@ -18,98 +18,31 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Chart: [worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)
 
-  **Excel.Chart** (1 member)
+  - Excel.InsertWorksheetOptions: [relativeTo](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-relativeto-member)
 
-  - [worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)
+  - Excel.NamedItem: [worksheet](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheet-member), [worksheet](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheet-member), [worksheetOrNullObject](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheetornullobject-member)
 
+  - Excel.PivotTable: [worksheet](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-worksheet-member)
 
-  **Excel.InsertWorksheetOptions** (1 member)
+  - Excel.Range: [worksheet](/javascript/api/excel/excel.range#excel-excel-range-worksheet-member)
 
-  - [relativeTo](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-relativeto-member)
+  - Excel.RangeAreas: [worksheet](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-worksheet-member)
 
+  - Excel.Shape: [copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
 
-  **Excel.NamedItem** (2 members)
+  - Excel.Slicer: [worksheet](/javascript/api/excel/excel.slicer#excel-excel-slicer-worksheet-member)
 
-  - [worksheet](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheet-member)
+  - Excel.SlicerCollection: [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
-  - [worksheetOrNullObject](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheetornullobject-member)
+  - Excel.Table: [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
 
+  - Excel.Window: [activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)
 
-  **Excel.PivotTable** (1 member)
+  - Excel.Worksheet: [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1)), [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1)), [getNext](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnext-member(1)), [getNextOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnextornullobject-member(1)), [getPrevious](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getprevious-member(1)), [getPreviousOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getpreviousornullobject-member(1)), [load](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-load-member(1)), [set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(2))
 
-  - [worksheet](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-worksheet-member)
-
-
-  **Excel.Range** (1 member)
-
-  - [worksheet](/javascript/api/excel/excel.range#excel-excel-range-worksheet-member)
-
-
-  **Excel.RangeAreas** (1 member)
-
-  - [worksheet](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-worksheet-member)
-
-
-  **Excel.Shape** (1 member)
-
-  - [copyTo](/javascript/api/excel/excel.shape#excel-excel-shape-copyto-member(1))
-
-
-  **Excel.Slicer** (1 member)
-
-  - [worksheet](/javascript/api/excel/excel.slicer#excel-excel-slicer-worksheet-member)
-
-
-  **Excel.SlicerCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
-
-
-  **Excel.Table** (1 member)
-
-  - [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
-
-
-  **Excel.Window** (1 member)
-
-  - [activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)
-
-
-  **Excel.Worksheet** (7 members)
-
-  - [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
-
-  - [getNext](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnext-member(1))
-
-  - [getNextOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getnextornullobject-member(1))
-
-  - [getPrevious](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getprevious-member(1))
-
-  - [getPreviousOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getpreviousornullobject-member(1))
-
-  - [load](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-load-member(1))
-
-  - [set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(2))
-
-
-  **Excel.WorksheetCollection** (8 members)
-
-  - [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1))
-
-  - [addFromBase64](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))
-
-  - [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1))
-
-  - [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1))
-
-  - [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1))
-
-  - [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1))
-
-  - [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1))
-
-  - [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
+  - Excel.WorksheetCollection: [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)), [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)), [addFromBase64](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1)), [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
 
   #### Examples
 

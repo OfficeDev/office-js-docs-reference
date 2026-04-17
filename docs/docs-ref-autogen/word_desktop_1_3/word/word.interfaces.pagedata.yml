@@ -4,12 +4,11 @@ uid: word!Word.Interfaces.PageData:interface
 package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: |-
+remarks: >-
   #### Used by
 
 
-  **Word.Page** (1 member)
-  - [toJSON](/javascript/api/word/word.page#word-word-page-tojson-member(1))
+  - Word.Page: [toJSON](/javascript/api/word/word.page#word-word-page-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

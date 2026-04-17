@@ -12,12 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotField** (2 members)
-
-  - [clearFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-clearfilter-member(1))
-
-  - [isFiltered](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-isfiltered-member(1))
+  - Excel.PivotField: [clearFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-clearfilter-member(1)), [clearFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-clearfilter-member(1)), [isFiltered](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-isfiltered-member(1))
 
 isPreview: false
 isDeprecated: false

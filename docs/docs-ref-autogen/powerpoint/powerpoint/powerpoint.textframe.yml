@@ -13,22 +13,11 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Shape: [getTextFrameOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1)), [getTextFrameOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1)), [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
 
-  **PowerPoint.Shape** (2 members)
+  - PowerPoint.TextFrame: [load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
 
-  - [getTextFrameOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1))
-
-  - [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
-
-
-  **PowerPoint.TextFrame** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
-
-
-  **PowerPoint.TextRange** (1 member)
-
-  - [getParentTextFrame](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getparenttextframe-member(1))
+  - PowerPoint.TextRange: [getParentTextFrame](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getparenttextframe-member(1))
 
   #### Examples
 

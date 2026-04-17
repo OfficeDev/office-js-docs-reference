@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlValidationError** (1 member)
-
-  - [type](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-type-member)
+  - Word.CustomXmlValidationError: [type](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-type-member)
 
 isPreview: true
 isDeprecated: false

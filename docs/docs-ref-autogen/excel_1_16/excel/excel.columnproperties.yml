@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Range** (1 member)
-
-  - [getColumnProperties](/javascript/api/excel/excel.range#excel-excel-range-getcolumnproperties-member(1))
+  - Excel.Range: [getColumnProperties](/javascript/api/excel/excel.range#excel-excel-range-getcolumnproperties-member(1))
 
 isPreview: false
 isDeprecated: false

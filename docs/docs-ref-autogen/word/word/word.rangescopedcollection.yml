@@ -14,32 +14,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [characters](/javascript/api/word/word.document#word-word-document-characters-member), [characters](/javascript/api/word/word.document#word-word-document-characters-member), [sentences](/javascript/api/word/word.document#word-word-document-sentences-member), [words](/javascript/api/word/word.document#word-word-document-words-member)
 
-  **Word.Document** (3 members)
+  - Word.RangeScopedCollection: [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1)), [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1)), [track](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-track-member(1)), [untrack](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-untrack-member(1))
 
-  - [characters](/javascript/api/word/word.document#word-word-document-characters-member)
-
-  - [sentences](/javascript/api/word/word.document#word-word-document-sentences-member)
-
-  - [words](/javascript/api/word/word.document#word-word-document-words-member)
-
-
-  **Word.RangeScopedCollection** (3 members)
-
-  - [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-untrack-member(1))
-
-
-  **Word.Selection** (3 members)
-
-  - [characters](/javascript/api/word/word.selection#word-word-selection-characters-member)
-
-  - [sentences](/javascript/api/word/word.selection#word-word-selection-sentences-member)
-
-  - [words](/javascript/api/word/word.selection#word-word-selection-words-member)
+  - Word.Selection: [characters](/javascript/api/word/word.selection#word-word-selection-characters-member), [characters](/javascript/api/word/word.selection#word-word-selection-characters-member), [sentences](/javascript/api/word/word.selection#word-word-selection-sentences-member), [words](/javascript/api/word/word.selection#word-word-selection-words-member)
 
 isPreview: false
 isDeprecated: false

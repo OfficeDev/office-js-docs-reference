@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ContentControl** (1 member)
-
-  - [load](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-load-member(1))
+  - Word.ContentControl: [load](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,12 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Line** (2 members)
-
-  - [beginArrowheadLength](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadlength-member)
-
-  - [endArrowheadLength](/javascript/api/excel/excel.line#excel-excel-line-endarrowheadlength-member)
+  - Excel.Line: [beginArrowheadLength](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadlength-member), [beginArrowheadLength](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadlength-member), [endArrowheadLength](/javascript/api/excel/excel.line#excel-excel-line-endarrowheadlength-member)
 
   #### Examples
 

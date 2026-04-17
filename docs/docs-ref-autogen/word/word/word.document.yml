@@ -16,26 +16,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [load](/javascript/api/word/word.document#word-word-document-load-member(1)), [load](/javascript/api/word/word.document#word-word-document-load-member(1)), [set](/javascript/api/word/word.document#word-word-document-set-member(2)), [track](/javascript/api/word/word.document#word-word-document-track-member(1)), [untrack](/javascript/api/word/word.document#word-word-document-untrack-member(1))
 
-  **Word.Document** (4 members)
+  - Word.RequestContext: [document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
 
-  - [load](/javascript/api/word/word.document#word-word-document-load-member(1))
-
-  - [set](/javascript/api/word/word.document#word-word-document-set-member(2))
-
-  - [track](/javascript/api/word/word.document#word-word-document-track-member(1))
-
-  - [untrack](/javascript/api/word/word.document#word-word-document-untrack-member(1))
-
-
-  **Word.RequestContext** (1 member)
-
-  - [document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
-
-
-  **Word.XmlNode** (1 member)
-
-  - [ownerDocument](/javascript/api/word/word.xmlnode#word-word-xmlnode-ownerdocument-member)
+  - Word.XmlNode: [ownerDocument](/javascript/api/word/word.xmlnode#word-word-xmlnode-ownerdocument-member)
 
   #### Examples
 

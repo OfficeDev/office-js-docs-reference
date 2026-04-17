@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.Paragraph** (1 member)
-
-  - [toJSON](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-tojson-member(1))
+  - OneNote.Paragraph: [toJSON](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

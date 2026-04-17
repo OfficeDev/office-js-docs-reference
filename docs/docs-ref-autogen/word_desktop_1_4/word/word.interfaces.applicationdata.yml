@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Application** (1 member)
-
-  - [toJSON](/javascript/api/word/word.application#word-word-application-tojson-member(1))
+  - Word.Application: [toJSON](/javascript/api/word/word.application#word-word-application-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

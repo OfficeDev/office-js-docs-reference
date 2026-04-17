@@ -15,20 +15,11 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.ShapeFont: [load](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-load-member(1))
 
-  **PowerPoint.ShapeFont** (1 member)
+  - PowerPoint.TableCell: [font](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-font-member)
 
-  - [load](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-load-member(1))
-
-
-  **PowerPoint.TableCell** (1 member)
-
-  - [font](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-font-member)
-
-
-  **PowerPoint.TextRange** (1 member)
-
-  - [font](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-font-member)
+  - PowerPoint.TextRange: [font](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-font-member)
 
   #### Examples
 

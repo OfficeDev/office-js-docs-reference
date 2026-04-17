@@ -14,19 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [indexes](/javascript/api/word/word.document#word-word-document-indexes-member)
 
-  **Word.Document** (1 member)
-
-  - [indexes](/javascript/api/word/word.document#word-word-document-indexes-member)
-
-
-  **Word.IndexCollection** (3 members)
-
-  - [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
-
-  - [track](/javascript/api/word/word.indexcollection#word-word-indexcollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.indexcollection#word-word-indexcollection-untrack-member(1))
+  - Word.IndexCollection: [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1)), [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1)), [track](/javascript/api/word/word.indexcollection#word-word-indexcollection-track-member(1)), [untrack](/javascript/api/word/word.indexcollection#word-word-indexcollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

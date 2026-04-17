@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.SlideRange** (1 member)
-
-  - [slides](/javascript/api/office/office.sliderange#office-office-sliderange-slides-member)
+  - Office.SlideRange: [slides](/javascript/api/office/office.sliderange#office-office-sliderange-slides-member)
 
 isPreview: false
 isDeprecated: false

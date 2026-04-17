@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartBoxwhiskerOptions** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-tojson-member(1))
+  - Excel.ChartBoxwhiskerOptions: [toJSON](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

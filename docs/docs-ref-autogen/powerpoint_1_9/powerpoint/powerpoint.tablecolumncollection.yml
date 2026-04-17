@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Table: [columns](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-columns-member)
 
-  **PowerPoint.Table** (1 member)
-
-  - [columns](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-columns-member)
-
-
-  **PowerPoint.TableColumnCollection** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-load-member(1))
+  - PowerPoint.TableColumnCollection: [load](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.RangeCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.rangecollection#word-word-rangecollection-tojson-member(1))
+  - Word.RangeCollection: [toJSON](/javascript/api/word/word.rangecollection#word-word-rangecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

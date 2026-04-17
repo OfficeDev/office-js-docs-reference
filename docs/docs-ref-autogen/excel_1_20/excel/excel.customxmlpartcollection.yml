@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CustomXmlPartCollection: [load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
 
-  **Excel.CustomXmlPartCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [customXmlParts](/javascript/api/excel/excel.workbook#excel-excel-workbook-customxmlparts-member)
+  - Excel.Workbook: [customXmlParts](/javascript/api/excel/excel.workbook#excel-excel-workbook-customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

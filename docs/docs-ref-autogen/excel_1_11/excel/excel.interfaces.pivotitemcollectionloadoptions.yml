@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.PivotItemCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
+  - Excel.PivotItemCollection: [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

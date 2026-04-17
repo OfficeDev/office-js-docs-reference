@@ -16,22 +16,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.DataValidation: [load](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-load-member(1)), [load](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-load-member(1)), [set](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-set-member(2))
 
-  **Excel.DataValidation** (2 members)
+  - Excel.Range: [dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
 
-  - [load](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-load-member(1))
-
-  - [set](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-set-member(2))
-
-
-  **Excel.Range** (1 member)
-
-  - [dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
-
-
-  **Excel.RangeAreas** (1 member)
-
-  - [dataValidation](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-datavalidation-member)
+  - Excel.RangeAreas: [dataValidation](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-datavalidation-member)
 
 isPreview: false
 isDeprecated: false

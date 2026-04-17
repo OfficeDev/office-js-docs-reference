@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.FunctionResult** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-tojson-member(1))
+  - Excel.FunctionResult: [toJSON](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

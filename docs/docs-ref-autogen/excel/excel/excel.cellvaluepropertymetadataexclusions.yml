@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.CellValuePropertyMetadata** (1 member)
-
-  - [excludeFrom](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-excludefrom-member)
+  - Excel.CellValuePropertyMetadata: [excludeFrom](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-excludefrom-member)
 
 isPreview: false
 isDeprecated: false

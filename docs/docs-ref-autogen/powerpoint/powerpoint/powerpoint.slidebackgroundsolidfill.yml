@@ -16,15 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.SlideBackgroundFill: [getSolidFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getsolidfillornullobject-member(1))
 
-  **PowerPoint.SlideBackgroundFill** (1 member)
-
-  - [getSolidFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getsolidfillornullobject-member(1))
-
-
-  **PowerPoint.SlideBackgroundSolidFill** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-load-member(1))
+  - PowerPoint.SlideBackgroundSolidFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-load-member(1))
 
   #### Examples
 

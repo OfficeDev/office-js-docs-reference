@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ShapeCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(1))
+  - Excel.ShapeCollection: [load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

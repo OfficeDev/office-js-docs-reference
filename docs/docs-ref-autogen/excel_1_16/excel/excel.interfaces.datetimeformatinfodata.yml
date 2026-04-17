@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.DatetimeFormatInfo** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-tojson-member(1))
+  - Excel.DatetimeFormatInfo: [toJSON](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

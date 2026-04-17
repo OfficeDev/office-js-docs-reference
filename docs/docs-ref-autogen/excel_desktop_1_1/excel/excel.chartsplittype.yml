@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartSeries** (1 member)
-
-  - [splitType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-splittype-member)
+  - Excel.ChartSeries: [splitType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-splittype-member)
 
 isPreview: false
 isDeprecated: false

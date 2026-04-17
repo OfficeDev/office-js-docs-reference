@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartLegend** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-load-member(1))
+  - Excel.ChartLegend: [load](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-load-member(1))
 
 isPreview: false
 isDeprecated: false

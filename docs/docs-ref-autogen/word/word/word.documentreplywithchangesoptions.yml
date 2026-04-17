@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [replyWithChanges](/javascript/api/word/word.document#word-word-document-replywithchanges-member(1))
+  - Word.Document: [replyWithChanges](/javascript/api/word/word.document#word-word-document-replywithchanges-member(1))
 
 isPreview: true
 isDeprecated: false

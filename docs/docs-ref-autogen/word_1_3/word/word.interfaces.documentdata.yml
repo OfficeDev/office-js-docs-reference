@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [toJSON](/javascript/api/word/word.document#word-word-document-tojson-member(1))
+  - Word.Document: [toJSON](/javascript/api/word/word.document#word-word-document-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

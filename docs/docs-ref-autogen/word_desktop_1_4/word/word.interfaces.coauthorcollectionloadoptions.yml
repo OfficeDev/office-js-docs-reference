@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CoauthorCollection** (1 member)
-
-  - [load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(1))
+  - Word.CoauthorCollection: [load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

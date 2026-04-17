@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.TableStyleCollection: [load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
 
-  **Excel.TableStyleCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [tableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-tablestyles-member)
+  - Excel.Workbook: [tableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-tablestyles-member)
 
 isPreview: false
 isDeprecated: false

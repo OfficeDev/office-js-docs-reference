@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Index** (1 member)
-
-  - [filter](/javascript/api/word/word.index#word-word-index-filter-member)
+  - Word.Index: [filter](/javascript/api/word/word.index#word-word-index-filter-member)
 
 isPreview: false
 isDeprecated: false

@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.TableScopedCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
+  - Excel.TableScopedCollection: [load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,19 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.InkWordCollection: [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1)), [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1)), [track](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-untrack-member(1))
 
-  **OneNote.InkWordCollection** (3 members)
-
-  - [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-untrack-member(1))
-
-
-  **OneNote.Paragraph** (1 member)
-
-  - [inkWords](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inkwords-member)
+  - OneNote.Paragraph: [inkWords](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inkwords-member)
 
 isPreview: false
 isDeprecated: false

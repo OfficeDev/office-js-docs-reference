@@ -12,35 +12,17 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.CustomXmlPartCollection: [load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(1))
 
-  **PowerPoint.CustomXmlPartCollection** (1 member)
+  - PowerPoint.Presentation: [customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-customxmlparts-member)
 
-  - [load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(1))
+  - PowerPoint.Shape: [customXmlParts](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-customxmlparts-member)
 
+  - PowerPoint.Slide: [customXmlParts](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-customxmlparts-member)
 
-  **PowerPoint.Presentation** (1 member)
+  - PowerPoint.SlideLayout: [customXmlParts](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-customxmlparts-member)
 
-  - [customXmlParts](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-customxmlparts-member)
-
-
-  **PowerPoint.Shape** (1 member)
-
-  - [customXmlParts](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-customxmlparts-member)
-
-
-  **PowerPoint.Slide** (1 member)
-
-  - [customXmlParts](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-customxmlparts-member)
-
-
-  **PowerPoint.SlideLayout** (1 member)
-
-  - [customXmlParts](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-customxmlparts-member)
-
-
-  **PowerPoint.SlideMaster** (1 member)
-
-  - [customXmlParts](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-customxmlparts-member)
+  - PowerPoint.SlideMaster: [customXmlParts](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

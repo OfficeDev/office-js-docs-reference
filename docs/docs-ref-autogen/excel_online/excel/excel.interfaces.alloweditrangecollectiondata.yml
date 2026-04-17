@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.AllowEditRangeCollection** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-tojson-member(1))
+  - Excel.AllowEditRangeCollection: [toJSON](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,57 +12,17 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.Application: [getActivePage](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepage-member(1)), [getActivePage](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepage-member(1)), [getActivePageOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepageornull-member(1)), [navigateToPage](/javascript/api/onenote/onenote.application#onenote-onenote-application-navigatetopage-member(1)), [navigateToPageWithClientUrl](/javascript/api/onenote/onenote.application#onenote-onenote-application-navigatetopagewithclienturl-member(1))
 
-  **OneNote.Application** (4 members)
+  - OneNote.InkAnalysis: [page](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-page-member)
 
-  - [getActivePage](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepage-member(1))
+  - OneNote.Page: [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1)), [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1)), [copyToSectionAndSetClassNotebookPageSource](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosectionandsetclassnotebookpagesource-member(1)), [insertPageAsSibling](/javascript/api/onenote/onenote.page#onenote-onenote-page-insertpageassibling-member(1)), [load](/javascript/api/onenote/onenote.page#onenote-onenote-page-load-member(1)), [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(2)), [track](/javascript/api/onenote/onenote.page#onenote-onenote-page-track-member(1)), [untrack](/javascript/api/onenote/onenote.page#onenote-onenote-page-untrack-member(1))
 
-  - [getActivePageOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepageornull-member(1))
+  - OneNote.PageCollection: [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1)), [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-items-member)
 
-  - [navigateToPage](/javascript/api/onenote/onenote.application#onenote-onenote-application-navigatetopage-member(1))
+  - OneNote.PageContent: [parentPage](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-parentpage-member)
 
-  - [navigateToPageWithClientUrl](/javascript/api/onenote/onenote.application#onenote-onenote-application-navigatetopagewithclienturl-member(1))
-
-
-  **OneNote.InkAnalysis** (1 member)
-
-  - [page](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-page-member)
-
-
-  **OneNote.Page** (7 members)
-
-  - [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1))
-
-  - [copyToSectionAndSetClassNotebookPageSource](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosectionandsetclassnotebookpagesource-member(1))
-
-  - [insertPageAsSibling](/javascript/api/onenote/onenote.page#onenote-onenote-page-insertpageassibling-member(1))
-
-  - [load](/javascript/api/onenote/onenote.page#onenote-onenote-page-load-member(1))
-
-  - [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(2))
-
-  - [track](/javascript/api/onenote/onenote.page#onenote-onenote-page-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.page#onenote-onenote-page-untrack-member(1))
-
-
-  **OneNote.PageCollection** (3 members)
-
-  - [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitemat-member(1))
-
-  - [items](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-items-member)
-
-
-  **OneNote.PageContent** (1 member)
-
-  - [parentPage](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-parentpage-member)
-
-
-  **OneNote.Section** (1 member)
-
-  - [addPage](/javascript/api/onenote/onenote.section#onenote-onenote-section-addpage-member(1))
+  - OneNote.Section: [addPage](/javascript/api/onenote/onenote.section#onenote-onenote-section-addpage-member(1))
 
 isPreview: false
 isDeprecated: false

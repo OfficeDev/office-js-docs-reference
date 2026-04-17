@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Document** (1 member)
-
-  - [type](/javascript/api/word/word.document#word-word-document-type-member)
+  - Word.Document: [type](/javascript/api/word/word.document#word-word-document-type-member)
 
 isPreview: false
 isDeprecated: false

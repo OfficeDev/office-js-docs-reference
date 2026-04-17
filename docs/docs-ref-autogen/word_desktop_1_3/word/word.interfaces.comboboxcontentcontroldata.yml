@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ComboBoxContentControl** (1 member)
-
-  - [toJSON](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-tojson-member(1))
+  - Word.ComboBoxContentControl: [toJSON](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

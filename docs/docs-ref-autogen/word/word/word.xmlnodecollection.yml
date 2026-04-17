@@ -14,28 +14,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
 
-  **Word.Document** (1 member)
+  - Word.XmlNode: [attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member), [attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member), [childNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-childnodes-member), [selectNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))
 
-  - [selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
-
-
-  **Word.XmlNode** (3 members)
-
-  - [attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member)
-
-  - [childNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-childnodes-member)
-
-  - [selectNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))
-
-
-  **Word.XmlNodeCollection** (3 members)
-
-  - [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-untrack-member(1))
+  - Word.XmlNodeCollection: [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1)), [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(1)), [track](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-track-member(1)), [untrack](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

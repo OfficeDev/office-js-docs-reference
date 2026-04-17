@@ -15,46 +15,19 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [tables](/javascript/api/word/word.body#word-word-body-tables-member)
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)
 
-  - [tables](/javascript/api/word/word.body#word-word-body-tables-member)
+  - Word.Document: [tables](/javascript/api/word/word.document#word-word-document-tables-member)
 
+  - Word.Range: [tables](/javascript/api/word/word.range#word-word-range-tables-member)
 
-  **Word.ContentControl** (1 member)
+  - Word.Selection: [tables](/javascript/api/word/word.selection#word-word-selection-tables-member), [tables](/javascript/api/word/word.selection#word-word-selection-tables-member), [topLevelTables](/javascript/api/word/word.selection#word-word-selection-topleveltables-member)
 
-  - [tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)
+  - Word.Table: [tables](/javascript/api/word/word.table#word-word-table-tables-member)
 
-
-  **Word.Document** (1 member)
-
-  - [tables](/javascript/api/word/word.document#word-word-document-tables-member)
-
-
-  **Word.Range** (1 member)
-
-  - [tables](/javascript/api/word/word.range#word-word-range-tables-member)
-
-
-  **Word.Selection** (2 members)
-
-  - [tables](/javascript/api/word/word.selection#word-word-selection-tables-member)
-
-  - [topLevelTables](/javascript/api/word/word.selection#word-word-selection-topleveltables-member)
-
-
-  **Word.Table** (1 member)
-
-  - [tables](/javascript/api/word/word.table#word-word-table-tables-member)
-
-
-  **Word.TableCollection** (3 members)
-
-  - [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.tablecollection#word-word-tablecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.tablecollection#word-word-tablecollection-untrack-member(1))
+  - Word.TableCollection: [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1)), [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1)), [track](/javascript/api/word/word.tablecollection#word-word-tablecollection-track-member(1)), [untrack](/javascript/api/word/word.tablecollection#word-word-tablecollection-untrack-member(1))
 
   #### Examples
 

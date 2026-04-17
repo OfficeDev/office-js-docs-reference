@@ -12,21 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Font: [textShadow](/javascript/api/word/word.font#word-word-font-textshadow-member)
 
-  **Word.Font** (1 member)
-
-  - [textShadow](/javascript/api/word/word.font#word-word-font-textshadow-member)
-
-
-  **Word.ShadowFormat** (4 members)
-
-  - [load](/javascript/api/word/word.shadowformat#word-word-shadowformat-load-member(1))
-
-  - [set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(2))
-
-  - [track](/javascript/api/word/word.shadowformat#word-word-shadowformat-track-member(1))
-
-  - [untrack](/javascript/api/word/word.shadowformat#word-word-shadowformat-untrack-member(1))
+  - Word.ShadowFormat: [load](/javascript/api/word/word.shadowformat#word-word-shadowformat-load-member(1)), [load](/javascript/api/word/word.shadowformat#word-word-shadowformat-load-member(1)), [set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(2)), [track](/javascript/api/word/word.shadowformat#word-word-shadowformat-track-member(1)), [untrack](/javascript/api/word/word.shadowformat#word-word-shadowformat-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

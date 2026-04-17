@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Body** (1 member)
-
-  - [load](/javascript/api/word/word.body#word-word-body-load-member(1))
+  - Word.Body: [load](/javascript/api/word/word.body#word-word-body-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,21 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.RevisionsFilter: [load](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-load-member(1)), [load](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-load-member(1)), [set](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-set-member(2)), [track](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-track-member(1)), [untrack](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-untrack-member(1))
 
-  **Word.RevisionsFilter** (4 members)
-
-  - [load](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-load-member(1))
-
-  - [set](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-set-member(2))
-
-  - [track](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-track-member(1))
-
-  - [untrack](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-untrack-member(1))
-
-
-  **Word.View** (1 member)
-
-  - [revisionsFilter](/javascript/api/word/word.view#word-word-view-revisionsfilter-member)
+  - Word.View: [revisionsFilter](/javascript/api/word/word.view#word-word-view-revisionsfilter-member)
 
 isPreview: false
 isDeprecated: false

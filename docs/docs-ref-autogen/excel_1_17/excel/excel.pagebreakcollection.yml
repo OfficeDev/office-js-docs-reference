@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.PageBreakCollection: [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
 
-  **Excel.PageBreakCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
-
-
-  **Excel.Worksheet** (2 members)
-
-  - [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member)
-
-  - [verticalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-verticalpagebreaks-member)
+  - Excel.Worksheet: [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member), [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member), [verticalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-verticalpagebreaks-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.SortField** (1 member)
-
-  - [dataOption](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-dataoption-member)
+  - Excel.SortField: [dataOption](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-dataoption-member)
 
 isPreview: false
 isDeprecated: false

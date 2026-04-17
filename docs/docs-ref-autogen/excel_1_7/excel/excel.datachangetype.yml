@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.TableChangedEventArgs: [changeType](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-changetype-member)
 
-  **Excel.TableChangedEventArgs** (1 member)
-
-  - [changeType](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-changetype-member)
-
-
-  **Excel.WorksheetChangedEventArgs** (1 member)
-
-  - [changeType](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-changetype-member)
+  - Excel.WorksheetChangedEventArgs: [changeType](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-changetype-member)
 
 isPreview: false
 isDeprecated: false

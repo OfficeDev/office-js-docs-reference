@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TableOfAuthoritiesCategory** (1 member)
-
-  - [toJSON](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-tojson-member(1))
+  - Word.TableOfAuthoritiesCategory: [toJSON](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

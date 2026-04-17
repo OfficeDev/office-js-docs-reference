@@ -12,62 +12,23 @@ remarks: >-
   #### Used by
 
 
+  - Word.Application: [language](/javascript/api/word/word.application#word-word-application-language-member)
 
-  **Word.Application** (1 member)
+  - Word.DatePickerContentControl: [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
 
-  - [language](/javascript/api/word/word.application#word-word-application-language-member)
+  - Word.Index: [indexLanguage](/javascript/api/word/word.index#word-word-index-indexlanguage-member)
 
+  - Word.IndexAddOptions: [indexLanguage](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-indexlanguage-member)
 
-  **Word.DatePickerContentControl** (1 member)
+  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member), [languageId](/javascript/api/word/word.range#word-word-range-languageid-member), [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
 
-  - [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
+  - Word.Selection: [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member), [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member), [languageIdFarEast](/javascript/api/word/word.selection#word-word-selection-languageidfareast-member), [languageIdOther](/javascript/api/word/word.selection#word-word-selection-languageidother-member)
 
+  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
 
-  **Word.Index** (1 member)
+  - Word.TableSortOptions: [languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)
 
-  - [indexLanguage](/javascript/api/word/word.index#word-word-index-indexlanguage-member)
-
-
-  **Word.IndexAddOptions** (1 member)
-
-  - [indexLanguage](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-indexlanguage-member)
-
-
-  **Word.Range** (3 members)
-
-  - [languageId](/javascript/api/word/word.range#word-word-range-languageid-member)
-
-  - [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member)
-
-  - [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
-
-
-  **Word.Selection** (3 members)
-
-  - [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member)
-
-  - [languageIdFarEast](/javascript/api/word/word.selection#word-word-selection-languageidfareast-member)
-
-  - [languageIdOther](/javascript/api/word/word.selection#word-word-selection-languageidother-member)
-
-
-  **Word.Style** (2 members)
-
-  - [languageId](/javascript/api/word/word.style#word-word-style-languageid-member)
-
-  - [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
-
-
-  **Word.TableSortOptions** (1 member)
-
-  - [languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)
-
-
-  **Word.Template** (2 members)
-
-  - [languageId](/javascript/api/word/word.template#word-word-template-languageid-member)
-
-  - [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
+  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
 
 isPreview: false
 isDeprecated: false

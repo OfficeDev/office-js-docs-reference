@@ -14,15 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Application: [cultureInfo](/javascript/api/excel/excel.application#excel-excel-application-cultureinfo-member)
 
-  **Excel.Application** (1 member)
-
-  - [cultureInfo](/javascript/api/excel/excel.application#excel-excel-application-cultureinfo-member)
-
-
-  **Excel.CultureInfo** (1 member)
-
-  - [load](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-load-member(1))
+  - Excel.CultureInfo: [load](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-load-member(1))
 
 isPreview: false
 isDeprecated: false

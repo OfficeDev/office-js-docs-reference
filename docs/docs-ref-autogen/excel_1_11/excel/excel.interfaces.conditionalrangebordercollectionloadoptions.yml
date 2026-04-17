@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalRangeBorderCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-load-member(1))
+  - Excel.ConditionalRangeBorderCollection: [load](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

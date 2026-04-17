@@ -12,12 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.LineFormat** (2 members)
-
-  - [beginArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadlength-member)
-
-  - [endArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-endarrowheadlength-member)
+  - Word.LineFormat: [beginArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadlength-member), [beginArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadlength-member), [endArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-endarrowheadlength-member)
 
 isPreview: false
 isDeprecated: false

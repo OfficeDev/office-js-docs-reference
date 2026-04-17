@@ -15,19 +15,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [documentLibraryVersions](/javascript/api/word/word.document#word-word-document-documentlibraryversions-member)
 
-  **Word.Document** (1 member)
-
-  - [documentLibraryVersions](/javascript/api/word/word.document#word-word-document-documentlibraryversions-member)
-
-
-  **Word.DocumentLibraryVersionCollection** (3 members)
-
-  - [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1))
-
-  - [track](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-untrack-member(1))
+  - Word.DocumentLibraryVersionCollection: [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1)), [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1)), [track](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-track-member(1)), [untrack](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

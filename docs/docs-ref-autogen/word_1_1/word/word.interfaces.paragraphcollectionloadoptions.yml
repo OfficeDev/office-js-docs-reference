@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ParagraphCollection** (1 member)
-
-  - [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

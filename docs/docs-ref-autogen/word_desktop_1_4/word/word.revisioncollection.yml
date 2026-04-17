@@ -14,24 +14,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.Document: [revisions](/javascript/api/word/word.document#word-word-document-revisions-member)
 
-  **Word.Document** (1 member)
+  - Word.Range: [revisions](/javascript/api/word/word.range#word-word-range-revisions-member)
 
-  - [revisions](/javascript/api/word/word.document#word-word-document-revisions-member)
-
-
-  **Word.Range** (1 member)
-
-  - [revisions](/javascript/api/word/word.range#word-word-range-revisions-member)
-
-
-  **Word.RevisionCollection** (3 members)
-
-  - [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1))
-
-  - [track](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-untrack-member(1))
+  - Word.RevisionCollection: [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1)), [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(1)), [track](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-track-member(1)), [untrack](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-untrack-member(1))
 
 isPreview: false
 isDeprecated: false

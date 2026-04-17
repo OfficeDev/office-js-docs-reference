@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Office.Context: [host](/javascript/api/office/office.context#office-office-context-host-member)
 
-  **Office.Context** (1 member)
-
-  - [host](/javascript/api/office/office.context#office-office-context-host-member)
-
-
-  **Office.ContextInformation** (1 member)
-
-  - [host](/javascript/api/office/office.contextinformation#office-office-contextinformation-host-member)
+  - Office.ContextInformation: [host](/javascript/api/office/office.contextinformation#office-office-contextinformation-host-member)
 
   #### Examples
 

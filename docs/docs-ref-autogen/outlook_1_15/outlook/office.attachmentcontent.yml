@@ -23,35 +23,17 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentCompose: [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentcontentasync-member(1))
 
-  **Office.AppointmentCompose** (1 member)
+  - Office.AppointmentRead: [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getattachmentcontentasync-member(1))
 
-  - [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentcontentasync-member(1))
+  - Office.LoadedMessageCompose: [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getattachmentcontentasync-member(1))
 
+  - Office.LoadedMessageRead: [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getattachmentcontentasync-member(1))
 
-  **Office.AppointmentRead** (1 member)
+  - Office.MessageCompose: [getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentcontentasync-member(1))
 
-  - [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getattachmentcontentasync-member(1))
-
-
-  **Office.LoadedMessageCompose** (1 member)
-
-  - [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getattachmentcontentasync-member(1))
-
-
-  **Office.LoadedMessageRead** (1 member)
-
-  - [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getattachmentcontentasync-member(1))
-
-
-  **Office.MessageCompose** (1 member)
-
-  - [getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentcontentasync-member(1))
-
-
-  **Office.MessageRead** (1 member)
-
-  - [getAttachmentContentAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getattachmentcontentasync-member(1))
+  - Office.MessageRead: [getAttachmentContentAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getattachmentcontentasync-member(1))
 
   #### Examples
 

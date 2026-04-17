@@ -13,14 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartSeries** (3 members)
-
-  - [getDimensionDataSourceString](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcestring-member(1))
-
-  - [getDimensionDataSourceType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1))
-
-  - [getDimensionValues](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensionvalues-member(1))
+  - Excel.ChartSeries: [getDimensionDataSourceString](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcestring-member(1)), [getDimensionDataSourceString](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcestring-member(1)), [getDimensionDataSourceType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1)), [getDimensionValues](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensionvalues-member(1))
 
   #### Examples
 

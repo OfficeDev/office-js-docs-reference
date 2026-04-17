@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **OneNote.Notebook** (1 member)
-
-  - [load](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-load-member(1))
+  - OneNote.Notebook: [load](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-load-member(1))
 
 isPreview: false
 isDeprecated: false

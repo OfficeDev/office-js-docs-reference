@@ -15,29 +15,13 @@ remarks: >-
   #### Used by
 
 
+  - Word.Body: [inlinePictures](/javascript/api/word/word.body#word-word-body-inlinepictures-member)
 
-  **Word.Body** (1 member)
+  - Word.ContentControl: [inlinePictures](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inlinepictures-member)
 
-  - [inlinePictures](/javascript/api/word/word.body#word-word-body-inlinepictures-member)
+  - Word.InlinePictureCollection: [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1)), [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1)), [track](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-track-member(1)), [untrack](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-untrack-member(1))
 
-
-  **Word.ContentControl** (1 member)
-
-  - [inlinePictures](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inlinepictures-member)
-
-
-  **Word.InlinePictureCollection** (3 members)
-
-  - [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-untrack-member(1))
-
-
-  **Word.Paragraph** (1 member)
-
-  - [inlinePictures](/javascript/api/word/word.paragraph#word-word-paragraph-inlinepictures-member)
+  - Word.Paragraph: [inlinePictures](/javascript/api/word/word.paragraph#word-word-paragraph-inlinepictures-member)
 
   #### Examples
 

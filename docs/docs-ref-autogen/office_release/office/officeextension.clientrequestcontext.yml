@@ -10,20 +10,11 @@ remarks: >-
   #### Used by
 
 
+  - OfficeExtension.ClientObject: [context](/javascript/api/office/officeextension.clientobject#office-officeextension-clientobject-context-member)
 
-  **OfficeExtension.ClientObject** (1 member)
+  - OfficeExtension.EventHandlerResult: [context](/javascript/api/office/officeextension.eventhandlerresult#office-officeextension-eventhandlerresult-context-member)
 
-  - [context](/javascript/api/office/officeextension.clientobject#office-officeextension-clientobject-context-member)
-
-
-  **OfficeExtension.EventHandlerResult** (1 member)
-
-  - [context](/javascript/api/office/officeextension.eventhandlerresult#office-officeextension-eventhandlerresult-context-member)
-
-
-  **OfficeExtension.RunOptions** (1 member)
-
-  - [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
+  - OfficeExtension.RunOptions: [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
 
 isPreview: false
 isDeprecated: false

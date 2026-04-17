@@ -8,10 +8,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.Bindings** (1 member)
-
-  - [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1))
+  - Office.Bindings: [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1))
 
 isPreview: false
 isDeprecated: false

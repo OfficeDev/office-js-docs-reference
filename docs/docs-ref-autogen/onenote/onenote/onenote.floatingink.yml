@@ -12,24 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.FloatingInk: [load](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-load-member(1)), [load](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-load-member(1)), [track](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-track-member(1)), [untrack](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-untrack-member(1))
 
-  **OneNote.FloatingInk** (3 members)
+  - OneNote.InkStroke: [floatingInk](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-floatingink-member)
 
-  - [load](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-untrack-member(1))
-
-
-  **OneNote.InkStroke** (1 member)
-
-  - [floatingInk](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-floatingink-member)
-
-
-  **OneNote.PageContent** (1 member)
-
-  - [ink](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-ink-member)
+  - OneNote.PageContent: [ink](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-ink-member)
 
 isPreview: false
 isDeprecated: false

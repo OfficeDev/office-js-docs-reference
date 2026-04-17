@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.PageCollection** (1 member)
-
-  - [load](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-load-member(1))
+  - Visio.PageCollection: [load](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

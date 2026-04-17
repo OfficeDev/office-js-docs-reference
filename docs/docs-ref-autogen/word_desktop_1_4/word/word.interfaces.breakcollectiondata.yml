@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.BreakCollection** (1 member)
-
-  - [toJSON](/javascript/api/word/word.breakcollection#word-word-breakcollection-tojson-member(1))
+  - Word.BreakCollection: [toJSON](/javascript/api/word/word.breakcollection#word-word-breakcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

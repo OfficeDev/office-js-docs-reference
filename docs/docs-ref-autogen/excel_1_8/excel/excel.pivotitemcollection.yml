@@ -14,15 +14,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.PivotField: [items](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-items-member)
 
-  **Excel.PivotField** (1 member)
-
-  - [items](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-items-member)
-
-
-  **Excel.PivotItemCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
+  - Excel.PivotItemCollection: [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

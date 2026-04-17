@@ -13,17 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Hyperlink: [load](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-load-member(1))
 
-  **PowerPoint.Hyperlink** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-load-member(1))
-
-
-  **PowerPoint.HyperlinkCollection** (2 members)
-
-  - [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1))
-
-  - [items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
+  - PowerPoint.HyperlinkCollection: [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1)), [items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
 
   #### Examples
 

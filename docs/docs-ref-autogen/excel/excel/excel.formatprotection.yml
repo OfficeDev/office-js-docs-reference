@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.FormatProtection: [load](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-load-member(1)), [load](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-load-member(1)), [set](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-set-member(2))
 
-  **Excel.FormatProtection** (2 members)
-
-  - [load](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-load-member(1))
-
-  - [set](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-set-member(2))
-
-
-  **Excel.RangeFormat** (1 member)
-
-  - [protection](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-protection-member)
+  - Excel.RangeFormat: [protection](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-protection-member)
 
 isPreview: false
 isDeprecated: false

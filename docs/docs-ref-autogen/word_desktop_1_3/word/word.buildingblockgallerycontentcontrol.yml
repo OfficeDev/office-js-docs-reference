@@ -12,21 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlockGalleryContentControl: [load](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-load-member(1)), [load](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-load-member(1)), [set](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-set-member(2)), [track](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-track-member(1)), [untrack](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-untrack-member(1))
 
-  **Word.BuildingBlockGalleryContentControl** (4 members)
-
-  - [load](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-load-member(1))
-
-  - [set](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-set-member(2))
-
-  - [track](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-track-member(1))
-
-  - [untrack](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-untrack-member(1))
-
-
-  **Word.ContentControl** (1 member)
-
-  - [buildingBlockGalleryContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-buildingblockgallerycontentcontrol-member)
+  - Word.ContentControl: [buildingBlockGalleryContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-buildingblockgallerycontentcontrol-member)
 
 isPreview: false
 isDeprecated: false

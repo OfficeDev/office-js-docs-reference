@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Filter: [applyValuesFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))
 
-  **Excel.Filter** (1 member)
-
-  - [applyValuesFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))
-
-
-  **Excel.FilterCriteria** (1 member)
-
-  - [values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)
+  - Excel.FilterCriteria: [values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)
 
 isPreview: false
 isDeprecated: false

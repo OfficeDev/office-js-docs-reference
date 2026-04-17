@@ -12,19 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.BuildingBlockEntryCollection: [load](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-load-member(1)), [load](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-load-member(1)), [track](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-track-member(1)), [untrack](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-untrack-member(1))
 
-  **Word.BuildingBlockEntryCollection** (3 members)
-
-  - [load](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-load-member(1))
-
-  - [track](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-untrack-member(1))
-
-
-  **Word.Template** (1 member)
-
-  - [buildingBlockEntries](/javascript/api/word/word.template#word-word-template-buildingblockentries-member)
+  - Word.Template: [buildingBlockEntries](/javascript/api/word/word.template#word-word-template-buildingblockentries-member)
 
 isPreview: false
 isDeprecated: false

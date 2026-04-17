@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Visio.ShapeDataItem** (1 member)
-
-  - [load](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-load-member(1))
+  - Visio.ShapeDataItem: [load](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.HtmlDivision** (1 member)
-
-  - [load](/javascript/api/word/word.htmldivision#word-word-htmldivision-load-member(1))
+  - Word.HtmlDivision: [load](/javascript/api/word/word.htmldivision#word-word-htmldivision-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Shading** (1 member)
-
-  - [texture](/javascript/api/word/word.shading#word-word-shading-texture-member)
+  - Word.Shading: [texture](/javascript/api/word/word.shading#word-word-shading-texture-member)
 
   #### Examples
 

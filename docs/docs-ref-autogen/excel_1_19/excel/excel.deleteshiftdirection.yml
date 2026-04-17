@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.ChangeDirectionState: [deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#excel-excel-changedirectionstate-deleteshiftdirection-member)
 
-  **Excel.ChangeDirectionState** (1 member)
-
-  - [deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#excel-excel-changedirectionstate-deleteshiftdirection-member)
-
-
-  **Excel.Range** (1 member)
-
-  - [delete](/javascript/api/excel/excel.range#excel-excel-range-delete-member(1))
+  - Excel.Range: [delete](/javascript/api/excel/excel.range#excel-excel-range-delete-member(1))
 
   #### Examples
 

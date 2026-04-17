@@ -16,10 +16,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.InfobarDetails** (1 member)
-
-  - [infobarType](/javascript/api/outlook/office.infobardetails#outlook-office-infobardetails-infobartype-member)
+  - Office.InfobarDetails: [infobarType](/javascript/api/outlook/office.infobardetails#outlook-office-infobardetails-infobartype-member)
 
   #### Examples
 

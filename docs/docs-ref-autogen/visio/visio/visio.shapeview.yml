@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Visio.Shape: [view](/javascript/api/visio/visio.shape#visio-visio-shape-view-member)
 
-  **Visio.Shape** (1 member)
-
-  - [view](/javascript/api/visio/visio.shape#visio-visio-shape-view-member)
-
-
-  **Visio.ShapeView** (2 members)
-
-  - [load](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-load-member(1))
-
-  - [set](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-set-member(2))
+  - Visio.ShapeView: [load](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-load-member(1)), [load](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-load-member(1)), [set](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-set-member(2))
 
 isPreview: false
 isDeprecated: false

@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Canvas** (1 member)
-
-  - [load](/javascript/api/word/word.canvas#word-word-canvas-load-member(1))
+  - Word.Canvas: [load](/javascript/api/word/word.canvas#word-word-canvas-load-member(1))
 
 isPreview: false
 isDeprecated: false

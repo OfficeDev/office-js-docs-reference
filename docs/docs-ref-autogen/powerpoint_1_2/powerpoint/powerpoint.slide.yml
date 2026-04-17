@@ -13,21 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Slide: [load](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-load-member(1))
 
-  **PowerPoint.Slide** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-load-member(1))
-
-
-  **PowerPoint.SlideCollection** (4 members)
-
-  - [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1))
-
-  - [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1))
-
-  - [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
+  - PowerPoint.SlideCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)), [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
 
   #### Examples
 

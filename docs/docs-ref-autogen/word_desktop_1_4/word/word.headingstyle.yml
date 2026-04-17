@@ -12,23 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.HeadingStyle: [load](/javascript/api/word/word.headingstyle#word-word-headingstyle-load-member(1)), [load](/javascript/api/word/word.headingstyle#word-word-headingstyle-load-member(1)), [set](/javascript/api/word/word.headingstyle#word-word-headingstyle-set-member(2)), [track](/javascript/api/word/word.headingstyle#word-word-headingstyle-track-member(1)), [untrack](/javascript/api/word/word.headingstyle#word-word-headingstyle-untrack-member(1))
 
-  **Word.HeadingStyle** (4 members)
-
-  - [load](/javascript/api/word/word.headingstyle#word-word-headingstyle-load-member(1))
-
-  - [set](/javascript/api/word/word.headingstyle#word-word-headingstyle-set-member(2))
-
-  - [track](/javascript/api/word/word.headingstyle#word-word-headingstyle-track-member(1))
-
-  - [untrack](/javascript/api/word/word.headingstyle#word-word-headingstyle-untrack-member(1))
-
-
-  **Word.HeadingStyleCollection** (2 members)
-
-  - [add](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1))
-
-  - [items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)
+  - Word.HeadingStyleCollection: [add](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1)), [add](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1)), [items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

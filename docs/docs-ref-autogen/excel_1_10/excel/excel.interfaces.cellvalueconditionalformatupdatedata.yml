@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.CellValueConditionalFormat** (1 member)
-
-  - [set](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-set-member(1))
+  - Excel.CellValueConditionalFormat: [set](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

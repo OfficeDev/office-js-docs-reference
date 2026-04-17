@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.TimelineStyleCollection: [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
 
-  **Excel.TimelineStyleCollection** (1 member)
-
-  - [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [timelineStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-timelinestyles-member)
+  - Excel.Workbook: [timelineStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-timelinestyles-member)
 
 isPreview: false
 isDeprecated: false

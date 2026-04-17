@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlNode** (1 member)
-
-  - [appendChildNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-appendchildnode-member(1))
+  - Word.CustomXmlNode: [appendChildNode](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-appendchildnode-member(1))
 
 isPreview: false
 isDeprecated: false

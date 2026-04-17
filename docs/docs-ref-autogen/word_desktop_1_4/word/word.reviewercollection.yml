@@ -16,19 +16,9 @@ remarks: >-
   #### Used by
 
 
+  - Word.ReviewerCollection: [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1)), [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1)), [track](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-track-member(1)), [untrack](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-untrack-member(1))
 
-  **Word.ReviewerCollection** (3 members)
-
-  - [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(1))
-
-  - [track](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-untrack-member(1))
-
-
-  **Word.RevisionsFilter** (1 member)
-
-  - [reviewers](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-reviewers-member)
+  - Word.RevisionsFilter: [reviewers](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-reviewers-member)
 
 isPreview: false
 isDeprecated: false

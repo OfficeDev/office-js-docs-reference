@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Table** (1 member)
-
-  - [autoFormat](/javascript/api/word/word.table#word-word-table-autoformat-member(1))
+  - Word.Table: [autoFormat](/javascript/api/word/word.table#word-word-table-autoformat-member(1))
 
 isPreview: false
 isDeprecated: false

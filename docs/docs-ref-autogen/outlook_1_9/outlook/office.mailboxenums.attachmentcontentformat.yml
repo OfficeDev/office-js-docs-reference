@@ -18,10 +18,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.AttachmentContent** (1 member)
-
-  - [format](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-format-member)
+  - Office.AttachmentContent: [format](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-format-member)
 
   #### Examples
 

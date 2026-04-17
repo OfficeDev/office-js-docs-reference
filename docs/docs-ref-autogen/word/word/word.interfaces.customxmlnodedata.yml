@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.CustomXmlNode** (1 member)
-
-  - [toJSON](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-tojson-member(1))
+  - Word.CustomXmlNode: [toJSON](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.RangeSort: [apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
 
-  **Excel.RangeSort** (1 member)
-
-  - [apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
-
-
-  **Excel.TableSort** (2 members)
-
-  - [apply](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1))
-
-  - [method](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-method-member)
+  - Excel.TableSort: [apply](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1)), [apply](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1)), [method](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-method-member)
 
 isPreview: false
 isDeprecated: false

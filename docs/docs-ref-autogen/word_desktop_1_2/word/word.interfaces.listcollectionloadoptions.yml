@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ListCollection** (1 member)
-
-  - [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+  - Word.ListCollection: [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

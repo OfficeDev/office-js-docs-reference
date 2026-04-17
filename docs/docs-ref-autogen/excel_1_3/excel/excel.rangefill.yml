@@ -12,17 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.RangeFill: [load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1)), [load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1)), [set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(2))
 
-  **Excel.RangeFill** (2 members)
-
-  - [load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1))
-
-  - [set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(2))
-
-
-  **Excel.RangeFormat** (1 member)
-
-  - [fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
+  - Excel.RangeFormat: [fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
 
 isPreview: false
 isDeprecated: false

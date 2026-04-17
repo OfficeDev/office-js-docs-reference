@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Binding** (1 member)
-
-  - [load](/javascript/api/excel/excel.binding#excel-excel-binding-load-member(1))
+  - Excel.Binding: [load](/javascript/api/excel/excel.binding#excel-excel-binding-load-member(1))
 
 isPreview: false
 isDeprecated: false

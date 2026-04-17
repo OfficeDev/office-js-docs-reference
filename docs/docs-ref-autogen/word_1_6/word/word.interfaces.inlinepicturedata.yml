@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.InlinePicture** (1 member)
-
-  - [toJSON](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-tojson-member(1))
+  - Word.InlinePicture: [toJSON](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

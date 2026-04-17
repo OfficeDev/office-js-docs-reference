@@ -15,10 +15,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ContentControl** (1 member)
-
-  - [onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)
+  - Word.ContentControl: [onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)
 
   #### Examples
 

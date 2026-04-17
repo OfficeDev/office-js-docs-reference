@@ -17,10 +17,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.Setting** (1 member)
-
-  - [load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1))
+  - Excel.Setting: [load](/javascript/api/excel/excel.setting#excel-excel-setting-load-member(1))
 
 isPreview: false
 isDeprecated: false

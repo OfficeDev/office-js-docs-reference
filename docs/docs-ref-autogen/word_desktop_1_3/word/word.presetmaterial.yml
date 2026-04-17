@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ThreeDimensionalFormat** (1 member)
-
-  - [presetMaterial](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetmaterial-member)
+  - Word.ThreeDimensionalFormat: [presetMaterial](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetmaterial-member)
 
 isPreview: false
 isDeprecated: false

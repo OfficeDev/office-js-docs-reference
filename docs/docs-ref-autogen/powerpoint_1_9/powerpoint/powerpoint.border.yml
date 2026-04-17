@@ -12,25 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Border: [load](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-load-member(1))
 
-  **PowerPoint.Border** (1 member)
-
-  - [load](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-load-member(1))
-
-
-  **PowerPoint.Borders** (6 members)
-
-  - [bottom](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-bottom-member)
-
-  - [diagonalDown](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonaldown-member)
-
-  - [diagonalUp](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonalup-member)
-
-  - [left](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-left-member)
-
-  - [right](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-right-member)
-
-  - [top](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-top-member)
+  - PowerPoint.Borders: [bottom](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-bottom-member), [bottom](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-bottom-member), [diagonalDown](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonaldown-member), [diagonalUp](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonalup-member), [left](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-left-member), [right](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-right-member), [top](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-top-member)
 
 isPreview: false
 isDeprecated: false

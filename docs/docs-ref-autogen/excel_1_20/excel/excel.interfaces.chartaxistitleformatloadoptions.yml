@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ChartAxisTitleFormat** (1 member)
-
-  - [load](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-load-member(1))
+  - Excel.ChartAxisTitleFormat: [load](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

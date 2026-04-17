@@ -18,15 +18,9 @@ remarks: >-
   #### Used by
 
 
+  - Office.AttachmentDetails: [attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
 
-  **Office.AttachmentDetails** (1 member)
-
-  - [attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
-
-
-  **Office.ReplyFormAttachment** (1 member)
-
-  - [type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
+  - Office.ReplyFormAttachment: [type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
 
   #### Examples
 

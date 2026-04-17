@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Excel.ConditionalRangeFont** (1 member)
-
-  - [toJSON](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-tojson-member(1))
+  - Excel.ConditionalRangeFont: [toJSON](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

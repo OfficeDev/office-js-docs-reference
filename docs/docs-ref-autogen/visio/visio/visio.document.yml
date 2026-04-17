@@ -12,22 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Visio.DataRefreshCompleteEventArgs: [document](/javascript/api/visio/visio.datarefreshcompleteeventargs#visio-visio-datarefreshcompleteeventargs-document-member)
 
-  **Visio.DataRefreshCompleteEventArgs** (1 member)
+  - Visio.Document: [load](/javascript/api/visio/visio.document#visio-visio-document-load-member(1)), [load](/javascript/api/visio/visio.document#visio-visio-document-load-member(1)), [set](/javascript/api/visio/visio.document#visio-visio-document-set-member(2))
 
-  - [document](/javascript/api/visio/visio.datarefreshcompleteeventargs#visio-visio-datarefreshcompleteeventargs-document-member)
-
-
-  **Visio.Document** (2 members)
-
-  - [load](/javascript/api/visio/visio.document#visio-visio-document-load-member(1))
-
-  - [set](/javascript/api/visio/visio.document#visio-visio-document-set-member(2))
-
-
-  **Visio.RequestContext** (1 member)
-
-  - [document](/javascript/api/visio/visio.requestcontext#visio-visio-requestcontext-document-member)
+  - Visio.RequestContext: [document](/javascript/api/visio/visio.requestcontext#visio-visio-requestcontext-document-member)
 
 isPreview: false
 isDeprecated: false

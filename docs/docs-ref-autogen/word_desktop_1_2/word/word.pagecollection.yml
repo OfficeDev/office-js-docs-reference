@@ -13,26 +13,11 @@ remarks: >-
   #### Used by
 
 
+  - Word.PageCollection: [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(1)), [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(1)), [track](/javascript/api/word/word.pagecollection#word-word-pagecollection-track-member(1)), [untrack](/javascript/api/word/word.pagecollection#word-word-pagecollection-untrack-member(1))
 
-  **Word.PageCollection** (3 members)
+  - Word.Pane: [pages](/javascript/api/word/word.pane#word-word-pane-pages-member), [pages](/javascript/api/word/word.pane#word-word-pane-pages-member), [pagesEnclosingViewport](/javascript/api/word/word.pane#word-word-pane-pagesenclosingviewport-member)
 
-  - [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(1))
-
-  - [track](/javascript/api/word/word.pagecollection#word-word-pagecollection-track-member(1))
-
-  - [untrack](/javascript/api/word/word.pagecollection#word-word-pagecollection-untrack-member(1))
-
-
-  **Word.Pane** (2 members)
-
-  - [pages](/javascript/api/word/word.pane#word-word-pane-pages-member)
-
-  - [pagesEnclosingViewport](/javascript/api/word/word.pane#word-word-pane-pagesenclosingviewport-member)
-
-
-  **Word.Range** (1 member)
-
-  - [pages](/javascript/api/word/word.range#word-word-range-pages-member)
+  - Word.Range: [pages](/javascript/api/word/word.range#word-word-range-pages-member)
 
   #### Examples
 

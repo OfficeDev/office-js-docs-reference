@@ -12,10 +12,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.Style** (1 member)
-
-  - [load](/javascript/api/word/word.style#word-word-style-load-member(1))
+  - Word.Style: [load](/javascript/api/word/word.style#word-word-style-load-member(1))
 
 isPreview: false
 isDeprecated: false

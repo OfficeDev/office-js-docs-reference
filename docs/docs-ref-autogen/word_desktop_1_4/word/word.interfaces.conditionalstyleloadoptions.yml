@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.ConditionalStyle** (1 member)
-
-  - [load](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-load-member(1))
+  - Word.ConditionalStyle: [load](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-load-member(1))
 
 isPreview: false
 isDeprecated: false

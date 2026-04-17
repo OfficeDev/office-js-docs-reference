@@ -12,15 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Worksheet: [onRowHiddenChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onrowhiddenchanged-member)
 
-  **Excel.Worksheet** (1 member)
-
-  - [onRowHiddenChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onrowhiddenchanged-member)
-
-
-  **Excel.WorksheetCollection** (1 member)
-
-  - [onRowHiddenChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onrowhiddenchanged-member)
+  - Excel.WorksheetCollection: [onRowHiddenChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onrowhiddenchanged-member)
 
 isPreview: false
 isDeprecated: false

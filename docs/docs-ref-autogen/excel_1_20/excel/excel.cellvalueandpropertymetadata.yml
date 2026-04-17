@@ -14,8 +14,7 @@ remarks: >-
   Learn more about the types in this type alias through the following links. 
 
 
-  [Excel.CellValue](/javascript/api/excel/excel.cellvalue),
-  [Excel.EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties)
+  [Excel.CellValue](/javascript/api/excel/excel.cellvalue), [Excel.EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties)
 
 isPreview: false
 isDeprecated: false

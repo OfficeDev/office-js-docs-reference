@@ -18,106 +18,27 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Binding: [getRange](/javascript/api/excel/excel.binding#excel-excel-binding-getrange-member(1))
 
-  **Excel.Binding** (1 member)
+  - Excel.Chart: [setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1)), [setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1)), [setPosition](/javascript/api/excel/excel.chart#excel-excel-chart-setposition-member(1))
 
-  - [getRange](/javascript/api/excel/excel.binding#excel-excel-binding-getrange-member(1))
+  - Excel.ChartCollection: [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
 
+  - Excel.NamedItem: [getRange](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-getrange-member(1))
 
-  **Excel.Chart** (2 members)
+  - Excel.Range: [getBoundingRect](/javascript/api/excel/excel.range#excel-excel-range-getboundingrect-member(1)), [getBoundingRect](/javascript/api/excel/excel.range#excel-excel-range-getboundingrect-member(1)), [getCell](/javascript/api/excel/excel.range#excel-excel-range-getcell-member(1)), [getColumn](/javascript/api/excel/excel.range#excel-excel-range-getcolumn-member(1)), [getEntireColumn](/javascript/api/excel/excel.range#excel-excel-range-getentirecolumn-member(1)), [getEntireRow](/javascript/api/excel/excel.range#excel-excel-range-getentirerow-member(1)), [getIntersection](/javascript/api/excel/excel.range#excel-excel-range-getintersection-member(1)), [getLastCell](/javascript/api/excel/excel.range#excel-excel-range-getlastcell-member(1)), [getLastColumn](/javascript/api/excel/excel.range#excel-excel-range-getlastcolumn-member(1)), [getLastRow](/javascript/api/excel/excel.range#excel-excel-range-getlastrow-member(1)), [getOffsetRange](/javascript/api/excel/excel.range#excel-excel-range-getoffsetrange-member(1)), [getRow](/javascript/api/excel/excel.range#excel-excel-range-getrow-member(1)), [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1)), [load](/javascript/api/excel/excel.range#excel-excel-range-load-member(1)), [set](/javascript/api/excel/excel.range#excel-excel-range-set-member(2)), [track](/javascript/api/excel/excel.range#excel-excel-range-track-member(1)), [untrack](/javascript/api/excel/excel.range#excel-excel-range-untrack-member(1))
 
-  - [setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1))
+  - Excel.Table: [getDataBodyRange](/javascript/api/excel/excel.table#excel-excel-table-getdatabodyrange-member(1)), [getDataBodyRange](/javascript/api/excel/excel.table#excel-excel-table-getdatabodyrange-member(1)), [getHeaderRowRange](/javascript/api/excel/excel.table#excel-excel-table-getheaderrowrange-member(1)), [getRange](/javascript/api/excel/excel.table#excel-excel-table-getrange-member(1)), [getTotalRowRange](/javascript/api/excel/excel.table#excel-excel-table-gettotalrowrange-member(1))
 
-  - [setPosition](/javascript/api/excel/excel.chart#excel-excel-chart-setposition-member(1))
+  - Excel.TableCollection: [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
 
+  - Excel.TableColumn: [getDataBodyRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getdatabodyrange-member(1)), [getDataBodyRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getdatabodyrange-member(1)), [getHeaderRowRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getheaderrowrange-member(1)), [getRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getrange-member(1)), [getTotalRowRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-gettotalrowrange-member(1))
 
-  **Excel.ChartCollection** (1 member)
+  - Excel.TableRow: [getRange](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-getrange-member(1))
 
-  - [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+  - Excel.Workbook: [getSelectedRange](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedrange-member(1))
 
-
-  **Excel.NamedItem** (1 member)
-
-  - [getRange](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-getrange-member(1))
-
-
-  **Excel.Range** (16 members)
-
-  - [getBoundingRect](/javascript/api/excel/excel.range#excel-excel-range-getboundingrect-member(1))
-
-  - [getCell](/javascript/api/excel/excel.range#excel-excel-range-getcell-member(1))
-
-  - [getColumn](/javascript/api/excel/excel.range#excel-excel-range-getcolumn-member(1))
-
-  - [getEntireColumn](/javascript/api/excel/excel.range#excel-excel-range-getentirecolumn-member(1))
-
-  - [getEntireRow](/javascript/api/excel/excel.range#excel-excel-range-getentirerow-member(1))
-
-  - [getIntersection](/javascript/api/excel/excel.range#excel-excel-range-getintersection-member(1))
-
-  - [getLastCell](/javascript/api/excel/excel.range#excel-excel-range-getlastcell-member(1))
-
-  - [getLastColumn](/javascript/api/excel/excel.range#excel-excel-range-getlastcolumn-member(1))
-
-  - [getLastRow](/javascript/api/excel/excel.range#excel-excel-range-getlastrow-member(1))
-
-  - [getOffsetRange](/javascript/api/excel/excel.range#excel-excel-range-getoffsetrange-member(1))
-
-  - [getRow](/javascript/api/excel/excel.range#excel-excel-range-getrow-member(1))
-
-  - [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1))
-
-  - [load](/javascript/api/excel/excel.range#excel-excel-range-load-member(1))
-
-  - [set](/javascript/api/excel/excel.range#excel-excel-range-set-member(2))
-
-  - [track](/javascript/api/excel/excel.range#excel-excel-range-track-member(1))
-
-  - [untrack](/javascript/api/excel/excel.range#excel-excel-range-untrack-member(1))
-
-
-  **Excel.Table** (4 members)
-
-  - [getDataBodyRange](/javascript/api/excel/excel.table#excel-excel-table-getdatabodyrange-member(1))
-
-  - [getHeaderRowRange](/javascript/api/excel/excel.table#excel-excel-table-getheaderrowrange-member(1))
-
-  - [getRange](/javascript/api/excel/excel.table#excel-excel-table-getrange-member(1))
-
-  - [getTotalRowRange](/javascript/api/excel/excel.table#excel-excel-table-gettotalrowrange-member(1))
-
-
-  **Excel.TableCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
-
-
-  **Excel.TableColumn** (4 members)
-
-  - [getDataBodyRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getdatabodyrange-member(1))
-
-  - [getHeaderRowRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getheaderrowrange-member(1))
-
-  - [getRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getrange-member(1))
-
-  - [getTotalRowRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-gettotalrowrange-member(1))
-
-
-  **Excel.TableRow** (1 member)
-
-  - [getRange](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-getrange-member(1))
-
-
-  **Excel.Workbook** (1 member)
-
-  - [getSelectedRange](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedrange-member(1))
-
-
-  **Excel.Worksheet** (2 members)
-
-  - [getCell](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getcell-member(1))
-
-  - [getRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrange-member(1))
+  - Excel.Worksheet: [getCell](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getcell-member(1)), [getCell](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getcell-member(1)), [getRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrange-member(1))
 
   #### Examples
 

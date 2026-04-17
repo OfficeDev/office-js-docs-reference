@@ -30,25 +30,13 @@ remarks: >-
   #### Used by
 
 
+  - Office.AppointmentCompose: [notificationMessages](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-notificationmessages-member)
 
-  **Office.AppointmentCompose** (1 member)
+  - Office.AppointmentRead: [notificationMessages](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-notificationmessages-member)
 
-  - [notificationMessages](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-notificationmessages-member)
+  - Office.MessageCompose: [notificationMessages](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-notificationmessages-member)
 
-
-  **Office.AppointmentRead** (1 member)
-
-  - [notificationMessages](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-notificationmessages-member)
-
-
-  **Office.MessageCompose** (1 member)
-
-  - [notificationMessages](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-notificationmessages-member)
-
-
-  **Office.MessageRead** (1 member)
-
-  - [notificationMessages](/javascript/api/outlook/office.messageread#outlook-office-messageread-notificationmessages-member)
+  - Office.MessageRead: [notificationMessages](/javascript/api/outlook/office.messageread#outlook-office-messageread-notificationmessages-member)
 
 isPreview: false
 isDeprecated: false

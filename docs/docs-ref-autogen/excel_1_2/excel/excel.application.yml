@@ -12,22 +12,11 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Application: [load](/javascript/api/excel/excel.application#excel-excel-application-load-member(1)), [load](/javascript/api/excel/excel.application#excel-excel-application-load-member(1)), [set](/javascript/api/excel/excel.application#excel-excel-application-set-member(2))
 
-  **Excel.Application** (2 members)
+  - Excel.RequestContext: [application](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-application-member)
 
-  - [load](/javascript/api/excel/excel.application#excel-excel-application-load-member(1))
-
-  - [set](/javascript/api/excel/excel.application#excel-excel-application-set-member(2))
-
-
-  **Excel.RequestContext** (1 member)
-
-  - [application](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-application-member)
-
-
-  **Excel.Workbook** (1 member)
-
-  - [application](/javascript/api/excel/excel.workbook#excel-excel-workbook-application-member)
+  - Excel.Workbook: [application](/javascript/api/excel/excel.workbook#excel-excel-workbook-application-member)
 
 isPreview: false
 isDeprecated: false

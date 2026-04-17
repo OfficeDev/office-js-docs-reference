@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.SlideBackgroundPatternFill** (1 member)
-
-  - [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-tojson-member(1))
+  - PowerPoint.SlideBackgroundPatternFill: [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

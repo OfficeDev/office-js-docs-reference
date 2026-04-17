@@ -13,17 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - PowerPoint.Binding: [type](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-type-member)
 
-  **PowerPoint.Binding** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-type-member)
-
-
-  **PowerPoint.BindingCollection** (2 members)
-
-  - [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1))
-
-  - [addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
+  - PowerPoint.BindingCollection: [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1)), [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1)), [addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
 
   #### Examples
 

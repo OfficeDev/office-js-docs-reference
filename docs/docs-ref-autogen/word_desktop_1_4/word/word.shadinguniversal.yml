@@ -14,61 +14,25 @@ remarks: >-
   #### Used by
 
 
+  - Word.ConditionalStyle: [shading](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-shading-member)
 
-  **Word.ConditionalStyle** (1 member)
+  - Word.Frame: [shading](/javascript/api/word/word.frame#word-word-frame-shading-member)
 
-  - [shading](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-shading-member)
+  - Word.Paragraph: [shading](/javascript/api/word/word.paragraph#word-word-paragraph-shading-member)
 
+  - Word.Range: [shading](/javascript/api/word/word.range#word-word-range-shading-member)
 
-  **Word.Frame** (1 member)
+  - Word.Selection: [shading](/javascript/api/word/word.selection#word-word-selection-shading-member)
 
-  - [shading](/javascript/api/word/word.frame#word-word-frame-shading-member)
+  - Word.ShadingUniversal: [load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1)), [load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1)), [set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(2)), [track](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-track-member(1)), [untrack](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-untrack-member(1))
 
+  - Word.Table: [shading](/javascript/api/word/word.table#word-word-table-shading-member)
 
-  **Word.Paragraph** (1 member)
+  - Word.TableCell: [shading](/javascript/api/word/word.tablecell#word-word-tablecell-shading-member)
 
-  - [shading](/javascript/api/word/word.paragraph#word-word-paragraph-shading-member)
+  - Word.TableColumn: [shading](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-shading-member)
 
-
-  **Word.Range** (1 member)
-
-  - [shading](/javascript/api/word/word.range#word-word-range-shading-member)
-
-
-  **Word.Selection** (1 member)
-
-  - [shading](/javascript/api/word/word.selection#word-word-selection-shading-member)
-
-
-  **Word.ShadingUniversal** (4 members)
-
-  - [load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1))
-
-  - [set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(2))
-
-  - [track](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-track-member(1))
-
-  - [untrack](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-untrack-member(1))
-
-
-  **Word.Table** (1 member)
-
-  - [shading](/javascript/api/word/word.table#word-word-table-shading-member)
-
-
-  **Word.TableCell** (1 member)
-
-  - [shading](/javascript/api/word/word.tablecell#word-word-tablecell-shading-member)
-
-
-  **Word.TableColumn** (1 member)
-
-  - [shading](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-shading-member)
-
-
-  **Word.TableRow** (1 member)
-
-  - [shading](/javascript/api/word/word.tablerow#word-word-tablerow-shading-member)
+  - Word.TableRow: [shading](/javascript/api/word/word.tablerow#word-word-tablerow-shading-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.PictureContentControl** (1 member)
-
-  - [set](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-set-member(1))
+  - Word.PictureContentControl: [set](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

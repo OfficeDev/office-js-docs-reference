@@ -31,10 +31,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Office.CategoryDetails** (1 member)
-
-  - [color](/javascript/api/outlook/office.categorydetails#outlook-office-categorydetails-color-member)
+  - Office.CategoryDetails: [color](/javascript/api/outlook/office.categorydetails#outlook-office-categorydetails-color-member)
 
   #### Examples
 

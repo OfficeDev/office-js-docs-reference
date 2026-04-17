@@ -13,15 +13,9 @@ remarks: >-
   #### Used by
 
 
+  - Excel.CommentCollection: [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
 
-  **Excel.CommentCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
-
-
-  **Excel.CommentReplyCollection** (1 member)
-
-  - [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+  - Excel.CommentReplyCollection: [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
   #### Examples
 

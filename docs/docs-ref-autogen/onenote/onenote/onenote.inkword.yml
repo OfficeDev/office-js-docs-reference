@@ -12,23 +12,9 @@ remarks: >-
   #### Used by
 
 
+  - OneNote.InkWord: [load](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-load-member(1)), [load](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-load-member(1)), [track](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-track-member(1)), [untrack](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-untrack-member(1))
 
-  **OneNote.InkWord** (3 members)
-
-  - [load](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-load-member(1))
-
-  - [track](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-track-member(1))
-
-  - [untrack](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-untrack-member(1))
-
-
-  **OneNote.InkWordCollection** (3 members)
-
-  - [getItem](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitem-member(1))
-
-  - [getItemAt](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitemat-member(1))
-
-  - [items](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-items-member)
+  - OneNote.InkWordCollection: [getItem](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitem-member(1)), [getItem](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-items-member)
 
 isPreview: false
 isDeprecated: false

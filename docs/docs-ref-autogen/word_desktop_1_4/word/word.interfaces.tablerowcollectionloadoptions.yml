@@ -14,10 +14,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.TableRowCollection** (1 member)
-
-  - [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
+  - Word.TableRowCollection: [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

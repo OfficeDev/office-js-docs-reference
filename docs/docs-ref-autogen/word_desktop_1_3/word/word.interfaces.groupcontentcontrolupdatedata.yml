@@ -10,10 +10,7 @@ remarks: >-
   #### Used by
 
 
-
-  **Word.GroupContentControl** (1 member)
-
-  - [set](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-set-member(1))
+  - Word.GroupContentControl: [set](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

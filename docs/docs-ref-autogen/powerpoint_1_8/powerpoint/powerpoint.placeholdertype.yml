@@ -13,10 +13,7 @@ remarks: >-
   #### Used by
 
 
-
-  **PowerPoint.PlaceholderFormat** (1 member)
-
-  - [type](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-type-member)
+  - PowerPoint.PlaceholderFormat: [type](/javascript/api/powerpoint/powerpoint.placeholderformat#powerpoint-powerpoint-placeholderformat-type-member)
 
   #### Examples
 

@@ -12,230 +12,51 @@ remarks: >-
   #### Used by
 
 
+  - Excel.Filter: [applyIconFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyiconfilter-member(1))
 
-  **Excel.Filter** (1 member)
+  - Excel.FilterCriteria: [icon](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-icon-member)
 
-  - [applyIconFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyiconfilter-member(1))
+  - Excel.FiveArrowsGraySet: [grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydownarrow-member), [grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydownarrow-member), [grayDownInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydowninclinearrow-member), [graySideArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graysidearrow-member), [grayUpArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-grayuparrow-member), [grayUpInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-grayupinclinearrow-member)
 
+  - Excel.FiveArrowsSet: [greenUpArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-greenuparrow-member), [greenUpArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-greenuparrow-member), [redDownArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-reddownarrow-member), [yellowDownInclineArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-yellowdowninclinearrow-member), [yellowSideArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-yellowsidearrow-member), [yellowUpInclineArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-yellowupinclinearrow-member)
 
-  **Excel.FilterCriteria** (1 member)
+  - Excel.FiveBoxesSet: [fourFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-fourfilledboxes-member), [fourFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-fourfilledboxes-member), [noFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-nofilledboxes-member), [oneFilledBox](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-onefilledbox-member), [threeFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-threefilledboxes-member), [twoFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-twofilledboxes-member)
 
-  - [icon](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-icon-member)
+  - Excel.FiveQuartersSet: [blackCircle](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-blackcircle-member), [blackCircle](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-blackcircle-member), [circleWithOneWhiteQuarter](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-circlewithonewhitequarter-member), [circleWithThreeWhiteQuarters](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-circlewiththreewhitequarters-member), [circleWithTwoWhiteQuarters](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-circlewithtwowhitequarters-member), [whiteCircleAllWhiteQuarters](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-whitecircleallwhitequarters-member)
 
+  - Excel.FiveRatingSet: [fourBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-fourbars-member), [fourBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-fourbars-member), [noBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-nobars-member), [oneBar](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-onebar-member), [threeBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-threebars-member), [twoBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-twobars-member)
 
-  **Excel.FiveArrowsGraySet** (5 members)
+  - Excel.FourArrowsGraySet: [grayDownArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydownarrow-member), [grayDownArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydownarrow-member), [grayDownInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydowninclinearrow-member), [grayUpArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-grayuparrow-member), [grayUpInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-grayupinclinearrow-member)
 
-  - [grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydownarrow-member)
+  - Excel.FourArrowsSet: [greenUpArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-greenuparrow-member), [greenUpArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-greenuparrow-member), [redDownArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-reddownarrow-member), [yellowDownInclineArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-yellowdowninclinearrow-member), [yellowUpInclineArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-yellowupinclinearrow-member)
 
-  - [grayDownInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydowninclinearrow-member)
+  - Excel.FourRatingSet: [fourBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-fourbars-member), [fourBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-fourbars-member), [oneBar](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-onebar-member), [threeBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-threebars-member), [twoBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-twobars-member)
 
-  - [graySideArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graysidearrow-member)
+  - Excel.FourRedToBlackSet: [blackCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-blackcircle-member), [blackCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-blackcircle-member), [grayCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-graycircle-member), [pinkCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-pinkcircle-member), [redCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-redcircle-member)
 
-  - [grayUpArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-grayuparrow-member)
+  - Excel.FourTrafficLightsSet: [blackCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-blackcirclewithborder-member), [blackCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-blackcirclewithborder-member), [greenCircle](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-greencircle-member), [redCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-redcirclewithborder-member), [yellowCircle](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-yellowcircle-member)
 
-  - [grayUpInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-grayupinclinearrow-member)
+  - Excel.SortField: [icon](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-icon-member)
 
+  - Excel.ThreeArrowsGraySet: [grayDownArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graydownarrow-member), [grayDownArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graydownarrow-member), [graySideArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graysidearrow-member), [grayUpArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-grayuparrow-member)
 
-  **Excel.FiveArrowsSet** (5 members)
+  - Excel.ThreeArrowsSet: [greenUpArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-greenuparrow-member), [greenUpArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-greenuparrow-member), [redDownArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-reddownarrow-member), [yellowSideArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-yellowsidearrow-member)
 
-  - [greenUpArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-greenuparrow-member)
+  - Excel.ThreeFlagsSet: [greenFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-greenflag-member), [greenFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-greenflag-member), [redFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-redflag-member), [yellowFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-yellowflag-member)
 
-  - [redDownArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-reddownarrow-member)
+  - Excel.ThreeSignsSet: [greenCircle](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-greencircle-member), [greenCircle](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-greencircle-member), [redDiamond](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-reddiamond-member), [yellowTriangle](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-yellowtriangle-member)
 
-  - [yellowDownInclineArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-yellowdowninclinearrow-member)
+  - Excel.ThreeStarsSet: [goldStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-goldstar-member), [goldStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-goldstar-member), [halfGoldStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-halfgoldstar-member), [silverStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-silverstar-member)
 
-  - [yellowSideArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-yellowsidearrow-member)
+  - Excel.ThreeSymbols2Set: [greenCheck](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-greencheck-member), [greenCheck](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-greencheck-member), [redCross](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-redcross-member), [yellowExclamation](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-yellowexclamation-member)
 
-  - [yellowUpInclineArrow](/javascript/api/excel/excel.fivearrowsset#excel-excel-fivearrowsset-yellowupinclinearrow-member)
+  - Excel.ThreeSymbolsSet: [greenCheckSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-greenchecksymbol-member), [greenCheckSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-greenchecksymbol-member), [redCrossSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-redcrosssymbol-member), [yellowExclamationSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-yellowexclamationsymbol-member)
 
+  - Excel.ThreeTrafficLights1Set: [greenCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-greencircle-member), [greenCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-greencircle-member), [redCircleWithBorder](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-redcirclewithborder-member), [yellowCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-yellowcircle-member)
 
-  **Excel.FiveBoxesSet** (5 members)
+  - Excel.ThreeTrafficLights2Set: [greenTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-greentrafficlight-member), [greenTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-greentrafficlight-member), [redTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-redtrafficlight-member), [yellowTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-yellowtrafficlight-member)
 
-  - [fourFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-fourfilledboxes-member)
-
-  - [noFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-nofilledboxes-member)
-
-  - [oneFilledBox](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-onefilledbox-member)
-
-  - [threeFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-threefilledboxes-member)
-
-  - [twoFilledBoxes](/javascript/api/excel/excel.fiveboxesset#excel-excel-fiveboxesset-twofilledboxes-member)
-
-
-  **Excel.FiveQuartersSet** (5 members)
-
-  - [blackCircle](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-blackcircle-member)
-
-  - [circleWithOneWhiteQuarter](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-circlewithonewhitequarter-member)
-
-  - [circleWithThreeWhiteQuarters](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-circlewiththreewhitequarters-member)
-
-  - [circleWithTwoWhiteQuarters](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-circlewithtwowhitequarters-member)
-
-  - [whiteCircleAllWhiteQuarters](/javascript/api/excel/excel.fivequartersset#excel-excel-fivequartersset-whitecircleallwhitequarters-member)
-
-
-  **Excel.FiveRatingSet** (5 members)
-
-  - [fourBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-fourbars-member)
-
-  - [noBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-nobars-member)
-
-  - [oneBar](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-onebar-member)
-
-  - [threeBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-threebars-member)
-
-  - [twoBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-twobars-member)
-
-
-  **Excel.FourArrowsGraySet** (4 members)
-
-  - [grayDownArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydownarrow-member)
-
-  - [grayDownInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydowninclinearrow-member)
-
-  - [grayUpArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-grayuparrow-member)
-
-  - [grayUpInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-grayupinclinearrow-member)
-
-
-  **Excel.FourArrowsSet** (4 members)
-
-  - [greenUpArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-greenuparrow-member)
-
-  - [redDownArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-reddownarrow-member)
-
-  - [yellowDownInclineArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-yellowdowninclinearrow-member)
-
-  - [yellowUpInclineArrow](/javascript/api/excel/excel.fourarrowsset#excel-excel-fourarrowsset-yellowupinclinearrow-member)
-
-
-  **Excel.FourRatingSet** (4 members)
-
-  - [fourBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-fourbars-member)
-
-  - [oneBar](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-onebar-member)
-
-  - [threeBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-threebars-member)
-
-  - [twoBars](/javascript/api/excel/excel.fourratingset#excel-excel-fourratingset-twobars-member)
-
-
-  **Excel.FourRedToBlackSet** (4 members)
-
-  - [blackCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-blackcircle-member)
-
-  - [grayCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-graycircle-member)
-
-  - [pinkCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-pinkcircle-member)
-
-  - [redCircle](/javascript/api/excel/excel.fourredtoblackset#excel-excel-fourredtoblackset-redcircle-member)
-
-
-  **Excel.FourTrafficLightsSet** (4 members)
-
-  - [blackCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-blackcirclewithborder-member)
-
-  - [greenCircle](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-greencircle-member)
-
-  - [redCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-redcirclewithborder-member)
-
-  - [yellowCircle](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-yellowcircle-member)
-
-
-  **Excel.SortField** (1 member)
-
-  - [icon](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-icon-member)
-
-
-  **Excel.ThreeArrowsGraySet** (3 members)
-
-  - [grayDownArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graydownarrow-member)
-
-  - [graySideArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graysidearrow-member)
-
-  - [grayUpArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-grayuparrow-member)
-
-
-  **Excel.ThreeArrowsSet** (3 members)
-
-  - [greenUpArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-greenuparrow-member)
-
-  - [redDownArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-reddownarrow-member)
-
-  - [yellowSideArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-yellowsidearrow-member)
-
-
-  **Excel.ThreeFlagsSet** (3 members)
-
-  - [greenFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-greenflag-member)
-
-  - [redFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-redflag-member)
-
-  - [yellowFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-yellowflag-member)
-
-
-  **Excel.ThreeSignsSet** (3 members)
-
-  - [greenCircle](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-greencircle-member)
-
-  - [redDiamond](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-reddiamond-member)
-
-  - [yellowTriangle](/javascript/api/excel/excel.threesignsset#excel-excel-threesignsset-yellowtriangle-member)
-
-
-  **Excel.ThreeStarsSet** (3 members)
-
-  - [goldStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-goldstar-member)
-
-  - [halfGoldStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-halfgoldstar-member)
-
-  - [silverStar](/javascript/api/excel/excel.threestarsset#excel-excel-threestarsset-silverstar-member)
-
-
-  **Excel.ThreeSymbols2Set** (3 members)
-
-  - [greenCheck](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-greencheck-member)
-
-  - [redCross](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-redcross-member)
-
-  - [yellowExclamation](/javascript/api/excel/excel.threesymbols2set#excel-excel-threesymbols2set-yellowexclamation-member)
-
-
-  **Excel.ThreeSymbolsSet** (3 members)
-
-  - [greenCheckSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-greenchecksymbol-member)
-
-  - [redCrossSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-redcrosssymbol-member)
-
-  - [yellowExclamationSymbol](/javascript/api/excel/excel.threesymbolsset#excel-excel-threesymbolsset-yellowexclamationsymbol-member)
-
-
-  **Excel.ThreeTrafficLights1Set** (3 members)
-
-  - [greenCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-greencircle-member)
-
-  - [redCircleWithBorder](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-redcirclewithborder-member)
-
-  - [yellowCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-yellowcircle-member)
-
-
-  **Excel.ThreeTrafficLights2Set** (3 members)
-
-  - [greenTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-greentrafficlight-member)
-
-  - [redTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-redtrafficlight-member)
-
-  - [yellowTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-yellowtrafficlight-member)
-
-
-  **Excel.ThreeTrianglesSet** (3 members)
-
-  - [greenUpTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-greenuptriangle-member)
-
-  - [redDownTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-reddowntriangle-member)
-
-  - [yellowDash](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-yellowdash-member)
+  - Excel.ThreeTrianglesSet: [greenUpTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-greenuptriangle-member), [greenUpTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-greenuptriangle-member), [redDownTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-reddowntriangle-member), [yellowDash](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-yellowdash-member)
 
 isPreview: false
 isDeprecated: false
