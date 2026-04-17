@@ -27,7 +27,7 @@ remarks: >-
   - Word.Range: [search](/javascript/api/word/word.range#word-word-range-search-member(1))
 
   - Word.SearchOptions: [load](/javascript/api/word/word.searchoptions#word-word-searchoptions-load-member(1)),
-  [newObject](/javascript/api/word/word.searchoptions.newobject:member), [set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(2))
+  [newObject](/javascript/api/word/word.searchoptions#word-word-searchoptions-newobject-member(1)), [set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(2))
 
   #### Examples
 

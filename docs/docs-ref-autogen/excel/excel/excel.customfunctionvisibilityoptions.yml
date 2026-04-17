@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CustomFunctionManager: [setVisibility](/javascript/api/excel/excel.customfunctionmanager.setvisibility:member)
+  - Excel.CustomFunctionManager: [setVisibility](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-setvisibility-member(1))
 
 isPreview: false
 isDeprecated: false

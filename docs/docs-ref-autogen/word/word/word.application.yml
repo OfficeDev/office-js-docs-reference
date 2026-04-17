@@ -14,7 +14,7 @@ remarks: >-
 
 
   - Word.Application: [load](/javascript/api/word/word.application#word-word-application-load-member(1)),
-  [newObject](/javascript/api/word/word.application.newobject:member), [set](/javascript/api/word/word.application#word-word-application-set-member(2))
+  [newObject](/javascript/api/word/word.application#word-word-application-newobject-member(1)), [set](/javascript/api/word/word.application#word-word-application-set-member(2))
 
   - Word.RequestContext: [application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
 

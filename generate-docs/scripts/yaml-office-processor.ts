@@ -451,11 +451,39 @@ function convertUidToUrl(uid: string): string {
   let reference = parts[1];
 
   // Split reference into class path and member part
-  // Example: "Excel.DataPivotHierarchy#summarizeBy:member"
-  // becomes classPath = "Excel.DataPivotHierarchy", memberPart = "summarizeBy:member"
+  // Instance members use #: "Excel.DataPivotHierarchy#summarizeBy:member"
+  // Static members use .: "Excel.CustomFunctionManager.newObject:member"
+  let classPath: string;
+  let memberPart: string;
+
   const hashIndex = reference.indexOf('#');
-  const classPath = hashIndex > 0 ? reference.substring(0, hashIndex) : reference;
-  const memberPart = hashIndex > 0 ? reference.substring(hashIndex + 1) : '';
+
+  if (hashIndex > 0) {
+    // Instance member (uses #)
+    classPath = reference.substring(0, hashIndex);
+    memberPart = reference.substring(hashIndex + 1);
+  } else {
+    // Check if this is a static member (has : but no #)
+    const colonIndex = reference.indexOf(':');
+    if (colonIndex > 0) {
+      // Static member - find the last . before the :
+      const beforeColon = reference.substring(0, colonIndex);
+      const lastDotIndex = beforeColon.lastIndexOf('.');
+
+      if (lastDotIndex > 0) {
+        classPath = reference.substring(0, lastDotIndex);
+        memberPart = reference.substring(lastDotIndex + 1);
+      } else {
+        // No dot found, treat entire thing as class path
+        classPath = reference;
+        memberPart = '';
+      }
+    } else {
+      // No # and no :, so it's just a class/interface reference
+      classPath = reference;
+      memberPart = '';
+    }
+  }
 
   // Convert class path to lowercase for URL
   const classPathLower = classPath.toLowerCase();

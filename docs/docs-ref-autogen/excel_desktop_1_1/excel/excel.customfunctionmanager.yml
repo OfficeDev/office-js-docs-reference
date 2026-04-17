@@ -13,7 +13,7 @@ remarks: >-
 
 
   - Excel.CustomFunctionManager: [load](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-load-member(1)),
-  [newObject](/javascript/api/excel/excel.customfunctionmanager.newobject:member)
+  [newObject](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-newobject-member(1))
 
 isPreview: false
 isDeprecated: false
