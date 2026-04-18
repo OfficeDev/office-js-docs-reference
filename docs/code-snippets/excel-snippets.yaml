@@ -1,38 +1,38 @@
 Excel.ArrayCellValue:interface:
   - |-
-    // This `ArrayCellValue` contains a variety of data types, including an entity.
-    const myArray: Excel.ArrayCellValue = {
-        type: Excel.CellValueType.array,
-        elements: [[
-            {
-                type: Excel.CellValueType.string,
-                basicValue: "Item 1"
-            },
-            {
-                type: Excel.CellValueType.double,
-                basicValue: 42
-            },
-            {
-                type: Excel.CellValueType.boolean,
-                basicValue: true
-            },
-            {
-                type: Excel.CellValueType.entity,
-                text: "Product Info",
-                properties: {
-                    name: {
+    // This `EntityCellValue` contains an `ArrayCellValue` with two products and their prices.
+    const myEntity: Excel.EntityCellValue = {
+        type: Excel.CellValueType.entity,
+        text: "Product Catalog",
+        properties: {
+            items: {
+                type: Excel.CellValueType.array, /* ArrayCellValue */
+                elements: [[
+                    {
                         type: Excel.CellValueType.string,
-                        basicValue: "Widget A"
+                        basicValue: "Bicycle"
                     },
-                    price: {
+                    {
                         type: Excel.CellValueType.double,
-                        basicValue: 19.99
+                        basicValue: 300,
+                        numberFormat: "$* #,##0.00",
                     }
-                },
+                ],
+                [
+                    {
+                        type: Excel.CellValueType.string,
+                        basicValue: "Helmet"
+                    },
+                    {
+                        type: Excel.CellValueType.double,
+                        basicValue: 25,
+                        numberFormat: "$* #,##0.00",
+                    }           
+                ]],
                 basicType: Excel.RangeValueType.error,
                 basicValue: "#VALUE!"
             }
-        ]],
+        },
         basicType: Excel.RangeValueType.error, // A read-only property. Used as a fallback in incompatible scenarios.
         basicValue: "#VALUE!" // A read-only property. Used as a fallback in incompatible scenarios.
     };
