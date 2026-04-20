@@ -12,6 +12,42 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Gets the solid fill properties of the first selected slide's background.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+    fill.load("type");
+    await context.sync();
+
+    if (fill.type !== PowerPoint.SlideBackgroundFillType.solid) {
+      console.warn("The slide background isn't a solid fill.");
+      return;
+    }
+
+    const solidFill: PowerPoint.SlideBackgroundSolidFill = slide.background.fill.getSolidFillOrNullObject();
+    solidFill.load(["color", "transparency"]);
+    await context.sync();
+
+    if (solidFill.isNullObject) {
+      console.warn("The slide background isn't a solid fill.");
+    } else {
+      console.log("Solid fill:", `- color: ${solidFill.color}`, `- transparency: ${solidFill.transparency}`);
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

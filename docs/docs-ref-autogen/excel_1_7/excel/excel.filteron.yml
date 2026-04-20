@@ -14,24 +14,29 @@ remarks: >-
 
   ```TypeScript
 
-  // This function adds a custom AutoFilter to the active worksheet 
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/filter-data.yaml
 
-  // and applies the filter to a column of the used range.
 
   await Excel.run(async (context) => {
-      // Retrieve the active worksheet and the used range on that worksheet.
-      const sheet = context.workbook.worksheets.getActiveWorksheet();
-      const farmData = sheet.getUsedRange();
+      const sheet = context.workbook.worksheets.getItem("Sample");
 
-      // Add a filter that will only show the rows with values that end with the letter "e" in column 1.
-      sheet.autoFilter.apply(farmData, 1, {
-          criterion1: "=*e",
-          filterOn: Excel.FilterOn.custom
+      const expensesTable = sheet.tables.getItem("ExpensesTable");
+
+      let filter = expensesTable.columns.getItem("Amount").filter;
+      filter.apply({
+          filterOn: Excel.FilterOn.dynamic,
+          dynamicCriteria: Excel.DynamicFilterCriteria.belowAverage
+      });
+
+      filter = expensesTable.columns.getItem("Category").filter;
+      filter.apply({
+              filterOn: Excel.FilterOn.values,
+              values: ["Restaurant", "Groceries"]
       });
 
       await context.sync();
-  });
-
+     });
   ```
 
 isPreview: false

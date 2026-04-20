@@ -11,7 +11,29 @@ summary: >-
   To add an event handler for the `DialogParentMessageReceived` event, use the
   `addHandlerAsync` method of the [Office.UI](xref:office!Office.UI:interface)
   object.
-remarks: ''
+remarks: >-
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example provides information about the message from the
+  parent page.
+
+  Office.onReady(() => {
+      Office.context.ui.addHandlerAsync(Office.EventType.DialogMessageReceived, onMessageFromParent);
+  });
+
+
+  function onMessageFromParent(args:
+  Office.DialogParentMessageReceivedEventArgs) {
+      const eventType = args.type;
+      const origin = args.origin;
+      const messageFromParent = args.message;
+      console.log(`${eventType} event occurred. Message received from ${origin}: ${messageFromParent}`);
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false

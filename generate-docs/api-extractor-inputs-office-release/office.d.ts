@@ -3675,7 +3675,7 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          * 
-         * **Requirement set**: NestedAppAuth 1.1
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets | NestedAppAuth 1.1}
          * 
          * @returns Promise to the AuthContext object.
          */
@@ -3738,6 +3738,10 @@ export declare namespace Office {
     }
     /**
      * Represents the user information which can be passed to the Microsoft Authentication Library for JavaScript (MSAL.js).
+     * 
+     * @remarks
+     * 
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets | NestedAppAuth 1.1}
      */
     export interface AuthContext {
         /**

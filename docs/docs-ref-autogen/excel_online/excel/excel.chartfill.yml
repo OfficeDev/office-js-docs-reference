@@ -73,6 +73,32 @@ methods:
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-point.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+          let point = pointsCollection.getItemAt(2);
+
+          // Get the solid color of the chart point.
+          const colorResult = point.format.fill.getSolidColor();
+
+          await context.sync();
+
+          console.log(`Chart point color: ${colorResult.value}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,7 +134,7 @@ methods:
           // Set color for chart point.
           point.format.fill.setSolidColor('red');
 
-          await context.sync();        
+          await context.sync();
       });
 
       ```

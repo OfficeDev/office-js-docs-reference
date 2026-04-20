@@ -150,7 +150,7 @@ Office.Addin#beforeDocumentCloseNotification:member:
 Office.Addin#onVisibilityModeChanged:member(1):
   - |-
     Office.onReady(() => {
-        Office.addin.onVisibilityModeChanged((args) => {
+        Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
             if (args.visibilityMode === Office.VisibilityMode.taskpane) {
                 // Do something when the task pane is visible.
             }
@@ -1094,6 +1094,17 @@ Office.Context:interface:
     console.log("Office application: " + contextInfo.host);
     console.log("Office version: " + contextInfo.version);
     console.log("Platform: " + contextInfo.platform);
+Office.Context#commerceAllowed:member:
+    - |-
+        // Detect iPad users so your add-in can switch to an iPad-specific experience.
+        const isTouchEnabled = Office.context.touchEnabled;
+        const allowCommerce = Office.context.commerceAllowed;
+
+        // On iPad, touchEnabled returns true and commerceAllowed returns false.
+        if (isTouchEnabled && !allowCommerce) {
+                enableIPadInterface();
+                hideCommerceFeatures();
+        }
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -2080,6 +2091,19 @@ Office.DialogOptions#width:member:
             });
         }
     );
+Office.DialogParentMessageReceivedEventArgs:interface:
+  - |-
+    // The following example provides information about the message from the parent page.
+    Office.onReady(() => {
+        Office.context.ui.addHandlerAsync(Office.EventType.DialogMessageReceived, onMessageFromParent);
+    });
+
+    function onMessageFromParent(args: Office.DialogParentMessageReceivedEventArgs) {
+        const eventType = args.type;
+        const origin = args.origin;
+        const messageFromParent = args.message;
+        console.log(`${eventType} event occurred. Message received from ${origin}: ${messageFromParent}`);
+    }
 Office.Document:interface:
   - |-
     // Get the Document object with the Common APIs.
@@ -4009,73 +4033,6 @@ Office.FileProperties:interface:
             }
         });
     }
-
-Office.FileType:enum:
-  - |-
-    // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
-    // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
-    function getDocumentAsCompressed() {
-        Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
-            function (result) {
-                if (result.status === Office.AsyncResultStatus.Succeeded) {
-                    // If the getFileAsync call succeeded, then
-                    // result.value will return a valid File Object.
-                    const myFile = result.value;
-                    const sliceCount = myFile.sliceCount;
-                    const docDataSlices = [];
-                    let slicesReceived = 0, gotAllSlices = true;
-                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
-
-                    // Get the file slices.
-                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
-                } else {
-                    app.showNotification("Error:", result.error.message);
-                }
-        });
-    }
-
-    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
-        file.getSliceAsync(nextSlice, function (sliceResult) {
-            if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
-                if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
-                    return;
-                }
-
-                // Got one slice, store it in a temporary array.
-                // (Or you can do something else, such as
-                // send it to a third-party server.)
-                docDataSlices[sliceResult.value.index] = sliceResult.value.data;
-                if (++slicesReceived === sliceCount) {
-                  // All slices have been received.
-                  file.closeAsync();
-                  onGotAllSlices(docDataSlices);
-                }
-                else {
-                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
-                }
-            }
-                else {
-                    gotAllSlices = false;
-                    file.closeAsync();
-                    app.showNotification("getSliceAsync Error:", sliceResult.error.message);
-                }
-        });
-    }
-
-    function onGotAllSlices(docDataSlices) {
-        let docData = [];
-        for (let i = 0; i < docDataSlices.length; i++) {
-            docData = docData.concat(docDataSlices[i]);
-        }
-
-        let fileContent = new String();
-        for (let j = 0; j < docData.length; j++) {
-            fileContent += String.fromCharCode(docData[j]);
-        }
-
-        // Now all the file content is stored in 'fileContent' variable,
-        // you can do something with it, such as print, fax...
-    }
 Office.FilterType:enum:
   - |-
     /* Set the selection options. These will:
@@ -4341,6 +4298,23 @@ Office.RibbonUpdaterData#tabs:member:
         const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
         await Office.ribbon.requestUpdate(ribbonUpdater);
     }
+Office.SaveSettingsOptions:interface:
+  - |-
+    function persistSettingsWithContext() {
+        Office.context.document.settings.set('reportFormat', 'pdf');
+
+        const options: Office.SaveSettingsOptions = {
+            asyncContext: { settingName: 'reportFormat' }
+        };
+
+        Office.context.document.settings.saveAsync(options, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+            } else {
+                console.log('Saved setting: ' + asyncResult.asyncContext.settingName);
+            }
+        });
+    }
 Office.Settings#addHandlerAsync:member(2):
   - |-
     function addSelectionChangedEventHandler() {
@@ -4409,13 +4383,8 @@ Office.SettingsChangedEventArgs:interface:
     }
 
     function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
-        write('Event raised: ' + eventArgs.type);
+        console.log('Event raised: ' + eventArgs.type);
         doSomethingWithSettings(eventArgs.settings);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message) {
-        document.getElementById('message').innerText += message;
     }
 Office.Slice:interface:
   - |-
@@ -4858,7 +4827,18 @@ Office.ValueFormat:enum:
 Office.VisibilityMode:enum:
   - |-
     Office.onReady(() => {
-        Office.addin.onVisibilityModeChanged((args) => {
+        Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
+            if (args.visibilityMode === Office.VisibilityMode.taskpane) {
+                // Do something when the task pane is visible.
+            }
+        });
+
+        // Other startup tasks.
+    });
+Office.VisibilityModeChangedMessage:interface:
+  - |-
+    Office.onReady(() => {
+        Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
             if (args.visibilityMode === Office.VisibilityMode.taskpane) {
                 // Do something when the task pane is visible.
             }

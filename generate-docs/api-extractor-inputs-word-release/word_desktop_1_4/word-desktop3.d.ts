@@ -4519,14 +4519,14 @@ export declare namespace Word {
          */
         appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
         /**
-         * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+         * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         cannotDelete: boolean;
         /**
-         * Specifies a value that indicates whether the user can edit the contents of the content control.
+         * Specifies whether the user can edit the contents of the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -4554,7 +4554,7 @@ export declare namespace Word {
          */
         placeholderText: string;
         /**
-         * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+         * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -5446,7 +5446,7 @@ export declare namespace Word {
          */
         schemaCollection: Word.CustomXmlSchemaCollection;
         /**
-         * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+         * Gets whether the `CustomXmlPart` is built-in.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.3]
@@ -9520,7 +9520,7 @@ export declare namespace Word {
          */
         readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
         /**
-         * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+         * Specifies whether the inline image retains its original proportions when you resize it.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -40397,7 +40397,7 @@ export declare namespace Word {
      */
     export interface SelectionInsertSymbolOptions {
         /**
-         * If provided, specifies the font bias for symbols. This argument is useful for setting the correct font bias for East Asian characters. The default value is `default`.
+         * If provided, specifies the font bias for symbols. This argument is useful for setting the correct font bias for East Asian characters. The default value is `standard`.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
@@ -40521,7 +40521,7 @@ export declare namespace Word {
         unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item";
     }
     /**
-     * Represents the options for the {@link Word.Selection | Selection.next} method.
+     * Represents the options for the {@link Word.Selection | Selection.getNextRange} method.
      *
      * @remarks
      * [Api set: WordApiDesktop 1.4]
@@ -40543,7 +40543,7 @@ export declare namespace Word {
         unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item";
     }
     /**
-     * Represents the options for the {@link Word.Selection | Selection.previous} method.
+     * Represents the options for the {@link Word.Selection | Selection.getPreviousRange} method.
      *
      * @remarks
      * [Api set: WordApiDesktop 1.4]
@@ -45162,7 +45162,7 @@ export declare namespace Word {
         /** An interface for updating data on the `CommentContentRange` object, for use in `commentContentRange.set({ ... })`. */
         export interface CommentContentRangeUpdateData {
             /**
-             * Specifies a value that indicates whether the comment text is bold.
+             * Specifies whether the comment text is bold.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -45176,21 +45176,21 @@ export declare namespace Word {
              */
             hyperlink?: string;
             /**
-             * Specifies a value that indicates whether the comment text is italicized.
+             * Specifies whether the comment text is italicized.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             italic?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text has a strikethrough.
+             * Specifies whether the comment text has a strikethrough.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             strikeThrough?: boolean;
             /**
-             * Specifies a value that indicates the comment text's underline type. `none` if the comment text isn't underlined.
+             * Specifies the comment text's underline type. `none` if the comment text isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -45410,14 +45410,14 @@ export declare namespace Word {
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
-             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Specifies a value that indicates whether the user can edit the contents of the content control.
+             * Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -45438,7 +45438,7 @@ export declare namespace Word {
              */
             placeholderText?: string;
             /**
-             * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -46673,7 +46673,7 @@ export declare namespace Word {
              */
             hyperlink?: string;
             /**
-             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -50927,7 +50927,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the text of the body. Use the insertText method to insert text.
+             * Gets the text of the body. Use the `insertText` method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -51365,7 +51365,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `commentContentRange.toJSON()`. */
         export interface CommentContentRangeData {
             /**
-             * Specifies a value that indicates whether the comment text is bold.
+             * Specifies whether the comment text is bold.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -51386,14 +51386,14 @@ export declare namespace Word {
              */
             isEmpty?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text is italicized.
+             * Specifies whether the comment text is italicized.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             italic?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text has a strikethrough.
+             * Specifies whether the comment text has a strikethrough.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -51407,7 +51407,7 @@ export declare namespace Word {
              */
             text?: string;
             /**
-             * Specifies a value that indicates the comment text's underline type. `none` if the comment text isn't underlined.
+             * Specifies the comment text's underline type. `none` if the comment text isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -51817,14 +51817,14 @@ export declare namespace Word {
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
-             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Specifies a value that indicates whether the user can edit the contents of the content control.
+             * Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -51852,7 +51852,7 @@ export declare namespace Word {
              */
             placeholderText?: string;
             /**
-             * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -51992,7 +51992,7 @@ export declare namespace Word {
             */
             schemaCollection?: Word.Interfaces.CustomXmlSchemaData[];
             /**
-             * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -53571,7 +53571,7 @@ export declare namespace Word {
              */
             imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
             /**
-             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -59469,7 +59469,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the text of the body. Use the insertText method to insert text.
+             * Gets the text of the body. Use the `insertText` method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -60258,6 +60258,8 @@ export declare namespace Word {
             resolved?: boolean;
         }
         /**
+         * Represents a content range within a comment.
+         *
          * @remarks
          * [Api set: WordApi 1.4]
          */
@@ -60267,7 +60269,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text is bold.
+             * Specifies whether the comment text is bold.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -60288,14 +60290,14 @@ export declare namespace Word {
              */
             isEmpty?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text is italicized.
+             * Specifies whether the comment text is italicized.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             italic?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text has a strikethrough.
+             * Specifies whether the comment text has a strikethrough.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -60309,7 +60311,7 @@ export declare namespace Word {
              */
             text?: boolean;
             /**
-             * Specifies a value that indicates the comment text's underline type. `none` if the comment text isn't underlined.
+             * Specifies the comment text's underline type. `none` if the comment text isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -60980,14 +60982,14 @@ export declare namespace Word {
              */
             appearance?: boolean;
             /**
-             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Specifies a value that indicates whether the user can edit the contents of the content control.
+             * Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -61015,7 +61017,7 @@ export declare namespace Word {
              */
             placeholderText?: boolean;
             /**
-             * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -61195,14 +61197,14 @@ export declare namespace Word {
              */
             appearance?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * For EACH ITEM in the collection: Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the user can edit the contents of the content control.
+             * For EACH ITEM in the collection: Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -61230,7 +61232,7 @@ export declare namespace Word {
              */
             placeholderText?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * For EACH ITEM in the collection: Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -61437,7 +61439,7 @@ export declare namespace Word {
             */
             documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-             * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -61484,7 +61486,7 @@ export declare namespace Word {
             */
             documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * For EACH ITEM in the collection: Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -61531,7 +61533,7 @@ export declare namespace Word {
             */
             documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * For EACH ITEM in the collection: Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -63459,7 +63461,7 @@ export declare namespace Word {
              */
             imageFormat?: boolean;
             /**
-             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -63569,7 +63571,7 @@ export declare namespace Word {
              */
             imageFormat?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * For EACH ITEM in the collection: Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]

@@ -12,6 +12,32 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Sets the background of the first selected slide to a solid orange fill at
+  20% transparency.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    slide.background.fill.setSolidFill({
+      color: "#FF8C00",
+      transparency: 0.2,
+    } as PowerPoint.SlideBackgroundSolidFillOptions);
+    await context.sync();
+
+    console.log("Background set to solid orange fill (20% transparent).");
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

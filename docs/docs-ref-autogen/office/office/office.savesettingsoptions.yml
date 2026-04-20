@@ -4,7 +4,26 @@ uid: office!Office.SaveSettingsOptions:interface
 package: office!
 fullName: Office.SaveSettingsOptions
 summary: Provides options for saving settings.
-remarks: ''
+remarks: |-
+  #### Examples
+
+  ```TypeScript
+  function persistSettingsWithContext() {
+      Office.context.document.settings.set('reportFormat', 'pdf');
+
+      const options: Office.SaveSettingsOptions = {
+          asyncContext: { settingName: 'reportFormat' }
+      };
+
+      Office.context.document.settings.saveAsync(options, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+          } else {
+              console.log('Saved setting: ' + asyncResult.asyncContext.settingName);
+          }
+      });
+  }
+  ```
 
 isPreview: false
 isDeprecated: false

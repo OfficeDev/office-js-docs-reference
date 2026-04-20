@@ -244,20 +244,26 @@ methods:
       Gets information about the signed-in user. The add-in can pass this
       information to the Microsoft authentication library (MSAL.js) to get an
       access token for the current session.
-    remarks: |-
+    remarks: >-
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
-      **Requirement set**: NestedAppAuth 1.1
+
+      **Requirement set**: [NestedAppAuth
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets)
+
 
       #### Examples
 
+
       ```TypeScript
+
       try{
           const authContext = await Office.auth.getAuthContext();
           console.log(authContext.userPrincipalName);
       } catch (error) {
           console.log("Error obtaining token", error);
       }
+
       ```
 
     isPreview: false

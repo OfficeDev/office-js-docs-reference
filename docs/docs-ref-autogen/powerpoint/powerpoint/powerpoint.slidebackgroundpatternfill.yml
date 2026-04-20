@@ -12,6 +12,47 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Gets the pattern fill properties of the first selected slide's background.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+    fill.load("type");
+    await context.sync();
+
+    if (fill.type !== PowerPoint.SlideBackgroundFillType.pattern) {
+      console.warn("The slide background isn't a pattern fill.");
+      return;
+    }
+
+    const patternFill: PowerPoint.SlideBackgroundPatternFill = slide.background.fill.getPatternFillOrNullObject();
+    patternFill.load(["foregroundColor", "backgroundColor", "pattern"]);
+    await context.sync();
+
+    if (patternFill.isNullObject) {
+      console.warn("The slide background isn't a pattern fill.");
+    } else {
+      console.log(
+        "Pattern fill:",
+        `- foregroundColor: ${patternFill.foregroundColor}`,
+        `- backgroundColor: ${patternFill.backgroundColor}`,
+        `- pattern: ${patternFill.pattern}`,
+      );
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -6,7 +6,9 @@ fullName: Office.AuthContext
 summary: >-
   Represents the user information which can be passed to the Microsoft
   Authentication Library for JavaScript (MSAL.js).
-remarks: ''
+remarks: >-
+  **Requirement set**: [NestedAppAuth
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets)
 
 isPreview: false
 isDeprecated: false

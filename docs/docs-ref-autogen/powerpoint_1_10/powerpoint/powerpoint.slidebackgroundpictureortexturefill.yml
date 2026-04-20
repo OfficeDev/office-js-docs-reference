@@ -12,6 +12,44 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Gets the picture or texture fill properties of the first selected slide's
+  background.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+    fill.load("type");
+    await context.sync();
+
+    if (fill.type !== PowerPoint.SlideBackgroundFillType.pictureOrTexture) {
+      console.warn("The slide background isn't a picture or texture fill.");
+      return;
+    }
+
+    const pictureFill: PowerPoint.SlideBackgroundPictureOrTextureFill =
+      slide.background.fill.getPictureOrTextureFillOrNullObject();
+    pictureFill.load("transparency");
+    await context.sync();
+
+    if (pictureFill.isNullObject) {
+      console.warn("The slide background isn't a picture or texture fill.");
+    } else {
+      console.log("Picture or texture fill:", `- transparency: ${pictureFill.transparency}`);
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

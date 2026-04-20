@@ -1191,7 +1191,7 @@ excel,Excel.ChartErrorBarsType,"stError",EnumField,Great,false
 excel,Excel.ChartFill,N/A,Class,Fine,false
 excel,Excel.ChartFill,"context",Property,Excellent,false
 excel,Excel.ChartFill,"clear()",Method,Fine,true
-excel,Excel.ChartFill,"getSolidColor()",Method,Fine,false
+excel,Excel.ChartFill,"getSolidColor()",Method,Fine,true
 excel,Excel.ChartFill,"setSolidColor(color)",Method,Fine,true
 excel,Excel.ChartFill,"toJSON()",Method,Excellent,false
 excel,Excel.ChartFont,N/A,Class,Good,true
@@ -1333,7 +1333,7 @@ excel,Excel.ChartLineFormat,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.ChartLineFormat,"set(properties, options)",Method,Good,false
 excel,Excel.ChartLineFormat,"set(properties)",Method,Fine,false
 excel,Excel.ChartLineFormat,"toJSON()",Method,Excellent,false
-excel,Excel.ChartLineStyle,N/A,Enum,Missing,false
+excel,Excel.ChartLineStyle,N/A,Enum,Missing,true
 excel,Excel.ChartLineStyle,"automatic",EnumField,Great,false
 excel,Excel.ChartLineStyle,"continuous",EnumField,Great,false
 excel,Excel.ChartLineStyle,"dash",EnumField,Great,false
@@ -1869,12 +1869,12 @@ excel,Excel.Comment,"set(properties, options)",Method,Good,false
 excel,Excel.Comment,"set(properties)",Method,Fine,false
 excel,Excel.Comment,"toJSON()",Method,Excellent,false
 excel,Excel.Comment,"updateMentions(contentWithMentions)",Method,Fine,false
-excel,Excel.CommentAddedEventArgs,N/A,Interface,Fine,false
+excel,Excel.CommentAddedEventArgs,N/A,Interface,Fine,true
 excel,Excel.CommentAddedEventArgs,"commentDetails",Property,Excellent,false
 excel,Excel.CommentAddedEventArgs,"source",Property,Great,false
 excel,Excel.CommentAddedEventArgs,"type",Property,Great,false
 excel,Excel.CommentAddedEventArgs,"worksheetId",Property,Great,false
-excel,Excel.CommentChangedEventArgs,N/A,Interface,Good,false
+excel,Excel.CommentChangedEventArgs,N/A,Interface,Good,true
 excel,Excel.CommentChangedEventArgs,"changeType",Property,Great,false
 excel,Excel.CommentChangedEventArgs,"commentDetails",Property,Excellent,false
 excel,Excel.CommentChangedEventArgs,"source",Property,Great,false
@@ -1902,7 +1902,7 @@ excel,Excel.CommentCollection,"load(options)",Method,Great,false
 excel,Excel.CommentCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.CommentCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.CommentCollection,"toJSON()",Method,Excellent,false
-excel,Excel.CommentDeletedEventArgs,N/A,Interface,Fine,false
+excel,Excel.CommentDeletedEventArgs,N/A,Interface,Fine,true
 excel,Excel.CommentDeletedEventArgs,"commentDetails",Property,Excellent,false
 excel,Excel.CommentDeletedEventArgs,"source",Property,Great,false
 excel,Excel.CommentDeletedEventArgs,"type",Property,Great,false
@@ -2455,7 +2455,7 @@ excel,Excel.DataValidation,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.DataValidation,"set(properties, options)",Method,Good,false
 excel,Excel.DataValidation,"set(properties)",Method,Fine,false
 excel,Excel.DataValidation,"toJSON()",Method,Excellent,false
-excel,Excel.DataValidationAlertStyle,N/A,Enum,Great,false
+excel,Excel.DataValidationAlertStyle,N/A,Enum,Great,true
 excel,Excel.DataValidationAlertStyle,"information",EnumField,Great,false
 excel,Excel.DataValidationAlertStyle,"stop",EnumField,Great,false
 excel,Excel.DataValidationAlertStyle,"warning",EnumField,Great,false
@@ -5006,7 +5006,7 @@ excel,Excel.PivotItemCollection,"load(options)",Method,Great,false
 excel,Excel.PivotItemCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.PivotItemCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.PivotItemCollection,"toJSON()",Method,Excellent,false
-excel,Excel.PivotLabelFilter,N/A,Interface,Great,false
+excel,Excel.PivotLabelFilter,N/A,Interface,Great,true
 excel,Excel.PivotLabelFilter,"comparator",Property,Excellent,false
 excel,Excel.PivotLabelFilter,"condition",Property,Excellent,false
 excel,Excel.PivotLabelFilter,"exclusive",Property,Excellent,false
@@ -5138,7 +5138,7 @@ excel,Excel.PivotTableStyleCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.PivotTableStyleCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.PivotTableStyleCollection,"setDefault(newDefaultStyle)",Method,Fine,false
 excel,Excel.PivotTableStyleCollection,"toJSON()",Method,Excellent,false
-excel,Excel.PivotValueFilter,N/A,Interface,Great,false
+excel,Excel.PivotValueFilter,N/A,Interface,Great,true
 excel,Excel.PivotValueFilter,"comparator",Property,Excellent,false
 excel,Excel.PivotValueFilter,"condition",Property,Excellent,false
 excel,Excel.PivotValueFilter,"exclusive",Property,Excellent,false
@@ -5735,7 +5735,7 @@ excel,Excel.SettingCollection,"load(options)",Method,Great,false
 excel,Excel.SettingCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.SettingCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.SettingCollection,"toJSON()",Method,Excellent,false
-excel,Excel.SettingsChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.SettingsChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.SettingsChangedEventArgs,"settings",Property,Great,false
 excel,Excel.Shape,N/A,Class,Great,false
 excel,Excel.Shape,"altTextDescription",Property,Great,false
@@ -6852,7 +6852,7 @@ excel,Excel.Workbook,"save(saveBehavior)",Method,Poor,false
 excel,Excel.Workbook,"set(properties, options)",Method,Good,false
 excel,Excel.Workbook,"set(properties)",Method,Fine,false
 excel,Excel.Workbook,"toJSON()",Method,Excellent,false
-excel,Excel.WorkbookActivatedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorkbookActivatedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorkbookActivatedEventArgs,"type",Property,Great,false
 excel,Excel.WorkbookAutoSaveSettingChangedEventArgs,N/A,Interface,Fine,false
 excel,Excel.WorkbookAutoSaveSettingChangedEventArgs,"type",Property,Great,false
@@ -6952,7 +6952,7 @@ excel,Excel.WorksheetAddedEventArgs,N/A,Interface,Fine,false
 excel,Excel.WorksheetAddedEventArgs,"source",Property,Great,false
 excel,Excel.WorksheetAddedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetAddedEventArgs,"worksheetId",Property,Great,true
-excel,Excel.WorksheetCalculatedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetCalculatedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetCalculatedEventArgs,"address",Property,Excellent,false
 excel,Excel.WorksheetCalculatedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetCalculatedEventArgs,"worksheetId",Property,Great,false
@@ -7032,7 +7032,7 @@ excel,Excel.WorksheetFormatChangedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetFormatChangedEventArgs,"worksheetId",Property,Great,false
 excel,Excel.WorksheetFormatChangedEventArgs,"getRange(ctx)",Method,Great,false
 excel,Excel.WorksheetFormatChangedEventArgs,"getRangeOrNullObject(ctx)",Method,Great,false
-excel,Excel.WorksheetFormulaChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetFormulaChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetFormulaChangedEventArgs,"formulaDetails",Property,Excellent,false
 excel,Excel.WorksheetFormulaChangedEventArgs,"source",Property,Great,false
 excel,Excel.WorksheetFormulaChangedEventArgs,"type",Property,Great,false
@@ -7121,7 +7121,7 @@ excel,Excel.WorksheetRowSortedEventArgs,"worksheetId",Property,Great,false
 excel,Excel.WorksheetSearchCriteria,N/A,Interface,Fine,false
 excel,Excel.WorksheetSearchCriteria,"completeMatch",Property,Excellent,false
 excel,Excel.WorksheetSearchCriteria,"matchCase",Property,Excellent,false
-excel,Excel.WorksheetSelectionChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetSelectionChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetSelectionChangedEventArgs,"address",Property,Excellent,false
 excel,Excel.WorksheetSelectionChangedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetSelectionChangedEventArgs,"worksheetId",Property,Great,false
@@ -7265,7 +7265,7 @@ office,Office.CoercionType,"Table",EnumField,Excellent,false
 office,Office.CoercionType,"Text",EnumField,Excellent,false
 office,Office.CoercionType,"XmlSvg",EnumField,Excellent,false
 office,Office.Context,N/A,Interface,Good,true
-office,Office.Context,"commerceAllowed",Property,Excellent,false
+office,Office.Context,"commerceAllowed",Property,Excellent,true
 office,Office.Context,"contentLanguage",Property,Excellent,true
 office,Office.Context,"diagnostics",Property,Great,true
 office,Office.Context,"displayLanguage",Property,Excellent,true
@@ -7371,7 +7371,7 @@ office,Office.DialogOptions,"displayInIframe",Property,Excellent,false
 office,Office.DialogOptions,"height",Property,Excellent,true
 office,Office.DialogOptions,"promptBeforeOpen",Property,Excellent,false
 office,Office.DialogOptions,"width",Property,Excellent,true
-office,Office.DialogParentMessageReceivedEventArgs,N/A,Interface,Great,false
+office,Office.DialogParentMessageReceivedEventArgs,N/A,Interface,Great,true
 office,Office.DialogParentMessageReceivedEventArgs,"message",Property,Excellent,false
 office,Office.DialogParentMessageReceivedEventArgs,"origin",Property,Great,false
 office,Office.DialogParentMessageReceivedEventArgs,"type",Property,Excellent,false
@@ -8119,7 +8119,7 @@ office,Office.Ribbon,"requestCreateControls(tabDefinition)",Method,Fine,true
 office,Office.Ribbon,"requestUpdate(input)",Method,Fine,true
 office,Office.RibbonUpdaterData,N/A,Interface,Fine,false
 office,Office.RibbonUpdaterData,"tabs",Property,Great,true
-office,Office.SaveSettingsOptions,N/A,Interface,Fine,false
+office,Office.SaveSettingsOptions,N/A,Interface,Fine,true
 office,Office.SaveSettingsOptions,"asyncContext",Property,Excellent,false
 office,Office.SaveSettingsOptions,"overwriteIfStale",Property,Deprecated,false
 office,Office.SelectionMode,N/A,Enum,Excellent,false
@@ -8135,7 +8135,7 @@ office,Office.SetBindingDataOptions,"rows",Property,Deprecated,false
 office,Office.SetBindingDataOptions,"startColumn",Property,Excellent,false
 office,Office.SetBindingDataOptions,"startRow",Property,Excellent,false
 office,Office.SetBindingDataOptions,"tableOptions",Property,Great,false
-office,Office.SetSelectedDataOptions,N/A,Interface,Fine,false
+office,Office.SetSelectedDataOptions,N/A,Interface,Fine,true
 office,Office.SetSelectedDataOptions,"asyncContext",Property,Excellent,false
 office,Office.SetSelectedDataOptions,"cellFormat",Property,Great,false
 office,Office.SetSelectedDataOptions,"coercionType",Property,Excellent,false
@@ -8225,7 +8225,7 @@ office,Office.ValueFormat,"Unformatted",EnumField,Good,false
 office,Office.VisibilityMode,N/A,Enum,Good,true
 office,Office.VisibilityMode,"hidden",EnumField,Fine,false
 office,Office.VisibilityMode,"taskpane",EnumField,Good,false
-office,Office.VisibilityModeChangedMessage,N/A,Interface,Fine,false
+office,Office.VisibilityModeChangedMessage,N/A,Interface,Fine,true
 office,Office.VisibilityModeChangedMessage,"visibilityMode",Property,Good,false
 office,OfficeExtension.ClientObject,N/A,Class,Great,false
 office,OfficeExtension.ClientObject,"context",Property,Good,true
@@ -10064,7 +10064,7 @@ outlook,Office.SensitivityLabelsCatalog,"getAsync(options, callback)",Method,Fin
 outlook,Office.SensitivityLabelsCatalog,"getAsync(callback)",Method,Fine,true
 outlook,Office.SensitivityLabelsCatalog,"getIsEnabledAsync(options, callback)",Method,Fine,false
 outlook,Office.SensitivityLabelsCatalog,"getIsEnabledAsync(callback)",Method,Fine,true
-outlook,Office.SeriesTime,N/A,Interface,Good,false
+outlook,Office.SeriesTime,N/A,Interface,Good,true
 outlook,Office.SeriesTime,"getDuration()",Method,Fine,true
 outlook,Office.SeriesTime,"getEndDate()",Method,Good,true
 outlook,Office.SeriesTime,"getEndTime()",Method,Great,true
@@ -10901,7 +10901,7 @@ powerpoint,PowerPoint.ShapeZOrder,"bringToFront",EnumField,Great,false
 powerpoint,PowerPoint.ShapeZOrder,"sendBackward",EnumField,Great,false
 powerpoint,PowerPoint.ShapeZOrder,"sendToBack",EnumField,Great,false
 powerpoint,PowerPoint.Slide,N/A,Class,Fine,true
-powerpoint,PowerPoint.Slide,"background",Property,Good,false
+powerpoint,PowerPoint.Slide,"background",Property,Good,true
 powerpoint,PowerPoint.Slide,"context",Property,Excellent,false
 powerpoint,PowerPoint.Slide,"customXmlParts",Property,Great,false
 powerpoint,PowerPoint.Slide,"hyperlinks",Property,Great,true
@@ -10911,7 +10911,7 @@ powerpoint,PowerPoint.Slide,"layout",Property,Good,false
 powerpoint,PowerPoint.Slide,"shapes",Property,Great,false
 powerpoint,PowerPoint.Slide,"slideMaster",Property,Great,false
 powerpoint,PowerPoint.Slide,"tags",Property,Great,false
-powerpoint,PowerPoint.Slide,"themeColorScheme",Property,Great,false
+powerpoint,PowerPoint.Slide,"themeColorScheme",Property,Great,true
 powerpoint,PowerPoint.Slide,"applyLayout(slideLayout)",Method,Good,false
 powerpoint,PowerPoint.Slide,"delete()",Method,Good,true
 powerpoint,PowerPoint.Slide,"exportAsBase64()",Method,Good,true
@@ -10922,54 +10922,54 @@ powerpoint,PowerPoint.Slide,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.Slide,"moveTo(slideIndex)",Method,Fine,false
 powerpoint,PowerPoint.Slide,"setSelectedShapes(shapeIds)",Method,Fine,true
 powerpoint,PowerPoint.Slide,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackground,N/A,Class,Fine,false
+powerpoint,PowerPoint.SlideBackground,N/A,Class,Fine,true
 powerpoint,PowerPoint.SlideBackground,"areBackgroundGraphicsHidden",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackground,"context",Property,Excellent,false
-powerpoint,PowerPoint.SlideBackground,"fill",Property,Great,false
+powerpoint,PowerPoint.SlideBackground,"fill",Property,Great,true
 powerpoint,PowerPoint.SlideBackground,"isMasterBackgroundFollowed",Property,Great,false
 powerpoint,PowerPoint.SlideBackground,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideBackground,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideBackground,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SlideBackground,"reset()",Method,Good,false
 powerpoint,PowerPoint.SlideBackground,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundFill,N/A,Class,Fine,false
+powerpoint,PowerPoint.SlideBackgroundFill,N/A,Class,Fine,true
 powerpoint,PowerPoint.SlideBackgroundFill,"context",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundFill,"type",Property,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundFill,"getGradientFillOrNullObject()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundFill,"getPatternFillOrNullObject()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundFill,"getPictureOrTextureFillOrNullObject()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundFill,"getSolidFillOrNullObject()",Method,Excellent,false
+powerpoint,PowerPoint.SlideBackgroundFill,"getGradientFillOrNullObject()",Method,Excellent,true
+powerpoint,PowerPoint.SlideBackgroundFill,"getPatternFillOrNullObject()",Method,Excellent,true
+powerpoint,PowerPoint.SlideBackgroundFill,"getPictureOrTextureFillOrNullObject()",Method,Excellent,true
+powerpoint,PowerPoint.SlideBackgroundFill,"getSolidFillOrNullObject()",Method,Excellent,true
 powerpoint,PowerPoint.SlideBackgroundFill,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundFill,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundFill,"load(propertyNamesAndPaths)",Method,Great,false
-powerpoint,PowerPoint.SlideBackgroundFill,"setGradientFill(options)",Method,Good,false
-powerpoint,PowerPoint.SlideBackgroundFill,"setPatternFill(options)",Method,Good,false
-powerpoint,PowerPoint.SlideBackgroundFill,"setPictureOrTextureFill(options)",Method,Good,false
-powerpoint,PowerPoint.SlideBackgroundFill,"setSolidFill(options)",Method,Good,false
+powerpoint,PowerPoint.SlideBackgroundFill,"setGradientFill(options)",Method,Good,true
+powerpoint,PowerPoint.SlideBackgroundFill,"setPatternFill(options)",Method,Good,true
+powerpoint,PowerPoint.SlideBackgroundFill,"setPictureOrTextureFill(options)",Method,Good,true
+powerpoint,PowerPoint.SlideBackgroundFill,"setSolidFill(options)",Method,Good,true
 powerpoint,PowerPoint.SlideBackgroundFill,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundFillType,N/A,Enum,Great,false
+powerpoint,PowerPoint.SlideBackgroundFillType,N/A,Enum,Great,true
 powerpoint,PowerPoint.SlideBackgroundFillType,"gradient",EnumField,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundFillType,"pattern",EnumField,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundFillType,"pictureOrTexture",EnumField,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundFillType,"solid",EnumField,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundFillType,"unsupported",EnumField,Great,false
-powerpoint,PowerPoint.SlideBackgroundGradientFill,N/A,Class,Good,false
+powerpoint,PowerPoint.SlideBackgroundGradientFill,N/A,Class,Good,true
 powerpoint,PowerPoint.SlideBackgroundGradientFill,"context",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundGradientFill,"type",Property,Good,false
 powerpoint,PowerPoint.SlideBackgroundGradientFill,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFill,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFill,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFill,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundGradientFillOptions,N/A,Interface,Good,false
+powerpoint,PowerPoint.SlideBackgroundGradientFillOptions,N/A,Interface,Good,true
 powerpoint,PowerPoint.SlideBackgroundGradientFillOptions,"type",Property,Great,false
-powerpoint,PowerPoint.SlideBackgroundGradientFillType,N/A,Enum,Excellent,false
+powerpoint,PowerPoint.SlideBackgroundGradientFillType,N/A,Enum,Excellent,true
 powerpoint,PowerPoint.SlideBackgroundGradientFillType,"linear",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFillType,"path",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFillType,"radial",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFillType,"rectangular",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFillType,"shadeFromTitle",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundGradientFillType,"unsupported",EnumField,Great,false
-powerpoint,PowerPoint.SlideBackgroundPatternFill,N/A,Class,Good,false
+powerpoint,PowerPoint.SlideBackgroundPatternFill,N/A,Class,Good,true
 powerpoint,PowerPoint.SlideBackgroundPatternFill,"backgroundColor",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundPatternFill,"context",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundPatternFill,"foregroundColor",Property,Excellent,false
@@ -10978,11 +10978,11 @@ powerpoint,PowerPoint.SlideBackgroundPatternFill,"load(options)",Method,Great,fa
 powerpoint,PowerPoint.SlideBackgroundPatternFill,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundPatternFill,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundPatternFill,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundPatternFillOptions,N/A,Interface,Good,false
+powerpoint,PowerPoint.SlideBackgroundPatternFillOptions,N/A,Interface,Good,true
 powerpoint,PowerPoint.SlideBackgroundPatternFillOptions,"backgroundColor",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundPatternFillOptions,"foregroundColor",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundPatternFillOptions,"pattern",Property,Great,false
-powerpoint,PowerPoint.SlideBackgroundPatternFillType,N/A,Enum,Great,false
+powerpoint,PowerPoint.SlideBackgroundPatternFillType,N/A,Enum,Great,true
 powerpoint,PowerPoint.SlideBackgroundPatternFillType,"cross",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundPatternFillType,"darkDownwardDiagonal",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundPatternFillType,"darkHorizontal",EnumField,Great,false
@@ -11038,7 +11038,7 @@ powerpoint,PowerPoint.SlideBackgroundPatternFillType,"weave",EnumField,Great,fal
 powerpoint,PowerPoint.SlideBackgroundPatternFillType,"wideDownwardDiagonal",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundPatternFillType,"wideUpwardDiagonal",EnumField,Great,false
 powerpoint,PowerPoint.SlideBackgroundPatternFillType,"zigZag",EnumField,Great,false
-powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,N/A,Class,Good,false
+powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,N/A,Class,Good,true
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"context",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"transparency",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"load(options)",Method,Great,false
@@ -11046,10 +11046,10 @@ powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"load(propertyNames)",
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"setImage(base64EncodedImage)",Method,Poor,false
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFill,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFillOptions,N/A,Interface,Good,false
+powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFillOptions,N/A,Interface,Good,true
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFillOptions,"imageBase64",Property,Great,false
 powerpoint,PowerPoint.SlideBackgroundPictureOrTextureFillOptions,"transparency",Property,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundSolidFill,N/A,Class,Good,false
+powerpoint,PowerPoint.SlideBackgroundSolidFill,N/A,Class,Good,true
 powerpoint,PowerPoint.SlideBackgroundSolidFill,"color",Property,Great,false
 powerpoint,PowerPoint.SlideBackgroundSolidFill,"context",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundSolidFill,"transparency",Property,Excellent,false
@@ -11057,7 +11057,7 @@ powerpoint,PowerPoint.SlideBackgroundSolidFill,"load(options)",Method,Great,fals
 powerpoint,PowerPoint.SlideBackgroundSolidFill,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundSolidFill,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SlideBackgroundSolidFill,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.SlideBackgroundSolidFillOptions,N/A,Interface,Good,false
+powerpoint,PowerPoint.SlideBackgroundSolidFillOptions,N/A,Interface,Good,true
 powerpoint,PowerPoint.SlideBackgroundSolidFillOptions,"color",Property,Excellent,false
 powerpoint,PowerPoint.SlideBackgroundSolidFillOptions,"transparency",Property,Excellent,false
 powerpoint,PowerPoint.SlideCollection,N/A,Class,Fine,true
@@ -11482,7 +11482,7 @@ powerpoint,PowerPoint.TextVerticalAlignment,"middle",EnumField,Excellent,false
 powerpoint,PowerPoint.TextVerticalAlignment,"middleCentered",EnumField,Excellent,false
 powerpoint,PowerPoint.TextVerticalAlignment,"top",EnumField,Excellent,false
 powerpoint,PowerPoint.TextVerticalAlignment,"topCentered",EnumField,Excellent,false
-powerpoint,PowerPoint.ThemeColor,N/A,Enum,Good,false
+powerpoint,PowerPoint.ThemeColor,N/A,Enum,Good,true
 powerpoint,PowerPoint.ThemeColor,"accent1",EnumField,Excellent,false
 powerpoint,PowerPoint.ThemeColor,"accent2",EnumField,Excellent,false
 powerpoint,PowerPoint.ThemeColor,"accent3",EnumField,Excellent,false
@@ -11497,7 +11497,7 @@ powerpoint,PowerPoint.ThemeColor,"light1",EnumField,Excellent,false
 powerpoint,PowerPoint.ThemeColor,"light2",EnumField,Excellent,false
 powerpoint,PowerPoint.ThemeColor,"mixed",EnumField,Excellent,false
 powerpoint,PowerPoint.ThemeColor,"none",EnumField,Excellent,false
-powerpoint,PowerPoint.ThemeColorScheme,N/A,Class,Fine,false
+powerpoint,PowerPoint.ThemeColorScheme,N/A,Class,Fine,true
 powerpoint,PowerPoint.ThemeColorScheme,"context",Property,Excellent,false
 powerpoint,PowerPoint.ThemeColorScheme,"getThemeColor(color)",Method,Fine,false
 powerpoint,PowerPoint.ThemeColorScheme,"getThemeColor(color)",Method,Fine,false
@@ -12905,7 +12905,7 @@ word,Word.ContentControl,N/A,Class,Great,true
 word,Word.ContentControl,"appearance",Property,Excellent,false
 word,Word.ContentControl,"buildingBlockGalleryContentControl",Property,Excellent,false
 word,Word.ContentControl,"cannotDelete",Property,Excellent,false
-word,Word.ContentControl,"cannotEdit",Property,Excellent,false
+word,Word.ContentControl,"cannotEdit",Property,Great,false
 word,Word.ContentControl,"checkboxContentControl",Property,Excellent,true
 word,Word.ContentControl,"color",Property,Excellent,false
 word,Word.ContentControl,"comboBoxContentControl",Property,Excellent,true
@@ -14165,7 +14165,7 @@ word,Word.ExportFormat,"xps",EnumField,Great,false
 word,Word.ExportItem,N/A,Enum,Good,true
 word,Word.ExportItem,"documentContent",EnumField,Great,false
 word,Word.ExportItem,"documentWithMarkup",EnumField,Great,false
-word,Word.ExportOptimizeFor,N/A,Enum,Good,false
+word,Word.ExportOptimizeFor,N/A,Enum,Good,true
 word,Word.ExportOptimizeFor,"onScreen",EnumField,Great,false
 word,Word.ExportOptimizeFor,"print",EnumField,Great,false
 word,Word.ExportRange,N/A,Enum,Good,false
@@ -14477,7 +14477,7 @@ word,Word.Font,"setAsTemplateDefault()",Method,Good,false
 word,Word.Font,"toJSON()",Method,Excellent,false
 word,Word.Font,"track()",Method,Excellent,false
 word,Word.Font,"untrack()",Method,Excellent,false
-word,Word.FontBias,N/A,Enum,Good,false
+word,Word.FontBias,N/A,Enum,Good,true
 word,Word.FontBias,"farEast",EnumField,Great,false
 word,Word.FontBias,"noSpecified",EnumField,Great,false
 word,Word.FontBias,"standard",EnumField,Great,false
@@ -17252,7 +17252,7 @@ word,Word.Selection,"insertParagraphBefore()",Method,Fine,false
 word,Word.Selection,"insertParagraphStyleSeparator()",Method,Good,false
 word,Word.Selection,"insertRowsAbove(numRows)",Method,Fine,false
 word,Word.Selection,"insertRowsBelow(numRows)",Method,Fine,false
-word,Word.Selection,"insertSymbol(characterNumber, options)",Method,Fine,false
+word,Word.Selection,"insertSymbol(characterNumber, options)",Method,Fine,true
 word,Word.Selection,"insertText(Text)",Method,Poor,false
 word,Word.Selection,"insertXml(xml, transform)",Method,Fine,false
 word,Word.Selection,"isEqual(range)",Method,Good,false
@@ -17333,7 +17333,7 @@ word,Word.SelectionInsertDateTimeOptions,"insertAsFullWidth",Property,Excellent,
 word,Word.SelectionInsertFormulaOptions,N/A,Interface,Fine,true
 word,Word.SelectionInsertFormulaOptions,"formula",Property,Excellent,false
 word,Word.SelectionInsertFormulaOptions,"numberFormat",Property,Great,false
-word,Word.SelectionInsertSymbolOptions,N/A,Interface,Fine,false
+word,Word.SelectionInsertSymbolOptions,N/A,Interface,Fine,true
 word,Word.SelectionInsertSymbolOptions,"bias",Property,Excellent,false
 word,Word.SelectionInsertSymbolOptions,"font",Property,Great,false
 word,Word.SelectionInsertSymbolOptions,"unicode",Property,Excellent,false

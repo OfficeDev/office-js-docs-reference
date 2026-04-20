@@ -1280,14 +1280,14 @@ export declare namespace Word {
          */
         appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
         /**
-         * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+         * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         cannotDelete: boolean;
         /**
-         * Specifies a value that indicates whether the user can edit the contents of the content control.
+         * Specifies whether the user can edit the contents of the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1315,7 +1315,7 @@ export declare namespace Word {
          */
         placeholderText: string;
         /**
-         * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+         * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3583,7 +3583,7 @@ export declare namespace Word {
          */
         readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
         /**
-         * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+         * Specifies whether the inline image retains its original proportions when you resize it.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -11285,14 +11285,14 @@ export declare namespace Word {
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
-             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Specifies a value that indicates whether the user can edit the contents of the content control.
+             * Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -11313,7 +11313,7 @@ export declare namespace Word {
              */
             placeholderText?: string;
             /**
-             * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -11768,7 +11768,7 @@ export declare namespace Word {
              */
             hyperlink?: string;
             /**
-             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -13648,14 +13648,14 @@ export declare namespace Word {
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
-             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Specifies a value that indicates whether the user can edit the contents of the content control.
+             * Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -13683,7 +13683,7 @@ export declare namespace Word {
              */
             placeholderText?: string;
             /**
-             * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -14376,7 +14376,7 @@ export declare namespace Word {
              */
             imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
             /**
-             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -16760,14 +16760,14 @@ export declare namespace Word {
              */
             appearance?: boolean;
             /**
-             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Specifies a value that indicates whether the user can edit the contents of the content control.
+             * Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -16795,7 +16795,7 @@ export declare namespace Word {
              */
             placeholderText?: boolean;
             /**
-             * Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -16933,14 +16933,14 @@ export declare namespace Word {
              */
             appearance?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
+             * For EACH ITEM in the collection: Specifies whether the user can delete the content control. Mutually exclusive with `removeWhenEdited`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the user can edit the contents of the content control.
+             * For EACH ITEM in the collection: Specifies whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -16968,7 +16968,7 @@ export declare namespace Word {
              */
             placeholderText?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
+             * For EACH ITEM in the collection: Specifies whether the content control is removed after it's edited. Mutually exclusive with `cannotDelete`.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -17901,7 +17901,7 @@ export declare namespace Word {
              */
             imageFormat?: boolean;
             /**
-             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -18011,7 +18011,7 @@ export declare namespace Word {
              */
             imageFormat?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+             * For EACH ITEM in the collection: Specifies whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]

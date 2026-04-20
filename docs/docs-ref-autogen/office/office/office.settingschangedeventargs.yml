@@ -37,13 +37,8 @@ remarks: |-
   }
 
   function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
-      write('Event raised: ' + eventArgs.type);
+      console.log('Event raised: ' + eventArgs.type);
       doSomethingWithSettings(eventArgs.settings);
-  }
-
-  // Function that writes to a div with id='message' on the page.
-  function write(message) {
-      document.getElementById('message').innerText += message;
   }
   ```
 

@@ -91,7 +91,7 @@ methods:
           // Set color for chart point.
           point.format.fill.setSolidColor('red');
 
-          await context.sync();        
+          await context.sync();
       });
 
       ```
