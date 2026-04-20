@@ -240,3 +240,7 @@ fields:
     summary: >-
       Only underline individual words.
 
+
+      * \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Word"'

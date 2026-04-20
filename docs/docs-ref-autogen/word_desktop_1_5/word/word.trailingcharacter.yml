@@ -3,9 +3,11 @@ name: Word.TrailingCharacter
 uid: word!Word.TrailingCharacter:enum
 package: word!
 fullName: Word.TrailingCharacter
-summary: Represents the character inserted after the [list item](xref:word!Word.ListItem:class) mark.
+summary: >-
+  Represents the character inserted after the [list
+  item](xref:word!Word.ListItem:class) mark.
 remarks: '\[Api set: WordApiDesktop 1.1\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +17,7 @@ fields:
     summary: |-
       No character is inserted.
 
-      \* \[Api set: WordApiDesktop 1.1\]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"TrailingNone"'
   - name: trailingSpace
     uid: word!Word.TrailingCharacter.trailingSpace:member
@@ -23,7 +25,7 @@ fields:
     summary: |-
       A space is inserted. Default.
 
-      \* \[Api set: WordApiDesktop 1.1\]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"TrailingSpace"'
   - name: trailingTab
     uid: word!Word.TrailingCharacter.trailingTab:member
@@ -31,5 +33,5 @@ fields:
     summary: |-
       A tab is inserted.
 
-      \* \[Api set: WordApiDesktop 1.1\]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"TrailingTab"'

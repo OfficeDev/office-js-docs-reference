@@ -4,13 +4,19 @@ uid: word!Word.InsertShapeOptions:interface
 package: word!
 fullName: Word.InsertShapeOptions
 summary: Specifies the options to determine location and size when inserting a shape.
-remarks: |-
-  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
 
   await Word.run(async (context) => {
     // Inserts a text box at the beginning of the selection.
@@ -27,8 +33,9 @@ remarks: |-
 
     console.log("Inserted a text box at the beginning of the current selection.");
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -38,8 +45,10 @@ properties:
     package: word!
     fullName: height
     summary: If provided, specifies the height of the shape being inserted.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,8 +60,10 @@ properties:
     package: word!
     fullName: left
     summary: If provided, specifies the left position of the shape being inserted.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,8 +75,10 @@ properties:
     package: word!
     fullName: top
     summary: If provided, specifies the top position of the shape being inserted.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,8 +90,10 @@ properties:
     package: word!
     fullName: width
     summary: If provided, specifies the width of the shape being inserted.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

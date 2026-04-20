@@ -3,9 +3,11 @@ name: Word.Interfaces.DocumentUpdateData
 uid: word!Word.Interfaces.DocumentUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DocumentUpdateData
-summary: An interface for updating data on the `Document` object, for use in `document.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Document` object, for use in
+  `document.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#body:member
     package: word!
     fullName: body
-    summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the `Body` object of the main document. The body is the text that
+      excludes headers, footers, footnotes, textboxes, etc.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

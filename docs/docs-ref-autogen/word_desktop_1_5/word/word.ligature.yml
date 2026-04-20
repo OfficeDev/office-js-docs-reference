@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Ligature
 summary: Specifies the type of ligature applied to a font.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       All ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"All"'
   - name: contextual
     uid: word!Word.Ligature.contextual:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Contextual ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Contextual"'
   - name: contextualDiscretional
     uid: word!Word.Ligature.contextualDiscretional:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Contextual and discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ContextualDiscretional"'
   - name: contextualHistorical
     uid: word!Word.Ligature.contextualHistorical:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Contextual and historical ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ContextualHistorical"'
   - name: contextualHistoricalDiscretional
     uid: word!Word.Ligature.contextualHistoricalDiscretional:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Contextual, historical, and discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ContextualHistoricalDiscretional"'
   - name: discretional
     uid: word!Word.Ligature.discretional:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Discretional"'
   - name: historical
     uid: word!Word.Ligature.historical:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Historical ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Historical"'
   - name: historicalDiscretional
     uid: word!Word.Ligature.historicalDiscretional:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Historical and discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HistoricalDiscretional"'
   - name: none
     uid: word!Word.Ligature.none:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       No ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"None"'
   - name: standard
     uid: word!Word.Ligature.standard:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Standard ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Standard"'
   - name: standardContextual
     uid: word!Word.Ligature.standardContextual:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Standard and contextual ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardContextual"'
   - name: standardContextualDiscretional
     uid: word!Word.Ligature.standardContextualDiscretional:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Standard, contextual, and discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardContextualDiscretional"'
   - name: standardContextualHistorical
     uid: word!Word.Ligature.standardContextualHistorical:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Standard, contextual, and historical ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardContextualHistorical"'
   - name: standardDiscretional
     uid: word!Word.Ligature.standardDiscretional:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Standard and discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardDiscretional"'
   - name: standardHistorical
     uid: word!Word.Ligature.standardHistorical:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Standard and historical ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardHistorical"'
   - name: standardHistoricalDiscretional
     uid: word!Word.Ligature.standardHistoricalDiscretional:member
@@ -135,5 +135,5 @@ fields:
     summary: |-
       Standard, historical, and discretional ligatures applied.
 
-      \* \[Api set: WordApiDesktop 1.3\]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardHistoricalDiscretional"'

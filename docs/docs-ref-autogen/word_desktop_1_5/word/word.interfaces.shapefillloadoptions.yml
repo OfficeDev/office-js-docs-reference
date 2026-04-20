@@ -3,9 +3,11 @@ name: Word.Interfaces.ShapeFillLoadOptions
 uid: word!Word.Interfaces.ShapeFillLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShapeFillLoadOptions
-summary: Represents the fill formatting of a [Word.Shape](xref:word!Word.Shape:class) object.
+summary: >-
+  Represents the fill formatting of a [Word.Shape](xref:word!Word.Shape:class)
+  object.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +17,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,9 +32,11 @@ properties:
     uid: word!Word.Interfaces.ShapeFillLoadOptions#backgroundColor:member
     package: word!
     fullName: backgroundColor
-    summary: Specifies the shape fill background color. You can provide the value in the '\#RRGGBB' format or the color name.
+    summary: >-
+      Specifies the shape fill background color. You can provide the value in
+      the '\#RRGGBB' format or the color name.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,9 +47,11 @@ properties:
     uid: word!Word.Interfaces.ShapeFillLoadOptions#foregroundColor:member
     package: word!
     fullName: foregroundColor
-    summary: Specifies the shape fill foreground color. You can provide the value in the '\#RRGGBB' format or the color name.
+    summary: >-
+      Specifies the shape fill foreground color. You can provide the value in
+      the '\#RRGGBB' format or the color name.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,11 +63,12 @@ properties:
     package: word!
     fullName: transparency
     summary: >-
-      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
-      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
-      gradient fill type.
+      Specifies the transparency percentage of the fill as a value from 0.0
+      (opaque) through 1.0 (clear). Returns `null` if the shape type does not
+      support transparency or the shape fill has inconsistent transparency, such
+      as with a gradient fill type.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +81,7 @@ properties:
     fullName: type
     summary: Returns the fill type of the shape. See `Word.ShapeFillType` for details.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

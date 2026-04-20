@@ -4,14 +4,20 @@ uid: word!Word.Font:class
 package: word!
 fullName: Word.Font
 summary: Represents a font.
-remarks: |-
-  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Change the font color
+
   // Run a batch operation against the Word object model.
+
   await Word.run(async (context) => {
 
       // Create a range proxy object for the current selection.
@@ -25,8 +31,9 @@ remarks: |-
       await context.sync();
       console.log('The font color of the selection has been changed.');
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -35,15 +42,23 @@ properties:
     uid: word!Word.Font#bold:member
     package: word!
     fullName: bold
-    summary: Specifies whether the font is bold. `true` if the font is formatted as bold, otherwise, `false`<!-- -->.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies whether the font is bold. `true` if the font is formatted as
+      bold, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Bold format text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -57,8 +72,9 @@ properties:
           await context.sync();
           console.log('The selection is now bold.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,15 +85,23 @@ properties:
     uid: word!Word.Font#color:member
     package: word!
     fullName: color
-    summary: Specifies the color for the font. You can provide the value in the '\#RRGGBB' format or the color name.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies the color for the font. You can provide the value in the
+      '\#RRGGBB' format or the color name.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Change the font color
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -91,8 +115,9 @@ properties:
           await context.sync();
           console.log('The font color of the selection has been changed.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,9 +128,11 @@ properties:
     uid: word!Word.Font#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,9 +143,13 @@ properties:
     uid: word!Word.Font#doubleStrikeThrough:member
     package: word!
     fullName: doubleStrikeThrough
-    summary: Specifies whether the font has a double strikethrough. `true` if the font is formatted as double strikethrough text, otherwise, `false`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the font has a double strikethrough. `true` if the font
+      is formatted as double strikethrough text, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,15 +160,31 @@ properties:
     uid: word!Word.Font#highlightColor:member
     package: word!
     fullName: highlightColor
-    summary: 'Specifies the highlight color. To set it, use a value either in the ''\#RRGGBB'' format or the color name. To remove highlight color, set it to `null`<!-- -->. The returned highlight color can be in the ''\#RRGGBB'' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.'
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies the highlight color. To set it, use a value either in the
+      '\#RRGGBB' format or the color name. To remove highlight color, set it to
+      `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB'
+      format, an empty string for mixed highlight colors, or `null` for no
+      highlight color. Note: Only the default highlight colors are available in
+      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise",
+      "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed",
+      "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
+      for Windows Desktop, any other color is converted to the closest color
+      when applied to the font.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Highlight selected text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -151,8 +198,9 @@ properties:
           await context.sync();
           console.log('The selection has been highlighted.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,9 +211,13 @@ properties:
     uid: word!Word.Font#italic:member
     package: word!
     fullName: italic
-    summary: Specifies whether the font is italicized. `true` if the font is italicized, otherwise, `false`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the font is italicized. `true` if the font is
+      italicized, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,14 +229,20 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the font.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Change the font name
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -198,8 +256,9 @@ properties:
           await context.sync();
           console.log('The font name has changed.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,14 +270,20 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the font size in points.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Change the font size
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -232,8 +297,9 @@ properties:
           await context.sync();
           console.log('The font size has changed.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,15 +310,23 @@ properties:
     uid: word!Word.Font#strikeThrough:member
     package: word!
     fullName: strikeThrough
-    summary: Specifies whether the font has a strikethrough. `true` if the font is formatted as strikethrough text, otherwise, `false`<!-- -->.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Specifies whether the font has a strikethrough. `true` if the font is
+      formatted as strikethrough text, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Strike format text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -266,8 +340,9 @@ properties:
           await context.sync();
           console.log('The selection now has a strikethrough.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,9 +353,13 @@ properties:
     uid: word!Word.Font#subscript:member
     package: word!
     fullName: subscript
-    summary: Specifies whether the font is a subscript. `true` if the font is formatted as subscript, otherwise, `false`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the font is a subscript. `true` if the font is formatted
+      as subscript, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -291,9 +370,13 @@ properties:
     uid: word!Word.Font#superscript:member
     package: word!
     fullName: superscript
-    summary: Specifies whether the font is a superscript. `true` if the font is formatted as superscript, otherwise, `false`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the font is a superscript. `true` if the font is
+      formatted as superscript, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -305,14 +388,20 @@ properties:
     package: word!
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
-    remarks: |-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Underline format text
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
@@ -326,22 +415,36 @@ properties:
           await context.sync();
           console.log('The selection now has an underline style.');
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";'
+      content: >-
+        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
+        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
+        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
+        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
-        type: <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"
+        type: >-
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
+          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
+          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
+          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
+          | "WaveHeavy" | "WaveDouble"
 methods:
   - name: load(options)
     uid: word!Word.Font#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -357,16 +460,20 @@ methods:
     uid: word!Word.Font#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Font;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Font:class" />
@@ -375,9 +482,11 @@ methods:
     uid: word!Word.Font#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,7 +497,11 @@ methods:
                 }): Word.Font;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -401,19 +514,29 @@ methods:
     uid: word!Word.Font#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.FontUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
           type: <xref uid="word!Word.Interfaces.FontUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -422,9 +545,11 @@ methods:
     uid: word!Word.Font#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -440,9 +565,16 @@ methods:
     uid: word!Word.Font#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Font` object is an
+      API object, the `toJSON` method returns a plain JavaScript object (typed
+      as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -454,9 +586,18 @@ methods:
     uid: word!Word.Font#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -468,9 +609,16 @@ methods:
     uid: word!Word.Font#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

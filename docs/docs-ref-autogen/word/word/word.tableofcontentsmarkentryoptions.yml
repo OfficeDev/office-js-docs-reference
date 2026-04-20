@@ -83,4 +83,7 @@ properties:
 
     isPreview: false
     isDeprecated: false
-   
+    syntax:
+      content: 'tableId?: string;'
+      return:
+        type: string

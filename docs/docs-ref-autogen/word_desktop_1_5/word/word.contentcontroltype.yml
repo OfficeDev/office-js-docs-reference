@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ContentControlType
 summary: Specifies supported content control types and subtypes.
 remarks: '\[Api set: WordApi 1.1\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Building block gallery content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"BuildingBlockGallery"'
   - name: checkBox
     uid: word!Word.ContentControlType.checkBox:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Check box content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"CheckBox"'
   - name: comboBox
     uid: word!Word.ContentControlType.comboBox:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Combo box content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"ComboBox"'
   - name: datePicker
     uid: word!Word.ContentControlType.datePicker:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Date picker content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"DatePicker"'
   - name: dropDownList
     uid: word!Word.ContentControlType.dropDownList:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Dropdown list content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"DropDownList"'
   - name: group
     uid: word!Word.ContentControlType.group:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Group content control type.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Group"'
   - name: picture
     uid: word!Word.ContentControlType.picture:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Picture content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Picture"'
   - name: plainText
     uid: word!Word.ContentControlType.plainText:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Plain text content control type.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"PlainText"'
   - name: plainTextInline
     uid: word!Word.ContentControlType.plainTextInline:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Plain text content control subtype containing inline elements.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"PlainTextInline"'
   - name: plainTextParagraph
     uid: word!Word.ContentControlType.plainTextParagraph:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Plain text content control subtype containing paragraphs.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"PlainTextParagraph"'
   - name: repeatingSection
     uid: word!Word.ContentControlType.repeatingSection:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Repeating section content control (type and subtype).
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RepeatingSection"'
   - name: richText
     uid: word!Word.ContentControlType.richText:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Rich text content control type.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RichText"'
   - name: richTextInline
     uid: word!Word.ContentControlType.richTextInline:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Rich text content control subtype containing inline elements.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextInline"'
   - name: richTextParagraphs
     uid: word!Word.ContentControlType.richTextParagraphs:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Rich text content control subtype containing paragraphs.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextParagraphs"'
   - name: richTextTable
     uid: word!Word.ContentControlType.richTextTable:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Rich text content control subtype containing a whole table.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextTable"'
   - name: richTextTableCell
     uid: word!Word.ContentControlType.richTextTableCell:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Rich text content control subtype containing a whole cell.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextTableCell"'
   - name: richTextTableRow
     uid: word!Word.ContentControlType.richTextTableRow:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Rich text content control subtype containing a whole row.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextTableRow"'
   - name: unknown
     uid: word!Word.ContentControlType.unknown:member
@@ -151,5 +151,5 @@ fields:
     summary: |-
       Unknown content control type.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Unknown"'

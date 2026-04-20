@@ -235,4 +235,11 @@ methods:
       effect.
     remarks: ''
 
-    isPreview: 
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TemplateCollection;'
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

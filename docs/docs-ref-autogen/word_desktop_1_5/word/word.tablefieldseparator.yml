@@ -5,7 +5,7 @@ package: word!
 fullName: Word.TableFieldSeparator
 summary: Specifies the character used to separate fields in a table.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Uses the comma.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comma"'
   - name: defaultListSeparator
     uid: word!Word.TableFieldSeparator.defaultListSeparator:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Uses the default list separator.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DefaultListSeparator"'
   - name: paragraph
     uid: word!Word.TableFieldSeparator.paragraph:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Uses the paragraph marker.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraph"'
   - name: tab
     uid: word!Word.TableFieldSeparator.tab:member
@@ -39,5 +39,5 @@ fields:
     summary: |-
       Uses the tab.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Tab"'

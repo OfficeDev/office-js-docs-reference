@@ -3,9 +3,11 @@ name: Word.Interfaces.RevisionsFilterData
 uid: word!Word.Interfaces.RevisionsFilterData:interface
 package: word!
 fullName: Word.Interfaces.RevisionsFilterData
-summary: An interface describing the data returned by calling `revisionsFilter.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `revisionsFilter.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,22 +16,33 @@ properties:
     uid: word!Word.Interfaces.RevisionsFilterData#markup:member
     package: word!
     fullName: markup
-    summary: Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `RevisionsMarkup` value that represents the extent of reviewer
+      markup displayed in the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'markup?: Word.RevisionsMarkup | "None" | "Simple" | "All";'
       return:
-        type: <xref uid="word!Word.RevisionsMarkup:enum" /> | "None" | "Simple" | "All"
+        type: >-
+          <xref uid="word!Word.RevisionsMarkup:enum" /> | "None" | "Simple" |
+          "All"
   - name: view
     uid: word!Word.Interfaces.RevisionsFilterData#view:member
     package: word!
     fullName: view
-    summary: Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `RevisionsView` value that represents globally whether Word
+      displays the original version of the document or the final version, which
+      might have revisions and formatting changes applied.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

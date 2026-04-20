@@ -3,9 +3,11 @@ name: Word.Interfaces.RevisionsFilterUpdateData
 uid: word!Word.Interfaces.RevisionsFilterUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RevisionsFilterUpdateData
-summary: An interface for updating data on the `RevisionsFilter` object, for use in `revisionsFilter.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `RevisionsFilter` object, for use in
+  `revisionsFilter.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,22 +16,33 @@ properties:
     uid: word!Word.Interfaces.RevisionsFilterUpdateData#markup:member
     package: word!
     fullName: markup
-    summary: Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `RevisionsMarkup` value that represents the extent of reviewer
+      markup displayed in the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'markup?: Word.RevisionsMarkup | "None" | "Simple" | "All";'
       return:
-        type: <xref uid="word!Word.RevisionsMarkup:enum" /> | "None" | "Simple" | "All"
+        type: >-
+          <xref uid="word!Word.RevisionsMarkup:enum" /> | "None" | "Simple" |
+          "All"
   - name: view
     uid: word!Word.Interfaces.RevisionsFilterUpdateData#view:member
     package: word!
     fullName: view
-    summary: Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `RevisionsView` value that represents globally whether Word
+      displays the original version of the document or the final version, which
+      might have revisions and formatting changes applied.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

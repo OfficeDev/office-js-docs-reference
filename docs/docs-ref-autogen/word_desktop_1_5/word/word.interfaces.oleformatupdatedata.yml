@@ -3,9 +3,11 @@ name: Word.Interfaces.OleFormatUpdateData
 uid: word!Word.Interfaces.OleFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.OleFormatUpdateData
-summary: An interface for updating data on the `OleFormat` object, for use in `oleFormat.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `OleFormat` object, for use in
+  `oleFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: classType
     summary: Specifies the class type for the specified OLE object, picture, or field.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +29,11 @@ properties:
     uid: word!Word.Interfaces.OleFormatUpdateData#iconIndex:member
     package: word!
     fullName: iconIndex
-    summary: Specifies the icon that is used when the `displayAsIcon` property is `true`<!-- -->.
+    summary: >-
+      Specifies the icon that is used when the `displayAsIcon` property is
+      `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: iconLabel
     summary: Specifies the text displayed below the icon for the OLE object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: iconName
     summary: Specifies the program file in which the icon for the OLE object is stored.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +67,15 @@ properties:
       return:
         type: string
   - name: isFormattingPreservedOnUpdate
-    uid: word!Word.Interfaces.OleFormatUpdateData#isFormattingPreservedOnUpdate:member
+    uid: >-
+      word!Word.Interfaces.OleFormatUpdateData#isFormattingPreservedOnUpdate:member
     package: word!
     fullName: isFormattingPreservedOnUpdate
-    summary: Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
+    summary: >-
+      Specifies whether formatting done in Microsoft Word to the linked OLE
+      object is preserved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.OperationUnit
 summary: Specifies the unit of measurement used in Word operations.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Specifies a cell unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Cell"'
   - name: character
     uid: word!Word.OperationUnit.character:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Specifies a character unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Character"'
   - name: characterFormat
     uid: word!Word.OperationUnit.characterFormat:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Specifies a character format unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CharacterFormat"'
   - name: column
     uid: word!Word.OperationUnit.column:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Specifies a column unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Column"'
   - name: item
     uid: word!Word.OperationUnit.item:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Specifies an item unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Item"'
   - name: line
     uid: word!Word.OperationUnit.line:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Specifies a line unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Line"'
   - name: paragraph
     uid: word!Word.OperationUnit.paragraph:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Specifies a paragraph unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraph"'
   - name: paragraphFormat
     uid: word!Word.OperationUnit.paragraphFormat:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Specifies a paragraph format unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ParagraphFormat"'
   - name: row
     uid: word!Word.OperationUnit.row:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Specifies a row unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Row"'
   - name: screen
     uid: word!Word.OperationUnit.screen:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Specifies a screen unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Screen"'
   - name: section
     uid: word!Word.OperationUnit.section:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Specifies a section unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Section"'
   - name: sentence
     uid: word!Word.OperationUnit.sentence:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Specifies a sentence unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Sentence"'
   - name: story
     uid: word!Word.OperationUnit.story:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Specifies a story unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Story"'
   - name: table
     uid: word!Word.OperationUnit.table:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Specifies a table unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Table"'
   - name: window
     uid: word!Word.OperationUnit.window:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Specifies a window unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Window"'
   - name: word
     uid: word!Word.OperationUnit.word:member
@@ -135,5 +135,5 @@ fields:
     summary: |-
       Specifies a word unit.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Word"'

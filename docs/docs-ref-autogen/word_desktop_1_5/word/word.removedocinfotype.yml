@@ -5,7 +5,7 @@ package: word!
 fullName: Word.RemoveDocInfoType
 summary: Specifies the type of document information to remove.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       All document information types.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"All"'
   - name: atMentions
     uid: word!Word.RemoveDocInfoType.atMentions:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       At mentions in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AtMentions"'
   - name: commentReactions
     uid: word!Word.RemoveDocInfoType.commentReactions:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Comment reactions in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CommentReactions"'
   - name: comments
     uid: word!Word.RemoveDocInfoType.comments:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Comments in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comments"'
   - name: contentType
     uid: word!Word.RemoveDocInfoType.contentType:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Content type information.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ContentType"'
   - name: documentIntelligence
     uid: word!Word.RemoveDocInfoType.documentIntelligence:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Document intelligence information.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentIntelligence"'
   - name: documentManagementPolicy
     uid: word!Word.RemoveDocInfoType.documentManagementPolicy:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Document management policy.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentManagementPolicy"'
   - name: documentProperties
     uid: word!Word.RemoveDocInfoType.documentProperties:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Document properties.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentProperties"'
   - name: documentServerProperties
     uid: word!Word.RemoveDocInfoType.documentServerProperties:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Document server properties.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentServerProperties"'
   - name: documentTasks
     uid: word!Word.RemoveDocInfoType.documentTasks:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Document tasks.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentTasks"'
   - name: documentWorkspace
     uid: word!Word.RemoveDocInfoType.documentWorkspace:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Document workspace properties.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentWorkspace"'
   - name: emailHeader
     uid: word!Word.RemoveDocInfoType.emailHeader:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Email header in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EmailHeader"'
   - name: inkAnnotations
     uid: word!Word.RemoveDocInfoType.inkAnnotations:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Ink annotations in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"InkAnnotations"'
   - name: removePersonalInformation
     uid: word!Word.RemoveDocInfoType.removePersonalInformation:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Personal information in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RemovePersonalInformation"'
   - name: revisions
     uid: word!Word.RemoveDocInfoType.revisions:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Revisions in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Revisions"'
   - name: routingSlip
     uid: word!Word.RemoveDocInfoType.routingSlip:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Routing slip in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RoutingSlip"'
   - name: sendForReview
     uid: word!Word.RemoveDocInfoType.sendForReview:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Send for review information in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SendForReview"'
   - name: taskpaneWebExtensions
     uid: word!Word.RemoveDocInfoType.taskpaneWebExtensions:member
@@ -151,7 +151,7 @@ fields:
     summary: |-
       Taskpane web extensions.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaskpaneWebExtensions"'
   - name: template
     uid: word!Word.RemoveDocInfoType.template:member
@@ -159,7 +159,7 @@ fields:
     summary: |-
       Template information.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Template"'
   - name: versions
     uid: word!Word.RemoveDocInfoType.versions:member
@@ -167,5 +167,5 @@ fields:
     summary: |-
       Versions in the document.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Versions"'

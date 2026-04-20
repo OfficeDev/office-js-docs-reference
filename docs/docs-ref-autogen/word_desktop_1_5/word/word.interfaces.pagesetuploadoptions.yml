@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.PageSetupLoadOptions
 summary: Represents the page setup settings for a Word document or section.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +15,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +32,7 @@ properties:
     fullName: bookFoldPrinting
     summary: Specifies whether Microsoft Word prints the document as a booklet.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +45,7 @@ properties:
     fullName: bookFoldPrintingSheets
     summary: Specifies the number of pages for each booklet.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,10 +57,10 @@ properties:
     package: word!
     fullName: bookFoldReversePrinting
     summary: >-
-      Specifies if Microsoft Word reverses the printing order for book fold printing of bidirectional or Asian language
-      documents.
+      Specifies if Microsoft Word reverses the printing order for book fold
+      printing of bidirectional or Asian language documents.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,9 +71,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#bottomMargin:member
     package: word!
     fullName: bottomMargin
-    summary: Specifies the distance (in points) between the bottom edge of the page and the bottom boundary of the body text.
+    summary: >-
+      Specifies the distance (in points) between the bottom edge of the page and
+      the bottom boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +88,7 @@ properties:
     fullName: charsLine
     summary: Specifies the number of characters per line in the document grid.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,12 +96,13 @@ properties:
       return:
         type: boolean
   - name: differentFirstPageHeaderFooter
-    uid: word!Word.Interfaces.PageSetupLoadOptions#differentFirstPageHeaderFooter:member
+    uid: >-
+      word!Word.Interfaces.PageSetupLoadOptions#differentFirstPageHeaderFooter:member
     package: word!
     fullName: differentFirstPageHeaderFooter
     summary: Specifies whether the first page has a different header and footer.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,9 +113,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#footerDistance:member
     package: word!
     fullName: footerDistance
-    summary: Specifies the distance between the footer and the bottom of the page in points.
+    summary: >-
+      Specifies the distance between the footer and the bottom of the page in
+      points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,9 +128,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#gutter:member
     package: word!
     fullName: gutter
-    summary: Specifies the amount (in points) of extra margin space added to each page in a document or section for binding.
+    summary: >-
+      Specifies the amount (in points) of extra margin space added to each page
+      in a document or section for binding.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,7 +145,7 @@ properties:
     fullName: gutterPosition
     summary: Specifies on which side the gutter appears in a document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,10 +157,10 @@ properties:
     package: word!
     fullName: gutterStyle
     summary: >-
-      Specifies whether Microsoft Word uses gutters for the current document based on a right-to-left language or a
-      left-to-right language.
+      Specifies whether Microsoft Word uses gutters for the current document
+      based on a right-to-left language or a left-to-right language.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,9 +171,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#headerDistance:member
     package: word!
     fullName: headerDistance
-    summary: Specifies the distance between the header and the top of the page in points.
+    summary: >-
+      Specifies the distance between the header and the top of the page in
+      points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +188,7 @@ properties:
     fullName: layoutMode
     summary: Specifies the layout mode for the current document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,9 +199,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#leftMargin:member
     package: word!
     fullName: leftMargin
-    summary: Specifies the distance (in points) between the left edge of the page and the left boundary of the body text.
+    summary: >-
+      Specifies the distance (in points) between the left edge of the page and
+      the left boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,9 +214,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#lineNumbering:member
     package: word!
     fullName: lineNumbering
-    summary: Specifies a `LineNumbering` object that represents the line numbers for the `PageSetup` object.
+    summary: >-
+      Specifies a `LineNumbering` object that represents the line numbers for
+      the `PageSetup` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +231,7 @@ properties:
     fullName: linesPage
     summary: Specifies the number of lines per page in the document grid.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,9 +242,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#mirrorMargins:member
     package: word!
     fullName: mirrorMargins
-    summary: Specifies if the inside and outside margins of facing pages are the same width.
+    summary: >-
+      Specifies if the inside and outside margins of facing pages are the same
+      width.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -238,12 +254,13 @@ properties:
       return:
         type: boolean
   - name: oddAndEvenPagesHeaderFooter
-    uid: word!Word.Interfaces.PageSetupLoadOptions#oddAndEvenPagesHeaderFooter:member
+    uid: >-
+      word!Word.Interfaces.PageSetupLoadOptions#oddAndEvenPagesHeaderFooter:member
     package: word!
     fullName: oddAndEvenPagesHeaderFooter
     summary: Specifies whether odd and even pages have different headers and footers.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,7 +273,7 @@ properties:
     fullName: orientation
     summary: Specifies the orientation of the page.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,7 +286,7 @@ properties:
     fullName: pageHeight
     summary: Specifies the page height in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -282,7 +299,7 @@ properties:
     fullName: pageWidth
     summary: Specifies the page width in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,7 +312,7 @@ properties:
     fullName: paperSize
     summary: Specifies the paper size of the page.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -306,9 +323,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#rightMargin:member
     package: word!
     fullName: rightMargin
-    summary: Specifies the distance (in points) between the right edge of the page and the right boundary of the body text.
+    summary: >-
+      Specifies the distance (in points) between the right edge of the page and
+      the right boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,7 +340,7 @@ properties:
     fullName: sectionDirection
     summary: Specifies the reading order and alignment for the specified sections.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -334,7 +353,7 @@ properties:
     fullName: sectionStart
     summary: Specifies the type of section break for the specified object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -347,7 +366,7 @@ properties:
     fullName: showGrid
     summary: Specifies whether to show the grid.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -358,9 +377,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#suppressEndnotes:member
     package: word!
     fullName: suppressEndnotes
-    summary: Specifies if endnotes are printed at the end of the next section that doesn't suppress endnotes.
+    summary: >-
+      Specifies if endnotes are printed at the end of the next section that
+      doesn't suppress endnotes.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,7 +394,7 @@ properties:
     fullName: topMargin
     summary: Specifies the top margin of the page in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -386,7 +407,7 @@ properties:
     fullName: twoPagesOnOne
     summary: Specifies whether to print two pages per sheet.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -397,9 +418,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: Specifies the vertical alignment of text on each page in a document or section.
+    summary: >-
+      Specifies the vertical alignment of text on each page in a document or
+      section.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

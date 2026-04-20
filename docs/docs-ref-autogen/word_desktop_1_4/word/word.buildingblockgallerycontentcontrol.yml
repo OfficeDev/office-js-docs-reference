@@ -4,8 +4,10 @@ uid: word!Word.BuildingBlockGalleryContentControl:class
 package: word!
 fullName: Word.BuildingBlockGalleryContentControl
 summary: Represents the `BuildingBlockGalleryContentControl` object.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,21 +17,29 @@ properties:
     package: word!
     fullName: appearance
     summary: Specifies the appearance of the content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";'
+      content: >-
+        appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" |
+        "Hidden";
       return:
-        type: <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox" | "Tags" | "Hidden"
+        type: >-
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
+          | "Tags" | "Hidden"
   - name: buildingBlockCategory
     uid: word!Word.BuildingBlockGalleryContentControl#buildingBlockCategory:member
     package: word!
     fullName: buildingBlockCategory
     summary: Specifies the category for the building block content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,22 +50,52 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#buildingBlockType:member
     package: word!
     fullName: buildingBlockType
-    summary: Specifies a `BuildingBlockType` value that represents the type of building block for the building block content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `BuildingBlockType` value that represents the type of building
+      block for the building block content control.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'buildingBlockType: Word.BuildingBlockType | "QuickParts" | "CoverPage" | "Equations" | "Footers" | "Headers" | "PageNumber" | "Tables" | "Watermarks" | "AutoText" | "TextBox" | "PageNumberTop" | "PageNumberBottom" | "PageNumberPage" | "TableOfContents" | "CustomQuickParts" | "CustomCoverPage" | "CustomEquations" | "CustomFooters" | "CustomHeaders" | "CustomPageNumber" | "CustomTables" | "CustomWatermarks" | "CustomAutoText" | "CustomTextBox" | "CustomPageNumberTop" | "CustomPageNumberBottom" | "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" | "Custom2" | "Custom3" | "Custom4" | "Custom5" | "Bibliography" | "CustomBibliography";'
+      content: >-
+        buildingBlockType: Word.BuildingBlockType | "QuickParts" | "CoverPage" |
+        "Equations" | "Footers" | "Headers" | "PageNumber" | "Tables" |
+        "Watermarks" | "AutoText" | "TextBox" | "PageNumberTop" |
+        "PageNumberBottom" | "PageNumberPage" | "TableOfContents" |
+        "CustomQuickParts" | "CustomCoverPage" | "CustomEquations" |
+        "CustomFooters" | "CustomHeaders" | "CustomPageNumber" | "CustomTables"
+        | "CustomWatermarks" | "CustomAutoText" | "CustomTextBox" |
+        "CustomPageNumberTop" | "CustomPageNumberBottom" |
+        "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" | "Custom2"
+        | "Custom3" | "Custom4" | "Custom5" | "Bibliography" |
+        "CustomBibliography";
       return:
-        type: <xref uid="word!Word.BuildingBlockType:enum" /> | "QuickParts" | "CoverPage" | "Equations" | "Footers" | "Headers" | "PageNumber" | "Tables" | "Watermarks" | "AutoText" | "TextBox" | "PageNumberTop" | "PageNumberBottom" | "PageNumberPage" | "TableOfContents" | "CustomQuickParts" | "CustomCoverPage" | "CustomEquations" | "CustomFooters" | "CustomHeaders" | "CustomPageNumber" | "CustomTables" | "CustomWatermarks" | "CustomAutoText" | "CustomTextBox" | "CustomPageNumberTop" | "CustomPageNumberBottom" | "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" | "Custom2" | "Custom3" | "Custom4" | "Custom5" | "Bibliography" | "CustomBibliography"
+        type: >-
+          <xref uid="word!Word.BuildingBlockType:enum" /> | "QuickParts" |
+          "CoverPage" | "Equations" | "Footers" | "Headers" | "PageNumber" |
+          "Tables" | "Watermarks" | "AutoText" | "TextBox" | "PageNumberTop" |
+          "PageNumberBottom" | "PageNumberPage" | "TableOfContents" |
+          "CustomQuickParts" | "CustomCoverPage" | "CustomEquations" |
+          "CustomFooters" | "CustomHeaders" | "CustomPageNumber" |
+          "CustomTables" | "CustomWatermarks" | "CustomAutoText" |
+          "CustomTextBox" | "CustomPageNumberTop" | "CustomPageNumberBottom" |
+          "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" |
+          "Custom2" | "Custom3" | "Custom4" | "Custom5" | "Bibliography" |
+          "CustomBibliography"
   - name: color
     uid: word!Word.BuildingBlockGalleryContentControl#color:member
     package: word!
     fullName: color
-    summary: Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the '\#RRGGBB' format.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the color of the content
+      control. You can provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +106,11 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +122,10 @@ properties:
     package: word!
     fullName: id
     summary: Gets the identification for the content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +136,13 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#isTemporary:member
     package: word!
     fullName: isTemporary
-    summary: Specifies whether to remove the content control from the active document when the user edits the contents of the control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether to remove the content control from the active document
+      when the user edits the contents of the control.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,22 +153,36 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#level:member
     package: word!
     fullName: level
-    summary: Gets the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the level of the content control—whether the content control
+      surrounds text, paragraphs, table cells, or table rows; or if it is
+      inline.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly level: Word.ContentControlLevel | "Inline" | "Paragraph" | "Row" | "Cell";'
+      content: >-
+        readonly level: Word.ContentControlLevel | "Inline" | "Paragraph" |
+        "Row" | "Cell";
       return:
-        type: <xref uid="word!Word.ContentControlLevel:enum" /> | "Inline" | "Paragraph" | "Row" | "Cell"
+        type: >-
+          <xref uid="word!Word.ContentControlLevel:enum" /> | "Inline" |
+          "Paragraph" | "Row" | "Cell"
   - name: lockContentControl
     uid: word!Word.BuildingBlockGalleryContentControl#lockContentControl:member
     package: word!
     fullName: lockContentControl
-    summary: Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the active document, `false` means it can be deleted.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the content control is locked (can't be deleted). `true`
+      means that the user can't delete it from the active document, `false`
+      means it can be deleted.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +193,14 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#lockContents:member
     package: word!
     fullName: lockContents
-    summary: Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the contents, `false` means the contents are editable.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the contents of the content control are locked (not
+      editable). `true` means the user can't edit the contents, `false` means
+      the contents are editable.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,9 +211,13 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#placeholderText:member
     package: word!
     fullName: placeholderText
-    summary: Returns a `BuildingBlock` object that represents the placeholder text for the content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `BuildingBlock` object that represents the placeholder text for
+      the content control.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,9 +228,13 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#range:member
     package: word!
     fullName: range
-    summary: Returns a `Range` object that represents the contents of the content control in the active document.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `Range` object that represents the contents of the content
+      control in the active document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,8 +246,10 @@ properties:
     package: word!
     fullName: showingPlaceholderText
     summary: Gets if the placeholder text for the content control is being displayed.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,8 +261,10 @@ properties:
     package: word!
     fullName: tag
     summary: Specifies a tag to identify the content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,8 +276,10 @@ properties:
     package: word!
     fullName: title
     summary: Specifies the title for the content control.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,9 +290,13 @@ properties:
     uid: word!Word.BuildingBlockGalleryContentControl#xmlMapping:member
     package: word!
     fullName: xmlMapping
-    summary: Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns an `XmlMapping` object that represents the mapping of the content
+      control to XML data in the data store of the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,8 +309,10 @@ methods:
     package: word!
     fullName: copy()
     summary: Copies the content control from the active document to the Clipboard.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,9 +324,13 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#cut:member(1)
     package: word!
     fullName: cut()
-    summary: Removes the content control from the active document and moves the content control to the Clipboard.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Removes the content control from the active document and moves the content
+      control to the Clipboard.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -252,8 +343,10 @@ methods:
     package: word!
     fullName: delete(deleteContents)
     summary: Deletes the content control and optionally its contents.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,17 +362,25 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions): Word.BuildingBlockGalleryContentControl;'
+      content: >-
+        load(options?:
+        Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions):
+        Word.BuildingBlockGalleryContentControl;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.BuildingBlockGalleryContentControlLoadOptions:interface"
+            />
       return:
         type: <xref uid="word!Word.BuildingBlockGalleryContentControl:class" />
         description: ''
@@ -287,16 +388,22 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Word.BuildingBlockGalleryContentControl;'
+      content: >-
+        load(propertyNames?: string | string[]):
+        Word.BuildingBlockGalleryContentControl;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.BuildingBlockGalleryContentControl:class" />
@@ -305,9 +412,11 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,7 +427,11 @@ methods:
                 }): Word.BuildingBlockGalleryContentControl;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -331,19 +444,32 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.BuildingBlockGalleryContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.BuildingBlockGalleryContentControlUpdateData,
+        options?: OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-          type: <xref uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData:interface" />
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -352,9 +478,11 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,16 +498,24 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#setPlaceholderText:member(1)
     package: word!
     fullName: setPlaceholderText(options)
-    summary: Sets the placeholder text that displays in the content control until a user enters their own text.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the placeholder text that displays in the content control until a
+      user enters their own text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setPlaceholderText(options?: Word.ContentControlPlaceholderOptions): void;'
+      content: >-
+        setPlaceholderText(options?: Word.ContentControlPlaceholderOptions):
+        void;
       parameters:
         - id: options
-          description: Optional. The options for configuring the content control's placeholder text.
+          description: >-
+            Optional. The options for configuring the content control's
+            placeholder text.
           type: <xref uid="word!Word.ContentControlPlaceholderOptions:interface" />
       return:
         type: void
@@ -388,23 +524,44 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.BuildingBlockGalleryContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BuildingBlockGalleryContentControlData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.BuildingBlockGalleryContentControl` object is an API object, the
+      `toJSON` method returns a plain JavaScript object (typed as
+      `Word.Interfaces.BuildingBlockGalleryContentControlData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.BuildingBlockGalleryContentControlData;'
       return:
-        type: <xref uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData:interface" />
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.BuildingBlockGalleryContentControlData:interface"
+          />
         description: ''
   - name: track()
     uid: word!Word.BuildingBlockGalleryContentControl#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -416,9 +573,16 @@ methods:
     uid: word!Word.BuildingBlockGalleryContentControl#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

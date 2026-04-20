@@ -4,10 +4,12 @@ uid: word!Word.RelativeHorizontalPosition:enum
 package: word!
 fullName: Word.RelativeHorizontalPosition
 summary: >-
-  Represents what the horizontal position of a shape is relative to. For more information about margins, see [Change the
-  margins in your Word document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
+  Represents what the horizontal position of a shape is relative to. For more
+  information about margins, see [Change the margins in your Word
+  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
+  -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +19,7 @@ fields:
     summary: |-
       Relative to character.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Character"'
   - name: column
     uid: word!Word.RelativeHorizontalPosition.column:member
@@ -25,7 +27,7 @@ fields:
     summary: |-
       Relative to column.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Column"'
   - name: insideMargin
     uid: word!Word.RelativeHorizontalPosition.insideMargin:member
@@ -33,7 +35,7 @@ fields:
     summary: |-
       Relative to inside margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"InsideMargin"'
   - name: leftMargin
     uid: word!Word.RelativeHorizontalPosition.leftMargin:member
@@ -41,7 +43,7 @@ fields:
     summary: |-
       Relative to left margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftMargin"'
   - name: margin
     uid: word!Word.RelativeHorizontalPosition.margin:member
@@ -49,7 +51,7 @@ fields:
     summary: |-
       Relative to margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeHorizontalPosition.outsideMargin:member
@@ -57,7 +59,7 @@ fields:
     summary: |-
       Relative to outside margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeHorizontalPosition.page:member
@@ -65,7 +67,7 @@ fields:
     summary: |-
       Relative to page.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Page"'
   - name: rightMargin
     uid: word!Word.RelativeHorizontalPosition.rightMargin:member
@@ -73,5 +75,5 @@ fields:
     summary: |-
       Relative to right margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightMargin"'

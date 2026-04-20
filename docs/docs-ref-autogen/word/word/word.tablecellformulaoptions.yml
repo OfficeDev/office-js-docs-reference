@@ -52,4 +52,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-     
+      content: 'numFormat?: string;'
+      return:
+        type: string

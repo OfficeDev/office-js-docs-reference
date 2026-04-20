@@ -4,8 +4,10 @@ uid: word!Word.Interfaces.SectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SectionLoadOptions
 summary: Represents a section in a Word document.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: word!Word.Interfaces.SectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +32,13 @@ properties:
     uid: word!Word.Interfaces.SectionLoadOptions#body:member
     package: word!
     fullName: body
-    summary: Gets the `Body` object of the section. This doesn't include the header, footer, and other section metadata.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the `Body` object of the section. This doesn't include the header,
+      footer, and other section metadata.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +50,10 @@ properties:
     package: word!
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the section.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +65,10 @@ properties:
     package: word!
     fullName: protectedForForms
     summary: Specifies if the section is protected for forms.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

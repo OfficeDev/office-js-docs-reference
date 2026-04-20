@@ -3,9 +3,11 @@ name: Word.Interfaces.TableOfContentsUpdateData
 uid: word!Word.Interfaces.TableOfContentsUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfContentsUpdateData
-summary: An interface for updating data on the `TableOfContents` object, for use in `tableOfContents.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `TableOfContents` object, for use in
+  `tableOfContents.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

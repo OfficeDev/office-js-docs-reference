@@ -3,9 +3,11 @@ name: Word.Interfaces.ConflictUpdateData
 uid: word!Word.Interfaces.ConflictUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ConflictUpdateData
-summary: An interface for updating data on the `Conflict` object, for use in `conflict.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Conflict` object, for use in
+  `conflict.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.ConflictUpdateData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `Conflict` object.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `Conflict` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

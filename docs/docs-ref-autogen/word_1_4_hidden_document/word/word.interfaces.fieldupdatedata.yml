@@ -3,9 +3,11 @@ name: Word.Interfaces.FieldUpdateData
 uid: word!Word.Interfaces.FieldUpdateData:interface
 package: word!
 fullName: Word.Interfaces.FieldUpdateData
-summary: An interface for updating data on the `Field` object, for use in `field.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Field` object, for use in `field.set({
+  ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,11 +17,13 @@ properties:
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: |-
-      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,8 +35,10 @@ properties:
     package: word!
     fullName: result
     summary: Gets the field's result data.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,9 +49,13 @@ properties:
     uid: word!Word.Interfaces.FieldUpdateData#showCodes:member
     package: word!
     fullName: showCodes
-    summary: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the field codes are displayed for the specified field.
+      `true` if the field codes are displayed, `false` otherwise.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

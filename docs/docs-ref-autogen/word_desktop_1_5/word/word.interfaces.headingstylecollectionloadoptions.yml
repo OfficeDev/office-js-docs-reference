@@ -3,9 +3,12 @@ name: Word.Interfaces.HeadingStyleCollectionLoadOptions
 uid: word!Word.Interfaces.HeadingStyleCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleCollectionLoadOptions
-summary: Represents a collection of [Word.HeadingStyle](xref:word!Word.HeadingStyle:class) objects in a Word document.
+summary: >-
+  Represents a collection of
+  [Word.HeadingStyle](xref:word!Word.HeadingStyle:class) objects in a Word
+  document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +18,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,10 +34,10 @@ properties:
     package: word!
     fullName: level
     summary: >-
-      For EACH ITEM in the collection: Specifies the level for the heading style in a table of contents or table of
-      figures. Must be a value from 1 to 9.
+      For EACH ITEM in the collection: Specifies the level for the heading style
+      in a table of contents or table of figures. Must be a value from 1 to 9.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,9 +48,11 @@ properties:
     uid: word!Word.Interfaces.HeadingStyleCollectionLoadOptions#name:member
     package: word!
     fullName: name
-    summary: 'For EACH ITEM in the collection: Specifies the name of style for a heading.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of style for a
+      heading.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.CommentContentRangeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CommentContentRangeUpdateData
 summary: >-
-  An interface for updating data on the `CommentContentRange` object, for use in `commentContentRange.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `CommentContentRange` object, for use in
+  `commentContentRange.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: bold
     summary: Specifies whether the comment text is bold.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,10 +30,11 @@ properties:
     package: word!
     fullName: hyperlink
     summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
-      when you set a new hyperlink on the range.
+      Gets the first hyperlink in the range, or sets a hyperlink on the range.
+      All hyperlinks in the range are deleted when you set a new hyperlink on
+      the range.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +47,7 @@ properties:
     fullName: italic
     summary: Specifies whether the comment text is italicized.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,7 +60,7 @@ properties:
     fullName: strikeThrough
     summary: Specifies whether the comment text has a strikethrough.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,20 +71,25 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeUpdateData#underline:member
     package: word!
     fullName: underline
-    summary: Specifies the comment text's underline type. `none` if the comment text isn't underlined.
+    summary: >-
+      Specifies the comment text's underline type. `none` if the comment text
+      isn't underlined.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" |
-        "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" |
-        "WaveDouble";
+        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
+        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
+        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
+        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
-          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
-          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
-          "WaveHeavy" | "WaveDouble"
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
+          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
+          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
+          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
+          | "WaveHeavy" | "WaveDouble"

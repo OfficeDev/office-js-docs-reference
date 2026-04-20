@@ -3,9 +3,11 @@ name: Word.Interfaces.TabStopCollectionLoadOptions
 uid: word!Word.Interfaces.TabStopCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TabStopCollectionLoadOptions
-summary: Represents a collection of [tab stops](xref:word!Word.TabStop:class) in a Word document.
+summary: >-
+  Represents a collection of [tab stops](xref:word!Word.TabStop:class) in a Word
+  document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +17,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,9 +32,11 @@ properties:
     uid: word!Word.Interfaces.TabStopCollectionLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: 'For EACH ITEM in the collection: Gets a `TabAlignment` value that represents the alignment for the tab stop.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `TabAlignment` value that
+      represents the alignment for the tab stop.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,9 +47,11 @@ properties:
     uid: word!Word.Interfaces.TabStopCollectionLoadOptions#customTab:member
     package: word!
     fullName: customTab
-    summary: 'For EACH ITEM in the collection: Gets whether this tab stop is a custom tab stop.'
+    summary: >-
+      For EACH ITEM in the collection: Gets whether this tab stop is a custom
+      tab stop.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,9 +62,11 @@ properties:
     uid: word!Word.Interfaces.TabStopCollectionLoadOptions#leader:member
     package: word!
     fullName: leader
-    summary: 'For EACH ITEM in the collection: Gets a `TabLeader` value that represents the leader for this `TabStop` object.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `TabLeader` value that represents
+      the leader for this `TabStop` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +79,7 @@ properties:
     fullName: next
     summary: 'For EACH ITEM in the collection: Gets the next tab stop in the collection.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,9 +90,11 @@ properties:
     uid: word!Word.Interfaces.TabStopCollectionLoadOptions#position:member
     package: word!
     fullName: position
-    summary: 'For EACH ITEM in the collection: Gets the position of the tab stop relative to the left margin.'
+    summary: >-
+      For EACH ITEM in the collection: Gets the position of the tab stop
+      relative to the left margin.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,9 +105,11 @@ properties:
     uid: word!Word.Interfaces.TabStopCollectionLoadOptions#previous:member
     package: word!
     fullName: previous
-    summary: 'For EACH ITEM in the collection: Gets the previous tab stop in the collection.'
+    summary: >-
+      For EACH ITEM in the collection: Gets the previous tab stop in the
+      collection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

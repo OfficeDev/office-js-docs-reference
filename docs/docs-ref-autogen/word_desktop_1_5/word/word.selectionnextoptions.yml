@@ -3,9 +3,11 @@ name: Word.SelectionNextOptions
 uid: word!Word.SelectionNextOptions:interface
 package: word!
 fullName: Word.SelectionNextOptions
-summary: Represents the options for the [Selection.getNextRange](xref:word!Word.Selection:class) method.
+summary: >-
+  Represents the options for the
+  [Selection.getNextRange](xref:word!Word.Selection:class) method.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.SelectionNextOptions#count:member
     package: word!
     fullName: count
-    summary: If provided, specifies the number of units by which you want to move ahead. The default value is 1.
+    summary: >-
+      If provided, specifies the number of units by which you want to move
+      ahead. The default value is 1.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,17 +31,22 @@ properties:
     uid: word!Word.SelectionNextOptions#unit:member
     package: word!
     fullName: unit
-    summary: If provided, specifies the type of units by which to move the selection. The default value is `character`<!-- -->.
+    summary: >-
+      If provided, specifies the type of units by which to move the selection.
+      The default value is `character`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" |
-        "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item";
+        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
+        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
+        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
+        "Item";
       return:
         type: >-
-          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" |
-          "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat"
-          | "Table" | "Item"
+          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
+          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
+          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
+          "ParagraphFormat" | "Table" | "Item"

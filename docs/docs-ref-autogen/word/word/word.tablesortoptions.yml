@@ -384,4 +384,38 @@ properties:
     syntax:
       content: 'sortOrder?: Word.SortOrder | "Ascending" | "Descending";'
       return:
-        type: <xref uid="word!Word.SortOrder:enum" /> | "Ascend
+        type: <xref uid="word!Word.SortOrder:enum" /> | "Ascending" | "Descending"
+  - name: sortOrder2
+    uid: word!Word.TableSortOptions#sortOrder2:member
+    package: word!
+    fullName: sortOrder2
+    summary: >-
+      If provided, specifies the sort order of the second field to sort by. The
+      default value is `ascending`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortOrder2?: Word.SortOrder | "Ascending" | "Descending";'
+      return:
+        type: <xref uid="word!Word.SortOrder:enum" /> | "Ascending" | "Descending"
+  - name: sortOrder3
+    uid: word!Word.TableSortOptions#sortOrder3:member
+    package: word!
+    fullName: sortOrder3
+    summary: >-
+      If provided, specifies the sort order of the third field to sort by. The
+      default value is `ascending`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortOrder3?: Word.SortOrder | "Ascending" | "Descending";'
+      return:
+        type: <xref uid="word!Word.SortOrder:enum" /> | "Ascending" | "Descending"

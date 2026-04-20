@@ -8,13 +8,17 @@ remarks: >-
   \[Api set: WordApi 1.4\]
 
 
-  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in
-  requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, the Word UI
-  on the web primarily only supports fields as read-only (see [Field codes in Word for the
-  web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->). To learn more about Word UI
-  clients that more fully support fields, see the product list at the beginning of [Insert, edit, and view fields in
-  Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!-- -->.
-example: []
+  Important: To learn more about which fields can be inserted, see the
+  `Word.Range.insertField` API introduced in requirement set 1.5. Support for
+  managing fields is similar to what's available in the Word UI. However, the
+  Word UI on the web primarily only supports fields as read-only (see [Field
+  codes in Word for the
+  web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!--
+  -->). To learn more about Word UI clients that more fully support fields, see
+  the product list at the beginning of [Insert, edit, and view fields in
+  Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
+  -->.
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -28,7 +32,7 @@ properties:
       \[Api set: WordApi 1.4\]
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,10 +44,10 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,10 +59,11 @@ properties:
     package: word!
     fullName: data
     summary: >-
-      Specifies data in a field of `addin` type. If the field isn't an `addin` type, it's `null` and it will throw a
-      general exception when code attempts to set it.
+      Specifies data in a field of `addin` type. If the field isn't an `addin`
+      type, it's `null` and it will throw a general exception when code attempts
+      to set it.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,20 +76,22 @@ properties:
     fullName: kind
     summary: Gets the field's kind.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly kind: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";'
       return:
-        type: <xref uid="word!Word.FieldKind:enum" /> | "None" | "Hot" | "Warm" | "Cold"
+        type: >-
+          <xref uid="word!Word.FieldKind:enum" /> | "None" | "Hot" | "Warm" |
+          "Cold"
   - name: linkFormat
     uid: word!Word.Field#linkFormat:member
     package: word!
     fullName: linkFormat
     summary: Gets a `LinkFormat` object that represents the link options of the field.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,9 +102,11 @@ properties:
     uid: word!Word.Field#locked:member
     package: word!
     fullName: locked
-    summary: Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
+    summary: >-
+      Specifies whether the field is locked. `true` if the field is locked,
+      `false` otherwise.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,9 +117,11 @@ properties:
     uid: word!Word.Field#oleFormat:member
     package: word!
     fullName: oleFormat
-    summary: Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.
+    summary: >-
+      Gets an `OleFormat` object that represents the OLE characteristics (other
+      than linking) for the field.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +134,7 @@ properties:
     fullName: parentBody
     summary: Gets the parent body of the field.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,10 +146,10 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the field. Throws an `ItemNotFound` error if there isn't a parent content
-      control.
+      Gets the content control that contains the field. Throws an `ItemNotFound`
+      error if there isn't a parent content control.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,13 +161,14 @@ properties:
     package: word!
     fullName: parentContentControlOrNullObject
     summary: >-
-      Gets the content control that contains the field. If there isn't a parent content control, then this method will
-      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      Gets the content control that contains the field. If there isn't a parent
+      content control, then this method will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,9 +179,11 @@ properties:
     uid: word!Word.Field#parentTable:member
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the field. Throws an `ItemNotFound` error if it isn't contained in a table.
+    summary: >-
+      Gets the table that contains the field. Throws an `ItemNotFound` error if
+      it isn't contained in a table.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,9 +194,11 @@ properties:
     uid: word!Word.Field#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: Gets the table cell that contains the field. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+    summary: >-
+      Gets the table cell that contains the field. Throws an `ItemNotFound`
+      error if it isn't contained in a table cell.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,13 +210,14 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the field. If it isn't contained in a table cell, then this method will return
-      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
-      methods and
+      Gets the table cell that contains the field. If it isn't contained in a
+      table cell, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,12 +229,14 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      Gets the table that contains the field. If it isn't contained in a table, then this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      Gets the table that contains the field. If it isn't contained in a table,
+      then this method will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,7 +249,7 @@ properties:
     fullName: result
     summary: Gets the field's result data.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,10 +261,10 @@ properties:
     package: word!
     fullName: showCodes
     summary: >-
-      Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed,
-      `false` otherwise.
+      Specifies whether the field codes are displayed for the specified field.
+      `true` if the field codes are displayed, `false` otherwise.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,35 +277,47 @@ properties:
     fullName: type
     summary: Gets the field's type.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        readonly type: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" |
-        "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate"
-        | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" |
-        "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" |
-        "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" |
-        "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" |
-        "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" |
-        "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate"
-        | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" |
-        "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" |
-        "UserName" | "XE" | "Empty" | "Others" | "Undefined";
+        readonly type: Word.FieldType | "Addin" | "AddressBlock" | "Advance" |
+        "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" |
+        "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" |
+        "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" |
+        "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" |
+        "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" |
+        "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" |
+        "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" |
+        "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" |
+        "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" |
+        "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" |
+        "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" |
+        "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" |
+        "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" |
+        "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time"
+        | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName"
+        | "XE" | "Empty" | "Others" | "Undefined";
       return:
         type: >-
-          <xref uid="word!Word.FieldType:enum" /> | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText"
-          | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" |
-          "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" |
-          "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" |
-          "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" |
-          "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" |
-          "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" |
-          "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" |
-          "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" |
-          "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" |
-          "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined"
+          <xref uid="word!Word.FieldType:enum" /> | "Addin" | "AddressBlock" |
+          "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode"
+          | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare"
+          | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" |
+          "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" |
+          "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" |
+          "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" |
+          "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" |
+          "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link"
+          | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" |
+          "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" |
+          "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" |
+          "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" |
+          "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" |
+          "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" |
+          "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" |
+          "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined"
 methods:
   - name: copyToClipboard()
     uid: word!Word.Field#copyToClipboard:member(1)
@@ -294,7 +325,7 @@ methods:
     fullName: copyToClipboard()
     summary: Copies the field to the Clipboard.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,7 +339,7 @@ methods:
     fullName: cut()
     summary: Removes the field from the document and places it on the Clipboard.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,7 +353,7 @@ methods:
     fullName: delete()
     summary: Deletes the field.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +367,7 @@ methods:
     fullName: doClick()
     summary: Clicks the field.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -348,9 +379,11 @@ methods:
     uid: word!Word.Field#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: Gets the next field. Throws an `ItemNotFound` error if this field is the last one.
+    summary: >-
+      Gets the next field. Throws an `ItemNotFound` error if this field is the
+      last one.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -363,12 +396,13 @@ methods:
     package: word!
     fullName: getNextOrNullObject()
     summary: >-
-      Gets the next field. If this field is the last one, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      Gets the next field. If this field is the last one, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->.
+      For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,10 +415,10 @@ methods:
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -401,17 +435,19 @@ methods:
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Field;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Field:class" />
@@ -421,10 +457,10 @@ methods:
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -436,8 +472,10 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -452,7 +490,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the field.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -460,8 +498,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the
-            default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -472,7 +510,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the field.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -480,8 +518,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the
-            default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -491,22 +529,28 @@ methods:
     package: word!
     fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.FieldUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.FieldUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
           type: <xref uid="word!Word.Interfaces.FieldUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -515,9 +559,11 @@ methods:
     uid: word!Word.Field#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -534,13 +580,15 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.Field` object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.FieldData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Field` object is
+      an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.FieldData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -553,15 +601,17 @@ methods:
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created. If this object is part of a collection,
-      you should also track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -575,7 +625,7 @@ methods:
     fullName: unlink()
     summary: Replaces the field with its most recent result.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -588,12 +638,15 @@ methods:
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -607,7 +660,7 @@ methods:
     fullName: updateResult()
     summary: Updates the field.
     remarks: '\[Api set: WordApi 1.5\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -621,9 +674,10 @@ methods:
     fullName: updateSource()
     summary: >-
       Saves the changes made to the results of an [INCLUDETEXT
-      field](https://support.microsoft.com/office/1c34d6d6-0de3-4b5c-916a-2ff950fb629e) back to the source document.
+      field](https://support.microsoft.com/office/1c34d6d6-0de3-4b5c-916a-2ff950fb629e)
+      back to the source document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

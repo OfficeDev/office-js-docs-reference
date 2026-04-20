@@ -62,4 +62,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'numRows?: numb
+      content: 'numRows?: number;'
+      return:
+        type: number

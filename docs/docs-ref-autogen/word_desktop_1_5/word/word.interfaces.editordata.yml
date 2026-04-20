@@ -3,9 +3,11 @@ name: Word.Interfaces.EditorData
 uid: word!Word.Interfaces.EditorData:interface
 package: word!
 fullName: Word.Interfaces.EditorData
-summary: An interface describing the data returned by calling `editor.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `editor.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.EditorData#id:member
     package: word!
     fullName: id
-    summary: Gets the identifier for the `Editor` object when the parent document is saved as a webpage.
+    summary: >-
+      Gets the identifier for the `Editor` object when the parent document is
+      saved as a webpage.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: name
     summary: Gets the name of the editor.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +44,11 @@ properties:
     uid: word!Word.Interfaces.EditorData#nextRange:member
     package: word!
     fullName: nextRange
-    summary: Gets a `Range` object that represents the next range that the editor has permissions to modify.
+    summary: >-
+      Gets a `Range` object that represents the next range that the editor has
+      permissions to modify.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +59,11 @@ properties:
     uid: word!Word.Interfaces.EditorData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `Editor` object.
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `Editor` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

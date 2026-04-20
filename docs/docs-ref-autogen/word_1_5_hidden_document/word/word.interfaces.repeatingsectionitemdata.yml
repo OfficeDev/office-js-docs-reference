@@ -3,9 +3,11 @@ name: Word.Interfaces.RepeatingSectionItemData
 uid: word!Word.Interfaces.RepeatingSectionItemData:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionItemData
-summary: An interface describing the data returned by calling `repeatingSectionItem.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `repeatingSectionItem.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

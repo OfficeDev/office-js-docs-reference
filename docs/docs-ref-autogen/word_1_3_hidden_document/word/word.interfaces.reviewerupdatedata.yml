@@ -3,9 +3,11 @@ name: Word.Interfaces.ReviewerUpdateData
 uid: word!Word.Interfaces.ReviewerUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ReviewerUpdateData
-summary: An interface for updating data on the `Reviewer` object, for use in `reviewer.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Reviewer` object, for use in
+  `reviewer.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

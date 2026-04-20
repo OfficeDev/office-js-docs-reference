@@ -3,9 +3,11 @@ name: Word.DropDownListContentControl
 uid: word!Word.DropDownListContentControl:class
 package: word!
 fullName: Word.DropDownListContentControl
-summary: Represents the data specific to content controls of type `dropDownList`<!-- -->.
+summary: >-
+  Represents the data specific to content controls of type `dropDownList`<!--
+  -->.
 remarks: '\[Api set: WordApi 1.9\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,10 +17,10 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +33,7 @@ properties:
     fullName: listItems
     summary: Gets the collection of list items in the dropdown list content control.
     remarks: '\[Api set: WordApi 1.9\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,13 +47,16 @@ methods:
     fullName: addListItem(displayText, value, index)
     summary: >-
       Adds a new list item to this dropdown list content control and returns a
-      [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class) object.
+      [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class)
+      object.
     remarks: '\[Api set: WordApi 1.9\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;'
+      content: >-
+        addListItem(displayText: string, value?: string, index?: number):
+        Word.ContentControlListItem;
       parameters:
         - id: displayText
           description: Display text of the list item.
@@ -61,8 +66,10 @@ methods:
           type: string
         - id: index
           description: >-
-            Optional. Index location of the new item in the list. If an item exists at the position specified, the
-            existing item is pushed down in the list. If omitted, the new item is added to the end of the list.
+            Optional. Index location of the new item in the list. If an item
+            exists at the position specified, the existing item is pushed down
+            in the list. If omitted, the new item is added to the end of the
+            list.
           type: number
       return:
         type: <xref uid="word!Word.ContentControlListItem:class" />
@@ -73,7 +80,7 @@ methods:
     fullName: deleteAllListItems()
     summary: Deletes all list items in this dropdown list content control.
     remarks: '\[Api set: WordApi 1.9\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,17 +93,21 @@ methods:
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Word.DropDownListContentControl;'
+      content: >-
+        load(propertyNames?: string | string[]):
+        Word.DropDownListContentControl;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.DropDownListContentControl:class" />
@@ -106,10 +117,10 @@ methods:
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,8 +132,10 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
-            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -136,34 +149,41 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
-      passed to it.) Whereas the original `Word.DropDownListContentControl` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Word.Interfaces.DropDownListContentControlData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.DropDownListContentControl` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Word.Interfaces.DropDownListContentControlData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.DropDownListContentControlData;'
       return:
-        type: <xref uid="word!Word.Interfaces.DropDownListContentControlData:interface" />
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.DropDownListContentControlData:interface" />
         description: ''
   - name: track()
     uid: word!Word.DropDownListContentControl#track:member(1)
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
-      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
-      object to the tracked object collection when the object was first created. If this object is part of a collection,
-      you should also track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,12 +196,15 @@ methods:
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

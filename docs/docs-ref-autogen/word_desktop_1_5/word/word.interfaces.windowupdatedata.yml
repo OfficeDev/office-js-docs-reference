@@ -3,9 +3,11 @@ name: Word.Interfaces.WindowUpdateData
 uid: word!Word.Interfaces.WindowUpdateData:interface
 package: word!
 fullName: Word.Interfaces.WindowUpdateData
-summary: An interface for updating data on the `Window` object, for use in `window.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Window` object, for use in
+  `window.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: areRulersDisplayed
     summary: Specifies whether rulers are displayed for the window or pane.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,10 +30,10 @@ properties:
     package: word!
     fullName: areThumbnailsDisplayed
     summary: >-
-      Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft
-      Word document window.
+      Specifies whether thumbnail images of the pages in a document are
+      displayed along the left side of the Microsoft Word document window.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,10 +45,10 @@ properties:
     package: word!
     fullName: caption
     summary: >-
-      Specifies the caption text for the window that is displayed in the title bar of the document or application
-      window.
+      Specifies the caption text for the window that is displayed in the title
+      bar of the document or application window.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,9 +59,11 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#horizontalPercentScrolled:member
     package: word!
     fullName: horizontalPercentScrolled
-    summary: Specifies the horizontal scroll position as a percentage of the document width.
+    summary: >-
+      Specifies the horizontal scroll position as a percentage of the document
+      width.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,26 +74,30 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#imeMode:member
     package: word!
     fullName: imeMode
-    summary: Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+    summary: >-
+      Specifies the default start-up mode for the Japanese Input Method Editor
+      (IME).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        imeMode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" |
-        "Alpha" | "HangulFull" | "Hangul";
+        imeMode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" |
+        "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" |
+        "Hangul";
       return:
         type: >-
-          <xref uid="word!Word.ImeMode:enum" /> | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf"
-          | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul"
+          <xref uid="word!Word.ImeMode:enum" /> | "NoControl" | "On" | "Off" |
+          "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" |
+          "HangulFull" | "Hangul"
   - name: isDocumentMapVisible
     uid: word!Word.Interfaces.WindowUpdateData#isDocumentMapVisible:member
     package: word!
     fullName: isDocumentMapVisible
     summary: Specifies whether the document map is visible.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,10 +109,10 @@ properties:
     package: word!
     fullName: isEnvelopeVisible
     summary: >-
-      Specifies whether the email message header is visible in the document window. The default value is `false`<!--
-      -->.
+      Specifies whether the email message header is visible in the document
+      window. The default value is `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,12 +120,13 @@ properties:
       return:
         type: boolean
   - name: isHorizontalScrollBarDisplayed
-    uid: word!Word.Interfaces.WindowUpdateData#isHorizontalScrollBarDisplayed:member
+    uid: >-
+      word!Word.Interfaces.WindowUpdateData#isHorizontalScrollBarDisplayed:member
     package: word!
     fullName: isHorizontalScrollBarDisplayed
     summary: Specifies whether a horizontal scroll bar is displayed for the window.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,9 +137,11 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#isLeftScrollBarDisplayed:member
     package: word!
     fullName: isLeftScrollBarDisplayed
-    summary: Specifies whether the vertical scroll bar appears on the left side of the document window.
+    summary: >-
+      Specifies whether the vertical scroll bar appears on the left side of the
+      document window.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,9 +152,11 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#isRightRulerDisplayed:member
     package: word!
     fullName: isRightRulerDisplayed
-    summary: Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+    summary: >-
+      Specifies whether the vertical ruler appears on the right side of the
+      document window in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,7 +169,7 @@ properties:
     fullName: isSplit
     summary: Specifies whether the window is split into multiple panes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,7 +182,7 @@ properties:
     fullName: isVerticalRulerDisplayed
     summary: Specifies whether a vertical ruler is displayed for the window or pane.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,7 +195,7 @@ properties:
     fullName: isVerticalScrollBarDisplayed
     summary: Specifies whether a vertical scroll bar is displayed for the window.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,7 +208,7 @@ properties:
     fullName: isVisible
     summary: Specifies whether the window is visible.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,7 +221,7 @@ properties:
     fullName: next
     summary: Gets the next document window in the collection of open document windows.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,7 +234,7 @@ properties:
     fullName: previous
     summary: Gets the previous document window in the collection open document windows.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,22 +245,28 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#showSourceDocuments:member
     package: word!
     fullName: showSourceDocuments
-    summary: Specifies how Microsoft Word displays source documents after a compare and merge process.
+    summary: >-
+      Specifies how Microsoft Word displays source documents after a compare and
+      merge process.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'showSourceDocuments?: Word.ShowSourceDocuments | "None" | "Original" | "Revised" | "Both";'
+      content: >-
+        showSourceDocuments?: Word.ShowSourceDocuments | "None" | "Original" |
+        "Revised" | "Both";
       return:
-        type: <xref uid="word!Word.ShowSourceDocuments:enum" /> | "None" | "Original" | "Revised" | "Both"
+        type: >-
+          <xref uid="word!Word.ShowSourceDocuments:enum" /> | "None" |
+          "Original" | "Revised" | "Both"
   - name: splitVertical
     uid: word!Word.Interfaces.WindowUpdateData#splitVertical:member
     package: word!
     fullName: splitVertical
     summary: Specifies the vertical split percentage for the window.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,7 +279,7 @@ properties:
     fullName: styleAreaWidth
     summary: Specifies the width of the style area in points.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,9 +290,11 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#verticalPercentScrolled:member
     package: word!
     fullName: verticalPercentScrolled
-    summary: Specifies the vertical scroll position as a percentage of the document length.
+    summary: >-
+      Specifies the vertical scroll position as a percentage of the document
+      length.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

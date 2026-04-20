@@ -3,33 +3,44 @@ name: Word.PreferredWidthType
 uid: word!Word.PreferredWidthType:enum
 package: word!
 fullName: Word.PreferredWidthType
-summary: Specifies the preferred unit of measure to use when measuring the width of an item.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Specifies the preferred unit of measure to use when measuring the width of an
+  item.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: auto
     uid: word!Word.PreferredWidthType.auto:member
     package: word!
-    summary: |-
-      Automatically select the unit of measure to use based on the current selection.
+    summary: >-
+      Automatically select the unit of measure to use based on the current
+      selection.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Auto"'
   - name: percent
     uid: word!Word.PreferredWidthType.percent:member
     package: word!
-    summary: |-
+    summary: >-
       Measure the current item width using a specified percentage.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Percent"'
   - name: points
     uid: word!Word.PreferredWidthType.points:member
     package: word!
-    summary: |-
+    summary: >-
       Measure the current item width using a specified number of points.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Points"'

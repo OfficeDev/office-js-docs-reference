@@ -3,9 +3,11 @@ name: Word.Interfaces.TableStyleUpdateData
 uid: word!Word.Interfaces.TableStyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableStyleUpdateData
-summary: An interface for updating data on the `TableStyle` object, for use in `tableStyle.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `TableStyle` object, for use in
+  `tableStyle.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,21 +17,31 @@ properties:
     package: word!
     fullName: alignment
     summary: Specifies the table's alignment against the page margin.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      content: >-
+        alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" |
+        "Right" | "Justified";
       return:
-        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+        type: >-
+          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
+          | "Centered" | "Right" | "Justified"
   - name: allowBreakAcrossPage
     uid: word!Word.Interfaces.TableStyleUpdateData#allowBreakAcrossPage:member
     package: word!
     fullName: allowBreakAcrossPage
-    summary: Specifies whether lines in tables formatted with a style break across pages.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether lines in tables formatted with a style break across
+      pages.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -260,4 +260,14 @@ methods:
       -->. Having many tracked objects slows down the host application, so
       please remember to free any objects you add, once you're done using them.
       You'll need to call `context.sync()` before the memory release takes
-      e
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TableCollection;'
+      return:
+        type: <xref uid="word!Word.TableCollection:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

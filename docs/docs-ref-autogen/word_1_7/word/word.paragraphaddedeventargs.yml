@@ -3,16 +3,25 @@ name: Word.ParagraphAddedEventArgs
 uid: word!Word.ParagraphAddedEventArgs:interface
 package: word!
 fullName: Word.ParagraphAddedEventArgs
-summary: Provides information about the paragraphs that raised the `paragraphAdded` event.
-remarks: |-
-  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: >-
+  Provides information about the paragraphs that raised the `paragraphAdded`
+  event.
+remarks: >-
+  \[ [API set: WordApi
+  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
 
   // Registers the onParagraphAdded event handler on the document.
+
   await Word.run(async (context) => {
     eventContext = context.document.onParagraphAdded.add(paragraphAdded);
     await context.sync();
@@ -20,15 +29,18 @@ remarks: |-
     console.log("Added event handler for when paragraphs are added.");
   });
 
+
   ...
+
 
   async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.type} event detected. IDs of paragraphs that were added:`, event.uniqueLocalIds);
     });
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -37,9 +49,13 @@ properties:
     uid: word!Word.ParagraphAddedEventArgs#source:member
     package: word!
     fullName: source
-    summary: Specifies the source of the event. It can be local or remote (through coauthoring).
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the source of the event. It can be local or remote (through
+      coauthoring).
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,21 +67,40 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";'
+      content: >-
+        type: Word.EventType | "ContentControlDeleted" |
+        "ContentControlSelectionChanged" | "ContentControlDataChanged" |
+        "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited"
+        | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" |
+        "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
+        "AnnotationRemoved" | "AnnotationPopupAction";
       return:
-        type: <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
+          "ContentControlSelectionChanged" | "ContentControlDataChanged" |
+          "ContentControlAdded" | "ContentControlEntered" |
+          "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" |
+          "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: uniqueLocalIds
     uid: word!Word.ParagraphAddedEventArgs#uniqueLocalIds:member
     package: word!
     fullName: uniqueLocalIds
-    summary: Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the unique IDs of the involved paragraphs. IDs are in standard
+      8-4-4-4-12 GUID format without curly braces and differ across sessions and
+      coauthors.
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

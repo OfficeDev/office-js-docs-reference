@@ -3,9 +3,11 @@ name: Word.Interfaces.RevisionUpdateData
 uid: word!Word.Interfaces.RevisionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RevisionUpdateData
-summary: An interface for updating data on the `Revision` object, for use in `revision.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Revision` object, for use in
+  `revision.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +17,10 @@ properties:
     package: word!
     fullName: movedRange
     summary: >-
-      Gets a `Range` object that represents the range of text that was moved from one place to another in the document
-      with tracked changes.
+      Gets a `Range` object that represents the range of text that was moved
+      from one place to another in the document with tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,9 +31,11 @@ properties:
     uid: word!Word.Interfaces.RevisionUpdateData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained within a revision mark.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

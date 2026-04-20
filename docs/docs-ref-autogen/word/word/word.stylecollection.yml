@@ -334,4 +334,11 @@ methods:
       effect.
     remarks: ''
 
-    isPreview:
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.StyleCollection;'
+      return:
+        type: <xref uid="word!Word.StyleCollection:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

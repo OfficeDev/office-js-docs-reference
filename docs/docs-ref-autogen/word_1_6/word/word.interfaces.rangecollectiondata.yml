@@ -3,9 +3,11 @@ name: Word.Interfaces.RangeCollectionData
 uid: word!Word.Interfaces.RangeCollectionData:interface
 package: word!
 fullName: Word.Interfaces.RangeCollectionData
-summary: An interface describing the data returned by calling `rangeCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `rangeCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

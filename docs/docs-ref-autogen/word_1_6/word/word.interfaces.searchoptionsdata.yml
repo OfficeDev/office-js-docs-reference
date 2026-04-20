@@ -3,9 +3,11 @@ name: Word.Interfaces.SearchOptionsData
 uid: word!Word.Interfaces.SearchOptionsData:interface
 package: word!
 fullName: Word.Interfaces.SearchOptionsData
-summary: An interface describing the data returned by calling `searchOptions.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `searchOptions.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,15 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#ignorePunct:member
     package: word!
     fullName: ignorePunct
-    summary: If provided, specifies whether to ignore all punctuation characters between words. The default is `false`<!-- -->. Corresponds to the \_Ignore punctuation characters\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to ignore all punctuation characters
+      between words. The default is `false`<!-- -->. Corresponds to the \_Ignore
+      punctuation characters\_ check box in the **Find and Replace** dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +35,14 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#ignoreSpace:member
     package: word!
     fullName: ignoreSpace
-    summary: If provided, specifies whether to ignore all whitespace between words. The default is `false`<!-- -->. Corresponds to the \_Ignore white-space characters\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to ignore all whitespace between words. The
+      default is `false`<!-- -->. Corresponds to the \_Ignore white-space
+      characters\_ check box in the **Find and Replace** dialog box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +53,14 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#matchCase:member
     package: word!
     fullName: matchCase
-    summary: If provided, specifies whether to perform a case sensitive search. The default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to perform a case sensitive search. The
+      default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
+      the **Find and Replace** dialog box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +71,14 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#matchPrefix:member
     package: word!
     fullName: matchPrefix
-    summary: If provided, specifies whether to match words that begin with the search string. The default is `false`<!-- -->. Corresponds to the \_Match prefix\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to match words that begin with the search
+      string. The default is `false`<!-- -->. Corresponds to the \_Match
+      prefix\_ check box in the **Find and Replace** dialog box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +89,14 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#matchSuffix:member
     package: word!
     fullName: matchSuffix
-    summary: If provided, specifies whether to match words that end with the search string. The default is `false`<!-- -->. Corresponds to the \_Match suffix\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to match words that end with the search
+      string. The default is `false`<!-- -->. Corresponds to the \_Match
+      suffix\_ check box in the **Find and Replace** dialog box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +107,15 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#matchWholeWord:member
     package: word!
     fullName: matchWholeWord
-    summary: If provided, specifies whether to find only entire words, not text that's part of a larger word. The default is `false`<!-- -->. Corresponds to the \_Find whole words only\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to find only entire words, not text that's
+      part of a larger word. The default is `false`<!-- -->. Corresponds to the
+      \_Find whole words only\_ check box in the **Find and Replace** dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +126,14 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsData#matchWildcards:member
     package: word!
     fullName: matchWildcards
-    summary: If provided, specifies whether the search will be performed using special search operators. The default is `false`<!-- -->. Corresponds to the \_Use wildcards\_ check box in the \*\*Find and Replace\*\* dialog box.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether the search will be performed using special
+      search operators. The default is `false`<!-- -->. Corresponds to the \_Use
+      wildcards\_ check box in the **Find and Replace** dialog box.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

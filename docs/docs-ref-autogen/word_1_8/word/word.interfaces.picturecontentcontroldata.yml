@@ -3,9 +3,11 @@ name: Word.Interfaces.PictureContentControlData
 uid: word!Word.Interfaces.PictureContentControlData:interface
 package: word!
 fullName: Word.Interfaces.PictureContentControlData
-summary: An interface describing the data returned by calling `pictureContentControl.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `pictureContentControl.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

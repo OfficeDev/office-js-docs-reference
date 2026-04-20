@@ -187,4 +187,13 @@ methods:
       please remember to free any objects you add, once you're done using them.
       You'll need to call `context.sync()` before the memory release takes
       effect.
-    remarks:
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TableOfAuthoritiesCategory;'
+      return:
+        type: <xref uid="word!Word.TableOfAuthoritiesCategory:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

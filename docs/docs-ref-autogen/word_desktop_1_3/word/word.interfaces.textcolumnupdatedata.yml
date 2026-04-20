@@ -3,9 +3,11 @@ name: Word.Interfaces.TextColumnUpdateData
 uid: word!Word.Interfaces.TextColumnUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TextColumnUpdateData
-summary: An interface for updating data on the `TextColumn` object, for use in `textColumn.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `TextColumn` object, for use in
+  `textColumn.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.TextColumnUpdateData#spaceAfter:member
     package: word!
     fullName: spaceAfter
-    summary: Specifies the amount of spacing (in points) after the specified paragraph or text column.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the amount of spacing (in points) after the specified paragraph
+      or text column.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +34,10 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width, in points, of the specified text columns.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

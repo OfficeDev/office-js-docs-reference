@@ -54,4 +54,5 @@ properties:
         "Heavy" | "MiddleDot";
       return:
         type: >-
-          <xref ui
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"

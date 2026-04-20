@@ -3,9 +3,11 @@ name: Word.Interfaces.DropCapData
 uid: word!Word.Interfaces.DropCapData:interface
 package: word!
 fullName: Word.Interfaces.DropCapData
-summary: An interface describing the data returned by calling `dropCap.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `dropCap.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.DropCapData#distanceFromText:member
     package: word!
     fullName: distanceFromText
-    summary: Gets the distance (in points) between the dropped capital letter and the paragraph text.
+    summary: >-
+      Gets the distance (in points) between the dropped capital letter and the
+      paragraph text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: fontName
     summary: Gets the name of the font for the dropped capital letter.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: linesToDrop
     summary: Gets the height (in lines) of the dropped capital letter.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,10 +59,12 @@ properties:
     fullName: position
     summary: Gets the position of the dropped capital letter.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'position?: Word.DropPosition | "None" | "Normal" | "Margin";'
       return:
-        type: <xref uid="word!Word.DropPosition:enum" /> | "None" | "Normal" | "Margin"
+        type: >-
+          <xref uid="word!Word.DropPosition:enum" /> | "None" | "Normal" |
+          "Margin"

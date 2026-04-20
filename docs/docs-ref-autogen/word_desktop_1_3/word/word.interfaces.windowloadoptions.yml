@@ -3,9 +3,13 @@ name: Word.Interfaces.WindowLoadOptions
 uid: word!Word.Interfaces.WindowLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.WindowLoadOptions
-summary: Represents the window that displays the document. A window can be split to contain multiple reading panes.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the window that displays the document. A window can be split to
+  contain multiple reading panes.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.WindowLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,10 @@ properties:
     package: word!
     fullName: activePane
     summary: Gets the active pane in the window.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

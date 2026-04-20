@@ -3,9 +3,13 @@ name: Word.Interfaces.PageLoadOptions
 uid: word!Word.Interfaces.PageLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.PageLoadOptions
-summary: Represents a page in the document. `Page` objects manage the page layout and content.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents a page in the document. `Page` objects manage the page layout and
+  content.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.PageLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +34,13 @@ properties:
     uid: word!Word.Interfaces.PageLoadOptions#height:member
     package: word!
     fullName: height
-    summary: Gets the height, in points, of the paper defined in the Page Setup dialog box.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the height, in points, of the paper defined in the Page Setup dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +51,13 @@ properties:
     uid: word!Word.Interfaces.PageLoadOptions#index:member
     package: word!
     fullName: index
-    summary: Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the index of the page. The page index is 1-based and independent of
+      the user's custom page numbering.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +68,13 @@ properties:
     uid: word!Word.Interfaces.PageLoadOptions#width:member
     package: word!
     fullName: width
-    summary: Gets the width, in points, of the paper defined in the Page Setup dialog box.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the width, in points, of the paper defined in the Page Setup dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

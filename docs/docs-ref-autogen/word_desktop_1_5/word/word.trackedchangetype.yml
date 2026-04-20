@@ -5,7 +5,7 @@ package: word!
 fullName: Word.TrackedChangeType
 summary: TrackedChange type.
 remarks: '\[Api set: WordApi 1.6\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Add change.
 
-      \* \[Api set: WordApi 1.6\]
+      * \[Api set: WordApi 1.6\]
     value: '"Added"'
   - name: deleted
     uid: word!Word.TrackedChangeType.deleted:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Delete change.
 
-      \* \[Api set: WordApi 1.6\]
+      * \[Api set: WordApi 1.6\]
     value: '"Deleted"'
   - name: formatted
     uid: word!Word.TrackedChangeType.formatted:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Format change.
 
-      \* \[Api set: WordApi 1.6\]
+      * \[Api set: WordApi 1.6\]
     value: '"Formatted"'
   - name: none
     uid: word!Word.TrackedChangeType.none:member
@@ -39,5 +39,5 @@ fields:
     summary: |-
       No revision.
 
-      \* \[Api set: WordApi 1.6\]
+      * \[Api set: WordApi 1.6\]
     value: '"None"'

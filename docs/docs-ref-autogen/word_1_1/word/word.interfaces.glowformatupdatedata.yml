@@ -3,9 +3,11 @@ name: Word.Interfaces.GlowFormatUpdateData
 uid: word!Word.Interfaces.GlowFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.GlowFormatUpdateData
-summary: An interface for updating data on the `GlowFormat` object, for use in `glowFormat.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `GlowFormat` object, for use in
+  `glowFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

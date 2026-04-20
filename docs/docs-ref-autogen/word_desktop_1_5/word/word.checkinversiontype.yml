@@ -5,7 +5,7 @@ package: word!
 fullName: Word.CheckInVersionType
 summary: Specifies the version type for document check-in operations.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Represents a major version check-in.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Major"'
   - name: minor
     uid: word!Word.CheckInVersionType.minor:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Represents a minor version check-in.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Minor"'
   - name: overwrite
     uid: word!Word.CheckInVersionType.overwrite:member
@@ -31,5 +31,5 @@ fields:
     summary: |-
       Represents an overwrite version check-in.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Overwrite"'

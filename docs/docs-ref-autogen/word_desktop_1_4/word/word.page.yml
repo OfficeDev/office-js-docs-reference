@@ -3,14 +3,22 @@ name: Word.Page
 uid: word!Word.Page:class
 package: word!
 fullName: Word.Page
-summary: Represents a page in the document. `Page` objects manage the page layout and content.
-remarks: |-
-  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: >-
+  Represents a page in the document. `Page` objects manage the page layout and
+  content.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
 
   await Word.run(async (context) => {
     // Gets pages of the selection.
@@ -39,8 +47,9 @@ remarks: |-
       console.log("Text of that page in the selection:", pagesText[i].text);
     }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -50,8 +59,10 @@ properties:
     package: word!
     fullName: breaks
     summary: Gets a `BreakCollection` object that represents the breaks on the page.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,9 +73,11 @@ properties:
     uid: word!Word.Page#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,9 +88,13 @@ properties:
     uid: word!Word.Page#height:member
     package: word!
     fullName: height
-    summary: Gets the height, in points, of the paper defined in the Page Setup dialog box.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the height, in points, of the paper defined in the Page Setup dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,14 +105,22 @@ properties:
     uid: word!Word.Page#index:member
     package: word!
     fullName: index
-    summary: Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
-    remarks: |-
-      \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Gets the index of the page. The page index is 1-based and independent of
+      the user's custom page numbering.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
 
       await Word.run(async (context) => {
         // Gets the pages that contain the third paragraph.
@@ -130,8 +155,9 @@ properties:
           console.log("Text of that page:", pagesText[i].text);
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,9 +168,13 @@ properties:
     uid: word!Word.Page#width:member
     package: word!
     fullName: width
-    summary: Gets the width, in points, of the paper defined in the Page Setup dialog box.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the width, in points, of the paper defined in the Page Setup dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,9 +186,13 @@ methods:
     uid: word!Word.Page#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: Gets the next page in the pane. Throws an `ItemNotFound` error if this page is the last one.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the next page in the pane. Throws an `ItemNotFound` error if this
+      page is the last one.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,9 +204,16 @@ methods:
     uid: word!Word.Page#getNextOrNullObject:member(1)
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next page. If this page is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the next page. If this page is the last one, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->.
+      For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,14 +225,22 @@ methods:
     uid: word!Word.Page#getRange:member(1)
     package: word!
     fullName: getRange(rangeLocation)
-    summary: Gets the whole page, or the starting or ending point of the page, as a range.
-    remarks: |-
-      \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: >-
+      Gets the whole page, or the starting or ending point of the page, as a
+      range.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
 
       await Word.run(async (context) => {
         // Gets pages of the selection.
@@ -220,16 +269,26 @@ methods:
           console.log("Text of that page in the selection:", pagesText[i].text);
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" | "End"): Word.Range;'
+      content: >-
+        getRange(rangeLocation?: Word.RangeLocation.whole |
+        Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" |
+        "End"): Word.Range;
       parameters:
         - id: rangeLocation
-          description: Optional. The range location must be `whole`<!-- -->, `start`<!-- -->, or `end`<!-- -->.
-          type: <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> | <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
+          description: >-
+            Optional. The range location must be `whole`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->.
+          type: >-
+            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
+            uid="word!Word.RangeLocation.start:member" /> | <xref
+            uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" |
+            "End"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -237,9 +296,11 @@ methods:
     uid: word!Word.Page#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -255,16 +316,20 @@ methods:
     uid: word!Word.Page#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Page;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Page:class" />
@@ -273,9 +338,11 @@ methods:
     uid: word!Word.Page#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,7 +353,11 @@ methods:
                 }): Word.Page;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -299,9 +370,16 @@ methods:
     uid: word!Word.Page#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Page` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.Page` object is an
+      API object, the `toJSON` method returns a plain JavaScript object (typed
+      as `Word.Interfaces.PageData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,9 +391,18 @@ methods:
     uid: word!Word.Page#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,9 +414,16 @@ methods:
     uid: word!Word.Page#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

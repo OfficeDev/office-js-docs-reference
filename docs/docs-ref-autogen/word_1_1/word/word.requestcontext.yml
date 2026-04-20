@@ -3,7 +3,11 @@ name: Word.RequestContext
 uid: word!Word.RequestContext:class
 package: word!
 fullName: Word.RequestContext
-summary: The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
+summary: >-
+  The RequestContext object facilitates requests to the Word application. Since
+  the Office add-in and the Word application run in two different processes, the
+  request context is required to get access to the Word object model from the
+  add-in.
 remarks: |-
   #### Examples
 
@@ -15,7 +19,7 @@ remarks: |-
     // Interact with the Word document...
   });
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -26,7 +30,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: document
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

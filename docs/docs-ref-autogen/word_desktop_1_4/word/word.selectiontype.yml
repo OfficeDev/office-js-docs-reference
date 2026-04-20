@@ -4,80 +4,100 @@ uid: word!Word.SelectionType:enum
 package: word!
 fullName: Word.SelectionType
 summary: Specifies the type of selection in the document.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: block
     uid: word!Word.SelectionType.block:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a block selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Block"'
   - name: column
     uid: word!Word.SelectionType.column:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a column selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Column"'
   - name: frame
     uid: word!Word.SelectionType.frame:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a frame selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Frame"'
   - name: inlineShape
     uid: word!Word.SelectionType.inlineShape:member
     package: word!
-    summary: |-
+    summary: >-
       Represents an inline shape selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InlineShape"'
   - name: insertionPoint
     uid: word!Word.SelectionType.insertionPoint:member
     package: word!
-    summary: |-
+    summary: >-
       Represents an insertion point (IP) selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsertionPoint"'
   - name: normal
     uid: word!Word.SelectionType.normal:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a normal selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Normal"'
   - name: noSelection
     uid: word!Word.SelectionType.noSelection:member
     package: word!
-    summary: |-
+    summary: >-
       No selection is made.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NoSelection"'
   - name: row
     uid: word!Word.SelectionType.row:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a row selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Row"'
   - name: selectionShape
     uid: word!Word.SelectionType.selectionShape:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a shape selection.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SelectionShape"'

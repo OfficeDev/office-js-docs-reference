@@ -3,9 +3,11 @@ name: Word.Interfaces.TemplateCollectionData
 uid: word!Word.Interfaces.TemplateCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TemplateCollectionData
-summary: An interface describing the data returned by calling `templateCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `templateCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -69,4 +69,7 @@ properties:
 
     isPreview: false
     isDeprecated: false
-    synt
+    syntax:
+      content: 'longCitationAutoText?: string;'
+      return:
+        type: string

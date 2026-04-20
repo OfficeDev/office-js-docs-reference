@@ -3,9 +3,11 @@ name: Word.Interfaces.ListFormatUpdateData
 uid: word!Word.Interfaces.ListFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ListFormatUpdateData
-summary: An interface for updating data on the `ListFormat` object, for use in `listFormat.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `ListFormat` object, for use in
+  `listFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.ListFormatUpdateData#listLevelNumber:member
     package: word!
     fullName: listLevelNumber
-    summary: Specifies the list level number for the first paragraph for the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the list level number for the first paragraph for the
+      `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +34,10 @@ properties:
     package: word!
     fullName: listTemplate
     summary: Gets the list template associated with the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

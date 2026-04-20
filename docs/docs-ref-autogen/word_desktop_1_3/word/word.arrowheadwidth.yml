@@ -4,40 +4,50 @@ uid: word!Word.ArrowheadWidth:enum
 package: word!
 fullName: Word.ArrowheadWidth
 summary: Specifies the width of the arrowhead at the end of a line.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: medium
     uid: word!Word.ArrowheadWidth.medium:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a medium arrowhead width.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Medium"'
   - name: mixed
     uid: word!Word.ArrowheadWidth.mixed:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a mixed arrowhead width.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: narrow
     uid: word!Word.ArrowheadWidth.narrow:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a narrow arrowhead width.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Narrow"'
   - name: wide
     uid: word!Word.ArrowheadWidth.wide:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a wide arrowhead width.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Wide"'

@@ -4,15 +4,22 @@ uid: word!Word.TrackedChangeType:enum
 package: word!
 fullName: Word.TrackedChangeType
 summary: TrackedChange type.
-remarks: |-
-  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: WordApi
+  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
 
   // Gets the next (second) tracked change.
+
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -29,40 +36,49 @@ remarks: |-
 
     console.log(nextTrackedChange);
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: added
     uid: word!Word.TrackedChangeType.added:member
     package: word!
-    summary: |-
+    summary: >-
       Add change.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Added"'
   - name: deleted
     uid: word!Word.TrackedChangeType.deleted:member
     package: word!
-    summary: |-
+    summary: >-
       Delete change.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Deleted"'
   - name: formatted
     uid: word!Word.TrackedChangeType.formatted:member
     package: word!
-    summary: |-
+    summary: >-
       Format change.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Formatted"'
   - name: none
     uid: word!Word.TrackedChangeType.none:member
     package: word!
-    summary: |-
+    summary: >-
       No revision.
 
-      \* \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'

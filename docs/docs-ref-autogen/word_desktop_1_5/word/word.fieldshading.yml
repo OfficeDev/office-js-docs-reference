@@ -5,7 +5,7 @@ package: word!
 fullName: Word.FieldShading
 summary: Specifies the field shading options in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Always shade fields.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Always"'
   - name: never
     uid: word!Word.FieldShading.never:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Never shade fields.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Never"'
   - name: whenSelected
     uid: word!Word.FieldShading.whenSelected:member
@@ -31,5 +31,5 @@ fields:
     summary: |-
       Shade fields when selected.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"WhenSelected"'

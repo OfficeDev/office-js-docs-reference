@@ -4,40 +4,50 @@ uid: word!Word.ContentControlLevel:enum
 package: word!
 fullName: Word.ContentControlLevel
 summary: Represents the content control level type.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: cell
     uid: word!Word.ContentControlLevel.cell:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a cell-level content control.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Cell"'
   - name: inline
     uid: word!Word.ContentControlLevel.inline:member
     package: word!
-    summary: |-
+    summary: >-
       Represents an inline content control.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.ContentControlLevel.paragraph:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a paragraph-level content control.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'
   - name: row
     uid: word!Word.ContentControlLevel.row:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a row-level content control.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Row"'

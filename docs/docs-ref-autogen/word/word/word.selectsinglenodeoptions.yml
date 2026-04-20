@@ -47,4 +47,5 @@ properties:
     isDeprecated: false
     syntax:
       content: 'prefixMapping?: string;'
-      
+      return:
+        type: string

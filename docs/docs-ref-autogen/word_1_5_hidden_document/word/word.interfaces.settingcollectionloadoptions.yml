@@ -3,9 +3,13 @@ name: Word.Interfaces.SettingCollectionLoadOptions
 uid: word!Word.Interfaces.SettingCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SettingCollectionLoadOptions
-summary: Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
+  objects.
+remarks: >-
+  \[ [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.SettingCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,10 @@ properties:
     package: word!
     fullName: key
     summary: 'For EACH ITEM in the collection: Gets the key of the setting.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +50,10 @@ properties:
     package: word!
     fullName: value
     summary: 'For EACH ITEM in the collection: Specifies the value of the setting.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

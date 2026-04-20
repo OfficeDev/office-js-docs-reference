@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.AnnotationLoadOptions
 summary: Represents an annotation attached to a paragraph.
 remarks: '\[Api set: WordApi 1.7\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +15,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,20 +32,24 @@ properties:
     fullName: critiqueAnnotation
     summary: Gets the `CritiqueAnnotation` object.
     remarks: '\[Api set: WordApi 1.7\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;'
       return:
-        type: <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
   - name: id
     uid: word!Word.Interfaces.AnnotationLoadOptions#id:member
     package: word!
     fullName: id
-    summary: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.
+    summary: >-
+      Gets the unique identifier, which is meant to be used for easier tracking
+      of `Annotation` objects.
     remarks: '\[Api set: WordApi 1.7\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +62,7 @@ properties:
     fullName: state
     summary: Gets the state of the annotation.
     remarks: '\[Api set: WordApi 1.7\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

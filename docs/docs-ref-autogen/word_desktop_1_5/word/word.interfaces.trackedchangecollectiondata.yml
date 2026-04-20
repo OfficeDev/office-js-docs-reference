@@ -3,9 +3,11 @@ name: Word.Interfaces.TrackedChangeCollectionData
 uid: word!Word.Interfaces.TrackedChangeCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeCollectionData
-summary: An interface describing the data returned by calling `trackedChangeCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `trackedChangeCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

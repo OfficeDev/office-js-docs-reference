@@ -3,9 +3,11 @@ name: Word.GeometricShapeType
 uid: word!Word.GeometricShapeType:enum
 package: word!
 fullName: Word.GeometricShapeType
-summary: Specifies the shape type for a [ShapeType.geometricShape](xref:word!Word.ShapeType:enum) object.
+summary: >-
+  Specifies the shape type for a
+  [ShapeType.geometricShape](xref:word!Word.ShapeType:enum) object.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +17,7 @@ fields:
     summary: |-
       Accent border callout 1 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentBorderCallout1"'
   - name: accentBorderCallout2
     uid: word!Word.GeometricShapeType.accentBorderCallout2:member
@@ -23,7 +25,7 @@ fields:
     summary: |-
       Accent border callout 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentBorderCallout2"'
   - name: accentBorderCallout3
     uid: word!Word.GeometricShapeType.accentBorderCallout3:member
@@ -31,7 +33,7 @@ fields:
     summary: |-
       Accent border callout 3 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentBorderCallout3"'
   - name: accentCallout1
     uid: word!Word.GeometricShapeType.accentCallout1:member
@@ -39,7 +41,7 @@ fields:
     summary: |-
       Accent callout 1 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentCallout1"'
   - name: accentCallout2
     uid: word!Word.GeometricShapeType.accentCallout2:member
@@ -47,7 +49,7 @@ fields:
     summary: |-
       Accent callout 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentCallout2"'
   - name: accentCallout3
     uid: word!Word.GeometricShapeType.accentCallout3:member
@@ -55,7 +57,7 @@ fields:
     summary: |-
       Accent callout 3 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentCallout3"'
   - name: actionButtonBackPrevious
     uid: word!Word.GeometricShapeType.actionButtonBackPrevious:member
@@ -63,7 +65,7 @@ fields:
     summary: |-
       Action button back previous geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonBackPrevious"'
   - name: actionButtonBeginning
     uid: word!Word.GeometricShapeType.actionButtonBeginning:member
@@ -71,7 +73,7 @@ fields:
     summary: |-
       Action button beginning geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonBeginning"'
   - name: actionButtonBlank
     uid: word!Word.GeometricShapeType.actionButtonBlank:member
@@ -79,7 +81,7 @@ fields:
     summary: |-
       Action button blank geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonBlank"'
   - name: actionButtonDocument
     uid: word!Word.GeometricShapeType.actionButtonDocument:member
@@ -87,7 +89,7 @@ fields:
     summary: |-
       Action button document geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonDocument"'
   - name: actionButtonEnd
     uid: word!Word.GeometricShapeType.actionButtonEnd:member
@@ -95,7 +97,7 @@ fields:
     summary: |-
       Action button end geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonEnd"'
   - name: actionButtonForwardNext
     uid: word!Word.GeometricShapeType.actionButtonForwardNext:member
@@ -103,7 +105,7 @@ fields:
     summary: |-
       Action button forward next geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonForwardNext"'
   - name: actionButtonHelp
     uid: word!Word.GeometricShapeType.actionButtonHelp:member
@@ -111,7 +113,7 @@ fields:
     summary: |-
       Action button help geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonHelp"'
   - name: actionButtonHome
     uid: word!Word.GeometricShapeType.actionButtonHome:member
@@ -119,7 +121,7 @@ fields:
     summary: |-
       Action button home geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonHome"'
   - name: actionButtonInformation
     uid: word!Word.GeometricShapeType.actionButtonInformation:member
@@ -127,7 +129,7 @@ fields:
     summary: |-
       Action button information geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonInformation"'
   - name: actionButtonMovie
     uid: word!Word.GeometricShapeType.actionButtonMovie:member
@@ -135,7 +137,7 @@ fields:
     summary: |-
       Action button movie geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonMovie"'
   - name: actionButtonReturn
     uid: word!Word.GeometricShapeType.actionButtonReturn:member
@@ -143,7 +145,7 @@ fields:
     summary: |-
       Action button return geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonReturn"'
   - name: actionButtonSound
     uid: word!Word.GeometricShapeType.actionButtonSound:member
@@ -151,7 +153,7 @@ fields:
     summary: |-
       Action button sound geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonSound"'
   - name: arc
     uid: word!Word.GeometricShapeType.arc:member
@@ -159,7 +161,7 @@ fields:
     summary: |-
       Arc geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Arc"'
   - name: bentArrow
     uid: word!Word.GeometricShapeType.bentArrow:member
@@ -167,7 +169,7 @@ fields:
     summary: |-
       Bent arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BentArrow"'
   - name: bentUpArrow
     uid: word!Word.GeometricShapeType.bentUpArrow:member
@@ -175,7 +177,7 @@ fields:
     summary: |-
       Bent up arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BentUpArrow"'
   - name: bevel
     uid: word!Word.GeometricShapeType.bevel:member
@@ -183,7 +185,7 @@ fields:
     summary: |-
       Bevel geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Bevel"'
   - name: blockArc
     uid: word!Word.GeometricShapeType.blockArc:member
@@ -191,7 +193,7 @@ fields:
     summary: |-
       Block arc geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BlockArc"'
   - name: borderCallout1
     uid: word!Word.GeometricShapeType.borderCallout1:member
@@ -199,7 +201,7 @@ fields:
     summary: |-
       Border callout 1 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BorderCallout1"'
   - name: borderCallout2
     uid: word!Word.GeometricShapeType.borderCallout2:member
@@ -207,7 +209,7 @@ fields:
     summary: |-
       Border callout 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BorderCallout2"'
   - name: borderCallout3
     uid: word!Word.GeometricShapeType.borderCallout3:member
@@ -215,7 +217,7 @@ fields:
     summary: |-
       Border callout 3 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BorderCallout3"'
   - name: bracePair
     uid: word!Word.GeometricShapeType.bracePair:member
@@ -223,7 +225,7 @@ fields:
     summary: |-
       Brace pair geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BracePair"'
   - name: bracketPair
     uid: word!Word.GeometricShapeType.bracketPair:member
@@ -231,7 +233,7 @@ fields:
     summary: |-
       Bracket pair geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BracketPair"'
   - name: callout1
     uid: word!Word.GeometricShapeType.callout1:member
@@ -239,7 +241,7 @@ fields:
     summary: |-
       Callout 1 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Callout1"'
   - name: callout2
     uid: word!Word.GeometricShapeType.callout2:member
@@ -247,7 +249,7 @@ fields:
     summary: |-
       Callout 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Callout2"'
   - name: callout3
     uid: word!Word.GeometricShapeType.callout3:member
@@ -255,7 +257,7 @@ fields:
     summary: |-
       Callout 3 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Callout3"'
   - name: can
     uid: word!Word.GeometricShapeType.can:member
@@ -263,7 +265,7 @@ fields:
     summary: |-
       Can geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Can"'
   - name: chartPlus
     uid: word!Word.GeometricShapeType.chartPlus:member
@@ -271,7 +273,7 @@ fields:
     summary: |-
       Chart plus geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ChartPlus"'
   - name: chartStar
     uid: word!Word.GeometricShapeType.chartStar:member
@@ -279,7 +281,7 @@ fields:
     summary: |-
       Chart star geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ChartStar"'
   - name: chartX
     uid: word!Word.GeometricShapeType.chartX:member
@@ -287,7 +289,7 @@ fields:
     summary: |-
       Chart X geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ChartX"'
   - name: chevron
     uid: word!Word.GeometricShapeType.chevron:member
@@ -295,7 +297,7 @@ fields:
     summary: |-
       Chevron geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Chevron"'
   - name: chord
     uid: word!Word.GeometricShapeType.chord:member
@@ -303,7 +305,7 @@ fields:
     summary: |-
       Chord geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Chord"'
   - name: circularArrow
     uid: word!Word.GeometricShapeType.circularArrow:member
@@ -311,7 +313,7 @@ fields:
     summary: |-
       Circular arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CircularArrow"'
   - name: cloud
     uid: word!Word.GeometricShapeType.cloud:member
@@ -319,7 +321,7 @@ fields:
     summary: |-
       Cloud geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Cloud"'
   - name: cloudCallout
     uid: word!Word.GeometricShapeType.cloudCallout:member
@@ -327,7 +329,7 @@ fields:
     summary: |-
       Cloud callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CloudCallout"'
   - name: corner
     uid: word!Word.GeometricShapeType.corner:member
@@ -335,7 +337,7 @@ fields:
     summary: |-
       Corner geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Corner"'
   - name: cornerTabs
     uid: word!Word.GeometricShapeType.cornerTabs:member
@@ -343,7 +345,7 @@ fields:
     summary: |-
       Corner tabs geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CornerTabs"'
   - name: cube
     uid: word!Word.GeometricShapeType.cube:member
@@ -351,7 +353,7 @@ fields:
     summary: |-
       Cube geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Cube"'
   - name: curvedDownArrow
     uid: word!Word.GeometricShapeType.curvedDownArrow:member
@@ -359,7 +361,7 @@ fields:
     summary: |-
       Curved down arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedDownArrow"'
   - name: curvedLeftArrow
     uid: word!Word.GeometricShapeType.curvedLeftArrow:member
@@ -367,7 +369,7 @@ fields:
     summary: |-
       Curved left arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedLeftArrow"'
   - name: curvedRightArrow
     uid: word!Word.GeometricShapeType.curvedRightArrow:member
@@ -375,7 +377,7 @@ fields:
     summary: |-
       Curved right arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedRightArrow"'
   - name: curvedUpArrow
     uid: word!Word.GeometricShapeType.curvedUpArrow:member
@@ -383,7 +385,7 @@ fields:
     summary: |-
       Curved up arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedUpArrow"'
   - name: decagon
     uid: word!Word.GeometricShapeType.decagon:member
@@ -391,7 +393,7 @@ fields:
     summary: |-
       Decagon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Decagon"'
   - name: diagonalStripe
     uid: word!Word.GeometricShapeType.diagonalStripe:member
@@ -399,7 +401,7 @@ fields:
     summary: |-
       Diagonal stripe geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DiagonalStripe"'
   - name: diamond
     uid: word!Word.GeometricShapeType.diamond:member
@@ -407,7 +409,7 @@ fields:
     summary: |-
       Diamond geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Diamond"'
   - name: dodecagon
     uid: word!Word.GeometricShapeType.dodecagon:member
@@ -415,7 +417,7 @@ fields:
     summary: |-
       Dodecagon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Dodecagon"'
   - name: donut
     uid: word!Word.GeometricShapeType.donut:member
@@ -423,7 +425,7 @@ fields:
     summary: |-
       Donut geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Donut"'
   - name: doubleWave
     uid: word!Word.GeometricShapeType.doubleWave:member
@@ -431,7 +433,7 @@ fields:
     summary: |-
       Double wave geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DoubleWave"'
   - name: downArrow
     uid: word!Word.GeometricShapeType.downArrow:member
@@ -439,7 +441,7 @@ fields:
     summary: |-
       Down arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DownArrow"'
   - name: downArrowCallout
     uid: word!Word.GeometricShapeType.downArrowCallout:member
@@ -447,7 +449,7 @@ fields:
     summary: |-
       Down arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DownArrowCallout"'
   - name: ellipse
     uid: word!Word.GeometricShapeType.ellipse:member
@@ -455,7 +457,7 @@ fields:
     summary: |-
       Ellipse geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Ellipse"'
   - name: ellipseRibbon
     uid: word!Word.GeometricShapeType.ellipseRibbon:member
@@ -463,7 +465,7 @@ fields:
     summary: |-
       Ellipse ribbon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EllipseRibbon"'
   - name: ellipseRibbon2
     uid: word!Word.GeometricShapeType.ellipseRibbon2:member
@@ -471,7 +473,7 @@ fields:
     summary: |-
       Ellipse ribbon 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EllipseRibbon2"'
   - name: flowChartAlternateProcess
     uid: word!Word.GeometricShapeType.flowChartAlternateProcess:member
@@ -479,7 +481,7 @@ fields:
     summary: |-
       Flow chart alternate process geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartAlternateProcess"'
   - name: flowChartCollate
     uid: word!Word.GeometricShapeType.flowChartCollate:member
@@ -487,7 +489,7 @@ fields:
     summary: |-
       Flow chart collate geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartCollate"'
   - name: flowChartConnector
     uid: word!Word.GeometricShapeType.flowChartConnector:member
@@ -495,7 +497,7 @@ fields:
     summary: |-
       Flow chart connector geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartConnector"'
   - name: flowChartDecision
     uid: word!Word.GeometricShapeType.flowChartDecision:member
@@ -503,7 +505,7 @@ fields:
     summary: |-
       Flow chart decision geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDecision"'
   - name: flowChartDelay
     uid: word!Word.GeometricShapeType.flowChartDelay:member
@@ -511,7 +513,7 @@ fields:
     summary: |-
       Flow chart delay geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDelay"'
   - name: flowChartDisplay
     uid: word!Word.GeometricShapeType.flowChartDisplay:member
@@ -519,7 +521,7 @@ fields:
     summary: |-
       Flow chart display geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDisplay"'
   - name: flowChartDocument
     uid: word!Word.GeometricShapeType.flowChartDocument:member
@@ -527,7 +529,7 @@ fields:
     summary: |-
       Flow chart document geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDocument"'
   - name: flowChartExtract
     uid: word!Word.GeometricShapeType.flowChartExtract:member
@@ -535,7 +537,7 @@ fields:
     summary: |-
       Flow chart extract geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartExtract"'
   - name: flowChartInputOutput
     uid: word!Word.GeometricShapeType.flowChartInputOutput:member
@@ -543,7 +545,7 @@ fields:
     summary: |-
       Flow chart input-output geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartInputOutput"'
   - name: flowChartInternalStorage
     uid: word!Word.GeometricShapeType.flowChartInternalStorage:member
@@ -551,7 +553,7 @@ fields:
     summary: |-
       Flow chart internal storage geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartInternalStorage"'
   - name: flowChartMagneticDisk
     uid: word!Word.GeometricShapeType.flowChartMagneticDisk:member
@@ -559,7 +561,7 @@ fields:
     summary: |-
       Flow chart magnetic disk geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMagneticDisk"'
   - name: flowChartMagneticDrum
     uid: word!Word.GeometricShapeType.flowChartMagneticDrum:member
@@ -567,7 +569,7 @@ fields:
     summary: |-
       Flow chart magnetic drum geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMagneticDrum"'
   - name: flowChartMagneticTape
     uid: word!Word.GeometricShapeType.flowChartMagneticTape:member
@@ -575,7 +577,7 @@ fields:
     summary: |-
       Flow chart magnetic tape geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMagneticTape"'
   - name: flowChartManualInput
     uid: word!Word.GeometricShapeType.flowChartManualInput:member
@@ -583,7 +585,7 @@ fields:
     summary: |-
       Flow chart manual input geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartManualInput"'
   - name: flowChartManualOperation
     uid: word!Word.GeometricShapeType.flowChartManualOperation:member
@@ -591,7 +593,7 @@ fields:
     summary: |-
       Flow chart manual operation geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartManualOperation"'
   - name: flowChartMerge
     uid: word!Word.GeometricShapeType.flowChartMerge:member
@@ -599,7 +601,7 @@ fields:
     summary: |-
       Flow chart merge geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMerge"'
   - name: flowChartMultidocument
     uid: word!Word.GeometricShapeType.flowChartMultidocument:member
@@ -607,7 +609,7 @@ fields:
     summary: |-
       Flow chart multidocument geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMultidocument"'
   - name: flowChartOfflineStorage
     uid: word!Word.GeometricShapeType.flowChartOfflineStorage:member
@@ -615,7 +617,7 @@ fields:
     summary: |-
       Flow chart offline storage geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOfflineStorage"'
   - name: flowChartOffpageConnector
     uid: word!Word.GeometricShapeType.flowChartOffpageConnector:member
@@ -623,7 +625,7 @@ fields:
     summary: |-
       Flow chart off-page connector geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOffpageConnector"'
   - name: flowChartOnlineStorage
     uid: word!Word.GeometricShapeType.flowChartOnlineStorage:member
@@ -631,7 +633,7 @@ fields:
     summary: |-
       Flow chart online storage geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOnlineStorage"'
   - name: flowChartOr
     uid: word!Word.GeometricShapeType.flowChartOr:member
@@ -639,7 +641,7 @@ fields:
     summary: |-
       Flow chart OR geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOr"'
   - name: flowChartPredefinedProcess
     uid: word!Word.GeometricShapeType.flowChartPredefinedProcess:member
@@ -647,7 +649,7 @@ fields:
     summary: |-
       Flow chart predefined process geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPredefinedProcess"'
   - name: flowChartPreparation
     uid: word!Word.GeometricShapeType.flowChartPreparation:member
@@ -655,7 +657,7 @@ fields:
     summary: |-
       Flow chart preparation geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPreparation"'
   - name: flowChartProcess
     uid: word!Word.GeometricShapeType.flowChartProcess:member
@@ -663,7 +665,7 @@ fields:
     summary: |-
       Flow chart process geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartProcess"'
   - name: flowChartPunchedCard
     uid: word!Word.GeometricShapeType.flowChartPunchedCard:member
@@ -671,7 +673,7 @@ fields:
     summary: |-
       Flow chart punched card geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPunchedCard"'
   - name: flowChartPunchedTape
     uid: word!Word.GeometricShapeType.flowChartPunchedTape:member
@@ -679,7 +681,7 @@ fields:
     summary: |-
       Flow chart punched tape geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPunchedTape"'
   - name: flowChartSort
     uid: word!Word.GeometricShapeType.flowChartSort:member
@@ -687,7 +689,7 @@ fields:
     summary: |-
       Flow chart sort geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartSort"'
   - name: flowChartSummingJunction
     uid: word!Word.GeometricShapeType.flowChartSummingJunction:member
@@ -695,7 +697,7 @@ fields:
     summary: |-
       Flow chart summing junction geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartSummingJunction"'
   - name: flowChartTerminator
     uid: word!Word.GeometricShapeType.flowChartTerminator:member
@@ -703,7 +705,7 @@ fields:
     summary: |-
       Flow chart terminator geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartTerminator"'
   - name: foldedCorner
     uid: word!Word.GeometricShapeType.foldedCorner:member
@@ -711,7 +713,7 @@ fields:
     summary: |-
       Folded corner geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FoldedCorner"'
   - name: frame
     uid: word!Word.GeometricShapeType.frame:member
@@ -719,7 +721,7 @@ fields:
     summary: |-
       Frame geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Frame"'
   - name: funnel
     uid: word!Word.GeometricShapeType.funnel:member
@@ -727,7 +729,7 @@ fields:
     summary: |-
       Funnel geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Funnel"'
   - name: gear6
     uid: word!Word.GeometricShapeType.gear6:member
@@ -735,7 +737,7 @@ fields:
     summary: |-
       Gear 6 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Gear6"'
   - name: gear9
     uid: word!Word.GeometricShapeType.gear9:member
@@ -743,7 +745,7 @@ fields:
     summary: |-
       Gear 9 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Gear9"'
   - name: halfFrame
     uid: word!Word.GeometricShapeType.halfFrame:member
@@ -751,7 +753,7 @@ fields:
     summary: |-
       Half frame geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"HalfFrame"'
   - name: heart
     uid: word!Word.GeometricShapeType.heart:member
@@ -759,7 +761,7 @@ fields:
     summary: |-
       Heart geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Heart"'
   - name: heptagon
     uid: word!Word.GeometricShapeType.heptagon:member
@@ -767,7 +769,7 @@ fields:
     summary: |-
       Heptagon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Heptagon"'
   - name: hexagon
     uid: word!Word.GeometricShapeType.hexagon:member
@@ -775,7 +777,7 @@ fields:
     summary: |-
       Hexagon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Hexagon"'
   - name: homePlate
     uid: word!Word.GeometricShapeType.homePlate:member
@@ -783,7 +785,7 @@ fields:
     summary: |-
       Home plate geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"HomePlate"'
   - name: horizontalScroll
     uid: word!Word.GeometricShapeType.horizontalScroll:member
@@ -791,7 +793,7 @@ fields:
     summary: |-
       Horizontal scroll geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"HorizontalScroll"'
   - name: irregularSeal1
     uid: word!Word.GeometricShapeType.irregularSeal1:member
@@ -799,7 +801,7 @@ fields:
     summary: |-
       Irregular seal 1 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"IrregularSeal1"'
   - name: irregularSeal2
     uid: word!Word.GeometricShapeType.irregularSeal2:member
@@ -807,7 +809,7 @@ fields:
     summary: |-
       Irregular seal 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"IrregularSeal2"'
   - name: leftArrow
     uid: word!Word.GeometricShapeType.leftArrow:member
@@ -815,7 +817,7 @@ fields:
     summary: |-
       Left arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftArrow"'
   - name: leftArrowCallout
     uid: word!Word.GeometricShapeType.leftArrowCallout:member
@@ -823,7 +825,7 @@ fields:
     summary: |-
       Left arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftArrowCallout"'
   - name: leftBrace
     uid: word!Word.GeometricShapeType.leftBrace:member
@@ -831,7 +833,7 @@ fields:
     summary: |-
       Left brace geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftBrace"'
   - name: leftBracket
     uid: word!Word.GeometricShapeType.leftBracket:member
@@ -839,7 +841,7 @@ fields:
     summary: |-
       Left bracket geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftBracket"'
   - name: leftCircularArrow
     uid: word!Word.GeometricShapeType.leftCircularArrow:member
@@ -847,7 +849,7 @@ fields:
     summary: |-
       Left circular arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftCircularArrow"'
   - name: leftRightArrow
     uid: word!Word.GeometricShapeType.leftRightArrow:member
@@ -855,7 +857,7 @@ fields:
     summary: |-
       Left-right arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightArrow"'
   - name: leftRightArrowCallout
     uid: word!Word.GeometricShapeType.leftRightArrowCallout:member
@@ -863,7 +865,7 @@ fields:
     summary: |-
       Left-right arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightArrowCallout"'
   - name: leftRightCircularArrow
     uid: word!Word.GeometricShapeType.leftRightCircularArrow:member
@@ -871,7 +873,7 @@ fields:
     summary: |-
       Left-right circular arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightCircularArrow"'
   - name: leftRightRibbon
     uid: word!Word.GeometricShapeType.leftRightRibbon:member
@@ -879,7 +881,7 @@ fields:
     summary: |-
       Left-right ribbon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightRibbon"'
   - name: leftRightUpArrow
     uid: word!Word.GeometricShapeType.leftRightUpArrow:member
@@ -887,7 +889,7 @@ fields:
     summary: |-
       Left-right-up arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightUpArrow"'
   - name: leftUpArrow
     uid: word!Word.GeometricShapeType.leftUpArrow:member
@@ -895,7 +897,7 @@ fields:
     summary: |-
       Left-up arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftUpArrow"'
   - name: lightningBolt
     uid: word!Word.GeometricShapeType.lightningBolt:member
@@ -903,7 +905,7 @@ fields:
     summary: |-
       Lightning bolt geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LightningBolt"'
   - name: lineInverse
     uid: word!Word.GeometricShapeType.lineInverse:member
@@ -911,7 +913,7 @@ fields:
     summary: |-
       Line inverse geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LineInverse"'
   - name: mathDivide
     uid: word!Word.GeometricShapeType.mathDivide:member
@@ -919,7 +921,7 @@ fields:
     summary: |-
       Math divide geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathDivide"'
   - name: mathEqual
     uid: word!Word.GeometricShapeType.mathEqual:member
@@ -927,7 +929,7 @@ fields:
     summary: |-
       Math equal geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathEqual"'
   - name: mathMinus
     uid: word!Word.GeometricShapeType.mathMinus:member
@@ -935,7 +937,7 @@ fields:
     summary: |-
       Math minus geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathMinus"'
   - name: mathMultiply
     uid: word!Word.GeometricShapeType.mathMultiply:member
@@ -943,7 +945,7 @@ fields:
     summary: |-
       Math multiply geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathMultiply"'
   - name: mathNotEqual
     uid: word!Word.GeometricShapeType.mathNotEqual:member
@@ -951,7 +953,7 @@ fields:
     summary: |-
       Math not equal geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathNotEqual"'
   - name: mathPlus
     uid: word!Word.GeometricShapeType.mathPlus:member
@@ -959,7 +961,7 @@ fields:
     summary: |-
       Math plus geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathPlus"'
   - name: moon
     uid: word!Word.GeometricShapeType.moon:member
@@ -967,7 +969,7 @@ fields:
     summary: |-
       Moon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Moon"'
   - name: nonIsoscelesTrapezoid
     uid: word!Word.GeometricShapeType.nonIsoscelesTrapezoid:member
@@ -975,7 +977,7 @@ fields:
     summary: |-
       Non-isosceles trapezoid geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NonIsoscelesTrapezoid"'
   - name: noSmoking
     uid: word!Word.GeometricShapeType.noSmoking:member
@@ -983,7 +985,7 @@ fields:
     summary: |-
       No smoking geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NoSmoking"'
   - name: notchedRightArrow
     uid: word!Word.GeometricShapeType.notchedRightArrow:member
@@ -991,7 +993,7 @@ fields:
     summary: |-
       Notched right arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NotchedRightArrow"'
   - name: octagon
     uid: word!Word.GeometricShapeType.octagon:member
@@ -999,7 +1001,7 @@ fields:
     summary: |-
       Octagon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Octagon"'
   - name: parallelogram
     uid: word!Word.GeometricShapeType.parallelogram:member
@@ -1007,7 +1009,7 @@ fields:
     summary: |-
       Parallelogram geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Parallelogram"'
   - name: pentagon
     uid: word!Word.GeometricShapeType.pentagon:member
@@ -1015,7 +1017,7 @@ fields:
     summary: |-
       Pentagon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Pentagon"'
   - name: pie
     uid: word!Word.GeometricShapeType.pie:member
@@ -1023,7 +1025,7 @@ fields:
     summary: |-
       Pie geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Pie"'
   - name: pieWedge
     uid: word!Word.GeometricShapeType.pieWedge:member
@@ -1031,7 +1033,7 @@ fields:
     summary: |-
       Pie wedge geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"PieWedge"'
   - name: plaque
     uid: word!Word.GeometricShapeType.plaque:member
@@ -1039,7 +1041,7 @@ fields:
     summary: |-
       Plaque geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Plaque"'
   - name: plaqueTabs
     uid: word!Word.GeometricShapeType.plaqueTabs:member
@@ -1047,7 +1049,7 @@ fields:
     summary: |-
       Plaque tabs geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"PlaqueTabs"'
   - name: plus
     uid: word!Word.GeometricShapeType.plus:member
@@ -1055,7 +1057,7 @@ fields:
     summary: |-
       Plus geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Plus"'
   - name: quadArrow
     uid: word!Word.GeometricShapeType.quadArrow:member
@@ -1063,7 +1065,7 @@ fields:
     summary: |-
       Quad arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"QuadArrow"'
   - name: quadArrowCallout
     uid: word!Word.GeometricShapeType.quadArrowCallout:member
@@ -1071,7 +1073,7 @@ fields:
     summary: |-
       Quad arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"QuadArrowCallout"'
   - name: rectangle
     uid: word!Word.GeometricShapeType.rectangle:member
@@ -1079,7 +1081,7 @@ fields:
     summary: |-
       Rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Rectangle"'
   - name: ribbon
     uid: word!Word.GeometricShapeType.ribbon:member
@@ -1087,7 +1089,7 @@ fields:
     summary: |-
       Ribbon geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Ribbon"'
   - name: ribbon2
     uid: word!Word.GeometricShapeType.ribbon2:member
@@ -1095,7 +1097,7 @@ fields:
     summary: |-
       Ribbon 2 geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Ribbon2"'
   - name: rightArrow
     uid: word!Word.GeometricShapeType.rightArrow:member
@@ -1103,7 +1105,7 @@ fields:
     summary: |-
       Right arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightArrow"'
   - name: rightArrowCallout
     uid: word!Word.GeometricShapeType.rightArrowCallout:member
@@ -1111,7 +1113,7 @@ fields:
     summary: |-
       Right arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightArrowCallout"'
   - name: rightBrace
     uid: word!Word.GeometricShapeType.rightBrace:member
@@ -1119,7 +1121,7 @@ fields:
     summary: |-
       Right brace geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightBrace"'
   - name: rightBracket
     uid: word!Word.GeometricShapeType.rightBracket:member
@@ -1127,7 +1129,7 @@ fields:
     summary: |-
       Right bracket geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightBracket"'
   - name: rightTriangle
     uid: word!Word.GeometricShapeType.rightTriangle:member
@@ -1135,7 +1137,7 @@ fields:
     summary: |-
       Right triangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightTriangle"'
   - name: round1Rectangle
     uid: word!Word.GeometricShapeType.round1Rectangle:member
@@ -1143,7 +1145,7 @@ fields:
     summary: |-
       Round one rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Round1Rectangle"'
   - name: round2DiagonalRectangle
     uid: word!Word.GeometricShapeType.round2DiagonalRectangle:member
@@ -1151,7 +1153,7 @@ fields:
     summary: |-
       Round two diagonal rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Round2DiagonalRectangle"'
   - name: round2SameRectangle
     uid: word!Word.GeometricShapeType.round2SameRectangle:member
@@ -1159,7 +1161,7 @@ fields:
     summary: |-
       Round two same rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Round2SameRectangle"'
   - name: roundRectangle
     uid: word!Word.GeometricShapeType.roundRectangle:member
@@ -1167,7 +1169,7 @@ fields:
     summary: |-
       Round rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RoundRectangle"'
   - name: smileyFace
     uid: word!Word.GeometricShapeType.smileyFace:member
@@ -1175,7 +1177,7 @@ fields:
     summary: |-
       Smiley face geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SmileyFace"'
   - name: snip1Rectangle
     uid: word!Word.GeometricShapeType.snip1Rectangle:member
@@ -1183,7 +1185,7 @@ fields:
     summary: |-
       Snip one rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Snip1Rectangle"'
   - name: snip2DiagonalRectangle
     uid: word!Word.GeometricShapeType.snip2DiagonalRectangle:member
@@ -1191,7 +1193,7 @@ fields:
     summary: |-
       Snip two diagonal rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Snip2DiagonalRectangle"'
   - name: snip2SameRectangle
     uid: word!Word.GeometricShapeType.snip2SameRectangle:member
@@ -1199,7 +1201,7 @@ fields:
     summary: |-
       Snip two same rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Snip2SameRectangle"'
   - name: snipRoundRectangle
     uid: word!Word.GeometricShapeType.snipRoundRectangle:member
@@ -1207,7 +1209,7 @@ fields:
     summary: |-
       Snip round rectangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SnipRoundRectangle"'
   - name: squareTabs
     uid: word!Word.GeometricShapeType.squareTabs:member
@@ -1215,7 +1217,7 @@ fields:
     summary: |-
       Square tabs geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SquareTabs"'
   - name: star10
     uid: word!Word.GeometricShapeType.star10:member
@@ -1223,7 +1225,7 @@ fields:
     summary: |-
       Star 10-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star10"'
   - name: star12
     uid: word!Word.GeometricShapeType.star12:member
@@ -1231,7 +1233,7 @@ fields:
     summary: |-
       Star 12-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star12"'
   - name: star16
     uid: word!Word.GeometricShapeType.star16:member
@@ -1239,7 +1241,7 @@ fields:
     summary: |-
       Star 16-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star16"'
   - name: star24
     uid: word!Word.GeometricShapeType.star24:member
@@ -1247,7 +1249,7 @@ fields:
     summary: |-
       Star 24-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star24"'
   - name: star32
     uid: word!Word.GeometricShapeType.star32:member
@@ -1255,7 +1257,7 @@ fields:
     summary: |-
       Star 32-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star32"'
   - name: star4
     uid: word!Word.GeometricShapeType.star4:member
@@ -1263,7 +1265,7 @@ fields:
     summary: |-
       Star 4-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star4"'
   - name: star5
     uid: word!Word.GeometricShapeType.star5:member
@@ -1271,7 +1273,7 @@ fields:
     summary: |-
       Star 5-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star5"'
   - name: star6
     uid: word!Word.GeometricShapeType.star6:member
@@ -1279,7 +1281,7 @@ fields:
     summary: |-
       Star 6-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star6"'
   - name: star7
     uid: word!Word.GeometricShapeType.star7:member
@@ -1287,7 +1289,7 @@ fields:
     summary: |-
       Star 7-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star7"'
   - name: star8
     uid: word!Word.GeometricShapeType.star8:member
@@ -1295,7 +1297,7 @@ fields:
     summary: |-
       Star 8-point geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star8"'
   - name: stripedRightArrow
     uid: word!Word.GeometricShapeType.stripedRightArrow:member
@@ -1303,7 +1305,7 @@ fields:
     summary: |-
       Striped right arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"StripedRightArrow"'
   - name: sun
     uid: word!Word.GeometricShapeType.sun:member
@@ -1311,7 +1313,7 @@ fields:
     summary: |-
       Sun geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Sun"'
   - name: swooshArrow
     uid: word!Word.GeometricShapeType.swooshArrow:member
@@ -1319,7 +1321,7 @@ fields:
     summary: |-
       Swoosh arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SwooshArrow"'
   - name: teardrop
     uid: word!Word.GeometricShapeType.teardrop:member
@@ -1327,7 +1329,7 @@ fields:
     summary: |-
       Teardrop geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Teardrop"'
   - name: trapezoid
     uid: word!Word.GeometricShapeType.trapezoid:member
@@ -1335,7 +1337,7 @@ fields:
     summary: |-
       Trapezoid geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Trapezoid"'
   - name: triangle
     uid: word!Word.GeometricShapeType.triangle:member
@@ -1343,7 +1345,7 @@ fields:
     summary: |-
       Triangle geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Triangle"'
   - name: upArrow
     uid: word!Word.GeometricShapeType.upArrow:member
@@ -1351,7 +1353,7 @@ fields:
     summary: |-
       Up arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpArrow"'
   - name: upArrowCallout
     uid: word!Word.GeometricShapeType.upArrowCallout:member
@@ -1359,7 +1361,7 @@ fields:
     summary: |-
       Up arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpArrowCallout"'
   - name: upDownArrow
     uid: word!Word.GeometricShapeType.upDownArrow:member
@@ -1367,7 +1369,7 @@ fields:
     summary: |-
       Up-down arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpDownArrow"'
   - name: upDownArrowCallout
     uid: word!Word.GeometricShapeType.upDownArrowCallout:member
@@ -1375,7 +1377,7 @@ fields:
     summary: |-
       Up-down arrow callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpDownArrowCallout"'
   - name: uturnArrow
     uid: word!Word.GeometricShapeType.uturnArrow:member
@@ -1383,7 +1385,7 @@ fields:
     summary: |-
       U-turn arrow geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UturnArrow"'
   - name: verticalScroll
     uid: word!Word.GeometricShapeType.verticalScroll:member
@@ -1391,7 +1393,7 @@ fields:
     summary: |-
       Vertical scroll geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"VerticalScroll"'
   - name: wave
     uid: word!Word.GeometricShapeType.wave:member
@@ -1399,7 +1401,7 @@ fields:
     summary: |-
       Wave geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Wave"'
   - name: wedgeEllipseCallout
     uid: word!Word.GeometricShapeType.wedgeEllipseCallout:member
@@ -1407,7 +1409,7 @@ fields:
     summary: |-
       Wedge ellipse callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"WedgeEllipseCallout"'
   - name: wedgeRectCallout
     uid: word!Word.GeometricShapeType.wedgeRectCallout:member
@@ -1415,7 +1417,7 @@ fields:
     summary: |-
       Wedge rectangle callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"WedgeRectCallout"'
   - name: wedgeRRectCallout
     uid: word!Word.GeometricShapeType.wedgeRRectCallout:member
@@ -1423,5 +1425,5 @@ fields:
     summary: |-
       Wedge rounded rectangle callout geometric shape.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"WedgeRRectCallout"'

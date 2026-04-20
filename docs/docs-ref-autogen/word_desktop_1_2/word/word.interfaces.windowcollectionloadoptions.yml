@@ -3,9 +3,13 @@ name: Word.Interfaces.WindowCollectionLoadOptions
 uid: word!Word.Interfaces.WindowCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.WindowCollectionLoadOptions
-summary: Represents the collection of [Word.Window](xref:word!Word.Window:class) objects.
-remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the collection of [Word.Window](xref:word!Word.Window:class)
+  objects.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.WindowCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,10 @@ properties:
     package: word!
     fullName: activePane
     summary: 'For EACH ITEM in the collection: Gets the active pane in the window.'
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

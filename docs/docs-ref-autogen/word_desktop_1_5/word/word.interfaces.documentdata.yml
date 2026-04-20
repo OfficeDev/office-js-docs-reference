@@ -3,9 +3,11 @@ name: Word.Interfaces.DocumentData
 uid: word!Word.Interfaces.DocumentData:interface
 package: word!
 fullName: Word.Interfaces.DocumentData
-summary: An interface describing the data returned by calling `document.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `document.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: activeTheme
     summary: Gets the name of the active theme and formatting options.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: activeThemeDisplayName
     summary: Gets the display name of the active theme.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +44,7 @@ properties:
     fullName: activeWindow
     summary: Gets the active window for the document.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +52,15 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.WindowData:interface" />
   - name: areFilePropertiesPasswordEncrypted
-    uid: word!Word.Interfaces.DocumentData#areFilePropertiesPasswordEncrypted:member
+    uid: >-
+      word!Word.Interfaces.DocumentData#areFilePropertiesPasswordEncrypted:member
     package: word!
     fullName: areFilePropertiesPasswordEncrypted
-    summary: Gets whether Word encrypts file properties for password-protected documents.
+    summary: >-
+      Gets whether Word encrypts file properties for password-protected
+      documents.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +71,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#areGrammaticalErrorsShown:member
     package: word!
     fullName: areGrammaticalErrorsShown
-    summary: Specifies whether grammatical errors are marked by a wavy green line in the document.
+    summary: >-
+      Specifies whether grammatical errors are marked by a wavy green line in
+      the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +86,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#areMathDefaultsUsed:member
     package: word!
     fullName: areMathDefaultsUsed
-    summary: Specifies whether to use the default math settings when creating new equations.
+    summary: >-
+      Specifies whether to use the default math settings when creating new
+      equations.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +101,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#areNewerFeaturesDisabled:member
     package: word!
     fullName: areNewerFeaturesDisabled
-    summary: Specifies whether to disable features introduced after a specified version.
+    summary: >-
+      Specifies whether to disable features introduced after a specified
+      version.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +116,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#areSpellingErrorsShown:member
     package: word!
     fullName: areSpellingErrorsShown
-    summary: Specifies whether Microsoft Word underlines spelling errors in the document.
+    summary: >-
+      Specifies whether Microsoft Word underlines spelling errors in the
+      document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,10 +132,10 @@ properties:
     package: word!
     fullName: areStylesUpdatedOnOpen
     summary: >-
-      Specifies whether the styles in this document are updated to match the styles in the attached template each time
-      the document is opened.
+      Specifies whether the styles in this document are updated to match the
+      styles in the attached template each time the document is opened.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,9 +146,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#areTrueTypeFontsEmbedded:member
     package: word!
     fullName: areTrueTypeFontsEmbedded
-    summary: Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
+    summary: >-
+      Specifies whether Microsoft Word embeds TrueType fonts in the document
+      when it's saved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,7 +163,7 @@ properties:
     fullName: autoHyphenation
     summary: Specifies if automatic hyphenation is turned on for the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,7 +176,7 @@ properties:
     fullName: autoSaveOn
     summary: Specifies if the edits in the document are automatically saved.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,9 +187,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#bibliography:member
     package: word!
     fullName: bibliography
-    summary: Returns a `Bibliography` object that represents the bibliography references contained within the document.
+    summary: >-
+      Returns a `Bibliography` object that represents the bibliography
+      references contained within the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,10 +203,10 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes,
-      textboxes, etc.
+      Gets the `Body` object of the main document. The body is the text that
+      excludes headers, footers, footnotes, textboxes, etc.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,20 +219,24 @@ properties:
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
+      content: >-
+        changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" |
+        "TrackMineOnly";
       return:
-        type: <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"
+        type: >-
+          <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
+          | "TrackMineOnly"
   - name: coauthoring
     uid: word!Word.Interfaces.DocumentData#coauthoring:member
     package: word!
     fullName: coauthoring
     summary: Gets a `Coauthoring` object for managing coauthoring in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,7 +249,7 @@ properties:
     fullName: codeName
     summary: Gets the code name for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,22 +262,26 @@ properties:
     fullName: compatibilityMode
     summary: Gets the compatibility mode that Word uses when opening the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'compatibilityMode?: Word.CompatibilityMode | "Word2003" | "Word2007" | "Word2010" | "Word2013" | "Current";'
+      content: >-
+        compatibilityMode?: Word.CompatibilityMode | "Word2003" | "Word2007" |
+        "Word2010" | "Word2013" | "Current";
       return:
         type: >-
-          <xref uid="word!Word.CompatibilityMode:enum" /> | "Word2003" | "Word2007" | "Word2010" | "Word2013" |
-          "Current"
+          <xref uid="word!Word.CompatibilityMode:enum" /> | "Word2003" |
+          "Word2007" | "Word2010" | "Word2013" | "Current"
   - name: consecutiveHyphensLimit
     uid: word!Word.Interfaces.DocumentData#consecutiveHyphensLimit:member
     package: word!
     fullName: consecutiveHyphensLimit
-    summary: Specifies the maximum number of consecutive lines that can end with hyphens.
+    summary: >-
+      Specifies the maximum number of consecutive lines that can end with
+      hyphens.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,10 +293,11 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of `ContentControl` objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.
+      Gets the collection of `ContentControl` objects in the document. This
+      includes content controls in the body of the document, headers, footers,
+      textboxes, etc.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,7 +310,7 @@ properties:
     fullName: currentRsid
     summary: Gets a random number that Word assigns to changes in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,7 +323,7 @@ properties:
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,9 +334,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#defaultTabStop:member
     package: word!
     fullName: defaultTabStop
-    summary: Specifies the interval (in points) between the default tab stops in the document.
+    summary: >-
+      Specifies the interval (in points) between the default tab stops in the
+      document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,7 +351,7 @@ properties:
     fullName: defaultTargetFrame
     summary: Specifies the browser frame for displaying a webpage via hyperlink.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -335,23 +363,26 @@ properties:
     package: word!
     fullName: documentLibraryVersions
     summary: >-
-      Returns a `DocumentLibraryVersionCollection` object that represents the collection of versions of a shared
-      document that has versioning enabled and that's stored in a document library on a server.
+      Returns a `DocumentLibraryVersionCollection` object that represents the
+      collection of versions of a shared document that has versioning enabled
+      and that's stored in a document library on a server.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'documentLibraryVersions?: Word.Interfaces.DocumentLibraryVersionData[];'
       return:
-        type: <xref uid="word!Word.Interfaces.DocumentLibraryVersionData:interface" />[]
+        type: >-
+          <xref uid="word!Word.Interfaces.DocumentLibraryVersionData:interface"
+          />[]
   - name: doNotEmbedSystemFonts
     uid: word!Word.Interfaces.DocumentData#doNotEmbedSystemFonts:member
     package: word!
     fullName: doNotEmbedSystemFonts
     summary: Specifies whether Word should not embed common system fonts.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,9 +393,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#encryptionProvider:member
     package: word!
     fullName: encryptionProvider
-    summary: Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
+    summary: >-
+      Specifies the name of the algorithm encryption provider that Microsoft
+      Word uses when encrypting documents.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -377,37 +410,43 @@ properties:
     fullName: farEastLineBreakLanguage
     summary: Specifies the East Asian language used for line breaking.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        farEastLineBreakLanguage?: Word.FarEastLineBreakLanguageId | "TraditionalChinese" | "Japanese" | "Korean" |
-        "SimplifiedChinese";
+        farEastLineBreakLanguage?: Word.FarEastLineBreakLanguageId |
+        "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
       return:
         type: >-
-          <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> | "TraditionalChinese" | "Japanese" | "Korean" |
-          "SimplifiedChinese"
+          <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> |
+          "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
   - name: farEastLineBreakLevel
     uid: word!Word.Interfaces.DocumentData#farEastLineBreakLevel:member
     package: word!
     fullName: farEastLineBreakLevel
     summary: Specifies the line break control level.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'farEastLineBreakLevel?: Word.FarEastLineBreakLevel | "Normal" | "Strict" | "Custom";'
+      content: >-
+        farEastLineBreakLevel?: Word.FarEastLineBreakLevel | "Normal" | "Strict"
+        | "Custom";
       return:
-        type: <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" | "Strict" | "Custom"
+        type: >-
+          <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" |
+          "Strict" | "Custom"
   - name: formattingIsNextLevelShown
     uid: word!Word.Interfaces.DocumentData#formattingIsNextLevelShown:member
     package: word!
     fullName: formattingIsNextLevelShown
-    summary: Specifies whether Word shows the next heading level when the previous is used.
+    summary: >-
+      Specifies whether Word shows the next heading level when the previous is
+      used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -420,7 +459,7 @@ properties:
     fullName: formattingIsUserStyleNameShown
     summary: Specifies whether to show user-defined styles.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -431,9 +470,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#frames:member
     package: word!
     fullName: frames
-    summary: Returns a `FrameCollection` object that represents all the frames in the document.
+    summary: >-
+      Returns a `FrameCollection` object that represents all the frames in the
+      document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -446,7 +487,7 @@ properties:
     fullName: fullName
     summary: Gets the name of a document, including the path.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -458,10 +499,11 @@ properties:
     package: word!
     fullName: gridDistanceHorizontal
     summary: >-
-      Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and
-      resize AutoShapes or East Asian characters in the document.
+      Specifies the horizontal space between invisible gridlines that Microsoft
+      Word uses when you draw, move, and resize AutoShapes or East Asian
+      characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -473,10 +515,11 @@ properties:
     package: word!
     fullName: gridDistanceVertical
     summary: >-
-      Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize
-      AutoShapes or East Asian characters in the document.
+      Specifies the vertical space between invisible gridlines that Microsoft
+      Word uses when you draw, move, and resize AutoShapes or East Asian
+      characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -487,9 +530,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#gridIsOriginFromMargin:member
     package: word!
     fullName: gridIsOriginFromMargin
-    summary: Specifies whether the character grid starts from the upper-left corner of the page.
+    summary: >-
+      Specifies whether the character grid starts from the upper-left corner of
+      the page.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -502,7 +547,7 @@ properties:
     fullName: gridOriginHorizontal
     summary: Specifies the horizontal origin point for the invisible grid.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -515,7 +560,7 @@ properties:
     fullName: gridOriginVertical
     summary: Specifies the vertical origin point for the invisible grid.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -526,9 +571,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#gridSpaceBetweenHorizontalLines:member
     package: word!
     fullName: gridSpaceBetweenHorizontalLines
-    summary: Specifies the interval for horizontal character gridlines in print layout view.
+    summary: >-
+      Specifies the interval for horizontal character gridlines in print layout
+      view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -539,9 +586,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#gridSpaceBetweenVerticalLines:member
     package: word!
     fullName: gridSpaceBetweenVerticalLines
-    summary: Specifies the interval for vertical character gridlines in print layout view.
+    summary: >-
+      Specifies the interval for vertical character gridlines in print layout
+      view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -554,7 +603,7 @@ properties:
     fullName: hasPassword
     summary: Gets whether a password is required to open the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -565,9 +614,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#hasVbProject:member
     package: word!
     fullName: hasVbProject
-    summary: Gets whether the document has an attached Microsoft Visual Basic for Applications project.
+    summary: >-
+      Gets whether the document has an attached Microsoft Visual Basic for
+      Applications project.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -578,9 +629,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#hyperlinks:member
     package: word!
     fullName: hyperlinks
-    summary: Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.
+    summary: >-
+      Returns a `HyperlinkCollection` object that represents all the hyperlinks
+      in the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -593,7 +646,7 @@ properties:
     fullName: hyphenateCaps
     summary: Specifies whether words in all capital letters can be hyphenated.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -606,7 +659,7 @@ properties:
     fullName: hyphenationZone
     summary: Specifies the width of the hyphenation zone, in points.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -617,9 +670,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isAutoFormatOverrideOn:member
     package: word!
     fullName: isAutoFormatOverrideOn
-    summary: Specifies whether automatic formatting options override formatting restrictions.
+    summary: >-
+      Specifies whether automatic formatting options override formatting
+      restrictions.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -630,9 +685,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isChartDataPointTracked:member
     package: word!
     fullName: isChartDataPointTracked
-    summary: Specifies whether charts in the active document use cell-reference data-point tracking.
+    summary: >-
+      Specifies whether charts in the active document use cell-reference
+      data-point tracking.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -643,9 +700,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isCompatible:member
     package: word!
     fullName: isCompatible
-    summary: Specifies whether the compatibility option specified by the `type` property is enabled.
+    summary: >-
+      Specifies whether the compatibility option specified by the `type`
+      property is enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -658,7 +717,7 @@ properties:
     fullName: isFinal
     summary: Specifies whether the document is final.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -669,9 +728,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isFontsSubsetSaved:member
     package: word!
     fullName: isFontsSubsetSaved
-    summary: Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
+    summary: >-
+      Specifies whether Microsoft Word saves a subset of the embedded TrueType
+      fonts with the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -683,10 +744,10 @@ properties:
     package: word!
     fullName: isFormsDataPrinted
     summary: >-
-      Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online
-      form.
+      Specifies whether Microsoft Word prints onto a preprinted form only the
+      data entered in the corresponding online form.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -697,9 +758,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isFormsDataSaved:member
     package: word!
     fullName: isFormsDataSaved
-    summary: Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
+    summary: >-
+      Specifies whether Microsoft Word saves the data entered in a form as a
+      tab-delimited record for use in a database.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -712,7 +775,7 @@ properties:
     fullName: isGrammarChecked
     summary: Specifies whether a grammar check has been run on the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -724,10 +787,11 @@ properties:
     package: word!
     fullName: isInAutoSave
     summary: >-
-      Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic
-      save by the document or a manual save by the user.
+      Gets whether the most recent firing of the
+      `Application.DocumentBeforeSave` event was the result of an automatic save
+      by the document or a manual save by the user.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -740,7 +804,7 @@ properties:
     fullName: isInFormsDesign
     summary: Gets whether the document is in form design mode.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -751,9 +815,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isKerningByAlgorithm:member
     package: word!
     fullName: isKerningByAlgorithm
-    summary: Specifies whether Word kerns half-width Latin characters and punctuation marks.
+    summary: >-
+      Specifies whether Word kerns half-width Latin characters and punctuation
+      marks.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -766,7 +832,7 @@ properties:
     fullName: isLinguisticDataEmbedded
     summary: Specifies whether to embed speech and handwriting data.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -779,7 +845,7 @@ properties:
     fullName: isMasterDocument
     summary: Gets whether this document is a master document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -792,7 +858,7 @@ properties:
     fullName: isOptimizedForWord97
     summary: Specifies whether Word optimizes the document for Word 97.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -804,11 +870,12 @@ properties:
     package: word!
     fullName: isPostScriptPrintedOverText
     summary: >-
-      Specifies whether [PRINT field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f)
-      instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a
-      PostScript printer is used.
+      Specifies whether [PRINT
+      field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f)
+      instructions (such as PostScript commands) in the document are to be
+      printed on top of text and graphics when a PostScript printer is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -821,7 +888,7 @@ properties:
     fullName: isQuickStyleSetLocked
     summary: Specifies whether users can change the Quick Style set.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -832,9 +899,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isReadOnly:member
     package: word!
     fullName: isReadOnly
-    summary: Gets whether changes to the document cannot be saved to the original document.
+    summary: >-
+      Gets whether changes to the document cannot be saved to the original
+      document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -846,10 +915,10 @@ properties:
     package: word!
     fullName: isReadOnlyRecommended
     summary: >-
-      Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be
-      opened as read-only.
+      Specifies whether Microsoft Word displays a message box whenever a user
+      opens the document, suggesting that it be opened as read-only.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -860,9 +929,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isSnappedToGrid:member
     package: word!
     fullName: isSnappedToGrid
-    summary: Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
+    summary: >-
+      Specifies whether AutoShapes or East Asian characters are automatically
+      aligned with an invisible grid.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -873,9 +944,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isSnappedToShapes:member
     package: word!
     fullName: isSnappedToShapes
-    summary: Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
+    summary: >-
+      Specifies whether AutoShapes or East Asian characters align with invisible
+      gridlines through other shapes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -888,7 +961,7 @@ properties:
     fullName: isSpellingChecked
     summary: Specifies whether spelling has been checked throughout the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -899,9 +972,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#isStyleEnforced:member
     package: word!
     fullName: isStyleEnforced
-    summary: Specifies whether formatting restrictions are enforced in a protected document.
+    summary: >-
+      Specifies whether formatting restrictions are enforced in a protected
+      document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -914,7 +989,7 @@ properties:
     fullName: isSubdocument
     summary: Gets whether this document is a subdocument of a master document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -927,7 +1002,7 @@ properties:
     fullName: isThemeLocked
     summary: Specifies whether users can change the document theme.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -940,7 +1015,7 @@ properties:
     fullName: isUserControl
     summary: Specifies whether the document was created or opened by the user.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -953,7 +1028,7 @@ properties:
     fullName: isVbaSigned
     summary: Gets whether the VBA project is digitally signed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -966,7 +1041,7 @@ properties:
     fullName: isWriteReserved
     summary: Gets whether the document is protected with a write password.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -979,33 +1054,43 @@ properties:
     fullName: justificationMode
     summary: Specifies the character spacing adjustment.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'justificationMode?: Word.JustificationMode | "Expand" | "Compress" | "CompressKana";'
+      content: >-
+        justificationMode?: Word.JustificationMode | "Expand" | "Compress" |
+        "CompressKana";
       return:
-        type: <xref uid="word!Word.JustificationMode:enum" /> | "Expand" | "Compress" | "CompressKana"
+        type: >-
+          <xref uid="word!Word.JustificationMode:enum" /> | "Expand" |
+          "Compress" | "CompressKana"
   - name: kind
     uid: word!Word.Interfaces.DocumentData#kind:member
     package: word!
     fullName: kind
-    summary: Specifies the format type that Microsoft Word uses when automatically formatting the document.
+    summary: >-
+      Specifies the format type that Microsoft Word uses when automatically
+      formatting the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'kind?: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";'
       return:
-        type: <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter" | "Email"
+        type: >-
+          <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter"
+          | "Email"
   - name: languageDetected
     uid: word!Word.Interfaces.DocumentData#languageDetected:member
     package: word!
     fullName: languageDetected
-    summary: Specifies whether Microsoft Word has detected the language of the document text.
+    summary: >-
+      Specifies whether Microsoft Word has detected the language of the document
+      text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1016,9 +1101,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#listTemplates:member
     package: word!
     fullName: listTemplates
-    summary: Returns a `ListTemplateCollection` object that represents all the list templates in the document.
+    summary: >-
+      Returns a `ListTemplateCollection` object that represents all the list
+      templates in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1031,7 +1118,7 @@ properties:
     fullName: noLineBreakAfter
     summary: Specifies the kinsoku characters after which Word will not break a line.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1044,7 +1131,7 @@ properties:
     fullName: noLineBreakBefore
     summary: Specifies the kinsoku characters before which Word will not break a line.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1057,75 +1144,109 @@ properties:
     fullName: openEncoding
     summary: Gets the encoding used to open the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        openEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-        "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" |
-        "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-        "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" |
-        "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew"
-        | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
-        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" |
-        "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" |
-        "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" |
-        "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" |
-        "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish"
-        | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" |
-        "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" |
-        "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-        "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" |
-        "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        openEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
+        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
+        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
+        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
+        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
+        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
+        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
+        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
+        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
+        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
+        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
+        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
+        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
+        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
+        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
+        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
+        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
       return:
         type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" |
-          "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-          "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" |
-          "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-          "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-          "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-          "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" |
-          "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-          "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden"
-          | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-          "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" |
-          "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" |
-          "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" |
-          "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" |
-          "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-          "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-          "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" |
-          "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: originalDocumentTitle
     uid: word!Word.Interfaces.DocumentData#originalDocumentTitle:member
     package: word!
     fullName: originalDocumentTitle
     summary: Gets the title of the original document after legal-blackline comparison.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1138,7 +1259,7 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1151,7 +1272,7 @@ properties:
     fullName: password
     summary: Sets a password that must be supplied to open the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1164,7 +1285,7 @@ properties:
     fullName: passwordEncryptionAlgorithm
     summary: Gets the algorithm used for password encryption.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1177,7 +1298,7 @@ properties:
     fullName: passwordEncryptionKeyLength
     summary: Gets the key length used for password encryption.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1190,7 +1311,7 @@ properties:
     fullName: passwordEncryptionProvider
     summary: Gets the name of the password encryption provider.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1201,9 +1322,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#path:member
     package: word!
     fullName: path
-    summary: Gets the disk or the web path to the document (excludes the document name).
+    summary: >-
+      Gets the disk or the web path to the document (excludes the document
+      name).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1216,7 +1339,7 @@ properties:
     fullName: printRevisions
     summary: Specifies whether revision marks are printed with the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1229,7 +1352,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the document.
     remarks: '\[Api set: WordApi 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1242,24 +1365,26 @@ properties:
     fullName: protectionType
     summary: Gets the protection type for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        protectionType?: Word.ProtectionType | "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" |
-        "AllowOnlyFormFields" | "AllowOnlyReading";
+        protectionType?: Word.ProtectionType | "NoProtection" |
+        "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" |
+        "AllowOnlyReading";
       return:
         type: >-
-          <xref uid="word!Word.ProtectionType:enum" /> | "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" |
-          "AllowOnlyFormFields" | "AllowOnlyReading"
+          <xref uid="word!Word.ProtectionType:enum" /> | "NoProtection" |
+          "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" |
+          "AllowOnlyReading"
   - name: readingLayoutSizeX
     uid: word!Word.Interfaces.DocumentData#readingLayoutSizeX:member
     package: word!
     fullName: readingLayoutSizeX
     summary: Specifies the width of pages in reading layout view when frozen.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1272,7 +1397,7 @@ properties:
     fullName: readingLayoutSizeY
     summary: Specifies the height of pages in reading layout view when frozen.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1283,9 +1408,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#readingModeIsLayoutFrozen:member
     package: word!
     fullName: readingModeIsLayoutFrozen
-    summary: Specifies whether pages in reading layout view are frozen for handwritten markup.
+    summary: >-
+      Specifies whether pages in reading layout view are frozen for handwritten
+      markup.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1298,7 +1425,7 @@ properties:
     fullName: removePersonalInformationOnSave
     summary: Specifies whether Word removes user information upon saving.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1311,7 +1438,7 @@ properties:
     fullName: revisedDocumentTitle
     summary: Gets the title of the revised document after legal-blackline comparison.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1323,10 +1450,10 @@ properties:
     package: word!
     fullName: saved
     summary: >-
-      Indicates whether the changes in the document have been saved. A value of `true` indicates that the document
-      hasn't changed since it was saved.
+      Indicates whether the changes in the document have been saved. A value of
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1339,90 +1466,130 @@ properties:
     fullName: saveEncoding
     summary: Specifies the encoding used when saving the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        saveEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-        "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" |
-        "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-        "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" |
-        "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew"
-        | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
-        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" |
-        "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" |
-        "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" |
-        "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" |
-        "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish"
-        | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" |
-        "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" |
-        "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-        "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" |
-        "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        saveEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
+        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
+        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
+        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
+        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
+        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
+        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
+        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
+        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
+        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
+        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
+        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
+        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
+        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
+        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
+        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
+        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
       return:
         type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" |
-          "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-          "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" |
-          "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-          "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-          "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-          "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" |
-          "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-          "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden"
-          | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-          "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" |
-          "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" |
-          "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" |
-          "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" |
-          "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-          "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-          "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" |
-          "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: saveFormat
     uid: word!Word.Interfaces.DocumentData#saveFormat:member
     package: word!
     fullName: saveFormat
     summary: Gets the file format of the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        saveFormat?: Word.FileSaveFormat | "Document" | "Template" | "Text" | "TextLineBreaks" | "DosText" |
-        "DosTextLineBreaks" | "Rtf" | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" | "XmlDocument" |
-        "XmlDocumentMacroEnabled" | "XmlTemplate" | "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
-        "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" | "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
+        saveFormat?: Word.FileSaveFormat | "Document" | "Template" | "Text" |
+        "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" |
+        "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" |
+        "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" |
+        "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
+        "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" |
+        "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
         "StrictOpenXmlDocument";
       return:
         type: >-
-          <xref uid="word!Word.FileSaveFormat:enum" /> | "Document" | "Template" | "Text" | "TextLineBreaks" | "DosText"
-          | "DosTextLineBreaks" | "Rtf" | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" | "XmlDocument"
-          | "XmlDocumentMacroEnabled" | "XmlTemplate" | "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
-          "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" | "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
+          <xref uid="word!Word.FileSaveFormat:enum" /> | "Document" | "Template"
+          | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf"
+          | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" |
+          "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" |
+          "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
+          "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" |
+          "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
           "StrictOpenXmlDocument"
   - name: sections
     uid: word!Word.Interfaces.DocumentData#sections:member
@@ -1430,7 +1597,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1441,9 +1608,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#selection:member
     package: word!
     fullName: selection
-    summary: Returns a `Selection` object that represents the current selection in the document.
+    summary: >-
+      Returns a `Selection` object that represents the current selection in the
+      document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1456,7 +1625,7 @@ properties:
     fullName: settings
     summary: Gets the add-in's settings in the document.
     remarks: '\[Api set: WordApi 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1469,88 +1638,129 @@ properties:
     fullName: textEncoding
     summary: Specifies the encoding for saving as encoded text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        textEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-        "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" |
-        "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-        "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" |
-        "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew"
-        | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
-        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" |
-        "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" |
-        "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" |
-        "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" |
-        "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish"
-        | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" |
-        "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" |
-        "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-        "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" |
-        "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+        textEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
+        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
+        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
+        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
+        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
+        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
+        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
+        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
+        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
+        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
+        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
+        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
+        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
+        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
+        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
+        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
+        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
       return:
         type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" |
-          "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-          "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" |
-          "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-          "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-          "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-          "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" |
-          "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-          "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden"
-          | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-          "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" |
-          "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" |
-          "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" |
-          "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" |
-          "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-          "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-          "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" |
-          "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: textLineEnding
     uid: word!Word.Interfaces.DocumentData#textLineEnding:member
     package: word!
     fullName: textLineEnding
     summary: Specifies how Word marks line and paragraph breaks in text files.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'textLineEnding?: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps";'
+      content: >-
+        textLineEnding?: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" |
+        "Lfcr" | "Lsps";
       return:
-        type: <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps"
+        type: >-
+          <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" |
+          "LfOnly" | "Lfcr" | "Lsps"
   - name: trackedChangesAreDateAndTimeRemoved
-    uid: word!Word.Interfaces.DocumentData#trackedChangesAreDateAndTimeRemoved:member
+    uid: >-
+      word!Word.Interfaces.DocumentData#trackedChangesAreDateAndTimeRemoved:member
     package: word!
     fullName: trackedChangesAreDateAndTimeRemoved
-    summary: Specifies whether to remove or store date and time metadata for tracked changes.
+    summary: >-
+      Specifies whether to remove or store date and time metadata for tracked
+      changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1563,7 +1773,7 @@ properties:
     fullName: trackFormatting
     summary: Specifies whether to track formatting changes when change tracking is on.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1576,7 +1786,7 @@ properties:
     fullName: trackMoves
     summary: Specifies whether to mark moved text when Track Changes is on.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1589,7 +1799,7 @@ properties:
     fullName: trackRevisions
     summary: Specifies whether changes are tracked in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1602,20 +1812,22 @@ properties:
     fullName: type
     summary: Gets the document type (template or document).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: Word.DocumentType | "Document" | "Template" | "Frameset";'
       return:
-        type: <xref uid="word!Word.DocumentType:enum" /> | "Document" | "Template" | "Frameset"
+        type: >-
+          <xref uid="word!Word.DocumentType:enum" /> | "Document" | "Template" |
+          "Frameset"
   - name: windows
     uid: word!Word.Interfaces.DocumentData#windows:member
     package: word!
     fullName: windows
     summary: Gets the collection of `Word.Window` objects for the document.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1628,7 +1840,7 @@ properties:
     fullName: writePassword
     summary: Sets a password for saving changes to the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1639,9 +1851,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#xmlAreAdvancedErrorsShown:member
     package: word!
     fullName: xmlAreAdvancedErrorsShown
-    summary: Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
+    summary: >-
+      Specifies whether error messages are generated from built-in Word messages
+      or MSXML (Microsoft XML).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1652,9 +1866,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#xmlIsXsltUsedWhenSaving:member
     package: word!
     fullName: xmlIsXsltUsedWhenSaving
-    summary: Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
+    summary: >-
+      Specifies whether to save a document through an Extensible Stylesheet
+      Language Transformation (XSLT).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1665,9 +1881,11 @@ properties:
     uid: word!Word.Interfaces.DocumentData#xmlSaveThroughXslt:member
     package: word!
     fullName: xmlSaveThroughXslt
-    summary: Specifies the path and file name for the XSLT to apply when saving a document.
+    summary: >-
+      Specifies the path and file name for the XSLT to apply when saving a
+      document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

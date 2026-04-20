@@ -4,10 +4,12 @@ uid: word!Word.RelativeVerticalPosition:enum
 package: word!
 fullName: Word.RelativeVerticalPosition
 summary: >-
-  Represents what the vertical position of a shape is relative to. For more information about margins, see [Change the
-  margins in your Word document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
+  Represents what the vertical position of a shape is relative to. For more
+  information about margins, see [Change the margins in your Word
+  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
+  -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +19,7 @@ fields:
     summary: |-
       Relative to bottom margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BottomMargin"'
   - name: insideMargin
     uid: word!Word.RelativeVerticalPosition.insideMargin:member
@@ -25,7 +27,7 @@ fields:
     summary: |-
       Relative to inside margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"InsideMargin"'
   - name: line
     uid: word!Word.RelativeVerticalPosition.line:member
@@ -33,7 +35,7 @@ fields:
     summary: |-
       Relative to line.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Line"'
   - name: margin
     uid: word!Word.RelativeVerticalPosition.margin:member
@@ -41,7 +43,7 @@ fields:
     summary: |-
       Relative to margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeVerticalPosition.outsideMargin:member
@@ -49,7 +51,7 @@ fields:
     summary: |-
       Relative to outside margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeVerticalPosition.page:member
@@ -57,7 +59,7 @@ fields:
     summary: |-
       Relative to page.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Page"'
   - name: paragraph
     uid: word!Word.RelativeVerticalPosition.paragraph:member
@@ -65,7 +67,7 @@ fields:
     summary: |-
       Relative to paragraph.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Paragraph"'
   - name: topMargin
     uid: word!Word.RelativeVerticalPosition.topMargin:member
@@ -73,5 +75,5 @@ fields:
     summary: |-
       Relative to top margin.
 
-      \* \[Api set: WordApiDesktop 1.2\]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"TopMargin"'

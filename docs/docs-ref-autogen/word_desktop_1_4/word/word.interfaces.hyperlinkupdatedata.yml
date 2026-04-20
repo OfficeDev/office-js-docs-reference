@@ -3,9 +3,11 @@ name: Word.Interfaces.HyperlinkUpdateData
 uid: word!Word.Interfaces.HyperlinkUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HyperlinkUpdateData
-summary: An interface for updating data on the `Hyperlink` object, for use in `hyperlink.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Hyperlink` object, for use in
+  `hyperlink.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: address
     summary: Specifies the address (for example, a file name or URL) of the hyperlink.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: emailSubject
     summary: Specifies the text string for the hyperlink's subject line.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +46,13 @@ properties:
     uid: word!Word.Interfaces.HyperlinkUpdateData#range:member
     package: word!
     fullName: range
-    summary: Returns a `Range` object that represents the portion of the document that's contained within the hyperlink.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained within the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +63,13 @@ properties:
     uid: word!Word.Interfaces.HyperlinkUpdateData#screenTip:member
     package: word!
     fullName: screenTip
-    summary: Specifies the text that appears as a ScreenTip when the mouse pointer is positioned over the hyperlink.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the text that appears as a ScreenTip when the mouse pointer is
+      positioned over the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +81,10 @@ properties:
     package: word!
     fullName: subAddress
     summary: Specifies a named location in the destination of the hyperlink.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +96,10 @@ properties:
     package: word!
     fullName: target
     summary: Specifies the name of the frame or window in which to load the hyperlink.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,8 +111,10 @@ properties:
     package: word!
     fullName: textToDisplay
     summary: Specifies the hyperlink's visible text in the document.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

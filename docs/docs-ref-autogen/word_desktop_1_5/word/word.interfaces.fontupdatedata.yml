@@ -3,9 +3,11 @@ name: Word.Interfaces.FontUpdateData
 uid: word!Word.Interfaces.FontUpdateData:interface
 package: word!
 fullName: Word.Interfaces.FontUpdateData
-summary: An interface for updating data on the `Font` object, for use in `font.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Font` object, for use in `font.set({
+  ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,19 +17,21 @@ properties:
     package: word!
     fullName: allCaps
     summary: >-
-      Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase
-      letters. The possible values are as follows:
+      Specifies whether the font is formatted as all capital letters, which
+      makes lowercase letters appear as uppercase letters. The possible values
+      are as follows:
 
 
-      - `true`<!-- -->: All the text has the \*\*All Caps\*\* attribute.
+      - `true`<!-- -->: All the text has the **All Caps** attribute.
 
 
-      - `false`<!-- -->: None of the text has the \*\*All Caps\*\* attribute.
+      - `false`<!-- -->: None of the text has the **All Caps** attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*All Caps\*\* attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **All Caps** attribute.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,9 +42,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#bold:member
     package: word!
     fullName: bold
-    summary: Specifies whether the font is bold. `true` if the font is formatted as bold, otherwise, `false`<!-- -->.
+    summary: >-
+      Specifies whether the font is bold. `true` if the font is formatted as
+      bold, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,8 +58,8 @@ properties:
     package: word!
     fullName: boldBidirectional
     summary: >-
-      Specifies whether the font is formatted as bold in a right-to-left language document. The possible values are as
-      follows:
+      Specifies whether the font is formatted as bold in a right-to-left
+      language document. The possible values are as follows:
 
 
       - `true`<!-- -->: All the text is bold.
@@ -64,7 +70,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,9 +81,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#color:member
     package: word!
     fullName: color
-    summary: Specifies the color for the font. You can provide the value in the '\#RRGGBB' format or the color name.
+    summary: >-
+      Specifies the color for the font. You can provide the value in the
+      '\#RRGGBB' format or the color name.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,45 +98,51 @@ properties:
     fullName: colorIndex
     summary: Specifies a `ColorIndex` value that represents the color for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        colorIndex?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" |
-        "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" |
-        "ClassicRed" | "ClassicBlue" | "ByAuthor";
+        colorIndex?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" |
+        "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" |
+        "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
+        "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
       return:
         type: >-
-          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" |
-          "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
-          "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
   - name: colorIndexBidirectional
     uid: word!Word.Interfaces.FontUpdateData#colorIndexBidirectional:member
     package: word!
     fullName: colorIndexBidirectional
-    summary: Specifies the color for the `Font` object in a right-to-left language document.
+    summary: >-
+      Specifies the color for the `Font` object in a right-to-left language
+      document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        colorIndexBidirectional?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" |
-        "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
-        "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+        colorIndexBidirectional?: Word.ColorIndex | "Auto" | "Black" | "Blue" |
+        "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+        "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+        "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
       return:
         type: >-
-          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" |
-          "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
-          "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
   - name: contextualAlternates
     uid: word!Word.Interfaces.FontUpdateData#contextualAlternates:member
     package: word!
     fullName: contextualAlternates
     summary: Specifies whether contextual alternates are enabled for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,10 +154,10 @@ properties:
     package: word!
     fullName: diacriticColor
     summary: >-
-      Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '\#RRGGBB'
-      format.
+      Specifies the color to be used for diacritics for the `Font` object. You
+      can provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,9 +168,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#disableCharacterSpaceGrid:member
     package: word!
     fullName: disableCharacterSpaceGrid
-    summary: Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
+    summary: >-
+      Specifies whether Microsoft Word ignores the number of characters per line
+      for the corresponding `Font` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,10 +184,10 @@ properties:
     package: word!
     fullName: doubleStrikeThrough
     summary: >-
-      Specifies whether the font has a double strikethrough. `true` if the font is formatted as double strikethrough
-      text, otherwise, `false`<!-- -->.
+      Specifies whether the font has a double strikethrough. `true` if the font
+      is formatted as double strikethrough text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,16 +198,20 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#emboss:member
     package: word!
     fullName: emboss
-    summary: |-
-      Specifies whether the font is formatted as embossed. The possible values are as follows:
+    summary: >-
+      Specifies whether the font is formatted as embossed. The possible values
+      are as follows:
+
 
       - `true`<!-- -->: All the text is embossed.
 
+
       - `false`<!-- -->: None of the text is embossed.
+
 
       - `null`<!-- -->: Returned if some, but not all, of the text is embossed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,34 +223,39 @@ properties:
     package: word!
     fullName: emphasisMark
     summary: >-
-      Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character
-      string.
+      Specifies an `EmphasisMark` value that represents the emphasis mark for a
+      character or designated character string.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        emphasisMark?: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" |
-        "UnderSolidCircle";
+        emphasisMark?: Word.EmphasisMark | "None" | "OverSolidCircle" |
+        "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
       return:
         type: >-
-          <xref uid="word!Word.EmphasisMark:enum" /> | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" |
+          <xref uid="word!Word.EmphasisMark:enum" /> | "None" |
+          "OverSolidCircle" | "OverComma" | "OverWhiteCircle" |
           "UnderSolidCircle"
   - name: engrave
     uid: word!Word.Interfaces.FontUpdateData#engrave:member
     package: word!
     fullName: engrave
-    summary: |-
-      Specifies whether the font is formatted as engraved. The possible values are as follows:
+    summary: >-
+      Specifies whether the font is formatted as engraved. The possible values
+      are as follows:
+
 
       - `true`<!-- -->: All the text is engraved.
 
+
       - `false`<!-- -->: None of the text is engraved.
+
 
       - `null`<!-- -->: Returned if some, but not all, of the text is engraved.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,9 +266,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#fill:member
     package: word!
     fullName: fill
-    summary: Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
+    summary: >-
+      Returns a `FillFormat` object that contains fill formatting properties for
+      the font used by the range of text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,9 +281,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#glow:member
     package: word!
     fullName: glow
-    summary: Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
+    summary: >-
+      Returns a `GlowFormat` object that represents the glow formatting for the
+      font used by the range of text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,10 +297,10 @@ properties:
     package: word!
     fullName: hidden
     summary: >-
-      Specifies whether the font is tagged as hidden. `true` if the font is formatted as hidden text, otherwise,
-      `false`<!-- -->.
+      Specifies whether the font is tagged as hidden. `true` if the font is
+      formatted as hidden text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -283,14 +312,18 @@ properties:
     package: word!
     fullName: highlightColor
     summary: >-
-      Specifies the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To remove
-      highlight color, set it to `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB' format, an empty
-      string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are
-      available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red",
-      "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs
-      in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+      Specifies the highlight color. To set it, use a value either in the
+      '\#RRGGBB' format or the color name. To remove highlight color, set it to
+      `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB'
+      format, an empty string for mixed highlight colors, or `null` for no
+      highlight color. Note: Only the default highlight colors are available in
+      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise",
+      "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed",
+      "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
+      for Windows Desktop, any other color is converted to the closest color
+      when applied to the font.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,9 +334,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#italic:member
     package: word!
     fullName: italic
-    summary: Specifies whether the font is italicized. `true` if the font is italicized, otherwise, `false`<!-- -->.
+    summary: >-
+      Specifies whether the font is italicized. `true` if the font is
+      italicized, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -314,16 +349,21 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#italicBidirectional:member
     package: word!
     fullName: italicBidirectional
-    summary: |-
-      Specifies whether the font is italicized in a right-to-left language document. The possible values are as follows:
+    summary: >-
+      Specifies whether the font is italicized in a right-to-left language
+      document. The possible values are as follows:
+
 
       - `true`<!-- -->: All the text is italicized.
 
+
       - `false`<!-- -->: None of the text is italicized.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text is italicized.
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is
+      italicized.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -334,9 +374,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#kerning:member
     package: word!
     fullName: kerning
-    summary: Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
+    summary: >-
+      Specifies the minimum font size for which Microsoft Word will adjust
+      kerning automatically.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -349,28 +391,35 @@ properties:
     fullName: ligature
     summary: Specifies the ligature setting for the `Font` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        ligature?: Word.Ligature | "None" | "Standard" | "Contextual" | "StandardContextual" | "Historical" |
-        "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional" |
-        "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" | "HistoricalDiscretional"
-        | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All";
+        ligature?: Word.Ligature | "None" | "Standard" | "Contextual" |
+        "StandardContextual" | "Historical" | "StandardHistorical" |
+        "ContextualHistorical" | "StandardContextualHistorical" | "Discretional"
+        | "StandardDiscretional" | "ContextualDiscretional" |
+        "StandardContextualDiscretional" | "HistoricalDiscretional" |
+        "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" |
+        "All";
       return:
         type: >-
-          <xref uid="word!Word.Ligature:enum" /> | "None" | "Standard" | "Contextual" | "StandardContextual" |
-          "Historical" | "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional"
-          | "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" |
-          "HistoricalDiscretional" | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All"
+          <xref uid="word!Word.Ligature:enum" /> | "None" | "Standard" |
+          "Contextual" | "StandardContextual" | "Historical" |
+          "StandardHistorical" | "ContextualHistorical" |
+          "StandardContextualHistorical" | "Discretional" |
+          "StandardDiscretional" | "ContextualDiscretional" |
+          "StandardContextualDiscretional" | "HistoricalDiscretional" |
+          "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional"
+          | "All"
   - name: line
     uid: word!Word.Interfaces.FontUpdateData#line:member
     package: word!
     fullName: line
     summary: Returns a `LineFormat` object that specifies the formatting for a line.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -383,7 +432,7 @@ properties:
     fullName: name
     summary: Specifies the name of the font.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -394,9 +443,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#nameAscii:member
     package: word!
     fullName: nameAscii
-    summary: Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
+    summary: >-
+      Specifies the font used for Latin text (characters with character codes
+      from 0 (zero) through 127).
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -409,7 +460,7 @@ properties:
     fullName: nameBidirectional
     summary: Specifies the font name in a right-to-left language document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -422,7 +473,7 @@ properties:
     fullName: nameFarEast
     summary: Specifies the East Asian font name.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -435,7 +486,7 @@ properties:
     fullName: nameOther
     summary: Specifies the font used for characters with codes from 128 through 255.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -448,40 +499,50 @@ properties:
     fullName: numberForm
     summary: Specifies the number form setting for an OpenType font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'numberForm?: Word.NumberForm | "Default" | "Lining" | "OldStyle";'
       return:
-        type: <xref uid="word!Word.NumberForm:enum" /> | "Default" | "Lining" | "OldStyle"
+        type: >-
+          <xref uid="word!Word.NumberForm:enum" /> | "Default" | "Lining" |
+          "OldStyle"
   - name: numberSpacing
     uid: word!Word.Interfaces.FontUpdateData#numberSpacing:member
     package: word!
     fullName: numberSpacing
     summary: Specifies the number spacing setting for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'numberSpacing?: Word.NumberSpacing | "Default" | "Proportional" | "Tabular";'
+      content: >-
+        numberSpacing?: Word.NumberSpacing | "Default" | "Proportional" |
+        "Tabular";
       return:
-        type: <xref uid="word!Word.NumberSpacing:enum" /> | "Default" | "Proportional" | "Tabular"
+        type: >-
+          <xref uid="word!Word.NumberSpacing:enum" /> | "Default" |
+          "Proportional" | "Tabular"
   - name: outline
     uid: word!Word.Interfaces.FontUpdateData#outline:member
     package: word!
     fullName: outline
-    summary: |-
-      Specifies if the font is formatted as outlined. The possible values are as follows:
+    summary: >-
+      Specifies if the font is formatted as outlined. The possible values are as
+      follows:
+
 
       - `true`<!-- -->: All the text is outlined.
 
+
       - `false`<!-- -->: None of the text is outlined.
+
 
       - `null`<!-- -->: Returned if some, but not all, of the text is outlined.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -494,7 +555,7 @@ properties:
     fullName: position
     summary: Specifies the position of text (in points) relative to the base line.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -505,22 +566,26 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#reflection:member
     package: word!
     fullName: reflection
-    summary: Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
+    summary: >-
+      Returns a `ReflectionFormat` object that represents the reflection
+      formatting for a shape.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'reflection?: Word.Interfaces.ReflectionFormatUpdateData;'
       return:
-        type: <xref uid="word!Word.Interfaces.ReflectionFormatUpdateData:interface" />
+        type: >-
+          <xref uid="word!Word.Interfaces.ReflectionFormatUpdateData:interface"
+          />
   - name: scaling
     uid: word!Word.Interfaces.FontUpdateData#scaling:member
     package: word!
     fullName: scaling
     summary: Specifies the scaling percentage applied to the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -531,16 +596,20 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#shadow:member
     package: word!
     fullName: shadow
-    summary: |-
-      Specifies if the font is formatted as shadowed. The possible values are as follows:
+    summary: >-
+      Specifies if the font is formatted as shadowed. The possible values are as
+      follows:
+
 
       - `true`<!-- -->: All the text is shadowed.
 
+
       - `false`<!-- -->: None of the text is shadowed.
+
 
       - `null`<!-- -->: Returned if some, but not all, of the text is shadowed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -553,7 +622,7 @@ properties:
     fullName: size
     summary: Specifies the font size in points.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -566,7 +635,7 @@ properties:
     fullName: sizeBidirectional
     summary: Specifies the font size in points for right-to-left text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -578,19 +647,21 @@ properties:
     package: word!
     fullName: smallCaps
     summary: >-
-      Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase
-      letters. The possible values are as follows:
+      Specifies whether the font is formatted as small caps, which makes
+      lowercase letters appear as small uppercase letters. The possible values
+      are as follows:
 
 
-      - `true`<!-- -->: All the text has the \*\*Small Caps\*\* attribute.
+      - `true`<!-- -->: All the text has the **Small Caps** attribute.
 
 
-      - `false`<!-- -->: None of the text has the \*\*Small Caps\*\* attribute.
+      - `false`<!-- -->: None of the text has the **Small Caps** attribute.
 
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Small Caps\*\* attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Small Caps** attribute.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -603,7 +674,7 @@ properties:
     fullName: spacing
     summary: Specifies the spacing between characters.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -615,10 +686,10 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: >-
-      Specifies whether the font has a strikethrough. `true` if the font is formatted as strikethrough text, otherwise,
-      `false`<!-- -->.
+      Specifies whether the font has a strikethrough. `true` if the font is
+      formatted as strikethrough text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -631,28 +702,30 @@ properties:
     fullName: stylisticSet
     summary: Specifies the stylistic set for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        stylisticSet?: Word.StylisticSet | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" | "Set06" |
-        "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" | "Set17" |
-        "Set18" | "Set19" | "Set20";
+        stylisticSet?: Word.StylisticSet | "Default" | "Set01" | "Set02" |
+        "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" |
+        "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" |
+        "Set17" | "Set18" | "Set19" | "Set20";
       return:
         type: >-
-          <xref uid="word!Word.StylisticSet:enum" /> | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" |
-          "Set06" | "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" |
-          "Set17" | "Set18" | "Set19" | "Set20"
+          <xref uid="word!Word.StylisticSet:enum" /> | "Default" | "Set01" |
+          "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" |
+          "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" |
+          "Set16" | "Set17" | "Set18" | "Set19" | "Set20"
   - name: subscript
     uid: word!Word.Interfaces.FontUpdateData#subscript:member
     package: word!
     fullName: subscript
     summary: >-
-      Specifies whether the font is a subscript. `true` if the font is formatted as subscript, otherwise, `false`<!--
-      -->.
+      Specifies whether the font is a subscript. `true` if the font is formatted
+      as subscript, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -664,10 +737,10 @@ properties:
     package: word!
     fullName: superscript
     summary: >-
-      Specifies whether the font is a superscript. `true` if the font is formatted as superscript, otherwise,
-      `false`<!-- -->.
+      Specifies whether the font is a superscript. `true` if the font is
+      formatted as superscript, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -680,7 +753,7 @@ properties:
     fullName: textColor
     summary: Returns a `ColorFormat` object that represents the color for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -691,9 +764,11 @@ properties:
     uid: word!Word.Interfaces.FontUpdateData#textShadow:member
     package: word!
     fullName: textShadow
-    summary: Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
+    summary: >-
+      Returns a `ShadowFormat` object that specifies the shadow formatting for
+      the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -705,44 +780,54 @@ properties:
     package: word!
     fullName: threeDimensionalFormat
     summary: >-
-      Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the
-      font.
+      Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D)
+      effect formatting properties for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'threeDimensionalFormat?: Word.Interfaces.ThreeDimensionalFormatUpdateData;'
+      content: >-
+        threeDimensionalFormat?:
+        Word.Interfaces.ThreeDimensionalFormatUpdateData;
       return:
-        type: <xref uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData:interface" />
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.ThreeDimensionalFormatUpdateData:interface"
+          />
   - name: underline
     uid: word!Word.Interfaces.FontUpdateData#underline:member
     package: word!
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
     remarks: '\[Api set: WordApi 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" |
-        "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" |
-        "WaveDouble";
+        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
+        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
+        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
+        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
-          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
-          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
-          "WaveHeavy" | "WaveDouble"
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
+          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
+          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
+          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
+          | "WaveHeavy" | "WaveDouble"
   - name: underlineColor
     uid: word!Word.Interfaces.FontUpdateData#underlineColor:member
     package: word!
     fullName: underlineColor
-    summary: Specifies the color of the underline for the `Font` object. You can provide the value in the '\#RRGGBB' format.
+    summary: >-
+      Specifies the color of the underline for the `Font` object. You can
+      provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

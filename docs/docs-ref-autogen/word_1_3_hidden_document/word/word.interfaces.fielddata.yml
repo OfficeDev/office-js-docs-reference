@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FieldData
 summary: An interface describing the data returned by calling `field.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,13 @@ properties:
     uid: word!Word.Interfaces.FieldData#showCodes:member
     package: word!
     fullName: showCodes
-    summary: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the field codes are displayed for the specified field.
+      `true` if the field codes are displayed, `false` otherwise.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

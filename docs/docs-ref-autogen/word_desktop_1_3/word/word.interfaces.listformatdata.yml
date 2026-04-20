@@ -3,9 +3,11 @@ name: Word.Interfaces.ListFormatData
 uid: word!Word.Interfaces.ListFormatData:interface
 package: word!
 fullName: Word.Interfaces.ListFormatData
-summary: An interface describing the data returned by calling `listFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `listFormat.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: isSingleList
     summary: Indicates whether the `ListFormat` object contains a single list.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: isSingleListTemplate
     summary: Indicates whether the `ListFormat` object contains a single list template.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +46,13 @@ properties:
     uid: word!Word.Interfaces.ListFormatData#list:member
     package: word!
     fullName: list
-    summary: Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `List` object that represents the first formatted list contained
+      in the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +63,13 @@ properties:
     uid: word!Word.Interfaces.ListFormatData#listLevelNumber:member
     package: word!
     fullName: listLevelNumber
-    summary: Specifies the list level number for the first paragraph for the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the list level number for the first paragraph for the
+      `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +80,13 @@ properties:
     uid: word!Word.Interfaces.ListFormatData#listString:member
     package: word!
     fullName: listString
-    summary: Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the string representation of the list value of the first paragraph in
+      the range for the `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +98,10 @@ properties:
     package: word!
     fullName: listTemplate
     summary: Gets the list template associated with the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,21 +113,33 @@ properties:
     package: word!
     fullName: listType
     summary: Gets the type of the list for the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'listType?: Word.ListType | "ListNoNumbering" | "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet";'
+      content: >-
+        listType?: Word.ListType | "ListNoNumbering" | "ListListNumOnly" |
+        "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" |
+        "ListMixedNumbering" | "ListPictureBullet";
       return:
-        type: <xref uid="word!Word.ListType:enum" /> | "ListNoNumbering" | "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet"
+        type: >-
+          <xref uid="word!Word.ListType:enum" /> | "ListNoNumbering" |
+          "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" |
+          "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet"
   - name: listValue
     uid: word!Word.Interfaces.ListFormatData#listValue:member
     package: word!
     fullName: listValue
-    summary: Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the numeric value of the the first paragraph in the range for the
+      `ListFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

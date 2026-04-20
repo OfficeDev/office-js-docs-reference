@@ -4,8 +4,10 @@ uid: word!Word.FillFormat:class
 package: word!
 fullName: Word.FillFormat
 summary: Represents the fill formatting for a shape or text.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.FillFormat#backgroundColor:member
     package: word!
     fullName: backgroundColor
-    summary: Returns a `ColorFormat` object that represents the background color for the fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `ColorFormat` object that represents the background color for
+      the fill.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,11 @@ properties:
     uid: word!Word.FillFormat#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +48,13 @@ properties:
     uid: word!Word.FillFormat#foregroundColor:member
     package: word!
     fullName: foregroundColor
-    summary: Returns a `ColorFormat` object that represents the foreground color for the fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `ColorFormat` object that represents the foreground color for
+      the fill.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +65,13 @@ properties:
     uid: word!Word.FillFormat#gradientAngle:member
     package: word!
     fullName: gradientAngle
-    summary: Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the angle of the gradient fill. The valid range of values is
+      from 0 to 359.9.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,21 +83,33 @@ properties:
     package: word!
     fullName: gradientColorType
     summary: Gets the gradient color type.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly gradientColorType: Word.GradientColorType | "Mixed" | "OneColor" | "TwoColors" | "PresetColors" | "MultiColor";'
+      content: >-
+        readonly gradientColorType: Word.GradientColorType | "Mixed" |
+        "OneColor" | "TwoColors" | "PresetColors" | "MultiColor";
       return:
-        type: <xref uid="word!Word.GradientColorType:enum" /> | "Mixed" | "OneColor" | "TwoColors" | "PresetColors" | "MultiColor"
+        type: >-
+          <xref uid="word!Word.GradientColorType:enum" /> | "Mixed" | "OneColor"
+          | "TwoColors" | "PresetColors" | "MultiColor"
   - name: gradientDegree
     uid: word!Word.FillFormat#gradientDegree:member
     package: word!
     fullName: gradientDegree
-    summary: Returns how dark or light a one-color gradient fill is. A value of 0 means that black is mixed in with the shape's foreground color to form the gradient. A value of 1 means that white is mixed in. Values between 0 and 1 mean that a darker or lighter shade of the foreground color is mixed in.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns how dark or light a one-color gradient fill is. A value of 0 means
+      that black is mixed in with the shape's foreground color to form the
+      gradient. A value of 1 means that white is mixed in. Values between 0 and
+      1 mean that a darker or lighter shade of the foreground color is mixed in.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,21 +121,33 @@ properties:
     package: word!
     fullName: gradientStyle
     summary: Returns the gradient style for the fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly gradientStyle: Word.GradientStyle | "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter";'
+      content: >-
+        readonly gradientStyle: Word.GradientStyle | "Mixed" | "Horizontal" |
+        "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle"
+        | "FromCenter";
       return:
-        type: <xref uid="word!Word.GradientStyle:enum" /> | "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter"
+        type: >-
+          <xref uid="word!Word.GradientStyle:enum" /> | "Mixed" | "Horizontal" |
+          "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" |
+          "FromTitle" | "FromCenter"
   - name: gradientVariant
     uid: word!Word.FillFormat#gradientVariant:member
     package: word!
     fullName: gradientVariant
-    summary: Returns the gradient variant for the fill as an integer value from 1 to 4 for most gradient fills.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns the gradient variant for the fill as an integer value from 1 to 4
+      for most gradient fills.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,8 +159,10 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the object, or the formatting applied to it, is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,48 +173,112 @@ properties:
     uid: word!Word.FillFormat#pattern:member
     package: word!
     fullName: pattern
-    summary: Returns a `PatternType` value that represents the pattern applied to the fill or line.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `PatternType` value that represents the pattern applied to the
+      fill or line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly pattern: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";'
+      content: >-
+        readonly pattern: Word.PatternType | "Mixed" | "Percent5" | "Percent10"
+        | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" |
+        "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" |
+        "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" |
+        "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" |
+        "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" |
+        "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" |
+        "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" |
+        "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" |
+        "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" |
+        "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" |
+        "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" |
+        "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" |
+        "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" |
+        "UpwardDiagonal" | "DiagonalCross";
       return:
-        type: <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"
+        type: >-
+          <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" |
+          "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" |
+          "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" |
+          "Percent90" | "DarkHorizontal" | "DarkVertical" |
+          "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" |
+          "Trellis" | "LightHorizontal" | "LightVertical" |
+          "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" |
+          "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
+          "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" |
+          "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" |
+          "LargeConfetti" | "LargeGrid" | "HorizontalBrick" |
+          "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" |
+          "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" |
+          "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" |
+          "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" |
+          "DiagonalCross"
   - name: presetGradientType
     uid: word!Word.FillFormat#presetGradientType:member
     package: word!
     fullName: presetGradientType
     summary: Returns the preset gradient type for the fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly presetGradientType: Word.PresetGradientType | "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire";'
+      content: >-
+        readonly presetGradientType: Word.PresetGradientType | "Mixed" |
+        "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" |
+        "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" |
+        "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" |
+        "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire";
       return:
-        type: <xref uid="word!Word.PresetGradientType:enum" /> | "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"
+        type: >-
+          <xref uid="word!Word.PresetGradientType:enum" /> | "Mixed" |
+          "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" |
+          "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock"
+          | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" |
+          "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" |
+          "Sapphire"
   - name: presetTexture
     uid: word!Word.FillFormat#presetTexture:member
     package: word!
     fullName: presetTexture
     summary: Gets the preset texture.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly presetTexture: Word.PresetTexture | "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood";'
+      content: >-
+        readonly presetTexture: Word.PresetTexture | "Mixed" | "Papyrus" |
+        "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" |
+        "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" |
+        "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" |
+        "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" |
+        "Cork" | "Walnut" | "Oak" | "MediumWood";
       return:
-        type: <xref uid="word!Word.PresetTexture:enum" /> | "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"
+        type: >-
+          <xref uid="word!Word.PresetTexture:enum" /> | "Mixed" | "Papyrus" |
+          "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" |
+          "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble"
+          | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" |
+          "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" |
+          "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"
   - name: rotateWithObject
     uid: word!Word.FillFormat#rotateWithObject:member
     package: word!
     fullName: rotateWithObject
     summary: Specifies whether the fill rotates with the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,22 +289,34 @@ properties:
     uid: word!Word.FillFormat#textureAlignment:member
     package: word!
     fullName: textureAlignment
-    summary: Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the alignment (the origin of the coordinate grid) for the tiling
+      of the texture fill.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'textureAlignment: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";'
+      content: >-
+        textureAlignment: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" |
+        "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" |
+        "BottomRight";
       return:
-        type: <xref uid="word!Word.TextureAlignment:enum" /> | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight"
+        type: >-
+          <xref uid="word!Word.TextureAlignment:enum" /> | "Mixed" | "TopLeft" |
+          "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" |
+          "Bottom" | "BottomRight"
   - name: textureHorizontalScale
     uid: word!Word.FillFormat#textureHorizontalScale:member
     package: word!
     fullName: textureHorizontalScale
     summary: Specifies the horizontal scaling factor for the texture fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,8 +328,10 @@ properties:
     package: word!
     fullName: textureName
     summary: Returns the name of the custom texture file for the fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,8 +343,10 @@ properties:
     package: word!
     fullName: textureOffsetX
     summary: Specifies the horizontal offset of the texture from the origin in points.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,8 +358,10 @@ properties:
     package: word!
     fullName: textureOffsetY
     summary: Specifies the vertical offset of the texture.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,8 +373,10 @@ properties:
     package: word!
     fullName: textureTile
     summary: Specifies whether the texture is tiled.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,21 +388,31 @@ properties:
     package: word!
     fullName: textureType
     summary: Returns the texture type for the fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly textureType: Word.TextureType | "Mixed" | "Preset" | "UserDefined";'
+      content: >-
+        readonly textureType: Word.TextureType | "Mixed" | "Preset" |
+        "UserDefined";
       return:
-        type: <xref uid="word!Word.TextureType:enum" /> | "Mixed" | "Preset" | "UserDefined"
+        type: >-
+          <xref uid="word!Word.TextureType:enum" /> | "Mixed" | "Preset" |
+          "UserDefined"
   - name: textureVerticalScale
     uid: word!Word.FillFormat#textureVerticalScale:member
     package: word!
     fullName: textureVerticalScale
-    summary: Specifies the vertical scaling factor for the texture fill as a value between 0.0 and 1.0.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the vertical scaling factor for the texture fill as a value
+      between 0.0 and 1.0.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,9 +423,13 @@ properties:
     uid: word!Word.FillFormat#transparency:member
     package: word!
     fullName: transparency
-    summary: Specifies the degree of transparency of the fill for a shape as a value between 0.0 (opaque) and 1.0 (clear).
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the degree of transparency of the fill for a shape as a value
+      between 0.0 (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,22 +441,30 @@ properties:
     package: word!
     fullName: type
     summary: Gets the fill format type.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly type: Word.FillType | "Mixed" | "Solid" | "Patterned" | "Gradient" | "Textured" | "Background" | "Picture";'
+      content: >-
+        readonly type: Word.FillType | "Mixed" | "Solid" | "Patterned" |
+        "Gradient" | "Textured" | "Background" | "Picture";
       return:
-        type: <xref uid="word!Word.FillType:enum" /> | "Mixed" | "Solid" | "Patterned" | "Gradient" | "Textured" | "Background" | "Picture"
+        type: >-
+          <xref uid="word!Word.FillType:enum" /> | "Mixed" | "Solid" |
+          "Patterned" | "Gradient" | "Textured" | "Background" | "Picture"
 methods:
   - name: load(options)
     uid: word!Word.FillFormat#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -332,16 +480,20 @@ methods:
     uid: word!Word.FillFormat#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.FillFormat;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.FillFormat:class" />
@@ -350,9 +502,11 @@ methods:
     uid: word!Word.FillFormat#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -363,7 +517,11 @@ methods:
                 }): Word.FillFormat;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -376,19 +534,29 @@ methods:
     uid: word!Word.FillFormat#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.FillFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.FillFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
           type: <xref uid="word!Word.Interfaces.FillFormatUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -397,9 +565,11 @@ methods:
     uid: word!Word.FillFormat#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -416,12 +586,16 @@ methods:
     package: word!
     fullName: setOneColorGradient(style, variant, degree)
     summary: Sets the fill to a one-color gradient.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setOneColorGradient(style: Word.GradientStyle, variant: number, degree: number): void;'
+      content: >-
+        setOneColorGradient(style: Word.GradientStyle, variant: number, degree:
+        number): void;
       parameters:
         - id: style
           description: The gradient style.
@@ -430,7 +604,9 @@ methods:
           description: The gradient variant. Can be a value from 1 to 4.
           type: number
         - id: degree
-          description: The gradient degree. Can be a value from `0.0` (dark) to `1.0` (light).
+          description: >-
+            The gradient degree. Can be a value from `0.0` (dark) to `1.0`
+            (light).
           type: number
       return:
         type: void
@@ -440,21 +616,30 @@ methods:
     package: word!
     fullName: setOneColorGradient(style, variant, degree)
     summary: Sets the fill to a one-color gradient.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setOneColorGradient(style: "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter", variant: number, degree: number): void;'
+      content: >-
+        setOneColorGradient(style: "Mixed" | "Horizontal" | "Vertical" |
+        "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
+        "FromCenter", variant: number, degree: number): void;
       parameters:
         - id: style
           description: The gradient style.
-          type: '"Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter"'
+          type: >-
+            "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown"
+            | "FromCorner" | "FromTitle" | "FromCenter"
         - id: variant
           description: The gradient variant. Can be a value from 1 to 4.
           type: number
         - id: degree
-          description: The gradient degree. Can be a value from `0.0` (dark) to `1.0` (light).
+          description: >-
+            The gradient degree. Can be a value from `0.0` (dark) to `1.0`
+            (light).
           type: number
       return:
         type: void
@@ -464,8 +649,10 @@ methods:
     package: word!
     fullName: setPatterned(pattern)
     summary: Sets the fill to a pattern.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -482,16 +669,47 @@ methods:
     package: word!
     fullName: setPatterned(pattern)
     summary: Sets the fill to a pattern.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setPatterned(pattern: "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"): void;'
+      content: >-
+        setPatterned(pattern: "Mixed" | "Percent5" | "Percent10" | "Percent20" |
+        "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" |
+        "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal"
+        | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" |
+        "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" |
+        "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" |
+        "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
+        "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" |
+        "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" |
+        "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard"
+        | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" |
+        "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" |
+        "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" |
+        "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"): void;
       parameters:
         - id: pattern
           description: ''
-          type: '"Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"'
+          type: >-
+            "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" |
+            "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70"
+            | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" |
+            "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" |
+            "SmallCheckerBoard" | "Trellis" | "LightHorizontal" |
+            "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" |
+            "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" |
+            "WideUpwardDiagonal" | "DashedUpwardDiagonal" |
+            "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" |
+            "DashedVertical" | "DashedHorizontal" | "LargeConfetti" |
+            "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" |
+            "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" |
+            "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" |
+            "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" |
+            "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"
       return:
         type: void
         description: ''
@@ -499,13 +717,19 @@ methods:
     uid: word!Word.FillFormat#setPresetGradient:member(1)
     package: word!
     fullName: setPresetGradient(style, variant, presetGradientType)
-    summary: Sets the fill to a preset gradient. The gradient style.The gradient variant. Can be a value from 1 to 4.The preset gradient type.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the fill to a preset gradient. The gradient style.The gradient
+      variant. Can be a value from 1 to 4.The preset gradient type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setPresetGradient(style: Word.GradientStyle, variant: number, presetGradientType: Word.PresetGradientType): void;'
+      content: >-
+        setPresetGradient(style: Word.GradientStyle, variant: number,
+        presetGradientType: Word.PresetGradientType): void;
       parameters:
         - id: style
           description: ''
@@ -523,23 +747,42 @@ methods:
     uid: word!Word.FillFormat#setPresetGradient:member(2)
     package: word!
     fullName: setPresetGradient(style, variant, presetGradientType)
-    summary: Sets the fill to a preset gradient. The gradient style.The gradient variant. Can be a value from 1 to 4.The preset gradient type.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the fill to a preset gradient. The gradient style.The gradient
+      variant. Can be a value from 1 to 4.The preset gradient type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setPresetGradient(style: "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter", variant: number, presetGradientType: "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"): void;'
+      content: >-
+        setPresetGradient(style: "Mixed" | "Horizontal" | "Vertical" |
+        "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
+        "FromCenter", variant: number, presetGradientType: "Mixed" |
+        "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" |
+        "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" |
+        "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" |
+        "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"):
+        void;
       parameters:
         - id: style
           description: ''
-          type: '"Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter"'
+          type: >-
+            "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown"
+            | "FromCorner" | "FromTitle" | "FromCenter"
         - id: variant
           description: ''
           type: number
         - id: presetGradientType
           description: ''
-          type: '"Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"'
+          type: >-
+            "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" |
+            "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" |
+            "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow"
+            | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII"
+            | "Silver" | "Sapphire"
       return:
         type: void
         description: ''
@@ -548,8 +791,10 @@ methods:
     package: word!
     fullName: setPresetTextured(presetTexture)
     summary: Sets the fill to a preset texture.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -566,16 +811,30 @@ methods:
     package: word!
     fullName: setPresetTextured(presetTexture)
     summary: Sets the fill to a preset texture.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setPresetTextured(presetTexture: "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"): void;'
+      content: >-
+        setPresetTextured(presetTexture: "Mixed" | "Papyrus" | "Canvas" |
+        "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" |
+        "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" |
+        "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" |
+        "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" |
+        "Cork" | "Walnut" | "Oak" | "MediumWood"): void;
       parameters:
         - id: presetTexture
           description: ''
-          type: '"Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"'
+          type: >-
+            "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" |
+            "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble"
+            | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" |
+            "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" |
+            "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" |
+            "Oak" | "MediumWood"
       return:
         type: void
         description: ''
@@ -584,8 +843,10 @@ methods:
     package: word!
     fullName: setTwoColorGradient(style, variant)
     summary: Sets the fill to a two-color gradient.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -605,16 +866,23 @@ methods:
     package: word!
     fullName: setTwoColorGradient(style, variant)
     summary: Sets the fill to a two-color gradient.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setTwoColorGradient(style: "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter", variant: number): void;'
+      content: >-
+        setTwoColorGradient(style: "Mixed" | "Horizontal" | "Vertical" |
+        "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
+        "FromCenter", variant: number): void;
       parameters:
         - id: style
           description: ''
-          type: '"Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter"'
+          type: >-
+            "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown"
+            | "FromCorner" | "FromTitle" | "FromCenter"
         - id: variant
           description: ''
           type: number
@@ -626,8 +894,10 @@ methods:
     package: word!
     fullName: solid()
     summary: Sets the fill to a uniform color.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -639,9 +909,16 @@ methods:
     uid: word!Word.FillFormat#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.FillFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FillFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.FillFormat` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.FillFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -653,9 +930,18 @@ methods:
     uid: word!Word.FillFormat#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -667,9 +953,16 @@ methods:
     uid: word!Word.FillFormat#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

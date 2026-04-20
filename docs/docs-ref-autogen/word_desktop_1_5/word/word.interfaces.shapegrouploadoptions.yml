@@ -4,10 +4,11 @@ uid: word!Word.Interfaces.ShapeGroupLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShapeGroupLoadOptions
 summary: >-
-  Represents a shape group in the document. To get the corresponding [Word.Shape](xref:word!Word.Shape:class) object,
-  use `ShapeGroup.shape`<!-- -->.
+  Represents a shape group in the document. To get the corresponding
+  [Word.Shape](xref:word!Word.Shape:class) object, use `ShapeGroup.shape`<!--
+  -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +18,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +35,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the shape group identifier.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +48,7 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the group.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

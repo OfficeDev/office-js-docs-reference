@@ -3,9 +3,14 @@ name: Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions
 uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions
-summary: Represents a collection of [Word.TableOfAuthorities](xref:word!Word.TableOfAuthorities:class) objects in a Word document.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents a collection of
+  [Word.TableOfAuthorities](xref:word!Word.TableOfAuthorities:class) objects in
+  a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +19,12 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +32,17 @@ properties:
       return:
         type: boolean
   - name: bookmark
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#bookmark:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#bookmark:member
     package: word!
     fullName: bookmark
-    summary: 'For EACH ITEM in the collection: Specifies the name of the bookmark from which to collect table of authorities entries.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of the bookmark from
+      which to collect table of authorities entries.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,12 +50,21 @@ properties:
       return:
         type: boolean
   - name: category
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#category:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#category:member
     package: word!
     fullName: category
-    summary: 'For EACH ITEM in the collection: Specifies the category of entries to be included in the table of authorities. Values 0 through 16 correspond to the items listed in the Category box of the Table of Authorities dialog. To learn how to access this through the Word UI, see [Create a table of authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the category of entries to be
+      included in the table of authorities. Values 0 through 16 correspond to
+      the items listed in the Category box of the Table of Authorities dialog.
+      To learn how to access this through the Word UI, see [Create a table of
+      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +72,18 @@ properties:
       return:
         type: boolean
   - name: entrySeparator
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#entrySeparator:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#entrySeparator:member
     package: word!
     fullName: entrySeparator
-    summary: 'For EACH ITEM in the collection: Specifies a separator of up to five characters. This appears between the table of authorities entry and its page number.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies a separator of up to five
+      characters. This appears between the table of authorities entry and its
+      page number.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +91,17 @@ properties:
       return:
         type: boolean
   - name: isCategoryHeaderIncluded
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#isCategoryHeaderIncluded:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#isCategoryHeaderIncluded:member
     package: word!
     fullName: isCategoryHeaderIncluded
-    summary: 'For EACH ITEM in the collection: Specifies whether the category name for a group of entries appears in the table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the category name for a
+      group of entries appears in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,12 +109,17 @@ properties:
       return:
         type: boolean
   - name: isEntryFormattingKept
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#isEntryFormattingKept:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#isEntryFormattingKept:member
     package: word!
     fullName: isEntryFormattingKept
-    summary: 'For EACH ITEM in the collection: Specifies whether the entries in the table of authorities are displayed with their formatting in the table.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the entries in the
+      table of authorities are displayed with their formatting in the table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,12 +127,18 @@ properties:
       return:
         type: boolean
   - name: isPassimUsed
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#isPassimUsed:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#isPassimUsed:member
     package: word!
     fullName: isPassimUsed
-    summary: 'For EACH ITEM in the collection: Specifies whether references to the same authority that are repeated on five or more pages are replaced with "Passim".'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether references to the same
+      authority that are repeated on five or more pages are replaced with
+      "Passim".
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,12 +146,18 @@ properties:
       return:
         type: boolean
   - name: pageNumberSeparator
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#pageNumberSeparator:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#pageNumberSeparator:member
     package: word!
     fullName: pageNumberSeparator
-    summary: 'For EACH ITEM in the collection: Specifies a separator of up to five characters. This appears between individual page references in the table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies a separator of up to five
+      characters. This appears between individual page references in the table
+      of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,12 +165,18 @@ properties:
       return:
         type: boolean
   - name: pageRangeSeparator
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#pageRangeSeparator:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#pageRangeSeparator:member
     package: word!
     fullName: pageRangeSeparator
-    summary: 'For EACH ITEM in the collection: Specifies a separator of up to five characters. This appears between ranges of pages in the table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies a separator of up to five
+      characters. This appears between ranges of pages in the table of
+      authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +187,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: 'For EACH ITEM in the collection: Gets the portion of a document that is this table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the portion of a document that is
+      this table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,12 +201,18 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
   - name: sequenceName
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#sequenceName:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#sequenceName:member
     package: word!
     fullName: sequenceName
-    summary: 'For EACH ITEM in the collection: Specifies the [Sequence (SEQ) field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be) identifier for the table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the [Sequence (SEQ)
+      field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be)
+      identifier for the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,12 +220,18 @@ properties:
       return:
         type: boolean
   - name: sequenceSeparator
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#sequenceSeparator:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#sequenceSeparator:member
     package: word!
     fullName: sequenceSeparator
-    summary: 'For EACH ITEM in the collection: Specifies a separator of up to five characters. This appears between the sequence number and the page number in the table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies a separator of up to five
+      characters. This appears between the sequence number and the page number
+      in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,12 +239,18 @@ properties:
       return:
         type: boolean
   - name: tabLeader
-    uid: word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#tabLeader:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesCollectionLoadOptions#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: 'For EACH ITEM in the collection: Specifies the leader character that appears between entries and their associated page numbers in the table of authorities.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the leader character that
+      appears between entries and their associated page numbers in the table of
+      authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

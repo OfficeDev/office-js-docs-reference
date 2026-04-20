@@ -4,8 +4,10 @@ uid: word!Word.Interfaces.CoauthoringLockLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockLoadOptions
 summary: Represents a coauthoring lock in a Word document.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,10 @@ properties:
     package: word!
     fullName: owner
     summary: Gets the owner of the lock.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +47,13 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockLoadOptions#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringLock` object.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `CoauthoringLock` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +65,10 @@ properties:
     package: word!
     fullName: type
     summary: Gets a `CoauthoringLockType` value that represents the lock type.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

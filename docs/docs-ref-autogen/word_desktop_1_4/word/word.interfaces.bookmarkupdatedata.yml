@@ -3,9 +3,11 @@ name: Word.Interfaces.BookmarkUpdateData
 uid: word!Word.Interfaces.BookmarkUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkUpdateData
-summary: An interface for updating data on the `Bookmark` object, for use in `bookmark.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Bookmark` object, for use in
+  `bookmark.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the bookmark.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +31,13 @@ properties:
     uid: word!Word.Interfaces.BookmarkUpdateData#range:member
     package: word!
     fullName: range
-    summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained in the `Bookmark` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +49,10 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the bookmark.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

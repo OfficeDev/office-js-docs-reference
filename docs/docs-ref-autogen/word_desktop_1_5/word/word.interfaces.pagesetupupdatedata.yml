@@ -3,9 +3,11 @@ name: Word.Interfaces.PageSetupUpdateData
 uid: word!Word.Interfaces.PageSetupUpdateData:interface
 package: word!
 fullName: Word.Interfaces.PageSetupUpdateData
-summary: An interface for updating data on the `PageSetup` object, for use in `pageSetup.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `PageSetup` object, for use in
+  `pageSetup.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: bookFoldPrinting
     summary: Specifies whether Microsoft Word prints the document as a booklet.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: bookFoldPrintingSheets
     summary: Specifies the number of pages for each booklet.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,10 +43,10 @@ properties:
     package: word!
     fullName: bookFoldReversePrinting
     summary: >-
-      Specifies if Microsoft Word reverses the printing order for book fold printing of bidirectional or Asian language
-      documents.
+      Specifies if Microsoft Word reverses the printing order for book fold
+      printing of bidirectional or Asian language documents.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,9 +57,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#bottomMargin:member
     package: word!
     fullName: bottomMargin
-    summary: Specifies the distance (in points) between the bottom edge of the page and the bottom boundary of the body text.
+    summary: >-
+      Specifies the distance (in points) between the bottom edge of the page and
+      the bottom boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +74,7 @@ properties:
     fullName: charsLine
     summary: Specifies the number of characters per line in the document grid.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,12 +82,13 @@ properties:
       return:
         type: number
   - name: differentFirstPageHeaderFooter
-    uid: word!Word.Interfaces.PageSetupUpdateData#differentFirstPageHeaderFooter:member
+    uid: >-
+      word!Word.Interfaces.PageSetupUpdateData#differentFirstPageHeaderFooter:member
     package: word!
     fullName: differentFirstPageHeaderFooter
     summary: Specifies whether the first page has a different header and footer.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,9 +99,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#footerDistance:member
     package: word!
     fullName: footerDistance
-    summary: Specifies the distance between the footer and the bottom of the page in points.
+    summary: >-
+      Specifies the distance between the footer and the bottom of the page in
+      points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,9 +114,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#gutter:member
     package: word!
     fullName: gutter
-    summary: Specifies the amount (in points) of extra margin space added to each page in a document or section for binding.
+    summary: >-
+      Specifies the amount (in points) of extra margin space added to each page
+      in a document or section for binding.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,22 +131,24 @@ properties:
     fullName: gutterPosition
     summary: Specifies on which side the gutter appears in a document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'gutterPosition?: Word.GutterPosition | "Left" | "Right" | "Top";'
       return:
-        type: <xref uid="word!Word.GutterPosition:enum" /> | "Left" | "Right" | "Top"
+        type: >-
+          <xref uid="word!Word.GutterPosition:enum" /> | "Left" | "Right" |
+          "Top"
   - name: gutterStyle
     uid: word!Word.Interfaces.PageSetupUpdateData#gutterStyle:member
     package: word!
     fullName: gutterStyle
     summary: >-
-      Specifies whether Microsoft Word uses gutters for the current document based on a right-to-left language or a
-      left-to-right language.
+      Specifies whether Microsoft Word uses gutters for the current document
+      based on a right-to-left language or a left-to-right language.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,9 +159,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#headerDistance:member
     package: word!
     fullName: headerDistance
-    summary: Specifies the distance between the header and the top of the page in points.
+    summary: >-
+      Specifies the distance between the header and the top of the page in
+      points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,20 +176,26 @@ properties:
     fullName: layoutMode
     summary: Specifies the layout mode for the current document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'layoutMode?: Word.LayoutMode | "Default" | "Grid" | "LineGrid" | "Genko";'
+      content: >-
+        layoutMode?: Word.LayoutMode | "Default" | "Grid" | "LineGrid" |
+        "Genko";
       return:
-        type: <xref uid="word!Word.LayoutMode:enum" /> | "Default" | "Grid" | "LineGrid" | "Genko"
+        type: >-
+          <xref uid="word!Word.LayoutMode:enum" /> | "Default" | "Grid" |
+          "LineGrid" | "Genko"
   - name: leftMargin
     uid: word!Word.Interfaces.PageSetupUpdateData#leftMargin:member
     package: word!
     fullName: leftMargin
-    summary: Specifies the distance (in points) between the left edge of the page and the left boundary of the body text.
+    summary: >-
+      Specifies the distance (in points) between the left edge of the page and
+      the left boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,9 +206,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#lineNumbering:member
     package: word!
     fullName: lineNumbering
-    summary: Specifies a `LineNumbering` object that represents the line numbers for the `PageSetup` object.
+    summary: >-
+      Specifies a `LineNumbering` object that represents the line numbers for
+      the `PageSetup` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,7 +223,7 @@ properties:
     fullName: linesPage
     summary: Specifies the number of lines per page in the document grid.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,9 +234,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#mirrorMargins:member
     package: word!
     fullName: mirrorMargins
-    summary: Specifies if the inside and outside margins of facing pages are the same width.
+    summary: >-
+      Specifies if the inside and outside margins of facing pages are the same
+      width.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,12 +246,13 @@ properties:
       return:
         type: boolean
   - name: oddAndEvenPagesHeaderFooter
-    uid: word!Word.Interfaces.PageSetupUpdateData#oddAndEvenPagesHeaderFooter:member
+    uid: >-
+      word!Word.Interfaces.PageSetupUpdateData#oddAndEvenPagesHeaderFooter:member
     package: word!
     fullName: oddAndEvenPagesHeaderFooter
     summary: Specifies whether odd and even pages have different headers and footers.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,20 +265,22 @@ properties:
     fullName: orientation
     summary: Specifies the orientation of the page.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'orientation?: Word.PageOrientation | "Portrait" | "Landscape";'
       return:
-        type: <xref uid="word!Word.PageOrientation:enum" /> | "Portrait" | "Landscape"
+        type: >-
+          <xref uid="word!Word.PageOrientation:enum" /> | "Portrait" |
+          "Landscape"
   - name: pageHeight
     uid: word!Word.Interfaces.PageSetupUpdateData#pageHeight:member
     package: word!
     fullName: pageHeight
     summary: Specifies the page height in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,7 +293,7 @@ properties:
     fullName: pageWidth
     summary: Specifies the page width in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,32 +306,41 @@ properties:
     fullName: paperSize
     summary: Specifies the paper size of the page.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        paperSize?: Word.PaperSize | "Size10x14" | "Size11x17" | "Letter" | "LetterSmall" | "Legal" | "Executive" | "A3"
-        | "A4" | "A4Small" | "A5" | "B4" | "B5" | "CSheet" | "DSheet" | "ESheet" | "FanfoldLegalGerman" |
-        "FanfoldStdGerman" | "FanfoldUS" | "Folio" | "Ledger" | "Note" | "Quarto" | "Statement" | "Tabloid" |
-        "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "EnvelopeB4" | "EnvelopeB5" |
-        "EnvelopeB6" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC5" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeDL" |
-        "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "Custom";
+        paperSize?: Word.PaperSize | "Size10x14" | "Size11x17" | "Letter" |
+        "LetterSmall" | "Legal" | "Executive" | "A3" | "A4" | "A4Small" | "A5" |
+        "B4" | "B5" | "CSheet" | "DSheet" | "ESheet" | "FanfoldLegalGerman" |
+        "FanfoldStdGerman" | "FanfoldUS" | "Folio" | "Ledger" | "Note" |
+        "Quarto" | "Statement" | "Tabloid" | "Envelope9" | "Envelope10" |
+        "Envelope11" | "Envelope12" | "Envelope14" | "EnvelopeB4" | "EnvelopeB5"
+        | "EnvelopeB6" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC5" |
+        "EnvelopeC6" | "EnvelopeC65" | "EnvelopeDL" | "EnvelopeItaly" |
+        "EnvelopeMonarch" | "EnvelopePersonal" | "Custom";
       return:
         type: >-
-          <xref uid="word!Word.PaperSize:enum" /> | "Size10x14" | "Size11x17" | "Letter" | "LetterSmall" | "Legal" |
-          "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "CSheet" | "DSheet" | "ESheet" |
-          "FanfoldLegalGerman" | "FanfoldStdGerman" | "FanfoldUS" | "Folio" | "Ledger" | "Note" | "Quarto" | "Statement"
-          | "Tabloid" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "EnvelopeB4" |
-          "EnvelopeB5" | "EnvelopeB6" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC5" | "EnvelopeC6" | "EnvelopeC65" |
-          "EnvelopeDL" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "Custom"
+          <xref uid="word!Word.PaperSize:enum" /> | "Size10x14" | "Size11x17" |
+          "Letter" | "LetterSmall" | "Legal" | "Executive" | "A3" | "A4" |
+          "A4Small" | "A5" | "B4" | "B5" | "CSheet" | "DSheet" | "ESheet" |
+          "FanfoldLegalGerman" | "FanfoldStdGerman" | "FanfoldUS" | "Folio" |
+          "Ledger" | "Note" | "Quarto" | "Statement" | "Tabloid" | "Envelope9" |
+          "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" |
+          "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeC3" |
+          "EnvelopeC4" | "EnvelopeC5" | "EnvelopeC6" | "EnvelopeC65" |
+          "EnvelopeDL" | "EnvelopeItaly" | "EnvelopeMonarch" |
+          "EnvelopePersonal" | "Custom"
   - name: rightMargin
     uid: word!Word.Interfaces.PageSetupUpdateData#rightMargin:member
     package: word!
     fullName: rightMargin
-    summary: Specifies the distance (in points) between the right edge of the page and the right boundary of the body text.
+    summary: >-
+      Specifies the distance (in points) between the right edge of the page and
+      the right boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,33 +353,41 @@ properties:
     fullName: sectionDirection
     summary: Specifies the reading order and alignment for the specified sections.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'sectionDirection?: Word.SectionDirection | "RightToLeft" | "LeftToRight";'
+      content: >-
+        sectionDirection?: Word.SectionDirection | "RightToLeft" |
+        "LeftToRight";
       return:
-        type: <xref uid="word!Word.SectionDirection:enum" /> | "RightToLeft" | "LeftToRight"
+        type: >-
+          <xref uid="word!Word.SectionDirection:enum" /> | "RightToLeft" |
+          "LeftToRight"
   - name: sectionStart
     uid: word!Word.Interfaces.PageSetupUpdateData#sectionStart:member
     package: word!
     fullName: sectionStart
     summary: Specifies the type of section break for the specified object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'sectionStart?: Word.SectionStart | "Continuous" | "NewColumn" | "NewPage" | "EvenPage" | "OddPage";'
+      content: >-
+        sectionStart?: Word.SectionStart | "Continuous" | "NewColumn" |
+        "NewPage" | "EvenPage" | "OddPage";
       return:
-        type: <xref uid="word!Word.SectionStart:enum" /> | "Continuous" | "NewColumn" | "NewPage" | "EvenPage" | "OddPage"
+        type: >-
+          <xref uid="word!Word.SectionStart:enum" /> | "Continuous" |
+          "NewColumn" | "NewPage" | "EvenPage" | "OddPage"
   - name: showGrid
     uid: word!Word.Interfaces.PageSetupUpdateData#showGrid:member
     package: word!
     fullName: showGrid
     summary: Specifies whether to show the grid.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,9 +398,11 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#suppressEndnotes:member
     package: word!
     fullName: suppressEndnotes
-    summary: Specifies if endnotes are printed at the end of the next section that doesn't suppress endnotes.
+    summary: >-
+      Specifies if endnotes are printed at the end of the next section that
+      doesn't suppress endnotes.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,7 +415,7 @@ properties:
     fullName: topMargin
     summary: Specifies the top margin of the page in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -383,7 +428,7 @@ properties:
     fullName: twoPagesOnOne
     summary: Specifies whether to print two pages per sheet.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -394,12 +439,18 @@ properties:
     uid: word!Word.Interfaces.PageSetupUpdateData#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: Specifies the vertical alignment of text on each page in a document or section.
+    summary: >-
+      Specifies the vertical alignment of text on each page in a document or
+      section.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'verticalAlignment?: Word.PageSetupVerticalAlignment | "Top" | "Center" | "Justify" | "Bottom";'
+      content: >-
+        verticalAlignment?: Word.PageSetupVerticalAlignment | "Top" | "Center" |
+        "Justify" | "Bottom";
       return:
-        type: <xref uid="word!Word.PageSetupVerticalAlignment:enum" /> | "Top" | "Center" | "Justify" | "Bottom"
+        type: >-
+          <xref uid="word!Word.PageSetupVerticalAlignment:enum" /> | "Top" |
+          "Center" | "Justify" | "Bottom"

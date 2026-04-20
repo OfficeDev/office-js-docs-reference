@@ -5,7 +5,7 @@ package: word!
 fullName: Word.AnnotationState
 summary: Represents the state of the annotation.
 remarks: '\[Api set: WordApi 1.7\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Accepted.
 
-      \* \[Api set: WordApi 1.7\]
+      * \[Api set: WordApi 1.7\]
     value: '"Accepted"'
   - name: created
     uid: word!Word.AnnotationState.created:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Created.
 
-      \* \[Api set: WordApi 1.7\]
+      * \[Api set: WordApi 1.7\]
     value: '"Created"'
   - name: rejected
     uid: word!Word.AnnotationState.rejected:member
@@ -31,5 +31,5 @@ fields:
     summary: |-
       Rejected.
 
-      \* \[Api set: WordApi 1.7\]
+      * \[Api set: WordApi 1.7\]
     value: '"Rejected"'

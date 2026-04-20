@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionContentControlUpdateData
 summary: >-
-  An interface for updating data on the `RepeatingSectionContentControl` object, for use in
-  `repeatingSectionContentControl.set({ ... })`<!-- -->.
+  An interface for updating data on the `RepeatingSectionContentControl` object,
+  for use in `repeatingSectionContentControl.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

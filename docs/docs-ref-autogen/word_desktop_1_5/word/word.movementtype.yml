@@ -5,7 +5,7 @@ package: word!
 fullName: Word.MovementType
 summary: Specifies the type of movement when navigating through a document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Extends the selection.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Extend"'
   - name: move
     uid: word!Word.MovementType.move:member
@@ -23,5 +23,5 @@ fields:
     summary: |-
       Moves the insertion point or selection.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Move"'

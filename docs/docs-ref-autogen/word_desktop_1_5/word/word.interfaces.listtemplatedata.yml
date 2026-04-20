@@ -3,9 +3,11 @@ name: Word.Interfaces.ListTemplateData
 uid: word!Word.Interfaces.ListTemplateData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateData
-summary: An interface describing the data returned by calling `listTemplate.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `listTemplate.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.ListTemplateData#listLevels:member
     package: word!
     fullName: listLevels
-    summary: Gets a `ListLevelCollection` object that represents all the levels for the list template.
+    summary: >-
+      Gets a `ListLevelCollection` object that represents all the levels for the
+      list template.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: name
     summary: Specifies the name of the list template.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: outlineNumbered
     summary: Specifies whether the list template is outline numbered.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

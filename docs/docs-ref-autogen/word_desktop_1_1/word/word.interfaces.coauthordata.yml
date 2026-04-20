@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthorData
 uid: word!Word.Interfaces.CoauthorData:interface
 package: word!
 fullName: Word.Interfaces.CoauthorData
-summary: An interface describing the data returned by calling `coauthor.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `coauthor.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

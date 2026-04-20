@@ -3,9 +3,11 @@ name: Word.GoToDirection
 uid: word!Word.GoToDirection:enum
 package: word!
 fullName: Word.GoToDirection
-summary: Specifies the direction in which to move when using the [Selection.goTo](xref:word!Word.Selection:class) method.
+summary: >-
+  Specifies the direction in which to move when using the
+  [Selection.goTo](xref:word!Word.Selection:class) method.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +17,7 @@ fields:
     summary: |-
       Moves to the first item.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"First"'
   - name: last
     uid: word!Word.GoToDirection.last:member
@@ -23,7 +25,7 @@ fields:
     summary: |-
       Moves to the last item.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Last"'
   - name: next
     uid: word!Word.GoToDirection.next:member
@@ -31,7 +33,7 @@ fields:
     summary: |-
       Moves to the next item.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Next"'
   - name: previous
     uid: word!Word.GoToDirection.previous:member
@@ -39,5 +41,5 @@ fields:
     summary: |-
       Moves to the previous item.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Previous"'

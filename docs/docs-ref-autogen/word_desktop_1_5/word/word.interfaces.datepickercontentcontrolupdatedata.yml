@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.DatePickerContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DatePickerContentControlUpdateData
 summary: >-
-  An interface for updating data on the `DatePickerContentControl` object, for use in `datePickerContentControl.set({
-  ... })`<!-- -->.
+  An interface for updating data on the `DatePickerContentControl` object, for
+  use in `datePickerContentControl.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,22 +18,26 @@ properties:
     fullName: appearance
     summary: Specifies the appearance of the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";'
+      content: >-
+        appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" |
+        "Hidden";
       return:
-        type: <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox" | "Tags" | "Hidden"
+        type: >-
+          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
+          | "Tags" | "Hidden"
   - name: color
     uid: word!Word.Interfaces.DatePickerContentControlUpdateData#color:member
     package: word!
     fullName: color
     summary: >-
-      Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the
-      '\#RRGGBB' format.
+      Specifies the red-green-blue (RGB) value of the color of the content
+      control. You can provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,29 +45,35 @@ properties:
       return:
         type: string
   - name: dateCalendarType
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#dateCalendarType:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#dateCalendarType:member
     package: word!
     fullName: dateCalendarType
-    summary: Specifies a `CalendarType` value that represents the calendar type for the date picker content control.
+    summary: >-
+      Specifies a `CalendarType` value that represents the calendar type for the
+      date picker content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        dateCalendarType?: Word.CalendarType | "Western" | "Arabic" | "Hebrew" | "Taiwan" | "Japan" | "Thai" | "Korean"
-        | "SakaEra" | "TranslitEnglish" | "TranslitFrench" | "Umalqura";
+        dateCalendarType?: Word.CalendarType | "Western" | "Arabic" | "Hebrew" |
+        "Taiwan" | "Japan" | "Thai" | "Korean" | "SakaEra" | "TranslitEnglish" |
+        "TranslitFrench" | "Umalqura";
       return:
         type: >-
-          <xref uid="word!Word.CalendarType:enum" /> | "Western" | "Arabic" | "Hebrew" | "Taiwan" | "Japan" | "Thai" |
-          "Korean" | "SakaEra" | "TranslitEnglish" | "TranslitFrench" | "Umalqura"
+          <xref uid="word!Word.CalendarType:enum" /> | "Western" | "Arabic" |
+          "Hebrew" | "Taiwan" | "Japan" | "Thai" | "Korean" | "SakaEra" |
+          "TranslitEnglish" | "TranslitFrench" | "Umalqura"
   - name: dateDisplayFormat
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayFormat:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayFormat:member
     package: word!
     fullName: dateDisplayFormat
     summary: Specifies the format in which dates are displayed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,104 +81,148 @@ properties:
       return:
         type: string
   - name: dateDisplayLocale
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#dateDisplayLocale:member
     package: word!
     fullName: dateDisplayLocale
     summary: >-
-      Specifies a `LanguageId` that represents the language format for the date displayed in the date picker content
-      control.
+      Specifies a `LanguageId` that represents the language format for the date
+      displayed in the date picker content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        dateDisplayLocale?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" |
-        "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
-        "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" |
-        "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-        "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" |
-        "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
-        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" |
-        "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" |
-        "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" |
-        "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" |
-        "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" |
-        "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" |
-        "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" |
-        "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" |
-        "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri"
-        | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk"
-        | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" |
-        "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese"
-        | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" |
-        "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" |
-        "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
-        "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" |
-        "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" |
-        "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" |
-        "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" |
-        "Yi" | "Yiddish" | "Yoruba" | "Zulu";
+        dateDisplayLocale?: Word.LanguageId | "Afrikaans" | "Albanian" |
+        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
+        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
+        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
+        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
+        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
+        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
+        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
+        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
+        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
+        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
+        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
+        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
+        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
+        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
+        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
+        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
+        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
+        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+        | "Galician" | "Georgian" | "German" | "GermanAustria" |
+        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
+        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
+        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
+        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
+        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
+        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
+        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
+        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
+        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
+        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
+        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
+        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
+        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
+        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
+        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
+        "Yiddish" | "Yoruba" | "Zulu";
       return:
         type: >-
-          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" |
-          "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-          "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE"
-          | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" |
-          "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" |
-          "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia"
-          | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" |
-          "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
-          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-          "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" |
-          "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-          | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek"
-          | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" |
-          "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" |
-          "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" |
-          "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" |
-          "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
-          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" |
-          "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" |
-          "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" |
-          "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" |
-          "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" |
-          "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" |
-          "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" |
-          "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic"
-          | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic"
-          | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu"
+          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
+          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
+          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
+          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
+          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
+          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
+          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
+          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
+          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
+          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
+          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
+          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
+          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
+          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
+          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
+          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
+          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
+          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
+          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
+          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+          | "Galician" | "Georgian" | "German" | "GermanAustria" |
+          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
+          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
+          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
+          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
+          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
+          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
+          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
+          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
+          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
+          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
+          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
+          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
+          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
+          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
+          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
+          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
+          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
+          "Zulu"
   - name: dateStorageFormat
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#dateStorageFormat:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#dateStorageFormat:member
     package: word!
     fullName: dateStorageFormat
     summary: >-
-      Specifies a `ContentControlDateStorageFormat` value that represents the format for storage and retrieval of dates
-      when the date picker content control is bound to the XML data store of the active document.
+      Specifies a `ContentControlDateStorageFormat` value that represents the
+      format for storage and retrieval of dates when the date picker content
+      control is bound to the XML data store of the active document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'dateStorageFormat?: Word.ContentControlDateStorageFormat | "Text" | "Date" | "DateTime";'
+      content: >-
+        dateStorageFormat?: Word.ContentControlDateStorageFormat | "Text" |
+        "Date" | "DateTime";
       return:
-        type: <xref uid="word!Word.ContentControlDateStorageFormat:enum" /> | "Text" | "Date" | "DateTime"
+        type: >-
+          <xref uid="word!Word.ContentControlDateStorageFormat:enum" /> | "Text"
+          | "Date" | "DateTime"
   - name: isTemporary
     uid: word!Word.Interfaces.DatePickerContentControlUpdateData#isTemporary:member
     package: word!
     fullName: isTemporary
     summary: >-
-      Specifies whether to remove the content control from the active document when the user edits the contents of the
-      control.
+      Specifies whether to remove the content control from the active document
+      when the user edits the contents of the control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,14 +230,16 @@ properties:
       return:
         type: boolean
   - name: lockContentControl
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#lockContentControl:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#lockContentControl:member
     package: word!
     fullName: lockContentControl
     summary: >-
-      Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the
-      active document, `false` means it can be deleted.
+      Specifies if the content control is locked (can't be deleted). `true`
+      means that the user can't delete it from the active document, `false`
+      means it can be deleted.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,14 +247,16 @@ properties:
       return:
         type: boolean
   - name: lockContents
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#lockContents:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#lockContents:member
     package: word!
     fullName: lockContents
     summary: >-
-      Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the
-      contents, `false` means the contents are editable.
+      Specifies if the contents of the content control are locked (not
+      editable). `true` means the user can't edit the contents, `false` means
+      the contents are editable.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,12 +264,15 @@ properties:
       return:
         type: boolean
   - name: placeholderText
-    uid: word!Word.Interfaces.DatePickerContentControlUpdateData#placeholderText:member
+    uid: >-
+      word!Word.Interfaces.DatePickerContentControlUpdateData#placeholderText:member
     package: word!
     fullName: placeholderText
-    summary: Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+    summary: >-
+      Returns a `BuildingBlock` object that represents the placeholder text for
+      the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,9 +283,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlUpdateData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the contents of the content control in the active document.
+    summary: >-
+      Gets a `Range` object that represents the contents of the content control
+      in the active document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +300,7 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,7 +313,7 @@ properties:
     fullName: title
     summary: Specifies the title for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,10 +325,10 @@ properties:
     package: word!
     fullName: xmlMapping
     summary: >-
-      Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of
-      the document.
+      Gets an `XmlMapping` object that represents the mapping of the content
+      control to XML data in the data store of the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

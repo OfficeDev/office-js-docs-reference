@@ -3,9 +3,11 @@ name: Word.Interfaces.LinkFormatUpdateData
 uid: word!Word.Interfaces.LinkFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.LinkFormatUpdateData
-summary: An interface for updating data on the `LinkFormat` object, for use in `linkFormat.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `LinkFormat` object, for use in
+  `linkFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

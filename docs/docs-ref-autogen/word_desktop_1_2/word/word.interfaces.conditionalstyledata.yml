@@ -3,9 +3,11 @@ name: Word.Interfaces.ConditionalStyleData
 uid: word!Word.Interfaces.ConditionalStyleData:interface
 package: word!
 fullName: Word.Interfaces.ConditionalStyleData
-summary: An interface describing the data returned by calling `conditionalStyle.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `conditionalStyle.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

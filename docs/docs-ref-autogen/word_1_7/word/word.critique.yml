@@ -3,16 +3,25 @@ name: Word.Critique
 uid: word!Word.Critique:interface
 package: word!
 fullName: Word.Critique
-summary: Critique that will be rendered as underline for the specified part of paragraph in the document.
-remarks: |-
-  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: >-
+  Critique that will be rendered as underline for the specified part of
+  paragraph in the document.
+remarks: >-
+  \[ [API set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
 
   // Adds annotations to the selected paragraph.
+
   await Word.run(async (context) => {
     const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
     const options: Word.CritiquePopupOptions = {
@@ -61,8 +70,9 @@ remarks: |-
 
     console.log("Annotations inserted:", annotationIds.value);
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -72,21 +82,29 @@ properties:
     package: word!
     fullName: colorScheme
     summary: Specifies the color scheme of the critique.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";'
+      content: >-
+        colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" |
+        "Lavender" | "Berry";
       return:
-        type: <xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" | "Blue" | "Lavender" | "Berry"
+        type: >-
+          <xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" |
+          "Blue" | "Lavender" | "Berry"
   - name: length
     uid: word!Word.Critique#length:member
     package: word!
     fullName: length
     summary: Specifies the length of the critique inside paragraph.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,8 +116,10 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the start index of the critique inside paragraph.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

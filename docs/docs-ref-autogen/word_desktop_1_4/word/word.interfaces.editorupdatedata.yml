@@ -3,9 +3,11 @@ name: Word.Interfaces.EditorUpdateData
 uid: word!Word.Interfaces.EditorUpdateData:interface
 package: word!
 fullName: Word.Interfaces.EditorUpdateData
-summary: An interface for updating data on the `Editor` object, for use in `editor.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Editor` object, for use in
+  `editor.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.EditorUpdateData#nextRange:member
     package: word!
     fullName: nextRange
-    summary: Gets a `Range` object that represents the next range that the editor has permissions to modify.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the next range that the editor has
+      permissions to modify.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,13 @@ properties:
     uid: word!Word.Interfaces.EditorUpdateData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `Editor` object.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `Editor` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

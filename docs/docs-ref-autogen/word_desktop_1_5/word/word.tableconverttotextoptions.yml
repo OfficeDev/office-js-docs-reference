@@ -4,11 +4,13 @@ uid: word!Word.TableConvertToTextOptions:interface
 package: word!
 fullName: Word.TableConvertToTextOptions
 summary: >-
-  Represents the options for the [Table.convertToText](xref:word!Word.Table:class)<!-- -->,
+  Represents the options for the
+  [Table.convertToText](xref:word!Word.Table:class)<!-- -->,
   [TableRow.convertToText](xref:word!Word.TableRow:class)<!-- -->, and
-  [TableRowCollection.convertToText](xref:word!Word.TableRowCollection:class) methods.
+  [TableRowCollection.convertToText](xref:word!Word.TableRowCollection:class)
+  methods.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,10 +20,11 @@ properties:
     package: word!
     fullName: nestedTables
     summary: >-
-      If provided, specifies whether to convert the nested tables to text. This property is ignored if the `separator`
-      property isn't set to `paragraph`<!-- -->. The default is `true`<!-- -->.
+      If provided, specifies whether to convert the nested tables to text. This
+      property is ignored if the `separator` property isn't set to
+      `paragraph`<!-- -->. The default is `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,13 +36,18 @@ properties:
     package: word!
     fullName: separator
     summary: >-
-      If provided, specifies the character that delimits the converted columns (paragraph marks delimit the converted
-      rows). The default is `tab`<!-- -->.
+      If provided, specifies the character that delimits the converted columns
+      (paragraph marks delimit the converted rows). The default is `tab`<!--
+      -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'separator?: Word.TableFieldSeparator | "Paragraph" | "Tab" | "Comma" | "DefaultListSeparator";'
+      content: >-
+        separator?: Word.TableFieldSeparator | "Paragraph" | "Tab" | "Comma" |
+        "DefaultListSeparator";
       return:
-        type: <xref uid="word!Word.TableFieldSeparator:enum" /> | "Paragraph" | "Tab" | "Comma" | "DefaultListSeparator"
+        type: >-
+          <xref uid="word!Word.TableFieldSeparator:enum" /> | "Paragraph" |
+          "Tab" | "Comma" | "DefaultListSeparator"

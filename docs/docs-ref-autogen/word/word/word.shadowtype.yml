@@ -441,4 +441,13 @@ fields:
       * \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type8"'
-  - na
+  - name: type9
+    uid: word!Word.ShadowType.type9:member
+    package: word!
+    summary: >-
+      Represents shadow type 9.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Type9"'

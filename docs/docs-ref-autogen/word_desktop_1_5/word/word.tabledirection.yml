@@ -3,9 +3,11 @@ name: Word.TableDirection
 uid: word!Word.TableDirection:enum
 package: word!
 fullName: Word.TableDirection
-summary: Specifies the direction in which Microsoft Word orders cells in the specified table or row.
+summary: >-
+  Specifies the direction in which Microsoft Word orders cells in the specified
+  table or row.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +17,7 @@ fields:
     summary: |-
       The table is arranged with the first column in the leftmost position.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.TableDirection.rightToLeft:member
@@ -23,5 +25,5 @@ fields:
     summary: |-
       The table is arranged with the first column in the rightmost position.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RightToLeft"'

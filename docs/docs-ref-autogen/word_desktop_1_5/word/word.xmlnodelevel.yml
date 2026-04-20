@@ -5,7 +5,7 @@ package: word!
 fullName: Word.XmlNodeLevel
 summary: Specifies the level of an XML node.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Cell node level.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Cell"'
   - name: inline
     uid: word!Word.XmlNodeLevel.inline:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Inline node level.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.XmlNodeLevel.paragraph:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Paragraph node level.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraph"'
   - name: row
     uid: word!Word.XmlNodeLevel.row:member
@@ -39,5 +39,5 @@ fields:
     summary: |-
       Row node level.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Row"'

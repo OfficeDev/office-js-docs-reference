@@ -3,9 +3,11 @@ name: Word.Interfaces.RevisionData
 uid: word!Word.Interfaces.RevisionData:interface
 package: word!
 fullName: Word.Interfaces.RevisionData
-summary: An interface describing the data returned by calling `revision.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `revision.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: author
     summary: Gets the name of the user who made the tracked change.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: date
     summary: Gets the date and time when the tracked change was made.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +47,10 @@ properties:
     package: word!
     fullName: formatDescription
     summary: Gets the description of tracked formatting changes in the revision.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +62,10 @@ properties:
     package: word!
     fullName: index
     summary: Gets a number that represents the position of this item in a collection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +76,13 @@ properties:
     uid: word!Word.Interfaces.RevisionData#movedRange:member
     package: word!
     fullName: movedRange
-    summary: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the range of text that was moved
+      from one place to another in the document with tracked changes.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +93,13 @@ properties:
     uid: word!Word.Interfaces.RevisionData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained within a revision mark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,11 +111,25 @@ properties:
     package: word!
     fullName: type
     summary: Gets the revision type.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.RevisionType | "None" | "Insert" | "Delete" | "Property" | "ParagraphNumber" | "DisplayField" | "Reconcile" | "Conflict" | "Style" | "Replace" | "ParagraphProperty" | "TableProperty" | "SectionProperty" | "StyleDefinition" | "MovedFrom" | "MovedTo" | "CellInsertion" | "CellDeletion" | "CellMerge" | "CellSplit" | "ConflictInsert" | "ConflictDelete";'
+      content: >-
+        type?: Word.RevisionType | "None" | "Insert" | "Delete" | "Property" |
+        "ParagraphNumber" | "DisplayField" | "Reconcile" | "Conflict" | "Style"
+        | "Replace" | "ParagraphProperty" | "TableProperty" | "SectionProperty"
+        | "StyleDefinition" | "MovedFrom" | "MovedTo" | "CellInsertion" |
+        "CellDeletion" | "CellMerge" | "CellSplit" | "ConflictInsert" |
+        "ConflictDelete";
       return:
-        type: <xref uid="word!Word.RevisionType:enum" /> | "None" | "Insert" | "Delete" | "Property" | "ParagraphNumber" | "DisplayField" | "Reconcile" | "Conflict" | "Style" | "Replace" | "ParagraphProperty" | "TableProperty" | "SectionProperty" | "StyleDefinition" | "MovedFrom" | "MovedTo" | "CellInsertion" | "CellDeletion" | "CellMerge" | "CellSplit" | "ConflictInsert" | "ConflictDelete"
+        type: >-
+          <xref uid="word!Word.RevisionType:enum" /> | "None" | "Insert" |
+          "Delete" | "Property" | "ParagraphNumber" | "DisplayField" |
+          "Reconcile" | "Conflict" | "Style" | "Replace" | "ParagraphProperty" |
+          "TableProperty" | "SectionProperty" | "StyleDefinition" | "MovedFrom"
+          | "MovedTo" | "CellInsertion" | "CellDeletion" | "CellMerge" |
+          "CellSplit" | "ConflictInsert" | "ConflictDelete"

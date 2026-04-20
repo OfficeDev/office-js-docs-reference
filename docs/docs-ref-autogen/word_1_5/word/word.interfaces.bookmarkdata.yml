@@ -3,9 +3,11 @@ name: Word.Interfaces.BookmarkData
 uid: word!Word.Interfaces.BookmarkData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkData
-summary: An interface describing the data returned by calling `bookmark.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `bookmark.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

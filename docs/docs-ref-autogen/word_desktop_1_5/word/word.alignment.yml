@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Alignment
 summary: Represents the horizontal alignment of text.
 remarks: '\[Api set: WordApi 1.1\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Alignment to the center.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Centered"'
   - name: justified
     uid: word!Word.Alignment.justified:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Fully justified alignment.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Justified"'
   - name: left
     uid: word!Word.Alignment.left:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Alignment to the left.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Left"'
   - name: mixed
     uid: word!Word.Alignment.mixed:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Mixed horizontal alignment.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Mixed"'
   - name: right
     uid: word!Word.Alignment.right:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Alignment to the right.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Right"'
   - name: unknown
     uid: word!Word.Alignment.unknown:member
@@ -55,5 +55,5 @@ fields:
     summary: |-
       Unknown alignment.
 
-      \* \[Api set: WordApi 1.1\]
+      * \[Api set: WordApi 1.1\]
     value: '"Unknown"'

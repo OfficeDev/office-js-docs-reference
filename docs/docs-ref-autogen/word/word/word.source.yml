@@ -246,4 +246,8 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'untrack(): W
+      content: 'untrack(): Word.Source;'
+      return:
+        type: <xref uid="word!Word.Source:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

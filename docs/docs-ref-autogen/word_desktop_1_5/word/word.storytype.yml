@@ -5,7 +5,7 @@ package: word!
 fullName: Word.StoryType
 summary: Specifies the type of story in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Comments story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comments"'
   - name: endnoteContinuationNotice
     uid: word!Word.StoryType.endnoteContinuationNotice:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Endnote continuation notice story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EndnoteContinuationNotice"'
   - name: endnoteContinuationSeparator
     uid: word!Word.StoryType.endnoteContinuationSeparator:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Endnote continuation separator story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EndnoteContinuationSeparator"'
   - name: endnotes
     uid: word!Word.StoryType.endnotes:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Endnotes story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Endnotes"'
   - name: endnoteSeparator
     uid: word!Word.StoryType.endnoteSeparator:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Endnote separator story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EndnoteSeparator"'
   - name: evenPagesFooter
     uid: word!Word.StoryType.evenPagesFooter:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Even pages footer story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EvenPagesFooter"'
   - name: evenPagesHeader
     uid: word!Word.StoryType.evenPagesHeader:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Even pages header story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EvenPagesHeader"'
   - name: firstPageFooter
     uid: word!Word.StoryType.firstPageFooter:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       First page footer story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FirstPageFooter"'
   - name: firstPageHeader
     uid: word!Word.StoryType.firstPageHeader:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       First page header story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FirstPageHeader"'
   - name: footnoteContinuationNotice
     uid: word!Word.StoryType.footnoteContinuationNotice:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Footnote continuation notice story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FootnoteContinuationNotice"'
   - name: footnoteContinuationSeparator
     uid: word!Word.StoryType.footnoteContinuationSeparator:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Footnote continuation separator story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FootnoteContinuationSeparator"'
   - name: footnotes
     uid: word!Word.StoryType.footnotes:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Footnotes story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Footnotes"'
   - name: footnoteSeparator
     uid: word!Word.StoryType.footnoteSeparator:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Footnote separator story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FootnoteSeparator"'
   - name: mainText
     uid: word!Word.StoryType.mainText:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Main text story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MainText"'
   - name: primaryFooter
     uid: word!Word.StoryType.primaryFooter:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Primary footer story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PrimaryFooter"'
   - name: primaryHeader
     uid: word!Word.StoryType.primaryHeader:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Primary header story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PrimaryHeader"'
   - name: textFrame
     uid: word!Word.StoryType.textFrame:member
@@ -143,5 +143,5 @@ fields:
     summary: |-
       Text frame story.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TextFrame"'

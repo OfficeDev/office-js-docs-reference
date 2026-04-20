@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.XmlNodeLoadOptions
 summary: Represents a single XML node applied to the document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +15,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +32,7 @@ properties:
     fullName: baseName
     summary: Gets the name of the element without any prefix.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,9 +43,11 @@ properties:
     uid: word!Word.Interfaces.XmlNodeLoadOptions#firstChild:member
     package: word!
     fullName: firstChild
-    summary: Gets the first child node if this is a parent node. Returns `null` if the node type is `attribute`<!-- -->.
+    summary: >-
+      Gets the first child node if this is a parent node. Returns `null` if the
+      node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,10 +59,10 @@ properties:
     package: word!
     fullName: hasChildNodes
     summary: >-
-      Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have
-      children.
+      Gets whether this XML node has child nodes. Always returns `false` for
+      attribute nodes since they cannot have children.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,9 +73,11 @@ properties:
     uid: word!Word.Interfaces.XmlNodeLoadOptions#lastChild:member
     package: word!
     fullName: lastChild
-    summary: Gets the last child node if this is a parent node. Returns `null` if the node type is `attribute`<!-- -->.
+    summary: >-
+      Gets the last child node if this is a parent node. Returns `null` if the
+      node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,10 +89,11 @@ properties:
     package: word!
     fullName: level
     summary: >-
-      Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or
-      contains a table row. Returns `null` if the node type is `attribute`<!-- -->.
+      Gets whether this XML element is part of a paragraph, is a paragraph, or
+      is contained within a table cell or contains a table row. Returns `null`
+      if the node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,9 +104,11 @@ properties:
     uid: word!Word.Interfaces.XmlNodeLoadOptions#namespaceUri:member
     package: word!
     fullName: namespaceUri
-    summary: Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
+    summary: >-
+      Gets the Uniform Resource Identifier (URI) of the schema namespace for
+      this XML node.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,10 +120,10 @@ properties:
     package: word!
     fullName: nextSibling
     summary: >-
-      Gets the next element in the document that's at the same level as this XML node. Returns `null` if the node type
-      is `attribute`<!-- -->.
+      Gets the next element in the document that's at the same level as this XML
+      node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +136,7 @@ properties:
     fullName: ownerDocument
     summary: Gets the parent document of this XML node.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +149,7 @@ properties:
     fullName: parentNode
     summary: Gets the parent element of this XML node.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,10 +161,10 @@ properties:
     package: word!
     fullName: placeholderText
     summary: >-
-      Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute
-      nodes.
+      Specifies the text displayed for this element if it contains no text. Only
+      applies to element nodes, not attribute nodes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,10 +176,10 @@ properties:
     package: word!
     fullName: previousSibling
     summary: >-
-      Gets the previous element in the document that's at the same level as this XML node. Returns `null` if the node
-      type is `attribute`<!-- -->.
+      Gets the previous element in the document that's at the same level as this
+      XML node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,10 +191,10 @@ properties:
     package: word!
     fullName: range
     summary: >-
-      Gets the portion of a document that is contained in this XML node. Returns `null` if the node type is
-      `attribute`<!-- -->.
+      Gets the portion of a document that is contained in this XML node. Returns
+      `null` if the node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,10 +206,10 @@ properties:
     package: word!
     fullName: text
     summary: >-
-      Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`<!--
-      -->.
+      Specifies the text contained within the XML element. Returns an empty
+      string if the node type is `attribute`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,9 +220,11 @@ properties:
     uid: word!Word.Interfaces.XmlNodeLoadOptions#validationErrorText:member
     package: word!
     fullName: validationErrorText
-    summary: Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
+    summary: >-
+      Gets the description for a validation error on this `XmlNode` object. May
+      not be meaningful for attribute nodes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,9 +235,11 @@ properties:
     uid: word!Word.Interfaces.XmlNodeLoadOptions#validationStatus:member
     package: word!
     fullName: validationStatus
-    summary: Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
+    summary: >-
+      Gets whether this element is valid according to the attached schema. May
+      not be meaningful for attribute nodes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

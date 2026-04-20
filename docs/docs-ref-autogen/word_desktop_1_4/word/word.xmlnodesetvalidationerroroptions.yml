@@ -3,9 +3,13 @@ name: Word.XmlNodeSetValidationErrorOptions
 uid: word!Word.XmlNodeSetValidationErrorOptions:interface
 package: word!
 fullName: Word.XmlNodeSetValidationErrorOptions
-summary: Provides configuration options for the [XmlNode.setValidationError](xref:word!Word.XmlNode:class) method.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Provides configuration options for the
+  [XmlNode.setValidationError](xref:word!Word.XmlNode:class) method.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,13 @@ properties:
     uid: word!Word.XmlNodeSetValidationErrorOptions#clearedAutomatically:member
     package: word!
     fullName: clearedAutomatically
-    summary: If provided, specifies whether the validation error should be cleared automatically. The default value is `false`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether the validation error should be cleared
+      automatically. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +36,10 @@ properties:
     package: word!
     fullName: errorText
     summary: If provided, specifies the error text to display for the validation error.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

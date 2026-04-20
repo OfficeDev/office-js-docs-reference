@@ -3,9 +3,11 @@ name: Word.Interfaces.TableOfContentsData
 uid: word!Word.Interfaces.TableOfContentsData:interface
 package: word!
 fullName: Word.Interfaces.TableOfContentsData
-summary: An interface describing the data returned by calling `tableOfContents.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `tableOfContents.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

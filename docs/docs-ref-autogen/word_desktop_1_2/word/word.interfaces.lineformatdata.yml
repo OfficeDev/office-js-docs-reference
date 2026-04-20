@@ -3,9 +3,11 @@ name: Word.Interfaces.LineFormatData
 uid: word!Word.Interfaces.LineFormatData:interface
 package: word!
 fullName: Word.Interfaces.LineFormatData
-summary: An interface describing the data returned by calling `lineFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `lineFormat.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

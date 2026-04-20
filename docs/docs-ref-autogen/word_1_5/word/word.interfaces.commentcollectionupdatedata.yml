@@ -3,9 +3,11 @@ name: Word.Interfaces.CommentCollectionUpdateData
 uid: word!Word.Interfaces.CommentCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CommentCollectionUpdateData
-summary: An interface for updating data on the `CommentCollection` object, for use in `commentCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `CommentCollection` object, for use in
+  `commentCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

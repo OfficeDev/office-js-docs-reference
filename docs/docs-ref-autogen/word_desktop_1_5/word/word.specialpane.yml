@@ -5,7 +5,7 @@ package: word!
 fullName: Word.SpecialPane
 summary: Specifies the special pane options in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Comments.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comments"'
   - name: currentPageFooter
     uid: word!Word.SpecialPane.currentPageFooter:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Current page footer.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CurrentPageFooter"'
   - name: currentPageHeader
     uid: word!Word.SpecialPane.currentPageHeader:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Current page header.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CurrentPageHeader"'
   - name: endnoteContinuationNotice
     uid: word!Word.SpecialPane.endnoteContinuationNotice:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Endnote continuation notice.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EndnoteContinuationNotice"'
   - name: endnoteContinuationSeparator
     uid: word!Word.SpecialPane.endnoteContinuationSeparator:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Endnote continuation separator.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EndnoteContinuationSeparator"'
   - name: endnotes
     uid: word!Word.SpecialPane.endnotes:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Endnotes.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Endnotes"'
   - name: endnoteSeparator
     uid: word!Word.SpecialPane.endnoteSeparator:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Endnote separator.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EndnoteSeparator"'
   - name: evenPagesFooter
     uid: word!Word.SpecialPane.evenPagesFooter:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Even pages footer.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EvenPagesFooter"'
   - name: evenPagesHeader
     uid: word!Word.SpecialPane.evenPagesHeader:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Even pages header.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EvenPagesHeader"'
   - name: firstPageFooter
     uid: word!Word.SpecialPane.firstPageFooter:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       First page footer.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FirstPageFooter"'
   - name: firstPageHeader
     uid: word!Word.SpecialPane.firstPageHeader:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       First page header.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FirstPageHeader"'
   - name: footnoteContinuationNotice
     uid: word!Word.SpecialPane.footnoteContinuationNotice:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Footnote continuation notice.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FootnoteContinuationNotice"'
   - name: footnoteContinuationSeparator
     uid: word!Word.SpecialPane.footnoteContinuationSeparator:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Footnote continuation separator.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FootnoteContinuationSeparator"'
   - name: footnotes
     uid: word!Word.SpecialPane.footnotes:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Footnotes.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Footnotes"'
   - name: footnoteSeparator
     uid: word!Word.SpecialPane.footnoteSeparator:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Footnote separator.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FootnoteSeparator"'
   - name: none
     uid: word!Word.SpecialPane.none:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       None.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: primaryFooter
     uid: word!Word.SpecialPane.primaryFooter:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Primary footer.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PrimaryFooter"'
   - name: primaryHeader
     uid: word!Word.SpecialPane.primaryHeader:member
@@ -151,7 +151,7 @@ fields:
     summary: |-
       Primary header.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PrimaryHeader"'
   - name: revisions
     uid: word!Word.SpecialPane.revisions:member
@@ -159,7 +159,7 @@ fields:
     summary: |-
       Revisions.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Revisions"'
   - name: revisionsHoriz
     uid: word!Word.SpecialPane.revisionsHoriz:member
@@ -167,7 +167,7 @@ fields:
     summary: |-
       Revisions horizontal.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RevisionsHoriz"'
   - name: revisionsVert
     uid: word!Word.SpecialPane.revisionsVert:member
@@ -175,5 +175,5 @@ fields:
     summary: |-
       Revisions vertical.
 
-      \* \[Api set: WordApiDesktop 1.4\]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RevisionsVert"'

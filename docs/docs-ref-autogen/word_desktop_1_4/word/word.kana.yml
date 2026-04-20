@@ -4,24 +4,30 @@ uid: word!Word.Kana:enum
 package: word!
 fullName: Word.Kana
 summary: Specifies the Kana type.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: hiragana
     uid: word!Word.Kana.hiragana:member
     package: word!
-    summary: |-
+    summary: >-
       Hiragana Kana type.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.Kana.katakana:member
     package: word!
-    summary: |-
+    summary: >-
       Katakana Kana type.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Katakana"'

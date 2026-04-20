@@ -3,9 +3,13 @@ name: Word.Interfaces.ShadingUniversalLoadOptions
 uid: word!Word.Interfaces.ShadingUniversalLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShadingUniversalLoadOptions
-summary: Represents the `ShadingUniversal` object, which manages shading for a range, paragraph, frame, or table.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the `ShadingUniversal` object, which manages shading for a range,
+  paragraph, frame, or table.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.ShadingUniversalLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +31,18 @@ properties:
       return:
         type: boolean
   - name: backgroundPatternColor
-    uid: word!Word.Interfaces.ShadingUniversalLoadOptions#backgroundPatternColor:member
+    uid: >-
+      word!Word.Interfaces.ShadingUniversalLoadOptions#backgroundPatternColor:member
     package: word!
     fullName: backgroundPatternColor
-    summary: Specifies the color that's applied to the background of the `ShadingUniversal` object. You can provide the value in the '\#RRGGBB' format.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color that's applied to the background of the
+      `ShadingUniversal` object. You can provide the value in the '\#RRGGBB'
+      format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,12 +50,17 @@ properties:
       return:
         type: boolean
   - name: backgroundPatternColorIndex
-    uid: word!Word.Interfaces.ShadingUniversalLoadOptions#backgroundPatternColorIndex:member
+    uid: >-
+      word!Word.Interfaces.ShadingUniversalLoadOptions#backgroundPatternColorIndex:member
     package: word!
     fullName: backgroundPatternColorIndex
-    summary: Specifies the color that's applied to the background of the `ShadingUniversal` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color that's applied to the background of the
+      `ShadingUniversal` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +68,18 @@ properties:
       return:
         type: boolean
   - name: foregroundPatternColor
-    uid: word!Word.Interfaces.ShadingUniversalLoadOptions#foregroundPatternColor:member
+    uid: >-
+      word!Word.Interfaces.ShadingUniversalLoadOptions#foregroundPatternColor:member
     package: word!
     fullName: foregroundPatternColor
-    summary: Specifies the color that's applied to the foreground of the `ShadingUniversal` object. This color is applied to the dots and lines in the shading pattern. You can provide the value in the '\#RRGGBB' format.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color that's applied to the foreground of the
+      `ShadingUniversal` object. This color is applied to the dots and lines in
+      the shading pattern. You can provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +87,18 @@ properties:
       return:
         type: boolean
   - name: foregroundPatternColorIndex
-    uid: word!Word.Interfaces.ShadingUniversalLoadOptions#foregroundPatternColorIndex:member
+    uid: >-
+      word!Word.Interfaces.ShadingUniversalLoadOptions#foregroundPatternColorIndex:member
     package: word!
     fullName: foregroundPatternColorIndex
-    summary: Specifies the color that's applied to the foreground of the `ShadingUniversal` object. This color is applied to the dots and lines in the shading pattern.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color that's applied to the foreground of the
+      `ShadingUniversal` object. This color is applied to the dots and lines in
+      the shading pattern.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +109,16 @@ properties:
     uid: word!Word.Interfaces.ShadingUniversalLoadOptions#texture:member
     package: word!
     fullName: texture
-    summary: Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see [Add, change, or delete the background color in Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the shading texture of the object. To learn more about how to
+      apply backgrounds like textures, see [Add, change, or delete the
+      background color in
+      Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

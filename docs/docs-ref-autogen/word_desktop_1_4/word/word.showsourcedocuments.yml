@@ -4,40 +4,50 @@ uid: word!Word.ShowSourceDocuments:enum
 package: word!
 fullName: Word.ShowSourceDocuments
 summary: Specifies the source documents to show.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: both
     uid: word!Word.ShowSourceDocuments.both:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies that both the original and revised source documents are shown.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Both"'
   - name: none
     uid: word!Word.ShowSourceDocuments.none:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies that no source documents are shown.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: original
     uid: word!Word.ShowSourceDocuments.original:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies that the original source document is shown.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Original"'
   - name: revised
     uid: word!Word.ShowSourceDocuments.revised:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies that the revised source document is shown.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Revised"'

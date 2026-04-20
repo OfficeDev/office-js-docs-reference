@@ -3,9 +3,11 @@ name: Word.Interfaces.TrackedChangeData
 uid: word!Word.Interfaces.TrackedChangeData:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeData
-summary: An interface describing the data returned by calling `trackedChange.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `trackedChange.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: author
     summary: Gets the author of the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: date
     summary: Gets the date of the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +47,10 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,11 +62,17 @@ properties:
     package: word!
     fullName: type
     summary: Gets the type of the tracked change.
-    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
+      content: >-
+        type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" |
+        "Formatted";
       return:
-        type: <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"
+        type: >-
+          <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" |
+          "Deleted" | "Formatted"

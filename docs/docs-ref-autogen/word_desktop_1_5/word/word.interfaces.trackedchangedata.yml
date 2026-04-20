@@ -3,9 +3,11 @@ name: Word.Interfaces.TrackedChangeData
 uid: word!Word.Interfaces.TrackedChangeData:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeData
-summary: An interface describing the data returned by calling `trackedChange.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `trackedChange.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: author
     summary: Gets the author of the tracked change.
     remarks: '\[Api set: WordApi 1.6\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: date
     summary: Gets the date of the tracked change.
     remarks: '\[Api set: WordApi 1.6\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +44,7 @@ properties:
     fullName: text
     summary: Gets the text of the tracked change.
     remarks: '\[Api set: WordApi 1.6\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,10 +57,14 @@ properties:
     fullName: type
     summary: Gets the type of the tracked change.
     remarks: '\[Api set: WordApi 1.6\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
+      content: >-
+        type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" |
+        "Formatted";
       return:
-        type: <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"
+        type: >-
+          <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" |
+          "Deleted" | "Formatted"

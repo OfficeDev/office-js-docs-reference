@@ -3,9 +3,11 @@ name: Word.Interfaces.ConflictUpdateData
 uid: word!Word.Interfaces.ConflictUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ConflictUpdateData
-summary: An interface for updating data on the `Conflict` object, for use in `conflict.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Conflict` object, for use in
+  `conflict.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

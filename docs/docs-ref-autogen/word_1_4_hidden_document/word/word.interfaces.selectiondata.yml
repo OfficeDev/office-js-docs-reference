@@ -3,9 +3,11 @@ name: Word.Interfaces.SelectionData
 uid: word!Word.Interfaces.SelectionData:interface
 package: word!
 fullName: Word.Interfaces.SelectionData
-summary: An interface describing the data returned by calling `selection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `selection.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

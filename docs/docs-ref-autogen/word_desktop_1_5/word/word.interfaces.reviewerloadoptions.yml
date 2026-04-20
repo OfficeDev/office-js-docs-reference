@@ -4,10 +4,11 @@ uid: word!Word.Interfaces.ReviewerLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ReviewerLoadOptions
 summary: >-
-  Represents a single reviewer of a document in which changes have been tracked. The `Reviewer` object is a member of
-  the [Word.ReviewerCollection](xref:word!Word.ReviewerCollection:class) object.
+  Represents a single reviewer of a document in which changes have been tracked.
+  The `Reviewer` object is a member of the
+  [Word.ReviewerCollection](xref:word!Word.ReviewerCollection:class) object.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +18,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +35,7 @@ properties:
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

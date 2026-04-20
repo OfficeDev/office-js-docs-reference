@@ -3,9 +3,11 @@ name: Word.Interfaces.ShadowFormatData
 uid: word!Word.Interfaces.ShadowFormatData:interface
 package: word!
 fullName: Word.Interfaces.ShadowFormatData
-summary: An interface describing the data returned by calling `shadowFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `shadowFormat.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.ShadowFormatData#blur:member
     package: word!
     fullName: blur
-    summary: Specifies the blur level for a shadow format as a value between 0.0 and 100.0.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the blur level for a shadow format as a value between 0.0 and
+      100.0.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,13 @@ properties:
     uid: word!Word.Interfaces.ShadowFormatData#foregroundColor:member
     package: word!
     fullName: foregroundColor
-    summary: Returns a `ColorFormat` object that represents the foreground color for the fill, line, or shadow.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `ColorFormat` object that represents the foreground color for
+      the fill, line, or shadow.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +51,10 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies whether the object or the formatting applied to it is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +65,15 @@ properties:
     uid: word!Word.Interfaces.ShadowFormatData#obscured:member
     package: word!
     fullName: obscured
-    summary: Specifies `true` if the shadow of the shape appears filled in and is obscured by the shape, even if the shape has no fill, `false` if the shadow has no fill and the outline of the shadow is visible through the shape if the shape has no fill.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies `true` if the shadow of the shape appears filled in and is
+      obscured by the shape, even if the shape has no fill, `false` if the
+      shadow has no fill and the outline of the shadow is visible through the
+      shape if the shape has no fill.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +84,14 @@ properties:
     uid: word!Word.Interfaces.ShadowFormatData#offsetX:member
     package: word!
     fullName: offsetX
-    summary: Specifies the horizontal offset (in points) of the shadow from the shape. A positive value offsets the shadow to the right of the shape; a negative value offsets it to the left.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the horizontal offset (in points) of the shadow from the shape.
+      A positive value offsets the shadow to the right of the shape; a negative
+      value offsets it to the left.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +102,14 @@ properties:
     uid: word!Word.Interfaces.ShadowFormatData#offsetY:member
     package: word!
     fullName: offsetY
-    summary: Specifies the vertical offset (in points) of the shadow from the shape. A positive value offsets the shadow to the top of the shape; a negative value offsets it to the bottom.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the vertical offset (in points) of the shadow from the shape. A
+      positive value offsets the shadow to the top of the shape; a negative
+      value offsets it to the bottom.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,8 +121,10 @@ properties:
     package: word!
     fullName: rotateWithShape
     summary: Specifies whether to rotate the shadow when rotating the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,8 +136,10 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the width of the shadow.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,21 +151,29 @@ properties:
     package: word!
     fullName: style
     summary: Specifies the type of shadow formatting to apply to a shape.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'style?: Word.ShadowStyle | "Mixed" | "OuterShadow" | "InnerShadow";'
       return:
-        type: <xref uid="word!Word.ShadowStyle:enum" /> | "Mixed" | "OuterShadow" | "InnerShadow"
+        type: >-
+          <xref uid="word!Word.ShadowStyle:enum" /> | "Mixed" | "OuterShadow" |
+          "InnerShadow"
   - name: transparency
     uid: word!Word.Interfaces.ShadowFormatData#transparency:member
     package: word!
     fullName: transparency
-    summary: Specifies the degree of transparency of the shadow as a value between 0.0 (opaque) and 1.0 (clear).
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the degree of transparency of the shadow as a value between 0.0
+      (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,11 +185,29 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the shape shadow type.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.ShadowType | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" | "Type42" | "Type43";'
+      content: >-
+        type?: Word.ShadowType | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4"
+        | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11"
+        | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" |
+        "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" |
+        "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" |
+        "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" |
+        "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" |
+        "Type42" | "Type43";
       return:
-        type: <xref uid="word!Word.ShadowType:enum" /> | "Mixed" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9" | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" | "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" | "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" | "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" | "Type40" | "Type41" | "Type42" | "Type43"
+        type: >-
+          <xref uid="word!Word.ShadowType:enum" /> | "Mixed" | "Type1" | "Type2"
+          | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9"
+          | "Type10" | "Type11" | "Type12" | "Type13" | "Type14" | "Type15" |
+          "Type16" | "Type17" | "Type18" | "Type19" | "Type20" | "Type21" |
+          "Type22" | "Type23" | "Type24" | "Type25" | "Type26" | "Type27" |
+          "Type28" | "Type29" | "Type30" | "Type31" | "Type32" | "Type33" |
+          "Type34" | "Type35" | "Type36" | "Type37" | "Type38" | "Type39" |
+          "Type40" | "Type41" | "Type42" | "Type43"

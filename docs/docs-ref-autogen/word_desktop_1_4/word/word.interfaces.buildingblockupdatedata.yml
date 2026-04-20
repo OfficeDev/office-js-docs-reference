@@ -3,9 +3,11 @@ name: Word.Interfaces.BuildingBlockUpdateData
 uid: word!Word.Interfaces.BuildingBlockUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockUpdateData
-summary: An interface for updating data on the `BuildingBlock` object, for use in `buildingBlock.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `BuildingBlock` object, for use in
+  `buildingBlock.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: description
     summary: Specifies the description for the building block.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,22 +31,30 @@ properties:
     uid: word!Word.Interfaces.BuildingBlockUpdateData#insertType:member
     package: word!
     fullName: insertType
-    summary: Specifies a `DocPartInsertType` value that represents how to insert the contents of the building block into the document.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `DocPartInsertType` value that represents how to insert the
+      contents of the building block into the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'insertType?: Word.DocPartInsertType | "Content" | "Paragraph" | "Page";'
       return:
-        type: <xref uid="word!Word.DocPartInsertType:enum" /> | "Content" | "Paragraph" | "Page"
+        type: >-
+          <xref uid="word!Word.DocPartInsertType:enum" /> | "Content" |
+          "Paragraph" | "Page"
   - name: name
     uid: word!Word.Interfaces.BuildingBlockUpdateData#name:member
     package: word!
     fullName: name
     summary: Specifies the name of the building block.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +66,10 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the contents of the building block.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

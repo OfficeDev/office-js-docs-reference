@@ -3,9 +3,11 @@ name: Word.Interfaces.BuildingBlockUpdateData
 uid: word!Word.Interfaces.BuildingBlockUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockUpdateData
-summary: An interface for updating data on the `BuildingBlock` object, for use in `buildingBlock.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `BuildingBlock` object, for use in
+  `buildingBlock.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

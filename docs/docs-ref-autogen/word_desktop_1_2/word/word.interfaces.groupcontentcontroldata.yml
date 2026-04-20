@@ -3,9 +3,11 @@ name: Word.Interfaces.GroupContentControlData
 uid: word!Word.Interfaces.GroupContentControlData:interface
 package: word!
 fullName: Word.Interfaces.GroupContentControlData
-summary: An interface describing the data returned by calling `groupContentControl.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `groupContentControl.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -3,9 +3,11 @@ name: Word.Interfaces.BuildingBlockCategoryData
 uid: word!Word.Interfaces.BuildingBlockCategoryData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockCategoryData
-summary: An interface describing the data returned by calling `buildingBlockCategory.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `buildingBlockCategory.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.BuildingBlockCategoryData#index:member
     package: word!
     fullName: index
-    summary: Returns the position of the `BuildingBlockCategory` object in a collection.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns the position of the `BuildingBlockCategory` object in a
+      collection.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +34,10 @@ properties:
     package: word!
     fullName: name
     summary: Returns the name of the `BuildingBlockCategory` object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

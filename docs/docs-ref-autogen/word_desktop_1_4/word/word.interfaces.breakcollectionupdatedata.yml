@@ -3,9 +3,11 @@ name: Word.Interfaces.BreakCollectionUpdateData
 uid: word!Word.Interfaces.BreakCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BreakCollectionUpdateData
-summary: An interface for updating data on the `BreakCollection` object, for use in `breakCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `BreakCollection` object, for use in
+  `breakCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

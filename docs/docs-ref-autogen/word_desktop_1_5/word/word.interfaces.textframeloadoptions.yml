@@ -3,9 +3,11 @@ name: Word.Interfaces.TextFrameLoadOptions
 uid: word!Word.Interfaces.TextFrameLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TextFrameLoadOptions
-summary: Represents the text frame of a [Word.Shape](xref:word!Word.Shape:class) object.
+summary: >-
+  Represents the text frame of a [Word.Shape](xref:word!Word.Shape:class)
+  object.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +17,11 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
-      the navigational properties (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,10 +33,12 @@ properties:
     package: word!
     fullName: autoSizeSetting
     summary: >-
-      Specifies the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text
-      to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+      Specifies the automatic sizing settings for the text frame. A text frame
+      can be set to automatically fit the text to the text frame, to
+      automatically fit the text frame to the text, or not perform any automatic
+      sizing.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +51,7 @@ properties:
     fullName: bottomMargin
     summary: Specifies the bottom margin, in points, of the text frame.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,9 +62,11 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#hasText:member
     package: word!
     fullName: hasText
-    summary: Returns `true` if the text frame contains text, otherwise, `false`<!-- -->.
+    summary: >-
+      Returns `true` if the text frame contains text, otherwise, `false`<!--
+      -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +79,7 @@ properties:
     fullName: leftMargin
     summary: Specifies the left margin, in points, of the text frame.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,9 +90,11 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#noTextRotation:member
     package: word!
     fullName: noTextRotation
-    summary: Specifies whether the text in the text frame shouldn't rotate when the shape is rotated.
+    summary: >-
+      Specifies whether the text in the text frame shouldn't rotate when the
+      shape is rotated.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,9 +105,11 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#orientation:member
     package: word!
     fullName: orientation
-    summary: Specifies the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
+    summary: >-
+      Specifies the angle to which the text is oriented for the text frame. See
+      `Word.ShapeTextOrientation` for details.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,7 +122,7 @@ properties:
     fullName: rightMargin
     summary: Specifies the right margin, in points, of the text frame.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +135,7 @@ properties:
     fullName: topMargin
     summary: Specifies the top margin, in points, of the text frame.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,9 +146,11 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: Specifies the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
+    summary: >-
+      Specifies the vertical alignment of the text frame. See
+      `Word.ShapeTextVerticalAlignment` for details.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +163,7 @@ properties:
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
