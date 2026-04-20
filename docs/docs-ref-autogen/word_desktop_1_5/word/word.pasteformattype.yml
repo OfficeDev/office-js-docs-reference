@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PasteFormatType
 summary: Specifies the type of formatting when paste to a document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Pastes a chart as an editable chart.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Chart"'
   - name: chartLinked
     uid: word!Word.PasteFormatType.chartLinked:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Pastes a chart with a link to the source data.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ChartLinked"'
   - name: chartPicture
     uid: word!Word.PasteFormatType.chartPicture:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Pastes a chart as a picture.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ChartPicture"'
   - name: formatOriginalFormatting
     uid: word!Word.PasteFormatType.formatOriginalFormatting:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Applies the original formatting of the pasted content.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"FormatOriginalFormatting"'
   - name: formatPlainText
     uid: word!Word.PasteFormatType.formatPlainText:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Pastes content as plain text.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"FormatPlainText"'
   - name: formatSurroundingFormattingWithEmphasis
     uid: word!Word.PasteFormatType.formatSurroundingFormattingWithEmphasis:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Applies surrounding formatting with emphasis.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"FormatSurroundingFormattingWithEmphasis"'
   - name: listCombineWithExistingList
     uid: word!Word.PasteFormatType.listCombineWithExistingList:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Combines the pasted list with an existing list.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ListCombineWithExistingList"'
   - name: listContinueNumbering
     uid: word!Word.PasteFormatType.listContinueNumbering:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Continues numbering from the previous list.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ListContinueNumbering"'
   - name: listDontMerge
     uid: word!Word.PasteFormatType.listDontMerge:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Prevents merging the pasted list with an existing list.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ListDontMerge"'
   - name: listRestartNumbering
     uid: word!Word.PasteFormatType.listRestartNumbering:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Restarts numbering for the new list.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ListRestartNumbering"'
   - name: pasteDefault
     uid: word!Word.PasteFormatType.pasteDefault:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Uses the default paste behavior.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"PasteDefault"'
   - name: singleCellTable
     uid: word!Word.PasteFormatType.singleCellTable:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Pastes a table into a single cell.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"SingleCellTable"'
   - name: singleCellText
     uid: word!Word.PasteFormatType.singleCellText:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Pastes text into a single cell.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"SingleCellText"'
   - name: tableAppendTable
     uid: word!Word.PasteFormatType.tableAppendTable:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Appends the pasted table to the existing table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"TableAppendTable"'
   - name: tableInsertAsRows
     uid: word!Word.PasteFormatType.tableInsertAsRows:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Inserts the pasted table as new rows.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"TableInsertAsRows"'
   - name: tableOriginalFormatting
     uid: word!Word.PasteFormatType.tableOriginalFormatting:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Inserts the pasted table with its original formatting.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"TableOriginalFormatting"'
   - name: tableOverwriteCells
     uid: word!Word.PasteFormatType.tableOverwriteCells:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Overwrites existing cells with the pasted table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"TableOverwriteCells"'
   - name: useDestinationStylesRecovery
     uid: word!Word.PasteFormatType.useDestinationStylesRecovery:member
@@ -151,5 +151,5 @@ fields:
     summary: |-
       Uses the destination styles for the pasted content.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"UseDestinationStylesRecovery"'

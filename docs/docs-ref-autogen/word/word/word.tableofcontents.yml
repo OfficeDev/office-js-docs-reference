@@ -448,19 +448,4 @@ methods:
         type: <xref uid="word!Word.TableOfContents:class" />
         description: ''
   - name: updatePageNumbers()
-    uid: word!Word.TableOfContents#updatePageNumbers:member(1)
-    package: word!
-    fullName: updatePageNumbers()
-    summary: Updates the entire table of contents.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'updatePageNumbers(): void;'
-      return:
-        type: void
-        description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+    uid: 

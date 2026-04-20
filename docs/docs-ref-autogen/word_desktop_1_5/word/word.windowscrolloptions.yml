@@ -3,11 +3,9 @@ name: Word.WindowScrollOptions
 uid: word!Word.WindowScrollOptions:interface
 package: word!
 fullName: Word.WindowScrollOptions
-summary: >-
-  The options that scrolls a window or pane by the specified number of units
-  defined by the calling method.
+summary: The options that scrolls a window or pane by the specified number of units defined by the calling method.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,12 +15,11 @@ properties:
     package: word!
     fullName: down
     summary: >-
-      If provided, specifies the number of units to scroll the window down. If
-      `down` and `up` are both provided, the contents of the window are scrolled
-      by the difference of the property values. For example, if `down` is 3 and
-      `up` is 6, the contents are scrolled up three units.
+      If provided, specifies the number of units to scroll the window down. If `down` and `up` are both provided, the
+      contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up`
+      is 6, the contents are scrolled up three units.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,13 +31,11 @@ properties:
     package: word!
     fullName: left
     summary: >-
-      If provided, specifies the number of screens to scroll the window to the
-      left. If `left` and `right` are both provided, the contents of the window
-      are scrolled by the difference of the property values. For example, if
-      `left` is 3 and `right` is 6, the contents are scrolled to the right three
-      screens.
+      If provided, specifies the number of screens to scroll the window to the left. If `left` and `right` are both
+      provided, the contents of the window are scrolled by the difference of the property values. For example, if `left`
+      is 3 and `right` is 6, the contents are scrolled to the right three screens.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,13 +47,11 @@ properties:
     package: word!
     fullName: right
     summary: >-
-      If provided, specifies the number of screens to scroll the window to the
-      right. If `left` and `right` are both provided, the contents of the window
-      are scrolled by the difference of the property values. For example, if
-      `left` is 3 and `right` is 6, the contents are scrolled to the right three
-      screens.
+      If provided, specifies the number of screens to scroll the window to the right. If `left` and `right` are both
+      provided, the contents of the window are scrolled by the difference of the property values. For example, if `left`
+      is 3 and `right` is 6, the contents are scrolled to the right three screens.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,12 +63,11 @@ properties:
     package: word!
     fullName: up
     summary: >-
-      If provided, specifies the number of units to scroll the window up. If
-      `down` and `up` are both provided, the contents of the window are scrolled
-      by the difference of the property values. For example, if `down` is 3 and
-      `up` is 6, the contents are scrolled up three units.
+      If provided, specifies the number of units to scroll the window up. If `down` and `up` are both provided, the
+      contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up`
+      is 6, the contents are scrolled up three units.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

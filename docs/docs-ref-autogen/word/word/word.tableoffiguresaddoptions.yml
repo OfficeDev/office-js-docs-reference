@@ -231,14 +231,4 @@ properties:
     summary: >-
       If provided, specifies whether entries in a table of figures should be
       formatted as hyperlinks when the document is published to the web. The
-      default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'useHyperlinksOnWeb?: boolean;'
-      return:
-        type: boolean
+      defaul

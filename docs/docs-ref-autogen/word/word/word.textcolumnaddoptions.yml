@@ -65,6 +65,4 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'width?: number;'
-      return:
-        type: number
+      cont

@@ -4,12 +4,11 @@ uid: word!Word.RelativeSize:enum
 package: word!
 fullName: Word.RelativeSize
 summary: >-
-  Represents what the horizontal or vertical size of a shape is relative to. For
-  more information about margins, see [Change the margins in your Word
-  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
-  -->.
+  Represents what the horizontal or vertical size of a shape is relative to. For more information about margins, see
+  [Change the margins in your Word
+  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +18,7 @@ fields:
     summary: |-
       Relative to bottom margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"BottomMargin"'
   - name: insideMargin
     uid: word!Word.RelativeSize.insideMargin:member
@@ -27,7 +26,7 @@ fields:
     summary: |-
       Relative to inside margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"InsideMargin"'
   - name: margin
     uid: word!Word.RelativeSize.margin:member
@@ -35,7 +34,7 @@ fields:
     summary: |-
       Relative to margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeSize.outsideMargin:member
@@ -43,7 +42,7 @@ fields:
     summary: |-
       Relative to outside margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeSize.page:member
@@ -51,7 +50,7 @@ fields:
     summary: |-
       Relative to page.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Page"'
   - name: topMargin
     uid: word!Word.RelativeSize.topMargin:member
@@ -59,5 +58,5 @@ fields:
     summary: |-
       Relative to top margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"TopMargin"'

@@ -3084,8 +3084,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference
-        | Excel.FunctionResult<any>): FunctionResult<number>;
+        datevalue(dateText: string | Excel.Range | Excel.RangeReference |
+        Excel.FunctionResult<any>): FunctionResult<number>;
       parameters:
         - id: dateText
           description: >-
@@ -3093,7 +3093,7 @@ methods:
             between 1/1/1900 or 1/1/1904 (depending on the workbook's date
             system) and 12/31/9999.
           type: >-
-            string | number | <xref uid="excel!Excel.Range:class" /> | <xref
+            string | <xref uid="excel!Excel.Range:class" /> | <xref
             uid="excel!Excel.RangeReference:interface" /> | <xref
             uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
       return:

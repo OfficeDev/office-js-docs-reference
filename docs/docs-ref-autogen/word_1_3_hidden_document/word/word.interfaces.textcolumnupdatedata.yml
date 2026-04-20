@@ -3,11 +3,9 @@ name: Word.Interfaces.TextColumnUpdateData
 uid: word!Word.Interfaces.TextColumnUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TextColumnUpdateData
-summary: >-
-  An interface for updating data on the `TextColumn` object, for use in
-  `textColumn.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TextColumn` object, for use in `textColumn.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

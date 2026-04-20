@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ShapeAutoSize
 summary: Determines the type of automatic sizing allowed.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       A combination of automatic sizing schemes are used.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeAutoSize.none:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       No autosizing.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"None"'
   - name: shapeToFitText
     uid: word!Word.ShapeAutoSize.shapeToFitText:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       The shape is adjusted to fit the text.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"ShapeToFitText"'
   - name: textToFitShape
     uid: word!Word.ShapeAutoSize.textToFitShape:member
@@ -39,5 +39,5 @@ fields:
     summary: |-
       The text is adjusted to fit the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"TextToFitShape"'

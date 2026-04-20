@@ -3,11 +3,9 @@ name: Word.Interfaces.CustomXmlNodeUpdateData
 uid: word!Word.Interfaces.CustomXmlNodeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlNode` object, for use in
-  `customXmlNode.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlNode` object, for use in `customXmlNode.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

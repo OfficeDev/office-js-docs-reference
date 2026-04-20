@@ -5,7 +5,7 @@ package: word!
 fullName: Word.CaptionPosition
 summary: Specifies the position of a caption relative to the object it describes.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Places the caption above the selected item.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Above"'
   - name: below
     uid: word!Word.CaptionPosition.below:member
@@ -23,5 +23,5 @@ fields:
     summary: |-
       Places the caption below the selected item.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Below"'

@@ -277,11 +277,4 @@ methods:
       effect.
     remarks: ''
 
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'untrack(): Word.TabStopCollection;'
-      return:
-        type: <xref uid="word!Word.TabStopCollection:class" />
-        description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+    isPreview: f

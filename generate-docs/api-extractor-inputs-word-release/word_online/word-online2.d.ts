@@ -4541,7 +4541,7 @@ export declare namespace Word {
          */
         schemaCollection: Word.CustomXmlSchemaCollection;
         /**
-         * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+         * Gets whether the `CustomXmlPart` is built-in.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.3]
@@ -37059,7 +37059,7 @@ export declare namespace Word {
             */
             schemaCollection?: Word.Interfaces.CustomXmlSchemaData[];
             /**
-             * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -44109,7 +44109,7 @@ export declare namespace Word {
             */
             documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-             * Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -44156,7 +44156,7 @@ export declare namespace Word {
             */
             documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * For EACH ITEM in the collection: Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
@@ -44203,7 +44203,7 @@ export declare namespace Word {
             */
             documentElement?: Word.Interfaces.CustomXmlNodeLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a value that indicates whether the `CustomXmlPart` is built-in.
+             * For EACH ITEM in the collection: Gets whether the `CustomXmlPart` is built-in.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]

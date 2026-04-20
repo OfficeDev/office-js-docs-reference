@@ -3,11 +3,9 @@ name: Word.WindowCloseOptions
 uid: word!Word.WindowCloseOptions:interface
 package: word!
 fullName: Word.WindowCloseOptions
-summary: >-
-  The options that define whether to save changes before closing and whether to
-  route the document.
+summary: The options that define whether to save changes before closing and whether to route the document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,10 @@ properties:
     package: word!
     fullName: routeDocument
     summary: >-
-      If provided, specifies whether to route the document to the next
-      recipient. If the document doesn't have a routing slip attached, this
-      property is ignored.
+      If provided, specifies whether to route the document to the next recipient. If the document doesn't have a routing
+      slip attached, this property is ignored.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,18 +30,13 @@ properties:
     package: word!
     fullName: saveChanges
     summary: >-
-      If provided, specifies the save action for the document. For available
-      values, see
+      If provided, specifies the save action for the document. For available values, see
       [Word.SaveConfiguration](xref:word!Word.SaveConfiguration:enum)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        saveChanges?: Word.SaveConfiguration | "DoNotSaveChanges" |
-        "SaveChanges" | "PromptToSaveChanges";
+      content: 'saveChanges?: Word.SaveConfiguration | "DoNotSaveChanges" | "SaveChanges" | "PromptToSaveChanges";'
       return:
-        type: >-
-          <xref uid="word!Word.SaveConfiguration:enum" /> | "DoNotSaveChanges" |
-          "SaveChanges" | "PromptToSaveChanges"
+        type: <xref uid="word!Word.SaveConfiguration:enum" /> | "DoNotSaveChanges" | "SaveChanges" | "PromptToSaveChanges"

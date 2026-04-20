@@ -3,11 +3,9 @@ name: Word.Interfaces.GlowFormatUpdateData
 uid: word!Word.Interfaces.GlowFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.GlowFormatUpdateData
-summary: >-
-  An interface for updating data on the `GlowFormat` object, for use in
-  `glowFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `GlowFormat` object, for use in `glowFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.GlowFormatUpdateData#color:member
     package: word!
     fullName: color
-    summary: >-
-      Returns a `ColorFormat` object that represents the color for a glow
-      effect.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ColorFormat` object that represents the color for a glow effect.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,8 @@ properties:
     package: word!
     fullName: radius
     summary: Specifies the length of the radius for a glow effect.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.GlowFormatUpdateData#transparency:member
     package: word!
     fullName: transparency
-    summary: >-
-      Specifies the degree of transparency for the glow effect as a value
-      between 0.0 (opaque) and 1.0 (clear).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the degree of transparency for the glow effect as a value between 0.0 (opaque) and 1.0 (clear).
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

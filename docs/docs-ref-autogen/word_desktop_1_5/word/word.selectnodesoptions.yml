@@ -4,11 +4,10 @@ uid: word!Word.SelectNodesOptions:interface
 package: word!
 fullName: Word.SelectNodesOptions
 summary: >-
-  Provides configuration options for the
-  [XmlNode.selectNodes](xref:word!Word.XmlNode:class) and
+  Provides configuration options for the [XmlNode.selectNodes](xref:word!Word.XmlNode:class) and
   [Document.selectNodes](xref:word!Word.Document:class) methods.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +16,9 @@ properties:
     uid: word!Word.SelectNodesOptions#fastSearchSkippingTextNodes:member
     package: word!
     fullName: fastSearchSkippingTextNodes
-    summary: >-
-      If provided, specifies whether to skip text nodes in the search. The
-      default value is `false`<!-- -->.
+    summary: If provided, specifies whether to skip text nodes in the search. The default value is `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,11 +29,9 @@ properties:
     uid: word!Word.SelectNodesOptions#prefixMapping:member
     package: word!
     fullName: prefixMapping
-    summary: >-
-      If provided, specifies the prefix mapping for the XPath expression. The
-      default value is "" (empty string).
+    summary: If provided, specifies the prefix mapping for the XPath expression. The default value is "" (empty string).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

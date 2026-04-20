@@ -3,11 +3,9 @@ name: Word.CritiqueColorScheme
 uid: word!Word.CritiqueColorScheme:enum
 package: word!
 fullName: Word.CritiqueColorScheme
-summary: >-
-  Represents the color scheme of a critique in the document, affecting underline
-  and highlight.
+summary: Represents the color scheme of a critique in the document, affecting underline and highlight.
 remarks: '\[Api set: WordApi 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Berry color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[Api set: WordApi 1.7\]
     value: '"Berry"'
   - name: blue
     uid: word!Word.CritiqueColorScheme.blue:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Blue color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[Api set: WordApi 1.7\]
     value: '"Blue"'
   - name: green
     uid: word!Word.CritiqueColorScheme.green:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Green color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[Api set: WordApi 1.7\]
     value: '"Green"'
   - name: lavender
     uid: word!Word.CritiqueColorScheme.lavender:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Lavender color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[Api set: WordApi 1.7\]
     value: '"Lavender"'
   - name: red
     uid: word!Word.CritiqueColorScheme.red:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       Red color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[Api set: WordApi 1.7\]
     value: '"Red"'

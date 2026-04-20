@@ -4,10 +4,8 @@ uid: word!Word.Interfaces.StyleLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.StyleLoadOptions
 summary: Represents a style in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.StyleLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,32 +27,22 @@ properties:
     uid: word!Word.Interfaces.StyleLoadOptions#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Specifies a `BorderCollection` object that represents all the borders for
-      the style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a `BorderCollection` object that represents all the borders for the style.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Word.Interfaces.BorderCollectionLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.BorderCollectionLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.BorderCollectionLoadOptions:interface" />
   - name: listTemplate
     uid: word!Word.Interfaces.StyleLoadOptions#listTemplate:member
     package: word!
     fullName: listTemplate
-    summary: >-
-      Gets a `ListTemplate` object that represents the list formatting for the
-      style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `ListTemplate` object that represents the list formatting for the style.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

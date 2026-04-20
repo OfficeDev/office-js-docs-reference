@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.PaneCollectionLoadOptions
 summary: Represents the collection of [Word.Pane](xref:word!Word.Pane:class) objects.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,11 +29,9 @@ properties:
     uid: word!Word.Interfaces.PaneCollectionLoadOptions#selection:member
     package: word!
     fullName: selection
-    summary: >-
-      For EACH ITEM in the collection: Returns a `Selection` object that
-      represents the current selection in the pane.
+    summary: 'For EACH ITEM in the collection: Returns a `Selection` object that represents the current selection in the pane.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

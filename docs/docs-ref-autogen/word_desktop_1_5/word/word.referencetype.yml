@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ReferenceType
 summary: Specifies the type of reference to insert.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Refers to a bookmark in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Bookmark"'
   - name: endnote
     uid: word!Word.ReferenceType.endnote:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Refers to an endnote in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Endnote"'
   - name: footnote
     uid: word!Word.ReferenceType.footnote:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Refers to a footnote in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Footnote"'
   - name: heading
     uid: word!Word.ReferenceType.heading:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Refers to a heading in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Heading"'
   - name: numberedItem
     uid: word!Word.ReferenceType.numberedItem:member
@@ -47,5 +47,5 @@ fields:
     summary: |-
       Refers to a numbered item in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"NumberedItem"'

@@ -80,5 +80,4 @@ properties:
         type: >-
           <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
           "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
-          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
-          "ParagraphFormat" | "Table" | "Item"
+        

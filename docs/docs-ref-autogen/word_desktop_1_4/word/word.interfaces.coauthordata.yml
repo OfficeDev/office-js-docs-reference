@@ -3,11 +3,9 @@ name: Word.Interfaces.CoauthorData
 uid: word!Word.Interfaces.CoauthorData:interface
 package: word!
 fullName: Word.Interfaces.CoauthorData
-summary: >-
-  An interface describing the data returned by calling `coauthor.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `coauthor.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: emailAddress
     summary: Gets the email address of the coauthor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +28,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the unique identifier for the `Coauthor` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +41,8 @@ properties:
     package: word!
     fullName: isMe
     summary: Gets whether this author represents the current user.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.CoauthorData#locks:member
     package: word!
     fullName: locks
-    summary: >-
-      Gets a `CoauthoringLockCollection` object that represents the locks in the
-      document that are associated with this coauthor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `CoauthoringLockCollection` object that represents the locks in the document that are associated with this coauthor.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,10 +67,8 @@ properties:
     package: word!
     fullName: name
     summary: Gets the display name of the coauthor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

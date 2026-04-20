@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.StyleData
 summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.StyleData#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Specifies a `BorderCollection` object that represents all the borders for
-      the style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a `BorderCollection` object that represents all the borders for the style.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.StyleData#listTemplate:member
     package: word!
     fullName: listTemplate
-    summary: >-
-      Gets a `ListTemplate` object that represents the list formatting for the
-      style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `ListTemplate` object that represents the list formatting for the style.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

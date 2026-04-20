@@ -4,22 +4,15 @@ uid: word!Word.Range:class
 package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
   // Gets the range of the first comment in the selected content.
-
   await Word.run(async (context) => {
     const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
     comment.load("contentRange");
@@ -36,9 +29,8 @@ remarks: >-
     const contentRange: Word.CommentContentRange = comment.contentRange;
     console.log("Comment content range:", contentRange);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -48,10 +40,8 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +52,9 @@ properties:
     uid: word!Word.Range#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,13 +65,9 @@ properties:
     uid: word!Word.Range#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,15 +78,9 @@ properties:
     uid: word!Word.Range#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range.
-      All hyperlinks in the range are deleted when you set a new hyperlink on
-      the range. Use a '\#' to separate the address part from the optional
-      location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location part.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,10 +92,8 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: Gets the collection of `InlinePicture` objects in the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,10 +105,8 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,10 +118,8 @@ properties:
     package: word!
     fullName: lists
     summary: Gets the collection of `List` objects in the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,15 +131,11 @@ properties:
     package: word!
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly
-      contained within this range aren't returned. From requirement set 1.3,
-      paragraphs in such tables are also returned.
-
+      Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,10 +147,8 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,26 +159,16 @@ properties:
     uid: word!Word.Range#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      Gets the currently supported content control that contains the range.
-      Throws an `ItemNotFound` error if there isn't a parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
-
-
-      // Toggles the isChecked property of the first checkbox content control
-      found in the selection.
-
+      // Toggles the isChecked property of the first checkbox content control found in the selection.
       await Word.run(async (context) => {
         const selectedRange: Word.Range = context.document.getSelection();
         let selectedContentControl = selectedRange
@@ -248,9 +204,8 @@ properties:
           `id: ${selectedContentControl.id} ... isChecked: ${selectedContentControl.checkboxContentControl.isChecked}`
         );
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -261,17 +216,9 @@ properties:
     uid: word!Word.Range#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      Gets the currently supported content control that contains the range. If
-      there isn't a parent content control, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the currently supported content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -282,13 +229,9 @@ properties:
     uid: word!Word.Range#parentTable:member
     package: word!
     fullName: parentTable
-    summary: >-
-      Gets the table that contains the range. Throws an `ItemNotFound` error if
-      it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,13 +242,9 @@ properties:
     uid: word!Word.Range#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains the range. Throws an `ItemNotFound`
-      error if it isn't contained in a table cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,17 +255,9 @@ properties:
     uid: word!Word.Range#parentTableCellOrNullObject:member
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: >-
-      Gets the table cell that contains the range. If it isn't contained in a
-      table cell, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,17 +268,9 @@ properties:
     uid: word!Word.Range#parentTableOrNullObject:member
     package: word!
     fullName: parentTableOrNullObject
-    summary: >-
-      Gets the table that contains the range. If it isn't contained in a table,
-      then this method will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -358,14 +281,9 @@ properties:
     uid: word!Word.Range#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -376,23 +294,14 @@ properties:
     uid: word!Word.Range#styleBuiltIn:member
     package: word!
     fullName: styleBuiltIn
-    summary: >-
-      Specifies the built-in style name for the range. Use this property for
-      built-in styles that are portable between locales. To use custom styles or
-      localized style names, see the "style" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
       await Word.run(async (context) => {
           const header: Word.Range = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
@@ -401,128 +310,21 @@ properties:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" |
-        "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
-        "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4"
-        | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header"
-        | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" |
-        "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" |
-        "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" |
-        "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" |
-        "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" |
-        "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
-        "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" |
-        "GridTable1Light_Accent1" | "GridTable1Light_Accent2" |
-        "GridTable1Light_Accent3" | "GridTable1Light_Accent4" |
-        "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
-        "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
-        "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" |
-        "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
-        "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" |
-        "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" |
-        "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
-        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" |
-        "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" |
-        "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" |
-        "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" |
-        "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
-        "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" |
-        "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
-        "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
-        "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" |
-        "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
-        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
-        "ListTable1Light" | "ListTable1Light_Accent1" |
-        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
-        "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
-        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" |
-        "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
-        "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" |
-        "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" |
-        "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" |
-        "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" |
-        "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" |
-        "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
-        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" |
-        "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
-        "ListTable5Dark_Accent6" | "ListTable6Colorful" |
-        "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
-        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
-        "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" |
-        "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
-        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
-        "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" |
-        "ListTable7Colorful_Accent6";
+      content: 'styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";'
       return:
-        type: >-
-          <xref uid="word!Word.BuiltInStyleName:enum" /> | "Other" | "Normal" |
-          "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
-          "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" |
-          "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" |
-          "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference"
-          | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" |
-          "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
-          "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
-          "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography"
-          | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" |
-          "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
-          "GridTable1Light" | "GridTable1Light_Accent1" |
-          "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
-          "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
-          "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" |
-          "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
-          "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" |
-          "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" |
-          "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" |
-          "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" |
-          "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" |
-          "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
-          "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" |
-          "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
-          "GridTable5Dark_Accent6" | "GridTable6Colorful" |
-          "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
-          "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
-          "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" |
-          "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
-          "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
-          "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" |
-          "GridTable7Colorful_Accent6" | "ListTable1Light" |
-          "ListTable1Light_Accent1" | "ListTable1Light_Accent2" |
-          "ListTable1Light_Accent3" | "ListTable1Light_Accent4" |
-          "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
-          "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
-          "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" |
-          "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
-          "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" |
-          "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" |
-          "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
-          "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" |
-          "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" |
-          "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" |
-          "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" |
-          "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
-          "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" |
-          "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
-          "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
-          "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" |
-          "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
-          "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+        type: <xref uid="word!Word.BuiltInStyleName:enum" /> | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
   - name: tables
     uid: word!Word.Range#tables:member
     package: word!
     fullName: tables
     summary: Gets the collection of `Table` objects in the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -534,10 +336,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -549,21 +349,14 @@ methods:
     uid: word!Word.Range#clear:member(1)
     package: word!
     fullName: clear()
-    summary: >-
-      Clears the contents of the `Range` object. The user can perform the undo
-      operation on the cleared content.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Clears the contents of the `Range` object. The user can perform the undo operation on the cleared content.
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -578,9 +371,8 @@ methods:
           await context.sync();
           console.log('Cleared the selection (range object)');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -593,23 +385,15 @@ methods:
     package: word!
     fullName: compareLocationWith(range)
     summary: Compares this range's location with another range's location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
-
-
-      // Compares the location of one paragraph in relation to another
-      paragraph.
-
+      // Compares the location of one paragraph in relation to another paragraph.
       await Word.run(async (context) => {
         const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
         paragraphs.load("items");
@@ -626,41 +410,31 @@ methods:
         const locationValue: Word.LocationRelation = comparedLocation.value;
         console.log(`Location of the first paragraph in relation to the second paragraph: ${locationValue}`);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        compareLocationWith(range: Word.Range):
-        OfficeExtension.ClientResult<Word.LocationRelation>;
+      content: 'compareLocationWith(range: Word.Range): OfficeExtension.ClientResult<Word.LocationRelation>;'
       parameters:
         - id: range
           description: The range to compare with this range.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
-          uid="word!Word.LocationRelation:enum" />&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.LocationRelation:enum" />&gt;
         description: ''
   - name: delete()
     uid: word!Word.Range#delete:member(1)
     package: word!
     fullName: delete()
     summary: Deletes the range and its content from the document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -675,9 +449,8 @@ methods:
           await context.sync();
           console.log('Deleted the selection (range object)');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -689,23 +462,14 @@ methods:
     uid: word!Word.Range#expandTo:member(1)
     package: word!
     fullName: expandTo(range)
-    summary: >-
-      Returns a new range that extends from this range in either direction to
-      cover another range. This range isn't changed. Throws an `ItemNotFound`
-      error if the two ranges don't have a union.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges don't have a union.
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
@@ -732,9 +496,8 @@ methods:
           console.log(sentencesToTheEndOfParagraph.items[i].text);
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -750,18 +513,9 @@ methods:
     uid: word!Word.Range#expandToOrNullObject:member(1)
     package: word!
     fullName: expandToOrNullObject(range)
-    summary: >-
-      Returns a new range that extends from this range in either direction to
-      cover another range. This range isn't changed. If the two ranges don't
-      have a union, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information,
-      see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. If the two ranges don't have a union, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -777,26 +531,14 @@ methods:
     uid: word!Word.Range#getHtml:member(1)
     package: word!
     fullName: getHtml()
-    summary: >-
-      Gets an HTML representation of the `Range` object. When rendered in a web
-      page or HTML viewer, the formatting will be a close, but not exact, match
-      for of the formatting of the document. This method doesn't return the
-      exact same HTML for the same document on different platforms (Windows,
-      Mac, Word on the web, etc.). If you need exact fidelity, or consistency
-      across platforms, use `Range.getOoxml()` and convert the returned XML to
-      HTML.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets an HTML representation of the `Range` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -811,9 +553,8 @@ methods:
           await context.sync();
           console.log('The HTML read from the document was: ' + html.value);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -826,16 +567,12 @@ methods:
     package: word!
     fullName: getHyperlinkRanges()
     summary: Gets hyperlink child ranges within the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       await Word.run(async (context) => {
           // Get the entire document body.
           const bodyRange = context.document.body.getRange(Word.RangeLocation.whole);
@@ -850,9 +587,8 @@ methods:
               console.log(linkRange.hyperlink);
           });
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -864,29 +600,19 @@ methods:
     uid: word!Word.Range#getNextTextRange:member(1)
     package: word!
     fullName: getNextTextRange(endingMarks, trimSpacing)
-    summary: >-
-      Gets the next text range by using punctuation marks and other ending
-      marks. Throws an `ItemNotFound` error if this text range is the last one.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next text range by using punctuation marks and other ending marks. Throws an `ItemNotFound` error if this text range is the last one.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getNextTextRange(endingMarks: string[], trimSpacing?: boolean):
-        Word.Range;
+      content: 'getNextTextRange(endingMarks: string[], trimSpacing?: boolean): Word.Range;'
       parameters:
         - id: endingMarks
           description: The punctuation marks and other ending marks as an array of strings.
           type: string[]
         - id: trimSpacing
-          description: >-
-            Optional. Indicates whether to trim spacing characters (spaces,
-            tabs, column breaks, and paragraph end marks) from the start and end
-            of the returned range. Default is `false` which indicates that
-            spacing characters at the start and end of the range are included.
+          description: Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is `false` which indicates that spacing characters at the start and end of the range are included.
           type: boolean
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -895,33 +621,19 @@ methods:
     uid: word!Word.Range#getNextTextRangeOrNullObject:member(1)
     package: word!
     fullName: getNextTextRangeOrNullObject(endingMarks, trimSpacing)
-    summary: >-
-      Gets the next text range by using punctuation marks and other ending
-      marks. If this text range is the last one, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next text range by using punctuation marks and other ending marks. If this text range is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?:
-        boolean): Word.Range;
+      content: 'getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean): Word.Range;'
       parameters:
         - id: endingMarks
           description: The punctuation marks and other ending marks as an array of strings.
           type: string[]
         - id: trimSpacing
-          description: >-
-            Optional. Indicates whether to trim spacing characters (spaces,
-            tabs, column breaks, and paragraph end marks) from the start and end
-            of the returned range. Default is `false` which indicates that
-            spacing characters at the start and end of the range are included.
+          description: Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is `false` which indicates that spacing characters at the start and end of the range are included.
           type: boolean
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -931,18 +643,13 @@ methods:
     package: word!
     fullName: getOoxml()
     summary: Gets the OOXML representation of the `Range` object.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -957,9 +664,8 @@ methods:
           await context.sync();
           console.log('The OOXML read from the document was:  ' + ooxml.value);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -971,25 +677,16 @@ methods:
     uid: word!Word.Range#getRange:member(1)
     package: word!
     fullName: getRange(rangeLocation)
-    summary: >-
-      Clones the `Range` object, or gets the starting or ending point of the
-      range as a new range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Clones the `Range` object, or gets the starting or ending point of the range as a new range.
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
 
       // Places a dropdown list content control at the end of the selection.
-
       await Word.run(async (context) => {
         let selection = context.document.getSelection();
         selection.getRange(Word.RangeLocation.end).insertContentControl(Word.ContentControlType.dropDownList);
@@ -997,29 +694,16 @@ methods:
 
         console.log("Dropdown list content control inserted at the end of the selection.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getRange(rangeLocation?: Word.RangeLocation.whole |
-        Word.RangeLocation.start | Word.RangeLocation.end |
-        Word.RangeLocation.after | Word.RangeLocation.content | "Whole" |
-        "Start" | "End" | "After" | "Content"): Word.Range;
+      content: 'getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | Word.RangeLocation.after | Word.RangeLocation.content | "Whole" | "Start" | "End" | "After" | "Content"): Word.Range;'
       parameters:
         - id: rangeLocation
-          description: >-
-            Optional. The range location must be `whole`<!-- -->, `start`<!--
-            -->, `end`<!-- -->, `after`<!-- -->, or `content`<!-- -->.
-          type: >-
-            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
-            uid="word!Word.RangeLocation.start:member" /> | <xref
-            uid="word!Word.RangeLocation.end:member" /> | <xref
-            uid="word!Word.RangeLocation.after:member" /> | <xref
-            uid="word!Word.RangeLocation.content:member" /> | "Whole" | "Start"
-            | "End" | "After" | "Content"
+          description: Optional. The range location must be `whole`<!-- -->, `start`<!-- -->, `end`<!-- -->, `after`<!-- -->, or `content`<!-- -->.
+          type: <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> | <xref uid="word!Word.RangeLocation.end:member" /> | <xref uid="word!Word.RangeLocation.after:member" /> | <xref uid="word!Word.RangeLocation.content:member" /> | "Whole" | "Start" | "End" | "After" | "Content"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -1027,22 +711,14 @@ methods:
     uid: word!Word.Range#getTextRanges:member(1)
     package: word!
     fullName: getTextRanges(endingMarks, trimSpacing)
-    summary: >-
-      Gets the text child ranges in the range by using punctuation marks and
-      other ending marks.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text child ranges in the range by using punctuation marks and other ending marks.
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
@@ -1069,26 +745,18 @@ methods:
           console.log(sentencesToTheEndOfParagraph.items[i].text);
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getTextRanges(endingMarks: string[], trimSpacing?: boolean):
-        Word.RangeCollection;
+      content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       parameters:
         - id: endingMarks
           description: The punctuation marks and other ending marks as an array of strings.
           type: string[]
         - id: trimSpacing
-          description: >-
-            Optional. Indicates whether to trim spacing characters (spaces,
-            tabs, column breaks, and paragraph end marks) from the start and end
-            of the ranges returned in the range collection. Default is `false`
-            which indicates that spacing characters at the start and end of the
-            ranges are included in the range collection.
+          description: Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is `false` which indicates that spacing characters at the start and end of the ranges are included in the range collection.
           type: boolean
       return:
         type: <xref uid="word!Word.RangeCollection:class" />
@@ -1098,18 +766,13 @@ methods:
     package: word!
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1124,29 +787,19 @@ methods:
           await context.sync();
           console.log('Inserted a page break after the selected text.');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext"
-        | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line",
-        insertLocation: Word.InsertLocation.before | Word.InsertLocation.after |
-        "Before" | "After"): void;
+      content: 'insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;'
       parameters:
         - id: breakType
           description: The break type to add.
-          type: >-
-            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" |
-            "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
-            "Line"
+          type: <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"
         - id: insertLocation
           description: The value must be `before` or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation.before:member" /> | <xref
-            uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
+          type: <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
       return:
         type: void
         description: ''
@@ -1155,37 +808,20 @@ methods:
     package: word!
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Range` object with a content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
-      `plainText` support was added in WordApi 1.5. `checkBox` support was added
-      in WordApi 1.7. `dropDownList` and `comboBox` support was added in WordApi
-      1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
-      `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
-      WordApiDesktop 1.3.
-
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5. `plainText` support was added in WordApi 1.5. `checkBox` support was added in WordApi 1.7. `dropDownList` and `comboBox` support was added in WordApi 1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->, `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in WordApiDesktop 1.3.
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
-
-
-      // Simulates creation of a template. First searches the document for
-      instances of the string "Contractor",
-
+      // Simulates creation of a template. First searches the document for instances of the string "Contractor",
       // then changes the format  of each search result,
-
       // then wraps each search result within a content control,
-
       // finally sets a tag and title property on each content control.
-
       await Word.run(async (context) => {
           const results: Word.RangeCollection = context.document.body.search("Contractor");
           results.load("font/bold");
@@ -1205,46 +841,16 @@ methods:
         }
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertContentControl(contentControlType?:
-        Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList
-        | Word.ContentControlType.comboBox |
-        Word.ContentControlType.buildingBlockGallery |
-        Word.ContentControlType.datePicker |
-        Word.ContentControlType.repeatingSection |
-        Word.ContentControlType.picture | Word.ContentControlType.group |
-        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
-        "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" |
-        "Group"): Word.ContentControl;
+      content: 'insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | Word.ContentControlType.buildingBlockGallery | Word.ContentControlType.datePicker | Word.ContentControlType.repeatingSection | Word.ContentControlType.picture | Word.ContentControlType.group | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" | "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" | "Group"): Word.ContentControl;'
       parameters:
         - id: contentControlType
-          description: >-
-            Optional. Content control type to insert. Must be `richText`<!--
-            -->, `plainText`<!-- -->, `checkBox`<!-- -->, `dropDownList`<!--
-            -->, `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->,
-            `datePicker`<!-- -->, `repeatingSection`<!-- -->, `picture`<!-- -->,
-            or `group`<!-- -->. The default is `richText`<!-- -->.
-          type: >-
-            <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
-            uid="word!Word.ContentControlType.plainText:member" /> | <xref
-            uid="word!Word.ContentControlType.checkBox:member" /> | <xref
-            uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
-            uid="word!Word.ContentControlType.comboBox:member" /> | <xref
-            uid="word!Word.ContentControlType.buildingBlockGallery:member" /> |
-            <xref uid="word!Word.ContentControlType.datePicker:member" /> |
-            <xref uid="word!Word.ContentControlType.repeatingSection:member" />
-            | <xref uid="word!Word.ContentControlType.picture:member" /> | <xref
-            uid="word!Word.ContentControlType.group:member" /> | "RichText" |
-            "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" |
-            "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" |
-            "Picture" | "Group"
+          description: Optional. Content control type to insert. Must be `richText`<!-- -->, `plainText`<!-- -->, `checkBox`<!-- -->, `dropDownList`<!-- -->, `comboBox`<!-- -->, `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->, `repeatingSection`<!-- -->, `picture`<!-- -->, or `group`<!-- -->. The default is `richText`<!-- -->.
+          type: <xref uid="word!Word.ContentControlType.richText:member" /> | <xref uid="word!Word.ContentControlType.plainText:member" /> | <xref uid="word!Word.ContentControlType.checkBox:member" /> | <xref uid="word!Word.ContentControlType.dropDownList:member" /> | <xref uid="word!Word.ContentControlType.comboBox:member" /> | <xref uid="word!Word.ContentControlType.buildingBlockGallery:member" /> | <xref uid="word!Word.ContentControlType.datePicker:member" /> | <xref uid="word!Word.ContentControlType.repeatingSection:member" /> | <xref uid="word!Word.ContentControlType.picture:member" /> | <xref uid="word!Word.ContentControlType.group:member" /> | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" | "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" | "Group"
       return:
         type: <xref uid="word!Word.ContentControl:class" />
         description: ''
@@ -1253,24 +859,15 @@ methods:
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      Insertion isn't supported if the document being inserted contains an
-      ActiveX control (likely in a form field). Consider replacing such a form
-      field with a content control or other option appropriate for your
-      scenario.
-
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1286,27 +883,19 @@ methods:
           await context.sync();
           console.log('Added base64 encoded text to the beginning of the range.');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocation:
-        Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"):
-        Word.Range;
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;'
       parameters:
         - id: base64File
           description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: >-
-            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
-            `before`<!-- -->, or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
-            "End" | "Before" | "After"
+          description: The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->, `before`<!-- -->, or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -1315,18 +904,13 @@ methods:
     package: word!
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1341,26 +925,19 @@ methods:
           await context.sync();
           console.log('HTML added to the beginning of the range.');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertHtml(html: string, insertLocation: Word.InsertLocation | "Replace"
-        | "Start" | "End" | "Before" | "After"): Word.Range;
+      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;'
       parameters:
         - id: html
           description: The HTML to be inserted.
           type: string
         - id: insertLocation
-          description: >-
-            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
-            `before`<!-- -->, or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
-            "End" | "Before" | "After"
+          description: The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->, `before`<!-- -->, or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -1369,19 +946,13 @@ methods:
     package: word!
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts a picture at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
       await Word.run(async (context) => {
         // Inserts a picture at the start of the first text box.
@@ -1402,36 +973,25 @@ methods:
         console.log("New inline picture properties:", newPic);
       });
 
-
       ...
 
-
       // Returns Base64-encoded image data for a sample picture.
-
       const pictureBase64 =
         "iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABblBMVEX+7tEYMFlyg5v8zHXVgof///+hrL77qRnIWmBEWXq6MDgAF0/i1b//8dP+79QKJ1MAIFL8yWpugZz/+O/VzLwzTXR+jaP/z3PHzdjNaWvuxrLFT1n8znmMj5fFTFP25OHlsa2wqqJGW3z7pgCbqsH936oAJlWnssRzdoLTd1HTfINbY3a7tar90IxJVG0AH1ecmJH//90gN14AFU/nxInHVFL80YQAD03qv3LUrm7cwJLWjoLenpPRdXTQgoj15sz+57/7szr93KPbiWjUvZj95LnwzLmMX3L8wmz7rib8xnP8vVz91JT8ukvTz8i8vsORkJKvsLIAD1YwPViWnKZVYHbKuqHjwo3ur2/Pa2O+OTvHVETfj1tybm9qdYlsYlnkmmC0DSPirpvAq4bj5uuono7tu5vgpannnX3ksbSKg5bv0tTclJNFSlyZgpPqwsW4go2giWdbWV+3mmuWgpRcbolURmReS2embHkiRHBcZ6c8AAALcElEQVR4nO3di1cTVx4H8AyThmC484ghFzSxEDRhIRBIMEFQA1qoVhAqYBVd3UXcri1dd7fLdv3vdybJZF73zr2TufPyzPccew49hc6H331nZkylkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiQJ6wj2hH1JLKNo9p/sPB3X8rRUau/f2f56kML2k/n5+XFDSjzPQ7l95+swCqkfzDy1hnwvsLT9FRCF1I7Fpwt5Xt6PfRmF1LgNaBAqZdyNOVGwV9AkVMq4HOshR3iCAJqFalONr1HYRQGtQsXYvrONmjKj7xae0QnVuaO0/OiOlv3lfqI/1G4jgShhnzkIfzA/SNgAUoR9d0I9g/9wfjtsAiHocWZ8fIckLA1ad/SFB0jg+AGxhgNi9FvpU7TwGVHIl+QdtR9GfaTBCOdlIlA18vIzPqZC8kCjZT+mQnI31HInpkKqRqpGDhtADFpInCuGaUe9hBghrY+Xo7+xQgnn6Xth9EuIFNIPpDDsy6cISvg1tVGkkB4Y+ZlCjU34lBrIx6GCitAyyOzQ8mA7+nvfXixCigV33xf9tYwWg3B+/ICnAsbrKFwY8nae0figwnsUq3M34aCXZ3KphPa12+2SWjYZ8v0Pa1Jx4ikRSv1ga2Y8MIzH6aElAqFlRn/vQApRuB32FXoNSRiTad0hgkxI5E8piLlOStgX6DnfkBL7GhKFsS8iUfhN2FfoNWRh3ItIFsa9iBTCmBeRQhjz4ZRGGG8ilfB6jInEVVs/MTj5xUWwbSbUQNs2sZ2Kq9EilNup60qj3LUReT4mR2u2mIXyrtbx2nbjI/P+HpgTFoAYAQlU0rYJYXt3aASg+/zw8HBlkKWFuW5UkSbhsnH4RHxIKmtG8Lx2O5PJ1DhxkKqUW+hGk2gUyoJxhniE6Ivq3W0pAXQPVZ8ibHJ6qrl6JImmGppnecwn3XK7kBnEJOS4zlEUiUZh2zzLI4UQrv94GyPkOnMRJBqFyzghHKa0qfvsQk6KYF90bqUb93pZ72fz5Y+3DT6EsFqOtlC+bh1pXjSUtCq3tWTMsQm5VrSF/L6lkW7k1KsWM7jUjq3CXCFyRPOMb9hpLCtfb7TUvlWsYYUrVqG0Gm2hgbjfG2c61erxCRaYqS2J1o4YvQnDuvJeFtSV9zbfm+7hSTGD9ykpVq3ChagL1d1T/09PWLeOLdZYW2kchKbpfZMgrJ2K8RbyPKGEmRMp5kL40mURYyckFzHTjLkQrpPGmhMx3kIe/kRqp0Ux3kKlihlnY+2EE6MuhIYgiPxL25LbTMysSFEWQvjq8evs3Wu9nL15+4MdCdsvM47IWvG42q9j9c+RE4JXr29ms5pQzVtkHX9S94aG2JrquxVRqlZz7yN2Og5SW6rPJLz2BtkdlbTXN797qeS7zXX7YqdWq2VOTk7monTzBgDgPNsHmoTX3qBO2TRmP9hJpA7lRyESzafUe/c1n0V47S/EARa3YL1dh2He/Q26W2ruq9l6kL059FmFZ7giDoW41Zwq5PmwgClw/lf1+hWaEYcQXntFEMrPpzEpqBuv0EabvjCLikX4liA0n6zazpFhWLdIK8KzW0hgNmsW/sm5mcrbzsLQnjQBXWvj1HPmRshjgdpnAaFNGVhg9pYLofFDOIxQDunzVHAfX0QXwhIeOPw8J6TBBnRx3dAy1jgKzUfjGGEUi3hGKZSBA1D/TC6sngjSVEQHIfxQdMqq9p2hPbgHtvAN9YxCCD/mxwzJ54tF5R/617owtOUpuDGDLeMZSQhLRybg2LTaMi/G8nYhXwpvdQpupO3LtsFwc+YkhHBzzAzUel8RIQzzOQYAUnvnWw9mZlTUayvy7q2zM5QQ8ptlsy9/oQkv8nZhyE+3DW/zAfAtopaPrUJlR/jRUr+xsaI+hBYRwohshQX4mCyEGx+KeatvLF/ThYd5uzC8jmiKAO/esscoVMq3auepmkNdOI0QRuSRKaH0LSJd/TrhehnpUzQZXVhDCGFEHijadVyZwPUjjE/l6N+AGEvD2yVaglxkDoRww8FnLGINNZaGN+ebIqCAg506/9HJZ+iJ06gZPyqDKRLYE9qmdxSxOH1xMV1ErdqULEdAiNsmCDLkV4m+HilvqrNJGIHjbzD76dMsKn+D6+QCIsGREgJwf1HPw59/1r/4+4eRfBETgu7lYlrL4rdq4/yk/YtfRgSahaEuagDozuq+AVAjPhyRFyEhAHuzi0bgJ22IWfQGtAoBMv7zurNpo08R/qoJL70BLUJQL6Pi72226kdOZp5F6AloERZazQlbpqqnPgoV36XNZ26lnoAWIcdxUxWrsMk1/LuBUfXZeL0MgJ8Xf2Eo/E20EyvqHUadgj+9EqTuY3zp9GUP+OuDf4w6TdiF8H3/Dg0TsTK4hao+TIGdEewh2qehoX7+fLn4T49A42nivxqDO1AmKjYgJw2TqzJ6EMWpgH2i4vc2ypiE8J4GNBArtjvfuX6bZQF0LKAWj53QKNxoGAwTlUpF+TOBBHLiCgMhuEHhS3tuowbhsemGvuaUOk0gfeptRl3vQEILZVZCTQj/bb0B3CmSZyElkEEJB0J9lKHKsddWCnCTIPsS9oXw95YboOe7/SgrmH7IoIR94T1XFeQ6k96EYJYOmPY62Q+FJVc+ruPxMRtlmqADMmmkPeFv1gdpHJuo5PmZRUpfOs2ihKrwvUR2aRE7np8epu2EbEZSVfh7jt7XWimseQVSt1FGwrF3tBNhVWotMVh1g0vqRvofJsA8uQ9WG51WQ1wp11k8we+ihGwGmjH0ytPYMnPlgrqEYbQxpO+FaY97+0GwS88h8HiS7UkUPZCJcILYRptsT6HcNFIWwisisMX4MWHq5QwbIRnI/HkTFyMpCyHJx2QjaBG6KKH3AwziMMrlmL9UohukcIrYRpmcVpjiaqDxKqyQp3rWw0ywQvIo48djbQEKKRZrnMTa51boZeGdJ48yXMOHd9eMKLyqTDVFlyEDOebDzIjCqymqy3UfyY+XSNEdAxuFFc4fnpIOe59bIdWAP3o8n4l6F141/QSKvjwB7Ur4vZ8+LgI1/K/PQC4XstB3INfw4wVS9EL/gf50RGrhH/4DlWbq8dMJL0K/B5l+/HifBKXwf4EAlTmf9QafWkixamYSH17lRicMpo1yfmzxKYVBAZWxhnkzpRIGVkI/3qlIJQzMp3RE5ntgGmFQA6ka9u9UpBH+ERzQh9e3gm52BpMh3c2NPZ6FPhy2YZ9pzmYfBN5IfRGe4x9Nz84EPJL69B4whyL2iEF2Q39Wpnv4h+97RNt7gOMmVIZTh3aaDW5N2k9zjb1QqSL+/QLZmYeBApVlmy9HGeD8wU1MsotBDjT+vShafb/ADXT2XNygxSKiL8A+Ep1uwMLqgh890SlBC7ncasDErqt7eVmkVQ70L2sBddc11J8EaeRGWtNKTfVvpAnqmT3gfsJfG6ZbKEujGTunC6tz1tQ93g2G/qUtub/CJS0LR3WQKo/WysWqZE/reG5Uo4qZLNh+aXNlcYQS6B/7VhvS0Vqd/nZZchrHIx0aK7q5dxNThoiDX5r3raF0nKqzHKtEyf1JDgD1d1+m7A8Asrqk47VyR29o3n9nbtd1im/CzMMLR1u/SUdAb/ar5aa7By0QV+HuTBVMXtl8GGGzezraxXXMQ3+96bGOru6bAnNf7D608EUBgNXWKGW0nJ8BsOCtY4or1Ise5f+FKCBa2HtqBUwujWK0LqbBXMfThqVFO56CbgUNtAulwa0uYK2wkHM9WtiOecHkqRcj7UEAqH+ZwkVq5fS0ctzRcPxSNhtzC5yUc5NO03pFABQWRFc/w5jWC7oSpgr4TJoDLB0JdCfdBfH7VSbh0UPbSqnj5XvxK2aXP4P485IkSZIkSZIkSZIkSZIkSZIkSZIk8Tv/B3bBREdOWYS3AAAAAElFTkSuQmCC";
       return pictureBase64;
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertInlinePictureFromBase64(base64EncodedImage: string,
-        insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" |
-        "Before" | "After"): Word.InlinePicture;
+      content: 'insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.InlinePicture;'
       parameters:
         - id: base64EncodedImage
           description: The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
-          description: >-
-            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
-            `before`<!-- -->, or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
-            "End" | "Before" | "After"
+          description: The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->, `before`<!-- -->, or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"
       return:
         type: <xref uid="word!Word.InlinePicture:class" />
         description: ''
@@ -1440,18 +1000,13 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1467,32 +1022,21 @@ methods:
           console.log('OOXML added to the beginning of the range.');
       });
 
-
-      // Read "Create better add-ins for Word with Office Open XML" for guidance
-      on working with OOXML.
-
-      //
-      https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-
+      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+      // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation |
-        "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;'
       parameters:
         - id: ooxml
           description: The OOXML to be inserted.
           type: string
         - id: insertLocation
-          description: >-
-            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
-            `before`<!-- -->, or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
-            "End" | "Before" | "After"
+          description: The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->, `before`<!-- -->, or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -1501,18 +1045,13 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1527,25 +1066,19 @@ methods:
           await context.sync();
           console.log('Paragraph added to the end of the range.');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertParagraph(paragraphText: string, insertLocation:
-        Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): Word.Paragraph;
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Paragraph;'
       parameters:
         - id: paragraphText
           description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
           description: The value must be `before` or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation.before:member" /> | <xref
-            uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
+          type: <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
       return:
         type: <xref uid="word!Word.Paragraph:class" />
         description: ''
@@ -1554,17 +1087,12 @@ methods:
     package: word!
     fullName: insertTable(rowCount, columnCount, insertLocation, values)
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertTable(rowCount: number, columnCount: number, insertLocation:
-        Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After", values?: string[][]): Word.Table;
+      content: 'insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", values?: string[][]): Word.Table;'
       parameters:
         - id: rowCount
           description: The number of rows in the table.
@@ -1574,13 +1102,9 @@ methods:
           type: number
         - id: insertLocation
           description: The value must be `before` or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation.before:member" /> | <xref
-            uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
+          type: <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type: string[][]
       return:
         type: <xref uid="word!Word.Table:class" />
@@ -1590,18 +1114,13 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: Inserts text at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1616,26 +1135,19 @@ methods:
           await context.sync();
           console.log('Text added to the end of the range.');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertText(text: string, insertLocation: Word.InsertLocation | "Replace"
-        | "Start" | "End" | "Before" | "After"): Word.Range;
+      content: 'insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;'
       parameters:
         - id: text
           description: Text to be inserted.
           type: string
         - id: insertLocation
-          description: >-
-            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
-            `before`<!-- -->, or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
-            "End" | "Before" | "After"
+          description: The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->, `before`<!-- -->, or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -1643,14 +1155,9 @@ methods:
     uid: word!Word.Range#intersectWith:member(1)
     package: word!
     fullName: intersectWith(range)
-    summary: >-
-      Returns a new range as the intersection of this range with another range.
-      This range isn't changed. Throws an `ItemNotFound` error if the two ranges
-      aren't overlapped or adjacent.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a new range as the intersection of this range with another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges aren't overlapped or adjacent.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1666,18 +1173,9 @@ methods:
     uid: word!Word.Range#intersectWithOrNullObject:member(1)
     package: word!
     fullName: intersectWithOrNullObject(range)
-    summary: >-
-      Returns a new range as the intersection of this range with another range.
-      This range isn't changed. If the two ranges aren't overlapped or adjacent,
-      then this method will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a new range as the intersection of this range with another range. This range isn't changed. If the two ranges aren't overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1693,11 +1191,9 @@ methods:
     uid: word!Word.Range#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1713,20 +1209,16 @@ methods:
     uid: word!Word.Range#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Range;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -1735,11 +1227,9 @@ methods:
     uid: word!Word.Range#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1750,11 +1240,7 @@ methods:
                 }): Word.Range;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -1767,13 +1253,9 @@ methods:
     uid: word!Word.Range#search:member(1)
     package: word!
     fullName: search(searchText, searchOptions)
-    summary: >-
-      Performs a search with the specified search options on the scope of the
-      `Range` object. The search results are a collection of `Range` objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Performs a search with the specified search options on the scope of the `Range` object. The search results are a collection of `Range` objects.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1811,18 +1293,13 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
@@ -1840,18 +1317,15 @@ methods:
           await context.sync();
           console.log('Selected the range.');
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'select(selectionMode?: Word.SelectionMode): void;'
       parameters:
         - id: selectionMode
-          description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!--
-            -->, or `end`<!-- -->. `select` is the default.
+          description: Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -1861,19 +1335,15 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
         - id: selectionMode
-          description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!--
-            -->, or `end`<!-- -->. `select` is the default.
+          description: Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -1882,29 +1352,19 @@ methods:
     uid: word!Word.Range#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RangeUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.RangeUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -1913,11 +1373,9 @@ methods:
     uid: word!Word.Range#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1934,40 +1392,24 @@ methods:
     package: word!
     fullName: split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)
     summary: Splits the range into child ranges by using delimiters.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?:
-        boolean, trimSpacing?: boolean): Word.RangeCollection;
+      content: 'split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;'
       parameters:
         - id: delimiters
           description: The delimiters as an array of strings.
           type: string[]
         - id: multiParagraphs
-          description: >-
-            Optional. Indicates whether a returned child range can cover
-            multiple paragraphs. Default is `false` which indicates that the
-            paragraph boundaries are also used as delimiters.
+          description: Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is `false` which indicates that the paragraph boundaries are also used as delimiters.
           type: boolean
         - id: trimDelimiters
-          description: >-
-            Optional. Indicates whether to trim delimiters from the ranges in
-            the range collection. Default is `false` which indicates that the
-            delimiters are included in the ranges returned in the range
-            collection.
+          description: Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is `false` which indicates that the delimiters are included in the ranges returned in the range collection.
           type: boolean
         - id: trimSpacing
-          description: >-
-            Optional. Indicates whether to trim spacing characters (spaces,
-            tabs, column breaks, and paragraph end marks) from the start and end
-            of the ranges returned in the range collection. Default is `false`
-            which indicates that spacing characters at the start and end of the
-            ranges are included in the range collection.
+          description: Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is `false` which indicates that spacing characters at the start and end of the ranges are included in the range collection.
           type: boolean
       return:
         type: <xref uid="word!Word.RangeCollection:class" />
@@ -1976,16 +1418,9 @@ methods:
     uid: word!Word.Range#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Range` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.RangeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Range` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1997,18 +1432,9 @@ methods:
     uid: word!Word.Range#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2020,16 +1446,9 @@ methods:
     uid: word!Word.Range#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

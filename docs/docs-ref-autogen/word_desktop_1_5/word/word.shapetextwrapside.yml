@@ -4,11 +4,10 @@ uid: word!Word.ShapeTextWrapSide:enum
 package: word!
 fullName: Word.ShapeTextWrapSide
 summary: >-
-  Specifies whether the document text should wrap on both sides of the specified
-  shape, on either the left or right side only, or on the side of the shape
-  that's farther from the respective page margin.
+  Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side
+  only, or on the side of the shape that's farther from the respective page margin.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -18,7 +17,7 @@ fields:
     summary: |-
       Both left and right sides of the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Both"'
   - name: largest
     uid: word!Word.ShapeTextWrapSide.largest:member
@@ -26,7 +25,7 @@ fields:
     summary: |-
       Side of the shape that's farther from the respective page margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Largest"'
   - name: left
     uid: word!Word.ShapeTextWrapSide.left:member
@@ -34,7 +33,7 @@ fields:
     summary: |-
       Left side of the shape only.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Left"'
   - name: none
     uid: word!Word.ShapeTextWrapSide.none:member
@@ -42,7 +41,7 @@ fields:
     summary: |-
       Has no wrap side property, such as those for inline shapes.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"None"'
   - name: right
     uid: word!Word.ShapeTextWrapSide.right:member
@@ -50,5 +49,5 @@ fields:
     summary: |-
       Right side of the shape only.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Right"'

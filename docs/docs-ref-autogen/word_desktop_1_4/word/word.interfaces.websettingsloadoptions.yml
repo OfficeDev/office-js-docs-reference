@@ -4,10 +4,8 @@ uid: word!Word.Interfaces.WebSettingsLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.WebSettingsLoadOptions
 summary: Represents the settings for saving a Word document as a webpage.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#allowPng:member
     package: word!
     fullName: allowPng
-    summary: >-
-      Specifies whether PNG is allowed as an image format when saving a document
-      as a webpage. Default is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#encoding:member
     package: word!
     fullName: encoding
-    summary: >-
-      Specifies the document encoding (code page or character set) to be used by
-      the web browser when viewing the saved document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#folderSuffix:member
     package: word!
     fullName: folderSuffix
-    summary: >-
-      Gets the folder suffix used when saving a document as a webpage with long
-      file names and supporting files in a separate folder.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#organizeInFolder:member
     package: word!
     fullName: organizeInFolder
-    summary: >-
-      Specifies whether supporting files are organized in a separate folder when
-      saving the document as a webpage. Default is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#pixelsPerInch:member
     package: word!
     fullName: pixelsPerInch
-    summary: >-
-      Specifies the density (pixels per inch) of graphics images and table cells
-      on a webpage.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,14 +92,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#relyOnCSS:member
     package: word!
     fullName: relyOnCSS
-    summary: >-
-      Specifies whether cascading style sheets (CSS) are used for font
-      formatting when viewing a saved document in a web browser. Default is
-      `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,17 +102,12 @@ properties:
       return:
         type: boolean
   - name: relyOnVectorMarkupLanguage
-    uid: >-
-      word!Word.Interfaces.WebSettingsLoadOptions#relyOnVectorMarkupLanguage:member
+    uid: word!Word.Interfaces.WebSettingsLoadOptions#relyOnVectorMarkupLanguage:member
     package: word!
     fullName: relyOnVectorMarkupLanguage
-    summary: >-
-      Specifies whether image files are not generated from drawing objects when
-      saving a document as a webpage. Default is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,13 +118,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#screenSize:member
     package: word!
     fullName: screenSize
-    summary: >-
-      Specifies the ideal minimum screen size (width by height, in pixels) for
-      viewing the saved document in a web browser.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,10 +132,8 @@ properties:
     package: word!
     fullName: targetBrowser
     summary: Specifies the target browser for documents viewed in a web browser.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,13 +144,9 @@ properties:
     uid: word!Word.Interfaces.WebSettingsLoadOptions#useLongFileNames:member
     package: word!
     fullName: useLongFileNames
-    summary: >-
-      Specifies whether long file names are used when saving the document as a
-      webpage. Default is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether long file names are used when saving the document as a webpage. Default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

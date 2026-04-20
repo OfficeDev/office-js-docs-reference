@@ -3,11 +3,9 @@ name: Word.Interfaces.ReadabilityStatisticData
 uid: word!Word.Interfaces.ReadabilityStatisticData:interface
 package: word!
 fullName: Word.Interfaces.ReadabilityStatisticData
-summary: >-
-  An interface describing the data returned by calling
-  `readabilityStatistic.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `readabilityStatistic.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

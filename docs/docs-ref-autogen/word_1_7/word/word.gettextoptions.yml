@@ -3,22 +3,14 @@ name: Word.GetTextOptions
 uid: word!Word.GetTextOptions:interface
 package: word!
 fullName: Word.GetTextOptions
-summary: >-
-  Specifies the options to be included in a
-  [Paragraph.getText](xref:word!Word.Paragraph:class) operation.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies the options to be included in a [Paragraph.getText](xref:word!Word.Paragraph:class) operation.
+remarks: |-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-text.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-text.yaml
 
   await Word.run(async (context) => {
     const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
@@ -31,9 +23,8 @@ remarks: >-
 
     console.log("Text:- " + text.value, "Including hidden text:- " + textIncludingHidden.value, "Including text marked as deleted:- " + textIncludingDeleted.value);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,13 +33,9 @@ properties:
     uid: word!Word.GetTextOptions#includeHiddenText:member
     package: word!
     fullName: includeHiddenText
-    summary: >-
-      If provided, specifies whether to include hidden text in the result of the
-      `Paragraph.getText` method. The default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to include hidden text in the result of the `Paragraph.getText` method. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,14 +46,9 @@ properties:
     uid: word!Word.GetTextOptions#includeTextMarkedAsDeleted:member
     package: word!
     fullName: includeTextMarkedAsDeleted
-    summary: >-
-      If provided, specifies whether to include text marked as deleted in the
-      result of the `Paragraph.getText` method. The default value is `false`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to include text marked as deleted in the result of the `Paragraph.getText` method. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

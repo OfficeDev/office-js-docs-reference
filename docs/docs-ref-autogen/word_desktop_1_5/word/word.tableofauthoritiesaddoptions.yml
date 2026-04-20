@@ -5,10 +5,9 @@ package: word!
 fullName: Word.TableOfAuthoritiesAddOptions
 summary: >-
   Specifies the options for adding to a
-  [Word.TableOfAuthoritiesCollection](xref:word!Word.TableOfAuthoritiesCollection:class)
-  object.
+  [Word.TableOfAuthoritiesCollection](xref:word!Word.TableOfAuthoritiesCollection:class) object.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,14 +17,12 @@ properties:
     package: word!
     fullName: bookmark
     summary: >-
-      If provided, specifies the string name of the bookmark from which to
-      collect entries for a table of authorities. When specified, the entries
-      are collected only from the portion of the document marked by the
-      bookmark. Corresponds to the `\b` switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->.
+      If provided, specifies the string name of the bookmark from which to collect entries for a table of authorities.
+      When specified, the entries are collected only from the portion of the document marked by the bookmark.
+      Corresponds to the `\b` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,17 +34,15 @@ properties:
     package: word!
     fullName: category
     summary: >-
-      If provided, specifies the category of entries to include in a table of
-      authorities. Corresponds to the `\c` switch for a [Table of Authorities
-      (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. Values 0 through 16 correspond to the items listed in the Category
-      box of the Table of Authorities dialog. To learn how to access this
+      If provided, specifies the category of entries to include in a table of authorities. Corresponds to the `\c`
+      switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. Values 0 through 16
+      correspond to the items listed in the Category box of the Table of Authorities dialog. To learn how to access this
       through the Word UI, see [Create a table of
-      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
-      -->. The default value is `1`<!-- -->.
+      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->. The default value
+      is `1`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,13 +54,12 @@ properties:
     package: word!
     fullName: entrySeparator
     summary: >-
-      If provided, specifies a separator of up to five characters. This appears
-      between the table of authorities entry and its page number. Corresponds to
-      the `\e` switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. If omitted, no separator is used.
+      If provided, specifies a separator of up to five characters. This appears between the table of authorities entry
+      and its page number. Corresponds to the `\e` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. If omitted, no
+      separator is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,13 +71,12 @@ properties:
     package: word!
     fullName: includeCategoryHeader
     summary: >-
-      If provided, specifies whether the category name for each group of entries
-      appears in a table of authorities (e.g., "Cases"). Corresponds to the `\h`
-      switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. The default value is `true`<!-- -->.
+      If provided, specifies whether the category name for each group of entries appears in a table of authorities
+      (e.g., "Cases"). Corresponds to the `\h` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. The default value is
+      `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,13 +88,12 @@ properties:
     package: word!
     fullName: keepEntryFormatting
     summary: >-
-      If provided, specifies whether the entries in a table of authorities are
-      displayed with their formatting in the table. Corresponds to the `\f`
-      switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. The default value is `true`<!-- -->.
+      If provided, specifies whether the entries in a table of authorities are displayed with their formatting in the
+      table. Corresponds to the `\f` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. The default value is
+      `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,13 +105,12 @@ properties:
     package: word!
     fullName: pageNumberSeparator
     summary: >-
-      If provided, specifies a separator of up to five characters. This appears
-      between individual page references in a table of authorities. Corresponds
-      to the `\l` switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. If omitted, a comma and a space (", ") are used.
+      If provided, specifies a separator of up to five characters. This appears between individual page references in a
+      table of authorities. Corresponds to the `\l` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. If omitted, a comma and
+      a space (", ") are used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,13 +122,12 @@ properties:
     package: word!
     fullName: pageRangeSeparator
     summary: >-
-      If provided, specifies a separator of up to five characters. This appears
-      between ranges of pages in a table of authorities. Corresponds to the `\g`
-      switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. If omitted, an en dash ("–") is used.
+      If provided, specifies a separator of up to five characters. This appears between ranges of pages in a table of
+      authorities. Corresponds to the `\g` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. If omitted, an en dash
+      ("–") is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,13 +139,11 @@ properties:
     package: word!
     fullName: sequenceName
     summary: >-
-      If provided, specifies the string that identifies the Sequence (SEQ) field
-      identifier for a table of authorities. Corresponds to the `\s` switch for
-      a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->.
+      If provided, specifies the string that identifies the Sequence (SEQ) field identifier for a table of authorities.
+      Corresponds to the `\s` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,13 +155,12 @@ properties:
     package: word!
     fullName: sequenceSeparator
     summary: >-
-      If provided, specifies a separator of up to five characters. This appears
-      between the sequence number and the page number in a table of authorities.
-      Corresponds to the `\d` switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. If omitted, a hyphen ("-") is used.
+      If provided, specifies a separator of up to five characters. This appears between the sequence number and the page
+      number in a table of authorities. Corresponds to the `\d` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. If omitted, a hyphen
+      ("-") is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,13 +172,12 @@ properties:
     package: word!
     fullName: usePassim
     summary: >-
-      If provided, specifies whether references to the same authority that are
-      repeated on five or more pages are replaced with "Passim". Corresponds to
-      the `\p` switch for a [Table of Authorities (TOA)
-      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
-      -->. The default value is `false`<!-- -->.
+      If provided, specifies whether references to the same authority that are repeated on five or more pages are
+      replaced with "Passim". Corresponds to the `\p` switch for a [Table of Authorities (TOA)
+      field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!-- -->. The default value is
+      `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

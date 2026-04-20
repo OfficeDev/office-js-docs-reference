@@ -3,11 +3,9 @@ name: Word.Interfaces.TextColumnData
 uid: word!Word.Interfaces.TextColumnData:interface
 package: word!
 fullName: Word.Interfaces.TextColumnData
-summary: >-
-  An interface describing the data returned by calling `textColumn.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `textColumn.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

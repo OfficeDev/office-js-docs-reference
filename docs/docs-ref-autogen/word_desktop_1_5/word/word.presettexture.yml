@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PresetTexture
 summary: Specifies texture to be used to fill a shape.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Represents a blue tissue paper texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"BlueTissuePaper"'
   - name: bouquet
     uid: word!Word.PresetTexture.bouquet:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Represents a bouquet texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Bouquet"'
   - name: brownMarble
     uid: word!Word.PresetTexture.brownMarble:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Represents a brown marble texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"BrownMarble"'
   - name: canvas
     uid: word!Word.PresetTexture.canvas:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Represents a canvas texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Canvas"'
   - name: cork
     uid: word!Word.PresetTexture.cork:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Represents a cork texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Cork"'
   - name: denim
     uid: word!Word.PresetTexture.denim:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Represents a denim texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Denim"'
   - name: fishFossil
     uid: word!Word.PresetTexture.fishFossil:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Represents a fish fossil texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"FishFossil"'
   - name: granite
     uid: word!Word.PresetTexture.granite:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Represents a granite texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Granite"'
   - name: greenMarble
     uid: word!Word.PresetTexture.greenMarble:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Represents a green marble texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"GreenMarble"'
   - name: mediumWood
     uid: word!Word.PresetTexture.mediumWood:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Represents a medium wood texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"MediumWood"'
   - name: mixed
     uid: word!Word.PresetTexture.mixed:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Represents a mixed texture type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: newsprint
     uid: word!Word.PresetTexture.newsprint:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Represents a newsprint texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Newsprint"'
   - name: oak
     uid: word!Word.PresetTexture.oak:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Represents an oak texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Oak"'
   - name: paperBag
     uid: word!Word.PresetTexture.paperBag:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Represents a paper bag texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"PaperBag"'
   - name: papyrus
     uid: word!Word.PresetTexture.papyrus:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Represents a papyrus texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Papyrus"'
   - name: parchment
     uid: word!Word.PresetTexture.parchment:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Represents a parchment texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Parchment"'
   - name: pinkTissuePaper
     uid: word!Word.PresetTexture.pinkTissuePaper:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Represents a pink tissue paper texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"PinkTissuePaper"'
   - name: purpleMesh
     uid: word!Word.PresetTexture.purpleMesh:member
@@ -151,7 +151,7 @@ fields:
     summary: |-
       Represents a purple mesh texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"PurpleMesh"'
   - name: recycledPaper
     uid: word!Word.PresetTexture.recycledPaper:member
@@ -159,7 +159,7 @@ fields:
     summary: |-
       Represents a recycled paper texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"RecycledPaper"'
   - name: sand
     uid: word!Word.PresetTexture.sand:member
@@ -167,7 +167,7 @@ fields:
     summary: |-
       Represents a sand texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Sand"'
   - name: stationery
     uid: word!Word.PresetTexture.stationery:member
@@ -175,7 +175,7 @@ fields:
     summary: |-
       Represents a stationery texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Stationery"'
   - name: walnut
     uid: word!Word.PresetTexture.walnut:member
@@ -183,7 +183,7 @@ fields:
     summary: |-
       Represents a walnut texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Walnut"'
   - name: waterDroplets
     uid: word!Word.PresetTexture.waterDroplets:member
@@ -191,7 +191,7 @@ fields:
     summary: |-
       Represents a water droplets texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"WaterDroplets"'
   - name: whiteMarble
     uid: word!Word.PresetTexture.whiteMarble:member
@@ -199,7 +199,7 @@ fields:
     summary: |-
       Represents a white marble texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"WhiteMarble"'
   - name: wovenMat
     uid: word!Word.PresetTexture.wovenMat:member
@@ -207,5 +207,5 @@ fields:
     summary: |-
       Represents a woven mat texture.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"WovenMat"'

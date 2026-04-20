@@ -3,11 +3,9 @@ name: Word.Interfaces.CoauthoringLockUpdateData
 uid: word!Word.Interfaces.CoauthoringLockUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockUpdateData
-summary: >-
-  An interface for updating data on the `CoauthoringLock` object, for use in
-  `coauthoringLock.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CoauthoringLock` object, for use in `coauthoringLock.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

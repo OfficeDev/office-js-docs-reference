@@ -4,10 +4,8 @@ uid: word!Word.Interfaces.FrameCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.FrameCollectionLoadOptions
 summary: Represents the collection of [Word.Frame](xref:word!Word.Frame:class) objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#height:member
     package: word!
     fullName: height
-    summary: >-
-      For EACH ITEM in the collection: Specifies the height (in points) of the
-      frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the height (in points) of the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#heightRule:member
     package: word!
     fullName: heightRule
-    summary: >-
-      For EACH ITEM in the collection: Specifies a `FrameSizeRule` value that
-      represents the rule for determining the height of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a `FrameSizeRule` value that represents the rule for determining the height of the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,17 +50,12 @@ properties:
       return:
         type: boolean
   - name: horizontalDistanceFromText
-    uid: >-
-      word!Word.Interfaces.FrameCollectionLoadOptions#horizontalDistanceFromText:member
+    uid: word!Word.Interfaces.FrameCollectionLoadOptions#horizontalDistanceFromText:member
     package: word!
     fullName: horizontalDistanceFromText
-    summary: >-
-      For EACH ITEM in the collection: Specifies the horizontal distance between
-      the frame and the surrounding text, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the horizontal distance between the frame and the surrounding text, in points.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,14 +66,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#horizontalPosition:member
     package: word!
     fullName: horizontalPosition
-    summary: >-
-      For EACH ITEM in the collection: Specifies the horizontal distance between
-      the edge of the frame and the item specified by the
-      `relativeHorizontalPosition` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the horizontal distance between the edge of the frame and the item specified by the `relativeHorizontalPosition` property.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,10 +80,8 @@ properties:
     package: word!
     fullName: lockAnchor
     summary: 'For EACH ITEM in the collection: Specifies if the frame is locked.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      For EACH ITEM in the collection: Returns a `Range` object that represents
-      the portion of the document that's contained within the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that''s contained within the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,17 +102,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
   - name: relativeHorizontalPosition
-    uid: >-
-      word!Word.Interfaces.FrameCollectionLoadOptions#relativeHorizontalPosition:member
+    uid: word!Word.Interfaces.FrameCollectionLoadOptions#relativeHorizontalPosition:member
     package: word!
     fullName: relativeHorizontalPosition
-    summary: >-
-      For EACH ITEM in the collection: Specifies the relative horizontal
-      position of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the relative horizontal position of the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,17 +115,12 @@ properties:
       return:
         type: boolean
   - name: relativeVerticalPosition
-    uid: >-
-      word!Word.Interfaces.FrameCollectionLoadOptions#relativeVerticalPosition:member
+    uid: word!Word.Interfaces.FrameCollectionLoadOptions#relativeVerticalPosition:member
     package: word!
     fullName: relativeVerticalPosition
-    summary: >-
-      For EACH ITEM in the collection: Specifies the relative vertical position
-      of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the relative vertical position of the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,32 +131,22 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      For EACH ITEM in the collection: Returns a `ShadingUniversal` object that
-      refers to the shading formatting for the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface" />
   - name: textWrap
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#textWrap:member
     package: word!
     fullName: textWrap
-    summary: >-
-      For EACH ITEM in the collection: Specifies if document text wraps around
-      the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies if document text wraps around the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,17 +154,12 @@ properties:
       return:
         type: boolean
   - name: verticalDistanceFromText
-    uid: >-
-      word!Word.Interfaces.FrameCollectionLoadOptions#verticalDistanceFromText:member
+    uid: word!Word.Interfaces.FrameCollectionLoadOptions#verticalDistanceFromText:member
     package: word!
     fullName: verticalDistanceFromText
-    summary: >-
-      For EACH ITEM in the collection: Specifies the vertical distance (in
-      points) between the frame and the surrounding text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the vertical distance (in points) between the frame and the surrounding text.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,14 +170,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#verticalPosition:member
     package: word!
     fullName: verticalPosition
-    summary: >-
-      For EACH ITEM in the collection: Specifies the vertical distance between
-      the edge of the frame and the item specified by the
-      `relativeVerticalPosition` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the vertical distance between the edge of the frame and the item specified by the `relativeVerticalPosition` property.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,13 +183,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#width:member
     package: word!
     fullName: width
-    summary: >-
-      For EACH ITEM in the collection: Specifies the width (in points) of the
-      frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the width (in points) of the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,13 +196,9 @@ properties:
     uid: word!Word.Interfaces.FrameCollectionLoadOptions#widthRule:member
     package: word!
     fullName: widthRule
-    summary: >-
-      For EACH ITEM in the collection: Specifies the rule used to determine the
-      width of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the rule used to determine the width of the frame.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

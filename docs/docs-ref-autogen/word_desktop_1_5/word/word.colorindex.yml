@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ColorIndex
 summary: Represents color index values in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Automatically determines the color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Auto"'
   - name: black
     uid: word!Word.ColorIndex.black:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Represents the color black.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Black"'
   - name: blue
     uid: word!Word.ColorIndex.blue:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Represents the color blue.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Blue"'
   - name: brightGreen
     uid: word!Word.ColorIndex.brightGreen:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Represents a bright green color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"BrightGreen"'
   - name: byAuthor
     uid: word!Word.ColorIndex.byAuthor:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Represents a color determined by the author.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"ByAuthor"'
   - name: classicBlue
     uid: word!Word.ColorIndex.classicBlue:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Represents a classic blue color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"ClassicBlue"'
   - name: classicRed
     uid: word!Word.ColorIndex.classicRed:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Represents a classic red color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"ClassicRed"'
   - name: darkBlue
     uid: word!Word.ColorIndex.darkBlue:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Represents a dark blue color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"DarkBlue"'
   - name: darkRed
     uid: word!Word.ColorIndex.darkRed:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Represents a dark red color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"DarkRed"'
   - name: darkYellow
     uid: word!Word.ColorIndex.darkYellow:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       Represents a dark yellow color.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"DarkYellow"'
   - name: gray25
     uid: word!Word.ColorIndex.gray25:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Represents a gray color with 25% intensity.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Gray25"'
   - name: gray50
     uid: word!Word.ColorIndex.gray50:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Represents a gray color with 50% intensity.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Gray50"'
   - name: green
     uid: word!Word.ColorIndex.green:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Represents the color green.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Green"'
   - name: pink
     uid: word!Word.ColorIndex.pink:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Represents the color pink.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Pink"'
   - name: red
     uid: word!Word.ColorIndex.red:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Represents the color red.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Red"'
   - name: teal
     uid: word!Word.ColorIndex.teal:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Represents the color teal.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Teal"'
   - name: turquoise
     uid: word!Word.ColorIndex.turquoise:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Represents the color turquoise.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Turquoise"'
   - name: violet
     uid: word!Word.ColorIndex.violet:member
@@ -151,7 +151,7 @@ fields:
     summary: |-
       Represents the color violet.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Violet"'
   - name: white
     uid: word!Word.ColorIndex.white:member
@@ -159,7 +159,7 @@ fields:
     summary: |-
       Represents the color white.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"White"'
   - name: yellow
     uid: word!Word.ColorIndex.yellow:member
@@ -167,5 +167,5 @@ fields:
     summary: |-
       Represents the color yellow.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Yellow"'

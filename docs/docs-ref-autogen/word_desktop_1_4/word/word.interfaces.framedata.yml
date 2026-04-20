@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FrameData
 summary: An interface describing the data returned by calling `frame.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.FrameData#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` object that represents all the
-      borders for the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `BorderUniversalCollection` object that represents all the borders for the frame.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +28,8 @@ properties:
     package: word!
     fullName: height
     summary: Specifies the height (in points) of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,32 +40,22 @@ properties:
     uid: word!Word.Interfaces.FrameData#heightRule:member
     package: word!
     fullName: heightRule
-    summary: >-
-      Specifies a `FrameSizeRule` value that represents the rule for determining
-      the height of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a `FrameSizeRule` value that represents the rule for determining the height of the frame.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'heightRule?: Word.FrameSizeRule | "Auto" | "AtLeast" | "Exact";'
       return:
-        type: >-
-          <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" |
-          "Exact"
+        type: <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" | "Exact"
   - name: horizontalDistanceFromText
     uid: word!Word.Interfaces.FrameData#horizontalDistanceFromText:member
     package: word!
     fullName: horizontalDistanceFromText
-    summary: >-
-      Specifies the horizontal distance between the frame and the surrounding
-      text, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal distance between the frame and the surrounding text, in points.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.FrameData#horizontalPosition:member
     package: word!
     fullName: horizontalPosition
-    summary: >-
-      Specifies the horizontal distance between the edge of the frame and the
-      item specified by the `relativeHorizontalPosition` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal distance between the edge of the frame and the item specified by the `relativeHorizontalPosition` property.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,10 +80,8 @@ properties:
     package: word!
     fullName: lockAnchor
     summary: Specifies if the frame is locked.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.FrameData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained within the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `Range` object that represents the portion of the document that's contained within the frame.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,54 +106,34 @@ properties:
     package: word!
     fullName: relativeHorizontalPosition
     summary: Specifies the relative horizontal position of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin"
-        | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
-        "InsideMargin" | "OutsideMargin";
+      content: 'relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";'
       return:
-        type: >-
-          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" |
-          "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
-          "InsideMargin" | "OutsideMargin"
+        type: <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
   - name: relativeVerticalPosition
     uid: word!Word.Interfaces.FrameData#relativeVerticalPosition:member
     package: word!
     fullName: relativeVerticalPosition
     summary: Specifies the relative vertical position of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" |
-        "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
-        "InsideMargin" | "OutsideMargin";
+      content: 'relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";'
       return:
-        type: >-
-          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" |
-          "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
-          "InsideMargin" | "OutsideMargin"
+        type: <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
   - name: shading
     uid: word!Word.Interfaces.FrameData#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns a `ShadingUniversal` object that refers to the shading formatting
-      for the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,10 +145,8 @@ properties:
     package: word!
     fullName: textWrap
     summary: Specifies if document text wraps around the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,13 +157,9 @@ properties:
     uid: word!Word.Interfaces.FrameData#verticalDistanceFromText:member
     package: word!
     fullName: verticalDistanceFromText
-    summary: >-
-      Specifies the vertical distance (in points) between the frame and the
-      surrounding text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical distance (in points) between the frame and the surrounding text.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,13 +170,9 @@ properties:
     uid: word!Word.Interfaces.FrameData#verticalPosition:member
     package: word!
     fullName: verticalPosition
-    summary: >-
-      Specifies the vertical distance between the edge of the frame and the item
-      specified by the `relativeVerticalPosition` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical distance between the edge of the frame and the item specified by the `relativeVerticalPosition` property.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,10 +184,8 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width (in points) of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -255,15 +197,11 @@ properties:
     package: word!
     fullName: widthRule
     summary: Specifies the rule used to determine the width of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'widthRule?: Word.FrameSizeRule | "Auto" | "AtLeast" | "Exact";'
       return:
-        type: >-
-          <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" |
-          "Exact"
+        type: <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" | "Exact"

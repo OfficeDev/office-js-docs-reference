@@ -4,13 +4,11 @@ uid: word!Word.BuiltInStyleName:enum
 package: word!
 fullName: Word.BuiltInStyleName
 summary: Represents the built-in style in a Word document.
-remarks: >-
+remarks: |-
   \[Api set: WordApi 1.3\]
 
-
-  Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi
-  1.5.
-
+  Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +18,7 @@ fields:
     summary: |-
       Bibliography style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Bibliography"'
   - name: bookTitle
     uid: word!Word.BuiltInStyleName.bookTitle:member
@@ -28,7 +26,7 @@ fields:
     summary: |-
       Book title style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"BookTitle"'
   - name: caption
     uid: word!Word.BuiltInStyleName.caption:member
@@ -36,7 +34,7 @@ fields:
     summary: |-
       Caption style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Caption"'
   - name: emphasis
     uid: word!Word.BuiltInStyleName.emphasis:member
@@ -44,7 +42,7 @@ fields:
     summary: |-
       Emphasis style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Emphasis"'
   - name: endnoteReference
     uid: word!Word.BuiltInStyleName.endnoteReference:member
@@ -52,7 +50,7 @@ fields:
     summary: |-
       Endnote reference style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"EndnoteReference"'
   - name: endnoteText
     uid: word!Word.BuiltInStyleName.endnoteText:member
@@ -60,7 +58,7 @@ fields:
     summary: |-
       Endnote text style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"EndnoteText"'
   - name: footer
     uid: word!Word.BuiltInStyleName.footer:member
@@ -68,7 +66,7 @@ fields:
     summary: |-
       Footer style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Footer"'
   - name: footnoteReference
     uid: word!Word.BuiltInStyleName.footnoteReference:member
@@ -76,7 +74,7 @@ fields:
     summary: |-
       Footnote reference style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"FootnoteReference"'
   - name: footnoteText
     uid: word!Word.BuiltInStyleName.footnoteText:member
@@ -84,7 +82,7 @@ fields:
     summary: |-
       Footnote text style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"FootnoteText"'
   - name: gridTable1Light
     uid: word!Word.BuiltInStyleName.gridTable1Light:member
@@ -92,7 +90,7 @@ fields:
     summary: |-
       Grid table light style 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light"'
   - name: gridTable1Light_Accent1
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent1:member
@@ -100,7 +98,7 @@ fields:
     summary: |-
       Grid table light style 1, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light_Accent1"'
   - name: gridTable1Light_Accent2
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent2:member
@@ -108,7 +106,7 @@ fields:
     summary: |-
       Grid table light style 1, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light_Accent2"'
   - name: gridTable1Light_Accent3
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent3:member
@@ -116,7 +114,7 @@ fields:
     summary: |-
       Grid table light style 1, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light_Accent3"'
   - name: gridTable1Light_Accent4
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent4:member
@@ -124,7 +122,7 @@ fields:
     summary: |-
       Grid table light style 1, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light_Accent4"'
   - name: gridTable1Light_Accent5
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent5:member
@@ -132,7 +130,7 @@ fields:
     summary: |-
       Grid table light style 1, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light_Accent5"'
   - name: gridTable1Light_Accent6
     uid: word!Word.BuiltInStyleName.gridTable1Light_Accent6:member
@@ -140,7 +138,7 @@ fields:
     summary: |-
       Grid table light style 1, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable1Light_Accent6"'
   - name: gridTable2
     uid: word!Word.BuiltInStyleName.gridTable2:member
@@ -148,7 +146,7 @@ fields:
     summary: |-
       Grid table style 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2"'
   - name: gridTable2_Accent1
     uid: word!Word.BuiltInStyleName.gridTable2_Accent1:member
@@ -156,7 +154,7 @@ fields:
     summary: |-
       Grid table style 2, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2_Accent1"'
   - name: gridTable2_Accent2
     uid: word!Word.BuiltInStyleName.gridTable2_Accent2:member
@@ -164,7 +162,7 @@ fields:
     summary: |-
       Grid table style 2, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2_Accent2"'
   - name: gridTable2_Accent3
     uid: word!Word.BuiltInStyleName.gridTable2_Accent3:member
@@ -172,7 +170,7 @@ fields:
     summary: |-
       Grid table style 2, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2_Accent3"'
   - name: gridTable2_Accent4
     uid: word!Word.BuiltInStyleName.gridTable2_Accent4:member
@@ -180,7 +178,7 @@ fields:
     summary: |-
       Grid table style 2, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2_Accent4"'
   - name: gridTable2_Accent5
     uid: word!Word.BuiltInStyleName.gridTable2_Accent5:member
@@ -188,7 +186,7 @@ fields:
     summary: |-
       Grid table style 2, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2_Accent5"'
   - name: gridTable2_Accent6
     uid: word!Word.BuiltInStyleName.gridTable2_Accent6:member
@@ -196,7 +194,7 @@ fields:
     summary: |-
       Grid table style 2, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable2_Accent6"'
   - name: gridTable3
     uid: word!Word.BuiltInStyleName.gridTable3:member
@@ -204,7 +202,7 @@ fields:
     summary: |-
       Grid table style 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3"'
   - name: gridTable3_Accent1
     uid: word!Word.BuiltInStyleName.gridTable3_Accent1:member
@@ -212,7 +210,7 @@ fields:
     summary: |-
       Grid table style 3, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3_Accent1"'
   - name: gridTable3_Accent2
     uid: word!Word.BuiltInStyleName.gridTable3_Accent2:member
@@ -220,7 +218,7 @@ fields:
     summary: |-
       Grid table style 3, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3_Accent2"'
   - name: gridTable3_Accent3
     uid: word!Word.BuiltInStyleName.gridTable3_Accent3:member
@@ -228,7 +226,7 @@ fields:
     summary: |-
       Grid table style 3, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3_Accent3"'
   - name: gridTable3_Accent4
     uid: word!Word.BuiltInStyleName.gridTable3_Accent4:member
@@ -236,7 +234,7 @@ fields:
     summary: |-
       Grid table style 3, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3_Accent4"'
   - name: gridTable3_Accent5
     uid: word!Word.BuiltInStyleName.gridTable3_Accent5:member
@@ -244,7 +242,7 @@ fields:
     summary: |-
       Grid table style 3, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3_Accent5"'
   - name: gridTable3_Accent6
     uid: word!Word.BuiltInStyleName.gridTable3_Accent6:member
@@ -252,7 +250,7 @@ fields:
     summary: |-
       Grid table style 3, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable3_Accent6"'
   - name: gridTable4
     uid: word!Word.BuiltInStyleName.gridTable4:member
@@ -260,7 +258,7 @@ fields:
     summary: |-
       Grid table style 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4"'
   - name: gridTable4_Accent1
     uid: word!Word.BuiltInStyleName.gridTable4_Accent1:member
@@ -268,7 +266,7 @@ fields:
     summary: |-
       Grid table style 4, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4_Accent1"'
   - name: gridTable4_Accent2
     uid: word!Word.BuiltInStyleName.gridTable4_Accent2:member
@@ -276,7 +274,7 @@ fields:
     summary: |-
       Grid table style 4, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4_Accent2"'
   - name: gridTable4_Accent3
     uid: word!Word.BuiltInStyleName.gridTable4_Accent3:member
@@ -284,7 +282,7 @@ fields:
     summary: |-
       Grid table style 4, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4_Accent3"'
   - name: gridTable4_Accent4
     uid: word!Word.BuiltInStyleName.gridTable4_Accent4:member
@@ -292,7 +290,7 @@ fields:
     summary: |-
       Grid table style 4, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4_Accent4"'
   - name: gridTable4_Accent5
     uid: word!Word.BuiltInStyleName.gridTable4_Accent5:member
@@ -300,7 +298,7 @@ fields:
     summary: |-
       Grid table style 4, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4_Accent5"'
   - name: gridTable4_Accent6
     uid: word!Word.BuiltInStyleName.gridTable4_Accent6:member
@@ -308,7 +306,7 @@ fields:
     summary: |-
       Grid table style 4, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable4_Accent6"'
   - name: gridTable5Dark
     uid: word!Word.BuiltInStyleName.gridTable5Dark:member
@@ -316,7 +314,7 @@ fields:
     summary: |-
       Grid table dark style 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark"'
   - name: gridTable5Dark_Accent1
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent1:member
@@ -324,7 +322,7 @@ fields:
     summary: |-
       Grid table dark style 5, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark_Accent1"'
   - name: gridTable5Dark_Accent2
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent2:member
@@ -332,7 +330,7 @@ fields:
     summary: |-
       Grid table dark style 5, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark_Accent2"'
   - name: gridTable5Dark_Accent3
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent3:member
@@ -340,7 +338,7 @@ fields:
     summary: |-
       Grid table dark style 5, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark_Accent3"'
   - name: gridTable5Dark_Accent4
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent4:member
@@ -348,7 +346,7 @@ fields:
     summary: |-
       Grid table dark style 5, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark_Accent4"'
   - name: gridTable5Dark_Accent5
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent5:member
@@ -356,7 +354,7 @@ fields:
     summary: |-
       Grid table dark style 5, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark_Accent5"'
   - name: gridTable5Dark_Accent6
     uid: word!Word.BuiltInStyleName.gridTable5Dark_Accent6:member
@@ -364,7 +362,7 @@ fields:
     summary: |-
       Grid table dark style 5, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable5Dark_Accent6"'
   - name: gridTable6Colorful
     uid: word!Word.BuiltInStyleName.gridTable6Colorful:member
@@ -372,7 +370,7 @@ fields:
     summary: |-
       Grid table colorful style 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful"'
   - name: gridTable6Colorful_Accent1
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent1:member
@@ -380,7 +378,7 @@ fields:
     summary: |-
       Grid table colorful style 6, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful_Accent1"'
   - name: gridTable6Colorful_Accent2
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent2:member
@@ -388,7 +386,7 @@ fields:
     summary: |-
       Grid table colorful style 6, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful_Accent2"'
   - name: gridTable6Colorful_Accent3
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent3:member
@@ -396,7 +394,7 @@ fields:
     summary: |-
       Grid table colorful style 6, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful_Accent3"'
   - name: gridTable6Colorful_Accent4
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent4:member
@@ -404,7 +402,7 @@ fields:
     summary: |-
       Grid table colorful style 6, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful_Accent4"'
   - name: gridTable6Colorful_Accent5
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent5:member
@@ -412,7 +410,7 @@ fields:
     summary: |-
       Grid table colorful style 6, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful_Accent5"'
   - name: gridTable6Colorful_Accent6
     uid: word!Word.BuiltInStyleName.gridTable6Colorful_Accent6:member
@@ -420,7 +418,7 @@ fields:
     summary: |-
       Grid table colorful style 6, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable6Colorful_Accent6"'
   - name: gridTable7Colorful
     uid: word!Word.BuiltInStyleName.gridTable7Colorful:member
@@ -428,7 +426,7 @@ fields:
     summary: |-
       Grid table colorful style 7.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful"'
   - name: gridTable7Colorful_Accent1
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent1:member
@@ -436,7 +434,7 @@ fields:
     summary: |-
       Grid table colorful style 7, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful_Accent1"'
   - name: gridTable7Colorful_Accent2
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent2:member
@@ -444,7 +442,7 @@ fields:
     summary: |-
       Grid table colorful style 7, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful_Accent2"'
   - name: gridTable7Colorful_Accent3
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent3:member
@@ -452,7 +450,7 @@ fields:
     summary: |-
       Grid table colorful style 7, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful_Accent3"'
   - name: gridTable7Colorful_Accent4
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent4:member
@@ -460,7 +458,7 @@ fields:
     summary: |-
       Grid table colorful style 7, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful_Accent4"'
   - name: gridTable7Colorful_Accent5
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent5:member
@@ -468,7 +466,7 @@ fields:
     summary: |-
       Grid table colorful style 7, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful_Accent5"'
   - name: gridTable7Colorful_Accent6
     uid: word!Word.BuiltInStyleName.gridTable7Colorful_Accent6:member
@@ -476,7 +474,7 @@ fields:
     summary: |-
       Grid table colorful style 7, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"GridTable7Colorful_Accent6"'
   - name: header
     uid: word!Word.BuiltInStyleName.header:member
@@ -484,7 +482,7 @@ fields:
     summary: |-
       Header style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Header"'
   - name: heading1
     uid: word!Word.BuiltInStyleName.heading1:member
@@ -492,7 +490,7 @@ fields:
     summary: |-
       Heading 1 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading1"'
   - name: heading2
     uid: word!Word.BuiltInStyleName.heading2:member
@@ -500,7 +498,7 @@ fields:
     summary: |-
       Heading 2 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading2"'
   - name: heading3
     uid: word!Word.BuiltInStyleName.heading3:member
@@ -508,7 +506,7 @@ fields:
     summary: |-
       Heading 3 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading3"'
   - name: heading4
     uid: word!Word.BuiltInStyleName.heading4:member
@@ -516,7 +514,7 @@ fields:
     summary: |-
       Heading 4 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading4"'
   - name: heading5
     uid: word!Word.BuiltInStyleName.heading5:member
@@ -524,7 +522,7 @@ fields:
     summary: |-
       Heading 5 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading5"'
   - name: heading6
     uid: word!Word.BuiltInStyleName.heading6:member
@@ -532,7 +530,7 @@ fields:
     summary: |-
       Heading 6 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading6"'
   - name: heading7
     uid: word!Word.BuiltInStyleName.heading7:member
@@ -540,7 +538,7 @@ fields:
     summary: |-
       Heading 7 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading7"'
   - name: heading8
     uid: word!Word.BuiltInStyleName.heading8:member
@@ -548,7 +546,7 @@ fields:
     summary: |-
       Heading 8 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading8"'
   - name: heading9
     uid: word!Word.BuiltInStyleName.heading9:member
@@ -556,7 +554,7 @@ fields:
     summary: |-
       Heading 9 style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Heading9"'
   - name: hyperlink
     uid: word!Word.BuiltInStyleName.hyperlink:member
@@ -564,7 +562,7 @@ fields:
     summary: |-
       Hyperlink style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Hyperlink"'
   - name: intenseEmphasis
     uid: word!Word.BuiltInStyleName.intenseEmphasis:member
@@ -572,7 +570,7 @@ fields:
     summary: |-
       Intense emphasis style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"IntenseEmphasis"'
   - name: intenseQuote
     uid: word!Word.BuiltInStyleName.intenseQuote:member
@@ -580,7 +578,7 @@ fields:
     summary: |-
       Intense quote style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"IntenseQuote"'
   - name: intenseReference
     uid: word!Word.BuiltInStyleName.intenseReference:member
@@ -588,7 +586,7 @@ fields:
     summary: |-
       Intense reference style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"IntenseReference"'
   - name: listParagraph
     uid: word!Word.BuiltInStyleName.listParagraph:member
@@ -596,7 +594,7 @@ fields:
     summary: |-
       List paragraph style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListParagraph"'
   - name: listTable1Light
     uid: word!Word.BuiltInStyleName.listTable1Light:member
@@ -604,7 +602,7 @@ fields:
     summary: |-
       List table light style 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light"'
   - name: listTable1Light_Accent1
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent1:member
@@ -612,7 +610,7 @@ fields:
     summary: |-
       List table light style 1, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light_Accent1"'
   - name: listTable1Light_Accent2
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent2:member
@@ -620,7 +618,7 @@ fields:
     summary: |-
       List table light style 1, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light_Accent2"'
   - name: listTable1Light_Accent3
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent3:member
@@ -628,7 +626,7 @@ fields:
     summary: |-
       List table light style 1, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light_Accent3"'
   - name: listTable1Light_Accent4
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent4:member
@@ -636,7 +634,7 @@ fields:
     summary: |-
       List table light style 1, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light_Accent4"'
   - name: listTable1Light_Accent5
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent5:member
@@ -644,7 +642,7 @@ fields:
     summary: |-
       List table light style 1, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light_Accent5"'
   - name: listTable1Light_Accent6
     uid: word!Word.BuiltInStyleName.listTable1Light_Accent6:member
@@ -652,7 +650,7 @@ fields:
     summary: |-
       List table light style 1, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable1Light_Accent6"'
   - name: listTable2
     uid: word!Word.BuiltInStyleName.listTable2:member
@@ -660,7 +658,7 @@ fields:
     summary: |-
       List table style 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2"'
   - name: listTable2_Accent1
     uid: word!Word.BuiltInStyleName.listTable2_Accent1:member
@@ -668,7 +666,7 @@ fields:
     summary: |-
       List table style 2, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2_Accent1"'
   - name: listTable2_Accent2
     uid: word!Word.BuiltInStyleName.listTable2_Accent2:member
@@ -676,7 +674,7 @@ fields:
     summary: |-
       List table style 2, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2_Accent2"'
   - name: listTable2_Accent3
     uid: word!Word.BuiltInStyleName.listTable2_Accent3:member
@@ -684,7 +682,7 @@ fields:
     summary: |-
       List table style 2, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2_Accent3"'
   - name: listTable2_Accent4
     uid: word!Word.BuiltInStyleName.listTable2_Accent4:member
@@ -692,7 +690,7 @@ fields:
     summary: |-
       List table style 2, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2_Accent4"'
   - name: listTable2_Accent5
     uid: word!Word.BuiltInStyleName.listTable2_Accent5:member
@@ -700,7 +698,7 @@ fields:
     summary: |-
       List table style 2, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2_Accent5"'
   - name: listTable2_Accent6
     uid: word!Word.BuiltInStyleName.listTable2_Accent6:member
@@ -708,7 +706,7 @@ fields:
     summary: |-
       List table style 2, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable2_Accent6"'
   - name: listTable3
     uid: word!Word.BuiltInStyleName.listTable3:member
@@ -716,7 +714,7 @@ fields:
     summary: |-
       List table style 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3"'
   - name: listTable3_Accent1
     uid: word!Word.BuiltInStyleName.listTable3_Accent1:member
@@ -724,7 +722,7 @@ fields:
     summary: |-
       List table style 3, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3_Accent1"'
   - name: listTable3_Accent2
     uid: word!Word.BuiltInStyleName.listTable3_Accent2:member
@@ -732,7 +730,7 @@ fields:
     summary: |-
       List table style 3, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3_Accent2"'
   - name: listTable3_Accent3
     uid: word!Word.BuiltInStyleName.listTable3_Accent3:member
@@ -740,7 +738,7 @@ fields:
     summary: |-
       List table style 3, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3_Accent3"'
   - name: listTable3_Accent4
     uid: word!Word.BuiltInStyleName.listTable3_Accent4:member
@@ -748,7 +746,7 @@ fields:
     summary: |-
       List table style 3, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3_Accent4"'
   - name: listTable3_Accent5
     uid: word!Word.BuiltInStyleName.listTable3_Accent5:member
@@ -756,7 +754,7 @@ fields:
     summary: |-
       List table style 3, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3_Accent5"'
   - name: listTable3_Accent6
     uid: word!Word.BuiltInStyleName.listTable3_Accent6:member
@@ -764,7 +762,7 @@ fields:
     summary: |-
       List table style 3, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable3_Accent6"'
   - name: listTable4
     uid: word!Word.BuiltInStyleName.listTable4:member
@@ -772,7 +770,7 @@ fields:
     summary: |-
       List table style 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4"'
   - name: listTable4_Accent1
     uid: word!Word.BuiltInStyleName.listTable4_Accent1:member
@@ -780,7 +778,7 @@ fields:
     summary: |-
       List table style 4, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4_Accent1"'
   - name: listTable4_Accent2
     uid: word!Word.BuiltInStyleName.listTable4_Accent2:member
@@ -788,7 +786,7 @@ fields:
     summary: |-
       List table style 4, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4_Accent2"'
   - name: listTable4_Accent3
     uid: word!Word.BuiltInStyleName.listTable4_Accent3:member
@@ -796,7 +794,7 @@ fields:
     summary: |-
       List table style 4, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4_Accent3"'
   - name: listTable4_Accent4
     uid: word!Word.BuiltInStyleName.listTable4_Accent4:member
@@ -804,7 +802,7 @@ fields:
     summary: |-
       List table style 4, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4_Accent4"'
   - name: listTable4_Accent5
     uid: word!Word.BuiltInStyleName.listTable4_Accent5:member
@@ -812,7 +810,7 @@ fields:
     summary: |-
       List table style 4, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4_Accent5"'
   - name: listTable4_Accent6
     uid: word!Word.BuiltInStyleName.listTable4_Accent6:member
@@ -820,7 +818,7 @@ fields:
     summary: |-
       List table style 4, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable4_Accent6"'
   - name: listTable5Dark
     uid: word!Word.BuiltInStyleName.listTable5Dark:member
@@ -828,7 +826,7 @@ fields:
     summary: |-
       List table dark style 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark"'
   - name: listTable5Dark_Accent1
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent1:member
@@ -836,7 +834,7 @@ fields:
     summary: |-
       List table dark style 5, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark_Accent1"'
   - name: listTable5Dark_Accent2
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent2:member
@@ -844,7 +842,7 @@ fields:
     summary: |-
       List table dark style 5, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark_Accent2"'
   - name: listTable5Dark_Accent3
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent3:member
@@ -852,7 +850,7 @@ fields:
     summary: |-
       List table dark style 5, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark_Accent3"'
   - name: listTable5Dark_Accent4
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent4:member
@@ -860,7 +858,7 @@ fields:
     summary: |-
       List table dark style 5, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark_Accent4"'
   - name: listTable5Dark_Accent5
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent5:member
@@ -868,7 +866,7 @@ fields:
     summary: |-
       List table dark style 5, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark_Accent5"'
   - name: listTable5Dark_Accent6
     uid: word!Word.BuiltInStyleName.listTable5Dark_Accent6:member
@@ -876,7 +874,7 @@ fields:
     summary: |-
       List table dark style 5, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable5Dark_Accent6"'
   - name: listTable6Colorful
     uid: word!Word.BuiltInStyleName.listTable6Colorful:member
@@ -884,7 +882,7 @@ fields:
     summary: |-
       List table colorful style 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful"'
   - name: listTable6Colorful_Accent1
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent1:member
@@ -892,7 +890,7 @@ fields:
     summary: |-
       List table colorful style 6, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful_Accent1"'
   - name: listTable6Colorful_Accent2
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent2:member
@@ -900,7 +898,7 @@ fields:
     summary: |-
       List table colorful style 6, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful_Accent2"'
   - name: listTable6Colorful_Accent3
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent3:member
@@ -908,7 +906,7 @@ fields:
     summary: |-
       List table colorful style 6, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful_Accent3"'
   - name: listTable6Colorful_Accent4
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent4:member
@@ -916,7 +914,7 @@ fields:
     summary: |-
       List table colorful style 6, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful_Accent4"'
   - name: listTable6Colorful_Accent5
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent5:member
@@ -924,7 +922,7 @@ fields:
     summary: |-
       List table colorful style 6, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful_Accent5"'
   - name: listTable6Colorful_Accent6
     uid: word!Word.BuiltInStyleName.listTable6Colorful_Accent6:member
@@ -932,7 +930,7 @@ fields:
     summary: |-
       List table colorful style 6, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable6Colorful_Accent6"'
   - name: listTable7Colorful
     uid: word!Word.BuiltInStyleName.listTable7Colorful:member
@@ -940,7 +938,7 @@ fields:
     summary: |-
       List table colorful style 7.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful"'
   - name: listTable7Colorful_Accent1
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent1:member
@@ -948,7 +946,7 @@ fields:
     summary: |-
       List table colorful style 7, accent 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful_Accent1"'
   - name: listTable7Colorful_Accent2
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent2:member
@@ -956,7 +954,7 @@ fields:
     summary: |-
       List table colorful style 7, accent 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful_Accent2"'
   - name: listTable7Colorful_Accent3
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent3:member
@@ -964,7 +962,7 @@ fields:
     summary: |-
       List table colorful style 7, accent 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful_Accent3"'
   - name: listTable7Colorful_Accent4
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent4:member
@@ -972,7 +970,7 @@ fields:
     summary: |-
       List table colorful style 7, accent 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful_Accent4"'
   - name: listTable7Colorful_Accent5
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent5:member
@@ -980,7 +978,7 @@ fields:
     summary: |-
       List table colorful style 7, accent 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful_Accent5"'
   - name: listTable7Colorful_Accent6
     uid: word!Word.BuiltInStyleName.listTable7Colorful_Accent6:member
@@ -988,7 +986,7 @@ fields:
     summary: |-
       List table colorful style 7, accent 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ListTable7Colorful_Accent6"'
   - name: normal
     uid: word!Word.BuiltInStyleName.normal:member
@@ -996,7 +994,7 @@ fields:
     summary: |-
       Reset character and paragraph style to default.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Normal"'
   - name: noSpacing
     uid: word!Word.BuiltInStyleName.noSpacing:member
@@ -1004,7 +1002,7 @@ fields:
     summary: |-
       No spacing style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"NoSpacing"'
   - name: other
     uid: word!Word.BuiltInStyleName.other:member
@@ -1012,7 +1010,7 @@ fields:
     summary: |-
       Mixed styles or other style not in this list.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Other"'
   - name: plainTable1
     uid: word!Word.BuiltInStyleName.plainTable1:member
@@ -1020,7 +1018,7 @@ fields:
     summary: |-
       Plain table style 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"PlainTable1"'
   - name: plainTable2
     uid: word!Word.BuiltInStyleName.plainTable2:member
@@ -1028,7 +1026,7 @@ fields:
     summary: |-
       Plain table style 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"PlainTable2"'
   - name: plainTable3
     uid: word!Word.BuiltInStyleName.plainTable3:member
@@ -1036,7 +1034,7 @@ fields:
     summary: |-
       Plain table style 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"PlainTable3"'
   - name: plainTable4
     uid: word!Word.BuiltInStyleName.plainTable4:member
@@ -1044,7 +1042,7 @@ fields:
     summary: |-
       Plain table style 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"PlainTable4"'
   - name: plainTable5
     uid: word!Word.BuiltInStyleName.plainTable5:member
@@ -1052,7 +1050,7 @@ fields:
     summary: |-
       Plain table style 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"PlainTable5"'
   - name: quote
     uid: word!Word.BuiltInStyleName.quote:member
@@ -1060,7 +1058,7 @@ fields:
     summary: |-
       Quote style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Quote"'
   - name: strong
     uid: word!Word.BuiltInStyleName.strong:member
@@ -1068,7 +1066,7 @@ fields:
     summary: |-
       Strong style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Strong"'
   - name: subtitle
     uid: word!Word.BuiltInStyleName.subtitle:member
@@ -1076,7 +1074,7 @@ fields:
     summary: |-
       Subtitle style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Subtitle"'
   - name: subtleEmphasis
     uid: word!Word.BuiltInStyleName.subtleEmphasis:member
@@ -1084,7 +1082,7 @@ fields:
     summary: |-
       Subtle emphasis style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"SubtleEmphasis"'
   - name: subtleReference
     uid: word!Word.BuiltInStyleName.subtleReference:member
@@ -1092,7 +1090,7 @@ fields:
     summary: |-
       Subtle reference style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"SubtleReference"'
   - name: tableGrid
     uid: word!Word.BuiltInStyleName.tableGrid:member
@@ -1100,7 +1098,7 @@ fields:
     summary: |-
       Table grid style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"TableGrid"'
   - name: tableGridLight
     uid: word!Word.BuiltInStyleName.tableGridLight:member
@@ -1108,7 +1106,7 @@ fields:
     summary: |-
       Table grid light style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"TableGridLight"'
   - name: title
     uid: word!Word.BuiltInStyleName.title:member
@@ -1116,7 +1114,7 @@ fields:
     summary: |-
       Title style.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Title"'
   - name: toc1
     uid: word!Word.BuiltInStyleName.toc1:member
@@ -1124,7 +1122,7 @@ fields:
     summary: |-
       Table-of-content level 1.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc1"'
   - name: toc2
     uid: word!Word.BuiltInStyleName.toc2:member
@@ -1132,7 +1130,7 @@ fields:
     summary: |-
       Table-of-content level 2.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc2"'
   - name: toc3
     uid: word!Word.BuiltInStyleName.toc3:member
@@ -1140,7 +1138,7 @@ fields:
     summary: |-
       Table-of-content level 3.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc3"'
   - name: toc4
     uid: word!Word.BuiltInStyleName.toc4:member
@@ -1148,7 +1146,7 @@ fields:
     summary: |-
       Table-of-content level 4.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc4"'
   - name: toc5
     uid: word!Word.BuiltInStyleName.toc5:member
@@ -1156,7 +1154,7 @@ fields:
     summary: |-
       Table-of-content level 5.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc5"'
   - name: toc6
     uid: word!Word.BuiltInStyleName.toc6:member
@@ -1164,7 +1162,7 @@ fields:
     summary: |-
       Table-of-content level 6.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc6"'
   - name: toc7
     uid: word!Word.BuiltInStyleName.toc7:member
@@ -1172,7 +1170,7 @@ fields:
     summary: |-
       Table-of-content level 7.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc7"'
   - name: toc8
     uid: word!Word.BuiltInStyleName.toc8:member
@@ -1180,7 +1178,7 @@ fields:
     summary: |-
       Table-of-content level 8.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc8"'
   - name: toc9
     uid: word!Word.BuiltInStyleName.toc9:member
@@ -1188,7 +1186,7 @@ fields:
     summary: |-
       Table-of-content level 9.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Toc9"'
   - name: tocHeading
     uid: word!Word.BuiltInStyleName.tocHeading:member
@@ -1196,5 +1194,5 @@ fields:
     summary: |-
       Table-of-content heading.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"TocHeading"'

@@ -3,11 +3,9 @@ name: Word.Interfaces.CommentData
 uid: word!Word.Interfaces.CommentData:interface
 package: word!
 fullName: Word.Interfaces.CommentData
-summary: >-
-  An interface describing the data returned by calling `comment.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment's author.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,7 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment's author.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +42,7 @@ properties:
     fullName: content
     summary: Specifies the comment's content as plain text.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +55,7 @@ properties:
     fullName: contentRange
     summary: Specifies the comment's content range.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +68,7 @@ properties:
     fullName: creationDate
     summary: Gets the creation date of the comment.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +81,7 @@ properties:
     fullName: id
     summary: Gets the ID of the comment.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +94,7 @@ properties:
     fullName: replies
     summary: Gets the collection of reply objects associated with the comment.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,11 +106,10 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      Specifies the comment thread's status. Setting to `true` resolves the
-      comment thread. Getting a value of `true` means that the comment thread is
-      resolved.
+      Specifies the comment thread's status. Setting to `true` resolves the comment thread. Getting a value of `true`
+      means that the comment thread is resolved.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

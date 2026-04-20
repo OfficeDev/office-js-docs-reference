@@ -3,11 +3,9 @@ name: Word.Interfaces.HeadingStyleData
 uid: word!Word.Interfaces.HeadingStyleData:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleData
-summary: >-
-  An interface describing the data returned by calling
-  `headingStyle.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `headingStyle.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.HeadingStyleData#level:member
     package: word!
     fullName: level
-    summary: >-
-      Specifies the level for the heading style in a table of contents or table
-      of figures. Must be a value from 1 to 9.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the level for the heading style in a table of contents or table of figures. Must be a value from 1 to 9.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,8 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of style for a heading.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

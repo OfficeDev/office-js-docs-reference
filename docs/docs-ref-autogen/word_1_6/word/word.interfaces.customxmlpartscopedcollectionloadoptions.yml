@@ -3,14 +3,9 @@ name: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
 uid: word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
-summary: >-
-  Contains the collection of
-  [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects with a
-  specific namespace.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects with a specific namespace.
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +28,8 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the custom XML part.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,17 +37,12 @@ properties:
       return:
         type: boolean
   - name: namespaceUri
-    uid: >-
-      word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member
+    uid: word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member
     package: word!
     fullName: namespaceUri
-    summary: >-
-      For EACH ITEM in the collection: Gets the namespace URI of the custom XML
-      part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the namespace URI of the custom XML part.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

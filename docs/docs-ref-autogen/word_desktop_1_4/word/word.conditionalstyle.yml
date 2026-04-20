@@ -3,13 +3,9 @@ name: Word.ConditionalStyle
 uid: word!Word.ConditionalStyle:class
 package: word!
 fullName: Word.ConditionalStyle
-summary: >-
-  Represents special formatting applied to specified areas of a table when the
-  selected table is formatted with a specified table style.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents special formatting applied to specified areas of a table when the selected table is formatted with a specified table style.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,13 +14,9 @@ properties:
     uid: word!Word.ConditionalStyle#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` object that represents all the
-      borders for the conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `BorderUniversalCollection` object that represents all the borders for the conditional style.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,13 +27,9 @@ properties:
     uid: word!Word.ConditionalStyle#bottomPadding:member
     package: word!
     fullName: bottomPadding
-    summary: >-
-      Specifies the amount of space (in points) to add below the contents of a
-      single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add below the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,11 +40,9 @@ properties:
     uid: word!Word.ConditionalStyle#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,13 +53,9 @@ properties:
     uid: word!Word.ConditionalStyle#font:member
     package: word!
     fullName: font
-    summary: >-
-      Returns a `Font` object that represents the font formatting for the
-      conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `Font` object that represents the font formatting for the conditional style.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,13 +66,9 @@ properties:
     uid: word!Word.ConditionalStyle#leftPadding:member
     package: word!
     fullName: leftPadding
-    summary: >-
-      Specifies the amount of space (in points) to add to the left of the
-      contents of a single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add to the left of the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,13 +79,9 @@ properties:
     uid: word!Word.ConditionalStyle#paragraphFormat:member
     package: word!
     fullName: paragraphFormat
-    summary: >-
-      Returns a `ParagraphFormat` object that represents the paragraph
-      formatting for the conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ParagraphFormat` object that represents the paragraph formatting for the conditional style.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,13 +92,9 @@ properties:
     uid: word!Word.ConditionalStyle#rightPadding:member
     package: word!
     fullName: rightPadding
-    summary: >-
-      Specifies the amount of space (in points) to add to the right of the
-      contents of a single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add to the right of the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,13 +105,9 @@ properties:
     uid: word!Word.ConditionalStyle#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns a `ShadingUniversal` object that represents the shading of the
-      conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ShadingUniversal` object that represents the shading of the conditional style.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,13 +118,9 @@ properties:
     uid: word!Word.ConditionalStyle#topPadding:member
     package: word!
     fullName: topPadding
-    summary: >-
-      Specifies the amount of space (in points) to add above the contents of a
-      single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the amount of space (in points) to add above the contents of a single cell or all the cells in a table.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,23 +132,17 @@ methods:
     uid: word!Word.ConditionalStyle#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.ConditionalStyleLoadOptions):
-        Word.ConditionalStyle;
+      content: 'load(options?: Word.Interfaces.ConditionalStyleLoadOptions): Word.ConditionalStyle;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.ConditionalStyleLoadOptions:interface" />
+          type: <xref uid="word!Word.Interfaces.ConditionalStyleLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.ConditionalStyle:class" />
         description: ''
@@ -194,20 +150,16 @@ methods:
     uid: word!Word.ConditionalStyle#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.ConditionalStyle;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.ConditionalStyle:class" />
@@ -216,11 +168,9 @@ methods:
     uid: word!Word.ConditionalStyle#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -231,11 +181,7 @@ methods:
                 }): Word.ConditionalStyle;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -248,17 +194,9 @@ methods:
     uid: word!Word.ConditionalStyle#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.ConditionalStyle`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.ConditionalStyleData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.ConditionalStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ConditionalStyleData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -270,18 +208,9 @@ methods:
     uid: word!Word.ConditionalStyle#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -293,16 +222,9 @@ methods:
     uid: word!Word.ConditionalStyle#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

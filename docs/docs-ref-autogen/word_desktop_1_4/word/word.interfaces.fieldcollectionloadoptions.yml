@@ -4,22 +4,11 @@ uid: word!Word.Interfaces.FieldCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.FieldCollectionLoadOptions
 summary: Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-  Important: To learn more about which fields can be inserted, see the
-  `Word.Range.insertField` API introduced in requirement set 1.5. Support for
-  managing fields is similar to what's available in the Word UI. However, the
-  Word UI on the web primarily only supports fields as read-only (see [Field
-  codes in Word for the
-  web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!--
-  -->). To learn more about Word UI clients that more fully support fields, see
-  the product list at the beginning of [Insert, edit, and view fields in
-  Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
-  -->.
-
+  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->). To learn more about Word UI clients that more fully support fields, see the product list at the beginning of [Insert, edit, and view fields in Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!-- -->.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,12 +17,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,13 +31,11 @@ properties:
     package: word!
     fullName: code
     summary: 'For EACH ITEM in the collection: Specifies the field''s code instruction.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,14 +46,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#data:member
     package: word!
     fullName: data
-    summary: >-
-      For EACH ITEM in the collection: Specifies data in a field of `addin`
-      type. If the field isn't an `addin` type, it's `null` and it will throw a
-      general exception when code attempts to set it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies data in a field of `addin` type. If the field isn''t an `addin` type, it''s `null` and it will throw a general exception when code attempts to set it.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,10 +60,8 @@ properties:
     package: word!
     fullName: kind
     summary: 'For EACH ITEM in the collection: Gets the field''s kind.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,13 +72,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#linkFormat:member
     package: word!
     fullName: linkFormat
-    summary: >-
-      For EACH ITEM in the collection: Gets a `LinkFormat` object that
-      represents the link options of the field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets a `LinkFormat` object that represents the link options of the field.'
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,13 +85,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#locked:member
     package: word!
     fullName: locked
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the field is locked.
-      `true` if the field is locked, `false` otherwise.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,13 +98,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#oleFormat:member
     package: word!
     fullName: oleFormat
-    summary: >-
-      For EACH ITEM in the collection: Gets an `OleFormat` object that
-      represents the OLE characteristics (other than linking) for the field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.'
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,10 +112,8 @@ properties:
     package: word!
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the field.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,63 +121,38 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />
   - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControl:member
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the field. Throws an `ItemNotFound` error if there isn't a parent content
-      control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the content control that contains the field. Throws an `ItemNotFound` error if there isn''t a parent content control.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControlOrNullObject:member
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the field. If there isn't a parent content control, then this method will
-      return an object with its `isNullObject` property set to `true`<!-- -->.
-      For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the content control that contains the field. If there isn''t a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentTable
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentTable:member
     package: word!
     fullName: parentTable
-    summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the field.
-      Throws an `ItemNotFound` error if it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table that contains the field. Throws an `ItemNotFound` error if it isn''t contained in a table.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,14 +163,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains the
-      field. Throws an `ItemNotFound` error if it isn't contained in a table
-      cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table cell that contains the field. Throws an `ItemNotFound` error if it isn''t contained in a table cell.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,21 +173,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />
   - name: parentTableCellOrNullObject
-    uid: >-
-      word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCellOrNullObject:member
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentTableCellOrNullObject:member
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains the
-      field. If it isn't contained in a table cell, then this method will return
-      an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table cell that contains the field. If it isn''t contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,21 +186,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />
   - name: parentTableOrNullObject
-    uid: >-
-      word!Word.Interfaces.FieldCollectionLoadOptions#parentTableOrNullObject:member
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#parentTableOrNullObject:member
     package: word!
     fullName: parentTableOrNullObject
-    summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the field.
-      If it isn't contained in a table, then this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table that contains the field. If it isn''t contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -288,10 +203,8 @@ properties:
     package: word!
     fullName: result
     summary: 'For EACH ITEM in the collection: Gets the field''s result data.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,14 +215,9 @@ properties:
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#showCodes:member
     package: word!
     fullName: showCodes
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the field codes are
-      displayed for the specified field. `true` if the field codes are
-      displayed, `false` otherwise.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.'
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,10 +229,8 @@ properties:
     package: word!
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the field''s type.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

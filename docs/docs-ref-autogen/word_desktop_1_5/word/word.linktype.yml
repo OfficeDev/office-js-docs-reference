@@ -5,7 +5,7 @@ package: word!
 fullName: Word.LinkType
 summary: Specifies the type of link.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Microsoft Excel chart.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Chart"'
   - name: dde
     uid: word!Word.LinkType.dde:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Dynamic Data Exchange.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Dde"'
   - name: ddeAuto
     uid: word!Word.LinkType.ddeAuto:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Automatic DDE.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"DdeAuto"'
   - name: import
     uid: word!Word.LinkType.import:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Import file.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Import"'
   - name: include
     uid: word!Word.LinkType.include:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Include file.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Include"'
   - name: ole
     uid: word!Word.LinkType.ole:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       OLE object.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Ole"'
   - name: picture
     uid: word!Word.LinkType.picture:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Picture.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Picture"'
   - name: reference
     uid: word!Word.LinkType.reference:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Reference library.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Reference"'
   - name: text
     uid: word!Word.LinkType.text:member
@@ -79,5 +79,5 @@ fields:
     summary: |-
       Text.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Text"'

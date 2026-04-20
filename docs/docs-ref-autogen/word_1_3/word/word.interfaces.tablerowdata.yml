@@ -3,11 +3,9 @@ name: Word.Interfaces.TableRowData
 uid: word!Word.Interfaces.TableRowData:interface
 package: word!
 fullName: Word.Interfaces.TableRowData
-summary: >-
-  An interface describing the data returned by calling `tableRow.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: cellCount
     summary: Gets the number of cells in the row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +28,8 @@ properties:
     package: word!
     fullName: cells
     summary: Gets cells.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.TableRowData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the font. Use this to get and set font name, size, color, and other
-      properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the font. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,35 +53,22 @@ properties:
     uid: word!Word.Interfaces.TableRowData#horizontalAlignment:member
     package: word!
     fullName: horizontalAlignment
-    summary: >-
-      Specifies the horizontal alignment of every cell in the row. The value can
-      be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal alignment of every cell in the row. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" |
-        "Centered" | "Right" | "Justified";
+      content: 'horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - name: isHeader
     uid: word!Word.Interfaces.TableRowData#isHeader:member
     package: word!
     fullName: isHeader
-    summary: >-
-      Checks whether the row is a header row. To set the number of header rows,
-      use `headerRowCount` on the `Table` object.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the `Table` object.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,10 +80,8 @@ properties:
     package: word!
     fullName: preferredHeight
     summary: Specifies the preferred height of the row in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,10 +93,8 @@ properties:
     package: word!
     fullName: rowIndex
     summary: Gets the index of the row in its parent table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,13 +105,9 @@ properties:
     uid: word!Word.Interfaces.TableRowData#shadingColor:member
     package: word!
     fullName: shadingColor
-    summary: >-
-      Specifies the shading color. Color is specified in "\#RRGGBB" format or by
-      using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,10 +119,8 @@ properties:
     package: word!
     fullName: values
     summary: Specifies the text values in the row, as a 2D JavaScript array.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,20 +131,12 @@ properties:
     uid: word!Word.Interfaces.TableRowData#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of the cells in the row. The value can be
-      `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical alignment of the cells in the row. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center"
-        | "Bottom";
+      content: 'verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
-        type: >-
-          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
-          "Center" | "Bottom"
+        type: <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" | "Center" | "Bottom"

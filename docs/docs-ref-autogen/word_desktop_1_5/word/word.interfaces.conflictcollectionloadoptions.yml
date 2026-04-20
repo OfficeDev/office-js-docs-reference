@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ConflictCollectionLoadOptions
 summary: Represents the coauthoring conflicts in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,10 +30,10 @@ properties:
     package: word!
     fullName: range
     summary: >-
-      For EACH ITEM in the collection: Gets a `Range` object that represents the
-      portion of the document that's contained in the `Conflict` object.
+      For EACH ITEM in the collection: Gets a `Range` object that represents the portion of the document that's
+      contained in the `Conflict` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +44,9 @@ properties:
     uid: word!Word.Interfaces.ConflictCollectionLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      For EACH ITEM in the collection: Gets the `RevisionType` for the
-      `Conflict` object.
+    summary: 'For EACH ITEM in the collection: Gets the `RevisionType` for the `Conflict` object.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

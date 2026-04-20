@@ -3,12 +3,9 @@ name: Word.Interfaces.TableColumnCollectionLoadOptions
 uid: word!Word.Interfaces.TableColumnCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableColumnCollectionLoadOptions
-summary: >-
-  Represents a collection of
-  [Word.TableColumn](xref:word!Word.TableColumn:class) objects in a Word
-  document.
+summary: Represents a collection of [Word.TableColumn](xref:word!Word.TableColumn:class) objects in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +29,9 @@ properties:
     uid: word!Word.Interfaces.TableColumnCollectionLoadOptions#columnIndex:member
     package: word!
     fullName: columnIndex
-    summary: >-
-      For EACH ITEM in the collection: Returns the position of this column in a
-      collection.
+    summary: 'For EACH ITEM in the collection: Returns the position of this column in a collection.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,10 +43,10 @@ properties:
     package: word!
     fullName: isFirst
     summary: >-
-      For EACH ITEM in the collection: Returns `true` if the column or row is
-      the first one in the table; `false` otherwise.
+      For EACH ITEM in the collection: Returns `true` if the column or row is the first one in the table; `false`
+      otherwise.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,10 +58,10 @@ properties:
     package: word!
     fullName: isLast
     summary: >-
-      For EACH ITEM in the collection: Returns `true` if the column or row is
-      the last one in the table; `false` otherwise.
+      For EACH ITEM in the collection: Returns `true` if the column or row is the last one in the table; `false`
+      otherwise.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +74,7 @@ properties:
     fullName: nestingLevel
     summary: 'For EACH ITEM in the collection: Returns the nesting level of the column.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,16 +82,14 @@ properties:
       return:
         type: boolean
   - name: preferredWidth
-    uid: >-
-      word!Word.Interfaces.TableColumnCollectionLoadOptions#preferredWidth:member
+    uid: word!Word.Interfaces.TableColumnCollectionLoadOptions#preferredWidth:member
     package: word!
     fullName: preferredWidth
     summary: >-
-      For EACH ITEM in the collection: Specifies the preferred width (in points
-      or as a percentage of the window width) for the column. The unit of
-      measurement can be specified by the `preferredWidthType` property.
+      For EACH ITEM in the collection: Specifies the preferred width (in points or as a percentage of the window width)
+      for the column. The unit of measurement can be specified by the `preferredWidthType` property.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,15 +97,14 @@ properties:
       return:
         type: boolean
   - name: preferredWidthType
-    uid: >-
-      word!Word.Interfaces.TableColumnCollectionLoadOptions#preferredWidthType:member
+    uid: word!Word.Interfaces.TableColumnCollectionLoadOptions#preferredWidthType:member
     package: word!
     fullName: preferredWidthType
     summary: >-
-      For EACH ITEM in the collection: Specifies the preferred unit of
-      measurement to use for the width of the table column.
+      For EACH ITEM in the collection: Specifies the preferred unit of measurement to use for the width of the table
+      column.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,27 +116,23 @@ properties:
     package: word!
     fullName: shading
     summary: >-
-      For EACH ITEM in the collection: Returns a `ShadingUniversal` object that
-      refers to the shading formatting for the column.
+      For EACH ITEM in the collection: Returns a `ShadingUniversal` object that refers to the shading formatting for the
+      column.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface" />
   - name: width
     uid: word!Word.Interfaces.TableColumnCollectionLoadOptions#width:member
     package: word!
     fullName: width
-    summary: >-
-      For EACH ITEM in the collection: Specifies the width of the column, in
-      points.
+    summary: 'For EACH ITEM in the collection: Specifies the width of the column, in points.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

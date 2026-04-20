@@ -3,11 +3,9 @@ name: Word.Interfaces.ListFormatData
 uid: word!Word.Interfaces.ListFormatData:interface
 package: word!
 fullName: Word.Interfaces.ListFormatData
-summary: >-
-  An interface describing the data returned by calling `listFormat.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `listFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

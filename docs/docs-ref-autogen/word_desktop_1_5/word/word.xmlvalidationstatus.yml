@@ -5,7 +5,7 @@ package: word!
 fullName: Word.XmlValidationStatus
 summary: Specifies the validation status of an XML node.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       The node has a custom (user-defined) validation error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Custom"'
   - name: ok
     uid: word!Word.XmlValidationStatus.ok:member
@@ -23,5 +23,5 @@ fields:
     summary: |-
       The node is valid.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Ok"'

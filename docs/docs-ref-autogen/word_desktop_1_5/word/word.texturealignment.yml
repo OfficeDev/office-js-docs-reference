@@ -3,11 +3,9 @@ name: Word.TextureAlignment
 uid: word!Word.TextureAlignment:enum
 package: word!
 fullName: Word.TextureAlignment
-summary: >-
-  Specifies the alignment (the origin of the coordinate grid) for the tiling of
-  the texture fill.
+summary: Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Aligns the texture to the bottom center of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Bottom"'
   - name: bottomLeft
     uid: word!Word.TextureAlignment.bottomLeft:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Aligns the texture to the bottom-left corner of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"BottomLeft"'
   - name: bottomRight
     uid: word!Word.TextureAlignment.bottomRight:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Aligns the texture to the bottom-right corner of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"BottomRight"'
   - name: center
     uid: word!Word.TextureAlignment.center:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Aligns the texture to the center of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Center"'
   - name: left
     uid: word!Word.TextureAlignment.left:member
@@ -49,17 +47,15 @@ fields:
     summary: |-
       Aligns the texture to the middle left side of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Left"'
   - name: mixed
     uid: word!Word.TextureAlignment.mixed:member
     package: word!
-    summary: >-
-      Mixed texture alignment. Used when multiple shapes with different texture
-      alignments are selected.
+    summary: |-
+      Mixed texture alignment. Used when multiple shapes with different texture alignments are selected.
 
-
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: right
     uid: word!Word.TextureAlignment.right:member
@@ -67,7 +63,7 @@ fields:
     summary: |-
       Aligns the texture to the middle right side of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Right"'
   - name: top
     uid: word!Word.TextureAlignment.top:member
@@ -75,7 +71,7 @@ fields:
     summary: |-
       Aligns the texture to the top center of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"Top"'
   - name: topLeft
     uid: word!Word.TextureAlignment.topLeft:member
@@ -83,7 +79,7 @@ fields:
     summary: |-
       Aligns the texture to the top-left corner of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"TopLeft"'
   - name: topRight
     uid: word!Word.TextureAlignment.topRight:member
@@ -91,5 +87,5 @@ fields:
     summary: |-
       Aligns the texture to the top-right corner of the shape.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[Api set: WordApiDesktop 1.3\]
     value: '"TopRight"'

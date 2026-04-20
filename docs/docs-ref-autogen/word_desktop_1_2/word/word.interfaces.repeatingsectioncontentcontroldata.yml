@@ -3,11 +3,9 @@ name: Word.Interfaces.RepeatingSectionContentControlData
 uid: word!Word.Interfaces.RepeatingSectionContentControlData:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionContentControlData
-summary: >-
-  An interface describing the data returned by calling
-  `repeatingSectionContentControl.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `repeatingSectionContentControl.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

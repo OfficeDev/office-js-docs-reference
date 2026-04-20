@@ -3,13 +3,9 @@ name: Word.Interfaces.CoauthoringLoadOptions
 uid: word!Word.Interfaces.CoauthoringLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLoadOptions
-summary: >-
-  Represents the `Coauthoring` object. This tracks the updates, changes,
-  conflicts, and other interactions in the document done through coauthoring.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the `Coauthoring` object. This tracks the updates, changes, conflicts, and other interactions in the document done through coauthoring.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,10 +28,8 @@ properties:
     package: word!
     fullName: canCoauthor
     summary: Gets whether this document can be coauthored.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +41,8 @@ properties:
     package: word!
     fullName: canMerge
     summary: Gets whether the document can be automatically merged.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,10 +54,8 @@ properties:
     package: word!
     fullName: me
     summary: Gets a `Coauthor` object that represents the current user.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,10 +67,8 @@ properties:
     package: word!
     fullName: pendingUpdates
     summary: Gets whether the document has pending updates that have not been accepted.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

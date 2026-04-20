@@ -3,27 +3,22 @@ name: Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions
 uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions
-summary: >-
-  Represents a collection of
-  [Word.CustomXmlPrefixMapping](xref:word!Word.CustomXmlPrefixMapping:class)
-  objects.
+summary: Represents a collection of [Word.CustomXmlPrefixMapping](xref:word!Word.CustomXmlPrefixMapping:class) objects.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions#$all:member
+    uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,15 +26,14 @@ properties:
       return:
         type: boolean
   - name: namespaceUri
-    uid: >-
-      word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions#namespaceUri:member
+    uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions#namespaceUri:member
     package: word!
     fullName: namespaceUri
     summary: >-
-      For EACH ITEM in the collection: Gets the unique address identifier for
-      the namespace of the `CustomXmlPrefixMapping` object.
+      For EACH ITEM in the collection: Gets the unique address identifier for the namespace of the
+      `CustomXmlPrefixMapping` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,15 +41,12 @@ properties:
       return:
         type: boolean
   - name: prefix
-    uid: >-
-      word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions#prefix:member
+    uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionLoadOptions#prefix:member
     package: word!
     fullName: prefix
-    summary: >-
-      For EACH ITEM in the collection: Gets the prefix for the
-      `CustomXmlPrefixMapping` object.
+    summary: 'For EACH ITEM in the collection: Gets the prefix for the `CustomXmlPrefixMapping` object.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

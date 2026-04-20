@@ -4,10 +4,8 @@ uid: word!Word.Interfaces.RangeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RangeLoadOptions
 summary: Represents a contiguous area in a document.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,15 +40,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range.
-      All hyperlinks in the range are deleted when you set a new hyperlink on
-      the range. Use a '\#' to separate the address part from the optional
-      location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location part.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,10 +54,8 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,10 +67,8 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,58 +79,35 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      Gets the currently supported content control that contains the range.
-      Throws an `ItemNotFound` error if there isn't a parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member
+    uid: word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      Gets the currently supported content control that contains the range. If
-      there isn't a parent content control, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the currently supported content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentTable
     uid: word!Word.Interfaces.RangeLoadOptions#parentTable:member
     package: word!
     fullName: parentTable
-    summary: >-
-      Gets the table that contains the range. Throws an `ItemNotFound` error if
-      it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,13 +118,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains the range. Throws an `ItemNotFound`
-      error if it isn't contained in a table cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,17 +131,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: >-
-      Gets the table cell that contains the range. If it isn't contained in a
-      table cell, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,17 +144,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member
     package: word!
     fullName: parentTableOrNullObject
-    summary: >-
-      Gets the table that contains the range. If it isn't contained in a table,
-      then this method will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,14 +157,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,14 +170,9 @@ properties:
     uid: word!Word.Interfaces.RangeLoadOptions#styleBuiltIn:member
     package: word!
     fullName: styleBuiltIn
-    summary: >-
-      Specifies the built-in style name for the range. Use this property for
-      built-in styles that are portable between locales. To use custom styles or
-      localized style names, see the "style" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,10 +184,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.CalendarTypeBidirectional
 summary: Specifies the type of bidirectional calendar to use.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Uses the Bidirectional calendar.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Bidirectional"'
   - name: gregorian
     uid: word!Word.CalendarTypeBidirectional.gregorian:member
@@ -23,5 +23,5 @@ fields:
     summary: |-
       Uses the Gregorian calendar.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Gregorian"'

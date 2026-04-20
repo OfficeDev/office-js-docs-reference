@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DateLanguage
 summary: Specifies the language to use for date formatting.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Uses the bidirectional date/time format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Bidirectional"'
   - name: latin
     uid: word!Word.DateLanguage.latin:member
@@ -23,5 +23,5 @@ fields:
     summary: |-
       Uses the latin date/time format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Latin"'

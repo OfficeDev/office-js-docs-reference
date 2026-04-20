@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ShapeType
 summary: Represents the shape type.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Canvas shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Canvas"'
   - name: geometricShape
     uid: word!Word.ShapeType.geometricShape:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Geometric shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"GeometricShape"'
   - name: group
     uid: word!Word.ShapeType.group:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Group shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Group"'
   - name: picture
     uid: word!Word.ShapeType.picture:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Picture shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Picture"'
   - name: textBox
     uid: word!Word.ShapeType.textBox:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Text box shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"TextBox"'
   - name: unsupported
     uid: word!Word.ShapeType.unsupported:member
@@ -55,5 +55,5 @@ fields:
     summary: |-
       Unsupported shape type.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[Api set: WordApiDesktop 1.2\]
     value: '"Unsupported"'

@@ -3,11 +3,9 @@ name: Word.Interfaces.SectionData
 uid: word!Word.Interfaces.SectionData:interface
 package: word!
 fullName: Word.Interfaces.SectionData
-summary: >-
-  An interface describing the data returned by calling `section.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `section.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.SectionData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the section. This doesn't include the header,
-      footer, and other section metadata.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the `Body` object of the section. This doesn't include the header, footer, and other section metadata.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.SectionData#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` object that represents all the
-      borders in the section.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `BorderUniversalCollection` object that represents all the borders in the section.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,10 +41,8 @@ properties:
     package: word!
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the section.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,10 +54,8 @@ properties:
     package: word!
     fullName: protectedForForms
     summary: Specifies if the section is protected for forms.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

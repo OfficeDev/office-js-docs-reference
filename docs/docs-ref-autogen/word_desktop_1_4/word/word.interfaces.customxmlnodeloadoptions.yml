@@ -3,15 +3,9 @@ name: Word.Interfaces.CustomXmlNodeLoadOptions
 uid: word!Word.Interfaces.CustomXmlNodeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeLoadOptions
-summary: >-
-  Represents an XML node in a tree in the document. The `CustomXmlNode` object
-  is a member of the
-  [Word.CustomXmlNodeCollection](xref:word!Word.CustomXmlNodeCollection:class)
-  object.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents an XML node in a tree in the document. The `CustomXmlNode` object is a member of the [Word.CustomXmlNodeCollection](xref:word!Word.CustomXmlNodeCollection:class) object.
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#baseName:member
     package: word!
     fullName: baseName
-    summary: >-
-      Gets the base name of the node without the namespace prefix, if one
-      exists.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the base name of the node without the namespace prefix, if one exists.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,16 +40,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#firstChild:member
     package: word!
     fullName: firstChild
-    summary: >-
-      Gets a `CustomXmlNode` object corresponding to the first child element of
-      the current node. If the node has no child elements (or if it isn't of
-      type
-      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
-      -->), returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn't of type [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!-- -->), returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,16 +53,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#lastChild:member
     package: word!
     fullName: lastChild
-    summary: >-
-      Gets a `CustomXmlNode` object corresponding to the last child element of
-      the current node. If the node has no child elements (or if it isn't of
-      type
-      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
-      -->), the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn't of type [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!-- -->), the property returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,10 +67,8 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the unique address identifier for the namespace of the node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,14 +79,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#nextSibling:member
     package: word!
     fullName: nextSibling
-    summary: >-
-      Gets the next sibling node (element, comment, or processing instruction)
-      of the current node. If the node is the last sibling at its level, the
-      property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,10 +93,8 @@ properties:
     package: word!
     fullName: nodeType
     summary: Gets the type of the current node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,10 +106,8 @@ properties:
     package: word!
     fullName: nodeValue
     summary: Specifies the value of the current node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,10 +119,8 @@ properties:
     package: word!
     fullName: ownerPart
     summary: Gets the object representing the part associated with this node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,13 +131,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#parentNode:member
     package: word!
     fullName: parentNode
-    summary: >-
-      Gets the parent element node of the current node. If the current node is
-      at the root level, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,14 +144,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#previousSibling:member
     package: word!
     fullName: previousSibling
-    summary: >-
-      Gets the previous sibling node (element, comment, or processing
-      instruction) of the current node. If the current node is the first sibling
-      at its level, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,10 +158,8 @@ properties:
     package: word!
     fullName: text
     summary: Specifies the text for the current node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,10 +171,8 @@ properties:
     package: word!
     fullName: xml
     summary: Gets the XML representation of the current node and its children.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,14 +183,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeLoadOptions#xpath:member
     package: word!
     fullName: xpath
-    summary: >-
-      Gets a string with the canonicalized XPath for the current node. If the
-      node is no longer in the Document Object Model (DOM), the property returns
-      an error message.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a string with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

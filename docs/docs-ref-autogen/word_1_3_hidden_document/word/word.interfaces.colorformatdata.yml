@@ -3,11 +3,9 @@ name: Word.Interfaces.ColorFormatData
 uid: word!Word.Interfaces.ColorFormatData:interface
 package: word!
 fullName: Word.Interfaces.ColorFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `colorFormat.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `colorFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

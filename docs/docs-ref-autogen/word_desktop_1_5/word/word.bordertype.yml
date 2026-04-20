@@ -5,7 +5,7 @@ package: word!
 fullName: Word.BorderType
 summary: Represents the [border](xref:word!Word.Border:class) type.
 remarks: '\[Api set: WordApi 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Dash-dot-stroked border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"DashDotStroked"'
   - name: dashed
     uid: word!Word.BorderType.dashed:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Dashed border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Dashed"'
   - name: dashedSmall
     uid: word!Word.BorderType.dashedSmall:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Dashed small border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"DashedSmall"'
   - name: dot2Dashed
     uid: word!Word.BorderType.dot2Dashed:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Double dot-dashed border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Dot2Dashed"'
   - name: dotDashed
     uid: word!Word.BorderType.dotDashed:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Dot-dashed border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"DotDashed"'
   - name: dotted
     uid: word!Word.BorderType.dotted:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Dotted border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Dotted"'
   - name: double
     uid: word!Word.BorderType.double:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Double border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Double"'
   - name: doubleWave
     uid: word!Word.BorderType.doubleWave:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Double wave border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"DoubleWave"'
   - name: mixed
     uid: word!Word.BorderType.mixed:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Mixed border type.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Mixed"'
   - name: none
     uid: word!Word.BorderType.none:member
@@ -87,7 +87,7 @@ fields:
     summary: |-
       No border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"None"'
   - name: single
     uid: word!Word.BorderType.single:member
@@ -95,7 +95,7 @@ fields:
     summary: |-
       Single border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Single"'
   - name: thickThinLarge
     uid: word!Word.BorderType.thickThinLarge:member
@@ -103,7 +103,7 @@ fields:
     summary: |-
       Thick-thin large border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThickThinLarge"'
   - name: thickThinMed
     uid: word!Word.BorderType.thickThinMed:member
@@ -111,7 +111,7 @@ fields:
     summary: |-
       Thick-thin medium border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThickThinMed"'
   - name: thickThinSmall
     uid: word!Word.BorderType.thickThinSmall:member
@@ -119,7 +119,7 @@ fields:
     summary: |-
       Thick-thin small border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThickThinSmall"'
   - name: thinThickLarge
     uid: word!Word.BorderType.thinThickLarge:member
@@ -127,7 +127,7 @@ fields:
     summary: |-
       Thin-thick large border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThinThickLarge"'
   - name: thinThickMed
     uid: word!Word.BorderType.thinThickMed:member
@@ -135,7 +135,7 @@ fields:
     summary: |-
       Thin-thick medium border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThinThickMed"'
   - name: thinThickSmall
     uid: word!Word.BorderType.thinThickSmall:member
@@ -143,7 +143,7 @@ fields:
     summary: |-
       Thin-thick small border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThinThickSmall"'
   - name: thinThickThinLarge
     uid: word!Word.BorderType.thinThickThinLarge:member
@@ -151,7 +151,7 @@ fields:
     summary: |-
       Thin-thick-thin large border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThinThickThinLarge"'
   - name: thinThickThinMed
     uid: word!Word.BorderType.thinThickThinMed:member
@@ -159,7 +159,7 @@ fields:
     summary: |-
       Thin-thick-thin medium border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThinThickThinMed"'
   - name: thinThickThinSmall
     uid: word!Word.BorderType.thinThickThinSmall:member
@@ -167,7 +167,7 @@ fields:
     summary: |-
       Thin-thick-thin small border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThinThickThinSmall"'
   - name: threeDEmboss
     uid: word!Word.BorderType.threeDEmboss:member
@@ -175,7 +175,7 @@ fields:
     summary: |-
       3D Emboss border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThreeDEmboss"'
   - name: threeDEngrave
     uid: word!Word.BorderType.threeDEngrave:member
@@ -183,7 +183,7 @@ fields:
     summary: |-
       3D Engrave border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"ThreeDEngrave"'
   - name: triple
     uid: word!Word.BorderType.triple:member
@@ -191,7 +191,7 @@ fields:
     summary: |-
       Triple border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Triple"'
   - name: wave
     uid: word!Word.BorderType.wave:member
@@ -199,5 +199,5 @@ fields:
     summary: |-
       Wave border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[Api set: WordApi 1.3\]
     value: '"Wave"'

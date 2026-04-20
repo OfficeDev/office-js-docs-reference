@@ -3,11 +3,9 @@ name: Word.Interfaces.ColorFormatData
 uid: word!Word.Interfaces.ColorFormatData:interface
 package: word!
 fullName: Word.Interfaces.ColorFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `colorFormat.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `colorFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.ColorFormatData#brightness:member
     package: word!
     fullName: brightness
-    summary: >-
-      Specifies the brightness of a specified shape color. Valid values are from
-      `-1` (darkest) to `1` (lightest), `0` represents neutral.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,36 +28,21 @@ properties:
     package: word!
     fullName: objectThemeColor
     summary: Specifies the theme color for a color format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1"
-        | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" |
-        "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" |
-        "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+      content: 'objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";'
       return:
-        type: >-
-          <xref uid="word!Word.ThemeColorIndex:enum" /> | "NotThemeColor" |
-          "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" |
-          "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" |
-          "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" |
-          "Background2" | "Text2"
+        type: <xref uid="word!Word.ThemeColorIndex:enum" /> | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2"
   - name: rgb
     uid: word!Word.Interfaces.ColorFormatData#rgb:member
     package: word!
     fullName: rgb
-    summary: >-
-      Specifies the red-green-blue (RGB) value of the specified color. You can
-      provide the value in the '\#RRGGBB' format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '\#RRGGBB' format.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.ColorFormatData#tintAndShade:member
     package: word!
     fullName: tintAndShade
-    summary: >-
-      Specifies the lightening or darkening of a specified shape's color. Valid
-      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,10 +67,8 @@ properties:
     package: word!
     fullName: type
     summary: Returns the shape color type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

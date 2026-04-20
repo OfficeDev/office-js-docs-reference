@@ -3,11 +3,9 @@ name: Word.Interfaces.PageSetupData
 uid: word!Word.Interfaces.PageSetupData:interface
 package: word!
 fullName: Word.Interfaces.PageSetupData
-summary: >-
-  An interface describing the data returned by calling `pageSetup.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `pageSetup.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

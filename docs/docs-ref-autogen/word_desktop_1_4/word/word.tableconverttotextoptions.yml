@@ -3,16 +3,9 @@ name: Word.TableConvertToTextOptions
 uid: word!Word.TableConvertToTextOptions:interface
 package: word!
 fullName: Word.TableConvertToTextOptions
-summary: >-
-  Represents the options for the
-  [Table.convertToText](xref:word!Word.Table:class)<!-- -->,
-  [TableRow.convertToText](xref:word!Word.TableRow:class)<!-- -->, and
-  [TableRowCollection.convertToText](xref:word!Word.TableRowCollection:class)
-  methods.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the options for the [Table.convertToText](xref:word!Word.Table:class)<!-- -->, [TableRow.convertToText](xref:word!Word.TableRow:class)<!-- -->, and [TableRowCollection.convertToText](xref:word!Word.TableRowCollection:class) methods.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,14 +14,9 @@ properties:
     uid: word!Word.TableConvertToTextOptions#nestedTables:member
     package: word!
     fullName: nestedTables
-    summary: >-
-      If provided, specifies whether to convert the nested tables to text. This
-      property is ignored if the `separator` property isn't set to
-      `paragraph`<!-- -->. The default is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to convert the nested tables to text. This property is ignored if the `separator` property isn't set to `paragraph`<!-- -->. The default is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,21 +27,12 @@ properties:
     uid: word!Word.TableConvertToTextOptions#separator:member
     package: word!
     fullName: separator
-    summary: >-
-      If provided, specifies the character that delimits the converted columns
-      (paragraph marks delimit the converted rows). The default is `tab`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the character that delimits the converted columns (paragraph marks delimit the converted rows). The default is `tab`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        separator?: Word.TableFieldSeparator | "Paragraph" | "Tab" | "Comma" |
-        "DefaultListSeparator";
+      content: 'separator?: Word.TableFieldSeparator | "Paragraph" | "Tab" | "Comma" | "DefaultListSeparator";'
       return:
-        type: >-
-          <xref uid="word!Word.TableFieldSeparator:enum" /> | "Paragraph" |
-          "Tab" | "Comma" | "DefaultListSeparator"
+        type: <xref uid="word!Word.TableFieldSeparator:enum" /> | "Paragraph" | "Tab" | "Comma" | "DefaultListSeparator"

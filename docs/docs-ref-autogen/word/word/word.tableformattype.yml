@@ -432,12 +432,4 @@ fields:
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Web2"'
   - name: web3
-    uid: word!Word.TableFormatType.web3:member
-    package: word!
-    summary: >-
-      Applies the Web3 table format.
-
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-    value: '"Web3"'
+    

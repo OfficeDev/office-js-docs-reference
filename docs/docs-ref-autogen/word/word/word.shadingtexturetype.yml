@@ -417,12 +417,4 @@ fields:
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Percent95"'
   - name: solid
-    uid: word!Word.ShadingTextureType.solid:member
-    package: word!
-    summary: >-
-      Represents solid texture.
-
-
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-    value: '"Solid"'
+    uid: word!Word.Sha

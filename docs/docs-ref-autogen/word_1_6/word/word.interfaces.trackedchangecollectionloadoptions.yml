@@ -3,13 +3,9 @@ name: Word.Interfaces.TrackedChangeCollectionLoadOptions
 uid: word!Word.Interfaces.TrackedChangeCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeCollectionLoadOptions
-summary: >-
-  Contains a collection of
-  [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains a collection of [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
+remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.TrackedChangeCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,10 +28,8 @@ properties:
     package: word!
     fullName: author
     summary: 'For EACH ITEM in the collection: Gets the author of the tracked change.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +41,8 @@ properties:
     package: word!
     fullName: date
     summary: 'For EACH ITEM in the collection: Gets the date of the tracked change.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,10 +54,8 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the tracked change.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,10 +67,8 @@ properties:
     package: word!
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the type of the tracked change.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

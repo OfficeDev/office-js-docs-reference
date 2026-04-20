@@ -3,11 +3,9 @@ name: Word.Interfaces.NoteItemCollectionLoadOptions
 uid: word!Word.Interfaces.NoteItemCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.NoteItemCollectionLoadOptions
-summary: >-
-  Contains a collection of [Word.NoteItem](xref:word!Word.NoteItem:class)
-  objects.
+summary: Contains a collection of [Word.NoteItem](xref:word!Word.NoteItem:class) objects.
 remarks: '\[Api set: WordApi 1.5\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,10 +30,10 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      For EACH ITEM in the collection: Represents the body object of the note
-      item. It's the portion of the text within the footnote or endnote.
+      For EACH ITEM in the collection: Represents the body object of the note item. It's the portion of the text within
+      the footnote or endnote.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +44,9 @@ properties:
     uid: word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member
     package: word!
     fullName: reference
-    summary: >-
-      For EACH ITEM in the collection: Represents a footnote or endnote
-      reference in the main document.
+    summary: 'For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +57,9 @@ properties:
     uid: word!Word.Interfaces.NoteItemCollectionLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      For EACH ITEM in the collection: Represents the note item type: footnote
-      or endnote.
+    summary: 'For EACH ITEM in the collection: Represents the note item type: footnote or endnote.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

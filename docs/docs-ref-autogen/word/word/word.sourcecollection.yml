@@ -215,10 +215,4 @@ methods:
     remarks: ''
 
     isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'untrack(): Word.SourceCollection;'
-      return:
-        type: <xref uid="word!Word.SourceCollection:class" />
-        description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+    isDep

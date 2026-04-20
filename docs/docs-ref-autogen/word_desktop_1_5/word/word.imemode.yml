@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ImeMode
 summary: Specifies the IME (Input Method Editor) mode.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Specifies the half-width alphanumeric IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Alpha"'
   - name: alphaFull
     uid: word!Word.ImeMode.alphaFull:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Specifies the full-width alphanumeric IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"AlphaFull"'
   - name: hangul
     uid: word!Word.ImeMode.hangul:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Specifies the half-width Hangul IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Hangul"'
   - name: hangulFull
     uid: word!Word.ImeMode.hangulFull:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Specifies the full-width Hangul IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"HangulFull"'
   - name: hiragana
     uid: word!Word.ImeMode.hiragana:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Specifies the Hiragana IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.ImeMode.katakana:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Specifies the Katakana (double-byte) IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Katakana"'
   - name: katakanaHalf
     uid: word!Word.ImeMode.katakanaHalf:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Specifies the Katakana (half-width) IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"KatakanaHalf"'
   - name: noControl
     uid: word!Word.ImeMode.noControl:member
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Specifies no control over the IME mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"NoControl"'
   - name: 'off'
     uid: word!Word.ImeMode.off:member
@@ -79,7 +79,7 @@ fields:
     summary: |-
       Specifies the IME mode is off.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Off"'
   - name: 'on'
     uid: word!Word.ImeMode.on:member
@@ -87,5 +87,5 @@ fields:
     summary: |-
       Specifies the IME mode is on.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"On"'

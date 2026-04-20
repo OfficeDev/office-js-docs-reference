@@ -3,11 +3,9 @@ name: Word.Interfaces.XmlMappingData
 uid: word!Word.Interfaces.XmlMappingData:interface
 package: word!
 fullName: Word.Interfaces.XmlMappingData
-summary: >-
-  An interface describing the data returned by calling `xmlMapping.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `xmlMapping.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

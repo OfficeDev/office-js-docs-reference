@@ -3,12 +3,9 @@ name: Word.Interfaces.HtmlDivisionCollectionLoadOptions
 uid: word!Word.Interfaces.HtmlDivisionCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionCollectionLoadOptions
-summary: >-
-  Represents a collection of
-  [Word.HtmlDivision](xref:word!Word.HtmlDivision:class) objects in a Word
-  document.
+summary: Represents a collection of [Word.HtmlDivision](xref:word!Word.HtmlDivision:class) objects in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +29,9 @@ properties:
     uid: word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#leftIndent:member
     package: word!
     fullName: leftIndent
-    summary: >-
-      For EACH ITEM in the collection: Specifies the left indent value (in
-      points) for this HTML division.
+    summary: 'For EACH ITEM in the collection: Specifies the left indent value (in points) for this HTML division.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,10 +43,10 @@ properties:
     package: word!
     fullName: range
     summary: >-
-      For EACH ITEM in the collection: Gets a `Range` object that represents the
-      portion of a document that's contained in this HTML division.
+      For EACH ITEM in the collection: Gets a `Range` object that represents the portion of a document that's contained
+      in this HTML division.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +57,9 @@ properties:
     uid: word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#rightIndent:member
     package: word!
     fullName: rightIndent
-    summary: >-
-      For EACH ITEM in the collection: Specifies the right indent (in points)
-      for this HTML division.
+    summary: 'For EACH ITEM in the collection: Specifies the right indent (in points) for this HTML division.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +70,9 @@ properties:
     uid: word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#spaceAfter:member
     package: word!
     fullName: spaceAfter
-    summary: >-
-      For EACH ITEM in the collection: Specifies the amount of spacing (in
-      points) after this HTML division.
+    summary: 'For EACH ITEM in the collection: Specifies the amount of spacing (in points) after this HTML division.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,11 +83,9 @@ properties:
     uid: word!Word.Interfaces.HtmlDivisionCollectionLoadOptions#spaceBefore:member
     package: word!
     fullName: spaceBefore
-    summary: >-
-      For EACH ITEM in the collection: Specifies the spacing (in points) before
-      this HTML division.
+    summary: 'For EACH ITEM in the collection: Specifies the spacing (in points) before this HTML division.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

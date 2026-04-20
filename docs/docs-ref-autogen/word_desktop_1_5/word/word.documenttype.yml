@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DocumentType
 summary: Specifies the type of document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Represents a standard document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Document"'
   - name: frameset
     uid: word!Word.DocumentType.frameset:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Represents a frameset document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Frameset"'
   - name: template
     uid: word!Word.DocumentType.template:member
@@ -31,5 +31,5 @@ fields:
     summary: |-
       Represents a document template.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Template"'

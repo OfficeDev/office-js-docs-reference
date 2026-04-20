@@ -8,12 +8,10 @@ remarks: >-
   \[Api set: WordApi 1.1\]
 
 
-  To be used with an API call, such as `obj.insertSomething(newStuff,
-  location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new
-  content will be outside of the modified object. If the location is `start` or
-  `end`<!-- -->, the new content will be included as part of the modified
-  object.
-
+  To be used with an API call, such as `obj.insertSomething(newStuff, location);`<!-- -->. If the location is `before`
+  or `after`<!-- -->, the new content will be outside of the modified object. If the location is `start` or `end`<!--
+  -->, the new content will be included as part of the modified object.
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -23,7 +21,7 @@ fields:
     summary: |-
       Add content after the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[Api set: WordApi 1.1\]
     value: '"After"'
   - name: before
     uid: word!Word.InsertLocation.before:member
@@ -31,7 +29,7 @@ fields:
     summary: |-
       Add content before the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[Api set: WordApi 1.1\]
     value: '"Before"'
   - name: end
     uid: word!Word.InsertLocation.end:member
@@ -39,7 +37,7 @@ fields:
     summary: |-
       Append content to the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[Api set: WordApi 1.1\]
     value: '"End"'
   - name: replace
     uid: word!Word.InsertLocation.replace:member
@@ -47,7 +45,7 @@ fields:
     summary: |-
       Replace the contents of the current object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[Api set: WordApi 1.1\]
     value: '"Replace"'
   - name: start
     uid: word!Word.InsertLocation.start:member
@@ -55,5 +53,5 @@ fields:
     summary: |-
       Prepend content to the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[Api set: WordApi 1.1\]
     value: '"Start"'

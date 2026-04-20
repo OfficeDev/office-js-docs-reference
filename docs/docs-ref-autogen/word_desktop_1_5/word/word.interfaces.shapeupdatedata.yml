@@ -3,11 +3,9 @@ name: Word.Interfaces.ShapeUpdateData
 uid: word!Word.Interfaces.ShapeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeUpdateData
-summary: >-
-  An interface for updating data on the `Shape` object, for use in `shape.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: allowOverlap
     summary: Specifies whether a given shape can overlap other shapes.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,11 +27,9 @@ properties:
     uid: word!Word.Interfaces.ShapeUpdateData#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: >-
-      Specifies a string that represents the alternative text associated with
-      the shape.
+    summary: Specifies a string that represents the alternative text associated with the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,11 +40,9 @@ properties:
     uid: word!Word.Interfaces.ShapeUpdateData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the shape. Only applies to text boxes and
-      geometric shapes.
+    summary: Gets the `Body` object of the shape. Only applies to text boxes and geometric shapes.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,14 +54,12 @@ properties:
     package: word!
     fullName: canvas
     summary: >-
-      Gets the canvas associated with the shape. An object with its
-      `isNullObject` property set to `true` will be returned if the shape type
-      isn't `canvas`<!-- -->. For further information, see [*OrNullObject
-      methods and
+      Gets the canvas associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't `canvas`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +72,7 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,118 +83,77 @@ properties:
     uid: word!Word.Interfaces.ShapeUpdateData#geometricShapeType:member
     package: word!
     fullName: geometricShapeType
-    summary: >-
-      Specifies the geometric shape type of the shape. It will be null if isn't
-      a geometric shape.
+    summary: Specifies the geometric shape type of the shape. It will be null if isn't a geometric shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        geometricShapeType?: Word.GeometricShapeType | "LineInverse" |
-        "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram"
-        | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
-        "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
-        "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24"
-        | "Star32" | "RoundRectangle" | "Round1Rectangle" |
-        "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle"
-        | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" |
-        "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge"
-        | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" |
-        "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" |
-        "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" |
-        "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" |
-        "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
-        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" |
-        "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" |
-        "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
-        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" |
-        "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" |
-        "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame"
-        | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" |
-        "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
-        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
-        "AccentCallout1" | "AccentCallout2" | "AccentCallout3" |
-        "BorderCallout1" | "BorderCallout2" | "BorderCallout3" |
-        "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3"
-        | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" |
-        "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" |
-        "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" |
-        "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
-        | "FlowChartDecision" | "FlowChartInputOutput" |
-        "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
-        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" |
-        "FlowChartPreparation" | "FlowChartManualInput" |
-        "FlowChartManualOperation" | "FlowChartConnector" |
-        "FlowChartPunchedCard" | "FlowChartPunchedTape" |
-        "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
-        "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-        "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-        "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-        "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
-        "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
-        "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-        "ActionButtonInformation" | "ActionButtonForwardNext" |
-        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning"
-        | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
-        "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
-        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" |
-        "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
-        "ChartStar" | "ChartPlus";
+        geometricShapeType?: Word.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
       return:
         type: >-
-          <xref uid="word!Word.GeometricShapeType:enum" /> | "LineInverse" |
-          "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
-          "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
-          "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
-          | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle"
-          | "Round2SameRectangle" | "Round2DiagonalRectangle" |
-          "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" |
-          "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" |
-          "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
-          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" |
-          "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow"
-          | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" |
-          "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" |
-          "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow"
-          | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" |
-          "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" |
-          "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
-          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" |
-          "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
-          "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" |
-          "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" |
-          "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1"
-          | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" |
-          "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
-          "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" |
-          "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud"
-          | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
-          "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" |
-          "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" |
-          "FlowChartInputOutput" | "FlowChartPredefinedProcess" |
-          "FlowChartInternalStorage" | "FlowChartDocument" |
-          "FlowChartMultidocument" | "FlowChartTerminator" |
-          "FlowChartPreparation" | "FlowChartManualInput" |
-          "FlowChartManualOperation" | "FlowChartConnector" |
-          "FlowChartPunchedCard" | "FlowChartPunchedTape" |
-          "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
-          "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-          "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
-          "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
-          "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-          "ActionButtonInformation" | "ActionButtonForwardNext" |
-          "ActionButtonBackPrevious" | "ActionButtonEnd" |
-          "ActionButtonBeginning" | "ActionButtonReturn" |
-          "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" |
-          "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" |
-          "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" |
-          "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
+          <xref uid="word!Word.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle"
+          | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+          "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
+          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
+          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
+          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
+          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
+          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
+          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
+          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
+          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
+          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
+          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
+          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
+          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
+          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
+          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
+          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
+          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
+          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
           "ChartPlus"
   - name: height
     uid: word!Word.Interfaces.ShapeUpdateData#height:member
@@ -210,7 +161,7 @@ properties:
     fullName: height
     summary: Specifies the height, in points, of the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,11 +173,10 @@ properties:
     package: word!
     fullName: heightRelative
     summary: >-
-      Specifies the percentage of shape height to the relative vertical size
-      (that is, the `relativeVerticalSize` property). For an inline or child
-      shape, it can't be set.
+      Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize`
+      property). For an inline or child shape, it can't be set.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -238,12 +188,11 @@ properties:
     package: word!
     fullName: left
     summary: >-
-      Specifies the distance, in points, from the left side of the shape to the
-      relative horizontal position (that is, the `relativeHorizontalPosition`
-      property). For an inline shape, it will return 0 and can't be set. For a
-      child shape in a canvas or group, it's relative to the top left corner.
+      Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is,
+      the `relativeHorizontalPosition` property). For an inline shape, it will return 0 and can't be set. For a child
+      shape in a canvas or group, it's relative to the top left corner.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -255,12 +204,11 @@ properties:
     package: word!
     fullName: leftRelative
     summary: >-
-      Specifies the relative left position as a percentage from the left side of
-      the shape to the relative horizontal position (that is, the
-      `relativeHorizontalalPosition` property). For an inline or child shape, it
-      will return 0 and can't be set.
+      Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal
+      position (that is, the `relativeHorizontalalPosition` property). For an inline or child shape, it will return 0
+      and can't be set.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,7 +221,7 @@ properties:
     fullName: lockAspectRatio
     summary: Specifies if the aspect ratio of this shape is locked.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,7 +234,7 @@ properties:
     fullName: name
     summary: Specifies the name of the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,11 +245,9 @@ properties:
     uid: word!Word.Interfaces.ShapeUpdateData#parentCanvas:member
     package: word!
     fullName: parentCanvas
-    summary: >-
-      Gets the top-level parent canvas shape of this child shape. It will be
-      null if it isn't a child shape of a canvas.
+    summary: Gets the top-level parent canvas shape of this child shape. It will be null if it isn't a child shape of a canvas.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -312,11 +258,9 @@ properties:
     uid: word!Word.Interfaces.ShapeUpdateData#parentGroup:member
     package: word!
     fullName: parentGroup
-    summary: >-
-      Gets the top-level parent group shape of this child shape. It will be null
-      if it isn't a child shape of a group.
+    summary: Gets the top-level parent group shape of this child shape. It will be null if it isn't a child shape of a group.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -328,94 +272,84 @@ properties:
     package: word!
     fullName: relativeHorizontalPosition
     summary: >-
-      Specifies the relative horizontal position of the shape. For an inline
-      shape, it can't be set. For details, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
-      -->.
+      Specifies the relative horizontal position of the shape. For an inline shape, it can't be set. For details, see
+      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin"
-        | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
-        "InsideMargin" | "OutsideMargin";
+        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" |
+        "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" |
-          "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
-          "InsideMargin" | "OutsideMargin"
+          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" |
+          "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
   - name: relativeHorizontalSize
     uid: word!Word.Interfaces.ShapeUpdateData#relativeHorizontalSize:member
     package: word!
     fullName: relativeHorizontalSize
     summary: >-
-      Specifies the relative horizontal size of the shape. Use with the
-      `widthRelative` property. For an inline or child shape, it can't be set.
+      Specifies the relative horizontal size of the shape. Use with the `widthRelative` property. For an inline or child
+      shape, it can't be set.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" |
-        "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+        relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" |
-          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
   - name: relativeVerticalPosition
     uid: word!Word.Interfaces.ShapeUpdateData#relativeVerticalPosition:member
     package: word!
     fullName: relativeVerticalPosition
     summary: >-
-      Specifies the relative vertical position of the shape. For an inline
-      shape, it can't be set. For details, see
-      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
-      -->.
+      Specifies the relative vertical position of the shape. For an inline shape, it can't be set. For details, see
+      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" |
-        "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
-        "InsideMargin" | "OutsideMargin";
+        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" |
+        "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" |
-          "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
-          "InsideMargin" | "OutsideMargin"
+          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" |
+          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
   - name: relativeVerticalSize
     uid: word!Word.Interfaces.ShapeUpdateData#relativeVerticalSize:member
     package: word!
     fullName: relativeVerticalSize
     summary: >-
-      Specifies the relative vertical size of the shape. Use with the
-      `heightRelative` property. For an inline or child shape, it can't be set.
+      Specifies the relative vertical size of the shape. Use with the `heightRelative` property. For an inline or child
+      shape, it can't be set.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        relativeVerticalSize?: Word.RelativeSize | "Margin" | "Page" |
-        "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+        relativeVerticalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" |
+        "OutsideMargin";
       return:
         type: >-
-          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" |
-          "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
+          <xref uid="word!Word.RelativeSize:enum" /> | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin"
+          | "OutsideMargin"
   - name: rotation
     uid: word!Word.Interfaces.ShapeUpdateData#rotation:member
     package: word!
     fullName: rotation
-    summary: >-
-      Specifies the rotation, in degrees, of the shape. Not applicable to Canvas
-      shape.
+    summary: Specifies the rotation, in degrees, of the shape. Not applicable to Canvas shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -427,14 +361,12 @@ properties:
     package: word!
     fullName: shapeGroup
     summary: >-
-      Gets the shape group associated with the shape. An object with its
-      `isNullObject` property set to `true` will be returned if the shape type
-      isn't `groupShape`<!-- -->. For further information, see [*OrNullObject
-      methods and
+      Gets the shape group associated with the shape. An object with its `isNullObject` property set to `true` will be
+      returned if the shape type isn't `groupShape`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -447,7 +379,7 @@ properties:
     fullName: textFrame
     summary: Gets the `TextFrame` object of the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -460,7 +392,7 @@ properties:
     fullName: textWrap
     summary: Returns the text wrap formatting of the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -472,12 +404,11 @@ properties:
     package: word!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of the shape to the
-      relative vertical position (that is, the `relativeVerticalPosition`
-      property). For an inline shape, it will return 0 and can't be set. For a
-      child shape in a canvas or group, it's relative to the top left corner.
+      Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the
+      `relativeVerticalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in
+      a canvas or group, it's relative to the top left corner.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -489,12 +420,11 @@ properties:
     package: word!
     fullName: topRelative
     summary: >-
-      Specifies the relative top position as a percentage from the top edge of
-      the shape to the relative vertical position (that is, the
-      `relativeVerticalPosition` property). For an inline or child shape, it
-      will return 0 and can't be set.
+      Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical
+      position (that is, the `relativeVerticalPosition` property). For an inline or child shape, it will return 0 and
+      can't be set.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -507,7 +437,7 @@ properties:
     fullName: visible
     summary: Specifies if the shape is visible. Not applicable to inline shapes.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -520,7 +450,7 @@ properties:
     fullName: width
     summary: Specifies the width, in points, of the shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -532,11 +462,10 @@ properties:
     package: word!
     fullName: widthRelative
     summary: >-
-      Specifies the percentage of shape width to the relative horizontal size
-      (that is, the `relativeHorizontalSize` property). For an inline or child
-      shape, it can't be set.
+      Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize`
+      property). For an inline or child shape, it can't be set.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

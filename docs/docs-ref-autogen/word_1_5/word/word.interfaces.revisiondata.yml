@@ -3,11 +3,9 @@ name: Word.Interfaces.RevisionData
 uid: word!Word.Interfaces.RevisionData:interface
 package: word!
 fullName: Word.Interfaces.RevisionData
-summary: >-
-  An interface describing the data returned by calling `revision.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `revision.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

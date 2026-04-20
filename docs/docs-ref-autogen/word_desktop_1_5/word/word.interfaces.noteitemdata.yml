@@ -3,11 +3,9 @@ name: Word.Interfaces.NoteItemData
 uid: word!Word.Interfaces.NoteItemData:interface
 package: word!
 fullName: Word.Interfaces.NoteItemData
-summary: >-
-  An interface describing the data returned by calling `noteItem.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `noteItem.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +14,9 @@ properties:
     uid: word!Word.Interfaces.NoteItemData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Represents the body object of the note item. It's the portion of the text
-      within the footnote or endnote.
+    summary: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +29,7 @@ properties:
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +42,7 @@ properties:
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

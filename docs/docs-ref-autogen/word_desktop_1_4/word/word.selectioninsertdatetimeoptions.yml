@@ -3,13 +3,9 @@ name: Word.SelectionInsertDateTimeOptions
 uid: word!Word.SelectionInsertDateTimeOptions:interface
 package: word!
 fullName: Word.SelectionInsertDateTimeOptions
-summary: >-
-  Represents the options for the
-  [Selection.insertDateTime](xref:word!Word.Selection:class) method.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the options for the [Selection.insertDateTime](xref:word!Word.Selection:class) method.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,37 +14,22 @@ properties:
     uid: word!Word.SelectionInsertDateTimeOptions#calendarType:member
     package: word!
     fullName: calendarType
-    summary: >-
-      If provided, specifies the calendar type to use when displaying the date
-      or time. This property may not be available to you, depending on the
-      language support (U.S. English, for example) that you have selected or
-      installed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the calendar type to use when displaying the date or time. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        calendarType?: Word.CalendarTypeBidirectional | "Gregorian" |
-        "Bidirectional";
+      content: 'calendarType?: Word.CalendarTypeBidirectional | "Gregorian" | "Bidirectional";'
       return:
-        type: >-
-          <xref uid="word!Word.CalendarTypeBidirectional:enum" /> | "Gregorian"
-          | "Bidirectional"
+        type: <xref uid="word!Word.CalendarTypeBidirectional:enum" /> | "Gregorian" | "Bidirectional"
   - name: dateLanguage
     uid: word!Word.SelectionInsertDateTimeOptions#dateLanguage:member
     package: word!
     fullName: dateLanguage
-    summary: >-
-      If provided, specifies the language in which to display the date or time.
-      This property may not be available to you, depending on the language
-      support (U.S. English, for example) that you have selected or installed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the language in which to display the date or time. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,17 +40,9 @@ properties:
     uid: word!Word.SelectionInsertDateTimeOptions#dateTimeFormat:member
     package: word!
     fullName: dateTimeFormat
-    summary: >-
-      If provided, specifies the format to be used for displaying the date or
-      time, or both. If this property is omitted, Microsoft Word uses the
-      short-date style from the Windows Control Panel (Regional Settings icon).
-      See [Date/Time data
-      type](https://support.microsoft.com/office/47fbbdc1-52fa-416a-b8d5-ba24d881b698)
-      for format symbols.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the format to be used for displaying the date or time, or both. If this property is omitted, Microsoft Word uses the short-date style from the Windows Control Panel (Regional Settings icon). See [Date/Time data type](https://support.microsoft.com/office/47fbbdc1-52fa-416a-b8d5-ba24d881b698) for format symbols.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,15 +53,9 @@ properties:
     uid: word!Word.SelectionInsertDateTimeOptions#insertAsField:member
     package: word!
     fullName: insertAsField
-    summary: >-
-      If provided, specifies whether to insert the specified information as a
-      [TIME
-      field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!--
-      -->. The default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to insert the specified information as a [TIME field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!-- -->. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,15 +66,9 @@ properties:
     uid: word!Word.SelectionInsertDateTimeOptions#insertAsFullWidth:member
     package: word!
     fullName: insertAsFullWidth
-    summary: >-
-      If provided, specifies whether to insert the specified information as
-      full-width (double-byte) digits. This property may not be available to
-      you, depending on the language support (U.S. English, for example) that
-      you have selected or installed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to insert the specified information as full-width (double-byte) digits. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

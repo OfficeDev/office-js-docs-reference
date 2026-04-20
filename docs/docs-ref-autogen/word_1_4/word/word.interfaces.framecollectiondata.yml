@@ -3,11 +3,9 @@ name: Word.Interfaces.FrameCollectionData
 uid: word!Word.Interfaces.FrameCollectionData:interface
 package: word!
 fullName: Word.Interfaces.FrameCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `frameCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `frameCollection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

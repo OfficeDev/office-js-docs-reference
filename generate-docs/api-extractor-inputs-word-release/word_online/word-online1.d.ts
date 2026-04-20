@@ -40482,7 +40482,7 @@ export declare namespace Word {
      */
     export interface SelectionInsertSymbolOptions {
         /**
-         * If provided, specifies the font bias for symbols. This argument is useful for setting the correct font bias for East Asian characters. The default value is `default`.
+         * If provided, specifies the font bias for symbols. This argument is useful for setting the correct font bias for East Asian characters. The default value is `standard`.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]

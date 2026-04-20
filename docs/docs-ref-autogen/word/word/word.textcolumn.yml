@@ -241,13 +241,4 @@ methods:
       please remember to free any objects you add, once you're done using them.
       You'll need to call `context.sync()` before the memory release takes
       effect.
-    remarks: ''
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'untrack(): Word.TextColumn;'
-      return:
-        type: <xref uid="word!Word.TextColumn:class" />
-        description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+    rem

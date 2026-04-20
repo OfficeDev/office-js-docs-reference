@@ -4,13 +4,11 @@ uid: word!Word.Interfaces.EditorLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.EditorLoadOptions
 summary: >-
-  Represents a user with permissions to edit authorized portions of a protected
-  (read-only) Word document. To learn more, see [Allow changes to parts of a
-  protected Word
-  document](https://support.microsoft.com/office/187ed01c-8795-43e1-9fd0-c9fca419dadf)<!--
-  -->.
+  Represents a user with permissions to edit authorized portions of a protected (read-only) Word document. To learn
+  more, see [Allow changes to parts of a protected Word
+  document](https://support.microsoft.com/office/187ed01c-8795-43e1-9fd0-c9fca419dadf)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,11 +18,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,11 +32,9 @@ properties:
     uid: word!Word.Interfaces.EditorLoadOptions#id:member
     package: word!
     fullName: id
-    summary: >-
-      Gets the identifier for the `Editor` object when the parent document is
-      saved as a webpage.
+    summary: Gets the identifier for the `Editor` object when the parent document is saved as a webpage.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +47,7 @@ properties:
     fullName: name
     summary: Gets the name of the editor.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +58,9 @@ properties:
     uid: word!Word.Interfaces.EditorLoadOptions#nextRange:member
     package: word!
     fullName: nextRange
-    summary: >-
-      Gets a `Range` object that represents the next range that the editor has
-      permissions to modify.
+    summary: Gets a `Range` object that represents the next range that the editor has permissions to modify.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +71,9 @@ properties:
     uid: word!Word.Interfaces.EditorLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `Editor` object.
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `Editor` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

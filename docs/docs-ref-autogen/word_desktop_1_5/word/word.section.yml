@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Section
 summary: Represents a section in a Word document.
 remarks: '\[Api set: WordApi 1.1\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,11 +14,9 @@ properties:
     uid: word!Word.Section#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the section. This doesn't include the header,
-      footer, and other section metadata.
+    summary: Gets the `Body` object of the section. This doesn't include the header, footer, and other section metadata.
     remarks: '\[Api set: WordApi 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,11 +27,9 @@ properties:
     uid: word!Word.Section#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` object that represents all the
-      borders in the section.
+    summary: Returns a `BorderUniversalCollection` object that represents all the borders in the section.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,10 +41,10 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,7 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the section.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +70,7 @@ properties:
     fullName: protectedForForms
     summary: Specifies if the section is protected for forms.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +84,7 @@ methods:
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
     remarks: '\[Api set: WordApi 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,8 +92,8 @@ methods:
       parameters:
         - id: type
           description: >-
-            The type of footer to return. This value must be: `primary`<!-- -->,
-            `firstPage`<!-- -->, or `evenPages`<!-- -->.
+            The type of footer to return. This value must be: `primary`<!-- -->, `firstPage`<!-- -->, or `evenPages`<!--
+            -->.
           type: <xref uid="word!Word.HeaderFooterType:enum" />
       return:
         type: <xref uid="word!Word.Body:class" />
@@ -108,7 +104,7 @@ methods:
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
     remarks: '\[Api set: WordApi 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,8 +112,8 @@ methods:
       parameters:
         - id: type
           description: >-
-            The type of footer to return. This value must be: `primary`<!-- -->,
-            `firstPage`<!-- -->, or `evenPages`<!-- -->.
+            The type of footer to return. This value must be: `primary`<!-- -->, `firstPage`<!-- -->, or `evenPages`<!--
+            -->.
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: <xref uid="word!Word.Body:class" />
@@ -128,7 +124,7 @@ methods:
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
     remarks: '\[Api set: WordApi 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,8 +132,8 @@ methods:
       parameters:
         - id: type
           description: >-
-            The type of header to return. This value must be: `primary`<!-- -->,
-            `firstPage`<!-- -->, or `evenPages`<!-- -->.
+            The type of header to return. This value must be: `primary`<!-- -->, `firstPage`<!-- -->, or `evenPages`<!--
+            -->.
           type: <xref uid="word!Word.HeaderFooterType:enum" />
       return:
         type: <xref uid="word!Word.Body:class" />
@@ -148,7 +144,7 @@ methods:
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
     remarks: '\[Api set: WordApi 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,8 +152,8 @@ methods:
       parameters:
         - id: type
           description: >-
-            The type of header to return. This value must be: `primary`<!-- -->,
-            `firstPage`<!-- -->, or `evenPages`<!-- -->.
+            The type of header to return. This value must be: `primary`<!-- -->, `firstPage`<!-- -->, or `evenPages`<!--
+            -->.
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: <xref uid="word!Word.Body:class" />
@@ -166,11 +162,9 @@ methods:
     uid: word!Word.Section#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: >-
-      Gets the next section. Throws an `ItemNotFound` error if this section is
-      the last one.
+    summary: Gets the next section. Throws an `ItemNotFound` error if this section is the last one.
     remarks: '\[Api set: WordApi 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,13 +177,12 @@ methods:
     package: word!
     fullName: getNextOrNullObject()
     summary: >-
-      Gets the next section. If this section is the last one, then this method
-      will return an object with its `isNullObject` property set to `true`<!--
-      -->. For further information, see [*OrNullObject methods and
+      Gets the next section. If this section is the last one, then this method will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[Api set: WordApi 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,10 +195,10 @@ methods:
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,19 +215,17 @@ methods:
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Section;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Section:class" />
@@ -244,10 +235,10 @@ methods:
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,10 +250,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -276,28 +265,22 @@ methods:
     package: word!
     fullName: set(properties, options)
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.SectionUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: <xref uid="word!Word.Interfaces.SectionUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -306,11 +289,9 @@ methods:
     uid: word!Word.Section#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,15 +308,13 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Section` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Section` object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -348,17 +327,15 @@ methods:
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
       [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -371,15 +348,12 @@ methods:
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

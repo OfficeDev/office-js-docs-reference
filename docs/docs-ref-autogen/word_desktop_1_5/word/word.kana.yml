@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Kana
 summary: Specifies the Kana type.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Hiragana Kana type.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.Kana.katakana:member
@@ -23,5 +23,5 @@ fields:
     summary: |-
       Katakana Kana type.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Katakana"'

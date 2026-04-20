@@ -213,14 +213,4 @@ properties:
     fullName: useOutlineLevels
     summary: >-
       If provided, specifies whether to use outline levels to create a table of
-      contents. The default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'useOutlineLevels?: boolean;'
-      return:
-        type: boolean
+      contents. The default value is `false`

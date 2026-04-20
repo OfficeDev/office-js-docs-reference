@@ -3,11 +3,9 @@ name: Word.Interfaces.SettingCollectionLoadOptions
 uid: word!Word.Interfaces.SettingCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SettingCollectionLoadOptions
-summary: >-
-  Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
-  objects.
+summary: Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
 remarks: '\[Api set: WordApi 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +31,7 @@ properties:
     fullName: key
     summary: 'For EACH ITEM in the collection: Gets the key of the setting.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +44,7 @@ properties:
     fullName: value
     summary: 'For EACH ITEM in the collection: Specifies the value of the setting.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

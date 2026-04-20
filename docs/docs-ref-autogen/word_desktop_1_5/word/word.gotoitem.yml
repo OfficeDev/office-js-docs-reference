@@ -3,11 +3,9 @@ name: Word.GoToItem
 uid: word!Word.GoToItem:enum
 package: word!
 fullName: Word.GoToItem
-summary: >-
-  Specifies the item or location to which to move or extend a
-  [selection](xref:word!Word.Selection:class)<!-- -->.
+summary: Specifies the item or location to which to move or extend a [selection](xref:word!Word.Selection:class)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Moves to a bookmark.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Bookmark"'
   - name: comment
     uid: word!Word.GoToItem.comment:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Moves to a comment.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Comment"'
   - name: embeddedObject
     uid: word!Word.GoToItem.embeddedObject:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Moves to an embedded object.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"EmbeddedObject"'
   - name: endnote
     uid: word!Word.GoToItem.endnote:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Moves to a endnote.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Endnote"'
   - name: equation
     uid: word!Word.GoToItem.equation:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Moves to an equation.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Equation"'
   - name: field
     uid: word!Word.GoToItem.field:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Moves to a field.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Field"'
   - name: footnote
     uid: word!Word.GoToItem.footnote:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       Moves to a footnote.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Footnote"'
   - name: grammaticalError
     uid: word!Word.GoToItem.grammaticalError:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Moves to a grammatical error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"GrammaticalError"'
   - name: graphic
     uid: word!Word.GoToItem.graphic:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Moves to a graphic.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Graphic"'
   - name: heading
     uid: word!Word.GoToItem.heading:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Moves to a heading.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Heading"'
   - name: line
     uid: word!Word.GoToItem.line:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       Moves to a line.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Line"'
   - name: page
     uid: word!Word.GoToItem.page:member
@@ -105,7 +103,7 @@ fields:
     summary: |-
       Moves to a page.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Page"'
   - name: percent
     uid: word!Word.GoToItem.percent:member
@@ -113,7 +111,7 @@ fields:
     summary: |-
       Moves to a percent.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Percent"'
   - name: proofreadingError
     uid: word!Word.GoToItem.proofreadingError:member
@@ -121,7 +119,7 @@ fields:
     summary: |-
       Moves to a proofreading error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"ProofreadingError"'
   - name: section
     uid: word!Word.GoToItem.section:member
@@ -129,7 +127,7 @@ fields:
     summary: |-
       Moves to a section.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Section"'
   - name: spellingError
     uid: word!Word.GoToItem.spellingError:member
@@ -137,7 +135,7 @@ fields:
     summary: |-
       Moves to a spelling error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"SpellingError"'
   - name: table
     uid: word!Word.GoToItem.table:member
@@ -145,5 +143,5 @@ fields:
     summary: |-
       Moves to a table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Table"'

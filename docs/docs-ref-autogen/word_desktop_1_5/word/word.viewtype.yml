@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ViewType
 summary: Specifies the view type in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Conflict.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Conflict"'
   - name: master
     uid: word!Word.ViewType.master:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Master.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Master"'
   - name: normal
     uid: word!Word.ViewType.normal:member
@@ -31,7 +31,7 @@ fields:
     summary: |-
       Normal.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Normal"'
   - name: outline
     uid: word!Word.ViewType.outline:member
@@ -39,7 +39,7 @@ fields:
     summary: |-
       Outline.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Outline"'
   - name: print
     uid: word!Word.ViewType.print:member
@@ -47,7 +47,7 @@ fields:
     summary: |-
       Print.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Print"'
   - name: printPreview
     uid: word!Word.ViewType.printPreview:member
@@ -55,7 +55,7 @@ fields:
     summary: |-
       Print preview.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"PrintPreview"'
   - name: reading
     uid: word!Word.ViewType.reading:member
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Reading.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Reading"'
   - name: web
     uid: word!Word.ViewType.web:member
@@ -71,5 +71,5 @@ fields:
     summary: |-
       Web.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[Api set: WordApiDesktop 1.4\]
     value: '"Web"'

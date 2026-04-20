@@ -55,5 +55,4 @@ properties:
         "DefaultListSeparator";
       return:
         type: >-
-          <xref uid="word!Word.TableFieldSeparator:enum" /> | "Paragraph" |
-          "Tab" | "Comma" | "DefaultListSeparator"
+          <xref uid="word!Word.TableFieldS

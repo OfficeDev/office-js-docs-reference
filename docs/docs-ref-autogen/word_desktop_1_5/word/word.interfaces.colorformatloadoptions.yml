@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ColorFormatLoadOptions
 summary: Represents the color formatting of a shape or text in Word.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,11 +15,10 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,10 +30,10 @@ properties:
     package: word!
     fullName: brightness
     summary: >-
-      Specifies the brightness of a specified shape color. Valid values are from
-      `-1` (darkest) to `1` (lightest), `0` represents neutral.
+      Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0`
+      represents neutral.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +46,7 @@ properties:
     fullName: objectThemeColor
     summary: Specifies the theme color for a color format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,10 +58,10 @@ properties:
     package: word!
     fullName: rgb
     summary: >-
-      Specifies the red-green-blue (RGB) value of the specified color. You can
-      provide the value in the '\#RRGGBB' format.
+      Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '\#RRGGBB'
+      format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,10 +73,10 @@ properties:
     package: word!
     fullName: tintAndShade
     summary: >-
-      Specifies the lightening or darkening of a specified shape's color. Valid
-      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+      Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1`
+      (lightest), `0` represents neutral.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +89,7 @@ properties:
     fullName: type
     summary: Returns the shape color type.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
