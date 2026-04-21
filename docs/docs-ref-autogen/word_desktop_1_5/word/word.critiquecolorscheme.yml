@@ -1,0 +1,53 @@
+### YamlMime:TSEnum
+name: Word.CritiqueColorScheme
+uid: word!Word.CritiqueColorScheme:enum
+package: word!
+fullName: Word.CritiqueColorScheme
+summary: >-
+  Represents the color scheme of a critique in the document, affecting underline
+  and highlight.
+remarks: '\[Api set: WordApi 1.7\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: berry
+    uid: word!Word.CritiqueColorScheme.berry:member
+    package: word!
+    summary: |-
+      Berry color.
+
+      * \[Api set: WordApi 1.7\]
+    value: '"Berry"'
+  - name: blue
+    uid: word!Word.CritiqueColorScheme.blue:member
+    package: word!
+    summary: |-
+      Blue color.
+
+      * \[Api set: WordApi 1.7\]
+    value: '"Blue"'
+  - name: green
+    uid: word!Word.CritiqueColorScheme.green:member
+    package: word!
+    summary: |-
+      Green color.
+
+      * \[Api set: WordApi 1.7\]
+    value: '"Green"'
+  - name: lavender
+    uid: word!Word.CritiqueColorScheme.lavender:member
+    package: word!
+    summary: |-
+      Lavender color.
+
+      * \[Api set: WordApi 1.7\]
+    value: '"Lavender"'
+  - name: red
+    uid: word!Word.CritiqueColorScheme.red:member
+    package: word!
+    summary: |-
+      Red color.
+
+      * \[Api set: WordApi 1.7\]
+    value: '"Red"'

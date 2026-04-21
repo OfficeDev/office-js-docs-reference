@@ -47012,8 +47012,7 @@ export declare namespace Word {
          * Adds a new `ListTemplate` object. Note: This operation isn't allowed if the collection represents list templates from a {@link Word.ListTemplateGallery}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.5]
          *
          * @param options - Optional. Options for adding a new list template.
          */
@@ -47064,24 +47063,21 @@ export declare namespace Word {
      * Represents the options for the {@link Word.ListTemplateCollection | ListTemplateCollection.add} method.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.5]
      */
     export interface ListTemplateAddOptions {
         /**
          * If provided, specifies the name of the list template to be added.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.5]
          */
         name?: string;
         /**
          * If provided, specifies whether to apply outline numbering to the new list template. The default value is `false`.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.5]
          */
         outlineNumbered?: boolean;
     }

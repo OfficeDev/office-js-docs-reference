@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Word.InsertShapeOptions
+uid: word!Word.InsertShapeOptions:interface
+package: word!
+fullName: Word.InsertShapeOptions
+summary: Specifies the options to determine location and size when inserting a shape.
+remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: word!Word.InsertShapeOptions#height:member
+    package: word!
+    fullName: height
+    summary: If provided, specifies the height of the shape being inserted.
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: left
+    uid: word!Word.InsertShapeOptions#left:member
+    package: word!
+    fullName: left
+    summary: If provided, specifies the left position of the shape being inserted.
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: top
+    uid: word!Word.InsertShapeOptions#top:member
+    package: word!
+    fullName: top
+    summary: If provided, specifies the top position of the shape being inserted.
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: width
+    uid: word!Word.InsertShapeOptions#width:member
+    package: word!
+    fullName: width
+    summary: If provided, specifies the width of the shape being inserted.
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

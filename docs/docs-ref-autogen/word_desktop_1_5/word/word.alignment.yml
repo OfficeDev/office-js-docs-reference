@@ -1,0 +1,59 @@
+### YamlMime:TSEnum
+name: Word.Alignment
+uid: word!Word.Alignment:enum
+package: word!
+fullName: Word.Alignment
+summary: Represents the horizontal alignment of text.
+remarks: '\[Api set: WordApi 1.1\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: centered
+    uid: word!Word.Alignment.centered:member
+    package: word!
+    summary: |-
+      Alignment to the center.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Centered"'
+  - name: justified
+    uid: word!Word.Alignment.justified:member
+    package: word!
+    summary: |-
+      Fully justified alignment.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Justified"'
+  - name: left
+    uid: word!Word.Alignment.left:member
+    package: word!
+    summary: |-
+      Alignment to the left.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Left"'
+  - name: mixed
+    uid: word!Word.Alignment.mixed:member
+    package: word!
+    summary: |-
+      Mixed horizontal alignment.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Mixed"'
+  - name: right
+    uid: word!Word.Alignment.right:member
+    package: word!
+    summary: |-
+      Alignment to the right.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Right"'
+  - name: unknown
+    uid: word!Word.Alignment.unknown:member
+    package: word!
+    summary: |-
+      Unknown alignment.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Unknown"'

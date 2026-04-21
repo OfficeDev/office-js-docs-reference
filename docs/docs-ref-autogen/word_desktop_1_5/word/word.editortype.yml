@@ -1,0 +1,49 @@
+### YamlMime:TSEnum
+name: Word.EditorType
+uid: word!Word.EditorType:enum
+package: word!
+fullName: Word.EditorType
+summary: >-
+  Represents the classes of users who can edit authorized portions of a
+  protected (read-only) document.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: current
+    uid: word!Word.EditorType.current:member
+    package: word!
+    summary: |-
+      Represents the current user of the document.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Current"'
+  - name: editors
+    uid: word!Word.EditorType.editors:member
+    package: word!
+    summary: >-
+      Represents the Editors group for documents that use Information Rights
+      Management.
+
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Editors"'
+  - name: everyone
+    uid: word!Word.EditorType.everyone:member
+    package: word!
+    summary: |-
+      Represents all users who open a document.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Everyone"'
+  - name: owners
+    uid: word!Word.EditorType.owners:member
+    package: word!
+    summary: >-
+      Represents the Owners group for documents that use Information Rights
+      Management.
+
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Owners"'

@@ -43,7 +43,7 @@ remarks: >-
       rankingRange.dataValidation.errorAlert = {
           message: "Sorry, only positive numbers are allowed",
           showAlert: true,
-          style: "Stop",
+          style: Excel.DataValidationAlertStyle.stop,
           title: "Negative Number Entered"
       };
 

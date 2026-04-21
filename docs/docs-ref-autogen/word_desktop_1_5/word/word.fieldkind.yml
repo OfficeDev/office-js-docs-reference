@@ -1,0 +1,52 @@
+### YamlMime:TSEnum
+name: Word.FieldKind
+uid: word!Word.FieldKind:enum
+package: word!
+fullName: Word.FieldKind
+summary: >-
+  Represents the kind of [Word.Field](xref:word!Word.Field:class) object.
+  Indicates how the field works in relation to updating.
+remarks: '\[Api set: WordApi 1.5\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cold
+    uid: word!Word.FieldKind.cold:member
+    package: word!
+    summary: |-
+      Represents that the field doesn't have a result.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Cold"'
+  - name: hot
+    uid: word!Word.FieldKind.hot:member
+    package: word!
+    summary: >-
+      Represents that the field is automatically updated each time it's
+      displayed or each time the page is reformatted, but which can also be
+      manually updated.
+
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Hot"'
+  - name: none
+    uid: word!Word.FieldKind.none:member
+    package: word!
+    summary: >-
+      Represents that the field is invalid. For example, a pair of field
+      characters with nothing inside.
+
+
+      * \[Api set: WordApi 1.5\]
+    value: '"None"'
+  - name: warm
+    uid: word!Word.FieldKind.warm:member
+    package: word!
+    summary: >-
+      Represents that the field is automatically updated when the source changes
+      or the field can be manually updated.
+
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Warm"'
